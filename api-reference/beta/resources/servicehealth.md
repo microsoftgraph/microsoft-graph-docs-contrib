@@ -5,6 +5,7 @@ author: "payiAzure"
 ms.localizationpriority: medium
 ms.subservice: "service-communications"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # serviceHealth resource type
@@ -18,7 +19,7 @@ Represents the health information of a service subscribed by a tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get serviceHealth](../api/servicehealth-get.md)|[serviceHealth](../resources/servicehealth.md)|Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.|
+|[Get service health](../api/servicehealth-get.md)|[serviceHealth](../resources/servicehealth.md)|Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.|
 
 ## Properties
 |Property|Type|Description|

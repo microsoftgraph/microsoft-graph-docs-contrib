@@ -2,9 +2,10 @@
 title: "deviceManagementConfigurationTechnologies enum type"
 description: "Describes which technology this setting can be deployed with"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # deviceManagementConfigurationTechnologies enum type

@@ -5,6 +5,7 @@ author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Update conversation thread
@@ -36,7 +37,7 @@ PATCH /groups/{id}/threads/{id}
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -6,6 +6,7 @@ ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Delete authenticationContextClassReference
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "authenticationcontextclassreference_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authenticationcontextclassreference-delete-permissions.md)]
+
+[!INCLUDE [rbac-conditionalaccess-apis-write](../includes/rbac-for-apis/rbac-conditionalaccess-apis-write.md)]
 
 ## HTTP request
 

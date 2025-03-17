@@ -2,9 +2,10 @@
 title: "Get reportRoot"
 description: "Read properties and relationships of the reportRoot object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get reportRoot
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [reportRoot](../resources/intune-shared-reportroot.md) object.
+Read properties and relationships of the [reportRoot](../resources/intune-deviceconfig-reportroot.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -50,7 +51,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [reportRoot](../resources/intune-shared-reportroot.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [reportRoot](../resources/intune-deviceconfig-reportroot.md) object in the response body.
 
 ## Example
 

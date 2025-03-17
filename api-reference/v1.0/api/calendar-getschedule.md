@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "tariq-sharif"
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # calendar: getSchedule
@@ -31,7 +32,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | string | Nature of the data in the body of an entity, which is application/json. Required.  |
 | Prefer: outlook.timezone | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
@@ -101,10 +102,6 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/calendar-getschedule-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/calendar-getschedule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

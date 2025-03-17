@@ -2,9 +2,10 @@
 title: "Get windows10EnrollmentCompletionPageConfigurationPolicySetItem"
 description: "Read properties and relationships of the windows10EnrollmentCompletionPageConfigurationPolicySetItem object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get windows10EnrollmentCompletionPageConfigurationPolicySetItem

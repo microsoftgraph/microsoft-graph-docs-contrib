@@ -5,6 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # onTokenIssuanceStartCustomExtensionHandler resource type
@@ -26,7 +27,7 @@ None.
 |customExtension|[onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md)|The custom extension to invoke to handle the event when a token is about to be issued to your application.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onTokenIssuanceStartCustomExtensionHandler"

@@ -5,11 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\EducationalActivity;
-use Microsoft\Graph\Generated\Models\InstitutionData;
-use Microsoft\Graph\Generated\Models\PhysicalAddress;
-use Microsoft\Graph\Generated\Models\EducationalActivityDetail;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\EducationalActivity;
+use Microsoft\Kiota\Abstractions\Types\Date;
+use Microsoft\Graph\Beta\Generated\Models\InstitutionData;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddress;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddressType;
+use Microsoft\Graph\Beta\Generated\Models\EducationalActivityDetail;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

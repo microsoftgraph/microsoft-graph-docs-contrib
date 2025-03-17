@@ -3,8 +3,9 @@ title: "filePlanSubcategory resource type"
 description: "Represents a unique filePlanSubcategory applied to a retention label."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # filePlanSubcategory resource type

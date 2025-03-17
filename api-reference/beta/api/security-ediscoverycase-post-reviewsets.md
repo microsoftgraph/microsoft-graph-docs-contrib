@@ -3,8 +3,9 @@ title: "Create reviewSets"
 description: "Create a new ediscoveryReviewSet object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # Create reviewSets

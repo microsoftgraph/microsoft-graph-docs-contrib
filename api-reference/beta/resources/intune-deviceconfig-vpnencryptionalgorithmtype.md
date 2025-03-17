@@ -2,9 +2,10 @@
 title: "vpnEncryptionAlgorithmType enum type"
 description: "The type of VPN security association encryption algorithm"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # vpnEncryptionAlgorithmType enum type

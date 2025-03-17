@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkHostedContent resource type
@@ -19,7 +20,7 @@ Represents rich content like images and code snippets in Microsoft Teams. For ri
 
 | Method                                            | Return Type                                       | Description                                                    | 
 | :------------------------------------------------ | :------------------------------------------------ | :------------------------------------------------------------- |
-| [Get app icon bytes](../api/teamsappicon-get.md)     | [teamworkHostedContent](teamworkhostedcontent.md)                   | Get the bytes of the hosted content backing a Teams app icon. |
+| [Get icon](../api/teamsappicon-get.md)     | [teamworkHostedContent](teamworkhostedcontent.md)                   | Get the bytes of the hosted content backing a Teams app icon. |
 
 ## Properties
 |Property|Type|Description|
@@ -32,7 +33,7 @@ Represents rich content like images and code snippets in Microsoft Teams. For ri
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

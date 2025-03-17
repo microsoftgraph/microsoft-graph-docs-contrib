@@ -14,53 +14,53 @@ var requestBody = new AppManagementPolicy
 	DisplayName = "Credential management policy",
 	Description = "Cred policy sample",
 	IsEnabled = true,
-	Restrictions = new AppManagementConfiguration
+	Restrictions = new CustomAppManagementConfiguration
 	{
 		PasswordCredentials = new List<PasswordCredentialConfiguration>
 		{
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.PasswordAddition,
+				State = AppManagementRestrictionState.Enabled,
 				MaxLifetime = null,
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.PasswordLifetime,
+				State = AppManagementRestrictionState.Enabled,
 				MaxLifetime = TimeSpan.Parse("P90D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.SymmetricKeyAddition,
+				State = AppManagementRestrictionState.Enabled,
 				MaxLifetime = null,
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.SymmetricKeyLifetime,
-				MaxLifetime = TimeSpan.Parse("P30D"),
+				State = AppManagementRestrictionState.Enabled,
+				MaxLifetime = TimeSpan.Parse("P90D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
 			},
 		},
 		KeyCredentials = new List<KeyCredentialConfiguration>
 		{
-			new KeyCredentialConfiguration
+		},
+		ApplicationRestrictions = new CustomAppManagementApplicationConfiguration
+		{
+			IdentifierUris = new IdentifierUriConfiguration
 			{
-				RestrictionType = AppKeyCredentialRestrictionType.AsymmetricKeyLifetime,
-				MaxLifetime = TimeSpan.Parse("P90D"),
-				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
-			},
-			new KeyCredentialConfiguration
-			{
-				RestrictionType = AppKeyCredentialRestrictionType.TrustedCertificateAuthority,
-				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z"),
-				CertificateBasedApplicationConfigurationIds = new List<string>
+				NonDefaultUriAddition = new IdentifierUriRestriction
 				{
-					"eec5ba11-2fc0-4113-83a2-ed986ed13743",
-					"bb8e164b-f9ed-4b98-bc45-65eddc14f4c1",
+					State = AppManagementRestrictionState.Disabled,
+					RestrictForAppsCreatedAfterDateTime = null,
+					ExcludeAppsReceivingV2Tokens = true,
+					ExcludeSaml = true,
 				},
-				MaxLifetime = null,
 			},
 		},
 	},

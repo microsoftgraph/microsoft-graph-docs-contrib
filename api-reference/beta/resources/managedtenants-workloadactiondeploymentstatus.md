@@ -5,6 +5,7 @@ author: "idwilliams"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # workloadActionDeploymentStatus resource type
@@ -28,7 +29,7 @@ Represents the deployment status for the workload action.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedTenants.workloadActionDeploymentStatus"

@@ -2,9 +2,10 @@
 title: "Get windowsDeliveryOptimizationConfiguration"
 description: "Read properties and relationships of the windowsDeliveryOptimizationConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get windowsDeliveryOptimizationConfiguration

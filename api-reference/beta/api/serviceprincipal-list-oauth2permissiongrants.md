@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 07/09/2024
 ---
 
 # List oauth2PermissionGrants granted to a service principal
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "serviceprincipal_list_oauth2permissiongrants" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-oauth2permissiongrants-permissions.md)]
+
+[!INCLUDE [rbac-oauth2permissiongrant-serviceprincipal-apis-read](../includes/rbac-for-apis/rbac-oauth2permissiongrant-serviceprincipal-apis-read.md)]
 
 ## HTTP request
 

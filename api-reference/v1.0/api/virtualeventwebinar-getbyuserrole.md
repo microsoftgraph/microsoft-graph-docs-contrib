@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 08/06/2024
 ---
 
 # virtualEventWebinar: getByUserRole
@@ -145,6 +146,15 @@ Content-Type: application/json
           "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
           "displayName": "Kenneth Brown",
           "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
+        }
+      ],
+      "settings": {
+        "isAttendeeEmailNotificationEnabled": false
+      },
+      "externalEventInformation": [
+        {
+          "applicationId" : "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
+          "externalEventId": "myExternalEventId"
         }
       ]
     }

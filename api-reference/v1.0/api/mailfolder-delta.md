@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # mailFolder: delta
@@ -57,7 +58,7 @@ _id_ property is always returned.
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 

@@ -3,8 +3,9 @@ title: "trainingCampaignReportOverview resource type"
 description: "Represents an overview report of a training campaign."
 author: "akgraph"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # trainingCampaignReportOverview resource type

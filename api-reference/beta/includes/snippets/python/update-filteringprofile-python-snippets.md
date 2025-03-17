@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.filtering_profile import FilteringProfile
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.networkaccess.filtering_profile import FilteringProfile
+from msgraph_beta.generated.models.status import Status
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = FilteringProfile(
 	state = Status.Disabled,
 )

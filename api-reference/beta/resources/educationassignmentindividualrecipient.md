@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dipakboyed"
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # educationAssignmentIndividualRecipient resource type
@@ -21,6 +22,10 @@ This resource is a subclass of [educationAssignmentRecipient](educationassignmen
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |recipients|String collection|A collection of ids of the recipients.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

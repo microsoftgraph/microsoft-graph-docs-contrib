@@ -5,6 +5,7 @@ author: "jsandoval-msft"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "cloud-communications"
+ms.date: 04/04/2024
 ---
 
 # presence: clearPresence

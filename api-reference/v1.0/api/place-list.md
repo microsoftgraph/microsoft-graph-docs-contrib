@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vrod9429"
 ms.subservice: "outlook"
 doc_type: "apiPageType"
+ms.date: 07/22/2024
 ---
 
 # List places
@@ -27,7 +28,7 @@ By default, this operation returns 100 places per page.
 
 Compared with the [findRooms](/graph/api/user-findrooms) and [findRoomLists](/graph/api/user-findroomlists) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -5,6 +5,7 @@ author: "avijityadav"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # todo resource type
@@ -18,8 +19,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List lists](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) collection | Get all the task lists in the user's mailbox. |
-|[Create todoTaskList](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a To Do task list in the user's mailbox. |
+|[List task lists](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) collection | Get all the task lists in the user's mailbox. |
+|[Create task list](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a To Do task list in the user's mailbox. |
 
 ## Properties
 None
@@ -30,7 +31,7 @@ None
 |lists|[todoTaskList](../resources/todotasklist.md) collection| The task lists in the users mailbox. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

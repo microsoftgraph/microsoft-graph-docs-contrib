@@ -17,7 +17,7 @@ import (
 
 requestBody := graphmodels.NewFieldValueSet()
 additionalData := map[string]interface{}{
-	"color" : "Fuchsia", 
+	"Color" : "Fuchsia", 
 	"quantity" : int32(934) , 
 }
 requestBody.SetAdditionalData(additionalData)

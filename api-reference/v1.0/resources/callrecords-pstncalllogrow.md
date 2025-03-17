@@ -5,6 +5,7 @@ author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # pstnCallLogRow resource type
@@ -17,7 +18,7 @@ Represents a row of data in the public switched telephone network (PSTN) call lo
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow collection](callrecords-pstncalllogrow.md) | List **pstnCallLogRow** objects in a call record. |
+| [List PSTN calls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow collection](callrecords-pstncalllogrow.md) | List **pstnCallLogRow** objects in a call record. |
 
 ## Properties
 

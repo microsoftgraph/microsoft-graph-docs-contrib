@@ -5,6 +5,7 @@ author: "KuiGithui"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # externalIdentitiesPolicy resource type
@@ -20,8 +21,8 @@ Inherits from [policyBase](../resources/policybase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get externalIdentitiesPolicy](../api/externalidentitiespolicy-get.md)|[externalIdentitiesPolicy](../resources/externalidentitiespolicy.md)|Read the properties and relationships of an [externalIdentitiesPolicy](../resources/externalidentitiespolicy.md) object.|
-|[Update externalIdentitiesPolicy](../api/externalidentitiespolicy-update.md)|[externalIdentitiesPolicy](../resources/externalidentitiespolicy.md)|Update the properties of an [externalIdentitiesPolicy](../resources/externalidentitiespolicy.md) object.|
+|[Get](../api/externalidentitiespolicy-get.md)|[externalIdentitiesPolicy](../resources/externalidentitiespolicy.md)|Read the properties and relationships of an [externalIdentitiesPolicy](../resources/externalidentitiespolicy.md) object.|
+|[Update](../api/externalidentitiespolicy-update.md)|[externalIdentitiesPolicy](../resources/externalidentitiespolicy.md)|Update the properties of an [externalIdentitiesPolicy](../resources/externalidentitiespolicy.md) object.|
 
 ## Properties
 |Property|Type|Description|

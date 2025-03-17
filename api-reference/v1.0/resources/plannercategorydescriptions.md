@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/26/2024
 ---
 
 # plannerCategoryDescriptions resource type
@@ -44,7 +45,7 @@ Represents the descriptive labels for the categories that have been defined for 
 |category25|String|The label associated with Category 25|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

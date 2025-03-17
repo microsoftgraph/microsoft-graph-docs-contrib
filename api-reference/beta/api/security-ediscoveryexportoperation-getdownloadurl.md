@@ -3,8 +3,9 @@ title: "ediscoveryExportOperation: getDownloadUrl (deprecated)"
 description: "Return a download URL from where the export content is delivered as a stream."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # ediscoveryExportOperation: getDownloadUrl (deprecated)

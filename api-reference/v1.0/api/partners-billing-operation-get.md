@@ -5,6 +5,7 @@ author: "sourishdeb"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Get operation
@@ -43,7 +44,7 @@ This method doesn't support any OData query parameters to help customize the res
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

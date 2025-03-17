@@ -3,8 +3,9 @@ title: 'Create horizontalSection'
 description: "Create a horizontalSection in a page"
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 # Create horizontalSection
 

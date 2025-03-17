@@ -5,6 +5,7 @@ author: "ecmadao"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # cloudPcAuditEvent: getAuditActivityTypes
@@ -87,10 +88,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvent
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcauditevent-getauditactivitytypes-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcauditevent-getauditactivitytypes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

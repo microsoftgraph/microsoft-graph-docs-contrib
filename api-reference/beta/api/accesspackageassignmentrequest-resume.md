@@ -1,10 +1,11 @@
 ---
 title: "accessPackageAssignmentRequest: resume"
-description: "Resume accessPackageAssignmentRequest objects."
+description: "Resume a user's access package request after waiting for a callback from a custom extension."
 ms.localizationpriority: medium
 author: "vikama-microsoft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/05/2024
 ---
 
 # accessPackageAssignmentRequest: resume
@@ -12,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action. It is performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** is in a `WaitingForCallback` state.
+Resume a user's access package request after waiting for a callback from a custom extension.
+
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action. It's performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** is in a `WaitingForCallback` state.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -21,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_resume" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-resume-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-access-package-assignment-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-assignment-manager-apis-write.md)]
 
 ## HTTP request
 

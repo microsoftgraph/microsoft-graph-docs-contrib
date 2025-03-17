@@ -5,6 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # customExtensionEndpointConfiguration resource type
@@ -22,9 +23,13 @@ Abstract base type that exposes the derived types used to configure the **endpoi
 
 None.
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration",

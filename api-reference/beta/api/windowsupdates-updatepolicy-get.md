@@ -3,8 +3,9 @@ title: "Get updatePolicy"
 description: "Read the properties and relationships of an updatePolicy object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # Get updatePolicy

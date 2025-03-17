@@ -2,9 +2,10 @@
 title: "windowsInformationProtectionApp resource type"
 description: "App for Windows information protection"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windowsInformationProtectionApp resource type

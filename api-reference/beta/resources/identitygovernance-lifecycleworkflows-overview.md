@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "AlexFilipin"
 ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
+ms.topic: overview
 ms.date: 03/12/2024
 ---
 
@@ -115,15 +116,6 @@ Each tenant defines a tenant-wide [schedule](identitygovernance-lifecyclemanagem
 ## License checks
 
 Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Microsoft Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
-
-## Role and application permission authorization checks
-
-The following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to manage Lifecycle Workflows.
-
-| Operation | Application permissions | Required directory role of the calling user |
-|:------------------|:------------|:--------------------------------------------|
-| Read | LifecycleWorkflows.Read.All or LifecycleWorkflows.ReadWrite.All |Global Reader or Lifecycle Workflows Administrator |
-| Create, Update, or Delete | LifecycleWorkflows.ReadWrite.All | Lifecycle Workflows Administrator |
 
 ## Related content
 

@@ -5,11 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\EducationAssignment;
-use Microsoft\Graph\Generated\Models\EducationItemBody;
-use Microsoft\Graph\Generated\Models\EducationAssignmentPointsGradeType;
-use Microsoft\Graph\Generated\Models\EducationAssignmentClassRecipient;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\EducationAssignment;
+use Microsoft\Graph\Beta\Generated\Models\EducationItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\EducationAssignmentPointsGradeType;
+use Microsoft\Graph\Beta\Generated\Models\EducationAssignmentClassRecipient;
+use Microsoft\Graph\Beta\Generated\Models\EducationAssignmentStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

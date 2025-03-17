@@ -30,7 +30,7 @@ accessPackageResource.SetOriginId(&originId)
 originSystem := "SharePointOnline"
 accessPackageResource.SetOriginSystem(&originSystem) 
 additionalData := map[string]interface{}{
-	"odataBind" : "accessPackageResourceEnvironments/615f2218-678f-471f-a60a-02c2f4f80c57", 
+	"accessPackageResourceEnvironment@odata.bind" : "accessPackageResourceEnvironments/615f2218-678f-471f-a60a-02c2f4f80c57", 
 }
 accessPackageResource.SetAdditionalData(additionalData)
 requestBody.SetAccessPackageResource(accessPackageResource)

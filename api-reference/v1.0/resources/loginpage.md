@@ -5,6 +5,7 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # loginPage resource type
@@ -19,8 +20,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List loginPages](../api/attacksimulationroot-list-loginpage.md)|[loginPage](../resources/loginpage.md) collection|Get a list of the [loginPage](../resources/loginpage.md) objects and their properties.|
-|[Get loginPage](../api/loginpage-get.md)|[loginPage](../resources/loginpage.md)|Get a [loginPage](../resources/loginpage.md) associated with an attack simulation campaign for a tenant.|
+|[List](../api/attacksimulationroot-list-loginpage.md)|[loginPage](../resources/loginpage.md) collection|Get a list of the [loginPage](../resources/loginpage.md) objects and their properties.|
+|[Get](../api/loginpage-get.md)|[loginPage](../resources/loginpage.md)|Get a [loginPage](../resources/loginpage.md) associated with an attack simulation campaign for a tenant.|
 
 ## Properties
 

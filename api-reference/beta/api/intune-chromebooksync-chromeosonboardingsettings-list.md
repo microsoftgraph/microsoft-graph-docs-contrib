@@ -2,9 +2,10 @@
 title: "List chromeOSOnboardingSettingses"
 description: "List properties and relationships of the chromeOSOnboardingSettings objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/09/2024
 ---
 
 # List chromeOSOnboardingSettingses
@@ -17,7 +18,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [chromeOSOnboardingSettings](../resources/intune-chromebooksync-chromeosonboardingsettings.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

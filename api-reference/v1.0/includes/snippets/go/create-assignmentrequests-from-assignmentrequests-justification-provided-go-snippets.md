@@ -19,7 +19,7 @@ requestBody := graphmodels.NewAccessPackageAssignmentRequest()
 requestType := graphmodels.USERADD_ACCESSPACKAGEREQUESTTYPE 
 requestBody.SetRequestType(&requestType) 
 additionalData := map[string]interface{}{
-accessPackageAssignment := graphmodels.New()
+accessPackageAssignment := graph.New()
 accessPackageId := "a914b616-e04e-476b-aa37-91038f0b165b"
 accessPackageAssignment.SetAccessPackageId(&accessPackageId) 
 	requestBody.SetAccessPackageAssignment(accessPackageAssignment)

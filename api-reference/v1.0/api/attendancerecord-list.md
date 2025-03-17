@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 05/17/2024
 ---
 
 # List attendanceRecords
@@ -35,7 +36,7 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecord
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
-To get attendance records of a virtual event session's attendance report:
+To get attendance records of a virtual event session's attendance report with delegated and app permission:
 <!-- {"blockType": "ignored"}-->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords

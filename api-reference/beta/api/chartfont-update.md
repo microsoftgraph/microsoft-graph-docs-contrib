@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update chartfont
@@ -44,9 +45,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bold|boolean|Represents the bold status of font.|
+|bold|Boolean|Represents the bold status of font.|
 |color|string|HTML color code representation of the text color. for example, #FF0000 represents Red.|
-|italic|boolean|Represents the italic status of the font.|
+|italic|Boolean|Represents the italic status of the font.|
 |name|string|Font name (for example "Calibri")|
 |size|double|Size of the font (for example, 11)|
 |underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`.|

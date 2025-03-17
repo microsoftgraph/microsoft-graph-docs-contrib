@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: excel
 author: "ruoyingl"
+ms.date: 04/05/2024
 ---
 
 # Add Named Item

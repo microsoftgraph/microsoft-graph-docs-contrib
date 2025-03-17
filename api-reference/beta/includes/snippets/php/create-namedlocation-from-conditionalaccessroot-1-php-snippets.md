@@ -5,11 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\IpNamedLocation;
-use Microsoft\Graph\Generated\Models\IpRange;
-use Microsoft\Graph\Generated\Models\IPv4CidrRange;
-use Microsoft\Graph\Generated\Models\IPv6CidrRange;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\IpNamedLocation;
+use Microsoft\Graph\Beta\Generated\Models\IpRange;
+use Microsoft\Graph\Beta\Generated\Models\IPv4CidrRange;
+use Microsoft\Graph\Beta\Generated\Models\IPv6CidrRange;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

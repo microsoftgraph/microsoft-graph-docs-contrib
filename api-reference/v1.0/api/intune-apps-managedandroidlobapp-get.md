@@ -2,9 +2,10 @@
 title: "Get managedAndroidLobApp"
 description: "Read properties and relationships of the managedAndroidLobApp object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/13/2024
 ---
 
 # Get managedAndroidLobApp

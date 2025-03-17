@@ -3,8 +3,9 @@ title: "Create custodian unifiedGroupSource"
 description: "Create a new custodian unifiedGroupSource object associated with an eDiscovery custodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Create custodian unifiedGroupSource

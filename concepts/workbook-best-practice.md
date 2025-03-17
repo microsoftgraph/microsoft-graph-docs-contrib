@@ -3,7 +3,8 @@ title: "Best practices for working with the Excel API"
 description: "Find tips for working with Excel APIs in Microsoft Graph. Learn how to manage sessions, work with APIs that take a long time to complete, and reduce throttling errors."
 author: "grangeryy"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
+ms.date: 11/07/2024
 ---
 
 # Best practices for working with the Excel API

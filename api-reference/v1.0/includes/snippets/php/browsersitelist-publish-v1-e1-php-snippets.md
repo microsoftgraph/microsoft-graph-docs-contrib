@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\PublishPostRequestBody;
+use Microsoft\Graph\Generated\Admin\Edge\InternetExplorerMode\SiteLists\Item\Publish\PublishPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

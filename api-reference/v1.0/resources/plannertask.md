@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "TarkanSevilmis"
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 08/09/2024
 ---
 
 # plannerTask resource type
@@ -18,7 +19,8 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerTask](../api/plannertask-get.md) | [plannerTask](plannertask.md) |Read properties and relationships of **plannerTask** object.|
+|[Create](../api/planner-post-tasks.md) | [plannerTask](plannertask.md) |Create **plannerTask** object.|
+|[Get](../api/plannertask-get.md) | [plannerTask](plannertask.md) |Read properties and relationships of **plannerTask** object.|
 |[Update](../api/plannertask-update.md) | [plannerTask](plannertask.md)	|Update **plannerTask** object. |
 |[Delete](../api/plannertask-delete.md) | None |Delete **plannerTask** object. |
 

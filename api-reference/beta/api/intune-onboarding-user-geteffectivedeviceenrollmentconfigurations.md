@@ -2,9 +2,10 @@
 title: "getEffectiveDeviceEnrollmentConfigurations function"
 description: "Intune Onboarding User Geteffectivedeviceenrollmentconfigurations Source_Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # getEffectiveDeviceEnrollmentConfigurations function
@@ -47,7 +48,7 @@ GET /users/{usersId}/getEffectiveDeviceEnrollmentConfigurations
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection in the response body.
 
 ## Example
 

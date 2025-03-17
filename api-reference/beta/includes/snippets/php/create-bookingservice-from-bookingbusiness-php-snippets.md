@@ -5,12 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\BookingService;
-use Microsoft\Graph\Generated\Models\Location;
-use Microsoft\Graph\Generated\Models\PhysicalAddress;
-use Microsoft\Graph\Generated\Models\BookingReminder;
-use Microsoft\Graph\Generated\Models\BookingSchedulingPolicy;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\BookingService;
+use Microsoft\Graph\Beta\Generated\Models\Location;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddress;
+use Microsoft\Graph\Beta\Generated\Models\BookingPriceType;
+use Microsoft\Graph\Beta\Generated\Models\BookingReminder;
+use Microsoft\Graph\Beta\Generated\Models\BookingReminderRecipients;
+use Microsoft\Graph\Beta\Generated\Models\BookingSchedulingPolicy;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

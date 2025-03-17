@@ -6,6 +6,7 @@ author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # agedAccountsPayable resource type
@@ -20,7 +21,7 @@ Represents an [agedAccountsPayable](dynamics-agedaccountspayable.md) object in D
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get agedAccountsPayable](../api/dynamics-agedaccountspayable-get.md)|agedAccountsPayable|Get an **agedAccountsPayable** object|
+|[Get aged accounts payable](../api/dynamics-agedaccountspayable-get.md)|agedAccountsPayable|Get an **agedAccountsPayable** object|
 
 ## Properties
 | Property	    | Type	   |Description                                 |
@@ -42,7 +43,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 ```json
 {

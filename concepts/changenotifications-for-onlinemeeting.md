@@ -5,6 +5,7 @@ author: "benlee-msft"
 ms.localizationpriority: high
 ms.subservice: "cloud-communications"
 ms.custom: scenarios:getting-started
+ms.date: 07/12/2024
 ---
 
 # Get change notifications for Microsoft Teams meeting call event updates
@@ -14,6 +15,9 @@ Change notifications in Microsoft Graph enable you to subscribe to call started,
 A subscription has a maximum expiry period of three days. To persist the subscription for more than this period, a subscription renewal request must be made. For more information, see [Update subscription](/graph/api/subscription-update). Alternatively, a user can wait for the subscription to expire and create a new subscription with the same meeting resource.
 
 This resource supports notifications with resource data. For more information about setting up notifications with resource data, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
+
+> [!NOTE]
+> Effective June 30 2024, to get changes that occurred to an active meeting call, we recommend that you subscribe to [rich notifications](#rich-notifications).
 
 ## Permissions
 
@@ -38,7 +42,7 @@ To park a subscription, the argument must be URL encoded and used as the `joinWe
 > [!NOTE]
 > Replace `{JoinWebUrl}` with the actual URL-encoded value when you specifiy the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
 
-Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId` to subscribe to rich notifications. Basic notifications without change data are sent if these properties aren't provided.
+Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId` to subscribe to rich notifications.
 
 ### Subscription to rich notifications payload sample
 

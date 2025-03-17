@@ -2,9 +2,10 @@
 title: "List macOSTrustedRootCertificates"
 description: "List properties and relationships of the macOSTrustedRootCertificate objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List macOSTrustedRootCertificates
@@ -63,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1479
+Content-Length: 1522
 
 {
   "value": [
@@ -101,7 +102,8 @@ Content-Length: 1479
       "displayName": "Display Name value",
       "version": 7,
       "trustedRootCertificate": "dHJ1c3RlZFJvb3RDZXJ0aWZpY2F0ZQ==",
-      "certFileName": "Cert File Name value"
+      "certFileName": "Cert File Name value",
+      "deploymentChannel": "userChannel"
     }
   ]
 }

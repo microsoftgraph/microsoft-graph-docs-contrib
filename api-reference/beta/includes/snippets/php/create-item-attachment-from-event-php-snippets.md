@@ -5,11 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ItemAttachment;
-use Microsoft\Graph\Generated\Models\Event;
-use Microsoft\Graph\Generated\Models\ItemBody;
-use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ItemAttachment;
+use Microsoft\Graph\Beta\Generated\Models\Event;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

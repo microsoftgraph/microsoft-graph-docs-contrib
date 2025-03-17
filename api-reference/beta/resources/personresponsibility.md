@@ -3,8 +3,9 @@ title: "personResponsibility resource type"
 description: "personResponsibility resource type"
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # personResponsibility resource type
@@ -20,11 +21,11 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List responsibilities](../api/profile-list-responsibilities.md)|[personResponsibility](../resources/personresponsibility.md) collection|Get the personResponsibility resources from the responsibilities navigation property.|
-|[Create personResponsibility](../api/profile-post-responsibilities.md)|[personResponsibility](../resources/personresponsibility.md)|Create a new personResponsibility object.|
-|[Get personResponsibility](../api/personresponsibility-get.md)|[personResponsibility](../resources/personresponsibility.md)|Read the properties and relationships of a [personResponsibility](../resources/personresponsibility.md) object.|
-|[Update personResponsibility](../api/personresponsibility-update.md)|[personResponsibility](../resources/personresponsibility.md)|Update the properties of a [personResponsibility](../resources/personresponsibility.md) object.|
-|[Delete personResponsibility](../api/personresponsibility-delete.md)|None|Deletes a [personResponsibility](../resources/personresponsibility.md) object.|
+|[List](../api/profile-list-responsibilities.md)|[personResponsibility](../resources/personresponsibility.md) collection|Get the personResponsibility resources from the responsibilities navigation property.|
+|[Create](../api/profile-post-responsibilities.md)|[personResponsibility](../resources/personresponsibility.md)|Create a new personResponsibility object.|
+|[Get](../api/personresponsibility-get.md)|[personResponsibility](../resources/personresponsibility.md)|Read the properties and relationships of a [personResponsibility](../resources/personresponsibility.md) object.|
+|[Update](../api/personresponsibility-update.md)|[personResponsibility](../resources/personresponsibility.md)|Update the properties of a [personResponsibility](../resources/personresponsibility.md) object.|
+|[Delete](../api/personresponsibility-delete.md)|None|Deletes a [personResponsibility](../resources/personresponsibility.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -46,7 +47,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -29,7 +29,7 @@ removeUrl := "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/un
 configuration.SetRemoveUrl(&removeUrl) 
 requestBody.SetConfiguration(configuration)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8", 
+	"teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8", 
 }
 requestBody.SetAdditionalData(additionalData)
 

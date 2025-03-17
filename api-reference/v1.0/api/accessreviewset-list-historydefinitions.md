@@ -5,6 +5,7 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 05/20/2024
 ---
 
 # List historyDefinitions
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accessreviewset_list_historydefinitions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accessreviewset-list-historydefinitions-permissions.md)]
 
-If the signed-in user is not a Global Admin directory role member or a Global Reader directory role member, only the definitions that the signed-in user created will be returned.
+If the signed-in user doesn't have at least the Global Reader directory role member, only the definitions that the signed-in user created are returned.
 
 ## HTTP request
 

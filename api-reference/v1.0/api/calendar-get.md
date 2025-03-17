@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "iamgirishck"
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Get calendar
@@ -53,7 +54,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

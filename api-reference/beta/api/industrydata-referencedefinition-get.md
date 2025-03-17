@@ -5,6 +5,7 @@ author: "mlafleur"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 05/15/2024
 ---
 
 # Get referenceDefinition
@@ -125,6 +126,7 @@ Content-Type: application/json
 {
   "code": "01",
   "createdDateTime": "0001-01-01T00:00:00Z",
+  "displayName": "English Language and Literature",
   "id": "RefAcademicSubject-01",
   "isDisabled": false,
   "lastModifiedDateTime": "0001-01-01T00:00:00Z",

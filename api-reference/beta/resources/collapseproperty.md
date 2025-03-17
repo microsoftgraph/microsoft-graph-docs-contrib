@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cxiang"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 07/25/2024
 ---
 
 # collapseProperty resource type
@@ -22,9 +23,13 @@ Specifies the criteria used for collapsing search results. Applies only to sorta
 |fields|String Collection| Defines the collapse group to trim results. The properties in this collection must be sortable/refinable properties. Required.|
 |limit|Int16| Defines a maximum limit count for this field. This numeric value must be a positive integer. Required.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

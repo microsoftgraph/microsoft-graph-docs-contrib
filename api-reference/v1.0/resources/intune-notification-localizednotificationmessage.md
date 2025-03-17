@@ -2,9 +2,10 @@
 title: "localizedNotificationMessage resource type"
 description: "The text content of a Notification Message Template for the specified locale."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # localizedNotificationMessage resource type

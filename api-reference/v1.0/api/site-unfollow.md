@@ -5,6 +5,7 @@ description: Unfollow a user's site
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 # Unfollow site 
 

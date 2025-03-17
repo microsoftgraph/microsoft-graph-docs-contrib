@@ -5,6 +5,7 @@ author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # qna resource type
@@ -21,11 +22,11 @@ Inherits from [searchAnswer](../resources/search-searchanswer.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List qnas](../api/search-searchentity-list-qnas.md)|[microsoft.graph.search.qna](../resources/search-qna.md) collection|Get a list of the [qna](../resources/search-qna.md) objects and their properties.|
-|[Create qna](../api/search-searchentity-post-qnas.md)|[microsoft.graph.search.qna](../resources/search-qna.md)|Create a new [qna](../resources/search-qna.md) object.|
-|[Get qna](../api/search-qna-get.md)|[microsoft.graph.search.qna](../resources/search-qna.md)|Read the properties and relationships of a [qna](../resources/search-qna.md) object.|
-|[Update qna](../api/search-qna-update.md)|[microsoft.graph.search.qna](../resources/search-qna.md)|Update the properties of a [qna](../resources/search-qna.md) object.|
-|[Delete qna](../api/search-qna-delete.md)|None|Delete a [qna](../resources/search-qna.md) object.|
+|[List](../api/search-searchentity-list-qnas.md)|[microsoft.graph.search.qna](../resources/search-qna.md) collection|Get a list of the [qna](../resources/search-qna.md) objects and their properties.|
+|[Create](../api/search-searchentity-post-qnas.md)|[microsoft.graph.search.qna](../resources/search-qna.md)|Create a new [qna](../resources/search-qna.md) object.|
+|[Get](../api/search-qna-get.md)|[microsoft.graph.search.qna](../resources/search-qna.md)|Read the properties and relationships of a [qna](../resources/search-qna.md) object.|
+|[Update](../api/search-qna-update.md)|[microsoft.graph.search.qna](../resources/search-qna.md)|Update the properties of a [qna](../resources/search-qna.md) object.|
+|[Delete](../api/search-qna-delete.md)|None|Delete a [qna](../resources/search-qna.md) object.|
 
 ## Properties
 
@@ -44,7 +45,7 @@ Inherits from [searchAnswer](../resources/search-searchanswer.md).
 |lastModifiedDateTime|DateTimeOffset| Date and time when the QnA was created or last edited. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only.|
 |platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems that are able to view this QnA. Possible values are: `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidASOP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue`.|
 |state|microsoft.graph.search.answerState|State of the QnA. Possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
-|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answervariant.md) collection|Variations of a QnA for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings apply to all variations.|
+|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answervariant.md) collection|Variations of a QnA for different countries/regions or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings apply to all variations.|
 |webUrl|String|The URL link for the QnA. When users select this QnA from the search results, they're directed to the specified URL. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 
 ## Relationships

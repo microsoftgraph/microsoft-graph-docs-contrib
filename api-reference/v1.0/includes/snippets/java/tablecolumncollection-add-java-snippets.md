@@ -10,9 +10,9 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.drives.item.items.item.workbook.tables.item.columns.add.AddPostRequestBody addPostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.tables.item.columns.add.AddPostRequestBody();
 addPostRequestBody.setIndex(3);
-LinkedList<Json> values = new LinkedList<Json>();
-Json json = new Json();
-values.add(json);
+LinkedList<UntypedNode> values = new LinkedList<UntypedNode>();
+UntypedNode  = new UntypedNode();
+values.add();
 addPostRequestBody.setValues(values);
 var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().tables().byWorkbookTableId("{workbookTable-id}").columns().add().post(addPostRequestBody);
 

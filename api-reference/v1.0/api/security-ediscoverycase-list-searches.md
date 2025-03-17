@@ -3,8 +3,9 @@ title: "List searches"
 description: "Get the list of searches from an eDiscovery case"
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # List searches

@@ -26,7 +26,7 @@ useCompanyBranding := true
 emailSettings.SetUseCompanyBranding(&useCompanyBranding) 
 requestBody.SetEmailSettings(emailSettings)
 additionalData := map[string]interface{}{
-	"odataContext" : "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity", 
+	"@odata.context" : "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity", 
 }
 requestBody.SetAdditionalData(additionalData)
 

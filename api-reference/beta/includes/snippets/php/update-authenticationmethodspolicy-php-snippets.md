@@ -5,14 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AuthenticationMethodsPolicy;
-use Microsoft\Graph\Generated\Models\RegistrationEnforcement;
-use Microsoft\Graph\Generated\Models\AuthenticationMethodsRegistrationCampaign;
-use Microsoft\Graph\Generated\Models\ExcludeTarget;
-use Microsoft\Graph\Generated\Models\AuthenticationMethodsRegistrationCampaignIncludeTarget;
-use Microsoft\Graph\Generated\Models\ReportSuspiciousActivitySettings;
-use Microsoft\Graph\Generated\Models\IncludeTarget;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodsPolicy;
+use Microsoft\Graph\Beta\Generated\Models\RegistrationEnforcement;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodsRegistrationCampaign;
+use Microsoft\Graph\Beta\Generated\Models\AdvancedConfigState;
+use Microsoft\Graph\Beta\Generated\Models\ExcludeTarget;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodsRegistrationCampaignIncludeTarget;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodTargetType;
+use Microsoft\Graph\Beta\Generated\Models\ReportSuspiciousActivitySettings;
+use Microsoft\Graph\Beta\Generated\Models\IncludeTarget;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

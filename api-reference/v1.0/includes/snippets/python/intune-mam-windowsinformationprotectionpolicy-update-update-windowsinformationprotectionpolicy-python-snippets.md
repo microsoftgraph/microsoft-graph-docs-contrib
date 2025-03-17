@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows_information_protection_policy import WindowsInformationProtectionPolicy
+from msgraph.generated.models.windows_information_protection_enforcement_level import WindowsInformationProtectionEnforcementLevel
 from msgraph.generated.models.windows_information_protection_resource_collection import WindowsInformationProtectionResourceCollection
 from msgraph.generated.models.windows_information_protection_data_recovery_certificate import WindowsInformationProtectionDataRecoveryCertificate
 from msgraph.generated.models.windows_information_protection_app import WindowsInformationProtectionApp
@@ -14,9 +16,8 @@ from msgraph.generated.models.windows_information_protection_proxied_domain_coll
 from msgraph.generated.models.proxied_domain import ProxiedDomain
 from msgraph.generated.models.windows_information_protection_i_p_range_collection import WindowsInformationProtectionIPRangeCollection
 from msgraph.generated.models.ip_range import IpRange
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+from msgraph.generated.models.windows_information_protection_pin_character_requirements import WindowsInformationProtectionPinCharacterRequirements
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = WindowsInformationProtectionPolicy(
 	odata_type = "#microsoft.graph.windowsInformationProtectionPolicy",
 	display_name = "Display Name value",

@@ -5,6 +5,7 @@ author: "satyakonmsft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 10/21/2024
 ---
 
 # outgoingCallOptions resource type
@@ -21,10 +22,11 @@ Inherits from [callOptions](calloptions.md).
 |:------------------------------------|:--------|:------------------------------------------------------------------------------------------------------------------------------|
 | hideBotAfterEscalation              | Boolean | Indicates whether to hide the app after the call is escalated. Inherited from [callOptions](calloptions.md).                  |
 | isContentSharingNotificationEnabled | Boolean | Indicates whether content sharing notifications should be enabled for the call. Inherited from [callOptions](calloptions.md). |
+| isDeltaRosterEnabled                | Boolean | Indicates whether delta roster is enabled for the call. Inherited from [callOptions](calloptions.md).                         |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.outgoingCallOptions"
@@ -34,6 +36,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.outgoingCallOptions",
   "hideBotAfterEscalation": "Boolean",
-  "isContentSharingNotificationEnabled": "Boolean"
+  "isContentSharingNotificationEnabled": "Boolean",
+  "isDeltaRosterEnabled": "Boolean"
 }
 ```

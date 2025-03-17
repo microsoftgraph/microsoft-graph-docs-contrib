@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mlafleur"
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 08/02/2024
 ---
 
 # educationUser: delta
@@ -36,7 +37,7 @@ GET /education/users/delta
 
 | Name          | Description   |
 | :------------ | :------------ |
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

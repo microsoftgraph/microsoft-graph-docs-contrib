@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/10/2024
 ---
 
 # accessPackageSubject resource type
@@ -19,8 +20,8 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update accessPackageSubject](../api/accesspackagesubject-update.md)|None | Update the properties of an **accesspackagesubject** object. |
-| [Get accessPackageSubject](../api/accesspackagesubject-get.md)|[accessPackageSubject](../resources/accesspackagesubject.md) | Get the properties of an **accesspackagesubject** object. |
+| [Get](../api/accesspackagesubject-get.md)|[accessPackageSubject](../resources/accesspackagesubject.md) | Get the properties of an **accesspackagesubject** object. |
+| [Update](../api/accesspackagesubject-update.md)|None | Update the properties of an **accesspackagesubject** object. |
 
 ## Properties
 

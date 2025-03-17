@@ -5,6 +5,7 @@ author: "zihzhan-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # watermarkProtectionValues resource type
@@ -22,7 +23,7 @@ Indicates that a watermark is enabled for this particular meeting. Any clients t
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

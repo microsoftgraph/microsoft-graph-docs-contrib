@@ -2,9 +2,10 @@
 title: "windowsDefenderUpdateSignatures action"
 description: "Not yet documented"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # windowsDefenderUpdateSignatures action
@@ -82,10 +83,6 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDe
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -20,10 +20,10 @@ index := int32(3)
 requestBody.SetIndex(&index) 
 
 
-json := graphmodels.NewJson()
+ := graph.NewUntypedNode()
 
-values := []graphmodels.Jsonable {
-	json,
+values := []graph.UntypedNodeable {
+	,
 }
 requestBody.SetValues(values)
 

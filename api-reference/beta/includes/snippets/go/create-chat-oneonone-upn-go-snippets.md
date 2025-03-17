@@ -26,7 +26,7 @@ roles := []string {
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')", 
+	"user@odata.bind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')", 
 }
 conversationMember.SetAdditionalData(additionalData)
 conversationMember1 := graphmodels.NewAadUserConversationMember()
@@ -35,7 +35,7 @@ roles := []string {
 }
 conversationMember1.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/users('alex@contoso.com')", 
+	"user@odata.bind" : "https://graph.microsoft.com/beta/users('alex@contoso.com')", 
 }
 conversationMember1.SetAdditionalData(additionalData)
 

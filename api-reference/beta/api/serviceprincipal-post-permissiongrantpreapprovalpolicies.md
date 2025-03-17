@@ -5,6 +5,7 @@ author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # Assign a permissionGrantPreApprovalPolicy to a servicePrincipal
@@ -48,6 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_assign_permissionGrantPreApprovalPolicies"
@@ -62,6 +64,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-assign-permissiongrantpreapprovalpolicies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 <!-- {

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # synchronizationMetadataEntry resource type
@@ -34,9 +35,12 @@ Metadata for the given object.
 |SynchronizationLearnMoreIbizaFwLink |The documentation link that's displayed in the Microsoft Entra admin center.  |
 |ConfigurationFields |A JSON containing the textbox configuration names that are displayed in the Microsoft Entra admin center. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.synchronizationMetadataEntry"

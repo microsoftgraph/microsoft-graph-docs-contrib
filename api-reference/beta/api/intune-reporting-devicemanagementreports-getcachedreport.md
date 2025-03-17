@@ -2,9 +2,10 @@
 title: "getCachedReport action"
 description: "Intune Reporting Devicemanagementreports Getcachedreport Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/12/2024
 ---
 
 # getCachedReport action
@@ -52,9 +53,9 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |id|String||
 |select|String collection||
-|search|String||
 |groupBy|String collection||
 |orderBy|String collection||
+|search|String||
 |skip|Int32||
 |top|Int32||
 
@@ -78,13 +79,13 @@ Content-length: 209
   "select": [
     "Select value"
   ],
-  "search": "Search value",
   "groupBy": [
     "Group By value"
   ],
   "orderBy": [
     "Order By value"
   ],
+  "search": "Search value",
   "skip": 4,
   "top": 3
 }

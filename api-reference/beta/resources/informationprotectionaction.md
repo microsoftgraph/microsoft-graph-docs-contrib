@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "tommoser"
 ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # informationProtectionAction resource type (deprecated)
@@ -39,7 +40,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

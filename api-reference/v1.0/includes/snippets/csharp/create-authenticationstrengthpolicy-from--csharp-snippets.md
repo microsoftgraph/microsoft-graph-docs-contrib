@@ -11,13 +11,34 @@ using Microsoft.Graph.Models;
 
 var requestBody = new AuthenticationStrengthPolicy
 {
-	OdataType = "#microsoft.graph.authenticationStrengthPolicy",
-	DisplayName = "Contoso authentication level",
-	Description = "The only authentication level allowed to access our secret apps",
+	DisplayName = "Example",
+	RequirementsSatisfied = AuthenticationStrengthRequirements.Mfa,
 	AllowedCombinations = new List<AuthenticationMethodModes?>
 	{
-		AuthenticationMethodModes.Password | AuthenticationMethodModes.HardwareOath,
-		AuthenticationMethodModes.Password | AuthenticationMethodModes.Sms,
+		AuthenticationMethodModes.Fido2,
+	},
+	CombinationConfigurations = new List<AuthenticationCombinationConfiguration>
+	{
+		new Fido2CombinationConfiguration
+		{
+			OdataType = "#microsoft.graph.fido2CombinationConfiguration",
+			Id = "42235320-c8db-4d8c-9344-8f1ce87f734b",
+			AppliesToCombinations = new List<AuthenticationMethodModes?>
+			{
+				AuthenticationMethodModes.Fido2,
+			},
+			AllowedAAGUIDs = new List<string>
+			{
+				"de1e552d-db1d-4423-a619-566b625cdc84",
+				"90a3ccdf-635c-4729-a248-9b709135078f",
+			},
+		},
+	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"combinationConfigurations@odata.context" , "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationStrengthPolicies('5790842a-5bab-44c2-9cf1-b38d675b70ea')/combinationConfigurations"
+		},
 	},
 };
 

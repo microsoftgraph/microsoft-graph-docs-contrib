@@ -3,8 +3,9 @@ title: "filePlanDescriptor resource type"
 description: "Represents a set of optional descriptors to supplement a retention label and improve the manageability and organization of content in Microsoft 365 for an organization."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/08/2024
 ---
 
 # filePlanDescriptor resource type

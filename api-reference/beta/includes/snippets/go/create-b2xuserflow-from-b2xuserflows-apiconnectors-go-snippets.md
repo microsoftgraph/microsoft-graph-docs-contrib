@@ -25,13 +25,13 @@ requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion)
 apiConnectorConfiguration := graphmodels.NewUserFlowApiConnectorConfiguration()
 postFederationSignup := graphmodels.NewIdentityApiConnector()
 additionalData := map[string]interface{}{
-	"odataId" : "{apiConnectorId}", 
+	"@odata.id" : "{apiConnectorId}", 
 }
 postFederationSignup.SetAdditionalData(additionalData)
 apiConnectorConfiguration.SetPostFederationSignup(postFederationSignup)
 postAttributeCollection := graphmodels.NewIdentityApiConnector()
 additionalData := map[string]interface{}{
-	"odataId" : "{apiConnectorId}", 
+	"@odata.id" : "{apiConnectorId}", 
 }
 postAttributeCollection.SetAdditionalData(additionalData)
 apiConnectorConfiguration.SetPostAttributeCollection(postAttributeCollection)

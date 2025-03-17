@@ -5,6 +5,7 @@ author: "iamgirishck"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # event: dismissReminder
@@ -44,7 +45,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Response

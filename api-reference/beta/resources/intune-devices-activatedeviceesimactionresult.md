@@ -2,9 +2,10 @@
 title: "activateDeviceEsimActionResult resource type"
 description: "Activate device eSIM action result"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # activateDeviceEsimActionResult resource type

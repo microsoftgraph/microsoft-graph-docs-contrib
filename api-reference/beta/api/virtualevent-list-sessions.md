@@ -1,13 +1,14 @@
 ---
-title: "List sessions"
+title: "List sessions for virtualEvent"
 description: "Get a list of all virtualEventSession objects under a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 08/02/2024
 ---
 
-# List sessions
+# List sessions for virtualEvent
 
 Namespace: microsoft.graph
 

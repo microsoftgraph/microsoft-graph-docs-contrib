@@ -3,7 +3,8 @@ title: "Partnering opportunities with the Microsoft Graph Security API"
 description: "This article helps product managers and business development roles understand investment paths and provides insight into partnering value propositions."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
+ms.date: 11/07/2024
 ---
 
 # Partnering opportunities with the Microsoft Graph Security API

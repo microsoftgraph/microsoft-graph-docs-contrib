@@ -2,9 +2,10 @@
 title: "deviceManagementReusablePolicySetting resource type"
 description: "Graph model for a reusable setting"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceManagementReusablePolicySetting resource type

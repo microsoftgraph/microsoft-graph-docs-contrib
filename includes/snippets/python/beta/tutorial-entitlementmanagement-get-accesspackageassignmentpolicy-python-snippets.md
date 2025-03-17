@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
-from msgraph.generated.models.requestor_settings import RequestorSettings
-from msgraph.generated.models.user_set import UserSet
-from msgraph.generated.models.single_user import SingleUser
-from msgraph.generated.models.approval_settings import ApprovalSettings
-from msgraph.generated.models.approval_stage import ApprovalStage
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
+from msgraph_beta.generated.models.requestor_settings import RequestorSettings
+from msgraph_beta.generated.models.user_set import UserSet
+from msgraph_beta.generated.models.single_user import SingleUser
+from msgraph_beta.generated.models.approval_settings import ApprovalSettings
+from msgraph_beta.generated.models.approval_stage import ApprovalStage
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageAssignmentPolicy(
 	access_package_id = "88203d16-0e31-41d4-87b2-dd402f1435e9",
 	display_name = "Specific users",

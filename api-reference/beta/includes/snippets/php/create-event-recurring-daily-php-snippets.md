@@ -5,17 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Users\Item\Events\EventsRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Generated\Models\Event;
-use Microsoft\Graph\Generated\Models\ItemBody;
-use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
-use Microsoft\Graph\Generated\Models\Location;
-use Microsoft\Graph\Generated\Models\Attendee;
-use Microsoft\Graph\Generated\Models\EmailAddress;
-use Microsoft\Graph\Generated\Models\PatternedRecurrence;
-use Microsoft\Graph\Generated\Models\RecurrencePattern;
-use Microsoft\Graph\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\Events\EventsRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\Event;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Beta\Generated\Models\Location;
+use Microsoft\Graph\Beta\Generated\Models\Attendee;
+use Microsoft\Graph\Beta\Generated\Models\EmailAddress;
+use Microsoft\Graph\Beta\Generated\Models\AttendeeType;
+use Microsoft\Graph\Beta\Generated\Models\PatternedRecurrence;
+use Microsoft\Graph\Beta\Generated\Models\RecurrencePattern;
+use Microsoft\Graph\Beta\Generated\Models\RecurrencePatternType;
+use Microsoft\Graph\Beta\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Beta\Generated\Models\RecurrenceRangeType;
+use Microsoft\Kiota\Abstractions\Types\Date;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

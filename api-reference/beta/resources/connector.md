@@ -5,6 +5,7 @@ author: "dhruvinrshah"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 12/19/2024
 ---
 
 # connector resource type
@@ -19,8 +20,8 @@ Represents an Application Proxy connector. Connectors are lightweight agents tha
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List connectors](../api/connector-list.md) | [connector](connector.md) collection | Retrieve a list of connector objects. | 
-| [Get connector](../api/connector-get.md) | [connector](connector.md) | Read the properties and relationships of a connector object. |
+| [List](../api/connector-list.md) | [connector](connector.md) collection | Retrieve a list of connector objects. |
+| [Get](../api/connector-get.md) | [connector](connector.md) | Read the properties and relationships of a connector object. |
 | [List memberOf](../api/connector-list-memberof.md) | [connectorGroup](connectorgroup.md) collection | List the **connectorGroup** object collection the connector is a member of. |
 | [Add connector to connectorGroup](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Add a connector to a **connectorGroup**. |
 
@@ -32,10 +33,10 @@ Represents an Application Proxy connector. Connectors are lightweight agents tha
 |id|String| The unique identifier of the connector. Read-only. |
 |machineName|String| The name of the computer on which the connector is installed and runs on. |
 |status|connectorStatus| Indicates the status of the connector. The possible values are: `active`, `inactive`. Read-only. |
-|version|String|The version of the connector.|
+|version|String|The version of the connector. Read-only.|
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |memberOf|[connectorGroup](connectorgroup.md) collection| The **connectorGroup** that the connector is a member of. Read-only. |
 

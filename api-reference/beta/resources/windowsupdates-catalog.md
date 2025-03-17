@@ -5,6 +5,7 @@ author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: windows-update-business
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # catalog resource type
@@ -18,7 +19,7 @@ Entity representing the catalog of content that you can approve for deployment.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List entries](../api/windowsupdates-catalog-list-entries.md)|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) collection|Get the [catalogEntry](../resources/windowsupdates-catalogentry.md) resources from the entries navigation property. Returns **catalogEntry** resources of the following derived types: [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md), [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).|
+|[List catalog entries](../api/windowsupdates-catalog-list-entries.md)|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) collection|Get the [catalogEntry](../resources/windowsupdates-catalogentry.md) resources from the entries navigation property. Returns **catalogEntry** resources of the following derived types: [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md), [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -31,7 +32,7 @@ Entity representing the catalog of content that you can approve for deployment.
 |entries|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) collection|Lists the content that you can approve for deployment. Read-only.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

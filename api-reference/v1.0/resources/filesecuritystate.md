@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: security
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # fileSecurityState resource type
@@ -24,7 +25,7 @@ Contains information about the file (not process) related to the alert.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

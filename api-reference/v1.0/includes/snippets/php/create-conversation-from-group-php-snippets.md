@@ -10,6 +10,7 @@ use Microsoft\Graph\Generated\Models\Conversation;
 use Microsoft\Graph\Generated\Models\ConversationThread;
 use Microsoft\Graph\Generated\Models\Post;
 use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\BodyType;
 use Microsoft\Graph\Generated\Models\Recipient;
 use Microsoft\Graph\Generated\Models\EmailAddress;
 

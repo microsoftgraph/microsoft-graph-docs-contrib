@@ -7,6 +7,7 @@ author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # paymentMethod resource type
@@ -21,10 +22,10 @@ Represents a method of payment in Dynamics 365 Business Central such as PayPal, 
 
 | Method                                                          | Return Type  |Description             |
 |:----------------------------------------------------------------|:-------------|:-----------------------|
-|[Get paymentMethod](../api/dynamics-paymentmethods-get.md)      |[paymentMethod](dynamics-paymentmethods.md)|Get a payment method object.   |
-|[Post paymentMethod](../api/dynamics-create-paymentmethods.md)  |[paymentMethod](dynamics-paymentmethods.md)|Create a payment method object.|
-|[Patch paymentMethod](../api/dynamics-paymentmethods-update.md) |[paymentMethod](dynamics-paymentmethods.md)|Update a payment method object.|
-|[Delete paymentMethod](../api/dynamics-paymentmethods-delete.md)|None          |Delete a payment method object.|
+|[Get payment methods](../api/dynamics-paymentmethods-get.md)      |[paymentMethod](dynamics-paymentmethods.md)|Get a payment method object.   |
+|[Create payment methods](../api/dynamics-create-paymentmethods.md)  |[paymentMethod](dynamics-paymentmethods.md)|Create a payment method object.|
+|[Update payment methods](../api/dynamics-paymentmethods-update.md) |[paymentMethod](dynamics-paymentmethods.md)|Update a payment method object.|
+|[Delete payment methods](../api/dynamics-paymentmethods-delete.md)|None          |Delete a payment method object.|
 
 ## Properties
 | Property	         | Type	  |Description                                                  |

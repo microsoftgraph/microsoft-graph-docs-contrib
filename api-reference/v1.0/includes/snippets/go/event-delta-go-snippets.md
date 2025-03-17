@@ -23,11 +23,11 @@ headers.Add("Prefer", "odata.maxpagesize=2")
 requestStartDateTime := "{start_datetime}"
 requestEndDateTime := "{end_datetime}"
 
-requestParameters := &graphusers.ItemCalendarViewDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphusers.CalendarViewDeltaRequestBuilderGetQueryParameters{
 	StartDateTime: &requestStartDateTime,
 	EndDateTime: &requestEndDateTime,
 }
-configuration := &graphusers.ItemCalendarViewDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphusers.CalendarViewDeltaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

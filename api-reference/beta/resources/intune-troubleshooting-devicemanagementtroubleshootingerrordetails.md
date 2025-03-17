@@ -2,9 +2,10 @@
 title: "deviceManagementTroubleshootingErrorDetails resource type"
 description: "Object containing detailed information about the error and its remediation."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementTroubleshootingErrorDetails resource type

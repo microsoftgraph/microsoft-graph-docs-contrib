@@ -5,6 +5,7 @@ author: "Kanaka"
 doc_type: resourcePageType
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 07/22/2024
 ---
 # channelIdentity resource type
 
@@ -22,7 +23,7 @@ Contains basic identification information about a channel in Microsoft Teams.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

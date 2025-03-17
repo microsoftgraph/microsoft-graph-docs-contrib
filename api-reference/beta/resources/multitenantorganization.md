@@ -5,6 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # multiTenantOrganization resource type
@@ -20,9 +21,9 @@ There can only be one multitenant organization per active tenant. It is not poss
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create multiTenantOrganization](../api/tenantrelationship-put-multitenantorganization.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Create a new multitenant organization.|
-|[Get multiTenantOrganization](../api/multitenantorganization-get.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Get properties of the multitenant organization.|
-|[Update multiTenantOrganization](../api/multitenantorganization-update.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Update the properties of a multitenant organization.|
+|[Create](../api/tenantrelationship-put-multitenantorganization.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Create a new multitenant organization.|
+|[Get](../api/multitenantorganization-get.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Get properties of the multitenant organization.|
+|[Update](../api/multitenantorganization-update.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Update the properties of a multitenant organization.|
 
 ## Properties
 |Property|Type|Description|

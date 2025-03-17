@@ -5,6 +5,7 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 06/06/2024
 ---
 
 # Create printJob
@@ -14,7 +15,7 @@ Create a new [printJob](../resources/printJob.md) for a [printer](../resources/p
 
 Also creates a new [printDocument](../resources/printDocument.md) associated with the printJob.
 
-> **Note:** A user can submit up to ~10000 print jobs in 10 days.
+> **Note:** A user can submit up to ~10000 print jobs in 12 days.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.subservice: onenote
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # oneNoteResource resource type
@@ -74,7 +75,7 @@ None.
 ## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get resource binary data](../api/resource-get.md) | Stream |Retrieve the binary data of a file or image resource.|
+|[Get resource](../api/resource-get.md) | Stream |Retrieve the binary data of a file or image resource.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

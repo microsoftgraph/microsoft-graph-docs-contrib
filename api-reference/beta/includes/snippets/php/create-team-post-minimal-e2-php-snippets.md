@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\Team;
-use Microsoft\Graph\Generated\Models\ConversationMember;
-use Microsoft\Graph\Generated\Models\AadUserConversationMember;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Team;
+use Microsoft\Graph\Beta\Generated\Models\ConversationMember;
+use Microsoft\Graph\Beta\Generated\Models\AadUserConversationMember;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Team();
 $requestBody->setDisplayName('My Sample Team');
-$requestBody->setDescription('My Sample Team’s Description');
+$requestBody->setDescription('My sample team’s description');
+$requestBody->setFirstChannelName('My first channel of the sample team');
 $membersConversationMember1 = new AadUserConversationMember();
 $membersConversationMember1->setOdataType('#microsoft.graph.aadUserConversationMember');
 $membersConversationMember1->setRoles(['owner', 	]);

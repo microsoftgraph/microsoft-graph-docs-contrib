@@ -5,6 +5,7 @@ author: "zhishending"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/27/2024
 ---
 
 # List alertRecords
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Get a list of the [alertRecord](../resources/devicemanagement-alertrecord.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

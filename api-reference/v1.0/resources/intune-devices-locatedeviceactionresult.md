@@ -2,9 +2,10 @@
 title: "locateDeviceActionResult resource type"
 description: "Locate device action result"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # locateDeviceActionResult resource type

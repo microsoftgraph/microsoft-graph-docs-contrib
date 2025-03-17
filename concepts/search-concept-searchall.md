@@ -4,6 +4,7 @@ description: "Learn how to use the Microsoft Search API in Microsoft Graph to se
 author: "yiwenwang"
 ms.localizationpriority: medium
 ms.subservice: "search"
+ms.date: 11/07/2024
 ---
 
 # Search SharePoint content with application permissions
@@ -142,7 +143,7 @@ By default, private content search is disabled for customers with application pe
 To include all private content in a search using application permissions, specify `privateContent` in the **sharePointOneDriveOptions** property.
 
 > [!NOTE]
-> Searching all private content can be an expensive option. When you run an initial search request, if the tenant does not have an active APC stamp, you will need a provision a new APC stamp for your tenant. This can take several hours or days to complete. After the provisioning, the search will work as normal. 
+> Searching all private content can be an expensive option. To make the process more efficient, when you run the initial search request and specify `privateContnt`, an index is provisioned to serve private results. The time required to build the index depends on the number of items in your users' OneDrive. For a medium-to-large tenant, provisioning a new index can take days to a week to complete. For very large tenants, provisioning will take longer.  While the index is provisioning, search requests only return shared and public content. When the new index is complete, private and shared content is also returned. If no search requests for `privateContent` are sent within three months, the private index is decommissioned. A subsequent search request for `privateContent` will rebuild the index.
 
 ### Request
 

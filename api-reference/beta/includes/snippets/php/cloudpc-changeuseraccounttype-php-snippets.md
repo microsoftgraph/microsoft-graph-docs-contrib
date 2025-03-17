@@ -5,8 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ChangeUserAccountTypePostRequestBody;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\DeviceManagement\VirtualEndpoint\CloudPCs\Item\ChangeUserAccountType\ChangeUserAccountTypePostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcUserAccountType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

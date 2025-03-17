@@ -3,8 +3,9 @@ title: "Create webAccount"
 description: "Create a new webAccount object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # Create webAccount

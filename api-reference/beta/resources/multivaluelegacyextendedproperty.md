@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: non-product-specific
 author: "SuryaLashmiS"
+ms.date: 05/23/2024
 ---
 
 # multiValueLegacyExtendedProperty resource type
@@ -24,8 +25,8 @@ open extensions or extended properties, and how to specify extended properties.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [Outlook task](../resources/outlooktask.md), or [Outlook task folder](../resources/outlooktaskfolder.md). Group [post](../resources/post.md) isn't supported. | Create a **multiValueLegacyExtendedProperty** in a new or existing instance of a supported resource. |
-|[Get](../api/multivaluelegacyextendedproperty-get.md) |A supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [Outlook task](../resources/outlooktask.md), [Outlook task folder](../resources/outlooktaskfolder.md), or group [post](../resources/post.md)) expanded with a [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) object. |Get a resource instance with an extended property using `$expand`.|
+|[Create multi-value property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [Outlook task](../resources/outlooktask.md), or [Outlook task folder](../resources/outlooktaskfolder.md). Group [post](../resources/post.md) isn't supported. | Create a **multiValueLegacyExtendedProperty** in a new or existing instance of a supported resource. |
+|[Get multi-value property](../api/multivaluelegacyextendedproperty-get.md) |A supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [Outlook task](../resources/outlooktask.md), [Outlook task folder](../resources/outlooktaskfolder.md), or group [post](../resources/post.md)) expanded with a [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) object. |Get a resource instance with an extended property using `$expand`.|
 
 ## Properties
 | Property	   | Type	|Description|

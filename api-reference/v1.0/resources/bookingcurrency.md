@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # bookingCurrency resource type
@@ -18,8 +19,8 @@ Represents a monetary currency supported by a [bookingBusiness](bookingbusiness.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List bookingCurrencies](../api/bookingcurrency-list.md) | [bookingCurrency](bookingcurrency.md) collection |Get a list of **bookingCurrency** objects available to a Microsoft Bookings business.|
-|[Get bookingCurrency](../api/bookingcurrency-get.md) | [bookingCurrency](bookingcurrency.md) |Get the properties of a **bookingCurrency** object.|
+|[List](../api/bookingcurrency-list.md) | [bookingCurrency](bookingcurrency.md) collection |Get a list of **bookingCurrency** objects available to a Microsoft Bookings business.|
+|[Get](../api/bookingcurrency-get.md) | [bookingCurrency](bookingcurrency.md) |Get the properties of a **bookingCurrency** object.|
 
 
 ## Properties

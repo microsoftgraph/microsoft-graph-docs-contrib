@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
 doc_type: "resourcePageType"
+ms.date: 07/25/2024
 ---
 
 # timeRange resource type
@@ -22,9 +23,13 @@ A time range resource with a start and end time.
 |endTime|TimeOfDay|End time for the time range.|
 |startTime|TimeOfDay|Start time for the time range.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

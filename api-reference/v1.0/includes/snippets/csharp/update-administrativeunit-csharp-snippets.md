@@ -11,7 +11,10 @@ using Microsoft.Graph.Models;
 
 var requestBody = new AdministrativeUnit
 {
-	DisplayName = "Greater Seattle District Technical Schools",
+	DisplayName = "Executive Division",
+	MembershipType = "Dynamic",
+	MembershipRule = "(user.country -eq \"United States\")",
+	MembershipRuleProcessingState = "On",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

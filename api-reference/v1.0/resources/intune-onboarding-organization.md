@@ -2,9 +2,10 @@
 title: "organization resource type"
 description: "The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # organization resource type

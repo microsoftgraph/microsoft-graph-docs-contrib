@@ -2,9 +2,10 @@
 title: "complianceManagementPartner resource type"
 description: "Compliance management partner for all platforms"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # complianceManagementPartner resource type

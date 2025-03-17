@@ -3,8 +3,9 @@ title: "Get ediscoveryHoldPolicy"
 description: "Read the properties and relationships of an ediscoveryHoldPolicy object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # Get ediscoveryHoldPolicy

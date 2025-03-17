@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # schema resource type
@@ -19,9 +20,9 @@ The [connection](externalconnectors-externalconnection.md) schema determines how
 
 | Method                                                    | Return Type                   | Description |
 |:----------------------------------------------------------|:------------------------------|:--|
-| [Create schema](../api/externalconnectors-externalconnection-patch-schema.md) | None *or* [schema](externalconnectors-schema.md) | Register connection schema. |
-| [Get schema](../api/externalconnectors-schema-get.md)                        | [schema](externalconnectors-schema.md)           | Read properties of a schema object. |
-| [Update schema](../api/externalconnectors-schema-update.md) | None *or* [schema](externalconnectors-schema.md) | Update properties of a schema object. |
+| [Create](../api/externalconnectors-externalconnection-patch-schema.md) | None *or* [schema](externalconnectors-schema.md) | Register connection schema. |
+| [Get](../api/externalconnectors-schema-get.md)                        | [schema](externalconnectors-schema.md)           | Read properties of a schema object. |
+| [Update](../api/externalconnectors-schema-update.md) | None *or* [schema](externalconnectors-schema.md) | Update properties of a schema object. |
 
 ## Properties
 
@@ -36,7 +37,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

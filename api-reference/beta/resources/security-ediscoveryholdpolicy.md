@@ -1,10 +1,11 @@
 ---
 title: "ediscoveryHoldPolicy resource type"
-description: "*ediscoveryHoldPolicy resource type"
+description: "ediscoveryHoldPolicy resource type"
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 10/28/2024
 ---
 
 # ediscoveryHoldPolicy resource type
@@ -18,15 +19,19 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List ediscoveryHoldPolicies](../api/security-ediscoverycase-list-legalholds.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) collection|Get a list of the [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) objects and their properties.|
-|[Create ediscoveryHoldPolicy](../api/security-ediscoverycase-post-legalholds.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Create a new [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
-|[Get ediscoveryHoldPolicy](../api/security-ediscoveryholdpolicy-get.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Read the properties and relationships of an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
-|[Update ediscoveryHoldPolicy](../api/security-ediscoveryholdpolicy-update.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Update the properties of an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
-|[Delete ediscoveryHoldPolicy](../api/security-ediscoverycase-delete-legalholds.md)|None|Delete an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
-|[List siteSources](../api/security-ediscoverycustodian-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
-|[Create siteSource](../api/security-ediscoveryholdpolicy-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new siteSource object.|
-|[List userSources](../api/security-ediscoverycustodian-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Get the userSource resources from the userSources navigation property.|
-|[Create userSource](../api/security-ediscoveryholdpolicy-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Create a new userSource object.|
+|[List](../api/security-ediscoverycase-list-legalholds.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) collection|Get a list of the [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) objects and their properties.|
+|[Create](../api/security-ediscoverycase-post-legalholds.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Create a new [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
+|[Get](../api/security-ediscoveryholdpolicy-get.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Read the properties and relationships of an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
+|[Update](../api/security-ediscoveryholdpolicy-update.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Update the properties of an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
+|[Delete](../api/security-ediscoverycase-delete-legalholds.md)|None|Delete an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
+| **Site sources** |||
+|[List](../api/security-ediscoveryholdpolicy-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get a list of the [siteSource](../resources/security-sitesource.md) objects associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
+|[Create](../api/security-ediscoveryholdpolicy-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new [siteSource](../resources/security-sitesource.md) object.|
+|[Delete](../api/security-ediscoveryholdpolicy-delete-sitesources.md)|None|Delete a [siteSource](../resources/security-sitesource.md) object associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
+| **User sources** |||
+|[List](../api/security-ediscoveryholdpolicy-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Get a list of the [userSource](../resources/security-usersource.md) objects associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
+|[Create](../api/security-ediscoveryholdpolicy-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Create a new [userSource](../resources/security-usersource.md) object.|
+|[Delete](../api/security-ediscoveryholdpolicy-delete-usersources.md)|None|Delete a [userSource](../resources/security-usersource.md) object associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -36,6 +41,7 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |createdDateTime|DateTimeOffset|The date and time the legal hold was created. |
 |description|String| The legal hold description. |
 |displayName|String| The display name of the legal hold. |
+|contentQuery|String| KQL query that specifies content to be held in the specified locations. |
 |errors|String collection|Lists any errors that happened while placing the hold. |
 |id|String|The ID for the eDiscovery case. Read-only. Inherited from [entity](../resources/entity.md). |
 |isEnabled|Boolean|Indicates whether the hold is enabled and actively holding content. |
@@ -58,7 +64,7 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Data sources that represent Exchange mailboxes.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

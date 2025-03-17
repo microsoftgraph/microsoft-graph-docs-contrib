@@ -5,6 +5,7 @@ author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Create provisioningFlow
@@ -44,7 +45,7 @@ POST /external/industryData/outboundProvisioningFlowSets/{id}/provisioningFlows
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

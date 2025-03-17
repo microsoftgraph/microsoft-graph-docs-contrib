@@ -5,6 +5,7 @@ author: "jeeshnair"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # usageRight resource type
@@ -19,8 +20,8 @@ A usage right represents a license that a user or device has for either third pa
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List user usageRights](../api/user-list-usagerights.md)|[usageRight](../resources/usageright.md) collection|Get the list of usage rights for a user.|
-|[List device usageRights](../api/device-list-usagerights.md)|[usageRight](../resources/usageright.md) collection|Get the list of usage rights for a device.|
+|[List user usage rights](../api/user-list-usagerights.md)|[usageRight](../resources/usageright.md) collection|Get the list of usage rights for a user.|
+|[List device usage rights](../api/device-list-usagerights.md)|[usageRight](../resources/usageright.md) collection|Get the list of usage rights for a device.|
 
 ## Properties
 

@@ -1,10 +1,11 @@
 ---
 title: "Update virtualEventTownhall"
 description: "Update the properties of a virtualEventTownhall object."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/18/2024
 ---
 
 # Update virtualEventTownhall
@@ -18,14 +19,14 @@ Update the properties of a [virtualEventTownhall](../resources/virtualeventtownh
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
-  "name": "virtualeventtownhall-update-permissions"
+  "name": "virtualevent-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventtownhall-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/virtualevent-update-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +42,7 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -50,11 +51,13 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. Optional. |
-| description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| displayName | String | Display name of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. |
+| description | [itemBody](../resources/itembody.md) | Description of the town hall. |
+| displayName | String | Display name of the town hall. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. |
+| invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The town hall settings. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. |
 
 ## Response
 
@@ -136,7 +139,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.virtualEventTownhall",
-  "id": "fc6e8c15-2fd7-1dd5-caa0-87056e6a12be",
+  "id": "a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
   "status": "draft",
   "displayName": "The Impact of Tech on Our Lives",
   "description": {
@@ -162,6 +165,9 @@ Content-Type: application/json
     }
   },
   "audience": "organization",
+  "settings": {
+      "isAttendeeEmailNotificationEnabled": false
+  },
   "isInviteOnly": false,  
   "coOrganizers": [
     {
@@ -176,6 +182,12 @@ Content-Type: application/json
       "id": "127962bb-84e1-7b62-fd98-1c9d39def7b6",
       "displayName": "Emilee Pham",
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
+    }
+  ],
+  "externalEventInformation": [
+    {
+      "applicationId" : "1b7ba4d1-c377-4b2f-ad0e-a3fc50bc987b",
+      "externalEventId": "myExternalEventId"
     }
   ]
 }

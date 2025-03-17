@@ -2,9 +2,10 @@
 title: "remoteActionAudit resource type"
 description: "Report of remote actions initiated on the devices belonging to a certain tenant."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # remoteActionAudit resource type
@@ -39,6 +40,9 @@ Report of remote actions initiated on the devices belonging to a certain tenant.
 |deviceIMEI|String|IMEI of the device.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |managedDeviceId|String|Action target.|
+|deviceActionDetails|[keyValuePair_2OfString_String](../resources/intune-devices-keyvaluepair_2ofstring_string.md) collection|DeviceAction details|
+|deviceActionCategory|[deviceActionCategory](../resources/intune-devices-deviceactioncategory.md)|DeviceAction category. Possible values are: `single`, `bulk`.|
+|bulkDeviceActionId|String|BulkAction ID|
 
 ## Relationships
 None
@@ -63,6 +67,13 @@ Here is a JSON representation of the resource.
   "deviceOwnerUserPrincipalName": "String",
   "deviceIMEI": "String",
   "actionState": "String",
-  "managedDeviceId": "String"
+  "managedDeviceId": "String",
+  "deviceActionDetails": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair_2OfString_String"
+    }
+  ],
+  "deviceActionCategory": "String",
+  "bulkDeviceActionId": "String"
 }
 ```

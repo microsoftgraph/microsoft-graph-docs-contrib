@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\DeviceEnrollmentWindowsHelloForBusinessConfiguration;
+use Microsoft\Graph\Generated\Models\WindowsHelloForBusinessPinUsage;
+use Microsoft\Graph\Generated\Models\Enablement;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

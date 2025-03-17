@@ -2,9 +2,10 @@
 title: "encryptionReportPolicyDetails resource type"
 description: "Policy Details for Encryption Report"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # encryptionReportPolicyDetails resource type

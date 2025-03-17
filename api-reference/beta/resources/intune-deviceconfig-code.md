@@ -2,9 +2,10 @@
 title: "code enum type"
 description: "Error code for rule validation."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # code enum type

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # synchronizationTaskExecution resource type
@@ -33,9 +34,12 @@ Summarizes the results of the synchronization job run.
 |timeBegan                    |DateTimeOffset|Time when this job run began. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |timeEnded                    |DateTimeOffset|Time when this job run ended. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

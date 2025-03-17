@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "iamgirishck"
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # List calendarView
@@ -65,7 +66,7 @@ This method also supports some of the [OData Query Parameters](/graph/query-para
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {token}. Required.  |
+| Authorization  | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
 ## Request body

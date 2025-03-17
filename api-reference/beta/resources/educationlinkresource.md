@@ -5,6 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # educationLinkResource resource type
@@ -25,6 +26,10 @@ A subclass of [educationResource](educationresource.md). This resource is a link
 |displayName|string|The display name of the resource.|
 |lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

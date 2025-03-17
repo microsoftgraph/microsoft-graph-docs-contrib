@@ -3,8 +3,9 @@ title: "Get ediscoveryNoncustodialDataSource"
 description: "Read the properties and relationships of an ediscoveryNoncustodialDataSource object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # Get ediscoveryNoncustodialDataSource

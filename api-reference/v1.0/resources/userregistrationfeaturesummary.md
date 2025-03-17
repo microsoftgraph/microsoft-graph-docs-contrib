@@ -5,6 +5,7 @@ author: "kvenkit"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # userRegistrationFeatureSummary resource type
@@ -17,7 +18,7 @@ Represents the summary of users capable of multi-factor authentication, self-ser
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [usersRegisteredByFeature](../api/authenticationmethodsroot-usersregisteredbyfeature.md) | [userRegistrationFeatureSummary](../resources/userregistrationfeaturesummary.md) | Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication. |
+| [List](../api/authenticationmethodsroot-usersregisteredbyfeature.md) | [userRegistrationFeatureSummary](../resources/userregistrationfeaturesummary.md) | Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication. |
 
 ## Properties
 

@@ -5,8 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ReferenceAttachment;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ReferenceAttachment;
+use Microsoft\Graph\Beta\Generated\Models\ReferenceAttachmentProvider;
+use Microsoft\Graph\Beta\Generated\Models\ReferenceAttachmentPermission;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

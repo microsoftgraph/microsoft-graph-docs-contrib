@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 11/06/2024
 ---
 
 # orgContact: List directReports
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "orgcontact_list_directreports" } -->
 [!INCLUDE [permissions-table](../includes/permissions/orgcontact-list-directreports-permissions.md)]
 
+[!INCLUDE [rbac-org-contacts-apis-read-all](../includes/rbac-for-apis/rbac-org-contacts-apis-read-all.md)]
+
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
@@ -36,7 +39,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

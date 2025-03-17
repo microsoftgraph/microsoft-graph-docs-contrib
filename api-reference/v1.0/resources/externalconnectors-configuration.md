@@ -5,6 +5,7 @@ author: "mecampos"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 07/26/2024
 ---
 
 # configuration resource type
@@ -24,7 +25,7 @@ Specifies additional application IDs that are allowed to manage the externalConn
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.externalConnectors.configuration"

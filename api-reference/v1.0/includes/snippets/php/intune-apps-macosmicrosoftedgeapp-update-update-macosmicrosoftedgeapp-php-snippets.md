@@ -8,6 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\MacOSMicrosoftEdgeApp;
 use Microsoft\Graph\Generated\Models\MimeContent;
+use Microsoft\Graph\Generated\Models\MobileAppPublishingState;
+use Microsoft\Graph\Generated\Models\MicrosoftEdgeChannel;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

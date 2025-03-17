@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\VirtualEventPresenter;
-use Microsoft\Graph\Generated\Models\CommunicationsGuestIdentity;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\VirtualEventPresenter;
+use Microsoft\Graph\Beta\Generated\Models\CommunicationsGuestIdentity;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

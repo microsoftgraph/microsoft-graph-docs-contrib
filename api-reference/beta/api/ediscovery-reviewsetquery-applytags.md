@@ -3,8 +3,9 @@ title: "reviewSetQuery: applyTags"
 description: "Apply tags to documents that match the specified query."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # reviewSetQuery: applyTags

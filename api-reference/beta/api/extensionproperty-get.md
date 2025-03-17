@@ -5,6 +5,7 @@ author: "dkershaw10"
 ms.localizationpriority: medium
 ms.subservice: extensions
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # Get extensionProperty (directory extension)

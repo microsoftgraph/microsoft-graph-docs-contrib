@@ -3,8 +3,9 @@ title: "dataSubject resource type"
 description: "Contains information related to the subject of a content search."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # dataSubject resource type
@@ -27,7 +28,7 @@ Contains information related to the subject of a content search. This resource i
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.dataSubject"

@@ -5,6 +5,7 @@ author: "tommoser"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get informationProtectionPolicySetting
@@ -131,7 +132,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetamipdev/$metadata#users('bob%40contoso.com')/security/informationProtection/labelPolicySettings/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40contoso.com')/security/informationProtection/labelPolicySettings/$entity",
     "id": "BFB31DC0E2183F5872EEC3FEC1A254B8118DF1156CC19E783EA6D36304242B7FCFA4CF1DA3374481AA9919D8F3D63F7C",
     "moreInfoUrl": "https://contoso.com/MIPInfo",
     "isMandatory": false,

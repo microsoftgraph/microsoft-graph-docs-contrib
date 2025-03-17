@@ -2,9 +2,10 @@
 title: "assign action"
 description: "Intune Deviceintent Devicemanagementintent Assign Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # assign action
@@ -65,7 +66,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/assign
 
 Content-type: application/json
-Content-length: 511
+Content-length: 528
 
 {
   "assignments": [
@@ -73,10 +74,11 @@ Content-length: 511
       "@odata.type": "#microsoft.graph.deviceManagementIntentAssignment",
       "id": "bedc5365-5365-bedc-6553-dcbe6553dcbe",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]

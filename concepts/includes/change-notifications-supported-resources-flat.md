@@ -5,6 +5,7 @@ ms.reviewer: ric.lewis
 ms.subservice: change-notifications
 ms.topic: include
 ms.localizationpriority: high
+ms.date: 11/07/2024
 ---
 
 <!-- markdownlint-disable MD041-->
@@ -14,6 +15,7 @@ Currently, subscriptions are enabled for the following resources.
 > **Note:** Subscriptions to resources marked with an asterisk (`*`) are only supported on the `/beta` endpoint.
 
 - An [alert][] from the Microsoft Graph Security API.
+- An [approvals][] request in Microsoft Teams.
 - A [baseTask][] (deprecated) of a user in Microsoft To-Do.*
 - A [callRecord][] produced after a call or meeting in Microsoft Teams.
 - A [callRecording][] for an online meeting in Teams.
@@ -58,3 +60,4 @@ Currently, subscriptions are enabled for the following resources.
 [baseTask]: /graph/api/resources/basetask
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
+[approvals]: /graph/api/resources/approvalItem

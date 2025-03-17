@@ -1,10 +1,11 @@
 ---
 title: "Members"
 description: "Describes the current installation status of a teamsApp."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: enumPageType
+ms.date: 08/16/2024
 ---
 
 # teamsAppInstalledState enum type

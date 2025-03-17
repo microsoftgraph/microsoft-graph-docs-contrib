@@ -5,6 +5,7 @@ author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Get educationModule
@@ -40,7 +41,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

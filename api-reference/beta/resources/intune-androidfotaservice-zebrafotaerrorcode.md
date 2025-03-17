@@ -2,9 +2,10 @@
 title: "zebraFotaErrorCode enum type"
 description: "An error code indicating the failure reason, when the deployment state is createFailed. Possible values: See zebraFotaErrorCode enum."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # zebraFotaErrorCode enum type

@@ -5,6 +5,7 @@ author: "idwilliams"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # cloudPcOverview resource type
@@ -18,8 +19,8 @@ Represents an overview of cloud PCs for a given managed tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcOverviews](../api/managedtenants-managedtenant-list-cloudpcsoverview.md)|[microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) collection|Get a list of the [cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) objects and their properties.|
-|[Get cloudPcOverview](../api/managedtenants-cloudpcoverview-get.md)|[microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md)|Read the properties and relationships of a [cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) object.|
+|[List cloud PC overviews](../api/managedtenants-managedtenant-list-cloudpcsoverview.md)|[microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) collection|Get a list of the [cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) objects and their properties.|
+|[Get cloud PC overview](../api/managedtenants-cloudpcoverview-get.md)|[microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md)|Read the properties and relationships of a [cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -50,7 +51,7 @@ Represents an overview of cloud PCs for a given managed tenant.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -3,8 +3,9 @@ title: "List caseOperations"
 description: "Get a list of the caseOperation objects and their properties."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # List caseOperations

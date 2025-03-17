@@ -5,6 +5,7 @@ title: driveItemSource resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 03/06/2024
 ---
 # driveItemSource resource type
 
@@ -34,6 +35,9 @@ It's available on the source property of [driveItem](driveitem.md) resources.
 | loop                | The application is Loop.                          |
 | other               | The application is a third party application.       |
 | unknownFutureValue  | Marker value for future compatibility.            |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\GetStaffAvailabilityPostRequestBody;
+use Microsoft\Graph\Generated\Solutions\BookingBusinesses\Item\GetStaffAvailability\GetStaffAvailabilityPostRequestBody;
 use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
 
 

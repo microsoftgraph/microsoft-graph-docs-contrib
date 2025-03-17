@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # referencedObject resource type
@@ -22,7 +23,7 @@ Describes a reference to another object defined in the same [directory definitio
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

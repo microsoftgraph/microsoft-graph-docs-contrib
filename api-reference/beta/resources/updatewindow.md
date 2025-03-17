@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/23/2024
 ---
 
 # updateWindow resource type
@@ -22,9 +23,13 @@ Represents time window during which [agents](onpremisesagent.md) can receive upd
 |updateWindowEndTime|TimeOfDay|End of a time window during which agents can receive updates|
 |updateWindowStartTime|TimeOfDay|Start of a time window during which agents can receive updates|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\AccessPackageResourceRequest;
+use Microsoft\Graph\Generated\Models\AccessPackageRequestType;
 use Microsoft\Graph\Generated\Models\AccessPackageResource;
 use Microsoft\Graph\Generated\Models\AccessPackageResourceAttribute;
 use Microsoft\Graph\Generated\Models\AccessPackageUserDirectoryAttributeStore;

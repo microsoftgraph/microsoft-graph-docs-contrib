@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # azureManagedIdentity resource type
@@ -21,8 +22,8 @@ Inherits from [azureIdentity](../resources/azureidentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List managedIdentities](../api/azureassociatedidentities-list-managedidentities.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md) collection|Get a list of the [azureManagedIdentity](../resources/azuremanagedidentity.md) objects and their properties.|
-|[Get azureManagedIdentity](../api/azuremanagedidentity-get.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md)|Read the properties and relationships of an [azureManagedIdentity](../resources/azuremanagedidentity.md) object.|
+|[List](../api/azureassociatedidentities-list-managedidentities.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md) collection|Get a list of the [azureManagedIdentity](../resources/azuremanagedidentity.md) objects and their properties.|
+|[Get](../api/azuremanagedidentity-get.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md)|Read the properties and relationships of an [azureManagedIdentity](../resources/azuremanagedidentity.md) object.|
 
 ## Properties
 |Property|Type|Description|

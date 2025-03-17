@@ -2,9 +2,10 @@
 title: "Update windows81TrustedRootCertificate"
 description: "Update the properties of a windows81TrustedRootCertificate object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update windows81TrustedRootCertificate

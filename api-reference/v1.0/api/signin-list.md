@@ -5,13 +5,14 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 07/30/2024
 ---
 
 # List signIns
 
 Namespace: microsoft.graph
 
-Retrieve the Microsoft Entra user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs. 
+Retrieve the Microsoft Entra user [sign-ins](../resources/signin.md) for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs. 
 
 The maximum and default page size is 1,000 objects and by default, the most recent sign-ins are returned first. Only sign-in events that occurred within the Microsoft Entra ID [default retention period](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) are available.
 
@@ -22,28 +23,12 @@ The maximum and default page size is 1,000 objects and by default, the most rece
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
-|Delegated (personal Microsoft account) | Not supported   |
-|Application | AuditLog.Read.All and Directory.Read.All  |
+<!-- { "blockType": "permissions", "name": "signin_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/signin-list-permissions.md)]
 
-Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Microsoft Entra ID.
-
-In addition to the delegated permissions, the signed-in user needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-+ Global Reader
-+ Reports Reader
-+ Security Administrator
-+ Security Operator
-+ Security Reader
-
-### Viewing applied conditional access (CA) policies in sign-ins
-
-[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
+[!INCLUDE [rbac-signin-apis-read](../includes/rbac-for-apis/rbac-signin-apis-read.md)]
 
 ## HTTP request
 

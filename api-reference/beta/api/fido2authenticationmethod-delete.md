@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Delete fido2AuthenticationMethod
@@ -39,6 +40,8 @@ Remove a FIDO2 authentication method from your own account. For a signed-in user
 ```http
 DELETE /me/authentication/fido2Methods/{id}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Remove a FIDO2 authentication method from another user's account.
 <!-- { "blockType": "ignored" } -->

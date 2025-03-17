@@ -20,7 +20,7 @@ icon.setSet("set-value");
 icon.setIndex(99);
 criteria.setIcon(icon);
 criteria.setDynamicCriteria("dynamicCriteria-value");
-Json values = new Json();
+UntypedNode values = new UntypedNode();
 criteria.setValues(values);
 criteria.setFilterOn("filterOn-value");
 applyPostRequestBody.setCriteria(criteria);

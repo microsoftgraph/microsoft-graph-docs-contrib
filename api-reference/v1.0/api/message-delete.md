@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Delete message
@@ -34,7 +35,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

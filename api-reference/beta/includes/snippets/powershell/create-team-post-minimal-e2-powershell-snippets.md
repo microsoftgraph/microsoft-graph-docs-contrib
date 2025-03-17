@@ -9,7 +9,8 @@ Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/beta/teamsTemplates('standard')"
 	displayName = "My Sample Team"
-	description = "My Sample Team’s Description"
+	description = "My sample team’s description"
+	firstChannelName = "My first channel of the sample team"
 	members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"

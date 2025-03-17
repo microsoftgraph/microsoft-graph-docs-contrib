@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # securityToolAwsServerlessFunctionAdministratorFinding resource type
@@ -22,8 +23,8 @@ Inherits from [awsSecurityToolAdministrationFinding](../resources/awssecuritytoo
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List securityToolAwsServerlessFunctionAdministratorFinding objects](../api/securitytoolawsserverlessfunctionadministratorfinding-list.md)|[securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) collection|Get a list of the [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) objects and their properties.|
-|[Get securityToolAwsServerlessFunctionAdministratorFinding](../api/securitytoolawsserverlessfunctionadministratorfinding-get.md)|[securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md)|Read the properties and relationships of a [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) object.|
+|[List](../api/securitytoolawsserverlessfunctionadministratorfinding-list.md)|[securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) collection|Get a list of the [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) objects and their properties.|
+|[Get](../api/securitytoolawsserverlessfunctionadministratorfinding-get.md)|[securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md)|Read the properties and relationships of a [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) object.|
 
 ## Properties
 |Property|Type|Description|

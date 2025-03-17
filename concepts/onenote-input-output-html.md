@@ -4,6 +4,7 @@ description: "Learn how to use the principal elements and attributes of input an
 author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.subservice: "onenote"
+ms.date: 11/07/2024
 ---
 
 # Input and output HTML on OneNote pages

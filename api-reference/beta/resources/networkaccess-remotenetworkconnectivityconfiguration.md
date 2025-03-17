@@ -5,6 +5,7 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # remoteNetworkConnectivityConfiguration resource type
@@ -18,7 +19,7 @@ Specifies the connectivity details of all device links associated with a remote 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get remoteNetworkConnectivityConfiguration](../api/networkaccess-remotenetworkconnectivityconfiguration-get.md)|[microsoft.graph.networkaccess.remoteNetworkConnectivityConfiguration](../resources/networkaccess-remotenetworkconnectivityconfiguration.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.remoteNetworkConnectivityConfiguration](../resources/networkaccess-remotenetworkconnectivityconfiguration.md) object.|
+|[Get](../api/networkaccess-remotenetworkconnectivityconfiguration-get.md)|[microsoft.graph.networkaccess.remoteNetworkConnectivityConfiguration](../resources/networkaccess-remotenetworkconnectivityconfiguration.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.remoteNetworkConnectivityConfiguration](../resources/networkaccess-remotenetworkconnectivityconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|

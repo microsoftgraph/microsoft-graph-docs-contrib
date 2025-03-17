@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-monitoring-health"
 author: "sureshja"
+ms.date: 07/23/2024
 ---
 
 # appIdentity resource type
@@ -21,6 +22,10 @@ Indicates the identity of the application that performed the action or was chang
 |displayName|String|Refers to the application name displayed in the Microsoft Entra admin center.|
 |servicePrincipalId|String|Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.|
 |servicePrincipalName|String|Refers to the Service Principal Name is the Application name in the tenant. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

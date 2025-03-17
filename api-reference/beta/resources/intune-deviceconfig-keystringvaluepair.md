@@ -2,9 +2,10 @@
 title: "keyStringValuePair resource type"
 description: "A key-value pair with a string key and a string value."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # keyStringValuePair resource type

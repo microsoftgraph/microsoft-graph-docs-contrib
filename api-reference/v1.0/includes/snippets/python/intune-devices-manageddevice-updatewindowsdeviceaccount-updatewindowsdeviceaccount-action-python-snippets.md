@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.devicemanagement.manageddevices.item.update_windows_device_account.update_windows_device_account_post_request_body import UpdateWindowsDeviceAccountPostRequestBody
 from msgraph.generated.models.update_windows_device_account_action_parameter import UpdateWindowsDeviceAccountActionParameter
 from msgraph.generated.models.windows_device_account import WindowsDeviceAccount
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = UpdateWindowsDeviceAccountPostRequestBody(
 	update_windows_device_account_action_parameter = UpdateWindowsDeviceAccountActionParameter(
 		odata_type = "microsoft.graph.updateWindowsDeviceAccountActionParameter",

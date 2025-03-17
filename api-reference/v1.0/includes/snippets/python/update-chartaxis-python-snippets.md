@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.workbook_chart_axis import WorkbookChartAxis
-from msgraph.generated.models.json import Json
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = WorkbookChartAxis(
-	major_unit = Json(
+	major_unit = UntypedNode(
 	),
-	maximum = Json(
+	maximum = UntypedNode(
 	),
-	minimum = Json(
+	minimum = UntypedNode(
 	),
 )
 

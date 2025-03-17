@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ConfirmCompromisedPostRequestBody;
+use Microsoft\Graph\Generated\IdentityProtection\RiskyUsers\ConfirmCompromised\ConfirmCompromisedPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

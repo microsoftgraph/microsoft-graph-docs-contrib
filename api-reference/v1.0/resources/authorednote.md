@@ -3,8 +3,9 @@ title: "authoredNote resource type"
 description: "Represents the properties of a note written by an author"
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # authoredNote resource type
@@ -26,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

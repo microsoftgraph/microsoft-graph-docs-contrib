@@ -2,9 +2,10 @@
 title: "windowsInformationProtectionWipeAction resource type"
 description: "Represents wipe requests issued by tenant admin for Bring-Your-Own-Device(BYOD) Windows devices."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # windowsInformationProtectionWipeAction resource type

@@ -5,6 +5,7 @@ author: "mmekler"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Create detectionRule
@@ -38,7 +39,7 @@ POST /security/rules/detectionRules
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

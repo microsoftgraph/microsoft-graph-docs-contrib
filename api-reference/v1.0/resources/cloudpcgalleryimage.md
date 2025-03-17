@@ -5,6 +5,7 @@ author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 09/27/2024
 ---
 
 # cloudPcGalleryImage resource type
@@ -19,8 +20,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List galleryImages](../api/virtualendpoint-list-galleryimages.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|List the properties and relationships of [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) objects.|
-|[Get cloudPcGalleryImage](../api/cloudpcgalleryimage-get.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|Read the properties and relationships of a specific [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) object.|
+|[List](../api/virtualendpoint-list-galleryimages.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|List the properties and relationships of [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) objects.|
+|[Get](../api/cloudpcgalleryimage-get.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|Read the properties and relationships of a specific [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) object.|
 
 ## Properties
 

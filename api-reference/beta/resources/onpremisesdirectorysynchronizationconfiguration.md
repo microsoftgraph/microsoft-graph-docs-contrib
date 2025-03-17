@@ -1,10 +1,12 @@
 ---
 title: "onPremisesDirectorySynchronizationConfiguration resource type"
 description: "Consists of configurations that can be fine-tuned and impact the on-premises directory synchronization process for a tenant."
-author: "dkershaw10"
+author: dhanyahk
+ms.reviewer: sgupta, abhishek.badjatya, dhanyahk
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 10/03/2024
 ---
 
 # onPremisesDirectorySynchronizationConfiguration resource type
@@ -13,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Consists of configurations that can be fine-tuned and impact the on-premises directory synchronization process for a tenant.
+Consists of configurations that can be fine-tuned and impact the [on-premises directory synchronization](../resources/onpremisesdirectorysynchronization.md) process for a tenant.
 
 ## Properties
 
@@ -34,7 +36,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onPremisesDirectorySynchronizationConfiguration"

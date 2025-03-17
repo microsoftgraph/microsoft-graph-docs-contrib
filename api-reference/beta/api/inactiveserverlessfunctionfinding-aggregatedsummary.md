@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 06/26/2024
 ---
 
 # inactiveServerlessFunctionFinding: aggregatedSummary
@@ -51,7 +52,6 @@ GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inacti
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

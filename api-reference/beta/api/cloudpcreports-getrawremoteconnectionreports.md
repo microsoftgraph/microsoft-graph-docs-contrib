@@ -5,6 +5,7 @@ author: "Gutentag0004"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/20/2024
 ---
 
 # cloudPcReports: getRawRemoteConnectionReports
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the raw real-time remote connection report for a Cloud PC without any calculation, such as roundTripTime or available bandwidth, which are aggregated hourly from the raw event data.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -77,7 +78,7 @@ Content-length: 199
 
 {
     "filter": "ActivityId eq 'cb6ad4c4-8a17-4245-a644-e4436b1ee204'",
-    "select":["RoundTripTimeInMs", "AvailableBandwidthInMBps", "SignInDateTime"],
+    "select":["RoundTripTimeInMs", "AvailableBandwidthInMbps", "SignInDateTime"],
     "skip": 0,
     "top": 50
 }
@@ -107,15 +108,9 @@ Content-length: 199
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetrawremoteconnectionreports-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetrawremoteconnectionreports-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisgetrawremoteconnectionreports-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
@@ -142,7 +137,7 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         }
         {
-            "Column": "AvailableBandwidthInMBps",
+            "Column": "AvailableBandwidthInMbps",
             "PropertyType": "Double"
         },
         {

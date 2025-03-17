@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # Get participant
@@ -12,6 +13,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a **participant** object.
+
+> [!NOTE]
+> Peer-to-peer calls between a calling bot and another peer, including both VoIP and PSTN calls, aren't supported.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

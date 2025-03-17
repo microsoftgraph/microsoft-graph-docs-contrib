@@ -18,8 +18,8 @@ import (
 requestBody := graphmodels.NewListItem()
 fields := graphmodels.NewFieldValueSet()
 additionalData := map[string]interface{}{
-	"title" : "Widget", 
-	"color" : "Purple", 
+	"Title" : "Widget", 
+	"Color" : "Purple", 
 	"weight" : int32(32) , 
 }
 fields.SetAdditionalData(additionalData)

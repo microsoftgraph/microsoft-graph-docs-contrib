@@ -2,9 +2,10 @@
 title: "sharedPCAccountDeletionPolicyType enum type"
 description: "Possible values for when accounts are deleted on a shared PC."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # sharedPCAccountDeletionPolicyType enum type

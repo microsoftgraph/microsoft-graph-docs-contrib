@@ -48,13 +48,15 @@ endUserNotificationSetting.SetSettingType(&settingType)
 positiveReinforcement := graphmodels.NewPositiveReinforcementNotification()
 deliveryPreference := graphmodels.DELIVERAFTERCAMPAIGNEND_NOTIFICATIONDELIVERYPREFERENCE 
 positiveReinforcement.SetDeliveryPreference(&deliveryPreference) 
-endUserNotification := "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a"
-positiveReinforcement.SetEndUserNotification(&endUserNotification) 
 defaultLanguage := "en"
 positiveReinforcement.SetDefaultLanguage(&defaultLanguage) 
+additionalData := map[string]interface{}{
+	"endUserNotification@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a", 
+}
+positiveReinforcement.SetAdditionalData(additionalData)
 endUserNotificationSetting.SetPositiveReinforcement(positiveReinforcement)
 additionalData := map[string]interface{}{
-simulationNotification := graphmodels.New()
+simulationNotification := graph.New()
 targettedUserType := "compromised"
 simulationNotification.SetTargettedUserType(&targettedUserType) 
 odataBind := "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a"
@@ -66,9 +68,9 @@ simulationNotification.SetDefaultLanguage(&defaultLanguage)
 endUserNotificationSetting.SetAdditionalData(additionalData)
 requestBody.SetEndUserNotificationSetting(endUserNotificationSetting)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a", 
-	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a", 
-	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a", 
+	"payload@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a", 
+	"loginPage@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a", 
+	"landingPage@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a", 
 }
 requestBody.SetAdditionalData(additionalData)
 

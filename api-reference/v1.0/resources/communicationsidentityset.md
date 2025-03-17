@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 05/28/2024
 ---
 
 # communicationsIdentitySet resource type
@@ -39,15 +40,15 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.communicationsIdentitySet",
   "optionalProperties": [
     "application",
-    "user",
-    "phone",
-    "guest",
-    "encrypted",
-    "azureCommunicationServicesUser",
     "applicationInstance",
-    "onPremises",
     "assertedIdentity",
-    "endpointType"
+    "azureCommunicationServicesUser",
+    "encrypted",
+    "endpointType",
+    "guest",
+    "onPremises",
+    "phone",
+    "user"
   ],
 } -->
 ```json

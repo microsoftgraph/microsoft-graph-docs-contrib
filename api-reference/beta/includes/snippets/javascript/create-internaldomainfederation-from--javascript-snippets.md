@@ -23,7 +23,8 @@ const internalDomainFederation = {
   promptLoginBehavior: 'nativeSupport',
   isSignedAuthenticationRequestRequired: true,
   nextSigningCertificate: 'MIIE3jCCAsagAwIBAgIQQcyDaZz3MI',
-  federatedIdpMfaBehavior: 'rejectMfaByFederatedIdp'
+  federatedIdpMfaBehavior: 'rejectMfaByFederatedIdp',
+  passwordResetUri: 'https://sts.contoso.com/adfs/passwordReset'
 };
 
 await client.api('/domains/contoso.com/federationConfiguration')

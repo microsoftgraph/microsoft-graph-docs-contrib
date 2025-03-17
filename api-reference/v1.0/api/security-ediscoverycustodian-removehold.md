@@ -3,8 +3,9 @@ title: "ediscoveryCustodian: removeHold"
 description: "**TODO: Add Description**"
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # ediscoveryCustodian: removeHold

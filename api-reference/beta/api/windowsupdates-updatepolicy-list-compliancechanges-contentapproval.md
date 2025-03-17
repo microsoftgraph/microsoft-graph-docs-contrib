@@ -3,8 +3,9 @@ title: "List contentApprovals"
 description: "Get a list of the contentApproval objects and their properties."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # List contentApprovals

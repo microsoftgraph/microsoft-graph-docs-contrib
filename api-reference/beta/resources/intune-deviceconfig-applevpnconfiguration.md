@@ -2,9 +2,10 @@
 title: "appleVpnConfiguration resource type"
 description: "Apple VPN configuration profile."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # appleVpnConfiguration resource type

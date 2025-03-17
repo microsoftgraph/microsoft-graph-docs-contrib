@@ -2,9 +2,10 @@
 title: "userExperienceAnalyticsInsight resource type"
 description: "The user experience analytics insight is the recomendation to improve the user experience analytics score."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # userExperienceAnalyticsInsight resource type

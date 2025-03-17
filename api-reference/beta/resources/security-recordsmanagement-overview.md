@@ -3,8 +3,9 @@ title: "Use the Microsoft Graph records management API"
 description: "The Microsoft Purview records management APIs helps organizations manage retention and deletion of data to meet their legal obligations and compliance regulations, and increases efficiency by enabling the regular disposition of items that no longer have to be retained."
 ms.localizationpriority: medium
 author: sseth-msft
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: conceptualPageType
+ms.date: 06/11/2024
 ---
 
 # Use the Microsoft Graph records management APIs

@@ -3,8 +3,9 @@ title: "Get webAccount"
 description: "Retrieve the properties and relationships of a webAccount object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # Get webAccount

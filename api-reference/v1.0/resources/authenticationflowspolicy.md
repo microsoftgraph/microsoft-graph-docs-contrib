@@ -5,6 +5,7 @@ author: "linkhp"
 ms.localizationpriority: high
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # authenticationFlowsPolicy resource type
@@ -17,8 +18,8 @@ Represents the [policy configuration of self-service sign-up experience](../reso
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get authentication flows policy](../api/authenticationflowspolicy-get.md)|authenticationFlowsPolicy|Get the authentication flows policy configuration.|
-|[Update authentication flows policy](../api/authenticationflowspolicy-update.md)|authenticationFlowsPolicy|Update the authentication flows policy configuration.|
+|[Get](../api/authenticationflowspolicy-get.md)|authenticationFlowsPolicy|Get the authentication flows policy configuration.|
+|[Update](../api/authenticationflowspolicy-update.md)|authenticationFlowsPolicy|Update the authentication flows policy configuration.|
 
 ## Properties
 
@@ -35,7 +36,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

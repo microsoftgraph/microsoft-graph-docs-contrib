@@ -5,6 +5,7 @@ author: vishriv
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # store resource type
@@ -18,9 +19,9 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List groups](../api/termstore-list-groups.md)|[microsoft.graph.termStore.group](../resources/termstore-group.md) collection| Get the groups available in the term store object.|
-|[Get store](../api/termstore-store-get.md) | [microsoft.graph.termStore.store](../resources/termstore-store.md) | Read the properties and relationships of a term store object.|
-|[Update store](../api/termstore-store-update.md) | [microsoft.graph.termStore.store](../resources/termstore-store.md) | Update the properties of a term store object.|
+|[List](../api/termstore-list-groups.md)|[microsoft.graph.termStore.group](../resources/termstore-group.md) collection| Get the groups available in the term store object.|
+|[Get](../api/termstore-store-get.md) | [microsoft.graph.termStore.store](../resources/termstore-store.md) | Read the properties and relationships of a term store object.|
+|[Update](../api/termstore-store-update.md) | [microsoft.graph.termStore.store](../resources/termstore-store.md) | Update the properties of a term store object.|
 
 ## Properties
 |Property|Type|Description|
@@ -37,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

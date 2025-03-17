@@ -6,6 +6,8 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+toc.title: AWS actions
+ms.date: 07/25/2024
 ---
 
 # awsAuthorizationSystemTypeAction resource type
@@ -21,8 +23,8 @@ Inherits from [authorizationSystemTypeAction](../resources/authorizationsystemty
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsAuthorizationSystemTypeActions](../api/awsauthorizationsystem-list-actions.md)|[awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) collection|Get a list of the [awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) objects and their properties.|
-|[Get awsAuthorizationSystemTypeAction](../api/awsauthorizationsystemtypeaction-get.md)|[awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md)|Read the properties and relationships of an [awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) object.|
+|[List](../api/awsauthorizationsystem-list-actions.md)|[awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) collection|Get a list of the [awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) objects and their properties.|
+|[Get](../api/awsauthorizationsystemtypeaction-get.md)|[awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md)|Read the properties and relationships of an [awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -5,6 +5,7 @@ author: "Moti-ba"
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # branchConnectivityConfiguration resource type (deprecated)
@@ -21,7 +22,7 @@ Specifies the connectivity details of all device links associated with a branch.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get branchConnectivityConfiguration](../api/networkaccess-branchconnectivityconfiguration-get.md)|[microsoft.graph.networkaccess.branchConnectivityConfiguration](../resources/networkaccess-branchconnectivityconfiguration.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.branchConnectivityConfiguration](../resources/networkaccess-branchconnectivityconfiguration.md) object.|
+|[Get](../api/networkaccess-branchconnectivityconfiguration-get.md)|[microsoft.graph.networkaccess.branchConnectivityConfiguration](../resources/networkaccess-branchconnectivityconfiguration.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.branchConnectivityConfiguration](../resources/networkaccess-branchconnectivityconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|

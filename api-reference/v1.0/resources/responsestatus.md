@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "iamgirishck"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # responseStatus resource type
@@ -24,7 +25,7 @@ You can get the response status of an attendee or organizer through the **respon
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

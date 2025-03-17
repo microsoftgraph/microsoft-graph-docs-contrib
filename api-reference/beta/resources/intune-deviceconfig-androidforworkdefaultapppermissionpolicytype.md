@@ -2,9 +2,10 @@
 title: "androidForWorkDefaultAppPermissionPolicyType enum type"
 description: "Android For Work default app permission policy type."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # androidForWorkDefaultAppPermissionPolicyType enum type

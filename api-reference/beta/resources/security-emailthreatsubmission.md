@@ -5,6 +5,7 @@ author: "caigen"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # emailThreatSubmission resource type
@@ -20,10 +21,10 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md). Bas
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List emailThreatSubmissions](../api/security-emailthreatsubmission-list.md)|[microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md) collection|Get a list of the [emailThreatSubmission](../resources/security-emailthreatsubmission.md) objects and their properties.|
-|[Create emailThreatSubmission](../api/security-emailthreatsubmission-post-emailthreats.md)|[microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md)|Create a new [emailThreatSubmission](../resources/security-emailthreatsubmission.md) object.|
-|[Get emailThreatSubmission](../api/security-emailthreatsubmission-get.md)|[microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md)|Read the properties and relationships of an [emailThreatSubmission](../resources/security-emailthreatsubmission.md) object.|
-|[review](../api/security-emailthreatsubmission-review.md)|None|Review threat submission from end user by administrator.|
+|[List](../api/security-emailthreatsubmission-list.md)|[microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md) collection|Get a list of the [emailThreatSubmission](../resources/security-emailthreatsubmission.md) objects and their properties.|
+|[Create](../api/security-emailthreatsubmission-post-emailthreats.md)|[microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md)|Create a new [emailThreatSubmission](../resources/security-emailthreatsubmission.md) object.|
+|[Get](../api/security-emailthreatsubmission-get.md)|[microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md)|Read the properties and relationships of an [emailThreatSubmission](../resources/security-emailthreatsubmission.md) object.|
+|[Review](../api/security-emailthreatsubmission-review.md)|None|Review threat submission from end user by administrator.|
 
 ## Properties
 | Property     | Type    | Description    |

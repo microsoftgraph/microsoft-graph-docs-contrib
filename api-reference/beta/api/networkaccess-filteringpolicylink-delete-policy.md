@@ -5,6 +5,7 @@ author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # Delete filteringPolicyLink
@@ -82,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/networkaccess/filteringPolicies/d0187e08
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-policy-from-filteringpolicylink-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-policy-from-filteringpolicylink-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

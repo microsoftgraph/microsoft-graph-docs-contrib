@@ -7,6 +7,7 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # dimensionValue resource type
@@ -21,7 +22,7 @@ Represents a dimension value in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description                   |
 |:-------------|:-------------|:-----------------------------|
-|[Get dimensionValue](../api/dynamics-dimensionvalue-get.md)|dimensionValues|Gets a dimension value object.|
+|[Get dimension](../api/dynamics-dimensionvalue-get.md)|dimensionValues|Gets a dimension value object.|
 
 
 ## Properties
@@ -32,6 +33,9 @@ Represents a dimension value in Dynamics 365 Business Central.
 |displayName         |string                 |Specifies the dimension value's name. This name appears where the dimension value is used.|
 |lastModifiedDateTime|datetime               |The last datetime the dimension value was modified.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.workflow import Workflow
-from msgraph.generated.models.trigger_and_scope_based_conditions import TriggerAndScopeBasedConditions
-from msgraph.generated.models.rule_based_subject_set import RuleBasedSubjectSet
-from msgraph.generated.models.attribute_change_trigger import AttributeChangeTrigger
-from msgraph.generated.models.trigger_attribute import TriggerAttribute
-from msgraph.generated.models.task import Task
-from msgraph.generated.models.key_value_pair import KeyValuePair
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.identity_governance.workflow import Workflow
+from msgraph_beta.generated.models.lifecycle_workflow_category import LifecycleWorkflowCategory
+from msgraph_beta.generated.models.identity_governance.trigger_and_scope_based_conditions import TriggerAndScopeBasedConditions
+from msgraph_beta.generated.models.identity_governance.rule_based_subject_set import RuleBasedSubjectSet
+from msgraph_beta.generated.models.identity_governance.attribute_change_trigger import AttributeChangeTrigger
+from msgraph_beta.generated.models.identity_governance.trigger_attribute import TriggerAttribute
+from msgraph_beta.generated.models.identity_governance.task import Task
+from msgraph_beta.generated.models.key_value_pair import KeyValuePair
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Workflow(
 	category = LifecycleWorkflowCategory.Mover,
 	description = "Configure mover tasks for a user when their job profile changes",

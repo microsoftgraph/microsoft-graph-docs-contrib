@@ -17,7 +17,7 @@ import (
 
 requestBody := graphmodels.NewUser()
 additionalData := map[string]interface{}{
-ext55gb1l09_msLearnCourses := graphmodels.New()
+ext55gb1l09_msLearnCourses := graph.New()
 courseType := "Admin"
 ext55gb1l09_msLearnCourses.SetCourseType(&courseType) 
 	requestBody.SetExt55gb1l09_msLearnCourses(ext55gb1l09_msLearnCourses)

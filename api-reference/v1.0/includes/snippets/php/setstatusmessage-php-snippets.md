@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\SetStatusMessagePostRequestBody;
+use Microsoft\Graph\Generated\Users\Item\Presence\SetStatusMessage\SetStatusMessagePostRequestBody;
 use Microsoft\Graph\Generated\Models\PresenceStatusMessage;
 use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\BodyType;
 use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
 
 

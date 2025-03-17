@@ -5,6 +5,7 @@ author: "mmekler"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Delete detectionRule
@@ -35,7 +36,7 @@ DELETE /security/rules/detectionRules/{ruleId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

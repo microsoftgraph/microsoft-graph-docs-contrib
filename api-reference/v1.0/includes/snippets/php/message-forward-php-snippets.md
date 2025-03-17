@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ForwardPostRequestBody;
+use Microsoft\Graph\Generated\Users\Item\Messages\Item\Forward\ForwardPostRequestBody;
 use Microsoft\Graph\Generated\Models\Recipient;
 use Microsoft\Graph\Generated\Models\EmailAddress;
 

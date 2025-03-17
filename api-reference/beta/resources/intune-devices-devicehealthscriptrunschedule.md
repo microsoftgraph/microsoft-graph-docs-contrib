@@ -2,9 +2,10 @@
 title: "deviceHealthScriptRunSchedule resource type"
 description: "Base type of Device health script run schedule."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # deviceHealthScriptRunSchedule resource type

@@ -14,7 +14,8 @@ const domain = {
   isDefault: true,
   supportedServices: [
     'Email',
-    'OfficeCommunicationsOnline'
+    'OfficeCommunicationsOnline',
+    'CustomUrlDomain'
   ]
 };
 

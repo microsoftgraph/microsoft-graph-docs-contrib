@@ -5,6 +5,7 @@ author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Delete userProvisioningFlow
@@ -44,7 +45,7 @@ DELETE /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlow
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

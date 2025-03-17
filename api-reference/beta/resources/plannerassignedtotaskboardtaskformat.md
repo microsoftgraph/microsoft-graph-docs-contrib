@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # plannerAssignedToTaskBoardTaskFormat resource type
@@ -20,8 +21,8 @@ Represents the information used to render a task correctly in the **AssignedTo**
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat-get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |Read properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object.|
-|[Update](../api/plannerassignedtotaskboardtaskformat-update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)	|Update **plannerAssignedToTaskBoardTaskFormat** object. |
+|[Get assigned to task board format](../api/plannerassignedtotaskboardtaskformat-get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |Read properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object.|
+|[Update assigned to task board format](../api/plannerassignedtotaskboardtaskformat-update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)	|Update **plannerAssignedToTaskBoardTaskFormat** object. |
 
 ## Properties
 | Property	   | Type	|Description|

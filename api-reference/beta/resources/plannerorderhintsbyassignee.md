@@ -1,10 +1,11 @@
 ---
 title: "plannerOrderHintsByAssignee resource type"
-description: "The **plannerOrderHintsByAssignee** is a resource that contains ordering hints for assignees in a plannerTask resource, to indicate the order of the task in Assigned To view of the Task Board."
+description: "Contains ordering hints for assignees in a plannerTask resource, to indicate the order of the task in Assigned To view of the Task Board."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 11/08/2024
 ---
 
 # plannerOrderHintsByAssignee resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board.
+Contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board.
 This type is an open type. The properties are the IDs of users assigned to the task, and the values are order hints.
 
 ## Properties
@@ -38,6 +39,10 @@ Example:
 }
 
 ```
+
+## Relationships
+
+None.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,6 +5,7 @@ author: "payiAzure"
 ms.localizationpriority: medium
 ms.subservice: "service-communications"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get serviceAnnouncementAttachment
@@ -114,7 +115,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#admin/serviceAnnouncement/messages('MC54091')/attachments/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/messages('MC54091')/attachments/$entity",
     "contentType": "application/csv",
     "isInline": false,
     "lastModifiedDateTime": "2021-09-21T04:07:15.9720778Z",

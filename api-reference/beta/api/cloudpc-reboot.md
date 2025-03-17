@@ -5,6 +5,7 @@ author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # cloudPC: reboot
@@ -100,10 +101,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/
 [!INCLUDE [sample-code](../includes/snippets/php/reboot-cloudpc-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/reboot-cloudpc-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reboot-cloudpc-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -160,10 +157,6 @@ POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/user-reboot-cloudpc-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/user-reboot-cloudpc-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

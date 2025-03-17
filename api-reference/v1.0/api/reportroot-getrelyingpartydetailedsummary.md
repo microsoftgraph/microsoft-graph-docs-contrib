@@ -5,6 +5,7 @@ author: "gmcnamara-microsoft"
 ms.localizationpriority: medium
 ms.subservice: entra-monitoring-health
 doc_type: apiPageType
+ms.date: 06/25/2024
 ---
 
 # reportRoot: getRelyingPartyDetailedSummary
@@ -27,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getrelyingpartydetailedsummary-permissions.md)]
 
+[!INCLUDE [rbac-usage-insights-apis](../includes/rbac-for-apis/rbac-usage-insights-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -39,7 +42,6 @@ GET /reports/getRelyingPartyDetailedSummary(period='parameterValue')
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
 
 ## Optional query parameters
 
@@ -54,7 +56,7 @@ This method supports the `$filter` and `$orderby` OData query parameters to help
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,8 +3,9 @@ title: "List trainingCampaign objects"
 description: "Get a list of trainingCampaign objects and their properties."
 author: "akgraph"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List trainingCampaign objects

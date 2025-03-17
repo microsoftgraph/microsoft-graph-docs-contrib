@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 05/23/2024
 ---
 
 # directoryDefinition resource type
@@ -26,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Discover directoryDefinition](../api/synchronization-directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Discover the schema and supported properties of the directory.|
+|[Discover](../api/synchronization-directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Discover the schema and supported properties of the directory.|
 
 ## Properties
 

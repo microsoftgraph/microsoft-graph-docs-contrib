@@ -5,6 +5,7 @@ author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 06/25/2024
 ---
 
 # accessReviewInstanceDecisionItem: filterByCurrentUser
@@ -45,7 +46,6 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

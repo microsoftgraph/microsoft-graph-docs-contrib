@@ -2,9 +2,10 @@
 title: "windowsInformationProtectionPolicy resource type"
 description: "Policy for Windows information protection without MDM"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # windowsInformationProtectionPolicy resource type

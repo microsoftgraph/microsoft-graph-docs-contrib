@@ -2,9 +2,10 @@
 title: "deviceCompliancePolicy resource type"
 description: "This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. "
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.subservice: "intune"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # deviceCompliancePolicy resource type

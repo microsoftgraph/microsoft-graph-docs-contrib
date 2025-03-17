@@ -6,6 +6,7 @@ doc_type: resourcePageType
 
 ms.subservice: security
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 # secureScoreControlProfile resource type
@@ -21,7 +22,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfile](securescorecontrolprofiles.md) collection |Get a collection of secureScoreControlProfile objects.|
+|[List secure score control profiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfile](securescorecontrolprofiles.md) collection |Get a collection of secureScoreControlProfile objects.|
 
 
 ## Properties
@@ -56,7 +57,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

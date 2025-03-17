@@ -5,6 +5,7 @@ author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # retentionDuration resource type
@@ -25,7 +26,7 @@ None.
 None.
 
 ## JSON representation for retentionDuration
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.retentionDuration"

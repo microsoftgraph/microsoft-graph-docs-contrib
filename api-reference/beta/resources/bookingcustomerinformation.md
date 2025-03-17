@@ -5,6 +5,7 @@ author: "razortbone"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # bookingCustomerInformation resource type
@@ -34,7 +35,7 @@ Inherits from [bookingCustomerInformationBase](bookingcustomerinformationbase.md
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bookingCustomerInformation"

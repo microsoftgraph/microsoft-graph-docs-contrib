@@ -5,6 +5,8 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Eligibility schedule instance
+ms.date: 07/22/2024
 ---
 
 # unifiedRoleEligibilityScheduleInstance resource type
@@ -20,9 +22,9 @@ Inherits from [unifiedRoleScheduleInstanceBase](../resources/unifiedroleschedule
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List unifiedRoleEligibilityScheduleInstances](../api/rbacapplication-list-roleeligibilityscheduleinstances.md)|[unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) collection|GGet the instances of role eligibilities.|
-|[Get unifiedRoleEligibilityScheduleInstance](../api/unifiedroleeligibilityscheduleinstance-get.md)|[unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md)|Get the instance of a role eligibility.|
-|[filterByCurrentUser](../api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md)|[unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) collection|Get the instances of eligible roles for the calling principal.|
+|[List](../api/rbacapplication-list-roleeligibilityscheduleinstances.md)|[unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) collection|GGet the instances of role eligibilities.|
+|[Get](../api/unifiedroleeligibilityscheduleinstance-get.md)|[unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md)|Get the instance of a role eligibility.|
+|[Filter by current user](../api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md)|[unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) collection|Get the instances of eligible roles for the calling principal.|
 
 ## Properties
 |Property|Type|Description|
@@ -46,7 +48,7 @@ Inherits from [unifiedRoleScheduleInstanceBase](../resources/unifiedroleschedule
 |roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Property indicating the roleDefinition the assignment is for. Provided so that callers can get the role definition using `$expand` at the same time as getting the eligible role assignments. roleDefinition.Id will be auto expanded. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

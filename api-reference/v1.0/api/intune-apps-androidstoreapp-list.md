@@ -2,9 +2,10 @@
 title: "List androidStoreApps"
 description: "List properties and relationships of the androidStoreApp objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/13/2024
 ---
 
 # List androidStoreApps

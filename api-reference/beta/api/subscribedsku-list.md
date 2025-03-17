@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "frank-masuelli"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/31/2024
 ---
 
 # List subscribedSkus
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "subscribedsku_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/subscribedsku-list-permissions.md)]
+
+[!INCLUDE [rbac-company-subscriptions-subscribedskus-apis](../includes/rbac-for-apis/rbac-company-subscriptions-subscribedskus-apis.md)]
 
 ## HTTP request
 

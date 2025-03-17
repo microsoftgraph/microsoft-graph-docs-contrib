@@ -9,13 +9,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.teams.item.schedule.timecards.clockin.ClockInPostRequestBody clockInPostRequestBody = new com.microsoft.graph.beta.teams.item.schedule.timecards.clockin.ClockInPostRequestBody();
+clockInPostRequestBody.setIsAtApprovedLocation(true);
 ItemBody notes = new ItemBody();
 notes.setContentType(BodyType.Text);
-notes.setContent("clock in notes");
+notes.setContent("clocking in");
 clockInPostRequestBody.setNotes(notes);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("atAprovedLocation", true);
-clockInPostRequestBody.setAdditionalData(additionalData);
 var result = graphClient.teams().byTeamId("{team-id}").schedule().timeCards().clockIn().post(clockInPostRequestBody);
 
 

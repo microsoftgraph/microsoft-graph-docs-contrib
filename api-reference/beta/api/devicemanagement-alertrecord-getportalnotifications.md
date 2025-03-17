@@ -5,6 +5,7 @@ author: "zhishending"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/27/2024
 ---
 
 # alertRecord: getPortalNotifications
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Get a list of all notifications that one or more users can access, from the Microsoft Endpoint Manager admin center.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -87,10 +88,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/ge
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/alertrecordthisgetportalnotifications-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/alertrecordthisgetportalnotifications-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

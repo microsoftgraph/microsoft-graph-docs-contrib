@@ -16,29 +16,15 @@ Namespace: microsoft.graph
 
 The **personOrGroupColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent a person or group chosen from the directory.
 
-## JSON representation
-
-Here is a JSON representation of a **personOrGroupColumn** resource.
-
-<!-- { "blockType": "resource", "@type": "microsoft.graph.personOrGroupColumn", "@property.aka": "chooseFromType=format" } -->
-
-```json
-{
-  "allowMultipleSelection": true,
-  "displayAs": "account | contentType | created | department | ...",
-  "chooseFromType": "peopleAndGroups | peopleOnly"
-}
-```
-
 ## Properties
 
 | Property                   | Type    | Description                                                                                                        |
 | :------------------------- | :------ | :----------------------------------------------------------------------------------------------------------------- |
-| **allowMultipleSelection** | boolean | Indicates whether multiple values can be selected from the source.                                                 |
+| **allowMultipleSelection** | Boolean | Indicates whether multiple values can be selected from the source.                                                 |
 | **displayAs**              | string  | How to display the information about the person or group chosen. See below.                                        |
 | **chooseFromType**         | string  | Whether to allow selection of people only, or people and groups. Must be one of `peopleAndGroups` or `peopleOnly`. |
 
-## displayAs values
+### displayAs values
 
 | Value                         | Description                                                                                                 |
 | :---------------------------- | :---------------------------------------------------------------------------------------------------------- |
@@ -62,6 +48,24 @@ Here is a JSON representation of a **personOrGroupColumn** resource.
 | **workPhone**                 | The person's work phone number.                                                                             |
 
 Note: Additional DisplayAs types may be returned.
+
+## Relationships
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- { "blockType": "resource", "@type": "microsoft.graph.personOrGroupColumn", "@property.aka": "chooseFromType=format" } -->
+
+```json
+{
+  "allowMultipleSelection": true,
+  "displayAs": "account | contentType | created | department | ...",
+  "chooseFromType": "peopleAndGroups | peopleOnly"
+}
+```
+
 
 <!--
 {

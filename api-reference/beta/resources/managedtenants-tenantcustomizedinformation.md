@@ -5,6 +5,7 @@ author: "idwilliams"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # tenantCustomizedInformation resource type
@@ -18,9 +19,9 @@ Represents customizable information for a managed tenant.
 ## Methods
 | Method                                                                                                        | Return type                                                                                                                         | Description                                                                                                                                  |
 | :------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| [List tenantCustomizedInformations](../api/managedtenants-managedtenant-list-tenantscustomizedinformation.md) | [microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) collection | Get a list of the [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) objects and their properties.    |
-| [Get tenantCustomizedInformation](../api/managedtenants-tenantcustomizedinformation-get.md)                   | [microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)            | Read the properties and relationships of a [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object. |
-| [Update tenantCustomizedInformation](../api/managedtenants-tenantcustomizedinformation-update.md)             | [microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)            | Update the properties of a [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object.                 |
+| [List tenant customized information](../api/managedtenants-managedtenant-list-tenantscustomizedinformation.md) | [microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) collection | Get a list of the [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) objects and their properties.    |
+| [Get tenant customized information](../api/managedtenants-tenantcustomizedinformation-get.md)                   | [microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)            | Read the properties and relationships of a [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object. |
+| [Update tenant customized information](../api/managedtenants-tenantcustomizedinformation-update.md)             | [microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)            | Update the properties of a [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object.                 |
 
 ## Properties
 | Property                          | Type                                                                                                                          | Description                                                                                                                                                                                         |

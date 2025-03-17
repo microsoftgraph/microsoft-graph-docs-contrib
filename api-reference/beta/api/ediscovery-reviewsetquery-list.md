@@ -3,8 +3,9 @@ title: "List reviewSetQueries"
 description: "Retrieve a list of reviewSetQuery objects."
 ms.localizationpriority: medium
 author: "mahage-msft"
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # List reviewSetQueries

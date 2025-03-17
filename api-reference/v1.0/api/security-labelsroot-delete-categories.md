@@ -3,8 +3,9 @@ title: "Delete categoryTemplate"
 description: "Delete a categoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Delete categoryTemplate
@@ -32,7 +33,7 @@ DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryT
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

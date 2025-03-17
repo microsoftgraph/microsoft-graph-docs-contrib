@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 08/02/2024
 ---
 
 # Add synchronization secrets
@@ -34,7 +35,7 @@ PUT /servicePrincipals/{id}/synchronization/secrets
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

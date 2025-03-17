@@ -5,6 +5,8 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Range sort
+ms.date: 06/12/2024
 ---
 
 # workbookRangeSort resource type

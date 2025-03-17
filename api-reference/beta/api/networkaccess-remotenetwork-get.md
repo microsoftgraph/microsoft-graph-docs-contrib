@@ -5,6 +5,7 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Get remoteNetwork
@@ -44,7 +45,7 @@ This method supports the `$expand` and `$select` OData query parameter to help c
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

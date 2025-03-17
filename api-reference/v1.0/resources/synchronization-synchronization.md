@@ -5,6 +5,7 @@ author: "ArvindHarinder1"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # synchronization resource type
@@ -18,7 +19,7 @@ Represents the capability for Microsoft Entra identity synchronization through t
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[acquireAccessToken](../api/synchronization-synchronization-acquireaccesstoken.md)|None| Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application. |
+|[Acquire access token](../api/synchronization-synchronization-acquireaccesstoken.md)|None| Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application. |
 |[Add secrets](../api/synchronization-serviceprincipal-put-synchronization.md)|None| Provide credentials for establishing connectivity with the target system. |
 
 ## Properties

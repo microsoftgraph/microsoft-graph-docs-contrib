@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # authenticationMethodFeatureConfiguration resource type
@@ -27,7 +28,7 @@ Defines the features that are allowed for different authentication methods. For 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationMethodFeatureConfiguration"

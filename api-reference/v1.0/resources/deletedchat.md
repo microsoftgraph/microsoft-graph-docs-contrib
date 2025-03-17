@@ -5,6 +5,7 @@ author: sthapliyal
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # deletedChat resource type
@@ -18,8 +19,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get deletedChat](../api/deletedchat-get.md)|[deletedChat](../resources/deletedchat.md)|Read the properties and relationships of a [deletedChat](../resources/deletedchat.md) object.|
-|[undoDelete deletedChat](../api/deletedchat-undodelete.md)|None|Restore a deleted chat as a [chat](../resources/chat.md).|
+|[Get](../api/deletedchat-get.md)|[deletedChat](../resources/deletedchat.md)|Read the properties and relationships of a [deletedChat](../resources/deletedchat.md) object.|
+|[Undo delete](../api/deletedchat-undodelete.md)|None|Restore a deleted chat as a [chat](../resources/chat.md).|
 
 ## Properties
 |Property|Type|Description|

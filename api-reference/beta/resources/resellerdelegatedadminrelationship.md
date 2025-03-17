@@ -5,6 +5,7 @@ author: "koravvams"
 ms.localizationpriority: medium
 ms.subservice: partner-customer-administration
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # resellerDelegatedAdminRelationship resource type
@@ -45,7 +46,7 @@ Inherits from [delegatedAdminRelationship](../resources/delegatedadminrelationsh
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

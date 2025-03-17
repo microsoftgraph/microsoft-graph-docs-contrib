@@ -3,8 +3,9 @@ title: "Delete azureADDevice"
 description: "Delete an azureADDevice object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # Delete azureADDevice
@@ -14,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Delete an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.
 
-When a Microsoft Entra device is deleted, it is unregistered from the deployment service and automatically unenrolled from management by the service for all update categories, as well as removed from every [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) and [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
+When a Microsoft Entra device is deleted, it is unregistered and automatically unenrolled from management for all update categories, as well as removed from every [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) and [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

@@ -5,6 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 11/06/2024
 ---
 
 # List assignmentRequests
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_list_assignmentrequests" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-list-assignmentrequests-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 

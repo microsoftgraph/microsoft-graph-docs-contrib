@@ -6,6 +6,7 @@ author: "suawat"
 ms.reviewer: "alvarorahul, iamut"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # organization resource type
@@ -20,9 +21,9 @@ Represents the Microsoft Entra tenant that the user or application is authentica
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List organizations](../api/organization-list.md) | [organization](organization.md) collection|Read properties and relationships of the organization object.|
-|[Get organization](../api/organization-get.md) | [organization](organization.md) collection|Read properties and relationships of an organization object.|
-|[Update organization](../api/organization-update.md) | None | Update an organization object. |
+|[List](../api/organization-list.md) | [organization](organization.md) collection|Read properties and relationships of the organization object.|
+|[Get](../api/organization-get.md) | [organization](organization.md) collection|Read properties and relationships of an organization object.|
+|[Update](../api/organization-update.md) | None | Update an organization object. |
 
 ## Properties
 

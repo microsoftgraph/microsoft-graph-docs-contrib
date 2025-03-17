@@ -1,17 +1,18 @@
 ---
 title: "appIdentity resource type"
-description: "Indicates the identity of the application that performed the action or was changed. Includes Application Id, Name, Service Principal ID and Name. This resource is called by the directoryAudit API"
+description: "Indicates the identity of the application that performed the action or was changed. This resource is called by the directoryAudit API"
 ms.localizationpriority: medium
 author: "dhanyahk"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # appIdentity resource type
 
 Namespace: microsoft.graph
 
-Indicates the identity of the application that performed the action or was changed. Includes application ID, name, and service principal ID and name. This resource is used by the [Get directoryAudit](../api/directoryaudit-get.md) operation.
+Indicates the identity of the application that performed the action or was changed. Includes the application ID, name, and service principal ID and name. This resource is used by the [directoryAudit](../api/directoryaudit-get.md) operation.
 
 ## Properties
 
@@ -21,6 +22,10 @@ Indicates the identity of the application that performed the action or was chang
 |displayName|String|Refers to the application name displayed in the Microsoft Entra admin center.|
 |servicePrincipalId|String|Refers to the unique ID for the service principal in Microsoft Entra ID.|
 |servicePrincipalName|String|Refers to the Service Principal Name is the Application name in the tenant. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

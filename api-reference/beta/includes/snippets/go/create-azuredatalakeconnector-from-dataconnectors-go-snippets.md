@@ -18,8 +18,12 @@ import (
 requestBody := graphmodelsindustrydata.NewIndustryDataConnector()
 displayName := "CSV connector"
 requestBody.SetDisplayName(&displayName) 
+fileFormat := graphmodelsindustrydata.NewFileFormatReferenceValue()
+code := "schoolDataSyncV1"
+fileFormat.SetCode(&code) 
+requestBody.SetFileFormat(fileFormat)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/external/industryData/sourceSystems('aa050107-5784-4a8e-1876-08daddab21bc')", 
+	"sourceSystem@odata.bind" : "https://graph.microsoft.com/beta/external/industryData/sourceSystems('aa050107-5784-4a8e-1876-08daddab21bc')", 
 }
 requestBody.SetAdditionalData(additionalData)
 

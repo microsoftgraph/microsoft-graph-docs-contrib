@@ -5,12 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CreateOrGetPostRequestBody;
-use Microsoft\Graph\Generated\Models\MeetingParticipants;
-use Microsoft\Graph\Generated\Models\MeetingParticipantInfo;
-use Microsoft\Graph\Generated\Models\IdentitySet;
-use Microsoft\Graph\Generated\Models\Identity;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\OnlineMeetings\CreateOrGet\CreateOrGetPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\MeetingParticipants;
+use Microsoft\Graph\Beta\Generated\Models\MeetingParticipantInfo;
+use Microsoft\Graph\Beta\Generated\Models\IdentitySet;
+use Microsoft\Graph\Beta\Generated\Models\Identity;
+use Microsoft\Graph\Beta\Generated\Models\OnlineMeetingRole;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

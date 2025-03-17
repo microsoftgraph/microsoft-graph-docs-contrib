@@ -3,8 +3,9 @@ title: "List childTags"
 description: "Get a list of child [tag] objects associated with a tag."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # List childTags

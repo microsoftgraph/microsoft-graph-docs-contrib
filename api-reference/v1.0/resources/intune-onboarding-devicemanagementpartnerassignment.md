@@ -2,9 +2,10 @@
 title: "deviceManagementPartnerAssignment resource type"
 description: "User group targeting for Device Management Partner"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceManagementPartnerAssignment resource type

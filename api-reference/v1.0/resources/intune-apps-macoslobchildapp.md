@@ -2,9 +2,10 @@
 title: "macOSLobChildApp resource type"
 description: "Contains properties of a macOS .app in the package"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # macOSLobChildApp resource type

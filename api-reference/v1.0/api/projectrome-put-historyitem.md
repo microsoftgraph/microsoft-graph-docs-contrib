@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "project-rome"
 author: "ailae"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Create or replace an activityHistoryItem
@@ -35,7 +36,7 @@ PUT /me/activities/{id}/historyItems/{id}
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {token}. Required.|
+|Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -5,6 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 07/19/2024
 ---
 
 # unifiedRoleManagementAlert: refresh
@@ -64,7 +65,7 @@ For refreshing a single alert, do not specify a request body.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code with a **Location** header which specifies the URL for polling the operation status.
+If successful, this action returns a `202 Accepted` response code with a **Location** header which specifies the URL for polling the operation status via the [Get longRunningOperation API](../api/longrunningoperation-get.md)
 
 ## Examples
 

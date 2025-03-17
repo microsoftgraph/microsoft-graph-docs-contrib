@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # Get applicationSignInDetailedSummary
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "applicationsignindetailedsummary_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/applicationsignindetailedsummary-get-permissions.md)]
 
+[!INCLUDE [rbac-usage-insights-apis](../includes/rbac-for-apis/rbac-usage-insights-apis.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ``` http
@@ -37,7 +40,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

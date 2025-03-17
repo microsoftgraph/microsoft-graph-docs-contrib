@@ -2,9 +2,10 @@
 title: "hardwareConfigurationDeviceState resource type"
 description: "Contains properties for device run state of the hardware configuration"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # hardwareConfigurationDeviceState resource type

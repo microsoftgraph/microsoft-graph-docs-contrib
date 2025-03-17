@@ -2,9 +2,10 @@
 title: "windowsUserType enum type"
 description: "Intune Enrollment Windowsusertype Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # windowsUserType enum type
@@ -20,5 +21,6 @@ Namespace: microsoft.graph
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|administrator|0||
-|standard|1||
+|administrator|0|Indicates that the user has administrator privileges.|
+|standard|1|Indicates that the user is a low-rights user without administrator privileges.|
+|unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|

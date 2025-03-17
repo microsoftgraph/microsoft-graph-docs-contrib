@@ -6,6 +6,7 @@ author: "suawat"
 ms.reviewer: "alvarorahul, iamut"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # organization resource type
@@ -20,8 +21,8 @@ This resource lets you add your own data to custom properties using [extensions]
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List organizations](../api/organization-list.md) | [organization](organization.md) collection|Read properties and relationships of the organization object.|
-|[Get organization](../api/organization-get.md) | [organization](organization.md) collection|Read properties and relationships of organization object.|
+|[List](../api/organization-list.md) | [organization](organization.md) collection|Read properties and relationships of the organization object.|
+|[Get](../api/organization-get.md) | [organization](organization.md) collection|Read properties and relationships of organization object.|
 |[Update](../api/organization-update.md) |  None | Update an organization object.  |
 
 ## Properties

@@ -3,8 +3,9 @@ title: "Create retentionLabel"
 description: "Create a new retentionLabel object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Create retentionLabel
@@ -35,7 +36,7 @@ POST /security/labels/retentionLabels
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

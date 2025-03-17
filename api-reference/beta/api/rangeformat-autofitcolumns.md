@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 08/21/2024
 ---
 
 # RangeFormat: autofitColumns
@@ -48,6 +49,7 @@ Here is an example of how to call this API.
 ##### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "rangeformat_autofitcolumns"
@@ -55,6 +57,12 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/autofitColumns
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/rangeformat-autofitcolumns-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 The following example shows the response. 

@@ -5,6 +5,7 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # accessPackageResourceAttribute resource type
@@ -40,7 +41,7 @@ If the **attributeSource** of the attribute is an [accessPackageResourceAttribut
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageResourceAttribute"

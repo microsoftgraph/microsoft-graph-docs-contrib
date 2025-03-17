@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkFeaturesConfiguration resource type
@@ -25,8 +26,11 @@ Represents the Microsoft Teams client configuration details for a Teams-enabled 
 |isSendLogsAndFeedbackEnabled|Boolean|`True` if sending logs and feedback is enabled.|
 
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkFeaturesConfiguration"

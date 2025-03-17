@@ -9,6 +9,7 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\BookingCustomer;
 use Microsoft\Graph\Generated\Models\PhysicalAddress;
 use Microsoft\Graph\Generated\Models\Phone;
+use Microsoft\Graph\Generated\Models\PhoneType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a baseSitePage object."
 ms.date: 03/15/2018
 title: Get baseSitePage
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

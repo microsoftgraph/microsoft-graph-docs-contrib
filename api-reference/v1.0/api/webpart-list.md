@@ -3,8 +3,9 @@ title: "List webparts"
 description: "Get the webPart collection from a sitePage."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List webparts

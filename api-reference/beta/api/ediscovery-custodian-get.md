@@ -3,8 +3,9 @@ title: "Get custodian"
 description: "Read the properties and relationships of a custodian object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Get custodian

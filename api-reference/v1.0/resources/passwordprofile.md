@@ -6,13 +6,14 @@ author: "yyuank"
 ms.reviewer: "iamut"
 ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 09/30/2024
 ---
 
 # passwordProfile resource type
 
 Namespace: microsoft.graph
 
-Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.
+Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object. See an example to [Update the passwordProfile of a user](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user-and-reset-their-password).
 
 
 ## Properties

@@ -5,6 +5,7 @@ author: "tommoser"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # informationProtectionPolicySetting resource type
@@ -19,7 +20,7 @@ Represents the settings for a Microsoft Purview Information Protection label pol
 
 | Method                                                                                              | Return type                                                                                       | Description                                                                                                                                           |
 | :-------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Get informationProtectionPolicySetting](../api/security-informationprotectionpolicysetting-get.md) | [microsoft.graph.security.informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) | Read the properties and relationships of an [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) object. |
+| [List](../api/security-informationprotectionpolicysetting-get.md) | [microsoft.graph.security.informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) | Read the properties and relationships of an [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) object. |
 
 
 ## Properties

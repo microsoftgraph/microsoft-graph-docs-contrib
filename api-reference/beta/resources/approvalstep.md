@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # approvalStep resource type
@@ -19,9 +20,9 @@ Specifies a decision step in an [approval](approval.md) in entitlement managemen
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[List approvalSteps](../api/approval-list-steps.md) | [approvalStep](approvalstep.md) collection | List the **approvalStep** objects associated with an **approval** object in entitlement management and PIM. |
-|[Get approvalStep](../api/approvalstep-get.md) | [approvalStep](approvalstep.md) | Retrieve the properties of an **approvalStep** object in entitlement management and PIM. |
-|[Update approvalStep](../api/approvalstep-update.md) | None | Apply approve or deny decision on an **approvalStep** object in entitlement management and PIM. |
+|[List](../api/approval-list-steps.md) | [approvalStep](approvalstep.md) collection | List the **approvalStep** objects associated with an **approval** object in entitlement management and PIM. |
+|[Get](../api/approvalstep-get.md) | [approvalStep](approvalstep.md) | Retrieve the properties of an **approvalStep** object in entitlement management and PIM. |
+|[Update](../api/approvalstep-update.md) | None | Apply approve or deny decision on an **approvalStep** object in entitlement management and PIM. |
 
 ## Properties
 |Property|Type|Description|
@@ -42,7 +43,7 @@ Specifies a decision step in an [approval](approval.md) in entitlement managemen
 |approval|[approval](../resources/approval.md) collection| The approval object for decisions associated with the `accessPackageAssignmentRequest` in entitlement management, the `roleAssignmentScheduleRequest` in PIM for Microsoft Entra roles, or the `assignmentScheduleRequest` in PIM for groups.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

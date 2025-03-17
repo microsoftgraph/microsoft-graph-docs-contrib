@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "njerigrevious"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # search resource type
@@ -33,7 +34,7 @@ None
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [query](../api/search-query.md) | [searchResponse](searchresponse.md) Collection| Executes the query specified in the [searchRequest](../resources/searchrequest.md) |
+| [Query data](../api/search-query.md) | [searchResponse](searchresponse.md) Collection| Executes the query specified in the [searchRequest](../resources/searchrequest.md) |
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

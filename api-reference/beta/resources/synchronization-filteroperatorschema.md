@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # filterOperatorSchema resource type
@@ -24,9 +25,12 @@ Describes an operator that can be used in a [filter](synchronization-filter.md).
 |name                        |String                     |Operator name. |
 |supportedAttributeTypes     |attributeType collection         |Attribute types supported by the operator. Possible values are: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

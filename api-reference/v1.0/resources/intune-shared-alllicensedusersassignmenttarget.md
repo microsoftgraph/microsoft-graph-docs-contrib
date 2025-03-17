@@ -2,9 +2,10 @@
 title: "allLicensedUsersAssignmentTarget resource type"
 description: "Represents an assignment to all licensed users in the tenant."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # allLicensedUsersAssignmentTarget resource type

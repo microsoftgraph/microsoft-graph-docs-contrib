@@ -2,9 +2,10 @@
 title: "deviceManagementPartnerTenantState enum type"
 description: "Partner state of this tenant."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementPartnerTenantState enum type

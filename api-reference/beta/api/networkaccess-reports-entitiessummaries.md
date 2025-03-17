@@ -5,6 +5,7 @@ author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # reports: entitiesSummaries
@@ -14,7 +15,7 @@ Namespace: microsoft.graph.networkaccess
 
 Get the number of users, devices, and workloads per traffic type in a specified time period.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -92,6 +93,10 @@ GET https://graph.microsoft.com/beta/networkAccess/reports/entitiesSummaries(sta
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/reportsthisentitiessummaries-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportsthisentitiessummaries-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

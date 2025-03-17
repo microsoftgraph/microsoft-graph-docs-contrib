@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # startHoldMusicOperation resource type
@@ -24,7 +25,7 @@ Represents the status of a [startHoldMusic](../api/participant-startholdmusic.md
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

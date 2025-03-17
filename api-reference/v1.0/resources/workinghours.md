@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 09/18/2024
 ---
 
 # workingHours resource type
@@ -22,6 +23,8 @@ This can be useful in cases like when you travel to a different time zone than y
 to the destination time zone so that Outlook time values are displayed in local time while you are there.
 When other people request work meetings with you in your usual place of work, they can still respect your working hours in the
 appropriate time zone.
+
+> **Note:** The [working hours experience](https://support.microsoft.com/office/set-your-work-hours-and-location-in-outlook-af2fddf9-249e-4710-9c95-5911edfd76f6#articleFooterSupportBridge=communityBridge) in new Outlook and Outlook on the web isn't currently supported.
 
 
 ## Properties

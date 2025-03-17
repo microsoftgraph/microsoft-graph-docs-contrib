@@ -3,8 +3,9 @@ title: "caseExportOperation resource type"
 description: "Represents the process of an eDiscovery export."
 ms.localizationpriority: medium
 author: "mahage-msft"
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # caseExportOperation resource type

@@ -5,6 +5,7 @@ author: "cmmdesai"
 ms.localizationpriority: medium
 ms.subservice: entra-applications
 doc_type: resourcePageType 
+ms.date: 07/22/2024
 ---
 
 # bulkUpload resource type
@@ -17,7 +18,7 @@ Represents the capability of the Microsoft Entra synchronization service to proc
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Perform bulkUpload](../api/synchronization-synchronizationjob-post-bulkupload.md)| None |Perform a new bulk upload using the synchronization job.|
+|[Perform bulk upload](../api/synchronization-synchronizationjob-post-bulkupload.md)| None |Perform a new bulk upload using the synchronization job.|
 
 ## Properties
 

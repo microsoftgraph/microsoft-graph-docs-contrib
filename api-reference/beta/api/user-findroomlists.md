@@ -5,6 +5,7 @@ author: "vrod9429"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # user: findRoomLists
@@ -39,7 +40,7 @@ GET /users/{id}/findRoomLists
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | string  | application/json. Required. |
 
 

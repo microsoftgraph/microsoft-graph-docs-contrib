@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 05/29/2024
 ---
 
 # List chats
@@ -161,7 +162,8 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-03T08:05:49.521Z"
             },
-            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false
         },
         {
             "id": "19:561082c0f3f847a58069deb8eb300807@thread.v2",
@@ -173,7 +175,8 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
             },
-            "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false
         },
         {
             "id": "19:d74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
@@ -185,7 +188,8 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
             },
-            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false
         }
     ]
 }
@@ -273,6 +277,7 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-04-02T08:15:02.091Z"
             },
+            "isHiddenForAllMembers": false,
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members": [
                 {
@@ -311,6 +316,7 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
             },
+            "isHiddenForAllMembers": false,
             "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members": [
                 {
@@ -365,6 +371,7 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
+            "isHiddenForAllMembers": false,
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members": [
                 {
@@ -487,7 +494,8 @@ Content-type: application/json
             "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2022-05-03T18:15:42.307Z"
-            }
+            },
+            "isHiddenForAllMembers": false
         },
         {
             "id": "19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces",
@@ -501,7 +509,8 @@ Content-type: application/json
             "viewpoint": {
                 "isHidden": true,
                 "lastMessageReadDateTime": "2022-03-08T19:55:30.491Z"
-            }
+            },
+            "isHiddenForAllMembers": false
         }
     ]
 }
@@ -586,6 +595,7 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
+            "isHiddenForAllMembers": false,
             "lastMessagePreview": {
                 "id": "1622853091207",
                 "createdDateTime": "2021-06-05T00:31:31.207Z",
@@ -617,6 +627,7 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-03T08:05:49.521Z"
             },
+            "isHiddenForAllMembers": false,
             "lastMessagePreview": {
                 "id": "1622707540293",
                 "createdDateTime": "2021-06-03T08:05:40.293Z",
@@ -649,6 +660,7 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-04T05:34:23.712Z"
             },
+            "isHiddenForAllMembers": false,
             "lastMessagePreview": {
                 "id": "1622784857324",
                 "createdDateTime": "2021-06-04T05:34:17.324Z",
@@ -724,7 +736,8 @@ Content-type: application/json
             "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2023-06-29T10:22:15.024Z"
-            }
+            },
+            "isHiddenForAllMembers": false
         }
     ]
 

@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AccessPackageResourceRequest
 {
@@ -21,12 +22,18 @@ var requestBody = new AccessPackageResourceRequest
 			"justification" , ""
 		},
 		{
-			"accessPackageResource" , new 
+			"accessPackageResource" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				ResourceType = "AadGroup",
-				OriginId = "e93e24d1-2b65-4a6c-a1dd-654a12225487",
-				OriginSystem = "AadGroup",
-			}
+				{
+					"resourceType", new UntypedString("AadGroup")
+				},
+				{
+					"originId", new UntypedString("e93e24d1-2b65-4a6c-a1dd-654a12225487")
+				},
+				{
+					"originSystem", new UntypedString("AadGroup")
+				},
+			})
 		},
 	},
 };

@@ -18,10 +18,10 @@ import (
 requestBody := graphmodels.NewUser()
 customSecurityAttributes := graphmodels.NewCustomSecurityAttributeValue()
 additionalData := map[string]interface{}{
-engineering := graphmodels.New()
+engineering := graph.New()
 odataType := "#Collection(Int32)"
 engineering.SetOdataType(&odataType) 
-	costCenter := []graphmodels.Numberable {
+	costCenter := []graph.Numberable {
  := int32(1001)
 engineering.Set(&) 
  := int32(1003)

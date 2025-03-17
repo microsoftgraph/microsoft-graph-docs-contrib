@@ -2,14 +2,17 @@
 title: "Get userExperienceAnalyticsRemoteConnection"
 description: "Read properties and relationships of the userExperienceAnalyticsRemoteConnection object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 12/04/2024
 ---
 
 # Get userExperienceAnalyticsRemoteConnection
 
 Namespace: microsoft.graph
+
+> **Caution:** This API is deprecated and will stop returning data on December 31, 2024. Going forward, use the [getRawRemoteConnectionReports](./cloudpcreports-getrawremoteconnectionreports.md) resource and its supported APIs.
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

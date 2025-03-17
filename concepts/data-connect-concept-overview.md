@@ -5,6 +5,7 @@ author: "rimisra2"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Overview of Microsoft Graph Data Connect
@@ -49,7 +50,7 @@ At a high level, to set up Data Connect, you:
 1. Set up your **Microsoft 365 tenant and enable Microsoft Graph Data Connect**.
 2. Set up your **Microsoft Entra app registration**.
 3. Set up your **Azure Storage resource**.
-4. Set up your **Azure resource with Azure Synapse or Azure Data Factory**.
+4. Set up your **Azure resource with Microsoft Fabric, Azure Synapse, or Azure Data Factory**.
 5. Monitor data consent requests with **Microsoft 365 Admin Center or PowerShell**.
 
 For more details about how to get started, see [Build your first Microsoft Graph Data Connect application](/graph/data-connect-quickstart?tabs=AzureSynapsePipeline%2CMicrosoft365). 
@@ -97,7 +98,6 @@ Microsoft Graph Data Connect is integrated with the following Microsoft services
 - [Azure Synapse Analytics](https://azure.microsoft.com/products/synapse-analytics/) 
 - [Azure Data Factory](https://azure.microsoft.com/products/data-factory/) 
 - [Microsoft Viva Insights](https://www.microsoft.com/microsoft-viva/insights)
-- [Microsoft Syntex](https://www.microsoft.com/microsoft-syntex)
 
 ### Microsoft Fabric integration
 

@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
+toc.title: Application sign-in summary (preview)
 ---
 
 # applicationSignInSummary resource type
@@ -19,7 +21,7 @@ Represents an application sign-in summary.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getAzureADApplicationSignInSummary](../api/reportroot-getazureadapplicationsigninsummary.md) | [applicationSignInSummary](applicationsigninsummary.md) | Read the properties and relationships of an **applicationSignInSummary** object. |
+| [Get](../api/reportroot-getazureadapplicationsigninsummary.md) | [applicationSignInSummary](applicationsigninsummary.md) | Read the properties and relationships of an **applicationSignInSummary** object. |
 
 ## Properties
 | Property     | Type        | Description |
@@ -38,7 +40,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

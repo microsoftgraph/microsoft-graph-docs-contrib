@@ -5,6 +5,7 @@ author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Get cloudPcAuditEvent
@@ -37,7 +38,7 @@ GET /deviceManagement/virtualEndpoint/auditEvents/{id}
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

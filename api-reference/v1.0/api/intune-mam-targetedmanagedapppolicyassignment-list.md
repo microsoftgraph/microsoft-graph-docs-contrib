@@ -2,9 +2,10 @@
 title: "List targetedManagedAppPolicyAssignments"
 description: "List properties and relationships of the targetedManagedAppPolicyAssignment objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/14/2024
 ---
 
 # List targetedManagedAppPolicyAssignments

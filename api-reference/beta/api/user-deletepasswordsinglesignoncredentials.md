@@ -5,6 +5,7 @@ author: "AllisonAm"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # user: deletePasswordSingleSignOnCredentials
@@ -38,7 +39,7 @@ POST /users/{usersId}/deletePasswordSingleSignOnCredentials
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

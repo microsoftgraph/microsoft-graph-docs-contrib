@@ -8,16 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Item.Columns.Add;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AddPostRequestBody
 {
 	Index = 3,
-	Values = new List<Json>
+	Values = new UntypedArray(new List<UntypedNode>
 	{
-		new Json
+		new UntypedObject(new Dictionary<string, UntypedNode>
 		{
-		},
-	},
+		}),
+	}),
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

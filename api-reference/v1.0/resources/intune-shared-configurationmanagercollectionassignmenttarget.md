@@ -2,9 +2,10 @@
 title: "configurationManagerCollectionAssignmentTarget resource type"
 description: "Represents an assignment to a Configuration Manager Collection."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # configurationManagerCollectionAssignmentTarget resource type

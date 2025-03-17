@@ -19,7 +19,7 @@ requestBody := graphmodels.NewAccessPackageAssignmentRequest()
 requestType := "adminAdd"
 requestBody.SetRequestType(&requestType) 
 additionalData := map[string]interface{}{
-assignment := graphmodels.New()
+assignment := graph.New()
 targetId := "46184453-e63b-4f20-86c2-c557ed5d5df9"
 assignment.SetTargetId(&targetId) 
 assignmentPolicyId := "2264bf65-76ba-417b-a27d-54d291f0cbc8"

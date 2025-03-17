@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: calendar
 author: "iamgirishck"
+ms.date: 07/22/2024
 ---
 
 # freeBusyError resource type
@@ -22,9 +23,12 @@ Represents error information from attempting to get the availability of a user, 
 |responseCode |String |The response code from querying for the availability of the user, distribution list, or resource. |
 
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

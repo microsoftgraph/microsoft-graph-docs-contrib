@@ -5,6 +5,7 @@ author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # urlMatchInfo resource type
@@ -23,7 +24,7 @@ Collects the settings for the pattern that a URL must follow to be processed by 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.externalConnectors.urlMatchInfo"

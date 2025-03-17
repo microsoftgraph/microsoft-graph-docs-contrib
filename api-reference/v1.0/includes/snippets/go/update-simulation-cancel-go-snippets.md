@@ -21,7 +21,7 @@ requestBody.SetId(&id)
 status := graphmodels.CANCELLED_SIMULATIONSTATUS 
 requestBody.SetStatus(&status) 
 additionalData := map[string]interface{}{
-	"odataEtag" : "\"0100aa9b-0000-0100-0000-6396fa270000\"", 
+	"@odata.etag" : "\"0100aa9b-0000-0100-0000-6396fa270000\"", 
 }
 requestBody.SetAdditionalData(additionalData)
 

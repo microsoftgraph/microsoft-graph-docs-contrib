@@ -3,8 +3,9 @@ title: "deploymentState resource type"
 description: "Describes and controls the current state of a deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # deploymentState resource type
@@ -26,7 +27,7 @@ Describes and controls the current state of a deployment.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.deploymentState"

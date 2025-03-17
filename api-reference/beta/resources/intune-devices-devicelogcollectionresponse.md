@@ -2,9 +2,10 @@
 title: "deviceLogCollectionResponse resource type"
 description: "Windows Log Collection request entity."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceLogCollectionResponse resource type
@@ -26,7 +27,6 @@ Windows Log Collection request entity.
 |[Delete deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-delete.md)|None|Deletes a [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md).|
 |[Update deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-update.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Update the properties of a [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) object.|
 |[createDownloadUrl action](../api/intune-devices-devicelogcollectionresponse-createdownloadurl.md)|String||
-|[downloadDeviceLogs action](../api/intune-devices-devicelogcollectionresponse-downloaddevicelogs.md)|String||
 
 ## Properties
 |Property|Type|Description|

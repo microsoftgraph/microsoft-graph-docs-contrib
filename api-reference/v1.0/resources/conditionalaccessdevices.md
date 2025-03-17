@@ -1,17 +1,18 @@
 ---
 title: "conditionalAccessDevices resource type"
-description: "Represents devices in the policy scope."
+description: "Represents devices in the scope of a conditionalAccessTemplate object."
 ms.localizationpriority: medium
 author: "SanDeo-MSFT"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # conditionalAccessDevices resource type
 
 Namespace: microsoft.graph
 
-Represents devices in the policy scope.
+Represents devices in the scope of a [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) object. This resource is configured in the **conditionalAccessTemplate** resource > **details** property > **conditions** property > **devices** property.
 
 ## Properties
 
@@ -25,7 +26,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

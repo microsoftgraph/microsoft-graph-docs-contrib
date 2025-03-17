@@ -3,8 +3,9 @@ title: "ediscoveryReviewSet: export"
 description: "Initiate an export from a reviewSet."
 author: "vbhatt0211"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # ediscoveryReviewSet: export

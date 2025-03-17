@@ -1,17 +1,21 @@
 ---
-title: "managedDevice: getCloudPcReviewStatus"
+title: "managedDevice: getCloudPcReviewStatus (deprecated)"
 description: "Get the review status of a specific Cloud PC device."
 author: "yayang3"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/30/2024
 ---
 
-# managedDevice: getCloudPcReviewStatus
+# managedDevice: getCloudPcReviewStatus (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [cloudPC: retrieveReviewStatus](../api/cloudpc-retrievereviewstatus.md) API.
 
 Get the review status of a specific Cloud PC device.
 
@@ -86,10 +90,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/185f01c2de9
 [!INCLUDE [sample-code](../includes/snippets/php/manageddevicethisgetcloudpcreviewstatus-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/manageddevicethisgetcloudpcreviewstatus-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/manageddevicethisgetcloudpcreviewstatus-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -120,7 +120,8 @@ Content-Type: application/json
     "subscriptionName": "deschutes-INT-DR-test",
     "azureStorageAccountId": "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview",
     "azureStorageAccountName": "snapshotsUnderReview",
-    "azureStorageContainerName": "snapshotsContainer"
+    "azureStorageContainerName": "snapshotsContainer",
+    "accessTier":"hot"
 }
 ```
 

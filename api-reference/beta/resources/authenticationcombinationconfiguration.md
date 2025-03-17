@@ -6,6 +6,7 @@ ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/19/2024
 ---
 
 # authenticationCombinationConfiguration resource type
@@ -28,6 +29,7 @@ Inherits from [entity](../resources/entity.md).
 |[Get](../api/authenticationcombinationconfiguration-get.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)|Read the properties and relationships of a [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.|
 |[Update](../api/authenticationcombinationconfiguration-update.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)|Update the properties of an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.|
 |[Delete](../api/authenticationstrengthpolicy-delete-combinationconfigurations.md)|None|Delete an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) obejct.|
+|[Update allowed combinations](../api/authenticationstrengthpolicy-updateallowedcombinations.md) |[updateAllowedCombinationsResult](../resources/updateallowedcombinationsresult.md)|Update the allowed [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) for a given [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md).|
 
 ## Properties
 |Property|Type|Description|

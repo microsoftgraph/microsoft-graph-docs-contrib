@@ -6,7 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ExportPostRequestBody;
+use Microsoft\Graph\Generated\Security\Cases\EdiscoveryCases\Item\ReviewSets\Item\MicrosoftGraphSecurityExport\ExportPostRequestBody;
+use Microsoft\Graph\Generated\Models\Security\ExportOptions;
+use Microsoft\Graph\Generated\Models\Security\ExportFileStructure;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

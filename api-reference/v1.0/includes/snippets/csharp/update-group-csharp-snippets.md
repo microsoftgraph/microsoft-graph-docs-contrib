@@ -11,14 +11,9 @@ using Microsoft.Graph.Models;
 
 var requestBody = new Group
 {
-	Description = "Library Assist",
-	DisplayName = "Library Assist",
-	GroupTypes = new List<string>
-	{
-		"Unified",
-	},
-	MailEnabled = true,
-	MailNickname = "library-help",
+	Description = "Library Assist - ADC",
+	DisplayName = "Library Assist - ADC",
+	MailNickname = "library-help-adc",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

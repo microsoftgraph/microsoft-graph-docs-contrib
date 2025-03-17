@@ -2,9 +2,10 @@
 title: "win32LobApp resource type"
 description: "Contains properties and inherited properties for Win32 apps."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # win32LobApp resource type

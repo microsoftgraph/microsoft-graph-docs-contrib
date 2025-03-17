@@ -5,6 +5,8 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Role management alert definition
+ms.date: 06/12/2024
 ---
 
 # unifiedRoleManagementAlertDefinition resource type
@@ -20,8 +22,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List alertDefinitions](../api/rolemanagementalert-list-alertdefinitions.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection|Get a list of the [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) objects and their properties.|
-|[Get unifiedRoleManagementAlertDefinition](../api/unifiedrolemanagementalertdefinition-get.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Read the properties and relationships of an [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) object.|
+|[List](../api/rolemanagementalert-list-alertdefinitions.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection|Get a list of the [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) objects and their properties.|
+|[Get](../api/unifiedrolemanagementalertdefinition-get.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Read the properties and relationships of an [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) object.|
 
 ## Properties
 |Property|Type|Description|

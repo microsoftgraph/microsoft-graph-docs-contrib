@@ -5,6 +5,7 @@ title: "hashes resource type"
 description: "The Hashes resource groups available hashes into a single structure for an item."
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # hashes resource type

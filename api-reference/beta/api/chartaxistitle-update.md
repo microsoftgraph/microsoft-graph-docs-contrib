@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update workbookChartAxisTitle
@@ -45,7 +46,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property | Type	|Description|
 |:---------------|:--------|:----------|
 |text|string|Represents the axis title.|
-|visible|boolean|A boolean that specifies the visibility of an axis title.|
+|visible|Boolean|A Boolean that specifies the visibility of an axis title.|
 
 ## Response
 

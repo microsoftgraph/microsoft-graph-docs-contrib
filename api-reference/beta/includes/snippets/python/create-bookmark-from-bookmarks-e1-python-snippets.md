@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.bookmark import Bookmark
-from msgraph.generated.models.answer_keyword import AnswerKeyword
-from msgraph.generated.models.device_platform_type import DevicePlatformType
-from msgraph.generated.models.answer_variant import AnswerVariant
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.search.bookmark import Bookmark
+from msgraph_beta.generated.models.search.answer_keyword import AnswerKeyword
+from msgraph_beta.generated.models.device_platform_type import DevicePlatformType
+from msgraph_beta.generated.models.search.answer_variant import AnswerVariant
+from msgraph_beta.generated.models.answer_state import AnswerState
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Bookmark(
 	display_name = "Contoso Install Site",
 	web_url = "http://www.contoso.com/",

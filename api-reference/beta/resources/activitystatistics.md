@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madehmer"
 ms.subservice: "insights"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # activityStatistics resource type
@@ -37,7 +38,7 @@ For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivitySt
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List activityStatistics](../api/activitystatistics-list.md) | [activityStatistics](activitystatistics.md) | Retrieve the properties for the collection of activity statistics for a user, for the last complete week. |
+| [List activity statistics](../api/activitystatistics-list.md) | [activityStatistics](activitystatistics.md) | Retrieve the properties for the collection of activity statistics for a user, for the last complete week. |
 
 ## Properties
 
@@ -56,7 +57,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { 
   "blockType": "resource",

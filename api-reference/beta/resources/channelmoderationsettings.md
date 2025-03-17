@@ -5,6 +5,7 @@ author: "anandjo"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # channelModerationSettings resource type
@@ -34,8 +35,11 @@ To support channel moderation settings via Microsoft Graph APIs:
 |replyRestriction|replyRestriction|Indicates who is allowed to reply to the teams channel. Possible values are: `everyone`, `authorAndModerators`, `unknownFutureValue`.|
 |userNewMessageRestriction|userNewMessageRestriction|Indicates who is allowed to post messages to teams channel. Possible values are: `everyone`, `everyoneExceptGuests`, `moderators`, `unknownFutureValue`.|
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.channelModerationSettings"

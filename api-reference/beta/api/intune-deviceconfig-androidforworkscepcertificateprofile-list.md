@@ -2,9 +2,10 @@
 title: "List androidForWorkScepCertificateProfiles"
 description: "List properties and relationships of the androidForWorkScepCertificateProfile objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List androidForWorkScepCertificateProfiles

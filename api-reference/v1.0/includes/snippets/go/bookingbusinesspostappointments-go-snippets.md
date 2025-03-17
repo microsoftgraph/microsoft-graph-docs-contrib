@@ -19,14 +19,18 @@ import (
 requestBody := graphmodels.NewBookingAppointment()
 customerTimeZone := "America/Chicago"
 requestBody.SetCustomerTimeZone(&customerTimeZone) 
+customerName := "Jordan Miller"
+requestBody.SetCustomerName(&customerName) 
+customerEmailAddress := "jordanm@contoso.com"
+requestBody.SetCustomerEmailAddress(&customerEmailAddress) 
+customerPhone := "213-555-0199"
+requestBody.SetCustomerPhone(&customerPhone) 
+customerNotes := null
+requestBody.SetCustomerNotes(&customerNotes) 
 smsNotificationsEnabled := true
 requestBody.SetSmsNotificationsEnabled(&smsNotificationsEnabled) 
-endDateTime := graphmodels.NewDateTimeTimeZone()
-dateTime := "2018-05-01T12:30:00.0000000+00:00"
-endDateTime.SetDateTime(&dateTime) 
-timeZone := "UTC"
-endDateTime.SetTimeZone(&timeZone) 
-requestBody.SetEndDateTime(endDateTime)
+isCustomerAllowedToManageBooking := true
+requestBody.SetIsCustomerAllowedToManageBooking(&isCustomerAllowedToManageBooking) 
 isLocationOnline := true
 requestBody.SetIsLocationOnline(&isLocationOnline) 
 optOutOfCustomerEmail := false
@@ -51,7 +55,7 @@ bookingReminder.SetOffset(&offset)
 recipients := graphmodels.ALLATTENDEES_BOOKINGREMINDERRECIPIENTS 
 bookingReminder.SetRecipients(&recipients) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.bookingReminderRecipients", 
+	"recipients@odata.type" : "#microsoft.graph.bookingReminderRecipients", 
 }
 bookingReminder.SetAdditionalData(additionalData)
 bookingReminder1 := graphmodels.NewBookingReminder()
@@ -62,7 +66,7 @@ bookingReminder1.SetOffset(&offset)
 recipients := graphmodels.CUSTOMER_BOOKINGREMINDERRECIPIENTS 
 bookingReminder1.SetRecipients(&recipients) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.bookingReminderRecipients", 
+	"recipients@odata.type" : "#microsoft.graph.bookingReminderRecipients", 
 }
 bookingReminder1.SetAdditionalData(additionalData)
 bookingReminder2 := graphmodels.NewBookingReminder()
@@ -73,7 +77,7 @@ bookingReminder2.SetOffset(&offset)
 recipients := graphmodels.STAFF_BOOKINGREMINDERRECIPIENTS 
 bookingReminder2.SetRecipients(&recipients) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.bookingReminderRecipients", 
+	"recipients@odata.type" : "#microsoft.graph.bookingReminderRecipients", 
 }
 bookingReminder2.SetAdditionalData(additionalData)
 
@@ -100,7 +104,7 @@ address.SetStreet(&street)
 additionalData := map[string]interface{}{
 	postOfficeBox := null
 address.SetPostOfficeBox(&postOfficeBox) 
-	"odataType" : "#microsoft.graph.physicalAddressType", 
+	"type@odata.type" : "#microsoft.graph.physicalAddressType", 
 	type := null
 address.SetType(&type) 
 }
@@ -121,8 +125,8 @@ serviceLocation.SetUniqueId(&uniqueId)
 uniqueIdType := null
 serviceLocation.SetUniqueIdType(&uniqueIdType) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.locationType", 
-	"odataType" : "#microsoft.graph.locationUniqueIdType", 
+	"locationType@odata.type" : "#microsoft.graph.locationType", 
+	"uniqueIdType@odata.type" : "#microsoft.graph.locationUniqueIdType", 
 }
 serviceLocation.SetAdditionalData(additionalData)
 requestBody.SetServiceLocation(serviceLocation)
@@ -134,12 +138,6 @@ staffMemberIds := []string {
 	"8ee1c803-a1fa-406d-8259-7ab53233f148",
 }
 requestBody.SetStaffMemberIds(staffMemberIds)
-startDateTime := graphmodels.NewDateTimeTimeZone()
-dateTime := "2018-05-01T12:00:00.0000000+00:00"
-startDateTime.SetDateTime(&dateTime) 
-timeZone := "UTC"
-startDateTime.SetTimeZone(&timeZone) 
-requestBody.SetStartDateTime(startDateTime)
 maximumAttendeesCount := int32(5)
 requestBody.SetMaximumAttendeesCount(&maximumAttendeesCount) 
 filledAttendeesCount := int32(1)
@@ -229,9 +227,21 @@ customers := []graphmodels.BookingCustomerInformationBaseable {
 }
 requestBody.SetCustomers(customers)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.bookingPriceType", 
-	"odataType" : "#Collection(microsoft.graph.bookingReminder)", 
-	"odataType" : "#Collection(microsoft.graph.bookingCustomerInformation)", 
+end := graphmodels.NewDateTimeTimeZone()
+dateTime := "2018-05-01T12:30:00.0000000+00:00"
+end.SetDateTime(&dateTime) 
+timeZone := "UTC"
+end.SetTimeZone(&timeZone) 
+	requestBody.SetEnd(end)
+	"priceType@odata.type" : "#microsoft.graph.bookingPriceType", 
+	"reminders@odata.type" : "#Collection(microsoft.graph.bookingReminder)", 
+start := graphmodels.NewDateTimeTimeZone()
+dateTime := "2018-05-01T12:00:00.0000000+00:00"
+start.SetDateTime(&dateTime) 
+timeZone := "UTC"
+start.SetTimeZone(&timeZone) 
+	requestBody.SetStart(start)
+	"customers@odata.type" : "#Collection(microsoft.graph.bookingCustomerInformation)", 
 }
 requestBody.SetAdditionalData(additionalData)
 

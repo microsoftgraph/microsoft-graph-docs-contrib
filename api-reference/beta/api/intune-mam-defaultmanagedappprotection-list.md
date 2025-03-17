@@ -2,9 +2,10 @@
 title: "List defaultManagedAppProtections"
 description: "List properties and relationships of the defaultManagedAppProtection objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List defaultManagedAppProtections
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6954
+Content-Length: 6993
 
 {
   "value": [
@@ -130,6 +131,7 @@ Content-Length: 6954
       "protectedMessagingRedirectAppType": "anyManagedApp",
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
+      "allowWidgetContentSync": true,
       "encryptAppData": true,
       "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
       "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",

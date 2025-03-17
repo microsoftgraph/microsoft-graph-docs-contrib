@@ -1,10 +1,11 @@
 ---
 title: "safeguardProfile resource type"
-description: "Describes the issue(s) against which the service safeguards devices."
+description: "Describes one or more issues against which Windows Autopatch safeguards devices."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/09/2024
 ---
 
 # safeguardProfile resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the issue(s) against which the service safeguards devices.
+Describes one or more issues against which Windows Autopatch safeguards devices.
 
 ## Properties
 |Property|Type|Description|
@@ -24,7 +25,7 @@ Describes the issue(s) against which the service safeguards devices.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.safeguardProfile"

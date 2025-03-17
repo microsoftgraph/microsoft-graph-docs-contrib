@@ -4,6 +4,7 @@ description: "Use the Microsoft Search API in Microsoft Graph to search content 
 author: "njerigrevious"
 ms.localizationpriority: medium
 ms.subservice: "search"
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Search API to search OneDrive and SharePoint content
@@ -499,7 +500,7 @@ Content-Type: application/json
 
 ## Example 7: Search hidden content
 
-Use the **includeHiddenContent** property to include hidden content, such as archived content and SharePoint Embedded (RaaS), in search results. By default, this property is set to `false`, which prevents hidden content from being returned.
+Use the **includeHiddenContent** property to include hidden content, such as archived content and SharePoint Embedded, in search results. By default, this property is set to `false`, which prevents hidden content from being returned.
 
 You can also optionally include KQL to scope your query for hidden content to specific content types. For example, in SharePoint, administrators can mark sites as archived. If hidden content isn't available, the search results only include relevant nonhidden content, provided there are no other errors, and return a `200 OK` response code.
 

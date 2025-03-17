@@ -2,9 +2,10 @@
 title: "enrollmentConfigurationAssignment resource type"
 description: "Enrollment Configuration Assignment"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # enrollmentConfigurationAssignment resource type

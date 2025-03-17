@@ -2,9 +2,10 @@
 title: "deviceCompliancePolicyDeviceStateSummary resource type"
 description: "Intune Deviceconfig Devicecompliancepolicydevicestatesummary Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceCompliancePolicyDeviceStateSummary resource type

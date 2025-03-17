@@ -2,9 +2,10 @@
 title: "microsoftStoreForBusinessAppAssignmentSettings resource type"
 description: "Contains properties used to assign an Microsoft Store for Business mobile app to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # microsoftStoreForBusinessAppAssignmentSettings resource type

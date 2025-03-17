@@ -5,18 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\OpenIdConnectIdentityProvider;
-use Microsoft\Graph\Generated\Models\ClaimsMapping;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\OpenIdConnectIdentityProvider;
+use Microsoft\Graph\Beta\Generated\Models\ClaimsMapping;
+use Microsoft\Graph\Beta\Generated\Models\OpenIdConnectResponseMode;
+use Microsoft\Graph\Beta\Generated\Models\OpenIdConnectResponseTypes;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OpenIdConnectIdentityProvider();
 $requestBody->setOdataType('microsoft.graph.openIdConnectIdentityProvider');
-$requestBody->setDisplayName('Login with the Contoso identity provider');
-$requestBody->setClientId('56433757-cadd-4135-8431-2c9e3fd68ae8');
-$requestBody->setClientSecret('12345');
+$requestBody->setDisplayName('Contoso');
+$requestBody->setClientId('00001111-aaaa-2222-bbbb-3333cccc4444');
+$requestBody->setClientSecret('4294967296');
 $claimsMapping = new ClaimsMapping();
 $claimsMapping->setUserId('myUserId');
 $claimsMapping->setGivenName('myGivenName');

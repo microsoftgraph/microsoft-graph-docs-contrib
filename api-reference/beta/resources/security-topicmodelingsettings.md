@@ -3,8 +3,9 @@ title: "topicModelingSettings resource type"
 description: "Represents topic modeling settings for an eDiscovery case"
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # topicModelingSettings resource type
@@ -28,7 +29,7 @@ Represents topic modeling (Themes) settings for an eDiscovery case. To learn mor
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.topicModelingSettings"

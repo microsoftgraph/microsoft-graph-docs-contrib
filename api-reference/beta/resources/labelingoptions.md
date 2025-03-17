@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "tommoser"
 ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # labelingOptions resource type  (deprecated)
@@ -28,7 +29,7 @@ Represents the labeling options that can be provided to the evaluation APIs. **l
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

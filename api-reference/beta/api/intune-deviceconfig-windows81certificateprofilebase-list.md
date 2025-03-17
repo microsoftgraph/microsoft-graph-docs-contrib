@@ -2,9 +2,10 @@
 title: "List windows81CertificateProfileBases"
 description: "List properties and relationships of the windows81CertificateProfileBase objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List windows81CertificateProfileBases

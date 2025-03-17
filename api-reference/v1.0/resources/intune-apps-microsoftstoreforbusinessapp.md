@@ -2,9 +2,10 @@
 title: "microsoftStoreForBusinessApp resource type"
 description: "Microsoft Store for Business Apps. This class does not support Create, Delete, or Update."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # microsoftStoreForBusinessApp resource type

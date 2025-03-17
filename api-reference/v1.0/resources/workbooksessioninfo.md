@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # workbookSessionInfo resource type
@@ -36,6 +37,6 @@ The following JSON representation shows the resource type.
 | Property | Type  | Description                               |
 |:---------|:------|:------------------------------------------|
 | id  | string | ID of the workbook session. |
-| persistChanges | boolean |  `true` for persistent session. `false` for non-persistent session (view mode) |
+| persistChanges | Boolean |  `true` for persistent session. `false` for non-persistent session (view mode) |
 
 

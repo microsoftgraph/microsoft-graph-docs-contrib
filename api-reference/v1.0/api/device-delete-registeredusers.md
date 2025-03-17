@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "michaelrm97"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Delete registeredUser
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
+[!INCLUDE [rbac-devices-apis-write](../includes/rbac-for-apis/rbac-devices-apis-write.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -35,7 +38,7 @@ DELETE /devices/{id}/registeredUsers/{id}/$ref
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

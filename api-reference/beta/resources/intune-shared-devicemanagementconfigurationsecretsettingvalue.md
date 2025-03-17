@@ -2,9 +2,10 @@
 title: "deviceManagementConfigurationSecretSettingValue resource type"
 description: "Graph model for a secret setting value"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # deviceManagementConfigurationSecretSettingValue resource type

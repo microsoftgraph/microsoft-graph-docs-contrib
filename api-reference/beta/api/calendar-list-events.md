@@ -5,6 +5,7 @@ author: "iamgirishck"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # List events
@@ -59,7 +60,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {token}. Required.  |
+| Authorization  | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
 ## Request body

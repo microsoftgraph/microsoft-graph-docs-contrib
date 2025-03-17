@@ -2,9 +2,10 @@
 title: "windowsUpdateStatus enum type"
 description: "Windows update for business configuration device states"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # windowsUpdateStatus enum type

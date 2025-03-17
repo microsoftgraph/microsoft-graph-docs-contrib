@@ -1,10 +1,11 @@
 ---
 title: "reportRoot resource type"
 description: "The resource that represents an instance of a device or troubleshooting report, depending on context."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jaiprakashmb"
-ms.subservice: "intune"
+ms.prod: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # reportRoot resource type

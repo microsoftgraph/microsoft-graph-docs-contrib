@@ -6,6 +6,7 @@ ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 05/28/2024
 ---
 
 # List authenticationMethodModes
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of all supported authentication methods, or all supported authentication method combinations as a list of **authenticationMethodModes** objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

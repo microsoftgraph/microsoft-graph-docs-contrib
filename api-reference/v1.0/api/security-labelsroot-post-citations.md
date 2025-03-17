@@ -3,8 +3,9 @@ title: "Create citationTemplate"
 description: "Create a new citationTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Create citationTemplate
@@ -33,7 +34,7 @@ POST /security/labels/citations
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

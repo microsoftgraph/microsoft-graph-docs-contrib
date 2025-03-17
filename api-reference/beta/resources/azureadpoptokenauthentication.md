@@ -5,6 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # azureAdPopTokenAuthentication resource type
@@ -24,7 +25,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "baseType": "microsoft.graph.customExtensionAuthenticationConfiguration",

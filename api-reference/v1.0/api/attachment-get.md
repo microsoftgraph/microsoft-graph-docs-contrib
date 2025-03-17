@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 08/08/2024
 ---
 
 # Get attachment
@@ -144,7 +145,7 @@ Use `$expand` to get the properties of an item attachment (contact, event, or me
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

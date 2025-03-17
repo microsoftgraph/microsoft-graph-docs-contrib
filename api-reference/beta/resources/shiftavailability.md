@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
 doc_type: "resourcePageType"
+ms.date: 07/25/2024
 ---
 
 # shiftAvailability resource type
@@ -23,9 +24,13 @@ Availability of the user to be scheduled for a [shift](shift.md) and its recurre
 |timeSlots|[timeRange](timerange.md) collection|The time slot(s) preferred by the user.|
 |timeZone|String|Specifies the time zone for the indicated time. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

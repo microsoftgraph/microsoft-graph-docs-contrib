@@ -18,10 +18,10 @@ import (
 
 requestTop := int32(5)
 
-requestParameters := &graphsecurity.SecurityCasesEdiscoveryCaseItemReviewSetItemFilesRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.CasesEdiscoveryCasesItemReviewSetsItemFilesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphsecurity.SecurityCasesEdiscoveryCaseItemReviewSetItemFilesRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.CasesEdiscoveryCasesItemReviewSetsItemFilesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

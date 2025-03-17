@@ -5,6 +5,7 @@ author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # List bookmarks
@@ -40,7 +41,7 @@ This method supports the `select`, `expand`, `filter`, `orderBy`, `maxTop`, and 
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

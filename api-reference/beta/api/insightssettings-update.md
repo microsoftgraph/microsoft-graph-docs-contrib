@@ -5,6 +5,7 @@ author: "simonhult"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: "apiPageType"
+ms.date: 04/12/2024
 ---
 
 # Update insightsSettings

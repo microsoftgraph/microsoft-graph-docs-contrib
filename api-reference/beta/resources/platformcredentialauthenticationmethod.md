@@ -5,6 +5,8 @@ author: "Veena11"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Platform Credential
+ms.date: 07/22/2024
 ---
 
 # platformCredentialAuthenticationMethod resource type
@@ -20,9 +22,9 @@ This derived type inherits from the [authenticationMethod](authenticationmethod.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List platformCredentialAuthenticationMethods](../api/platformcredentialauthenticationmethod-list.md)|[platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) collection|Get a list of the [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) objects and their properties.|
-|[Get platformCredentialAuthenticationMethod](../api/platformcredentialauthenticationmethod-get.md)|[platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md)|Read the properties and relationships of a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object.|
-|[Delete platformCredentialAuthenticationMethod](../api/platformcredentialauthenticationmethod-delete.md)|None|Delete a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object.|
+|[List](../api/platformcredentialauthenticationmethod-list.md)|[platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) collection|Get a list of the [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) objects and their properties.|
+|[Get](../api/platformcredentialauthenticationmethod-get.md)|[platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md)|Read the properties and relationships of a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object.|
+|[Delete](../api/platformcredentialauthenticationmethod-delete.md)|None|Delete a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -53,7 +55,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.platformCredentialAuthenticationMethod",
   "id": "String (Identifier)",
   "displayName": "String",
-  "createdDateTime": "String",
+  "createdDateTime": "String (timestamp)",
   "keyStrength": {"@odata.type": "microsoft.graph.authenticationMethodKeyStrength"},
   "platform": {"@odata.type": "microsoft.graph.authenticationMethodPlatform"}
 }

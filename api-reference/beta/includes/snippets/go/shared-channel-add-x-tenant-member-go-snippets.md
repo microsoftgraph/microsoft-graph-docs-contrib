@@ -23,7 +23,7 @@ requestBody.SetRoles(roles)
 tenantId := "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
 requestBody.SetTenantId(&tenantId) 
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/users/bc3598dd-cce4-4742-ae15-173429951408", 
+	"user@odata.bind" : "https://graph.microsoft.com/beta/users/bc3598dd-cce4-4742-ae15-173429951408", 
 }
 requestBody.SetAdditionalData(additionalData)
 

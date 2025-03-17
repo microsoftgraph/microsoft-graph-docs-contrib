@@ -2,9 +2,10 @@
 title: "macOSKernelExtension resource type"
 description: "Represents a specific macOS kernel extension. A macOS kernel extension can be described by its team identifier plus its bundle identifier."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # macOSKernelExtension resource type

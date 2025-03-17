@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # accessPackageResource resource type
@@ -19,7 +20,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
+| [List](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
 | [Refresh](../api/accesspackageresource-refresh.md)|None|Refresh the resource information from the originSystem.|
 
 ## Properties

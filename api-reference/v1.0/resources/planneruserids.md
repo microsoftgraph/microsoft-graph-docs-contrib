@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # plannerUserIds resource type
@@ -15,7 +16,7 @@ The **plannerUserIds** resource represents the list of users IDs that a [plan](p
 
 
 ## Properties
-The client defines the properties of an Open Type, and the client should provide user IDs as properties with their values being the `true` boolean. When user IDs are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.
+The client defines the properties of an Open Type, and the client should provide user IDs as properties with their values being the `true` Boolean. When user IDs are no longer shared with, properties are automatically removed by setting their values to the `false` Boolean.
 
 
 ## JSON representation

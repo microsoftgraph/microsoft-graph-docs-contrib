@@ -5,6 +5,7 @@ description: "Indicates that the column contains information about the approval 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 03/06/2024
 ---
 
 # contentApprovalStatusColumn resource type
@@ -16,6 +17,9 @@ Indicates that the column contains information about approval status of the item
 
 ## Properties
 
+None.
+
+## Relationships
 None.
 
 ## JSON representation

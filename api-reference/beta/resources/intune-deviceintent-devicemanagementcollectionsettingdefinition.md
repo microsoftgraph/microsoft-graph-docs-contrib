@@ -2,9 +2,10 @@
 title: "deviceManagementCollectionSettingDefinition resource type"
 description: "Entity representing the defintion for a collection setting"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceManagementCollectionSettingDefinition resource type

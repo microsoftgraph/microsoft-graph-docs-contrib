@@ -7,6 +7,7 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # unitOfMeasure resource type
@@ -21,10 +22,10 @@ Represents a unit of measure, which is a standard of measurement of a quantity, 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get unitOfMeasure](../api/dynamics-unitsofmeasure-get.md)|unitOfMeasure|Gets a unit of measure object.|
-|[Post unitOfMeasure](../api/dynamics-create-unitsofmeasure.md)|unitOfMeasure|Creates a unit of measure object.|
-|[Patch unitOfMeasure](../api/dynamics-unitsofmeasure-update.md)|unitOfMeasure|Updates a unit of measure object.|
-|[Delete unitOfMeasure](../api/dynamics-unitsofmeasure-delete.md)|none|Deletes a unit of measure object.|
+|[Get units of measure](../api/dynamics-unitsofmeasure-get.md)|unitOfMeasure|Gets a unit of measure object.|
+|[Create units of measure](../api/dynamics-create-unitsofmeasure.md)|unitOfMeasure|Creates a unit of measure object.|
+|[Update units of measure](../api/dynamics-unitsofmeasure-update.md)|unitOfMeasure|Updates a unit of measure object.|
+|[Delete units of measure](../api/dynamics-unitsofmeasure-delete.md)|none|Deletes a unit of measure object.|
 
 ## Properties
 | Property	   | Type	|Description|

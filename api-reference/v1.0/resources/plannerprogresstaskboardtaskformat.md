@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # plannerProgressTaskBoardTaskFormat resource type
@@ -18,8 +19,8 @@ Represents the information used to render a task correctly in the progress view 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerProgressTaskBoardTaskFormat](../api/plannerprogresstaskboardtaskformat-get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |Read properties and relationships of **plannerProgressTaskBoardTaskFormat** object.|
-|[Update](../api/plannerprogresstaskboardtaskformat-update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)	|Update **plannerProgressTaskBoardTaskFormat** object. |
+|[Get progress task board format](../api/plannerprogresstaskboardtaskformat-get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |Read properties and relationships of **plannerProgressTaskBoardTaskFormat** object.|
+|[Update progress task board format](../api/plannerprogresstaskboardtaskformat-update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)	|Update **plannerProgressTaskBoardTaskFormat** object. |
 
 ## Properties
 | Property	   | Type	|Description|

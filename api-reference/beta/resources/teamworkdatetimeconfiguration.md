@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkDateTimeConfiguration resource type
@@ -28,7 +29,7 @@ Represents date and time configuration details for a Microsoft Teams-enabled [de
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkDateTimeConfiguration"

@@ -5,6 +5,7 @@ author: "caigen"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # submissionDetectedFile resource type
@@ -25,7 +26,7 @@ Represents the information of a detected file in a threat submission.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.submissionDetectedFile"

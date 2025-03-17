@@ -3,8 +3,9 @@ title: "relatedPerson resource type"
 description: "relatedPerson resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
+ms.date: 06/11/2024
 ---
 
 # relatedPerson resource type

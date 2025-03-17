@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mcm223"
 ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
+ms.date: 06/13/2024
 ---
 
 # Get callRecord
@@ -40,6 +41,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /communications/callRecords/{id}
 ```
+
+> [!CAUTION]
+>
+>- This API doesn't currently return a record of participants who stream a live event.
 
 ## Optional query parameters
 

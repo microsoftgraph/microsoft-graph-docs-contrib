@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/20/2024
 ---
 
 # cloudPcReports: getRemoteConnectionHistoricalReports
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the remote connection history records of a Cloud PC during a given period. This report contains data such as signInDateTime, signOutDateTime, usageInHour, remoteSignInTimeInSec and roundTripTimeInMsP50, and so on. This data is aggregated hourly for a specified time period, such as the last seven days.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -82,7 +83,7 @@ Content-length: 199
         "SignOutDateTime",
         "UsageInHour",
         "RoundTripTimeInMsP50",
-        "AvailableBandwidthInMBpsP50",
+        "AvailableBandwidthInMbpsP50",
         "RemoteSignInTimeInSec"
     ],
     "top": 25,
@@ -112,10 +113,6 @@ Content-length: 199
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetremoteconnectionhistoricalreports-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetremoteconnectionhistoricalreports-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -157,7 +154,7 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         },
         {
-            "Column": "AvailableBandwidthInMBpsP50",
+            "Column": "AvailableBandwidthInMbpsP50",
             "PropertyType": "Double"
         },
         {

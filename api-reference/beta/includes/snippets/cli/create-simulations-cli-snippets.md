@@ -31,7 +31,7 @@ mgc-beta security attack-simulation simulations create --body '{\
     "settingType": "noTraining",\
     "positiveReinforcement": {\
       "deliveryPreference": "deliverAfterCampaignEnd",\
-      "endUserNotification": "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",\
+      "endUserNotification@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",\
       "defaultLanguage": "en"\
     },\
     "simulationNotification": {\

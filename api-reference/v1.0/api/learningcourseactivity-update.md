@@ -5,6 +5,7 @@ author: "malabikaroy"
 ms.localizationpriority: medium
 ms.subservice: "viva-learning"
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # Update learningCourseActivity
@@ -74,7 +75,7 @@ If unsuccessful, this method returns one of the responses below:
 |Scenario|HTTP code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
 |Method not supported for entity|405|methodNotAllowed|This method isn't supported for this entity type. See the Microsoft Graph documentation for the methods applicable to this entity.|
-|User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
+|User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your administrator to request access.|
 |Forbidden|403|Forbidden|You don't have an adequate service plan for this request.|
 |Bad request|400|badRequest|This provider isn't enabled for the given tenant.|
 |Bad request|400|badRequest|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant.|
@@ -118,7 +119,7 @@ Content-Type: application/json
     "dateTime": "2022-09-22T16:05:00.0000000",
     "timeZone": "UTC"
   },
-  "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
   "learnerUserId": "7ba2228a-e020-11ec-9d64-0242ac120002",
   "notes": {
@@ -192,7 +193,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse",
   "completedDateTime": null,
   "completionPercentage": 30,
-  "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
   "learningProviderId": "01e8f81b-3060-4dec-acf0-0389665a0a38",
   "startedDateTime": "2021-05-11T22:57:17+00:00",

@@ -2,9 +2,10 @@
 title: "macOSSingleSignOnExtension resource type"
 description: "An abstract base class for all macOS-specific single sign-on extension types."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # macOSSingleSignOnExtension resource type

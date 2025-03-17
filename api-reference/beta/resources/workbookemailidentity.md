@@ -5,6 +5,7 @@ author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # workbookEmailIdentity resource type
@@ -29,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

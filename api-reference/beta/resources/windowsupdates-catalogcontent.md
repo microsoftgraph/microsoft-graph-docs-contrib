@@ -3,8 +3,9 @@ title: "catalogContent resource type"
 description: "Represents content that can be deployed from the catalog."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # catalogContent resource type
@@ -30,7 +31,7 @@ None.
 | catalogEntry | [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) | Metadata for a piece of content that you can approve for deployment. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.catalogContent"

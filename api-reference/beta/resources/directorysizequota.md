@@ -1,27 +1,32 @@
 ---
 title: "directorySizeQuota resource type"
-description: "Represents a company's used and total directory quota."
+description: "Represents the used and total directory quota for an organization."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "suawat"
+ms.date: 10/04/2024
 ---
 
 # directorySizeQuota resource type
 
+Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [tenant's](organization.md) used and total directory quota.
+Represents the used and total directory quota for an [organization](organization.md).
 
 ## Properties
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|used|Int32| Used amount of the directory quota. |
 |total|Int32| Total amount of the directory quota.|
+|used|Int32| Used amount of the directory quota. |
+
+## Relationships
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -33,7 +38,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "used": "Int32",
-  "total": "Int32"
+  "total": "Int32",
+  "used": "Int32"
 }
 ```

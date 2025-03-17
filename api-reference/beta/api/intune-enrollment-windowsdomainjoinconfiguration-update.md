@@ -2,9 +2,10 @@
 title: "Update windowsDomainJoinConfiguration"
 description: "Update the properties of a windowsDomainJoinConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update windowsDomainJoinConfiguration
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) object.
+Update the properties of a [windowsDomainJoinConfiguration](../resources/intune-enrollment-windowsdomainjoinconfiguration.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) object.
+In the request body, supply a JSON representation for the [windowsDomainJoinConfiguration](../resources/intune-enrollment-windowsdomainjoinconfiguration.md) object.
 
-The following table shows the properties that are required when you create the [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md).
+The following table shows the properties that are required when you create the [windowsDomainJoinConfiguration](../resources/intune-enrollment-windowsdomainjoinconfiguration.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -54,7 +55,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsDomainJoinConfiguration](../resources/intune-enrollment-windowsdomainjoinconfiguration.md) object in the response body.
 
 ## Example
 

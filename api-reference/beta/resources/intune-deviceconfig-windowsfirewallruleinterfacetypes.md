@@ -2,9 +2,10 @@
 title: "windowsFirewallRuleInterfaceTypes enum type"
 description: "Flags representing firewall rule interface types."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # windowsFirewallRuleInterfaceTypes enum type

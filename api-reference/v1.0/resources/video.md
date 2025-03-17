@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "The video resource groups video-related data items into a single structure."
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # video resource type
@@ -18,7 +19,7 @@ The properties of the **video** resource are populated by extracting metadata fr
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

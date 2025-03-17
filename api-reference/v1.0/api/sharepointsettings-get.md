@@ -5,6 +5,7 @@ author: "liamfernandez"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 09/17/2024
 ---
 
 # Get settings
@@ -21,7 +22,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/sharepointsettings-get-permissions.md)]
 
 When calling on behalf of a user, the user needs to belong to one of the following admin roles. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles):
-* Global Administrator
 * Global Reader
 * SharePoint Administrator
 

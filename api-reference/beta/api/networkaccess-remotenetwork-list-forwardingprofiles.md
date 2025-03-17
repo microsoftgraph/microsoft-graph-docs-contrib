@@ -5,6 +5,7 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # List forwardingProfiles (for a remote network)
@@ -44,7 +45,7 @@ This method does not support any OData query parameters.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

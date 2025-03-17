@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "zhvolosh"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/21/2024
 ---
 
 # List passwordMethods
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [password authentication method](../resources/passwordauthenticationmethod.md) objects. This API returns exactly one object, as a user can have exactly one password.
+Retrieve a list of [password authentication method](../resources/passwordauthenticationmethod.md) objects. This API returns exactly one object referenced by ID `28c10230-6103-485e-b985-444c60001490`, as a user can have exactly one password. For security, the password itself is never returned in the object and the **password** property is always `null`.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -23,23 +24,23 @@ One of the following permissions is required to call this API. To learn more, in
 
 ### Permissions acting on self
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|UserAuthenticationMethod.Read|UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
 
 ### Permissions acting on other users
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
-Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Administrator* roles can also retrieve password authentication methods for non-admin users and a limited set of admin roles as defined in [Who can reset passwords](/azure/active-directory/roles/privileged-roles-permissions#who-can-reset-passwords).
+Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Administrator* roles can also retrieve password authentication methods for non-admin users and a limited set of admin roles as defined in [Who can reset passwords](/graph/api/resources/users#who-can-reset-passwords).
 
 ## HTTP request
 
@@ -48,6 +49,8 @@ Get details of your own password authentication method.
 ```http
 GET /me/authentication/passwordMethods
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Get details of your own or another user's password authentication method.
 <!-- { "blockType": "ignored" } -->

@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\PublishPostRequestBody;
-use Microsoft\Graph\Generated\Models\BrowserSite;
-use Microsoft\Graph\Generated\Models\BrowserSharedCookie;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Admin\Edge\InternetExplorerMode\SiteLists\Item\Publish\PublishPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\BrowserSite;
+use Microsoft\Graph\Beta\Generated\Models\BrowserSharedCookie;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

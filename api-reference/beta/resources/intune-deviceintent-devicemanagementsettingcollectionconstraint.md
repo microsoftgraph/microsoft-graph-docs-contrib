@@ -2,9 +2,10 @@
 title: "deviceManagementSettingCollectionConstraint resource type"
 description: "Constraint that enforces the maximum number of elements a collection"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementSettingCollectionConstraint resource type

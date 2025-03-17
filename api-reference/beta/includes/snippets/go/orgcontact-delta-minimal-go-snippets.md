@@ -19,10 +19,10 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=minimal")
 
-requestParameters := &graphcontacts.ContactsDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphcontacts.ContactsDeltaRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","jobTitle","mail"},
 }
-configuration := &graphcontacts.ContactsDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphcontacts.ContactsDeltaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

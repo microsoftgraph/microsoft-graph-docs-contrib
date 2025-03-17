@@ -46,16 +46,20 @@ PATCH /security/incidents/{incidentId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|String|Owner of the incident, or null if no owner is assigned. Free editable text.|
+|assignedTo|String|Owner of the incident, or `null` if no owner is assigned. Free editable text.|
 |classification|microsoft.graph.security.alertClassification|The specification for the incident. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
-|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
-|status|microsoft.graph.security.incidentStatus|The status of the incident. Possible values are: `active`, `resolved`, `redirected`, `unknownFutureValue`.|
 |customTags|String collection|Array of custom tags associated with an incident.|
-
+|description|String|Description of the incident.|
+|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedAccount`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|displayName|String|The incident name.|
+|severity|microsoft.graph.security.alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically, higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|resolvingComment|string|User input that explains the resolution of the incident and the classification choice. It contains free editable text.|
+|status|microsoft.graph.security.incidentStatus|The status of the incident. Possible values are: `active`, `resolved`, `redirected`, `unknownFutureValue`.|
+|summary|String|The overview of an attack. When applicable, the summary contains details of what occurred, impacted assets, and the type of attack.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [incident](../resources/security-incident.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.incident](../resources/security-incident.md) object in the response body.
 
 ## Examples
 
@@ -144,25 +148,26 @@ Content-Type: application/json
     "status": "Active",
     "severity": "Medium",
     "customTags": [
-      "Demo"
+        "Demo"
     ],
     "comments": [
-      {
-		"comment": "Demo incident",
-		"createdBy": "DavidS@contoso.com",
-		"createdTime": "2021-09-30T12:07:37.2756993Z"
-      }
+        {
+            "comment": "Demo incident",
+            "createdBy": "DavidS@contoso.com",
+            "createdTime": "2021-09-30T12:07:37.2756993Z"
+        }
     ],
-    "systemTags" : [
+    "systemTags": [
         "Defender Experts"
     ],
-    "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
-    "recommendedActions" : "Immediate Recommendations:  1.    Block untrusted and unsigned processes that run from USB (ASR Rule) 2.    Verify if the ASR rule is turned on for the devices and evaluate whether the ASR . ...",
-    "recommendedHuntingQueries" : [
+    "description": "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
+    "recommendedActions": "Immediate Recommendations:  1.    Block untrusted and unsigned processes that run from USB (ASR Rule) 2.    Verify if the ASR rule is turned on for the devices and evaluate whether the ASR . ...",
+    "recommendedHuntingQueries": [
         {
-             "kqlText" : "//Run this query to identify the devices having Raspberry Robin worm alerts  AlertInfo   | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)   | where Title == 'Potential Raspberry Robin worm command'   | join AlertEvidence on AlertId   | distinct DeviceId"
+            "kqlText": "//Run this query to identify the devices having Raspberry Robin worm alerts  AlertInfo   | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)   | where Title == 'Potential Raspberry Robin worm command'   | join AlertEvidence on AlertId   | distinct DeviceId"
         }
-    ]
+    ],
+    "summary": "Defender Experts has identified some malicious activity. This incident has been raised for your awareness and should be investigated as normal."
 }
 ```
 

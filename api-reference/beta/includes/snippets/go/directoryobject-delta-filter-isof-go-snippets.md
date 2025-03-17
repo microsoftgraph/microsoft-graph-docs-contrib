@@ -18,10 +18,10 @@ import (
 
 requestFilter := "isof('microsoft.graph.user') or isof('microsoft.graph.group')"
 
-requestParameters := &graphdirectoryobjects.DirectoryObjectsDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphdirectoryobjects.DirectoryObjectsDeltaRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphdirectoryobjects.DirectoryObjectsDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphdirectoryobjects.DirectoryObjectsDeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

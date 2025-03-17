@@ -5,6 +5,7 @@ author: "kwekua"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # availabilityItem resource type
@@ -23,6 +24,10 @@ Indicates the status of a [staff member](bookingstaffmember.md) for a given time
 |serviceId |String |Indicates the service ID for 1:n appointments. If the appointment is of type 1:n, this field is present, otherwise, `null`.|
 |status |bookingsAvailabilityStatus |The status of the staff member. Possible values are: `available`, `busy`, `slotsAvailable`, `outOfOffice`, `unknownFutureValue`.|
 |startDateTime |dateTimeTimeZone |The start time of the time slot.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

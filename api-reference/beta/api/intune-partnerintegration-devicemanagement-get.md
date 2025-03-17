@@ -2,9 +2,10 @@
 title: "Get deviceManagement"
 description: "Read properties and relationships of the deviceManagement object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Get deviceManagement
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
+Read properties and relationships of the [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -24,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -50,7 +51,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [deviceManagement](../resources/intune-shared-devicemanagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object in the response body.
 
 ## Example
 
@@ -65,16 +66,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 301
+Content-Length: 130
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagement",
-    "id": "0b283420-3420-0b28-2034-280b2034280b",
-    "organizationalMessageFeatureOnboarding": {
-      "@odata.type": "microsoft.graph.organizationalMessageFeatureOnboarding",
-      "hasRequiredLicense": true
-    }
+    "id": "0b283420-3420-0b28-2034-280b2034280b"
   }
 }
 ```

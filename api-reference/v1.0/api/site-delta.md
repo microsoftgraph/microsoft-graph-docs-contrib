@@ -3,8 +3,9 @@ author: "vanshisingh"
 description: "Get newly created, updated, or deleted sites without having to perform a full read of the entire sites collection."
 title: "site: delta"
 ms.localizationpriority: "medium"
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 # site: delta
 
@@ -52,7 +53,7 @@ This method also supports the `$select`, `$expand`, and `$top` [OData query para
 
 |Header       |Value                    |
 |-------------|-------------------------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

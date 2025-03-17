@@ -2,9 +2,10 @@
 title: "resultantAppStateDetail enum type"
 description: "Enum indicating additional details regarding why an application has a particular install state."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # resultantAppStateDetail enum type

@@ -5,6 +5,7 @@ author: "yizhenww"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # participantJoiningNotification resource type
@@ -24,9 +25,12 @@ A [participantJoiningResponse](participantjoiningResponse.md) in the response pa
 | -------------- | --------------  | -------------------------------------------                        |
 | call           | [call](call.md) | The call object that contains details about the participant joining event. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

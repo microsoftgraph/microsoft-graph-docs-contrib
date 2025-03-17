@@ -23,6 +23,9 @@ Represents the speaker of an online meeting that has registration enabled.
 | bio | String | Bio of the speaker. |
 | displayName | String | Display name of the speaker. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {

@@ -5,14 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\UserProvisioningFlow;
-use Microsoft\Graph\Generated\Models\UserManagementOptions;
-use Microsoft\Graph\Generated\Models\AdditionalUserAttributes;
-use Microsoft\Graph\Generated\Models\AdditionalUserOptions;
-use Microsoft\Graph\Generated\Models\UserCreationOptions;
-use Microsoft\Graph\Generated\Models\UserConfiguration;
-use Microsoft\Graph\Generated\Models\SimplePasswordSettings;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserProvisioningFlow;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserManagementOptions;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\AdditionalUserAttributes;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\AdditionalUserOptions;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserCreationOptions;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\SimplePasswordSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

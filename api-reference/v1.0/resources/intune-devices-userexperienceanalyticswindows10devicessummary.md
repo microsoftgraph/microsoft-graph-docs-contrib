@@ -2,9 +2,10 @@
 title: "userExperienceAnalyticsWindows10DevicesSummary resource type"
 description: "The user experience analytics work from anywhere Windows 10 devices summary."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # userExperienceAnalyticsWindows10DevicesSummary resource type

@@ -3,8 +3,9 @@ title: "caseSettings resource type"
 description: "Contains settings for an eDiscovery case."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # caseSettings resource type
@@ -21,9 +22,9 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get caseSettings](../api/ediscovery-casesettings-get.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) object.|
-|[Update caseSettings](../api/ediscovery-casesettings-update.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Update the properties of a [microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) object.|
-|[resetToDefault](../api/ediscovery-casesettings-resettodefault.md)|None|Reset all settings to the default values.|
+|[Get settings](../api/ediscovery-casesettings-get.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) object.|
+|[Update settings](../api/ediscovery-casesettings-update.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Update the properties of a [microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) object.|
+|[Reset to default](../api/ediscovery-casesettings-resettodefault.md)|None|Reset all settings to the default values.|
 
 ## Properties
 

@@ -2,9 +2,10 @@
 title: "enablement enum type"
 description: "Possible values of a property"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.subservice: "intune"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # enablement enum type

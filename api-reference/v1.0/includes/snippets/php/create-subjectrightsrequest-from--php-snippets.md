@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\SubjectRightsRequest;
+use Microsoft\Graph\Generated\Models\SubjectRightsRequestType;
+use Microsoft\Graph\Generated\Models\DataSubjectType;
 use Microsoft\Graph\Generated\Models\DataSubject;
 use Microsoft\Graph\Generated\Models\SubjectRightsRequestAllSiteLocation;
 use Microsoft\Graph\Generated\Models\User;

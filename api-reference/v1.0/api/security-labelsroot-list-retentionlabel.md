@@ -3,8 +3,9 @@ title: "List retentionLabels"
 description: "Get a list of the retentionLabel objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # List retentionLabels
@@ -42,7 +43,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -3,8 +3,9 @@ title: "Get trainingCampaignReportOverview"
 description: "Get an overview of a training campaign."
 author: "akgraph"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # Get trainingCampaignReportOverview

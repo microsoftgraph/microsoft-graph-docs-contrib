@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # alert resource type  (deprecated)
@@ -31,7 +32,7 @@ To learn more, see the sample queries in [Graph Explorer](https://developer.micr
 |[Get alert](../api/alert-get.md) | [alert](alert.md) |Read properties and relationships of an alert object.|
 |[Update alert](../api/alert-update.md) | [alert](alert.md) |Update an alert object. |
 |[List alerts](../api/alert-list.md) | [alert](alert.md) collection |Get an alert object collection.|
-|[Update alerts](../api/alert-updatealerts.md)|[alert](alert.md) collection|Update multiple alert objects.|
+|[Update multiple alerts](../api/alert-updatealerts.md)|[alert](alert.md) collection|Update multiple alert objects.|
 
 ## Properties
 

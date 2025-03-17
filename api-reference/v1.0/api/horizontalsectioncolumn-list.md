@@ -3,8 +3,9 @@ title: 'List horizontalSectionColumns'
 description: 'Get a list of the horizontalSectionColumn objects and their properties.'
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List horizontalSectionColumns
