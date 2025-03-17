@@ -1,7 +1,7 @@
 ---
 title: "Delete organizationalBranding"
 description: "Deletes an organizationalBranding object."
-author: "quievey"
+author: nanguil
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

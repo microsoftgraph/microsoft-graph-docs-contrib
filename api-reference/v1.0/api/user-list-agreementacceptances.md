@@ -33,6 +33,8 @@ GET /me/agreementAcceptances
 GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 ## Optional query parameters
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 

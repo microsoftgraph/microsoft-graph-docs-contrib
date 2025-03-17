@@ -5,14 +5,12 @@ author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
-ms.date: 07/25/2024
+ms.date: 01/09/2025
 ---
 
 # cloudPcProvisioningPolicyAutopatch resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Indicates the Windows Autopatch settings for Cloud PCs using this provisioning policy.
 
