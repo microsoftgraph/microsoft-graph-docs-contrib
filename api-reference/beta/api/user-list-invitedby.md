@@ -40,6 +40,8 @@ GET /me/invitedBy
 GET /users/{userId}/invitedBy
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 ## Request headers
 
 |Name|Description|
