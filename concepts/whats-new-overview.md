@@ -50,8 +50,8 @@ Use the **isEndToEndEncryptionEnabled** property on [onlineMeeting](/graph/api/r
 
 ### Teamwork and communications | Messaging
 
-- [Reply with quote](https://go.microsoft.com/fwlink/?linkid=2310566) to a single chat message or multiple chat messages in a chat.
-- [Forward](https://go.microsoft.com/fwlink/?linkid=2310374) a chat message, a channel message, or a channel message reply to a chat.
+- [Reply with quote](/graph/api/chatmessage-replywithquote?view=graph-rest-beta&preserve-view=true) to a single chat message or multiple chat messages in a chat.
+- [Forward](/graph/api/chatmessage-forwardtochat?view=graph-rest-beta&preserve-view=true) a chat message, a channel message, or a channel message reply to a chat.
 
 ## February 2025: New and generally available 
 
