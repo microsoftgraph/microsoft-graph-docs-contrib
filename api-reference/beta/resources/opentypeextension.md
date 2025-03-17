@@ -29,6 +29,7 @@ The following resource support open extensions:
 <!--+ [administrativeUnit](/graph/api/resources/administrativeunit)-->
 + [contact](/graph/api/resources/contact)
 + [device](/graph/api/resources/device)
++ [driveItem](driveitem.md)
 + [event](/graph/api/resources/event) for both user and group calendars
 + [message](/graph/api/resources/message)
 + [organization](/graph/api/resources/organization)
@@ -37,19 +38,18 @@ The following resource support open extensions:
 + [todoTaskList](todotasklist.md)
 + [baseTaskList](basetasklist.md) (deprecated)
 + [baseTask](basetask.md) (deprecated)
-+ [driveItem](driveitem.md)
 
 > **Note:** \* Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 
 For more information about Microsoft Graph extensibility including limits for open extensions, see [Add custom properties to resources using extensions](/graph/extensibility-overview) and [Add custom data to users using open extensions](/graph/extensibility-open-users).
 
-### DriveItem-specific considerations
+### Drive item-specific considerations
 
-Apply the following limits when you create extension resources on driveItems:
-- Maximum of 100 custom extensions per item/file, totaled from all apps.
-- Maximum of 5 custom extensions per App Id.
-- Maximum of 50 KB size per extension. 
-- Maximum of 50MB for all extensions on all items.
+Apply the following limits when you create extension resources on **driveItem** objects:
+- A maximum of 100 custom extensions per item or file, totaled across all apps.
+- A maximum of five custom extensions per app ID.
+- A maximum size of 50 KB per extension.
+- A maximum of 50 MB for all extensions on all items.
 
 ### Outlook-specific considerations
 
