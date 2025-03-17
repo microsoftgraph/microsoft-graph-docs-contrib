@@ -10,7 +10,7 @@ doc_type: conceptualPageType
 ms.topic: overview
 ms.date: 03/17/2025
 
-#customer intent: As a developer, I want to access and manage user data using Microsoft Graph so that I can build personalized app experiences.
+#customer intent: As a developer, I want to access and manage user data using Microsoft Graph so that I can build personalized app experiences.s
 ---
 
 # Working with users in Microsoft Graph
