@@ -22,7 +22,7 @@ Update an open extension ([openTypeExtension](../resources/opentypeextension.md)
 
 The data in an extension can be primitive types or arrays of primitive types. The operation behaves differently for resources that are directory objects vs other resources.
 
-See the table in the [Permissions](#permissions) section for the list of resources that support open extensions.
+For the list of resources that support open extensions, see the table in the [Permissions](#permissions) section.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -32,20 +32,20 @@ Depending on the resource that the extension was created in and the permission t
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [baseTasklist](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported | Device.ReadWrite.All |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported. | Device.ReadWrite.All |
+| [driveItem](../resources/driveitem.md) | Files.ReadWrite | Files.ReadWrite | Not supported. |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [group](../resources/group.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
-| [group event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
-| [group post](../resources/post.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
+| [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
+| [group event](../resources/event.md) | Group.ReadWrite.All | Not supported. | Not supported. |
+| [group post](../resources/post.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
+| [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported. | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [user](../resources/user.md) | User.ReadWrite | Not supported | User.ReadWrite.All |
-| [driveItem](../resources/driveitem.md) | Files.ReadWrite | Files.ReadWrite | Not supported |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [user](../resources/user.md) | User.ReadWrite | Not supported. | User.ReadWrite.All |
+| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [baseTasklist](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 
 ## HTTP request
 
@@ -303,40 +303,46 @@ Content-Type: application/json
 
 ****
 
-#### Request 3
+### Example 3: Update an open extension on a driveItem
 
-The third example updates an open extension on a driveItem.
+The following example shows how to update an open extension on a **driveItem**.
 
+#### Request
+The following example shows a request.
 <!-- {
-"blockType": "ignored",
+  "blockType": "request",
+  "name": "update_opentypeextension_3",
+  "sampleKeys": [""]
 }-->
 ```http
-PATCH /drive/items/{itemId}/extensions/{extensionId}
+PATCH https://graph.microsoft.com/beta/drive/items/{itemId}/extensions/{extensionId}
+Content-type: application/json
+
 {
-    "extensionName": "newExtensionName",
-    "myCustomString": "Contoso data",
-    "myCustomBool": false
+  "extensionName": "newExtensionName",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
 }
 ```
 
----
+#### Response
 
-#### Response 3
+The following example shows the response that includes the updated **extensionName** in the extension.
 
-Here is the response of the third example which shows the updated `extensionName` in the extension.
-
-<!-- {
-"blockType": "ignored",
-}-->
-
+<!-- {  
+  "blockType": "response",  
+  "truncated": true,  
+  "@odata.type": "microsoft.graph.openTypeExtension"  
+} --> 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
-    "id": "extensionId",
-    "extensionName": "newExtensionName",
-    "myCustomString": "Contoso data",
-    "myCustomBool": false
+  "id": "extensionId",
+  "extensionName": "newExtensionName",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
 }
 ```
 
