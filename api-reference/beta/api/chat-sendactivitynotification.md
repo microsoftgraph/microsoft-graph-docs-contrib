@@ -56,6 +56,7 @@ The following table shows the parameters that can be used with this action.
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|The values for the template variables defined in the activity feed entry corresponding to `activityType` in the [Teams app manifest](/microsoftteams/platform/overview).|
 |recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|The recipient of the notification. For more information, see [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) and [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |
 | teamsAppId         | String                                                       | Optional. The Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra ID app ID are installed for the same recipient user. Avoid sharing Microsoft Entra ID app IDs between Teams apps. |
+| iconId         | String                                                       | Optional. Represents the unique icon Id. This allows apps to send customized icons per activity type. Icon Id's must be present in the teams app manifest schema. |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityURL`:
 
@@ -494,6 +495,59 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 6: Notify the chat members about an event using a custom icon
+
+If you want to notify chat members with a customized icon instead of default app icon, you can set the optional `iconId` in the request body.
+**Note:** `activityType` in manifest must contain the allowedIcon Id's list, in order to use this parameter. The request validation will fail, if the app manifest is missng the customozed icons list. [Teams app manifest](/microsoftteams/platform/overview)
+
+#### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "user_get_region_locale",
+  "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+    },
+   "activityType": "taskCreated",
+    "previewText": {
+      "content": "new task created"
+    },
+    "iconId" : "taskCreatedIcon",
+    "recipient": {
+        "@odata.type": "microsoft.graph.chatMembersNotificationRecipient",
+        "chatId": "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+    },
+    "templateParameters": [
+        {
+            "name": "taskId",
+            "value": "Task 12322"
+        }
+    ] 
+}
+```
 
 #### Response
 

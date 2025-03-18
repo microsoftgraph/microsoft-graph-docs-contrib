@@ -54,6 +54,7 @@ The following table shows the parameters that can be used with this action.
 |previewText|[itemBody](../resources/itembody.md)|The preview text for the notification. Microsoft Teams only shows the first 150 characters.|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|The values for the template variables defined in the activity feed entry corresponding to `activityType` in the [Teams app manifest](/microsoftteams/platform/overview).|
 | teamsAppId         | String                                                       | Optional. The Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra ID app ID are installed for the same recipient user.  Avoid sharing Microsoft Entra ID app IDs between Teams apps. |
+| iconId         | String                                                       | Optional. Represents the unique icon Id. This allows apps to send customized icons per activity type. Icon Id's must be present in the teams app manifest schema. |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:
 
@@ -212,6 +213,56 @@ Content-Type: application/json
 ---
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Notify a user about an event using a custom icon
+
+If you want to notify a user with a customized icon instead of default app icon, you can set the optional `iconId` in the request body.
+**Note:** `activityType` in manifest must contain the allowedIcon Id's list, in order to use this parameter. The request validation will fail, if the app manifest is missng the customozed icons list. [Teams app manifest](/microsoftteams/platform/overview)
+
+#### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "user_get_region_locale",
+  "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Deployment Approvals Channel",
+        "webUrl": "https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000"
+    },
+   "activityType": "announcementPosted",
+    "previewText": {
+      "content": "new announcemnet posted"
+    },
+    "iconId" : "announcementCreated",
+    "templateParameters": [
+        {
+            "name": "deploymentId",
+            "value": "6788662"
+        }
+    ]
+}
+```
+
+#### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

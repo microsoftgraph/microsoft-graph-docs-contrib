@@ -65,6 +65,7 @@ The following table shows the parameters that can be used with this action.
 | templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection      | The values for template variables defined in the activity feed entry corresponding to `activityType` in the [Teams app manifest](/microsoftteams/platform/overview). |
 | teamsAppId         | String                                                       | Optional. The Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra ID app ID are installed for the same recipient user. Avoid sharing Microsoft Entra ID app IDs between Teams apps. |
 | recipients         | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) collection | The recipients of the notification. Only recipients of type [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) are supported. There's an upper limit of 100 recipients in a single request. |
+| iconId         | String                                                       | Optional. Represents the unique icon Id. This allows apps to send customized icons per activity type. Icon Id's must be present in the teams app manifest schema. |
 
 The following resource is supported when setting the `source` value of the **topic** property to `entityUrl`:
 
@@ -265,8 +266,71 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-
-
 ``` http
 HTTP/1.1 202 Accepted
 ```
+
+### Example 3: Notify multiple users about an event using a custom icon
+
+If you want to notify bulk users with a customized icon instead of default app icon, you can set the optional `iconId` in the request body.
+**Note:** `activityType` in manifest must contain the allowedIcon Id's list, in order to use this parameter. The request validation will fail, if the app manifest is missng the customozed icons list. [Teams app manifest](/microsoftteams/platform/overview)
+
+#### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "user_get_region_locale",
+  "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/teamwork/sendActivityNotificationToRecipients
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Deployment Approvals Channel",
+        "webUrl": "https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000"
+    },
+   "activityType": "announcementPosted",
+    "previewText": {
+      "content": "new announcemnet posted"
+    },
+    "iconId" : "announcementCreated",
+    "templateParameters": [
+        {
+            "name": "deploymentId",
+            "value": "6788662"
+        }
+    ],
+    "recipients": [
+    	{
+        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+        	"userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
+    	},
+    	{
+        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+        	"userId": "ab88234e-0874-477c-9638-d144296ed04f"
+    	},
+    	{
+        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+        	"userId": "01c64f53-69aa-42c7-9b7f-9f75195d6bfc"
+    	}
+    ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+```
+
