@@ -19,7 +19,7 @@ Represents information about the network used in a call.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |bandwidthLowEventRatio|Double|Fraction of the call that the media endpoint detected the available bandwidth or bandwidth policy was low enough to cause poor quality of the audio sent.|
-|basicServiceSetIdentifier|String|The wireless LAN basic service set identifier of the media endpoint used to connect to the network.|
+|basicServiceSetIdentifier|String|The wireless LAN basic service set identifier of the media endpoint used to connect to the network. This attribute will not be available if the user has disabled precise location sharing in their operating system or Teams app settings. |
 |connectionType|microsoft.graph.callRecords.networkConnectionType|Type of network used by the media endpoint. Possible values are: `unknown`, `wired`, `wifi`, `mobile`, `tunnel`, `unknownFutureValue`.|
 |delayEventRatio|Double|Fraction of the call that the media endpoint detected the network delay was significant enough to impact the ability to have real-time two-way communication.|
 |dnsSuffix|String|DNS suffix associated with the network adapter of the media endpoint.|
