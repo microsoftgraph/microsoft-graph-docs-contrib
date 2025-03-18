@@ -364,6 +364,9 @@
             "cloudPcGalleryImage",
             "cloudPcProvisioningPolicy",
             "cloudPcUserSetting"
+          ],
+          "complexTypes": [
+            "cloudPcProvisioningPolicyAutopatch"
           ]
         },
         {
