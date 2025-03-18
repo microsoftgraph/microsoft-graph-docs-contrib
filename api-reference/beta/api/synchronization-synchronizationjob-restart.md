@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
-ms.date: 06/22/2024
+ms.date: 03/17/2025
 ---
 
 # Restart synchronizationJob
@@ -30,11 +30,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 `{servicePrincipalId}` refers to the **id** of the service principal object. **id** is referred to as the **Object ID** of the enterprise application in app registrations in the Microsoft Entra admin center.
 
-You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/restart
-POST /servicePrincipals(appId='{appId}')/synchronization/jobs/{jobId}/restart
 ```
 
 ## Request headers
