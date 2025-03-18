@@ -1,14 +1,14 @@
 ---
-title: "Update deviceManagement"
-description: "Update the properties of a deviceManagement object."
+title: "retrieveTenantPerPermissionsScopeTagSetting action"
+description: "This function will return True if the tenant has per permission scope tags enabled or false if the tenant does not have per permission scope tags enabled."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
-ms.date: 10/22/2024
+ms.date: 08/01/2024
 ---
 
-# Update deviceManagement
+# retrieveTenantPerPermissionsScopeTagSetting action
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object.
+This function will return True if the tenant has per permission scope tags enabled or false if the tenant does not have per permission scope tags enabled.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /deviceManagement
+POST /deviceManagement/retrieveTenantPerPermissionsScopeTagSetting
 ```
 
 ## Request headers
@@ -45,42 +45,21 @@ PATCH /deviceManagement
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object.
-
-The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md).
-
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-
-
+Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object in the response body.
+If successful, this action returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement
-Content-type: application/json
-Content-length: 58
-
-{
-  "@odata.type": "#microsoft.graph.deviceManagement"
-}
+POST https://graph.microsoft.com/beta/deviceManagement/retrieveTenantPerPermissionsScopeTagSetting
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 107
-
-{
-  "@odata.type": "#microsoft.graph.deviceManagement",
-  "id": "0b283420-3420-0b28-2034-280b2034280b"
-}
+HTTP/1.1 204 No Content
 ```

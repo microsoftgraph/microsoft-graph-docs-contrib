@@ -1,6 +1,6 @@
 ---
-title: "Get serviceNowConnection"
-description: "Read properties and relationships of the serviceNowConnection object."
+title: "Get endpointPrivilegeManagementProvisioningStatus"
+description: "Read properties and relationships of the endpointPrivilegeManagementProvisioningStatus object."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 08/01/2024
 ---
 
-# Get serviceNowConnection
+# Get endpointPrivilegeManagementProvisioningStatus
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [serviceNowConnection](../resources/intune-servicenowconnectorservice-servicenowconnection.md) object.
+Read properties and relationships of the [endpointPrivilegeManagementProvisioningStatus](../resources/intune-deviceconfig-endpointprivilegemanagementprovisioningstatus.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/serviceNowConnections/{serviceNowConnectionId}
+GET /deviceManagement/endpointPrivilegeManagementProvisioningStatus
 ```
 
 ## Optional query parameters
@@ -51,14 +51,14 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [serviceNowConnection](../resources/intune-servicenowconnectorservice-servicenowconnection.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [endpointPrivilegeManagementProvisioningStatus](../resources/intune-deviceconfig-endpointprivilegemanagementprovisioningstatus.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/serviceNowConnections/{serviceNowConnectionId}
+GET https://graph.microsoft.com/beta/deviceManagement/endpointPrivilegeManagementProvisioningStatus
 ```
 
 ### Response
@@ -66,22 +66,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 637
+Content-Length: 237
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.serviceNowConnection",
-    "id": "315bc12c-c12c-315b-2cc1-5b312cc15b31",
-    "instanceUrl": "https://example.com/instanceUrl/",
-    "incidentApiUrl": "https://example.com/incidentApiUrl/",
-    "authenticationMethod": {
-      "@odata.type": "microsoft.graph.serviceNowOauthSecretAuthentication",
-      "appId": "App Id value"
-    },
-    "serviceNowConnectionStatus": "enabled",
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "lastQueriedDateTime": "2017-01-01T00:00:30.0527314-08:00"
+    "@odata.type": "#microsoft.graph.endpointPrivilegeManagementProvisioningStatus",
+    "id": "49a26797-6797-49a2-9767-a2499767a249",
+    "licenseType": "paid",
+    "onboardedToMicrosoftManagedPlatform": true
   }
 }
 ```

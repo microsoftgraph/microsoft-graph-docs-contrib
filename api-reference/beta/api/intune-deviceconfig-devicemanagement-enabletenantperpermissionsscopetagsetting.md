@@ -1,6 +1,6 @@
 ---
-title: "Delete serviceNowConnection"
-description: "Deletes a serviceNowConnection."
+title: "enableTenantPerPermissionsScopeTagSetting action"
+description: "This action will enable per permissions scope tag on the tenant."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 08/01/2024
 ---
 
-# Delete serviceNowConnection
+# enableTenantPerPermissionsScopeTagSetting action
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Deletes a [serviceNowConnection](../resources/intune-servicenowconnectorservice-servicenowconnection.md).
+This action will enable per permissions scope tag on the tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /deviceManagement/serviceNowConnections/{serviceNowConnectionId}
+POST /deviceManagement/enableTenantPerPermissionsScopeTagSetting
 ```
 
 ## Request headers
@@ -48,14 +48,14 @@ DELETE /deviceManagement/serviceNowConnections/{serviceNowConnectionId}
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `204 No Content` response code.
+If successful, this action returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/serviceNowConnections/{serviceNowConnectionId}
+POST https://graph.microsoft.com/beta/deviceManagement/enableTenantPerPermissionsScopeTagSetting
 ```
 
 ### Response

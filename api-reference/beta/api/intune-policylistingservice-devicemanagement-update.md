@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [deviceManagement](../resources/intune-servicenowconnectorservice-devicemanagement.md) object.
+Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -45,18 +45,17 @@ PATCH /deviceManagement
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-servicenowconnectorservice-devicemanagement.md) object.
+In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
-The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-servicenowconnectorservice-devicemanagement.md).
+The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-shared-devicemanagement.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String||
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-servicenowconnectorservice-devicemanagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-shared-devicemanagement.md) object in the response body.
 
 ## Example
 
@@ -77,10 +76,9 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 107
+Content-Length: 58
 
 {
-  "@odata.type": "#microsoft.graph.deviceManagement",
-  "id": "0b283420-3420-0b28-2034-280b2034280b"
+  "@odata.type": "#microsoft.graph.deviceManagement"
 }
 ```
