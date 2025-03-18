@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
-ms.date: 09/12/2024
+ms.date: 08/01/2024
 ---
 
 # devicePlatformType enum type
@@ -34,3 +34,4 @@ Supported platform types.
 |androidMobileApplicationManagement|10|Indicates device platform type associated with Mobile Application Management (MAM) for android devices.|
 |iOSMobileApplicationManagement|11|Indicates device platform type associated with Mobile Application Management (MAM) for iOS devices.|
 |unknownFutureValue|12|Evolvable enumeration sentinel value. Do not use.|
+|windowsMobileApplicationManagement|13|Indicates device platform type associated with Mobile Application Management (MAM) for Windows devices.|
