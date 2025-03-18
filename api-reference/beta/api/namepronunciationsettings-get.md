@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/admin/people/namePronunciation
 
 ---
 
-
 ### Response
 
 The following example shows the response.
