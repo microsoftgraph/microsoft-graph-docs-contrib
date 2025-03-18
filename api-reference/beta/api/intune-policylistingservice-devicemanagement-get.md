@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [deviceManagement](../resources/intune-servicenowconnectorservice-devicemanagement.md) object.
+Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -51,7 +51,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [deviceManagement](../resources/intune-servicenowconnectorservice-devicemanagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [deviceManagement](../resources/intune-shared-devicemanagement.md) object in the response body.
 
 ## Example
 
@@ -66,12 +66,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 130
+Content-Length: 79
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceManagement",
-    "id": "0b283420-3420-0b28-2034-280b2034280b"
+    "@odata.type": "#microsoft.graph.deviceManagement"
   }
 }
 ```
