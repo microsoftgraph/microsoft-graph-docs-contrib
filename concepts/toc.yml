@@ -882,9 +882,9 @@ items:
     items:
       - name: Overview
         href: sharepoint-concept-overview.md
+        displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
       - name: Using app folder in OneDrive and SharePoint
         href: appfolder.md
-        displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
   - name: Tasks and plans
     items:
     - name: Overview
