@@ -605,7 +605,7 @@ items:
       displayName: files, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
     - name: Addressing drive items
       href: onedrive-addressing-driveitems.md
-    - name: Using AppFolder in OneDrive and SharePoint
+    - name: Using app folder in OneDrive and SharePoint
       href: appfolder.md
   - name: Financials (preview)
     href: dynamics-business-central-concept-overview.md
@@ -880,11 +880,11 @@ items:
         href: security-ediscovery-appauthsetup.md
   - name: Sites and lists
     items:
-      - name: harePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
+      - name: Overview
         href: sharepoint-concept-overview.md
-      - name: Using AppFolder in OneDrive and SharePoint
+      - name: Using app folder in OneDrive and SharePoint
         href: appfolder.md
-    displayName: S
+        displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
   - name: Tasks and plans
     items:
     - name: Overview
