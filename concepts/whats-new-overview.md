@@ -29,7 +29,7 @@ Use the **autopatch** property on [cloudPcProvisioningPolicy](/graph/api/resourc
 
 ### Microsoft Graph connector
 
-The management of Microsoft Graph connectors in the Microsoft Teams admin center will deprecate on April 14, 2025. Going forward, you can manage Microsoft Graph connectors from the **Search & intelligence** section in the [Microsoft 365 admin center](/microsoftsearch/manage-connector).
+The management of Microsoft Graph connectors in the Microsoft Teams admin center will be deprecated on April 14, 2025. Going forward, you can manage Microsoft Graph connectors from the **Search & intelligence** section in the [Microsoft 365 admin center](/microsoftsearch/manage-connector).
 
 ### Teamwork and communications | Calls and online meetings
 
