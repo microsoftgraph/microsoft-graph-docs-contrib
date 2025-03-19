@@ -303,12 +303,9 @@ Content-Type: application/json
 
 ****
 
-### Example 3: Update an open extension on a driveItem
-
+#### Request 3
 The following example shows how to update an open extension on a **driveItem**.
 
-#### Request
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_opentypeextension_3",
@@ -325,7 +322,9 @@ Content-type: application/json
 }
 ```
 
-#### Response
+---
+
+#### Response 3
 
 The following example shows the response that includes the updated **extensionName** in the extension.
 
@@ -360,5 +359,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

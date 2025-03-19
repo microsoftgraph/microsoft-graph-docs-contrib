@@ -697,14 +697,12 @@ Content-type: application/json
 }
 
 ```
+
 ****
 
-### Example 6: Create an extension on an existing driveItem
+### Request 6
 
-The following example shows how to create an extension on a **driveItem**.
-
-#### Request
-The following example shows a request.
+The following example shows how to create an extension on an existing **driveItem**.
 <!-- {
   "blockType": "request",
   "name": "post_opentypeextension_6",
@@ -721,7 +719,9 @@ Content-type: application/json
 }
 ```
 
-#### Response
+---
+
+### Response 6
 
 The following example shows the response, including the properties of the new **driveItem**
 and the following for the new extension:
@@ -749,12 +749,11 @@ Content-type: application/json
 }
 ```
 
-### Example 7: Create a new driveItem with an open extension
+****
+
+### Request 7
 
 The following example shows how to create a **driveItem** and an open extension for the **driveItem**.
-
-#### Request
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "post_opentypeextension_7",
@@ -777,7 +776,9 @@ Content-type: application/json
 }
 ```
 
-#### Response
+---
+
+### Response 7
 
 The following example shows the response, including properties of the new **driveItem** and the following for the new extension:
 

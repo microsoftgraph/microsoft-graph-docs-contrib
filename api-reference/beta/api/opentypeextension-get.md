@@ -676,12 +676,12 @@ HTTP/1.1 200 OK
 
 ```
 
-### Example 6: Get a driveItem and expand its extensions using a filter
+****
+
+#### Request 6
 
 The following example shows how to get a **driveItem** and expand its extensions using a filter. The filter returns the extension with an ID that matches a fully qualified name.
 
-#### Request
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_6",
@@ -691,7 +691,10 @@ The following example shows a request.
 GET /drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ?$expand=extensions($filter=id eq 'myCustomExtension')
 ```
 
-#### Response
+---
+
+#### Response 6
+
 The following example shows the response.
 <!-- {
   "blockType": "response",
