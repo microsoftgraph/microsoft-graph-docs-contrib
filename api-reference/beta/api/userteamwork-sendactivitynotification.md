@@ -236,7 +236,7 @@ The following is an example of the request.
   "name": "user_get_region_locale",
   "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
 Content-Type: application/json
 

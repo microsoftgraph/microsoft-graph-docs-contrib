@@ -696,7 +696,7 @@ The following is an example of the request.
   "name": "user_get_region_locale",
   "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
 Content-Type: application/json
 

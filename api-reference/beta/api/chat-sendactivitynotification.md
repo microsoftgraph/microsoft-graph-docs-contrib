@@ -522,7 +522,7 @@ The following is an example of the request.
   "name": "user_get_region_locale",
   "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2/sendActivityNotification
 Content-Type: application/json
 
