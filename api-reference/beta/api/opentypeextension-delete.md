@@ -147,6 +147,25 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
+## Example
+### Request
+The third example references an extension by its name and deletes the
+extension on the specified driveItem.
+
+```http
+DELETE https://graph.microsoft.com/beta/drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ/extensions/Com.Contoso.Referral
+```
+
+### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

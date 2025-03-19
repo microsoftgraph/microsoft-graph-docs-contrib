@@ -684,7 +684,7 @@ The sixth example gets and expands the specified driveItem by including the exte
 "blockType": "ignored",
 }-->
 ```http
-GET /drive/items/{itemID}?$expand=extensions($filter=id eq 'myCustomExtension')
+GET /drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ?$expand=extensions($filter=id eq 'myCustomExtension')
 ```
 
 ### Response 6

@@ -46,10 +46,10 @@ For more information about Microsoft Graph extensibility including limits for op
 ### DriveItem-specific considerations
 
 Apply the following limits when you create extension resources on driveItems:
-- Maximum of 100 custom extensions per item/file, totaled from all apps.
-- Maximum of 5 custom extensions per App Id.
-- Maximum of 50 KB size per extension. 
-- Maximum of 50MB for all extensions on all items.
+- A maximum of 100 custom extensions per item, totaled across all apps.
+- A maximum of 5 custom extensions per App Id.
+- A maximum size of 50 KB per extension. 
+- A maximum total size of 50 MB for all extensions across all items.
 
 ### Outlook-specific considerations
 
