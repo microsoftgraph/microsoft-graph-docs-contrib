@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP Request
 
-`{servicePrincipalId}` refers to the **id** of the service principal object. **id** is referred to as the **Object ID** of the enterprise application in app registrations in the Microsoft Entra admin center.
+`{servicePrincipalId}` refers to the **id** of the service principal object. 
 
 <!-- { "blockType": "ignored" } -->
 ```http
