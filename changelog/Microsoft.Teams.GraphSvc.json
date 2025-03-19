@@ -2609,6 +2609,90 @@
       "CreatedDateTime": "2025-03-07T08:54:28.4245939Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "43533428-1f93-4e01-88b7-cd1fcf496211",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Change",
+          "Description": "Added API support in Azure China 21Vianet.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "43533428-1f93-4e01-88b7-cd1fcf496211",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Change",
+          "Description": "Added API support in Azure China 21Vianet.",
+          "Target": "chat"
+        },
+        {
+          "Id": "43533428-1f93-4e01-88b7-cd1fcf496211",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Change",
+          "Description": "Added API support in Azure China 21Vianet.",
+          "Target": "team"
+        },
+        {
+          "Id": "43533428-1f93-4e01-88b7-cd1fcf496211",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotificationToRecipients",
+          "ChangeType": "Change",
+          "Description": "Added API support in Azure China 21Vianet.",
+          "Target": "teamwork"
+        }
+      ],
+      "Id": "43533428-1f93-4e01-88b7-cd1fcf496211",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-03-19T08:54:28.4245939Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "87e9c9c0-f16f-4777-8513-35f5c9c2545c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Change",
+          "Description": "Added API support in Azure China 21Vianet.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "87e9c9c0-f16f-4777-8513-35f5c9c2545c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Change",
+          "Description": "Added API support in Azure China 21Vianet.",
+          "Target": "chat"
+        },
+        {
+          "Id": "87e9c9c0-f16f-4777-8513-35f5c9c2545c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Change",
+          "Description": "Added API support in Azure China 21Vianet.",
+          "Target": "team"
+        },
+        {
+          "Id": "87e9c9c0-f16f-4777-8513-35f5c9c2545c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotificationToRecipients",
+          "ChangeType": "Change",
+          "Description": "Added API support in Azure China 21Vianet.",
+          "Target": "teamwork"
+        }
+      ],
+      "Id": "87e9c9c0-f16f-4777-8513-35f5c9c2545c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-19T08:54:28.4245939Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }

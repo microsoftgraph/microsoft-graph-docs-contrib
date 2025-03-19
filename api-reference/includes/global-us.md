@@ -9,4 +9,4 @@ This API is available in the following [national cloud deployments](/graph/deplo
 
 | Global service     | US Government L4   | US Government L5 (DOD) | China operated by 21Vianet |
 |--------------------|--------------------|------------------------|----------------------------|
-| :white_check_mark: | :white_check_mark: | :white_check_mark:     | :x:                        |
+| :white_check_mark: | :white_check_mark: | :white_check_mark:     | :white_check_mark:         |
