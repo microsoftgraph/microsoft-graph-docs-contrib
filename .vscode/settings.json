@@ -25,6 +25,5 @@
             ],
             "url": "https://raw.githubusercontent.com/microsoftgraph/msgraph-toc-gen/main/schema/toc.mapping.schema.json"
           }
-    ],
-    "markdown.validate.enabled": true
+    ]
 }
