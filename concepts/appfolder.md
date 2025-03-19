@@ -27,9 +27,9 @@ GET /{drive_Resource}/special/approot
 > [!IMPORTANT]
 > The name `approot` is case sensitive.
 
-The first time you request the folder, it's created if it doesn't exist. All special folders are created within the target drive with the path `Apps/{EntraId application name}`, which means that if your application is called "My Amazing App", the resulting path within the drive is `Apps/My Amazing App`.
+The first time you request the folder, it is created if it doesn't exist. All special folders are created within the target drive with the path `Apps/{EntraId application name}`, which means that if your application is called "My Amazing App", the resulting path within the drive is `Apps/My Amazing App`.
 
-The response is a drive item that represents the folder, with both the folder and specialFolder facets present. This allows you to perform all expected operations on the folder of your application, including uploading files, listing children, and sharing contained files.
+The response is a drive item that represents the folder, with both the folder and specialFolder facets present. This drive item allows you to perform all expected operations on the folder of your application, including uploading files, listing children, and sharing contained files.
 
 ```JSON
 {
@@ -76,7 +76,7 @@ App folder also uses minimal permissions to save files that are covered in detai
 
 ## Security
 
-Creating secure applications is critical for building trust. Often, SharePoint or OneDrive applications have broad permissions, which can be limited using [SharePoint application permissions](./permissions-selected-overview.md), but this limitation requires configuration and high privileges to assign. With app folder, no additional work is needed once the application is consented to use `Files.ReadWrite.AppFolder`. The service automatically limits access to a single folder, ensuring your application only has access to files within that folder.
+Creating secure applications is critical for building trust. Often, SharePoint or OneDrive applications have broad permissions, which can be limited using [SharePoint application permissions](./permissions-selected-overview.md), but this limitation requires configuration and high privileges to assign. With app folder, no extra work is needed once the application is consented to use `Files.ReadWrite.AppFolder`. The service automatically limits access to a single folder, ensuring your application only has access to files within that folder.
 
 > [!NOTE] 
 > A user always has full control of their own OneDrive and can add or remove files from your app folder. If a user adds a file to the folder, your application gains access to that file. The control is on the folder, not on individual files uploaded by your application.
@@ -85,7 +85,7 @@ Also, `Files.ReadWrite.AppFolder` is supported in both delegated and application
 
 ### Delegated
 
-The most common use of app folder is delegated authentication to store information in the user's OneDrive. This approach intersects the user's permissions with the application's, ensuring that a user can only write to their own OneDrive and only to the app folder.
+The most common use of app folder is delegated authentication to store information in the user's OneDrive. This approach intersects the user's permissions with those of the application, ensuring that a user can only write to their own OneDrive and only to the app folder.
 
 ### Application only
 
