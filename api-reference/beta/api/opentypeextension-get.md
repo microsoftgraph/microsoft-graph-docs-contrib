@@ -36,20 +36,20 @@ Depending on the resource that contains the extension and the permission type (d
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [baseTaskList](../resources/basetasklist.md) (deprecated)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [device](../resources/device.md) | Directory.Read.All | Not supported | Device.ReadWrite.All |
+| [device](../resources/device.md) | Directory.Read.All | Not supported. | Device.ReadWrite.All |
+| [driveItem](../resources/driveitem.md) | Files.Read | Files.Read | Not supported. |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
-| [group event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
-| [group post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
+| [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
+| [group event](../resources/event.md) | Group.Read.All | Not supported. | Not supported. |
+| [group post](../resources/post.md) | Group.Read.All | Not supported. | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
-| [organization](../resources/organization.md) | User.Read | Not supported | Organization.Read.All |
+| [organization](../resources/organization.md) | User.Read | Not supported. | Organization.Read.All |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [user](../resources/user.md) | User.Read | Not supported | User.Read.All |
-| [driveItem](../resources/driveitem.md) | Files.Read | Files.Read | Not supported |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [user](../resources/user.md) | User.Read | Not supported. | User.Read.All |
+| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [baseTaskList](../resources/basetasklist.md) (deprecated)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 
 ## HTTP request
 
@@ -675,40 +675,46 @@ HTTP/1.1 200 OK
 }
 
 ```
----
 
-### Request 6
-The sixth example gets and expands the specified driveItem by including the extension returned from a filter. The filter returns the extension that has its id matching a fully qualified name.
+### Example 6: Get a driveItem and expand its extensions using a filter
 
+The following example shows how to get a **driveItem** and expand its extensions using a filter. The filter returns the extension with an ID that matches a fully qualified name.
+
+#### Request
+The following example shows a request.
 <!-- {
-"blockType": "ignored",
+  "blockType": "request",
+  "name": "get_opentypeextension_6",
+  "sampleKeys": [""]
 }-->
 ```http
 GET /drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ?$expand=extensions($filter=id eq 'myCustomExtension')
 ```
 
-### Response 6
+#### Response
+The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
-    "name": "New Folder",
-    "folder": {},
-    "@microsoft.graph.conflictBehavior": "rename",
-    "extensions": [
-        {
-            "id": "myCustomExtension",
-            "extensionName": "myCustomExtension",
-            "myCustomString": "Contoso data",
-            "myCustomBool": false
-        }
-    ]
+  "name": "New Folder",
+  "folder": {},
+  "@microsoft.graph.conflictBehavior": "rename",
+  "extensions": [
+    {
+      "id": "myCustomExtension",
+      "extensionName": "myCustomExtension",
+      "myCustomString": "Contoso data",
+      "myCustomBool": false
+    }
+  ]
 }
 ```
 
