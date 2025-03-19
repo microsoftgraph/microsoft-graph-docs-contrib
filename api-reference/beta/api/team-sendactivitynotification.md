@@ -694,7 +694,7 @@ If you want to notify a team with a customized icon instead of the default app i
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_beta_e6",
+  "name": "team_sendactivitynotification_beta_e8",
   "sampleKeys": ["e8bece96-d393-4b9b-b8da-69cedef1a7e7"]
 }-->
 ```http
