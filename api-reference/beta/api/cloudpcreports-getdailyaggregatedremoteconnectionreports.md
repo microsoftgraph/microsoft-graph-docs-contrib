@@ -79,7 +79,7 @@ Content-length: 199
 {
     "filter" : "CloudPcId eq '5db15afe-025d-4f1b-b43a-d0554b63ffff' and RoundTripTimeInMsP50 lt 100 and EventDateTime gt 2022-06-01 ", 
     "search" : "abc0907", 
-    "select" : ["EventDateTime", "CloudPcId", "ManagedDeviceName", "UsageInHour", "RoundTripTimeInMsP50", "AvailableBandwidthInMBpsP50", "RemoteSignInTimeInSecP50", "UserPrincipalName"],
+    "select" : ["EventDateTime", "CloudPcId", "ManagedDeviceName", "UsageInHour", "RoundTripTimeInMsP50", "AvailableBandwidthInMbpsP50", "RemoteSignInTimeInSecP50", "UserPrincipalName"],
     "skip": "0",
     "top": "25"
 }
@@ -144,7 +144,7 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         },
         {
-            "Column": "AvailableBandwidthInMBpsP50",
+            "Column": "AvailableBandwidthInMbpsP50",
             "PropertyType": "Double"
         },
         {

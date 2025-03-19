@@ -364,6 +364,9 @@
             "cloudPcGalleryImage",
             "cloudPcProvisioningPolicy",
             "cloudPcUserSetting"
+          ],
+          "complexTypes": [
+            "cloudPcProvisioningPolicyAutopatch"
           ]
         },
         {
@@ -386,6 +389,7 @@
             "printerShare"
           ],
           "complexTypes": [
+            "airPrintSettings",
             "appIdentity",
             "archivedPrintJob",
             "identity",
@@ -400,6 +404,7 @@
             "printTaskStatus",
             "printerCapabilities",
             "printerDefaults",
+            "printerDiscoverySettings",
             "printerLocation",
             "printerShareViewpoint",
             "printerStatus",
@@ -1493,6 +1498,14 @@
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
             "microsoft.graph.security.ediscoveryReviewTag"
+          ],
+          "childNodes": [
+            {
+              "name": "eDiscovery review set",
+              "resources": [
+                "microsoft.graph.security.ediscoveryReviewSetQuery"
+              ]
+            }
           ]
         },
         {

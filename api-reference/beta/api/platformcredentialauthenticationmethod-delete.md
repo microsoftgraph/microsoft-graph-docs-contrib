@@ -42,6 +42,8 @@ To delete your own Platform Credential authentication method:
 DELETE /me/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 To delete your own or another user's Platform Credential authentication method:
 <!-- { "blockType": "ignored" } -->
 ``` http

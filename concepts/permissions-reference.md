@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 02/10/2025
+ms.date: 03/17/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -838,6 +838,50 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Read and write user and shared calendars |
 | Description | - | Allows the app to create, read, update and delete events in all calendars in the organization user has permissions to access. This includes delegate and shared calendars. |
 | AdminConsentRequired | - | No |
+
+---
+
+### CallDelegation.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 305b375b-00fe-48bf-81bc-e8d78954c1b6 |
+| DisplayText | - | Read delegation settings |
+| Description | - | Allows the app to read delegation settings of you |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### CallDelegation.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 5aa33e77-b893-495e-bdc5-4bf6f27d42a0 | - |
+| DisplayText | Read delegation settings | - |
+| Description | Allows the app to read delegation settings of you | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### CallDelegation.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 599abf67-f72b-4b5f-98a3-cb38fe646118 |
+| DisplayText | - | Read and write delegation settings |
+| Description | - | Allows the app to read and write delegation settings of you |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### CallDelegation.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 8d06abce-e69b-4122-ba60-4f901bb1db2f | - |
+| DisplayText | Read and write delegation settings | - |
+| Description | Allows the app to read and write delegation settings of you | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -2512,6 +2556,50 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### EngagementConversation.Migration.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e1d2136d-eaaf-427a-a7db-f97dbe847c27 | - |
+| DisplayText | Read and write all Viva Engage conversations | - |
+| Description | Allows the app to create Viva Engage conversations without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### EngagementRole.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 9f1da0fc-345c-4dfb-bab5-5215a073a417 |
+| DisplayText | - | Read a user's Viva Engage roles  |
+| Description | - | Allows the app to list a user's Viva Engage roles, on behalf of the signed-in user. |
+| AdminConsentRequired | - | No |
+
+---
+
+### EngagementRole.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 30614864-4114-45ef-bdd9-0dd7894a1cc4 | 3cad91a5-8413-4c4a-acfe-dfeb83d1366d |
+| DisplayText | Read all Viva Engage roles and role memberships | Read all Viva Engage roles and role memberships |
+| Description | Allows the app to list all Viva Engage roles and role memberships without a signed-in user. | Allows the app to list all Viva Engage roles and role memberships on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### EngagementRole.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 3ede5358-7366-4da8-a2f7-472bf9c7cc34 | 4905982d-6459-4ccd-949c-949fefc0a8f2 |
+| DisplayText | Modify Viva Engage role membership | Modify Viva Engage role membership |
+| Description | Allows the app to assign Viva Engage role to a user, and remove a Viva Engage role from a user without a signed-in user. | Allows the app to assign Viva Engage role to a user, and remove a Viva Engage role from a user behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### EntitlementManagement.Read.All
 
 | Category | Application | Delegated |
@@ -3471,6 +3559,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### LicenseAssignment.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e2f98668-2877-4f38-a2f4-8202e0717aa1 | f395577a-0960-456b-979f-7228de0c5996 |
+| DisplayText | Read all license assignments. | Read all license assignments. |
+| Description | Allows an app to read license assignments for users and groups, without a signed-in user. | Allows an app to read license assignments for users and groups, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | No |
+
+---
+
 ### LicenseAssignment.ReadWrite.All
 
 | Category | Application | Delegated |
@@ -3478,6 +3577,83 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 5facf0c1-8979-4e95-abcf-ff3d079771c0 | f55016cc-149c-447e-8f21-7cf3ec1d6350 |
 | DisplayText | Manage all license assignments | Manage all license assignments |
 | Description | Allows an app to manage license assignments for users and groups, without a signed-in user. | Allows an app to manage license assignments for users and groups, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### LifecycleWorkflows-CustomExt.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 2cb19e7d-9012-40bf-9a22-69fc776af8b0 | 2973a298-1d69-4f87-8d30-7025f0ec19d7 |
+| DisplayText | Read all Lifecycle workflows custom task extensionss | Read all Lifecycle workflows custom task extensions |
+| Description | Allows the app to read all Lifecycle workflows custom task extensions without a signed-in user. | Allows the app to read all Lifecycle workflows custom task extensions on behalf of a signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### LifecycleWorkflows-CustomExt.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 3351c766-bacc-4d93-94fa-f2c8b1986ee7 | ef6bafb1-3019-4a22-a332-103aff92225f |
+| DisplayText | Read and write all Lifecycle workflows custom task extensions | Read and write all Lifecycle workflows custom task extensions |
+| Description | Allows the app to create, update, list, read and delete all Lifecycle workflows custom task extensions without a signed-in user. | Allows the app to create, update, list, read and delete all Lifecycle workflows custom task extensions on behalf of a signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### LifecycleWorkflows-Reports.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | fe615156-48b5-4c83-b613-e6e31a43c446 | 4d3d7f81-163f-426a-8432-5638d2e82083 |
+| DisplayText | Read all Lifecycle workflows reports | Read all Lifecycle workflows reports |
+| Description | Allows the app to read all Lifecycle workflows reports without a signed-in user. | Allows the app to read all Lifecycle workflows reports on behalf of a signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### LifecycleWorkflows-Workflow.Activate
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 3a87a643-13d2-47aa-8d6a-b0a8377cb03b | df1c25b3-072c-45cd-8403-c63441e4cca1 |
+| DisplayText | Run workflows on-demand in Lifecycle workflows | Run workflows on-demand in Lifecycle workflows |
+| Description | Allows the app run workflows on-demand without a signed-in user. | Allows the app to run workflows on-demand on behalf of a signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### LifecycleWorkflows-Workflow.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 03b0ad3e-fc2b-4ef1-b0ff-252e865cb608 | 7fabe5bd-2e47-4e61-b924-327117024e18 |
+| DisplayText | Read all workflows in Lifecycle workflows | Read all workflows in Lifecycle workflows |
+| Description | Allows the app to list and read all workflows and tasks without a signed-in user. | Allows the app to list and read all workflows and tasks on behalf of a signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### LifecycleWorkflows-Workflow.ReadBasic.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 021ea6db-c06b-45c6-8c9c-c1cd9a37a483 | 789c445d-433c-4575-a1fc-367a58a1bd4a |
+| DisplayText | List all workflows in Lifecycle workflows | List all workflows in Lifecycle workflows |
+| Description | Allows the app to list all workflows without a signed-in user. | Allows the app to list all workflows on behalf of a signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### LifecycleWorkflows-Workflow.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 94c88098-1d9d-4c42-a356-4d5a95312554 | 29e49f0c-a053-4cc5-a4b1-7da0c8c1e643 |
+| DisplayText | Read and write all workflows in Lifecycle workflows | Read and write all workflows in Lifecycle workflows |
+| Description | Allows the app to create, update, list, read and delete all workflows and tasks in lifecycle workflows without a signed-in user. | Allows the app to create, update, list, read and delete all workflows and tasks in lifecycle workflows on behalf of a signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6082,6 +6258,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Sites.Archive.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e3530185-4080-478c-a4ab-39322704df58 | - |
+| DisplayText | Archive/reactivate Site Collections without a signed in user. | - |
+| Description | Allow the application to archive/reactivate site collections without a signed in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### Sites.FullControl.All
 
 | Category | Application | Delegated |
@@ -7158,6 +7345,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Allow the Teams app to manage only its own tabs for all users | - |
 | Description | Allows a Teams app to read, install, upgrade, and uninstall its own tabs for any user, without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
+
+---
+
+### TeamsTelephoneNumber.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 39b17d18-680c-41f4-b9c2-5f30629e7cb6 | 1bc6eab1-058d-4557-b011-d4c41cec88b7 |
+| DisplayText | Read Tenant-Acquired Telephone Number Details | Read Tenant-Acquired Telephone Number Details |
+| Description | Allows the app to read your tenant's acquired telephone number details, without a signed-in user. Acquired telephone numbers may include attributes related to assigned object, emergency location, network site, etc. | Allows the app to read your tenant's acquired telephone number details on behalf of the signed-in admin user. Acquired telephone numbers may include attributes related to assigned object, emergency location, network site, etc. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### TeamsTelephoneNumber.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 0a42382f-155c-4eb1-9bdc-21548ccaa387 | 424b07a8-1209-4d17-9fe4-9018a93a1024 |
+| DisplayText | Read and Modify Tenant-Acquired Telephone Number Details | Read and Modify Tenant-Acquired Telephone Number Details |
+| Description | Allows the app to read your tenant's acquired telephone number details, without a signed-in user. Acquired telephone numbers may include attributes related to assigned object, emergency location, network site, etc. | Allows the app to read and modify your tenant's acquired telephone number details on behalf of the signed-in admin user. Acquired telephone numbers may include attributes related to assigned object, emergency location, network site, etc. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 

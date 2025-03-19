@@ -50,6 +50,8 @@ Retrieve details of your own phone authentication method.
 GET /me/authentication/phoneMethods/{phoneMethodId}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Retrieve details of your own or another user's phone authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http
