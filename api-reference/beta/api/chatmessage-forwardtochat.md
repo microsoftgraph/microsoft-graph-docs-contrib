@@ -64,7 +64,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |additionalMessage|[chatMessage](../resources/chatmessage.md)|Message body of the forwarded message. |
-|messageIds|String collection|List of message IDs in a chat that are replied to with a quote. Currently, only one message ID is supported.|
+|messageIds|String collection|List of message IDs in a chat or channel that are being forwarded. Currently, only one message ID is supported.|
 |targetChatIds|String collection|List of target chat IDs where a message can be forwarded. Currently, only one target chat ID is supported.|
 
 ## Response
