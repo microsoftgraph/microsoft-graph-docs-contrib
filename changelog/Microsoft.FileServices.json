@@ -4171,38 +4171,12 @@
           "ChangeType": "Addition",
           "Description": "Added the **extensions** relationship to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
           "Target": "driveItem"
-        },
-        {
-          "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
-          "ApiChange": "Resource",
-          "ChangedApiName": "extension",
-          "ChangeType": "Addition",
-          "Description": "Added the [extension](https://learn.microsoft.com/en-us/graph/api/resources/extension?view=graph-rest-beta) resource.",
-          "Target": "extension"
         }
       ],
       "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-03-19T18:23:42.5437381Z",
-      "WorkloadArea": "Files",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "33c4bb52-4dcc-49da-bbbb-cb35536985a6",
-          "ApiChange": "Resource",
-          "ChangedApiName": "flexSchemaContainer",
-          "ChangeType": "Addition",
-          "Description": "Added the [flexSchemaContainer](https://learn.microsoft.com/en-us/graph/api/resources/flexSchemaContainer?view=graph-rest-1.0) resource.",
-          "Target": "flexSchemaContainer"
-        }
-      ],
-      "Id": "33c4bb52-4dcc-49da-bbbb-cb35536985a6",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2025-03-19T18:23:42.5437423Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     }
