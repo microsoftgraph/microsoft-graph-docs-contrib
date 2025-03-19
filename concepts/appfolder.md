@@ -10,7 +10,7 @@ ms.date: 03/14/2025
 
 # Using app folder in OneDrive and SharePoint
 
-The *App Folder* is one of the [special folders](../api-reference/v1.0/api/drive-get-specialfolder.md) exposed through the `/special` path in OneDrive and SharePoint. Primarily designed as a place to store application settings in a user's OneDrive, it can be applied to many scenarios. This article discusses the App Folder, security, and how you can use it in your applications.
+The *App Folder* is one of the [special folders](/graph/api/drive-get-specialfolder) exposed through the `/special` path in OneDrive and SharePoint. Primarily designed as a place to store application settings in a user's OneDrive, it can be applied to many scenarios. This article discusses the app folder, security, and how you can use it in your applications.
 
 Supported by a dedicated scope, `Files.ReadWrite.AppFolder`, you can build consistent least-privilege applications to share data across device experiences.
 
@@ -21,7 +21,7 @@ To get started, you need a Microsoft Entra ID application consented to the `File
 To access an app folder, you make a Microsoft Graph call to:
 
 ```HTTP
-GET /{drive resource}/special/approot
+GET /{drive_Resource}/special/approot
 ```
 
 > [!IMPORTANT]
@@ -70,7 +70,7 @@ The previous request creates an `Apps` folder at the root of the library with a 
 
 Another key advantage of app folders is isolation. The files of your application are stored in a unique location to ensure they don't clutter up a user's OneDrive or get accidentally deleted. Creating an app folder allows you a safe space to keep application-specific files outside the root OneDrive folder structure, keeping things cleaner for users.
 
-App folder works across OneDrive for Business and OneDrive Commercial, ensuring you can provide a consistent experience for all your users.
+App folder works across OneDrive and OneDrive Commercial, ensuring you can provide a consistent experience for all your users.
 
 App folder also uses minimal permissions to save files that are covered in detail in the next section.
 
