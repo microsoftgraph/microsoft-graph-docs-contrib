@@ -711,7 +711,7 @@ The following example shows a request.
   "sampleKeys": [""]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/drive/items/{itemId}/extensions
+POST https://graph.microsoft.com/beta/drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ/extensions
 Content-type: application/json
 
 {
@@ -761,7 +761,7 @@ The following example shows a request.
   "sampleKeys": [""]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/drive/items/{itemId}/children
+POST https://graph.microsoft.com/beta/drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ/children
 Content-type: application/json
 
 {

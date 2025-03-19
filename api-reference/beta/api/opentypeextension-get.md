@@ -704,15 +704,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "name": "New Folder",
-  "folder": {},
-  "@microsoft.graph.conflictBehavior": "rename",
-  "extensions": [
+  "@odata.context": "https://graph.microsoft.com/beta/drive/items",
+  "value": [
     {
-      "id": "myCustomExtension",
-      "extensionName": "myCustomExtension",
-      "myCustomString": "Contoso data",
-      "myCustomBool": false
+      "name": "New Folder",
+      "folder": {},
+      "@microsoft.graph.conflictBehavior": "rename",
+      "extensions": [
+        {
+          "id": "myCustomExtension",
+          "extensionName": "myCustomExtension",
+          "myCustomString": "Contoso data",
+          "myCustomBool": false
+        }
+      ]
     }
   ]
 }

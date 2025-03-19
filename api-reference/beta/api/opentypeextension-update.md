@@ -315,7 +315,7 @@ The following example shows a request.
   "sampleKeys": [""]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/drive/items/{itemId}/extensions/{extensionId}
+PATCH https://graph.microsoft.com/beta/drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ/extensions/Com.Contoso.Estimate
 Content-type: application/json
 
 {
