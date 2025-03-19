@@ -81,7 +81,7 @@ Creating secure applications is critical for building trust. Often, SharePoint o
 > [!NOTE] 
 > A user always has full control of their own OneDrive and can add or remove files from your app folder. If a user adds a file to the folder, your application gains access to that file. The control is on the folder, not on individual files uploaded by your application.
 
-Also, `Files.ReadWrite.AppFolder` is supported in both delegated and application-only authentication. Using it with delegated patterns is ideal for accessing user files, and application patterns allow for processing information stored in folders created by the application.
+Also, `Files.ReadWrite.AppFolder` is supported in both delegated and application-only authentication patters. Using it with delegated patterns is ideal for accessing user files, and application patterns allow for processing information stored in folders created by the application.
 
 ### Delegated
 
@@ -93,17 +93,15 @@ With application permissions, the application can access all app folders associa
 
 ## Other considerations
 
-With the use of the app folder, you have some other considerations to keep in mind when you decide on the right solution.
+With the use of the app folder, you have some other considerations to keep in mind when you decide on the right solution:
 
-Firstly, the app folder counts against quota—either a user's OneDrive quota or the usage quota of a SharePoint site. Placing large files in the app folder may cause issues for your users. The app folder is ideal for storing configuration files, temporary storage, or drafts.
-
-Next, consider your expected user experience. If users need to access these files frequently or interact with them outside your application, `Files.ReadWrite` or `Files.ReadWrite.All` may be better options, allowing you to present a save-as experience and giving users the ability to choose where to store their files.
-
-Finally, remember that a user can delete, edit, or replace any file within their own OneDrive. Although it's unlikely, your application should account for this possibility and not blindly trust these files or expect them to always exist. Applications with access to the full OneDrive can also access the app folder files; be mindful of the types of information you're storing.
+- The app folder counts against quota—either a user's OneDrive quota or the usage quota of a SharePoint site. Placing large files in the app folder might cause issues for your users. The app folder is ideal for storing configuration files, temporary storage, or drafts.
+- Consider your expected user experience. If users need to access these files frequently or interact with them outside your application, `Files.ReadWrite` or `Files.ReadWrite.All` might be better options, allowing you to present a save-as experience and giving users the ability to choose where to store their files.
+- Remember that a user can delete, edit, or replace any file within their own OneDrive. Although it's unlikely, your application should account for this possibility and not rely on these files or expect them to always exist. Applications with access to the full OneDrive can also access the app folder files; be mindful of the types of information you're storing.
 
 ## Scenarios
 
-Many scenarios can immediately benefit from using the capabilities of the app folder and least-privilege access to read/write files. We've included some ideas to get you started - how will you use AppFolders?
+Many scenarios can immediately benefit from using the capabilities of the app folder and least-privilege access to read/write files. The following scenarios provide examples to get you started with app folders:
 
 ### User configuration
 
