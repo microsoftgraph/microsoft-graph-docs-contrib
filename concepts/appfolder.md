@@ -49,47 +49,47 @@ The response is a drive item that represents the folder, with both the folder an
 
 ## App folder advantages
 
-By using an app folder, you gain several benefits depending on the scenario, with the main advantage being the ability to easily access the folder via a constant path. For example, to access a user's app folder, you can always use `https://{graph}/me/special/approot`, without the need to track IDs or paths for individual users.
+An app folder offers several benefits, depending on the scenario, with the main advantage being the ability to easily access the folder via a constant path. For example, to access a user's app folder, you can always use `https://{graph}/me/special/approot`, without the need to track IDs or paths for individual users.
 
-App folder doesn't just work for OneDrive; you can also use it with any drive resource, including SharePoint libraries. In this case, you need a full path to the drive, using the drive ID.
+App folder doesn't just work for OneDrive; you can also use it with any drive resource, including SharePoint libraries. In this case, you need the full path to the drive, using the drive ID.
 
 ```http
-GET /drives/{drive id}/special/approot
+GET /drives/{drive_Id}/special/approot
 ```
 
-Sites also have a default drive. Use the following request URL to access it.
+Sites also have a default drive. Use the following request URL to access it:
 
 ```http
-GET /sites/{site id}/drive/special/approot
+GET /sites/{site_Id}/drive/special/approot
 ```
 
 > [!NOTE] 
-> It's possible, however rare, that the default drive for a site may no longer exist. Your application should account for this possibility.
+> It's possible, however rare, that the default drive for a site might no longer exist. Your application should account for this possibility.
 
-This previous request creates an `Apps` folder at the root of the library with a folder inside using your the name of your application.
+The previous request creates an `Apps` folder at the root of the library with a folder inside, named after your application.
 
-Another key advantage of app folders is isolation. The files of your application are stored in a unique location to ensure they don't clutter up a user's OneDrive, or accidentally get deleted. Creating an app folder allows you a safe space to keep application-specific files outside the root OneDrive folder structure, keeping things cleaner for users.
+Another key advantage of app folders is isolation. The files of your application are stored in a unique location to ensure they don't clutter up a user's OneDrive or get accidentally deleted. Creating an app folder allows you a safe space to keep application-specific files outside the root OneDrive folder structure, keeping things cleaner for users.
 
-App folder also works across OneDrive and OneDrive Commercial, ensuring you can provide a consistent experience for all your users.
+App folder works across OneDrive for Business and OneDrive Commercial, ensuring you can provide a consistent experience for all your users.
 
-And finally, app folder uses minimal permissions to save files, discussed in detail in the next section.
+App folder also uses minimal permissions to save files that are covered in detail in the next section.
 
 ## Security
 
-Creating secure applications is critical for building trust. Often SharePoint or OneDrive applications have broad permissions, which can be limited using [SharePoint Application Permissions](./permissions-selected-overview.md). But requires configuration and high-privledge to assign. Using AppFolder no other work is required once the application is consented to use `Files.ReadWrite.AppFolder`. The service automatically limits access to a single folder. Ensuring your application only ever has access to files within that folder.
+Creating secure applications is critical for building trust. Often, SharePoint or OneDrive applications have broad permissions, which can be limited using [SharePoint application permissions](./permissions-selected-overview.md), but this limitation requires configuration and high privileges to assign. With app folder, no additional work is needed once the application is consented to use `Files.ReadWrite.AppFolder`. The service automatically limits access to a single folder, ensuring your application only has access to files within that folder.
 
-> [!NOTE]
-> A user always has full control of their own OneDrive, and can add or remove files to your app folder. If a user adds a file to the folder, your application gains access to that file. The control is on the folder, not on individual files uploaded by your application.
+> [!NOTE] 
+> A user always has full control of their own OneDrive and can add or remove files from your app folder. If a user adds a file to the folder, your application gains access to that file. The control is on the folder, not on individual files uploaded by your application.
 
-And rember, `Files.ReadWrite.AppFolder` is supported in both delegated and application-only calling. Using it with delegated patterns is best for accessing user files, and application patterns allow for processing of information stored in folders the application creates.
+Also, `Files.ReadWrite.AppFolder` is supported in both delegated and application-only authentication. Using it with delegated patterns is ideal for accessing user files, and application patterns allow for processing information stored in folders created by the application.
 
 ### Delegated
 
-The most common use for AppFolder is delegated authentication to store information in user's OneDrives. This intersects the user's permissions with the application's ensuring that a user can only write to their own OneDrive, and only to the appfolder.
+The most common use of app folder is delegated authentication to store information in the user's OneDrive. This approach intersects the user's permissions with the application's, ensuring that a user can only write to their own OneDrive and only to the app folder.
 
 ### Application only
 
-With application permissions the application can access all appfolders associated with itself. As there is no user present, the `/me/drive/special/approot` path is unavailable and you must use `/drives/{drive id}/special/approot` to access user's OneDrives.
+With application permissions, the application can access all app folders associated with itself. Because no user is present, the `/me/drive/special/approot` path is unavailable, and you must use `/drives/{drive id}/special/approot` to access the user's OneDrive.
 
 ## Other considerations
 
