@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new **qrPin** object when you add a temporary PIN or reset the standard PIN for a user's [QR Code authentication method](../resources/qrcodepinauthenticaitonmethod.md) object.
+Create a new **qrPin** object when you add a temporary PIN or reset the standard PIN for a user's [QR Code authentication method](../resources/qrcodepinauthenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

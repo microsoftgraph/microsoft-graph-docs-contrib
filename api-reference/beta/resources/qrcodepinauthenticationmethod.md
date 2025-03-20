@@ -52,7 +52,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethod",
-  "id": "String (identifier)",
+  "id": "String (identifier)"
 }
 ```
 

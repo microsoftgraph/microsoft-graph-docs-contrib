@@ -4225,6 +4225,7 @@ Possible values for user account types (group membership), per Windows definitio
 | federatedSingleFactor |
 | federatedMultiFactor |
 | unknownFutureValue |
+| qrCodePin |
 
 ### baseAuthenticationMethod values
 
