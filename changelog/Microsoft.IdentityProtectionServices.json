@@ -1283,6 +1283,32 @@
       "CreatedDateTime": "2024-12-03T08:55:37.2663572Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "96a2d49c-1770-4d86-a785-7d1e32e37340",
+          "ApiChange": "Property",
+          "ChangedApiName": "globalSecureAccessFilteringProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the **globalSecureAccessFilteringProfile** property to the [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessSessionControls"
+        },
+        {
+          "Id": "96a2d49c-1770-4d86-a785-7d1e32e37340",
+          "ApiChange": "Resource",
+          "ChangedApiName": "globalSecureAccessFilteringProfileSessionControl",
+          "ChangeType": "Addition",
+          "Description": "Added the [globalSecureAccessFilteringProfileSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/globalSecureAccessFilteringProfileSessionControl?view=graph-rest-beta) resource.",
+          "Target": "globalSecureAccessFilteringProfileSessionControl"
+        }
+      ],
+      "Id": "96a2d49c-1770-4d86-a785-7d1e32e37340",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-13T22:42:04.556026Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
