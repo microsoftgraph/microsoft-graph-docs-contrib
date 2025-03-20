@@ -27,7 +27,7 @@ GET /{drive_Resource}/special/approot
 > [!IMPORTANT]
 > The name `approot` is case sensitive.
 
-The first time you request the folder, it is created if it doesn't exist. All special folders are created within the target drive with the path `Apps/{EntraId application name}`, which means that if your application is called "My Amazing App", the resulting path within the drive is `Apps/My Amazing App`.
+The first time you request the folder, it is created if it doesn't exist. All special folders are created within the target drive with the path `Apps/{Entra ID application name}`, which means that if your application is called "My Amazing App", the resulting path within the drive is `Apps/My Amazing App`.
 
 The response is a [driveItem](/graph/api/resources/driveitem) that represents the folder, with both the [folder](/graph/api/resources/folder) and [specialFolder](/graph/api/resources/specialfolder) facets present. This drive item allows you to perform all expected operations on the folder of your application, including uploading files, listing children, and sharing contained files.
 
@@ -101,7 +101,7 @@ With the use of the app folder, you have some other considerations to keep in mi
 
 ## Scenarios
 
-Many scenarios can immediately benefit from using the capabilities of the app folder and least-privilege access to read/write files. The following scenarios provide examples to get you started with app folders:
+Many scenarios can immediately benefit from using the capabilities of the app folder and least-privilege access to read/write files. The following scenarios provide examples to get you started with app folders.
 
 ### User configuration
 
