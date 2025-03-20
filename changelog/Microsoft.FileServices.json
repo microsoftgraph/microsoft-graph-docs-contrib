@@ -4184,7 +4184,7 @@
           "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
           "ApiChange": "Method",
           "ChangedApiName": "openTypeExtension",
-          "ChangeType": "Addition",
+          "ChangeType": "Change",
           "Description": "Enabled [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) as a supported resource for the [delete](https://learn.microsoft.com/en-us/graph/api/opentypeextension-delete?view=graph-rest-beta) operation of the [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) resource.",
           "Target": "openTypeExtension"
         },
@@ -4192,7 +4192,7 @@
           "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
           "ApiChange": "Method",
           "ChangedApiName": "openTypeExtension",
-          "ChangeType": "Addition",
+          "ChangeType": "Change",
           "Description": "Enabled [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) as a supported resource for the [get](https://learn.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-beta) operation of the [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) resource.",
           "Target": "openTypeExtension"
         },
@@ -4200,7 +4200,7 @@
           "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
           "ApiChange": "Method",
           "ChangedApiName": "openTypeExtension",
-          "ChangeType": "Addition",
+          "ChangeType": "Change",
           "Description": "Enabled [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) as a supported resource for the [create](https://learn.microsoft.com/en-us/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta) operation of the [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) resource.",
           "Target": "openTypeExtension"
         },
@@ -4208,7 +4208,7 @@
           "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
           "ApiChange": "Method",
           "ChangedApiName": "openTypeExtension",
-          "ChangeType": "Addition",
+          "ChangeType": "Change",
           "Description": "Enabled [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) as a supported resource for the [update](https://learn.microsoft.com/en-us/graph/api/opentypeextension-update?view=graph-rest-beta) operation of the [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) resource.",
           "Target": "openTypeExtension"
         }
