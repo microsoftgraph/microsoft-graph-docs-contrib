@@ -1,6 +1,6 @@
 ---
 title: "Using AppFolder in OneDrive and SharePoint"
-description: "Learn how and when to use appfolder along with guidance "
+description: "Learn how to use the app folder in OneDrive and SharePoint for secure application settings and data storage with Microsoft Graph."
 author: "patrick-rodgers"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
@@ -14,7 +14,7 @@ Supported by a dedicated scope, `Files.ReadWrite.AppFolder`, you can build consi
 
 ## Access AppFolder
 
-To get started, you need an EntraId application consented to the Files.ReadWrite.AppFolder scope. Both application and delegated are supported as needed for your scenario.
+To get started, you need an EntraId application consented to the Files.ReadWrite.AppFolder scope. Both application and delegated permissions are supported as needed for your scenario.
 
 To access an app folder, you make a Microsoft Graph call to:
 
@@ -27,14 +27,14 @@ GET {drive resource}/special/approot
 
 The first time you request the folder it is created if it does not exist. All special folders are created within the target drive with the path `Apps/{EntraId application name}` - meaning if your application is called "My Amazing App" the resulting path within the drive is `Apps/My Amazing App`.
 
-What you get back is a drive item representing the folder, with both the folder and specialFolder facets present. This means that you can perform all the expected operations to your application's folder. These include uploading files, listing children, and sharing contained files.
+What you get back is a drive item representing the folder, with both the [folder](/graph/api/resources/folder) and [specialFolder](/graph/api/resources/specialfolder) facets present. This means that you can perform all the expected operations to your application's folder. These include uploading files, listing children, and sharing contained files.
 
 ```JSON
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('{user id}')/drive/special/$entity",
-    "id": "{folder id}",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('c9d6a7bd-c1e0-4cb6-bf3c-48bf6dc571ad')/drive/special/$entity",
+    "id": "692b2511-cca3-487d-b972-e6487bba0aff",
     "lastModifiedDateTime": "2023-12-12T19:33:45Z",
-    "webUrl": "https://{tenant}-my.sharepoint.com/personal/{user path}/Documents/Apps/{app name}",
+    "webUrl": "https://contoso-my.sharepoint.com/personal/someone_contoso_com/Documents/Apps/MyApp",
     "size": 0,
     "folder": {
         "childCount": 0
@@ -67,7 +67,7 @@ This call creates an `Apps` folder at the root of the library with a folder insi
 
 Another key advantage of app folders is isolation. Your application's files are stored in a unique location to ensure they don't clutter up a user's OneDrive, or accidentally get deleted. Creating an appfolder allows you a safe space to keep application-specific files outside the root OneDrive folder structure, keeping things cleaner for users.
 
-AppFolder also works across OneDrive and OneDrive Commercial, ensuring you can provide a consistent experience for all your users.
+AppFolder also works across OneDrive for work or school and OneDrive for home, ensuring you can provide a consistent experience for all your users.
 
 And finally, appfolder uses minimal permissions to save files, discussed in detail in the next section.
 
