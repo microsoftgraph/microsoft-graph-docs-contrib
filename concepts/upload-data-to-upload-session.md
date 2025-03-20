@@ -37,7 +37,7 @@ The request body is a binary blob containing the bytes of the document that are 
 
 ```http
 PUT https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
-Content-Range: bytes=0-72796/4533322
+Content-Range: bytes 0-72796/4533322
 Content-Length: 72797
 
 <bytes 0-72796 of the file>
