@@ -62,6 +62,10 @@ Use the **isEndToEndEncryptionEnabled** property on [onlineMeeting](/graph/api/r
 - [Forward](/graph/api/chatmessage-forwardtochat?view=graph-rest-beta&preserve-view=true) a chat message, a channel message, or a channel message reply to a chat.
 - Use the `<codeblock><code></code></codeblock>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody?view=graph-rest-beta&preserve-view=true) resource to represent a code block in the message body in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true)
 
+### Security
+
+- Added **customDetails** property to security alerts [Get and Update](/graph/api/resources/security-alert)
+
 ## February 2025: New and generally available 
 
 ### Device and app management | Cloud printing
