@@ -12,7 +12,7 @@ ms.date: 08/06/2024
 
 Namespace: microsoft.graph
 
-Add an owner to an [application](../resources/application.md). Currently, only individual users are supported as owners of applications.
+Add an owner to an [application](../resources/application.md). Application owners can be individual users, the associated service principal, or another service principal.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

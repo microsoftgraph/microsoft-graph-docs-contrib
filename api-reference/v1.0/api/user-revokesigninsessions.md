@@ -1,6 +1,6 @@
 ---
 title: "user: revokeSignInSessions"
-description: "Invalidates all the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time."
+description: "Invalidates all the user's refresh tokens issued to applications (and session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time."
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -13,12 +13,12 @@ ms.date: 04/17/2024
 
 Namespace: microsoft.graph
 
-Invalidates all the refresh tokens issued to applications for a user (as well as session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device. This operation prevents access to the organization's data through applications on the device by requiring the user to sign in again to all applications that they have previously consented to, independent of device.
+Invalidates all the refresh tokens issued to applications for a user (and session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device. This operation prevents access to the organization's data through applications on the device by requiring the user to sign in again to all applications that they consented to previously, independent of device.
 
 >If the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error. If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
 >[!NOTE]
->After calling **revokeSignInSessions**, there might be a small delay of a few minutes before tokens are revoked.
+>After you call **revokeSignInSessions**, there might be a small delay of a few minutes before tokens are revoked.
 >
 >This API doesn't revoke sign-in sessions for external users, because external users sign in through their home tenant.
 

@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
-ms.date: 10/15/2024
+ms.date: 08/01/2024
 ---
 
 # cloudCertificationAuthorityLeafCertificateStatus enum type
@@ -21,8 +21,8 @@ Enum type of possible leaf certificate statuses. These statuses indicate whether
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Default. Unknown or invalid status.|
-|active|1|Certificate is active, indicating it is in its validity period and not revoked.|
-|revoked|2|Certificate has been revoked by its issuing certification authority.|
-|expired|3|Certificate has expired.|
-|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+|unknown|0||
+|active|1||
+|revoked|2||
+|expired|3||
+|unknownFutureValue|4||

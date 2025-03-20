@@ -97,7 +97,6 @@ POST https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM/permanentDele
 
 ---
 
-
 ### Response
 
 The following example shows the response.

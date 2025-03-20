@@ -19,20 +19,32 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## March 2025: New and generally available
 
+### Applications
+
+Updated the Microsoft Entra built-in role required to [perform a new bulk upload](/graph/api/synchronization-synchronizationjob-post-bulkupload). Going forward, admin users can use the User Administrator role instead of the Global Administrator role to invoke this API.
+
 ### Device and app management | Cloud PC
 
 Use the **autopatch** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy) to get or set specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC.
 
+### Microsoft Graph connector
+
+The management of Microsoft Graph connectors in the Microsoft Teams admin center will be deprecated on April 14, 2025. Going forward, you can manage Microsoft Graph connectors from the **Search & intelligence** section in the [Microsoft 365 admin center](/microsoftsearch/manage-connector).
+
 ### Teamwork and communications | Calls and online meetings
 
 - Updated the throttling thresholds for the [callRecord](/graph/api/resources/callrecords-callrecord), [participant](/graph/api/resources/callrecords-participant), and [session](/graph/api/resources/callrecords-session) resources. The limit per call record changed from 10 requests to 40 requests per 20 seconds for all pages, and the limit for list call records changed from 15 requests to 40 requests per 20 seconds for all pages.
-- The **basicServiceSetIdentifier** property of the [networkInfo](/graph/api/resources/callrecords-networkinfo) resource isn't available if the user disables precise location sharing in their operating system or Microsoft Teams app settings.
+- The **basicServiceSetIdentifier** property on [networkInfo](/graph/api/resources/callrecords-networkinfo) isn't available if the user disables precise location sharing in their operating system or Microsoft Teams app settings.
 
 ### Teamwork and communications | Messaging
 
 Use the **firstChannelName** property on a [team](/graph/api/resources/team) to set the name of the first channel created in a team.
 
 ## March 2025: New in preview only
+
+### Applications
+
+Updated the Microsoft Entra built-in role required to [perform a new bulk upload](/graph/api/synchronization-synchronizationjob-post-bulkupload?view=graph-rest-beta&preserve-view=true). Going forward, admin users can use the User Administrator role instead of the Global Administrator role to invoke this API.
 
 ### Device and app management | Cloud PC
 
@@ -49,6 +61,7 @@ Use the **isEndToEndEncryptionEnabled** property on [onlineMeeting](/graph/api/r
 
 - [Reply with quote](/graph/api/chatmessage-replywithquote?view=graph-rest-beta&preserve-view=true) to a single chat message or multiple chat messages in a chat.
 - [Forward](/graph/api/chatmessage-forwardtochat?view=graph-rest-beta&preserve-view=true) a chat message, a channel message, or a channel message reply to a chat.
+- Use the `<codeblock><code></code></codeblock>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody?view=graph-rest-beta&preserve-view=true) resource to represent a code block in the message body in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true)
 
 ## February 2025: New and generally available 
 
