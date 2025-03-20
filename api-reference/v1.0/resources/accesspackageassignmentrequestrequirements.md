@@ -41,6 +41,7 @@ The following JSON representation shows the resource type.
   "allowCustomAssignmentSchedule": "Boolean",
   "isApprovalRequiredForAdd": "Boolean",
   "isApprovalRequiredForUpdate": "Boolean",
+  "isRequestorJustificationRequired": "Boolean",
   "policyDisplayName": "String",
   "policyDescription": "String",
   "policyId": "String",

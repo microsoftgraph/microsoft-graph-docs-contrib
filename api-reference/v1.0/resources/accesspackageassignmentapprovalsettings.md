@@ -35,6 +35,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.accessPackageAssignmentApprovalSettings",
   "isApprovalRequiredForAdd": "Boolean",
   "isApprovalRequiredForUpdate": "Boolean",
+  "isRequestorJustificationRequired": "Boolean",
   "stages": [
     {
       "@odata.type": "microsoft.graph.accessPackageApprovalStage"
