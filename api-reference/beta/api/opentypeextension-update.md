@@ -68,7 +68,7 @@ PATCH /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 PATCH /users/me/todo/lists/{listId}/extensions/{extensionId}
 PATCH /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 PATCH /users/me/tasks/lists/{listId}/extensions/{extensionId}
-PATCH drive/items/{itemId}/extensions/{extensionId}
+PATCH /drive/items/{itemId}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to update an extension in it. 

@@ -45,7 +45,7 @@ For more information about Microsoft Graph extensibility including limits for op
 
 ### Drive item-specific considerations
 
-Apply the following limits when you create extension resources on driveItems:
+Apply the following limits when you create extension resources on driveItem objects:
 - A maximum of 100 custom extensions per item totaled across all apps.
 - A maximum of five custom extensions per app ID.
 - A maximum size of 50 KB per extension.
