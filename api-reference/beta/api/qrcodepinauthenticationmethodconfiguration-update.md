@@ -54,7 +54,7 @@ PATCH /policies/authenticationmethodspolicy/authenticationmethodconfigurations/q
 |state|authenticationMethodState| Whether the policy is enabled or disabled. Inherited from [microsoft.authMethodPolicy.authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`.|
 |excludeTargets|[microsoft.graph.excludeTarget](../resources/excludetarget.md) collection|Users or groups excluded from using the QR code authentication method by policy. Inherited from [microsoft.authMethodPolicy.authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 |standardQRCodeLifetimeInDays|Int32|Configured lifetime of standard QR code for all enabled users. Default is 365 days and maximum allowed lifetime is 395 days.|
-|pinLength|Int32|Default and minimum length is 8 digit. Max. allowed is upto 20 digits.|
+|pinLength|Int32|Default and minimum length is 8 digit. Max. allowed is up to 20 digits.|
 
 ## Response
 
