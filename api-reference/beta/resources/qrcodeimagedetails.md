@@ -1,6 +1,6 @@
 ---
 title: "qrCodeImageDetails resource type"
-description: "Represents raw image content of QR code"
+description: "Represents the raw image content of a QR code."
 author: "Aanjusingh"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents raw image content of QR code. 
+Represents the raw image content of a [QR code](../resources/qrcode.md).
 
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|binaryValue|Binary|binaryValue of QR code.|
+|binaryValue|Binary|The binary representation of the QR code.|
 |errorCorrectionLevel|errorCorrectionLevel|The possible values are: `l`, `m`, `q`, `h`, `unknownFutureValue`.|
-|rawContent|Binary|Base64-encoded rawContent of QR code.|
+|rawContent|Binary|Base64-encoded raw content of the QR code.|
 |version|Int32|version to create QR code image.|
 
 ## Relationships

@@ -1,6 +1,6 @@
 ---
 title: "qrPin resource type"
-description: "Represents PIN of the user"
+description: "Represents the PIN for the user in a QR code authentication method."
 author: "AanjuSingh"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
@@ -14,15 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents PIN of the user. Admin creates temporary PIN of the user and user is required to change the PIN during sign-in. User needs to request admin to reset their PIN. Admin can reset the PIN by creating a new temporary PIN.
+Represents the PIN for the user in a [QR code authentication method](../resources/qrcodepinauthenticationmethod.md). When the user is registered for the QR code authentication method, they get a temporary PIN which they are required to change during the initial sign-in. Self-service PIN reset isn't supported. Only admins can reset the user's PIN by creating a new temporary PIN.
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Reset PIN](../api/qrpin-update.md)|[qrPin](../resources/qrpin.md)|Resets a user's PIN by creating a new qrPIN object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|code|String|PIN of the user. It is between 8-20 digits as configured in auth method policy. Temporary when issued by admin and permanent after user changes at first login attempt. PIN can be reset|
+|code|String|PIN of the user. It is between 8-20 digits as configured in the [QR code authentication method policy](../resources/qrcodepinauthenticationmethodconfiguration.md). The code is temporary when issued by admin but permanent after the user changes it at the first login attempt. This PIN can be reset by the admin but not the user.|
 |createdDateTime|DateTimeOffset|The date and time when the PIN was created.|
-|forceChangePinNextSignIn|Boolean|Default true when temporary Pin is created. |
-|updatedDateTime|DateTimeOffset|The date and time when the Pin was updated.|
+|forceChangePinNextSignIn|Boolean|Defaults to `true` for a temporary PIN. |
+|updatedDateTime|DateTimeOffset|The date and time when the PIN was updated.|
 
 ## Relationships
 None.

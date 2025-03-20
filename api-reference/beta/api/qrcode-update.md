@@ -14,18 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of standard qrCode object. The only editable property is expireDateTime.
+Update the properties of a standard qrCode object. Only the **expireDateTime** property can be updated.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
 <!-- {
   "blockType": "permissions",
   "name": "qrcode-update-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcode-update-permissions.md)]
+
+[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
 
 ## HTTP request
 
@@ -34,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /me/authentication/qrcodepinmethod/standardQRCode
 PATCH /users/{id}/authentication/qrcodepinmethod/standardQRCode
 ```
 
@@ -50,7 +52,7 @@ PATCH /users/{id}/authentication/qrcodepinmethod/standardQRCode
 
 |Property|Type|Description|
 |:---|:---|:---|
-|expireDateTime|DateTimeOffset|It is a mandatory attribute. QR code will be expired and becomes unusable based on set expireDateTime. Max. lifetime of standard QR code is upto 395 days and temporary QR code is upto 12 hours. It can be modified for standard QR code later upto max. lifetime but can't be modified for temporary QR code. |
+|expireDateTime|DateTimeOffset| The QR code expires and becomes unusable based on this property's value. This property can be modified for a standard QR code up to the maximum lifetime of 395 days from the **createdDateTime** value but can't be modified for a temporary QR code. |
 
 ## Response
 
@@ -67,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH /users/{id}/authentication/qrcodepinmethod/standardQRCode
+PATCH https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrcodepinmethod/standardQRCode
 Content-Type: application/json
 
 {

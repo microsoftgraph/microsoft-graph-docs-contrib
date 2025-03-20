@@ -18,7 +18,7 @@ Read the properties and relationships of a qrCode object.
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcode-get-permissions.md)]
 
+[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -34,13 +36,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+GET /me/authentication/qrcodepinmethod/standardQRCode
 GET /users/{id}/authentication/qrcodepinmethod/standardQRCode
+GET /me/authentication/qrcodepinmethod/temporaryQRCode
 GET /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters.
 
 ## Request headers
 
@@ -67,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /users/{id}/authentication/qrcodepinmethod/standardQRCode
+GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrcodepinmethod/standardQRCode
 ```
 
 
@@ -89,13 +93,11 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.qrCode",
     "id": "cb960eac-7a22-1979-ec68-1ec73264ae8d",
-    "expireDateTime": "String (timestamp)",
-    "startDateTime": "String (timestamp)",
-    "createdDateTime": "String (timestamp)",
-    "lastUsedDateTime": "String (timestamp)",
-    "image": {
-      "@odata.type": "microsoft.graph.qrCodeImageDetails"
-    }
+    "expireDateTime": "2025-01-22T12:00:00Z",
+    "startDateTime": "2024-02-01T00:00:00Z",
+    "createdDateTime": "2024-02-01T19:58:51.2210909Z",
+    "lastUsedDateTime": "0001-01-01T00:00:00Z",
+    "image": null
   }
 }
 ```

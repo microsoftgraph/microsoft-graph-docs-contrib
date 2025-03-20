@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a qrCode object. You can delete standard or temporary QR code using this api.
+Delete a standard or temporary **qrCode** object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
-
 [!INCLUDE [permissions-table](../includes/permissions/authentication-delete-qrcodepinmethod-permissions.md)]
+
+[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
 
 ## HTTP request
 
@@ -30,7 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+DELETE /me/authentication/qrcodepinmethod/standardQRCode
 DELETE /users/{id}/authentication/qrcodepinmethod/standardQRCode
+DELETE /me/authentication/qrcodepinmethod/temporaryQRCode
 DELETE /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 ```
 
@@ -59,14 +61,14 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE /users/{id}/authentication/qrcodepinmethod/standardQRCode
+DELETE https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrcodepinmethod/standardQRCode
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

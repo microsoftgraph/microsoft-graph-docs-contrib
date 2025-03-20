@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethodconfiguration-update-permissions.md)]
 
+[!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -58,7 +60,7 @@ PATCH /policies/authenticationmethodspolicy/authenticationmethodconfigurations/q
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [qrCodePinAuthenticationMethodConfiguration](../resources/qrcodepinauthenticationmethodconfiguration.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [qrCodePinAuthenticationMethodConfiguration](../resources/qrcodepinauthenticationmethodconfiguration.md) object in the response body.
 
 ## Examples
 

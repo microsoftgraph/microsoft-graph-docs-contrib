@@ -19,14 +19,14 @@ Create a new standard or temporary qrCode object. A user can have only one activ
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
-
 <!-- {
   "blockType": "permissions",
   "name": "qrcodepinauthenticationmethod-update-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-update-permissions.md)]
+
+[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
 
 ## HTTP request
 
@@ -74,7 +74,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH /users/{id}/authentication/qrcodepinmethod/standardQRCode
+PATCH https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrcodepinmethod/standardQRCode
 Content-Type: application/json
 
 {

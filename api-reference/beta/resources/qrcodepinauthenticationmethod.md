@@ -25,11 +25,6 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |[Get](../api/qrcodepinauthenticationmethod-get.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Read the properties and relationships of a user's qrCodePinAuthenticationMethod object.|
 |[Create](../api/authentication-put-qrcodepinmethod.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Create a user's new qrCodePinAuthenticationMethod object.|
 |[Delete](../api/authentication-delete-qrcodepinmethod.md)|None|Delete a user's qrCodePinAuthenticationMethod object.|
-|[Create a Standard or Temporary QR code](../api/qrcodepinauthenticationmethod-patch-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a user's new standard or temporary qrCode object.|
-|[Get a Standard or Temporary QR code](../api/qrcode-get.md)|[qrCode](../resources/qrcode.md)|Get a user's standard or temporary qrCode object.|
-|[Update a Standard QR code](../api/qrcode-update.md)|[qrCode](../resources/qrcode.md)|Update a user's standard qrCode object.|
-|[Delete a Standard or Temporary QR code](../api/qrcode-delete.md)|None|Delete a user's standardQRCode or temporary qrCode object.|
-|[Reset PIN](../api/qrpin-update.md)|[qrPin](../resources/qrpin.md)|Resets a user's PIN by creating a new qrPIN object.|
 
 
 ## Properties
@@ -37,11 +32,15 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time when the QR code auth was created. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 |id|String|The identifier of the QR code auth added to this user. Inherited from [authenticationMethod](../resources/authenticationmethod.md). Inherits from [entity](../resources/entity.md)|
-|isUsable|Boolean|The state of the authentication method that indicates whether it's currently usable by the user. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
-|methodUsabilityReason|String|Details about the usability state (isUsable). Reasons can include: EnabledByPolicy, DisabledByPolicy, Expired, NotYetValid, OneTimeUsed. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
+|isUsable|Boolean|The state of the authentication method that indicates whether it's currently usable by the user.|
+|methodUsabilityReason|String|Details about the usability state (isUsable). Reasons can include: `EnabledByPolicy`, `DisabledByPolicy`, `Expired`, `NotYetValid`, `OneTimeUsed`. |
 
 ## Relationships
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|pin|[qrPin](../resources/qrpin.md)|**TODO: Add Description**|
+|standardQRCode|[qrCode](../resources/qrcode.md)|**TODO: Add Description**|
+|temporaryQRCode|[qrCode](../resources/qrcode.md)|**TODO: Add Description**|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -58,16 +57,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethod",
   "id": "String (identifier)",
   "isUsable": "Boolean",
-  "methodUsabilityReason": "String",
-  "standardQRCode": {
-    "@odata.type": "microsoft.graph.qrCode"
-  },
-  "temporaryQRCode": {
-    "@odata.type": "microsoft.graph.qrCode"
-  },
-  "pin": {
-    "@odata.type": "microsoft.graph.qrPin"
-  },
+  "methodUsabilityReason": "String"
 }
 ```
 

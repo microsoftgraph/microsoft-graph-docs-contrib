@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a user's single [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object.
+Retrieve a user's [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,6 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-get-permissions.md)]
 
+[!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -35,12 +37,13 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /me/authentication/qrcodepinmethod
 GET /users/{id}/authentication/qrcodepinmethod
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters.
 
 ## Request headers
 
@@ -54,7 +57,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object in the response body. If the user hasn't registered a QR Code authentication method, the request returns a `404 Not Found` error code.
 
 ## Examples
 
@@ -67,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /users/{id}/authentication/qrcodepinmethod
+GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrcodepinmethod
 ```
 
 
