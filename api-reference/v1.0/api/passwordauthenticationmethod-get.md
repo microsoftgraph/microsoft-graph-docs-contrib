@@ -51,6 +51,8 @@ Get details of your own password authentication method.
 GET /me/authentication/passwordMethods/{passwordMethods-id}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Get details of your own or another user's password authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http

@@ -45,6 +45,8 @@ Get details of your own Microsoft Authenticator Passwordless Phone Sign-in authe
 GET /me/authentication/passwordlessMicrosoftAuthenticatorMethods/{id}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Get details of your own or another user's Microsoft Authenticator Passwordless Phone Sign-in authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http
