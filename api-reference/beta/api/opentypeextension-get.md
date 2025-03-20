@@ -706,19 +706,15 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/drive/items",
-  "value": [
+  "name": "New Folder",
+  "folder": {},
+  "@microsoft.graph.conflictBehavior": "rename",
+  "extensions": [
     {
-      "name": "New Folder",
-      "folder": {},
-      "@microsoft.graph.conflictBehavior": "rename",
-      "extensions": [
-        {
-          "id": "myCustomExtension",
-          "extensionName": "myCustomExtension",
-          "myCustomString": "Contoso data",
-          "myCustomBool": false
-        }
-      ]
+      "id": "myCustomExtension",
+      "extensionName": "myCustomExtension",
+      "myCustomString": "Contoso data",
+      "myCustomBool": false
     }
   ]
 }
