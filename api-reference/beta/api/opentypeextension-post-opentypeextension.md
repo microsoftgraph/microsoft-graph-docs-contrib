@@ -706,7 +706,7 @@ The following example shows how to create an extension on an existing **driveIte
 <!-- {
   "blockType": "request",
   "name": "post_opentypeextension_6",
-  "sampleKeys": [""]
+  "sampleKeys": ["01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ/extensions
@@ -757,7 +757,7 @@ The following example shows how to create a **driveItem** and an open extension 
 <!-- {
   "blockType": "request",
   "name": "post_opentypeextension_7",
-  "sampleKeys": [""]
+  "sampleKeys": ["01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ/children

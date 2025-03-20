@@ -309,7 +309,7 @@ The following example shows how to update an open extension on a **driveItem**.
 <!-- {
   "blockType": "request",
   "name": "update_opentypeextension_3",
-  "sampleKeys": [""]
+  "sampleKeys": ["01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ", "Com.Contoso.Estimate"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ/extensions/Com.Contoso.Estimate
@@ -321,8 +321,6 @@ Content-type: application/json
   "myCustomBool": false
 }
 ```
-
----
 
 #### Response 3
 

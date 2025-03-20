@@ -685,13 +685,11 @@ The following example shows how to get a **driveItem** and expand its extensions
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_6",
-  "sampleKeys": [""]
+  "sampleKeys": ["01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ"]
 }-->
 ```http
-GET /drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ?$expand=extensions($filter=id eq 'myCustomExtension')
+GET https://graph.microsoft.com/drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ?$expand=extensions($filter=id eq 'myCustomExtension')
 ```
-
----
 
 #### Response 6
 
