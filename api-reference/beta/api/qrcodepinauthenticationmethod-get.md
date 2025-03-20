@@ -90,8 +90,6 @@ Content-Type: application/json
 
 {
     "id": "d29518d4-b99a-4c88-b40c-92fd12959724",
-    "isUsable": false,
-    "methodUsabilityReason": null,
     "standardQRCode": {
         "id": "1a253da5-3f9a-457d-bd9c-de1aab9a2e59",
         "expireDateTime": "2025-12-19T12:00:00Z",

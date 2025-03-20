@@ -35,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+DELETE /me/authentication/qrcodepinmethod
 DELETE /users/{id}/authentication/qrcodepinmethod
 ```
 
@@ -70,7 +71,6 @@ DELETE https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

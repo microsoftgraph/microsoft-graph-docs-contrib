@@ -30,10 +30,7 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when the QR code auth was created. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 |id|String|The identifier of the QR code auth added to this user. Inherited from [authenticationMethod](../resources/authenticationmethod.md). Inherits from [entity](../resources/entity.md)|
-|isUsable|Boolean|The state of the authentication method that indicates whether it's currently usable by the user.|
-|methodUsabilityReason|String|Details about the usability state (isUsable). Reasons can include: `EnabledByPolicy`, `DisabledByPolicy`, `Expired`, `NotYetValid`, `OneTimeUsed`. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -56,8 +53,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethod",
   "id": "String (identifier)",
-  "isUsable": "Boolean",
-  "methodUsabilityReason": "String"
 }
 ```
 
