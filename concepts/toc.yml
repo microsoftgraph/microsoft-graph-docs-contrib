@@ -606,7 +606,7 @@ items:
     - name: Addressing drive items
       href: onedrive-addressing-driveitems.md
     - name: Using app folder in OneDrive and SharePoint
-      href: appfolder.md
+      href: onedrive-sharepoint-appfolder.md
   - name: Financials (preview)
     href: dynamics-business-central-concept-overview.md
     displayName: Dynamics, Dynamics 365 Business Central
@@ -884,7 +884,7 @@ items:
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
       - name: Using app folder in OneDrive and SharePoint
-        href: appfolder.md
+        href: onedrive-sharepoint-appfolder.md
   - name: Tasks and plans
     items:
     - name: Overview
