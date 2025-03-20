@@ -4187,24 +4187,6 @@
       "CreatedDateTime": "2025-03-19T18:23:42.5437381Z",
       "WorkloadArea": "Files",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "4abe65b6-ba4c-4d4c-9302-cdb410ed6f44",
-          "ApiChange": "Resource",
-          "ChangedApiName": "flexSchemaContainer",
-          "ChangeType": "Addition",
-          "Description": "Added the [flexSchemaContainer](https://learn.microsoft.com/en-us/graph/api/resources/flexSchemaContainer?view=graph-rest-beta) resource type.",
-          "Target": "flexSchemaContainer"
-        }
-      ],
-      "Id": "4abe65b6-ba4c-4d4c-9302-cdb410ed6f44",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2025-03-19T18:23:42.5437381Z",
-      "WorkloadArea": "Files",
-      "SubArea": ""
     }
   ]
 }
