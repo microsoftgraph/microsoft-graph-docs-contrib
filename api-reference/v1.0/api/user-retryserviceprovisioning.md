@@ -1,6 +1,6 @@
 ---
 title: "user: retryServiceProvisioning"
-description: "Retries user service provisioning."
+description: "Retry the provisioning of a user object in Microsoft Entra ID."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
 ms.subservice: entra-users
@@ -12,7 +12,7 @@ ms.date: 04/17/2024
 
 Namespace: microsoft.graph
 
-Retry the [user](../resources/user.md) service provisioning.
+Retry the provisioning of a [user](../resources/user.md) object in Microsoft Entra ID.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
