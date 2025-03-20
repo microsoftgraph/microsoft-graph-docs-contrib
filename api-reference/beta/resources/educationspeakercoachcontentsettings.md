@@ -20,8 +20,8 @@ The content related feedback types that students should receive from the Speaker
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isInclusivenessEnabled|Boolean|Whether the student should receive feedback on their inclusiveness from the Speaker Coach.|
-|isRepetitiveLanguageEnabled|Boolean|Whether the student should receive feedback on their repetitive language from the Speaker Coach.
+|isInclusivenessEnabled|Boolean|Indicates whether the student should receive feedback on their inclusiveness from the Speaker Coach.|
+|isRepetitiveLanguageEnabled|Boolean|Indicates whether the student should receive feedback on their repetitive language from the Speaker Coach.
 |
 
 ## Relationships

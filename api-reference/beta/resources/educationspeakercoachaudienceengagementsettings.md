@@ -20,7 +20,7 @@ The audience engagement related feedback types that students should receive from
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isBodyLanguageEnabled|Boolean|Whether the student should receive feedback on their body language from the Speaker Coach.|
+|isBodyLanguageEnabled|Boolean|Indicates whether the student should receive feedback on their body language from the Speaker Coach.|
 
 ## Relationships
 None.

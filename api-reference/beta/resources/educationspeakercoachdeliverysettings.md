@@ -20,10 +20,10 @@ The delivery related feedback types that students should receive from the Speake
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|areFillerWordsEnabled|Boolean|Whether the student should receive feedback on their filler words from the Speaker Coach.|
-|isPaceEnabled|Boolean|Whether the student should receive feedback on their pace from the Speaker Coach.|
-|isPitchEnabled|Boolean|Whether the student should receive feedback on their pitch from the Speaker Coach.|
-|isPronunciationEnabled|Boolean|Whether the student should receive feedback on their pronunciation from the Speaker Coach. Note that this will be automatically enabled if `isAiFeedbackEnabled` is set to true on the `educationSpeakerProgressResource`, or if `spokenLanguageLocale` is set to a value besides `en-US` on the `educationSpeakerProgressResource`.|
+|areFillerWordsEnabled|Boolean|Indicates whether the student should receive feedback on their filler words from the Speaker Coach.|
+|isPaceEnabled|Boolean|Indicates whether the student should receive feedback on their pace from the Speaker Coach.|
+|isPitchEnabled|Boolean|Indicates whether the student should receive feedback on their pitch from the Speaker Coach.|
+|isPronunciationEnabled|Boolean|Indicates whether the student should receive feedback on their pronunciation from the Speaker Coach. This is automatically enabled if `isAiFeedbackEnabled` is set to true on the `educationSpeakerProgressResource`, or if `spokenLanguageLocale` is set to a value besides `en-US` on the `educationSpeakerProgressResource`.|
 
 ## Relationships
 None.

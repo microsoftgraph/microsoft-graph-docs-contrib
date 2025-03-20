@@ -689,7 +689,7 @@ Content-Type: application/json
 ```
 
 ## Error responses for invalid request body
-If Distributable resource attach limit exceeded, the method returns a `400` error message.
+If the distributable resource attach limit is exceeded, the method returns a `400` error message.
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -725,7 +725,7 @@ Content-type: application/json
     }
 }
 ```
-If AI feedback is enabled but AI feedback criteria is null, the method returns a `400` error message.
+If AI feedback is enabled but the AI feedback criteria are null, the method returns a `400` error message.
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -743,7 +743,7 @@ Content-type: application/json
     }
 }
 ```
-If AI feedback is enabled but AI feedback criteria has no settings enabled, the method returns a `400` error message.
+If AI feedback is enabled but AI feedback criteria have no settings enabled, the method returns a `400` error message.
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -779,7 +779,7 @@ Content-type: application/json
     }
 }
 ```
-If AI feedback criteria has settings enabled but AI feedback is not enabled, the method returns a `400` error message.
+If AI feedback criteria have settings enabled but AI feedback is not enabled, the method returns a `400` error message.
 
 ```http
 HTTP/1.1 400 Bad Request

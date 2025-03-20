@@ -20,9 +20,9 @@ The content related feedback types that students should receive from the AI feed
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isMessageClarityEnabled|Boolean|Whether the student should receive feedback on their message clarity from the AI feedback.|
-|isQualityOfInformationEnabled|Boolean|Whether the student should receive feedback on their quality of information from the AI feedback.|
-|isSpeechOrganizationEnabled|Boolean|Whether the student should receive feedback on their speech organization from the AI feedback.|
+|isMessageClarityEnabled|Boolean|Indicates whether the student should receive feedback on their message clarity from the AI feedback.|
+|isQualityOfInformationEnabled|Boolean|Indicates whether the student should receive feedback on their quality of information from the AI feedback.|
+|isSpeechOrganizationEnabled|Boolean|Indicates whether the student should receive feedback on their speech organization from the AI feedback.|
 
 ## Relationships
 None.

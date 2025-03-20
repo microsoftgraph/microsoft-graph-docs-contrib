@@ -20,9 +20,9 @@ The audience engagement related feedback types that students should receive from
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|areEngagementStrategiesEnabled|Boolean|Whether the student should receive feedback on their engagement strategies from the AI feedback.|
-|isCallToActionEnabled|Boolean|Whether the student should receive feedback on their call to action from the AI feedback.|
-|isEmotionalAndIntellectualAppealEnabled|Boolean|Whether the student should receive feedback on their emotional and intellectual appeal from the AI feedback.|
+|areEngagementStrategiesEnabled|Boolean|Indicates whether the student should receive feedback on their engagement strategies from the AI feedback.|
+|isCallToActionEnabled|Boolean|Indicates whether the student should receive feedback on their call to action from the AI feedback.|
+|isEmotionalAndIntellectualAppealEnabled|Boolean|Indicates whether the student should receive feedback on their emotional and intellectual appeal from the AI feedback.|
 
 ## Relationships
 None.
