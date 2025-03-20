@@ -16,7 +16,7 @@ Supported by a dedicated scope, `Files.ReadWrite.AppFolder`, you can build consi
 
 ## Access app folder
 
-To get started, you need a Microsoft Entra ID application consented to the `Files.ReadWrite.AppFolder` scope. Both application and delegated are supported as needed for your scenario.
+To get started, you need a Microsoft Entra ID application consented to the `Files.ReadWrite.AppFolder` scope. Both application and delegated permissions are supported as needed for your scenario.
 
 To access an app folder, you make a Microsoft Graph call to:
 
