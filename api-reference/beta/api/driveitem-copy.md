@@ -635,7 +635,7 @@ Content-Length: 290
 }
 ```
 
-### Example 10: Failure to copy child items by specifying both the childrenOnly and name request body parameters
+### Example 9: Failure to copy child items by specifying both the childrenOnly and name request body parameters
 
 The following example attempts to copy the child items  in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values. The request body sets the `childrenOnly` parameter to true and also specifies a `name` value. The request fails as the `childrenOnly` and `name` parameters are mutually exclusive.
 
