@@ -18,7 +18,7 @@ An abstract type to support the OData v4 open type [openTypeExtension](opentypee
 
 ## Methods
 
-See the methods of the derived type [openTypeExtension](opentypeextension.md) for supported methods.
+For supported methods, see the methods of the derived type [openTypeExtension](opentypeextension.md).
 
 ## Properties
 | Property       | Type    |Description|
