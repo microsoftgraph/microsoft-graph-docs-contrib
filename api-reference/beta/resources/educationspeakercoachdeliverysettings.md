@@ -1,6 +1,6 @@
 ---
 title: "educationSpeakerCoachDeliverySettings resource type"
-description: "**TODO: Add Description**"
+description: "The delivery related feedback types that students should receive from the Speaker Coach."
 author: "v-rmanda"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The delivery related feedback types that students should receive from the Speaker Coach.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|areFillerWordsEnabled|Boolean|Whether the student should receive feedback on their pace from the Speaker Coach.|
+|areFillerWordsEnabled|Boolean|Whether the student should receive feedback on their filler words from the Speaker Coach.|
 |isPaceEnabled|Boolean|Whether the student should receive feedback on their pace from the Speaker Coach.|
-|isPitchEnabled|Boolean|Whether the student should receive feedback on their pace from the Speaker Coach.|
-|isPronunciationEnabled|Boolean|Whether the student should receive feedback on their pace from the Speaker Coach. Note that this will be automatically enabled if isAiFeedbackEnabled is set to true on the educationSpeakerProgressResource, or if spokenLanguageLocale is set to a value besides en-US on the educationSpeakerProgressResource.|
+|isPitchEnabled|Boolean|Whether the student should receive feedback on their pitch from the Speaker Coach.|
+|isPronunciationEnabled|Boolean|Whether the student should receive feedback on their pronunciation from the Speaker Coach. Note that this will be automatically enabled if `isAiFeedbackEnabled` is set to true on the `educationSpeakerProgressResource`, or if `spokenLanguageLocale` is set to a value besides `en-US` on the `educationSpeakerProgressResource`.|
 
 ## Relationships
 None.

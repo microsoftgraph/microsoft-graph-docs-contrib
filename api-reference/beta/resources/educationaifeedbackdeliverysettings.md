@@ -1,6 +1,6 @@
 ---
 title: "educationAiFeedbackDeliverySettings resource type"
-description: "**TODO: Add Description**"
+description: "The delivery related feedback types that students should receive from the AI feedback."
 author: "v-rmanda"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The delivery related feedback types that students should receive from the AI feedback.
 
 
 ## Properties

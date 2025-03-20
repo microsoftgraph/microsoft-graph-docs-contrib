@@ -1,6 +1,6 @@
 ---
 title: "educationAiFeedbackCriteria resource type"
-description: "**TODO: Add Description**"
+description: "The settings for the AI feedback that students should receive."
 author: "v-rmanda"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The settings for the AI feedback that students should receive. 
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |aiFeedbackSettings|[educationAiFeedbackSettings](../resources/educationaifeedbacksettings.md)|The feedback types that students should receive from AI feedback.|
-|speechType|educationSpeechType|The type of speech the student is providing. Valid values: `informative`, `personal`, `persuasive`, `unknownFutureValue`.|
+|speechType|educationSpeechType|The type of speech the student is providing. Valid values: `informative`, `personal`, `persuasive`.|
 
 ## Relationships
 None.

@@ -1,6 +1,6 @@
 ---
 title: "educationSpeakerCoachSettings resource type"
-description: "**TODO: Add Description**"
+description: "The feedback types that students should receive from the Speaker Coach."
 author: "v-rmanda"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The feedback types that students should receive from the Speaker Coach.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|audienceEngagementSettings|[educationSpeakerCoachAudienceEngagementSettings](../resources/educationspeakercoachaudienceengagementsettings.md)|The audience engagement related feedback types that students should receive from the AI feedback.|
+|audienceEngagementSettings|[educationSpeakerCoachAudienceEngagementSettings](../resources/educationspeakercoachaudienceengagementsettings.md)|The audience engagement related feedback types that students should receive from the Speaker Coach.|
 |contentSettings|[educationSpeakerCoachContentSettings](../resources/educationspeakercoachcontentsettings.md)|The content related feedback types that students should receive from the Speaker Coach.|
 |deliverySettings|[educationSpeakerCoachDeliverySettings](../resources/educationspeakercoachdeliverysettings.md)|The delivery related feedback types that students should receive from the Speaker Coach.|
 
