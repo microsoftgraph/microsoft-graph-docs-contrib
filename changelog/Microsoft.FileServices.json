@@ -4171,6 +4171,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **extensions** relationship to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
           "Target": "driveItem"
+        },
+        {
+          "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extension",
+          "ChangeType": "Addition",
+          "Description": "Added the [extension](https://learn.microsoft.com/en-us/graph/api/resources/extension?view=graph-rest-beta) resource type.",
+          "Target": "extension"
         }
       ],
       "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
