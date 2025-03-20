@@ -51,7 +51,7 @@ PATCH /policies/authenticationmethodspolicy/authenticationmethodconfigurations/q
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|authenticationMethodState| QR code state in Entra Authentication Method Policy. Inherited from [microsoft.authMethodPolicy.authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`.|
+|state|authenticationMethodState| Whether the policy is enabled or disabled. Inherited from [microsoft.authMethodPolicy.authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`.|
 |excludeTargets|[microsoft.graph.excludeTarget](../resources/excludetarget.md) collection|Excluded user or groups in QR code Entra Authentication Method Policy. Inherited from [microsoft.authMethodPolicy.authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 |standardQRCodeLifetimeInDays|Int32|Configured lifetime of standard QR code for all the QR code enabled users. Default is 365 days and maximum allowed lifetime is 395 days.|
 |pinLength|Int32|Default and minimum length is 8 digit. Max. allowed is upto 20 digits.|
