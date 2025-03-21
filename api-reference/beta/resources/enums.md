@@ -5141,3 +5141,4 @@ Possible values for user account types (group membership), per Windows definitio
 |informative|
 |personal|
 |persuasive|
+|unknownFutureValue

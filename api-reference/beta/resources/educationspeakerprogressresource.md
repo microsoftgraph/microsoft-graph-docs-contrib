@@ -1,6 +1,6 @@
 ---
 title: "educationSpeakerProgressResource resource type"
-description: "Speaker Progress helps students develop confidence in their presentation skills and reduces anxiety."
+description: "Speaker Progress helps students develop confidence in their presentation skills and reduces anxiety in their speaking assignments."
 author: "v-rmanda"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
