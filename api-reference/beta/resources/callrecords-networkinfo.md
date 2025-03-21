@@ -48,7 +48,7 @@ Represents information about the network used in a call.
 |wifiVendorDriverVersion|String|Version of the WiFi driver used by the media endpoint.|
 
 > [!NOTE]
-> \*By default, **traceRouteHops** will always return an empty array. Contact Microsoft support to enable reporting of trace route data for your organization.
+> \*By default, **traceRouteHops** always returns an empty array. Contact Microsoft support to enable reporting of trace route data for your organization.
 
 ## JSON representation
 
