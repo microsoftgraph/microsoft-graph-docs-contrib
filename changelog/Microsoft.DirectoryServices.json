@@ -14223,6 +14223,24 @@
       "CreatedDateTime": "2024-12-17T00:35:00.3307839Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3f87e7d3-3a28-46a3-a1b8-da2e6e603267",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "newUserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added the `newUserPrincipalName` parameter to the [restore](https://learn.microsoft.com/en-us/graph/api/directoryObject?view=graph-rest-1.0) method.",
+          "Target": "restore"
+        }
+      ],
+      "Id": "3f87e7d3-3a28-46a3-a1b8-da2e6e603267",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-03-19T03:14:15.5239708Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
