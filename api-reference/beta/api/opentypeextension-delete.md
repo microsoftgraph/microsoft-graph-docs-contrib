@@ -82,7 +82,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
-## Examples
+## Example
 
 ### Request 1
 The first example references an extension by its name and deletes the extension in the specified message.

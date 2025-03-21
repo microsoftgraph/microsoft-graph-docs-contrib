@@ -4174,6 +4174,14 @@
         },
         {
           "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extension",
+          "ChangeType": "Addition",
+          "Description": "Added the [extension](https://learn.microsoft.com/en-us/graph/api/resources/extension?view=graph-rest-beta) resource type.",
+          "Target": "extension"
+        },
+        {
+          "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
           "ApiChange": "Method",
           "ChangedApiName": "openTypeExtension",
           "ChangeType": "Change",
