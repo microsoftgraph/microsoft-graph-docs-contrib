@@ -8,17 +8,17 @@ doc_type: resourcePageType
 ms.date: 03/21/2024
 ---
 
-# hashes resource type
+# Hashes Resource Type
 
 Namespace: microsoft.graph
 
-The **hashes** resource groups available hashes into a single structure for an item.
+The **Hashes** resource groups available hashes into a single structure for an item.
 
->**Note:** Not all services provide a value for all hash properties listed.
+**Note:** Not all services provide a value for all hash properties listed.
 
 ## JSON representation
 
-The following JSON representation shows the resource type.
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -30,7 +30,6 @@ The following JSON representation shows the resource type.
 {
   "crc32Hash": "string (hex)",
   "sha1Hash": "string (hex)",
-  "sha256Hash": "string (hex)",
   "quickXorHash": "string (base64)"
 }
 ```
@@ -39,22 +38,17 @@ The following JSON representation shows the resource type.
 
 | Property         | Type   | Description                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **crc32Hash**    | String | The CRC32 value of the file in little endian (if available). Read-only.            |
-| **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
-| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
-| **sha256Hash**   | String | SHA256 hash for the contents of the file (if available). Read-only. |
-
->**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.
+| **sha1Hash**     | String | (Hex string). SHA1 hash for the contents of the file (if available). Read-only. |
+| **crc32Hash**    | String | (Hex string). The CRC32 value of the file in little endian (if available). Read-only. |
+| **quickXorHash** | String | (Base64 string). A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
 
 ## Remarks
 
-In OneDrive for Business and SharePoint Server 2016, **sha1Hash** and **crc32Hash**, and **sha256Hash** are not available.
-
-In OneDrive Personal, **quickXorHash** is not available.
+>**Note:** **quickXorHash** is the only value that is guaranteed to be available for both OneDrive for Business and OneDriver Personal.
 
 To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](/onedrive/developer/code-snippets/quickxorhash).
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
+For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 <!-- {
   "type": "#page.annotation",
