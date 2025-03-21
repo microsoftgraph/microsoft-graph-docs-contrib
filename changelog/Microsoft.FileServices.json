@@ -4085,22 +4085,6 @@
         {
           "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Method",
-          "ChangedApiName": "Delete",
-          "ChangeType": "Addition",
-          "Description": "Added the [delete column](https://learn.microsoft.com/graph/api/filestoragecontainer-delete-column?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
-          "Target": "fileStorageContainer"
-        },
-        {
-          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
-          "ApiChange": "Method",
-          "ChangedApiName": "Get",
-          "ChangeType": "Addition",
-          "Description": "Added the [get column](https://learn.microsoft.com/graph/api/filestoragecontainer-get-column?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
-          "Target": "fileStorageContainer"
-        },
-        {
-          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
-          "ApiChange": "Method",
           "ChangedApiName": "List",
           "ChangeType": "Addition",
           "Description": "Added the [list columns](https://learn.microsoft.com/graph/api/filestoragecontainer-list-columns?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
@@ -4117,25 +4101,9 @@
         {
           "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Method",
-          "ChangedApiName": "Post",
-          "ChangeType": "Addition",
-          "Description": "Added the [post columns](https://learn.microsoft.com/graph/api/filestoragecontainer-post-columns?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
-          "Target": "fileStorageContainer"
-        },
-        {
-          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
-          "ApiChange": "Method",
           "ChangedApiName": "Restore",
           "ChangeType": "Addition",
           "Description": "Added the [restore recyclebinitem](https://learn.microsoft.com/graph/api/filestoragecontainer-restore-recyclebinitem?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
-          "Target": "fileStorageContainer"
-        },
-        {
-          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
-          "ApiChange": "Method",
-          "ChangedApiName": "Update",
-          "ChangeType": "Addition",
-          "Description": "Added the [update column](https://learn.microsoft.com/graph/api/filestoragecontainer-update-column?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainer"
         },
         {
