@@ -932,6 +932,7 @@ Content-Type: application/json
 
 ## Related content
 
+For more information on creating a speaker progress resource, please see [educationAiFeedbackCriteria](../api/educationassignment-speakerprogressresource.md)
 * [Status, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-status-transition)
 * [Upload files for education assignments and submissions](/graph/education-upload-resource-overview)
 
