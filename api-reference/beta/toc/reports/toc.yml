@@ -692,6 +692,10 @@ items:
       href: ../../resources/partners-billing-billedreconciliation.md
     - name: Export
       href: ../../api/partners-billing-billedreconciliation-export.md
+    - name: Unbilled reconciliation
+      href: ../../resources/partners-billing-unbilledreconciliation.md
+    - name: Export
+      href: ../../api/partners-billing-unbilledreconciliation-export.md
   - name: Billed usage
     items:
     - name: Billed usage
