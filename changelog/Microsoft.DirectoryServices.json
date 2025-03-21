@@ -14231,7 +14231,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "newUserPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added the `newUserPrincipalName` parameter to the [restore](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-1.0&tabs=http) method.",
+          "Description": "Added the `newUserPrincipalName` parameter to the [restore deleted item](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-1.0&tabs=http) method. Use the property to assign a new **userPrincipalName** as you restore the user object.",
           "Target": "restore"
         }
       ],

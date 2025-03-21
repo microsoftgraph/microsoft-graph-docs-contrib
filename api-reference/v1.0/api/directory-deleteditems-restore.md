@@ -225,7 +225,10 @@ Content-type: application/json
 }
 ```
 
-### Request
+
+### Example 2: Restore a deleted user and assign them a new userPrincipalName
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -240,7 +243,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
