@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/{containerId}/recycleBin/items
+GET /storage/fileStorage/containers/{containerId}/recycleBin/items
 ```
 
 ## Optional query parameters
