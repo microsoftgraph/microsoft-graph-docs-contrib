@@ -67,7 +67,7 @@ In the request body, provide a JSON object with the following parameters.
 >[!NOTE]
 >The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
 >
->In a single request, the `childrenOnly` option copies 30,000 children items, and for the grandchildren items the SharePoint limit applies. For more information, see [SharePoint limitation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites)
+>For more information, see [SharePoint limitation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites)
 
 > If you use the `@microsoft.graph.conflictBehavior` query parameter with the `childrenOnly` parameter, then every child in the operation will be subject to the `@microsoft.graph.conflictBehavior` specified.
 
