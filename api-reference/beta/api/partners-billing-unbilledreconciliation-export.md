@@ -84,35 +84,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/unbilledreconciliationthisexport-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/billedreconciliationthisexport-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/unbilledreconciliationthisexport-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/billedreconciliationthisexport-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/unbilledreconciliationthisexport-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/billedreconciliationthisexport-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/unbilledreconciliationthisexport-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/billedreconciliationthisexport-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/unbilledreconciliationthisexport-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/billedreconciliationthisexport-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/unbilledreconciliationthisexport-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/billedreconciliationthisexport-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/unbilledreconciliationthisexport-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/billedreconciliationthisexport-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/unbilledreconciliationthisexport-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/billedreconciliationthisexport-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
