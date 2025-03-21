@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 
 The settings for the AI feedback that students should receive. 
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

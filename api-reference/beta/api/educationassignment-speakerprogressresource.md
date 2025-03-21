@@ -47,12 +47,12 @@ POST /education/classes/{educationClassId}/assignments/{assignmentId}/resources/
 |Property|Type|Description|
 |:---|:---|:---|
 |aiFeedbackCriteria|[educationAiFeedbackCriteria](../resources/educationaifeedbackcriteria.md)|The feedback types that students should receive from AI feedback. This property should only be provided if isAiFeedbackEnabled is true. |
-|createdBy|[identitySet](../resources/intune-identityset.md)|The individual who created the resource.|
+|createdBy|[identitySet](../resources/intune-rbac-identityset.md)|The individual who created the resource.|
 |createdDateTime|DateTimeOffset|Moment in time when the resource was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.|
 |displayName|String|Display name of resource.|
 |isAiFeedbackEnabled|Boolean|Whether AI feedback is enabled for the student submissions.|
 |isVideoRequired|Boolean|Whether video is required for the student recording.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|The last user to modify the resource.|
+|lastModifiedBy|[identitySet](../resources/intune-rbac-identityset.md)|The last user to modify the resource.|
 |lastModifiedDateTime|DateTimeOffset|Moment in time when the resource was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.|
 |maxRecordingAttempts|Int32|The maximum number of recordings attempts the student has.|
 |presentationTitle|String|The title of the speaker progress resource that students will see.|
@@ -74,12 +74,11 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_educationSpeakerProgressResource"
+  "name": "create_attach_educationSpeakerProgressResource"
 }
 -->
 ``` http
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/fe9c8d6f-baad-4b5e-b9d5-e2bb33e4ed19/resources
-
 Content-Type: application/json
 
 {
