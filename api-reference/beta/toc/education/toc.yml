@@ -94,8 +94,6 @@ items:
     href: ../../resources/educationassignment.md
   - name: Create assignment resource
     href: ../../api/educationassignment-post-resources.md
-  - name: Create assignment resource
-    href: ../../api/educationassignment-speakerprogressresource.md    
   - name: Get assignment
     href: ../../api/educationassignment-get.md
   - name: Update
