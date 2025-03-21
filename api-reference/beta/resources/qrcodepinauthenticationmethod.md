@@ -35,8 +35,8 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|pin|[qrPin](../resources/qrpin.md)|**TODO: Add Description**|
-|standardQRCode|[qrCode](../resources/qrcode.md)|**TODO: Add Description**|
+|pin|[qrPin](../resources/qrpin.md)|The PIN linked to the QR Code for the user|
+|standardQRCode|[qrCode](../resources/qrcode.md)|Standard QR code is primary QR code of the user with lifetime upto 395 days (13 months). There can be only one active standard QR code for the user.|
 |temporaryQRCode|[qrCode](../resources/qrcode.md)|**TODO: Add Description**|
 
 ## JSON representation
