@@ -163,7 +163,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "unbilled",
           "ChangeType": "Addition",
-          "Description": "Added the **unbilled** relationship to the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-billingReconciliation?view=graph-rest-beta) resource.",
+          "Description": "Added the **unbilled** relationship to the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billingReconciliation?view=graph-rest-beta) resource type.",
           "Target": "billingReconciliation"
         },
         {
@@ -171,7 +171,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unbilledReconciliation",
           "ChangeType": "Addition",
-          "Description": "Added the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-unbilledReconciliation?view=graph-rest-beta) resource.",
+          "Description": "Added the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-unbilledReconciliation?view=graph-rest-beta) resource type.",
           "Target": "unbilledReconciliation"
         },
         {
@@ -179,7 +179,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "export",
           "ChangeType": "Addition",
-          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners.billing-unbilledReconciliation-export?view=graph-rest-beta) method to the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-unbilledReconciliation?view=graph-rest-beta) resource.",
+          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-unbilledReconciliation-export?view=graph-rest-beta) method to the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-unbilledReconciliation?view=graph-rest-beta) resource.",
           "Target": "unbilledReconciliation"
         }
       ],
