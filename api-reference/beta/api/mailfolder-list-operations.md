@@ -37,6 +37,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /users/{usersId}/mailFolders/{mailFolderId}/operations
 ```
 
+## Optional query parameters
+
+This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
+
 ## Request headers
 
 |Name|Description|
