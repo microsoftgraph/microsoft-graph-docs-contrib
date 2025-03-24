@@ -929,10 +929,10 @@ Content-Type: application/json
     }
 }
 ```
-## Error response for invalid request body for speakerProgressResource.
+## Error response for invalid request body for educationSpeakerProgressResource.
 If the distributable resource attach limit is exceeded, the method returns a `400` error message.
 
-This also applies for No speaker coach setting nor AI feedback is enabled, AI feedback is enabled but the AI feedback criteria are null, AI feedback is enabled but AI feedback criteria have no settings enabled, AI feedback is enabled but AiFeedbackCriteria.SpeechType has an invalid value, AI feedback criteria have settings enabled but AI feedback is not enabled, AiFeedbackCriteria.SpeechType is set but AI feedback is not enabled, RecordingTimeLimitInMinutes is not between 1 and 10 inclusive and MaxRecordingAttempts is not between 0 and 10 inclusive, 
+This also applies for if no speaker coach setting nor AI feedback are enabled, if AI feedback is enabled but the AI feedback criteria are null, if AI feedback is enabled but AI feedback criteria have no settings enabled, if AI feedback is enabled but AiFeedbackCriteria.SpeechType has an invalid value, if AI feedback criteria have settings enabled but AI feedback is not enabled, if AiFeedbackCriteria.SpeechType is set but AI feedback is not enabled, if RecordingTimeLimitInMinutes is not between 1 and 10 inclusive, and if MaxRecordingAttempts is not between 0 and 10 inclusive.
 
 ```http
 HTTP/1.1 400 Bad Request
