@@ -109,12 +109,12 @@ By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only 
 
 | Relationship | Type | Description |
 |:-------------|:-----|:------------|
-|childFolders|[mailFolder](mailfolder.md) collection|The collection of child folders in the mailFolder.|
+|childFolders|[mailFolder](mailfolder.md) collection|The collection of child folders in the **mailFolder**.|
 |messageRules | [messageRule](messagerule.md) collection | The collection of rules that apply to the user's Inbox folder. |
-|messages|[message](message.md) collection|The collection of messages in the mailFolder.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.|
-|operations|[mailFolderOperation](mailfolderoperation.md) collection|The collection of long running operations in the mailFolder.|
+|messages|[message](message.md) collection|The collection of messages in the **mailFolder**.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the **mailFolder**. Read-only. Nullable.|
+|operations|[mailFolderOperation](mailfolderoperation.md) collection|The collection of long-running operations in the **mailFolder**.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the **mailFolder**. Read-only. Nullable.|
 
 ## JSON representation
 

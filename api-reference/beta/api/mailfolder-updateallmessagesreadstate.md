@@ -68,16 +68,17 @@ If successful, this action returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "mailfolderthis.updateallmessagesreadstate"
+  "name": "mailfolderthis.updateallmessagesreadstate",
+  "sampleKeys": ["AAMkAGVmMDEzM"]
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/mailFolders/{mailFolderId}/updateAllMessagesReadState
+POST https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/updateAllMessagesReadState
 Content-Type: application/json
 
 {
-  "isRead": "Boolean",
-  "suppressReadReceipts": "Boolean"
+  "isRead": "true",
+  "suppressReadReceipts": "true"
 }
 ```
 
