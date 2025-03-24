@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcBulkDisasterRecovery",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcBulkDisasterRecovery](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcBulkDisasterRecovery?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudPcBulkDisasterRecovery](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkDisasterRecovery?view=graph-rest-beta) resource.",
           "Target": "cloudPcBulkDisasterRecovery"
         }
       ],
