@@ -76,7 +76,6 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.qrCode",
-  "startDateTime": "2025-10-30T12:00:00Z", 
   "expireDateTime": "2025-12-19T12:00:00Z",
   "startDateTime": "2025-01-01T12:00:00Z",
 }
