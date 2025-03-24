@@ -35,8 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /me/authentication/qrcodepinmethod/standardQRCode
 PATCH /users/{id}/authentication/qrcodepinmethod/standardQRCode
+PATCH /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 ```
 
 ## Request headers
@@ -52,7 +52,8 @@ PATCH /users/{id}/authentication/qrcodepinmethod/standardQRCode
 
 |Property|Type|Description|
 |:---|:---|:---|
-|expireDateTime|DateTimeOffset| The QR code expires and becomes unusable based on this property's value. This property can be modified for a standard QR code up to the maximum lifetime of 395 days from the **createdDateTime** value. This property can't be modified for a temporary QR code. |
+|startDateTime|DateTimeOffset|The date and time when the QR code becomes available to use.|
+|expireDateTime|DateTimeOffset| The QR code expires and becomes unusable based on this property's value. This property can be modified for a standard QR code up to the maximum lifetime of 395 days from the **startDateTime** value. This property can't be modified for a temporary QR code. |
 
 ## Response
 
