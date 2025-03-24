@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 An abstract type that represents the base class for all education-related resource objects in a system.
 
-Base type of [educationExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md), [educationWordResource](../resources/educationwordresource.md), [educationMediaResource](../resources/educationmediaresource.md), [educationExternalResource](../resources/educationexternalresource.md), and [educationTeamsAppResource](../resources/educationteamsappresource.md).
+Base type of [educationExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md), [educationWordResource](../resources/educationwordresource.md), [educationMediaResource](../resources/educationmediaresource.md), [educationExternalResource](../resources/educationexternalresource.md), [educationTeamsAppResource](../resources/educationteamsappresource.md) and [educationSpeakerProgressResource](../resources/educationspeakerprogressresource.md)
 
 An educationResource is associated with an [assignment](educationassignment.md) and/or [submission](educationsubmission.md), which represents the learning object that is being handed out or handed in. You can't instantiate a resource directly; you must make a subclass that represents the type of resource being used.
 

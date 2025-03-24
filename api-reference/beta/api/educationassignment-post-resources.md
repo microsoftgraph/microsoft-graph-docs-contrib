@@ -929,10 +929,31 @@ Content-Type: application/json
     }
 }
 ```
+## Error response for invalid request body for speakerProgressResource.
+If the distributable resource attach limit is exceeded, the method returns a `400` error message.
+
+This also applies for No speaker coach setting nor AI feedback is enabled, AI feedback is enabled but the AI feedback criteria are null, AI feedback is enabled but AI feedback criteria have no settings enabled, AI feedback is enabled but AiFeedbackCriteria.SpeechType has an invalid value, AI feedback criteria have settings enabled but AI feedback is not enabled, AiFeedbackCriteria.SpeechType is set but AI feedback is not enabled, RecordingTimeLimitInMinutes is not between 1 and 10 inclusive and MaxRecordingAttempts is not between 0 and 10 inclusive, 
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "20243",
+        "message": "Invalid request body. Distributable resource attach limit exceeded.",
+        "innerError": {
+            "date": "2025-02-20T20:25:00",
+            "request-id": "4a342b8c-0623-4f08-9f37-0475d6ed8671",
+            "client-request-id": "b1b08430-f576-3fb1-4b5e-e66aab04caf3"
+        }
+    }
+}
+```
 
 ## Related content
 
-For more information on creating a speaker progress resource, please see [educationAiFeedbackCriteria](../api/educationassignment-speakerprogressresource.md)
+For more information on creating a speaker progress resource, please see [speakerProgressResource](../api/educationassignment-speakerprogressresource.md)
 * [Status, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-status-transition)
 * [Upload files for education assignments and submissions](/graph/education-upload-resource-overview)
 
