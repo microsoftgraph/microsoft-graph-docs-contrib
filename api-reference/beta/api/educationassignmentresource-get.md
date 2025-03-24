@@ -590,7 +590,7 @@ Content-type: application/json
 }
 ```
 
-### Example 7: Get a speakerProgressResource
+### Example 7: Get an educationSpeakerProgressResource
 #### Request
 
 The following example shows a request.
