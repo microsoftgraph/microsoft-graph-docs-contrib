@@ -39,7 +39,7 @@ Represents the disaster recovery status of a Cloud PC, including the primary reg
  | Member | Description |
  | :------| :-----------|
  | none | Default. The Cloud PC has no disaster recovery license. |
- | standard | Indicates the [Cloud PC cross region disaster recovery addon license]((https://learn.microsoft.com/en-us/windows-365/enterprise/cross-region-disaster-recovery)). With this license the backup device of the Cloud PC will be provisioned after failover action is triggered. |
+ | standard | Indicates the Cloud PC cross region disaster recovery addon license. With this license the backup device of the Cloud PC will be provisioned after failover action is triggered. |
  | plus | Indicates the Cloud PC disaster recovery plus addon license. With this license the backup device will be provisioned after license is assigned. |
  | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
