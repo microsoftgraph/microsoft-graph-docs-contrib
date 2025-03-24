@@ -20,7 +20,7 @@ Determines whether certificate-based authentication should fail if the issuing C
 |Property|Type|Description|
 |:---|:---|:---|
 |exemptedCertificateAuthoritiesSubjectKeyIdentifiers| String collection|Represents the SKIs of CAs that should be excluded from the valid CRL distribution point check. SKI is represented as a hexadecimal string.|
-|state|x509CertificateCRLValidationConfigurationState|The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
+|state|x509CertificateCRLValidationConfigurationState|Describes whether valid CRLDistributionPoint is required from CAs for CBA to be successful. The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
 
 ## Relationships
 None.
