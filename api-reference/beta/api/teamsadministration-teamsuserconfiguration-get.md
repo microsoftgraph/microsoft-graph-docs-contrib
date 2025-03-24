@@ -1,10 +1,10 @@
 ---
 title: "Get teamsUserConfiguration"
-description: "Read the properties and relationships of a teamsUserConfiguration object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Read the Teams user configurations for a specific user using userId (the identifier of User)."
+author: "Prasanna Patil"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "Teams"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a teamsUserConfiguration object.
+Read the Teams user configurations for a specific user using userId (the identifier of User).
 
 ## Permissions
 
