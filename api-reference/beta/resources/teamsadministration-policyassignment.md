@@ -1,0 +1,47 @@
+---
+title: "policyAssignment resource type"
+description: "Represents details about the policy instance. Details includes displayName, assignmentType, policyID and GroupId"
+author: "Prasanna Patil"
+ms.date: 03/19/2025
+ms.localizationpriority: medium
+ms.subservice: "Teams"
+doc_type: resourcePageType
+---
+
+# policyAssignment resource type
+
+Namespace: microsoft.graph.teamsAdministration
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents details about the policy instance. Details includes displayName, assignmentType, policyID and GroupId.
+
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|assignmentType|microsoft.graph.teamsAdministration.assignmentType|Represents the type of assignment (group for group-based, direct for user based).The possible values are: `direct`, `group`, `unknownFutureValue`.|
+|displayName|String|Represents the name of the policy.|
+|groupId|String|Represents the group identifier.|
+|policyId|String|Represents the unique identifier for the policy. |
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.teamsAdministration.policyAssignment"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.teamsAdministration.policyAssignment",
+  "policyId": "String",
+  "displayName": "String",
+  "assignmentType": "String",
+  "groupId": "String"
+}
+```
+
