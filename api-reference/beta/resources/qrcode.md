@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md)
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/qrcodepinauthenticationmethod-patch-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a standard or temporary **qrCode** object for a user.|
+|[Create or update](../api/qrcode-update.md)|[qrCode](../resources/qrcode.md)|Create or update a standard or temporary **qrCode** object for a user.|
 |[Get](../api/qrcode-get.md)|[qrCode](../resources/qrcode.md)|Get a user's standard or temporary **qrCode** object.|
 |[Update](../api/qrcode-update.md)|[qrCode](../resources/qrcode.md)|Update a user's standard **qrCode** object.|
 |[Delete](../api/qrcode-delete.md)|None|Delete a user's standard or temporary **qrCode** object.|

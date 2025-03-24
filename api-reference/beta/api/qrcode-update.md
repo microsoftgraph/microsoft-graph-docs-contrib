@@ -35,8 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /me/authentication/qrcodepinmethod/standardQRCode
 PATCH /users/{id}/authentication/qrcodepinmethod/standardQRCode
+PATCH /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 ```
 
 ## Request headers
@@ -65,7 +65,8 @@ If successful, this method returns a `201 Created` response code and an updated 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_qrcode"
+  "name": "create_qrcode_from_",
+  "@odata.type": "microsoft.graph.qrCode"
 }
 -->
 ``` http
@@ -75,6 +76,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.qrCode",
   "expireDateTime": "2025-12-19T12:00:00Z",
+  "startDateTime": "2025-01-01T12:00:00Z",
 }
 ```
 
@@ -95,11 +97,17 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.qrCode",
-  "id": "36c47c06-22ff-4fbf-beee-42111bb8ce0c",
+  "id": "44f2f040-ea9d-4283-9e7b-b63ddae391a9",
   "expireDateTime": "2025-12-19T12:00:00Z",
   "startDateTime": "2025-01-01T12:00:00Z",
-  "createdDateTime": "2025-02-01T00:03:32.1768757Z",
+  "createdDateTime": "2025-03-04T21:27:46.9771036Z",
   "lastUsedDateTime": "0001-01-01T00:00:00Z",
-  "image": null
+  "image": {
+    "@odata.type": "#microsoft.graph.qrCodeImageDetails",
+    "binaryValue": "SGVsbG9Xb3JsZCE=",
+    "version": 1,
+    "errorCorrectionLevel": "l",
+    "rawContent": "SGVsbG9Xb3JsZCEyTXlSYXdDb250ZW50"
+  }
 }
 ```
