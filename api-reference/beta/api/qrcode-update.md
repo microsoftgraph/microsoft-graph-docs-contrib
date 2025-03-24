@@ -8,13 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Update qrCode
+# Create or Update a QR code
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a standard qrCode object. Only the **expireDateTime** property can be updated.
+You can use this api to create a standard or temporay QR code. You can only update standard QR code and not temporary QR code. Only  **expireDateTime** property can be updated for standard QR code.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +52,7 @@ PATCH /users/{id}/authentication/qrcodepinmethod/standardQRCode
 
 |Property|Type|Description|
 |:---|:---|:---|
-|expireDateTime|DateTimeOffset| The QR code expires and becomes unusable based on this property's value. This property can be modified for a standard QR code up to the maximum lifetime of 395 days from the **createdDateTime** value but can't be modified for a temporary QR code. |
+|expireDateTime|DateTimeOffset| The QR code expires and becomes unusable based on this property's value. This property can be modified for a standard QR code up to the maximum lifetime of 395 days from the **createdDateTime** value. This property can't be modified for a temporary QR code. |
 
 ## Response
 
