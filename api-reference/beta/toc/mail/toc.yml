@@ -142,6 +142,8 @@ items:
     href: ../../api/mailfolder-permanentdelete.md
   - name: Update all messages read state
     href: ../../api/mailfolder-updateallmessagesreadstate.md
+  - name: List operations
+    href: ../../api/mailfolder-list-operations.md
   - name: Extended properties
     items:
     - name: Create single-value property
