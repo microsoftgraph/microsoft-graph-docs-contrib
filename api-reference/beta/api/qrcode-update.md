@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use this api to create a standard or temporay QR code. You can only update standard QR code and not temporary QR code. Only  **expireDateTime** property can be updated for standard QR code.
+You can use this api to create a standard or temporay QR code. A QR code can only be created if there is no active QR code. You can only update standard QR code, and not temporary QR code. Only  **expireDateTime** property can be updated for standard QR code.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -57,7 +57,7 @@ PATCH /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an updated [qrCode](../resources/qrcode.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an updated [qrCode](../resources/qrcode.md) object in the response body. The response doesn't include QR code image for standard QR code update. Image is provided only create QR code response.
 
 ## Examples
 
