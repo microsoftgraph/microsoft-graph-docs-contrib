@@ -63,7 +63,8 @@ If successful, this method returns a `200 OK` response code and a [mailFolderOpe
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_mailfolderoperation"
+  "name": "get_mailfolderoperation",
+  "sampleKeys": ["AAMkAGVmMDEzM", "a384ae19-4f06-3576-81fc-795707bb498b"]
 }
 -->
 ``` http
