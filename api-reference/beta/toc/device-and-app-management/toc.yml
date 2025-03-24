@@ -328,8 +328,6 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
-    - name: Get
-      href: ../../api/cloudpcsnapshot-get.md
     - name: List (deprecated)
       href: ../../api/virtualendpoint-list-snapshots.md
   - name: Cloud PC supported region
@@ -505,6 +503,8 @@ items:
       href: ../../resources/cloudpcpartneragentinstallresult.md
     - name: Cloud PC provisioning policy assignment
       href: ../../resources/cloudpcprovisioningpolicyassignment.md
+    - name: Cloud PC provisioning policy autopatch
+      href: ../../resources/cloudpcprovisioningpolicyautopatch.md
     - name: Cloud PC remote action capability
       href: ../../resources/cloudpcremoteactioncapability.md
     - name: Cloud PC resize validation result
@@ -1775,6 +1775,8 @@ items:
         href: ../../api/intune-apps-win32lobapp-delete.md
       - name: Update win32LobApp
         href: ../../api/intune-apps-win32lobapp-update.md
+      - name: enableApplicableArchitectures action
+        href: ../../api/intune-apps-win32lobapp-enableapplicablearchitectures.md
     - name: Windows AppX
       items:
       - name: Windows AppX
@@ -6396,7 +6398,7 @@ items:
     - name: Managed device
       items:
       - name: Managed device
-        href: ../../resources/intune-devices-manageddevice.md
+        href: ../../resources/intune-shared-manageddevice.md
       - name: Get managedDevice
         href: ../../api/intune-devices-manageddevice-get.md
       - name: Update managedDevice
