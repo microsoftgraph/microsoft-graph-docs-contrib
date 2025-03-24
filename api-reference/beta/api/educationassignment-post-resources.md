@@ -802,7 +802,7 @@ Content-type: application/json
 }
 ```
 
-### Example 8: Create and attach a speaker progress resource to an existing assignment
+### Example 8: Create an educationSpeakerProgressResource
 #### Request
 
 The following example shows a request.
