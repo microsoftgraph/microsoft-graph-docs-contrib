@@ -29,9 +29,9 @@ Represents the disaster recovery status of a Cloud PC, including the primary reg
 
  | Member | Description |
  | :------|:------------|
- | none | The Cloud PC device doesn't support cross-region disaster recovery actions. |
- | failover | The Cloud PC device supports the [cloudPcBulkDisasterRecoveryFailover](../resources/cloudpcbulkdisasterrecoveryfailover.md) action. |
- | failback | The Cloud PC device supports the [cloudPcBulkDisasterRecoveryFailback](../resources/cloudpcbulkdisasterrecoveryfailback.md) action. |
+ | none | The Cloud PC device doesn't support disaster recovery actions. |
+ | failover | The Cloud PC device supports disaster recovery failover action. |
+ | failback | The Cloud PC device supports disaster recovery failback action. |
  | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcDisasterRecoveryLicenseType values
@@ -39,7 +39,8 @@ Represents the disaster recovery status of a Cloud PC, including the primary reg
  | Member | Description |
  | :------| :-----------|
  | none | Default. The Cloud PC has no disaster recovery license. |
- | standard | A standard tier license with which the backup device of a Cloud PC is provisioned after failover action is triggered. |
+ | standard | Indicates the [Cloud PC cross region disaster recovery addon license]((https://learn.microsoft.com/en-us/windows-365/enterprise/cross-region-disaster-recovery)). With this license the backup device of the Cloud PC will be provisioned after failover action is triggered. |
+ | plus | Indicates the Cloud PC disaster recovery plus addon license. With this license the backup device will be provisioned after license is assigned. |
  | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
