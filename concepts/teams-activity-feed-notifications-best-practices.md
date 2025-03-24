@@ -42,6 +42,7 @@ Microsoft Teams displays notifications in both activity feed and toast formats. 
 * Inform the user about the notifications storage period in the activity feed. In Microsoft Teams, the storage period is 30 days.
     > [!NOTE]
     > The 30-day storage limit applies to all notifications. It's not specific to notifications sent through the activity feed notifications API.
+* For best practices about custom icons in activity feed notifications, see ***placeholder link***.
 
 ## Choose activity feed notifications or bot framework messages
 

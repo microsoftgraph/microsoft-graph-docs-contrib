@@ -121,7 +121,7 @@ In addition to the response, this pane also includes:
 
 ### Use the power of the client libraries
 
-For each REST API query that you select or enter in Graph Explorer, you can find how to make that call in each of the supported languages: C#, Java, JavaScript, Go, and PowerShell.
+For each REST API query that you select or enter in Graph Explorer, you can find how to make that call in each of the supported languages: C#, Java, JavaScript, Go and PowerShell.
 
 ![Screenshot of Graph Explorer with the code snippets tab highlighted](./images/code-snippets-screenshot.png)
 
