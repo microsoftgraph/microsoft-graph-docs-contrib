@@ -32,9 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |status|mailFolderOperationStatus|The status of the long-running operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
-| Relationship | Type | Description |
-|:-------------|:-----|:------------|
-|childOperation|[updateAllMessagesReadStateOperation](updateallmessagesreadstateoperation.md) collection|Represents long running operation in a mailFolder of type updateAllMessagesReadState.|
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.
