@@ -3184,6 +3184,24 @@
       "CreatedDateTime": "2024-10-09T17:27:30.6437075Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3f206c81-5b76-4e35-92e1-16d3fded3417",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForConditionalAccessBlockedSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForConditionalAccessBlockedSignIn](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForConditionalAccessBlockedSignIn?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        }
+      ],
+      "Id": "3f206c81-5b76-4e35-92e1-16d3fded3417",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-25T04:31:55.8601128Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
     }
   ]
 }
