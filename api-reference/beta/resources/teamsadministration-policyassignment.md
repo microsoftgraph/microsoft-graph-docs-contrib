@@ -1,7 +1,7 @@
 ---
 title: "policyAssignment resource type"
-description: "Represents details about the policy instance. Details includes displayName, assignmentType, policyID and GroupId"
-author: "Prasanna Patil"
+description: "Represents details about the policy instance. Details include displayName, assignmentType, policyID, and groupId"
+author: "praspatil05"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
 ms.subservice: "Teams"
@@ -14,13 +14,13 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details about the policy instance. Details includes displayName, assignmentType, policyID and GroupId.
+Represents details about the policy instance. Details include displayName, assignmentType, policyID, and groupId.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignmentType|microsoft.graph.teamsAdministration.assignmentType|Represents the type of assignment (group for group-based, direct for user based).The possible values are: `direct`, `group`, `unknownFutureValue`.|
+|assignmentType|microsoft.graph.teamsAdministration.assignmentType|Represents the type of assignment (group for group-based, direct for user based). The possible values are: `direct`, `group`, `unknownFutureValue`.|
 |displayName|String|Represents the name of the policy.|
 |groupId|String|Represents the group identifier.|
 |policyId|String|Represents the unique identifier for the policy. |

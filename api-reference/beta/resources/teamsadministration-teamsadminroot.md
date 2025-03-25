@@ -1,7 +1,7 @@
 ---
 title: "teamsAdminRoot resource type"
 description: "Represents a collection of user configurations"
-author: "Prasanna Patil"
+author: "praspatil05"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
 ms.subservice: "Teams"
@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md)
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userConfigurations|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Represents the user's configurations information who have accounts homed on Microsoft Teams|
+|userConfigurations|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Represents the user's configurations information who has accounts homed on Microsoft Teams|
 
 ## JSON representation
 The following JSON representation shows the resource type.

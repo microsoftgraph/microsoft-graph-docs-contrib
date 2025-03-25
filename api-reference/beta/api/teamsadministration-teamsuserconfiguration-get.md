@@ -1,7 +1,7 @@
 ---
 title: "Get teamsUserConfiguration"
 description: "Read the Teams user configurations for a specific user using userId (the identifier of User)."
-author: "Prasanna Patil"
+author: "praspatil05"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
 ms.subservice: "Teams"

@@ -1,7 +1,7 @@
 ---
 title: "assignedTelephoneNumber resource type"
-description: "Provides details about the telephone number and its corresponding assignment category. The assignment category can include values such as 'Primary', 'Private', and 'Alternate'."
-author: "Prasanna Patil"
+description: "Provides details about the telephone number and its corresponding assignment category. The assignment category can include values such as 'Primary,' 'Private,' and 'Alternate.'"
+author: "praspatil05"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
 ms.subservice: "Teams"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides details about the telephone number and its corresponding assignment category. The assignment category can include values such as 'Primary', 'Private', and 'Alternate'.
+Provides details about the telephone number and its corresponding assignment category. The assignment category can include values such as 'Primary,' 'Private,' and 'Alternate.'
 
 
 ## Properties

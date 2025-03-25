@@ -1,10 +1,10 @@
 ---
 title: "List teamsUserConfiguration objects"
 description: "Get user configurations for all Teams users belonging to a tenant."
-author: praspatil05
+author: "praspatil05"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
-ms.subservice: Teams
+ms.subservice: "Teams"
 doc_type: apiPageType
 ---
 
