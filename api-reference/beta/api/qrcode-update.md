@@ -57,7 +57,7 @@ PATCH /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an updated [qrCode](../resources/qrcode.md) object in the response body. The response doesn't include QR code image for standard QR code update. Image is provided only create QR code response.
+If successful, this method returns a `201 Created` response code and an updated [qrCode](../resources/qrcode.md) object in the response body. The response doesn't include QR code image for standard QR code update. Image is provided only in create QR code response.
 
 ## Examples
 
