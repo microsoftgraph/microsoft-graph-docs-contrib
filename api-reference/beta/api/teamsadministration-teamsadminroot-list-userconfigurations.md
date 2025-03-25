@@ -1,5 +1,5 @@
 ---
-title: "List teamsUserConfiguration objects"
+title: "List Teams Users Configurations"
 description: "Get user configurations for all Teams users belonging to a tenant."
 author: "praspatil05"
 ms.date: 03/19/2025
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [teamsUserConfiguration](../resources/teamsuserconfiguration.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) objects in the response body.
 
 ## Examples
 

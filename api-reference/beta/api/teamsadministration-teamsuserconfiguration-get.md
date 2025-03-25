@@ -1,5 +1,5 @@
 ---
-title: "Get teamsUserConfiguration"
+title: "Get Teams User Configuration"
 description: "Read the Teams user configurations for a specific user using userId (the identifier of User)."
 author: "praspatil05"
 ms.date: 03/19/2025
