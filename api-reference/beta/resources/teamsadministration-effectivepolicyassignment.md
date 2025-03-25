@@ -4,7 +4,7 @@ description: "Represents the effective policies associated with the User."
 author: "praspatil05"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
-ms.subservice: "Teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

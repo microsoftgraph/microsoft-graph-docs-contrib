@@ -4,7 +4,7 @@ description: "Provides details about the telephone number and its corresponding 
 author: "praspatil05"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
-ms.subservice: "Teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

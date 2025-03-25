@@ -4,7 +4,7 @@ description: "Contains user's information who has accounts homed on Microsoft Te
 author: "Prasanna Patil"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
-ms.subservice: "Teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
