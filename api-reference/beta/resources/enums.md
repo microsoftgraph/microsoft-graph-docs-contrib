@@ -712,6 +712,23 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | authenticationTransfer |
 | nativeAuth |
+| implicitAccessTokenAndGetResponseMode |
+| implicitIdTokenAndGetResponseMode |
+| implicitAccessTokenAndPostResponseMode |
+| implicitIdTokenAndPostResponseMode |
+| authorizationCodeWithoutPkce |
+| authorizationCodeWithPkce |
+| clientCredentials |
+| refreshTokenGrant |
+| encryptedAuthorizeResponse |
+| directUserGrant |
+| kerberos |
+| prtGrant |
+| seamlessSso |
+| prtBrokerBased |
+| prtNonBrokerBased |
+| onBehalfOf |
+| samlOnBehalfOf |
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
@@ -5000,6 +5017,7 @@ Possible values for user account types (group membership), per Windows definitio
 | inaccessibleCloudPcReports     |
 | inaccessibleCloudPcTrendReport |
 | unknownFutureValue             |
+| regionalInaccessibleCloudPcTrendReport |
 
 ### nonAdminSetting values
 

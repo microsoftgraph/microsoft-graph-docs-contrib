@@ -12,14 +12,13 @@ import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
 	  //other-imports
 )
 
 requestBody := graphsecurity.NewEstimateStatisticsPostRequestBody()
-additionalData := map[string]interface{}{
-	"statisticsOptions" : "includeRefiners, includeQueryStats, includeUnindexedStats, advancedIndexing, locationsWithoutHits", 
-}
-requestBody.SetAdditionalData(additionalData)
+statisticsOptions := graphmodels.INCLUDEREFINERS, INCLUDEQUERYSTATS, INCLUDEUNINDEXEDSTATS, ADVANCEDINDEXING, LOCATIONSWITHOUTHITS_STATISTICSOPTIONS 
+requestBody.SetStatisticsOptions(&statisticsOptions) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Searches().ByEdiscoverySearchId("ediscoverySearch-id").MicrosoftGraphSecurityEstimateStatistics().Post(context.Background(), requestBody, nil)

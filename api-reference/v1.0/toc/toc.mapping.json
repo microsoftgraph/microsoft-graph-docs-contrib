@@ -364,6 +364,9 @@
             "cloudPcGalleryImage",
             "cloudPcProvisioningPolicy",
             "cloudPcUserSetting"
+          ],
+          "complexTypes": [
+            "cloudPcProvisioningPolicyAutopatch"
           ]
         },
         {
@@ -386,6 +389,7 @@
             "printerShare"
           ],
           "complexTypes": [
+            "airPrintSettings",
             "appIdentity",
             "archivedPrintJob",
             "identity",
@@ -400,6 +404,7 @@
             "printTaskStatus",
             "printerCapabilities",
             "printerDefaults",
+            "printerDiscoverySettings",
             "printerLocation",
             "printerShareViewpoint",
             "printerStatus",
@@ -1356,6 +1361,20 @@
             "attackSimulationSimulationUserCoverage",
             "attackSimulationTrainingUserCoverage"
           ]
+        }
+      ]
+        },
+        {
+          "name": "Audit log query",
+          "overview": "../../resources/security-auditlogquery.md",
+          "resources": [
+            "microsoft.graph.security.auditLogQuery",
+            "microsoft.graph.security.auditLogRecord"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.auditData",
+            "microsoft.graph.security.defaultAuditData"
+          ]
         },
         {
           "name": "Partner billing reports",
@@ -1367,8 +1386,6 @@
             "microsoft.graph.partners.billing.operation",
             "microsoft.graph.partners.billing.unbilledUsage"
           ]
-        }
-      ]
     },
     {
       "name": "Search",
@@ -1481,6 +1498,14 @@
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
             "microsoft.graph.security.ediscoveryReviewTag"
+          ],
+          "childNodes": [
+            {
+              "name": "eDiscovery review set",
+              "resources": [
+                "microsoft.graph.security.ediscoveryReviewSetQuery"
+              ]
+            }
           ]
         },
         {

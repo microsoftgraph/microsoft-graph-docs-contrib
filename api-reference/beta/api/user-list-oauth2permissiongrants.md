@@ -42,6 +42,8 @@ GET /me/oauth2PermissionGrants
 GET /users/{id | userPrincipalName}/oauth2PermissionGrants
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
