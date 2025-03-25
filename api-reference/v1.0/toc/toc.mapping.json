@@ -985,7 +985,7 @@
                 "microsoftAuthenticatorAuthenticationMethod",
                 "passwordAuthenticationMethod",
                 "phoneAuthenticationMethod",
-                "platformAuthenticationMethod",
+                "platformCredentialAuthenticationMethod",
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod"
