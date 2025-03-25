@@ -4909,3 +4909,29 @@ Possible values for user account types (group membership), per Windows definitio
 | none |
 | all |
 | unknownFutureValue |
+
+### whatIfAnalysisReasons values 
+
+|Member|
+|:---|
+|notSet|
+|notEnoughInformation|
+|invalidCondition|
+|users|
+|workloadIdentities|
+|application|
+|userActions|
+|authenticationContext|
+|devicePlatform|
+|devices|
+|clientApps|
+|location|
+|signInRisk|
+|emptyPolicy|
+|invalidPolicy|
+|policyNotEnabled|
+|userRisk|
+|time|
+|insiderRisk|
+|authenticationFlow|
+|unknownFutureValue|
