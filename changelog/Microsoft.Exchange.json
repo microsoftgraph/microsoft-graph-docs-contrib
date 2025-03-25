@@ -1418,6 +1418,14 @@
         },
         {
           "Id": "b629a62c-07a8-4c32-bcbd-40e7c97c0d6b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "updateAllMessagesReadStateOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateAllMessagesReadStateOperation](https://learn.microsoft.com/en-us/graph/api/resources/updateallmessagesreadstateoperation?view=graph-rest-beta) resource type.",
+          "Target": "updateAllMessagesReadStateOperation"
+        },
+        {
+          "Id": "b629a62c-07a8-4c32-bcbd-40e7c97c0d6b",
           "ApiChange": "Method",
           "ChangedApiName": "updateAllMessagesReadState",
           "ChangeType": "Addition",
