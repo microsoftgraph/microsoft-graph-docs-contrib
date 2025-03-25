@@ -2119,6 +2119,13 @@
             "singleValueLegacyExtendedProperty",
             "multiValueLegacyExtendedProperty"
           ]
+        },
+        {
+          "name": "UpdateAllMessagesReadStateOperation",
+          "overview": "../../resources/updateallmessagesreadstateoperation.md",
+          "resources": [
+            "updateAllMessagesReadStateOperation"
+          ]
         }
       ]
     },

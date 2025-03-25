@@ -8,7 +8,7 @@ ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
-# updateAllMessagesReadStateOperation resource type
+# UpdateAllMessagesReadStateOperation resource type
 
 Namespace: microsoft.graph
 
