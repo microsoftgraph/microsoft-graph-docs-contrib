@@ -1,6 +1,6 @@
 ---
 title: "Get windowsSettingInstance"
-description: "Read the properties and relationships of a windowsSettingInstance object."
+description: "Read the properties and relationships of a windowsSettingInstance object by passing the Windows setting ID and Windows setting instance ID in the URL."
 author: "MS-Arko"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"

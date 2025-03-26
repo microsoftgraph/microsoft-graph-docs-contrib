@@ -1,6 +1,6 @@
 ---
 title: "Get windowsSetting"
-description: "Read the properties and relationships of a windowsSetting object."
+description: "Read the properties and relationships of a windowsSetting object by passing the ID of the setting in the URL."
 author: "MS-Arko"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
