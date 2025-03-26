@@ -139,7 +139,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/communications/callSettings/delegators?filter=allowedActions/makeCalls eq true 
+GET https://graph.microsoft.com/beta/me/communications/callSettings/delegators?$filter=allowedActions/makeCalls eq true 
 ```
 
 #### Response
