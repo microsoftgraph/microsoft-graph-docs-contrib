@@ -10,7 +10,7 @@ doc_type: enumTypes
 
 # Microsoft Graph teams administration enumeration values
 
-Namespace: microsoft.graph.teamsadministration
+Namespace: microsoft.graph.teamsAdministration
 
 ### accountType values 
 
@@ -49,6 +49,6 @@ Namespace: microsoft.graph.teamsadministration
 
 <!-- {
   "type": "#page.annotation",
-  "namespace": "microsoft.graph.teamsadministration"
+  "namespace": "microsoft.graph.teamsAdministration"
 }
 -->
