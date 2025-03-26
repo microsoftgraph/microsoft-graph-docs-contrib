@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: QR PIN
-toc.title: QR PIN
+toc.keywords: [ QRCodePin, QRCode ]
 ---
 
 # qrPin resource type
