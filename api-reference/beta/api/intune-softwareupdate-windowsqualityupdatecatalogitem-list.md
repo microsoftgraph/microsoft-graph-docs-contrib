@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 446
+Content-Length: 1379
 
 {
   "value": [
@@ -75,7 +75,29 @@ Content-Length: 446
       "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
       "kbArticleId": "Kb Article Id value",
       "classification": "security",
-      "isExpeditable": true
+      "qualityUpdateCadence": "outOfBand",
+      "isExpeditable": true,
+      "productRevisions": [
+        {
+          "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogProductRevision",
+          "displayName": "Display Name value",
+          "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+          "versionName": "Version Name value",
+          "productName": "Product Name value",
+          "osBuild": {
+            "@odata.type": "microsoft.graph.windowsQualityUpdateProductBuildVersionDetail",
+            "majorVersionNumber": 2,
+            "minorVersionNumber": 2,
+            "buildNumber": 11,
+            "updateBuildRevision": 3
+          },
+          "knowledgeBaseArticle": {
+            "@odata.type": "microsoft.graph.windowsQualityUpdateProductKnowledgeBaseArticle",
+            "articleId": "Article Id value",
+            "articleUrl": "https://example.com/articleUrl/"
+          }
+        }
+      ]
     }
   ]
 }

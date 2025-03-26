@@ -18,7 +18,7 @@ Restore a recently deleted directory object from [deleted items](../resources/di
 - [administrativeUnit](../resources/administrativeunit.md)
 - [application](../resources/application.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
-- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md
+- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
 - [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
 - [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
@@ -76,9 +76,11 @@ The following table lists the parameters that are required when you call this ac
 
 If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
 
-## Example
-### Request
+## Examples
 
+### Example 1: Restore a deleted directory object
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,8 +125,8 @@ POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-
 
 ---
 
-### Response
-Note: The response object shown here might be shortened for readability.
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -148,21 +150,9 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create deletedItem",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
+### Example 2: Restore a deleted user and remove conflicting proxy addresses
 
-### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -212,7 +202,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -240,7 +230,9 @@ Content-type: application/json
 }
 ```
 
-### Request
+### Example 3: Restore a deleted user and assign them a new userPrincipalName
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -290,7 +282,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

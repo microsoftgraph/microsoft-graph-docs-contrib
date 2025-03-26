@@ -10,8 +10,8 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Team team = new Team();
 team.setDisplayName("My Sample Team");
-team.setDescription("My Sample Team's Description");
-team.setFirstChannelName("My First Channel of the sample team");
+team.setDescription("My sample team's description");
+team.setFirstChannelName("My first channel of the sample team");
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
 additionalData.put("template@odata.bind", "https://graph.microsoft.com/beta/teamsTemplates('standard')");
 team.setAdditionalData(additionalData);

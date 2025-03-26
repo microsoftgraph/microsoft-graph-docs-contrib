@@ -8,9 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.Reports.RetrieveCrossRegionDisasterRecoveryReport;
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new RetrieveCrossRegionDisasterRecoveryReportPostRequestBody
 {
+	ReportName = CloudPcDisasterRecoveryReportName.CrossRegionDisasterRecoveryReport,
 	Filter = "DisasterRecoveryStatus eq 'Active outage'",
 	Select = new List<string>
 	{
@@ -21,11 +23,12 @@ var requestBody = new RetrieveCrossRegionDisasterRecoveryReportPostRequestBody
 		"DeviceId",
 		"CloudPCDeviceDisplayName",
 		"UserPrincipalName",
-		"IsCrossRegionEnabled",
-		"CrossRegionHealthStatus",
+		"EnabledDRType",
+		"DRHealthStatus",
 		"LicenseType",
 		"DisasterRecoveryStatus",
 		"CurrentRestorePointDateTime",
+		"BackupCloudPcStatus",
 		"ActivationExpirationDateTime",
 	},
 	Skip = 0,

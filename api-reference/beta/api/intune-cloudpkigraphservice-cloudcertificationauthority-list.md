@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
-ms.date: 10/15/2024
+ms.date: 08/01/2024
 ---
 
 # List cloudCertificationAuthorities
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
