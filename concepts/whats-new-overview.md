@@ -50,7 +50,7 @@ Updated the throttling thresholds for the [callRecord](/graph/api/resources/call
 
 ### Security
 
-Added support for `md5`, `sha256Ac` file hashes algorithms, displaying these hashes on the [fileDetails](/graph/api/resources/security-filedetails) property in a[FileEvidence](/graph/api/resources/security-fileevidence)
+Added support for the `md5`, `sha256Ac` file hash algorithms. They're now displayed in the [File details](/graph/api/resources/security-filedetails) property of the [FileEvidence](/graph/api/resources/security-fileevidence) resource.
 
 
 ## March 2025: New in preview only
