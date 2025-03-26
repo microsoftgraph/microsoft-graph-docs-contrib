@@ -107,7 +107,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added the [delete](https://review.learn.microsoft.com/en-us/graph/api/usersettings-delete-windows?view=graph-rest-beta) operation to the [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowssetting?view=graph-rest-beta) resource.",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/windowssetting-delete?view=graph-rest-beta) operation to the [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowssetting?view=graph-rest-beta) resource.",
           "Target": "windowsSetting"
         },
         {
@@ -115,7 +115,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "UserWindowsSettings.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the `UserWindowsSettings.ReadWrite.All` delegated permission to the read and write operations of [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowssetting?view=graph-rest-beta)",
+          "Description": "Added support for the `UserWindowsSettings.ReadWrite.All` delegated permission to the [list](https://learn.microsoft.com/en-us/graph/api/usersettings-list-windows?view=graph-rest-beta) operation of the [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowssetting?view=graph-rest-beta) resource.",
           "Target": "windowsSetting"
         },
         {
@@ -123,32 +123,16 @@
           "ApiChange": "Permission",
           "ChangedApiName": "UserWindowsSettings.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the `UserWindowsSettings.Read.All` delegated permission to the [list](https://learn.microsoft.com/en-us/graph/api/usersettings-list-windows?view=graph-rest-beta) method of [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowssetting?view=graph-rest-beta)",
-          "Target": "list"
+          "Description": "Added support for the `UserWindowsSettings.Read.All` delegated permission to the following operations of the [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowssetting?view=graph-rest-beta) resource: [get](https://learn.microsoft.com/en-us/graph/api/windowssetting-get?view=graph-rest-beta) and [list](https://learn.microsoft.com/en-us/graph/api/usersettings-list-windows?view=graph-rest-beta).",
+          "Target": "windowsSetting"
         },
         {
           "Id": "a52a64e7-7416-4741-9e92-ad78066adcd7",
           "ApiChange": "Permission",
           "ChangedApiName": "UserWindowsSettings.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the `UserWindowsSettings.Read.All` delegated permission to the [get](https://learn.microsoft.com/en-us/graph/api/windowssetting-get?view=graph-rest-beta) method of [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowssetting?view=graph-rest-beta)",
-          "Target": "get"
-        },
-        {
-          "Id": "a52a64e7-7416-4741-9e92-ad78066adcd7",
-          "ApiChange": "Permission",
-          "ChangedApiName": "UserWindowsSettings.Read.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the `UserWindowsSettings.Read.All` delegated permission to the [list](https://learn.microsoft.com/en-us/graph/api/windowssetting-list-instances?view=graph-rest-beta) method of [windowsSettingInstance](https://learn.microsoft.com/en-us/graph/api/resources/windowssettinginstance?view=graph-rest-beta)",
-          "Target": "list"
-        },
-        {
-          "Id": "a52a64e7-7416-4741-9e92-ad78066adcd7",
-          "ApiChange": "Permission",
-          "ChangedApiName": "UserWindowsSettings.Read.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the `UserWindowsSettings.Read.All` delegated permission to the [get](https://learn.microsoft.com/en-us/graph/api/windowssettinginstance-get?view=graph-rest-beta) method of [windowsSettingInstance](https://learn.microsoft.com/en-us/graph/api/resources/windowssettinginstance?view=graph-rest-beta)",
-          "Target": "get"
+          "Description": "Added support for the `UserWindowsSettings.Read.All` delegated permission to the following operations of the [windowsSettingInstance](https://learn.microsoft.com/en-us/graph/api/resources/windowssettinginstance?view=graph-rest-beta) resource: [get](https://learn.microsoft.com/en-us/graph/api/windowssettinginstance-get?view=graph-rest-beta) and [list](https://learn.microsoft.com/en-us/graph/api/windowssetting-list-instances?view=graph-rest-beta).",
+          "Target": "windowsSettingInstance"
         }
       ],
       "Id": "a52a64e7-7416-4741-9e92-ad78066adcd7",
