@@ -1,5 +1,5 @@
 ---
-title: "List windowsSetting objects"
+title: "List Windows settings"
 description: "Get a list of windowsSetting objects and their properties."
 author: "MS-Arko"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 04/19/2024
 ---
 
-# List windowsSetting objects
+# List Windows settings
 
 Namespace: microsoft.graph
 
