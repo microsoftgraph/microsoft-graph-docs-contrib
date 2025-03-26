@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 591
+Content-Length: 794
 
 {
   "value": [
@@ -71,11 +71,15 @@ Content-Length: 591
       "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
       "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
       "target": {
-        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "@odata.type": "microsoft.graph.organizationalUnitAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "targetType": "user",
-        "entraObjectId": "Entra Object Id value"
+        "organizationalUnitId": "Organizational Unit Id value",
+        "assignmentConflictSetting": {
+          "@odata.type": "microsoft.graph.organizationalUnitAssignmentConflictSetting",
+          "assignmentOverride": "denied",
+          "versionNumber": 13
+        }
       },
       "source": "policySets",
       "sourceId": "Source Id value"

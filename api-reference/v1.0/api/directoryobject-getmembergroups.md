@@ -105,6 +105,10 @@ POST /me/getMemberGroups
 POST /users/{id | userPrincipalName}/getMemberGroups
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Group memberships for a group.
 <!-- { "blockType": "ignored" } -->
 ```http

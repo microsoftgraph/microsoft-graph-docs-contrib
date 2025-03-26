@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 
 mgc-beta device-management virtual-endpoint reports retrieve-cross-region-disaster-recovery-report post --body '{\
+  "reportName": "crossRegionDisasterRecoveryReport",\
   "filter": "DisasterRecoveryStatus eq 'Active outage'",\
   "select": [\
     "Id",\
@@ -15,11 +16,12 @@ mgc-beta device-management virtual-endpoint reports retrieve-cross-region-disast
     "DeviceId",\
     "CloudPCDeviceDisplayName",\
     "UserPrincipalName",\
-    "IsCrossRegionEnabled",\
-    "CrossRegionHealthStatus",\
+    "EnabledDRType",\
+    "DRHealthStatus",\
     "LicenseType",\
     "DisasterRecoveryStatus",\
     "CurrentRestorePointDateTime",\
+    "BackupCloudPcStatus",\
     "ActivationExpirationDateTime"\
   ],\
   "skip": 0,\
