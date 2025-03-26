@@ -41,7 +41,12 @@ Updated the throttling thresholds for the [callRecord](/graph/api/resources/call
 
 ### Teamwork and communications | Messaging
 
-Use the **firstChannelName** property on a [team](/graph/api/resources/team) to set the name of the first channel created in a team.
+- Use the **firstChannelName** property on a [team](/graph/api/resources/team) to set the name of the first channel created in a team.
+- Enabled Azure China 21Vianet support for the following methods:
+  - [userTeamwork: sendActivityNotification](/graph/api/userteamwork-sendactivitynotification)
+  - [teamwork: sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients)
+  - [team: sendActivityNotification](/graph/api/team-sendactivitynotification)
+  - [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification)
 
 ## March 2025: New in preview only
 
@@ -56,6 +61,10 @@ Updated the Microsoft Entra built-in role required to [perform a new bulk upload
 - Use the **reportName** parameter on the [cloudPcReports: retrieveCrossRegionDisasterRecoveryReport](/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta&preserve-view=true) method to get the name of the Cloud PC disaster recovery report.
 - Added the enabledDRType, dRHealthStatus, and backupCloudPcStatus as supported columns for the [cloudPcReports: retrieveCrossRegionDisasterRecoveryReport](/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta&preserve-view=true) method and removed the isCrossRegionEnabled and crossRegionHealthStatus columns from the report.
 
+### Files
+
+Create and manage [sharePointGroup](/graph/api/resources/sharepointgroup?view=graph-rest-beta&preserve-view=true) and its members in a SharePoint Embedded container or SharePoint site.
+
 ### Teamwork and communications | Calls and online meetings
 
 Use the **isEndToEndEncryptionEnabled** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) and [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) to indicate whether end-to-end encryption (E2EE) is enabled for a meeting or virtual event session.
@@ -64,7 +73,16 @@ Use the **isEndToEndEncryptionEnabled** property on [onlineMeeting](/graph/api/r
 
 - [Reply with quote](/graph/api/chatmessage-replywithquote?view=graph-rest-beta&preserve-view=true) to a single chat message or multiple chat messages in a chat.
 - [Forward](/graph/api/chatmessage-forwardtochat?view=graph-rest-beta&preserve-view=true) a chat message, a channel message, or a channel message reply to a chat.
+- Enabled Azure China 21Vianet support for the following methods:
+  - [userTeamwork: sendActivityNotification](/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta&preserve-view=true)
+  - [teamwork: sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta&preserve-view=true)
+  - [team: sendActivityNotification](/graph/api/team-sendactivitynotification?view=graph-rest-beta&preserve-view=true)
+  - [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification?view=graph-rest-beta&preserve-view=true)
 - Use the `<codeblock><code></code></codeblock>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody?view=graph-rest-beta&preserve-view=true) resource to represent a code block in the message body in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true)
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **allowCopyingAndSharingMeetingContent** on the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) and [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) to indicate whether copying and sharing meeting content is enabled for the meeting.
 
 ## February 2025: New and generally available 
 
