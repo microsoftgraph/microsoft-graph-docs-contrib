@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcode-get-permissions.md)]
 
-[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
+[!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
 
@@ -36,9 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /me/authentication/qrcodepinmethod/standardQRCode
 GET /users/{id}/authentication/qrcodepinmethod/standardQRCode
-GET /me/authentication/qrcodepinmethod/temporaryQRCode
 GET /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 ```
 

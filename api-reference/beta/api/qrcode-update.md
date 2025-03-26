@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcode-update-permissions.md)]
 
-[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
@@ -59,7 +59,7 @@ PATCH /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 
 If successful, this method returns a `201 Created` response code and an updated [qrCode](../resources/qrcode.md) object in the response body. The QR code image is returned only when creating a QR code object. It's not returned when updating a standard QR code object.
 
-## Examples
+## Examples to create a standard QR code
 
 ### Request
 
@@ -110,5 +110,51 @@ Content-Type: application/json
     "errorCorrectionLevel": "l",
     "rawContent": "SGVsbG9Xb3JsZCEyTXlSYXdDb250ZW50"
   }
+}
+```
+## Examples to update a standard QR code
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_qrcode",
+  "@odata.type": "microsoft.graph.qrCode"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/me/authentication/qrCodePinMethod/standardQRCode
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.qrCode",
+  "expireDateTime": "2025-12-01T12:00:00Z",
+}
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.qrCode"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.qrCode",
+  "id": "44f2f040-ea9d-4283-9e7b-b63ddae391a9",
+  "expireDateTime": "2025-12-01T12:00:00Z",
+  "startDateTime": "2025-01-01T12:00:00Z",
+  "createdDateTime": "2025-03-04T21:27:46.9771036Z",
+  "lastUsedDateTime": "0001-01-01T00:00:00Z",
+  "image": null
 }
 ```

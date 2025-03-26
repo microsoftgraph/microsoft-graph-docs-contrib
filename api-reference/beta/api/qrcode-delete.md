@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [permissions-table](../includes/permissions/authentication-delete-qrcodepinmethod-permissions.md)]
 
-[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
@@ -30,9 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /me/authentication/qrcodepinmethod/standardQRCode
 DELETE /users/{id}/authentication/qrcodepinmethod/standardQRCode
-DELETE /me/authentication/qrcodepinmethod/temporaryQRCode
 DELETE /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 ```
 

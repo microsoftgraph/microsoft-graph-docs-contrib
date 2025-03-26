@@ -6,8 +6,8 @@ ms.date: 02/24/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-toc.title: QR code and PIN
-toc.title: QR code and PIN
+toc.title: QR Code and PIN
+toc.keywords: [ QRCodePin, QRCode ]
 ---
 
 # qrCodePinAuthenticationMethodConfiguration resource type
