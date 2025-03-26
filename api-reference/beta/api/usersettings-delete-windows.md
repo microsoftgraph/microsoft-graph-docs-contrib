@@ -36,7 +36,7 @@ The calling user must be assigned the _Microsoft 365 Backup Administrator_ [Micr
 }
 -->
 ``` http
-DELETE users/{user-id}@{tenant-id}/settings/windows
+DELETE /users/{user-id}@{tenant-id}/settings/windows
 ```
 
 > [!NOTE]
