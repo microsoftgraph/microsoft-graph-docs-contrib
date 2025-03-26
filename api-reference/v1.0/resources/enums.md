@@ -3456,9 +3456,10 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member  |
 | :------ |
+| unknown |
 | windows |
 | macOS   |
 | iOS     |
 | android |
 | linux   |
-| unknown |
+| unknownFutureValue |
