@@ -226,3 +226,7 @@ items:
       href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
     - name: Get multi-value property
       href: ../../api/multivaluelegacyextendedproperty-get.md
+- name: Complex types
+  items:
+  - name: Update all messages read state operation
+    href: ../../resources/updateallmessagesreadstateoperation.md
