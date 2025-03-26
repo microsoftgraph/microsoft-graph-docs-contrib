@@ -2227,6 +2227,34 @@ items:
         href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
       - name: Delete
         href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+    - name: Qr code pin authentication method
+      items:
+      - name: Qr code pin authentication method
+        href: ../../resources/qrcodepinauthenticationmethod.md
+      - name: Get
+        href: ../../api/qrcodepinauthenticationmethod-get.md
+      - name: Create
+        href: ../../api/authentication-put-qrcodepinmethod.md
+      - name: Delete
+        href: ../../api/authentication-delete-qrcodepinmethod.md
+    - name: Qr code
+      items:
+      - name: Qr code
+        href: ../../resources/qrcode.md
+      - name: Create or update
+        href: ../../api/qrcode-update.md
+      - name: Get
+        href: ../../api/qrcode-get.md
+      - name: Update
+        href: ../../api/qrcode-update.md
+      - name: Delete
+        href: ../../api/qrcode-delete.md
+    - name: Qr pin
+      items:
+      - name: Qr pin
+        href: ../../resources/qrpin.md
+      - name: Reset PIN
+        href: ../../api/qrpin-update.md
   - name: Authentication methods policy
     items:
     - name: Overview
@@ -2307,6 +2335,16 @@ items:
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+    - name: Qr code pin authentication method configuration
+      items:
+      - name: Qr code pin authentication method configuration
+        href: ../../resources/qrcodepinauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/qrcodepinauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/qrcodepinauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/qrcodepinauthenticationmethodconfiguration-delete.md
     - name: SMS
       items:
       - name: SMS
