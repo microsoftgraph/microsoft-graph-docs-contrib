@@ -8,7 +8,7 @@ doc_type: "conceptualPageType"
 ms.date: 11/12/2024
 ---
 
-# Microsoft Entra application management policies API overview 
+# Microsoft Entra application management policies API overview
 
 Namespace: microsoft.graph
 
@@ -30,13 +30,13 @@ A tenant default policy is a single object that always exists and is disabled by
 - **applicationRestrictions** allows targeting applications owned by the tenant (application objects).
 - **servicePrincipalRestrictions** allows targeting provisioned from another tenant (service principal objects).
 
-These properties enable an organization to separately control the configuration of apps that originate from their tenant vs. their tenant's instance of an externally owned application.  
+These properties enable an organization to separately control the configuration of apps that originate from their tenant vs. their tenant's instance of an externally owned application.
 
 ## App management policy for applications and service principals
 
 App management policies are defined in the [appManagementPolicy](appmanagementpolicy.md) resource, which contains a collection of policies with varying restrictions or different enforcement dates from what's defined in tenant default policy. One of these policies can be assigned to an application or service principal to override the tenant default policy.
 
-When the tenant default policy and an app management policy define the same restriction, the app management policy takes precedence.  If a restriction is set on an app management policy in a `disabled` state, that restriction won't apply to apps with that policy linked to them, regardless of what the tenant default policy would normally enforce.  Similarly, if a restriction is set on an app management policy in an `enabled` state, that restriction will apply to apps with that policy linked to them.  However, if the app management policy doesn't define any behavior for a certain restriction, it falls back to the tenant default policy's behavior. Only one app management policy can be assigned to an application or service principal.
+When the tenant default policy and an app management policy define the same restriction, the app management policy takes precedence. If a restriction is set on an app management policy in a `disabled` state, that restriction won't apply to apps with that policy linked to them, regardless of what the tenant default policy would normally enforce. Similarly, if a restriction is set on an app management policy in an `enabled` state, that restriction will apply to apps with that policy linked to them. However, if the app management policy doesn't define any behavior for a certain restriction, it falls back to the tenant default policy's behavior. Only one app management policy can be assigned to an application or service principal.
 
 > [!Note]
 > Neither the tenant default nor the app management policies block token issuance for existing applications. An application that doesn't meet the policy requirements continues to work; only the app creation/update operation that violates the policy is blocked.
@@ -45,16 +45,17 @@ When the tenant default policy and an app management policy define the same rest
 
 The application authentication methods policy API offers the following restrictions:
 
-| Restriction name       | Description                                                            | Examples                                                                                                    |
-| :--------------------- | :--------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
-| passwordAddition       | Restrict password secrets on applications altogether.                  | Block new passwords on applications created on or after '01/01/2019'.                                       |
-| passwordLifetime       | Enforce a max lifetime range for a password secret.                    | Restrict all new password secrets to a maximum of 30 days for applications created after 01/01/2015.        |
-| customPasswordAddition | Restrict a custom password secret on application or service principal. | Restrict all new custom (non-Azure AD generated) password secrets on applications created after 01/01/2015. |
-| symmetricKeyAddition   | Restrict symmetric keys on applications.                               | Block new symmetric keys on applications created on or after 01/01/2019.                                    |
-| symmetricKeyLifetime   | Enforce a max lifetime range for a symmetric key.                      | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.          |
-| asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key credentials to a maximum of 30 days for applications created after 01/01/2019.  |
-| trustedCertificateAuthority  | Enforce the list of trusted certificate authorities.      | Block all new asymmetric key credentials if the issuer is not listed in the trusted certificate authority list.   |
-| nonDefaultUriAddition  | Block new identifier URIs for apps except the "default" URI format. | Block new identifier URIs for apps unless they are of the format `api://{appId}` or `api://{tenantId}/{appId}`.   |
+| Restriction name            | Description                                                             | Examples                                                                                                                                      |
+| :-------------------------- | :---------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| asymmetricKeyLifetime       | Enforce a max lifetime range for an asymmetric key (certificate).       | Restrict all new asymmetric key credentials to a maximum of 30 days for applications created after 01/01/2019.                                |
+| audiences                   | Restricts creation or promotion of apps based on signInAudience values. | Restrict all new apps from being configured with multi-tenant audience or prevent existing apps from updating their audience to multi-tenant. |
+| customPasswordAddition      | Restrict a custom password secret on application or service principal.  | Restrict all new custom (non-Azure AD generated) password secrets on applications created after 01/01/2015.                                   |
+| nonDefaultUriAddition       | Block new identifier URIs for apps except the "default" URI format.     | Block new identifier URIs for apps unless they are of the format `api://{appId}` or `api://{tenantId}/{appId}`.                               |
+| passwordAddition            | Restrict password secrets on applications altogether.                   | Block new passwords on applications created on or after '01/01/2019'.                                                                         |
+| passwordLifetime            | Enforce a max lifetime range for a password secret.                     | Restrict all new password secrets to a maximum of 30 days for applications created after 01/01/2015.                                          |
+| symmetricKeyAddition        | Restrict symmetric keys on applications.                                | Block new symmetric keys on applications created on or after 01/01/2019.                                                                      |
+| symmetricKeyLifetime        | Enforce a max lifetime range for a symmetric key.                       | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.                                            |
+| trustedCertificateAuthority | Enforce the list of trusted certificate authorities.                    | Block all new asymmetric key credentials if the issuer is not listed in the trusted certificate authority list.                               |
 
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).
@@ -71,12 +72,12 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 
 ### Summary of key differences between the tenant default policy and app management policies
 
-| Tenant default policy                                                              | App management policy                                                                                                                               |
-| ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Policy always exists.                                                              | Policy objects can be created or updated to override default policy.                                                                                |
-| Allows only single restriction object definition for all resources.                | Allows multiple policy objects to be defined, but only one can be applied to a resource.                                                            |
-| Allows distinction of restrictions for application objects vs. service principals. | Policy can be applied to either an application or service principal object.                                                                         |
-| Applies all restrictions configured to all apps or service principals.             | Applies the restrictions configured in the resource policy to the specified app or service principal.  Anything not defined inherits from the default policy. |
+| Tenant default policy                                                              | App management policy                                                                                                                                        |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Policy always exists.                                                              | Policy objects can be created or updated to override default policy.                                                                                         |
+| Allows only single restriction object definition for all resources.                | Allows multiple policy objects to be defined, but only one can be applied to a resource.                                                                     |
+| Allows distinction of restrictions for application objects vs. service principals. | Policy can be applied to either an application or service principal object.                                                                                  |
+| Applies all restrictions configured to all apps or service principals.             | Applies the restrictions configured in the resource policy to the specified app or service principal. Anything not defined inherits from the default policy. |
 
 ## Requirements
 
