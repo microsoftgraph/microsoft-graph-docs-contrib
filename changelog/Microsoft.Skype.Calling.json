@@ -62,6 +62,7 @@
     },
     {
       "ChangeList": [
+        {
           "Id": "03c89b83-ac3b-4ece-a385-1d71ece68725",
           "ApiChange": "Property",
           "ChangedApiName": "allowCopyingAndSharingMeetingContent",
