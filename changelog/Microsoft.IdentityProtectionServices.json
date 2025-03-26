@@ -1,6 +1,24 @@
 {
   "changelog": [
-       {
+    {
+      "ChangeList": [
+        {
+          "Id": "48b5e987-0bf6-4123-b91b-fcfba08a745e",
+          "ApiChange": "Property",
+          "ChangedApiName": "applicationFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationFilter** property to the [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessApplications"
+        }
+      ],
+      "Id": "48b5e987-0bf6-4123-b91b-fcfba08a745e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-03-20T22:19:32.3422617Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
        "ChangeList": [
           {
           "Id": "fe06198f-3161-48d1-8bc8-c0edb038d428",
