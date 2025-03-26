@@ -1,6 +1,6 @@
 ---
 title: "List Windows settings"
-description: "Get a list of windowsSetting objects and their properties."
+description: "Get a list of windowsSetting objects and their properties for a user."
 author: "MS-Arko"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"

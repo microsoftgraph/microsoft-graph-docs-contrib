@@ -1,6 +1,6 @@
 ---
 title: "List instances"
-description: "Get a list of windowsSettingInstance objects and their properties."
+description: "Get a list of windowsSettingInstance objects and their properties for a user."
 author: "MS-Arko"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
