@@ -2227,9 +2227,10 @@ items:
         href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
       - name: Delete
         href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
-    - name: Qr code pin authentication method
+    - name: QR Code and PIN
+      displayName: QRCodePin, QRCode
       items:
-      - name: Qr code pin authentication method
+      - name: QR Code and PIN
         href: ../../resources/qrcodepinauthenticationmethod.md
       - name: Get
         href: ../../api/qrcodepinauthenticationmethod-get.md
@@ -2237,9 +2238,9 @@ items:
         href: ../../api/authentication-put-qrcodepinmethod.md
       - name: Delete
         href: ../../api/authentication-delete-qrcodepinmethod.md
-    - name: Qr code
+    - name: QR code
       items:
-      - name: Qr code
+      - name: QR code
         href: ../../resources/qrcode.md
       - name: Create or update
         href: ../../api/qrcode-update.md
@@ -2249,9 +2250,9 @@ items:
         href: ../../api/qrcode-update.md
       - name: Delete
         href: ../../api/qrcode-delete.md
-    - name: Qr pin
+    - name: QR PIN
       items:
-      - name: Qr pin
+      - name: QR PIN
         href: ../../resources/qrpin.md
       - name: Reset PIN
         href: ../../api/qrpin-update.md
@@ -2335,9 +2336,10 @@ items:
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-    - name: Qr code pin authentication method configuration
+    - name: QR Code and PIN
+      displayName: QRCodePin, QRCode
       items:
-      - name: Qr code pin authentication method configuration
+      - name: QR Code and PIN
         href: ../../resources/qrcodepinauthenticationmethodconfiguration.md
       - name: Get
         href: ../../api/qrcodepinauthenticationmethodconfiguration-get.md
