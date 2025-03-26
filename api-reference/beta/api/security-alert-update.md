@@ -77,7 +77,8 @@ Content-length: 2450
     "assignedTo": "secAdmin@contoso.com",
     "classification": "truePositive",
     "determination": "malware",
-    "status": "inProgress"
+    "status": "inProgress",
+    "CustomDetails": {"newKey":"newValue"}
 }
 ```
 
@@ -162,6 +163,7 @@ Content-type: application/json
     "lastActivityDateTime": "2021-05-02T07:56:58.222Z",
     "comments": [],
     "evidence": [],
-    "systemTags" : []
+    "systemTags" : [],
+    "customDetails": {"newKey":"newValue"}
 }
 ```

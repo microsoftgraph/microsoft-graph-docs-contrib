@@ -239,6 +239,9 @@ The following JSON representation shows the resource type.
   ],
   "additionalData": {
     "@odata.type": "microsoft.graph.security.dictionary"
+  },
+  "customDetails": {
+    "@odata.type": "microsoft.graph.security.dictionary"
   }
 }
 ```
