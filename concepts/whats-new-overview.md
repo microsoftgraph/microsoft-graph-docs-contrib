@@ -31,6 +31,16 @@ Use the **autopatch** property on [cloudPcProvisioningPolicy](/graph/api/resourc
 
 [Use the app folder in OneDrive and SharePoint](/graph/onedrive-sharepoint-appfolder) for secure application settings and data storage with Microsoft Graph.
 
+### Identity and access | Identity and sign-in
+
+Deprecated the following resources and their associated APIs that support the Microsoft Entra lifecycle announcements APIs.
+
+- [changeItemBase](/graph/api/resources/changeItemBase) resource type
+- [announcement](/graph/api/resources/changeItemBase) resource type
+- [roadmap](/graph/api/resources/changeItemBase) resource type
+
+The APIs will stop returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](https://learn.microsoft.com/en-us/entra/fundamentals/whats-new).
+
 ### Microsoft Graph connector
 
 The management of Microsoft Graph connectors in the Microsoft Teams admin center will be deprecated on April 14, 2025. Going forward, you can manage Microsoft Graph connectors from the **Search & intelligence** section in the [Microsoft 365 admin center](/microsoftsearch/manage-connector).

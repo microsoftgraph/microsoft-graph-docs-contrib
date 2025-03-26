@@ -1,5 +1,5 @@
 ---
-title: "roadmap resource type"
+title: "roadmap resource type (deprecated)"
 description: "Represents the Microsoft Entra product roadmap, which comprises public previews and general availability releases."
 author: "garretraziel"
 ms.date: 11/20/2024
@@ -8,11 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
-# roadmap resource type
+# roadmap resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [entra-lifecycle-announcements-deprecation-note](../includes/entra-lifecycle-announcements-deprecation-note.md)]
 
 Represents the Microsoft Entra product roadmap, which comprises public previews and general availability releases.
 
