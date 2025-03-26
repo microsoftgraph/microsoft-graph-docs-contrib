@@ -1,6 +1,6 @@
 ---
 title: "Delete windowsSetting"
-description: "Delete a windowsSetting object."
+description: "Delete all windowsSetting objects of a user."
 author: "ndyc1107"
 ms.date: 03/11/2025
 ms.localizationpriority: medium
@@ -26,9 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/usersettings-delete-windows-permissions.md)]
-The calling user must be assigned the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
-- Microsoft 365 Backup Administrator
+The calling user must be assigned the _Microsoft 365 Backup Administrator_ [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -39,9 +38,9 @@ The calling user must be assigned the following [Microsoft Entra roles](/entra/i
 ``` http
 DELETE users/{user-id}@{tenant-id}/settings/windows
 ```
-> [!Note]
-> + {tenant-id} in the HTTP request URL must match the tenant id of the calling user.
-> + Please check [How to find your Microsoft Entra tenant ID](/entra/fundamentals/how-to-find-tenant) to find your tenant id.
+
+> [!NOTE]
+> The `{tenant-id}` value must match the tenant ID of the calling user. To find your tenant ID, see [How to find your Microsoft Entra tenant ID](/entra/fundamentals/how-to-find-tenant) 
 
 ## Request headers
 
@@ -76,7 +75,7 @@ DELETE https://graph.microsoft.com/beta/users/87d349ed-44d7-43e1-9a83-5f2406dee5
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
