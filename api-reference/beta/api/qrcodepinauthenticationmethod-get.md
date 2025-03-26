@@ -36,7 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /users/{id}/authentication/qrCodePinMethod
+GET /users/{id}/authentication/qrcodepinmethod
 ```
 
 ## Optional query parameters
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod
+GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrcodepinmethod
 ```
 
 

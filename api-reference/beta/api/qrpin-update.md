@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /users/{id}/authentication/qrCodePinMethod/pin
+PATCH /users/{id}/authentication/qrcodepinmethod/pin
 ```
 
 ## Request headers
@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod/pin
+PATCH https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrcodepinmethod/pin
 Content-Type: application/json
 
 {

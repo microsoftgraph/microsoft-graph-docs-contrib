@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-put-qrcodepinmethod-permissions.md)]
 
-[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
