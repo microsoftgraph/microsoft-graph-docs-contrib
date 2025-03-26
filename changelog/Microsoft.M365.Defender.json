@@ -2621,6 +2621,32 @@
       {
         "ChangeList": [
           {
+            "Id": "be0bbc45-7ba6-4c71-9851-4ba18e08a78d",
+            "ApiChange": "Property",
+            "ChangedApiName": "md5",
+            "ChangeType": "Addition",
+            "Description": "Added the **md5** property to the [fileDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-fileDetails?view=graph-rest-beta) resource.",
+            "Target": "fileDetails"
+          },
+          {
+            "Id": "be0bbc45-7ba6-4c71-9851-4ba18e08a78d",
+            "ApiChange": "Property",
+            "ChangedApiName": "sha256Ac",
+            "ChangeType": "Addition",
+            "Description": "Added the **sha256Ac** property to the [fileDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-fileDetails?view=graph-rest-beta) resource.",
+            "Target": "fileDetails"
+          }
+        ],
+        "Id": "be0bbc45-7ba6-4c71-9851-4ba18e08a78d",
+        "Cloud": "Review",
+        "Version": "beta",
+        "CreatedDateTime": "2025-03-24T20:20:31.9076507Z",
+        "WorkloadArea": "Security",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "f54d0402-d5cf-4a4f-b8b2-80f786490ad5",
             "ApiChange": "Property",
             "ChangedApiName": "md5",
