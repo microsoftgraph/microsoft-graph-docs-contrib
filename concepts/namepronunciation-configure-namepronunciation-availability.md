@@ -81,7 +81,7 @@ After you set the permissions, use the following command, specifying `true` for 
 Alternatively, you can make name pronunciation unavailable for your organization by using the following command. Specify `false` for the value of `-IsEnabledInOrganization`.
 
 ```powershell
-  Get-MgBetaAdminPeopleNamePronunciation -IsEnabledInOrganization:$false
+  Update-MgBetaAdminPeopleNamePronunciation -IsEnabledInOrganization:$false
 ```
 
 ## Configure name pronunciation settings by using the Microsoft Graph REST API
