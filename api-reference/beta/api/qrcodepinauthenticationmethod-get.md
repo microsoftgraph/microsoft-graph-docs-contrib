@@ -19,7 +19,6 @@ Retrieve a user's [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenti
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
 
 <!-- {
   "blockType": "permissions",

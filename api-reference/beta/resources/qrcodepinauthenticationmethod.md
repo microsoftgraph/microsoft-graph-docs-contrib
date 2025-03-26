@@ -6,6 +6,7 @@ ms.date: 02/25/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: QR code and PIN
 ---
 
 # qrCodePinAuthenticationMethod resource type
@@ -35,9 +36,9 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|pin|[qrPin](../resources/qrpin.md)|The PIN is linked to the QR Code auth method of the user|
+|pin|[qrPin](../resources/qrpin.md)|The PIN linked to the QR Code auth method of the user.|
 |standardQRCode|[qrCode](../resources/qrcode.md)|Standard QR code is primary QR code of the user with lifetime upto 395 days (13 months). There can be only one active standard QR code for the user.|
-|temporaryQRCode|[qrCode](../resources/qrcode.md)|Temporary QR code has lifetime upto 12 hours. It should be issued when user doesn't have access to their standard QR code. There can be only one active temporary QR code for the user. |
+|temporaryQRCode|[qrCode](../resources/qrcode.md)|Temporary QR code has lifetime up to 12 hours. It can be issued when the user doesn't have access to their standard QR code. There can be only one active temporary QR code for the user. |
 
 ## JSON representation
 The following JSON representation shows the resource type.

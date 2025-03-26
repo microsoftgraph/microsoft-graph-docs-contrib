@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a qrCode object.
+Read the properties and relationships of a [qrCode](../resources/qrcode.md) object.
 
 ## Permissions
 

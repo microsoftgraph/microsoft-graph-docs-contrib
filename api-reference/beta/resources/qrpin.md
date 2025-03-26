@@ -6,6 +6,7 @@ ms.date: 02/24/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: QR PIN
 ---
 
 # qrPin resource type
@@ -19,7 +20,7 @@ Represents the PIN for the user in a [QR code authentication method](../resource
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Reset PIN](../api/qrpin-update.md)|[qrPin](../resources/qrpin.md)|Resets a user's PIN by creating a new qrPIN object.|
+|[Reset PIN](../api/qrpin-update.md)|[qrPin](../resources/qrpin.md)|Reset a user's PIN by creating a new **qrPIN** object.|
 
 ## Properties
 |Property|Type|Description|

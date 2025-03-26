@@ -1,5 +1,5 @@
 ---
-title: "Update qrCode"
+title: "Create or Update qrCode"
 description: "Update the properties of a qrCode object."
 author: "AanjuSingh"
 ms.date: 03/03/2025
@@ -8,13 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Create or Update a QR code
+# Create or Update QR code
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use this api to create a standard or temporay QR code. A QR code can only be created if there is no active QR code. You can only update standard QR code, and not temporary QR code. Only  **expireDateTime** property can be updated for standard QR code.
+Create a standard or temporary QR code, if there is no active QR code, or update a standard QR code. Only the **expireDateTime** property can be updated for a standard QR code.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -57,7 +57,7 @@ PATCH /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an updated [qrCode](../resources/qrcode.md) object in the response body. The response doesn't include QR code image for standard QR code update. Image is provided only in create QR code response.
+If successful, this method returns a `201 Created` response code and an updated [qrCode](../resources/qrcode.md) object in the response body. The QR code image is returned only when creating a QR code object. It's not returned when updating a standard QR code object.
 
 ## Examples
 
