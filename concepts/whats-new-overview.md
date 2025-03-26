@@ -39,7 +39,7 @@ Deprecated the following resources and their associated APIs that support the Mi
 - [announcement](/graph/api/resources/changeItemBase) resource type
 - [roadmap](/graph/api/resources/changeItemBase) resource type
 
-The APIs will stop returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](https://learn.microsoft.com/entra/fundamentals/whats-new).
+The APIs will stop returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
 
 ### Microsoft Graph connector
 
