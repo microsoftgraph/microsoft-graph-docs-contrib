@@ -10,7 +10,7 @@ doc_type: enumTypes
 
 # Microsoft Graph teams administration enumeration values
 
-Namespace: microsoft.graph.teamsAdministration
+Namespace: microsoft.graph.teamsadministration
 
 ### accountType values 
 
