@@ -34,6 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+GET /me/mailFolders/{mailFolderId}/operations
 GET /users/{usersId}/mailFolders/{mailFolderId}/operations
 ```
 
