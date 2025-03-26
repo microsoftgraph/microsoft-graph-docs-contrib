@@ -72,7 +72,6 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd@4562bcc8-c436-4f95-b7c0-4f8ce89dca5e/settings/windows
 ```
 
-
 ### Response
 
 The following example shows the response.
