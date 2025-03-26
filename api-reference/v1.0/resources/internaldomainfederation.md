@@ -54,7 +54,7 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 | rejectMfaByFederatedIdp | Microsoft Entra ID always performs MFA and rejects MFA that's performed by the federated identity provider. |
 
 >[!NOTE]
->**federatedIdpMfaBehavior** is an evolved version of the **SupportsMfa** property of the [Set-EntraDomainFederationSettings PowerShell cmdlet](/powershell/module/microsoft.entra/set-entradomainfederationsettings). 
+>**federatedIdpMfaBehavior** is an evolved version of the **SupportsMfa** property of the **Domain Federation setting**.
 >+ Switching between **federatedIdpMfaBehavior** and **SupportsMfa** is not supported.
 >+ When **federatedIdpMfaBehavior** property is set, Microsoft Entra ID ignores the **SupportsMfa** setting.
 >+ If the **federatedIdpMfaBehavior** property is never set, Microsoft Entra ID will continue to honor the **SupportsMfa** setting.
