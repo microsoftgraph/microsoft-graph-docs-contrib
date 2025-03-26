@@ -64,7 +64,7 @@ Use the **isEndToEndEncryptionEnabled** property on [onlineMeeting](/graph/api/r
 
 ### Security
 
-- Added **customDetails** property to security alerts [Get and Update](/graph/api/resources/security-alert)
+- Added **customDetails** property, a dictionary with user defined key-value pairs, to security alerts [Get](/graph/api/resources/security-alert) and [Update](/graph/api/resources/security-alert-update)
 
 ## February 2025: New and generally available 
 
