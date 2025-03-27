@@ -1479,16 +1479,7 @@
                 "conditionalAccessPolicy",
                 "namedLocation",
                 "authenticationContextClassReference",
-                "conditionalAccessTemplate",
-                "useractioncontext",
-                "usersignin",
-                "whatifanalysisresult",
-                "applicationcontext",
-                "authcontext",
-                "serviceprincipalsignin",
-                "signinconditions",
-                "signincontext",
-                "signinidentity"
+                "conditionalAccessTemplate"
               ],
               "childNodes": [
                 {
