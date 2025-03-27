@@ -256,8 +256,6 @@ items:
               href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
             - name: Get compliant devices Conditional Access sign-in metrics
               href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
-            - name: Get Conditional Access blocked sign-in metrics
-              href: ../../api/serviceactivity-getmetricsforconditionalaccessblockedsignin.md
             - name: Get SAML sign-in metrics
               href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
       - name: Health monitoring
@@ -392,8 +390,6 @@ items:
         href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
       - name: Get compliant devices Conditional Access sign-in metrics
         href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
-      - name: Get Conditional Access blocked sign-in metrics
-        href: ../../api/serviceactivity-getmetricsforconditionalaccessblockedsignin.md
       - name: Get SAML sign-in metrics
         href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
 - name: Microsoft 365 usage reports
