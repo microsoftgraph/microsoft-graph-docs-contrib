@@ -14,10 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the application that the authenticating identity is attempting to access
-
-
-Inherits from [signInContext](../resources/signincontext.md).
+Represents the application that the authenticating identity is attempting to access. Inherits from [signInContext](../resources/signincontext.md).
 
 
 ## Properties

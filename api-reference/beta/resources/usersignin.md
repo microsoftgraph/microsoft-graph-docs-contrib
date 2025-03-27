@@ -14,10 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines details of the user that is signing in.
-
-
-Inherits from [signInIdentity](../resources/signinidentity.md).
+Defines details of the user that is signing in. Inherits from [signInIdentity](../resources/signinidentity.md).
 
 
 ## Properties

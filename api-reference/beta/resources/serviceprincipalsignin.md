@@ -14,10 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the service principal that is signing in
-
-
-Inherits from [signInIdentity](../resources/signinidentity.md).
+Represents the service principal that is signing in. Inherits from [signInIdentity](../resources/signinidentity.md).
 
 
 ## Properties
