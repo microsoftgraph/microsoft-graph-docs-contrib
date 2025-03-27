@@ -11,4 +11,4 @@ ms.topic: include
 | [Calls](/graph/api/resources/call) | 50,000 requests in a 15-second period, per application per tenant |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2,000 meetings/user each month |
 | [Presence](/graph/api/resources/presence)   | 1,500 requests in a 30-second period, per application per tenant |
-| [Virtual event](/graph/api/resources/virtualevent) | 750 `GET` requests in 30 seconds per app across all tenants, and  15 `Create`,`Update` & `Delete` **(CUD)** requests 30 seconds per app across all tenants. |
+| [Virtual event](/graph/api/resources/virtualevent) | 750 `GET` requests in a 30-second period per app across all tenants, and  15 `Create`,`Update` & `Delete` **(CUD)** requests in a 30-second period per app across all tenants.|
