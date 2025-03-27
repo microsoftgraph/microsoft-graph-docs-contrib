@@ -1246,8 +1246,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 294ce7c9-31ba-490a-ad7d-97a7d075e4ed | 7e9a077b-3711-42b9-b7cb-5fa5f3f7fea7 |
-| DisplayText | Read and write all chat messages | Read and write all chat messages |
-| Description | Allows an app to read and write all chat messages in Microsoft Teams, without a signed-in user. | Allows an app to read and write all one-to-one and group chats in Microsoft Teams, without a signed-in user. Does not allow sending messages. |
+| DisplayText | Read and write all chat messages | Read and write user chat messages |
+| Description | Allows an app to read and write all chat messages in Microsoft Teams, without a signed-in user. | Allows an app to read and write 1 on 1 or group chats threads, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
