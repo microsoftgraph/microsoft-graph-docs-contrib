@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.  Clients can use this API to determine whether a display name or mail nickname is valid before trying to [create](group-post-groups.md) a Microsoft 365 group. To validate the properties of an existing group, use the [group: validateProperties](group-validateproperties.md) function.
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies. Clients can use this API to determine whether a display name or mail nickname is valid before trying to [create](group-post-groups.md) a Microsoft 365 group. To validate the properties of an existing group, use the [group: validateProperties](group-validateproperties.md) function.
 
 The following policy validations are performed for the display name and mail nickname properties:
 1. Validate the prefix and suffix naming policy
@@ -20,7 +20,9 @@ The following policy validations are performed for the display name and mail nic
 3. Validate that the mail nickname is unique
 
 > [!NOTE]
-> Invalid characters are not part of the policy validations. The following characters are invalid: @ () \ \[] " ; : <> , SPACE.
+> - Invalid characters are not part of the policy validations. The following characters are invalid: @ () \ \[] " ; : <> , SPACE.
+>
+> - Admins with the User Administrator and Global Administrator roles are exempted from the custom banned words and prefix and suffix naming policies, allowing them to create groups by using blocked words and with their own naming conventions.
 
 This API only returns the first validation failure that is encountered. If the properties fail multiple validations, only the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy. To learn more about configuring naming policies, see [Configure naming policy](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell).
 
@@ -58,6 +60,8 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 
 If successful and there are no validation errors, the method returns `204 No Content` response code. It doesn't return anything in the response body.
+
+When a Global Administrator or User Administrator initiates a request that violates custom banned words or prefix and suffix naming policies, the API returns a `204 No Content` response code, as these administrators are exempt from naming policies.
 
 If the request is invalid, the method returns `400 Bad Request` response code. An error message with details about the invalid request is returned in the response body.
 

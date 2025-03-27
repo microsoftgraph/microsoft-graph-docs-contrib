@@ -19,6 +19,11 @@ The following validations are performed for the display name and mail nickname p
 2. Validate the custom banned words policy
 3. Validate the mail nickname is unique
 
+> [!NOTE]
+> - Invalid characters are not part of the policy validations. The following characters are invalid: @ () \ \[] " ; : <> , SPACE.
+>
+> - Admins with the User Administrator and Global Administrator roles are exempted from the custom banned words and prefix and suffix naming policies, allowing them to create groups by using blocked words and with their own naming conventions.
+
 This API returns with the first failure encountered. If one or more properties fail multiple validations, only the property with the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -55,6 +60,8 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 
 If successful and there are no validation errors, the method returns `204 No Content` response code. It doesn't return anything in the response body.
+
+When a Global Administrator or User Administrator initiates a request that violates custom banned words or prefix and suffix naming policies, the API returns a `204 No Content` response code, as these administrators are exempt from naming policies.
 
 If the request is invalid, the method returns `400 Bad Request` response code. An error message with details about the invalid request is returned in the response body.
 
