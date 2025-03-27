@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 03/17/2025
+ms.date: 03/24/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1432,10 +1432,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | - | c645bb69-adc4-4242-b620-02e635f03bf6 |
-| DisplayText | - | Read all Configuration Monitoring entities |
-| Description | - | Allows the app to read all Configuration Monitoring entities on behalf of the signed-in user. |
-| AdminConsentRequired | - | Yes |
+| Identifier | aca929ec-9830-44dc-bda1-85cf938aaa95 | c645bb69-adc4-4242-b620-02e635f03bf6 |
+| DisplayText | Read all Configuration Monitoring entities | Read all Configuration Monitoring entities |
+| Description | Allows the app to read all Configuration Monitoring entities, without a signed-in user. | Allows the app to read all Configuration Monitoring entities on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -1443,10 +1443,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | - | 54505ce9-e719-41f7-a7cc-dbe114e1d811 |
-| DisplayText | - | Read and write all Configuration Monitoring entities |
-| Description | - | Allows the app to read and write all Configuration Monitoring entities on behalf of the signed-in user. |
-| AdminConsentRequired | - | Yes |
+| Identifier | cfa85bfb-2ee8-4e13-8e7f-489e57a015a1 | 54505ce9-e719-41f7-a7cc-dbe114e1d811 |
+| DisplayText | Read and write all Configuration Monitoring entities | Read and write all Configuration Monitoring entities |
+| Description | Allows the app to read and write all Configuration Monitoring entities, without a signed-in user. | Allows the app to read and write all Configuration Monitoring entities on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -7907,6 +7907,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### User.ReadWrite.CrossCloud
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 5652f862-b626-407b-a3e6-248aeb95763c | - |
+| DisplayText | Read and write profiles of users that originate from an external cloud. | - |
+| Description | Allows the app to read and update external cloud user profiles without a signed in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### User.RevokeSessions.All
 
 | Category | Application | Delegated |
@@ -8214,6 +8225,7 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 | ChannelMeetingRecording.Read.Group | 30a40618-9b50-4764-b62e-b04023a8f5f3 | Read the recordings of all channel meetings associated with this team | Allows the app to read recordings of all the channel meetings associated with this team, without a signed-in user. |
 | ChannelMeetingTranscript.Read.Group | 37e59e88-1a46-482b-b623-0a4aa6abdf67 | Read the transcripts of all channel meetings associated with this team | Allows the app to read transcripts of all the channel meetings associated with this team, without a signed-in user. |
 | ChannelMember.Read.Group | 7e3614f5-3467-419c-9c63-dd0bbd2a88f9 | Read the members of channels of a team | Read the members of channels of a team, without a signed-in user |
+| ChannelMember.ReadWrite.Group | 1342a0fc-cd33-4c75-ad65-d5defcfc7232 | Read and write the members of channels of a team | Read and write the members of channels of a team, without a signed-in user |
 | ChannelMessage.Read.Group | 19103a54-c397-4bcd-be5a-ef111e0406fa | Read this team's channel messages | Allows the app to read this team's channel's messages, without a signed-in user. |
 | ChannelMessage.Send.Group | 3e38d437-815b-4368-9f19-e39dea9a6c7f | Send messages to this team's channels | Allows the app to send messages to this team's channels, without a signed-in user. |
 | ChannelSettings.Read.Group | 0a7b3084-8d18-46f5-8aef-b5b829292c6f | Read the names, descriptions, and settings of this team's channels | Allows the app to read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |
