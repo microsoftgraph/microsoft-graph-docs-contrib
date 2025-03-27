@@ -44,6 +44,11 @@ GET /users/{userId}/communications/callSettings/delegators
 
 This method supports the `filter` and `count` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+|Scenario|Parameter|Example|
+|:---|:---|:---|
+|Get the delegators who granted the signed-in user permission to perform calls.|`$filter`|`GET /me/communications/callSettings/delegators?$filter=allowedActions/makeCalls eq true`|
+|Get the number of delegators configured for the signed-in user.|`$count`|`GET /me/communications/callSettings/delegators?$count=true`|
+
 ## Request headers
 
 |Name|Description|
@@ -139,7 +144,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/communications/callSettings/delegators?$filter=allowedActions/makeCalls eq true 
+GET https://graph.microsoft.com/beta/me/communications/callSettings/delegators?filter=allowedActions/makeCalls eq true 
 ```
 
 #### Response

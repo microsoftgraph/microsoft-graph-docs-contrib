@@ -46,7 +46,7 @@ This method supports the `filter` and `count` OData query parameters to help cus
 
 |Scenario|Parameter|Example|
 |:---|:---|:---|
-|Get the delegates who granted the signed-in user permission to perform calls.|`$filter`|`GET /me/communications/callSettings/delegates?$filter=allowedActions/makeCalls eq true`|
+|Get the delegates who granted the signed-in user permission to receive calls.|`$filter`|`GET /me/communications/callSettings/delegates?$filter=allowedActions/receiveCalls eq true`|
 |Get the number of delegates configured for the signed-in user.|`$count`|`GET /me/communications/callSettings/delegates?$count=true`|
 
 ## Request headers
