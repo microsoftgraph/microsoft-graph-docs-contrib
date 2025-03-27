@@ -223,9 +223,9 @@ For details about what topics are supported for each scenario, see the specific 
 > [!NOTE]
 > Custom icons in activity feed notifications are available only in [Teams public developer preview](/microsoftteams/platform/resources/dev-preview/developer-preview-intro?tabs=new-teams-client).
 
-You can use custom icons in activity feed notifications to help users easily identify the source and intent of the notification. A notification with custom icon adds a unique and polished feel, enhancing user engagement with your app. The following screenshot shows an activity feed notification with a custom icon:
+You can use custom icons in activity feed notifications to help users easily identify the source and intent of the notification. A notification with a custom icon adds a unique and Teams-native feel, enhancing user engagement with your app. The following screenshot shows an activity feed notification with a custom icon:
 
-***Placeholder text for screenshots***
+:::image type="content" source="images/custom-icon-notification-acitivity-feed.png" alt-text="Screenshot shows activity feed notifications with custom icons." lightbox="images/custom-icon-notification-acitivity-feed.png":::
 
 ### Add custom icons in activity feed notifications
 
@@ -233,7 +233,7 @@ To add custom icons in activity feed notifications sent to a user, follow these 
 
 1. Add the custom icons in the Teams app package. The following screenshot is an example:
 
-***Placeholder text for screenshot***
+    :::image type="content" source="images/teams-app-package-custom-icon.png" alt-text="Screenshot shows a Teams app package with custom icons for acitivity feed notifications." lightbox="images/teams-app-package-custom-icon.png":::
 
 1. In the Teams app manifest, set `manifestVersion` to `devPreview`.
 
@@ -249,9 +249,9 @@ To add custom icons in activity feed notifications sent to a user, follow these 
               "description": "Announcement Created Activity",
               "templateText": "{actor} posted an announcement",
               "allowedIconIds": [
-                "announcementCreated”,
+                "announcementCreated",
                 "announcementCreatedBlue",
-                “announcementCreatedRed”
+                "announcementCreatedRed"
               ]
             }
           ],
@@ -269,7 +269,7 @@ To add custom icons in activity feed notifications sent to a user, follow these 
 1. Call the notifications API beta endpoint and include the `iconId` attribute in the payload. The value of the `iconId` must match one of the icon IDs in the `allowedIconIds` for the specified activity type.
 
     ```http
-    POST https://graph.microsoft.com/beta/users/345c1db-541a-4b2b-b8d1-8dc8abcdf9df/teamwork/sendactivitynotification
+    POST https://graph.microsoft.com/beta/users/0000000-0000-0000-0000-000000000000/teamwork/sendactivitynotification
     {
       "topic": {
         "source": "text",
@@ -284,7 +284,7 @@ To add custom icons in activity feed notifications sent to a user, follow these 
     }
     ```
 
-For custom icon design guidelines, see ***placeholder link***. To try out custom icons in activity feed notifications in a sample Teams app, see ***placeholder link to code sample***.  
+For custom icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-icons). To try out custom icons in activity feed notifications in a sample Teams app, see [Placeholder link](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main).  
 
 ## Examples
 
