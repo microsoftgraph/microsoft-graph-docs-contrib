@@ -1,6 +1,32 @@
 {
   "changelog": [
       {
+        "ChangeList": [
+          {
+            "Id": "6a814e1a-0f37-4c0c-8528-20fe037ec6e1",
+            "ApiChange": "Header",
+            "ChangedApiName": "get-content",
+            "ChangeType": "Addition",
+            "Description": "Added the `forceInfectedDownload` prefer header to the [Get Content](https://learn.microsoft.com/en-us/graph/api/driveitem-get-contentstream?view=graph-rest-beta) method to enable the download of infected files when specfically requested.",
+            "Target": "driveItem"
+          },
+          {
+            "Id": "6a814e1a-0f37-4c0c-8528-20fe037ec6e1",
+            "ApiChange": "Header",
+            "ChangedApiName": "get-content",
+            "ChangeType": "Addition",
+            "Description": "Added the `forceInfectedDownload` prefer header to the [Get ContentStream](https://learn.microsoft.com/en-us/graph/api/driveitem-get-contentstream?view=graph-rest-beta) method to enable the download of infected files when specfically requested.",
+            "Target": "driveItem"
+          }
+        ],
+        "Id": "6a814e1a-0f37-4c0c-8528-20fe037ec6e1",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-03-28T10:30:00.3354597Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
+      },
+      {
           "ChangeList": [
             {
               "Id": "5d4a0643-925e-4659-a4e7-f1dac8dbfa18",
