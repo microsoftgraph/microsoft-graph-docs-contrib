@@ -354,6 +354,7 @@ Content-Type: application/json
       "emailAddress": "frederick.cormier@contoso.com",
       "totalAttendanceInSeconds": 322,
       "role": "Organizer",
+      "registrantId": null,
       "registrationId": null,
       "identity": {
         "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
