@@ -48,6 +48,13 @@ This method does not support query methods.
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Range|bytes={range-start}-{range-end}/{size}. Optional. Use to download a partial range of bytes from the file. Specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).|
+| Prefer | Optional. String. Set to one of the `prefer` values documented below.  |
+
+### Prefer header values
+
+| Name                          | Description                                                                                             |
+|:------------------------------|:--------------------------------------------------------------------------------------------------------|
+|forceInfectedDownload|If provided, request can download an infected file. For delegated calls, if the tenant setting to disallow infected file download is enabled, then only tenant admins or global admins may download the file. Application-Only requests will download an infected file regardless of tenant settings. |
 
 ## Request body
 
