@@ -103,11 +103,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": {
+  "value": 
+    {
+      "@odata.type": "#microsoft.graph.platformCredentialAuthenticationMethod",
       "id": "R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1",
       "displayName": "My Macbook Pro",
-      "creationDateTime": "2023-09-02T04:16:49Z"
-  }
+      "creationDateTime": "2023-09-02T04:16:49Z",
+      "keyStrength": "normal",
+      "platform": "macOS"
+    }
 }
 ```
 
