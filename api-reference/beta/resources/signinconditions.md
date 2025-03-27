@@ -1,10 +1,10 @@
 ---
 title: "signInConditions resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents sign-in parameters of the identity that is authenticating"
+author: "kvenkit"
 ms.date: 03/21/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,22 +14,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents sign-in parameters of the identity that is authenticating
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationFlow|[authenticationFlow](../resources/authenticationflow.md)|**TODO: Add Description**|
-|clientAppType|conditionalAccessClientApp|**TODO: Add Description**.The possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`, `unknownFutureValue`.|
-|country|String|**TODO: Add Description**|
-|deviceInfo|[deviceInfo](../resources/deviceinfo.md)|**TODO: Add Description**|
-|devicePlatform|conditionalAccessDevicePlatform|**TODO: Add Description**.The possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`, `linux`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `linux`.|
-|insiderRiskLevel|insiderRiskLevel|**TODO: Add Description**.The possible values are: `none`, `minor`, `moderate`, `elevated`, `unknownFutureValue`.|
-|ipAddress|String|**TODO: Add Description**|
-|servicePrincipalRiskLevel|riskLevel|**TODO: Add Description**.The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
-|signInRiskLevel|riskLevel|**TODO: Add Description**.The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
-|userRiskLevel|riskLevel|**TODO: Add Description**.The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
+|authenticationFlow|[authenticationFlow](../resources/authenticationflow.md)| Type of authentication flow. Possible values are: deviceCodeFlow or authenticationTransfer|
+|clientAppType|conditionalAccessClientApp|Client application type.The possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`, `unknownFutureValue`.|
+|country|String||
+|deviceInfo|[deviceInfo](../resources/deviceinfo.md)|Information about the device used for the sign-in|
+|devicePlatform|conditionalAccessDevicePlatform|Device platform.The possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`, `linux`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `linux`.|
+|insiderRiskLevel|insiderRiskLevel|Insider risk associated with the authenticating user.The possible values are: `none`, `minor`, `moderate`, `elevated`, `unknownFutureValue`.|
+|ipAddress|String|Ip address of the authenticating identity|
+|servicePrincipalRiskLevel|riskLevel|Risk associated with the service principal.The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
+|signInRiskLevel|riskLevel|Sign-in risk associated with the user.The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
+|userRiskLevel|riskLevel|The authenticating user's risk level.The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 
 ## Relationships
 None.

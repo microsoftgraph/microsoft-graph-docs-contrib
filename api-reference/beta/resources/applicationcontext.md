@@ -1,10 +1,10 @@
 ---
 title: "applicationContext resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents the application that the authenticating identity is attempting to access"
+author: "kvenkit"
 ms.date: 03/21/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the application that the authenticating identity is attempting to access
 
 
 Inherits from [signInContext](../resources/signincontext.md).
@@ -23,7 +23,7 @@ Inherits from [signInContext](../resources/signincontext.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|includeApplications|String collection|**TODO: Add Description**|
+|includeApplications|String collection|{appId} of the application|
 
 ## Relationships
 None.

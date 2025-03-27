@@ -1,10 +1,10 @@
 ---
 title: "userSignIn resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Defines details of the user that is signing in."
+author: "kvenkit"
 ms.date: 03/21/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines details of the user that is signing in.
 
 
 Inherits from [signInIdentity](../resources/signinidentity.md).
@@ -23,9 +23,9 @@ Inherits from [signInIdentity](../resources/signinidentity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|externalTenantId|String|**TODO: Add Description**|
-|externalUserType|conditionalAccessGuestOrExternalUserTypes|**TODO: Add Description**.The possible values are: `none`, `internalGuest`, `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`, `otherExternalUser`, `serviceProvider`, `unknownFutureValue`.|
-|userId|String|**TODO: Add Description**|
+|externalTenantId|String|TenantId of the external user|
+|externalUserType|conditionalAccessGuestOrExternalUserTypes|Category that the external user belongs to.The possible values are: `none`, `internalGuest`, `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`, `otherExternalUser`, `serviceProvider`, `unknownFutureValue`.|
+|userId|String|ObjectId of the user|
 
 ## Relationships
 None.

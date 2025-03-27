@@ -1,5 +1,5 @@
 ---
-title: "Evaluate ConditionalAccessPolicy"
+title: "conditionalAccessRoot: evaluate"
 description: "Evaluates the applicability of Conditional Access Policies based on the provided sign-in properties"
 author: "kvenkit"
 ms.date: 03/21/2025
@@ -46,26 +46,26 @@ POST /identity/conditionalAccess/evaluate
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters. For the evaluation to provide accurate results, include as many details about the sign-in as possible. This includes but is not limited to details such as the ip address, country, risk level, device information etc.
 
 The following table lists the parameters that are required when you call this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|signInIdentity|[signInIdentity](../resources/signinidentity.md)|Defines the identity that is authenticating. This can be a user, external user or service principal|
-|signInContext|[signInContext](../resources/signincontext.md)|Defines the action perfomed by the authenticating identity. This could be accessing an application, performing a user action or accessing data protected by an authentication context |
-|signInConditions|[signInConditions](../resources/signinconditions.md)|Defines the conditions of the authentication. This includes details like location, device information, risk information etc|
-|appliedPoliciesOnly|Boolean|This property controls whether to include all the policies in the response or only the policies that apply to the authentication event|
+|signInIdentity|[signInIdentity](../resources/signinidentity.md)|Defines the identity that is authenticating. This can be a user, external user or single tenant service principal. Required.|
+|signInContext|[signInContext](../resources/signincontext.md)|Defines the action perfomed by the authenticating identity. This could be accessing an application, performing a user action or accessing data protected by an authentication context. Required. |
+|signInConditions|[signInConditions](../resources/signinconditions.md)|Defines the conditions of the authentication. This includes details sych as location, device information, risk information etc. Required. |
+|appliedPoliciesOnly|Boolean|This property controls whether to include all policies in the response or only the policies that would apply to the authentication event. Optional.|
 
 
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [whatIfAnalysisResult](../resources/whatifanalysisresult.md) collection in the response body.
+If successful, this action returns a `200 OK` response code and a [whatIfAnalysisResult](../resources/whatifanalysisresult.md) collection in the response body. The response indicates whether each policy in the tenant would apply or not based on the sign-in properties provided in the request body.
 
 ## Examples
 
-### Example 1: Identify conditional access policies that apply to a user accessing an application
+### Example 1: Identify conditional access policies that would apply to a user accessing an application. 
 
 ### Request
 
@@ -278,7 +278,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Identify conditional access policies that apply to a user accessing a sensitive file protected by an authentication context
+### Example 2: Identify conditional access policies that would apply to a user accessing a sensitive file protected by an authentication context
 
 The following example shows a request.
 <!-- {
@@ -418,7 +418,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Identify conditional access policies that apply to a user performing a user action
+### Example 3: Identify conditional access policies that would apply to a user performing a user action
 
 The following example shows a request.
 <!-- {
@@ -442,6 +442,116 @@ Content-Type: application/json
   "signInConditions": {
   },
   "appliedPoliciesOnly": true
+}
+```
+
+### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.whatIfAnalysisResult)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.whatIfAnalysisResult)",
+    "value": [
+        {
+            "id": "11083471-5a50-43ad-90c0-23f1af0869e1",
+            "templateId": null,
+            "displayName": "Require MFA for register security information",
+            "createdDateTime": "2024-10-16T15:06:45.0788027Z",
+            "modifiedDateTime": "2025-03-26T19:37:35.2284292Z",
+            "state": "enabledForReportingButNotEnforced",
+            "policyApplies": true,
+            "analysisReasons": "notSet",
+            "partialEnablementStrategy": null,
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "insiderRiskLevels": null,
+                "clients": null,
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "authenticationFlows": null,
+                "applications": {
+                    "includeApplications": [],
+                    "excludeApplications": [],
+                    "includeUserActions": [
+                        "urn:user:registersecurityinfo"
+                    ],
+                    "includeAuthenticationContextClassReferences": [],
+                    "applicationFilter": null,
+                    "networkAccess": null,
+                    "globalSecureAccess": null
+                },
+                "users": {
+                    "includeUsers": [
+                        "15dc174b-f34c-4588-ac45-61d6e05dce93",
+                        "f7ca74b0-8562-4083-b66c-0476f942cfd0"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength": {
+                    "id": "00000000-0000-0000-0000-000000000002",
+                    "createdDateTime": "2021-12-01T08:00:00Z",
+                    "modifiedDateTime": "2021-12-01T08:00:00Z",
+                    "displayName": "Multifactor authentication",
+                    "description": "Combinations of methods that satisfy strong authentication, such as a password + SMS",
+                    "policyType": "builtIn",
+                    "requirementsSatisfied": "mfa",
+                    "allowedCombinations": [
+                        "windowsHelloForBusiness",
+                        "fido2",
+                        "x509CertificateMultiFactor",
+                        "deviceBasedPush",
+                        "temporaryAccessPassOneTime",
+                        "temporaryAccessPassMultiUse",
+                        "password,microsoftAuthenticatorPush",
+                        "password,softwareOath",
+                        "password,hardwareOath",
+                        "password,x509CertificateSingleFactor",
+                        "password,x509CertificateMultiFactor",
+                        "password,sms",
+                        "password,voice",
+                        "federatedMultiFactor",
+                        "microsoftAuthenticatorPush,federatedSingleFactor",
+                        "softwareOath,federatedSingleFactor",
+                        "hardwareOath,federatedSingleFactor",
+                        "sms,federatedSingleFactor",
+                        "voice,federatedSingleFactor"
+                    ],
+                    "combinationConfigurations": []
+                }
+            }
+        }
+    ]
 }
 ```
 
