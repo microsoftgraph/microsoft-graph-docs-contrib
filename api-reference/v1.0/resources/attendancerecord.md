@@ -26,7 +26,9 @@ Contains information associated with an attendance record in a [meetingAttendanc
 |:--------------------|:--------|:-----------|
 | attendanceIntervals | [attendanceInterval](attendanceinterval.md) collection | List of time periods between joining and leaving a meeting. |
 | emailAddress | String | Email address of the user associated with this attendance record. |
-| identity | [identity](identity.md) | Identity of the user associated with this attendance record. |
+| externalRegistrationInformation | [virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md) | The external information for a virtual event registration. |
+| identity | [identity](identity.md) | Identity of the user associated with this attendance record. The specific type will be one of the following derived types of [identity](identity.md), depending on the type of the user: [communicationsUserIdentity](communicationsUserIdentity.md), [azureCommunicationServicesUserIdentity](azureCommunicationServicesUserIdentity.md). |
+| registrationId | String | Unique identifier of a virtualEventRegistration. Presents for all participant who has registered for the virtualEventWebinar. |
 | role | String | Role of the attendee. Possible values are: `None`, `Attendee`, `Presenter`, and `Organizer`.  |
 | totalAttendanceInSeconds | Int32 | Total duration of the attendances in seconds. |
 
@@ -45,16 +47,24 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.attendanceRecord",
+  "emailAddress": "String",
+  "totalAttendanceInSeconds": "Int32",
+  "role": "String(None|Attendee|Presenter|Organizer)",
+
+  "registrationId": "String",
+  "identity": {
+    "@odata.type": "#microsoft.graph.identity"
+  },
   "attendanceIntervals": [
     {
       "@odata.type": "#microsoft.graph.attendanceInterval"
     }
   ],
-  "emailAddress": "String",
-  "identity": {
-    "@odata.type": "#microsoft.graph.identity"
-  },
-  "role": "String(None|Attendee|Presenter|Organizer)",
-  "totalAttendanceInSeconds": "Int32"
+  "externalRegistrationInformation": {
+    "@odata.type": "#microsoft.graph.virtualEventExternalRegistrationInformation",
+      "referrer": "String",
+      "registrationId": "String"
+  }
 }
 ```
+

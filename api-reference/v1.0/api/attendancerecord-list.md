@@ -247,7 +247,7 @@ Content-Type: application/json
       "emailAddress": "frederick.cormier@contoso.com",
       "totalAttendanceInSeconds": 322,
       "role": "Organizer",
-      "registrantId": null,
+      "registrationId": null,
       "identity": {
         "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
         "displayName": "Frederick Cormier",
@@ -259,7 +259,11 @@ Content-Type: application/json
           "leaveDateTime": "2021-10-05T04:43:49.7702391Z",
           "durationInSeconds": 322
         }
-      ]
+      ],
+      "externalRegistrationInformation": {
+      "referrer": "Facebook",
+      "registrationId": "myExternalRegistrationId"
+      },
     },
     {
       "emailAddress": "lisa.adkins@contoso.com",
@@ -277,7 +281,11 @@ Content-Type: application/json
           "leaveDateTime": "2021-10-04T23:18:57.5639338Z",
           "durationInSeconds": 314
         }
-      ]
+      ],
+      "externalRegistrationInformation": {
+        "referrer": "Facebook",
+        "registrationId": "anotherExternalRegistrationId"
+      },
     }
   ]
 }

@@ -244,3 +244,7 @@ Content-Type: application/json
   ]
 }
 ```
+
+> [!TIP] 
+> If your scenario needs the `externalEventInformation`, requires an explicit call to the **[GET attendance report API](../api/meetingattendancereport-get.md)**.  
+> This data is not returned by default when querying the virtual event or online meeting object.  
