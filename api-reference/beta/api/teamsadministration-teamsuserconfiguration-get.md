@@ -86,27 +86,43 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.teamsAdministration.teamsUserConfiguration",
-    "id": "5c802b19-3600-83f1-1767-7b9edc7f38ab",
-    "userPrincipalName": "String",
-    "tenantId": "String",
-    "effectivePolicyAssignments": [
-      {
-        "@odata.type": "microsoft.graph.teamsAdministration.effectivePolicyAssignment"
-      }
-    ],
-    "telephoneNumbers": [
-      {
-        "@odata.type": "microsoft.graph.teamsAdministration.assignedTelephoneNumber"
-      }
-    ],
-    "isEnterpriseVoiceEnabled": "Boolean",
-    "featureTypes": [
-      "String"
-    ],
-    "accountType": "String",
-    "createdDateTime": "String (timestamp)",
-    "modifiedDateTime": "String (timestamp)"
+      "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/teams/userConfigurations/$entity",   
+      "id": "5c802b19-3600-83f1-1767-7b9edc7f38ab",
+      "userPrincipalName": "AdeleV@contoso.com",
+      "tenantId": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+      "effectivePolicyAssignments": [
+        {
+          "policyType": "TeamsCallingPolicy",
+          "policyAssignmnet": {
+            "displayName": "AllOn"
+            "assignmentType": "group"
+            "policyId": "f7593e81-772a-4455-88a3-fc9e5ebc1e4a"
+            "groupId": "75ae6229-35fe-4b01-ae7f-7c50439d239c"
+          }
+        },
+        {
+          "policyType": "TeamsMeetingPolicy",
+          "policyAssignmnet": {
+            "displayName": "CustomPolicy"
+            "assignmentType": "direct"
+            "policyId": "J93PmFHwFcLZhWfYcBlv9pn-hG-kUWkcxmkDvpwgacw"
+          }
+        }
+      ],
+      "telephoneNumbers": [
+        {
+          "telephoneNumber": "+13235533696",
+          "assignmentCategory": "primary"
+        }
+      ],
+      "isEnterpriseVoiceEnabled": false,
+      "featureTypes": [
+        "Teams",
+        "CallingPlan"
+      ],
+      "accountType": "user",
+      "createdDateTime": ""2025-01-07T09:08:50.9115993Z",
+      "modifiedDateTime": ""2025-01-07T09:08:50.9115993Z"
   }
 }
 ```
