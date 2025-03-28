@@ -2959,7 +2959,8 @@
                 "delegationSettings"
               ],
               "complexTypes": [
-                "delegateAllowedActions"
+                "delegateAllowedActions",
+                "userCloudCommunication"
               ]
             },
             {
