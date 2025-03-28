@@ -48,6 +48,11 @@ Updated the throttling thresholds for the [callRecord](/graph/api/resources/call
   - [team: sendActivityNotification](/graph/api/team-sendactivitynotification)
   - [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification)
 
+### Security
+
+Added support for the `md5`, `sha256Ac` file hash algorithms. They're now displayed in the [File details](/graph/api/resources/security-filedetails) property of the [FileEvidence](/graph/api/resources/security-fileevidence) resource.
+
+
 ## March 2025: New in preview only
 
 ### Applications
