@@ -1,6 +1,6 @@
 ---
 title: "educationSpeakerCoachSettings resource type"
-description: "The feedback types that students should receive from the Speaker Coach."
+description: "Represents the feedback types that students should receive from the Speaker Coach."
 author: "v-rmanda"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The feedback types that students should receive from the Speaker Coach.
-
+Represents the feedback types that students should receive from the Speaker Coach.
 
 ## Properties
 |Property|Type|Description|
@@ -37,15 +36,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.educationSpeakerCoachSettings",
-  "deliverySettings": {
-    "@odata.type": "microsoft.graph.educationSpeakerCoachDeliverySettings"
-  },
-  "contentSettings": {
-    "@odata.type": "microsoft.graph.educationSpeakerCoachContentSettings"
-  },
-  "audienceEngagementSettings": {
-    "@odata.type": "microsoft.graph.educationSpeakerCoachAudienceEngagementSettings"
-  }
+  "audienceEngagementSettings": {"@odata.type": "microsoft.graph.educationSpeakerCoachAudienceEngagementSettings"},
+  "contentSettings": {"@odata.type": "microsoft.graph.educationSpeakerCoachContentSettings"},
+  "deliverySettings": {"@odata.type": "microsoft.graph.educationSpeakerCoachDeliverySettings"}
 }
 ```
 
