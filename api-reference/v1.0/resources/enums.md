@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 11/21/2024
+ms.date: 03/10/2025
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
@@ -732,6 +732,14 @@ Namespace: microsoft.graph
 | ------------------ |
 | issuerSubject |
 | policyOID |
+| unknownFutureValue |
+
+### x509CertificateCRLValidationConfigurationState values
+
+| Member |
+| ---- |
+| disabled |
+| enabled |
 | unknownFutureValue |
 
 ### attestationLevel values
