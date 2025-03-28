@@ -53,7 +53,7 @@ GET /users/{userId}/communications/callSettings/delegates/{delegateId}
 
 ## Optional query parameters
 
-This method supports the `filter` and `count` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). The following table lists examples.
+This method doesn't support OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
