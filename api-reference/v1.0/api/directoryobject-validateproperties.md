@@ -151,6 +151,10 @@ Content-type: application/json
 ```
 
 #### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 422
 Content-Type: application/json
