@@ -19,7 +19,7 @@ Describes a complex property that represents an access token's unique identifier
 |Property|Type|Description|
 |:---|:---|:---|
 |issuedAtDateTime|DateTimeOffset|Represents when the authentication for this token occurred.|
-|uniqueTokenIdentifier|String|Represents the token identifier claim. This ID is a unique, per-token identifier that is case-sensitive.|
+|uniqueTokenIdentifier|String|Represents the token identifier claim. This ID is a unique per-token identifier that is case-sensitive.|
 
 ## Relationships
 None.
