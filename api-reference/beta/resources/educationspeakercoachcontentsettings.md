@@ -1,6 +1,6 @@
 ---
 title: "educationSpeakerCoachContentSettings resource type"
-description: "The content related feedback types that students should receive from the Speaker Coach."
+description: "Represents the content-related feedback types that students should receive from the Speaker Coach."
 author: "v-rmanda"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The content related feedback types that students should receive from the Speaker Coach.
-
+Represents the content-related feedback types that students should receive from the Speaker Coach.
 
 ## Properties
 |Property|Type|Description|
