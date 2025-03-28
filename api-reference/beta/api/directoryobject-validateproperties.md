@@ -20,11 +20,11 @@ The following validations are performed for the display name and mail nickname p
 3. Validate the mail nickname is unique
 
 > [!NOTE]
-> - Invalid characters are not part of the policy validations. The following characters are invalid: @ () \ \[] " ; : <> , SPACE.
+> - The following characters are considered invalid characters and aren't part of the policy validations: `@ () \ \[] " ; : <> , SPACE`.
 >
 > - Admins with the User Administrator and Global Administrator roles are exempted from the custom banned words and prefix and suffix naming policies, allowing them to create groups by using blocked words and with their own naming conventions.
 
-This API returns with the first failure encountered. If one or more properties fail multiple validations, only the property with the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+This API returns with the first failure encountered. If one or more properties fail multiple validations, only the property with the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -53,8 +53,8 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type   |Description|
 |:---------------|:--------|:----------|
 |entityType|String| `Group` is the only supported entity type. |
-|displayName|String| The display name of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required. |
-|mailNickname|String| The mail nickname of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required. |
+|displayName|String| The display name of the group to validate. Either **displayName** or **mailNickname** must be specified. |
+|mailNickname|String| The mail nickname of the group to validate. Either **displayName** or **mailNickname** must be specified. |
 |onBehalfOfUserId|Guid| The object ID of the user to impersonate when calling the API. The validation results are for the onBehalfOfUserId's attributes and roles. |
 
 ## Response
@@ -65,18 +65,18 @@ When a Global Administrator or User Administrator initiates a request that viola
 
 If the request is invalid, the method returns `400 Bad Request` response code. An error message with details about the invalid request is returned in the response body.
 
-If there is a validation error, the method returns `422 Unprocessable Entity` response code. An error message and a collection of error details is returned in the response body.
+If there's a validation error, the method returns `422 Unprocessable Entity` response code. An error message and a collection of error details is returned in the response body.
 
 ## Examples
 
-This is an example of a successful validation request.
+### Example 1: A successful validation request
 
-### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_validateproperties"
+  "name": "directoryobject_validateproperties_validrequest"
 }-->
 ``` http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
@@ -120,7 +120,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -129,9 +129,14 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-This is an example of a request with validation errors.
+### Example 2: An unsuccessful validation request
 
-### Request
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "directoryobject_validateproperties_invalidrequest"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
@@ -144,7 +149,8 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
+
 ```http
 HTTP/1.1 422 
 Content-Type: application/json

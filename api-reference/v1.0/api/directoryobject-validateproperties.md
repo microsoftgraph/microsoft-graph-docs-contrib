@@ -20,11 +20,11 @@ The following policy validations are performed for the display name and mail nic
 3. Validate that the mail nickname is unique
 
 > [!NOTE]
-> - Invalid characters are not part of the policy validations. The following characters are invalid: @ () \ \[] " ; : <> , SPACE.
+> - The following characters are considered invalid characters and aren't part of the policy validations: `@ () \ \[] " ; : <> , SPACE`.
 >
 > - Admins with the User Administrator and Global Administrator roles are exempted from the custom banned words and prefix and suffix naming policies, allowing them to create groups by using blocked words and with their own naming conventions.
 
-This API only returns the first validation failure that is encountered. If the properties fail multiple validations, only the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy. To learn more about configuring naming policies, see [Configure naming policy](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell).
+This API only returns the first validation failure that is encountered. If the properties fail multiple validations, only the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy. To learn more about configuring naming policies, see [Configure naming policy](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -53,8 +53,8 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type   |Description|
 |:---------------|:--------|:----------|
 |entityType|String| Group is the only supported entity type. |
-|displayName|String| The display name of the group to validate. The property is not individually required. However, at least one property (**displayName** or **mailNickname**) is required. |
-|mailNickname|String| The mail nickname of the group to validate. The property is not individually required. However, at least one property (**displayName** or **mailNickname**) is required. |
+|displayName|String| The display name of the group to validate. Either **displayName** or **mailNickname** must be specified. |
+|mailNickname|String| The mail nickname of the group to validate. Either **displayName** or **mailNickname** must be specified. |
 |onBehalfOfUserId|Guid| The ID of the user to impersonate when calling the API. The validation results are for the **onBehalfOfUserId's** attributes and roles. |
 
 ## Response
@@ -65,19 +65,18 @@ When a Global Administrator or User Administrator initiates a request that viola
 
 If the request is invalid, the method returns `400 Bad Request` response code. An error message with details about the invalid request is returned in the response body.
 
-If there is a validation error, the method returns `422 Unprocessable Entity` response code. An error message and a collection of error details is returned in the response body.
+If there's a validation error, the method returns `422 Unprocessable Entity` response code. An error message and a collection of error details is returned in the response body.
 
 ## Examples
 
-### Example 1: Successful validation request
-This is an example of a successful validation request.
+### Example 1: A successful validation request
 
 #### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_validateproperties"
+  "name": "directoryobject_validateproperties_validrequest"
 }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/directoryObjects/validateProperties
@@ -131,10 +130,14 @@ HTTP/1.1 204 No Content
 ```
 
 
-### Example 2: Request with validation errors
-This is an example of a request with validation errors.
+### Example 2: An unsuccessful validation request
 
 #### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "directoryobject_validateproperties_invalidrequest"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/directoryObjects/validateProperties
 Content-type: application/json
