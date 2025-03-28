@@ -95,17 +95,17 @@ Content-Type: application/json
         {
           "policyType": "TeamsCallingPolicy",
           "policyAssignment": {
-            "displayName": "AllOn"
-            "assignmentType": "group"
-            "policyId": "f7593e81-772a-4455-88a3-fc9e5ebc1e4a"
+            "displayName": "AllOn",
+            "assignmentType": "group",
+            "policyId": "f7593e81-772a-4455-88a3-fc9e5ebc1e4a",
             "groupId": "75ae6229-35fe-4b01-ae7f-7c50439d239c"
           }
         },
         {
           "policyType": "TeamsMeetingPolicy",
           "policyAssignment": {
-            "displayName": "CustomPolicy"
-            "assignmentType": "direct"
+            "displayName": "CustomPolicy",
+            "assignmentType": "direct",
             "policyId": "J93PmFHwFcLZhWfYcBlv9pn-hG-kUWkcxmkDvpwgacw"
           }
         }
