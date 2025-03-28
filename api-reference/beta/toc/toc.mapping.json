@@ -2911,6 +2911,12 @@
          ]
         },
         {
+          "name": "Administration",
+          "resources": [
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+          ]
+        },
+        {
           "name": "Approvals",
           "resources": [
             "approvalItem",
@@ -3263,14 +3269,6 @@
         "workbookSessionInfo",
         "workbookSortField",
         "workbookWorksheetProtectionOptions"
-      ]
-    },
-    {
-      "name": "Teams User Configuration",
-      "overview": "../../resources/teamsadministration-teamsuserconfiguration.md",
-      "resources": [
-        "List",
-        "Get"
       ]
     }
   ],
