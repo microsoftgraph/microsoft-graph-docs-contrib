@@ -67,7 +67,7 @@ In the request body, provide a JSON object with the following parameters.
 >[!NOTE]
 >The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
 >
->In a single request, the `childrenOnly` option copies 150 children items, and for the grandchildren items the SharePoint limit applies. For more information, see [SharePoint limitation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites)
+>For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites)
 
 > If you use the `@microsoft.graph.conflictBehavior` query parameter with the `childrenOnly` parameter, then every child in the operation will be subject to the `@microsoft.graph.conflictBehavior` specified.
 
@@ -306,7 +306,7 @@ The following example shows an example status report obtained by visiting the UR
 }
 ```
 
-To resolve this error, use the optional query parameter [@microsoft.graph.conflictBehavior](#optional-query-parameters) as seen in the [next example](#example-4-copy-a-file-item-to-a-folder-with-a-preexisting-item-with-the-same-name-by-specifying-the-microsoftgraphconflictbehavior-query-parameter).
+To resolve this error, use the optional query parameter [@microsoft.graph.conflictBehavior](#optional-query-parameters), as shown in Example 4.
 
 ### Example 4: Copy a file item to a folder with a preexisting item with the same name by specifying the @microsoft.graph.conflictBehavior query parameter
 
@@ -588,56 +588,7 @@ Content-Length: 283
 ```
 To resolve this error, set the `childrenOnly` parameter to true.
 
-### Example 8: Failure to copy more than 150 direct child items
-
-The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
-The `childrenOnly` parameter is set to true. The source folder item identified by `{item-id}` contains more than 150 direct children.
-The request fails because the limit is 150 direct children.
-
-#### Request
-<!-- { "blockType": "ignored", "name": "copy-item-7" } -->
-
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
-Content-Type: application/json
-
-{
-  "parentReference": {
-    "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
-    "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
-  },
-  "childrenOnly": true
-}
-```
-
-#### Response
-
-Visiting the monitoring URL yields a status report similar to the following example.
-
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP/1.1 400 Bad Request
-Content-Type: application/json
-Content-Length: 341
-
-{
-  "error":
-  {
-    "code": "invalidRequest",
-    "message": "Direct child count limit exceeded. Cannot copy children only when there are more than 150 direct children.",
-    "innerError":
-    {
-      "code": "directChildrenLimitExceeded",
-      "date": "2023-12-11T04:26:35",
-      "request-id": "8f897345980-f6f3-49dd-83a8-a3064eeecdf8",
-      "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe"
-    }
-  }
-}
-```
-To resolve this error, reorganize the source folder structure only to have 150 children.
-
-### Example 9: Failure to copy the child items of a file item
+### Example 8: Failure to copy the child items of a file item
 
 The following example attempts to copy the children of a source item identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
 The `{item-id}` refers to a file, not a folder. The `childrenOnly` parameter is set to true.
@@ -684,7 +635,7 @@ Content-Length: 290
 }
 ```
 
-### Example 10: Failure to copy child items by specifying both the childrenOnly and name request body parameters
+### Example 9: Failure to copy child items by specifying both the childrenOnly and name request body parameters
 
 The following example attempts to copy the child items  in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values. The request body sets the `childrenOnly` parameter to true and also specifies a `name` value. The request fails as the `childrenOnly` and `name` parameters are mutually exclusive.
 

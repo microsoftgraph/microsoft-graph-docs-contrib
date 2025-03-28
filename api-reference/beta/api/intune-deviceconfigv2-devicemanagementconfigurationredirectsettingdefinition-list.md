@@ -68,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1646
+Content-Length: 1676
 
 {
   "value": [
@@ -100,6 +100,7 @@ Content-Length: 1646
       "settingUsage": "configuration",
       "uxBehavior": "dropdown",
       "visibility": "settingsCatalog",
+      "riskLevel": "medium",
       "referredSettingInformationList": [
         {
           "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
