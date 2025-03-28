@@ -25,14 +25,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **remediationType** enumeration type.",
           "Target": "remediationType"
-        }, 
-        {
-          "Id": "810c8ce0-9065-4b32-a737-fd2221a4ed71",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "complianceChangeRuleState",
-          "ChangeType": "Addition",
-          "Description": "Added the **complianceChangeRuleState** enumeration type.",
-          "Target": "complianceChangeRuleState"
         }
       ],
       "Id": "810c8ce0-9065-4b32-a737-fd2221a4ed71",
