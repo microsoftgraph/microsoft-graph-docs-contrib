@@ -93,7 +93,7 @@ Content-Type: application/json
       "effectivePolicyAssignments": [
         {
           "policyType": "TeamsCallingPolicy",
-          "policyAssignmnet": {
+          "policyAssignment": {
             "displayName": "AllOn"
             "assignmentType": "group"
             "policyId": "f7593e81-772a-4455-88a3-fc9e5ebc1e4a"
@@ -102,7 +102,7 @@ Content-Type: application/json
         },
         {
           "policyType": "TeamsMeetingPolicy",
-          "policyAssignmnet": {
+          "policyAssignment": {
             "displayName": "CustomPolicy"
             "assignmentType": "direct"
             "policyId": "J93PmFHwFcLZhWfYcBlv9pn-hG-kUWkcxmkDvpwgacw"
