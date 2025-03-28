@@ -5,6 +5,7 @@ author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.subservice: entra-id
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # Create or replace claimsPolicy

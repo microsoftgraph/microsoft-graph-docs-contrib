@@ -5,6 +5,7 @@ author: "vkumar2015"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # auditEvent resource type

@@ -5,6 +5,7 @@ author: "neminbshah"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Get siteProtectionUnitsBulkAdditionJob
@@ -87,6 +88,10 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectio
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/siteprotectionunitsbulkadditionjobs-get-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/siteprotectionunitsbulkadditionjobs-get-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

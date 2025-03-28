@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # deviceConfigurationAssignment resource type
@@ -51,11 +52,15 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+    "@odata.type": "microsoft.graph.organizationalUnitAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
     "deviceAndAppManagementAssignmentFilterType": "String",
-    "targetType": "String",
-    "entraObjectId": "String"
+    "organizationalUnitId": "String",
+    "assignmentConflictSetting": {
+      "@odata.type": "microsoft.graph.organizationalUnitAssignmentConflictSetting",
+      "assignmentOverride": "String",
+      "versionNumber": 1024
+    }
   },
   "source": "String",
   "sourceId": "String",

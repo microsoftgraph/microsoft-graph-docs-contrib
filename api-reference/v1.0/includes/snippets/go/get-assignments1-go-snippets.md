@@ -18,10 +18,10 @@ import (
 
 requestOrdeby := "id"
 
-requestParameters := &grapheducation.EducationClasseItemAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ClassesItemAssignmentsRequestBuilderGetQueryParameters{
 	Ordeby: &requestOrdeby,
 }
-configuration := &grapheducation.EducationClasseItemAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ClassesItemAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

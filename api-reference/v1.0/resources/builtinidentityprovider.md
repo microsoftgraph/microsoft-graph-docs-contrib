@@ -5,12 +5,13 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "namkedia"
+ms.date: 11/16/2024
 ---
 
 # builtInIdentityProvider resource type
 Namespace: microsoft.graph
 
-Represents built-in identity providers with [External Identities](/azure/active-directory/external-identities/) for a Microsoft Entra tenant.
+Represents built-in identity providers for a Microsoft Entra tenant.
 
 For Microsoft Entra B2B scenarios in a Microsoft Entra tenant, the built-in identity provider type can be a Microsoft Entra ID, Microsoft account(MSA) or email one-time passcode (EmailOTP).
 

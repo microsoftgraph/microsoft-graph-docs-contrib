@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 08/08/2024
 ---
 
 # Update onlineMeeting
@@ -13,17 +14,45 @@ Namespace: microsoft.graph
 
 Update the properties of the specified [onlineMeeting](../resources/onlinemeeting.md) object.
 
-Please see [Request body](#request-body) section for the list of properties that support updating.
+For the list of properties that support updating, see the [Request body](#request-body) section.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "onlinemeeting_update" } -->
+Permissions for the following HTTP request:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /me/onlineMeetings/{meetingId}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_update", 
+  "requestUrls": ["PATCH /me/onlineMeetings/{meetingId}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-update-permissions.md)]
 
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to update online meetings on behalf of that user (with user ID specified in the request path).
+Permissions for the following HTTP request:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /users/{userId}/onlineMeetings/{meetingId}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_update_2", 
+  "requestUrls": ["PATCH /users/{userId}/onlineMeetings/{meetingId}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-update-2-permissions.md)]
+
+> [!NOTE]
+> To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to update online meetings on behalf of that user (with user ID specified in the request path).
 
 ## HTTP request
 
@@ -36,7 +65,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 > [!NOTE]
 >
-> - **userId** is the object ID of a user in the [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> - `userId` is the object ID of a user in the [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Request headers
@@ -48,32 +77,42 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 ## Request body
 
-The following table lists the properties that can be updated. In the request body, include only the properties that need updating, with the following exceptions:
+The following table lists the properties that can be updated. In the request body, supply *only* the values for properties that should be updated, with the following exceptions:
 
 - Adjusting the start or end date/time of an online meeting always requires both **startDateTime** and **endDateTime** properties in the request body.
-- The **organizer** field of the **participants** property cannot be updated. The organizer of the meeting cannot be modified after the meeting is created.
+- The **organizer** field of the **participants** property can't be updated. The organizer of the meeting can't be modified after the meeting is created.
 - Adjusting the **attendees** field of the **participants** property, such as adding or removing an attendee to the meeting, always requires the full list of attendees in the request body.
 
 The last column indicates whether updating this property will take effect for an in-progress meeting.
 
 | Property                    | Type                                                       | Description                                                                         | Applies to in-progress meetings?    |
-|-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
-| startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                           |
-| endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                           |
-| subject                     | String                                                     | The subject of the online meeting.                                                  | No                           |
-| participants                | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting. Only attendees can be updated. | No                           |
-| isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                          |
-| lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                          |
-| allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes                          |
-| allowAttendeeToEnableCamera | Boolean                                                    | Indicates whether attendees can turn on their camera.                               | Yes                          |
-| allowAttendeeToEnableMic    | Boolean                                                    | Indicates whether attendees can turn on their microphone.                           | Yes                          |
-| allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                          |
-| allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                      | Yes                          |
-| recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                              | No                           |
+|-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------------ |
+| allowAttendeeToEnableCamera | Boolean                                                    | Indicates whether attendees can turn on their camera.                               | Yes                                 |
+| allowAttendeeToEnableMic    | Boolean                                                    | Indicates whether attendees can turn on their microphone.                           | Yes                                 |
+| allowBreakoutRooms          | Boolean                                                    | Indicates whether breakout rooms are enabled for the meeting.                       | No                                  |
+| allowedLobbyAdmitters       | [allowedLobbyAdmitterRoles](../resources/onlinemeetingbase.md#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. | Yes                                 |
+| allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes                                 |
+| allowLiveShare              | meetingLiveShareOptions                                    | Indicates whether live share is enabled for the meeting.                            | No                                  |
+| allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                                 |
+| allowPowerPointSharing      | Boolean                                                    | Indicates whether PowerPoint live is enabled for the meeting.                       | No                                  |
+| allowRecording              | Boolean                                                    | Indicates whether recording is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). | Yes                                 |
+| allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                      | Yes                                 |
+| allowTranscription          | Boolean                                                    | Indicates whether transcription is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). | Yes                                 |
+| allowWhiteboard             | Boolean                                                    | Indicates whether whiteboard is enabled for the meeting.                            | No                                  |
+| anonymizeIdentityForRoles   | onlineMeetingRole collection                               | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
+| endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                                  |
+| isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                                 |
+| lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                                 |
+| participants                | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting. Only attendees can be updated. | No                                  |
+| recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                              | No                                  |
+| startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                                  |
+| subject                     | String                                                     | The subject of the online meeting.                                                  | No                                  |
+| watermarkProtection         | [watermarkProtectionValues](../resources/watermarkprotectionvalues.md)  | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
+| broadcastSettings (deprecated) | [broadcastMeetingSettings](../resources/broadcastmeetingsettings.md)| Settings related to a live event.                                    | No                                  |
 
 > [!NOTE]
 >
->- For the list of possible values for **allowedPresenters** and **allowMeetingChat**, see [onlineMeeting](../resources/onlinemeeting.md).
+>- For the list of possible values for **allowedPresenters**, **allowLiveShare**, and **allowMeetingChat**, see [onlineMeeting](../resources/onlinemeeting.md).
 >- When updating the value of **allowedPresenters** to `roleIsPresenter`, include a full list of **attendees** with specified attendees' **role** set to `presenter` in the request body.
 
 ## Response

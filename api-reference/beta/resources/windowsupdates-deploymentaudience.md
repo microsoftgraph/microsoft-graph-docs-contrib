@@ -3,8 +3,9 @@ title: "deploymentAudience resource type"
 description: "The set of updatableAsset resources to which a deployment can apply."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # deploymentAudience resource type

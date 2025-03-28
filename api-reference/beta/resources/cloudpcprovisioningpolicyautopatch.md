@@ -1,10 +1,11 @@
 ---
 title: "cloudPcProvisioningPolicyAutopatch resource type"
-description: "Represents specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC."
+description: "Indicates the Windows Autopatch settings for Cloud PCs using this provisioning policy."
 author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # cloudPcProvisioningPolicyAutopatch resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC.
+Indicates the Windows Autopatch settings for Cloud PCs using this provisioning policy.
 
 ## Properties
 

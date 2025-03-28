@@ -1,15 +1,16 @@
 ---
 title: "Microsoft Graph national cloud deployments"
 description: "Learn about Microsoft Graph national cloud deployments and the capabilities that are available to developers within each."
-author: "adamedx"
+ms.reviewer: krbash
 ms.localizationpriority: medium
+ms.date: 01/30/2025
 ---
 
 # Microsoft Graph national cloud deployments
 
 This article provides information about the different Microsoft Graph national cloud deployments and the capabilities that are available to developers within each.
 
-In addition to a global network of datacenters, Microsoft cloud services are available in two separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services that are confined within the geographic borders of specific countries and operated by local personnel.
+In addition to a global network of datacenters, Microsoft cloud services are available in two separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services that are confined within the geographic borders of specific countries/regions and operated by local personnel.
 
 Current national clouds include:
 
@@ -49,7 +50,7 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 | Microsoft Graph China operated by 21Vianet | `https://microsoftgraph.chinacloudapi.cn` | Not supported. |
 
 > [!IMPORTANT]
-> For an app in US Government clouds, use the following root endpoints for the Azure portal and Microsoft Graph respectively.
+> For a software application working in US Government context, use the following root endpoints for the Azure portal and Microsoft Graph respectively.
 >
 > - If you're working in a Microsoft 365 GCC environment, continue using the worldwide endpoints: `https://portal.azure.com` and `https://graph.microsoft.com`.
 > - If you're working in a Microsoft 365 GCC High environment, use `https://portal.azure.us` and `https://graph.microsoft.us`.
@@ -60,10 +61,10 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 
 ## Service API support in national clouds
 
-For details about API support for Microsoft Graph services in national clouds, see the [API beta reference](/graph/api/overview?view=graph-rest-beta&preserve=true) and [API v1.0 reference](/graph/api/overview?view=graph-rest-1.0&preserve=true). 
+For details about API support for Microsoft Graph services in national clouds, see the [API beta reference](/graph/api/overview?view=graph-rest-beta&preserve-view=true) and [API v1.0 reference](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). 
 
 > [!IMPORTANT]
-> Certain services and features that are in specific regions of the global service might not be available in all national clouds. To find out what services are available, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast).
+> Certain services and features that are in specific regions of the global service might not be available in all national clouds. To find out what services are available, see [Product Availability by Region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/table).
 
 ## Related content
 
@@ -72,7 +73,7 @@ To learn more about national clouds, see the following articles:
 - [Microsoft National Clouds](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
 - [Microsoft 365 for US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
 - [Microsoft 365 operated by 21Vianet](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
-- [Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
+- [Azure Government](https://azure.microsoft.com/explore/global-infrastructure/government/)
 - [Azure China 21Vianet](/azure/china/)
 
 Explore samples for authenticating and working with Azure and Microsoft 365 in National cloud deployments:

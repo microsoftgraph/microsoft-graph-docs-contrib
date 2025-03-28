@@ -5,17 +5,21 @@ author: "Jewan-microsoft"
 ms.localizationpriority: high
 ms.subservice: "onenote"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # OneNote API overview
 
 OneNote is a digital notebook that lets customers track ideas and notes for home, school, or work, by typing, sketching, or voice, on the web, phone, tablet, or desktop. They can freely organize notes, switch devices and pick up where they left off, and collaborate on notes with others in real time.
 
+By integrating your apps with OneNote, you can create empowering experiences across multiple platforms that reach millions of users worldwide. You can use Microsoft Graph to access notebooks, sections, and pages in OneNote to create solutions that help your users plan and organize ideas and information.
+
+> [!NOTE]
+> The Microsoft Graph OneNote API will no longer support app-only authentication effective March 31, 2025. We recommend that you update your solutions to use [delegated authentication](/graph/auth-v2-user).
+
 > [!VIDEO https://www.youtube-nocookie.com/embed/VXd4OeQU1ek]
 
 ## Why integrate with OneNote?
-
-By integrating your apps with OneNote, you can create empowering experiences across multiple platforms that reach millions of users worldwide. You can use Microsoft Graph to access notebooks, sections, and pages in OneNote to create solutions that help your users plan and organize ideas and information.
 
 ### Collect and organize notes and ideas  
 

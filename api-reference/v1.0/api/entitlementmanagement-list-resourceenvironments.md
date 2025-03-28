@@ -1,10 +1,11 @@
 ---
 title: "List accessPackageResourceEnvironments"
-description: "Retrieve a list of accessPackageResourceEnvironment objects."
+description: "Retrieve a list of accessPackageResourceEnvironment objects and their properties."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 03/08/2024
 ---
 
 # List accessPackageResourceEnvironments
@@ -19,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_list_resourceenvironments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-list-resourceenvironments-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 

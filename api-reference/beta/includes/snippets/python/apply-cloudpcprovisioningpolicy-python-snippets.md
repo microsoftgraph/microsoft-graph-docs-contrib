@@ -11,6 +11,7 @@ from msgraph_beta.generated.models.cloud_pc_policy_setting_type import CloudPcPo
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ApplyPostRequestBody(
 	policy_settings = CloudPcPolicySettingType.Region,
+	reserve_percentage = 80,
 )
 
 await graph_client.device_management.virtual_endpoint.provisioning_policies.by_cloud_pc_provisioning_policy_id('cloudPcProvisioningPolicy-id').apply.post(request_body)

@@ -6,6 +6,7 @@ author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 06/18/2024
 ---
 
 # fido2CombinationConfiguration resource type

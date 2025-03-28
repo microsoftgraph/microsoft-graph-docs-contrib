@@ -5,6 +5,7 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.subservice: teams
 doc_type: apiPageType
+ms.date: 05/10/2024
 ---
 
 # team: sendActivityNotification
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 Send an activity feed notification in the scope of a team. For more information about sending notifications and the requirements for doing so, see
 [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

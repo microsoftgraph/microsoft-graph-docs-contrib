@@ -12,7 +12,7 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new SocialIdentityProvider
 {
 	OdataType = "#microsoft.graph.socialIdentityProvider",
-	ClientSecret = "1111111111111",
+	ClientSecret = "4294967296",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

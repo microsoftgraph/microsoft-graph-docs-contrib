@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "frank-masuelli"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # List subscribedSkus

@@ -18,10 +18,10 @@ import (
 
 requestFilter := "isof('microsoft.graph.educationFeedbackResourceOutcome')"
 
-requestParameters := &grapheducation.EducationClasseItemAssignmentItemSubmissionItemOutcomesRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ClassesItemAssignmentsItemSubmissionsItemOutcomesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &grapheducation.EducationClasseItemAssignmentItemSubmissionItemOutcomesRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ClassesItemAssignmentsItemSubmissionsItemOutcomesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -5,6 +5,7 @@ title: "sitePage: saveAsTemplate"
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 10/21/2024
 ---
 
 # sitePage: saveAsTemplate

@@ -5,6 +5,7 @@ author: "frank-masuelli"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/16/2024
 ---
 
 # List licenseDetails
@@ -38,6 +39,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Optional query parameters
 This method supports the `$select` query parameter. For general information, see [OData query parameters](/graph/query-parameters).
 

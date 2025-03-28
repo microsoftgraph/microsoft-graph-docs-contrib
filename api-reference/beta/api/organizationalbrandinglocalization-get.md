@@ -1,10 +1,11 @@
 ---
 title: "Get organizationalBrandingLocalization"
 description: "Read the properties and relationships of an organizationalBrandingLocalization object."
-author: "quievey"
+author: nanguil
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get organizationalBrandingLocalization

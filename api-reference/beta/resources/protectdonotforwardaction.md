@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "tommoser"
 ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 04/03/2024
 ---
 
 # protectDoNotForwardAction resource type (deprecated)

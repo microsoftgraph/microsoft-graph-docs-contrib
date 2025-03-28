@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 11/23/2024
 ---
 
 # ediscoverySearch: purgeData
@@ -15,14 +16,14 @@ Namespace: microsoft.graph.security
 
 Delete Exchange mailbox items or Microsoft Teams messages contained in an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
->**Note:** This request purges a maximum of 100 items per location only.
-
 You can collect and purge the following categories of Teams content:
 - **Teams 1:1 chats** - Chat messages, posts, and attachments shared in a Teams conversation between two people. Teams 1:1 chats are also called *conversations*.
 - **Teams group chats** - Chat messages, posts, and attachments shared in a Teams conversation between three or more people. Also called *1:N* chats or *group conversations*.
 - **Teams channels** - Chat messages, posts, replies, and attachments shared in a standard Teams channel.
 - **Private channels** - Message posts, replies, and attachments shared in a private Teams channel.
 - **Shared channels** - Message posts, replies, and attachments shared in a shared Teams channel.
+
+>**Note:** This request purges a maximum of 100 items per location only. When **purgeType** is set to either `recoverable` or `permanentlyDelete` and **purgeAreas** is set to `teamsMessages`, the Teams messages are permanently deleted.
 
 For more information about purging Teams messages, see:
 - [eDiscovery solution series: Data spillage scenario - Search and purge](/microsoft-365/compliance/data-spillage-scenariosearch-and-purge)

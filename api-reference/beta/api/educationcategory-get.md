@@ -5,6 +5,7 @@ author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 08/27/2024
 ---
 
 # Get educationCategory

@@ -5,6 +5,7 @@ author: "Moti-ba"
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
+ms.date: 09/23/2024
 ---
 
 # List filteringRules
@@ -12,7 +13,10 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [filteringRule](../resources/networkaccess-filteringrule.md) objects and their properties.
+Get a list of the [filteringRule](../resources/networkaccess-filteringrule.md) objects and their properties. The following derived types are supported:
+
+- [fqdnFilteringRule](../resources/networkaccess-fqdnfilteringrule.md)
+- [webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -35,7 +39,7 @@ GET /networkaccess/filteringPolicies/{filteringPolicyId}?$expand=policyRules
 ```
 
 ## Optional query parameters
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -47,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [filteringRule](../resources/networkaccess-filteringrule.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) objects in the response body. The **@odata.type** property in the response object indicates the type of the **filteringRule** object.
 
 ## Examples
 

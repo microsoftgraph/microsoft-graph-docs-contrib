@@ -3,13 +3,14 @@ title: "Microsoft Graph SDK overview"
 description: Learn about the Microsoft Graph SDKs.
 author: MichaelMainer
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph SDK overview
 
 The Microsoft Graph software development kits (SDKs) are designed to simplify building high-quality, efficient, resilient applications that access Microsoft Graph. The SDKs include two components: a service library and a core library.
 
-The *service library* contains models and request builders generated from Microsoft Graph metadata. The service library provides a rich, strongly-typed, and discoverable experience when working with the many datasets available in Microsoft Graph.
+The *service library* contains models and request builders generated from Microsoft Graph metadata. The service library provides a rich, strongly typed, and discoverable experience when working with the many datasets available in Microsoft Graph.
 
 The *core library* provides features that enhance working with all the Microsoft Graph services. Embedded support for retry handling, secure redirects, transparent authentication, and payload compression improve the quality of your application's interactions with Microsoft Graph with no added complexity while leaving you entirely in control. The core library also supports everyday tasks such as paging through collections and creating batch requests.
 
@@ -37,6 +38,11 @@ A release of an SDK in *GA* status can use the Microsoft Graph API v1.0 endpoint
 ## SDK vs generated API client
 
 In some cases, it's beneficial to use a Kiota-generated client instead of a Microsoft Graph SDK. For example, a developer that only uses a small subset of the Microsoft Graph APIs and wants to minimize the overall install size of their app can use Kiota to generate a smaller client library. For details, see [Generate Microsoft Graph client libraries with Kiota](generate-with-kiota.md).
+
+## SDKs supportability
+
+Microsoft Graph SDKs are open-source GitHub projects so if you have an issue with the SDK, submit it with all the needed information on the "issues" page. SDK authors and contributors should look into the issue and release a fix accordingly.
+Microsoft CSS doesn't officially, support SDKs but Microsoft supports the HTTP request of the Microsoft Graph API call you're making.
 
 ## Related content
 

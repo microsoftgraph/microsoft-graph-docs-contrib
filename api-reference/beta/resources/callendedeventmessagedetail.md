@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # callEndedEventMessageDetail resource type
@@ -27,6 +28,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |callId|String|Unique identifier of the call.|
 |callParticipants|[callParticipantInfo](../resources/callparticipantinfo.md) collection|List of call participants.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

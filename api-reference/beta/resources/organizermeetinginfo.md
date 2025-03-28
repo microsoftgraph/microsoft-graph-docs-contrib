@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # organizerMeetingInfo resource type
@@ -23,6 +24,9 @@ and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./to
 | Property                     | Type                          | Description                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
 | organizer                    | [identitySet](identityset.md) | The organizer Microsoft Entra identity.  |
+
+## Relationships
+None.
 
 ## JSON representation
 

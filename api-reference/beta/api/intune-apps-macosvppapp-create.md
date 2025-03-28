@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create macOsVppApp
@@ -80,6 +81,7 @@ The following table shows the properties that are required when you create the m
 |vppTokenAppleId|String|The Apple Id associated with the given Apple Volume Purchase Program Token.|
 |bundleId|String|The Identity Name.|
 |vppTokenId|String|Identifier of the VPP token associated with this app.|
+|vppTokenDisplayName|String|Display name of the VPP token associated with this app.|
 |revokeLicenseActionResults|[macOsVppAppRevokeLicensesActionResult](../resources/intune-apps-macosvppapprevokelicensesactionresult.md) collection|Results of revoke license actions on this app.|
 
 
@@ -94,7 +96,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1926
+Content-length: 1984
 
 {
   "@odata.type": "#microsoft.graph.macOsVppApp",
@@ -137,6 +139,7 @@ Content-length: 1926
   "vppTokenAppleId": "Vpp Token Apple Id value",
   "bundleId": "Bundle Id value",
   "vppTokenId": "Vpp Token Id value",
+  "vppTokenDisplayName": "Vpp Token Display Name value",
   "revokeLicenseActionResults": [
     {
       "@odata.type": "microsoft.graph.macOsVppAppRevokeLicensesActionResult",
@@ -159,7 +162,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2098
+Content-Length: 2156
 
 {
   "@odata.type": "#microsoft.graph.macOsVppApp",
@@ -205,6 +208,7 @@ Content-Length: 2098
   "vppTokenAppleId": "Vpp Token Apple Id value",
   "bundleId": "Bundle Id value",
   "vppTokenId": "Vpp Token Id value",
+  "vppTokenDisplayName": "Vpp Token Display Name value",
   "revokeLicenseActionResults": [
     {
       "@odata.type": "microsoft.graph.macOsVppAppRevokeLicensesActionResult",

@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 06/20/2024
 ---
 
 # cloudPcStatusDetails resource type (deprecated)

@@ -18,10 +18,10 @@ import (
 
 requestFilter := "startsWith(subject,'All')"
 
-requestParameters := &graphusers.ItemCalendarEventsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.CalendarEventsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphusers.ItemCalendarEventsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.CalendarEventsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

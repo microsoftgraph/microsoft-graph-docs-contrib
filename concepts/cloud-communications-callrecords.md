@@ -4,6 +4,7 @@ description: "Get insights into the calls and online meetings that occur within 
 author: "mcm223"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
+ms.date: 11/07/2024
 ---
 
 # Call records

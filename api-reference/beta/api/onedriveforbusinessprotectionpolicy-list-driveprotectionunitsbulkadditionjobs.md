@@ -5,6 +5,7 @@ author: "neminbshah"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # List driveProtectionUnitsBulkAdditionJobs 
@@ -88,6 +89,10 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusiness
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/onedriveforbusinessprotectionpolicy-list-driveprotectionunitsbulkadditionjobs-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/onedriveforbusinessprotectionpolicy-list-driveprotectionunitsbulkadditionjobs-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

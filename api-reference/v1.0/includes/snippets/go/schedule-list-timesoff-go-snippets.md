@@ -18,10 +18,10 @@ import (
 
 requestFilter := "sharedTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and sharedTimeOff/endDateTime le 2019-03-18T00:00:00.000Z and draftTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and draftTimeOff/endDateTime le 2019-03-18T00:00:00.000Z"
 
-requestParameters := &graphteams.TeamItemScheduleTimesOffRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.ItemScheduleTimesOffRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphteams.TeamItemScheduleTimesOffRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.ItemScheduleTimesOffRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

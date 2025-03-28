@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get mobileAppContentFile
@@ -65,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 604
+Content-Length: 548
 
 {
   "value": {
@@ -77,8 +78,6 @@ Content-Length: 604
     "name": "Name value",
     "size": 4,
     "sizeEncrypted": 13,
-    "sizeInBytes": 11,
-    "sizeEncryptedInBytes": 4,
     "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
     "manifest": "bWFuaWZlc3Q=",
     "uploadState": "transientError",

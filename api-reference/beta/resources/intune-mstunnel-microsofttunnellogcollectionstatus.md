@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # microsoftTunnelLogCollectionStatus enum type
@@ -20,7 +21,7 @@ Enum type that represent the status of log collection
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|pending|0|Indicates that the log collection is in progress|
-|completed|1|Indicates that the log collection is completed|
-|failed|2|Indicates that the log collection has failed|
-|unknownFutureValue|3|Placeholder value for future expansion enums|
+|pending|0||
+|completed|1||
+|failed|2||
+|unknownFutureValue|3||

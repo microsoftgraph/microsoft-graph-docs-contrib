@@ -3,8 +3,9 @@ title: "adminWindowsUpdates resource type"
 description: "Represents an entity that acts as a container for all Windows Autopatch functionalities."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # adminWindowsUpdates resource type

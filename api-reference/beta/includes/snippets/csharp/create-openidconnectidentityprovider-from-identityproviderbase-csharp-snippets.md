@@ -12,9 +12,9 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new OpenIdConnectIdentityProvider
 {
 	OdataType = "microsoft.graph.openIdConnectIdentityProvider",
-	DisplayName = "Login with the Contoso identity provider",
-	ClientId = "56433757-cadd-4135-8431-2c9e3fd68ae8",
-	ClientSecret = "12345",
+	DisplayName = "Contoso",
+	ClientId = "00001111-aaaa-2222-bbbb-3333cccc4444",
+	ClientSecret = "4294967296",
 	ClaimsMapping = new ClaimsMapping
 	{
 		UserId = "myUserId",

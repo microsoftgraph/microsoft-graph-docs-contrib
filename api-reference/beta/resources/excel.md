@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "grangery"
 ms.subservice: "excel"
 doc_type: conceptualPageType
+ms.date: 03/06/2024
 ---
 
 # Working with Excel in Microsoft Graph

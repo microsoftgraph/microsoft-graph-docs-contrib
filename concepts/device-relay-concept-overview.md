@@ -4,6 +4,7 @@ description: "Use the Microsoft Graph device relay APIs to enable users to trans
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Device relay API in Microsoft Graph (preview)

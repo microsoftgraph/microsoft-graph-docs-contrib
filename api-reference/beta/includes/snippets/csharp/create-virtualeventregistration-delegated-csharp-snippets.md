@@ -8,10 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new VirtualEventRegistration
 {
+	ExternalRegistrationInformation = new VirtualEventExternalRegistrationInformation
+	{
+		Referrer = "Facebook",
+		RegistrationId = "myExternalRegistrationId",
+	},
 	PreferredTimezone = "Pacific Standard Time",
 	PreferredLanguage = "en-us",
 	RegistrationQuestionAnswers = new List<VirtualEventRegistrationQuestionAnswer>
@@ -46,20 +50,6 @@ var requestBody = new VirtualEventRegistration
 				"Hoboken",
 				"Beijing",
 			},
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"externalRegistrationInformation" , new UntypedObject(new Dictionary<string, UntypedNode>
-			{
-				{
-					"referrer", new UntypedString("Facebook")
-				},
-				{
-					"registrationId", new UntypedString("myExternalRegistrationId")
-				},
-			})
 		},
 	},
 };

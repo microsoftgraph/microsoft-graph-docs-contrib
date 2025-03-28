@@ -5,6 +5,7 @@ title: Create pageTemplate
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # Create pageTemplate

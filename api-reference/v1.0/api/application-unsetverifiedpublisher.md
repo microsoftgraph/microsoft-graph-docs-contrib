@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "xurobertMSFT"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # application: unsetVerifiedPublisher

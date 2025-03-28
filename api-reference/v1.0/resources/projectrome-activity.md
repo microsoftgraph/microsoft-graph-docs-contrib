@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "project-rome"
 author: "ailae"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # userActivity resource type

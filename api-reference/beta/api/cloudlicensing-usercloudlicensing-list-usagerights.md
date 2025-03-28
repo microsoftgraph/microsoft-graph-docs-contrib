@@ -5,6 +5,7 @@ author: "patrick-starrin"
 ms.localizationpriority: medium
 ms.subservice: "cloud-licensing"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # List usageRights for user
