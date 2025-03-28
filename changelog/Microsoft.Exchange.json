@@ -1419,22 +1419,6 @@
         {
           "Id": "b629a62c-07a8-4c32-bcbd-40e7c97c0d6b",
           "ApiChange": "Resource",
-          "ChangedApiName": "mailFolderOperation",
-          "ChangeType": "Addition",
-          "Description": "Added the [get mailFolderOperation](https://learn.microsoft.com/en-us/graph/api/mailfolderoperation-get?view=graph-rest-beta) resource type.",
-          "Target": "mailFolderOperation"
-        },
-        {
-          "Id": "b629a62c-07a8-4c32-bcbd-40e7c97c0d6b",
-          "ApiChange": "Resource",
-          "ChangedApiName": "mailFolderOperation",
-          "ChangeType": "Addition",
-          "Description": "Added the [list mailFolderOperation](https://learn.microsoft.com/en-us/graph/api/mailfolder-list-operations?view=graph-rest-beta) resource type.",
-          "Target": "mailFolderOperation"
-        },
-        {
-          "Id": "b629a62c-07a8-4c32-bcbd-40e7c97c0d6b",
-          "ApiChange": "Resource",
           "ChangedApiName": "updateAllMessagesReadStateOperation",
           "ChangeType": "Addition",
           "Description": "Added the [updateAllMessagesReadStateOperation](https://learn.microsoft.com/en-us/graph/api/resources/updateallmessagesreadstateoperation?view=graph-rest-beta) resource type.",
