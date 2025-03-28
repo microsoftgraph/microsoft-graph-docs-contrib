@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationAiFeedbackAudienceEngagementSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [educationAiFeedbackAudienceEngagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackAudienceEngagementSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [educationAiFeedbackAudienceEngagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackAudienceEngagementSettings?view=graph-rest-beta) resource type.",
           "Target": "educationAiFeedbackAudienceEngagementSettings"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationAiFeedbackContentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [educationAiFeedbackContentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackContentSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [educationAiFeedbackContentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackContentSettings?view=graph-rest-beta) resource type.",
           "Target": "educationAiFeedbackContentSettings"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationAiFeedbackCriteria",
           "ChangeType": "Addition",
-          "Description": "Added the [educationAiFeedbackCriteria](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackCriteria?view=graph-rest-beta) resource.",
+          "Description": "Added the [educationAiFeedbackCriteria](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackCriteria?view=graph-rest-beta) resource type.",
           "Target": "educationAiFeedbackCriteria"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationAiFeedbackDeliverySettings",
           "ChangeType": "Addition",
-          "Description": "Added the [educationAiFeedbackDeliverySettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackDeliverySettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [educationAiFeedbackDeliverySettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackDeliverySettings?view=graph-rest-beta) resource type.",
           "Target": "educationAiFeedbackDeliverySettings"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationAiFeedbackSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [educationAiFeedbackSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [educationAiFeedbackSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackSettings?view=graph-rest-beta) resource type.",
           "Target": "educationAiFeedbackSettings"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSpeakerCoachAudienceEngagementSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [educationSpeakerCoachAudienceEngagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachAudienceEngagementSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [educationSpeakerCoachAudienceEngagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachAudienceEngagementSettings?view=graph-rest-beta) resource type.",
           "Target": "educationSpeakerCoachAudienceEngagementSettings"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSpeakerCoachContentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [educationSpeakerCoachContentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachContentSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [educationSpeakerCoachContentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachContentSettings?view=graph-rest-beta) resource type.",
           "Target": "educationSpeakerCoachContentSettings"
         },
         {
@@ -71,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSpeakerCoachDeliverySettings",
           "ChangeType": "Addition",
-          "Description": "Added the [educationSpeakerCoachDeliverySettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachDeliverySettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [educationSpeakerCoachDeliverySettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachDeliverySettings?view=graph-rest-beta) resource type.",
           "Target": "educationSpeakerCoachDeliverySettings"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSpeakerCoachSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [educationSpeakerCoachSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [educationSpeakerCoachSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachSettings?view=graph-rest-beta) resource type.",
           "Target": "educationSpeakerCoachSettings"
         },
         {
@@ -87,7 +87,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSpeakerProgressResource",
           "ChangeType": "Addition",
-          "Description": "Added the [educationSpeakerProgressResource](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerProgressResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [educationSpeakerProgressResource](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerProgressResource?view=graph-rest-beta) resource type.",
           "Target": "educationSpeakerProgressResource"
         }
       ],
