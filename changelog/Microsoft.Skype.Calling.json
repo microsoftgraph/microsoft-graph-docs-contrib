@@ -25,7 +25,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userCloudCommunication",
           "ChangeType": "Addition",
-          "Description": "Added the [userCloudCommunication](https://learn.microsoft.com/en-us/graph/api/resources/userCloudCommunication?view=graph-rest-beta) resource.",
+          "Description": "Added the [userCloudCommunication](https://learn.microsoft.com/en-us/graph/api/resources/userCloudCommunication?view=graph-rest-beta) resource type.",
           "Target": "userCloudCommunication"
         },
         {
