@@ -12,6 +12,8 @@ mgc-beta teams create --'standard')" {'standard')"-id} --\
     "displayName": "Sample Engineering Team"-id} --\
     "description": "This is a sample engineering team {\
     "description": "This is a sample engineering team-id} -- used to showcase the range of properties supported by this API" { used to showcase the range of properties supported by this API"-id} --\
+    "firstChannelName": "My first channel of the sample team" {\
+    "firstChannelName": "My first channel of the sample team"-id} --\
     "channels": [\
         {\
             "displayName": "Announcements 📢" {\
@@ -42,6 +44,7 @@ mgc-beta teams create --'standard')" {'standard')"-id} --\
     "visibility": "Private"-with-\
     "displayName": "Sample Engineering Team"-with-\
     "description": "This is a sample engineering team-with- used to showcase the range of properties supported by this API"-with-\
+    "firstChannelName": "My first channel of the sample team"-with-\
     "channels": [\
         {\
             "displayName": "Announcements 📢"-with-\

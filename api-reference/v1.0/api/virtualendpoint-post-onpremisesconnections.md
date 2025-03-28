@@ -5,6 +5,7 @@ author: "Emma0727"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Create cloudPcOnPremisesConnection

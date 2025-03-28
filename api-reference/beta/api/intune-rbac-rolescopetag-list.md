@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List roleScopeTags
@@ -63,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 257
+Content-Length: 320
 
 {
   "value": [
@@ -72,7 +73,10 @@ Content-Length: 257
       "id": "9ed1e179-e179-9ed1-79e1-d19e79e1d19e",
       "displayName": "Display Name value",
       "description": "Description value",
-      "isBuiltIn": true
+      "isBuiltIn": true,
+      "permissions": [
+        "Permissions value"
+      ]
     }
   ]
 }

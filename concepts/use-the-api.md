@@ -3,6 +3,7 @@ title: "Use the Microsoft Graph API"
 description: "Learn how to register your app and get authentication tokens for a user or service before you make requests to the Microsoft Graph API."
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Graph API
@@ -99,7 +100,7 @@ For example, adding the following `filter` parameter restricts the messages retu
   "blockType": "ignored"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso.com'
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=emailAddress eq 'jon@contoso.com'
 ```
 
 For more information about OData query options, see [Use query parameters to customize responses](query-parameters.md).

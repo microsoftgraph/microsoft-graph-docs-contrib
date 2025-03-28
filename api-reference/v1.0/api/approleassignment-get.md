@@ -5,6 +5,7 @@ author: "psignoret"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # Get appRoleAssignment
@@ -80,6 +81,8 @@ To get details of an appRole granted to a user:
 GET /users/{user-id}/appRoleAssignments/{appRoleAssignment-id}
 GET /me/appRoleAssignments/{appRoleAssignment-id}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Optional query parameters
 This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).

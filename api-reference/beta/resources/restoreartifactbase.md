@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Restore artifact
+ms.date: 06/22/2024
 ---
 
 # restoreArtifactBase resource type

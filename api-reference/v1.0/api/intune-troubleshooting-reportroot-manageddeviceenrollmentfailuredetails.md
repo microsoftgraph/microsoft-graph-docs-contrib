@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 03/14/2024
 ---
 
 # managedDeviceEnrollmentFailureDetails function

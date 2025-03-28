@@ -5,6 +5,7 @@ author: "jeeshnair"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # List device usageRights

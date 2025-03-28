@@ -5,6 +5,7 @@ author: "shanemalone"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # team: getShifts

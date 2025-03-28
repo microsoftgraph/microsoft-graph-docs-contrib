@@ -8,6 +8,7 @@ ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 toc.title: Temporary Access Pass
 toc.keywords: [ TAP ]
+ms.date: 07/22/2024
 ---
 
 # temporaryAccessPassAuthenticationMethod resource type

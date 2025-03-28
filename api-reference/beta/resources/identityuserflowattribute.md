@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "nanguil"
+ms.date: 05/22/2024
 ---
 
 # identityUserFlowAttribute resource type
@@ -38,6 +39,9 @@ Configuring user flow attributes in your Microsoft Entra ID or Azure AD B2C tena
 |description|String|The description of the user flow attribute that's shown to the user at the time of sign up.|
 |id|String|The identifier of the user flow attribute. Read-only. <br/><br/> Supports `$filter` (`eq`, `ne`). |
 |userFlowAttributeType|identityUserFlowAttributeType|The type of the user flow attribute. Read-only. Depending on the type of attribute, the values for this property are `builtIn`, `custom`, `required`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `ne`). |
+
+## Relationships
+None.
 
 ## JSON representation
 

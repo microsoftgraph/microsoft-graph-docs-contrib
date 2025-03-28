@@ -13,6 +13,7 @@ com.microsoft.graph.beta.models.security.EdiscoverySearch search = new com.micro
 search.setId("c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7");
 addToReviewSetPostRequestBody.setSearch(search);
 addToReviewSetPostRequestBody.setAdditionalDataOptions(EnumSet.of(com.microsoft.graph.beta.models.security.AdditionalDataOptions.LinkedFiles));
+addToReviewSetPostRequestBody.setCloudAttachmentVersion(com.microsoft.graph.beta.models.security.CloudAttachmentVersion.Latest);
 graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").reviewSets().byEdiscoveryReviewSetId("{ediscoveryReviewSet-id}").microsoftGraphSecurityAddToReviewSet().post(addToReviewSetPostRequestBody);
 
 

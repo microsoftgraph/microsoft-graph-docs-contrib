@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # depOnboardingSetting resource type
@@ -55,6 +56,8 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |:---|:---|:---|
 |defaultIosEnrollmentProfile|[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)|Default iOS Enrollment Profile|
 |defaultMacOsEnrollmentProfile|[depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md)|Default MacOs Enrollment Profile|
+|defaultVisionOSEnrollmentProfile|[depVisionOSEnrollmentProfile](../resources/intune-enrollment-depvisionosenrollmentprofile.md)|Default VisionOS Enrollment Profile|
+|defaultTvOSEnrollmentProfile|[depTvOSEnrollmentProfile](../resources/intune-enrollment-deptvosenrollmentprofile.md)|Default TvOS Enrollment Profile|
 |enrollmentProfiles|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) collection|The enrollment profiles.|
 |importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) collection|The imported Apple device identities.|
 

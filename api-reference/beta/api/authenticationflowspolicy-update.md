@@ -5,6 +5,7 @@ author: "linkhp"
 ms.localizationpriority: high
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update authenticationFlowsPolicy
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "authenticationflowspolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authenticationflowspolicy-update-permissions.md)]
+
+[!INCLUDE [rbac-authentication-flow-policy-update](../includes/rbac-for-apis/rbac-authentication-flow-policy-update.md)]
 
 ## HTTP request
 

@@ -5,6 +5,7 @@ author: "mea"
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.subservice: "teams"
+ms.date: 04/09/2024
 ---
 
 # teamsLicensingDetails resource type

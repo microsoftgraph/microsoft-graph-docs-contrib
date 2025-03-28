@@ -5,6 +5,7 @@ author: "malvika-balaraj"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 05/03/2024
 ---
 
 # Get analyzedEmail

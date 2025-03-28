@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: entra-users
 author: "psignoret"
+ms.date: 10/15/2024
 ---
 
 # List appRoleAssignments granted to a user
@@ -36,6 +37,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /users/{id | userPrincipalName}/appRoleAssignments
 GET /me/appRoleAssignments
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Optional query parameters
 

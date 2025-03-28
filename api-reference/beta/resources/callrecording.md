@@ -5,6 +5,7 @@ author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/02/2024
 ---
 
 # callRecording resource type
@@ -37,6 +38,9 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 | meetingId | String | The unique identifier of the **onlineMeeting** related to this recording. Read-only.|
 | meetingOrganizer|  [identitySet](identityset.md)| The identity information of the organizer of the **onlineMeeting** related to this recording. Read-only.|
 | recordingContentUrl| String| The URL that can be used to access the content of the recording. Read-only.|
+
+## Relationships
+None.
 
 ## JSON representation
 

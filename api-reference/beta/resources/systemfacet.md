@@ -18,6 +18,13 @@ Most apps should ignore items that have a System facet.
 
 **Note**: While this facet is empty today, in future API revisions the facet may be populated with additional properties.
 
+## Properties
+
+None.
+
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.systemFacet", "@type.aka": "microsoft.graph.systemFacet" } -->
@@ -26,10 +33,6 @@ Most apps should ignore items that have a System facet.
 {
 }
 ```
-
-## Properties
-
-None. This facet is a null or not-null value and contains no properties.
 
 <!--
 {

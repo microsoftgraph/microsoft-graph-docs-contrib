@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 doc_type: enumPageType
 ms.subservice: "teams"
+ms.date: 08/16/2024
 ---
 
 # teamsAppInstalledState enum type

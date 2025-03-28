@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.ItemOnlineMeetingItemRegistrationRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.OnlineMeetingsItemRegistrationRequestBuilderGetQueryParameters{
 	Expand: [] string {"microsoft.graph.meetingRegistration/customQuestions"},
 }
-configuration := &graphusers.ItemOnlineMeetingItemRegistrationRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.OnlineMeetingsItemRegistrationRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

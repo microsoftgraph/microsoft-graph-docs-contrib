@@ -5,6 +5,7 @@ author: "shubhamguptacal"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # userSignInInsight resource type

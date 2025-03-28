@@ -5,6 +5,7 @@ author: "navali-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 05/24/2024
 ---
 
 # addLargeGalleryViewOperation resource type

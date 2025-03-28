@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.subservice: "cloud-communications"
 ms.localizationpriority: medium
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # callMediaState resource type

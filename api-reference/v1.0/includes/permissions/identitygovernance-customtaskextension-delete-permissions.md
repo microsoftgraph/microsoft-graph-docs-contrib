@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|LifecycleWorkflows.ReadWrite.CustomTaskExtensions|LifecycleWorkflows.ReadWrite.All|
+|Delegated (work or school account)|LifecycleWorkflows-CustomExt.ReadWrite.All|LifecycleWorkflows.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|LifecycleWorkflows.ReadWrite.CustomTaskExtensions|LifecycleWorkflows.ReadWrite.All|
+|Application|LifecycleWorkflows-CustomExt.ReadWrite.All|LifecycleWorkflows.ReadWrite.All|
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "psignoret"
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # oauth2permissiongrant: delta

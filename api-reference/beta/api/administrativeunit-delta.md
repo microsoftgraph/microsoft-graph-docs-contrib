@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "DougKirschner"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # administrativeUnit: delta

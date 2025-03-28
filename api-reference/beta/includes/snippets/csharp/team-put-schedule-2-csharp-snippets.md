@@ -20,19 +20,10 @@ var requestBody = new Schedule
 	OfferShiftRequestsEnabled = true,
 	TimeOffRequestsEnabled = true,
 	StartDayOfWeek = DayOfWeekObject.Tuesday,
-	ActivitiesIncludedWhenCopyingShiftsEnabled = true,
+	IsActivitiesIncludedWhenCopyingShiftsEnabled = true,
 	IsCrossLocationShiftsEnabled = true,
 	IsCrossLocationShiftRequestApprovalRequired = true,
 	TimeClockEnabled = true,
-	TimeClockSettings = new TimeClockSettings
-	{
-		ApprovedLocation = new GeoCoordinates
-		{
-			Altitude = 1024.13d,
-			Latitude = 26.13246d,
-			Longitude = 24.34616d,
-		},
-	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

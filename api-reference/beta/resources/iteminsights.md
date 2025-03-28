@@ -5,6 +5,7 @@ author: "simonhult"
 ms.localizationpriority: high
 ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 04/16/2024
 ---
 
 # itemInsights resource type
@@ -21,7 +22,7 @@ Insights are returned by the following APIs:
 - [Trending](insights-trending.md) - returns documents from OneDrive for work or school and from SharePoint sites trending around a user.
 - [Used](insights-used.md) - returns documents viewed and modified by a user. Includes documents the user used in OneDrive for work or school, and SharePoint.
 
-Each insight is returned with a **resourceVisualization** and **resourceReference** complex value type (CVT). The **resourceVisualization** CVT contains properties such as **title** and **previewImageUrl**. Microsoft uses the visualization properties to render the files in experiences like Office Delve.
+Each insight is returned with a **resourceVisualization** and **resourceReference** complex value type (CVT). The **resourceVisualization** CVT contains properties such as **title** and **previewImageUrl**. Microsoft uses the visualization properties to render the files in experiences like Microsoft365.com.
 
 ### Limiting item insights
 

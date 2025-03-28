@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn how to use other languages to build a Microsoft Graph connector."
+ms.date: 11/07/2024
 ---
 
 # Build a Microsoft Graph connector using other languages

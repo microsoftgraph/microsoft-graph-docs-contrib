@@ -5,6 +5,7 @@ author: "srutto"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # userInsightsRoot resource type

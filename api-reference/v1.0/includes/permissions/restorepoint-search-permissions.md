@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|BackupRestore-Search.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|BackupRestore-Search.Read.All|Not available.|
+

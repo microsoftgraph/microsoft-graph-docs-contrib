@@ -5,6 +5,7 @@ author: "DanluCui"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # plannerExternalPlanSource resource type

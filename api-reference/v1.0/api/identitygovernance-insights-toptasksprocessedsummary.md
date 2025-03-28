@@ -5,6 +5,7 @@ author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 10/28/2024
 ---
 
 # insights: topTasksProcessedSummary

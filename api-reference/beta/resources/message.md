@@ -5,6 +5,7 @@ author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 08/21/2024
 ---
 
 # message resource type

@@ -1,10 +1,11 @@
 ---
 title: "message: delta"
-description: "Get a set of messages that have been added, deleted, or updated in a specified folder."
+description: "Get a set of messages that were added, deleted, or updated in a specified folder."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # message: delta
@@ -13,12 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a set of messages that have been added, deleted, or updated in a specified folder.
+Get a set of messages that were added, deleted, or updated in a specified folder.
 
 A **delta** function call for messages in a folder is similar to a GET request, except that by appropriately
 applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can [query for incremental changes in the messages in
-that folder](/graph/delta-query-messages). This allows you to maintain and synchronize a local store of a user's messages without
-having to fetch the entire set of messages from the server every time.
+that folder](/graph/delta-query-messages). Using deltas allows you toincrementally maintain and synchronize a local store of a user's messages.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -61,19 +61,19 @@ includes the encoded, desired parameters.
 |:---------------|:--------|:----------|
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same message collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same message collection. |
-| changeType | string | A custom query option to filter the delta response based on the type of change. Supported values are `created`, `updated` or `deleted`.|
+| changeType | string | A custom query option to filter the delta response based on the type of change. Supported values are `created`, `updated`, or `deleted`.|
 
 ### OData query parameters
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The
 _id_ property is always returned.
 - Delta query support `$select`, `$top`, and `$expand` for messages.
-- There is limited support for `$filter` and `$orderby`:
+- There's limited support for `$filter` and `$orderby`:
   * The only supported `$filter` expresssions are `$filter=receivedDateTime+ge+{value}`
   or `$filter=receivedDateTime+gt+{value}`.
-  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
-  an `$orderby` expression, the return order is not guaranteed.
-- There is no support for `$search`.
+  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you don't include
+  an `$orderby` expression, the return order isn't guaranteed.
+- There's no support for `$search`.
 
 ## Request headers
 | Name       | Type | Description |
@@ -120,10 +120,10 @@ Prefer: odata.maxpagesize=2
 ##### Response
 If the request is successful, the response would include a state token, which is either a _skipToken_
 (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header).
-Respectively, they indicate whether you should continue with the round or you have completed
+Respectively, they indicate whether you should continue with the round or you finished
 getting all the changes for that round.
 
-The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
+The following response shows a _skipToken_ in an _@odata.nextLink_ response header.
 
 Note: The response object shown here might be shortened for readability.
 <!-- {

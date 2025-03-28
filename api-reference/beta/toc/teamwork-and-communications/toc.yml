@@ -4,6 +4,30 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
+- name: AI interactions (preview)
+  items:
+  - name: AI interaction history
+    items:
+    - name: AI interaction history
+      href: ../../resources/aiinteractionhistory.md
+    - name: List all enterprise interactions
+      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
+  - name: Complex types
+    items:
+    - name: AI interaction
+      href: ../../resources/aiinteraction.md
+    - name: AI interaction attachment
+      href: ../../resources/aiinteractionattachment.md
+    - name: AI interaction context
+      href: ../../resources/aiinteractioncontext.md
+    - name: AI interaction link
+      href: ../../resources/aiinteractionlink.md
+    - name: AI interaction mention
+      href: ../../resources/aiinteractionmention.md
+    - name: AI interaction mentioned identity set
+      href: ../../resources/aiinteractionmentionedidentityset.md
+    - name: AI user
+      href: ../../resources/aiuser.md
 - name: Approvals
   items:
   - name: Approval item
@@ -252,6 +276,14 @@ items:
         items:
         - name: Update recording status
           href: ../../api/call-updaterecordingstatus.md
+        - name: Start recording
+          href: ../../api/call-startrecording.md
+        - name: Stop recording
+          href: ../../api/call-stoprecording.md
+        - name: Start transcription
+          href: ../../api/call-starttranscription.md
+        - name: Stop transcription
+          href: ../../api/call-stoptranscription.md
       - name: Logging Operations
         items:
         - name: Log teleconference device quality data
@@ -302,6 +334,12 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
+  - name: Call events
+    items:
+    - name: Call event
+      href: ../../resources/callevent.md
+    - name: Emergency call event
+      href: ../../resources/emergencycallevent.md
   - name: Call records
     items:
     - name: Overview
@@ -366,6 +404,24 @@ items:
         href: ../../resources/callrecords-smslogrow.md
       - name: Get SMS log
         href: ../../api/callrecords-callrecord-getsmslog.md
+  - name: Copilot settings
+    items:
+    - name: Copilot admin limited mode
+      items:
+      - name: Copilot admin limited mode
+        href: ../../resources/copilotadminlimitedmode.md
+      - name: Get
+        href: ../../api/copilotadminlimitedmode-get.md
+      - name: Update
+        href: ../../api/copilotadminlimitedmode-update.md
+    - name: Complex types
+      items:
+      - name: Copilot admin
+        href: ../../resources/copilotadmin.md
+      - name: Copilot admin setting
+        href: ../../resources/copilotadminsetting.md
+      - name: Copilot root
+        href: ../../resources/copilotroot.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -528,6 +584,8 @@ items:
         href: ../../api/virtualeventtownhall-getbyuserrole.md
       - name: List by user ID and role
         href: ../../api/virtualeventtownhall-getbyuseridandrole.md
+      - name: Set external event information
+        href: ../../api/virtualevent-setexternaleventinformation.md
     - name: Virtual event webinar
       items:
       - name: Virtual event webinar
@@ -548,6 +606,12 @@ items:
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
         href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+      - name: Set external event information
+        href: ../../api/virtualevent-setexternaleventinformation.md
+    - name: Complex types
+      items:
+      - name: Virtual event external information
+        href: ../../resources/virtualeventexternalinformation.md
 - name: Devices (preview)
   items:
   - name: Teamwork device
@@ -713,6 +777,8 @@ items:
       href: ../../api/channel-list-tabs.md
     - name: List channel members
       href: ../../api/channel-list-members.md
+    - name: List all members
+      href: ../../api/channel-list-allmembers.md
     - name: Add channel member
       href: ../../api/channel-post-members.md
     - name: Get channel member
@@ -753,6 +819,10 @@ items:
       href: ../../api/sharedwithchannelteaminfo-list-allowedmembers.md
     - name: Check user access
       href: ../../api/channel-doesuserhaveaccess.md
+    - name: Planner
+      items:
+      - name: List plans
+        href: ../../api/teamschannelplanner-list-plans.md
   - name: Chat
     items:
     - name: Chat
@@ -909,6 +979,10 @@ items:
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in chat
         href: ../../api/chatmessage-unsetreaction.md
+      - name: Forward message to chat
+        href: ../../api/chatmessage-forwardtochat.md
+      - name: Reply with quote
+        href: ../../api/chatmessage-replywithquote.md
     - name: Hosted content
       items:
       - name: List all hosted content
@@ -1041,6 +1115,10 @@ items:
       href: ../../api/userteamwork-sendactivitynotification.md
     - name: Send notification to multiple users in bulk
       href: ../../api/teamwork-sendactivitynotificationtorecipients.md
+  - name: Complex types
+    items:
+    - name: Forward to chat result
+      href: ../../resources/forwardtochatresult.md
 - name: Shift management
   items:
   - name: Day note

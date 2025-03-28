@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 toc.title: Meeting Registrant Base (deprecated)
+ms.date: 10/15/2024
 ---
 
 # meetingRegistrantBase resource type (deprecated)
@@ -30,6 +31,9 @@ Base type of [meetingRegistrant](meetingregistrant.md) and [externalMeetingRegis
 |:-----------|:-------|:--------------------------------------------------------------------|
 | id         | String | The unique identifier of the registrant. Read-only.                 |
 | joinWebUrl | String | A unique web URL for the registrant to join the meeting. Read-only. |
+
+## Relationships
+None.
 
 ## JSON representation
 

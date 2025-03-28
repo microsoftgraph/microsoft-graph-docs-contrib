@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 11/17/2024
 ---
 
 # virtualEventTownhall resource type
@@ -29,6 +30,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | [Cancel](../api/virtualeventtownhall-cancel.md) | None | Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
 | [List by user role](../api/virtualeventtownhall-getbyuserrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a list of **virtualEventTownhall** objects where the signed-in user is either the organizer or a coorganizer. |
 | [List by user ID and role](../api/virtualeventtownhall-getbyuseridandrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a list of **virtualEventTownhall** objects where the specified user is either the organizer or a coorganizer. |
+| [Set external event information](../api/virtualevent-setexternaleventinformation.md) | None | Link external event information to a [virtualEventTownhall](../resources/virtualeventtownhall.md) or [virtualEventWebinar](../resources/virtualeventwebinar.md) by setting an **externalEventId**. ]
 
 ## Properties
 
@@ -40,6 +42,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | displayName | String | Display name of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
+| externalEventInformation | [virtualEventExternalInformation](../resources/virtualeventexternalinformation.md) collection | The external information of a town hall. Returned only for event organizers or coorganizers; otherwise, `null`. |
 | id | String | Unique identifier of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Read-only. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The attendees invited to the town hall. The supported identities are: [communicationsUserIdentity](../resources/communicationsuseridentity.md) and [communicationsGuestIdentity](../resources/communicationsguestidentity.md). |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
@@ -92,6 +95,7 @@ The following JSON representation shows the resource type.
   "description": {"@odata.type": "microsoft.graph.itemBody"},
   "displayName": "String",
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "externalEventInformation" : [{"@odata.type": "microsoft.graph.virtualEventExternalInformation"}],
   "id": "String (identifier)",
   "invitedAttendees": [{"@odata.type": "microsoft.graph.identity"}],
   "isInviteOnly": "Boolean",

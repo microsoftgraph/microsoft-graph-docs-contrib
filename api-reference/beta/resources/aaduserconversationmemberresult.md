@@ -5,6 +5,7 @@ author: "AkJo"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/18/2024
 ---
 
 # aadUserConversationMemberResult resource type
@@ -23,6 +24,9 @@ Inherits from [actionResultPart](actionresultpart.md).
 |:---------------|:--------|:----------|
 |error|[publicError](publicerror.md) |The error that occurred, if any, during the course of the bulk operation.|
 |userId|String|The user object ID of the Microsoft Entra user that was being added as part of the bulk operation.|
+
+## Relationships
+None.
 
 ## JSON representation
 

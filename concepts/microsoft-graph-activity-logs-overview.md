@@ -7,7 +7,7 @@ ms.reviewer: krbash
 ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: non-product-specific
-ms.date: 10/30/2024
+ms.date: 11/25/2024
 
 #customer intent: As an administrator, I want to learn how to track all API activities in my tenant so that I can have full visibility into tenant activities and monitor and investigate suspicious activities.
 ---
@@ -22,7 +22,7 @@ This service is available in the following [national cloud deployments](/graph/d
 
 | Global service     | US Government L4   | US Government L5 (DOD) | China operated by 21Vianet |
 |--------------------|--------------------|------------------------|----------------------------|
-| :white_check_mark: | :white_check_mark: | :white_check_mark:     | :x:                        |
+| :white_check_mark: | :white_check_mark: | :white_check_mark:     | :white_check_mark:         |
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ To access the Microsoft Graph activity logs, you need the following privileges.
 
 The following data relating to API requests is available for Microsoft Graph activity logs on the Logs Analytics interface.
 
-[!INCLUDE [microsoftgraphactivitylogs-include](~/../azure-reference-other/azure-monitor-ref/tables/includes/microsoftgraphactivitylogs-include.md)]
+[!INCLUDE [microsoftgraphactivitylogs](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/reference/tables/microsoftgraphactivitylogs-include.md)]
 
 ## Common use cases for Microsoft Graph activity logs
 

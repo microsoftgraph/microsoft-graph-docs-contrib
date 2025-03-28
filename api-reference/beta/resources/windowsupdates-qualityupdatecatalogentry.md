@@ -3,8 +3,9 @@ title: "qualityUpdateCatalogEntry resource type"
 description: "Represents metadata for a Windows 10 quality update that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # qualityUpdateCatalogEntry resource type

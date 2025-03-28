@@ -3,8 +3,9 @@ title: "scheduleSettings resource type"
 description: "Represents settings for controlling how and when Windows Autopatch deploys an update over time."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # scheduleSettings resource type

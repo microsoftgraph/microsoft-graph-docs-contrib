@@ -13,6 +13,7 @@ request_body = TimeOffReason(
 	display_name = "Vacation",
 	icon_type = TimeOffReasonIconType.Plane,
 	is_active = True,
+	code = "VacationCode",
 )
 
 result = await graph_client.teams.by_team_id('team-id').schedule.time_off_reasons.post(request_body)

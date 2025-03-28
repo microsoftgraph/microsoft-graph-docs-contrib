@@ -5,6 +5,7 @@ author: "zihzhan-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # onlineMeetingRestricted resource type
@@ -17,24 +18,27 @@ Indicates the reason or reasons why media content from a participant is restrict
 
 ## Properties
 
-| Property               | Type                                                                                           | Description                                                                |
-|:-----------------------|:-----------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
-| contentSharingDisabled | [onlineMeetingContentSharingDisabledReason](#onlinemeetingcontentsharingdisabledreason-values) | Specifies the reason why shared content from this participant is disabled. Possible values are: `watermarkProtection`, `unknownFutureValue`.  |
-| videoDisabled          | [onlineMeetingVideoDisabledReason](#onlinemeetingvideodisabledreason-values)                   | Specifies the reason why video from this participant is disabled. Possible values are: `watermarkProtection`, `unknownFutureValue`.         |
+|Property|Type|Description|
+|:-------|:---|:----------|
+|contentSharingDisabled|[onlineMeetingContentSharingDisabledReason](#onlinemeetingcontentsharingdisabledreason-values)|Specifies the reason why shared content from this participant is disabled. Possible values are: `watermarkProtection`, `unknownFutureValue`.|
+|videoDisabled|[onlineMeetingVideoDisabledReason](#onlinemeetingvideodisabledreason-values)|Specifies the reason why video from this participant is disabled. Possible values are: `watermarkProtection`, `unknownFutureValue`.|
 
 ### onlineMeetingContentSharingDisabledReason values
 
-| Value               | Description                                                                                 |
-|:--------------------|:--------------------------------------------------------------------------------------------|
-| watermarkProtection | The meeting content is marked _watermarked_ but the user joined from an unsupported client. |
-| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                           |
+|Value|Description|
+|:----|:----------|
+|watermarkProtection|The meeting content is marked _watermarked_ but the user joined from an unsupported client.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### onlineMeetingVideoDisabledReason values
 
-| Value               | Description                                                                                 |
+|Value|Description|
 |:--------------------|:--------------------------------------------------------------------------------------------|
-| watermarkProtection | The meeting content is marked _watermarked_ but the user joined from an unsupported client. |
-| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                           |
+|watermarkProtection|The meeting content is marked _watermarked_ but the user joined from an unsupported client.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ author: "keylimesoda"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 12/23/2024
 ---
 
 # Restore deleted item (directory object)
@@ -27,7 +28,7 @@ The following table shows the least privileged permission or permissions require
 | [application](../resources/application.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
-| [user](../resources/user.md) | User.ReadWrite.All | Not supported. | User.ReadWrite.All |
+| [user](../resources/user.md) | User.DeleteRestore.All | Not supported. | User.DeleteRestore.All |
 
 [!INCLUDE [rbac-deleted-items-restore-apis](../includes/rbac-for-apis/rbac-deleted-items-restore-apis.md)]
 
@@ -51,6 +52,7 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |autoReconcileProxyConflict|Boolean|Optional parameter. Indicates whether Microsoft Entra ID should remove any conflicting proxy addresses while restoring a soft-deleted user whose one or more proxy addresses are currently used for an active user. Used only for restoring soft-deleted [user](../resources/user.md) objects. The default value for this parameter is `false`.|
+|newUserPrincipalName|String|The new **userPrincipalName** to add to the restored [user](../resources/user.md). Optional.|
 
 ## Response
 
@@ -208,6 +210,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+    "@odata.type": "#microsoft.graph.user",
     "id": "78bf875b-9343-4edc-9130-0d3958113563",
     "businessPhones": [],
     "displayName": "SampleUser",
@@ -222,3 +225,45 @@ Content-type: application/json
 }
 ```
 
+### Example 3: Restore a deleted user and assign them a new userPrincipalName
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "restore_directory_deleteditem_newUserPrincipalName"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/directory/deleteditems/78bf875b-9343-4edc-9130-0d3958113563/restore
+Content-Type: application/json
+
+{
+  "newUserPrincipalName": "johndoe@contoso.com"
+}
+```
+
+#### Response
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",
+    "@odata.type": "#microsoft.graph.user",
+    "id": "78bf875b-9343-4edc-9130-0d3958113563",
+    "businessPhones": [],
+    "displayName": "SampleUser",
+    "givenName": "Sample",
+    "mobilePhone": "+1 425 555 0109",
+    "officeLocation": "18/2111",
+    "preferredLanguage": "en-US",
+    "surname": "Vance",
+    "userPrincipalName": "johndoe@contoso.com"
+}
+```

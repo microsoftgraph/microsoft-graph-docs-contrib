@@ -5,6 +5,7 @@ author: "skadam-msft"
 ms.localizationpriority: medium
 ms.subservice: "compliance"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # subjectRightsRequest: getFinalAttachment
@@ -81,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/4ef5e3e6-545b
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/subjectrightsrequest-getfinalattachment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/subjectrightsrequest-getfinalattachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

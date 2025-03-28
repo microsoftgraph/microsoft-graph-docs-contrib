@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Microsoft Authenticator
+ms.date: 07/19/2024
 ---
 
 # microsoftAuthenticatorAuthenticationMethod resource type
@@ -58,7 +59,7 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "deviceTag": "String",
   "phoneAppVersion": "String",
-  "createdDateTime": "DateTimeOffset",
+  "createdDateTime": "String (timestamp)",
   "clientAppName": "microsoftAuthenticator"
 }
 ```

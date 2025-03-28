@@ -5,6 +5,7 @@ author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 11/29/2024
 ---
 
 # List recoveryKeys
@@ -15,6 +16,8 @@ Namespace: microsoft.graph
 Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. 
 
 This operation does not return the **key** property. For information about how to read the **key** property, see [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
+
+You can use this API to programmatically iterate through the list of recovery keys in the tenant and identify devices with BitLocker enabled. For more information, see the sample PowerShell code in [BitLocker recovery process](/windows/security/operating-system-security/data-protection/bitlocker/recovery-process#helpdesk-recovery-in-microsoft-entra-id).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

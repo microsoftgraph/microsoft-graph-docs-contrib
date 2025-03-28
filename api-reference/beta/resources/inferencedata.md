@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "profile"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # inferenceData resource type

@@ -5,6 +5,7 @@ author: "sponnada"
 ms.localizationpriority: medium
 ms.subservice: "entra-users"
 doc_type: apiPageType
+ms.date: 05/28/2024
 ---
 
 # List invitedBy
@@ -38,6 +39,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/invitedBy
 GET /users/{userId}/invitedBy
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Request headers
 

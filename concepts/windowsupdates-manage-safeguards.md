@@ -3,8 +3,9 @@ title: "Manage safeguards using Windows Autopatch"
 description: "When you deploy updates with Windows Autopatch, it automatically prevents devices with issues from being offered the update."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Manage safeguards using Windows Autopatch

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 toc.title: External Meeting Registrant (deprecated)
+ms.date: 10/15/2024
 ---
 
 # externalMeetingRegistrant resource type (deprecated)
@@ -37,6 +38,9 @@ Inherits from [meetingRegistrantBase](../resources/meetingregistrantbase.md).
 | joinWebUrl | String | A unique web URL for the registrant to join the meeting. Inherited from [meetingRegistrantBase](../resources/meetingregistrantbase.md). Read-only.          |
 | tenantId   | String | The tenant ID of this registrant if in Microsoft Entra ID.               |
 | userId     | String | The user ID of this registrant if in Microsoft Entra ID.                 |
+
+## Relationships
+None.
 
 ## JSON representation
 
