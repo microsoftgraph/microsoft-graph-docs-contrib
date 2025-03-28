@@ -2956,6 +2956,18 @@
               ]
             },
             {
+              "name": "Call delegation",
+              "overview": "../../resources/calldelegation-api-overview.md",
+              "resources": [
+                "callSettings",
+                "delegationSettings"
+              ],
+              "complexTypes": [
+                "delegateAllowedActions",
+                "userCloudCommunication"
+              ]
+            },
+            {
               "name": "Call events",
               "resources": [
                 "microsoft.graph.callEvent",
