@@ -70,6 +70,11 @@ Updated the Microsoft Entra built-in role required to [perform a new bulk upload
 
 Create and manage [sharePointGroup](/graph/api/resources/sharepointgroup?view=graph-rest-beta&preserve-view=true) and its members in a SharePoint Embedded container or SharePoint site.
 
+### Mail
+
+- [Get](/graph/api/mailfolderoperation-get?view=graph-rest-beta&preserve-view=true) or [list](/graph/api/mailfolder-list-operations?view=graph-rest-beta&preserve-view=true) long-running operations of a [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true).
+- [Update](/graph/api/mailfolder-updateallmessagesreadstate?view=graph-rest-beta&preserve-view=true) the read state of all messages in a [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true).
+
 ### Tasks and plans
 
 Use the **publicationName** property on [plannerTeamsPublicationInfo](/graph/api/resources/plannerteamspublicationinfo?view=graph-rest-beta&preserve-view=true) to get the name of a published task list.
