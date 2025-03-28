@@ -61,7 +61,7 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful and there are no validation errors, the method returns `204 No Content` response code. It doesn't return anything in the response body.
 
-When a Global Administrator or User Administrator initiates a request that violates custom banned words or prefix and suffix naming policies, the API returns a `204 No Content` response code, as these administrators are exempt from naming policies.
+When a Global Administrator or User Administrator initiates a request that violates custom banned words or prefix and suffix naming policies, the API returns a `204 No Content` response code, as these administrators are exempt from naming policies. For other users or administrators, requests violating these policies are invalid.
 
 If the request is invalid, the method returns `400 Bad Request` response code. An error message with details about the invalid request is returned in the response body.
 
