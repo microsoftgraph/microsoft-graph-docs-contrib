@@ -1,11 +1,12 @@
 ---
 title: "educationAiFeedbackAudienceEngagementSettings resource type"
-description: "The audience engagement related feedback types that students should receive from the AI feedback."
+description: "Represents the audience engagement-related feedback types that students should receive from the AI feedback."
 author: "v-rmanda"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: "Education AI feedback audience engagement settings"
 ---
 
 # educationAiFeedbackAudienceEngagementSettings resource type
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The audience engagement related feedback types that students should receive from the AI feedback.
+Represents the audience engagement-related feedback types that students should receive from the AI feedback.
 
 
 ## Properties

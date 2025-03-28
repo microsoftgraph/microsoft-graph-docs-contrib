@@ -1,11 +1,12 @@
 ---
 title: "educationAiFeedbackContentSettings resource type"
-description: "The content related feedback types that students should receive from the AI feedback."
+description: "Represents the content-related feedback types that students should receive from the AI feedback."
 author: "v-rmanda"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: "Education AI feedback content settings"
 ---
 
 # educationAiFeedbackContentSettings resource type
@@ -14,8 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The content related feedback types that students should receive from the AI feedback.
-
+Represents the content-related feedback types that students should receive from the AI feedback.
 
 ## Properties
 |Property|Type|Description|
@@ -37,9 +37,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.educationAiFeedbackContentSettings",
-  "isSpeechOrganizationEnabled": "Boolean",
   "isMessageClarityEnabled": "Boolean",
-  "isQualityOfInformationEnabled": "Boolean"
+  "isQualityOfInformationEnabled": "Boolean",
+  "isSpeechOrganizationEnabled": "Boolean"
 }
 ```
 

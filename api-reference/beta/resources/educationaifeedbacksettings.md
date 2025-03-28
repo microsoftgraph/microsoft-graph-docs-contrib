@@ -6,6 +6,7 @@ ms.date: 03/20/2025
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: "Education AI feedback settings"
 ---
 
 # educationAiFeedbackSettings resource type
