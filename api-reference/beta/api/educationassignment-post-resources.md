@@ -803,6 +803,9 @@ Content-type: application/json
 ```
 
 ### Example 8: Create an educationSpeakerProgressResource
+
+The following example shows how to create an [educationSpeakerProgressResource](../resources/educationspeakerprogressresource.md) assignment resource.
+
 #### Request
 
 The following example shows a request.
@@ -817,36 +820,36 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 Content-Type: application/json
 
 {
-    "distributeForStudentWork": true,
-    "resource": {
-        "@odata.type": "microsoft.graph.educationSpeakerProgressResource",
-        "displayName": "speakerProgressTestResource",
-        "recordingTimeLimitInMinutes": 5,
-        "showRehearsalReportToStudentBeforeMediaUpload": true,
-        "maxRecordingAttempts": 1,
-        "isVideoRequired": true,
-        "isAiFeedbackEnabled": true,
-        "presentationTitle": "speakerProgressTestResource",
-        "spokenLanguageLocale": "en-US",
-        "speakerCoachSettings": {
-            "deliverySettings": {
-                "isPronunciationEnabled": true
-            }
-        },
-        "aiFeedbackCriteria": {
-            "speechType": "informative",
-            "aiFeedbackSettings": {
-                "deliverySettings": {
-                    "isStyleEnabled": true
-                }
-            }
+  "distributeForStudentWork": true,
+  "resource": {
+    "@odata.type": "microsoft.graph.educationSpeakerProgressResource",
+    "displayName": "speakerProgressTestResource",
+    "recordingTimeLimitInMinutes": 5,
+    "showRehearsalReportToStudentBeforeMediaUpload": true,
+    "maxRecordingAttempts": 1,
+    "isVideoRequired": true,
+    "isAiFeedbackEnabled": true,
+    "presentationTitle": "speakerProgressTestResource",
+    "spokenLanguageLocale": "en-US",
+    "speakerCoachSettings": {
+      "deliverySettings": {
+        "isPronunciationEnabled": true
+      }
+    },
+    "aiFeedbackCriteria": {
+      "speechType": "informative",
+      "aiFeedbackSettings": {
+        "deliverySettings": {
+          "isStyleEnabled": true
         }
+      }
     }
+  }
 }
 ```
----
 
 #### Response
+
 The following example shows the response.
 
 <!-- {
@@ -860,73 +863,73 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('fe9c8d6f-baad-4b5e-b9d5-e2bb33e4ed19')/resources/$entity",
-    "distributeForStudentWork": true,
-    "id": "af98a1e1-3393-4ee0-8bcc-8b5bb4598d1c",
-    "resource": {
-        "@odata.type": "#microsoft.graph.educationSpeakerProgressResource",
-        "displayName": "speakerProgressTestResource",
-        "createdDateTime": "2025-03-17T16:26:03.5530234Z",
-        "lastModifiedDateTime": "2025-03-17T16:26:03.5530384Z",
-        "recordingTimeLimitInMinutes": 5,
-        "showRehearsalReportToStudentBeforeMediaUpload": true,
-        "maxRecordingAttempts": 1,
-        "isVideoRequired": true,
-        "isAiFeedbackEnabled": true,
-        "presentationTitle": "speakerProgressTestResource",
-        "spokenLanguageLocale": "en-US",
-        "createdBy": {
-            "application": null,
-            "device": null,
-            "user": {
-                "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                "displayName": null
-            }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('fe9c8d6f-baad-4b5e-b9d5-e2bb33e4ed19')/resources/$entity",
+  "distributeForStudentWork": true,
+  "id": "af98a1e1-3393-4ee0-8bcc-8b5bb4598d1c",
+  "resource": {
+    "@odata.type": "#microsoft.graph.educationSpeakerProgressResource",
+    "displayName": "speakerProgressTestResource",
+    "createdDateTime": "2025-03-17T16:26:03.5530234Z",
+    "lastModifiedDateTime": "2025-03-17T16:26:03.5530384Z",
+    "recordingTimeLimitInMinutes": 5,
+    "showRehearsalReportToStudentBeforeMediaUpload": true,
+    "maxRecordingAttempts": 1,
+    "isVideoRequired": true,
+    "isAiFeedbackEnabled": true,
+    "presentationTitle": "speakerProgressTestResource",
+    "spokenLanguageLocale": "en-US",
+    "createdBy": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+        "displayName": null
+      }
+    },
+    "lastModifiedBy": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+        "displayName": null
+      }
+    },
+    "speakerCoachSettings": {
+      "deliverySettings": {
+        "isPaceEnabled": false,
+        "areFillerWordsEnabled": false,
+        "isPitchEnabled": false,
+        "isPronunciationEnabled": true
+      },
+      "contentSettings": {
+        "isInclusivenessEnabled": false,
+        "isRepetitiveLanguageEnabled": false
+      },
+      "audienceEngagementSettings": {
+        "isBodyLanguageEnabled": false
+      }
+    },
+    "aiFeedbackCriteria": {
+      "speechType": "informative",
+      "aiFeedbackSettings": {
+        "deliverySettings": {
+          "isLanguageUseEnabled": false,
+          "areRhetoricalTechniquesEnabled": false,
+          "isStyleEnabled": true
         },
-        "lastModifiedBy": {
-            "application": null,
-            "device": null,
-            "user": {
-                "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                "displayName": null
-            }
+        "contentSettings": {
+          "isSpeechOrganizationEnabled": false,
+          "isMessageClarityEnabled": false,
+          "isQualityOfInformationEnabled": false
         },
-        "speakerCoachSettings": {
-            "deliverySettings": {
-                "isPaceEnabled": false,
-                "areFillerWordsEnabled": false,
-                "isPitchEnabled": false,
-                "isPronunciationEnabled": true
-            },
-            "contentSettings": {
-                "isInclusivenessEnabled": false,
-                "isRepetitiveLanguageEnabled": false
-            },
-            "audienceEngagementSettings": {
-                "isBodyLanguageEnabled": false
-            }
-        },
-        "aiFeedbackCriteria": {
-            "speechType": "informative",
-            "aiFeedbackSettings": {
-                "deliverySettings": {
-                    "isLanguageUseEnabled": false,
-                    "areRhetoricalTechniquesEnabled": false,
-                    "isStyleEnabled": true
-                },
-                "contentSettings": {
-                    "isSpeechOrganizationEnabled": false,
-                    "isMessageClarityEnabled": false,
-                    "isQualityOfInformationEnabled": false
-                },
-                "audienceEngagementSettings": {
-                    "areEngagementStrategiesEnabled": false,
-                    "isEmotionalAndIntellectualAppealEnabled": false,
-                    "isCallToActionEnabled": false
-                }
-            }
+        "audienceEngagementSettings": {
+          "areEngagementStrategiesEnabled": false,
+          "isEmotionalAndIntellectualAppealEnabled": false,
+          "isCallToActionEnabled": false
         }
+      }
     }
+  }
 }
 ```
 ## Error response for invalid request body for educationSpeakerProgressResource.
