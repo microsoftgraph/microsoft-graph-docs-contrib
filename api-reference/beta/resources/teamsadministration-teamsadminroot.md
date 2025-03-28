@@ -19,9 +19,7 @@ Represents a collection of user configurations
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List userConfigurations](../api/teamsadministration-teamsadminroot-list-userconfigurations.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Get user configurations for all Teams users belonging to a tenant |
+None.
 
 ## Properties
 |Property|Type|Description|

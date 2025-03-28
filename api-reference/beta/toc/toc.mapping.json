@@ -3264,6 +3264,14 @@
         "workbookSortField",
         "workbookWorksheetProtectionOptions"
       ]
+    },
+    {
+      "name": "Teams User Configuration",
+      "overview": "../../resources/teamsadministration-teamsuserconfiguration.md",
+      "resources": [
+        "List",
+        "Get"
+      ]
     }
   ],
   "resourceOverviews": [
