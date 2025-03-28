@@ -1,6 +1,6 @@
 ---
 title: "educationSpeakerCoachAudienceEngagementSettings resource type"
-description: "The audience engagement related feedback types that students should receive from the Speaker Coach."
+description: "Represents the audience engagement-related feedback types that students should receive from the Speaker Coach."
 author: "v-rmanda"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The audience engagement related feedback types that students should receive from the Speaker Coach.
-
+Represents the audience engagement-related feedback types that students should receive from the Speaker Coach.
 
 ## Properties
 |Property|Type|Description|
