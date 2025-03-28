@@ -103,7 +103,7 @@ Content-Type: application/json
         },
         {
           "policyType": "TeamsMeetingPolicy",
-          "policyAssignmentt": {
+          "policyAssignment": {
             "displayName": "CustomPolicy"
             "assignmentType": "direct"
             "policyId": "J93PmFHwFcLZhWfYcBlv9pn-hG-kUWkcxmkDvpwgacw"
