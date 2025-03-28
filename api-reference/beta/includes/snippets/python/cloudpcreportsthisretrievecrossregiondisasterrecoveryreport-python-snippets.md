@@ -7,8 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 # Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.devicemanagement.virtualendpoint.reports.retrieve_cross_region_disaster_recovery_report.retrieve_cross_region_disaster_recovery_report_post_request_body import RetrieveCrossRegionDisasterRecoveryReportPostRequestBody
+from msgraph_beta.generated.models.cloud_pc_disaster_recovery_report_name import CloudPcDisasterRecoveryReportName
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = RetrieveCrossRegionDisasterRecoveryReportPostRequestBody(
+	report_name = CloudPcDisasterRecoveryReportName.CrossRegionDisasterRecoveryReport,
 	filter = "DisasterRecoveryStatus eq 'Active outage'",
 	select = [
 		"Id",
@@ -18,11 +20,12 @@ request_body = RetrieveCrossRegionDisasterRecoveryReportPostRequestBody(
 		"DeviceId",
 		"CloudPCDeviceDisplayName",
 		"UserPrincipalName",
-		"IsCrossRegionEnabled",
-		"CrossRegionHealthStatus",
+		"EnabledDRType",
+		"DRHealthStatus",
 		"LicenseType",
 		"DisasterRecoveryStatus",
 		"CurrentRestorePointDateTime",
+		"BackupCloudPcStatus",
 		"ActivationExpirationDateTime",
 	],
 	skip = 0,

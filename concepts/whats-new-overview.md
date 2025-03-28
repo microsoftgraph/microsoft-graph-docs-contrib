@@ -21,15 +21,76 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Teamwork and communications | Messaging
 
-Use the **firstChannelName** property on a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) to set the name of the first channel created in a team.
+### Applications
+
+Updated the Microsoft Entra built-in role required to [perform a new bulk upload](/graph/api/synchronization-synchronizationjob-post-bulkupload). Going forward, admin users can use the User Administrator role instead of the Global Administrator role to invoke this API.
+
+### Device and app management | Cloud PC
+
+Use the **autopatch** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy) to get or set specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC.
+
+### Files
+
+[Use the app folder in OneDrive and SharePoint](/graph/onedrive-sharepoint-appfolder) for secure application settings and data storage with Microsoft Graph.
+
+### Microsoft Graph connector
+
+The management of Microsoft Graph connectors in the Microsoft Teams admin center will be deprecated on April 14, 2025. Going forward, you can manage Microsoft Graph connectors from the **Search & intelligence** section in the [Microsoft 365 admin center](/microsoftsearch/manage-connector).
+
+### Teamwork and communications | Calls and online meetings
+
+Updated the throttling thresholds for the [callRecord](/graph/api/resources/callrecords-callrecord), [participant](/graph/api/resources/callrecords-participant), and [session](/graph/api/resources/callrecords-session) resources. The limit per call record changed from 10 requests to 40 requests per 20 seconds for all pages, and the limit for list call records changed from 15 requests to 40 requests per 20 seconds for all pages.
+
+### Teamwork and communications | Messaging
+
+- Use the **firstChannelName** property on a [team](/graph/api/resources/team) to set the name of the first channel created in a team.
+- Enabled Azure China 21Vianet support for the following methods:
+  - [userTeamwork: sendActivityNotification](/graph/api/userteamwork-sendactivitynotification)
+  - [teamwork: sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients)
+  - [team: sendActivityNotification](/graph/api/team-sendactivitynotification)
+  - [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification)
 
 ## March 2025: New in preview only
+
+### Applications
+
+Updated the Microsoft Entra built-in role required to [perform a new bulk upload](/graph/api/synchronization-synchronizationjob-post-bulkupload?view=graph-rest-beta&preserve-view=true). Going forward, admin users can use the User Administrator role instead of the Global Administrator role to invoke this API.
 
 ### Device and app management | Cloud PC
 
 - Use the **healthCheckStatus** property on [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) to indicate the health status of the Cloud PC snapshot.
 - Use the **ignoreUnhealthySnapshots** property on [cloudPcBulkRestore](/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta&preserve-view=true) to specify whether to ignore snapshots of unhealthy Cloud PCs.
 - Removed the `GET /deviceManagement/virtualEndpoint/snapshots/{cloudPcSnapshotId}` method from the [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) resource.
+- Use the new members `australasia` and `europe` in **cloudPcRegionGroup** to indicate the geographic group to which a region belongs.
+- Use the **reportName** parameter on the [cloudPcReports: retrieveCrossRegionDisasterRecoveryReport](/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta&preserve-view=true) method to get the name of the Cloud PC disaster recovery report.
+- Added the enabledDRType, dRHealthStatus, and backupCloudPcStatus as supported columns for the [cloudPcReports: retrieveCrossRegionDisasterRecoveryReport](/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta&preserve-view=true) method and removed the isCrossRegionEnabled and crossRegionHealthStatus columns from the report.
+
+### Files
+
+Create and manage [sharePointGroup](/graph/api/resources/sharepointgroup?view=graph-rest-beta&preserve-view=true) and its members in a SharePoint Embedded container or SharePoint site.
+
+### Tasks and plans
+
+Use the **publicationName** property on [plannerTeamsPublicationInfo](/graph/api/resources/plannerteamspublicationinfo?view=graph-rest-beta&preserve-view=true) to get the name of a published task list.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **isEndToEndEncryptionEnabled** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) and [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) to indicate whether end-to-end encryption (E2EE) is enabled for a meeting or virtual event session.
+
+### Teamwork and communications | Messaging
+
+- [Reply with quote](/graph/api/chatmessage-replywithquote?view=graph-rest-beta&preserve-view=true) to a single chat message or multiple chat messages in a chat.
+- [Forward](/graph/api/chatmessage-forwardtochat?view=graph-rest-beta&preserve-view=true) a chat message, a channel message, or a channel message reply to a chat.
+- Enabled Azure China 21Vianet support for the following methods:
+  - [userTeamwork: sendActivityNotification](/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta&preserve-view=true)
+  - [teamwork: sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta&preserve-view=true)
+  - [team: sendActivityNotification](/graph/api/team-sendactivitynotification?view=graph-rest-beta&preserve-view=true)
+  - [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification?view=graph-rest-beta&preserve-view=true)
+- Use the `<codeblock><code></code></codeblock>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody?view=graph-rest-beta&preserve-view=true) resource to represent a code block in the message body in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true)
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **allowCopyingAndSharingMeetingContent** on the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) and [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) to indicate whether copying and sharing meeting content is enabled for the meeting.
 
 ## February 2025: New and generally available 
 
@@ -136,3 +197,4 @@ Are there scenarios you'd like Microsoft Graph to support?
 - [Microsoft Graph developer blog](https://devblogs.microsoft.com/microsoft365dev/category/microsoft-graph/).
 - [Microsoft Graph API changelog](https://developer.microsoft.com/graph/changelog/).
 - [Microsoft Graph what's new history](whats-new-earlier.md).
+ 
