@@ -1,6 +1,6 @@
 ---
 title: "educationAiFeedbackSettings resource type"
-description: "The feedback types that students should receive from AI feedback."
+description: "Represents the feedback types that students should receive from AI feedback."
 author: "v-rmanda"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
@@ -15,8 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The feedback types that students should receive from AI feedback.
-
+Represents the feedback types that students should receive from AI feedback.
 
 ## Properties
 |Property|Type|Description|
@@ -38,15 +37,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.educationAiFeedbackSettings",
-  "deliverySettings": {
-    "@odata.type": "microsoft.graph.educationAiFeedbackDeliverySettings"
-  },
-  "contentSettings": {
-    "@odata.type": "microsoft.graph.educationAiFeedbackContentSettings"
-  },
-  "audienceEngagementSettings": {
-    "@odata.type": "microsoft.graph.educationAiFeedbackAudienceEngagementSettings"
-  }
+  "audienceEngagementSettings": {"@odata.type": "microsoft.graph.educationAiFeedbackAudienceEngagementSettings"},
+  "contentSettings": {"@odata.type": "microsoft.graph.educationAiFeedbackContentSettings"},
+  "deliverySettings": {"@odata.type": "microsoft.graph.educationAiFeedbackDeliverySettings"}  
 }
 ```
 
