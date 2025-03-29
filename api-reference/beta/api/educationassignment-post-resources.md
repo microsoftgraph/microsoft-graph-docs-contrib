@@ -67,6 +67,18 @@ In the request body, supply a JSON representation of one of the following resour
 ## Response
 If successful, this method returns a `201 Created` response code and an [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.
 
+This method also returns a `400 Bad Request` response code when an invalid request body is provided for the **educationSpeakerProgressResource** assignment resource in the following scenarios:
+
+- The distributable resource attach limit is exceeded.
+- No speaker coach setting or AI feedback is enabled.
+- AI feedback is enabled, but the AI feedback criteria are null.
+- AI feedback is enabled, but no settings are enabled in the AI feedback criteria.
+- AI feedback is enabled, but **aiFeedbackCriteria.speechType** has an invalid value.
+- AI feedback criteria have settings enabled, but AI feedback isn't enabled. 
+- **aiFeedbackCriteria.speechType** is set, but AI feedback isn't enabled.
+- **recordingTimeLimitInMinutes** isn't between 1 and 10 (inclusive).
+- **maxRecordingAttempts** isn't between 0 and 10 (inclusive).
+
 ## Examples
 ### Example 1: Create an educationLinkResource
 #### Request
@@ -930,27 +942,6 @@ Content-Type: application/json
       }
     }
   }
-}
-```
-## Error response for invalid request body for educationSpeakerProgressResource.
-If the distributable resource attach limit is exceeded, the method returns a `400` error message.
-
-This also applies for if no speaker coach setting nor AI feedback are enabled, if AI feedback is enabled but the AI feedback criteria are null, if AI feedback is enabled but AI feedback criteria have no settings enabled, if AI feedback is enabled but AiFeedbackCriteria.SpeechType has an invalid value, if AI feedback criteria have settings enabled but AI feedback is not enabled, if AiFeedbackCriteria.SpeechType is set but AI feedback is not enabled, if RecordingTimeLimitInMinutes is not between 1 and 10 inclusive, and if MaxRecordingAttempts is not between 0 and 10 inclusive.
-
-```http
-HTTP/1.1 400 Bad Request
-Content-type: application/json
-
-{
-    "error": {
-        "code": "20243",
-        "message": "Invalid request body. Distributable resource attach limit exceeded.",
-        "innerError": {
-            "date": "2025-02-20T20:25:00",
-            "request-id": "4a342b8c-0623-4f08-9f37-0475d6ed8671",
-            "client-request-id": "b1b08430-f576-3fb1-4b5e-e66aab04caf3"
-        }
-    }
 }
 ```
 
