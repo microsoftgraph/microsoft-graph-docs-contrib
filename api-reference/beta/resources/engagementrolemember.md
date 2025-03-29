@@ -1,10 +1,10 @@
 ---
 title: "engagementRoleMember resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents the role member management in Viva Engage which involves assigning and managing various administrative roles and corp comm role within the Viva Engage platform."
+author: "richafnu"
 ms.date: 03/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "viva-engage"
 doc_type: resourcePageType
 ---
 
@@ -14,35 +14,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Viva Engage handles role member management by assigning and managing various member roles within the platform. Each member role is mapped in Microsoft Entra ID and [assigned in the Microsoft 365 admin portal](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide), allowing for the assignment of another roles for collaboration, tasks, and maintenance. For more details, refer to [https://learn.microsoft.com/en-us/viva/engage/member-roles](https://learn.microsoft.com/en-us/viva/engage/eac-key-admin-roles-permissions).
 
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/engagementrole-list-members.md)|[engagementRoleMember](../resources/engagementrolemember.md) collection|Get a list of the engagementRoleMember objects and their properties.|
 |[Create](../api/engagementrole-post-members.md)|[engagementRoleMember](../resources/engagementrolemember.md)|Create a new engagementRoleMember object.|
-|[Get](../api/engagementrolemember-get.md)|[engagementRoleMember](../resources/engagementrolemember.md)|Read the properties and relationships of an engagementRoleMember object.|
-|[Update](../api/engagementrolemember-update.md)|[engagementRoleMember](../resources/engagementrolemember.md)|Update the properties of an engagementRoleMember object.|
 |[Delete](../api/engagementrole-delete-members.md)|None|Delete an engagementRoleMember object.|
-|[List user](../api/engagementrolemember-list-user.md)|[user](../resources/user.md) collection|**TODO: Add a useful description.**|
-|[Add user](../api/engagementrolemember-post-user.md)|[user](../resources/user.md)|Add user by posting to the user collection.|
-|[Remove user](../api/engagementrolemember-delete-user.md)|None|Remove a [user](../resources/user.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|userId|String|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|The timestamp when the role was assigned to the user.|
+|id|String|The unique identifier of the role. Read-only. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|userId|String|The Entra ID of the user who has been assigned any specific role.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|user|[user](../resources/user.md)|**TODO: Add Description**|
+|user|[user](../resources/user.md)|Expands the user directory object to get user attributes.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
