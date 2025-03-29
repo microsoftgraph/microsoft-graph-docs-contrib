@@ -59,6 +59,7 @@ In the request body, supply a JSON representation of one of the following resour
 - [educationLinkResource](../resources/educationlinkresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
+- [educationSpeakerProgressResource](../resources/educationspeakerprogressresource.md)
 - [educationTeamsAppResource](../resources/educationteamsappresource.md)
 - [educationWordResource](../resources/educationwordresource.md)
 
