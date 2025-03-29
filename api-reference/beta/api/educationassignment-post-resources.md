@@ -18,14 +18,14 @@ Create an [assignment resource](../resources/educationassignmentresource.md). On
 
 You can create the following types of assignment resources:
 
-- [educationFileResource](../resources/educationfileresource.md)
 - [educationExcelResource](../resources/educationexcelresource.md)
-- [educationWordResource](../resources/educationwordresource.md)
+- [educationFileResource](../resources/educationfileresource.md)
 - [educationLinkResource](../resources/educationlinkresource.md)
-- [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
-- [educationTeamsAppResource](../resources/educationteamsappresource.md)
+- [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationSpeakerProgressResource](../resources/educationspeakerprogressresource.md)
+- [educationTeamsAppResource](../resources/educationteamsappresource.md)
+- [educationWordResource](../resources/educationwordresource.md)
 
 Every resource has an **@odata.type** property to indicate which type of resource is being created. 
 
@@ -54,13 +54,13 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/resources
 ## Request body
 In the request body, supply a JSON representation of one of the following resource types: 
 
-- [educationFileResource](../resources/educationfileresource.md)
 - [educationExcelResource](../resources/educationexcelresource.md)
-- [educationWordResource](../resources/educationwordresource.md)
+- [educationFileResource](../resources/educationfileresource.md)
 - [educationLinkResource](../resources/educationlinkresource.md)
-- [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
+- [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationTeamsAppResource](../resources/educationteamsappresource.md)
+- [educationWordResource](../resources/educationwordresource.md)
 
 >**Note:** You can't use this operation to create an [educationExternalResource](../resources/educationexternalresource.md).
 
