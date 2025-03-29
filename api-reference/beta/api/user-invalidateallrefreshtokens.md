@@ -45,6 +45,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /me/invalidateAllRefreshTokens
 POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|

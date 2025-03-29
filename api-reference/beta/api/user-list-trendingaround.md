@@ -32,6 +32,8 @@ GET /users/{id | userPrincipalName}/trendingAround
 GET /drive/root/createdByUser/trendingAround
 GET /drive/root/lastModifiedByUser/trendingAround
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 

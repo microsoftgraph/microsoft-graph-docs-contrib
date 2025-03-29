@@ -80,6 +80,7 @@ The following table shows the properties that are required when you create the i
 |vppTokenOrganizationName|String|The organization associated with the Apple Volume Purchase Program Token|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
 |vppTokenAppleId|String|The Apple Id associated with the given Apple Volume Purchase Program Token.|
+|vppTokenDisplayName|String|Display name of the VPP token associated with this app.|
 |bundleId|String|The Identity Name.|
 |vppTokenId|String|Identifier of the VPP token associated with this app.|
 |revokeLicenseActionResults|[iosVppAppRevokeLicensesActionResult](../resources/intune-apps-iosvppapprevokelicensesactionresult.md) collection|Results of revoke license actions on this app.|
@@ -96,7 +97,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2056
+Content-length: 2114
 
 {
   "@odata.type": "#microsoft.graph.iosVppApp",
@@ -142,6 +143,7 @@ Content-length: 2056
   "vppTokenOrganizationName": "Vpp Token Organization Name value",
   "vppTokenAccountType": "education",
   "vppTokenAppleId": "Vpp Token Apple Id value",
+  "vppTokenDisplayName": "Vpp Token Display Name value",
   "bundleId": "Bundle Id value",
   "vppTokenId": "Vpp Token Id value",
   "revokeLicenseActionResults": [
@@ -166,7 +168,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2228
+Content-Length: 2286
 
 {
   "@odata.type": "#microsoft.graph.iosVppApp",
@@ -215,6 +217,7 @@ Content-Length: 2228
   "vppTokenOrganizationName": "Vpp Token Organization Name value",
   "vppTokenAccountType": "education",
   "vppTokenAppleId": "Vpp Token Apple Id value",
+  "vppTokenDisplayName": "Vpp Token Display Name value",
   "bundleId": "Bundle Id value",
   "vppTokenId": "Vpp Token Id value",
   "revokeLicenseActionResults": [

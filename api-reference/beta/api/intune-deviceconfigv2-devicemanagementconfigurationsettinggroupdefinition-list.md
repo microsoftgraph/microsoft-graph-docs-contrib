@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
-ms.date: 09/12/2024
+ms.date: 08/01/2024
 ---
 
 # List deviceManagementConfigurationSettingGroupDefinitions
@@ -68,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2037
+Content-Length: 2067
 
 {
   "value": [
@@ -100,6 +100,7 @@ Content-Length: 2037
       "settingUsage": "configuration",
       "uxBehavior": "dropdown",
       "visibility": "settingsCatalog",
+      "riskLevel": "medium",
       "referredSettingInformationList": [
         {
           "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
