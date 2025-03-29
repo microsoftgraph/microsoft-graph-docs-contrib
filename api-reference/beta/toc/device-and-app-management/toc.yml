@@ -441,6 +441,8 @@ items:
       href: ../../resources/cloudpcauditresource.md
     - name: Cloud PC bulk create snapshot
       href: ../../resources/cloudpcbulkcreatesnapshot.md
+    - name: Cloud PC bulk disaster recovery
+      href: ../../resources/cloudpcbulkdisasterrecovery.md
     - name: Cloud PC bulk disaster recovery failback
       href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
     - name: Cloud PC bulk disaster recovery failover
