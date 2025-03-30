@@ -1,7 +1,7 @@
 ---
 author: "vanshisingh"
 title: "List items"
-description: "Get a collection of recycleBinItem resources in the recycleBin of the specified SharePoint site."
+description: "Get a collection of recycleBinItem resources in the recycleBin of the specified SharePoint Embedded fileStorageContainer."
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ ms.date: 12/10/2024
 
 Namespace: microsoft.graph
 
-Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md).
+Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint Embedded [fileStorageContainer](../resources/filestoragecontainer.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /sites/{siteId}/recycleBin/items
+GET /storage/fileStorage/containers/{containerId}/recycleBin/items
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request to list all **recycleBinItem** resources under a specific site.
+The following example shows a request to list all **recycleBinItem** resources under a specific SharePoint Embedded fileStorageContainer.
 
 # [HTTP](#tab/http)
 <!-- {
