@@ -1,6 +1,6 @@
 ---
 title: "remediationUpdateFilter resource type"
-description: "Represents a filter to determine which remediation update content matches the rule on an ongoing basis."
+description: "Represents a filter to determine which remediation update content matches the rule continuously."
 author: "angiechen22"
 ms.localizationpriority: medium
 ms.subservice: autopatch
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a filter to determine which remediation update content matches the rule on an ongoing basis.
+Represents a filter to determine which remediation update content matches the rule continuously.
 
 Inherits from [windowsUpdateFilter](../resources/windowsupdates-windowsupdatefilter.md).
 
