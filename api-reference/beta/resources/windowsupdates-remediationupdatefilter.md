@@ -1,6 +1,6 @@
 ---
-title: "driverUpdateFilter resource type"
-description: "Represents a filter to determine which driver update content matches the rule on an ongoing basis."
+title: "remediationUpdateFilter resource type"
+description: "Represents a filter to determine which remediation update content matches the rule on an ongoing basis."
 author: "angiechen22"
 ms.localizationpriority: medium
 ms.subservice: autopatch
@@ -21,7 +21,7 @@ Inherits from [windowsUpdateFilter](../resources/windowsupdates-windowsupdatefil
 
 |Property|Type|Description|
 |:---|:---|:---|
-|remediationType|microsoft.graph.windowsUpdates.remediationType|The type of remediation content that is offered to the device. Possible values are: `inPlaceUpgrade`.|
+|remediationType|microsoft.graph.windowsUpdates.remediationType|The type of remediation content that is offered to the device. Possible values are: `inPlaceUpgrade`, `unknownFutureValue`.|
 
 ## Relationships
 None.
