@@ -5,6 +5,7 @@ author: "angiechen22"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: resourcePageType
+ms.date: 03/30/2025
 ---
 
 # remediationUpdateFilter resource type
