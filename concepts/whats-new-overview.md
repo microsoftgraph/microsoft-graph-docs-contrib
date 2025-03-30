@@ -101,7 +101,7 @@ Use the **allowCopyingAndSharingMeetingContent** on the [onlineMeeting](/graph/a
 
 ### Security
 
-- Added **customDetails** property, a dictionary with user defined key-value pairs, to security alerts [Get](/graph/api/resources/security-alert) and [Update](/graph/api/resources/security-alert-update)
+- Added the **customDetails** property to the security alert resource, a dictionary with user-defined key-value pairs. It can be used with the [Get](/graph/api/resources/security-alert) and [Update](/graph/api/resources/security-alert-update) methods.
 
 ## February 2025: New and generally available 
 
