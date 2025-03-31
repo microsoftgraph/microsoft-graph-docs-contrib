@@ -1,5 +1,39 @@
 {
   "changelog": [
+        {
+          "ChangeList": [
+            {
+              "Id": "d96d0af7-66ee-4bbf-80b4-e35216afb105",
+              "ApiChange": "Enumeration",
+              "ChangedApiName": "cloudPcRecommendationReportType",
+              "ChangeType": "Addition",
+              "Description": "Added the **cloudPcRecommendationReportType** enumeration type.",
+              "Target": "cloudPcRecommendationReportType"
+            },
+            {
+              "Id": "d96d0af7-66ee-4bbf-80b4-e35216afb105",
+              "ApiChange": "Annotation",
+              "ChangedApiName": "Org.OData.Core.V1.Revisions",
+              "ChangeType": "Deprecation",
+              "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+              "Target": "getCloudPcRecommendationReports"
+            },
+            {
+              "Id": "d96d0af7-66ee-4bbf-80b4-e35216afb105",
+              "ApiChange": "Method",
+              "ChangedApiName": "retrieveCloudPcRecommendationReports",
+              "ChangeType": "Addition",
+              "Description": "Added the [retrieveCloudPcRecommendationReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports-retrieveCloudPcRecommendationReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcReports?view=graph-rest-beta) resource.",
+              "Target": "cloudPcReports"
+            }
+          ],
+          "Id": "d96d0af7-66ee-4bbf-80b4-e35216afb105",
+          "Cloud": "Review",
+          "Version": "beta",
+          "CreatedDateTime": "2025-03-18T02:02:57.4615148Z",
+          "WorkloadArea": "Devices and apps",
+          "SubArea": "Cloud PC"
+      },
       {
         "ChangeList": [
           {
