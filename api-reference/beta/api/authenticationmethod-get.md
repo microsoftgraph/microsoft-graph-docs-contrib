@@ -40,6 +40,8 @@ GET /me/authentication/methods/{id}
 GET /users/{id | userPrincipalName}/authentication/methods/{id}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 ## Optional query parameters
 
 This method does not support optional query parameters to customize the response.

@@ -31,6 +31,8 @@ The signed-in user must also be a reviewer on the accessReviewInstance.
 ```http
 POST /me/pendingAccessReviewInstances/{instance-id}/acceptRecommendations
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Request headers
 None.
 

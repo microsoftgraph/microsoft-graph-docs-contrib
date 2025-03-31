@@ -30,6 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/settings/regionalAndLanguageSettings
 GET /users/{user-id | userPrincipalName}/settings/regionalAndLanguageSettings
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Optional query parameters
 You can use `$select` to get specific regionalAndLanguageSettings properties, including properties that aren't returned by default.
 

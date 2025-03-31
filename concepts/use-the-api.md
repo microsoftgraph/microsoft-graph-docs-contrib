@@ -100,7 +100,7 @@ For example, adding the following `filter` parameter restricts the messages retu
   "blockType": "ignored"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso.com'
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=emailAddress eq 'jon@contoso.com'
 ```
 
 For more information about OData query options, see [Use query parameters to customize responses](query-parameters.md).

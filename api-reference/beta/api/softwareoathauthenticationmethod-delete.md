@@ -49,6 +49,8 @@ Remove a software OATH token authentication method from your own account. For a 
 DELETE /me/authentication/softwareOathMethods/{id}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Remove a software OATH token authentication method from another user's account.
 <!-- { "blockType": "ignored" } -->
 ```http

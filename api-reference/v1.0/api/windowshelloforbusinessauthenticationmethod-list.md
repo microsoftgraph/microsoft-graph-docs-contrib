@@ -40,6 +40,8 @@ Retrieve details of your own Windows Hello For Business authentication methods.
 GET /me/authentication/windowsHelloForBusinessMethods
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Retrieve details of your own or another user's Windows Hello For Business authentication methods.
 <!-- { "blockType": "ignored" } -->
 ``` http

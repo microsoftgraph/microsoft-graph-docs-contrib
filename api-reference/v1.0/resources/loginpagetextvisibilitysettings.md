@@ -1,7 +1,7 @@
 ---
 title: "loginPageTextVisibilitySettings resource type"
-description: "Contains details of the organization's branding."
-author: "quievey"
+description: "Contains details of various text strings that can be hidden on the sign-in page for a tenant."
+author: nanguil
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents the various text strings that can be hidden on the sign-in page for a tenant.
+Represents the various text strings that can be hidden on the sign-in page for a tenant. This resource is configured as part of the [organizationalBranding resource](../resources/organizationalbranding.md).
 
 ## Properties
 
