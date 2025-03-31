@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
 |groupBy|String collection|Specifies how to group the reports. If used, must have the same content as the **select** parameter.|
 |orderBy|String collection|Specifies how to sort the reports.|
-|reportName|[cloudPcRecommendationReportType](../resources/cloudpcreports.md#cloudPcRecommendationReportType-values)|The report name. The possible values are: `cloudPcUsageCategoryReports`, `unknownFutureValue`. The default value is `cloudPcUsageCategoryReports`.|
+|reportName|[cloudPcRecommendationReportType](../resources/cloudpcreports.md#cloudpcrecommendationreporttype-values)|The report name. The possible values are: `cloudPcUsageCategoryReports`, `unknownFutureValue`. The default value is `cloudPcUsageCategoryReports`.|
 |search|String|Specifies a String to search.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. |
 |skip|Int32|Number of records to skip.|
@@ -69,12 +69,6 @@ The following example shows how to list the reports of the top 50 devices.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "cloudpcreportsthis.retrievecloudpcrecommendationreports"
-}
--->
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveCloudPcRecommendationReports
 Content-Type: application/json
@@ -200,12 +194,6 @@ The following example shows how to summarize the report by usage insight.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "cloudpcreportsthis.retrievecloudpcrecommendationreports_byusageinsight"
-}
--->
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveCloudPcRecommendationReports
 Content-Type: application/json
