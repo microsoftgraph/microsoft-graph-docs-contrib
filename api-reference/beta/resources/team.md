@@ -5,6 +5,7 @@ author: "AkJo"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 
 # team resource type
@@ -33,6 +34,7 @@ Every team is associated with a [Microsoft 365 group](../resources/group.md). Th
 |[Get primary channel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. |
 |[Update member](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
 |[Remove member](../api/team-delete-members.md)|None|Remove an existing member from the team.|
+|[Remove members in bulk](../api/conversationmember-remove.md)|[actionResultPart](../resources/actionresultpart.md) collection|Remove multiple members from a [team](../resources/team.md) in a single request.|
 |[Archive team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
@@ -65,6 +67,7 @@ Every team is associated with a [Microsoft 365 group](../resources/group.md). Th
 |description|string| An optional description for the team. Maximum length: 1,024 characters. |
 |discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |Settings to configure team discoverability by others.|
 |displayName|string| The name of the team. |
+|firstChannelName|String| The name of the first channel in the team. This is an optional property, only used during team creation and isn't returned in methods to get and list teams. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure the use of Giphy, memes, and stickers in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
 |id| string | The unique identifier of the team. The group has the same ID as the team. This property is read-only, and is inherited from the base entity type. |
@@ -110,7 +113,7 @@ For a POST request example, see [Request (create team in migration state)](/micr
 
 ## JSON representation
 
-The JSON representation shows the resource type.
+The following JSON representation shows the resource type.
 
 >**Note:** If the team is of type class, a **classSettings** property is applied on the team.
 
@@ -128,6 +131,7 @@ The JSON representation shows the resource type.
   "description": "String",
   "discoverySettings": {"@odata.type": "microsoft.graph.teamDiscoverySettings"},
   "displayName": "String",
+  "firstChannelName": "String",
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
   "id": "String (identifier)",

@@ -12,7 +12,6 @@ const client = Client.init(options);
 
 let groups = await client.api('/groups')
 	.version('beta')
-	.header('ConsistencyLevel','eventual')
 	.filter('hasMembersWithLicenseErrors eq true')
 	.select('id,displayName')
 	.get();

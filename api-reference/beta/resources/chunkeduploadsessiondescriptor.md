@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: non-product-specific
 author: "MSGraphDocsVteam"
+ms.date: 04/22/2024
 ---
 
 # chunkedUploadSessionDescriptor resource type
@@ -16,6 +17,9 @@ Namespace: microsoft.graph
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|String|The name of the **chunkedUploadSessionDescriptor** object.|
+
+## Relationships
+None.
 
 ## JSON representation
 

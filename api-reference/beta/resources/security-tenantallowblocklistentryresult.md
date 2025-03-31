@@ -5,6 +5,7 @@ author: "caigen"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # tenantAllowBlockListEntryResult resource type

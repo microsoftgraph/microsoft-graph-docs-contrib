@@ -5,6 +5,7 @@ author: "bingqiangxiang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # cloudPcReports: retrieveConnectionQualityReports
@@ -75,7 +76,7 @@ Content-length: 200
 {
     "reportName":"regionalConnectionQualityTrendReport",
     "filter": "",
-    "select": ["GatewayRegion", "RoundTripTimeTrend", "AvailableBandwidthTrend", "UDPUtilizationTrend", "DroppedConnectionTrend", "WeeklyAvgRoundTripTimeInMs", "DailyAvgRoundTripTimeInMs", "WeeklyAvailableBandwidthInMBps", "DailyAvailableBandwidthInMBps", "WeeklyUdpUtilization", "DailyWeeklyUdpUtilization", "WeeklyDroppedConnectionsCount", "DailyDroppedConnectionsCount"],
+    "select": ["GatewayRegion", "RoundTripTimeTrend", "AvailableBandwidthTrend", "UDPUtilizationTrend", "DroppedConnectionTrend", "WeeklyAvgRoundTripTimeInMs", "DailyAvgRoundTripTimeInMs", "WeeklyAvailableBandwidthInMbps", "DailyAvailableBandwidthInMbps", "WeeklyUdpUtilization", "DailyWeeklyUdpUtilization", "WeeklyDroppedConnectionsCount", "DailyDroppedConnectionsCount"],
     "search": "",
     "skip": 0,
     "top": 50
@@ -129,11 +130,11 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         },
         {
-            "Column": "WeeklyAvailableBandwidthInMBps",
+            "Column": "WeeklyAvailableBandwidthInMbps",
             "PropertyType": "Double"
         },
         {
-            "Column": "DailyAvailableBandwidthInMBps",
+            "Column": "DailyAvailableBandwidthInMbps",
             "PropertyType": "Double"
         },
         {

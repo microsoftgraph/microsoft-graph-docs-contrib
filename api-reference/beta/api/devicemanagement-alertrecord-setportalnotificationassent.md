@@ -5,6 +5,7 @@ author: "zhishending"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/27/2024
 ---
 
 # alertRecord: setPortalNotificationAsSent
@@ -87,10 +88,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/6
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/alertrecordthissetportalnotificationassent-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/alertrecordthissetportalnotificationassent-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

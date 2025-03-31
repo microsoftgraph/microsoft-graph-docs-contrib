@@ -5,6 +5,7 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # accessReviewStageSettings resource type

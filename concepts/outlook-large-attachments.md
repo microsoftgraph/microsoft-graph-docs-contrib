@@ -4,6 +4,7 @@ description: "Create and use an upload session to add large file attachments ove
 author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Attach large files to Outlook messages or events

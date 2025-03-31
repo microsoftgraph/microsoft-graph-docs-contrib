@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # unifiedGroupSource resource type
@@ -18,7 +19,12 @@ The container for a custodian's group.
 Inherits from [dataSource](../resources/security-datasource.md).
 
 ## Methods
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/security-ediscoverycustodian-list-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) collection|Get a list of the [unifiedGroupSource](../resources/security-unifiedgroupsource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+|[Create](../api/security-ediscoverycustodian-post-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|Create a new [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+|[Delete](../api/security-unifiedgroupsource-delete.md)|None|Delete a [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

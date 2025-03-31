@@ -5,6 +5,7 @@ author: "naalmog"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "security"
+ms.date: 09/12/2024
 ---
 
 # healthIssue resource type

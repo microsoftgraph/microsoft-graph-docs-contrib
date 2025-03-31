@@ -3,8 +3,9 @@ title: "updatableAsset: unenrollAssetsById"
 description: "Unenroll updatableAsset resources of the same type from update management by Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # updatableAsset: unenrollAssetsById

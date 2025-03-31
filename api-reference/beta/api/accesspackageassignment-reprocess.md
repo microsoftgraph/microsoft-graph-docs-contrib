@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/14/2024
 ---
 
 # accessPackageAssignment: reprocess
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackageassignment_reprocess" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignment-reprocess-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-access-package-assignment-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-assignment-manager-apis-write.md)]
   
 ## HTTP request
 

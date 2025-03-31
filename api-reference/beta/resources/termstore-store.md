@@ -5,6 +5,7 @@ author: mohitpcad
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # store resource type

@@ -5,6 +5,7 @@ author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 11/01/2024
 ---
 
 # Get alert
@@ -97,6 +98,10 @@ GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/get-alert1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-alert1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-alert1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -150,7 +155,7 @@ Content-Type: application/json
     "mfaSignInFailure": "https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForMfaSignInFailure(inclusiveIntervalStartDateTime=2024-06-08T11:23:44.1234567Z, exclusiveIntervalEndDateTime=2024-06-19T11:23:44.1234567Z, aggregationIntervalInMinutes=5)"
   },
   "documentation": {
-    "mfaAlertTroubleshootingGuide": "https://learn.microsoft.com/en-us/entra/identity/authentication/"
+    "troubleshootingGuide": "https://go.microsoft.com/fwlink/?linkid=2280158"
   }
 }
 ```
@@ -192,6 +197,10 @@ GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts/{id}?$selec
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-alert2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-alert2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -262,6 +271,10 @@ GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts/{id}?$expan
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-alert3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-alert3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

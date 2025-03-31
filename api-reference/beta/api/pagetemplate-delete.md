@@ -5,6 +5,7 @@ title: "Delete pageTemplate"
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 # Delete pageTemplate
 
@@ -26,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /sites/{site-id}/pageTemplates/microsoft.graph.pageTemplate/{pageTemplate-id}
+DELETE /sites/{site-id}/pageTemplates/{pageTemplate-id}/microsoft.graph.pageTemplate
 ```
 
 ## Request headers
@@ -52,8 +53,9 @@ The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-pageTemplate", "scopes": "files.readwrite sites.readwrite.all" } -->
+
 ```http
-DELETE /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.pageTemplate/7bf14f9b-8764-4e54-bc5a-ee7d83dd09f7
+DELETE https://graph.microsoft.com/beta/sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/7bf14f9b-8764-4e54-bc5a-ee7d83dd09f7/microsoft.graph.pageTemplate
 ```
 
 # [JavaScript](#tab/javascript)

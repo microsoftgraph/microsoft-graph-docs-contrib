@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.subservice: onenote
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # externalLink resource type

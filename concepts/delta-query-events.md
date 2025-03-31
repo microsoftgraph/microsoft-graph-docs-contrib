@@ -5,6 +5,7 @@ author: "iamgirishck"
 ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 11/07/2024
 ---
 
 # Get incremental changes to events in a calendar view

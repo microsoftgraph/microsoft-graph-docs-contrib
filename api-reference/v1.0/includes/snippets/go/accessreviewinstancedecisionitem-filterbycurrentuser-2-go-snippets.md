@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceAccessReviewsDefinitionItemInstanceItemStageItemDecisionsFilterByCurrentUserWithOnRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.AccessReviewsDefinitionsItemInstancesItemStagesItemDecisionsFilterByCurrentUserWithOnRequestBuilderGetQueryParameters{
 	Select: [] string {"accessReviewId","reviewedDateTime","decision","justification","recommendation","reviewedBy","target"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDefinitionItemInstanceItemStageItemDecisionsFilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.AccessReviewsDefinitionsItemInstancesItemStagesItemDecisionsFilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

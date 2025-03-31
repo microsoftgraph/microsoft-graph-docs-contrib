@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-configuration := &graphsolutions.SolutionsBusinessScenarioItemPlannerTaskItemRequestBuilderDeleteRequestConfiguration{
+configuration := &graphsolutions.BusinessScenariosItemPlannerTasksItemRequestBuilderDeleteRequestConfiguration{
 	Headers: headers,
 }
 

@@ -3,8 +3,9 @@ title: "product: getKnownIssuesByTimeRange"
 description: "Get known issues related to a particular product based on a specified timeframe in the past."
 author: "skandula"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # product: getKnownIssuesByTimeRange

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
+ms.date: 04/05/2024
 ---
 
 # Get agreement
@@ -23,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "agreement_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agreement-get-permissions.md)]
 
-[!INCLUDE [rbac-tou-apis](../includes/rbac-for-apis/rbac-tou-apis.md)]
+[!INCLUDE [rbac-tou-security-reader-apis](../includes/rbac-for-apis/rbac-tou-security-reader-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

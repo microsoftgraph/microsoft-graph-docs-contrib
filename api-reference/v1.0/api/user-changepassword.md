@@ -6,6 +6,7 @@ author: "yyuank"
 ms.reviewer: "iamut"
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 08/16/2024
 ---
 
 # user: changePassword
@@ -28,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 POST /me/changePassword
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|

@@ -6,6 +6,7 @@ ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # conditionalAccessClientApplications resource type
@@ -19,6 +20,7 @@ Represents client applications (service principals and workload identities) incl
 |:---|:---|:---|
 |excludeServicePrincipals|String collection|Service principal IDs excluded from the policy scope.|
 |includeServicePrincipals|String collection|Service principal IDs included in the policy scope, or `ServicePrincipalsInMyTenant`. |
+|servicePrincipalFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Filter that defines the dynamic-servicePrincipal-syntax rule to include/exclude service principals. A filter can use custom security attributes to include/exclude service principals. |
 
 ## Relationships
 None.
@@ -38,7 +40,8 @@ The following JSON representation shows the resource type.
   ],
   "includeServicePrincipals": [
     "String"
-  ]
+  ],
+  "servicePrincipalFilter": {"@odata.type": "microsoft.graph.conditionalAccessFilter"}
 }
 ```
 

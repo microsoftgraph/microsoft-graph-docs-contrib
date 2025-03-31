@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # List accounts

@@ -5,6 +5,7 @@ author: "ananmishr"
 doc_type: conceptualPageType
 ms.subservice: cloud-communications
 ms.localizationpriority: high
+ms.date: 06/25/2024
 ---
 
 # Working with the cloud communications API in Microsoft Graph
@@ -41,6 +42,7 @@ The following table lists some of the common uses for the cloud communications A
 | Creating and joining 1-1 and group calls   | [call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true&preserve-view=true)| [Methods for calls](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#methods&preserve-view=true)|
 |IVR calls   |  [call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true&preserve-view=true)   | [Methods for IVR](/graph/api/resources/teams-api-overview#ivr-scenarios?view=graph-rest-beta?&preserve-view=true&preserve-view=true)
 | Call controls (participant) | [participant](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true&preserve-view=true)   ||
+| Call delegation | [delegationSettings](../resources/delegationsettings.md)   |[Working with the call delegation APIs in Microsoft Graph (preview)](../resources/calldelegation-api-overview.md)|
 |Meetings|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true&preserve-view=true)| [Methods for meetings](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#methods&preserve-view=true)|
 |Presence | [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) | [Methods for presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true#methods) |
 | Retrieving call records | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true&preserve-view=true) | [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true&preserve-view=true) |

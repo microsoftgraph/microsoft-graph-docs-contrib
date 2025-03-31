@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 10/24/2024
 ---
 
 # siteProtectionRule resource type
@@ -40,7 +41,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification to the rule.|
 |siteExpression|String|Contains a site expression. For examples, see [siteExpression example](../resources/siteprotectionrule.md#siteexpression-examples).|
-|status|[protectionRuleStatus](../resources/siteprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
+|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values)|The status of the protection rule. Supports a subset of the values for **protectionRuleStatus**. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. The `draft` member is currently unsupported. Inherited from [protectionRuleBase](../resources/protectionrulebase.md). |
 
 ### siteExpression examples
 
@@ -51,16 +52,6 @@ The following table shows the possible formats for the site expression.
 | `displayName`      | `-contains` |   `((displayName -contains 'Finance') -or (displayName -contains 'Legal'))`  |
 | `lastModifiedDateTime` | `-ge` |    `(((displayName -contains 'Finance') -or (webUrl -contains 'Legal')) -and (lastModifiedDateTime -ge '2024-02-26T11:36:20Z'))`   |
 | `webUrl` | `-contains` |    `((displayName -contains 'Finance') -or (webUrl -contains 'Legal'))`     |
-
-### protectionRuleStatus values
-
-|Member | Description |
-|:------|:------------|
-|draft | The initial status of the protection rule upon creation.|
-|active | The status of the protection rule upon using the `/run` API.|
-|completed |The status of the protection rule after it's successfully applied to the corresponding policy.|
-|completedWithErrors | The status of the protection rule after it's applied to the corresponding policy and any failures occurred.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 

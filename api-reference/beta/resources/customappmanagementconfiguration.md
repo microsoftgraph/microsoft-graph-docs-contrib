@@ -5,6 +5,7 @@ author: "yogesh-randhawa"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # customAppManagementConfiguration resource type
@@ -19,24 +20,27 @@ Inherits from [appManagementConfiguration](appmanagementconfiguration.md).
 
 ## Properties
 
-| Property                | Type                              | Description                                     |
-| :---------------------- | :-------------------------------- | :---------------------------------------------- |
-| applicationRestrictions | [customAppManagementApplicationConfiguration](customappmanagementapplicationconfiguration.md) | Restrictions applicable only to application objects that the policy applies to.               |
-| keyCredentials          | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection | Collection of keyCredential restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](appmanagementconfiguration.md). |
-| passwordCredentials     | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection | Collection of password restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](appmanagementconfiguration.md). |
-
+| Property                | Type                                                                                          | Description                                                                                                                                                                         |
+| :---------------------- | :-------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| applicationRestrictions | [customAppManagementApplicationConfiguration](customappmanagementapplicationconfiguration.md) | Restrictions that are applicable only to application objects to which the policy is attached.                                                                                       |
+| keyCredentials          | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection                        | Collection of keyCredential restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](appmanagementconfiguration.md). |
+| passwordCredentials     | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection              | Collection of password restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](appmanagementconfiguration.md).      |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.customAppManagementConfiguration"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.customAppManagementConfiguration",
   "passwordCredentials": [
@@ -54,4 +58,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

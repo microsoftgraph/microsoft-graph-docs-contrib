@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jyothig123"
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # accessReviewInstance: pendingAccessReviewInstances (deprecated)
@@ -33,6 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /me/pendingAccessReviewInstances
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Optional query parameters
 This method supports `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).

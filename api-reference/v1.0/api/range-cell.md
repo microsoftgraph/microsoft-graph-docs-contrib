@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # Range: Cell

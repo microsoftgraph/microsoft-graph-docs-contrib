@@ -5,6 +5,7 @@ author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "security"
+ms.date: 09/15/2024
 ---
 
 # identityContainer resource type

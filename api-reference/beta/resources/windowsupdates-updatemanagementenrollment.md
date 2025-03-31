@@ -3,8 +3,9 @@ title: "updateManagementEnrollment resource type"
 description: "Represents enrollment into management by Windows Autopatch of a certain update category."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # updateManagementEnrollment resource type

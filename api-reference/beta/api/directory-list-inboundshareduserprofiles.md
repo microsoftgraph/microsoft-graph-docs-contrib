@@ -6,6 +6,7 @@ ms.reviewer: mapamu, iamut
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 05/16/2024
 ---
 
 # List inboundSharedUserProfiles

@@ -5,6 +5,7 @@ title: StoragePlanInformation
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "onedrive"
+ms.date: 03/06/2024
 ---
 # storagePlanInformation resource type
 

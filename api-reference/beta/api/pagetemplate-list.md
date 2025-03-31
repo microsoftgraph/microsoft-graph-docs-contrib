@@ -5,6 +5,7 @@ title: List pageTemplate
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # List pageTemplate
@@ -119,7 +120,7 @@ Content-type: application/json
         {
             "id": "08f48aa6-02e3-407c-bbcb-ff61cec653fa",
             "name": "sample.aspx",
-            "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Templates/sample.aspx",
+            "webUrl": "https://contoso.sharepoint.com/SitePages/Templates/sample.aspx",
             "title": "sample",
             "pageLayout": "article",
             "showComments": true,
@@ -152,7 +153,7 @@ Content-type: application/json
             },
             "titleArea": {
                 "enableGradientEffect": true,
-                "imageWebUrl": "/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG",
+                "imageWebUrl": "https://cdn.contoso.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
                 "layout": "imageAndTitle",
                 "showAuthor": false,
                 "showPublishedDate": false,
@@ -166,7 +167,7 @@ Content-type: application/json
         {
             "id": "7d87eee1-7c77-46b5-b2c4-ad6e4e432a8e",
             "name": "Home.aspx",
-            "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Templates/Home.aspx",
+            "webUrl": "https://contoso.sharepoint.com/SitePages/Templates/Home.aspx",
             "title": "Home",
             "pageLayout": "home",
             "showComments": true,
@@ -198,7 +199,7 @@ Content-type: application/json
             },
             "titleArea": {
                 "enableGradientEffect": true,
-                "imageWebUrl": "/siteAssets/titleBackground.jpg",
+                "imageWebUrl": "https://cdn.contoso.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
                 "layout": "imageAndTitle",
                 "showAuthor": true,
                 "showPublishedDate": false,

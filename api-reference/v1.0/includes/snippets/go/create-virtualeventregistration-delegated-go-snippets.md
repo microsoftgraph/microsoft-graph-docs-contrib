@@ -16,6 +16,12 @@ import (
 )
 
 requestBody := graphmodels.NewVirtualEventRegistration()
+externalRegistrationInformation := graphmodels.NewVirtualEventExternalRegistrationInformation()
+referrer := "Facebook"
+externalRegistrationInformation.SetReferrer(&referrer) 
+registrationId := "myExternalRegistrationId"
+externalRegistrationInformation.SetRegistrationId(&registrationId) 
+requestBody.SetExternalRegistrationInformation(externalRegistrationInformation)
 preferredTimezone := "Pacific Standard Time"
 requestBody.SetPreferredTimezone(&preferredTimezone) 
 preferredLanguage := "en-us"

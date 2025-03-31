@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: high
 ms.subservice: "cloud-communications"
 ms.custom: "scenarios:getting-started"
+ms.date: 11/07/2024
 ---
 
 # Get change notifications for Microsoft Teams virtual event updates

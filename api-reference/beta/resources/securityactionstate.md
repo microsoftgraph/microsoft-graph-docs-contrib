@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # securityActionState resource type
@@ -23,6 +24,9 @@ Represents the history of securityAction state changes.
 |status|String| Status of the securityAction in this update. Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
 |updatedDateTime|DateTimeOffset| Timestamp when the actionState was updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |user|String|The user principal name of the signed-in user that submitted an update (PATCH) to the action. The `user` should be extracted from the auth token and not entered manually by the calling application.|
+
+## Relationships
+None.
 
 ## JSON representation
 

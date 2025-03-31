@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
 toc.title: Worksheet protection
+ms.date: 08/01/2024
 ---
 
 # workbookWorksheetProtection resource type

@@ -5,6 +5,7 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: search
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph connectors overview
@@ -16,7 +17,7 @@ Although most information workers spend much of their work time within productiv
 Microsoft Graph connectors offer an intuitive way to bring content from external services into Microsoft Graph, enabling external data to power Microsoft 365 Copilot intelligent experiences such as [Microsoft Search](/microsoftsearch/connectors-overview).
 
 Today, with Microsoft Graph connectors, the data you bring in from your organization can be discoverable in the following [experiences](/graph/connecting-external-content-experiences):
-- [Microsoft 365 Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) (limited preview)
+- [Microsoft 365 Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/)
 - [Microsoft 365 app](https://microsoft365.com) (formerly known as [Office.com](https://office.com))
 - [Microsoft Search](/microsoftsearch/overview-microsoft-search)
 - [Context IQ in Outlook on the web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) (preview)

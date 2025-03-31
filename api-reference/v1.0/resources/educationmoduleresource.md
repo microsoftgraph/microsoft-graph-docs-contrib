@@ -6,6 +6,7 @@ author: "v-rmanda"
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Module resource
+ms.date: 07/26/2024
 ---
 
 # educationModuleResource resource type

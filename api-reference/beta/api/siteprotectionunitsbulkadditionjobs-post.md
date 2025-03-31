@@ -5,6 +5,7 @@ author: "neminbshah"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Create siteProtectionUnitsBulkAdditionJob
@@ -59,6 +60,7 @@ If successful, this method returns a `201 Created` response code and a [siteProt
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "siteprotectionunitsbulkadditionjobs_post"
@@ -75,6 +77,12 @@ Content-Type: application/json
    "siteIds" : [ "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee4532", "contoso.sharepoint.com,ab60e844-ba1d-49bc-b4d4-d5e36bae9019,832a596e-90a1-49e3-9b48-bfa80bee4532"]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/siteprotectionunitsbulkadditionjobs-post-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

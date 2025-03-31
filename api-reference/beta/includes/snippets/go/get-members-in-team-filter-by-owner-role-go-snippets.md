@@ -18,10 +18,10 @@ import (
 
 requestFilter := "roles/any(r:r eq 'owner')"
 
-requestParameters := &graphteams.TeamItemMembersRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.ItemMembersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphteams.TeamItemMembersRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.ItemMembersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

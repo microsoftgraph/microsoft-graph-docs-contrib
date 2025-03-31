@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 ms.subservice: extensions
 doc_type: apiPageType
+ms.date: 07/22/2024
 ---
 
 # Update open extension
@@ -37,7 +38,7 @@ Depending on the resource that the extension was created in and the permission t
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite | Not supported | User.ReadWrite.All |
 
 ## HTTP request
 In the request, identify the resource instance, use the **extensions** 

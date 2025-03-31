@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # credential resource type

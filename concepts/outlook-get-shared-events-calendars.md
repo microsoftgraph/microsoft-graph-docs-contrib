@@ -4,6 +4,7 @@ description: "Read events in a shared or delegated calendar. You can get a share
 author: "juforan"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Get shared or delegated Outlook calendar and its events

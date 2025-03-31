@@ -5,6 +5,7 @@ author: "MS-Arko"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: resourcePageType
+ms.date: 04/24/2024
 ---
 
 # windowsSetting resource type

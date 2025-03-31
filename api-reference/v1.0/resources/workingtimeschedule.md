@@ -5,6 +5,7 @@ author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # workingTimeSchedule resource type

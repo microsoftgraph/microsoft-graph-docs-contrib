@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: non-product-specific
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create multi-value extended property
@@ -92,6 +93,8 @@ POST /groups/{id}/threads
 POST /groups/{id}/conversations
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 To create one or more extended properties in an existing resource instance, specify the instance in the
 request, and include the extended property in the request body.
 
@@ -120,6 +123,8 @@ PATCH /users/{id|userPrincipalName}/contactFolders/{id}
 
 PATCH /groups/{id}/events/{id}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Request headers
 | Name       | Value |

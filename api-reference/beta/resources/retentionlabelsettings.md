@@ -5,6 +5,7 @@ author: "kyracatwork"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # retentionLabelSettings resource type
@@ -25,6 +26,9 @@ Groups all the compliance retention restrictions on the item into a single struc
 | isLabelUpdateAllowed          | Boolean                          | Specifies whether you're allowed to change the retention label on the document. Read-only.                                                                                                                                                                   |
 | isMetadataUpdateAllowed       | Boolean                          | Specifies whether updates to the item metadata (for example, the **Title** field) are blocked. Read-only.                                                                                                                                                                |
 | isRecordLocked                | Boolean                          | Specifies whether the item is locked. Read-write.                                                                                                                                                                                                   |
+
+## Relationships
+None.
 
 ## JSON representation
 

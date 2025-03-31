@@ -5,6 +5,7 @@ description: The itemActionSet object provides information about the actions tha
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 # itemActionSet resource type
 

@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # deviceManagementConfigurationWindowsSkus enum type
@@ -35,3 +36,5 @@ Namespace: microsoft.graph
 |holographicForBusiness|12||
 |windowsMultiSession|13||
 |surfaceHub|14||
+|windowsCPC|18||
+|unknownFutureValue|19||

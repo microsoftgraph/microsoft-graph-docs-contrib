@@ -5,6 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/05/2024
 ---
 
 # Update authenticationEventListener
@@ -21,6 +22,7 @@ Update the properties of an [authenticationEventListener](../resources/authentic
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
+- [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -64,6 +66,7 @@ You must specify the **@odata.type** property and the value of the [authenticati
 |handler|[onUserCreateStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onUserCreateStartListener** listener type.|
 |handler|[onAttributeCollectionStartHandler](../resources/onattributecollectionstarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionStartListener** listener type.|
 |handler|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionSubmitListener** listener type.|
+|handler|[onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstarthandler.md) | The handler to invoke when conditions are met. Can be updated for the **onPhoneMethodStartListener** type. |
 |priority|Int32|The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 
 ## Response
@@ -72,8 +75,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
-The following example shows a request to update an authentication event listener's trigger conditions or priority:
+### Example 1: Update an authentication event listener's trigger conditions or priority
+
+#### Request
+The following example shows a request to update an authentication event listener's trigger conditions or priority.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -129,7 +134,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -140,3 +145,77 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
+### Example 2: Add an application to an authentication event listener's trigger conditions
+
+#### Request
+
+The following example shows a request to add an application to an authentication event listener's trigger conditions.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_authenticationeventlistener_2"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identity/authenticationEventListeners/0313cc37-d421-421d-857b-87804d61e33e/conditions/applications/includeApplications
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.authenticationConditionApplication",
+    "appId": "63856651-13d9-4784-9abf-20758d509e19"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationeventlistener-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response to a request to add an application to an authentication event listener's trigger conditions:
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.authenticationConditionApplication",
+  "truncated": true,
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners('0313cc37-d421-421d-857b-87804d61e33e')/conditions/applications/includeApplications/$entity",
+    "appId": "63856651-13d9-4784-9abf-20758d509e19"
+}
+```

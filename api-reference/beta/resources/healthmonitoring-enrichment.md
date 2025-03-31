@@ -5,6 +5,7 @@ author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 10/09/2024
 ---
 
 # enrichment resource type

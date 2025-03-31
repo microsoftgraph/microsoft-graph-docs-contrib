@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vrod9429"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # attendeeAvailability resource type

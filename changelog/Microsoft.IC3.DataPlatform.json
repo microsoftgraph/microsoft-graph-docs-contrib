@@ -993,6 +993,48 @@
       "CreatedDateTime": "2024-02-29T13:49:01.0804836Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
-    }
+    },
+    {
+    "ChangeList": [
+      {
+        "Id": "bb8eae43-f5ac-47a1-94b9-16492af7e7b1",
+        "ApiChange": "Resource",
+        "ChangedApiName": "administrativeUnitInfo",
+        "ChangeType": "Addition",
+        "Description": "Added the [administrativeUnitInfo](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-administrativeUnitInfo?view=graph-rest-1.0) resource.",
+        "Target": "administrativeUnitInfo"
+      },
+      {
+        "Id": "bb8eae43-f5ac-47a1-94b9-16492af7e7b1",
+        "ApiChange": "Property",
+        "ChangedApiName": "administrativeUnitInfos",
+        "ChangeType": "Addition",
+        "Description": "Added the **administrativeUnitInfos** property to the [participantBase](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantBase?view=graph-rest-1.0) resource.",
+        "Target": "participantBase"
+      },
+      {
+        "Id": "bb8eae43-f5ac-47a1-94b9-16492af7e7b1",
+        "ApiChange": "Property",
+        "ChangedApiName": "administrativeUnitInfos",
+        "ChangeType": "Addition",
+        "Description": "Added the **administrativeUnitInfos** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participant?view=graph-rest-1.0) resource.",
+        "Target": "participant"
+      },
+      {
+        "Id": "bb8eae43-f5ac-47a1-94b9-16492af7e7b1",
+        "ApiChange": "Property",
+        "ChangedApiName": "administrativeUnitInfos",
+        "ChangeType": "Addition",
+        "Description": "Added the **administrativeUnitInfos** property to the [organizer](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-organizer?view=graph-rest-1.0) resource.",
+        "Target": "organizer"
+      }
+    ],
+    "Id": "bb8eae43-f5ac-47a1-94b9-16492af7e7b1",
+    "Cloud": "Prod",
+    "Version": "v1.0",
+    "CreatedDateTime": "2024-11-11T14:22:24.0228479Z",
+    "WorkloadArea": "Teamwork and communications",
+    "SubArea": "Calls and online meetings"
+  }
   ]
 }

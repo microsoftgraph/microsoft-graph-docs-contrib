@@ -3,8 +3,9 @@ title: "buildVersionDetails resource type"
 description: "Represents the build version details of a product revision that is associated with a quality update."
 author: "angiechen22"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # buildVersionDetails resource type

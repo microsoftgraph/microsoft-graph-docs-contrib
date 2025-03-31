@@ -5,6 +5,7 @@ author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # List customerInsights

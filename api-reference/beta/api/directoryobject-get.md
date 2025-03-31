@@ -5,6 +5,7 @@ author: "keylimesoda"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get directoryObject
@@ -79,10 +80,6 @@ GET https://graph.microsoft.com/beta/directoryObjects/{id}
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-directoryobject-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryobject-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -5,6 +5,7 @@ author: "subray"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Add app to chat

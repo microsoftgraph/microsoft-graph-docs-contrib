@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 11/06/2024
 ---
 
 # orgContact: Get manager
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "orgcontact_get_manager" } -->
 [!INCLUDE [permissions-table](../includes/permissions/orgcontact-get-manager-permissions.md)]
+
+[!INCLUDE [rbac-org-contacts-apis-read-all](../includes/rbac-for-apis/rbac-org-contacts-apis-read-all.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

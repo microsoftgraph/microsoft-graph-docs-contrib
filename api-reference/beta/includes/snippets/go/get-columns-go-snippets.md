@@ -19,11 +19,11 @@ import (
 requestTop := int32(5)
 requestSkip := int32(5)
 
-requestParameters := &graphdrives.DriveItemItemItemWorkbookTableItemColumnsRequestBuilderGetQueryParameters{
+requestParameters := &graphdrives.ItemItemsItemWorkbookTablesItemColumnsRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Skip: &requestSkip,
 }
-configuration := &graphdrives.DriveItemItemItemWorkbookTableItemColumnsRequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.ItemItemsItemWorkbookTablesItemColumnsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

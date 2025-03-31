@@ -5,6 +5,7 @@ author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # List alertConfigurations
@@ -93,12 +94,15 @@ GET https://graph.microsoft.com/beta/reports/healthMonitoring/alertConfiguration
 [!INCLUDE [sample-code](../includes/snippets/php/list-alertconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-alertconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-alertconfiguration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

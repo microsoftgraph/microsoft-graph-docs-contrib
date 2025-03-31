@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/24/2024
 ---
 
 # virtualEndpoint: retrieveScopedPermissions
@@ -97,10 +98,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 [!INCLUDE [sample-code](../includes/snippets/php/virtualendpoint-retrievescopedpermissions1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/virtualendpoint-retrievescopedpermissions1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/virtualendpoint-retrievescopedpermissions1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -189,10 +186,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 [!INCLUDE [sample-code](../includes/snippets/php/virtualendpoint-retrievescopedpermissions2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/virtualendpoint-retrievescopedpermissions2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/virtualendpoint-retrievescopedpermissions2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -270,10 +263,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/virtualendpoint-retrievescopedpermissions3-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/virtualendpoint-retrievescopedpermissions3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "njerigrevious"
 ms.subservice: "search"
 doc_type: "apiPageType"
+ms.date: 05/02/2024
 ---
 
 # searchEntity: query

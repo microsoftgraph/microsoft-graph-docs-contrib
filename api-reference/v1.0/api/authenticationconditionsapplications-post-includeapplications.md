@@ -5,6 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # Add includeApplication (to a user flow)

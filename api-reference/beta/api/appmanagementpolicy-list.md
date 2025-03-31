@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 08/09/2024
 ---
 
 # List appManagementPolicies

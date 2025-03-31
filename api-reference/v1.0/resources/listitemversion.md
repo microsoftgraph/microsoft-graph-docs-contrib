@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # ListItemVersion resource type

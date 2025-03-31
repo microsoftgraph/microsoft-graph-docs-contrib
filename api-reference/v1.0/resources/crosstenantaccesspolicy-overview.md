@@ -5,6 +5,7 @@ author: "jkdouglas"
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: "entra-sign-in"
+ms.date: 06/20/2024
 ---
 
 # Cross-tenant access settings API overview

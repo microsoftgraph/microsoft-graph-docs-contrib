@@ -5,6 +5,7 @@ author: "tommoser"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get informationProtectionPolicySetting

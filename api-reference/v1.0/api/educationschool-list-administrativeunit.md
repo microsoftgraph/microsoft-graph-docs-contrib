@@ -5,6 +5,7 @@ author: "mmast"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
 # List administrativeUnit an educationSchool
