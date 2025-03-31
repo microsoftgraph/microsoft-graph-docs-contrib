@@ -21,7 +21,7 @@ This article provides guidance on the allowed configuration for the **arguments*
 
 ## Configure arguments for tasks
 
-```markdown
+
 | Task display name | taskDefinitionId | arguments |
 |-------------------|------------------|-----------|
 | Send welcome email to new hire | 70b29d51-b59a-4773-9280-8841dfd3f2ea | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject header for the email being sent.<br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. This argument doesn't customize the custom text of the email, and should be set in the same language as the custom text. |
@@ -48,7 +48,7 @@ This article provides guidance on the allowed configuration for the **arguments*
 | Remove access package assignment for user | 4a0b64f2-c7ec-46ba-b117-18f262946c50 | **name**: `accessPackageId`<br/>**value**: A valid access package ID for the access package you want to unassign from the user. |
 | Remove all access package assignments for user | 42ae2956-193d-4f39-be06-691b8ac4fa1d | None |
 | Cancel pending access package assignment requests for user | 498770d9-bab7-4e4c-b73d-5ded82a1d0b3 | None |
-```
+
 
 ## Examples
 
