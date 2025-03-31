@@ -12,11 +12,7 @@ ms.date: 03/27/2025
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<<<<<<< HEAD
 The Microsoft Graph API enables apps to manage both admin and non-admin roles within Viva Engage. Viva Engage is a social fabric for the Microsoft Viva suite of apps that connects people across the organization to share and learn. It's a place where employees can connect with leaders, coworkers, and communities, share their knowledge and ideas, and find belonging at work.
-=======
-The Microsoft Graph API enables apps to manage both admin and non-admin roles within Viva Engage. Viva Engage is a social fabric for the Microsoft Viva suite of apps that connects people across the organization to share and learn. It's a place where employees can connect with leaders, coworkers, and communities, share their knowledge and ideas, and find belonging at work. 
->>>>>>> b5cc52e0b5ce80656ee61d76fa2eef780a012bf1
 
 > [!IMPORTANT]
 > The Viva Engage API in Microsoft Graph is only supported for Viva Engage networks in [native mode](/viva/engage/overview-native-mode). You can't use this API to manage legacy or external Viva Engage networks.
