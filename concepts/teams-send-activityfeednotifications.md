@@ -265,7 +265,7 @@ To add custom activity icons in activity feed notifications sent to a user, foll
     ```
 
     > [!NOTE]
-    > You can't declare more than 20 icon IDs under `allowedIconIds`.
+    > You can't declare more than 20 icons under each activity type.
 
     For more information about `allowedIconIds` and `activityIcons`, see [Teams public developer preview app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview#activitiesactivitytypes).
 
