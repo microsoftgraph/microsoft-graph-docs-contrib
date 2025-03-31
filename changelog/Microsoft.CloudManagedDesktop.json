@@ -23,7 +23,7 @@
               "ApiChange": "Method",
               "ChangedApiName": "retrieveCloudPcRecommendationReports",
               "ChangeType": "Addition",
-              "Description": "Added the [retrieveCloudPcRecommendationReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports-retrieveCloudPcRecommendationReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcReports?view=graph-rest-beta) resource.",
+              "Description": "Added the [retrieveCloudPcRecommendationReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-retrieveCloudPcRecommendationReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
               "Target": "cloudPcReports"
             }
           ],
