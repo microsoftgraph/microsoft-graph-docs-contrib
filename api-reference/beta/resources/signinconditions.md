@@ -21,7 +21,7 @@ Represents sign-in parameters of the identity that is authenticating
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationFlow|[authenticationFlow](../resources/authenticationflow.md)| Type of authentication flow. Possible values are: `deviceCodeFlow` or `authenticationTransfer`.|
-|clientAppType|conditionalAccessClientApp|Client application type.The possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`, `unknownFutureValue`. Default value is `all`|
+|clientAppType|conditionalAccessClientApp|Client application type. The possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`, `unknownFutureValue`. Default value is `all`. |
 |country|String|Country from where the identity is authenticating|
 |deviceInfo|[deviceInfo](../resources/deviceinfo.md)|Information about the device used for the sign-in|
 |devicePlatform|conditionalAccessDevicePlatform|Device platform.The possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`, `linux`. Default value is `android`|
