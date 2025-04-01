@@ -38,7 +38,7 @@ Inherits from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
 |grantControls|[conditionalAccessGrantControls](../resources/conditionalaccessgrantcontrols.md)|Specifies the grant controls that must be fulfilled to pass the policy. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
 |id|String|Specifies the identifier of a conditionalAccessPolicy object. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
-|policyApplies|Boolean|Specifies whether the policy applies or not based on the sign-in properties provided in the request boby. |
+|policyApplies|Boolean|Specifies whether the policy applies to the sign-in properties provided in the request body. |
 |sessionControls|[conditionalAccessSessionControls](../resources/conditionalaccesssessioncontrols.md)|Specifies the session controls that are enforced after sign-in. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
 |state|conditionalAccessPolicyState|Specifies the state of the conditionalAccessPolicy object. Possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md). The possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`, `partiallyEnabled`, `unknownFutureValue`.|
 
