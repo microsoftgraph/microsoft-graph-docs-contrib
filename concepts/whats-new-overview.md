@@ -21,7 +21,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Reports | Partner billing reports
 
-[Export](/graph/api/partners-billing-unbilledReconciliation-export?view=graph-rest-beta&preserve-view=true) the unbilled invoice reconciliation data.
+[Export](/graph/api/partners-billing-unbilledReconciliation-export?view=graph-rest-beta&preserve-view=true) unbilled invoice reconciliation data.
 
 ## March 2025: New and generally available
 
