@@ -58,7 +58,7 @@ The following JSON representation shows the resource type.
   "isChatResourceSpecificConsentEnabled": "Boolean",
   "isUserPersonalScopeResourceSpecificConsentEnabled": "Boolean",
   "customAppSettings": {
-    "@odata.type": "#microsoft.graph.customAppSettings"
+    "@odata.type": "microsoft.graph.customAppSettings"
   }
 }
 ```
