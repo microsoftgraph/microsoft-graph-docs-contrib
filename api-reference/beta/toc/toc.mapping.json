@@ -151,7 +151,6 @@
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
-        "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
         "restoreArtifactsBulkRequestBase",
         "restorePoint",
@@ -186,6 +185,7 @@
         {
           "name": "Protection units bulk job",
           "resources": [
+            "protectionUnitsBulkJobBase",
             "driveProtectionUnitsBulkAdditionJob",
             "mailboxProtectionUnitsBulkAdditionJob",
             "siteProtectionUnitsBulkAdditionJob"
