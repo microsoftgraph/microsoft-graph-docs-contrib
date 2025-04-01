@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 03/21/2024
 ---
 
-# Hashes Resource Type
+# hashes Resource Type
 
 Namespace: microsoft.graph
 
