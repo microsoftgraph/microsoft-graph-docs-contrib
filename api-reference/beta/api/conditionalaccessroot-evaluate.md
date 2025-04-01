@@ -8,7 +8,7 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Evaluate Conditional Access Policies
+# conditionalAccessRoot: evaluate
 
 Namespace: microsoft.graph
 
