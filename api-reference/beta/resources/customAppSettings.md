@@ -19,14 +19,13 @@ Represents tenant-wide custom app settings for all [Microsoft Teams apps](teamsa
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|developerToolsForShowingAppUsageMetrics|[developerToolsForShowingAppUsageMetrics](../resources/customAppSettings.md#developerToolsForShowingAppUsageMetrics-values)|Developer tools that are allowed to display app usage metrics. Possible values `developerPortal`, `unknownFutureValue`|
+|developerToolsForShowingAppUsageMetrics|[developerToolsForShowingAppUsageMetrics](../resources/customAppSettings.md#developerToolsForShowingAppUsageMetrics-values)|A comma-separated list of developer tools that are allowed to display app usage metrics. At present, only `developerPortal` is supported.|
 
 
 ## developerToolsForShowingAppUsageMetrics values
 
 | Member | Value| Description |
 |:---------------|:--------|:----------|
-|unknown|0|Unknown developer tool.|
 |developerPortal|1|Enable the Developer Portal to display app usage metrics.|
 |unknownFutureValue|2|Evolvable enumeration sentinel value. Don't use.|
 
