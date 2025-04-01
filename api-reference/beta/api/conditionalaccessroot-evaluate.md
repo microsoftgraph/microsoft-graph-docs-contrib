@@ -65,7 +65,7 @@ If successful, this action returns a `200 OK` response code and a [whatIfAnalysi
 
 ## Examples
 
-### Example 1: Identify conditional access policies that would apply to a user accessing an application. 
+### Example 1: Identify conditional access policies that would apply to a user accessing an application
 
 ### Request
 
