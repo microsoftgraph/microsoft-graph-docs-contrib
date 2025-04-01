@@ -1,6 +1,6 @@
 ---
 title: "whatIfAnalysisResult resource type"
-toc.title: "WhatIf Evaluation"
+toc.title: "What If evaluation"
 description: "Represents the result of the conditional access what if evaluation. The what if evaluation indicates which policies would apply based on the sign-in properties provided"
 author: "kvenkit"
 ms.date: 03/21/2025
