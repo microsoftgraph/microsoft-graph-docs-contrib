@@ -1,6 +1,6 @@
 ---
 title: "signInContext resource type"
-description: "Represents the context of the authentication event"
+description: "Represents the context of the authentication event as defined in the Conditional Access What If evaluation."
 author: "kvenkit"
 ms.date: 03/21/2025
 ms.localizationpriority: medium
