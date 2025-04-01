@@ -1,6 +1,6 @@
 ---
 title: "applicationContext resource type"
-description: "Represents the application that the authenticating identity is attempting to access"
+description: "Represents the application that the authenticating identity is attempting to access, as defined in the Conditional Access What If evaluation."
 author: "kvenkit"
 ms.date: 03/21/2025
 ms.localizationpriority: medium
