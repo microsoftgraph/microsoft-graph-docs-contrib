@@ -61,7 +61,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 ## Examples
 
-### Example 1: List recommendation reports by device
+### Example 1: List the recommendation reports by device
 
 The following example shows how to list the reports of the top 50 devices.
 
