@@ -67,7 +67,7 @@ If successful, this action returns a `200 OK` response code and a [whatIfAnalysi
 
 ### Example 1: Identify conditional access policies that would apply to a user accessing an application
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -110,7 +110,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -266,6 +266,7 @@ Content-Type: application/json
 
 ### Example 2: Identify conditional access policies that would apply to a user accessing a sensitive file protected by an authentication context
 
+#### Request 
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -305,7 +306,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -461,7 +462,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
@@ -748,7 +749,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
