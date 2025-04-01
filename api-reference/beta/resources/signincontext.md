@@ -20,8 +20,7 @@ This is an abstract type.
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
