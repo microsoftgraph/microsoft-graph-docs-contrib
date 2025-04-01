@@ -80,14 +80,14 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/authentication/platformCredentialMethods
+GET https://graph.microsoft.com/v1.0/me/authentication/platformCredentialMethods
 ```
 
 ### Response
 
 The following example shows the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.  
 
 <!-- {
   "blockType": "response",

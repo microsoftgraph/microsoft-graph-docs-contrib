@@ -421,7 +421,7 @@
     {
       "ChangeList": [
         {
-          "Id": "bbb70cce-5252-40be-a7ca-7c29f99cb089",
+          "Id": "e6d18097-56a6-4bf9-83bd-fba96d19988f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "authenticationMethodPlatform",
           "ChangeType": "Addition",
@@ -429,7 +429,7 @@
           "Target": "authenticationMethodPlatform"
         },
         {
-          "Id": "bbb70cce-5252-40be-a7ca-7c29f99cb089",
+          "Id": "e6d18097-56a6-4bf9-83bd-fba96d19988f",
           "ApiChange": "Resource",
           "ChangedApiName": "platformCredentialAuthenticationMethod",
           "ChangeType": "Addition",
@@ -437,10 +437,10 @@
           "Target": "platformCredentialAuthenticationMethod"
         }
       ],
-      "Id": "bbb70cce-5252-40be-a7ca-7c29f99cb089",
+      "Id": "e6d18097-56a6-4bf9-83bd-fba96d19988f",
       "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2023-11-03T19:56:04.1105537Z",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-04-01T19:56:04.1105537Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

@@ -71,6 +71,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object in the response body.
 
 ## Examples
+> This method supports the `$expand` query parameter to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Request
 
@@ -83,14 +84,14 @@ The following example shows a request.
 }-->
 
 ``` http
-GET https://graph.microsoft.com/beta/me/authentication/platformCredentialMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
+GET https://graph.microsoft.com/v1.0/me/authentication/platformCredentialMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
 ```
 
 ### Response
 
 The following example shows the response.
 
-**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.  
 
 <!-- {
   "blockType": "response",
