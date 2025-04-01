@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "fgomulka"
 ms.subservice: "entra-global-secure-access"
 doc_type: resourcePageType
-ms.date: 02/11/2025
+ms.date: 04/01/2025
 ---
 
 # globalSecureAccessFilteringProfileSessionControl resource type
@@ -21,7 +21,7 @@ Session control to link to a Global Secure Access security profile or filtering 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. Inherited from [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md). |
-|profileId     |String       | Specifies the distinct identifier that is assigned to the security profile or filtering profile. Inherited from microsoft.graph.entity.|
+|profileId     |String       | Specifies the distinct identifier that is assigned to the security profile or filtering profile.|
 
 ## Relationships
 None.

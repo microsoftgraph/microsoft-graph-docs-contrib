@@ -6,7 +6,7 @@ author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 03/21/2024
+ms.date: 04/01/2025
 ---
 
 # conditionalAccessSessionControls resource type
@@ -29,7 +29,7 @@ All the session controls inherit from [conditionalAccessSessionControl](conditio
 |persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Session control to define whether to persist cookies or not. All apps should be selected for this session control to work correctly. |
 |secureSignInSession|[secureSignInSessionControl](securesigninsessioncontrol.md)|Session control to require sign in sessions to be bound to a device.|
 |signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Session control to enforce signin frequency.|
-|globalSecureAccessFilteringProfile|[globalSecureAccessFilteringProfileSessionControl](globalSecureAccessFilteringProfileSessionControl.md)|Session control to link to Global Secure Access security profiles or filtering profiles.|
+|globalSecureAccessFilteringProfile|[globalSecureAccessFilteringProfileSessionControl](globalsecureaccessfilteringprofilesessioncontrol.md)|Session control to link to Global Secure Access security profiles or filtering profiles.|
 
 ## Relationships
 
