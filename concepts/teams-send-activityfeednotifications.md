@@ -235,7 +235,7 @@ To add custom activity icons in activity feed notifications sent to a user, foll
 
     :::image type="content" source="images/teams-app-package-custom-icon.png" alt-text="Screenshot shows a Teams app package with custom activity icons for activity feed notifications." lightbox="images/teams-app-package-custom-icon.png":::
 
-1. In the Teams app manifest, set `manifestVersion` to `devPreview`.
+1. Under `manifest.json`, set `manifestVersion` to `devPreview`.
 
 1. Under `activityTypes`, declare a list of `allowedIconIds` for the activity type you want to use custom icons for.
 
@@ -265,7 +265,7 @@ To add custom activity icons in activity feed notifications sent to a user, foll
     ```
 
     > [!NOTE]
-    > You can't declare more than 20 icons under each activity type.
+    > You can't declare more than 50 icons under each activity type.
 
     For more information about `allowedIconIds` and `activityIcons`, see [Teams public developer preview app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview#activitiesactivitytypes).
 
@@ -283,7 +283,7 @@ To add custom activity icons in activity feed notifications sent to a user, foll
       "previewText": {
         "content": "new announcement posted"
       },
-      "@iconUrl" : "announcementCreated"
+      "@iconId" : "announcementCreated"
     }
     ```
 
