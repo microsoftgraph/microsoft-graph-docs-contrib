@@ -113,7 +113,7 @@ To avoid this error, don't use tokens from retry operations for subsequent page 
 
 #### Example scenario
 
-Imagine you successfully retrieve Page 1 and receive a token "Token1". You then use "Token1" to request Page 2, but encounter a network error. During the retry, you receive a new token "RetryToken". If you use "RetryToken" to request Page 3, you might encounter the `DirectoryPageTokenNotFoundException` error because "RetryToken" isn't valid for the next page request. Instead, you should use "Token1" (the token from the last successful response) to request Page 3.
+Imagine you successfully retrieve Page 1 and receive a token "Token1". You then use "Token1" to request Page 2, but encounter a network error. During the retry, you receive a new token "RetryToken". If you use "RetryToken" to request Page 3, you might encounter the `DirectoryPageTokenNotFoundException` error because "RetryToken" isn't valid for the next page request. Instead, you should use "Token1" (the token from the last successful non-retry response) to request Page 3.
 
 ## Related content
 
