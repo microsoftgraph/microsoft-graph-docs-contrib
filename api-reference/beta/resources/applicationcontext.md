@@ -20,7 +20,7 @@ Represents the application that the authenticating identity is attempting to acc
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|includeApplications|String collection|{appId} of the application|
+|includeApplications|String collection|Collection of **appId** values for the applications.|
 
 ## Relationships
 None.
