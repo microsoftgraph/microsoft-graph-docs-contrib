@@ -1,40 +1,24 @@
 ---
 author: spgraph-docs-team
-description: "The hashes resource groups available hashes into a single structure for an item."
-ms.date: 09/10/2017
-title: Hashes
 ms.localizationpriority: medium
-doc_type: resourcePageType
+title: "hashes resource type"
+description: "The Hashes resource groups available hashes into a single structure for an item."
 ms.subservice: onedrive
+doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
-# hashes resource type
+
+# Hashes Resource Type
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+The **Hashes** resource groups available hashes into a single structure for an item.
 
-Groups available hashes into a single structure for an item.
-
-> [!NOTE]
-> Not all services provide a value for all hash properties listed. In OneDrive for Business and SharePoint Server 2016, **sha1Hash**, **crc32Hash**, and **sha256Hash** are not available. In OneDrive Personal, **quickXorHash** is not available.
-
-## Properties
-
-| Property         | Type   | Description                                                       |
-|:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
-| **sha256Hash**   | String | SHA256 hash for the contents of the file (if available). Read-only. |
-| **crc32Hash**    | String | The CRC32 value of the file (if available). Read-only.            |
-| **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
-
-> **Note:** In cases where the hash values are not available, the hash values on an item will be updated after the item is downloaded.
-
-## Relationships
-None.
+**Note:** Not all services provide a value for all hash properties listed.
 
 ## JSON representation
 
-The following JSON representation shows the resource type.
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -46,26 +30,32 @@ The following JSON representation shows the resource type.
 {
   "crc32Hash": "string (hex)",
   "sha1Hash": "string (hex)",
-  "sha256Hash": "string (hex)",
   "quickXorHash": "string (base64)"
 }
 ```
 
-## Related content
+## Properties
 
-- For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
-- To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](/onedrive/developer/code-snippets/quickxorhash).
+| Property         | Type   | Description                                                       |
+|:-----------------|:-------|:------------------------------------------------------------------|
+| **sha1Hash**     | String | (Hex string). SHA1 hash for the contents of the file (if available). Read-only. |
+| **crc32Hash**    | String | (Hex string). The CRC32 value of the file in little endian (if available). Read-only. |
+| **quickXorHash** | String | (Base64 string). A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
+| **sha256Hash** | String | This property isn't supported. Do not use. |
 
+## Remarks
 
-<!--
-{
+>**Note:** **quickXorHash** is the only value that is guaranteed to be available for both OneDrive for Business and OneDriver Personal.
+
+To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](/onedrive/developer/code-snippets/quickxorhash).
+
+For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+
+<!-- {
   "type": "#page.annotation",
   "description": "The hashes facet provides hash identifiers for a file in OneDrive",
   "keywords": "hash,sha1,crc32,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/Hashes",
-  "suppressions": []
-}
--->
-
+  "tocPath": "Facets/Hashes"
+} -->
 
