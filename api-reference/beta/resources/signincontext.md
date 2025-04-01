@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the context of the sign-in. This could be accessing an application, performing a user action or accessing data protected by an authentication context.
+Represents the context of the sign-in that's defined in the [Conditional Access What If evaluation](../api/conditionalaccessroot-evaluate.md). This could be accessing an application, performing a user action or accessing data protected by an authentication context.
 
 This is an abstract type.
 
