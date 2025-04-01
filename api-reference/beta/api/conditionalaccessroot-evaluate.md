@@ -716,6 +716,7 @@ Content-Type: application/json
 
 ### Example 4: Identify conditional access policies that apply to a service principal
 
+#### Request 
 The following example shows a request.
 <!-- {
   "blockType": "request",
