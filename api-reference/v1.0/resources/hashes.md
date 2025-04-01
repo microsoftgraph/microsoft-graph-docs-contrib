@@ -22,7 +22,7 @@ Groups available hashes into a single structure for an item.
 | Property         | Type   | Description                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **crc32Hash**    | String | The CRC32 value of the file (if available). Read-only.            |
-| **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
+| **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file change (if available). Read-only. |
 | **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
 | **sha256Hash**   | String | This property isn't supported. Don't use. |
 
