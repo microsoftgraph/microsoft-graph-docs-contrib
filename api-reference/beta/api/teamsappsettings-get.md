@@ -121,7 +121,7 @@ Content-Type: application/json
     "isChatResourceSpecificConsentEnabled": "true",
     "isUserPersonalScopeResourceSpecificConsentEnabled": "true",
     "customAppSettings": {
-      "developerToolsForShowingAppUsageMetrics": "DeveloperPortal"
+      "developerToolsForShowingAppUsageMetrics": "developerPortal"
     }
   }
 }
