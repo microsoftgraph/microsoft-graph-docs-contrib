@@ -26,8 +26,8 @@ Represents tenant-wide custom app settings for all [Microsoft Teams apps](teamsa
 
 | Member | Value| Description |
 |:---------------|:--------|:----------|
-|developerPortal|1|Enable the Developer Portal to display app usage metrics.|
-|unknownFutureValue|2|Evolvable enumeration sentinel value. Don't use.|
+|DeveloperPortal|1|Enable the Developer Portal to display app usage metrics.|
+|UnknownFutureValue|2|Evolvable enumeration sentinel value. Don't use.|
 
 
 ## Relationships
