@@ -17,11 +17,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-## March 2025: New in preview only
+## April 2025: New in preview only
 
 ### Reports | Partner billing reports
 
-[Export](/graph/api/partners-billing-unbilledReconciliation-export?view=graph-rest-beta&preserve-view=true) unbilled invoice reconciliation data.
+[Export](/graph/api/partners-billing-unbilledreconciliation-export?view=graph-rest-beta&preserve-view=true) unbilled invoice reconciliation data.
 
 ## March 2025: New and generally available
 
