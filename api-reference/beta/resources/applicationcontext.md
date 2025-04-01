@@ -1,6 +1,6 @@
 ---
 title: "applicationContext resource type"
-description: "Represents the application that the authenticating identity is attempting to access"
+description: "Represents the application that the authenticating identity is attempting to access, as defined in the Conditional Access What If evaluation."
 author: "kvenkit"
 ms.date: 03/21/2025
 ms.localizationpriority: medium
@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the application that the authenticating identity is attempting to access. Inherits from [signInContext](../resources/signincontext.md).
+Represents the application that the authenticating identity is attempting to access, as defind in the [Conditional Access What If evaluation](). Inherits from [signInContext](../resources/signincontext.md).
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|includeApplications|String collection|{appId} of the application|
+|includeApplications|String collection|Collection of **appId** values for the applications.|
 
 ## Relationships
 None.

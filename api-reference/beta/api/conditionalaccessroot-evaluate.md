@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessRoot: evaluate"
-description: "Evaluates the applicability of Conditional Access Policies based on the provided sign-in properties"
+description: "Evaluates the applicability of Conditional Access Policies based on the provided sign-in properties."
 author: "kvenkit"
 ms.date: 03/21/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Evaluates the applicability of Conditional Access Policies in your tenant based on the provided sign-in properties
+Evaluates the applicability of Conditional Access Policies in your tenant based on the provided sign-in properties.
 
 ## Permissions
 
@@ -54,7 +54,7 @@ The following table lists the parameters that are required when you call this ac
 |:---|:---|:---|
 |signInIdentity|[signInIdentity](../resources/signinidentity.md)|Defines the identity that is authenticating. This can be a user, external user or single tenant service principal. Required.|
 |signInContext|[signInContext](../resources/signincontext.md)|Defines the action perfomed by the authenticating identity. This could be accessing an application, performing a user action or accessing data protected by an authentication context. Required. |
-|signInConditions|[signInConditions](../resources/signinconditions.md)|Defines the conditions of the authentication. This includes details sych as location, device information, risk information etc. Required. |
+|signInConditions|[signInConditions](../resources/signinconditions.md)|Defines the conditions of the authentication. This includes details such as location, device information, risk information etc. Required. |
 |appliedPoliciesOnly|Boolean|This property controls whether to include all policies in the response or only the policies that would apply to the authentication event. Optional.|
 
 
@@ -65,7 +65,7 @@ If successful, this action returns a `200 OK` response code and a [whatIfAnalysi
 
 ## Examples
 
-### Example 1: Identify conditional access policies that would apply to a user accessing an application. 
+### Example 1: Identify conditional access policies that would apply to a user accessing an application
 
 ### Request
 
@@ -419,6 +419,9 @@ Content-Type: application/json
 
 ### Example 3: Identify conditional access policies that would apply to a user performing a user action
 
+
+#### Request
+
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -713,6 +716,7 @@ Content-Type: application/json
 
 ### Example 4: Identify conditional access policies that apply to a service principal
 
+#### Request 
 The following example shows a request.
 <!-- {
   "blockType": "request",

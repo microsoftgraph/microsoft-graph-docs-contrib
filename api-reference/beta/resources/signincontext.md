@@ -1,6 +1,6 @@
 ---
 title: "signInContext resource type"
-description: "Represents the context of the authentication event"
+description: "Represents the context of the authentication event as defined in the Conditional Access What If evaluation."
 author: "kvenkit"
 ms.date: 03/21/2025
 ms.localizationpriority: medium
@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the context of the sign-in. This could be accessing an application, performing a user action or accessing data protected by an authentication context.
+Represents the context of the sign-in that's defined in the [Conditional Access What If evaluation](../api/conditionalaccessroot-evaluate.md). This could be accessing an application, performing a user action or accessing data protected by an authentication context.
 
 This is an abstract type.
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
