@@ -5,6 +5,7 @@ author: "Ward1994"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/01/2025
 ---
 
 # cloudPcReports: retrieveCloudPcRecommendationReports
