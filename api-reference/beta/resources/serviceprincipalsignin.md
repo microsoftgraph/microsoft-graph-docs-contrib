@@ -20,7 +20,7 @@ Represents the service principal that is signing in. Inherits from [signInIdenti
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|servicePrincipalId|String|`appId` of the service principal that is signing in|
+|servicePrincipalId|String|`appId` of the service principal that is signing in.|
 
 ## Relationships
 None.
