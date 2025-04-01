@@ -26,8 +26,11 @@ Inherits from [entity](entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List](../api/user-list-authentication.md)|[authentication](../resources/authentication.md) collection|Get a list of the authentication objects and their properties.|
+|[Create](../api/user-post-authentication.md)|[authentication](../resources/authentication.md)|Create a new authentication object.|
 |[Get](../api/authentication-get.md)|[authentication](../resources/authentication.md)|Get the authentication states for a user, such as their sign-in preferences and their MFA state.|
 |[Update](../api/authentication-update.md)|[authentication](../resources/authentication.md)|Update the authentication states for a user, such as their sign-in preferences and their MFA state.|
+|[Delete](../api/user-delete-authentication.md)|None|Delete an authentication object.|
 
 ## Properties
 
@@ -42,6 +45,7 @@ Inherits from [entity](entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |emailMethods|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md) collection|Represents the email addresses registered to a user for authentication. |
+|externalAuthenticationMethods|[externalAuthenticationMethod](../resources/externalauthenticationmethod.md) collection|Represents the external methods registered to a user for authentication. |
 |fido2Methods|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Represents the FIDO2 security keys registered to a user for authentication.|
 |hardwareOathMethods|[hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) collection|The hardware OATH time-based one-time password (TOTP) devices assigned to a user for authentication.|
 |methods|[authenticationMethod](../resources/authenticationmethod.md) collection| Represents all authentication methods registered to a user.|
