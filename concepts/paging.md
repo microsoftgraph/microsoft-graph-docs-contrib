@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.topic: concept-article
 ms.subservice: non-product-specific
-ms.date: 02/21/2025
+ms.date: 04/01/2025
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 #Customer intent: As a developer, I want to learn how to effeciently apply both server-side and client-side paging to my Microsoft Graph queries.
@@ -102,6 +102,14 @@ Paging behavior varies across different Microsoft Graph APIs. Consider the follo
 - Not all resources or relationships support paging. For example, queries against [directoryRole](/graph/api/resources/directoryrole) don't support paging. This includes reading role objects themselves and role members.
 - When paging against [directory resources](/graph/api/resources/directoryObject), any custom request headers (headers that aren't Authorization or Content-Type headers) such as the **ConsistencyLevel** header aren't included by default in subsequent page requests. If those headers need to be sent on subsequent requests, you must set them explicitly.
 - When using the `$count=true` query string when querying against [directory resources](/graph/api/resources/directoryObject), the `@odata.count` property is returned only in the first page of the paged result set.
+
+## Error handling
+
+### Avoiding DirectoryPageTokenNotFoundException errors
+
+When paging over large sets of data, you might encounter the `DirectoryPageTokenNotFoundException` error message, which prevents the client app from successfully retrieving subsequent pages of data. This error occurs when the client app uses the token from a retry operation to request the next page of results.
+
+To avoid this error, don't use the token from a retry operation. Instead, persist the token from the last sucessful response and use it to request the subsequent page of data
 
 ## Related content
 
