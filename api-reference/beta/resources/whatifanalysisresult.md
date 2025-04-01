@@ -40,7 +40,7 @@ Inherits from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
 |policyApplies|Boolean|Specifies whether the policy applies or not based on the sign-in properties provided in the request boby. |
 |sessionControls|[conditionalAccessSessionControls](../resources/conditionalaccesssessioncontrols.md)|Specifies the session controls that are enforced after sign-in. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
-|state|conditionalAccessPolicyState|Specifies the state of the conditionalAccessPolicy object. Possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).The possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`, `partiallyEnabled`, `unknownFutureValue`.|
+|state|conditionalAccessPolicyState|Specifies the state of the conditionalAccessPolicy object. Possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md). The possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`, `partiallyEnabled`, `unknownFutureValue`.|
 
 ## Relationships
 None.
