@@ -1,7 +1,7 @@
 ---
 title: "whatIfAnalysisResult resource type"
 toc.title: "What If evaluation"
-description: "Represents the result of the conditional access what if evaluation. The what if evaluation indicates which policies would apply based on the sign-in properties provided"
+description: "Represents the result of a Conditional Access What If evaluation, which indicates the policies that would apply based on the sign-in details you provide."
 author: "kvenkit"
 ms.date: 03/21/2025
 ms.localizationpriority: medium
