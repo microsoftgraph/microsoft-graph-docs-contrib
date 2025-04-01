@@ -26,14 +26,15 @@ In this tutorial, you learn how to configure Microsoft Entra Internet Access pro
 
 ## Prerequisites
 
-To complete the steps in this tutorial:
+To complete this tutorial, you need:
 
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account assigned to the supported administrator roles. The following Microsoft Entra roles are the least privileged for the operations in this tutorial:
+- A Microsoft Entra tenant with the Microsoft Entra Suite license.
+- An API client such as [Graph Explorer](https://aka.ms/ge) with an account that has the supported administrator roles. The following Microsoft Entra roles are the least privileged for the operations in this tutorial:
   - Global Secure Access Administrator for configuring the Web content filtering policies and filtering profiles.
   - Conditional Access Administrator for configuring Conditional Access policies.
-- Grant admin consent for the *NetworkAccess.Read.All*, *NetworkAccess.ReadWrite.All*, and *Policy.ReadWrite.ConditionalAccess* delegated permissions.
-- Create a test user to assign to the Conditional Access policy.
-- Deploy the [Global Secure Access (GSA) client](/entra/global-secure-access/concept-clients) to your organization's devices.
+- Delegated permissions: *NetworkAccess.Read.All*, *NetworkAccess.ReadWrite.All*, and *Policy.ReadWrite.ConditionalAccess*
+- A test user to assign to the Conditional Access policy.
+- The [Global Secure Access (GSA) client](/entra/global-secure-access/concept-clients) deployed to your organization's devices.
 
 ## Step 1: Enable Internet Access traffic forwarding
 
