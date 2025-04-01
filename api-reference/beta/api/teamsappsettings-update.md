@@ -278,7 +278,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.teamsAppSettings",
   "customAppSettings": {
-    "developerToolsForShowingAppUsageMetrics": "developerPortal"
+    "developerToolsForShowingAppUsageMetrics": "DeveloperPortal"
   }
 }
 ```
