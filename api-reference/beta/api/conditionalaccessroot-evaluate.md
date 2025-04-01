@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Evaluates the applicability of Conditional Access Policies in your tenant based on the provided sign-in properties
+Evaluates the applicability of Conditional Access Policies in your tenant based on the provided sign-in properties.
 
 ## Permissions
 
