@@ -20,7 +20,7 @@ Represents sign-in parameters of the identity that is authenticating
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationFlow|[authenticationFlow](../resources/authenticationflow.md)| Type of authentication flow. Possible values are: deviceCodeFlow or authenticationTransfer|
+|authenticationFlow|[authenticationFlow](../resources/authenticationflow.md)| Type of authentication flow. Possible values are: `deviceCodeFlow` or `authenticationTransfer`.|
 |clientAppType|conditionalAccessClientApp|Client application type.The possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`, `unknownFutureValue`. Default value is `all`|
 |country|String|Country from where the identity is authenticating|
 |deviceInfo|[deviceInfo](../resources/deviceinfo.md)|Information about the device used for the sign-in|
