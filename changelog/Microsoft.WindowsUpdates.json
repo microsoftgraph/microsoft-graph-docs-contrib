@@ -4,14 +4,6 @@
       "ChangeList": [
         {
           "Id": "810c8ce0-9065-4b32-a737-fd2221a4ed71",
-          "ApiChange": "Property",
-          "ChangedApiName": "complianceChangeRule",
-          "ChangeType": "Addition",
-          "Description": "Added the **complianceChangeRuleState** property to the [windowsupdates-complianceChangeRule](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-complianceChangeRule?view=graph-rest-beta) resource.",
-          "Target": "deploymentAudience"
-        }, 
-        {
-          "Id": "810c8ce0-9065-4b32-a737-fd2221a4ed71",
           "ApiChange": "Resource",
           "ChangedApiName": "remediationUpdateFilter",
           "ChangeType": "Addition",
