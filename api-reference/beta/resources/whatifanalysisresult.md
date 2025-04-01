@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the result of the conditional access what if evaluation. The what if evaluation indicates which policies would apply based on the sign-in properties provided.
+Represents the result of a Conditional Access What If evaluation, which indicates the policies that would apply based on the sign-in details you provide. For more information, see the [Conditional Access Policy What If tool](/entra/identity/conditional-access/what-if-tool).
 
 
 Inherits from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
