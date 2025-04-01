@@ -125,20 +125,20 @@ items:
       href: ../../resources/siteprotectionunit.md
     - name: List
       href: ../../api/backuprestoreroot-list-siteprotectionunits.md
-- name: Protection units bulk addition job
-  href: ../../resources/protectionunitsbulkjobbase.md
 - name: Protection units bulk job
   items:
+  - name: Protection units bulk addition job
+    href: ../../resources/protectionunitsbulkjobbase.md
   - name: Drive protection units bulk addition job
-      items:
-      - name: Drive protection units bulk addition job
-        href: ../../resources/driveprotectionunitsbulkadditionjob.md
-      - name: List
-        href: ../../api/onedriveforbusinessprotectionpolicy-list-driveprotectionunitsbulkadditionjobs.md
-      - name: Create
-        href: ../../api/driveprotectionunitsbulkadditionjobs-post.md
-      - name: Get
-        href: ../../api/driveprotectionunitsbulkadditionjobs-get.md
+    items:
+    - name: Drive protection units bulk addition job
+      href: ../../resources/driveprotectionunitsbulkadditionjob.md
+    - name: List
+      href: ../../api/onedriveforbusinessprotectionpolicy-list-driveprotectionunitsbulkadditionjobs.md
+    - name: Create
+      href: ../../api/driveprotectionunitsbulkadditionjobs-post.md
+    - name: Get
+      href: ../../api/driveprotectionunitsbulkadditionjobs-get.md
   - name: Mailbox protection units bulk addition job
     items:
     - name: Mailbox protection units bulk addition job
