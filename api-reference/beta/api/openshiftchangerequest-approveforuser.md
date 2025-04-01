@@ -1,6 +1,6 @@
 ---
 title: "openShiftChangeRequest: approveForUser"
-description: "Approve an open shift request for a user."
+description: "Approve an openshiftchangerequest object for a user."
 author: lemikeshifts
 ms.date: 03/31/2025
 ms.localizationpriority: medium

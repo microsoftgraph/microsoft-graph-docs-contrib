@@ -1,6 +1,6 @@
 ---
 title: "openShiftChangeRequest: declineForUser"
-description: "Decline an openshiftchangerequest for a user."
+description: "Decline an openshiftchangerequest object for a user."
 author: lemikeshifts
 ms.date: 03/31/2025
 ms.localizationpriority: medium

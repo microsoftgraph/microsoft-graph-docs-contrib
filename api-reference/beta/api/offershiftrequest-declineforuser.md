@@ -1,6 +1,6 @@
 ---
 title: "offerShiftRequest: declineForUser"
-description: "Decline an offer shift request for a user."
+description: "Decline an offershiftrequest object for a user."
 author: lemikeshifts
 ms.date: 03/31/2025
 ms.localizationpriority: medium
