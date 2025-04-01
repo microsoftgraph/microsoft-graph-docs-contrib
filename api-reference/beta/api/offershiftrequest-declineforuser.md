@@ -1,10 +1,10 @@
 ---
 title: "offerShiftRequest: declineForUser"
 description: "Decline an offer shift request for a user."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: lemikeshifts
 ms.date: 03/31/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: teams
 doc_type: apiPageType
 ---
 

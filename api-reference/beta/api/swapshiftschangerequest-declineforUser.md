@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "schedulechangerequest-declineforuser-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/swapshiftschangerequest-declineforuser-permissions)]
+[!INCLUDE [permissions-table](../includes/permissions/swapshiftschangerequest-declineforuser-permissions.md)]
 
 ## HTTP request
 
