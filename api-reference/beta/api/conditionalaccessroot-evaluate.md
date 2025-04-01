@@ -102,10 +102,10 @@ Content-Type: application/json
             "transferMethod": "deviceCodeFlow"
         },
         "deviceInfo": {
-            "isCompliant": "true"
+            "isCompliant": true
         }
     },
-    "appliedPoliciesOnly": "true"
+    "appliedPoliciesOnly": true
 }
 ```
 
@@ -300,7 +300,7 @@ Content-Type: application/json
             "profileType": "Standard"
         }
     },
-    "appliedPoliciesOnly": "true"
+    "appliedPoliciesOnly": true
 }
 ```
 
@@ -454,7 +454,7 @@ Content-Type: application/json
             "trustType": "EntraID"
         }
     },
-    "appliedPoliciesOnly": "true"
+    "appliedPoliciesOnly": true
 }
 ```
 
@@ -901,3 +901,4 @@ Content-Type: application/json
         }
     ]
 }
+```
