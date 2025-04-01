@@ -24,7 +24,7 @@ Inherits from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Evaluate](../api/conditionalaccessroot-evaluate.md)|[whatIfAnalysisResult](../resources/whatifanalysisresult.md) collection|WhatIf evaluation of Conditional Access Policies|
+|[Evaluate](../api/conditionalaccessroot-evaluate.md)|[whatIfAnalysisResult](../resources/whatifanalysisresult.md) collection|List the results of the What If evaluation of Conditional Access Policies targeting a sign-in attempt.|
 
 
 ## Properties
