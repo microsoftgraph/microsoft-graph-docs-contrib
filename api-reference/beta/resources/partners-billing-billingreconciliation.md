@@ -1,6 +1,6 @@
 ---
 title: "billingReconciliation resource type"
-description: "Represents details for billed invoice reconciliation and unbilled non-usage reconciliation data."
+description: "Represents details for billed invoice reconciliation and unbilled invoice reconciliation data."
 author: "tingh-msft"
 ms.localizationpriority: medium
 ms.subservice: "reports"
