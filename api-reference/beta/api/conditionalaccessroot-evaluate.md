@@ -419,6 +419,9 @@ Content-Type: application/json
 
 ### Example 3: Identify conditional access policies that would apply to a user performing a user action
 
+
+#### Request
+
 The following example shows a request.
 <!-- {
   "blockType": "request",
