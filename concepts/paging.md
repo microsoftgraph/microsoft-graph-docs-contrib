@@ -107,9 +107,13 @@ Paging behavior varies across different Microsoft Graph APIs. Consider the follo
 
 ### Avoiding DirectoryPageTokenNotFoundException errors
 
-When paging over large sets of data, you might encounter the `DirectoryPageTokenNotFoundException` error message, which prevents the client app from successfully retrieving subsequent pages of data. This error occurs when the client app uses the token from a retry operation to request the next page of results.
+When paging through large sets of data, you might encounter the `DirectoryPageTokenNotFoundException` error, which prevents the client app from successfully retrieving subsequent pages. This error occurs when the client app uses a token from a retry operation to request the next page of results.
 
-To avoid this error, don't use the token from a retry operation. Instead, persist the token from the last sucessful response and use it to request the subsequent page of data
+To avoid this error, don't use tokens from retry operations for subsequent page requests as these tokens aren't guaranteed to be valid for future requests. Instead, persist the token from the last successful response and use it for the next page request. Therefore, the `@odata.nextLink` value used for the retry should be used for the subsequent page request.
+
+#### Example scenario
+
+Imagine you successfully retrieve Page 1 and receive a token "Token1". You then use "Token1" to request Page 2, but encounter a network error. During the retry, you receive a new token "RetryToken". If you use "RetryToken" to request Page 3, you might encounter the `DirectoryPageTokenNotFoundException` error because "RetryToken" isn't valid for the next page request. Instead, you should use "Token1" (the token from the last successful response) to request Page 3.
 
 ## Related content
 
