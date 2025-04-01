@@ -22,7 +22,7 @@ Defines details of the user that is signing in. Inherits from [signInIdentity](.
 |:---|:---|:---|
 |externalTenantId|String|TenantId of the external user|
 |externalUserType|conditionalAccessGuestOrExternalUserTypes|Category that the external user belongs to.The possible values are: `none`, `internalGuest`, `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`, `otherExternalUser`, `serviceProvider`, `unknownFutureValue`.|
-|userId|String|ObjectId of the user|
+|userId|String|Object ID of the user.|
 
 ## Relationships
 None.
