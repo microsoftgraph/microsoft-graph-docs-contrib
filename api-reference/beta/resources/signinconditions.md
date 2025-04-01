@@ -21,15 +21,15 @@ Represents sign-in parameters of the identity that is authenticating
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationFlow|[authenticationFlow](../resources/authenticationflow.md)| Type of authentication flow. Possible values are: deviceCodeFlow or authenticationTransfer|
-|clientAppType|conditionalAccessClientApp|Client application type.The possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`, `unknownFutureValue`.|
-|country|String||
+|clientAppType|conditionalAccessClientApp|Client application type.The possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`, `unknownFutureValue`. Default value is `all`|
+|country|String|Country from where the identity is authenticating|
 |deviceInfo|[deviceInfo](../resources/deviceinfo.md)|Information about the device used for the sign-in|
-|devicePlatform|conditionalAccessDevicePlatform|Device platform.The possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`, `linux`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `linux`.|
-|insiderRiskLevel|insiderRiskLevel|Insider risk associated with the authenticating user.The possible values are: `none`, `minor`, `moderate`, `elevated`, `unknownFutureValue`.|
+|devicePlatform|conditionalAccessDevicePlatform|Device platform.The possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`, `linux`. Default value is `android`|
+|insiderRiskLevel|insiderRiskLevel|Insider risk associated with the authenticating user.The possible values are: `none`, `minor`, `moderate`, `elevated`, `unknownFutureValue`. Default value is `none`|
 |ipAddress|String|Ip address of the authenticating identity|
-|servicePrincipalRiskLevel|riskLevel|Risk associated with the service principal.The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
-|signInRiskLevel|riskLevel|Sign-in risk associated with the user.The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
-|userRiskLevel|riskLevel|The authenticating user's risk level.The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
+|servicePrincipalRiskLevel|riskLevel|Risk associated with the service principal.The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Default value is `low`|
+|signInRiskLevel|riskLevel|Sign-in risk associated with the user.The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Default value is `low`|
+|userRiskLevel|riskLevel|The authenticating user's risk level.The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Default value is `low`|
 
 ## Relationships
 None.

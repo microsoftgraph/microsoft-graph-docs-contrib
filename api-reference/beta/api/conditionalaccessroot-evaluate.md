@@ -46,7 +46,7 @@ POST /identity/conditionalAccess/evaluate
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters. For the evaluation to provide accurate results, include as many details about the sign-in as possible. This includes but is not limited to details such as the ip address, country, risk level, device information etc.
+In the request body, supply a JSON representation of the parameters. For the evaluation to provide the most accurate results, include as many details about the sign-in as possible. As a thumb rule, if your tenant has policies with a certain condition and sign-in details pertaining to that condition is not provided in the request body, the what if tool will not be able to evaluate with respect to that condition.
 
 The following table lists the parameters that are required when you call this action.
 
@@ -80,21 +80,32 @@ POST https://graph.microsoft.com/beta/identity/conditionalAccess/evaluate
 Content-Type: application/json
 
 {
-  "signInIdentity": {
-    "@odata.type": "#microsoft.graph.userSignIn",
-    "userId": "f7ca74b0-8562-4083-b66c-0476f942cfd0"
-  },
-  "signInContext": {
-    "@odata.type": "#microsoft.graph.applicationContext",
-    "includeApplications": ["00000003-0000-0ff1-ce00-000000000000"]
-  },
-  "signInConditions": {
-    "clientAppType": "browser",
-    "userRiskLevel": "high",
-    "country": "US",
-    "ipAddress": "40.177.80.9"
-  },
-  "appliedPoliciesOnly": "true"
+    "signInIdentity": {
+        "@odata.type": "#microsoft.graph.userSignIn",
+        "userId": "15dc174b-f34c-4588-ac45-61d6e05dce93"
+    },
+    "signInContext": {
+        "@odata.type": "#microsoft.graph.applicationContext",
+        "includeApplications": [
+            "00000003-0000-0ff1-ce00-000000000000"
+        ]
+    },
+    "signInConditions": {
+        "devicePlatform": "android",
+        "clientAppType": "browser",
+        "signInRiskLevel": "high",
+        "userRiskLevel": "high",
+        "country": "US",
+        "ipAddress": "40.77.182.32",
+        "insiderRiskLevel": "elevated",
+        "authenticationFlow": {
+            "transferMethod": "deviceCodeFlow"
+        },
+        "deviceInfo": {
+            "isCompliant": "true"
+        }
+    },
+    "appliedPoliciesOnly": "true"
 }
 ```
 
@@ -117,11 +128,78 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.whatIfAnalysisResult)",
     "value": [
         {
+            "id": "df9e6f15-2b60-4e78-b990-b2da33a10886",
+            "templateId": null,
+            "displayName": "All users except au1_Office 365_No conditions_Session control application enforced restrictions",
+            "createdDateTime": "2022-04-01T18:55:43.1454565Z",
+            "modifiedDateTime": "2025-03-27T21:42:26.951558Z",
+            "state": "enabledForReportingButNotEnforced",
+            "policyApplies": true,
+            "analysisReasons": "notSet",
+            "grantControls": null,
+            "partialEnablementStrategy": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "insiderRiskLevels": null,
+                "clients": null,
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "authenticationFlows": null,
+                "applications": {
+                    "includeApplications": [
+                        "Office365"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": [],
+                    "applicationFilter": null,
+                    "networkAccess": null,
+                    "globalSecureAccess": null
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [
+                        "f7ca74b0-8562-4083-b66c-0476f942cfd0"
+                    ],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "sessionControls": {
+                "disableResilienceDefaults": null,
+                "cloudAppSecurity": null,
+                "signInFrequency": null,
+                "persistentBrowser": null,
+                "continuousAccessEvaluation": null,
+                "secureSignInSession": null,
+                "networkAccessSecurity": null,
+                "globalSecureAccessFilteringProfile": null,
+                "applicationEnforcedRestrictions": {
+                    "isEnabled": true
+                }
+            }
+        },
+        {
             "id": "37d51c45-8c60-4f82-98e0-6e1451cecf7c",
             "templateId": null,
-            "displayName": "CA008: Require password change for high-risk users",
+            "displayName": "All Users except au1_All resources_user risk H_Password change",
             "createdDateTime": "2022-03-31T22:59:59.6688974Z",
-            "modifiedDateTime": "2024-11-18T17:57:29.3742437Z",
+            "modifiedDateTime": "2025-03-27T19:55:43.5390544Z",
             "state": "enabledForReportingButNotEnforced",
             "policyApplies": true,
             "analysisReasons": "notSet",
@@ -161,8 +239,7 @@ Content-Type: application/json
                         "All"
                     ],
                     "excludeUsers": [
-                        "d888c9be-6284-4699-bebd-2c5c38ecb706",
-                        "d16f032d-eade-42e4-b5f6-d675ad2cc6a7"
+                        "f7ca74b0-8562-4083-b66c-0476f942cfd0"
                     ],
                     "includeGroups": [],
                     "excludeGroups": [],
@@ -182,97 +259,6 @@ Content-Type: application/json
                 "termsOfUse": [],
                 "authenticationStrength": null
             }
-        },
-        {
-            "id": "49d6821a-9594-4305-af58-09aaf74a8fee",
-            "templateId": null,
-            "displayName": "MFA for all users and apps",
-            "createdDateTime": "2025-01-14T07:18:19.258663Z",
-            "modifiedDateTime": "2025-01-14T18:37:58.7055158Z",
-            "state": "enabledForReportingButNotEnforced",
-            "policyApplies": true,
-            "analysisReasons": "notSet",
-            "partialEnablementStrategy": null,
-            "sessionControls": null,
-            "conditions": {
-                "userRiskLevels": [],
-                "signInRiskLevels": [],
-                "clientAppTypes": [
-                    "all"
-                ],
-                "servicePrincipalRiskLevels": [],
-                "insiderRiskLevels": null,
-                "clients": null,
-                "platforms": null,
-                "locations": null,
-                "times": null,
-                "deviceStates": null,
-                "devices": null,
-                "clientApplications": null,
-                "authenticationFlows": null,
-                "applications": {
-                    "includeApplications": [
-                        "All"
-                    ],
-                    "excludeApplications": [
-                        "d4ebce55-015a-49b5-a083-c84d1797ae8c"
-                    ],
-                    "includeUserActions": [],
-                    "includeAuthenticationContextClassReferences": [],
-                    "applicationFilter": null,
-                    "networkAccess": null,
-                    "globalSecureAccess": null
-                },
-                "users": {
-                    "includeUsers": [
-                        "All"
-                    ],
-                    "excludeUsers": [],
-                    "includeGroups": [],
-                    "excludeGroups": [],
-                    "includeRoles": [],
-                    "excludeRoles": [],
-                    "includeGuestsOrExternalUsers": null,
-                    "excludeGuestsOrExternalUsers": null
-                }
-            },
-            "grantControls": {
-                "operator": "OR",
-                "builtInControls": [],
-                "customAuthenticationFactors": [],
-                "termsOfUse": [],
-                "authenticationStrength": {
-                    "id": "00000000-0000-0000-0000-000000000002",
-                    "createdDateTime": "2021-12-01T08:00:00Z",
-                    "modifiedDateTime": "2021-12-01T08:00:00Z",
-                    "displayName": "Multifactor authentication",
-                    "description": "Combinations of methods that satisfy strong authentication, such as a password + SMS",
-                    "policyType": "builtIn",
-                    "requirementsSatisfied": "mfa",
-                    "allowedCombinations": [
-                        "windowsHelloForBusiness",
-                        "fido2",
-                        "x509CertificateMultiFactor",
-                        "deviceBasedPush",
-                        "temporaryAccessPassOneTime",
-                        "temporaryAccessPassMultiUse",
-                        "password,microsoftAuthenticatorPush",
-                        "password,softwareOath",
-                        "password,hardwareOath",
-                        "password,x509CertificateSingleFactor",
-                        "password,x509CertificateMultiFactor",
-                        "password,sms",
-                        "password,voice",
-                        "federatedMultiFactor",
-                        "microsoftAuthenticatorPush,federatedSingleFactor",
-                        "softwareOath,federatedSingleFactor",
-                        "hardwareOath,federatedSingleFactor",
-                        "sms,federatedSingleFactor",
-                        "voice,federatedSingleFactor"
-                    ],
-                    "combinationConfigurations": []
-                }
-            }
         }
     ]
 }
@@ -291,17 +277,30 @@ POST https://graph.microsoft.com/beta/identity/conditionalAccess/evaluate
 Content-Type: application/json
 
 {
-  "signInIdentity": {
-    "@odata.type": "#microsoft.graph.userSignIn",
-    "userId": "c02d27b1-8e74-445e-af0f-392347494fce"
-  },
-  "signInContext": {
-    "@odata.type": "#microsoft.graph.authContext",
-    "authenticationContext": "c37"
-  },
-  "signInConditions": {
-  },
-  "appliedPoliciesOnly": true
+    "signInIdentity": {
+        "@odata.type": "#microsoft.graph.userSignIn",
+        "userId": "15dc174b-f34c-4588-ac45-61d6e05dce93"
+    },
+    "signInContext": {
+        "@odata.type": "#microsoft.graph.authContext",
+        "authenticationContextValue": "c37"
+    },
+    "signInConditions": {
+        "devicePlatform": "windows",
+        "clientAppType": "mobileAppsAndDesktopClients",
+        "signInRiskLevel": "medium",
+        "userRiskLevel": "none",
+        "country": "US",
+        "ipAddress": "40.77.182.32",
+        "insiderRiskLevel": "moderate",
+        "authenticationFlow": {
+            "transferMethod": "authenticationTransfer"
+        },
+        "deviceInfo": {
+            "profileType": "Standard"
+        }
+    },
+    "appliedPoliciesOnly": "true"
 }
 ```
 
@@ -327,9 +326,9 @@ Content-Type: application/json
         {
             "id": "e897c693-c0e6-4386-abc3-f46dee5940fb",
             "templateId": null,
-            "displayName": "Protected Action",
+            "displayName": "All users_auth context_No conditions_Auth strength MFA",
             "createdDateTime": "2023-07-10T17:27:37.9735926Z",
-            "modifiedDateTime": "2025-03-26T03:10:47.990625Z",
+            "modifiedDateTime": "2025-03-27T20:03:41.92628Z",
             "state": "enabledForReportingButNotEnforced",
             "policyApplies": true,
             "analysisReasons": "notSet",
@@ -431,17 +430,31 @@ POST https://graph.microsoft.com/beta/identity/conditionalAccess/evaluate
 Content-Type: application/json
 
 {
-  "signInIdentity": {
-    "@odata.type": "#microsoft.graph.userSignIn",
-    "userId": "c02d27b1-8e74-445e-af0f-392347494fce"
-  },
-  "signInContext": {
-    "@odata.type": "#microsoft.graph.userActionContext",
-    "userAction": "registerSecurityInformation"
-  },
-  "signInConditions": {
-  },
-  "appliedPoliciesOnly": true
+    "signInIdentity": {
+        "@odata.type": "#microsoft.graph.userSignIn",
+        "userId": "15dc174b-f34c-4588-ac45-61d6e05dce93"
+    },
+    "signInContext": {
+        "@odata.type": "#microsoft.graph.userActionContext",
+        "userAction": "registerSecurityInformation"
+    },
+    "signInConditions": {
+        "devicePlatform": "macOS",
+        "clientAppType": "browser",
+        "signInRiskLevel": "low",
+        "userRiskLevel": "high",
+        "servicePrincipalRiskLevel": "none",
+        "country": "CA",
+        "ipAddress": "40.77.182.32",
+        "insiderRiskLevel": "minor",
+        "authenticationFlow": {
+            "transferMethod": "deviceCodeFlow"
+        },
+        "deviceInfo": {
+            "trustType": "EntraID"
+        }
+    },
+    "appliedPoliciesOnly": "true"
 }
 ```
 
@@ -462,11 +475,153 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.whatIfAnalysisResult)",
     "value": [
         {
+            "id": "37d51c45-8c60-4f82-98e0-6e1451cecf7c",
+            "templateId": null,
+            "displayName": "All Users except au1_All resources_user risk H_Password change",
+            "createdDateTime": "2022-03-31T22:59:59.6688974Z",
+            "modifiedDateTime": "2025-03-27T19:55:43.5390544Z",
+            "state": "enabledForReportingButNotEnforced",
+            "policyApplies": true,
+            "analysisReasons": "notSet",
+            "partialEnablementStrategy": null,
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [
+                    "high"
+                ],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "insiderRiskLevels": null,
+                "clients": null,
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "authenticationFlows": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": [],
+                    "applicationFilter": null,
+                    "networkAccess": null,
+                    "globalSecureAccess": null
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [
+                        "f7ca74b0-8562-4083-b66c-0476f942cfd0"
+                    ],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "grantControls": {
+                "operator": "AND",
+                "builtInControls": [
+                    "mfa",
+                    "passwordChange"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "4aa7d105-d92b-4c07-9834-0e810ddb89ac",
+            "templateId": null,
+            "displayName": "All admin roles except au1_All resources_No conditions_MFA",
+            "createdDateTime": "2022-03-29T20:39:24.3899939Z",
+            "modifiedDateTime": "2025-03-27T21:40:19.6686701Z",
+            "state": "enabledForReportingButNotEnforced",
+            "policyApplies": true,
+            "analysisReasons": "notSet",
+            "partialEnablementStrategy": null,
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "insiderRiskLevels": null,
+                "clients": null,
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "authenticationFlows": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": [],
+                    "applicationFilter": null,
+                    "networkAccess": null,
+                    "globalSecureAccess": null
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "f7ca74b0-8562-4083-b66c-0476f942cfd0"
+                    ],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [
+                        "62e90394-69f5-4237-9190-012177145e10",
+                        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+                        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+                        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+                        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+                        "fe930be7-5e62-47db-91af-98c3a49a38b1",
+                        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                        "158c047a-c907-4556-b7ef-446551a6b5f7",
+                        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+                        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+                        "e8611ab8-c189-46e8-94e1-60213ab1f814"
+                    ],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength": null
+            }
+        },
+        {
             "id": "11083471-5a50-43ad-90c0-23f1af0869e1",
             "templateId": null,
-            "displayName": "Require MFA for register security information",
+            "displayName": "All users except au1_User action RS info_No conditions_Auth strenfth MFA",
             "createdDateTime": "2024-10-16T15:06:45.0788027Z",
-            "modifiedDateTime": "2025-03-26T19:37:35.2284292Z",
+            "modifiedDateTime": "2025-03-27T20:08:22.6064571Z",
             "state": "enabledForReportingButNotEnforced",
             "policyApplies": true,
             "analysisReasons": "notSet",
@@ -501,10 +656,11 @@ Content-Type: application/json
                 },
                 "users": {
                     "includeUsers": [
-                        "15dc174b-f34c-4588-ac45-61d6e05dce93",
+                        "All"
+                    ],
+                    "excludeUsers": [
                         "f7ca74b0-8562-4083-b66c-0476f942cfd0"
                     ],
-                    "excludeUsers": [],
                     "includeGroups": [],
                     "excludeGroups": [],
                     "includeRoles": [],
@@ -578,7 +734,11 @@ Content-Type: application/json
             "00000003-0000-0ff1-ce00-000000000000"
         ]
     },
-    "signInConditions": {},
+    "signInConditions": {
+        "servicePrincipalRiskLevel": "high",
+        "country": "CA",
+        "ipAddress": "40.77.182.32"
+    },
     "appliedPoliciesOnly": true
 }
 ```
@@ -597,16 +757,15 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.whatIfAnalysisResult)",
     "value": [
         {
             "id": "461478d2-5896-4761-84ba-4d241c396a29",
             "templateId": null,
-            "displayName": "Service Principal Policy",
+            "displayName": "All ST SPs_All resources_Any location_Block",
             "createdDateTime": "2022-04-08T19:31:15.6087842Z",
-            "modifiedDateTime": "2025-03-21T22:24:11.4371774Z",
+            "modifiedDateTime": "2025-03-27T20:08:54.0912734Z",
             "state": "enabledForReportingButNotEnforced",
             "policyApplies": true,
             "analysisReasons": "notSet",
@@ -674,11 +833,11 @@ Content-Type: application/json
             }
         },
         {
-            "id": "726a6e19-42f8-4549-853f-323fbc769f48",
+            "id": "4f1d2ff3-50db-4299-bbdd-0a114c98e97e",
             "templateId": null,
-            "displayName": "RO2",
-            "createdDateTime": "2022-04-19T18:14:05.1553761Z",
-            "modifiedDateTime": "2022-04-19T19:14:29.9818843Z",
+            "displayName": "All ST SPs_All resources_No conditions_Block",
+            "createdDateTime": "2025-02-21T07:04:44.777856Z",
+            "modifiedDateTime": "2025-03-28T06:15:41.2376665Z",
             "state": "enabledForReportingButNotEnforced",
             "policyApplies": true,
             "analysisReasons": "notSet",
@@ -694,6 +853,7 @@ Content-Type: application/json
                 "insiderRiskLevels": null,
                 "clients": null,
                 "platforms": null,
+                "locations": null,
                 "times": null,
                 "deviceStates": null,
                 "devices": null,
@@ -720,12 +880,6 @@ Content-Type: application/json
                     "excludeRoles": [],
                     "includeGuestsOrExternalUsers": null,
                     "excludeGuestsOrExternalUsers": null
-                },
-                "locations": {
-                    "includeLocations": [
-                        "All"
-                    ],
-                    "excludeLocations": []
                 },
                 "clientApplications": {
                     "includeServicePrincipals": [
