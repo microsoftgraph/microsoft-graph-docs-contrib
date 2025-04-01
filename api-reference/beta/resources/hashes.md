@@ -1,6 +1,6 @@
 ---
 author: spgraph-docs-team
-description: "The hashes resource groups available hashes into a single structure for an item."
+description: "Groups available hashes into a single structure for an item."
 ms.date: 03/21/2024
 title: "hashes resource type"
 ms.localizationpriority: medium
