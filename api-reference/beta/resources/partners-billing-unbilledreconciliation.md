@@ -22,7 +22,7 @@ Represents details for unbilled invoice reconciliation data.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Export](../api/partners-billing-unbilledreconciliation-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export the unbilled invoice reconciliation data.|
+|[Export](../api/partners-billing-unbilledreconciliation-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export the unbilled invoice reconciliation data for a specific billing period and a given currency.|
 
 ## Properties
 
