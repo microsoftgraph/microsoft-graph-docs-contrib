@@ -54,7 +54,7 @@ The following table lists the parameters that are required when you call this ac
 |:---|:---|:---|
 |signInIdentity|[signInIdentity](../resources/signinidentity.md)|Defines the identity that is authenticating. This can be a user, external user or single tenant service principal. Required.|
 |signInContext|[signInContext](../resources/signincontext.md)|Defines the action perfomed by the authenticating identity. This could be accessing an application, performing a user action or accessing data protected by an authentication context. Required. |
-|signInConditions|[signInConditions](../resources/signinconditions.md)|Defines the conditions of the authentication. This includes details sych as location, device information, risk information etc. Required. |
+|signInConditions|[signInConditions](../resources/signinconditions.md)|Defines the conditions of the authentication. This includes details such as location, device information, risk information etc. Required. |
 |appliedPoliciesOnly|Boolean|This property controls whether to include all policies in the response or only the policies that would apply to the authentication event. Optional.|
 
 
