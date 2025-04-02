@@ -1,6 +1,6 @@
 ---
-title: "Get Teams User Configuration"
-description: "Read the Teams user configurations for a specific user using userId (the identifier of User)."
+title: "Get teamsUserConfiguration"
+description: "Read the Teams user configurations for a specific user using their ID (the user's identifier)."
 author: "praspatil05"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the Teams user configurations for a specific user using userId (the identifier of User).
+Read the Teams user configurations for a specific user using their ID (the user's identifier).
 
 ## Permissions
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/admin/teams/userConfigurations/{teamsUserConfigurationId}
 ```
-
 
 ### Response
 
@@ -126,4 +125,3 @@ Content-Type: application/json
   }
 }
 ```
-
