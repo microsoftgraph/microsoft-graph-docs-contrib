@@ -49,15 +49,11 @@ PATCH /users/{usersId}/authentication/externalAuthenticationMethods/{externalAut
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Represents the date and time when an entity was created. Inherited from [authenticationMethod](../resources/authenticationmethod.md). Optional.|
 |configurationId|String|A unique identifier used to manage and integrate external auth methods within Microsoft Entra ID. Required.|
 |displayName|String|Custom name given to the registered external authentication method. Required.|
-
-
 
 ## Response
 
