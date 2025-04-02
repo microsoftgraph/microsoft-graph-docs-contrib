@@ -12,6 +12,8 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph.teamsAdministration
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 ### accountType values 
 
 |Member|
