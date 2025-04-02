@@ -16,7 +16,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 Contains information of users who have accounts hosted on Microsoft Teams.
 
-Inherits from [entity](../resources/entity.md)
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
