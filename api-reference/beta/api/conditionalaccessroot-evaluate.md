@@ -72,7 +72,7 @@ If successful, this action returns a `200 OK` response code and a [whatIfAnalysi
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "conditionalaccessrootthis.evaluate"
+  "name": "conditionalaccessrootthis.evaluate_example1"
 }
 -->
 ``` http
@@ -270,7 +270,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "conditionalaccessrootthis.evaluate"
+  "name": "conditionalaccessrootthis.evaluate_example2"
 }
 -->
 ``` http
@@ -426,7 +426,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "conditionalaccessrootthis.evaluate"
+  "name": "conditionalaccessrootthis.evaluate_example3"
 }
 -->
 ``` http
@@ -721,7 +721,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "conditionalaccessrootthis.evaluate"
+  "name": "conditionalaccessrootthis.evaluate_example4"
 }
 -->
 ``` http
