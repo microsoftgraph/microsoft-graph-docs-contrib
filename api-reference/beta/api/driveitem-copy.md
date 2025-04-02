@@ -47,7 +47,7 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 | replace         | The preexisting file item is deleted and replaced with the new item when a conflict occurs. This option is only supported for file items. The new item has the same name as the old one. The old item's history is deleted.  |
 | rename          | Appends the lowest integer that guarantees uniqueness to the name of the new file or folder and completes the operation.  |
 
-If you specify `@microsoft.graph.conflictBehavior=replace` for a source folder item, this API returns a `202 Accepted` response. In this case, querying the monitoring url reports a `nameAlreadyExists` error. If you specify this parameter with the `childrenOnly` parameter, a nameAlreadyExists error occurs if there are any folder items in the source item's children.
+If you specify `@microsoft.graph.conflictBehavior=replace` for a source folder item, this API returns a `202 Accepted` response. In this case, querying the monitoring url reports a `nameAlreadyExists` error. If you specify this parameter with the `childrenOnly` parameter, a `nameAlreadyExists` error occurs if there are any folder items in the source item's children.
 
 >[!NOTE]
 >The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
