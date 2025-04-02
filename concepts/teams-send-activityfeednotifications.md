@@ -247,11 +247,18 @@ To add custom activity icons in activity feed notifications sent to a user, foll
             {
               "type": "announcementPosted",
               "description": "Announcement Created Activity",
-              "templateText": "{actor} posted an announcement",
+              "templateText": "Alex Wilbur posted an announcement",
               "allowedIconIds": [
-                "announcementCreated",
-                "announcementCreatedBlue",
-                "announcementCreatedRed"
+                "announcementCreated"
+              ]
+            },
+            {
+             "type": "reaction",
+             "description": "reaction Activity",
+             "templateText": "Adele Vance reacted to your post in channel",
+             "allowedIconIds" : [
+                "likeReaction",
+                "smileReaction"
               ]
             }
           ],
@@ -259,6 +266,14 @@ To add custom activity icons in activity feed notifications sent to a user, foll
             {
               "id": "announcementCreated",
               "iconFile": "announcement.png"
+            },
+            {
+              "id": "likeReaction",
+              "iconFile": "likeReaction.png"
+            },
+            {
+              "id": "smileReaction",
+              "iconFile": "smileReaction.png"
             }
           ]
         },
@@ -287,7 +302,7 @@ To add custom activity icons in activity feed notifications sent to a user, foll
     }
     ```
 
-For custom activity icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-icons). To try out custom activity icons in activity feed notifications in a sample Teams app, see [Placeholder link](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main).  
+For custom activity icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-icons). 
 
 ## Examples
 
