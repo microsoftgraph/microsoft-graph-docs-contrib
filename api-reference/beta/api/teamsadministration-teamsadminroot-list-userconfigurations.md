@@ -1,6 +1,6 @@
 ---
-title: "List Teams Users Configurations"
-description: "Get user configurations for all Teams users belonging to a tenant."
+title: "List userConfigurations"
+description: "Get user configurations for all Teams users who belong to a tenant."
 author: "praspatil05"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
-# List teamsUserConfiguration objects
+# List userConfigurations
 
 Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get user configurations for all Teams users belonging to a tenant.
+Get [user configurations](../resources/teamsadministration-teamsuserconfiguration.md) for all Teams users who belong to a tenant.
 
 ## Permissions
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/admin/teams/userConfigurations
 ```
-
 
 ### Response
 
