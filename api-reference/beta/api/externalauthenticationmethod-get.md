@@ -89,9 +89,9 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.externalAuthenticationMethod",
     "id": "78381c69-811f-51f6-66ec-c2c2aa0e2b46",
-    "createdDateTime": "String (timestamp)",
+    "createdDateTime": "2025-04-01T00:00:00Z",
     "configurationId": "String",
-    "displayName": "String"
+    "displayName": "Adatum"
   }
 }
 ```

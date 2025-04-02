@@ -76,7 +76,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.externalAuthenticationMethod",
   "configurationId": "String",
-  "displayName": "String"
+  "displayName": "Adatum"
 }
 ```
 
@@ -97,9 +97,9 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.externalAuthenticationMethod",
   "id": "78381c69-811f-51f6-66ec-c2c2aa0e2b46",
-  "createdDateTime": "String (timestamp)",
-  "configurationId": "String",
-  "displayName": "String"
+  "createdDateTime": "2025-04-02T16:01:39",
+  "configurationId": "26310fee-860b-4eab-8749-ab730dcf335e",
+  "displayName": "Adatum"
 }
 ```
 
