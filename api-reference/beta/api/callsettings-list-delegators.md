@@ -72,6 +72,7 @@ The following example shows how to get all delegators for the signed-in user (`m
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_delegationsettings_delegators"
@@ -80,6 +81,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/communications/callSettings/delegators
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-delegationsettings-delegators-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -138,6 +145,7 @@ The following example shows how to get all delegators who area able to make call
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_delegationsettings_delegators_filter_makecalls"
@@ -146,6 +154,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/communications/callSettings/delegators?filter=allowedActions/makeCalls eq true 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-delegationsettings-delegators-filter-makecalls-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
