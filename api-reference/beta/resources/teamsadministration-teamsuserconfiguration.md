@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The unique identifier (GUID) for a user in Microsoft Entra. Inherits from [entity](../resources/entity.md).|
 |isEnterpriseVoiceEnabled|Boolean|Indicates whether voice capability is enabled.|
 |modifiedDateTime|DateTimeOffset|The date and time when this object was last modified. The system updates the value each time the object is changed. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|telephoneNumbers|[microsoft.graph.teamsAdministration.assignedTelephoneNumber](../resources/teamsadministration-assignedtelephonenumber.md) collection|Includes both the telephone number and its corresponding assignment category. The assignment category can include values such as `primary`, `private`, and `alternate`.|
+|telephoneNumbers|[microsoft.graph.teamsAdministration.assignedTelephoneNumber](../resources/teamsadministration-assignedtelephonenumber.md) collection|Includes both the phone number and its corresponding assignment category. The assignment category can include values such as `primary`, `private`, and `alternate`.|
 |tenantId|String|The unique identifier of the tenant in Entra to which this user is assigned. |
 |userPrincipalName|String|The sign-in address of the user.|
 
