@@ -513,7 +513,7 @@ HTTP/1.1 204 No Content
 
 If you want to notify chat members with a customized icon instead of the default app icon, you can set the optional **iconId** property in the request body.
 
->**Note:** The **activityType** property in the manifest must contain the list of allowed icon IDs in order to use this parameter. The request validation fails if the app manifest is missing the customized list of icons. For more information, see [Teams app manifest](/microsoftteams/platform/overview).
+>**Note:** The **activityType** property in the manifest must contain the list of allowed icon IDs in order to use this parameter. The request validation fails if the app manifest is missing the customized list of icons. For more information, see [Teams app manifest](/microsoftteams/platform/resources/schema/manifest-schema).
 
 #### Request
 
