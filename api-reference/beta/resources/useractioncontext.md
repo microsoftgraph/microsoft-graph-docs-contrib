@@ -14,10 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the supported user action being performed by the authenticating identity
-
-
-Inherits from [signInContext](../resources/signincontext.md).
+Represents the supported user action being performed by the authenticating identity, as defined in [Conditional Access What If evaluation](../api/conditionalaccessroot-evaluate.md). Inherits from [signInContext](../resources/signincontext.md).
 
 
 ## Properties

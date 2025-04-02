@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents sign-in parameters of the identity that is authenticating
-
+Represents sign-in parameters of the authenticating identity as defined in [Conditional Access What If evaluation](../api/conditionalaccessroot-evaluate.md).
 
 ## Properties
 |Property|Type|Description|

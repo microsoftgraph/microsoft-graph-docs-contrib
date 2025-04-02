@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the service principal that is signing in. Inherits from [signInIdentity](../resources/signinidentity.md).
+Represents the service principal that is signing in, as defined in [Conditional Access What If evaluation](../api/conditionalaccessroot-evaluate.md). Inherits from [signInIdentity](../resources/signinidentity.md).
 
 
 ## Properties

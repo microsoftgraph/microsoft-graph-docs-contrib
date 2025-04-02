@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the authentication context protecting the data that the authenticating identity is attempting to access. Inherits from [signInContext](../resources/signincontext.md).
+Represents the authentication context protecting the data that the authenticating identity is attempting to access, as defined in [Conditional Access What If evaluation](../api/conditionalaccessroot-evaluate.md). Inherits from [signInContext](../resources/signincontext.md).
 
 
 ## Properties
