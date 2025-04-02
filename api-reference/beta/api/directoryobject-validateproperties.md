@@ -150,7 +150,10 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 422 
 Content-Type: application/json
@@ -191,7 +194,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
+  "suppressions": ["Error: directoryobjectvalidatepropertiesinvalidrequest:
+      Unable to locate the corresponding response for this method. Missing or incorrect code block annotation."
   ]
 }-->
 
