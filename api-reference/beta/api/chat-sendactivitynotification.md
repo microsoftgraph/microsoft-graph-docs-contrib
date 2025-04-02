@@ -512,7 +512,7 @@ HTTP/1.1 204 No Content
 ### Example 6: Notify the chat members about an event using a custom icon
 
 If you want to notify chat members with a customized icon instead of default app icon, you can set the optional `iconId` in the request body.
-**Note:** `activityType` in manifest must contain the allowedIcon Id's list, in order to use this parameter. The request validation will fail, if the app manifest is missng the customozed icons list. [Teams app manifest](/microsoftteams/platform/overview)
+**Note:** `activityType` in manifest must contain the allowedIcon Id's list, in order to use this parameter. The request validation will fail, if the app manifest is missng the customozed icons list. [Teams app manifest](/microsoftteams/platform/resources/schema/manifest-schema)
 
 #### Request
 
