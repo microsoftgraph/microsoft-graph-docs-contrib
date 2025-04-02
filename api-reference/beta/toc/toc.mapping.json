@@ -2896,6 +2896,18 @@
       ],
       "childNodes": [
         {
+          "name": "Administration",
+          "resources": [
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+          ],
+          "complexTypes": [
+            "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
+            "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
+            "microsoft.graph.teamsAdministration.policyAssignment",
+            "microsoft.graph.teamsAdministration.teamsAdminRoot"
+          ]
+        },
+        {
           "name": "AI interactions (preview)",
           "resources": [
             "aiInteractionHistory"
@@ -2909,12 +2921,6 @@
            "aiInteractionMentionedIdentitySet",
            "aiUser"
          ]
-        },
-        {
-          "name": "Administration",
-          "resources": [
-            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
-          ]
         },
         {
           "name": "Approvals",
