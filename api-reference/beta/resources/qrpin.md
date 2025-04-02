@@ -22,6 +22,7 @@ Represents the PIN for the user in a [QR code authentication method](../resource
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Reset PIN](../api/qrpin-update.md)|[qrPin](../resources/qrpin.md)|Reset a user's PIN by creating a new **qrPIN** object.|
+|[Update PIN](../api/qrpin-updatepin.md)|[qrPin](../resources/qrpin.md)|Update a user's PIN by creating a new **qrPIN** object.|
 
 ## Properties
 |Property|Type|Description|
