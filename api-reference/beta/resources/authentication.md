@@ -26,11 +26,8 @@ Inherits from [entity](entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/user-list-authentication.md)|[authentication](../resources/authentication.md) collection|Get a list of the authentication objects and their properties.|
-|[Create](../api/user-post-authentication.md)|[authentication](../resources/authentication.md)|Create a new authentication object.|
 |[Get](../api/authentication-get.md)|[authentication](../resources/authentication.md)|Get the authentication states for a user, such as their sign-in preferences and their MFA state.|
 |[Update](../api/authentication-update.md)|[authentication](../resources/authentication.md)|Update the authentication states for a user, such as their sign-in preferences and their MFA state.|
-|[Delete](../api/user-delete-authentication.md)|None|Delete an authentication object.|
 
 ## Properties
 
