@@ -1,20 +1,18 @@
 ---
 title: "Teams administration enum values"
-description: "Microsoft Graph teams administration enumeration values"
+description: "Microsoft Graph Teams administration enumeration values."
 author: "praspatil05"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
-doc_type: enumTypes
+doc_type: enumPageType
 ---
 
-# Microsoft Graph teams administration enumeration values
+# Teams administration enum values
 
 Namespace: microsoft.graph.teamsAdministration
 
 ### accountType values 
-
-
 
 |Member|
 |:---|
@@ -28,8 +26,6 @@ Namespace: microsoft.graph.teamsAdministration
 
 ### assignmentCategory values 
 
-
-
 |Member|
 |:---|
 |primary|
@@ -37,9 +33,7 @@ Namespace: microsoft.graph.teamsAdministration
 |alternate|
 |unknownFutureValue|
 
-
 ### assignmentType values 
-
 
 |Member|
 |:---|
