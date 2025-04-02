@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity that is signing in. This could be a user, an external user or a single tenant service principal.
-This is an abstract type.
-
+Represents the identity that is signing in. This could be a user, an external user or a single tenant service principal. This resource is an abstract type from which the following types derive:
+- [userSignIn](../resources/usersignin.md)
+- [servicePrincipalSignIn](../resources/serviceprincipalsignin.md)
 
 ## Properties
 None.

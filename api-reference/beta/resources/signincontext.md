@@ -18,9 +18,8 @@ Represents the context of the sign-in that's defined in the [Conditional Access 
 
 This resource is an abstract type from which the following types derive:
 - [applicationContext](../resources/applicationcontext.md)
-- another one
-- another one etc
-
+- [authContext](../resources/authcontext.md)
+- [userActionContext](../resources/useractioncontext.md)
 
 ## Properties
 None.
