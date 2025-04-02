@@ -1,6 +1,6 @@
 ---
 title: "effectivePolicyAssignment resource type"
-description: "Represents the effective policies associated with the User."
+description: "Represents the effective policies associated with a user."
 author: "praspatil05"
 ms.date: 03/19/2025
 ms.localizationpriority: medium
@@ -14,14 +14,13 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the effective policies associated with the User.
-
+Represents the effective policies associated with a user.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|policyAssignment|[microsoft.graph.teamsAdministration.policyAssignment](../resources/teamsadministration-policyassignment.md)|Represents details about the policy instance. Details include displayName, assignmentType, policyID, and groupId|
-|policyType|String|Represents the type of the assigned policy. For example: TeamsMeetingPolicy, TeamsCallingPolicy, etc.|
+|policyAssignment|[microsoft.graph.teamsAdministration.policyAssignment](../resources/teamsadministration-policyassignment.md)|Represents details about the policy instance, including **assignmentType**, **displayName**, **groupId**, and **policyID**.|
+|policyType|String|The type of the assigned policy; for example, `TeamsMeetingPolicy` and `TeamsCallingPolicy`.|
 
 ## Relationships
 None.
@@ -36,10 +35,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAdministration.effectivePolicyAssignment",
-  "policyType": "String",
-  "policyAssignment": {
-    "@odata.type": "microsoft.graph.teamsAdministration.policyAssignment"
-  }
+  "policyAssignment": {"@odata.type": "microsoft.graph.teamsAdministration.policyAssignment"},
+  "policyType": "String"
 }
 ```
 
