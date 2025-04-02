@@ -36,8 +36,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /me/authentication/qrCodePinMethod/pin/updatePin
-PATCH /users/{usersId}/authentication/qrCodePinMethod/pin/updatePin
+PATCH /me/authentication/qrcodepinmethod/pin/updatepin
+PATCH /users/{usersId}/authentication/qrcodepinmethod/pin/updatepin
 ```
 
 ## Request headers
