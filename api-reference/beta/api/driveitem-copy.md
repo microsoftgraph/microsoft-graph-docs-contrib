@@ -67,9 +67,7 @@ In the request body, provide a JSON object with the following parameters.
 >[!NOTE]
 >The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
 >
->For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites)
-
-> If you use the `@microsoft.graph.conflictBehavior` query parameter with the `childrenOnly` parameter, then every child in the operation will be subject to the `@microsoft.graph.conflictBehavior` specified.
+>For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites). If you use the `@microsoft.graph.conflictBehavior` query parameter with the `childrenOnly` parameter, then every child in the operation will be subject to the `@microsoft.graph.conflictBehavior` specified.
 
 
 ## Response
