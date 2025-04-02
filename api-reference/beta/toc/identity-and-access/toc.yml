@@ -2828,7 +2828,7 @@ items:
         href: ../../api/identityprovider-list-availableprovidertypes.md
     - name: OpenID Connect identity provider (deprecated)
       href: ../../resources/openidconnectprovider.md
-  - name: Microsoft Entra lifecycle announcements
+  - name: Microsoft Entra lifecycle announcements (deprecated)
     items:
     - name: Product changes
       items:
