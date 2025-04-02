@@ -1,18 +1,18 @@
 ---
 title: "platformCredentialAuthenticationMethod resource type"
-description: "A representation of a Platform Credential registered to a user. Platform Credential is a sign-in authentication method."
+description: "A representation of a Platform Credential instance registered to a user on macOS. Platform Credential is a sign-in authentication method."
 author: "ploegert"
-ms.date: 02/28/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 04/2/2025
 ---
 
 # platformCredentialAuthenticationMethod resource type
 
 Namespace: microsoft.graph
 
-Represents a platform credential instance registered to a user on macOS. Platform Credential is a sign-in authentication method for macOS devices.
+Represents a platform credential instance registered to a user on Mac OS. Platform Credential is a sign-in authentication method for Mac OS devices.
 
 This derived type inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
@@ -30,7 +30,7 @@ This derived type inherits from the [authenticationMethod](authenticationmethod.
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time that this Platform Credential Key was registered.|
 |displayName|String|The name of the device on which Platform Credential is registered.|
-|id|String|A unique identifier for this authentication method. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
+|id|String|A unique identifier for this authentication method. Inherited from [authenticationMethod](../resources/authenticationmethod.md)|
 |keyStrength|authenticationMethodKeyStrength|Key strength of this Platform Credential key. Possible values are: `normal`, `weak`, `unknown`.|
 |platform|authenticationMethodPlatform|Platform on which this Platform Credential key is present. Possible values are: `unknown`, `windows`, `macOS`,`iOS`, `android`, `linux`.|
 
@@ -56,7 +56,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.platformCredentialAuthenticationMethod",
   "id": "String (Identifier)",
   "displayName": "String",
-  "createdDateTime": "String",
+  "createdDateTime": "String (timestamp)",
   "keyStrength": {"@odata.type": "microsoft.graph.authenticationMethodKeyStrength"},
   "platform": {"@odata.type": "microsoft.graph.authenticationMethodPlatform"}
 }
