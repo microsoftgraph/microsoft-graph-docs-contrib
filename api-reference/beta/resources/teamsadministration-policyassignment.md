@@ -19,7 +19,7 @@ Represents the details of a policy instance, such as **displayName** and **group
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignmentType|microsoft.graph.teamsAdministration.assignmentType|The type of assignment (group for group-based, direct for user based). The possible values are: `direct`, `group`, `unknownFutureValue`.|
+|assignmentType|microsoft.graph.teamsAdministration.assignmentType|The type of assignment: `group` for group-based assignment, `direct` for user-based assignment. The possible values are: `direct`, `group`, `unknownFutureValue`.|
 |displayName|String|Represents the name of the policy.|
 |groupId|String|Represents the group identifier.|
 |policyId|String|Represents the unique identifier for the policy. |
