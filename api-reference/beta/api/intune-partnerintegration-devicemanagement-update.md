@@ -1,6 +1,6 @@
 ---
-title: "Get deviceManagement"
-description: "Read properties and relationships of the deviceManagement object."
+title: "Update deviceManagement"
+description: "Update the properties of a deviceManagement object."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 08/01/2024
 ---
 
-# Get deviceManagement
+# Update deviceManagement
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
+Update the properties of a [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -35,11 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement
+PATCH /deviceManagement
 ```
-
-## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -48,17 +45,31 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object.
+
+The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Key of the entity.|
+
+
 
 ## Response
-If successful, this method returns a `200 OK` response code and [deviceManagement](../resources/intune-shared-devicemanagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement
+PATCH https://graph.microsoft.com/beta/deviceManagement
+Content-type: application/json
+Content-length: 58
+
+{
+  "@odata.type": "#microsoft.graph.deviceManagement"
+}
 ```
 
 ### Response
@@ -66,11 +77,10 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 79
+Content-Length: 107
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.deviceManagement"
-  }
+  "@odata.type": "#microsoft.graph.deviceManagement",
+  "id": "0b283420-3420-0b28-2034-280b2034280b"
 }
 ```
