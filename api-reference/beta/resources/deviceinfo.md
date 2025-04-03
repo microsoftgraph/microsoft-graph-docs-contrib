@@ -1,10 +1,10 @@
 ---
 title: "deviceInfo resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Information about the device used for the sign-in as defined in the Conditional Access What If evaluation."
+author: "kvenkit"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,41 +14,42 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines details of the device that is used for signing in, as defined in [Conditional Access What If evaluation](../api/conditionalaccessroot-evaluate.md). 
+
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceId|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|enrollmentProfileName|String|**TODO: Add Description**|
-|extensionAttribute1|String|**TODO: Add Description**|
-|extensionAttribute10|String|**TODO: Add Description**|
-|extensionAttribute11|String|**TODO: Add Description**|
-|extensionAttribute12|String|**TODO: Add Description**|
-|extensionAttribute13|String|**TODO: Add Description**|
-|extensionAttribute14|String|**TODO: Add Description**|
-|extensionAttribute15|String|**TODO: Add Description**|
-|extensionAttribute2|String|**TODO: Add Description**|
-|extensionAttribute3|String|**TODO: Add Description**|
-|extensionAttribute4|String|**TODO: Add Description**|
-|extensionAttribute5|String|**TODO: Add Description**|
-|extensionAttribute6|String|**TODO: Add Description**|
-|extensionAttribute7|String|**TODO: Add Description**|
-|extensionAttribute8|String|**TODO: Add Description**|
-|extensionAttribute9|String|**TODO: Add Description**|
-|isCompliant|Boolean|**TODO: Add Description**|
-|manufacturer|String|**TODO: Add Description**|
-|mdmAppId|String|**TODO: Add Description**|
-|model|String|**TODO: Add Description**|
-|operatingSystem|String|**TODO: Add Description**|
-|operatingSystemVersion|String|**TODO: Add Description**|
-|ownership|String|**TODO: Add Description**|
-|physicalIds|String collection|**TODO: Add Description**|
-|profileType|String|**TODO: Add Description**|
-|systemLabels|String collection|**TODO: Add Description**|
-|trustType|String|**TODO: Add Description**|
+|deviceId|String|Unique identifier set by Azure Device Registration Service at the time of registration.|
+|displayName|String|The display name for the device.|
+|enrollmentProfileName|String|Enrollment profile applied to the device.|
+|extensionAttribute1|String|Extension attribute.|
+|extensionAttribute10|String|Extension attribute.|
+|extensionAttribute11|String|Extension attribute.|
+|extensionAttribute12|String|Extension attribute.|
+|extensionAttribute13|String|Extension attribute.|
+|extensionAttribute14|String|Extension attribute.|
+|extensionAttribute15|String|Extension attribute.|
+|extensionAttribute2|String|Extension attribute.|
+|extensionAttribute3|String|Extension attribute.|
+|extensionAttribute4|String|Extension attribute.|
+|extensionAttribute5|String|Extension attribute.|
+|extensionAttribute6|String|Extension attribute.|
+|extensionAttribute7|String|Extension attribute.|
+|extensionAttribute8|String|Extension attribute.|
+|extensionAttribute9|String|Extension attribute.|
+|isCompliant|Boolean|Indicates the device compliance status with Mobile Management Device (MDM) policies.|
+|manufacturer|String|Manufacturer of the device.|
+|mdmAppId|String|Application identifier used to register device into MDM.|
+|model|String|Model of the device.|
+|operatingSystem|String|The type of operating system on the device.|
+|operatingSystemVersion|String|The version of the operating system on the device.|
+|ownership|String|Ownership of the device. This property is set by Intune.|
+|physicalIds|String collection|A collection of physical identifiers for the device. |
+|profileType|String|The profile type of the device.|
+|systemLabels|String collection|List of labels applied to the device by the system.|
+|trustType|String|Type of trust for the joined device.|
 
 ## Relationships
 None.

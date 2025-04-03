@@ -1,10 +1,10 @@
 ---
 title: "authenticationFlow resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Authentication flow used during the sign-in as defined in the Conditional Access What If evaluation."
+author: "kvenkit"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Authentication flow used during the sign-in, as defined in [Conditional Access What If evaluation](../api/conditionalaccessroot-evaluate.md). Contains properties for deviceCodeFlow and authenticationTransfer for admins to leverage when creating policies.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|transferMethod|conditionalAccessTransferMethods|**TODO: Add Description**.The possible values are: `none`, `deviceCodeFlow`, `authenticationTransfer`, `unknownFutureValue`.|
+|transferMethod|conditionalAccessTransferMethods|Represents the transfer methods in scope for the policy. The possible values are: `none`, `deviceCodeFlow`, `authenticationTransfer`, `unknownFutureValue`.|
 
 ## Relationships
 None.
