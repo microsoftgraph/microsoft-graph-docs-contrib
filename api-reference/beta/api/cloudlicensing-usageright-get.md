@@ -42,8 +42,7 @@ Permissions to get a **usageRight** for a group:
 GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 ```
 
-<!-- { "blockType": "permissions", "name": "cloudlicensing_usageright_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-usageright-get-permissions.md)]
+<!-- { "blockType": "permissions", "name": "cloudlicensing_usageright_get", "requestUrls": "GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}" } -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|Group-UsageRight.Read.All|Directory.Read.All, Directory.ReadWrite.All, Group-CloudLicensing.Read, Group-CloudLicensing.Read.All, Group.Read.All, Group.ReadWrite.All, User.Read.All, User.ReadWrite.All|
