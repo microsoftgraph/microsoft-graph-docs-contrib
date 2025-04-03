@@ -1,17 +1,17 @@
 ---
 title: "Microsoft 365 group behaviors and provisioning options"
-description: "Configure behaviors and resources to provision when creating a Microsoft 365 group using the Microsoft Graph groups API."
+description: "Learn how to configure behaviors and resources when creating a Microsoft 365 group using the Microsoft Graph groups API."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.topic: concept-article
 ms.subservice: entra-groups
 ms.localizationpriority: high
-ms.date: 03/07/2024
+ms.date: 03/07/2025
 #Customer intent: As a developer, I want to learn what group behaviors and resources can be provisioned or configured for Microsoft 365 groups.
 ---
 
-# Microsoft 365 group behaviors and provisioning options
+# Microsoft 365 Group behaviors and provisioning options
 
 On the [group](/graph/api/resources/group) resource in Microsoft Graph, you can use the **resourceBehaviorOptions** property to set specific group behaviors when creating a Microsoft 365 group. The **resourceProvisioningOptions** property on the other hand indicates the specific resources provisioned for the group.
 
@@ -32,10 +32,10 @@ On the [group](/graph/api/resources/group) resource in Microsoft Graph, you can 
 
 ## Resource provisioning options
 
-**resourceProvisioningOptions** is a string collection that specifies the resources that are associated with the Microsoft 365 group. 
+**resourceProvisioningOptions** is a string collection that specifies the resources associated with the Microsoft 365 group.
 
 > [!CAUTION]
-> We recommend that you avoid configuring the **resourceProvisioningOptions** property during group creation or update and instead, let the system manage the property.
+> Avoid configuring the **resourceProvisioningOptions** property during group creation or update. Let the system manage the property.
 
 | Supported values for resourceProvisioningOptions | Description |
 |:-|:-|

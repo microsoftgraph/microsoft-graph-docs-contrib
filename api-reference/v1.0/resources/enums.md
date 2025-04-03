@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 11/21/2024
+ms.date: 03/10/2025
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
@@ -734,6 +734,14 @@ Namespace: microsoft.graph
 | policyOID |
 | unknownFutureValue |
 
+### x509CertificateCRLValidationConfigurationState values
+
+| Member |
+| ---- |
+| disabled |
+| enabled |
+| unknownFutureValue |
+
 ### attestationLevel values
 
 | Member |
@@ -1192,6 +1200,7 @@ Possible types of Windows settings.
 | openShiftRequest |
 | offerShiftRequest |
 | unknownFutureValue |
+| timeCard |
 | timeOffReason |
 | timeOff |
 | timeOffRequest |
@@ -3431,4 +3440,22 @@ Possible values for user account types (group membership), per Windows definitio
 |none|
 |deviceCodeFlow|
 |authenticationTransfer|
+|unknownFutureValue|
+
+### confirmedBy values 
+
+|Member|
+|:---|
+|none|
+|user|
+|manager|
+|unknownFutureValue|
+
+### timeCardState values 
+
+|Member|
+|:---|
+|clockedIn|
+|onBreak|
+|clockedOut|
 |unknownFutureValue|

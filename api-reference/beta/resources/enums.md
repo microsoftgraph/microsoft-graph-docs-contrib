@@ -712,6 +712,23 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | authenticationTransfer |
 | nativeAuth |
+| implicitAccessTokenAndGetResponseMode |
+| implicitIdTokenAndGetResponseMode |
+| implicitAccessTokenAndPostResponseMode |
+| implicitIdTokenAndPostResponseMode |
+| authorizationCodeWithoutPkce |
+| authorizationCodeWithPkce |
+| clientCredentials |
+| refreshTokenGrant |
+| encryptedAuthorizeResponse |
+| directUserGrant |
+| kerberos |
+| prtGrant |
+| seamlessSso |
+| prtBrokerBased |
+| prtNonBrokerBased |
+| onBehalfOf |
+| samlOnBehalfOf |
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
@@ -1853,6 +1870,14 @@ Namespace: microsoft.graph
 | enabled |
 | unknownFutureValue |
 
+### x509CertificateCRLValidationConfigurationState values
+
+| Member |
+| ---- |
+| disabled |
+| enabled |
+| unknownFutureValue |
+
 ### anniversaryType values
 
 | Member |
@@ -2149,31 +2174,6 @@ Namespace: microsoft.graph
 | lightBrown  | 7     |
 | lightRed    | 8     |
 | maxColor    | 9     |
-
-### educationSynchronizationProfileState values
-
-| Member             | Value |
-| ------------------ | ----- |
-| deleting           | 2     |
-| deletionFailed     | 3     |
-| provisioningFailed | 5     |
-| provisioned        | 6     |
-| provisioning       | 7     |
-| unknownFutureValue | 8     |
-
-### educationSynchronizationStatus values
-
-| Member |
-| ------------------ |
-| paused |
-| inProgress |
-| success |
-| error |
-| validationError |
-| quarantined |
-| unknownFutureValue |
-| extracting |
-| validating |
 
 ### educationExternalSource values
 
@@ -5010,13 +5010,6 @@ Possible values for user account types (group membership), per Windows definitio
 |completedWithErrors|
 |unknownFutureValue|
 
-### cloudPCPerformanceReportName values
-
-| Member                 |
-| ---------------------- |
-| performanceTrendReport | 
-| unknownFutureValue     |
-
 ### cloudPCInaccessibleReportName values
 
 | Member                         |
@@ -5024,6 +5017,7 @@ Possible values for user account types (group membership), per Windows definitio
 | inaccessibleCloudPcReports     |
 | inaccessibleCloudPcTrendReport |
 | unknownFutureValue             |
+| regionalInaccessibleCloudPcTrendReport |
 
 ### nonAdminSetting values
 
@@ -5119,6 +5113,15 @@ Possible values for user account types (group membership), per Windows definitio
 |bulk|
 |unknownFutureValue|
 
+### cloudPcPolicyApplyActionStatus values
+
+|Member|
+|:---|
+|processing|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
 ### mailboxType values 
 
 |Member|
@@ -5137,4 +5140,23 @@ Possible values for user account types (group membership), per Windows definitio
 |tls_client_auth_san_uri|
 |tls_client_auth_san_ip|
 |tls_client_auth_san_email|
+|unknownFutureValue|
+
+### mailFolderOperationStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### protectionSource values 
+
+|Member|
+|:---|
+|none|
+|manual|
+|dynamicRule|
 |unknownFutureValue|

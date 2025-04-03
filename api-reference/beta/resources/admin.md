@@ -3,7 +3,7 @@ title: "admin resource type"
 description: "Represents an entity that acts as a container for administrator functionality."
 author: "angelgolfer-ms"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
 ms.date: 10/21/2024
 ---
@@ -26,6 +26,7 @@ Represents an entity that acts as a container for administrator functionality.
 |:---|:---|:---|
 | edge | [edge](edge.md) | A container for Microsoft Edge resources. Read-only. |
 | entra | [entra](entra.md) | A container for Microsoft Entra resources. Read-only. |
+| exchange | [exchangeAdmin](../resources/exchangeadmin.md) |A container for the Exchange admin functionality. Read-only.|
 | microsoft365Apps |[adminMicrosoft365Apps](../resources/adminmicrosoft365apps.md)|A container for the Microsoft 365 apps admin functionality.|
 | people | [peopleAdminSettings](../resources/peopleadminsettings.md) | Represents a setting to control people-related admin settings in the tenant. |
 | reportSettings |[microsoft.graph.adminReportSettings](../resources/adminreportsettings.md)|A container for administrative resources to manage reports.|

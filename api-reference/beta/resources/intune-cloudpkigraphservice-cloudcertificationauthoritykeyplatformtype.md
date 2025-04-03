@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
-ms.date: 10/15/2024
+ms.date: 08/01/2024
 ---
 
 # cloudCertificationAuthorityKeyPlatformType enum type
@@ -21,7 +21,7 @@ Enum type of possible key platforms used by the certification authority.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Default. The key platform type is unknown or invalid.|
-|software|1|The certification authority keys are stored in software.|
-|hardwareSecurityModule|2|The certification authority keys are stored in a hardware security module.|
-|unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
+|unknown|0||
+|software|1||
+|hardwareSecurityModule|2||
+|unknownFutureValue|3||

@@ -276,32 +276,36 @@ items:
       href: ../../resources/cloudpcreports.md
     - name: Get action status reports
       href: ../../api/cloudpcreports-getactionstatusreports.md
-    - name: Get Cloud PC performance report
-      href: ../../api/cloudpcreports-getcloudpcperformancereport.md
     - name: Get bulk action status reports
       href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
     - name: Get Cloud PC recommendation reports
       href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
+    - name: Get Cloud PC troubleshooting reports
+      href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
     - name: Get frontline report
       href: ../../api/cloudpcreports-getfrontlinereport.md
     - name: Get inaccessible Cloud PC reports
       href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
     - name: Get raw remote connection reports
       href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
-    - name: Get real time remote connection agency reports
+    - name: Get real-time remote connection latency reports
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
     - name: Get real-time remote connection status reports
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-    - name: Get remove connection hitorical reports
+    - name: Get remote connection historical reports
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Retrieve Cloud PC tenant metrics report
+      href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
     - name: Retrieve cross-region disaster recovery report
       href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
     - name: Retrieve connection quality reports
       href: ../../api/cloudpcreports-retrieveconnectionqualityreports.md
     - name: Get daily aggregated remote connection reports
       href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+    - name: Get Cloud PC performance report (deprecated)
+      href: ../../api/cloudpcreports-getcloudpcperformancereport.md
     - name: Get connection quality reports (deprecated)
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: Get shared use license usage report (deprecated)
@@ -324,8 +328,6 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
-    - name: Get
-      href: ../../api/cloudpcsnapshot-get.md
     - name: List (deprecated)
       href: ../../api/virtualendpoint-list-snapshots.md
   - name: Cloud PC supported region
@@ -501,6 +503,8 @@ items:
       href: ../../resources/cloudpcpartneragentinstallresult.md
     - name: Cloud PC provisioning policy assignment
       href: ../../resources/cloudpcprovisioningpolicyassignment.md
+    - name: Cloud PC provisioning policy autopatch
+      href: ../../resources/cloudpcprovisioningpolicyautopatch.md
     - name: Cloud PC remote action capability
       href: ../../resources/cloudpcremoteactioncapability.md
     - name: Cloud PC resize validation result
@@ -1771,6 +1775,8 @@ items:
         href: ../../api/intune-apps-win32lobapp-delete.md
       - name: Update win32LobApp
         href: ../../api/intune-apps-win32lobapp-update.md
+      - name: enableApplicableArchitectures action
+        href: ../../api/intune-apps-win32lobapp-enableapplicablearchitectures.md
     - name: Windows AppX
       items:
       - name: Windows AppX
@@ -6392,7 +6398,7 @@ items:
     - name: Managed device
       items:
       - name: Managed device
-        href: ../../resources/intune-devices-manageddevice.md
+        href: ../../resources/intune-shared-manageddevice.md
       - name: Get managedDevice
         href: ../../api/intune-devices-manageddevice-get.md
       - name: Update managedDevice

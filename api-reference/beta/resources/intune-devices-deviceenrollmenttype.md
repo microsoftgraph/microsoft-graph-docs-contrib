@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
-ms.date: 09/12/2024
+ms.date: 08/01/2024
 ---
 
 # deviceEnrollmentType enum type
@@ -40,10 +40,10 @@ Possible ways of adding a mobile device to management.
 |androidEnterpriseCorporateWorkProfile|17|Android Enterprise Corporate Work Profile|
 |androidAOSPUserOwnedDeviceEnrollment|18|Indicates the device enrollment is for android device owned by/associated with user using Android Open Source Project (AOSP) on a non-Google mobile services.|
 |androidAOSPUserlessDeviceEnrollment|19|Indicates the device enrollment is for user less android device using Android Open Source Project (AOSP) on a non-Google mobile services.|
-|appleACMEBasicBYOD|20|Apple ACME BYOD enrollment|
-|appleACMEDEPUserless|21|Apple ACME DEP Userless enrollment|
-|appleACMEDEPUDACompanyPortal|22|Apple ACME DEP UDA enrollment at CP|
-|appleACMEDEPUDASetupAsstLegacy|23|Apple ACME DEP UDA enrollment at Setup Asst (legacy)|
-|appleACMEDEPUDAModernAuth|24|Apple ACME DEP UDA enrollment at Setup Asst (Modern Auth)|
+
+
+
+
+
 |appleAccountDrivenUserEnrollment|25|Indicates the device is enrolled via Apple Account Driven User Enrollment, a form of enrollment where the user enrolls via iOS Settings without using the iOS Company Portal. It results in an enrollment with a new partition for managed apps and data and which supports a limited set of management capabilities.|
 |unknownFutureValue|26|Evolvable enum member|

@@ -61,8 +61,12 @@ items:
       href: ../../api/protectionrulebase-post.md
     - name: Get
       href: ../../api/protectionrulebase-get.md
+    - name: Update
+      href: ../../api/protectionrulebase-update.md
     - name: Delete
       href: ../../api/protectionrulebase-delete.md
+    - name: Delete and unprotect
+      href: ../../api/protectionrulebase-deleteandunprotect.md
     - name: Run
       href: ../../api/protectionrulebase-run.md
   - name: Mailbox protection rule
@@ -75,8 +79,12 @@ items:
       href: ../../api/protectionrulebase-post.md
     - name: Get
       href: ../../api/protectionrulebase-get.md
+    - name: Update
+      href: ../../api/protectionrulebase-update.md
     - name: Delete
       href: ../../api/protectionrulebase-delete.md
+    - name: Delete and unprotect
+      href: ../../api/protectionrulebase-deleteandunprotect.md
     - name: Run
       href: ../../api/protectionrulebase-run.md
   - name: Site protection rule
@@ -117,10 +125,10 @@ items:
       href: ../../resources/siteprotectionunit.md
     - name: List
       href: ../../api/backuprestoreroot-list-siteprotectionunits.md
-- name: Protection units bulk addition job
-  href: ../../resources/protectionunitsbulkjobbase.md
 - name: Protection units bulk job
   items:
+  - name: Protection units bulk addition job
+    href: ../../resources/protectionunitsbulkjobbase.md
   - name: Drive protection units bulk addition job
     items:
     - name: Drive protection units bulk addition job

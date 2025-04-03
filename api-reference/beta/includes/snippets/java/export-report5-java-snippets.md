@@ -13,6 +13,10 @@ exportReportPostRequestBody.setDisplayName("Export 5");
 exportReportPostRequestBody.setExportCriteria(EnumSet.of(com.microsoft.graph.beta.models.security.ExportCriteria.PartiallyIndexed));
 exportReportPostRequestBody.setExportLocation(EnumSet.of(com.microsoft.graph.beta.models.security.ExportLocation.ResponsiveLocations));
 exportReportPostRequestBody.setAdditionalOptions(EnumSet.of(com.microsoft.graph.beta.models.security.AdditionalOptions.CloudAttachments));
+exportReportPostRequestBody.setCloudAttachmentVersion(com.microsoft.graph.beta.models.security.CloudAttachmentVersion.All);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("doucmentVersion", "recent100");
+exportReportPostRequestBody.setAdditionalData(additionalData);
 graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").searches().byEdiscoverySearchId("{ediscoverySearch-id}").microsoftGraphSecurityExportReport().post(exportReportPostRequestBody);
 
 

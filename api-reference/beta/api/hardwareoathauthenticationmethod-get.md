@@ -43,6 +43,8 @@ Get details of a hardware OATH authentication method assigned to you.
 GET /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Get details of a hardware OATH authentication method assigned to another user.
 <!-- {
   "blockType": "ignored"
@@ -107,6 +109,10 @@ GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hard
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-hardwareoathauthenticationmethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-hardwareoathauthenticationmethod-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

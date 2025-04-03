@@ -45,7 +45,7 @@ POST /identityGovernance/entitlementManagement/assignmentRequests
 
 In the request body, supply a JSON representation of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-For an administrator to request to create an assignment for a user, the value of the **requestType** property is `adminAdd`, and the **assignment** property contains the `targetId` of the user being assigned, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).
+For an administrator to request to create an assignment for a user, the value of the **requestType** property is `adminAdd`, and the **assignment** property contains the **targetId** with the ID of the user being assigned, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).
 
 For an administrator to request to update an assignment (for example to extend the assignment or update answers to questions), the value of the **requestType** property is `adminUpdate`, and the **assignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being updated.
 
@@ -491,12 +491,16 @@ Content-type: application/json
 
 {
   "requestType": "AdminAdd",
-  "accessPackageAssignment":{
+  "assignment":{
      "target": {
         "email": "user@contoso.com"
      },
-     "assignmentPolicyId":"2264bf65-76ba-417b-a27d-54d291f0cbc8",
-     "accessPackageId":"a914b616-e04e-476b-aa37-91038f0b165b"
+     "assignmentPolicy":{
+        "id": "11114b50-0a08-4f96-83e9-1d714aa2cd79"
+     },
+     "accessPackage": {
+        "id": "11115C72-0612-4C43-A044-FC0A4E71A4C5"
+     }
   }
 }
 ```

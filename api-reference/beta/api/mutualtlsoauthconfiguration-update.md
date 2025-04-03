@@ -111,6 +111,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-mutualtlsoauthconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-mutualtlsoauthconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-mutualtlsoauthconfiguration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -155,18 +159,18 @@ This example assumes that the original object stored has the following value. No
   "certificateAuthorities": [
     {
       "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://acme.com/root.crl",
+      "certificateRevocationListUrl": "http://LakeshoreRetail.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
       "certificate": "joGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "acme Inc",
+      "issuer": "Lakeshore Retail",
       "issuerSubjectkeyIdentifier": "SKI"
     },
     {
       "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://digicert.com/root.crl",
+      "certificateRevocationListUrl": "http://LakeshoreRetail.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
       "certificate": "koGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "Digicert Inc",
+      "issuer": "Lakeshore Retail",
       "issuerSubjectkeyIdentifier": "SKI"
     }
   ]
@@ -191,10 +195,10 @@ Content-Type: application/json
   "certificateAuthorities": [
     {
       "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://acme.com/root.crl",
+      "certificateRevocationListUrl": "http://LakeshoreRetail.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
       "certificate": "Binary",
-      "issuer": "acme Inc",
+      "issuer": "Lakeshore Retail",
       "issuerSubjectkeyIdentifier": "SKI"
     }
   ]
@@ -225,6 +229,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-mutualtlsoauthconfiguration-remove-certificate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-mutualtlsoauthconfiguration-remove-certificate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-mutualtlsoauthconfiguration-remove-certificate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -253,10 +261,10 @@ Location: "https://graph.microsoft.com/beta/directory/certificateAuthorities/mut
   "certificateAuthorities": [
     {
       "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://acme.com/root.crl",
+      "certificateRevocationListUrl": "http://LakeshoreRetail.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
       "certificate": "Binary",
-      "issuer": "acme Inc",
+      "issuer": "Lakeshore Retail",
       "issuerSubjectkeyIdentifier": "SKI"
     }
   ]
