@@ -35,7 +35,7 @@ Microsoft 365 Copilot can become personalized to each user, aiding them in their
 
 ## Communications Recaps
 
-Provide a personal communication memory bank enabling Microsoft 365 Copilot to have access to the knowledge trapped in your day-to-day communications. Microsoft 365 Copilot captures these recaps once every 24 hours and groups them by person who communicated them. Microsoft 365 Copilot search, creation of content, and summarization are then further personalized using these recaps to provide more relevant results just for you. For examples and details, see the Microsoft Learn article [here](/concepts/communications-recaps-details.md).
+Provide a personal communication memory bank enabling Microsoft 365 Copilot to have access to the knowledge trapped in your day-to-day communications. Microsoft 365 Copilot captures these recaps once every 24 hours and groups them by person who communicated them. Microsoft 365 Copilot search, creation of content, and summarization are then further personalized using these recaps to provide more relevant results just for you. For examples and details, see the Microsoft Learn article [here](communications-recaps-details.md).
 
 ## Conversation Recaps
 
@@ -53,9 +53,7 @@ requirements, dependencies, limitations, and overhead.
 
 ## Related content
 
-- [Communication Recaps](/concepts/communications-recaps-details.md)
-- [Related article title](link.md)
-- [Related article title](link.md)
+- [Communication Recaps](communications-recaps-details.md)
 
 <!-- Optional: Related content - H2
 

@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 Copilot Communications Recaps | Microsoft Learn."
-description: "[Article description]."
+description: "Looking to learn about Communications Recaps? Learn what it is, how it benefits you, and how to control it with Microsoft Learn"
 author: "Ross-GH"
 ms.author: "rossav"
 ms.service: "microsoft-365-copilot"
@@ -10,16 +10,19 @@ ms.date: 04/03/2025
 #customer intent: As an M365 user, I want understand Communications Recaps, so that I can understand the value, and effectively manage my information exposure.
 
 ---
-> [!NOTE]
-> Whether this feature is enabled or disabled doesn't impact access control (_privacy & security assurances_) of your private communications.
 
 # Get started with Communications Recaps
 
 Communications Recaps provide a personal communication memory bank for Microsoft 365 Copilot to  access the knowledge trapped in our day-to-day communications. Microsoft 365 Copilot captures these recaps once every 24 hours and groups them by person who communicated them. Microsoft 365 Copilot search, creation of content, and summarization are then further personalized using these recaps to provide more relevant results just for you.
 
+> [!NOTE]
+> Whether this feature is enabled or disabled doesn't impact access control (_privacy & security assurances_) of your private communications.
+
 ## Prerequisites
 
-The Enhanced Personalization control must be enabled for you. Communications Recaps are then produced as this provides Microsoft permission to process your private data for enhanced personalization. They remain private to you, and this permission is revocable, but disables this feature and deletes your Communications Recaps generated. See [Microsoft 365 Copilot Enhanced Personalization Control](/concepts/control-enhanced-personalization-privacy.md). 
+The Enhanced Personalization control must be enabled for you. Communications Recaps are then produced as this provides Microsoft permission to process your private data for enhanced personalization. They remain private to you, and this permission is revocable, but disables this feature and deletes your Communications Recaps generated. See [Microsoft 365 Copilot Enhanced Personalization Control](control-enhanced-personalization-privacy.md). 
+
+
 
 <!--Optional: Prerequisites - H2
 

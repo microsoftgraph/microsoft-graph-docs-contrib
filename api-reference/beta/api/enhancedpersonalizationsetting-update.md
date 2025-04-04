@@ -1,6 +1,6 @@
 ---
 title: "Update enhancedPersonalizationSetting"
-description: "Update the properties of an enhancedPersonalizationSetting object."
+description: "Learn how to Update the properties of an enhancedPersonalizationSetting object with Microsoft Graph"
 author: "Ross-GH"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
@@ -48,14 +48,10 @@ PATCH /copilot/settings/people/enhancedPersonalization
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean|If true, enables the Enhanced Personalization control and therefore related features as defined [here](/concepts/control-enhanced-personalization-privacy.md) Required.|
+|isEnabledInOrganization|Boolean|If true, enables the Enhanced Personalization control and therefore related features as defined [here](/../../concepts/control-enhanced-personalization-privacy.md) Required.|
 |disabledForGroup|String|The ID of a Microsoft Entra group to which the value is used to disable the control for populated users. Optional.|
-
-
 
 ## Response
 
@@ -82,8 +78,7 @@ Content-Type: application/json
 }
 ```
 
-
-### Response
+### Response body
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -98,9 +93,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.enhancedPersonalizationSetting",
-  "id": "51fa8563-8080-0196-2a0e-379155e1f134",
   "isEnabledInOrganization": "Boolean",
   "disabledForGroup": "String"
 }
 ```
-
