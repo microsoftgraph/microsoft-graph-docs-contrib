@@ -29,13 +29,13 @@ https://aka.ms/patterns-feedback
 
 # Microsoft 365 Copilot's Use of the Enhanced Personalization Control
 
-Microsoft 365 Copilot can become personalized to each user, aiding them in their day-to-day tasks by understanding their work knowledge on an individual level. Tenant administrators such as the Global Administrator role, and users through requests to their tenant administrators manage this through the Enhanced Personalization control. Reading this overview enables you to  understand how Microsoft 365 Copilot achieves greater personalization through various features when this is enabled. How your privacy is maintained, and how to control the use of Enhanced Personalization for Microsoft 365 Copilot.
+Microsoft 365 Copilot can become personalized to each user, aiding them in their day-to-day tasks by understanding their work knowledge on an individual level. Tenant administrators such as the Global Administrator role, and users through requests to their tenant administrators use the Enhanced Personalization control to manage this personalization. Reading this overview enables you to understand how Microsoft 365 Copilot achieves greater personalization through various features when Enhanced Personalization is enabled. How your privacy is maintained, and how to control the use of Enhanced Personalization for Microsoft 365 Copilot.
 
 ## Learn what uses the Enhanced Personalization Control
 
 ## Communications Recaps
 
-Provide a personal communication memory bank enabling Microsoft 365 Copilot to have access to the knowledge trapped in your day-to-day communications. Microsoft 365 Copilot captures these recaps once every 24 hours and groups them by person who communicated them. Microsoft 365 Copilot search, creation of content, and summarization are then further personalized using these recaps to provide more relevant results just for you. For examples and details see the Microsoft Learn article [here](/concepts/communications-recaps-details.md).
+Provide a personal communication memory bank enabling Microsoft 365 Copilot to have access to the knowledge trapped in your day-to-day communications. Microsoft 365 Copilot captures these recaps once every 24 hours and groups them by person who communicated them. Microsoft 365 Copilot search, creation of content, and summarization are then further personalized using these recaps to provide more relevant results just for you. For examples and details, see the Microsoft Learn article [here](/concepts/communications-recaps-details.md).
 
 ## Conversation Recaps
 
