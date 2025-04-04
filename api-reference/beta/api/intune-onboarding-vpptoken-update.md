@@ -69,6 +69,7 @@ The following table shows the properties that are required when you create the [
 |locationName|String|Token location returned from Apple VPP.|
 |claimTokenManagementFromExternalMdm|Boolean|Admin consent to allow claiming token management from external MDM.|
 |roleScopeTagIds|String collection|Role Scope Tags IDs assigned to this entity.|
+|lastAppCount|Int32|The number of apps under the Apple Volume Purchase Program Token since the last token sync.|
 
 
 
@@ -82,7 +83,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenId}
 Content-type: application/json
-Content-length: 1002
+Content-length: 1025
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -111,7 +112,8 @@ Content-length: 1002
   "claimTokenManagementFromExternalMdm": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "lastAppCount": 12
 }
 ```
 
@@ -120,7 +122,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1115
+Content-Length: 1138
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -151,6 +153,7 @@ Content-Length: 1115
   "claimTokenManagementFromExternalMdm": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "lastAppCount": 12
 }
 ```

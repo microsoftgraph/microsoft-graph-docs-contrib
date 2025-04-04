@@ -31,6 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/ownedDevices
 GET /users/{id | userPrincipalName}/ownedDevices
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Optional query parameters
 This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. For more information on properties that support query parameters, see the [device resource type](../resources/device.md#properties).
 

@@ -2,7 +2,7 @@
 title: "Microsoft Entra authentication methods API overview"
 description: "Authentication methods are the ways that users authenticate in Microsoft Entra ID."
 ms.localizationpriority: medium
-ms.custom: has-azure-ad-ps-ref
+ms.custom: no-azure-ad-ps-ref
 author: FaithOmbongi
 ms.reviewer: julija.pettere, intelligentaccesspm
 ms.subservice: "entra-sign-in"
@@ -51,7 +51,7 @@ The following authentication methods are not yet supported in Microsoft Graph v1
 
 |Authentication method       | Description |Examples     |
 |:---------------------------|:------------|:------------|
-|Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method. <br/> **NOTE:** Managing the details of the default method is currently supported only through the MSOL `Get-MsolUser` and `Set-MsolUser` cmdlets, using the **StrongAuthenticationMethods** property. |
+|Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method. |
 |Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
 |Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
 |Authentication states|Manage a user's sign-in preferences and per-user MFA|See or set the MFA state for a user. See or set the system-preferred multifactor authentication (MFA) setting.|

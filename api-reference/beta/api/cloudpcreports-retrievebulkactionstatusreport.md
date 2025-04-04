@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the bulk remote action status report, including data such as the bulk action ID, bulk action display name, initiating user's principal name, action type, and action state.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

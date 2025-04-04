@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
-ms.date: 10/15/2024
+ms.date: 08/01/2024
 ---
 
 # cloudCertificationAuthorityHashingAlgorithm enum type
@@ -21,8 +21,8 @@ Enum type of possible certificate hashing algorithms used by the certification a
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Default. The hashing algorithm is unknown or invalid.|
-|sha256|1|The hashing algorithm is SHA-256.|
-|sha384|2|The hashing algorithm is SHA-384.|
-|sha512|3|The hashing algorithm is SHA-512.|
-|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+|unknown|0||
+|sha256|1||
+|sha384|2||
+|sha512|3||
+|unknownFutureValue|4||
