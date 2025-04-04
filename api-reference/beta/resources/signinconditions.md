@@ -19,16 +19,16 @@ Represents sign-in parameters of the authenticating identity as defined in [Cond
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationFlow|[authenticationFlow](../resources/authenticationflow.md)| Type of authentication flow. Possible values are: `deviceCodeFlow` or `authenticationTransfer`.|
-|clientAppType|conditionalAccessClientApp|Client application type. The possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`, `unknownFutureValue`. Default value is `all`. |
+|authenticationFlow|[authenticationFlow](../resources/authenticationflow.md)| Type of authentication flow. The possible value is: `deviceCodeFlow` or `authenticationTransfer`.|
+|clientAppType|conditionalAccessClientApp|Client application type. The possible value is: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`, `unknownFutureValue`. Default value is `all`. |
 |country|String|Country from where the identity is authenticating|
 |deviceInfo|[deviceInfo](../resources/deviceinfo.md)|Information about the device used for the sign-in|
-|devicePlatform|conditionalAccessDevicePlatform|Device platform. The possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`, `linux`. Default value is `android`|
-|insiderRiskLevel|insiderRiskLevel|Insider risk associated with the authenticating user. The possible values is: `none`, `minor`, `moderate`, `elevated`, `unknownFutureValue`. Default value is `none`|
+|devicePlatform|conditionalAccessDevicePlatform|Device platform. The possible value is: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`, `linux`. Default value is `android`|
+|insiderRiskLevel|insiderRiskLevel|Insider risk associated with the authenticating user. The possible value is: `none`, `minor`, `moderate`, `elevated`, `unknownFutureValue`. Default value is `none`|
 |ipAddress|String|Ip address of the authenticating identity|
-|servicePrincipalRiskLevel|riskLevel|Risk associated with the service principal. The possible values is: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Default value is `low`|
-|signInRiskLevel|riskLevel|Sign-in risk associated with the user. The possible values is: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Default value is `low`|
-|userRiskLevel|riskLevel|The authenticating user's risk level. The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Default value is `low`|
+|servicePrincipalRiskLevel|riskLevel|Risk associated with the service principal. The possible value is: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Default value is `low`|
+|signInRiskLevel|riskLevel|Sign-in risk associated with the user. The possible value is: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Default value is `low`|
+|userRiskLevel|riskLevel|The authenticating user's risk level. The possible value is: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Default value is `low`|
 
 ## Relationships
 None.

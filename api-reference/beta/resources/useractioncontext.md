@@ -20,7 +20,7 @@ Represents the user action that the authenticating identity is performing, as de
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|userAction|userAction|Represents the supported user action being performed by the authenticating identity. The possible values are: `registerSecurityInformation`, `registerOrJoinDevices`, `unknownFutureValue`.|
+|userAction|userAction|Represents the user action that the authenticating identity is performing. The possible values are: `registerSecurityInformation`, `registerOrJoinDevices`, `unknownFutureValue`.|
 
 ## Relationships
 None.

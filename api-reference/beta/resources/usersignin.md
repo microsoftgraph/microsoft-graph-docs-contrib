@@ -20,8 +20,8 @@ Defines details of the user that is signing in, as defined in [Conditional Acces
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|externalTenantId|String|TenantId of the external user as applies to Microsoft Entra B2B scenarios.|
-|externalUserType|conditionalAccessGuestOrExternalUserTypes|Category that the external user belongs to. The possible values are: `none`, `internalGuest`, `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`, `otherExternalUser`, `serviceProvider`, `unknownFutureValue`.|
+|externalTenantId|String|TenantId of the guest user as applies to Microsoft Entra B2B scenarios.|
+|externalUserType|conditionalAccessGuestOrExternalUserTypes|Category that the guest user belongs to. The possible values are: `none`, `internalGuest`, `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`, `otherExternalUser`, `serviceProvider`, `unknownFutureValue`.|
 |userId|String|Object ID of the user.|
 
 ## Relationships
