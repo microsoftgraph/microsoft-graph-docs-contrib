@@ -50,7 +50,7 @@ GET /users/{id | userPrincipalName}/authentication/platformCredentialMethods/{pl
 
 ## Optional query parameters
 
-This method supports the $expand query parameter to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` query parameter to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 To read the **device** navigation property for another user, specify it in an `$expand` query as follows: `/users/{id}/authentication/platformCredentialMethods/{id}?$expand=device`.
 
@@ -84,8 +84,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/me/authentication/platformCredentialMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
 ```
-
----
 
 ### Response
 

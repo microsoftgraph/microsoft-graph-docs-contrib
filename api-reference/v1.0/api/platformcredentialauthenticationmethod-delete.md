@@ -79,8 +79,6 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/platformCredentialMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
 ```
 
----
-
 ### Response
 
 The following example shows the response.

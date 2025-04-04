@@ -81,7 +81,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/v1.0/me/authentication/platformCredentialMethods
 ```
 
----
 ### Response
 
 The following example shows the response.
