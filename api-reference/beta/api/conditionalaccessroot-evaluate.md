@@ -46,7 +46,7 @@ POST /identity/conditionalAccess/evaluate
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters. For the evaluation to provide the most accurate results, include as many details about the sign-in as possible. As a thumb rule, if your tenant has policies with a certain condition and sign-in details pertaining to that condition is not provided in the request body, the what if tool will not be able to evaluate with respect to that condition.
+In the request body, supply a JSON representation of the parameters. For the evaluation to provide the most accurate results, include as many details about the sign-in as possible. If your tenant has policies with specific conditions, and the sign-in details for those conditions are missing in the request, the 'What If' tool can't evaluate those conditions.
 
 The following table lists the parameters that are required when you call this action.
 
