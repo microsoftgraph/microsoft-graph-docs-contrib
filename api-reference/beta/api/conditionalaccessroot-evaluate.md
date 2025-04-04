@@ -1,5 +1,5 @@
 ---
-title: "conditionalAccessRoot: evaluate"
+title: "What If evaluation"
 description: "Evaluates the applicability of Conditional Access Policies based on the provided sign-in properties."
 author: "kvenkit"
 ms.date: 03/21/2025
