@@ -14,12 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a setting that controls whether Microsoft 365 Copilot can use features that enhance it's personalization capabilities. If enabled multiple features contributing to deeper personalization are enabled. More detail can be found [here](/../../concepts/control-enhanced-personalization-privacy.md).
+Represents a setting that controls whether Microsoft 365 Copilot can use features that enhance it's personalization capabilities. If enabled multiple features contributing to deeper personalization are enabled. More detail can be found [here](/graph/control-enhanced-personalization-privacy.md).
 
 Inherits from [entity](../resources/entity.md).
 
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/enhancedpersonalizationsetting-get.md)|[enhancedPersonalizationSetting](../resources/enhancedpersonalizationsetting.md)|Read the properties and relationships of an enhancedPersonalizationSetting object.|
@@ -30,12 +31,14 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |disabledForGroup|String|The ID of a Microsoft Entra group to which the value is used to disable the control for populated users. The default value is `null`. This parameter is optional.|
-|isEnabledInOrganization|Boolean|If true, enables the Enhanced Personalization control and therefore related features as defined [here](/../../concepts/control-enhanced-personalization-privacy.md)|
+|isEnabledInOrganization|Boolean|If true, enables the Enhanced Personalization control and therefore related features as defined [here](/graph/control-enhanced-personalization-privacy.md)|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 
 ``` json

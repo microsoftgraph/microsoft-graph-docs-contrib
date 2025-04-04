@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/copilot/settings/people/enhancedPersonaliza
 ```
 
 
-### Response
+### Response body
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -87,10 +87,8 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.enhancedPersonalizationSetting",
-    "id": "51fa8563-8080-0196-2a0e-379155e1f134",
     "isEnabledInOrganization": "Boolean",
     "disabledForGroup": "String"
   }
 }
 ```
-
