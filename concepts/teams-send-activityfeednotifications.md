@@ -302,7 +302,7 @@ To add custom activity icons in activity feed notifications sent to a user, foll
     }
     ```
 
-For custom activity icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-icons). 
+For custom activity icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-icons). To try out custom activity icons in activity feed notifications in a sample Teams app, see [Placeholder link](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main).  
 
 ## Examples
 
@@ -1028,5 +1028,7 @@ The settings appear after the Teams app sends the first notification. This reduc
 - [Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)
 - [Send activity feed notifications .NET sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)
 - [Send activity feed notifications Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/nodejs)
-
-
+- [Send an activity feed notification in a chat](graph/api/chat-sendactivitynotification?view=graph-rest-beta&tabs=http)
+- [Send an activity feed notification in a team](graph/api/team-sendactivitynotification?view=graph-rest-beta&tabs=http)
+- [Send an activity feed notification to a user](graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta&tabs=http)
+- [Send activity feed notifications to multiple users in bulk](graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta&tabs=http)
