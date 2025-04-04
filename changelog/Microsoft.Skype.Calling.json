@@ -5361,6 +5361,22 @@
           "ChangeType": "Addition",
           "Description": "Added the **isInteractiveRosterEnabled** property to the [callOptions](https://learn.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) resource.",
           "Target": "callOptions"
+        },
+        {
+          "Id": "c3dc53f2-5ded-4051-bfe1-e5bb35e8f111",
+          "ApiChange": "Property",
+          "ChangedApiName": "isInteractiveRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isInteractiveRosterEnabled** property to the [incomingCallOptions](https://learn.microsoft.com/en-us/graph/api/resources/incomingCallOptions?view=graph-rest-beta) resource.",
+          "Target": "incomingCallOptions"
+        },
+        {
+          "Id": "c3dc53f2-5ded-4051-bfe1-e5bb35e8f111",
+          "ApiChange": "Property",
+          "ChangedApiName": "isInteractiveRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isInteractiveRosterEnabled** property to the [outgoingCallOptions](https://learn.microsoft.com/en-us/graph/api/resources/outgoingCallOptions?view=graph-rest-beta) resource.",
+          "Target": "outgoingCallOptions"
         }
       ],
       "Id": "c3dc53f2-5ded-4051-bfe1-e5bb35e8f111",
