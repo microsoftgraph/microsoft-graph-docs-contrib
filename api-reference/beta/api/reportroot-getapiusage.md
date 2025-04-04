@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report that provides information about active Microsoft Graph API usage. The data returned is provided in a comma separated stream. Each row represents a full day of data, individual days may be missing in the event that no traffic was measured on that day.
+Get a report that provides information about active Microsoft Graph API usage. The data returned is provided in a comma separated stream. Each row represents a full day of data. If no traffic was measured on a particular day, no rows of data for that day are included.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
 
@@ -25,9 +25,9 @@ Get a report that provides information about active Microsoft Graph API usage. T
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "reportroot_getapiquota" } -->
-[!INCLUDE [permissions-table](../includes/permissions/reportroot-getapiquota-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/reportroot-getapiusage-permissions.md)]
 
-> **Note:** The user calling the API must have either the Global Reader or Global Administrator role. For more information on user roles see  [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
+> **Note:** The user calling the API must have either the Global Reader or Global Administrator role. For more information on user roles, see  [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
 ## HTTP request
 
@@ -44,7 +44,7 @@ In the request URL, provide the following parameters with a valid value.
 | Parameter | Type   | Description                                                                                                                                                                                                                                             |
 | :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, and `D60`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. The default value is D30. |
-| serviceArea | string | Specifies the Service Area (Exchange, Teams Messaging or Teams Calling) for which the data should be filtered. By default, the API returns the data for all service areas. |
+| serviceArea | string | Specifies the Service Area (Exchange, Teams Messaging, or Teams Calling) for which the data should be filtered. By default, the API returns the data for all service areas. |
 | appId | string | Specifies the app ID for filtering the data returned by the API. By default, the API returns the data for all apps within the tenant. |
 
 ## Request headers
