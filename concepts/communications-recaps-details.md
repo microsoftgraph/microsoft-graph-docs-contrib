@@ -1,7 +1,5 @@
 ---
-title: "M365 Copilot Communications Recaps Deep Dive | Microsoft Learn."
-[Follow SEO guidance at 
-https://review.learn.microsoft.com/en-us/help/platform/seo-meta-title]
+title: "Microsoft 365 Copilot Communications Recaps | Microsoft Learn."
 description: "[Article description]."
 author: "Ross-GH"
 ms.author: "rossav"
@@ -12,44 +10,16 @@ ms.date: 04/03/2025
 #customer intent: As an M365 user, I want understand Communications Recaps, so that I can understand the value, and effectively manage my information exposure.
 
 ---
-
+> [!NOTE]
+> Whether this feature is enabled or disabled doesn't impact access control (_privacy & security assurances_) of your private communications.
 
 # Get started with Communications Recaps
 
-<!-- Required: Article headline - H1
-
-Identify the product or service the article covers.
-
--->
-
-Is a personal communication memory bank that enables M365 Copilot to have access to all the knowledge typically trapped in our day-to-day communications. We capture these recaps and group them by person who communicated them. Consider the following example:
-
-Alice messages Bob & Charlie in a Microsoft Teams group chat: “Good morning, we are going to need to move the release of project Moonshot from April 2025 to June 2025 as we need more time for safety testing. The SLT made the decision last night”
-
-Communications recaps processes your communications data every 24 hours to capture information such as this, so for Bob who has an M365 Copilot license this knowledge of date change is captured to his Communications Recaps. M365 Copilot can then search for, recall, and utilise this information with advanced reasoning to help Bob with his day-to-day tasks. This includes adjusting project schedules, creating reports, and considering the move as relevant context for other tasks Bob chooses and uses M365 Copilot for.
-
-For Charlie who does not have an M365 Copilot license, or has the Enhanced Personalization control turned off ([control information here](/concepts/control-enhanced-personalization-privacy.md)). A Communications Recaps memory bank is not created, and this knowledge is not guaranteed to be part of M365 Copilot’s understanding resulting in a less personalised and useful experience for Charlie.
-
-For Alice, who has an M365 Copilot license and the Enhanced Personalization control turned on, the knowledge from her communication is added to her Communications Recaps. This way, M365 Copilot can understand more about her day-to-day work, what she has and has not communicated, and assist in tasks from making file summaries more relevant to her, to creating personalized content such as reports, product documentation, project schedules, and more with M365 Copilot.
-
-## M365 Copilot Personalised Search Grounding Data
-Grounding data is the information provided to M365 Copilot by Microsoft Graph. Communications Recap is a unique private personal data source for each user. It is used as the sole, or additional grounding data to answer an M365 Copilot user's search.
-
-For users who have Communications Recaps, M365 Copilot search will be personalised to include your personal Communications Recaps only for you; they remain private.
-
-Imagine Bob from our [Get started with Communications Recaps](#get-started-with-communications-recaps) can’t remember who, when, or through which communication channel a person discussed project Moonshot’s release date change. M365 Copilot, thanks to your Communications Recaps, now has unique memory of the knowledge gained from your private communications data used just for you. For example, Bob asks M365 Copilot for “Who did I speak to about project Moonshot’s release date change?”. M365 Copilot will perform a search on his personal Communications Recaps, and in this case return a communications recap as an answer stating “Alice informed you project Moonshot’s release date has changed from April 2025 to June 2025” complete with citation to the original message from the original communication medium. Given the nature of Generative AI tool use in combination with ambiguous queries Communications Recaps are sometimes the only reliable unified communications knowledge base to answer, because M365 Copilot does not know how long ago, and which communication channels to search. You may find Communications Recaps provide the only answer to your queries on knowledge gained from communications, especially as they build over time learning and remembering with you under your control.
-
-
-<!-- Required: Introductory paragraphs (no heading)
-
-Write a brief introduction that can help the user
-determine whether the article is relevant for them
-and to describe what aspects of a product or service
-the article covers.
-
--->
+Communications Recaps provide a personal communication memory bank for Microsoft 365 Copilot to  access the knowledge trapped in our day-to-day communications. Microsoft 365 Copilot captures these recaps once every 24 hours and groups them by person who communicated them. Microsoft 365 Copilot search, creation of content, and summarization are then further personalized using these recaps to provide more relevant results just for you.
 
 ## Prerequisites
+
+The Enhanced Personalization control must be enabled for you. This provides Microsoft permission to process your private data to produce Communications Recaps. They remain private to you, and this permission is revocable, but will disable this feature and delete your Communications Recaps generated. See [Microsoft 365 Copilot Enhanced Personalization Control](/concepts/control-enhanced-personalization-privacy.md). 
 
 <!--Optional: Prerequisites - H2
 
@@ -58,72 +28,42 @@ in the article. Use clear and unambiguous language and use
 an unordered list format. 
 
 -->
+## Communications Recaps Explained Through Example
 
-## [Table of stages]
+Consider the following example:
 
-<!-- Optional: Table of stages - H2
+Alice messages Bob & Charlie in a Microsoft Teams group chat:
 
-In an H2 section, if the process for getting started is long
-or complex, list the stages in a table. For each stage in the
-table, include a link to an article that describes how to
-complete that stage.
+`Good morning, we're going to need to move the release of project Fabrikam from April 2025 to June 2025 as we need more time for safety testing. The SLT made the decision last night`
 
-Use either a table or one or more stage sections, as described 
-in the next section. 
+Communications recaps process your communications data every 24 hours to capture knowledge such as this, so for Bob who has an Microsoft 365 Copilot license this knowledge of date change is captured to his Communications Recaps. Microsoft 365 Copilot can then search for, recall, and utilize this knowledge to help Bob with his day-to-day tasks. Microsoft 365 Copilot can use this new and evolving knowledge over time to help with project schedules, creating reports, and considering as relevant context for other tasks Bob chooses and uses Microsoft 365 Copilot for. Bob doesn't have to have seen this message yet for Communications Recaps to capture the new knowledge and assist Bob with it. To help Bob understand why this knowledge is present and used by Microsoft 365 Copilot, citations are provided to the original message whenever it's relevant to the assitance and responses provided to him.  
 
--->
+For Charlie who doesn't have an Microsoft 365 Copilot license, or has the Enhanced Personalization control turned off ([Prerequisites](#prerequisites)). M365 Copilot doesn't create a Communications Recaps memory bank, which results in a less personalized and useful experience for Charlie.
 
-## [Stages]
+For Alice, who has an Microsoft 365 Copilot license and the Enhanced Personalization control enabled, the knowledge from her communication is added to her Communications Recaps. Microsoft 365 Copilot now understands more about her day-to-day work from communications she's sent as well as received, and helps complete tasks using personal private knowledge. From file summaries becoming more relevant to her by being personalized using Communications Recaps, to creating personalized content such as reports, product documentation, project schedules, and more with Microsoft 365 Copilot now enhanced with Alice's personal knowledge from Commmunciations Recaps.
 
-<!-- Optional: Stages - H2
+## Microsoft 365 Copilot Personalized Search Grounding Data
 
-In one or more H2 sections, describe the stages to
-get started with the product, service, or feature.
+Grounding data is the information provided to Microsoft 365 Copilot by Microsoft Graph. Communications Recap is a unique private personal data source for each user. It's used as the sole, or extra grounding data to answer a Microsoft 365 Copilot user's search.
 
--->
+For users who have Communications Recaps, Microsoft 365 Copilot search is personalized to include your Communications Recaps only for you; they remain private.
 
-## [Who or what information]
+Imagine Bob from our [Communications Recaps Explained Through Example](#communications-recaps-explained-through-example) can’t remember who, when, or through which communication channel a person discussed project Fabrikam’s release date change a month later. Microsoft 365 Copilot, thanks to your Communications Recaps, now has unique memory of the knowledge gained from your private communications data used just for you. Bob asks Microsoft 365 Copilot 
 
-<!-- Optional: Links to use information - H2
+`Who did I speak to about project Fabrikam’s release date change?`
 
-In an H2 section, describe who the product or service is for,
-or what it's used for.
+Microsoft 365 Copilot performs a search on his personal Communications Recaps and returns a Communications Recap as an answer:
 
--->
+`Alice informed you project Fabrikam’s release date has changed from April 2025 to June 2025`
 
-## Get help
+Complete with citation to the original message from the original communication medium so Bob can verify this response and the context it was in. 
 
-<!-- Optional: Links to help information - H2
+> [!TIP]
+> Microsoft 365 Copilot doesn't know how long ago, and which communication channels to search without user specification who might also not recall. Communications Recaps are a reliable unified communications knowledge base Microsoft 365 Copilot uses to better answer ambiguous queries in a personalized private way. You might find Communications Recaps provide the only answer to your queries on knowledge gained from communications, especially as they build over time learning and remembering with you under your control.
 
-In an H2 section, list resources and support services that 
-provide help when you use the product or service.
+## Related content
 
--->
-
-## Next step -or- Related content
-
-> [!div class="nextstepaction"]
-> [Next sequential article title](link.md)
-
--or-
-
-* [Related article title](link.md)
-* [Related article title](link.md)
-* [Related article title](link.md)
-
-<!-- Optional: Next step or Related content - H2
-
-Consider adding one of these H2 sections (not both):
-
-A "Next step" section that uses 1 link in a blue box 
-to point to a next, consecutive article in a sequence.
-
--or- 
-
-A "Related content" section that lists links to 
-1 to 3 articles the user might find helpful.
-
--->
+* [Enhanced Personalization Control](control-enhanced-personalization-privacy.md)
 
 <!--
 

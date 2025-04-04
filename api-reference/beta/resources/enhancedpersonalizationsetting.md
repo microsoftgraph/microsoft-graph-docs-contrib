@@ -4,7 +4,7 @@ description: "Describes the Enhanced Personalization resource, methods, and prop
 author: "Ross-GH"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
-ms.subservice: "microsoft-365-copilot"
+ms.service: "microsoft-365-copilot"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a setting that controls whether Microsoft 365 Copilot can leverage features that enhance it's personalization capabiltiies. If enabled multiple features contributing to deeper personalization are enabled. More detail can be found [here](/concepts/control-enhanced-personalization-privacy.md).
+Represents a setting that controls whether Microsoft 365 Copilot can use features that enhance it's personalization capabilities. If enabled multiple features contributing to deeper personalization are enabled. More detail can be found [here](/concepts/control-enhanced-personalization-privacy.md).
 
 Inherits from [entity](../resources/entity.md).
 
