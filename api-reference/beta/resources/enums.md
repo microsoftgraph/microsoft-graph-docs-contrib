@@ -5017,6 +5017,26 @@ Possible values for user account types (group membership), per Windows definitio
 |authenticationFlow|
 |unknownFutureValue|
 
+### insiderRiskLevel values 
+
+
+|Member|
+|:---|
+|none|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+
+### userAction values 
+
+
+|Member|
+|:---|
+|registerSecurityInformation|
+|registerOrJoinDevices|
+|unknownFutureValue|
+
 ### callEventType values
 
 | Member |
