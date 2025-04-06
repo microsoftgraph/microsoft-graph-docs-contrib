@@ -2130,6 +2130,8 @@ items:
         href: ../../api/hardwareoathauthenticationmethod-activate.md
       - name: Deactivate
         href: ../../api/hardwareoathauthenticationmethod-deactivate.md
+      - name: Assign
+        href: ../../api/hardwareoathtokenauthenticationmethoddevice-put-assignto.md
       - name: Assign and activate
         href: ../../api/hardwareoathauthenticationmethod-assignandactivate.md
       - name: Assign and activate by serial number
@@ -2295,8 +2297,6 @@ items:
         href: ../../api/hardwareoathtokenauthenticationmethoddevice-update.md
       - name: Delete
         href: ../../api/authenticationmethoddevice-delete-hardwareoathdevices.md
-      - name: Assign user
-        href: ../../api/hardwareoathtokenauthenticationmethoddevice-put-assignto.md
     - name: Microsoft Authenticator
       items:
       - name: Microsoft Authenticator
@@ -2828,7 +2828,7 @@ items:
         href: ../../api/identityprovider-list-availableprovidertypes.md
     - name: OpenID Connect identity provider (deprecated)
       href: ../../resources/openidconnectprovider.md
-  - name: Microsoft Entra lifecycle announcements
+  - name: Microsoft Entra lifecycle announcements (deprecated)
     items:
     - name: Product changes
       items:
