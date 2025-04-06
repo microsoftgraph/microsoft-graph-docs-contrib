@@ -19,6 +19,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## April 2025: New in preview only
 
+### Device and app management | Cloud licensing
+
+Updated the permissions for the [List usageRights for user](/graph/api/cloudlicensing-groupcloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true) and [Get usageRight](/graph/api/cloudlicensing-usageright-get?view=graph-rest-beta&preserve-view=true) APIs.
+
 ### Device and app management | Cloud PC
 
 Deprecated the [getCloudPcRecommendationReports](/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true) method of the [cloudPcReports](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true) resource in favor of the [retrieveCloudPcRecommendationReports](/graph/api/cloudpcreports-retrievecloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true) method.
@@ -36,6 +40,16 @@ Use the **autopatch** property on [cloudPcProvisioningPolicy](/graph/api/resourc
 ### Files
 
 [Use the app folder in OneDrive and SharePoint](/graph/onedrive-sharepoint-appfolder) for secure application settings and data storage with Microsoft Graph.
+
+### Identity and access | Identity and sign-in
+
+Deprecated the following resources and their associated APIs that support the Microsoft Entra lifecycle announcements APIs.
+
+- [changeItemBase](/graph/api/resources/changeItemBase) resource type
+- [announcement](/graph/api/resources/changeItemBase) resource type
+- [roadmap](/graph/api/resources/changeItemBase) resource type
+
+The APIs will stop returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
 
 ### Microsoft Graph connector
 
@@ -73,6 +87,7 @@ Updated the Microsoft Entra built-in role required to [perform a new bulk upload
 
 ### Files
 
+Enabled [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) as a supported resource for the [create](/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta&preserve-view=true), [get](/graph/api/opentypeextension-get?view=graph-rest-beta&preserve-view=true), [update](/graph/api/opentypeextension-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/opentypeextension-delete?view=graph-rest-beta&preserve-view=true) operations of the [openTypeExtension](/graph/api/resources/opentypeextension?view=graph-rest-beta&preserve-view=true) resource.
 Create and manage [sharePointGroup](/graph/api/resources/sharepointgroup?view=graph-rest-beta&preserve-view=true) and its members in a SharePoint Embedded container or SharePoint site.
 
 ### Mail
