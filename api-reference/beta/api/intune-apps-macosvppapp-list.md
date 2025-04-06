@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2359
+Content-Length: 2421
 
 {
   "value": [
@@ -111,6 +111,7 @@ Content-Length: 2359
       "vppTokenAppleId": "Vpp Token Apple Id value",
       "bundleId": "Bundle Id value",
       "vppTokenId": "Vpp Token Id value",
+      "vppTokenDisplayName": "Vpp Token Display Name value",
       "revokeLicenseActionResults": [
         {
           "@odata.type": "microsoft.graph.macOsVppAppRevokeLicensesActionResult",
