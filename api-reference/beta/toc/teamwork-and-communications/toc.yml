@@ -1303,6 +1303,8 @@ items:
       href: ../../api/timecard-endbreak.md
     - name: Confirm
       href: ../../api/timecard-confirm.md
+    - name: Confirm for user
+      href: ../../api/timecard-confirmforuser.md
   - name: Time off
     items:
     - name: Time off
