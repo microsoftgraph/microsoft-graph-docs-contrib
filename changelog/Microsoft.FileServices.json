@@ -5,17 +5,17 @@
           {
             "Id": "6a814e1a-0f37-4c0c-8528-20fe037ec6e1",
             "ApiChange": "Header",
-            "ChangedApiName": "get-content",
+            "ChangedApiName": "content",
             "ChangeType": "Addition",
-            "Description": "Added the `forceInfectedDownload` prefer header to the [Get Content](https://learn.microsoft.com/en-us/graph/api/driveitem-get-contentstream?view=graph-rest-beta) method to enable the download of infected files when specfically requested.",
+            "Description": "Added the `forceInfectedDownload` prefer header to the [Get content](https://learn.microsoft.com/en-us/graph/api/driveitem-get-content?view=graph-rest-beta) method of the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource to enable the download of infected files when specifically requested.",
             "Target": "driveItem"
           },
           {
             "Id": "6a814e1a-0f37-4c0c-8528-20fe037ec6e1",
             "ApiChange": "Header",
-            "ChangedApiName": "get-content",
+            "ChangedApiName": "contentStream",
             "ChangeType": "Addition",
-            "Description": "Added the `forceInfectedDownload` prefer header to the [Get ContentStream](https://learn.microsoft.com/en-us/graph/api/driveitem-get-contentstream?view=graph-rest-beta) method to enable the download of infected files when specfically requested.",
+            "Description": "Added the `forceInfectedDownload` prefer header to the [Get contentStream](https://learn.microsoft.com/en-us/graph/api/driveitem-get-contentstream?view=graph-rest-beta) method of the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource to enable the download of infected files when specfically requested.",
             "Target": "driveItem"
           }
         ],
