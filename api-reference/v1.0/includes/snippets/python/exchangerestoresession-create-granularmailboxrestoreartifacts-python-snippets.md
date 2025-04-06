@@ -16,9 +16,7 @@ request_body = ExchangeRestoreSession(
 	granular_mailbox_restore_artifacts = [
 		GranularMailboxRestoreArtifact(
 			restore_point = RestorePoint(
-				additional_data = {
-						"@odata_id" : "1f1fccc3-a642-4f61-bf49-f37b9a888279",
-				}
+				id = "1f1fccc3-a642-4f61-bf49-f37b9a888279",
 			),
 			destination_type = DestinationType.InPlace,
 			search_response_id = "M2UyZDAwMDAwMDMxMzkzYTMyNj",

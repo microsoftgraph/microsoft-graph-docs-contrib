@@ -686,6 +686,8 @@ items:
       items:
       - name: Configure Microsoft Entra Private Access
         href: tutorial-entra-private-access.md
+      - name: Configure Microsoft Entra Internet Access
+        href: tutorial-entra-internet-access.md
   - name: Industry data ETL (preview)
     href: industrydata-concept-overview.md
   - name: Mail

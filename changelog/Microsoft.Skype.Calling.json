@@ -3,6 +3,66 @@
     {
       "ChangeList": [
         {
+          "Id": "999068ba-8006-4d1b-a24b-4d72d4bdcbb7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "communications",
+          "ChangeType": "Addition",
+          "Description": "Added the **communications** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "999068ba-8006-4d1b-a24b-4d72d4bdcbb7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-28T21:51:09.4920832Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {      
+      "ChangeList": [
+        {
+          "Id": "cddc0287-34a4-45f4-a10d-c44c6474c978",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userCloudCommunication",
+          "ChangeType": "Addition",
+          "Description": "Added the [userCloudCommunication](https://learn.microsoft.com/en-us/graph/api/resources/userCloudCommunication?view=graph-rest-beta) resource type.",
+          "Target": "userCloudCommunication"
+        },
+        {
+          "Id": "cddc0287-34a4-45f4-a10d-c44c6474c978",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegateAllowedActions",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegateAllowedActions](https://learn.microsoft.com/en-us/graph/api/resources/delegateAllowedActions?view=graph-rest-beta) resource type.",
+          "Target": "delegateAllowedActions"
+        },
+        {
+          "Id": "cddc0287-34a4-45f4-a10d-c44c6474c978",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegationSettings](https://learn.microsoft.com/en-us/graph/api/resources/delegationSettings?view=graph-rest-beta) resource and associated methods.",
+          "Target": "delegationSettings"
+        },
+        {
+          "Id": "cddc0287-34a4-45f4-a10d-c44c6474c978",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [callSettings](https://learn.microsoft.com/en-us/graph/api/resources/callSettings?view=graph-rest-beta) resource type.",
+          "Target": "callSettings"
+        }
+      ],
+      "Id": "cddc0287-34a4-45f4-a10d-c44c6474c978",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-02-28T17:13:29.2041184Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "03c89b83-ac3b-4ece-a385-1d71ece68725",
           "ApiChange": "Property",
           "ChangedApiName": "allowCopyingAndSharingMeetingContent",
