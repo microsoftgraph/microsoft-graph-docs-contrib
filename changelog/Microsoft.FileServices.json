@@ -15,7 +15,7 @@
             "ApiChange": "Header",
             "ChangedApiName": "contentStream",
             "ChangeType": "Addition",
-            "Description": "Added the `forceInfectedDownload` prefer header to the [Get contentStream](https://learn.microsoft.com/en-us/graph/api/driveitem-get-contentstream?view=graph-rest-beta) method of the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource to enable the download of infected files when specfically requested.",
+            "Description": "Added the `forceInfectedDownload` prefer header to the [Get contentStream](https://learn.microsoft.com/en-us/graph/api/driveitem-get-contentstream?view=graph-rest-beta) method of the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource to enable the download of infected files when specifically requested.",
             "Target": "driveItem"
           }
         ],
