@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
-ms.date: 09/12/2024
+ms.date: 08/01/2024
 ---
 
 # elevationRequestState enum type
@@ -21,11 +21,11 @@ Indicates state of elevation request
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|none|0|Default Value. Indicates that elevation request status is unavailable|
-|pending|1|Initial state when request is submitted but no approval/denial action taken|
-|approved|2|Indicates elevation request has been approved by IT Admin.|
-|denied|3|Indicates elevation request has been denied by IT Admin.|
-|expired|4|Set to expire when Approved for is elapsed or ExpireDate is elapsed, whichever is sooner.|
-|unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
-|revoked|6|Set to expire when Approved for is elapsed or ExpireDate is elapsed, whichever is sooner.|
-|completed|7|Indicates an elevation request that was previously approved and expired has been completed.|
+|none|0||
+|pending|1||
+|approved|2||
+|denied|3||
+|expired|4||
+|unknownFutureValue|5||
+|revoked|6||
+|completed|7||
