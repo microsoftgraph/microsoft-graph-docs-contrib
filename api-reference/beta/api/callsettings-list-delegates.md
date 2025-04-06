@@ -73,6 +73,7 @@ The following example shows how to get all delegates for the signed-in user (`me
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_delegationsettings_delegates"
@@ -81,6 +82,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/communications/callSettings/delegates
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-delegationsettings-delegates-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -139,6 +146,7 @@ The following example shows how to get all delegates who are able to receive cal
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_delegationsettings_delegates_receivecalls"
@@ -147,6 +155,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/communications/callSettings/delegates?filter=allowedActions/receiveCalls eq true 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-delegationsettings-delegates-receivecalls-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

@@ -7,11 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 mgc role-management directory role-eligibility-schedule-requests create --body '{\
     "action": "AdminRemove",\
-    "principalId": "e77cbb23-0ff2-4e18-819c-690f58269752",\
+    "principalId": "1189bbdd-1268-4a72-8c6d-6fe77d28f2e3",\
     "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",\
     "directoryScopeId": "/"\
 }\
-\
 '
 
 ```
