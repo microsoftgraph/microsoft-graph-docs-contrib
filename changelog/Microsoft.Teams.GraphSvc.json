@@ -2561,6 +2561,58 @@
     {
       "ChangeList": [
         {
+          "Id": "579fe6a1-aa7e-4a19-aa10-1c237809032c",
+          "ApiChange": "Property",
+          "ChangedApiName": "content",
+          "ChangeType": "Change",
+          "Description": "Added new `<codeblock><code></code></codeblock>` tag support to the message body **content** of the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-beta) resource to represent a code block in the message body in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta). This change shows up in the actual **content** property of the message body when you [get a chat message in a channel or chat](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta).",
+          "Target": "itemBody"
+        }
+      ],
+      "Id": "579fe6a1-aa7e-4a19-aa10-1c237809032c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-09T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "replyWithQuote",
+          "ChangeType": "Addition",
+          "Description": "Added the [replyWithQuote](https://learn.microsoft.com/en-us/graph/api/chatmessage-replywithquote?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "forwardToChat",
+          "ChangeType": "Addition",
+          "Description": "Added the [forwardToChat](https://learn.microsoft.com/en-us/graph/api/chatmessage-forwardtochat?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "forwardToChatResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [forwardToChatResult](https://learn.microsoft.com/en-us/graph/api/resources/forwardToChatResult?view=graph-rest-beta) resource type.",
+          "Target": "forwardToChatResult"
+        }
+      ],
+      "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-11T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fc85a381-3549-4388-bc52-305b9b5f3cf1",
           "ApiChange": "Property",
           "ChangedApiName": "firstChannelName",
@@ -2574,7 +2626,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2025-03-07T08:54:28.4245939Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
+      "SubArea": "Messaging"
     }
   ]
 }

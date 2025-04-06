@@ -2,7 +2,7 @@
 title: "Microsoft Entra authentication methods API overview"
 description: "Authentication methods are how users authenticate in Azure AD."
 ms.localizationpriority: medium
-ms.custom: has-azure-ad-ps-ref
+ms.custom: no-azure-ad-ps-ref
 author: FaithOmbongi
 ms.reviewer: julija.pettere, intelligentaccesspm
 ms.subservice: "entra-sign-in"

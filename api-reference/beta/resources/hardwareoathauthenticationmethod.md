@@ -29,6 +29,7 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |[Delete](../api/authentication-delete-hardwareoathmethods.md)|None|Delete a [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) object.|
 |[Activate](../api/hardwareoathauthenticationmethod-activate.md)|None|Activate a hardware OATH token that is already assigned to a user.|
 |[Deactivate](../api/hardwareoathauthenticationmethod-deactivate.md)|None|Deactive a hardware OATH token. It remains assigned to the user.|
+|[Assign](../api/hardwareoathtokenauthenticationmethoddevice-put-assignto.md)|[user](../resources/user.md)|Assign a user a hardware token without activating it.|
 |[Assign and activate](../api/hardwareoathauthenticationmethod-assignandactivate.md)|None|Assign and activate a hardware token at the same time.|
 |[Assign and activate by serial number](../api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber.md)|None|Assign and activate a hardware token at the same time by hardware token serial number.|
 

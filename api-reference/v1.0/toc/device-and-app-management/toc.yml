@@ -165,6 +165,10 @@ items:
       href: ../../api/cloudpcusersetting-delete.md
     - name: Assign
       href: ../../api/cloudpcusersetting-assign.md
+  - name: Complex types
+    items:
+    - name: Cloud PC provisioning policy autopatch
+      href: ../../resources/cloudpcprovisioningpolicyautopatch.md
 - name: Cloud printing
   displayName: Universal Print
   items:
