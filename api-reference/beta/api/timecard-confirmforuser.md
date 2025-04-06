@@ -1,6 +1,6 @@
 ---
 title: "timeCard: confirmForUser"
-description: "Confirm a timeCard for a user"
+description: "Confirm a specific timeCard for a user."
 author: lemikeshifts
 ms.date: 03/31/2025
 ms.localizationpriority: medium
@@ -52,13 +52,11 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|The ID of the user that is confirming the timeCard.|
-
-
+|userId|String|The ID of the user that is confirms the **timeCard**.|
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [timeCard](../resources/timecard.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [timeCard](../resources/timecard.md) object in the response body.
 
 ## Examples
 
@@ -79,11 +77,9 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
