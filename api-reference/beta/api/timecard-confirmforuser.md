@@ -52,7 +52,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|The ID of the user that is confirms the **timeCard**.|
+|userId|String|The ID of the user that confirms the **timeCard**.|
 
 ## Response
 
