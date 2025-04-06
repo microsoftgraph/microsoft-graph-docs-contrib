@@ -106,6 +106,8 @@ POST /me/checkMemberObjects
 POST /users/{id | userPrincipalName}/checkMemberObjects
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Memberships for other users.
 <!-- { "blockType": "ignored" } -->
 ```http

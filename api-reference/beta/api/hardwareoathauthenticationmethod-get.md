@@ -43,6 +43,8 @@ Get details of a hardware OATH authentication method assigned to you.
 GET /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Get details of a hardware OATH authentication method assigned to another user.
 <!-- {
   "blockType": "ignored"

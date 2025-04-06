@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
-ms.date: 10/15/2024
+ms.date: 08/01/2024
 ---
 
 # cloudCertificationAuthorityType enum type
@@ -21,8 +21,8 @@ Enum type of possible certificate authority types. This feature supports a two-t
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Default. Unknown or invalid certification authority type.|
-|rootCertificationAuthority|1|Indicates root certification authority. Can be used as the parent of an issuing certification authority. Root Certification Authority cannot issue leaf certificates.|
-|issuingCertificationAuthority|2|Indicates issuing (subordinate) certification authority. Must have a parent root certification authority. Issuing Certification Authority can issue leaf certificates.|
-|issuingCertificationAuthorityWithExternalRoot|3|Indicates issuing (subordinate) certification authority that has an external root certification authority. Issuing Certification Authority with external root can issue leaf certificates.|
-|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+|unknown|0||
+|rootCertificationAuthority|1||
+|issuingCertificationAuthority|2||
+|issuingCertificationAuthorityWithExternalRoot|3||
+|unknownFutureValue|4||

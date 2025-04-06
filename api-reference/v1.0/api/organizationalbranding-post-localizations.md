@@ -1,7 +1,7 @@
 ---
 title: "Create organizationalBrandingLocalization"
 description: "Create a new organizationalBrandingLocalization object."
-author: "quievey"
+author: nanguil
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
