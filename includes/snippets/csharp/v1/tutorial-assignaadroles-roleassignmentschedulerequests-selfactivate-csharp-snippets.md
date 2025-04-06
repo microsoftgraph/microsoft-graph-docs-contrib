@@ -12,13 +12,13 @@ using Microsoft.Graph.Models;
 var requestBody = new UnifiedRoleAssignmentScheduleRequest
 {
 	Action = UnifiedRoleScheduleRequestActions.SelfActivate,
-	PrincipalId = "7146daa8-1b4b-4a66-b2f7-cf593d03c8d2",
+	PrincipalId = "d9771b4c-06c5-491a-92cb-3aa4e225a725",
 	RoleDefinitionId = "fe930be7-5e62-47db-91af-98c3a49a38b1",
 	DirectoryScopeId = "/",
 	Justification = "Need to invalidate all app refresh tokens for Contoso users.",
 	ScheduleInfo = new RequestSchedule
 	{
-		StartDateTime = DateTimeOffset.Parse("2024-03-25T15:13:00.000Z"),
+		StartDateTime = DateTimeOffset.Parse("2025-03-21T11:46:00.000Z"),
 		Expiration = new ExpirationPattern
 		{
 			Type = ExpirationPatternType.AfterDuration,
