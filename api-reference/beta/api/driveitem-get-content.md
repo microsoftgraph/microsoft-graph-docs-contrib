@@ -40,18 +40,13 @@ GET /sites/{siteId}/drive/items/{item-id}/content
 GET /users/{userId}/drive/items/{item-id}/content
 ```
 
-## Optional request headers
+## Request headers
 
-| Name          | Value  | Description                                                                                                                                              |
-|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
-| Prefer | Optional. String. Set to one of the `prefer` values documented below.  |
-
-### Prefer header values
-
-| Name                          | Description                                                                                             |
-|:------------------------------|:--------------------------------------------------------------------------------------------------------|
-|forceInfectedDownload|If provided, request can download an infected file. For delegated calls, if the tenant setting to disallow infected file download is enabled, then only tenant admins or global admins may download the file. Application-Only requests will download an infected file regardless of tenant settings. |
+| Name                          | Description                                                                                                                                                                                                                                                                                                                  |
+|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Authorization                 | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).                                                                                                                                                                                                                    |
+| If-None-Match                 | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. Optional.                                                                                                                                                           |
+| Prefer: forceInfectedDownload | If provided, the request can download an infected file. For delegated requests, if the tenant setting **DisallowInfectedFileDownload** is enabled, only tenant administrators or global administrators might download the file. Application-only requests download an infected file regardless of tenant settings. Optional. |
 
 ## Example
 
