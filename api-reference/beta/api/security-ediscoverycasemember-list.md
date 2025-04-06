@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-418
 
 ---
 
-
 ### Response
 
 The following example shows the response.

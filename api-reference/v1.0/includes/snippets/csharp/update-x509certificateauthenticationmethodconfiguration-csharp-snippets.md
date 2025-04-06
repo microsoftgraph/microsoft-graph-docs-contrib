@@ -42,6 +42,13 @@ var requestBody = new X509CertificateAuthenticationMethodConfiguration
 			},
 		},
 	},
+	CrlValidationConfiguration = new X509CertificateCRLValidationConfiguration
+	{
+		State = X509CertificateCRLValidationConfigurationState.Disabled,
+		ExemptedCertificateAuthoritiesSubjectKeyIdentifiers = new List<string>
+		{
+		},
+	},
 	IncludeTargets = new List<AuthenticationMethodTarget>
 	{
 		new AuthenticationMethodTarget
