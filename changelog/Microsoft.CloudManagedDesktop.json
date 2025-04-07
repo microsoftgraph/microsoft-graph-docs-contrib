@@ -82,10 +82,10 @@
       "ChangeList": [
         {
           "Id": "4ba9666b-f552-6e71-0914-575550a4a675",
-          "ApiChange": "Parameter",
+          "ApiChange": "Property",
           "ChangedApiName": "retrieveCloudPcTroubleshootReports",
           "ChangeType": "Addition",
-          "Description": "Enabled the **groupBy** parameter in the [retrieveCloudPcTroubleshootReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrievecloudpctroubleshootreports?view=graph-rest-beta) method.",
+          "Description": "Enabled the **groupBy** property in the [retrieveCloudPcTroubleshootReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrievecloudpctroubleshootreports?view=graph-rest-beta) method.",
           "Target": "retrieveCloudPcTroubleshootReports"
         }
       ],
