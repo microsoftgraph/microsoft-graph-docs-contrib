@@ -100,12 +100,6 @@ Create and manage [sharePointGroup](/graph/api/resources/sharepointgroup?view=gr
 
 Use the **publicationName** property on [plannerTeamsPublicationInfo](/graph/api/resources/plannerteamspublicationinfo?view=graph-rest-beta&preserve-view=true) to get the name of a published task list.
 
-### Teamwork and communications | Messaging
-
-Introduced the following more granular delegated and application permissions for retrieving all members of a channel:
- - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
- - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
-
 ### Teamwork and communications | Calls and online meetings
 
 - Use the **isEndToEndEncryptionEnabled** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) and [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) to indicate whether end-to-end encryption (E2EE) is enabled for a meeting or virtual event session.
