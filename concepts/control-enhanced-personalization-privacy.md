@@ -15,10 +15,9 @@ ms.date: 04/03/2025
 
 Microsoft 365 Copilot can become personalized to each user, aiding them in their day-to-day tasks by understanding their work knowledge on an individual level including from their communications. Tenant administrators such as the Global Administrator role, and users through requests to their tenant administrators use the Enhanced Personalization control to manage this personalization. Reading this overview enables you to understand how Microsoft 365 Copilot achieves greater personalization through various features when Enhanced Personalization is enabled. How your privacy is maintained, and how to control the use of Enhanced Personalization for Microsoft 365 Copilot.
 
-## Learn what uses the Enhanced Personalization Control
-
-## Coming Soon
+> [!NOTE]
+> Features under the purview of this control will become available in public preview soon. 
 
 ## Related content
 
-- [Enhanced Personalization Microsoft Graph Reference](/graph/api/resources/enhancedpersonalizationsetting.md)
+- [Enhanced Personalization Microsoft Graph Reference](/graph/api/resources/enhancedpersonalizationsetting)
