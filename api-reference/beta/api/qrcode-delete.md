@@ -30,10 +30,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+DELETE /me/authentication/qrcodepinmethod/standardQRCode
+DELETE /me/authentication/qrcodepinmethod/temporaryQRCode
 DELETE /users/{id}/authentication/qrcodepinmethod/standardQRCode
 DELETE /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 ```
-
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Request headers
 
 |Name|Description|

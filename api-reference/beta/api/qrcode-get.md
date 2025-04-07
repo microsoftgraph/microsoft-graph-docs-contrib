@@ -36,10 +36,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+GET /me/authentication/qrcodepinmethod/standardQRCode
+GET /me/authentication/qrcodepinmethod/temporaryQRCode
 GET /users/{id}/authentication/qrcodepinmethod/standardQRCode
 GET /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 ```
-
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Optional query parameters
 
 This method does not support OData query parameters.

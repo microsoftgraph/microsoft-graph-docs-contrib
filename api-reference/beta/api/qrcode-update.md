@@ -35,10 +35,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+PATCH /me/authentication/qrcodepinmethod/standardQRCode
+PATCH /me/authentication/qrcodepinmethod/temporaryQRCode
 PATCH /users/{id}/authentication/qrcodepinmethod/standardQRCode
 PATCH /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 ```
-
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Request headers
 
 |Name|Description|
