@@ -50,7 +50,7 @@ PATCH /copilot/settings/people/enhancedPersonalization
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean|If true, enables the Enhanced Personalization control and therefore related features as defined [here](/graph/control-enhanced-personalization-privacy.md) Required.|
+|isEnabledInOrganization|Boolean|If true, enables the Enhanced Personalization control and therefore related features as defined [here](/graph/control-enhanced-personalization-privacy) Required.|
 |disabledForGroup|String|The ID of a Microsoft Entra group to which the value is used to disable the control for populated users. Optional.|
 
 ## Response

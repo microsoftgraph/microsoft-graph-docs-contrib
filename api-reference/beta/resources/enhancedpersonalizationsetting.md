@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a setting that controls whether Microsoft 365 Copilot can use features that enhance it's personalization capabilities. If enabled multiple features contributing to deeper personalization are enabled. More detail can be found [here](/graph/control-enhanced-personalization-privacy.md).
+Represents a setting that controls whether Microsoft 365 Copilot can use features that enhance it's personalization capabilities. If enabled multiple features contributing to deeper personalization are enabled. More detail can be found [here](/graph/control-enhanced-personalization-privacy).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |disabledForGroup|String|The ID of a Microsoft Entra group to which the value is used to disable the control for populated users. The default value is `null`. This parameter is optional.|
-|isEnabledInOrganization|Boolean|If true, enables the Enhanced Personalization control and therefore related features as defined [here](/graph/control-enhanced-personalization-privacy.md)|
+|isEnabledInOrganization|Boolean|If true, enables the Enhanced Personalization control and therefore related features as defined [here](/graph/control-enhanced-personalization-privacy)|
 
 ## Relationships
 
