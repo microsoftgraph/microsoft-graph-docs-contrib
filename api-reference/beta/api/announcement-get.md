@@ -1,5 +1,5 @@
 ---
-title: "Get announcement"
+title: "Get announcement (deprecated)"
 description: "Read the properties and relationships of an announcement object."
 author: "garretraziel"
 ms.date: 11/20/2024
@@ -8,11 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Get announcement
+# Get announcement (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [entra-lifecycle-announcements-deprecation-note](../includes/entra-lifecycle-announcements-deprecation-note.md)]
 
 Read the properties of an [announcement](../resources/announcement.md) object.
 
