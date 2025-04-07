@@ -21,4 +21,4 @@ Microsoft 365 Copilot can become personalized to each user, aiding them in their
 
 ## Related content
 
-- [Enhanced Personalization Microsoft Graph Reference](/api-reference/beta/resources/enhancedpersonalizationsetting.md)
+- [Enhanced Personalization Microsoft Graph Reference](../beta/resources/enhancedpersonalizationsetting.md)
