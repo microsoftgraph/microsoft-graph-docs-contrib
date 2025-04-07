@@ -17,17 +17,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-## April 2025: New and generally available
-
-### Teamwork and communications | Calls and online meetings
-
-Use the **registrantVideoOnDemandWebUrl** property on [virtualEventRegistration](/graph/api/resources/virtualeventregistration?view=graph-rest-beta&preserve-view=true) and the **videoOnDemandWebUrl** property on [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true), which provide the URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
-
 ## April 2025: New in preview only
 
 ### Device and app management | Cloud licensing
 
 Updated the permissions for the [List usageRights for user](/graph/api/cloudlicensing-groupcloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true) and [Get usageRight](/graph/api/cloudlicensing-usageright-get?view=graph-rest-beta&preserve-view=true) APIs.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **registrantVideoOnDemandWebUrl** property on [virtualEventRegistration](/graph/api/resources/virtualeventregistration?view=graph-rest-beta&preserve-view=true) and the **videoOnDemandWebUrl** property on [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true), which provide the URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
 ## March 2025: New and generally available
 
