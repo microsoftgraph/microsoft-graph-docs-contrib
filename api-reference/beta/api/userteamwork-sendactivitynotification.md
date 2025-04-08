@@ -238,7 +238,7 @@ The following example shows a request.
   "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
+POST https://graph.microsoft.com/beta/users/2f39ffba-51ca-4d2d-a66f-a020a83ce208/teamwork/sendActivityNotification
 Content-Type: application/json
 
 {
