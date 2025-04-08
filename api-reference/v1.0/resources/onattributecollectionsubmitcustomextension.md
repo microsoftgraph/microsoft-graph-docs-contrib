@@ -5,7 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 04/08/2025
 ---
 
 # onAttributeCollectionSubmitCustomExtension resource type
