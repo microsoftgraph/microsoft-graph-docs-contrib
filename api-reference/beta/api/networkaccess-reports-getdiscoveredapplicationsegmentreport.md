@@ -1,7 +1,7 @@
 ---
 title: "reports: getDiscoveredApplicationSegmentReport"
 description: "Returns a collection of discoveredApplicationSegmentReport based on aggregated traffic logs for a given period."
-author: "Mirit-Sadon"
+author: "miritsadon"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
@@ -80,37 +80,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/networkAccess/reports/getDiscoveredApplicationSegmentReport(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T23:59:59Z,userId=null)
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportsthis-getdiscoveredapplicationsegmentreport-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/reportsthis-getdiscoveredapplicationsegmentreport-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/reportsthis-getdiscoveredapplicationsegmentreport-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportsthis-getdiscoveredapplicationsegmentreport-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportsthis-getdiscoveredapplicationsegmentreport-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/reportsthis-getdiscoveredapplicationsegmentreport-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/reportsthis-getdiscoveredapplicationsegmentreport-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/reportsthis-getdiscoveredapplicationsegmentreport-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

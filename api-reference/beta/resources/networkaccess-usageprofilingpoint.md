@@ -1,7 +1,7 @@
 ---
 title: "usageProfilingPoint resource type"
 description: "Represents a data point with traffic count statistics for different access types in Global Secure Access."
-author: "Mirit-Sadon"
+author: "miritsadon"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"

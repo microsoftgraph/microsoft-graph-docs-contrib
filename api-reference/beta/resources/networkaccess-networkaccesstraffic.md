@@ -1,7 +1,7 @@
 ---
 title: "networkAccessTraffic resource type"
 description: "Represents a log of network traffic that passes through Global Secure Access services."
-author: "mirit-sadon"
+author: "miritsadon"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"

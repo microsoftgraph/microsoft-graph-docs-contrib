@@ -1,7 +1,7 @@
 ---
 title: "List traffic"
 description: "Get a list of the networkAccessTraffic objects and their properties."
-author: "mirit-sadon"
+author: "miritsadon"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
