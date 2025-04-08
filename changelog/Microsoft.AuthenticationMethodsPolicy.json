@@ -12,26 +12,10 @@
         },
         {
           "Id": "799131f4-3b4c-4f47-a100-a173117b0f96",
-          "ApiChange": "Resource",
-          "ChangedApiName": "x509CertificateAuthorityScope",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [x509CertificateAuthorityScope](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthorityScope?view=graph-rest-beta) resource.",
-          "Target": "x509CertificateAuthorityScope"
-        },
-        {
-          "Id": "799131f4-3b4c-4f47-a100-a173117b0f96",
           "ApiChange": "Property",
           "ChangedApiName": "certificateAuthorityScopes",
           "ChangeType": "Addition",
           "Description": "Added the **certificateAuthorityScopes** property to the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
-          "Target": "x509CertificateAuthenticationMethodConfiguration"
-        },
-        {
-          "Id": "799131f4-3b4c-4f47-a100-a173117b0f96",
-          "ApiChange": "Resource",
-          "ChangedApiName": "x509CertificateAuthenticationMethodConfiguration",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
           "Target": "x509CertificateAuthenticationMethodConfiguration"
         }
       ],

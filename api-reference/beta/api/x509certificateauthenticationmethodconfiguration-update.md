@@ -116,7 +116,12 @@ Content-Type: application/json
     },
     "certificateAuthorityScopes": [
         {
-            "@odata.type": "microsoft.graph.x509CertificateAuthorityScope"
+            "subjectKeyIdentifier": "aaaaaaaabbbbcccc111122222222222222333333",
+            "publicKeyInfrastructureIdentifier": "Contoso PKI",
+            "includeTargets": {
+                "id": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeeeee"
+                "targetType": "group"
+            }
         }    
     ],
     "includeTargets": [
