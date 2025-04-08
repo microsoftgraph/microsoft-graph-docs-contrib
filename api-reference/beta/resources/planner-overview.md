@@ -17,7 +17,7 @@ You can use the Planner API in Microsoft Graph to create tasks and assign them t
 Before you get started with the Planner API, it's helpful to understand how the main objects relate to each other and to Microsoft 365 groups.
 
 ## Plan containers
-In Microsoft Planner, plans are always contained in another resource. The containing resource, [plannerPlanContainer](plannerplancontainer.md), determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. You can create a plan in a container of one of the following types: [driveItem](driveitem.md), Microsoft 365 [group](group.md), , [plannerTask](plannertask.md), Planner project, [roster](plannerroster.md), [teamsChannel](channel.md), or [user](user.md).
+In Microsoft Planner, plans are always contained in another resource. The containing resource, [plannerPlanContainer](plannerplancontainer.md), determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. You can create a plan in a container of one of the following types: [driveItem](driveitem.md), Microsoft 365 [group](group.md), [plannerTask](plannertask.md), Planner project, [roster](plannerroster.md), [teamsChannel](channel.md), or [user](user.md).
 
 The most common type of container is a group.
 
