@@ -87,6 +87,7 @@ GET https://graph.microsoft.com/beta/networkAccess/reports/getDiscoveredApplicat
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
+> **Note**: The acronym "API" stands for "Application Programming Interface."
 <!-- {
   "blockType": "response",
   "truncated": true,
