@@ -119,7 +119,7 @@ Content-Type: application/json
             "subjectKeyIdentifier": "aaaaaaaabbbbcccc111122222222222222333333",
             "publicKeyInfrastructureIdentifier": "Contoso PKI",
             "includeTargets": {
-                "id": "aaaaaaaa-bbbb-cccc-1111-222222222222"
+                "id": "aaaaaaaa-bbbb-cccc-1111-222222222222",
                 "targetType": "group"
             }
         }    
