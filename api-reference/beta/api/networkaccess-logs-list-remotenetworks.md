@@ -1,7 +1,7 @@
 ---
 title: "List remoteNetworkHealthEvent objects"
 description: "Get a list of the remoteNetworkHealthEvent objects and their properties."
-author: "Moti-ba"
+author: "Mirit-Sadon"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"

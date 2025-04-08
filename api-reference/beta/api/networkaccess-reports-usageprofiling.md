@@ -1,7 +1,7 @@
 ---
 title: "reports: usageProfiling"
 description: "Returns an object containing count tables for the traffic types in Global Secure Access."
-author: "Moti-ba"
+author: "Mirit-Sadon"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"

@@ -1,11 +1,11 @@
 ---
 title: "networkAccessTraffic resource type"
-description: "Represents a network access traffic log entry. It contains comprehensive information regarding network traffic events, offering detailed insights into the nature and characteristics of the traffic through the Global Secure Access (GSA) services."
-author: "Moti-ba"
+description: "Represents a log of network traffic that passes through Global Secure Access services."
+author: "mirit-sadon"
+ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
 doc_type: resourcePageType
-ms.date: 05/23/2024
 ---
 
 # networkAccessTraffic resource type

@@ -1,11 +1,11 @@
 ---
-title: "List networkAccessTraffic"
-description: "Get a list of log events for traffic routed through the Global Secure Access services."
-author: "Moti-ba"
+title: "List traffic"
+description: "Get a list of the networkAccessTraffic objects and their properties."
+author: "mirit-sadon"
+ms.date: 04/08/2025
 ms.localizationpriority: medium
-ms.subservice: entra-global-secure-access
+ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
-ms.date: 08/13/2024
 ---
 
 # List networkAccessTraffic

@@ -1,7 +1,7 @@
 ---
 title: "discoveredApplicationSegmentReport resource type"
 description: "Represents a report about application segments detected in network traffic through Global Secure Access services."
-author: "Moti-ba"
+author: "Mirit-Sadon"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"

@@ -1,7 +1,7 @@
 ---
 title: "reports: getDiscoveredApplicationSegmentReport"
 description: "Returns a collection of discoveredApplicationSegmentReport based on aggregated traffic logs for a given period."
-author: "Moti-ba"
+author: "Mirit-Sadon"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
