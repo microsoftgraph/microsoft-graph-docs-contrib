@@ -48,7 +48,7 @@ In the request URL, provide the following query parameters with values.
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|Start of the period for aggregating traffic logs.|
 |endDateTime|DateTimeOffset|End of the period for aggregating traffic logs.|
-|userId|String|The AAD user Id of the user. Optional.|
+|userId|String|The Azure Active Directory (AAD) user ID of the user in GUID format. Optional. When used, it will return only the discovered application segments accessed by the user.|
 
 
 ## Request headers
