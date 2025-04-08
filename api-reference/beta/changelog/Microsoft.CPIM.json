@@ -1,0 +1,94 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "b97f32e5-8997-421c-86c1-ae513095dbb3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionStartCustomExtensionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionStartCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionStartCustomExtensionHandler?view=graph-rest-1.0) resource.",
+          "Target": "onAttributeCollectionStartCustomExtensionHandler"
+        },
+        {
+          "Id": "b97f32e5-8997-421c-86c1-ae513095dbb3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionStartHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionStartHandler?view=graph-rest-1.0) resource.",
+          "Target": "onAttributeCollectionStartHandler"
+        },
+        {
+          "Id": "b97f32e5-8997-421c-86c1-ae513095dbb3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionSubmitCustomExtensionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionSubmitCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionSubmitCustomExtensionHandler?view=graph-rest-1.0) resource.",
+          "Target": "onAttributeCollectionSubmitCustomExtensionHandler"
+        },
+        {
+          "Id": "b97f32e5-8997-421c-86c1-ae513095dbb3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionSubmitHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionSubmitHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionSubmitHandler?view=graph-rest-1.0) resource.",
+          "Target": "onAttributeCollectionSubmitHandler"
+        },
+        {
+          "Id": "b97f32e5-8997-421c-86c1-ae513095dbb3",
+          "ApiChange": "Property",
+          "ChangedApiName": "onAttributeCollectionStart",
+          "ChangeType": "Addition",
+          "Description": "Added the **onAttributeCollectionStart** property to the [externalUsersSelfServiceSignUpEventsFlow](https://learn.microsoft.com/en-us/graph/api/resources/externalUsersSelfServiceSignUpEventsFlow?view=graph-rest-1.0) resource.",
+          "Target": "externalUsersSelfServiceSignUpEventsFlow"
+        },
+        {
+          "Id": "b97f32e5-8997-421c-86c1-ae513095dbb3",
+          "ApiChange": "Property",
+          "ChangedApiName": "onAttributeCollectionSubmit",
+          "ChangeType": "Addition",
+          "Description": "Added the **onAttributeCollectionSubmit** property to the [externalUsersSelfServiceSignUpEventsFlow](https://learn.microsoft.com/en-us/graph/api/resources/externalUsersSelfServiceSignUpEventsFlow?view=graph-rest-1.0) resource.",
+          "Target": "externalUsersSelfServiceSignUpEventsFlow"
+        },
+        {
+          "Id": "b97f32e5-8997-421c-86c1-ae513095dbb3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionStartCustomExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionStartCustomExtension](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionStartCustomExtension?view=graph-rest-1.0) resource.",
+          "Target": "onAttributeCollectionStartCustomExtension"
+        },
+        {
+          "Id": "b97f32e5-8997-421c-86c1-ae513095dbb3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionStartListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionStartListener?view=graph-rest-1.0) resource.",
+          "Target": "onAttributeCollectionStartListener"
+        },
+        {
+          "Id": "b97f32e5-8997-421c-86c1-ae513095dbb3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionSubmitCustomExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionSubmitCustomExtension](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionSubmitCustomExtension?view=graph-rest-1.0) resource.",
+          "Target": "onAttributeCollectionSubmitCustomExtension"
+        },
+        {
+          "Id": "b97f32e5-8997-421c-86c1-ae513095dbb3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionSubmitListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionSubmitListener](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionSubmitListener?view=graph-rest-1.0) resource.",
+          "Target": "onAttributeCollectionSubmitListener"
+        }
+      ],
+      "Id": "b97f32e5-8997-421c-86c1-ae513095dbb3",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-04-08T00:14:01.5601131Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    }
+  ]
+}
