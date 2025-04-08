@@ -90,7 +90,7 @@ The following tabs show the types of activity feed notification cards that you c
 
 Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). The following are the requirements for sending activity feed notifications:
 
-- The Teams app manifest must have the Microsoft Entra app ID added to the `webApplicationInfo` section. For more information, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+- The Teams app manifest must have the Microsoft Entra app ID added to the `webApplicationInfo` section. For more information, see the [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - Activity notifications can be sent with or without activity types declared in the app manifest.
   - By default, you can use the activity notification APIs without declaring the `activities` section in the manifest. The `systemDefault` activity type is reserved, allowing you to provide free-form text in the `Actor+Reason` line of the activity feed notification.  For more information, see [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
   - If you want to send a templated notification in the traditional mode, activity types must be declared in the [Activities](#activities-update) section. For more information, see [Manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
@@ -1028,7 +1028,7 @@ The settings appear after the Teams app sends the first notification. This reduc
 - [Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)
 - [Send activity feed notifications .NET sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)
 - [Send activity feed notifications Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/nodejs)
-- [Send an activity feed notification in a chat](graph/api/chat-sendactivitynotification?view=graph-rest-beta&tabs=http)
-- [Send an activity feed notification in a team](graph/api/team-sendactivitynotification?view=graph-rest-beta&tabs=http)
-- [Send an activity feed notification to a user](graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta&tabs=http)
-- [Send activity feed notifications to multiple users in bulk](graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta&tabs=http)
+- [Send an activity feed notification in a chat](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-beta&tabs=http&preserve-view=true)
+- [Send an activity feed notification in a team](https://learn.microsoft.com/graph/api/team-sendactivitynotification?view=graph-rest-beta&tabs=http&preserve-view=true)
+- [Send an activity feed notification to a user](https://learn.microsoft.com/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta&tabs=http&preserve-view=true)
+- [Send activity feed notifications to multiple users in bulk](https://learn.microsoft.com/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta&tabs=http&preserve-view=true)
