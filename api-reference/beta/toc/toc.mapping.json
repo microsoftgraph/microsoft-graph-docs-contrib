@@ -2991,7 +2991,8 @@
             {
               "name": "Copilot settings",
               "resources": [
-                "copilotAdminLimitedMode"
+                "copilotAdminLimitedMode",
+                "enhancedPersonalizationSetting"
               ],
               "complexTypes": [
                 "copilotAdmin",

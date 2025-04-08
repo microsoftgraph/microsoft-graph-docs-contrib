@@ -4,7 +4,7 @@ description: "Learn how to Update the properties of an enhancedPersonalizationSe
 author: "Ross-GH"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
-ms.service: "microsoft-365-copilot"
+ms.subservice: "meetings-copilot"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an enhancedPersonalizationSetting object.
+Update the properties of an [enhancedPersonalizationSetting](../resources/enhancedpersonalizationsetting.md) object.
 
 ## Permissions
 
@@ -50,7 +50,7 @@ PATCH /copilot/settings/people/enhancedPersonalization
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean|If true, enables the Enhanced Personalization control and therefore related features as defined [here](/graph/control-enhanced-personalization-privacy) Required.|
+|isEnabledInOrganization|Boolean|If true, enables the enhanced personalization control and therefore related features as defined in [control enhanced personalization privacy](/graph/control-enhanced-personalization-privacy) Required.|
 |disabledForGroup|String|The ID of a Microsoft Entra group to which the value is used to disable the control for populated users. Optional.|
 
 ## Response

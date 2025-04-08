@@ -1,6 +1,32 @@
 {
   "changelog": [  
     {
+      "ChangeList": [
+        {
+          "Id": "f8b97d2c-dc2f-442c-ba64-ca7ce0fb6e12",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "enhancedPersonalization",
+          "ChangeType": "Addition",
+          "Description": "Added the **enhancedPersonalization** relationship to the [copilotPeopleAdminSetting](https://learn.microsoft.com/en-us/graph/api/resources/copilotPeopleAdminSetting?view=graph-rest-beta) resource.",
+          "Target": "copilotPeopleAdminSetting"
+        },
+        {
+          "Id": "f8b97d2c-dc2f-442c-ba64-ca7ce0fb6e12",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enhancedPersonalizationSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [enhancedPersonalizationSetting](https://learn.microsoft.com/en-us/graph/api/resources/enhancedPersonalizationSetting?view=graph-rest-beta) resource.",
+          "Target": "enhancedPersonalizationSetting"
+        }
+      ],
+      "Id": "f8b97d2c-dc2f-442c-ba64-ca7ce0fb6e12",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-03T11:38:40.79272Z",
+      "WorkloadArea": "Microsoft.PeopleAdmin",
+      "SubArea": ""
+    },  
+    {
      "ChangeList": [     
        {
         "Id": "8a7c8eff-e942-4888-80b2-447a38615689",

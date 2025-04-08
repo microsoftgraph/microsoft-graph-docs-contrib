@@ -1,10 +1,10 @@
 ---
 title: "enhancedPersonalizationSetting resource type"
-description: "Describes the Enhanced Personalization resource, methods, and properties. Provides a JSON representation for the resource type."
+description: "Represents a setting that controls whether Microsoft 365 Copilot can use features that enhance its personalization capabilities."
 author: "Ross-GH"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
-ms.service: "microsoft-365-copilot"
+ms.subservice: "meetings-copilot"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a setting that controls whether Microsoft 365 Copilot can use features that enhance it's personalization capabilities. If enabled multiple features contributing to deeper personalization are enabled. More detail can be found [here](/graph/control-enhanced-personalization-privacy).
+Represents a setting that controls whether Microsoft 365 Copilot can use features that enhance its personalization capabilities. If enabled multiple features contributing to deeper personalization are enabled. For more information, see [control enhanced personalization privacy](/graph/control-enhanced-personalization-privacy).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |disabledForGroup|String|The ID of a Microsoft Entra group to which the value is used to disable the control for populated users. The default value is `null`. This parameter is optional.|
-|isEnabledInOrganization|Boolean|If true, enables the Enhanced Personalization control and therefore related features as defined [here](/graph/control-enhanced-personalization-privacy)|
+|isEnabledInOrganization|Boolean|If true, enables the enhanced personalization control and therefore related features as defined in [control enhanced personalization privacy](/graph/control-enhanced-personalization-privacy)|
 
 ## Relationships
 

@@ -4,7 +4,7 @@ description: "Read the properties and relationships of an enhancedPersonalizatio
 author: "Ross-GH"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
-ms.service: "microsoft-365-copilot"
+ms.subservice: "meetings-copilot"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an enhancedPersonalizationSetting object.
+Read the properties and relationships of an [enhancedPersonalizationSetting](../resources/enhancedpersonalizationsetting.md) object.
 
 ## Permissions
 
