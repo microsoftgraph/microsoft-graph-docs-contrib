@@ -1143,7 +1143,12 @@
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
-                "authenticationConditionApplication"
+                "authenticationConditionApplication",
+                "onAttributeCollectionHandler",
+                "onAttributeCollectionStartHandler",
+                "onAttributeCollectionStartCustomExtensionHandler",
+                "onAttributeCollectionSubmitHandler",
+                "onAttributeCollectionSubmitCustomExtensionHandler"
               ]
             },
             {
