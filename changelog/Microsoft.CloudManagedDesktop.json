@@ -13,17 +13,17 @@
             {
               "Id": "d96d0af7-66ee-4bbf-80b4-e35216afb105",
               "ApiChange": "Method",
-              "ChangedApiName": "getCloudPcRecommendationReports",
-              "ChangeType": "Deprecation",
-              "Description": "Deprecated the [getCloudPcRecommendationReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getCloudPcRecommendationReports?view=graph-rest-beta) method of the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource. Going forward, use the [retrieveCloudPcRecommendationReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-retrievecloudpcrecommendationreports?view=graph-rest-beta) API.",
-              "Target": "cloudPcReports"
-            },
-            {
-              "Id": "d96d0af7-66ee-4bbf-80b4-e35216afb105",
-              "ApiChange": "Method",
               "ChangedApiName": "retrieveCloudPcRecommendationReports",
               "ChangeType": "Addition",
               "Description": "Added the [retrieveCloudPcRecommendationReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-retrieveCloudPcRecommendationReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
+              "Target": "cloudPcReports"
+            },
+                        {
+              "Id": "d96d0af7-66ee-4bbf-80b4-e35216afb105",
+              "ApiChange": "Method",
+              "ChangedApiName": "getCloudPcRecommendationReports",
+              "ChangeType": "Deprecation",
+              "Description": "Deprecated the [getCloudPcRecommendationReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getCloudPcRecommendationReports?view=graph-rest-beta) method of the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource. This API is deprecated and will stop returning data on July 01, 2025. Going forward, use the [retrieveCloudPcRecommendationReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-retrievecloudpcrecommendationreports?view=graph-rest-beta) API.",
               "Target": "cloudPcReports"
             }
           ],
