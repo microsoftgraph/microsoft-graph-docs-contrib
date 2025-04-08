@@ -108,3 +108,7 @@ As an alternative to using the **PageIterator** class, you can manually check th
 
 ---
 <!-- markdownlint-enable MD024 -->
+
+## Error handling
+
+[!INCLUDE [paging-error-handling](../includes/paging-error-handling.md)]

@@ -106,6 +106,12 @@ items:
     href: ../../api/driveitem-createuploadsession.md
   - name: Download file (deprecated)
     href: ../../api/driveitem-get-content.md
+  - name: Open extensions
+    items:
+    - name: Create open extension
+      href: ../../api/opentypeextension-post-opentypeextension.md
+    - name: Get open extension
+      href: ../../api/opentypeextension-get.md
 - name: Bundle
   items:
   - name: Bundle
