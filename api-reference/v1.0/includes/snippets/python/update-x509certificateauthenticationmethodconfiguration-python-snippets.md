@@ -13,6 +13,8 @@ from msgraph.generated.models.x509_certificate_authentication_mode_configuration
 from msgraph.generated.models.x509_certificate_authentication_mode import X509CertificateAuthenticationMode
 from msgraph.generated.models.x509_certificate_rule import X509CertificateRule
 from msgraph.generated.models.x509_certificate_rule_type import X509CertificateRuleType
+from msgraph.generated.models.x509_certificate_c_r_l_validation_configuration import X509CertificateCRLValidationConfiguration
+from msgraph.generated.models.x509_certificate_c_r_l_validation_configuration_state import X509CertificateCRLValidationConfigurationState
 from msgraph.generated.models.authentication_method_target import AuthenticationMethodTarget
 from msgraph.generated.models.authentication_method_target_type import AuthenticationMethodTargetType
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
@@ -40,6 +42,11 @@ request_body = X509CertificateAuthenticationMethodConfiguration(
 				identifier = "1.2.3.4",
 				x509_certificate_authentication_mode = X509CertificateAuthenticationMode.X509CertificateMultiFactor,
 			),
+		],
+	),
+	crl_validation_configuration = X509CertificateCRLValidationConfiguration(
+		state = X509CertificateCRLValidationConfigurationState.Disabled,
+		exempted_certificate_authorities_subject_key_identifiers = [
 		],
 	),
 	include_targets = [

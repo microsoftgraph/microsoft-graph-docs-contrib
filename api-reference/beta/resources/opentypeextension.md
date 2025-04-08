@@ -29,6 +29,7 @@ The following resource support open extensions:
 <!--+ [administrativeUnit](/graph/api/resources/administrativeunit)-->
 + [contact](/graph/api/resources/contact)
 + [device](/graph/api/resources/device)
++ [driveItem](driveitem.md)
 + [event](/graph/api/resources/event) for both user and group calendars
 + [message](/graph/api/resources/message)
 + [organization](/graph/api/resources/organization)
@@ -41,6 +42,14 @@ The following resource support open extensions:
 > **Note:** \* Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 
 For more information about Microsoft Graph extensibility including limits for open extensions, see [Add custom properties to resources using extensions](/graph/extensibility-overview) and [Add custom data to users using open extensions](/graph/extensibility-open-users).
+
+### Drive item-specific considerations
+
+Apply the following limits when you create extension resources on driveItem objects:
+- A maximum of 100 custom extensions per item totaled across all apps.
+- A maximum of five custom extensions per app ID.
+- A maximum size of 50 KB per extension.
+- A maximum total size of 50 MB for all extensions across all items.
 
 ### Outlook-specific considerations
 
@@ -60,10 +69,10 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [baseTask](basetask.md), [baseTaskList](basetasklist.md)[contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
-|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
-|[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
-|[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [baseTask](basetask.md), [baseTaskList](basetasklist.md)[contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [todoTask](todotask.md), [todoTaskList](todotasklist.md), or [driveItem](driveitem.md) that contains an **openTypeExtension** object. | Create an **openTypeExtension** object in an existing or new resource instance.|
+|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read the properties and relationships of an **openTypeExtension** object.|
+|[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update an **openTypeExtension** object. |
+|[Delete](../api/opentypeextension-delete.md) | None |Delete an **openTypeExtension** object. |
 
 ## Properties
 
