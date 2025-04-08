@@ -39,7 +39,7 @@ When you [create a new plan](../api/planner-post-plans.md), set the **container*
 
 ### Container type: Planner task
 
-The `plannerTask` container type supports plans to be contained within a Planner task. Plans contained by a Planner task are deleted when the task is deleted.
+The `plannerTask` container type supports plans to be contained by a Planner task. Plans contained by a Planner task are deleted when the task is deleted.
 
 To [create a new plan](../api/planner-post-plans.md) in the container of a Planner task, set the **container** property on a [plan](plannerplan.md) object with **type** set to `plannerTask`, and set **id** to the ID of the Planner task.
 
