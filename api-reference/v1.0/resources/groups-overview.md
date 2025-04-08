@@ -290,7 +290,7 @@ Using Microsoft Graph, you can perform the following common operations on groups
 | **Manage group membership and ownership** |  |
 | List the members of a group, and add or remove members. | [List members](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md) |
 | Determine whether a user is a member of a group, get all the groups the user is a member of. | [Check member groups](../api/directoryobject-checkmembergroups.md) <br/> [Get member groups](../api/directoryobject-getmembergroups.md) |
-| List the owners of a group, and add or remove owners. | [List owners](../api/group-list-owners.md) <br/> [Add owner](../api/group-post-members.md) <br/> [Remove owner](../api/group-delete-members.md) |
+| List the owners of a group, and add or remove owners. | [List owners](../api/group-list-owners.md) <br/> [Add owner](../api/group-post-owners.md) <br/> [Remove owner](../api/group-delete-owners.md) |
 | **Group functionality for Microsoft 365 apps** |  |
 | Manage group conversations | [Create](../api/group-post-conversations.md), [get](../api/group-get-conversation.md), or [delete](../api/group-delete-conversation.md)  |
 | Schedule and manage calendar events on a group calendar | [Create](../api/group-post-events.md), [list](../api/group-list-events.md), [get](../api/group-get-event.md), [update](../api/group-update-event.md), [delete](../api/group-delete-event.md) |

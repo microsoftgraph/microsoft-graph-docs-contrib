@@ -1775,6 +1775,8 @@ items:
         href: ../../api/intune-apps-win32lobapp-delete.md
       - name: Update win32LobApp
         href: ../../api/intune-apps-win32lobapp-update.md
+      - name: enableApplicableArchitectures action
+        href: ../../api/intune-apps-win32lobapp-enableapplicablearchitectures.md
     - name: Windows AppX
       items:
       - name: Windows AppX
@@ -6396,7 +6398,7 @@ items:
     - name: Managed device
       items:
       - name: Managed device
-        href: ../../resources/intune-devices-manageddevice.md
+        href: ../../resources/intune-shared-manageddevice.md
       - name: Get managedDevice
         href: ../../api/intune-devices-manageddevice-get.md
       - name: Update managedDevice
