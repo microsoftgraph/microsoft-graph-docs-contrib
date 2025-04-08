@@ -47,12 +47,22 @@ To get all attendance reports for a webinar session with delegated and app permi
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
 ```
 
+To get all attendance reports for a townhall session with delegated and app permission:
+<!-- { "blockType": "ignored" } -->
+``` http
+GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attendanceReports
+```
+
 > [!TIP]
 >
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
->- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
+>- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEvventWebinar.md) object.
 >- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
+>- `townhallId` is the **id** of an [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+
+> [!Note] 
+>  Townhall Attendance Records will not return external registration information or registration id because Townhall does not currently support registration.
 
 ## Optional query parameters
 
@@ -247,3 +257,46 @@ Content-Type: application/json
 > [!TIP] 
 >  If your scenario needs the `externalEventInformation` property, an explicit call to the **[GET attendance report API](../api/meetingattendancereport-get.md)** is required. 
 > This data is not returned by default when querying the virtual event or online meeting object.  
+
+### Example 3: List attendance reports for a townhall session
+
+#### Request
+
+The following example shows a request.
+
+``` http
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attendanceReports
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.meetingAttendanceReport)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/virtualEvents/townhalls('336f94f4-3a81-5130-43e9-88f3-fcb3582cde37')/sessions('a0f934c324b7785c')/attendanceReports/$entity",
+  "value": [
+    {
+      "id": "c9b6db1c-d5eb-427d-a5c0-2022d7",
+      "totalParticipantCount": 1,
+      "meetingStartDateTime": "2021-10-05T04:38:23.945Z",
+      "meetingEndDateTime": "2021-10-05T04:43:49.77Z"
+    },
+    {
+      "id": "2c2c2454-7613-4d6e-9c7c-4ce89",
+      "totalParticipantCount": 2,
+      "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
+      "meetingEndDateTime": "2021-10-04T23:18:57.563Z"
+    }
+  ]
+}
+```
