@@ -44,7 +44,7 @@ In the request URL, provide the following parameters with a valid value.
 | Parameter | Type   | Description                                                                                                                                                                                                                                             |
 | :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, and `D60`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. The default value is D30. |
-| serviceArea | string | Specifies the Service Area (Exchange, Teams Messaging, or Teams Calling) for which the data should be filtered. By default, the API returns the data for all service areas. |
+| serviceArea | string | Specifies the Service Area (Microsoft Exchange, Microsoft Teams Messaging, Micorsoft Teams Calling, or Microsoft Teams Presence) for which the data should be filtered. By default, the API returns the data for all service areas. |
 | appId | string | Specifies the app ID for filtering the data returned by the API. By default, the API returns the data for all apps within the tenant. |
 
 ## Request headers
