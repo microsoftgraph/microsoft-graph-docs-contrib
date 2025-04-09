@@ -55,21 +55,15 @@ If successful, this method returns a `200 OK` response code and a [networkAccess
 
 ### Example 1: Get a specific networkAccessTraffic entry by ID
 
-#### Request
+### Request
 
 The following is an example of a request.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_networkaccesstraffic"
-}-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/logs/traffic/5062f456-9d9e-477b-b788-b7aa6b5d402b
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 
