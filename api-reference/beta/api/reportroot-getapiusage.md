@@ -1,5 +1,5 @@
 ---
-title: "reportRoot: getAPIUsage"
+title: "reportRoot: getApiUsage"
 description: "Get a report that shows Microsoft Graph API usage"
 ms.localizationpriority: medium
 ms.subservice: "reports"
