@@ -17,11 +17,26 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## April 2025: New and generally available
+
+### Teamwork and communications | Calls and online meetings
+
+The **basicServiceSetIdentifier** property on [networkInfo](/graph/api/resources/callrecords-networkinfo) isn't available if the user disables precise location sharing in their operating system or Microsoft Teams app settings.
+
 ## April 2025: New in preview only
 
 ### Device and app management | Cloud licensing
 
 Updated the permissions for the [List usageRights for user](/graph/api/cloudlicensing-groupcloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true) and [Get usageRight](/graph/api/cloudlicensing-usageright-get?view=graph-rest-beta&preserve-view=true) APIs.
+
+### Files
+
+Added the `forceInfectedDownload` as a supported prefer header to the [Get content](/graph/api/driveitem-get-content?view=graph-rest-beta&preserve-view=true) and [Get contentStream](/graph/api/driveitem-get-contentstream?view=graph-rest-beta&preserve-view=true) methods to enable the download of infected files when specifically requested.
+
+### Teamwork and communications | Calls and online meetings
+
+- The **basicServiceSetIdentifier** property on [networkInfo](/graph/api/resources/callrecords-networkinfo?view=graph-rest-beta&preserve-view=true) isn't available if the user disables precise location sharing in their operating system or Microsoft Teams app settings.
+- Updated the throttling information for [virtualEvent](/graph/api/resources/virtualevent). You can now perform 750 `GET` requests per app across all tenants in a 30-second period, and 15 `Create`, `Update`, and `Delete` requests per app across all tenants in a 30-second period, instead of the 10,000 requests per app each month.
 
 ## March 2025: New and generally available
 
@@ -39,13 +54,11 @@ Use the **autopatch** property on [cloudPcProvisioningPolicy](/graph/api/resourc
 
 ### Identity and access | Identity and sign-in
 
-Deprecated the following resources and their associated APIs that support the Microsoft Entra lifecycle announcements APIs.
-
-- [changeItemBase](/graph/api/resources/changeItemBase) resource type
-- [announcement](/graph/api/resources/changeItemBase) resource type
-- [roadmap](/graph/api/resources/changeItemBase) resource type
-
-The APIs will stop returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
+- Deprecated the following resources and their associated APIs that support the Microsoft Entra lifecycle announcements APIs. The APIs will stop returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
+  - [announcement](/graph/api/resources/announcement)
+  - [changeItemBase](/graph/api/resources/changeitembase)
+  - [roadmap](/graph/api/resources/roadmap)
+- Use the **applicationFilter** property on [conditionalAccessApplications](/graph/api/resources/conditionalaccessapplications) to define the dynamic-application-syntax rule to include or exclude cloud applications.
 
 ### Microsoft Graph connector
 
@@ -66,7 +79,7 @@ Updated the throttling thresholds for the [callRecord](/graph/api/resources/call
 
 ### Security
 
-Added support for the `md5` and `sha256Ac` file hash algorithms that are now displayed in the **fileDetails** property of the [fileEvidence](/graph/api/resources/security-fileevidence) resource.
+Added support for the **md5** and **sha256Ac** file hash algorithms that are now displayed in the **fileDetails** property of the [fileEvidence](/graph/api/resources/security-fileevidence) resource.
 
 ## March 2025: New in preview only
 
@@ -90,6 +103,14 @@ Create and manage [sharePointGroup](/graph/api/resources/sharepointgroup?view=gr
 
 - [Get](/graph/api/mailfolderoperation-get?view=graph-rest-beta&preserve-view=true) or [list](/graph/api/mailfolder-list-operations?view=graph-rest-beta&preserve-view=true) long-running operations of a [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true).
 - [Update](/graph/api/mailfolder-updateallmessagesreadstate?view=graph-rest-beta&preserve-view=true) the read state of all messages in a [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true).
+
+### Reports | Identity and access reports 
+
+Use the **linkableIdentifiers** property on [auditActivityInitiator](/graph/api/resources/auditactivityinitiator?view=graph-rest-beta&preserve-view=true) resource to get a set of linkable claims to link together all the authentication artifacts issued from a single interactive root authentication.
+
+### Security
+
+Added support for the **md5** and **sha256Ac** file hash algorithms that are now displayed in the **fileDetails** property of the [fileEvidence](/graph/api/resources/security-fileevidence?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Tasks and plans
 
