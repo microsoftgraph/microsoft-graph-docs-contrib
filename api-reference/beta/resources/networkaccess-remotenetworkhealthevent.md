@@ -19,6 +19,7 @@ This is an abstract type.
 
 ## Methods
 |Method|Return type|Description|
+|:---|:---|:---|
 |[List](../api/networkaccess-logs-list-remotenetworks.md)|[microsoft.graph.networkaccess.remotenetworkhealthevent](../resources/networkaccess-remotenetworkhealthevent.md) collection|Get a list of the [microsoft.graph.networkaccess.remotenetworkhealthevent](../resources/networkaccess-remotenetworkhealthevent.md) objects and their properties.|
 
 ## Properties
