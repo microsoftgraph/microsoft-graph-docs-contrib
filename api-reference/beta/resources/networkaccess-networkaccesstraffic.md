@@ -46,7 +46,7 @@ Represents a network access traffic log entry. It contains comprehensive informa
 |httpMethod|microsoft.graph.networkaccess.httpMethod|The HTTP method inspected in the intercepted HTTP traffic. Supports $filter (`eq`) and `$orderby`.|
 |initiatingProcessName|String|The process initiating the traffic transaction. Supports $filter (`eq`) and `$orderby`.|
 |networkProtocol|microsoft.graph.networkaccess.networkingProtocol|Represents the networking protocol used for communication. The possible values are: `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`, `unknownFutureValue`. Supports $filter (`eq`) and `$orderby`.|
-|operationStatus|microsoft.graph.networkaccess.networkTrafficOperationStatus|Indication if traffic was successfully processed. Supports $filter (`eq`) and `$orderby`.|
+|operationStatus|microsoft.graph.networkaccess.networkTrafficOperationStatus|Indication if traffic was successfully processed. The possible values are: `success`, `failure`, `unknownFutureValue`.  Supports $filter (`eq`) and `$orderby`.|
 |policyId|String|Represents a unique identifier assigned to a policy. Supports $filter (`eq`) and `$orderby`.|
 |policyName|String|The name of the filtering policy associated with the action performed on traffic. Supports $filter (`eq`) and `$orderby`.|
 |policyRuleId|String|Represents a unique identifier assigned to a policy rule. Supports $filter (`eq`) and `$orderby`.|

@@ -26,7 +26,7 @@ Represents details about private access in a network transaction or connection.
 |connectorIp|String|Private access connector IP address.|
 |connectorName|String|Private access connector name.|
 |processingRegion|String|Region where the request was processed by the backend service.|
-|thirdPartyTokenDetails|[thirdPartyTokenDetails](../resources/networkaccess-thirdpartytokendetails.md)|Details about third-party tokens used in the transaction.|
+|thirdPartyTokenDetails|[microsoft.graph.networkaccess.thirdPartyTokenDetails](../resources/networkaccess-thirdpartytokendetails.md)|Details about third-party tokens used in the transaction.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
