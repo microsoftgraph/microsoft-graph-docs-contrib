@@ -69,12 +69,7 @@ If successful, this function returns a `200 OK` response code and a [usageProfil
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "reportsthis.usageprofiling"
-}
--->
+
 ``` http
 GET https://graph.microsoft.com/beta/networkAccess/reports/usageProfiling(startDateTime=2023-03-01T00:00:00Z,endDateTime=2023-03-31T23:59:59Z,aggregatedBy='transactions',discoveredApplicationSegmentId=null)
 ```

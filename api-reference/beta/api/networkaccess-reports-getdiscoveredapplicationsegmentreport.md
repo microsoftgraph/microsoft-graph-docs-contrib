@@ -68,12 +68,7 @@ If successful, this function returns a `200 OK` response code and a [discoveredA
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "reportsthis.getdiscoveredapplicationsegmentreport"
-}
--->
+
 ``` http
 GET https://graph.microsoft.com/beta/networkAccess/reports/getDiscoveredApplicationSegmentReport(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T23:59:59Z,userId=null)
 ```
