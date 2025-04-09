@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccess/reports/getDiscoveredApplicationSegmentReport
+GET /networkAccess/reports/getDiscoveredApplicationSegmentReport(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters
@@ -44,8 +44,8 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Start of the period for aggregating traffic logs.|
-|endDateTime|DateTimeOffset|End of the period for aggregating traffic logs.|
+|startDateTime|DateTimeOffset|Start of the period for aggregating traffic logs. Required.|
+|endDateTime|DateTimeOffset|End of the period for aggregating traffic logs. Required.|
 |userId|String|The Azure Active Directory (AAD) user ID of the user in GUID format. Optional. When used, it will return only the discovered application segments accessed by the user.|
 
 

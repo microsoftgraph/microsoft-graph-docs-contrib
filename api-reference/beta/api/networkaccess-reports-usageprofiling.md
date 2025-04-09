@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccess/reports/usageProfiling
+GET /networkAccess/reports/usageProfiling(startDateTime={startDateTime},endDateTime={endDateTime},aggregatedBy={aggregatedBy})
 ```
 
 ## Function parameters
@@ -44,9 +44,9 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Start of the period for aggregating traffic logs.|
-|endDateTime|DateTimeOffset|End of the period for aggregating traffic logs.|
-|aggregatedBy|microsoft.graph.networkaccess.aggregationFilter|The aggregation type for the returned data. Options include: transactions, users, devices, bytesSent, bytesReceived, totalBytes.|
+|startDateTime|DateTimeOffset|Start of the period for aggregating traffic logs. Required.|
+|endDateTime|DateTimeOffset|End of the period for aggregating traffic logs. Required.|
+|aggregatedBy|microsoft.graph.networkaccess.aggregationFilter|The aggregation type for the returned data. Options include: `transactions`, `users`, `devices`, `bytesSent`, `bytesReceived`, `totalBytes`. Required.|
 |discoveredApplicationSegmentId|String|The unique identifier of the discovered application segment. Optional.|
 
 ## Request headers
