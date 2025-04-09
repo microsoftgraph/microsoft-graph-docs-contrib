@@ -5,13 +5,14 @@ ms.localizationpriority: medium
 author: "msdhou"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # device: delta
 
 Namespace: microsoft.graph
 
-Get newly created, updated, or deleted devices without performing a full read of the entire resource collection. For more information, see [Using delta query](/graph/delta-query-overview).
+Get newly created, updated, or deleted devices without performing a full read of the entire resource collection. For more information, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "device_delta" } -->
 [!INCLUDE [permissions-table](../includes/permissions/device-delta-permissions.md)]
+
+[!INCLUDE [rbac-devices-apis-read](../includes/rbac-for-apis/rbac-devices-apis-read.md)]
 
 ## HTTP request
 To begin tracking changes, you make a request including the delta function on the **device** resource. 
@@ -35,7 +38,7 @@ GET /devices/delta
 
 Tracking changes incurs a round of one or more **delta** function calls. To use any query parameter other than `$deltatoken` and `$skiptoken`, you must specify it in the initial **delta** request and Microsoft Graph automatically encodes any specified parameters into the `$deltatoken` portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response.
 
-| Query parameter	   | Type	|Description|
+| Query parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked in the same resource collection. |

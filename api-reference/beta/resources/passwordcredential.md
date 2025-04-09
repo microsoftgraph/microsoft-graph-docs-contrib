@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "madansr7"
+ms.date: 07/30/2024
 ---
 
 # passwordCredential resource type

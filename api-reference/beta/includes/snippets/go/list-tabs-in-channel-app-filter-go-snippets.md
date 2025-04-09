@@ -18,11 +18,11 @@ import (
 
 requestFilter := "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
 
-requestParameters := &graphteams.TeamItemChannelItemTabsRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.ItemChannelsItemTabsRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsApp"},
 	Filter: &requestFilter,
 }
-configuration := &graphteams.TeamItemChannelItemTabsRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.ItemChannelsItemTabsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.tenant_app_management_policy import TenantAppManagementPolicy
 from msgraph_beta.generated.models.app_management_application_configuration import AppManagementApplicationConfiguration
@@ -11,9 +12,9 @@ from msgraph_beta.generated.models.password_credential_configuration import Pass
 from msgraph_beta.generated.models.app_credential_restriction_type import AppCredentialRestrictionType
 from msgraph_beta.generated.models.key_credential_configuration import KeyCredentialConfiguration
 from msgraph_beta.generated.models.app_key_credential_restriction_type import AppKeyCredentialRestrictionType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+from msgraph_beta.generated.models.identifier_uri_configuration import IdentifierUriConfiguration
+from msgraph_beta.generated.models.identifier_uri_restriction import IdentifierUriRestriction
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = TenantAppManagementPolicy(
 	is_enabled = True,
 	application_restrictions = AppManagementApplicationConfiguration(
@@ -60,6 +61,13 @@ request_body = TenantAppManagementPolicy(
 				max_lifetime = None,
 			),
 		],
+		identifier_uris = IdentifierUriConfiguration(
+			non_default_uri_addition = IdentifierUriRestriction(
+				restrict_for_apps_created_after_date_time = "2024-01-01T10:37:00Z",
+				exclude_apps_receiving_v2_tokens = True,
+				exclude_saml = True,
+			),
+		),
 	),
 )
 

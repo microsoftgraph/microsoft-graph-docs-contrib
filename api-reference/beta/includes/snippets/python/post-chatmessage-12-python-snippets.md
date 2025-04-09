@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.chat_message import ChatMessage
 from msgraph_beta.generated.models.item_body import ItemBody
 from msgraph_beta.generated.models.body_type import BodyType
 from msgraph_beta.generated.models.chat_message_attachment import ChatMessageAttachment
 from msgraph_beta.generated.models.chat_message_hosted_content import ChatMessageHostedContent
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ChatMessage(
 	subject = "Announcement Subheading",
 	body = ItemBody(
@@ -24,7 +23,7 @@ request_body = ChatMessage(
 			id = "d7ddbf876ae340c3a03bada395ec7da7",
 			content_type = "application/vnd.microsoft.teams.messaging-announcementBanner",
 			content_url = None,
-			content = "{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/1/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"../hostedContents/2/$value\"}}}}",
+			content = "{\"title\":\"\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/2/$value\",\"imageContentType\":\"image/jpg\"},\"croppedImage\":{\"source\":\"../hostedContents/1/$value\"}}}}",
 			name = None,
 			thumbnail_url = None,
 		),

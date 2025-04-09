@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 08/26/2024
 ---
 # Delete protectionPolicyBase
 
@@ -47,6 +48,8 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 

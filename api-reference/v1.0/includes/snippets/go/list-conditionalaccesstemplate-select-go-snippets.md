@@ -18,11 +18,11 @@ import (
 
 requestFilter := "scenarios has 'secureFoundation'"
 
-requestParameters := &graphidentity.IdentityConditionalAccessTemplatesRequestBuilderGetQueryParameters{
+requestParameters := &graphidentity.ConditionalAccessTemplatesRequestBuilderGetQueryParameters{
 	Select: [] string {"name","description","id","scenarios"},
 	Filter: &requestFilter,
 }
-configuration := &graphidentity.IdentityConditionalAccessTemplatesRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.ConditionalAccessTemplatesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

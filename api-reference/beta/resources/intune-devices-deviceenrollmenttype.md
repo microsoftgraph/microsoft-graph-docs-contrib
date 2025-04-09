@@ -5,15 +5,16 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # deviceEnrollmentType enum type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Possible ways of adding a mobile device to management.
 
@@ -31,16 +32,18 @@ Possible ways of adding a mobile device to management.
 |windowsBulkAzureDomainJoin|8|Windows 10 bulk Azure AD Join.|
 |windowsCoManagement|9|Windows 10 Co-Management triggered by AutoPilot or Group Policy.|
 |windowsAzureADJoinUsingDeviceAuth|10|Windows 10 Azure AD Join using Device Auth.|
-|appleUserEnrollment|11|Device managed by Apple user enrollment|
-|appleUserEnrollmentWithServiceAccount|12|Device managed by Apple user enrollment with service account|
+|appleUserEnrollment|11|Indicates the device is enrolled via Apple User Enrollment with Company Portal. It results in an enrollment with a new partition for managed apps and data and which supports a limited set of management capabilities|
+|appleUserEnrollmentWithServiceAccount|12|Indicates the device is enrolled via Apple User Enrollment with Company Portal using a device enrollment manager user. It results in an enrollment with a new partition for managed apps and data and which supports a limited set of management capabilities|
 |azureAdJoinUsingAzureVmExtension|14|Azure AD Join enrollment when an Azure VM is provisioned|
 |androidEnterpriseDedicatedDevice|15|Android Enterprise Dedicated Device|
 |androidEnterpriseFullyManaged|16|Android Enterprise Fully Managed|
 |androidEnterpriseCorporateWorkProfile|17|Android Enterprise Corporate Work Profile|
 |androidAOSPUserOwnedDeviceEnrollment|18|Indicates the device enrollment is for android device owned by/associated with user using Android Open Source Project (AOSP) on a non-Google mobile services.|
 |androidAOSPUserlessDeviceEnrollment|19|Indicates the device enrollment is for user less android device using Android Open Source Project (AOSP) on a non-Google mobile services.|
-|appleACMEBasicBYOD|20|Apple ACME BYOD enrollment|
-|appleACMEDEPUserless|21|Apple ACME DEP Userless enrollment|
-|appleACMEDEPUDACompanyPortal|22|Apple ACME DEP UDA enrollment at CP|
-|appleACMEDEPUDASetupAsstLegacy|23|Apple ACME DEP UDA enrollment at Setup Asst (legacy)|
-|appleACMEDEPUDAModernAuth|24|Apple ACME DEP UDA enrollment at Setup Asst (Modern Auth)|
+
+
+
+
+
+|appleAccountDrivenUserEnrollment|25|Indicates the device is enrolled via Apple Account Driven User Enrollment, a form of enrollment where the user enrolls via iOS Settings without using the iOS Company Portal. It results in an enrollment with a new partition for managed apps and data and which supports a limited set of management capabilities.|
+|unknownFutureValue|26|Evolvable enum member|

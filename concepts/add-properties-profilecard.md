@@ -5,6 +5,7 @@ author: "rwaithera"
 ms.localizationpriority: high
 ms.subservice: "people"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Add or remove custom attributes on a profile card using the profile card API
@@ -27,7 +28,7 @@ You can also [remove](/graph/api/profilecardproperty-delete) custom attributes f
 [!INCLUDE [profilecardproperty-all-clouds-note](../includes/profilecardproperty-all-clouds-note.md)]
 
 > [!NOTE]
-> Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a Tenant Administrator or Global Administrator role. 
+> Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a Tenant Administrator role.
 
 ## Make other attributes visible on the profile card
 

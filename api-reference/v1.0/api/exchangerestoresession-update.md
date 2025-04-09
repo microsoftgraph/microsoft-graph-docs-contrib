@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # Update exchangeRestoreSession
@@ -54,12 +55,15 @@ To remove an **exchangeRestoreSession**, specify the @removed annotation in the 
 
 If successful, this method returns a `200 OK` response code and an updated [exchangeRestoreSession](../resources/exchangerestoresession.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "exchangerestoresession_update"
@@ -72,19 +76,19 @@ Content-Type: application/json
 {
   "mailboxRestoreArtifacts@delta": [
     {
-      "restorePoint": { "@odata.id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" }, //Create a new mailbox restore artifact and add it under the Restore Session.
+      "restorePoint": { "id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" }, //Create a new mailbox restore artifact and add it under the Restore Session.
       "destinationType": "inPlace"
     },
     {
-      "restorePoint": { "@odata.id": "2b014d8c-71fe-4d00-a01a-31850bc5b32" },
+      "restorePoint": { "id": "2b014d8c-71fe-4d00-a01a-31850bc5b32" },
       "destinationType": "inPlace"
     },
     {
-      "restorePoint": { "@odata.id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace"
     },
     {
-      "restorePoint": { "@odata.id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace"
     },
     {
@@ -109,6 +113,36 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/exchangerestoresession-update-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/exchangerestoresession-update-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/exchangerestoresession-update-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/exchangerestoresession-update-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/exchangerestoresession-update-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/exchangerestoresession-update-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/exchangerestoresession-update-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following example shows the response.
@@ -127,28 +161,28 @@ Content-Type: application/json
   "mailboxRestoreArtifacts@delta": [
     {
       "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "restorePoint": { "@odata.id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
       "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "67014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "restorePoint": { "@odata.id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
       "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "56014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "restorePoint": { "@odata.id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
       "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "32014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "restorePoint": { "@odata.id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
       "createdDateTime": "2015-06-19T12:01:03.45Z"

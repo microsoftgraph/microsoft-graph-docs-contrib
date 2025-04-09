@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
+toc.title: Application sign-in summary (preview)
 ---
 
 # applicationSignInSummary resource type

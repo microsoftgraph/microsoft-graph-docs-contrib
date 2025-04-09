@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.information_protection.policy.labels.evaluate_application.evaluate_application_request_builder import EvaluateApplicationRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
@@ -14,9 +15,7 @@ from msgraph_beta.generated.models.content_state import ContentState
 from msgraph_beta.generated.models.key_value_pair import KeyValuePair
 from msgraph_beta.generated.models.labeling_options import LabelingOptions
 from msgraph_beta.generated.models.assignment_method import AssignmentMethod
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = EvaluateApplicationPostRequestBody(
 	content_info = ContentInfo(
 		odata_type = "#microsoft.graph.contentInfo",

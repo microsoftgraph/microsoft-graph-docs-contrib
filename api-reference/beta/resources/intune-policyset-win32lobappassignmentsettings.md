@@ -5,15 +5,16 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # win32LobAppAssignmentSettings resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Contains properties used to assign an Win32 LOB mobile app to a group.
 

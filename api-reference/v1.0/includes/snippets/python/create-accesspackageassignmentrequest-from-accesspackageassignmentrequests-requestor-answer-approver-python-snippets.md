@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_package_assignment_request import AccessPackageAssignmentRequest
 from msgraph.generated.models.access_package_request_type import AccessPackageRequestType
@@ -12,9 +13,7 @@ from msgraph.generated.models.access_package_answer_string import AccessPackageA
 from msgraph.generated.models.access_package_multiple_choice_question import AccessPackageMultipleChoiceQuestion
 from msgraph.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
 from msgraph.generated.models.access_package_assignment import AccessPackageAssignment
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageAssignmentRequest(
 	odata_type = "#microsoft.graph.accessPackageAssignmentRequest",
 	request_type = AccessPackageRequestType.UserAdd,

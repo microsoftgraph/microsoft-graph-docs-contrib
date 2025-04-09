@@ -5,6 +5,7 @@ author: "nickgmicrosoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # clientCertificateAuthentication resource type
@@ -22,6 +23,9 @@ Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticatio
 |Property|Type|Description|
 |:---|:---|:---|
 |certificateList| [pkcs12CertificateInformation](../resources/pkcs12CertificateInformation.md) collection| The list of certificates uploaded for this API connector.|
+
+## Relationships
+None.
 
 ## JSON representation
 

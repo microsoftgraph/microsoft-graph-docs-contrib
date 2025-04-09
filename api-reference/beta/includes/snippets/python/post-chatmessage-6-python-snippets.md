@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.chat_message import ChatMessage
 from msgraph_beta.generated.models.item_body import ItemBody
 from msgraph_beta.generated.models.body_type import BodyType
 from msgraph_beta.generated.models.chat_message_hosted_content import ChatMessageHostedContent
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ChatMessage(
 	body = ItemBody(
 		content_type = BodyType.Html,
-		content = "<div><div>\n<div><span><img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span>\n\n</div>\n\n\n</div>\n</div>",
+		content = "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">",
 	),
 	hosted_contents = [
 		ChatMessageHostedContent(

@@ -6,6 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 07/22/2024
 ---
 
 # Get settings
@@ -29,6 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /me/settings/
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions-reference).
 

@@ -6,6 +6,7 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # List a user's memberships (direct and transitive)
@@ -22,12 +23,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### Permissions for the signed-in user's memberships
 
-<!-- { "blockType": "permissions", "name": "user_list_transitivememberof" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-transitivememberof-permissions.md)]
 
 ### Permissions for another user's memberships
 
-<!-- { "blockType": "permissions", "name": "user_list_transitivememberof_2" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-transitivememberof-2-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -43,6 +44,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/transitiveMemberOf
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/transitiveMemberOf
@@ -50,7 +53,11 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$select`, `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the transitive membership in groups. You can use `$search` on the **displayName** property. The default and maximum page sizes are 100 and 999 objects respectively.
+This method supports the `$filter`, `$count`, `$select`, `$search`, `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
+- OData cast is also enabled. For example, you can cast to get just the transitive membership in groups.
+- `$search` is supported on the **displayName** property only.
+- The default and maximum page size is 100 and 999 objects respectively.
+- The use of query parameters with this API is supported only with advanced query parameters. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 

@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer {Token}")
 
-configuration := &graphserviceprincipals.ServicePrincipalItemSynchronizationJobsRequestBuilderGetRequestConfiguration{
+configuration := &graphserviceprincipals.ItemSynchronizationJobsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 

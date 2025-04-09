@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "dkershaw10"
 ms.subservice: extensions
 doc_type: resourcePageType
+ms.date: 04/17/2024
 ---
 
 # schemaExtension resource type (schema extensions)
@@ -16,7 +17,6 @@ Schema extensions allow you to define a schema to extend and add strongly-typed 
 + [user](/graph/api/resources/user)
 + [group](/graph/api/resources/group)
 + [administrativeUnit](/graph/api/resources/administrativeunit)
-+ [application](/graph/api/resources/application)
 + [contact](/graph/api/resources/contact)
 + [device](/graph/api/resources/device)
 + [event](/graph/api/resources/event) (for both user and group calendars)
@@ -41,7 +41,7 @@ For more information about Microsoft Graph extensibility including limits for sc
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|description|String|Description for the schema extension. Supports `$filter` (`eq`).|
+|description|String|Description for the schema extension.|
 |id|String|The unique identifier for the schema extension definition. <br>You can assign a value in one of two ways: <ul><li>Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. As an example, `contoso_mySchema`. </li><li>Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. An example would be `extkvbmkofy_mySchema`.</li></ul>This property cannot be changed after creation. Supports `$filter` (`eq`). **Note:** We recommend that your **id** starts with an alphabetic letter between A-Z because query capabilities might be limited for IDs that begin with integers. <br/><br/> Supports `$filter` (`eq`). |
 |owner|String| The `appId` of the application that is the owner of the schema extension. The owner of the schema definition must be explicitly specified during the Create and Update operations, or it will be implied and auto-assigned by Microsoft Entra ID as follows: <br/><ul><li>In delegated access: <ul><li>The signed-in user must be the owner of the app that calls Microsoft Graph to create the schema extension definition. </li></ul> <ul><li>If the signed-in user isn't the owner of the calling app, they must explicitly specify the **owner** property, and assign it the **appId** of an app that they own.</li></ul></li></ul> <ul><li>In app-only access: <ul><li> The **owner** property isn't required in the request body. Instead, the calling app is assigned ownership of the schema extension.</li></ul></li></ul> </br>So, for example, if creating a new schema extension definition using Graph Explorer, you **must** supply the owner property. Once set, this property is read-only and cannot be changed. Supports `$filter` (`eq`).|
 |properties|[extensionSchemaProperty](extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|

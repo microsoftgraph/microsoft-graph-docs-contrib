@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
 ms.subservice: excel
+ms.date: 08/21/2024
 ---
 
 # Update formatProtection
@@ -50,6 +51,7 @@ If successful, this method returns a `200 OK` response code and updated [FormatP
 ### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_formatprotection"
@@ -63,6 +65,12 @@ Content-type: application/json
   "formulaHidden": true
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-formatprotection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response. 

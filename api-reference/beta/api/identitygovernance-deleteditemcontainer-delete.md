@@ -5,6 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 08/14/2024
 ---
 
 # Delete deletedItemContainer (permanently delete a deleted lifecycle workflow)

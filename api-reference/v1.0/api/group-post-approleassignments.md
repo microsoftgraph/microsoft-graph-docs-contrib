@@ -5,13 +5,14 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-groups"
 author: "psignoret"
+ms.date: 10/15/2024
 ---
 
 # Grant an appRoleAssignment to a group
 
 Namespace: microsoft.graph
 
-Use this API to assign an app role to a security group. All direct members of the group will be considered assigned. Security groups with dynamic memberships are supported. To grant an app role assignment to a group, you need three identifiers:
+Use this API to assign an app role to a security [group](../resources/group.md). All direct members of the group will be considered assigned. Security groups with dynamic memberships are supported. To grant an app role assignment to a group, you need three identifiers:
 
 - **principalId**: The ID of the **group** to which you are assigning the app role.
 - **resourceId**: The ID of the resource **servicePrincipal** that has defined the app role.
@@ -25,8 +26,10 @@ Additional licenses might be required to [use a group to manage access to applic
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "group_post_approleassignments" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/group-post-approleassignments-permissions.md)]
+
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
 
 ## HTTP request
 

@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 doc_type: resourcePageType
+ms.date: 09/11/2024
 ---
 
 # virtualEventsRoot resource type
@@ -17,7 +18,10 @@ The container for [virtual event](virtualevent.md) APIs.
 
 ## Methods
 
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+| [List townhalls](../api/virtualeventsroot-list-townhalls.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get the list of all [virtualEventTownhall](../resources/virtualeventtownhall.md) objects created in a tenant. |
+| [List webinars](../api/virtualeventsroot-list-webinars.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in a tenant. |
 
 ## Properties
 

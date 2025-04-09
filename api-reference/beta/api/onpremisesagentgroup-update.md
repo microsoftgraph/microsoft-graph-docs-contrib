@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 06/26/2024
 ---
 
 # Update onPremisesAgentGroup

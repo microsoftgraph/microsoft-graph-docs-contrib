@@ -5,6 +5,7 @@ author: "subray"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/19/2024
 ---
 
 # Update tab in chat

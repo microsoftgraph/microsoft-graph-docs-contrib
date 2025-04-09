@@ -67,7 +67,7 @@ editable := true
 authenticationAttributeCollectionInputConfiguration1.SetEditable(&editable) 
 writeToDirectory := true
 authenticationAttributeCollectionInputConfiguration1.SetWriteToDirectory(&writeToDirectory) 
-required := false
+required := true
 authenticationAttributeCollectionInputConfiguration1.SetRequired(&required) 
 validationRegEx := "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 authenticationAttributeCollectionInputConfiguration1.SetValidationRegEx(&validationRegEx) 
@@ -90,7 +90,7 @@ editable := true
 authenticationAttributeCollectionInputConfiguration2.SetEditable(&editable) 
 writeToDirectory := true
 authenticationAttributeCollectionInputConfiguration2.SetWriteToDirectory(&writeToDirectory) 
-required := false
+required := true
 authenticationAttributeCollectionInputConfiguration2.SetRequired(&required) 
 validationRegEx := "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 authenticationAttributeCollectionInputConfiguration2.SetValidationRegEx(&validationRegEx) 
@@ -99,11 +99,11 @@ options := []graphmodels.AuthenticationAttributeCollectionOptionConfigurationabl
 }
 authenticationAttributeCollectionInputConfiguration2.SetOptions(options)
 authenticationAttributeCollectionInputConfiguration3 := graphmodels.NewAuthenticationAttributeCollectionInputConfiguration()
-attribute := "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor"
+attribute := "extension_331d514c0c18477583ea7dd5a79feda2_RockorCountry"
 authenticationAttributeCollectionInputConfiguration3.SetAttribute(&attribute) 
-label := "Favorite color"
+label := "Rock music or Country"
 authenticationAttributeCollectionInputConfiguration3.SetLabel(&label) 
-inputType := graphmodels.TEXT_AUTHENTICATIONATTRIBUTECOLLECTIONINPUTTYPE 
+inputType := graphmodels.RADIOSINGLESELECT_AUTHENTICATIONATTRIBUTECOLLECTIONINPUTTYPE 
 authenticationAttributeCollectionInputConfiguration3.SetInputType(&inputType) 
 defaultValue := null
 authenticationAttributeCollectionInputConfiguration3.SetDefaultValue(&defaultValue) 
@@ -113,12 +113,26 @@ editable := true
 authenticationAttributeCollectionInputConfiguration3.SetEditable(&editable) 
 writeToDirectory := true
 authenticationAttributeCollectionInputConfiguration3.SetWriteToDirectory(&writeToDirectory) 
-required := false
+required := true
 authenticationAttributeCollectionInputConfiguration3.SetRequired(&required) 
 validationRegEx := "^.*"
 authenticationAttributeCollectionInputConfiguration3.SetValidationRegEx(&validationRegEx) 
-options := []graphmodels.AuthenticationAttributeCollectionOptionConfigurationable {
 
+
+authenticationAttributeCollectionOptionConfiguration := graphmodels.NewAuthenticationAttributeCollectionOptionConfiguration()
+label := "Rock music"
+authenticationAttributeCollectionOptionConfiguration.SetLabel(&label) 
+value := "Rock"
+authenticationAttributeCollectionOptionConfiguration.SetValue(&value) 
+authenticationAttributeCollectionOptionConfiguration1 := graphmodels.NewAuthenticationAttributeCollectionOptionConfiguration()
+label := "Country music"
+authenticationAttributeCollectionOptionConfiguration1.SetLabel(&label) 
+value := "Country"
+authenticationAttributeCollectionOptionConfiguration1.SetValue(&value) 
+
+options := []graphmodels.AuthenticationAttributeCollectionOptionConfigurationable {
+	authenticationAttributeCollectionOptionConfiguration,
+	authenticationAttributeCollectionOptionConfiguration1,
 }
 authenticationAttributeCollectionInputConfiguration3.SetOptions(options)
 

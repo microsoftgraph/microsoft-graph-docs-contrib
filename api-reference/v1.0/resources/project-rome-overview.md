@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ailae"
 ms.subservice: project-rome
 doc_type: conceptualPageType
+ms.date: 04/24/2024
 ---
 
 # Use the Microsoft Graph API to work with Project Rome

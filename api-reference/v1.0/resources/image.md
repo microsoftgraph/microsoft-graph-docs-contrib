@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "The image resource groups image-related properties into a single structure."
 ms.subservice: sharepoint
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # image resource type

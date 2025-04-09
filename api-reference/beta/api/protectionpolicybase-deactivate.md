@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 08/26/2024
 ---
 
 # protectionPolicyBase: deactivate
@@ -48,6 +49,8 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this action returns a `202 Accepted` response code and a [protectionPolicyBase](../resources/protectionpolicybase.md) object in the response body.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 

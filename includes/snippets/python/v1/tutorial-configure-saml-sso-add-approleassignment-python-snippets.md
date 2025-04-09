@@ -4,11 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.app_role_assignment import AppRoleAssignment
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AppRoleAssignment(
 	principal_id = UUID("59bb3898-0621-4414-ac61-74f9d7201355"),
 	principal_type = "User",

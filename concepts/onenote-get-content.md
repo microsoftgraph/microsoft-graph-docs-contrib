@@ -4,6 +4,7 @@ description: "Get OneNote content and structure by sending a GET request to the 
 author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.subservice: "onenote"
+ms.date: 02/27/2025
 ---
 
 # Get OneNote content and structure
@@ -112,6 +113,8 @@ Get text and image preview content for a page.
 
 `../pages/{page-id}/preview`
 
+> [!NOTE]
+> Effective March 31, 2025, support for the **previewImageUrl** object will be removed. The **previewText** object will continue to be supported.
 
 The JSON response contains the preview content, which you can use to help users identify what's in the page.
 

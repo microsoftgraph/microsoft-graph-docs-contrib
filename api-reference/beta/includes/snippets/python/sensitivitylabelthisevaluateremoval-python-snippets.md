@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.users.item.security.information_protection.sensitivity_labels.microsoft.graph.security.evaluate_removal.evaluate_removal_request_builder import EvaluateRemovalRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
@@ -12,9 +13,7 @@ from msgraph_beta.generated.models.security.content_info import ContentInfo
 from msgraph_beta.generated.models.content_state import ContentState
 from msgraph_beta.generated.models.security.key_value_pair import KeyValuePair
 from msgraph_beta.generated.models.security.downgrade_justification import DowngradeJustification
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = EvaluateRemovalPostRequestBody(
 	content_info = ContentInfo(
 		odata_type = "#microsoft.graph.security.contentInfo",

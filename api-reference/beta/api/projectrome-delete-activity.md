@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: apiPageType
 author: "ailae"
+ms.date: 06/22/2024
 ---
 
 # Delete an activity

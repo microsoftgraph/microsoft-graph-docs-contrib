@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # List approvalSteps
@@ -29,6 +30,8 @@ The following tables show the least privileged permission or permissions require
 
 <!-- { "blockType": "permissions", "name": "approval_list_steps" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approval-list-steps-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 <a name='for-pim-for-azure-ad-roles'></a>
 

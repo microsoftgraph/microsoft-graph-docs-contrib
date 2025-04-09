@@ -5,6 +5,7 @@ author: "kafen"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update accessReviewPolicy
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accessreviewpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accessreviewpolicy-update-permissions.md)]
+
+[!INCLUDE [rbac-access-review-policy-apis-update](../includes/rbac-for-apis/rbac-access-review-policy-apis-update.md)]
 
 ## HTTP request
 

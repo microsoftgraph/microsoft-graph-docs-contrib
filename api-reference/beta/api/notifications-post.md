@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "notifications"
 doc_type: apiPageType
 author: "merzink"
+ms.date: 04/04/2024
 ---
 
 # Create and send a notification

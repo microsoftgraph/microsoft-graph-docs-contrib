@@ -6,6 +6,7 @@ author: "mlafleur"
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Class
+ms.date: 09/11/2024
 ---
 
 # educationClass resource type

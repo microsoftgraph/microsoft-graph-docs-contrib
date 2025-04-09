@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.education.classes.item.assignment_categories.assignment_categories_request_builder import AssignmentCategoriesRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = AssignmentCategoriesRequestBuilder.AssignmentCategoriesRequestBuilderGetQueryParameters(
 		filter = "id eq 'd4cb4f68-9136-48d3-9054-c1208ea274f0'",
 )

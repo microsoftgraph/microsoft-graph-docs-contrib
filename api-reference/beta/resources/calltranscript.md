@@ -5,6 +5,7 @@ author: "mankadnandan"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/02/2024
 ---
 
 # callTranscript resource type
@@ -20,7 +21,7 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 |:---------------|:--------|:----------|
 |[List transcripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).|
 |[Get transcript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Get a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).|
-|[Get delta by organizer](../api/calltranscript-delta.md) | [callTranscript](calltranscript.md) collection | Get a set of [callTranscript](../resources/calltranscript.md) resources that have been added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
+|[Get delta by organizer](../api/calltranscript-delta.md) | [callTranscript](calltranscript.md) collection | Get a set of [callTranscript](../resources/calltranscript.md) resources that were added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
 |[List transcripts by organizer](../api/onlinemeeting-getalltranscripts.md) | [callTranscript](calltranscript.md) collection | Get the [callTranscript](../resources/calltranscript.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
 
 
@@ -38,6 +39,9 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 | meetingOrganizer| [identitySet](identityset.md)| The identity information of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
 | metadataContent| Stream| The time-aligned metadata of the utterances in the transcript. Read-only.|
 | transcriptContentUrl| String| The URL that can be used to access the content of the transcript. Read-only.|
+
+## Relationships
+None.
 
 ## JSON representation
 

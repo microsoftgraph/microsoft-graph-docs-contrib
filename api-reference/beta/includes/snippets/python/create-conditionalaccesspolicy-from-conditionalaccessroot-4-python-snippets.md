@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.conditional_access_policy import ConditionalAccessPolicy
 from msgraph_beta.generated.models.conditional_access_policy_state import ConditionalAccessPolicyState
@@ -13,9 +14,7 @@ from msgraph_beta.generated.models.conditional_access_users import ConditionalAc
 from msgraph_beta.generated.models.conditional_access_devices import ConditionalAccessDevices
 from msgraph_beta.generated.models.conditional_access_grant_controls import ConditionalAccessGrantControls
 from msgraph_beta.generated.models.conditional_access_grant_control import ConditionalAccessGrantControl
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ConditionalAccessPolicy(
 	display_name = "Require MFA to EXO from non-complaint devices.",
 	state = ConditionalAccessPolicyState.Enabled,

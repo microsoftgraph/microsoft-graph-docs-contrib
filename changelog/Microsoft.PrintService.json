@@ -1,6 +1,48 @@
 {
   "changelog": [
-{
+    {
+      "ChangeList": [
+        {
+          "Id": "bbaa354c-b759-4e8b-ac3f-ccb26b6a8277",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "incompatiblePrinterSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **incompatiblePrinterSettings** enumeration type.",
+          "Target": "incompatiblePrinterSettings"
+        },
+        {
+          "Id": "bbaa354c-b759-4e8b-ac3f-ccb26b6a8277",
+          "ApiChange": "Resource",
+          "ChangedApiName": "airPrintSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [airPrintSettings](https://learn.microsoft.com/en-us/graph/api/resources/airPrintSettings?view=graph-rest-1.0) resource type.",
+          "Target": "airPrintSettings"
+        },
+        {
+          "Id": "bbaa354c-b759-4e8b-ac3f-ccb26b6a8277",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerDiscoverySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerDiscoverySettings](https://learn.microsoft.com/en-us/graph/api/resources/printerDiscoverySettings?view=graph-rest-1.0) resource type.",
+          "Target": "printerDiscoverySettings"
+        },
+        {
+          "Id": "bbaa354c-b759-4e8b-ac3f-ccb26b6a8277",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerDiscoverySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **printerDiscoverySettings** property to the [printSettings](https://learn.microsoft.com/en-us/graph/api/resources/printSettings?view=graph-rest-1.0) resource.",
+          "Target": "printSettings"
+        }
+      ],
+      "Id": "bbaa354c-b759-4e8b-ac3f-ccb26b6a8277",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-02-26T01:02:56.1853617Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud printing"
+    },
+    {
       "ChangeList": [
         {
           "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
@@ -21452,6 +21494,48 @@
       "Version": "beta",
       "CreatedDateTime": "2020-10-16T00:00:00",
       "WorkloadArea": "Device and app management ",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3a019b83-c28c-4610-bcb0-fd633dc229af",
+          "ApiChange": "Property",
+          "ChangedApiName": "downloadedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **downloadedDateTime** property to the [printDocument](https://learn.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-1.0) resource.",
+          "Target": "printDocument"
+        },
+        {
+          "Id": "3a019b83-c28c-4610-bcb0-fd633dc229af",
+          "ApiChange": "Property",
+          "ChangedApiName": "uploadedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **uploadedDateTime** property to the [printDocument](https://learn.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-1.0) resource.",
+          "Target": "printDocument"
+        },
+        {
+          "Id": "3a019b83-c28c-4610-bcb0-fd633dc229af",
+          "ApiChange": "Property",
+          "ChangedApiName": "acknowledgedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **acknowledgedDateTime** property to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "3a019b83-c28c-4610-bcb0-fd633dc229af",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorCode** property to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Target": "printJob"
+        }
+      ],
+      "Id": "3a019b83-c28c-4610-bcb0-fd633dc229af",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-02-17T23:24:40.1000734Z",
+      "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     }
   ]

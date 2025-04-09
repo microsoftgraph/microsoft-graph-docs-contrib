@@ -5,15 +5,16 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # androidLobApp resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Contains properties and inherited properties for Android Line Of Business apps.
 
@@ -127,7 +128,11 @@ Here is a JSON representation of the resource.
     "v8_1": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true,
+    "v13_0": true,
+    "v14_0": true,
+    "v15_0": true
   },
   "versionName": "String",
   "versionCode": "String",

@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.custom_callout_extension import CustomCalloutExtension
 from msgraph.generated.models.access_package_assignment_workflow_extension import AccessPackageAssignmentWorkflowExtension
 from msgraph.generated.models.logic_app_trigger_endpoint_configuration import LogicAppTriggerEndpointConfiguration
 from msgraph.generated.models.azure_ad_pop_token_authentication import AzureAdPopTokenAuthentication
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = CustomCalloutExtension(
 	additional_data = {
 			"value" : {

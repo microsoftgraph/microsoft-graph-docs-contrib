@@ -5,6 +5,7 @@ author: AlexFilipin
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List agreementFileLocalizations
@@ -19,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "agreementfile_list_localizations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agreementfile-list-localizations-permissions.md)]
+
+[!INCLUDE [rbac-tou-security-reader-apis](../includes/rbac-for-apis/rbac-tou-security-reader-apis.md)]
 
 ## HTTP request
 

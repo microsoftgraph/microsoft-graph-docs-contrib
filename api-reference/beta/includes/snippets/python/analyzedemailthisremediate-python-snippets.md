@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.security.collaboration.analyzedemails.microsoft_graph_security_remediate.remediate_post_request_body import RemediatePostRequestBody
 from msgraph_beta.generated.models.remediation_severity import RemediationSeverity
 from msgraph_beta.generated.models.remediation_action import RemediationAction
 from msgraph_beta.generated.models.security.analyzed_email import AnalyzedEmail
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = RemediatePostRequestBody(
 	display_name = "Clean up Phish email",
 	description = "Delete email",

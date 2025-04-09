@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # noMediaConfig resource type
@@ -20,6 +21,9 @@ Media configuration for indicating no media.
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
 | removeFromDefaultAudioGroup | Boolean |Remove media from the default audio group.|
+
+## Relationships
+None.
 
 ## JSON representation
 

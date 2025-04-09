@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "4101419b-664e-4423-99d9-e8dc5b637213",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHotpatchUpdate",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHotpatchUpdate** property to the [productRevision](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-productRevision?view=graph-rest-beta) resource.",
+          "Target": "productRevision"
+        },
+        {
+          "Id": "4101419b-664e-4423-99d9-e8dc5b637213",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHotpatchEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHotpatchEnabled** property to the [userExperienceSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-userexperiencesettings?view=graph-rest-beta) resource.",
+          "Target": "userExperienceSettings"
+        },
+        {
+          "Id": "4101419b-664e-4423-99d9-e8dc5b637213",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qualityUpdateFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the [qualityUpdateFilter](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityupdatefilter?view=graph-rest-beta) resource type.",
+          "Target": "qualityUpdateFilter"
+        }
+      ],
+      "Id": "4101419b-664e-4423-99d9-e8dc5b637213",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-18T20:33:53.2380322Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Device updates"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
           "ApiChange": "Property",
           "ChangedApiName": "applicableContent",

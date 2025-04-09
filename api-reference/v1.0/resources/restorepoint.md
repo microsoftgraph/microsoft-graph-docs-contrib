@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 08/27/2024
 ---
 
 # restorePoint resource type
@@ -13,6 +14,11 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Represents the date and time when an [artifact](../resources/restoreartifactbase.md) is protected by a [protectionPolicy](../resources/protectionpolicybase.md) and can be restored.
+
+The following limitations apply to this API:
+
+- When sites or mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available.
+- Although OneDrive account and mailbox backups of deleted users are maintained and restorable after the user’s Microsoft Entra ID is deleted, the user is displayed as an empty user in results.
 
 ## Methods
 

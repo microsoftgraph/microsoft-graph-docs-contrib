@@ -5,6 +5,7 @@ author: "jkdouglas"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Update crossTenantAccessPolicyConfigurationDefault
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "crosstenantaccesspolicyconfigurationdefault_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantaccesspolicyconfigurationdefault-update-permissions.md)]
+
+[!INCLUDE [rbac-xtap-apis-write](../includes/rbac-for-apis/rbac-xtap-apis-write.md)]
 
 ## HTTP request
 

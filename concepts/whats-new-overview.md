@@ -3,6 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
+ms.date: 01/01/2025
 ---
 
 # What's new in Microsoft Graph
@@ -16,142 +17,117 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-## August 2024: New and generally available
+## April 2025: New in preview only
 
-### Employee experience | Employee engagement
+### Device and app management | Cloud licensing
 
-Introduced the general availability of the Viva Engage API in Microsoft Graph. A Viva Engage community is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
+Updated the permissions for the [List usageRights for user](/graph/api/cloudlicensing-groupcloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true) and [Get usageRight](/graph/api/cloudlicensing-usageright-get?view=graph-rest-beta&preserve-view=true) APIs.
 
-- [Create a community](/graph/api/employeeexperience-post-communities)
-- [Poll for community creation status](/graph/api/engagementasyncoperation-get)
-- [Get a community](/graph/api/community-get)
-- [List communities](/graph/api/employeeexperience-list-communities)
-- [Update a community](/graph/api/community-update)
-- [Delete a community](/graph/api/community-delete)
+### Files
 
-### People and workplace intelligence | Insights
-
-[Get](/graph/api/userinsightssettings-get) and [update](/graph/api/userinsightssettings-update) user privacy settings for [itemInsights](/graph/api/resources/iteminsights) and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). Use the [userInsightsSettings](/graph/api/resources/userinsightssettings) resource to enable or disable the calculation and visibility of item insights and meeting hours insights for a user.
-
-### Reports | Microsoft 365 usage reports
-
-[Get](/graph/api/adminreportsettings-get) or [update](/graph/api/adminreportsettings-update) tenant-wide [settings](/graph/api/resources/adminreportsettings) to hide or show identifiable information for users, groups, or sites in Microsoft 365 usage reports.
-
-### Teamwork and communications | Online meeting
-
-- Enabled the `$select` query parameter for the [Get callRecording](/graph/api/callrecording-get) method.
-- Enabled the `$select` query parameter for the [Get callTranscript](/graph/api/calltranscript-get) method.
-- Enabled the `$filter`, `$select`, and `$top` query parameters for the [List recordings](/graph/api/onlinemeeting-list-recordings) method.
-- Enabled the `$filter`, `$select`, and `$top` query parameters for the [List transcripts](/graph/api/onlinemeeting-list-transcripts) method.
-
-### Teamwork and communications | Settings
-
-Enabled the `Spain` and `Mexico` values as supported regions for the **region** property of the [teamwork](/graph/api/resources/teamwork) and [userTeamwork](/graph/api/resources/userteamwork) resources.
-
-## August 2024: New in preview only
-
-### Device and app management | Cloud PC
-
-Deprecated the `noLicensesAvailable` member on [frontlineCloudPcAccessState](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true#frontlinecloudpcaccessstate-values).
+Added the `forceInfectedDownload` as a supported prefer header to the [Get content](/graph/api/driveitem-get-content?view=graph-rest-beta&preserve-view=true) and [Get contentStream](/graph/api/driveitem-get-contentstream?view=graph-rest-beta&preserve-view=true) methods to enable the download of infected files when specifically requested.
 
 ### Teamwork and communications | Calls and online meetings
 
-- Use the **settings** property on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) to get or set whether attendees receive email notifications for a town hall or webinar.
-- Removed the **meetingOrganizerId** property from the [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) and [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) resources in favor of the **meetingOrganizer** property.
+Updated the throttling information for [virtualEvent](/graph/api/resources/virtualevent). You can now perform 750 `GET` requests per app across all tenants in a 30-second period, and 15 `Create`, `Update`, and `Delete` requests per app across all tenants in a 30-second period, instead of the 10,000 requests per app each month.
+
+## March 2025: New and generally available
+
+### Applications
+
+Updated the Microsoft Entra built-in role required to [perform a new bulk upload](/graph/api/synchronization-synchronizationjob-post-bulkupload). Going forward, admin users can use the User Administrator role instead of the Global Administrator role to invoke this API.
+
+### Device and app management | Cloud PC
+
+Use the **autopatch** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy) to get or set specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC.
+
+### Files
+
+[Use the app folder in OneDrive and SharePoint](/graph/onedrive-sharepoint-appfolder) for secure application settings and data storage with Microsoft Graph.
+
+### Identity and access | Identity and sign-in
+
+- Deprecated the following resources and their associated APIs that support the Microsoft Entra lifecycle announcements APIs. The APIs will stop returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
+  - [announcement](/graph/api/resources/announcement)
+  - [changeItemBase](/graph/api/resources/changeitembase)
+  - [roadmap](/graph/api/resources/roadmap)
+- Use the **applicationFilter** property on [conditionalAccessApplications](/graph/api/resources/conditionalaccessapplications) to define the dynamic-application-syntax rule to include or exclude cloud applications.
+
+### Microsoft Graph connector
+
+The management of Microsoft Graph connectors in the Microsoft Teams admin center will be deprecated on April 14, 2025. Going forward, you can manage Microsoft Graph connectors from the **Search & intelligence** section in the [Microsoft 365 admin center](/microsoftsearch/manage-connector).
+
+### Teamwork and communications | Calls and online meetings
+
+Updated the throttling thresholds for the [callRecord](/graph/api/resources/callrecords-callrecord), [participant](/graph/api/resources/callrecords-participant), and [session](/graph/api/resources/callrecords-session) resources. The limit per call record changed from 10 requests to 40 requests per 20 seconds for all pages, and the limit for list call records changed from 15 requests to 40 requests per 20 seconds for all pages.
 
 ### Teamwork and communications | Messaging
 
-Use the **displayName** property on the [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true) resource to represent the reaction name [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
+- Use the **firstChannelName** property on a [team](/graph/api/resources/team) to set the name of the first channel created in a team.
+- Enabled Azure China 21Vianet support for the following methods:
+  - [userTeamwork: sendActivityNotification](/graph/api/userteamwork-sendactivitynotification)
+  - [teamwork: sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients)
+  - [team: sendActivityNotification](/graph/api/team-sendactivitynotification)
+  - [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification)
 
-### Teamwork and communications | Online meeting
+### Security
 
-- Enabled the `$select` query parameter for the [Get callRecording](/graph/api/callrecording-get?view=graph-rest-beta&preserve-view=true) method.
-- Enabled the `$select` query parameter for the [Get callTranscript](/graph/api/calltranscript-get?view=graph-rest-beta&preserve-view=true) method.
-- Enabled the `$filter`, `$select`, and `$top` query parameters for the [List recordings](/graph/api/onlinemeeting-list-recordings?view=graph-rest-beta&preserve-view=true) method.
-- Enabled the `$filter`, `$select`, and `$top` query parameters for the [List transcripts](/graph/api/onlinemeeting-list-transcripts?view=graph-rest-beta&preserve-view=true) method.
+Added support for the **md5** and **sha256Ac** file hash algorithms that are now displayed in the **fileDetails** property of the [fileEvidence](/graph/api/resources/security-fileevidence) resource.
 
-### Teamwork and communications | Settings
+## March 2025: New in preview only
 
-Enabled the `Spain` and `Mexico` values as supported regions for the **region** property of the [teamwork](/graph/api/resources/teamwork?view=graph-rest-beta&preserve-view=true) and [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta&preserve-view=true) resources.
+### Applications
 
-## July 2024: New and generally available
-
-### Backup Storage
-
-The new Microsoft 365 Backup Storage API enables partners to build customized versions of their applications that are integrated with the Microsoft 365 Backup Storage platform. This helps to ensure exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. For more information, see [Backup Storage](/graph/backup-storage-concept-overview).
-
-### Customer booking
-
-- Use the **createdDateTime** and **lastUpdatedDateTime** properties on [bookingAppointment](/graph/api/resources/bookingappointment), [bookingBusiness](/graph/api/resources/bookingbusiness), [bookingCustomer](/graph/api/resources/bookingcustomer), [bookingCustomQuestion](/graph/api/resources/bookingcustomquestion), [bookingService](/graph/api/resources/bookingservice), and [bookingStaffMember](/graph/api/resources/bookingstaffmember) to identify when a related booking resource was created or updated.
-- Use the **isCustomerAllowedToManageBooking** property on [bookingAppointment](/graph/api/resources/bookingappointment) and [bookingService](/graph/api/resources/bookingservice) to indicate that a customer can manage bookings created by the staff.
-- Use the **appointmentLabel** property on [bookingAppointment](/graph/api/resources/bookingappointment) to get the custom label that can be stamped on an appointment by users.
-- Use the **customerEmailAddress** property on [bookingAppointment](/graph/api/resources/bookingappointment) to get or set the SMTP address of the [bookingCustomer](/graph/api/resources/bookingcustomer) who books an appointment.
-- Use the **customerName** property on [bookingAppointment](/graph/api/resources/bookingappointment) to get or set the customer's name.
-- Use the **customerNotes** property on [bookingAppointment](/graph/api/resources/bookingappointment) to get or set the notes from the customer associated with an appointment. 
-- Use the **customerPhone** property on [bookingAppointment](/graph/api/resources/bookingappointment) to get or set the customer's phone number.
-- Use the **bookingPageSettings** property on [bookingBusiness](/graph/api/resources/bookingbusiness) to get the settings for a published booking page.
-- Use the **customAvailabilities** property on [bookingSchedulingPolicy](/graph/api/resources/bookingschedulingpolicy) to get the custom availability of a service within a given time frame.
-- Use the **generalAvailability** property on [bookingSchedulingPolicy](/graph/api/resources/bookingschedulingpolicy) to get the general availability of a service defined by the scheduling policy.
-- Use the **isMeetingInviteToCustomersEnabled** property on [bookingSchedulingPolicy](/graph/api/resources/bookingschedulingpolicy) to indicate whether a meeting invite is sent to the customers.
-- Renamed the **startDateTime** and **endDateTime** properties to **start** and **end** respectively in the [bookingAppointment](/graph/api/resources/bookingappointment) resource.
-
-### Security | Alerts and incidents
-
-Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident).
-
-### Teamwork and communications | Calls and online meetings
-
-- Use the **settings** property on [virtualEventWebinar](/graph/api/resources/virtualeventwebinar) to identify whether attendees receive email notifications.
-- Use the **callId** on [callRecording](/graph/api/resources/callrecording) or [callTranscript](/graph/api/resources/calltranscript) to identify the [call](/graph/api/resources/call) that is related to a recording or transcript.
-- Use the **contentCorrelationId** on [callRecording](/graph/api/resources/callrecording) or [callTranscript](/graph/api/resources/calltranscript) to correlate a transcript with its corresponding recording.
-- Use the **endDateTime** on [callRecording](/graph/api/resources/callrecording) or [callTranscript](/graph/api/resources/calltranscript) to identify when a recording or transcript ends.
-- Provision [approvalSolution](/graph/api/resources/approvalsolution) and manage [approvalItems](/graph/api/resources/approvalitem).
-
-### Change notifications
-
-Enabled change notifications support to the methods to [list](/graph/api/subscription-list), [get](/graph/api/subscription-get), [create](/graph/api/subscription-post-subscriptions), [update](/graph/api/subscription-update), and [delete](/graph/api/subscription-delete) a subscription for [approvalItems](/graph/api/resources/approvalitem) in a tenant.
-
-## July 2024: New in preview only
-
-### Applications | Application
-
-Use the **configurationUris** property on [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) to get the URIs required for the single sign-on configuration of a preintegrated application.
+Updated the Microsoft Entra built-in role required to [perform a new bulk upload](/graph/api/synchronization-synchronizationjob-post-bulkupload?view=graph-rest-beta&preserve-view=true). Going forward, admin users can use the User Administrator role instead of the Global Administrator role to invoke this API.
 
 ### Device and app management | Cloud PC
 
-- Use the **disasterRecoveryCapability** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type.
-- Use the **autopatch** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) to get or set specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC.
+- Removed the `GET /deviceManagement/virtualEndpoint/snapshots/{cloudPcSnapshotId}` method from the [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) resource.
+- Use the new members `australasia` and `europe` in **cloudPcRegionGroup** to indicate the geographic group to which a region belongs.
+- Use the **reportName** parameter on the [cloudPcReports: retrieveCrossRegionDisasterRecoveryReport](/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta&preserve-view=true) method to get the name of the Cloud PC disaster recovery report.
+- Added the enabledDRType, dRHealthStatus, and backupCloudPcStatus as supported columns for the [cloudPcReports: retrieveCrossRegionDisasterRecoveryReport](/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta&preserve-view=true) method and removed the isCrossRegionEnabled and crossRegionHealthStatus columns from the report.
 
-### Education
+### Files
 
-- Deprecated the **synchronizationProfiles** relationship on the [educationRoot](/graph/api/resources/educationroot?view=graph-rest-beta&preserve-view=true), including all types serviced under this endpoint.
-- Introduced the Reflect API in Microsoft Graph to [get Reflect check-in responses](/graph/api/reflectcheckinresponse-get?view=graph-rest-beta&preserve-view=true) and [get reading assignment submissions](/graph/api/readingassignmentsubmission-get?view=graph-rest-beta&preserve-view=true). [Microsoft Reflect](https://reflect.microsoft.com/) helps you create impactful check-ins to gain insights into your learners' well-being and build a happier and healthier learning community, all within a single, user-friendly app. 
+Enabled [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) as a supported resource for the [create](/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta&preserve-view=true), [get](/graph/api/opentypeextension-get?view=graph-rest-beta&preserve-view=true), [update](/graph/api/opentypeextension-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/opentypeextension-delete?view=graph-rest-beta&preserve-view=true) operations of the [openTypeExtension](/graph/api/resources/opentypeextension?view=graph-rest-beta&preserve-view=true) resource.
+Create and manage [sharePointGroup](/graph/api/resources/sharepointgroup?view=graph-rest-beta&preserve-view=true) and its members in a SharePoint Embedded container or SharePoint site.
 
-### Identity and access | Directory management
+### Mail
 
-Added the ability to initiate an external admin takeover of an unmanaged domain via the [domain-verify](/graph/api/domain-verify?view=graph-rest-beta&preserve-view=true) API operation.
-  
-The following objects are removed:
+- [Get](/graph/api/mailfolderoperation-get?view=graph-rest-beta&preserve-view=true) or [list](/graph/api/mailfolder-list-operations?view=graph-rest-beta&preserve-view=true) long-running operations of a [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true).
+- [Update](/graph/api/mailfolder-updateallmessagesreadstate?view=graph-rest-beta&preserve-view=true) the read state of all messages in a [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true).
 
-- **cloudPcSharedUseServicePlan** resource and its supported methods. Going forward, use the [cloudPcFrontLineServicePlan](/graph/api/resources/cloudpcfrontlineserviceplan?view=graph-rest-beta&preserve-view=true) resource.
-- **sharedUseServicePlans** relationship from the [virtualEndpoint](/graph/api/resources/virtualendpoint?view=graph-rest-beta&preserve-view=true) resource. Going forward, use the **frontLineServicePlans** relationship.
+### Reports | Identity and access reports 
 
-### People and workplace intelligence | Profile
+Use the **linkableIdentifiers** property on [auditActivityInitiator](/graph/api/resources/auditactivityinitiator?view=graph-rest-beta&preserve-view=true) resource to get a set of linkable claims to link together all the authentication artifacts issued from a single interactive root authentication.
 
-Use the **companyCode** on [companyDetail](/graph/api/resources/companydetail?view=graph-rest-beta&preserve-view=true) to get or set the legal entity number of the company or its subdivision.
+### Security
 
-### Security | Alerts and incidents
+Added support for the **md5** and **sha256Ac** file hash algorithms that are now displayed in the **fileDetails** property of the [fileEvidence](/graph/api/resources/security-fileevidence?view=graph-rest-beta&preserve-view=true) resource.
 
-Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
+### Tasks and plans
+
+Use the **publicationName** property on [plannerTeamsPublicationInfo](/graph/api/resources/plannerteamspublicationinfo?view=graph-rest-beta&preserve-view=true) to get the name of a published task list.
 
 ### Teamwork and communications | Calls and online meetings
 
-- Use the **settings** property on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) to get or set whether attendees receive email notifications for a town hall or webinar.
-- Removed the **meetingOrganizerId** property from the [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) and [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) resources in favor of the **meetingOrganizer** property.
+- Use the **isEndToEndEncryptionEnabled** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) and [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) to indicate whether end-to-end encryption (E2EE) is enabled for a meeting or virtual event session.
+- Use the call delegation APIs in Microsoft Graph to query and manage delegates and delegators for a user. A delegator grants a delegate the ability to perform actions like making calls or managing settings on their behalf, and the delegate undertakes these tasks. For more information, see [Working with the call delegation APIs in Microsoft Graph (preview)](/graph/api/resources/calldelegation-api-overview?view=graph-rest-beta&preserve-view=true).
 
-### Teamwork and communications | Shift management
+### Teamwork and communications | Messaging
 
-Added the ability to [start](/graph/api/workingtimeschedule-startworkingtime?view=graph-rest-beta&preserve-view=true) and [end](/graph/api/workingtimeschedule-endworkingtime?view=graph-rest-beta&preserve-view=true) the working time of a specific user.
+- [Reply with quote](/graph/api/chatmessage-replywithquote?view=graph-rest-beta&preserve-view=true) to a single chat message or multiple chat messages in a chat.
+- [Forward](/graph/api/chatmessage-forwardtochat?view=graph-rest-beta&preserve-view=true) a chat message, a channel message, or a channel message reply to a chat.
+- Enabled Azure China 21Vianet support for the following methods:
+  - [userTeamwork: sendActivityNotification](/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta&preserve-view=true)
+  - [teamwork: sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta&preserve-view=true)
+  - [team: sendActivityNotification](/graph/api/team-sendactivitynotification?view=graph-rest-beta&preserve-view=true)
+  - [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification?view=graph-rest-beta&preserve-view=true)
+- Use the `<codeblock><code></code></codeblock>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody?view=graph-rest-beta&preserve-view=true) resource to represent a code block in the message body in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true)
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **allowCopyingAndSharingMeetingContent** on the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) and [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) to indicate whether copying and sharing meeting content is enabled for the meeting.
 
 ## Contribute to Microsoft Graph
 
@@ -167,3 +143,4 @@ Are there scenarios you'd like Microsoft Graph to support?
 - [Microsoft Graph developer blog](https://devblogs.microsoft.com/microsoft365dev/category/microsoft-graph/).
 - [Microsoft Graph API changelog](https://developer.microsoft.com/graph/changelog/).
 - [Microsoft Graph what's new history](whats-new-earlier.md).
+ 

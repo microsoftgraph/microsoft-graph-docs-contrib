@@ -1,10 +1,11 @@
 ---
 title: "changeNotification resource type"
-description: "Represents the change notification sent to the subscriber."
+description: "Represents the change notification sent to the subscriber (app) of a Microsoft Graph subscription."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: resourcePageType
 ms.subservice: change-notifications
+ms.date: 12/20/2024
 ---
 
 # changeNotification resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the notification sent to the subscriber. All the properties of this resource are read-only.
+Represents the notification sent to the subscriber (app) of a [Microsoft Graph subscription](../resources/subscription.md). All the properties of this resource are read-only.
 
 For details, see [Use Microsoft Graph to get change notifications](change-notifications-api-overview.md).
 

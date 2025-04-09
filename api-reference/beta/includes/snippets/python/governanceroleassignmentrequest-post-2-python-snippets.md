@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.governance_role_assignment_request import GovernanceRoleAssignmentRequest
 from msgraph_beta.generated.models.governance_schedule import GovernanceSchedule
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = GovernanceRoleAssignmentRequest(
 	role_definition_id = "8b4d1d51-08e9-4254-b0a6-b16177aae376",
 	resource_id = "e5e7d29d-5465-45ac-885f-4716a5ee74b5",

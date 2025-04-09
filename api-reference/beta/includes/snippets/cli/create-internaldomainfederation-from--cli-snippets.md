@@ -18,7 +18,8 @@ mgc-beta domains federation-configuration create --domain-id {domain-id} --body 
   "promptLoginBehavior": "nativeSupport",\
   "isSignedAuthenticationRequestRequired": true,\
   "nextSigningCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",\
-  "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"\
+  "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp",\
+  "passwordResetUri": "https://sts.contoso.com/adfs/passwordReset"\
 }\
 '
 

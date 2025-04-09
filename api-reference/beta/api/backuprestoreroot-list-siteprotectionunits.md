@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # List siteProtectionUnits
@@ -32,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/backupRestore/siteProtectionUnits
+GET /solutions/backupRestore/protectionUnits/microsoft.graph.siteProtectionUnit
 GET /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteProtectionUnits
 ```
 
@@ -50,6 +51,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [siteProtectionUnit](../resources/siteprotectionunit.md) in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Example 1: List all the siteProtectionUnits in a tenant
@@ -59,6 +62,7 @@ The following example shows how to get a list of all the **siteProtectionUnits**
 #### Request
 
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/siteProtectionUnits
+GET https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/microsoft.graph.siteProtectionUnit
 ```
 
 # [C#](#tab/csharp)
@@ -94,7 +98,7 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/siteProtectionUnits
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-all-siteprotectionunit-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -116,7 +120,7 @@ The following example shows the response.
 HTTP/1.1 200 OK
 
 {
-  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/siteProtectionUnits?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/microsoft.graph.siteProtectionUnit?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
   "value": [
     {
       "@odata.type": "#microsoft.graph.siteProtectionUnit",
@@ -126,6 +130,7 @@ HTTP/1.1 200 OK
       "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDC", // Newly Added
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
       "status": "unprotected",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -160,6 +165,7 @@ HTTP/1.1 200 OK
       "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCOne", // Newly Added
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
       "status": "unprotectRequested",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -194,6 +200,7 @@ HTTP/1.1 200 OK
       "siteName": "Enhanced Restore IDC - 2", // Newly Added
       "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCTwo", // Newly Added
       "status": "protected",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -227,6 +234,7 @@ HTTP/1.1 200 OK
       "siteName": "Enhanced Restore IDC - 3", // Newly Added
       "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCThree", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -261,6 +269,7 @@ HTTP/1.1 200 OK
       "siteName": "Who+", // Newly Added
       "siteWebUrl": "https://contoso.sharepoint.com/teams/Whoplus", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -366,6 +375,7 @@ HTTP/1.1 200 OK
       "siteWebUrl": "https://contoso.sharepoint.com/teams/Whoplus", // Newly Added
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -400,6 +410,7 @@ HTTP/1.1 200 OK
       "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDC", // Newly Added
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -434,6 +445,7 @@ HTTP/1.1 200 OK
       "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCOne", // Newly Added
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -468,6 +480,7 @@ HTTP/1.1 200 OK
       "siteName": "Enhanced Restore IDC - 2", // Newly Added
       "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCTwo", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -502,6 +515,7 @@ HTTP/1.1 200 OK
       "siteName": "Enhanced Restore IDC - 3", // Newly Added
       "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCThree", // Newly Added
       "status": "protected",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

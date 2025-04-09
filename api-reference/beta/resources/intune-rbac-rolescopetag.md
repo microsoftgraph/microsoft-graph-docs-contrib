@@ -5,15 +5,16 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # roleScopeTag resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Role Scope Tag
 
@@ -36,6 +37,7 @@ Role Scope Tag
 |displayName|String|The display or friendly name of the Role Scope Tag.|
 |description|String|Description of the Role Scope Tag.|
 |isBuiltIn|Boolean|Description of the Role Scope Tag. This property is read-only.|
+|permissions|String collection|Permissions associated with the Role Scope Tag. This property is read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -56,6 +58,9 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
-  "isBuiltIn": true
+  "isBuiltIn": true,
+  "permissions": [
+    "String"
+  ]
 }
 ```

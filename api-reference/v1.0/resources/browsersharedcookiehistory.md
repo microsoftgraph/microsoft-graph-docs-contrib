@@ -5,6 +5,7 @@ author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.subservice: "edge-browser-management"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # browserSharedCookieHistory resource type

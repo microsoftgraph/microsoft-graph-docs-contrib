@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.networkaccess.device_link import DeviceLink
 from msgraph_beta.generated.models.device_vendor import DeviceVendor
@@ -12,9 +13,7 @@ from msgraph_beta.generated.models.networkaccess.bgp_configuration import BgpCon
 from msgraph_beta.generated.models.networkaccess.redundancy_configuration import RedundancyConfiguration
 from msgraph_beta.generated.models.redundancy_tier import RedundancyTier
 from msgraph_beta.generated.models.networkaccess.tunnel_configuration import TunnelConfiguration
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = DeviceLink(
 	name = "device link 1",
 	ip_address = "24.123.22.168",

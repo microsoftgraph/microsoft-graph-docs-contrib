@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # communicationsUserIdentity resource type
@@ -24,6 +25,9 @@ Inherits from [identity](identity.md).
 | displayName | String | The display name associated with the user. Inherited from **identity**. |
 | id | String | The user's object ID. Inherited from **identity**. |
 | tenantId | String | The user's tenant ID. |
+
+## Relationships
+None.
 
 ## JSON representation
 

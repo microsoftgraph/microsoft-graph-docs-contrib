@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.team import Team
 from msgraph_beta.generated.models.team_member_settings import TeamMemberSettings
@@ -11,9 +12,7 @@ from msgraph_beta.generated.models.team_messaging_settings import TeamMessagingS
 from msgraph_beta.generated.models.team_fun_settings import TeamFunSettings
 from msgraph_beta.generated.models.giphy_rating_type import GiphyRatingType
 from msgraph_beta.generated.models.team_discovery_settings import TeamDiscoverySettings
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Team(
 	is_membership_limited_to_owners = True,
 	member_settings = TeamMemberSettings(

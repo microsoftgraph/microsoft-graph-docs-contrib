@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 description: "Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name."
 doc_type: apiPageType
+ms.date: 03/14/2024
 ---
 # driveItem: copy
 

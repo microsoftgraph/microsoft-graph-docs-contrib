@@ -5,6 +5,7 @@ author: "Jerrysai-zz"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Get continuousAccessEvaluationPolicy
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "continuousaccessevaluationpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/continuousaccessevaluationpolicy-get-permissions.md)]
+
+[!INCLUDE [rbac-conditionalaccess-apis-read](../includes/rbac-for-apis/rbac-conditionalaccess-apis-read.md)]
 
 ## HTTP request
 

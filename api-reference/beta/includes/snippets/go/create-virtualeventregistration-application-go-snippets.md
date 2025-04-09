@@ -22,6 +22,12 @@ lastName := "Demoss"
 requestBody.SetLastName(&lastName) 
 email := "DianeDemoss@contoso.com"
 requestBody.SetEmail(&email) 
+externalRegistrationInformation := graphmodels.NewVirtualEventExternalRegistrationInformation()
+referrer := "Facebook"
+externalRegistrationInformation.SetReferrer(&referrer) 
+registrationId := "myExternalRegistrationId"
+externalRegistrationInformation.SetRegistrationId(&registrationId) 
+requestBody.SetExternalRegistrationInformation(externalRegistrationInformation)
 preferredTimezone := "Pacific Standard Time"
 requestBody.SetPreferredTimezone(&preferredTimezone) 
 preferredLanguage := "en-us"

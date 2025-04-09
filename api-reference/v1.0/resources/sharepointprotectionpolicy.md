@@ -7,13 +7,14 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: SharePoint protection policy
+ms.date: 08/27/2024
 ---
 
 # sharePointProtectionPolicy resource type
 
 Namespace: microsoft.graph
 
-Represents a plan defined by the SharePoint Online Admin to protect SharePoint Online, including what data to protect, when to protect it, and for what time period to retain the protected data.
+Represents a plan defined by the SharePoint Online admin to protect SharePoint Online, including what data to protect, when to protect it, and for what time period to retain the protected data. Currently, policies are supported only for  SharePoint Online sites in the main geolocation only; multi-geo tenants aren't supported.
 
 Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 

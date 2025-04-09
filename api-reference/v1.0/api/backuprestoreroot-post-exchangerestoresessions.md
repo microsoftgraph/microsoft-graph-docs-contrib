@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 09/10/2024
 ---
 
 # Create exchangeRestoreSession
@@ -58,6 +59,8 @@ You can specify the following properties when you create an **exchangeRestoreSes
 
 If successful, this method returns a `201 Created` response code and an [exchangeRestoreSession](../resources/exchangerestoresession.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Example 1: Create exchangeRestoreSession with mailboxRestoreArtifacts
@@ -66,6 +69,7 @@ If successful, this method returns a `201 Created` response code and an [exchang
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "exchangerestoresession_create_mailboxrestoreartifacts"
@@ -78,16 +82,50 @@ Content-Type: application/json
 {
   "mailboxRestoreArtifacts": [
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "destinationType": "inPlace"
     },
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
       "destinationType": "inPlace"
     }
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/exchangerestoresession-create-mailboxrestoreartifacts-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/exchangerestoresession-create-mailboxrestoreartifacts-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/exchangerestoresession-create-mailboxrestoreartifacts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/exchangerestoresession-create-mailboxrestoreartifacts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/exchangerestoresession-create-mailboxrestoreartifacts-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/exchangerestoresession-create-mailboxrestoreartifacts-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/exchangerestoresession-create-mailboxrestoreartifacts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/exchangerestoresession-create-mailboxrestoreartifacts-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -139,6 +177,7 @@ Content-Type: application/json
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "exchangerestoresession_create_granularmailboxrestoreartifacts"
@@ -152,13 +191,47 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.exchangeRestoreSession",
   "granularMailboxRestoreArtifacts": [
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "destinationType": "inPlace",
       "searchResponseId" : "M2UyZDAwMDAwMDMxMzkzYTMyNj"
     }
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/exchangerestoresession-create-granularmailboxrestoreartifacts-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/exchangerestoresession-create-granularmailboxrestoreartifacts-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/exchangerestoresession-create-granularmailboxrestoreartifacts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/exchangerestoresession-create-granularmailboxrestoreartifacts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/exchangerestoresession-create-granularmailboxrestoreartifacts-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/exchangerestoresession-create-granularmailboxrestoreartifacts-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/exchangerestoresession-create-granularmailboxrestoreartifacts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/exchangerestoresession-create-granularmailboxrestoreartifacts-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -204,7 +277,7 @@ Content-Type: application/json
   "granularMailboxRestoreArtifact": [
     {
       "id": "959ba739-70b5-43c4-8c90-b2c22014f18a",
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "restoredFolderId": null,
       "status": "added",
       "startDateTime": null,

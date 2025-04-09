@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.service_principals.item.synchronization.jobs.item.restart.restart_request_builder import RestartRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph_beta.generated.serviceprincipals.item.synchronization.jobs.item.restart.restart_post_request_body import RestartPostRequestBody
 from msgraph_beta.generated.models.synchronization_job_restart_criteria import SynchronizationJobRestartCriteria
 from msgraph_beta.generated.models.synchronization_job_restart_scope import SynchronizationJobRestartScope
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = RestartPostRequestBody(
 	criteria = SynchronizationJobRestartCriteria(
 		reset_scope = SynchronizationJobRestartScope.Watermark | SynchronizationJobRestartScope.Escrows | SynchronizationJobRestartScope.QuarantineState,

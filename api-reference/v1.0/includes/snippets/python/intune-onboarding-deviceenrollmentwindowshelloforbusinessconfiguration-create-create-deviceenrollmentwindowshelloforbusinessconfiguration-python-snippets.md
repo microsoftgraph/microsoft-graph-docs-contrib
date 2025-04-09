@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.device_enrollment_windows_hello_for_business_configuration import DeviceEnrollmentWindowsHelloForBusinessConfiguration
 from msgraph.generated.models.windows_hello_for_business_pin_usage import WindowsHelloForBusinessPinUsage
 from msgraph.generated.models.enablement import Enablement
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = DeviceEnrollmentWindowsHelloForBusinessConfiguration(
 	odata_type = "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
 	display_name = "Display Name value",

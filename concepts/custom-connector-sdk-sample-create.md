@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn how to use the Microsoft Graph connectors SDK to build a custom connector in C#."
+ms.date: 11/07/2024
 ---
 
 # Build a custom Microsoft Graph connector in C#
@@ -68,7 +69,6 @@ Before you build the connector, use the following steps to install NuGet package
             public List<string> Appliances { get; set; }
         }
     }
-    
     ```
 
 ### Update ConnectionManagementServiceImpl.cs
@@ -131,10 +131,9 @@ The **ValidateAuthentication** method is used to validate the credentials and th
             }
         }
     }
-    
     ```
 
-    The ReadRecordFromCsv method will open the CSV file and read the first record from the file. We can Use this method to validate that the provided data source URL (path of the CSV file) is valid. This connector is using anonymous auth; therefore, credentials are not validated. If the connector uses any other auth type, the connection to the data source must be made using the credentials provided to validate the authentication.
+    The **ReadRecordFromCsv** method opens the CSV file and reads the first record from the file. We can use this method to validate that the provided data source URL (path of the CSV file) is valid. This connector is using anonymous auth; therefore, credentials aren't validated. If the connector uses any other auth type, the connection to the data source must be made using the credentials provided to validate the authentication.
 
 3. Add the following using directive in ConnectionManagementServiceImpl.cs.
 
@@ -146,59 +145,57 @@ The **ValidateAuthentication** method is used to validate the credentials and th
 
     ```csharp
     public override Task<ValidateAuthenticationResponse> ValidateAuthentication(ValidateAuthenticationRequest request, ServerCallContext context)
-            {
-                try
-                {
-                    Log.Information("Validating authentication");
-                    CsvDataLoader.ReadRecordFromCsv(request.AuthenticationData.DatasourceUrl);
-                    return this.BuildAuthValidationResponse(true);
-                }
-                catch (Exception ex)
-                {
-                    Log.Error(ex.ToString());
-                    return this.BuildAuthValidationResponse(false, "Could not read the provided CSV file with the provided credentials");
-                }
-            }
-    
+    {
+        try
+        {
+            Log.Information("Validating authentication");
+            CsvDataLoader.ReadRecordFromCsv(request.AuthenticationData.DatasourceUrl);
+            return this.BuildAuthValidationResponse(true);
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex.ToString());
+            return this.BuildAuthValidationResponse(false, "Could not read the provided CSV file with the provided credentials");
+        }
+    }
     ```
 
 #### ValidateCustomConfiguration
 
-The **ValidateCustomConfiguration** method is used to validate any other parameters required for the connection. The connector you're building doesn't require any extra parameters; therefore, the method will validate that the extra parameters are empty.
+The **ValidateCustomConfiguration** method is used to validate any other parameters required for the connection. The connector you're building doesn't require any extra parameters; therefore, the method validates that the extra parameters are empty.
 
 1. Update the **ValidateCustomConfiguration** method in ConnectionManagementServiceImpl.cs with the following code.
 
     ```csharp
     public override Task<ValidateCustomConfigurationResponse> ValidateCustomConfiguration(ValidateCustomConfigurationRequest request, ServerCallContext context)
+    {
+        Log.Information("Validating custom configuration");
+        ValidateCustomConfigurationResponse response;
+
+        if (!string.IsNullOrWhiteSpace(request.CustomConfiguration.Configuration))
         {
-            Log.Information("Validating custom configuration");
-            ValidateCustomConfigurationResponse response;
-
-            if (!string.IsNullOrWhiteSpace(request.CustomConfiguration.Configuration))
+            response = new ValidateCustomConfigurationResponse()
             {
-                response = new ValidateCustomConfigurationResponse()
+                Status = new OperationStatus()
                 {
-                    Status = new OperationStatus()
-                    {
-                        Result = OperationResult.ValidationFailure,
-                        StatusMessage = "No additional parameters are required for this connector"
-                    },
-                };
-            }
-            else
+                    Result = OperationResult.ValidationFailure,
+                    StatusMessage = "No additional parameters are required for this connector"
+                },
+            };
+        }
+        else
+        {
+            response = new ValidateCustomConfigurationResponse()
             {
-                response = new ValidateCustomConfigurationResponse()
+                Status = new OperationStatus()
                 {
-                    Status = new OperationStatus()
-                    {
-                        Result = OperationResult.Success,
-                    },
-                };
-            }
-
-            return Task.FromResult(response);
+                    Result = OperationResult.Success,
+                },
+            };
         }
 
+        return Task.FromResult(response);
+    }
     ```
 
 #### GetDataSourceSchema
@@ -210,74 +207,76 @@ The **GetDataSourceSchema** method is used to fetch the schema for the connector
     ```csharp
     using Microsoft.Graph.Connectors.Contracts.Grpc;
     using static Microsoft.Graph.Connectors.Contracts.Grpc.SourcePropertyDefinition.Types;
-
     ```
 
 2. Add the following **GetSchema** method in the AppliancePart.cs class.
 
-     ```csharp
-      public static DataSourceSchema GetSchema()
-        {
-            DataSourceSchema schema = new DataSourceSchema();
+    ```csharp
+    public static DataSourceSchema GetSchema()
+    {
+        DataSourceSchema schema = new DataSourceSchema();
 
-            schema.PropertyList.Add(
-                new SourcePropertyDefinition
-                {
-                    Name = nameof(PartNumber),
-                    Type = SourcePropertyType.Int64,
-                    DefaultSearchAnnotations = (uint)(SearchAnnotations.IsQueryable | SearchAnnotations.IsRetrievable),
-                    RequiredSearchAnnotations = (uint)(SearchAnnotations.IsQueryable | SearchAnnotations.IsRetrievable),
-                });
+        schema.PropertyList.Add(
+            new SourcePropertyDefinition
+            {
+                Name = nameof(PartNumber),
+                Type = SourcePropertyType.Int64,
+                DefaultSearchAnnotations = (uint)(SearchAnnotations.IsQueryable | SearchAnnotations.IsRetrievable),
+                RequiredSearchAnnotations = (uint)(SearchAnnotations.IsQueryable | SearchAnnotations.IsRetrievable),
+            });
 
-            schema.PropertyList.Add(
-                new SourcePropertyDefinition
-                {
-                    Name = nameof(Name),
-                    Type = SourcePropertyType.String,
-                    DefaultSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
-                    RequiredSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
-                });
+        schema.PropertyList.Add(
+            new SourcePropertyDefinition
+            {
+                Name = nameof(Name),
+                Type = SourcePropertyType.String,
+                DefaultSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
+                RequiredSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
+            });
 
-            schema.PropertyList.Add(
-                new SourcePropertyDefinition
-                {
-                    Name = nameof(Price),
-                    Type = SourcePropertyType.Double,
-                    DefaultSearchAnnotations = (uint)(SearchAnnotations.IsRetrievable),
-                    RequiredSearchAnnotations = (uint)(SearchAnnotations.IsRetrievable),
-                });
+        schema.PropertyList.Add(
+            new SourcePropertyDefinition
+            {
+                Name = nameof(Price),
+                Type = SourcePropertyType.Double,
+                DefaultSearchAnnotations = (uint)(SearchAnnotations.IsRetrievable),
+                RequiredSearchAnnotations = (uint)(SearchAnnotations.IsRetrievable),
+            });
 
-            schema.PropertyList.Add(
-                new SourcePropertyDefinition
-                {
-                    Name = nameof(Inventory),
-                    Type = SourcePropertyType.Int64,
-                    DefaultSearchAnnotations = (uint)(SearchAnnotations.IsQueryable | SearchAnnotations.IsRetrievable),
-                    RequiredSearchAnnotations = (uint)(SearchAnnotations.IsQueryable | SearchAnnotations.IsRetrievable),
-                });
+        schema.PropertyList.Add(
+            new SourcePropertyDefinition
+            {
+                Name = nameof(Inventory),
+                Type = SourcePropertyType.Int64,
+                DefaultSearchAnnotations = (uint)(SearchAnnotations.IsQueryable | SearchAnnotations.IsRetrievable),
+                RequiredSearchAnnotations = (uint)(SearchAnnotations.IsQueryable | SearchAnnotations.IsRetrievable),
+            });
 
-            schema.PropertyList.Add(
-                new SourcePropertyDefinition
-                {
-                    Name = nameof(Appliances),
-                    Type = SourcePropertyType.StringCollection,
-                    DefaultSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
-                    RequiredSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
-                });
+        schema.PropertyList.Add(
+            new SourcePropertyDefinition
+            {
+                Name = nameof(Appliances),
+                Type = SourcePropertyType.StringCollection,
+                DefaultSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
+                RequiredSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
+            });
 
-            schema.PropertyList.Add(
-                new SourcePropertyDefinition
-                {
-                    Name = nameof(Description),
-                    Type = SourcePropertyType.String,
-                    DefaultSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
-                    RequiredSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
-                });
+        schema.PropertyList.Add(
+            new SourcePropertyDefinition
+            {
+                Name = nameof(Description),
+                Type = SourcePropertyType.String,
+                DefaultSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
+                RequiredSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
+            });
 
-            return schema;
-        }
-  
-     ```
+        return schema;
+    }
+    ```
+
+    > [!NOTE]
+    > * The **RequiredSearchAnnotations** property marks the property annotations as mandatory and unchangeable during the setup of the connector. The previous example sets all properties as *searchable* and *retrievable* mandatorily; however, you can choose not to set the **RequiredSearchAnnotations** on one or more properties.
+    > * The **DefaultSearchAnnotations** property marks the property annotations as default, but they can be changed during the setup of the connector.
 
 3. Add the following using directive in ConnectionManagementServiceImpl.cs.
 
@@ -289,30 +288,29 @@ The **GetDataSourceSchema** method is used to fetch the schema for the connector
 
     ```csharp
     public override Task<GetDataSourceSchemaResponse> GetDataSourceSchema(GetDataSourceSchemaRequest request, ServerCallContext context)
+    {
+        Log.Information("Trying to fetch datasource schema");
+
+        var opStatus = new OperationStatus()
         {
-            Log.Information("Trying to fetch datasource schema");
+            Result = OperationResult.Success,
+        };
 
-            var opStatus = new OperationStatus()
-            {
-                Result = OperationResult.Success,
-            };
+        GetDataSourceSchemaResponse response = new GetDataSourceSchemaResponse()
+        {
+            DataSourceSchema = AppliancePart.GetSchema(),
+            Status = opStatus,
+        };
 
-            GetDataSourceSchemaResponse response = new GetDataSourceSchemaResponse()
-            {
-                DataSourceSchema = AppliancePart.GetSchema(),
-                Status = opStatus,
-            };
-
-            return Task.FromResult(response);
-        }
-
+        return Task.FromResult(response);
+    }
     ```
 
 ### Update ConnectorCrawlerServiceImpl.cs
 
-This class has the methods that will be called by the platform during the crawls.
+This class has the methods that are called by the platform during the crawls.
 
-The **GetCrawlStream** method will be called during the full or periodic full crawls.
+The **GetCrawlStream** method is called during the full or periodic full crawls.
 
 1. Add the following using directive in AppliancePart.cs.
 
@@ -324,100 +322,99 @@ The **GetCrawlStream** method will be called during the full or periodic full cr
 
     ```csharp
     public CrawlItem ToCrawlItem()
+    {
+        return new CrawlItem
         {
-            return new CrawlItem
+            ItemType = CrawlItem.Types.ItemType.ContentItem,
+            ItemId = this.PartNumber.ToString(CultureInfo.InvariantCulture),
+            ContentItem = this.GetContentItem(),
+        };
+    }
+
+    private ContentItem GetContentItem()
+    {
+        return new ContentItem
+        {
+            AccessList = this.GetAccessControlList(),
+            PropertyValues = this.GetSourcePropertyValueMap()
+        };
+    }
+
+    private AccessControlList GetAccessControlList()
+    {
+        AccessControlList accessControlList = new AccessControlList();
+        accessControlList.Entries.Add(this.GetAllowEveryoneAccessControlEntry());
+        return accessControlList;
+    }
+
+    private AccessControlEntry GetAllowEveryoneAccessControlEntry()
+    {
+        return new AccessControlEntry
+        {
+            AccessType = AccessControlEntry.Types.AclAccessType.Grant,
+            Principal = new Principal
             {
-                ItemType = CrawlItem.Types.ItemType.ContentItem,
-                ItemId = this.PartNumber.ToString(CultureInfo.InvariantCulture),
-                ContentItem = this.GetContentItem(),
-            };
-        }
-
-        private ContentItem GetContentItem()
-        {
-            return new ContentItem
-            {
-                AccessList = this.GetAccessControlList(),
-                PropertyValues = this.GetSourcePropertyValueMap()
-            };
-        }
-
-        private AccessControlList GetAccessControlList()
-        {
-            AccessControlList accessControlList = new AccessControlList();
-            accessControlList.Entries.Add(this.GetAllowEveryoneAccessControlEntry());
-            return accessControlList;
-        }
-
-        private AccessControlEntry GetAllowEveryoneAccessControlEntry()
-        {
-            return new AccessControlEntry
-            {
-                AccessType = AccessControlEntry.Types.AclAccessType.Grant,
-                Principal = new Principal
-                {
-                    Type = Principal.Types.PrincipalType.Everyone,
-                    IdentitySource = Principal.Types.IdentitySource.AzureActiveDirectory,
-                    IdentityType = Principal.Types.IdentityType.AadId,
-                    Value = "EVERYONE",
-                }
-            };
-        }
-
-        private SourcePropertyValueMap GetSourcePropertyValueMap()
-        {
-            SourcePropertyValueMap sourcePropertyValueMap = new SourcePropertyValueMap();
-
-            sourcePropertyValueMap.Values.Add(
-                nameof(this.PartNumber),
-                new GenericType
-                {
-                    IntValue = this.PartNumber,
-                });
-            
-            sourcePropertyValueMap.Values.Add(
-                nameof(this.Name),
-                new GenericType
-                {
-                    StringValue = this.Name,
-                });
-            
-            sourcePropertyValueMap.Values.Add(
-                nameof(this.Price),
-                new GenericType
-                {
-                    DoubleValue = this.Price,
-                });
-            
-            sourcePropertyValueMap.Values.Add(
-                nameof(this.Inventory),
-                new GenericType
-                {
-                    IntValue = this.Inventory,
-                });
-            
-            var appliancesPropertyValue = new StringCollectionType();
-            foreach(var property in this.Appliances)
-            {
-                appliancesPropertyValue.Values.Add(property);
+                Type = Principal.Types.PrincipalType.Everyone,
+                IdentitySource = Principal.Types.IdentitySource.AzureActiveDirectory,
+                IdentityType = Principal.Types.IdentityType.AadId,
+                Value = "EVERYONE",
             }
-            sourcePropertyValueMap.Values.Add(
-                nameof(this.Appliances),
-                new GenericType
-                {
-                    StringCollectionValue = appliancesPropertyValue,
-                });
-            
-            sourcePropertyValueMap.Values.Add(
-                nameof(this.Description),
-                new GenericType
-                {
-                    StringValue = Description,
-                });
+        };
+    }
 
-            return sourcePropertyValueMap;
+    private SourcePropertyValueMap GetSourcePropertyValueMap()
+    {
+        SourcePropertyValueMap sourcePropertyValueMap = new SourcePropertyValueMap();
+
+        sourcePropertyValueMap.Values.Add(
+            nameof(this.PartNumber),
+            new GenericType
+            {
+                IntValue = this.PartNumber,
+            });
+        
+        sourcePropertyValueMap.Values.Add(
+            nameof(this.Name),
+            new GenericType
+            {
+                StringValue = this.Name,
+            });
+        
+        sourcePropertyValueMap.Values.Add(
+            nameof(this.Price),
+            new GenericType
+            {
+                DoubleValue = this.Price,
+            });
+        
+        sourcePropertyValueMap.Values.Add(
+            nameof(this.Inventory),
+            new GenericType
+            {
+                IntValue = this.Inventory,
+            });
+        
+        var appliancesPropertyValue = new StringCollectionType();
+        foreach(var property in this.Appliances)
+        {
+            appliancesPropertyValue.Values.Add(property);
         }
+        sourcePropertyValueMap.Values.Add(
+            nameof(this.Appliances),
+            new GenericType
+            {
+                StringCollectionValue = appliancesPropertyValue,
+            });
+        
+        sourcePropertyValueMap.Values.Add(
+            nameof(this.Description),
+            new GenericType
+            {
+                StringValue = Description,
+            });
 
+        return sourcePropertyValueMap;
+    }
     ```
 
 3. Add the following using directive in CsvDataLoader.cs.
@@ -430,20 +427,19 @@ The **GetCrawlStream** method will be called during the full or periodic full cr
 
     ```csharp
     public static IEnumerable<CrawlItem> GetCrawlItemsFromCsv(string filePath)
+    {
+        using (var reader = new StreamReader(filePath))
+        using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
         {
-            using (var reader = new StreamReader(filePath))
-            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
-            {
-                csv.Context.RegisterClassMap<AppliancePartMap>();
+            csv.Context.RegisterClassMap<AppliancePartMap>();
 
-                // The GetRecords<T> method will return an IEnumerable<T> that will yield records. This means that only one record is returned at a time as you iterate the records.
-                foreach (var record in csv.GetRecords<AppliancePart>())
-                {
-                    yield return record.ToCrawlItem();
-                }
+            // The GetRecords<T> method returns an IEnumerable<T> that yields records. This means that only one record is returned at a time as you iterate the records.
+            foreach (var record in csv.GetRecords<AppliancePart>())
+            {
+                yield return record.ToCrawlItem();
             }
         }
-
+    }
     ```
 
 5. Add the following using directive in ConnectorCrawlerServiceImpl.cs.
@@ -456,58 +452,55 @@ The **GetCrawlStream** method will be called during the full or periodic full cr
 
     ```csharp
     private CrawlStreamBit GetCrawlStreamBit(CrawlItem crawlItem)
+    {
+        return new CrawlStreamBit
         {
-            return new CrawlStreamBit
+            Status = new OperationStatus
             {
-                Status = new OperationStatus
-                {
-                    Result = OperationResult.Success,
-                },
-                CrawlItem = crawlItem,
-                CrawlProgressMarker = new CrawlCheckpoint
-                {
-                    CustomMarkerData = crawlItem.ItemId,
-                },
-            };
-        }
-
+                Result = OperationResult.Success,
+            },
+            CrawlItem = crawlItem,
+            CrawlProgressMarker = new CrawlCheckpoint
+            {
+                CustomMarkerData = crawlItem.ItemId,
+            },
+        };
+    }
     ```
 
 7. Update the **GetCrawlStream** method to the following.
 
     ```csharp
     public override async Task GetCrawlStream(GetCrawlStreamRequest request, IServerStreamWriter<CrawlStreamBit> responseStream, ServerCallContext context)
+    {
+        try
         {
-            try
+            Log.Information("GetCrawlStream Entry");
+            var crawlItems = CsvDataLoader.GetCrawlItemsFromCsv(request.AuthenticationData.DatasourceUrl);
+            foreach (var crawlItem in crawlItems)
             {
-                Log.Information("GetCrawlStream Entry");
-                var crawlItems = CsvDataLoader.GetCrawlItemsFromCsv(request.AuthenticationData.DatasourceUrl);
-                foreach (var crawlItem in crawlItems)
-                {
-                    CrawlStreamBit crawlStreamBit = this.GetCrawlStreamBit(crawlItem);
-                    await responseStream.WriteAsync(crawlStreamBit).ConfigureAwait(false);
-                }
-            }
-            catch (Exception ex)
-            {
-                Log.Error(ex.ToString());
-                CrawlStreamBit crawlStreamBit = new CrawlStreamBit
-                {
-                    Status = new OperationStatus
-                    {
-                        Result = OperationResult.DatasourceError,
-                        StatusMessage = "Fetching items from datasource failed",
-                        RetryInfo = new RetryDetails
-                        {
-                            Type = RetryDetails.Types.RetryType.Standard,
-                        },
-                    },
-                };
+                CrawlStreamBit crawlStreamBit = this.GetCrawlStreamBit(crawlItem);
                 await responseStream.WriteAsync(crawlStreamBit).ConfigureAwait(false);
             }
-
         }
-
+        catch (Exception ex)
+        {
+            Log.Error(ex.ToString());
+            CrawlStreamBit crawlStreamBit = new CrawlStreamBit
+            {
+                Status = new OperationStatus
+                {
+                    Result = OperationResult.DatasourceError,
+                    StatusMessage = "Fetching items from datasource failed",
+                    RetryInfo = new RetryDetails
+                    {
+                        Type = RetryDetails.Types.RetryType.Standard,
+                    },
+                },
+            };
+            await responseStream.WriteAsync(crawlStreamBit).ConfigureAwait(false);
+        }
+    }
     ```
 
 Now the connector is created and you can build and run the project.

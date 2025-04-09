@@ -34,6 +34,10 @@ mgc-beta policies authentication-methods-policy authentication-method-configurat
     "issuerHintsConfiguration": {\
         "state": "disabled"\
     },\
+    "crlValidationConfiguration": {\
+        "state": "disabled",\
+        "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": []\
+    },\
     "includeTargets": [\
         {\
             "targetType": "group",\

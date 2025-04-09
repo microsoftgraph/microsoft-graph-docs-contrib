@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # driveItemVersion resource type

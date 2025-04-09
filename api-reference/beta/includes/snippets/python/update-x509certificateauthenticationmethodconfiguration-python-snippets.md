@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.x509_certificate_authentication_method_configuration import X509CertificateAuthenticationMethodConfiguration
 from msgraph_beta.generated.models.authentication_method_state import AuthenticationMethodState
@@ -16,9 +17,7 @@ from msgraph_beta.generated.models.x509_certificate_issuer_hints_configuration i
 from msgraph_beta.generated.models.x509_certificate_issuer_hints_state import X509CertificateIssuerHintsState
 from msgraph_beta.generated.models.authentication_method_target import AuthenticationMethodTarget
 from msgraph_beta.generated.models.authentication_method_target_type import AuthenticationMethodTargetType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = X509CertificateAuthenticationMethodConfiguration(
 	odata_type = "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
 	id = "X509Certificate",
@@ -55,6 +54,13 @@ request_body = X509CertificateAuthenticationMethodConfiguration(
 			is_registration_required = False,
 		),
 	],
+	additional_data = {
+			"crl_validation_configuration" : {
+					"state" : "disabled",
+					"exempted_certificate_authorities_subject_key_identifiers" : [
+					],
+			},
+	}
 )
 
 result = await graph_client.policies.authentication_methods_policy.authentication_method_configurations.by_authentication_method_configuration_id('authenticationMethodConfiguration-id').patch(request_body)

@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 08/26/2024
 ---
 
 # serviceApp: activate
@@ -52,6 +53,8 @@ You can specify the following properties you activate a **serviceApp**.
 ## Response
 
 If successful, this action returns a `202 Accepted` response code and a [serviceApp](../resources/serviceapp.md) object in the response body.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 

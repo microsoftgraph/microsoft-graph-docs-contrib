@@ -5,6 +5,7 @@ author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # List registeredUsers
@@ -25,6 +26,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Directory Readers
+> - Global Reader
+> - Intune Administrator
+> - Windows 365 Administrator
+
 ## HTTP request
 
 You can address the device using either its **id** or **deviceId**.
@@ -34,9 +42,9 @@ GET /devices/{id}/registeredUsers
 GET /devices(deviceId='{deviceId}')/registeredUsers
 ```
 ## Optional query parameters
-This method supports the `$search`, `$count`, and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response. OData cast is also enabled, for example, you can cast to get just the directoryRoles the device is a member of. You can use `$search` on the **displayName** property.
+This method supports the `$select`, `$search`, `$count`, and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response. `$search` is supported on the **displayName** and **description** properties only.
 
-Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+The use of query parameters with this API is supported only with advanced query parameters. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 | Name       | Type | Description|

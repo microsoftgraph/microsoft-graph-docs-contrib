@@ -5,6 +5,7 @@ author: "tarkansevilmis"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 06/05/2024
 ---
 
 # plannerRoster resource type

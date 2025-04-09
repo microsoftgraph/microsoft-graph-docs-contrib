@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 08/28/2024
 ---
 
 # protectionPolicyBase: activate
@@ -15,6 +16,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Activate a [protectionPolicyBase](../resources/protectionpolicybase.md).
+
+Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users). You can add or remove artifacts (sites or user accounts) to or from each active policy.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -49,11 +52,13 @@ Don't supply a request body for this method.
 
 If successful, this action returns a `202 Accepted` response code and a [protectionPolicyBase](../resources/protectionpolicybase.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
-### Example 1 : Activate an inactive protection policy
+### Example 1: Activate an inactive protection policy
 
-Activate an inactive protection policy.
+The following example shows a request to activate an inactive protection policy.
 
 #### Request
 
@@ -161,9 +166,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
 }
 ```
 
-### Example 2 : Activate an active protection policy
+### Example 2: Activate an active protection policy
 
-Activate an already active protection policy.
+The following example shows a request to activate a protection policy that's already active. This request results in an error.
 
 #### Request
 

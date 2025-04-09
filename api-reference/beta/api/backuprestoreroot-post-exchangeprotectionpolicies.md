@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 08/26/2024
 ---
 
 # Create exchangeProtectionPolicy
@@ -55,6 +56,8 @@ In the request body, include a JSON representation of the [exchangeProtectionPol
 ## Response
 
 If successful, this method returns a `201 Created` response code and an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object in the response body.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 

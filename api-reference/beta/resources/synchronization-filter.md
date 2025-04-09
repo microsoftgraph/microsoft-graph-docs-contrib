@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 03/21/2024
 ---
 
 # filter resource type
@@ -27,6 +28,9 @@ For more information, see [Attribute-based application provisioning with scoping
 |categoryFilterGroups|[filterGroup](synchronization-filtergroup.md) collection|`*Experimental*` Filter group set used to decide whether given object belongs and should be processed as part of this object mapping. An object is considered in scope *if ANY of the groups in the collection is evaluated to `true`*.|
 |groups|[filterGroup](synchronization-filtergroup.md) collection|Filter group set used to decide whether given object is in scope for provisioning. **This is the filter which should be used in most cases**. If an object used to satisfy this filter at a given moment, and then the object or the filter was changed so that filter isn't satisfied any longer, such object *will get de-provisioned". An object is considered in scope *if ANY of the groups in the collection is evaluated to `true`*.|
 |inputFilterGroups|[filterGroup](synchronization-filtergroup.md) collection|`*Experimental*` Filter group set used to filter out objects at the early stage of reading them from the directory. If an object doesn't satisfy this filter, it will not be processed further. Important to understand is that if an object used to satisfy this filter at a given moment, and then the object or the filter was changed so that filter is no longer satisfied, such object *will NOT get de-provisioned*. An object is considered in scope *if ANY of the groups in the collection is evaluated to `true`*. |
+
+## Relationships
+None.
 
 ## JSON representation
 

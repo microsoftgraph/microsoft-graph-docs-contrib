@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List deviceManagementConfigurationSettingGroupDefinitions
@@ -35,6 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/reusableSettings
+GET /deviceManagement/inventorySettings
 GET /deviceManagement/complianceSettings
 GET /deviceManagement/configurationSettings
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions
@@ -66,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2037
+Content-Length: 2067
 
 {
   "value": [
@@ -98,6 +100,7 @@ Content-Length: 2037
       "settingUsage": "configuration",
       "uxBehavior": "dropdown",
       "visibility": "settingsCatalog",
+      "riskLevel": "medium",
       "referredSettingInformationList": [
         {
           "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",

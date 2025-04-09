@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 06/06/2024
 ---
 
 # unenforcedMfaAwsUserFinding resource type

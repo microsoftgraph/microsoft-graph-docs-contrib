@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-id
 doc_type: resourcePageType
 toc.title: Custom claims policy (preview)
+ms.date: 09/19/2024
 ---
 
 # customClaimsPolicy resource type
@@ -14,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a claims policy that allows application admins to customize the claims emitted in tokens affected by this policy.
+Represents a claims policy that allows application admins to customize the claims emitted in tokens affected by this policy. Learn more about this policy in the following articles:
+- [Customize claims using the custom claims policy (preview)](/entra/identity-platform/claims-customization-custom-claims-policy)
+- [Claims customization using a policy](/entra/identity-platform/reference-claims-customization) to learn the difference between this policy and the [claims mapping policy](../resources/claimsmappingpolicy.md)
 
 Inherits from [entity](../resources/entity.md).
 

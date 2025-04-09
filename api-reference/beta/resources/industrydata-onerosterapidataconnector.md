@@ -5,6 +5,7 @@ author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 06/05/2024
 ---
 
 # oneRosterApiDataConnector resource type
@@ -29,7 +30,7 @@ Inherits from [apiDataConnector](industrydata-apidataconnector.md).
 |:---|:---|:---|
 | apiFormat             | microsoft.graph.industryData.apiFormat                                             | The API format of the external system being connected to. Inherited from [apiDataConnector](industrydata-apidataconnector.md).The possible values are: `oneRoster`, `unknownFutureValue`.           |
 | apiVersion            | String                                                                             | The API version of the OneRoster source. Example: 1.1, 1.2                                                                                                                                                                                       |
-| baseUrl               | String                                                                             | The base URL including the scheme, host, and path for the API (with or without a trailing '/'). Example: https://example.com/ims/oneRoster/v1p1. Inherited from [apiDataConnector](industrydata-apidataconnector.md). |
+| baseUrl               | String                                                                             | The base URL including the scheme, host, and path for the API (with or without a trailing '/'). Example: `https://example.com/ims/oneRoster/v1p1`. Inherited from [apiDataConnector](industrydata-apidataconnector.md). |
 | credential            | [microsoft.graph.industryData.credential](industrydata-credential.md) | The base type for all supported credentials. Inherited from [apiDataConnector](industrydata-apidataconnector.md).                                                                    |
 | displayName           | String                                                                             | The name of the data connector. Inherited from [industryDataConnector](industrydata-industrydataconnector.md).                                                                                                        |
 | isContactsEnabled     | Boolean                                                                            | Indicates whether the user specified to import optional contacts data.                                                                                                                                                                                                |

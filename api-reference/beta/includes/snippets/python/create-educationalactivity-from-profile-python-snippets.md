@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.educational_activity import EducationalActivity
 from msgraph_beta.generated.models.institution_data import InstitutionData
 from msgraph_beta.generated.models.physical_address import PhysicalAddress
 from msgraph_beta.generated.models.physical_address_type import PhysicalAddressType
 from msgraph_beta.generated.models.educational_activity_detail import EducationalActivityDetail
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = EducationalActivity(
 	completion_month_year = "Date",
 	end_month_year = "Date",

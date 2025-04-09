@@ -1,13 +1,14 @@
 ---
-title: "singleUser complex type"
+title: "singleUser resource type"
 description: "Identifies a user in the tenant who will be allowed as requestor, approver, or reviewer."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 10/04/2024
 ---
 
-# singleUser complex type
+# singleUser resource type
 
 Namespace: microsoft.graph
 

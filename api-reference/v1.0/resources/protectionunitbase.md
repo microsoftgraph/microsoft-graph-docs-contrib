@@ -7,13 +7,14 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Protection unit
+ms.date: 08/27/2024
 ---
 
 # protectionUnitBase resource type
 
 Namespace: microsoft.graph
 
-Represents a site, drive, or mailbox that's protected by a [protection policy](protectionpolicybase.md).
+Represents a site, drive, or mailbox that's protected by a [protection policy](protectionpolicybase.md). All the protection units in a protection policy have same retention period by default.
 
 This resource is an abstract type.
 

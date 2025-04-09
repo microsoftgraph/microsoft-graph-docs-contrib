@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.group_setting import GroupSetting
 from msgraph.generated.models.setting_value import SettingValue
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = GroupSetting(
 	template_id = "62375ab9-6b52-47ed-826b-58e47e0e304b",
 	values = [

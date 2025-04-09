@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "adimitui"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # List contracts
@@ -24,6 +25,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "contract_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/contract-list-permissions.md)]
+
+> [!IMPORTANT]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *Directory Readers* is the only least privileged role supported for this operation.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

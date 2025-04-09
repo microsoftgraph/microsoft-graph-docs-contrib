@@ -5,6 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # onAttributeCollectionSubmitCustomExtension resource type
@@ -18,10 +19,9 @@ Used for creating a new custom extension based on the **onAttributeCollectionSub
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get](../api/onattributecollectionsubmitcustomextension-get.md)|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|Read the properties and relationships of an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object.|
-|[Update](../api/onattributecollectionsubmitcustomextension-update.md)|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|Update the properties of an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object.|
+None.
+
+For the list of API operations for managing this resource type, see the [customAuthenticationExtension](../resources/customauthenticationextension.md) resource type.
 
 ## Properties
 |Property|Type|Description|

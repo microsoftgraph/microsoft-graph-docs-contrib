@@ -5,15 +5,16 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # operationApprovalPolicyType enum type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 The set of available policy types that can be configured for approval. The policy type must always be defined in an OperationApprovalRequest.
 
@@ -40,6 +41,5 @@ The set of available policy types that can be configured for approval. The polic
 |script|17|Indicates that the configured policy type is a script type, such as Powershell scripts or remediation scripts.|
 |role|18|Indicates that the configured policy type is for a Role. Not in use at this time.|
 |deviceResetPasscode|19|Indicates that the configured policy type is for a Device Reset Passcode Action. Not in use at this time.|
-|customOrganizationalMessage|20|Indicates that the configured policy type is for a Custom Organizational Message. Not in use at this time.|
 |unknownFutureValue|21|Evolvable enumeration sentinel value. Do not use.|
 |operationApprovalPolicy|22|Indicates that the configured policy type is for an Operation Approval Policy.|

@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 10/23/2024
 ---
 
 # Get fido2AuthenticationMethod
@@ -22,12 +23,12 @@ The following tables show the least privileged permission or permissions require
 
 ### Permissions acting on self
 
-<!-- { "blockType": "permissions", "name": "fido2authenticationmethod_get" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/fido2authenticationmethod-get-permissions.md)]
 
 ### Permissions acting on other users
 
-<!-- { "blockType": "permissions", "name": "fido2authenticationmethod_get_2" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/fido2authenticationmethod-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
@@ -39,6 +40,8 @@ Get details of your own FIDO2 authentication method.
 ``` http
 GET /me/authentication/fido2Methods/{id}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Get details of your own or another user's FIDO2 authentication method.
 <!-- { "blockType": "ignored" } -->
@@ -58,10 +61,13 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the requested [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) object in the response body.
 
+> [!NOTE]
+> This method also returns credentials key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value of 0, 1, or 2 to the same number of base64 padding characters.
+
 ## Examples
 
 ### Request
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -111,7 +117,8 @@ GET https://graph.microsoft.com/beta/me/authentication/fido2Methods/-2_GRUg2-HYz
 ### Response
 The following example shows the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

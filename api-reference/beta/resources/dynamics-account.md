@@ -6,6 +6,7 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: d365-business-central
 doc_type: resourcePageType
+ms.date: 05/13/2024
 ---
 
 # account resource type

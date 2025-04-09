@@ -16,6 +16,16 @@ Namespace: microsoft.graph
 The **incompleteData** facet indicates that a resource was generated with incomplete data.
 The properties within may provide information about why there's incomplete data.
 
+## Properties
+
+| Property                  | Type           | Description|
+|:--------------------------|:---------------|:--------------------------------|
+| missingDataBeforeDateTime | DateTimeOffset | The service doesn't have source data before the specified time.|
+| wasThrottled              | Boolean        | Some data wasn't recorded due to excessive activity.|
+
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.incompleteData" } -->
@@ -26,14 +36,6 @@ The properties within may provide information about why there's incomplete data.
   "wasThrottled": false
 }
 ```
-
-## Properties
-
-| Property                  | Type           | Description
-|:--------------------------|:---------------|:--------------------------------
-| missingDataBeforeDateTime | DateTimeOffset | The service doesn't have source data before the specified time.
-| wasThrottled              | Boolean        | Some data wasn't recorded due to excessive activity.
-
 <!--
 {
   "type": "#page.annotation",

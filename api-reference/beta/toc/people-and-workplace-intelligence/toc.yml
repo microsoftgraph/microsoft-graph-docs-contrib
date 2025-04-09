@@ -92,6 +92,14 @@ items:
       href: ../../api/photoupdatesettings-update.md
     - name: Delete
       href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
+  - name: Name pronunciation settings
+    items:
+    - name: Name pronunciation settings
+      href: ../../resources/namepronunciationsettings.md
+    - name: Get
+      href: ../../api/namepronunciationsettings-get.md
+    - name: Update
+      href: ../../api/namepronunciationsettings-update.md
 - name: Insights settings
   items:
   - name: Insights settings
@@ -126,6 +134,14 @@ items:
     href: ../../api/photoupdatesettings-update.md
   - name: Delete
     href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
+- name: Name pronunciation settings
+  items:
+  - name: Name pronunciation settings
+    href: ../../resources/namepronunciationsettings.md
+  - name: Get
+    href: ../../api/namepronunciationsettings-get.md
+  - name: Update
+    href: ../../api/namepronunciationsettings-update.md
 - name: Profile
   items:
   - name: Profile

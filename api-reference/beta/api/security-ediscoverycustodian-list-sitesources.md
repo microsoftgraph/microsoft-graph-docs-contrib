@@ -1,13 +1,15 @@
 ---
 title: "List siteSources"
-description: "Get the siteSource resources from the siteSources navigation property."
+description: "Get a list of the siteSource objects associated with an ediscoveryCustodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 10/23/2024
 ---
 
 # List siteSources
+
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -33,7 +35,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}/
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$orderby`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

@@ -5,6 +5,7 @@ author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Get deviceLocalCredentialInfo
@@ -24,7 +25,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To access the actual passwords on the device, done by including `$select=credentials` as part of the query parameters, the app must be assigned the *DeviceLocalCredential.Read.All* permission and *DeviceLocalCredential.ReadBasic.All* is insufficient.
 
-[!INCLUDE [rbac-device-local-credentials-apis-read](../includes/rbac-for-apis/rbac-device-local-credentials-apis-read.md)]
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Cloud Device Administrator
+> - Helpdesk Administrator
+> - Intune Service Administrator
+> - Security Administrator
+> - Security Reader
+> - Global Reader
+> 
+> To access the actual passwords on the device by using the `$select=credentials` query parameter, the following least privileged roles are supported:
+> - Cloud Device Administrator
+> - Intune Service Administrator
 
 ## HTTP request
 To get the device local credential for a specific device object:

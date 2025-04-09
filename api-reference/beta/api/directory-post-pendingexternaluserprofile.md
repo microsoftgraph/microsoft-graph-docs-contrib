@@ -6,6 +6,7 @@ doc_type: apiPageType
 author: "jkdouglas"
 ms.reviewer: mapamu
 ms.subservice: "entra-directory-management"
+ms.date: 10/11/2024
 ---
 
 # Create pendingExternalUserProfile
@@ -22,12 +23,8 @@ Create a new [pendingExternalUserProfile](../resources/pendingexternaluserprofil
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "directory-post-pendingexternaluserprofiles-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/directory-post-pendingexternaluserprofiles-permissions.md)]
+<!-- { "blockType": "permissions", "name": "directory_post_pendingexternaluserprofile" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directory-post-pendingexternaluserprofile-permissions.md)]
 
 [!INCLUDE [rbac-externaluserprofiles-apis-write](../includes/rbac-for-apis/rbac-externaluserprofiles-apis-write.md)]
 

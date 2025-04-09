@@ -2,6 +2,7 @@
 title: "Find possible meeting times on the Outlook calendar"
 description: "Use findMeetingTimes to identify a meeting time that satisfies time, location, and other constraints. Includes an example involving two users."
 ms.localizationpriority: high
+ms.date: 11/07/2024
 ---
 
 # Find possible meeting times on the Outlook calendar

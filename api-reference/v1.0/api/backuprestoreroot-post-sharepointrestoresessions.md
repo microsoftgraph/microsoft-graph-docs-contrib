@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # Create sharePointRestoreSession
@@ -54,12 +55,15 @@ You can specify the following properties when you create a **sharePointRestoreSe
 
 If successful, this method returns a `201 Created` response code and a [sharePointRestoreSession](../resources/sharepointrestoresession.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sharepointrestoresession_create"
@@ -72,16 +76,50 @@ Content-Type: application/json
 {
   "siteRestoreArtifacts": [
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "destinationType": "inPlace"
     },
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
       "destinationType": "inPlace"
     }
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/sharepointrestoresession-create-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/sharepointrestoresession-create-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/sharepointrestoresession-create-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/sharepointrestoresession-create-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/sharepointrestoresession-create-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/sharepointrestoresession-create-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sharepointrestoresession-create-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/sharepointrestoresession-create-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

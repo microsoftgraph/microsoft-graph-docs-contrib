@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/18/2024
 ---
 
 # virtualEventWebinar: getByUserIdAndRole
@@ -42,8 +43,8 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|The ID of the specified user in Microsoft Entra.|
 |role|String|User role of the specified user in the webinar. Possible values are: `organizer`, `coOrganizer`.|
+|userId|String|The ID of the specified user in Microsoft Entra.|
 
 ## Request headers
 
@@ -109,7 +110,7 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/getByUserI
 
 ### Response
 
-The following example shows the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -160,7 +161,13 @@ Content-Type: application/json
       ],
       "settings": {
         "isAttendeeEmailNotificationEnabled": false
-      }
+      },
+      "externalEventInformation": [
+        {
+          "applicationId" : "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
+          "externalEventId": "myExternalEventId"
+        }
+      ]
     }
   ]
 }

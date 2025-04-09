@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.permission_grant_pre_approval_policy import PermissionGrantPreApprovalPolicy
 from msgraph_beta.generated.models.pre_approval_detail import PreApprovalDetail
@@ -15,9 +16,7 @@ from msgraph_beta.generated.models.permission_kind import PermissionKind
 from msgraph_beta.generated.models.permission_type import PermissionType
 from msgraph_beta.generated.models.enumerated_pre_approved_permissions import EnumeratedPreApprovedPermissions
 from msgraph_beta.generated.models.enumerated_scope_sensitivity_labels import EnumeratedScopeSensitivityLabels
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = PermissionGrantPreApprovalPolicy(
 	conditions = [
 		PreApprovalDetail(

@@ -1,10 +1,11 @@
 ---
 title: "deploymentSettings resource type"
-description: "Represents settings that determine when and how the service deploys an update."
+description: "Represents settings that determine when and how Windows Autopatch deploys an update."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # deploymentSettings resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents settings that determine when and how the service deploys an update.
+Represents settings that determine when and how Windows Autopatch deploys an update.
 
 ## Properties
 |Property|Type|Description|

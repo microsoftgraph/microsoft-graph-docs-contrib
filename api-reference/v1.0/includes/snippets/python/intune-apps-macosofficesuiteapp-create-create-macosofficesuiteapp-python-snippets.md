@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.mac_o_s_office_suite_app import MacOSOfficeSuiteApp
 from msgraph.generated.models.mime_content import MimeContent
 from msgraph.generated.models.mobile_app_publishing_state import MobileAppPublishingState
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = MacOSOfficeSuiteApp(
 	odata_type = "#microsoft.graph.macOSOfficeSuiteApp",
 	display_name = "Display Name value",

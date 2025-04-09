@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 09/17/2024
 ---
 
 # call: answer
@@ -96,7 +97,8 @@ Content-Length: 211
   ],
   "callOptions": {
     "@odata.type": "#microsoft.graph.incomingCallOptions",
-    "isContentSharingNotificationEnabled": true
+    "isContentSharingNotificationEnabled": true,
+    "isDeltaRosterEnabled": true
   },
   "participantCapacity": 200
 }

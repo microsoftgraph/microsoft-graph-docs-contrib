@@ -1,12 +1,13 @@
 ---
 title: taxArea resource type
-description: A tax area.
+description: "Represents a tax area resource type in Dynamics 365 Business Central."
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 11/08/2024
 ---
 
 # taxArea resource type

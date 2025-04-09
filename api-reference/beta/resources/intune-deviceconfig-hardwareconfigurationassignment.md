@@ -5,15 +5,16 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # hardwareConfigurationAssignment resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Contains properties used to assign a hardware configuration to a group.
 
@@ -48,11 +49,15 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.hardwareConfigurationAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+    "@odata.type": "microsoft.graph.organizationalUnitAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
     "deviceAndAppManagementAssignmentFilterType": "String",
-    "targetType": "String",
-    "entraObjectId": "String"
+    "organizationalUnitId": "String",
+    "assignmentConflictSetting": {
+      "@odata.type": "microsoft.graph.organizationalUnitAssignmentConflictSetting",
+      "assignmentOverride": "String",
+      "versionNumber": 1024
+    }
   }
 }
 ```

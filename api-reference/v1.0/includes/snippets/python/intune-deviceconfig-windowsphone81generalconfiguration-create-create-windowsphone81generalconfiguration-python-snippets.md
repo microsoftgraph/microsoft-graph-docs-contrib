@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows_phone81_general_configuration import WindowsPhone81GeneralConfiguration
 from msgraph.generated.models.app_list_item import AppListItem
 from msgraph.generated.models.app_list_type import AppListType
 from msgraph.generated.models.required_password_type import RequiredPasswordType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = WindowsPhone81GeneralConfiguration(
 	odata_type = "#microsoft.graph.windowsPhone81GeneralConfiguration",
 	description = "Description value",

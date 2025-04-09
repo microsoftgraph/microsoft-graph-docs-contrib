@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: conceptualPageType
+ms.date: 03/14/2024
 ---
 
 # Working with SharePoint sites in Microsoft Graph

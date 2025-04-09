@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.serviceprincipals.item.synchronization.secrets.secrets_put_request_body import SecretsPutRequestBody
 from msgraph.generated.models.synchronization_secret_key_string_value_pair import SynchronizationSecretKeyStringValuePair
 from msgraph.generated.models.synchronization_secret import SynchronizationSecret
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = SecretsPutRequestBody(
 	value = [
 		SynchronizationSecretKeyStringValuePair(

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.booking_service import BookingService
 from msgraph_beta.generated.models.location import Location
@@ -12,9 +13,7 @@ from msgraph_beta.generated.models.booking_price_type import BookingPriceType
 from msgraph_beta.generated.models.booking_reminder import BookingReminder
 from msgraph_beta.generated.models.booking_reminder_recipients import BookingReminderRecipients
 from msgraph_beta.generated.models.booking_scheduling_policy import BookingSchedulingPolicy
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = BookingService(
 	odata_type = "#microsoft.graph.bookingService",
 	default_duration = "PT1H30M",

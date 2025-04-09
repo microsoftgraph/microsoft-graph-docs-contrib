@@ -5,6 +5,7 @@ description: "Get a list of appCredentialSignInActivity object that contains rec
 ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
+ms.date: 04/04/2024
 ---
 
 # List appCredentialSignInActivities
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "reportroot_list_appcredentialsigninactivities" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-list-appcredentialsigninactivities-permissions.md)]
+
+[!INCLUDE [rbac-usage-insights-apis](../includes/rbac-for-apis/rbac-usage-insights-apis.md)]
 
 ## HTTP request
 
