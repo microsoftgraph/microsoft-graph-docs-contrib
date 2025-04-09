@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 03/10/2025
 ---
 
-# reportRoot: getAPIUsage
+# reportRoot: getApiUsage
 
 Namespace: microsoft.graph
 
