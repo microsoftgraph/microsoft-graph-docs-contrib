@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a report that provides information about active Microsoft Graph API usage. The data returned is provided in a comma separated stream. Each row represents a full day of data. If no traffic was measured on a particular day, no rows of data for that day are included.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
+For more information, see [Microsoft 365 Reports in the admin center - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

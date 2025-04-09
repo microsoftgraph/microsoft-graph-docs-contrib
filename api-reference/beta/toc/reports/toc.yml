@@ -682,10 +682,6 @@ items:
       href: ../../resources/attacksimulationtrainingusercoverage.md
     - name: Get training coverage for users
       href: ../../api/securityreportsroot-getattacksimulationtrainingusercoverage.md
-- name: Microsoft Graph usage reports
-  items:
-  - name: API daily usage
-    href: ../../api/reportroot-getapiusage.md
 - name: Partner billing reports
   items:
   - name: Overview
