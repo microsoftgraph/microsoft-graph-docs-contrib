@@ -53,8 +53,6 @@ If successful, this method returns a `200 OK` response code and a [networkAccess
 
 ## Examples
 
-### Example 1: Get a specific networkAccessTraffic entry by ID
-
 ### Request
 
 The following is an example of a request.
@@ -126,6 +124,6 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [List networkAccessTraffic](../api/networkaccess-logs-list-traffic.md)
