@@ -251,6 +251,14 @@ Namespace: microsoft.graph.networkaccess
 |offboardingErrorOccurred|
 |unknownFutureValue|
 
+### networkTrafficOperationStatus values
+
+|Member|
+|:---|
+|success|
+|failure|
+|unknownFutureValue|
+
 ### pfsGroup values 
 
 |Member|
