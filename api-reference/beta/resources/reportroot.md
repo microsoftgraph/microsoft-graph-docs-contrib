@@ -164,7 +164,7 @@ For details about report views and names, see [Microsoft 365 reports - Microsoft
 
 | Method                                                                         | Return type | Description                                                                   |
 | :----------------------------------------------------------------------------- | :---------- | :---------------------------------------------------------------------------- |
-| [Get API usage](../api/reportroot-reportroot-getapiusage.md)                   | Stream      | Get a report that provides information about active Microsoft Graph API usage.|
+| [Get API usage](../api/reportroot-getapiusage.md)                   | Stream      | Get a report that provides information about active Microsoft Graph API usage.|
 
 ### OneDrive activity
 
