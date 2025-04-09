@@ -18,7 +18,7 @@ Get a list of log events for traffic routed through the Global Secure Access ser
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use higher privileged permission or permissions [only if your app requires them](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "networkaccess_logs_list_traffic" } -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-logs-list-traffic-permissions.md)]
@@ -160,7 +160,7 @@ Content-Type: application/json
         "origin": "https://developer.mozilla.org",
         "xForwardedFor": "incentivize"
       },
-      "destinationUrl": "https://secure.eicar.org/eicar_com.zip",
+      "destinationUrl": "https://destinationfqdn/file.zip",
       "filteringProfileId": "ff612f2c-04b7-4234-8a8f-079ec1b7b4bc",
       "filteringProfileName": "Block Social and malicious files",
       "policyName": "Block malicious files Syros",
