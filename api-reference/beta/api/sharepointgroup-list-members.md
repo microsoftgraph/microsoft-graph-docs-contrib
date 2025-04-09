@@ -116,3 +116,15 @@ Content-Type: application/json
   ]
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "List members",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+      "Error: /api/sharepointgroup-list-members.md:
+      Failed to parse enumeration values for type microsoft.graph.list. Table requires a column header named one of the following: Member, Name, Value"
+  ]
+}-->
