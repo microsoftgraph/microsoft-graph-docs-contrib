@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Get a list of the [sharePointGroupMember](../resources/sharepointgroupmember.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -114,3 +116,15 @@ Content-Type: application/json
   ]
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "List members",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+      "Error: /api/sharepointgroup-list-members.md:
+      Failed to parse enumeration values for type microsoft.graph.list. Table requires a column header named one of the following: Member, Name, Value"
+  ]
+}-->
