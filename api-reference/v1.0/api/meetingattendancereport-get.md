@@ -269,7 +269,7 @@ Content-Type: application/json
   "meetingEndDateTime": "2021-10-04T23:18:57.563Z",
   "externalEventInformation": [
     {
-      "applicationId" : "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
+      "applicationId": "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
       "externalEventId": "myExternalEventId"
     }
   ]
