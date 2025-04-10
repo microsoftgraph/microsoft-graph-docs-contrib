@@ -26,7 +26,7 @@ Contains information associated with an attendance record in a [meetingAttendanc
 |:--------------------|:--------|:-----------|
 | attendanceIntervals | [attendanceInterval](attendanceinterval.md) collection | List of time periods between joining and leaving a meeting. |
 | emailAddress | String | Email address of the user associated with this attendance record. |
-| externalRegistrationInformation | [virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md) | The external information for a virtual event registration. |
+| externalRegistrationInformation | [virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md) | The external information for a [virtualEventRegistration](virtualeventregistration.md). |
 | identity | [identity](identity.md) | The identity of the user associated with this attendance record. The specific type is one of the following derived types of [identity](identity.md), depending on the user type: [communicationsUserIdentity](communicationsuseridentity.md), [azureCommunicationServicesUserIdentity](azurecommunicationservicesuseridentity.md). |
 | registrationId | String | Unique identifier of a [virtualEventRegistration](virtualeventregistration.md) that is available to all participants registered for the [virtualEventWebinar](virtualeventwebinar.md). |
 | role | String | Role of the attendee. Possible values are: `None`, `Attendee`, `Presenter`, and `Organizer`.  |
