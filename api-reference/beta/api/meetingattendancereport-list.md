@@ -84,6 +84,7 @@ If successful, this method returns a `200 OK` response code and a list of [meeti
 
 > [!TIP]
 > The **attendanceRecords** property is empty in the response.
+> If your scenario needs **externalEventInformation**, you must make an explicit call to the [Get meetingAttendanceReport](../api/meetingattendancereport-get.md) API. This data isn't returned by default when you query the virtual event or online meeting object.
 
 ## Example
 
@@ -254,18 +255,22 @@ Content-Type: application/json
 }
 ```
 
-> [!TIP] 
->  If your scenario needs the `externalEventInformation` property, an explicit call to the **[GET attendance report API](../api/meetingattendancereport-get.md)** is required. 
-> This data is not returned by default when querying the virtual event or online meeting object.  
+### Example 3: List attendance reports for a town hall session
 
-### Example 3: List attendance reports for a townhall session
+The following example shows how to list attendance reports for a town hall session.
 
 #### Request
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "list_virtualevent_attendancereport_townhall",
+  "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd", "8d62dd52-4dff-4c75-96a9-f905cc3ff942"]
+}
+-->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attendanceReports
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports
 ```
 
 #### Response
