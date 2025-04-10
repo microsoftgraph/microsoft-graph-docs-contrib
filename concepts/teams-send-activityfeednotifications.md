@@ -292,17 +292,17 @@ To add custom activity icons in activity feed notifications sent to a user, foll
       "topic": {
         "source": "text",
         "value": "Loop thread",
-        "webUrl": "https://teams.microsoft.com/l/loopthread/19:0f75e4b3d6f84ff458bc9f8head.v2"
+        "webUrl": "https://teams.microsoft.com/l/loopthread/00:000000000000000000000000000.v2"
       },
       "activityType": "announcementPosted",
       "previewText": {
         "content": "new announcement posted"
       },
-      "@iconId" : "announcementCreated"
+      "iconId" : "announcementCreated"
     }
     ```
 
-For custom activity icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-icons).
+For custom activity icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-icons). To try out custom activity icons in activity feed notifications in a sample Teams app, see [Placeholder link](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main).
 
 ## Examples
 
