@@ -28,11 +28,11 @@
         }
       ],
       "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
-      "Cloud": "Review",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-04-07T14:47:19.0842305Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },   
     {
       "ChangeList": [
