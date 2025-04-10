@@ -5,7 +5,6 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.subservice: teams
 doc_type: apiPageType
-
 ms.date: 04/05/2024
 ---
 
@@ -60,7 +59,7 @@ The following table shows the parameters that can be used with this action.
 | :----------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | activityType       | String                                                       | The activity type must be declared in the [Teams app manifest](/microsoftteams/platform/overview), except for `systemDefault` [Reserved activity type](/graph/teams-send-activityfeednotifications/#reserved-activity-types), which provides free-form text in the `Actor+Reason` line of the notification. |
 | chainId            | Int64                                                        | Optional. The chain ID of the notification. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification. |
-| iconId             | String                                                       | Optional. The unique icon ID that allows apps to send customized icons per activity type. Icon IDs must be present in the Teams app manifest schema. |
+| iconId             | String                                                       | Optional. The unique icon ID that allows apps to send customized icons per activity type. Icon IDs must be present in the Teams app manifest schema. If the **iconId** is specified in the manifest but missing from the API request body, the icon falls back to the default icon for the app. |
 | previewText        | [itemBody](../resources/itembody.md)                         | The preview text for the notification. Microsoft Teams only shows the first 150 characters. |
 | recipients         | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) collection | The recipients of the notification. Only recipients of type [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) are supported. There's an upper limit of 100 recipients in a single request. |
 | teamsAppId         | String                                                       | Optional. The Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra ID app ID are installed for the same recipient user. Avoid sharing Microsoft Entra ID app IDs between Teams apps. |
