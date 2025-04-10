@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /copilot/settings/people/enhancedpersonalizationsetting
+PATCH /copilot/settings/people/enhancedpersonalization
 ```
 
 ## Request headers
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/copilot/settings/people/enhancedpersonalizationsetting
+PATCH https://graph.microsoft.com/beta/copilot/settings/people/enhancedpersonalization
 Content-Type: application/json
 
 {

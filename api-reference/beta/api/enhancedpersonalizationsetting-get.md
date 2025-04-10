@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /copilot/settings/people/enhancedpersonalizationsetting
+GET /copilot/settings/people/enhancedpersonalization
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/copilot/settings/people/enhancedpersonalizationsetting
+GET https://graph.microsoft.com/beta/copilot/settings/people/enhancedpersonalization
 ```
 
 
