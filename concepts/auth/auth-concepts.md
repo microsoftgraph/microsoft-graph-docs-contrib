@@ -26,7 +26,7 @@ Before your app can be authorized to call any Microsoft Graph API, the Microsoft
 - **Redirect URI/URL**: One or more endpoints at which your app receives responses from the Microsoft identity platform. The Microsoft identity platform assigns the URI to native and mobile apps.
 - **Credential**: Can be a client secret (a string or password), a certificate, or a federated identity credential. Your app uses the credential to authenticate with the Microsoft identity platform. This property is only required for confidential client applications; It isn't required for public clients like native, mobile, and single page applications. For more information, see [Public client and confidential client applications](/entra/identity-platform/msal-client-applications).
 
-You then add this information back to your code once, and the app uses the information every time is needs to prove its identity during an authentication process, before it can be authorized to access your data.
+You then add this information back to your code once, and the app uses the information every time it needs to prove its identity during an authentication process, before it can be authorized to access your data.
 
 For more information, see [Register an application with the Microsoft identity platform](../auth-register-app-v2.md).
 

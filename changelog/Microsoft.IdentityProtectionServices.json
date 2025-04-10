@@ -1,6 +1,24 @@
 {
   "changelog": [
-       {
+    {
+      "ChangeList": [
+        {
+          "Id": "48b5e987-0bf6-4123-b91b-fcfba08a745e",
+          "ApiChange": "Property",
+          "ChangedApiName": "applicationFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationFilter** property to the [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessApplications"
+        }
+      ],
+      "Id": "48b5e987-0bf6-4123-b91b-fcfba08a745e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-03-20T22:19:32.3422617Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
        "ChangeList": [
           {
           "Id": "fe06198f-3161-48d1-8bc8-c0edb038d428",
@@ -1299,6 +1317,32 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-12-03T08:55:37.2663572Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "80e5c0f6-ef9e-4c1d-adce-8fbd52c69ad8",
+          "ApiChange": "Property",
+          "ChangedApiName": "globalSecureAccessFilteringProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the **globalSecureAccessFilteringProfile** property to the [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessSessionControls"
+        },
+        {
+          "Id": "80e5c0f6-ef9e-4c1d-adce-8fbd52c69ad8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "globalSecureAccessFilteringProfileSessionControl",
+          "ChangeType": "Addition",
+          "Description": "Added the [globalSecureAccessFilteringProfileSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/globalSecureAccessFilteringProfileSessionControl?view=graph-rest-beta) resource.",
+          "Target": "globalSecureAccessFilteringProfileSessionControl"
+        }
+      ],
+      "Id": "80e5c0f6-ef9e-4c1d-adce-8fbd52c69ad8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-04T21:15:21.511472Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

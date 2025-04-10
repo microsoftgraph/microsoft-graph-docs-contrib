@@ -42,6 +42,8 @@ Assign a hardware OATH authentication method to yourself.
 POST /me/authentication/hardwareOathMethods
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Assign a hardware OATH authentication method to another user.
 <!-- {
   "blockType": "ignored"

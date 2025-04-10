@@ -28,8 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/user-get-permissions.md)]
 
 >[!NOTE]
-> - Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions aren't supported when using the `/me` endpoint.
-> - The `User.Read` permission allows the app to read the profile, and discover relationships such as the group membership, reports, and manager of the signed-in user only.
+> The `User.Read` permission allows the app to read the profile, and discover relationships such as the group membership, reports, and manager of the signed-in user only.
 
 ### Permissions for specific scenarios
 - To read the **employeeLeaveDateTime** property:
@@ -51,6 +50,8 @@ GET /me
 GET /users/{id | userPrincipalName}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 > [!TIP]
 >
 > + When the **userPrincipalName** begins with a `$` character, the GET request URL syntax `/users/$x@y.com` fails with a `400 Bad Request` error code. The request fails because the URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. Remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`. For example, `/users('$AdeleVance@contoso.com')`.
@@ -61,6 +62,8 @@ For the signed-in user:
 ```http
 GET /me
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Optional query parameters
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those not returned by default.

@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/12/2024
+ms.date: 08/01/2024
 ---
 
 # vppToken resource type
@@ -52,6 +52,7 @@ You purchase multiple licenses for iOS apps through the Apple Volume Purchase Pr
 |locationName|String|Token location returned from Apple VPP.|
 |claimTokenManagementFromExternalMdm|Boolean|Admin consent to allow claiming token management from external MDM.|
 |roleScopeTagIds|String collection|Role Scope Tags IDs assigned to this entity.|
+|lastAppCount|Int32|The number of apps under the Apple Volume Purchase Program Token since the last token sync.|
 
 ## Relationships
 None
@@ -94,6 +95,7 @@ Here is a JSON representation of the resource.
   "claimTokenManagementFromExternalMdm": true,
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "lastAppCount": 1024
 }
 ```

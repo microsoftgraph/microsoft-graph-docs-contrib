@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "8a6907ae-d579-4e4c-ae41-a0625b3a8bb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "changeItemBase",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [changeItemBase](https://learn.microsoft.com/en-us/graph/api/resources/changeItemBase?view=graph-rest-beta) resource and its associated APIs and derived types that support the Microsoft Entra lifecycle announcements APIs. The APIs will stop returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](https://learn.microsoft.com/en-us/entra/fundamentals/whats-new).",
+          "Target": "changeItemBase"
+        }
+      ],
+      "Id": "8a6907ae-d579-4e4c-ae41-a0625b3a8bb2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-26T15:55:45.1517232Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
           "ApiChange": "Enumeration",
           "ChangedApiName": "changeItemState",
