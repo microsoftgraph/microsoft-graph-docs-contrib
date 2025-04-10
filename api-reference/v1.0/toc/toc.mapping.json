@@ -1790,6 +1790,9 @@
                 "microsoft.graph.callRecords.participant",
                 "microsoft.graph.callRecords.pstnCallLogRow",
                 "microsoft.graph.callRecords.session"
+              ],
+              "complexTypes": [
+                "microsoft.graph.callRecords.networkInfo"
               ]
             },
             {
