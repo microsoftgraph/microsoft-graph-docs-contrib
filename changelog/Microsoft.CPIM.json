@@ -1083,38 +1083,6 @@
           {
             "Id": "e8d5fb58-05c7-4669-a516-75ba29ef760c",
             "ApiChange": "Resource",
-            "ChangedApiName": "onAttributeCollectionStartCustomExtensionHandler",
-            "ChangeType": "Addition",
-            "Description": "Added the [onAttributeCollectionStartCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionStartCustomExtensionHandler?view=graph-rest-1.0) resource.",
-            "Target": "onAttributeCollectionStartCustomExtensionHandler"
-          },
-          {
-            "Id": "e8d5fb58-05c7-4669-a516-75ba29ef760c",
-            "ApiChange": "Resource",
-            "ChangedApiName": "onAttributeCollectionStartHandler",
-            "ChangeType": "Addition",
-            "Description": "Added the [onAttributeCollectionStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionStartHandler?view=graph-rest-1.0) resource.",
-            "Target": "onAttributeCollectionStartHandler"
-          },
-          {
-            "Id": "e8d5fb58-05c7-4669-a516-75ba29ef760c",
-            "ApiChange": "Resource",
-            "ChangedApiName": "onAttributeCollectionSubmitCustomExtensionHandler",
-            "ChangeType": "Addition",
-            "Description": "Added the [onAttributeCollectionSubmitCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionSubmitCustomExtensionHandler?view=graph-rest-1.0) resource.",
-            "Target": "onAttributeCollectionSubmitCustomExtensionHandler"
-          },
-          {
-            "Id": "e8d5fb58-05c7-4669-a516-75ba29ef760c",
-            "ApiChange": "Resource",
-            "ChangedApiName": "onAttributeCollectionSubmitHandler",
-            "ChangeType": "Addition",
-            "Description": "Added the [onAttributeCollectionSubmitHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionSubmitHandler?view=graph-rest-1.0) resource.",
-            "Target": "onAttributeCollectionSubmitHandler"
-          },
-          {
-            "Id": "e8d5fb58-05c7-4669-a516-75ba29ef760c",
-            "ApiChange": "Resource",
             "ChangedApiName": "externalUsersSelfServiceSignUpEventsFlow",
             "ChangeType": "Addition",
             "Description": "Added the [externalUsersSelfServiceSignUpEventsFlow](https://learn.microsoft.com/en-us/graph/api/resources/externalUsersSelfServiceSignUpEventsFlow?view=graph-rest-1.0) resource.",
@@ -1131,6 +1099,22 @@
           {
             "Id": "e8d5fb58-05c7-4669-a516-75ba29ef760c",
             "ApiChange": "Resource",
+            "ChangedApiName": "onAttributeCollectionStartCustomExtensionHandler",
+            "ChangeType": "Addition",
+            "Description": "Added the [onAttributeCollectionStartCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionStartCustomExtensionHandler?view=graph-rest-1.0) resource.",
+            "Target": "onAttributeCollectionStartCustomExtensionHandler"
+          },
+          {
+            "Id": "e8d5fb58-05c7-4669-a516-75ba29ef760c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "onAttributeCollectionStartHandler",
+            "ChangeType": "Addition",
+            "Description": "Added the [onAttributeCollectionStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionStartHandler?view=graph-rest-1.0) resource.",
+            "Target": "onAttributeCollectionStartHandler"
+          },
+          {
+            "Id": "e8d5fb58-05c7-4669-a516-75ba29ef760c",
+            "ApiChange": "Resource",
             "ChangedApiName": "onAttributeCollectionStartListener",
             "ChangeType": "Addition",
             "Description": "Added the [onAttributeCollectionStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionStartListener?view=graph-rest-1.0) resource.",
@@ -1143,6 +1127,22 @@
             "ChangeType": "Addition",
             "Description": "Added the [onAttributeCollectionSubmitCustomExtension](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionSubmitCustomExtension?view=graph-rest-1.0) resource.",
             "Target": "onAttributeCollectionSubmitCustomExtension"
+          },
+          {
+            "Id": "e8d5fb58-05c7-4669-a516-75ba29ef760c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "onAttributeCollectionSubmitCustomExtensionHandler",
+            "ChangeType": "Addition",
+            "Description": "Added the [onAttributeCollectionSubmitCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionSubmitCustomExtensionHandler?view=graph-rest-1.0) resource.",
+            "Target": "onAttributeCollectionSubmitCustomExtensionHandler"
+          },
+          {
+            "Id": "e8d5fb58-05c7-4669-a516-75ba29ef760c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "onAttributeCollectionSubmitHandler",
+            "ChangeType": "Addition",
+            "Description": "Added the [onAttributeCollectionSubmitHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionSubmitHandler?view=graph-rest-1.0) resource.",
+            "Target": "onAttributeCollectionSubmitHandler"
           },
           {
             "Id": "e8d5fb58-05c7-4669-a516-75ba29ef760c",
