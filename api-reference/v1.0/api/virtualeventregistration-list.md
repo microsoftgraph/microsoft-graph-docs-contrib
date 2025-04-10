@@ -125,7 +125,7 @@ Content-Type: application/json
       "lastName": "Pham",
       "email": "EmileeMPham@contoso.com",
       "externalRegistrationInformation": {
-        "referrer": "Facebook",
+        "referrer": "Fabrikam",
         "registrationId": "myExternalRegistrationId"
       },
       "status": "registered",

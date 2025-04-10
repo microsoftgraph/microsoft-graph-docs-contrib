@@ -61,9 +61,6 @@ GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attenda
 >- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualeventsession.md) object.
 >- `townhallId` is the **id** of an [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
-> [!Note] 
->  Townhall Attendance Records will not return external registration information or registration id because Townhall does not currently support registration.
-
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -305,3 +302,4 @@ Content-Type: application/json
   ]
 }
 ```
+

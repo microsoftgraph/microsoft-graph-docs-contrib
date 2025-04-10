@@ -66,7 +66,7 @@ GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attenda
 >- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
 >- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualeventsession.md) object.
 >- `townhallId` is the **id** of an [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
->- Only the meeting/webinar or meeting/townhall organizer or coorganizer can access this API.
+>- Only the webinar or townhall organizer or coorganizer can access this API.
 
 > [!NOTE] 
 >  Town hall attendance records don't return external registration information or a registration ID because town hall currently doesn't support registration.

@@ -50,6 +50,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 >- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
 >- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
 
+
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -262,7 +263,7 @@ Content-Type: application/json
         }
       ],
       "externalRegistrationInformation": {
-        "referrer": "Facebook",
+        "referrer": "Fabrikam",
         "registrationId": "myExternalRegistrationId"
       }
     },
@@ -285,7 +286,7 @@ Content-Type: application/json
         }
       ],
       "externalRegistrationInformation": {
-        "referrer": "Facebook",
+        "referrer": "Fabrikam",
         "registrationId": "anotherExternalRegistrationId"
       }
     }
