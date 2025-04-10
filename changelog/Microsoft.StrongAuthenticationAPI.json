@@ -430,6 +430,14 @@
         },
         {
           "Id": "e6d18097-56a6-4bf9-83bd-fba96d19988f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "platformCredentialMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **platformCredentialMethods** relationship to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "e6d18097-56a6-4bf9-83bd-fba96d19988f",
           "ApiChange": "Resource",
           "ChangedApiName": "platformCredentialAuthenticationMethod",
           "ChangeType": "Addition",
