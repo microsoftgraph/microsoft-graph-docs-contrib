@@ -52,7 +52,7 @@ To get an attendance report for a webinar session by ID with delegated and app p
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}
 ```
 
-To get an attendance report for a townhall session by ID with delegated and app permission:
+To get an attendance report for a town hall session by ID with delegated and app permission:
 <!-- { "blockType": "ignored" }-->
 ``` http
 GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attendanceReports/{reportId}
@@ -62,14 +62,14 @@ GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attenda
 >
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
->- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
->- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
->- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
->- `townhallId` is the **id** of an [virtualEventTownhall](../resources/virtualEventTownhall.md) object.
->- Only the meeting/webinar or meeting/townhall organizer or co-organizer can access this API.
+>- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingattendancereport.md) object.
+>- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
+>- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualeventsession.md) object.
+>- `townhallId` is the **id** of an [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+>- Only the meeting/webinar or meeting/townhall organizer or coorganizer can access this API.
 
-> [!Note] 
->  Townhall Attendance Records will not return external registration information or registration id because Townhall does not currently support registration.
+> [!NOTE] 
+>  Town hall attendance records don't return external registration information or a registration ID because town hall currently doesn't support registration.
 
 > [!CAUTION]
 >
@@ -423,17 +423,22 @@ Content-Type: application/json
 }
 ```
 
+### Example 4: Get the attendance report for a town hall session by ID
 
-### Example 3: Get the attendance report for a towmhall session by ID
-
-The following example shows how to get the attendance report for a towmhall session based on its **id**.
+The following example shows how to get the attendance report for a town hall session based on its **id**.
 
 #### Request
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_meetingattendancereport_townhall",
+  "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd", "8d62dd52-4dff-4c75-96a9-f905cc3ff942", "b76965d4-0763-496e-9980-b323c5f3aa3b"]
+}
+-->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/towmhalls/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports/b76965d4-0763-496e-9980-b323c5f3aa3b
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports/b76965d4-0763-496e-9980-b323c5f3aa3b
 ```
 
 #### Response
@@ -452,14 +457,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/virtualEvents/towmhalls('f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd')/sessions('8d62dd52-4dff-4c75-96a9-f905cc3ff942')/attendanceReports('b76965d4-0763-496e-9980-b323c5f3aa3b')",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/virtualEvents/townhalls('f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd')/sessions('8d62dd52-4dff-4c75-96a9-f905cc3ff942')/attendanceReports('b76965d4-0763-496e-9980-b323c5f3aa3b')",
   "id": "b76965d4-0763-496e-9980-b323c5f3aa3b",
   "totalParticipantCount": 2,
   "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
   "meetingEndDateTime": "2021-10-04T23:18:57.563Z",
   "externalEventInformation": [
     {
-      "applicationId" : "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
+      "applicationId": "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
       "externalEventId": "myExternalEventId"
     }
   ]
