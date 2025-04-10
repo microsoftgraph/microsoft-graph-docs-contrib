@@ -57,11 +57,10 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.meetingAttendanceReport",
+  "externalEventInformation": [{"@odata.type": "microsoft.graph.virtualEventExternalInformation"}],
   "id": "String(identifier)",
   "meetingEndDateTime": "String (timestamp)",
   "meetingStartDateTime": "String (timestamp)",
-  "totalParticipantCount": "Int32",
-  "externalEventInformation": [{"@odata.type": "microsoft.graph.virtualEventExternalInformation"}],
-  "attendanceRecords": [{"@odata.type": "#microsoft.graph.attendanceRecord"}]
+  "totalParticipantCount": "Int32"
 }
 ```
