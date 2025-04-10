@@ -26,8 +26,8 @@ Represents the applications and user actions included in and excluded from the c
 | applicationFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Filter that defines the dynamic-application-syntax rule to include/exclude cloud applications. A filter can use custom security attributes to include/exclude applications. |
 | includeUserActions | String collection | User actions to include. Supported values are `urn:user:registersecurityinfo` and `urn:user:registerdevice` |
 | includeAuthenticationContextClassReferences | String collection | Authentication context class references include. Supported values are `c1` through `c25`. |
-| networkAccess (deprecated)| [conditionalAccessNetworkAccess](conditionalAccessNetworkAccess.md) | Represents traffic profile for Global Secure Access. This property is deprecated and will stop returning data on June 1, 2025. Use new Global Secure Access applications instead.|
-| globalSecureAccess (deprecated)| [conditionalAccessGlobalSecureAccess](conditionalAccessGlobalSecureAccess.md) | Represents traffic profile for Global Secure Access. This property is deprecated and will stop returning data on June 1, 2025. Use new Global Secure Access applications instead.|
+| networkAccess (deprecated)| [conditionalAccessNetworkAccess](conditionalaccessnetworkaccess.md) | Represents traffic profile for Global Secure Access. This property is deprecated and will stop returning data on June 1, 2025. Use new Global Secure Access applications instead.|
+| globalSecureAccess (deprecated)| [conditionalAccessGlobalSecureAccess](conditionalaccessglobalsecureaccess.md) | Represents traffic profile for Global Secure Access. This property is deprecated and will stop returning data on June 1, 2025. Use new Global Secure Access applications instead.|
 
 ## Relationships
 
