@@ -28,6 +28,7 @@ The following table lists the metered APIs and services.
 | Teams meeting [transcript metadata](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) | [Teams API payment models and licensing requirements](teams-licenses.md) |
 | Teams meeting [recording](/graph/api/callrecording-get#example-2-get-callrecording-content) | [Teams API payment models and licensing requirements](teams-licenses.md) |
 | SharePoint and OneDrive for Business [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) | $0.00185 (USD) per API call<br/>[Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup) |
+| SharePoint prioritization [SharePoint prioritization](/SharePoint/SharePointOnline/SharePoint-Prioritization) | [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup) |
 
 ## Related content
 
