@@ -1,0 +1,44 @@
+---
+title: "scopeBase resource type"
+description: "Abstract base type representing a scope identifier for users, groups, or the tenant within policy bindings."
+author: "ArunGedela"
+ms.date: 04/08/2025
+ms.localizationpriority: medium
+ms.subservice: "security"
+doc_type: complexTypePageType
+---
+
+# scopeBase resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Abstract base type representing an identifier used to define the scope of users, groups, or the entire tenant within a [policyBinding](../resources/policybinding.md). Derived types (`userScope`, `groupScope`, `tenantScope`) specify the type of scope.
+
+## Properties
+
+| Property | Type   | Description                                                                                        |
+| :------- | :----- | :------------------------------------------------------------------------------------------------- |
+| identity | String | The identifier for the scope. This could be a user ID, group ID, or a keyword like "All" for tenant scope. |
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type. Note that this is an abstract type and won't be instantiated directly.
+<!-- {
+  "blockType": "resource",
+  "abstract": true,
+  "@odata.type": "microsoft.graph.scopeBase",
+  "openType": false
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.scopeBase",
+  "identity": "String"
+  // Derived types specify the @odata.type, e.g., "#microsoft.graph.userScope"
+}
+```

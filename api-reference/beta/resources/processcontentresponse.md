@@ -1,0 +1,54 @@
+---
+title: "processContentResponse complex type"
+description: "Represents the result of processing a single content entry against data security and governance policies."
+author: "ArunGedela"
+ms.date: 04/08/2025
+ms.localizationpriority: medium
+ms.subservice: "security"
+doc_type: resourcePageType
+---
+
+# processContentResponse complex type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Contains the outcome of a `processContent` action or a single result within a `processContentAsync` action. It includes any policy actions triggered and potential processing errors.
+
+## Properties
+
+|Property|Type|Description|
+|:---|:---|:---|
+|policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|A collection of policy actions (like DLP actions) triggered by the processed content. Required.|
+|processingErrors|Collection([microsoft.graph.processingError](../resources/processingerror.md))|A collection of errors encountered during the content processing. Required.|
+|protectionScopeState|[microsoft.graph.protectionScopeState](../resources/protectionscopestate.md)|Indicates if the applicable protection scope (policies) has changed since the last known state for the context. Required.|
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.processContentResponse"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.processContentResponse",
+  "policyActions": [
+    {
+      "@odata.type": "microsoft.graph.dlpActionInfo"
+    }
+  ],
+  "processingErrors": [
+    {
+      "@odata.type": "microsoft.graph.processingError"
+    }
+  ],
+  "protectionScopeState": "String"
+}
+```
