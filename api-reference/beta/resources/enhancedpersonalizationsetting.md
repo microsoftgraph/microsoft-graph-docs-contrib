@@ -42,7 +42,11 @@ None.
 ## JSON representation
 
 The following JSON representation shows the resource type.
-
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.enhancedPersonalizationSetting",
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.enhancedPersonalizationSetting",
