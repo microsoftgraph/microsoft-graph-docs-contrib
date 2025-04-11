@@ -18,11 +18,11 @@ Microsoft 365 Copilot can become personalized to each user, aiding them in their
 Understand how Microsoft 365 Copilot achieves greater personalization through various features when enhanced personalization is enabled. How your privacy is maintained, and how to control the use of enhanced personalization for Microsoft 365 Copilot.
 
 > [!NOTE]
-> Features managed by this control will become available in public preview soon.
+> Features managed by this control become available in public preview soon.
 
 
 ## Data Processing Scenario
-To provide a more personalized experience with Microsoft 365 Copilot. Microsoft with consent provided from enabling this control will use a user's private communication data connected to M365 such as Microsoft Teams Chats, Outlook Emails, Microsoft Transcripts and from connectors. This data will be used solely to make the indiivdual users tools more efficient and personalized to them. It is important to note that this information will remain confidential and will not be shared with anyone else ensuring user privacy. The option to disable this scenario and all linked features is available any time through this control, and Microsoft will cease using a user's data for this purpose. Microsoft value user privacy and are committed to maintaining trust.
+To provide a more personalized experience with Microsoft 365 Copilot. Microsoft with consent provided from enabling this control use a user's private communication data connected to Microsoft 365 such as Microsoft Teams Chats, Outlook Emails, Microsoft Transcripts and from connectors. This data is used solely to make the individual users tools more efficient and personalized to them. It's important to note that this information remains confidential and won't be shared with other users ensuring user privacy. The option to disable this scenario and all linked features is available anytime through this control, and Microsoft will cease using a user's data for this purpose.
 
 ## Related content
 
