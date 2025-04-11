@@ -8,7 +8,7 @@ ms.subservice: teams
 doc_type: apiPageType
 ---
 
-# scheduleChangeRequest: approveForUser
+# swapShiftsChangeRequest: approveForUser
 
 Namespace: microsoft.graph
 
@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "schedulechangerequest-approveforuser-permissions"
+  "name": "swapshiftschangerequest-approveforuser-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/swapshiftschangerequest-approveforuser-permissions.md)]

@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "schedulechangerequest-declineforuser-permissions"
+  "name": "swapshiftschangerequest-declineforuser-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/swapshiftschangerequest-declineforuser-permissions.md)]
