@@ -4069,8 +4069,14 @@ items:
         href: ../../resources/networkaccess-networkaccesstraffic.md
       - name: List
         href: ../../api/networkaccess-logs-list-traffic.md
+      - name: Get
+        href: ../../api/networkaccess-networkaccesstraffic-get.md
     - name: Remote network health event
-      href: ../../resources/networkaccess-remotenetworkhealthevent.md
+      items:
+      - name: Remote network health event
+        href: ../../resources/networkaccess-remotenetworkhealthevent.md
+      - name: List
+        href: ../../api/networkaccess-logs-list-remotenetworks.md
   - name: Traffic reports
     items:
     - name: Traffic reports
