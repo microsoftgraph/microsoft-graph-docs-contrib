@@ -1,5 +1,6 @@
 ---
 title: "auditActivity resource type"
+toc.title: "auditActivity resource type (preview)"
 description: "Represents a standard audit log record capturing user or system activities."
 author: "ArunGedela"
 ms.date: 04/08/2025

@@ -2557,6 +2557,12 @@
           ]
         },
         {
+          "name": "Data Security and Compliance",
+          "resources": [
+            "microsoft.graph.DataSecurityAndGovernance"
+          ]
+        },
+        {
           "name": "eDiscovery",
           "overview": "../../resources/security-ediscovery-apioverview.md",
           "resources": [

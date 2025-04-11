@@ -1,5 +1,6 @@
 ---
 title: "processContentBatchRequest complex type"
+toc.title: "processContentBatchRequest complex type (preview)"
 description: "Represents a single item within a batch request for asynchronously processing content against data protection policies."
 author: "ArunGedela"
 ms.date: 04/08/2025

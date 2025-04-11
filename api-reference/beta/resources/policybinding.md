@@ -1,5 +1,6 @@
 ---
 title: "policyBinding complex type"
+toc.title: "policyBinding complex type (preview)"
 description: "Defines the user/group inclusions and exclusions for a tenant-level policy scope."
 author: "ArunGedela"
 ms.date: 04/08/2025

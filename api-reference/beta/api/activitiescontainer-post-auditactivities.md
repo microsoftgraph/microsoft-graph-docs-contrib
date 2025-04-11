@@ -1,6 +1,7 @@
 ---
-title: "Add audit activity"
-description: "Add an audit activity for the signed-in user"
+title: "Create audit activity"
+toc.title: "Create audit activity (preview)"
+description: "Create an audit activity for the signed-in user"
 author: "ArunGedela"
 ms.date: 04/03/2025
 ms.localizationpriority: medium

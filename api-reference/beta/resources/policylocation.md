@@ -1,5 +1,6 @@
 ---
 title: "policyLocation complex type"
+toc.title: "policyLocation complex type (preview)"
 description: "Abstract base type representing a location (like a domain or URL) to which a data protection policy applies."
 author: "ArunGedela"
 ms.date: 04/08/2025

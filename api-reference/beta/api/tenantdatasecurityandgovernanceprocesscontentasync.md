@@ -1,5 +1,6 @@
 ---
 title: "processContentAsync action"
+toc.title: "processContentAsync action (preview)"
 description: "Process a batch of content entries asynchronously against data protection policies."
 author: "ArunGedela"
 ms.date: 04/08/2025

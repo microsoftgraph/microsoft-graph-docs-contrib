@@ -1,5 +1,6 @@
 ---
 title: "deviceMetadata"
+toc.title: "deviceMetadata (preview)"
 description: "Contains details about the device involved in a session, including type and OS specifications."
 author: "ArunGedela"
 ms.date: 04/08/2025

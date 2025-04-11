@@ -1,5 +1,6 @@
 ---
 title: "executionMode enum type"
+toc.title: "executionMode enum type (preview)"
 description: "Specifies how a calling application should evaluate policies based on computed scopes (Inline or Offline)."
 author: "ArunGedela"
 ms.date: 04/08/2025

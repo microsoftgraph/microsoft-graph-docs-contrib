@@ -1,5 +1,6 @@
 ---
 title: "blockAccessAction"
+toc.title: "blockAccessAction (preview)"
 description: "Represents a DLP action that blocks access to the content."
 author: "ArunGedela"
 ms.date: 04/08/2025

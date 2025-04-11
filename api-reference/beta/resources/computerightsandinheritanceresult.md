@@ -1,5 +1,6 @@
 ---
 title: "computeRightsAndInheritanceResult complex type"
+toc.title: "computeRightsAndInheritanceResult complex type (preview)"
 description: "Represents the result of computing user-specific rights and label inheritance for content."
 author: "ArunGedela"
 ms.date: 04/08/2025

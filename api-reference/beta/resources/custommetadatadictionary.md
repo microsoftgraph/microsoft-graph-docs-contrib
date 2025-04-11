@@ -1,5 +1,6 @@
 ---
 title: "customMetadataDictionary complex type"
+toc.title: "customMetadataDictionary complex type (preview)"
 description: "A dictionary specifically for storing custom metadata extracted from content, where values must be strings."
 author: "ArunGedela"
 ms.date: 04/08/2025

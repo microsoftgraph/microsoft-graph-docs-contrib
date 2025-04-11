@@ -1,5 +1,6 @@
 ---
 title: "auditLogRecordType enum type"
+toc.title: "auditLogRecordType enum type (preview)"
 description: "Specifies the type or schema category of an audit log record."
 author: "ArunGedela"
 ms.date: 04/08/2025

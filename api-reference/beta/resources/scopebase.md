@@ -1,5 +1,6 @@
 ---
 title: "scopeBase resource type"
+toc.title: "scopeBase resource type (preview)"
 description: "Abstract base type representing a scope identifier for users, groups, or the tenant within policy bindings."
 author: "ArunGedela"
 ms.date: 04/08/2025

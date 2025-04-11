@@ -1,5 +1,6 @@
 ---
 title: "sensitivityLabel: computeInheritance"
+toc.title: "sensitivityLabel: computeInheritance (preview)"
 description: "Compute the effective sensitivity label for an item based on its parent container's label."
 author: "ArunGedela"
 ms.date: 04/03/2025

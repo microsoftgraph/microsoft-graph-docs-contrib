@@ -1,5 +1,6 @@
 ---
 title: "auditActivityUserInfo complex type"
+toc.title: "auditActivityUserInfo complex type (preview)"
 description: "Represents information about the user or principal associated with an audit activity."
 author: "ArunGedela"
 ms.date: 04/08/2025

@@ -1,5 +1,6 @@
 ---
 title: "sensitivityLabel: computeRightsAndInheritance"
+toc.title: "sensitivityLabel: computeRightsAndInheritance (preview)"
 description: "Compute user-specific usage rights and the inherited sensitivity label for specified content items."
 author: "ArunGedela"
 ms.date: 04/03/2025

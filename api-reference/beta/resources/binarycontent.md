@@ -1,5 +1,6 @@
 ---
 title: "binaryContent resource type"
+toc.title: "binaryContent resource type (preview)"
 description: "Represents content provided as a binary data stream."
 author: "ArunGedela"
 ms.date: 04/08/2025

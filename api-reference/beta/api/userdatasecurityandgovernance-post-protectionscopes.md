@@ -1,5 +1,6 @@
 ---
 title: "compute user protection scopes"
+toc.title: "compute user protection scopes (preview)"
 description: "Compute the data protection policies and actions applicable to a specific user based on their context."
 author: "ArunGedela"
 ms.date: 04/08/2025

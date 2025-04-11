@@ -1,5 +1,6 @@
 ---
 title: "auditLogUserType enum type"
+toc.title: "auditLogUserType enum type (preview)"
 description: "Specifies the type of user or principal associated with an audit log record."
 author: "ArunGedela"
 ms.date: 04/08/2025

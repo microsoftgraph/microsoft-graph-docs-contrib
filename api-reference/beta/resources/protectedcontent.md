@@ -1,5 +1,6 @@
 ---
 title: "protectedContent complex type"
+toc.title: "protectedContent complex type (preview)"
 description: "Represents input content details for computing rights and inheritance, including label ID and format."
 author: "ArunGedela"
 ms.date: 04/08/2025

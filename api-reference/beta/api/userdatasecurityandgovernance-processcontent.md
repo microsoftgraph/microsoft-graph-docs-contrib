@@ -1,5 +1,6 @@
 ---
 title: "processContent"
+toc.title: "processContent (preview)"
 description: "Process content against data protection policies in the context of the current user."
 author: "ArunGedela"
 ms.date: 04/08/2025

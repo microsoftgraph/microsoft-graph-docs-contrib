@@ -1,5 +1,6 @@
 ---
 title: "aiInteractionPlugin resource type"
+toc.title: "aiInteractionPlugin resource type (preview)"
 description: "Represents a plugin used during an AI interaction (e.g., bot conversation)."
 author: "ArunGedela"
 ms.date: 04/08/2025

@@ -1,5 +1,6 @@
 ---
 title: "classificationInnerError complex type"
+toc.title: "classificationInnerError complex type (preview)"
 description: "Contains specific, often internal, details about an error encountered during classification or policy evaluation."
 author: "ArunGedela"
 ms.date: 04/08/2025

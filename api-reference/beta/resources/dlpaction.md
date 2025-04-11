@@ -1,5 +1,6 @@
 ---
 title: "dlpAction"
+toc.title: "dlpAction (preview)"
 description: "Specifies the type of action taken by a Data Loss Prevention (DLP) policy rule."
 author: "ArunGedela"
 ms.date: 04/08/2025

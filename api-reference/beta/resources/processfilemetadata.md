@@ -1,5 +1,6 @@
 ---
 title: "processFileMetadata complex type"
+toc.title: "processFileMetadata complex type (preview)"
 description: "Represents metadata for a content entry that is a file."
 author: "ArunGedela"
 ms.date: 04/08/2025

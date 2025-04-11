@@ -1,5 +1,6 @@
 ---
 title: "List Sensitivity Labels"
+toc.title: "List Sensitivity Labels (preview)"
 description: "Retrieve a comprehensive list of sensitivity labels applicable to a specific user or the entire tenant. "
 author: "ArunGedela"
 ms.date: 04/03/2025

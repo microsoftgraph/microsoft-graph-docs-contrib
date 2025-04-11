@@ -1,5 +1,6 @@
 ---
 title: "auditData complex type"
+toc.title: "auditData complex type (preview)"
 description: "Represents workload-specific data associated with an audit log record."
 author: "ArunGedela"
 ms.date: 04/08/2025

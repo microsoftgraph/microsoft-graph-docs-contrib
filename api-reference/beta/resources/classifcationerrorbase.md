@@ -1,5 +1,6 @@
 ---
 title: "classifcationErrorBase complex type"
+toc.title: "classifcationErrorBase complex type (preview)"
 description: "Abstract base type for representing errors encountered during classification or policy evaluation."
 author: "ArunGedela"
 ms.date: 04/08/2025

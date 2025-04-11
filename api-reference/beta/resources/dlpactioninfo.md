@@ -1,5 +1,6 @@
 ---
 title: "dlpActionInfo complex type"
+toc.title: "dlpActionInfo complex type (preview)"
 description: "Base type for actions defined within a Data Loss Prevention (DLP) rule."
 author: "ArunGedela"
 ms.date: 04/08/2025

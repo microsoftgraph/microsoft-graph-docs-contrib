@@ -1,5 +1,6 @@
 ---
 title: "Get Sensitivity Label"
+toc.title: "Get Sensitivity Label (preview)"
 description: "Read the properties and relationships of a sensitivityLabel object."
 author: "ArunGedela"
 ms.date: 04/03/2025

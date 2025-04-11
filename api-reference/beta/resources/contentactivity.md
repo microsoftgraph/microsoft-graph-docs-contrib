@@ -1,5 +1,6 @@
 ---
 title: "contentActivity resource type"
+toc.title: "contentActivity resource type (preview)"
 description: "Audit logs data from contents processing"
 author: "ArunGedela"
 ms.date: 04/03/2025

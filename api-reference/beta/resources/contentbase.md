@@ -1,5 +1,6 @@
 ---
 title: "contentBase complex type"
+toc.title: "contentBase complex type (preview)"
 description: "Abstract base type representing the actual content (text or binary) being processed."
 author: "ArunGedela"
 ms.date: 04/08/2025

@@ -1,5 +1,6 @@
 ---
 title: "userActivityTypes enum type"
+toc.title: "userActivityTypes enum type (preview)"
 description: "Flags enum specifying user activities relevant for data protection policy scoping (UploadText, UploadFile, DownloadText, DownloadFile)."
 author: "ArunGedela"
 ms.date: 04/08/2025

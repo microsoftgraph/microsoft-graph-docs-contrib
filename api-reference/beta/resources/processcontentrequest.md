@@ -1,5 +1,6 @@
 ---
 title: "processContentRequest resource type"
+toc.title: "processContentRequest resource type (preview)"
 description: "Represents the request payload for processing content against data security and governance policies, including content entries and metadata."
 author: "ArunGedela"
 ms.date: 04/08/2025

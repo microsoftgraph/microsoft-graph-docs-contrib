@@ -1,5 +1,6 @@
 ---
 title: "contentProcessingErrorType enum type"
+toc.title: "contentProcessingErrorType enum type (preview)"
 description: "Specifies whether an error encountered during content processing is transient or permanent."
 author: "ArunGedela"
 ms.date: 04/08/2025

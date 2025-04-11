@@ -1,5 +1,6 @@
 ---
 title: "policyPivotProperty enum type"
+toc.title: "policyPivotProperty enum type (preview)"
 description: "Specifies how to aggregate or pivot the computed protection scopes (by Activity or Location)."
 author: "ArunGedela"
 ms.date: 04/08/2025

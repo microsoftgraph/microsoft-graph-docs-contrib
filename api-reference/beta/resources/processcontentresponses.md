@@ -1,5 +1,6 @@
 ---
 title: "processContentResponses complex type"
+toc.title: "processContentResponses complex type (preview)"
 description: "Represents the response for a single request within a batch content processing operation."
 author: "ArunGedela"
 ms.date: 04/08/2025

@@ -1,5 +1,6 @@
 ---
 title: "classificationError complex type"
+toc.title: "classificationError complex type (preview)"
 description: "Represents a detailed error object, potentially containing multiple nested errors, encountered during classification or policy evaluation."
 author: "ArunGedela"
 ms.date: 04/08/2025

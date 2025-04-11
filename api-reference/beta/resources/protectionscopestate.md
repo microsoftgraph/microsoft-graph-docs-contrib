@@ -1,5 +1,6 @@
 ---
 title: "protectionScopeState enum type"
+toc.title: "protectionScopeState enum type (preview)"
 description: "Indicates whether the computed data protection scope has changed since the last check (NotModified, Modified)."
 author: "ArunGedela"
 ms.date: 04/08/2025

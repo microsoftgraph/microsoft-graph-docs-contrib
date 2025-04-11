@@ -1,5 +1,6 @@
 ---
 title: "Compute tenant protection scopes"
+toc.title: "Compute tenant protection scopes (preview)"
 description: "Compute the tenant-wide data protection policies and actions, including user/group scoping."
 author: "ArunGedela"
 ms.date: 04/08/2025

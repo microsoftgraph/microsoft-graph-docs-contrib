@@ -1,5 +1,6 @@
 ---
 title: "processingError complex type"
+toc.title: "processingError complex type (preview)"
 description: "Represents an error encountered during content processing or policy evaluation, indicating if it's transient or permanent."
 author: "ArunGedela"
 ms.date: 04/08/2025

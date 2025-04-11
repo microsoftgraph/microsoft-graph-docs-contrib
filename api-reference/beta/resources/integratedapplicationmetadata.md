@@ -1,5 +1,6 @@
 ---
 title: "integratedApplicationMetadata resource type"
+toc.title: "integratedApplicationMetadata resource type (preview)"
 description: "Represents metadata about the application integrated with Purview data security APIs."
 author: "ArunGedela"
 ms.date: 04/08/2025
