@@ -1,6 +1,6 @@
 ---
 title: "Update enhancedPersonalizationSetting"
-description: "Learn how to Update the properties of an enhancedPersonalizationSetting object with Microsoft Graph"
+description: "Update the properties of an enhancedPersonalizationSetting object with Microsoft Graph."
 author: "Ross-GH"
 ms.date: 04/03/2025
 ms.localizationpriority: medium

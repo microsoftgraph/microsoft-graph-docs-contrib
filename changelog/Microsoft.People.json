@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enhancedPersonalizationSetting",
           "ChangeType": "Addition",
-          "Description": "Added the [enhancedPersonalizationSetting](https://learn.microsoft.com/en-us/graph/api/resources/enhancedPersonalizationSetting?view=graph-rest-beta) resource.",
+          "Description": "Added the [enhancedPersonalizationSetting](https://learn.microsoft.com/en-us/graph/api/resources/enhancedPersonalizationSetting?view=graph-rest-beta) resource and its methods.",
           "Target": "enhancedPersonalizationSetting"
         }
       ],

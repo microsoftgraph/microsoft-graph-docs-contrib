@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a setting that controls whether Microsoft 365 Copilot can use features that enhance its personalization capabilities. If enabled multiple features contributing to deeper personalization are enabled. For more information, see [control enhanced personalization privacy](/graph/control-enhanced-personalization-privacy).
+Represents a setting that controls whether Microsoft 365 Copilot can use features that enhance its personalization capabilities. If enabled multiple features contributing to deeper personalization are enabled. For more information, see [control enhanced personalization privacy](/concepts/control-enhanced-personalization-privacy).
 
 Inherits from [entity](../resources/entity.md).
 
