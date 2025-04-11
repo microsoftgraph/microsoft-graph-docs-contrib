@@ -2627,6 +2627,56 @@
       "CreatedDateTime": "2025-03-07T08:54:28.4245939Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e40e3ab6-2e24-45a6-8343-bb75271af39a",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Updated the [list](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-list-transcripts?view=graph-rest-1.0) operation to support retrieving [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resources for channel meetings.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "e40e3ab6-2e24-45a6-8343-bb75271af39a",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Updated the [get](https://learn.microsoft.com/en-us/graph/api/callTranscript-get?view=graph-rest-1.0) operation to support retrieving [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resources for channel meetings.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "e40e3ab6-2e24-45a6-8343-bb75271af39a",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Updated the [list](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-list-recordings?view=graph-rest-1.0) operation to support retrieving [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resources for channel meetings.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "e40e3ab6-2e24-45a6-8343-bb75271af39a",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Updated the [get](https://learn.microsoft.com/en-us/graph/api/callRecording-get?view=graph-rest-1.0) operation to support retrieving [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resources for channel meetings.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "e40e3ab6-2e24-45a6-8343-bb75271af39a",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added channel meeting support for [transcript and recording change notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-callrecording-and-calltranscript) specific to tenant-level, online meeting-specific, and user-level subscriptions in V1.",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "e40e3ab6-2e24-45a6-8343-bb75271af39a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-04-11T08:54:28.4245939Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     }
   ]
 }
