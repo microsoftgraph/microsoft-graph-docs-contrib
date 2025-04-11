@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |disabledForGroup|String|The ID of a Microsoft Entra group to which the value is used to disable the control for populated users. The default value is `null`. This parameter is optional.|
-|isEnabledInOrganization|Boolean|If true, enables the enhanced personalization control and therefore related features as defined in [control enhanced personalization privacy](/graph/control-enhanced-personalization-privacy)|
+|isEnabledInOrganization|Boolean|If true, enables the enhanced personalization control and therefore related features as defined in [control enhanced personalization privacy](/concepts/control-enhanced-personalization-privacy)|
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 ---
-title: "Microsoft 365 Copilot enhanced personalization Control | Microsoft Learn."
-description: "Looking to learn about Microsoft 365 Copilot Enhanced Personalization? Learn what it is, and how to control it respecting your privacy through Microsoft Learn."
+title: "Microsoft 365 Copilot enhanced personalization control | Microsoft Learn."
+description: "Looking to learn about Microsoft 365 Copilot enhanced personalization? Learn what it is, and how to control it respecting your privacy through Microsoft Learn."
 author: "Ross-GH"
 ms.author: "rossav"
 ms.subservice: "meetings-copilot"
@@ -11,7 +11,7 @@ ms.date: 04/03/2025
 
 ---
 
-# Enhanced Personalization Control Overview
+# Enhanced personalization control overview
 
 Microsoft 365 Copilot can become personalized to each user, aiding them in their day-to-day tasks by understanding their work knowledge on an individual level, including from their communications. Tenant administrators, such as the Global Administrator role, and users through requests to their tenant administrators, use the enhanced personalization control to manage this personalization.
   
