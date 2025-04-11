@@ -969,64 +969,16 @@
           "ApiChange": "Method",
           "ChangedApiName": "approveForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [approveForUser](https://learn.microsoft.com/en-us/graph/api/offershiftrequest-approveForUser?view=graph-rest-beta) method to the [offershiftrequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-beta) resource.",
-          "Target": "offershiftrequest"
+          "Description": "Added the [approveForUser](https://learn.microsoft.com/en-us/graph/api/scheduleChangeRequest-approveForUser?view=graph-rest-beta) method to the [scheduleChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/scheduleChangeRequest?view=graph-rest-beta) resource.",
+          "Target": "scheduleChangeRequest"
         },
         {
           "Id": "d77cb4c0-7492-4fd1-9c72-7eedeb0ad3fd",
           "ApiChange": "Method",
           "ChangedApiName": "declineForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [declineForUser](https://learn.microsoft.com/en-us/graph/api/offershiftrequest-declineForUser?view=graph-rest-beta) method to the [offershiftrequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-beta) resource.",
-          "Target": "offershiftrequest"
-        },
-        {
-          "Id": "d77cb4c0-7492-4fd1-9c72-7eedeb0ad3fd",
-          "ApiChange": "Method",
-          "ChangedApiName": "approveForUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [approveForUser](https://learn.microsoft.com/en-us/graph/api/openshiftchangerequest-approveForUser?view=graph-rest-beta) method to the [openshiftchangerequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-beta) resource.",
-          "Target": "openshiftchangerequest"
-        },
-        {
-          "Id": "d77cb4c0-7492-4fd1-9c72-7eedeb0ad3fd",
-          "ApiChange": "Method",
-          "ChangedApiName": "declineForUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [declineForUser](https://learn.microsoft.com/en-us/graph/api/openshiftchangerequest-declineForUser?view=graph-rest-beta) method to the [openshiftchangerequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-beta) resource.",
-          "Target": "openshiftchangerequest"
-        },
-        {
-          "Id": "d77cb4c0-7492-4fd1-9c72-7eedeb0ad3fd",
-          "ApiChange": "Method",
-          "ChangedApiName": "approveForUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [approveForUser](https://learn.microsoft.com/en-us/graph/api/swapshiftschangerequest-approveForUser?view=graph-rest-beta) method to the [swapshiftschangerequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta) resource.",
-          "Target": "swapshiftschangerequest"
-        },
-        {
-          "Id": "d77cb4c0-7492-4fd1-9c72-7eedeb0ad3fd",
-          "ApiChange": "Method",
-          "ChangedApiName": "declineForUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [declineForUser](https://learn.microsoft.com/en-us/graph/api/swapshiftschangerequest-declineForUser?view=graph-rest-beta) method to the [swapshiftschangerequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta) resource.",
-          "Target": "swapshiftschangerequest"
-        },
-        {
-          "Id": "d77cb4c0-7492-4fd1-9c72-7eedeb0ad3fd",
-          "ApiChange": "Method",
-          "ChangedApiName": "approveForUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [approveForUser](https://learn.microsoft.com/en-us/graph/api/timeoffrequest-approveForUser?view=graph-rest-beta) method to the [timeoffrequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta) resource.",
-          "Target": "timeoffrequest"
-        },
-        {
-          "Id": "d77cb4c0-7492-4fd1-9c72-7eedeb0ad3fd",
-          "ApiChange": "Method",
-          "ChangedApiName": "declineForUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [declineForUser](https://learn.microsoft.com/en-us/graph/api/timeoffrequest-declineForUser?view=graph-rest-beta) method to the [timeoffrequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta) resource.",
-          "Target": "timeoffrequest"
+          "Description": "Added the [declineForUser](https://learn.microsoft.com/en-us/graph/api/scheduleChangeRequest-declineForUser?view=graph-rest-beta) method to the [scheduleChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/scheduleChangeRequest?view=graph-rest-beta) resource.",
+          "Target": "scheduleChangeRequest"
         }
       ],
       "Id": "d77cb4c0-7492-4fd1-9c72-7eedeb0ad3fd",

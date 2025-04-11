@@ -48,12 +48,10 @@ POST /teams/{teamsId}/schedule/timeOffRequests/{timeOffRequestId}/declineForUser
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists the parameters that are required when you call this action.
-
 |Parameter|Type|Description|
 |:---|:---|:---|
-|message|String|Custom message sent on decline.|
-|userId|String|ID of the user that declined the request.|
+|message|String|Custom message sent on decline. Optional.|
+|userId|String|ID of the user that declined the request. Must be a team owner (manager). Required.|
 
 
 

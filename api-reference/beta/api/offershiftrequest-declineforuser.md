@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Decline an [openshiftchangerequest](../resources/openshiftchangerequest.md) object for a user.
 
+The request can be declined by the sender or the assignee (see `assignedTo` property in [scheduleChangeRequest](../resources/scheduleChangeRequest.md)).
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -48,12 +50,10 @@ POST /teams/{teamsId}/schedule/offerShiftRequests/{offerShiftRequestId}/declineF
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists the parameters that are required when you call this action.
-
 |Parameter|Type|Description|
 |:---|:---|:---|
-|message|String|Custom message sent on decline.|
-|userId|String|ID of the user that declined the request.|
+|message|String|Custom message sent on decline. Optional.|
+|userId|String|ID of the user that declined the request. Required.|
 
 
 

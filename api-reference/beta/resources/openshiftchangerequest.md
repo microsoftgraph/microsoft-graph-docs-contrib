@@ -23,8 +23,12 @@ Represents a type of shift request to claim an [openshift](../resources/openshif
 | [Create](../api/openshiftchangerequest-post.md) | [openshiftchangerequest](openshiftchangerequest.md) | Create an instance of an openshiftchangerequest object. |
 | [List](../api/openshiftchangerequest-list.md) | Collection of [openshiftchangerequest](openshiftchangerequest.md) | List the properties and relationships of **openShiftChangeRequest** objects in a team. |
 | [Get](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Read the properties and relationships of an **openShiftChangeRequest** object. |
-|[Approve](../api/openshiftchangerequest-approve.md)|None|Approve an open shift change request.|
-|[Decline](../api/openshiftchangerequest-decline.md)|None| Decline an open shift change request.|
+|[Approve](../api/openshiftchangerequest-approve.md)|None|Approve an open shift change request. (Delegated permission)|
+|[Decline](../api/openshiftchangerequest-decline.md)|None| Decline an open shift change request. (Delegated permission)|
+|[ApproveForUser](../api/openshiftchangerequest-approveforuser.md)|None|Approve an open shift change request for a user. (Application permission)|
+|[DeclineForUser](../api/openshiftchangerequest-declineforuser.md)|None|Decline an open shift change request for a user. (Application permission)|
+
+For more supported methods, see [scheduleChangeRequest](../resources/schedulechangerequest.md)
 
 ## Properties
 

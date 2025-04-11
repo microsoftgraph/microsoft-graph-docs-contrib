@@ -23,8 +23,12 @@ Represents type of shift request to offer a shift to another user in the team.
 | [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Create an instance of an offerShiftRequest object. |
 | [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Read properties and relationships of offerShiftRequest object. |
 | [List](../api/offershiftrequest-list.md) | Collection of [offerShiftRequest](offershiftrequest.md) | Read properties and relationships of all offerShiftRequest objects in a team. |
-|[Approve](../api/offershiftrequest-approve.md)|None|Approve an offerShiftRequest. |
-|[Decline](../api/offershiftrequest-decline.md)|None|Decline an offerShiftRequest. |
+|[Approve](../api/offershiftrequest-approve.md)|None|Approve an offerShiftRequest. (Delegated Permission)|
+|[Decline](../api/offershiftrequest-decline.md)|None|Decline an offerShiftRequest. (Delegated Permission)|
+|[ApproveForUser](../api/offershiftrequest-approveForUser.md)|None|Approve an offerShiftRequest for a user. (Application Permission)|
+|[DeclineForUser](../api/offershiftrequest-declineForUser.md)|None|Decline an offerShiftRequest for a user. (Application Permission)|
+
+For more supported methods, see [scheduleChangeRequest](../resources/schedulechangerequest.md)
 
 ## Properties
 

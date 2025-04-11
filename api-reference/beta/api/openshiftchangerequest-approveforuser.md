@@ -48,13 +48,10 @@ POST /teams/{teamsId}/schedule/openShiftChangeRequests/{openShiftChangeRequestId
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists the parameters that are required when you call this action.
-
 |Parameter|Type|Description|
 |:---|:---|:---|
-|message|String|Custom message sent on approval.|
-|userId|String|ID of the user that approved the request.|
-
+|message|String|Custom message sent on approval. Optional.|
+|userId|String|ID of the user that approved the request. Must be a team owner. Required.|
 
 
 ## Response

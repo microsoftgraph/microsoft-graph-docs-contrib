@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object for a user.
 
->**Note:** Only the recipient of the request can approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md).
+Only the assignee (see `assignedTo` property in [scheduleChangeRequest](../resources/scheduleChangeRequest.md)) can approve the request.
 
 ## Permissions
 
@@ -50,12 +50,10 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists the parameters that are required when you call this action.
-
 |Parameter|Type|Description|
 |:---|:---|:---|
-|message|String|Custom message sent on approval.|
-|userId|String|ID of the user that approved the request.|
+|message|String|Custom message sent on approval. Optional.|
+|userId|String|ID of the user that approved the request. The request must be assigned to them (See ). Required.|
 
 
 

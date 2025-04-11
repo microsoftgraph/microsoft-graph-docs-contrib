@@ -8,7 +8,7 @@ ms.subservice: teams
 doc_type: apiPageType
 ---
 
-# scheduleChangeRequest: declineForUser
+# swapShiftsChangeRequest: declineForUser
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object for a user.
 
->**Note:** Only the recipient of the request can decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md).
+The request can be declined by the sender or the assignee (see `assignedTo` property in [scheduleChangeRequest](../resources/scheduleChangeRequest.md)).
 
 ## Permissions
 
@@ -50,13 +50,10 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists the parameters that are required when you call this action.
-
 |Parameter|Type|Description|
 |:---|:---|:---|
-|message|String|**TODO: Add Description**|
-|userId|String|**TODO: Add Description**|
-
+|message|String|Custom message sent on approval. Optional.|
+|userId|String|ID of the user that declined the request. Required.|
 
 
 ## Response

@@ -25,6 +25,10 @@ Represents a type of shift request to take [timeOff](../resources/timeoff.md).
 | [Delete](../api/timeoffrequest-delete.md) | None | Delete a **timeOffRequest** object. |
 | [Approve](../api/timeoffrequest-approve.md)|None|Approve a time off request.|
 | [Decline](../api/timeoffrequest-decline.md)|None|Decline a time off request.|
+|[ApproveForUser](../api/timeoffrequest-approveforuser.md)|None|Approve a **timeOffRequest** for a user. (Application Permission)|
+|[DeclineForUser](../api/timeoffrequest-declineforuser.md)|None|Decline a **timeOffRequest** for a user. (Application Permission)|
+
+For more supported methods, see [scheduleChangeRequest](../resources/schedulechangerequest.md)
 
 ## Properties
 
