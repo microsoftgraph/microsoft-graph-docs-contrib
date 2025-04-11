@@ -1,5 +1,5 @@
 ---
-title: "List sensitivityLabels"
+title: "List Sensitivity Labels"
 description: "Retrieve a comprehensive list of sensitivity labels applicable to a specific user or the entire tenant. "
 author: "ArunGedela"
 ms.date: 04/03/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List sensitivityLabels
+# List Sensitivity Labels
 
 Namespace: microsoft.graph
 

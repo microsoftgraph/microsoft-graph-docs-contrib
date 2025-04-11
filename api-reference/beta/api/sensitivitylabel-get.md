@@ -1,5 +1,5 @@
 ---
-title: "Get sensitivityLabel"
+title: "Get Sensitivity Label"
 description: "Read the properties and relationships of a sensitivityLabel object."
 author: "ArunGedela"
 ms.date: 04/03/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Get sensitivityLabel
+# Get Sensitivity Label
 
 Namespace: microsoft.graph
 
