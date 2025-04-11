@@ -58,11 +58,11 @@ OneDrive for Business and SharePoint document libraries don't return the **inher
 
 ### Roles property values
 
-| Value           | Description                                                                    |
-|:----------------|:-------------------------------------------------------------------------------|
-| read            | Provides the ability to read the metadata and contents of the item.            |
-| write           | Provides the ability to read and modify the metadata and contents of the item. |
-| owner           | For SharePoint and OneDrive for Business this represents the owner role.       |
+| Value           | Description                                                                        |
+|:----------------|:-----------------------------------------------------------------------------------|
+| read            | Provides the ability to read the metadata and commment on the contents of the item.|
+| write           | Provides the ability to read and modify the metadata and contents of the item.     |
+| owner           | For SharePoint and OneDrive for Business this represents the owner role.           |
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
