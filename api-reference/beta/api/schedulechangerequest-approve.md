@@ -1,6 +1,6 @@
 ---
 title: "scheduleChangeRequest: approve"
-description: "Approve an scheduleChangeRequest object for a user."
+description: "Approve an scheduleChangeRequest object."
 author: lemikeshifts
 ms.date: 03/31/2025
 ms.localizationpriority: medium

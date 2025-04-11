@@ -29,10 +29,10 @@ This is an abstract type.
 |Property|Type|Description|
 |:---|:---|:---|
 |assignedTo|scheduleChangeRequestActor|Indicates who the request is assigned to. Possible values are: `sender`, `recipient`, `manager`, `system`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|The user who created the scheduleChangeRequest.|
+|createdBy|[identitySet](../resources/identityset.md)|The user who created the scheduleChangeRequest.|
 |createdDateTime|DateTimeOffset|The date and time when the scheduleChangeRequest was created.|
 |id|String|The ID of the scheduleChangeRequest.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|The user who last modified the scheduleChangeRequest.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The user who last modified the scheduleChangeRequest.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the scheduleChangeRequest was last modified.|
 |managerActionDateTime|DateTimeOffset|The date and time when the manager approved or declined the scheduleChangeRequest.|
 |managerActionMessage|String|The message sent by the manager regarding the scheduleChangeRequest. Optional.|

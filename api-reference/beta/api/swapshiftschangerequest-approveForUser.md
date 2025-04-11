@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object for a user.
-
+P
 Only the assignee (see `assignedTo` property in [scheduleChangeRequest](../resources/scheduleChangeRequest.md)) can approve the request.
 
 ## Permissions
