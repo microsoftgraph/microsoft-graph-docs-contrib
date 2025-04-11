@@ -8,7 +8,7 @@ ms.subservice: teams
 doc_type: apiPageType
 ---
 
-# scheduleChangeRequest: declineForUser
+# scheduleChangeRequest: decline
 
 Namespace: microsoft.graph
 
