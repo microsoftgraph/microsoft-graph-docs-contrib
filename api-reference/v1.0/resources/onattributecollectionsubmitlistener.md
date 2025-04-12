@@ -12,8 +12,6 @@ ms.date: 05/14/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 A listener for the end of the user attribution collection stage of a sign up flow. This event is triggered when the user submits the attribute collection form. 
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
