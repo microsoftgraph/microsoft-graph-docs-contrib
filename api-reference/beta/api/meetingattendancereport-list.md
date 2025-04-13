@@ -57,9 +57,9 @@ GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attenda
 >
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
->- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
->- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualeventsession.md) object.
->- `townhallId` is the **id** of an [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+>- `webinarId` is the **id** of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
+>- `sessionId` is the **id** of a [virtualEventSession](../resources/virtualeventsession.md) object.
+>- `townhallId` is the **id** of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
 ## Optional query parameters
 
