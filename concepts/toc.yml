@@ -794,6 +794,8 @@ items:
       href: people-insights-overview.md
     - name: Search people
       href: search-concept-person.md
+    - name: Enhanced personalization privacy
+      href: control-enhanced-personalization-privacy.md
   - name: Personal contacts
     items:
     - name: Overview
