@@ -79,11 +79,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/dataClassification/sensitivityLabels/computeInheritance(labelIds=[
-  "String"
-],locale='parameterValue',contentFormats=[
-  "String"
-])
+GET https://graph.microsoft.com//beta/security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance(['4c006ee9-b929-42e0-94a0-1c417466ebf8','f1c1209b-6389-4faf-a5f8-3f7e1389965d'], 'en-us', ['file','email'])
 ```
 
 ### Response
