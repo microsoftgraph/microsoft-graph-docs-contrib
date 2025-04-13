@@ -68,6 +68,9 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [attendanceRecord](../resources/attendancerecord.md) objects in the response body.
 
+> [!NOTE] 
+> Town hall attendance records don't return external registration information or a registration ID because town hall currently doesn't support registration.
+
 ## Examples
 
 ### Example 1: List attendance records
@@ -393,20 +396,27 @@ Content-Type: application/json
       "externalRegistrationInformation": {
         "referrer": "Fabrikam",
         "registrationId": "anotherExternalRegistrationId"
-      },
+      }
     }
   ]
 }
 ```
 
-### Example 4: List attendance records of a townhall session's attendance report
+### Example 4: List attendance records for the attendance report of a town hall session
+
+The following example shows how to get a list of attendance records for the attendance report of a town hall session
 
 #### Request
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "list_attendancerecord_townhall"
+}
+-->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/{townhallsId}/sessions/{sessionId}/attendanceReports/{reportId}/attendancerecords
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports/{reportId}/attendancerecords
 ```
 
 #### Response
@@ -466,7 +476,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-
-> [!Note] 
->  Townhall Attendance Records will not return external registration information or registration id because Townhall does not currently support registration.
