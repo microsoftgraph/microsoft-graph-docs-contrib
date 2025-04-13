@@ -1,5 +1,5 @@
 ---
-title: "compute user protection scopes"
+title: "Compute user protection scopes"
 toc.title: "compute user protection scopes (preview)"
 description: "Compute the data protection policies and actions applicable to a specific user based on their context."
 author: "ArunGedela"
@@ -9,29 +9,29 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# compute user protection scopes
+# Compute user protection scopes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Applications are required to adhere to Microsoft Purview policies established by Security/Compliance Administrators, which dictate how data and user activities should be managed. This is referred to as protection scopes, and applications should use the ProtectionScopes API to understand what has been defined in the context of user interactions. The application calls the ProtectionScopes API to get the protection scopes for the user.
+Applications are required to adhere to Microsoft Purview policies established by Security/Compliance Administrators, which dictate how data and user activities should be managed. Applications use the Protection Scopes to understand what is defined in the context of user interactions. The application calls the ProtectionScopes API to get the protection scopes for the user.
 
-The API enables applications to specify activity types and location types in the request, thereby limiting the response to only include relevant protection scopes. Applications are required to provide device metadata and application metadata to assist in determining the appropriate protection scopes. This information is essential for ascertaining policy decisions relevant to the application's context.
+The API enables applications to specify activity types and location types in the request, limiting the response to only include relevant protection scopes. Applications are required to provide device metadata and application metadata to help determining the appropriate protection scopes. This information is essential for ascertaining policy decisions relevant to the application's context.
 
 ## Execution Mode Behavior
 
-Below is the the expected behavior on different values for executionMode in the response of the protectionScopes/compute API.
+The expected behavior on different values for executionMode in the response of the protectionScopes/compute API is as follows:
 
-- evaluateInline: Wait for /processContent API to produce results before making decision about handling user activity, e.g. Allow or Block. No action.
-- evaluateOffline: Do not wait for /processContent API to return its verdict. Take action, if any with no wait for API response
+- evaluateInline: Wait for /processContent API to produce results before making decision about handling user activity, for example, Allow or Block. No action.
+- evaluateOffline: Don't wait for /processContent API to return its verdict. Take action, if any with no wait for API response
 
 |Execution Mode | Action | Description |
 |:------------------|:-------|:------------|
 |evaluateInline | None | Caller should invoke Process API and wait for results before letting user activity to proceed|
-|evalateInline | RestrictAccess | Not expected. Future actions that do not interfere with user activities may be present, e.g. NotifyUser|
+|evalateInline | RestrictAccess | Not expected. Future actions that don't interfere with user activities may be present, for example, NotifyUser|
 |evaluateOffline | RestrictAccess | Caller should restrict user activity, call Process API independently of taking the action|
-|evaluateOffline | None | Caller should not restrict user activity, call Process API independently|
+|evaluateOffline | None | Caller shouldn't restrict user activity, call Process API independently|
 
 ## Permissions
 
@@ -64,7 +64,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter             | Type                                                                                                                 | Description                                                                                                                                                         |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| activities            | [userActivityTypes](../resources/useractivitytypes.md)                              | Required. Flags specifying the user activities the calling application supports or is interested in (e.g., `uploadText`, `downloadFile`).                            |
+| activities            | [userActivityTypes](../resources/useractivitytypes.md)                              | Required. Flags specifying the user activities the calling application supports or is interested in (for example, `uploadText`, `downloadFile`).                            |
 | locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations (domains or URLs) the application is interested in. If provided, results are trimmed to policies covering these locations.     |
 | pivotOn               | [policyPivotProperty](../resources/policypivotproperty.md)                          | Optional. Specifies how the results should be aggregated (`activity` or `location`). If omitted or `none`, results might be less aggregated.                   |
 | deviceMetadata        | [deviceMetadata](../resources/devicemetadata.md)                                  | Required. Information about the user's device (type, OS) used for contextual policy evaluation.                                                                    |

@@ -25,14 +25,14 @@ Specifies the type of action configured within a Data Loss Prevention (DLP) poli
 | blockAccess                     | 1     | Block access to the content.                                    |
 | deviceRestriction               | 2     | Restrict actions on endpoint devices (copy, print, etc.).       |
 | browserRestriction              | 3     | Restrict actions in web browsers (upload, paste, print, etc.).  |
-| unknownFutureValue              | 4     | Evolvable enumeration sentinel value. Do not use.              |
+| unknownFutureValue              | 4     | Don't use.              |
 | restrictAccess                  | 5     | Restrict access (typically for SPO/ODB).                        |
-| generateAlert                   | 6     | Generate an alert in the compliance portal.                     |
+| generateAlert                   | 6     | Generate an alert in the Microsoft Purview portal.                     |
 | generateIncidentReportAction    | 7     | Generate an incident report (often sent via email).             |
-| sPBlockAnonymousAccess          | 8     | SharePoint Online: Block anonymous access.                       |
-| sPRuntimeAccessControl          | 9     | SharePoint Online: Apply runtime access control.                |
-| sPSharingNotifyUser             | 10    | SharePoint Online: Block sharing and notify user.               |
-| sPSharingGenerateIncidentReport | 11    | SharePoint Online: Block sharing and generate incident report.  |
+| sPBlockAnonymousAccess          | 8     | SharePoint: Block anonymous access.                       |
+| sPRuntimeAccessControl          | 9     | SharePoint: Apply runtime access control.                |
+| sPSharingNotifyUser             | 10    | SharePoint: Block sharing and notify user.               |
+| sPSharingGenerateIncidentReport | 11    | SharePoint: Block sharing and generate incident report.  |
 
 ## JSON representation
 

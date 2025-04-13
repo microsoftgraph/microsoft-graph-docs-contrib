@@ -21,9 +21,9 @@ Contains information identifying the user or service principal associated with a
 
 | Property | Type                                            | Description                                                                           |
 | :------- | :---------------------------------------------- | :------------------------------------------------------------------------------------ |
-| category | Microsoft.M365.AuditCore.auditLogUserType       | The category of the user or principal (e.g., Regular, System). Defined by the originating workload's `AuditLogUserType` enum. |
+| category | Microsoft.M365.AuditCore.auditLogUserType       | The category of the user or principal (for example, Regular, System). Defined by the originating workload's `AuditLogUserType` enum. |
 | key      | String                                          | A key representing the user, often the User Principal Name (UPN) or service principal name. |
-| uniqueId | String                                          | The unique identifier (e.g., Object ID) of the user or service principal.             |
+| uniqueId | String                                          | The unique identifier (for example, Object ID) of the user or service principal.             |
 
 ## Relationships
 
@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type. Note that the value for `category` depends on the `AuditLogUserType` enum defined by the originating workload.
+The following JSON representation shows the complex type. Note the value for `category` depends on the `AuditLogUserType` enum defined by the originating workload.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.auditActivityUserInfo",

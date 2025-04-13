@@ -15,7 +15,7 @@ Namespace: Microsoft.M365.AuditCore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents additional, workload-specific data associated with an [auditActivity](../resources/auditactivity.md) record. The structure and properties within this complex type are defined by the originating Microsoft 365 workload (e.g., SharePoint, Exchange) and are not detailed in this specific schema fragment. Consult the documentation for the specific workload's audit log schema for details.
+Represents workload-specific data associated with an [auditActivity](../resources/auditactivity.md) record. The structure and properties within this complex type are defined by the originating Microsoft 365 workload (for example, SharePoint, Exchange) and aren't detailed in this specific schema fragment. Consult the documentation for the specific workload's audit log schema for details.
 
 ## Properties
 
@@ -27,7 +27,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type. The actual properties within this object will vary.
+The following JSON representation shows the complex type. The actual properties within this object vary.
 <!-- {
   "blockType": "resource",
   "@odata.type": "Microsoft.M365.AuditCore.auditData",

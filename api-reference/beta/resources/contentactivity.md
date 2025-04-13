@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Audit logs data from contents processing, in a structured way to ensure compliance, track user actions, and detect unusual behavior. It captures detailed information about each activity, including timestamps, actions taken, and the involved resources, which are essential for tracking and auditing user interactions and system events.
+Audit logs data from contents processing, in a structured way to ensure compliance, track user actions, and detect unusual behavior. Captures detailed information about each activity, including timestamps, actions taken, and the involved resources. Essential for tracking and auditing user interactions and system events.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -31,8 +31,8 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |contentMetadata|[processContentRequest](../resources/processcontentrequest.md)|Defines the input payload. It includes the relevant metadata about the activity, device, and integrated application.|
-|id|String|unique identitifer|
-|scopeIdentifier|String|The scope identified from computed protectioon scopes|
+|id|String|unique identifier|
+|scopeIdentifier|String|The scope identified from computed protection scopes|
 |userId|String|ID of the user|
 
 ## Relationships
