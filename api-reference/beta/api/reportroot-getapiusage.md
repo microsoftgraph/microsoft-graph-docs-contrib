@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getApiUsage"
-description: "Get a report that shows Microsoft Graph API usage"
+description: "Get a report that provides information about active Microsoft Graph API usage."
 ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "jeremyke"
@@ -43,9 +43,9 @@ In the request URL, provide the following parameters with a valid value.
 
 | Parameter | Type   | Description                                                                                                                                                                                                                                             |
 | :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, and `D60`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. The default value is D30. |
-| serviceArea | string | Specifies the Service Area (Microsoft Exchange, Microsoft Teams Messaging, Microsoft Teams Calling, or Microsoft Teams Presence) for which the data should be filtered. By default, the API returns the data for all service areas. |
-| appId | string | Specifies the app ID for filtering the data returned by the API. By default, the API returns the data for all apps within the tenant. |
+| appId | String | Specifies the app ID for filtering the data returned by the API. By default, the API returns the data for all apps within the tenant. |
+| period    | String | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, and `D60`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. The default value is `D30`. |
+| serviceArea | String | Specifies the service area (Microsoft Exchange, Microsoft Teams Messaging, Microsoft Teams Calling, or Microsoft Teams Presence) for which the data should be filtered. By default, the API returns the data for all service areas. |
 
 ## Request headers
 
