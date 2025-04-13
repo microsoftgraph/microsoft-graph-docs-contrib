@@ -27,7 +27,7 @@ Represents a standard audit log record capturing details about an event or opera
 | createdDateTime     | DateTimeOffset                                                                                       | The timestamp when the audit record was created.                                                                              |
 | id                  | String                                                                                               | The unique identifier for the audit activity record. Read-only. Key property.                                                 |
 | operation           | String                                                                                               | The specific operation or action that was performed (for example, "FileAccessed", "UserLoggedIn").                                 |
-| organizationId      | String                                                                                               | The unique identifier (GUID) of the organization (tenant) where the activity occurred.                                        |
+| organizationId      | String                                                                                               | The unique identifier (GUID) of the organization where the activity occurred.                                        |
 | recordType          | Microsoft.M365.AuditCore.auditLogRecordType                                                            | The type of the audit log record, indicating the schema version or category. Defined by the `AuditLogRecordType` enum from the originating workload. |
 | userInfo            | [auditActivityUserInfo](../resources/auditactivityuserinfo.md)    | Information about the user or principal that performed the activity.                                                          |
 | version             | Int32                                                                                                | The version number of the audit log schema used for this record.                                                              |
@@ -39,7 +39,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the resource type. Note that the structure of `auditData` and the values for `recordType` depend on the specific workload generating the audit log.
+The following JSON representation shows the resource type. Note the structure of `auditData` and the values for `recordType` depend on the specific workload generating the audit log.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
