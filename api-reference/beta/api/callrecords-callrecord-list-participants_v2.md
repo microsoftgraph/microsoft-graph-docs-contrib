@@ -19,7 +19,7 @@ Get the list of [participant](../resources/callrecords-participant.md) objects a
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 > [!NOTE]
-> This API has a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=31852) related to missing participants.
+> A known issue related to missing participants is associated with this method. For details, see [Known issues](https://developer.microsoft.com/graph/known-issues?search=31852).
 
 ## Permissions
 
