@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Delete a [sharePointGroupMember](../resources/sharepointgroupmember.md) object from a [sharePointGroup](../resources/sharepointgroup.md). The deleted member immediately loses the permissions they inherit from the **sharePointGroup**. It may take several minutes for substrate-related functionality, such as search and Copilot, to reflect the deletion of the **sharePointGroupMember**.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
