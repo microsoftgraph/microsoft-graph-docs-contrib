@@ -442,6 +442,14 @@ items:
         href: ../../api/copilotadminlimitedmode-get.md
       - name: Update
         href: ../../api/copilotadminlimitedmode-update.md
+    - name: Enhanced personalization setting
+      items:
+      - name: Enhanced personalization setting
+        href: ../../resources/enhancedpersonalizationsetting.md
+      - name: Get
+        href: ../../api/enhancedpersonalizationsetting-get.md
+      - name: Update
+        href: ../../api/enhancedpersonalizationsetting-update.md
     - name: Complex types
       items:
       - name: Copilot admin

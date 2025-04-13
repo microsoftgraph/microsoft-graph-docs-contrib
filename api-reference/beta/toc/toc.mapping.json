@@ -1454,6 +1454,8 @@
               "resources": [
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
+                "onAttributeCollectionStartListener",
+                "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
@@ -1693,7 +1695,12 @@
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
-                "authenticationConditionApplication"
+                "authenticationConditionApplication",
+                "onAttributeCollectionHandler",
+                "onAttributeCollectionStartHandler",
+                "onAttributeCollectionStartCustomExtensionHandler",
+                "onAttributeCollectionSubmitHandler",
+                "onAttributeCollectionSubmitCustomExtensionHandler"
               ]
             },
             {
@@ -2991,7 +2998,8 @@
             {
               "name": "Copilot settings",
               "resources": [
-                "copilotAdminLimitedMode"
+                "copilotAdminLimitedMode",
+                "enhancedPersonalizationSetting"
               ],
               "complexTypes": [
                 "copilotAdmin",
