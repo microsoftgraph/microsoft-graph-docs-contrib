@@ -3424,6 +3424,7 @@ Possible values for user account types (group membership), per Windows definitio
 | driveItem |
 | user |
 | teamsChannel|
+| plannerTask|
 
 ### plannerPlanContextType values
 
