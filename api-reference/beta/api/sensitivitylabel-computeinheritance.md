@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In scenarios where new data is derived or generated from existing labeled data, it's crucial to automatically assign an appropriate sensitivity label to the newly created content. This process, known as Label Inheritance, ensures that derived data inherits the appropriate level of protection and governance from its sources. The Compute Label Inheritance API automates this process. Given a set of sensitivity labels associated with input data (e.g., documents used as sources), this API determines the most restrictive or highest priority label from the input set. This inherited label is then intended to be applied to the output or derived data, ensuring that it is classified and protected at a level commensurate with the sensitivity of its most sensitive source.
+In scenarios where new data is derived or generated from existing labeled data, it's crucial to automatically assign an appropriate sensitivity label to the newly created content. This process, known as label inheritance, ensures that derived data inherits the appropriate level of protection and governance from its sources. The Compute Inheritance API automates this process. Given a set of sensitivity labels associated with input data (e.g., documents used as sources), this API determines the highest priority label from the input set. This inherited label is then intended to be applied to the output or derived data, ensuring that it is classified and protected at a level equivalent with the sensitivity of its most sensitive source.
 The API also considers content format compatibility, ensuring the returned inherited label is valid for the intended output content type.
 
 ## Permissions
@@ -36,12 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /dataClassification/sensitivityLabels/computeInheritance
-GET /me/informationProtection/sensitivityLabels/computeInheritance
 GET /dataSecurityAndGovernance/sensitivityLabels/computeInheritance
 GET /me/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
-GET /computeRightsAndInheritanceResult/sensitivityLabels/computeInheritance
-GET /security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
+
 ```
 
 ## Function parameters

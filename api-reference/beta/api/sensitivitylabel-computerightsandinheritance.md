@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Compute the effective sensitivity label and the specific usage rights (permissions) granted to a delegated user for one or more pieces of content, based on their currently applied labels and content formats.
+Compute the sensitivity label to be inherited and the specific rights (permissions) granted to a delegated user for one or more pieces of content, based on labels and content formats sent in the request.
 
 ## Permissions
 
@@ -35,11 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /dataClassification/sensitivityLabels/computeRightsAndInheritance
-POST /me/informationProtection/sensitivityLabels/computeRightsAndInheritance
-POST /dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
 POST /me/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
-POST /computeRightsAndInheritanceResult/sensitivityLabels/computeRightsAndInheritance
 POST /security/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
 ```
 

@@ -35,11 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /labelContentRight/label
-GET /computeRightsAndInheritanceResult/inheritedLabel
-GET /dataClassification/sensitivityLabels/{sensitivityLabelId}
 GET /dataSecurityAndGovernance/sensitivityLabels/{sensitivityLabelId}
-GET /computeRightsAndInheritanceResult/sensitivityLabels/{sensitivityLabelId}
 ```
 
 ## Optional query parameters
