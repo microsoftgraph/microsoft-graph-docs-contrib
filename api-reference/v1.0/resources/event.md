@@ -69,10 +69,12 @@ This resource supports:
 |attendees|[Attendee](attendee.md) collection|The collection of attendees for the event.|
 |body|[ItemBody](itembody.md)|The body of the message associated with the event. It can be in HTML or text format.|
 |bodyPreview|String|The preview of the message associated with the event. It's in text format.|
+|cancelledOccurrences|String collection|Contains **occurrenceId** property values of canceled instances in a recurring series, if the event is the series master. Instances in a recurring series that are canceled are called cancelledOccurences.<br><br>Returned only on $select in a [Get](../api/event-get.md) operation which specifies the id of a series master event (that is, the seriesMasterId property value).|
 |categories|String collection|The categories associated with the event. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) defined for the user.|
 |changeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. It allows Exchange to apply changes to the correct version of the object.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends. By default, the end time is in UTC.|
+|exceptionOccurrences|[event](event.md) collection|Contains the **id** property values of the event instances that are exceptions in a recurring series.<br>Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees. Exceptions don't include canceled occurrences.<br><br>Returned only on $select and $expand in a [GET](../api/event-get.md) operation that specifies the id of a series master event (that is, the **seriesMasterId** property value).|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. The default is false.|
 |iCalUId|String|A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.|
@@ -159,10 +161,12 @@ The following JSON representation shows the resource type.
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
+  "cancelledOccurrences":["string"],
   "categories": ["string"],
   "changeKey": "string",
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "exceptionOccurrences":["microsoft.graph.event"],
   "hasAttachments": true,
   "hideAttendees": false,
   "id": "string (identifier)",
