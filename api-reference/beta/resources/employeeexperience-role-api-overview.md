@@ -32,7 +32,7 @@ The following table lists common use cases for the role managemnt APIs in Viva E
 | Get a list of roles assigned to the logged in user in Viva Engage | [GET /me/employeeExperience/assignedRoles](../api/employeeexperienceuser-list-assignedroles.md) | If successful, this method returns a `200 OK` response code and a list of roles object in the response body. |
 | Get a list of roles assigned to a user in Viva Engage | [GET /users/{userId}/employeeExperience/assignedRoles](../api/employeeexperienceuser-list-assignedroles.md) | If successful, this method returns a `200 OK` response code and a list of roles object in the response body. |
 | Assign role to a user in Viva Engage | [POST /employeeExperience/roles/{engagementRoleId}/members](../api/engagementrole-post-members.md) | If successful, this method returns a `201 No Content response` code.|
-| Delete assigned role for a user in Viva Engage | [DELETE /employeeExperience/roles/{roleId}/members/{userId}](../api/engagementrole-delete-members.md) | If successful, this method demotes a user from a role in Viva Engage. |
+| Delete assigned role for a user in Viva Engage | [DELETE /employeeExperience/roles/{engagementRoleId}/members/{engagementRoleMemberId}](../api/engagementrole-delete-members.md) | If successful, this method demotes a user from a role in Viva Engage. |
 
 ## API limits
 
