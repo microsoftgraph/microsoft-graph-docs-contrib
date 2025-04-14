@@ -52,6 +52,9 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 >- `webinarId` is the **id** of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
 >- `sessionId` is the **id** of a [virtualEventSession](../resources/virtualeventsession.md) object.
 
+> [!NOTE] 
+>  Townhall attendance records don't return external registration information or a registration ID because town hall currently doesn't support registration.
+
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -419,7 +422,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports/{reportId}/attendanceRecords
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports('2c2454-7613-4d6e-9c7c-4c8')/attendanceRecords
 ```
 
 #### Response

@@ -68,9 +68,6 @@ GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attenda
 >- `townhallId` is the **id** of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 >- Only the webinar or townhall organizer or coorganizer can access this API.
 
-> [!NOTE] 
->  Town hall attendance records don't return external registration information or a registration ID because town hall currently doesn't support registration.
-
 > [!CAUTION]
 >
 >- The `/meetingAttendanceReport` path is deprecated. Going forward, use the `/attendanceReports` path to retrieve attendance reports for an online meeting.
