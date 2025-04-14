@@ -43,6 +43,13 @@ The `$orderby` query parameter only supports the **lastModifiedDateTime** proper
 
 The default ordering is by descending **lastModifiedDateTime** property values.
 
+Application accepts the below three forms of range in terms of gt x and lt y.
+a. gt x (or) ge x
+b. lt y (or) le y
+c. gt x & lt y (or) ge x & le y
+
+**Note** : Equality (eq) operator is not supported for **lastModifiedDateTime** property value.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
