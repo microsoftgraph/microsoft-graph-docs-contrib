@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the engagementRole objects and their properties for the logged in user.
+Get all roles assigned to a user in Viva Engage.
 
 ## Permissions
 
@@ -35,6 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /me/employeeExperience/assignedRoles
+GET /users/{userId}/employeeExperience/assignedRoles
 ```
 
 ## Optional query parameters
@@ -87,9 +88,16 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.engagementRole",
-      "id": "fcf0d8d2-e7ef-5f58-2947-5caf4ba4080c",
-      "displayName": "String"
+        "id": "ec791927-d09f-4f91-bd76-d3b05e1c1a31",
+        "displayName": "Network Admin"
+    },
+    {
+        "id": "b0de8e6d-4457-4722-bdc5-5a32a09bf064",
+        "displayName": "Hybrid Admin"
+    },
+    {
+        "id": "77aa7d76-bdf6-4cc0-80e2-fd1ac5a28471",
+        "displayName": "Corporate Communicator"
     }
   ]
 }

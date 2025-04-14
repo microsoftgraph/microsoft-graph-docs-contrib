@@ -1,10 +1,10 @@
 ---
 title: "List engagementRoleMember objects"
 description: "Get a list of the engagementRoleMember objects and their properties."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "richafnu"
 ms.date: 03/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the engagementRoleMember objects and their properties.
+Get users who hold a role in Viva Engage.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /users/{usersId}/employeeExperience/assignedRoles/{engagementRoleId}/members
+GET /employeeExperience/roles/{engagementRoleId}/members
 ```
 <!-- GET /me/employeeExperience/assignedRoles/{engagementRoleId}/members -->
 
@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/employeeExperience/assignedRoles/{engagementRoleId}/members
+GET https://graph.microsoft.com/beta/employeeExperience/roles/{engagementRoleId}/members
 ```
 
 

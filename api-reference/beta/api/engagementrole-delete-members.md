@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an engagementRoleMember object.
+Revoke a Viva Engage role from a user.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /users/{usersId}/employeeExperience/assignedRoles/{engagementRoleId}/members/{engagementRoleMemberId}/$ref
+DELETE /employeeExperience/roles/{engagementRoleId}/members/{engagementRoleMemberId}
 ```
 <!-- DELETE /me/employeeExperience/assignedRoles/{engagementRoleId}/members/{engagementRoleMemberId}/$ref -->
 
@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/employeeExperience/assignedRoles/{engagementRoleId}/members/{engagementRoleMemberId}
+DELETE https://graph.microsoft.com/beta/me/employeeExperience/roles/{engagementRoleId}/members/{engagementRoleMemberId}
 ```
 
 

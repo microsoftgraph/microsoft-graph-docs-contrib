@@ -1,10 +1,10 @@
 ---
 title: "Create engagementRoleMember"
 description: "Create a new engagementRoleMember object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "richafnu"
 ms.date: 03/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new engagementRoleMember object.
+Assign a Viva Engage role to a user.
 
 ## Permissions
 
@@ -34,8 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /me/employeeExperience/assignedRoles/{engagementRoleId}/members
-POST /users/{usersId}/employeeExperience/assignedRoles/{engagementRoleId}/members
+POST /employeeExperience/roles/{engagementRoleId}/members
 ```
 
 ## Request headers
@@ -74,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/employeeExperience/assignedRoles/{engagementRoleId}/members
+POST https://graph.microsoft.com/beta/employeeExperience/roles/{engagementRoleId}/members
 Content-Type: application/json
 
 {

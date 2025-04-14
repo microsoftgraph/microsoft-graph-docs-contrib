@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of engagementRole objects and properties.
+Get the list of all roles that can be assigned in Viva Engage.
 
 ## Permissions
 
@@ -87,11 +87,19 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.engagementRole",
-      "id": "fcf0d8d2-e7ef-5f58-2947-5caf4ba4080c",
-      "displayName": "String"
-    }
+            "id": "ec759127-089f-4f91-8dfc-03a30b51cb38",
+            "displayName": "Network Admin"
+        },
+        {
+            "id": "966b8ec4-6457-4f22-bd3c-5a2520e98f4a",
+            "displayName": "Verified Admin"
+        },
+        {
+            "id": "77aa47ad-96fe-4ecc-8024-fd1ac5e28f17",
+            "displayName": "Corporate Communicator"
+        }
   ]
 }
+ 
 ```
 

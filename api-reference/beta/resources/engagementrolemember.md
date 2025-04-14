@@ -21,9 +21,9 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/engagementrole-list-members.md)|[engagementRoleMember](../resources/engagementrolemember.md) collection|Get a list of the engagementRoleMember objects and their properties.|
-|[Create](../api/engagementrole-post-members.md)|[engagementRoleMember](../resources/engagementrolemember.md)|Create a new engagementRoleMember object.|
-|[Delete](../api/engagementrole-delete-members.md)|None|Delete an engagementRoleMember object.|
+|[List](../api/engagementrole-list-members.md)|[engagementRoleMember](../resources/engagementrolemember.md) collection|Get a list of users with assigned roles in Viva Engage.|
+|[Create](../api/engagementrole-post-members.md)|[engagementRoleMember](../resources/engagementrolemember.md)|Assign role to a user in Viva Engage.|
+|[Delete](../api/engagementrole-delete-members.md)|None|Delete assigned role for a user in Viva Engage.|
 
 ## Properties
 |Property|Type|Description|

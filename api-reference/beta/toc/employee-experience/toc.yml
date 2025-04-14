@@ -34,21 +34,21 @@ items:
     items:
     - name: Engagement role
       href: ../../resources/engagementrole.md
-    - name: List
+    - name: List Viva Engage roles 
       href: ../../api/employeeexperience-list-roles.md
-    - name: List
-      href: ../../api/engagementrole-list-members.md
-    - name: List
+    - name: List assigned roles for a user
       href: ../../api/employeeexperienceuser-list-assignedroles.md
+    - name: List assigned roles for logged in user
+      href: ../../api/employeeexperienceuser-list-assignedroles.md  
   - name: Engagement role member
     items:
     - name: Engagement role member
       href: ../../resources/engagementrolemember.md
-    - name: List
-      href: ../../api/engagementrole-list-members.md
-    - name: Create
+    - name: List members of a role
+      href: ../../api/engagementrole-list-members.md  
+    - name: Assign role to a user
       href: ../../api/engagementrole-post-members.md
-    - name: Delete
+    - name: Revoke role from a user 
       href: ../../api/engagementrole-delete-members.md
 - name: Employee goals (preview)
   items:
