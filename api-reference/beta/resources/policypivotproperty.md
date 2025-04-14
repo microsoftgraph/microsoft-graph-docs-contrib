@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the property on which the results of a protection scope computation (using the `compute` action) should be aggregated or "pivoted". This affects how the resulting [policyUserScope](../resources/policyuserscope.md) or [policyTenantScope](../resources/policytenantscope.md) objects are grouped.
+Specifies the property on which the results of a protection scope computation (using the `compute` action) should be aggregated or "pivoted". Affects how the resulting [policyUserScope](../resources/policyuserscope.md) or [policyTenantScope](../resources/policytenantscope.md) objects are grouped.
 
 ## Members
 
@@ -24,7 +24,7 @@ Specifies the property on which the results of a protection scope computation (u
 | none               | 0     | No specific pivoting; results might be returned individually per policy match. |
 | activity           | 1     | Group the results based on the user activity type (`uploadText`, `downloadFile`, etc.). |
 | location           | 2     | Group the results based on the location (`policyLocationDomain`, `policyLocationUrl`). |
-| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Do not use.                                |
+| unknownFutureValue | 3     | Don't use.                                |
 
 ## JSON representation
 

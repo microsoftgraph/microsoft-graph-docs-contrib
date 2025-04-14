@@ -22,7 +22,7 @@ Entry point for data security and governance features, scoped to the tenant.
 | Method                                  | Return Type                                                                                     | Description                                                                  |
 | :-------------------------------------- | :---------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
 |[Compute Protection Scopes](../api/userdatasecurityandgovernance-post-protectionscopes.md)| [policyTenantScope](../resources/policytenantscope.md) collection | Compute the tenant-wide data protection policies and actions, including user/group scoping. |
-|[Process Content Batch](../api/tenantdatasecurityandgovernance-processcontentasync.md)|  [processContentResponses](../resources/processcontentresponses.md) collection | Process a batch of content entries asynchronously against data protection policies. |
+|[Process Content Async](../api/tenantdatasecurityandgovernanceprocesscontentasync.md)|  [processContentResponses](../resources/processcontentresponses.md) collection | Process content entries asynchronously against data protection policies. |
 
 ## Relationships
 

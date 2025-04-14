@@ -15,13 +15,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the platform (e.g., "Windows", "macOS") and version of the operating system running on a device. Used within [deviceMetadata](../resources/devicemetadata.md).
+Specifies the platform (for example, "Windows", "macOS") and version of the operating system running on a device. Used within [deviceMetadata](../resources/devicemetadata.md).
 
 ## Properties
 
 | Property                | Type   | Description                                          |
 | :---------------------- | :----- | :--------------------------------------------------- |
-| operatingSystemPlatform | String | The platform of the operating system (e.g., "Windows"). |
+| operatingSystemPlatform | String | The platform of the operating system (for example, "Windows"). |
 | operatingSystemVersion  | String | The version string of the operating system.          |
 
 ## Relationships

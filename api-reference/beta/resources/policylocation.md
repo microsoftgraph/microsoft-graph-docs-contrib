@@ -21,7 +21,7 @@ Abstract base type representing a specific location (such as a domain or URL) wh
 
 | Property | Type   | Description                                                    |
 | :------- | :----- | :------------------------------------------------------------- |
-| value    | String | The actual value representing the location (e.g., "contoso.com", "https://partner.contoso.com/upload"). |
+| value    | String | The actual value representing the location (for example, "contoso.com", "https://partner.contoso.com/upload"). |
 
 ## Relationships
 
@@ -29,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type. Note that this is an abstract type and won't be instantiated directly.
+The following JSON representation shows the complex type. Note this is an abstract type and isn't instantiated directly.
 <!-- {
   "blockType": "resource",
   "abstract": true,
