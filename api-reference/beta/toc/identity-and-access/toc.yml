@@ -2056,6 +2056,10 @@ items:
         href: ../../api/authenticationeventlistener-delete.md
     - name: On attribute collection listener
       href: ../../resources/onattributecollectionlistener.md
+    - name: On attribute collection start listener
+      href: ../../resources/onattributecollectionstartlistener.md
+    - name: On attribute collection submit listener
+      href: ../../resources/onattributecollectionsubmitlistener.md
     - name: On authentication method load start listener
       href: ../../resources/onauthenticationmethodloadstartlistener.md
     - name: On email OTP send listener
@@ -3228,6 +3232,16 @@ items:
         href: ../../api/authenticationconditionsapplications-post-includeapplications.md
       - name: Remove
         href: ../../api/authenticationconditionapplication-delete.md
+    - name: On attribute collection handler
+      href: ../../resources/onattributecollectionhandler.md
+    - name: On attribute collection start handler
+      href: ../../resources/onattributecollectionstarthandler.md
+    - name: On attribute collection start custom extension handler
+      href: ../../resources/onattributecollectionstartcustomextensionhandler.md
+    - name: On attribute collection submit handler
+      href: ../../resources/onattributecollectionsubmithandler.md
+    - name: On attribute collection submit custom extension handler
+      href: ../../resources/onattributecollectionsubmitcustomextensionhandler.md
   - name: User flows in workforce tenants and Azure AD B2C
     items:
     - name: B2C identity user flow
