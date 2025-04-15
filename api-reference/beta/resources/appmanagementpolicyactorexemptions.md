@@ -33,14 +33,6 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.appManagementPolicyActorExemptions",
-  "customSecurityAttributes": [
-    {
-      "@odata.type": "microsoft.graph.customSecurityAttributeStringValueExemption",
-      "id": "PolicyExemptions_AppManagementExemption", 
-      "operator": "equals",
-      "value": "ExemptFromIdentifierUriAdditionRestriction"
-    }
-  ]
+  "@odata.type": "#microsoft.graph.appManagementPolicyActorExemptions"
 }
 ```
