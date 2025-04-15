@@ -52,7 +52,7 @@ To get an attendance report for a webinar session by ID with delegated and app p
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}
 ```
 
-To get an attendance report for a town hall session by ID with delegated and app permission:
+To get an attendance report by ID for a town hall session using delegated and application permissions:
 <!-- { "blockType": "ignored" }-->
 ``` http
 GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attendanceReports/{reportId}

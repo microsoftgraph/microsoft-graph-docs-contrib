@@ -47,7 +47,7 @@ To get all attendance reports for a webinar session with delegated and app permi
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
 ```
 
-To get all attendance reports for a town hall session with delegated and app permission:
+To get all attendance reports for a town hall session using delegated and application permissions:
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attendanceReports
