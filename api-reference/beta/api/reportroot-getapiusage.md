@@ -37,7 +37,7 @@ GET /reports/getApiUsage(period={period_value},serviceArea={service_area},appId=
 
 ## Function parameters
 
-In the request URL, optionally provide one ore more of the following parameters with a valid value.
+In the request URL, optionally provide one or more of the following parameters with a valid value.
 
 | Parameter | Type   | Description                                                                                                                                                                                                                                             |
 | :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
