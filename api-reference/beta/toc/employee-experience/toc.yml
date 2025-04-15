@@ -26,13 +26,13 @@ items:
       href: ../../resources/engagementasyncoperation.md
     - name: Get
       href: ../../api/engagementasyncoperation-get.md
-- name: Employee engagement role
+- name: Role Management
   items:
   - name: Overview
     href: ../../resources/employeeexperience-role-api-overview.md
-  - name: Engagement role
+  - name: Role
     items:
-    - name: Engagement role
+    - name: Role
       href: ../../resources/engagementrole.md
     - name: List Viva Engage roles 
       href: ../../api/employeeexperience-list-roles.md
@@ -40,9 +40,9 @@ items:
       href: ../../api/employeeexperienceuser-list-assignedroles.md
     - name: List assigned roles for logged in user
       href: ../../api/employeeexperienceuser-list-assignedroles.md  
-  - name: Engagement role member
+  - name: Role member
     items:
-    - name: Engagement role member
+    - name: Role member
       href: ../../resources/engagementrolemember.md
     - name: List members of a role
       href: ../../api/engagementrole-list-members.md  
