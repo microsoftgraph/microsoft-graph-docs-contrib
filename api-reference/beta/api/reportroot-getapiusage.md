@@ -81,7 +81,7 @@ The CSV data has the following headers for columns:
 The following example shows a request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "reportroot_getapiquota_csv"
 }-->
 ```http
