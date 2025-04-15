@@ -32,58 +32,6 @@ Administrators can decide whether to display pronunciations that users set up in
 >
 > When an admin toggles name pronunciation off, the process of deletion is triggered, and all pronunciation data created by users starts to be deleted. Deleting name pronunciation data can take up to 30 days. If you turn pronunciation back on within that period, any recordings that existed prior to the delete signal that haven't yet been deleted from Microsoft servers will be resurfaced and become visible in Microsoft 365 experiences on the profile cards.
 
-## Configure name pronunciation settings by using PowerShell
-
-You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to configure name pronunciation settings in your organization.
-
-### Prerequisites
-
-- **PowerShell module** - Install [module version 2.3.0](https://www.powershellgallery.com/packages/Microsoft.Graph) or higher.
-- **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or higher.
-
-> [!NOTE]
-> The PowerShell commands for name pronunciation settings are only available in beta. Switch to the beta experience before you run the following commands.
->
-> ```powershell
->    Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.3.0
-> ```
-
-### Review your current settings
-
-To retrieve the name pronunciation configuration for an organization, use the GET method. This requires the `PeopleSettings.Read.All` permission.
-
-First, create a Microsoft Graph session with the required scope and consent to the requested permissions.
-
- ```powershell
-    Connect-MgGraph -Scopes "PeopleSettings.Read.All"
-
-    Get-MgBetaAdminPeopleNamePronunciation 
- ```
- 
-### Enable name pronunciation in your organization
-
-By default, name pronunciations are turned off. To make name pronunciation available in your organization, update the settings using the Microsoft Graph PowerShell module.
-
-First, create a Microsoft Graph session with the required permissions.
-
-```powershell
-   Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
-```
-
-After you set the permissions, use the following command, specifying `true` for the value of `-IsEnabledInOrganization`.
-
-```powershell
-  Update-MgBetaAdminPeopleNamePronunciation -IsEnabledInOrganization:$true
-```
-
-### Disable name pronunciation in your organization
-
-Alternatively, you can make name pronunciation unavailable for your organization by using the following command. Specify `false` for the value of `-IsEnabledInOrganization`.
-
-```powershell
-  Get-MgBetaAdminPeopleNamePronunciation -IsEnabledInOrganization:$false
-```
-
 ## Configure name pronunciation settings by using the Microsoft Graph REST API
 
 You can use the [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) resource and its associated methods to configure name pronunciation settings in your organization.
@@ -95,7 +43,7 @@ The [Get namePronunciationSettings](/graph/api/namepronunciationsettings-get?vie
 Use the following HTTP request to retrieve all current settings, including those with name pronunciation disabled.
 
 ``` http
-GET https://graph.microsoft.com/v1.0/admin/people/namePronunciation
+GET https://graph.microsoft.com/beta/admin/people/namePronunciation
 ```
 
 If successful, a `200 OK` response code is returned with a [namePronunciationSettings](/graph/api/namepronunciationsettings-get?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
@@ -116,7 +64,7 @@ Setting the **isEnabledInOrganization** property of the **namePronunciationSetti
 Use the [Update namePronunciationSettings](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) method to enable name pronunciation, as shown in the following example:
 
 ``` http
-PATCH https://graph.microsoft.com/v1.0/admin/people/namePronunciation
+PATCH https://graph.microsoft.com/beta/admin/people/namePronunciation
 Content-Type: application/json
 
 {
@@ -142,7 +90,7 @@ Setting the **isEnabledInOrganization** property of the **namePronunciationSetti
 Use the [Update namePronunciationSettings](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) method to disable name pronunciation, as shown in the following example.
 
 ``` http
-PATCH https://graph.microsoft.com/v1.0/admin/people/namePronunciation
+PATCH https://graph.microsoft.com/beta/admin/people/namePronunciation
 Content-Type: application/json
 
 {

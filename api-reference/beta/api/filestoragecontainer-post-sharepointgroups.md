@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Create a new [sharePointGroup](../resources/sharepointgroup.md) object. The **sharePointGroup** only exists within the scope of the [fileStorageContainer](../resources/filestoragecontainer.md) in which it was created. To add permissions for the **sharePointGroup** on [driveItem](../resources/driveitem.md) objects, you must use the [Create permission on a driveItem](./driveitem-post-permissions.md) API. Up to 10,000 **sharePointGroup** objects can be created per **fileStorageContainer**. For more information on service limits, see [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

@@ -334,6 +334,34 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
+  - name: Call delegation
+    items:
+    - name: Overview
+      href: ../../resources/calldelegation-api-overview.md
+    - name: Call settings
+      items:
+      - name: Call settings
+        href: ../../resources/callsettings.md
+      - name: List delegates
+        href: ../../api/callsettings-list-delegates.md
+      - name: List delegators
+        href: ../../api/callsettings-list-delegators.md
+    - name: Delegation settings
+      items:
+      - name: Delegation settings
+        href: ../../resources/delegationsettings.md
+      - name: Get
+        href: ../../api/delegationsettings-get.md
+      - name: List delegates
+        href: ../../api/callsettings-list-delegates.md
+      - name: List delegators
+        href: ../../api/callsettings-list-delegators.md
+    - name: Complex types
+      items:
+      - name: Delegate allowed actions
+        href: ../../resources/delegateallowedactions.md
+      - name: User cloud communication
+        href: ../../resources/usercloudcommunication.md
   - name: Call events
     items:
     - name: Call event
@@ -414,6 +442,14 @@ items:
         href: ../../api/copilotadminlimitedmode-get.md
       - name: Update
         href: ../../api/copilotadminlimitedmode-update.md
+    - name: Enhanced personalization setting
+      items:
+      - name: Enhanced personalization setting
+        href: ../../resources/enhancedpersonalizationsetting.md
+      - name: Get
+        href: ../../api/enhancedpersonalizationsetting-get.md
+      - name: Update
+        href: ../../api/enhancedpersonalizationsetting-update.md
     - name: Complex types
       items:
       - name: Copilot admin
