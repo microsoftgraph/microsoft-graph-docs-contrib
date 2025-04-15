@@ -21,7 +21,7 @@ This article describes scenarios for the **transcript** and **recording** resour
 
 To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
-> **Note:** This subscription does not support private channel meetings at this time.
+> **Note:** This subscription doesn't currently support private channel meetings.
 
 ### Permissions
 
@@ -58,7 +58,7 @@ Content-Type: application/json
 
 To get change notifications for any transcript available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
-> **Note:** This subscription does not support private channel meetings at this time.
+> **Note:** This subscription doesn't currently support private channel meetings.
 
 ### Permissions
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 
 To get change notifications for any transcript available for any online meeting organized by a specific user, subscribe to `users/{userId}/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
-> **Note:** This subscription does not support private channel meetings at this time.
+> **Note:** This subscription doesn't currently support private channel meetings.
 
 ### Permissions
 
@@ -244,7 +244,7 @@ Content-Type: application/json
 
 To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
-> **Note:** This subscription does not support private channel meetings at this time.
+> **Note:** This subscription doesn't currently support private channel meetings.
 
 ### Permissions
 
@@ -302,7 +302,7 @@ Content-Type: application/json
 
 To get change notifications for any recording available for any online meeting organized by a specific user, subscribe to `users/{userId}/onlineMeetings/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
-> **Note:** This subscription does not support private channel meetings at this time.
+> **Note:** This subscription doesn't currently support private channel meetings.
 
 ### Permissions
 
