@@ -413,7 +413,7 @@ Content-Type: application/json
 
 ### Example 4: List attendance records for the attendance report of a town hall session
 
-The following example shows how to get a list of attendance records for the attendance report of a town hall session
+The following example shows how to get a list of attendance records for the attendance report of a town hall session.
 
 #### Request
 
