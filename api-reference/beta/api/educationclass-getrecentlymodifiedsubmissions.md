@@ -44,9 +44,15 @@ The `$orderby` query parameter only supports the **lastModifiedDateTime** proper
 The default ordering is by descending **lastModifiedDateTime** property values.
 
 Application accepts the below three forms of range in terms of gt x and lt y.
-a. gt x (or) ge x
-b. lt y (or) le y
-c. gt x & lt y (or) ge x & le y
+
+a. gt 2025-04-10T19:02:00.8753517Z (or) ge 2025-04-10T19:02:00.8753517Z
+Example : https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z
+
+b. lt 2025-04-14T23:02:00.8753517Z (or) le 2025-04-14T23:02:00.8753517Z
+Example : https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime le 2025-04-10T19:02:00.8753517Z 
+
+c. gt 2025-04-10T19:02:00.8753517Z & lt 2025-04-14T23:02:00.8753517Z (or) ge 2025-04-10T19:02:00.8753517Z & le 2025-04-14T23:02:00.8753517Z
+Example : https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z and lastModifiedDateTime lt 2025-04-14T23:02:00.8753517Z
 
 **Note** : Equality (eq) operator is not supported for **lastModifiedDateTime** property value.
 
