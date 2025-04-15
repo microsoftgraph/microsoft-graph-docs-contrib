@@ -1,6 +1,6 @@
 ---
-title: "reportRoot: getAPIUsage"
-description: "Get a report that shows Microsoft Graph API usage"
+title: "reportRoot: getApiUsage"
+description: "Get a report that provides information about active Microsoft Graph API usage."
 ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "jeremyke"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 03/10/2025
 ---
 
-# reportRoot: getAPIUsage
+# reportRoot: getApiUsage
 
 Namespace: microsoft.graph
 
@@ -41,9 +41,9 @@ In the request URL, optionally provide one ore more of the following parameters 
 
 | Parameter | Type   | Description                                                                                                                                                                                                                                             |
 | :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| period    | string | Optional. Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, and `D60`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. The default value is D30. |
-| serviceArea | string | Optional. Specifies the Service Area (Exchange, Teams Messaging, or Teams Calling) for which the data should be filtered. By default, the API returns the data for all service areas. |
-| appId | string | Optional. Specifies the app ID for filtering the data returned by the API. By default, the API returns the data for all apps within the tenant. |
+| appId | String | Optional. Specifies the app ID for filtering the data returned by the API. By default, the API returns the data for all apps within the tenant. |
+| period    | String | Optional. Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, and `D60`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. The default value is `D30`. |
+| serviceArea | String | Optional. Specifies the service area (Microsoft Exchange, Microsoft Teams Messaging, Microsoft Teams Calling, or Microsoft Teams Presence) for which the data should be filtered. By default, the API returns the data for all service areas. |
 
 ## Request headers
 
@@ -98,11 +98,11 @@ HTTP/1.1 200 OK
 Content-Type: text/csv
 
 Date,Service Area,Tenant ID,App ID,Usage,Active Apps
-2024-08-28T00:00:00Z,Exchange,00000000-0000-0000-0000-000000000000,,30904,2
-2024-08-28T00:00:00Z,Exchange,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,2432,
-2024-08-28T00:00:00Z,Exchange,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,3456,
-2024-08-27T00:00:00Z,Exchange,00000000-0000-0000-0000-000000000000,,56765,3
-2024-08-27T00:00:00Z,Exchange,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,1800
-2024-08-27T00:00:00Z,Exchange,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,5050
-2024-08-28T00:00:00Z,Exchange,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,21867
+2024-08-28T00:00:00Z,Microsoft Exchange,00000000-0000-0000-0000-000000000000,,5888,2
+2024-08-28T00:00:00Z,Microsoft Exchange,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,2432,
+2024-08-28T00:00:00Z,Microsoft Exchange,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,3456,
+2024-08-27T00:00:00Z,Microsoft Exchange,00000000-0000-0000-0000-000000000000,,28717,3
+2024-08-27T00:00:00Z,Microsoft Exchange,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,1800
+2024-08-27T00:00:00Z,Microsoft Exchange,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,5050
+2024-08-28T00:00:00Z,Microsoft Exchange,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,21867
 ```
