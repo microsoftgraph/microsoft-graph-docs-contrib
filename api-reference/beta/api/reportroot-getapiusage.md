@@ -45,6 +45,10 @@ In the request URL, optionally provide one ore more of the following parameters 
 | period    | String | Optional. Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, and `D60`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. The default value is `D30`. |
 | serviceArea | String | Optional. Specifies the service area (Microsoft Exchange, Microsoft Teams Messaging, Microsoft Teams Calling, or Microsoft Teams Presence) for which the data should be filtered. By default, the API returns the data for all service areas. |
 
+## Optional query parameters
+
+This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
+
 ## Request headers
 
 | Name          | Description               |
