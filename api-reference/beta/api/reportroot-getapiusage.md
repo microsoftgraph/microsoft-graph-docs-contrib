@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 
 Get a report that provides information about active Microsoft Graph API usage. The data returned is provided in a comma separated stream. Each row represents a full day of data. If no traffic was measured on a particular day, no rows of data for that day are included.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
-
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -39,13 +37,13 @@ GET /reports/getApiUsage(period={period_value},serviceArea={service_area},appId=
 
 ## Function parameters
 
-In the request URL, provide the following parameters with a valid value.
+In the request URL, optionally provide one ore more of the following parameters with a valid value.
 
 | Parameter | Type   | Description                                                                                                                                                                                                                                             |
 | :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, and `D60`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. The default value is D30. |
-| serviceArea | string | Specifies the Service Area (Exchange, Teams Messaging, or Teams Calling) for which the data should be filtered. By default, the API returns the data for all service areas. |
-| appId | string | Specifies the app ID for filtering the data returned by the API. By default, the API returns the data for all apps within the tenant. |
+| period    | string | Optional. Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, and `D60`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. The default value is D30. |
+| serviceArea | string | Optional. Specifies the Service Area (Exchange, Teams Messaging, or Teams Calling) for which the data should be filtered. By default, the API returns the data for all service areas. |
+| appId | string | Optional. Specifies the app ID for filtering the data returned by the API. By default, the API returns the data for all apps within the tenant. |
 
 ## Request headers
 
