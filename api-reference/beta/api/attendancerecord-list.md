@@ -38,13 +38,13 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecord
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
-To get attendance records of a webinar session's attendance report with delegated and app permission:
+To get attendance records from the attendance report for a webinar session using delegated and application permissions:
 <!-- {"blockType": "ignored"}-->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
-To get attendance records of a townhall session's attendance report with delegated and app permission:
+To get attendance records from the attendance report for a town hall session using delegated and application permissions:
 <!-- {"blockType": "ignored"}-->
 ``` http
 GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
