@@ -635,14 +635,6 @@ Content-Type: application/json
                 }
             ]
         }
-         {
-            "category": "leaver,mover",
-            "description": "Revoke all refresh tokens for user",
-            "displayName": "Revoke all refresh tokens for user",
-            "id": "509589a4-0466-4471-829e-49c5e502bdee",
-            "version": 1,
-            "parameters": []
-        }
     ]
 }
 ```
