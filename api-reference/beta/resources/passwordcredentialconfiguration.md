@@ -52,6 +52,9 @@ The following JSON representation shows the resource.
   "restrictionType": "String (identifier)",
   "state": "String",
   "restrictForAppsCreatedAfterDateTime": "String (DateTime)",
-  "maxLifetime": "String (duration)"
+  "maxLifetime": "String (duration)",
+  "excludeActors": {
+    "@odata.type": "microsoft.graph.appManagementPolicyActorExemptions"
+  }
 }
 ```

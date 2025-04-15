@@ -56,6 +56,9 @@ The following JSON representation shows the resource type.
   "maxLifetime": "String (duration)",
   "certificateBasedApplicationConfigurationIds": [
     "String (Guid)"
-  ]
+  ],
+  "excludeActors": {
+    "@odata.type": "microsoft.graph.appManagementPolicyActorExemptions"
+  }
 }
 ```
