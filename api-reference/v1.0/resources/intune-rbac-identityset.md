@@ -1,5 +1,5 @@
 ---
-title: "identitySet resource type"
+title: "IdentitySet resource type"
 description: "The Identity Set"
 author: "v-rmanda"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 04/15/2025
 ---
 
-# identitySet resource type
+# IdentitySet resource type
 
 Namespace: microsoft.graph
 
