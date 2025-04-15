@@ -254,6 +254,8 @@ items:
               href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
             - name: Get managed devices Conditional Access sign-in metrics
               href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
+            - name: Get Conditional Access blocked sign-in metrics
+              href: ../../api/serviceactivity-getmetricsforconditionalaccessblockedsignin.md
             - name: Get compliant devices Conditional Access sign-in metrics
               href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
             - name: Get SAML sign-in metrics
@@ -388,6 +390,8 @@ items:
         href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
       - name: Get managed devices Conditional Access sign-in metrics
         href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
+      - name: Get Conditional Access blocked sign-in metrics
+        href: ../../api/serviceactivity-getmetricsforconditionalaccessblockedsignin.md
       - name: Get compliant devices Conditional Access sign-in metrics
         href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
       - name: Get SAML sign-in metrics
