@@ -20,7 +20,8 @@ Use the Microsoft Graph compliance and privacy APIs to build applications that:
 - Create and manage subject rights requests
 - Automate tasks in records management
 
-> **Note:** The compliance APIs are deprecated. Instead, please use equivalent API requests from the security endpoints. For more information, see [Microsoft Graph Security API documentation](https://learn.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta).
+> [!Note] 
+> The compliance APIs are deprecated. Instead, please use equivalent API requests from the security endpoints. For more information, see [Microsoft Graph Security API documentation](https://learn.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta).
 > 
 ## eDiscovery
 
