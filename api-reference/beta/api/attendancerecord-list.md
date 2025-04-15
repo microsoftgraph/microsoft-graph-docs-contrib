@@ -52,9 +52,6 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 >- `webinarId` is the **id** of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
 >- `sessionId` is the **id** of a [virtualEventSession](../resources/virtualeventsession.md) object.
 
-> [!NOTE] 
->  Townhall attendance records don't return external registration information or a registration ID because town hall currently doesn't support registration.
-
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
