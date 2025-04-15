@@ -16,6 +16,8 @@ Namespace: microsoft.graph.networkaccess
 
 Retrieve the properties and relationships of a [networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
