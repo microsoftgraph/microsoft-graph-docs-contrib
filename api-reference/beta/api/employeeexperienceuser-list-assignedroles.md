@@ -8,7 +8,7 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# List engagementRole objects
+# List assigned roles
 
 Namespace: microsoft.graph
 
@@ -37,6 +37,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/employeeExperience/assignedRoles
 GET /users/{userId}/employeeExperience/assignedRoles
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Optional query parameters
 

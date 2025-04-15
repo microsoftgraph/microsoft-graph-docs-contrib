@@ -1,20 +1,20 @@
 ---
-title: "Create engagementRoleMember"
-description: "Create a new engagementRoleMember object."
-author: "richafnu"
+title: "Create employeeExperienceUser"
+description: "Create a new employeeExperienceUser object."
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 03/27/2025
 ms.localizationpriority: medium
-ms.subservice: "viva-engage"
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: apiPageType
 ---
 
-# Assign role to a user
+# Create employeeExperienceUser
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign a Viva Engage role to a user.
+Create a new employeeExperienceUser object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "engagementrole-post-members-permissions"
+  "name": "user-post-employeeexperience-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/engagementrole-post-members-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/user-post-employeeexperience-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /employeeExperience/roles/{engagementRoleId}/members
+POST ** Collection URI for microsoft.graph.employeeExperienceUser not found
 ```
 
 ## Request headers
@@ -46,21 +46,19 @@ POST /employeeExperience/roles/{engagementRoleId}/members
 
 ## Request body
 
-In the request body, supply a JSON representation of the [engagementRoleMember](../resources/engagementrolemember.md) object.
+In the request body, supply a JSON representation of the [employeeExperienceUser](../resources/employeeexperienceuser.md) object.
 
-You can specify the following properties when creating an **engagementRoleMember**.
+You can specify the following properties when creating an **employeeExperienceUser**.
 
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|userId|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [engagementRoleMember](../resources/engagementrolemember.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [employeeExperienceUser](../resources/employeeexperienceuser.md) object in the response body.
 
 ## Examples
 
@@ -69,16 +67,15 @@ If successful, this method returns a `201 Created` response code and an [engagem
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_engagementrolemember_from_"
+  "name": "create_employeeexperienceuser_from_"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/employeeExperience/roles/{engagementRoleId}/members
+POST https://graph.microsoft.com/beta** Collection URI for microsoft.graph.employeeExperienceUser not found
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.engagementRoleMember",
-  "userId": "String"
+  "@odata.type": "#microsoft.graph.employeeExperienceUser"
 }
 ```
 
@@ -90,7 +87,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.engagementRoleMember"
+  "@odata.type": "microsoft.graph.employeeExperienceUser"
 }
 -->
 ``` http
@@ -98,10 +95,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.engagementRoleMember",
-  "id": "a40473a5-0fb4-a250-e029-f6fe33d07733",
-  "userId": "String",
-  "createdDateTime": "String (timestamp)"
+  "@odata.type": "#microsoft.graph.employeeExperienceUser",
+  "id": "6d625ed7-745f-e870-5e57-4566d1f2d687"
 }
 ```
 

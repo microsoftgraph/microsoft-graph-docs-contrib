@@ -8,7 +8,7 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# List engagementRoleMember objects
+# List members of a role
 
 Namespace: microsoft.graph
 

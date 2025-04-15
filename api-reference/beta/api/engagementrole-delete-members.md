@@ -8,7 +8,7 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# Delete engagementRoleMember
+# Revoke role from a user
 
 Namespace: microsoft.graph
 
