@@ -44,13 +44,20 @@ To get attendance records of a webinar session's attendance report with delegate
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
+To get attendance records of a townhall session's attendance report with delegated and app permission:
+<!-- {"blockType": "ignored"}-->
+``` http
+GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
+```
+
 > [!TIP]
->
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 >- `reportId` is the **id** of a [meetingAttendanceReport](../resources/meetingattendancereport.md) object.
 >- `webinarId` is the **id** of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
 >- `sessionId` is the **id** of a [virtualEventSession](../resources/virtualeventsession.md) object.
+>- `townhallId` is the **id** of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+>- Only the webinar or townhall organizer or coorganizer can access this API.
 
 ## Optional query parameters
 
