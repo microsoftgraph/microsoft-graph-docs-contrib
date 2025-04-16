@@ -1,6 +1,6 @@
 ---
 title: "Set up Microsoft Graph change notifications with resource data"
-description: "Learn how to set up Microsoft Graph change notifications with resource data, allowing you to receive the changed resource without making a separate call."
+description: "Learn how to set up Microsoft Graph change notifications with resource data to receive updated resources directly in the notification payload."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
@@ -13,11 +13,10 @@ ms.date: 04/16/2025
 
 # Set up Microsoft Graph change notifications with resource data
 
-Microsoft Graph allows apps to subscribe to and receive notifications of changes to resources they're interested in. Apps can subscribe to **basic change notifications** or **rich notifications**, which include resource data.
 
-Rich notifications include the changed resource data directly in the notification payload, so your app doesn't need to make additional API calls to fetch the updated resource. This approach makes business logic execution faster and more efficient.
+Microsoft Graph enables apps to subscribe to and receive notifications about changes to resources. This article explains how to set up **rich notifications**, which include resource data directly in the notification payload.
 
-This article explains how to set up rich notifications in your application.
+Rich notifications eliminate the need for additional API calls to fetch updated resources, making business logic execution faster and more efficient.
 
 ## Supported resources
 
@@ -31,7 +30,7 @@ Rich notifications include resource data with the following characteristics in t
 - All the property values of that resource instance, encrypted as specified in the subscription, returned in the **encryptedContent** property.
 - Depending on the resource, specific properties are returned in the **resourceData** property. To get specific properties, specify them as part of the **resource** URL in the subscription by using a `$select` parameter.
 
-## Creating a subscription
+## Create a subscription
 
 Rich notifications are set up like [basic change notifications](/graph/api/subscription-post-subscriptions), but you **must** specify the following properties:
 
@@ -41,7 +40,7 @@ Rich notifications are set up like [basic change notifications](/graph/api/subsc
 
 Validate both endpoints as described in [Notification endpoint validation](change-notifications-delivery-webhooks.md#notificationurl-validation). If you use the same URL for both endpoints, you receive and respond to two validation requests.
 
-### Subscription request example
+### Example: Subscription request
 
 This example subscribes to channel messages created or updated in Microsoft Teams.
 
@@ -92,7 +91,7 @@ Certain events can interfere with change notification flow in an existing subscr
 
 To learn how to receive and respond to lifecycle notifications, see [Reduce missing subscriptions and change notifications](change-notifications-lifecycle-events.md).
 
-## Validating the authenticity of notifications
+## Validate the authenticity of notifications
 
 Before running business logic based on resource data in change notifications, verify the authenticity of each change notification. Otherwise, a third party might spoof your app with false change notifications, causing it to run business logic incorrectly and potentially leading to a security incident.
 
