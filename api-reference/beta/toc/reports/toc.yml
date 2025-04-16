@@ -540,6 +540,10 @@ items:
         href: ../../api/reportroot-getoffice365groupsactivitystorage.md
       - name: Get file counts
         href: ../../api/reportroot-getoffice365groupsactivityfilecounts.md
+    - name: Microsoft Graph API usage
+      items:
+      - name: Get API usage
+        href: ../../api/reportroot-getapiusage.md
     - name: OneDrive activity
       items:
       - name: Get user detail
