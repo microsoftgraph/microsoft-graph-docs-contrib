@@ -1,23 +1,21 @@
 ---
-title: "Set up change notifications that include resource data"
-description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Change notifications can include resource properties."
+title: "How to set up Microsoft Graph change notifications with resource data"
+description: "Learn how to set up Microsoft Graph change notifications with resource data, allowing you to receive the changed resource without making a separate call."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
 ms.topic: concept-article
 ms.subservice: "change-notifications"
 ms.localizationpriority: high
-ms.date: 05/30/2024
+ms.date: 04/16/2025
 #customer intent: As a developer, I want to receive notifications of changed data for specific Microsoft Graph resources, so that I can build apps that process the changes according to the business requirements.
 ---
 
-<!-- markdownlint-disable MD051 MD024 -->
-
 # Set up change notifications that include resource data (rich notifications)
 
-Microsoft Graph allows apps to subscribe to and receive notifications of changes to resources they're interested in. While you can subscribe to basic change notifications, resources such as Microsoft Teams chat message and presence resources, for example, support rich notifications.
+Microsoft Graph allows apps to subscribe to and receive notifications of changes to resources they're interested in. Apps can subscribe to **basic change notifications** or **rich notifications**, which include resource data.
 
-**Rich notifications** include the resource data that changed, allowing your app to run business logic without having to make a separate API call to fetch the changed resource. This article guides you through the process of setting up rich notifications in your application.
+Rich notifications provide the changed resource data directly in the notification payload. This eliminates the need for your app to make additional API calls to fetch the updated resource, enabling faster and more efficient business logic execution. This article explains how to set up rich notifications in your application.
 
 ## Supported resources
 
@@ -172,7 +170,7 @@ Use the following steps to validate tokens and apps that generate tokens:
 4. **Critical**: Validate that the app that generated the token represents the Microsoft Graph change notification publisher.
 
     - Check that the `azp` property in the token matches the expected value of `0bf30f3b-4a52-48df-9a82-234910c4a086`.
-    - This check ensures that a different app that isn't Microsoft Graph did not send the change notifications.
+    - This check ensures that a different app that isn't Microsoft Graph didn't send the change notifications.
 
 ### Example JWT token
 
@@ -332,7 +330,7 @@ export function isTokenValid(token, appId, tenantId) {
 }
 ```
 
----
+--- 
 
 ## Decrypting resource data from change notifications
 
