@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Represents a type of shift request to swap a [shift](../resources/shift.md) with another user in the [team](../resources/team.md).
 
+Inherits from [offerShiftRequest](../resources/offershiftrequest.md).
+
 ## Methods
 
 | Method       | Return Type | Description |

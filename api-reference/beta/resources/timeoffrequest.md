@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Represents a type of shift request to take [timeOff](../resources/timeoff.md).
 
+Inherits from [scheduleChangeRequest](../resources/schedulechangerequest.md).
+
 ## Methods
 
 | Method       | Return type | Description |

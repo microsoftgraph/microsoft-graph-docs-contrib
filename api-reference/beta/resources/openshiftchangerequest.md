@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Represents a type of shift request to claim an [openshift](../resources/openshift.md) in a [schedule](../resources/schedule.md).
 
+Inherits from [scheduleChangeRequest](../resources/schedulechangerequest.md).
+
 ## Methods
 
 | Method       | Return Type | Description |

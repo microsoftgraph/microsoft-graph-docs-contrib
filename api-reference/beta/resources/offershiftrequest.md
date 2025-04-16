@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Represents type of shift request to offer a shift to another user in the team.
 
+Inherits from [scheduleChangeRequest](../resources/schedulechangerequest.md).
+
 ## Methods
 
 | Method       | Return Type | Description |
