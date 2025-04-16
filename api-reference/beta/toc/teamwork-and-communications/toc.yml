@@ -1175,12 +1175,12 @@ items:
       href: ../../api/offershiftrequest-list.md
     - name: Approve
       href: ../../api/offershiftrequest-approve.md
-    - name: ApproveForUser
-      href: ../../api/offershiftrequest-approveforuser.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/offershiftrequest-decline.md
-    - name: DeclineForUser
-      href: ../../api/offershiftrequest-declineforuser.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Open shift
     items:
     - name: Open shift
@@ -1211,12 +1211,12 @@ items:
       href: ../../api/openshiftchangerequest-get.md
     - name: Approve
       href: ../../api/openshiftchangerequest-approve.md
-    - name: ApproveForUser
-      href: ../../api/openshiftchangerequest-approveforuser.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/openshiftchangerequest-decline.md
-    - name: DeclineForUser
-      href: ../../api/openshiftchangerequest-declineforuser.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Schedule
     items:
     - name: Schedule
@@ -1285,12 +1285,12 @@ items:
       href: ../../api/swapshiftschangerequest-get.md
     - name: Approve
       href: ../../api/swapshiftschangerequest-approve.md
-    - name: ApproveForUser
-      href: ../../api/swapshiftschangerequest-approveforuser.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/swapshiftschangerequest-decline.md
-    - name: DeclineForUser
-      href: ../../api/swapshiftschangerequest-declineforuser.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Time card
     items:
     - name: Time card
@@ -1359,12 +1359,12 @@ items:
       href: ../../api/timeoffrequest-delete.md
     - name: Approve
       href: ../../api/timeoffrequest-approve.md
-    - name: ApproveForUser
-      href: ../../api/timeoffrequest-approveforuser.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/timeoffrequest-decline.md
-    - name: DeclineForUser
-      href: ../../api/timeoffrequest-declineforuser.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Workforce integration
     items:
     - name: Workforce integration
