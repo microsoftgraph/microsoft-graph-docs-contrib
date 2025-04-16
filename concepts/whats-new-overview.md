@@ -27,6 +27,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## April 2025: New in preview only
 
+### Cross-device experiences
+
+[Delete](/graph/api/windowssetting-delete?view=graph-rest-beta&preserve-view=true) all [windowsSetting](/graph/api/resources/windowssetting?view=graph-rest-beta&preserve-view=true) objects of a user.
+
 ### Device and app management | Cloud licensing
 
 Updated the permissions for the [List usageRights for user](/graph/api/cloudlicensing-groupcloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true) and [Get usageRight](/graph/api/cloudlicensing-usageright-get?view=graph-rest-beta&preserve-view=true) APIs.
