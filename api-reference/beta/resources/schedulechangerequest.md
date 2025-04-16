@@ -16,15 +16,15 @@ Namespace: microsoft.graph
 
 An abstract type that represents a schedule change request.
 
+Base type of [offerShiftRequest](../resources/offershiftrequest.md), [openShiftChangeRequest](../resources/openshiftchangerequest.md), and [timeOffRequest](../resources/timeoffrequest.md).
+
 Inherits from [changeTrackedEntity](changetrackedentity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Approve](../api/schedulechangerequest-approve.md)|None|Approve a **scheduleChangeRequest** with delegated permission.|
-|[Approve for user](../api/schedulechangerequest-approveforuser.md)|None|Approve a **scheduleChangeRequest** for a user with application permission.|
-|[Decline](../api/schedulechangerequest-decline.md)|None|Decline a **scheduleChangeRequest** with delegated permission.|
-|[Decline for user](../api/schedulechangerequest-declineforuser.md)|None|Approve a **scheduleChangeRequest** for a user with application permission.|
+|[Approve for user](../api/schedulechangerequest-approveforuser.md)|None|Approve a [scheduleChangeRequest](../resources/schedulechangerequest.md) object for a user.|
+|[Decline for user](../api/schedulechangerequest-declineforuser.md)|None|Approve a [scheduleChangeRequest](../resources/schedulechangerequest.md) object for a user.|
 
 ## Properties
 |Property|Type|Description|
