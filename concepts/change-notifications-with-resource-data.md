@@ -330,7 +330,7 @@ In this section, you learn the following concepts:
 > [!div class="checklist"]
 > * [Managing encryption keys](#managing-encryption-keys)
 > * [Decrypting resource data](#decrypting-resource-data)
-> * [Example: decrypting a notification with encrypted resource data](#example-decrypting-a-notification-with-encrypted-resource-data)
+> * [Example: decrypting a notification with encrypted resource data](#example-decrypting-resource-data)
 
 ### Managing encryption keys
 
