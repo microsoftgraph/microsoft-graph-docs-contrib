@@ -1,7 +1,7 @@
 ---
 title: "scheduleChangeRequest: declineForUser"
 description: "Decline a scheduleChangeRequest object for a user."
-author: lemikeshifts
+author: "lemikeshifts"
 ms.date: 03/31/2025
 ms.localizationpriority: medium
 ms.subservice: teams
