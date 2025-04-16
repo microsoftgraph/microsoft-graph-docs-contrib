@@ -1504,6 +1504,15 @@
                 "voiceAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration",
                 "qrCodePinAuthenticationMethodConfiguration"
+              ],
+              "childNodes": [
+                {
+                  "name": "QR Code and PIN",
+                  "resources": [
+                    "QR Code",
+                    "QR PIN"
+                  ]
+                }
               ]
             },
             {
