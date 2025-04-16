@@ -37,6 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/employeeExperience/assignedRoles
 GET /users/{userId}/employeeExperience/assignedRoles
 ```
+>**Note:** In the API above, the userId represents the office user id for a user.
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
