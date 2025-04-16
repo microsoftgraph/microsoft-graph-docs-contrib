@@ -108,4 +108,5 @@ Content-Type: application/json
     "image": null
   }
 }
+```
 

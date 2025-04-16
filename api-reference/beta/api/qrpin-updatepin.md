@@ -82,5 +82,25 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/me/auth
+PATCH https://graph.microsoft.com/beta/me/authentication/qrcodepinmethod/pin/updatepin
+Content-Type: application/json
+
+{
+  "currentPin": "09599786",
+  "newPin": "56745755"
+}
+```
+
+### Response
+ 
+The following example shows the response.
+ 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
 
