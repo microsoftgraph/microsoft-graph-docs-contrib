@@ -82,7 +82,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/me/authentication/qrcodepinmethod/pin/updatepin
+PATCH https://graph.microsoft.com/beta/me/authentication/qrCodePinMethod/pin/updatePin
 Content-Type: application/json
 
 {
