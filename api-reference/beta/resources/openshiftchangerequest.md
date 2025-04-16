@@ -22,7 +22,7 @@ Inherits from [scheduleChangeRequest](../resources/schedulechangerequest.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create](../api/openshiftchangerequest-post.md) | [openshiftchangerequest](openshiftchangerequest.md) | Create an instance of an **openshiftchangerequest** object. |
+| [Create](../api/openshiftchangerequest-post.md) | [openshiftchangerequest](openshiftchangerequest.md) | Create an instance of an **openShiftChangeRequest** object. |
 | [List](../api/openshiftchangerequest-list.md) | Collection of [openshiftchangerequest](openshiftchangerequest.md) | List the properties and relationships of **openShiftChangeRequest** objects in a team. |
 | [Get](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Read the properties and relationships of an **openShiftChangeRequest** object. |
 | [Approve](../api/openshiftchangerequest-approve.md)|None|Approve an **openshiftchangerequest**. |

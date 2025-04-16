@@ -40,7 +40,8 @@ Added the `forceInfectedDownload` as a supported prefer header to the [Get conte
 
 ### Teamwork and communications | Shift management
 
-[Confirm](/graph/api/timecard-confirmforuser?view=graph-rest-beta&preserve-view=true) a specific [timeCard](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true) for a user.
+- [Confirm](/graph/api/timecard-confirmforuser?view=graph-rest-beta&preserve-view=true) a specific [timeCard](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true) for a user.
+- [Approve](/graph/api/schedulechangerequest-approveforuser?view=graph-rest-beta&preserve-view=true) or [decline](/graph/api/schedulechangerequest-declineforuser?view=graph-rest-beta&preserve-view=true) an [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [openShiftChangeRequest](/graph/api//resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta&preserve-view=true), or [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true) object for a user using application permissions.
 
 ## March 2025: New and generally available
 
