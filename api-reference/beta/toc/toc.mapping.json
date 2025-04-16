@@ -2202,7 +2202,7 @@
         "pronounsSettings",
         "photoUpdateSettings",
         "namePronunciationSettings",
-        "enhancedPersonalizationSetting"
+        "enhancedPersonalizationSetting",
         "profile",
         "userAnalytics"
       ],
@@ -3000,7 +3000,7 @@
             {
               "name": "Copilot settings",
               "resources": [
-                "copilotAdminLimitedMode",
+                "copilotAdminLimitedMode"
               ],
               "complexTypes": [
                 "copilotAdmin",
