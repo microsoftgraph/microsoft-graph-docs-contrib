@@ -156,7 +156,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Approve an open shift change request for a user
 
-The following example shows how to approve an [openShiftChangeRequest](../resources/openshiftchangerequest.md) for a user. The **userId** that approved the request must be a team owner.
+The following example shows how to approve an [openShiftChangeRequest](../resources/openshiftchangerequest.md) for a user. The **userId** must be a team owner.
 
 #### Request
 
@@ -224,7 +224,7 @@ HTTP/1.1 204 No Content
 
 ### Example 4: Approve a time off request for a user
 
-The following example shows how to approve a [timeOffRequest](../resources/timeoffrequest.md) for a user.
+The following example shows how to approve a [timeOffRequest](../resources/timeoffrequest.md) for a user. The **userId** must be a team owner (manager).
 
 #### Request
 
