@@ -38,7 +38,7 @@ items:
       href: ../../api/employeeexperience-list-roles.md
     - name: List assigned roles for a user
       href: ../../api/employeeexperienceuser-list-assignedroles.md
-    - name: List assigned roles for logged in user
+    - name: List assigned roles for signed in user
       href: ../../api/employeeexperienceuser-list-assignedroles.md  
   - name: Role member
     items:
