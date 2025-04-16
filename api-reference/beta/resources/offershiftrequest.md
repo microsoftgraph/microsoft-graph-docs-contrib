@@ -20,15 +20,13 @@ Represents type of shift request to offer a shift to another user in the team.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Create an instance of an offerShiftRequest object. |
-| [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Read properties and relationships of offerShiftRequest object. |
-| [List](../api/offershiftrequest-list.md) | Collection of [offerShiftRequest](offershiftrequest.md) | Read properties and relationships of all offerShiftRequest objects in a team. |
-|[Approve](../api/offershiftrequest-approve.md)|None|Approve an offerShiftRequest. (Delegated Permission)|
-|[Decline](../api/offershiftrequest-decline.md)|None|Decline an offerShiftRequest. (Delegated Permission)|
-|[ApproveForUser](../api/offershiftrequest-approveForUser.md)|None|Approve an offerShiftRequest for a user. (Application Permission)|
-|[DeclineForUser](../api/offershiftrequest-declineForUser.md)|None|Decline an offerShiftRequest for a user. (Application Permission)|
-
-For more supported methods, see [scheduleChangeRequest](../resources/schedulechangerequest.md)
+| [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Create an instance of an **offerShiftRequest** object. |
+| [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Read properties and relationships of **offerShiftRequest** object. |
+| [List](../api/offershiftrequest-list.md) | Collection of [offerShiftRequest](offershiftrequest.md) | Read properties and relationships of all **offerShiftRequest** objects in a team. |
+| [Approve](../api/offershiftrequest-approve.md)|None|Approve an **offerShiftRequest**. |
+| [Approve for user](../api/schedulechangerequest-approveforuser.md)|None|Approve a [offerShiftRequest](../resources/offershiftrequest.md) object for a user. This action only supports application permissions.|
+| [Decline](../api/offershiftrequest-decline.md)|None|Decline an **offerShiftRequest**. |
+| [Decline for user](../api/schedulechangerequest-declineforuser.md)|None|Decline a [offerShiftRequest](../resources/offershiftrequest.md) object for a user. This action only supports application permissions.|
 
 ## Properties
 

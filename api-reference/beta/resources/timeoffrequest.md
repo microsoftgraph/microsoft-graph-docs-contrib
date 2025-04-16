@@ -23,12 +23,10 @@ Represents a type of shift request to take [timeOff](../resources/timeoff.md).
 | [List](../api/timeoffrequest-list.md) | [timeOffRequest](timeoffrequest.md) collection | Get the list of **timeOffRequest** objects in this schedule.|
 | [Get](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Read the properties and relationships of a **timeOffRequest** object. |
 | [Delete](../api/timeoffrequest-delete.md) | None | Delete a **timeOffRequest** object. |
-| [Approve](../api/timeoffrequest-approve.md)|None|Approve a time off request.|
-| [Decline](../api/timeoffrequest-decline.md)|None|Decline a time off request.|
-|[ApproveForUser](../api/timeoffrequest-approveforuser.md)|None|Approve a **timeOffRequest** for a user. (Application Permission)|
-|[DeclineForUser](../api/timeoffrequest-declineforuser.md)|None|Decline a **timeOffRequest** for a user. (Application Permission)|
-
-For more supported methods, see [scheduleChangeRequest](../resources/schedulechangerequest.md)
+| [Approve](../api/timeoffrequest-approve.md)|None|Approve an **timeOffRequest**. |
+| [Approve for user](../api/schedulechangerequest-approveforuser.md)|None|Approve a [timeOffRequest](../resources/timeoffrequest.md) object for a user. This action only supports application permissions.|
+| [Decline](../api/timeoffrequest-decline.md)|None|Decline an **timeOffRequest**. |
+| [Decline for user](../api/schedulechangerequest-declineforuser.md)|None|Decline a [timeOffRequest](../resources/timeoffrequest.md) object for a user. This action only supports application permissions.|
 
 ## Properties
 
