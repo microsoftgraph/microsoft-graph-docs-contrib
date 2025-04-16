@@ -13,7 +13,6 @@ ms.date: 04/16/2025
 
 # Set up Microsoft Graph change notifications with resource data
 
-
 Microsoft Graph enables apps to subscribe to and receive notifications about changes to resources. This article explains how to set up **rich notifications**, which include resource data directly in the notification payload.
 
 Rich notifications eliminate the need for additional API calls to fetch updated resources, making business logic execution faster and more efficient.
