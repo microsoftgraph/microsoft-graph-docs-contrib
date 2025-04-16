@@ -2,7 +2,7 @@
 title: "Get qrCodePinAuthenticationMethod"
 description: "Read the properties and relationships of a qrCodePinAuthenticationMethod object."
 author: "AanjuSingh"
-ms.date: 02/24/2025
+ms.date: 04/16/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -19,26 +19,34 @@ Retrieve a user's [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenti
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "qrcodepinauthenticationmethod-get-permissions"
-}
--->
+### Permissions acting on self
+
+<!-- { "blockType": "ignored"  } -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-get-permissions.md)]
+
+### Permissions acting on other users
+
+<!-- { "blockType": "ignored"  } -->
+[!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Retrieve your own QR Code + PIN authentication method.
+<!-- { "blockType": "ignored" } -->
 ``` http
-GET /me/authentication/qrcodepinmethod
-GET /users/{id}/authentication/qrcodepinmethod
+GET /me/authentication/qrCodePinMethod
 ```
+
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Retrieve another user's QR Code + PIN authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
+GET /users/{id}/authentication/qrCodePinMethod
+```
+
 ## Optional query parameters
 
 This method does not support OData query parameters.
@@ -68,7 +76,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrcodepinmethod
+GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod
 ```
 
 

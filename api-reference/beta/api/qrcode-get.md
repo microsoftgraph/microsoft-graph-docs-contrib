@@ -2,7 +2,7 @@
 title: "Get qrCode"
 description: "Read the properties and relationships of a qrCode object."
 author: "AanjuSingh"
-ms.date: 03/04/2025
+ms.date: 04/16/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -20,28 +20,36 @@ Read the properties and relationships of a [qrCode](../resources/qrcode.md) obje
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "qrcode-get-permissions"
-}
--->
+### Permissions acting on self
+
+<!-- { "blockType": "ignored"  } -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcode-get-permissions.md)]
+
+### Permissions acting on others
+
+<!-- { "blockType": "ignored"  } -->
+[!INCLUDE [permissions-table](../includes/permissions/qrcode-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Retrieve your own QR Code.
+<!-- { "blockType": "ignored" } -->
 ``` http
-GET /me/authentication/qrcodepinmethod/standardQRCode
-GET /me/authentication/qrcodepinmethod/temporaryQRCode
-GET /users/{id}/authentication/qrcodepinmethod/standardQRCode
-GET /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
+GET /me/authentication/qrCodePinMethod/standardQRCode
+GET /me/authentication/qrCodePinMethod/temporaryQRCode
 ```
+
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Retrieve another user's QR Code.
+<!-- { "blockType": "ignored" } -->
+``` http
+GET /users/{id}/authentication/qrCodePinMethod/standardQRCode
+GET /users/{id}/authentication/qrCodePinMethod/temporaryQRCode
+```
+
 ## Optional query parameters
 
 This method does not support OData query parameters.
@@ -71,7 +79,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrcodepinmethod/standardQRCode
+GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod/standardQRCode
 ```
 
 
@@ -100,5 +108,4 @@ Content-Type: application/json
     "image": null
   }
 }
-```
 

@@ -2,7 +2,7 @@
 title: "Delete qrCode"
 description: "Delete a qrCode object."
 author: "AanjuSingh"
-ms.date: 02/25/2025
+ms.date: 04/16/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -19,23 +19,41 @@ Delete a standard or temporary [qrCode](../resources/qrcode.md) object.
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions acting on self
+
+<!-- { "blockType": "ignored"  } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-delete-qrcodepinmethod-permissions.md)]
+
+### Permissions acting on other users
+
+<!-- { "blockType": "ignored"  } -->
+[!INCLUDE [permissions-table](../includes/permissions/authentication-delete-qrcodepinmethod-2-permissions.md)]
+
+### Permissions acting on others
+
+<!-- { "blockType": "ignored"  } -->
+[!INCLUDE [permissions-table](../includes/permissions/qrcode-delete-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Delete your own QR Code.
+<!-- { "blockType": "ignored" } -->
 ``` http
-DELETE /me/authentication/qrcodepinmethod/standardQRCode
-DELETE /me/authentication/qrcodepinmethod/temporaryQRCode
-DELETE /users/{id}/authentication/qrcodepinmethod/standardQRCode
-DELETE /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
+DELETE /me/authentication/qrCodePinMethod/standardQRCode
+DELETE /me/authentication/qrCodePinMethod/temporaryQRCode
 ```
+
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Delete another user's QR Code.
+<!-- { "blockType": "ignored" } -->
+``` http
+DELETE /users/{id}/authentication/qrCodePinMethod/standardQRCode
+DELETE /users/{id}/authentication/qrCodePinMethod/temporaryQRCode
+```
+
 ## Request headers
 
 |Name|Description|
@@ -61,9 +79,8 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrcodepinmethod/standardQRCode
+DELETE https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod/standardQRCode
 ```
-
 
 ### Response
 

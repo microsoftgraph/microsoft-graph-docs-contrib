@@ -2,7 +2,7 @@
 title: "Create or Update qrCode"
 description: "Update the properties of a qrCode object."
 author: "AanjuSingh"
-ms.date: 03/03/2025
+ms.date: 04/16/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -17,30 +17,37 @@ Namespace: microsoft.graph
 Create a standard or temporary QR code, if there is no active QR code, or update a standard QR code. Only the **expireDateTime** property can be updated for a standard QR code.
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "qrcode-update-permissions"
-}
--->
+### Permissions acting on self
+
+<!-- { "blockType": "ignored"  } -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcode-update-permissions.md)]
+
+### Permissions acting on other users
+
+<!-- { "blockType": "ignored"  } -->
+[!INCLUDE [permissions-table](../includes/permissions/qrcode-update-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Update your own QR Code.
+<!-- { "blockType": "ignored" } -->
 ``` http
-PATCH /me/authentication/qrcodepinmethod/standardQRCode
-PATCH /me/authentication/qrcodepinmethod/temporaryQRCode
-PATCH /users/{id}/authentication/qrcodepinmethod/standardQRCode
-PATCH /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
+PATCH /me/authentication/qrCodePinMethod/standardQRCode
+PATCH /me/authentication/qrCodePinMethod/temporaryQRCode
 ```
+
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Update another user's QR Code.
+<!-- { "blockType": "ignored" } -->
+``` http
+PATCH /users/{id}/authentication/qrCodePinMethod/standardQRCode
+PATCH /users/{id}/authentication/qrCodePinMethod/temporaryQRCode
+```
+
 ## Request headers
 
 |Name|Description|
@@ -73,7 +80,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrcodepinmethod/standardQRCode
+PATCH https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod/standardQRCode
 Content-Type: application/json
 
 {
@@ -82,7 +89,6 @@ Content-Type: application/json
   "startDateTime": "2025-01-01T12:00:00Z",
 }
 ```
-
 
 ### Response
 
@@ -114,6 +120,7 @@ Content-Type: application/json
   }
 }
 ```
+
 ## Examples to update a standard QR code
 
 ### Request
@@ -126,7 +133,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/me/authentication/qrcodepinmethod/standardQRCode
+PATCH https://graph.microsoft.com/beta/me/authentication/qrCodePinMethod/standardQRCode
 Content-Type: application/json
 
 {
@@ -134,7 +141,6 @@ Content-Type: application/json
   "expireDateTime": "2025-12-01T12:00:00Z",
 }
 ```
-
 
 ### Response
 
