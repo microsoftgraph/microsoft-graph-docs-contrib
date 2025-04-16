@@ -8,6 +8,4 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|EngagementRole.Read|EngagementRole.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|EngagementRole.Read|EngagementRole.ReadWrite.All|
-
-
+|Application|Not supported.|Not supported.|
