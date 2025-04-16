@@ -2056,6 +2056,10 @@ items:
         href: ../../api/authenticationeventlistener-delete.md
     - name: On attribute collection listener
       href: ../../resources/onattributecollectionlistener.md
+    - name: On attribute collection start listener
+      href: ../../resources/onattributecollectionstartlistener.md
+    - name: On attribute collection submit listener
+      href: ../../resources/onattributecollectionsubmitlistener.md
     - name: On authentication method load start listener
       href: ../../resources/onauthenticationmethodloadstartlistener.md
     - name: On email OTP send listener
@@ -2130,6 +2134,8 @@ items:
         href: ../../api/hardwareoathauthenticationmethod-activate.md
       - name: Deactivate
         href: ../../api/hardwareoathauthenticationmethod-deactivate.md
+      - name: Assign
+        href: ../../api/hardwareoathtokenauthenticationmethoddevice-put-assignto.md
       - name: Assign and activate
         href: ../../api/hardwareoathauthenticationmethod-assignandactivate.md
       - name: Assign and activate by serial number
@@ -2326,8 +2332,6 @@ items:
         href: ../../api/hardwareoathtokenauthenticationmethoddevice-update.md
       - name: Delete
         href: ../../api/authenticationmethoddevice-delete-hardwareoathdevices.md
-      - name: Assign user
-        href: ../../api/hardwareoathtokenauthenticationmethoddevice-put-assignto.md
     - name: Microsoft Authenticator
       items:
       - name: Microsoft Authenticator
@@ -2525,6 +2529,12 @@ items:
         href: ../../api/conditionalaccesspolicy-update.md
       - name: Delete
         href: ../../api/conditionalaccesspolicy-delete.md
+    - name: What If evaluation
+      items:
+      - name: What If evaluation
+        href: ../../resources/whatifanalysisresult.md
+      - name: Evaluate
+        href: ../../api/conditionalaccessroot-evaluate.md
     - name: Named location
       items:
       - name: Named location
@@ -2870,7 +2880,7 @@ items:
         href: ../../api/identityprovider-list-availableprovidertypes.md
     - name: OpenID Connect identity provider (deprecated)
       href: ../../resources/openidconnectprovider.md
-  - name: Microsoft Entra lifecycle announcements
+  - name: Microsoft Entra lifecycle announcements (deprecated)
     items:
     - name: Product changes
       items:
@@ -3270,6 +3280,16 @@ items:
         href: ../../api/authenticationconditionsapplications-post-includeapplications.md
       - name: Remove
         href: ../../api/authenticationconditionapplication-delete.md
+    - name: On attribute collection handler
+      href: ../../resources/onattributecollectionhandler.md
+    - name: On attribute collection start handler
+      href: ../../resources/onattributecollectionstarthandler.md
+    - name: On attribute collection start custom extension handler
+      href: ../../resources/onattributecollectionstartcustomextensionhandler.md
+    - name: On attribute collection submit handler
+      href: ../../resources/onattributecollectionsubmithandler.md
+    - name: On attribute collection submit custom extension handler
+      href: ../../resources/onattributecollectionsubmitcustomextensionhandler.md
   - name: User flows in workforce tenants and Azure AD B2C
     items:
     - name: B2C identity user flow
@@ -4111,8 +4131,14 @@ items:
         href: ../../resources/networkaccess-networkaccesstraffic.md
       - name: List
         href: ../../api/networkaccess-logs-list-traffic.md
+      - name: Get
+        href: ../../api/networkaccess-networkaccesstraffic-get.md
     - name: Remote network health event
-      href: ../../resources/networkaccess-remotenetworkhealthevent.md
+      items:
+      - name: Remote network health event
+        href: ../../resources/networkaccess-remotenetworkhealthevent.md
+      - name: List
+        href: ../../api/networkaccess-logs-list-remotenetworks.md
   - name: Traffic reports
     items:
     - name: Traffic reports

@@ -28,6 +28,7 @@ In this tutorial, you learn how to configure Microsoft Entra Private Access prog
 
 To complete the steps in this tutorial:
 
+- You need a Microsoft Entra tenant with the Microsoft Entra Suite license.
 - Install and configure the Private Network Access connector. For more information, see [Add an on-premises application for remote access through application proxy in Microsoft Entra ID](/entra/identity/app-proxy/application-proxy-add-on-premises-application).
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has supported administrator roles. The following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) are the least pivileged for the operations in this tutorial:
   - Application Administrator for creating the app
