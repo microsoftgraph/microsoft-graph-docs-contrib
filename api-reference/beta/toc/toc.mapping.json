@@ -151,7 +151,6 @@
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
-        "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
         "restoreArtifactsBulkRequestBase",
         "restorePoint",
@@ -186,6 +185,7 @@
         {
           "name": "Protection units bulk job",
           "resources": [
+            "protectionUnitsBulkJobBase",
             "driveProtectionUnitsBulkAdditionJob",
             "mailboxProtectionUnitsBulkAdditionJob",
             "siteProtectionUnitsBulkAdditionJob"
@@ -1454,6 +1454,8 @@
               "resources": [
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
+                "onAttributeCollectionStartListener",
+                "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
@@ -1523,6 +1525,7 @@
               "name": "Conditional access",
               "resources": [
                 "conditionalAccessPolicy",
+                "whatIfAnalysisResult",
                 "namedLocation",
                 "authenticationContextClassReference",
                 "conditionalAccessTemplate",                
@@ -1681,7 +1684,7 @@
               ]
             },
             {
-              "name": "Microsoft Entra lifecycle announcements",
+              "name": "Microsoft Entra lifecycle announcements (deprecated)",
               "resources": [
                 "changeItemBase",
                 "announcement",
@@ -1693,7 +1696,12 @@
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
-                "authenticationConditionApplication"
+                "authenticationConditionApplication",
+                "onAttributeCollectionHandler",
+                "onAttributeCollectionStartHandler",
+                "onAttributeCollectionStartCustomExtensionHandler",
+                "onAttributeCollectionSubmitHandler",
+                "onAttributeCollectionSubmitCustomExtensionHandler"
               ]
             },
             {
@@ -2991,7 +2999,8 @@
             {
               "name": "Copilot settings",
               "resources": [
-                "copilotAdminLimitedMode"
+                "copilotAdminLimitedMode",
+                "enhancedPersonalizationSetting"
               ],
               "complexTypes": [
                 "copilotAdmin",

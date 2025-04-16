@@ -74,6 +74,7 @@ If successful, this method returns a `200 OK` response code and a [delegationSet
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_delegationsettings"
@@ -82,6 +83,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/communications/callSettings/delegates/62de48e1-a72c-40db-9193-a3bd8cf167c9
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-delegationsettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

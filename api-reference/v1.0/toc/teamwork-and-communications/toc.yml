@@ -132,6 +132,10 @@ items:
         href: ../../resources/callrecords-session.md
       - name: List sessions
         href: ../../api/callrecords-callrecord-list-sessions.md
+    - name: Complex types
+      items:
+      - name: Network info
+        href: ../../resources/callrecords-networkinfo.md
   - name: Calls
     items:
     - name: Call

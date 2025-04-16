@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/groups/e77cbb23-0ff2-4e18-819c-690f58269752')
+await client.api('/groups/d9771b4c-06c5-491a-92cb-3aa4e225a725')
 	.delete();
 
 ```
