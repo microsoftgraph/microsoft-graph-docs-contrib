@@ -2264,6 +2264,8 @@ items:
         href: ../../resources/qrpin.md
       - name: Reset PIN
         href: ../../api/qrpin-update.md
+      - name: Update PIN
+        href: ../../api/qrpin-updatepin.md
   - name: Authentication methods policy
     items:
     - name: Overview
