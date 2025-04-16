@@ -48,6 +48,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /users/{userId}/employeeExperience/assignedRoles
 ```
+>**Note:** In the API above, the userId represents the office user id for a user.
 
 ## Optional query parameters
 
