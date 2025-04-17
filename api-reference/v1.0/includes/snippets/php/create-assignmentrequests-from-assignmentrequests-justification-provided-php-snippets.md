@@ -14,11 +14,11 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentRequest();
 $requestBody->setRequestType(new AccessPackageRequestType('userAdd'));
+$requestBody->setJustification('Need access to New Hire access package');
 $additionalData = [
 	'accessPackageAssignment' => [
 		'accessPackageId' => 'a914b616-e04e-476b-aa37-91038f0b165b',
 	],
-	'justification' => 'Need access to New Hire access package',
 ];
 $requestBody->setAdditionalData($additionalData);
 

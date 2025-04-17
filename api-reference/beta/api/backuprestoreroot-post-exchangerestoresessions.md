@@ -83,11 +83,11 @@ Content-Type: application/json
 {
   "mailboxRestoreArtifacts": [
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "destinationType": "inPlace"
     },
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
       "destinationType": "inPlace"
     }
   ]
@@ -199,7 +199,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.exchangeRestoreSession",
   "granularMailboxRestoreArtifacts": [
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "destinationType": "inPlace",
       "searchResponseId" : "M2UyZDAwMDAwMDMxMzkzYTMyNj"
     }
@@ -292,7 +292,7 @@ Content-Type: application/json
   "granularMailboxRestoreArtifact": [
     {
       "id": "959ba739-70b5-43c4-8c90-b2c22014f18a",
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "restoredFolderId": null,
       "status": "added",
       "startDateTime": null,

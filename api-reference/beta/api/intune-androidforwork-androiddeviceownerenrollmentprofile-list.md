@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1302
+Content-Length: 1361
 
 {
   "value": [
@@ -96,7 +96,8 @@ Content-Length: 1302
       "wifiPassword": "Wifi Password value",
       "wifiSecurityType": "wpa",
       "wifiHidden": true,
-      "isTeamsDeviceProfile": true
+      "isTeamsDeviceProfile": true,
+      "deviceNameTemplate": "Device Name Template value"
     }
   ]
 }

@@ -47,6 +47,8 @@ Disable SMS sign-in for your own mobile phone authentication method.
 POST /me/authentication/phoneMethods/{mobilePhoneMethodId}/disableSmsSignIn
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Disable SMS sign-in for your own or another user's mobile phone authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http

@@ -43,6 +43,8 @@ Activate a hardware OATH authentication method assigned to you.
 POST /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/activate
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Activate a hardware OATH authentication method assigned to another user.
 <!-- {
   "blockType": "ignored"

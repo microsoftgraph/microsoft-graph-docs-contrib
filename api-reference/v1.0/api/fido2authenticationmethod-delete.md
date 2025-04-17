@@ -40,6 +40,8 @@ Remove a FIDO2 authentication method from your own account. For a signed-in user
 DELETE /me/authentication/fido2Methods/{id}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Remove a FIDO2 authentication method from another user's account.
 <!-- { "blockType": "ignored" } -->
 ```http

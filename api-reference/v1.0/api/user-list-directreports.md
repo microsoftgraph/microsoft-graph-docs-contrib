@@ -34,6 +34,8 @@ GET /me/directReports
 GET /users/{id | userPrincipalName}/directReports
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 To retrieve the user and their direct reports, use the `$expand` query parameter:
 
 >**Note**: `$expand` returns a maximum of 20 objects. For details, see [query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635).
@@ -43,6 +45,8 @@ To retrieve the user and their direct reports, use the `$expand` query parameter
 GET /me?$expand=directReports
 GET /users/{id | userPrincipalName}?$expand=directReports
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Optional query parameters
 
