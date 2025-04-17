@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "contentProcessingErrorType",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "contentProcessingErrorType"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "executionMode",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "executionMode"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "labelActionSource",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "labelActionSource"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "policyPivotProperty",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "policyPivotProperty"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "protectionScopeState",
           "ChangeType": "Addition",
@@ -43,7 +43,7 @@
           "Target": "protectionScopeState"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "usageRights",
           "ChangeType": "Addition",
@@ -51,7 +51,7 @@
           "Target": "usageRights"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "userActivityType",
           "ChangeType": "Addition",
@@ -59,7 +59,7 @@
           "Target": "userActivityType"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "userActivityTypes",
           "ChangeType": "Addition",
@@ -67,7 +67,7 @@
           "Target": "userActivityTypes"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "userScopeType",
           "ChangeType": "Addition",
@@ -75,7 +75,7 @@
           "Target": "userScopeType"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "activityMetadata",
           "ChangeType": "Addition",
@@ -83,7 +83,7 @@
           "Target": "activityMetadata"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionPlugin",
           "ChangeType": "Addition",
@@ -91,15 +91,7 @@
           "Target": "aiInteractionPlugin"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
-          "ApiChange": "Resource",
-          "ChangedApiName": "auditActivityUserInfo",
-          "ChangeType": "Addition",
-          "Description": "Added the [auditActivityUserInfo](https://learn.microsoft.com/en-us/graph/api/resources/auditActivityUserInfo?view=graph-rest-beta) resource.",
-          "Target": "auditActivityUserInfo"
-        },
-        {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "binaryContent",
           "ChangeType": "Addition",
@@ -107,7 +99,7 @@
           "Target": "binaryContent"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "computeRightsAndInheritanceResult",
           "ChangeType": "Addition",
@@ -115,7 +107,7 @@
           "Target": "computeRightsAndInheritanceResult"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "contentBase",
           "ChangeType": "Addition",
@@ -123,7 +115,7 @@
           "Target": "contentBase"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "groupScope",
           "ChangeType": "Addition",
@@ -131,7 +123,7 @@
           "Target": "groupScope"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "integratedApplicationMetadata",
           "ChangeType": "Addition",
@@ -139,7 +131,7 @@
           "Target": "integratedApplicationMetadata"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "policyBinding",
           "ChangeType": "Addition",
@@ -147,7 +139,7 @@
           "Target": "policyBinding"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "policyLocation",
           "ChangeType": "Addition",
@@ -155,7 +147,7 @@
           "Target": "policyLocation"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "policyLocationDomain",
           "ChangeType": "Addition",
@@ -163,7 +155,7 @@
           "Target": "policyLocationDomain"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "policyLocationUrl",
           "ChangeType": "Addition",
@@ -171,7 +163,7 @@
           "Target": "policyLocationUrl"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "policyScopeBase",
           "ChangeType": "Addition",
@@ -179,7 +171,7 @@
           "Target": "policyScopeBase"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "policyTenantScope",
           "ChangeType": "Addition",
@@ -187,7 +179,7 @@
           "Target": "policyTenantScope"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "policyUserScope",
           "ChangeType": "Addition",
@@ -195,7 +187,7 @@
           "Target": "policyUserScope"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentBatchRequest",
           "ChangeType": "Addition",
@@ -203,7 +195,7 @@
           "Target": "processContentBatchRequest"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentMetadataBase",
           "ChangeType": "Addition",
@@ -211,7 +203,7 @@
           "Target": "processContentMetadataBase"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentRequest",
           "ChangeType": "Addition",
@@ -219,7 +211,7 @@
           "Target": "processContentRequest"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentResponse",
           "ChangeType": "Addition",
@@ -227,7 +219,7 @@
           "Target": "processContentResponse"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentResponses",
           "ChangeType": "Addition",
@@ -235,7 +227,7 @@
           "Target": "processContentResponses"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "processConversationMetadata",
           "ChangeType": "Addition",
@@ -243,7 +235,7 @@
           "Target": "processConversationMetadata"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "processFileMetadata",
           "ChangeType": "Addition",
@@ -251,7 +243,7 @@
           "Target": "processFileMetadata"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "processingError",
           "ChangeType": "Addition",
@@ -259,7 +251,7 @@
           "Target": "processingError"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "protectedApplicationMetadata",
           "ChangeType": "Addition",
@@ -267,7 +259,7 @@
           "Target": "protectedApplicationMetadata"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "protectedContent",
           "ChangeType": "Addition",
@@ -275,7 +267,7 @@
           "Target": "protectedContent"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "scopeBase",
           "ChangeType": "Addition",
@@ -283,7 +275,7 @@
           "Target": "scopeBase"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantScope",
           "ChangeType": "Addition",
@@ -291,7 +283,7 @@
           "Target": "tenantScope"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "textContent",
           "ChangeType": "Addition",
@@ -299,7 +291,7 @@
           "Target": "textContent"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "userScope",
           "ChangeType": "Addition",
@@ -307,7 +299,7 @@
           "Target": "userScope"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "activitiesContainer",
           "ChangeType": "Addition",
@@ -315,15 +307,7 @@
           "Target": "activitiesContainer"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
-          "ApiChange": "Resource",
-          "ChangedApiName": "auditActivity",
-          "ChangeType": "Addition",
-          "Description": "Added the [auditActivity](https://learn.microsoft.com/en-us/graph/api/resources/auditActivity?view=graph-rest-beta) resource.",
-          "Target": "auditActivity"
-        },
-        {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "contentActivity",
           "ChangeType": "Addition",
@@ -331,7 +315,7 @@
           "Target": "contentActivity"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "dataSecurityAndGovernance",
           "ChangeType": "Addition",
@@ -339,7 +323,7 @@
           "Target": "dataSecurityAndGovernance"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "labelContentRight",
           "ChangeType": "Addition",
@@ -347,7 +331,7 @@
           "Target": "labelContentRight"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Property",
           "ChangedApiName": "actionSource",
           "ChangeType": "Addition",
@@ -355,7 +339,7 @@
           "Target": "sensitivityLabel"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Property",
           "ChangedApiName": "autoTooltip",
           "ChangeType": "Addition",
@@ -363,7 +347,7 @@
           "Target": "sensitivityLabel"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Property",
           "ChangedApiName": "color",
           "ChangeType": "Addition",
@@ -371,7 +355,7 @@
           "Target": "sensitivityLabel"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Property",
           "ChangedApiName": "customSettings",
           "ChangeType": "Addition",
@@ -379,7 +363,7 @@
           "Target": "sensitivityLabel"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Property",
           "ChangedApiName": "isEnabled",
           "ChangeType": "Addition",
@@ -387,7 +371,7 @@
           "Target": "sensitivityLabel"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Property",
           "ChangedApiName": "isScopedToUser",
           "ChangeType": "Addition",
@@ -395,7 +379,7 @@
           "Target": "sensitivityLabel"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Property",
           "ChangedApiName": "locale",
           "ChangeType": "Addition",
@@ -403,7 +387,7 @@
           "Target": "sensitivityLabel"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Relationship",
           "ChangedApiName": "rights",
           "ChangeType": "Addition",
@@ -411,7 +395,7 @@
           "Target": "sensitivityLabel"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantDataSecurityAndGovernance",
           "ChangeType": "Addition",
@@ -419,7 +403,7 @@
           "Target": "tenantDataSecurityAndGovernance"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantProtectionScopeContainer",
           "ChangeType": "Addition",
@@ -427,7 +411,7 @@
           "Target": "tenantProtectionScopeContainer"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "usageRightsIncluded",
           "ChangeType": "Addition",
@@ -435,7 +419,7 @@
           "Target": "usageRightsIncluded"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "userDataSecurityAndGovernance",
           "ChangeType": "Addition",
@@ -443,7 +427,7 @@
           "Target": "userDataSecurityAndGovernance"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "userProtectionScopeContainer",
           "ChangeType": "Addition",
@@ -451,7 +435,7 @@
           "Target": "userProtectionScopeContainer"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Method",
           "ChangedApiName": "compute",
           "ChangeType": "Addition",
@@ -459,7 +443,7 @@
           "Target": "tenantProtectionScopeContainer"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Method",
           "ChangedApiName": "compute",
           "ChangeType": "Addition",
@@ -467,7 +451,7 @@
           "Target": "userProtectionScopeContainer"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Method",
           "ChangedApiName": "computeRightsAndInheritance",
           "ChangeType": "Addition",
@@ -475,7 +459,7 @@
           "Target": "sensitivityLabel"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Method",
           "ChangedApiName": "processContent",
           "ChangeType": "Addition",
@@ -483,7 +467,7 @@
           "Target": "userDataSecurityAndGovernance"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Method",
           "ChangedApiName": "processContentAsync",
           "ChangeType": "Addition",
@@ -491,7 +475,7 @@
           "Target": "tenantDataSecurityAndGovernance"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Method",
           "ChangedApiName": "computeInheritance",
           "ChangeType": "Addition",
@@ -499,7 +483,7 @@
           "Target": "sensitivityLabel"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "security",
           "ChangeType": "Addition",
@@ -507,7 +491,7 @@
           "Target": "security"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "auditLogRecordType",
           "ChangeType": "Addition",
@@ -515,7 +499,7 @@
           "Target": "auditLogRecordType"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "auditLogUserType",
           "ChangeType": "Addition",
@@ -523,7 +507,7 @@
           "Target": "auditLogUserType"
         },
         {
-          "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
           "ApiChange": "Resource",
           "ChangedApiName": "auditData",
           "ChangeType": "Addition",
@@ -531,17 +515,17 @@
           "Target": "auditData"
         }
       ],
-      "Id": "1f091b06-66ee-46a2-b8a4-32ac298e8f15",
+      "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-04-03T23:50:41.8412543Z",
+      "CreatedDateTime": "2025-04-17T03:37:31.6958427Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "907cb478-5a35-42a1-9eef-f221c4c732b7",
+          "Id": "286a298f-891f-4e97-b79b-90101868d1a9",
           "ApiChange": "Relationship",
           "ChangedApiName": "dataSecurityAndGovernance",
           "ChangeType": "Addition",
@@ -549,10 +533,10 @@
           "Target": "user"
         }
       ],
-      "Id": "907cb478-5a35-42a1-9eef-f221c4c732b7",
+      "Id": "286a298f-891f-4e97-b79b-90101868d1a9",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-04-03T23:50:41.84155Z",
+      "CreatedDateTime": "2025-04-17T03:37:31.6960552Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }

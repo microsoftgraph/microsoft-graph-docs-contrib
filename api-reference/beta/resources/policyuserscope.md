@@ -44,8 +44,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.policyUserScope",
-  "activities": "String",
-  "executionMode": "String",
+  "activities": "microsoft.graph.userActivityTypes",
+  "executionMode": "microsoft.graph.executionMode",
   "locations": [
     {
       "@odata.type": "microsoft.graph.policyLocation"

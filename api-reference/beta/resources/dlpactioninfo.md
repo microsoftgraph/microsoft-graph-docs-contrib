@@ -39,6 +39,6 @@ The following JSON representation shows the complex type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.dlpActionInfo",
-  "action": "String"
+  "action": "microsoft.graph.dlpAction"
 }
 ```

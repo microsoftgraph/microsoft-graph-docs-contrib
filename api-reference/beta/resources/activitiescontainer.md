@@ -27,7 +27,6 @@ A container entity holding collections of different types of activity log relate
 
 | Relationship    | Type                                                                                   | Description                                               |
 | :-------------- | :------------------------------------------------------------------------------------- | :-------------------------------------------------------- |
-| auditActivities | [auditActivity](../resources/auditactivity.md) collection | Collection of standard audit activity logs for the user.   |
 | contentActivities | [contentActivity](../resources/contentactivity.md) collection | Collection of activity logs related to content processing. |
 
 ## JSON representation
