@@ -14,14 +14,11 @@ ms.date: 03/27/2025
 
  Viva Engage is a social fabric for the Microsoft Viva suite of apps that connects people across the organization to share and learn. Viva Engage supports role-based access by enabling the assignment of predefined administrative roles (such as Network Admin and Verified Admin) and corporate communication roles within the platform.
 
-These assignable roles are predefined and managed by Viva Engage. Custom roles cannot be created or deleted. For a complete list of supported roles and their associated assignment, refer to the [Manage administrator roles in Viva Engage](https://learn.microsoft.com/en-us/viva/engage/eac-key-admin-roles-permissions).
+These assignable roles are predefined and managed by Viva Engage. Custom roles can't be created or deleted. For a complete list of supported roles and their associated assignment, refer to the [Manage administrator roles in Viva Engage](https://learn.microsoft.com/en-us/viva/engage/eac-key-admin-roles-permissions).
 
-While Azure Active Directory (AAD) roles are managed through the Microsoft Entra admin center, Viva Engage-specific roles can be assigned and managed using Viva Engage platform and Microsoft Graph APIs. For details on managing AAD roles, see the [Microsoft 365 admin center guide](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+While Microsoft Entra roles are managed through the Microsoft Entra admin center, Viva Engage-specific roles can be assigned and managed using Viva Engage platform and Microsoft Graph APIs. For details on managing Microsoft Entra roles, see the [Microsoft 365 admin center guide](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
  The following Microsoft Graph API enables apps to manage both admin and non-admin roles within Viva Engage.
-
-> [!NOTE]
-> The set of assignable roles is fixed and controlled by Viva Engage. Roles cannot be created, modified, or removed via API
 
 ## Authorization
 
@@ -29,7 +26,7 @@ To call the Viva Engage API in Microsoft Graph, your app needs to acquire an acc
 
 ## Common use cases
 
-The following table lists common use cases for the role managemnt APIs in Viva Engage.
+The following table lists common use cases for the role management APIs in Viva Engage.
 
 | Use case | API | Notes |
 |:-----------|:--------|:--------|

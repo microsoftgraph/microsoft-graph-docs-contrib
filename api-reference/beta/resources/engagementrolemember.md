@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The timestamp when the role was assigned to the user.|
 |id|String|The unique identifier of the role member resource. Read-only. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|userId|String|The Entra ID of the user who has the role assigned.|
+|userId|String|The Microsoft Entra ID of the user who has the role assigned.|
 
 
 ## JSON representation
