@@ -73,7 +73,7 @@ POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32
 Content-Type: application/json
 
 {
-  "userId": "2e4b2f0b-e189-4d6c-b273-80b19d6e241a"
+  "userId": "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2"
 }
 ```
 
@@ -85,6 +85,57 @@ The following example shows the response.
   "truncated": true
 } -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "TCK_95c44dff-bc12-4de2-8a9a-9772e4421eb4",
+  "createdDateTime": "2025-01-08T15:44:09.545Z",
+  "lastModifiedDateTime": "2025-01-08T19:45:25.048Z",
+  "userId": "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2",
+  "state": "clockedOut",
+  "confirmedBy": "user",
+  "notes": null,
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "id": "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2",
+      "displayName": "Alice Bradford",
+    }
+  },
+  "clockInEvent": {
+    "dateTime": "2025-01-08T15:44:09.545Z",
+    "isAtApprovedLocation": null,
+    "notes": null
+  },
+  "clockOutEvent": {
+    "dateTime": "2025-01-07T19:45:25.048Z",
+    "isAtApprovedLocation": null,
+    "notes": null
+  },
+  "breaks": [],
+  "originalEntry": {
+    "clockInEvent": {
+      "dateTime": "2025-01-07T15:44:09.545Z",
+      "isAtApprovedLocation": null,
+      "notes": null
+    },
+    "clockOutEvent": {
+      "dateTime": "2025-01-07T19:45:25.048Z",
+      "isAtApprovedLocation": null,
+      "notes": null
+    },
+    "breaks": []
+  },
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "id": "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2",
+      "displayName": "Alice Bradford",
+    }
+  }
+}
 ```
 

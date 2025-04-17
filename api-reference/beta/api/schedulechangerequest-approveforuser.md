@@ -122,7 +122,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Example 1: Approve an offer shift request for a user
 
-The following example shows how to approve an [offerShiftRequest](../resources/offershiftrequest.md) for a user.
+The following example shows how to approve an [offerShiftRequest](../resources/offershiftrequest.md) for a user. Only the assignee (see `assignedTo` property in [scheduleChangeRequest](../resources/schedulechangerequest.md)) can approve the request.
 
 #### Request
 
@@ -190,7 +190,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Approve a swap shift change request for a user
 
-The following example shows how to approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) for a user.
+The following example shows how to approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) for a user. Only the assignee (see `assignedTo` property in [scheduleChangeRequest](../resources/schedulechangerequest.md)) can approve the request.
 
 #### Request
 

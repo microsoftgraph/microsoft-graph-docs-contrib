@@ -122,7 +122,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Example 1: Decline an offer shift request for a user
 
-The following example shows how to decline an [offerShiftRequest](../resources/offershiftrequest.md) for a user.
+The following example shows how to decline an [offerShiftRequest](../resources/offershiftrequest.md) for a user. The request can be declined by the sender or the assignee (see `assignedTo` property in [scheduleChangeRequest](../resources/schedulechangerequest.md)).
 
 #### Request
 
@@ -156,7 +156,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Decline an open shift change request for a user
 
-The following example shows how to decline an [openShiftChangeRequest](../resources/openshiftchangerequest.md) for a user.
+The following example shows how to decline an [openShiftChangeRequest](../resources/openshiftchangerequest.md) for a user. The request can be declined by the sender or a team owner (manager).
 
 #### Request
 
@@ -190,7 +190,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Decline a swap shift change request for a user
 
-The following example shows how to decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) for a user.
+The following example shows how to decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) for a user. The request can be declined by the sender or the assignee (see `assignedTo` property in [scheduleChangeRequest](../resources/schedulechangerequest.md)).
 
 #### Request
 
