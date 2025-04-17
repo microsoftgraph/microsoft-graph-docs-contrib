@@ -19,20 +19,24 @@ Provides access to data security and governance functionalities specifically sco
 Inherits from [microsoft.graph.dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).
 
 ## Methods
+
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [processContent](../api/userdatasecurityandgovernance-processcontent.md) | [processContentResponse](../resources/processcontentresponse.md) | Process content against data security and governance policies in the context of this user. |
+| [protectionScopes](../api/userdatasecurityandgovernance-protectionscopes.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the protection scopes for this user. |
 
 ## Properties
+
 None specific to this derived type.
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |activities|[microsoft.graph.activitiesContainer](../resources/activitiescontainer.md)|Container for activity logs (content processing and audit) related to this user. ContainsTarget: true.|
-|protectionScopes|[microsoft.graph.userProtectionScopeContainer](../resources/userprotectionscopecontainer.md)|Container for actions to compute the effective protection scope for this user. ContainsTarget: true.|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -44,6 +48,5 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.userDataSecurityAndGovernance",
   "activities": { "@odata.type": "microsoft.graph.activitiesContainer" },
-  "protectionScopes": { "@odata.type": "microsoft.graph.userProtectionScopeContainer" }
 }
 ```

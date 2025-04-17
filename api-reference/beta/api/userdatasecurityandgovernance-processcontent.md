@@ -79,36 +79,44 @@ Content-Type: application/json
     "contentEntries": [
       {
         "@odata.type": "#microsoft.graph.process.ConversationMetadata",
-        "identifier": "message_12345",
-        "content": {
-           "@odata.type": "#microsoft.graph.textContent",
-           "data": "CONFIDENTIAL: Project Falcon details enclosed. SSN: 123-45-6789"
+        "contentEntries": [
+            {
+                "@odata.Type": "microsoft.graph.processFileMetadata",
+                "identifier": "91e1ca70-6e5b-4120-abf0-472034ba05c3",
+                "content":{
+                    "@odata.Type": "microsoft.graph.binaryContent",
+                    "data": "<some-binary-data>"
+                },
+                "name": "Example.docx",
+                "createdDateTime": "2024-07-23T01:31:40.2020463Z",
+                "updatedDateTime": "2024-09-17T13:45:21.0000000Z",
+                "correlationId": "54689",
+                "sequenceNumber": 1,
+                "length": 17352,
+                "isTruncated": false,
+                "ownerId": "ffe1ca70-6e5b-4120-abf0-472034ba05d4",
+                "customProperties": {
+                    "Department": "Finance",
+                    "ReviewerName": "John Smith"
+                }
+            }
+        ],
+        "activityMetadata": {
+            "activity": "uploadFile",
+            "applicationLocation": "bing.com"
         },
-        "name": "Chat Message",
-        "correlationId": "conversation_abc",
-        "sequenceNumber": 1,
-        "length": 70,
-        "isTruncated": false,
-        "createdDateTime": "2024-07-29T15:00:00Z",
-        "modifiedDateTime": "2024-07-29T15:00:00Z"
-      }
-    ],
-    "activityMetadata": {
-      "activity": "uploadText",
-      "applicationLocation": "https://thirdparty.contoso.com/chat"
-    },
-    "deviceMetadata": {
-      "deviceType": "Desktop",
-      "operatingSystemSpecifications": {
-        "operatingSystemPlatform": "Windows",
-        "operatingSystemVersion": "10.0.19045"
-      }
-    },
-    "integratedAppMetadata": {
-      "name": "Contoso Browser Helper",
-      "version": "1.2.3"
+        "deviceMetadata": {
+            "deviceType": "unmanaged",
+            "operatingSystemSpecifications": {
+                "operatingSystemPlatform": "windows",
+                "operatingSystemVersion": "10.0.2.4"
+            }
+        },
+        "integratedAppMetadata": {
+            "name": "ContosoIsvApplication",
+            "version": "1.2",
+        }
     }
-  }
 }
 ```
 
@@ -127,18 +135,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "microsoft.graph.processContentResponse"
-  "protectionScopeState": "notModified",
-  "policyActions": [
-    {
-      "@odata.type": "#microsoft.browserRestrictionAction",
-      "action": "browserRestriction",
-      "restrictionAction": "block",
-      "message": "Uploading content with SSNs to this site is blocked by organizational policy.",
-      "triggers": ["upload"],
-      "webSiteGroupId": "website-group-guid-2"
-    }
-  ],
-  "processingErrors": []
+  "@odata.type": "#microsoft.graph.processContentResponse"
+    "protectionScopeState": "notModified",
+    "policyActions": [
+        {
+            "@odata.type":."microsoft.graph.restrictAccessAction",
+            "action": "restrictAccess",
+            "restrictionAction": "Block"
+        }
+    ],
+    "processingErrors": [
+        {
+            "code": "OcrNotAvailable",
+            "message": "OCR functionality isn't enabled for this user",
+            "errorType": "permanent",
+            "innerError": {
+                    "code": "Permanent",
+                    "clientRequestId": "6ebdb560-cb16-4176-94fa-e8d04ca054fd"
+            }
+        }
+    ]
 }
 ```
