@@ -11,6 +11,7 @@ use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessConditionSet;
 use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessApplications;
 use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessUsers;
 use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessSessionControls;
+use Microsoft\Graph\Beta\Generated\Models\GlobalSecureAccessFilteringProfileSessionControl;
 use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessPolicyState;
 
 
@@ -27,13 +28,10 @@ $conditions->setUsers($conditionsUsers);
 $requestBody->setConditions($conditions);
 $requestBody->setDisplayName('UserA Access to AI and Bing');
 $sessionControls = new ConditionalAccessSessionControls();
-$additionalData = [
-	'globalSecureAccessFilteringProfile' => [
-		'profileId' => 'dddddddd-9999-0000-1111-eeeeeeeeeeee',
-		'isEnabled' => true,
-	],
-];
-$sessionControls->setAdditionalData($additionalData);
+$sessionControlsGlobalSecureAccessFilteringProfile = new GlobalSecureAccessFilteringProfileSessionControl();
+$sessionControlsGlobalSecureAccessFilteringProfile->setProfileId('dddddddd-9999-0000-1111-eeeeeeeeeeee');
+$sessionControlsGlobalSecureAccessFilteringProfile->setIsEnabled(true);
+$sessionControls->setGlobalSecureAccessFilteringProfile($sessionControlsGlobalSecureAccessFilteringProfile);
 $requestBody->setSessionControls($sessionControls);
 $requestBody->setState(new ConditionalAccessPolicyState('enabled'));
 
