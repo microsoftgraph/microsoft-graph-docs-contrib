@@ -50,13 +50,10 @@ In the request body, supply a JSON representation of the [engagementRoleMember](
 
 You can specify the following properties when creating an **engagementRoleMember**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|userId|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-
-
+|userId|String|The Microsoft Entra ID of the user who has the role assigned.|
+|createdDateTime|DateTimeOffset|The timestamp when the role was assigned to the user.|
 
 ## Response
 
@@ -81,7 +78,6 @@ Content-Type: application/json
   "userId": "String"
 }
 ```
-
 
 ### Response
 
