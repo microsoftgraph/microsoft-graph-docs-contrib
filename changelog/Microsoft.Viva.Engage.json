@@ -170,6 +170,22 @@
         },
         {
           "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "assignedRoles",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignedRoles** relationship to the [employeeExperienceUser](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperienceUser?view=graph-rest-beta) resource.",
+          "Target": "employeeExperienceUser"
+        },
+        {
+          "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
+          "ApiChange": "Resource",
+          "ChangedApiName": "employeeExperienceUser",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [employeeExperienceUser](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperienceUser?view=graph-rest-beta) resource.",
+          "Target": "employeeExperienceUser"
+        },
+        {
+          "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
           "ApiChange": "Resource",
           "ChangedApiName": "engagementRole",
           "ChangeType": "Addition",
