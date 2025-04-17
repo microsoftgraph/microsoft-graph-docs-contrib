@@ -135,7 +135,7 @@ Content-Type: application/json
       "action": "browserRestriction",
       "restrictionAction": "block",
       "message": "Uploading content with SSNs to this site is blocked by organizational policy.",
-      "triggers": ["upload"], // Conceptual trigger
+      "triggers": ["upload"],
       "webSiteGroupId": "website-group-guid-2"
     }
   ],

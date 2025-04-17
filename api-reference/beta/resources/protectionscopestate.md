@@ -1,7 +1,7 @@
 ---
 title: "protectionScopeState enum type"
 toc.title: "protectionScopeState enum type (preview)"
-description: "Indicates whether the computed data protection scope has changed since the last check (NotModified, Modified)."
+description: "Indicates the computed data protection scope changed since the last check (NotModified, Modified)."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates whether the set of applicable data protection policies and actions (the protection scope) has changed for the given context since the last time it was computed or checked. Returned in [processContentResponse](../resources/processcontentresponse.md).
+Indicates the set of applicable data protection policies and actions (the protection scope) changed for the given context since the last time it was computed or checked. Returned in [processContentResponse](../resources/processcontentresponse.md).
 
 ## Members
 
 | Member             | Value | Description                                                                          |
 | :----------------- | :---- | :----------------------------------------------------------------------------------- |
-| notModified        | 0     | The applicable protection scope (policies and actions) has not changed.              |
-| modified           | 1     | The applicable protection scope has changed, requiring the client to update its state. |
-| unknownFutureValue | 2     | Evolvable enumeration sentinel value. Do not use.                                    |
+| notModified        | 0     | The applicable protection scope (policies and actions) hasn't changed.              |
+| modified           | 1     | The applicable protection scope changed, requiring the client to update its state. |
+| unknownFutureValue | 2     | Evolvable enumeration sentinel value. Don't use.                                    |
 
 ## JSON representation
 

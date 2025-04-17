@@ -33,12 +33,12 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.integratedApplicationMetadata",
+  "@odata.type": "microsoft.graph.integratedApplicationMetadata",
   "openType": false
 }-->
 ``` json
 {
-  "@odata.type": "#microsoft.integratedApplicationMetadata",
+  "@odata.type": "#microsoft.graph.integratedApplicationMetadata",
   "name": "String",
   "version": "String"
 }

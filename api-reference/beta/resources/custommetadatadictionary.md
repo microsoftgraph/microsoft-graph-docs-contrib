@@ -15,7 +15,7 @@ Namespace: microsoft.dataClassificationService.contract
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A specialized dictionary type, derived from `Org.OData.Core.V1.Dictionary`, specifically used for storing custom metadata extracted from content. It's an open type but constrained to only accept string values for its dynamic properties.
+A specialized dictionary type specifically used for storing custom metadata extracted from content. It's an open type but constrained to only accept string values for its dynamic properties.
 
 ## Properties
 
@@ -33,7 +33,6 @@ The following JSON representation shows the complex type. Specific properties de
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.customMetadataDictionary",
-  "baseType": "Org.OData.Core.V1.Dictionary",
   "openType": true
 }-->
 ``` json

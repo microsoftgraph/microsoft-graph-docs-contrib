@@ -33,12 +33,12 @@ None.
 The following JSON representation shows the complex type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.deviceMetadata",
+  "@odata.type": "microsoft.graph.deviceMetadata",
   "openType": false
 }-->
 ``` json
 {
-  "@odata.type": "#microsoft.deviceMetadata",
+  "@odata.type": "#microsoft.graph.deviceMetadata",
   "deviceType": "String",
   "operatingSystemSpecifications": {
     "@odata.type": "microsoft.operatingSystemSpecifications"
