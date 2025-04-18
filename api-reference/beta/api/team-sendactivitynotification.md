@@ -683,9 +683,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 8: Notify a user about an event using a custom icon
+### Example 8: Notify a user in a team about an event using a custom icon
 
-If you want to notify a team with a customized icon instead of the default app icon, you can set the optional **iconId** property in the request body.
+If you want to notify a user in a team with a customized icon instead of the default app icon, you can set the optional **iconId** property in the request body.
 
 >**Note:** The `activityType` in the manifest must contain the list of allowed icon IDs in order to use this parameter. The request validation fails if the app manifest is missing the customized list of icons. For more information, see [Public developer preview app manifest](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview).
 
