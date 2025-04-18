@@ -102,7 +102,7 @@ Content-Type: application/json
     "device": null,
     "user": {
       "id": "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2",
-      "displayName": "Alice Bradford",
+      "displayName": "Alice Bradford"
     }
   },
   "clockInEvent": {
@@ -134,9 +134,8 @@ Content-Type: application/json
     "device": null,
     "user": {
       "id": "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2",
-      "displayName": "Alice Bradford",
+      "displayName": "Alice Bradford"
     }
   }
 }
 ```
-
