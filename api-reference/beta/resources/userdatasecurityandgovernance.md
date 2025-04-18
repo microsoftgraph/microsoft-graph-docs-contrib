@@ -23,7 +23,7 @@ Inherits from [microsoft.graph.dataSecurityAndGovernance](../resources/datasecur
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [processContent](../api/userdatasecurityandgovernance-processcontent.md) | [processContentResponse](../resources/processcontentresponse.md) | Process content against data security and governance policies in the context of this user. |
-| [protectionScopes](../api/userdatasecurityandgovernance-protectionscopes.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the protection scopes for this user. |
+| [protectionScopes](../api/userdatasecurityandgovernance-processcontent.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the protection scopes for this user. |
 
 ## Properties
 

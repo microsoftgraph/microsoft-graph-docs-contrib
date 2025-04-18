@@ -67,7 +67,7 @@ If successful, this action returns a `200 OK` response code and a [processConten
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "userdatasecurityandgovernancethis.processcontent"
+  "name": "userdatasecurityandgovernance.processcontent"
 }
 -->
 ``` http
@@ -76,7 +76,6 @@ Content-Type: application/json
 
 {
   "contentToProcess": {
-        "@odata.type": "#microsoft.graph.process.ConversationMetadata",
         "contentEntries": [
             {
                 "@odata.Type": "microsoft.graph.processFileMetadata",
@@ -125,7 +124,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.context": "microsoft.graph.processContentResponse"
+  "@odata.type": "microsoft.graph.processContentResponse"
 }
 -->
 ``` http
@@ -133,7 +132,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "#microsoft.graph.processContentResponse"
     "protectionScopeState": "notModified",
     "policyActions": [
         {
