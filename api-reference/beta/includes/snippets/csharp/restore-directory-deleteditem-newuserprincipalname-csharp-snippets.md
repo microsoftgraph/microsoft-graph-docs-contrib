@@ -11,7 +11,12 @@ using Microsoft.Graph.Beta.DirectoryNamespace.DeletedItems.Item.Restore;
 
 var requestBody = new RestorePostRequestBody
 {
-	NewUserPrincipalName = "johndoe@contoso.com",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"newUserPrincipalName" , "johndoe@contoso.com"
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
