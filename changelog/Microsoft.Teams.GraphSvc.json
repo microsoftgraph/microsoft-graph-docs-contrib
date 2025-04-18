@@ -2633,34 +2633,34 @@
         {
           "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce7",
           "ApiChange": "Property",
-          "ChangedApiName": "sendActivityNotificationToRecipients",
+          "ChangedApiName": "iconId",
           "ChangeType": "Addition",
           "Description": "Added the **iconId** property to the [teamwork: sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta) method.",
-          "Target": "teamwork"
+          "Target": "sendActivityNotificationToRecipients"
         },
         {
           "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce7",
           "ApiChange": "Property",
-          "ChangedApiName": "sendActivityNotification",
+          "ChangedApiName": "iconId",
           "ChangeType": "Addition",
           "Description": "Added the **iconId** property to the [userTeamwork: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta) method.",
-          "Target": "userTeamwork"
+          "Target": "sendActivityNotification"
         },
         {
           "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce7",
           "ApiChange": "Property",
-          "ChangedApiName": "sendActivityNotification",
+          "ChangedApiName": "iconId",
           "ChangeType": "Addition",
           "Description": "Added the **iconId** property to the [chat: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/chat-sendactivitynotification?view=graph-rest-beta) method.",
-          "Target": "chat"
+          "Target": "sendActivityNotification"
         },
         {
           "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce7",
           "ApiChange": "Property",
-          "ChangedApiName": "sendActivityNotification",
+          "ChangedApiName": "iconId",
           "ChangeType": "Addition",
           "Description": "Added the **iconId** property to the [team: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/team-sendactivitynotification?view=graph-rest-beta) method.",
-          "Target": "team"
+          "Target": "sendActivityNotification"
         }
       ],
       "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce7",
