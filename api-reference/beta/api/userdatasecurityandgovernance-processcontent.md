@@ -76,8 +76,6 @@ Content-Type: application/json
 
 {
   "contentToProcess": {
-    "contentEntries": [
-      {
         "@odata.type": "#microsoft.graph.process.ConversationMetadata",
         "contentEntries": [
             {
@@ -127,7 +125,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.processContentResponse"
+  "@odata.context": "microsoft.graph.processContentResponse"
 }
 -->
 ``` http
@@ -135,7 +133,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.processContentResponse"
+  "@odata.context": "#microsoft.graph.processContentResponse"
     "protectionScopeState": "notModified",
     "policyActions": [
         {

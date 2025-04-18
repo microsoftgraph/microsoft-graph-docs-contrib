@@ -40,7 +40,6 @@ None specific to this derived type.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.dataSecurityAndGovernance",
   "@odata.type": "microsoft.graph.userDataSecurityAndGovernance"
 }
 -->
