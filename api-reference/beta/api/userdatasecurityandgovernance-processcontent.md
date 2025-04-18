@@ -135,7 +135,6 @@ Content-Type: application/json
     "protectionScopeState": "notModified",
     "policyActions": [
         {
-            "@odata.type":."microsoft.graph.restrictAccessAction",
             "action": "restrictAccess",
             "restrictionAction": "Block"
         }
