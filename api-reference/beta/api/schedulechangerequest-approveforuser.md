@@ -112,7 +112,7 @@ In the request body, supply a JSON representation of the parameters.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |message|String|Custom message sent on approval. Optional.|
-|userId|String|ID of the user that approved the request. Required.|
+|userId|String|ID of the user who approved the request. Required.|
 
 ## Response
 

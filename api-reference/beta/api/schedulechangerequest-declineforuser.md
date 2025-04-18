@@ -88,7 +88,7 @@ To decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 
 POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/declineForUser
 ```
 
-To decline a [timeoffrequest](../resources/timeoffrequest.md) object for a user.
+To decline a [timeOffRequest](../resources/timeoffrequest.md) object for a user.
 
 <!-- {
   "blockType": "ignored"
@@ -112,7 +112,7 @@ In the request body, supply a JSON representation of the parameters.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |message|String|Custom message sent on decline. Optional.|
-|userId|String|ID of the user that declined the request. Required.|
+|userId|String|ID of the user who declined the request. Required.|
 
 ## Response
 

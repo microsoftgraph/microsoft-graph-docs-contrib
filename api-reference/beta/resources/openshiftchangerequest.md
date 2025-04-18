@@ -26,9 +26,9 @@ Inherits from [scheduleChangeRequest](../resources/schedulechangerequest.md).
 | [List](../api/openshiftchangerequest-list.md) | Collection of [openshiftchangerequest](openshiftchangerequest.md) | List the properties and relationships of **openShiftChangeRequest** objects in a team. |
 | [Get](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Read the properties and relationships of an **openShiftChangeRequest** object. |
 | [Approve](../api/openshiftchangerequest-approve.md)|None|Approve an **openshiftchangerequest**. |
-| [Approve for user](../api/schedulechangerequest-approveforuser.md)|None|Approve a [openShiftChangeRequest](../resources/openshiftchangerequest.md) object for a user. This action only supports application permissions.|
+| [Approve for user](../api/schedulechangerequest-approveforuser.md)|None|Approve an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object for a user. This action only supports application permissions.|
 | [Decline](../api/openshiftchangerequest-decline.md)|None|Decline an **openshiftchangerequest**. |
-| [Decline for user](../api/schedulechangerequest-declineforuser.md)|None|Decline a [openShiftChangeRequest](../resources/openshiftchangerequest.md) object for a user. This action only supports application permissions.|
+| [Decline for user](../api/schedulechangerequest-declineforuser.md)|None|Decline an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object for a user. This action only supports application permissions.|
 
 ## Properties
 
