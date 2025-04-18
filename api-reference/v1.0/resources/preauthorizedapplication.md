@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Lists the client applications that are preauthorized with the specified permissions to access this application's APIs. Users aren't required to consent to any preauthorized application (for the permissions specified). However, any other permissions not listed in preAuthorizedApplications (requested through incremental consent for example) require user consent.
 
-In some rare cases, an identifier listed in the `delegatedPermissionIds` property may actually identify an [app role](approle.md) (from the service principal's `appRoles` property), indicating that the client application identified by the `appId` property has been preauthorized for that app role.
+The app role technically is modelled as an app-only scope.  Pre-authorization of app-only scopes to clients is not currently supported. Validation checks are performed at runtime to ensure that the current PermissionIds are of type DelegatedPermissions. In scenarios where customers want to avoid the Consent experience associated with app roles, they should grant AppRoles to a client app programmatically. Read more about Grant app role assignemnt to service prin Grant an appRoleAssignment to a service principal [approle](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/blob/main/api-reference/v1.0/api/serviceprincipal-post-approleassignments.md).
 
 ## Properties
 
