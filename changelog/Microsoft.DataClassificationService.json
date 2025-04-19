@@ -103,7 +103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "computeRightsAndInheritanceResult",
           "ChangeType": "Addition",
-          "Description": "Added the [computeRightsAndInheritanceResult](https://learn.microsoft.com/en-us/graph/api/resources/computeRightsAndInheritanceResult?view=graph-rest-beta) resource.",
+          "Description": "Added the [computeRightsAndInheritanceResult](https://learn.microsoft.com/en-us/graph/api/resources/computerightsandinheritanceresult?view=graph-rest-beta) resource.",
           "Target": "computeRightsAndInheritanceResult"
         },
         {
