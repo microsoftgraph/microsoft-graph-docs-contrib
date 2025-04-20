@@ -45,7 +45,6 @@ Namespace: microsoft.graph.networkaccess
 |ssh|
 |sap|
 |unknownFutureValue|
-|dns|
 
 ### bandwidthCapacityInMbps values 
 
