@@ -1,7 +1,7 @@
 ---
 title: "Get connection"
 description: "Read the properties and relationships of a connection object."
-author: "moti-ba"
+author: "miritsadon"
 ms.date: 04/20/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id"

@@ -1,7 +1,7 @@
 ---
 title: "List connections"
-description: "Get a list of connection objects and their properties."
-author: "moti-ba"
+description: "Get a list of the connection objects and their properties."
+author: "miritsadon"
 ms.date: 04/20/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
