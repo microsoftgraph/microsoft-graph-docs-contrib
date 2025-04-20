@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/networkAccess/logs/connections/6e3f9793-04a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-```
+
 {
   "value": {
     "@odata.type": "#microsoft.graph.networkaccess.connection",
@@ -126,3 +126,4 @@ Content-Type: application/json
     "popProcessingRegion": "westus2"
   }
 }
+```
