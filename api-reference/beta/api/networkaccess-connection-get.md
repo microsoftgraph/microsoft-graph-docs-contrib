@@ -58,7 +58,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_connection",
@@ -68,15 +67,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ``` http
 GET https://graph.microsoft.com/beta/networkAccess/logs/connections/6e3f9793-04a3-9473-f647-29adc069debb
 ```
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-cli-install](../../includes/sample-cli-install.md)]
-
-```CLI
-No CLI sample available.
-```
-
----
 
 ### Response
 <!-- {
