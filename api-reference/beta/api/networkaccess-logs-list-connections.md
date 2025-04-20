@@ -20,11 +20,12 @@ Get a list of [connection](../resources/networkaccess-connection.md) objects and
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (least privileged listed first)|
-|:---|:---|
-|Delegated (work or school account)|NetworkAccess.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|NetworkAccess.Read.All|
+<!-- {
+  "blockType": "permissions",
+  "name": "networkaccess-logs-list-connections-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/networkaccess-logs-list-connections-permissions.md)]
 
 ## HTTP request
 
@@ -66,11 +67,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!-- {
   "blockType": "request",
-  "name": "list_connections"
+  "name": "list_connection"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/logs/connections?$filter=status eq 'active'&$top=2
+GET https://graph.microsoft.com/beta/networkAccess/logs/connections
 ```
 
 ### Response
@@ -92,6 +93,7 @@ Content-Type: application/json
       "createdDateTime": "2025-04-20T10:00:00Z",
       "tenantId": "contoso.onmicrosoft.com",
       "lastUpdateDateTime": "2025-04-20T10:15:00Z",
+      "endDateTime": "2025-04-20T10:30:00Z",
       "status": "active",
       "trafficType": "internet",
       "transactionCount": 10,
@@ -104,9 +106,29 @@ Content-Type: application/json
       "userId": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
       "sourceIp": "192.168.1.100",
       "sourcePort": 54321,
+      "initiatingProcessName": "msedge.exe",
       "deviceId": "5b7c0300-45c3-487c-a6d3-a3098cb6e51b",
+      "deviceOperatingSystem": "Windows",
+      "deviceOperatingSystemVersion": "10.0.19045",
+      "agentVersion": "1.0.2307.15",
+      "applicationSnapshot": {
+        "@odata.type": "microsoft.graph.networkaccess.applicationSnapshot",
+        "appId": "00000003-0000-0000-c000-000000000000"
+      },
+      "privateAccessDetails": {
+        "@odata.type": "microsoft.graph.networkaccess.privateAccessDetails",
+        "connectorId": "e1a83a2c-5689-4f1c-b8ba-698606c784c9",
+        "connectorName": "connector-1",
+        "connectorIp": "10.0.0.100",
+        "connectionStatus": "active",
+        "accessType": "privateAccess",
+        "processingRegion": "westus2"
+      },
       "deviceCategory": "client",
-      "userPrincipalName": "johndoe@contoso.com"
+      "userPrincipalName": "johndoe@contoso.com",
+      "transportProtocol": "tcp",
+      "networkProtocol": "ipv4",
+      "popProcessingRegion": "westus2"
     },
     {
       "@odata.type": "#microsoft.graph.networkaccess.connection",
@@ -126,9 +148,13 @@ Content-Type: application/json
       "userId": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
       "sourceIp": "192.168.1.100",
       "sourcePort": 54322,
+      "initiatingProcessName": "outlook.exe",
       "deviceId": "5b7c0300-45c3-487c-a6d3-a3098cb6e51b",
       "deviceCategory": "client",
-      "userPrincipalName": "johndoe@contoso.com"
+      "userPrincipalName": "johndoe@contoso.com",
+      "transportProtocol": "tcp",
+      "networkProtocol": "ipv4",
+      "popProcessingRegion": "westus2"
     }
   ]
 }
