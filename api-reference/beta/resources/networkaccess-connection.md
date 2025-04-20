@@ -105,3 +105,4 @@ The following JSON representation shows the resource type.
   "networkProtocol": "String",
   "popProcessingRegion": "String"
 }
+```

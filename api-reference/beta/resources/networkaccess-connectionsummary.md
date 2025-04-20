@@ -38,3 +38,4 @@ The following JSON representation shows the resource type.
   "trafficType": "String",
   "totalCount": "Integer"
 }
+```
