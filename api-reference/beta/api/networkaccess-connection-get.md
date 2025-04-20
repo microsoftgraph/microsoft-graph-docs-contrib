@@ -1,0 +1,134 @@
+---
+title: "Get connection"
+description: "Read the properties and relationships of a connection object."
+author: "moti-ba"
+ms.date: 04/20/2025
+ms.localizationpriority: medium
+ms.subservice: "entra-id"
+doc_type: apiPageType
+---
+
+# Get connection
+
+Namespace: microsoft.graph.networkaccess
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Read the properties and relationships of a connection object.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+|Permission type|Permissions (least privileged listed first)|
+|:---|:---|
+|Delegated (work or school account)|NetworkAccess.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|NetworkAccess.Read.All|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /networkAccess/logs/connections/{connectionId}
+```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.networkaccess.connection](../resources/networkaccess-connection.md) object in the response body.
+
+## Examples
+
+### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_connection",
+  "sampleKeys": ["6e3f9793-04a3-9473-f647-29adc069debb"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/networkAccess/logs/connections/6e3f9793-04a3-9473-f647-29adc069debb
+```
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-cli-install](../../includes/sample-cli-install.md)]
+
+```CLI
+No CLI sample available.
+```
+
+---
+
+### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.networkaccess.connection"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.networkaccess.connection",
+  "id": "6e3f9793-04a3-9473-f647-29adc069debb",
+  "createdDateTime": "2025-04-20T10:00:00Z",
+  "tenantId": "contoso.onmicrosoft.com",
+  "lastUpdateDateTime": "2025-04-20T10:15:00Z",
+  "endDateTime": "2025-04-20T10:30:00Z",
+  "status": "closed",
+  "trafficType": "internet",
+  "transactionCount": 15,
+  "transactionBlockCount": 2,
+  "sentBytes": 25600,
+  "receivedBytes": 51200,
+  "destinationIp": "13.107.6.152",
+  "destinationPort": 443,
+  "destinationFqdn": "graph.microsoft.com",
+  "userId": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+  "sourceIp": "192.168.1.100",
+  "sourcePort": 54321,
+  "initiatingProcessName": "msedge.exe",
+  "deviceId": "5b7c0300-45c3-487c-a6d3-a3098cb6e51b",
+  "deviceOperatingSystem": "Windows",
+  "deviceOperatingSystemVersion": "10.0.19045",
+  "agentVersion": "1.0.2307.15",
+  "applicationSnapshot": {
+    "@odata.type": "microsoft.graph.networkaccess.applicationSnapshot",
+    "appId": "00000003-0000-0000-c000-000000000000"
+  },
+  "privateAccessDetails": {
+    "@odata.type": "microsoft.graph.networkaccess.privateAccessDetails",
+    "connectorId": "e1a83a2c-5689-4f1c-b8ba-698606c784c9",
+    "connectorName": "connector-1",
+    "connectorIp": "10.0.0.100",
+    "connectionStatus": "closed",
+    "accessType": "privateAccess",
+    "processingRegion": "westus2"
+  },
+  "deviceCategory": "client",
+  "userPrincipalName": "johndoe@contoso.com",
+  "transportProtocol": "tcp",
+  "networkProtocol": "ipv4",
+  "popProcessingRegion": "westus2"
+}
