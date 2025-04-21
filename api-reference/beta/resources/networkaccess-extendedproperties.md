@@ -22,7 +22,7 @@ This resource is an open type, allowing arbitrary key-value pairs.
 |Property|Type|Description|
 |:---|:---|:---|
 |*key*|String|The property name.|
-|*value*|Object|The property value.|
+|*value*|String|The property value.|
 
 ## Relationships
 None.
