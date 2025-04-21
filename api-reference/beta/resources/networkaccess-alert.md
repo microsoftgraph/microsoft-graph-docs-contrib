@@ -53,7 +53,7 @@ Inherits from [entity](../resources/entity.md)
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[filteringPolicy](../resources/networkaccess-filteringpolicy.md)|The filtering policy associated with the alert. This relationship allows you to retrieve or manage the filtering policy that triggered or is related to the alert instance.|
+|policy|[networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md)|The filtering policy associated with the alert. This relationship allows you to retrieve or manage the filtering policy that triggered or is related to the alert instance.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
