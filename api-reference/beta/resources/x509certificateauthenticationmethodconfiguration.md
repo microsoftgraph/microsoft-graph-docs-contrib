@@ -7,7 +7,7 @@ ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: X509 certificate
 toc.keywords: [ certificate-based authentication, CBA ]
-ms.date: 07/22/2024
+ms.date: 04/07/2025
 ---
 
 # x509CertificateAuthenticationMethodConfiguration resource type
@@ -32,6 +32,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Defines strong authentication configurations. This configuration includes the default authentication mode and the different rules for strong authentication bindings. |
+|certificateAuthorityScopes|[x509CertificateAuthorityScope](../resources/x509certificateauthorityscope.md) collection|Defines configuration to allow a group of users to use certificates from specific issuing certificate authorities to successfully authenticate. |
 |certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Microsoft Entra user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
 |crlValidationConfiguration|[x509CertificateCRLValidationConfiguration](../resources/x509certificatecrlvalidationconfiguration.md)|Determines whether certificate based authentication should fail if the issuing CA doesn't have a valid certificate revocation list configured. |
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
@@ -78,6 +79,11 @@ The following is a JSON representation of the resource.
   },
   "crlValidationConfiguration": {
     "@odata.type": "microsoft.graph.x509CertificateCRLValidationConfiguration"
-  }
+  },
+  "certificateAuthorityScopes": [
+    {
+      "@odata.type": "microsoft.graph.x509CertificateAuthorityScope"
+    }
+  ]
 }
 ```
