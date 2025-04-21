@@ -1,5 +1,5 @@
 ---
-title: "alert resource type"
+title: "networkaccess alert resource type"
 description: "Represents an alert detected by the network access system. Each entity is a separate instance of an alert."
 author: "miritsadon"
 ms.date: 04/07/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-global-secure-access"
 doc_type: resourcePageType
 ---
 
-# alert resource type
+# networkaccess alert resource type
 
 Namespace: microsoft.graph.networkaccess
 
@@ -22,16 +22,10 @@ Inherits from [entity](../resources/entity.md)
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/networkaccess-networkaccessroot-list-alerts.md)|[microsoft.graph.networkaccess.alert](../resources/networkaccess-alert.md) collection|Get a list of the alert objects and their properties.|
-|[Create](../api/networkaccess-networkaccessroot-post-alerts.md)|[microsoft.graph.networkaccess.alert](../resources/networkaccess-alert.md)|Create a new alert object.|
-|[Get](../api/networkaccess-alert-get.md)|[microsoft.graph.networkaccess.alert](../resources/networkaccess-alert.md)|Read the properties and relationships of a alert object.|
-|[Update](../api/networkaccess-alert-update.md)|[microsoft.graph.networkaccess.alert](../resources/networkaccess-alert.md)|Update the properties of a alert object.|
-|[Delete](../api/networkaccess-networkaccessroot-delete-alerts.md)|None|Delete a alert object.|
 |[getAlertSeveritySummaries](../api/networkaccess-alert-getalertseveritysummaries.md)|[microsoft.graph.networkaccess.alertSeveritySummary](../resources/networkaccess-alertseveritysummary.md) collection|**TODO: Add Description**|
 |[getAlertFrequencies](../api/networkaccess-alert-getalertfrequencies.md)|[microsoft.graph.networkaccess.alertFrequencyPoint](../resources/networkaccess-alertfrequencypoint.md) collection|**TODO: Add Description**|
 |[getAlertSummaries](../api/networkaccess-alert-getalertsummaries.md)|[microsoft.graph.networkaccess.alertSummary](../resources/networkaccess-alertsummary.md) collection|**TODO: Add Description**|
 |[List filteringPolicy](../api/networkaccess-alert-list-policy.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) collection|**TODO: Add a useful description.**|
-|[Add filteringPolicy](../api/networkaccess-alert-post-policy.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md)|Add policy by posting to the policy collection.|
-|[Remove filteringPolicy](../api/networkaccess-alert-delete-policy.md)|None|Remove a [microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) object.|
 
 ## Properties
 |Property|Type|Description|

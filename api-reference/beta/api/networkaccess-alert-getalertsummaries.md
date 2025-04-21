@@ -1,6 +1,6 @@
 ---
 title: "alert: getAlertSummaries"
-description: "**TODO: Add Description**"
+description: "Get a summary of alerts detected by the network access system."
 author: "miritsadon"
 ms.date: 04/07/2025
 ms.localizationpriority: medium

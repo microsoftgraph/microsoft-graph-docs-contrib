@@ -1,6 +1,6 @@
 ---
 title: "alert: getAlertSeveritySummaries"
-description: "**TODO: Add Description**"
+description: "Get a summary of alert severities detected by the network access system."
 author: "miritsadon"
 ms.date: 04/07/2025
 ms.localizationpriority: medium

@@ -16,8 +16,6 @@ Namespace: microsoft.graph.networkaccess
 
 Represents additional data for network access resources as key-value pairs. Used for extensibility.
 
-Inherits from [microsoft.graph.Dictionary](../resources/dictionary.md).
-
 This resource is an open type, allowing arbitrary key-value pairs.
 
 ## Properties
