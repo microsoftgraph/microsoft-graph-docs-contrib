@@ -543,7 +543,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 
 The following example attempts to copy the child items in the folder identified by `{item-id}`, also known as "root," into a folder identified by the `driveId` and `id` values.
 The `childrenOnly` parameter isn't set to true.
-The request fails because the copy operation can't be done on the root folder. In this example, the copy operation does not proceed to the monitoring URL because certain validation checks occur before the request reaches the PRIME service. Specifically, attempting to copy the root of a drive to another root is not supported. As a result, the operation is blocked before processing, and the user is expected to correct the request by specifying the `childrenOnly` parameter. When this validation fails, no monitoring URL is returned.
+The request fails because the copy operation can't be done on the root folder. The operation is blocked before processing, and the user is expected to correct the request by specifying the `childrenOnly` parameter. When this validation fails, no monitoring URL is returned.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-6" } -->
