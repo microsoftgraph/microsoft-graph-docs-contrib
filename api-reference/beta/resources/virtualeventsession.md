@@ -62,6 +62,13 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | videoOnDemandWebUrl | String | The [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+### Virtual events and VOD format
+
+| Role        | Event Type | Graph API                                                       |
+|-------------|------------|-----------------------------------------------------------------|
+| Every role  | Town hall  | `GET /townhalls/{townhallId}/sessions/{sessionId}/videoOnDemandUrl`         |
+| Organizer   | Webinar    | `GET /webinars/{webinarId}/sessions/{sessionId}/videoOnDemandUrl`           |
+| Attendee    | Webinar    | `GET /webinars/{webinarId}/registrations/{registrationId}/videoOnDemandUrl` |
 
 ### meetingChatHistoryDefaultMode values
 
