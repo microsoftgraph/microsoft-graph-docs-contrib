@@ -1,6 +1,32 @@
 {
   "changelog": [
       {
+      "ChangeList": [
+        {
+          "Id": "6e9b8d40-8159-4bac-873c-db1844109cc4",
+          "ApiChange": "Member",
+          "ChangedApiName": "plus",
+          "ChangeType": "Addition",
+          "Description": "Added the `plus` member to the **cloudPcDisasterRecoveryLicenseType** enumeration.",
+          "Target": "cloudPcDisasterRecoveryLicenseType"
+        },
+        {
+          "Id": "6e9b8d40-8159-4bac-873c-db1844109cc4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcBulkDisasterRecovery",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcBulkDisasterRecovery](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkDisasterRecovery?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcBulkDisasterRecovery"
+        }
+      ],
+      "Id": "6e9b8d40-8159-4bac-873c-db1844109cc4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-12T00:50:17.5609076Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+      },
+      {
         "ChangeList": [
           {
             "Id": "b09ae587-6dc0-468c-82e7-d8ef1bab2617",
