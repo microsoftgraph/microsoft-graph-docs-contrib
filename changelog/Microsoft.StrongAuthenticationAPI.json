@@ -488,7 +488,9 @@
       "Id": "25af4412-9671-4230-898f-905be64c8da2",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-04-16T21:15:06.8373784Z"
+      "CreatedDateTime": "2025-04-16T21:15:06.8373784Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList":[
