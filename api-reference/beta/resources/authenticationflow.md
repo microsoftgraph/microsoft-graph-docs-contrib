@@ -2,7 +2,7 @@
 title: "authenticationFlow resource type"
 description: "Authentication flow used during the sign-in as defined in the Conditional Access What If evaluation."
 author: "kvenkit"
-ms.date: 04/03/2025
+ms.date: 04/16/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -20,7 +20,7 @@ Authentication flow used during the sign-in, as defined in [Conditional Access W
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|transferMethod|conditionalAccessTransferMethods|Represents the transfer methods in scope for the policy. The possible values are: `none`, `deviceCodeFlow`, `authenticationTransfer`, `unknownFutureValue`.|
+|transferMethod|conditionalAccessTransferMethods|Represents the transfer methods in scope for the policy. The possible values are: `none`, `deviceCodeFlow`, `authenticationTransfer`, `unknownFutureValue`. Default value is `none`.|
 
 ## Relationships
 None.

@@ -28,6 +28,7 @@ This resource type is an abstract type that's inherited by the following derived
 + [passwordlessMicrosoftAuthenticatorAuthenticationMethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (deprecated)    
 + [passwordAuthenticationMethod](passwordauthenticationmethod.md)
 + [phoneAuthenticationMethod](phoneauthenticationmethod.md)
++ [platformCredentialAuthenticationMethod](platformcredentialauthenticationmethod.md)
 + [softwareOathAuthenticationMethod](softwareoathauthenticationmethod.md)
 + [temporaryAccessPassAuthenticationMethod](temporaryaccesspassauthenticationmethod.md)
 + [windowsHelloForBusinessAuthenticationMethod](windowshelloforbusinessauthenticationmethod.md)
