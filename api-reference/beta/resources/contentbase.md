@@ -1,6 +1,6 @@
 ---
-title: "contentBase complex type"
-toc.title: "contentBase complex type (preview)"
+title: "contentBase"
+toc.title: "contentBase (preview)"
 description: "Abstract base type representing the actual content (text or binary) being processed."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing the actual content payload being submitted for processing within a [processContentMetadataBase](../resources/processcontentmetadatabase.md) object. Derived types (`textContent`, `binaryContent`) hold the specific content data.
+Abstract base type representing the actual content (text or binary) being processed. Derived types (`textContent`, `binaryContent`) hold the specific content data.
 
 ## Properties
 

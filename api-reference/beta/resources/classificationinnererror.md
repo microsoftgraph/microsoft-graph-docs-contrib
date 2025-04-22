@@ -1,7 +1,7 @@
 ---
-title: "classificationInnerError complex type"
-toc.title: "classificationInnerError complex type (preview)"
-description: "Contains specific, often internal, details about an error encountered during classification or policy evaluation."
+title: "classificationInnerError"
+toc.title: "classificationInnerError (preview)"
+description: "Contains more specific, potentially internal, details about an error that occurred during data classification, label evaluation, or policy processing."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium

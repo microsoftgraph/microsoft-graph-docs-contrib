@@ -1,7 +1,7 @@
 ---
-title: "classifcationErrorBase complex type"
-toc.title: "classifcationErrorBase complex type (preview)"
-description: "Abstract base type for representing errors encountered during classification or policy evaluation."
+title: "classifcationErrorBase"
+toc.title: "classifcationErrorBase (preview)"
+description: "Abstract base type for representing errors that occur during data classification, label evaluation, or policy processing."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium

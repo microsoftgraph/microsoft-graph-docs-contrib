@@ -1,6 +1,6 @@
 ---
-title: "processContentMetadataBase complex type"
-toc.title: "processContentMetadataBase complex type (preview)"
+title: "processContentMetadataBase"
+toc.title: "processContentMetadataBase (preview)"
 description: "Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing the metadata for a single piece of content being submitted for processing via `processContent` or `processContentAsync`. Contains common properties like identifiers, content reference, name, timestamps, and size information. Derived types (`processConversationMetadata`, `processFileMetadata`) add context-specific details.
+Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps. Submitted for processing via `processContent` or `processContentAsync`. Contains common properties like identifiers, content reference, name, timestamps, and size information. Derived types (`processConversationMetadata`, `processFileMetadata`) add context-specific details.
 
 ## Properties
 

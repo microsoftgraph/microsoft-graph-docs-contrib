@@ -1,7 +1,7 @@
 ---
 title: "blockAccessAction"
 toc.title: "blockAccessAction (preview)"
-description: "Represents a DLP action that blocks access to the content."
+description: "Represents a DLP action that explicitly blocks access to the content that triggered the rule match."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -9,13 +9,13 @@ ms.subservice: "security"
 doc_type: complexTypePageType
 ---
 
-# blockAccessAction
+# blockAccessAction  complex type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Data Loss Prevention (DLP) action that explicitly blocks access to the content that triggered the rule match. Inherits from [dlpActionInfo](../resources/dlpactioninfo.md).
+Represents a DLP action that explicitly blocks access to the content that triggered the rule match. Inherits from [dlpActionInfo](../resources/dlpactioninfo.md).
 
 ## Properties
 

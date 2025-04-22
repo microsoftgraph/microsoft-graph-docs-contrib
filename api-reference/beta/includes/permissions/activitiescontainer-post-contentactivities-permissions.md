@@ -9,4 +9,3 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|ContentActivity.Write|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|ContentActivity.Write|Not supported.|
-

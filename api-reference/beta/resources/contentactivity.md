@@ -1,7 +1,7 @@
 ---
 title: "contentActivity resource type"
 toc.title: "contentActivity resource type (preview)"
-description: "Audit logs data from contents processing"
+description: "Audit logs data from contents processing, in a structured way to ensure compliance, track user actions, and detect unusual behavior."
 author: "ArunGedela"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
@@ -18,7 +18,6 @@ Namespace: microsoft.graph
 Audit logs data from contents processing, in a structured way to ensure compliance, track user actions, and detect unusual behavior. Captures detailed information about each activity, including timestamps, actions taken, and the involved resources. Essential for tracking and auditing user interactions and system events.
 
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 

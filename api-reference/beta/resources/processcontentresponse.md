@@ -1,7 +1,7 @@
 ---
-title: "processContentResponse complex type"
-toc.title: "processContentResponse complex type (preview)"
-description: "Represents the result of processing a single content entry against data security and governance policies."
+title: "processContentResponse"
+toc.title: "processContentResponse (preview)"
+description: "Contains the outcome of a `processContent` action or a single result within a `processContentAsync` action."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium

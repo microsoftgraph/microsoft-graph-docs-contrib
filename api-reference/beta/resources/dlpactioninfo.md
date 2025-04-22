@@ -1,6 +1,6 @@
 ---
-title: "dlpActionInfo complex type"
-toc.title: "dlpActionInfo complex type (preview)"
+title: "dlpActionInfo"
+toc.title: "dlpActionInfo (preview)"
 description: "Base type for actions defined within a Data Loss Prevention (DLP) rule."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the abstract base type for actions specified within a Data Loss Prevention (DLP) rule. Specific actions like `blockAccessAction` or `notifyUserAction` inherit from this type.
+Base type for actions defined within a Data Loss Prevention (DLP) rule. Specific actions like `blockAccessAction` or `notifyUserAction` inherit from this type.
 
 ## Properties
 

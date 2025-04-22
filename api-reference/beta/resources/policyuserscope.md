@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the effective scope of data governance policies for a specific user within an integrated application context. It details the protected locations, activities, execution mode, and actions applicable to that user.
+Defines the scope of a data governance policy as it applies to a specific user. It details the protected locations, activities, execution mode, and actions applicable to that user.
 
 Inherits from [microsoft.graph.policyScopeBase](../resources/policyscopebase.md).
 

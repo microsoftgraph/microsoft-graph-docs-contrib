@@ -15,13 +15,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides specific details about the device involved in a user session, including its type (for example, "Desktop", "Mobile") and operating system information.
+Contains details about the device involved in a session, including type and OS specifications.
 
 ## Properties
 
 | Property                    | Type                                                                                                               | Description                                       |
 | :-------------------------- | :----------------------------------------------------------------------------------------------------------------- | :------------------------------------------------ |
-| deviceType                  | String                                                                                                             | The general type of the device (for example, "Desktop", "Mobile", "Tablet"). |
+| deviceType                  | String                                                                                                             | The general type of the device (for example, "Managed", "Unmanaged", "Unknown"). |
 | operatingSystemSpecifications | [operatingSystemSpecifications](../resources/operatingsystemspecifications.md) | Details about the operating system platform and version. |
 
 ## Relationships

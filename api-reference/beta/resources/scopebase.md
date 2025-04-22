@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing an identifier used to define the scope of users, groups, or the entire tenant within a [policyBinding](../resources/policybinding.md). Derived types (`userScope`, `groupScope`, `tenantScope`) specify the type of scope.
+Abstract base type representing a scope identifier for users, groups, or the tenant within policy bindings. Derived types (`userScope`, `groupScope`, `tenantScope`) specify the type of scope.
 
 ## Properties
 

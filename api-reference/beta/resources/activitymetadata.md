@@ -1,6 +1,6 @@
 ---
-title: "activityMetadata resource type"
-toc.title: "activityMetadata resource type (preview)"
+title: "activityMetadata"
+toc.title: "activityMetadata (preview)"
 description: "Represents metadata about a specific user activity being evaluated, including the activity type and location."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,13 +9,13 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# activityMetadata resource type
+# activityMetadata complexType
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides context about a specific user activity being processed or evaluated, such as the type of action (upload/download) and the associated location (URL). Used within requests like `processContentRequest`.
+Represents metadata about a specific user activity being evaluated, including the activity type and location. Used within requests like `processContentRequest`.
 
 ## Properties
 
@@ -30,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the resource type.
+The following JSON representation shows the complex type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.activityMetadata"

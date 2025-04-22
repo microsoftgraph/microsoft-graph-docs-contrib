@@ -1,6 +1,6 @@
 ---
 title: "userDataSecurityAndGovernance resource type"
-description: "Represents the entry point for user-scoped data security and governance features."
+description: "Provides access to data security and governance functionalities specifically scoped to the context of a single user."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -22,8 +22,8 @@ Inherits from [microsoft.graph.dataSecurityAndGovernance](../resources/datasecur
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [processContent](../api/userdatasecurityandgovernance-processcontent.md) | [processContentResponse](../resources/processcontentresponse.md) | Process content against data security and governance policies in the context of this user. |
-| [protectionScopes](../api/userdatasecurityandgovernance-processcontent.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the protection scopes for this user. |
+| [processContent](../api/userdatasecurityandgovernance-post-processcontent.md) | [processContentResponse](../resources/processcontentresponse.md) | Process content against data security and governance policies in the context of this user. |
+| [protectionScopes](../api/userdatasecurityandgovernance-post-processcontent.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the protection scopes for this user. |
 
 ## Properties
 

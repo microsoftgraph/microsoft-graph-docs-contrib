@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates how the calling application should perform policy evaluation based on the computed protection scope. Returned within [policyScopeBase](../resources/policyscopebase.md) derived types.
+Specifies how a calling application should evaluate policies based on computed scopes (Inline or Offline). Returned within [policyScopeBase](../resources/policyscopebase.md) derived types.
 
 ## Members
 

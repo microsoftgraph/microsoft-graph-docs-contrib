@@ -1,15 +1,15 @@
 ---
-title: "processContentRequest resource type"
-toc.title: "processContentRequest resource type (preview)"
-description: "Represents the request payload for processing content against data security and governance policies, including content entries and metadata."
+title: "processContentRequest"
+toc.title: "processContentRequest (preview)"
+description: "Defines the input payload for the `processContent` and `processContentAsync` actions."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: resourcePageType
+doc_type: complexTypePageType
 ---
 
-# processContentRequest resource type
+# processContentRequest complex type
 
 Namespace: microsoft.graph
 
@@ -32,7 +32,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the resource type.
+The following JSON representation shows the complex type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.processContentRequest"

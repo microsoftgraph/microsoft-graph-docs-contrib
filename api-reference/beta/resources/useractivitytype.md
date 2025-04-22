@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the specific type of user activity involving content, used within `activityMetadata` for processing requests like `processContent`.
+Specifies the type of user activity being processed or evaluated. Used within `activityMetadata` for processing requests like `processContent`.
 
 ## Members
 

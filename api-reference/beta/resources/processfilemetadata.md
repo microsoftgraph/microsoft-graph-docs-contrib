@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents metadata for a content entry that corresponds to a file being processed. Includes file-specific details like custom properties and the owner ID. Inherits from [processContentMetadataBase](../resources/processcontentmetadatabase.md).
+Represents metadata for a content entry that is a file. Includes file-specific details like custom properties and the owner ID. Inherits from [processContentMetadataBase](../resources/processcontentmetadatabase.md).
 
 ## Properties
 

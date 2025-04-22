@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing the scope of a data governance policy for an integrated application. It defines the locations (e.g., domains, URLs), activities (e.g., uploads, downloads), execution behavior, and resulting actions.
+Abstract base type defining the scope of applicability for a data governance policy, including locations, activities, and execution mode. It defines the locations (e.g., domains, URLs), activities (e.g., uploads, downloads), execution behavior, and resulting actions.
 
 ## Properties
 

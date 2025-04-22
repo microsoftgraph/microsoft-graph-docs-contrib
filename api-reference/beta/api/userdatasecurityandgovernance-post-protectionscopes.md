@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Applications are required to adhere to Microsoft Purview policies established by Security/Compliance Administrators, which dictate how data and user activities should be managed. Applications use the Protection Scopes to understand what is defined in the context of user interactions. The application calls the ProtectionScopes API to get the protection scopes for the user.
+Compute the data protection policies and actions applicable to a specific user based on their context. Applications are required to adhere to Microsoft Purview policies established by Security/Compliance Administrators, which dictate how data and user activities should be managed. Applications use the Protection Scopes to understand what is defined in the context of user interactions. The application calls the ProtectionScopes API to get the protection scopes for the user.
 
 The API enables applications to specify activity types and location types in the request, limiting the response to only include relevant protection scopes. Applications are required to provide device metadata and application metadata to help determining the appropriate protection scopes. This information is essential for ascertaining policy decisions relevant to the application's context.
 

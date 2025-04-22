@@ -1,6 +1,6 @@
 ---
-title: "policyBinding complex type"
-toc.title: "policyBinding complex type (preview)"
+title: "policyBinding"
+toc.title: "policyBinding (preview)"
 description: "Defines the user/group inclusions and exclusions for a tenant-level policy scope."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines which users and/or groups are included in or excluded from a specific tenant-level policy configuration ([policyTenantScope](../resources/policytenantscope.md)).
+Defines the user/group inclusions and exclusions for a tenant-level policy scope.
 
 ## Properties
 

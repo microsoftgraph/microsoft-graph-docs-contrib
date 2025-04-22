@@ -1,6 +1,6 @@
 ---
-title: "processContentResponses complex type"
-toc.title: "processContentResponses complex type (preview)"
+title: "processContentResponses"
+toc.title: "processContentResponses (preview)"
 description: "Represents the response for a single request within a batch content processing operation."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Correlates a single request from a `processContentAsync` batch operation with its corresponding result. It contains the original `requestId` and the `processContentResponse` outcome.
+Represents the response for a single request within a batch content processing operation. Correlates a single request from a `processContentAsync` batch operation with its corresponding result. It contains the original `requestId` and the `processContentResponse` outcome.
 
 ## Properties
 

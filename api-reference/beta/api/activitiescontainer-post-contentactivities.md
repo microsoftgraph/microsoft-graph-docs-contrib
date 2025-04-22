@@ -1,7 +1,7 @@
 ---
 title: "Create content activity"
 toc.title: "Create content activity (preview)"
-description: "Create a content activity for the signed-in user"
+description: "Create a content activity for the signed-in user."
 author: "ArunGedela"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
@@ -36,7 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/dataSecurityAndGovernance/activities/contentActivities
-POST /users/{usersId}/dataSecurityAndGovernance/activities/contentActivities
 ```
 
 ## Request headers

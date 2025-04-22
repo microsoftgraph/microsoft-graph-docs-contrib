@@ -1,7 +1,7 @@
 ---
 title: "Activities"
 toc.title: "Activities (preview)"
-description: "Container for different types of activity logs related to data security and governance, such as content activities and audit activities."
+description: "Container for different types of activity logs related to data security and governance, such as content activities"
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container entity holding collections of different types of activity log related to data security and governance.
+Container for different types of activity logs related to data security and governance, such as content activities
 
 ## Properties
 

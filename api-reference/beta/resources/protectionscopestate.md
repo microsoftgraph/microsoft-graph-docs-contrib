@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates the set of applicable data protection policies and actions (the protection scope) changed for the given context since the last time it was computed or checked. Returned in [processContentResponse](../resources/processcontentresponse.md).
+Indicates the computed data protection scope changed since the last check (NotModified, Modified). Returned in [processContentResponse](../resources/processcontentresponse.md).
 
 ## Members
 

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates the nature of an error encountered during content processing or policy evaluation. Specifically whether it's likely to be resolved by retrying the operation (transient) or if it represents a fundamental issue (permanent). Used in [processingError](../resources/processingerror.md).
+Specifies whether an error encountered during content processing is transient or permanent. Specifically whether it's likely to be resolved by retrying the operation (transient) or if it represents a fundamental issue (permanent). Used in [processingError](../resources/processingerror.md).
 
 ## Members
 

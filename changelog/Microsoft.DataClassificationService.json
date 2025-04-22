@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Enumeration",
           "ChangedApiName": "contentProcessingErrorType",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "contentProcessingErrorType"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Enumeration",
           "ChangedApiName": "executionMode",
           "ChangeType": "Addition",
@@ -19,15 +19,7 @@
           "Target": "executionMode"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "labelActionSource",
-          "ChangeType": "Addition",
-          "Description": "Added the **labelActionSource** enumeration type.",
-          "Target": "labelActionSource"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Enumeration",
           "ChangedApiName": "policyPivotProperty",
           "ChangeType": "Addition",
@@ -35,7 +27,7 @@
           "Target": "policyPivotProperty"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Enumeration",
           "ChangedApiName": "protectionScopeState",
           "ChangeType": "Addition",
@@ -43,15 +35,7 @@
           "Target": "protectionScopeState"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "usageRights",
-          "ChangeType": "Addition",
-          "Description": "Added the **usageRights** enumeration type.",
-          "Target": "usageRights"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Enumeration",
           "ChangedApiName": "userActivityType",
           "ChangeType": "Addition",
@@ -59,7 +43,7 @@
           "Target": "userActivityType"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Enumeration",
           "ChangedApiName": "userActivityTypes",
           "ChangeType": "Addition",
@@ -67,7 +51,7 @@
           "Target": "userActivityTypes"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Enumeration",
           "ChangedApiName": "userScopeType",
           "ChangeType": "Addition",
@@ -75,7 +59,7 @@
           "Target": "userScopeType"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "activityMetadata",
           "ChangeType": "Addition",
@@ -83,7 +67,7 @@
           "Target": "activityMetadata"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionPlugin",
           "ChangeType": "Addition",
@@ -91,7 +75,7 @@
           "Target": "aiInteractionPlugin"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "binaryContent",
           "ChangeType": "Addition",
@@ -99,15 +83,7 @@
           "Target": "binaryContent"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Resource",
-          "ChangedApiName": "computeRightsAndInheritanceResult",
-          "ChangeType": "Addition",
-          "Description": "Added the [computeRightsAndInheritanceResult](https://learn.microsoft.com/en-us/graph/api/resources/computeRightsAndInheritanceResult?view=graph-rest-beta) resource.",
-          "Target": "computeRightsAndInheritanceResult"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "contentBase",
           "ChangeType": "Addition",
@@ -115,7 +91,7 @@
           "Target": "contentBase"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "groupScope",
           "ChangeType": "Addition",
@@ -123,7 +99,7 @@
           "Target": "groupScope"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "integratedApplicationMetadata",
           "ChangeType": "Addition",
@@ -131,7 +107,7 @@
           "Target": "integratedApplicationMetadata"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "policyBinding",
           "ChangeType": "Addition",
@@ -139,7 +115,7 @@
           "Target": "policyBinding"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "policyLocation",
           "ChangeType": "Addition",
@@ -147,7 +123,7 @@
           "Target": "policyLocation"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "policyLocationDomain",
           "ChangeType": "Addition",
@@ -155,7 +131,7 @@
           "Target": "policyLocationDomain"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "policyLocationUrl",
           "ChangeType": "Addition",
@@ -163,7 +139,7 @@
           "Target": "policyLocationUrl"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "policyScopeBase",
           "ChangeType": "Addition",
@@ -171,7 +147,7 @@
           "Target": "policyScopeBase"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "policyTenantScope",
           "ChangeType": "Addition",
@@ -179,7 +155,7 @@
           "Target": "policyTenantScope"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "policyUserScope",
           "ChangeType": "Addition",
@@ -187,7 +163,7 @@
           "Target": "policyUserScope"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentBatchRequest",
           "ChangeType": "Addition",
@@ -195,7 +171,7 @@
           "Target": "processContentBatchRequest"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentMetadataBase",
           "ChangeType": "Addition",
@@ -203,7 +179,7 @@
           "Target": "processContentMetadataBase"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentRequest",
           "ChangeType": "Addition",
@@ -211,7 +187,7 @@
           "Target": "processContentRequest"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentResponse",
           "ChangeType": "Addition",
@@ -219,7 +195,7 @@
           "Target": "processContentResponse"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentResponses",
           "ChangeType": "Addition",
@@ -227,7 +203,7 @@
           "Target": "processContentResponses"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "processConversationMetadata",
           "ChangeType": "Addition",
@@ -235,7 +211,7 @@
           "Target": "processConversationMetadata"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "processFileMetadata",
           "ChangeType": "Addition",
@@ -243,7 +219,7 @@
           "Target": "processFileMetadata"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "processingError",
           "ChangeType": "Addition",
@@ -251,7 +227,7 @@
           "Target": "processingError"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "protectedApplicationMetadata",
           "ChangeType": "Addition",
@@ -259,15 +235,7 @@
           "Target": "protectedApplicationMetadata"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Resource",
-          "ChangedApiName": "protectedContent",
-          "ChangeType": "Addition",
-          "Description": "Added the [protectedContent](https://learn.microsoft.com/en-us/graph/api/resources/protectedContent?view=graph-rest-beta) resource.",
-          "Target": "protectedContent"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "scopeBase",
           "ChangeType": "Addition",
@@ -275,7 +243,7 @@
           "Target": "scopeBase"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantScope",
           "ChangeType": "Addition",
@@ -283,7 +251,7 @@
           "Target": "tenantScope"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "textContent",
           "ChangeType": "Addition",
@@ -291,7 +259,7 @@
           "Target": "textContent"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "userScope",
           "ChangeType": "Addition",
@@ -299,7 +267,7 @@
           "Target": "userScope"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "activitiesContainer",
           "ChangeType": "Addition",
@@ -307,7 +275,7 @@
           "Target": "activitiesContainer"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "contentActivity",
           "ChangeType": "Addition",
@@ -315,7 +283,7 @@
           "Target": "contentActivity"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "dataSecurityAndGovernance",
           "ChangeType": "Addition",
@@ -323,31 +291,7 @@
           "Target": "dataSecurityAndGovernance"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Resource",
-          "ChangedApiName": "labelContentRight",
-          "ChangeType": "Addition",
-          "Description": "Added the [labelContentRight](https://learn.microsoft.com/en-us/graph/api/resources/labelContentRight?view=graph-rest-beta) resource.",
-          "Target": "labelContentRight"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Property",
-          "ChangedApiName": "actionSource",
-          "ChangeType": "Addition",
-          "Description": "Added the **actionSource** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Property",
-          "ChangedApiName": "autoTooltip",
-          "ChangeType": "Addition",
-          "Description": "Added the **autoTooltip** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Property",
           "ChangedApiName": "color",
           "ChangeType": "Addition",
@@ -355,15 +299,7 @@
           "Target": "sensitivityLabel"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Property",
-          "ChangedApiName": "customSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the **customSettings** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Property",
           "ChangedApiName": "isEnabled",
           "ChangeType": "Addition",
@@ -371,31 +307,7 @@
           "Target": "sensitivityLabel"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Property",
-          "ChangedApiName": "isScopedToUser",
-          "ChangeType": "Addition",
-          "Description": "Added the **isScopedToUser** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Property",
-          "ChangedApiName": "locale",
-          "ChangeType": "Addition",
-          "Description": "Added the **locale** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "rights",
-          "ChangeType": "Addition",
-          "Description": "Added the **rights** relationship to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantDataSecurityAndGovernance",
           "ChangeType": "Addition",
@@ -403,7 +315,7 @@
           "Target": "tenantDataSecurityAndGovernance"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantProtectionScopeContainer",
           "ChangeType": "Addition",
@@ -411,15 +323,7 @@
           "Target": "tenantProtectionScopeContainer"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Resource",
-          "ChangedApiName": "usageRightsIncluded",
-          "ChangeType": "Addition",
-          "Description": "Added the [usageRightsIncluded](https://learn.microsoft.com/en-us/graph/api/resources/usageRightsIncluded?view=graph-rest-beta) resource.",
-          "Target": "usageRightsIncluded"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "userDataSecurityAndGovernance",
           "ChangeType": "Addition",
@@ -427,7 +331,7 @@
           "Target": "userDataSecurityAndGovernance"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "userProtectionScopeContainer",
           "ChangeType": "Addition",
@@ -435,7 +339,7 @@
           "Target": "userProtectionScopeContainer"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Method",
           "ChangedApiName": "compute",
           "ChangeType": "Addition",
@@ -443,7 +347,7 @@
           "Target": "tenantProtectionScopeContainer"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Method",
           "ChangedApiName": "compute",
           "ChangeType": "Addition",
@@ -451,39 +355,23 @@
           "Target": "userProtectionScopeContainer"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Method",
-          "ChangedApiName": "computeRightsAndInheritance",
-          "ChangeType": "Addition",
-          "Description": "Added the [computeRightsAndInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeRightsAndInheritance?view=graph-rest-beta) method to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Method",
           "ChangedApiName": "processContent",
           "ChangeType": "Addition",
-          "Description": "Added the [processContent](https://learn.microsoft.com/en-us/graph/api/userDataSecurityAndGovernance-processContent?view=graph-rest-beta) method to the [userDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/userDataSecurityAndGovernance?view=graph-rest-beta) resource.",
+          "Description": "Added the [processContent](https://learn.microsoft.com/en-us/graph/api/userDataSecurityAndGovernance-post-processContent?view=graph-rest-beta) method to the [userDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/userDataSecurityAndGovernance?view=graph-rest-beta) resource.",
           "Target": "userDataSecurityAndGovernance"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Method",
           "ChangedApiName": "processContentAsync",
           "ChangeType": "Addition",
-          "Description": "Added the [processContentAsync](https://learn.microsoft.com/en-us/graph/api/tenantDataSecurityAndGovernance-processContentAsync?view=graph-rest-beta) method to the [tenantDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/tenantDataSecurityAndGovernance?view=graph-rest-beta) resource.",
+          "Description": "Added the [processContentAsync](https://learn.microsoft.com/en-us/graph/api/tenantDataSecurityAndGovernance-post-processContentAsync?view=graph-rest-beta) method to the [tenantDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/tenantDataSecurityAndGovernance?view=graph-rest-beta) resource.",
           "Target": "tenantDataSecurityAndGovernance"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
-          "ApiChange": "Method",
-          "ChangedApiName": "computeInheritance",
-          "ChangeType": "Addition",
-          "Description": "Added the [computeInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeInheritance?view=graph-rest-beta) method to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "security",
           "ChangeType": "Addition",
@@ -491,7 +379,7 @@
           "Target": "security"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Enumeration",
           "ChangedApiName": "auditLogRecordType",
           "ChangeType": "Addition",
@@ -499,7 +387,7 @@
           "Target": "auditLogRecordType"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Enumeration",
           "ChangedApiName": "auditLogUserType",
           "ChangeType": "Addition",
@@ -507,7 +395,7 @@
           "Target": "auditLogUserType"
         },
         {
-          "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "auditData",
           "ChangeType": "Addition",
@@ -515,17 +403,17 @@
           "Target": "auditData"
         }
       ],
-      "Id": "dba230e8-02fb-491f-a442-ec1c68f28c6b",
+      "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-04-17T03:37:31.6958427Z",
+      "CreatedDateTime": "2025-04-21T21:35:10.5081824Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "286a298f-891f-4e97-b79b-90101868d1a9",
+          "Id": "9c10cce6-6262-4673-9a7f-87b52bc9119e",
           "ApiChange": "Relationship",
           "ChangedApiName": "dataSecurityAndGovernance",
           "ChangeType": "Addition",
@@ -533,10 +421,10 @@
           "Target": "user"
         }
       ],
-      "Id": "286a298f-891f-4e97-b79b-90101868d1a9",
+      "Id": "9c10cce6-6262-4673-9a7f-87b52bc9119e",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-04-17T03:37:31.6960552Z",
+      "CreatedDateTime": "2025-04-21T21:35:10.508777Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }

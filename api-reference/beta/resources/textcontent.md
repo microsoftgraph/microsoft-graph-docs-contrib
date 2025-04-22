@@ -1,7 +1,7 @@
 ---
 title: "textContent resource type"
 toc.title: "textContent resource type (preview)"
-description: "Represents content provided as a text string."
+description: "Represents content provided as a plain text string."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.textContent",

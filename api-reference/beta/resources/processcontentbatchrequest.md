@@ -1,7 +1,7 @@
 ---
-title: "processContentBatchRequest complex type"
-toc.title: "processContentBatchRequest complex type (preview)"
-description: "Represents a single item within a batch request for asynchronously processing content against data protection policies."
+title: "processContentBatchRequest"
+toc.title: "processContentBatchRequest (preview)"
+description: "Represents a single entry within a request submitted to the `processContentAsync` action."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a single entry within a batch request submitted to the `processContentAsync` action. Each entry contains the content and context to be processed for a specific user, along with a request ID for correlation.
+Represents a single entry within a request submitted to the `processContentAsync` action. Each entry contains the content and context to be processed for a specific user, along with a request ID for correlation.
 
 ## Properties
 

@@ -1,6 +1,6 @@
 ---
-title: "processingError complex type"
-toc.title: "processingError complex type (preview)"
+title: "processingError"
+toc.title: "processingError (preview)"
 description: "Represents an error encountered during content processing or policy evaluation, indicating if it's transient or permanent."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an error that occurred during the processing of content or evaluation of data protection policies, specifically within the context of the `processContent` and `processContentAsync` actions. It includes standard error details and indicates whether the error is likely transient or permanent. Inherits from [classificationError](../resources/classificationerror.md). Found within the `processingErrors` collection of [processContentResponse](../resources/processcontentresponse.md).
+Represents an error encountered during content processing or policy evaluation, indicating if it's transient or permanent. Specifically within the context of the `processContent` and `processContentAsync` actions. It includes standard error details and indicates whether the error is likely transient or permanent. Inherits from [classificationError](../resources/classificationerror.md). Found within the `processingErrors` collection of [processContentResponse](../resources/processcontentresponse.md).
 
 ## Properties
 

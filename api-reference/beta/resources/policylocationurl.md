@@ -1,0 +1,43 @@
+---
+title: "policyLocationUrl"
+toc.title: "policyLocationUrl (preview)"
+description: "Represents a specific URL as a location for data protection policy scoping."
+author: "ArunGedela"
+ms.date: 04/08/2025
+ms.localizationpriority: medium
+ms.subservice: "security"
+doc_type: complexTypePageType
+---
+
+# policyLocationUrl
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents a specific URL as a location for data protection policy scoping. For example, "https://partner.contoso.com/data", "https://internal.contoso.com/reports/upload". Used as a location within the scope of a data protection policy. Inherits from [policyLocation](../resources/policylocation.md).
+
+## Properties
+
+Inherits properties from [policyLocation](../resources/policylocation.md). The `value` property holds the URL.
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the complex type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.policyLocationUrl",
+  "baseType": "microsoft.graph.policyLocation",
+  "openType": false
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.policyLocationUrl",
+  // Inherited properties from policyLocation
+  "value": "String" // e.g., "https://sharepoint.contoso.com/sites/ProjectAlpha"
+}
+```

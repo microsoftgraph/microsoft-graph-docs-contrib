@@ -1,6 +1,6 @@
 ---
-title: "classificationError complex type"
-toc.title: "classificationError complex type (preview)"
+title: "classificationError"
+toc.title: "classificationError (preview)"
 description: "Represents a detailed error object, potentially containing multiple nested errors, encountered during classification or policy evaluation."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a detailed error encountered during data classification, label evaluation, or policy processing. It inherits from [classifcationErrorBase](../resources/classifcationerrorbase.md) and can include a collection of nested errors providing further details.
+Represents a detailed error object, potentially containing multiple nested errors, encountered during classification or policy evaluation. It inherits from [classifcationErrorBase](../resources/classifcationerrorbase.md) and can include a collection of nested errors providing further details.
 
 ## Properties
 
