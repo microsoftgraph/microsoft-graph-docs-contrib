@@ -44,6 +44,11 @@ isContentSharingNotificationEnabled := true
 callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled) 
 isDeltaRosterEnabled := true
 callOptions.SetIsDeltaRosterEnabled(&isDeltaRosterEnabled) 
+additionalData := map[string]interface{}{
+	isInteractiveRosterEnabled := true
+callOptions.SetIsInteractiveRosterEnabled(&isInteractiveRosterEnabled) 
+}
+callOptions.SetAdditionalData(additionalData)
 requestBody.SetCallOptions(callOptions)
 mediaConfig := graphmodels.NewServiceHostedMediaConfig()
 requestBody.SetMediaConfig(mediaConfig)
