@@ -9,14 +9,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **videoOnDemandWebUrl** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
           "Target": "virtualEventSession"
-        },
-        {
-          "Id": "aec55ab7-4c55-40ed-a6d5-8fabde7f71b5",
-          "ApiChange": "Property",
-          "ChangedApiName": "registrantVideoOnDemandWebUrl",
-          "ChangeType": "Addition",
-          "Description": "Added the **registrantVideoOnDemandWebUrl** property to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
-          "Target": "virtualEventRegistration"
         }
       ],
       "Id": "aec55ab7-4c55-40ed-a6d5-8fabde7f71b5",
