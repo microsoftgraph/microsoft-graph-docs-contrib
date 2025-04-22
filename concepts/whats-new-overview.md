@@ -19,6 +19,22 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## April 2025: New and generally available
 
+### Identity and access | Identity and sign-in
+
+Use the following supported attribute events:
+
+- Authentication event listeners
+  - [onAttributeCollectionStartListener](/graph/api/resources/onattributecollectionstartlistener)
+  - [onAttributeCollectionSubmitListener](/graph/api/resources/onattributecollectionsubmitlistener)
+- Custom authentication extensions
+  - [onAttributeCollectionStartCustomExtension](/graph/api/resources/onattributecollectionstartcustomextension)
+  - [onAttributeCollectionSubmitCustomExtension](/graph/api/resources/onattributecollectionsubmitcustomextension)
+- User flows in external tenants
+  - [onAttributeCollectionStartCustomExtensionHandler](/graph/api/resources/onattributecollectionstartcustomextensionhandler)
+  - [onAttributeCollectionStartHandler](/graph/api/resources/onattributecollectionstarthandler)
+  - [onAttributeCollectionSubmitCustomExtensionHandler](/graph/api/resources/onattributecollectionsubmitcustomextensionhandler)
+  - [onAttributeCollectionSubmitHandler](/graph/api/resources/onattributecollectionsubmithandler)
+
 ### Teamwork and communications | Calls and online meetings
 
 - The **basicServiceSetIdentifier** property on [networkInfo](/graph/api/resources/callrecords-networkinfo) isn't available if the user disables precise location sharing in their operating system or Microsoft Teams app settings.
@@ -38,6 +54,14 @@ Updated the permissions for the [List usageRights for user](/graph/api/cloudlice
 ### Files
 
 Added the `forceInfectedDownload` as a supported prefer header to the [Get content](/graph/api/driveitem-get-content?view=graph-rest-beta&preserve-view=true) and [Get contentStream](/graph/api/driveitem-get-contentstream?view=graph-rest-beta&preserve-view=true) methods to enable the download of infected files when specifically requested.
+
+### Identity and access | Identity and sign-in
+
+Added [onAttributeCollectionStartListener](/graph/api/resources/onattributecollectionstartlistener?view=graph-rest-beta&preserve-view=true) and [onAttributeCollectionSubmitListener](/graph/api/resources/onattributecollectionsubmitlistener?view=graph-rest-beta&preserve-view=true) as supported [authenticationEventListener](/graph/api/resources/authenticationeventlistener?view=graph-rest-beta&preserve-view=true).
+
+### Reports | Identity and access reports
+
+Use the [serviceActivity: getMetricsForConditionalAccessBlockedSignIn](/graph/api/serviceactivity-getmetricsforconditionalaccessblockedsignin?view=graph-rest-beta&preserve-view=true) to get the number of user sign-in attempts that were blocked by a Conditional Access policy during a specific period.
 
 ### Reports | Microsoft 365 usage reports
 
