@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/networkaccess-alert-list-policy.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) collection|Get a list of the filteringPolicy objects and their properties.|
+|[List](../api/networkaccess-networkaccessroot-list-filteringpolicies.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) collection|Get a list of the filteringPolicy objects and their properties.|
 |[Get](../api/networkaccess-filteringpolicy-get.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md)|Read the properties and relationships of a filteringPolicy object.|
 
 ## Properties

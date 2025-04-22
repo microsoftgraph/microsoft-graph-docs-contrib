@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md)
 |[getAlertSeveritySummaries](../api/networkaccess-alert-getalertseveritysummaries.md)|[microsoft.graph.networkaccess.alertSeveritySummary](../resources/networkaccess-alertseveritysummary.md) collection|**TODO: Add Description**|
 |[getAlertFrequencies](../api/networkaccess-alert-getalertfrequencies.md)|[microsoft.graph.networkaccess.alertFrequencyPoint](../resources/networkaccess-alertfrequencypoint.md) collection|**TODO: Add Description**|
 |[getAlertSummaries](../api/networkaccess-alert-getalertsummaries.md)|[microsoft.graph.networkaccess.alertSummary](../resources/networkaccess-alertsummary.md) collection|**TODO: Add Description**|
-|[List filteringPolicy](../api/networkaccess-alert-list-policy.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) collection|**TODO: Add a useful description.**|
+|[List filteringPolicy](../api/networkaccess-networkaccessroot-list-filteringpolicies.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) collection|**TODO: Add a useful description.**|
 
 ## Properties
 |Property|Type|Description|
