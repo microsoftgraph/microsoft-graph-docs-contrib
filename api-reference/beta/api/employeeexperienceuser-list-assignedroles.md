@@ -105,7 +105,7 @@ Content-Type: application/json
     },
     {
         "id": "b0de8e6d-4457-4722-bdc5-5a32a09bf064",
-        "displayName": "Hybrid Admin"
+        "displayName": "Verified Admin"
     },
     {
         "id": "77aa7d76-bdf6-4cc0-80e2-fd1ac5a28471",
