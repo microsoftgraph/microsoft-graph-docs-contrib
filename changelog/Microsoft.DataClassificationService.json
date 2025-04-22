@@ -327,7 +327,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "compute",
           "ChangeType": "Addition",
-          "Description": "Added the [compute](https://learn.microsoft.com/en-us/graph/api/tenantProtectionScopeContainer-compute?view=graph-rest-beta) method to the [tenantProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/tenantProtectionScopeContainer?view=graph-rest-beta) resource.",
+          "Description": "Added the [compute](https://learn.microsoft.com/en-us/graph/api/tenantdatasecurityandgovernance-post-protectionscopes?view=graph-rest-beta) method to the [tenantProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/tenantProtectionScopeContainer?view=graph-rest-beta) resource.",
           "Target": "tenantProtectionScopeContainer"
         },
         {
@@ -335,7 +335,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "compute",
           "ChangeType": "Addition",
-          "Description": "Added the [compute](https://learn.microsoft.com/en-us/graph/api/userProtectionScopeContainer-compute?view=graph-rest-beta) method to the [userProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/userProtectionScopeContainer?view=graph-rest-beta) resource.",
+          "Description": "Added the [compute](https://learn.microsoft.com/en-us/graph/api/userdatasecurityandgovernance-post-protectionscopes?view=graph-rest-beta) method to the [userProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/userProtectionScopeContainer?view=graph-rest-beta) resource.",
           "Target": "userProtectionScopeContainer"
         },
         {

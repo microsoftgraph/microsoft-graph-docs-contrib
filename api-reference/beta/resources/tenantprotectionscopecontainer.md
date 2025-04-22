@@ -1,5 +1,6 @@
 ---
 title: "tenantProtectionScopeContainer resource type"
+toc-title: "tenantProtectionScopeContainer (preview)"
 description: "Container for tenant-wide protection scope computation actions."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container entity used to group actions related to computing tenant-wide data protection scopes. This is accessed via the `protectionScopes` navigation property on [tenantDataSecurityAndGovernance](../resources/tenantdatasecurityandgovernance.md).
+Container for tenant-wide protection scope computation actions. This is accessed via the `protectionScopes` navigation property on [tenantDataSecurityAndGovernance](../resources/tenantdatasecurityandgovernance.md).
 
 ## Methods
 
