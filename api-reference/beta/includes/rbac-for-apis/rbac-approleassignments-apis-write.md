@@ -15,3 +15,5 @@ ms.topic: include
 > - User Administrator
 > - Application Administrator
 > - Cloud Application Administrator
+>
+> For app-role assignments for MS Graph and AAD graph, the least-privileged roles are Privileged Role Administrator, Global administrator, or a custom role with a supported role permission.
