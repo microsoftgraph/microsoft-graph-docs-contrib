@@ -34,15 +34,12 @@ Inherits properties from [dataSecurityAndGovernance](../resources/datasecurityan
 | :--------------- | :------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
 | protectionScopes | [tenantProtectionScopeContainer](../resources/tenantprotectionscopecontainer.md) | Container for actions related to computing tenant-wide data protection scopes. |
 
-Inherits relationships from [dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).
-
 ## JSON representation
 
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.tenantDataSecurityAndGovernance",
-  "baseType": "microsoft.graph.dataSecurityAndGovernance",
   "openType": false
 }-->
 ``` json
