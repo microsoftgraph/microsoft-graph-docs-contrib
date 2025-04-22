@@ -292,22 +292,6 @@
         },
         {
           "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
-          "ApiChange": "Property",
-          "ChangedApiName": "color",
-          "ChangeType": "Addition",
-          "Description": "Added the **color** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
-          "ApiChange": "Property",
-          "ChangedApiName": "isEnabled",
-          "ChangeType": "Addition",
-          "Description": "Added the **isEnabled** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantDataSecurityAndGovernance",
           "ChangeType": "Addition",
@@ -393,14 +377,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **auditLogUserType** enumeration type.",
           "Target": "auditLogUserType"
-        },
-        {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
-          "ApiChange": "Resource",
-          "ChangedApiName": "auditData",
-          "ChangeType": "Addition",
-          "Description": "Added the [auditData](https://learn.microsoft.com/en-us/graph/api/resources/auditData?view=graph-rest-beta) resource.",
-          "Target": "auditData"
         }
       ],
       "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
