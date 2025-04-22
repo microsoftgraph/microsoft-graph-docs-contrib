@@ -31,14 +31,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 >
 > To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. This allows the authorized application to access registrants' information from virtual events created by that specific user.
 
-### Virtual events and VOD format
-
-| Role        | Event Type | Graph API                                                       |
-|-------------|------------|-----------------------------------------------------------------|
-| Every role  | Town hall  | `GET /townhalls/{townhallId}/sessions/{sessionId}/videoOnDemandUrl`         |
-| Organizer   | Webinar    | `GET /webinars/{webinarId}/sessions/{sessionId}/videoOnDemandUrl`           |
-| Attendee    | Webinar    | `GET /webinars/{webinarId}/registrations/{registrationId}/videoOnDemandUrl` |
-
 ## HTTP request
 
 

@@ -49,16 +49,6 @@ Inherits from [entity](../resources/entity.md).
 |preferredTimezone|String|The registrant's time zone details.|
 |preferredLanguage|String|The registrant's preferred language.|
 
-### Virtual events and VOD format
-
-| Role        | Event Type | Graph API                                                       |
-|-------------|------------|-----------------------------------------------------------------|
-| Every role  | Town hall  | `GET /townhalls/{townhallId}/sessions/{sessionId}/videoOnDemandUrl`         |
-| Organizer   | Webinar    | `GET /webinars/{webinarId}/sessions/{sessionId}/videoOnDemandUrl`           |
-| Attendee    | Webinar    | `GET /webinars/{webinarId}/registrations/{registrationId}/videoOnDemandUrl` |
-
-
-
 ### virtualEventAttendeeRegistrationStatus values
 
 | Value | Description |
