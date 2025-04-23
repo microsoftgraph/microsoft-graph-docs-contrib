@@ -160,6 +160,12 @@ For details about report views and names, see [Microsoft 365 reports - Microsoft
 | [Get storage](../api/reportroot-getoffice365groupsactivitystorage.md)          | Stream      | Get the total storage used across all group mailboxes and group sites.                                                                                 |
 | [Get file counts](../api/reportroot-getoffice365groupsactivityfilecounts.md)   | Stream      | Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group.                           |
 
+### Microsoft Graph API usage (preview)
+
+| Method                                            | Return type | Description                                                                    |
+|:--------------------------------------------------|:------------|:-------------------------------------------------------------------------------|
+| [Get API usage](../api/reportroot-getapiusage.md) | Stream      | Get a report that provides information about active Microsoft Graph API usage. |
+
 ### OneDrive activity
 
 For details about report views and names, see [Microsoft 365 reports - OneDrive for Business activity](/microsoft-365/admin/activity-reports/onedrive-for-business-activity-ww).
@@ -221,7 +227,7 @@ For details about report views and names, see [Skype for Business clients used](
 | Method                                                                                                    | Return type | Description                                                                                                                                                                                                                                                                                                     |
 | :-------------------------------------------------------------------------------------------------------- | :---------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Get user detail](../api/reportroot-getskypeforbusinessdeviceusageuserdetail.md)                          | Stream      | Get details about Skype for Business device usage by user.                                                                                                                                                                                                                                                      |
-| [Get distribution user counts](../api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md) | Stream      | Get the number of users using unique devices in your organization. The report shows you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad.                                                                                                                       |
+| [Get distribution user counts](../api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md) | Stream      | Get the number of users using unique devices in your organization. The report shows you the number of users per device, including Windows, Windows phone, Android phone, iPhone, and iPad.                                                                                                                       |
 | [Get user counts](../api/reportroot-getskypeforbusinessdeviceusageusercounts.md)                          | Stream      | Get the usage trends on how many users in your organization have connected using the Skype for Business app. You also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization. |
 
 ### Skype for Business organizer activity

@@ -59,6 +59,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants. Possible values are: `all`, `none`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | startDateTime | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session start time. |
 | subject | String | The subject of the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| videoOnDemandWebUrl | String | The [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 
@@ -147,6 +148,7 @@ The following JSON representation shows the resource type.
   "shareMeetingChatHistoryDefault": "String",
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "String",
+  "videoOnDemandWebUrl": "String",
   "videoTeleconferenceId": "String",
   "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}
 }

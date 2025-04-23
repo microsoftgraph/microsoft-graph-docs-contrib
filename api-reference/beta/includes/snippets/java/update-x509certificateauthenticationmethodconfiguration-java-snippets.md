@@ -50,6 +50,18 @@ crlValidationConfiguration.setState("disabled");
 LinkedList<Object> exemptedCertificateAuthoritiesSubjectKeyIdentifiers = new LinkedList<Object>();
 crlValidationConfiguration.setExemptedCertificateAuthoritiesSubjectKeyIdentifiers(exemptedCertificateAuthoritiesSubjectKeyIdentifiers);
 additionalData.put("crlValidationConfiguration", crlValidationConfiguration);
+LinkedList<Object> certificateAuthorityScopes = new LinkedList<Object>();
+ property = new ();
+property.setSubjectKeyIdentifier("aaaaaaaabbbbcccc111122222222222222333333");
+property.setPublicKeyInfrastructureIdentifier("Contoso PKI");
+LinkedList<Object> includeTargets1 = new LinkedList<Object>();
+ property1 = new ();
+property1.setId("aaaaaaaa-bbbb-cccc-1111-222222222222");
+property1.setTargetType("group");
+includeTargets1.add(property1);
+property.setIncludeTargets(includeTargets1);
+certificateAuthorityScopes.add(property);
+additionalData.put("certificateAuthorityScopes", certificateAuthorityScopes);
 authenticationMethodConfiguration.setAdditionalData(additionalData);
 AuthenticationMethodConfiguration result = graphClient.policies().authenticationMethodsPolicy().authenticationMethodConfigurations().byAuthenticationMethodConfigurationId("{authenticationMethodConfiguration-id}").patch(authenticationMethodConfiguration);
 
