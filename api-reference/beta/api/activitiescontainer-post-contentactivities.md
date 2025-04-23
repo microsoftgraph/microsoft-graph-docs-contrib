@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a content activity for the signed-in user. Logs data from processed content in a structured format to ensure audit compliance, track user actions, and drive anomalous behavior detections. It captures detailed information about each activity, including timestamps, actions taken, and the involved resources, which are essential for tracking and auditing user interactions and system events.
+Create a content activity for the signed-in user. Log data from processed content in a structured format to ensure audit compliance, track user actions, and drive anomalous behavior detections. It captures detailed information about each activity, including timestamps, actions taken, and the involved resources, which are essential for tracking and auditing user interactions and system events.
 
 ## Permissions
 
