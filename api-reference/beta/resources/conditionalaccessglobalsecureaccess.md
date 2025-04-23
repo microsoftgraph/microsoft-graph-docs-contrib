@@ -2,13 +2,13 @@
 title: "conditionalAccessGlobalSecureAccess resource type"
 description: " Represents traffic profile for Global Secure Access."
 ms.localizationpriority: medium
-author: "Dhruvin Shah"
+author: "dhruvinrshah"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ms.date: 04/10/2025
 ---
 
-# conditionalAccessFilter resource type
+# conditionalAccessGlobalSecureAccess resource type
 
 Namespace: microsoft.graph
 
