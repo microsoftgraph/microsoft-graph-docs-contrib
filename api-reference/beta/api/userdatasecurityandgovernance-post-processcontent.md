@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Process content against data protection policies in the context of the current user. Evaluate one or more pieces of content against applicable data protection policies (like DLP) in the context of the current user, their device, the application they are using, and the activity they are performing. This action returns the set of actions the calling application should enforce.
+Process content against data protection policies in the context of the current user. 
+
+Evaluate one or more pieces of content against applicable data protection policies (like DLP) in the context of the current user, their device, the application they are using, and the activity they are performing. This action returns the set of actions the calling application should enforce.
 
 ## Permissions
 

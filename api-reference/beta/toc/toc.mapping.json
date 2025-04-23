@@ -422,7 +422,7 @@
       ]
     },
     {
-      "Name": "Data Security and Governance",
+      "name": "Data Security and Governance (preview)",
       "resources": [
         "userDataSecurityAndGoverance"
       ]
@@ -2573,7 +2573,7 @@
           ]
         },
         {
-          "name": "Data Security and Compliance",
+          "name": "Data Security and Compliance (preview)",
           "resources": [
             "microsoft.graph.DataSecurityAndGovernance"
           ]

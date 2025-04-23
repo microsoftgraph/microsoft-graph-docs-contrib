@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents content provided as a binary data stream. Base64 encoded. Typically used for processing files within a [processFileMetadata](../resources/processfilemetadata.md) context. Inherits from [contentBase](../resources/contentbase.md).
+Represents content provided as a binary data stream. 
+
+Base64 encoded. Typically used for processing files within a [processFileMetadata](../resources/processfilemetadata.md) context. Inherits from [contentBase](../resources/contentbase.md).
 
 ## Properties
 

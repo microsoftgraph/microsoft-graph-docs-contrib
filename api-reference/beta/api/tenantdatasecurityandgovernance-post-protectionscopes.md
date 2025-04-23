@@ -1,6 +1,6 @@
 ---
-title: "Compute tenant protection scopes"
-toc.title: "Compute tenant protection scopes (preview)"
+title: "Compute tenantProtectionScope"
+toc.title: "Compute tenantProtectionScope (preview)"
 description: "Compute the tenant-wide data protection policies and actions, including user/group scoping."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Compute the tenant-wide data protection policies and actions, including user/group scoping. Applications are required to adhere to Microsoft Purview policies established by Security/Compliance Administrators, which dictate how data and user activities should be managed. This is referred to as protection scopes, and applications should use the ProtectionScopes API to understand what has been defined in the context of user interactions. The application calls the ProtectionScopes API to get the protection scopes for the user.
+Compute the tenant-wide data protection policies and actions, including user/group scoping. 
+
+Applications are required to adhere to Microsoft Purview policies established by Security/Compliance Administrators, which dictate how data and user activities should be managed. This is referred to as protection scopes, and applications should use the ProtectionScopes API to understand what has been defined in the context of user interactions. The application calls the ProtectionScopes API to get the protection scopes for the user.
 
 The API enables applications to specify activity types and location types in the request, thereby limiting the response to only include relevant protection scopes. Applications are required to provide device metadata and application metadata to assist in determining the appropriate protection scopes. This information is essential for ascertaining policy decisions relevant to the application's context.
 

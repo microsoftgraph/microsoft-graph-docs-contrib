@@ -1,6 +1,6 @@
 ---
-title: "processContentAsync action"
-toc.title: "processContentAsync action (preview)"
+title: "tenantDataSecurityAndGovernance: processContentAsync"
+toc.title: "tenantDataSecurityAndGovernance: processContentAsync (preview)"
 description: "Process a batch of content entries asynchronously against data protection policies."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,13 +9,15 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# processContentAsync action
+# tenantDataSecurityAndGovernance: processContentAsync
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Submit a batch of content processing requests for asynchronous evaluation against applicable data protection policies (like DLP). Each request in the batch specifies the user context, content, activity, device, and application details. This is suitable for scenarios where immediate inline evaluation is not required or feasible.
+Process a batch of content entries asynchronously against data protection policies.
+
+Each request in the batch specifies the user context, content, activity, device, and application details. This is suitable for scenarios where immediate inline evaluation is not required or feasible.
 
 ## Permissions
 

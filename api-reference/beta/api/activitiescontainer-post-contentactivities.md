@@ -1,6 +1,6 @@
 ---
-title: "Create content activity"
-toc.title: "Create content activity (preview)"
+title: "Create contentActivity"
+toc.title: "Create contentActivity (preview)"
 description: "Create a content activity for the signed-in user."
 author: "ArunGedela"
 ms.date: 04/03/2025
