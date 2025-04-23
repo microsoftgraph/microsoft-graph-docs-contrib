@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 ## Properties
 | Property                            | Type                            | Description                 |
 | :-----------------------------------| :------------------------------ | :-------------------------- |
-| uriAdditionWithoutUniqueTenantIdentifier               | [identifierUriRestriction](../resources/identifierurirestriction.md)       | Block new identifier URIs for applications, unless they contain a unique tenant identifier like tenantId, appId or verified domain. e.g. `api://{tenatId}/string`, `api://{appId}/string`, `{scheme}://string/{tenantId}`, `{scheme}://string/{appId}`, `https://{verified-domain.com}/path`, `{scheme}://{subdomain}.{verified-domain.com}/path`|
+| uriAdditionWithoutUniqueTenantIdentifier               | [identifierUriRestriction](../resources/identifierurirestriction.md)       | Block new identifier URIs for applications, unless they contain a unique tenant identifier like the tenant ID, **appId** (client ID), or verified domain. For example, `api://{tenatId}/string`, `api://{appId}/string`, `{scheme}://string/{tenantId}`, `{scheme}://string/{appId}`, `https://{verified-domain.com}/path`, `{scheme}://{subdomain}.{verified-domain.com}/path`.|
 | nonDefaultUriAddition               | [identifierUriRestriction](../resources/identifierurirestriction.md)       | Block new identifier URIs for applications, unless they are the "default" URI of the format `api://{appId}` or `api://{tenantId}/{appId}`.|
 
 ## Relationships
