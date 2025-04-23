@@ -18,6 +18,45 @@
       "WorkloadArea": "Applications",
       "SubArea": ""
     },
+          "Id": "d3a0c8a3-b8d6-45fc-8c57-2bb7be5e6b42",
+          "ApiChange": "Property",
+          "ChangedApiName": "globalSecureAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the **globalSecureAccess** property to the [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessApplications"
+        },
+        {
+          "Id": "d3a0c8a3-b8d6-45fc-8c57-2bb7be5e6b42",
+          "ApiChange": "Property",
+          "ChangedApiName": "networkAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the **networkAccess** property to the [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessApplications"
+        },
+        {
+          "Id": "d3a0c8a3-b8d6-45fc-8c57-2bb7be5e6b42",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessGlobalSecureAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessGlobalSecureAccess](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGlobalSecureAccess?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessGlobalSecureAccess"
+        },
+        {
+          "Id": "d3a0c8a3-b8d6-45fc-8c57-2bb7be5e6b42",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessNetworkAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessNetworkAccess](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessNetworkAccess?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessNetworkAccess"
+        }
+      ],
+      "Id": "d3a0c8a3-b8d6-45fc-8c57-2bb7be5e6b42",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-17T18:59:17.2755757Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    }, 
     {
       "ChangeList": [
         {
