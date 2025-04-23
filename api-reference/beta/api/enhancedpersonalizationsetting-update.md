@@ -85,7 +85,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.enhancedPersonalizationSetting"
+  "@odata.type": "microsoft.graph.enhancedPersonalizationSetting",
   "name": "update_enhancedpersonalizationsetting_generic"
 }
 -->
@@ -126,7 +126,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.enhancedPersonalizationSetting"
+  "@odata.type": "microsoft.graph.enhancedPersonalizationSetting",
   "name": "update_enhancedpersonalizationsetting_example"
 }
 -->
