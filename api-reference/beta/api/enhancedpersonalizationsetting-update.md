@@ -4,7 +4,7 @@ description: "Update the properties of an enhancedPersonalizationSetting object 
 author: "Ross-GH"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
-ms.subservice: "meetings-copilot"
+ms.subservice: "microsoft-365-copilot"
 doc_type: apiPageType
 ---
 

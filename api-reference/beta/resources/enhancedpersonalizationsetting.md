@@ -4,7 +4,7 @@ description: "Represents a setting that controls whether Microsoft 365 Copilot c
 author: "Ross-GH"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
-ms.subservice: "meetings-copilot"
+ms.subservice: "microsoft-365-copilot"
 doc_type: resourcePageType
 ---
 
