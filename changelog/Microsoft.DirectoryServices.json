@@ -38,7 +38,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessGlobalSecureAccess",
           "ChangeType": "Addition",
-          "Description": "Added the [conditionalAccessGlobalSecureAccess](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGlobalSecureAccess?view=graph-rest-beta) resource.",
+          "Description": "Added the [conditionalAccessGlobalSecureAccess](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessglobalsecureaccess?view=graph-rest-beta) resource.",
           "Target": "conditionalAccessGlobalSecureAccess"
         },
         {
@@ -46,7 +46,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessNetworkAccess",
           "ChangeType": "Addition",
-          "Description": "Added the [conditionalAccessNetworkAccess](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessNetworkAccess?view=graph-rest-beta) resource.",
+          "Description": "Added the [conditionalAccessNetworkAccess](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessnetworkaccess?view=graph-rest-beta) resource.",
           "Target": "conditionalAccessNetworkAccess"
         }
       ],
