@@ -1,7 +1,7 @@
 ---
 title: "customMetadataDictionary"
 toc.title: "customMetadataDictionary (preview)"
-description: "A dictionary specifically for storing custom metadata extracted from content, where values must be strings."
+description: "Represents a dictionary specifically for storing custom metadata extracted from content, where values must be strings."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: low
@@ -15,7 +15,7 @@ Namespace: microsoft.dataClassificationService.contract
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A dictionary specifically for storing custom metadata extracted from content, where values must be strings. It's an open type but constrained to only accept string values for its dynamic properties.
+Represents a dictionary specifically for storing custom metadata extracted from content, where values must be strings. It's an open type but constrained to only accept string values for its dynamic properties.
 
 ## Properties
 

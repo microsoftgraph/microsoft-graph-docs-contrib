@@ -9,7 +9,7 @@ ms.subservice: "security"
 doc_type: complexTypePageType
 ---
 
-# deviceMetadata
+# deviceMetadata resource type
 
 Namespace: microsoft.graph
 
@@ -30,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceMetadata",

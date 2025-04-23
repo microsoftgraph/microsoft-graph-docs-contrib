@@ -9,7 +9,7 @@ ms.subservice: "security"
 doc_type: complexTypePageType
 ---
 
-# integratedApplicationMetadata complex type
+# integratedApplicationMetadata resource type
 
 Namespace: microsoft.dataClassificationService.contract
 

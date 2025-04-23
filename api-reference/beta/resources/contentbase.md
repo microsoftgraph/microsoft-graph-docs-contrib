@@ -19,7 +19,7 @@ Abstract base type representing the actual content (text or binary) being proces
 
 ## Properties
 
-This abstract type doesn't define properties itself. Derived types specify the content property (`data`).
+None.
 
 ## Relationships
 
@@ -27,7 +27,8 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type. Note that this is an abstract type and won't be instantiated directly.
+The following JSON representation shows the response. 
+> **Note:** This abstract type won't be instantiated directly.
 <!-- {
   "blockType": "resource",
   "abstract": true,
