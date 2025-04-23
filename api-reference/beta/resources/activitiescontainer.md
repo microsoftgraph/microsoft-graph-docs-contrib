@@ -1,7 +1,7 @@
 ---
 title: "activitiesContainer"
 toc.title: "activitiesContainer (preview)"
-description: "Container for different types of activity logs related to data security and governance, such as content activities"
+description: "Represents a container for different types of activity logs related to data security and governance, such as content activities"
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Container for different types of activity logs related to data security and governance, such as content activities
+Represents a container for different types of activity logs related to data security and governance, such as content activities
 
 ## Properties
 
