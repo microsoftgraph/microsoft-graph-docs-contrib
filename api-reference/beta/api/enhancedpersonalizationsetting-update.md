@@ -59,7 +59,8 @@ If successful, this method returns a `200 OK` response code and an updated [enha
 
 ## Examples
 
-### Request
+### Example 1
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -78,7 +79,7 @@ Content-Type: application/json
 }
 ```
 
-### Response body
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -99,8 +100,8 @@ Content-Type: application/json
   "disabledForGroup": "String"
 }
 ```
-
-### Request example
+### Example 2
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -119,7 +120,7 @@ Content-type: application/json
 
 ---
 
-### Response body example
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
