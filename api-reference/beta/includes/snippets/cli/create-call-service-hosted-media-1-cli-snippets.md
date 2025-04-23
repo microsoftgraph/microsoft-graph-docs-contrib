@@ -27,7 +27,8 @@ mgc-beta communications calls create --body '{\
   "callOptions": {\
     "@odata.type": "#microsoft.graph.outgoingCallOptions",\
     "isContentSharingNotificationEnabled": true,\
-    "isDeltaRosterEnabled": true\
+    "isDeltaRosterEnabled": true,\
+    "isInteractiveRosterEnabled": true,\
   },\
   "mediaConfig": {\
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"\

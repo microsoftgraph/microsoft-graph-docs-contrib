@@ -5,20 +5,22 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-monitoring-health"
 author: "egreenberg14"
-ms.date: 07/22/2024
+ms.date: 03/27/2025
 ---
 
 # auditActivityInitiator resource type
 
 Namespace: microsoft.graph
-Identity the resource object that initiates the activity. The initiator can be a user, an app or a system (which is considered as an app)
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Identity the resource object that initiates the activity. The initiator can be a user, an app or a system (which is considered as an app).
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |app|[appIdentity](appidentity.md)|If the actor initiating the activity is an app, this property indicates all its identification information including appId, displayName, servicePrincipalId, and servicePrincipalName.|
+|linkableIdentifiers|[linkableIdentifiers](../resources/linkableidentifiers.md)|A set of linkable claims to link together all the authentication artifacts issued from a single interactive root authentication.|
 |user|[auditUserIdentity](auditUserIdentity.md)|If the actor initiating the activity is a user, this property indicates their identification information including their id, displayName, and userPrincipalName.|
 
 ## Relationships
@@ -39,9 +41,9 @@ The following JSON representation shows the resource type.
 ```json
 {
   "app": {"@odata.type": "microsoft.graph.appIdentity"},
-  "user": {"@odata.type": "microsoft.graph.userIdentity"}
+  "user": {"@odata.type": "microsoft.graph.userIdentity"},
+  "linkableIdentifiers": {"@odata.type": "microsoft.graph.linkableIdentifiers"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

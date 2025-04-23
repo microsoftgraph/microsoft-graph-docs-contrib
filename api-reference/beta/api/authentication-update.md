@@ -64,6 +64,8 @@ To update the per-user multifactor authentication state for the signed-in user:
 PATCH /me/authentication/requirements
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 To update the per-user multifactor authentication state for a user:
 <!-- {
   "blockType": "ignored"

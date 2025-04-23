@@ -605,6 +605,8 @@ items:
       displayName: files, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
     - name: Addressing drive items
       href: onedrive-addressing-driveitems.md
+    - name: Using app folder in OneDrive and SharePoint
+      href: onedrive-sharepoint-appfolder.md
   - name: Financials (preview)
     href: dynamics-business-central-concept-overview.md
     displayName: Dynamics, Dynamics 365 Business Central
@@ -684,6 +686,8 @@ items:
       items:
       - name: Configure Microsoft Entra Private Access
         href: tutorial-entra-private-access.md
+      - name: Configure Microsoft Entra Internet Access
+        href: tutorial-entra-internet-access.md
   - name: Industry data ETL (preview)
     href: industrydata-concept-overview.md
   - name: Mail
@@ -790,6 +794,8 @@ items:
       href: people-insights-overview.md
     - name: Search people
       href: search-concept-person.md
+    - name: Enhanced personalization privacy
+      href: control-enhanced-personalization-privacy.md
   - name: Personal contacts
     items:
     - name: Overview
@@ -877,8 +883,12 @@ items:
       - name: Set up application authentication
         href: security-ediscovery-appauthsetup.md
   - name: Sites and lists
-    href: sharepoint-concept-overview.md
-    displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
+    items:
+      - name: Overview
+        href: sharepoint-concept-overview.md
+        displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
+      - name: Using app folder in OneDrive and SharePoint
+        href: onedrive-sharepoint-appfolder.md
   - name: Tasks and plans
     items:
     - name: Overview

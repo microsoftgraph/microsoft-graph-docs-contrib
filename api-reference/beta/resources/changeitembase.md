@@ -1,5 +1,5 @@
 ---
-title: "changeItemBase resource type"
+title: "changeItemBase resource type (deprecated)"
 description: "Represents either a planned change or planned new feature in Microsoft Entra."
 author: "garretraziel"
 ms.date: 11/20/2024
@@ -9,11 +9,13 @@ doc_type: resourcePageType
 toc.title: Product changes
 ---
 
-# changeItemBase resource type
+# changeItemBase resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [entra-lifecycle-announcements-deprecation-note](../includes/entra-lifecycle-announcements-deprecation-note.md)]
 
 Represents either a planned change or planned new feature in Microsoft Entra. This resource is an abstract type from which the following resources inherit:
 
