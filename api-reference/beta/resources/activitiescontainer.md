@@ -1,7 +1,7 @@
 ---
 title: "Activities"
 toc.title: "Activities (preview)"
-description: "Container for different types of activity logs related to data security and governance, such as content activities"
+description: "Represents a container for different types of activity logs related to data security and governance, such as content activities"
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
