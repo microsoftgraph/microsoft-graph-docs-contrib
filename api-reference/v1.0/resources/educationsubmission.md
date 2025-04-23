@@ -42,7 +42,7 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |excusedBy|[identitySet](identityset.md)| The user that marked the submission as excused.|
 |excusedDateTime|DateTimeOffset|The time that the submission was excused. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|Unique identifier for the submission.|
-|lastModifiedBy|[identitySet](../resources/intune-rbac-identityset.md)|The identities of those who modified the submission.|
+|lastModifiedBy|[identitySet](identityset.md)|The identities of those who modified the submission.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the submission was modified.|
 |reassignedBy|[identitySet](identityset.md)|User who moved the status of this submission to reassigned.|
 |reassignedDateTime|DateTimeOffset|Moment in time when the submission was reassigned. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
