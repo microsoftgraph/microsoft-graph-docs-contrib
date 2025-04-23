@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [enha
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_enhancedpersonalizationsetting"
+  "name": "update_enhancedpersonalizationsetting_generic"
 }
 -->
 ``` http
@@ -104,7 +104,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_enhancedpersonalizationsetting"
+  "name": "update_enhancedpersonalizationsetting_example"
 }
 -->
 ```http
@@ -117,6 +117,8 @@ Content-type: application/json
 }
 ```
 
+---
+
 ### Response
 
 The following example shows the response.
@@ -125,6 +127,7 @@ The following example shows the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.enhancedPersonalizationSetting"
+  "name": "update_enhancedpersonalizationsetting_example"
 }
 -->
 ```http
