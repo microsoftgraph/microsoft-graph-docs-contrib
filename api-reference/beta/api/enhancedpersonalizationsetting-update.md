@@ -98,3 +98,41 @@ Content-Type: application/json
   "disabledForGroup": "String"
 }
 ```
+
+### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_enhancedpersonalizationsetting"
+}
+-->
+```http
+PATCH https://graph.microsoft.com/beta/copilot/settings/people/enhancedpersonalization
+Content-type: application/json
+
+{
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+}
+```
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.enhancedPersonalizationSetting"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+}
+```
