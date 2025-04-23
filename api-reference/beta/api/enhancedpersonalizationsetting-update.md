@@ -86,6 +86,7 @@ The following example shows the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.enhancedPersonalizationSetting"
+  "name": "update_enhancedpersonalizationsetting_generic"
 }
 -->
 ``` http
@@ -99,9 +100,8 @@ Content-Type: application/json
 }
 ```
 
-### Request
+### Request example
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_enhancedpersonalizationsetting_example"
@@ -119,7 +119,7 @@ Content-type: application/json
 
 ---
 
-### Response
+### Response body example
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
