@@ -18,6 +18,9 @@
       "WorkloadArea": "Applications",
       "SubArea": ""
     },
+    {
+    "ChangeList": [
+      {
           "Id": "d3a0c8a3-b8d6-45fc-8c57-2bb7be5e6b42",
           "ApiChange": "Property",
           "ChangedApiName": "globalSecureAccess",
