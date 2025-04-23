@@ -47,10 +47,12 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 | replace         | The preexisting file item is deleted and replaced with the new item when a conflict occurs. This option is only supported for file items. The new item has the same name as the old one. The old item's history is deleted.  |
 | rename          | Appends the lowest integer that guarantees uniqueness to the name of the new file or folder and completes the operation.  |
 
-If you specify `@microsoft.graph.conflictBehavior=replace` for a source folder item, this API returns a `202 Accepted` response. In this case, querying the monitoring url reports a `nameAlreadyExists` error. If you specify this parameter with the `childrenOnly` parameter, a `nameAlreadyExists` error occurs if there are any folder items in the source item's children.
+
 
 >[!NOTE]
->The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
+> The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
+>
+> If you specify `@microsoft.graph.conflictBehavior=replace` for a source folder item, this API returns a `202 Accepted` response. In this case, querying the monitoring url reports a `nameAlreadyExists` error. If you specify this parameter with the `childrenOnly` parameter, a `nameAlreadyExists` error occurs if there are any folder items in the source item's children.
 
 ## Request body
 
@@ -63,11 +65,10 @@ In the request body, provide a JSON object with the following parameters.
 | childrenOnly    | Boolean                                        | Optional. If set to `true`, the children of the **driveItem** are copied but not the **driveItem** itself. The default value is `false`. Valid _only_ on folder items. |
 | includeAllVersionHistory    | Boolean                            | Optional. If set to `true`, source files version history (major versions and minor versions, if any) should be copied to the destination, within the target version setting limit. If `false`, only the latest major version is copied to the destination. The default value is `false`.   |
 
-
 >[!NOTE]
 >The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
->
->For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites). If you use the `@microsoft.graph.conflictBehavior` query parameter with the `childrenOnly` parameter, then every child in the operation will be subject to the `@microsoft.graph.conflictBehavior` specified.
+
+For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites). If you use the `@microsoft.graph.conflictBehavior` query parameter with the `childrenOnly` parameter, then every child in the operation will be subject to the `@microsoft.graph.conflictBehavior` specified.
 
 
 ## Response
