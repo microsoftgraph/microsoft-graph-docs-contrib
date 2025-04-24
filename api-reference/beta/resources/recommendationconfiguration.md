@@ -1,10 +1,10 @@
 ---
 title: "recommendationConfiguration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents the configuration for recommendation notifications."
+author: "mbrndiar"
 ms.date: 04/23/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -14,31 +14,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the configuration for recommendation notifications. This resource type is used to manage the notification settings for recommendations in Microsoft Entra ID.
+It allows you to enable or disable notifications for recommendations, which can help organizations stay informed about important security and compliance issues.
 
 Inherits from [entity](../resources/entity.md).
 
-
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/directory-list-recommendationconfiguration.md)|[recommendationConfiguration](../resources/recommendationconfiguration.md) collection|Get a list of the recommendationConfiguration objects and their properties.|
-|[Create](../api/directory-post-recommendationconfiguration.md)|[recommendationConfiguration](../resources/recommendationconfiguration.md)|Create a new recommendationConfiguration object.|
-|[Get](../api/recommendationconfiguration-get.md)|[recommendationConfiguration](../resources/recommendationconfiguration.md)|Read the properties and relationships of a recommendationConfiguration object.|
-|[Update](../api/recommendationconfiguration-update.md)|[recommendationConfiguration](../resources/recommendationconfiguration.md)|Update the properties of a recommendationConfiguration object.|
-|[Delete](../api/directory-delete-recommendationconfiguration.md)|None|Delete a recommendationConfiguration object.|
+|[Get](../api/recommendationconfiguration-get.md)|[recommendationConfiguration](../resources/recommendationconfiguration.md)|Read the properties of a recommendationConfiguration object.|
+|[Update](../api/recommendationconfiguration-update.md)|None|Update the properties of a recommendationConfiguration object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isNotificationEnabled|Boolean|**TODO: Add Description**|
+|id|String|A unique identifier of the entity. Inherited from [entity](../resources/entity.md). |
+|isNotificationEnabled|Boolean|Indicates whether notifications for recommendations are enabled.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -55,4 +55,3 @@ The following JSON representation shows the resource type.
   "isNotificationEnabled": "Boolean"
 }
 ```
-

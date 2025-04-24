@@ -1,10 +1,10 @@
 ---
 title: "Update recommendationConfiguration"
 description: "Update the properties of a recommendationConfiguration object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "mbrndiar"
 ms.date: 04/23/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -48,17 +48,13 @@ PATCH /directory/recommendationConfiguration
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|isNotificationEnabled|Boolean|**TODO: Add Description** Required.|
-
-
+|isNotificationEnabled|Boolean|Indicates whether notifications for recommendations are enabled. Required.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [recommendationConfiguration](../resources/recommendationconfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code
 
 ## Examples
 
@@ -80,7 +76,6 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -93,11 +88,4 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.recommendationConfiguration",
-  "id": "4806d35e-0437-dfae-18ad-4b240dbd6e38",
-  "isNotificationEnabled": "Boolean"
-}
 ```
-

@@ -1,10 +1,10 @@
 ---
 title: "Get recommendationConfiguration"
 description: "Read the properties and relationships of a recommendationConfiguration object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "mbrndiar"
 ms.date: 04/23/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -69,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/directory/recommendationConfiguration
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -92,4 +91,3 @@ Content-Type: application/json
   }
 }
 ```
-
