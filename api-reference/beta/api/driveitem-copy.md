@@ -11,9 +11,18 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Asynchronously create a copy of a [driveItem][item-resource] (including any children) under a new parent item or with a new name. After the request is acknowledged, it enters a queue. The actual copying, including any subitems, occurs at an undetermined time. Progress is reported until the operation is completed by [monitoring the progress](/graph/long-running-actions-overview).
+Asynchronously create a copy of a [driveItem][item-resource], optionally including any children, under a new parent item or with a new name. After the request is acknowledged, the item enters a processing queue. Copying, including children, happens asynchronously. Progress is reported until the operation is completed by [monitoring the progress](/graph/long-running-actions-overview).
+
+> [!IMPORTANT]
+> Permissions are not retained when an item is copied. The copied driveItem inherits the permissions of the destination folder.
+>
+> File versions are only retained when the includeAllVersionHistory parameter is explicitly set to true. Otherwise, only the latest version is copied.
+>
+> The Copy operation is restricted to 30,000 drive items. For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites).
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -68,7 +77,7 @@ In the request body, provide a JSON object with the following parameters.
 >[!NOTE]
 >The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
 
-For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites). If you use the `@microsoft.graph.conflictBehavior` query parameter with the `childrenOnly` parameter, then every child in the operation will be subject to the `@microsoft.graph.conflictBehavior` specified.
+If you use the `@microsoft.graph.conflictBehavior` query parameter with the `childrenOnly` parameter, then every child in the operation will be subject to the `@microsoft.graph.conflictBehavior` specified.
 
 
 ## Response
