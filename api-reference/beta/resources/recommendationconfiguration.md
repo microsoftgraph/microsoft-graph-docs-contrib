@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 Represents the configuration for recommendation notifications. This resource type is used to manage the notification settings for recommendations in Microsoft Entra ID.
 It allows you to enable or disable notifications for recommendations, which can help organizations stay informed about important security and compliance issues.
 
-Inherits from [entity](../resources/entity.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -30,7 +28,6 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|A unique identifier of the entity. Inherited from [entity](../resources/entity.md). |
 |isNotificationEnabled|Boolean|Indicates whether notifications for recommendations are enabled.|
 
 ## Relationships
@@ -51,7 +48,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.recommendationConfiguration",
-  "id": "String (identifier)",
   "isNotificationEnabled": "Boolean"
 }
 ```

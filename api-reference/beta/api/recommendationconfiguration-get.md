@@ -37,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /directory/recommendationConfiguration
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -86,7 +82,6 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.recommendationConfiguration",
-    "id": "4806d35e-0437-dfae-18ad-4b240dbd6e38",
     "isNotificationEnabled": "Boolean"
   }
 }
