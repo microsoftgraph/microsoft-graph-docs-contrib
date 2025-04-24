@@ -21,7 +21,6 @@ Represents a remote action result specified by a Cloud PC.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Retrieve remote action results](../api/cloudpc-retrievecloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) collection|Retrieve [remote action results](../resources/cloudpcremoteactionresult.md) and check the status of a specific remote action performed on the associated Cloud PC device.|
-|[Get remote action results (deprecated)](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device. This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [retrieveCloudPcRemoteActionResults](../api/cloudpc-retrievecloudpcremoteactionresults.md) API.|
 
 ## Properties
 

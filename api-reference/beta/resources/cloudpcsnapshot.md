@@ -19,11 +19,6 @@ Represents a snapshot of the device settings of a Cloud PC that can be used to r
 
 Inherits from [entity](../resources/entity.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List (deprecated)](../api/virtualendpoint-list-snapshots.md)|None|Get a list of the [cloudPcSnapshot](../resources/cloudpcsnapshot.md) objects and their properties. This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [cloudPcRetrieveSnapshots](../api/cloudpc-retrievesnapshots.md) API.|
-
 ## Properties
 
 |Property|Type|Description|
