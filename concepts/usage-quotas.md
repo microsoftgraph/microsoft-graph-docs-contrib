@@ -1,0 +1,61 @@
+---
+title: "Microsoft Graph usage quotas"
+description: "Learn about usage quotas on Microsoft Graph."
+ms.localizationpriority: high
+author: Jeremyke
+ms.author: jeremyke
+ms.subservice: non-product-specific
+ms.topic: overview
+ms.date: 03/11/2025
+#Customer intent: As a developer integrating with Microsoft Graph, or a tenant administrator managing applications in my tenant, I want to understand tenant level usage quotas applied in Microsoft Graph.
+---
+
+## Important note
+
+This documentation is preliminary and subject to change as additional capabilities are released.
+
+# Preview: Microsoft Graph usage quotas
+
+Some areas of Microsoft Graph enforce usage quotas. Usage quotas are allocated at the tenant level and are based on the number of user licenses active for the relevant Microsoft Graph functionality. By default, an individual application can use up to 20% of the tenant's total quota before being throttled. This application quota prevents any single application from consuming all of the tenant's resources unexpectedly. 
+
+## Usage quota details
+
+### Time Window
+
+Usage quotas are calculated based on a 24-hour window of usage. Once the quota is consumed Microsoft Graph will return an HTTP 429 error code for subsequent requests until no more than 1 hour has passed, at which time 1/24th of the quota will be available and API requests will be unblocked.
+
+### Service Areas
+
+Microsoft Graph has a very large surface area covering many different APIs, with different calling patterns, for different Microsoft services. To offer quotas relevant to such disparate APIs we created groups of APIs we are calling service areas. Service areas represent sections of common functionality delivered by Microsoft Graph, generally aligned to product offerings. Our initial service areas will be:
+
+- Microsoft Exchange
+- Microsoft Teams Calling
+- Microsoft Teams Messaging
+- Microsoft Teams Presence
+
+We may add additional service areas over time.
+
+### Quota Calculations
+
+For each service area, quota is calculated based on the number of qualifying user licenses associated with that area, multiplied by a scaling factor, which determines the number of API calls per 24-hour period. The quota is calculated frequently - as additional licenses are purchased or licenses become inactive the available quota will adjust accordingly. Changes in quota will be reflected in reporting data within 48 hours.
+
+#### Qualifying Licenses
+
+Qualifying licenses for each service area are licenses that enable the associated functionality of the area.  Quota amounts are basic license counts only, add-ons or higher tier licenses do not add additional capacity.
+
+#### Service area quota values
+
+| Service Area  | API Requests per user license |
+| :------------ | :------------------------ |
+| Microsoft Exchange | 2000 API requests / day |
+| Microsoft Teams Calling | 30 API requests / day |
+| Microsoft Teams Messaging | 300 API requests / day |
+| Microsoft Teams Presence | 2000 API requests / day |
+
+### Default safe application quota
+
+By default an application can consume up to 20% of the tenant's total quota. This default protects the tenant from an application consuming all of a tenant's resources unexpectedly.
+
+## Managing quota for a tenant
+
+Global Administrators and users with the Global Reader role can utilize the usage quota [reporting API](/graph/api/reportroot-getapiquota) to see how the tenant's quota is being used. The usage quota reporting API provides visibility into both tenant level usage as well as individual application usage.
