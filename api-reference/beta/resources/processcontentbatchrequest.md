@@ -1,21 +1,23 @@
 ---
-title: "processContentBatchRequest"
-toc.title: "processContentBatchRequest (preview)"
-description: "Represents a single entry within a request submitted to the `processContentAsync` action."
+title: "processContentBatchRequest resource type"
+toc.title: "processContentBatchRequest resource type (preview)"
+description: "Represents a single entry within a request submitted to the processContentAsync action."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# processContentBatchRequest complex type
+# processContentBatchRequest resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a single entry within a request submitted to the `processContentAsync` action. Each entry contains the content and context to be processed for a specific user, along with a request ID for correlation.
+Represents a single entry within a request submitted to the processContentAsync action.
+
+Each entry contains the content and context to be processed for a specific user, along with a request ID for correlation.
 
 ## Properties
 
@@ -31,7 +33,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.processContentBatchRequest",

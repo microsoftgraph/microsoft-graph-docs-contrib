@@ -1,15 +1,15 @@
 ---
-title: "processFileMetadata complex type"
-toc.title: "processFileMetadata complex type (preview)"
+title: "processFileMetadata resource type"
+toc.title: "processFileMetadata resource type (preview)"
 description: "Represents metadata for a content entry that is a file."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# processFileMetadata complex type
+# processFileMetadata resource type
 
 Namespace: microsoft.graph
 
@@ -32,7 +32,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.processFileMetadata",

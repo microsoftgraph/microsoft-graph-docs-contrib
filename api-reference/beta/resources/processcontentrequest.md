@@ -1,12 +1,12 @@
 ---
-title: "processContentRequest"
-toc.title: "processContentRequest (preview)"
+title: "processContentRequest resource type"
+toc.title: "processContentRequest resource type (preview)"
 description: "Defines the input payload for the `processContent` and `processContentAsync` actions."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
 # processContentRequest type
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the input payload for the `processContent` and `processContentAsync` actions. It includes the actual content to be processed along with relevant metadata about the activity, device, and integrated application.
+Defines the input payload for the `processContent` and `processContentAsync` actions.
+
+It includes the actual content to be processed along with relevant metadata about the activity, device, and integrated application.
 
 ## Properties
 

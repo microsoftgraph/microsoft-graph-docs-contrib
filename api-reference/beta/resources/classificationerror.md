@@ -1,15 +1,15 @@
 ---
-title: "classificationError"
-toc.title: "classificationError (preview)"
+title: "classificationError resource type"
+toc.title: "classificationError resource type(preview)"
 description: "Represents a detailed error object, potentially containing multiple nested errors, encountered during classification or policy evaluation."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# classificationError complex type
+# classificationError resource type
 
 Namespace: microsoft.graph
 
@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.classificationError",
@@ -41,7 +41,6 @@ The following JSON representation shows the complex type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.classificationError",
-  // Inherited properties from classifcationErrorBase
   "code": "String",
   "message": "String",
   "target": "String",

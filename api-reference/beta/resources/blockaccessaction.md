@@ -1,15 +1,15 @@
 ---
-title: "blockAccessAction"
-toc.title: "blockAccessAction (preview)"
+title: "blockAccessAction resource type"
+toc.title: "blockAccessAction resource type(preview)"
 description: "Represents a DLP action that explicitly blocks access to the content that triggered the rule match."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# blockAccessAction  complex type
+# blockAccessAction resource type
 
 Namespace: microsoft.graph
 
@@ -19,7 +19,9 @@ Represents a DLP action that explicitly blocks access to the content that trigge
 
 ## Properties
 
-Inherits properties from [dlpActionInfo](../resources/dlpactioninfo.md). The `action` property is typically set to `blockAccess`.
+|Property|Type|Description|
+|:---|:---|:---|
+|action|[microsoft.graph.dlpAction](../resources/dlpaction.md)|The type of DLP action. Inherited from [dlpActionInfo](../resources/dlpactioninfo.md). The `action` property is typically set to `blockAccess`. |
 
 ## Relationships
 
@@ -27,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.blockAccessAction",
@@ -37,7 +39,6 @@ The following JSON representation shows the complex type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.blockAccessAction",
-  // Inherited properties from dlpActionInfo
   "action": "blockAccess"
 }
 ```

@@ -1,6 +1,6 @@
 ---
-title: "ActivityType resource type"
-toc.title: "ActivityType resource type (preview)"
+title: "activityType resource type"
+toc.title: "activityType resource type (preview)"
 description: "Specifies the type of user activity being processed or evaluated."
 author: "ArunGedela"
 ms.date: 04/08/2025

@@ -6,7 +6,7 @@ author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
 # scopeBase resource type
@@ -29,7 +29,8 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the resource type. Note that this is an abstract type and won't be instantiated directly.
+The following JSON representation shows the resource type. 
+>**Note** This is an abstract type and won't be instantiated directly.
 <!-- {
   "blockType": "resource",
   "abstract": true,

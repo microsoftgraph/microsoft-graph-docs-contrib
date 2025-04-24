@@ -1,15 +1,15 @@
 ---
-title: "contentBase"
-toc.title: "contentBase (preview)"
+title: "contentBase resource type"
+toc.title: "contentBase resource type (preview)"
 description: "Abstract base type representing the actual content (text or binary) being processed."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# contentBase complex type
+# contentBase resource type
 
 Namespace: microsoft.graph
 

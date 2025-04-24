@@ -1,12 +1,12 @@
 ---
-title: "policyLocationUrl"
-toc.title: "policyLocationUrl (preview)"
+title: "policyLocationUrl resource type"
+toc.title: "policyLocationUrl resource type (preview)"
 description: "Represents a specific URL as a location for data protection policy scoping."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
 # policyLocationUrl
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a specific URL as a location for data protection policy scoping. For example, "https://partner.contoso.com/data", "https://internal.contoso.com/reports/upload". Used as a location within the scope of a data protection policy. Inherits from [policyLocation](../resources/policylocation.md).
+Represents a specific URL as a location for data protection policy scoping.
+
+For example, "https://partner.contoso.com/data", "https://internal.contoso.com/reports/upload". Used as a location within the scope of a data protection policy. Inherits from [policyLocation](../resources/policylocation.md).
 
 ## Properties
 
@@ -27,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.policyLocationUrl",

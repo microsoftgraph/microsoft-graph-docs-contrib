@@ -1,6 +1,6 @@
 ---
-title: "DataSecurityAndGovernance resource type"
-toc.title: "Data security and governance (preview)"
+title: "dataSecurityAndGovernance resource type"
+toc.title: "dataSecurityAndGovernance (preview)"
 description: "Abstract base type representing the entry point for data security and governance features, scoped to the tenant."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,7 +9,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# DataSecurityAndGovernance resource type
+# dataSecurityAndGovernance resource type
 
 Namespace: microsoft.graph
 

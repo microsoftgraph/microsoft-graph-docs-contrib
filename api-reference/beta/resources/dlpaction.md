@@ -1,6 +1,6 @@
 ---
-title: "dlpAction"
-toc.title: "dlpAction (preview)"
+title: "dlpAction enum type"
+toc.title: "dlpAction enum type (preview)"
 description: "Specifies the type of action taken by a Data Loss Prevention (DLP) policy rule."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the type of action configured within a Data Loss Prevention (DLP) policy rule. Used in [dlpActionInfo](../resources/dlpactioninfo.md).
+Specifies the type of action configured within a Data Loss Prevention (DLP) policy rule.
+
+Used in [dlpActionInfo](../resources/dlpactioninfo.md).
 
 ## Members
 

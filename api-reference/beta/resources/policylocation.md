@@ -1,6 +1,6 @@
 ---
 title: "policyLocation resource type"
-toc.title: "policyLocation (preview)"
+toc.title: "policyLocation resource type (preview)"
 description: "Abstract base type representing a location (like a domain or URL) to which a data protection policy applies."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -29,7 +29,8 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the resource. Note this is an abstract type and isn't instantiated directly.
+The following JSON representation shows the resource. 
+>**Note** This is an abstract type and isn't instantiated directly.
 <!-- {
   "blockType": "resource",
   "abstract": true,

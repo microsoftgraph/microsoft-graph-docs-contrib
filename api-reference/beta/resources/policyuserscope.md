@@ -1,6 +1,6 @@
 ---
-title: "policyUserScope complex type"
-toc.title: "policyUserScope complex type (preview)"
+title: "policyUserScope resource type"
+toc.title: "policyUserScope resource type (preview)"
 description: "Defines the scope of a data governance policy as it applies to a specific user."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,13 +9,15 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# policyUserScope complex type
+# policyUserScope resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the scope of a data governance policy as it applies to a specific user. It details the protected locations, activities, execution mode, and actions applicable to that user.
+Defines the scope of a data governance policy as it applies to a specific user.
+
+It details the protected locations, activities, execution mode, and actions applicable to that user.
 
 Inherits from [microsoft.graph.policyScopeBase](../resources/policyscopebase.md).
 

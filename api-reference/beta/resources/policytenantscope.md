@@ -1,6 +1,6 @@
 ---
-title: "policyTenantScope complex type"
-toc.title: "policyTenantScope complex type (preview)"
+title: "policyTenantScope resource type"
+toc.title: "policyTenantScope resource type (preview)"
 description: "Defines the scope of a data governance policy at the tenant level, including user binding information."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,13 +9,15 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# policyTenantScope complex type
+# policyTenantScope resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the scope of a data governance policy at the tenant level, including user binding information. It includes the protected locations, activities, execution mode, actions, and specifies which users or groups the policy applies to via the `policyScope` property.
+Defines the scope of a data governance policy at the tenant level, including user binding information.
+
+It includes the protected locations, activities, execution mode, actions, and specifies which users or groups the policy applies to via the `policyScope` property.
 
 Inherits from [microsoft.graph.policyScopeBase](../resources/policyscopebase.md).
 

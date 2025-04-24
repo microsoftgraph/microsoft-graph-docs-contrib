@@ -1,12 +1,12 @@
 ---
-title: "deviceMetadata"
-toc.title: "deviceMetadata (preview)"
+title: "deviceMetadata resource type"
+toc.title: "deviceMetadata resource type (preview)"
 description: "Contains details about the device involved in a session, including type and OS specifications."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: low
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
 # deviceMetadata resource type

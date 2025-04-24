@@ -1,15 +1,15 @@
 ---
-title: "protectedApplicationMetadata"
-toc-title: "protectedApplicationMetadata (preview)"
+title: "protectedApplicationMetadata resource type"
+toc-title: "protectedApplicationMetadata resource type (preview)"
 description: "Represents metadata about an application whose activities are being governed by an integrated application."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# protectedApplicationMetadata complex type
+# protectedApplicationMetadata resource type
 
 Namespace: microsoft.graph
 
@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.protectedApplicationMetadata",

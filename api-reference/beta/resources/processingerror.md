@@ -1,21 +1,23 @@
 ---
-title: "processingError"
-toc.title: "processingError (preview)"
+title: "processingError resource type"
+toc.title: "processingError resource type (preview)"
 description: "Represents an error encountered during content processing or policy evaluation, indicating if it's transient or permanent."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# processingError complex type
+# processingError resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an error encountered during content processing or policy evaluation, indicating if it's transient or permanent. Specifically within the context of the `processContent` and `processContentAsync` actions. It includes standard error details and indicates whether the error is likely transient or permanent. Inherits from [classificationError](../resources/classificationerror.md). Found within the `processingErrors` collection of [processContentResponse](../resources/processcontentresponse.md).
+Represents an error encountered during content processing or policy evaluation, indicating if it's transient or permanent.
+
+Specifically within the context of the `processContent` and `processContentAsync` actions. It includes standard error details and indicates whether the error is likely transient or permanent. Inherits from [classificationError](../resources/classificationerror.md). Found within the `processingErrors` collection of [processContentResponse](../resources/processcontentresponse.md).
 
 ## Properties
 
@@ -31,7 +33,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.processingError",

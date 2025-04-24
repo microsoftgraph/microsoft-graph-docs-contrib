@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents content provided as a plain text string. Typically used for processing chat messages, text snippets, or AI interactions within a [processConversationMetadata](../resources/processconversationmetadata.md) context. Inherits from [contentBase](../resources/contentbase.md).
+Represents content provided as a plain text string.
+
+Typically used for processing chat messages, text snippets, or AI interactions within a [processConversationMetadata](../resources/processconversationmetadata.md) context. Inherits from [contentBase](../resources/contentbase.md).
 
 ## Properties
 

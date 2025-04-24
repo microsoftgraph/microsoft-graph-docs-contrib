@@ -1,12 +1,12 @@
 ---
-title: "processConversationMetadata"
-toc.title: "processConversationMetadata (preview)"
+title: "processConversationMetadata resource type"
+toc.title: "processConversationMetadata resource type (preview)"
 description: "Represents metadata for a content entry that is part of a conversation (e.g., chat message, AI interaction)."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
 # processConversationMetadata
@@ -33,7 +33,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.processConversationMetadata",

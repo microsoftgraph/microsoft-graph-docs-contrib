@@ -15,18 +15,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Compute the tenant-wide data protection policies and actions, including user/group scoping. 
+Compute the tenant-wide data protection policies and actions, including user/group scoping.
 
 Applications are required to adhere to Microsoft Purview policies established by Security/Compliance Administrators, which dictate how data and user activities should be managed. This is referred to as protection scopes, and applications should use the ProtectionScopes API to understand what has been defined in the context of user interactions. The application calls the ProtectionScopes API to get the protection scopes for the user.
 
 The API enables applications to specify activity types and location types in the request, thereby limiting the response to only include relevant protection scopes. Applications are required to provide device metadata and application metadata to assist in determining the appropriate protection scopes. This information is essential for ascertaining policy decisions relevant to the application's context.
 
-## Execution Mode Behavior
+### Execution mode behavior
 
 Below is the the expected behavior on different values for executionMode in the response of the protectionScopes/compute API.
 
 - evaluateInline: Wait for /processContent API to produce results before making decision about handling user activity, e.g. Allow or Block. No action.
 - evaluateOffline: Do not wait for /processContent API to return its verdict. Take action, if any with no wait for API response
+
+In some cases, in addition to the executionMode the return value may include policyActions. The table below describes actions the app should take based on the combination executionMode and policyActions.
 
 |Execution Mode | Action | Description |
 |:------------------|:-------|:------------|

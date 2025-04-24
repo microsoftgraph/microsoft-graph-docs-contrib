@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Container for user-specific protection scope computation actions. This is accessed via the `protectionScopes` navigation property on [userDataSecurityAndGovernance](../resources/userdatasecurityandgovernance.md).
+Container for user-specific protection scope computation actions.
+
+This is accessed via the `protectionScopes` navigation property on [userDataSecurityAndGovernance](../resources/userdatasecurityandgovernance.md).
 
 ## Methods
 

@@ -1,6 +1,6 @@
 ---
-title: "policyScopeBase complex type"
-toc.title: "policyScopeBase complex type (preview)"
+title: "policyScopeBase resource type"
+toc.title: "policyScopeBase resource type (preview)"
 description: "Abstract base type defining the scope of applicability for a data governance policy, including locations, activities, and execution mode."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,13 +9,15 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# policyScopeBase complex type
+# policyScopeBase resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type defining the scope of applicability for a data governance policy, including locations, activities, and execution mode. It defines the locations (e.g., domains, URLs), activities (e.g., uploads, downloads), execution behavior, and resulting actions.
+Abstract base type defining the scope of applicability for a data governance policy, including locations, activities, and execution mode.
+
+It defines the locations (e.g., domains, URLs), activities (e.g., uploads, downloads), execution behavior, and resulting actions.
 
 ## Properties
 

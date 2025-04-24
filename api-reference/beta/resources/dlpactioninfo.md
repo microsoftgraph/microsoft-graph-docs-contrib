@@ -1,21 +1,23 @@
 ---
-title: "dlpActionInfo"
-toc.title: "dlpActionInfo (preview)"
+title: "dlpActionInfo resource type"
+toc.title: "dlpActionInfo resource type (preview)"
 description: "Base type for actions defined within a Data Loss Prevention (DLP) rule."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# dlpActionInfo complex type
+# dlpActionInfo resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Base type for actions defined within a Data Loss Prevention (DLP) rule. Specific actions like `blockAccessAction` or `notifyUserAction` inherit from this type.
+Base type for actions defined within a Data Loss Prevention (DLP) rule.
+
+Specific actions like `blockAccessAction` or `notifyUserAction` inherit from this type.
 
 ## Properties
 
@@ -29,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "abstract": true,

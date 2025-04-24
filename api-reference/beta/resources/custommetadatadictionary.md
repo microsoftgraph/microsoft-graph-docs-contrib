@@ -1,15 +1,15 @@
 ---
-title: "customMetadataDictionary"
-toc.title: "customMetadataDictionary (preview)"
+title: "customMetadataDictionary resource type"
+toc.title: "customMetadataDictionary resource type (preview)"
 description: "Represents a dictionary specifically for storing custom metadata extracted from content, where values must be strings."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: low
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# customMetadataDictionary complex type
+# customMetadataDictionary resource type
 
 Namespace: microsoft.dataClassificationService.contract
 
@@ -29,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type. Specific properties depend on the custom metadata extracted.
+The following JSON representation shows the resource type. Specific properties depend on the custom metadata extracted.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.customMetadataDictionary",

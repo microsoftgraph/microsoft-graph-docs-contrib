@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides access to data security and governance functionalities specifically scoped to the context of a single user. Accessed via the `dataSecurityAndGovernance` navigation property on a `user` resource.
+Provides access to data security and governance functionalities specifically scoped to the context of a single user.
+
+Accessed via the `dataSecurityAndGovernance` navigation property on a `user` resource.
 
 Inherits from [microsoft.graph.dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).
 

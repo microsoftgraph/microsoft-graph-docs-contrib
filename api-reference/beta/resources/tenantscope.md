@@ -1,21 +1,23 @@
 ---
-title: "tenantScope"
-toc-title: "tenantScope (preview)"
+title: "tenantScope resource type"
+toc-title: "tenantScope resource type (preview)"
 description: "Represents the entire tenant ('All users') as a scope within policy bindings."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# tenantScope complex type
+# tenantScope resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entire tenant ('All users') as a scope within policy bindings. This is typically used in the `inclusions` list to specify that a policy applies to "All users" or "All groups". Inherits from [scopeBase](../resources/scopebase.md).
+Represents the entire tenant ('All users') as a scope within policy bindings.
+
+This is typically used in the `inclusions` list to specify that a policy applies to "All users" or "All groups". Inherits from [scopeBase](../resources/scopebase.md).
 
 ## Properties
 
@@ -27,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.tenantScope",

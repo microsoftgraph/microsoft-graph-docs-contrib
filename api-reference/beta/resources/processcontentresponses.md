@@ -1,6 +1,6 @@
 ---
-title: "processContentResponses"
-toc.title: "processContentResponses (preview)"
+title: "processContentResponses resource type"
+toc.title: "processContentResponses resource type (preview)"
 description: "Represents the response for a single request within a batch content processing operation."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,13 +9,15 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# processContentResponses complex type
+# processContentResponses resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the response for a single request within a batch content processing operation. Correlates a single request from a `processContentAsync` batch operation with its corresponding result. It contains the original `requestId` and the `processContentResponse` outcome.
+Represents the response for a single request within a batch content processing operation.
+
+Correlates a single request from a `processContentAsync` batch operation with its corresponding result. It contains the original `requestId` and the `processContentResponse` outcome.
 
 ## Properties
 

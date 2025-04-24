@@ -1,15 +1,15 @@
 ---
-title: "groupScope"
-toc_title: "groupScope (preview)"
+title: "groupScope resource type"
+toc_title: "groupScope resource type (preview)"
 description: "Represents a Microsoft 365 group or distribution list as a scope within policy bindings."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# groupScope complex type
+# groupScope resource type
 
 Namespace: microsoft.graph
 
@@ -27,7 +27,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.groupScope",
@@ -37,7 +37,6 @@ The following JSON representation shows the complex type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.groupScope",
-  // Inherited properties from scopeBase
   "identity": "String" // Group's unique identifier (e.g., group-guid)
 }
 ```

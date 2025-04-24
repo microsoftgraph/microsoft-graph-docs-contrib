@@ -1,21 +1,23 @@
 ---
-title: "processContentMetadataBase"
-toc.title: "processContentMetadataBase (preview)"
+title: "processContentMetadataBase resource type"
+toc.title: "processContentMetadataBase resource type (preview)"
 description: "Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# processContentMetadataBase complex type
+# processContentMetadataBase resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps. Submitted for processing via [processContent](../api/userdatasecurityandgovernance-post-processcontent.md) or [processContentAsync](../api/tenantdatasecurityandgovernance-post-processcontentasync.md). Contains common properties like identifiers, content reference, name, timestamps, and size information. Derived types ([processConversationMetadata](../resources/processconversationmetadata.md), [processFileMetadata](../resources/processfilemetadata.md)) add context-specific details.
+Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps.
+
+Submitted for processing via [processContent](../api/userdatasecurityandgovernance-post-processcontent.md) or [processContentAsync](../api/tenantdatasecurityandgovernance-post-processcontentasync.md). Contains common properties like identifiers, content reference, name, timestamps, and size information. Derived types ([processConversationMetadata](../resources/processconversationmetadata.md), [processFileMetadata](../resources/processfilemetadata.md)) add context-specific details.
 
 ## Properties
 
@@ -37,7 +39,8 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type. Note that this is an abstract type and won't be instantiated directly.
+The following JSON representation shows the resource type. 
+>**Note** This is an abstract type and won't be instantiated directly.
 <!-- {
   "blockType": "resource",
   "abstract": true,
