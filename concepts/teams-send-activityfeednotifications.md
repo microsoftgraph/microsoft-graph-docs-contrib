@@ -4,7 +4,7 @@ description: "Use the Microsoft Teams activity feed notification APIs in Microso
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
-ms.date: 04/01/2025
+ms.date: 04/25/2025
 ---
 
 # Send activity feed notifications to users in Microsoft Teams
@@ -46,7 +46,7 @@ The following table describes the components.
 |Component|Description|
 |----------|-----------|
 |**Avatar**|Shows who initiated the activity.|
-|**Activity type or app icon**|The type of activity. For app notifications, the line icon is replaced with an app icon. |
+|**App icon or custom icon**|The type of activity. For app notifications, shows the source (app icon) or type of the notification (custom icon). |
 |**Title: Actor + reason**|*Actor* is the name of the user or app that initiated the activity. *Reason* describes the activity.|
 |**Timestamp**|Shows when the activity happened.|
 |**Text preview**|Shows a truncated line from the start of the notification.|
