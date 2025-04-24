@@ -26,7 +26,7 @@ A connection represents multiple transactions occurring and sharing single Flow 
 |Property|Type|Description|
 |:---|:---|:---|
 |agentVersion|String|The client version of the connection.|
-|applicationSnapshot|[microsoft.graph.networkaccess.applicationSnapshot](networkaccess-applicationsnapshot.md)|Destination Application ID accessed in Azure AD during the connection.|
+|applicationSnapshot|[microsoft.graph.networkaccess.applicationSnapshot](networkaccess-applicationsnapshot.md)|**appId** (or client ID) of the destination Microsoft Entra application.|
 |createdDateTime|DateTimeOffset|The time the connection was created.|
 |destinationFqdn|String|The destination FQDN of the connection.|
 |destinationIp|String|The destination IP of the connection.|
