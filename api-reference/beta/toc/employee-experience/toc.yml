@@ -26,28 +26,6 @@ items:
       href: ../../resources/engagementasyncoperation.md
     - name: Get
       href: ../../api/engagementasyncoperation-get.md
-  - name: Role Management
-    items:
-    - name: Role
-      items:
-      - name: Role
-        href: ../../resources/engagementrole.md
-      - name: List Viva Engage roles 
-        href: ../../api/employeeexperience-list-roles.md
-      - name: List assigned roles for a user
-        href: ../../api/employeeexperienceuser-list-assignedroles.md
-      - name: List assigned roles for signed in user
-        href: ../../api/employeeexperienceuser-list-assignedroles.md  
-    - name: Role member
-      items:
-      - name: Role member
-        href: ../../resources/engagementrolemember.md
-      - name: List members of a role
-        href: ../../api/engagementrole-list-members.md  
-      - name: Assign role to a user
-        href: ../../api/engagementrole-post-members.md
-      - name: Revoke role from a user 
-        href: ../../api/engagementrole-delete-members.md
 - name: Employee goals (preview)
   items:
   - name: Goals export job
