@@ -1,5 +1,5 @@
 ---
-description: Automatically generated file. DO NOT MODIFY
+description: "Automatically generated file. DO NOT MODIFY"
 ms.topic: include
 ms.localizationpriority: medium
 ---
@@ -9,5 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|Mail.ReadWrite|Not available.|
 |Delegated (personal Microsoft account)|Mail.ReadWrite|Not available.|
 |Application|Mail.ReadWrite|Not available.|
-
 
