@@ -2457,6 +2457,16 @@ Namespace: microsoft.graph
 | declined |
 | notResponded |
 
+### agentType values
+
+| Member |
+| -------------------------- |
+| notAgentic |
+| agenticAppBuilder |
+| agenticApp |
+| agenticAppInstance |
+| unknownFutureValue |
+
 ### activityDomain values
 
 | Member |
