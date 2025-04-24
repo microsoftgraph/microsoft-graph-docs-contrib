@@ -25,7 +25,7 @@ A connection represents multiple transactions occurring and sharing single Flow 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|agentVersion|String|The client version of the connection.|
+|agentVersion|String|The version of the client that initiated the connection.|
 |applicationSnapshot|[microsoft.graph.networkaccess.applicationSnapshot](networkaccess-applicationsnapshot.md)|**appId** (or client ID) of the destination Microsoft Entra application.|
 |createdDateTime|DateTimeOffset|The time the connection was created.|
 |destinationFqdn|String|The destination FQDN of the connection.|
