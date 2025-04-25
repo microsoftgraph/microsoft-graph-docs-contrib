@@ -376,20 +376,20 @@ HTTP/1.1 204 No Content
 
 ## Prerequisites
 
-To complete these instructions, you need the following resources and privileges:
+To complete these instructions, you need:
 
 - A valid Microsoft Entra tenant.
-- You run the requests in this article as a user. You must complete the following steps:
+- To run the requests in this article as a user. Complete these steps:
     - Sign in to an API client like [Graph Explorer](https://aka.ms/ge) as a user with the *Cloud Application Administrator* Microsoft Entra role. This role is the least privileged role for creating applications and granting consent to delegated permissions in the tenant. The privileges to create permission grants can be limited or controlled in your tenant through admin-configured [app consent policies](/entra/identity/enterprise-apps/manage-app-consent-policies).
-    - In the app you're signed in to, consent to the *Application.Read.All* and *DelegatedPermissionGrant.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
-    - Get the object ID of the client service principal to which you grant delegated permissions on behalf of a user. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`. In the Microsoft Entra admin center, expand the **Identity** menu > expand **Applications** > select **Enterprise applications** > **App applications** to find the client service principal. Select it and on the **Overview** page, copy the Object ID value.
+    - In the app you're signed in to, consent to the *Application.Read.All* and *DelegatedPermissionGrant.ReadWrite.All* delegated permissions for the signed-in user. You don't need to consent on behalf of your organization.
+    - Get the object ID of the client service principal to which you grant delegated permissions on behalf of a user. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`. In the Microsoft Entra admin center, expand **Identity** > **Applications** > **Enterprise applications** > **App applications** to find the client service principal. Select it and on the **Overview** page, copy the Object ID value.
 
 > [!CAUTION]
 > Only appropriate users should access apps granted the *DelegatedPermissionGrant.ReadWrite.All* permission.
 
 ## Step 1: Get delegated permissions of the resource service principal
 
-Before granting delegated permissions, identify the resource service principal that exposes the delegated permissions you want to grant. Delegated permissions are in the **oauth2PermissionScopes** object of a service principal. In this article, you use the Microsoft Graph service principal in your tenant as the resource service principal.
+First, find the delegated permissions exposed by the resource service principal. Delegated permissions are defined in the **oauth2PermissionScopes** object of the service principal. This article uses the Microsoft Graph service principal in your tenant as the resource service principal.
 
 ### Request
 
@@ -596,7 +596,7 @@ If you granted consent for all users in the tenant, the **consentType** in the r
 
 ### Confirm the permission grant
 
-Run the following request to verify the delegated permissions assigned to the service principal on behalf of the user.
+Verify the principals with delegated permissions to the resource service principal by running the following request.
 
 #### Request
 
