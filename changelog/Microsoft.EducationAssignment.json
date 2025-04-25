@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "c7a0436c-c424-4abb-ab1f-0a7c134cf3c4",
+          "ApiChange": "Property",
+          "ChangedApiName": "grade",
+          "ChangeType": "Addition",
+          "Description":  "Added the **grade** property to the [educationAssignmentPointsGrade](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentpointsgrade?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentPointsGrade"
+        }
+      ],
+      "Id": "c7a0436c-c424-4abb-ab1f-0a7c134cf3c4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-25T18:32:24.5964486Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
           "ApiChange": "function",
           "ChangedApiName": "getRecentlyModifiedSubmissions",

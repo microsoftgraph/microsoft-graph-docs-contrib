@@ -22,6 +22,7 @@ which will add the who data to this property. The max points are stored in the *
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |points|Single|Number of points a teacher is giving this submission object.|
+|grade|String|Grade represents the grade letter from the gradingScheme that corresponds to the given number of points.|
 |gradedBy|[identitySet](identityset.md)| User who did the grading. |
 |gradedDateTime|DateTimeOffset| Moment in time when the grade was applied to this submission object. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 
@@ -44,6 +45,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "points": "Double",
+  "grade": "String",
   "gradedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "gradedDateTime": "String (timestamp)"
 }
