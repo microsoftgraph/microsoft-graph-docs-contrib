@@ -26,6 +26,7 @@ Inherits from [identity](../resources/identity.md).
 |id|String|Inherited from [identity](../resources/identity.md). ID of the user. |
 |userIdentityType|teamworkUserIdentityType| Type of user. Possible values are: `aadUser`, `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, `phoneUser`, `emailUser` and `azureCommunicationServicesUser`.|
 |tenantId|String|Identifier of tenant, which user is part of. Optional. |
+|userPrincipalName|String|User principal name (UPN) of the user.|
 
 ## Relationships
 None.
