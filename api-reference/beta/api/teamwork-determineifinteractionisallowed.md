@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Determines if a specified interaction is allowed between the caller and the specified set of users.
+Determines if a specified Microsoft Teams interaction is allowed between the caller and a specified set of users.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
