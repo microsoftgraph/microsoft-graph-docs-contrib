@@ -596,7 +596,7 @@ Content-type: application/json
 
 ---
 
-## Step 4: Add application segments to your private application
+## Step 4: Add application segments to the private application
 
 In the example, create a new app segment with the following settings:
 - Replace the value of **destinationHost** with the private app destination. 
