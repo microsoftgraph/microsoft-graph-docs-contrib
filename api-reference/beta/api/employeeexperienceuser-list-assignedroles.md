@@ -16,19 +16,6 @@ Namespace: microsoft.graph
 
 Get all roles assigned to a user in Viva Engage.
 
-## Permissions for signed-in user API
-
-Choose the permission or permissions marked as least privileged for the signed-in user API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-[!INCLUDE [permissions-table](../includes/permissions/employeexperience-list-roles-signedinuser-permissions.md)]
-
-
-``` http
-GET /me/employeeExperience/assignedRoles
-```
-
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
-
 ## Permissions for user API
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -39,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/employeeexperienceuser-list-assignedroles-permissions.md)]
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 ## HTTP request
 
 <!-- {
@@ -47,6 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /users/{userId}/employeeExperience/assignedRoles
+
+GET /me/employeeExperience/assignedRoles
+
 ```
 >**Note:** In the API above, the userId represents the office user id for a user.
 
@@ -79,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/employeeExperience/roles
+GET https://graph.microsoft.com/beta/me/employeeExperience/assignedRoles
 ```
 
 
