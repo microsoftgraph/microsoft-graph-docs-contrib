@@ -167,7 +167,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "teamwork_determineIfInteractionIsAllowed_2"
+  "name": "teamwork_determineIfInteractionIsAllowed_3"
 }-->
 ``` http
 POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
@@ -215,7 +215,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "teamwork_determineIfInteractionIsAllowed_2"
+  "name": "teamwork_determineIfInteractionIsAllowed_4"
 }-->
 ``` http
 POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
@@ -263,7 +263,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "teamwork_determineIfInteractionIsAllowed_2"
+  "name": "teamwork_determineIfInteractionIsAllowed_5"
 }-->
 ``` http
 POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
