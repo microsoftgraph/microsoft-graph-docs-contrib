@@ -8,11 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.Searches.Item.MicrosoftGraphSecurityEstimateStatistics;
-using Microsoft.Graph.Beta.Models.Security;
 
 var requestBody = new EstimateStatisticsPostRequestBody
 {
-	StatisticsOptions = StatisticsOptions.IncludeRefiners | StatisticsOptions.IncludeQueryStats | StatisticsOptions.IncludeUnindexedStats | StatisticsOptions.AdvancedIndexing | StatisticsOptions.LocationsWithoutHits,
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"statisticsOptions" , "includeRefiners, includeQueryStats, includeUnindexedStats, advancedIndexing, locationsWithoutHits"
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

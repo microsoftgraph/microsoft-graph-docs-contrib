@@ -33,6 +33,7 @@ Namespace: microsoft.graph.healthMonitoring
 |managedDeviceSignInFailure|
 |compliantDeviceSignInFailure|
 |unknownFutureValue|
+|conditionalAccessBlockedSignIn|
 
 ### category values 
 
@@ -65,6 +66,7 @@ Namespace: microsoft.graph.healthMonitoring
 |mfa|
 |devices|
 |unknownFutureValue|
+|conditionalAccess|
 
 <!--
 {
