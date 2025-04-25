@@ -95,7 +95,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "Boolean"
 } -->
 
 ```http
@@ -144,7 +144,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "Boolean"
 } -->
 
 ```http
@@ -192,7 +192,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "Boolean"
 } -->
 
 ```http
@@ -240,7 +240,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "Boolean"
 } -->
 
 ```http
@@ -296,7 +296,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "Boolean"
 } -->
 
 ```http
