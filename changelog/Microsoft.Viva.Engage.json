@@ -162,26 +162,10 @@
         },
         {
           "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
-          "ApiChange": "Resource",
-          "ChangedApiName": "employeeExperience",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource.",
-          "Target": "employeeExperience"
-        },
-        {
-          "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
           "ApiChange": "Relationship",
           "ChangedApiName": "assignedRoles",
           "ChangeType": "Addition",
           "Description": "Added the **assignedRoles** relationship to the [employeeExperienceUser](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperienceUser?view=graph-rest-beta) resource.",
-          "Target": "employeeExperienceUser"
-        },
-        {
-          "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
-          "ApiChange": "Resource",
-          "ChangedApiName": "employeeExperienceUser",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [employeeExperienceUser](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperienceUser?view=graph-rest-beta) resource.",
           "Target": "employeeExperienceUser"
         },
         {
@@ -195,25 +179,9 @@
         {
           "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
           "ApiChange": "Resource",
-          "ChangedApiName": "engagementRole",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [engagementRole](https://learn.microsoft.com/en-us/graph/api/resources/engagementRole?view=graph-rest-beta) resource.",
-          "Target": "engagementRole"
-        },
-        {
-          "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
-          "ApiChange": "Resource",
           "ChangedApiName": "engagementRoleMember",
           "ChangeType": "Addition",
           "Description": "Added the [engagementRoleMember](https://learn.microsoft.com/en-us/graph/api/resources/engagementRoleMember?view=graph-rest-beta) resource.",
-          "Target": "engagementRoleMember"
-        },
-        {
-          "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
-          "ApiChange": "Resource",
-          "ChangedApiName": "engagementRoleMember",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [engagementRoleMember](https://learn.microsoft.com/en-us/graph/api/resources/engagementRoleMember?view=graph-rest-beta) resource.",
           "Target": "engagementRoleMember"
         }
       ],
