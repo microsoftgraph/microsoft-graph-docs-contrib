@@ -43,6 +43,8 @@ Assign and activate a hardware OATH authentication method for yourself by using 
 POST /me/authentication/hardwareOathMethods/assignAndActivateBySerialNumber
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Assign and activate a hardware OATH authentication method for another user by using the device serial number.
 <!-- {
   "blockType": "ignored"

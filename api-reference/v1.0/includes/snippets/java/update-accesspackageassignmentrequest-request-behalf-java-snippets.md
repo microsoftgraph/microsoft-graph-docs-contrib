@@ -27,12 +27,10 @@ additionalData1.put("accessPackageId", "5b98f958-0dea-4a5b-836e-109dccbd530c");
 additionalData1.put("assignmentPolicyId", "c5f7847f-83a8-4315-a754-d94a6f39b875");
 assignment.setAdditionalData(additionalData1);
 accessPackageAssignmentRequest.setAssignment(assignment);
+accessPackageAssignmentRequest.setJustification("Access for direct employee");
 accessPackageAssignmentRequest.setRequestType(AccessPackageRequestType.UserAdd);
 LinkedList<AccessPackageAnswer> answers = new LinkedList<AccessPackageAnswer>();
 accessPackageAssignmentRequest.setAnswers(answers);
-HashMap<String, Object> additionalData2 = new HashMap<String, Object>();
-additionalData2.put("justification", "Access for direct employee");
-accessPackageAssignmentRequest.setAdditionalData(additionalData2);
 AccessPackageAssignmentRequest result = graphClient.identityGovernance().entitlementManagement().assignmentRequests().post(accessPackageAssignmentRequest);
 
 

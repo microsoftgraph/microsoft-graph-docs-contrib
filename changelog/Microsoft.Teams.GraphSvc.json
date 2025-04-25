@@ -2561,6 +2561,58 @@
     {
       "ChangeList": [
         {
+          "Id": "579fe6a1-aa7e-4a19-aa10-1c237809032c",
+          "ApiChange": "Property",
+          "ChangedApiName": "content",
+          "ChangeType": "Change",
+          "Description": "Added new `<codeblock><code></code></codeblock>` tag support to the message body **content** of the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-beta) resource to represent a code block in the message body in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta). This change shows up in the actual **content** property of the message body when you [get a chat message in a channel or chat](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta).",
+          "Target": "itemBody"
+        }
+      ],
+      "Id": "579fe6a1-aa7e-4a19-aa10-1c237809032c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-09T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "replyWithQuote",
+          "ChangeType": "Addition",
+          "Description": "Added the [replyWithQuote](https://learn.microsoft.com/en-us/graph/api/chatmessage-replywithquote?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "forwardToChat",
+          "ChangeType": "Addition",
+          "Description": "Added the [forwardToChat](https://learn.microsoft.com/en-us/graph/api/chatmessage-forwardtochat?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "forwardToChatResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [forwardToChatResult](https://learn.microsoft.com/en-us/graph/api/resources/forwardToChatResult?view=graph-rest-beta) resource type.",
+          "Target": "forwardToChatResult"
+        }
+      ],
+      "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-11T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fc85a381-3549-4388-bc52-305b9b5f3cf1",
           "ApiChange": "Property",
           "ChangedApiName": "firstChannelName",
@@ -2574,7 +2626,99 @@
       "Version": "v1.0",
       "CreatedDateTime": "2025-03-07T08:54:28.4245939Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e40e3ab6-2e24-45a6-8343-bb75271af39a",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Updated the [list](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-list-transcripts?view=graph-rest-1.0) operation to support retrieving [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resources for channel meetings.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "e40e3ab6-2e24-45a6-8343-bb75271af39a",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Updated the [get](https://learn.microsoft.com/en-us/graph/api/callTranscript-get?view=graph-rest-1.0) operation to support retrieving [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resources for channel meetings.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "e40e3ab6-2e24-45a6-8343-bb75271af39a",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Updated the [list](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-list-recordings?view=graph-rest-1.0) operation to support retrieving [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resources for channel meetings.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "e40e3ab6-2e24-45a6-8343-bb75271af39a",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Updated the [get](https://learn.microsoft.com/en-us/graph/api/callRecording-get?view=graph-rest-1.0) operation to support retrieving [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resources for channel meetings.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "e40e3ab6-2e24-45a6-8343-bb75271af39a",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added channel meeting support for [transcript and recording change notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-callrecording-and-calltranscript) specific to tenant-level, online meeting-specific, and user-level subscriptions in V1.",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "e40e3ab6-2e24-45a6-8343-bb75271af39a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-04-14T08:54:28.4245939Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    }, 
+    {
+      "ChangeList": [
+        {
+          "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce7",
+          "ApiChange": "Property",
+          "ChangedApiName": "iconId",
+          "ChangeType": "Addition",
+          "Description": "Added the **iconId** property to the [teamwork: sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta) method.",
+          "Target": "sendActivityNotificationToRecipients"
+        },
+        {
+          "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce7",
+          "ApiChange": "Property",
+          "ChangedApiName": "iconId",
+          "ChangeType": "Addition",
+          "Description": "Added the **iconId** property to the [userTeamwork: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta) method.",
+          "Target": "sendActivityNotification"
+        },
+        {
+          "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce7",
+          "ApiChange": "Property",
+          "ChangedApiName": "iconId",
+          "ChangeType": "Addition",
+          "Description": "Added the **iconId** property to the [chat: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/chat-sendactivitynotification?view=graph-rest-beta) method.",
+          "Target": "sendActivityNotification"
+        },
+        {
+          "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce7",
+          "ApiChange": "Property",
+          "ChangedApiName": "iconId",
+          "ChangeType": "Addition",
+          "Description": "Added the **iconId** property to the [team: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/team-sendactivitynotification?view=graph-rest-beta) method.",
+          "Target": "sendActivityNotification"
+        }
+      ],
+      "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-24T18:54:16.6879906Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }

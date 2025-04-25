@@ -38,6 +38,10 @@ $callOptions = new OutgoingCallOptions();
 $callOptions->setOdataType('#microsoft.graph.outgoingCallOptions');
 $callOptions->setIsContentSharingNotificationEnabled(true);
 $callOptions->setIsDeltaRosterEnabled(true);
+$additionalData = [
+'isInteractiveRosterEnabled' => true,
+];
+$callOptions->setAdditionalData($additionalData);
 $requestBody->setCallOptions($callOptions);
 $mediaConfig = new ServiceHostedMediaConfig();
 $mediaConfig->setOdataType('#microsoft.graph.serviceHostedMediaConfig');

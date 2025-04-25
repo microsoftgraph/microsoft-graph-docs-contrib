@@ -441,6 +441,8 @@ items:
       href: ../../resources/cloudpcauditresource.md
     - name: Cloud PC bulk create snapshot
       href: ../../resources/cloudpcbulkcreatesnapshot.md
+    - name: Cloud PC bulk disaster recovery
+      href: ../../resources/cloudpcbulkdisasterrecovery.md
     - name: Cloud PC bulk disaster recovery failback
       href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
     - name: Cloud PC bulk disaster recovery failover
@@ -503,6 +505,8 @@ items:
       href: ../../resources/cloudpcpartneragentinstallresult.md
     - name: Cloud PC provisioning policy assignment
       href: ../../resources/cloudpcprovisioningpolicyassignment.md
+    - name: Cloud PC provisioning policy autopatch
+      href: ../../resources/cloudpcprovisioningpolicyautopatch.md
     - name: Cloud PC remote action capability
       href: ../../resources/cloudpcremoteactioncapability.md
     - name: Cloud PC resize validation result
@@ -521,6 +525,8 @@ items:
       href: ../../resources/cloudpcstatusdetails.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
+    - name: Cloud PC supported region restriction detail
+      href: ../../resources/cloudpcsupportedregionrestrictiondetail.md
     - name: Cloud PC user role scope tag info
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment
@@ -1773,6 +1779,8 @@ items:
         href: ../../api/intune-apps-win32lobapp-delete.md
       - name: Update win32LobApp
         href: ../../api/intune-apps-win32lobapp-update.md
+      - name: enableApplicableArchitectures action
+        href: ../../api/intune-apps-win32lobapp-enableapplicablearchitectures.md
     - name: Windows AppX
       items:
       - name: Windows AppX
@@ -6394,7 +6402,7 @@ items:
     - name: Managed device
       items:
       - name: Managed device
-        href: ../../resources/intune-devices-manageddevice.md
+        href: ../../resources/intune-shared-manageddevice.md
       - name: Get managedDevice
         href: ../../api/intune-devices-manageddevice-get.md
       - name: Update managedDevice
