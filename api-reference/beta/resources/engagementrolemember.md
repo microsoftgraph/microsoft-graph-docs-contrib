@@ -16,11 +16,7 @@ Namespace: microsoft.graph
 
 <!-- Viva Engage handles role member management by assigning and managing various member roles within the platform.  -->
 
-<!-- Add a paragraph here -->
-<!-- 
-Each member role is mapped in Microsoft Entra ID and [assigned in the Microsoft 365 admin portal](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide), allowing for the assignment of another roles for collaboration, tasks, and maintenance. For more details, refer to [https://learn.microsoft.com/en-us/viva/engage/member-roles](https://learn.microsoft.com/en-us/viva/engage/eac-key-admin-roles-permissions). -->
-
-The role member resource type represents the assignment of a Viva Engage role to a user. Each role member links a predefined role to a specific user, and multiple users can be assigned to the same role.
+The engagement role member resource type represents the assignment of a Viva Engage role to a user. Each role member links a predefined role to a specific user, and multiple users can be assigned to the same role.
 
 Inherits from [entity](../resources/entity.md).
 
