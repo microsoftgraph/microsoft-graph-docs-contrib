@@ -84,26 +84,31 @@ Content-Type: application/json
         "passwordCredentials": [
             {
                 "restrictionType": "passwordAddition",
+                "state": "enabled",
                 "maxLifetime": null,
                 "restrictForAppsCreatedAfterDateTime": "2021-01-01T10:37:00Z"
             },
             {
                 "restrictionType": "passwordLifetime",
+                "state": "enabled",
                 "maxLifetime": "P4DT12H30M5S",
                 "restrictForAppsCreatedAfterDateTime": "2017-01-01T10:37:00Z"
             },
             {
                 "restrictionType": "symmetricKeyAddition",
+                "state": "enabled",
                 "maxLifetime": null,
                 "restrictForAppsCreatedAfterDateTime": "2021-01-01T10:37:00Z"
             },
             {
                 "restrictionType": "customPasswordAddition",
+                "state": "enabled",
                 "maxLifetime": null,
                 "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z"
             },
             {
                 "restrictionType": "symmetricKeyLifetime",
+                "state": "enabled",
                 "maxLifetime": "P40D",
                 "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z"
             }
@@ -111,6 +116,7 @@ Content-Type: application/json
         "keyCredentials":[
             {
                 "restrictionType": "asymmetricKeyLifetime",
+                "state": "enabled",
                 "maxLifetime": "P30D",
                 "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z"
             },
