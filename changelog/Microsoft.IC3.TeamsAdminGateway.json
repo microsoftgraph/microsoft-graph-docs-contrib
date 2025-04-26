@@ -47,7 +47,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "userConfigurations",
           "ChangeType": "Addition",
-          "Description": "Added the **userConfigurations** relationship to the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsdministration-teamsadminroot?view=graph-rest-beta) resource.",
+          "Description": "Added the **userConfigurations** relationship to the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsadministration-teamsadminroot?view=graph-rest-beta) resource.",
           "Target": "teamsAdminRoot"
         },
         {
