@@ -151,6 +151,55 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Find members of a channel by their Microsoft Entra user object ID
+
+The following example shows a request to find the membership resources based on `id` of the [Microsoft Entra user](../resources/user.md) associated with the [aadUserConversationMember](../resources/aaduserconversationmember.md).
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_members_in_channel_filter_by_userid"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062channels/19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype/allMembers?$filter=(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')
+
+```
+
+---
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_members_in_channel_filter_by_userid",
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/allMembers",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+            "roles": [],
+            "displayName": "Adele Vance",
+            "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
+            "email": "AdeleV@contoso.com"
+        }
+    ]
+}
+```
+
 ## Related content
 
 [List the members of a team](team-list-members.md).

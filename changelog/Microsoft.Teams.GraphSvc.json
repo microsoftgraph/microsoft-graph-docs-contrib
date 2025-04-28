@@ -2719,6 +2719,24 @@
       "CreatedDateTime": "2022-05-24T18:54:16.6879906Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "57e0d79e-dbb2-440b-842f-3bbd4e2f108c",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "allMembers",
+          "ChangeType": "Change",
+          "Description": "Added description of the supported filtering scenarios for allMembers api.",
+          "Target": "Chanel"
+        }
+      ],
+      "Id": "57e0d79e-dbb2-440b-842f-3bbd4e2f108c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-28T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }
