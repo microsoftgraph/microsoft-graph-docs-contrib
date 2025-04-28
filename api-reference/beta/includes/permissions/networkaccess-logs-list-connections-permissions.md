@@ -4,8 +4,8 @@ ms.topic: include
 ms.localizationpriority: medium
 ---
 
-|Permission type|Least privileged permission|Higher privileged permissions|
+|Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|NetworkAccess.Read.All|NetworkAccess.ReadWrite.All|
+|Delegated (work or school account)|NetworkAccess-Reports.Read.All|NetworkAccess.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|NetworkAccess.Read.All|NetworkAccess.ReadWrite.All|
+|Application|NetworkAccess-Reports.Read.All|Not available.|

@@ -4,20 +4,17 @@ description: "Represent a report of connections count per traffic type."
 author: "miritsadon"
 ms.date: 04/20/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
-# Get connection summaries report
+# reports: connectionSummaries
 
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a report of connections count per traffic type.
-
-> [!IMPORTANT]
-> This API is deprecated and will be removed on January 7, 2025. The deprecation was announced on November 13, 2024.
+An API part of Global Secure Access (GSA) product, reports of connections count per traffic type: Private/Internet/Microsoft.
 
 ## Permissions
 
@@ -30,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-reports-getconnectionsummaries-permissions.md)]
 
+[!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -40,18 +39,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /networkAccess/reports/getConnectionSummaries(startDateTime='{startDateTime}',endDateTime='{endDateTime}')
 ```
 
+## Function parameters
+In the request URL, provide the following query parameters with values.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|startDateTime|DateTimeOffset|Start of the period for aggregating connections.|
+|endDateTime|DateTimeOffset|End of the period for aggregating connections.|
+
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
-
-## Request parameters
-
-|Name|Type|Description|Required|
-|:---|:---|:---|:---|
-|startDateTime|DateTimeOffset|Start of the period for aggregating connections.|Yes|
-|endDateTime|DateTimeOffset|End of the period for aggregating connections.|Yes|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

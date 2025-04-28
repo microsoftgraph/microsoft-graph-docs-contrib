@@ -14,8 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A connection represents multiple transactions occurring and sharing single Flow Correlation Id. Provides information about network connections including source/destination details, traffic statistics, and connection status.
-
+In Global Secure Access (GSA) a connection represents multiple [networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) occurring and sharing single Connection Id. Provides information about network connections including source/destination details, traffic statistics, and connection status.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -31,8 +30,8 @@ A connection represents multiple transactions occurring and sharing single Flow 
 |destinationFqdn|String|The destination FQDN of the connection.|
 |destinationIp|String|The destination IP of the connection.|
 |destinationPort|Int32|The destination port of the connection.|
-|deviceCategory|[microsoft.graph.networkaccess.deviceCategory](enums-networkaccess.md#devicecategory-values)|The category of the device. The possible values are: `client`, `branch`, `unknownFutureValue`, `remoteNetwork`.|
-|deviceId|String|The Device ID.|
+|deviceCategory|[microsoft.graph.networkaccess.deviceCategory](enums-networkaccess.md#devicecategory-values)|The category of the device. .The possible values are: `client`, `branch`, `unknownFutureValue`, `remoteNetwork`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `remoteNetwork`.|
+|deviceId|String|The DeviceID.|
 |deviceOperatingSystem|String|The device operating system type.|
 |deviceOperatingSystemVersion|String|The device operating system version.|
 |endDateTime|DateTimeOffset|The time the connection was ended.|

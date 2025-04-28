@@ -1,11 +1,11 @@
 ---
 title: "Network Access enum values"
 description: "Microsoft Graph Network Access enumeration values"
-author: "moti-ba"
+author: "miritsadon"
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-global-secure-access"
 doc_type: enumTypes
-ms.date: 04/20/2025
+ms.date: 04/24/2025
 ---
 
 # Network Access Enum Values

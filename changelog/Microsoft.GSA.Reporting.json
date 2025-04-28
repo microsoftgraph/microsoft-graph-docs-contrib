@@ -13,25 +13,9 @@
         {
           "Id": "7e6f4535-a9b3-4839-8bc6-2942a64af02f",
           "ApiChange": "Resource",
-          "ChangedApiName": "connectionSummary",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [connectionSummary](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connectionSummary?view=graph-rest-beta) resource.",
-          "Target": "connectionSummary"
-        },
-        {
-          "Id": "7e6f4535-a9b3-4839-8bc6-2942a64af02f",
-          "ApiChange": "Resource",
           "ChangedApiName": "connection",
           "ChangeType": "Addition",
           "Description": "Added the [connection](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connection?view=graph-rest-beta) resource.",
-          "Target": "connection"
-        },
-        {
-          "Id": "7e6f4535-a9b3-4839-8bc6-2942a64af02f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "connection",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [connection](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connection?view=graph-rest-beta) resource.",
           "Target": "connection"
         },
         {
@@ -40,14 +24,6 @@
           "ChangedApiName": "connections",
           "ChangeType": "Addition",
           "Description": "Added the **connections** relationship to the [logs](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-logs?view=graph-rest-beta) resource.",
-          "Target": "logs"
-        },
-        {
-          "Id": "7e6f4535-a9b3-4839-8bc6-2942a64af02f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "logs",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [logs](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-logs?view=graph-rest-beta) resource.",
           "Target": "logs"
         },
         {
