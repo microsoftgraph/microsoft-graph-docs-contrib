@@ -23,6 +23,7 @@ Defines the Conditional Access claims you want to accept from other Microsoft En
 | isCompliantDeviceAccepted | Boolean | Specifies whether compliant devices from external Microsoft Entra organizations are trusted. |
 | isHybridAzureADJoinedDeviceAccepted | Boolean | Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted. |
 | isMfaAccepted | Boolean | Specifies whether MFA from external Microsoft Entra organizations is trusted.|
+| isCompliantNetworkAccepted | Boolean | Specifies whether compliant network from external Microsoft Entra organizations is trusted.|
 
 ## Relationships
 
@@ -42,6 +43,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyInboundTrust",
   "isMfaAccepted": "Boolean",
   "isCompliantDeviceAccepted": "Boolean",
-  "isHybridAzureADJoinedDeviceAccepted": "Boolean"
+  "isHybridAzureADJoinedDeviceAccepted": "Boolean",
+  "isCompliantNetworkAccepted": "Boolean"
 }
 ```
