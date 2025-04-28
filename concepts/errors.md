@@ -93,7 +93,7 @@ The error resource is composed of a single resource:
 | **code**       | string                 | An error code string for the error that occurred                                                            |
 | **message**    | string                 | A developer ready message about the error that occurred. This shouldn't be displayed to the user directly. |
 | **innererror** | error object           | Optional. An additional error object that might be more specific than the top-level error.                     |
-| **details**    | error object           | Optional. A list of additional error objects that might provide a breakdown of multiple errors encountered while processing the request. |
+| **details**    | error object           | Optional. A list of more error objects that might provide a breakdown of multiple errors encountered while processing the request. |
 
 <!--<a name="msg_properties"> </a> -->
 
@@ -102,7 +102,7 @@ The error resource is composed of a single resource:
 The **code** property contains a machine-readable value that you can take a dependency on in your code.  
 
 The **innererror** object might recursively contain more **innererror** objects
-with additional, more specific error **codes** properties. When handling an error, apps
+with more specific error **codes** properties. When handling an error, apps
 should loop through all the nested error codes that are available and use the most detailed
 one that they understand.
 
@@ -115,7 +115,7 @@ dynamic information specific to the failed request. You should only code
 against error codes returned in **code** properties.
 
 The **details** property is an optional array of error objects that have the same JSON format as the top-level error object.
-In the case of a request that is composed of multiple operations, such as a bulk or batch operation, it might be necessary to return an independent error for each operation. In this case, the **details** list is populated with these individual errors.
+If a request is composed of multiple operations, such as a bulk or batch operation, it might be necessary to return an independent error for each operation. In this case, the **details** list is populated with these individual errors.
 
 <!-- {
   "type": "#page.annotation",
