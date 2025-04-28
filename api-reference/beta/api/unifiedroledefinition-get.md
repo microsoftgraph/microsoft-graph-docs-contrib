@@ -22,7 +22,7 @@ The following RBAC providers are currently supported:
 - device management (Intune)
 - directory (Microsoft Entra directory roles)
 - entitlement management (Microsoft Entra entitlement management)
-- Exchange Online
+- Exchange Online (Except China operated by 21Vianet)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
