@@ -59,18 +59,17 @@ If successful, this method returns a `200 OK` response code and an updated [enha
 
 ## Examples
 
-#### Request
+### Request
 
 The following example shows a request.
-
 <!-- {
   "blockType": "request",
-  "name": "update_enhancedpersonalizationsetting_example"
+  "name": "update_enhancedpersonalizationsetting"
 }
 -->
 ```http
 PATCH https://graph.microsoft.com/beta/copilot/settings/people/enhancedpersonalization
-Content-type: application/json
+Content-Type: application/json
 
 {
   "isEnabledInOrganization": true,
@@ -78,7 +77,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -86,12 +85,12 @@ The following example shows the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.enhancedPersonalizationSetting",
-  "name": "update_enhancedpersonalizationsetting_example"
+  "name": "update_enhancedpersonalizationsetting"
 }
 -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
   "isEnabledInOrganization": true,
