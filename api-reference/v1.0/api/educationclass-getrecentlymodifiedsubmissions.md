@@ -762,7 +762,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationclass_getrecentlymodifiedsubmissions_filter_range"
+  "name": "get_educationclass_getrecentlymodifiedsubmissions_filter_lastModifiedDateTime"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime lt 2025-04-29T15:48:31.3785886Z
