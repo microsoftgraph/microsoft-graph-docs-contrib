@@ -1,5 +1,5 @@
 ---
-title: "List roadmap objects"
+title: "List roadmap objects (deprecated)"
 description: "Get a list of the roadmap objects and their properties."
 author: "garretraziel"
 ms.date: 11/20/2024
@@ -8,11 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# List roadmap objects
+# List roadmap objects (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [entra-lifecycle-announcements-deprecation-note](../includes/entra-lifecycle-announcements-deprecation-note.md)]
 
 Get a list of the [roadmap](../resources/roadmap.md) objects and their properties.
 

@@ -151,7 +151,6 @@
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
-        "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
         "restoreArtifactsBulkRequestBase",
         "restorePoint",
@@ -186,6 +185,7 @@
         {
           "name": "Protection units bulk job",
           "resources": [
+            "protectionUnitsBulkJobBase",
             "driveProtectionUnitsBulkAdditionJob",
             "mailboxProtectionUnitsBulkAdditionJob",
             "siteProtectionUnitsBulkAdditionJob"
@@ -490,6 +490,7 @@
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcBulkDisasterRecovery",
             "cloudPcBulkDisasterRecoveryFailback",
             "cloudPcBulkDisasterRecoveryFailover",
             "cloudPcBulkMove",
@@ -530,6 +531,7 @@
             "cloudPcStatusDetails",
             "cloudPcStatusDetail",
             "CloudPcConnectionSetting",
+            "cloudPcSupportedRegionRestrictionDetail",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
@@ -942,11 +944,13 @@
         "drive",
         "driveItem",
         "bundle",
-        "permission",
         "fileStorageContainer",
+        "permission",
         "recycleBin",
         "recycleBinItem",
-        "sharedDriveItem"
+        "sharedDriveItem",
+        "sharePointGroup",
+        "sharePointGroupMember"
       ]
     },
     {
@@ -1452,6 +1456,8 @@
               "resources": [
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
+                "onAttributeCollectionStartListener",
+                "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
@@ -1476,7 +1482,10 @@
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
-                "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
+                "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
+                "qrCodePinAuthenticationMethod",
+                "qrCode",
+                "qrPin"
               ]
             },
             {
@@ -1495,7 +1504,17 @@
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
-                "x509CertificateAuthenticationMethodConfiguration"
+                "x509CertificateAuthenticationMethodConfiguration",
+                "qrCodePinAuthenticationMethodConfiguration"
+              ],
+              "childNodes": [
+                {
+                  "name": "QR Code and PIN",
+                  "resources": [
+                    "QR Code",
+                    "QR PIN"
+                  ]
+                }
               ]
             },
             {
@@ -1521,6 +1540,7 @@
               "name": "Conditional access",
               "resources": [
                 "conditionalAccessPolicy",
+                "whatIfAnalysisResult",
                 "namedLocation",
                 "authenticationContextClassReference",
                 "conditionalAccessTemplate",                
@@ -1679,7 +1699,7 @@
               ]
             },
             {
-              "name": "Microsoft Entra lifecycle announcements",
+              "name": "Microsoft Entra lifecycle announcements (deprecated)",
               "resources": [
                 "changeItemBase",
                 "announcement",
@@ -1691,7 +1711,12 @@
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
-                "authenticationConditionApplication"
+                "authenticationConditionApplication",
+                "onAttributeCollectionHandler",
+                "onAttributeCollectionStartHandler",
+                "onAttributeCollectionStartCustomExtensionHandler",
+                "onAttributeCollectionSubmitHandler",
+                "onAttributeCollectionSubmitCustomExtensionHandler"
               ]
             },
             {
@@ -2100,6 +2125,7 @@
         "attachment",
         "outlookCategory",
         "mailFolder",
+        "mailFolderOperation",
         "mailSearchFolder",
         "messageRule"
       ],
@@ -2119,6 +2145,9 @@
             "multiValueLegacyExtendedProperty"
           ]
         }
+      ],
+      "complexTypes":[
+        "updateAllMessagesReadStateOperation"
       ]
     },
     {
@@ -2188,6 +2217,7 @@
         "pronounsSettings",
         "photoUpdateSettings",
         "namePronunciationSettings",
+        "enhancedPersonalizationSetting",
         "profile",
         "userAnalytics"
       ],
@@ -2425,6 +2455,7 @@
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",
             "microsoft.graph.partners.billing.operation",
+            "microsoft.graph.partners.billing.unbilledReconciliation",
             "microsoft.graph.partners.billing.unbilledUsage"
           ]
         }
@@ -2896,6 +2927,17 @@
       ],
       "childNodes": [
         {
+          "name": "Administration (preview)",
+          "resources": [
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+          ],
+          "complexTypes": [
+            "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
+            "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
+            "microsoft.graph.teamsAdministration.policyAssignment"
+          ]
+        },
+        {
           "name": "AI interactions (preview)",
           "resources": [
             "aiInteractionHistory"
@@ -2947,6 +2989,18 @@
                 "contentSharingSession",
                 "participant",
                 "addLargeGalleryViewOperation"
+              ]
+            },
+            {
+              "name": "Call delegation",
+              "overview": "../../resources/calldelegation-api-overview.md",
+              "resources": [
+                "callSettings",
+                "delegationSettings"
+              ],
+              "complexTypes": [
+                "delegateAllowedActions",
+                "userCloudCommunication"
               ]
             },
             {
@@ -3282,3 +3336,4 @@
     }
   ]
 }
+

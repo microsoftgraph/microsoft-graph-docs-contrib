@@ -98,7 +98,8 @@ Content-Length: 211
   "callOptions": {
     "@odata.type": "#microsoft.graph.incomingCallOptions",
     "isContentSharingNotificationEnabled": true,
-    "isDeltaRosterEnabled": true
+    "isDeltaRosterEnabled": true,
+    "isInteractiveRosterEnabled": true
   },
   "participantCapacity": 200
 }
