@@ -1509,7 +1509,7 @@
               ],
               "childNodes": [
                 {
-                  "name": "QR Code and PIN",
+                  "name": "QR code authentication",
                   "resources": [
                     "QR Code",
                     "PIN"
