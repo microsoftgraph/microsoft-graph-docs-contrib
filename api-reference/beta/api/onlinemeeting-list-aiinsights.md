@@ -2,6 +2,7 @@
 title: "List aiInsights"
 description: "Get the list of callAiInsights objects associated with a scheduled onlineMeeting."
 author: "Anjali-Patle"
+ms.date: 04/29/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType

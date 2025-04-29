@@ -2,6 +2,7 @@
 title: "callAiInsight resource type"
 description: "Represents a set of AI Insights associated with an online meeting."
 author: "Anjali-Patle"
+ms.date: 04/29/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType

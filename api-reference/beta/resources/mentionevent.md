@@ -2,6 +2,7 @@
 title: "mentionEvent resource type"
 description: "Represents a mention event associated with a callAiInsightViewPoint."
 author: "Anjali-Patle"
+ms.date: 04/29/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType

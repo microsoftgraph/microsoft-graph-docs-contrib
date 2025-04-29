@@ -2,6 +2,7 @@
 title: "callAiInsightViewPoint resource type"
 description: "Represents user-specific properties of a callAiInsight."
 author: "Anjali-Patle"
+ms.date: 04/29/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType

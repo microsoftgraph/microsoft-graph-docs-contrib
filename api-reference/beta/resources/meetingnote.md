@@ -2,6 +2,7 @@
 title: "meetingNote resource type"
 description: "Represents a meeting note associated with a set of meeting AI Insights."
 author: "Anjali-Patle"
+ms.date: 04/29/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
