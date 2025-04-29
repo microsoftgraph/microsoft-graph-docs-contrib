@@ -561,14 +561,6 @@
       "ChangeList": [
         {
           "Id": "d77145a7-d11f-44e3-a272-6b6a32df9002",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "recommendationConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the **recommendationConfiguration** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
-          "Target": "directory"
-        },
-        {
-          "Id": "d77145a7-d11f-44e3-a272-6b6a32df9002",
           "ApiChange": "Resource",
           "ChangedApiName": "recommendationConfiguration",
           "ChangeType": "Addition",
