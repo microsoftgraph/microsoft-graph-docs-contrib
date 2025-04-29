@@ -59,49 +59,9 @@ If successful, this method returns a `200 OK` response code and an updated [enha
 
 ## Examples
 
-### Example 1
 #### Request
 
 The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "update_enhancedpersonalizationsetting_generic"
-}
--->
-``` http
-PATCH https://graph.microsoft.com/beta/copilot/settings/people/enhancedpersonalization
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.enhancedPersonalizationSetting",
-  "isEnabledInOrganization": "Boolean",
-  "disabledForGroup": "String"
-}
-```
-
-#### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.enhancedPersonalizationSetting",
-  "name": "update_enhancedpersonalizationsetting_generic"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.enhancedPersonalizationSetting",
-  "isEnabledInOrganization": "Boolean",
-  "disabledForGroup": "String"
-}
-```
-### Example 2
-#### Request
 
 <!-- {
   "blockType": "request",
@@ -117,8 +77,6 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
-
----
 
 #### Response
 
@@ -140,4 +98,3 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
-
