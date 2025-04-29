@@ -101,12 +101,6 @@ Content-type: application/json
 
 ## Group membership
 
-Membership to groups can be statically assigned or dynamic. Not all object types can be members of both Microsoft 365 and security groups.
-
-[!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
-
-## Group membership
-
 Groups can have static or dynamic memberships. Dynamic membership uses rules to automatically add or remove members based on their properties. Not all object types can be members of Microsoft 365 and security groups.
 
 [!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
