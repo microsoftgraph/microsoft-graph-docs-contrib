@@ -54,7 +54,7 @@ Example: https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8
 c. gt 2025-04-10T19:02:00.8753517Z & lt 2025-04-14T23:02:00.8753517Z (or) ge 2025-04-10T19:02:00.8753517Z & le 2025-04-14T23:02:00.8753517Z
 Example: https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z and lastModifiedDateTime lt 2025-04-14T23:02:00.8753517Z
 
-**Note** : Equality (eq) operator isn't supported for **lastModifiedDateTime** property value.
+**Note** : Equality (eq) operator isn't supported for the **lastModifiedDateTime** property value.
 
 ## Request headers
 | Header       | Value |
