@@ -1,6 +1,6 @@
 ---
-title: "List engagementRole objects"
-description: "Get a list of the engagementRole objects and their properties."
+title: "List assignedRoles"
+description: "List all the roles assigned to a user in Viva Engage."
 author: "richafnu"
 ms.date: 03/27/2025
 ms.localizationpriority: medium
@@ -8,15 +8,15 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# List assigned roles
+# List assignedRoles
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all roles assigned to a user in Viva Engage.
+List all the roles assigned to a user in Viva Engage.
 
-## Permissions for user API
+## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 <!-- {

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of all roles that can be assigned in Viva Engage.
+List all the roles that can be assigned in Viva Engage.
 
 ## Permissions
 
