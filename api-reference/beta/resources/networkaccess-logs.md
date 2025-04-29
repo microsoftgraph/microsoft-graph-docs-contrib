@@ -30,7 +30,7 @@ None.
 |:---|:---|:---|
 |remoteNetworks|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|A collection of remote network health events.|
 |traffic|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|A network access traffic log entry that contains comprehensive information about network traffic events.|
-|connection|[microsoft.graph.networkaccess.connection](../resources/networkaccess-connection.md) collection|A network access connection aggregated log entry that contains comprehensive information about network traffic events.|
+|connections|[microsoft.graph.networkaccess.connection](../resources/networkaccess-connection.md) collection|An aggregated log entry that contains comprehensive information about network traffic events.|
 
 
 ## JSON representation

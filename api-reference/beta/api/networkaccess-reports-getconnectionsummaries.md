@@ -1,5 +1,5 @@
 ---
-title: "Get connection summaries report"
+title: "reports: connectionSummaries"
 description: "Represent a report of connections count per traffic type."
 author: "miritsadon"
 ms.date: 04/20/2025

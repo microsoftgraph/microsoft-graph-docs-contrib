@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-logs-list-connections-permissions.md)]
 
+[!INCLUDE [rbac-global-secure-access-reports-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-reports-apis-read.md)]
+
 ## HTTP request
 
 <!-- {

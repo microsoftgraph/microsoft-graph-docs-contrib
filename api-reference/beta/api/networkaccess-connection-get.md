@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-connection-get-permissions.md)]
 
+[!INCLUDE [rbac-global-secure-access-reports-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-reports-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -39,7 +41,7 @@ GET /networkAccess/logs/connections/{connectionId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$expand`, `$filter`, `$sort`, and `$top` OData query parameters [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
