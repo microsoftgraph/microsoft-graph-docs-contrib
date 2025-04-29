@@ -2233,24 +2233,6 @@
     {
       "ChangeList": [
         {
-          "Id": "3365a6d2-1e3f-45e8-807f-5d7d4ec9e8e7",
-          "ApiChange": "Property",
-          "ChangedApiName": "expirationDate,educationSynchronizationProfile",
-          "ChangeType": "Addition",
-          "Description": "Added new **expirationDate** property to the [**educationSynchronizationProfile**](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource.",
-          "Target": "**educationSynchronizationProfile**"
-        }
-      ],
-      "Id": "3365a6d2-1e3f-45e8-807f-5d7d4ec9e8e7",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2020-07-01T00:00:00",
-      "WorkloadArea": "Education",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "6a22954b-9b58-4e75-89c7-97a0483b2843",
           "ApiChange": "Property",
           "ChangedApiName": "externalId",
