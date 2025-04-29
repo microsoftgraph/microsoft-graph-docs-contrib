@@ -8,4 +8,3 @@ ms.topic: include
 > - Global Secure Access Log Reader
 > - Global Secure Access Administrator
 > - Security Administrator
-> - Global Administrator
