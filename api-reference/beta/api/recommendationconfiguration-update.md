@@ -71,8 +71,7 @@ PATCH https://graph.microsoft.com/beta/directory/recommendationConfiguration
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.recommendationConfiguration",
-  "isNotificationEnabled": "Boolean"
+   "isNotificationEnabled": "Boolean"
 }
 ```
 
