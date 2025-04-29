@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/recommendationconfiguration-update-permissions.md)]
 
+[!INCLUDE [rbac-directory-recommendations-apis-write](../includes/rbac-for-apis/rbac-directory-recommendations-configuration-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -54,7 +56,7 @@ PATCH /directory/recommendationConfiguration
 
 ## Response
 
-If successful, this method returns a `200 OK` response code
+If successful, this method returns a `204 OK` response code
 
 ## Examples
 
@@ -85,6 +87,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 OK
 Content-Type: application/json
 ```
