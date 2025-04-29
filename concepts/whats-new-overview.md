@@ -89,9 +89,8 @@ Use the **videoOnDemandWebUrl** property on [virtualEventSession](/graph/api/res
 
 ### Teamwork and communications | Messaging
 
-**$filter** support to find members of a channel by their Microsoft Entra user object ID. [List allMembers](graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true)
-
-Use the **iconId** property on the [teamwork: sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta&preserve-view=true), [userTeamwork: sendActivityNotification](/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta&preserve-view=true), [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification?view=graph-rest-beta&preserve-view=true), and [team: sendActivityNotification](/graph/api/team-sendactivitynotification?view=graph-rest-beta&preserve-view=true) to send activity notifications with customized icons.
+- Added support for `$filter` by Microsoft Entra user ID when you list channel members using the [allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API.
+- Use the **iconId** property on the [teamwork: sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta&preserve-view=true), [userTeamwork: sendActivityNotification](/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta&preserve-view=true), [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification?view=graph-rest-beta&preserve-view=true), and [team: sendActivityNotification](/graph/api/team-sendactivitynotification?view=graph-rest-beta&preserve-view=true) to send activity notifications with customized icons.
 
 ### Device and app management | Cloud PC
 
