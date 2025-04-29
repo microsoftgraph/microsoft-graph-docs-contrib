@@ -5,6 +5,7 @@ author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 09/26/2024
 ---
 
 # recycleBinSettings resource type

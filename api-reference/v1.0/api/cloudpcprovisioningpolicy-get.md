@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/27/2024
 ---
 
 # Get cloudPcProvisioningPolicy
@@ -136,6 +137,13 @@ Content-Type: application/json
       "domainJoinType": "hybridAzureADJoin"
     }
   ],
+  "microsoftManagedDesktop": {
+      "managedType": "starterManaged",
+      "profile": null
+  },
+  "autopatch": {
+      "autopatchGroupId": "91197a0b-3a74-408d-ba88-bce3fdc4e5eb"
+  },
   "enableSingleSignOn": true,
   "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
   "imageDisplayName": "Image for India HR employees",
@@ -231,6 +239,13 @@ Content-Type: application/json
       "domainJoinType": "hybridAzureADJoin"
     }
   ],
+  "microsoftManagedDesktop": {
+      "managedType": "starterManaged",
+      "profile": null
+  },
+  "autopatch": {
+      "autopatchGroupId": "91197a0b-3a74-408d-ba88-bce3fdc4e5eb"
+  },
   "enableSingleSignOn": true,
   "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
   "imageDisplayName": "IndiaHRImage",

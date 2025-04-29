@@ -5,6 +5,7 @@ author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # approvalItemResponse resource type

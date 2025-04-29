@@ -5,6 +5,7 @@ author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List supportedRegions
@@ -127,7 +128,12 @@ Content-Type: application/json
       "displayName": "Demo-1",
       "regionStatus": "available",
       "supportedSolution": "windows365",
-      "regionGroup": "usCentral"    
+      "regionGroup": "usCentral",
+      "regionRestrictionDetail": {
+        "cPURestricted": true,
+        "gPURestricted": true,
+        "nestedVirtualizationRestricted": true
+      }
     }
   ]
 }

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/02/2024
 ---
 
 # directoryObject: getMemberGroups
@@ -103,6 +104,10 @@ Group memberships for the signed-in user or other users.
 POST /me/getMemberGroups
 POST /users/{id | userPrincipalName}/getMemberGroups
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Group memberships for a group.
 <!-- { "blockType": "ignored" } -->

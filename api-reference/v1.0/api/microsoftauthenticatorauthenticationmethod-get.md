@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 07/22/2024
 ---
 
 # Get microsoftAuthenticatorAuthenticationMethod
@@ -21,12 +22,12 @@ The following tables show the least privileged permission or permissions require
 
 ### Permissions acting on self
 
-<!-- { "blockType": "permissions", "name": "microsoftauthenticatorauthenticationmethod_get" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/microsoftauthenticatorauthenticationmethod-get-permissions.md)]
 
 ### Permissions acting on other users
 
-<!-- { "blockType": "permissions", "name": "microsoftauthenticatorauthenticationmethod_get_2" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/microsoftauthenticatorauthenticationmethod-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
@@ -38,6 +39,8 @@ Get details of your own Microsoft Authenticator authentication method.
 ``` http
 GET /me/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Get details of your own or another user's Microsoft Authenticator authentication method.
 <!-- { "blockType": "ignored" } -->

@@ -5,6 +5,7 @@ author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # contentModel: getAppliedDrives
@@ -85,10 +86,6 @@ GET https://graph.microsoft.com/beta/sites/ede4bb84-6c94-4c39-8acf-3d9dbb667fba/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/contentmodelthisgetapplieddrives-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/contentmodelthisgetapplieddrives-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

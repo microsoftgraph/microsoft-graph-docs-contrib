@@ -4,6 +4,7 @@ description: "The Microsoft Graph API for Intune enables programmatic access to 
 author: "jaiprakashmb"
 ms.localizationpriority: high
 ms.subservice: "intune"
+ms.date: 04/01/2024
 ---
 
 # Working with Intune in Microsoft Graph  

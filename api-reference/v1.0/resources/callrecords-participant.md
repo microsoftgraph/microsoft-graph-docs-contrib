@@ -5,6 +5,7 @@ title: "participant resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "cloud-communications"
+ms.date: 05/28/2024
 ---
 
 # participant resource type
@@ -14,6 +15,9 @@ Namespace: microsoft.graph.callRecords
 Represents the identity of a participant in a [callRecord](callrecords-callrecord.md).
 
 Inherits from [participantBase](callrecords-participantbase.md).
+
+> [!NOTE]
+> A known issue related to application identities is associated with this API. For details, see [Known issues](https://developer.microsoft.com/graph/known-issues?search=25794).
 
 ## Methods
 
@@ -28,10 +32,6 @@ Inherits from [participantBase](callrecords-participantbase.md).
 | id       | String                        | Unique identifier for the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
 | identity | [microsoft.graph.communicationsIdentitySet](communicationsidentityset.md) | The identity of the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
 | administrativeUnitInfos | [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection | List of [administrativeUnitInfo](callrecords-administrativeunitinfo.md) objects for the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
-
-## Methods
-
-None.
 
 ## JSON representation
 

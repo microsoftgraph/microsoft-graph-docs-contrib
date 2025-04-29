@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mahage-msft"
 ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/25/2024
 ---
 
 # Update legalHold

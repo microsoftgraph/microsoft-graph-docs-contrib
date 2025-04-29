@@ -5,6 +5,7 @@ author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 06/27/2024
 ---
 
 # cloudPcBulkModifyDiskEncryptionType resource type
@@ -34,7 +35,7 @@ None.
 
 |Member|Description|
 |:---|:---|
-|platformManagedKey|Default. The Cloud PC disk is encrypted with a platform-managed key.|
+|platformManagedKey|Default. Indicates that the Cloud PC disk is encrypted with a platform-managed key.|
 |customerManagedKey|Indicates that the Cloud PC disk is encrypted with a customer-managed key.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 

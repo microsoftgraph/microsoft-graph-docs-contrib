@@ -48,6 +48,10 @@ items:
       href: ../../api/security-incident-update.md
     - name: Create comment for incident
       href: ../../api/security-incident-post-comments.md
+  - name: Complex types
+    items:
+    - name: Teams message evidence
+      href: ../../resources/security-teamsmessageevidence.md
 - name: Attack simulation and training
   items:
   - name: Simulation
@@ -276,6 +280,8 @@ items:
       href: ../../api/security-endpointdiscoveredcloudappdetail-list-devices.md
 - name: eDiscovery
   items:
+  - name: Overview
+    href: ../../resources/security-ediscovery-apioverview.md
   - name: eDiscovery case
     items:
     - name: eDiscovery case
@@ -360,18 +366,30 @@ items:
       href: ../../api/security-ediscoverycustodian-removehold.md
     - name: Get last index operation
       href: ../../api/security-ediscoverycustodian-list-lastindexoperation.md
-    - name: List site sources
-      href: ../../api/security-ediscoverycustodian-list-sitesources.md
-    - name: Create site source
-      href: ../../api/security-ediscoverycustodian-post-sitesources.md
-    - name: List unified group sources
-      href: ../../api/security-ediscoverycustodian-list-unifiedgroupsources.md
-    - name: Create unified group source
-      href: ../../api/security-ediscoverycustodian-post-unifiedgroupsources.md
-    - name: List user sources
-      href: ../../api/security-ediscoverycustodian-list-usersources.md
-    - name: Create user source
-      href: ../../api/security-ediscoverycustodian-post-usersources.md
+    - name: Site sources
+      items:
+      - name: List
+        href: ../../api/security-ediscoverycustodian-list-sitesources.md
+      - name: Create
+        href: ../../api/security-ediscoverycustodian-post-sitesources.md
+      - name: Delete
+        href: ../../api/security-ediscoverycustodian-delete-sitesources.md
+    - name: Unified group sources
+      items:
+      - name: List
+        href: ../../api/security-ediscoverycustodian-list-unifiedgroupsources.md
+      - name: Create
+        href: ../../api/security-ediscoverycustodian-post-unifiedgroupsources.md
+      - name: Delete
+        href: ../../api/security-unifiedgroupsource-delete.md
+    - name: User sources
+      items:
+      - name: List
+        href: ../../api/security-ediscoverycustodian-list-usersources.md
+      - name: Create
+        href: ../../api/security-ediscoverycustodian-post-usersources.md
+      - name: Delete
+        href: ../../api/security-ediscoverycustodian-delete-usersources.md
   - name: eDiscovery noncustodial data source
     items:
     - name: eDiscovery noncustodial data source
@@ -406,14 +424,22 @@ items:
       href: ../../api/security-ediscoveryholdpolicy-update.md
     - name: Delete
       href: ../../api/security-ediscoverycase-delete-legalholds.md
-    - name: List site sources
-      href: ../../api/security-ediscoverycustodian-list-sitesources.md
-    - name: Create site source
-      href: ../../api/security-ediscoveryholdpolicy-post-sitesources.md
-    - name: List user sources
-      href: ../../api/security-ediscoverycustodian-list-usersources.md
-    - name: Create user source
-      href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
+    - name: Site sources
+      items:
+      - name: List
+        href: ../../api/security-ediscoveryholdpolicy-list-sitesources.md
+      - name: Create
+        href: ../../api/security-ediscoveryholdpolicy-post-sitesources.md
+      - name: Delete
+        href: ../../api/security-ediscoveryholdpolicy-delete-sitesources.md
+    - name: User sources
+      items:
+      - name: List
+        href: ../../api/security-ediscoveryholdpolicy-list-usersources.md
+      - name: Create
+        href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
+      - name: Delete
+        href: ../../api/security-ediscoveryholdpolicy-delete-usersources.md
   - name: eDiscovery search
     items:
     - name: eDiscovery search
@@ -458,22 +484,42 @@ items:
     items:
     - name: eDiscovery review set
       href: ../../resources/security-ediscoveryreviewset.md
-    - name: List ediscoveryReviewSets
+    - name: List
       href: ../../api/security-ediscoverycase-list-reviewsets.md
-    - name: Create ediscoveryReviewSet
+    - name: Create
       href: ../../api/security-ediscoverycase-post-reviewsets.md
-    - name: Get ediscoveryReviewSet
+    - name: Get
       href: ../../api/security-ediscoveryreviewset-get.md
-    - name: export
+    - name: Export
       href: ../../api/security-ediscoveryreviewset-export.md
-    - name: addToReviewSet
+    - name: Add to review set
       href: ../../api/security-ediscoveryreviewset-addtoreviewset.md
     - name: List files
       href: ../../api/security-ediscoveryreviewset-list-files.md
     - name: List queries
       href: ../../api/security-ediscoveryreviewset-list-queries.md
-    - name: Create ediscoveryReviewSetQuery
+    - name: Create review set query
       href: ../../api/security-ediscoveryreviewset-post-queries.md
+    - name: eDiscovery review set query
+      items:
+      - name: eDiscovery review set query
+        href: ../../resources/security-ediscoveryreviewsetquery.md
+      - name: List
+        href: ../../api/security-ediscoveryreviewset-list-queries.md
+      - name: Create
+        href: ../../api/security-ediscoveryreviewset-post-queries.md
+      - name: Get
+        href: ../../api/security-ediscoveryreviewsetquery-get.md
+      - name: Update
+        href: ../../api/security-ediscoveryreviewsetquery-update.md
+      - name: Delete
+        href: ../../api/security-ediscoveryreviewset-delete-queries.md
+      - name: Export
+        href: ../../api/security-ediscoveryreviewsetquery-export.md
+      - name: Apply tags
+        href: ../../api/security-ediscoveryreviewsetquery-applytags.md
+      - name: Run (preview)
+        href: ../../api/security-ediscoveryreviewsetquery-run.md
   - name: eDiscovery review tag
     items:
     - name: eDiscovery review tag
@@ -490,6 +536,16 @@ items:
       href: ../../api/security-ediscoverycase-delete-tags.md
     - name: List tags as hierarchy
       href: ../../api/security-ediscoveryreviewtag-ashierarchy.md
+  - name: eDiscovery case member
+    items:
+    - name: eDiscovery case member
+      href: ../../resources/security-ediscoverycasemember.md
+    - name: List
+      href: ../../api/security-ediscoverycasemember-list.md
+    - name: Add
+      href: ../../api/security-ediscoverycasemember-post.md
+    - name: Remove
+      href: ../../api/security-ediscoverycasemember-delete.md
 - name: Email and collaboration protection
   items:
   - name: Analyzed email

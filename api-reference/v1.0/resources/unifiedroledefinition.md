@@ -7,6 +7,7 @@ ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 toc.title: Role definition
+ms.date: 07/22/2024
 ---
 
 # unifiedRoleDefinition resource type

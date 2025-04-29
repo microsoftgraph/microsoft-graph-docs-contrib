@@ -16,9 +16,9 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OpenIdConnectIdentityProvider();
 $requestBody->setOdataType('microsoft.graph.openIdConnectIdentityProvider');
-$requestBody->setDisplayName('Login with the Contoso identity provider');
-$requestBody->setClientId('56433757-cadd-4135-8431-2c9e3fd68ae8');
-$requestBody->setClientSecret('12345');
+$requestBody->setDisplayName('Contoso');
+$requestBody->setClientId('00001111-aaaa-2222-bbbb-3333cccc4444');
+$requestBody->setClientSecret('4294967296');
 $claimsMapping = new ClaimsMapping();
 $claimsMapping->setUserId('myUserId');
 $claimsMapping->setGivenName('myGivenName');

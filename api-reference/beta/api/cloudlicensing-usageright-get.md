@@ -5,6 +5,7 @@ author: "patrick-starrin"
 ms.localizationpriority: medium
 ms.subservice: "cloud-licensing"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Get usageRight
@@ -46,14 +47,21 @@ GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
+To get a usage right for the signed-in user using delegated (`/me`) permissions:
+
+<!-- { "blockType": "ignored" }
 -->
 ``` http
-GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 GET /me/cloudLicensing/usageRights/{usageRightId}
+```
+
+To get a usage right for a specific user or a group using either delegated or application permissions:
+
+<!-- { "blockType": "ignored" }
+-->
+``` http
 GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
+GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 ```
 
 ## Optional query parameters

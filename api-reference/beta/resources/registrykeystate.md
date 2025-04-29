@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: security
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 # registryKeyState resource type
@@ -27,6 +28,9 @@ Contains information about registry key changes related to the alert, and the pr
 |valueData|String|Current (i.e. changed) registry key value data (contents).|
 |valueName|String|Current (i.e. changed) registry key value name|
 |valueType|registryValueType|[Registry key value type](/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>REG_DWORD_LITTLE_ENDIAN</li> <li>REG_DWORD_BIG_ENDIAN</li><li>REG_EXPAND_SZ</li> <li>REG_LINK</li> <li>REG_MULTI_SZ</li> <li>REG_NONE</li> <li>REG_QWORD</li> <li>REG_QWORD_LITTLE_ENDIAN</li> <li>REG_SZ</li></ul> Possible values are: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.|
+
+## Relationships
+None.
 
 ## JSON representation
 

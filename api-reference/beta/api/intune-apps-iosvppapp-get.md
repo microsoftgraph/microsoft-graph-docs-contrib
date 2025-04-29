@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get iosVppApp
@@ -65,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2371
+Content-Length: 2431
 
 {
   "value": {
@@ -115,6 +116,7 @@ Content-Length: 2371
     "vppTokenOrganizationName": "Vpp Token Organization Name value",
     "vppTokenAccountType": "education",
     "vppTokenAppleId": "Vpp Token Apple Id value",
+    "vppTokenDisplayName": "Vpp Token Display Name value",
     "bundleId": "Bundle Id value",
     "vppTokenId": "Vpp Token Id value",
     "revokeLicenseActionResults": [

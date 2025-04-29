@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 09/13/2024
 ---
 
 # Create appManagementPolicy
@@ -117,7 +118,6 @@ POST https://graph.microsoft.com/v1.0/policies/appManagementPolicies
             "identifierUris": {
                 "nonDefaultUriAddition": {
                     "state": "disabled",
-                    "restrictForAppsCreatedAfterDateTime": null,
                     "excludeAppsReceivingV2Tokens": true,
                     "excludeSaml": true
                 }

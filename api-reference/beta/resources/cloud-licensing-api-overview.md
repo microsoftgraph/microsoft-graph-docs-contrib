@@ -5,6 +5,7 @@ author: "patrick-starrin"
 ms.localizationpriority: medium
 ms.subservice: "cloud-licensing"
 doc_type: conceptualPageType
+ms.date: 10/17/2024
 ---
 
 # Use the cloud licensing API in Microsoft Graph (preview)

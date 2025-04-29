@@ -7,6 +7,7 @@ ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 toc.title: Password
+ms.date: 07/23/2024
 ---
 
 # passwordAuthenticationMethod resource type
@@ -39,8 +40,6 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Relationships
 
 None.
-
-The following JSON representation shows the resource type.
 
 The following JSON representation shows the resource type.
 

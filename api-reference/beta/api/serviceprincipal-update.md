@@ -5,6 +5,7 @@ author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
+ms.date: 10/01/2024
 ---
 
 # Update servicePrincipal

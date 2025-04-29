@@ -5,6 +5,7 @@ doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.subservice: "teams"
+ms.date: 10/02/2024
 ---
 
 # chatMessage resource type
@@ -53,6 +54,8 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Undo the deletion of a message in chat](../api/chatmessage-undosoftdelete.md)|[chatMessage](chatmessage.md)| Undelete the message in a chat.|
 |[Set reaction to a message in chat](../api/chatmessage-setreaction.md)|[chatMessage](chatmessage.md)| Set reaction to a message in a chat.|
 |[Unset reaction to a message in chat](../api/chatmessage-unsetreaction.md)|[chatMessage](chatmessage.md)| Unset reaction to a message in a chat.|
+|[Forward message to chat](../api/chatmessage-forwardtochat.md)|[forwardToChatResult](forwardtochatresult.md) collection|Forward a [chat message](../resources/chatmessage.md), a [channel message](../resources/chatmessage.md), or a [channel message reply](../resources/chatmessage.md) to a [chat](../resources/chat.md).|
+|[Reply with quote](../api/chatmessage-replywithquote.md)|[chatMessage](chatmessage.md)|Reply with quote to a single [chat message](../resources/chatmessage.md) or multiple chat messages in a [chat](../resources/chat.md).|
 |**Hosted content**| | |
 |[List all hosted content](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) collection| Get all hosted contents associated with a message.|
 |[Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Get hosted content (and its bytes) for a message.|
@@ -77,7 +80,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |locale|string|Locale of the chat message set by the client. Always set to `en-us`.|
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, chat, and tag.|
 |messageHistory|[chatMessageHistoryItem](../resources/chatmessagehistoryitem.md) collection|List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
-|messageType|chatMessageType|The type of chat message. The possible values are: `message`, `chatEvent`, `typing`, `unknownFutureValue`, `systemEventMessage`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage`.|
+|messageType|chatMessageType|The type of chat message. The possible values are: `message`, `chatEvent`, `typing`, `unknownFutureValue`, `systemEventMessage`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage`.|
 |onBehalfOf|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| User attribution of the message when [bot](/microsoftteams/platform/messaging-extensions/how-to/action-commands/respond-to-task-module-submit?tabs=dotnet%2Cdotnet-1#user-attribution-for-bots-messages) sends a message on behalf of a user.|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Defines the properties of a policy violation set by a data loss prevention (DLP) application.|
 |reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|

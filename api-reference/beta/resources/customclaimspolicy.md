@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-id
 doc_type: resourcePageType
 toc.title: Custom claims policy (preview)
+ms.date: 09/19/2024
 ---
 
 # customClaimsPolicy resource type

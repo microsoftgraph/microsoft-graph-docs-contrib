@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
 ms.subservice: extensions
+ms.date: 04/17/2024
 ---
 
 # Get openTypeExtension
@@ -35,19 +36,20 @@ Depending on the resource that contains the extension and the permission type (d
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [baseTaskList](../resources/basetasklist.md) (deprecated)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [device](../resources/device.md) | Directory.Read.All | Not supported | Device.ReadWrite.All |
+| [device](../resources/device.md) | Directory.Read.All | Not supported. | Device.ReadWrite.All |
+| [driveItem](../resources/driveitem.md) | Files.Read | Files.Read | Not supported. |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
-| [group event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
-| [group post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
+| [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
+| [group event](../resources/event.md) | Group.Read.All | Not supported. | Not supported. |
+| [group post](../resources/post.md) | Group.Read.All | Not supported. | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
-| [organization](../resources/organization.md) | User.Read | Not supported | Organization.Read.All |
+| [organization](../resources/organization.md) | User.Read | Not supported. | Organization.Read.All |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [user](../resources/user.md) | User.Read | Not supported. | User.Read.All |
+| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [baseTaskList](../resources/basetasklist.md) (deprecated)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 
 ## HTTP request
 
@@ -74,6 +76,7 @@ GET /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{todoTaskId}/ext
 GET /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions/{extensionId}
 GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{baseTaskId}/extensions/{extensionId}
 GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions/{extensionId}
+GET /drive/items/{itemId}/extensions/{extensionId}
 ```
 
 ### Get a known resource instance expanded with a matching extension 
@@ -93,6 +96,7 @@ GET /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}?$expand
 GET /users/{userId|userPrincipalName}/todo/lists/{listId}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{userId|userPrincipalName}/tasks/lists/{listId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /drive/items/{itemID}?$expand=extensions($filter=id eq 'extensionId')
 ```
 
 
@@ -537,8 +541,6 @@ The fifth example looks at all messages in the signed-in user's mailbox to find 
 expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name 
 `Com.Contoso.Referral`.
 
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -674,6 +676,84 @@ HTTP/1.1 200 OK
 
 ```
 
+****
+
+#### Request 6
+
+The following example shows how to get a **driveItem** and expand its extensions using a filter. The filter returns the extension with an ID that matches a fully qualified name.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_opentypeextension_6",
+  "sampleKeys": ["01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ?$expand=extensions($filter=id eq 'myCustomExtension')
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-opentypeextension-6-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-opentypeextension-6-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-6-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-opentypeextension-6-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-opentypeextension-6-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-opentypeextension-6-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-opentypeextension-6-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response 6
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.openTypeExtension"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/drive/items",
+  "name": "New Folder",
+  "folder": {},
+  "@microsoft.graph.conflictBehavior": "rename",
+  "extensions": [
+    {
+      "id": "myCustomExtension",
+      "extensionName": "myCustomExtension",
+      "myCustomString": "Contoso data",
+      "myCustomBool": false
+    }
+  ]
+}
+```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -689,5 +769,3 @@ HTTP/1.1 200 OK
   ]
 }
 -->
-
-

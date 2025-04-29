@@ -6,6 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # List scopedAdministratorOf
@@ -32,6 +33,8 @@ GET /me/scopedRoleMemberOf
 GET /users/{id}/scopedRoleMemberOf
 
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 

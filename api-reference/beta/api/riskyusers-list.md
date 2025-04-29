@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "tracyshi"
 doc_type: apiPageType
 ms.subservice: "entra-sign-in"
+ms.date: 10/17/2024
 ---
 # List riskyUsers
 

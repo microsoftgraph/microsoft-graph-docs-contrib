@@ -6,6 +6,7 @@ ms.reviewer: msodsrbac
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 09/17/2024
 ---
 
 # List members

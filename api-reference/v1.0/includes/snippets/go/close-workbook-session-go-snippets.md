@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("workbook-session-id", "{session-id}")
 
-configuration := &graphdrives.DriveItemItemItemWorkbookCloseSessionRequestBuilderPostRequestConfiguration{
+configuration := &graphdrives.ItemItemsItemWorkbookCloseSessionRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphdrives.NewCloseSessionPostRequestBody()

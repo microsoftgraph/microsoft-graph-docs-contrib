@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
 toc.title: Outlook task folder (deprecated)
+ms.date: 08/23/2024
 ---
 
 # outlookTaskFolder resource type (deprecated)

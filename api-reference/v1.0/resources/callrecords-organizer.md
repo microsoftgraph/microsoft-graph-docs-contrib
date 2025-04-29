@@ -5,6 +5,7 @@ title: "organizer resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "cloud-communications"
+ms.date: 05/28/2024
 ---
 
 # organizer resource type

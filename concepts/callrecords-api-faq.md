@@ -9,7 +9,7 @@ ms.date: 11/07/2024
 
 # Microsoft Graph call records API FAQ
 
-This topic provides answers to frequently asked quesstions about the call records API in Microsoft Graph.
+This topic provides answers to frequently asked questions about the call records API in Microsoft Graph.
 
 ## What is the Microsoft Graph call records API?
 
@@ -42,7 +42,7 @@ You can find and collect call IDs in the following ways:
 
 ## When is a call record available?
 
-A first version of a call record is typically generated and a notification is sent within 15 minutes after a call ends. However, it can take up to 60 minutes for the service to make the call record available. For more information, see [Latency](/graph/api/resources/subscription#latency) page.
+A first version of a call record is typically generated and a notification is sent within 30 minutes after a call ends. However, it can take up to 150 minutes for the service to make the call record available. For more information, see [Latency](/graph/api/resources/subscription#latency) page.
 
 ## How long are call records retained?
 
@@ -54,11 +54,11 @@ No, the call records API doesn't return call records older than 30 days. Request
 
 ## Why is my first call record notification delayed?
 
-Your call record notification can be delayed because it can take up to 60 minutes for the service to make the **first** version of a call record available. If you experience a longer delay for delivery of the first call record version, check for outages reported by the call records API team in the **Health** tab of the [Teams Admin Portal](https://admin.teams.microsoft.com/). Also, you can open a [support ticket](https://developer.microsoft.com/graph/support) with the call records API team.
+Your call record notification can be delayed because it can take up to 150 minutes for the service to make the **first** version of a call record available. If you experience a longer delay for delivery of the first call record version, check for outages reported by the call records API team in the **Health** tab of the [Teams Admin portal](https://admin.teams.microsoft.com/). Also, you can open a [support ticket](https://developer.microsoft.com/graph/support) with the call records API team.
 
 ## Why are subsequent versions of my call record delayed?
 
-Subsequent versions of a call record can be delivered after the initial 60-minute latency. This means that while the first version is available within 60 minutes, later updates to the call record can arrive later due to delayed telemetry from the client and other factors.
+Subsequent versions of a call record can be delivered after the initial 150-minute latency. This means that while the first version is available within 150 minutes, later updates to the call record can arrive later due to delayed telemetry from the client and other factors.
 
 ## Why does a call record have missing fields?
 
@@ -92,10 +92,14 @@ You can use the following methods to list all attending call participants:
 
 You might not see all participants because the [List participants_v2](/graph/api/callrecords-callrecord-list-participants_v2) API supports pagination, limiting the number of participants in the response to 130 per page. If there were more than 130 users on the call, the first call record response contains 130 participants along with a `@odata.nextLink` property. This property includes the URL to call the API and receive the next set of participants. Continue this process until the next link is empty, which indicates that there are no more participants to retrieve.
 
+## Why are there duplicate sessions returned for one call record?
+
+A call record [session](/graph/api/resources/callrecords-session) uniquely represents a single user-user communication in peer-to-peer calls or a single user-service communication in a group call or meeting. However, in some calling scenarios a single user-service communication can involve multiple service identities in a single session, such as a virtual transfer between an auto attendant and a call queue. In these scenarios, a session ID might be duplicated one or more times in order to properly represent each identity involved in the communication and the respective communication duration.
+
 ## Why do I receive a 404 Not Found error?
 
 The following are some reasons why you might encounter a `404 Not Found` error:
 
-* **Recent call**: If the call was made within the last 60 minutes, the call record might not be generated yet. Wait 60 minutes after the call ended and try again.
+* **Recent call**: If the call was made within the last 150 minutes, the call record might not be generated yet. Wait 150 minutes after the call ended and try again.
 * **Old call**: If the call is older than 30 days, the call records API returns a `404 Not Found` error by design.
-* **Other issues**: If neither of the reasons apply, check for any outages reported by the call records API team in the **Health** tab of the [Teams Admin Portal](https://admin.teams.microsoft.com/). Also, you can open a [support ticket](https://developer.microsoft.com/graph/support) with the call records API team for assistance.
+* **Other issues**: If neither of the reasons apply, check for any outages reported by the call records API team in the **Health** tab of the [Teams Admin portal](https://admin.teams.microsoft.com/). Also, you can open a [support ticket](https://developer.microsoft.com/graph/support) with the call records API team for assistance.

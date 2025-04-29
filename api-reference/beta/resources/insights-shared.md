@@ -5,6 +5,7 @@ author: simonhult
 ms.localizationpriority: medium
 ms.subservice: insights
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # sharedInsight resource type

@@ -6,6 +6,7 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/15/2024
 ---
 
 # Get authorizationPolicy

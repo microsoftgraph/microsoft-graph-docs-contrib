@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "spgraph-docs-team"
 ms.subservice: onedrive
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # driveItem: restore

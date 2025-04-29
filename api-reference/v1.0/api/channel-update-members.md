@@ -5,6 +5,7 @@ author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 04/04/2024
 ---
 
 # Update member in channel
@@ -93,10 +94,6 @@ content-length: 26
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-member-1-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-member-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
+ms.date: 09/29/2024
 ---
 
 # Working with Microsoft 365 usage reports in Microsoft Graph
@@ -36,7 +37,8 @@ The following table shows the availability for each API across all cloud deploym
 | [Microsoft 365 Apps usage](../resources/reportroot.md#microsoft-365-apps-usage)                                 | ✔                              | ✔                                     | ✔                                              | ➖                                      |
 | [Microsoft 365 browser usage](../resources/reportroot.md#microsoft-365-browser-usage)                           | ✔                              | ➖                                    | ➖                                             | ➖                                      |
 | [Microsoft 365 Groups activity](../resources/reportroot.md#microsoft-365-groups-activity)                       | ✔                              | ➖                                    | ✔                                              | ➖                                      |
-| [Microsoft Forms Usage](../resources/reportroot.md#forms-activity)                                              | ✔                              | ➖                                    |
+| [Microsoft Forms usage](../resources/reportroot.md#forms-activity)                                              | ✔                              | ➖                                    |
+| [Microsoft Graph API usage](../resources/reportroot.md#microsoft-graph-api-usage-preview)                               | ✔                              | ➖                                    | ➖                                             | ➖                                      |
 | [Microsoft Teams device usage](../resources/reportroot.md#microsoft-teams-device-usage)                         | ✔                              | ✔                                     | ✔                                              | ✔                                       |
 | [Microsoft Teams team activity](../resources/reportroot.md#microsoft-teams-team-activity)                       | ✔                              | ✔                                     | ✔                                              | ✔                                       |
 | [Microsoft Teams user activity](../resources/reportroot.md#microsoft-teams-user-activity)                       | ✔                              | ✔                                     | ✔                                              | ✔                                       |

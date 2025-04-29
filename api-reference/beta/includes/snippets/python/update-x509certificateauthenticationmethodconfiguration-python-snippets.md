@@ -54,6 +54,25 @@ request_body = X509CertificateAuthenticationMethodConfiguration(
 			is_registration_required = False,
 		),
 	],
+	additional_data = {
+			"crl_validation_configuration" : {
+					"state" : "disabled",
+					"exempted_certificate_authorities_subject_key_identifiers" : [
+					],
+			},
+			"certificate_authority_scopes" : [
+				{
+						"subject_key_identifier" : "aaaaaaaabbbbcccc111122222222222222333333",
+						"public_key_infrastructure_identifier" : "Contoso PKI",
+						"include_targets" : [
+							{
+									"id" : "aaaaaaaa-bbbb-cccc-1111-222222222222",
+									"target_type" : "group",
+							},
+						],
+				},
+			],
+	}
 )
 
 result = await graph_client.policies.authentication_methods_policy.authentication_method_configurations.by_authentication_method_configuration_id('authenticationMethodConfiguration-id').patch(request_body)

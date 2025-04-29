@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Custom access package workflow extension (deprecated)
+ms.date: 07/22/2024
 ---
 
 # customAccessPackageWorkflowExtension resource type (deprecated)

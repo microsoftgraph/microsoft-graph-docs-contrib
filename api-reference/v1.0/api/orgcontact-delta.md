@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # orgContact: delta

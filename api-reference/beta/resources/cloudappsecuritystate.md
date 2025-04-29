@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: security
 author: "preetikr"
+ms.date: 03/21/2024
 ---
 
 # cloudAppSecurityState resource type
@@ -20,6 +21,9 @@ Contains stateful information about the cloud application (destinationServiceNam
 |destinationServiceIp|String|Destination IP Address of the connection to the cloud application/service.|
 |destinationServiceName|String|Cloud application/service name (for example "Salesforce", "DropBox", etc.).|
 |riskScore|String|Provider-generated/calculated risk score of the Cloud Application/Service. Recommended value range of 0-1, which equates to a percentage.|
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/06/2024
 ---
 
 # Create appManagementPolicy
@@ -217,7 +218,6 @@ Content-type: application/json
             "identifierUris": {
                 "nonDefaultUriAddition": {
                     "state": "disabled",
-                    "restrictForAppsCreatedAfterDateTime": null,
                     "excludeAppsReceivingV2Tokens": true,
                     "excludeSaml": true
                 }

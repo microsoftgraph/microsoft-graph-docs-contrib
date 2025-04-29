@@ -5,6 +5,7 @@ author: "malabikaroy"
 ms.localizationpriority: medium
 ms.subservice: "viva-learning"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # learningCourseActivity resource type
@@ -33,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |assignedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |assignerUserId|String|The user ID of the assigner. Optional.|
-|assignmentType|assignmentType|Assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`, `peerRecommended`.You must use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `peerRecommended`. Required.|
+|assignmentType|assignmentType|Assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`, `peerRecommended`.Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `peerRecommended`. Required.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage completion value of the course activity. Optional.|
 |dueDateTime|DateTimeTimeZone|Due date for the course activity. Optional.|

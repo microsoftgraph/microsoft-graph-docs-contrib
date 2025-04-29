@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create hardwareConfigurationAssignment
@@ -65,16 +66,20 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/assignments
 Content-type: application/json
-Content-length: 403
+Content-length: 590
 
 {
   "@odata.type": "#microsoft.graph.hardwareConfigurationAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+    "@odata.type": "microsoft.graph.organizationalUnitAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
     "deviceAndAppManagementAssignmentFilterType": "include",
-    "targetType": "user",
-    "entraObjectId": "Entra Object Id value"
+    "organizationalUnitId": "Organizational Unit Id value",
+    "assignmentConflictSetting": {
+      "@odata.type": "microsoft.graph.organizationalUnitAssignmentConflictSetting",
+      "assignmentOverride": "denied",
+      "versionNumber": 13
+    }
   }
 }
 ```
@@ -84,17 +89,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 452
+Content-Length: 639
 
 {
   "@odata.type": "#microsoft.graph.hardwareConfigurationAssignment",
   "id": "2ab8e97c-e97c-2ab8-7ce9-b82a7ce9b82a",
   "target": {
-    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+    "@odata.type": "microsoft.graph.organizationalUnitAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
     "deviceAndAppManagementAssignmentFilterType": "include",
-    "targetType": "user",
-    "entraObjectId": "Entra Object Id value"
+    "organizationalUnitId": "Organizational Unit Id value",
+    "assignmentConflictSetting": {
+      "@odata.type": "microsoft.graph.organizationalUnitAssignmentConflictSetting",
+      "assignmentOverride": "denied",
+      "versionNumber": 13
+    }
   }
 }
 ```

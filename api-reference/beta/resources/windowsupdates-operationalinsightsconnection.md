@@ -3,8 +3,9 @@ title: "operationalInsightsConnection resource type"
 description: "Represents a specialized resourceConnection that links a Log Analytics workspace to Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # operationalInsightsConnection resource type

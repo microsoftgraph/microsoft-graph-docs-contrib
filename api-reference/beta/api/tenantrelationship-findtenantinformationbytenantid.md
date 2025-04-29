@@ -5,6 +5,7 @@ author: "adimitui"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 11/06/2024
 ---
 
 # tenantRelationship: findTenantInformationByTenantId
@@ -97,6 +98,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/findTenantInformationBy
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/tenantrelationshiprootthisfindtenantinformationbytenantid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tenantrelationshiprootthisfindtenantinformationbytenantid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Accept-Language", "fr-FR")
 
-configuration := &graphorganization.OrganizationItemBrandingRequestBuilderGetRequestConfiguration{
+configuration := &graphorganization.ItemBrandingRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 

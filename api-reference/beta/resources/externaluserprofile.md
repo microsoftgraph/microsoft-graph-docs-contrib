@@ -6,6 +6,7 @@ author: "jkdouglas"
 ms.reviewer: mapamu
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 07/15/2024
 ---
 
 # externalUserProfile resource type

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/29/2024
 ---
 
 # plannerChecklistItem resource type
@@ -24,10 +25,6 @@ The **plannerChecklistItem** resource represents an item in the checklist of a t
 |lastModifiedDateTime|DateTimeOffset|Read-only. Date and time at which this is last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |orderHint|String|Used to set the relative order of items in the checklist. The format is defined as outlined [here](planner-order-hint-format.md).|
 |title|String|Title of the checklist item.|
-
-## Relationships
-
-None.
 
 ## Relationships
 

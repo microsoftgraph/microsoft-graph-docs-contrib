@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: project-rome
 doc_type: resourcePageType
 author: ailae
+ms.date: 07/22/2024
 ---
 
 # visualInfo resource type
@@ -30,6 +31,9 @@ If a custom card is not provided, a simple card will be generated using displayT
 | backgroundColor | String                                             | Optional. Background color used to render the activity in the UI - brand color for the application source of the activity. Must be a valid hex color |
 | content         | Untyped JSON object                                | Optional. Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI                           |
 | attribution     | [imageInfo](../resources/projectrome-imageinfo.md) | Optional. JSON object used to represent an icon which represents the application used to generate the activity                                       |
+
+## Relationships
+None.
 
 ## JSON Representation
 

@@ -18,10 +18,10 @@ import (
 
 requestFilter := " explorerViewId eq ‘9ab0fcab-c1d4-4b26-963b-a3c33155f853’"
 
-requestParameters := &graphemployeeexperience.EmployeeExperienceGoalsExportJobsRequestBuilderGetQueryParameters{
+requestParameters := &graphemployeeexperience.GoalsExportJobsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphemployeeexperience.EmployeeExperienceGoalsExportJobsRequestBuilderGetRequestConfiguration{
+configuration := &graphemployeeexperience.GoalsExportJobsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

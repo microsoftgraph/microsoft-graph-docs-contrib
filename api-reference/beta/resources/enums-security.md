@@ -5,6 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "security"
 author: "BenAlfasi"
+ms.date: 11/11/2024
 ---
 
 # Security enum values
@@ -881,6 +882,65 @@ Namespace: microsoft.graph.security
 | spoofedAllowed |
 | reasonLostInTransit |
 | bulk |
+
+### antispamTeamsDirection values
+
+| Member |
+| :------|
+|  unknown   |
+|  inbound   |
+|  outbound  |
+|  intraorg  |
+|  unknownFutureValue  |
+
+### teamsDeliveryLocation values
+
+| Member |
+| :------|
+|  unknown   |
+|  teams     |
+|  quarantine     |
+|  failed    |
+|  unknownFutureValue  |
+
+### teamsMessageDeliveryAction values
+
+| Member |
+| :------|
+|  unknown   |
+|  deliveredAsSpam     |
+|  delivered |
+|  blocked   |
+|  replaced  |
+|  unknownFutureValue  |
+
+### cloudAttachmentVersion values
+
+|Member|
+|:----|
+|latest     |
+|recent10   |
+|recent100  |
+|all        |
+|unknownFutureValue|
+
+### documentVersion values
+
+|Member|
+|:----|
+|latest     |
+|recent10   |
+|recent100  |
+|all        |
+|unknownFutureValue|
+
+### recipientType values
+
+|Member|
+|:---|
+|user|
+|roleGroup|
+|unknownFutureValue|
 
 <!--
 {

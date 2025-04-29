@@ -5,6 +5,7 @@ author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 07/29/2024
 ---
 
 # Get readingAssignmentSubmission
@@ -165,6 +166,10 @@ GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmissi
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-readingassignmentsubmission-filter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-readingassignmentsubmission-filter-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

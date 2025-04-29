@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # microsoftTunnelDeploymentMode enum type
@@ -20,8 +21,8 @@ The available deployment modes for a managed Tunnel server. The deployment mode 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|standaloneRootful|0|Default. Indicates that the Tunnel containers are deployed standalone and in rootful mode.|
-|standaloneRootless|1|Indicates that the Tunnel containers are deployed standalone and in rootless mode.|
-|podRootful|2|Indicates that the Tunnel containers are deployed as part of a pod and in rootful mode.|
-|podRootless|3|Indicates that the Tunnel containers are deployed as part of a pod and in rootless mode.|
-|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+|standaloneRootful|0||
+|standaloneRootless|1||
+|podRootful|2||
+|podRootless|3||
+|unknownFutureValue|4||

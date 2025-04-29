@@ -31,6 +31,7 @@ The following table lists the possible error and response codes that can be retu
 |400|InvalidProtectionUnitId|Thrown when one of the Protection Unit IDs is invalid.|Protection Unit ID is invalid.|
 |413|ProtectionUnitsLimitBreached|Thrown when the user tries to add more Protection Units than supported in one request.|Number of Protection Units in each request must not exceed 50.|
 |409|PolicyCreationNotAllowed|Thrown when an active protection policy already exists for the service and the user tries to create a new policy.|Can't create Policy. Another active Policy already exists.|
+|409|ProtectionUnitAlreadyExists|Artifact ArtifactId is not eligible for protection because it is already protected under policy PolicyId.| Thrown when artifact is already protected under another policy.
 |500|PolicySaveFailed|Thrown when a transient error occurs in the M365 Backup service.|An unknown error occurred. Try again.|
 
 ## Get protection policy API errors
@@ -58,9 +59,10 @@ The following table lists the possible error and response codes that can be retu
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
-|200|ProtectionUnitAlreadyExists|This is a delta patch ProtectionUnit level error returned when the request has duplicate Protection Unit in the list that is already present in the service.|ProtectionUnit level error: ProtectionUnit already exists.|
 |200|ProtectionUnitNotFound|This is a delta patch ProtectionUnit level error returned when the user requests to remove Protection Unit, which isn't present in the service.|ProtectionUnit level error: ProtectionUnit doesn't exist.|
+|200|ProtectionUnitAlreadyExists|Artifact ArtifactId is not eligible for protection because it is already protected under policy PolicyId.| Thrown when artifact is already protected under another policy.
 |400|DuplicateProtectionUnitInList|This is a Protection Unit level error returned when the request has duplicate artifacts in the list.|Protection Unit level error: Duplicate Protection Unit in list.|
+|400|ProtectionUnitActionNotAllowed|The artifact with the given protection unit ID can't be removed as it's protected by a dynamic rule.| Protection units protected via dynamic rules can't be removed manually.|
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|
 
 ## Delete inactive protection policy API errors
@@ -251,6 +253,59 @@ The following table lists the possible error and response code that can be retur
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleCreateRequest|Can't process the request because it's malformed or incorrect.|Invalid create request.|
+|400|InvalidRuleExpression|Value can't be null or invalid expression.|The expression isn't valid and can't be parsed.|
+|413|InvalidRuleExpressionGroupLimitExceeded|Rule expression that contains more than 100 group IDs isn't allowed.|The expression contains more group IDs than the imposed limit allows.|
+
+## Update inclusion rule API errors
+
+The error codes in this section apply to the following APIs:
+
+- [Update driveProtectionRule](/graph/api/protectionrulebase-update)
+- [Update mailboxProtectionRule](/graph/api/protectionrulebase-update)
+
+The following table lists the possible error and response codes that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|400|InvalidProtectionRulePatchRequest|The **isAutoApplyEnabled** parameter isn't supported in a patch request.|The **isAutoApplyEnabled** parameter can be supplied only at the time of creation. The conversion between a static rule and a dynamic rule, and vice versa, isn't allowed.|
+|400|InvalidProtectionRuleStatusForUpdation|Update operation isn't allowed in the current state.|Invalid state to invoke the update operation.|
+|400|InvalidRuleExpression|Value can't be null or invalid expression|The expression isn't valid and can't be parsed.|
+|400|PatchNotAllowedForStaticRule|Patch operation isn't allowed for a static rule.|Invalid update request.|
+|404|ProtectionRuleNotFound|Protection rule with the given ID doesn't exist.|The given rule ID is either incorrect or the rule was deleted.|
+|413|InvalidRuleExpressionGroupLimitExceeded|Rule expression that contains more than 100 group IDs isn't allowed.|The expression contains more group IDs than the imposed limit allows.|
+|422|InvalidProtectionRuleStatusForDynamicRuleEdit|Patch operation isn't allowed in the current state.|The patch operation isn't allowed in the `deleteRequested` state.|
+
+## Delete and unprotect inclusion rule API errors
+
+The error codes in this section apply to the following APIs:
+
+- [driveProtectionRule: deleteAndUnprotect](/graph/api/protectionrulebase-deleteandunprotect)
+- [mailboxProtectionRule: deleteAndUnprotect](/graph/api/protectionrulebase-deleteandunprotect)
+
+The following table lists the possible error and response code that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|400|InvalidInclusionRuleId|Rule ID in the request is invalid, null, or empty.|The rule ID is invalid.|
+|404|ProtectionRuleNotFound|Protection rule with the given ID doesn't exist.|The given rule ID is either incorrect or the rule was deleted.|
+|422|InvalidProtectionRuleStatusForDynamicRuleDeleteAndUnprotectAll|The **deleteAndUnprotect** operation isn't allowed in the current state.|Invalid state to invoke the **deleteAndUnprotect** action.|
+
+## Run inclusion rule API errors
+
+The error codes in this section apply to the following APIs:
+
+- [Run driveProtectionRule](/graph/api/protectionrulebase-run)
+- [Run mailboxProtectionRule](/graph/api/protectionrulebase-run)
+- [Run siteProtectionRule](/graph/api/protectionrulebase-run)
+
+The following table lists the possible error and response codes that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|400|InvalidInclusionRuleId|Rule ID in the request is invalid, null, or empty.|The rule ID is invalid.|
+|400|ProtectionRuleActionNotAllowed|Run action isn't allowed for protection rule.|Invalid state to invoke the run action.|
+|400|RunNotAllowedForDynamicRule|Run operation isn't allowed for dynamic rule.|Invalid operation for dynamic rules.|
+|404|ProtectionRuleNotFound|Protection rule with the given ID doesn't exist.|The given rule ID is either incorrect or the rule was deleted.|
 
 ## Get inclusion rule by ID API errors
 
@@ -258,11 +313,27 @@ The error codes in this section apply to the following API:
 
 - [Get protectionRuleBase](/graph/api/protectionrulebase-get)
 
-The following table lists the possible error and response code that can be returned.
+The following table lists the possible error and response codes that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
-|400|InvalidInclusionRuleId|Rule ID in request is invalid, null, or empty.|Rule ID is invalid.|
+|400|InvalidInclusionRuleId|Rule ID in the request is invalid, null, or empty.|The rule ID is invalid.|
+|404|ProtectionRuleNotFound|Protection rule with the given ID doesn't exist.|The given rule ID is either incorrect or the rule was deleted.|
+
+## Delete inclusion rule by ID API errors
+
+The error codes in this section apply to the following API:
+
+- [Get protectionRuleBase](/graph/api/protectionrulebase-delete)
+
+The following table lists the possible error and response codes that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|400|InvalidInclusionRuleId|Rule ID in the request is invalid, null, or empty.|The rule ID is invalid.|
+|400|InvalidProtectionRuleStatusForDeletion|Delete operation isn't allowed in the current state.|Invalid state to invoke the delete operation.|
+|404|ProtectionRuleNotFound|Protection rule with the given ID doesn't exist.|The given rule ID is either incorrect or the rule was deleted.|
+|422|InvalidProtectionRuleStatusForDynamicRuleDeletion|Delete operation isn't allowed in the current state.|Invalid state to invoke the delete operation on a dynamic rule.|
 
 ## Get restore point API errors
 
@@ -292,3 +363,49 @@ The following table lists the possible error and response codes that can be retu
 |403|UnableToReadBillingProfile|Unable to read billing profile from billing profile provider.|Unable to read billing profile from billing profile provider.|
 |402|InvalidBillingProfile|Invalid billing profile received from the provider.|Invalid billing profile received from the provider.|
 |400|InvalidAppOwnerTenantId|Owning tenant id not found|Invalid App owner tenant id received from the user.|
+
+## Create bulk addition requests for restoring artifacts API errors
+
+The error codes in this section apply to the following APIs:
+
+- [Create driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests.md)
+- [Create mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests.md)
+- [Create siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests.md)
+
+The following table lists the possible error and response codes that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|400|InvalidBulkRestoreArtifactId|Bulk restore request ID is invalid.|Invalid GUID provided in URI.|
+|400|BulkRestoreInvalidCreateRequest|BulkRestoreCreateRequest is null.|The create request is null or invalid.|
+|400|BulkRestoreRestorationResourcesCountExceedsLimit|Bulk restore input limit exceeded.|Input size is too large.|
+|400|BulkRestoreInvalidCreateRequestSiteUrl|Bulk restore site web URL is invalid.|Site URL is null, empty, or in an incorrect format.|
+|400|BulkRestoreInvalidCreateRequestUserEmail|Bulk restore user email is invalid.|Email is null, empty, or in an incorrect format.|
+
+## Get bulk addition requests for restoring artifacts API errors
+
+The error code in this section applies to the following APIs:
+
+- [Get driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/driverestoreartifactsbulkadditionrequest-get.md)
+- [Get mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/mailboxrestoreartifactsbulkadditionrequest-get.md)
+- [Get siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/siterestoreartifactsbulkadditionrequest-get.md)
+
+The following table lists the possible error and response code that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|404|BulkRestoreArtifactsNotFound|No bulkRestoreArtifact item with the given bulkRestoreArtifactId.|No restoreArtifactBulkAdditionRequest associated with the provided bulkRestoreArtifactId in the URI.|
+
+## Delete bulk addition requests for restoring artifacts API errors
+
+The error code in this section applies to the following APIs:
+
+- [Delete driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/driverestoreartifactsbulkadditionrequest-delete.md)
+- [Delete mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/mailboxrestoreartifactsbulkadditionrequest-delete.md)
+- [Delete siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/siterestoreartifactsbulkadditionrequest-delete.md)
+
+The following table lists the possible error and response code that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|403|InvalidStateForBulkRequestDeletion|Validation fails when the service type of the restore session and create request are different.|A bulk request can only be deleted when its status is `completed` or `completedWithErrors`.|

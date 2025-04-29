@@ -5,6 +5,7 @@ author: "prachigoyal-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.subservice: "teams"
+ms.date: 10/22/2024
 ---
 
 # conversationMember: remove

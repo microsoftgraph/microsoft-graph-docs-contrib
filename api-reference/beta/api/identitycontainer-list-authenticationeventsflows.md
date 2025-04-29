@@ -5,6 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List authenticationEventsFlows
@@ -106,7 +107,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows
 
 The following is an example of a response that returns two user flows: "Test User Flow 1" and "Woodgrove Drive User Flow" with the following configurations:
 
-- "Test User Flow 1" is set up to allow email+password accounts, collect email address and country, and create a "Member" user type.
+- "Test User Flow 1" is set up to allow email+password accounts, collect email address and country/region, and create a "Member" user type.
 - "Woodgrove Drive User Flow" is set up to allow email+password accounts or social (Google or Facebook) sign in, collect email address, display name, and favorite color, and create "Member" user type.
 
 >**Note:** The response object shown here might be shortened for readability.

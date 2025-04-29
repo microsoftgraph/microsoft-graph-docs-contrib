@@ -5,6 +5,7 @@ author: "mcm223"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # administrativeUnitInfo resource type

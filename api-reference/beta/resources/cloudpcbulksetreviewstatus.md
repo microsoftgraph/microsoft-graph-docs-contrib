@@ -5,6 +5,7 @@ author: "doudoujinjin"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 09/30/2024
 ---
 
 # cloudPcBulkSetReviewStatus resource type
@@ -28,7 +29,7 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 |initiatedByUserPrincipalName|String|The user principal name (UPN) of the user who initiated this bulk action. Read-only. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk action is scheduled according to the maintenance window. When `true`, the bulk action uses the maintenance window to schedule the action; `false` means that the bulk action doesn't use the maintenance window. The default value is `false`. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |status|[cloudPcBulkActionStatus](../resources/cloudpcbulkaction.md#cloudpcbulkactionstatus-values)|The status of bulk actions. Possible values are `pending`, `succeeded`, `failed`, `unknownFutureValue`. The default value is `pending`. Read-only. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|reviewStatus|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|The new review status of the Cloud PC. Read-only.|
+|reviewStatus|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Indicates the new review status of the Cloud PC. Read-only.|
 
 ## Relationships
 None.

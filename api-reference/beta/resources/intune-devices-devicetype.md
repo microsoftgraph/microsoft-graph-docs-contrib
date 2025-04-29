@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # deviceType enum type
@@ -43,6 +44,8 @@ Device type.
 |androidnGMS|20|Android non Google managed device.|
 |chromeOS|21|ChromeOS device.|
 |linux|22|Linux device.|
+|visionOS|23|Indicates managed device is running on visionOS operating system.|
+|tvos|24|Indicates managed device is running on tvOS operating system.|
 |blackberry|100|Blackberry.|
 |palm|101|Palm.|
 |unknown|255|Represents that the device type is unknown.|

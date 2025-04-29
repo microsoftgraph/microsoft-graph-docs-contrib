@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
+ms.date: 04/05/2024
 ---
 
 # Delete agreement

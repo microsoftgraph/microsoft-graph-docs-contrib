@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "MSFTRickyCastaneda"
 ms.subservice: "teams"
 doc_type: conceptualPageType
+ms.date: 10/02/2024
 ---
 
 # Use the Microsoft Graph API to work with Microsoft Teams

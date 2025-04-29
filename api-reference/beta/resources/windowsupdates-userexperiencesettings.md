@@ -3,8 +3,9 @@ title: "userExperienceSettings resource type"
 description: "Settings that control the user's update experience on a device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 11/12/2024
 ---
 
 # userExperienceSettings resource type

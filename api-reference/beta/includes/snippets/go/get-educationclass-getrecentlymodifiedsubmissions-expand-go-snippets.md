@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &grapheducation.EducationClasseItemGetRecentlyModifiedSubmissionsWithRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ClassesItemGetRecentlyModifiedSubmissionsRequestBuilderGetQueryParameters{
 	Expand: [] string {"outcomes"},
 }
-configuration := &grapheducation.EducationClasseItemGetRecentlyModifiedSubmissionsWithRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ClassesItemGetRecentlyModifiedSubmissionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

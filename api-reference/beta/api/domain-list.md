@@ -5,6 +5,7 @@ author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # List domains
@@ -37,7 +38,7 @@ GET /domains
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 > [!NOTE]
-> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search` parameter.
+> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search`, `$top`, and `$filter` query parameters.
 
 ## Request headers
 

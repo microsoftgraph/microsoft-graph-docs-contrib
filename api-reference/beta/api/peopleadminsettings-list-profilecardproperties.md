@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "rwaithera"
 ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 09/19/2024
 ---
 
 # List profileCardProperties
@@ -24,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "peopleadminsettings_list_profilecardproperties" } -->
 [!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-list-profilecardproperties-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or People Administrator role.
 
 ## HTTP request
 

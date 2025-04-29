@@ -7,6 +7,7 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 11/08/2024
 ---
 
 # taxArea resource type

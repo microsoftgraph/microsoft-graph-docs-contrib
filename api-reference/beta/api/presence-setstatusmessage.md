@@ -5,6 +5,7 @@ author: "afedorov"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "cloud-communications"
+ms.date: 04/05/2024
 ---
 
 # presence: setStatusMessage
@@ -269,6 +270,7 @@ Content-Type: application/json
       "content": "Hey I am available now",
       "contentType": "text"
     }
-  }
+  },
+  "sequenceNumber": "A0129311063"
 }
 ```

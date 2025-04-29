@@ -5,6 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 04/08/2025
 ---
 
 # externalUsersSelfServiceSignUpEventsFlow resource type
@@ -30,6 +31,8 @@ For the list of API operations for managing this resource type, see the [authent
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|Optional. The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke when an authentication flow is ready to be initiated. |
 |onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|The configuration for what to invoke when attributes are ready to be collected from the user.|
+|onAttributeCollectionStart|[onAttributeCollectionStartHandler](../resources/onattributecollectionstarthandler.md)|The configuration for what to invoke when attribution collection starts.|
+|onAttributeCollectionSubmit|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|The configuration for what to invoke when attributes are submitted at the end of attribution collection.|
 |onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke when authentication methods are ready to be presented to the user. Must have at least one identity provider linked. <br/><br/> Supports `$filter` (`eq`). See [support for filtering on user flows](#support-for-filtering-on-user-flows) for syntax information. |
 |onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke during user creation.|
 
@@ -69,6 +72,12 @@ The following JSON representation shows the resource type.
   },
   "onAttributeCollection": {
     "@odata.type": "microsoft.graph.onAttributeCollectionHandler"
+  },
+  "onAttributeCollectionStart": {
+    "@odata.type": "microsoft.graph.onAttributeCollectionStartHandler"
+  },
+  "onAttributeCollectionSubmit": {
+    "@odata.type": "microsoft.graph.onAttributeCollectionSubmitHandler"
   },
   "onUserCreateStart": {
     "@odata.type": "microsoft.graph.onUserCreateStartHandler"

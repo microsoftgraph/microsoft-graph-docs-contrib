@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: "Reflect check-in response"
+ms.date: 09/19/2024
 ---
 
 # reflectCheckInResponse resource type

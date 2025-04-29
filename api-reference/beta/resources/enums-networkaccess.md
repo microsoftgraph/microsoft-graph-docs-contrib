@@ -5,11 +5,21 @@ author: "moti-ba"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: enumTypes
+ms.date: 03/27/2024
 ---
 
 # Network Access Enum Values
 
 Namespace: microsoft.graph.networkaccess
+
+### accessType values
+
+|Member|
+|:---|
+|quickAccess|
+|privateAccess|
+|unknownFutureValue|
+|appAccess|
 
 ### aggregationFilter values 
 
@@ -19,6 +29,9 @@ Namespace: microsoft.graph.networkaccess
 |users|
 |devices|
 |unknownFutureValue|
+|bytesSent|
+|bytesReceived|
+|totalBytes|
 
 ### applicationProtocol values 
 
@@ -53,6 +66,15 @@ Namespace: microsoft.graph.networkaccess
 |error|
 |unknownFutureValue|
 
+### connectionStatus values
+
+|Member|
+|:---|
+|open|
+|active|
+|closed|
+|unknownFutureValue|
+
 ### deviceCategory values 
 
 |Member|
@@ -60,6 +82,7 @@ Namespace: microsoft.graph.networkaccess
 |client|
 |branch|
 |unknownFutureValue|
+|remoteNetwork|
 
 ### deviceVendor values 
 
@@ -100,6 +123,8 @@ Namespace: microsoft.graph.networkaccess
 |block|
 |allow|
 |unknownFutureValue|
+|bypass|
+|alert|
 
 ### forwardingCategory values 
 
@@ -116,6 +141,21 @@ Namespace: microsoft.graph.networkaccess
 |:---|
 |bypass|
 |forward|
+|unknownFutureValue|
+
+### httpMethod values
+
+|Member|
+|:---|
+|get|
+|post|
+|put|
+|delete|
+|head|
+|options|
+|connect|
+|patch|
+|trace|
 |unknownFutureValue|
 
 ### ikeEncryption values 
@@ -209,6 +249,14 @@ Namespace: microsoft.graph.networkaccess
 |onboarded|
 |onboardingErrorOccurred|
 |offboardingErrorOccurred|
+|unknownFutureValue|
+
+### networkTrafficOperationStatus values
+
+|Member|
+|:---|
+|success|
+|failure|
 |unknownFutureValue|
 
 ### pfsGroup values 

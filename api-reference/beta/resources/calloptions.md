@@ -5,6 +5,7 @@ author: "satyakonmsft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 08/30/2024
 ---
 
 # callOptions resource type
@@ -24,6 +25,10 @@ Base type of [incomingCallOptions](../resources/incomingcalloptions.md) and [out
 | hideBotAfterEscalation               | Boolean                  | Indicates whether to hide the app after the call is escalated.                    |
 | isContentSharingNotificationEnabled  | Boolean                  | Indicates whether content sharing notifications should be enabled for the call.   |
 | isDeltaRosterEnabled                 | Boolean                  | Indicates whether delta roster is enabled for the call.                           |
+| isInteractiveRosterEnabled                 | Boolean                  | Indicates whether delta roster filtering by participant interactivity is enabled.                           |
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -38,6 +43,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.callOptions",
   "hideBotAfterEscalation": "Boolean",
   "isContentSharingNotificationEnabled": "Boolean",
-  "isDeltaRosterEnabled": "Boolean"
+  "isDeltaRosterEnabled": "Boolean",
+  "isInteractiveRosterEnabled": "Boolean"
 }
 ```

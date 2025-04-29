@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new X509CertificateAuthenticationMethodConfiguration
 {
@@ -53,6 +54,50 @@ var requestBody = new X509CertificateAuthenticationMethodConfiguration
 			TargetType = AuthenticationMethodTargetType.Group,
 			Id = "all_users",
 			IsRegistrationRequired = false,
+		},
+	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"crlValidationConfiguration" , new UntypedObject(new Dictionary<string, UntypedNode>
+			{
+				{
+					"state", new UntypedString("disabled")
+				},
+				{
+					"exemptedCertificateAuthoritiesSubjectKeyIdentifiers", new UntypedArray(new List<UntypedNode>
+					{
+					})
+				},
+			})
+		},
+		{
+			"certificateAuthorityScopes" , new List<object>
+			{
+				new UntypedObject(new Dictionary<string, UntypedNode>
+				{
+					{
+						"subjectKeyIdentifier", new UntypedString("aaaaaaaabbbbcccc111122222222222222333333")
+					},
+					{
+						"publicKeyInfrastructureIdentifier", new UntypedString("Contoso PKI")
+					},
+					{
+						"includeTargets", new UntypedArray(new List<UntypedNode>
+						{
+							new UntypedObject(new Dictionary<string, UntypedNode>
+							{
+								{
+									"id", new UntypedString("aaaaaaaa-bbbb-cccc-1111-222222222222")
+								},
+								{
+									"targetType", new UntypedString("group")
+								},
+							}),
+						})
+					},
+				}),
+			}
 		},
 	},
 };

@@ -5,6 +5,7 @@ author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 06/25/2024
 ---
 
 # managedDevice: getCloudPcRemoteActionResults (deprecated)

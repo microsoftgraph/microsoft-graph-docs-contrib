@@ -18,10 +18,10 @@ import (
 
 requestFilter := "originSystem eq 'SharePointOnline'"
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceEntitlementManagementAccessPackageResourceEnvironmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.EntitlementManagementAccessPackageResourceEnvironmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentitygovernance.IdentityGovernanceEntitlementManagementAccessPackageResourceEnvironmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.EntitlementManagementAccessPackageResourceEnvironmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -5,6 +5,7 @@ author: "myra-ramdenbourg"
 ms.subservice: "entra-directory-management"
 ms.localizationpriority: medium
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # List device transitive memberships
@@ -43,7 +44,11 @@ GET /devices(deviceId='{deviceId}')/transitiveMemberOf
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$select`, `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the directoryRoles the user is a member of. You can use `$search` on the **displayName** and **description** properties. The default and maximum page sizes are 100 and 999 objects respectively.
+This method supports the `$select`, `$search`, `$count`, and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response.
+- OData cast is also enabled, for example, you can cast to get only the **directoryRoles** the device is assigned to.
+- `$search` is supported on the **displayName** and **description** properties only.
+- The default and maximum page size is 100 and 999 objects respectively.
+- The use of query parameters with this API is supported only with advanced query parameters. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 

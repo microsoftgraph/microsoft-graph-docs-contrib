@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "PaulEkirapa"
 ms.subservice: "entra-groups"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # group: retryServiceProvisioning
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Retry the [group](../resources/group.md) service provisioning.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

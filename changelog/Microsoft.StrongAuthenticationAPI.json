@@ -311,6 +311,220 @@
       "CreatedDateTime": "2024-07-24T22:26:16.3065294Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "hardwareOathTokenHashFunction",
+          "ChangeType": "Addition",
+          "Description": "Added the **hardwareOathTokenHashFunction** enumeration type.",
+          "Target": "hardwareOathTokenHashFunction"
+        },
+        {
+          "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "hardwareOathTokenStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **hardwareOathTokenStatus** enumeration type.",
+          "Target": "hardwareOathTokenStatus"
+        },
+        {
+          "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "hardwareOathMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **hardwareOathMethods** relationship to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-beta) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethodDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationMethodDevice](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodDevice?view=graph-rest-beta) resource.",
+          "Target": "authenticationMethodDevice"
+        },
+        {
+          "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "hardwareOathDevices",
+          "ChangeType": "Addition",
+          "Description": "Added the **hardwareOathDevices** relationship to the [authenticationMethodDevice](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodDevice?view=graph-rest-beta) resource.",
+          "Target": "authenticationMethodDevice"
+        },
+        {
+          "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "authenticationMethodDevices",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationMethodDevices** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareOathAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareOathAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/hardwareOathAuthenticationMethod?view=graph-rest-beta) resource.",
+          "Target": "hardwareOathAuthenticationMethod"
+        },
+        {
+          "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareOathTokenAuthenticationMethodDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareOathTokenAuthenticationMethodDevice](https://learn.microsoft.com/en-us/graph/api/resources/hardwareOathTokenAuthenticationMethodDevice?view=graph-rest-beta) resource.",
+          "Target": "hardwareOathTokenAuthenticationMethodDevice"
+        },
+        {
+          "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Addition",
+          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/hardwareOathAuthenticationMethod-activate?view=graph-rest-beta) method to the [hardwareOathAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/hardwareOathAuthenticationMethod?view=graph-rest-beta) resource.",
+          "Target": "hardwareOathAuthenticationMethod"
+        },
+        {
+          "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+          "ApiChange": "Method",
+          "ChangedApiName": "assignAndActivate",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignAndActivate](https://learn.microsoft.com/en-us/graph/api/hardwareOathAuthenticationMethod-assignAndActivate?view=graph-rest-beta) method to the [hardwareOathAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/hardwareOathAuthenticationMethod?view=graph-rest-beta) resource.",
+          "Target": "hardwareOathAuthenticationMethod"
+        },
+        {
+          "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+          "ApiChange": "Method",
+          "ChangedApiName": "assignAndActivateBySerialNumber",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignAndActivateBySerialNumber](https://learn.microsoft.com/en-us/graph/api/hardwareOathAuthenticationMethod-assignAndActivateBySerialNumber?view=graph-rest-beta) method to the [hardwareOathAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/hardwareOathAuthenticationMethod?view=graph-rest-beta) resource.",
+          "Target": "hardwareOathAuthenticationMethod"
+        },
+        {
+          "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+          "ApiChange": "Method",
+          "ChangedApiName": "deactivate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deactivate](https://learn.microsoft.com/en-us/graph/api/hardwareOathAuthenticationMethod-deactivate?view=graph-rest-beta) method to the [hardwareOathAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/hardwareOathAuthenticationMethod?view=graph-rest-beta) resource.",
+          "Target": "hardwareOathAuthenticationMethod"
+        }
+      ],
+      "Id": "7d2db513-b1ae-446a-817f-c48f8a190f96",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-09T00:00:00.6252867Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "errorCorrectionLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorCorrectionLevel** enumeration type.",
+          "Target": "errorCorrectionLevel"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCodeImageDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrCodeImageDetails](https://learn.microsoft.com/en-us/graph/api/resources/qrCodeImageDetails?view=graph-rest-beta) resource.",
+          "Target": "qrCodeImageDetails"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCodeImageDetails",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [qrCodeImageDetails](https://learn.microsoft.com/en-us/graph/api/resources/qrCodeImageDetails?view=graph-rest-beta) resource.",
+          "Target": "qrCodeImageDetails"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "qrCodePinMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **qrCodePinMethod** relationship to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-beta) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCode",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrCode](https://learn.microsoft.com/en-us/graph/api/resources/qrCode?view=graph-rest-beta) resource.",
+          "Target": "qrCode"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCodePinAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrCodePinAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/qrCodePinAuthenticationMethod?view=graph-rest-beta) resource.",
+          "Target": "qrCodePinAuthenticationMethod"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrPin",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrPin](https://learn.microsoft.com/en-us/graph/api/resources/qrPin?view=graph-rest-beta) resource.",
+          "Target": "qrPin"
+        },
+        {
+          "Id": "86a68685-2861-44d6-8654-d1b18a897f13",
+          "ApiChange": "Method",
+          "ChangedApiName": "updatePin",
+          "ChangeType": "Addition",
+          "Description": "Added the [updatePin](https://learn.microsoft.com/en-us/graph/api/qrPin-updatePin?view=graph-rest-beta) method to the [qrPin](https://learn.microsoft.com/en-us/graph/api/resources/qrPin?view=graph-rest-beta) resource.",
+          "Target": "qrPin"
+        }
+      ],
+      "Id": "25af4412-9671-4230-898f-905be64c8da2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-24T21:15:06.8373784Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList":[
+        {
+          "Id": "e6d18097-56a6-4bf9-83bd-fba96d19988f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationMethodPlatform",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationMethodPlatform** enumeration type.",
+          "Target": "authenticationMethodPlatform"
+        },
+        {
+          "Id": "e6d18097-56a6-4bf9-83bd-fba96d19988f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "platformCredentialMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **platformCredentialMethods** relationship to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "e6d18097-56a6-4bf9-83bd-fba96d19988f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "platformCredentialAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [platformCredentialAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/platformCredentialAuthenticationMethod?view=graph-rest-beta) resource and associated methods.",
+          "Target": "platformCredentialAuthenticationMethod"
+        }
+      ],
+      "Id": "e6d18097-56a6-4bf9-83bd-fba96d19988f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-04-24T19:56:04.1105537Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }

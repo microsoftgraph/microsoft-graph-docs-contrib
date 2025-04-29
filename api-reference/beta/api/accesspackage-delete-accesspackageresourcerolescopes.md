@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/11/2024
 ---
 
 # Remove resourceRoleScope from an accessPackage
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackage_delete_accesspackageresourcerolescopes" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-delete-accesspackageresourcerolescopes-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-access-package-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-manager-apis-write.md)]
 
 ## HTTP request
 

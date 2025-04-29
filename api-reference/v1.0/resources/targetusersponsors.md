@@ -5,6 +5,7 @@ author: "sadia353"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
 
 # targetUserSponsors resource type

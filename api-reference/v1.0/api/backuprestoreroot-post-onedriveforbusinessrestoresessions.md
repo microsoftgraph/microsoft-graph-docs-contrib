@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 09/10/2024
 ---
 
 # Create oneDriveForBusinessRestoreSession
@@ -77,11 +78,11 @@ Content-Type: application/json
 {
   "driveRestoreArtifacts": [
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "destinationType": "new"
     },
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
       "destinationType": "new"
     }
   ]

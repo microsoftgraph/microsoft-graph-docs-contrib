@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
+ms.date: 09/30/2024
 ---
 
 # Working with Microsoft 365 usage reports in Microsoft Graph

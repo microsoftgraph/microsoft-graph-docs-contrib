@@ -5,6 +5,7 @@ author: "yayang3"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # cloudPcConnectivityEvent resource type
@@ -18,6 +19,7 @@ Describes a user connection record, including when and how the Cloud PC was conn
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|activityId|string|The unique identifier (GUID) that represents the activity associated with this event. When the event type is `userConnection`, this value is the activity identifier for this event. For any other event types, this value is `00000000-0000-0000-0000-000000000000`.|
 |eventDateTime|DateTimeOffset|Indicates the date and time when this event was created. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
 |eventName|string|Name of the event.|
 |eventResult|[cloudPcConnectivityEventResult](#cloudpcconnectivityeventresult-values)|Result of this event. Possible values are: `unknown`, `success`, `failure`, and `unknownFutureValue`.|
@@ -56,6 +58,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcConnectivityEvent",
+  "activityId": "String",
   "eventDateTime": "String (timestamp)",
   "eventName": "String",
   "eventResult": "String",

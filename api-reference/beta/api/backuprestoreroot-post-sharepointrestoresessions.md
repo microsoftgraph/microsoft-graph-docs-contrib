@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 11/10/2024
 ---
 
 # Create sharePointRestoreSession
@@ -77,11 +78,11 @@ Content-Type: application/json
 {
   "siteRestoreArtifacts": [
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "destinationType": "inPlace"
     },
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
       "destinationType": "inPlace"
     }
   ]
@@ -142,6 +143,13 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.sharepointRestoreSession",
   "id": "61633878-8321-4950-bfaf-ed285bdd1461",
   "status": "activating",
+  "restoreJobType": "standard",
+  "restoreSessionArtifactCount": {
+    "total": 2,
+    "completed": 0,
+    "inProgress": 2,
+    "failed": 0
+  },
   "createdBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

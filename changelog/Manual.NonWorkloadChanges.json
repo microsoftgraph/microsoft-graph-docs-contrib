@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "3fc40a97-d690-4253-ad11-7d00f9900bb1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "user",
+          "ChangeType": "Addition",
+          "Description": "Added the Microsoft Graph Bicep resource for deploying the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource type using Bicep templates for Microsoft Graph resources in infrastructure-as-code (IaC) scenarios. For more information, see [Microsoft.Graph users resource](https://learn.microsoft.com/en-us/graph/templates/reference/users).",
+          "Target": "user"
+        }
+      ],
+      "Id": "3fc40a97-d690-4253-ad11-7d00f9900bb1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-30T00:00:00.5014179Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c0cc0f29-7750-4d31-be4d-efe86835e352",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Microsoft Graph activity logs",
+          "ChangeType": "Addition",
+          "Description": "[Microsoft Graph activity logs](https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview) are now available in China operated by 21Vianet.",
+          "Target": "Microsoft Graph activity logs"
+        }
+      ],
+      "Id": "c0cc0f29-7750-4d31-be4d-efe86835e352",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-16T00:00:00",
+      "WorkloadArea": "Microsoft Graph activity logs",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bf84f9b9-7809-48b4-aeeb-4db380be2b4b",
           "ApiChange": "Resource",
           "ChangedApiName": "changeNotification",

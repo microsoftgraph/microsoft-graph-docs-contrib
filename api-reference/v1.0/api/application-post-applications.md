@@ -5,6 +5,7 @@ author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
+ms.date: 05/14/2024
 ---
 
 # Create application

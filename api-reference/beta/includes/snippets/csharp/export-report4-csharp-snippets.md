@@ -15,7 +15,7 @@ var requestBody = new ExportReportPostRequestBody
 	DisplayName = "Export 4",
 	ExportCriteria = ExportCriteria.PartiallyIndexed,
 	ExportLocation = ExportLocation.ResponsiveLocations | ExportLocation.NonresponsiveLocations,
-	AdditionalOptions = AdditionalOptions.TeamsAndYammerConversations | AdditionalOptions.CloudAttachments | AdditionalOptions.AllDocumentVersions | AdditionalOptions.SubfolderContents | AdditionalOptions.ListAttachments,
+	AdditionalOptions = AdditionalOptions.AdvancedIndexing | AdditionalOptions.SubfolderContents | AdditionalOptions.AllItemsInFolder | AdditionalOptions.ListAttachments | AdditionalOptions.TeamsAndYammerConversations | AdditionalOptions.HtmlTranscripts | AdditionalOptions.CloudAttachments,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

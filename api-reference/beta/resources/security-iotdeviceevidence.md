@@ -5,6 +5,7 @@ author: "hareldamti"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 10/09/2024
 ---
 
 # ioTDeviceEvidence resource type

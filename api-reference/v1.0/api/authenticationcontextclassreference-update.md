@@ -1,14 +1,15 @@
 ---
-title: "Update authenticationContextClassReference"
+title: "Create or Update authenticationContextClassReference"
 description: "Create a new or update the properties of an authenticationContextClassReference object."
 ms.localizationpriority: medium
 author: "swetha-rai"
 ms.reviewer: conditionalaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
-# Update authenticationContextClassReference
+# Create or Update authenticationContextClassReference
 
 Namespace: microsoft.graph
 

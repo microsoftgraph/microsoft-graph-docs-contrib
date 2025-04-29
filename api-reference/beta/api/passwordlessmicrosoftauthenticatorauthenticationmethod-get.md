@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Get passwordlessMicrosoftAuthenticatorAuthenticationMethod (deprecated)
@@ -43,6 +44,8 @@ Get details of your own Microsoft Authenticator Passwordless Phone Sign-in authe
 ``` http
 GET /me/authentication/passwordlessMicrosoftAuthenticatorMethods/{id}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Get details of your own or another user's Microsoft Authenticator Passwordless Phone Sign-in authentication method.
 <!-- { "blockType": "ignored" } -->

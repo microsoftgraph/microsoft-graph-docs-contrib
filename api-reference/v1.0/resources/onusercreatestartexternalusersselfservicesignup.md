@@ -5,6 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 05/10/2024
 ---
 
 # onUserCreateStartExternalUsersSelfServiceSignUp resource type

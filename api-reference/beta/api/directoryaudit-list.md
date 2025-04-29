@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 11/08/2024
 ---
 
 # List directoryAudits
@@ -51,9 +52,11 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [directoryAudit](../resources/directoryaudit.md) objects in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Retrieve the list of audit logs
+
+#### Request
 
 The following example shows a request.
 
@@ -101,7 +104,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -169,6 +172,114 @@ Content-type: application/json
         {
             "key": "UserType",
             "value": "Member"
+        }
+    ]
+}
+```
+
+### Example 2: Retrieve the list of audit logs with a filter on initiatedBy/user
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_directoryaudits_filter_initiatedby"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/auditLogs/directoryAudits?$filter=initiatedBy/user/id eq '00000000-0000-0000-0000-000000000000'
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudits-filter-initiatedby-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-directoryaudits-filter-initiatedby-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudits-filter-initiatedby-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudits-filter-initiatedby-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudits-filter-initiatedby-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-directoryaudits-filter-initiatedby-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryaudits-filter-initiatedby-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-directoryaudits-filter-initiatedby-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryAudit",
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET auditLogs/directoryAudits?$select=activityDateTime,activityDisplayName",
+    "value": [
+        {
+            "id": "SSGM_b662f17a-4e4d-4e1c-9248-cdec180024b2_MCDC4_88453290",
+            "category": "GroupManagement",
+            "correlationId": "b662f17a-4e4d-4e1c-9248-cdec180024b2",
+            "result": "success",
+            "resultReason": "OK",
+            "activityDisplayName": "GroupLifecyclePolicies_Get",
+            "activityDateTime": "2024-12-27T10:01:19.5796748Z",
+            "loggedByService": "Self-service Group Management",
+            "operationType": "Update",
+            "userAgent": null,
+            "initiatedBy": {
+                "app": null,
+                "user": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "displayName": null,
+                    "userPrincipalName": null,
+                    "ipAddress": "10.0.0.0",
+                    "userType": null,
+                    "homeTenantId": null,
+                    "homeTenantName": null
+                }
+            },
+            "targetResources": [
+                {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "displayName": null,
+                    "type": "N/A",
+                    "userPrincipalName": null,
+                    "groupType": null,
+                    "modifiedProperties": []
+                }
+            ],
+            "additionalDetails": []
         }
     ]
 }

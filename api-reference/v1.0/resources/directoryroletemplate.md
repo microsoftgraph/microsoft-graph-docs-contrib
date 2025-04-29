@@ -6,6 +6,7 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 10/18/2024
 ---
 
 # directoryRoleTemplate resource type

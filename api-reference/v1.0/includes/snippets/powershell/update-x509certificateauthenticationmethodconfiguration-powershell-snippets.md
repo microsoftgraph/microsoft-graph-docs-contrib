@@ -32,6 +32,11 @@ $params = @{
 			}
 		)
 	}
+	crlValidationConfiguration = @{
+		state = "disabled"
+		exemptedCertificateAuthoritiesSubjectKeyIdentifiers = @(
+		)
+	}
 	includeTargets = @(
 		@{
 			targetType = "group"

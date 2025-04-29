@@ -5,6 +5,7 @@ author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # externalActivity resource type

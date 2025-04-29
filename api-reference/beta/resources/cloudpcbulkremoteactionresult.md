@@ -5,6 +5,7 @@ author: "rongting"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # cloudPcBulkRemoteActionResult resource type

@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # joinMeetingIdMeetingInfo resource type
@@ -23,6 +24,9 @@ Inherits from [meetingInfo](../resources/meetinginfo.md).
 | :---------------------- | :------ | :------------------------------------------------------------ |
 | joinMeetingId           | String  | The ID used to join the meeting.                              |
 | passcode                | String  | The passcode used to join the meeting. Optional.              |
+
+## Relationships
+None.
 
 ## JSON representation
 

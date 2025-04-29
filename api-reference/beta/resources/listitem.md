@@ -5,6 +5,7 @@ title: listItem resource type
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 10/10/2024
 ---
 
 # listItem resource type
@@ -26,6 +27,7 @@ All examples are relative to a **[list][]**; for example, `https://graph.microso
 
 | Method                                                                   | Return Type                        | Description                                                               |
 |:-------------------------------------------------------------------------|:-----------------------------------|:--------------------------------------------------------------------------|
+| [List](../api/listitem-list.md)                                          | listItem collection                | Get the collection of items in a list.                                    |
 | [Create][]                                                               | listItem                           | Create a new listItem in a list.                                          |
 | [Get][]                                                                  | listItem                           | Get an item in a list.                                                    |
 | [Update][]                                                               | [fieldValueSet][]                  | Update the properties on a listItem.                                      |
