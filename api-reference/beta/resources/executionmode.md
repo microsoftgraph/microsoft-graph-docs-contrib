@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies how a calling application should evaluate policies based on computed scopes (Inline or Offline). Returned within [policyScopeBase](../resources/policyscopebase.md) derived types.
+Specifies how a calling application should evaluate policies based on computed scopes (Inline or Offline).
+
+Returned within [policyScopeBase](../resources/policyscopebase.md) derived types.
 
 ## Members
 

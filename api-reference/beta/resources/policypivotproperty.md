@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies how to aggregate or pivot the computed protection scopes (by Activity or Location). The property on which the results of a protection scope computation (using the `compute` action) should be aggregated or "pivoted". Affects how the resulting [policyUserScope](../resources/policyuserscope.md) or [policyTenantScope](../resources/policytenantscope.md) objects are grouped.
+Specifies how to aggregate or pivot the computed protection scopes (by Activity or Location). 
+
+The property on which the results of a protection scope computation (using the `compute` action) should be aggregated or "pivoted". Affects how the resulting [policyUserScope](../resources/policyuserscope.md) or [policyTenantScope](../resources/policytenantscope.md) objects are grouped.
 
 ## Members
 

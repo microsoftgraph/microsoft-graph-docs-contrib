@@ -70,12 +70,36 @@ POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/activities/co
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.contentActivity",
-  "userId": "String",
-  "scopeIdentifier": "String",
-  "contentMetadata": {
-    "@odata.type": "microsoft.graph.processContentRequest"
-  }
+    "contentMetadata": {
+       "contentEntries": [
+          {
+             "@odata.type": "microsoft.graph.processConversationMetadata",
+             "identifier": "68fa951a-898a-4427-8e9e-6f8c05e9fe2b",
+             "name":"Purview API Explorer message",
+             "correlationId": "559a2343-7aa2-4912-93fe-72c47b2706ed",
+             "sequenceNo": 0, 
+             "isTruncated": false,
+             "createdDateTime": "2025-04-28T20:17:55",
+             "modifiedDateTime": "2025-04-28T20:17:55"
+          }
+       ],
+       "activityMetadata": { 
+          "activity": "uploadText"
+       },
+       "deviceMetadata": {
+          "deviceType": "unmanaged",
+          "operatingSystemSpecifications": {
+             "operatingSystemPlatform": "Windows 11",
+             "operatingSystemVersion": "10.0.26100.0" 
+          }
+       },
+       "integratedAppMetadata": {
+          "name": "Purview API Explorer",
+          "version": "0.1" 
+       },
+       "userId":"7c2f8f10-cba8-4a8d-9449-db4b76d17390",
+       "scopeIdentifier":"0"
+    }
 }
 ```
 
@@ -83,23 +107,45 @@ Content-Type: application/json
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.contentActivity"
-}
--->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.contentActivity",
-  "id": "1f35569f-f498-57a1-864f-1cb877964eea",
-  "userId": "String",
-  "scopeIdentifier": "String",
+  "@odata.context": "https://graph.microsoft.com/$metadata#users('%7B7c2f8f10-cba8-4a8d-9449-db4b76d17390%7D')/dataSecurityAndGovernance/activities/contentActivities/$entity",
+  "id": "420c8b9c-f4d7-4aa8-a392-344b3af9aa83",
+  "userId": "7c2f8f10-cba8-4a8d-9449-db4b76d17390",
+  "scopeIdentifier": null,
   "contentMetadata": {
-    "@odata.type": "microsoft.graph.processContentRequest"
+    "protectedAppMetadata": null,
+    "contentEntries": [
+      {
+        "identifier": "68fa951a-898a-4427-8e9e-6f8c05e9fe2b",
+        "content": null,
+        "name": "Purview API Explorer message",
+        "correlationId": "559a2343-7aa2-4912-93fe-72c47b2706ed",
+        "sequenceNumber": null,
+        "length": null,
+        "isTruncated": false,
+        "createdDateTime": "2025-04-28T20:17:55Z",
+        "modifiedDateTime": "2025-04-28T20:17:55Z"
+      }
+    ],
+    "activityMetadata": {
+      "activity": "downloadText"
+    },
+    "deviceMetadata": {
+      "deviceType": "unmanaged",
+      "operatingSystemSpecifications": {
+        "operatingSystemPlatform": "Windows 11",
+        "operatingSystemVersion": "10.0.26100.0"
+      }
+    },
+    "integratedAppMetadata": {
+      "name": "Purview API Explorer",
+      "version": "0.1"
+    }
   }
 }
 ```

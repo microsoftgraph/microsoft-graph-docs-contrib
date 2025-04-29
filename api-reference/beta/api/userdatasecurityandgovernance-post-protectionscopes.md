@@ -15,6 +15,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+
+>**Note** At this time, returned results will not reflect filtering values provided in the request.
+
+
 Compute the data protection policies and actions applicable to a specific user based on their context. 
 
 Applications are required to adhere to Microsoft Purview policies established by Security/Compliance Administrators, which dictate how data and user activities should be managed. Applications use the Protection Scopes to understand what is defined in the context of user interactions. The application calls the ProtectionScopes API to get the protection scopes for the user.

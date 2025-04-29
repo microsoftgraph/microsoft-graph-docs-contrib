@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Container for tenant-wide protection scope computation actions. This is accessed via the `protectionScopes` navigation property on [tenantDataSecurityAndGovernance](../resources/tenantdatasecurityandgovernance.md).
+Container for tenant-wide protection scope computation actions. 
+
+This is accessed via the `protectionScopes` navigation property on [tenantDataSecurityAndGovernance](../resources/tenantdatasecurityandgovernance.md).
 
 ## Methods
 

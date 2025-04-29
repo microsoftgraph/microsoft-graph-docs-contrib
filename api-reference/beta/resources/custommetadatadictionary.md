@@ -15,7 +15,9 @@ Namespace: microsoft.dataClassificationService.contract
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a dictionary specifically for storing custom metadata extracted from content, where values must be strings. It's an open type but constrained to only accept string values for its dynamic properties.
+Represents a dictionary specifically for storing custom metadata extracted from content, where values must be strings.
+
+It's an open type but constrained to only accept string values for its dynamic properties.
 
 ## Properties
 

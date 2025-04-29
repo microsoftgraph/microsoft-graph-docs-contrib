@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents metadata about an application whose user activities are being monitored or governed by an [integratedApplicationMetadata](../resources/integratedapplicationmetadata.md). For example, if a network proxy (the integrated app) is monitoring traffic to Bing Chat (the protected app), this type would describe Bing Chat. Inherits from `integratedApplicationMetadata`.
+"Represents metadata about an application whose activities are being governed by an integrated application.
+
+For internal use only. Do not use.
 
 ## Properties
 
 | Property      | Type   | Description                                                      |
 | :------------ | :----- | :--------------------------------------------------------------- |
-| applicationId | String | The unique identifier (e.g., Microsoft Entra App ID) of the protected application. |
-
-Inherits properties from [integratedApplicationMetadata](../resources/integratedapplicationmetadata.md).
+| applicationLocation | [policyLocation](../resources/policylocation.md) | For internal use only. Do not use. |
 
 ## Relationships
 
@@ -35,17 +35,15 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.protectedApplicationMetadata",
-  "baseType": "microsoft.graph.integratedApplicationMetadata",
   "openType": false
 }-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.protectedApplicationMetadata",
-  // Inherited properties from integratedApplicationMetadata
-  "name": "String",
-  "version": "String",
-
-  // protectedApplicationMetadata properties
-  "applicationId": "String"
+  // For internal use only. Do not use.
+  "applicationLocation": {
+    "@odata.type": "#microsoft.graph.policyLocation",
+    "location": "String"
+  }
 }
 ```

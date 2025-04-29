@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the input payload for the `processContent` and `processContentAsync` actions.
+Defines the input payload for the [processContent](../api/userdatasecurityandgovernance-post-processcontent.md) and [processContentAsync](../api/tenantdatasecurityandgovernance-post-processcontentasync.md) actions.
 
 It includes the actual content to be processed along with relevant metadata about the activity, device, and integrated application.
 

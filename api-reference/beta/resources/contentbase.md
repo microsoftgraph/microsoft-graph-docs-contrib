@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing the actual content (text or binary) being processed. Derived types (`textContent`, `binaryContent`) hold the specific content data.
+Abstract base type representing the actual content (text or binary) being processed.
+
+Derived types ([textContent](../resources/textcontent.md), [binaryContent](../resources/binarycontent.md)) hold the specific content data.
 
 ## Properties
 

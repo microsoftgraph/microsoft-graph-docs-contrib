@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entry point for data security and governance features applicable across the entire tenant. Accessed via the `dataSecurityAndGovernance` navigation property on the `security` singleton. Inherits from [dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).
+Represents the entry point for data security and governance features applicable across the entire tenant. 
+
+Accessed via the `dataSecurityAndGovernance` navigation property on the `security` singleton. Inherits from [dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).
 
 ## Methods
 

@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a DLP action that explicitly blocks access to the content that triggered the rule match. Inherits from [dlpActionInfo](../resources/dlpactioninfo.md).
+Represents a DLP action that explicitly blocks access to the content that triggered the rule match.
+
+Inherits from [dlpActionInfo](../resources/dlpactioninfo.md).
 
 ## Properties
 

@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates the computed data protection scope changed since the last check (NotModified, Modified). Returned in [processContentResponse](../resources/processcontentresponse.md).
+Indicates the computed data protection scope changed since the last check (NotModified, Modified). 
+
+Returned in [processContentResponse](../resources/processcontentresponse.md).
 
 ## Members
 

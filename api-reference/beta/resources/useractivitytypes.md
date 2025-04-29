@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Flags enum specifying user activities relevant for data protection policy scoping (UploadText, UploadFile, DownloadText, DownloadFile). Used as input to the `compute` action and returned in the `activities` property of [policyScopeBase](../resources/policyscopebase.md) derived types.
+Flags enum specifying user activities relevant for data protection policy scoping (UploadText, UploadFile, DownloadText, DownloadFile).
+
+Used as input to the `compute` action and returned in the `activities` property of [policyScopeBase](../resources/policyscopebase.md) derived types.
 
 ## Members
 

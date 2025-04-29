@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents metadata for a content entry that is part of a conversation (e.g., chat message, AI interaction). Includes information about parent messages and any resources or plugins involved. Inherits from [processContentMetadataBase](../resources/processcontentmetadatabase.md).
+Represents metadata for a content entry that is part of a conversation (e.g., chat message, AI interaction). 
+
+Includes information about parent messages and any resources or plugins involved. Inherits from [processContentMetadataBase](../resources/processcontentmetadatabase.md).
 
 ## Properties
 

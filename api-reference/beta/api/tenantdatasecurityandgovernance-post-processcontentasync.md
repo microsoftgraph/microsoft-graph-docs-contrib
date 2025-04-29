@@ -68,7 +68,7 @@ Content-type: application/json
       "contentToProcess": {
         "contentEntries": [ { "@odata.type": "#microsoft.graph.processConversationMetadata", "identifier": "msg1", "content": { "@odata.type": "#microsoft.graph.textContent", "data": "Project Falcon details..." }, "name": "Chat", "correlationId": "conv1", "createdDateTime": "2024-07-29T16:00:00Z", "modifiedDateTime": "2024-07-29T16:00:00Z" } ],
         "activityMetadata": { "activity": "uploadText", "applicationLocation": "https://thirdparty.com/chat" },
-        "deviceMetadata": { "deviceType": "Desktop", "operatingSystemSpecifications": { "operatingSystemPlatform": "Windows", "operatingSystemVersion": "10.0.19045" } },
+        "deviceMetadata": { "deviceType": "managed", "operatingSystemSpecifications": { "operatingSystemPlatform": "Windows", "operatingSystemVersion": "10.0.19045" } },
         "integratedAppMetadata": { "name": "AppX", "version": "1.0" }
       }
     },
@@ -78,7 +78,7 @@ Content-type: application/json
       "contentToProcess": {
          "contentEntries": [ { "@odata.type": "#microsoft.graph.processFileMetadata", "identifier": "file://server/share/report.docx", "name": "report.docx", "ownerId":"alex.wilber@contoso.com", "createdDateTime": "2024-07-28T09:00:00Z", "modifiedDateTime": "2024-07-29T16:05:00Z" } ],
          "activityMetadata": { "activity": "uploadFile", "applicationLocation": "https://internal.contoso.com/upload" },
-         "deviceMetadata": { "deviceType": "Desktop", "operatingSystemSpecifications": { "operatingSystemPlatform": "macOS", "operatingSystemVersion": "14.5" } },
+         "deviceMetadata": { "deviceType": "managed", "operatingSystemSpecifications": { "operatingSystemPlatform": "macOS", "operatingSystemVersion": "14.5" } },
          "integratedAppMetadata": { "name": "AppY", "version": "2.1" }
       }
     }

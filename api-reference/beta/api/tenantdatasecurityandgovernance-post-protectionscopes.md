@@ -15,6 +15,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+
+>**Note** At this time, returned results will not reflect filtering values provided in the request.
+
+
 Compute the tenant-wide data protection policies and actions, including user/group scoping.
 
 Applications are required to adhere to Microsoft Purview policies established by Security/Compliance Administrators, which dictate how data and user activities should be managed. This is referred to as protection scopes, and applications should use the ProtectionScopes API to understand what has been defined in the context of user interactions. The application calls the ProtectionScopes API to get the protection scopes for the user.
@@ -63,15 +67,15 @@ POST /security/dataSecurityAndGovernance/protectionScopes/compute
 
 ## Request body
 
-In the request body, provide a JSON object with the following parameters.
+In the request body, provide JSON object with the following parameters.
 
 | Parameter             | Type                                                                                                                 | Description                                                                                                                                                         |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| activities            | [userActivityTypes](../resources/useractivitytypes.md)                              | Required. Flags specifying the user activities the calling application supports or is interested in (e.g., `uploadText`, `downloadFile`).                            |
+| activities            | [userActivityTypes](../resources/useractivitytypes.md)                              | Optional. Flags specifying the user activities the calling application supports or is interested in (e.g., `uploadText`, `downloadFile`).                            |
 | locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations (domains or URLs) the application is interested in. If provided, results are trimmed to policies covering these locations.     |
 | pivotOn               | [policyPivotProperty](../resources/policypivotproperty.md)                          | Optional. Specifies how the results should be aggregated (`activity` or `location`). If omitted or `none`, results might be less aggregated.                   |
-| deviceMetadata        | [deviceMetadata](../resources/devicemetadata.md)                                  | Required. Information about the device context (type, OS) used for contextual policy evaluation.                                                                   |
-| integratedAppMetadata | [integratedApplicationMetadata](../resources/integratedapplicationmetadata.md)      | Required. Information about the calling application (name, version) integrating with Purview.                                                                    |
+| deviceMetadata        | [deviceMetadata](../resources/devicemetadata.md)                                    | Optional. Information about the device context (type, OS) used for contextual policy evaluation.                                                                   |
+| integratedAppMetadata | [integratedApplicationMetadata](../resources/integratedapplicationmetadata.md)      | Optional. Information about the calling application (name, version) integrating with Purview.                                                                    |
 
 ## Response
 
@@ -97,7 +101,7 @@ Content-type: application/json
   ],
   "pivotOn": "location",
   "deviceMetadata": {
-    "deviceType": "Desktop",
+    "deviceType": "managed",
     "operatingSystemSpecifications": {
        "operatingSystemPlatform": "Windows",
        "operatingSystemVersion": "10.0.19045"

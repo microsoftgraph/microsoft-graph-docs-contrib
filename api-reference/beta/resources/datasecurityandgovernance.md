@@ -25,7 +25,3 @@ Abstract base type representing the entry point for data security and governance
 |[Process Content Async](../api/tenantdatasecurityandgovernance-post-processcontentasync.md)|  [processContentResponses](../resources/processcontentresponses.md) collection | Process content entries asynchronously against data protection policies. |
 
 ## Relationships
-
-| Relationship      | Type                                                                                 | Description                                                                                  |
-| :---------------- | :----------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
-| sensitivityLabels | [sensitivityLabel](../resources/security-sensitivitylabel.md) collection | Provides access to the sensitivity labels defined within the tenant, accessible from both user and tenant scopes. |

@@ -1,7 +1,7 @@
 ---
 title: "contentActivity resource type"
 toc.title: "contentActivity resource type (preview)"
-description: "Represents audit logs data from content processing, in a structured way to ensure compliance, track user actions, and detect unusual behavior."
+description: "Represents audit log data from content processing, in a structured way to ensure compliance, track user actions, and detect unusual behavior."
 author: "ArunGedela"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents audit logs data from content processing in a structured way to ensure compliance, track user actions, and detect unusual behavior. Captures detailed information about each activity, including timestamps, actions taken, and the involved resources. Essential for tracking and auditing user interactions and system events.
+Represents audit log data from content processing, in a structured way to ensure compliance, track user actions, and detect unusual behavior.
+
+Captures detailed information about each activity, including timestamps, actions taken, and the involved resources. Essential for tracking and auditing user interactions and system events.
 
 Inherits from [entity](../resources/entity.md).
 

@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type for representing errors that occur during data classification, label evaluation, or policy processing. It provides common error properties like code, message, and target.
+Abstract base type for representing errors that occur during data classification, label evaluation, or policy processing.
+
+It provides common error properties like code, message, and target.
 
 ## Properties
 
