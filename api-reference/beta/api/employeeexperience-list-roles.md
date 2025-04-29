@@ -1,6 +1,6 @@
 ---
 title: "List roles"
-description: "List Viva Engage role objects and properties."
+description: "List all roles that can be assigned in Viva Engage."
 author: "richafnu"
 ms.date: 03/27/2025
 ms.localizationpriority: medium
