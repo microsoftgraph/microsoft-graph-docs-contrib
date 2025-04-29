@@ -17,13 +17,13 @@ Namespace: microsoft.graph
 
 "Represents metadata about an application whose activities are being governed by an integrated application.
 
-For internal use only. Do not use.
+For internal use only. Don't use.
 
 ## Properties
 
 | Property      | Type   | Description                                                      |
 | :------------ | :----- | :--------------------------------------------------------------- |
-| applicationLocation | [policyLocation](../resources/policylocation.md) | For internal use only. Do not use. |
+| applicationLocation | [policyLocation](../resources/policylocation.md) | For internal use only. Don't use. |
 
 ## Relationships
 
@@ -40,7 +40,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.protectedApplicationMetadata",
-  // For internal use only. Do not use.
   "applicationLocation": {
     "@odata.type": "#microsoft.graph.policyLocation",
     "location": "String"

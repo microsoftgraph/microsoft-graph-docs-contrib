@@ -46,29 +46,15 @@ The following JSON representation shows the resource type.
 }-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.classificationError",
   "code": "String",
   "message": "String",
   "target": "String",
   "innerError": {
     "@odata.type": "microsoft.graph.classificationInnerError"
   },
-
-  // classificationError properties
   "details": [
     {
-      "@odata.type": "microsoft.graph.classifcationErrorBase"
-      "code": "String",
-      "message": "String",
-      "target": "String",
-      "innerError": {
-         "@odata.type": "microsoft.graph.classificationInnerError"
-      },
-      details [
-        {
-          "@odata.type": "microsoft.graph.classifcationErrorBase"
-        }
-      ]
+      "@odata.type": "#microsoft.graph.classifcationErrorBase",
     }
   ]
 }
