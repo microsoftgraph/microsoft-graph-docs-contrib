@@ -1512,7 +1512,7 @@
                   "name": "QR Code and PIN",
                   "resources": [
                     "QR Code",
-                    "QR PIN"
+                    "PIN"
                   ]
                 }
               ]
