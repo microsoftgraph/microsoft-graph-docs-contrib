@@ -2237,7 +2237,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDate,educationSynchronizationProfile",
           "ChangeType": "Addition",
-          "Description": "Added new**expirationDate** property to the [**educationSynchronizationProfile**](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource.",
+          "Description": "Added new **expirationDate** property to the [**educationSynchronizationProfile**](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource.",
           "Target": "**educationSynchronizationProfile**"
         }
       ],
