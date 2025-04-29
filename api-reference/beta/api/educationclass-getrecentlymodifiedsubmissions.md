@@ -43,7 +43,7 @@ The `$orderby` query parameter only supports the **lastModifiedDateTime** proper
 
 The default ordering is by descending **lastModifiedDateTime** property values.
 
-**Note** : Equality (eq) operator isn't supported for the **lastModifiedDateTime** property value.
+**Note**: The `Equality` (eq) operator isn't supported for the **lastModifiedDateTime** property value.
 
 ## Request headers
 | Header       | Value |
