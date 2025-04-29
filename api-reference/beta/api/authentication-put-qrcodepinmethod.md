@@ -23,12 +23,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ### Permissions acting on self
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-[!INCLUDE [permissions-table](../includes/permissions/authentication-put-qrCodePinMethod-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/authentication-put-qrcodepinmethod-permissions.md)]
 
 ### Permissions acting on other users
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-[!INCLUDE [permissions-table](../includes/permissions/authentication-put-qrCodePinMethod-2-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/authentication-put-qrcodepinmethod-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
