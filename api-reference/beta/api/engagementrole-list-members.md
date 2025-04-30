@@ -1,5 +1,5 @@
 ---
-title: "List engagementRoleMember objects"
+title: "List engagementRoleMember"
 description: "Get a list of the engagementRoleMember objects and their properties."
 author: "richafnu"
 ms.date: 03/27/2025
@@ -8,13 +8,13 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# List members of a role
+# List engagementRoleMember
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get users who hold a role in Viva Engage.
+Get a list of the engagementRoleMember objects and their properties.
 
 ## Permissions
 
