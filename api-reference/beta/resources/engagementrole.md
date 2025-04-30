@@ -8,7 +8,7 @@ ms.subservice: "viva-engage"
 doc_type: resourcePageType
 ---
 
-# Role
+# engagementRole resource type
 
 Namespace: microsoft.graph
 
