@@ -41,7 +41,7 @@ The `$orderby` query parameter only supports the **lastModifiedDateTime** proper
 
 The default ordering is by descending **lastModifiedDateTime** property values.
 
-**Note** : Equality (eq) operator isn't supported for the **lastModifiedDateTime** property value.
+**Note** : Equality (`eq`) operator isn't supported for the **lastModifiedDateTime** property value.
 
 ## Request headers
 | Header       | Value |
@@ -105,7 +105,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions
 ```
----
 
 #### Response
 The following example shows the response.
@@ -206,7 +205,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getrecentlymodifiedsubmissions?$filter=assignmentId eq 'b20d6737-f88e-4892-8174-73aa26d18784'&$select=LastModifiedDateTime,status
 ```
----
 
 #### Response
 The following example shows the response.
@@ -281,7 +279,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$expand=outcomes
 ```
----
 
 #### Response
 The following example shows the response.
@@ -427,7 +424,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z
 ```
----
 
 #### Response
 The following example shows the response.
@@ -528,7 +524,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$orderby=lastModifiedDateTime&$top=1
 ```
----
 
 #### Response
 The following example shows the response.
@@ -630,7 +625,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$select=excusedDateTime
 ```
----
 
 #### Response
 The following example shows the response.
@@ -667,7 +661,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z and lastModifiedDateTime lt 2025-04-14T23:02:00.8753517Z
 ```
----
 
 #### Response
 The following example shows the response.
@@ -767,7 +760,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime lt 2025-04-29T15:48:31.3785886Z
 ```
----
 
 #### Response
 The following example shows the response.
