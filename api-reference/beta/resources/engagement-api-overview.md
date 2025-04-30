@@ -48,9 +48,9 @@ The following table lists common use cases for the Viva Engage API.
 
 Viva Engage supports role-based access by enabling the assignment of predefined administrative roles (such as Network Admin and Verified Admin) and corporate communication roles within the platform.
 
-These assignable roles are predefined and managed by Viva Engage. Custom roles can't be created or deleted. For a complete list of supported roles and their associated assignment. For more information, see [Manage administrator roles in Viva Engage](https://learn.microsoft.com/viva/engage/eac-key-admin-roles-permissions).
+These assignable roles are predefined and managed by Viva Engage. Custom roles can't be created or deleted. For more information, see [Manage administrator roles in Viva Engage](/viva/engage/eac-key-admin-roles-permissions).
 
-While Microsoft Entra roles are managed through the Microsoft Entra admin center, Viva Engage-specific roles can be assigned and managed using the Viva Engage platform and Microsoft Graph APIs. For more information, see [Microsoft 365 admin center guide](https://learn.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+While Microsoft Entra roles are managed through the Microsoft Entra admin center, Viva Engage-specific roles can be assigned and managed using the Viva Engage platform and Microsoft Graph APIs. For more information, see [Microsoft 365 admin center guide](/microsoft-365/admin/add-users/assign-admin-roles).
 
 ## Communities and groups
 
