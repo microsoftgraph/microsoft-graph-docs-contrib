@@ -21,7 +21,7 @@ Asynchronously create a copy of a [driveItem][item-resource], optionally includi
 >
 > File versions are only retained when the includeAllVersionHistory parameter is explicitly set to true. Otherwise, only the latest version is copied.
 >
-> The Copy operation is restricted to 30,000 drive items. For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites).
+> The copy operation is restricted to 30,000 driveItems. For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites).
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
