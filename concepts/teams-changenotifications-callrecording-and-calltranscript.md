@@ -494,6 +494,8 @@ For notifications with resource data, the payload looks like the following. This
 
 The decrypted notification payload looks like the following. The payload conforms to the [recording](/graph/api/resources/callrecording) schema. The payload is similar to the ones returned by GET operations.
 
+>**Note:** The payload object shown here is shortened for readability.
+
 <!-- { "blockType": "ignored" } -->
 ```json
 {
