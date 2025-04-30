@@ -20,9 +20,9 @@ This API returns the metadata and content of the single set of AI insights assoc
 
 > [!NOTE]
 >
-> - This API has license requirements. For more information, see [license requirements for meeting AI Insights APIs](/graph/teams-licenses#license-requirements-for-meeting-ai-insights-apis).
-> - This API doesn't support meetings created with [Create onlineMeeting](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
-> - This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
+> - This API has license requirements. For more information, see [License requirements for meeting AI insights APIs](/graph/teams-licenses#license-requirements-for-meeting-ai-insights-apis).
+> - This API doesn't support meetings created with [Create onlineMeeting](/graph/api/application-post-onlinemeetings) that aren't associated with an event on the user's calendar.
+> - This API works differently in one or more national clouds. For more information, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -180,10 +180,9 @@ Content-type: application/json
 
 The following example shows how to get a single set of AI insights of an online meeting corresponding to a [transcript](../resources/calltranscript.md) using the **contentCorrelationId** property.
 
-### Request
+#### Request
 
 The following example shows a request.
-
 
 <!-- {
   "blockType": "request",
@@ -196,9 +195,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSoxM.../aiInsights?$filter=contentcorrelationId+eq+'bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3'
 ```
 
----
-
-### Response
+#### Response
 
 The following example shows the response.
 
