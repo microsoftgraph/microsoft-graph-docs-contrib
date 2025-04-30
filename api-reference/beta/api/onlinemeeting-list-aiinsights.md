@@ -1,6 +1,6 @@
 ---
 title: "List aiInsights"
-description: "Get the list of callAiInsights objects associated with a scheduled onlineMeeting."
+description: "Get the list of callAiInsight objects associated with a scheduled onlineMeeting."
 author: "Anjali-Patle"
 ms.date: 04/29/2025
 ms.localizationpriority: medium
@@ -14,11 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [callAiInsights](../resources/callaiinsight.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API doesn't support getting call AI insights from channel meetings. 
+Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API doesn't support getting call AI insights from channel meetings. 
 
 > [!NOTE]
-> * This API doesn't support meetings created with [Create onlineMeeting](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
-> * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
+> * This API doesn't support meetings created with [Create onlineMeeting](/graph/api/application-post-onlinemeetings) that aren't associated with an event on the user's calendar.
+> * This API works differently in one or more national clouds. For more details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -50,7 +50,7 @@ GET /copilot/users/{userId}/onlineMeetings/{onlineMeetingId}/aiInsights
 
 ## Optional query parameters
 
-This method supports the `$select`, `$filter`, and `$top`  [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports the `$select`, `$filter`, and `$top` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
