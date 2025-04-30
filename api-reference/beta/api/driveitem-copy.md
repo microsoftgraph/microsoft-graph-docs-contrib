@@ -316,10 +316,17 @@ The following example shows an example status report obtained by visiting the UR
 
 To resolve this error, use the optional query parameter [@microsoft.graph.conflictBehavior](#optional-query-parameters), as shown in Example 4.
 
-### Example 4: Copy a file item to a folder with a preexisting item with the same name by specifying the @microsoft.graph.conflictBehavior query parameter
+### Example 4: Copy a file to a folder containing a file with the same name
 
-The following example copies a file item identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
-In this example, the destination already has a file with the same name. The query parameter `@microsoft.graph.conflictBehavior` is set to replace. The possible values are `replace`, `rename`, or `fail`.
+This example shows how to copy a file to a folder already containing a file with the same name. The request uses the `@microsoft.graph.conflictBehavior` query parameter to handle the naming conflict.
+
+The parameter is set to `replace`, which instructs the API to overwrite the existing item in the destination folder.
+
+The possible values for `@microsoft.graph.conflictBehavior` are:
+- `replace`: Replace the existing file.
+- `rename`: Rename new copy.
+- `fail`: Fail the request if a naming conflict exists.
+
 
 #### Request
 # [HTTP](#tab/http)
@@ -381,9 +388,14 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-### Example 5: Failure to copy child items that contain a folder item by specifying @microsoft.graph.conflictBehavior as replace
+### Example 5: Invalid request when copying child items with folder conflicts using `conflictBehavior=replace`
 
-The following example attempts to copy the child items  in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values. One of the child items is a folder item. The destination might have items with colliding names to the children at the source folder. The request attempts to resolve potential name conflicts by setting the optional query parameter `@microsoft.graph.conflictBehavior` to replace. The request is accepted but the monitoring url reports failures. Instead use `rename` or `fail` if at least one of the children is a folder item.
+This example shows a failed request that attempts to copy only the child items of a folder. The request sets the `childrenOnly` parameter to `true` and uses the `@microsoft.graph.conflictBehavior` query parameter with a value of `replace`.
+
+One or more child items in the source folder are folders. Because the `replace` behavior is not supported when a conflicting item is a folder, the copy operation fails. The request is accepted and a monitoring URl is returned, but the operation ultimately reports an error.
+
+To avoid this error, use `rename` or `fail` instead of `replace` when copying child items that include folders.
+
 
 #### Request
 # [HTTP](#tab/http)
@@ -446,7 +458,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-Visiting the monitoring URL yields a status report similar to the following example.
+Query the monitor URL in the location header to monitor the status of the operation. A failed operation may return a similar response to the following example.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -482,9 +494,11 @@ Visiting the monitoring URL yields a status report similar to the following exam
 }
 ```
 
-### Example 6: Copy item to a destination folder and preserve its version history
+### Example 6: Copy an item and preserve version history
 
-The following example copies the item identified by `{item-id}` into a folder identified by the `driveId` and `id` values. It also copies the version history to the target folder. If the source file contains more versions than the destination version limit setting, the copy only transfers the maximum number of newest versions that the destination site allows.
+This example shows how to copy a file item to a new location and include its version history in the copied item. The `includeAllVersionHistory` parameter is set to `true` in the request body to indicate that version history should be preserved.
+
+If the source file has more versions than the destination site allows, only the most recent versions are copied, up to the maximum version limit supported by the destination.
 
 #### Request
 
@@ -540,25 +554,24 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows the response.
-
 <!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 
 ```
+Use the `Location` URL in the response header to monitor the progress of the asynchronous copy operation.
 
-### Example 7: Failure to copy child items in a root folder without specifying the childreOnly parameter as true
+### Example 7: Invalid request when copying the root folder without `childrenOnly`
 
-The following example attempts to copy the child items in the folder identified by `{item-id}`, also known as "root," into a folder identified by the `driveId` and `id` values.
-The `childrenOnly` parameter isn't set to true.
-The request fails because the copy operation can't be done on the root folder. The operation is blocked before processing, and the user is expected to correct the request by specifying the `childrenOnly` parameter. When this validation fails, no monitoring URL is returned.
+This example shows a failed request that attempts to copy the root folder by specifying `root` as the `{item-id}`. The request does not include the `childrenOnly` parameter. Because the root folder itself cannot be copied, and `childrenOnly` is not set to true, the request is rejected with an `invalidRequest` error.
+
+To copy the contents of the root folder without copying the folder itself, set the `childrenOnly` parameter to `true`.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-6" } -->
 
-```http
+```HTTP
 POST https://graph.microsoft.com/beta/me/drive/items/root/copy
 Content-Type: application/json
 
@@ -572,10 +585,8 @@ Content-Type: application/json
 
 #### Response
 
-Visiting the monitoring URL yields a status report similar to the following example.
-
 <!-- { "blockType": "ignored" } -->
-```http
+```HTTP
 HTTP/1.1 400 Bad Request
 Content-Type: application/json
 Content-Length: 283
@@ -596,11 +607,9 @@ Content-Length: 283
 ```
 To resolve this error, set the `childrenOnly` parameter to true.
 
-### Example 8: Failure to copy the child items of a file item
+### Example 8: Invalid request when copying the child items of a file
 
-The following example attempts to copy the children of a source item identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
-The `{item-id}` refers to a file, not a folder. The `childrenOnly` parameter is set to true.
-The request fails since the `{item-id}` is a nonfolder driveItem.
+This example shows a failed request that sets the `childrenOnly` parameter to `true` for a source item that is a file. The `childrenOnly` parameter is valid only for folder items. Because files do not contain child items, the request is rejected with an invalidRequest error.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-8" } -->
@@ -619,8 +628,6 @@ Content-Type: application/json
 ```
 
 #### Response
-
-Visiting the monitoring URL yields a status report similar to the following example.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -643,9 +650,9 @@ Content-Length: 290
 }
 ```
 
-### Example 9: Failure to copy child items by specifying both the childrenOnly and name request body parameters
+### Example 9: Invalid request when specifying both `childrenOnly` and `name`
 
-The following example attempts to copy the child items  in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values. The request body sets the `childrenOnly` parameter to true and also specifies a `name` value. The request fails as the `childrenOnly` and `name` parameters are mutually exclusive.
+This example shows a failed request that sets the `childrenOnly` parameter to `true` to copy only the child items of a folder, while also specifying a new `name` value. These two parameters can't be used together because the folder itself isn't being copied. The request is rejected with an `invalidRequest` error.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-9" } -->
@@ -665,10 +672,10 @@ Content-Type: application/json
 ```
 
 #### Response
+<!-- { "blockType": "ignored" } -->
 
 The following example shows the response.
 
-<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 400 Bad Request
 Content-Type: application/json
@@ -687,6 +694,54 @@ Content-Length: 285
     }
   }
 }
+```
+
+### Example 10: Succesful children copy
+
+This example demonstrates how to copy the child items of a folder (without copying the folder itself) into a new destination. The source folder is identified by `{item-id}` and the destination folder is specified using its `driveId` and `id`. The request sets the `childrenOnly` property to `true`, which is valid only for folder items.
+
+
+#### Request
+<!-- { "blockType": "ignored", "name": "copy-item-10" } -->
+
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
+Content-Type: application/json
+
+{
+  "parentReference": {
+    "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
+    "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
+  },
+  "childrenOnly": true
+}
+```
+
+#### Response
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 202 Accepted
+Location: https://prepspo.spgrid.com/sites/FromSite/_api/v2.1/monitor/780293e6-07b3-4544-a126-fea909efcc84
+```
+
+#### Monitoring the Operation
+
+Use the Location URL to track the status of the asynchronous copy operation. A successful response might look like this:
+
+```json
+{
+  "@odata.context": "https://prepspo.spgrid.com/sites/FromSite/_api/v2.1/$metadata#drives('b!eUKtdpCU_kSVaTUFV6NpD-X6ybrlZ_5AgIz5YS9EUgU51UBlz4oFSauS0JyHnBdR')/operations/$entity",
+  id": "780293e6-07b3-4544-a126-fea909efcc84",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastActionDateTime": "0001-01-01T00:00:00Z",
+  "percentageComplete": 100,
+  "percentComplete": 100,
+  "resourceId": "01MXEZFVE5G2AS5Y74YZFYQF3KZAQ7CFEP",
+  "resourceLocation": "https://prepspo.spgrid.com/sites/ToSite/_api/v2.0/drives/b!JiheeiHiFEymg-TwftZJ-eX6ybrlZ_5AgIz5YS9EUgU51UBlz4oFSauS0JyHnBdR/items/01MXEZFVE5G2AS5Y74YZFYQF3KZAQ7CFEP",
+  "status": "completed"
+}
+ 
 ```
 
 ## Related content
