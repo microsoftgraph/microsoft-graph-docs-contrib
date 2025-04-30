@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Asynchronously create a copy of a [driveItem][item-resource], optionally including any children, under a new parent item or with a new name. After the request is acknowledged, the item enters a processing queue. Copying, including children, happens asynchronously. Progress is reported until the operation is completed by [monitoring the progress](/graph/long-running-actions-overview).
 
 > [!IMPORTANT]
-> Permissions are not retained when an item is copied. The copied driveItem inherits the permissions of the destination folder.
+> Permissions are not retained when an driveItem is copied. The copied driveItem inherits the permissions of the destination folder.
 >
 > File versions are only retained when the includeAllVersionHistory parameter is explicitly set to true. Otherwise, only the latest version is copied.
 >
