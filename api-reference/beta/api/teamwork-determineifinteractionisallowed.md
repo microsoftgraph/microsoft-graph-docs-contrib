@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Determines if a specified Microsoft Teams interaction is allowed between the caller and a specified set of users.
 
+> **Note**: All requests to this API are logged in the M365 audit logs of the tenants where the targeted users (`users` parameter) exist. Refer to [this documentation](https://learn.microsoft.com/en-us/purview/audit-log-activities#microsoft-teams-activities) to learn more about what is logged.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -52,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 | Parameter          | Type                                                               | Description                                                  |
 | :----------------- | :----------------------------------------------------------------- | :----------------------------------------------------------- |
 | interactionType    | [teamworkInteractionType](../resources/teamworkinteractiontype.md) | The type of interaction on Microsoft Teams. |
-| users              | [identity](../resources/identity.md) collection                    | The collection of users with which the caller wants to determine whether interaction is allowed. Supported derived types are [teamworkUserIdentity](../resources/teamworkuseridentity.md) and [emailIdentity](../resources/emailidentity.md). |
+| users              | [identity](../resources/identity.md) collection                    | The collection of target users with which the caller wants to determine whether interaction is allowed. Supported derived types are [teamworkUserIdentity](../resources/teamworkuseridentity.md) and [emailIdentity](../resources/emailidentity.md). |
 
 ## Response
 
