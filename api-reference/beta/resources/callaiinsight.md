@@ -1,11 +1,12 @@
 ---
 title: "callAiInsight resource type"
-description: "Represents a set of AI Insights associated with an online meeting."
+description: "Represents a set of AI insights associated with an online meeting."
 author: "Anjali-Patle"
 ms.date: 04/29/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+toc.title: "Call AI insight"
 ---
 
 # callAiInsight resource type
@@ -14,10 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a set of AI Insights associated with an [online meeting](onlinemeeting.md).
+Represents a set of AI insights associated with an [online meeting](onlinemeeting.md).
 
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 |Method|Return type|Description|
@@ -53,24 +53,14 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.callAiInsight",
-  "id": "String (identifier)",
+  "actionItems": [{"@odata.type": "microsoft.graph.actionItem"}],
   "callId": "String",
   "contentCorrelationId": "String",
   "createdDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "meetingNotes": [
-    {
-      "@odata.type": "microsoft.graph.meetingNote"
-    }
-  ],
-  "actionItems": [
-    {
-      "@odata.type": "microsoft.graph.actionItem"
-    }
-  ],
-  "viewpoint": {
-    "@odata.type": "microsoft.graph.callAiInsightViewPoint"
-  }
+  "id": "String (identifier)",
+  "meetingNotes": [{"@odata.type": "microsoft.graph.meetingNote"}],
+  "viewpoint": {"@odata.type": "microsoft.graph.callAiInsightViewPoint"}
 }
 ```
 
