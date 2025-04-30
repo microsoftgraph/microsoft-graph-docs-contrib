@@ -36,9 +36,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.meetingNote",
-  "subpoints": [{"@odata.type": "microsoft.graph.meetingNoteSubpoint"}]
+  "subpoints": [{"@odata.type": "microsoft.graph.meetingNoteSubpoint"}],
   "text": "String",
-  "title": "String",
+  "title": "String"
 }
 ```
 
