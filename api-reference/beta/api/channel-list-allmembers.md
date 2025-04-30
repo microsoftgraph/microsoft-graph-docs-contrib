@@ -162,7 +162,8 @@ The following example shows a request to find the membership resources based on 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_members_in_channel_filter_by_userid"
+  "name": "get_members_in_channel_filter_by_userid",
+  "sampleKeys": ["2ab9c796-2902-45f8-b712-7c5a63cf41c4", "19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype"]
 }
 -->
 ``` http
