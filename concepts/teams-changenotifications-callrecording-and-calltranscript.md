@@ -399,6 +399,8 @@ Depending on your subscription, you can get the notification with or without res
 
 For notifications with resource data, the payload looks like the following. This payload is for a transcript available for an online meeting.
 
+>**Note:** The payload object shown here might be shortened for readability.
+
 <!-- { "blockType": "ignored" } -->
 ```json
 {
@@ -431,6 +433,8 @@ For notifications with resource data, the payload looks like the following. This
 
 The decrypted notification payload looks like the following. The payload conforms to the [transcript](/graph/api/resources/calltranscript) schema. The payload is similar to the ones returned by GET operations.
 
+>**Note:** The payload object shown here might be shortened for readability.
+
 <!-- { "blockType": "ignored" } -->
 ```json
 {
@@ -455,6 +459,8 @@ The decrypted notification payload looks like the following. The payload conform
 ```
 
 For notifications with resource data, the payload looks like the following. This payload is for a recording available for an online meeting.
+
+>**Note:** The payload object shown here might be shortened for readability.
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -518,6 +524,8 @@ Notifications without resource data give you the resource ID to make GET calls t
 
 For notifications without resource data, the payload looks like the following. This payload is for a transcript available for an online meeting.
 
+>**Note:** The payload object shown here might be shortened for readability.
+
 <!-- { "blockType": "ignored" } -->
 ```json
 {
@@ -536,6 +544,8 @@ For notifications without resource data, the payload looks like the following. T
 ```
 
 For notifications without resource data, the payload looks like the following. This payload is for a recording available for an online meeting.
+
+>**Note:** The payload object shown here might be shortened for readability.
 
 <!-- { "blockType": "ignored" } -->
 ```json
