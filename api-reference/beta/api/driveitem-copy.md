@@ -61,7 +61,9 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 >[!NOTE]
 > The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
 >
-> If you specify `@microsoft.graph.conflictBehavior=replace` for a source folder item, this API returns a `202 Accepted` response. In this case, querying the monitoring url reports a `nameAlreadyExists` error. If you specify this parameter with the `childrenOnly` parameter, a `nameAlreadyExists` error occurs if there are any folder items in the source item's children.
+> If you use `@microsoft.graph.conflictBehavior=replace` on a source folder, the API returns a 202 Accepted response, but the copy operation will fail. When you query the monitoring URL, it returns a `nameAlreadyExists` error.
+>
+> If you use this parameter together with `childrenOnly`, a `nameAlreadyExists` error will occur if any child items are folders.
 
 ## Request body
 
