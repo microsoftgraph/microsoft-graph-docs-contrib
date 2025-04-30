@@ -8,78 +8,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Identity.ConditionalAccess.Evaluate;
-using Microsoft.Kiota.Abstractions.Serialization;
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new EvaluatePostRequestBody
 {
-	AppliedPoliciesOnly = true,
-	AdditionalData = new Dictionary<string, object>
+	SignInIdentity = new UserSignIn
 	{
+		OdataType = "#microsoft.graph.userSignIn",
+		UserId = "15dc174b-f34c-4588-ac45-61d6e05dce93",
+	},
+	SignInContext = new AuthContext
+	{
+		OdataType = "#microsoft.graph.authContext",
+		AuthenticationContextValue = "c37",
+	},
+	SignInConditions = new SignInConditions
+	{
+		DevicePlatform = ConditionalAccessDevicePlatform.Windows,
+		ClientAppType = ConditionalAccessClientApp.MobileAppsAndDesktopClients,
+		SignInRiskLevel = RiskLevel.Medium,
+		UserRiskLevel = RiskLevel.None,
+		Country = "US",
+		IpAddress = "40.77.182.32",
+		InsiderRiskLevel = InsiderRiskLevel.Moderate,
+		AuthenticationFlow = new AuthenticationFlow
 		{
-			"signInIdentity" , new UntypedObject(new Dictionary<string, UntypedNode>
-			{
-				{
-					"@odata.type", new UntypedString("#microsoft.graph.userSignIn")
-				},
-				{
-					"userId", new UntypedString("15dc174b-f34c-4588-ac45-61d6e05dce93")
-				},
-			})
+			TransferMethod = ConditionalAccessTransferMethods.AuthenticationTransfer,
 		},
+		DeviceInfo = new DeviceInfo
 		{
-			"signInContext" , new UntypedObject(new Dictionary<string, UntypedNode>
-			{
-				{
-					"@odata.type", new UntypedString("#microsoft.graph.authContext")
-				},
-				{
-					"authenticationContextValue", new UntypedString("c37")
-				},
-			})
-		},
-		{
-			"signInConditions" , new UntypedObject(new Dictionary<string, UntypedNode>
-			{
-				{
-					"devicePlatform", new UntypedString("windows")
-				},
-				{
-					"clientAppType", new UntypedString("mobileAppsAndDesktopClients")
-				},
-				{
-					"signInRiskLevel", new UntypedString("medium")
-				},
-				{
-					"userRiskLevel", new UntypedString("none")
-				},
-				{
-					"country", new UntypedString("US")
-				},
-				{
-					"ipAddress", new UntypedString("40.77.182.32")
-				},
-				{
-					"insiderRiskLevel", new UntypedString("moderate")
-				},
-				{
-					"authenticationFlow", new UntypedObject(new Dictionary<string, UntypedNode>
-					{
-						{
-							"transferMethod", new UntypedString("authenticationTransfer")
-						},
-					})
-				},
-				{
-					"deviceInfo", new UntypedObject(new Dictionary<string, UntypedNode>
-					{
-						{
-							"profileType", new UntypedString("Standard")
-						},
-					})
-				},
-			})
+			ProfileType = "Standard",
 		},
 	},
+	AppliedPoliciesOnly = true,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
