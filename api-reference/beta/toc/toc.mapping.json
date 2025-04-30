@@ -490,6 +490,7 @@
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcBulkDisasterRecovery",
             "cloudPcBulkDisasterRecoveryFailback",
             "cloudPcBulkDisasterRecoveryFailover",
             "cloudPcBulkMove",
@@ -530,6 +531,7 @@
             "cloudPcStatusDetails",
             "cloudPcStatusDetail",
             "CloudPcConnectionSetting",
+            "cloudPcSupportedRegionRestrictionDetail",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
@@ -1480,7 +1482,10 @@
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
-                "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
+                "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
+                "qrCodePinAuthenticationMethod",
+                "qrCode",
+                "qrPin"
               ]
             },
             {
@@ -1499,7 +1504,17 @@
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
-                "x509CertificateAuthenticationMethodConfiguration"
+                "x509CertificateAuthenticationMethodConfiguration",
+                "qrCodePinAuthenticationMethodConfiguration"
+              ],
+              "childNodes": [
+                {
+                  "name": "QR code authentication",
+                  "resources": [
+                    "QR Code",
+                    "PIN"
+                  ]
+                }
               ]
             },
             {
@@ -1525,6 +1540,7 @@
               "name": "Conditional access",
               "resources": [
                 "conditionalAccessPolicy",
+                "whatIfAnalysisResult",
                 "namedLocation",
                 "authenticationContextClassReference",
                 "conditionalAccessTemplate",                
@@ -2201,6 +2217,7 @@
         "pronounsSettings",
         "photoUpdateSettings",
         "namePronunciationSettings",
+        "enhancedPersonalizationSetting",
         "profile",
         "userAnalytics"
       ],
@@ -2438,6 +2455,7 @@
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",
             "microsoft.graph.partners.billing.operation",
+            "microsoft.graph.partners.billing.unbilledReconciliation",
             "microsoft.graph.partners.billing.unbilledUsage"
           ]
         }
@@ -2909,6 +2927,17 @@
       ],
       "childNodes": [
         {
+          "name": "Administration (preview)",
+          "resources": [
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+          ],
+          "complexTypes": [
+            "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
+            "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
+            "microsoft.graph.teamsAdministration.policyAssignment"
+          ]
+        },
+        {
           "name": "AI interactions (preview)",
           "resources": [
             "aiInteractionHistory"
@@ -2998,8 +3027,7 @@
             {
               "name": "Copilot settings",
               "resources": [
-                "copilotAdminLimitedMode",
-                "enhancedPersonalizationSetting"
+                "copilotAdminLimitedMode"
               ],
               "complexTypes": [
                 "copilotAdmin",
@@ -3308,3 +3336,4 @@
     }
   ]
 }
+

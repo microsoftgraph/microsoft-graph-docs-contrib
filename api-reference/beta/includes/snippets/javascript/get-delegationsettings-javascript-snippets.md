@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let 62de48e1-a72c-40db-9193-a3bd8cf167c9 = await client.api('/me/communications/callSettings/delegates/62de48e1-a72c-40db-9193-a3bd8cf167c9')
+let delegationSettings = await client.api('/me/communications/callSettings/delegates/62de48e1-a72c-40db-9193-a3bd8cf167c9')
 	.version('beta')
 	.get();
 

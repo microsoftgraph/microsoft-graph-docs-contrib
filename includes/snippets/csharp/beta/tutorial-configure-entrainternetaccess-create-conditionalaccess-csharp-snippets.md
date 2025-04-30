@@ -8,7 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new ConditionalAccessPolicy
 {
@@ -32,19 +31,10 @@ var requestBody = new ConditionalAccessPolicy
 	DisplayName = "UserA Access to AI and Bing",
 	SessionControls = new ConditionalAccessSessionControls
 	{
-		AdditionalData = new Dictionary<string, object>
+		GlobalSecureAccessFilteringProfile = new GlobalSecureAccessFilteringProfileSessionControl
 		{
-			{
-				"globalSecureAccessFilteringProfile" , new UntypedObject(new Dictionary<string, UntypedNode>
-				{
-					{
-						"profileId", new UntypedString("dddddddd-9999-0000-1111-eeeeeeeeeeee")
-					},
-					{
-						"isEnabled", new UntypedBoolean(true)
-					},
-				})
-			},
+			ProfileId = "dddddddd-9999-0000-1111-eeeeeeeeeeee",
+			IsEnabled = true,
 		},
 	},
 	State = ConditionalAccessPolicyState.Enabled,
