@@ -138,7 +138,7 @@ Content-Type: application/json
 
 ## Subscribe to video-on-demand publication for all sessions in a webinar
 
-To subscription to notifications for when a session's video-on-demand publication occurs, specift the resource as `solutions/virtualEvents/{eventType}/{eventId}/getVideoOnDemandPublication`.
+To subscribe to notifications for when a session's video-on-demand publication occurs, specify the resource as `solutions/virtualEvents/{eventType}/{eventId}/getVideoOnDemandPublication`.
 
 An application can only have a subscription per virtual event in a tenant for video-on-demand publications.
 A user delegated token allows you to setup one subscription per virtual event in a tenant. The subscription is only available for users who are the organizer or listed as co-organizer in the same tenant as the event host.
@@ -295,7 +295,7 @@ The following JSON examples show the responses for each supported change type of
 
 ### Video on demand published
 
-Events that are created by when video on demand is published for a virtual event session.  Users can use the **resourceData.@odata.id** property to discover which virtual event session video-on-demand has become available for.
+Events that are created when video on demand is published for a virtual event session.  Users can use the **resourceData.@odata.id** property to discover which virtual event session video-on-demand has become available for.
 
 When a notification is received for virtual event webinar's sessions, the notification will only let the application/user know that the virtual event webinar's video-on-demand url is published. The video-on-demand url on the virtual event session may be null or useable only to the organizer. The application and/or user must figure which unique video-on-demand urls to provide to it's different participants as a single video-on-demand url will not work for all users.
 
