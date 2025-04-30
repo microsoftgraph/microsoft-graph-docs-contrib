@@ -88,8 +88,9 @@ The response returns details about how to [monitor the progress](/graph/long-run
 
 ### Example 1: Copy a file to a folder
 
-The following example copies a file identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
-The new copy of the file is named `contoso plan (copy).txt`.
+This example shows how to copy a file identified by `{item-id}` into a destination folder identified by its `driveId` and `id` values.
+The copied file is given a new name `contoso plan (copy).txt`
+
 
 #### Request
 
@@ -152,11 +153,13 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
+Use the URL in the `Location` header to monitor the progress of the asynchronous copy operation.
 
 ### Example 2: Copy the child items in a folder
 
-The following example copies the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
-The `childrenOnly` parameter is set to true.
+The example copies only the contents of a folder, not the folder itself, to a different destination. The source folder is identified by `{item-id}` and the destination is identified by its `driveId` and `id` values.
+
+The request sets the `childrenOnly` parameter to true, which is valid only when the source item is a folder.
 
 #### Request 
 # [HTTP](#tab/http)
@@ -236,9 +239,14 @@ To receive a status report similar to the one in the following example, GET the 
 }
 ```
 
-### Example 3: Failure to copy a file item to a folder with a preexisting item with the same name
+### Example 3: Copy fails due to a name conflict in the destination folder
 
-The following example attempts to copy a file item identified by `{item-id}` into a folder identified by the `driveId` and `id` property values. In this example, the destination already has a file with the same name. However, because the request doesn't specify a `@microsoft.graph.conflictBehavior` query parameter value of either `replace` or `rename`, the operation is accepted but fails during processing.
+This example shows a failed attempt to copy a file to a destination folder that already contains a file with the same name. The request does not specify a `@microsoft.graph.conflictBehavior` query parameter to resolve the conflict.
+
+Because no conflict behavior is provided, the API accepts the request but fails during processing. The operation returns a `nameAlreadyExists` error.
+
+To avoid this error, use the [@microsoft.graph.conflictBehavior](#optional-query-parameters), parameter with a value of replace, rename, or fail.
+
 
 #### Request
 # [HTTP](#tab/http)
@@ -313,8 +321,6 @@ The following example shows an example status report obtained by visiting the UR
   }
 }
 ```
-
-To resolve this error, use the optional query parameter [@microsoft.graph.conflictBehavior](#optional-query-parameters), as shown in Example 4.
 
 ### Example 4: Copy a file to a folder containing a file with the same name
 
