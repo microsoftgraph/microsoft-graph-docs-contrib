@@ -3043,9 +3043,9 @@
                 "onlineMeeting",
                 "externalMeetingRegistration",
                 "meetingRegistration",
+                "callAiInsight",
                 "callRecording",
-                "callTranscript",
-                "callAiInsight"
+                "callTranscript"
               ],
               "childNodes": [
                 {
