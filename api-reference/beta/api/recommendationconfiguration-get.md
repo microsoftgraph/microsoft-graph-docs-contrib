@@ -84,7 +84,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.recommendationConfiguration",
-    "isNotificationEnabled": "Boolean"
+    "isNotificationEnabled": true
   }
 }
 ```
