@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Determines if a specified Microsoft Teams interaction is allowed between the caller and a specified set of users.
 
-> **Note**: All requests to this API are logged in the M365 audit logs of the tenants where the targeted users (`users` parameter) exist. Refer to [this documentation](https://learn.microsoft.com/en-us/purview/audit-log-activities#microsoft-teams-activities) to learn more about what is logged.
+> **Note**: All requests to this API are logged in the M365 audit logs of the tenants where the targeted users (`users` parameter) exist. Refer to [this documentation](https://learn.microsoft.com/en-us/purview/audit-log-activities#microsoft-teams-activities) and search for `CreateThreadProbe` to learn more about what is logged.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
