@@ -498,12 +498,12 @@ items:
         href: ../../api/onlinemeeting-delete.md
       - name: Create or get
         href: ../../api/onlinemeeting-createorget.md
-      - name: List transcripts
-        href: ../../api/onlinemeeting-list-transcripts.md
-      - name: List recordings
-        href: ../../api/onlinemeeting-list-recordings.md
       - name: List AI insights
         href: ../../api/onlinemeeting-list-aiinsights.md
+      - name: List recordings
+        href: ../../api/onlinemeeting-list-recordings.md
+      - name: List transcripts
+        href: ../../api/onlinemeeting-list-transcripts.md
     - name: External meeting registration (deprecated)
       items:
       - name: External meeting registration (deprecated)
@@ -526,6 +526,14 @@ items:
         href: ../../api/meetingregistration-update.md
       - name: Delete
         href: ../../api/meetingregistration-delete.md
+    - name: Call AI insight
+      items:
+      - name: Call AI insight
+        href: ../../resources/callaiinsight.md
+      - name: List
+        href: ../../api/onlinemeeting-list-aiinsights.md
+      - name: Get
+        href: ../../api/callaiinsight-get.md
     - name: Call recording
       items:
       - name: Call recording
@@ -550,14 +558,6 @@ items:
         href: ../../api/calltranscript-delta.md
       - name: List transcripts by organizer
         href: ../../api/onlinemeeting-getalltranscripts.md
-    - name: Call AI insight
-      items:
-      - name: Call AI insight
-        href: ../../resources/callaiinsight.md
-      - name: List
-        href: ../../api/onlinemeeting-list-aiinsights.md
-      - name: Get
-        href: ../../api/callaiinsight-get.md
     - name: Virtual appointment
       items:
       - name: Get virtual appointment join link
