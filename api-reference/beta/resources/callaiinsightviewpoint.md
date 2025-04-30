@@ -6,6 +6,7 @@ ms.date: 04/29/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+toc.title: "Call AI insight viewpoint "
 ---
 
 # callAiInsightViewPoint resource type
@@ -14,8 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents user-specific properties of a [call AI insight](../resources/callaiInsight.md). These properties might differ based on who calls the API.
-
+Represents user-specific properties of a [call AI insight](../resources/callaiinsight.md). These properties might differ based on who calls the API.
 
 ## Properties
 |Property|Type|Description|
@@ -35,11 +35,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.callAiInsightViewPoint",
-  "mentionEvents": [
-    {
-      "@odata.type": "microsoft.graph.mentionEvent"
-    }
-  ]
+  "mentionEvents": [{"@odata.type": "microsoft.graph.mentionEvent"}]
 }
 ```
 
