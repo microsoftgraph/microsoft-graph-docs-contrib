@@ -8,6 +8,6 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|OnlineMeetingAiInsight.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+|Application|OnlineMeetingAiInsight.Read.All|OnlineMeetingAiInsight.Read.Chat|
 
 
