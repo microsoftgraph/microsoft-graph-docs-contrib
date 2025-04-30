@@ -1,6 +1,6 @@
 ---
 title: "List assignedRoles"
-description: "List all the roles assigned to a user in Viva Engage."
+description: "Get a list of all the roles assigned to a user in Viva Engage."
 author: "richafnu"
 ms.date: 03/27/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the roles assigned to a user in Viva Engage.
+Get a list of all the roles assigned to a user in Viva Engage.
 
 ## Permissions
 
@@ -40,7 +40,7 @@ GET /users/{userId}/employeeExperience/assignedRoles
 GET /me/employeeExperience/assignedRoles
 
 ```
->**Note:** In the API above, the userId represents the office user id for a user.
+>**Note:** The userId represents the office user ID.
 
 ## Optional query parameters
 

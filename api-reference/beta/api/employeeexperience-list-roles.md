@@ -1,6 +1,6 @@
 ---
 title: "List roles"
-description: "List all roles that can be assigned in Viva Engage."
+description: "Get a list of all the roles that can be assigned in Viva Engage."
 author: "richafnu"
 ms.date: 03/27/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the roles that can be assigned in Viva Engage.
+Get a list of all the roles that can be assigned in Viva Engage.
 
 ## Permissions
 
