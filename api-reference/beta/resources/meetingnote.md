@@ -1,6 +1,6 @@
 ---
 title: "meetingNote resource type"
-description: "Represents a meeting note associated with a set of meeting AI Insights."
+description: "Represents a meeting note associated with a set of meeting AI insights."
 author: "Anjali-Patle"
 ms.date: 04/29/2025
 ms.localizationpriority: medium
@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a meeting note associated with a [call AI insight](callaiinsight.md).
-
 
 ## Properties
 |Property|Type|Description|
@@ -37,13 +36,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.meetingNote",
-  "title": "String",
+  "subpoints": [{"@odata.type": "microsoft.graph.meetingNoteSubpoint"}]
   "text": "String",
-  "subpoints": [
-    {
-      "@odata.type": "microsoft.graph.meetingNoteSubpoint"
-    }
-  ]
+  "title": "String",
 }
 ```
 
