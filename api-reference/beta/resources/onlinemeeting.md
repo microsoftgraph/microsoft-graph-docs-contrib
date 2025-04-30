@@ -138,10 +138,10 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
+| aiInsights | [callAiInsight](callaiinsight.md) collection | The AI insights generated for an online meeting. Read-only. |
 | attendanceReports | [meetingAttendanceReport](meetingattendancereport.md) collection | The attendance reports of an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | recordings | [callRecording](callrecording.md) collection | The recordings of an online meeting. Read-only. |
 | transcripts | [callTranscript](calltranscript.md) collection | The transcripts of an online meeting. Read-only. |
-| aiInsights | [callAiInsight](callaiinsight.md) collection | The AI insights generated for an online meeting. Read-only. |
 | meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingattendancereport.md) | The attendance report of the latest online meeting session. Read-only. |
 | registration (deprecated) | [meetingRegistration](meetingregistration.md) | The registration that is enabled for an online meeting. One online meeting can only have one registration enabled.|
 
