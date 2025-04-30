@@ -38,10 +38,6 @@ GET /me/authentication/externalAuthenticationMethods/{externalAuthenticationMeth
 GET /users/{usersId}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -90,7 +86,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.externalAuthenticationMethod",
     "id": "78381c69-811f-51f6-66ec-c2c2aa0e2b46",
     "createdDateTime": "2025-04-01T00:00:00Z",
-    "configurationId": "String",
+    "configurationId": "26310fee-860b-4eab-8749-ab730dcf335e",
     "displayName": "Adatum"
   }
 }

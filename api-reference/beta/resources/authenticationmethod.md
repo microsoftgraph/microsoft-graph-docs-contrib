@@ -22,6 +22,7 @@ Inherits from [entity](../resources/entity.md).
 This resource type is an abstract type that's inherited by the following derived types:
 
 + [emailAuthenticationMethod](emailauthenticationmethod.md)
++ [externalAuthenticationMethod](externalauthenticationmethod.md)
 + [fido2AuthenticationMethod](fido2authenticationmethod.md)
 + [hardwareOathAuthenticationMethod](hardwareOathAuthenticationMethod.md)
 + [microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)

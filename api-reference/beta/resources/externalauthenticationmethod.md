@@ -1,6 +1,6 @@
 ---
 title: "externalAuthenticationMethod resource type"
-description: "**TODO: Add Description**"
+description: "A representation of an external authentication method registered to a user. External authentication methods are used to sign in to Microsoft Entra ID using an external identity provider."
 author: "rannderson"
 ms.date: 04/01/2025
 ms.localizationpriority: medium
@@ -14,11 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A representation of an external authentication method registered to a user. External authentication methods are used to sign in to Microsoft Entra ID using an external identity provider.
 
-
-Inherits from [authenticationMethod](../resources/authenticationmethod.md).
-
+The **externalAuthenticationMethod** resource is a derived type of the [authenticationMethod](../resources/authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
@@ -33,10 +31,10 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|configurationId|String|A unique identifier used to manage and integrate external auth methods within Microsoft Entra ID|
+|configurationId|String|A unique identifier used to manage the external auth method within Microsoft Entra ID.|
 |createdDateTime|DateTimeOffset|Represents the date and time when an entity was created. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 |displayName|String|Custom name given to the registered external authentication method.|
-|id|String|The unique identifier for an entity. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|The unique identifier for an the authentication method for the user. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 
 ## Relationships
 None.

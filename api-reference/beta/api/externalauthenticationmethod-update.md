@@ -75,7 +75,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.externalAuthenticationMethod",
-  "configurationId": "String",
+  "configurationId": "26310fee-860b-4eab-8749-ab730dcf335e",
   "displayName": "Adatum"
 }
 ```
@@ -87,7 +87,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
 }
 -->
 ``` http
