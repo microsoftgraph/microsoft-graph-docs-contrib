@@ -18,6 +18,9 @@ Represents a restore session for a [protection unit](protectionunitbase.md) that
 
 Restoring to both a new location and the same URL in a single restore session is not supported.
 
+> [!NOTE]
+> Restore Session which are older than 1 year and in terminal state will be removed.
+
 ## Methods
 
 |Method|Return type|Description|
