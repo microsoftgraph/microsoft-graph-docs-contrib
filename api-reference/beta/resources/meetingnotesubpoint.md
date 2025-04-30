@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 
 Represents a meeting note subpoint associated with a [meeting note](meetingnote.md).
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -36,8 +35,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.meetingNoteSubpoint",
-  "title": "String",
-  "text": "String"
+  "text": "String",
+  "title": "String"
 }
 ```
 
