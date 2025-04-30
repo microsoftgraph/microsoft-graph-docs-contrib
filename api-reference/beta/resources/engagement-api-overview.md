@@ -32,7 +32,7 @@ The following table lists common use cases for the Viva Engage API.
 | Get a list of  Viva Engage roles assigned to the signed in user | [GET /me/employeeExperience/assignedRoles](../api/employeeexperienceuser-list-assignedroles.md) | If successful, this method returns a `200 OK` response code and a list of roles object in the response body. |
 | Get a list of Viva Engage roles assigned to a user  | [GET /users/{userId}/employeeExperience/assignedRoles](../api/employeeexperienceuser-list-assignedroles.md) | If successful, this method returns a `200 OK` response code and a list of roles object in the response body. |
 | Assign Viva Engage role to a user | [POST /employeeExperience/roles/{engagementRoleId}/members](../api/engagementrole-post-members.md) | If successful, this method returns a `201 Created response` code.|
-| Revoke Viva Engage role from a user | [DELETE /employeeExperience/roles/{roleId}/members/{userId}](../api/engagementrole-delete-members.md) | If successful, this method returns a `204 No content response` code.|
+| Delete a Viva Engage role from a user | [DELETE /employeeExperience/roles/{roleId}/members/{userId}](../api/engagementrole-delete-members.md) | If successful, this method returns a `204 No content response` code.|
 | Create a community | [POST /employeeExperience/communities](../api/employeeexperience-post-communities.md) | If successful, this method returns a `202 Accepted` response code that contains a link to an [engagementAsyncOperation](../resources/engagementasyncoperation.md) object. |
 | Poll for community creation status | [GET /employeeExperience/engagementAsyncOperations/{engagementAsyncOperationId}](../api/engagementasyncoperation-get.md) | If successful, this method returns a `200 OK` response code and an [engagementAsyncOperation](../resources/engagementasyncoperation.md) object in the response body. Periodically check the status of the operation by making a GET request to this location; wait >30 seconds between checks. When the request completes successfully, the **status** indicates `succeeded` and the **resourceLocation** points to the created or modified resource. |
 | Get a community after creation | [GET /employeeExperience/communities/{communityId}](../api/community-get.md) | If successful, this method returns a `200 OK` response code and a [community](../resources/community.md) object in the response body. The community object references the associated [Microsoft 365 group](../resources/group.md) ID that you can use for community membership and ownership management. |
@@ -44,13 +44,13 @@ The following table lists common use cases for the Viva Engage API.
 | Add a community admin | [POST /groups/{groupId}/owners/$ref](../api/group-post-owners.md) | When a user is added as a group owner, they automatically become an admin of the associated community. |
 | Remove a community admin | [DELETE /groups/{groupId}/owners/{userId}/$ref](../api/group-delete-owners.md) | When a group owner is removed, they stop being admin for the associated community. You can't remove the last owner ([user](../resources/user.md) object) of a group. | 
 
-## Role Management
+## Role management
 
 Viva Engage supports role-based access by enabling the assignment of predefined administrative roles (such as Network Admin and Verified Admin) and corporate communication roles within the platform.
 
-These assignable roles are predefined and managed by Viva Engage. Custom roles can't be created or deleted. For a complete list of supported roles and their associated assignment, refer to the [Manage administrator roles in Viva Engage](https://learn.microsoft.com/viva/engage/eac-key-admin-roles-permissions).
+These assignable roles are predefined and managed by Viva Engage. Custom roles can't be created or deleted. For a complete list of supported roles and their associated assignment. For more information, see [Manage administrator roles in Viva Engage](https://learn.microsoft.com/viva/engage/eac-key-admin-roles-permissions).
 
-While Microsoft Entra roles are managed through the Microsoft Entra admin center, Viva Engage-specific roles can be assigned and managed using Viva Engage platform and Microsoft Graph APIs. For details on managing Microsoft Entra roles, see the [Microsoft 365 admin center guide](https://learn.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+While Microsoft Entra roles are managed through the Microsoft Entra admin center, Viva Engage-specific roles can be assigned and managed using the Viva Engage platform and Microsoft Graph APIs. For more information, see [Microsoft 365 admin center guide](https://learn.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
 ## Communities and groups
 
