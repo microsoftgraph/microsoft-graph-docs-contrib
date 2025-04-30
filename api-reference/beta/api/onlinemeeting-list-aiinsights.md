@@ -8,7 +8,7 @@ ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
-# List AI insights
+# List aiInsights
 
 Namespace: microsoft.graph
 
