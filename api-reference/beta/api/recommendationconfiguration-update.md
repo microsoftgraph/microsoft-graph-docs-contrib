@@ -73,7 +73,7 @@ PATCH https://graph.microsoft.com/beta/directory/recommendationConfiguration
 Content-Type: application/json
 
 {
-   "isNotificationEnabled": "Boolean"
+   "isNotificationEnabled": true
 }
 ```
 
