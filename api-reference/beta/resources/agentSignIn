@@ -1,1 +1,55 @@
+---
+title: "agentSignIn resource type"
+description: "Provides authentication details for agents, inclusive of user, user+app, and app-only agentic token acquisition requests. 
+ms.localizationpriority: medium
+author: "egreenberg14"
+ms.subservice: "entra-monitoring-health"
+doc_type: "resourcePageType"
+ms.date: 04/29/2025
+---
 
+# agentSignIn resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Provides authentication details for agents, inclusive of user, user+app, and app-only agentic token acquisition requests.  
+
+## Properties
+
+| Property                       | Type           | Description                                                                                                                                                                                                              |
+|:-------------------------------|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| agentType                      | agentType      | The type of agent involved in the authentication method used to perform this step of authentication. Possible values: `agentAppBuilder`, `agenticApp`, `agenticAppInstance`, `unknownFutureValue`|
+| parentAppId                    | String         | The applicationID of the parent agent from which the instance was derived. This property is only populated when agentType = instance.   |
+                                                                                                                       |
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.authenticationDetail",
+  "baseType": null
+}-->
+
+```json
+ {
+	"agentType": "agentType",
+	"parentAppId": "String"
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "agentSignIn resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
