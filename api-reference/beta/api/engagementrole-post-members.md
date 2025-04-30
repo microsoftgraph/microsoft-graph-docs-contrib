@@ -94,7 +94,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.engagementrolemember",
+  "@odata.type": "#microsoft.graph.engagementRoleMember",
   "id": "a40473a5-0fb4-a250-e029-f6fe33d07733",
   "userId": "String",
   "createdDateTime": "String (timestamp)"
