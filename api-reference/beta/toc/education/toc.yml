@@ -320,6 +320,12 @@ items:
     href: ../../resources/reflectcheckinresponse.md
   - name: Get
     href: ../../api/reflectcheckinresponse-get.md
+- name: Speaker assignment submission
+  items:
+  - name: Speaker assignment submission
+    href: ../../resources/speakerassignmentsubmission.md
+  - name: Get
+    href: ../../api/speakerassignmentsubmissions-get.md    
 - name: Related contact
   items:
   - name: Related contact
