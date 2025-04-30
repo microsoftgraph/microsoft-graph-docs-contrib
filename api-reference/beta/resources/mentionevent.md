@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 
 Represents a mention event associated with a [callAiInsightViewPoint](callaiinsightviewpoint.md).
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -38,9 +37,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.mentionEvent",
   "eventDateTime": "String (timestamp)",
-  "speaker": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "speaker": {"@odata.type": "microsoft.graph.identitySet"},
   "transcriptUtterance": "String"
 }
 ```
