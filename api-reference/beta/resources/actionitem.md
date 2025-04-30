@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 
 Represents an action item associated with a [call AI insight](callaiinsight.md).
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -37,9 +36,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.actionItem",
-  "title": "String",
-  "text": "String",
   "ownerDisplayName": "String"
+  "text": "String",
+  "title": "String",
 }
 ```
 
