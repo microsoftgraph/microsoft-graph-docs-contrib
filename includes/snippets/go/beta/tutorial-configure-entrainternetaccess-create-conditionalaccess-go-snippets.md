@@ -33,15 +33,12 @@ requestBody.SetConditions(conditions)
 displayName := "UserA Access to AI and Bing"
 requestBody.SetDisplayName(&displayName) 
 sessionControls := graphmodels.NewConditionalAccessSessionControls()
-additionalData := map[string]interface{}{
-globalSecureAccessFilteringProfile := graph.New()
+globalSecureAccessFilteringProfile := graphmodels.NewGlobalSecureAccessFilteringProfileSessionControl()
 profileId := "dddddddd-9999-0000-1111-eeeeeeeeeeee"
 globalSecureAccessFilteringProfile.SetProfileId(&profileId) 
-	isEnabled := true
+isEnabled := true
 globalSecureAccessFilteringProfile.SetIsEnabled(&isEnabled) 
-	sessionControls.SetGlobalSecureAccessFilteringProfile(globalSecureAccessFilteringProfile)
-}
-sessionControls.SetAdditionalData(additionalData)
+sessionControls.SetGlobalSecureAccessFilteringProfile(globalSecureAccessFilteringProfile)
 requestBody.SetSessionControls(sessionControls)
 state := graphmodels.ENABLED_CONDITIONALACCESSPOLICYSTATE 
 requestBody.SetState(&state) 

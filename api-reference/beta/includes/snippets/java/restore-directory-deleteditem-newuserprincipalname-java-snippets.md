@@ -9,7 +9,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.directory.deleteditems.item.restore.RestorePostRequestBody restorePostRequestBody = new com.microsoft.graph.beta.directory.deleteditems.item.restore.RestorePostRequestBody();
-restorePostRequestBody.setNewUserPrincipalName("johndoe@contoso.com");
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("newUserPrincipalName", "johndoe@contoso.com");
+restorePostRequestBody.setAdditionalData(additionalData);
 var result = graphClient.directory().deletedItems().byDirectoryObjectId("{directoryObject-id}").restore().post(restorePostRequestBody);
 
 
