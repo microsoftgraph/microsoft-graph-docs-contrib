@@ -74,7 +74,7 @@ POST https://graph.microsoft.com/beta/employeeExperience/roles/{engagementRoleId
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.engagementRoleMember",
+  "@odata.type": "#microsoft.graph.engagementrolemember",
   "userId": "String"
 }
 ```
@@ -86,7 +86,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.engagementRoleMember"
+  "@odata.type": "microsoft.graph.engagementrolemember"
 }
 -->
 ``` http
@@ -94,7 +94,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.engagementRoleMember",
+  "@odata.type": "#microsoft.graph.engagementrolemember",
   "id": "a40473a5-0fb4-a250-e029-f6fe33d07733",
   "userId": "String",
   "createdDateTime": "String (timestamp)"

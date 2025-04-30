@@ -40,14 +40,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.engagementRoleMember",
+  "@odata.type": "microsoft.graph.engagementrolemember",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.engagementRoleMember",
+  "@odata.type": "#microsoft.graph.engagementrolemember",
   "id": "String (identifier)",
   "userId": "String",
   "createdDateTime": "String (timestamp)"

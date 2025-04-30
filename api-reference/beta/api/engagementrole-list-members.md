@@ -78,7 +78,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.engagementRoleMember"
+  "@odata.type": "microsoft.graph.engagementrolemember"
 }
 -->
 ``` http
@@ -88,7 +88,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.engagementRoleMember",
+      "@odata.type": "#microsoft.graph.engagementrolemember",
       "id": "a40473a5-0fb4-a250-e029-f6fe33d07733",
       "userId": "String",
       "createdDateTime": "String (timestamp)"
