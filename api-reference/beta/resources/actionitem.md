@@ -36,9 +36,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.actionItem",
-  "ownerDisplayName": "String"
+  "ownerDisplayName": "String",
   "text": "String",
-  "title": "String",
+  "title": "String"
 }
 ```
 
