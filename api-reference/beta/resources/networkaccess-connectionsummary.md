@@ -4,7 +4,7 @@ description: "Represents a summary of connections grouped by traffic type."
 author: "miritsadon"
 ms.date: 04/20/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-global-secure-access"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a summary of connections grouped by traffic type.
+Represents a resource in the Microsoft Graph API that is part of the Global Secure Access service.
+This resource provides a summary of connections grouped by traffic type, for both Internet and Private access traffic.
 
 ## Properties
 |Property|Type|Description|

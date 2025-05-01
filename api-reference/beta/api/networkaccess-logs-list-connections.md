@@ -41,13 +41,14 @@ GET /networkAccess/logs/connections
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response:
-- `$filter` to filter results by connection properties. Example: `status eq 'active'`
-- `$orderby` to sort results by properties. Example: `createdDateTime desc`
-- `$top` and `$skip` for pagination
-- `$select` to specify which properties to include
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-For general information about query parameters, see [OData query parameters](/graph/query-parameters).
+|Name|Syntax|Notes|
+|:---|:---|:---|
+|Server-side pagination|@odata.nextLink=https://graph.microsoft.com/beta/networkAccess/logs/connections?$skiptoken="generatedtoken"|The page size defaults to and is limited to 1000.|
+|Filter|/logs/connections?$filter=status eq 'active'|All properties are filterable. Filter by status, trafficType, deviceCategory, and other connection properties.|
+|Sort|/logs/connections?$orderby=createdDateTime desc|You can order by all properties. Sort by createdDateTime, transactionCount, and other properties.|
+|Top|/logs/connections?$top=50|Limit the number of results. Maximum value is 1000.|
 
 ## Request headers
 

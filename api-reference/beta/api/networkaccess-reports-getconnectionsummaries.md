@@ -44,8 +44,8 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Start of the period for aggregating connections.|
-|endDateTime|DateTimeOffset|End of the period for aggregating connections.|
+|startDateTime|DateTimeOffset|Start of the period for aggregating connections. Required.|
+|endDateTime|DateTimeOffset|End of the period for aggregating connections. Required.|
 
 ## Request headers
 

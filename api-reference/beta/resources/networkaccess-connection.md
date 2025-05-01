@@ -1,10 +1,10 @@
 ---
 title: "connection resource type"
 description: "Represents a connection which consists of multiple transactions sharing single Flow Correlation Id."
-author: "moti-ba"
+author: "miritsadon"
 ms.date: 04/20/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-global-secure-access"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |destinationFqdn|String|The destination FQDN of the connection.|
 |destinationIp|String|The destination IP of the connection.|
 |destinationPort|Int32|The destination port of the connection.|
-|deviceCategory|[microsoft.graph.networkaccess.deviceCategory](enums-networkaccess.md#devicecategory-values)|The category of the device. .The possible values are: `client`, `branch`, `unknownFutureValue`, `remoteNetwork`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `remoteNetwork`.|
+|deviceCategory|[microsoft.graph.networkaccess.deviceCategory]|The category of the device. The possible values are: `client`, `branch`, `unknownFutureValue`, `remoteNetwork`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `remoteNetwork`.|
 |deviceId|String|The DeviceID.|
 |deviceOperatingSystem|String|The device operating system type.|
 |deviceOperatingSystemVersion|String|The device operating system version.|
@@ -47,7 +47,7 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |sourcePort|Int32|The source port of the connection.|
 |status|[microsoft.graph.networkaccess.connectionStatus](enums-networkaccess.md#connectionstatus-values)|Status of the connection. The possible values are: `open`, `active`, `closed`, `unknownFutureValue`.|
 |tenantId|String|The ID of the tenant where the connection was iniatiated.|
-|trafficType|[microsoft.graph.networkaccess.trafficType](enums-networkaccess.md#traffictype-values)|The type of traffic. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`, `microsoft`.|
+|trafficType|[microsoft.graph.networkaccess.trafficType]| The type of traffic. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`, `microsoft`.  Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoft`.|
 |transactionBlockCount|Int32|The number of blocked transactions belonging to the connection.|
 |transactionCount|Int32|The number of transactions belonging to the connection.|
 |transportProtocol|[microsoft.graph.networkaccess.networkingProtocol](enums-networkaccess.md#networkingprotocol-values)|The transport protocol of the connection.|
