@@ -41,7 +41,7 @@ GET /networkAccess/logs/connections/{connectionId}
 
 ## Optional query parameters
 
-This method supports the `$select`, `$expand`, `$filter`, `$sort`, and `$top` OData query parameters [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` OData query parameters [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
