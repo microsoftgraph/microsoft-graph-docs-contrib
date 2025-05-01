@@ -22,7 +22,7 @@ items:
       href: ../../resources/teamsadministration-effectivepolicyassignment.md
     - name: Policy assignment
       href: ../../resources/teamsadministration-policyassignment.md
-- name: AI interactions (preview)
+- name: AI interactions
   items:
   - name: AI interaction history
     items:

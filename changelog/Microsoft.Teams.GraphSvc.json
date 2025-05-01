@@ -2677,7 +2677,7 @@
       "CreatedDateTime": "2025-04-14T08:54:28.4245939Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
-    }, 
+    },
     {
       "ChangeList": [
         {
@@ -2719,6 +2719,96 @@
       "CreatedDateTime": "2022-05-24T18:54:16.6879906Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "aiInteractionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **aiInteractionType** enumeration type.",
+          "Target": "aiInteractionType"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionAttachment](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionAttachment?view=graph-rest-v1.0) resource.",
+          "Target": "aiInteractionAttachment"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionContext",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionContext](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionContext?view=graph-rest-v1.0) resource.",
+          "Target": "aiInteractionContext"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionLink](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionLink?view=graph-rest-v1.0) resource.",
+          "Target": "aiInteractionLink"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionMention",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionMention](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionMention?view=graph-rest-v1.0) resource.",
+          "Target": "aiInteractionMention"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionMentionedIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionMentionedIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionMentionedIdentitySet?view=graph-rest-v1.0) resource.",
+          "Target": "aiInteractionMentionedIdentitySet"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteraction",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiInteraction?view=graph-rest-v1.0) resource.",
+          "Target": "aiInteraction"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-v1.0) resource.",
+          "Target": "aiInteractionHistory"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiUser](https://learn.microsoft.com/en-us/graph/api/resources/aiUser?view=graph-rest-v1.0) resource.",
+          "Target": "aiUser"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllEnterpriseInteractions",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-v1.0) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-v1.0) resource.",
+          "Target": "aiInteractionHistory"
+        }
+      ],
+      "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-04-25T07:19:22.6793915Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "AI interactions"
     }
   ]
 }

@@ -1762,6 +1762,21 @@
       ],
       "childNodes": [
         {
+          "name": "AI interactions",
+          "resources": [
+            "aiInteractionHistory"
+          ],
+          "complexTypes": [
+            "aiInteraction",
+            "aiInteractionAttachment",
+            "aiInteractionContext",
+            "aiInteractionLink",
+            "aiInteractionMention",
+            "aiInteractionMentionedIdentitySet",
+            "aiUser"
+          ]
+        },
+        {
           "name": "Apps",
           "resources": [
             "teamsApp",
