@@ -34,24 +34,24 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |deviceId|String|The DeviceID.|
 |deviceOperatingSystem|String|The device operating system type.|
 |deviceOperatingSystemVersion|String|The device operating system version.|
-|endDateTime|DateTimeOffset|The time the connection was ended.|
+|endDateTime|DateTimeOffset|The time the connection was terminated.|
 |id|String|The unique identifier for the connection. Inherited from [microsoft.graph.entity](entity.md).|
 |initiatingProcessName|String|The process initiating the traffic connection.|
-|lastUpdateDateTime|DateTimeOffset|The last update time that the connection was updated.|
+|lastUpdateDateTime|DateTimeOffset|When the connection was last updated.|
 |networkProtocol|[microsoft.graph.networkaccess.networkingProtocol](enums-networkaccess.md#networkingprotocol-values)|The network protocol of the connection.|
 |popProcessingRegion|String|The Point-of-Presence processing region of the traffic.|
-|privateAccessDetails|[microsoft.graph.networkaccess.privateAccessDetails](networkaccess-privateaccessdetails.md)|Private access details.|
+|privateAccessDetails|[microsoft.graph.networkaccess.privateAccessDetails](../resources/networkaccess-privateaccessdetails.md)|Private access details.|
 |receivedBytes|Int64|Accumulative bytes received.|
 |sentBytes|Int64|Accumulative bytes sent.|
 |sourceIp|String|The source IP of the connection.|
 |sourcePort|Int32|The source port of the connection.|
 |status|[microsoft.graph.networkaccess.connectionStatus](enums-networkaccess.md#connectionstatus-values)|Status of the connection. The possible values are: `open`, `active`, `closed`, `unknownFutureValue`.|
-|tenantId|String|The tenant ID of the connection.|
+|tenantId|String|The ID of the tenant where the connection was iniatiated.|
 |trafficType|[microsoft.graph.networkaccess.trafficType](enums-networkaccess.md#traffictype-values)|The type of traffic. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`, `microsoft`.|
-|transactionBlockCount|Int32|The count of blocked transactions belong to connection.|
-|transactionCount|Int32|The count of transactions belong to connection.|
+|transactionBlockCount|Int32|The number of blocked transactions belonging to the connection.|
+|transactionCount|Int32|The number of transactions belonging to the connection.|
 |transportProtocol|[microsoft.graph.networkaccess.networkingProtocol](enums-networkaccess.md#networkingprotocol-values)|The transport protocol of the connection.|
-|userId|String|The User ID.|
+|userId|String|The user ID.|
 |userPrincipalName|String|The principal name of the user.|
 
 ## Relationships
