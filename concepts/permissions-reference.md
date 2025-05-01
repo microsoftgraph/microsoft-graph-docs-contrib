@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 04/14/2025
+ms.date: 04/28/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -8188,10 +8188,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | - | f1ccd5a7-6383-466a-8db8-1a656f7d06fa |
-| DisplayText | - | Read workforce integrations |
-| Description | - | Allows the app to read workforce integrations, to synchronize data from Microsoft Teams Shifts, on behalf of the signed-in user. |
-| AdminConsentRequired | - | Yes |
+| Identifier | f10b94b9-37d1-4c88-8b7e-bf75a1152d39 | f1ccd5a7-6383-466a-8db8-1a656f7d06fa |
+| DisplayText | Read workforce integrations | Read workforce integrations |
+| Description | Allows the app to read workforce integrations without a signed-in user. | Allows the app to read workforce integrations, to synchronize data from Microsoft Teams Shifts, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
