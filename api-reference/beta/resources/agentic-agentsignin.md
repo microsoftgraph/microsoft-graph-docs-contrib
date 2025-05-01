@@ -16,17 +16,19 @@ Namespace: microsoft.graph.agentic
 
 For agentic sign ins, provides information about the agent.
 
-
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |agentType|microsoft.graph.agentic.agentType|The type of agent for agentic sign-ins. The possible values are: `notAgentic`, `agenticAppBuilder`, `agenticApp`, `agenticAppInstance`, `unknownFutureValue`.|
 |parentAppId|String|The ID of the parent application for agentic instances.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -40,4 +42,3 @@ The following JSON representation shows the resource type.
   "parentAppId": "String"
 }
 ```
-

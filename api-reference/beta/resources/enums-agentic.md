@@ -12,9 +12,7 @@ doc_type: enumTypes
 
 Namespace: microsoft.graph.agentic
 
-### agentType values 
-
-
+### agentType values
 
 |Member|
 |:---|
