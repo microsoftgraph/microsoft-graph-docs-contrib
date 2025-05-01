@@ -31,6 +31,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
+|agent|[agentSignIn](agentSignIn.md)|Represents details about the agentic. Includes the type of agent as well as parentAppID in some cases|
 |agentType| agentType| The type of agent involved in the authentication method used to perform this step of authentication. Possible values: `agentAppBuilder`, `agenticApp`, `agenticAppInstance`, `unknownFutureValue`|
 |appDisplayName|String|The application name displayed in the Microsoft Entra admin center. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |appId|String|The application identifier in Microsoft Entra ID. <br/><br/> Supports `$filter` (`eq`).|
