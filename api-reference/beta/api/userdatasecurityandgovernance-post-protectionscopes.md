@@ -1,6 +1,6 @@
 ---
-title: "Compute userProtectionScope"
-toc.title: "Compute userProtectionScope (preview)"
+title: "Create userProtectionScopeContainer"
+toc.title: "Create userProtectionScopeContainer (preview)"
 description: "Compute the data protection policies and actions applicable to a specific user based on their context."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,15 +9,13 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Compute user protection scopes
+# Create userProtectionScopeContainer
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
->**Note** At this time, returned results will not reflect filtering values provided in the request.
-
+>**Note:** At this time, returned results don't reflect filtering values provided in the request.
 
 Compute the data protection policies and actions applicable to a specific user based on their context. 
 
@@ -25,12 +23,7 @@ Applications are required to adhere to Microsoft Purview policies established by
 
 The API enables applications to specify activity types and location types in the request, limiting the response to only include relevant protection scopes. Applications are required to provide device metadata and application metadata to help determining the appropriate protection scopes. This information is essential for ascertaining policy decisions relevant to the application's context.
 
-### Execution Mode Behavior
-
-The expected behavior on different values for executionMode in the response of the protectionScopes/compute API is as follows:
-
-- evaluateInline: Wait for /processContent API to produce results before making decision about handling user activity, for example, Allow or Block. No action.
-- evaluateOffline: Don't wait for /processContent API to return its verdict. Take action, if any with no wait for API response
+### Expected Behavior
 
 In some cases, in addition to the executionMode the return value may include policyActions. The table below describes actions the app should take based on the combination executionMode and policyActions.
 

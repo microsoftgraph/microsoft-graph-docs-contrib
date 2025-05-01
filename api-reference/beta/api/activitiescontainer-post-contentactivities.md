@@ -107,13 +107,18 @@ Content-Type: application/json
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.contentActivity"
+}
+-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/$metadata#users('%7B7c2f8f10-cba8-4a8d-9449-db4b76d17390%7D')/dataSecurityAndGovernance/activities/contentActivities/$entity",
+  "@odata.type": "#microsoft.graph.contentActivity",
   "id": "420c8b9c-f4d7-4aa8-a392-344b3af9aa83",
   "userId": "7c2f8f10-cba8-4a8d-9449-db4b76d17390",
   "scopeIdentifier": null,

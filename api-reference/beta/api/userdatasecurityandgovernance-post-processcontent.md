@@ -1,6 +1,6 @@
 ---
-title: "processContent"
-toc.title: "processContent (preview)"
+title: "userDataSecurityAndGovernance: processContent"
+toc.title: "userDataSecurityAndGovernance: processContent (preview)"
 description: "Process content against data protection policies in the context of the current user."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,7 +9,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# processContent
+# userDataSecurityAndGovernance: processContent
 
 Namespace: microsoft.graph
 
