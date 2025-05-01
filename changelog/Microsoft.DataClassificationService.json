@@ -343,7 +343,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "processContent",
           "ChangeType": "Addition",
-          "Description": "Added the [processContent](https://learn.microsoft.com/en-us/graph/api/userDataSecurityAndGovernance-post-processContent?view=graph-rest-beta) method to the [userDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/userDataSecurityAndGovernance?view=graph-rest-beta) resource.",
+          "Description": "Added the [processContent](https://learn.microsoft.com/en-us/graph/api/userDataSecurityAndGovernance-processContent?view=graph-rest-beta) method to the [userDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/userDataSecurityAndGovernance?view=graph-rest-beta) resource.",
           "Target": "userDataSecurityAndGovernance"
         },
         {
@@ -351,7 +351,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "processContentAsync",
           "ChangeType": "Addition",
-          "Description": "Added the [processContentAsync](https://learn.microsoft.com/en-us/graph/api/tenantDataSecurityAndGovernance-post-processContentAsync?view=graph-rest-beta) method to the [tenantDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/tenantDataSecurityAndGovernance?view=graph-rest-beta) resource.",
+          "Description": "Added the [processContentAsync](https://learn.microsoft.com/en-us/graph/api/tenantDataSecurityAndGovernance-processContentAsync?view=graph-rest-beta) method to the [tenantDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/tenantDataSecurityAndGovernance?view=graph-rest-beta) resource.",
           "Target": "tenantDataSecurityAndGovernance"
         },
         {
