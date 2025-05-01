@@ -89,6 +89,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('directory-user-id')/employeeExperience/assignedRoles",
   "value": [
     {
         "id": "ec791927-d09f-4f91-bd76-d3b05e1c1a31",

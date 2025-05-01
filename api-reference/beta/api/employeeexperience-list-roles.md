@@ -76,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "#microsoft.graph.engagementRole"
+  "@odata.type": "Collection(microsoft.graph.engagementRole)"
 }
 -->
 ``` http
@@ -84,6 +84,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/roles",
   "value": [
     {
             "id": "ec759127-089f-4f91-8dfc-03a30b51cb38",
