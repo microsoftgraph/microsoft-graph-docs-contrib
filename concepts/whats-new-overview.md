@@ -19,6 +19,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## April 2025: New and generally available
 
+### Education
+
+[Get submissions modified in the last seven days](/graph/api/educationclass-getrecentlymodifiedsubmissions), which represent students' work for assignments.
+
 ### Identity and access | Identity and sign-in
 
 Use the following supported attribute events:
