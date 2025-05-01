@@ -1,6 +1,6 @@
 ---
 title: "meetingNoteSubpoint resource type"
-description: "Represents a meeting note subpoint associated with a meeting note."
+description: "Represents a meeting note subpoint associated with a meetingNote."
 author: "Anjali-Patle"
 ms.date: 04/29/2025
 ms.localizationpriority: medium

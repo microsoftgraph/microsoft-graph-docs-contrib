@@ -1,6 +1,6 @@
 ---
 title: "meetingNote resource type"
-description: "Represents a meeting note associated with a set of meeting AI insights."
+description: "Represents a meeting note associated with a callAiInsight."
 author: "Anjali-Patle"
 ms.date: 04/29/2025
 ms.localizationpriority: medium

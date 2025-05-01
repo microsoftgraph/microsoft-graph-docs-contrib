@@ -1,6 +1,6 @@
 ---
 title: "actionItem resource type"
-description: "Represents an action item associated with a set of meeting AI insights."
+description: "Represents an action item associated with a callAiInsight."
 author: "Anjali-Patle"
 ms.date: 04/29/2025
 ms.localizationpriority: medium
