@@ -2233,10 +2233,10 @@ items:
         href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
       - name: Delete
         href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
-    - name: QR Code and PIN
+    - name: QR code authentication
       displayName: QRCodePin
       items:
-      - name: QR Code and PIN
+      - name: QR code authentication
         href: ../../resources/qrcodepinauthenticationmethod.md
       - name: Get
         href: ../../api/qrcodepinauthenticationmethod-get.md
@@ -2257,10 +2257,10 @@ items:
         href: ../../api/qrcode-update.md
       - name: Delete
         href: ../../api/qrcode-delete.md
-    - name: QR PIN
+    - name: PIN
       displayName: QRCodePin, QRCode
       items:
-      - name: QR PIN
+      - name: PIN
         href: ../../resources/qrpin.md
       - name: Reset PIN
         href: ../../api/qrpin-update.md
@@ -2355,6 +2355,8 @@ items:
         href: ../../api/qrcodepinauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/qrcodepinauthenticationmethodconfiguration-delete.md
+    - name: QR code authentication
+      items: []
     - name: SMS
       items:
       - name: SMS
