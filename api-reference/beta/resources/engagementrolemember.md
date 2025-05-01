@@ -34,7 +34,6 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The unique identifier of the role member resource. Read-only. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |userId|String|The Microsoft Entra ID of the user who has the role assigned.|
 
-
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
@@ -47,10 +46,9 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.engagementrolemember",
+  "@odata.type": "#microsoft.graph.engagementRoleMember",
   "id": "String (identifier)",
   "userId": "String",
   "createdDateTime": "String (timestamp)"
 }
 ```
-

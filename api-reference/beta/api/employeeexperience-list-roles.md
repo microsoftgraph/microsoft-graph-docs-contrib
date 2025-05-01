@@ -69,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/employeeExperience/roles
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -77,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.engagementRole"
+  "@odata.type": "#microsoft.graph.engagementRole"
 }
 -->
 ``` http
@@ -102,4 +101,3 @@ Content-Type: application/json
 }
  
 ```
-

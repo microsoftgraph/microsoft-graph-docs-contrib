@@ -35,7 +35,7 @@ The following JSON representation shows the resource type.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.engagementrole",
+  "@odata.type": "#microsoft.graph.engagementRole",
   "id": "String (identifier)",
   "displayName": "String"
 }
