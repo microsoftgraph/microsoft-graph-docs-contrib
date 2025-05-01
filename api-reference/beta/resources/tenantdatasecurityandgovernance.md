@@ -23,7 +23,7 @@ Accessed via the `dataSecurityAndGovernance` navigation property on the `securit
 
 | Method                                          | Return Type                                                                                                 | Description                                                                                 |
 | :---------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| [Process content async](../api/tenantdatasecurityandgovernance-post-processcontentasync.md) | [processContentResponses](../resources/processcontentresponses.md) collection | Process a batch of content entries asynchronously against data protection policies.           |
+| [Process content async](../api/tenantdatasecurityandgovernance-processcontentasync.md) | [processContentResponses](../resources/processcontentresponses.md) collection | Process a batch of content entries asynchronously against data protection policies.           |
 | [Compute protection scopes](../api/tenantdatasecurityandgovernance-post-protectionscopes.md) | [policyTenantScope](../resources/policytenantscope.md) collection      | Compute the tenant-wide data protection policies, including user/group scoping.             |
 
 ## Properties

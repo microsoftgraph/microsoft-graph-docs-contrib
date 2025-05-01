@@ -17,7 +17,7 @@ Namespace: microsoft.dataClassificationService.contract
 
 Represents metadata about the application integrated with Purview data security APIs.
 
-For example, [protectionScopes/compute](./../api/userdatasecurityandgovernance-post-protectionscopes.md), [processContent](../api/userdatasecurityandgovernance-post-processcontent.md), and [processContentAsync](./../api/tenantdatasecurityandgovernance-post-processcontentasync.md).
+For example, [protectionScopes/compute](./../api/userdatasecurityandgovernance-post-protectionscopes.md), [processContent](../api/userdatasecurityandgovernance-processcontent.md), and [processContentAsync](./../api/tenantdatasecurityandgovernance-processcontentasync.md).
 
 ## Properties
 

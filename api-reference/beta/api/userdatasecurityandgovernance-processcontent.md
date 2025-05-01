@@ -25,10 +25,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "userdatasecurityandgovernance-post-processcontent-permissions"
+  "name": "userdatasecurityandgovernance-processcontent-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/userdatasecurityandgovernance-post-processcontent-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/userdatasecurityandgovernance-processcontent-permissions.md)]
 
 ## HTTP request
 

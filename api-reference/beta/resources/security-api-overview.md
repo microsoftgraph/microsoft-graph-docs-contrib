@@ -281,8 +281,8 @@ The following are some of the most popular requests for working with the Microso
 | List health issues | [List health issues](../api/security-identitycontainer-list-healthissues.md) | [https://graph.microsoft.com/beta/security/identities/healthIssues](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/healthIssues&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | List sensors | [List sensors](../api/security-identitycontainer-list-sensors.md) | [https://graph.microsoft.com/beta/security/identities/sensors](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/sensors&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | **Data security and governance (preview)**|||
-| Compute Protection Scopes|[Compute Protection Scopes](../api/userdatasecurityandgovernance-post-protectionscopes.md)||
-| Process Content|[Process Content](../api/userdatasecurityandgovernance-post-processcontent.md)||
+| Compute Protection Scopes|[Compute Protection Scopes](../api/userdatasecurityandgovernance-protectionscopes.md)||
+| Process Content|[Process Content](../api/userdatasecurityandgovernance-processcontent.md)||
 | Create content activity|[Create Content Activity](../api/activitiescontainer-post-contentactivities.md)||
 
 
