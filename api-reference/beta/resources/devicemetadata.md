@@ -41,7 +41,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.deviceMetadata",
   "deviceType": "String",
   "operatingSystemSpecifications": {
-    "@odata.type": "microsoft.operatingSystemSpecifications"
+    "@odata.type": "microsoft.graph.operatingSystemSpecifications"
   }
 }
 ```
