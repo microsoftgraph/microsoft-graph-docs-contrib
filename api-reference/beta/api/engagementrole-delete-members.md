@@ -1,6 +1,6 @@
 ---
 title: "Delete engagementRoleMember"
-description: "Delete an engagementRoleMember object."
+description: "Delete a Viva Engage role from a user."
 author: "richafnu"
 ms.date: 03/27/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# Remove Viva Engage role from a user
+# Delete engagementRoleMember
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Revoke a Viva Engage role from a user.
+Delete a Viva Engage role from a user.
 
 ## Permissions
 

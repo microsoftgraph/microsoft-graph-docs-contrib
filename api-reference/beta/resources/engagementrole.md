@@ -1,6 +1,6 @@
 ---
 title: "engagementRole resource type"
-description: "Represents the role management in Viva Engage which involves fetching various admin roles and corp comm role within the Viva Engage platform."
+description: "Represents a predefined Viva Engage role."
 author: "richafnu"
 ms.date: 03/27/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "viva-engage"
 doc_type: resourcePageType
 ---
 
-# Role
+# engagementRole resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The engagement role resource type represents a predefined Viva Engage role. Each role includes a unique identifier and display name and can be assigned to one or more users within the platform.
+Represents a predefined Viva Engage role. Each role includes a unique identifier and display name and can be assigned to one or more users within the platform.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -22,8 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/employeeexperience-list-roles.md)|[engagementRole](../resources/engagementrole.md) collection|Get the static list of the assignable roles in Viva Engage.|
-|[List](../api/employeeexperienceuser-list-assignedroles.md)|[engagementRole](../resources/engagementrole.md)|Get a list of  Viva Engage roles assigned to a user.|
-|[List](../api/employeeexperienceuser-list-assignedroles.md)|[engagementRole](../resources/engagementrole.md)|Get a list of Viva Engage roles assigned to the signed-in user.|
+|[List](../api/employeeexperienceuser-list-assignedroles.md)|[engagementRole](../resources/engagementrole.md)|Get a list of  Viva Engage roles assigned to a user or a signed-in user.|
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +35,7 @@ The following JSON representation shows the resource type.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.engagementRole",
+  "@odata.type": "#microsoft.graph.engagementrole",
   "id": "String (identifier)",
   "displayName": "String"
 }
