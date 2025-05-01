@@ -21,7 +21,9 @@ For example, "https://partner.contoso.com/data", "https://internal.contoso.com/r
 
 ## Properties
 
-Inherits properties from [policyLocation](../resources/policylocation.md). The `value` property holds the URL.
+| Property | Type   | Description                                                    |
+| :------- | :----- | :------------------------------------------------------------- |
+| value    | String | The actual value representing the location (for example, "https://partner.contoso.com/upload"). Inherited from [policyLocation](../resources/policylocation.md). |
 
 ## Relationships
 

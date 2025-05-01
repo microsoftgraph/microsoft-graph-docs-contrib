@@ -9,7 +9,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# policyLocationApplication
+# policyLocationApplication resource type
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,9 @@ For example, "83ef198a-0396-4893-9d4f-d36efbffcaaa". Used as a location within t
 
 ## Properties
 
-Inherits properties from [policyLocation](../resources/policylocation.md). The `value` property holds the URL.
+| Property | Type   | Description                                                    |
+| :------- | :----- | :------------------------------------------------------------- |
+| value    | String | The actual value representing the location (for example, "83ef198a-0396-4893-9d4f-d36efbffcaaa"). Inherited from [policyLocation](../resources/policylocation.md)|
 
 ## Relationships
 

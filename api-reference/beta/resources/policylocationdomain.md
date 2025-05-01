@@ -21,7 +21,9 @@ For example, "contoso.com", "marketing.contoso.com". Used as a location within t
 
 ## Properties
 
-Inherits properties from [policyLocation](../resources/policylocation.md). The `value` property holds the domain name.
+| Property | Type   | Description                                                    |
+| :------- | :----- | :------------------------------------------------------------- |
+| value    | String | The actual value representing the location (for example, "contoso.com") Inherited from [policyLocation](../resources/policylocation.md). |
 
 ## Relationships
 
