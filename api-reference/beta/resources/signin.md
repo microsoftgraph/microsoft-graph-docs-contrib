@@ -31,7 +31,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|agent|[agentSignIn](../resources/agentic-agentsignin.md)|Information about the agent, for agent sign-ins|
+|agent|[agentSignIn](agentSignIn.md)|Represents details about the agentic. Includes the type of agent as well as parentAppID in some cases|
 |appDisplayName|String|The application name displayed in the Microsoft Entra admin center. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |appId|String|The application identifier in Microsoft Entra ID. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that the corresponding sign-in activity triggers. Apps need more Conditional Access-related privileges to read the details of this property. For more information, see [Permissions for viewing applied conditional access (CA) policies in sign-ins](../api/signin-list.md#permissions).|
