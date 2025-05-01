@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/speakerAssignmentSubmissions-get.md)|[speakerAssignmentSubmissions](../resources/speakerAssignmentSubmissions.md)|Read the properties and relationships of a [speakerAssignmentSubmissions](../resources/speakerAssignmentSubmissions.md) object.|
+|[Get](../api/speakerAssignmentSubmissions-get.md)|[speakerAssignmentSubmissions](../resources/speakerAssignmentSubmission.md)|Read the properties and relationships of a [speakerAssignmentSubmissions](../resources/speakerAssignmentSubmission.md) object.|
 
 ## Properties
 |Property|Type|Description|

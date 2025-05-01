@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [speakerAssignmentSubmissions](../resources/speakerAssignmentSubmissions.md) object.
+Read the properties and relationships of a [speakerAssignmentSubmissions](../resources/speakerAssignmentSubmission.md) object.
 
 ## Permissions
 
