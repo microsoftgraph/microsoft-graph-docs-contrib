@@ -870,8 +870,8 @@
           "resources": [
             "community",
             "engagementAsyncOperation",
-            "engagementrole",
-            "engagementrolemember"
+            "engagementRole",
+            "engagementRoleMember"
           ]
         },
         {
