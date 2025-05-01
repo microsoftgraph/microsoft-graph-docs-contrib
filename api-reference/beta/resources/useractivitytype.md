@@ -1,6 +1,6 @@
 ---
-title: "activityType resource type"
-toc.title: "activityType resource type (preview)"
+title: "userActivityType resource type"
+toc.title: "userActivityType resource type (preview)"
 description: "Specifies the type of user activity being processed or evaluated."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,7 +9,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# ActivityType resource type
+# userActivityType resource type
 
 Namespace: microsoft.graph
 
