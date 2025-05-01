@@ -32,7 +32,6 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |agent|[agentSignIn](agentSignIn.md)|Represents details about the agentic. Includes the type of agent as well as parentAppID in some cases|
-|agentType| agentType| The type of agent involved in the authentication method used to perform this step of authentication. Possible values: `agentAppBuilder`, `agenticApp`, `agenticAppInstance`, `unknownFutureValue`|
 |appDisplayName|String|The application name displayed in the Microsoft Entra admin center. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |appId|String|The application identifier in Microsoft Entra ID. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that the corresponding sign-in activity triggers. Apps need more Conditional Access-related privileges to read the details of this property. For more information, see [Permissions for viewing applied conditional access (CA) policies in sign-ins](../api/signin-list.md#permissions).|
@@ -75,7 +74,6 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |networkLocationDetails|[networkLocationDetail](networklocationdetail.md) collection|The network location details including the type of network used and its names.|
 |originalRequestId|String|The request identifier of the first request in the authentication sequence. <br/><br/> Supports `$filter` (`eq`).|
 |originalTransferMethod|originalTransferMethods|Transfer method used to initiate a session throughout all subsequent request. The possible values are: `none`, `deviceCodeFlow`, `authenticationTransfer`, `unknownFutureValue`.|
-|parentAppId|String| The applicationID of the parent agent from which the instance was derived. This property is only populated when agentType = instance.|
 |privateLinkDetails|[privateLinkDetails](../resources/privatelinkdetails.md)|Contains information about the Microsoft Entra Private Link policy that is associated with the sign in event.|
 |processingTimeInMilliseconds|Int|The request processing time in milliseconds in AD STS.|
 |resourceDisplayName|String|The name of the resource that the user signed in to. <br/><br/> Supports `$filter` (`eq`).|
@@ -127,6 +125,9 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.signIn",
+  "agent": {
+    "@odata.type": "microsoft.graph.agentic.agentSignIn"
+  },
   "appDisplayName": "String",
   "appId": "String",
   "authenticationContextClassReferences": [{"@odata.type": "microsoft.graph.authenticationContext"}],
