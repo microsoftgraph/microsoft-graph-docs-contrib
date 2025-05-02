@@ -1,6 +1,6 @@
 ---
 title: "Get callAiInsight"
-description: "Get a callAiInsight object associated with a scheduled onlineMeeting."
+description: "Get a callAiInsight object associated with an onlineMeeting."
 author: "Anjali-Patle"
 ms.date: 04/29/2025
 ms.localizationpriority: medium
