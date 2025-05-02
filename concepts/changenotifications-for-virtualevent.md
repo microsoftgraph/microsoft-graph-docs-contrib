@@ -138,10 +138,10 @@ Content-Type: application/json
 
 ## Subscribe to video-on-demand publication for all sessions in a webinar
 
-To subscribe to notifications for when a session's video-on-demand publication occurs, specify the resource as `solutions/virtualEvents/{eventType}/{eventId}/getVideoOnDemandPublication`.
+To subscribe to notifications for when video-on-demand publication of a session occurs, specify the resource as `solutions/virtualEvents/{eventType}/{eventId}/getVideoOnDemandPublication`.
 
 An application can only have a subscription per virtual event in a tenant for video-on-demand publications.
-A user delegated token allows you to setup one subscription per virtual event in a tenant. The subscription is only available for users who are the organizer or listed as co-organizer in the same tenant as the event host.
+A user delegated token allows you to set up one subscription per virtual event in a tenant. The subscription is only available for users who are the organizer or listed as co-organizer in the same tenant as the event host.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
