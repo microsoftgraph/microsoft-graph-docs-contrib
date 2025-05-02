@@ -17,6 +17,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## May 2025: New in preview only
+
+### Teamwork and communications | Calls and online meetings
+
+Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it is over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight.md).
+
 ## April 2025: New and generally available
 
 ### Identity and access | Identity and sign-in
