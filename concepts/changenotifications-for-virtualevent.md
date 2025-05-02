@@ -195,7 +195,7 @@ The following table indicates the supported notification and change types for th
 | [Session](/graph/api/resources/virtualeventsession)                           | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
 | [Session video-on-demand published](/graph/api/resources/virtualeventsession) | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | updated           |
 | [Registration](/graph/api/resources/virtualeventregistrant)                   | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
-| [Meeting Attendance Report](/graph/api/resources/meetingattendancereport)     | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                            | created           |
+| [Meeting attendance report](/graph/api/resources/meetingattendancereport)     | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                            | created           |
 
 ## Event notification examples
 
