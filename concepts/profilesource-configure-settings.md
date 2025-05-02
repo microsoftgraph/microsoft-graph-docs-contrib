@@ -17,7 +17,7 @@ This administrator guide discusses configuring profile source settings in an org
 > [!IMPORTANT]
 > By default, Microsoft Entra is the source of profile data in an organization.
 
-A profile source is uniquely identified by a human readable property namely, **sourceId**, set by an organization administrator. **sourceId** can be used as an [alternate-key](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/alternate-key.md) when querying for a profile source. Please note that this property isn't updateable. Additionally, a profile source is identifiable via a system-generated the key named **id**.
+A profile source is uniquely identified by a human readable property namely, **sourceId**, set by an organization administrator. **sourceId** can be used as an [alternate-key](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/alternate-key.md) when querying for a profile source. Note that this property isn't updateable. Additionally, a profile source is identifiable via a system-generated the key named **id**.
 
 Admins can customize a profile source display name to multiple locales by configuring the `localizations` property.
 
