@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-   the properties of a [profileSource](../resources/profilesource.md) object.
+The properties of a [profileSource](../resources/profilesource.md) object.
 
 ## Permissions
 

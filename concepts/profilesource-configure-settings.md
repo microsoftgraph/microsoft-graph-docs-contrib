@@ -1,6 +1,6 @@
 ---
 title: "Manage profile source settings for an organization using the Microsoft Graph API"
-description: "Learn how to use Microsoft Graph APIs to add, update and delete settings that manage profile sources in an organization."
+description: "Learn how to use Microsoft Graph APIs to add, update, and delete settings that manage profile sources in an organization."
 author: "ruthnjambuya"
 ms.localizationpriority: high
 ms.subservice: "people"
@@ -12,12 +12,12 @@ ms.date: 30/04/2025
 
 Profile source configuration improves end-user experience by presenting to users the source of their profile data in an understandable way.
 
-This administrator guide discusses configuring profile source settings in a organization using Microsoft Graph APIs. It covers the necessary steps to add, update and delete a profile source in an organization, ensuring that profile data is accurately attributed and surfaced in various Microsoft 365 experiences. 
+This administrator guide discusses configuring profile source settings in an organization using Microsoft Graph APIs. It covers the necessary steps to add, update, and delete a profile source in an organization, ensuring that profile data is accurately attributed and surfaced in various Microsoft 365 experiences. 
 
 > [!IMPORTANT]
 > By default, Microsoft Entra is the source of profile data in an organization.
 
-A profile source is uniquely identified by a human readable property namely, **sourceId**, set by an organization administrator. **sourceId** can be used as an [alternate-key](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/alternate-key.md) when querying for a profile source. Please note that this property is not updateable. Additionally, a profile source is identifieable via a system-generated the key named **id**.
+A profile source is uniquely identified by a human readable property namely, **sourceId**, set by an organization administrator. **sourceId** can be used as an [alternate-key](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/alternate-key.md) when querying for a profile source. Please note that this property isn't updateable. Additionally, a profile source is identifiable via a system-generated the key named **id**.
 
 Admins can customize a profile source display name to multiple locales by configuring the `localizations` property.
 
@@ -245,7 +245,7 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 - **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
 
 > [!NOTE]
-> The PowerShell commands for profile source settings are only available in beta. Switch to the beta experience before you run the following commands.
+> The PowerShell commands for profile source settings are only available in preview. Switch to the preview experience before you run the following commands.
 >
 > ```powershell
 >    Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.''.0
