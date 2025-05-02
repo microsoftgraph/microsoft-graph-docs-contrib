@@ -36,7 +36,7 @@ Details self-service sign-up activity of Microsoft Entra External ID users on a 
 |signUpIdentityProvider|String|Describes the type of account for which the user registered. Values include `Email OTP`, `Email Password`, `Google`.|
 |signUpStage|signUpStage|Describes the step in the sign-up flow. The possible values are: `credentialCollection`, `credentialValidation`, `credentialFederation`, `consent`, `attributeCollectionAndValidation`, `userCreation`, `tenantConsent`, `unknownFutureValue`.|
 |status|[signUpStatus](../resources/signupstatus.md)|Sign-up status. Includes the error code and description of the error (if a sign-up failure or interrupt occurs). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
-|userSnapshot|[ciamUserSnapshot](../resources/ciamusersnapshot.md)|User created as a result of self-service sign-up.|
+|userId|String|The user identifier created during the sign up.|
 
 ## Relationships
 None.
@@ -72,9 +72,7 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.signUpIdentity"
   },
   "signUpIdentityProvider": "String",
-  "userSnapshot": {
-    "@odata.type": "microsoft.graph.ciamUserSnapshot"
-  }
+  "userId": "String"
 }
 ```
 

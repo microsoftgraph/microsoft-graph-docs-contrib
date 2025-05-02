@@ -116,9 +116,7 @@ Content-Type: application/json
                 "signUpIdentifier": "testuser@yahoo.com",
                 "signUpIdentifierType": "emailAddress"
             },
-            "userSnapshot": {
-                "userId": "9fb7a577-9469-4489-912d-bc58a5bca276"
-            }
+            "userId": "9fb7a577-9469-4489-912d-bc58a5bca276"
         },
         {
             "appDisplayName": "TestApp4",
@@ -128,7 +126,7 @@ Content-Type: application/json
             "id": "5b515b07-411f-4759-a389-bce8289f0000",
             "signUpStage": "attributeCollectionAndValidation",
             "signUpIdentityProvider": "Email OTP",
-            "userSnapshot": null,
+            "userId": null,
             "appliedEventListeners": [],
             "status": {
                 "errorCode": 0,
@@ -148,7 +146,7 @@ Content-Type: application/json
             "id": "1ce058e4-d023-4ae4-9236-0c9d0f0f0200",
             "signUpStage": "credentialValidation",
             "signUpIdentityProvider": "Email OTP",
-            "userSnapshot": null,
+            "userId": null,
             "appliedEventListeners": [],
             "status": {
                 "errorCode": 1002013,
@@ -168,7 +166,7 @@ Content-Type: application/json
             "id": "921e63bd-a516-4976-a537-a671036a0000",
             "signUpStage": "credentialCollection",
             "signUpIdentityProvider": "Email OTP",
-            "userSnapshot": null,
+            "userId": null,
             "appliedEventListeners": [],
             "status": {
                 "errorCode": 0,

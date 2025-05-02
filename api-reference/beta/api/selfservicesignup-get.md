@@ -111,9 +111,7 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.signUpIdentity"
     },
     "signUpIdentityProvider": "String",
-    "userSnapshot": {
-      "@odata.type": "microsoft.graph.ciamUserSnapshot"
-    }
+    "userId": "String"
   }
 }
 ```
