@@ -295,11 +295,11 @@ The following JSON examples show the responses for each supported change type of
 
 ### Video on demand published
 
-Events that are created when video on demand is published for a virtual event session.  Users can use the **resourceData.@odata.id** property to discover which virtual event session video-on-demand has become available for.
+Events that are created when video-on-demand is published for a virtual event session. Users can use the **resourceData.@odata.id** property to discover which virtual event session video-on-demand has become available for.
 
-When a notification is received for virtual event webinar's sessions, the notification will only let the application/user know that the virtual event webinar's video-on-demand url is published. The video-on-demand url on the virtual event session may be null or useable only to the organizer. The application and/or user must figure which unique video-on-demand urls to provide to it's different participants as a single video-on-demand url will not work for all users.
+When a notification is received for virtual event webinar sessions, the notification only informs the application/user that the video-on-demand URL for the virtual event webinar is published. The video-on-demand URL for the virtual event session might be null or usable only by the organizer. The application and/or user must determine which unique video-on-demand URLs to provide to different participants, as a single video-on-demand URL doesn't work for all users.
 
-For virtual event townhall sessions, a ubiquitious video-on-demand url is available on the virtual event session object which can be used by all participants.
+For virtual event townhall sessions, a universal video-on-demand URL is available on the virtual event session object, which can be used by all participants.
 
 ```json
 {
@@ -320,7 +320,6 @@ For virtual event townhall sessions, a ubiquitious video-on-demand url is availa
   ]
 }
 ```
-
 
 ### Session meeting call updated events
 
