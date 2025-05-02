@@ -138,10 +138,10 @@ Content-Type: application/json
 
 ## Subscribe to video-on-demand publication for all sessions in a webinar
 
-To subscribe to notifications for when a session's video-on-demand publication occurs, specify the resource as `solutions/virtualEvents/{eventType}/{eventId}/getVideoOnDemandPublication`.
+To subscribe to notifications for when video-on-demand publication of a session occurs, specify the resource as `solutions/virtualEvents/{eventType}/{eventId}/getVideoOnDemandPublication`.
 
 An application can only have a subscription per virtual event in a tenant for video-on-demand publications.
-A user delegated token allows you to setup one subscription per virtual event in a tenant. The subscription is only available for users who are the organizer or listed as co-organizer in the same tenant as the event host.
+A user delegated token allows you to set up one subscription per virtual event in a tenant. The subscription is only available for users who are the organizer or listed as co-organizer in the same tenant as the event host.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -195,7 +195,7 @@ The following table indicates the supported notification and change types for th
 | [Session](/graph/api/resources/virtualeventsession)                           | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
 | [Session video-on-demand published](/graph/api/resources/virtualeventsession) | `solutions/virtualEvents/{eventType}/{eventId}/sessions/{sessionId}`                            | updated           |
 | [Registration](/graph/api/resources/virtualeventregistrant)                   | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
-| [Meeting Attendance Report](/graph/api/resources/meetingattendancereport)     | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                            | created           |
+| [Meeting attendance report](/graph/api/resources/meetingattendancereport)     | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                            | created           |
 
 ## Event notification examples
 
@@ -295,11 +295,11 @@ The following JSON examples show the responses for each supported change type of
 
 ### Video on demand published
 
-Events that are created when video on demand is published for a virtual event session.  The application or user can use the **resourceData.@odata.id** property to discover which virtual event session video-on-demand has become available for.
+Events that are created when video-on-demand is published for a virtual event session. The application or user can use the **resourceData.@odata.id** property to discover which virtual event session video-on-demand has become available for.
 
-When a notification is received for virtual event webinar's sessions, the notification will only let the application or user know that the virtual event webinar's video-on-demand url is published. The video-on-demand url on the virtual event session may be null or useable only to the organizer. The application or user must figure which unique video-on-demand urls to provide to it's different participants as a single video-on-demand url will not work for all users.
+When a notification is received for virtual event webinar sessions, the notification only informs the application or user that the video-on-demand URL for the virtual event webinar is published. The video-on-demand URL for the virtual event session might be null or usable only by the organizer. The application or user must determine which unique video-on-demand URLs to provide to different participants, as a single video-on-demand URL doesn't work for all users.
 
-For virtual event townhall sessions, a ubiquitious video-on-demand url is available on the virtual event session object which can be used by all participants.
+For virtual event town hall sessions, a universal video-on-demand URL is available on the virtual event session object, which can be used by all participants.
 
 ```json
 {
@@ -320,7 +320,6 @@ For virtual event townhall sessions, a ubiquitious video-on-demand url is availa
   ]
 }
 ```
-
 
 ### Session meeting call updated events
 
