@@ -30,6 +30,8 @@ Inherits from [entity](../resources/entity.md).
 |[List photo update settings](../api/peopleadminsettings-list-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md) collection|Get the properties of the [photoUpdateSettings](../resources/photoupdatesettings.md) resource for an organization.|
 |[Create photo update setting](../api/peopleadminsettings-post-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md)|Create a new [photoUpdateSettings](../resources/photoupdatesettings.md) for an organization.|
 |[Delete photo update setting](../api/peopleadminsettings-delete-photoupdatesettings.md)|None|Delete a [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
+|[List profilePropertySettings](../api/peopleadminsettings-list-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md) collection|Get a collection of [profilePropertySetting](../resources/profilepropertysetting.md) resources in an organization.|
+|[Create profilePropertySetting](../api/peopleadminsettings-post-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Create a new profilePropertySetting object.|
 
 ## Properties
 
@@ -46,6 +48,7 @@ Inherits from [entity](../resources/entity.md).
 |photoUpdateSettings|[photoUpdateSettings](../resources/photoupdatesettings.md)|Administrator settings that manage the support for item photo updates in an organization.|
 |pronouns|[pronounsSettings](../resources/pronounssettings.md)|Administrator settings that manage the support of pronouns in an organization.|
 |namePronunciation|[namePronunciationSettings](../resources/namepronunciationsettings.md)|Administrator settings that manage the support of name pronunciation in an organization.|
+|profilePropertySettings|[profilePropertySetting](../resources/profilepropertysetting.md) collection|A collection of profile property configuration settings defined by an administrator for an organization.|
 
 ## JSON representation
 

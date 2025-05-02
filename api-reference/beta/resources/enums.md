@@ -12,6 +12,16 @@ ms.date: 12/31/2024
 
 Namespace: microsoft.graph
 
+### organizationAllowedAudiences values 
+
+|Member|
+|:---|
+|me|
+|organization|
+|federatedOrganizations|
+|everyone|
+|unknownFutureValue|
+
 ### changeAnnouncementChangeType values
 
 |Member|
