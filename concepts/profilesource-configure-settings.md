@@ -1,7 +1,7 @@
 ---
 title: "Manage profile source settings for an organization using the Microsoft Graph API"
 description: "Learn how to use Microsoft Graph APIs to add, update, and delete settings that manage profile sources in an organization."
-author: "ruthnjambuya"
+author: "rwaithera"
 ms.localizationpriority: high
 ms.subservice: "people"
 ms.custom: scenarios:getting-started

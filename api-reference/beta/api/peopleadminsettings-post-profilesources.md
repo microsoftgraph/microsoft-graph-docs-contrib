@@ -1,7 +1,7 @@
 ---
 title: "Create profileSource"
 description: "Create a new profileSource object."
-author: "ruthnjambuya"
+author: "rwaithera"
 ms.date: 04/30/2025
 ms.localizationpriority: medium
 ms.subservice: "people"

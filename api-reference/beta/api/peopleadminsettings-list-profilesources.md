@@ -1,7 +1,7 @@
 ---
 title: "List profileSource objects"
 description: "Get a list of the profileSource objects and their properties."
-author: "ruthnjambuya"
+author: "rwaithera"
 ms.date: 04/30/2025
 ms.localizationpriority: medium
 ms.subservice: "people"

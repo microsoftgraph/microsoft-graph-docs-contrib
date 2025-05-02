@@ -1,10 +1,10 @@
 ---
 title: "profileSource resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents the configuration data of a profile source created by an organization administrator"
+author: "rwaithera"
 ms.date: 04/30/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "people"
 doc_type: resourcePageType
 toc.keywords: [ source attribution, connector source ]
 ---

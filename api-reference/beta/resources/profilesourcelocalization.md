@@ -1,7 +1,7 @@
 ---
 title: "profileSourceLocalization resource type"
 description: "Customize the appearance of a profile source name."
-author: "ruthnjambuya"
+author: "rwaithera"
 ms.date: 04/30/2025
 ms.localizationpriority: medium
 ms.subservice: "people"
