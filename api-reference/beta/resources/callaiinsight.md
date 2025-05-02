@@ -1,6 +1,6 @@
 ---
 title: "callAiInsight resource type"
-description: "Represents a set of AI insights associated with an online meeting."
+description: "Represents a set of AI insights associated with an onlineMeeting."
 author: "Anjali-Patle"
 ms.date: 04/29/2025
 ms.localizationpriority: medium
