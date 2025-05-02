@@ -299,7 +299,7 @@ Events that are created when video-on-demand is published for a virtual event se
 
 When a notification is received for virtual event webinar sessions, the notification only informs the application/user that the video-on-demand URL for the virtual event webinar is published. The video-on-demand URL for the virtual event session might be null or usable only by the organizer. The application and/or user must determine which unique video-on-demand URLs to provide to different participants, as a single video-on-demand URL doesn't work for all users.
 
-For virtual event townhall sessions, a universal video-on-demand URL is available on the virtual event session object, which can be used by all participants.
+For virtual event town hall sessions, a universal video-on-demand URL is available on the virtual event session object, which can be used by all participants.
 
 ```json
 {
