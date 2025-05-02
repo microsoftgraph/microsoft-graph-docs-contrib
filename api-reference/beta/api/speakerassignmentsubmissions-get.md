@@ -60,7 +60,6 @@ The `$filter` and `$orderby` query parameters are supported for all properties.
 Don't supply a request body for this method.
 
 ## Response
-
 If successful, this method returns a `200 OK` response code and a [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) object in the response body.
 
 ## Examples
@@ -83,7 +82,6 @@ GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissi
 ```
 
 #### Response
-
 The following example shows the default response from the last 24 hours.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -184,12 +182,6 @@ The following example shows how to get the reading assignment submissions for a 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_speakerAssignmentSubmissions_filter"
-}
--->
 ``` http
 GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmissions?$filter=submitDateTime gt 2023-10-10T00:00:00.000Z
 ```
