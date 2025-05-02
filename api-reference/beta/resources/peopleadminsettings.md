@@ -30,6 +30,8 @@ Inherits from [entity](../resources/entity.md).
 |[List photo update settings](../api/peopleadminsettings-list-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md) collection|Get the properties of the [photoUpdateSettings](../resources/photoupdatesettings.md) resource for an organization.|
 |[Create photo update setting](../api/peopleadminsettings-post-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md)|Create a new [photoUpdateSettings](../resources/photoupdatesettings.md) for an organization.|
 |[Delete photo update setting](../api/peopleadminsettings-delete-photoupdatesettings.md)|None|Delete a [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
+|[List profileSources](../api/peopleadminsettings-list-profilesources.md)|[profileSource](../resources/profilesource.md) collection|Get a collection of [profileSource](../resources/profilesource.md) objects.|
+|[Create profileSource](../api/peopleadminsettings-post-profilesources.md)|[profileSource](../resources/profilesource.md)|Create a new profileSource object.|
 
 ## Properties
 
@@ -44,6 +46,7 @@ Inherits from [entity](../resources/entity.md).
 |itemInsights|[insightsSettings](../resources/insightssettings.md)|Administrator settings that manage the support for item insights in an organization.|
 |profileCardProperties|[profileCardProperty](profilecardproperty.md) collection|A collection of the properties an administrator defined as visible on the Microsoft 365 profile card.|
 |photoUpdateSettings|[photoUpdateSettings](../resources/photoupdatesettings.md)|Administrator settings that manage the support for item photo updates in an organization.|
+|profileSource|[profileSource](../resources/profilesource.md) collection|A collection of profile source settings configured by an administrator in an organization.|
 |pronouns|[pronounsSettings](../resources/pronounssettings.md)|Administrator settings that manage the support of pronouns in an organization.|
 |namePronunciation|[namePronunciationSettings](../resources/namepronunciationsettings.md)|Administrator settings that manage the support of name pronunciation in an organization.|
 
