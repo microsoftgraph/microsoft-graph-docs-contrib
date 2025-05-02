@@ -871,7 +871,8 @@
             "community",
             "engagementAsyncOperation",
             "engagementRole",
-            "engagementRoleMember"
+            "engagementRoleMember",
+            "employeeExperienceUser"
           ]
         },
         {
