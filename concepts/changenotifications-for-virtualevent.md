@@ -147,7 +147,7 @@ A user delegated token allows you to setup one subscription per virtual event in
 POST https://graph.microsoft.com/beta/subscriptions
 
 {
-  "changeType": "created, updated",
+  "changeType": "updated",
   "notificationUrl": "https://webhook.contoso.com/api",
   "lifecycleNotificationUrl": "https://webhook.contoso.com/api",
   "resource": "solutions/virtualEvents/{eventType}/{eventId}/getVideoOnDemandPublication",
@@ -193,7 +193,7 @@ The following table indicates the supported notification and change types for th
 |:------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
 | [Webinar](/graph/api/resources/virtualeventwebinar)                           | `solutions/virtualEvents/webinars/{webinarId}`                                                 | created, updated  |
 | [Session](/graph/api/resources/virtualeventsession)                           | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
-| [Session video-on-demand published](/graph/api/resources/virtualeventsession) | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | updated           |
+| [Session video-on-demand published](/graph/api/resources/virtualeventsession) | `solutions/virtualEvents/{eventType}/{eventId}/sessions/{sessionId}`                            | updated           |
 | [Registration](/graph/api/resources/virtualeventregistrant)                   | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
 | [Meeting Attendance Report](/graph/api/resources/meetingattendancereport)     | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                            | created           |
 
@@ -295,9 +295,9 @@ The following JSON examples show the responses for each supported change type of
 
 ### Video on demand published
 
-Events that are created when video on demand is published for a virtual event session.  Users can use the **resourceData.@odata.id** property to discover which virtual event session video-on-demand has become available for.
+Events that are created when video on demand is published for a virtual event session.  The application or user can use the **resourceData.@odata.id** property to discover which virtual event session video-on-demand has become available for.
 
-When a notification is received for virtual event webinar's sessions, the notification will only let the application/user know that the virtual event webinar's video-on-demand url is published. The video-on-demand url on the virtual event session may be null or useable only to the organizer. The application and/or user must figure which unique video-on-demand urls to provide to it's different participants as a single video-on-demand url will not work for all users.
+When a notification is received for virtual event webinar's sessions, the notification will only let the application or user know that the virtual event webinar's video-on-demand url is published. The video-on-demand url on the virtual event session may be null or useable only to the organizer. The application or user must figure which unique video-on-demand urls to provide to it's different participants as a single video-on-demand url will not work for all users.
 
 For virtual event townhall sessions, a ubiquitious video-on-demand url is available on the virtual event session object which can be used by all participants.
 
