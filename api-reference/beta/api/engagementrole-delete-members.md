@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/employeeExperience/roles/{engagementRoleId}/members/{engagementRoleMemberId}
+DELETE https://graph.microsoft.com/beta/employeeExperience/roles/{engagementRoleId}/members/{engagementRoleMemberId}
 ```
 
 
@@ -79,4 +79,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-
