@@ -142,7 +142,7 @@ The following table lists the prices for using Teams meeting APIs, applicable to
 
 ## License requirements for meeting AI insights APIs
 
-This section describes the license requirements for Teams meeting AI insights APIs. To access the beta endpoint, users must have a [Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365/copilot) license. Payment models or evaluation mode aren't applicable for these APIs; they can be used by any application for users who possess the required license.
+This section describes the license requirements for Teams meeting AI insights APIs. To access the beta endpoint, users must have a [Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365/copilot) license. Payment models or evaluation mode aren't applicable for these APIs; they can be used by any application for users who have the required license.
 
 ## Payment and billing
 
