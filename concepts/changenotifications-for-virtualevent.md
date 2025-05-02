@@ -295,7 +295,7 @@ The following JSON examples show the responses for each supported change type of
 
 ### Video on demand published
 
-Events that are created when video-on-demand is published for a virtual event session. The application or user can use the **resourceData.@odata.id** property to discover which virtual event session video-on-demand has become available for.
+Events that are created when video-on-demand is published for a virtual event session. The application or user can use the **resourceData.@odata.id** property to discover which virtual event session video-on-demand is available.
 
 When a notification is received for virtual event webinar sessions, the notification only informs the application or user that the video-on-demand URL for the virtual event webinar is published. The video-on-demand URL for the virtual event session might be null or usable only by the organizer. The application or user must determine which unique video-on-demand URLs to provide to different participants, as a single video-on-demand URL doesn't work for all users.
 
