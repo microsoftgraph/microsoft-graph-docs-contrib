@@ -2219,6 +2219,7 @@
         "namePronunciationSettings",
         "enhancedPersonalizationSetting",
         "profile",
+        "profilePropertySettings",
         "userAnalytics"
       ],
       "childNodes": [
@@ -2234,8 +2235,8 @@
             "pronounsSettings",
             "profileCardProperty",
             "photoUpdateSettings",
-            "namePronunciationSettings"
-
+            "namePronunciationSettings",
+            "profilePropertySettings"
           ]
         },
         {
