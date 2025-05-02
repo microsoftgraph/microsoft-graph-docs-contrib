@@ -570,7 +570,7 @@ items:
       items:
       - name: Action item
         href: ../../resources/actionitem.md
-      - name: 'Call AI insight viewpoint '
+      - name: Call AI insight viewpoint
         href: ../../resources/callaiinsightviewpoint.md
       - name: Identity set
         href: ../../resources/identityset.md
