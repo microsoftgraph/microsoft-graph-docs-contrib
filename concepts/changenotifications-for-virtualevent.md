@@ -307,7 +307,7 @@ For virtual event town hall sessions, a universal video-on-demand URL is availab
     {
       "subscriptionId": "7015b436-a8b8-4260-af80-5af8cba32e62",
       "clientState": "secret client state",
-      "changeType": "created",
+      "changeType": "updated",
       "tenantId": "f5b076c8-b508-4ba3-a1a7-19d1c0bcef03",
       "resource": "solutions/virtualEvents/{eventType}/{eventId}/getVideoOnDemandPublication",
       "subscriptionExpirationDateTime": "2023-01-28T00:00:00.0000000Z",
