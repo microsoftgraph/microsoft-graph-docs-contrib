@@ -6,7 +6,7 @@ ms.date: 04/29/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
-toc.title: "Call AI insight viewpoint "
+toc.title: "Call AI insight viewpoint"
 ---
 
 # callAiInsightViewPoint resource type
