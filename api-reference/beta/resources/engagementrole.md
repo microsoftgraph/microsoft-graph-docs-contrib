@@ -32,10 +32,17 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 The following JSON representation shows the resource type.
-
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.engagementRole",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
 ``` json
 {
-  "@odata.type": "microsoft.graph.engagementRole",
+  "@odata.type": "#microsoft.graph.engagementRole",
   "id": "String (identifier)",
   "displayName": "String"
 }
