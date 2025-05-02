@@ -27,7 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "driverestoreartifactsbulkadditionrequest-delete"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/driverestoreartifactsbulkadditionrequest-delete-permissions.md)]
 
 ## HTTP request
 
