@@ -19,7 +19,7 @@ Represents a mention event associated with a [callAiInsightViewPoint](callaiinsi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|eventDateTime|DateTimeOffset|The date and time of the mention event.|
+|eventDateTime|DateTimeOffset|The date and time of the mention event. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |speaker|[identitySet](identityset.md)|The speaker who mentioned the user.|
 |transcriptUtterance|String|The utterance in the online meeting transcript that contains the mention event.|
 
