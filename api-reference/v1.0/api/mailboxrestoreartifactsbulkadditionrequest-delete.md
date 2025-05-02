@@ -25,7 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "mailboxrestoreartifactsbulkadditionrequest-delete"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/mailboxrestoreartifactsbulkadditionrequest-delete-permissions.md)]
 
 ## HTTP request
 
