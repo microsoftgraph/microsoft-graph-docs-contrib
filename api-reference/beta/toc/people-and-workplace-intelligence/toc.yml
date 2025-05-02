@@ -56,6 +56,10 @@ items:
     href: ../../api/peopleadminsettings-post-photoupdatesettings.md
   - name: Delete photo update setting
     href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
+  - name: List profilePropertySettings
+    href: ../../api/peopleadminsettings-list-profilepropertysettings.md
+  - name: Create profilePropertySetting
+    href: ../../api/peopleadminsettings-post-profilepropertysettings.md
   - name: Pronouns settings
     items:
     - name: Pronouns settings
