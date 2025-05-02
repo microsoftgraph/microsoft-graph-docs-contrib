@@ -36,7 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 DELETE /employeeExperience/roles/{engagementRoleId}/members/{engagementRoleMemberId}
 ```
-<!-- DELETE /me/employeeExperience/assignedRoles/{engagementRoleId}/members/{engagementRoleMemberId}/$ref -->
 
 ## Request headers
 
@@ -65,7 +64,6 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/employeeExperience/roles/{engagementRoleId}/members/{engagementRoleMemberId}
 ```
-
 
 ### Response
 

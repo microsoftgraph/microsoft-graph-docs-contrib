@@ -62,6 +62,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+Example 1: Get a list of all the roles assigned to a signed-in user in Viva Engage.
+
 ### Request
 
 The following example shows a request.
@@ -72,6 +74,54 @@ The following example shows a request.
 -->
 ``` http
 GET https://graph.microsoft.com/beta/me/employeeExperience/assignedRoles
+```
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.engagementRole)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#me/employeeExperience/assignedRoles",
+  "value": [
+    {
+        "id": "ec791927-d09f-4f91-bd76-d3b05e1c1a31",
+        "displayName": "Network Admin"
+    },
+    {
+        "id": "b0de8e6d-4457-4722-bdc5-5a32a09bf064",
+        "displayName": "Verified Admin"
+    },
+    {
+        "id": "77aa7d76-bdf6-4cc0-80e2-fd1ac5a28471",
+        "displayName": "Corporate Communicator"
+    }
+  ]
+}
+```
+
+Example 2: Get a list of all the roles assigned to a user in Viva Engage.
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_assignedrole"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users('directory-user-id')/employeeExperience/assignedRoles
+
 ```
 
 ### Response
