@@ -18,7 +18,7 @@ Get the list of [callAiInsight](../resources/callaiinsight.md) objects associate
 
 > [!NOTE]
 > * This API has license requirements. For more information, see [License requirements for Teams meeting AI insights APIs](/graph/teams-licenses#license-requirements-for-teams-meeting-ai-insights-apis).
-> * This API works differently in one or more national clouds. For more details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
+> * This API works differently in one or more national clouds. For more information, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -49,7 +49,7 @@ GET /copilot/users/{userId}/onlineMeetings/{onlineMeetingId}/aiInsights
 
 ## Optional query parameters
 
-This method supports the `$select`, `$filter`, and `$top` [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports the `$select`, `$filter`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
