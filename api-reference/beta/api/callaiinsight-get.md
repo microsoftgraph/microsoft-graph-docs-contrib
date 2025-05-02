@@ -53,7 +53,7 @@ GET /copilot/users/{userId}/onlineMeetings/{onlineMeetingId}/aiInsights/{aiInsig
 
 ## Optional query parameters
 
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and a [callAiInsight
 
 The following example shows how to get a single set of AI insights for an online meeting.
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -89,7 +89,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/copilot/users/b935e675-5e67-48b9-8d45-249d5f88e964/onlineMeetings/MSpiOTM.../aiInsights/VjEjI1...
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
