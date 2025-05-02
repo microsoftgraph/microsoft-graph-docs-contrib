@@ -526,9 +526,9 @@ items:
         href: ../../api/meetingregistration-update.md
       - name: Delete
         href: ../../api/meetingregistration-delete.md
-    - name: Call AI Summary
+    - name: Call AI insight
       items:
-      - name: Call AI Summary
+      - name: Call AI insight
         href: ../../resources/callaiinsight.md
       - name: List
         href: ../../api/onlinemeeting-list-aiinsights.md
