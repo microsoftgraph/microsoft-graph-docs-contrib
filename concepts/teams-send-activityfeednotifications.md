@@ -4,7 +4,7 @@ description: "Use the Microsoft Teams activity feed notification APIs in Microso
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
-ms.date: 04/25/2025
+ms.date: 05/05/2025
 ---
 
 # Send activity feed notifications to users in Microsoft Teams
@@ -302,7 +302,7 @@ To add custom activity icons in activity feed notifications sent to a user, foll
     }
     ```
 
-For custom activity icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-icons). To try out custom activity icons in activity feed notifications in a sample Teams app, see [Placeholder link](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main).
+For custom activity icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-icons). To try out custom activity icons in activity feed notifications in Teams, see [Graph Activity Feed sample app](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/nodejs).
 
 ## Examples
 
