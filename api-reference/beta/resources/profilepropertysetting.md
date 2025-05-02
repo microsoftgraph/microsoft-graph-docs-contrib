@@ -34,8 +34,8 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|organizationAllowedAudiences|A privacy setting reflecting the allowed audience for the configured property.The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|id|String|System-generated guid.  Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|allowedAudiences|organizationAllowedAudiences|A privacy setting reflecting the allowed audience for the configured property. The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|id|String|System generated guid.  Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |isUserOverrideForAudienceEnabled|Boolean|Defines if a user is allowed to override the tenant admin privacy setting|
 |name|String|Name of the property-level setting.|
 |prioritizedSourceUrls|String collection|A collection of priority profile source URLs ordered in the order of data precedence in an organization.|

@@ -53,7 +53,7 @@ PATCH /admin/people/profilePropertySettings/{profilePropertySettingId}
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|Name of the property-level setting.|
-|allowedAudiences|organizationAllowedAudiences|A privacy setting reflecting the allowed audience for the configured property.The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|organizationAllowedAudiences|A privacy setting reflecting the allowed audience for the configured property. The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |isUserOverrideForAudienceEnabled|Boolean|Defines if a user is allowed to override the tenant admin privacy setting|
 |prioritizedSourceUrls|String collection|A collection of priority profile source URLs ordered in the order of data precedence in an organization.|
 
