@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).
 
 > [!NOTE]
-> - This API has license requirements. For more information, see [License requirements for meeting AI insights APIs](/graph/teams-licenses#license-requirements-for-meeting-ai-insights-apis).
+> - This API has license requirements. For more information, see [License requirements for meeting AI insights APIs](/graph/teams-licenses#license-requirements-for-teams-meeting-ai-insights-apis).
 > * This API works differently in one or more national clouds. For more details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
