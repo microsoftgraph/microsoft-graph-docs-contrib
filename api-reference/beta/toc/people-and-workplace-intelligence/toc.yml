@@ -56,6 +56,10 @@ items:
     href: ../../api/peopleadminsettings-post-photoupdatesettings.md
   - name: Delete photo update setting
     href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
+  - name: List profileSources
+    href: ../../api/peopleadminsettings-list-profilesources.md
+  - name: Create profileSource
+    href: ../../api/peopleadminsettings-post-profilesources.md
   - name: Pronouns settings
     items:
     - name: Pronouns settings
@@ -100,6 +104,21 @@ items:
       href: ../../api/namepronunciationsettings-get.md
     - name: Update
       href: ../../api/namepronunciationsettings-update.md
+  - name: Profile source
+    displayName: source attribution, connector source
+    items:
+    - name: Profile source
+      href: ../../resources/profilesource.md
+    - name: List
+      href: ../../api/peopleadminsettings-list-profilesources.md
+    - name: Create
+      href: ../../api/peopleadminsettings-post-profilesources.md
+    - name: Get
+      href: ../../api/profilesource-get.md
+    - name: Update
+      href: ../../api/profilesource-update.md
+    - name: Delete
+      href: ../../api/peopleadminsettings-delete-profilesources.md
 - name: Insights settings
   items:
   - name: Insights settings
@@ -504,6 +523,21 @@ items:
       href: ../../api/personwebsite-update.md
     - name: Delete
       href: ../../api/personwebsite-delete.md
+- name: Profile source
+  displayName: source attribution, connector source
+  items:
+  - name: Profile source
+    href: ../../resources/profilesource.md
+  - name: List
+    href: ../../api/peopleadminsettings-list-profilesources.md
+  - name: Create
+    href: ../../api/peopleadminsettings-post-profilesources.md
+  - name: Get
+    href: ../../api/profilesource-get.md
+  - name: Update
+    href: ../../api/profilesource-update.md
+  - name: Delete
+    href: ../../api/peopleadminsettings-delete-profilesources.md
 - name: User analytics
   items:
   - name: User analytics
