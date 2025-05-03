@@ -399,6 +399,8 @@ Depending on your subscription, you can get the notification with or without res
 
 For notifications with resource data, the payload looks like the following. This payload is for a transcript available for an online meeting.
 
+>**Note:** The payload object shown here is shortened for readability.
+
 <!-- { "blockType": "ignored" } -->
 ```json
 {
@@ -408,11 +410,11 @@ For notifications with resource data, the payload looks like the following. This
       "changeType": "created",
       "clientState": "<<--SpecifiedClientState-->>",
       "subscriptionExpirationDateTime": "2023-09-17T08:13:26.3265566+00:00",
-      "resource": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy')/transcripts('MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx')",
+      "resource": "users/{organizer-id}/onlineMeetings('Mso...')/transcripts('MSM...')",
       "resourceData": {
-        "id": "MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx",
+        "id": "MSM...",
         "@odata.type": "#Microsoft.Graph.callTranscript",
-        "@odata.id": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy')/transcripts('MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx')"
+        "@odata.id": "users/{organizer-id}/onlineMeetings('Mso...')/transcripts('MSM...')"
       },
       "encryptedContent": {
         "data": "<<--EncryptedContent-->>",
@@ -431,13 +433,15 @@ For notifications with resource data, the payload looks like the following. This
 
 The decrypted notification payload looks like the following. The payload conforms to the [transcript](/graph/api/resources/calltranscript) schema. The payload is similar to the ones returned by GET operations.
 
+>**Note:** The payload object shown here is shortened for readability.
+
 <!-- { "blockType": "ignored" } -->
 ```json
 {
-  "id": "MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx",
-  "meetingId": "MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy",
+  "id": "MSM...",
+  "meetingId": "MSo...",
   "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
-  "transcriptContentUrl": "communications/onlineMeetings/MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy/transcripts/MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx/content",
+  "transcriptContentUrl": "users/{organizer-id}/onlineMeetings/MSo.../transcripts/MSM.../content",
   "createdDateTime": null,
   "endDateTime": "2023-04-10T08:27:25.2346000Z",
   "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
@@ -456,6 +460,8 @@ The decrypted notification payload looks like the following. The payload conform
 
 For notifications with resource data, the payload looks like the following. This payload is for a recording available for an online meeting.
 
+>**Note:** The payload object shown here is shortened for readability.
+
 <!-- { "blockType": "ignored" } -->
 ```json
 {
@@ -465,11 +471,11 @@ For notifications with resource data, the payload looks like the following. This
       "changeType": "created",
       "clientState": "<<--SpecifiedClientState-->>",
       "subscriptionExpirationDateTime": "2023-09-17T08:20:06.9211285+00:00",
-      "resource": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy')/recordings('VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=')",
+      "resource": "users/{organizer-id}/onlineMeetings('Mso...')/recordings('VjI...')",
       "resourceData": {
-        "id": "VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=",
+        "id": "VjI...",
         "@odata.type": "#Microsoft.Graph.callRecording",
-        "@odata.id": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy')/recordings('VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=')"
+        "@odata.id": "users/{organizer-id}/onlineMeetings('Mso...')/recordings('VjI...')"
       },
       "encryptedContent": {
         "data": "<<--EncryptedContent-->>",
@@ -488,16 +494,18 @@ For notifications with resource data, the payload looks like the following. This
 
 The decrypted notification payload looks like the following. The payload conforms to the [recording](/graph/api/resources/callrecording) schema. The payload is similar to the ones returned by GET operations.
 
+>**Note:** The payload object shown here is shortened for readability.
+
 <!-- { "blockType": "ignored" } -->
 ```json
 {
-  "id": "VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=",
-  "meetingId": "MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy",
+  "id": "VjI...",
+  "meetingId": "MSo...",
   "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
   "createdDateTime": "2023-07-25T09:35:02.85022Z",
   "endDateTime": "2023-04-10T08:27:25.2346000Z",
   "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
-  "recordingContentUrl": "communications/onlineMeetings/MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy/recordings/VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=/content",
+  "recordingContentUrl": "users/{organizer-id}/MSo.../recordings/VjI.../content",
   "meetingOrganizer": {
     "application": null,
     "device": null,
@@ -518,6 +526,8 @@ Notifications without resource data give you the resource ID to make GET calls t
 
 For notifications without resource data, the payload looks like the following. This payload is for a transcript available for an online meeting.
 
+>**Note:** The payload object shown here is shortened for readability.
+
 <!-- { "blockType": "ignored" } -->
 ```json
 {
@@ -526,16 +536,18 @@ For notifications without resource data, the payload looks like the following. T
   "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
   "clientState": "<<--SpecifiedClientState-->>",
   "subscriptionExpirationDateTime": "2023-09-17T08:29:11.3173971+00:00",
-  "resource": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy')/transcripts('MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx')",
+  "resource": "users/{organizer-id}/onlineMeetings('Mso...')/transcripts('MSM...')",
   "resourceData": {
-    "id": "MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx",
+    "id": "MSM...",
     "@odata.type": "#Microsoft.Graph.callTranscript",
-    "@odata.id": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy')/transcripts('MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx')"
+    "@odata.id": "users/{organizer-id}/onlineMeetings('Mso...')/transcripts('MSM...')"
   }
 }
 ```
 
 For notifications without resource data, the payload looks like the following. This payload is for a recording available for an online meeting.
+
+>**Note:** The payload object shown here is shortened for readability.
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -545,11 +557,11 @@ For notifications without resource data, the payload looks like the following. T
   "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
   "clientState": "<<--SpecifiedClientState-->>",
   "subscriptionExpirationDateTime": "2023-09-17T08:27:05.0241757+00:00",
-  "resource": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy')/recordings('VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=')",
+  "resource": "users/{organizer-id}/onlineMeetings('Mso...')/recordings('VjI...')",
   "resourceData": {
-    "id": "VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=",
+    "id": "VjI...",
     "@odata.type": "#Microsoft.Graph.callRecording",
-    "@odata.id": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy')/recordings('VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=')"
+    "@odata.id": "users/{organizer-id}/onlineMeetings('Mso...')/recordings('VjI...')"
   }
 }
 ```
