@@ -1,0 +1,118 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "labelActionSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **labelActionSource** enumeration type.",
+          "Target": "labelActionSource"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "usageRights",
+          "ChangeType": "Addition",
+          "Description": "Added the **usageRights** enumeration type.",
+          "Target": "usageRights"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "computeRightsAndInheritanceResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [computeRightsAndInheritanceResult](https://learn.microsoft.com/en-us/graph/api/resources/computeRightsAndInheritanceResult?view=graph-rest-beta) resource.",
+          "Target": "computeRightsAndInheritanceResult"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectedContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [protectedContent](https://learn.microsoft.com/en-us/graph/api/resources/protectedContent?view=graph-rest-beta) resource.",
+          "Target": "protectedContent"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "labelContentRight",
+          "ChangeType": "Addition",
+          "Description": "Added the [labelContentRight](https://learn.microsoft.com/en-us/graph/api/resources/labelContentRight?view=graph-rest-beta) resource.",
+          "Target": "labelContentRight"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Property",
+          "ChangedApiName": "actionSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **actionSource** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
+          "Target": "sensitivityLabel"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Property",
+          "ChangedApiName": "autoTooltip",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoTooltip** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
+          "Target": "sensitivityLabel"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Property",
+          "ChangedApiName": "isScopedToUser",
+          "ChangeType": "Addition",
+          "Description": "Added the **isScopedToUser** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
+          "Target": "sensitivityLabel"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Property",
+          "ChangedApiName": "locale",
+          "ChangeType": "Addition",
+          "Description": "Added the **locale** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
+          "Target": "sensitivityLabel"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "rights",
+          "ChangeType": "Addition",
+          "Description": "Added the **rights** relationship to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
+          "Target": "sensitivityLabel"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "usageRightsIncluded",
+          "ChangeType": "Addition",
+          "Description": "Added the [usageRightsIncluded](https://learn.microsoft.com/en-us/graph/api/resources/usageRightsIncluded?view=graph-rest-beta) resource.",
+          "Target": "usageRightsIncluded"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Method",
+          "ChangedApiName": "computeRightsAndInheritance",
+          "ChangeType": "Addition",
+          "Description": "Added the [computeRightsAndInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeRightsAndInheritance?view=graph-rest-beta) method to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
+          "Target": "sensitivityLabel"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Method",
+          "ChangedApiName": "computeInheritance",
+          "ChangeType": "Addition",
+          "Description": "Added the [computeInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeInheritance?view=graph-rest-beta) method to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
+          "Target": "sensitivityLabel"
+        }
+      ],
+      "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-30T21:52:01.8849287Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    }
+  ]
+}

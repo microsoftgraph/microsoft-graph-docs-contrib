@@ -1,0 +1,251 @@
+---
+title: "DataSecurityAndGovernance: sensitivityLabels"
+toc.title: "DataSecurityAndGovernance: sensitivityLabels (preview)"
+description: "Get the list of sensitivity labels available to a specific user or for the entire tenant."
+author: "ArunGedela"
+ms.date: 04/21/2025
+ms.localizationpriority: medium
+ms.subservice: "security"
+doc_type: apiPageType
+---
+
+# DataSecurityAndGovernance: sensitivityLabels
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get the list of sensitivity labels available to a specific user or for the entire tenant.
+
+The results can be filtered by locale, supported content formats, or specific label IDs.
+
+This API is useful for applications that need to display sensitivity labels in their user interface (like a label picker), require label details for applying policy, or need to understand the available labels for administrative or reporting purposes.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "purviewecosystem-sensitivitylabels-getsensitivitylabels-permissions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/datasecurityandgovernance-get-sensitivitylabels.md)]
+
+*When using delegated permissions (`SensitivityLabels.Read`), the API returns labels scoped to the signed-in user.
+
+*When using application permissions (`SensitivityLabels.Read.All`), the API returns all labels for the tenant by default. Use the `scopeToUser` query parameter to retrieve labels for a specific user in application context.
+
+## HTTP request
+
+Get labels for the signed-in user (delegated permissions):
+```http
+GET /me/dataSecurityAndGovernance/sensitivityLabels
+GET /users/{id|userPrincipalName}/dataSecurityAndGovernance/sensitivityLabels
+```
+
+Get labels for the tenant (application permissions):
+```http
+GET /security/dataSecurityAndGovernance/sensitivityLabels
+```
+
+Get labels for a specific user (application permissions):
+```http
+GET /security/dataSecurityAndGovernance/sensitivityLabels?scopeToUser={userPrincipalNameOrObjectId}
+```
+
+## Request headers
+
+| Name                | Description                                                                                                                                 |
+| :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| Authorization       | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).                                |
+| Accept-Language     | Optional. Specifies the preferred language for localizable fields like `name`, `description`, and `tooltip`. Format is based on RFC 4646 (e.g., `en-US`, `fr-FR`). Defaults to the tenant's default language if omitted or not found. |
+| Client-Request-Id   | Optional. A client-generated GUID to trace the request. Recommended for troubleshooting.                                                  |
+
+## Query parameters
+
+| Parameter      | Type             | Description                                                                                                                                                                                                                                                                                           |
+| :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| scopeToUser    | String           | Optional. Used only with application permissions (`/security/...` path). Specifies the UPN or object ID of the user whose labels should be retrieved. If omitted with application permissions, returns all tenant labels. Ignored when using delegated permissions (`/me/...` or `/users/{id}/...` paths). |
+| locale         | String           | Optional. Overrides the `Accept-Language` header. Specifies the locale for localizable fields. If omitted, uses `Accept-Language` or the tenant default.                                                                                                                                          |
+| contentFormats | String           | Optional. A comma-separated string of content formats (e.g., `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.                                                                    |
+| labelIds       | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs.                                                                                                                                                                    |
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [sensitivityLabel](../resources/sensitivitylabel.md) objects in the response body.
+
+## Examples
+
+### Example 1: Get labels for the signed-in user (delegated)
+
+#### Request
+
+The following example shows a request to get labels for the signed-in user, requesting French localization.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_sensitivitylabels_user_delegated"
+} -->
+```http
+GET https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/sensitivityLabels
+Authorization: Bearer {token}
+Accept-Language: fr-FR
+Client-Request-Id: f1a2b3c4-d5e6-f7a8-b9c0-d1e2f3a4b5c6
+```
+
+#### Response
+
+The following example shows the response. Labels are returned in French where available.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.sensitivityLabelInfo)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('me')/dataSecurityAndGovernance/sensitivityLabels",
+  "value": [
+    {
+      "id": "4e4234dd-377b-42a3-935b-0e42f138fa23",
+      "name": "Général",
+      "description": "Données générales, pas pour usage public.",
+      "color": "#000000",
+      "sensitivity": 10,
+      "tooltip": "Appliquer cette étiquette aux données générales non publiques.",
+      "isActive": true,
+      "isEndpointProtectionEnabled": false,
+      "autoTooltip": "",
+      "hasProtection": false,
+      "actionSource": "manual",
+      "contentFormats": ["File", "Email"],
+      "children": []
+    },
+    {
+      "id": "a7a21bba-8197-491f-a5d6-0d0f955397cf",
+      "name": "Confidentiel",
+      "description": "Données confidentielles.",
+      "color": "#ff0000",
+      "sensitivity": 20,
+      "tooltip": "Données qui nécessitent une protection.",
+      "isActive": true,
+      "isEndpointProtectionEnabled": true,
+      "autoTooltip": "",
+      "hasProtection": true,
+      "actionSource": "manual",
+      "contentFormats": ["File", "Email", "Site", "UnifiedGroup"],
+      "children": [
+         // Child label objects omitted for brevity
+      ]
+    }
+  ]
+}
+```
+
+### Example 2: Get tenant labels filtered by content format and ID (application)
+
+#### Request
+
+The following example shows a request to get labels for the tenant, filtered for the `File` content format and specific IDs.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_sensitivitylabels_tenant_filtered_app"
+} -->
+```http
+GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels?contentFormats=File&labelIds=4e4234dd-377b-42a3-935b-0e42f138fa23,b7a21bba-8197-491f-a5d6-0d0f955397ca
+Authorization: Bearer {token}
+Client-Request-Id: a0b9c8d7-e6f5-a4b3-c2d1-e0f9a8b7c6d5
+```
+
+#### Response
+
+The following example shows the response containing only the labels matching the filters.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.sensitivityLabelInfo)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/dataSecurityAndGovernance/sensitivityLabels",
+  "value": [
+    {
+      "id": "4e4234dd-377b-42a3-935b-0e42f138fa23",
+      "name": "General",
+      "description": "General data, not for public use.",
+      "color": "#000000",
+      "sensitivity": 10,
+      "tooltip": "Apply this label to general non-public data.",
+      "isActive": true,
+      "isEndpointProtectionEnabled": false,
+      "autoTooltip": "",
+      "hasProtection": false,
+      "actionSource": "manual",
+      "contentFormats": ["File", "Email"],
+      "children": []
+    }
+    // Label b7a2... might be omitted if it doesn't support the 'File' content format
+  ]
+}
+```
+
+### Example 3: Get labels for a specific user (application)
+
+#### Request
+
+The following example shows a request to get labels for `adele.vance@contoso.com` using application permissions.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_sensitivitylabels_specific_user_app"
+} -->
+```http
+GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels?scopeToUser=adele.vance@contoso.com
+Authorization: Bearer {token}
+Client-Request-Id: 11223344-5566-7788-99aabb-ccddeeff0011
+```
+
+#### Response
+
+The following example shows the response containing labels scoped to Adele Vance.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.sensitivityLabelInfo)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/dataSecurityAndGovernance/sensitivityLabels",
+  "value": [
+    // SensitivityLabelInfo objects relevant to adele.vance@contoso.com
+  ]
+}
+```
+
+## Content Formats
+
+The `contentFormats` parameter filters labels based on their applicability to different types of content or workloads. Possible values include:
+
+| Value          | Description                                                                 |
+| :------------- | :-------------------------------------------------------------------------- |
+| File           | Labels applicable to general files and items (including Copilot outputs). |
+| Email          | Labels applicable specifically to emails.                                   |
+| Site           | Labels applicable to SharePoint sites.                                      |
+| UnifiedGroup   | Labels applicable to Microsoft 365 Groups.                                |
+| Teamwork       | Labels applicable to Microsoft Teams meetings.                              |
+| SchematizedData| Labels applicable to Purview data map assets or other schematized data.   |
+
+Providing multiple values (e.g., `File,Email`) returns labels applicable to *either* `File` *or* `Email`.

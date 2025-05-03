@@ -1,0 +1,132 @@
+---
+title: "Get usageRightsIncluded"
+toc.title: "Get usageRightsIncluded (preview)"
+description: "Get the usage rights granted to the calling user for a specific sensitivity label that has admin-defined permissions."
+author: "ArunGedela"
+ms.date: 04/21/2025
+ms.localizationpriority: medium
+ms.subservice: "security"
+doc_type: apiPageType
+---
+
+# Get usageRightsIncluded
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get the usage rights granted to the calling user for a specific sensitivity label that has admin-defined permissions.
+
+This API allows an application to determine a user's effective permissions (such as view, edit, export) for content protected by a specific sensitivity label. This is crucial for scenarios like Retrieval-Augmented Generation (RAG) where an application must check if a user has the necessary rights (specifically `EXTRACT`) before using labeled content as grounding data for large language models. It can also be used in document management systems or line-of-business applications to enforce access controls based on label policies.
+
+This API only works for labels with admin-defined permissions (standard templates). It does not return rights for labels configured for user-defined permissions (UDP) or Double Key Encryption (DKE).
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "permissions",
+  "name": "purviewecosystem-sensitivitylabels-getrightsforlabelid-permissions"
+} -->
+[!INCLUDE [permissions-table](../includes/permissions/purviewecosystem-sensitivitylabels-getrightsforlabelid-permissions.md)]
+
+This API requires delegated permissions. Application permissions are not supported for checking rights for a specific user context.
+
+## HTTP request
+
+```http
+GET /users/{id|userPrincipalName}/dataSecurityAndGovernance/sensitivityLabels/{labelId}/rights
+```
+
+## Request headers
+
+| Name                | Description                                                                                                                                 |
+| :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| Authorization       | Bearer {token}. Required. The delegated user token. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
+| Accept-Language     | Optional. Specifies the preferred language for the response. Format is based on RFC 4646 (e.g., `en-US`, `es-ES`).                               |
+| Client-Request-Id   | Optional. A client-generated GUID to trace the request. Recommended for troubleshooting.                                                  |
+
+## Query parameters
+
+| Parameter  | Type   | Description                                                                                                                                                               |
+| :--------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ownerEmail | String | Optional. The email address of the content owner. This parameter is sometimes required by the underlying Rights Management service depending on the protection template. |
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [usageRight](../resources/usageright.md) enum values in the response body, representing the rights granted to the user for the specified label.
+
+If the label is not found, doesn't have admin-defined protection, or the user doesn't have the `VIEW` right, the API might return an error response (e.g., `403 Forbidden` or `404 Not Found`) with details in an [error object](/graph/errors).
+
+## Examples
+
+### Request
+
+The following example shows a request to get the rights for a specific sensitivity label for the user `adele.vance@contoso.com`.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_rights_for_sensitivitylabel",
+  "sampleKeys": ["adele.vance@contoso.com", "4e4234dd-377b-42a3-935b-0e42f138fa23"]
+} -->
+```http
+GET https://graph.microsoft.com/beta/users/adele.vance@contoso.com/dataSecurityAndGovernance/sensitivityLabels/4e4234dd-377b-42a3-935b-0e42f138fa23/rights?ownerEmail=bob@contoso.com
+Authorization: Bearer {token}
+Accept-Language: en-US
+Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
+```
+
+### Response
+
+The following example shows the response containing the usage rights granted to the user.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.usageRight)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.usageRight)",
+  "value": [
+    "VIEW",
+    "EDIT",
+    "PRINT",
+    "EXTRACT",
+    "VIEWRIGHTSDATA",
+    "DOCEDIT"
+  ]
+}
+```
+
+### Error Response Example (Label Not Found or No Rights)
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_rights_for_sensitivitylabel_error"
+} -->
+```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+
+{
+  "error": {
+    "code": "AccessDenied",
+    "message": "The user does not have sufficient rights for the specified label, or the label was not found.",
+    "innerError": {
+      "date": "2025-04-21T18:30:00",
+      "request-id": "7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a",
+      "client-request-id": "7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a"
+    }
+  }
+}
+```
