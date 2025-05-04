@@ -49,7 +49,7 @@ GET /copilot/users/{userId}/onlineMeetings/{onlineMeetingId}/aiInsights
 
 ## Optional query parameters
 
-This method supports the `$select`, `$filter`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports `$select` and `$filter` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
