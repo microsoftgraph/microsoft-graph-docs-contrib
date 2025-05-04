@@ -107,7 +107,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM...')/aiInsights/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#copilot/users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM...')/aiInsights/$entity",
   "id": "VjEjI1...",
   "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
   "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
@@ -211,7 +211,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1273a016-201d-4f95-8083-1b7f99b3edeb')/onlineMeetings('MSoxM...')/aiInsights",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#copilot/users('1273a016-201d-4f95-8083-1b7f99b3edeb')/onlineMeetings('MSoxM...')/aiInsights",
   "@odata.count": 1,
   "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET me/onlineMeetings('<key>')/aiInsights?$select=callId,content",
   "value": [
