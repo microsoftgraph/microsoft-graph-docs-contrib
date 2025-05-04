@@ -1,6 +1,6 @@
 ---
 title: "aiInteractionLink resource type"
-description: "Represents the links that appear in the interaction."
+description: "Represents the links that appear in the interactions."
 ms.date: 5/1/2024
 doc_type: resourcePageType
 ms.localizationpriority: medium
