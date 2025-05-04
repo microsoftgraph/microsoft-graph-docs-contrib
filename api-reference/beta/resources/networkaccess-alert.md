@@ -22,10 +22,10 @@ Inherits from [entity](../resources/entity.md)
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/networkaccess-networkaccessroot-list-alerts.md)|[microsoft.graph.networkaccess.alert](../resources/networkaccess-alert.md) collection|Get a list of the alert objects and their properties.|
-|[getAlertSeveritySummaries](../api/networkaccess-alert-getalertseveritysummaries.md)|[microsoft.graph.networkaccess.alertSeveritySummary](../resources/networkaccess-alertseveritysummary.md) collection|**TODO: Add Description**|
-|[getAlertFrequencies](../api/networkaccess-alert-getalertfrequencies.md)|[microsoft.graph.networkaccess.alertFrequencyPoint](../resources/networkaccess-alertfrequencypoint.md) collection|**TODO: Add Description**|
-|[getAlertSummaries](../api/networkaccess-alert-getalertsummaries.md)|[microsoft.graph.networkaccess.alertSummary](../resources/networkaccess-alertsummary.md) collection|**TODO: Add Description**|
-|[List filteringPolicy](../api/networkaccess-networkaccessroot-list-filteringpolicies.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) collection|**TODO: Add a useful description.**|
+|[getAlertSeveritySummaries](../api/networkaccess-alert-getalertseveritysummaries.md)|[microsoft.graph.networkaccess.alertSeveritySummary](../resources/networkaccess-alertseveritysummary.md) collection|Returns a collection containing count tables for all alert severity types in global secure access.|
+|[getAlertFrequencies](../api/networkaccess-alert-getalertfrequencies.md)|[microsoft.graph.networkaccess.alertFrequencyPoint](../resources/networkaccess-alertfrequencypoint.md) collection|Returns a collection containing count tables for all alert severity type per day in global secure access.|
+|[getAlertSummaries](../api/networkaccess-alert-getalertsummaries.md)|[microsoft.graph.networkaccess.alertSummary](../resources/networkaccess-alertsummary.md) collection|Returns a collection containing count tables for all alert types and their severities in global secure access.|
+|[List filteringPolicy](../api/networkaccess-networkaccessroot-list-filteringpolicies.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) collection|Get a list of filtering policies associated with the alert instance.|
 
 ## Properties
 |Property|Type|Description|

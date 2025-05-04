@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Returns a collection containing count tables for all alert severity types in global secure access.
 
 ## Permissions
 
@@ -42,8 +42,8 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|**TODO: Add Description**|
-|endDateTime|DateTimeOffset|**TODO: Add Description**|
+|startDateTime|DateTimeOffset|Start of the period for aggregating alerts.|
+|endDateTime|DateTimeOffset|End of the period for aggregating alerts.|
 
 ## Request headers
 
