@@ -2384,6 +2384,22 @@
       "ChangeList": [
         {
           "Id": "d2f6fa17-3439-430e-ace7-6c90f2848ff9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "callAiInsight",
+          "ChangeType": "Addition",
+          "Description": "Added **onlineMeetings** relationship to the [aiUser](https://learn.microsoft.com/en-us/graph/api/resources/aiUser?view=graph-rest-beta) resource.",
+          "Target": "aiUser"
+        },
+        {
+          "Id": "d2f6fa17-3439-430e-ace7-6c90f2848ff9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiOnlineMeeting",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiOnlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/aiOnlineMeeting?view=graph-rest-beta) resource type.",
+          "Target": "aiOnlineMeeting"
+        },
+        {
+          "Id": "d2f6fa17-3439-430e-ace7-6c90f2848ff9",
           "ApiChange": "Resource",
           "ChangedApiName": "actionItem",
           "ChangeType": "Addition",
