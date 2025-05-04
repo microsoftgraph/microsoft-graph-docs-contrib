@@ -10,7 +10,7 @@ items:
     items:
     - name: AI interaction history
       href: ../../resources/aiinteractionhistory.md
-    - name: List all enterprise interactions
+    - name: Get all enterprise interactions
       href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
   - name: Complex types
     items:
