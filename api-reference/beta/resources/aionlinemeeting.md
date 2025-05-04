@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representas an AI online meeting.
+Represents an AI online meeting.
 
 ## Methods
 None.
