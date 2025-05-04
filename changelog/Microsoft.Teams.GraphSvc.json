@@ -2735,7 +2735,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionAttachment",
           "ChangeType": "Addition",
-          "Description": "Added the [aiInteractionAttachment](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionAttachment?view=graph-rest-1.0) resource.",
+          "Description": "Added the [aiInteractionAttachment](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionAttachment?view=graph-rest-1.0) resource type.",
           "Target": "aiInteractionAttachment"
         },
         {
@@ -2743,7 +2743,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionContext",
           "ChangeType": "Addition",
-          "Description": "Added the [aiInteractionContext](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionContext?view=graph-rest-1.0) resource.",
+          "Description": "Added the [aiInteractionContext](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionContext?view=graph-rest-1.0) resource type.",
           "Target": "aiInteractionContext"
         },
         {
@@ -2751,7 +2751,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionLink",
           "ChangeType": "Addition",
-          "Description": "Added the [aiInteractionLink](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionLink?view=graph-rest-1.0) resource.",
+          "Description": "Added the [aiInteractionLink](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionLink?view=graph-rest-1.0) resource type.",
           "Target": "aiInteractionLink"
         },
         {
@@ -2759,7 +2759,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionMention",
           "ChangeType": "Addition",
-          "Description": "Added the [aiInteractionMention](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionMention?view=graph-rest-1.0) resource.",
+          "Description": "Added the [aiInteractionMention](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionMention?view=graph-rest-1.0) resource type.",
           "Target": "aiInteractionMention"
         },
         {
@@ -2767,7 +2767,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionMentionedIdentitySet",
           "ChangeType": "Addition",
-          "Description": "Added the [aiInteractionMentionedIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionMentionedIdentitySet?view=graph-rest-1.0) resource.",
+          "Description": "Added the [aiInteractionMentionedIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionMentionedIdentitySet?view=graph-rest-1.0) resource type.",
           "Target": "aiInteractionMentionedIdentitySet"
         },
         {
@@ -2775,7 +2775,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteraction",
           "ChangeType": "Addition",
-          "Description": "Added the [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiInteraction?view=graph-rest-1.0) resource.",
+          "Description": "Added the [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiInteraction?view=graph-rest-1.0) resource type.",
           "Target": "aiInteraction"
         },
         {
@@ -2783,7 +2783,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionHistory",
           "ChangeType": "Addition",
-          "Description": "Added the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-1.0) resource.",
+          "Description": "Added the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-1.0) resource type.",
           "Target": "aiInteractionHistory"
         },
         {
@@ -2791,7 +2791,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiUser",
           "ChangeType": "Addition",
-          "Description": "Added the [aiUser](https://learn.microsoft.com/en-us/graph/api/resources/aiUser?view=graph-rest-1.0) resource.",
+          "Description": "Added the [aiUser](https://learn.microsoft.com/en-us/graph/api/resources/aiUser?view=graph-rest-1.0) resource type.",
           "Target": "aiUser"
         },
         {
