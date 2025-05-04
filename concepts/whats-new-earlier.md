@@ -446,7 +446,7 @@ Added application authentication for Microsoft Purview eDiscovery Graph APIs. Fo
 
 ### Teamwork and communications | AI interactions
 
-Use the [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. 
+Use the [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions?view=graph-rest-beta&preserve-view=true) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. 
 
 ### Teamwork and communications | Calls and online meetings
 
