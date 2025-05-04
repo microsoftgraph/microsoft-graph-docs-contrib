@@ -3068,6 +3068,7 @@
               ],
               "complexTypes": [
                 "actionItem",
+                "aiOnlineMeeting",
                 "callAiInsightViewPoint",
                 "meetingNote",
                 "meetingNoteSubpoint",
