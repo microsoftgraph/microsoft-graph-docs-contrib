@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-networkaccessroot-list-alerts-permissions.md)]
 
+[!INCLUDE [rbac-global-secure-access-reports-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-reports-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -34,12 +36,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccessRoot/alerts
+GET /networkAccess/alerts
 ```
 
 ## Optional query parameters
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+|Name|Syntax|Notes|
+|:---|:---|:---|
+|Server-side pagination|@odata.nextLink=https://graph.microsoft.com/beta/networkAccess/alerts?$skiptoken="generatedtoken"|The page size defaults to and is limited to 1000.|
+|Filter|/networkAccess/alerts?$filter=severity eq 'high'|All properties are filterable. Filter by severity, alertType, vendorName, and other alert properties.|
+|Sort|/networkAccess/alerts?$orderby=creationDateTime desc|You can order by all properties. Sort by creationDateTime, severity, and other properties.|
+|Top|/networkAccess/alerts?$top=50|Limit the number of results. Maximum value is 1000.|
 
 ## Request headers
 
@@ -66,7 +75,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccessRoot/alerts
+GET https://graph.microsoft.com/beta/networkAccess/alerts
 ```
 
 ### Response

@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-alert-getalertseveritysummaries-permissions.md)]
 
+[!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -34,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccessRoot/alerts/getAlertSeveritySummaries
+GET /networkAccessRoot/alerts/getAlertSeveritySummaries(startDateTime='2025-04-19T00:00:00Z',endDateTime='2025-04-20T00:00:00Z')
 ```
 
 ## Function parameters
@@ -42,8 +44,8 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Start of the period for aggregating alerts.|
-|endDateTime|DateTimeOffset|End of the period for aggregating alerts.|
+|startDateTime|DateTimeOffset|Start of the period for aggregating alerts. Required.|
+|endDateTime|DateTimeOffset|End of the period for aggregating alerts. Required.|
 
 ## Request headers
 
