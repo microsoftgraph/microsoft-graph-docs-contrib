@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-delete-profilesources-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have [People Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have [People Administrator](https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
 
 ## HTTP request
 
@@ -36,7 +36,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/people/profileSources/{profileSourceId}/$ref
+DELETE /admin/people/profileSources/27f1af7b-b166-4f5b-b994-ae135a581547
+```
+
+## HTTP request with sourceId alternate-key
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+DELETE /admin/people/profileSources(sourceId='bamboohr1')
 ```
 
 ## Request headers
@@ -64,7 +74,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/people/profileSources/{profileSourceId}
+DELETE https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
 ```
 
 

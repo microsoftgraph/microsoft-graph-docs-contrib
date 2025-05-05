@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/profilesource-update-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have [People Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have [People Administrator](https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
 
 ## HTTP request
 
@@ -36,7 +36,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /admin/people/profileSources/{profileSourceId}
+PATCH /admin/people/profileSources/27f1af7b-b166-4f5b-b994-ae135a581547
+```
+
+## HTTP request with sourceId alternate-key
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /admin/people/profileSources(sourceId='bamboohr1')
 ```
 
 ## Request headers
@@ -77,18 +87,25 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/people/profileSources/{profileSourceId}
+PATCH https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.profileSource",
-  "sourceId": "String",
-  "kind": "String",
-  "displayName": "String",
-  "webUrl": "String",
+  "sourceId": "bamboohr1",
+  "kind": "BambooHR",
+  "displayName": "BambooHR Updated",
+  "webUrl": "https://bamboohr.contoso.com/login/",
   "localizations": [
     {
-      "@odata.type": "microsoft.graph.profileSourceLocalization"
+      "displayName" = "HR-Platform"
+      "webUrl" = "http://bamboohr.contoso.com/en-us/login/"
+      "languageTag" = "en-us"
+    },
+    {
+      "displayName" = "HR-Plattform"
+      "webUrl" = "http://bamboohr.contoso.com/de/login/"
+      "languageTag" = "de"
     }
   ]
 }
@@ -101,8 +118,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.profileSource"
+  "truncated": true
 }
 -->
 ``` http
@@ -111,16 +127,22 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.profileSource",
-  "id": "246c78b8-1a53-f072-6bc8-5869b3e5bee0",
-  "sourceId": "String",
-  "kind": "String",
-  "displayName": "String",
-  "webUrl": "String",
+  "id" : "27f1af7b-b166-4f5b-b994-ae135a581547",
+  "sourceId": "bamboohr1",
+  "kind": "BambooHR",
+  "displayName": "BambooHR Updated",
+  "webUrl": "https://bamboohr.contoso.com/login/",
   "localizations": [
     {
-      "@odata.type": "microsoft.graph.profileSourceLocalization"
+      "displayName" = "HR-Platform"
+      "webUrl" = "http://bamboohr.contoso.com/en-us/login/"
+      "languageTag" = "en-us"
+    },
+    {
+      "displayName" = "HR-Plattform"
+      "webUrl" = "http://bamboohr.contoso.com/de/login/"
+      "languageTag" = "de"
     }
   ]
 }
 ```
-

@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-post-profilesources-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have [People Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have [People Administrator](https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
 
 ## HTTP request
 
@@ -83,15 +83,16 @@ POST https://graph.microsoft.com/beta/admin/people/profileSources
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.profileSource",
-  "sourceId": "String",
-  "kind": "String",
-  "displayName": "String",
-  "webUrl": "String",
+  "sourceId": "bamboohr1",
+  "displayName": "HR Platform",
+  "kind": "BambooHR",
+  "webUrl": "https://bamboohr.contoso.com/login/",
   "localizations": [
     {
-      "@odata.type": "microsoft.graph.profileSourceLocalization"
-    }
+	  "displayName" : "HR-Plattform"
+      "webUrl" : "http://bamboohr.contoso.com/de/login/"
+      "languageTag" : "de"
+	  }
   ]
 }
 ```
@@ -113,15 +114,17 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.profileSource",
-  "id": "246c78b8-1a53-f072-6bc8-5869b3e5bee0",
-  "sourceId": "String",
-  "kind": "String",
-  "displayName": "String",
-  "webUrl": "String",
+  "id": "27f1af7b-b166-4f5b-b994-ae135a581547",
+  "sourceId": "bamboohr1",
+  "displayName": "HR Platform",
+  "kind": "BambooHR",
+  "webUrl": "https://bamboohr.contoso.com/login/",
   "localizations": [
     {
-      "@odata.type": "microsoft.graph.profileSourceLocalization"
-    }
+	  "displayName" : "HR-Plattform"
+      "webUrl" : "http://bamboohr.contoso.com/de/login/"
+      "languageTag" : "de"
+	  }
   ]
 }
 ```

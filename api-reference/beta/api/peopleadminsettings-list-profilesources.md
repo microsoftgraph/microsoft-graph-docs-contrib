@@ -88,18 +88,39 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.profileSource",
-      "id": "246c78b8-1a53-f072-6bc8-5869b3e5bee0",
-      "sourceId": "String",
-      "kind": "String",
-      "displayName": "String",
-      "webUrl": "String",
+      "id": "27f1af7b-b166-4f5b-b994-ae135a581547",
+      "sourceId": "bamboohr1",
+      "kind": "BambooHR",
+      "displayName": "HR Platform",
+      "webUrl": "https://bamboohr.contoso.com/login/",
       "localizations": [
         {
-          "@odata.type": "microsoft.graph.profileSourceLocalization"
+          "displayName" = "HR-Platform"
+          "webUrl" = "http://bamboohr.contoso.com/en-us/login/"
+          "languageTag" = "en-us"
+        },
+        {
+          "displayName" : "HR-Plattform"
+          "webUrl" : "http://bamboohr.contoso.com/de/login/"
+          "languageTag" : "de"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.profileSource",
+      "id": "520c18f8-0284-4d79-9b14-8a2d74461370",
+      "sourceId": "4ce763dd-9214-4eff-af7c-da491cc3782d",
+      "kind": "MSEntra",
+      "displayName": "Contoso Microsoft Entra",
+      "webUrl": "https://login.microsoftonline.com",
+      "localizations": [
+        {
+          "displayName" : "Contoso Microsoft Entra"
+          "webUrl" : "https://login.microsoftonline.com"
+          "languageTag" : "en-us"
         }
       ]
     }
   ]
 }
 ```
-
