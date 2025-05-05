@@ -92,7 +92,7 @@ Content-Type: application/json
     "userOverridePrivacy": null,
     "allowedAudiences": null,
     "prioritizedSourceUrls": [
-      "https://login.microsoftonline.com"
+      "login.microsoftonline.com/"
     ]
   }
 }

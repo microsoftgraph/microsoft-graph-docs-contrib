@@ -109,7 +109,8 @@ Content-Type: application/json
   "userOverridePrivacy": null,
   "allowedAudiences": null,
   "prioritizedSourceUrls": [
-    "/external/connections/contosohr1"
+    "/external/connections/contosohr1",
+    "login.microsoftonline.com/"
   ]
 }
 ```
