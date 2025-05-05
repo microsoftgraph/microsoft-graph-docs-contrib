@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Create a standard or temporary QR code, if there is no active QR code, or update a standard QR code. Only the **expireDateTime** property can be updated for a standard QR code.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 ### Permissions acting on self
