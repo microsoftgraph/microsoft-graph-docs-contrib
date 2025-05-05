@@ -73,16 +73,14 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/people/profilePropertySettings/{profilePropertySettingId}
+PATCH https://graph.microsoft.com/beta/admin/people/profilePropertySettings/00000000-0000-0000-0000-000000000001
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.profilePropertySetting",
-  "name": "String",
-  "allowedAudiences": "String",
-  "isUserOverrideForAudienceEnabled": "Boolean",
   "prioritizedSourceUrls": [
-    "String"
+    "/external/connections/contosohr2",
+    "/external/connections/contosohr1"
   ]
 }
 ```
@@ -104,12 +102,13 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.profilePropertySetting",
-  "id": "2e322404-b5d8-f816-99fa-21d7f1206a71",
-  "name": "String",
-  "allowedAudiences": "String",
-  "isUserOverrideForAudienceEnabled": "Boolean",
+  "id": "00000000-0000-0000-0000-000000000001",
+  "name": null,
+  "userOverridePrivacy": null,
+  "allowedAudiences": null,
   "prioritizedSourceUrls": [
-    "String"
+    "/external/connections/contosohr2",
+    "/external/connections/contosohr1"
   ]
 }
 ```

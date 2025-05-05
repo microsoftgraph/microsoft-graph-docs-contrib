@@ -88,12 +88,12 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.profilePropertySetting",
-      "id": "2e322404-b5d8-f816-99fa-21d7f1206a71",
-      "name": "String",
-      "allowedAudiences": "String",
-      "isUserOverrideForAudienceEnabled": "Boolean",
+      "id": "00000000-0000-0000-0000-000000000001",
+      "name": null,
+      "userOverridePrivacy": null,
+      "allowedAudiences": null,
       "prioritizedSourceUrls": [
-        "String"
+        "https://login.microsoftonline.com"
       ]
     }
   ]

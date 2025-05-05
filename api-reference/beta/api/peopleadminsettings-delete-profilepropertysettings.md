@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/people/profilePropertySettings/{profilePropertySettingId}/$ref
+DELETE /admin/people/profilePropertySettings/{profilePropertySettingId}
 ```
 
 ## Request headers
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/people/profilePropertySettings/{profilePropertySettingId}
+DELETE https://graph.microsoft.com/beta/admin/people/profilePropertySettings/00000000-0000-0000-0000-000000000001
 ```
 
 

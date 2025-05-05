@@ -100,7 +100,7 @@ Use the [update](/graph/api/profilepropertysetting-update?view=graph-rest-beta&p
 #### Request
 
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/people/profilePropertySettings/{profilePropertySettingId}
+PATCH https://graph.microsoft.com/beta/admin/people/profilePropertySettings/00000000-0000-0000-0000-000000000001
 Content-Type: application/json
 
 {
@@ -139,7 +139,7 @@ Use the [delete](/graph/api/peopleadminsettings-delete-profilepropertysettings?v
 #### Request
 
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/people/profilePropertySettings/{profilePropertySettingId}
+DELETE https://graph.microsoft.com/beta/admin/people/profilePropertySettings/00000000-0000-0000-0000-000000000001
 ```
 
 If successful, the response returns a `204 OK` response code.
