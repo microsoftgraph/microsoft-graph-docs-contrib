@@ -19,6 +19,7 @@ The collection of priority source URLs is ordered in the order of data precedenc
 >*Note:* The `name` property **MUST** be empty to differentiate it from other property-level settings in the collection which have a `name` property, i.e., only one configuration without a name is allowed per profile property settings collection.
 
 > [!IMPORTANT]
+> Setting a new profile source as a priority will change the values of properties that users in your organization see on their profiles. 
 > By default, Microsoft Entra ID is the prioritized source of profile data in an organization.
 
 
