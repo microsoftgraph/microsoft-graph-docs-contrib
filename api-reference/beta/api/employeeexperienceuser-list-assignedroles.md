@@ -69,7 +69,7 @@ Example 1: Get a list of all the roles assigned to a signed-in user in Viva Enga
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_assignedrole"
+  "name": "list_assignedrole_me"
 }
 -->
 ``` http
@@ -116,11 +116,11 @@ Example 2: Get a list of all the roles assigned to a user in Viva Engage.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_assignedrole"
+  "name": "list_assignedrole_user"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users{user-id}/employeeExperience/assignedRoles
+GET https://graph.microsoft.com/beta/users/{user-id}/employeeExperience/assignedRoles
 
 ```
 
@@ -139,7 +139,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users{user-id}/employeeExperience/assignedRoles",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/{user-id}/employeeExperience/assignedRoles",
   "value": [
     {
         "id": "ec791927-d09f-4f91-bd76-d3b05e1c1a31",
