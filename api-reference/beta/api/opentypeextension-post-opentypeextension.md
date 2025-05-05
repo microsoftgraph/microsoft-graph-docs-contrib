@@ -40,6 +40,7 @@ Depending on the resource you're creating the extension in and the permission ty
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported. | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [site](../resources/site.md) | Sites.ReadWrite.All | Not supported. | Not supported. |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [user](../resources/user.md) | User.ReadWrite | Not supported. | User.ReadWrite.All |
 | [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
@@ -93,6 +94,7 @@ POST /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions
 POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}/extensions
 POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions
 POST /drive/items/{itemId}/extensions
+POST /sites/{siteId}/extensions
 ```
 
 >**Note:** This syntax shows some common ways to identify a resource instance, in order to create an
@@ -879,6 +881,49 @@ Content-type: application/json
       "myCustomBool": false
     }
   ]
+}
+```
+
+### Request 8
+
+The following example shows how to create an open extension on a existing **site**.
+
+```http
+POST /sites/8f52f9ad-4f4f-4739-b682-7c0283207937/extensions
+
+{
+    "extensionName": "myCustomExtension",
+    "myCustomString": "Contoso data",
+    "myCustomBool": false
+}
+```
+
+---
+
+---
+
+### Response 8
+
+The following example shows the response, including the properties of the new extension:
+
+- The **id** property with the fully qualified name.
+- The default property **extensionName** specified in the request.
+- The custom data specified in the request stored as 2 custom properties.
+
+Note: The response object shown here might be shortened for readability.
+
+<!-- {
+"blockType": "ignored",
+}-->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "id": "myCustomExtension",
+    "extensionName": "myCustomExtension",
+    "myCustomString": "Contoso data",
+    "myCustomBool": false
 }
 ```
 

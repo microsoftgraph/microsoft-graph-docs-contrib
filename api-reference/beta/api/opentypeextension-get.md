@@ -24,8 +24,8 @@ The following table lists the three scenarios where you can get an open extensio
 
 |**GET scenario**|**Supported resources**|**Response body**|
 |:-----|:-----|:-----|
-|Get a specific extension from a known resource instance.| [Administrative unit](../resources/administrativeunit.md) <br/> [baseTask](../resources/basetask.md) (deprecated) <br/> [baseTaskList](../resources/basetasklist.md) (deprecated) <br/> [device](../resources/device.md) <br/> [event](../resources/event.md) <br/> [group](../resources/group.md) <br/> [group event](../resources/event.md) <br/> [group post](../resources/post.md) <br/> [message](../resources/message.md) <br/> [organization](../resources/organization.md) <br/> [personal contact](../resources/contact.md) <br/> [user](../resources/user.md) <br/> [todoTask](../resources/todotask.md) <br/> [todoTaskList](../resources/todotasklist.md)  | Open extension only.|
-|Get a known resource instance expanded with a specific extension.|Administrative unit, base task, base task list, device, event, group, group event, group post, message, organization, personal contact, user, to-do task, to-do task list. |A resource instance expanded with the open extension.|
+|Get a specific extension from a known resource instance.| [Administrative unit](../resources/administrativeunit.md) <br/> [baseTask](../resources/basetask.md) (deprecated) <br/> [baseTaskList](../resources/basetasklist.md) (deprecated) <br/> [device](../resources/device.md) <br/> [driveItem](../resources/driveitem.md) <br/> [event](../resources/event.md) <br/> [group](../resources/group.md) <br/> [group event](../resources/event.md) <br/> [group post](../resources/post.md) <br/> [message](../resources/message.md) <br/> [organization](../resources/organization.md) <br/> [personal contact](../resources/contact.md) <br/> [site](../resources/site.md) <br/> [todoTask](../resources/todotask.md) <br/> [todoTaskList](../resources/todotasklist.md) <br/> [user](../resources/user.md)| Open extension only.|
+|Get a known resource instance expanded with a specific extension.|Administrative unit, base task, base task list, device, driveItem, event, group, group event, group post, message, organization, personal contact, user, to-do task, to-do task list. |A resource instance expanded with the open extension.|
 |Find and expand resource instances with a specific extension. | Base task, base task list, event, group event, group post, message, personal contact, to-do task, to-do task list |Resource instances expanded with the open extension.|
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -45,6 +45,7 @@ Depending on the resource that contains the extension and the permission type (d
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [organization](../resources/organization.md) | User.Read | Not supported. | Organization.Read.All |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [site](../resources/site.md) | Sites.Read.All | Not supported. | Not supported. |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [user](../resources/user.md) | User.Read | Not supported. | User.Read.All |
@@ -77,6 +78,7 @@ GET /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions/{extensionI
 GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{baseTaskId}/extensions/{extensionId}
 GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions/{extensionId}
 GET /drive/items/{itemId}/extensions/{extensionId}
+GET /sites/{siteId}/extensions/{extensionId}
 ```
 
 ### Get a known resource instance expanded with a matching extension 
@@ -755,6 +757,39 @@ Content-type: application/json
 }
 ```
 
+****
+
+
+#### Request 7
+
+The fourth example references an extension by its fully qualified name and gets the extension in the specified **site**.
+
+```msgraph-interactive
+GET https://graph.microsoft.com/sites/8f52f9ad-4f4f-4739-b682-7c0283207937/extensions/myCustomExtension
+```
+
+---
+
+#### Response 7
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.openTypeExtension"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "myCustomExtension",
+    "extensionName": "extensionName",
+    "myCustomString": "Contoso data",
+    "myCustomBool": false
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

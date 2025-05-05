@@ -37,6 +37,7 @@ Depending on the resource you're deleting the extension from and the permission 
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported. | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [site](../resources/site.md) | Sites.ReadWrite.All | Not supported. | Not Supported. |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [user](../resources/user.md) | User.ReadWrite | Not supported. | User.ReadWrite.All |
@@ -65,6 +66,7 @@ DELETE /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 DELETE /users/me/tasks/lists/{listId}/extensions/{extensionId}
 DELETE /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 DELETE /drive/items/{itemId}/extensions/{extensionId}
+DELETE /sites/{site-id}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
@@ -235,3 +237,24 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+****
+
+### Request 4
+
+The following example shows how to delete an extension by its name from the specified **site**.
+```http
+DELETE https://graph.microsoft.com/beta/drive/sites/8f52f9ad-4f4f-4739-b682-7c0283207937/extensions/Com.Contoso.Referral
+```
+
+---
+
+### Response 4
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
+```http
+HTTP/1.1 204 No Content
+```

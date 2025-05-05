@@ -34,6 +34,7 @@ The following resource support open extensions:
 + [message](/graph/api/resources/message)
 + [organization](/graph/api/resources/organization)
 + [post](/graph/api/resources/post)
++ [site](site.md)
 + [todoTask](todotask.md) 
 + [todoTaskList](todotasklist.md)
 + [baseTaskList](basetasklist.md) (deprecated)

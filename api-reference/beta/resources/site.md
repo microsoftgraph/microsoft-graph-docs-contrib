@@ -50,6 +50,10 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
 | [Get delta](../api/site-delta.md)                 | GET /sites/delta                                            |
+| [Create open extension](../api/opentypeextension-post-opentypeextension.md)                         | POST /sites/{site-id}/extensions                            |
+| [Get open extension](../api/opentypeextension-get.md)                            | GET /sites/{site-id}/extensions                             |
+| [Update open extension](../api/opentypeextension-update.md)                         | PATCH /sites/{site-id}/extensions                           |
+| [Delete open extension](../api/opentypeextension-delete.md)                         | DELETE /sites/{site-id}/extensions                          |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -93,6 +97,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
 | **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.                                          |
+| **extensions**           | [extension](extension.md) collection | The collection of open extensions defined for this site. Nullable.|
 
 ### id property
 
