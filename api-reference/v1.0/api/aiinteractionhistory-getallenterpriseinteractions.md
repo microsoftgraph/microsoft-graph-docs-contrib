@@ -1,7 +1,7 @@
 ﻿---
 title: "aiInteractionHistory: getAllEnterpriseInteractions" 
 description: "Get all Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses."
-ms.date: 5/01/2025
+ms.date: 5/4/2025
 author: "bkeerthivasa"
 ms.localizationpriority: high
 ms.subservice: "teams"

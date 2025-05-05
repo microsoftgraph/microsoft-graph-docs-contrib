@@ -1,7 +1,7 @@
 ---
 title: "aiInteractionAttachment resource type"
 description: "Represents a message attachment, such as cards and images."
-ms.date: 5/1/2024
+ms.date: 5/4/2025
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "bkeerthivasa"

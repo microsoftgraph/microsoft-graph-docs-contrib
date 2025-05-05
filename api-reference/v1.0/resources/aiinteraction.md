@@ -1,7 +1,7 @@
 ---
 title: "aiInteraction resource type"
 description: "Represents an interaction between a user and Copilot."
-ms.date: 5/1/2024
+ms.date: 5/4/2025
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "bkeerthivasa"

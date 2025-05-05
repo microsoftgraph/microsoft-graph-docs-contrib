@@ -1,18 +1,16 @@
 ---
 title: "copilotRoot resource type"
 description: "A container for Microsoft 365 Copilot admin controls."
-author: "gautamjain14"
+author: "bkeerthivasa"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: resourcePageType
-ms.date: 11/12/2024
+ms.date: 05/4/2025
 ---
 
 # copilotRoot resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A container for Microsoft 365 Copilot admin controls.
 
@@ -41,4 +39,3 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.copilotRoot"
 }
 ```
-

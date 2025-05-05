@@ -1,7 +1,7 @@
 ---
 title: "aiInteractionMentionedIdentitySet resource type"
 description: "Represents an entity mentioned in an AI interaction."
-ms.date: 5/1/2024
+ms.date: 5/4/2025
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "bkeerthivasa"

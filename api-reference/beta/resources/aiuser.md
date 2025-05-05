@@ -28,7 +28,7 @@ None.
 ## Relationships
 | Relationship | Type | Description |
 |:-------------|:-----|:------------|
-| interactionHistory  | [aiInteractionHistory](../resources/aiinteractionhistory.md) collection | The history of interactions between AI agents and users. |
+| interactionHistory  | [aiInteractionHistory](../resources/aiinteractionhistory.md) | The history of interactions between AI agents and users. |
 
 ## JSON representation
 

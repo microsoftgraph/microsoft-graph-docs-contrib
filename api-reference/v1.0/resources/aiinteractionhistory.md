@@ -1,7 +1,7 @@
 ---
 title: "aiInteractionHistory resource type"
 description: "Represents a list of messages exchanged involving AI."
-ms.date: 5/1/2024
+ms.date: 5/4/2024
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "bkeerthivasa"
