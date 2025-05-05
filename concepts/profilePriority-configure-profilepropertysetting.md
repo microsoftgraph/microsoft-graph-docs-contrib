@@ -51,7 +51,7 @@ Content-Type: application/json
       "userOverridePrivacy": null,
       "allowedAudiences": null,
       "prioritizedSourceUrls": [
-        "login.microsoftonline.com/"
+        "https://login.microsoftonline.com"
       ]
     }
   ]
@@ -90,7 +90,7 @@ Content-type: application/json
   "allowedAudiences": null,
   "prioritizedSourceUrls": [
     "/external/connections/contosohr1",
-    "login.microsoftonline.com/"
+    "https://login.microsoftonline.com"
   ]
 }
 ```

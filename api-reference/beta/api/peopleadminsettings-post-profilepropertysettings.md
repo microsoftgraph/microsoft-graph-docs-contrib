@@ -110,7 +110,7 @@ Content-Type: application/json
   "allowedAudiences": null,
   "prioritizedSourceUrls": [
     "/external/connections/contosohr1",
-    "login.microsoftonline.com/"
+    "https://.microsoftonline.com"
   ]
 }
 ```
