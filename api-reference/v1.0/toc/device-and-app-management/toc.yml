@@ -165,6 +165,10 @@ items:
       href: ../../api/cloudpcusersetting-delete.md
     - name: Assign
       href: ../../api/cloudpcusersetting-assign.md
+  - name: Complex types
+    items:
+    - name: Cloud PC provisioning policy autopatch
+      href: ../../resources/cloudpcprovisioningpolicyautopatch.md
 - name: Cloud printing
   displayName: Universal Print
   items:
@@ -370,6 +374,8 @@ items:
         href: ../../api/reports-getprinterarchivedprintjobs.md
   - name: Complex types
     items:
+    - name: Air print settings
+      href: ../../resources/airprintsettings.md
     - name: App identity
       href: ../../resources/appidentity.md
     - name: Archived print job
@@ -398,6 +404,8 @@ items:
       href: ../../resources/printercapabilities.md
     - name: Printer defaults
       href: ../../resources/printerdefaults.md
+    - name: Printer discovery settings
+      href: ../../resources/printerdiscoverysettings.md
     - name: Printer location
       href: ../../resources/printerlocation.md
     - name: Printer share viewpoint
@@ -2121,6 +2129,42 @@ items:
         href: ../../api/intune-devices-manageddevice-delete.md
       - name: Update managedDevice
         href: ../../api/intune-devices-manageddevice-update.md
+      - name: Retire action
+        href: ../../api/intune-devices-manageddevice-retire.md
+      - name: Wipe action
+        href: ../../api/intune-devices-manageddevice-wipe.md
+      - name: resetPasscode action
+        href: ../../api/intune-devices-manageddevice-resetpasscode.md
+      - name: remoteLock action
+        href: ../../api/intune-devices-manageddevice-remotelock.md
+      - name: requestRemoteAssistance action
+        href: ../../api/intune-devices-manageddevice-requestremoteassistance.md
+      - name: disableLostMode action
+        href: ../../api/intune-devices-manageddevice-disablelostmode.md
+      - name: locateDevice action
+        href: ../../api/intune-devices-manageddevice-locatedevice.md
+      - name: bypassActivationLock action
+        href: ../../api/intune-devices-manageddevice-bypassactivationlock.md
+      - name: rebootNow action
+        href: ../../api/intune-devices-manageddevice-rebootnow.md
+      - name: shutDown action
+        href: ../../api/intune-devices-manageddevice-shutdown.md
+      - name: recoverPasscode action
+        href: ../../api/intune-devices-manageddevice-recoverpasscode.md
+      - name: cleanWindowsDevice action
+        href: ../../api/intune-devices-manageddevice-cleanwindowsdevice.md
+      - name: logoutSharedAppleDeviceActiveUser action
+        href: ../../api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md
+      - name: deleteUserFromSharedAppleDevice action
+        href: ../../api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md
+      - name: syncDevice action
+        href: ../../api/intune-devices-manageddevice-syncdevice.md
+      - name: windowsDefenderScan action
+        href: ../../api/intune-devices-manageddevice-windowsdefenderscan.md
+      - name: windowsDefenderUpdateSignatures action
+        href: ../../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md
+      - name: updateWindowsDeviceAccount action
+        href: ../../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md
     - name: Managed device overview
       items:
       - name: Managed device overview

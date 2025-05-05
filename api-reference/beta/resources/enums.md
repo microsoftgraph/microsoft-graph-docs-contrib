@@ -712,6 +712,23 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | authenticationTransfer |
 | nativeAuth |
+| implicitAccessTokenAndGetResponseMode |
+| implicitIdTokenAndGetResponseMode |
+| implicitAccessTokenAndPostResponseMode |
+| implicitIdTokenAndPostResponseMode |
+| authorizationCodeWithoutPkce |
+| authorizationCodeWithPkce |
+| clientCredentials |
+| refreshTokenGrant |
+| encryptedAuthorizeResponse |
+| directUserGrant |
+| kerberos |
+| prtGrant |
+| seamlessSso |
+| prtBrokerBased |
+| prtNonBrokerBased |
+| onBehalfOf |
+| samlOnBehalfOf |
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
@@ -1846,6 +1863,14 @@ Namespace: microsoft.graph
 | issuerSubjectAndPolicyOID |
 
 ### x509CertificateIssuerHintsState values
+
+| Member |
+| ---- |
+| disabled |
+| enabled |
+| unknownFutureValue |
+
+### x509CertificateCRLValidationConfigurationState values
 
 | Member |
 | ---- |
@@ -3399,6 +3424,7 @@ Possible values for user account types (group membership), per Windows definitio
 | driveItem |
 | user |
 | teamsChannel|
+| plannerTask|
 
 ### plannerPlanContextType values
 
@@ -4217,6 +4243,7 @@ Possible values for user account types (group membership), per Windows definitio
 | federatedSingleFactor |
 | federatedMultiFactor |
 | unknownFutureValue |
+| qrCodePin |
 
 ### baseAuthenticationMethod values
 
@@ -4986,6 +5013,52 @@ Possible values for user account types (group membership), per Windows definitio
 | all |
 | unknownFutureValue |
 
+### whatIfAnalysisReasons values 
+
+|Member|
+|:---|
+|notSet|
+|notEnoughInformation|
+|invalidCondition|
+|users|
+|workloadIdentities|
+|application|
+|userActions|
+|authenticationContext|
+|devicePlatform|
+|devices|
+|clientApps|
+|location|
+|signInRisk|
+|emptyPolicy|
+|invalidPolicy|
+|policyNotEnabled|
+|userRisk|
+|time|
+|insiderRisk|
+|authenticationFlow|
+|unknownFutureValue|
+
+### insiderRiskLevel values 
+
+
+|Member|
+|:---|
+|none|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+
+### userAction values 
+
+
+|Member|
+|:---|
+|registerSecurityInformation|
+|registerOrJoinDevices|
+|unknownFutureValue|
+
 ### callEventType values
 
 | Member |
@@ -5005,13 +5078,6 @@ Possible values for user account types (group membership), per Windows definitio
 |completedWithErrors|
 |unknownFutureValue|
 
-### cloudPCPerformanceReportName values
-
-| Member                 |
-| ---------------------- |
-| performanceTrendReport | 
-| unknownFutureValue     |
-
 ### cloudPCInaccessibleReportName values
 
 | Member                         |
@@ -5019,6 +5085,7 @@ Possible values for user account types (group membership), per Windows definitio
 | inaccessibleCloudPcReports     |
 | inaccessibleCloudPcTrendReport |
 | unknownFutureValue             |
+| regionalInaccessibleCloudPcTrendReport |
 
 ### nonAdminSetting values
 
@@ -5114,6 +5181,15 @@ Possible values for user account types (group membership), per Windows definitio
 |bulk|
 |unknownFutureValue|
 
+### cloudPcPolicyApplyActionStatus values
+
+|Member|
+|:---|
+|processing|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
 ### mailboxType values 
 
 |Member|
@@ -5132,4 +5208,33 @@ Possible values for user account types (group membership), per Windows definitio
 |tls_client_auth_san_uri|
 |tls_client_auth_san_ip|
 |tls_client_auth_san_email|
+|unknownFutureValue|
+
+### mailFolderOperationStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### errorCorrectionLevel values 
+
+|Member|
+|:---|
+|l|
+|m|
+|q|
+|h|
+|unknownFutureValue|
+
+### protectionSource values 
+
+|Member|
+|:---|
+|none|
+|manual|
+|dynamicRule|
 |unknownFutureValue|

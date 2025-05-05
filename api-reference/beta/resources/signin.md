@@ -5,7 +5,7 @@ description: "Provides details about user or application sign-in activity in you
 author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
-ms.date: 11/14/2024
+ms.date: 01/23/2025
 ---
 
 
@@ -18,9 +18,6 @@ Namespace: microsoft.graph
 Provides details about user or application sign-in activity in your directory. You must have a Microsoft Entra ID P1 or P2 license to download sign-in logs using the Microsoft Graph API.
 
 The [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) govern the availability of sign-in logs.
-
-> [!NOTE]
-> This API returns only interactive sign-ins unless you set an explicit filter. For example, the filter for getting non-interactive sign-ins is `https://graph.microsoft.com/beta/auditLogs/signIns?&$filter=signInEventTypes/any(t: t eq 'nonInteractiveUser')`.
 
 ## Methods
 
@@ -37,6 +34,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |appDisplayName|String|The application name displayed in the Microsoft Entra admin center. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |appId|String|The application identifier in Microsoft Entra ID. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that the corresponding sign-in activity triggers. Apps need more Conditional Access-related privileges to read the details of this property. For more information, see [Permissions for viewing applied conditional access (CA) policies in sign-ins](../api/signin-list.md#permissions).|
+|appOwnerTenantId|String|The identifier of the tenant that owns the client application. <br/><br/> Supports `$filter` (`eq`).|
 |appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, which the corresponding events in the sign-in event triggered.|
 |appTokenProtectionStatus|tokenProtectionStatus|Token protection creates a cryptographically secure tie between the token and the device it's issued to. This field indicates whether the app token was bound to the device.|
 |authenticationAppDeviceDetails|[authenticationAppDeviceDetails](../resources/authenticationappdevicedetails.md)|Provides details about the app and device used during a Microsoft Entra authentication step.|
@@ -45,7 +43,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |authenticationDetails|[authenticationDetail](authenticationdetail.md) collection|The result of the authentication attempt and more details on the authentication method.|
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
 |authenticationProcessingDetails|[keyValue](keyvalue.md) collection|More authentication processing details, such as the agent name for PTA and PHS, or a server or farm name for federated authentication.|
-|authenticationProtocol|protocolType|Lists the protocol type or grant type used in the authentication. The possible values are: `none`, `oAuth2`, `ropc`, `wsFederation`, `saml20`, `deviceCode`, `unknownFutureValue`, `authenticationTransfer`, `nativeAuth`. Use `none` for all authentications that don't have a specific value in that list. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `authenticationTransfer`, `nativeAuth`. |
+|authenticationProtocol|protocolType|Lists the protocol type or grant type used in the authentication. The possible values are: `none`, `oAuth2`, `ropc`, `wsFederation`, `saml20`, `deviceCode`, `unknownFutureValue`, `authenticationTransfer`, `nativeAuth`, `implicitAccessTokenAndGetResponseMode`, `implicitIdTokenAndGetResponseMode`, `implicitAccessTokenAndPostResponseMode`, `implicitIdTokenAndPostResponseMode`, `authorizationCodeWithoutPkce`, `authorizationCodeWithPkce`, `clientCredentials`, `refreshTokenGrant`, `encryptedAuthorizeResponse`, `directUserGrant`, `kerberos`, `prtGrant`, `seamlessSso`, `prtBrokerBased`, `prtNonBrokerBased`, `onBehalfOf`, `samlOnBehalfOf`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `authenticationTransfer` , `nativeAuth` , `implicitAccessTokenAndGetResponseMode` , `implicitIdTokenAndGetResponseMode` , `implicitAccessTokenAndPostResponseMode` , `implicitIdTokenAndPostResponseMode` , `authorizationCodeWithoutPkce` , `authorizationCodeWithPkce` , `clientCredentials` , `refreshTokenGrant` , `encryptedAuthorizeResponse` , `directUserGrant` , `kerberos` , `prtGrant` , `seamlessSso` , `prtBrokerBased` , `prtNonBrokerBased` , `onBehalfOf` , `samlOnBehalfOf`. |
 |authenticationRequirement | String | This holds the highest level of authentication needed through all the sign-in steps, for sign-in to succeed. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |authenticationRequirementPolicies|[authenticationRequirementPolicy](../resources/authenticationrequirementpolicy.md) collection|Sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults.|
 |autonomousSystemNumber|Int32|The Autonomous System Number (ASN) of the network used by the actor.|
@@ -79,6 +77,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |processingTimeInMilliseconds|Int|The request processing time in milliseconds in AD STS.|
 |resourceDisplayName|String|The name of the resource that the user signed in to. <br/><br/> Supports `$filter` (`eq`).|
 |resourceId|String|The identifier of the resource that the user signed in to. <br/><br/> Supports `$filter` (`eq`).|
+|resourceOwnerTenantId|String|The identifier of the owner of the resource. <br/><br/> Supports `$filter` (`eq`).|
 |resourceServicePrincipalId|String|The identifier of the service principal representing the target resource in the sign-in event.|
 |resourceTenantId|String|The tenant identifier of the resource referenced in the sign in.|
 |riskDetail|riskDetail|The reason behind a specific state of a risky user, sign-in, or a risk event. The possible values are `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `m365DAdminDismissedDetection`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`.  Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `m365DAdminDismissedDetection`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`.The value `none` means that Microsoft Entra risk detection hasn't flagged the user or the sign-in as a risky event so far. <br/><br/> Supports `$filter` (`eq`).<br> **Note:** Details for this property are only available for Microsoft Entra ID P2 customers. All other customers are returned `hidden`.|
@@ -91,7 +90,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |servicePrincipalId|String|The application identifier used for sign-in. This field is populated when you're signing in using an application. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |servicePrincipalName|String|The application name used for sign-in. This field is populated when you're signing in using an application. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |sessionLifetimePolicies|[sessionLifetimePolicy](sessionlifetimepolicy.md) collection|Any conditional access session management policies that were applied during the sign-in event.|
-|signInEventTypes|String collection|Indicates the category of sign in that the event represents. For user sign ins, the category can be `interactiveUser` or `nonInteractiveUser` and corresponds to the value for the **isInteractive** property on the signin resource. For managed identity sign ins, the category is `managedIdentity`. For service principal sign-ins, the category is **servicePrincipal**. Possible values are: `interactiveUser`, `nonInteractiveUser`, `servicePrincipal`, `managedIdentity`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `ne`).|
+|signInEventTypes|String collection|Indicates the category of sign in that the event represents. For user sign ins, the category can be `interactiveUser` or `nonInteractiveUser` and corresponds to the value for the **isInteractive** property on the signin resource. For managed identity sign ins, the category is `managedIdentity`. For service principal sign-ins, the category is **servicePrincipal**. Possible values are: `interactiveUser`, `nonInteractiveUser`, `servicePrincipal`, `managedIdentity`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `ne`). <br/><br/>**NOTE:** Only interactive sign-ins are returned unless you set an explicit filter. For example, the filter for getting non-interactive sign-ins is `https://graph.microsoft.com/beta/auditLogs/signIns?&$filter=signInEventTypes/any(t: t eq 'nonInteractiveUser')`.|
 |sessionId|String|Identifier of the session that was generated during the sign-in.|
 |signInIdentifier|String|The identification that the user provided to sign in. It can be the userPrincipalName, but is also populated when a user signs in using other identifiers.|
 |signInIdentifierType|signInIdentifierType|The type of sign in identifier. Possible values are: `userPrincipalName`, `phoneNumber`, `proxyAddress`, `qrCode`, `onPremisesUserPrincipalName`, `unknownFutureValue`.|
@@ -162,6 +161,7 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.keyValue"
     }
   ],
+  "authenticationProtocol": "String",
   "authenticationRequirement": "String",
   "authenticationRequirementPolicies": [
     {

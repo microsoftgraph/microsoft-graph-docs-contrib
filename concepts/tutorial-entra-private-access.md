@@ -1,45 +1,48 @@
 ---
 title: Configure Microsoft Entra Private Access using Microsoft Graph APIs
-description: Configure Microsoft Entra Private Access using Microsoft Graph APIs.
+description: Learn how to configure Microsoft Entra Private Access using Microsoft Graph APIs for secure remote access to on-premises apps without a VPN.
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: nbeesetti
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
-ms.date: 05/14/2024
-#Customer intent: As a customer, I want to learn how to configure Microsoft Entra Private Access using Microsoft Graph APIs.
+ms.date: 04/25/2025
+#Customer intent: As a customer, I want to learn how to configure Microsoft Entra Private Access using Microsoft Graph APIs for secure remote access.
 ---
 
 # Configure Microsoft Entra Private Access using Microsoft Graph APIs
 
-[Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access) allows users remote access to on-premises applications without the need for a VPN.
+[Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access) enables secure remote access to on-premises apps without requiring a VPN.
 
-In this tutorial, you learn how to configure Microsoft Entra Private Access programatically using the Microsoft Graph network access APIs. You:
+This tutorial explains how to configure Microsoft Entra Private Access using Microsoft Graph network access APIs. You will:
 
 > [!div class="checklist"]
-> * Instantiate a custom application that you use to configure application settings for your backend application.
-> * Configure Microsoft Entra application proxy for a private access application.
+> * Create a custom app to configure backend app settings.
+> * Set up Microsoft Entra application proxy for private access.
 
 > [!IMPORTANT]
 > Some API operations in this tutorial use the `beta` endpoint.
 
 ## Prerequisites
 
-To complete the steps in this tutorial:
+To follow this tutorial:
 
-- Install and configure the Private Network Access connector. For more information, see [Add an on-premises application for remote access through application proxy in Microsoft Entra ID](/entra/identity/app-proxy/application-proxy-add-on-premises-application).
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has supported administrator roles. The following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) are the least pivileged for the operations in this tutorial:
-  - Application Administrator for creating the app
-  - Global Secure Access Administrator for configuring the Global Secure Access-related settings on the app
-- Grant consent to the app for the *Directory.ReadWrite.All* and *NetworkAccess.ReadWrite.All* delegated permissions.
-- Have a test user to assign to the application.
+- Have a Microsoft Entra tenant with the Microsoft Entra Suite license.
+- Install and set up the Private Network Access connector. For more information, see [Add an on-premises application for remote access through application proxy in Microsoft Entra ID](/entra/identity/app-proxy/application-proxy-add-on-premises-application).
+- Sign in to an API client like [Graph Explorer](https://aka.ms/ge) with an account that has the required administrator roles. The following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) are the minimum needed for this tutorial:
+  - Application Administrator to create the app.
+  - Global Secure Access Administrator to configure Global Secure Access settings on the app.
+- Grant the app *Directory.ReadWrite.All* and *NetworkAccess.ReadWrite.All* delegated permissions.
+- Have a test user to assign to the app.
 
 ## Step 1: Create a custom application
 
-To configure application proxy, you first create a custom application, and then update the app proxy settings in the application's **onPremisesPublishing** property. In this tutorial, you use an application template to create an instance of a custom application and service principal in your tenant. The template ID for a custom application is `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`, which you can discover by running the following query: [GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'Custom'](https://developer.microsoft.com/en-us/graph/graph-explorer?request=applicationTemplates%3F%24filter%3DdisplayName%2Beq%2B'Custom'&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com).
+To set up the application proxy, first create a custom application, then update the app proxy settings in the **onPremisesPublishing** property. 
 
-From the response, record the **id** of both the service principal and the application objects, and the value of **appId** for use later in the tutorial.
+Use an application template to create a custom application and service principal in your tenant. The template ID for a custom application is `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`. You can find it by running this query: [GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'Custom'](https://developer.microsoft.com/en-us/graph/graph-explorer?request=applicationTemplates%3F%24filter%3DdisplayName%2Beq%2B'Custom'&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com).
+
+From the response, note the **id** of the service principal and application objects, and the **appId** for later use.
 
 The following request creates a custom application named `newPrivateApp`.
 
@@ -278,9 +281,9 @@ Content-type: application/json
 
 ## Step 2: Specify the type of private application
 
-You can create a Global Secure Access private application of type Quick Access or enterprise application. The values in the **application** > **onPremisesPublishing** > **applicationType** property would be `quickaccessapp` for Quick Access Applications and `nonwebapp` for enterprise applications.
+You can create a Global Secure Access private app as either a Quick Access or enterprise app. Set the **application** > **onPremisesPublishing** > **applicationType** property to `quickaccessapp` for Quick Access apps or `nonwebapp` for enterprise apps.
 
-In this step, you configure a Global Secure Access private app of type enterprise application.
+In this step, you set up a Global Secure Access private app as an enterprise app.
 
 The request returns a `204 No Content` response.
 # [HTTP](#tab/http)
@@ -397,17 +400,17 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#onPremisesPublishingProfiles('applicationProxy')/connectors",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET onPremisesPublishingProfiles('<key>')/connectors?$select=externalIp,machineName",
-    "value": [
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET onPremisesPublishingProfiles('<key>')/connectors?$select=externalIp,machineName",
+  "value": [
     {
       "id": "d2b1e8e8-8511-49d6-a4ba-323cb083fbb0",
-      "machineName": "connectorA.redmond.contoso.com"",
+      "machineName": "connectorA.redmond.contoso.com",
       "externalIp": "131.137.147.164",
       "status": "active"
     },
     {
       "id": "f2cab422-a1c8-4d70-a47e-2cb297a2e051",
-      "machineName": "connectorB.contoso.com"",
+      "machineName": "connectorB.contoso.com",
       "externalIp": "68.0.191.210",
       "status": "active"
     }
@@ -491,7 +494,7 @@ Content-type: application/json
 
 ### Step 3.3: Assign a connector to the connectorGroup
 
-The request returns a `204 No content` response.
+The following request returns a `204 No content` response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -541,9 +544,9 @@ Content-type: application/json
 
 ---
 
-### Step 3.4: Assign the Global Secure Access private application to the connectorGroup
+### Step 3.4: Assign the private app to the connector group
 
-The request returns a `204 No content` response.
+The following request returns a `204 No content` response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -593,7 +596,7 @@ Content-type: application/json
 
 ---
 
-## Step 4: Add application segments to your Global Secure Access private application
+## Step 4: Add application segments to the private application
 
 In the example, create a new app segment with the following settings:
 - Replace the value of **destinationHost** with the private app destination. 
@@ -732,7 +735,7 @@ PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd
 
 ---
 
-## Step 5: Assign a user to the Global Secure Access private application 
+## Step 5: Assign a user to the private application 
 
 Assign the user to the service principal and grant them the `User` app role. In the request body, provide the following values:
 

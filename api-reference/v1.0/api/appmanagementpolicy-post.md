@@ -118,7 +118,6 @@ POST https://graph.microsoft.com/v1.0/policies/appManagementPolicies
             "identifierUris": {
                 "nonDefaultUriAddition": {
                     "state": "disabled",
-                    "restrictForAppsCreatedAfterDateTime": null,
                     "excludeAppsReceivingV2Tokens": true,
                     "excludeSaml": true
                 }

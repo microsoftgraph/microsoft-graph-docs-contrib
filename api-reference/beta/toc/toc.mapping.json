@@ -151,7 +151,6 @@
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
-        "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
         "restoreArtifactsBulkRequestBase",
         "restorePoint",
@@ -186,6 +185,7 @@
         {
           "name": "Protection units bulk job",
           "resources": [
+            "protectionUnitsBulkJobBase",
             "driveProtectionUnitsBulkAdditionJob",
             "mailboxProtectionUnitsBulkAdditionJob",
             "siteProtectionUnitsBulkAdditionJob"
@@ -490,6 +490,7 @@
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcBulkDisasterRecovery",
             "cloudPcBulkDisasterRecoveryFailback",
             "cloudPcBulkDisasterRecoveryFailover",
             "cloudPcBulkMove",
@@ -520,6 +521,7 @@
             "cloudPcOnPremisesConnectionStatusDetails",
             "cloudPcPartnerAgentInstallResult",
             "cloudPcProvisioningPolicyAssignment",
+            "cloudPcProvisioningPolicyAutopatch",
             "cloudPcRemoteActionCapability",
             "cloudPcResizeValidationResult",
             "cloudPcRestorePointSetting",
@@ -529,6 +531,7 @@
             "cloudPcStatusDetails",
             "cloudPcStatusDetail",
             "CloudPcConnectionSetting",
+            "cloudPcSupportedRegionRestrictionDetail",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
@@ -941,11 +944,13 @@
         "drive",
         "driveItem",
         "bundle",
-        "permission",
         "fileStorageContainer",
+        "permission",
         "recycleBin",
         "recycleBinItem",
-        "sharedDriveItem"
+        "sharedDriveItem",
+        "sharePointGroup",
+        "sharePointGroupMember"
       ]
     },
     {
@@ -1451,11 +1456,14 @@
               "resources": [
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
+                "onAttributeCollectionStartListener",
+                "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener"
+                "onUserCreateStartListener",
+                "onPhoneMethodLoadStartListener"
               ]
             },
             {
@@ -1474,7 +1482,10 @@
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
-                "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
+                "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
+                "qrCodePinAuthenticationMethod",
+                "qrCode",
+                "qrPin"
               ]
             },
             {
@@ -1493,7 +1504,17 @@
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
-                "x509CertificateAuthenticationMethodConfiguration"
+                "x509CertificateAuthenticationMethodConfiguration",
+                "qrCodePinAuthenticationMethodConfiguration"
+              ],
+              "childNodes": [
+                {
+                  "name": "QR code authentication",
+                  "resources": [
+                    "QR Code",
+                    "PIN"
+                  ]
+                }
               ]
             },
             {
@@ -1519,6 +1540,7 @@
               "name": "Conditional access",
               "resources": [
                 "conditionalAccessPolicy",
+                "whatIfAnalysisResult",
                 "namedLocation",
                 "authenticationContextClassReference",
                 "conditionalAccessTemplate",                
@@ -1677,7 +1699,7 @@
               ]
             },
             {
-              "name": "Microsoft Entra lifecycle announcements",
+              "name": "Microsoft Entra lifecycle announcements (deprecated)",
               "resources": [
                 "changeItemBase",
                 "announcement",
@@ -1689,7 +1711,12 @@
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
-                "authenticationConditionApplication"
+                "authenticationConditionApplication",
+                "onAttributeCollectionHandler",
+                "onAttributeCollectionStartHandler",
+                "onAttributeCollectionStartCustomExtensionHandler",
+                "onAttributeCollectionSubmitHandler",
+                "onAttributeCollectionSubmitCustomExtensionHandler"
               ]
             },
             {
@@ -2098,6 +2125,7 @@
         "attachment",
         "outlookCategory",
         "mailFolder",
+        "mailFolderOperation",
         "mailSearchFolder",
         "messageRule"
       ],
@@ -2117,6 +2145,29 @@
             "multiValueLegacyExtendedProperty"
           ]
         }
+      ],
+      "complexTypes":[
+        "updateAllMessagesReadStateOperation"
+      ]
+    },
+    {
+      "name": "Mailbox import and export (preview)",
+      "overview": "../../resources/mailbox-import-export-api-overview.md",
+      "keywords": [
+        "Exchange",
+        "Exchange Import-Export",
+        "Mailbox",
+        "Mailbox import and export"
+      ],
+      "resources": [
+        "mailbox",
+        "mailboxItem",
+        "mailboxFolder",
+        "exchangeSettings"
+      ],
+      "complexTypes": [
+        "exportItemResponse",
+        "mailboxItemImportSession"
       ]
     },
     {
@@ -2166,6 +2217,7 @@
         "pronounsSettings",
         "photoUpdateSettings",
         "namePronunciationSettings",
+        "enhancedPersonalizationSetting",
         "profile",
         "userAnalytics"
       ],
@@ -2405,6 +2457,7 @@
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",
             "microsoft.graph.partners.billing.operation",
+            "microsoft.graph.partners.billing.unbilledReconciliation",
             "microsoft.graph.partners.billing.unbilledUsage"
           ]
         }
@@ -2487,6 +2540,9 @@
             "microsoft.graph.security.alert",
             "microsoft.graph.security.alertEvidence",
             "microsoft.graph.security.incident"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.teamsMessageEvidence"
           ]
         },
         {
@@ -2539,7 +2595,16 @@
             "microsoft.graph.security.ediscoveryHoldPolicy",
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
-            "microsoft.graph.security.ediscoveryReviewTag"
+            "microsoft.graph.security.ediscoveryReviewTag",
+            "microsoft.graph.security.ediscoveryCaseMember"
+          ],
+          "childNodes": [
+            {
+              "name": "eDiscovery review set",
+              "resources": [
+                "microsoft.graph.security.ediscoveryReviewSetQuery"
+              ]
+            }
           ]
         },
         {
@@ -2774,7 +2839,8 @@
         "plannerPlanDetails",
         "plannerRoster",
         "plannerUser",
-        "plannerTaskDetails"
+        "plannerTaskDetails",
+        "teamsChannelPlanner"
       ],
       "complexTypes": [
         "businessScenarioGroupTarget",
@@ -2863,6 +2929,17 @@
       ],
       "childNodes": [
         {
+          "name": "Administration (preview)",
+          "resources": [
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+          ],
+          "complexTypes": [
+            "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
+            "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
+            "microsoft.graph.teamsAdministration.policyAssignment"
+          ]
+        },
+        {
           "name": "AI interactions (preview)",
           "resources": [
             "aiInteractionHistory"
@@ -2914,6 +2991,18 @@
                 "contentSharingSession",
                 "participant",
                 "addLargeGalleryViewOperation"
+              ]
+            },
+            {
+              "name": "Call delegation",
+              "overview": "../../resources/calldelegation-api-overview.md",
+              "resources": [
+                "callSettings",
+                "delegationSettings"
+              ],
+              "complexTypes": [
+                "delegateAllowedActions",
+                "userCloudCommunication"
               ]
             },
             {
@@ -3076,6 +3165,9 @@
                 }
               ]
             }
+          ],
+          "complexTypes": [
+            "forwardToChatResult"
           ]
         },
         {
@@ -3246,3 +3338,4 @@
     }
   ]
 }
+

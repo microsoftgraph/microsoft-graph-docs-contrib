@@ -4,6 +4,24 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
+- name: Administration (preview)
+  items:
+  - name: Teams user configuration
+    items:
+    - name: Teams user configuration
+      href: ../../resources/teamsadministration-teamsuserconfiguration.md
+    - name: List
+      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
+    - name: Get
+      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
+  - name: Complex types
+    items:
+    - name: Assigned telephone number
+      href: ../../resources/teamsadministration-assignedtelephonenumber.md
+    - name: Effective policy assignment
+      href: ../../resources/teamsadministration-effectivepolicyassignment.md
+    - name: Policy assignment
+      href: ../../resources/teamsadministration-policyassignment.md
 - name: AI interactions (preview)
   items:
   - name: AI interaction history
@@ -334,6 +352,34 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
+  - name: Call delegation
+    items:
+    - name: Overview
+      href: ../../resources/calldelegation-api-overview.md
+    - name: Call settings
+      items:
+      - name: Call settings
+        href: ../../resources/callsettings.md
+      - name: List delegates
+        href: ../../api/callsettings-list-delegates.md
+      - name: List delegators
+        href: ../../api/callsettings-list-delegators.md
+    - name: Delegation settings
+      items:
+      - name: Delegation settings
+        href: ../../resources/delegationsettings.md
+      - name: Get
+        href: ../../api/delegationsettings-get.md
+      - name: List delegates
+        href: ../../api/callsettings-list-delegates.md
+      - name: List delegators
+        href: ../../api/callsettings-list-delegators.md
+    - name: Complex types
+      items:
+      - name: Delegate allowed actions
+        href: ../../resources/delegateallowedactions.md
+      - name: User cloud communication
+        href: ../../resources/usercloudcommunication.md
   - name: Call events
     items:
     - name: Call event
@@ -819,6 +865,10 @@ items:
       href: ../../api/sharedwithchannelteaminfo-list-allowedmembers.md
     - name: Check user access
       href: ../../api/channel-doesuserhaveaccess.md
+    - name: Planner
+      items:
+      - name: List plans
+        href: ../../api/teamschannelplanner-list-plans.md
   - name: Chat
     items:
     - name: Chat
@@ -975,6 +1025,10 @@ items:
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in chat
         href: ../../api/chatmessage-unsetreaction.md
+      - name: Forward message to chat
+        href: ../../api/chatmessage-forwardtochat.md
+      - name: Reply with quote
+        href: ../../api/chatmessage-replywithquote.md
     - name: Hosted content
       items:
       - name: List all hosted content
@@ -1107,6 +1161,10 @@ items:
       href: ../../api/userteamwork-sendactivitynotification.md
     - name: Send notification to multiple users in bulk
       href: ../../api/teamwork-sendactivitynotificationtorecipients.md
+  - name: Complex types
+    items:
+    - name: Forward to chat result
+      href: ../../resources/forwardtochatresult.md
 - name: Shift management
   items:
   - name: Day note

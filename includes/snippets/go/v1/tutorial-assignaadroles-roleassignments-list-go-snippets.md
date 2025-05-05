@@ -16,7 +16,7 @@ import (
 )
 
 
-requestFilter := "principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'"
+requestFilter := "principalId eq 'd9771b4c-06c5-491a-92cb-3aa4e225a725'"
 
 requestParameters := &graphrolemanagement.DirectoryRoleAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

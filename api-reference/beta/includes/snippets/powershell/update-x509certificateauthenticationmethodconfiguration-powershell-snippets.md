@@ -35,6 +35,23 @@ $params = @{
 	issuerHintsConfiguration = @{
 		state = "disabled"
 	}
+	crlValidationConfiguration = @{
+		state = "disabled"
+		exemptedCertificateAuthoritiesSubjectKeyIdentifiers = @(
+		)
+	}
+	certificateAuthorityScopes = @(
+		@{
+			subjectKeyIdentifier = "aaaaaaaabbbbcccc111122222222222222333333"
+			publicKeyInfrastructureIdentifier = "Contoso PKI"
+			includeTargets = @(
+				@{
+					id = "aaaaaaaa-bbbb-cccc-1111-222222222222"
+					targetType = "group"
+				}
+			)
+		}
+	)
 	includeTargets = @(
 		@{
 			targetType = "group"
