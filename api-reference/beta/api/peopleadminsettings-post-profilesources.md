@@ -89,8 +89,8 @@ Content-Type: application/json
   "webUrl": "https://bamboohr.contoso.com/login/",
   "localizations": [
     {
-	  "displayName" : "HR-Plattform"
-      "webUrl" : "http://bamboohr.contoso.com/de/login/"
+	    "displayName" : "HR-Plattform",
+      "webUrl" : "http://bamboohr.contoso.com/de/login/",
       "languageTag" : "de"
 	  }
   ]
@@ -121,8 +121,8 @@ Content-Type: application/json
   "webUrl": "https://bamboohr.contoso.com/login/",
   "localizations": [
     {
-	  "displayName" : "HR-Plattform"
-      "webUrl" : "http://bamboohr.contoso.com/de/login/"
+	    "displayName" : "HR-Plattform",
+      "webUrl" : "http://bamboohr.contoso.com/de/login/",
       "languageTag" : "de"
 	  }
   ]

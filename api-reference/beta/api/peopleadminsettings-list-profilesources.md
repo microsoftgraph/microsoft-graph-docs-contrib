@@ -95,13 +95,13 @@ Content-Type: application/json
       "webUrl": "https://bamboohr.contoso.com/login/",
       "localizations": [
         {
-          "displayName" = "HR-Platform"
-          "webUrl" = "http://bamboohr.contoso.com/en-us/login/"
+          "displayName" = "HR-Platform",
+          "webUrl" = "http://bamboohr.contoso.com/en-us/login/",
           "languageTag" = "en-us"
         },
         {
-          "displayName" : "HR-Plattform"
-          "webUrl" : "http://bamboohr.contoso.com/de/login/"
+          "displayName" : "HR-Plattform",
+          "webUrl" : "http://bamboohr.contoso.com/de/login/",
           "languageTag" : "de"
         }
       ]
@@ -115,8 +115,8 @@ Content-Type: application/json
       "webUrl": "https://login.microsoftonline.com",
       "localizations": [
         {
-          "displayName" : "Contoso Microsoft Entra"
-          "webUrl" : "https://login.microsoftonline.com"
+          "displayName" : "Contoso Microsoft Entra",
+          "webUrl" : "https://login.microsoftonline.com",
           "languageTag" : "en-us"
         }
       ]

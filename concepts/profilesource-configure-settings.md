@@ -12,12 +12,12 @@ ms.date: 04/30/2025
 
 Profile source configuration improves end-user experience by presenting to users the source of their profile data in an understandable way.
 
-This administrator guide discusses configuring profile source settings in a organization using Microsoft Graph APIs. It covers the necessary steps to add, update and delete a profile source in an organization, ensuring that profile data is accurately attributed and surfaced in various Microsoft 365 experiences. 
+This administrator guide discusses configuring profile source settings in an organization using Microsoft Graph APIs. It covers the necessary steps to add, update, and delete a profile source in an organization, ensuring that profile data is accurately attributed and surfaced in various Microsoft 365 experiences. 
 
 > [!IMPORTANT]
 > By default, Microsoft Entra is the source of profile data in an organization.
 
-A profile source is uniquely identified by a human readable property namely, `sourceId`, set by an organization administrator. `sourceId` can be used as an [alternate-key](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/alternate-key.md) when querying for a profile source. Please note that this property is not updateable. Additionally, a profile source is identifieable via a system-generated the key named `id`.
+A profile source is uniquely identified by a human readable property namely, `sourceId`, set by an organization administrator. `sourceId` can be used as an [alternate-key](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/alternate-key.md) when querying for a profile source. Note that this property isn't updateable. Additionally, a profile source is identifieable via a system-generated the key named `id`.
 
 Admins can customize a profile source display name to multiple locales by configuring the `localizations` property.
 
@@ -51,13 +51,13 @@ Content-Type: application/json
       "webUrl": "https://bamboohr.contoso.com/login/",
       "localizations": [
         {
-          "displayName" = "HR-Platform"
-          "webUrl" = "http://bamboohr.contoso.com/en-us/login/"
+          "displayName" = "HR-Platform",
+          "webUrl" = "http://bamboohr.contoso.com/en-us/login/",
           "languageTag" = "en-us"
         },
         {
-          "displayName" : "HR-Plattform"
-          "webUrl" : "http://bamboohr.contoso.com/de/login/"
+          "displayName" : "HR-Plattform",
+          "webUrl" : "http://bamboohr.contoso.com/de/login/",
           "languageTag" : "de"
         }
       ]
@@ -70,8 +70,8 @@ Content-Type: application/json
       "webUrl": "https://login.microsoftonline.com",
       "localizations": [
         {
-          "displayName" : "Contoso Microsoft Entra"
-          "webUrl" : "https://login.microsoftonline.com"
+          "displayName" : "Contoso Microsoft Entra",
+          "webUrl" : "https://login.microsoftonline.com",
           "languageTag" : "en-us"
         }
       ]
@@ -97,8 +97,8 @@ Content-Type: application/json
   "webUrl": "https://bamboohr.contoso.com/login/",
   "localizations": [
     {
-      "displayName" : "HR-Plattform"
-      "webUrl" : "http://bamboohr.contoso.com/de/login/"
+      "displayName" : "HR-Plattform",
+      "webUrl" : "http://bamboohr.contoso.com/de/login/",
       "languageTag" : "de"
     }
   ]
@@ -121,8 +121,8 @@ Content-type: application/json
   "webUrl": "https://bamboohr.contoso.com/login/",
   "localizations": [
     {
-      "displayName" : "HR-Plattform"
-      "webUrl" : "http://bamboohr.contoso.com/de/login/"
+      "displayName" : "HR-Plattform",
+      "webUrl" : "http://bamboohr.contoso.com/de/login/",
       "languageTag" : "de"
     }
   ]
@@ -143,13 +143,13 @@ Content-Type: application/json
   "displayName": "BambooHR Updated",
   "localizations": [
     {
-      "displayName" : "HR-Platform"
-      "webUrl" : "http://bamboohr.contoso.com/en-us/login/"
+      "displayName" : "HR-Platform",
+      "webUrl" : "http://bamboohr.contoso.com/en-us/login/",
       "languageTag" : "en-us"
     },
     {
-      "displayName" : "HR-Plattform"
-      "webUrl" : "http://bamboohr.contoso.com/de/login/"
+      "displayName" : "HR-Plattform",
+      "webUrl" : "http://bamboohr.contoso.com/de/login/",
       "languageTag" : "de"
     }
   ]
@@ -172,13 +172,13 @@ Content-type: application/json
   "webUrl": "https://bamboohr.contoso.com/login/",
   "localizations": [
     {
-      "displayName" = "HR-Platform"
-      "webUrl" = "http://bamboohr.contoso.com/en-us/login/"
+      "displayName" = "HR-Platform",
+      "webUrl" = "http://bamboohr.contoso.com/en-us/login/",
       "languageTag" = "en-us"
     },
     {
-      "displayName" = "HR-Plattform"
-      "webUrl" = "http://bamboohr.contoso.com/de/login/"
+      "displayName" = "HR-Plattform",
+      "webUrl" = "http://bamboohr.contoso.com/de/login/",
       "languageTag" = "de"
     }
   ]
@@ -196,13 +196,13 @@ Content-Type: application/json
   "displayName": "BambooHR Updated",
   "localizations": [
     {
-      "displayName" : "HR-Platform"
-      "webUrl" : "http://bamboohr.contoso.com/en-us/login/"
+      "displayName" : "HR-Platform",
+      "webUrl" : "http://bamboohr.contoso.com/en-us/login/",
       "languageTag" : "en-us"
     },
     {
-      "displayName" : "HR-Plattform"
-      "webUrl" : "http://bamboohr.contoso.com/de/login/"
+      "displayName" : "HR-Plattform",
+      "webUrl" : "http://bamboohr.contoso.com/de/login/",
       "languageTag" : "de"
     }
   ]
@@ -288,16 +288,16 @@ Use the following command.
 
 ```powershell
 $params = @{
-	sourceId = "bamboohr1"
-    displayName = "HR platform"
-    webUrl = "http://bamboohr.contoso.com/login/"
-	localizations = @(
-		@{
-			displayName = "HR-Plattform"
-            webUrl = "http://bamboohr.contoso.com/de/login/"
-            languageTag = "de"
-		}
-	)
+  sourceId = "bamboohr1"
+  displayName = "HR platform"
+  webUrl = "http://bamboohr.contoso.com/login/"
+  localizations = @(
+    @{
+      displayName = "HR-Plattform"
+      webUrl = "http://bamboohr.contoso.com/de/login/"
+      languageTag = "de"
+    }
+  )
 }
 
 New-MgAdminPeopleProfileSource -BodyParameter $params
@@ -318,16 +318,16 @@ Use the following command, where you replace `$sourceId` with the ID of the prop
 
 ```powershell
 $params = @{
-	sourceId = "bamboohr1"
-    displayName = "Updated HR platform"
-    webUrl = "http://bamboohr.contoso.com/login/"
+  sourceId = "bamboohr1"
+  displayName = "Updated HR platform"
+  webUrl = "http://bamboohr.contoso.com/login/"
 	localizations = @(
-		@{
-			displayName = "Aktualisierte HR-Plattform"
-            webUrl = "http://bamboohr.contoso.com/de/login/"
-            languageTag = "de"
-		}
-	)
+    @{
+      displayName = "Aktualisierte HR-Plattform"
+      webUrl = "http://bamboohr.contoso.com/de/login/"
+      languageTag = "de"
+    }
+  )
 }
 
 
