@@ -36,16 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/people/profileSources/27f1af7b-b166-4f5b-b994-ae135a581547
-```
-
-## HTTP request with sourceId alternate-key
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
 DELETE /admin/people/profileSources(sourceId='bamboohr1')
 ```
 

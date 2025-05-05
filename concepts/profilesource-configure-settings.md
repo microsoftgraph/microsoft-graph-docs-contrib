@@ -47,16 +47,16 @@ Content-Type: application/json
       "sourceId": "bamboohr1",
       "kind": "BambooHR",
       "displayName": "HR Platform",
-      "webUrl": "https://bamboohr.contoso.com/login/",
+      "webUrl": "https://bamboohr.contoso.com/login",
       "localizations": [
         {
           "displayName" : "HR-Platform",
-          "webUrl" : "http://bamboohr.contoso.com/en-us/login/",
+          "webUrl" : "http://bamboohr.contoso.com/en-us/login",
           "languageTag" : "en-us"
         },
         {
           "displayName" : "HR-Plattform",
-          "webUrl" : "http://bamboohr.contoso.com/de/login/",
+          "webUrl" : "http://bamboohr.contoso.com/de/login",
           "languageTag" : "de"
         }
       ]
@@ -93,11 +93,11 @@ Content-Type: application/json
   "sourceId": "bamboohr1",
   "displayName": "HR Platform",
   "kind": "BambooHR",
-  "webUrl": "https://bamboohr.contoso.com/login/",
+  "webUrl": "https://bamboohr.contoso.com/login",
   "localizations": [
     {
       "displayName" : "HR-Plattform",
-      "webUrl" : "http://bamboohr.contoso.com/de/login/",
+      "webUrl" : "http://bamboohr.contoso.com/de/login",
       "languageTag" : "de"
     }
   ]
@@ -117,11 +117,11 @@ Content-type: application/json
   "sourceId": "bamboohr1",
   "kind": "BambooHR",
   "displayName": "HR Platform",
-  "webUrl": "https://bamboohr.contoso.com/login/",
+  "webUrl": "https://bamboohr.contoso.com/login",
   "localizations": [
     {
       "displayName" : "HR-Plattform",
-      "webUrl" : "http://bamboohr.contoso.com/de/login/",
+      "webUrl" : "http://bamboohr.contoso.com/de/login",
       "languageTag" : "de"
     }
   ]
@@ -135,7 +135,7 @@ Use the [update](/graph/api/profilesource-update?view=graph-rest-beta&preserve-v
 #### Request
 
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/people/profileSources/27f1af7b-b166-4f5b-b994-ae135a581547
+PATCH https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
 Content-Type: application/json
 
 {
@@ -143,12 +143,12 @@ Content-Type: application/json
   "localizations": [
     {
       "displayName" : "HR-Platform",
-      "webUrl" : "http://bamboohr.contoso.com/en-us/login/",
+      "webUrl" : "http://bamboohr.contoso.com/en-us/login",
       "languageTag" : "en-us"
     },
     {
       "displayName" : "HR-Plattform",
-      "webUrl" : "http://bamboohr.contoso.com/de/login/",
+      "webUrl" : "http://bamboohr.contoso.com/de/login",
       "languageTag" : "de"
     }
   ]
@@ -168,40 +168,16 @@ Content-type: application/json
   "sourceId": "bamboohr1",
   "kind": "BambooHR",
   "displayName": "BambooHR Updated",
-  "webUrl": "https://bamboohr.contoso.com/login/",
+  "webUrl": "https://bamboohr.contoso.com/login",
   "localizations": [
     {
       "displayName" : "HR-Platform",
-      "webUrl" : "http://bamboohr.contoso.com/en-us/login/",
+      "webUrl" : "http://bamboohr.contoso.com/en-us/login",
       "languageTag" : "en-us"
     },
     {
       "displayName" : "HR-Plattform",
-      "webUrl" : "http://bamboohr.contoso.com/de/login/",
-      "languageTag" : "de"
-    }
-  ]
-}
-```
-
-Alternatively, you can modify a profile source via its alternate key, `sourceId`.
-
-
-``` http
-PATCH https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
-Content-Type: application/json
-
-{
-  "displayName": "BambooHR Updated",
-  "localizations": [
-    {
-      "displayName" : "HR-Platform",
-      "webUrl" : "http://bamboohr.contoso.com/en-us/login/",
-      "languageTag" : "en-us"
-    },
-    {
-      "displayName" : "HR-Plattform",
-      "webUrl" : "http://bamboohr.contoso.com/de/login/",
+      "webUrl" : "http://bamboohr.contoso.com/de/login",
       "languageTag" : "de"
     }
   ]
@@ -216,7 +192,7 @@ Use the [delete](/graph/api/peopleadminsettings-delete-profilesources?view=graph
 #### Request
 
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/people/profileSources/27f1af7b-b166-4f5b-b994-ae135a581547
+DELETE https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
 ```
 
 If successful, the response returns a `204 OK` response code.
@@ -225,13 +201,6 @@ If successful, the response returns a `204 OK` response code.
 
 ``` http
 HTTP/1.1 204 No Content
-```
-
-
-Alternatively, you can remove a profile source via its alternate key, `sourceId`.
-
-``` http
-DELETE https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
 ```
 
 ## Configure profile source settings using the Microsoft Graph PowerShell SDK
@@ -289,11 +258,11 @@ Use the following command.
 $params = @{
   sourceId = "bamboohr1"
   displayName = "HR platform"
-  webUrl = "http://bamboohr.contoso.com/login/"
+  webUrl = "http://bamboohr.contoso.com/login"
   localizations = @(
     @{
       displayName = "HR-Plattform"
-      webUrl = "http://bamboohr.contoso.com/de/login/"
+      webUrl = "http://bamboohr.contoso.com/de/login"
       languageTag = "de"
     }
   )
@@ -319,11 +288,11 @@ Use the following command, where you replace `$sourceId` with the ID of the prop
 $params = @{
   sourceId = "bamboohr1"
   displayName = "Updated HR platform"
-  webUrl = "http://bamboohr.contoso.com/login/"
+  webUrl = "http://bamboohr.contoso.com/login"
 	localizations = @(
     @{
       displayName = "Aktualisierte HR-Plattform"
-      webUrl = "http://bamboohr.contoso.com/de/login/"
+      webUrl = "http://bamboohr.contoso.com/de/login"
       languageTag = "de"
     }
   )
