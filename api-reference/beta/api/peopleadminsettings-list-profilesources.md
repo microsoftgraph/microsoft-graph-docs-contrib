@@ -95,9 +95,9 @@ Content-Type: application/json
       "webUrl": "https://bamboohr.contoso.com/login/",
       "localizations": [
         {
-          "displayName" = "HR-Platform",
-          "webUrl" = "http://bamboohr.contoso.com/en-us/login/",
-          "languageTag" = "en-us"
+          "displayName" : "HR-Platform",
+          "webUrl" : "http://bamboohr.contoso.com/en-us/login/",
+          "languageTag" : "en-us"
         },
         {
           "displayName" : "HR-Plattform",

@@ -98,14 +98,14 @@ Content-Type: application/json
   "webUrl": "https://bamboohr.contoso.com/login/",
   "localizations": [
     {
-      "displayName" = "HR-Platform",
-      "webUrl" = "http://bamboohr.contoso.com/en-us/login/",
-      "languageTag" = "en-us"
+      "displayName" : "HR-Platform",
+      "webUrl" : "http://bamboohr.contoso.com/en-us/login/",
+      "languageTag" : "en-us"
     },
     {
-      "displayName" = "HR-Plattform",
-      "webUrl" = "http://bamboohr.contoso.com/de/login/",
-      "languageTag" = "de"
+      "displayName" : "HR-Plattform",
+      "webUrl" : "http://bamboohr.contoso.com/de/login/",
+      "languageTag" : "de"
     }
   ]
 }
@@ -134,14 +134,14 @@ Content-Type: application/json
   "webUrl": "https://bamboohr.contoso.com/login/",
   "localizations": [
     {
-      "displayName" = "HR-Platform",
-      "webUrl" = "http://bamboohr.contoso.com/en-us/login/",
-      "languageTag" = "en-us"
+      "displayName" : "HR-Platform",
+      "webUrl" : "http://bamboohr.contoso.com/en-us/login/",
+      "languageTag" : "en-us"
     },
     {
-      "displayName" = "HR-Plattform",
-      "webUrl" = "http://bamboohr.contoso.com/de/login/",
-      "languageTag" = "de"
+      "displayName" : "HR-Plattform",
+      "webUrl" : "http://bamboohr.contoso.com/de/login/",
+      "languageTag" : "de"
     }
   ]
 }
