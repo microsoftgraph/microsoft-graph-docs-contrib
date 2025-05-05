@@ -14,7 +14,7 @@ Profile source precedence is a feature that empowers tenant admins with control 
 
 This administrator guide explains how to configure profile source precedence in an organization using Microsoft Graph APIs. It details the steps required to add, update, and delete profile property settings. By following this guide, you can control which profile data is accurately displayed across various Microsoft 365 experiences based on the configured priorities.
 
-The collection of priority source URLs is ordered in the order of data precedence with the first item in the collection being of higher priority.
+The priority source URLs are arranged according to data precedence, with the first item in the collection having the highest priority.
 
 >*Note:* The `name` property **MUST** be empty to differentiate it from other property-level settings in the collection which have a `name` property, i.e., only one configuration without a name is allowed per profile property settings collection.
 
