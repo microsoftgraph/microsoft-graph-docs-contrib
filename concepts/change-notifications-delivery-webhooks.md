@@ -66,9 +66,6 @@ When you [renew your subscription](#renew-a-subscription), your access token is 
 ### Firewall configuration
 You can configure the firewall that protects your endpoint to allow inbound connections only from Microsoft Graph, reducing further exposure to invalid change notifications. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
-> [!NOTE]
-> The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
-
 ## Create a subscription
 
 > [!IMPORTANT]
