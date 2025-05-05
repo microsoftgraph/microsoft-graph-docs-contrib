@@ -29,17 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have [People Administrator](https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
 
+
 ## HTTP request
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-PATCH /admin/people/profileSources/27f1af7b-b166-4f5b-b994-ae135a581547
-```
-
-## HTTP request with sourceId alternate-key
 
 <!-- {
   "blockType": "ignored"
@@ -95,16 +86,16 @@ Content-Type: application/json
   "sourceId": "bamboohr1",
   "kind": "BambooHR",
   "displayName": "BambooHR Updated",
-  "webUrl": "https://bamboohr.contoso.com/login/",
+  "webUrl": "https://bamboohr.contoso.com/login",
   "localizations": [
     {
       "displayName" : "HR-Platform",
-      "webUrl" : "http://bamboohr.contoso.com/en-us/login/",
+      "webUrl" : "http://bamboohr.contoso.com/en-us/login",
       "languageTag" : "en-us"
     },
     {
       "displayName" : "HR-Plattform",
-      "webUrl" : "http://bamboohr.contoso.com/de/login/",
+      "webUrl" : "http://bamboohr.contoso.com/de/login",
       "languageTag" : "de"
     }
   ]
@@ -132,16 +123,16 @@ Content-Type: application/json
   "sourceId": "bamboohr1",
   "kind": "BambooHR",
   "displayName": "BambooHR Updated",
-  "webUrl": "https://bamboohr.contoso.com/login/",
+  "webUrl": "https://bamboohr.contoso.com/login",
   "localizations": [
     {
       "displayName" : "HR-Platform",
-      "webUrl" : "http://bamboohr.contoso.com/en-us/login/",
+      "webUrl" : "http://bamboohr.contoso.com/en-us/login",
       "languageTag" : "en-us"
     },
     {
       "displayName" : "HR-Plattform",
-      "webUrl" : "http://bamboohr.contoso.com/de/login/",
+      "webUrl" : "http://bamboohr.contoso.com/de/login",
       "languageTag" : "de"
     }
   ]

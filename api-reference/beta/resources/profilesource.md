@@ -59,7 +59,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.profileSource",
   "id": "String (identifier)",
-  "sourceId": "String",
+  "sourceId": "String (alternate-key)",
   "kind": "String",
   "displayName": "String",
   "webUrl": "String",

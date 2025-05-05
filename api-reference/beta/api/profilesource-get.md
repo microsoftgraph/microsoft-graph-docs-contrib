@@ -34,16 +34,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/people/profileSources/27f1af7b-b166-4f5b-b994-ae135a581547
-```
-
-## HTTP request with sourceId alternate-key
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
 GET /admin/people/profileSources(sourceId='bamboohr1')
 ```
 
@@ -100,11 +90,11 @@ Content-Type: application/json
     "sourceId": "bamboohr1",
     "kind": "BambooHR",
     "displayName": "HR Platform",
-    "webUrl": "https://bamboohr.contoso.com/login/",
+    "webUrl": "https://bamboohr.contoso.com/login",
     "localizations": [
       {
         "displayName" : "HR-Plattform",
-        "webUrl" : "http://bamboohr.contoso.com/de/login/",
+        "webUrl" : "http://bamboohr.contoso.com/de/login",
         "languageTag" : "de"
       }
     ]

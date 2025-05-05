@@ -92,16 +92,16 @@ Content-Type: application/json
       "sourceId": "bamboohr1",
       "kind": "BambooHR",
       "displayName": "HR Platform",
-      "webUrl": "https://bamboohr.contoso.com/login/",
+      "webUrl": "https://bamboohr.contoso.com/login",
       "localizations": [
         {
           "displayName" : "HR-Platform",
-          "webUrl" : "http://bamboohr.contoso.com/en-us/login/",
+          "webUrl" : "http://bamboohr.contoso.com/en-us/login",
           "languageTag" : "en-us"
         },
         {
           "displayName" : "HR-Plattform",
-          "webUrl" : "http://bamboohr.contoso.com/de/login/",
+          "webUrl" : "http://bamboohr.contoso.com/de/login",
           "languageTag" : "de"
         }
       ]
