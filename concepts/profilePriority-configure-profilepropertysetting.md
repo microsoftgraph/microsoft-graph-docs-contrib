@@ -1,7 +1,7 @@
 ---
 title: "Manage profile source precedence for an organization using the Microsoft Graph API"
 description: "Learn how to use Microsoft Graph APIs to configure profile source priority for an organization."
-author: "ruthnjambuya"
+author: "rwaithera"
 ms.localizationpriority: high
 ms.subservice: "people"
 ms.custom: scenarios:getting-started
@@ -22,13 +22,13 @@ The collection of priority source URLs is ordered in the order of data precedenc
 > By default, Microsoft Entra ID is the prioritized source of profile data in an organization.
 
 
-# Configure profile source precedence settings using the Microsoft Graph API
+## Configure profile source precedence settings using the Microsoft Graph API
 
-You can use the [profilePropertySetting](/graph/api/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true) API to configure profile source precedence in your organization.
+You can use the [profilePropertySetting](../api-reference/beta/resources/profilepropertysetting) API to configure profile source precedence in your organization.
 
 ### Confirm your current settings
 
-Use the [list](/graph/api/peopleadminsettings-list-profilepropertysettings?view=graph-rest-beta&preserve-view=true) operation to return the current settings for profile property settings in your organization.
+Use the [list](../api-reference/beta/api/peopleadminsettings-list-profilepropertysettings) operation to return the current settings for profile property settings in your organization.
 
 The following example gets the collection of profile property settings in an organization.
 
@@ -36,7 +36,7 @@ The following example gets the collection of profile property settings in an org
 GET https://graph.microsoft.com/beta/admin/people/profilePropertySettings
 ```
 
-If successful, the response returns a `200 OK` response code and a [profilePropertySetting](/graph/api/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true) object in the response body.
+If successful, the response returns a `200 OK` response code and a [profilePropertySetting](../api-reference/beta/resources/profilepropertysetting) object in the response body.
 
 ``` http
 HTTP/1.1 200 OK
@@ -59,7 +59,7 @@ Content-Type: application/json
 
 ## Add profile source precedence setting
 
-Use the [create](/graph/api/peopleadminsettings-post-profilepropertysettings?view=graph-rest-beta&preserve-view=true) operation to add the profile source precedence setting for your organization.
+Use the [create](../api-reference/beta/api/peopleadminsettings-post-profilepropertysettings) operation to add the profile source precedence setting for your organization.
 
 #### Request
 
@@ -74,7 +74,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, the response returns a `201 OK` response code and a [profilePropertySetting](/graph/api/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true)  object in the response body.
+If successful, the response returns a `201 OK` response code and a [profilePropertySetting](../api-reference/beta/resources/profilepropertysetting)  object in the response body.
 
 #### Response
 
@@ -95,7 +95,7 @@ Content-type: application/json
 
 ## Update profile source precedence setting
 
-Use the [update](/graph/api/profilepropertysetting-update?view=graph-rest-beta&preserve-view=true) operation to modify the profile source precedence setting in your organization.
+Use the [update](../api-reference/beta/api/profilepropertysetting-update) operation to modify the profile source precedence setting in your organization.
 
 #### Request
 
@@ -111,7 +111,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, the response returns a `200 OK` response code and a [profilePropertySetting](/graph/api/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true)  object in the response body.
+If successful, the response returns a `200 OK` response code and a [profilePropertySetting](../api-reference/beta/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true)  object in the response body.
 
 #### Response
 
@@ -134,7 +134,7 @@ Content-type: application/json
 
 ## Remove profile source precedence setting
 
-Use the [delete](/graph/api/peopleadminsettings-delete-profilepropertysetting?view=graph-rest-beta&preserve-view=true) operation to remove the profile source precedence setting in your organization.
+Use the [delete](../api-reference/beta/api/peopleadminsettings-delete-profilepropertysettings) operation to remove the profile source precedence setting in your organization.
 
 #### Request
 
@@ -150,7 +150,7 @@ If successful, the response returns a `204 OK` response code.
 HTTP/1.1 204 No Content
 ```
 
-# Configure profile source precedence setting using the Microsoft Graph PowerShell SDK
+## Configure profile source precedence setting using the Microsoft Graph PowerShell SDK
 
 You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to configure profile source precedence settings in your organization.
 
@@ -251,5 +251,5 @@ You can use the Microsoft Graph PowerShell module to remove the profile source p
 ```
 
 ## Related content
-1. [Organizational Data in Microsoft 365](https://learn.microsoft.com/en-us/viva/orgdata-data-usage)
-2. [User profile synchronization](https://learn.microsoft.com/en-us/sharepoint/user-profile-sync)
+1. [Organizational Data in Microsoft 365](https://learn.microsoft.com/viva/orgdata-data-usage)
+2. [User profile synchronization](https://learn.microsoft.com/sharepoint/user-profile-sync)
