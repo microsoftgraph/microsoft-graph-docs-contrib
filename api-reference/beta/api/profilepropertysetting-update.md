@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a profilePropertySetting object.
+Update the properties of a [profilePropertySetting](../resources/profilepropertysetting.md) object.
 
 ## Permissions
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/profilepropertysetting-update-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have [People Administrator](https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have the [People Administrator](https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
 
 ## HTTP request
 
@@ -52,11 +52,10 @@ PATCH /admin/people/profilePropertySettings/{profilePropertySettingId}
 
 |Property|Type|Description|
 |:---|:---|:---|
+|allowedAudiences|organizationAllowedAudiences|A privacy setting that reflects the allowed audience for the configured property. The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|isUserOverrideForAudienceEnabled|Boolean|Defines whether a user is allowed to override the tenant admin privacy setting.|
 |name|String|Name of the property-level setting.|
-|allowedAudiences|organizationAllowedAudiences|A privacy setting reflecting the allowed audience for the configured property. The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|isUserOverrideForAudienceEnabled|Boolean|Defines if a user is allowed to override the tenant admin privacy setting|
-|prioritizedSourceUrls|String collection|A collection of priority profile source URLs ordered in the order of data precedence in an organization.|
-
+|prioritizedSourceUrls|String collection|A collection of priority profile source URLs ordered by data precedence within an organization.|
 
 ## Response
 
@@ -84,7 +83,6 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 ### Response
 
