@@ -25,7 +25,12 @@ Effective April 1, 2025, Microsoft Entra Permissions Management APIs are depreca
 
 ### Teamwork and communications | Messaging
 
-Added support for the `$filter` query parameter by Microsoft Entra user ID when you list channel members using the [List allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API.
+- Added support for the `$filter` query parameter by Microsoft Entra user ID when you list channel members using the [List allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API.
+- Enabled rich notifications for
+  - changes to membership for all Teams chats: `/chats/getAllMembers`
+  - changes to membership in all teams across the tenant: `/teams/getAllMembers`
+  - changes to membership in all channels under a specific team: `/teams/{id}/channels/getAllMembers`
+  - changes to membership for all channels across the entire tenant: `/teams/getAllChannels/getAllMembers`
 
 ## April 2025: New and generally available
 
