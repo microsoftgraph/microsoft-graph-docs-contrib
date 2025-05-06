@@ -1773,7 +1773,8 @@
             "aiInteractionLink",
             "aiInteractionMention",
             "aiInteractionMentionedIdentitySet",
-            "aiUser"
+            "aiUser",
+            "copilotRoot"
           ]
         },
         {
