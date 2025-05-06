@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new GetRecentlyModifiedSubmissionsRequestBuilderGetRequestConfiguration();
 $queryParameters = GetRecentlyModifiedSubmissionsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z";
+$queryParameters->filter = "lastModifiedDateTime lt 2025-04-29T15:48:31.3785886Z";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

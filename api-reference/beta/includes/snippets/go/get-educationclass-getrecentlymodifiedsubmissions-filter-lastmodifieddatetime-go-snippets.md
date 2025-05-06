@@ -16,7 +16,7 @@ import (
 )
 
 
-requestFilter := "lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z"
+requestFilter := "lastModifiedDateTime lt 2025-04-29T15:48:31.3785886Z"
 
 requestParameters := &grapheducation.ClassesItemGetRecentlyModifiedSubmissionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

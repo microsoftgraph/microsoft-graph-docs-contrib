@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 var result = graphClient.education().classes().byEducationClassId("{educationClass-id}").getRecentlyModifiedSubmissions().get(requestConfiguration -> {
-	requestConfiguration.queryParameters.filter = "lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z";
+	requestConfiguration.queryParameters.filter = "lastModifiedDateTime lt 2025-04-29T15:48:31.3785886Z";
 });
 
 
