@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Represents the configuration data for property-level settings configured by an administrator. 
 
 > [!NOTE]
-> When you configure the **prioritizedSourceUrls** setting, the **name** property must be empty to differentiate it from other property-level settings in the collection that have a name property. Only one configuration without a name is allowed per collection.
+> When you configure the **prioritizedSourceUrls** setting, the **name** property *must* be empty to differentiate it from other property-level settings in the collection that have a **name** property. Only one configuration without a name is allowed per collection.
 
 Inherits from [entity](../resources/entity.md).
 
