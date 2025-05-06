@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 List all the [gcpRole](../resources/gcprole.md) objects and their properties for a provided GCP authorization system.
 
 ## Permissions
@@ -118,4 +120,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 
