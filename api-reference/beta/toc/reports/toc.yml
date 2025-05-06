@@ -44,6 +44,14 @@ items:
         href: ../../api/impactedresource-complete.md
       - name: Reactivate
         href: ../../api/impactedresource-reactivate.md
+    - name: Recommendation configuration
+      items:
+      - name: Recommendation configuration
+        href: ../../resources/recommendationconfiguration.md
+      - name: Get
+        href: ../../api/recommendationconfiguration-get.md
+      - name: Update
+        href: ../../api/recommendationconfiguration-update.md
   - name: Microsoft Entra activity reports
     items:
     - name: AD FS application activity

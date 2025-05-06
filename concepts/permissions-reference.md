@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 04/21/2025
+ms.date: 05/05/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -4821,6 +4821,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 338163d7-f101-4c92-94ba-ca46fe52447c | 014b43d0-6ed4-4fc6-84dc-4b6f7bae7d85 |
 | DisplayText | Read and write your organization's cross tenant access policies | Read and write your organization's cross tenant access policies |
 | Description | Allows the app to read and write your organization's cross tenant access policies without a signed-in user. | Allows the app to read and write your organization's cross tenant access policies on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### Policy.ReadWrite.CrossTenantCapability
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | a6325ae7-2b73-4dbd-abed-fbeacfbf8696 | 9ef7463f-1d39-406f-89ea-3483a4645e1c |
+| DisplayText | Read and write your organization's M365 cross tenant access capabilities | Read and write your organization's M365 cross tenant access capabilities |
+| Description | Allows the app to read and write your organization's M365 cross tenant access capabilities without a signed-in user. | Allows the app to read and write your organization's M365 cross tenant access capabilities on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---

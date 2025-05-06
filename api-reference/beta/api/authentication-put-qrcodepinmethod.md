@@ -23,12 +23,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ### Permissions acting on self
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-[!INCLUDE [permissions-table](../includes/permissions/authentication-put-qrCodePinMethod-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/authentication-put-qrcodepinmethod-permissions.md)]
 
 ### Permissions acting on other users
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-[!INCLUDE [permissions-table](../includes/permissions/authentication-put-qrCodePinMethod-2-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/authentication-put-qrcodepinmethod-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
@@ -75,6 +75,7 @@ If successful, this method returns a `201 Created` response code and a [qrCodePi
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_qrcodepinauthenticationmethod_from_",
@@ -97,6 +98,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-qrcodepinauthenticationmethod-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

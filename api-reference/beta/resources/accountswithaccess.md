@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Contains information on external AWS accounts that have access to a storage bucket.
 
 This is an abstract type from which the following types inherit.
@@ -40,4 +42,5 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.accountsWithAccess"
 }
 ```
+
 
