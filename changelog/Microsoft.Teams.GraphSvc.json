@@ -2796,6 +2796,14 @@
         },
         {
           "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "copilotRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [copilotRoot](https://learn.microsoft.com/en-us/graph/api/resources/copilotRoot?view=graph-rest-1.0) resource type.",
+          "Target": "copilotRoot"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
           "ApiChange": "Method",
           "ChangedApiName": "getAllEnterpriseInteractions",
           "ChangeType": "Addition",
