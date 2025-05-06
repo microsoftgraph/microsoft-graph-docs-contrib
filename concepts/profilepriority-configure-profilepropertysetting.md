@@ -163,8 +163,8 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 > The PowerShell commands for profile source precedence settings are only available in beta. Switch to the beta experience before you run the following commands.
 >
 > ```powershell
->    Install-Module -Name Microsoft.Graph.Beta
->    Update-Module Microsoft.Graph.Beta
+>Install-Module -Name Microsoft.Graph.Beta
+>Update-Module Microsoft.Graph.Beta
 > ```
 
 ### Confirm your current settings
@@ -172,22 +172,21 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 To get profile source precedence configuration for an organization, use the following command.
 
 ```powershell
-   Get-MgAdminPeopleProfilePropertySetting
+Get-MgAdminPeopleProfilePropertySetting
 ```
 
 To get the profile source precedence configuration in an organization, use the following command.
 
 ```powershell
-   Get-MgAdminPeopleProfilePropertySetting -Id $id
+Get-MgAdminPeopleProfilePropertySetting -Id $id
 ```
 
 > [!NOTE]
 > The get commands require the `PeopleSettings.Read.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
 >
 > ```powershell
->    Connect-MgGraph -Scopes "PeopleSettings.Read.All"
+> Connect-MgGraph -Scopes "PeopleSettings.Read.All"
 > ```
-
 
 ### Add profile source precedence setting in your organization
 
@@ -197,7 +196,7 @@ You can use the Microsoft Graph PowerShell module to configure profile precedenc
 > The new command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
 >
 > ```powershell
->    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+> Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 > ```
 
 Use the following command.
@@ -220,17 +219,16 @@ You can use the Microsoft Graph PowerShell module to update the profile source p
 > The update command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
 >
 > ```powershell
->    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+> Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 > ```
 
 ```powershell
 $params = @{
-	prioritizedSourceUrls = @(
+    prioritizedSourceUrls = @(
         "/external/connections/contosohr2",
         "/external/connections/contosohr1"
     )
 }
-
 
 Update-MgAdminPeopleProfilePropertySetting -Id $id -BodyParameter $params
 ```
@@ -243,11 +241,11 @@ You can use the Microsoft Graph PowerShell module to remove the profile source p
 > The remove command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
 >
 > ```powershell
->    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+> Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 > ```
 
 ```powershell
- Remove-MgAdminPeopleProfilePropertySetting -Id $id
+Remove-MgAdminPeopleProfilePropertySetting -Id $id
 ```
 
 ## Related content
