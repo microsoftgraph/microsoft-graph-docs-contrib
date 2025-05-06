@@ -9,32 +9,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.identity.conditionalaccess.evaluate.EvaluatePostRequestBody evaluatePostRequestBody = new com.microsoft.graph.beta.identity.conditionalaccess.evaluate.EvaluatePostRequestBody();
-evaluatePostRequestBody.setAppliedPoliciesOnly(true);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
- signInIdentity = new ();
+UserSignIn signInIdentity = new UserSignIn();
 signInIdentity.setOdataType("#microsoft.graph.userSignIn");
 signInIdentity.setUserId("15dc174b-f34c-4588-ac45-61d6e05dce93");
-additionalData.put("signInIdentity", signInIdentity);
- signInContext = new ();
+evaluatePostRequestBody.setSignInIdentity(signInIdentity);
+AuthContext signInContext = new AuthContext();
 signInContext.setOdataType("#microsoft.graph.authContext");
 signInContext.setAuthenticationContextValue("c37");
-additionalData.put("signInContext", signInContext);
- signInConditions = new ();
-signInConditions.setDevicePlatform("windows");
-signInConditions.setClientAppType("mobileAppsAndDesktopClients");
-signInConditions.setSignInRiskLevel("medium");
-signInConditions.setUserRiskLevel("none");
+evaluatePostRequestBody.setSignInContext(signInContext);
+SignInConditions signInConditions = new SignInConditions();
+signInConditions.setDevicePlatform(ConditionalAccessDevicePlatform.Windows);
+signInConditions.setClientAppType(ConditionalAccessClientApp.MobileAppsAndDesktopClients);
+signInConditions.setSignInRiskLevel(RiskLevel.Medium);
+signInConditions.setUserRiskLevel(RiskLevel.None);
 signInConditions.setCountry("US");
 signInConditions.setIpAddress("40.77.182.32");
-signInConditions.setInsiderRiskLevel("moderate");
- authenticationFlow = new ();
-authenticationFlow.setTransferMethod("authenticationTransfer");
+signInConditions.setInsiderRiskLevel(InsiderRiskLevel.Moderate);
+AuthenticationFlow authenticationFlow = new AuthenticationFlow();
+authenticationFlow.setTransferMethod(EnumSet.of(ConditionalAccessTransferMethods.AuthenticationTransfer));
 signInConditions.setAuthenticationFlow(authenticationFlow);
- deviceInfo = new ();
+DeviceInfo deviceInfo = new DeviceInfo();
 deviceInfo.setProfileType("Standard");
 signInConditions.setDeviceInfo(deviceInfo);
-additionalData.put("signInConditions", signInConditions);
-evaluatePostRequestBody.setAdditionalData(additionalData);
+evaluatePostRequestBody.setSignInConditions(signInConditions);
+evaluatePostRequestBody.setAppliedPoliciesOnly(true);
 var result = graphClient.identity().conditionalAccess().evaluate().post(evaluatePostRequestBody);
 
 

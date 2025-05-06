@@ -6,7 +6,7 @@ ms.date: 04/30/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
-toc.title: "AI onlineMeeting"
+toc.title: "AI online meeting"
 ---
 
 # aiOnlineMeeting resource type

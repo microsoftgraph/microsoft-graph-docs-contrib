@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get a list of the [permissionsCreepIndexDistribution](../resources/permissionscreepindexdistribution.md) objects and their properties.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -201,4 +203,5 @@ Content-Type: application/json
     ]
 }
 ```
+
 

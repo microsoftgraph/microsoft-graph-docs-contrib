@@ -570,6 +570,8 @@ items:
       items:
       - name: Action item
         href: ../../resources/actionitem.md
+      - name: AI online meeting
+        href: ../../resources/aionlinemeeting.md
       - name: Call AI insight viewpoint
         href: ../../resources/callaiinsightviewpoint.md
       - name: Identity set
