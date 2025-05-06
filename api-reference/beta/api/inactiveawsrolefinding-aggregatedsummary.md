@@ -90,3 +90,4 @@ Content-type: application/json
     "findingsCount": 295
 }
 ```
+

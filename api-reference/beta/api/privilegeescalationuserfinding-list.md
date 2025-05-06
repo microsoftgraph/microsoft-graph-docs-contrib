@@ -156,3 +156,4 @@ Content-Type: application/json
   "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationUserFinding?$skiptoken=foobar"
 }
 ```
+

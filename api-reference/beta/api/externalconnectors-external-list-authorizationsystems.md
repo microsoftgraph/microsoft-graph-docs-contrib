@@ -269,3 +269,4 @@ Content-Type: application/json
   "@odata.nextLink": "https://graph.microsoft.com/beta/external/authorizationSystems?$filter=dataCollectionInfo%2fentitlements%2fmicrosoft.graph.entitlementsDataCollection%2fpermissionsModificationCapability+eq+%27enabled%27+and+dataCollectionInfo%2fentitlements%2fmicrosoft.graph.entitlementsDataCollection%2fstatus+eq+%27online%27&$skiptoken=MQ",  
 }  
 ```
+
