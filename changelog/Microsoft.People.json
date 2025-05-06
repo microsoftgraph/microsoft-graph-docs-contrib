@@ -12,19 +12,19 @@
         },
         {
           "Id": "007fd93d-4e7e-4575-b05e-9d3adb6c3b5a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profilePropertySetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [profilePropertySetting](https://learn.microsoft.com/en-us/graph/api/resources/profilePropertySetting?view=graph-rest-beta) resource and associated methods.",
+          "Target": "profilePropertySetting"
+        },
+        {
+          "Id": "007fd93d-4e7e-4575-b05e-9d3adb6c3b5a",
           "ApiChange": "Relationship",
           "ChangedApiName": "profilePropertySettings",
           "ChangeType": "Addition",
           "Description": "Added the **profilePropertySettings** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-beta) resource.",
           "Target": "peopleAdminSettings"
-        },
-        {
-          "Id": "007fd93d-4e7e-4575-b05e-9d3adb6c3b5a",
-          "ApiChange": "Resource",
-          "ChangedApiName": "profilePropertySetting",
-          "ChangeType": "Addition",
-          "Description": "Added the [profilePropertySetting](https://learn.microsoft.com/en-us/graph/api/resources/profilePropertySetting?view=graph-rest-beta) resource.",
-          "Target": "profilePropertySetting"
         }
       ],
       "Id": "007fd93d-4e7e-4575-b05e-9d3adb6c3b5a",
