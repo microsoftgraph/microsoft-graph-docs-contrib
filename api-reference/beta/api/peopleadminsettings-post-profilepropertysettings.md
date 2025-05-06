@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new profilePropertySetting object.
+Create a new [profilePropertySetting](../resources/profilepropertysetting.md) object.
 
 ## Permissions
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-post-profilepropertysettings-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have [People Administrator](https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have the [People Administrator](/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
 
 ## HTTP request
 
@@ -51,15 +51,14 @@ POST /admin/people/profilePropertySettings
 
 In the request body, supply a JSON representation of the [profilePropertySetting](../resources/profilepropertysetting.md) object.
 
-You can specify the following properties when creating a **profilePropertySetting**.
+You can specify the following properties when you create a **profilePropertySetting**.
 
 |Property|Type|Description|
 |:---|:---|:---|
+|allowedAudiences|organizationAllowedAudiences|A privacy setting that reflects the allowed audience for the configured property. The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|isUserOverrideForAudienceEnabled|Boolean|Defines whether a user is allowed to override the tenant admin privacy setting.|
 |name|String|Name of the property-level setting.|
-|allowedAudiences|organizationAllowedAudiences|A privacy setting reflecting the allowed audience for the configured property. The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|isUserOverrideForAudienceEnabled|Boolean|Defines if a user is allowed to override the tenant admin privacy setting|
-|prioritizedSourceUrls|String collection|A collection of priority profile source URLs ordered in the order of data precedence in an organization.|
-
+|prioritizedSourceUrls|String collection|A collection of priority profile source URLs ordered by data precedence within an organization.|
 
 ## Response
 
