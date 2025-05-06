@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 This will contain information on the number of authorization system actions that have been granted to an identity and the number of actions executed by this identity in the last 90 days.
 
 ## Properties
@@ -41,3 +43,4 @@ The following JSON representation shows the resource type.
   "available": "Integer"
 }
 ```
+
