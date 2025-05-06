@@ -1,5 +1,5 @@
 ---
-title: "speakerAssignmentSubmissions resource type"
+title: "speakerAssignmentSubmission resource type"
 description: "Represents a speaker assignment that was submitted by a student."
 author: "v-rmanda"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 05/05/2025
 ---
 
-# speakerAssignmentSubmissions resource type
+# speakerAssignmentSubmission resource type
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/speakerAssignmentSubmissions-get.md)|[speakerAssignmentSubmissions](../resources/speakerAssignmentSubmission.md)|Read the properties and relationships of a [speakerAssignmentSubmissions](../resources/speakerAssignmentSubmission.md) object.|
+|[Get](../api/speakerAssignmentSubmissions-get.md)|[speakerAssignmentSubmission](../resources/speakerAssignmentSubmission.md)|Read the properties and relationships of a [speakerAssignmentSubmission](../resources/speakerAssignmentSubmission.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -54,14 +54,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.speakerAssignmentSubmissions",
+  "@odata.type": "microsoft.graph.speakerAssignmentSubmission",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.speakerAssignmentSubmissions",
+  "@odata.type": "#microsoft.graph.speakerAssignmentSubmission",
   "assignmentId": "String",
   "averageWordsPerMinutePace": "Int64",
   "classId": "String",

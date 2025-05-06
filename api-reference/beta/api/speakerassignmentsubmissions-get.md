@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [speakerAssignmentSubmissions](../resources/speakerAssignmentSubmission.md) object.
+Read the properties and relationships of a [speakerAssignmentSubmission](../resources/speakerAssignmentSubmission.md) object.
 
 ## Permissions
 
@@ -25,13 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "speakerAssignmentSubmissions-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/readingassignmentsubmission-get-permissions.md)]
-
-| Permission type                        | Permissions (from least to most privileged) | Supported versions |
-| :------------------------------------- | :------------------------------------------ | :----------------- |
-| Delegated (work or school account)     | N/A  | Not Supported.     |
-| Delegated (personal Microsoft account) | N/A                                         | Not supported.     |
-| Application                            | 	EduReports-Reading.Read.All, EduReports-Reflect.ReadAnonymous.All | beta    |
+[!INCLUDE [permissions-table](../includes/permissions/speakerassignmentsubmissions-get-permissions.md)]
 
 ## HTTP request
 
@@ -60,7 +54,7 @@ The `$filter` and `$orderby` query parameters are supported for all properties.
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) objects in the response body.
 
 ## Examples
 
@@ -88,7 +82,7 @@ The following example shows the default response from the last 24 hours.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.speakerAssignmentSubmissions"
+  "@odata.type": "microsoft.graph.speakerAssignmentSubmission"
 }
 -->
 ``` http

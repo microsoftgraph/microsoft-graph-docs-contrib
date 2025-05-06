@@ -1,6 +1,32 @@
 {
   "changelog": [
     {
+      "ChangeList": [        
+        {
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduReports-Reading.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Get SpeakerAssignmentSubmissions](https://learn.microsoft.com/en-us/graph/api/speakerassignmentsubmissions-get.md?view=graph-rest-beta) method of [speakerAssignmentSubmission resource](https://learn.microsoft.com/en-us/graph/api/resources/speakerassignmentsubmission?view=graph-rest-beta).",
+          "Id": "dbc5563a-9bad-46ce-92ab-ea065f564f2f",
+          "Target": "speakerAssignmentSubmission"
+        },
+        {
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduReports-Reflect.ReadAnonymous.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduReports-Reflect.ReadAnonymous.All` to the [Get SpeakerAssignmentSubmissions](https://learn.microsoft.com/en-us/graph/api/speakerassignmentsubmissions-get.md?view=graph-rest-beta) method of [speakerAssignmentSubmission resource](https://learn.microsoft.com/en-us/graph/api/resources/speakerassignmentsubmission?view=graph-rest-beta).",
+          "Id": "dbc5563a-9bad-46ce-92ab-ea065f564f2f",
+          "Target": "speakerAssignmentSubmission"
+        }
+      ],
+      "Id": "dbc5563a-9bad-46ce-92ab-ea065f564f2f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-10T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "4da111db-21a0-4673-9bc7-aece291b40ea",
@@ -15,31 +41,11 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-04-30T18:32:24.5964486Z",
-
-          "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
-          "ApiChange": "Method",
-          "ChangedApiName": "getRecentlyModifiedSubmissions",
-          "ChangeType": "Addition",
-          "Description": "Added the [getRecentlyModifiedSubmissions](https://learn.microsoft.com/en-us/graph/api/educationclass-getrecentlymodifiedsubmissions?view=graph-rest-1.0) method to the [educationClass](https://learn.microsoft.com/en-us/graph/api/resources/educationclass?view=graph-rest-1.0) resource.",
-          "Target": "educationClass"
-        },
-          "ChangeList": [        
-        {
-          "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
-          "ApiChange": "Property",
-          "ChangedApiName": "lastModifiedBy",
-          "ChangeType": "Addition",
-          "Description": "Added the **lastModifiedBy** property to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-1.0) resource.",
-          "Target": "educationSubmission"
-        },
-        {
-          "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
-          "ApiChange": "Property",
-          "ChangedApiName": "lastModifiedDateTime",
-          "ChangeType": "Addition",
-          "Description": "Added the **lastModifiedDateTime** property to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-1.0) resource.",
-          "Target": "educationSubmission"
-        },
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [        
         {
           "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
           "ApiChange": "Property",
