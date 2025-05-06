@@ -28,6 +28,8 @@ items:
       href: ../../resources/aiinteractionmentionedidentityset.md
     - name: AI user
       href: ../../resources/aiuser.md
+    - name: Copilot root
+      href: ../../resources/copilotroot.md
 - name: Apps
   items:
   - name: Teams app
