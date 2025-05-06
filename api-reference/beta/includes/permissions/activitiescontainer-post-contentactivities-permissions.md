@@ -4,8 +4,10 @@ ms.topic: include
 ms.localizationpriority: medium
 ---
 
-|Permission type|Least privileged permission|Higher privileged permissions|
+|Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|ContentActivity.Write|Not supported.|
+|Delegated (work or school account)|ContentActivity.Write|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|ContentActivity.Write|Not supported.|
+|Application|ContentActivity.Write|Not available.|
+
+

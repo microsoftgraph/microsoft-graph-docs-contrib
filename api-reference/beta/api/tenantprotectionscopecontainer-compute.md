@@ -40,10 +40,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "tenantdatasecurityandgovernance-post-protectionscopes-permissions"
+  "name": "tenantprotectionscopecontainer-compute-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/tenantdatasecurityandgovernance-post-protectionscopes-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/tenantprotectionscopecontainer-compute-permissions.md)]
 
 ## HTTP request
 

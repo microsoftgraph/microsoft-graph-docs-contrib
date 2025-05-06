@@ -6,8 +6,8 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Content.Process.User|Content.Process.All|
+|Delegated (work or school account)|ProtectionScopes.Compute.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Content.Process.User|Content.Process.All|
+|Application|ProtectionScopes.Compute.All|Not available.|
 
 

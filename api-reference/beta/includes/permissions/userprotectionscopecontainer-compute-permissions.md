@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|ProtectionScopes.Compute.User|ProtectionScopes.Compute.All|
+|Delegated (work or school account)|Not supported.|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|ProtectionScopes.Compute.User|ProtectionScopes.Compute.All|
+|Application|Not supported.|Not supported.|
+
