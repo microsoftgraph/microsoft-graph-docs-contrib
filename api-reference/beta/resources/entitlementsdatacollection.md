@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents the details and status of data collection about permissions assigned to an identity in the authorization system. The API returns this object when it collects data from the authorization system.
 
 Inherits from [entitlementsDataCollectionInfo](../resources/entitlementsdatacollectioninfo.md).

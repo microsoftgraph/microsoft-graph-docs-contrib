@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents actions for permissions under a GCP role.
 
 Inherits from [gcpPermissionsDefinitionAction](../resources/gcppermissionsdefinitionaction.md).

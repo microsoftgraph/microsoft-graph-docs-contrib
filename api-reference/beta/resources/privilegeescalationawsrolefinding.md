@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 AWS roles with privilege escalation.
 
 Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).

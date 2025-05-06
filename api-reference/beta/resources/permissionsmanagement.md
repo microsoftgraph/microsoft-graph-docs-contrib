@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 The base container for the relationships that define the requests for permissions in an authorization system onboarded to Microsoft Entra Permissions Management.
 
 ## Methods

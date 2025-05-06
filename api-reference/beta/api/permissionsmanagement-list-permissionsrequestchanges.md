@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 List the [permissionsRequestChange](../resources/permissionsrequestchange.md) objects and their properties.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
