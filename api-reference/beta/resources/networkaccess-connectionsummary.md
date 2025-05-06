@@ -14,8 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a resource in the Microsoft Graph API that is part of the Global Secure Access service.
-This resource provides a summary of connections grouped by traffic type, for both Internet and Private access traffic.
+Provides a summary of connections in Global Secure Access grouped by traffic type, for both Internet Access and Private Access traffic.
 
 ## Properties
 |Property|Type|Description|
