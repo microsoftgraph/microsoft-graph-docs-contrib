@@ -30,7 +30,7 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |destinationFqdn|String|The destination FQDN of the connection.|
 |destinationIp|String|The destination IP of the connection.|
 |destinationPort|Int32|The destination port of the connection.|
-|deviceCategory|microsoft.graph.networkaccess.deviceCategory|The category of the device. The possible values are: `client`, `branch`, `unknownFutureValue`, `remoteNetwork`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `remoteNetwork`.|
+|deviceCategory|microsoft.graph.networkaccess.deviceCategory|The category of the device. The possible values are: `client`, `branch`, `unknownFutureValue`, `remoteNetwork`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `remoteNetwork`.|
 |deviceId|String|The DeviceID.|
 |deviceOperatingSystem|String|The device operating system type.|
 |deviceOperatingSystemVersion|String|The device operating system version.|
@@ -47,7 +47,7 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |sourcePort|Int32|The source port of the connection.|
 |status|microsoft.graph.networkaccess.connectionStatus|Status of the connection. The possible values are: `open`, `active`, `closed`, `unknownFutureValue`.|
 |tenantId|String|The ID of the tenant where the connection was iniatiated.|
-|trafficType|microsoft.graph.networkaccess.trafficType| The type of traffic. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`, `microsoft`.  Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoft`.|
+|trafficType|microsoft.graph.networkaccess.trafficType| The type of traffic. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`, `microsoft`.  Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoft`.|
 |transactionBlockCount|Int32|The number of blocked transactions belonging to the connection.|
 |transactionCount|Int32|The number of transactions belonging to the connection.|
 |transportProtocol|microsoft.graph.networkaccess.networkingProtocol|The transport protocol of the connection. .The possible values are: `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`, `unknownFutureValue`.|

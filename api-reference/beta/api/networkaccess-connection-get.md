@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a connection object."
 author: "miritsadon"
 ms.date: 04/20/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
