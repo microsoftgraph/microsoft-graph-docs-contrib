@@ -58,7 +58,7 @@ You can specify the following properties when you create a **profilePropertySett
 |allowedAudiences|organizationAllowedAudiences|A privacy setting that reflects the allowed audience for the configured property. The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |isUserOverrideForAudienceEnabled|Boolean|Defines whether a user is allowed to override the tenant admin privacy setting.|
 |name|String|Name of the property-level setting.|
-|prioritizedSourceUrls|String collection|A collection of priority profile source URLs ordered by data precedence within an organization.|
+|prioritizedSourceUrls|String collection|A collection of prioritized profile source URLs ordered by data precedence within an organization.|
 
 ## Response
 
