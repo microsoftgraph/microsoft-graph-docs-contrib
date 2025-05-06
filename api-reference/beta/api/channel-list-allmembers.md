@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: List all members of a channel
 
-The following example shows a request to get a list of all members in a channel.
+The following example shows how to get a list of all members in a channel.
 
 #### Request
 
