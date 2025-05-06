@@ -1,5 +1,5 @@
 ---
-title: "List profilePropertySetting objects"
+title: "List profilePropertySettings"
 description: "Get a list of the profilePropertySetting objects and their properties."
 author: "rwaithera"
 ms.date: 05/02/2025
@@ -8,13 +8,13 @@ ms.subservice: "people"
 doc_type: apiPageType
 ---
 
-# List profilePropertySetting objects
+# List profilePropertySettings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the profilePropertySetting objects and their properties.
+Get a list of the [profilePropertySetting](../resources/profilepropertysetting.md) objects and their properties.
 
 ## Permissions
 
@@ -69,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/people/profilePropertySettings
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -77,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.profilePropertySetting"
+  "@odata.type": "Collection(microsoft.graph.profilePropertySetting)"
 }
 -->
 ``` http
