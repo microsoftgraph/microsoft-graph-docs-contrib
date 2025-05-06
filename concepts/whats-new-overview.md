@@ -17,6 +17,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+### Identity and access | Multicloud permissions management
+
+Effective April 1, 2025, Microsoft Entra Permissions Management APIs are deprecated. On October 1, 2025, we'll retire and discontinue support of the APIs. More information can be found [here](https://aka.ms/MEPMretire).
+
 ## April 2025: New and generally available
 
 ### Education
