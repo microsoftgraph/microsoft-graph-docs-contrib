@@ -58,11 +58,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: 
+### Example 1: List all members of a channel
 
 #### Request
 
-The following example shows a request.
+The following example shows a request to get list of all members of a channel.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -153,9 +153,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Find members of a channel by their Microsoft Entra user object ID
+### Example 2: Find a channel member by Microsoft Entra user object ID
 
-The following example shows a request to find the membership resources based on `id` of the [Microsoft Entra user](../resources/user.md) associated with the [aadUserConversationMember](../resources/aaduserconversationmember.md).
+The following example demonstrates how to use the $filter query parameter to retrieve a specific member of a channel by their [Microsoft Entra user](../resources/user.md) `id`. This filter is applied on the userId property of the [aadUserConversationMember](../resources/aaduserconversationmember.md) resource.
 
 #### Request
 
