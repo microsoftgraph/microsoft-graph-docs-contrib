@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 |[Create](../api/peopleadminsettings-post-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Create a new profilePropertySetting object.|
 |[Get](../api/profilepropertysetting-get.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Read the properties and relationships of a profilePropertySetting object.|
 |[Update](../api/profilepropertysetting-update.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Update the properties of a profilePropertySetting object.|
-|[Delete](../api/peopleadminsettings-delete-profilepropertysettings.md)|None|Delete a profilePropertySetting object.|
+|[Delete](../api/profilepropertysetting-delete.md)|None|Delete a profilePropertySetting object.|
 
 ## Properties
 |Property|Type|Description|
