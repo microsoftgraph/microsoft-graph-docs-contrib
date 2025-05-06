@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get the details of an [inactiveUserFinding](../resources/inactiveuserfinding.md) object in an authorization system onboarded to Permissions Management.
 
 
@@ -138,3 +140,4 @@ Content-type: application/json
     }
 }
 ```
+

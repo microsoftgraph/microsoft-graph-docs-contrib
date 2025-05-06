@@ -23,6 +23,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. 
 
+## May 2025: New in preview only
+
+### Identity and access | Multicloud permissions management
+
+Effective April 1, 2025, Microsoft Entra Permissions Management APIs are deprecated. On October 1, 2025, we'll retire and discontinue support of the APIs. More information can be found [here](https://aka.ms/MEPMretire).
+
 ## April 2025: New and generally available
 
 ### Education
