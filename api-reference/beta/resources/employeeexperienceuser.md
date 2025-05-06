@@ -1,6 +1,6 @@
 ---
 title: "employeeExperienceUser resource type"
-description: "Represents a container that exposes navigation properties for employee experience resources of a user."
+description: "Represents a container that exposes navigation properties for the employee experience resources of a user."
 author: "richafnu"
 ms.date: 04/29/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container that exposes navigation properties for employee experience resources of a user.
+"Represents a container that exposes navigation properties for the employee experience resources of a user.
 
 Inherits from [entity](../resources/entity.md).
 
