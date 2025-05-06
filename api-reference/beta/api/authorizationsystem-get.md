@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Read the details of an [authorizationSystem](../resources/authorizationsystem.md) onboarded to Microsoft Entra Permissions Management.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -128,4 +130,5 @@ Content-Type: application/json
   }
 }
 ```
+
 
