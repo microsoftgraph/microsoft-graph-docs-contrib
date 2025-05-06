@@ -62,9 +62,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-Example 1: Get a list of all the roles assigned to a signed-in user in Viva Engage.
+### Example 1: Get a list of all the roles assigned to a signed-in user in Viva Engage.
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -76,7 +76,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/me/employeeExperience/assignedRoles
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -109,9 +109,9 @@ Content-Type: application/json
 }
 ```
 
-Example 2: Get a list of all the roles assigned to a user in Viva Engage.
+### Example 2: Get a list of all the roles assigned to a user in Viva Engage.
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/beta/users/{user-id}/employeeExperience/assigned
 
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
