@@ -23,7 +23,7 @@ This is accessed via the `protectionScopes` navigation property on [tenantDataSe
 
 | Method                                          | Return Type                                                                                     | Description                                                           |
 | :---------------------------------------------- | :---------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------- |
-| [compute protection scopes](../api/tenantdatasecurityandgovernance-post-protectionscopes.md) | [policyTenantScope](../resources/policytenantscope.md) collection | Compute the data protection policies applicable across the tenant.    |
+| [compute protection scopes](../api/tenantprotectionscopecontainer-compute.md) | [policyTenantScope](../resources/policytenantscope.md) collection | Compute the data protection policies applicable across the tenant.    |
 
 ## Properties
 

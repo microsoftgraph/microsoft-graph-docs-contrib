@@ -22,7 +22,7 @@ This is accessed via the `protectionScopes` navigation property on [userDataSecu
 
 | Method                                          | Return Type                                                                                   | Description                                                           |
 | :---------------------------------------------- | :-------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------- |
-| [compute protection scopes](../api/userdatasecurityandgovernance-post-protectionscopes.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the data protection policies applicable to the specific user. |
+| [compute protection scopes](../api/userprotectionscopecontainer-compute.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the data protection policies applicable to the specific user. |
 
 ## Properties
 
