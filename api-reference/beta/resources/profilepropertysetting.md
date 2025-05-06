@@ -16,29 +16,32 @@ Namespace: microsoft.graph
 
 Represents the configuration data for property-level settings configured by an administrator. 
 
->**Note:** When configuring prioritizedSourceUrls setting, the name property **MUST** be empty to differentiate it from other property-level settings in the collection which have a name property, that is, only one configuration without a name is allowed per collection.
-
+> [!NOTE]
+> When you configure the **prioritizedSourceUrls** setting, the **name** property must be empty to differentiate it from other property-level settings in the collection that have a name property. Only one configuration without a name is allowed per collection.
 
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/peopleadminsettings-list-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md) collection|Get a list of the profilePropertySetting objects and their properties.|
-|[Create](../api/peopleadminsettings-post-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Create a new profilePropertySetting object.|
-|[Get](../api/profilepropertysetting-get.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Read the properties and relationships of a profilePropertySetting object.|
-|[Update](../api/profilepropertysetting-update.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Update the properties of a profilePropertySetting object.|
-|[Delete](../api/profilepropertysetting-delete.md)|None|Delete a profilePropertySetting object.|
+|[List](../api/peopleadminsettings-list-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md) collection|Get a list of the [profilePropertySetting](../resources/profilepropertysetting.md) objects and their properties.|
+|[Create](../api/peopleadminsettings-post-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Create a new [profilePropertySetting](../resources/profilepropertysetting.md) object.
+|
+|[Get](../api/profilepropertysetting-get.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Read the properties and relationships of a [profilePropertySetting](../resources/profilepropertysetting.md) object.
+|
+|[Update](../api/profilepropertysetting-update.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Update the properties of a [profilePropertySetting](../resources/profilepropertysetting.md) object.
+|
+|[Delete](../api/profilepropertysetting-delete.md)|None|Delete a [profilePropertySetting](../resources/profilepropertysetting.md) object.
+|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|organizationAllowedAudiences|A privacy setting reflecting the allowed audience for the configured property. The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|id|String|System generated guid. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isUserOverrideForAudienceEnabled|Boolean|Defines if a user is allowed to override the tenant admin privacy setting|
+|allowedAudiences|organizationAllowedAudiences|A privacy setting that reflects the allowed audience for the configured property. The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|id|String|System generated GUID. Inherited from [entity](../resources/entity.md).|
+|isUserOverrideForAudienceEnabled|Boolean|Defines whether a user is allowed to override the tenant admin privacy setting.|
 |name|String|Name of the property-level setting.|
-|prioritizedSourceUrls|String collection|A collection of priority profile source URLs ordered in the order of data precedence in an organization.|
+|prioritizedSourceUrls|String collection|A collection of prioritized profile source URLs ordered by data precedence within an organization.|
 
 ## Relationships
 None.
@@ -56,13 +59,11 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.profilePropertySetting",
-  "id": "String (identifier)",
-  "name": "String",
   "allowedAudiences": "String",
+  "id": "String (identifier)",
   "isUserOverrideForAudienceEnabled": "Boolean",
-  "prioritizedSourceUrls": [
-    "String"
-  ]
+  "name": "String",
+  "prioritizedSourceUrls": ["String"]
 }
 ```
 
