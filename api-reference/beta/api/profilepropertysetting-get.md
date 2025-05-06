@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a profilePropertySetting object.
+Read the properties and relationships of a [profilePropertySetting](../resources/profilepropertysetting.md) object.
 
 ## Permissions
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/admin/people/profilePropertySettings/00000000-0000-0000-0000-000000000001
 ```
-
 
 ### Response
 
