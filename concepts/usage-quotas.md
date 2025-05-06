@@ -6,7 +6,7 @@ author: Jeremyke
 ms.author: jeremyke
 ms.subservice: non-product-specific
 ms.topic: overview
-ms.date: 03/11/2025
+ms.date: 05/14/2025
 #Customer intent: As a developer integrating with Microsoft Graph, or a tenant administrator managing applications in my tenant, I want to understand tenant level usage quotas applied in Microsoft Graph.
 ---
 
@@ -16,7 +16,7 @@ This documentation is preliminary and subject to change as additional capabiliti
 
 # Preview: Microsoft Graph usage quotas
 
-Some areas of Microsoft Graph enforce usage quotas. Usage quotas are allocated at the tenant level and are based on the number of user licenses active for the relevant Microsoft Graph functionality. By default, an individual application can use up to 20% of the tenant's total quota before being throttled. This application quota prevents any single application from consuming all of the tenant's resources unexpectedly. 
+Some areas of Microsoft Graph enforce usage quotas. Usage quotas apply at the tenant level and are based on the number of user licenses active for the relevant Microsoft Graph functionality. By default, an individual application can use up to 20% of the tenant's total quota before being throttled. This application quota prevents any single application from consuming all of the tenant's resources unexpectedly.
 
 ## Usage quota details
 
@@ -37,7 +37,7 @@ We may add additional service areas over time.
 
 ### Quota Calculations
 
-For each service area, quota is calculated based on the number of qualifying user licenses associated with that area, multiplied by a scaling factor, which determines the number of API calls per 24-hour period. The quota is calculated frequently - as additional licenses are purchased or licenses become inactive the available quota will adjust accordingly. Changes in quota will be reflected in reporting data within 48 hours.
+For each service area, quota is calculated based on the number of qualifying user licenses associated with that area, multiplied by a scaling factor, which determines the number of API calls per 24-hour period. The quota is calculated frequently - as additional licenses are purchased or licenses become inactive the available quota will adjust accordingly. Changes in quota will take effect and be reflected in reporting data within 48 hours.
 
 #### Qualifying Licenses
 
@@ -54,8 +54,8 @@ Qualifying licenses for each service area are licenses that enable the associate
 
 ### Default safe application quota
 
-By default an application can consume up to 20% of the tenant's total quota. This default protects the tenant from an application consuming all of a tenant's resources unexpectedly.
+By default an application can consume up to 20% of the tenant's total quota. This default protects the tenant from an application consuming all of a tenant's resources unexpectedly. An application can be excluded from this default in order to allow it to use up to the full tenant quota. Excluding too many applications at once may cause resource contention for the tenant's resources, so it's important to only exclude applications that you know need the extra capacity to meet their goals.
 
 ## Managing quota for a tenant
 
-Global Administrators and users with the Global Reader role can utilize the usage quota [reporting API](/graph/api/reportroot-getapiquota) to see how the tenant's quota is being used. The usage quota reporting API provides visibility into both tenant level usage as well as individual application usage.
+Global Administrators and users with the Global Reader role can utilize the Microsoft Graph usage [report API](/graph/api/reportroot-getapiusage) to see how the tenant's quota is being used. The usage report API provides visibility into both tenant level usage as well as individual application usage.
