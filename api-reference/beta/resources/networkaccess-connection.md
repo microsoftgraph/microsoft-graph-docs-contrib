@@ -50,7 +50,7 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |trafficType|microsoft.graph.networkaccess.trafficType| The type of traffic. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`, `microsoft`.  Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoft`.|
 |transactionBlockCount|Int32|The number of blocked transactions belonging to the connection.|
 |transactionCount|Int32|The number of transactions belonging to the connection.|
-|transportProtocol|microsoft.graph.networkaccess.networkingProtocol|The transport protocol of the connection. .The possible values are: `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`, `unknownFutureValue`.||
+|transportProtocol|microsoft.graph.networkaccess.networkingProtocol|The transport protocol of the connection. .The possible values are: `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`, `unknownFutureValue`.|
 |userId|String|The user ID.|
 |userPrincipalName|String|The principal name of the user.|
 
