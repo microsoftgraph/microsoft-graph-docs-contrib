@@ -1,6 +1,6 @@
 ---
 title: "aiInteractionHistory resource type"
-description: "Represents a list of messages exchanged involving AI."
+description: "Represents a list of messages that are exchanged and involve AI."
 ms.date: 5/4/2025
 doc_type: resourcePageType
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ toc.title: "AI interaction history"
 
 Namespace: microsoft.graph
 
-Represents a list of messages exchanged involving AI.
+Represents a list of messages that are exchanged and involve AI.
 
 ## Methods
 
