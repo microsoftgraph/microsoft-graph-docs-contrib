@@ -6,7 +6,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduReports-Reading.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Get SpeakerAssignmentSubmissions](https://learn.microsoft.com/en-us/graph/api/speakerassignmentsubmissions-get.md?view=graph-rest-beta) method of [speakerAssignmentSubmission resource](https://learn.microsoft.com/en-us/graph/api/resources/speakerassignmentsubmission?view=graph-rest-beta).",
+          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Get SpeakerAssignmentSubmissions](https://learn.microsoft.com/en-us/graph/api/speakerassignmentsubmissions-get?view=graph-rest-beta) method of [speakerAssignmentSubmission resource](https://learn.microsoft.com/en-us/graph/api/resources/speakerassignmentsubmission?view=graph-rest-beta).",
           "Id": "dbc5563a-9bad-46ce-92ab-ea065f564f2f",
           "Target": "speakerAssignmentSubmission"
         },
@@ -14,7 +14,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduReports-Reflect.ReadAnonymous.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `EduReports-Reflect.ReadAnonymous.All` to the [Get SpeakerAssignmentSubmissions](https://learn.microsoft.com/en-us/graph/api/speakerassignmentsubmissions-get.md?view=graph-rest-beta) method of [speakerAssignmentSubmission resource](https://learn.microsoft.com/en-us/graph/api/resources/speakerassignmentsubmission?view=graph-rest-beta).",
+          "Description": "Added support for the application permission `EduReports-Reflect.ReadAnonymous.All` to the [Get SpeakerAssignmentSubmissions](https://learn.microsoft.com/en-us/graph/api/speakerassignmentsubmissions-get?view=graph-rest-beta) method of [speakerAssignmentSubmission resource](https://learn.microsoft.com/en-us/graph/api/resources/speakerassignmentsubmission?view=graph-rest-beta).",
           "Id": "dbc5563a-9bad-46ce-92ab-ea065f564f2f",
           "Target": "speakerAssignmentSubmission"
         }
