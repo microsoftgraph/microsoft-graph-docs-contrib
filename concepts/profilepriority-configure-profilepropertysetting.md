@@ -163,8 +163,8 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 > The PowerShell commands for profile source precedence settings are only available in beta. Switch to the beta experience before you run the following commands.
 >
 > ```powershell
->Install-Module -Name Microsoft.Graph.Beta
->Update-Module Microsoft.Graph.Beta
+> Install-Module -Name Microsoft.Graph.Beta
+> Update-Module Microsoft.Graph.Beta
 > ```
 
 ### Confirm your current settings
