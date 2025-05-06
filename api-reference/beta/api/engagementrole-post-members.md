@@ -8,7 +8,7 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# Assign role to a user
+# Create engagementRoleMember
 
 Namespace: microsoft.graph
 
