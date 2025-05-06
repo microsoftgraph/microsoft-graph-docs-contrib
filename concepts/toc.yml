@@ -778,12 +778,12 @@ items:
     items:
     - name: Overview
       href: social-intel-concept-overview.md
+    - name: Configure profile source precedence (preview)
+      href: profilePriority-configure-profilepropertysetting.md
     - name: Customize item insights privacy
       href: insights-customize-item-insights-privacy.md
     - name: Customize people insights privacy (preview)
       href: insights-customize-people-insights-privacy.md
-    - name: Configure profile source precedence
-      href: profilePriority-configure-profilepropertysetting.md
     - name: Customize the profile card
       href: add-properties-profilecard.md
     - name: Enable or disable pronouns
