@@ -47,6 +47,7 @@ POST /users/{usersId}/dataSecurityAndGovernance/processContent
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
+| If-None-Match | Optional. This value is used by the API to determine if the policy state has changed since the last call to the API. The value is from the Etag header returned from [protectionScopes compute](../api/userprotectionscopecontainer-compute.md)|
 
 ## Request body
 
@@ -57,6 +58,12 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |contentToProcess|[processContentRequest](../resources/processcontentrequest.md)|Required. The object containing the content entries and metadata (activity, device, application) to be evaluated for the specified user.|
+
+## Response headers
+
+| Name          | Description   |
+| :------------ | :------------ |
+| ETag          | An indicator whether admin configured policy state has changed. If the policy state has changed, the protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md) |
 
 ## Response
 

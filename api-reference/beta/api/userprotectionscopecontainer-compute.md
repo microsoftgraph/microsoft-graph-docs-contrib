@@ -1,6 +1,6 @@
 ---
 title: "Create userProtectionScopeContainer"
-toc.title: "Create userProtectionScopeContainer (preview)"
+toc.title: "Create userProtectionScopeContainer"
 description: "Compute the data protection policies and actions applicable to a specific user based on their context."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -58,6 +58,7 @@ POST /users/{usersId}/dataSecurityAndGovernance/protectionScopes/compute
 | :------------ | :------------ |
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
+| If-None-Match | Optional. This value is used by the API to determine if the policy state has changed since the last call to the API. |
 
 ## Request body
 
@@ -70,6 +71,12 @@ In the request body, provide a JSON object with the following parameters.
 | pivotOn               | [policyPivotProperty](../resources/policypivotproperty.md)                          | Optional. Specifies how the results should be aggregated (`activity` or `location`). If omitted or `none`, results might be less aggregated.                   |
 | deviceMetadata        | [deviceMetadata](../resources/devicemetadata.md)                                  | Required. Information about the user's device (type, OS) used for contextual policy evaluation.                                                                    |
 | integratedAppMetadata | [integratedApplicationMetadata](../resources/integratedapplicationmetadata.md)      | Required. Information about the calling application (name, version) integrating with Purview.                                                                    |
+
+## Response headers
+
+| Name          | Description   |
+| :------------ | :------------ |
+| ETag          | An indicator whether admin configured policy state has changed. If the Etag matches the If-None-Match value and you have cached the results of parsing previous results from this API, there is no need to parse the response and cache the parsed results. Cache this value for calls to [process content](../api/userdatasecurityandgovernance-processcontent.md) |
 
 ## Response
 
