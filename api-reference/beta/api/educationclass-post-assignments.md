@@ -44,9 +44,7 @@ In the request body, supply a JSON representation of an [educationAssignment](..
 ## Response
 If successful, this method returns a `201 Created` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.
 
-## Examples
-
-## Example 1: Creating an assignment with default EN-US language. 
+## Example
 
 ### Request
 The following example shows a request.
@@ -142,6 +140,7 @@ Content-type: application/json
     "feedbackResourcesFolderUrl": null,
     "createdDateTime": "2022-09-14T21:24:11.8578804Z",
     "lastModifiedDateTime": "2022-09-14T21:24:11.8578831Z",
+    "languageTag": en-US,
     "allowStudentsToAddResourcesToSubmission": true,
     "status": "draft",
     "notificationChannelUrl": null,
@@ -173,82 +172,6 @@ Content-type: application/json
         "device": null,
         "user": {
             "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
-            "displayName": null
-        }
-    }
-}
-```
-
-## Example 2: Creating an assignment with desired languageTag. 
-
-### Request
-The following example shows a request.
-
-```http
-POST https://graph.microsoft.com/beta/education/classes/ce2cd7da-e41b-4e66-8390-c9251e4c3a40/assignments
-Content-type: application/json
-
-{
-  "displayName":"New assignment",
-  "dueDateTime": "2025-05-09T00:00:00Z", 
-  "languageTag":"es"
-}
-```
-
-In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.
-
-### Response
-The following example shows the response.
-
->**Note:** The response object shown here might be shortened for readability.
-
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('ce2cd7da-e41b-4e66-8390-c9251e4c3a40')/assignments/$entity",
-    "classId": "ce2cd7da-e41b-4e66-8390-c9251e4c3a40",
-    "displayName": "New assignment",
-    "closeDateTime": null,
-    "dueDateTime": "2025-05-09T00:00:00Z",
-    "assignDateTime": null,
-    "assignedDateTime": null,
-    "allowLateSubmissions": true,
-    "resourcesFolderUrl": null,
-    "feedbackResourcesFolderUrl": null,
-    "createdDateTime": "2025-05-07T18:17:06.2831309Z",
-    "lastModifiedDateTime": "2025-05-07T18:17:06.4526679Z",
-    "allowStudentsToAddResourcesToSubmission": false,
-    "status": "draft",
-    "notificationChannelUrl": null,
-    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22ce2cd7da-e41b-4e66-8390-c9251e4c3a40%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22f5e60dc1-d084-4ca4-a3b4-025f11023059%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
-    "addToCalendarAction": "none",
-    "addedStudentAction": "none",
-    "languageTag": "es",
-    "moduleUrl": null,
-    "id": "f5e60dc1-d084-4ca4-a3b4-025f11023059",
-    "grading": null,
-    "instructions": {
-        "content": null,
-        "contentType": "text"
-    },
-    "assignTo": {
-        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
-    },
-    "createdBy": {
-        "application": null,
-        "device": null,
-        "user": {
-            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-            "displayName": null
-        }
-    },
-    "lastModifiedBy": {
-        "application": null,
-        "device": null,
-        "user": {
-            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     }

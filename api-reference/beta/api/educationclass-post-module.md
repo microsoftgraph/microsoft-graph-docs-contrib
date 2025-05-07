@@ -44,9 +44,7 @@ In the request body, supply a JSON representation of an [educationModule](../res
 ## Response
 If successful, this method returns a `201 OK` response code and an [educationModule](../resources/educationmodule.md) object in the request body.
 
-## Examples
-
-## Example 1: Creating a module with default EN-US language. 
+## Example
 
 ### Request
 The following example shows a request.
@@ -123,6 +121,7 @@ Content-type: application/json
     "status": "draft",
     "createdDateTime": "2023-06-21T17:25:44.1277744Z",
     "lastModifiedDateTime": "2023-06-21T17:25:44.1494968Z",
+    "languageTag": en-US,
     "id": "ba8e4215-4fb2-4dba-abe7-a8f2585177d3",
     "createdBy": {
         "application": null,
@@ -137,61 +136,6 @@ Content-type: application/json
         "device": null,
         "user": {
             "id": "4aa81579-714a-4f46-8a05-605558455fa1",
-            "displayName": null
-        }
-    }
-}
-```
-
-## Example 2: Create a module with desired languageTag.
-
-### Request
-The following example shows a request.
-
-```http
-POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules
-Content-type: application/json
-
-{ 
-  "displayName":"New Module ",
-  "description": "Description for Module 2",
-  "languageTag": "es"
-}
-```
-
-### Response
-The following example shows the response.
-
->**Note:** The response object shown here might be shortened for readability.
-
-```http
-HTTP/1.1 201 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules/$entity",
-    "displayName": "New Module ",
-    "description": "Description for New Module",
-    "resourcesFolderUrl": null,
-    "isPinned": false,
-    "status": "draft",
-    "createdDateTime": "2025-05-07T18:30:51.1400261Z",
-    "lastModifiedDateTime": "2025-05-07T18:30:51.2719044Z",
-    "languageTag": "es",
-    "id": "fcb569a8-d524-49b8-a749-f4792deb1b23",
-    "createdBy": {
-        "application": null,
-        "device": null,
-        "user": {
-            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-            "displayName": null
-        }
-    },
-    "lastModifiedBy": {
-        "application": null,
-        "device": null,
-        "user": {
-            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     }

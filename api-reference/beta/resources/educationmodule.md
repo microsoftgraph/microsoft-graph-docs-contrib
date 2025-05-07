@@ -79,6 +79,7 @@ The following JSON representation shows the resource type.
   "isPinned": "Boolean",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
+  "languageTag": "String",
   "resourcesFolderUrl": "String",
   "status": "String"
 }
