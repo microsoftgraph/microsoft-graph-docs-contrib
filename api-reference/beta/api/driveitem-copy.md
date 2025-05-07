@@ -730,7 +730,7 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 202 Accepted
-Location: https://prepspo.spgrid.com/sites/FromSite/_api/v2.1/monitor/780293e6-07b3-4544-a126-fea909efcc84
+Location: https://contoso.sharepoint.com/sites/FromSite/_api/v2.1/monitor/780293e6-07b3-4544-a126-fea909efcc84
 ```
 
 #### Monitoring the Operation
@@ -739,14 +739,14 @@ Use the Location URL to track the status of the asynchronous copy operation. A s
 
 ```json
 {
-  "@odata.context": "https://prepspo.spgrid.com/sites/FromSite/_api/v2.1/$metadata#drives('b!eUKtdpCU_kSVaTUFV6NpD-X6ybrlZ_5AgIz5YS9EUgU51UBlz4oFSauS0JyHnBdR')/operations/$entity",
+  "@odata.context": "https://contoso.sharepoint.com/sites/FromSite/_api/v2.1/$metadata#drives('b!eUKtdpCU_kSVaTUFV6NpD-X6ybrlZ_5AgIz5YS9EUgU51UBlz4oFSauS0JyHnBdR')/operations/$entity",
   id": "780293e6-07b3-4544-a126-fea909efcc84",
   "createdDateTime": "0001-01-01T00:00:00Z",
   "lastActionDateTime": "0001-01-01T00:00:00Z",
   "percentageComplete": 100,
   "percentComplete": 100,
   "resourceId": "01MXEZFVE5G2AS5Y74YZFYQF3KZAQ7CFEP",
-  "resourceLocation": "https://prepspo.spgrid.com/sites/ToSite/_api/v2.0/drives/b!JiheeiHiFEymg-TwftZJ-eX6ybrlZ_5AgIz5YS9EUgU51UBlz4oFSauS0JyHnBdR/items/01MXEZFVE5G2AS5Y74YZFYQF3KZAQ7CFEP",
+  "resourceLocation": "https://contoso.sharepoint.com/sites/ToSite/_api/v2.0/drives/b!JiheeiHiFEymg-TwftZJ-eX6ybrlZ_5AgIz5YS9EUgU51UBlz4oFSauS0JyHnBdR/items/01MXEZFVE5G2AS5Y74YZFYQF3KZAQ7CFEP",
   "status": "completed"
 }
  
