@@ -2816,7 +2816,7 @@
           "ChangedApiName": "copilot",
           "ChangeType": "Addition",
           "Description": "Added the **copilot** singleton.",
-          "Target": "copilot"
+          "Target": "TeamsGraphSvc"
         }
       ],
       "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
