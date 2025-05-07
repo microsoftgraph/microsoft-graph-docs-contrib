@@ -50,8 +50,8 @@ PATCH /security/cases/ediscoveryCases/{ediscoverycaseId}/reviewSets/{reviewSetId
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of review set. Inherited from [microsoft.graph.security.dataSet](../resources/security-dataset.md). Optional.|
-|description|String|The description of review set. Inherited from [microsoft.graph.security.dataSet](../resources/security-dataset.md). Optional.|
+|displayName|String|The name of review set. Optional.|
+|description|String|The description of review set. Optional.|
 
 
 ## Response
@@ -71,6 +71,7 @@ The following example shows a request that updates the review set name to `revie
 ``` http
 PATCH https://graph.microsoft.com/beta/security/cases/{caseId}/reviewSets/{reviewSetId}
 Content-Type: application/json
+
 {
   "displayName": "reviewset01",
   "description": "reviewset description"
