@@ -70,6 +70,7 @@ The following example shows a request that updates the review set name to `revie
 ``` http
 PATCH https://graph.microsoft.com/v1.0/security/cases/{caseId}/reviewSets/{reviewSetId}
 Content-Type: application/json
+{
   "displayName": "reviewset01",
   "description": "reviewset description"
 }
