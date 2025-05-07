@@ -2809,6 +2809,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-1.0) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-1.0) resource.",
           "Target": "aiInteractionHistory"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Singleton",
+          "ChangedApiName": "copilot",
+          "ChangeType": "Addition",
+          "Description": "Added the **copilot** singleton.",
+          "Target": "copilot"
         }
       ],
       "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
