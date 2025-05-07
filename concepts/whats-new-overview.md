@@ -27,6 +27,10 @@ Effective April 1, 2025, Microsoft Entra Permissions Management APIs are depreca
 
 Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it's over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight.md).
 
+### Teamwork and communications | Messaging
+
+Added support for the `$filter` query parameter by Microsoft Entra user ID when you list channel members using the [List allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API.
+
 ## April 2025: New and generally available
 
 ### Education

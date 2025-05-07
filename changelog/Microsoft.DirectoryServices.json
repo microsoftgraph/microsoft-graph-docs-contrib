@@ -63,6 +63,32 @@
     {
       "ChangeList": [
         {
+          "Id": "6d9ea4bf-8f50-463d-a238-c1f860079107",
+          "ApiChange": "Property",
+          "ChangedApiName": "excludeActors",
+          "ChangeType": "Addition",
+          "Description": "Added the **excludeActors** property to the [keyCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/keyCredentialConfiguration?view=graph-rest-beta) resource.",
+          "Target": "keyCredentialConfiguration"
+        },
+        {
+          "Id": "6d9ea4bf-8f50-463d-a238-c1f860079107",
+          "ApiChange": "Property",
+          "ChangedApiName": "excludeActors",
+          "ChangeType": "Addition",
+          "Description": "Added the **excludeActors** property to the [passwordCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/passwordCredentialConfiguration?view=graph-rest-beta) resource.",
+          "Target": "passwordCredentialConfiguration"
+        }
+      ],
+      "Id": "6d9ea4bf-8f50-463d-a238-c1f860079107",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-22T14:28:39.9651197Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8c186a13-9252-49fe-8cba-fa6c77fa4f51",
           "ApiChange": "Property",
           "ChangedApiName": "audiences",
