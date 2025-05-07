@@ -46,7 +46,6 @@ PATCH /security/cases/ediscoveryCases/{ediscoverycaseId}/reviewSets/{reviewSetId
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of review set. Inherited from [microsoft.graph.security.dataSet](../resources/security-dataset.md). Optional.|
