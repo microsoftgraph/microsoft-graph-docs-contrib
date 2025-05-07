@@ -82,11 +82,11 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_callAiInsight",
-  "sampleKeys": ["b935e675-5e67-48b9-8d45-249d5f88e964", "MSpiOTM...", "VjEjI1..."]
+  "sampleKeys": ["b935e675-5e67-48b9-8d45-249d5f88e964", "YTc3OTFhNWQtNTgwZC00OGZjLWJhYjQtOTFmNTUzMmU4MzEyqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy", "Z2HWbTHyQJ69uWxIOzxAQA==IVdGYmZhbG5ma0tKWk4tLWhOY3ZCcnVNZ2s2YmdUTk1yTTI0MVd1Rm1jZk5SUG90U0FPbFNKdEZjcVpRM1hvYkZOWW5UYXJySVUyS2NnOVpNOENqa2cjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMmRlMTE0NTdhZGU4ZGEwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMGQ0ZjRmMjNlMzFkZDFmNDlhZjc5YTM3YjRlYmFlZGQy"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/copilot/users/b935e675-5e67-48b9-8d45-249d5f88e964/onlineMeetings/MSpiOTM.../aiInsights/VjEjI1...
+GET https://graph.microsoft.com/beta/copilot/users/b935e675-5e67-48b9-8d45-249d5f88e964/onlineMeetings/YTc3OTFhNWQtNTgwZC00OGZjLWJhYjQtOTFmNTUzMmU4MzEyqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy/aiInsights/Z2HWbTHyQJ69uWxIOzxAQA==IVdGYmZhbG5ma0tKWk4tLWhOY3ZCcnVNZ2s2YmdUTk1yTTI0MVd1Rm1jZk5SUG90U0FPbFNKdEZjcVpRM1hvYkZOWW5UYXJySVUyS2NnOVpNOENqa2cjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMmRlMTE0NTdhZGU4ZGEwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMGQ0ZjRmMjNlMzFkZDFmNDlhZjc5YTM3YjRlYmFlZGQy
 ```
 
 #### Response
@@ -107,8 +107,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#copilot/users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM...')/aiInsights/$entity",
-  "id": "VjEjI1...",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#copilot/users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('YTc3OT...')/aiInsights/$entity",
+  "id": "Z2HWbT...",
   "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
   "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
   "createdDateTime": "2024-05-27T08:17:10.7261294Z",
@@ -190,7 +190,7 @@ The following example shows a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSoxM.../aiInsights?$filter=contentcorrelationId+eq+'bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3'
+GET https://graph.microsoft.com/beta/me/onlineMeetings/YTc3OTFhNWQtNTgwZC00OGZjLWJhYjQtOTFmNTUzMmU4MzEyqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy/aiInsights?$filter=contentcorrelationId+eq+'bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3'
 ```
 
 #### Response
@@ -211,12 +211,12 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#copilot/users('1273a016-201d-4f95-8083-1b7f99b3edeb')/onlineMeetings('MSoxM...')/aiInsights",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#copilot/users('1273a016-201d-4f95-8083-1b7f99b3edeb')/onlineMeetings('YTc3OT...')/aiInsights",
   "@odata.count": 1,
   "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET me/onlineMeetings('<key>')/aiInsights?$select=callId,content",
   "value": [
     {
-      "id": "VjEjI1...",
+      "id": "Z2HWbT...",
       "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
       "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
       "createdDateTime": "2024-05-27T08:17:10.7261294Z",
