@@ -1485,10 +1485,17 @@
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
-                "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
-                "qrCodePinAuthenticationMethod",
-                "qrCode",
-                "qrPin"
+                "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
+              ],
+              "childNodes": [
+                {
+                  "name": "QR code authentication",
+                  "resources": [
+                    "qrCodePinAuthenticationMethod",
+                    "qrCode",
+                    "qrPin"
+                  ]
+                }
               ]
             },
             {
@@ -1509,15 +1516,6 @@
                 "voiceAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration",
                 "qrCodePinAuthenticationMethodConfiguration"
-              ],
-              "childNodes": [
-                {
-                  "name": "QR code authentication",
-                  "resources": [
-                    "QR Code",
-                    "PIN"
-                  ]
-                }
               ]
             },
             {
