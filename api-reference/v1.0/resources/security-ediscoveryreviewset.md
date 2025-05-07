@@ -12,8 +12,6 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph.security
 
-
-
 Represents the static set of electronically stored information collected for use in a litigation, investigation, or regulatory request.
 
 ## Methods
@@ -22,6 +20,7 @@ Represents the static set of electronically stored information collected for use
 |[List](../api/security-ediscoverycase-list-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) collection|Get a list of the [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) objects and their properties.|
 |[Create](../api/security-ediscoverycase-post-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Create a new [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
 |[Get](../api/security-ediscoveryreviewset-get.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Read the properties and relationships of an [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
+|[Update](../api/security-ediscoveryreviewset-update.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Update the properties of a [microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
 |[Export](../api/security-ediscoveryreviewset-export.md)|None|Initiate an export of data from a [review set](../resources/security-ediscoveryreviewset.md).|
 |[Add to review set](../api/security-ediscoveryreviewset-addtoreviewset.md)|None|Start the process of adding a collection from Microsoft 365 services to a [review set](../resources/security-ediscoveryreviewset.md).|
 |[List queries](../api/security-ediscoveryreviewset-list-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) collection|Get the list of [queries](../resources/security-ediscoveryreviewsetquery.md) associated with an eDiscovery review set.|
@@ -32,6 +31,7 @@ Represents the static set of electronically stored information collected for use
 |:---|:---|:---|
 |createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The user who created the review set. Read-only. |
 |createdDateTime|DateTimeOffset|The datetime when the review set was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|description|String|The review set description.|
 |displayName|String|The review set name. The name is unique with a maximum limit of 64 characters.|
 |id|String|The review set unique identifier. Read-only.|
 
@@ -53,6 +53,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.security.ediscoveryReviewSet",
   "id": "String (identifier)",
+  "description": "String",
   "displayName": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
