@@ -3436,7 +3436,7 @@ items:
         href: ../../api/identityuserflow-get.md
       - name: Delete
         href: ../../api/identityuserflow-delete.md
-- name: Multicloud permissions management (preview)
+- name: Multicloud permissions management (deprecated)
   items:
   - name: Overview
     href: ../../resources/permissions-management-api-overview.md
