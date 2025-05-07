@@ -110,10 +110,7 @@ For more information, see [Permissions Management roles and permissions levels](
 - [What's Microsoft Entra Permissions Management](/entra/permissions-management/overview)
 - [Quickstart guide to Microsoft Entra Permissions Management](/entra/permissions-management/permissions-management-quickstart-guide)
 - [Microsoft Entra Permissions Management operations reference](/entra/architecture/permissions-manage-ops-guide-intro)
-- Microsoft Entra permissions management API operations quick references:
-  - [For AWS authorization systems](/graph/permissions-management-how-to-authorization-system-aws)
-  - [For Azure authorization systems](/graph/permissions-management-how-to-authorization-system-azure)
-  - [For GCP authorization systems](/graph/permissions-management-how-to-authorization-system-gcp)
+- [Quick reference: Permissions Management API operations for Azure, AWS, and GCP authorization systems](/graph/permissions-management-howto)
 
 <!-- {
   "type": "#page.annotation",
