@@ -1,7 +1,7 @@
 ---
 title: "Create tenantProtectionScopeContainer"
-toc.title: "Create tenantProtectionScopeContainer (preview)"
-description: "Compute the tenant-wide data protection policies and actions, including user/group scoping."
+toc.title: "Create tenantProtectionScopeContainer"
+description: "Compute the tenant-wide data protection policies and actions, including user or group scoping."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium

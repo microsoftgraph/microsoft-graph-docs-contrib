@@ -1,6 +1,6 @@
 ---
 title: "tenantDataSecurityAndGovernance: processContentAsync"
-toc.title: "tenantDataSecurityAndGovernance: processContentAsync (preview)"
+toc.title: "tenantDataSecurityAndGovernance: processContentAsync"
 description: "Process a batch of content entries asynchronously against data protection policies."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -43,7 +43,7 @@ POST /security/dataSecurityAndGovernance/processContentAsync
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter             | Type                                                                                                       | Description                                                                                                            |
-| :-------------------- | :--------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| :-------------------- | :---------------------------------------------- | :------------------------------------------------------ |
 | processContentRequests| [processContentBatchRequest](../resources/processcontentbatchrequest.md) collection | Required. A collection of individual content processing requests, each with its own user context, content, and request ID. |
 
 ## Response
