@@ -20,11 +20,12 @@ List Microsoft 365 Defender incident tasks.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-overview).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EntitlementManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|EntitlementManagement.ReadWrite.All|
+<!-- {
+  "blockType": "permissions",
+  "name": "security-list-incidenttasks"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/security-list-incidenttasks-permissions.md)]
 
 ## HTTP request
 

@@ -20,11 +20,12 @@ Execute response action as part of incident remediation. This operation will exe
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-overview).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EntitlementManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|EntitlementManagement.ReadWrite.All|
+<!-- {
+  "blockType": "permissions",
+  "name": "security-incidenttask-executeresponseaction"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/security-incidenttask-executeresponseaction-permissions.md)]
 
 ## HTTP request
 
