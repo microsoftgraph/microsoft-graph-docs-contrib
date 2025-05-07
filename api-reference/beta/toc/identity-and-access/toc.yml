@@ -2266,7 +2266,7 @@ items:
         href: ../../api/qrpin-update.md
       - name: Update PIN
         href: ../../api/qrpin-updatepin.md
-  - name: Authentication methods policy
+  - name: Authentication methods policies
     items:
     - name: Overview
       href: ../../resources/authenticationmethodspolicies-overview.md
@@ -2344,10 +2344,9 @@ items:
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-    - name: QR Code and PIN
-      displayName: QRCodePin
+    - name: QR Code authentication
       items:
-      - name: QR Code and PIN
+      - name: QR Code authentication
         href: ../../resources/qrcodepinauthenticationmethodconfiguration.md
       - name: Get
         href: ../../api/qrcodepinauthenticationmethodconfiguration-get.md
