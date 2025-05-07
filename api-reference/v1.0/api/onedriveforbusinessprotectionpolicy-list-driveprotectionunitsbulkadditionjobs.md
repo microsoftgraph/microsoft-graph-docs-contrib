@@ -54,7 +54,6 @@ The `drives` and `directoryObjectIds` fields are omitted from the response body 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessprotectionpolicy_list_driveprotectionunitsbulkadditionjobs"

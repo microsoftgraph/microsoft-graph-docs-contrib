@@ -54,7 +54,6 @@ The `mailboxes` and `directoryObjectIds` fields are omitted from the response bo
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "exchangeprotectionpolicy_list_mailboxprotectionunitsbulkadditionjobs"
