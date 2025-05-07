@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|AuditLog.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|AuditLog.Read.All|Not available.|
+

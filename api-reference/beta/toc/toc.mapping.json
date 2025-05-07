@@ -871,7 +871,10 @@
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
-            "engagementAsyncOperation"
+            "engagementAsyncOperation",
+            "engagementRole",
+            "engagementRoleMember",
+            "employeeExperienceUser"
           ]
         },
         {
@@ -1734,7 +1737,7 @@
           ]
         },
         {
-          "name": "Multicloud permissions management (preview)",
+          "name": "Multicloud permissions management (deprecated)",
           "overview": "../../resources/permissions-management-api-overview.md",
           "resources": [
             "authorizationSystem"
