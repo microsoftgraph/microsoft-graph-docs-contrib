@@ -2439,7 +2439,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | ad248c30-1919-40c8-b3d2-304481894e88 | - |
 | DisplayText | Read all tenant reading assignments submissions data | - |
-| Description | Allows the app to read all tenant users reading assignments submissions data without a signed-in user. | - |
+| Description | Allows the app to read all tenant users reading and speaker assignments submissions data without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -2449,7 +2449,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 040330d7-be7e-4130-b349-a6eb3a56e2f8 | - |
-| DisplayText | Read all tenant reading assignments submissions data | - |
+| DisplayText | Read all tenant reading and speaker assignments submissions data | - |
 | Description | Allows the app to read all tenant users reading assignments submissions data (excludes student-identifying information) without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
