@@ -184,10 +184,6 @@ Content-type: application/json
 ### Request
 The following example shows a request.
 
-<!-- {
-  "blockType": "request",
-  "name": "create_educationassignment_from_educationclass__languageTag"
-}-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/ce2cd7da-e41b-4e66-8390-c9251e4c3a40/assignments
 Content-type: application/json

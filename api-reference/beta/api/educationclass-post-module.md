@@ -148,10 +148,6 @@ Content-type: application/json
 ### Request
 The following example shows a request.
 
-<!-- {
-  "blockType": "request",
-  "name": "create_educationmodule_from_educationclass_languageTag"
-}-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules
 Content-type: application/json
@@ -168,11 +164,6 @@ The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationModule"
-} -->
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
