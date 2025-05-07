@@ -185,7 +185,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_callAiInsight_using_contentCorrelationId",
-  "sampleKeys": ["MSoxM..."]
+  "sampleKeys": ["YTc3OTFhNWQtNTgwZC00OGZjLWJhYjQtOTFmNTUzMmU4MzEyqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy"]
 }
 -->
 
