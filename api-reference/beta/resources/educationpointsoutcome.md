@@ -27,6 +27,7 @@ Represents an [educationOutcome](educationoutcome.md) that gives a numerical gra
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|grade|String|Grade represents the grade letter from the gradingScheme that corresponds to the given number of points.|
 |id|String|Unique identifier for the **educationPointsOutcome**.|
 |points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|The numeric grade that the teacher gave the student for this assignment.|
 |publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|A copy of the points property that is made when the grade is released to the student.|
@@ -51,6 +52,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "id": "String (identifier)",
+  "grade": "String",
   "points": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"},
   "publishedPoints": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"}
 }
