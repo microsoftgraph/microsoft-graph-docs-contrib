@@ -11,6 +11,8 @@ ms.date: 05/13/2024
 
 # Discover, remediate, and monitor permissions in multicloud infrastructures using permissions management APIs (preview)
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 [Microsoft Entra Permissions Management](https://www.microsoft.com/en/security/business/identity-access/microsoft-entra-permissions-management) provides comprehensive visibility into permissions assigned to all identities across multiple cloud infrastructures such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). The permissions management APIs in Microsoft Graph provide the programmatic way to discover, manage, and monitor these permissions in your multicloud infrastructure.
 
 This article introduces the Permissions Management capabilities that you can manage programmatically through Microsoft Graph.
