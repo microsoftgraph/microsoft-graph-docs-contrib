@@ -114,6 +114,7 @@ GET https://graph.microsoft.com/beta/security/incidentTasks/213213
 ### Response
 <!-- {
   "blockType": "response",
+  "name": "get_incidenttask",
   "truncated": false,
   "@odata.type": "microsoft.graph.security.incidentTask"
 }

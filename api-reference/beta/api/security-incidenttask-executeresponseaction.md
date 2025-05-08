@@ -147,8 +147,10 @@ POST https://graph.microsoft.com/beta/security/incidentTasks/213213/executeRespo
 <!-- {
   "blockType": "response",
   "name": "incidenttask_executeresponseaction",
-  "truncated": false
+  "isEmpty": true,
+  "noContent": true
 }
 -->
 ``` http
 HTTP/1.1 204 No Content
+```

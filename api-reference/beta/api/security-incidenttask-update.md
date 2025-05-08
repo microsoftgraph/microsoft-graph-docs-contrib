@@ -124,6 +124,7 @@ Content-Type: application/json
 ### Response
 <!-- {
   "blockType": "response",
+  "name": "update_incidenttask",
   "truncated": false,
   "@odata.type": "microsoft.graph.security.incidentTask"
 }
