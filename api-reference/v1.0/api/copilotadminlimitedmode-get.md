@@ -5,7 +5,7 @@ author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: apiPageType
-ms.date: 12/03/2024
+ms.date: 05/08/2025
 ---
 
 # Get copilotAdminLimitedMode
@@ -41,6 +41,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /copilot/admin/settings/limitedMode
 ```
+
 ## Request headers
 
 |Name|Description|
@@ -55,7 +56,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md) object in the response body.
 
-The API can return more HTTP status codes: `403 Forbidden`, `500 Internal Server Error`, or `429 Too Many Requests`.
+This API can also return the following HTTP status codes: `403 Forbidden`, `500 Internal Server Error`, or `429 Too Many Requests`.
 
 ## Examples
 
