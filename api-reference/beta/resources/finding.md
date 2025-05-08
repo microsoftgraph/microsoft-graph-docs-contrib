@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 The output of the permissions usage data analysis performed by Permissions Management to assess risk with identities and resources.
 
 Inherits from [entity](../resources/entity.md).
@@ -69,4 +71,5 @@ The following JSON representation shows the resource type.
   "createdDateTime": "String (timestamp)"
 }
 ```
+
 
