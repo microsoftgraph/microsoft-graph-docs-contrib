@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/people/profileSources(sourceId='bamboohr1')
+DELETE /admin/people/profileSources(sourceId='{profileSourceId}')
 ```
 
 ## Request headers
@@ -67,11 +67,10 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
