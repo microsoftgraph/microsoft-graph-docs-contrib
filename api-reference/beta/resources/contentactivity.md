@@ -17,10 +17,6 @@ Namespace: microsoft.graph
 
 Represents audit log data from content processing, in a structured way to ensure compliance, track user actions, and detect unusual behavior.
 
-Captures detailed information about each activity, including timestamps, actions taken, and the involved resources. Essential for tracking and auditing user interactions and system events.
-
-Inherits from [entity](../resources/entity.md).
-
 ## Methods
 
 |Method|Return type|Description|

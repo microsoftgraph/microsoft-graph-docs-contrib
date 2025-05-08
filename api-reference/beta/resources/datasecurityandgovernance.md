@@ -21,7 +21,7 @@ Abstract base type representing the entry point for data security and governance
 
 | Method                                  | Return Type                                                                                     | Description                                                                  |
 | :-------------------------------------- | :---------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
-|[tenantProtectionScopeContainer](../api/tenantprotectionscopecontainer-compute.md)| [policyTenantScope](../resources/policytenantscope.md) collection | Compute the tenant-wide data protection policies and actions, including user/group scoping. |
-|[processContentAsync](../api/tenantdatasecurityandgovernance-processcontentasync.md)|  [processContentResponses](../resources/processcontentresponses.md) collection | Process content entries asynchronously against data protection policies. |
+|[Compute protection scope container](../api/tenantprotectionscopecontainer-compute.md)| [policyTenantScope](../resources/policytenantscope.md) collection | Compute the tenant-wide data protection policies and actions, including user/group scoping. |
+|[Process content async](../api/tenantdatasecurityandgovernance-processcontentasync.md)|  [processContentResponses](../resources/processcontentresponses.md) collection | Process content entries asynchronously against data protection policies. |
 
 ## Relationships

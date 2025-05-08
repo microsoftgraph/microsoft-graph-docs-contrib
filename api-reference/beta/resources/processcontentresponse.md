@@ -17,15 +17,13 @@ Namespace: microsoft.graph
 
 Contains the outcome of a `processContent` action or a single result within a `processContentAsync` action.
 
-It includes any policy actions triggered and potential processing errors.
-
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|A collection of policy actions (like DLP actions) triggered by the processed content. Required.|
-|processingErrors|Collection([microsoft.graph.processingError](../resources/processingerror.md))|A collection of errors encountered during the content processing. Required.|
-|protectionScopeState|[microsoft.graph.protectionScopeState](../resources/protectionscopestate.md)|Indicates if the applicable protection scope (policies) has changed since the last known state for the context. Required.|
+|policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|A collection of policy actions (like DLP actions) triggered by the processed content.|
+|processingErrors|Collection([microsoft.graph.processingError](../resources/processingerror.md))|A collection of errors encountered during the content processing.|
+|protectionScopeState|microsoft.graph.protectionScopeState|Indicates if the applicable protection scope (policies) has changed since the last known state for the context. Possible values are `modified` and `notModified`.|
 
 ## Relationships
 
@@ -52,6 +50,6 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.processingError"
     }
   ],
-  "protectionScopeState": "microsoft.graph.protectionScopeState"
+  "protectionScopeState": "String"
 }
 ```

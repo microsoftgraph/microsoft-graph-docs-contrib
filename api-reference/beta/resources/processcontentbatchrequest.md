@@ -17,13 +17,11 @@ Namespace: microsoft.graph
 
 Represents a single entry within a request submitted to the processContentAsync action.
 
-Each entry contains the content and context to be processed for a specific user, along with a request ID for correlation.
-
 ## Properties
 
 | Property         | Type                                                                                               | Description                                                                                               |
 | :--------------- | :------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
-| contentToProcess | [processContentRequest](../resources/processcontentrequest.md)  | The actual content processing request details, including content metadata, activity, device, and app info. |
+| contentToProcess | [processContentRequest](../resources/processcontentrequest.md)                                     | The actual content processing request details, including content metadata, activity, device, and app info. |
 | requestId        | String                                                                                             | A unique identifier provided by the client to correlate this specific request item within the batch.        |
 | userId           | String                                                                                             | The unique identifier (Object ID or UPN) of the user in whose context the content should be processed.   |
 

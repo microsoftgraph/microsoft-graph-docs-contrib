@@ -17,13 +17,11 @@ Namespace: microsoft.graph
 
 Container for tenant-wide protection scope computation actions. 
 
-This is accessed via the `protectionScopes` navigation property on [tenantDataSecurityAndGovernance](../resources/tenantdatasecurityandgovernance.md).
-
 ## Methods
 
 | Method                                          | Return Type                                                                                     | Description                                                           |
 | :---------------------------------------------- | :---------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------- |
-| [compute protection scopes](../api/tenantprotectionscopecontainer-compute.md) | [policyTenantScope](../resources/policytenantscope.md) collection | Compute the data protection policies applicable across the tenant.    |
+| [Compute protection scopes](../api/tenantprotectionscopecontainer-compute.md) | [policyTenantScope](../resources/policytenantscope.md) collection | Compute the data protection policies applicable across the tenant.    |
 
 ## Properties
 

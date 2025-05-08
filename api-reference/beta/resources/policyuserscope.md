@@ -17,16 +17,12 @@ Namespace: microsoft.graph
 
 Defines the scope of a data governance policy as it applies to a specific user.
 
-It details the protected locations, activities, execution mode, and actions applicable to that user.
-
-Inherits from [microsoft.graph.policyScopeBase](../resources/policyscopebase.md).
-
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activities|[microsoft.graph.userActivityTypes](../resources/useractivitytypes.md)|User activities protected for this user. Inherited from `policyScopeBase`. Required.|
-|executionMode|[microsoft.graph.executionMode](../resources/executionmode.md)|Policy execution mode for this user. Inherited from `policyScopeBase`. Required.|
+|activities|microsoft.graph.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`. Required.|
+|executionMode|microsoft.graph.executionMode|Policy execution mode for this user.  Possible values are `evaluateInline` and `evaluateOffline`. Inherited from `policyScopeBase`. Required.|
 |locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations protected for this user. Inherited from `policyScopeBase`. Required.|
 |policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|Enforcement actions applicable to this user. Inherited from `policyScopeBase`. Required.|
 
@@ -46,8 +42,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.policyUserScope",
-  "activities": "microsoft.graph.userActivityTypes",
-  "executionMode": "microsoft.graph.executionMode",
+  "activities": "String",
+  "executionMode": "String",
   "locations": [
     {
       "@odata.type": "microsoft.graph.policyLocation"

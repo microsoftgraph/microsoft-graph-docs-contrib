@@ -942,6 +942,88 @@ Namespace: microsoft.graph.security
 |roleGroup|
 |unknownFutureValue|
 
+### contentProcessingErrorType values
+
+|Member|
+|:---|
+|transient|
+|permanent|
+|unknownFutureValue|
+
+### dlpAction values
+
+|Member|
+|:---|
+|notifyUser|
+|blockAccess|
+|deviceRestriction|
+|browserRestriction|
+|unknownFutureValue|
+|restrictAccess|
+|generateAlert|
+|generateIncidentReportAction|
+|sPBlockAnonymousAccess|
+|sPRuntimeAccessControl|
+|sPSharingNotifyUser|
+|sPSharingGenerateIncidentReport|
+
+### executionMode values
+
+|Member|
+|:---|
+|evaluateInline|
+|evaluateOffline|
+|unknownFutureValue|
+
+### overrideOption values
+
+|Member|
+|:---|
+|notAllowed|
+|allowFalsePositiveOverride|
+|allowWithJustification|
+|allowWithoutJustification|
+|unknownFutureValue|
+|allowWithAcknowledgement|
+
+### policyPivotProperty values
+
+|Member|
+|:---|
+|none|
+|activity|
+|location|
+|unknownFutureValue|
+
+### protectionScopeState values
+
+|Member|
+|:---|
+|notModified|
+|modified|
+|unknownFutureValue|
+
+### userActivityTypes values
+
+|Member|
+|:---|
+|none|
+|uploadText|
+|uploadFile|
+|downloadText|
+|downloadFile|
+|unknownFutureValue|
+
+### userActivityType values
+
+|Member|
+|:---|
+|uploadText|
+|uploadFile|
+|downloadText|
+|downloadFile|
+|unknownFutureValue|
+
 <!--
 {
   "type": "#page.annotation",

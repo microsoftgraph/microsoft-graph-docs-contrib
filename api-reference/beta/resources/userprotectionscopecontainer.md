@@ -16,13 +16,11 @@ Namespace: microsoft.graph
 
 Container for user-specific protection scope computation actions.
 
-This is accessed via the `protectionScopes` navigation property on [userDataSecurityAndGovernance](../resources/userdatasecurityandgovernance.md).
-
 ## Methods
 
 | Method                                          | Return Type                                                                                   | Description                                                           |
 | :---------------------------------------------- | :-------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------- |
-| [compute protection scopes](../api/userprotectionscopecontainer-compute.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the data protection policies applicable to the specific user. |
+| [Compute protection scopes](../api/userprotectionscopecontainer-compute.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the data protection policies applicable to the specific user. |
 
 ## Properties
 

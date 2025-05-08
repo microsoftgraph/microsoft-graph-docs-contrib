@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Represents content provided as a plain text string.
 
-Typically used for processing chat messages, text snippets, or AI interactions within a [processConversationMetadata](../resources/processconversationmetadata.md) context. Inherits from [contentBase](../resources/contentbase.md).
-
 ## Properties
 
 | Property | Type   | Description            |

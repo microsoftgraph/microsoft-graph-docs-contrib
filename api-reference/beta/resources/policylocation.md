@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing a location (like a domain or URL) to which a data protection policy applies. Found within the `locations` collection of [policyScopeBase](../resources/policyscopebase.md) derived types. Derived types like [policyLocationApplication](../resources/policylocationapplication.md), [policyLocationDomain](../resources/policylocationdomain.md) and [policyLocationUrl](../resources/policylocationurl.md) provide concrete location types.
+Abstract base type representing a location (like a domain or URL) to which a data protection policy applies. 
 
 ## Properties
 

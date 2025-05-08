@@ -17,11 +17,11 @@ Namespace: microsoft.graph
 
 Represents the entire tenant ('All users') as a scope within policy bindings.
 
-This is typically used in the `inclusions` list to specify that a policy applies to "All users" or "All groups". Inherits from [scopeBase](../resources/scopebase.md).
-
 ## Properties
 
-Inherits properties from [scopeBase](../resources/scopebase.md). The `identity` property is often a specific keyword like "All" or a tenant identifier, depending on the context.
+| Property | Type   | Description                                                                                        |
+| :------- | :----- | :------------------------------------------------------------------------------------------------- |
+| identity | String | The identifier for the scope. This could be a keyword like "All" for tenant scope. Inherited properties from [scopeBase](../resources/scopebase.md).|
 
 ## Relationships
 

@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Represents a plugin or extension invoked during an interaction with an AI or bot service.
 
-Provides context about external components used to generate a response. Found within the `plugins` collection of [processConversationMetadata](../resources/processconversationmetadata.md).
-
 ## Properties
 
 | Property   | Type   | Description                       |

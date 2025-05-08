@@ -17,14 +17,12 @@ Namespace: microsoft.graph
 
 Abstract base type defining the scope of applicability for a data governance policy, including locations, activities, and execution mode.
 
-It defines the locations (e.g., domains, URLs), activities (e.g., uploads, downloads), execution behavior, and resulting actions.
-
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activities|[microsoft.graph.userActivityTypes](../resources/useractivitytypes.md)|The user activities to be protected (e.g., `uploadText`, `downloadFile`). Required.|
-|executionMode|[microsoft.graph.executionMode](../resources/executionmode.md)|Specifies how the policy should be executed (inline evaluation or offline evaluation). Required.|
+|activities|microsoft.graph.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`. Required.|
+|executionMode|microsoft.graph.executionMode |Specifies how the policy should be executed. Possible values are `evaluateInline` and `evaluateOffline` Required.|
 |locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|The locations (like domains or URLs) to be protected. Required.|
 |policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|The enforcement actions to take if the policy conditions are met within this scope. Required.|
 

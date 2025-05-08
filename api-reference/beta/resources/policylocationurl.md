@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Represents a specific URL as a location for data protection policy scoping.
 
-For example, "https://partner.contoso.com/data", "https://internal.contoso.com/reports/upload". Used as a location within the scope of a data protection policy. Inherits from [policyLocation](../resources/policylocation.md).
-
 ## Properties
 
 | Property | Type   | Description                                                    |

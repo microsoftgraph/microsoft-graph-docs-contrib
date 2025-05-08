@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Represents the response for a single request within a batch content processing operation.
 
-Correlates a single request from a `processContentAsync` batch operation with its corresponding result. It contains the original `requestId` and the `processContentResponse` outcome.
-
 ## Properties
 
 |Property|Type|Description|

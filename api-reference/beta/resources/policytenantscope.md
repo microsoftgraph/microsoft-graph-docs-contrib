@@ -17,16 +17,12 @@ Namespace: microsoft.graph
 
 Defines the scope of a data governance policy at the tenant level, including user binding information.
 
-It includes the protected locations, activities, execution mode, actions, and specifies which users or groups the policy applies to via the `policyScope` property.
-
-Inherits from [microsoft.graph.policyScopeBase](../resources/policyscopebase.md).
-
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activities|[microsoft.graph.userActivityTypes](../resources/useractivitytypes.md)|User activities protected at the tenant level. Inherited from `policyScopeBase`. Required.|
-|executionMode|[microsoft.graph.executionMode](../resources/executionmode.md)|Policy execution mode at the tenant level. Inherited from `policyScopeBase`. Required.|
+|activities|microsoft.graph.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`. Required.|
+|executionMode|microsoft.graph.executionMode|Policy execution mode at the tenant level.  Possible values are `evaluateInline` and `evaluateOffline`. Inherited from `policyScopeBase`. Required.|
 |locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations protected at the tenant level. Inherited from `policyScopeBase`. Required.|
 |policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|Enforcement actions at the tenant level. Inherited from `policyScopeBase`. Required.|
 |policyScope|[microsoft.graph.policyBinding](../resources/policybinding.md)|Specifies the users and groups included in or excluded from this tenant-level policy scope.|

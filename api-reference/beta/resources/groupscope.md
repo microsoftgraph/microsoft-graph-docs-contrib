@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Represents a Microsoft 365 group or distribution list as a scope within policy bindings. 
 
-Typically used for inclusions or exclusions. Inherits from [scopeBase](../resources/scopebase.md).
-
 ## Properties
 
 | Property | Type   | Description                                                                                        |

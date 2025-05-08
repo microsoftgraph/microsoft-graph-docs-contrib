@@ -17,13 +17,11 @@ Namespace: microsoft.graph
 
 Represents metadata about a specific user activity being evaluated, including the activity type and location.
 
-Used within requests like [processContentRequest](../resources/processcontentrequest.md).
-
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activity|[microsoft.graph.userActivityType](../resources/useractivitytype.md)|The type of user activity (e.g., `uploadText`, `downloadFile`). Required.|
+|activity|microsoft.graph.userActivityType|The type of user activity. Possible values are `uploadText`, `uploadFile`, `downloadText`, `downloadFile`. Required.|
 
 ## Relationships
 
@@ -40,6 +38,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.activityMetadata",
-  "activity": "microsoft.graph.userActivityType",
+  "activity": "String",
 }
 ```

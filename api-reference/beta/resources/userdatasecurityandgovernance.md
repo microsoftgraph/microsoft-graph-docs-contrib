@@ -16,16 +16,12 @@ Namespace: microsoft.graph
 
 Provides access to data security and governance functionalities specifically scoped to the context of a single user.
 
-Accessed via the `dataSecurityAndGovernance` navigation property on a `user` resource.
-
-Inherits from [microsoft.graph.dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).
-
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [processContent](../api/userdatasecurityandgovernance-processcontent.md) | [processContentResponse](../resources/processcontentresponse.md) | Process content against data security and governance policies in the context of this user. |
-| [protectionScopes](../api/userdatasecurityandgovernance-processcontent.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the protection scopes for this user. |
+| [Process content](../api/userdatasecurityandgovernance-processcontent.md) | [processContentResponse](../resources/processcontentresponse.md) | Process content against data security and governance policies in the context of this user. |
+| [Compute protection scopes](../api/userdatasecurityandgovernance-processcontent.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the protection scopes for this user. |
 
 ## Properties
 

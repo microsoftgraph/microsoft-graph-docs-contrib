@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Abstract base type for representing errors that occur during data classification, label evaluation, or policy processing.
 
-It provides common error properties like code, message, and target.
-
 ## Properties
 
 | Property   | Type                                                                                             | Description                                                                    |

@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Process content against data protection policies in the context of the current user. 
 
-Evaluate one or more pieces of content against applicable data protection policies (like DLP) in the context of the current user, their device, the application they are using, and the activity they are performing. This action returns the set of actions the calling application should enforce.
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

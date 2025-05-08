@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Contains the platform and version details of the operating system.
 
-Specifies the platform (for example, "Windows", "macOS") and version of the operating system running on a device. Used within [deviceMetadata](../resources/devicemetadata.md).
-
 ## Properties
 
 | Property                | Type   | Description                                          |

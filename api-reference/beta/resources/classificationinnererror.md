@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains more specific, potentially internal, details about an error that occurred during data classification, label evaluation, or policy processing. This provides diagnostic information like activity IDs and timestamps. It is typically nested within a [classifcationErrorBase](../resources/classifcationerrorbase.md) object.
+Contains more specific, potentially internal, details about an error that occurred during data classification, label evaluation, or policy processing. 
 
 ## Properties
 

@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Represents a DLP action that explicitly blocks access to the content that triggered the rule match.
 
-Inherits from [dlpActionInfo](../resources/dlpactioninfo.md).
-
 ## Properties
 
 |Property|Type|Description|

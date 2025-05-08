@@ -17,13 +17,11 @@ Namespace: microsoft.graph
 
 Represents an individual user as a scope within policy bindings.
 
-Typically used for inclusions or exclusions. Inherits from [scopeBase](../resources/scopebase.md).
-
 ## Properties
 
-Inherits properties from [scopeBase](../resources/scopebase.md).
-
-The `identity` property holds the unique identifier (e.g., Object ID or UPN) of the user.
+| Property | Type   | Description                                                                                        |
+| :------- | :----- | :------------------------------------------------------------------------------------------------- |
+| identity | String | The identifier for the scope. This could be a user ID, or group ID. Inherited properties from [scopeBase](../resources/scopebase.md).|
 
 ## Relationships
 

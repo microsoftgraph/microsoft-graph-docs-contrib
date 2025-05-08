@@ -1,7 +1,7 @@
 ---
 title: "integratedApplicationMetadata resource type"
 toc.title: "integratedApplicationMetadata resource type (preview)"
-description: "Represents metadata about the application integrated with Purview data security APIs."
+description: "Represents metadata about the application integrated with Microsoft Purview data security APIs."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,9 +15,7 @@ Namespace: microsoft.dataClassificationService.contract
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents metadata about the application integrated with Purview data security APIs.
-
-For example, [protectionScopes/compute](./../api/userprotectionscopecontainer-compute.md), [processContent](../api/userdatasecurityandgovernance-processcontent.md), and [processContentAsync](./../api/tenantdatasecurityandgovernance-processcontentasync.md).
+Represents metadata about the application integrated with Microsoft Purview data security APIs.
 
 ## Properties
 

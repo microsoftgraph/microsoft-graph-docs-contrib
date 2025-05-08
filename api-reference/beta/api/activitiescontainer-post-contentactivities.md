@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Create a content activity for the signed-in user.
 
-Log data from processed content in a structured format to ensure audit compliance, track user actions, and drive anomalous behavior detections. It captures detailed information about each activity, including timestamps, actions taken, and the involved resources, which are essential for tracking and auditing user interactions and system events.
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -75,7 +73,7 @@ Content-Type: application/json
           {
              "@odata.type": "microsoft.graph.processConversationMetadata",
              "identifier": "68fa951a-898a-4427-8e9e-6f8c05e9fe2b",
-             "name":"Purview API Explorer message",
+             "name":"API Explorer message",
              "correlationId": "559a2343-7aa2-4912-93fe-72c47b2706ed",
              "sequenceNo": 0, 
              "isTruncated": false,
@@ -94,7 +92,7 @@ Content-Type: application/json
           }
        },
        "integratedAppMetadata": {
-          "name": "Purview API Explorer",
+          "name": "API Explorer",
           "version": "0.1" 
        },
        "userId":"7c2f8f10-cba8-4a8d-9449-db4b76d17390",
@@ -128,7 +126,7 @@ Content-Type: application/json
       {
         "identifier": "68fa951a-898a-4427-8e9e-6f8c05e9fe2b",
         "content": null,
-        "name": "Purview API Explorer message",
+        "name": "API Explorer message",
         "correlationId": "559a2343-7aa2-4912-93fe-72c47b2706ed",
         "sequenceNumber": null,
         "length": null,
@@ -148,7 +146,7 @@ Content-Type: application/json
       }
     },
     "integratedAppMetadata": {
-      "name": "Purview API Explorer",
+      "name": "API Explorer",
       "version": "0.1"
     }
   }

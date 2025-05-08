@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Abstract base type representing the actual content (text or binary) being processed.
 
-Derived types ([textContent](../resources/textcontent.md), [binaryContent](../resources/binarycontent.md)) hold the specific content data.
-
 ## Properties
 
 None.

@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps.
 
-Submitted for processing via [processContent](../api/userdatasecurityandgovernance-processcontent.md) or [processContentAsync](../api/tenantdatasecurityandgovernance-processcontentasync.md). Contains common properties like identifiers, content reference, name, timestamps, and size information. Derived types ([processConversationMetadata](../resources/processconversationmetadata.md), [processFileMetadata](../resources/processfilemetadata.md)) add context-specific details.
-
 ## Properties
 
 | Property         | Type                                                                           | Description                                                                                                                                                           |

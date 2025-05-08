@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Defines the input payload for the [processContent](../api/userdatasecurityandgovernance-processcontent.md) and [processContentAsync](../api/tenantdatasecurityandgovernance-processcontentasync.md) actions.
 
-It includes the actual content to be processed along with relevant metadata about the activity, device, and integrated application.
-
 ## Properties
 
 |Property|Type|Description|

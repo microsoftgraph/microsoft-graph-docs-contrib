@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Represents metadata for a content entry that is part of a conversation (e.g., chat message, AI interaction). 
 
-Includes information about parent messages and any resources or plugins involved. Inherits from [processContentMetadataBase](../resources/processcontentmetadatabase.md).
-
 ## Properties
 
 | Property          | Type                                                                                                   | Description                                                                                        |
@@ -26,8 +24,6 @@ Includes information about parent messages and any resources or plugins involved
 | accessedResources | String collection                                                                                      | List of resources (e.g., file URLs, web URLs) accessed during the generation of this message (relevant for bot interactions). |
 | parentMessageId   | String                                                                                                 | Identifier of the parent message in a threaded conversation, if applicable.                          |
 | plugins           | [aiInteractionPlugin](../resources/aiinteractionplugin.md) collection | List of plugins used during the generation of this message (relevant for AI/bot interactions).       |
-
-Inherits properties from [processContentMetadataBase](../resources/processcontentmetadatabase.md).
 
 ## Relationships
 

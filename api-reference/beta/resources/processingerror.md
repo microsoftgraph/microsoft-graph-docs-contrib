@@ -17,13 +17,11 @@ Namespace: microsoft.graph
 
 Represents an error encountered during content processing or policy evaluation, indicating if it's transient or permanent.
 
-Specifically within the context of the `processContent` and `processContentAsync` actions. It includes standard error details and indicates whether the error is likely transient or permanent. Inherits from [classificationError](../resources/classificationerror.md). Found within the `processingErrors` collection of [processContentResponse](../resources/processcontentresponse.md).
-
 ## Properties
 
 | Property  | Type                                                                                               | Description                                                                                      |
 | :-------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
-| errorType | [contentProcessingErrorType](../resources/contentprocessingerrortype.md) | Indicates whether the error is considered transient (potentially resolvable by retry) or permanent. |
+| errorType | microsoft.graph.contentProcessingErrorType | Indicates whether the error is considered transient (potentially resolvable by retry) or permanent. Possible values are `transient` and `permanent`  |
 
 Inherits properties from [classificationError](../resources/classificationerror.md).
 

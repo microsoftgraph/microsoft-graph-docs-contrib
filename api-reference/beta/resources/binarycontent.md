@@ -1,7 +1,7 @@
 ---
 title: "binaryContent resource type"
 toc.title: "binaryContent resource type (preview)"
-description: "Represents content provided as a binary data stream."
+description: "Represents content provided as a Base64 encoded binary data stream."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,17 +15,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents content provided as a binary data stream.
-
-Base64 encoded. Typically used for processing files within a [processFileMetadata](../resources/processfilemetadata.md) context. Inherits from [contentBase](../resources/contentbase.md).
+Represents content provided as a Base64 encoded binary data stream.
 
 ## Properties
 
 | Property | Type   | Description                                      |
 | :------- | :----- | :----------------------------------------------- |
 | data     | Binary | The binary content, encoded as a Base64 string. Inherited from [contentBase](../resources/contentbase.md)|
-
-Inherits properties from [contentBase](../resources/contentbase.md).
 
 ## Relationships
 
