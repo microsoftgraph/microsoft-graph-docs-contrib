@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 View the raw count of inactive users in the specified AWS, Azure, or GCP authorization systems in your multicloud environment.
 
 ## Permissions
@@ -110,4 +112,5 @@ Content-Type: application/json
     "findingsCount": 77
 }
 ```
+
 

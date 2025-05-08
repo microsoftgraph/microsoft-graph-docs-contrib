@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Create a new [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -504,4 +506,5 @@ Content-Type: application/json
   "statusDetail": "submitted"
 }
 ```
+
 

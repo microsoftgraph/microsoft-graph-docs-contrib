@@ -2056,6 +2056,10 @@ items:
         href: ../../api/authenticationeventlistener-delete.md
     - name: On attribute collection listener
       href: ../../resources/onattributecollectionlistener.md
+    - name: On attribute collection start listener
+      href: ../../resources/onattributecollectionstartlistener.md
+    - name: On attribute collection submit listener
+      href: ../../resources/onattributecollectionsubmitlistener.md
     - name: On authentication method load start listener
       href: ../../resources/onauthenticationmethodloadstartlistener.md
     - name: On email OTP send listener
@@ -2229,7 +2233,42 @@ items:
         href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
       - name: Delete
         href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
-  - name: Authentication methods policy
+    - name: QR code authentication
+      items:
+      - name: QR code authentication
+        displayName: QRCodePin
+        items:
+        - name: QR code authentication
+          href: ../../resources/qrcodepinauthenticationmethod.md
+        - name: Get
+          href: ../../api/qrcodepinauthenticationmethod-get.md
+        - name: Create
+          href: ../../api/authentication-put-qrcodepinmethod.md
+        - name: Delete
+          href: ../../api/authentication-delete-qrcodepinmethod.md
+      - name: QR Code
+        displayName: QRCodePin, QRCode
+        items:
+        - name: QR Code
+          href: ../../resources/qrcode.md
+        - name: Create or update
+          href: ../../api/qrcode-update.md
+        - name: Get
+          href: ../../api/qrcode-get.md
+        - name: Update
+          href: ../../api/qrcode-update.md
+        - name: Delete
+          href: ../../api/qrcode-delete.md
+      - name: PIN
+        displayName: QRCodePin, QRCode
+        items:
+        - name: PIN
+          href: ../../resources/qrpin.md
+        - name: Reset PIN
+          href: ../../api/qrpin-update.md
+        - name: Update PIN
+          href: ../../api/qrpin-updatepin.md
+  - name: Authentication methods policies
     items:
     - name: Overview
       href: ../../resources/authenticationmethodspolicies-overview.md
@@ -2307,6 +2346,16 @@ items:
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+    - name: QR Code authentication
+      items:
+      - name: QR Code authentication
+        href: ../../resources/qrcodepinauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/qrcodepinauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/qrcodepinauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/qrcodepinauthenticationmethodconfiguration-delete.md
     - name: SMS
       items:
       - name: SMS
@@ -2483,6 +2532,12 @@ items:
         href: ../../api/conditionalaccesspolicy-update.md
       - name: Delete
         href: ../../api/conditionalaccesspolicy-delete.md
+    - name: What If evaluation
+      items:
+      - name: What If evaluation
+        href: ../../resources/whatifanalysisresult.md
+      - name: Evaluate
+        href: ../../api/conditionalaccessroot-evaluate.md
     - name: Named location
       items:
       - name: Named location
@@ -3228,6 +3283,16 @@ items:
         href: ../../api/authenticationconditionsapplications-post-includeapplications.md
       - name: Remove
         href: ../../api/authenticationconditionapplication-delete.md
+    - name: On attribute collection handler
+      href: ../../resources/onattributecollectionhandler.md
+    - name: On attribute collection start handler
+      href: ../../resources/onattributecollectionstarthandler.md
+    - name: On attribute collection start custom extension handler
+      href: ../../resources/onattributecollectionstartcustomextensionhandler.md
+    - name: On attribute collection submit handler
+      href: ../../resources/onattributecollectionsubmithandler.md
+    - name: On attribute collection submit custom extension handler
+      href: ../../resources/onattributecollectionsubmitcustomextensionhandler.md
   - name: User flows in workforce tenants and Azure AD B2C
     items:
     - name: B2C identity user flow
@@ -3370,7 +3435,7 @@ items:
         href: ../../api/identityuserflow-get.md
       - name: Delete
         href: ../../api/identityuserflow-delete.md
-- name: Multicloud permissions management (preview)
+- name: Multicloud permissions management (deprecated)
   items:
   - name: Overview
     href: ../../resources/permissions-management-api-overview.md
@@ -4069,8 +4134,14 @@ items:
         href: ../../resources/networkaccess-networkaccesstraffic.md
       - name: List
         href: ../../api/networkaccess-logs-list-traffic.md
+      - name: Get
+        href: ../../api/networkaccess-networkaccesstraffic-get.md
     - name: Remote network health event
-      href: ../../resources/networkaccess-remotenetworkhealthevent.md
+      items:
+      - name: Remote network health event
+        href: ../../resources/networkaccess-remotenetworkhealthevent.md
+      - name: List
+        href: ../../api/networkaccess-logs-list-remotenetworks.md
   - name: Traffic reports
     items:
     - name: Traffic reports

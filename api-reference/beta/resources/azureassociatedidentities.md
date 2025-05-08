@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 A container for the different kinds of Azure identities.
 
 ## Properties
@@ -40,4 +42,5 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.azureAssociatedIdentities"
 }
 ```
+
 
