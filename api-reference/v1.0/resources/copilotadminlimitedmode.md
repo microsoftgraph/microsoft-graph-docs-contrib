@@ -17,7 +17,7 @@ Represents a setting that controls whether Microsoft 365 Copilot in Teams meetin
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/copilotadminlimitedmode-get.md)|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Read the properties and relationships of a [copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md).|
+|[Get](../api/copilotadminlimitedmode-get.md)|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Read the properties and relationships of a [copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md) object.|
 |[Update](../api/copilotadminlimitedmode-update.md)|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Update the properties of a [copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md) object.|
 
 ## Properties
