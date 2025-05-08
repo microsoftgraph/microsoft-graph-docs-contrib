@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/peopleadminsettings-list-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md) collection|Get a list of the [profilePropertySetting](../resources/profilepropertysetting.md) objects and their properties.|
+|[List](../api/peopleadminsettings-list-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md) collection|Get a collection of [profilePropertySetting](../resources/profilepropertysetting.md) objects that define the configuration for user profile properties in an organization.|
 |[Create](../api/peopleadminsettings-post-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Create a new [profilePropertySetting](../resources/profilepropertysetting.md) object.
 |
 |[Get](../api/profilepropertysetting-get.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Read the properties and relationships of a [profilePropertySetting](../resources/profilepropertysetting.md) object.
