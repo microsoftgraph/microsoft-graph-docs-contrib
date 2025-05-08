@@ -69,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/people/profileSources
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -95,14 +94,14 @@ Content-Type: application/json
       "webUrl": "https://bamboohr.contoso.com/login",
       "localizations": [
         {
-          "displayName" : "HR-Platform",
-          "webUrl" : "http://bamboohr.contoso.com/en-us/login",
-          "languageTag" : "en-us"
+          "displayName": "HR-Platform",
+          "webUrl": "http://bamboohr.contoso.com/en-us/login",
+          "languageTag": "en-us"
         },
         {
-          "displayName" : "HR-Plattform",
-          "webUrl" : "http://bamboohr.contoso.com/de/login",
-          "languageTag" : "de"
+          "displayName": "HR-Plattform",
+          "webUrl": "http://bamboohr.contoso.com/de/login",
+          "languageTag": "de"
         }
       ]
     },
@@ -115,9 +114,9 @@ Content-Type: application/json
       "webUrl": "https://login.microsoftonline.com",
       "localizations": [
         {
-          "displayName" : "Contoso Microsoft Entra",
-          "webUrl" : "https://login.microsoftonline.com",
-          "languageTag" : "en-us"
+          "displayName": "Contoso Microsoft Entra",
+          "webUrl": "https://login.microsoftonline.com",
+          "languageTag": "en-us"
         }
       ]
     }
