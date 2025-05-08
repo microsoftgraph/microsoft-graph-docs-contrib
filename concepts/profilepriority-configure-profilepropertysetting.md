@@ -199,8 +199,6 @@ You can use the Microsoft Graph PowerShell module to configure profile precedenc
 > Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 > ```
 
-Use the following command.
-
 ```powershell
 $params = @{
     prioritizedSourceUrls = @(
