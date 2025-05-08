@@ -1,6 +1,6 @@
 ---
 title: "incidentTask: executeResponseAction"
-description: "Execute response action as part of incident remediation."
+description: "Execute an automated remediation action on a Microsoft 365 Defender incident task."
 author: "bealfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Execute response action as part of incident remediation. This operation will execute the response action associated with a specific incident task.
+Execute a remediation action on a Microsoft 365 Defender incident task. When you execute an action, Microsoft 365 Defender performs the necessary remediation steps associated with that action type.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ POST /security/incidentTasks/{incidentTaskId}/executeResponseAction
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 
@@ -49,13 +49,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Error responses
 
 ### Action type not supported
 
-Only the following action types are supported for automated execution: collectInvestigationPackage, isolateDevice, unRestrictAppExecution, unIsolateDevice, restrictAppExecution, runAntiVirusScan, stopAndQuarantineFile, submitIocRule.
+The API only supports executing these action types: collectInvestigationPackage, isolateDevice, unRestrictAppExecution, unIsolateDevice, restrictAppExecution, runAntiVirusScan, stopAndQuarantineFile, submitIocRule.
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -78,6 +78,8 @@ Content-type: application/json
 
 ### Invalid Task ID
 
+The provided incident task ID isn't a valid GUID.
+
 ```http
 HTTP/1.1 400 Bad Request
 Content-type: application/json
@@ -99,6 +101,8 @@ Content-type: application/json
 
 ### Task Not Found
 
+No incident task exists with the provided ID.
+
 ```http
 HTTP/1.1 404 Not Found
 Content-type: application/json
@@ -111,8 +115,8 @@ Content-type: application/json
         "message": "taskId {id} not found",
         "innerError": {
             "date": "2023-09-04T05:47:56",
-            "request-id": "43067534-c43a-4df8-a4d1-30660b99ac76",
-            "client-request-id": "b041e97f-24d2-bf6a-1731-7e0de686464c"
+            "request-id": "43064123-b43a-4df8-a4d1-30660b99ac76",
+            "client-request-id": "5451e97f-24d2-236a-1731-1e0de686464c"
         }
     }
 }
@@ -122,7 +126,7 @@ Content-type: application/json
 
 ### Request
 
-The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "incidenttask_executeresponseaction"
@@ -132,9 +136,19 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/security/incidentTasks/213213/executeResponseAction
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/incidenttask-executeresponseaction.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/incidenttask-executeresponseaction.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/incidenttask-executeresponseaction.md)]
+
+---
+
 ### Response
 
-The following example shows a successful response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,6 +1,6 @@
 ---
 title: "List incidentTasks"
-description: "List Microsoft 365 Defender incident tasks."
+description: "Get a list of incident tasks in Microsoft 365 Defender. These tasks represent remediation actions identified by Defender Experts for XDR service."
 author: "bealfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List Microsoft 365 Defender incident tasks.
+Get a list of incident tasks in Microsoft 365 Defender. These tasks represent remediation actions identified by Defender Experts for XDR service.
 
 ## Permissions
 
@@ -39,20 +39,20 @@ GET /security/incidentTasks
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|$filter|string|Filter items by property values. Supported properties: incidentId, status, type, lastUpdateDateTime, createdDateTime, actionType|
-|$orderby|string|Order items by property values. Supported property: lastUpdateDateTime|
-|$top|integer|Limit the number of items in response|
-|$select|string|Select specific properties to include in the response|
+|$filter|string|Filter results by property values. Supported properties: incidentId, status, type, lastUpdateDateTime, createdDateTime, actionType.|
+|$orderby|string|Order results by property values. Supported property: lastUpdateDateTime.|
+|$top|integer|Set the maximum number of items to return.|
+|$select|string|Choose which properties to include in the response.|
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_incidenttask"
@@ -76,10 +76,21 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/security/incidentTasks
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-incidenttask.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-incidenttask.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-incidenttask.md)]
+
+---
+
 ### Response
 
-The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +102,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#security/incidentTasks",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/incidentTasks",
     "value": [
         {
             "id": "213213",
