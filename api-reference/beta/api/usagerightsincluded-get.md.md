@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "permissions",
   "name": "purviewecosystem-sensitivitylabels-getrightsforlabelid-permissions"
 } -->
-[!INCLUDE [permissions-table](../includes/permissions/purviewecosystem-sensitivitylabels-getrightsforlabelid-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/usagerightsincluded-get-permissions.md)]
 
 This API requires delegated permissions. Application permissions are not supported for checking rights for a specific user context.
 
@@ -52,6 +52,7 @@ GET /users/{id|userPrincipalName}/dataSecurityAndGovernance/sensitivityLabels/{l
 | Parameter  | Type   | Description                                                                                                                                                               |
 | :--------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | ownerEmail | String | Optional. The email address of the content owner. This parameter is sometimes required by the underlying Rights Management service depending on the protection template. |
+| userEmail | String | Optional. The email address of the user for whom the rights are being requested. This parameter is sometimes required by the underlying Rights Management service.          |
 
 ## Request body
 

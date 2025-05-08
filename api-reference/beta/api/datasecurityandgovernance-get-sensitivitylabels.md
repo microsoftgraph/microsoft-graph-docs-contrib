@@ -34,18 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-Get labels for the signed-in user (delegated permissions):
-```http
-GET /me/dataSecurityAndGovernance/sensitivityLabels
-GET /users/{id|userPrincipalName}/dataSecurityAndGovernance/sensitivityLabels
-```
+Get labels for the signed-in user (delegated permissions) or all tenant labels (application permissions):
 
-Get labels for the tenant (application permissions):
 ```http
 GET /security/dataSecurityAndGovernance/sensitivityLabels
 ```
 
 Get labels for a specific user (application permissions):
+
 ```http
 GET /security/dataSecurityAndGovernance/sensitivityLabels?scopeToUser={userPrincipalNameOrObjectId}
 ```
@@ -62,10 +58,25 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels?scopeToUser={userPrinc
 
 | Parameter      | Type             | Description                                                                                                                                                                                                                                                                                           |
 | :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| scopeToUser    | String           | Optional. Used only with application permissions (`/security/...` path). Specifies the UPN or object ID of the user whose labels should be retrieved. If omitted with application permissions, returns all tenant labels. Ignored when using delegated permissions (`/me/...` or `/users/{id}/...` paths). |
+| scopeToUser    | String           | Optional. Used only with application permissions (`/security/...` path). Specifies the UPN or object ID of the user whose labels should be retrieved. If omitted with application permissions, returns all tenant labels. |
 | locale         | String           | Optional. Overrides the `Accept-Language` header. Specifies the locale for localizable fields. If omitted, uses `Accept-Language` or the tenant default.                                                                                                                                          |
 | contentFormats | String           | Optional. A comma-separated string of content formats (e.g., `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.                                                                    |
-| labelIds       | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs.                                                                                                                                                                    |
+| labelIds       | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
+
+## Content Formats
+
+The `contentFormats` parameter filters labels based on their applicability to different types of content or workloads. Possible values include:
+
+| Value          | Description                                                                 |
+| :------------- | :-------------------------------------------------------------------------- |
+| File           | Labels applicable to general files and items (including Copilot outputs). |
+| Email          | Labels applicable specifically to emails.                                   |
+| Site           | Labels applicable to SharePoint sites.                                      |
+| UnifiedGroup   | Labels applicable to Microsoft 365 Groups.                                |
+| Teamwork       | Labels applicable to Microsoft Teams meetings.                              |
+| SchematizedData| Labels applicable to Purview data map assets or other schematized data.   |
+
+Providing multiple values (e.g., `File,Email`) returns labels applicable to *either* `File` *or* `Email`.
 
 ## Request body
 
@@ -108,7 +119,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('me')/dataSecurityAndGovernance/sensitivityLabels",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata/dataSecurityAndGovernance/sensitivityLabels",
   "value": [
     {
       "id": "4e4234dd-377b-42a3-935b-0e42f138fa23",
@@ -234,18 +245,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-## Content Formats
-
-The `contentFormats` parameter filters labels based on their applicability to different types of content or workloads. Possible values include:
-
-| Value          | Description                                                                 |
-| :------------- | :-------------------------------------------------------------------------- |
-| File           | Labels applicable to general files and items (including Copilot outputs). |
-| Email          | Labels applicable specifically to emails.                                   |
-| Site           | Labels applicable to SharePoint sites.                                      |
-| UnifiedGroup   | Labels applicable to Microsoft 365 Groups.                                |
-| Teamwork       | Labels applicable to Microsoft Teams meetings.                              |
-| SchematizedData| Labels applicable to Purview data map assets or other schematized data.   |
-
-Providing multiple values (e.g., `File,Email`) returns labels applicable to *either* `File` *or* `Email`.

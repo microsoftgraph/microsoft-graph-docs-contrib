@@ -36,11 +36,28 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 POST /security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
 ```
-If user context is needed for future enhancements (like considering user rights during inheritance), a delegated endpoint might be introduced:
-```http
-POST /me/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
-POST /users/{id|userPrincipalName}/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
-```
+## Query parameters
+
+| Parameter      | Type             | Description                                                                                                                                                                                                                                                                                           |
+| :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| locale         | String           | Optional. Overrides the `Accept-Language` header. Specifies the locale for localizable fields. If omitted, uses `Accept-Language` or the tenant default. |
+| contentFormats | String           | Optional. A comma-separated string of content formats (e.g., `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.                                                                    |
+| labelIds       | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
+
+## Content Formats
+
+The `contentFormats` parameter filters labels based on their applicability to different types of content or workloads. Possible values include:
+
+| Value          | Description                                                                 |
+| :------------- | :-------------------------------------------------------------------------- |
+| File           | Labels applicable to general files and items (including Copilot outputs). |
+| Email          | Labels applicable specifically to emails.                                   |
+| Site           | Labels applicable to SharePoint sites.                                      |
+| UnifiedGroup   | Labels applicable to Microsoft 365 Groups.                                |
+| Teamwork       | Labels applicable to Microsoft Teams meetings.                              |
+| SchematizedData| Labels applicable to Purview data map assets or other schematized data.   |
+
+When computing inheritance, only input labels applicable to *at least one* of the specified `contentFormats` are considered.
 
 ## Request headers
 
@@ -125,18 +142,3 @@ Content-Type: application/json
   "children": [ ]
 }
 ```
-
-## Content Formats
-
-The `contentFormats` parameter filters labels based on their applicability to different types of content or workloads. Possible values include:
-
-| Value          | Description                                                                 |
-| :------------- | :-------------------------------------------------------------------------- |
-| File           | Labels applicable to general files and items (including Copilot outputs). |
-| Email          | Labels applicable specifically to emails.                                   |
-| Site           | Labels applicable to SharePoint sites.                                      |
-| UnifiedGroup   | Labels applicable to Microsoft 365 Groups.                                |
-| Teamwork       | Labels applicable to Microsoft Teams meetings.                              |
-| SchematizedData| Labels applicable to Purview data map assets or other schematized data.   |
-
-When computing inheritance, only input labels applicable to *at least one* of the specified `contentFormats` are considered.

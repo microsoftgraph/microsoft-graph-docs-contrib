@@ -25,40 +25,40 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List](../api/datasecurityandgovernance-get-sensitivitylabels.md)|[sensitivityLabel](../resources/sensitivitylabel.md) collection|Get a list of the sensitivityLabel objects and their properties.|
 |[computeInheritance](../api/sensitivitylabel-computeinheritance.md)|[sensitivityLabel](../resources/sensitivitylabel.md)|Calculate the sensitivity label that should be inherited|
-|[computeRightsAndInheritance](../api/sensitivitylabel-computerightsandinheritance.md)|[computeRightsAndInheritanceResult](../resources/computerightsandinheritanceresult.md)|**TODO: Add Description**|
-|[List usageRightsIncluded](../api/usagerightsincluded-get.md.md)|[usageRightsIncluded](../resources/usagerightsincluded.md) collection|**TODO: Add a useful description.**|
-
+|[computeRightsAndInheritance](../api/sensitivitylabel-computerightsandinheritance.md)|[computeRightsAndInheritanceResult](../resources/computerightsandinheritanceresult.md)|Compute the rights and inheritance for the sensitivity label.|
+|[List usageRightsIncluded](../api/usagerightsincluded-get.md.md)|[usageRightsIncluded](../resources/usagerightsincluded.md) collection|Get the usage rights granted to the calling user.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actionSource|labelActionSource|This property might be part of specific responses like `computeInheritance` but typically not part of the base label definition.The possible values are: `manual`, `automatic`, `recommended`, `none`, `unknownFutureValue`.|
-|applicableTo|sensitivityLabelTarget|The possible values are: `email`, `site`, `unifiedGroup`, `teamwork`, `unknownFutureValue`, `file`, `schematizedData`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `file` , `schematizedData`.|
-|applicationMode|applicationMode|**TODO: Add Description**.The possible values are: `manual`, `automatic`, `recommended`.|
-|assignedPolicies|[labelPolicy](../resources/labelpolicy.md) collection|**TODO: Add Description**|
-|autoLabeling|[autoLabeling](../resources/autolabeling.md)|**TODO: Add Description**|
-|autoTooltip|String|**TODO: Add Description**|
-|color|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isDefault|Boolean|**TODO: Add Description**|
-|isEnabled|Boolean|**TODO: Add Description**|
-|isEndpointProtectionEnabled|Boolean|**TODO: Add Description**|
-|isScopedToUser|Boolean|**TODO: Add Description**|
-|labelActions|[labelActionBase](../resources/labelactionbase.md) collection|**TODO: Add Description**|
-|locale|String|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
-|priority|Int32|**TODO: Add Description**|
-|toolTip|String|**TODO: Add Description**|
+| actionSource | [labelActionSource](../resources/labelactionsource.md) | Indicates the source of the action that resulted in the label being applied. Possible values are: `manual`, `automatic`, `recommended`, `default`, `unknownFutureValue`. |
+| applicableTo | [sensitivityLabelTarget](../resources/sensitivitylabeltarget.md) | Specifies the workloads where the label can be applied. Possible values: `email`, `site`, `unifiedGroup`, `teamwork`, `file`, `schematizedData`, `unknownFutureValue`. |
+| applicationMode | [applicationMode](../resources/applicationmode.md) | Specifies how the label should be applied or recommended. Possible values are: `manual`, `automatic`, `recommended`. |
+| assignedPolicies | [labelPolicy](../resources/labelpolicy.md) collection | The policies that include this label. |
+| autoLabeling | [autoLabeling](../resources/autolabeling.md) | Configuration for automatically applying the label based on sensitive information types. |
+| autoTooltip | String | The tooltip displayed to users for recommended or automatically applied labels. |
+| color | String | The color associated with the label (e.g., hex color code). |
+| customSettings [keyValuePair](../resources/keyvaluepair.md) collection | Collection of custom settings defined for the label. |
+| description | String | The description of the sensitivity label. |
+| displayName | String | The display name of the sensitivity label. |
+| id | String | The unique identifier for the sensitivity label. Read-only. |
+| isDefault | Boolean | `true` if the label is the default label for the policy; `false` otherwise. |
+| isEnabled | Boolean | `true` if the label is currently enabled; `false` otherwise. |
+| isEndpointProtectionEnabled| Boolean | `true` if the label provides protection settings enforced by endpoint DLP; `false` otherwise. |
+| isScopedToUser | Boolean | Indicates if the label is scoped to specific users or groups (`true`) or available to the entire tenant (`false`). |
+| labelActions | [labelActionBase](../resources/labelactionbase.md) collection | The actions associated with the label, such as applying encryption or markings. |
+| locale | String | The locale associated with the label's localized properties (e.g., 'en-US'). Used in context of listing labels scoped to user/locale. |
+| name | String | The unique, non-localized name of the sensitivity label. |
+| priority | Int32 | The priority of the label. Lower numbers indicate higher priority. |
+| toolTip | String | The tooltip displayed to users when they hover over the label in an application. |
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|rights|[usageRightsIncluded](../resources/usagerightsincluded.md)|**TODO: Add Description**|
-|sublabels|[sensitivityLabel](../resources/sensitivitylabel.md) collection|**TODO: Add Description**|
+|rights|[usageRightsIncluded](../resources/usagerightsincluded.md)|Represents the usage rights (permissions) configured for the label, if any.|
+|sublabels|[sensitivityLabel](../resources/sensitivitylabel.md) collection|The collection of sublabels associated with the label.|
 
 ## JSON representation
 
