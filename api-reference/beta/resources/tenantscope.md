@@ -40,6 +40,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.tenantScope",
   // Inherited properties from scopeBase
-  "identity": "String" // e.g., "All", or tenant ID
+  "identity": "String" // for example, "All", or tenant ID
 }
 ```

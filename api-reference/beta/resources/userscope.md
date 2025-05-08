@@ -40,6 +40,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.userScope",
   // Inherited properties from scopeBase
-  "identity": "String" // User's unique identifier (e.g., user-guid)
+  "identity": "String" // User's unique identifier (for example, user-guid)
 }
 ```

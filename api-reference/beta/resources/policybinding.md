@@ -41,13 +41,13 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.policyBinding",
   "inclusions": [
     { "@odata.type": "microsoft.graph.scopeBase" }
-    // e.g., { "@odata.type": "#microsoft.graph.tenantScope", "identity": "All" }
-    // e.g., { "@odata.type": "#microsoft.graph.groupScope", "identity": "group-guid" }
+    // for example, { "@odata.type": "#microsoft.graph.tenantScope", "identity": "All" }
+    // for example, { "@odata.type": "#microsoft.graph.groupScope", "identity": "group-guid" }
   ],
   "exclusions": [
     { "@odata.type": "microsoft.graph.scopeBase" }
-    // e.g., { "@odata.type": "#microsoft.graph.userScope", "identity": "user-guid" }
-    // e.g., { "@odata.type": "#microsoft.graph.groupScope", "identity": "excluded-group-guid" }
+    // for example, { "@odata.type": "#microsoft.graph.userScope", "identity": "user-guid" }
+    // for example, { "@odata.type": "#microsoft.graph.groupScope", "identity": "excluded-group-guid" }
   ]
 }
 ```
