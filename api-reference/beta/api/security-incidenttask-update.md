@@ -54,7 +54,7 @@ In the request body, supply only the values you want to update. Omitted properti
 
 ## Response
 
-A successful request returns a `200 OK` response code and the updated [security-incidentTask](../resources/security-incidenttask.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the updated [security-incidentTask](../resources/security-incidenttask.md) object in the response body.
 
 ## Error responses
 
@@ -107,9 +107,9 @@ Content-type: application/json
 ## Examples
 
 ### Request
-
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["213213"],
   "name": "update_incidenttask"
 }
 -->
@@ -123,10 +123,10 @@ Content-Type: application/json
 ```
 
 ### Response
-
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "sampleKeys": ["213213"],
+  "name": "update_incidenttask",
   "@odata.type": "microsoft.graph.security.incidentTask"
 }
 -->

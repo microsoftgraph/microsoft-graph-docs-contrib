@@ -135,6 +135,7 @@ Content-type: application/json
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["213213"],
   "name": "incidenttask_executeresponseaction"
 }
 -->
@@ -145,6 +146,7 @@ POST https://graph.microsoft.com/beta/security/incidentTasks/213213/executeRespo
 ### Response
 <!-- {
   "blockType": "response",
+  "sampleKeys": ["213213"],
   "name": "incidenttask_executeresponseaction"
 }
 -->

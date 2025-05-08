@@ -30,11 +30,12 @@ One of the following permissions is required to call this API. To learn more, se
 ## HTTP request
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "request",
+  "name": "get_incidenttask"
 }
 -->
 ``` http
-GET /security/incidentTasks/{incidentTaskId}
+GET https://graph.microsoft.com/beta/security/incidentTasks/213213
 ```
 
 ## Request headers
@@ -102,9 +103,9 @@ Content-type: application/json
 ## Examples
 
 ### Request
-
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["213213"],
   "name": "get_incidenttask"
 }
 -->
@@ -113,10 +114,10 @@ GET https://graph.microsoft.com/beta/security/incidentTasks/213213
 ```
 
 ### Response
-
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "sampleKeys": ["213213"],
+  "name": "get_incidenttask",
   "@odata.type": "microsoft.graph.security.incidentTask"
 }
 -->
