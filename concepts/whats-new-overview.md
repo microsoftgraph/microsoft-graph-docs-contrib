@@ -21,7 +21,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Teamwork and communications | Calls and online meetings
 
-Control whether Microsoft 365 Copilot users receive responses to sentiment-related prompts in Teams meetings. For more information, see [copilotAdminLimitedMode](/graph/api/resources/copilotadminlimitedmode).
+[Get](/graph/api/copilotadminlimitedmode-get) or [set](/graph/api/copilotadminlimitedmode-update) whether users of Microsoft 365 Copilot in Teams meetings can receive responses to sentiment-related prompts.
 
 ## May 2025: New in preview only
 
