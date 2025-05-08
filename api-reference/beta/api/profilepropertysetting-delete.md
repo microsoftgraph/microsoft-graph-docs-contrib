@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "peopleadminsettings-delete-profilepropertysettings-permissions"
+  "name": "profilepropertysetting-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-delete-profilepropertysettings-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/profilepropertysetting-delete-permissions.md)]
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have the [People Administrator](/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
 
