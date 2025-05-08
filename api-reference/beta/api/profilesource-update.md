@@ -27,8 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/profilesource-update-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have [People Administrator](https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
-
+>**Note:** To use delegated permissions for this operation, the signed-in user must have the [People Administrator](/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
 
 ## HTTP request
 
@@ -58,8 +57,8 @@ PATCH /admin/people/profileSources(sourceId='{profileSourceId}')
 |displayName|String|Name of the profile source intended to inform users on the profile source name.|
 |kind|String|Type of the profile source.|
 |localizations|[profileSourceLocalization](../resources/profilesourcelocalization.md) collection|Alternative localized labels an administrator specifies.|
-|sourceId|String|Profile source identifier used as an alternate-key.|
-|webUrl|String|Web URL of the profile source that takes users to the page view of profile data.|
+|sourceId|String|Profile source identifier used as an alternate key.|
+|webUrl|String|Web URL of the profile source that directs users to the page view of profile data.|
 
 ## Response
 
@@ -87,14 +86,14 @@ Content-Type: application/json
   "webUrl": "https://bamboohr.contoso.com/login",
   "localizations": [
     {
-      "displayName" : "HR-Platform",
-      "webUrl" : "http://bamboohr.contoso.com/en-us/login",
-      "languageTag" : "en-us"
+      "displayName": "HR-Platform",
+      "webUrl": "http://bamboohr.contoso.com/en-us/login",
+      "languageTag": "en-us"
     },
     {
-      "displayName" : "HR-Plattform",
-      "webUrl" : "http://bamboohr.contoso.com/de/login",
-      "languageTag" : "de"
+      "displayName": "HR-Plattform",
+      "webUrl": "http://bamboohr.contoso.com/de/login",
+      "languageTag": "de"
     }
   ]
 }
@@ -116,21 +115,21 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.profileSource",
-  "id" : "27f1af7b-b166-4f5b-b994-ae135a581547",
+  "id": "27f1af7b-b166-4f5b-b994-ae135a581547",
   "sourceId": "bamboohr1",
   "kind": "BambooHR",
   "displayName": "BambooHR Updated",
   "webUrl": "https://bamboohr.contoso.com/login",
   "localizations": [
     {
-      "displayName" : "HR-Platform",
-      "webUrl" : "http://bamboohr.contoso.com/en-us/login",
-      "languageTag" : "en-us"
+      "displayName": "HR-Platform",
+      "webUrl": "http://bamboohr.contoso.com/en-us/login",
+      "languageTag": "en-us"
     },
     {
-      "displayName" : "HR-Plattform",
-      "webUrl" : "http://bamboohr.contoso.com/de/login",
-      "languageTag" : "de"
+      "displayName": "HR-Plattform",
+      "webUrl": "http://bamboohr.contoso.com/de/login",
+      "languageTag": "de"
     }
   ]
 }
