@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, se
 ## HTTP request
 
 <!-- {
-  "blockType": "request",
-  "name": "get_list_incidenttasks"
+  "blockType": "ignored"
 }
 -->
 ``` http
@@ -90,7 +89,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/incidentTasks",
+  "@odata.context": "collection(microsoft.graph.security.incidentTask)",
   "value": [
     {
       "id": "213213",
