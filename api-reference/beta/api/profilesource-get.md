@@ -86,16 +86,16 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.profileSource",
-    "id" : "27f1af7b-b166-4f5b-b994-ae135a581547",
+    "id": "27f1af7b-b166-4f5b-b994-ae135a581547",
     "sourceId": "bamboohr1",
     "kind": "BambooHR",
     "displayName": "HR Platform",
     "webUrl": "https://bamboohr.contoso.com/login",
     "localizations": [
       {
-        "displayName" : "HR-Plattform",
-        "webUrl" : "http://bamboohr.contoso.com/de/login",
-        "languageTag" : "de"
+        "displayName": "HR-Plattform",
+        "webUrl": "http://bamboohr.contoso.com/de/login",
+        "languageTag": "de"
       }
     ]
   }
