@@ -16,7 +16,7 @@ Microsoft Graph enables access to useful data about people, their profile, docum
 
 ## Aggregate and extract specific information about people
 
-Feature: People
+### Feature: People
 
 Use the [person](../resources/person.md) resource and the People API to aggregate information
 about a person from across mail, contacts, and social networks. The results are ordered by their
@@ -27,7 +27,7 @@ lets you browse, sort, select, filter, or search for persons based on your crite
 
 ## Help users contextualize others in their organization
 
-Feature: Profile (preview)
+### Feature: Profile (preview)
 
 People who seek to contextualize others within their organization commonly view a person's profile or profile card.
 
@@ -49,7 +49,7 @@ The [profilePropertySetting](../resources/profilepropertysetting.md) represents 
 
 ## Help users get the most relevant documents for their work
 
-Feature: Document insights
+### Feature: Document insights
 
 Use the insights API to identify the most relevant documents for a user:
 
@@ -60,7 +60,7 @@ Use the insights API to identify the most relevant documents for a user:
 
 ## Manage @-Mentions
 
-Feature: @-mentions (preview)
+### Feature: @-mentions (preview)
 
 Calling out a recipient to notify and get the recipient's attention in a message is a common social gesture.
 The [mention](../resources/mention.md) resource and the Mentions API provide a light-weight mechanism to call out
