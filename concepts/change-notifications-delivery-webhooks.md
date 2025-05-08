@@ -66,9 +66,6 @@ When you [renew your subscription](#renew-a-subscription), your access token is 
 ### Firewall configuration
 You can configure the firewall that protects your endpoint to allow inbound connections only from Microsoft Graph, reducing further exposure to invalid change notifications. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
-> [!NOTE]
-> The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
-
 ## Create a subscription
 
 > [!IMPORTANT]
@@ -144,7 +141,7 @@ Content-Type: application/json
 
 ---
 
-The **clientState** property is required. Setting it property allows your service to confirm that change notifications you receive originate from Microsoft Graph. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
+The **clientState** property is required. Setting the property allows your service to confirm that change notifications you receive originate from Microsoft Graph. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
 
 If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription) object in the body.
 

@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/assignmentPolicies
 ```
 
 ## Optional query parameters
-This method supports some of the `$filter`, `$select`, and `$expand` OData query parameters to help customize the response. For example, to retrieve an access package assignment policy with a specified display name, include `$filter=displayName eq 'Employee sales support'` in the query. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the `$filter`, `$select`, and `$expand` OData query parameters to help customize the response. For example, to retrieve an access package assignment policy with a specified display name, include `$filter=displayName eq 'Employee sales support'` in the query. To retrieve the access package assignment policies for an access package `136f166c-b85a-4403-85b1-656aa80d167a`, include `$filter=accesspackage/id eq '136f166c-b85a-4403-85b1-656aa80d167a'`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

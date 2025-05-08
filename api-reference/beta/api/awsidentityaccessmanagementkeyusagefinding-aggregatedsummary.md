@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get a count of the AWS IAM Access Keys that have not been used in the last 90 days.
 
 ## Permissions
@@ -96,3 +98,4 @@ Content-Type: application/json
     "findingsCountOverLimit": 19
 }
 ```
+
