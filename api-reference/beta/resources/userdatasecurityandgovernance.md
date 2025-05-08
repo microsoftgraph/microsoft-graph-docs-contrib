@@ -20,8 +20,8 @@ Provides access to data security and governance functionalities specifically sco
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Process content](../api/userdatasecurityandgovernance-processcontent.md) | [processContentResponse](../resources/processcontentresponse.md) | Process content against data security and governance policies in the context of this user. |
 | [Compute protection scopes](../api/userdatasecurityandgovernance-processcontent.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the protection scopes for this user. |
+| [Process content](../api/userdatasecurityandgovernance-processcontent.md) | [processContentResponse](../resources/processcontentresponse.md) | Process content against data security and governance policies in the context of this user. |
 
 ## Properties
 

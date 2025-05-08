@@ -1,6 +1,6 @@
 ---
-title: "Create userProtectionScopeContainer"
-toc.title: "Create userProtectionScopeContainer"
+title: "Compute userProtectionScopeContainer"
+toc.title: "Compute userProtectionScopeContainer"
 description: "Compute the data protection policies and actions applicable to a specific user based on their context."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,7 +9,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Create userProtectionScopeContainer
+# Compute userProtectionScopeContainer
 
 Namespace: microsoft.graph
 
