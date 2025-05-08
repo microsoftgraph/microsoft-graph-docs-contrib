@@ -52,17 +52,15 @@ POST /admin/people/profileSources
 
 In the request body, supply a JSON representation of the [profileSource](../resources/profilesource.md) object.
 
-You can specify the following properties when creating a **profileSource**.
+You can specify the following properties when you create a **profileSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the profile source intended to inform users on the profile source name.|
 |kind|String|Type of the profile source.|
 |localizations|[profileSourceLocalization](../resources/profilesourcelocalization.md) collection|Alternative localized labels an administrator specifies.|
-|sourceId|String|Profile source identifier used as an alternate-key.|
-|webUrl|String|Web URL of the profile source that takes users to the page view of profile data.|
-
-
+|sourceId|String|Profile source identifier used as an alternate key.|
+|webUrl|String|Web URL of the profile source that directs users to the page view of profile data.|
 
 ## Response
 
@@ -89,14 +87,13 @@ Content-Type: application/json
   "webUrl": "https://bamboohr.contoso.com/login",
   "localizations": [
     {
-	    "displayName" : "HR-Plattform",
-      "webUrl" : "http://bamboohr.contoso.com/de/login",
-      "languageTag" : "de"
-	  }
+      "displayName": "HR-Plattform",
+      "webUrl": "http://bamboohr.contoso.com/de/login",
+      "languageTag": "de"
+    }
   ]
 }
 ```
-
 
 ### Response
 
@@ -121,10 +118,10 @@ Content-Type: application/json
   "webUrl": "https://bamboohr.contoso.com/login",
   "localizations": [
     {
-	    "displayName" : "HR-Plattform",
-      "webUrl" : "http://bamboohr.contoso.com/de/login",
-      "languageTag" : "de"
-	  }
+      "displayName": "HR-Plattform",
+      "webUrl": "http://bamboohr.contoso.com/de/login",
+      "languageTag": "de"
+    }
   ]
 }
 ```
