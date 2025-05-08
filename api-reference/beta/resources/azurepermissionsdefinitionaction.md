@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 This is an abstract type representing actions relating to permissions for an Azure resource.
 
 Inherits from [permissionsDefinitionAction](../resources/permissionsdefinitionaction.md).
@@ -42,4 +44,5 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.azurePermissionsDefinitionAction"
 }
 ```
+
 

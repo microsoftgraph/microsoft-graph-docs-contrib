@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get a list of the [inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) objects and their properties, representing details of inactive AWS resources.
 
 ## Permissions
@@ -154,4 +156,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 

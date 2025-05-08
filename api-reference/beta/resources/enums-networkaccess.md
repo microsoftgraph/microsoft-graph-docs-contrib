@@ -1,11 +1,11 @@
 ---
-title: "Networkaccess enum values"
-description: "Microsoft Graph networkaccess enumeration values"
+title: "Network Access enum values"
+description: "Microsoft Graph Network Access enumeration values"
 author: "miritsadon"
-ms.date: 04/20/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
 doc_type: enumTypes
+ms.date: 04/24/2025
 ---
 
 # Network Access Enum Values
