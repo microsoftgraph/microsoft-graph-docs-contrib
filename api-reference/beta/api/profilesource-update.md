@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /admin/people/profileSources(sourceId='bamboohr1')
+PATCH /admin/people/profileSources(sourceId='{profileSourceId}')
 ```
 
 ## Request headers
@@ -60,8 +60,6 @@ PATCH /admin/people/profileSources(sourceId='bamboohr1')
 |localizations|[profileSourceLocalization](../resources/profilesourcelocalization.md) collection|Alternative localized labels an administrator specifies.|
 |sourceId|String|Profile source identifier used as an alternate-key.|
 |webUrl|String|Web URL of the profile source that takes users to the page view of profile data.|
-
-
 
 ## Response
 
@@ -101,7 +99,6 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 ### Response
 
