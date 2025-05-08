@@ -1,7 +1,7 @@
 ---
 title: "policyLocation resource type"
 toc.title: "policyLocation resource type (preview)"
-description: "Abstract base type representing a location (like a domain or URL) to which a data protection policy applies."
+description: "Abstract base type representing a location like a domain or URL, to which a data protection policy applies."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium

@@ -1,6 +1,6 @@
 ---
 title: "userDataSecurityAndGovernance: processContent"
-toc.title: "userDataSecurityAndGovernance: processContent (preview)"
+toc.title: "userDataSecurityAndGovernance: processContent"
 description: "Process content against data protection policies in the context of the current user."
 author: "ArunGedela"
 ms.date: 04/08/2025

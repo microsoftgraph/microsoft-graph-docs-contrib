@@ -28,9 +28,9 @@ Represents audit log data from content processing, in a structured way to ensure
 |Property|Type|Description|
 |:---|:---|:---|
 |contentMetadata|[processContentRequest](../resources/processcontentrequest.md)|Defines the input payload. It includes the relevant metadata about the activity, device, and integrated application.|
-|id|String|unique identifier|
-|scopeIdentifier|String|The scope identified from computed protection scopes|
-|userId|String|ID of the user|
+|id|String|Unique identifier.|
+|scopeIdentifier|String|The scope identified from computed protection scopes.|
+|userId|String|ID of the user.|
 
 ## Relationships
 

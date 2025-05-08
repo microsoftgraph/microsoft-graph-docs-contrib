@@ -1,6 +1,6 @@
 ---
 title: "blockAccessAction resource type"
-toc.title: "blockAccessAction resource type(preview)"
+toc.title: "blockAccessAction resource type (preview)"
 description: "Represents a DLP action that explicitly blocks access to the content that triggered the rule match."
 author: "ArunGedela"
 ms.date: 04/08/2025
