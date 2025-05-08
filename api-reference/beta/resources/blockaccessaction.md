@@ -21,7 +21,7 @@ Represents a DLP action that explicitly blocks access to the content that trigge
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[microsoft.graph.dlpAction](../resources/dlpaction.md)|The type of DLP action. Inherited from [dlpActionInfo](../resources/dlpactioninfo.md). The `action` property is typically set to `blockAccess`. |
+|action|microsoft.graph.dlpAction|The type of DLP action. Possible values are `notifyUser`, `blockAccess`, `restrictAccess`, `generateAlert`, `generateIncidentReportAction`, `sPBlockAnonymousAccess`, `sPRuntimeAccessControl`, `sPSharingNotifyUser`, and `sPSharingGenerateIncidentReport`.  Inherited from [dlpActionInfo](../resources/dlpactioninfo.md).|
 
 ## Relationships
 
@@ -33,7 +33,7 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.blockAccessAction",
-  "baseType": "microsoft.graph.dlpActionInfo",
+  "baseType": "String",
   "openType": false
 }-->
 ``` json

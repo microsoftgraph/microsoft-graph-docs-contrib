@@ -41,6 +41,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.dlpActionInfo",
-  "action": "microsoft.graph.dlpAction"
+  "action": "String"
 }
 ```
