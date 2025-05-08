@@ -16,9 +16,6 @@ Namespace: microsoft.graph
 
 Represents an admin setting for Microsoft 365 Copilot.
 
-
-Inherits from [entity](../resources/entity.md).
-
 ## Properties
 
 None.
