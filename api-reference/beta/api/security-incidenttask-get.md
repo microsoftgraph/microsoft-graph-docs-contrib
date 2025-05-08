@@ -1,6 +1,6 @@
 ---
-title: "Update incident task"
-description: "Update the status of an incident task in Microsoft Defender XDR."
+title: "Get incidentTask"
+description: "Read properties and relationships of an incident task in Microsoft Defender XDR."
 author: "bealfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Update incident task
+# Get incidentTask
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a Microsoft Defender XDR incident task. You can only update the status property.
+Get the properties and relationships of a specific incident task in Microsoft Defender XDR.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ One of the following permissions is required to call this API. To learn more, se
 
 <!-- {
   "blockType": "permissions",
-  "name": "security-incidenttask-update"
+  "name": "security-incidenttask-get"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/security-incidenttask-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/security-incidenttask-get-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, se
 }
 -->
 ``` http
-PATCH /security/incidentTasks/{incidentTaskId}
+GET /security/incidentTasks/{incidentTaskId}
 ```
 
 ## Request headers
@@ -42,19 +42,14 @@ PATCH /security/incidentTasks/{incidentTaskId}
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply only the values you want to update. Omitted properties retain their existing values.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|status|microsoft.graph.security.incidentTaskStatus|The task status. Values: `open`, `inProgress`, `completed`, `failed`, `notRelevant`, `unknownFutureValue`.|
+Don't supply a request body for this method.
 
 ## Response
 
-A successful request returns a `200 OK` response code and the updated [security-incidentTask](../resources/security-incidenttask.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the [security-incidentTask](../resources/security-incidenttask.md) object in the response body.
 
 ## Error responses
 
@@ -71,7 +66,7 @@ Content-type: application/json
 {
     "error": {
         "code": "BadRequest",
-        "message": "Invalid Task Id: {id}",
+        "message": "Invalid incidentTask id {id}",
         "innerError": {
             "date": "2023-09-04T05:47:56",
             "request-id": "43067534-c43a-4df8-a4d1-30660b99ac76",
@@ -94,7 +89,7 @@ Content-type: application/json
 {
     "error": {
         "code": "NotFound",
-        "message": "taskId {id} not found",
+        "message": "incidentTask {id} was not found",
         "innerError": {
             "date": "2023-09-04T05:47:56",
             "request-id": "43067534-c43a-4df8-a4d1-30660b99ac76",
@@ -110,16 +105,11 @@ Content-type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "update_incidenttask"
+  "name": "get_incidenttask"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/incidentTasks/213213
-Content-Type: application/json
-
-{
-    "status": "completed"
-}
+GET https://graph.microsoft.com/beta/security/incidentTasks/213213
 ```
 
 ### Response
@@ -132,20 +122,26 @@ Content-Type: application/json
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
     "id": "213213",
-    "incidentId": "123",
-    "status": "completed",
+    "incident": {
+        "id": "123"
+    },
+    "status": "open",
     "source": "defenderExpertsXDR",
-    "displayName": "Reset device testmachine20",
-    "description": "Reset the machine",
+    "displayName": "Isolate device testmachine20",
+    "description": "This action will isolate device testmachine20 from the network.",
     "createdDateTime": "2023-06-26T19:07:39.7433333Z",
     "createdByDisplayName": "Defender Experts",
     "lastModifiedDateTime": "2023-06-27T10:49:33.98Z",
     "lastModifiedByDisplayName": "bealfasi",
-    "actionType": "text",
+    "actionType": "isolateDevice",
     "actionStatus": "notStarted",
-    "responseAction": null
+    "responseAction": {
+        "@odata.type": "#microsoft.graph.security.isolateDeviceResponseAction",
+        "isolationType": "full",
+        "identifierValue": "02851525-dc00-438b-83f5-3b2947bf4a48"
+    }
 }

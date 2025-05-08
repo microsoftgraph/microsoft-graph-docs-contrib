@@ -60,7 +60,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-A successful request returns a `200 OK` response code and a collection of [incidentTask](../resources/incidenttask.md) objects in the response body.
+A successful request returns a `200 OK` response code and a collection of [security-incidentTask](../resources/security-incidenttask.md) objects in the response body.
 
 ## Examples
 

@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-A successful request returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Error responses
 
@@ -133,7 +133,6 @@ Content-type: application/json
 ## Examples
 
 ### Request
-
 <!-- {
   "blockType": "request",
   "name": "incidenttask_executeresponseaction"
@@ -144,10 +143,9 @@ POST https://graph.microsoft.com/beta/security/incidentTasks/213213/executeRespo
 ```
 
 ### Response
-
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "incidenttask_executeresponseaction"
 }
 -->
 ``` http
