@@ -1,6 +1,6 @@
 ---
 title: "List incidentTasks"
-description: "Get a list of incident tasks in Microsoft 365 Defender. These tasks represent remediation actions identified by Defender Experts for XDR service."
+description: "Get incident tasks in Microsoft Defender XDR that Defender Experts for XDR identified for remediation."
 author: "bealfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
@@ -14,11 +14,11 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of incident tasks in Microsoft 365 Defender. These tasks represent remediation actions identified by Defender Experts for XDR service.
+Get incident tasks in Microsoft Defender XDR. These tasks contain remediation actions identified by Defender Experts for XDR.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-overview).
+One of the following permissions is required to call this API. To learn more, see [Permissions](/graph/permissions-overview).
 
 <!-- {
   "blockType": "permissions",
@@ -39,14 +39,14 @@ GET /security/incidentTasks
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports these OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |$filter|string|Filter results by property values. Supported properties: incidentId, status, type, lastUpdateDateTime, createdDateTime, actionType.|
-|$orderby|string|Order results by property values. Supported property: lastUpdateDateTime.|
-|$top|integer|Set the maximum number of items to return.|
-|$select|string|Choose which properties to include in the response.|
+|$orderby|string|Sort results by property values. Supported property: lastUpdateDateTime.|
+|$top|integer|Set the page size of results.|
+|$select|string|Choose specific properties to include in results.|
 
 ## Request headers
 
@@ -60,13 +60,12 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [incidentTask](../resources/incidenttask.md) objects in the response body.
+A successful request returns a `200 OK` response code and a collection of [incidentTask](../resources/incidenttask.md) objects in the response body.
 
 ## Examples
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_incidenttask"
@@ -75,17 +74,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/security/incidentTasks
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-incidenttask.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-incidenttask.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-incidenttask.md)]
-
----
 
 ### Response
 

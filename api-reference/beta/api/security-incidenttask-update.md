@@ -1,6 +1,6 @@
 ---
-title: "Update incidentTask"
-description: "Update the status of an incidentTask object."
+title: "Update incident task"
+description: "Update the status of an incident task in Microsoft Defender XDR."
 author: "bealfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
@@ -8,17 +8,17 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Update incidentTask
+# Update incident task
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an incidentTask object. Currently, only the status property can be updated.
+Update a Microsoft Defender XDR incident task. You can only update the status property.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-overview).
+One of the following permissions is required to call this API. To learn more, see [Permissions](/graph/permissions-overview).
 
 <!-- {
   "blockType": "permissions",
@@ -41,24 +41,26 @@ PATCH /security/incidentTasks/{incidentTaskId}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply only the values that should be updated. Existing properties that are not included in the request body will maintain their previous values.
+In the request body, supply only the values you want to update. Omitted properties retain their existing values.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|microsoft.graph.security.incidentTaskStatus|The status of the incident task. The possible values are: `open`, `inProgress`, `completed`, `failed`, `notRelevant`, `unknownFutureValue`.|
+|status|microsoft.graph.security.incidentTaskStatus|The task status. Values: `open`, `inProgress`, `completed`, `failed`, `notRelevant`, `unknownFutureValue`.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [incidentTask](../resources/incidenttask.md) object in the response body.
+A successful request returns a `200 OK` response code and the updated [incidentTask](../resources/incidenttask.md) object in the response body.
 
 ## Error responses
 
-### Invalid Task ID
+### Invalid task ID
+
+The task ID must be a valid GUID.
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -79,7 +81,9 @@ Content-type: application/json
 }
 ```
 
-### Task Not Found
+### Task not found
+
+No task exists with the specified ID.
 
 ```http
 HTTP/1.1 404 Not Found
@@ -104,8 +108,6 @@ Content-type: application/json
 
 ### Request
 
-The following example shows a request to update the status of an incident task.
-
 <!-- {
   "blockType": "request",
   "name": "update_incidenttask"
@@ -121,8 +123,6 @@ Content-Type: application/json
 ```
 
 ### Response
-
-The following example shows the successful response.
 
 <!-- {
   "blockType": "response",

@@ -1,6 +1,6 @@
 ---
-title: "incidentTask: executeResponseAction"
-description: "Execute an automated remediation action on a Microsoft 365 Defender incident task."
+title: "Execute incident task response action"
+description: "Execute a remediation action in Microsoft Defender XDR to resolve a security incident."
 author: "bealfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
@@ -8,17 +8,17 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# incidentTask: executeResponseAction
+# Execute incident task response action
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Execute a remediation action on a Microsoft 365 Defender incident task. When you execute an action, Microsoft 365 Defender performs the necessary remediation steps associated with that action type.
+Execute a remediation action on a Microsoft Defender XDR incident task. The action type must be supported for automated execution.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-overview).
+One of the following permissions is required to call this API. To learn more, see [Permissions](/graph/permissions-overview).
 
 <!-- {
   "blockType": "permissions",
@@ -49,13 +49,21 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+A successful request returns a `204 No Content` response code.
 
 ## Error responses
 
-### Action type not supported
+### Unsupported action type
 
-The API only supports executing these action types: collectInvestigationPackage, isolateDevice, unRestrictAppExecution, unIsolateDevice, restrictAppExecution, runAntiVirusScan, stopAndQuarantineFile, submitIocRule.
+The API supports only these action types:
+- collectInvestigationPackage
+- isolateDevice
+- unRestrictAppExecution
+- unIsolateDevice
+- restrictAppExecution
+- runAntiVirusScan
+- stopAndQuarantineFile
+- submitIocRule
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -76,9 +84,9 @@ Content-type: application/json
 }
 ```
 
-### Invalid Task ID
+### Invalid task ID
 
-The provided incident task ID isn't a valid GUID.
+The task ID must be a valid GUID.
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -99,9 +107,9 @@ Content-type: application/json
 }
 ```
 
-### Task Not Found
+### Task not found
 
-No incident task exists with the provided ID.
+No task exists with the specified ID.
 
 ```http
 HTTP/1.1 404 Not Found
@@ -126,7 +134,6 @@ Content-type: application/json
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "incidenttask_executeresponseaction"
@@ -135,17 +142,6 @@ Content-type: application/json
 ``` http
 POST https://graph.microsoft.com/beta/security/incidentTasks/213213/executeResponseAction
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/incidenttask-executeresponseaction.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/incidenttask-executeresponseaction.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/incidenttask-executeresponseaction.md)]
-
----
 
 ### Response
 
