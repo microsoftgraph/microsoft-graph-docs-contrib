@@ -10,7 +10,7 @@ ms.date: 05/02/2025
 
 # Manage profile source precedence settings for an organization using the Microsoft Graph API (preview)
 
-Profile source precedence is a feature that empowers tenant admins with control over the source of profile data for their organization's users. Profile data might originate from Microsoft Entra ID, organizational data in Microsoft 365, user profile synchronization, or other sources. 
+Profile source precedence is a feature that empowers tenant admins with control over the source of profile data for their organization's users. Profile data might originate from Microsoft Entra ID, organizational data in Microsoft 365, user profile synchronization, or other sources. When multiple sources provide overlapping data, a tenant administrator can configure the authoritative source of profile data for users in their organization.
 
 This administrator guide explains how to configure profile source precedence in an organization using Microsoft Graph APIs. It details the steps required to add, update, and delete profile property settings. By following this guide, you can control which profile data is accurately displayed across various Microsoft 365 experiences based on the configured priorities.
 
