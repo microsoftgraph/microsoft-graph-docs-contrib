@@ -109,7 +109,6 @@ Content-type: application/json
 ### Request
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["213213"],
   "name": "update_incidenttask"
 }
 -->
@@ -125,8 +124,7 @@ Content-Type: application/json
 ### Response
 <!-- {
   "blockType": "response",
-  "sampleKeys": ["213213"],
-  "name": "update_incidenttask",
+  "truncated": false,
   "@odata.type": "microsoft.graph.security.incidentTask"
 }
 -->

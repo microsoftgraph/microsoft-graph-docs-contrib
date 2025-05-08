@@ -30,11 +30,12 @@ One of the following permissions is required to call this API. To learn more, se
 ## HTTP request
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "request",
+  "name": "list_incidenttask"
 }
 -->
 ``` http
-GET /security/incidentTasks
+GET https://graph.microsoft.com/beta/security/incidentTasks
 ```
 
 ## Optional query parameters
@@ -60,7 +61,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-A successful request returns a `200 OK` response code and a collection of [security-incidentTask](../resources/security-incidenttask.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [security-incidentTask](../resources/security-incidenttask.md) objects in the response body.
 
 ## Examples
 
@@ -77,13 +78,10 @@ GET https://graph.microsoft.com/beta/security/incidentTasks
 
 ### Response
 
->**Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
-  "name": "list_incidenttask",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.incidentTask"
+  "truncated": false,
+  "@odata.type": "collection(microsoft.graph.security.incidentTask)"
 }
 -->
 ``` http

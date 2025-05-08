@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, se
 ## HTTP request
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "request",
+  "name": "incidenttask_executeresponseaction"
 }
 -->
 ``` http
@@ -135,7 +136,6 @@ Content-type: application/json
 ### Request
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["213213"],
   "name": "incidenttask_executeresponseaction"
 }
 -->
@@ -146,8 +146,8 @@ POST https://graph.microsoft.com/beta/security/incidentTasks/213213/executeRespo
 ### Response
 <!-- {
   "blockType": "response",
-  "sampleKeys": ["213213"],
-  "name": "incidenttask_executeresponseaction"
+  "name": "incidenttask_executeresponseaction",
+  "truncated": false
 }
 -->
 ``` http
