@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a suggested action for admins to take for a given alert.
+Represents a suggested action for admins to take for a given global secure access alert.
 
 ## Properties
 |Property|Type|Description|

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a summary of entities for network access reporting.
+Represents a summary of entities for global secure access reporting.
 
 ## Properties
 |Property|Type|Description|

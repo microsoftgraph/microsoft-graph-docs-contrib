@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert detected by the network access system. Each entity is a separate instance of an alert.
+Represents an alert detected by Global Secure Access. Each entity is a separate instance of an alert.
 
 Inherits from [entity](../resources/entity.md)
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a summary of a specific alert severity and alert type.
+Represents a summary of a specific alert severity and alert type detected by Global Secure Access.
 
 ## Properties
 |Property|Type|Description|
