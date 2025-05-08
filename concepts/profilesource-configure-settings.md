@@ -16,7 +16,7 @@ This administrator guide discusses configuring profile source settings in an org
 
 > [!IMPORTANT]
 > By default, Microsoft Entra is the source of profile data in an organization.
-An organization administrator sets the property `sourceId`, which is a readable and unique profile source identifier. `sourceId` can be used as an [alternate-key](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/alternate-key.md) when querying for a profile source. This property isn't updateable. Additionally, a profile source is identifieable via a system-generated the key named `id`.
+An organization administrator sets the property `sourceId`, which is a readable and unique profile source identifier. `sourceId` can be used as an [alternate-key](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/alternate-key.md) when querying for a profile source. This property isn't updateable. Additionally, a profile source is identifiable via a system-generated the key named `id`.
 
 Admins can customize a profile source display name to multiple locales by configuring the `localizations` property.
 
@@ -222,7 +222,7 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 
 ### Confirm your current settings
 
-To get a collection of profile source configuration for an organization, use the following command.
+To get a collection of profile source configurations for an organization, use the following command.
 
 ```powershell
    Get-MgAdminPeopleProfileSource
