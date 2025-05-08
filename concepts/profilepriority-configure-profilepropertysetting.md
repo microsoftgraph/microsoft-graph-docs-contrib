@@ -1,5 +1,5 @@
 ---
-title: "Manage profile source precedence for an organization using the Microsoft Graph API (preview)"
+title: "Manage profile source precedence settings for an organization using the Microsoft Graph API (preview)"
 description: "Learn how to use Microsoft Graph APIs to configure profile source priority for an organization."
 author: "rwaithera"
 ms.localizationpriority: high
@@ -169,7 +169,7 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 
 ### Confirm your current settings
 
-To get profile source precedence configuration for an organization, use the following command.
+To get profile property settings configuration for an organization, use the following command.
 
 ```powershell
 Get-MgAdminPeopleProfilePropertySetting

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [profilePropertySetting](../resources/profilepropertysetting.md) objects and their properties.
+Get a collection of [profilePropertySetting](../resources/profilepropertysetting.md) objects, which define the configuration for user profile properties in an organization. Each resource object is uniquely identified by its `id` property.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /admin/people/profilePropertySettings
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $select, $filter, and $orderBy OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

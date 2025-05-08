@@ -41,6 +41,14 @@ Provides the ability for an administrator to customize the information shown on 
 
 The [profileCardProperty](../resources/profileCardProperty.md) resource represents an attribute of a user on the Microsoft 365 profile card for an organization to surface in a shared, people experience.
 
+<br/>
+
+Feature: Profile Source Precedence (preview)
+
+Profile source precedence determines the order in which data sources are used for profile information. The collection of priority source URLs is ordered by data precedence, with the first item having the highest priority. By default, Microsoft Entra ID is the prioritized source of profile data. Setting a new profile source as a priority will change the values of properties users see on their profiles.
+
+The [profilePropertySetting](../resources/profilepropertysetting.md) represents a collection of configuration data for property-level settings configured by an administrator, including profile source precedence.
+
 ## Help users get the most relevant documents for their work
 
 Feature: Document insights

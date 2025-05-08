@@ -1,6 +1,6 @@
 ---
 title: "profilePropertySetting resource type"
-description: "Represents a collection of profile property configuration settings defined by an administrator for an organization."
+description: "Represents a collection of configuration data for property-level settings configured by an administrator."
 author: "rwaithera"
 ms.date: 05/02/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the configuration data for property-level settings configured by an administrator. 
+Represents a collection of configuration data for property-level settings configured by an administrator.
 
 > [!NOTE]
 > When you configure the **prioritizedSourceUrls** setting, the **name** property *must* be empty to differentiate it from other property-level settings in the collection that have a **name** property. Only one configuration without a name is allowed per collection.
