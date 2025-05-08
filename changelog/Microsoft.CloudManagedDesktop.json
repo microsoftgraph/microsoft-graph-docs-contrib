@@ -4,6 +4,14 @@
           "ChangeList": [
             {
               "Id": "d96d0af7-66ee-4bbf-80b4-e35216afb105",
+              "ApiChange": "Annotation",
+              "ChangedApiName": "Org.OData.Core.V1.Revisions",
+              "ChangeType": "Deprecation",
+              "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+              "Target": "getCloudPcRecommendationReports"
+            },
+            {
+              "Id": "d96d0af7-66ee-4bbf-80b4-e35216afb105",
               "ApiChange": "Enumeration",
               "ChangedApiName": "cloudPcRecommendationReportType",
               "ChangeType": "Addition",
