@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, se
 
 <!-- {
   "blockType": "request",
-  "name": "list_incidenttask"
+  "name": "get_list_incidenttasks"
 }
 -->
 ``` http
@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!-- {
   "blockType": "request",
-  "name": "list_incidenttask"
+  "name": "get_list_incidenttasks"
 }
 -->
 ``` http
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/security/incidentTasks
 
 <!-- {
   "blockType": "response",
-  "name": "list_incidenttask",
+  "name": "get_list_incidenttasks",
   "truncated": false,
   "@odata.type": "collection(microsoft.graph.security.incidentTask)"
 }
@@ -90,28 +90,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/incidentTasks",
-    "value": [
-        {
-            "id": "213213",
-            "incident": {
-                "id": "123"
-            },
-            "status": "open",
-            "source": "defenderExpertsXDR",
-            "displayName": "Isolate device testmachine20",
-            "description": "This action will isolate device testmachine20 from the network.",
-            "createdDateTime": "2023-06-26T19:07:39.7433333Z",
-            "createdByDisplayName": "Defender Experts",
-            "lastModifiedDateTime": "2023-06-27T10:49:33.98Z",
-            "lastModifiedByDisplayName": "bealfasi",
-            "actionType": "isolateDevice",
-            "actionStatus": "notStarted",
-            "responseAction": {
-                "@odata.type": "#microsoft.graph.security.isolateDeviceResponseAction",
-                "isolationType": "full",
-                "identifierValue": "02851525-dc00-438b-83f5-3b2947bf4a48"
-            }
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/incidentTasks",
+  "value": [
+    {
+      "id": "213213",
+      "incident": {
+        "id": "123"
+      },
+      "status": "open",
+      "source": "defenderExpertsXDR",
+      "displayName": "Isolate device testmachine20",
+      "description": "This action will isolate device testmachine20 from the network.",
+      "createdDateTime": "2023-06-26T19:07:39.7433333Z",
+      "createdByDisplayName": "Defender Experts",
+      "lastModifiedDateTime": "2023-06-27T10:49:33.98Z",
+      "lastModifiedByDisplayName": "bealfasi",
+      "actionType": "isolateDevice",
+      "actionStatus": "notStarted",
+      "responseAction": {
+        "@odata.type": "#microsoft.graph.security.isolateDeviceResponseAction",
+        "isolationType": "full",
+        "identifierValue": "02851525-dc00-438b-83f5-3b2947bf4a48"
+      }
+    }
+  ]
 }
+```
