@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/people/profileSources(sourceId='bamboohr1')
+GET /admin/people/profileSources(sourceId='{profileSourceId}')
 ```
 
 ## Optional query parameters
