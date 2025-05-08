@@ -5,7 +5,7 @@ author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: resourcePageType
-ms.date: 11/15/2024
+ms.date: 05/08/2025
 ---
 
 # copilotAdminSetting resource type
@@ -13,7 +13,6 @@ ms.date: 11/15/2024
 Namespace: microsoft.graph
 
 Represents an admin setting for Microsoft 365 Copilot.
-
 
 Inherits from [entity](../resources/entity.md).
 
