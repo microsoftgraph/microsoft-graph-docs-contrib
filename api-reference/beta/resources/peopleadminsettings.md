@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |[List photo update settings](../api/peopleadminsettings-list-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md) collection|Get the properties of the [photoUpdateSettings](../resources/photoupdatesettings.md) resource for an organization.|
 |[Create photo update setting](../api/peopleadminsettings-post-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md)|Create a new [photoUpdateSettings](../resources/photoupdatesettings.md) for an organization.|
 |[Delete photo update setting](../api/peopleadminsettings-delete-photoupdatesettings.md)|None|Delete a [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
-|[List profile property settings](../api/peopleadminsettings-list-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md) collection|Get a collection of [profilePropertySetting](../resources/profilepropertysetting.md) resources in an organization.|
+|[List profile property settings](../api/peopleadminsettings-list-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md) collection|Get a collection of [profilePropertySetting](../resources/profilepropertysetting.md) objects that define the configuration for user profile properties in an organization.|
 |[Create profile property setting](../api/peopleadminsettings-post-profilepropertysettings.md)|[profilePropertySetting](../resources/profilepropertysetting.md)|Create a new [profilePropertySetting](../resources/profilepropertysetting.md) object.|
 
 ## Properties
