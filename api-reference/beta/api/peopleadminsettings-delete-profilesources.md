@@ -1,6 +1,6 @@
 ---
 title: "Delete profileSource"
-description: "Delete a profileSource object."
+description: "Remove a profileSource object."
 author: "rwaithera"
 ms.date: 04/30/2025
 ms.localizationpriority: medium

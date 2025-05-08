@@ -222,7 +222,7 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 
 ### Confirm your current settings
 
-To get a profile source configuration for an organization, use the following command.
+To get a collection of profile source configuration for an organization, use the following command.
 
 ```powershell
    Get-MgAdminPeopleProfileSource

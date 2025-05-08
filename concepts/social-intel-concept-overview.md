@@ -70,6 +70,10 @@ Profile cards let users in an organization see information about one another, su
 
 Pronouns serve as substitutes for a person's name in sentences, with gender-neutral versions available in multiple languages, for example in English, "she", "her, "he", "him" and the gender-neutral "they", "them". Accurate pronoun usage shows inclusivity and respect, avoiding assumptions based on names or initial observations of the person. In a hybrid, multicultural work or school environment, the simple act of using the right pronouns can help build trust and improve communication among one another. Administrators can use the [pronounsSettings](/graph/api/resources/pronounssettings) API to configure pronouns settings in your organization.
 
+## Why configure profile sources in your organization?
+
+Profile source configuration lets users in an organization identify the origin of profile data shown across M365 experiences. Administrators can customize the appearance of the `displayName` and `webUrl` properties in a profile source by configuring a set of alternative translations for the languages supported in their organization.
+
 ## Why integrate with document-based insights?
 
 ### Use intelligence to improve collaboration

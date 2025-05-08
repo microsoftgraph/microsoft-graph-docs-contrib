@@ -1,6 +1,6 @@
 ---
 title: "profileSourceLocalization resource type"
-description: "Customize the appearance of a profile source name."
+description: "Allows an administrator to customize the appearance of the displayName and webUrl properties in a profile source. The administrator can define a default display name and web url and a set of alternative translations for the languages supported in their organization."
 author: "rwaithera"
 ms.date: 04/30/2025
 ms.localizationpriority: medium

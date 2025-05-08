@@ -1,6 +1,6 @@
 ---
 title: "List profileSource objects"
-description: "Get a list of the profileSource objects and their properties."
+description: "Get a list of the profileSource objects and their properties, which represent both external data sources and out-of-the-box Microsoft data sources configured for user profiles in an organization."
 author: "rwaithera"
 ms.date: 04/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [profileSource](../resources/profilesource.md) objects and their properties.
+Get a list of the [profileSource](../resources/profilesource.md) objects and their properties, which represent both external data sources and out-of-the-box Microsoft data sources configured for user profiles in an organization.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /admin/people/profileSources
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $select, $filter, and $orderBy OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

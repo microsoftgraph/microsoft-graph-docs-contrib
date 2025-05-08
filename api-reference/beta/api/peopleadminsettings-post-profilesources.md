@@ -1,6 +1,6 @@
 ---
 title: "Create profileSource"
-description: "Create a new profileSource object."
+description: "Add a new profileSource object."
 author: "rwaithera"
 ms.date: 04/30/2025
 ms.localizationpriority: medium
