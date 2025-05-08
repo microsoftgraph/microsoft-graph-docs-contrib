@@ -49,13 +49,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code. The response will be empty as we plan to return the response action tracking object which will be modeled in Graph in the future.
+If successful, this action returns a `204 No Content` response code.
 
 ## Error responses
 
 ### Action type not supported
 
-Actions `text` and `submitIocRule` are not supported in automated execution.
+Only the following action types are supported for automated execution: collectInvestigationPackage, isolateDevice, unRestrictAppExecution, unIsolateDevice, restrictAppExecution, runAntiVirusScan, stopAndQuarantineFile, submitIocRule.
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -66,7 +66,7 @@ Content-type: application/json
 {
     "error": {
         "code": "UnsupportedActionType",
-        "message": "Action type 'text' is not supported for automated execution.",
+        "message": "Action type '{action_type}' is not supported for automated execution.",
         "innerError": {
             "date": "2023-09-04T05:47:56",
             "request-id": "43067534-c43a-4df8-a4d1-30660b99ac76",
@@ -76,9 +76,7 @@ Content-type: application/json
 }
 ```
 
-### Action already in progress
-
-Trying to execute an action that was already executed will result in a bad request.
+### Invalid Task ID
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -88,12 +86,33 @@ Content-type: application/json
 ```json
 {
     "error": {
-        "code": "ActionAlreadyInProgress",
-        "message": "Response action is already in progress.",
+        "code": "BadRequest",
+        "message": "Invalid incidentTask id {id}",
         "innerError": {
-            "date": "2023-09-04T06:57:56",
-            "request-id": "43064123-b43a-4df8-a4d1-30660b99ac76",
-            "client-request-id": "5451e97f-24d2-236a-1731-1e0de686464c"
+            "date": "2023-09-04T05:47:56",
+            "request-id": "43067534-c43a-4df8-a4d1-30660b99ac76",
+            "client-request-id": "b041e97f-24d2-bf6a-1731-7e0de686464c"
+        }
+    }
+}
+```
+
+### Task Not Found
+
+```http
+HTTP/1.1 404 Not Found
+Content-type: application/json
+```
+
+```json
+{
+    "error": {
+        "code": "NotFound",
+        "message": "taskId {id} not found",
+        "innerError": {
+            "date": "2023-09-04T05:47:56",
+            "request-id": "43067534-c43a-4df8-a4d1-30660b99ac76",
+            "client-request-id": "b041e97f-24d2-bf6a-1731-7e0de686464c"
         }
     }
 }

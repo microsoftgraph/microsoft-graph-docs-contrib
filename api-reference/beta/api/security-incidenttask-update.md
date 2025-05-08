@@ -1,6 +1,6 @@
 ---
 title: "Update incidentTask"
-description: "Update the properties of an incidentTask object."
+description: "Update the status of an incidentTask object."
 author: "bealfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an incidentTask object. This operation can be used to update the status of an incident task.
+Update the properties of an incidentTask object. Currently, only the status property can be updated.
 
 ## Permissions
 
@@ -46,7 +46,7 @@ PATCH /security/incidentTasks/{incidentTaskId}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply only the values that should be updated. Existing properties that are not included in the request body will maintain their previous values.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -55,6 +55,50 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [incidentTask](../resources/incidenttask.md) object in the response body.
+
+## Error responses
+
+### Invalid Task ID
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+```
+
+```json
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "Invalid Task Id: {id}",
+        "innerError": {
+            "date": "2023-09-04T05:47:56",
+            "request-id": "43067534-c43a-4df8-a4d1-30660b99ac76",
+            "client-request-id": "b041e97f-24d2-bf6a-1731-7e0de686464c"
+        }
+    }
+}
+```
+
+### Task Not Found
+
+```http
+HTTP/1.1 404 Not Found
+Content-type: application/json
+```
+
+```json
+{
+    "error": {
+        "code": "NotFound",
+        "message": "taskId {id} not found",
+        "innerError": {
+            "date": "2023-09-04T05:47:56",
+            "request-id": "43067534-c43a-4df8-a4d1-30660b99ac76",
+            "client-request-id": "b041e97f-24d2-bf6a-1731-7e0de686464c"
+        }
+    }
+}
+```
 
 ## Examples
 
