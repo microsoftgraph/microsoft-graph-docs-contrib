@@ -1,6 +1,6 @@
 ---
 title: "copilotAdminLimitedMode resource type"
-description: "Represents a setting that controls whether Microsoft 365 Copilot in Teams meetings users can receive responses to sentiment-related prompts."
+description: "Represents a setting that controls whether users of Microsoft 365 Copilot in Teams meetings can receive responses to sentiment-related prompts."
 author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
@@ -12,7 +12,7 @@ ms.date: 05/08/2025
 
 Namespace: microsoft.graph
 
-Represents a setting that controls whether Microsoft 365 Copilot in Teams meetings users can receive responses to sentiment-related prompts. When this setting is enabled, Copilot in Teams meetings doesn't respond to sentiment-related prompts and questions from the user. When disabled, it responds to them. Copilot in Teams meetings currently honors this setting. By default, the setting is disabled.
+Represents a setting that controls whether users of Microsoft 365 Copilot in Teams meetings can receive responses to sentiment-related prompts. When this setting is enabled, Copilot in Teams meetings doesn't respond to sentiment-related prompts and questions from the user. When disabled, it responds to them. Copilot in Teams meetings currently honors this setting. By default, the setting is disabled.
 
 ## Methods
 |Method|Return type|Description|
