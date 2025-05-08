@@ -1,6 +1,6 @@
 ---
 title: "analyzedEmailCompromiseIndicator resource type"
-description: Represents the indicators which caused the mail to be marked as compromised.
+description: Represents the indicators which caused the email to be marked as compromised.
 author: akgraph
 ms.localizationpriority: medium
 ms.subservice: security

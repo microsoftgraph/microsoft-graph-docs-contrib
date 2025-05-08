@@ -1,6 +1,6 @@
 ---
 title: "DlpRuleInfo resource type"
-description: DLP rules applied to mail
+description: Represents Data loss prevention rules that have been applied to the email
 author: akgraph
 ms.localizationpriority: medium
 ms.subservice: security
