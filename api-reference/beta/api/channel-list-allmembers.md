@@ -58,7 +58,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List all members of a channel
+
+The following example shows how to get a list of all members in a channel.
+
+#### Request
 
 The following example shows a request.
 
@@ -106,7 +110,7 @@ GET https://graph.microsoft.com/beta/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -146,6 +150,54 @@ Content-type: application/json
       "userId": "b3246f44-c091-4627-96c6-25b18fa2c910",
       "email": "ericsol@contoso.com",
       "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
+    }
+  ]
+}
+```
+
+### Example 2: Find a channel member using their Microsoft Entra user object ID
+
+The following example shows how to use the `$filter` query parameter to get a specific member of a channel using their Microsoft Entra [user](../resources/user.md) ID. This filter is applied on the **userId** property of the [aadUserConversationMember](../resources/aaduserconversationmember.md) resource.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_members_in_channel_filter_by_userid",
+  "sampleKeys": ["ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062", "19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/channels/19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype/allMembers?$filter=(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')
+```
+
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_members_in_channel_filter_by_userid",
+  "@odata.type": "Collection(microsoft.graph.conversationMember)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/allMembers",
+  "@odata.count": 1,
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+      "roles": [],
+      "displayName": "Adele Vance",
+      "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
+      "email": "AdeleV@contoso.com"
     }
   ]
 }

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents the details and status of the data collection process for the authorization system onboarded to Microsoft Entra Permissions Management.
 
 Inherits from [entity](../resources/entity.md).
@@ -48,4 +50,5 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
 

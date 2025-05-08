@@ -1,0 +1,54 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "7e6f4535-a9b3-4839-8bc6-2942a64af02f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectionSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [connectionSummary](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connectionSummary?view=graph-rest-beta) resource.",
+          "Target": "connectionSummary"
+        },
+        {
+          "Id": "7e6f4535-a9b3-4839-8bc6-2942a64af02f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connection",
+          "ChangeType": "Addition",
+          "Description": "Added the [connection](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connection?view=graph-rest-beta) resource.",
+          "Target": "connection"
+        },
+        {
+          "Id": "7e6f4535-a9b3-4839-8bc6-2942a64af02f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "connections",
+          "ChangeType": "Addition",
+          "Description": "Added the **connections** relationship to the [logs](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-logs?view=graph-rest-beta) resource.",
+          "Target": "logs"
+        },
+        {
+          "Id": "7e6f4535-a9b3-4839-8bc6-2942a64af02f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getConnectionSummaries",
+          "ChangeType": "Addition",
+          "Description": "Added the [getConnectionSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-getConnectionSummaries?view=graph-rest-beta) method to the [reports](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-reports?view=graph-rest-beta) resource.",
+          "Target": "reports"
+        },
+        {
+          "Id": "7e6f4535-a9b3-4839-8bc6-2942a64af02f",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deprecation",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Target": "getConnectionSummaries"
+        }
+      ],
+      "Id": "7e6f4535-a9b3-4839-8bc6-2942a64af02f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-23T18:19:09.3414986Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    }
+  ]
+}

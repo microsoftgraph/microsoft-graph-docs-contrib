@@ -17,8 +17,6 @@ var requestBody = new ExportResultPostRequestBody
 	ExportLocation = ExportLocation.ResponsiveLocations,
 	AdditionalOptions = AdditionalOptions.CloudAttachments,
 	ExportFormat = ExportFormat.Eml,
-	CloudAttachmentVersion = CloudAttachmentVersion.All,
-	DocumentVersion = DocumentVersion.Recent100,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

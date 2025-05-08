@@ -84,10 +84,6 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/delete-conversation-member-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-conversation-member-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-conversation-member-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

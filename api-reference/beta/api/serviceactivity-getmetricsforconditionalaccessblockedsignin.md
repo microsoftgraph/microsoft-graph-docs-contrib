@@ -38,9 +38,9 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|inclusiveIntervalStartDateTime|DateTimeOffset|Set the starting date and time in UTC. The earliest start time allowed is 30 days in the past. Required. |
+|aggregationIntervalInMinutes|Int32|Aggregation interval in minutes. The default value is `15`, which sets the data to be aggregated into 15-minute sets. Allowed values are `5`, `10`, `15`, and `30`. Optional.|
 |exclusiveIntervalEndDateTime|DateTimeOffset|Set the ending date and time in UTC. Required. |
-|aggregationIntervalInMinutes|Int32|Aggregation interval in minutes. The default value is 15, which sets the data to be aggregated into 15-minute sets. Allowed values are 5, 10, 15, and 30. Optional.|
+|inclusiveIntervalStartDateTime|DateTimeOffset|Set the starting date and time in UTC. The earliest start time allowed is 30 days in the past. Required. |
 
 ## Request headers
 |Name|Description|
@@ -58,6 +58,7 @@ If successful, this function returns a `200 OK` response code and a [serviceActi
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceactivitythis.getmetricsforconditionalaccessblockedsignin"
@@ -66,6 +67,40 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForConditionalAccessBlockedSignIn(inclusiveIntervalStartDateTime=2023-01-01T00:00:00Z,exclusiveIntervalEndDateTime=2023-01-01T00:20:00Z,aggregationIntervalInMinutes=10)
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.
