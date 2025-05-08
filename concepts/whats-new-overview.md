@@ -21,11 +21,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Identity and access | Multicloud permissions management
 
-Effective April 1, 2025, Microsoft Entra Permissions Management APIs are deprecated. On October 1, 2025, we'll retire and discontinue support of the APIs. More information can be found [here](https://aka.ms/MEPMretire).
+Effective April 1, 2025, Microsoft Entra Permissions Management APIs are deprecated. On October 1, 2025, we'll retire and discontinue support of the APIs. For more information, see [Important change announcement: Microsoft Entra Permissions Management end of sale and retirement](https://aka.ms/MEPMretire).
 
 ### Teamwork and communications | Calls and online meetings
 
-Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it's over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight.md).
+Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it's over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight?view=graph-rest-beta&preserve-view=true).
 
 ### Teamwork and communications | Messaging
 
