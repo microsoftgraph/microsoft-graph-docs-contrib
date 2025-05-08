@@ -126,7 +126,7 @@ Content-Type: application/json
   "blockType": "response",
   "name": "update_incidenttask",
   "truncated": false,
-  "@odata.type": "microsoft.graph.security.incidentTask"
+  "@odata.type": "#microsoft.graph.security.incidentTask"
 }
 -->
 ``` http
@@ -135,7 +135,9 @@ Content-Type: application/json
 
 {
     "id": "213213",
-    "incidentId": "123",
+    "incident": {
+        "id": "123"
+    },
     "status": "completed",
     "source": "defenderExpertsXDR",
     "displayName": "Reset device testmachine20",

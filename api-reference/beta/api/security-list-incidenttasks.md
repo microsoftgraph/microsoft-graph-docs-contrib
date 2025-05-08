@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/security/incidentTasks
   "blockType": "response",
   "name": "get_list_incidenttasks",
   "truncated": false,
-  "@odata.type": "collection(microsoft.graph.security.incidentTask)"
+  "@odata.type": "collection(#microsoft.graph.security.incidentTask)"
 }
 -->
 ``` http
@@ -89,7 +89,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "collection(microsoft.graph.security.incidentTask)",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/incidentTasks",
   "value": [
     {
       "id": "213213",
