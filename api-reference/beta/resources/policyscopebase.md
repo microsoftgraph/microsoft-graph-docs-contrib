@@ -21,8 +21,8 @@ Abstract base type defining the scope of applicability for a data governance pol
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activities|microsoft.graph.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`. Required.|
-|executionMode|microsoft.graph.executionMode |Specifies how the policy should be executed. Possible values are `evaluateInline` and `evaluateOffline` Required.|
+|activities|microsoft.graph.security.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`. Required.|
+|executionMode|microsoft.graph.security.executionMode |Specifies how the policy should be executed. Possible values are `evaluateInline` and `evaluateOffline` Required.|
 |locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|The locations (like domains or URLs) to be protected. Required.|
 |policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|The enforcement actions to take if the policy conditions are met within this scope. Required.|
 
