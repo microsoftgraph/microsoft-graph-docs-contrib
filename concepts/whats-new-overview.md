@@ -23,6 +23,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Effective April 1, 2025, Microsoft Entra Permissions Management APIs are deprecated. On October 1, 2025, we'll retire and discontinue support of the APIs. More information can be found [here](https://aka.ms/MEPMretire).
 
+### Teamwork and communications | Calls and online meetings
+
+Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it's over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight.md).
+
+### Teamwork and communications | Messaging
+
+Added support for the `$filter` query parameter by Microsoft Entra user ID when you list channel members using the [List allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API.
+
 ### People and workplace intelligence | People admin settings
 
 Use the new [profilePropertySetting](/graph/api/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true) APIs to configure profile source precedence, ensuring accurate display of profile data across Microsoft 365 experiences based on configured priorities.

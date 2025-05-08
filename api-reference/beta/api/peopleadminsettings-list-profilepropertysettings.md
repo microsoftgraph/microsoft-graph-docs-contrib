@@ -1,6 +1,6 @@
 ---
 title: "List profilePropertySettings"
-description: "Get a list of the profilePropertySetting objects and their properties."
+description: "Get a collection of profilePropertySetting objects, which define the configuration for user profile properties in an organization. The id property uniquely identifies each resource object."
 author: "rwaithera"
 ms.date: 05/02/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of [profilePropertySetting](../resources/profilepropertysetting.md) objects, which define the configuration for user profile properties in an organization. Each resource object is uniquely identified by its `id` property.
+Get a collection of [profilePropertySetting](../resources/profilepropertysetting.md) objects, which define the configuration for user profile properties in an organization. The `id` property uniquely identifies each resource object.
 
 ## Permissions
 

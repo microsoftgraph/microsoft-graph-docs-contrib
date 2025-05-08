@@ -45,7 +45,7 @@ The [profileCardProperty](../resources/profileCardProperty.md) resource represen
 
 Feature: Profile Source Precedence (preview)
 
-Profile source precedence determines the order in which data sources are used for profile information. The collection of priority source URLs is ordered by data precedence, with the first item having the highest priority. By default, Microsoft Entra ID is the prioritized source of profile data. Setting a new profile source as a priority will change the values of properties users see on their profiles.
+Profile source precedence determines the order in which data sources are used for profile information. Data precedence determines the order of the collection of priority source URLs, with the first item having the highest priority. By default, Microsoft Entra ID is the prioritized source of profile data. Setting a new profile source as a priority changes the values of properties users see on their profiles.
 
 The [profilePropertySetting](../resources/profilepropertysetting.md) represents a collection of configuration data for property-level settings configured by an administrator, including profile source precedence.
 
