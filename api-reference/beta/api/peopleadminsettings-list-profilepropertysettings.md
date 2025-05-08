@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of [profilePropertySetting](../resources/profilepropertysetting.md) objects, which define the configuration for user profile properties in an organization. The `id` property uniquely identifies each resource object.
+Get a collection of [profilePropertySetting](../resources/profilepropertysetting.md) objects, which define the configuration for user profile properties in an organization. The **id** property identifies each resource object uniquely.
 
 ## Permissions
 
