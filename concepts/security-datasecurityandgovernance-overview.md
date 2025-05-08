@@ -7,50 +7,56 @@ ms.localizationpriority: medium
 ms.subservice: "security"
 ---
 
-## What is Microsoft Purview?
+# Microsoft Purview Data Security and Governance overview (preview)
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 The data security and governance APIs allow developers to seamlessly incorporate the protection provided by Microsoft Purview, essential for retrieval-augmented generation (RAG) applications, line of business (LOB) applications, and systems handling sensitive data. These APIs provide programmatic access to the policy evaluation engine of Microsoft Purview, ensuring consistent data security and governance enforcement across various applications.
 
 Data Security and Compliance administrators use Microsoft Purview to manage, protect, and govern their data according to the business risk exposure and regulations relevant to their organization.  
 They gain insight into data stored and exchanged within their organizations and establish Microsoft Purview policies to enforce controls based on identified risks from users and applications on the tenant.
 
 One such policy is the **Data Discovery policy**, which outlines the types of sensitive data that are of interest, specifies if user data should be collected and visible in Microsoft Purview, and defines the types of data activities permitted per user or at the tenant level. This policy is particularly relevant for custom-built line-of-business applications or vendor-built applications due to the potential risks of data not meeting organizational standards or breaching data boundaries.
+
 Another important policy is the **Data Loss Prevention (DLP) policy** that Microsoft Purview administrators establish to control or restrict the movement of sensitive data within the context of a user or application. For instance, Joyce, a security administrator, implements a DLP policy to limit the use of sensitive data when a user attempts to upload text or files containing sensitive business data into a non-enterprise grade AI application to obtain results or generate new content.
 
-#### Scenarios
+## Scenarios
+
 The core scenarios addressed by these APIs are:
 
-1. **Retrieve protection scope for a user or tenant** - Applications must learn how specific user data should be processed or protected before allowing an interaction. This ensures necessary controls are in place to prevent data loss or leakage.
-2. **Send user content to Microsoft Purview for processing** - Applications are required to send user activity or data to Microsoft Purview so that compliance administrators can discover sensitive interactions in Microsoft Purview and manage such data to meet regulatory requirements using Microsoft Purview compliance features. This enables Microsoft Purview auditing, DSPM for AI, eDiscovery, Data Lifecycle Management, Communication Compliance and Insider Risk Management solution outcomes on application's data.
-3. **Determine if user activity should be allowed or restricted in runtime** - Applications need to determine if user activity should be allowed or restricted at runtime to prevent data loss or leakage of sensitive business content before its too late.
+- **Retrieve protection scope for a user or tenant** - Applications must learn how specific user data should be processed or protected before allowing an interaction. This ensures necessary controls are in place to prevent data loss or leakage.
+- **Send user content to Microsoft Purview for processing** - Applications are required to send user activity or data to Microsoft Purview so that compliance administrators can discover sensitive interactions in Microsoft Purview and manage such data to meet regulatory requirements using Microsoft Purview compliance features. This enables Microsoft Purview auditing, DSPM for AI, eDiscovery, Data Lifecycle Management, Communication Compliance and Insider Risk Management solution outcomes on application's data.
+- **Determine if user activity should be allowed or restricted in runtime** - Applications need to determine if user activity should be allowed or restricted at runtime to prevent data loss or leakage of sensitive business content before its too late.
 
-### Microsoft Purview policy requirements
+## Microsoft Purview policy requirements
 
-1. Data Discovery Policies - Admin configures Discovery Policies scoped to all or selected users on the tenant. If Data collection policy is not setup for user or tenant, [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) will return an empty scope response.
-2. Data Loss Prevention (DLP) Policies - Admin configured DLP Policies scoped to all or selected users on the tenant. If a Data Loss Policy is not setup for user or tenant, [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) will allow the app to process content offline and there will be no DLP actions returned through the Process Content API.
+- Data Discovery Policies - Admin configures Discovery Policies scoped to all or selected users on the tenant. If Data collection policy is not setup for user or tenant, [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) will return an empty scope response.
+- Data Loss Prevention (DLP) Policies - Admin configured DLP Policies scoped to all or selected users on the tenant. If a Data Loss Policy is not setup for user or tenant, [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) will allow the app to process content offline and there will be no DLP actions returned through the Process Content API.
 
 ## API Flow
 
-1. Periodically call and cache the response of [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute).
-1. Based on the response of [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute), monitor the combination of location, execution mode, and activities for the user.
-1. If those combinations are met, then call `/contents/process` API to determing the action to be taken on the activity.
-    1. Caller for /contents/process shall not pause the user's interaction if the execution mode is `evaluateOffline`. But block otherwise.
+- Periodically call and cache the response of [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute).
+- Based on the response of [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute), monitor the combination of location, execution mode, and activities for the user.
+- If those combinations are met, then call [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to determing the action to be taken on the activity, Calling [Process content](./graph/api/userdatasecurityandgovernance-processcontent) shall not pause the user's interaction if the execution mode is `evaluateOffline`. But block otherwise.
 
-### 1. Protection Scope
+## Protection Scope
+
 Applications are required to adhere to Microsoft Purview policies established by Security/Compliance Administrators, which dictate how data and user activities should be managed. This is referred to as protection scopes, and applications should use the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) to understand what has been defined in the context of user interactions.
 
-1. Admin configures Discovery Policies scoped to all tenant or users. These policies defines the data to be classified by applications and user's activity like upload\download file.** Administrators need to define and manage data governance policies that determine how sensitive data is classified and protected within their organization
-2. **Admin configures Data Loss Protection (DLP) policies that govern how sensitive data is handled:** Administrators need to define and manage data loss prevention policies that determine how sensitive data is handled within their organization.
-3. **List Protection Scopes for User or Tenant:** This API provides a list of protection scopes available for a user or tenant. This is used by applications to determine what activities are subject to monitoring and require passing ongoing activities to the ProcessContent API
-4. **Process Activity and Content:** This API encapsulates policy processing for a given activity and content. Applications determine if an activity is subject to monitoring based on [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) and pass activity information to the API, which may return actions required to enforce the policy, e.g. Block.
+- Admin configures Discovery Policies scoped to all tenant or users. These policies defines the data to be classified by applications and user's activity like upload\download file.** Administrators need to define and manage data governance policies that determine how sensitive data is classified and protected within their organization
+- **Admin configures Data Loss Protection (DLP) policies that govern how sensitive data is handled:** Administrators need to define and manage data loss prevention policies that determine how sensitive data is handled within their organization.
+- **List Protection Scopes for User or Tenant:** This API provides a list of protection scopes available for a user or tenant. This is used by applications to determine what activities are subject to monitoring and require passing ongoing activities to the ProcessContent API
+- **Process Activity and Content:** This API encapsulates policy processing for a given activity and content. Applications determine if an activity is subject to monitoring based on [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) and pass activity information to the API, which may return actions required to enforce the policy, e.g. Block.
 
-#### 1.1 Identify Protection Scopes for a User
+### Identify Protection Scopes for a User
 
 User logs into the application and the application needs to determine the protection scopes for the user. The application calls the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) to get the protection scopes for the user.
 
-The API enables applications to specify activity types and location types in the request, thereby limiting the response to only include relevant protection scopes. 
+The API enables applications to specify activity types and location types in the request, thereby limiting the response to only include relevant protection scopes.
+
 Applications are required to provide device metadata and application metadata to assist in determining the appropriate protection scopes. This information is essential for ascertaining policy decisions relevant to the application's context.
 
-##### Execution Mode Behavior
+### Execution Mode Behavior
 
 Below is the the expected behavior on different values for `executionMode` in the response of the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute).
 
@@ -69,4 +75,3 @@ Below is the the expected behavior on different values for `executionMode` in th
 Looking for the API reference for this service?
 
 - [Microsoft Purview data security and governance in Microsoft Graph beta](/graph/api/resources/userdatasecurityandgovernance?view=graph-rest-beta)
-- 
