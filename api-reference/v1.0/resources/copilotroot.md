@@ -5,7 +5,7 @@ author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: resourcePageType
-ms.date: 11/12/2024
+ms.date: 05/08/2025
 ---
 
 # copilotRoot resource type
