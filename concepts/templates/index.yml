@@ -1,106 +1,63 @@
-### YamlMime:Hub
+### YamlMime:Landing
 
-#root section (Required)
-title: IaC templates for Microsoft Graph resources documentation
-summary: Define Microsoft Graph resources with Bicep and Terraform templates, and deploy them in Infrastructure as Code (IaC) environments.
-brand: ms-graph
+title: Bicep templates for Microsoft Graph documentation
+summary: Bicep is a language for declaratively deploying Azure and Microsoft Graph resources. The Microsoft Graph Bicep extension allows you to create Microsoft Graph resources directly with Bicep.
 
 metadata:
-  title: IaC templates for Microsoft Graph resources documentation
-  description: Define Microsoft Graph resources with Bicep and Terraform templates, and deploy them in Infrastructure as Code (IaC) environments.
+  title: Bicep templates for Microsoft Graph documentation
+  description: Bicep is a language for declaratively deploying Azure and Microsoft Graph resources. The Microsoft Graph Bicep extension allows you to create Microsoft Graph resources directly with Bicep.
   ms.service: microsoft-graph-bicep
   ms.subservice: non-product-specific
-  ms.topic: hub-page
   author: FaithOmbongi
   ms.author: ombongifaith
-  ms.date: 03/24/2025
+  ms.topic: landing-page
+  ms.date: 05/21/2024
 
-highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
-  items:
-    # Card
-    - title: Get started with Infrastructure as Code (IaC)
-      itemType: overview
-      url: /azure/developer/iac/
-    # Card
-    - title: Compare Bicep and Terraform
-      itemType: concept
-      url: /azure/developer/terraform/comparing-terraform-and-bicep
-    # Card
-    - title: Bicep templates for Microsoft Graph
-      itemType: overview
-      url: /graph/templates/overview-bicep-templates-for-graph
-    # Card
-    - title: Terraform templates for Microsoft Graph
-      itemType: overview
-      url: /graph/templates/overview-bicep-templates-for-graph
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
-# conceptualContent section (Optional; Remove if not applicable.)
-conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
-  # Supports up to 3 subsections
-# sections:
-#    - title: Get started
-#      summary: Define Microsoft Graph resources in template files, then use the file throughout the development lifecycle to repeatedly deploy your infrastructure.
-      items:
-        # Card
-        - title: Deploy with Bicep
-          links:
-            - url: /graph/templates/quickstart-create-bicep-interactive-mode
-              itemType: quickstart
-              text: Deploy in interactive scenarios
-            - url: /graph/templates/quickstart-create-bicep-zero-touch-mode
-              itemType: quickstart
-              text: Deploy in app-only scenarios
-        # Card
-        - title: Deploy with Terraform
-          links:
-            - url: /graph/templates/quickstart-create-bicep-interactive-mode
-              itemType: quickstart
-              text: Deploy in interactive scenarios
-            - url: /graph/templates/quickstart-create-bicep-zero-touch-mode
-              itemType: quickstart
-              text: Deploy in app-only scenarios
-        # Card
-        - title: Microsoft Graph on Bicep reference
-          links:
-            - url: /graph/templates/reference/overview?view=graph-bicep-1.0
-              itemType: reference
-              text: v1.0 reference
-            - url: /graph/templates/reference/overview?view=graph-bicep-beta
-              itemType: reference
-              text: beta reference
-        # Card
-        - title: Microsoft Graph on Terraform reference
-          links:
-            - url: /graph/templates/reference/overview?view=graph-bicep-1.0
-              itemType: reference
-              text: v1.0 reference
-            - url: /graph/templates/reference/overview?view=graph-bicep-beta
-              itemType: reference
-              text: beta reference
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 
+  - title: Fundamentals
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Bicep for Microsoft Graph
+            url: /graph/templates/overview-bicep-templates-for-graph.md
+          - text: Bicep overview
+            url: /azure/azure-resource-manager/bicep
+          - text: Microsoft Graph REST API overview
+            url: /graph/overview
+ 
+  # Card 
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Install Bicep tools
+            url: ./quickstart-install-bicep-tools
+          - text: Create and deploy Bicep files
+            url: ./quickstart-create-bicep-interactive-mode
+          - text: Zero-touch deployments
+            url: ./quickstart-create-bicep-zero-touch-mode
+          - text: Explore additional samples
+            url: ./quickstart-additional-samples
+      - linkListType: how-to-guide
+        links:
+          - text: Deploy without an Azure subscription
+            url: ./how-to-deploy-without-azure-sub
+          - text: Onboard existing resources to Bicep 
+            url: ./how-to-reference-existing-resources
+          - text: Using dynamic type versioning
+            url: ./how-to-dynamic-types
 
-# Card with links style
-additionalContent:
-  # Supports up to 4 subsections
-  sections:
-    - title: Other resources
-      items:
-        # Card
-        - title: "Training: IaC using Bicep"
-          links:
-            - text: Introduction to infrastructure as code using Bicep
-              url: /training/modules/introduction-to-infrastructure-as-code-using-bicep/
-        # Card
-        - title: "Training: IaC using Terraform"
-          links:
-            - text: Introduction to infrastructure as code using Terraform
-              url: /training/modules/terraform-introduction-to-infrastructure-as-code/
-        # Card
-        - title: "Help and Support"
-          summary: Get help and support for Microsoft Graph types and templates.
-          links:
-            - text: Bicep templates for Microsoft Graph
-              url: https://github.com/microsoftgraph/msgraph-bicep-types/issues
-            - text: Terraform templates for Microsoft Graph
-              url: https://github.com/microsoftgraph/msgraph-bicep-types/issues
+  # Card
+  - title: Explore Microsoft Graph Bicep reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: v1.0 reference
+            url: /graph/templates/reference/overview?view=graph-bicep-1.0
+          - text: beta reference
+            url: /graph/templates/reference/overview?view=graph-bicep-beta
