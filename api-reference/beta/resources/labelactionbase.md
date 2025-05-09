@@ -21,7 +21,7 @@ Abstract base type for defining actions that are executed when a sensitivity lab
 | Property  | Type    | Description                                                                    |
 | :-------- | :------ | :----------------------------------------------------------------------------- |
 | isEnabled | Boolean | Indicates if this specific action is enabled for the label. *Note: Hidden in CSDL.* |
-| name      | String  | The name of the action (e.g., "Encrypt", "AddHeader").                         |
+| name      | String  | The name of the action (for example, "Encrypt", "AddHeader").                         |
 
 ## Relationships
 

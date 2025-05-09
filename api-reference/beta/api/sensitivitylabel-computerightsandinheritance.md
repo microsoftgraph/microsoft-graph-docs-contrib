@@ -59,9 +59,9 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |delegatedUserEmail|String|The upn of the user for whom the rights and inheritance are being computed.
-|locale|String|The localization code (e.g., 'en-US') to use for the inherited label content.|
+|locale|String|The localization code (for example, 'en-US') to use for the inherited label content.|
 |protectedContents|[protectedContent](../resources/protectedcontent.md) collection|A collection of protected content entities for which rights and inheritance are being computed.|
-|supportedContentFormats|String collection|A collection of content formats (e.g., "Email", "File") to include in the rights and inheritance calculation.|
+|supportedContentFormats|String collection|A collection of content formats (for example, "Email", "File") to include in the rights and inheritance calculation.|
 
 ## Response
 

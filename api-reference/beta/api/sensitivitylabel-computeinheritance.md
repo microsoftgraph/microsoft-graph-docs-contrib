@@ -41,7 +41,7 @@ POST /security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
 | Parameter      | Type             | Description                                                                                                                                                                                                                                                                                           |
 | :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | locale         | String           | Optional. Overrides the `Accept-Language` header. Specifies the locale for localizable fields. If omitted, uses `Accept-Language` or the tenant default. |
-| contentFormats | String           | Optional. A comma-separated string of content formats (e.g., `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.                                                                    |
+| contentFormats | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.                                                                    |
 | labelIds       | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
 
 ## Content Formats
@@ -65,7 +65,7 @@ When computing inheritance, only input labels applicable to *at least one* of th
 | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------ |
 | Authorization       | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).                                |
 | Content-Type        | application/json. Required.                                                                                                                 |
-| Accept-Language     | Optional. Specifies the preferred language for the response label details. Format is based on RFC 4646 (e.g., `en-US`, `de-DE`).              |
+| Accept-Language     | Optional. Specifies the preferred language for the response label details. Format is based on RFC 4646 (for example, `en-US`, `de-DE`).              |
 | Client-Request-Id   | Optional. A client-generated GUID to trace the request. Recommended for troubleshooting.                                                  |
 
 ## Request body
@@ -76,13 +76,13 @@ In the request body, supply a JSON object with the following parameters.
 | :------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | labelIds       | String collection | Required. A collection of sensitivity label GUIDs from the input or referenced artifacts.                                                                                              |
 | locale         | String            | Optional. Overrides the `Accept-Language` header. Specifies the locale for the returned `sensitivityLabelInfo` object. If omitted, uses `Accept-Language` or the tenant default.      |
-| contentFormats | String collection | Optional. A collection of content formats (e.g., `File`, `Email`) applicable to the *output* artifact. Filters the input `labelIds` to consider only those applicable to these formats during inheritance calculation. See [Content Formats](#content-formats) for possible values. |
+| contentFormats | String collection | Optional. A collection of content formats (for example, `File`, `Email`) applicable to the *output* artifact. Filters the input `labelIds` to consider only those applicable to these formats during inheritance calculation. See [Content Formats](#content-formats) for possible values. |
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a single [sensitivityLabelInfo](../resources/sensitivitylabelinfo.md) object in the response body, representing the calculated inherited label.
 
-If no applicable label is found based on the input and filters, or if an error occurs (e.g., invalid label ID provided), the API might return an error response (e.g., `400 Bad Request` or `404 Not Found`) with details in an [error object](/graph/errors).
+If no applicable label is found based on the input and filters, or if an error occurs (for example, invalid label ID provided), the API might return an error response (for example, `400 Bad Request` or `404 Not Found`) with details in an [error object](/graph/errors).
 
 ## Examples
 

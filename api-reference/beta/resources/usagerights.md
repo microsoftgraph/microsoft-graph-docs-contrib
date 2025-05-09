@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the specific usage rights granted by Azure Information Protection templates or sensitivity labels with admin-defined protection. These rights define what actions a user can perform on protected content.
+Represents the specific usage rights granted by Azure Information Protection templates or sensitivity labels. These rights define what actions a user can perform on protected content.
 
 See [Configure usage rights for Azure Information Protection](/azure/information-protection/configure-usage-rights) for detailed descriptions of each right.
 
@@ -35,12 +35,12 @@ See [Configure usage rights for Azure Information Protection](/azure/information
 | VIEWRIGHTSDATA | 10   | Allows the user to view the permissions applied to the content. Implies VIEW.                 | All                  |
 | EDITRIGHTSDATA | 11   | Allows the user to change the permissions applied to the content. Implies VIEWRIGHTSDATA.    | Co-Owner, Owner    |
 | OWNER       | 12    | Grants the user all rights, including the ability to change permissions.                      | Owner                |
-| OBJMODEL    | 13    | Allows programmatic access to the content (e.g., via application add-ins). Implies VIEW.      | All                  |
+| OBJMODEL    | 13    | Allows programmatic access to the content (for example, via application add-ins). Implies VIEW.      | All                  |
 | UNKNOWN     | 14    | An unknown or unsupported right.                                                              | N/A                  |
 | ACCESSDENIED| 15    | Indicates the user was explicitly denied access (typically returned as an error, not a right).| N/A                  |
 | EXCEPTION   | 16    | Indicates an error occurred while retrieving rights.                                          | N/A                  |
 | USERDEFINEDPROTECTIONTYPENOTSUPPORTEDEXCEPTION | 17 | Error: Rights check failed because the label uses user-defined permissions (UDP). | N/A                  |
-| ENCRYPTEDPROTECTIONTYPENOTSUPPORTEDEXCEPTION   | 18 | Error: Rights check failed because the label uses unsupported encryption (e.g., DKE). | N/A                  |
+| ENCRYPTEDPROTECTIONTYPENOTSUPPORTEDEXCEPTION   | 18 | Error: Rights check failed because the label uses unsupported encryption (for example, DKE). | N/A                  |
 | PURVIEWCLAIMSCHALLENGENOTSUPPORTEDEXCEPTION    | 19 | Error: Rights check requires Conditional Access claims challenge, not supported by the caller. | N/A                  |
 
 **Note:** The numeric values are provided for reference but applications should rely on the string representation of the enum members. Exception values (`ACCESSDENIED`, `EXCEPTION`, etc.) are typically returned in error scenarios, not as part of a successful rights collection.
@@ -57,10 +57,3 @@ The following JSON representation shows the enum type.
   "@odata.type": "#microsoft.graph.usageRight"
 }
 ```
-
-## See also
-
-*   [Get rights for sensitivity label](./purviewecosystem-sensitivitylabels-getrightsforlabelid.md)
-*   [Get rights for multiple sensitivity labels](./purviewecosystem-sensitivitylabels-getrightsforlabelids.md)
-*   [Compute sensitivity label rights and inheritance](./purviewecosystem-sensitivitylabels-computerightsandinheritance.md)
-*   [Configure usage rights for Azure Information Protection](/azure/information-protection/configure-usage-rights)

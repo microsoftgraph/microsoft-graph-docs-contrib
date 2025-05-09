@@ -5219,12 +5219,3 @@ Possible values for user account types (group membership), per Windows definitio
 |dynamicRule|
 |unknownFutureValue|
 
-### labelActionSource values 
-
-|Member|
-|:---|
-|manual|
-|automatic|
-|recommended|
-|none|
-|unknownFutureValue|

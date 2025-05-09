@@ -942,6 +942,27 @@ Namespace: microsoft.graph.security
 |roleGroup|
 |unknownFutureValue|
 
+### labelActionSource values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+|none|
+|unknownFutureValue|
+
+### sensitivityLabelTarget values
+
+|Member|
+|:---|
+|email|
+|site|
+|unifiedGroup|
+|teamwork|
+|unknownFutureValue|
+
+
 <!--
 {
   "type": "#page.annotation",

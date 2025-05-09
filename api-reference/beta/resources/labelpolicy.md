@@ -1,5 +1,5 @@
 ---
-title: "labelPolicy complex type"
+title: "labelPolicy resource type"
 description: "Represents a reference to a sensitivity label policy that includes a specific sensitivity label."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: complexTypePageType
 ---
 
-# labelPolicy complex type
+# labelPolicy resource type
 
 Namespace: microsoft.graph
 
@@ -29,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.labelPolicy",

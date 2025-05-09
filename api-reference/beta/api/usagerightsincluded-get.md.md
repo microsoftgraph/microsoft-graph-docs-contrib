@@ -44,7 +44,7 @@ GET /users/{id|userPrincipalName}/dataSecurityAndGovernance/sensitivityLabels/{l
 | Name                | Description                                                                                                                                 |
 | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------ |
 | Authorization       | Bearer {token}. Required. The delegated user token. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
-| Accept-Language     | Optional. Specifies the preferred language for the response. Format is based on RFC 4646 (e.g., `en-US`, `es-ES`).                               |
+| Accept-Language     | Optional. Specifies the preferred language for the response. Format is based on RFC 4646 (for example, `en-US`, `es-ES`).                               |
 | Client-Request-Id   | Optional. A client-generated GUID to trace the request. Recommended for troubleshooting.                                                  |
 
 ## Query parameters
@@ -62,7 +62,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [usageRight](../resources/usageright.md) enum values in the response body, representing the rights granted to the user for the specified label.
 
-If the label is not found, doesn't have admin-defined protection, or the user doesn't have the `VIEW` right, the API might return an error response (e.g., `403 Forbidden` or `404 Not Found`) with details in an [error object](/graph/errors).
+If the label is not found, doesn't have admin-defined protection, or the user doesn't have the `VIEW` right, the API might return an error response (for example, `403 Forbidden` or `404 Not Found`) with details in an [error object](/graph/errors).
 
 ## Examples
 

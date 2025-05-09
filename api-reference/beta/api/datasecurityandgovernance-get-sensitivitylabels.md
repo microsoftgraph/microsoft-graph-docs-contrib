@@ -51,7 +51,7 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels?scopeToUser={userPrinc
 | Name                | Description                                                                                                                                 |
 | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------ |
 | Authorization       | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).                                |
-| Accept-Language     | Optional. Specifies the preferred language for localizable fields like `name`, `description`, and `tooltip`. Format is based on RFC 4646 (e.g., `en-US`, `fr-FR`). Defaults to the tenant's default language if omitted or not found. |
+| Accept-Language     | Optional. Specifies the preferred language for localizable fields like `name`, `description`, and `tooltip`. Format is based on RFC 4646 (for example, `en-US`, `fr-FR`). Defaults to the tenant's default language if omitted or not found. |
 | Client-Request-Id   | Optional. A client-generated GUID to trace the request. Recommended for troubleshooting.                                                  |
 
 ## Query parameters
@@ -60,7 +60,7 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels?scopeToUser={userPrinc
 | :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | scopeToUser    | String           | Optional. Used only with application permissions (`/security/...` path). Specifies the UPN or object ID of the user whose labels should be retrieved. If omitted with application permissions, returns all tenant labels. |
 | locale         | String           | Optional. Overrides the `Accept-Language` header. Specifies the locale for localizable fields. If omitted, uses `Accept-Language` or the tenant default.                                                                                                                                          |
-| contentFormats | String           | Optional. A comma-separated string of content formats (e.g., `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.                                                                    |
+| contentFormats | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.                                                                    |
 | labelIds       | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
 
 ## Content Formats
@@ -76,7 +76,7 @@ The `contentFormats` parameter filters labels based on their applicability to di
 | Teamwork       | Labels applicable to Microsoft Teams meetings.                              |
 | SchematizedData| Labels applicable to Purview data map assets or other schematized data.   |
 
-Providing multiple values (e.g., `File,Email`) returns labels applicable to *either* `File` *or* `Email`.
+Providing multiple values (for example, `File,Email`) returns labels applicable to *either* `File` *or* `Email`.
 
 ## Request body
 
