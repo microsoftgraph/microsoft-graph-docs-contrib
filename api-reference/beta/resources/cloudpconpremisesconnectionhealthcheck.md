@@ -34,7 +34,7 @@ Represents the result of a Cloud PC Azure network connection health check.
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `warning`, `informational`, `unknownFutureValue`. Read-only.|
 |startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
 |endDateTime|DateTimeOffset|The end time of the health check item. Read-only.|
-|errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|The type of error that occurred during this health check.|
+|errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|The type of error that occurred during this health check. For the list of possible values, see [cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values).|
 |recommendedAction|String|The recommended action to fix the corresponding error.|
 |startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Read-only.|
@@ -93,7 +93,6 @@ Represents the result of a Cloud PC Azure network connection health check.
 |resourceAvailabilityCheckNoIntuneReaderRoleError|The Cloud PC service principal has insufficient permissions to check the Intune platform restriction settings. Make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
 |resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation| Intune has a default Windows platform restriction policy, which can block you from provisioning.|
 |resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation| Intune has a custom Windows platform restriction policy, which may block you from provisioning.|
-|resourceAvailabilityCheckDeploymentQuotaLimitReached| The resource group used by Azure network connection has been locked for delete actions and has hit the deployment history quota limit. Please remove this lock to allow Windows 365 service to delete obsolete virtual network adapters.|
 |resourceAvailabilityCheckUnknownError|The resource availability check for Azure resources failed due to an unknown error. Ensure that all Azure resources meet the prerequisites.|
 |permissionCheckNoSubscriptionReaderRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
 |permissionCheckNoResourceGroupOwnerRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Make sure that the Cloud PC service principal has the *Owner* permissions on the resource group. |

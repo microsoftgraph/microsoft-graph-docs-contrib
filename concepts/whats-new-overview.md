@@ -25,6 +25,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## May 2025: New in preview only
 
+### Device and app management | Cloud PC
+
+Added **resourceAvailabilityCheckMissingRegistrationForLocation** as a possible error type for the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionHhealthcheck?view=graph-rest-beta&preserve-view=true).
+
 ### Identity and access | Multicloud permissions management
 
 Effective April 1, 2025, Microsoft Entra Permissions Management APIs are deprecated. On October 1, 2025, we'll retire and discontinue support of the APIs. For more information, see [Important change announcement: Microsoft Entra Permissions Management end of sale and retirement](https://aka.ms/MEPMretire).
