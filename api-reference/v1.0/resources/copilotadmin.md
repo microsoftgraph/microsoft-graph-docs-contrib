@@ -5,14 +5,12 @@ author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: resourcePageType
-ms.date: 11/15/2024
+ms.date: 05/08/2025
 ---
 
 # copilotAdmin resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a Microsoft 365 admin who can add or modify Microsoft 365 Copilot settings.
 
