@@ -40,7 +40,7 @@ You purchase multiple licenses for iOS apps through the Apple Volume Purchase Pr
 |state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.|
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Whether or not apps for the VPP token will be automatically updated.|
-|countryOrRegion|String|Whether or not apps for the VPP token will be automatically updated.|
+|countryOrRegion|String|The country or region associated with the Apple Volume Purchase Program Token.|
 
 ## Relationships
 None
