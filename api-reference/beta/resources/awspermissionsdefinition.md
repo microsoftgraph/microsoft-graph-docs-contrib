@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 AWS-specific permissions request details.
 
 Inherits from [permissionsDefinition](../resources/permissionsdefinition.md).
@@ -48,4 +50,5 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
 

@@ -22,7 +22,7 @@ Retrieve the properties and relationships of a [networkAccessTraffic](../resourc
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "networkaccess_logs_list_traffic" } -->
+<!-- { "blockType": "permissions", "name": "networkaccess_networkaccesstraffic_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-networkaccesstraffic-get-permissions.md)]
 
 ## HTTP request

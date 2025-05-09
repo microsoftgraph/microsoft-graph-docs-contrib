@@ -26,6 +26,30 @@ items:
       href: ../../resources/engagementasyncoperation.md
     - name: Get
       href: ../../api/engagementasyncoperation-get.md
+  - name: Engagement role
+    items:
+    - name: Engagement role
+      href: ../../resources/engagementrole.md
+    - name: List
+      href: ../../api/employeeexperience-list-roles.md
+    - name: List
+      href: ../../api/employeeexperienceuser-list-assignedroles.md
+  - name: Engagement role member
+    items:
+    - name: Engagement role member
+      href: ../../resources/engagementrolemember.md
+    - name: List
+      href: ../../api/engagementrole-list-members.md
+    - name: Create
+      href: ../../api/engagementrole-post-members.md
+    - name: Delete
+      href: ../../api/engagementrole-delete-members.md
+  - name: Employee experience user
+    items:
+    - name: Employee experience user
+      href: ../../resources/employeeexperienceuser.md
+    - name: List assignedRoles
+      href: ../../api/employeeexperienceuser-list-assignedroles.md
 - name: Employee goals (preview)
   items:
   - name: Goals export job

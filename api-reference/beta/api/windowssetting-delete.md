@@ -62,6 +62,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_windowssetting",
@@ -71,6 +72,12 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd@4562bcc8-c436-4f95-b7c0-4f8ce89dca5e/settings/windows
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-windowssetting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

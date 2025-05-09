@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents permissions defined for an Azure role.
 
 Inherits from [entity](../resources/entity.md).
@@ -46,3 +48,4 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)"
 }
 ```
+
