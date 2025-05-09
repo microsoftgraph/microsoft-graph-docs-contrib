@@ -5,7 +5,7 @@ author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: resourceTypePageType
+doc_type: resourcePageType
 ---
 
 # autoLabeling resource type

@@ -17,10 +17,6 @@ Namespace: microsoft.graph
 
 Calculate the sensitivity label that should be inherited by an output artifact, given a set of sensitivity labels from input or referenced artifacts.
 
-Label inheritance is crucial for maintaining data protection, especially in scenarios involving content generation like Retrieval-Augmented Generation (RAG). When a large language model (LLM) uses multiple pieces of grounding data with different sensitivity labels, the generated output must inherit the most sensitive label from the inputs used. This API determines the correct inherited label based on the sensitivity order defined in the Purview policy and optional filtering by content format and locale.
-
-For the preview, inheritance is computed locally based on the sensitivity (`order`) attribute of the provided labels. Future versions might involve service-side computation.
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -36,12 +32,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 POST /security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
 ```
+
 ## Query parameters
 
 | Parameter      | Type             | Description                                                                                                                                                                                                                                                                                           |
 | :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| contentFormats | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.|
 | locale         | String           | Optional. Overrides the `Accept-Language` header. Specifies the locale for localizable fields. If omitted, uses `Accept-Language` or the tenant default. |
-| contentFormats | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.                                                                    |
 | labelIds       | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
 
 ## Content Formats

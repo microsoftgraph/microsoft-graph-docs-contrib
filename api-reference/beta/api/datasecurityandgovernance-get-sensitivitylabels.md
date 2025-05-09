@@ -17,10 +17,6 @@ Namespace: microsoft.graph
 
 Get the list of sensitivity labels available to a specific user or for the entire tenant.
 
-The results can be filtered by locale, supported content formats, or specific label IDs.
-
-This API is useful for applications that need to display sensitivity labels in their user interface (like a label picker), require label details for applying policy, or need to understand the available labels for administrative or reporting purposes.
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -69,12 +65,12 @@ The `contentFormats` parameter filters labels based on their applicability to di
 
 | Value          | Description                                                                 |
 | :------------- | :-------------------------------------------------------------------------- |
-| File           | Labels applicable to general files and items (including Copilot outputs). |
 | Email          | Labels applicable specifically to emails.                                   |
-| Site           | Labels applicable to SharePoint sites.                                      |
-| UnifiedGroup   | Labels applicable to Microsoft 365 Groups.                                |
-| Teamwork       | Labels applicable to Microsoft Teams meetings.                              |
+| File           | Labels applicable to general files and items (including Copilot outputs). |
 | SchematizedData| Labels applicable to Purview data map assets or other schematized data.   |
+| Site           | Labels applicable to SharePoint sites.                                      |
+| Teamwork       | Labels applicable to Microsoft Teams meetings.                              |
+| UnifiedGroup   | Labels applicable to Microsoft 365 Groups.                                |
 
 Providing multiple values (for example, `File,Email`) returns labels applicable to *either* `File` *or* `Email`.
 

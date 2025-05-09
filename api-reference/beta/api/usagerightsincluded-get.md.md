@@ -17,10 +17,6 @@ Namespace: microsoft.graph
 
 Get the usage rights granted to the calling user for a specific sensitivity label that has admin-defined permissions.
 
-This API allows an application to determine a user's effective permissions (such as view, edit, export) for content protected by a specific sensitivity label. This is crucial for scenarios like Retrieval-Augmented Generation (RAG) where an application must check if a user has the necessary rights (specifically `EXTRACT`) before using labeled content as grounding data for large language models. It can also be used in document management systems or line-of-business applications to enforce access controls based on label policies.
-
-This API only works for labels with admin-defined permissions (standard templates). It does not return rights for labels configured for user-defined permissions (UDP) or Double Key Encryption (DKE).
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

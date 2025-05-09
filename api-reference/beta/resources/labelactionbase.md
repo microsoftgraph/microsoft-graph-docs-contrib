@@ -1,14 +1,14 @@
 ---
-title: "labelActionBase complex type"
+title: "labelActionBase resource type"
 description: "Abstract base type for actions associated with a sensitivity label, like applying encryption or content markings."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: complexTypePageType
+doc_type: resourcePageType
 ---
 
-# labelActionBase complex type
+# labelActionBase resource type
 
 Namespace: microsoft.graph
 
