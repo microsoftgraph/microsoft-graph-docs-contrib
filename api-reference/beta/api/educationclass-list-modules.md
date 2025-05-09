@@ -121,7 +121,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_prod_pateljay/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/modules?$select=createdBy,createdDateTime",
     "value": [
         {
