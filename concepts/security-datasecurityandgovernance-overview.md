@@ -39,7 +39,7 @@ The core scenarios addressed by these APIs are:
 - Based on the response of [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute), monitor the combination of location, execution mode, and activities for the user.
 - If those combinations are met, then call [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to determing the action to be taken on the activity, Calling [Process content](./graph/api/userdatasecurityandgovernance-processcontent) shall not pause the user's interaction if the execution mode is `evaluateOffline`. But block otherwise.
 
-## Protection Scope
+## Protection scope
 
 Applications are required to adhere to Microsoft Purview policies established by Security/Compliance Administrators, which dictate how data and user activities should be managed. This is referred to as protection scopes, and applications should use the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) to understand what has been defined in the context of user interactions.
 
