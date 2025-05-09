@@ -2588,7 +2588,7 @@
           ]
         },
         {
-          "name": "Data Security and Compliance (preview)",
+          "name": "Data security and compliance (preview)",
           "resources": [
             "microsoft.graph.activitiesContainer",
             "microsoft.graph.activityMetadata",
