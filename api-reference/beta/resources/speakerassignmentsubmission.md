@@ -39,10 +39,10 @@ Inherits from [entity](../resources/entity.md).
 |submissionId|String|ID of the submission this speaker progress is associated with.|
 |studentId|String|ID of the user this speaker progress is associated with.|
 |submissionDateTime|DateTimeOffset|Date and time of the submission this speaker progress is associated with. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|topFillerWords|String|The filler words used most by the student.|
-|topMispronouncedWords|String|The words mispronounced most by the student.|
-|topNonInclusiveWordsAndPhrases|String|The non-inclusive or sensitive words and phrases most used by the student.|
-|topRepetitiveWordsAndPhrases|String|The words and phrases most repeated by the student.|
+|topFillerWords|String collection|The filler words used most by the student.|
+|topMispronouncedWords|String collection|The words mispronounced most by the student.|
+|topNonInclusiveWordsAndPhrases|String collection|The non-inclusive or sensitive words and phrases most used by the student.|
+|topRepetitiveWordsAndPhrases|String collection|The words and phrases most repeated by the student.|
 |wordsSpokenCount|Int64|Total number of words spoken by the student in the submission.|
 
 
