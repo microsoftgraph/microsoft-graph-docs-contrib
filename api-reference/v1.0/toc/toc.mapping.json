@@ -1804,6 +1804,17 @@
               ]
             },
             {
+              "name": "Copilot settings",
+              "resources": [
+                "copilotAdminLimitedMode"
+              ],
+              "complexTypes": [
+                "copilotAdmin",
+                "copilotAdminSetting",
+                "copilotRoot"
+              ]
+            },
+            {
               "name": "Online meetings",
               "resources": [
                 "meetingAttendanceReport",

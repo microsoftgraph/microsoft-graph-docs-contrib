@@ -5,14 +5,12 @@ author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: apiPageType
-ms.date: 12/03/2024
+ms.date: 05/08/2025
 ---
 
 # Update copilotAdminLimitedMode
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md) object.
 
@@ -70,13 +68,14 @@ This API can also return more HTTP status codes, such as `403 Forbidden`, `500 I
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_copilotadminlimitedmode"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/copilot/admin/settings/limitedMode
+PATCH https://graph.microsoft.com/v1.0/copilot/admin/settings/limitedMode
 Content-Type: application/json
 
 {
