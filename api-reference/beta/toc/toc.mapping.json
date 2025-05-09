@@ -2581,6 +2581,20 @@
             "microsoft.graph.security.defaultAuditData"
           ]
         },
+                {
+          "name": "Data security and compliance (preview)",
+          "resources": [
+            "microsoft.graph.autoLabeling",
+            "microsoft.graph.computeRightsAndInheritanceResult",
+            "microsoft.graph.labelActionBase",
+            "microsoft.graph.labelContentRight",
+            "microsoft.graph.labelPolicy",
+            "microsoft.graph.protectedContent",
+            "microsoft.graph.sensitivityLabel",
+            "microsoft.graph.usageRight",
+            "microsoft.graph.usageRightsIncluded"
+          ]
+        },
         {
           "name": "eDiscovery",
           "overview": "../../resources/security-ediscovery-apioverview.md",

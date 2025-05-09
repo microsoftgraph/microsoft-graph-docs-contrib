@@ -108,7 +108,7 @@ The following example shows the response. Labels are returned in French where av
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.sensitivityLabelInfo)"
+  "@odata.type": "Collection(microsoft.graph.sensitivityLabel)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -176,14 +176,14 @@ The following example shows the response containing only the labels matching the
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.sensitivityLabelInfo)"
+  "@odata.type": "Collection(microsoft.graph.sensitivityLabel)"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/dataSecurityAndGovernance/sensitivityLabels",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/dataSecurityAndGovernance/sensitivityLabel",
   "value": [
     {
       "id": "4e4234dd-377b-42a3-935b-0e42f138fa23",
@@ -228,7 +228,7 @@ The following example shows the response containing labels scoped to Adele Vance
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.sensitivityLabelInfo)"
+  "@odata.type": "Collection(microsoft.graph.sensitivityLabel)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -237,7 +237,7 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/dataSecurityAndGovernance/sensitivityLabels",
   "value": [
-    // SensitivityLabelInfo objects relevant to adele.vance@contoso.com
+    // SensitivityLabel objects relevant to adele.vance@contoso.com
   ]
 }
 ```

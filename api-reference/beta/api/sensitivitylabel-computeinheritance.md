@@ -72,12 +72,12 @@ In the request body, supply a JSON object with the following parameters.
 | Parameter      | Type              | Description                                                                                                                                                                            |
 | :------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | labelIds       | String collection | Required. A collection of sensitivity label GUIDs from the input or referenced artifacts.                                                                                              |
-| locale         | String            | Optional. Overrides the `Accept-Language` header. Specifies the locale for the returned `sensitivityLabelInfo` object. If omitted, uses `Accept-Language` or the tenant default.      |
+| locale         | String            | Optional. Overrides the `Accept-Language` header. Specifies the locale for the returned `sensitivityLabel` object. If omitted, uses `Accept-Language` or the tenant default.      |
 | contentFormats | String collection | Optional. A collection of content formats (for example, `File`, `Email`) applicable to the *output* artifact. Filters the input `labelIds` to consider only those applicable to these formats during inheritance calculation. See [Content Formats](#content-formats) for possible values. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a single [sensitivityLabelInfo](../resources/sensitivitylabelinfo.md) object in the response body, representing the calculated inherited label.
+If successful, this method returns a `200 OK` response code and a single [sensitivityLabel](../resources/sensitivitylabel.md) object in the response body, representing the calculated inherited label.
 
 If no applicable label is found based on the input and filters, or if an error occurs (for example, invalid label ID provided), the API might return an error response (for example, `400 Bad Request` or `404 Not Found`) with details in an [error object](/graph/errors).
 
@@ -116,14 +116,14 @@ The following example shows the response. The "Confidential" label is returned b
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sensitivityLabelInfo"
+  "@odata.type": "microsoft.graph.sensitivityLabel"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.sensitivityLabelInfo",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.sensitivityLabel",
   "id": "a7a21bba-8197-491f-a5d6-0d0f955397cf",
   "name": "Confidential",
   "description": "Confidential data.",
