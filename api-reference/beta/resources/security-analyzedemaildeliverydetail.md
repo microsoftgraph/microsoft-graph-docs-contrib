@@ -21,8 +21,8 @@ Represents the delivery action and location of an [analzed email](security-analy
 |:---|:---|:---|
 |action|[microsoft.graph.security.deliveryAction](#deliveryaction-values)|The delivery action of the email. The possible values are: `unknown`, `deliveredToJunk`, `delivered`, `blocked`, `replaced`, `unknownFutureValue`.|
 |location|[microsoft.graph.security.deliveryLocation](#deliverylocation-values)|The delivery location of the email. The possible values are: `unknown`, `inbox_folder`, `junkFolder`, `deletedFolder`, `quarantine`, `onprem_external`, `failed`, `dropped`, `others`, `unknownFutureValue`.|
-|originalThreats|String|Threats identified at the time of delivery.|
 |latestThreats|String|Latest known threat on the email.|
+|originalThreats|String|Threats identified at the time of delivery.|
 
 ### deliveryAction values
 

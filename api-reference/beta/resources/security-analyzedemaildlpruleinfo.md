@@ -1,5 +1,5 @@
 ---
-title: "DlpRuleInfo resource type"
+title: "dlpRuleInfo resource type"
 description: : "Represents data loss prevention rules applied to the email."
 author: akgraph
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Data loss prevention rules that have been applied to the email
+Represents data loss prevention rules applied to the email.
 
 
 ## Properties

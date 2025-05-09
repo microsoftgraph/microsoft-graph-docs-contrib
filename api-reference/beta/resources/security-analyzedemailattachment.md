@@ -24,8 +24,8 @@ Represents an attachment to an analyzed email.
 |fileType|String|The type of the attachment in the email.|
 |fileSize|Int32|Size of the file.|
 |fileExtension|String|Extension of the file.|
-|sha256|String|The SHA256 file hash of the attachment.|
 |malwareFamily|String|The threat name associated with the threat type.|
+|sha256|String|The SHA256 file hash of the attachment.|
 |threatType|microsoft.graph.security.threatType|The threat type associated with the attachment. The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
 |tenantAllowBlockListDetailInfo|String|Details of entries in tenant allow/block list configured by tenant.|
 
