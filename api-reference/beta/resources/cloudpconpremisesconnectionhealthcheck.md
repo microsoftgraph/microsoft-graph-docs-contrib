@@ -94,7 +94,6 @@ Represents the result of a Cloud PC Azure network connection health check.
 |resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation| Intune has a default Windows platform restriction policy, which can block you from provisioning.|
 |resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation| Intune has a custom Windows platform restriction policy, which may block you from provisioning.|
 |resourceAvailabilityCheckDeploymentQuotaLimitReached| The resource group used by Azure network connection has been locked for delete actions and has hit the deployment history quota limit. Please remove this lock to allow Windows 365 service to delete obsolete virtual network adapters.|
-|resourceAvailabilityCheckMissingRegistrationForLocation| Missing registration for location. To fix this issue, register the Azure Network resource provider for your account. |
 |resourceAvailabilityCheckUnknownError|The resource availability check for Azure resources failed due to an unknown error. Ensure that all Azure resources meet the prerequisites.|
 |permissionCheckNoSubscriptionReaderRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
 |permissionCheckNoResourceGroupOwnerRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Make sure that the Cloud PC service principal has the *Owner* permissions on the resource group. |
@@ -115,7 +114,7 @@ Represents the result of a Cloud PC Azure network connection health check.
 |ssoCheckKerberosConfigurationError|The Microsoft Entra Kerberos is not configured properly, so the user failed to sign in to the Cloud PC through single sign-on (SSO) or receive SSO access to Kerberos-based resources on the network.|
 |internalServerUnknownError|The provisioning failed due to an internal error. Contact customer support.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
-
+|resourceAvailabilityCheckMissingRegistrationForLocation| Missing registration for location. To fix this issue, register the Azure Network resource provider for your account. |
 ## Relationships
 
 None.
