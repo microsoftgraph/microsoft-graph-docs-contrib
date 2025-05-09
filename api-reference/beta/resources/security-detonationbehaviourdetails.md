@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Shows the exact events that took place during detonation
+Shows the exact events that took place during detonation.
 
 
 ## Properties
