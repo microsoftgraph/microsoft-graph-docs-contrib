@@ -1,6 +1,6 @@
 ---
 title: "detonationBehaviourDetails resource type"
-description: Shows the exact events that took place during detonation
+description: "Shows the exact events that took place during detonation."
 author: akgraph
 ms.localizationpriority: medium
 ms.subservice: security
