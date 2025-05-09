@@ -47,6 +47,7 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|Name of the **module**.|
 |id|String| The unique identifier for the **module**. Inherited from [entity](../resources/entity.md). Read-only.|
 |isPinned|Boolean|Indicates whether the module is pinned or not.|
+|languageTag|String| Optional field that specifies the language in which UI notifications for the assignment will be displayed. If languageTag is not provided, the default language will be `en-US`. |
 |lastModifiedBy|[identitySet](identityset.md)| The last user that modified the **module**. |
 |lastModifiedDateTime|DateTimeOffset|Date time the **module** was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`|
 |resourcesFolderUrl|string| Folder URL where all the file resources for this **module** are stored.|
