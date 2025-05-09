@@ -6747,14 +6747,6 @@
         {
           "Id": "b3f2c8a1-4d5e-4f9b-8a6e-2c7d3f9e1a4b",
           "ApiChange": "Member",
-          "ChangedApiName": "resourceAvailabilityCheckDeploymentQuotaLimitReached",
-          "ChangeType": "Addition",
-          "Description": "Added the `resourceAvailabilityCheckDeploymentQuotaLimitReached` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
-          "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
-        },
-        {
-          "Id": "b3f2c8a1-4d5e-4f9b-8a6e-2c7d3f9e1a4b",
-          "ApiChange": "Member",
           "ChangedApiName": "resourceAvailabilityCheckMissingRegistrationForLocation",
           "ChangeType": "Addition",
           "Description": "Added the `resourceAvailabilityCheckMissingRegistrationForLocation` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
