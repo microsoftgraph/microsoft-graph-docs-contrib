@@ -19,7 +19,7 @@ Represents an indicator and its associated verdict that suggests whether an emai
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|Indicator|
+|value|String|Indicator.|
 |verdict|[microsoft.graph.security.verdictCategory](#verdictcategory-values)|.The possible values are: `none`, `malware`, `phish`, `siteUnavailable`, `spam`, `decryptionFailed`, `unsupportedUriScheme`, `unsupportedFileType`, `undefined`, `unknownFutureValue`.|
 
 ### verdictCategory values 
