@@ -24,7 +24,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Bicep for Microsoft Graph
-            url: /graph/templates/overview-bicep-templates-for-graph.md
+            url: /graph/templates/overview-bicep-templates-for-graph
           - text: Bicep overview
             url: /azure/azure-resource-manager/bicep
           - text: Microsoft Graph REST API overview
