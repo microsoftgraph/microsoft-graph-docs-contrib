@@ -1,0 +1,63 @@
+### YamlMime:Landing
+
+title: Bicep templates for Microsoft Graph documentation
+summary: Bicep is a language for declaratively deploying Azure and Microsoft Graph resources. The Microsoft Graph Bicep extension allows you to create Microsoft Graph resources directly with Bicep.
+
+metadata:
+  title: Bicep templates for Microsoft Graph documentation
+  description: Bicep is a language for declaratively deploying Azure and Microsoft Graph resources. The Microsoft Graph Bicep extension allows you to create Microsoft Graph resources directly with Bicep.
+  ms.service: microsoft-graph-bicep
+  ms.subservice: non-product-specific
+  author: FaithOmbongi
+  ms.author: ombongifaith
+  ms.topic: landing-page
+  ms.date: 05/21/2024
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 
+  - title: Fundamentals
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Bicep for Microsoft Graph
+            url: /graph/templates/bicep/overview-bicep-templates-for-graph
+          - text: Bicep overview
+            url: /azure/azure-resource-manager/bicep
+          - text: Microsoft Graph REST API overview
+            url: /graph/overview
+ 
+  # Card 
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Install Bicep tools
+            url: /graph/templates/bicep/quickstart-install-bicep-tools
+          - text: Create and deploy Bicep files
+            url: /graph/templates/bicep/quickstart-create-bicep-interactive-mode
+          - text: Zero-touch deployments
+            url: /graph/templates/bicep/quickstart-create-bicep-zero-touch-mode
+          - text: Explore more samples
+            url: /graph/templates/bicep/quickstart-additional-samples
+      - linkListType: how-to-guide
+        links:
+          - text: Deploy without an Azure subscription
+            url: /graph/templates/bicep/how-to-deploy-without-azure-sub
+          - text: Onboard existing resources to Bicep 
+            url: /graph/templates/bicep/how-to-reference-existing-resources
+          - text: Using dynamic type versioning
+            url: /graph/templates/bicep/how-to-dynamic-types
+
+  # Card
+  - title: Explore Microsoft Graph Bicep reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: v1.0 reference
+            url: /graph/templates/bicep/reference/overview?view=graph-bicep-1.0
+          - text: beta reference
+            url: /graph/templates/bicep/reference/overview?view=graph-bicep-beta
