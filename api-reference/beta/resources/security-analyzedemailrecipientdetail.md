@@ -1,6 +1,6 @@
 ---
-title: "Recipient Detail resource type"
-description: "Details about the recipient(s) as mentioned in the email."
+title: "analyzedEmailRecipientDetail resource type"
+description: "Details about the recipient or recipients as mentioned in the email."
 author: akgraph
 ms.localizationpriority: medium
 ms.subservice: security
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details about the recipient(s) as mentioned in the mail.
+Details about the recipient or recipients as mentioned in the email.
 
 ## Properties
 |Property|Type|Description|

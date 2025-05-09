@@ -1,6 +1,6 @@
 ---
 title: "timelineEvent resource type"
-description: Timeline of a analyzedEmail entity
+description: "The timeline of an analyzedEmail entity."
 author: akgraph
 ms.localizationpriority: medium
 ms.subservice: security
@@ -14,14 +14,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delivery and post-delivery events that happened to the email
+The timeline of an analyzedEmail entity.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|eventDateTime|DateTimeOffset|The date and time when the event occurred|
-|eventDetails|String|Additional details or context about the event|
+|eventDateTime|DateTimeOffset|The date and time when the event occurred.|
+|eventDetails|String|Additional details or context about the event.|
 |eventResult|String|The outcome or result of the event, such as delivery location or action taken.|
 |eventSource|[microsoft.graph.security.eventSource](#eventsource-values)|The origin or actor that triggered the event. The possible values are: `system`, `admin`, `user`, `unknownFutureValue`.|
 |eventThreats|String collection|Collection of threats identified or associated with this event.|

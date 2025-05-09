@@ -408,42 +408,10 @@
         },
         {
           "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "ruleId",
-          "ChangeType": "Addition",
-          "Description": "Added the **ruleId** property to the [analyzedEmailDlpRuleInfo](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailDlpRuleInfo?view=graph-rest-beta) resource.",
-          "Target": "analyzedEmailDlpRuleInfo"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "name",
-          "ChangeType": "Addition",
-          "Description": "Added the **name** property to the [analyzedEmailDlpRuleInfo](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailDlpRuleInfo?view=graph-rest-beta) resource.",
-          "Target": "analyzedEmailDlpRuleInfo"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
           "ApiChange": "Resource",
           "ChangedApiName": "analyzedEmailRecipientDetail",
           "ChangeType": "Addition",
           "Description": "Added the [analyzedEmailRecipientDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailRecipientDetail?view=graph-rest-beta) resource.",
-          "Target": "analyzedEmailRecipientDetail"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "domainName",
-          "ChangeType": "Addition",
-          "Description": "Added the **domainName** property to the [analyzedEmailRecipientDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailRecipientDetail?view=graph-rest-beta) resource.",
-          "Target": "analyzedEmailRecipientDetail"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "ccRecipients",
-          "ChangeType": "Addition",
-          "Description": "Added the **ccRecipients** property to the [analyzedEmailRecipientDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailRecipientDetail?view=graph-rest-beta) resource.",
           "Target": "analyzedEmailRecipientDetail"
         },
         {
@@ -545,102 +513,6 @@
         {
           "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
           "ApiChange": "Property",
-          "ChangedApiName": "verdict",
-          "ChangeType": "Addition",
-          "Description": "Added the **verdict** property to the [compromiseIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-compromiseIndicator?view=graph-rest-beta) resource.",
-          "Target": "compromiseIndicator"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "value",
-          "ChangeType": "Addition",
-          "Description": "Added the **value** property to the [compromiseIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-compromiseIndicator?view=graph-rest-beta) resource.",
-          "Target": "compromiseIndicator"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Resource",
-          "ChangedApiName": "detonationBehaviourDetails",
-          "ChangeType": "Addition",
-          "Description": "Added the [detonationBehaviourDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationBehaviourDetails?view=graph-rest-beta) resource.",
-          "Target": "detonationBehaviourDetails"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "behaviourCapability",
-          "ChangeType": "Addition",
-          "Description": "Added the **behaviourCapability** property to the [detonationBehaviourDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationBehaviourDetails?view=graph-rest-beta) resource.",
-          "Target": "detonationBehaviourDetails"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "behaviourGroup",
-          "ChangeType": "Addition",
-          "Description": "Added the **behaviourGroup** property to the [detonationBehaviourDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationBehaviourDetails?view=graph-rest-beta) resource.",
-          "Target": "detonationBehaviourDetails"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "eventDateTime",
-          "ChangeType": "Addition",
-          "Description": "Added the **eventDateTime** property to the [detonationBehaviourDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationBehaviourDetails?view=graph-rest-beta) resource.",
-          "Target": "detonationBehaviourDetails"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "processName",
-          "ChangeType": "Addition",
-          "Description": "Added the **processName** property to the [detonationBehaviourDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationBehaviourDetails?view=graph-rest-beta) resource.",
-          "Target": "detonationBehaviourDetails"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "processId",
-          "ChangeType": "Addition",
-          "Description": "Added the **processId** property to the [detonationBehaviourDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationBehaviourDetails?view=graph-rest-beta) resource.",
-          "Target": "detonationBehaviourDetails"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "operation",
-          "ChangeType": "Addition",
-          "Description": "Added the **operation** property to the [detonationBehaviourDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationBehaviourDetails?view=graph-rest-beta) resource.",
-          "Target": "detonationBehaviourDetails"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "target",
-          "ChangeType": "Addition",
-          "Description": "Added the **target** property to the [detonationBehaviourDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationBehaviourDetails?view=graph-rest-beta) resource.",
-          "Target": "detonationBehaviourDetails"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "details",
-          "ChangeType": "Addition",
-          "Description": "Added the **details** property to the [detonationBehaviourDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationBehaviourDetails?view=graph-rest-beta) resource.",
-          "Target": "detonationBehaviourDetails"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "actionStatus",
-          "ChangeType": "Addition",
-          "Description": "Added the **actionStatus** property to the [detonationBehaviourDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationBehaviourDetails?view=graph-rest-beta) resource.",
-          "Target": "detonationBehaviourDetails"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
           "ChangedApiName": "compromiseIndicators",
           "ChangeType": "Addition",
           "Description": "Added the **compromiseIndicators** property to the [detonationDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationDetails?view=graph-rest-beta) resource.",
@@ -680,82 +552,10 @@
         },
         {
           "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "threats",
-          "ChangeType": "Addition",
-          "Description": "Added the **threats** property to the [threatDetectionDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-threatDetectionDetail?view=graph-rest-beta) resource.",
-          "Target": "threatDetectionDetail"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "confidenceLevel",
-          "ChangeType": "Addition",
-          "Description": "Added the **confidenceLevel** property to the [threatDetectionDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-threatDetectionDetail?view=graph-rest-beta) resource.",
-          "Target": "threatDetectionDetail"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "priorityAccountProtection",
-          "ChangeType": "Addition",
-          "Description": "Added the **priorityAccountProtection** property to the [threatDetectionDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-threatDetectionDetail?view=graph-rest-beta) resource.",
-          "Target": "threatDetectionDetail"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
           "ApiChange": "Resource",
           "ChangedApiName": "timelineEvent",
           "ChangeType": "Addition",
           "Description": "Added the [timelineEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-timelineEvent?view=graph-rest-beta) resource.",
-          "Target": "timelineEvent"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "eventDateTime",
-          "ChangeType": "Addition",
-          "Description": "Added the **eventDateTime** property to the [timelineEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-timelineevent?view=graph-rest-beta) resource.",
-          "Target": "timelineEvent"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "eventDetails",
-          "ChangeType": "Addition",
-          "Description": "Added the **eventDetails** property to the [timelineEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-timelineevent?view=graph-rest-beta) resource.",
-          "Target": "timelineEvent"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "eventResult",
-          "ChangeType": "Addition",
-          "Description": "Added the **eventResult** property to the [timelineEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-timelineevent?view=graph-rest-beta) resource.",
-          "Target": "timelineEvent"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "eventSource",
-          "ChangeType": "Addition",
-          "Description": "Added the **eventSource** property to the [timelineEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-timelineevent?view=graph-rest-beta) resource.",
-          "Target": "timelineEvent"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "eventThreats",
-          "ChangeType": "Addition",
-          "Description": "Added the **eventThreats** property to the [timelineEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-timelineevent?view=graph-rest-beta) resource.",
-          "Target": "timelineEvent"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Property",
-          "ChangedApiName": "eventType",
-          "ChangeType": "Addition",
-          "Description": "Added the **eventType** property to the [timelineEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-timelineevent?view=graph-rest-beta) resource.",
           "Target": "timelineEvent"
         },
         {
