@@ -113,7 +113,7 @@ Represents the result of a Cloud PC Azure network connection health check.
 |ssoCheckKerberosConfigurationError|The Microsoft Entra Kerberos is not configured properly, so the user failed to sign in to the Cloud PC through single sign-on (SSO) or receive SSO access to Kerberos-based resources on the network.|
 |internalServerUnknownError|The provisioning failed due to an internal error. Contact customer support.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
-|resourceAvailabilityCheckMissingRegistrationForLocation| Missing registration for location. To fix this issue, register the Azure Network resource provider for your account. |
+|resourceAvailabilityCheckMissingRegistrationForLocation|Missing registration for location. To fix this issue, register the Azure Network resource provider for your account. |
 ## Relationships
 
 None.
