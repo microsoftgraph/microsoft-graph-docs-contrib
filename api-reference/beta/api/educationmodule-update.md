@@ -125,6 +125,7 @@ Content-type: application/json
     "status": "published",
     "createdDateTime": "2023-06-21T17:25:44.1277744Z",
     "lastModifiedDateTime": "2023-06-21T18:21:39.8114768Z",
+    "languageTag": null,
     "id": "ba8e4215-4fb2-4dba-abe7-a8f2585177d3",
     "createdBy": {
         "application": null,

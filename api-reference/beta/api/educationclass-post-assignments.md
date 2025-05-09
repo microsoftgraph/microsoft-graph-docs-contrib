@@ -140,7 +140,7 @@ Content-type: application/json
     "feedbackResourcesFolderUrl": null,
     "createdDateTime": "2022-09-14T21:24:11.8578804Z",
     "lastModifiedDateTime": "2022-09-14T21:24:11.8578831Z",
-    "languageTag": en-US,
+    "languageTag": "en-US",
     "allowStudentsToAddResourcesToSubmission": true,
     "status": "draft",
     "notificationChannelUrl": null,
