@@ -22,7 +22,6 @@ an [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) property 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|grade|String|Grade represents the grade letter from the gradingScheme that corresponds to the given number of points.|
 |maxPoints|Single| Max points possible for this assignment.|
 
 ## Relationships
@@ -43,7 +42,6 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "grade": "String",
   "maxPoints": "Double"
 }
 
