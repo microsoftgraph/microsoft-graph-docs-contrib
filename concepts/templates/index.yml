@@ -36,21 +36,21 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Install Bicep tools
-            url: ./quickstart-install-bicep-tools
+            url: /graph/templates/quickstart-install-bicep-tools
           - text: Create and deploy Bicep files
-            url: ./quickstart-create-bicep-interactive-mode
+            url: /graph/templates/quickstart-create-bicep-interactive-mode
           - text: Zero-touch deployments
-            url: ./quickstart-create-bicep-zero-touch-mode
-          - text: Explore additional samples
-            url: ./quickstart-additional-samples
+            url: /graph/templates/quickstart-create-bicep-zero-touch-mode
+          - text: Explore more samples
+            url: /graph/templates/quickstart-additional-samples
       - linkListType: how-to-guide
         links:
           - text: Deploy without an Azure subscription
-            url: ./how-to-deploy-without-azure-sub
+            url: /graph/templates/how-to-deploy-without-azure-sub
           - text: Onboard existing resources to Bicep 
-            url: ./how-to-reference-existing-resources
+            url: /graph/templates/how-to-reference-existing-resources
           - text: Using dynamic type versioning
-            url: ./how-to-dynamic-types
+            url: /graph/templates/how-to-dynamic-types
 
   # Card
   - title: Explore Microsoft Graph Bicep reference
