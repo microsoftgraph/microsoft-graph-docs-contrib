@@ -50,18 +50,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.processFileMetadata",
-  // Inherited properties from processContentMetadataBase
-  "identifier": "String", // for example, file path or URL
-  "content": { "@odata.type": "microsoft.graph.binaryContent" }, // Often binaryContent
-  "name": "String", // for example, file name
+  "identifier": "String", 
+  "content": { "@odata.type": "microsoft.graph.binaryContent" }, 
+  "name": "String", 
   "correlationId": "String",
   "sequenceNumber": "Int64",
   "length": "Int64",
   "isTruncated": "Boolean",
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)",
-
-  // processFileMetadata properties
   "customProperties": { "@odata.type": "microsoft.graph.customMetadataDictionary" },
   "ownerId": "String"
 }

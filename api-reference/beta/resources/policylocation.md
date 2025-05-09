@@ -41,6 +41,5 @@ The following JSON representation shows the resource.
 {
   "@odata.type": "#microsoft.graph.policyLocation",
   "value": "String"
-  // Derived types specify the @odata.type, For Example, "#microsoft.graph.policyLocationDomain"
 }
 ```

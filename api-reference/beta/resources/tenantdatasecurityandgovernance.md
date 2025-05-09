@@ -26,13 +26,14 @@ Represents the entry point for data security and governance features applicable 
 
 ## Properties
 
-Inherits properties from [dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).
+None. This type primarily serves as a container for actions.
 
 ## Relationships
 
 | Relationship     | Type                                                                                                           | Description                                                                      |
 | :--------------- | :------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
 | protectionScopes | [tenantProtectionScopeContainer](../resources/tenantprotectionscopecontainer.md) | Container for actions related to computing tenant-wide data protection scopes. |
+
 
 ## JSON representation
 
@@ -44,9 +45,6 @@ The following JSON representation shows the resource type.
 }-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantDataSecurityAndGovernance",
-  // Inherited relationships
-  // tenantDataSecurityAndGovernance relationships
-  "protectionScopes": { "@odata.type": "microsoft.graph.tenantProtectionScopeContainer" }
+  "@odata.type": "#microsoft.graph.tenantDataSecurityAndGovernance"
 }
 ```

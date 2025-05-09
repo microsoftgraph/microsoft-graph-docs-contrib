@@ -41,13 +41,9 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.policyBinding",
   "inclusions": [
     { "@odata.type": "microsoft.graph.scopeBase" }
-    // for example, { "@odata.type": "#microsoft.graph.tenantScope", "identity": "All" }
-    // for example, { "@odata.type": "#microsoft.graph.groupScope", "identity": "group-guid" }
   ],
   "exclusions": [
     { "@odata.type": "microsoft.graph.scopeBase" }
-    // for example, { "@odata.type": "#microsoft.graph.userScope", "identity": "user-guid" }
-    // for example, { "@odata.type": "#microsoft.graph.groupScope", "identity": "excluded-group-guid" }
   ]
 }
 ```

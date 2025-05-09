@@ -1,6 +1,6 @@
 ---
-title: "Compute tenantProtectionScopeContainer"
-toc.title: "Compute tenantProtectionScopeContainer"
+title: "tenantProtectionScopeContainer: compute"
+toc.title: "tenantProtectionScopeContainer: compute"
 description: "Compute the tenant-wide data protection policies and actions, including user or group scoping."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,7 +9,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Compute tenantProtectionScopeContainer
+# tenantProtectionScopeContainer: compute
 
 Namespace: microsoft.graph
 

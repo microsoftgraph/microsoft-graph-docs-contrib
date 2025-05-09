@@ -41,6 +41,5 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.scopeBase",
   "identity": "String"
-  // Derived types specify the @odata.type, for example, "#microsoft.graph.userScope"
 }
 ```

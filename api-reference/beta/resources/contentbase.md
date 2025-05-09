@@ -38,6 +38,5 @@ The following JSON representation shows the response.
 ``` json
 {
   "@odata.type": "#microsoft.graph.contentBase"
-  // Derived types like textContent or binaryContent specify the @odata.type and the 'data' property
 }
 ```

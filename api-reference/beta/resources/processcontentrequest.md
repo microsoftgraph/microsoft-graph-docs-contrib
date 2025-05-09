@@ -47,7 +47,6 @@ The following JSON representation shows the resource type.
   "contentEntries": [
     {
       "@odata.type": "microsoft.graph.processContentMetadataBase"
-      // Properties of processContentMetadataBase or derived types (processConversationMetadata, processFileMetadata)
     }
   ],
   "deviceMetadata": {

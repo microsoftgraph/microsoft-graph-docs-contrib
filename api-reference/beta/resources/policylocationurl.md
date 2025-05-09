@@ -39,7 +39,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.policyLocationUrl",
-  // Inherited properties from policyLocation
-  "value": "String" // for example, "https://sharepoint.contoso.com/sites/ProjectAlpha"
+  "value": "String" 
 }
 ```

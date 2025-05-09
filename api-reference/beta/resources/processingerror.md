@@ -41,7 +41,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.processingError",
-  // Inherited properties from classificationError
   "code": "String",
   "message": "String",
   "target": "String",
@@ -51,8 +50,6 @@ The following JSON representation shows the resource type.
   "details": [
     { "@odata.type": "microsoft.graph.classifcationErrorBase" }
   ],
-
-  // processingError properties
   "errorType": "String"
 }
 ```

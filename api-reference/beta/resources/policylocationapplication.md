@@ -39,7 +39,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.policyLocationApplication",
-  // Inherited properties from policyLocation
-  "value": "String" // For example, "83ef198a-0396-4893-9d4f-d36efbffcaaa"
+  "value": "String" 
 }
 ```

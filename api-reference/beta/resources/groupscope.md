@@ -39,6 +39,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.groupScope",
-  "identity": "String" // Group's unique identifier (for example, group-guid)
+  "identity": "String"
 }
 ```
