@@ -1,5 +1,5 @@
 ---
-title: "sensitivityLabel resource type"
+title: "sensitivityLabel derived resource type"
 toc.title: "sensitivityLabel (preview)"
 description: "Represents metadata about a single Microsoft Purview sensitivity label, including cosmetic details and basic properties."
 author: "ArunGedela"
@@ -9,7 +9,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# sensitivityLabel resource type
+# sensitivityLabel derived resource type
 
 Namespace: microsoft.graph
 
@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |[List](../api/datasecurityandgovernance-get-sensitivitylabels.md)|[sensitivityLabel](../resources/sensitivitylabel.md) collection|Get a list of the sensitivityLabel objects and their properties.|
 |[computeInheritance](../api/sensitivitylabel-computeinheritance.md)|[sensitivityLabel](../resources/sensitivitylabel.md)|Calculate the sensitivity label that should be inherited|
 |[computeRightsAndInheritance](../api/sensitivitylabel-computerightsandinheritance.md)|[computeRightsAndInheritanceResult](../resources/computerightsandinheritanceresult.md)|Compute the rights and inheritance for the sensitivity label.|
-|[List usageRightsIncluded](../api/usagerightsincluded-get.md.md)|[usageRightsIncluded](../resources/usagerightsincluded.md) collection|Get the usage rights granted to the calling user.|
+|[List usageRightsIncluded](../api/usagerightsincluded-get.md)|[usageRightsIncluded](../resources/usagerightsincluded.md) collection|Get the usage rights granted to the calling user.|
 
 ## Properties
 
