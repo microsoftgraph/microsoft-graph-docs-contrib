@@ -35,11 +35,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /dataClassification/sensitivityLabels/computeRightsAndInheritance
-POST /me/informationProtection/sensitivityLabels/computeRightsAndInheritance
-POST /dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
-POST /me/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
-POST /computeRightsAndInheritanceResult/sensitivityLabels/computeRightsAndInheritance
 POST /security/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
 ```
 
@@ -78,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/dataClassification/sensitivityLabels/computeRightsAndInheritance
+POST https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
 Content-Type: application/json
 
 {

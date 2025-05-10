@@ -30,16 +30,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 ```http
-POST /security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
+GET /security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
 ```
 
 ## Query parameters
 
-| Parameter      | Type             | Description                                                                                                                                                                                                                                                                                           |
-| :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| contentFormats | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.|
-| locale         | String           | Optional. Overrides the `Accept-Language` header. Specifies the locale for localizable fields. If omitted, uses `Accept-Language` or the tenant default. |
-| labelIds       | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
+| Parameter      | Type                  | Description                                                                                                                                                                                                                                                                                           |
+| :------------- | :-------------------  | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| contentFormats | Collection of Strings | Optional. A collection of comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.|
+| locale         | String                | Optional. Overrides the `Accept-Language` header. Specifies the locale for localizable fields. If omitted, uses `Accept-Language` or the tenant default. |
+| labelIds       | Collection of Strings | Optional. A collection of comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
 
 ## Content Formats
 
@@ -62,7 +62,6 @@ When computing inheritance, only input labels applicable to *at least one* of th
 | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------ |
 | Authorization       | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).                                |
 | Content-Type        | application/json. Required.                                                                                                                 |
-| Accept-Language     | Optional. Specifies the preferred language for the response label details. Format is based on RFC 4646 (for example, `en-US`, `de-DE`).              |
 | Client-Request-Id   | Optional. A client-generated GUID to trace the request. Recommended for troubleshooting.                                                  |
 
 ## Request body
@@ -92,21 +91,12 @@ The following example shows a request to compute the inherited label from three 
   "name": "compute_inheritance_from_labels"
 } -->
 ```http
-POST https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
+GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance(labelIds=["4e4234dd-377b-42a3-935b-0e42f138fa23"],locale='en-US',contentFormats=["File","Email"])
 Authorization: Bearer {token}
 Content-Type: application/json
-Accept-Language: en-US
 Client-Request-Id: c5e4d3b2-a1f0-e9d8-c7b6-a5e4d3b2a1f0
 
-{
-  "labelIds": [
-    "4e4234dd-377b-42a3-935b-0e42f138fa23",  // General (Sensitivity 10, File/Email)
-    "a7a21bba-8197-491f-a5d6-0d0f955397cf",  // Confidential (Sensitivity 20, File/Email/Site)
-    "9d570d42-7b9b-408c-a3ae-79d5f600a7c1"   // Highly Confidential - Email Only (Sensitivity 30, Email)
-  ],
-  "locale": "en-US",
-  "contentFormats": ["File"]
-}
+"4e4234dd-377b-42a3-935b-0e42f138fa23",  // General (Sensitivity 10, File/Email)
 ```
 
 ### Response
@@ -128,14 +118,15 @@ Content-Type: application/json
   "name": "Confidential",
   "description": "Confidential data.",
   "color": "#ff0000",
-  "sensitivity": 20,
-  "tooltip": "Data that requires protection.",
-  "isActive": true,
+  "priority": 0,
+  "toolTip": "Data that requires protection.",
+  "isEnabled": true,
   "isEndpointProtectionEnabled": true,
   "autoTooltip": "",
-  "hasProtection": true,
+  "isSmimeSignEnabled": true,
+  "isSmimeEncryptEnabled": true,
   "actionSource": "manual",
-  "contentFormats": ["File", "Email", "Site", "UnifiedGroup"],
-  "children": [ ]
+  "applicableTo": "email,teamwork,file",
+  "sublabels": []
 }
 ```

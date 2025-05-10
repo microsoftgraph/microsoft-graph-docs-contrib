@@ -35,8 +35,6 @@ Inherits from [entity](../resources/entity.md).
 | actionSource | microsoft.graph.security.labelActionSource | Indicates the source of the action that resulted in the label being applied. Possible values are: `manual`, `automatic`, `recommended`, `none`|
 | applicableTo | microsoft.graph.security.sensitivityLabelTarget | Specifies the workloads where the label can be applied. Possible values: `email`, `site`, `unifiedGroup`, `teamwork`, `file`, `schematizedData`. |
 | applicationMode | microsoft.graph.security.applicationMode | Specifies how the label should be applied or recommended. Possible values are: `manual`, `automatic`, `recommended`. |
-| assignedPolicies | [labelPolicy](../resources/labelpolicy.md) collection | The policies that include this label. |
-| autoLabeling | [autoLabeling](../resources/autolabeling.md) | Configuration for automatically applying the label based on sensitive information types. |
 | autoTooltip | String | The tooltip displayed to users for recommended or automatically applied labels. |
 | color | String | The color associated with the label (for example, hex color code). |
 | customSettings [keyValuePair](../resources/keyvaluepair.md) collection | Collection of custom settings defined for the label. |
@@ -47,7 +45,6 @@ Inherits from [entity](../resources/entity.md).
 | isEnabled | Boolean | `true` if the label is currently enabled; `false` otherwise. |
 | isEndpointProtectionEnabled| Boolean | `true` if the label provides protection settings enforced by endpoint DLP; `false` otherwise. |
 | isScopedToUser | Boolean | Indicates if the label is scoped to specific users or groups (`true`) or available to the entire tenant (`false`). |
-| labelActions | [labelActionBase](../resources/labelactionbase.md) collection | The actions associated with the label, such as applying encryption or markings. |
 | locale | String | The locale associated with the label's localized properties (for example, 'en-US'). Used in context of listing labels scoped to user/locale. |
 | name | String | The unique, non-localized name of the sensitivity label. |
 | priority | Int32 | The priority of the label. Lower numbers indicate higher priority. |
@@ -82,21 +79,7 @@ The following JSON representation shows the resource type.
   "isEnabled": "Boolean",
   "isEndpointProtectionEnabled": "Boolean",
   "isDefault": "Boolean",
-  "applicationMode": "String",
-  "labelActions": [
-    {
-      "@odata.type": "microsoft.graph.encryptWithUserDefinedRights"
-    }
-  ],
-  "assignedPolicies": [
-    {
-      "@odata.type": "microsoft.graph.labelPolicy"
-    }
-  ],
   "priority": "Integer",
-  "autoLabeling": {
-    "@odata.type": "microsoft.graph.autoLabeling"
-  },
   "applicableTo": "String",
   "color": "String",
   "autoTooltip": "String",

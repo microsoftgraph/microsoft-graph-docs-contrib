@@ -39,7 +39,7 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels
 Get labels for a specific user (application permissions):
 
 ```http
-GET /security/dataSecurityAndGovernance/sensitivityLabels?scopeToUser={userPrincipalNameOrObjectId}
+GET /security/dataSecurityAndGovernance/sensitivityLabels?$filter=isScopedToUser eq {trueOrFalse}
 ```
 
 ## Request headers
@@ -54,14 +54,14 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels?scopeToUser={userPrinc
 
 | Parameter      | Type             | Description                                                                                                                                                                                                                                                                                           |
 | :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| scopeToUser    | String           | Optional. Used only with application permissions (`/security/...` path). Specifies the UPN or object ID of the user whose labels should be retrieved. If omitted with application permissions, returns all tenant labels. |
-| locale         | String           | Optional. Overrides the `Accept-Language` header. Specifies the locale for localizable fields. If omitted, uses `Accept-Language` or the tenant default.                                                                                                                                          |
-| contentFormats | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.                                                                    |
-| labelIds       | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
+| isScopedToUser | Boolean          | Optional. Used only with application permissions (`/security/...` path). If value set to 'true' to scope labels to the current user. If omitted with application permissions, returns all tenant labels. |
+| locale         | String           | Optional. Specifies the locale for localizable fields.                                                                                                                                        |
+| applicableTo   | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.                                                                    |
+| id             | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
 
 ## Content Formats
 
-The `contentFormats` parameter filters labels based on their applicability to different types of content or workloads. Possible values include:
+The `applicableTo` parameter filters labels based on their applicability to different types of content or workloads. Possible values include:
 
 | Value          | Description                                                                 |
 | :------------- | :-------------------------------------------------------------------------- |
@@ -88,16 +88,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following example shows a request to get labels for the signed-in user, requesting French localization.
+The following example shows a request to get labels for the signed-in user.
 
 <!-- {
   "blockType": "request",
   "name": "get_sensitivitylabels_user_delegated"
 } -->
 ```http
-GET https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/sensitivityLabels
+GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels
 Authorization: Bearer {token}
-Accept-Language: fr-FR
 Client-Request-Id: f1a2b3c4-d5e6-f7a8-b9c0-d1e2f3a4b5c6
 ```
 
@@ -115,37 +114,37 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata/dataSecurityAndGovernance/sensitivityLabels",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/dataSecurityAndGovernance/sensitivityLabels",
   "value": [
     {
       "id": "4e4234dd-377b-42a3-935b-0e42f138fa23",
       "name": "Général",
       "description": "Données générales, pas pour usage public.",
       "color": "#000000",
-      "sensitivity": 10,
+      "priority": 10,
       "tooltip": "Appliquer cette étiquette aux données générales non publiques.",
-      "isActive": true,
+      "isEnabled": true,
       "isEndpointProtectionEnabled": false,
       "autoTooltip": "",
-      "hasProtection": false,
+      "isSmimeSignEnabled": false,
       "actionSource": "manual",
-      "contentFormats": ["File", "Email"],
-      "children": []
+      "applicableTo": "email,teamwork,file",
+      "sublabels": []
     },
     {
       "id": "a7a21bba-8197-491f-a5d6-0d0f955397cf",
       "name": "Confidentiel",
       "description": "Données confidentielles.",
       "color": "#ff0000",
-      "sensitivity": 20,
+      "priority": 20,
       "tooltip": "Données qui nécessitent une protection.",
-      "isActive": true,
+      "isEnabled": true,
       "isEndpointProtectionEnabled": true,
       "autoTooltip": "",
-      "hasProtection": true,
+      "isSmimeSignEnabled": true,
       "actionSource": "manual",
-      "contentFormats": ["File", "Email", "Site", "UnifiedGroup"],
-      "children": [
+      "applicableTo": "email,teamwork,file",
+      "sublabels": [
          // Child label objects omitted for brevity
       ]
     }
@@ -164,7 +163,7 @@ The following example shows a request to get labels for the tenant, filtered for
   "name": "get_sensitivitylabels_tenant_filtered_app"
 } -->
 ```http
-GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels?contentFormats=File&labelIds=4e4234dd-377b-42a3-935b-0e42f138fa23,b7a21bba-8197-491f-a5d6-0d0f955397ca
+GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels?$filter=applicableTo eq 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')
 Authorization: Bearer {token}
 Client-Request-Id: a0b9c8d7-e6f5-a4b3-c2d1-e0f9a8b7c6d5
 ```
@@ -190,15 +189,16 @@ Content-Type: application/json
       "name": "General",
       "description": "General data, not for public use.",
       "color": "#000000",
-      "sensitivity": 10,
-      "tooltip": "Apply this label to general non-public data.",
-      "isActive": true,
-      "isEndpointProtectionEnabled": false,
+      "priority": 10,
+      "toolTip": ""Apply this label to general non-public data.",
+      "isEnabled": true,
+      "isEndpointProtectionEnabled": true,
       "autoTooltip": "",
-      "hasProtection": false,
+      "isSmimeSignEnabled": true,
+      "isSmimeEncryptEnabled": true,
       "actionSource": "manual",
-      "contentFormats": ["File", "Email"],
-      "children": []
+      "applicableTo": "email,teamwork,file",
+      "sublabels": []
     }
     // Label b7a2... might be omitted if it doesn't support the 'File' content format
   ]
@@ -216,14 +216,14 @@ The following example shows a request to get labels for `adele.vance@contoso.com
   "name": "get_sensitivitylabels_specific_user_app"
 } -->
 ```http
-GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels?scopeToUser=adele.vance@contoso.com
+GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels?$filter=isScopedToUser eq 'true'
 Authorization: Bearer {token}
 Client-Request-Id: 11223344-5566-7788-99aabb-ccddeeff0011
 ```
 
 #### Response
 
-The following example shows the response containing labels scoped to Adele Vance.
+The following example shows the response containing labels scoped to authenticated user in token.
 
 <!-- {
   "blockType": "response",

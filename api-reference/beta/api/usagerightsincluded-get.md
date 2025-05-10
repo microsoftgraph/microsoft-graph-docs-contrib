@@ -32,7 +32,7 @@ This API requires delegated permissions. Application permissions are not support
 ## HTTP request
 
 ```http
-GET /users/{id|userPrincipalName}/dataSecurityAndGovernance/sensitivityLabels/{labelId}/rights
+GET /security/dataSecurityAndGovernance/sensitivityLabels/{labelId}/rights
 ```
 
 ## Request headers
@@ -48,7 +48,7 @@ GET /users/{id|userPrincipalName}/dataSecurityAndGovernance/sensitivityLabels/{l
 | Parameter  | Type   | Description                                                                                                                                                               |
 | :--------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | ownerEmail | String | Optional. The email address of the content owner. This parameter is sometimes required by the underlying Rights Management service depending on the protection template. |
-| userEmail | String | Optional. The email address of the user for whom the rights are being requested. This parameter is sometimes required by the underlying Rights Management service.          |
+| userEmail  | String | Optional. The email address of the user for whom the rights are being requested. This parameter is sometimes required by the underlying Rights Management service.          |
 
 ## Request body
 
@@ -72,7 +72,7 @@ The following example shows a request to get the rights for a specific sensitivi
   "sampleKeys": ["adele.vance@contoso.com", "4e4234dd-377b-42a3-935b-0e42f138fa23"]
 } -->
 ```http
-GET https://graph.microsoft.com/beta/users/adele.vance@contoso.com/dataSecurityAndGovernance/sensitivityLabels/4e4234dd-377b-42a3-935b-0e42f138fa23/rights?ownerEmail=bob@contoso.com
+GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/4e4234dd-377b-42a3-935b-0e42f138fa23/rights?ownerEmail=bob@contoso.com
 Authorization: Bearer {token}
 Accept-Language: en-US
 Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
@@ -93,14 +93,9 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.usageRight)",
-  "value": [
-    "VIEW",
-    "EDIT",
-    "PRINT",
-    "EXTRACT",
-    "VIEWRIGHTSDATA",
-    "DOCEDIT"
-  ]
+  "id": "f306e677-4c14-4136-b2c3-d9c7dd448cc1",
+  "ownerEmail": "bob@contoso.com",
+  "value": "docEdit, edit, forward, print, reply, replyAll, view, extract, viewRightsData, objModel"
 }
 ```
 
