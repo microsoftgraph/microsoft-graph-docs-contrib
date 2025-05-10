@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type for defining actions that are executed when a sensitivity label is applied. Derived types specify concrete actions such as applying encryption, adding headers/footers/watermarks, or protecting groups/sites. Found in the `labelActions` collection of [sensitivityLabel](../resources/sensitivitylabel.md) and [matchingLabel](../resources/matchinglabel.md).
+Abstract base type for actions associated with a sensitivity label, like applying encryption or content markings.
 
 ## Properties
 
@@ -29,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the complex type. Note that this is an abstract type and won't be instantiated directly. Derived types specify the concrete action properties.
+The following JSON representation shows the resource type. Note that this is an abstract type and won't be instantiated directly. Derived types specify the concrete action properties.
 <!-- {
   "blockType": "resource",
   "abstract": true,
@@ -41,6 +41,5 @@ The following JSON representation shows the complex type. Note that this is an a
   "@odata.type": "#microsoft.graph.labelActionBase",
   "name": "String",
   "isEnabled": "Boolean"
-  // Properties are defined in derived types like encryptContent, markContent, etc.
 }
 ```

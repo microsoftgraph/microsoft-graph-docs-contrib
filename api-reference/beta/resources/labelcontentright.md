@@ -29,9 +29,9 @@ Represents the rights associated with a specific piece of content.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|cid|String|The content id.|
+|cid|String|The content identifier.|
 |format|String|The content format.|
-|id|String|The id|
+|id|String|The identifier|
 
 ## Relationships
 

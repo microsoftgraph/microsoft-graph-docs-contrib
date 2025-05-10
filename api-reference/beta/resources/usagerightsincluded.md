@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/usagerightsincluded-get.md.md)|[usageRightsIncluded](../resources/usagerightsincluded.md)|Read the properties and relationships of an usageRightsIncluded object.|
+|[Get](../api/usagerightsincluded-get.md)|[usageRightsIncluded](../resources/usagerightsincluded.md)|Read the properties and relationships of a usageRightsIncluded object.|
 
 ## Properties
 
@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The unique identifier for the label usage rights entity. Key property.|
 |ownerEmail|String|The email of owner label rights.|
 |userEmail|String|The email of user with label user rights.|
-|value|[usageRights](../resources/usagerights.md)|A reference to the associated usage rights. This defines the specific rights for the content.|
+|value|[usageRights](../resources/usagerights.md)|A reference to the associated usage rights. This value defines the specific rights for the content.|
 
 ## Relationships
 

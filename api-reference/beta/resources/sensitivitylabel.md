@@ -43,10 +43,10 @@ Inherits from [entity](../resources/entity.md).
 | id | String | The unique identifier for the sensitivity label. Read-only. |
 | isDefault | Boolean | `true` if the label is the default label for the policy; `false` otherwise. |
 | isEnabled | Boolean | `true` if the label is currently enabled; `false` otherwise. |
-| isEndpointProtectionEnabled| Boolean | `true` if the label provides protection settings enforced by endpoint DLP; `false` otherwise. |
+| isEndpointProtectionEnabled| Boolean | `true` if the label provides protection settings enforced by endpoint Data Loss Prevention; `false` otherwise. |
 | isScopedToUser | Boolean | Indicates if the label is scoped to specific users or groups (`true`) or available to the entire tenant (`false`). |
 | locale | String | The locale associated with the label's localized properties (for example, 'en-US'). Used in context of listing labels scoped to user/locale. |
-| name | String | The unique, non-localized name of the sensitivity label. |
+| name | String | The unique, nonlocalized name of the sensitivity label. |
 | priority | Int32 | The priority of the label. Lower numbers indicate higher priority. |
 | toolTip | String | The tooltip displayed to users when they hover over the label in an application. |
 
