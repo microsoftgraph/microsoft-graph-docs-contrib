@@ -72,7 +72,7 @@ Pronouns serve as substitutes for a person's name in sentences, with gender-neut
 
 ## Why configure profile sources in your organization?
 
-Profile source configuration lets users in an organization identify the origin of profile data shown across Microsoft 365 experiences. Administrators can customize the appearance of the `displayName` and `webUrl` properties in a profile source by configuring a set of alternative translations for the languages supported in their organization.
+Profile source configuration allows users in an organization to identify the origin of profile data shown across Microsoft 365 experiences. Administrators can customize the appearance of the **displayName** and **webUrl** properties in a profile source using a set of alternative translations for the languages supported in their organization.
 
 ## Why integrate with document-based insights?
 
