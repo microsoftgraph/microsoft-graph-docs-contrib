@@ -145,7 +145,6 @@ Content-Type: application/json
       "actionSource": "manual",
       "applicableTo": "email,teamwork,file",
       "sublabels": [
-         // Child label objects omitted for brevity
       ]
     }
   ]
@@ -200,44 +199,7 @@ Content-Type: application/json
       "applicableTo": "email,teamwork,file",
       "sublabels": []
     }
-    // Label b7a2... might be omitted if it doesn't support the 'File' content format
   ]
 }
 ```
 
-### Example 3: Get labels for a specific user (application)
-
-#### Request
-
-The following example shows a request to get labels for `adele.vance@contoso.com` using application permissions.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_sensitivitylabels_specific_user_app"
-} -->
-```http
-GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels?$filter=isScopedToUser eq 'true'
-Authorization: Bearer {token}
-Client-Request-Id: 11223344-5566-7788-99aabb-ccddeeff0011
-```
-
-#### Response
-
-The following example shows the response containing labels scoped to authenticated user in token.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.sensitivityLabel)"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/dataSecurityAndGovernance/sensitivityLabels",
-  "value": [
-    // SensitivityLabel objects relevant to adele.vance@contoso.com
-  ]
-}
-```
