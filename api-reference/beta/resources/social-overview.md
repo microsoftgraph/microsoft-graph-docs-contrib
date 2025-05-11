@@ -37,13 +37,13 @@ The [profile](../resources/profile.md) resource is a rich source of information 
 
 ### Feature: Profile card customization (preview)
 
-Provides administrators the ability to customize the information shown on profile cards used across Microsoft 365 within their organization.
+Provides the ability for an administrator to customize the information shown on the profile card used across Microsoft 365 within their organization.
 
 The [profileCardProperty](../resources/profileCardProperty.md) resource represents an attribute of a user on the Microsoft 365 profile card for an organization to surface in a shared, people experience.
 
 ### Feature: Profile source customization (preview)
 
-Provides the ability for an administrator to customize the display information of a profile source seen by users in organization across Microsoft 365 experiences.
+Provides administrators the ability to customize the display information of a profile source seen by users across an organization in Microsoft 365 experiences.
 
 The [profileSource](../resources/profilesource.md) resource represents the configuration data of a profile source created by an organization administrator. This configuration represents the source of profile data in a way that is understandable to end-users.
 
