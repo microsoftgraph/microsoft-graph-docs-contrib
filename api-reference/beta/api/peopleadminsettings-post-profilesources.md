@@ -46,7 +46,7 @@ POST /admin/people/profileSources
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
-> **Note:** To avoid encoding issues that might malform the payload, use `Content-Type: application/json; charset=utf-8`.
+> **Note:** To avoid encoding issues that malform the payload, use `Content-Type: application/json; charset=utf-8`.
 
 ## Request body
 
