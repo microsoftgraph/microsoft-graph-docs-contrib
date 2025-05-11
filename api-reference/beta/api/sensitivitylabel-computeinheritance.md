@@ -33,12 +33,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
 ```
 
-## Query parameters
+## Filter parameters
 
 | Parameter      | Type                  | Description                                                                                                                                                                                                                                                                                           |
 | :------------- | :-------------------  | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| contentFormats | Collection of Strings | Optional. A collection of comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.|
-| locale         | String                | Optional. Overrides the `Accept-Language` header. Specifies the locale for localizable fields. If omitted, uses `Accept-Language` or the tenant default. |
+| contentFormats | Collection of Strings | Optional. A collection of comma-separated string of content formats (for example, `File`,`Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.|
+| locale         | String                | Optional. Specifies the locale for localizable fields. |
 | labelIds       | Collection of Strings | Optional. A collection of comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
 
 ## Content Formats
@@ -84,14 +84,14 @@ If no applicable label is found based on the input and filters, or if an error o
 
 ### Request
 
-The following example shows a request to compute the inherited label from three input labels, considering only labels applicable to the `File` content format.
+The following example shows a request to compute the inherited label from input label, considering only labels applicable to the `File` content format.
 
 <!-- {
   "blockType": "request",
   "name": "compute_inheritance_from_labels"
 } -->
 ```http
-GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance(labelIds=["4e4234dd-377b-42a3-935b-0e42f138fa23"],locale='en-US',contentFormats=["File","Email"])
+GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance(labelIds=["4e4234dd-377b-42a3-935b-0e42f138fa23"],locale='en-US',contentFormats=["File"])
 Authorization: Bearer {token}
 Content-Type: application/json
 Client-Request-Id: c5e4d3b2-a1f0-e9d8-c7b6-a5e4d3b2a1f0
@@ -101,7 +101,7 @@ Client-Request-Id: c5e4d3b2-a1f0-e9d8-c7b6-a5e4d3b2a1f0
 
 ### Response
 
-The following example shows the response. The "Confidential" label is returned because it's the most sensitive label (`sensitivity: 20`) among the inputs that supports the `File` content format. The "Highly Confidential - Email Only" label (`sensitivity: 30`) is ignored due to the `contentFormats` filter.
+The following example shows the response. The "Confidential" label is returned because it's the most sensitive label among the inputs that supports the `File` content format.
 
 <!-- {
   "blockType": "response",
