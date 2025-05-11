@@ -37,6 +37,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /admin/people/profileSources(sourceId='{profileSourceId}')
 ```
 
+## Function parameters
+
+In the request URL, provide the following parameter with a valid value.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| sourceId  | String | TODO |
+
 ## Optional query parameters
 
 This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
