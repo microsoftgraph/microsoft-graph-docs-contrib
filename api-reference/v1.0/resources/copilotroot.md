@@ -1,11 +1,11 @@
 ---
 title: "copilotRoot resource type"
 description: "A container for Microsoft 365 Copilot admin controls."
-author: "bkeerthivasa"
+author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: resourcePageType
-ms.date: 05/4/2025
+ms.date: 05/08/2025
 ---
 
 # copilotRoot resource type
@@ -21,6 +21,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|admin|[copilotAdmin](../resources/copilotadmin.md)|The Microsoft 365 Copilot admin who can add or modify Copilot settings. Read-only. Nullable.|
 |interactionHistory|[aiInteractionHistory](../resources/aiinteractionhistory.md)|The history of interactions between AI agents and users.|
 |users|[aiUser](../resources/aiuser.md) collection|The list of AI users or agents. Read-only. Nullable.|
 
