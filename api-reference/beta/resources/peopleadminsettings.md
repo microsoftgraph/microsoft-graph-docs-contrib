@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 |itemInsights|[insightsSettings](../resources/insightssettings.md)|Administrator settings that manage the support for item insights in an organization.|
 |profileCardProperties|[profileCardProperty](profilecardproperty.md) collection|A collection of the properties an administrator defined as visible on the Microsoft 365 profile card.|
 |photoUpdateSettings|[photoUpdateSettings](../resources/photoupdatesettings.md)|Administrator settings that manage the support for item photo updates in an organization.|
-|profileSource|[profileSource](../resources/profilesource.md) collection|A collection of profile source settings configured by an administrator in an organization.|
+|profileSources|[profileSource](../resources/profilesource.md) collection|A collection of profile source settings configured by an administrator in an organization.|
 |pronouns|[pronounsSettings](../resources/pronounssettings.md)|Administrator settings that manage the support of pronouns in an organization.|
 |namePronunciation|[namePronunciationSettings](../resources/namepronunciationsettings.md)|Administrator settings that manage the support of name pronunciation in an organization.|
 
