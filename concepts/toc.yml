@@ -779,7 +779,7 @@ items:
     - name: Overview
       href: social-intel-concept-overview.md
     - name: Configure profile source precedence (preview)
-      href: profilePriority-configure-profilepropertysetting.md
+      href: profilepriority-configure-profilepropertysetting.md
     - name: Customize item insights privacy
       href: insights-customize-item-insights-privacy.md
     - name: Customize people insights privacy (preview)
