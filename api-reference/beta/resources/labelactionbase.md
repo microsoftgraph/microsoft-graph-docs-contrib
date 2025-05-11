@@ -20,7 +20,6 @@ Abstract base type for actions associated with a sensitivity label, like applyin
 
 | Property  | Type    | Description                                                                    |
 | :-------- | :------ | :----------------------------------------------------------------------------- |
-| isEnabled | Boolean | Indicates if this specific action is enabled for the label. *Note: Hidden in CSDL.* |
 | name      | String  | The name of the action (for example, "Encrypt", "AddHeader").                         |
 
 ## Relationships
@@ -29,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the resource type. Note that this is an abstract type and won't be instantiated directly. Derived types specify the concrete action properties.
+The following JSON representation shows the resource type. An abstract type that isn't instantiated. Derived types specify the concrete action properties.
 <!-- {
   "blockType": "resource",
   "abstract": true,
