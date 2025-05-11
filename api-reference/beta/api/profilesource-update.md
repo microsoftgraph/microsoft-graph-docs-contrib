@@ -54,9 +54,9 @@ PATCH /admin/people/profileSources(sourceId='{profileSourceId}')
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the profile source intended to inform users on the profile source name.|
+|displayName|String|Name of the profile source intended to inform users about the profile source name.|
 |kind|String|Type of the profile source.|
-|localizations|[profileSourceLocalization](../resources/profilesourcelocalization.md) collection|Alternative localized labels an administrator specifies.|
+|localizations|[profileSourceLocalization](../resources/profilesourcelocalization.md) collection|Alternative localized labels specified by an administrator.|
 |sourceId|String|Profile source identifier used as an alternate key.|
 |webUrl|String|Web URL of the profile source that directs users to the page view of profile data.|
 
