@@ -189,7 +189,7 @@ Content-Type: application/json
       "description": "General data, not for public use.",
       "color": "#000000",
       "priority": 10,
-      "toolTip": ""Apply this label to general non-public data.",
+      "toolTip": "Apply this label to general non-public data.",
       "isEnabled": true,
       "isEndpointProtectionEnabled": true,
       "autoTooltip": "",
