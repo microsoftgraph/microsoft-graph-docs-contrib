@@ -27,7 +27,7 @@ lets you browse, sort, select, filter, or search for persons based on your crite
 
 ## Help users contextualize others in their organization
 
-Feature: Profile (preview)
+### Feature: Profile (preview)
 
 People who seek to contextualize others within their organization commonly view a person's profile or profile card.
 
@@ -35,23 +35,21 @@ The [profile](../resources/profile.md) resource is a rich source of information 
 
 ## Personalize people experiences within your organization
 
-Feature: Profile card customization (preview)
+### Feature: Profile card customization (preview)
 
 Provides the ability for an administrator to customize the information shown on the profile card used across Microsoft 365 within their organization.
 
 The [profileCardProperty](../resources/profileCardProperty.md) resource represents an attribute of a user on the Microsoft 365 profile card for an organization to surface in a shared, people experience.
 
-<br>
-
-Feature: Profile source customization (preview)
+### Feature: Profile source customization (preview)
 
 Provides the ability for an administrator to customize the display information of a profile source seen by users in organization across Microsoft 365 experiences.
 
-The [profileSource](../resources/profileSource.md) resource represents the configuration data of a profile source created by an organization administrator. This configuration represents the source of profile data in some end-user understandable way
+The [profileSource](../resources/profilesource.md) resource represents the configuration data of a profile source created by an organization administrator. This configuration represents the source of profile data in a way that is understandable to end-users.
 
 ## Help users get the most relevant documents for their work
 
-Feature: Document insights
+### Feature: Document insights
 
 Use the insights API to identify the most relevant documents for a user:
 
@@ -62,7 +60,7 @@ Use the insights API to identify the most relevant documents for a user:
 
 ## Manage @-Mentions
 
-Feature: @-mentions (preview)
+### Feature: @-mentions (preview)
 
 Calling out a recipient to notify and get the recipient's attention in a message is a common social gesture.
 The [mention](../resources/mention.md) resource and the Mentions API provide a light-weight mechanism to call out
@@ -91,7 +89,7 @@ Include the next sentence when supporting events.
 
 ## Help users gain insights into their work patterns
 
-Feature: Analytics (preview)
+### Feature: Analytics (preview)
 
 Use the analytics API to get activity statistics and related settings for a user:
 
