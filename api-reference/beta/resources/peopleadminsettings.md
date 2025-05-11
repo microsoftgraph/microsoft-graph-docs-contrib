@@ -30,8 +30,8 @@ Inherits from [entity](../resources/entity.md).
 |[List photo update settings](../api/peopleadminsettings-list-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md) collection|Get the properties of the [photoUpdateSettings](../resources/photoupdatesettings.md) resource for an organization.|
 |[Create photo update setting](../api/peopleadminsettings-post-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md)|Create a new [photoUpdateSettings](../resources/photoupdatesettings.md) for an organization.|
 |[Delete photo update setting](../api/peopleadminsettings-delete-photoupdatesettings.md)|None|Delete a [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
-|[List profileSources](../api/peopleadminsettings-list-profilesources.md)|[profileSource](../resources/profilesource.md) collection|Get a collection of [profileSource](../resources/profilesource.md) objects.|
-|[Create profileSource](../api/peopleadminsettings-post-profilesources.md)|[profileSource](../resources/profilesource.md)|Create a new profileSource object.|
+|[List profile sources](../api/peopleadminsettings-list-profilesources.md)|[profileSource](../resources/profilesource.md) collection|Get a list of the [profileSource](../resources/profilesource.md) objects and their properties, which represent both external data sources and out-of-the-box Microsoft data sources configured for user profiles in an organization.|
+|[Create profile source](../api/peopleadminsettings-post-profilesources.md)|[profileSource](../resources/profilesource.md)|Create a new [profileSource](../resources/profilesource.md) object.|
 
 ## Properties
 
