@@ -962,6 +962,14 @@ Namespace: microsoft.graph.security
 |teamwork|
 |unknownFutureValue|
 
+### applicationMode values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+
 
 <!--
 {
