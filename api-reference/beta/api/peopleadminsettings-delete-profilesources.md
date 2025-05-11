@@ -1,6 +1,6 @@
 ---
 title: "Delete profileSource"
-description: "Remove a profileSource object."
+description: "Delete a profileSource object."
 author: "rwaithera"
 ms.date: 04/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [profileSource](../resources/profilesource.md) object.
+Delete a [profileSource](../resources/profilesource.md) object.
 
 ## Permissions
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-delete-profilesources-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have [People Administrator](https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
+>**Note:** To use delegated permissions for this operation, the signed-in user must have either the [People Administrator](/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
 
 ## HTTP request
 
@@ -38,6 +38,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 DELETE /admin/people/profileSources(sourceId='{profileSourceId}')
 ```
+
+## Function parameters
+
+In the request URL, provide the following parameter with a valid value.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| sourceId  | String | TODO |
 
 ## Request headers
 
