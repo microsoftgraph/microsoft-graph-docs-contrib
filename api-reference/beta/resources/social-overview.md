@@ -16,7 +16,7 @@ Microsoft Graph enables access to useful data about people, their profile, docum
 
 ## Aggregate and extract specific information about people
 
-Feature: People
+### Feature: People
 
 Use the [person](../resources/person.md) resource and the People API to aggregate information
 about a person from across mail, contacts, and social networks. The results are ordered by their
