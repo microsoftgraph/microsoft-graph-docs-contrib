@@ -1,5 +1,5 @@
 ---
-title: "List profileSource objects"
+title: "List profileSources"
 description: "Get a list of the profileSource objects and their properties, which represent both external data sources and out-of-the-box Microsoft data sources configured for user profiles in an organization."
 author: "rwaithera"
 ms.date: 04/30/2025
@@ -8,7 +8,7 @@ ms.subservice: "people"
 doc_type: apiPageType
 ---
 
-# List profileSource objects
+# List profileSources
 
 Namespace: microsoft.graph
 
@@ -39,7 +39,7 @@ GET /admin/people/profileSources
 
 ## Optional query parameters
 
-This method supports the $select, $filter, and $orderBy OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
