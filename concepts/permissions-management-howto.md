@@ -14,6 +14,9 @@ ms.date: 01/23/2025
 
 # Permissions Management API operations for Azure, AWS, and GCP authorization systems
 
+> [!NOTE]
+> Effective April 1, 2025, Microsoft Entra Permissions Management will no longer be available for purchase, and on October 1, 2025, we'll retire and discontinue support of this product. More information can be found [here](https://aka.ms/MEPMretire).
+
 The permissions management APIs enable you to discover permissions assigned to all identities across multiple clouds; request permissions; approve, reject, and cancel permissions requests. This article provides a quick reference guide for [Microsoft Graph API operations](/graph/api/resources/permissions-management-api-overview?view=graph-rest-beta&preserve-view=true) on the supported authorization systems.
 
 ## Get all authorization systems

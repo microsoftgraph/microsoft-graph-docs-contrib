@@ -6,9 +6,9 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 
-| Request type |  Limit per app per tenant |
-| ------------ | ------------------------ |
-| Any | Five requests per 10 seconds |
+| Request type |  Limit per app for all tenants |  Limit per app per tenant |
+| ------------ | ------------------------------ |  ------------------------ |
+| Any | 122 requests per 10 seconds | Five requests per 10 seconds |
 
 The preceding limits apply to the following resources:
 

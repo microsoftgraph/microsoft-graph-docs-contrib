@@ -57,7 +57,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md) object in the response body.
 
-The API can return more HTTP status codes: `403 Forbidden`, `500 Internal Server Error`, or `429 Too Many Requests`.
+This API can also return more HTTP status codes, such as `403 Forbidden`, `500 Internal Server Error`, and `429 Too Many Requests`.
 
 ## Examples
 
@@ -121,8 +121,8 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.copilotAdminLimitedMode",
-    "isEnabledForGroup": "Boolean",
-    "groupId": "String"
+    "isEnabledForGroup": true,
+    "groupId": "4c563cdf-0efa-44c5-a384-dbf57db277df"
   }
 }
 ```
