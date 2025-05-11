@@ -5,14 +5,12 @@ author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: resourcePageType
-ms.date: 11/15/2024
+ms.date: 05/08/2025
 ---
 
 # copilotAdminLimitedMode resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a setting that controls whether users of Microsoft 365 Copilot in Teams meetings can receive responses to sentiment-related prompts. When this setting is enabled, Copilot in Teams meetings doesn't respond to sentiment-related prompts and questions from the user. When disabled, it responds to them. Copilot in Teams meetings currently honors this setting. By default, the setting is disabled.
 
