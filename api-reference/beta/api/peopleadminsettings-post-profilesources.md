@@ -1,6 +1,6 @@
 ---
 title: "Create profileSource"
-description: "Add a new profileSource object."
+description: "Create a new profileSource object."
 author: "rwaithera"
 ms.date: 04/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a new [profileSource](../resources/profilesource.md) object.
+Create a new [profileSource](../resources/profilesource.md) object.
 
 ## Permissions
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-post-profilesources-permissions.md)]
 
->**Note:** To use delegated permissions for this operation, the signed-in user must have the [People Administrator](https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
+>**Note:** To use delegated permissions for this operation, the signed-in user must have the [People Administrator](/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
 
 ## HTTP request
 
@@ -46,7 +46,7 @@ POST /admin/people/profileSources
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
-> **Note:** To avoid encoding issues that malform the payload, use `Content-Type: application/json; charset=utf-8`.
+> **Note:** To avoid encoding issues that might malform the payload, use `Content-Type: application/json; charset=utf-8`.
 
 ## Request body
 
@@ -56,9 +56,9 @@ You can specify the following properties when you create a **profileSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the profile source intended to inform users on the profile source name.|
+|displayName|String|Name of the profile source intended to inform users about the profile source name.|
 |kind|String|Type of the profile source.|
-|localizations|[profileSourceLocalization](../resources/profilesourcelocalization.md) collection|Alternative localized labels an administrator specifies.|
+|localizations|[profileSourceLocalization](../resources/profilesourcelocalization.md) collection|Alternative localized labels specified by an administrator.|
 |sourceId|String|Profile source identifier used as an alternate key.|
 |webUrl|String|Web URL of the profile source that directs users to the page view of profile data.|
 
