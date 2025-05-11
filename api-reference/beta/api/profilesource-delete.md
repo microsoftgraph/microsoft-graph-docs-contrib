@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "peopleadminsettings-delete-profilesources-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-delete-profilesources-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/profilesource-delete-permissions.md)]
 
 >**Note:** To use delegated permissions for this operation, the signed-in user must have the [People Administrator](/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
 
