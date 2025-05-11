@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "peopleadminsettings-delete-profilesources-permissions"
+  "name": "profilesource-delete-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/profilesource-delete-permissions.md)]
