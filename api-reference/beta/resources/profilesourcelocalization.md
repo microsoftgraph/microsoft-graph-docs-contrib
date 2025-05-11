@@ -1,6 +1,6 @@
 ---
 title: "profileSourceLocalization resource type"
-description: "Allows an administrator to customize the appearance of the displayName and webUrl properties in a profile source. The administrator can define a default display name and web url and a set of alternative translations for the languages supported in their organization."
+description: "Represents configurations that allow an administrator to customize the appearance of the displayName and webUrl properties in a profile source."
 author: "rwaithera"
 ms.date: 04/30/2025
 ms.localizationpriority: medium
@@ -14,15 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allows an administrator to customize the appearance of the **displayName** and **webUrl** properties in a profile source. The administrator can define a default display name and web url and a set of alternative translations for the languages supported in their organization.
-
+Represents configurations that allow an administrator to customize the appearance of the **displayName** and **webUrl** properties in a profile source. The administrator can define a default display name and web URL, along with a set of alternative translations for the languages supported in their organization.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Localized displayName.|
+|displayName|String|Localized display name.|
 |languageTag|String|Language locale.|
-|webUrl|String|Localized profile source url.|
+|webUrl|String|Localized profile source URL.|
 
 ## Relationships
 None.
@@ -37,8 +36,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.profileSourceLocalization",
-  "languageTag": "String",
   "displayName": "String",
+  "languageTag": "String",
   "webUrl": "String"
 }
 ```
