@@ -2232,12 +2232,13 @@
         },
         {
           "name": "People admin settings",
-          "resources": [
-            "pronounsSettings",
-            "profileCardProperty",
-            "photoUpdateSettings",
+          [
             "namePronunciationSettings",
-            "profileSource"
+            "photoUpdateSettings",
+            "profileCardProperty",
+            "profilePropertySetting",
+            "profileSource",
+            "pronounsSettings"
           ]
         },
         {
