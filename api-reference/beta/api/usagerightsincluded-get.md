@@ -64,12 +64,12 @@ If the label is not found, doesn't have admin-defined protection, or the user do
 
 ### Request
 
-The following example shows a request to get the rights for a specific sensitivity label for the user `adele.vance@contoso.com`.
+The following example shows a request to get the rights for a specific sensitivity label for the user `4e4234dd-377b-42a3-935b-0e42f138fa23`.
 
 <!-- {
   "blockType": "request",
   "name": "get_rights_for_sensitivitylabel",
-  "sampleKeys": ["adele.vance@contoso.com", "4e4234dd-377b-42a3-935b-0e42f138fa23"]
+  "sampleKeys": ["4e4234dd-377b-42a3-935b-0e42f138fa23"]
 } -->
 ```http
 GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/4e4234dd-377b-42a3-935b-0e42f138fa23/rights?ownerEmail=bob@contoso.com

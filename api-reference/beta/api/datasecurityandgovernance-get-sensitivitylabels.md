@@ -102,7 +102,7 @@ Client-Request-Id: f1a2b3c4-d5e6-f7a8-b9c0-d1e2f3a4b5c6
 
 #### Response
 
-The following example shows the response. Labels are returned in French where available.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -118,11 +118,11 @@ Content-Type: application/json
   "value": [
     {
       "id": "4e4234dd-377b-42a3-935b-0e42f138fa23",
-      "name": "Général",
-      "description": "Données générales, pas pour usage public.",
+      "name": "General",
+      "description": "General data, not for public use.",
       "color": "#000000",
       "priority": 10,
-      "tooltip": "Appliquer cette étiquette aux données générales non publiques.",
+      "tooltip": "Apply this label to non-public general data.",
       "isEnabled": true,
       "isEndpointProtectionEnabled": false,
       "autoTooltip": "",
@@ -133,11 +133,11 @@ Content-Type: application/json
     },
     {
       "id": "a7a21bba-8197-491f-a5d6-0d0f955397cf",
-      "name": "Confidentiel",
-      "description": "Données confidentielles.",
+      "name": "Confidential",
+      "description": "Confidential data.",
       "color": "#ff0000",
       "priority": 20,
-      "tooltip": "Données qui nécessitent une protection.",
+      "tooltip": "Data that requires protection.",
       "isEnabled": true,
       "isEndpointProtectionEnabled": true,
       "autoTooltip": "",
@@ -202,4 +202,3 @@ Content-Type: application/json
   ]
 }
 ```
-
