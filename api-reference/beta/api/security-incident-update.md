@@ -170,16 +170,3 @@ Content-Type: application/json
     "summary": "Defender Experts has identified some malicious activity. This incident has been raised for your awareness and should be investigated as normal."
 }
 ```
-
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Update incidentTask",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "getlistincidenttasks: Unable to locate the corresponding response for this method. Missing or incorrect code block annotation."
-  ]
-}
--->

@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/security/incidentTasks
   "blockType": "response",
   "name": "get_list_incidenttasks",
   "truncated": false,
-  "@odata.type": "collection(#microsoft.graph.security.incidentTask)"
+  "@odata.type": "collection(microsoft.graph.security.incidentTask)"
 }
 -->
 ``` http
