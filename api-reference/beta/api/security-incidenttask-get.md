@@ -1,7 +1,7 @@
 ---
 title: "Get incidentTask"
 description: "Read properties and relationships of an incident task in Microsoft Defender XDR."
-author: "bealfasi"
+author: "BenAlfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -114,9 +114,8 @@ GET https://graph.microsoft.com/beta/security/incidentTasks/213213
 ### Response
 <!-- {
   "blockType": "response",
-  "name": "get_incidenttask",
   "truncated": false,
-  "@odata.type": "#microsoft.graph.security.incidentTask"
+  "@odata.type": "microsoft.graph.security.incidentTask"
 }
 -->
 ``` http
