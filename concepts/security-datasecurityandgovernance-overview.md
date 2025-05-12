@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Purview data security and governance overview (preview)"
-description: "Microsoft Purview Data Security and Governance overview"
+description: "Microsoft Purview data security and governance overview"
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -11,7 +11,7 @@ ms.subservice: "security"
 
 The Microsoft Purview data security and governance APIs allow developers to seamlessly incorporate the protection provided by Microsoft Purview, essential for retrieval-augmented generation (RAG) applications, line of business (LOB) applications, and systems handling sensitive data. These APIs provide programmatic access to the policy evaluation engine of Microsoft Purview, ensuring consistent data security and governance enforcement across various applications.
 
-Data Security and Compliance administrators use Microsoft Purview to manage, protect, and govern their data according to the business risk exposure and regulations relevant to their organization.  
+Data security and compliance administrators use Microsoft Purview to manage, protect, and govern their data according to the business risk exposure and regulations relevant to their organization.  
 They gain insight into data stored and exchanged within their organizations and establish Microsoft Purview policies to enforce controls based on identified risks from users and applications on the tenant.
 
 One such policy is the **Data Discovery policy**, which outlines the types of sensitive data that are of interest, specifies if user data should be collected and visible in Microsoft Purview, and defines the types of data activities permitted per user or at the tenant level. This policy is particularly relevant for custom-built line-of-business applications or vendor-built applications due to the potential risks of data not meeting organizational standards or breaching data boundaries.
@@ -31,7 +31,7 @@ The core scenarios addressed by these APIs are:
 - Data Discovery Policies - Admin configures Discovery Policies scoped to all or selected users on the tenant. If Data collection policy is not setup for user or tenant, [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) will return an empty scope response.
 - Data Loss Prevention (DLP) Policies - Admin configured DLP Policies scoped to all or selected users on the tenant. If a Data Loss Policy is not setup for user or tenant, [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) will allow the app to process content offline and there will be no DLP actions returned through the Process Content API.
 
-## API Flow
+## API flow
 
 - Periodically call and cache the response of [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute).
 - Based on the response of [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute), monitor the combination of location, execution mode, and activities for the user.
@@ -54,7 +54,7 @@ The API enables applications to specify activity types and location types in the
 
 Applications are required to provide device metadata and application metadata to assist in determining the appropriate protection scopes. This information is essential for ascertaining policy decisions relevant to the application's context.
 
-### Execution Mode Behavior
+### Execution mode behavior
 
 Below is the the expected behavior on different values for `executionMode` in the response of the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute).
 
@@ -63,10 +63,10 @@ Below is the the expected behavior on different values for `executionMode` in th
 
 | Execution Mode | Action | Description |
 | -- | -- |--|
-| evaluateInline | None | Caller should invoke Process API and wait for results before letting user activity to proceed |
+| evaluateInline | None | The caller should invoke the Process API and wait for results before letting user activity to proceed. |
 | evalateInline | RestrictAccess | Not expected. Future actions that do not interfere with user activities may be present, e.g. NotifyUser |
-| evaluateOffline | RestrictAccess | Caller should restrict user activity, call Process API independently of taking the action |
-| evaluateOffline | None | Caller should not restrict user activity, call Process API independently |
+| evaluateOffline | restrictAccess | The caller should restrict user activity, call the Process API independently of taking the action. |
+| evaluateOffline | None | The caller should not restrict user activity; call the process API independently. |
 
 ## API reference
 
