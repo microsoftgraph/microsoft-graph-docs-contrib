@@ -55,7 +55,7 @@ Applications are required to provide device metadata and application metadata to
 
 ### Execution mode behavior
 
-Below is the the expected behavior on different values for `executionMode` in the response of the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute).
+There is an expected behavior on different values for `executionMode` in the response of the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute).
 
 1. `evaluateInline`: Wait for [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to produce results before making decision about handling user activity, e.g. Allow or Block. No action.
 1. `evaluateOffline`: Do not wait for [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to return its verdict. Take action, if any with no wait for API response
