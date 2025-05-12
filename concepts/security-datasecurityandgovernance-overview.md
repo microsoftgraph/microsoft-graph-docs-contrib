@@ -60,10 +60,10 @@ Below is the the expected behavior on different values for `executionMode` in th
 1. `evaluateInline`: Wait for [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to produce results before making decision about handling user activity, e.g. Allow or Block. No action.
 1. `evaluateOffline`: Do not wait for [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to return its verdict. Take action, if any with no wait for API response
 
-| Execution Mode | Action | Description |
+| Execution mode | Action | Description |
 | -- | -- |--|
 | evaluateInline | None | The caller should invoke the Process API and wait for results before letting user activity to proceed. |
-| evalateInline | RestrictAccess | Not expected. Future actions that do not interfere with user activities may be present, e.g. NotifyUser |
+| evalateInline | restrictAccess | Not expected. Future actions that do not interfere with user activities may be present, e.g. notifyUser. |
 | evaluateOffline | restrictAccess | The caller should restrict user activity, call the Process API independently of taking the action. |
 | evaluateOffline | None | The caller should not restrict user activity; call the process API independently. |
 
