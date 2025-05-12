@@ -27,18 +27,18 @@ The core scenarios addressed by these APIs are:
 
 ## Microsoft Purview policy requirements
 
-- Data Discovery Policies - Admin configures Discovery Policies scoped to all or selected users on the tenant. If Data collection policy is not setup for user or tenant, [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) will return an empty scope response.
-- Data Loss Prevention (DLP) Policies - Admin configured DLP Policies scoped to all or selected users on the tenant. If a Data Loss Policy is not setup for user or tenant, [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) will allow the app to process content offline and there will be no DLP actions returned through the Process Content API.
+- Data Discovery policies - Admin can configure discovery policies scoped to all or selected users on the tenant. If the data collection policy is not set up for the user or tenant, [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) returns an empty scope response.
+- Data Loss Prevention (DLP) policies - The admin can configure DLP policies scoped to all or selected users on the tenant. If a Data Loss Policy is not set up for the user or tenant, [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) allows the app to process content offline, and there are no DLP actions returned through the process content API.
 
 ## API flow
 
 - Periodically call and cache the response of [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute).
 - Based on the response of [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute), monitor the combination of location, execution mode, and activities for the user.
-- If those combinations are met, then call [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to determing the action to be taken on the activity, Calling [Process content](./graph/api/userdatasecurityandgovernance-processcontent) shall not pause the user's interaction if the execution mode is `evaluateOffline`. But block otherwise.
+- If those combinations are met, call the [Process content](./graph/api/userdatasecurityandgovernance-processcontent) API to determine the action to be taken on the activity. Calling [Process content](./graph/api/userdatasecurityandgovernance-processcontent) shall not pause the user's interaction if the execution mode is `evaluateOffline`, but block otherwise.
 
 ## Protection scope
 
-Applications are required to adhere to Microsoft Purview policies established by Security/Compliance Administrators, which dictate how data and user activities should be managed. This is referred to as protection scopes, and applications should use the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) to understand what has been defined in the context of user interactions.
+Applications are required to adhere to Microsoft Purview policies established by security or compliance administrators, which dictate how data and user activities should be managed. This is referred to as protection scopes, and applications should use the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) to understand what has been defined in the context of user interactions.
 
 - Admin configures Discovery Policies scoped to all tenant or users. These policies defines the data to be classified by applications and user's activity like upload\download file.** Administrators need to define and manage data governance policies that determine how sensitive data is classified and protected within their organization
 - **Admin configures Data Loss Protection (DLP) policies that govern how sensitive data is handled:** Administrators need to define and manage data loss prevention policies that determine how sensitive data is handled within their organization.
