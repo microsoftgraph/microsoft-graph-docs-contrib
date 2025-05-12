@@ -21,9 +21,8 @@ Represents content provided as a plain text string.
 
 | Property | Type   | Description            |
 | :------- | :----- | :--------------------- |
-| data     | String | The text content data. |
+| data     | String | The text content data. Inherits properties from [contentBase](../resources/contentbase.md).|
 
-Inherits properties from [contentBase](../resources/contentbase.md).
 
 ## Relationships
 

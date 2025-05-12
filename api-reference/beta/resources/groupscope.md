@@ -21,7 +21,7 @@ Represents a Microsoft 365 group or distribution list as a scope within policy b
 
 | Property | Type   | Description                                                                                        |
 | :------- | :----- | :------------------------------------------------------------------------------------------------- |
-| identity | String | The identifier for the scope. This is group ID of the group. Inherited properties from [scopeBase](../resources/scopebase.md)  |
+| identity | String | The identifier for the scope. This is the group ID of the group. Inherited from [scopeBase](../resources/scopebase.md).  |
 
 ## Relationships
 

@@ -21,7 +21,7 @@ Represents content provided as a Base64 encoded binary data stream.
 
 | Property | Type   | Description                                      |
 | :------- | :----- | :----------------------------------------------- |
-| data     | Binary | The binary content, encoded as a Base64 string. Inherited from [contentBase](../resources/contentbase.md)|
+| data     | Binary | The binary content, encoded as a Base64 string. Inherited from [contentBase](../resources/contentbase.md).|
 
 ## Relationships
 

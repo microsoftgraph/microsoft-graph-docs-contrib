@@ -21,9 +21,9 @@ Represents an error encountered during content processing or policy evaluation, 
 
 | Property  | Type                                                                                               | Description                                                                                      |
 | :-------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
-| errorType | microsoft.graph.security.contentProcessingErrorType  | Indicates whether the error is considered transient (potentially resolvable by retry) or permanent. Possible values are `transient` and `permanent`  |
+| errorType | microsoft.graph.security.contentProcessingErrorType  | Indicates whether the error is considered transient (potentially resolvable by retry) or permanent. Possible values are `transient` and `permanent`.  Inherits 
+from [classificationError](../resources/classificationerror.md). |
 
-Inherits properties from [classificationError](../resources/classificationerror.md).
 
 ## Relationships
 

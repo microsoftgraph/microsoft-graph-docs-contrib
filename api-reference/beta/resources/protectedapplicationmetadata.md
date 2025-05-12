@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-"Represents metadata about an application whose activities are being governed by an integrated application.
+Represents metadata about an application whose activities governed by an integrated application.
 
 For internal use only. Don't use.
 

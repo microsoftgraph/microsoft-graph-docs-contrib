@@ -281,9 +281,9 @@ The following are some of the most popular requests for working with the Microso
 | List health issues | [List health issues](../api/security-identitycontainer-list-healthissues.md) | [https://graph.microsoft.com/beta/security/identities/healthIssues](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/healthIssues&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | List sensors | [List sensors](../api/security-identitycontainer-list-sensors.md) | [https://graph.microsoft.com/beta/security/identities/sensors](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/sensors&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | **Data security and governance (preview)**|||
-| Compute protection scopes|[Compute Protection Scopes](../api/userprotectionscopecontainer-compute.md)||
-| Process content|[Process Content](../api/userdatasecurityandgovernance-processcontent.md)||
-| Create content activity|[Create Content Activity](../api/activitiescontainer-post-contentactivities.md)||
+| Compute protection scopes|[Compute protection scopes](../api/userprotectionscopecontainer-compute.md)||
+| Process content|[Process content](../api/userdatasecurityandgovernance-processcontent.md)||
+| Create content activity|[Create content activity](../api/activitiescontainer-post-contentactivities.md)||
 
 
 You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
