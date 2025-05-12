@@ -55,13 +55,13 @@ In the request body, provide a JSON object with the following parameters.
 | deviceMetadata        | [deviceMetadata](../resources/devicemetadata.md)                                    | Required. Information about the user's device (type, OS) used for contextual policy evaluation.                                                                    |
 | integratedAppMetadata | [integratedApplicationMetadata](../resources/integratedapplicationmetadata.md)      | Required. Information about the calling application (name, version) integrating with Microsoft Purview.                                                                    |
 | locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations (domains or URLs) the application is interested in. If provided, results are trimmed to policies covering these locations.     |
-| pivotOn               | microsoft.graph.policyPivotProperty                                                 | Optional. Specifies how the results should be aggregated. If omitted or `none`, results might be less aggregated. Possible values are `activity`,`location`, `none`                  |
+| pivotOn               | microsoft.graph.policyPivotProperty                                                 | Optional. Specifies how the results should be aggregated. If omitted or `none`, results might be less aggregated. Possible values are `activity`,`location`, `none`.                  |
 
 ## Response headers
 
 | Name          | Description   |
 | :------------ | :------------ |
-| ETag          | An indicator whether admin configured policy state has changed. If the Etag matches the If-None-Match value and you have cached the results of parsing previous results from this API, there is no need to parse the response and cache the parsed results. Cache this value for calls to [process content](../api/userdatasecurityandgovernance-processcontent.md) |
+| ETag          | An indicator whether the admin-configured policy state has changed. If the Etag matches the If-None-Match value and you have cached the results of parsing previous results from this API, there is no need to parse the response and cache the parsed results. Cache this value for calls to [process content](../api/userdatasecurityandgovernance-processcontent.md). |
 
 ## Response
 
