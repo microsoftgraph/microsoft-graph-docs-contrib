@@ -10,11 +10,11 @@ ms.date: 05/14/2025
 #Customer intent: As a developer integrating with Microsoft Graph, or a tenant administrator managing applications in my tenant, I want to understand tenant level usage quotas applied in Microsoft Graph.
 ---
 
+# Microsoft Graph API usage quotas (preview)
+
 ## Important note
 
 This documentation is preliminary and subject to change as additional capabilities are released.
-
-# Preview: Microsoft Graph usage quotas
 
 Some areas of Microsoft Graph enforce usage quotas. Usage quotas apply at the tenant level and are based on the number of user licenses active for the relevant Microsoft Graph functionality. By default, an individual application can use up to 20% of the tenant's total quota before being throttled. This application quota prevents any single application from consuming all of the tenant's resources unexpectedly.
 
