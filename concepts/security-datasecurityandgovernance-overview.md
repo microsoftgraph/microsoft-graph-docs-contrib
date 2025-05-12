@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Purview Data Security and Governance overview (preview)"
+title: "Microsoft Purview data security and governance overview (preview)"
 description: "Microsoft Purview Data Security and Governance overview"
 author: "ArunGedela"
 ms.date: 04/08/2025
