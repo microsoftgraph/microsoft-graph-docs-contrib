@@ -1,7 +1,7 @@
 ---
 title: "List incidentTasks"
 description: "Get incident tasks in Microsoft Defender XDR that Defender Experts for XDR identified for remediation."
-author: "bealfasi"
+author: "BenAlfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
 ms.subservice: "security"

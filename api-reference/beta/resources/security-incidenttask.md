@@ -1,7 +1,7 @@
 ---
 title: "incidentTask resource type"
 description: "An incident task in Microsoft Defender XDR represents a remediation action identified by Defender Experts for XDR."
-author: "bealfasi"
+author: "BenAlfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
 ms.subservice: "security"

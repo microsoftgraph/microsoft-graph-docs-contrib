@@ -1,7 +1,7 @@
 ---
 title: "Update incident task"
 description: "Update the status of an incident task in Microsoft Defender XDR."
-author: "bealfasi"
+author: "BenAlfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -150,3 +150,4 @@ Content-Type: application/json
     "actionStatus": "notStarted",
     "responseAction": null
 }
+```
