@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/people/profileSources(sourceId='{profileSourceId}')
+DELETE /admin/people/profileSources(sourceId='{sourceId}')
 ```
 
 ## Function parameters
@@ -45,7 +45,7 @@ In the request URL, provide the following parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| sourceId  | String | TODO |
+|sourceId|String|Profile source identifier used as an [alternate key](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/alternate-key.md). Required.|
 
 ## Request headers
 
