@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 GCP  service accounts with privilege escalation
 
 Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).
@@ -63,4 +65,5 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
 

@@ -1,6 +1,6 @@
 ---
-title: "Delete recycleBinItem"
-description: "Delete items from fileStorageContainer recycleBin."
+title: "recycleBinItem: delete"
+description: "Delete recycleBinItem objects permanently from the recycleBin of a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 10/01/2024
 ---
 
-# Delete recycleBinItem
+# recycleBinItem: delete
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete [recycleBinItem](../resources/recyclebinitem.md) objects from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md). Items deleted by this method can't be restored. 
+Delete [recycleBinItem](../resources/recyclebinitem.md) objects permanently from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md). Items deleted by this method can't be restored. 
 
 ## Permissions
 
@@ -48,8 +48,13 @@ POST /storage/fileStorage/containers/{containerId}/recycleBin/items/delete
 
 ## Request body
 
-In the request body, supply a JSON representation of the [recycleBinItem](../resources/recyclebinitem.md) objects to delete. 
+In the request body, supply a JSON representation of the parameters.
 
+The following table shows the parameters that you can use with this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|ids|String collection|The IDs of the [recycleBinItem](../resources/recyclebinitem.md) objects to delete. Required.|
 
 ## Response
 
@@ -83,12 +88,10 @@ Content-Type: application/json
 
 ---
 
----
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

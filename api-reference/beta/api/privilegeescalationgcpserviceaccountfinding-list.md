@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get a list of the [privilegeEscalationGcpServiceAccountFinding](../resources/privilegeescalationgcpserviceaccountfinding.md) objects and their properties.
 
 ## Permissions
@@ -148,3 +150,4 @@ Content-Type: application/json
 }
 
 ```
+

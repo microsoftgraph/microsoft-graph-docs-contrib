@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Read the properties and relationships of an [inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md) in your AWS, Azure, and GCP environments.
 
 
@@ -137,4 +139,5 @@ Content-type: application/json
     }
 }
 ```
+
 

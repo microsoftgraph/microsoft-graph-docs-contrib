@@ -871,7 +871,10 @@
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
-            "engagementAsyncOperation"
+            "engagementAsyncOperation",
+            "engagementRole",
+            "engagementRoleMember",
+            "employeeExperienceUser"
           ]
         },
         {
@@ -1482,14 +1485,21 @@
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
-                "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
-                "qrCodePinAuthenticationMethod",
-                "qrCode",
-                "qrPin"
+                "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
+              ],
+              "childNodes": [
+                {
+                  "name": "QR code authentication",
+                  "resources": [
+                    "qrCodePinAuthenticationMethod",
+                    "qrCode",
+                    "qrPin"
+                  ]
+                }
               ]
             },
             {
-              "name": "Authentication methods policy",
+              "name": "Authentication methods policies",
               "overview": "../../resources/authenticationmethodspolicies-overview.md",
               "shouldSort": true,
               "resources": [
@@ -1506,15 +1516,6 @@
                 "voiceAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration",
                 "qrCodePinAuthenticationMethodConfiguration"
-              ],
-              "childNodes": [
-                {
-                  "name": "QR code authentication",
-                  "resources": [
-                    "QR Code",
-                    "PIN"
-                  ]
-                }
               ]
             },
             {
@@ -1734,7 +1735,7 @@
           ]
         },
         {
-          "name": "Multicloud permissions management (preview)",
+          "name": "Multicloud permissions management (deprecated)",
           "overview": "../../resources/permissions-management-api-overview.md",
           "resources": [
             "authorizationSystem"
@@ -3044,6 +3045,7 @@
                 "onlineMeeting",
                 "externalMeetingRegistration",
                 "meetingRegistration",
+                "callAiInsight",
                 "callRecording",
                 "callTranscript"
               ],
@@ -3065,6 +3067,15 @@
                     }
                   ]
                 }
+              ],
+              "complexTypes": [
+                "actionItem",
+                "aiOnlineMeeting",
+                "callAiInsightViewPoint",
+                "meetingNote",
+                "meetingNoteSubpoint",
+                "mentionEvent",
+                "identitySet"
               ]
             },
             {

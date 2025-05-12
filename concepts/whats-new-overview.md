@@ -17,6 +17,32 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## May 2025: New and generally available
+
+### Teamwork and communications | Calls and online meetings
+
+[Get](/graph/api/copilotadminlimitedmode-get) or [set](/graph/api/copilotadminlimitedmode-update) whether users of Microsoft 365 Copilot in Teams meetings can receive responses to sentiment-related prompts.
+
+## May 2025: New in preview only
+
+### Identity and access | Multicloud permissions management
+
+Effective April 1, 2025, Microsoft Entra Permissions Management APIs are deprecated. On October 1, 2025, we'll retire and discontinue support of the APIs. For more information, see [Important change announcement: Microsoft Entra Permissions Management end of sale and retirement](https://aka.ms/MEPMretire).
+
+### Files
+
+- [Delete](/graph/api/recyclebinitem-delete?view=graph-rest-beta&preserve-view=true) recycle bin items permanently from the recycle bin of a file storage container. 
+- [Restore](/graph/api/recyclebinitem-restore?view=graph-rest-beta&preserve-view=true) recycle bin items from the recycle bin of a file storage container. 
+
+## March 2025: New and generally available
+### Teamwork and communications | Calls and online meetings
+
+Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it's over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight?view=graph-rest-beta&preserve-view=true).
+
+### Teamwork and communications | Messaging
+
+Added support for the `$filter` query parameter by Microsoft Entra user ID when you list channel members using the [List allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API.
+
 ## April 2025: New and generally available
 
 ### Education

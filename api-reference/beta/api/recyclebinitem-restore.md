@@ -1,6 +1,6 @@
 ---
-title: "Restore recycleBinItem"
-description: "Restore recycleBinitem objects to a fileStorageContainer."
+title: "recycleBinItem: restore"
+description: "Restore recycleBinItem objects from the recycleBin of a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 10/01/2024
 ---
 
-# Restore recycleBinItem
+# recycleBinItem: restore
 
 Namespace: microsoft.graph
 
@@ -49,7 +49,13 @@ POST /storage/fileStorage/containers/{containerId}/recycleBin/items/restore
 
 ## Request body
 
-In the request body, supply a JSON representation of the [recycleBinItem](../resources/recyclebinitem.md) objects to restore.
+In the request body, supply a JSON representation of the parameters.
+
+The following table shows the parameters that you can use with this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|ids|String collection|The IDs of the [recycleBinItem](../resources/recyclebinitem.md) objects to restore. Required.|
 
 ## Response
 
