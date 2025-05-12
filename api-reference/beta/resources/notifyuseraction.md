@@ -43,10 +43,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.notifyUserAction",
-  // Inherited properties from dlpActionInfo
   "action": "notifyUser",
 
-  // notifyUserAction properties
   "recipients": [
     "String"
   ],
