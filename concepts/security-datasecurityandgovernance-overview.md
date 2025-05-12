@@ -11,20 +11,19 @@ ms.subservice: "security"
 
 The Microsoft Purview data security and governance APIs allow developers to seamlessly incorporate the protection provided by Microsoft Purview, essential for retrieval-augmented generation (RAG) applications, line of business (LOB) applications, and systems handling sensitive data. These APIs provide programmatic access to the policy evaluation engine of Microsoft Purview, ensuring consistent data security and governance enforcement across various applications.
 
-Data security and compliance administrators use Microsoft Purview to manage, protect, and govern their data according to the business risk exposure and regulations relevant to their organization.  
-They gain insight into data stored and exchanged within their organizations and establish Microsoft Purview policies to enforce controls based on identified risks from users and applications on the tenant.
+Data security and compliance administrators use Microsoft Purview to manage, protect, and govern their data according to the business risk exposure and regulations relevant to their organization.  They gain insight into data stored and exchanged within their organizations and establish Microsoft Purview policies to enforce controls based on identified risks from users and applications on the tenant.
 
-One such policy is the **Data Discovery policy**, which outlines the types of sensitive data that are of interest, specifies if user data should be collected and visible in Microsoft Purview, and defines the types of data activities permitted per user or at the tenant level. This policy is particularly relevant for custom-built line-of-business applications or vendor-built applications due to the potential risks of data not meeting organizational standards or breaching data boundaries.
+The **Data Discovery** policy outlines the types of sensitive data that are of interest, specifies if user data should be collected and visible in Microsoft Purview, and defines the types of data activities permitted per user or at the tenant level. This policy is particularly relevant for custom-built line-of-business applications or vendor-built applications due to the potential risks of data not meeting organizational standards or breaching data boundaries.
 
-Another important policy is the **Data Loss Prevention (DLP) policy** that Microsoft Purview administrators establish to control or restrict the movement of sensitive data within the context of a user or application. For instance, Joyce, a security administrator, implements a DLP policy to limit the use of sensitive data when a user attempts to upload text or files containing sensitive business data into a non-enterprise grade AI application to obtain results or generate new content.
+The **Data Loss Prevention (DLP)** policy that Microsoft Purview administrators establish to control or restrict the movement of sensitive data within the context of a user or application. For instance, Joyce, a security administrator, implements a DLP policy to limit the use of sensitive data when a user attempts to upload text or files containing sensitive business data into a non-enterprise-grade AI application to obtain results or generate new content.
 
 ## Scenarios
 
 The core scenarios addressed by these APIs are:
 
 - **Retrieve protection scope for a user or tenant** - Applications must learn how specific user data should be processed or protected before allowing an interaction. This ensures necessary controls are in place to prevent data loss or leakage.
-- **Send user content to Microsoft Purview for processing** - Applications are required to send user activity or data to Microsoft Purview so that compliance administrators can discover sensitive interactions in Microsoft Purview and manage such data to meet regulatory requirements using Microsoft Purview compliance features. This enables Microsoft Purview auditing, DSPM for AI, eDiscovery, Data Lifecycle Management, Communication Compliance and Insider Risk Management solution outcomes on application's data.
-- **Determine if user activity should be allowed or restricted in runtime** - Applications need to determine if user activity should be allowed or restricted at runtime to prevent data loss or leakage of sensitive business content before its too late.
+- **Send user content to Microsoft Purview for processing** - Applications are required to send user activity or data to Microsoft Purview so that compliance administrators can discover sensitive interactions in Microsoft Purview and manage such data to meet regulatory requirements using Microsoft Purview compliance features. This enables Microsoft Purview auditing, DSPM for AI, eDiscovery, Data Lifecycle Management, Communication Compliance, and Insider Risk Management solution outcomes on the application's data.
+- **Determine if user activity should be allowed or restricted in runtime** - Applications need to determine if user activity should be allowed or restricted at runtime to prevent data loss or leakage of sensitive business content before it's too late.
 
 ## Microsoft Purview policy requirements
 
