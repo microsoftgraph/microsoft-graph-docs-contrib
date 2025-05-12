@@ -47,7 +47,7 @@ items:
       href: metered-api-list.md
   - name: Usage quotas
     items:
-    - name: Overview
+    - name: Usage quotas (preview)
       href: usage-quotas.md
   - name: What's new
     href: whats-new-overview.md
