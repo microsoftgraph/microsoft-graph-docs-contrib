@@ -302,7 +302,7 @@ To add custom activity icons in activity feed notifications sent to a user, foll
     }
     ```
 
-For custom activity icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-activity-icons). To try out custom activity icons in activity feed notifications in Teams, see [Graph Activity Feed sample app](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/nodejs).
+For custom activity icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-activity-icons). To try out custom activity icons in activity feed notifications in Teams, see [Graph Activity Feed sample app for JavaScript](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/nodejs) or [Graph Activity Feed sample app for C#](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp).
 
 ## Examples
 
