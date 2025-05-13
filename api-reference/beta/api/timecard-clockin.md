@@ -53,14 +53,17 @@ In the request body, provide a JSON object with the following parameters.
 |isAtApprovedLocation|Boolean|Indicates whether this action happens at an approved location.|
 |notes|[itemBody](../resources/itembody.md)|Notes for the clock in.|
 |atApprovedLocation (deprecated)|Boolean|Indicates whether this action happens at an approved location. This property will be removed by November 27, 2027. Use `isAtApprovedLocation` instead. `atApprovedLocation` and `isAtApprovedLocation` always have the same value, so setting one automatically sets the value for the other. If both are included in the request with different values, the value for `isAtApprovedLocation` takes precedence.|
+|onBehalfOfUserId|string|The ID of the user you are clocking in on behalf of|
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [timeCard](../resources/timeCard.md) object in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Clock in as yourself
+
+#### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -116,7 +119,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -181,6 +184,81 @@ Content-type: application/json
             "displayName": "Jing Jing GuTwo"
         }
     }
+}
+```
+
+### Example 2: Clock in on behalf of another user
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "timecardthis.clockin"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/clockin
+Content-type: application/json
+
+{
+  "isAtApprovedLocation": true,
+  "onBehalfOfUserId": "3f29c8e7-7a41-4d8e-99d6-2b1f76c9421e"
+}
+```
+
+### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.timeCard"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "TCK_95c44dff-bc12-4de2-8a9a-9772e4421eb4",
+  "createdDateTime": "2025-05-07T21:35:36.311Z",
+  "lastModifiedDateTime": "2025-05-07T21:35:36.311Z",
+  "userId": "3f29c8e7-7a41-4d8e-99d6-2b1f76c9421e",
+  "state": "clockedIn",
+  "confirmedBy": "none",
+  "clockOutEvent": null,
+  "notes": null,
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "id": "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2",
+      "displayName": "Alice Bradford"
+    }
+  },
+  "clockInEvent": {
+    "dateTime": "2025-05-07T21:35:36.311Z",
+    "isAtApprovedLocation": true,
+    "notes": null
+  },
+  "breaks": [],
+  "originalEntry": {
+    "clockOutEvent": null,
+    "clockInEvent": {
+      "dateTime": "2025-05-07T21:35:36.311Z",
+      "isAtApprovedLocation": true,
+      "notes": null
+    },
+    "breaks": []
+  },
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "id": "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2",
+      "displayName": "Alice Bradford"
+    }
+  }
 }
 ```
 
