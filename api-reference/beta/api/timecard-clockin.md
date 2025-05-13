@@ -194,7 +194,7 @@ Content-type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "timecardthis.clockin"
+  "name": "timecard-clockin2"
 }
 -->
 ``` http
