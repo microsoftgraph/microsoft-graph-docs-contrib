@@ -67,8 +67,7 @@ There is an expected behavior on different values for `executionMode` in the res
 | evaluateOffline | restrictAccess | The caller should restrict user activity, call the Process API independently of taking the action. |
 | evaluateOffline | None | The caller should not restrict user activity; call the process API independently. |
 
-## API reference
+## Related content
 
-Looking for the API reference for this service?
 
 - [Microsoft Purview data security and governance in Microsoft Graph beta](/graph/api/resources/userdatasecurityandgovernance?view=graph-rest-beta)
