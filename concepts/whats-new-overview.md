@@ -36,7 +36,7 @@ Effective April 1, 2025, Microsoft Entra Permissions Management APIs are depreca
 
 ### Teamwork and communications
 
-[Add custom activity icons in activity feed notifications](graph/teams-send-activityfeednotifications).
+[Add custom activity icons in activity feed notifications](/graph/teams-send-activityfeednotifications).
 
 ### Teamwork and communications | Calls and online meetings
 
