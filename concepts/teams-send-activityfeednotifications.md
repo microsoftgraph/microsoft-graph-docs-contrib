@@ -721,7 +721,6 @@ The following example shows how you can send an activity feed notification to al
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_sendactivitynotification_chatmember_about_event"
