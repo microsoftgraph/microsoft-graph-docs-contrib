@@ -92,6 +92,7 @@ Content-Type: application/json
   "@odata.type": "collection(#microsoft.graph.security.incidentTask)",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.security.incidentTask",
       "id": "213213",
       "incident": {
         "@odata.type": "#microsoft.graph.security.incident",
