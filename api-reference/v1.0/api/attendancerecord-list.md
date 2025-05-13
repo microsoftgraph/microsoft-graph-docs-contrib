@@ -250,7 +250,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#solutions/virtualEvents/webinars('336f94f4-3a81-5130-43e9-88f3-fcb3582cde37')/sessions('a0f934c324b7785c')/attendanceReports('2c2454-7613-4d6e-9c7c-4c8')/attendanceRecords",
-   "value": [
+  "value": [
     {
       "emailAddress": "frederick.cormier@contoso.com",
       "totalAttendanceInSeconds": 322,
@@ -272,7 +272,7 @@ Content-Type: application/json
       "externalRegistrationInformation": {
         "referrer": "Fabrikam",
         "registrationId": "myExternalRegistrationId"
-      },
+      }
     },
     {
       "emailAddress": "lisa.adkins@contoso.com",
