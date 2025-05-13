@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 List the details of inactive roles [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) in AWS authorization systems onboarded to Permissions Management.
 
 ## Permissions
@@ -155,3 +157,4 @@ Content-Type: application/json
   ]
 }
 ```
+

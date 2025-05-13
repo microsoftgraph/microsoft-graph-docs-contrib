@@ -144,6 +144,7 @@ Content-type: application/json
     "membershipRuleProcessingState": "on"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/groups-overview-createdynamicgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

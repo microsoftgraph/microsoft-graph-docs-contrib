@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents identities in Azure including managed identities, service principals, users, groups, and serverless functions.
 
 Inherits from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).
@@ -67,4 +69,5 @@ The following JSON representation shows the resource type.
   "externalId": "String"
 }
 ```
+
 

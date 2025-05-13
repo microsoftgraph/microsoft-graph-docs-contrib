@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 View the count of inactive Azure service principals for the specified authorization systems in your Azure environment.
 
 ## Permissions
@@ -91,4 +93,5 @@ Content-Type: application/json
     "findingsCount": 1
 }
 ```
+
 

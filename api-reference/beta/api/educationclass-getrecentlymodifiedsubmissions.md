@@ -975,6 +975,7 @@ Content-type: application/json
 #### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationclass_getrecentlymodifiedsubmissions_filter_lastModifiedDateTime"
@@ -982,7 +983,41 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime+lt+2025-04-29T15:48:31.3785886Z
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
+
 
 #### Response
 The following example shows the response.
