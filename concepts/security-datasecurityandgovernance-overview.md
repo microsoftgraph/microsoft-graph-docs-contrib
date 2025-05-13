@@ -40,16 +40,16 @@ The core scenarios addressed by these APIs are:
 
 Applications are required to adhere to Microsoft Purview policies established by security or compliance administrators, which dictate how data and user activities should be managed. This is referred to as protection scopes, and applications should use the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) to understand what has been defined in the context of user interactions.
 
-- Admin configures Discovery Policies scoped to all tenant or users. These policies defines the data to be classified by applications and user's activity like upload\download file.** Administrators need to define and manage data governance policies that determine how sensitive data is classified and protected within their organization
+- Admin configures Discovery Policies scoped to all tenants or users. These policies define the data to be classified by applications and users' activity like upload\download file.** Administrators need to define and manage data governance policies that determine how sensitive data is classified and protected within their organization
 - **Admin configures Data Loss Protection (DLP) policies that govern how sensitive data is handled:** Administrators need to define and manage data loss prevention policies that determine how sensitive data is handled within their organization.
 - **List protection scopes for user or tenant:** This API provides a list of protection scopes available for a user or tenant. This is used by applications to determine what activities are subject to monitoring and require passing ongoing activities to the processContent API.
 - **Process activity and content:** This API encapsulates policy processing for a given activity and content. Applications determine if an activity is subject to monitoring based on [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) and pass activity information to the API, which may return actions required to enforce the policy, e.g. Block.
 
 ### Identify protection scopes for a user
 
-User logs into the application and the application needs to determine the protection scopes for the user. The application calls the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) to get the protection scopes for the user.
-
 The API enables applications to specify activity types and location types in the request, thereby limiting the response to only include relevant protection scopes.
+
+Users can log into the application and call the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) to get the protection scopes for each user.
 
 Applications are required to provide device metadata and application metadata to assist in determining the appropriate protection scopes. This information is essential for ascertaining policy decisions relevant to the application's context.
 
@@ -57,8 +57,8 @@ Applications are required to provide device metadata and application metadata to
 
 There is an expected behavior on different values for `executionMode` in the response of the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute).
 
-1. `evaluateInline`: Wait for [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to produce results before making decision about handling user activity, e.g. Allow or Block. No action.
-1. `evaluateOffline`: Do not wait for [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to return its verdict. Take action, if any with no wait for API response
+1. `evaluateInline`: Wait for [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to produce results before making decision about handling user activity, e.g., Allow or Block. No action.
+1. `evaluateOffline`: Do not wait for [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to return its verdict. Take action, if any, with no wait for API response
 
 | Execution mode | Action | Description |
 | -- | -- |--|
@@ -69,5 +69,4 @@ There is an expected behavior on different values for `executionMode` in the res
 
 ## Related content
 
-
-- [Microsoft Purview data security and governance in Microsoft Graph beta](/graph/api/resources/userdatasecurityandgovernance?view=graph-rest-beta)
+[Microsoft Purview data security and governance in Microsoft Graph](/graph/api/resources/userdatasecurityandgovernance?view=graph-rest-beta)
