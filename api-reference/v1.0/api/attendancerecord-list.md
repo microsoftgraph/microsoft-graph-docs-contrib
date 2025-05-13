@@ -192,11 +192,12 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_virtualeventsession_record"
+  "name": "get_virtualeventsession_record",
+  "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd","8d62dd52-4dff-4c75-96a9-f905cc3ff942","b76965d4-0763-496e-9980-b323c5f3aa3b"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendancerecords
+GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports/b76965d4-0763-496e-9980-b323c5f3aa3b/attendanceRecords
 ```
 
 # [C#](#tab/csharp)
