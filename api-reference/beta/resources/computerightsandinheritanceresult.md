@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Represents the result entity for a compute rights and inheritance operation.
 
-This entity provides the output details of the rights and inheritance calculation.
-
 ## Properties
 
 |Property|Type|Description|

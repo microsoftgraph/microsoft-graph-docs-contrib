@@ -2589,45 +2589,38 @@
             "microsoft.graph.security.defaultAuditData"
           ]
         },
-                {
-          "name": "Data security and compliance (preview)",
-          "resources": [
-            "microsoft.graph.autoLabeling",
-            "microsoft.graph.computeRightsAndInheritanceResult",
-            "microsoft.graph.labelActionBase",
-            "microsoft.graph.labelContentRight",
-            "microsoft.graph.labelPolicy",
-            "microsoft.graph.protectedContent",
-            "microsoft.graph.sensitivityLabel",
-            "microsoft.graph.usageRight",
-            "microsoft.graph.usageRightsIncluded"
-          ]
-        },
         {
           "name": "Data security and compliance (preview)",
           "resources": [
             "activitiesContainer",
             "contentActivity",
             "dataSecurityAndGovernance",
+            "labelContentRight",
+            "microsoft.graph.security.sensitivityLabel",
             "tenantDataSecurityAndGovernance",
             "tenantProtectionScopeContainer",
+            "usageRightsIncluded",
             "userDataSecurityAndGovernance",
-            "userProtectionScopeContainer",
+            "userProtectionScopeContainer"
            ],
             "complexTypes": [
               "activityMetadata",
               "aiInteractionPlugin",
+              "autoLabeling",
               "binaryContent",
               "blockAccessAction",
               "classifcationErrorBase",
               "classificationError",
               "classificationInnerError",
+              "computeRightsAndInheritanceResult",
               "contentBase",
               "customMetadataDictionary",
               "deviceMetadata",
               "dlpActionInfo",
               "groupScope",
               "integratedApplicationMetadata",
+              "labelActionBase",
+              "labelPolicy",
               "notifyUserAction",
               "operatingSystemSpecifications",
               "policyBinding",
@@ -2647,6 +2640,7 @@
               "processFileMetadata",
               "processingError",
               "protectedApplicationMetadata",
+              "protectedContent",
               "scopeBase",
               "tenantScope",
               "textContent",
