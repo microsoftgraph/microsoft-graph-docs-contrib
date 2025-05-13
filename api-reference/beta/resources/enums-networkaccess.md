@@ -1,11 +1,11 @@
 ---
 title: "Network Access enum values"
 description: "Microsoft Graph Network Access enumeration values"
-author: "moti-ba"
+author: "miritsadon"
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-global-secure-access"
 doc_type: enumTypes
-ms.date: 03/27/2024
+ms.date: 04/24/2025
 ---
 
 # Network Access Enum Values
@@ -323,7 +323,6 @@ Namespace: microsoft.graph.networkaccess
 |israelCentral|
 |unknownFutureValue|
 
-
 ### status values 
 
 |Member|
@@ -350,6 +349,7 @@ Namespace: microsoft.graph.networkaccess
 |microsoft365|
 |all|
 |unknownFutureValue|
+|microsoft|
 
 ### userType values 
 

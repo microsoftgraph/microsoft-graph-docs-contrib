@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 List the [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) objects and their properties for an Azure authorization system onboarded to Permissions Management..
 
 ## Permissions
@@ -110,3 +112,4 @@ Content-Type: application/json
   ]
 }
 ```
+
