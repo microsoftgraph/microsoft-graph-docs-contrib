@@ -279,10 +279,10 @@ To add custom activity icons in activity feed notifications sent to a user, foll
         },
     ```
 
-    > [!NOTE]
-    > You can't declare more than 50 icons under each activity type.
+> [!NOTE]
+> You can't declare more than 50 icons under each activity type.
 
-    For more information about `allowedIconIds` and `activityIcons`, see [Teams public developer preview app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview#activitiesactivitytypes).
+For more information about `allowedIconIds` and `activityIcons`, see [Teams public developer preview app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview#activitiesactivitytypes).
 
 1. Call the notifications API beta endpoint and include the `iconId` attribute in the payload. The value of the `iconId` must match one of the icon IDs in the `allowedIconIds` for the specified activity type.
 
@@ -314,7 +314,6 @@ The following example shows how you can send an activity feed notification for a
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_sendactivitynotification_for_task_created_in_chat"
@@ -396,7 +395,6 @@ The following example shows how you can send an activity feed notification for a
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_task_created_in_teams"
@@ -483,7 +481,6 @@ The Yammer notification example shown earlier uses a custom topic because Micros
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_customer_task"
@@ -566,7 +563,6 @@ The following example shows how you can send an activity feed notification to al
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_about_event"
@@ -643,7 +639,6 @@ The following example shows how you can send an activity feed notification to al
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_channelmember_about_event"
@@ -798,8 +793,6 @@ The following example shows how to send an activity feed notification to multipl
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamwork_sendactivitynotificationtorecipients"
@@ -895,7 +888,6 @@ This example notifies the team owner to take a short break. Modify the `value` i
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_take_a_break"
