@@ -20,6 +20,7 @@ Represents the result entity for a compute rights and inheritance operation.
 ## Properties
 
 None.
+
 ## Relationships
 
 |Relationship|Type|Description|
