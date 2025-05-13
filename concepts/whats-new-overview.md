@@ -21,8 +21,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Backup storage
 
-- [Restore sessions](/graph/api/resources/restoresessionbase) that are older than one year and in a terminal state are removed.
-- [Restore artifacts](/graph/api/resources/restoreartifactbase) that are older than one year and in a terminal state are removed.
+[Restore sessions](/graph/api/resources/restoresessionbase) and [restore artifacts](/graph/api/resources/restoreartifactbase) that are older than one year and in a terminal state are removed.
 
 ### Teamwork and communications | Calls and online meetings
 
