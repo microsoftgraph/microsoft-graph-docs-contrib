@@ -131,7 +131,7 @@ Content-Type: application/json
   "lastName": "Pham",
   "email": "EmileeMPham@contoso.com",
   "externalRegistrationInformation": {
-    "referrer": "Facebook",
+    "referrer": "Fabrikam",
     "registrationId": "myExternalRegistrationId"
   },
   "registrantVideoOnDemandWebUrl": "https://df.events.teams.microsoft.com/webinars/webinarid/sessions/session1/attendee/registrationId",
