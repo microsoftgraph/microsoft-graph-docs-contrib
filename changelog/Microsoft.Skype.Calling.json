@@ -39,24 +39,6 @@
     {
       "ChangeList": [
         {
-          "Id": "19f26c0a-a4d6-4121-b7da-8d03bd433ec4",
-          "ApiChange": "Property",
-          "ChangedApiName": "externalEventInformation",
-          "ChangeType": "Addition",
-          "Description": "Added the **externalEventInformation** property to the [meetingAttendanceReport](https://learn.microsoft.com/en-us/graph/api/resources/meetingattendancereport?view=graph-rest-1.0) resource for town halls.",
-          "Target": "meetingAttendanceReport"
-        }
-      ],
-      "Id": "19f26c0a-a4d6-4121-b7da-8d03bd433ec4",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2024-12-18T00:00:00Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Calls and online meetings"
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
           "ApiChange": "Property",
           "ChangedApiName": "externalRegistrationInformation",
