@@ -200,6 +200,10 @@ Delta tokens are only valid for a specific period before the client application 
 
 In case the token expires, the service should respond with a 40X-series error with error codes such as `syncStateNotFound`. For more information, see [Error codes in Microsoft Graph](/graph/errors#code-property).
 
+### Directory Extensions
+
+When a change is made to a directory extension property, all directory extension properties of the same data type are returned, regardless of whether they have been changed or not.
+
 ## Combine delta query and change notifications
 
 An app can use Microsoft Graph [change notifications](./webhooks.md) to subscribe to be notified when a specific resource changes. The application can then use delta query to request all changes since the last time it made the request.

@@ -46,7 +46,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the virtual event session. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
-| chatRestrictions | [chatrestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| chatRestrictions | [chatRestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | endDateTime           | [dateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session end time.   |
 | id | String | The unique identifier of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | isEndToEndEncryptionEnabled | Boolean | Indicates whether end-to-end encryption (E2EE) is enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -59,6 +59,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants. Possible values are: `all`, `none`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | startDateTime | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session start time. |
 | subject | String | The subject of the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| videoOnDemandWebUrl | String | The [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 
@@ -147,6 +148,7 @@ The following JSON representation shows the resource type.
   "shareMeetingChatHistoryDefault": "String",
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "String",
+  "videoOnDemandWebUrl": "String",
   "videoTeleconferenceId": "String",
   "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}
 }

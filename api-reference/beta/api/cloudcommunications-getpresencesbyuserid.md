@@ -135,7 +135,8 @@ Content-Length: 1574
          "outOfOfficeSettings":{
             "message":null,
             "isOutOfOffice":false
-         }
+         },
+         "sequenceNumber": "A0129311063"
       },
       {
          "id":"66825e03-7ef5-42da-9069-724602c31f6b",
@@ -144,7 +145,8 @@ Content-Length: 1574
          "outOfOfficeSettings":{
             "message":null,
             "isOutOfOffice":true
-         }
+         },
+         "sequenceNumber": "C0129312363"
       }
    ]
 }
@@ -163,5 +165,3 @@ Content-Length: 1574
   ]
 }
 -->
-
-

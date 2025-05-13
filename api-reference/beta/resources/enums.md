@@ -4243,6 +4243,7 @@ Possible values for user account types (group membership), per Windows definitio
 | federatedSingleFactor |
 | federatedMultiFactor |
 | unknownFutureValue |
+| qrCodePin |
 
 ### baseAuthenticationMethod values
 
@@ -5197,6 +5198,16 @@ Possible values for user account types (group membership), per Windows definitio
 |running|
 |succeeded|
 |failed|
+|unknownFutureValue|
+
+### errorCorrectionLevel values 
+
+|Member|
+|:---|
+|l|
+|m|
+|q|
+|h|
 |unknownFutureValue|
 
 ### protectionSource values 

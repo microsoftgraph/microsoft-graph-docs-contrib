@@ -1551,6 +1551,16 @@ items:
         href: ../../api/phoneauthenticationmethod-disablesmssignin.md
       - name: Enable SMS sign-in
         href: ../../api/phoneauthenticationmethod-enablesmssignin.md
+    - name: Platform credential authentication method
+      items:
+      - name: Platform credential authentication method
+        href: ../../resources/platformcredentialauthenticationmethod.md
+      - name: List
+        href: ../../api/platformcredentialauthenticationmethod-list.md
+      - name: Get
+        href: ../../api/platformcredentialauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/platformcredentialauthenticationmethod-delete.md
     - name: Software OATH
       items:
       - name: Software OATH
@@ -1584,7 +1594,7 @@ items:
         href: ../../api/windowshelloforbusinessauthenticationmethod-get.md
       - name: Delete
         href: ../../api/windowshelloforbusinessauthenticationmethod-delete.md
-  - name: Authentication methods policy
+  - name: Authentication methods policies
     items:
     - name: Overview
       href: ../../resources/authenticationmethodspolicies-overview.md

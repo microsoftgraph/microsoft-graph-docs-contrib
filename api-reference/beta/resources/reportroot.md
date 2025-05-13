@@ -160,7 +160,7 @@ For details about report views and names, see [Microsoft 365 reports - Microsoft
 | [Get storage](../api/reportroot-getoffice365groupsactivitystorage.md)          | Stream      | Get the total storage used across all group mailboxes and group sites.                                                                                 |
 | [Get file counts](../api/reportroot-getoffice365groupsactivityfilecounts.md)   | Stream      | Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group.                           |
 
-### Microsoft Graph API usage
+### Microsoft Graph API usage (preview)
 
 | Method                                            | Return type | Description                                                                    |
 |:--------------------------------------------------|:------------|:-------------------------------------------------------------------------------|

@@ -39,7 +39,7 @@ Defines details of the device that is used for signing in, as defined in [Condit
 |extensionAttribute7|String|Extension attribute.|
 |extensionAttribute8|String|Extension attribute.|
 |extensionAttribute9|String|Extension attribute.|
-|isCompliant|Boolean|Indicates the device compliance status with Mobile Management Device (MDM) policies.|
+|isCompliant|Boolean|Indicates the device compliance status with Mobile Management Device (MDM) policies. Default is `false`.|
 |manufacturer|String|Manufacturer of the device.|
 |mdmAppId|String|Application identifier used to register device into MDM.|
 |model|String|Model of the device.|

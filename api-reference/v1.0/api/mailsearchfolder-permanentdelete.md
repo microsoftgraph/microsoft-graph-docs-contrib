@@ -91,6 +91,10 @@ POST https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM/permanentDele
 [!INCLUDE [sample-code](../includes/snippets/php/mailsearchfolderthispermanentdelete-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/mailsearchfolderthispermanentdelete-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/mailsearchfolderthispermanentdelete-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
