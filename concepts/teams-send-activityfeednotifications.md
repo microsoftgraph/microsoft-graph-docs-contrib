@@ -240,66 +240,68 @@ The following steps show how to add custom activity icons in activity feed notif
 1. Under **activityTypes**, declare a list of **allowedIconIds** for the activity type you want to use custom icons.
 
 1. Declare a list of icons under **activityIcons**. Each icon must be defined with an **id** and **iconFile**. The following example shows a code snippet.
-  ```json
-  "activities": {
-    "activityTypes": [
-      {
-        "type": "announcementPosted",
-        "description": "Announcement Created Activity",
-        "templateText": "Alex Wilbur posted an announcement",
-        "allowedIconIds": [
-          "announcementCreated"
-        ]
-      },
-      {
-       "type": "reaction",
-       "description": "reaction Activity",
-       "templateText": "Adele Vance reacted to your post in channel",
-       "allowedIconIds" : [
-          "likeReaction",
-          "smileReaction"
-        ]
-      }
-    ],
-    "activityIcons": [
-      {
-        "id": "announcementCreated",
-        "iconFile": "announcement.png"
-      },
-      {
-        "id": "likeReaction",
-        "iconFile": "likeReaction.png"
-      },
-      {
-        "id": "smileReaction",
-        "iconFile": "smileReaction.png"
-      }
-    ]
-  }
-  ```
-
-  > [!NOTE]
-  > You can't declare more than 50 icons under each activity type.
   
-  For more information about **allowedIconIds** and **activityIcons**, see [Teams public developer preview app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview#activitiesactivitytypes).
+   ```json
+   "activities": {
+     "activityTypes": [
+       {
+         "type": "announcementPosted",
+         "description": "Announcement Created Activity",
+         "templateText": "Alex Wilbur posted an announcement",
+         "allowedIconIds": [
+           "announcementCreated"
+         ]
+       },
+       {
+        "type": "reaction",
+        "description": "reaction Activity",
+        "templateText": "Adele Vance reacted to your post in channel",
+        "allowedIconIds" : [
+           "likeReaction",
+           "smileReaction"
+         ]
+       }
+     ],
+     "activityIcons": [
+       {
+         "id": "announcementCreated",
+         "iconFile": "announcement.png"
+       },
+       {
+         "id": "likeReaction",
+         "iconFile": "likeReaction.png"
+       },
+       {
+         "id": "smileReaction",
+         "iconFile": "smileReaction.png"
+       }
+     ]
+   }
+   ```
+    
+   > [!NOTE]
+   > You can't declare more than 50 icons under each activity type.
+    
+   For more information about **allowedIconIds** and **activityIcons**, see [Teams public developer preview app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview#activitiesactivitytypes).
 
 1. Call the notifications API beta endpoint and include the **iconId** attribute in the payload. The value of the **iconId** must match one of the icon IDs in the **allowedIconIds** for the specified activity type.
-  ```http
-  POST https://graph.microsoft.com/beta/users/0000000-0000-0000-0000-000000000000/teamwork/sendactivitynotification
   
-  {
-    "topic": {
-      "source": "text",
-      "value": "Loop thread",
-      "webUrl": "https://teams.microsoft.com/l/loopthread/00:000000000000000000000000000.v2"
-    },
-    "activityType": "announcementPosted",
-    "previewText": {
-      "content": "new announcement posted"
-    },
-    "iconId" : "announcementCreated"
-  }
-  ```
+   ```http
+   POST https://graph.microsoft.com/beta/users/0000000-0000-0000-0000-000000000000/teamwork/sendactivitynotification
+   
+   {
+     "topic": {
+       "source": "text",
+       "value": "Loop thread",
+       "webUrl": "https://teams.microsoft.com/l/loopthread/00:000000000000000000000000000.v2"
+     },
+     "activityType": "announcementPosted",
+     "previewText": {
+       "content": "new announcement posted"
+     },
+     "iconId" : "announcementCreated"
+   }
+   ```
 
 For custom activity icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-activity-icons). 
 
