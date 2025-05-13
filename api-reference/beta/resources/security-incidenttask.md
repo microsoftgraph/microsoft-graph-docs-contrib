@@ -51,7 +51,7 @@ The following JSON shows the resource type structure.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "#microsoft.graph.security.incidentTask",
+  "@odata.type": "microsoft.graph.security.incidentTask",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
@@ -75,3 +75,11 @@ The following JSON shows the resource type structure.
     "id": "String"
   }
 }
+```
+
+<!--
+{
+  "type": "#page.annotation",
+  "namespace": "microsoft.graph.security"
+}
+-->
