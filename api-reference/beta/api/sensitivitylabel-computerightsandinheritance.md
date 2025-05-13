@@ -1,6 +1,5 @@
 ---
 title: "sensitivityLabel: computeRightsAndInheritance"
-toc.title: "sensitivityLabel: computeRightsAndInheritance (preview)"
 description: "Computes the rights and inheritance for sensitivity labels based on the input content and labels"
 author: "ArunGedela"
 ms.date: 04/21/2025

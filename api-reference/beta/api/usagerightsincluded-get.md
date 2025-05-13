@@ -1,6 +1,5 @@
 ---
 title: "Get usageRightsIncluded"
-toc.title: "Get usageRightsIncluded (preview)"
 description: "Get the usage rights granted to the calling user for a specific sensitivity label that has admin-defined permissions."
 author: "ArunGedela"
 ms.date: 04/21/2025

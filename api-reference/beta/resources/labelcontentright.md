@@ -29,7 +29,7 @@ Represents the rights associated with a specific piece of content.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|label|[sensitivityLabel](../resources/sensitivitylabel.md)|The sensitivity label applied to the content.|
+|label|[sensitivityLabel](../resources/security-sensitivitylabel.md)|The sensitivity label applied to the content.|
 
 ## JSON representation
 

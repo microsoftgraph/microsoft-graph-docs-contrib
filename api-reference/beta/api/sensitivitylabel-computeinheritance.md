@@ -1,6 +1,5 @@
 ---
 title: "sensitivityLabel: computeInheritance"
-toc.title: "sensitivityLabel: computeInheritance (preview)"
 description: "Calculate the sensitivity label that should be inherited by an output artifact, given a set of sensitivity labels from input or referenced artifacts."
 author: "ArunGedela"
 ms.date: 04/21/2025
@@ -76,7 +75,7 @@ In the request body, supply a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a single [sensitivityLabel](../resources/sensitivitylabel.md) object in the response body, representing the calculated inherited label.
+If successful, this method returns a `200 OK` response code and a single [sensitivityLabel](../resources/security-sensitivitylabel.md) object in the response body, representing the calculated inherited label.
 
 If no applicable label is found based on the input and filters, or if an error occurs (for example, invalid label ID provided), the API might return an error response (for example, `400 Bad Request` or `404 Not Found`) with details in an [error object](/graph/errors).
 

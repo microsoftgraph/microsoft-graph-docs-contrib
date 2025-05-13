@@ -29,8 +29,8 @@ This entity provides the output details of the rights and inheritance calculatio
 |Relationship|Type|Description|
 |:---|:---|:---|
 |contentRights|[labelContentRight](../resources/labelcontentright.md) collection|A collection of content rights entities for the content.|
-|inheritedLabel|[sensitivityLabel](../resources/sensitivitylabel.md)|The sensitivity label that is inherited by the content based on the input labels and content formats.|
-|sensitivityLabels|[sensitivityLabel](../resources/sensitivitylabel.md) collection|A collection of sensitivity labels that are applicable to the content.|
+|inheritedLabel|[sensitivityLabel](../resources/security-sensitivitylabel.md)|The sensitivity label that is inherited by the content based on the input labels and content formats.|
+|sensitivityLabels|[sensitivityLabel](../resources/security-sensitivitylabel.md) collection|A collection of sensitivity labels that are applicable to the content.|
 
 ## JSON representation
 

@@ -1,6 +1,5 @@
 ---
-title: "DataSecurityAndGovernance: sensitivityLabels"
-toc.title: "DataSecurityAndGovernance: sensitivityLabels (preview)"
+title: "dataSecurityAndGovernance: sensitivityLabels"
 description: "Get the list of sensitivity labels available to a specific user or for the entire tenant."
 author: "ArunGedela"
 ms.date: 04/21/2025
@@ -9,7 +8,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# DataSecurityAndGovernance: sensitivityLabels
+# dataSecurityAndGovernance: sensitivityLabels
 
 Namespace: microsoft.graph
 
@@ -80,7 +79,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [sensitivityLabel](../resources/sensitivitylabel.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [sensitivityLabel](../resources/security-sensitivitylabel.md) objects in the response body.
 
 ## Examples
 
