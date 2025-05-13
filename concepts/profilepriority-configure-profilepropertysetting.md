@@ -50,7 +50,7 @@ Content-Type: application/json
       "userOverridePrivacy": null,
       "allowedAudiences": null,
       "prioritizedSourceUrls": [
-        "https://login.microsoftonline.com"
+        "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
       ]
     }
   ]
@@ -69,7 +69,7 @@ Content-Type: application/json
 
 {
   "prioritizedSourceUrls": [
-    "/external/connections/contosohr1"
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')"
   ]
 }
 ```
@@ -88,8 +88,8 @@ Content-type: application/json
   "userOverridePrivacy": null,
   "allowedAudiences": null,
   "prioritizedSourceUrls": [
-    "/external/connections/contosohr1",
-    "https://login.microsoftonline.com"
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
   ]
 }
 ```
@@ -106,8 +106,8 @@ Content-Type: application/json
 
 {
   "prioritizedSourceUrls": [
-    "/external/connections/contosohr2",
-    "/external/connections/contosohr1"
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')"
   ]
 }
 ```
@@ -126,8 +126,8 @@ Content-type: application/json
   "userOverridePrivacy": null,
   "allowedAudiences": null,
   "prioritizedSourceUrls": [
-    "/external/connections/contosohr2",
-    "/external/connections/contosohr1"
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')"
   ]
 }
 ```
@@ -202,7 +202,7 @@ You can use the Microsoft Graph PowerShell module to configure profile precedenc
 ```powershell
 $params = @{
     prioritizedSourceUrls = @(
-        "/external/connections/contosohr1"
+        "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')"
     )
 }
 
@@ -223,8 +223,8 @@ You can use the Microsoft Graph PowerShell module to update the profile source p
 ```powershell
 $params = @{
     prioritizedSourceUrls = @(
-        "/external/connections/contosohr2",
-        "/external/connections/contosohr1"
+        "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
+        "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')"
     )
 }
 

@@ -78,8 +78,8 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.profilePropertySetting",
   "prioritizedSourceUrls": [
-    "/external/connections/contosohr2",
-    "/external/connections/contosohr1"
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')"
   ]
 }
 ```
@@ -105,8 +105,8 @@ Content-Type: application/json
   "userOverridePrivacy": null,
   "allowedAudiences": null,
   "prioritizedSourceUrls": [
-    "/external/connections/contosohr2",
-    "/external/connections/contosohr1"
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')"
   ]
 }
 ```
