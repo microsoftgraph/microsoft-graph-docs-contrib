@@ -46,8 +46,7 @@ Use the new Teams meeting AI insights APIs to get AI-generated insights for a me
 
 Added support for the `$filter` query parameter by Microsoft Entra user ID when you list channel members using the [List allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API.
 
-## April 2025: 
-
+## April 2025: New and generally available
 
 ### Education
 
