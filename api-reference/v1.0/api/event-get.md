@@ -89,7 +89,7 @@ If successful, this method returns a `200 OK` response code and an [event](../re
 
 ### Example 1: Get a specified event
 
-The following gets the specified event. It specifies the following:
+The following example gets the specified event. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties are returned.
