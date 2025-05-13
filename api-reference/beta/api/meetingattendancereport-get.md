@@ -71,7 +71,7 @@ GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attenda
 > [!CAUTION]
 >
 >- The `/meetingAttendanceReport` path is deprecated. Going forward, use the `/attendanceReports` path to retrieve attendance reports for an online meeting.
->- The `/meetingAttendanceReport` path will remain in beta for backward compatibility. However, to get the same response, you need to add the `expand` query option. For details, see the [Optional query parameters](#optional-query-parameters) section.
+>- The `/meetingAttendanceReport` path remains in beta for backward compatibility. However, to get the same response, you need to add the `$expand` query parameter. For more information, see the [Optional query parameters](#optional-query-parameters) section.
 >- The **attendanceRecords** property doesn't return information about a breakout room.
 
 ## Optional query parameters
