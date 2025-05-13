@@ -75,6 +75,7 @@ If successful, this method returns a `201 Created` response code and a [qrCodePi
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_qrcodepinauthenticationmethod_from_",
@@ -97,6 +98,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-qrcodepinauthenticationmethod-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -82,6 +82,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "assignmentId": "String",
   "excusedBy": {"@odata.type":"microsoft.graph.identitySet"},
   "excusedDateTime": "String (timestamp)", 
   "id": "String (identifier)",
