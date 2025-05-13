@@ -7,9 +7,9 @@ ms.localizationpriority: medium
 ms.subservice: "security"
 ---
 
-# Microsoft Purview Data Security and Governance APIs (previw)
+# Microsoft Purview data security and governance APIs (preview)
 
-The Microsoft Purview data security and governance APIs allow developers to seamlessly integrate the robust protection capabilities of Microsoft Purview into their applications. These APIs are essential for **retrieval-augmented generation (RAG)** applications, **line-of-business (LOB)** applications, and systems that handle sensitive data. They provide programmatic access to Microsoft Purview's policy evaluation engine, ensuring consistent enforcement of data security and governance policies across a range of applications.
+The Microsoft Purview data security and governance APIs allow developers to seamlessly integrate the robust protection capabilities of Microsoft Purview into their applications. These APIs are essential for retrieval-augmented generation (RAG) applications, line-of-business (LOB) applications, and systems that handle sensitive data. They provide programmatic access to Microsoft Purview's policy evaluation engine, ensuring consistent enforcement of data security and governance policies across a range of applications.
 
 Data security and compliance administrators use Microsoft Purview to manage, protect, and govern data based on the business risk exposure and regulations relevant to their organization. By leveraging these APIs, administrators gain visibility into the data stored and exchanged within their organization and can establish policies to enforce controls that address identified risks from users and applications within their tenant.
 
