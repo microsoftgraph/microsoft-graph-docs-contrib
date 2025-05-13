@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 When using delegated permissions (`SensitivityLabels.Read`), the API returns labels scoped to the signed-in user.
 
-*When using application permissions (`SensitivityLabels.Read.All`), the API returns all labels for the tenant by default. Use the `scopeToUser` query parameter to retrieve labels for a specific user in application context.
+When using application permissions (`SensitivityLabels.Read.All`), the API returns all labels for the tenant by default. Use the `scopeToUser` query parameter to retrieve labels for a specific user in the application context.
 
 ## HTTP request
 
