@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get details about an [inactiveGroupFinding](../resources/inactivegroupfinding.md) object in AWS, Azure, or GCP environments.
 
 ## Permissions
@@ -136,3 +138,4 @@ Content-Type: application/json
     }
 }
 ```
+

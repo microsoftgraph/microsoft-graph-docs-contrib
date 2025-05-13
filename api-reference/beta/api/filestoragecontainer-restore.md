@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Restore a deleted [fileStorageContainer](../resources/filestoragecontainer.md) from the deleted container collection.  
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

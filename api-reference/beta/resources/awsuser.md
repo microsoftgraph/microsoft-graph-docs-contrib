@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents AWS users.
 
 Inherits from [awsIdentity](../resources/awsidentity.md).
@@ -61,4 +63,5 @@ The following JSON representation shows the resource type.
   "externalId": "String"
 }
 ```
+
 
