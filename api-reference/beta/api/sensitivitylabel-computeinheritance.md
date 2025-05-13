@@ -105,14 +105,14 @@ The following example shows the response. The "Confidential" label is returned b
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sensitivityLabel"
+  "@odata.type": "microsoft.graph.security.sensitivityLabel"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.sensitivityLabel",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.security.sensitivityLabel",
   "id": "a7a21bba-8197-491f-a5d6-0d0f955397cf",
   "name": "Confidential",
   "description": "Confidential data.",

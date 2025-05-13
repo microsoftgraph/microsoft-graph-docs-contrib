@@ -106,7 +106,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.sensitivityLabel)"
+  "@odata.type": "Collection(microsoft.graph.security.sensitivityLabel)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -173,7 +173,7 @@ The following example shows the response containing only the labels matching the
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.sensitivityLabel)"
+  "@odata.type": "Collection(microsoft.graph.security.sensitivityLabel)"
 } -->
 ```http
 HTTP/1.1 200 OK
