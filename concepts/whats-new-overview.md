@@ -34,7 +34,6 @@ Effective April 1, 2025, Microsoft Entra Permissions Management APIs are depreca
 - [Delete](/graph/api/recyclebinitem-delete?view=graph-rest-beta&preserve-view=true) recycle bin items permanently from the recycle bin of a file storage container. 
 - [Restore](/graph/api/recyclebinitem-restore?view=graph-rest-beta&preserve-view=true) recycle bin items from the recycle bin of a file storage container. 
 
-## March 2025: New and generally available
 ### Teamwork and communications | Calls and online meetings
 
 Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it's over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight?view=graph-rest-beta&preserve-view=true).
