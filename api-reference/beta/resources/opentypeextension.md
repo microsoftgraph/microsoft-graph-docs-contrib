@@ -52,6 +52,14 @@ Apply the following limits when you create extension resources on driveItem obje
 - A maximum size of 50 KB per extension.
 - A maximum total size of 50 MB for all extensions across all items.
 
+### Site specific considerations
+
+Apply the following limits when you create extension resources on site objects:
+- A mmaximum character length of 4000 characters for the extension value.
+- A maximum character length of 36 characters for the extension key.
+- A maximum of 100 custom extensions over a site object.
+- A maximum of five custom extensions per app ID.
+
 ### Outlook-specific considerations
 
 Each open extension on an Outlook resource (event, message, or personal contact) is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties). When you create open extensions for Outlook, consider that MAPI named properties are a finite resource in a user's mailbox. When a user's named property quota is exhausted, you can't create anymore named properties for that user. This can result in unexpected behavior from clients that rely on named properties to function.
