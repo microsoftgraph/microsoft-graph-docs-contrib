@@ -89,7 +89,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.incidentTask",
+  "@odata.type": "collection(#microsoft.graph.security.incidentTask)",
   "value": [
     {
       "id": "213213",

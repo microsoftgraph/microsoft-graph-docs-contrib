@@ -123,6 +123,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.type": "#microsoft.graph.security.incidentTask"
     "id": "213213",
     "incident": {
         "id": "123"
