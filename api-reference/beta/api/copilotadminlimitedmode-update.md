@@ -56,21 +56,20 @@ PATCH /copilot/admin/settings/limitedMode
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledForGroup|Boolean|Enables the user to be in limited mode for Copilot in Teams meetings. When copilotLimitedMode=true, users in this mode can ask any questions, but Copilot doesn't respond to certain questions related to inferring emotions, behavior, or judgments. When copilotLimitedMode=false, the current mode for Copilot, it responds to any types of questions grounded to the meeting conversation. The default value is `false`.|
-|groupId|String|The ID of a Microsoft Entra group, of which the value of `isEnabledForGroup` is applied value for its members. The default value is `null`. This parameter is optional. If `isEnabledForGroup` is set to true, the `groupId` value must be provided for the copilotLimitedMode to be enabled for the members of the group.|
+|groupId|String|The ID of a Microsoft Entra group, for which the value of **isEnabledForGroup** is applied. The default value is `null`. If **isEnabledForGroup** is set to `true`, the **groupId** value must be provided for the Copilot limited mode in Teams meetings to be enabled for the members of the group. Optional. |
+|isEnabledForGroup|Boolean|Enables the user to be in limited mode for Copilot in Teams meetings. When `copilotAdminLimitedMode=true`, users in this mode can ask any questions, but Copilot doesn't respond to certain questions related to inferring emotions, behavior, or judgments. When `copilotAdminLimitedMode=false`, it responds to all types of questions grounded to the meeting conversation. The default value is `false`.|
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md) object in the response body.
 
-API can return additional HTTP status codes such as `403 Forbidden`, `500 Internal Server Error`, or `429 Too Many Requests`.
+This API can also return more HTTP status codes, such as `403 Forbidden`, `500 Internal Server Error`, and `429 Too Many Requests`.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_copilotadminlimitedmode"
@@ -82,40 +81,10 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.copilotAdminLimitedMode",
-  "isEnabledForGroup": "Boolean",
-  "groupId": "String"
+  "isEnabledForGroup": true,
+  "groupId": "4c563cdf-0efa-44c5-a384-dbf57db277df"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-copilotadminlimitedmode-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-copilotadminlimitedmode-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-copilotadminlimitedmode-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-copilotadminlimitedmode-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-copilotadminlimitedmode-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-copilotadminlimitedmode-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-copilotadminlimitedmode-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -123,11 +92,19 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.copilotAdminLimitedMode"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
+{
+  "value": {
+    "isEnabledForGroup": true,
+    "groupId": "4c563cdf-0efa-44c5-a384-dbf57db277df"
+  }
+}
 ```
 
