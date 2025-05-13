@@ -7,15 +7,25 @@ ms.localizationpriority: medium
 ms.subservice: "security"
 ---
 
-# Microsoft Purview APIs overview (preview)
+# Microsoft Purview Data Security and Governance APIs (previw)
 
-The Microsoft Purview data security and governance APIs allow developers to seamlessly incorporate the protection provided by Microsoft Purview, essential for retrieval-augmented generation (RAG) applications, line of business (LOB) applications, and systems handling sensitive data. These APIs provide programmatic access to the policy evaluation engine of Microsoft Purview, ensuring consistent data security and governance enforcement across various applications.
+The Microsoft Purview data security and governance APIs allow developers to seamlessly integrate the robust protection capabilities of Microsoft Purview into their applications. These APIs are essential for **retrieval-augmented generation (RAG)** applications, **line-of-business (LOB)** applications, and systems that handle sensitive data. They provide programmatic access to Microsoft Purview's policy evaluation engine, ensuring consistent enforcement of data security and governance policies across a range of applications.
 
-Data security and compliance administrators use Microsoft Purview to manage, protect, and govern their data according to the business risk exposure and regulations relevant to their organization.  They gain insight into data stored and exchanged within their organizations and establish Microsoft Purview policies to enforce controls based on identified risks from users and applications on the tenant.
+Data security and compliance administrators use Microsoft Purview to manage, protect, and govern data based on the business risk exposure and regulations relevant to their organization. By leveraging these APIs, administrators gain visibility into the data stored and exchanged within their organization and can establish policies to enforce controls that address identified risks from users and applications within their tenant.
 
-The **Data Discovery** policy outlines the types of sensitive data that are of interest, specifies if user data should be collected and visible in Microsoft Purview, and defines the types of data activities permitted per user or at the tenant level. This policy is particularly relevant for custom-built line-of-business applications or vendor-built applications due to the potential risks of data not meeting organizational standards or breaching data boundaries.
+## Key policies in Microsoft Purview
 
-The **Data Loss Prevention (DLP)** policy that Microsoft Purview administrators establish to control or restrict the movement of sensitive data within the context of a user or application. For instance, Joyce, a security administrator, implements a DLP policy to limit the use of sensitive data when a user attempts to upload text or files containing sensitive business data into a non-enterprise-grade AI application to obtain results or generate new content.
+### Data discovery policy
+
+The data discovery policy in Microsoft Purview plays a critical role in defining and managing the types of sensitive data that require protection within an organization. This policy determines whether user data should be collected and made visible within Microsoft Purview, and it establishes the types of data activities that are permissible at both the user and tenant levels. 
+
+The **Data Discovery** policy is crucial for organizations, particularly those using custom-built **line-of-business (LOB)** applications or third-party vendor applications. These environments can introduce risks where data may not align with organizational standards or could unintentionally breach data boundaries. The **Data Discovery** policy helps mitigate these risks by ensuring sensitive data is properly identified, protected, and governed, making it a key component in maintaining compliance with data security and governance requirements.
+
+### Data Loss Prevention (DLP) Policy
+
+The **Data Loss Prevention (DLP)** policy in Microsoft Purview enables administrators to control or restrict the movement of sensitive data within specific user or application contexts. DLP policies can help organizations can prevent the unintended exposure of sensitive information. 
+
+For example, a security administrator like Joyce might configure a DLP policy to limit the use of sensitive business data when a user attempts to upload files containing such data into non-enterprise-grade AI applications. This ensures that sensitive data remains protected, aligning with organizational data governance standards and maintaining compliance with internal security policies.
 
 ## Scenarios
 
@@ -40,7 +50,7 @@ The core scenarios addressed by these APIs are:
 
 Applications are required to adhere to Microsoft Purview policies established by security or compliance administrators, which dictate how data and user activities should be managed. This is referred to as protection scopes, and applications should use the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) to understand what has been defined in the context of user interactions.
 
-- Admin configures Discovery Policies scoped to all tenants or users. These policies define the data to be classified by applications and users' activity like upload\download file.** Administrators need to define and manage data governance policies that determine how sensitive data is classified and protected within their organization
+- Admin configures Discovery Policies scoped to all tenants or users. These policies define the data to be classified by applications and users' activity, like upload\download file.** Administrators need to define and manage data governance policies that determine how sensitive data is classified and protected within their organization
 - **Admin configures Data Loss Protection (DLP) policies that govern how sensitive data is handled:** Administrators need to define and manage data loss prevention policies that determine how sensitive data is handled within their organization.
 - **List protection scopes for user or tenant:** This API provides a list of protection scopes available for a user or tenant. This is used by applications to determine what activities are subject to monitoring and require passing ongoing activities to the processContent API.
 - **Process activity and content:** This API encapsulates policy processing for a given activity and content. Applications determine if an activity is subject to monitoring based on [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) and pass activity information to the API, which may return actions required to enforce the policy, e.g. Block.
