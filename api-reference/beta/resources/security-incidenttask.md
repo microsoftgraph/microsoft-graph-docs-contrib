@@ -44,7 +44,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|incident|[incident](../resources/security-incident.md)|Required. The incident that contains this task. Must contain a valid incident ID.|
+|incident|[microsoft.graph.security.incident](../resources/security-incident.md)|Required. The incident that contains this task. Must contain a valid incident ID.|
 
 ## JSON representation
 The following JSON shows the resource type structure.
