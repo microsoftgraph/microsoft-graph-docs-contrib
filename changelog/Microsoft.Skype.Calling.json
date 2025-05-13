@@ -43,7 +43,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "externalEventInformation",
           "ChangeType": "Addition",
-          "Description": "Added the **externalEventInformation** property to the [meetingAttendanceReport](https://learn.microsoft.com/en-us/graph/api/resources/meetingattendancereport?view=graph-rest-beta) resource for town halls.",
+          "Description": "Added the **externalEventInformation** property to the [meetingAttendanceReport](https://learn.microsoft.com/en-us/graph/api/resources/meetingattendancereport?view=graph-rest-1.0) resource for town halls.",
           "Target": "meetingAttendanceReport"
         }
       ],
