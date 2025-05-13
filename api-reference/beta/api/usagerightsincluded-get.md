@@ -98,7 +98,9 @@ Content-Type: application/json
 }
 ```
 
-### Error Response Example (Label Not Found or No Rights)
+### Example 2
+
+Error Response Example (Label Not Found or No Rights)
 
 <!-- {
   "blockType": "response",

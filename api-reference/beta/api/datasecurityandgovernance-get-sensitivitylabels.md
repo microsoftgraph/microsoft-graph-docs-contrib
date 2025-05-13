@@ -1,5 +1,5 @@
 ---
-title: "dataSecurityAndGovernance: sensitivityLabels"
+title: "Get sensitivityLabels"
 description: "Get the list of sensitivity labels available to a specific user or for the entire tenant."
 author: "ArunGedela"
 ms.date: 04/21/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# dataSecurityAndGovernance: sensitivityLabels
+# Get sensitivityLabels
 
 Namespace: microsoft.graph
 
@@ -55,23 +55,8 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels?$filter=isScopedToUser
 | :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | isScopedToUser | Boolean          | Optional. Used only with application permissions (`/security/...` path). If value set to 'true' to scope labels to the current user. If omitted with application permissions, returns all tenant labels. |
 | locale         | String           | Optional. Specifies the locale for localizable fields.                                                                                                                                        |
-| applicableTo   | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.                                                                    |
+| applicableTo   | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. Possible values are `Email`,`File`,`SchematizedData`,`Site`,`Teamwork`,`UnifiedGroup`. |
 | id             | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
-
-## Content Formats
-
-The `applicableTo` parameter filters labels based on their applicability to different types of content or workloads. Possible values include:
-
-| Value          | Description                                                                 |
-| :------------- | :-------------------------------------------------------------------------- |
-| Email          | Labels applicable specifically to emails.                                   |
-| File           | Labels applicable to general files and items (including Copilot outputs). |
-| SchematizedData| Labels applicable to Purview data map assets or other schematized data.   |
-| Site           | Labels applicable to SharePoint sites.                                      |
-| Teamwork       | Labels applicable to Microsoft Teams meetings.                              |
-| UnifiedGroup   | Labels applicable to Microsoft 365 Groups.                                |
-
-Providing multiple values (for example, `File,Email`) returns labels applicable to *either* `File` *or* `Email`.
 
 ## Request body
 

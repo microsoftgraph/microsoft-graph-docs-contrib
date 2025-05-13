@@ -36,24 +36,9 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
 
 | Parameter      | Type                  | Description                                                                                                                                                                                                                                                                                           |
 | :------------- | :-------------------  | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| contentFormats | Collection of Strings | Optional. A collection of comma-separated string of content formats (for example, `File`,`Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. See [Content Formats](#content-formats) for possible values.|
+| applicableTo   | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. Possible values are `Email`,`File`,`SchematizedData`,`Site`,`Teamwork`,`UnifiedGroup`. |
 | locale         | String                | Optional. Specifies the locale for localizable fields. |
 | labelIds       | Collection of Strings | Optional. A collection of comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
-
-## Content Formats
-
-The `contentFormats` parameter filters labels based on their applicability to different types of content or workloads. Possible values include:
-
-| Value          | Description                                                                 |
-| :------------- | :-------------------------------------------------------------------------- |
-| File           | Labels applicable to general files and items (including Copilot outputs). |
-| Email          | Labels applicable specifically to emails.                                   |
-| Site           | Labels applicable to SharePoint sites.                                      |
-| UnifiedGroup   | Labels applicable to Microsoft 365 Groups.                                |
-| Teamwork       | Labels applicable to Microsoft Teams meetings.                              |
-| SchematizedData| Labels applicable to Purview data map assets or other schematized data.   |
-
-When computing inheritance, only input labels applicable to *at least one* of the specified `contentFormats` are considered.
 
 ## Request headers
 
