@@ -41,9 +41,9 @@ The Microsoft Purview APIs help applications manage data protection and complian
 
 Microsoft Purview provides policy enforcement capabilities that enable administrators to control data protection across their organization. The following are the key policy requirements that must be configured:
 
-**Data Discovery Policies** – Administrators can configure discovery policies that apply to all or selected users within the tenant. If a data collection policy is not set for a user or tenant, the [Compute protection scopes](https://learn.microsoft.com/graph/api/userprotectionscopecontainer-compute) API returns an empty scope response.
+**Data Discovery Policies** – Administrators can configure discovery policies that apply to all or selected users within the tenant. If a data collection policy is not set for a user or tenant, the [Compute protection scopes](./userprotectionscopecontainer-compute) API returns an empty scope response.
 
-**Data Loss Prevention (DLP) Policies** – Administrators can configure DLP policies that apply to all or selected users within the tenant. If a Data Loss Prevention policy is not set up for a user or tenant, the [Compute protection scopes](https://learn.microsoft.com/graph/api/userprotectionscopecontainer-compute) API allows the application to process content offline, with no DLP actions returned through the process content API.
+**Data Loss Prevention (DLP) Policies** – Administrators can configure DLP policies that apply to all or selected users within the tenant. If a Data Loss Prevention policy is not set up for a user or tenant, the [Compute protection scopes](/userprotectionscopecontainer-compute) API allows the application to process content offline, with no DLP actions returned through the process content API.
 
 
 ## API Flow for Data Protection and Compliance
