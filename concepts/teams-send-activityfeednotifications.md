@@ -315,6 +315,7 @@ The following example shows how you can send an activity feed notification for a
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_sendactivitynotification_for_task_created_in_chat"
@@ -396,6 +397,7 @@ The following example shows how you can send an activity feed notification for a
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_task_created_in_teams"
@@ -482,6 +484,7 @@ The Yammer notification example shown earlier uses a custom topic because Micros
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_customer_task"
@@ -564,6 +567,7 @@ The following example shows how you can send an activity feed notification to al
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_about_event"
@@ -640,6 +644,7 @@ The following example shows how you can send an activity feed notification to al
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_channelmember_about_event"
@@ -717,6 +722,7 @@ The following example shows how you can send an activity feed notification to al
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_sendactivitynotification_chatmember_about_event"
@@ -794,6 +800,7 @@ The following example shows how to send an activity feed notification to multipl
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamwork_sendactivitynotificationtorecipients"
@@ -889,6 +896,7 @@ This example notifies the team owner to take a short break. Modify the `value` i
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_take_a_break"
@@ -952,8 +960,6 @@ Content-Type: application/json
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/v1/team-sendactivitynotification-take-a-break-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
