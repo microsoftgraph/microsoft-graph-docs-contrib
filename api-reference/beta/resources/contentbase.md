@@ -1,7 +1,7 @@
 ---
 title: "contentBase resource type"
 toc.title: "contentBase resource type (preview)"
-description: "Abstract base type representing the actual content (text or binary) being processed."
+description: "Abstract base type representing the actual content, text, or binary being processed."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing the actual content (text or binary) being processed.
+Abstract base type representing the actual content, text, or binary) being processed.
 
 ## Properties
 

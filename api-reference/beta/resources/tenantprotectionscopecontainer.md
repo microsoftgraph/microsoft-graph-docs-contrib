@@ -25,7 +25,7 @@ Container for tenant-wide protection scope computation actions.
 
 ## Properties
 
-None. This type primarily serves as a container for actions.
+None. 
 
 ## Relationships
 

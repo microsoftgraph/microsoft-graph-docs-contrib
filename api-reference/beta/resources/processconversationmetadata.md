@@ -1,7 +1,7 @@
 ---
 title: "processConversationMetadata resource type"
 toc.title: "processConversationMetadata resource type (preview)"
-description: "Represents metadata for a content entry that is part of a conversation (for example, chat message, AI interaction)."
+description: "Represents metadata for a content entry that is part of a conversation."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents metadata for a content entry that is part of a conversation (for example, chat message, AI interaction). 
+Represents metadata for a content entry that is part of a conversation, for example, a chat message, and an AI interaction. 
 
 ## Properties
 

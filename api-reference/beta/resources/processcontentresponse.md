@@ -1,7 +1,7 @@
 ---
 title: "processContentResponse resource type"
 toc.title: "processContentResponse resource type (preview)"
-description: "Contains the outcome of a `processContent` action or a single result within a `processContentAsync` action."
+description: "Contains the outcome of a processContent action or a single result within a processContentAsync action."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains the outcome of a `processContent` action or a single result within a `processContentAsync` action.
+Contains the outcome of a processContent action or a single result within a processContentAsync action.
 
 ## Properties
 

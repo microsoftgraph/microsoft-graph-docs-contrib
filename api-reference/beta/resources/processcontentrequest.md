@@ -1,7 +1,7 @@
 ---
 title: "processContentRequest resource type"
 toc.title: "processContentRequest resource type (preview)"
-description: "Defines the input payload for the `processContent` and `processContentAsync` actions."
+description: "Defines the input payload for the processContent and processContentAsync actions."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium

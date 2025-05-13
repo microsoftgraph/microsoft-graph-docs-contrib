@@ -26,7 +26,7 @@ Represents the entry point for data security and governance features applicable 
 
 ## Properties
 
-None. This type primarily serves as a container for actions.
+None.
 
 ## Relationships
 

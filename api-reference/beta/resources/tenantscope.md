@@ -1,7 +1,7 @@
 ---
 title: "tenantScope resource type"
 toc-title: "tenantScope resource type (preview)"
-description: "Represents the entire tenant ('All users') as a scope within policy bindings."
+description: "Represents the entire tenant as a scope within policy bindings."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium

@@ -21,7 +21,7 @@ Represents a domain name as a location for data protection policy scoping.
 
 | Property | Type   | Description                                                    |
 | :------- | :----- | :------------------------------------------------------------- |
-| value    | String | The actual value representing the location (for example, "contoso.com") Inherited from [policyLocation](../resources/policylocation.md). |
+| value    | String | The actual value representing the location (for example, "contoso.com"). Inherited from [policyLocation](../resources/policylocation.md). |
 
 ## Relationships
 

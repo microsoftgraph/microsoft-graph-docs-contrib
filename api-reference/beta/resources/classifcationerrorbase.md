@@ -20,11 +20,11 @@ Abstract base type for representing errors that occur during data classification
 ## Properties
 
 | Property   | Type                                                                                             | Description                                                                    |
-| :--------- | :----------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------- |
-| code       | String                                                                                           | A service-defined error code string.                                           |
+| :--------- | :----------------------------------- | :----------------------------------------------------------------------------- |
+| code       | String   | A service-defined error code string.                                           |
 | innerError | [classificationInnerError](../resources/classificationinnererror.md) | Contains more specific, potentially internal error details.                    |
-| message    | String                                                                                           | A human-readable representation of the error.                                  |
-| target     | String                                                                                           | The target of the error (for example, the specific property or item causing the issue). |
+| message    | String      | A human-readable representation of the error.                                  |
+| target     | String   | The target of the error (for example, the specific property or item causing the issue). |
 
 ## Relationships
 
