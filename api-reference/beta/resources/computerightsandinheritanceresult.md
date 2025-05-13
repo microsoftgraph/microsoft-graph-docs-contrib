@@ -27,8 +27,8 @@ Represents the result entity for a compute rights and inheritance operation.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |contentRights|[labelContentRight](../resources/labelcontentright.md) collection|A collection of content rights entities for the content.|
-|inheritedLabel|[[microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md)|The sensitivity label that is inherited by the content based on the input labels and content formats.|
-|sensitivityLabels|[[microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) collection|A collection of sensitivity labels that are applicable to the content.|
+|inheritedLabel|[microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md)|The sensitivity label that is inherited by the content based on the input labels and content formats.|
+|sensitivityLabels|[microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) collection|A collection of sensitivity labels that are applicable to the content.|
 
 ## JSON representation
 
