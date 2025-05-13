@@ -29,53 +29,69 @@ For example, a security administrator like Joyce might configure a DLP policy to
 
 ## Scenarios
 
-The core scenarios addressed by these APIs are:
+The Microsoft Purview APIs help applications manage data protection and compliance throughout various stages of user interaction. The core scenarios addressed by these APIs include:
 
-- **Retrieve protection scope for a user or tenant** - Applications must learn how specific user data should be processed or protected before allowing an interaction. This ensures necessary controls are in place to prevent data loss or leakage.
-- **Send user content to Microsoft Purview for processing** - Applications are required to send user activity or data to Microsoft Purview so that compliance administrators can discover sensitive interactions in Microsoft Purview and manage such data to meet regulatory requirements using Microsoft Purview compliance features. This enables Microsoft Purview auditing, DSPM for AI, eDiscovery, Data Lifecycle Management, Communication Compliance, and Insider Risk Management solution outcomes on the application's data.
-- **Determine if user activity should be allowed or restricted in runtime** - Applications need to determine if user activity should be allowed or restricted at runtime to prevent data loss or leakage of sensitive business content before it's too late.
+**Retrieve protection scope for a user or tenant** – Applications can determine how specific user data should be processed or protected before any interaction takes place, ensuring that necessary controls are in place to prevent data loss or leakage.
+  
+**Send user content to Microsoft Purview for processing** – Applications can send user activity or data to Microsoft Purview, enabling compliance administrators to discover sensitive interactions. This ensures the data is managed to meet regulatory requirements through Microsoft Purview's compliance features, such as auditing, DSPM for AI, eDiscovery, Data Lifecycle Management, Communication Compliance, and Insider Risk Management.
+
+**Determine if user activity should be allowed or restricted at runtime** – Applications can assess whether user activity should be allowed or restricted during runtime, ensuring sensitive business content is protected and preventing data loss or leakage before it happens.
 
 ## Microsoft Purview policy requirements
 
-- Data Discovery policies - Admin can configure discovery policies scoped to all or selected users on the tenant. If the data collection policy is not set up for the user or tenant, [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) returns an empty scope response.
-- Data Loss Prevention (DLP) policies - The admin can configure DLP policies scoped to all or selected users on the tenant. If a Data Loss Policy is not set up for the user or tenant, [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) allows the app to process content offline, and there are no DLP actions returned through the process content API.
+Microsoft Purview provides policy enforcement capabilities that enable administrators to control data protection across their organization. The following are the key policy requirements that must be configured:
+
+**Data Discovery Policies** – Administrators can configure discovery policies that apply to all or selected users within the tenant. If a data collection policy is not set for a user or tenant, the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) API returns an empty scope response.
+
+**Data Loss Prevention (DLP) Policies** – Administrators can configure DLP policies that apply to all or selected users within the tenant. If a Data Loss Prevention policy is not set up for a user or tenant, the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) API allows the application to process content offline, with no DLP actions returned through the process content API.
 
 ## API flow
 
-- Periodically call and cache the response of [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute).
-- Based on the response of [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute), monitor the combination of location, execution mode, and activities for the user.
-- If those combinations are met, call the [Process content](./graph/api/userdatasecurityandgovernance-processcontent) API to determine the action to be taken on the activity. Calling [Process content](./graph/api/userdatasecurityandgovernance-processcontent) shall not pause the user's interaction if the execution mode is `evaluateOffline`, but block otherwise.
+## API Flow for Data Protection and Compliance
+
+The following API flow outlines the steps for managing data protection and compliance using Microsoft Graph APIs:
+
+1. **Periodically call and cache the response of the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) API** – Regularly call this API to retrieve the protection scope for a user or tenant and store the response for further processing.
+
+2. **Monitor the combination of location, execution mode, and user activities** – Based on the response from the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) API, monitor key factors such as user location, execution mode, and ongoing activities to assess compliance.
+
+3. **Call the [Process content](./graph/api/userdatasecurityandgovernance-processcontent) API** – If specific conditions are met, call the [Process content](./graph/api/userdatasecurityandgovernance-processcontent) API to determine the appropriate action on the activity. If the execution mode is set to `evaluateOffline`, calling this API doesn't pause the user's interaction, but if the mode is not `evaluateOffline`, the user's interaction is blocked until the content is processed.
 
 ## Protection scope
 
-Applications are required to adhere to Microsoft Purview policies established by security or compliance administrators, which dictate how data and user activities should be managed. This is referred to as protection scopes, and applications should use the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) to understand what has been defined in the context of user interactions.
+Applications must adhere to the data protection and governance policies established by security and compliance administrators within an organization. These policies define how data and user activities should be managed and are collectively referred to as **protection scopes**. Applications use the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) API to understand the protection measures applied to user interactions.
 
-- Admin configures Discovery Policies scoped to all tenants or users. These policies define the data to be classified by applications and users' activity, like upload\download file.** Administrators need to define and manage data governance policies that determine how sensitive data is classified and protected within their organization
-- **Admin configures Data Loss Protection (DLP) policies that govern how sensitive data is handled:** Administrators need to define and manage data loss prevention policies that determine how sensitive data is handled within their organization.
-- **List protection scopes for user or tenant:** This API provides a list of protection scopes available for a user or tenant. This is used by applications to determine what activities are subject to monitoring and require passing ongoing activities to the processContent API.
-- **Process activity and content:** This API encapsulates policy processing for a given activity and content. Applications determine if an activity is subject to monitoring based on [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) and pass activity information to the API, which may return actions required to enforce the policy, e.g. Block.
+Key aspects of protection scopes include:
 
-### Identify protection scopes for a user
+- **Discovery policies** – Administrators configure discovery policies that apply to all tenants or specific users. These policies determine the classification of data and monitor user activities, such as file uploads or downloads. Administrators must define and manage data governance policies to ensure sensitive data is classified and protected appropriately within the organization.
 
-The API enables applications to specify activity types and location types in the request, thereby limiting the response to only include relevant protection scopes.
+- **Data Loss Prevention (DLP) Policies** – Administrators configure DLP policies to govern how sensitive data is handled within the organization. These policies ensure that sensitive data is protected during various activities and interactions.
 
-Users can log into the application and call the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) to get the protection scopes for each user.
+- **Listing protection scopes for users or tenants** – The [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) API provides a list of available protection scopes for a user or tenant. Applications use this information to determine which activities are subject to monitoring and which require passing ongoing activities to the `processContent` API.
 
-Applications are required to provide device metadata and application metadata to assist in determining the appropriate protection scopes. This information is essential for ascertaining policy decisions relevant to the application's context.
+- **Processing activity and content** – The [Process content](./graph/api/userdatasecurityandgovernance-processcontent) API enables applications to process activities and content based on defined protection scopes. When an activity is subject to monitoring, the application passes the activity information to the API, which returns actions required to enforce policies, such as blocking certain actions.
+
+### Identifying protection scopes for a user
+
+The [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) API allows applications to determine the protection scopes for users, ensuring that appropriate data governance and security policies are applied. Specifying activity types and location types in the request allows applications to limit the response to only include relevant protection scopes.
+
+When users log into an application, the API retrieves the protection scopes specific to each user. To accurately determine these scopes, applications must provide device and application metadata. This information plays a crucial role in making the correct policy decisions based on the application's context, ensuring compliance with organizational security and governance requirements.
 
 ### Execution mode behavior
 
-There is an expected behavior on different values for `executionMode` in the response of the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute).
+The behavior of the `executionMode` field in the response from the [Compute protection scopes](./graph/api/userprotectionscopecontainer-compute) API defines how applications should handle user activities based on protection scope decisions. The execution mode can influence how an application interacts with the [Process content](./graph/api/userdatasecurityandgovernance-processcontent) API and whether it needs to wait for results before deciding on the user’s activity.
 
-1. `evaluateInline`: Wait for [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to produce results before making decision about handling user activity, e.g., Allow or Block. No action.
-1. `evaluateOffline`: Do not wait for [Process content](./graph/api/userdatasecurityandgovernance-processcontent) to return its verdict. Take action, if any, with no wait for API response
+The following execution modes and their behaviors are expected:
 
-| Execution mode | Action | Description |
-| -- | -- |--|
-| evaluateInline | None | The caller should invoke the Process API and wait for results before letting user activity to proceed. |
-| evalateInline | restrictAccess | Not expected. Future actions that do not interfere with user activities may be present, e.g. notifyUser. |
-| evaluateOffline | restrictAccess | The caller should restrict user activity, call the Process API independently of taking the action. |
-| evaluateOffline | None | The caller should not restrict user activity; call the process API independently. |
+1. **`evaluateInline`**: The application should wait for the [Process content](./graph/api/userdatasecurityandgovernance-processcontent) API to produce results before deciding whether to allow or block the user activity. No action should be taken until the API response is received.
+2. **`evaluateOffline`**: The application should not wait for the [Process content](./graph/api/userdatasecurityandgovernance-processcontent) API's verdict and can take action (e.g., restrict access) immediately without waiting for the API response.
+
+| Execution Mode    | Action        | Description                                                                 |
+| ----------------- | ------------ | --------------------------------------------------------------------------- |
+| `evaluateInline`  | None         | The caller should invoke the Process content API and wait for results before allowing user activity to proceed. |
+| `evaluateInline`  | restrictAccess | Not expected. Future actions that do not interfere with user activities may be present (e.g., notify user). |
+| `evaluateOffline` | restrictAccess | The caller should restrict user activity and call the process content API independently of taking action. |
+| `evaluateOffline` | None         | The caller should not restrict user activity and should call the process content API independently. |
 
 ## Related content
 
