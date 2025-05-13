@@ -65,7 +65,7 @@ Describes the information protection label that details how to properly apply a 
 | Relationship | Type                                                          | Description                                                                        |
 | :----------- | :------------------------------------------------------------ | :--------------------------------------------------------------------------------- |
 | rights       | [usageRightsIncluded](../resources/usagerightsincluded.md)    | Represents the usage rights (permissions) configured for the label, if any.|
-| sublabels    | [sensitivityLabel](../resources/security-sensitivitylabel.md) collection| The collection of sublabels associated with the label.|
+| sublabels    | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) collection| The collection of sublabels associated with the label.|
 
 ## JSON representation
 
