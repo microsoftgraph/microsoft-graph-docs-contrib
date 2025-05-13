@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -45,7 +45,7 @@ Device type.
 |chromeOS|21|ChromeOS device.|
 |linux|22|Linux device.|
 |visionOS|23|Indicates managed device is running on visionOS operating system.|
-|tvos|24|Indicates managed device is running on tvOS operating system.|
+|tvOS|24|Indicates managed device is running on tvOS operating system.|
 |blackberry|100|Blackberry.|
 |palm|101|Palm.|
 |unknown|255|Represents that the device type is unknown.|
