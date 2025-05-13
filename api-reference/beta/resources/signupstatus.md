@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the status (Success or Failure) of the sign-up step
+Provides the status (Success or Failure) of the sign-up step.
 
 
 
