@@ -45,7 +45,6 @@ Microsoft Purview provides policy enforcement capabilities that enable administr
 
 **Data Loss Prevention (DLP) Policies** – Administrators can configure DLP policies that apply to all or selected users within the tenant. If a Data Loss Prevention policy is not set up for a user or tenant, the [Compute protection scopes](/graph/api/userprotectionscopecontainer-compute) API allows the application to process content offline, with no DLP actions returned through the process content API.
 
-## API flow
 
 ## API Flow for Data Protection and Compliance
 
