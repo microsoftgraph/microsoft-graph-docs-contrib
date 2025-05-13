@@ -221,73 +221,74 @@ For details about what topics are supported for each scenario, see the specific 
 ## Custom activity icons in activity feed notifications
 
 > [!NOTE]
-> Custom activity icons in activity feed notifications are available only in [Teams public developer preview](/microsoftteams/platform/resources/dev-preview/developer-preview-intro?tabs=new-teams-client).
+> Custom activity icons in activity feed notifications are available only in the [Teams public developer preview](/microsoftteams/platform/resources/dev-preview/developer-preview-intro?tabs=new-teams-client).
 
 You can use custom activity icons in activity feed notifications to help users easily identify the source and intent of the notification. A notification with a custom activity icon adds a unique and Teams-native feel, enhancing user engagement with your app. The following screenshot shows an activity feed notification with a custom activity icon:
 
-:::image type="content" source="images/custom-icon-notification-activity-feed.png" alt-text="Screenshot shows activity feed notifications with custom activity icons." lightbox="images/custom-icon-notification-activity-feed.png":::
+:::image type="content" source="images/custom-icon-notification-activity-feed.png" alt-text="The screenshot shows activity feed notifications with custom activity icons." lightbox="images/custom-icon-notification-activity-feed.png":::
 
 ### Add custom activity icons in activity feed notifications
 
-To add custom activity icons in activity feed notifications sent to a user, follow these steps:
+The following steps show how to add custom activity icons in activity feed notifications sent to a user:
 
-1. Add the custom activity icons in the Teams app package. The following screenshot is an example:
+1. Add the custom activity icons in the Teams app package. The following screenshot shows an example:
 
-    :::image type="content" source="images/teams-app-package-custom-icon.png" alt-text="Screenshot shows a Teams app package with custom activity icons for activity feed notifications." lightbox="images/teams-app-package-custom-icon.png":::
+    :::image type="content" source="images/teams-app-package-custom-icon.png" alt-text="The screenshot shows a Teams app package with custom activity icons for activity feed notifications." lightbox="images/teams-app-package-custom-icon.png":::
 
-1. Under `manifest.json`, set `manifestVersion` to `devPreview`.
+1. Under *manifest.json*, set **manifestVersion** to `devPreview`.
 
-1. Under `activityTypes`, declare a list of `allowedIconIds` for the activity type you want to use custom icons for.
+1. Under **activityTypes**, declare a list of **allowedIconIds** for the activity type you want to use custom icons.
 
-1. Declare a list of icons under `activityIcons`. Each icon must be defined with an `id` and `iconFile`. Here's an example code snippet:
+1. Declare a list of icons under **activityIcons**. Each icon must be defined with an **id** and **iconFile**. The following example shows a code snippet:
 
     ```json
-        "activities": {
-          "activityTypes": [
-            {
-              "type": "announcementPosted",
-              "description": "Announcement Created Activity",
-              "templateText": "Alex Wilbur posted an announcement",
-              "allowedIconIds": [
-                "announcementCreated"
-              ]
-            },
-            {
-             "type": "reaction",
-             "description": "reaction Activity",
-             "templateText": "Adele Vance reacted to your post in channel",
-             "allowedIconIds" : [
-                "likeReaction",
-                "smileReaction"
-              ]
-            }
-          ],
-          "activityIcons": [
-            {
-              "id": "announcementCreated",
-              "iconFile": "announcement.png"
-            },
-            {
-              "id": "likeReaction",
-              "iconFile": "likeReaction.png"
-            },
-            {
-              "id": "smileReaction",
-              "iconFile": "smileReaction.png"
-            }
+    "activities": {
+      "activityTypes": [
+        {
+          "type": "announcementPosted",
+          "description": "Announcement Created Activity",
+          "templateText": "Alex Wilbur posted an announcement",
+          "allowedIconIds": [
+            "announcementCreated"
           ]
         },
+        {
+         "type": "reaction",
+         "description": "reaction Activity",
+         "templateText": "Adele Vance reacted to your post in channel",
+         "allowedIconIds" : [
+            "likeReaction",
+            "smileReaction"
+          ]
+        }
+      ],
+      "activityIcons": [
+        {
+          "id": "announcementCreated",
+          "iconFile": "announcement.png"
+        },
+        {
+          "id": "likeReaction",
+          "iconFile": "likeReaction.png"
+        },
+        {
+          "id": "smileReaction",
+          "iconFile": "smileReaction.png"
+        }
+      ]
+    }
     ```
 
 > [!NOTE]
 > You can't declare more than 50 icons under each activity type.
 
-For more information about `allowedIconIds` and `activityIcons`, see [Teams public developer preview app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview#activitiesactivitytypes).
+For more information about **allowedIconIds** and **activityIcons**, see [Teams public developer preview app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview#activitiesactivitytypes).
 
-1. Call the notifications API beta endpoint and include the `iconId` attribute in the payload. The value of the `iconId` must match one of the icon IDs in the `allowedIconIds` for the specified activity type.
+1. Call the notifications API beta endpoint and include the **iconId** attribute in the payload. The value of the **iconId** must match one of the icon IDs in the **allowedIconIds** for the specified activity type.
 
     ```json
     POST https://graph.microsoft.com/beta/users/0000000-0000-0000-0000-000000000000/teamwork/sendactivitynotification
+    
     {
       "topic": {
         "source": "text",
