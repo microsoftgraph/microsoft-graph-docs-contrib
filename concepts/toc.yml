@@ -784,7 +784,7 @@ items:
       href: insights-customize-people-insights-privacy.md
     - name: Customize the profile card
       href: add-properties-profilecard.md
-    - name: Customize profile source
+    - name: Customize profile source (preview)
       href: profilesource-configure-settings.md
     - name: Enable or disable pronouns
       href: pronouns-configure-pronouns-availability.md
