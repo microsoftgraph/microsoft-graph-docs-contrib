@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const conditionalAccessWhatIfPolicy = {
+const whatIfAnalysisResult = {
     signInIdentity: {
         '@odata.type': '#microsoft.graph.servicePrincipalSignIn',
         servicePrincipalId: 'c65b94a5-0049-439a-a6fd-bce307077730'
@@ -31,6 +31,6 @@ const conditionalAccessWhatIfPolicy = {
 
 await client.api('/identity/conditionalAccess/evaluate')
 	.version('beta')
-	.post(conditionalAccessWhatIfPolicy);
+	.post(whatIfAnalysisResult);
 
 ```

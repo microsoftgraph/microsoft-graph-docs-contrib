@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Contains information for human and workload identity counts in a specific risk bucket.
 
 ## Properties
@@ -40,4 +42,5 @@ The following JSON representation shows the resource type.
   "nonHumanCount": "Integer"
 }
 ```
+
 

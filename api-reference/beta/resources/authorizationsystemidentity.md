@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 A container representing an identity in an authorization system.
 
 Inherits from [entity](../resources/entity.md).
@@ -62,3 +64,4 @@ The following JSON representation shows the resource type.
   "externalId": "String"
 }
 ```
+

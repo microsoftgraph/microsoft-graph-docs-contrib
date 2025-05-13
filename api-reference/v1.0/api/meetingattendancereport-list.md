@@ -49,8 +49,8 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 >
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
->- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
->- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
+>- `webinarId` is the **id** of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
+>- `sessionId` is the **id** of a [virtualEventSession](../resources/virtualeventsession.md) object.
 
 ## Optional query parameters
 
@@ -72,6 +72,7 @@ If successful, this method returns a `200 OK` response code and a list of [meeti
 
 > [!TIP]
 > The **attendanceRecords** property is empty in the response.
+> If your scenario needs **externalEventInformation**, you must make an explicit call to the [Get meetingAttendanceReport](../api/meetingattendancereport-get.md) API. This data isn't returned by default when you query the virtual event or online meeting object.
 
 ## Example
 

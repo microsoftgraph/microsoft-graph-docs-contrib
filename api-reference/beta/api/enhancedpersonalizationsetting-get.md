@@ -4,7 +4,7 @@ description: "Read the properties and relationships of an enhancedPersonalizatio
 author: "Ross-GH"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
-ms.subservice: "meetings-copilot"
+ms.subservice: "microsoft-365-copilot"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of an [enhancedPersonalizationSetting](../resources/enhancedpersonalizationsetting.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -66,7 +68,7 @@ GET https://graph.microsoft.com/beta/copilot/settings/people/enhancedpersonaliza
 ```
 
 
-### Response body
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -83,8 +85,8 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.enhancedPersonalizationSetting",
-    "isEnabledInOrganization": "Boolean",
-    "disabledForGroup": "String"
+    "isEnabledInOrganization": true,
+    "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
   }
 }
 ```
