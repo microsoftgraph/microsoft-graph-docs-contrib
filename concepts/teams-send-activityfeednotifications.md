@@ -286,7 +286,7 @@ The following steps show how to add custom activity icons in activity feed notif
 
 1. Call the notifications API beta endpoint and include the **iconId** attribute in the payload. The value of the **iconId** must match one of the icon IDs in the **allowedIconIds** for the specified activity type.
 
-  ```json
+  ```http
   POST https://graph.microsoft.com/beta/users/0000000-0000-0000-0000-000000000000/teamwork/sendactivitynotification
   
   {
