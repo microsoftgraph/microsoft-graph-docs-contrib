@@ -72,7 +72,7 @@ Pronouns serve as substitutes for a person's name in sentences, with gender-neut
 
 ## Why configure profile sources in your organization?
 
-Profile source configuration allows users in an organization to identify the origin of profile data shown across Microsoft 365 experiences. Administrators can customize the appearance of the **displayName** and **webUrl** properties in a profile source using a set of alternative translations for the languages supported in their organization.
+[Profile source](/graph/api/resources/profilesource) configuration allows users in an organization to identify the origin of profile data shown across Microsoft 365 experiences. Administrators can customize the appearance of the **displayName** and **webUrl** properties in a profile source using a set of alternative translations for the languages supported in their organization.
 
 ## Why integrate with document-based insights?
 
@@ -118,6 +118,7 @@ Looking for the API reference for these services?
 - [Use the Microsoft Graph API to integrate people and workplace intelligence in an app (beta)](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true)
 - The People API [person](/graph/api/resources/person) resource
 - [Profile (preview)](/graph/api/resources/profile) resource
+- [Profile source (preview)](/graph/api/resources/profilesource) resource
 - [Profile card property](/graph/api/resources/profilecardproperty) resource
 - [Pronouns settings](/graph/api/resources/pronounssettings) resource
 - [Insights API](/graph/api/resources/officegraphinsights)
@@ -129,6 +130,7 @@ Looking for the API reference for these services?
 - Find more about the [people API](people-insights-overview.md).
 - See how to [customize the profile card](add-properties-profilecard.md).
 - See how to [manage pronouns settings for an organization](pronouns-configure-pronouns-availability.md).
+- See how to [manage profile source settings for an organization](profilesource-configure-settings.md).
 - Find out more about [item insights](item-insights-overview.md), [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
 - Find more about the [analytics API](/graph/api/resources/social-overview#help-users-balance-work-and-life).
 - Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).
