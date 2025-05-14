@@ -1,6 +1,6 @@
 ---
 title: "calendar: delta"
-description: "Get a set of Calendars that were added, deleted, or updated in a user's mailbox"
+description: "Get a set of calendars that were added, deleted, or updated in a user's mailbox"
 ms.localizationpriority: medium
 author: "vikailas"
 ms.subservice: "outlook"
@@ -32,6 +32,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+To begin tracking changes, you make a request including the delta function on the calendara resource.
+
+* To get incremental changes of the calendar list _in the user's mailbox_:
 <!-- {
   "blockType": "ignored"
 }
@@ -40,12 +43,31 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/calendars/delta
 GET /users/{usersId}/calendars/delta
 ```
+## Query parameters
+
+Tracking changes in groups incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response.
+
+You only need to specify any desired query parameters once upfront.
+
+In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
+
+| Query parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same calendar list, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that calendar list.|
+| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar list. |
+
+### OData query parameters
+This method supports optional OData query parameters to help customize the response.
+
+- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance.
+- The **delta** function doesn't support the following query parameters: `$expand`, `$filter`,`$orderby`, `$search`, and `$select`.
 
 ## Request headers
-
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Name       | Type | Description |
+|:---------------|:----------|:----------|
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | string  | application/json. Required. |
+| Prefer | string  | odata.maxpagesize={x}. Optional. |
 
 ## Request body
 
@@ -59,20 +81,27 @@ If successful, this function returns a `200 OK` response code and a [calendar](.
 
 ### Request
 
-The following example shows a request.
+The following example shows a request. There's no `$select` parameter, so a default set of properties is tracked and returned.
+
 <!-- {
   "blockType": "request",
-  "name": "calendarthis.delta"
+  "name": "calendars_delta"
 }
 -->
-``` http
+``` msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendars/delta
 ```
 
 
 ### Response
 
-The following example shows the response.
+If the request is successful, the response includes a state token, which is either a _skipToken_
+(in an _\@odata.nextLink_ response header) or a _deltaToken_ (in an _\@odata.deltaLink_ response header).
+Respectively, they indicate whether you should continue with the round or you have completed
+getting all the changes for that round.
+
+The response below shows a _deltaToken_ in an _\@odata.deltaLink_ response header.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -85,31 +114,59 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.calendar",
-      "id": "String (identifier)",
-      "name": "String",
-      "color": "String",
-      "hexColor": "String",
-      "isDefaultCalendar": "Boolean",
-      "changeKey": "String",
-      "canShare": "Boolean",
-      "canViewPrivateItems": "Boolean",
-      "isShared": "Boolean",
-      "isSharedWithMe": "Boolean",
-      "canEdit": "Boolean",
-      "owner": {
-        "@odata.type": "microsoft.graph.emailAddress"
-      },
-      "calendarGroupId": "String",
-      "allowedOnlineMeetingProviders": [
-        "String"
-      ],
-      "defaultOnlineMeetingProvider": "String",
-      "isTallyingResponses": "Boolean",
-      "isRemovable": "Boolean"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(calendar)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.calendar",
+            "id": "AQMkADRhZThkMDVjLTJmNDctNDUyZC05YjA2LTI2YzRmMTIxOWJhZQBGAAADVDIMnvGkNkGo5_ASLe7iUQcAvXegGcyc-0O1dA1ftrtB6QAAAgEGAAAAvXegGcyc-0O1dA1ftrtB6QAAAUSwewAAAA==",
+            "name": "Calendar",
+            "color": "auto",
+            "hexColor": "",
+            "groupClassId": "0006f0b7-0000-0000-c000-000000000046",
+            "isDefaultCalendar": true,
+            "changeKey": "vXegGcyc/0O1dA1ftrtB6QAAAEO+6Q==",
+            "canShare": true,
+            "canViewPrivateItems": true,
+            "isShared": false,
+            "isSharedWithMe": false,
+            "canEdit": true,
+            "calendarGroupId": null,
+            "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+            "defaultOnlineMeetingProvider": "teamsForBusiness",
+            "isTallyingResponses": true,
+            "isRemovable": false,
+            "owner": {
+                "name": "Samantha Booth",
+                "address": "samanthab@contoso.com"
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.calendar",
+            "id": "AQMkADRhZThkMDVjLTJmNDctNDUyZC05YjA2LTI2YzRmMTIxOWJhZQBGAAADVDIMnvGkNkGo5_ASLe7iUQcAvXegGcyc-0O1dA1ftrtB6QAAAgEGAAAAvXegGcyc-0O1dA1ftrtB6QAAAU4pOwAAAA==",
+            "name": "Birthdays",
+            "color": "auto",
+            "hexColor": "",
+            "groupClassId": "0006f0b7-0000-0000-c000-000000000046",
+            "isDefaultCalendar": false,
+            "changeKey": "vXegGcyc/0O1dA1ftrtB6QAAAEzvog==",
+            "canShare": false,
+            "canViewPrivateItems": true,
+            "isShared": false,
+            "isSharedWithMe": false,
+            "canEdit": false,
+            "calendarGroupId": null,
+            "allowedOnlineMeetingProviders": [],
+            "defaultOnlineMeetingProvider": "unknown",
+            "isTallyingResponses": false,
+            "isRemovable": true,
+            "owner": {
+                "name": "Samantha Booth",
+                "address": "samanthab@contoso.com"
+            }
+        }
+    ],
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/me/calendars/delta?$deltatoken=LztZwWjo5IivWBhyxw5rAIPrk_3pGHcZr4U33FHo0HpyBLqdo9QZIWfEL4AW1jMLBmo-o1ybmYCWlzQ5elO2bEDejh9Z8kYv_z4nhmHoC5Y.7Wdj3MWiils6M--JMM9dMyiLCh-1he4AZCqBu-8i42o"
 }
 ```

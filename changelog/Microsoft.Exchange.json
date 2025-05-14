@@ -1529,7 +1529,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-05-14T05:33:14.8749152Z",
-      "WorkloadArea": "Calendar, mail, personal contacts",
+      "WorkloadArea": "Calendar",
       "SubArea": ""
     }
   ]
