@@ -75,7 +75,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/riskyUsers/confirmSafe
+POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/confirmSafe
 Content-Type: application/json
 
 {
