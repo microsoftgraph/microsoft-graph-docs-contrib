@@ -1,6 +1,6 @@
 ---
 title: "sensitivityLabel: computeRightsAndInheritance"
-description: "Computes the rights and inheritance for sensitivity labels based on the input content and labels"
+description: "Computes the rights and inheritance for sensitivity labels based on the input content and labels."
 author: "ArunGedela"
 ms.date: 04/21/2025
 ms.localizationpriority: medium
