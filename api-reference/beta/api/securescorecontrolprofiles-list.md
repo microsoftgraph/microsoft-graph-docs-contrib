@@ -134,7 +134,15 @@ Content-type: application/json
             "userImpact": "userImpact.value",
             "id": "id.value",
             "azureTenantId": "azureTenantId.value",
-            "controlStateUpdates": null,
+            "controlStateUpdates": [
+                {
+                    "assignedTo": "assignedTo.value",
+                    "comment": "comment.value",
+                    "state": "state.value",
+                    "updatedBy": "updatedBy.value",
+                    "updatedDateTime": "updatedDateTime.value"
+                }
+            ],
             "vendorInformation": {
                 "provider": "SecureScore",
                 "providerVersion": null,
