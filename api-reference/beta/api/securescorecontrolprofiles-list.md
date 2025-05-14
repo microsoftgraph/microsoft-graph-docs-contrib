@@ -45,7 +45,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of **secureScoreControlProfile** objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) objects in the response body.
 
 ## Example
 
@@ -134,15 +134,7 @@ Content-type: application/json
             "userImpact": "userImpact.value",
             "id": "id.value",
             "azureTenantId": "azureTenantId.value",
-            "controlStateUpdates": [
-                {
-                    "assignedTo": "assignedTo.value",
-                    "comment": "comment.value",
-                    "state": "state.value",
-                    "updatedBy": "updatedBy.value",
-                    "updatedDateTime": "updatedDateTime.value"
-                }
-            ],
+            "controlStateUpdates": null,
             "vendorInformation": {
                 "provider": "SecureScore",
                 "providerVersion": null,
