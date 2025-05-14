@@ -101,6 +101,7 @@
     { 
       "ChangeList": 
       [
+        {
           "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
           "ApiChange": "Method",
           "ChangedApiName": "getRecentlyModifiedSubmissions",
