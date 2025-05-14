@@ -26,12 +26,12 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List](../api/riskyusers-list.md) | [riskyUser](riskyuser.md) collection|List risky users and their properties.|
-|[Get](../api/riskyusers-get.md) | [riskyUser](riskyuser.md)|Get a specific risky user and its properties.|
-|[Confirm compromised](../api/riskyusers-confirmcompromised.md)|None |Confirm a risky user as compromised.|
-|[confirmSafe](../api/riskyuser-confirmsafe.md)|None|Confirm a risky user as safe.|
-|[Dismiss](../api/riskyusers-dismiss.md)|None | Dismiss the risk of a risky user.|
-|[List history](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Get the risk history of a Microsoft Entra user.|
+|[List](../api/riskyusers-list.md) | [riskyUser](riskyuser.md) collection|Get a list of the **riskyUser** objects and their properties.|
+|[Get](../api/riskyusers-get.md) | [riskyUser](riskyuser.md)|Read the properties and relationships of a **riskyUser** object.|
+|[Confirm compromised](../api/riskyusers-confirmcompromised.md)|None |Confirm one or more **riskyUser** objects as compromised.|
+|[Confirm safe](../api/riskyuser-confirmsafe.md)|None|Confirm one or more **riskyUser** objects as safe.|
+|[Dismiss](../api/riskyusers-dismiss.md)|None | Dismiss the risk of one or more **riskyUser** objects.|
+|[List history](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Get the **riskyUserHistoryItems** from the history navigation property.|
 
 ## Properties
 

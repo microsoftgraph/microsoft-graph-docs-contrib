@@ -1,6 +1,6 @@
 ---
 title: "riskyUser: confirmSafe"
-description: "Confirm a user as safe"
+description: "Confirm one or more riskyUser objects as safe and set their risk level to none."
 author: "dimadonhin"
 ms.date: 05/14/2025
 ms.localizationpriority: medium
@@ -11,8 +11,6 @@ doc_type: apiPageType
 # riskyUser: confirmSafe
 
 Namespace: microsoft.graph
-
->**Note:** The riskyUsers API requires a Microsoft Entra ID P2 license.
 
 Confirm one or more [riskyUser](../resources/riskyuser.md) objects as safe. This action sets the targeted user's risk level to none.
 
@@ -79,7 +77,9 @@ Content-Type: application/json
 
 {
   "userIds": [
-    "String"
+    "5a0c76d2-cb57-4ece-9bc1-c323178f116a",
+    "96609214-09ef-4f80-9d4a-ace5fceecaec",
+    "05020696-4eb8-45a3-918f-8f8bb7ad6015"
   ]
 }
 ```
@@ -88,7 +88,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
