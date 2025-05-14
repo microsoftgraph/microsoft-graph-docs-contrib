@@ -1,0 +1,103 @@
+---
+title: "riskyUser: confirmSafe"
+description: "Confirm one or more riskyUser objects as safe."
+author: "dimadonhin"
+ms.date: 05/14/2025
+ms.localizationpriority: medium
+ms.subservice: "entra-sign-in"
+doc_type: apiPageType
+---
+
+# riskyUser: confirmSafe
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>**Note:** The riskyUsers API requires a Microsoft Entra ID P2 license.
+
+Confirm one or more [riskyUser](../resources/riskyuser.md) objects as compromised. This action sets the targeted user's risk level to high.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "permissions",
+  "name": "riskyuser-confirmsafe-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/riskyuser-confirmsafe-permissions.md)]
+
+[!INCLUDE [rbac-identity-protection-apis-write](../includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /riskyUsers/confirmSafe
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
+
+In the request body, supply a JSON representation of the parameters.
+
+The following table lists the parameters that are required when you call this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|userIds|String collection|Specify the user IDs to confirm as safe in the request body.|
+
+
+
+## Response
+
+If successful, this action returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "riskyuserthis.confirmsafe"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/riskyUsers/confirmSafe
+Content-Type: application/json
+
+{
+  "userIds": [
+    "String"
+  ]
+}
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
