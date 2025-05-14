@@ -16,11 +16,11 @@ Namespace: microsoft.graph
 
 Represents the specific usage rights granted by Azure Information Protection templates or sensitivity labels. These rights define what actions a user can perform on protected content.
 
-See [Configure usage rights for Azure Information Protection](/azure/information-protection/configure-usage-rights) for detailed descriptions of each right.
+For more information, see [Configure usage rights for Azure Information Protection](/azure/information-protection/configure-usage-rights).
 
 ## Members
 
-| Member      | Value | Description                                                                                   | Common Roles Mapping |
+| Member      | Value | Description                                                                                   | Common roles mapping |
 | :---------- | :---- | :-------------------------------------------------------------------------------------------- | :------------------- |
 | VIEW        | 0     | Allows the user to open and read the protected content. Required for almost all other rights. | All                  |
 | EDIT        | 1     | Allows the user to modify the content. Implies VIEW.                                          | Reviewer, Co-Author, Co-Owner, Owner |

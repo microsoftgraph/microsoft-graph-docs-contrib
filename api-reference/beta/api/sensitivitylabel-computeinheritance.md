@@ -85,7 +85,7 @@ Client-Request-Id: c5e4d3b2-a1f0-e9d8-c7b6-a5e4d3b2a1f0
 
 ### Response
 
-The following example shows the response. The "Confidential" label is returned because it's the most sensitive label among the inputs that supports the `File` content format.
+The following example shows the response. The **confidential** label is returned because it's the most sensitive label among the inputs that supports the `File` content format.
 
 <!-- {
   "blockType": "response",
