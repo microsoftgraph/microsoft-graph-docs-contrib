@@ -10,7 +10,7 @@ from msgraph.generated.role_management.directory.role_assignments.role_assignmen
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = RoleAssignmentsRequestBuilder.RoleAssignmentsRequestBuilderGetQueryParameters(
-		filter = "principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'",
+		filter = "principalId eq 'd9771b4c-06c5-491a-92cb-3aa4e225a725'",
 )
 
 request_configuration = RequestConfiguration(

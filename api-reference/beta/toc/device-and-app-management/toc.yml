@@ -441,6 +441,8 @@ items:
       href: ../../resources/cloudpcauditresource.md
     - name: Cloud PC bulk create snapshot
       href: ../../resources/cloudpcbulkcreatesnapshot.md
+    - name: Cloud PC bulk disaster recovery
+      href: ../../resources/cloudpcbulkdisasterrecovery.md
     - name: Cloud PC bulk disaster recovery failback
       href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
     - name: Cloud PC bulk disaster recovery failover
@@ -523,6 +525,8 @@ items:
       href: ../../resources/cloudpcstatusdetails.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
+    - name: Cloud PC supported region restriction detail
+      href: ../../resources/cloudpcsupportedregionrestrictiondetail.md
     - name: Cloud PC user role scope tag info
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment

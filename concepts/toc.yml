@@ -686,6 +686,8 @@ items:
       items:
       - name: Configure Microsoft Entra Private Access
         href: tutorial-entra-private-access.md
+      - name: Configure Microsoft Entra Internet Access
+        href: tutorial-entra-internet-access.md
   - name: Industry data ETL (preview)
     href: industrydata-concept-overview.md
   - name: Mail
@@ -792,6 +794,8 @@ items:
       href: people-insights-overview.md
     - name: Search people
       href: search-concept-person.md
+    - name: Enhanced personalization privacy
+      href: control-enhanced-personalization-privacy.md
   - name: Personal contacts
     items:
     - name: Overview
@@ -868,6 +872,8 @@ items:
       href: security-dataflow.md
     - name: Authorization
       href: security-authorization.md
+    - name: Data security and governance 
+      href: security-datasecurityandgovernance-overview.md 
     - name: Integrated solutions
       href: security-integration.md
     - name: Information Protection

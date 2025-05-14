@@ -1,5 +1,5 @@
 ---
-title: "List changeItemBase objects"
+title: "List changeItemBase objects (deprecated)"
 description: "Get a list of the changeItemBase objects and their properties."
 author: "garretraziel"
 ms.date: 11/20/2024
@@ -8,11 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# List changeItemBase objects
+# List changeItemBase objects (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [entra-lifecycle-announcements-deprecation-note](../includes/entra-lifecycle-announcements-deprecation-note.md)]
 
 Get a list of the [changeItemBase](../resources/changeitembase.md) objects and their properties. The API returns both Microsoft Entra change announcements and releases.
 

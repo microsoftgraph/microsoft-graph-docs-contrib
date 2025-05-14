@@ -101,6 +101,47 @@
     { 
       "ChangeList": 
       [
+          "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
+          "ApiChange": "Method",
+          "ChangedApiName": "getRecentlyModifiedSubmissions",
+          "ChangeType": "Addition",
+          "Description": "Added the [getRecentlyModifiedSubmissions](https://learn.microsoft.com/en-us/graph/api/educationclass-getrecentlymodifiedsubmissions?view=graph-rest-1.0) method to the [educationClass](https://learn.microsoft.com/en-us/graph/api/resources/educationclass?view=graph-rest-1.0) resource.",
+          "Target": "educationClass"
+        },
+        {
+          "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedBy** property to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-1.0) resource.",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-1.0) resource.",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignmentId",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentId** property to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-1.0) resource.",
+          "Target": "educationSubmission"
+        }
+      ],
+      "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
+      "Cloud": "Prod",
+      "Version": "1.0",
+      "CreatedDateTime": "2025-04-14T18:32:24.5964486Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "9d6be2a6-416f-4f30-a104-9c41e43c9e95",
           "ApiChange": "Property",

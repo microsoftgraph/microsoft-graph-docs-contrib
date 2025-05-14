@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "bdebce1f-dc5b-4be2-87b2-4ddf177b1700",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissionsManagement",
+          "ChangeType": "Deprecated",
+          "Description": "Deprecated the **permissionsManagement** relationship of the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance?view=graph-rest-beta) resource. This deprecation applies to all Microsoft Entra Permissions Management APIs. More information can be found [here](https://aka.ms/MEPMretire).",
+          "Target": "identityGovernance"
+        },
+        {
+          "Id": "bdebce1f-dc5b-4be2-87b2-4ddf177b1700",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissionsAnalytics",
+          "ChangeType": "Deprecated",
+          "Description": "Deprecated the **permissionsAnalytics** relationship of the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance?view=graph-rest-beta) resource. This deprecation applies to all Microsoft Entra Permissions Management APIs. More information can be found [here](https://aka.ms/MEPMretire).",
+          "Target": "identityGovernance"
+        }
+      ],
+      "Id": "bdebce1f-dc5b-4be2-87b2-4ddf177b1700",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-06T00:00:00.9619605Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Multicloud permissions management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
           "ApiChange": "Resource",
           "ChangedApiName": "assignedComputeInstanceDetails",

@@ -151,7 +151,6 @@
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
-        "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
         "restoreArtifactsBulkRequestBase",
         "restorePoint",
@@ -186,6 +185,7 @@
         {
           "name": "Protection units bulk job",
           "resources": [
+            "protectionUnitsBulkJobBase",
             "driveProtectionUnitsBulkAdditionJob",
             "mailboxProtectionUnitsBulkAdditionJob",
             "siteProtectionUnitsBulkAdditionJob"
@@ -422,6 +422,12 @@
       ]
     },
     {
+      "name": "Data Security and Governance (preview)",
+      "resources": [
+        "userDataSecurityAndGoverance"
+      ]
+    },
+    {
       "name": "Device and app management",
       "childNodes": [
         {
@@ -490,6 +496,7 @@
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcBulkDisasterRecovery",
             "cloudPcBulkDisasterRecoveryFailback",
             "cloudPcBulkDisasterRecoveryFailover",
             "cloudPcBulkMove",
@@ -530,6 +537,7 @@
             "cloudPcStatusDetails",
             "cloudPcStatusDetail",
             "CloudPcConnectionSetting",
+            "cloudPcSupportedRegionRestrictionDetail",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
@@ -879,7 +887,10 @@
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
-            "engagementAsyncOperation"
+            "engagementAsyncOperation",
+            "engagementRole",
+            "engagementRoleMember",
+            "employeeExperienceUser"
           ]
         },
         {
@@ -1464,6 +1475,8 @@
               "resources": [
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
+                "onAttributeCollectionStartListener",
+                "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
@@ -1489,10 +1502,20 @@
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
                 "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
+              ],
+              "childNodes": [
+                {
+                  "name": "QR code authentication",
+                  "resources": [
+                    "qrCodePinAuthenticationMethod",
+                    "qrCode",
+                    "qrPin"
+                  ]
+                }
               ]
             },
             {
-              "name": "Authentication methods policy",
+              "name": "Authentication methods policies",
               "overview": "../../resources/authenticationmethodspolicies-overview.md",
               "shouldSort": true,
               "resources": [
@@ -1507,7 +1530,8 @@
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
-                "x509CertificateAuthenticationMethodConfiguration"
+                "x509CertificateAuthenticationMethodConfiguration",
+                "qrCodePinAuthenticationMethodConfiguration"
               ]
             },
             {
@@ -1533,6 +1557,7 @@
               "name": "Conditional access",
               "resources": [
                 "conditionalAccessPolicy",
+                "whatIfAnalysisResult",
                 "namedLocation",
                 "authenticationContextClassReference",
                 "conditionalAccessTemplate",                
@@ -1691,7 +1716,7 @@
               ]
             },
             {
-              "name": "Microsoft Entra lifecycle announcements",
+              "name": "Microsoft Entra lifecycle announcements (deprecated)",
               "resources": [
                 "changeItemBase",
                 "announcement",
@@ -1703,7 +1728,12 @@
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
-                "authenticationConditionApplication"
+                "authenticationConditionApplication",
+                "onAttributeCollectionHandler",
+                "onAttributeCollectionStartHandler",
+                "onAttributeCollectionStartCustomExtensionHandler",
+                "onAttributeCollectionSubmitHandler",
+                "onAttributeCollectionSubmitCustomExtensionHandler"
               ]
             },
             {
@@ -1721,7 +1751,7 @@
           ]
         },
         {
-          "name": "Multicloud permissions management (preview)",
+          "name": "Multicloud permissions management (deprecated)",
           "overview": "../../resources/permissions-management-api-overview.md",
           "resources": [
             "authorizationSystem"
@@ -2204,6 +2234,7 @@
         "pronounsSettings",
         "photoUpdateSettings",
         "namePronunciationSettings",
+        "enhancedPersonalizationSetting",
         "profile",
         "userAnalytics"
       ],
@@ -2308,7 +2339,8 @@
               "overview": "../../resources/recommendations-api-overview.md",
               "resources": [
                 "recommendation",
-                "impactedResource"
+                "impactedResource",
+                "recommendationConfiguration"
               ]
             },
             {
@@ -2441,6 +2473,7 @@
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",
             "microsoft.graph.partners.billing.operation",
+            "microsoft.graph.partners.billing.unbilledReconciliation",
             "microsoft.graph.partners.billing.unbilledUsage"
           ]
         }
@@ -2566,6 +2599,56 @@
             "microsoft.graph.security.defaultAuditData"
           ]
         },
+        {
+          "name": "Data security and compliance (preview)",
+          "resources": [
+            "activitiesContainer",
+            "contentActivity",
+            "dataSecurityAndGovernance",
+            "tenantDataSecurityAndGovernance",
+            "tenantProtectionScopeContainer",
+            "userDataSecurityAndGovernance",
+            "userProtectionScopeContainer",
+           ],
+            "complexTypes": [
+              "activityMetadata",
+              "aiInteractionPlugin",
+              "binaryContent",
+              "blockAccessAction",
+              "classifcationErrorBase",
+              "classificationError",
+              "classificationInnerError",
+              "contentBase",
+              "customMetadataDictionary",
+              "deviceMetadata",
+              "dlpActionInfo",
+              "groupScope",
+              "integratedApplicationMetadata",
+              "notifyUserAction",
+              "operatingSystemSpecifications",
+              "policyBinding",
+              "policyLocation",
+              "policyLocationApplication",
+              "policyLocationDomain",
+              "policyLocationUrl",
+              "policyScopeBase",
+              "policyTenantScope",
+              "policyUserScope",
+              "processContentBatchRequest",
+              "processConversationMetadata",
+              "processContentRequest",
+              "processContentResponse",
+              "processContentResponses",
+              "processConversationMetadata",
+              "processFileMetadata",
+              "processingError",
+              "protectedApplicationMetadata",
+              "scopeBase",
+              "tenantScope",
+              "textContent",
+              "userScope" 
+            ]
+          },
         {
           "name": "eDiscovery",
           "overview": "../../resources/security-ediscovery-apioverview.md",
@@ -2912,6 +2995,17 @@
       ],
       "childNodes": [
         {
+          "name": "Administration (preview)",
+          "resources": [
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+          ],
+          "complexTypes": [
+            "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
+            "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
+            "microsoft.graph.teamsAdministration.policyAssignment"
+          ]
+        },
+        {
           "name": "AI interactions (preview)",
           "resources": [
             "aiInteractionHistory"
@@ -3017,6 +3111,7 @@
                 "onlineMeeting",
                 "externalMeetingRegistration",
                 "meetingRegistration",
+                "callAiInsight",
                 "callRecording",
                 "callTranscript"
               ],
@@ -3038,6 +3133,15 @@
                     }
                   ]
                 }
+              ],
+              "complexTypes": [
+                "actionItem",
+                "aiOnlineMeeting",
+                "callAiInsightViewPoint",
+                "meetingNote",
+                "meetingNoteSubpoint",
+                "mentionEvent",
+                "identitySet"
               ]
             },
             {
@@ -3310,3 +3414,4 @@
     }
   ]
 }
+

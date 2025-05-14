@@ -28,10 +28,12 @@ This resource type is an abstract type that's inherited by the following derived
 + [passwordlessMicrosoftAuthenticatorAuthenticationMethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (deprecated)    
 + [passwordAuthenticationMethod](passwordauthenticationmethod.md)
 + [phoneAuthenticationMethod](phoneauthenticationmethod.md)
++ [platformCredentialAuthenticationMethod](platformcredentialauthenticationmethod.md)
 + [softwareOathAuthenticationMethod](softwareoathauthenticationmethod.md)
 + [temporaryAccessPassAuthenticationMethod](temporaryaccesspassauthenticationmethod.md)
 + [windowsHelloForBusinessAuthenticationMethod](windowshelloforbusinessauthenticationmethod.md)
 + [platformCredentialAuthenticationMethod](platformcredentialauthenticationmethod.md)
++ [qrCodePinAuthenticationmethod](qrcodepinauthenticationmethod.md)
 
 > [!IMPORTANT]
 > Listing users' authentication methods only returns methods supported on this API version and registered to the user. See [Microsoft Entra authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.

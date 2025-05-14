@@ -25,12 +25,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
+To get all usage rights for the signed-in user using delegated (`/me`) permissions:
+
+<!-- { "blockType": "ignored" }
 -->
 ``` http
 GET /me/cloudLicensing/usageRights
+```
+
+To get all usage rights for a specific user using either delegated or application permissions:
+
+<!-- { "blockType": "ignored" }
+-->
+``` http
 GET /users/{userId}/cloudLicensing/usageRights
 ```
 
@@ -63,7 +70,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.cloudLicensing.usageRight](../resources/usageright.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) objects in the response body.
 
 ## Examples
 

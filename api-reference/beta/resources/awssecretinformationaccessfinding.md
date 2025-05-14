@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents findings for identities who can access secret information.
 
 Inherits from [finding](../resources/finding.md).
@@ -65,4 +67,5 @@ The following JSON representation shows the resource type.
   "lastActiveDateTime": "String (timestamp)"
 }
 ```
+
 

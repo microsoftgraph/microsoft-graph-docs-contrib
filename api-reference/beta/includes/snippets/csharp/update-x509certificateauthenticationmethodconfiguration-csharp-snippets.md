@@ -71,6 +71,34 @@ var requestBody = new X509CertificateAuthenticationMethodConfiguration
 				},
 			})
 		},
+		{
+			"certificateAuthorityScopes" , new List<object>
+			{
+				new UntypedObject(new Dictionary<string, UntypedNode>
+				{
+					{
+						"subjectKeyIdentifier", new UntypedString("aaaaaaaabbbbcccc111122222222222222333333")
+					},
+					{
+						"publicKeyInfrastructureIdentifier", new UntypedString("Contoso PKI")
+					},
+					{
+						"includeTargets", new UntypedArray(new List<UntypedNode>
+						{
+							new UntypedObject(new Dictionary<string, UntypedNode>
+							{
+								{
+									"id", new UntypedString("aaaaaaaa-bbbb-cccc-1111-222222222222")
+								},
+								{
+									"targetType", new UntypedString("group")
+								},
+							}),
+						})
+					},
+				}),
+			}
+		},
 	},
 };
 

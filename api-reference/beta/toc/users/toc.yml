@@ -74,6 +74,14 @@ items:
       href: ../../api/user-list-calendarview.md
     - name: Reminder view
       href: ../../api/user-reminderview.md
+  - name: Call delegation
+    items:
+    - name: Get delegation settings
+      href: ../../api/delegationsettings-get.md
+    - name: List delegates
+      href: ../../api/callsettings-list-delegates.md
+    - name: List delegators
+      href: ../../api/callsettings-list-delegators.md
   - name: Cloud licensing
     items:
     - name: List usage rights

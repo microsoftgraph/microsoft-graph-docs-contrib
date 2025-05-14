@@ -21,7 +21,7 @@ Represents information about the network used in a call.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |bandwidthLowEventRatio|Double|Fraction of the call that the media endpoint detected the available bandwidth or bandwidth policy was low enough to cause poor quality of the audio sent.|
-|basicServiceSetIdentifier|String|The wireless LAN basic service set identifier of the media endpoint used to connect to the network.|
+|basicServiceSetIdentifier|String|The wireless LAN basic service set identifier of the media endpoint used to connect to the network. This property isn't available if the user disables precise location sharing in their operating system or Microsoft Teams app settings.|
 |connectionType|microsoft.graph.callRecords.networkConnectionType|Type of network used by the media endpoint. Possible values are: `unknown`, `wired`, `wifi`, `mobile`, `tunnel`, `unknownFutureValue`.|
 |delayEventRatio|Double|Fraction of the call that the media endpoint detected the network delay was significant enough to impact the ability to have real-time two-way communication.|
 |dnsSuffix|String|DNS suffix associated with the network adapter of the media endpoint.|
@@ -48,7 +48,7 @@ Represents information about the network used in a call.
 |wifiVendorDriverVersion|String|Version of the WiFi driver used by the media endpoint.|
 
 > [!NOTE]
-> \*By default, **traceRouteHops** will always return an empty array. Contact Microsoft support to enable reporting of trace route data for your organization.
+> \*By default, **traceRouteHops** always returns an empty array. Contact Microsoft support to enable reporting of trace route data for your organization.
 
 ## JSON representation
 

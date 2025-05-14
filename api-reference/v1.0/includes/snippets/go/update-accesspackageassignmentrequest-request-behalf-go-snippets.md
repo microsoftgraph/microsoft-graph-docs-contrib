@@ -42,16 +42,14 @@ additionalData := map[string]interface{}{
 }
 assignment.SetAdditionalData(additionalData)
 requestBody.SetAssignment(assignment)
+justification := "Access for direct employee"
+requestBody.SetJustification(&justification) 
 requestType := graphmodels.USERADD_ACCESSPACKAGEREQUESTTYPE 
 requestBody.SetRequestType(&requestType) 
 answers := []graphmodels.AccessPackageAnswerable {
 
 }
 requestBody.SetAnswers(answers)
-additionalData := map[string]interface{}{
-	"justification" : "Access for direct employee", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 assignmentRequests, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentRequests().Post(context.Background(), requestBody, nil)

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents an AWS role. An AWS role is an AWS identity with permission policies that determine what the identity can and can't do in AWS. However, unlike an AWS user, an AWS role isn't uniquely associated with one person but is assumable by any identity that needs it.
 
 Inherits from [awsIdentity](../resources/awsidentity.md).
@@ -63,4 +65,5 @@ The following JSON representation shows the resource type.
   "roleType": "String"
 }
 ```
+
 
