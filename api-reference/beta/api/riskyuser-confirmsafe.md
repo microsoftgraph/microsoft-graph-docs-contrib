@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 >**Note:** The riskyUsers API requires a Microsoft Entra ID P2 license.
 
-Confirm one or more [riskyUser](../resources/riskyuser.md) objects as compromised. This action sets the targeted user's risk level to high.
+Confirm one or more [riskyUser](../resources/riskyuser.md) objects as safe. This action sets the targeted user's risk level to none.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
