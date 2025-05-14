@@ -26,8 +26,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 } -->
 [!INCLUDE [permissions-table](../includes/permissions/usagerightsincluded-get-permissions.md)]
 
-This API requires delegated permissions. Application permissions are not supported for checking rights for a specific user context.
-
 ## HTTP request
 
 ```http
@@ -38,8 +36,7 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels/{labelId}/rights
 
 | Name                | Description                                                                                                                                 |
 | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------ |
-| Authorization       | Bearer {token}. Required. The delegated user token. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
-| Accept-Language     | Optional. Specifies the preferred language for the response. Format is based on RFC 4646 (for example, `en-US`, `es-ES`).                               |
+| Authorization       | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 | Client-Request-Id   | Optional. A client-generated GUID to trace the request. Recommended for troubleshooting.                                                  |
 
 ## Query parameters
@@ -61,9 +58,9 @@ If the label is not found, doesn't have admin-defined protection, or the user do
 
 ## Examples
 
-### Request
+### Example 1: Request to get the rights for a specific sensitivity label for the user `4e4234dd-377b-42a3-935b-0e42f138fa23`
 
-The following example shows a request to get the rights for a specific sensitivity label for the user `4e4234dd-377b-42a3-935b-0e42f138fa23`.
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -73,11 +70,10 @@ The following example shows a request to get the rights for a specific sensitivi
 ```http
 GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/4e4234dd-377b-42a3-935b-0e42f138fa23/rights?ownerEmail=bob@contoso.com
 Authorization: Bearer {token}
-Accept-Language: en-US
 Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
 ```
 
-### Response
+#### Response
 
 The following example shows the response containing the usage rights granted to the user.
 
@@ -98,9 +94,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2
+### Example 2: Error Response Example
 
-Error Response Example (Label Not Found or No Rights)
+#### Response
 
 <!-- {
   "blockType": "response",

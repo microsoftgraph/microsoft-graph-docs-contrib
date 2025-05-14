@@ -6,6 +6,6 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|SensitivityLabel.Evaluate|SensitivityLabel.Evaluate.All|
+|Delegated (work or school account)|Not available|Not available|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|SensitivityLabel.Evaluate|SensitivityLabel.Evaluate.All|

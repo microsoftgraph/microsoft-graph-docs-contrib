@@ -23,19 +23,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "purviewecosystem-sensitivitylabels-getsensitivitylabels-permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sensitivitylabel-get-permissions.md)]
 
-When using delegated permissions (`SensitivityLabels.Read`), the API returns labels scoped to the signed-in user.
-
 When using application permissions (`SensitivityLabels.Read.All`), the API returns all labels for the tenant by default. Use the `scopeToUser` query parameter to retrieve labels for a specific user in the application context.
 
 ## HTTP request
 
-Get labels for the signed-in user (delegated permissions) or all tenant labels (application permissions):
+Get labels for all tenant labels:
 
 ```http
 GET /security/dataSecurityAndGovernance/sensitivityLabels
 ```
 
-Get labels for a specific user (application permissions):
+Get labels for a specific user:
 
 ```http
 GET /security/dataSecurityAndGovernance/sensitivityLabels?$filter=isScopedToUser eq {trueOrFalse}
@@ -46,7 +44,6 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels?$filter=isScopedToUser
 | Name                | Description                                                                                                                                 |
 | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------ |
 | Authorization       | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).                                |
-| Accept-Language     | Optional. Specifies the preferred language for localizable fields like `name`, `description`, and `tooltip`. Format is based on RFC 4646 (for example, `en-US`, `fr-FR`). Defaults to the tenant's default language if omitted or not found. |
 | Client-Request-Id   | Optional. A client-generated GUID to trace the request. Recommended for troubleshooting.                                                  |
 
 ## Query parameters
@@ -68,74 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get labels for the signed-in user (delegated)
-
-#### Request
-
-The following example shows a request to get labels for the signed-in user.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_sensitivitylabels_user_delegated"
-} -->
-```http
-GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels
-Authorization: Bearer {token}
-Client-Request-Id: f1a2b3c4-d5e6-f7a8-b9c0-d1e2f3a4b5c6
-```
-
-#### Response
-
-The following example shows the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.security.sensitivityLabel)"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/dataSecurityAndGovernance/sensitivityLabels",
-  "value": [
-    {
-      "id": "4e4234dd-377b-42a3-935b-0e42f138fa23",
-      "name": "General",
-      "description": "General data, not for public use.",
-      "color": "#000000",
-      "priority": 10,
-      "tooltip": "Apply this label to non-public general data.",
-      "isEnabled": true,
-      "isEndpointProtectionEnabled": false,
-      "autoTooltip": "",
-      "isSmimeSignEnabled": false,
-      "actionSource": "manual",
-      "applicableTo": "email,teamwork,file",
-      "sublabels": []
-    },
-    {
-      "id": "a7a21bba-8197-491f-a5d6-0d0f955397cf",
-      "name": "Confidential",
-      "description": "Confidential data.",
-      "color": "#ff0000",
-      "priority": 20,
-      "tooltip": "Data that requires protection.",
-      "isEnabled": true,
-      "isEndpointProtectionEnabled": true,
-      "autoTooltip": "",
-      "isSmimeSignEnabled": true,
-      "actionSource": "manual",
-      "applicableTo": "email,teamwork,file",
-      "sublabels": [
-      ]
-    }
-  ]
-}
-```
-
-### Example 2: Get tenant labels filtered by content format and ID (application)
+Get tenant labels filtered by content format and ID with an application permission.
 
 #### Request
 
