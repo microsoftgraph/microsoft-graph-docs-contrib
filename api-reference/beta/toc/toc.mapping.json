@@ -2592,6 +2592,7 @@
         {
           "name": "Data security and compliance (preview)",
           "resources": [
+            "security",
             "activitiesContainer",
             "contentActivity",
             "dataSecurityAndGovernance",
