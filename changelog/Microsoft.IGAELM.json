@@ -1035,6 +1035,48 @@
     {
       "ChangeList": [
         {
+          "Id": "2bf51009-434d-46f5-9fc3-df0e7c39282c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRequestorJustificationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRequestorJustificationRequired** property to the [accessPackageAssignmentApprovalSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentApprovalSettings?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentApprovalSettings"
+        },
+        {
+          "Id": "2bf51009-434d-46f5-9fc3-df0e7c39282c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRequestorJustificationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRequestorJustificationRequired** property to the [accessPackageAssignmentRequestRequirements](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestRequirements?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequestRequirements"
+        },
+        {
+          "Id": "2bf51009-434d-46f5-9fc3-df0e7c39282c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRequestorJustificationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **refresh** method to the [accessPackageResource](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestRequirements?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageResource"
+        },
+        {
+          "Id": "2bf51009-434d-46f5-9fc3-df0e7c39282c",
+          "ApiChange": "Property",
+          "ChangedApiName": "justification",
+          "ChangeType": "Addition",
+          "Description": "Added the **justification** property to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        }
+      ],
+      "Id": "2bf51009-434d-46f5-9fc3-df0e7c39282c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-05-13T23:10:11.3582933Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
           "ApiChange": "Property",
           "ChangedApiName": "verifiableCredentialRequirementStatus",
