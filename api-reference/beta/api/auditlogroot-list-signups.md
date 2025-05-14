@@ -24,12 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "selfservicesignup-list-permissions"
+  "name": "auditlogroot-list-signups-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/selfservicesignup-list-permissions.md)]
-
-Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Microsoft Entra ID.
+[!INCLUDE [permissions-table](../includes/permissions/auditlogroot-list-signups-permissions.md)]
 
 [!INCLUDE [rbac-self-service-sign-up-apis-read](../includes/rbac-for-apis/rbac-self-service-sign-up-apis-read.md)]
 
@@ -61,7 +59,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [selfServiceSignUp](../resources/selfservicesignup.md) objects in the response body. The collection of objects is listed in descending order based on **createdDateTime**.  CONFIRM THAT THIS IS TRUE
+If successful, this method returns a `200 OK` response code and a collection of [selfServiceSignUp](../resources/selfservicesignup.md) objects in the response body. The collection of objects is listed in descending order based on **createdDateTime**.
 
 ## Example
 
@@ -75,7 +73,7 @@ The following example shows a request.
   "name": "list_selfservicesignup"
 }
 -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/auditLogs/signUps?$filter=createdDateTime ge 2024-07-01T00:00:00Z and createdDateTime le 2024-07-14T23:59:59Z
 ```
 
