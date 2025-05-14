@@ -192,8 +192,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_virtualeventsession_record",
-  "sampleKeys": ["336f94f4-3a81-5130-43e9-88f3-fcb3582cde37","a0f934c324b7785c","2c2454-7613-4d6e-9c7c-4c8"]
+  "name": "get_virtualeventsession_record"
 }
 -->
 ``` http
@@ -311,8 +310,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_attendancerecord_townhall",
-  "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566", "8d62dd52-4dff-4c75-96a9-f905cc3ff942, "2c2454-7613-4d6e-9c7c-4c8""]
+  "name": "list_attendancerecord_townhall"
 }
 -->
 ``` http
