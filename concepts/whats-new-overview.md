@@ -17,6 +17,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+### Teamwork and communications | Messaging
+
+[Determine](/graph/api/teamwork-determineifinteractionisallowed?view=graph-rest-beta) if a specified Microsoft Teams interaction is allowed between the signed-in user and specified users.
+
 ## April 2025: New and generally available
 
 ### Identity and access | Identity and sign-in
