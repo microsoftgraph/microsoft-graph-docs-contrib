@@ -1023,24 +1023,6 @@
       "CreatedDateTime": "2025-05-15T22:49:05.1424181Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "320fa69d-9d6f-4f95-ab0d-febf4ad358cb",
-          "ApiChange": "Parameter",
-          "ChangedApiName": "onBehalfOfUserId",
-          "ChangeType": "Addition",
-          "Description": "Added the `onBehalfOfUserId` parameter to the [clockIn](https://learn.microsoft.com/en-us/graph/api/timeCard?view=graph-rest-1.0) method.",
-          "Target": "clockIn"
-        }
-      ],
-      "Id": "320fa69d-9d6f-4f95-ab0d-febf4ad358cb",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-05-15T22:49:05.1424181Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": ""
     }
   ]
 }
