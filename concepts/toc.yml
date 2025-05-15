@@ -872,6 +872,8 @@ items:
       href: security-dataflow.md
     - name: Authorization
       href: security-authorization.md
+    - name: Data security and governance 
+      href: security-datasecurityandgovernance-overview.md 
     - name: Integrated solutions
       href: security-integration.md
     - name: Information Protection
