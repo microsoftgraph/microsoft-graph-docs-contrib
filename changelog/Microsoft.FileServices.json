@@ -7,7 +7,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "childrenOnly",
           "ChangeType": "Addition",
-          "Description": "Added the `childrenOnly` parameter to the [copy](https://learn.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-1.0) method.",
+          "Description": "Added the `childrenOnly` parameter to the [copy](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-1.0) method.",
           "Target": "copy"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "includeAllVersionHistory",
           "ChangeType": "Addition",
-          "Description": "Added the `includeAllVersionHistory` parameter to the [copy](https://learn.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-1.0) method.",
+          "Description": "Added the `includeAllVersionHistory` parameter to the [copy](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-1.0) method.",
           "Target": "copy"
         }
       ],
