@@ -838,6 +838,11 @@
       ],
       "complexTypes": [
         "challengingWord",
+        "educationAiFeedbackAudienceEngagementSettings",
+        "educationAiFeedbackContentSettings",
+        "educationAiFeedbackCriteria",
+        "educationAiFeedbackDeliverySettings",
+        "educationAiFeedbackSettings",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -856,6 +861,11 @@
         "educationMediaResource",
         "educationPowerPointResource",
         "educationResource",
+        "educationSpeakerCoachAudienceEngagementSettings",
+        "educationSpeakerCoachContentSettings",
+        "educationSpeakerCoachDeliverySettings",
+        "educationSpeakerCoachSettings",
+        "educationSpeakerProgressResource",
         "educationSubmissionIndividualRecipient",
         "educationSubmissionRecipient",
         "educationTeamsAppResource",
@@ -2592,6 +2602,7 @@
         {
           "name": "Data security and compliance (preview)",
           "resources": [
+            "security",
             "activitiesContainer",
             "contentActivity",
             "dataSecurityAndGovernance",
