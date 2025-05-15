@@ -313,14 +313,6 @@
         {
           "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
           "ApiChange": "Enumeration",
-          "ChangedApiName": "longRunningOperationStatus",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **longRunningOperationStatus** enumeration type.",
-          "Target": "longRunningOperationStatus"
-        },
-        {
-          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
-          "ApiChange": "Enumeration",
           "ChangedApiName": "eventSource",
           "ChangeType": "Addition",
           "Description": "Added the **eventSource** enumeration type.",
