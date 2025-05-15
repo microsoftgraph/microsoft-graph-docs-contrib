@@ -69,7 +69,7 @@ Inherits from [entity](../resources/entity.md).
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|How the **assignment** will be graded. |
 |id|String| The unique identifier for the **assignment**. Inherited from [entity](../resources/entity.md). Read-only.|
 |instructions|[itemBody](itembody.md)| Instructions for the **assignment**. This property and the display name tell the student what to do. |
-|languageTag|String| Optional field that specifies the language in which UI notifications for the assignment will be displayed. If languageTag is not provided, the default language will be `en-US`. |
+|languageTag|String| Specifies the language in which UI notifications for the assignment are displayed. If **languageTag** isn't provided, the default language is `en-US`. Optional. |
 |lastModifiedBy|[identitySet](identityset.md)| Who last modified the **assignment**. |
 |lastModifiedDateTime|DateTimeOffset|The date and time on which the **assignment** was modified. A student submission doesn't modify the assignment; only teachers can update assignments. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |moduleUrl|string| The URL of the module from which to access the **assignment**.|
@@ -107,8 +107,8 @@ The following JSON representation shows the resource type.
   "allowLateSubmissions": "Boolean",
   "allowStudentsToAddResourcesToSubmission": "Boolean",
   "assignDateTime": "String (timestamp)",
-  "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
   "assignedDateTime": "String (timestamp)",
+  "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
   "classId": "String",
   "closeDateTime": "String (timestamp)",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
@@ -119,15 +119,14 @@ The following JSON representation shows the resource type.
   "grading": {"@odata.type": "microsoft.graph.educationAssignmentGradeType"},
   "id": "String (identifier)",
   "instructions": {"@odata.type": "microsoft.graph.itemBody"},
+  "languageTag": "String",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "languageTag": "String",
   "moduleUrl": "String",
   "notificationChannelUrl": "String",
   "resourcesFolderUrl": "String",
   "status": "String",
   "webUrl": "String"
- 
 }
 ```
 
