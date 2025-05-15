@@ -1,6 +1,6 @@
 ---
 title: "teamwork: determineIfInteractionIsAllowed"
-description: "Determine if a specified Microsoft Teams interaction is allowed between the caller and a specified set of users."
+description: "Determine if a specified Microsoft Teams interaction is allowed between the signed-in user and specified users."
 author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.subservice: teams
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Determine if a specified Microsoft Teams interaction is allowed between the caller and a specified set of users.
+Determine if a specified Microsoft Teams interaction is allowed between the signed-in user and specified users.
 
 > **Note**: All requests to this API are logged in the Microsoft 365 audit logs of the tenants where the targeted users specified by the **users** parameter exist. For more information, see [Audit log activities](/purview/audit-log-activities#microsoft-teams-activities).
 
