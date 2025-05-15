@@ -52,7 +52,7 @@ In the request body, provide a JSON object with the following parameters.
 |:---|:---|:---|
 |isAtApprovedLocation|Boolean|Indicates whether this action happens at an approved location.|
 |notes|[itemBody](../resources/itembody.md)|Notes for the clock in.|
-|onBehalfOfUserId|string|The ID of the user you are clocking in on behalf of|
+|onBehalfOfUserId|string|The ID of the user you are clocking in on behalf of.|
 
 ## Response
 
@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a [timeCard
 
 ## Examples
 
-### Example 1: Clock in as yourself.
+### Example 1: Clock in as yourself
 #### Request
 The following example shows a request.
 
@@ -201,7 +201,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {

@@ -53,7 +53,7 @@ In the request body, provide a JSON object with the following parameters.
 |isAtApprovedLocation|Boolean|Indicates whether this action happens at an approved location.|
 |notes|[itemBody](../resources/itembody.md)|Notes for the clock in.|
 |atApprovedLocation (deprecated)|Boolean|Indicates whether this action happens at an approved location. This property will be removed by November 27, 2027. Use `isAtApprovedLocation` instead. `atApprovedLocation` and `isAtApprovedLocation` always have the same value, so setting one automatically sets the value for the other. If both are included in the request with different values, the value for `isAtApprovedLocation` takes precedence.|
-|onBehalfOfUserId|string|The ID of the user you are clocking in on behalf of|
+|onBehalfOfUserId|string|The ID of the user you are clocking in on behalf of.|
 
 ## Response
 
@@ -207,7 +207,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
