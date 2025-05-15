@@ -1,6 +1,76 @@
 {
   "changelog": [
     {
+      "ChangeList":[
+        {
+          "Id": "aec55ab7-4c55-40ed-a6d5-8fabde7f71b5",
+          "ApiChange": "Property",
+          "ChangedApiName": "videoOnDemandWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **videoOnDemandWebUrl** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "aec55ab7-4c55-40ed-a6d5-8fabde7f71b5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-30T04:07:42.7434446Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [        
+        {
+          "Id": "c6a673eb-a24f-4886-9843-93ffa566458f",
+          "ApiChange": "Property",
+          "ChangedApiName": "sequenceNumber",
+          "ChangeType": "Addition",
+          "Description": "Added the **sequenceNumber** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "c6a673eb-a24f-4886-9843-93ffa566458f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-07T18:27:57.4426258Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"  
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalRegistrationInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalRegistrationInformation** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-1.0) resource.",
+          "Target": "attendanceRecord"
+        },
+        {
+          "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationId** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-1.0) resource.",
+          "Target": "attendanceRecord"
+        },
+        {
+          "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalEventInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalEventInformation** property to the [meetingAttendanceReport](https://learn.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-1.0) resource.",
+          "Target": "meetingAttendanceReport"
+        }
+      ],
+      "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-04-07T14:47:19.0842305Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },   
+    {
       "ChangeList": [
         {
           "Id": "999068ba-8006-4d1b-a24b-4d72d4bdcbb7",
@@ -1739,7 +1809,7 @@
         {
           "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
           "ApiChange": "Resource",
-          "ChangedApiName": "chatrestrictions",
+          "ChangedApiName": "chatRestrictions",
           "ChangeType": "Addition",
           "Description": "Added the [chatRestrictions](https://learn.microsoft.com/en-us/graph/api/resources/chatrestrictions?view=graph-rest-beta) resource type.",
           "Target": "chatRestrictions"
@@ -1749,7 +1819,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "chatRestrictions",
           "ChangeType": "Addition",
-          "Description": "Added the **chatrestrictions** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **chatRestrictions** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         }
       ],
@@ -5477,6 +5547,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-03-27T15:19:10.1478061Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "41819a21-f22e-4b73-9556-39d1b8191eee",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "aiInsights",
+          "ChangeType": "Addition",
+          "Description": "Added the **aiInsights** relationship to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "41819a21-f22e-4b73-9556-39d1b8191eee",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-03T09:04:47.884691Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     }

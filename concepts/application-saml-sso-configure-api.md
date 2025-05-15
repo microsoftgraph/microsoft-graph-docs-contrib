@@ -441,9 +441,6 @@ Content-type: application/json
     }
 }
 ```
->[!NOTE]
-> The identifier URI format needs to follow a supported format and cannot end in a trailing slash.
->For more information, see [Security best practices for app registration](/entra/identity-platform/security-best-practices-for-app-registration#application-id-uri-also-known-as-identifier-uri).
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-update-application-csharp-snippets.md)]

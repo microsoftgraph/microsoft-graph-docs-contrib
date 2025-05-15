@@ -11,6 +11,7 @@ from msgraph_beta.generated.models.conditional_access_condition_set import Condi
 from msgraph_beta.generated.models.conditional_access_applications import ConditionalAccessApplications
 from msgraph_beta.generated.models.conditional_access_users import ConditionalAccessUsers
 from msgraph_beta.generated.models.conditional_access_session_controls import ConditionalAccessSessionControls
+from msgraph_beta.generated.models.global_secure_access_filtering_profile_session_control import GlobalSecureAccessFilteringProfileSessionControl
 from msgraph_beta.generated.models.conditional_access_policy_state import ConditionalAccessPolicyState
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ConditionalAccessPolicy(
@@ -28,12 +29,10 @@ request_body = ConditionalAccessPolicy(
 	),
 	display_name = "UserA Access to AI and Bing",
 	session_controls = ConditionalAccessSessionControls(
-		additional_data = {
-				"global_secure_access_filtering_profile" : {
-						"profile_id" : "dddddddd-9999-0000-1111-eeeeeeeeeeee",
-						"is_enabled" : True,
-				},
-		}
+		global_secure_access_filtering_profile = GlobalSecureAccessFilteringProfileSessionControl(
+			profile_id = "dddddddd-9999-0000-1111-eeeeeeeeeeee",
+			is_enabled = True,
+		),
 	),
 	state = ConditionalAccessPolicyState.Enabled,
 )

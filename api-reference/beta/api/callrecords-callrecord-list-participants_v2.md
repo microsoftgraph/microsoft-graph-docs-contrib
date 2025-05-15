@@ -16,10 +16,10 @@ Namespace: microsoft.graph.callRecords
 
 Get the list of [participant](../resources/callrecords-participant.md) objects associated with a [callRecord](../resources/callrecords-callrecord.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 > [!NOTE]
 > A known issue related to missing participants is associated with this API. For details, see [Known issues](https://developer.microsoft.com/graph/known-issues?search=31852).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
