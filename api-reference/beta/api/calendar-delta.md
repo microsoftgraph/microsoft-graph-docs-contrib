@@ -1,6 +1,6 @@
 ---
 title: "calendar: delta"
-description: "Get a set of calendars that were added, deleted, or updated in a user's mailbox"
+description: "Get a set of calendars added, deleted, or updated in a user's mailbox."
 ms.localizationpriority: medium
 author: "vikailas"
 ms.subservice: "outlook"
@@ -13,7 +13,7 @@ ms.date: 06/22/2024
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get a set of [calendar](../resources/calendar.md) resources that are added, deleted, or updated in one or more calendars.
+Get a set of [calendar](../resources/calendar.md) resources added, deleted, or updated in one or more calendars.
 
 Typically, synchronizing calendars in a mailbox in a local store entails a round of multiple **delta** function calls. The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates). Using deltas allows you to incrementally maintain and synchronize a local store of calendars in the specified mailbox.
 
