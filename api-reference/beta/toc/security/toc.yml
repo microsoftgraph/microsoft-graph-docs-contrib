@@ -246,9 +246,9 @@ items:
       href: ../../api/usagerightsincluded-get.md
     - name: Get
       href: ../../api/security-sensitivitylabel-get.md
-    - name: computeInheritance
+    - name: Compute inheritance
       href: ../../api/sensitivitylabel-computeinheritance.md
-    - name: computeRightsAndInheritance
+    - name: Compute rights and inheritance
       href: ../../api/sensitivitylabel-computerightsandinheritance.md
     - name: Evaluate application
       href: ../../api/security-sensitivitylabel-evaluateapplication.md
@@ -812,9 +812,9 @@ items:
       href: ../../api/usagerightsincluded-get.md
     - name: Get
       href: ../../api/security-sensitivitylabel-get.md
-    - name: computeInheritance
+    - name: Compute inheritance
       href: ../../api/sensitivitylabel-computeinheritance.md
-    - name: computeRightsAndInheritance
+    - name: Compute rights and inheritance
       href: ../../api/sensitivitylabel-computerightsandinheritance.md
     - name: Evaluate application
       href: ../../api/security-sensitivitylabel-evaluateapplication.md
