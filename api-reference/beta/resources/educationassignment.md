@@ -69,7 +69,7 @@ Inherits from [entity](../resources/entity.md).
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|How the **assignment** will be graded. |
 |id|String| The unique identifier for the **assignment**. Inherited from [entity](../resources/entity.md). Read-only.|
 |instructions|[itemBody](itembody.md)| Instructions for the **assignment**. This property and the display name tell the student what to do. |
-|languageTag|[String](identityset.md)| Optional field that specifies the language in which UI notifications for the assignment will be displayed. If languageTag is not provided, the default language will be `en-US`. |
+|languageTag|String| Optional field that specifies the language in which UI notifications for the assignment will be displayed. If languageTag is not provided, the default language will be `en-US`. |
 |lastModifiedBy|[identitySet](identityset.md)| Who last modified the **assignment**. |
 |lastModifiedDateTime|DateTimeOffset|The date and time on which the **assignment** was modified. A student submission doesn't modify the assignment; only teachers can update assignments. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |moduleUrl|string| The URL of the module from which to access the **assignment**.|
