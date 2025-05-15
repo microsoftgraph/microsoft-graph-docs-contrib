@@ -34,7 +34,7 @@ GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions
 
 ## Optional query parameters
 
-This method supports [date range and top parameters](/graph/query-parameters) to customize the response, as shown in the following example. For optimal performance, the recommended top value is 100.
+This method supports the `$top` and data ranges [OData query parameters](/graph/query-parameters) to customize the response, as shown in the following example. For optimal performance, the recommended `$top` value is `100`.
 
 <!-- { "blockType": "ignored" } -->
 ``` http
