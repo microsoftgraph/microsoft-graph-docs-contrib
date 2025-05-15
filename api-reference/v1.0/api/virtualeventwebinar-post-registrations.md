@@ -93,7 +93,7 @@ Content-Type: application/json
 
 {
   "externalRegistrationInformation": {
-    "referrer": "Facebook",
+    "referrer": "Fabrikam",
     "registrationId": "myExternalRegistrationId"
   },
   "preferredTimezone":"Pacific Standard Time",
@@ -161,8 +161,6 @@ Content-Type: application/json
 
 ---
 
----
-
 #### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -184,7 +182,7 @@ Content-Type: application/json
   "lastName": "Pham",
   "email": "EmileeMPham@contoso.com",
   "externalRegistrationInformation": {
-    "referrer": "Facebook",
+    "referrer": "Fabrikam",
     "registrationId": "myExternalRegistrationId"
   },
   "status": "registered",
@@ -247,7 +245,7 @@ Content-Type: application/json
   "lastName" : "Demoss",
   "email" : "DianeDemoss@contoso.com",
   "externalRegistrationInformation": {
-    "referrer": "Facebook",
+    "referrer": "Fabrikam",
     "registrationId": "myExternalRegistrationId"
   },
   "preferredTimezone":"Pacific Standard Time",
@@ -311,8 +309,6 @@ Content-Type: application/json
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-virtualeventregistration-application-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 

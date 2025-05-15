@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Discover the latest schema definition for provisioning to an application. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
