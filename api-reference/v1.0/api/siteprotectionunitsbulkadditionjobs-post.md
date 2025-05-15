@@ -83,7 +83,6 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.siteProtectionUnitsBulkAdditionJob"
 }
 -->
-
 ``` http
 HTTP/1.1 201 Created
 Content-type: application/json
