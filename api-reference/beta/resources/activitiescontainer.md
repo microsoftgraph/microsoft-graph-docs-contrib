@@ -1,6 +1,6 @@
 ---
 title: "activitiesContainer resource type"
-toc.title: "Activities container"
+toc.title: "Activities container (preview) "
 description: "Represents a container for different types of activity logs related to data security and governance, such as content activities."
 author: "ArunGedela"
 ms.date: 04/08/2025
