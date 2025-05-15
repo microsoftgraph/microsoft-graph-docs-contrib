@@ -73,7 +73,7 @@ For a list of possible error responses, see [Backup Storage API error responses]
 ### Request
 
 The following example shows a request that adds a list of drives to the specified Onedrive for work or school restore session in a bulk operation.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_driverestoreartifactsbulkadditionrequest_from_"

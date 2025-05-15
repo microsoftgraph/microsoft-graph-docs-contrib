@@ -59,7 +59,7 @@ For a list of possible error responses, see [Backup Storage API error responses]
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_driverestoreartifactsbulkadditionrequest"
@@ -80,4 +80,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-

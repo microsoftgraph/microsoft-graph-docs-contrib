@@ -73,7 +73,7 @@ For a list of possible error responses, see [Backup Storage API error responses]
 ### Request
 
 The following example shows a request that adds a list of mailboxes to the specified Exchange restore session in a bulk operation.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_mailboxrestoreartifactsbulkadditionrequest_from_"
