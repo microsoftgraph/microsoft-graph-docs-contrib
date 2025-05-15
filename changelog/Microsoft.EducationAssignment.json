@@ -29,6 +29,105 @@
     {
       "ChangeList": [
         {
+          "Id": "d4dd0d2f-031a-453a-9f5a-21d0529dd1ed",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "educationSpeechType",
+          "ChangeType": "Addition",
+          "Description": "Added the **educationSpeechType** enumeration type.",
+          "Target": "educationSpeechType"
+        },
+        {
+          "Id": "d4dd0d2f-031a-453a-9f5a-21d0529dd1ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationAiFeedbackAudienceEngagementSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationAiFeedbackAudienceEngagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackAudienceEngagementSettings?view=graph-rest-beta) resource type.",
+          "Target": "educationAiFeedbackAudienceEngagementSettings"
+        },
+        {
+          "Id": "d4dd0d2f-031a-453a-9f5a-21d0529dd1ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationAiFeedbackContentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationAiFeedbackContentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackContentSettings?view=graph-rest-beta) resource type.",
+          "Target": "educationAiFeedbackContentSettings"
+        },
+        {
+          "Id": "d4dd0d2f-031a-453a-9f5a-21d0529dd1ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationAiFeedbackCriteria",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationAiFeedbackCriteria](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackCriteria?view=graph-rest-beta) resource type.",
+          "Target": "educationAiFeedbackCriteria"
+        },
+        {
+          "Id": "d4dd0d2f-031a-453a-9f5a-21d0529dd1ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationAiFeedbackDeliverySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationAiFeedbackDeliverySettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackDeliverySettings?view=graph-rest-beta) resource type.",
+          "Target": "educationAiFeedbackDeliverySettings"
+        },
+        {
+          "Id": "d4dd0d2f-031a-453a-9f5a-21d0529dd1ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationAiFeedbackSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationAiFeedbackSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackSettings?view=graph-rest-beta) resource type.",
+          "Target": "educationAiFeedbackSettings"
+        },
+        {
+          "Id": "d4dd0d2f-031a-453a-9f5a-21d0529dd1ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSpeakerCoachAudienceEngagementSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationSpeakerCoachAudienceEngagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachAudienceEngagementSettings?view=graph-rest-beta) resource type.",
+          "Target": "educationSpeakerCoachAudienceEngagementSettings"
+        },
+        {
+          "Id": "d4dd0d2f-031a-453a-9f5a-21d0529dd1ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSpeakerCoachContentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationSpeakerCoachContentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachContentSettings?view=graph-rest-beta) resource type.",
+          "Target": "educationSpeakerCoachContentSettings"
+        },
+        {
+          "Id": "d4dd0d2f-031a-453a-9f5a-21d0529dd1ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSpeakerCoachDeliverySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationSpeakerCoachDeliverySettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachDeliverySettings?view=graph-rest-beta) resource type.",
+          "Target": "educationSpeakerCoachDeliverySettings"
+        },
+        {
+          "Id": "d4dd0d2f-031a-453a-9f5a-21d0529dd1ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSpeakerCoachSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationSpeakerCoachSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachSettings?view=graph-rest-beta) resource type.",
+          "Target": "educationSpeakerCoachSettings"
+        },
+        {
+          "Id": "d4dd0d2f-031a-453a-9f5a-21d0529dd1ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSpeakerProgressResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationSpeakerProgressResource](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerProgressResource?view=graph-rest-beta) resource type.",
+          "Target": "educationSpeakerProgressResource"
+        }
+      ],
+      "Id": "d4dd0d2f-031a-453a-9f5a-21d0529dd1ed",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-20T22:12:29.2754312Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    { 
+      "ChangeList": 
+      [
+        {
           "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
           "ApiChange": "Method",
           "ChangedApiName": "getRecentlyModifiedSubmissions",
@@ -2261,6 +2360,24 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-11T23:49:45.847Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3365a6d2-1e3f-45e8-807f-5d7d4ec9e8e7",
+          "ApiChange": "Property",
+          "ChangedApiName": "expirationDate,educationSynchronizationProfile",
+          "ChangeType": "Addition",
+          "Description": "Added new **expirationDate** property to the **educationSynchronizationProfile** resource.",
+          "Target": "**educationSynchronizationProfile**"
+        }
+      ],
+      "Id": "3365a6d2-1e3f-45e8-807f-5d7d4ec9e8e7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Education",
       "SubArea": ""
     },

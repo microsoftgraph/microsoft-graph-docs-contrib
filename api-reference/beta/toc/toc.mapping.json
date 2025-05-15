@@ -422,6 +422,12 @@
       ]
     },
     {
+      "name": "Data Security and Governance (preview)",
+      "resources": [
+        "userDataSecurityAndGoverance"
+      ]
+    },
+    {
       "name": "Device and app management",
       "childNodes": [
         {
@@ -832,6 +838,11 @@
       ],
       "complexTypes": [
         "challengingWord",
+        "educationAiFeedbackAudienceEngagementSettings",
+        "educationAiFeedbackContentSettings",
+        "educationAiFeedbackCriteria",
+        "educationAiFeedbackDeliverySettings",
+        "educationAiFeedbackSettings",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -850,6 +861,11 @@
         "educationMediaResource",
         "educationPowerPointResource",
         "educationResource",
+        "educationSpeakerCoachAudienceEngagementSettings",
+        "educationSpeakerCoachContentSettings",
+        "educationSpeakerCoachDeliverySettings",
+        "educationSpeakerCoachSettings",
+        "educationSpeakerProgressResource",
         "educationSubmissionIndividualRecipient",
         "educationSubmissionRecipient",
         "educationTeamsAppResource",
@@ -2584,6 +2600,57 @@
           ]
         },
         {
+          "name": "Data security and compliance (preview)",
+          "resources": [
+            "security",
+            "activitiesContainer",
+            "contentActivity",
+            "dataSecurityAndGovernance",
+            "tenantDataSecurityAndGovernance",
+            "tenantProtectionScopeContainer",
+            "userDataSecurityAndGovernance",
+            "userProtectionScopeContainer",
+           ],
+            "complexTypes": [
+              "activityMetadata",
+              "aiInteractionPlugin",
+              "binaryContent",
+              "blockAccessAction",
+              "classifcationErrorBase",
+              "classificationError",
+              "classificationInnerError",
+              "contentBase",
+              "customMetadataDictionary",
+              "deviceMetadata",
+              "dlpActionInfo",
+              "groupScope",
+              "integratedApplicationMetadata",
+              "notifyUserAction",
+              "operatingSystemSpecifications",
+              "policyBinding",
+              "policyLocation",
+              "policyLocationApplication",
+              "policyLocationDomain",
+              "policyLocationUrl",
+              "policyScopeBase",
+              "policyTenantScope",
+              "policyUserScope",
+              "processContentBatchRequest",
+              "processConversationMetadata",
+              "processContentRequest",
+              "processContentResponse",
+              "processContentResponses",
+              "processConversationMetadata",
+              "processFileMetadata",
+              "processingError",
+              "protectedApplicationMetadata",
+              "scopeBase",
+              "tenantScope",
+              "textContent",
+              "userScope" 
+            ]
+          },
+        {
           "name": "eDiscovery",
           "overview": "../../resources/security-ediscovery-apioverview.md",
           "resources": [
@@ -3045,6 +3112,7 @@
                 "onlineMeeting",
                 "externalMeetingRegistration",
                 "meetingRegistration",
+                "callAiInsight",
                 "callRecording",
                 "callTranscript"
               ],
@@ -3066,6 +3134,15 @@
                     }
                   ]
                 }
+              ],
+              "complexTypes": [
+                "actionItem",
+                "aiOnlineMeeting",
+                "callAiInsightViewPoint",
+                "meetingNote",
+                "meetingNoteSubpoint",
+                "mentionEvent",
+                "identitySet"
               ]
             },
             {
