@@ -1,6 +1,6 @@
 ---
 title: "teamwork: determineIfInteractionIsAllowed"
-description:  Determine if the specified interaction is allowed between the caller and the specified users.
+description: "Determine if a specified Microsoft Teams interaction is allowed between the caller and a specified set of users."
 author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.subservice: teams
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Determines if a specified Microsoft Teams interaction is allowed between the caller and a specified set of users.
+Determine if a specified Microsoft Teams interaction is allowed between the caller and a specified set of users.
 
-> **Note**: All requests to this API are logged in the M365 audit logs of the tenants where the targeted users (`users` parameter) exist. Refer to [this documentation](https://learn.microsoft.com/purview/audit-log-activities#microsoft-teams-activities) and search for `CreateThreadProbe` to learn more about what is logged.
+> **Note**: All requests to this API are logged in the Microsoft 365 audit logs of the tenants where the targeted users specified by the **users** parameter exist. For more information, see [Audit log activities](/purview/audit-log-activities#microsoft-teams-activities).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -47,24 +47,24 @@ POST /teamwork/determineIfInteractionIsAllowed
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameters that you can use with this action.
 
 | Parameter          | Type                                                               | Description                                                  |
 | :----------------- | :----------------------------------------------------------------- | :----------------------------------------------------------- |
-| interactionType    | [teamworkInteractionType](../resources/teamworkinteractiontype.md) | The type of interaction on Microsoft Teams. |
-| users              | [identity](../resources/identity.md) collection                    | The collection of target users with which the caller wants to determine whether interaction is allowed. Supported derived types are [teamworkUserIdentity](../resources/teamworkuseridentity.md) and [emailIdentity](../resources/emailidentity.md). |
+| interactionType    | [teamworkInteractionType](../resources/teamwork.md#teamworkinteractiontype-values) | The type of interaction on Microsoft Teams. |
+| users              | [identity](../resources/identity.md) collection                    | The collection of target users with which the caller wants to determine whether interaction is allowed. The supported derived types are [emailIdentity](../resources/emailidentity.md) and [teamworkUserIdentity](../resources/teamworkuseridentity.md). |
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and either a `true` or `false` value in the response body.
+If successful, this action returns a `200 OK` response code and a Boolean in the response body.
 
 ## Examples
 
-### Example 1: Determine if the current user can create a chat with a user in the same tenant, using their ID.
+### Example 1: Determine if the signed-in user can create a chat with another user in the same tenant using their ID
 
-The following example shows a request that determines whether the current user (authenticated via. delegated context) can create a chat with one other user in the same tenant, by specifying the other user's ID.
+The following example shows a request that determines whether the signed-in user, authenticated via delegated context, can create a chat with another user in the same tenant by specifying the other user's ID.
 
 #### Request
 
@@ -110,9 +110,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Determine if the current user can create a chat with a user in another tenant, using their ID and tenant ID.
+### Example 2: Determine if the signed-in user can create a chat with another user in a different tenant using their ID and tenant ID
 
-The following example shows a request that determines whether the current user (authenticated via. delegated context) can create a chat with one other user in a different tenant, using the other user's ID and tenant ID.
+The following example shows a request that determines whether the signed-in user, authenticated via delegated context, can create a chat with another user in a different tenant using the other user's ID and tenant ID.
 
 #### Request
 
@@ -159,9 +159,11 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Determine if the current user can create a chat with another user, using their user principal name.
+### Example 3: Determine if the signed-in user can create a chat with another user using their user principal name
 
-The following example shows a request that determines whether the current user (authenticated via. delegated context) can create a chat with one other user, by specifying the other user's user principal name. When specifying the user principal name of a user in another tenant, `tenantId` does not need to be specified.
+The following example shows a request that determines whether the signed-in user (authenticated via. delegated context) can create a chat with one other user, by specifying the other user's user principal name. When specifying the user principal name of a user in another tenant, `tenantId` does not need to be specified.
+
+The following example shows a request that determines whether the signed-in user, authenticated via delegated context, can create a chat with another user by specifying the other user's user principal name. When you specify the user principal name of a user in another tenant, **tenantId** doesn't need to be specified.
 
 #### Request
 
@@ -207,9 +209,9 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Determine if the current user can create a chat with another user, using their email.
+### Example 4: Determine if the signed-in user can create a chat with another user using their email
 
-The following example shows a request that determines whether the current user (authenticated via. delegated context) can create a chat with one other user, by specifying the other user's email.
+The following example shows a request that determines whether the signed-in user, authenticated via delegated context, can create a chat with another user by specifying the other user's email.
 
 #### Request
 
@@ -255,9 +257,9 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Determine if the current user can create a chat with three other users.
+### Example 5: Determine if the signed-in user can create a chat with three other users
 
-The following example shows a request that determines whether the current user (authenticated via. delegated context) can create a chat with three other users. It uses a mix of the supported `userIdentity` types. In this example, the interaction is not allowed.
+The following example shows a request that determines whether the signed-in user, authenticated via delegated context, can create a chat with three other users. It uses a mix of the supported **userIdentity** types. In this example, the interaction isn't allowed.
 
 #### Request
 
