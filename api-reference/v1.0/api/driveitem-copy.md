@@ -1,7 +1,7 @@
 ---
 author: spgraph-docs-team
 description: "Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name."
-ms.date: 09/10/2017
+ms.date: 05/14/2025
 title: "driveItem: copy"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
