@@ -1,6 +1,6 @@
 ---
 title: "activitiesContainer resource type"
-toc.title: "activitiesContainer resource type (preview)"
+toc.title: "Activities container"
 description: "Represents a container for different types of activity logs related to data security and governance, such as content activities."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,7 +9,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# activitiesContainer
+# activitiesContainer resource type
 
 Namespace: microsoft.graph
 
