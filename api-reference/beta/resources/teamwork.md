@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 |[List deletedTeams](../api/teamwork-list-deletedteams.md)|[deletedTeam](../resources/deletedteam.md) collection|Get a list of the [deletedTeam](../resources/deletedteam.md) objects and their properties.|
 |[List teamTemplates](../api/teamwork-list-teamtemplates.md)|[teamTemplate](../resources/teamtemplate.md) collection|Get the list of [teamTemplate](../resources/teamtemplate.md) objects available for the tenant. |
 |[Get teamwork](../api/teamwork-get.md)|[teamwork](../resources/teamwork.md)|Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.|
-|[Determine if interaction is allowed](../api/teamwork-determineifinteractionisallowed.md)|Boolean|Determines if the logged-in user can interact with the specified users given a specified interaction type.|
+|[Determine if interaction is allowed](../api/teamwork-determineifinteractionisallowed.md)|Boolean|Determine if a specified Microsoft Teams interaction is allowed between the signed-in user and specified users.|
 
 ## Properties
 |Property|Type|Description|
