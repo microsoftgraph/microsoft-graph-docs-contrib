@@ -1,6 +1,32 @@
 {
   "changelog": [
       {
+      "ChangeList": [
+        {
+          "Id": "635880d1-3e93-4996-9771-2f7eeaa16247",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "childrenOnly",
+          "ChangeType": "Addition",
+          "Description": "Added the `childrenOnly` parameter to the [copy](https://learn.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-1.0) method.",
+          "Target": "copy"
+        },
+        {
+          "Id": "635880d1-3e93-4996-9771-2f7eeaa16247",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "includeAllVersionHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeAllVersionHistory` parameter to the [copy](https://learn.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-1.0) method.",
+          "Target": "copy"
+        }
+      ],
+      "Id": "635880d1-3e93-4996-9771-2f7eeaa16247",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-05-09T20:00:01.538089Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+      },
+      {
         "ChangeList": [
           {
             "Id": "6a814e1a-0f37-4c0c-8528-20fe037ec6e1",
