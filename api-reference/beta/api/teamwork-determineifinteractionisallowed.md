@@ -161,8 +161,6 @@ Content-type: application/json
 
 ### Example 3: Determine if the signed-in user can create a chat with another user using their user principal name
 
-The following example shows a request that determines whether the signed-in user (authenticated via. delegated context) can create a chat with one other user, by specifying the other user's user principal name. When specifying the user principal name of a user in another tenant, `tenantId` does not need to be specified.
-
 The following example shows a request that determines whether the signed-in user, authenticated via delegated context, can create a chat with another user by specifying the other user's user principal name. When you specify the user principal name of a user in another tenant, **tenantId** doesn't need to be specified.
 
 #### Request
