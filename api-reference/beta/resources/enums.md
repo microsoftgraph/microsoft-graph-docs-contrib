@@ -5218,3 +5218,12 @@ Possible values for user account types (group membership), per Windows definitio
 |manual|
 |dynamicRule|
 |unknownFutureValue|
+
+### educationSpeechType values 
+
+|Member|
+|:---|
+|informative|
+|personal|
+|persuasive|
+|unknownFutureValue|
