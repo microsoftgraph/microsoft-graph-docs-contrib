@@ -83,12 +83,12 @@ The following JSON representation shows the resource type
   "firstName": "String",
   "id": "String (identifier)",  
   "lastName": "String",
+  "preferredLanguage": "String"
+  "preferredTimezone": "String",
   "registrantVideoOnDemandWebUrl" : "String",
   "registrationDateTime": "String (timestamp)",
   "registrationQuestionAnswers": [{"@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"}],
   "status": "String",
   "userId": "String",
-  "preferredTimezone": "String",
-  "preferredLanguage": "String"
 }
 ```
