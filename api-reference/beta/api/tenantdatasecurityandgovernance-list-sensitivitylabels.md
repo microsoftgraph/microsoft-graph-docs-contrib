@@ -1,6 +1,6 @@
 ---
-title: "Get sensitivityLabel"
-description: "Get a sensitivity label available for the entire tenant."
+title: "userDataSecurityAndGovernance: List sensitivityLabels"
+description: "List the sensitivity labels available for the entire tenant."
 author: "ArunGedela"
 ms.date: 04/21/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Get sensitivityLabel
+# userDataSecurityAndGovernance: List sensitivityLabels
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a sensitivity label available for the entire tenant.
+List the sensitivity labels available for the entire tenant.
 
 ## Permissions
 
@@ -27,10 +27,10 @@ When using application permissions (`SensitivityLabels.Read.All`), the API retur
 
 ## HTTP request
 
-Get labels for all tenant labels:
+Get labels available in the tenant:
 
 ```http
-GET /security/dataSecurityAndGovernance/sensitivityLabels/{labelId}
+GET /security/dataSecurityAndGovernance/sensitivityLabels
 ```
 
 ## Request headers
@@ -58,16 +58,18 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-The following example shows a request to get a label available in the tenant.
+Get tenant labels filtered by content format and ID with an application permission.
 
 #### Request
+
+The following example shows a request to get labels for the tenant, filtered for the `File` content format and specific IDs.
 
 <!-- {
   "blockType": "request",
   "name": "get_sensitivitylabels_tenant_filtered_app"
 } -->
 ```http
-GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/4e4234dd-377b-42a3-935b-0e42f138fa23
+GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels?$filter=applicableTo eq 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')
 Authorization: Bearer {token}
 Client-Request-Id: a0b9c8d7-e6f5-a4b3-c2d1-e0f9a8b7c6d5
 ```

@@ -1,6 +1,6 @@
 ---
-title: "Get sensitivityLabel"
-description: "Get a sensitivity label available for the entire tenant."
+title: "userDataSecurityAndGovernance: List sensitivityLabels"
+description: "List the sensitivity labels available to a specific user"
 author: "ArunGedela"
 ms.date: 04/21/2025
 ms.localizationpriority: medium
@@ -8,29 +8,30 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Get sensitivityLabel
+# Get sensitivityLabels
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a sensitivity label available for the entire tenant.
+Get the list of sensitivity labels available to a specific user or for the entire tenant.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "purviewecosystem-sensitivitylabels-getsensitivitylabels-permissions" } -->
-[!INCLUDE [permissions-table](../includes/permissions/sensitivitylabel-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/userdatasecurityandgovernance-list-sensitivitylabels-permissions.md)]
 
-When using application permissions (`SensitivityLabels.Read.All`), the API returns all labels for the tenant by default.
+When using application permissions (`SensitivityLabels.Read.All`), the API returns all labels for the tenant by default. Use the `scopeToUser` query parameter to retrieve labels for a specific user in the application context.
+
 
 ## HTTP request
 
-Get labels for all tenant labels:
+Get labels for a specific user:
 
 ```http
-GET /security/dataSecurityAndGovernance/sensitivityLabels/{labelId}
+GET /users/{usersId}/dataSecurityAndGovernance/sensitivityLabels
 ```
 
 ## Request headers
@@ -44,6 +45,7 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels/{labelId}
 
 | Parameter      | Type             | Description                                                                                                                                                                                                                                                                                           |
 | :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| isScopedToUser | Boolean          | Optional. Used only with application permissions (`/security/...` path). If value set to 'true' to scope labels to the current user. If omitted with application permissions, returns all tenant labels. |
 | locale         | String           | Optional. Specifies the locale for localizable fields.                                                                                                                                        |
 | applicableTo   | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. Possible values are `Email`,`File`,`SchematizedData`,`Site`,`Teamwork`,`UnifiedGroup`. |
 | id             | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
@@ -58,16 +60,18 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-The following example shows a request to get a label available in the tenant.
+Get tenant labels filtered by content format and ID with an application permission.
 
 #### Request
+
+The following example shows a request to get labels for the tenant, filtered for the `File` content format and specific IDs.
 
 <!-- {
   "blockType": "request",
   "name": "get_sensitivitylabels_tenant_filtered_app"
 } -->
 ```http
-GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/4e4234dd-377b-42a3-935b-0e42f138fa23
+GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels?$filter=applicableTo eq 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')
 Authorization: Bearer {token}
 Client-Request-Id: a0b9c8d7-e6f5-a4b3-c2d1-e0f9a8b7c6d5
 ```
