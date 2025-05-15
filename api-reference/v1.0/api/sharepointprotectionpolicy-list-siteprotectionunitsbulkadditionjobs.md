@@ -54,7 +54,6 @@ The `siteWebUrls` and `siteIds` values are omitted from the response body in ord
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sharepointprotectionpolicy_list_siteprotectionunitsbulkadditionjobs"

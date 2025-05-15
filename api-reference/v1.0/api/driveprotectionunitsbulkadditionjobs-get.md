@@ -54,7 +54,6 @@ If successful, this method returns a `200 OK` response code and a [driveProtecti
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveprotectionunitsbulkadditionjobs_get"
