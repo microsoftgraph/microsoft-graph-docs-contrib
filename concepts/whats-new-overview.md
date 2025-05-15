@@ -50,6 +50,10 @@ Use the [educationSpeakerProgressResource](/graph/api/resources/educationspeaker
 
 Added `microsoftThreatIntelligence` as a supported detection source for the **detectionSource** and **serviceSource** properties of the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource.
 
+### Teamwork and communications
+
+[Add custom activity icons in activity feed notifications](/graph/teams-send-activityfeednotifications).
+
 ### Teamwork and communications | Calls and online meetings
 
 Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it's over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight?view=graph-rest-beta&preserve-view=true).

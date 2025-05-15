@@ -12,8 +12,8 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new CopilotAdminLimitedMode
 {
 	OdataType = "#microsoft.graph.copilotAdminLimitedMode",
-	IsEnabledForGroup = boolean,
-	GroupId = "String",
+	IsEnabledForGroup = true,
+	GroupId = "4c563cdf-0efa-44c5-a384-dbf57db277df",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
