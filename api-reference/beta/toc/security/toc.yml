@@ -216,7 +216,7 @@ items:
       href: ../../resources/security.md
     - name: Run hunting query
       href: ../../api/security-security-runhuntingquery.md
-  - name: activitiesContainer resource type (preview)
+  - name: Activities container
     href: ../../resources/activitiescontainer.md
   - name: contentActivity resource type (preview)
     items:
@@ -232,7 +232,7 @@ items:
       href: ../../api/tenantprotectionscopecontainer-compute.md
     - name: Process content async
       href: ../../api/tenantdatasecurityandgovernance-processcontentasync.md
-  - name: labelContentRight resource type (preview)
+  - name: Label content right
     href: ../../resources/labelcontentright.md
   - name: Sensitivity label
     items:
@@ -272,9 +272,9 @@ items:
       href: ../../resources/tenantprotectionscopecontainer.md
     - name: Compute protection scopes
       href: ../../api/tenantprotectionscopecontainer-compute.md
-  - name: usageRightsIncluded resource type (preview)
+  - name: Usage rights included
     items:
-    - name: usageRightsIncluded resource type (preview)
+    - name: Usage rights included
       href: ../../resources/usagerightsincluded.md
     - name: Get
       href: ../../api/usagerightsincluded-get.md
@@ -310,7 +310,7 @@ items:
       href: ../../resources/classificationerror.md
     - name: classificationInnerError resource type (preview)
       href: ../../resources/classificationinnererror.md
-    - name: computeRightsAndInheritanceResult (preview)
+    - name: Compute rights and inheritance result
       href: ../../resources/computerightsandinheritanceresult.md
     - name: contentBase resource type (preview)
       href: ../../resources/contentbase.md
@@ -360,7 +360,7 @@ items:
       href: ../../resources/processingerror.md
     - name: Protected application metadata
       href: ../../resources/protectedapplicationmetadata.md
-    - name: protectedContent resource type (preview)
+    - name: Protected content
       href: ../../resources/protectedcontent.md
     - name: scopeBase resource type (preview)
       href: ../../resources/scopebase.md
