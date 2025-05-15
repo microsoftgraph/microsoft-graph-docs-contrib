@@ -4,7 +4,7 @@ description: "Use the Microsoft Teams activity feed notification APIs in Microso
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
-ms.date: 05/12/2025
+ms.date: 05/15/2025
 ---
 
 # Send activity feed notifications to users in Microsoft Teams
