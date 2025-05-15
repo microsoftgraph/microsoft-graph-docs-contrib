@@ -1,6 +1,5 @@
 ---
-title: "usageRightsIncluded resource type"
-toc.title: "usageRightsIncluded resource type (preview)"
+title: "usageRightsIncluded resource type (preview)"
 description: "Represents the usage rights associated with a specific piece of content."
 author: "ArunGedela"
 ms.date: 04/21/2025

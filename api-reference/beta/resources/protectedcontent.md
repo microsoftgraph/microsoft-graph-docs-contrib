@@ -1,6 +1,5 @@
 ---
-title: "protectedContent resource type"
-toc.title: "protectedContent resource type (preview)"
+title: "protectedContent resource type (preview)"
 description: "Represents the content that is protected by a sensitivity label."
 author: "ArunGedela"
 ms.date: 04/21/2025
