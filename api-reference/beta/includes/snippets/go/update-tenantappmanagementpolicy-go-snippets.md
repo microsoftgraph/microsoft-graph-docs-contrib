@@ -100,6 +100,22 @@ excludeAppsReceivingV2Tokens := true
 nonDefaultUriAddition.SetExcludeAppsReceivingV2Tokens(&excludeAppsReceivingV2Tokens) 
 excludeSaml := true
 nonDefaultUriAddition.SetExcludeSaml(&excludeSaml) 
+excludeActors := graphmodels.NewAppManagementPolicyActorExemptions()
+
+
+customSecurityAttributeExemption := graphmodels.NewCustomSecurityAttributeStringValueExemption()
+id := "PolicyExemptions_AppManagementExemption"
+customSecurityAttributeExemption.SetId(&id) 
+operator := graphmodels.EQUALS_CUSTOMSECURITYATTRIBUTECOMPARISONOPERATOR 
+customSecurityAttributeExemption.SetOperator(&operator) 
+value := "ExemptFromIdentifierUriAdditionRestriction"
+customSecurityAttributeExemption.SetValue(&value) 
+
+customSecurityAttributes := []graphmodels.CustomSecurityAttributeExemptionable {
+	customSecurityAttributeExemption,
+}
+excludeActors.SetCustomSecurityAttributes(customSecurityAttributes)
+nonDefaultUriAddition.SetExcludeActors(excludeActors)
 identifierUris.SetNonDefaultUriAddition(nonDefaultUriAddition)
 applicationRestrictions.SetIdentifierUris(identifierUris)
 requestBody.SetApplicationRestrictions(applicationRestrictions)
