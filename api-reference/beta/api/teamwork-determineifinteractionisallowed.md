@@ -259,7 +259,7 @@ Content-type: application/json
 
 ### Example 5: Determine if the signed-in user can create a chat with three other users
 
-The following example shows a request that determines whether the signed-in user, authenticated via delegated context, can create a chat with three other users. It uses a mix of the supported **userIdentity** types. In this example, the interaction isn't allowed.
+The following example shows a request that determines whether the signed-in user, authenticated via delegated context, can create a chat with three other users. It uses a mix of the supported [identity](../resources/identity.md) types. In this example, the interaction isn't allowed.
 
 #### Request
 
