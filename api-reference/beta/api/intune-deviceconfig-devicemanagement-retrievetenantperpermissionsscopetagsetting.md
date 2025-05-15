@@ -1,5 +1,5 @@
 ---
-title: "retrieveTenantPerPermissionsScopeTagSetting action"
+title: "retrieveTenantPerPermissionsScopeTagSetting function"
 description: "This function will return True if the tenant has per permission scope tags enabled or false if the tenant does not have per permission scope tags enabled."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
@@ -8,11 +8,11 @@ doc_type: apiPageType
 ms.date: 08/01/2024
 ---
 
-# retrieveTenantPerPermissionsScopeTagSetting action
+# retrieveTenantPerPermissionsScopeTagSetting function
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/retrieveTenantPerPermissionsScopeTagSetting
+GET /deviceManagement/retrieveTenantPerPermissionsScopeTagSetting
 ```
 
 ## Request headers
@@ -48,18 +48,24 @@ POST /deviceManagement/retrieveTenantPerPermissionsScopeTagSetting
 Do not supply a request body for this method.
 
 ## Response
-If successful, this action returns a `204 No Content` response code.
+If successful, this function returns a `200 OK` response code and a Boolean in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/retrieveTenantPerPermissionsScopeTagSetting
+GET https://graph.microsoft.com/beta/deviceManagement/retrieveTenantPerPermissionsScopeTagSetting
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 21
+
+{
+  "value": true
+}
 ```

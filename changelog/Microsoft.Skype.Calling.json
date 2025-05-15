@@ -39,6 +39,40 @@
     {
       "ChangeList": [
         {
+          "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalRegistrationInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalRegistrationInformation** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-1.0) resource.",
+          "Target": "attendanceRecord"
+        },
+        {
+          "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationId** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-1.0) resource.",
+          "Target": "attendanceRecord"
+        },
+        {
+          "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalEventInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalEventInformation** property to the [meetingAttendanceReport](https://learn.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-1.0) resource.",
+          "Target": "meetingAttendanceReport"
+        }
+      ],
+      "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-04-07T14:47:19.0842305Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },   
+    {
+      "ChangeList": [
+        {
           "Id": "999068ba-8006-4d1b-a24b-4d72d4bdcbb7",
           "ApiChange": "Relationship",
           "ChangedApiName": "communications",
