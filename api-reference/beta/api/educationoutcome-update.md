@@ -214,7 +214,7 @@ Content-type: application/json
     "@odata.type":"#microsoft.graph.educationPointsOutcome",
     "points":{
         "@odata.type":"#microsoft.graph.educationAssignmentPointsGrade",
-        "points":85
+        "points":85.5
     }
 }
 ```
@@ -284,7 +284,7 @@ Content-type: application/json
     },
     "points": {
         "gradedDateTime": "2025-05-15T18:05:13.1720895Z",
-        "points": 85,
+        "points": 85.5,
         "grade": "B",
         "gradedBy": {
             "application": null,
