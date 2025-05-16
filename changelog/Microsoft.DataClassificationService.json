@@ -84,6 +84,46 @@
         },
         {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "blockAccessAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [blockAccessAction](https://learn.microsoft.com/en-us/graph/api/resources/blockAccessAction?view=graph-rest-beta) resource.",
+          "Target": "blockAccessAction"
+        },
+                {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "classifcationErrorBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [classifcationErrorBase](https://learn.microsoft.com/en-us/graph/api/resources/classifcationErrorBase?view=graph-rest-beta) resource.",
+          "Target": "classifcationErrorBase"
+        },
+                {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "classificationError",
+          "ChangeType": "Addition",
+          "Description": "Added the [classificationError](https://learn.microsoft.com/en-us/graph/api/resources/classificationError?view=graph-rest-beta) resource.",
+          "Target": "classificationError"
+        },
+                {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "classificationInnerError",
+          "ChangeType": "Addition",
+          "Description": "Added the [classificationInnerError](https://learn.microsoft.com/en-us/graph/api/resources/classificationInnerError?view=graph-rest-beta) resource.",
+          "Target": "classificationInnerError"
+        },
+                {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customMetadataDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [customMetadataDictionary](https://learn.microsoft.com/en-us/graph/api/resources/customMetadataDictionary?view=graph-rest-beta) resource.",
+          "Target": "customMetadataDictionary"
+        },
+        {
+          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "actionSource",
           "ChangeType": "Addition",
