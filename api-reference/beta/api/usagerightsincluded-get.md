@@ -58,9 +58,9 @@ If the label is not found, doesn't have admin-defined protection, or the user do
 
 ## Examples
 
-### Example 1: Request to get the rights for a specific sensitivity label for the user `4e4234dd-377b-42a3-935b-0e42f138fa23`
+Request to get the rights for a specific sensitivity label for the user `4e4234dd-377b-42a3-935b-0e42f138fa23`
 
-#### Request
+### Request
 
 <!-- {
   "blockType": "request",
@@ -73,7 +73,7 @@ Authorization: Bearer {token}
 Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
 ```
 
-#### Response
+### Response
 
 The following example shows the response containing the usage rights granted to the user.
 
@@ -91,43 +91,5 @@ Content-Type: application/json
   "id": "f306e677-4c14-4136-b2c3-d9c7dd448cc1",
   "ownerEmail": "bob@contoso.com",
   "value": "docEdit, edit, forward, print, reply, replyAll, view, extract, viewRightsData, objModel"
-}
-```
-
-### Example 2: error response
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "get_rights_for_sensitivitylabel_error",
-  "sampleKeys": ["4e4234dd-377b-42a3-935b-0e42f138fa23"]
-} -->
-```http
-GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/4e4234dd-377b-42a3-935b-0e42f138fa23/rights?ownerEmail=bob@contoso.com
-Authorization: Bearer {token}
-Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-```http
-HTTP/1.1 403 Forbidden
-Content-Type: application/json
-
-{
-  "error": {
-    "code": "AccessDenied",
-    "message": "The user does not have sufficient rights for the specified label, or the label was not found.",
-    "innerError": {
-      "date": "2025-04-21T18:30:00",
-      "request-id": "7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a",
-      "client-request-id": "7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a"
-    }
-  }
 }
 ```
