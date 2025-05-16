@@ -960,6 +960,48 @@ Content-type: application/json
 }
 ```
 
+### Example 15: Use $filter and endsWith to get users with a specified top-level domain in otherMails
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "list_users_filterOtherMails"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=otherMails/any(x:endswith(x,'.edu'))&$count=true
+ConsistencyLevel: eventual
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$filter=otherMails%2fany(x%3aendswith(x%2c%27.edu%27))&$skiptoken=m~AQAoOzAzNWVkMDQ1MTE5ZjRlMmNiM2Y2ODQzMmM4YzNiOWJiOzswOzA7Ow",
+    "@microsoft.graph.tips": "This request only returns a subset of the resource's properties. Your app will need to use $select to return non-default properties. To find out what other properties are available for this resource see https://learn.microsoft.com/graph/api/resources/user",
+    "value": [
+        {
+            "displayName": "Isaiah Langer",
+            "mail": "isaiahl@fineartschool.edu",
+            "id": "0012cd20-3890-409e-9db3-afc3055ebe22"
+        },
+        {
+            "displayName": "Adele Vance",
+            "mail": "adelev@bellowscollege.edu",
+            "id": "0012cd20-3890-409e-9db3-afc3055ebe22"
+        }
+    ]
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
