@@ -82,45 +82,6 @@
           "Description": "Added the [autoLabeling](https://learn.microsoft.com/en-us/graph/api/resources/autoLabeling?view=graph-rest-beta) resource.",
           "Target": "autoLabeling"
         },
-
-
-
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "",
-          "ChangeType": "Addition",
-          "Description": "Added the [](https://learn.microsoft.com/en-us/graph/api/resources/?view=graph-rest-beta) resource.",
-          "Target": "labelActionBase"
-        },
-                {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "",
-          "ChangeType": "Addition",
-          "Description": "Added the [](https://learn.microsoft.com/en-us/graph/api/resources/?view=graph-rest-beta) resource.",
-          "Target": "labelActionBase"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "",
-          "ChangeType": "Addition",
-          "Description": "Added the [](https://learn.microsoft.com/en-us/graph/api/resources/?view=graph-rest-beta) resource.",
-          "Target": "labelActionBase"
-        },
-                {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "",
-          "ChangeType": "Addition",
-          "Description": "Added the [](https://learn.microsoft.com/en-us/graph/api/resources/?view=graph-rest-beta) resource.",
-          "Target": "labelActionBase"
-        },
-
-
-
-
         {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
