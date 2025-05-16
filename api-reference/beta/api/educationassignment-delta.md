@@ -136,7 +136,7 @@ Content-length: 344
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments",
-    "@odata.nextLink": "https://canary.graph.microsoft.com/testprodbetaeduAsg_prod_pateljay/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/delta?$skiptoken=HDIHJlrsxOh2yxHa79l9z_WDNaTi8Rr88OsgpWAOWe76OgL-8eiUedDTjr0ELgWND5Dq2vqAD_dx6DFdJVNfldHxacVogZhBUSt3-2-oOxnYNIwi8cIqPDPPwEifGyl0z1ib8amdL9sy6YHDZSC8lioiL3l8HUtH7-XcKEMpm-5r2NFBDV5jckzIa3h7cvE3.P2GZ6gBhsoq9mHSKFt98t9oCOaydK4TZyYSBdRjJP9o",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/delta?$skiptoken=HDIHJlrsxOh2yxHa79l9z_WDNaTi8Rr88OsgpWAOWe76OgL-8eiUedDTjr0ELgWND5Dq2vqAD_dx6DFdJVNfldHxacVogZhBUSt3-2-oOxnYNIwi8cIqPDPPwEifGyl0z1ib8amdL9sy6YHDZSC8lioiL3l8HUtH7-XcKEMpm-5r2NFBDV5jckzIa3h7cvE3.P2GZ6gBhsoq9mHSKFt98t9oCOaydK4TZyYSBdRjJP9o",
     "value": [
         {
             "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
