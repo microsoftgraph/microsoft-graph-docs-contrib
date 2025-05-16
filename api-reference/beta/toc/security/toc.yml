@@ -310,9 +310,9 @@ items:
       href: ../../resources/computerightsandinheritanceresult.md
     - name: Content base
       href: ../../resources/contentbase.md
-    - name: deviceMetadata resource type (preview)
+    - name: Device metadata
       href: ../../resources/devicemetadata.md
-    - name: dlpActionInfo resource type (preview)
+    - name: Dlp action info
       href: ../../resources/dlpactioninfo.md
     - name: Group scope
       href: ../../resources/groupscope.md
@@ -322,47 +322,47 @@ items:
       href: ../../resources/labelpolicy.md
     - name: Notify user action
       href: ../../resources/notifyuseraction.md
-    - name: operatingSystemSpecifications resource type (preview)
+    - name: Operating system specifications
       href: ../../resources/operatingsystemspecifications.md
-    - name: policyBinding resource type (preview)
+    - name: Policy binding
       href: ../../resources/policybinding.md
-    - name: policyLocationApplication resource type (preview)
+    - name: Policy location application
       href: ../../resources/policylocationapplication.md
+    - name: Policy location URL
+      href: ../../resources/policylocationurl.md
+    - name: Policy scope base
+      href: ../../resources/policyscopebase.md
+    - name: Policy tenant scope
+      href: ../../resources/policytenantscope.md
+    - name: Policy user scope
+      href: ../../resources/policyuserscope.md
     - name: policyLocationDomain resource type (preview)
       href: ../../resources/policylocationdomain.md
-    - name: policyLocationUrl resource type (preview)
-      href: ../../resources/policylocationurl.md
-    - name: policyScopeBase resource type (preview)
-      href: ../../resources/policyscopebase.md
-    - name: policyTenantScope resource type (preview)
-      href: ../../resources/policytenantscope.md
-    - name: policyUserScope resource type (preview)
-      href: ../../resources/policyuserscope.md
-    - name: processContentBatchRequest resource type (preview)
+    - name: Process content batch request
       href: ../../resources/processcontentbatchrequest.md
-    - name: processContentRequest resource type (preview)
+    - name: Process content request
       href: ../../resources/processcontentrequest.md
-    - name: processContentResponse resource type (preview)
+    - name: Process content response
       href: ../../resources/processcontentresponse.md
-    - name: processContentResponses resource type (preview)
+    - name: Process content responses
       href: ../../resources/processcontentresponses.md
-    - name: processConversationMetadata resource type (preview)
+    - name: Process conversation metadata
       href: ../../resources/processconversationmetadata.md
-    - name: processConversationMetadata resource type (preview)
+    - name: Process conversation metadata
       href: ../../resources/processconversationmetadata.md
-    - name: processFileMetadata resource type (preview)
+    - name: Process file metadata
       href: ../../resources/processfilemetadata.md
-    - name: processingError resource type (preview)
+    - name: Processing error
       href: ../../resources/processingerror.md
     - name: Protected application metadata
       href: ../../resources/protectedapplicationmetadata.md
     - name: Protected content
       href: ../../resources/protectedcontent.md
-    - name: scopeBase resource type (preview)
+    - name: Scope base
       href: ../../resources/scopebase.md
     - name: Tenant scope
       href: ../../resources/tenantscope.md
-    - name: textContent resource type (preview)
+    - name: Text content
       href: ../../resources/textcontent.md
     - name: User scope
       href: ../../resources/userscope.md
