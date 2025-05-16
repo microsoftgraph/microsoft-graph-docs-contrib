@@ -1,6 +1,5 @@
 ---
-title: "processFileMetadata resource type"
-toc.title: "processFileMetadata resource type (preview)"
+title: "processFileMetadata resource type (preview)"
 description: "Represents metadata for a content entry that is a file."
 author: "ArunGedela"
 ms.date: 04/08/2025
