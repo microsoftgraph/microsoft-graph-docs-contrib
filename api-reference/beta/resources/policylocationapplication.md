@@ -1,6 +1,5 @@
 ---
-title: "policyLocationApplication resource type"
-toc.title: "policyLocationApplication resource type (preview)"
+title: "policyLocationApplication resource type (preview)"
 description: "Represents a specific application as a location for data protection policy scoping."
 author: "ArunGedela"
 ms.date: 04/08/2025
