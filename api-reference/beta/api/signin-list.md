@@ -5,7 +5,7 @@ description: "Get a list of the user sign-ins in a Microsoft Entra tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
-ms.date: 01/23/2025
+ms.date: 05/16/2025
 ---
 
 # List signIns
@@ -603,6 +603,52 @@ Content-type: application/json
                 "resourceId": "",
                 "policyTenantId": ""
             }
+        }
+    ]
+}
+```
+
+### Example 4: Retrieve all types of sign in event types
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_signins_signInEventTypes"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventTypes/any(t: t eq 'nonInteractiveUser' OR t eq 'interactiveUser' OR t eq 'servicePrincipal' OR t eq 'managedIdentity'))
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.signIn",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET auditLogs/signIns?$select=agent,appDisplayName",
+    "value": [
+        {
+            "id": "30618271-709e-43f3-ac59-f213f7e40800",
+            "userPrincipalName": "admin@m365x06786268.onmicrosoft.com",
+            "appDisplayName": "Graph Explorer",
+            "clientAppUsed": "Browser",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+            "signInEventTypes": [
+                "nonInteractiveUser"
+            ]
         }
     ]
 }
