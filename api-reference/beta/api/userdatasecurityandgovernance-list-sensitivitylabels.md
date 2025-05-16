@@ -1,5 +1,5 @@
 ---
-title: "userDataSecurityAndGovernance: List sensitivityLabels"
+title: "List sensitivityLabels"
 description: "List the sensitivity labels available to a specific user"
 author: "ArunGedela"
 ms.date: 04/21/2025
@@ -8,13 +8,13 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Get sensitivityLabels
+# List sensitivityLabels
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of sensitivity labels available to a specific user or for the entire tenant.
+List the sensitivity labels available to a specific user.
 
 ## Permissions
 

@@ -96,6 +96,19 @@ Content-Type: application/json
 
 ### Example 2: error response
 
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_rights_for_sensitivitylabel",
+  "sampleKeys": ["4e4234dd-377b-42a3-935b-0e42f138fa23"]
+} -->
+```http
+GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/4e4234dd-377b-42a3-935b-0e42f138fa23/rights?ownerEmail=bob@contoso.com
+Authorization: Bearer {token}
+Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
+```
+
 #### Response
 
 <!-- {
