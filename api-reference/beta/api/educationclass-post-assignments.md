@@ -55,12 +55,13 @@ The following example shows a request.
   "name": "create_educationassignment_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments
+POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments
 Content-type: application/json
 
 {
-    "dueDateTime": "2022-09-16T00:00:00Z",
-    "displayName": "Reading test 09.14 Beta",
+    "dueDateTime": "2025-09-16T00:00:00Z",
+    "displayName": "Reading test 09.14",
+    "languageTag": "es-MX",
     "instructions": {
         "contentType": "text",
         "content": "Read chapter 4"
@@ -128,26 +129,27 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments/$entity",
-    "classId": "f4a941ff-9da6-4707-ba5b-0eae93cad0b4",
-    "displayName": "Reading test 09.14 Beta",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments/$entity",
+    "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+    "displayName": "Reading test 09.14",
     "closeDateTime": null,
-    "dueDateTime": "2022-09-16T00:00:00Z",
+    "dueDateTime": "2025-09-16T00:00:00Z",
     "assignDateTime": null,
     "assignedDateTime": null,
     "allowLateSubmissions": true,
     "resourcesFolderUrl": null,
     "feedbackResourcesFolderUrl": null,
-    "createdDateTime": "2022-09-14T21:24:11.8578804Z",
-    "lastModifiedDateTime": "2022-09-14T21:24:11.8578831Z",
-    "languageTag": "en-US",
+    "createdDateTime": "2025-05-16T20:21:31.4590981Z",
+    "lastModifiedDateTime": "2025-05-16T20:21:31.4790427Z",
     "allowStudentsToAddResourcesToSubmission": true,
     "status": "draft",
-    "notificationChannelUrl": null,
-    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22f4a941ff-9da6-4707-ba5b-0eae93cad0b4%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22b58c972d-585a-4ed8-8e0e-9c66e5506d26%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
-    "addToCalendarAction": "none",
-    "addedStudentAction": "none",
-    "id": "b58c972d-585a-4ed8-8e0e-9c66e5506d26",
+    "notificationChannelUrl": "https://graph.microsoft.com/v1.0/teams/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/channels/37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22afd61155-82f4-4006-9eb0-45389123c8df%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addToCalendarAction": "studentsAndTeamOwners",
+    "addedStudentAction": "assignIfOpen",
+    "languageTag": "es-MX",
+    "moduleUrl": null,
+    "id": "afd61155-82f4-4006-9eb0-45389123c8df",
     "instructions": {
         "content": "Read chapter 4",
         "contentType": "text"
@@ -163,7 +165,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -171,7 +173,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     }
