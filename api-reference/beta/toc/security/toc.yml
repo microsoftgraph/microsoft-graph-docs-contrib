@@ -248,9 +248,9 @@ items:
       href: ../../api/security-sensitivitylabel-evaluateremoval.md
     - name: Extract content label
       href: ../../api/security-sensitivitylabel-extractcontentlabel.md
-    - name: List sensitivity labels
+    - name: List data security and compliance sensitivity labels
       href: ../../api/tenantdatasecurityandgovernance-list-sensitivitylabels.md
-    - name: Get a sensitivity label
+    - name: Get a data security and compliance sensitivity label
       href: ../../api/sensitivitylabel-get.md
     - name: List rights
       href: ../../api/usagerightsincluded-get.md
@@ -816,9 +816,9 @@ items:
       href: ../../api/security-sensitivitylabel-evaluateremoval.md
     - name: Extract content label
       href: ../../api/security-sensitivitylabel-extractcontentlabel.md
-    - name: List sensitivity labels
+    - name: List data security and compliance sensitivity labels
       href: ../../api/tenantdatasecurityandgovernance-list-sensitivitylabels.md
-    - name: Get a sensitivity label
+    - name: Get a data security and compliance sensitivity label
       href: ../../api/sensitivitylabel-get.md
     - name: List rights
       href: ../../api/usagerightsincluded-get.md
