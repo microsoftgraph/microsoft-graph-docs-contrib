@@ -218,9 +218,9 @@ items:
       href: ../../resources/contentactivity.md
     - name: Create
       href: ../../api/activitiescontainer-post-contentactivities.md
-  - name: dataSecurityAndGovernance (preview)
+  - name: Data security and governance
     items:
-    - name: dataSecurityAndGovernance (preview)
+    - name: Data security and governance
       href: ../../resources/datasecurityandgovernance.md
     - name: Compute protection scopes
       href: ../../api/tenantprotectionscopecontainer-compute.md
@@ -234,10 +234,6 @@ items:
       href: ../../resources/security-sensitivitylabel.md
     - name: List
       href: ../../api/security-informationprotection-list-sensitivitylabels.md
-    - name: List
-      href: ../../api/sensitivitylabel-get.md
-    - name: List usageRightsIncluded
-      href: ../../api/usagerightsincluded-get.md
     - name: Get
       href: ../../api/security-sensitivitylabel-get.md
     - name: Compute inheritance
@@ -252,6 +248,12 @@ items:
       href: ../../api/security-sensitivitylabel-evaluateremoval.md
     - name: Extract content label
       href: ../../api/security-sensitivitylabel-extractcontentlabel.md
+    - name: List sensitivity labels
+      href: ../../api/tenantdatasecurityandgovernance-list-sensitivitylabels.md
+    - name: Get a sensitivity label
+      href: ../../api/sensitivitylabel-get.md
+    - name: List rights
+      href: ../../api/usagerightsincluded-get.md
   - name: Tenant data security and governance
     items:
     - name: Tenant data security and governance
@@ -288,25 +290,25 @@ items:
       href: ../../api/userprotectionscopecontainer-compute.md
   - name: Complex types
     items:
-    - name: activityMetadata resource type (preview)
+    - name: Activity metadata
       href: ../../resources/activitymetadata.md
-    - name: aiInteractionPlugin resource type (preview)
+    - name: Ai interaction plugin
       href: ../../resources/aiinteractionplugin.md
     - name: Auto labeling
       href: ../../resources/autolabeling.md
-    - name: binaryContent resource type (preview)
+    - name: Binary content
       href: ../../resources/binarycontent.md
-    - name: blockAccessAction resource type (preview)
+    - name: Block access action
       href: ../../resources/blockaccessaction.md
-    - name: classifcationErrorBase resource type (preview)
+    - name: Classifcation error base
       href: ../../resources/classifcationerrorbase.md
-    - name: classificationError resource type (preview)
+    - name: Classification error
       href: ../../resources/classificationerror.md
-    - name: classificationInnerError resource type (preview)
+    - name: Classification inner error
       href: ../../resources/classificationinnererror.md
     - name: Compute rights and inheritance result
       href: ../../resources/computerightsandinheritanceresult.md
-    - name: contentBase resource type (preview)
+    - name: Content base
       href: ../../resources/contentbase.md
     - name: deviceMetadata resource type (preview)
       href: ../../resources/devicemetadata.md
@@ -800,10 +802,6 @@ items:
       href: ../../resources/security-sensitivitylabel.md
     - name: List
       href: ../../api/security-informationprotection-list-sensitivitylabels.md
-    - name: List
-      href: ../../api/sensitivitylabel-get.md
-    - name: List usageRightsIncluded
-      href: ../../api/usagerightsincluded-get.md
     - name: Get
       href: ../../api/security-sensitivitylabel-get.md
     - name: Compute inheritance
@@ -818,6 +816,12 @@ items:
       href: ../../api/security-sensitivitylabel-evaluateremoval.md
     - name: Extract content label
       href: ../../api/security-sensitivitylabel-extractcontentlabel.md
+    - name: List sensitivity labels
+      href: ../../api/tenantdatasecurityandgovernance-list-sensitivitylabels.md
+    - name: Get a sensitivity label
+      href: ../../api/sensitivitylabel-get.md
+    - name: List rights
+      href: ../../api/usagerightsincluded-get.md
   - name: Information protection policy setting
     items:
     - name: Information protection policy setting
