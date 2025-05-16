@@ -64,7 +64,7 @@ The following example shows a request to get a label available in the tenant.
 
 <!-- {
   "blockType": "request",
-  "name": "get_sensitivitylabels_tenant_filtered_app"
+  "name": "get_sensitivitylabel"
 } -->
 ```http
 GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/4e4234dd-377b-42a3-935b-0e42f138fa23

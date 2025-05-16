@@ -68,7 +68,7 @@ The following example shows a request to get labels for the tenant, filtered for
 
 <!-- {
   "blockType": "request",
-  "name": "get_sensitivitylabels_tenant_filtered_app"
+  "name": "get_sensitivitylabels_user_filtered_app"
 } -->
 ```http
 GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels?$filter=applicableTo eq 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')
