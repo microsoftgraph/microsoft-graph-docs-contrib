@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [usageRight](../resources/usageright.md) enum values in the response body, representing the rights granted to the user for the specified label.
+If successful, this method returns a `200 OK` response code and a collection of [usageRight](../resources/usagerights.md) enum values in the response body, representing the rights granted to the user for the specified label.
 
 If the label is not found, doesn't have admin-defined protection, or the user doesn't have the `VIEW` right, the API might return an error response (for example, `403 Forbidden` or `404 Not Found`) with details in an [error object](/graph/errors).
 
