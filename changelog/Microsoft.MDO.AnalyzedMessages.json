@@ -520,6 +520,14 @@
         },
         {
           "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "detonationBehaviourDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [detonationDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationDetails?view=graph-rest-beta) resource.",
+          "Target": "detonationDetails"
+        },
+        {
+          "Id": "5d29f985-e7e9-4e34-9f3c-c715696be97a",
           "ApiChange": "Property",
           "ChangedApiName": "detonationScreenshotUri",
           "ChangeType": "Addition",
