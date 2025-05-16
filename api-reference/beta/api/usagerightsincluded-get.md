@@ -100,7 +100,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "get_rights_for_sensitivitylabel",
+  "name": "get_rights_for_sensitivitylabel_error",
   "sampleKeys": ["4e4234dd-377b-42a3-935b-0e42f138fa23"]
 } -->
 ```http
@@ -114,7 +114,6 @@ Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_rights_for_sensitivitylabel_error"
 } -->
 ```http
 HTTP/1.1 403 Forbidden
