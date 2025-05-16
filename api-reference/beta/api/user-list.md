@@ -1213,6 +1213,7 @@ Content-type: application/json
 ### Example 15: Use $filter and endsWith to get users with a specified top-level domain in otherMails
 
 #### Request
+The following example shows a request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 <!-- {
   "blockType": "request",
   "name": "list_users_filterOtherMails"
@@ -1227,7 +1228,8 @@ ConsistencyLevel: eventual
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
