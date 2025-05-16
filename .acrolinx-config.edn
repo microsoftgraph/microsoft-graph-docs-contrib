@@ -36,7 +36,7 @@ If you need a scoring exception for content in this PR, add the *ready for conte
 - Escalate the exception request to the Acrolinx Review Team for review.
 - Approve the exception and work with the GitHub Admin Team to merge the PR to the default branch.
 
-For more information about the exception criteria and exception process, see [Acrolinx for Microsoft Graph docs](https://aka.ms/msgo?pagePath=/Document%20APIs/Author%20content/Acrolinx).
+For more information about the exception criteria and exception process, see [Acrolinx for Microsoft Graph docs](https://eng.ms/cid/27dee76c-3a60-4e65-8fdf-08ea849b3498/fid/d80517923e291f07a0da8b5ce8e082ba680a55ddda65497a1061ca9f97c50290).
 
 Select the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology:
 
@@ -52,6 +52,6 @@ Select the scorecard links for each article to review the Acrolinx feedback on g
  "
 **More info about Acrolinx**
 
-Use the Acrolinx extension, or sidebar, in Visual Studio Code to check spelling, grammar, style, tone, clarity, and key terminology when you're creating or updating content. For more information, see [Use the Visual Studio Code extension to run Acrolinx locally](https://review.docs.microsoft.com/office-authoring-guide/acrolinx-vscode?branch=main).
+Use the Acrolinx extension, or sidebar, in Visual Studio Code to check spelling, grammar, style, tone, clarity, and key terminology when you're creating or updating content. For more information, see [Use the Visual Studio Code extension to run Acrolinx locally](https://learn.microsoft.com/en-us/help/platform/acrolinx-vscode-setup) (you must sign in to access the page).
 "
 }
