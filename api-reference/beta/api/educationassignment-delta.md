@@ -135,32 +135,37 @@ Content-type: application/json
 Content-length: 344
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(educationAssignment)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$skiptoken=U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FDy9b1hMDaAJGdLb7n2fh1IdHoweKQs1czM4Ry1LVsNqwIFXftTcRHvgSCbcszvbJHEWDCO3QO7K7zwCM8DdXNepZOa1gqldecjIUM0NFRbGQoQ5yR6RmGnMgtko8TDMOyMH_yg1my82PTXA_t4Nj-DhMDZWvuNTd_lbLeTngc7mIJPMCR2gHN9CSKsW_kw850.UM9tUqwOu5Ln1pnxaP6KdMmfJHszGqY3EKPlQkOiyGs",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments",
+    "@odata.nextLink": "https://canary.graph.microsoft.com/testprodbetaeduAsg_prod_pateljay/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/delta?$skiptoken=HDIHJlrsxOh2yxHa79l9z_WDNaTi8Rr88OsgpWAOWe76OgL-8eiUedDTjr0ELgWND5Dq2vqAD_dx6DFdJVNfldHxacVogZhBUSt3-2-oOxnYNIwi8cIqPDPPwEifGyl0z1ib8amdL9sy6YHDZSC8lioiL3l8HUtH7-XcKEMpm-5r2NFBDV5jckzIa3h7cvE3.P2GZ6gBhsoq9mHSKFt98t9oCOaydK4TZyYSBdRjJP9o",
     "value": [
         {
-            "@odata.type": "#microsoft.graph.educationAssignment",
-            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
-            "displayName": "Expand options 3.1",
-            "closeDateTime": "2021-11-14T07:59:00Z",
-            "dueDateTime": "2021-11-14T07:59:00Z",
+            "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+            "displayName": "Grade assignment 15 May 01",
+            "closeDateTime": null,
+            "dueDateTime": "2025-05-16T18:29:00Z",
             "assignDateTime": null,
-            "assignedDateTime": "2021-11-10T23:57:16.1897643Z",
-            "allowLateSubmissions": false,
+            "assignedDateTime": "2025-05-15T16:37:18.746146Z",
+            "allowLateSubmissions": true,
             "resourcesFolderUrl": null,
-            "createdDateTime": "2021-11-10T23:56:03.7992389Z",
-            "lastModifiedDateTime": "2021-11-11T00:42:20.8999693Z",
-            "allowStudentsToAddResourcesToSubmission": false,
-            "status": "published",
-            "notificationChannelUrl": "https://graph.microsoft.com/beta/teams/72a7baec-c3e9-4213-a850-f62de0adad5f/channels/19:e375b98b9d4f4738857fb70f23d329b7@thread.skype",
-            "webUrl": null,
-            "addToCalendarAction": "none",
-            "addedStudentAction": "none",
-            "grading": null,
-            "id": "3b870c07-21fe-47fb-8562-cdd6f2c281d6",
+            "feedbackResourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ7ONF5UOYTXZVEKCZE43FTQRH2S",
+            "createdDateTime": "2025-05-15T16:36:18.6392125Z",
+            "lastModifiedDateTime": "2025-05-15T16:37:18.8188179Z",
+            "allowStudentsToAddResourcesToSubmission": true,
+            "status": "assigned",
+            "notificationChannelUrl": "https://graph.microsoft.com/v1.0/teams/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/channels/37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%220965958c-84f2-4ca4-b854-05cce3440aa4%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addToCalendarAction": "studentsAndTeamOwners",
+            "addedStudentAction": "assignIfOpen",
+            "languageTag": "en-US",
+            "moduleUrl": "https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/dcc2ba3e-1bf2-43fc-9f12-e9acd916b372/",
+            "id": "0965958c-84f2-4ca4-b854-05cce3440aa4",
             "instructions": {
-                "content": "follow up",
-                "contentType": "text"
+                "content": "Grade assignment 15 May 01",
+                "contentType": "html"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 100
             },
             "assignTo": {
                 "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
@@ -169,7 +174,7 @@ Content-length: 344
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                     "displayName": null
                 }
             },
@@ -177,7 +182,7 @@ Content-length: 344
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "id": "5e3ce6c0-2b1f-4285-8d4b-75ee78787346",
                     "displayName": null
                 }
             }
