@@ -89,7 +89,7 @@ Include the next sentence when supporting events.
 
 ## Help users gain insights into their work patterns
 
-Feature: Analytics (preview)
+### Feature: Analytics (preview)
 
 Use the analytics API to get activity statistics and related settings for a user:
 

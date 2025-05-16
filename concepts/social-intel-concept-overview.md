@@ -119,6 +119,7 @@ Looking for the API reference for these services?
 - The People API [person](/graph/api/resources/person) resource
 - [Profile (preview)](/graph/api/resources/profile) resource
 - [Profile card property](/graph/api/resources/profilecardproperty) resource
+- [Profile property setting (preview)](/graph/api/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true) resource
 - [Pronouns settings](/graph/api/resources/pronounssettings) resource
 - [Insights API](/graph/api/resources/officegraphinsights)
 - [Analytics API (preview)](/graph/api/resources/useranalytics)
@@ -129,6 +130,7 @@ Looking for the API reference for these services?
 - Find more about the [people API](people-insights-overview.md).
 - See how to [customize the profile card](add-properties-profilecard.md).
 - See how to [manage pronouns settings for an organization](pronouns-configure-pronouns-availability.md).
+- See how to [manage profile source precedence settings for an organization (preview)](/graph/profilepriority-configure-profilepropertysetting).
 - Find out more about [item insights](item-insights-overview.md), [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
 - Find more about the [analytics API](/graph/api/resources/social-overview#help-users-balance-work-and-life).
 - Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).
