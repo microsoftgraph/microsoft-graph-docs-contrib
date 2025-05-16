@@ -1,6 +1,5 @@
 ---
-title: "activityMetadata resource type"
-toc.title: "activityMetadata resource type (preview)"
+title: "activityMetadata resource type (preview)"
 description: "Represents metadata about a specific user activity being evaluated, including the activity type and location."
 author: "ArunGedela"
 ms.date: 04/08/2025
