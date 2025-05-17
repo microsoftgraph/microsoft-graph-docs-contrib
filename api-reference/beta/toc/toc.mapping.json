@@ -422,12 +422,6 @@
       ]
     },
     {
-      "name": "Data Security and Governance (preview)",
-      "resources": [
-        "userDataSecurityAndGoverance"
-      ]
-    },
-    {
       "name": "Device and app management",
       "childNodes": [
         {
