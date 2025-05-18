@@ -45,7 +45,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "tenantId": "String",
   "userIdentityType": "String",
-  "userPrincipalName"
+  "userPrincipalName": "String"
 }
 ```
 
