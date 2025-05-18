@@ -1024,6 +1024,35 @@ Namespace: microsoft.graph.security
 |downloadFile|
 |unknownFutureValue|
 
+### labelActionSource values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+|none|
+|unknownFutureValue|
+
+### sensitivityLabelTarget values
+
+|Member|
+|:---|
+|email|
+|site|
+|unifiedGroup|
+|teamwork|
+|unknownFutureValue|
+
+### applicationMode values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+
+
 <!--
 {
   "type": "#page.annotation",
