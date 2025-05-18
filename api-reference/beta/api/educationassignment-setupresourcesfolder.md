@@ -121,7 +121,7 @@ Content-type: application/json
     "assignDateTime": null,
     "assignedDateTime": null,
     "allowLateSubmissions": true,
-    "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!uf0jSRLkbEOG04PymQ5PtqVEDwHjP_xMlkkpCG-1CkKVvLn9JeueT63KQGyKclfr/items/01VPGD5VK63GWH3UQMJVFKZHZUA545JCBB",
+    "resourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!uf0jSRLkbEOG04PymQ5PtqVEDwHjP_xMlkkpCG-1CkKVvLn9JeueT63KQGyKclfr/items/01VPGD5VK63GWH3UQMJVFKZHZUA545JCBB",
     "feedbackResourcesFolderUrl": null,
     "createdDateTime": "2025-05-07T18:17:06.2831309Z",
     "lastModifiedDateTime": "2025-05-16T18:21:18.9640425Z",
