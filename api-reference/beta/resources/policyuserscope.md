@@ -1,6 +1,5 @@
 ---
-title: "policyUserScope resource type"
-toc.title: "policyUserScope resource type (preview)"
+title: "policyUserScope resource type (preview)"
 description: "Defines the scope of a data governance policy as it applies to a specific user."
 author: "ArunGedela"
 ms.date: 04/08/2025

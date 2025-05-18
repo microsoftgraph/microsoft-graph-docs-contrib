@@ -1,6 +1,5 @@
 ---
-title: "protectedApplicationMetadata resource type"
-toc-title: "protectedApplicationMetadata resource type (preview)"
+title: "protectedApplicationMetadata resource type (preview)"
 description: "Represents metadata about an application whose activities are being governed by an integrated application."
 author: "ArunGedela"
 ms.date: 04/08/2025

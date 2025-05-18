@@ -58,6 +58,8 @@ items:
   - name: Customer booking
     href: toc/customer-booking/toc.yml
     displayName: Bookings, Microsoft Bookings
+  - name: Data Security and Governance (preview)
+    href: toc/data-security-and-governance-(preview)/toc.yml
   - name: Device and app management
     href: toc/device-and-app-management/toc.yml
   - name: Education

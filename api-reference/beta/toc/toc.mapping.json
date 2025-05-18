@@ -2236,6 +2236,7 @@
         "namePronunciationSettings",
         "enhancedPersonalizationSetting",
         "profile",
+        "profilePropertySetting",
         "userAnalytics"
       ],
       "childNodes": [
@@ -2248,11 +2249,11 @@
         {
           "name": "People admin settings",
           "resources": [
-            "pronounsSettings",
-            "profileCardProperty",
+            "namePronunciationSettings",
             "photoUpdateSettings",
-            "namePronunciationSettings"
-
+            "profileCardProperty",
+            "profilePropertySetting",
+            "pronounsSettings"
           ]
         },
         {
@@ -2606,25 +2607,32 @@
             "activitiesContainer",
             "contentActivity",
             "dataSecurityAndGovernance",
+            "labelContentRight",
+            "microsoft.graph.security.sensitivityLabel",
             "tenantDataSecurityAndGovernance",
             "tenantProtectionScopeContainer",
+            "usageRightsIncluded",
             "userDataSecurityAndGovernance",
-            "userProtectionScopeContainer",
+            "userProtectionScopeContainer"
            ],
             "complexTypes": [
               "activityMetadata",
               "aiInteractionPlugin",
+              "autoLabeling",
               "binaryContent",
               "blockAccessAction",
               "classifcationErrorBase",
               "classificationError",
               "classificationInnerError",
+              "computeRightsAndInheritanceResult",
               "contentBase",
               "customMetadataDictionary",
               "deviceMetadata",
               "dlpActionInfo",
               "groupScope",
               "integratedApplicationMetadata",
+              "labelActionBase",
+              "labelPolicy",
               "notifyUserAction",
               "operatingSystemSpecifications",
               "policyBinding",
@@ -2644,6 +2652,7 @@
               "processFileMetadata",
               "processingError",
               "protectedApplicationMetadata",
+              "protectedContent",
               "scopeBase",
               "tenantScope",
               "textContent",

@@ -1,6 +1,5 @@
 ---
-title: "dlpActionInfo resource type"
-toc.title: "dlpActionInfo resource type (preview)"
+title: "dlpActionInfo resource type (preview)"
 description: "Base type for actions defined within a Data Loss Prevention (DLP) rule."
 author: "ArunGedela"
 ms.date: 04/08/2025
