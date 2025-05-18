@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get a list of the [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) objects and their properties.
 
 ## Permissions
@@ -134,4 +136,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 

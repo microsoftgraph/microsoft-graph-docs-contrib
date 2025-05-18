@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents a Microsoft Azure susbcription, Amazon Web Services (AWS) account, or Google Cloud Platform (GCP) project onboarded onto Microsoft Entra Permissions Management, Microsoft's cloud infrastructure entitlement management (CIEM) solution. Permissions Management discovers, remediates, and monitors the permissions and actions of identities in these platforms.
 
 This object is read-only and is populated when you successfully onboard the platform onto Permissions Management.
@@ -65,4 +67,5 @@ The following JSON representation shows the resource type.
   "authorizationSystemType": "String"
 }
 ```
+
 

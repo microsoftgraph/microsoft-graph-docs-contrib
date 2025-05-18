@@ -129,17 +129,7 @@ Content-type: application/json
   ],
   "tier": "Advanced",
   "userImpact": "Moderate",
-  "complianceInformation": [
-    {
-      "certificationName": "ISO 27001:2013",
-      "certificationControls": [
-        {
-          "name": "A.8.2.1",
-          "url": "",
-        }
-      ]
-    }         
-  ],
+  "complianceInformation": null,
   "controlStateUpdates": [
     {
       "assignedTo": null,
