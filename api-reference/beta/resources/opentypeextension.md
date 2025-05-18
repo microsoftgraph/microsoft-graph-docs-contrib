@@ -46,19 +46,11 @@ For more information about Microsoft Graph extensibility including limits for op
 
 ### Drive item-specific considerations
 
-Apply the following limits when you create extension resources on driveItem objects:
+Apply the following limits when you create extension resources on **driveItem** objects:
 - A maximum of 100 custom extensions per item totaled across all apps.
 - A maximum of five custom extensions per app ID.
 - A maximum size of 50 KB per extension.
 - A maximum total size of 50 MB for all extensions across all items.
-
-### Site specific considerations
-
-Apply the following limits when you create extension resources on site objects:
-- A mmaximum character length of 4000 characters for the extension value.
-- A maximum character length of 36 characters for the extension key.
-- A maximum of 100 custom extensions over a site object.
-- A maximum of five custom extensions per app ID.
 
 ### Outlook-specific considerations
 
@@ -68,6 +60,14 @@ Apply the following guidelines when you create open extensions on Outlook resour
 
 - Create the minimum number of extensions required. Most applications should require no more than one extension. Extensions have no defined properties or structure, so you can store multiple values in a single extension.
 - Avoid naming extensions in a variable manner (such as based on user input, etc.). Each time an open extension is created with a new name that hasn't been used in a user's mailbox before, a new MAPI named property is created. Removing the extension doesn't remove the named property.
+
+### Site specific considerations
+
+Apply the following limits when you create extension resources on **site** objects:
+- A maximum character length of 4000 characters for the extension value.
+- A maximum character length of 36 characters for the extension key.
+- A maximum of 100 custom extensions per site object.
+- A maximum of five custom extensions per app ID.
 
 ### Use open extensions (for Outlook resources) or extended properties
 
