@@ -39,8 +39,8 @@ Depending on the resource you're creating the extension in and the permission ty
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported. | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [site](../resources/site.md) | Sites.ReadWrite.All | Not supported. | Not supported. |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [user](../resources/user.md) | User.ReadWrite | Not supported. | User.ReadWrite.All |
 | [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
@@ -848,8 +848,6 @@ Content-type: application/json
 
 ---
 
----
-
 ### Response 7
 
 The following example shows the response, including properties of the new **driveItem** and the following for the new extension:
@@ -888,19 +886,20 @@ Content-type: application/json
 
 The following example shows how to create an open extension on a existing **site**.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_opentypeextension_8",
+  "sampleKeys": ["8f52f9ad-4f4f-4739-b682-7c0283207937"]
+}-->
 ```http
-POST /sites/8f52f9ad-4f4f-4739-b682-7c0283207937/extensions
+POST https://graph.microsoft.com/beta/sites/8f52f9ad-4f4f-4739-b682-7c0283207937/extensions
 
 {
-    "extensionName": "myCustomExtension",
-    "myCustomString": "Contoso data",
-    "myCustomBool": false
+  "extensionName": "myCustomExtension",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
 }
 ```
-
----
-
----
 
 ### Response 8
 
@@ -908,22 +907,24 @@ The following example shows the response, including the properties of the new ex
 
 - The **id** property with the fully qualified name.
 - The default property **extensionName** specified in the request.
-- The custom data specified in the request stored as 2 custom properties.
+- The custom data specified in the request stored as two custom properties.
 
-Note: The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-"blockType": "ignored",
-}-->
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": ""
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "myCustomExtension",
-    "extensionName": "myCustomExtension",
-    "myCustomString": "Contoso data",
-    "myCustomBool": false
+  "id": "myCustomExtension",
+  "extensionName": "myCustomExtension",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
 }
 ```
 
