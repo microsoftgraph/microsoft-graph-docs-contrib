@@ -383,8 +383,14 @@ Content-type: application/json
 ****
 
 #### Request 4
+
 The following example shows how to update an open extension on a **site**.
 
+<!-- {
+  "blockType": "request",
+  "name": "update_opentypeextension_4",
+  "sampleKeys": ["8f52f9ad-4f4f-4739-b682-7c0283207937", "Com.Contoso.Estimate"]
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/sites/8f52f9ad-4f4f-4739-b682-7c0283207937/extensions/Com.Contoso.Estimate
 Content-type: application/json
@@ -395,8 +401,6 @@ Content-type: application/json
   "myCustomBool": false
 }
 ```
-
----
 
 #### Response 4
 
