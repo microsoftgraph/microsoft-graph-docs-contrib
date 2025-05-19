@@ -2597,10 +2597,7 @@
         {
           "name": "Data security and compliance (preview)",
           "resources": [
-            "security",
-            "activitiesContainer",
             "contentActivity",
-            "labelContentRight",
             "microsoft.graph.security.sensitivityLabel",
             "tenantDataSecurityAndGovernance",
             "userDataSecurityAndGovernance"
@@ -2622,6 +2619,7 @@
               "groupScope",
               "integratedApplicationMetadata",
               "labelActionBase",
+              "labelContentRight",
               "labelPolicy",
               "notifyUserAction",
               "operatingSystemSpecifications",
