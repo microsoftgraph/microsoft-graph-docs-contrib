@@ -210,6 +210,12 @@ items:
       href: ../../resources/security-defaultauditdata.md
 - name: Data security and compliance (preview)
   items:
+  - name: Security
+    items:
+    - name: Security
+      href: ../../resources/security.md
+    - name: Run hunting query
+      href: ../../api/security-security-runhuntingquery.md
   - name: Activities container
     href: ../../resources/activitiescontainer.md
   - name: Content activity
@@ -328,6 +334,8 @@ items:
       href: ../../resources/policybinding.md
     - name: Policy location application
       href: ../../resources/policylocationapplication.md
+    - name: Policy location domain
+      href: ../../resources/policylocationdomain.md
     - name: Policy location URL
       href: ../../resources/policylocationurl.md
     - name: Policy scope base
@@ -336,8 +344,6 @@ items:
       href: ../../resources/policytenantscope.md
     - name: Policy user scope
       href: ../../resources/policyuserscope.md
-    - name: policyLocationDomain resource type (preview)
-      href: ../../resources/policylocationdomain.md
     - name: Process content batch request
       href: ../../resources/processcontentbatchrequest.md
     - name: Process content request
