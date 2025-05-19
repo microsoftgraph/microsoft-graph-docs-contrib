@@ -121,7 +121,8 @@ Content-Length: 1574
   "outOfOfficeSettings": {
     "message": null,
     "isOutOfOffice": false
-  }
+  },
+  "sequenceNumber": "A0129311063"
 }
 ```
 
@@ -195,7 +196,8 @@ Content-Length: 1574
   "outOfOfficeSettings": {
     "message": null,
     "isOutOfOffice": false
-  }
+  },
+  "sequenceNumber": "A0129311063"
 }
 ```
 
@@ -269,7 +271,8 @@ HTTP/1.1 200 OK
   "outOfOfficeSettings": {
     "message": null,
     "isOutOfOffice": false
-  }
+  },
+  "sequenceNumber": "A0129311063"
 }
 ```
 

@@ -201,6 +201,11 @@ Content-Type: application/json
         "id": "x509CertificateMultiFactor",
         "displayName" : "Certificate-based authentication (multifactor)",
         "authenticationMethod" : "x509Certificate"
+    },
+    {
+        "id": "qrCodePin",
+        "displayName": "QR Code",
+        "authenticationMethod": "qrCodePin"
     }
   ]
 }
@@ -290,7 +295,8 @@ Content-Type: application/json
         "sms",
         "password",
         "federatedSingleFactor",
-        "email"
+        "email",
+        "qrCodePin"
     ]
 }
 ```

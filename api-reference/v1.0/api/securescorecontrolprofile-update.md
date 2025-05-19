@@ -237,17 +237,7 @@ Content-type: application/json
   ],
   "tier": "Core",
   "userImpact": "Low",
-  "complianceInformation": [
-    {
-      "certificationName": "FedRAMP_Moderate",
-      "certificationControls": [
-        {
-          "name": "AC-6(9)",
-          "url": "",
-        }
-      ]
-    }         
-  ],
+  "complianceInformation": null,
   "controlStateUpdates": [
     {
       "assignedTo": "",

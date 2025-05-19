@@ -60,6 +60,18 @@ request_body = X509CertificateAuthenticationMethodConfiguration(
 					"exempted_certificate_authorities_subject_key_identifiers" : [
 					],
 			},
+			"certificate_authority_scopes" : [
+				{
+						"subject_key_identifier" : "aaaaaaaabbbbcccc111122222222222222333333",
+						"public_key_infrastructure_identifier" : "Contoso PKI",
+						"include_targets" : [
+							{
+									"id" : "aaaaaaaa-bbbb-cccc-1111-222222222222",
+									"target_type" : "group",
+							},
+						],
+				},
+			],
 	}
 )
 

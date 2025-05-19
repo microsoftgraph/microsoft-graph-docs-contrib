@@ -49,10 +49,10 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 >
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
->- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
->- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
->- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
->- Only the meeting/webinar organizer or co-organizer can access this API.
+>- `reportId` is the **id** of a [meetingAttendanceReport](../resources/meetingattendancereport.md) object.
+>- `webinarId` is the **id** of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
+>- `sessionId` is the **id** of a [virtualEventSession](../resources/virtualeventsession.md) object.
+>- Only the webinar or townhall organizer or coorganizer can access this API.
 
 > [!CAUTION]
 >
@@ -266,6 +266,13 @@ Content-Type: application/json
   "id": "b76965d4-0763-496e-9980-b323c5f3aa3b",
   "totalParticipantCount": 2,
   "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
-  "meetingEndDateTime": "2021-10-04T23:18:57.563Z"
+  "meetingEndDateTime": "2021-10-04T23:18:57.563Z",
+  "externalEventInformation": [
+    {
+      "applicationId": "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
+      "externalEventId": "myExternalEventId"
+    }
+  ]
 }
 ```
+

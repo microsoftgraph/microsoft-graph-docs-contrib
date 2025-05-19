@@ -778,6 +778,8 @@ items:
     items:
     - name: Overview
       href: social-intel-concept-overview.md
+    - name: Configure profile source precedence (preview)
+      href: profilepriority-configure-profilepropertysetting.md
     - name: Customize item insights privacy
       href: insights-customize-item-insights-privacy.md
     - name: Customize people insights privacy (preview)
@@ -794,6 +796,8 @@ items:
       href: people-insights-overview.md
     - name: Search people
       href: search-concept-person.md
+    - name: Enhanced personalization privacy
+      href: control-enhanced-personalization-privacy.md
   - name: Personal contacts
     items:
     - name: Overview
@@ -870,6 +874,8 @@ items:
       href: security-dataflow.md
     - name: Authorization
       href: security-authorization.md
+    - name: Data security and governance 
+      href: security-datasecurityandgovernance-overview.md 
     - name: Integrated solutions
       href: security-integration.md
     - name: Information Protection

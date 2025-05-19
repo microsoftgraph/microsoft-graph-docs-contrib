@@ -132,6 +132,10 @@ items:
         href: ../../resources/callrecords-session.md
       - name: List sessions
         href: ../../api/callrecords-callrecord-list-sessions.md
+    - name: Complex types
+      items:
+      - name: Network info
+        href: ../../resources/callrecords-networkinfo.md
   - name: Calls
     items:
     - name: Call
@@ -242,6 +246,24 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
+  - name: Copilot settings
+    items:
+    - name: Copilot admin limited mode
+      items:
+      - name: Copilot admin limited mode
+        href: ../../resources/copilotadminlimitedmode.md
+      - name: Get
+        href: ../../api/copilotadminlimitedmode-get.md
+      - name: Update
+        href: ../../api/copilotadminlimitedmode-update.md
+    - name: Complex types
+      items:
+      - name: Copilot admin
+        href: ../../resources/copilotadmin.md
+      - name: Copilot admin setting
+        href: ../../resources/copilotadminsetting.md
+      - name: Copilot root
+        href: ../../resources/copilotroot.md
   - name: Online meetings
     items:
     - name: Meeting attendance report

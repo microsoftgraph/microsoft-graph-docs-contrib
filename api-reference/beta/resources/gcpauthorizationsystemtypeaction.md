@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents an action in a GCP authorization system.
 
 Inherits from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md).
@@ -62,4 +64,5 @@ The following JSON representation shows the resource type.
   "actionType": "String"
 }
 ```
+
 

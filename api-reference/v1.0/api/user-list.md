@@ -6,7 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: apiPageType
-ms.date: 12/23/2024
+ms.date: 5/16/2025
 ---
 
 # List users
@@ -957,6 +957,51 @@ Content-type: application/json
       }
     }
   ]
+}
+```
+
+### Example 15: Use $filter and endsWith to get users with a specified top-level domain in otherMails
+
+#### Request
+The following example shows a request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+
+<!-- {
+  "blockType": "request",
+  "name": "list_users_filterOtherMails"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=otherMails/any(x:endswith(x,'.edu'))&$count=true
+ConsistencyLevel: eventual
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$filter=otherMails%2fany(x%3aendswith(x%2c%27.edu%27))&$skiptoken=m~AQAoOzAzNWVkMDQ1MTE5ZjRlMmNiM2Y2ODQzMmM4YzNiOWJiOzswOzA7Ow",
+    "@microsoft.graph.tips": "This request only returns a subset of the resource's properties. Your app will need to use $select to return non-default properties. To find out what other properties are available for this resource see https://learn.microsoft.com/graph/api/resources/user",
+    "value": [
+        {
+            "displayName": "Isaiah Langer",
+            "mail": "isaiahl@fineartschool.edu",
+            "id": "0012cd20-3890-409e-9db3-afc3055ebe22"
+        },
+        {
+            "displayName": "Adele Vance",
+            "mail": "adelev@bellowscollege.edu",
+            "id": "0012cd20-3890-409e-9db3-afc3055ebe22"
+        }
+    ]
 }
 ```
 
