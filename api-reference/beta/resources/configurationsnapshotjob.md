@@ -1,10 +1,10 @@
 ---
 title: "configurationSnapshotJob resource type"
-description: "**It is an asynchronous job that is created when an admin creates a snapshot.**"
+description: "It is an asynchronous job that is created when an admin creates a snapshot."
 author: "swatya"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
-ms.subservice: ""entra-sign-in""
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

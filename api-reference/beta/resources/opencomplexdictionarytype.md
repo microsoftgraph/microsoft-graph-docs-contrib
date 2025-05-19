@@ -1,10 +1,10 @@
 ---
 title: "openComplexDictionaryType resource type"
 description: "A dictionary of name-value pairs. Names must be valid property names, values may be restricted to a list of types via an annotation with term Validation.OpenPropertyTypeConstraint"
-author: "**swatya**"
+author: "swatya"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

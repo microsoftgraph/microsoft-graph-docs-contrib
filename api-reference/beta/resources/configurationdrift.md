@@ -100,3 +100,4 @@ The following JSON representation shows the configurationDrift resource type.
         }
     ]
 }
+```
