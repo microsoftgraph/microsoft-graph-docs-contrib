@@ -30,7 +30,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |createdDateTime|DateTimeOffset| The date and time the export was created. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |description|String| The description provided for the export.|
 |exportFileMetadata | [microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md)| Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**.  |
-|exportOptions|[microsoft.graph.security.exportOptions](#exportoptions-values)| The options provided for the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `tags`, `unknownFutureValue`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`.|
+|exportOptions|[microsoft.graph.security.exportOptions](#exportoptions-values)| The options provided for the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `tags`, `unknownFutureValue`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`.|
 |exportStructure|[microsoft.graph.security.exportFileStructure](#exportfilestructure-values)|The options that specify the structure of the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`, `unknownFutureValue`, `msg`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `msg`.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |outputName|String| The name provided for the export.|
@@ -52,7 +52,6 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |includeFolderAndPath|Include folder and path structure of source.|
 |friendlyName|Give each item a friendly name.|
 |condensePaths|Condense paths to fit within 259 characters.|
-|optimizedPartitionSize|Optimize export package partition size.|
 
 ### exportFileStructure values
 
