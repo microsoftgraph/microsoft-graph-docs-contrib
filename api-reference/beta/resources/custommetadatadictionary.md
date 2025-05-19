@@ -1,6 +1,5 @@
 ---
-title: "customMetadataDictionary resource type"
-toc.title: "customMetadataDictionary resource type (preview)"
+title: "customMetadataDictionary resource type (preview)"
 description: "Represents a dictionary specifically for storing custom metadata extracted from content, where values must be strings."
 author: "ArunGedela"
 ms.date: 04/08/2025

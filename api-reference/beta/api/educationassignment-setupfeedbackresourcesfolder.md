@@ -50,8 +50,6 @@ The following example shows how to call this API.
 ### Request
 The following example shows a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["ce2cd7da-e41b-4e66-8390-c9251e4c3a40","f5e60dc1-d084-4ca4-a3b4-025f11023059"],
@@ -64,40 +62,6 @@ Content-type: application/json
 {
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-setupfeedbackresourcesfolder-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/educationassignment-setupfeedbackresourcesfolder-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/educationassignment-setupfeedbackresourcesfolder-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/educationassignment-setupfeedbackresourcesfolder-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-setupfeedbackresourcesfolder-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/educationassignment-setupfeedbackresourcesfolder-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/educationassignment-setupfeedbackresourcesfolder-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/educationassignment-setupfeedbackresourcesfolder-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -123,8 +87,8 @@ Content-type: application/json
     "assignDateTime": null,
     "assignedDateTime": null,
     "allowLateSubmissions": true,
-    "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!uf0jSRLkbEOG04PymQ5PtqVEDwHjP_xMlkkpCG-1CkKVvLn9JeueT63KQGyKclfr/items/01VPGD5VK63GWH3UQMJVFKZHZUA545JCBB",
-    "feedbackResourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!uf0jSRLkbEOG04PymQ5PtqVEDwHjP_xMlkkpCG-1CkLPLpFkTfqZR5sy80gMS-VY/items/01VPGD5VLEUC5G56NOFVDKD6POMN4LGKVD",
+    "resourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!uf0jSRLkbEOG04PymQ5PtqVEDwHjP_xMlkkpCG-1CkKVvLn9JeueT63KQGyKclfr/items/01VPGD5VK63GWH3UQMJVFKZHZUA545JCBB",
+    "feedbackResourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!uf0jSRLkbEOG04PymQ5PtqVEDwHjP_xMlkkpCG-1CkLPLpFkTfqZR5sy80gMS-VY/items/01VPGD5VLEUC5G56NOFVDKD6POMN4LGKVD",
     "createdDateTime": "2025-05-07T18:17:06.2831309Z",
     "lastModifiedDateTime": "2025-05-16T18:27:00.1873346Z",
     "allowStudentsToAddResourcesToSubmission": false,

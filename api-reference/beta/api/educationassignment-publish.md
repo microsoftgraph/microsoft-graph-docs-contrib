@@ -93,7 +93,7 @@ HTTP/1.1 200 Ok
     "lastModifiedDateTime": "2025-05-08T18:33:46.9004801Z",
     "allowStudentsToAddResourcesToSubmission": true,
     "status": "published",
-    "notificationChannelUrl": "https://graph.microsoft.com/v1.0/teams/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/channels/37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+    "notificationChannelUrl": "https://graph.microsoft.com/beta/teams/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/channels/37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
     "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22bb8994da-8a57-4b64-9fd9-108099f3940f%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
     "addToCalendarAction": "studentsAndTeamOwners",
     "addedStudentAction": "assignIfOpen",

@@ -1,6 +1,5 @@
 ---
-title: "policyLocationUrl resource type"
-toc.title: "policyLocationUrl resource type (preview)"
+title: "policyLocationUrl resource type (preview)"
 description: "Represents a specific URL as a location for data protection policy scoping."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,7 +8,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# policyLocationUrl
+# policyLocationUrl resource type
 
 Namespace: microsoft.graph
 
