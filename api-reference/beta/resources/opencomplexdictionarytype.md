@@ -1,0 +1,43 @@
+---
+title: "openComplexDictionaryType resource type"
+description: "A dictionary of name-value pairs. Names must be valid property names, values may be restricted to a list of types via an annotation with term Validation.OpenPropertyTypeConstraint"
+author: "**swatya**"
+ms.date: 04/10/2025
+ms.localizationpriority: medium
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+doc_type: resourcePageType
+---
+
+# openComplexDictionaryType resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+A dictionary of name-value pairs. Names must be valid property names, values may be restricted to a list of types via an annotation with term `Validation.OpenPropertyTypeConstraint
+
+
+Inherits from [Dictionary](../resources/dictionary.md).
+
+This resource is an open type.
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.openComplexDictionaryType"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.openComplexDictionaryType"
+}
+```
+
