@@ -11,9 +11,7 @@ ms.topic: include
 > - Directory Writer
 > - Hybrid Identity Administrator
 > - Identity Governance Administrator
-> - Privileged Role Administrator
+> - Privileged Role Administrator - the least privileged role supported for Microsoft Graph and Azure AD Graph app roles
 > - User Administrator
 > - Application Administrator
 > - Cloud Application Administrator
->
-> For app-role assignments for MS Graph and AAD graph, the least-privileged roles are Privileged Role Administrator, Global administrator, or a custom role with a supported role permission.
