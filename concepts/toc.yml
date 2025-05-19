@@ -554,7 +554,7 @@ items:
   - name: External data connections
     items:
     - name: Connectors overview
-      href: connecting-external-content-connectors-overview.md
+      href: /microsoft-365-copilot/extensibility/overview-copilot-connector?toc=/graph/toc.json
       displayName: Microsoft Graph connectors, connect external content
     - name: Connectors experiences
       href: connecting-external-content-experiences.md
@@ -562,12 +562,6 @@ items:
     - name: Connectors API
       href: connecting-external-content-connectors-api-overview.md
       displayName: Microsoft Graph connectors
-    - name: Use Postman
-      href: connecting-external-content-connectors-api-postman.md
-      displayName: connector, connectors
-    - name: Build your first custom connector
-      href: connecting-external-content-build-quickstart.yml
-      displayName: connectors, Microsoft Graph connectors
     - name: Connectors samples
       href: /samples/browse/?terms=graph%20connectors
     - name: Community connectors samples
@@ -586,8 +580,6 @@ items:
         href: custom-connector-sdk-sample-publish.md
       - name: Surface the data in search
         href: custom-connector-sdk-sample-search.md
-    - name: Simplify connector deployment
-      href: connecting-external-content-deploy-teams.md
     - name: Manage connections
       href: connecting-external-content-manage-connections.md
     - name: Manage schema

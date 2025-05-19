@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Graph connectors API limits"
-description: "Keep implementation and operational limits in mind when designing Microsoft Graph connectors. Includes connection, schema, and group limits."
+title: "Microsoft 365 Copilot connectors API limits"
+description: "Keep implementation and operational limits in mind when designing Copilot connectors. Includes connection, schema, and group limits."
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
@@ -8,9 +8,9 @@ ms.subservice: search
 ms.date: 05/15/2025
 ---
 
-# Microsoft Graph connectors API limits
+# Copilot connectors API limits
 
-This article describes implementation and operational limits for Microsoft Graph connectors. Keep these limits in mind when designing connectors.
+This article describes implementation and operational limits for Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors). Keep these limits in mind when designing connectors.
 
 ## Schema limits
 
