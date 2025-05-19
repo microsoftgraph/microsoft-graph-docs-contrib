@@ -286,6 +286,11 @@ Content-type: application/json
 }
 ```
 
+> [!NOTE]
+> Delta function call is not supported.
+> This API does not retrieve interactions for the following scenarios: 
+> - interactions in agents created by Copilot Studio.
+
 ## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
