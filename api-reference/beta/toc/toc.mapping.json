@@ -2600,14 +2600,10 @@
             "security",
             "activitiesContainer",
             "contentActivity",
-            "dataSecurityAndGovernance",
             "labelContentRight",
             "microsoft.graph.security.sensitivityLabel",
             "tenantDataSecurityAndGovernance",
-            "tenantProtectionScopeContainer",
-            "usageRightsIncluded",
-            "userDataSecurityAndGovernance",
-            "userProtectionScopeContainer"
+            "userDataSecurityAndGovernance"
            ],
             "complexTypes": [
               "activityMetadata",
@@ -2638,7 +2634,6 @@
               "policyTenantScope",
               "policyUserScope",
               "processContentBatchRequest",
-              "processConversationMetadata",
               "processContentRequest",
               "processContentResponse",
               "processContentResponses",
