@@ -19,6 +19,11 @@ Represents a snapshot of the device settings of a Cloud PC that can be used to r
 
 Inherits from [entity](../resources/entity.md).
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Retrieve snapshots](../api/cloudpc-retrievesnapshots.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Get a list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) resources for a Cloud PC.|
+
 ## Properties
 
 |Property|Type|Description|
