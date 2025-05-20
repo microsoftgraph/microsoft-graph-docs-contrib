@@ -5,7 +5,7 @@ author: "nupur-munda"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
-ms.date: 04/24/2025
+ms.date: 05/20/2025
 ---
 
 # List driveRestoreArtifactsBulkAdditionRequests
