@@ -32,6 +32,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions
 ```
 
+> [!NOTE]
+> * Delta function call isn't supported.
+> * This API doesn't retrieve interactions in agents created by Copilot Studio.
+
 ## Optional query parameters
 
 This method supports the `$top` and data ranges [OData query parameters](/graph/query-parameters) to customize the response, as shown in the following example. For optimal performance, the recommended `$top` value is `100`.
@@ -349,12 +353,6 @@ Content-type: application/json
 	]
 }
 ```
-
-> [!NOTE]
-> Delta function call is not supported.
-> 
-> This API does not retrieve interactions for the following scenarios: 
-> - interactions in agents created by Copilot Studio.
 
 ## Related content
 
