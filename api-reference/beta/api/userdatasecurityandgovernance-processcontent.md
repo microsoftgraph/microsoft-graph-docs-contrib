@@ -39,13 +39,15 @@ POST /me/dataSecurityAndGovernance/processContent
 POST /users/{usersId}/dataSecurityAndGovernance/processContent
 ```
 
+/me/dataSecurityAndGovernance/processContent supports delegated permissions only.
+
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
-| If-None-Match | Optional. This value is used by the API to determine if the policy state has changed since the last call to the API. The value is from the Etag header returned from [protectionScopes compute](../api/userprotectionscopecontainer-compute.md)|
+| If-None-Match | Optional. This value is used by the API to determine if the policy state changed since the last call to the API. The value is from the Etag header returned from [protectionScopes compute](../api/userprotectionscopecontainer-compute.md)|
 
 ## Request body
 
@@ -61,7 +63,7 @@ The following table lists the parameters that are required when you call this ac
 
 | Name          | Description   |
 | :------------ | :------------ |
-| ETag          | An indicator whether the configured policy state has changed. If the policy state has changed, the protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). |
+| ETag          | An indicator whether the configured policy state changed. If the policy state changed, the protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). |
 
 ## Response
 
