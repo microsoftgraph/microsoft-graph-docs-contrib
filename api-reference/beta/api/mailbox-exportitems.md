@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Export Exchange [mailboxItem](../resources/mailboxitem.md) objects in full-fidelity. This API exports each item as an opaque stream. This data stream isn't intended for parsing, but can be used to import an item back into an Exchange mailbox. For more information, see: [Overview of the mailbox import and export APIs in Microsoft Graph (preview)](/graph/mailbox-import-export-concept-overview.md)
+Export Exchange [mailboxItem](../resources/mailboxitem.md) objects in full-fidelity. This API exports each item as an opaque stream. This data stream isn't intended for parsing, but can be used to import an item back into an Exchange mailbox. For more information, see: [Overview of the mailbox import and export APIs in Microsoft Graph (preview)](/graph/mailbox-import-export-concept-overview)
 
 You can export up to 20 items in a single export request.
 
