@@ -12,8 +12,6 @@ ms.date: 05/20/2025
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -67,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessRestoreSessions/d8078599-3b3c-468d-b6ff-adf161a42760/driveRestoreArtifactsBulkAdditionRequests/4437afcf-e520-463c-90a7-ca96401d8039
+DELETE https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessRestoreSessions/d8078599-3b3c-468d-b6ff-adf161a42760/driveRestoreArtifactsBulkAdditionRequests/4437afcf-e520-463c-90a7-ca96401d8039
 ```
 
 ### Response
