@@ -23,6 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "driverestoreartifactsbulkadditionrequest-get-permissions"
 }
 -->
+[!INCLUDE [permissions-table](../includes/permissions/driverestoreartifactsbulkadditionrequest-get-permissions.md)]
 
 ## HTTP request
 

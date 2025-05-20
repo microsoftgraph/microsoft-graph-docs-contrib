@@ -33,6 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests-permissions"
 }
 -->
+[!INCLUDE [permissions-table](../includes/permissions/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests-permissions.md)]
 
 ## HTTP request
 

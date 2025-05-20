@@ -1,11 +1,11 @@
 ---
 title: "Delete mailboxRestoreArtifactsBulkAdditionRequest"
 description: "Delete a mailboxRestoreArtifactsBulkAdditionRequest object associated with an exchangeRestoreSession."
-author: "vidula-verma"
+author: "nupur-munda"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
-ms.date: 04/24/2025
+ms.date: 05/20/2025
 ---
 
 # Delete mailboxRestoreArtifactsBulkAdditionRequest
@@ -25,6 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "mailboxrestoreartifactsbulkadditionrequest-delete"
 }
 -->
+[!INCLUDE [permissions-table](../includes/permissions/mailboxrestoreartifactsbulkadditionrequest-delete-permissions.md)]
 
 ## HTTP request
 

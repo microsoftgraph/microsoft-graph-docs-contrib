@@ -33,6 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests-permissions"
 }
 -->
+[!INCLUDE [permissions-table](../includes/permissions/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests-permissions.md)]
 
 ## HTTP request
 

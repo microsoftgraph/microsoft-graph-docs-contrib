@@ -33,6 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests-permissions"
 }
 -->
+[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests-permissions.md)]
 
 ## HTTP request
 

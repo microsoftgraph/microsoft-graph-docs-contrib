@@ -25,6 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "siterestoreartifactsbulkadditionrequest-delete"
 }
 -->
+[!INCLUDE [permissions-table](../includes/permissions/siterestoreartifactsbulkadditionrequest-delete-permissions.md)]
 
 ## HTTP request
 
