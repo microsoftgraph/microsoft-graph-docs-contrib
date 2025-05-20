@@ -4,7 +4,7 @@ description: "Read the properties and relationships of an enhancedPersonalizatio
 author: "Ross-GH"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
-ms.subservice: "meetings-copilot"
+ms.subservice: "microsoft-365-copilot"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of an [enhancedPersonalizationSetting](../resources/enhancedpersonalizationsetting.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -56,6 +58,7 @@ If successful, this method returns a `200 OK` response code and an [enhancedPers
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_enhancedpersonalizationsetting"
@@ -65,8 +68,37 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/copilot/settings/people/enhancedpersonalization
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-enhancedpersonalizationsetting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Response body
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-enhancedpersonalizationsetting-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-enhancedpersonalizationsetting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-enhancedpersonalizationsetting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-enhancedpersonalizationsetting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-enhancedpersonalizationsetting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-enhancedpersonalizationsetting-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -83,8 +115,8 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.enhancedPersonalizationSetting",
-    "isEnabledInOrganization": "Boolean",
-    "disabledForGroup": "String"
+    "isEnabledInOrganization": true,
+    "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
   }
 }
 ```

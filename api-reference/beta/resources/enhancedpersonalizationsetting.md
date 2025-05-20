@@ -4,7 +4,7 @@ description: "Represents a setting that controls whether Microsoft 365 Copilot c
 author: "Ross-GH"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
-ms.subservice: "meetings-copilot"
+ms.subservice: "microsoft-365-copilot"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ Represents a setting that controls whether Microsoft 365 Copilot can use feature
 Inherits from [entity](../resources/entity.md).
 
 > [!CAUTION]
-> Disabling enhanced personalization deletes each user's personalized data store for the features associated to it. This cannot be recovered. Ensure users do not want the features before disabling and understand re-enabling does not restore past data.
+> Disabling enhanced personalization deletes each user's personalized data store for the features associated to it. This can't be recovered. Ensure users don't want the features before disabling and understand re-enabling doesn't restore past data.
 
 ## Methods
 

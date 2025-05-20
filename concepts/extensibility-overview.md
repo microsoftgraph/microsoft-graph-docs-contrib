@@ -862,7 +862,7 @@ Open extensions, together with their data, are accessible through the **extensio
 You define and manage open extensions on the fly on resource instances. They're considered unique for each object, and you don't need to apply a universally consistent pattern for all objects. For example, in the same tenant:
 
 - The user object for Adele can have an open extension named *socialSettings* that has three properties: **linkedInProfile**, **skypeId**, and **xboxGamertag**.
-- The user object for Bruno can have no open extension property.
+- The user object for Allan can have no open extension property.
 - The user object for Alex can have an open extension named *socialSettings* with five properties: **theme**, **color**, **language**, **font**, and **fontSize**.
 
 Additionally, open extension properties can have any valid JSON structure.

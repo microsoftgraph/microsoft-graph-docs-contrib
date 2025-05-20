@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get the awsRole resources from the awsRoles navigation property.
 
 ## Permissions
@@ -102,3 +104,4 @@ Content-Type: application/json
   ]
 }
 ```
+

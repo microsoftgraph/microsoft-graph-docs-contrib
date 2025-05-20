@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 04/21/2025
+ms.date: 05/19/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -4825,6 +4825,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Policy.ReadWrite.CrossTenantCapability
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | a6325ae7-2b73-4dbd-abed-fbeacfbf8696 | 9ef7463f-1d39-406f-89ea-3483a4645e1c |
+| DisplayText | Read and write your organization's M365 cross tenant access capabilities | Read and write your organization's M365 cross tenant access capabilities |
+| Description | Allows the app to read and write your organization's M365 cross tenant access capabilities without a signed-in user. | Allows the app to read and write your organization's M365 cross tenant access capabilities on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### Policy.ReadWrite.DeviceConfiguration
 
 | Category | Application | Delegated |
@@ -6361,6 +6372,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 17b78cfd-eeff-447d-8bab-2795af00055a | 8ba47079-8c47-4bfe-b2ce-13f28ef37247 |
 | DisplayText | Read and write SPIFFE trust domains and child resources | Read and write SPIFFE trust domains and child resources |
 | Description | Allows the app to read and write your organization's SPIFFE trust domains and child resources without a signed in user. | Allows the app to read and write your organization's SPIFFE trust domains and child resources on behalf of the user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### Storyline.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 6eff534b-699e-44d9-af61-a4182f0ec37e | fd1d61cb-4e4b-4d15-a6d2-161348681d84 |
+| DisplayText | Read and write all Viva Engage storylines | Read and write all Viva Engage storylines |
+| Description | Allows the app to modify Viva Engage storylines, read all storylines properties, update storyline properties, and delete storyline properties without a signed-in user. | Allows the app to modify the Viva Engage storyline and read all storyline properties on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -8071,6 +8093,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Write app activity to users' timeline |
 | Description | - | Allows the app to report the signed-in user's app activity information to Microsoft Timeline. |
 | AdminConsentRequired | - | No |
+
+---
+
+### UserWindowsSettings.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 77e07bab-1b34-40a5-bb6c-4b197b3f6027 |
+| DisplayText | - | Read windows settings for all devices |
+| Description | - | Allows the app to read a user's windows settings which are stored in cloud and their values on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserWindowsSettings.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | dcb1026d-b7e1-4d31-9f61-6724d5140bf9 |
+| DisplayText | - | Read and write windows settings for all devices |
+| Description | - | Allows the app to read and write a user's windows settings which are stored in cloud and their values on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
 
 ---
 

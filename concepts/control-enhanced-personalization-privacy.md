@@ -3,7 +3,7 @@ title: "Microsoft 365 Copilot enhanced personalization control | Microsoft Learn
 description: "Looking to learn about Microsoft 365 Copilot enhanced personalization? Learn what it is, and how to control it respecting your privacy through Microsoft Learn."
 author: "Ross-GH"
 ms.author: "rossav"
-ms.subservice: "meetings-copilot"
+ms.subservice: "microsoft-365-copilot"
 ms.topic: overview
 ms.date: 04/03/2025
 

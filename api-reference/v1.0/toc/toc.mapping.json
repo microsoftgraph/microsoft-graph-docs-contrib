@@ -995,7 +995,7 @@
               ]
             },
             {
-              "name": "Authentication methods policy",
+              "name": "Authentication methods policies",
               "overview": "../../resources/authenticationmethodspolicies-overview.md",
               "resources": [
                 "authenticationMethodsPolicy",
@@ -1801,6 +1801,17 @@
               ],
               "complexTypes": [
                 "microsoft.graph.callRecords.networkInfo"
+              ]
+            },
+            {
+              "name": "Copilot settings",
+              "resources": [
+                "copilotAdminLimitedMode"
+              ],
+              "complexTypes": [
+                "copilotAdmin",
+                "copilotAdminSetting",
+                "copilotRoot"
               ]
             },
             {

@@ -213,9 +213,9 @@ items:
   - name: List
     href: ../../api/recyclebin-list-items.md
   - name: Delete
-    href: ../../api/filestoragecontainer-delete-recyclebinitem.md
+    href: ../../api/recyclebinitem-delete.md
   - name: Restore
-    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
+    href: ../../api/recyclebinitem-restore.md
 - name: Rich long running operation
   items:
   - name: Rich long running operation
