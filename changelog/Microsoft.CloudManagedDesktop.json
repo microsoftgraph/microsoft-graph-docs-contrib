@@ -5,57 +5,57 @@
         {
           "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
           "ApiChange": "Method",
-          "ChangedApiName": "bulkreprovisioncloudpc",
+          "ChangedApiName": "bulkRestoreCloudPc",
           "ChangeType": "Deletion",
-          "Description": "Remove [bulkRestoreCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta) method.",
+          "Description": "Removed the **bulkRestoreCloudPc** method from the **managedDevice** resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
+          "ApiChange": "Method",
+          "ChangedApiName": "bulkResize",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **bulkResize** method from the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
         },
         {
           "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
           "ApiChange": "Method",
-          "ChangedApiName": "bulkresize",
+          "ChangedApiName": "bulkRestoreCloudPc",
           "ChangeType": "Deletion",
-          "Description": "Remove [bulkresize](https://learn.microsoft.com/en-us/graph/api/cloudpc-bulkresize?view=graph-rest-beta) method.",
+          "Description": "Removed the **bulkRestoreCloudPc** method from the **managedDevice** resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCloudPcRemoteActionResults",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **getCloudPcRemoteActionResults** method from the **managedDevice** resource.",
           "Target": "cloudPC"
         },
         {
           "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
           "ApiChange": "Method",
-          "ChangedApiName": "bulkrestorecloudpc",
+          "ChangedApiName": "getCloudPcReviewStatus",
           "ChangeType": "Deletion",
-          "Description": "Remove [bulkrestorecloudpc](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta) method.",
-          "Target": "cloudPC"
+          "Description": "Removed the **getCloudPcReviewStatus** method from the **managedDevice** resource.",
+          "Target": "managedDevice"
         },
         {
           "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
           "ApiChange": "Method",
-          "ChangedApiName": "getcloudpcremoteactionresults",
+          "ChangedApiName": "setCloudPcReviewStatus",
           "ChangeType": "Deletion",
-          "Description": "Remove [getcloudpcremoteactionresults](https://learn.microsoft.com/en-us/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta) method.",
-          "Target": "cloudPC"
-        },
-        {
-          "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
-          "ApiChange": "Method",
-          "ChangedApiName": "getcloudpcreviewstatus",
-          "ChangeType": "Deletion",
-          "Description": "Remove [getcloudpcreviewstatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta)  method.",
-          "Target": "cloudPC"
-        },
-        {
-          "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
-          "ApiChange": "Method",
-          "ChangedApiName": "setcloudpcreviewstatus",
-          "ChangeType": "Deletion",
-          "Description": "Remove [setcloudpcreviewstatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta) method.",
-          "Target": "cloudPC"
+          "Description": "Removed the **setCloudPcReviewStatus** from the **managedDevice** resource.",
+          "Target": "managedDevice"
         },
         {
           "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
           "ApiChange": "Method",
           "ChangedApiName": "bulkSetCloudPcReviewStatus",
           "ChangeType": "Deletion",
-          "Description": "Remove [bulkSetCloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta) method method.",
+          "Description": "Removed the **bulkSetCloudPcReviewStatus** method from the **managedDevice** resource.",
           "Target": "cloudPC"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "List snapshots",
           "ChangeType": "Deletion",
-          "Description": "Remove [List snapshots](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta) method",
+          "Description": "Removed the **List snapshots** method from the [cloudPcSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource.",
           "Target": "cloudPcSnapshot"
         }
       ],
