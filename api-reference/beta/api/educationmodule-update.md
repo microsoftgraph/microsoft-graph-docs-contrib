@@ -45,6 +45,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:-------|:----------|
 |displayName|String| Name of module. |
 |description|String| Description of the module. |
+|languageTag|String| Specifies the language in which UI notifications for the assignment are displayed. If **languageTag** isn't provided, the default language is `en-US`. Optional. |
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [educationModule](../resources/educationmodule.md) object in the response body.
