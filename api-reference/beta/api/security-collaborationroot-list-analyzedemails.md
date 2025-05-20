@@ -124,8 +124,16 @@ Content-Type: application/json
       "latestDelivery": {
         "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
       },
-      "attachmentsCount": "Integer",
-      "urlsCount": "Integer",
+      "attachments": [
+        {
+          "@odata.type": "microsoft.graph.security.analyzedEmailAttachment"
+        }
+      ],
+      "urls": [
+        {
+          "@odata.type": "microsoft.graph.security.analyzedEmailUrl"
+        }
+      ],
       "language": "String",
       "sizeInBytes": "Integer",
       "alertIds": [
@@ -156,7 +164,30 @@ Content-Type: application/json
       "bulkComplaintLevel": "String",
       "emailClusterId": "String",
       "policyAction": "String",
-      "policy": "String"
+      "policy": "String",
+      "timelineEvents": [
+        {
+          "@odata.type": "microsoft.graph.security.timelineEvent"
+        }
+      ],
+      "threatDetectionDetails": [
+        {
+          "@odata.type": "microsoft.graph.security.threatDetectionDetail"
+        }
+      ],
+      "primaryOverrideSource": "String",
+      "inboundConnectorFormattedName": "String",
+      "policyType": "String",
+      "clientType": "String",
+      "dlpRules": [
+        {
+          "@odata.type": "microsoft.graph.security.analyzedEmailDlpRuleInfo"
+        }
+      ],
+      "forwardingDetail": "String",
+      "recipientDetail": {
+        "@odata.type": "microsoft.graph.security.analyzedEmailRecipientDetail"
+      }
     }
   ]
 }
