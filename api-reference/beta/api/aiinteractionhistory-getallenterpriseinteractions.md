@@ -38,7 +38,7 @@ This method supports the `$top` and data ranges [OData query parameters](/grap
 
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /copilot/users/9fcefe95-9677-483e-a3c1-22c5d501d737/interactionHistory/getAllEnterpriseInteractions?$filter=createdDateTime gt 2024-09-09T16:48:35Z and createdDateTime lt 2024-11-15T21:48:35Z&$top=100
+GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions?$filter=createdDateTime gt 2024-09-09T16:48:35Z and createdDateTime lt 2024-11-15T21:48:35Z&$top=100
 ```
 
 This method also supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. The following table shows an example.
@@ -352,6 +352,7 @@ Content-type: application/json
 
 > [!NOTE]
 > Delta function call is not supported.
+> 
 > This API does not retrieve interactions for the following scenarios: 
 > - interactions in agents created by Copilot Studio.
 
