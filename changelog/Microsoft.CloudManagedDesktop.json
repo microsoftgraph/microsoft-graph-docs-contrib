@@ -32,7 +32,7 @@
           "ChangedApiName": "getCloudPcRemoteActionResults",
           "ChangeType": "Deletion",
           "Description": "Removed the **getCloudPcRemoteActionResults** method from the **managedDevice** resource.",
-          "Target": "cloudPC"
+          "Target": "managedDevice"
         },
         {
           "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
@@ -56,7 +56,7 @@
           "ChangedApiName": "bulkSetCloudPcReviewStatus",
           "ChangeType": "Deletion",
           "Description": "Removed the **bulkSetCloudPcReviewStatus** method from the **managedDevice** resource.",
-          "Target": "cloudPC"
+          "Target": "managedDevice"
         },
         {
           "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
