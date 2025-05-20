@@ -1,7 +1,7 @@
 ---
 title: "configurationDrift resource type"
 description: "This endpoint allows admins to get granular details regarding all active drifts for all existing monitors."
-author: "swatya"
+author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"

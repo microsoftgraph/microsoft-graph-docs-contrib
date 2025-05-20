@@ -1,7 +1,7 @@
 ---
 title: "configurationApplication resource type"
 description: "The configurationApplication is meant to ensures that UTCM gets to read and download application Certificate from the Customer Key Vault which will help UTCM during the background job flow to get access token for the service principal."
-author: "swatya"
+author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**The configurationApplication is meant to ensures that UTCM gets to read and download application Certificate from the Customer Key Vault which will help UTCM during the background job flow to get access token for the service principal.** The configurationApplicaton will help UTCM to:
+The configurationApplication is meant to ensures that UTCM gets to read and download application Certificate from the Customer Key Vault which will help UTCM during the background job flow to get access token for the service principal. The configurationApplicaton will help UTCM to:
 1.	Read certificate using Key Vault URI and Certificate name
 2.	Use that Certificate to get token from MS Entra for Exchange and other workload scopes depending on the resources the admin want to setup monitor on or take snapshot of.
 3.	Ensure that the Certificate from Key Vault is associated with the right application in Azure.
@@ -33,10 +33,10 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|**The app ID is the app ID of the application created in Azure portal.** Required.|
-|displayName|String|**User friendly name given by the user while creating a configurationApplication.** Required.|
-|description|String|**User friendly description of the configurationApplication.** Optional.|
-|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| **clientCredentials will include keyVaultURI & certificateName that the user must have obtained while creating a Key Vault.** Required.|
+|appId|String|The app ID is the app ID of the application created in Azure portal Required.|
+|displayName|String|User friendly name given by the user while creating a configurationApplication. Required.|
+|description|String|User friendly description of the configurationApplication. Optional.|
+|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| clientCredentials will include keyVaultURI & certificateName that the user must have obtained while creating a Key Vault. Required.|
 
 ## Relationships
 None.

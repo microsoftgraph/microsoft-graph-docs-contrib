@@ -1,7 +1,7 @@
 ---
 title: "configurationMonitoringResult resource type"
 description: "The endpoint allows admins to look for the monitor run details. The admins can to understand if the monitor is running successfully. If the monitor is not running successfully, they can understand reasons why they aren't running successfully. The endpoint also informs number of drifts found per monitor run."
-author: "Swatya"
+author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"

@@ -1,7 +1,7 @@
 ---
 title: "configurationMonitor resource type"
 description: "This endpoint allows admins to create and manage monitors for tenant monitoring purposes for all the UTCM supported workloads."
-author: "swatya"
+author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"

@@ -1,7 +1,7 @@
 ---
 title: "Get configurationMonitor"
 description: "Get/read the properties and relationships of a configurationMonitor object."
-author: "swatya"
+author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -45,7 +45,10 @@ GET /admin/configurationManagement/configurationMonitors/{monitorId}
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-This method supports the $select OData query parameter to retrieve specific application properties. By default, this API doesn't return anything unless keyCredentials is specified in a $select query. For example, $select=createdBy. Use $select to choose only the properties your app needs, as this can lead to performance improvements.
+
+This method supports the $filter, $select, $orderBy, $pageSize, $top, and $expand OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+By default, this API doesn't return anything unless keyCredentials is specified in a $select query. For example, $select=createdBy. Use $select to choose only the properties your app needs, as this can lead to performance improvements.
 
 ## Request headers
 
