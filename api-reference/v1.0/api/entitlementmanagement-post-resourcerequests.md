@@ -48,7 +48,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 >       - If using delegated permissions, the user requesting to add an application should be an owner of the application or in a directory role that allows them to modify application role assignments.
 >       - If using application permissions, the application requesting to add the [servicePrincipal](../resources/serviceprincipal.md) should also be assigned the *Application.ReadWrite.All* permission.
 >   - To add a SharePoint Online site as a resource to a catalog:
->       - If using delegated permissions, the user must be a *SharePoint Administrator* or the user must be the SharePoint site administrator of the site.
+>       - If using delegated permissions, the user must be assigned the *SharePoint Administrator* role or be an administrator of the SharePoint site.
 >       - If using application permissions, the application should also be assigned the `Sites.FullControl.All` permission.
 > For more information, see [Delegation and roles in entitlement management](/entra/id-governance/entitlement-management-delegate) and [how to delegate access governance to access package managers in entitlement management](/entra/id-governance/entitlement-management-delegate-managers).
 
