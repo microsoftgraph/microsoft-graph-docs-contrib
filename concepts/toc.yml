@@ -37,7 +37,7 @@ items:
       displayName: change notifications, data loss prevention, DLP, scenario
     - name: Augment Microsoft search
       href: patterns/augment-search-experience-with-custom-data.md
-      displayName: Microsoft Graph connectors, Microsoft 365 Copilot, scenario
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot, Copilot connectors, scenario
   - name: Metered APIs
     items:
     - name: Overview
@@ -555,13 +555,13 @@ items:
     items:
     - name: Connectors overview
       href: /microsoft-365-copilot/extensibility/overview-copilot-connector?toc=/graph/toc.json
-      displayName: Microsoft Graph connectors, connect external content
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors, connect external content
     - name: Connectors experiences
       href: connecting-external-content-experiences.md
-      displayName: Microsoft Graph connectors, connect external content with Microsoft 365 experiences
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors, connect external content with Microsoft 365 experiences
     - name: Connectors API
       href: connecting-external-content-connectors-api-overview.md
-      displayName: Microsoft Graph connectors
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors,
     - name: Connectors samples
       href: /samples/browse/?terms=graph%20connectors
     - name: Community connectors samples
