@@ -53,6 +53,7 @@ In the request body, supply the values for relevant fields that should be update
 |dueDateTime|DateTimeOffset| Date assignment is due. |
 |grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| How the assignment is graded.|
 |instructions|itemBody| Instructions to be given to the students along with the assignment. |
+|languageTag|String| Specifies the language in which UI notifications for the assignment are displayed. If **languageTag** isn't provided, the default language is `en-US`. Optional. |
 |notificationChannelUrl|String| Channel to post assignment publish notification. Updating the channel URL isn't allowed after the assignment has been published and is only allowed when the **assignTo** value is [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
 ## Response
