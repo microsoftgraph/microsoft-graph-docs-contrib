@@ -37,7 +37,7 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
 |Member|Description|
 |:---|:---|
-|before|Choose the closest snapshot before the selected time point.|
+|before|Choose the closest snapshot before the selected time point. Default.|
 |after|Choose the closest snapshot after the selected time point.|
 |beforeOrAfter|Choose the closest snapshot around the selected time point.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
