@@ -311,7 +311,11 @@ items:
     - name: List
       href: ../../api/virtualendpoint-list-serviceplans.md
   - name: Cloud PC snapshot
-    href: ../../resources/cloudpcsnapshot.md
+    items:
+    - name: Cloud PC snapshot
+      href: ../../resources/cloudpcsnapshot.md
+    - name: Retrieve snapshots
+      href: ../../api/cloudpc-retrievesnapshots.md
   - name: Cloud PC supported region
     items:
     - name: Cloud PC supported region
