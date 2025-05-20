@@ -608,11 +608,11 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Retrieve all types of sign in event types
+### Example 4: Retrieve all types of sign-in event types
 
 #### Request
 
-The following example shows a request.
+This API returns only interactive sign-ins unless you set an explicit filter. The following request allows you to specify a filter and return all sign-in event types.
 
 <!-- {
   "blockType": "request",
