@@ -21,14 +21,6 @@
         {
           "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
           "ApiChange": "Method",
-          "ChangedApiName": "bulkRestoreCloudPc",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **bulkRestoreCloudPc** method from the **managedDevice** resource.",
-          "Target": "managedDevice"
-        },
-        {
-          "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
-          "ApiChange": "Method",
           "ChangedApiName": "getCloudPcRemoteActionResults",
           "ChangeType": "Deletion",
           "Description": "Removed the **getCloudPcRemoteActionResults** method from the **managedDevice** resource.",
