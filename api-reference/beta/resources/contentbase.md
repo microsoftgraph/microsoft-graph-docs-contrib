@@ -1,6 +1,5 @@
 ---
-title: "contentBase resource type"
-toc.title: "contentBase resource type (preview)"
+title: "contentBase resource type (preview)"
 description: "Abstract base type representing the actual content, text, or binary being processed."
 author: "ArunGedela"
 ms.date: 04/08/2025

@@ -1076,6 +1076,34 @@ Namespace: microsoft.graph.security
 |notRelevant|The incident task is marked as not relevant.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
+### labelActionSource values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+|none|
+|unknownFutureValue|
+
+### sensitivityLabelTarget values
+
+|Member|
+|:---|
+|email|
+|site|
+|unifiedGroup|
+|teamwork|
+|unknownFutureValue|
+
+### applicationMode values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+
 <!--
 {
   "type": "#page.annotation",

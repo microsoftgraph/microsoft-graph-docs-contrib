@@ -18,7 +18,7 @@ $requestBody->setFirstName('Diane');
 $requestBody->setLastName('Demoss');
 $requestBody->setEmail('DianeDemoss@contoso.com');
 $externalRegistrationInformation = new VirtualEventExternalRegistrationInformation();
-$externalRegistrationInformation->setReferrer('Facebook');
+$externalRegistrationInformation->setReferrer('Fabrikam');
 $externalRegistrationInformation->setRegistrationId('myExternalRegistrationId');
 $requestBody->setExternalRegistrationInformation($externalRegistrationInformation);
 $requestBody->setPreferredTimezone('Pacific Standard Time');
