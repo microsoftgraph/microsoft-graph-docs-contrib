@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-get-content-format-permissions.md)]
 
 > [!NOTE]
-> * The maximum size limit for files to use format conversion is 2 MB.
+> The maximum size limit for files to use format conversion is 2 MB.
 
 ## HTTP request
 
