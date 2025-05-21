@@ -1,7 +1,7 @@
 ---
 title: "Get configurationBaseline"
 description: "Read the properties and relationships of a configurationBaseline object."
-author: "swatya"
+author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"

@@ -1,3 +1,13 @@
+---
+title: "UTCM supported workloads and resource types"
+description: "This document talks about what UTCM supported workloads and resource types."
+author: "swatyario"
+ms.date: 04/10/2025
+ms.localizationpriority: medium
+ms.subservice: "entra-sign-in"
+doc_type: resourcePageType
+---
+
 # Supported Workloads & Resource Types
 
 Unified-tenant configuration management APIs let administrators control and manage configuration settings for the entire organization. The settings can be on one or a combination of settings across the following workloads:

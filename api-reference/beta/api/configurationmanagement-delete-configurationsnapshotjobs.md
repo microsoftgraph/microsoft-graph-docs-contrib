@@ -1,7 +1,7 @@
 ---
 title: "Delete configurationSnapshotJob"
 description: "Delete a configurationSnapshotJob object."
-author: "swatya"
+author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"

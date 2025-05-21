@@ -1,7 +1,7 @@
 ---
 title: "configurationSnapshotJob resource type"
-description: "It is an asynchronous job that is created when an admin creates a snapshot."
-author: "swatya"
+description: "It's an asynchronous job that is created when an admin creates a snapshot."
+author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**It is an asynchronous job that is created when an admin creates or triggers a snapshot. Once an admin hit the createSnapshot endpoint, a configurationSnapshotJob is created which will run asynchronously. Once this job is successfully completed, the admin can then download the extraction.**
+It's an asynchronous job that is created when an admin creates or triggers a snapshot. Once an admin hits the createSnapshot endpoint, a configurationSnapshotJob is created that will run asynchronously. Once this job is successfully completed, the admin can then download the extraction.
 
 Inherits from [entity](../resources/entity.md)
 
@@ -28,17 +28,17 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|**The date and time when the snapshot job was completed**|
-|createdBy|[identitySet](../resources/identityset.md)|**The user who triggered the snapshot**|
-|createdDateTime|DateTimeOffset|**The date and time when the snapshot job was created**|
-|description|String|**User friendly description of the snapshot given by the user. Optional.**|
-|displayName|String|**User friendly name given by the user while triggering a snapshot. Required.**|
-|errorDetails|String collection|**Details of errors related to reasons why snapshot could not get completed [This won’t be visible to the customer, by default.]**|
-|id|String|**Globally unique identifier / GUID of the snapshot job.** Inherits from [entity](../resources/entity.md)|
-|resourceLocation|String|**The URL at which the snapshot file will reside**|
-|resources|String collection|**Name of all resources put in the request body by the user who triggered the snapshot [Fetched by the system]**|
-|status|snapshotJobStatus|**Status of the snapshot.**.The possible values are: `notStarted`, `running`, `succeeded`, `failed`, and `partiallySuccessful`.
-|tenantId|String|**Globally unique identifier / GUID of the tenant for which the snapshot is triggered.**|
+|completedDateTime|DateTimeOffset|The date and time when the snapshot job was completed|
+|createdBy|[identitySet](../resources/identityset.md)|The user who triggered the snapshot|
+|createdDateTime|DateTimeOffset|The date and time when the snapshot job was created|
+|description|String|User friendly description of the snapshot given by the user. Optional.|
+|displayName|String|User friendly name given by the user while triggering a snapshot. Required.|
+|errorDetails|String collection|Details of errors related to reasons why snapshot couldn't get completed [This is not visible to the customer, by default.]|
+|id|String|Globally unique identifier / GUID of the snapshot job. Inherits from [entity](../resources/entity.md)|
+|resourceLocation|String|The URL at which the snapshot file resides|
+|resources|String collection|Name of all resources put in the request body by the user who triggered the snapshot [Fetched by the system]|
+|status|snapshotJobStatus|Status of the snapshot. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, and `partiallySuccessful`.
+|tenantId|String|Globally unique identifier / GUID of the tenant for which the snapshot is triggered.|
 
 ## Relationships
 None.

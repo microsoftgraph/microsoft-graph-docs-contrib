@@ -1,7 +1,7 @@
 ---
 title: "List configurationMonitoringResult objects"
 description: "Get a list of the configurationMonitoringResult objects and their properties."
-author: "swatya"
+author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -39,7 +39,7 @@ GET /admin/configurationManagement/configurationMonitoringResults
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $filter, $orderBy, $pageSize, and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

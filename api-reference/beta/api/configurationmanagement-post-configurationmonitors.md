@@ -1,7 +1,7 @@
 ---
 title: "Create configurationMonitor"
 description: "Create a new configurationMonitor object."
-author: "swatya"
+author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -50,7 +50,7 @@ POST /admin/configurationManagement/configurationMonitors
 
 In the request body, supply a JSON representation of the [configurationMonitor](../resources/configurationmonitor.md) object.
 
-You can specify the following properties when creating a **configurationMonitor**.
+You can specify the following properties when creating a configurationMonitor.
 
 |Property|Type|Description|
 |:---|:---|:---|

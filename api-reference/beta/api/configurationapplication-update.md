@@ -1,7 +1,7 @@
 ---
 title: "Update configurationApplication"
 description: "Update the properties of a configurationApplication object."
-author: "swatya"
+author: "swatyario"
 ms.date: 04/11/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -52,10 +52,10 @@ You can specify the following properties when updating a **configurationApplicat
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|**The app ID is the app ID of the application created in Azure portal.** Required.|
-|displayName|String|**User friendly name given by the user while creating a configurationApplication.** Required.|
-|description|String|**User friendly description of the configurationApplication.** Optional.|
-|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| **clientCredentials will include keyVaultURI & certificateName that the user must have obtained while creating a Key Vault.** Required.|
+|appId|String|The app ID is the app ID of the application created in Azure portal. Required.|
+|displayName|String|User friendly name given by the user while creating a configurationApplication. Required.|
+|description|String|User friendly description of the configurationApplication. Optional.|
+|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| clientCredentials will include keyVaultURI & certificateName that the user must have obtained while creating a Key Vault. Required.|
 
 ## Response
 

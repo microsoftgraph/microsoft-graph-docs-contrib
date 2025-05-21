@@ -1,3 +1,13 @@
+---
+title: "UTCM [Unified Tenant Configuration Monitoring] APIs"
+description: "This document talks about what UTCM APIs are, and what all admins can do via them."
+author: "swatyario"
+ms.date: 04/10/2025
+ms.localizationpriority: medium
+ms.subservice: "entra-sign-in"
+doc_type: resourcePageType
+---
+
 # UTCM [Unified Tenant Configuration Monitoring] APIs
 
 **Namespace:** `microsoft.graph`

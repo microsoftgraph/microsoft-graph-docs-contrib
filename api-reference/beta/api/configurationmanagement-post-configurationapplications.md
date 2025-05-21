@@ -1,7 +1,7 @@
 ---
 title: "Create configurationApplication"
 description: "Create a new configurationApplication object."
-author: "swatya"
+author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -48,14 +48,14 @@ POST /admin/configurationManagement/configurationApplications
 
 In the request body, supply a JSON representation of the [configurationApplication](../resources/configurationapplication.md) object.
 
-You can specify the following properties when creating a **configurationApplication**.
+You can specify the following properties when creating a configurationApplication.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|**The app ID is the app ID of the application created in Azure portal.** Required.|
-|displayName|String|**User friendly name given by the user while creating a configurationApplication.** Required.|
-|description|String|**User friendly description of the configurationApplication.** Optional.|
-|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| **clientCredentials will include keyVaultURI & certificateName that the user must have obtained while creating a Key Vault.** Required.|
+|appId|String|The app ID is the app ID of the application created in Azure portal. Required.|
+|displayName|String|User friendly name given by the user while creating a configurationApplication. Required.|
+|description|String|User friendly description of the configurationApplication. Optional.|
+|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| clientCredentials will include keyVaultURI & certificateName that the user must have obtained while creating a Key Vault. Required.|
 
 ## Response
 
