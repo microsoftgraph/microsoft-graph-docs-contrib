@@ -19,6 +19,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## May 2025: New and generally available
 
+### Backup storage
+
+[Restore sessions](/graph/api/resources/restoresessionbase) and [restore artifacts](/graph/api/resources/restoreartifactbase) that are older than one year and in a terminal state are removed.
+
 ### Calendars
 
 Use the **cancelledOccurrences** property and **exceptionOccurrences** navigation property on [event](/graph/api/resources/event) to get a list of canceled and exceptional occurrences for a series master.
@@ -28,6 +32,14 @@ Use the **cancelledOccurrences** property and **exceptionOccurrences** navigatio
 [Get](/graph/api/copilotadminlimitedmode-get) or [set](/graph/api/copilotadminlimitedmode-update) whether users of Microsoft 365 Copilot in Teams meetings can receive responses to sentiment-related prompts.
 
 ## May 2025: New in preview only
+
+### Backup storage
+
+[Restore sessions](/graph/api/resources/restoresessionbase?view=graph-rest-beta&preserve-view=true) and [restore artifacts](/graph/api/resources/restoreartifactbase?view=graph-rest-beta&preserve-view=true) that are older than one year and in a terminal state are removed.
+
+### Education
+
+Use the **grade** property on [educationAssignmentPointsGrade](/graph/api/resoures/educationassignmentpointsgrade?view=graph-rest-beta&preserve-view=true) to get the grade letter from the [grading scheme](/graph/api/resoures/educationgradingscheme?view=graph-rest-beta&preserve-view=true) that corresponds to the given number of points.
 
 ### Identity and access | Multicloud permissions management
 
@@ -41,6 +53,14 @@ Use the [educationSpeakerProgressResource](/graph/api/resources/educationspeaker
 
 - [Delete](/graph/api/recyclebinitem-delete?view=graph-rest-beta&preserve-view=true) recycle bin items permanently from the recycle bin of a file storage container. 
 - [Restore](/graph/api/recyclebinitem-restore?view=graph-rest-beta&preserve-view=true) recycle bin items from the recycle bin of a file storage container. 
+
+### People and workplace intelligence | People admin settings
+
+Use the new [profilePropertySetting](/graph/api/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true) APIs to configure profile source precedence, ensuring accurate display of profile data across Microsoft 365 experiences based on configured priorities.
+
+### Teamwork and communications
+
+[Add custom activity icons in activity feed notifications](/graph/teams-send-activityfeednotifications).
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -154,4 +174,3 @@ Are there scenarios you'd like Microsoft Graph to support?
 - [Microsoft Graph developer blog](https://devblogs.microsoft.com/microsoft365dev/category/microsoft-graph/).
 - [Microsoft Graph API changelog](https://developer.microsoft.com/graph/changelog/).
 - [Microsoft Graph what's new history](whats-new-earlier.md).
- 

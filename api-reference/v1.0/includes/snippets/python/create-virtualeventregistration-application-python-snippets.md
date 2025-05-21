@@ -15,7 +15,7 @@ request_body = VirtualEventRegistration(
 	last_name = "Demoss",
 	email = "DianeDemoss@contoso.com",
 	external_registration_information = VirtualEventExternalRegistrationInformation(
-		referrer = "Facebook",
+		referrer = "Fabrikam",
 		registration_id = "myExternalRegistrationId",
 	),
 	preferred_timezone = "Pacific Standard Time",
