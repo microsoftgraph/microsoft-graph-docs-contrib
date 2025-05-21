@@ -1271,6 +1271,14 @@ items:
       href: ../../api/schedule-get.md
     - name: Share
       href: ../../api/schedule-share.md
+  - name: Schedule change request
+    items:
+    - name: Schedule change request
+      href: ../../resources/schedulechangerequest.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Scheduling group
     items:
     - name: Scheduling group
