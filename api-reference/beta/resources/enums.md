@@ -5273,3 +5273,56 @@ Possible values for user account types (group membership), per Windows definitio
 | tot                | 29    | Indicates the time zone is associated with Tonga Time(UTC+13:00).                                             |
 | lint               | 30    | Indicates the time zone is associated with Line Islands Time(UTC+14:00).                                      |
 | unknownFutureValue | 31    | Evolvable enumeration sentinel value. Do not use.                                                             |
+
+### baselineParameterType values 
+
+|Member|
+|:---|
+|string|
+|integer|
+|boolean|
+|unknownFutureValue|
+
+### driftStatus values 
+
+|Member|
+|:---|
+|active|
+|fixed|
+|unknownFutureValue|
+
+### monitorMode values 
+
+|Member|
+|:---|
+|monitorOnly|
+|unknownFutureValue|
+
+### monitorRunStatus values 
+
+|Member|
+|:---|
+|successful|
+|partiallySuccessful|
+|failed|
+|unknownFutureValue|
+
+### monitorStatus values 
+
+|Member|
+|:---|
+|active|
+|inactive|
+|inactivatedBySystem|
+|unknownFutureValue|
+
+### snapshotJobStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|partiallySuccessful|
+|unknownFutureValue|
