@@ -118,3 +118,5 @@ items:
   - name: Workbooks and charts
     href: toc/workbooks-and-charts/toc.yml
     displayName: Excel
+  - name: Unified Tenant Configuration Management
+    href: toc/unified-tenant-configuration-management/toc.yml
