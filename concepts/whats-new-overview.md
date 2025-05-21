@@ -21,7 +21,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Change notifications
 
-Added [video-on-demand publication for all sessions in a webinar](/graph/changenotifications#subscribe-to-video-on-demand-publication-for-all-sessions-in-a-webinar) as a subscribable virtual event.
+Added [video-on-demand publication for all sessions in a webinar](/graph/changenotifications-for-virtualevent) as a subscribable virtual event.
 
 ### Backup storage
 
