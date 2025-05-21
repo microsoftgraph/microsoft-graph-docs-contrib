@@ -3406,6 +3406,18 @@
         "workbookSortField",
         "workbookWorksheetProtectionOptions"
       ]
+    },
+    {
+      "name": "Unified Tenant Configuration Management",
+      "overview": "../../resources/unified-tenant-configuration-management-overview.md",
+      "shouldSort": false,
+      "resources": [
+        "configurationMonitor",
+        "configurationDrift",
+        "configurationMonitoringResult",
+        "configurationApplication",
+        "configurationSnapshot"
+      ]
     }
   ],
   "resourceOverviews": [
