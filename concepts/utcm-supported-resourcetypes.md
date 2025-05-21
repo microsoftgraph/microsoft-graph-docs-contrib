@@ -1,5 +1,5 @@
 ---
-title: "UTCM supported workloada and resource types"
+title: "UTCM supported workloads and resource types"
 description: "This document talks about what UTCM supported workloads and resource types."
 author: "swatyario"
 ms.date: 04/10/2025
