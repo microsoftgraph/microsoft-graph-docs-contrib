@@ -60,6 +60,40 @@
         "WorkloadArea": "Reports",
         "SubArea": "Identity and access reports"
       },
+    {
+        "ChangeList": [
+        {
+          "Id": "13a8d5bb-99cb-48b2-a7a1-9a797f730885",
+          "ApiChange": "Property",
+          "ChangedApiName": "agent",
+          "ChangeType": "Addition",
+          "Description": "Added the **agent** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "13a8d5bb-99cb-48b2-a7a1-9a797f730885",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "agentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentType** enumeration type.",
+          "Target": "agentType"
+        },
+        {
+          "Id": "13a8d5bb-99cb-48b2-a7a1-9a797f730885",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentSignIn](https://learn.microsoft.com/en-us/graph/api/resources/agentic-agentSignIn?view=graph-rest-beta) resource.",
+          "Target": "agentSignIn"
+        }
+      ],
+      "Id": "13a8d5bb-99cb-48b2-a7a1-9a797f730885",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-13T18:51:24.4957292Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
       {
         "ChangeList": [
           {
@@ -580,6 +614,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-11-06T20:26:18.8331804Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d77145a7-d11f-44e3-a272-6b6a32df9002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/recommendationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "recommendationConfiguration"
+        }
+      ],
+      "Id": "d77145a7-d11f-44e3-a272-6b6a32df9002",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-05T21:42:15.2101254Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },

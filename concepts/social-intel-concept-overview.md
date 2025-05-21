@@ -70,6 +70,10 @@ Profile cards let users in an organization see information about one another, su
 
 Pronouns serve as substitutes for a person's name in sentences, with gender-neutral versions available in multiple languages, for example in English, "she", "her, "he", "him" and the gender-neutral "they", "them". Accurate pronoun usage shows inclusivity and respect, avoiding assumptions based on names or initial observations of the person. In a hybrid, multicultural work or school environment, the simple act of using the right pronouns can help build trust and improve communication among one another. Administrators can use the [pronounsSettings](/graph/api/resources/pronounssettings) API to configure pronouns settings in your organization.
 
+## Why configure profile source precedence in your organization?
+
+Profile source precedence allows administrators to control how profile data is displayed across Microsoft 365 experiences. When multiple sources provide overlapping data, administrators can define the authoritative source of profile data by configuring the order of data source priority using the [profilePropertySetting](/graph/api/resources/profilepropertysetting) API. For more information, see [Manage profile source precedence settings for an organization using the Microsoft Graph API (preview)](/graph/profilepriority-configure-profilepropertysetting).
+
 ## Why integrate with document-based insights?
 
 ### Use intelligence to improve collaboration
@@ -115,6 +119,7 @@ Looking for the API reference for these services?
 - The People API [person](/graph/api/resources/person) resource
 - [Profile (preview)](/graph/api/resources/profile) resource
 - [Profile card property](/graph/api/resources/profilecardproperty) resource
+- [Profile property setting (preview)](/graph/api/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true) resource
 - [Pronouns settings](/graph/api/resources/pronounssettings) resource
 - [Insights API](/graph/api/resources/officegraphinsights)
 - [Analytics API (preview)](/graph/api/resources/useranalytics)
@@ -125,6 +130,7 @@ Looking for the API reference for these services?
 - Find more about the [people API](people-insights-overview.md).
 - See how to [customize the profile card](add-properties-profilecard.md).
 - See how to [manage pronouns settings for an organization](pronouns-configure-pronouns-availability.md).
+- See how to [manage profile source precedence settings for an organization (preview)](/graph/profilepriority-configure-profilepropertysetting).
 - Find out more about [item insights](item-insights-overview.md), [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
 - Find more about the [analytics API](/graph/api/resources/social-overview#help-users-balance-work-and-life).
 - Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).
