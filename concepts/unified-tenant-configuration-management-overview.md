@@ -53,9 +53,17 @@ UTCM snapshots will allow admins to extract the current tenant configuration set
   _Example: If an administrator wants to monitor 300 Transport Rules and 200 Conditional Access Policies, they can put it in the baseline during monitor creation._
 - The configurationMonitors can run at one of the following frequencies:  
   **6 hours**, **12 hours**, and **24 hours** _(Default)_
+- When a baseline of a monitor is updated by the admin, associated existing monitoring results and drifts will automatically get deleted.
+
+### Drifts:
+
+- All active drifts will be retained and will be available for the admin to check at any point of time.
+- Every fixed drift will get deleted after **30 days** of the drift getting fixed.
 
 ### Snapshot:
 
 - A maximum of **5 snapshots** can be taken **per day** per tenant.
 - A maximum of **20 snapshots** can be taken **per month** per tenant.
 - A maximum of **1000 resources** can be extracted per snapshot.
+- A maximum of **12 snapshot jobs** are visible to the admin. If the admin wants to create more snapshot jobs, they have to delete one or more of the existing jobs.
+- A snapshot will be retained for maximum **7 days** and then will automatically get deleted.
