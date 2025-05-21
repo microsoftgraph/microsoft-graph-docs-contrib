@@ -68,36 +68,3 @@ The following JSON representation shows the resource type.
   ]
 }
 ```
-## Example
-
-The following JSON representation shows the configurationDrift resource type.
-<!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.configurationDrift",
-  "openType": false
-}
--->
-``` json
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationDrifts/$entity",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET admin/configurationManagement/configurationDrifts('<guid>')?$select=baselineResourceDisplayName,driftedProperties",
-    "id": "4e808e99-7f60-4194-8294-02ede71effd8",
-    "monitorId": "b166c9cb-db29-438b-95fb-247da1dc72c3",
-    "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
-    "resourceType": "microsoft.exchange.accepteddomain",
-    "baselineResourceDisplayName": "Accepted Domain",
-    "firstReportedDateTime": "2024-12-12T09:00:57.4830642Z",
-    "status": "active",
-    "resourceInstanceIdentifier": {
-        "Identity": "contoso.onmicrosoft.com"
-    },
-    "driftedProperties": [
-        {
-            "propertyName": "Ensure",
-            "currentValue": "Absent",
-            "desiredValue": "Present"
-        }
-    ]
-}
-```

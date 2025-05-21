@@ -74,38 +74,3 @@ The following JSON representation shows the resource type.
   ]
 }
 ```
-## JExample
-The following JSON representation shows the resource type.
-<!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.configurationSnapshotJob",
-  "openType": false
-}
--->
-``` json
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationSnapshotJobs/$entity",
-    "@microsoft.graph.tips": "This request only returns a subset of the resource's properties. Your app will need to use $select to return non-default properties. To find out what other properties are available for this resource see https://learn.microsoft.com/graph/api/resources/configurationSnapshotJob",
-    "id": "c91a1470-acc9-4585-bc03-522ae898f82f",
-    "displayName": "Snapshot Demo",
-    "description": "This is Snapshot Description",
-    "tenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843",
-    "status": "notStarted",
-    "resources": [
-        "microsoft.exchange.sharedmailbox",
-        "microsoft.exchange.transportrule"
-    ],
-    "createdDateTime": "2025-02-18T15:43:59.7935268Z",
-    "completedDateTime": "0001-01-01T00:00:00Z",
-    "resourceLocation": "",
-    "createdBy": {
-        "user": {
-            "id": "98ceffcc-7c54-4227-8844-835af5a023ce",
-            "displayName": "AdminXTA SDFTestOrg627621"
-        }
-    }
-}
-```
-
-

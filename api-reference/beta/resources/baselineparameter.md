@@ -42,26 +42,3 @@ The following JSON representation shows the resource type.
   "parameterType": "String"
 }
 ```
-**Example 1**
-
-## JSON representation Example
-The following JSON representation shows the resource type.
-<!-- {
-  "blockType": "resource",
-  "@odata.type": "microsoft.graph.baselineParameter"
-}
--->
-``` json
-"parameters": [
-           {
-               "displayName": "FQDN",
-               "description": "The Fully Qualified Domain Name of the Tenant",
-               "parameterType": "String"
-           },
-           {
-               "displayName": "TenantId",
-               "description": "The GUID of the Tenant",
-               "parameterType": "String"
-           }
-]
-```

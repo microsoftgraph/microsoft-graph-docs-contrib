@@ -16,9 +16,6 @@ Namespace: microsoft.graph
 
 A dictionary of name-value pairs. Names must be valid property names, values may be restricted to a list of types via an annotation with term `Validation.OpenPropertyTypeConstraint
 
-
-Inherits from [Dictionary](../resources/dictionary.md).
-
 This resource is an open type.
 
 ## Properties

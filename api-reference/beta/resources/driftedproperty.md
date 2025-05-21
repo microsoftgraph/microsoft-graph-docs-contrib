@@ -46,24 +46,4 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-## Example
-
-The following JSON representation shows the configurationDrift resource type.
-<!-- {
-  "blockType": "resource",
-  "@odata.type": "microsoft.graph.driftedProperty"
-}
--->
-``` json
-{
-"driftedProperties":
-              [
-                {
-                    "propertyName": "Ensure",
-                    "currentValue": "Absent",
-                    "desiredValue": "Present"
-                }
-              ]
-}
-```
 

@@ -43,24 +43,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-**Example 1**: The following is a sample baselineResource.
-
-``` json
-{
-    "resources": [
-        {
-            "displayName": "TestSharedMailbox Resource",
-            "resourceType": "microsoft.exchange.sharedmailbox",
-            "properties": {
-                "DisplayName": "TestSharedMailbox",
-                "Alias": "testSharedMailbox",
-                "Identity": "TestSharedMailbox",
-                "Ensure": "Present",
-                "PrimarySmtpAddress": "testSharedMailbox@contoso.onmicrosoft.com",
-                "EmailAddresses": [
-                    "abc@contoso.onmicrosoft.com"
-                ]
-            }
-        } 
-    ]
-```
