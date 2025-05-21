@@ -2669,6 +2669,42 @@
         "CreatedDateTime": "2025-03-26T20:20:31.9078919Z",
         "WorkloadArea": "Security",
         "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "0b42926b-ca34-4b46-8ece-7d2ebc57d92c",
+            "ApiChange": "Property",
+            "ChangedApiName": "customDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the **customDetails** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
+            "Target": "alert"
+          }
+        ],
+        "Id": "0b42926b-ca34-4b46-8ece-7d2ebc57d92c",
+        "Cloud": "Review",
+        "Version": "beta",
+        "CreatedDateTime": "2025-05-21T03:30:26.499353Z",
+        "WorkloadArea": "Security",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "00bffed3-c1fc-46a7-bdf5-e62c5a7bd69f",
+            "ApiChange": "Property",
+            "ChangedApiName": "customDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the **customDetails** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-1.0) resource.",
+            "Target": "alert"
+          }
+        ],
+        "Id": "00bffed3-c1fc-46a7-bdf5-e62c5a7bd69f",
+        "Cloud": "Review",
+        "Version": "v1.0",
+        "CreatedDateTime": "2025-05-21T03:30:26.4995892Z",
+        "WorkloadArea": "Security",
+        "SubArea": ""
       }
   ]
 }

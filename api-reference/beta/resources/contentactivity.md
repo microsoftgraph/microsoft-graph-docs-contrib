@@ -1,6 +1,5 @@
 ---
-title: "contentActivity resource type"
-toc.title: "contentActivity resource type (preview)"
+title: "contentActivity resource type (preview)"
 description: "Represents audit log data from content processing, in a structured way to ensure compliance, track user actions, and detect unusual behavior."
 author: "ArunGedela"
 ms.date: 04/03/2025
@@ -15,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents audit log data from content processing, in a structured way to ensure compliance, track user actions, and detect unusual behavior.
+Represents audit log data from content processing in a structured way to ensure compliance, track user actions, and detect unusual behavior.
 
 ## Methods
 

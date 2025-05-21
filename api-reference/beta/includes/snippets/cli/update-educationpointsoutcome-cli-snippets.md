@@ -9,7 +9,7 @@ mgc-beta education classes assignments submissions outcomes patch --education-cl
     "@odata.type":"#microsoft.graph.educationPointsOutcome",\
     "points":{\
         "@odata.type":"#microsoft.graph.educationAssignmentPointsGrade",\
-        "points":85.0\
+        "points":85.5\
     }\
 }\
 '
