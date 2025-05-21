@@ -64,15 +64,42 @@ Get tenant labels filtered by content format and ID with an application permissi
 
 The following example shows a request to get labels for the tenant, filtered for the `File` content format and specific IDs.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_sensitivitylabels_tenant_filtered_app"
 } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels?$filter=applicableTo eq 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')
 Authorization: Bearer {token}
 Client-Request-Id: a0b9c8d7-e6f5-a4b3-c2d1-e0f9a8b7c6d5
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-sensitivitylabels-tenant-filtered-app-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-sensitivitylabels-tenant-filtered-app-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-sensitivitylabels-tenant-filtered-app-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-sensitivitylabels-tenant-filtered-app-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-sensitivitylabels-tenant-filtered-app-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-sensitivitylabels-tenant-filtered-app-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
