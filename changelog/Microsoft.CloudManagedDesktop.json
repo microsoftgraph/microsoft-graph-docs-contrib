@@ -6835,7 +6835,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-05-09T03:02:09.0363351Z",
-      "WorkloadArea": "Device and app management"
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
      },
      {
       "ChangeList": [
