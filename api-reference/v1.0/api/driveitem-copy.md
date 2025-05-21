@@ -109,7 +109,7 @@ Content-Type: application/json
   "name": "contoso plan (copy).txt"
 }
 ```
-
+<!-- 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -140,9 +140,9 @@ Content-Type: application/json
 
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/copy-item-1-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] -->
 
----
+<!-- --- -->
 
 #### Response
 
@@ -177,7 +177,7 @@ Content-Type: application/json
   "childrenOnly": true
 }
 ```
-
+<!-- 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -210,7 +210,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/python/copy-item-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+--- -->
 
 #### Response
 
