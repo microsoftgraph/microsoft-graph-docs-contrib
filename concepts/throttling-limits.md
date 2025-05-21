@@ -74,6 +74,11 @@ The rest of this article provides an overview of the service-specific throttling
 
 [!INCLUDE [Identity and access data policy operation documentation](../includes/throttling-datapolicy-operation.md)]
 
+## Identity and access device registration service limits
+
+[!INCLUDE [Identity and access device registration throttling documentation](../includes/throttling-device-registration.md)]
+
+
 ## Identity protection and conditional access service limits
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
