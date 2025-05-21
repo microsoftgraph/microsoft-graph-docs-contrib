@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**The baseline is a complex object containing the details of at least one resource and at least one property associated to the resource that the admin wants to monitor via the configurationMonitor object. The baselineResources is a collection of resources and its properties added to the baseline [At least one property of one resource must be present in the baseline].**
+The baseline is a complex object containing the details of at least one resource and at least one property associated to the resource that the admin wants to monitor via the configurationMonitor object. The baselineResources is a collection of resources and its properties added to the baseline [At least one property of one resource must be present in the baseline].
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**Unique name of the resource**|
-|properties|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|**Properties of a resource supported by UTCM**|
-|resourceType|String|**Name of the resourceType**|
+|displayName|String|Unique name of the resource|
+|properties|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Properties of a resource supported by UTCM|
+|resourceType|String|Name of the resourceType|
 
 ## Relationships
 None.

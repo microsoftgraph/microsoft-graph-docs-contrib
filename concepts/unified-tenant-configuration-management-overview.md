@@ -4,8 +4,6 @@ description: "This document talks about what UTCM APIs are, and what all admins 
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"
-doc_type: resourcePageType
 ---
 
 # UTCM [Unified Tenant Configuration Monitoring] APIs
@@ -27,7 +25,7 @@ In the traditional Microsoft Tenant Configuration Management space, any administ
 The list of supported resource types across the above 7 workloads is [here](utcm-supported-resourcetypes.md).
 
 > **Important**  
-> UTCM APIs are providing admins capabilities to manage tenant configuration via the declarative representation helping them keep the tenant configurations settings in the desired state. The declarative representation can contain one or many resources and one or more properties for each of these resources. The list of all resources and all properties for these mentioned resource types that UTCM support can be seen [here](utcm-supported-workloads.md).
+> UTCM APIs are providing admins capabilities to manage tenant configuration via the declarative representation helping them keep the tenant configurations settings in the desired state. The declarative representation can contain one or many resources and one or more properties for each of these resources. The list of all resources and all properties for these mentioned resource types that UTCM support can be seen [here](utcm-supported-resourcetypes.md).
 
 ---
 

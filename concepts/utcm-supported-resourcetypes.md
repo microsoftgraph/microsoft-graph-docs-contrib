@@ -4,8 +4,6 @@ description: "This document talks about what UTCM supported workloads and resour
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"
-doc_type: resourcePageType
 ---
 
 # Supported Workloads & Resource Types
@@ -19,6 +17,10 @@ Unified-tenant configuration management APIs let administrators control and mana
 - MS Defender
 - MS OneDrive SharePoint
 - MS Intune
+
+UTCM supports 300+ resource types and various properties per resource type. The entire repository of is available in the JSON schema store.
+ 
+For the schema, permissions, and sample examples per resource type, click [here](https://json.schemastore.org/utcm-monitor.json).
 
 ---
 
