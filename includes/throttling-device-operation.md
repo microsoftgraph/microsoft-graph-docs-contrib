@@ -9,8 +9,8 @@ ms.topic: include
 
 | Request type |Limit per app per tenant |
 | ------------ |------------------------ |
-| POST, PATCH, DELETE | 1500 requests per 150 seconds |
+| POST, PATCH, DELETE | 3,000 requests per 2 minutes and 30 seconds |
 
-The preceding limits apply to the following resources:
+The preceding limits apply to write qouta for the following resources:
 
 - [device](/graph/api/resources/device)
