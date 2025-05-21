@@ -37,7 +37,7 @@ items:
       displayName: change notifications, data loss prevention, DLP, scenario
     - name: Augment Microsoft search
       href: patterns/augment-search-experience-with-custom-data.md
-      displayName: Microsoft Graph connectors, Microsoft 365 Copilot, scenario
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot, Copilot connectors, scenario
   - name: Metered APIs
     items:
     - name: Overview
@@ -554,20 +554,14 @@ items:
   - name: External data connections
     items:
     - name: Connectors overview
-      href: connecting-external-content-connectors-overview.md
-      displayName: Microsoft Graph connectors, connect external content
+      href: /microsoft-365-copilot/extensibility/overview-copilot-connector?toc=/graph/toc.json
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors, connect external content
     - name: Connectors experiences
       href: connecting-external-content-experiences.md
-      displayName: Microsoft Graph connectors, connect external content with Microsoft 365 experiences
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors, connect external content with Microsoft 365 experiences
     - name: Connectors API
       href: connecting-external-content-connectors-api-overview.md
-      displayName: Microsoft Graph connectors
-    - name: Use Postman
-      href: connecting-external-content-connectors-api-postman.md
-      displayName: connector, connectors
-    - name: Build your first custom connector
-      href: connecting-external-content-build-quickstart.yml
-      displayName: connectors, Microsoft Graph connectors
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors,
     - name: Connectors samples
       href: /samples/browse/?terms=graph%20connectors
     - name: Community connectors samples
@@ -586,8 +580,6 @@ items:
         href: custom-connector-sdk-sample-publish.md
       - name: Surface the data in search
         href: custom-connector-sdk-sample-search.md
-    - name: Simplify connector deployment
-      href: connecting-external-content-deploy-teams.md
     - name: Manage connections
       href: connecting-external-content-manage-connections.md
     - name: Manage schema
@@ -778,6 +770,8 @@ items:
     items:
     - name: Overview
       href: social-intel-concept-overview.md
+    - name: Configure profile source precedence (preview)
+      href: profilepriority-configure-profilepropertysetting.md
     - name: Customize item insights privacy
       href: insights-customize-item-insights-privacy.md
     - name: Customize people insights privacy (preview)
@@ -794,6 +788,8 @@ items:
       href: people-insights-overview.md
     - name: Search people
       href: search-concept-person.md
+    - name: Enhanced personalization privacy
+      href: control-enhanced-personalization-privacy.md
   - name: Personal contacts
     items:
     - name: Overview
@@ -870,6 +866,8 @@ items:
       href: security-dataflow.md
     - name: Authorization
       href: security-authorization.md
+    - name: Data security and governance 
+      href: security-datasecurityandgovernance-overview.md 
     - name: Integrated solutions
       href: security-integration.md
     - name: Information Protection

@@ -1,6 +1,6 @@
 ---
 title: "Get windowsSettingInstance"
-description: "Read the properties and relationships of a windowsSettingInstance object."
+description: "Read the properties and relationships of a windowsSettingInstance object by passing the Windows setting ID and Windows setting instance ID in the URL."
 author: "MS-Arko"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [windowsSettingInstance](../resources/windowssettinginstance.md) object by passing the Windows setting ID and Windows setting instance ID in the URL. This method gets a **windowsSettingInstance** for the signed-in user.
+Read the properties and relationships of a [windowsSettingInstance](../resources/windowssettinginstance.md) object by passing the Windows setting ID and Windows setting instance ID in the URL. This method gets a **windowsSettingInstance** for a user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -25,8 +25,26 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "windowssettinginstance_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/windowssettinginstance-get-permissions.md)]
 
+>[!NOTE]
+> * The calling user must be assigned the _Microsoft 365 Backup Administrator_ [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+> * The `UserWindowsSettings.Read` permission allows the app to read the settings of only the signed-in user. 
+> * The `UserWindowsSettings.Read.All` permission allows the app to read the settings of a specific user.
+
 ## HTTP request
 
+For a specific user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /users/{user-id}@{tenant-id}/settings/windows/{windowsSettingId}/instances/{windowsSettingInstanceId}
+````
+
+> [!NOTE]
+> The `{tenant-id}` value must match the tenant ID of the calling user. To find your tenant ID, see [How to find your Microsoft Entra tenant ID](/entra/fundamentals/how-to-find-tenant).
+
+For the signed-in user:
 <!-- {
   "blockType": "ignored"
 }
@@ -37,7 +55,7 @@ GET /me/settings/windows/{windowsSettingId}/instances/{windowsSettingInstanceId}
 
 ## Optional query parameters
 
-N/A
+This method doesn't support OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

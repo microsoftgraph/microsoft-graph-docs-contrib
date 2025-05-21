@@ -12,7 +12,7 @@ ms.date: 08/21/2024
 
 Namespace: microsoft.graph
 
-Retrieve a [callTranscript](../resources/calltranscript.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API doesn't support getting call transcripts from channel meetings.
+Retrieve a [callTranscript](../resources/calltranscript.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
 
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 

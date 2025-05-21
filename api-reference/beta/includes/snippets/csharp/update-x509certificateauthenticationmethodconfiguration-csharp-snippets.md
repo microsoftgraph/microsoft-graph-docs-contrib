@@ -47,6 +47,22 @@ var requestBody = new X509CertificateAuthenticationMethodConfiguration
 	{
 		State = X509CertificateIssuerHintsState.Disabled,
 	},
+	CertificateAuthorityScopes = new List<X509CertificateAuthorityScope>
+	{
+		new X509CertificateAuthorityScope
+		{
+			SubjectKeyIdentifier = "aaaaaaaabbbbcccc111122222222222222333333",
+			PublicKeyInfrastructureIdentifier = "Contoso PKI",
+			IncludeTargets = new List<IncludeTarget>
+			{
+				new IncludeTarget
+				{
+					Id = "aaaaaaaa-bbbb-cccc-1111-222222222222",
+					TargetType = AuthenticationMethodTargetType.Group,
+				},
+			},
+		},
+	},
 	IncludeTargets = new List<AuthenticationMethodTarget>
 	{
 		new AuthenticationMethodTarget
