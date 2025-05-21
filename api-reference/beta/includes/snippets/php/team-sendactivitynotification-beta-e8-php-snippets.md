@@ -25,6 +25,7 @@ $requestBody->setActivityType('announcementPosted');
 $previewText = new ItemBody();
 $previewText->setContent('new announcemnet posted');
 $requestBody->setPreviewText($previewText);
+$requestBody->setIconId('announcementCreated');
 $recipient = new AadUserNotificationRecipient();
 $recipient->setOdataType('microsoft.graph.aadUserNotificationRecipient');
 $recipient->setUserId('jacob@contoso.com');
@@ -39,10 +40,6 @@ $templateParametersKeyValuePair2->setValue('23');
 $templateParametersArray []= $templateParametersKeyValuePair2;
 $requestBody->setTemplateParameters($templateParametersArray);
 
-$additionalData = [
-'iconId' => 'announcementCreated',
-];
-$requestBody->setAdditionalData($additionalData);
 
 $graphServiceClient->teams()->byTeamId('team-id')->sendActivityNotification()->post($requestBody)->wait();
 
