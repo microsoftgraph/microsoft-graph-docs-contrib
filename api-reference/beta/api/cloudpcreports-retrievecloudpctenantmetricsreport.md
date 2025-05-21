@@ -53,7 +53,7 @@ The following table shows the parameters that you can use with this method.
 | filter     | String                       | OData `$filter` syntax. Supported filters are: `and`, `or`, `gt`, and `eq`.                          |
 | groupBy    | String collection            | Specifies how to group the reports. If used, must have the same content as the **select** parameter. |
 | orderBy    | String collection            | Specifies how to sort the reports.                                                                   |
-| reportName | [cloudPCPerformanceReportName](../resources/cloudpcreports.md#cloudpcperformancereportname-values) | The report name. The possible values are: `performanceTrendReport`, `unknownFutureValue`, `cloudPcInsightReport`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `cloudPcInsightReport`. |
+| reportName | [cloudPCPerformanceReportName](../resources/cloudpcreports.md#cloudpcperformancereportname-values) | The report name. The possible values are: `performanceTrendReport`, `unknownFutureValue`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). |
 | search     | String                       | Specifies a String to search.                                                                        |
 | select     | String collection            | OData `$select` syntax. The selected columns of the reports.                                         |
 | skip       | Int32                        | Number of records to skip.                                                                           |
@@ -183,47 +183,6 @@ Content-Type: application/octet-stream
       91
     ]
   ]
-}
-```
-
-### Example 2: Get a Cloud PC insight report
-
-The following example shows how to get the Cloud PC insight report that provides configuration data and insights at the Cloud PC level.
-
-#### Request
-
-The following example shows a request.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "cloudpcreportsthis.retrieveCloudPcTenantMetricsReport.cloudPcInsightReport"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveCloudPcTenantMetricsReport
-
-{
-  "reportName": "cloudPcInsightReport",
-  "filter": "",
-  "select": [
-    "ManagedDeviceName",
-    "DeviceId",
-    "ClientOS",
-    "ClientVersion",
-    "MultimediaRedirectVersion",
-    "TeamsClientVersion",
-    "HostOSVersion",
-    "HostSxSStackVersion",
-    "HostAgentVersion",
-    "PolicyName",
-    "UserSettingName",
-    "HostRegion",
-    "AzureNetworkConnectName"
-  ],
-  "search": "",
-  "skip": 0,
-  "top": 50
 }
 ```
 
