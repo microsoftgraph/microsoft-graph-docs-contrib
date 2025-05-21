@@ -18,7 +18,7 @@ To enable these experiences, you must first build a basic Copilot connector. For
 
 ## Microsoft 365 Copilot
 
-[Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-overview) with Copilot connectors allow users to easily find, summarize, and learn important details about *all* content relevant to a user's natural language prompts.
+[Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-overview) with Copilot connectors allows users to easily find, summarize, and learn important details about *all* content relevant to a user's natural language prompts.
 
 To make sure that Microsoft 365 Copilot uses your content effectively:
 
@@ -34,14 +34,14 @@ To make sure that Microsoft 365 Copilot uses your content effectively:
   - During what part of the workflow do users refer to this content in their day-to-day work?
   - What are some characteristics of the content?
 
-In addition, search administrators should ensure that your Copilot connector connections are enabled for [inline results](/microsoftsearch/connectors-in-all-vertical) by using the following steps:
+In addition, search administrators should ensure that their Copilot connector connections are enabled for [inline results](/microsoftsearch/connectors-in-all-vertical) by using the following steps:
 
 - Open the Admin Center, go to **Search & intelligence** > **Customizations** > **Verticals** and select the **All** vertical.
 - Select **Manage connector result**. Ensure that **Show results inline** is selected and that the connections that you want to enable for Microsoft Search and Copilot are checked.
 
 ## Microsoft Search and Context IQ (preview)
 
-[Microsoft Search](/microsoftsearch/connectors-overview) with Copilot connectors allow your data to be searchable for users in the Microsoft Search endpoints, including Office.com, Bing at Work, and SharePoint.
+[Microsoft Search](/microsoftsearch/connectors-overview) with Copilot connectors allows your data to be searchable for users in the Microsoft Search endpoints, including Office.com, Bing at Work, and SharePoint.
 
 To configure your connector for Microsoft Search:
 
