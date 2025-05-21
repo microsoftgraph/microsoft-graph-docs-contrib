@@ -35,7 +35,7 @@ Use the **cancelledOccurrences** property and **exceptionOccurrences** navigatio
 
 ### Device and app management | Cloud PC
 
-Added **resourceAvailabilityCheckMissingRegistrationForLocation** as a possible error type for the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionHhealthcheck?view=graph-rest-beta&preserve-view=true).
+Added **resourceAvailabilityCheckMissingRegistrationForLocation** as a possible error type for the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true).
 
 ### Backup storage
 
