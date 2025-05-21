@@ -11,6 +11,8 @@ ms.date: 07/26/2024
 
 # appScope resource type
 
+Namespace: microsoft.graph
+
 The scope of a role assignment determines the set of resources for which the principal has been granted access. An app scope is a scope defined and understood by a specific application, unlike directory scopes that are shared scopes stored in the directory and understood by multiple applications.
 
 This may be in both the following principal and scope scenarios:
@@ -20,7 +22,7 @@ This may be in both the following principal and scope scenarios:
 Inherits from [entity](entity.md).
 
 ## Methods
-None
+None.
 
 ## Properties
 
