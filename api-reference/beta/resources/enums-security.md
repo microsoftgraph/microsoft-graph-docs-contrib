@@ -60,6 +60,9 @@ Namespace: microsoft.graph.security
 |generativeAi|
 |unknown|
 |unknownFutureValue|
+|aiModelProvider|
+|mcpServer|
+|clientAiApp|
 
 ### appInfoCsaStarLevel values 
 
