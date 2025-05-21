@@ -12,7 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-Create a copy of a [driveItem][item-resource] asynchronously. You can optionally include child items, specify a new parent folder, or provide a new name. Once the request is accepted, the operation is queued and processed asynchronously. Use the [monitor URL](/graph/long-running-actions-overview) to track progress until the operation completes.
+Create a copy of a [driveItem][item-resource] asynchronously including child items. You can specify a new parent folder, or provide a new name. Once the request is accepted, the operation is queued and processed asynchronously. Use the [monitor URL](/graph/long-running-actions-overview) to track progress until the operation completes.
 
 > [!IMPORTANT]
 > Permissions aren't retained when an driveItem is copied. The copied driveItem inherits the permissions of the destination folder.
@@ -577,7 +577,7 @@ To copy the contents of the root folder without copying the folder itself, set t
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-6" } -->
 
-```HTTP
+```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/root/copy
 Content-Type: application/json
 
@@ -702,7 +702,7 @@ Content-Length: 285
 }
 ```
 
-### Example 10: Successful children copy
+### Example 10: Successful children only copy
 
 This example demonstrates how to copy the child items of a folder (without copying the folder itself) into a new destination. The source folder is identified by `{item-id}` and the destination folder is specified using its `driveId` and `id`. The request sets the `childrenOnly` property to `true`, which is valid only for folder items.
 
