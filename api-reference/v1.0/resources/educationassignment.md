@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |[Delete](../api/educationassignment-delete.md) | None |Delete an **educationAssignment** object. |
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Change the state of an **educationAssignment** object from draft to published.|
 |[Create assignment resource](../api/educationassignment-post-resource.md) |[educationAssignmentResource](educationassignmentresource.md)| Create a new **educationAssignmentResource** by posting to the resources collection.|
-|[Get assignment resource](../api/educationassignmentresource-get) |[educationAssignmentResource](educationassignmentresource.md)| Get the properties of an **educationAssignmentResource** associated with an **Assignment**|
+|[Get assignment resource](../api/educationassignmentresource-get.md) |[educationAssignmentResource](educationassignmentresource.md)| Get the properties of an **educationAssignmentResource** associated with an **Assignment**|
 |[Delete assignment resource](../api/educationassignmentresource-get.md) |None| Delete a specific **educationAssignmentResource** attached to an **assignment**|
 |[Set up assignment resources folder](../api/educationassignment-setupresourcesfolder.md)| string| Create a SharePoint folder (under predefined location) to upload files as assignment resources.|
 |[Set up assignment feedback resources folder](../api/educationassignment-setupfeedbackresourcesfolder.md)|[educationAssignment](../resources/educationassignment.md)|Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md).|
