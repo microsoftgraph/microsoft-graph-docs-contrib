@@ -154,7 +154,7 @@ Use the URL in the `Location` header to monitor the progress of the asynchronous
 
 ### Example 2: Copy the child items in a folder
 
-The example copies only the contents of a folder, not the folder itself, to a different destination. The source folder is identified by `{item-id}` and the destination is identified by its `driveId` and `id` values.
+The example copies only the contents of a folder, not the folder itself, to a different destination. The source folder is identified by `{item-id}`, and the destination is identified by its `driveId` and `id` values.
 
 The request sets the `childrenOnly` parameter to true, which is valid only when the source item is a folder.
 
