@@ -1,0 +1,52 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Overview
+  href: ../../concepts/unified-tenant-configuration-management-overview.md
+- name: Configuration monitor
+  items:
+  - name: Configuration monitor
+    href: ../../resources/configurationmonitor.md
+  - name: List
+    href: ../../api/configurationmanagement-list-configurationmonitors.md
+  - name: Create
+    href: ../../api/configurationmanagement-post-configurationmonitors.md
+  - name: Get
+    href: ../../api/configurationmonitor-get.md
+  - name: Update
+    href: ../../api/configurationmonitor-update.md
+  - name: Delete
+    href: ../../api/configurationmanagement-delete-configurationmonitors.md
+  - name: Get configurationBaseline
+    href: ../../api/configurationbaseline-get.md
+- name: Configuration monitoring result
+  items:
+  - name: Configuration monitoring result
+    href: ../../resources/configurationmonitoringresult.md
+  - name: Get
+    href: ../../api/configurationmonitoringresult-get.md
+- name: Configuration application
+  items:
+  - name: Configuration application
+    href: ../../resources/configurationapplication.md
+  - name: List
+    href: ../../api/configurationmanagement-list-configurationapplications.md
+  - name: Create
+    href: ../../api/configurationmanagement-post-configurationapplications.md
+  - name: Get
+    href: ../../api/configurationapplication-get.md
+  - name: Update
+    href: ../../api/configurationapplication-update.md
+  - name: Delete
+    href: ../../api/configurationmanagement-delete-configurationapplications.md
+- name: Configuration snapshot job
+  items:
+  - name: Configuration snapshot job
+    href: ../../resources/configurationsnapshotjob.md
+  - name: List
+    href: ../../api/configurationmanagement-list-configurationsnapshotjobs.md
+  - name: Get
+    href: ../../api/configurationsnapshotjob-get.md
+  - name: Delete
+    href: ../../api/configurationmanagement-delete-configurationsnapshotjobs.md
