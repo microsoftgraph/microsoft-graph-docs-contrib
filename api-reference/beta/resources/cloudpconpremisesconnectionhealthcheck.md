@@ -34,7 +34,7 @@ Represents the result of a Cloud PC Azure network connection health check.
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `warning`, `informational`, `unknownFutureValue`. Read-only.|
 |startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
 |endDateTime|DateTimeOffset|The end time of the health check item. Read-only.|
-|errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|The type of error that occurred during this health check.|
+|errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|The type of error that occurred during this health check. For the list of possible values, see [cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values).|
 |recommendedAction|String|The recommended action to fix the corresponding error.|
 |startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Read-only.|
@@ -89,6 +89,7 @@ Represents the result of a Cloud PC Azure network connection health check.
 |resourceAvailabilityCheckResourceGroupLockedForReadonly|The selected resource group is locked and can't be modified for provisioning. Remove this lock to allow provisioning to succeed.|
 |resourceAvailabilityCheckResourceGroupLockedForDelete|The selected resource group or its parent scope has been locked for delete actions. It might be because the IP addresses are used up. Remove the lock and try again.|
 |resourceAvailabilityCheckDeploymentQuotaLimitReached|The resource group used by the Azure network connection has been locked for delete actions and has hit the deployment history quota limit. Remove this lock to allow Windows 365 service to delete obsolete virtual network adapters.|
+|resourceAvailabilityCheckMissingRegistrationForLocation|Missing registration for location. To fix this issue, register the Azure Network resource provider for your account. |
 |resourceAvailabilityCheckTransientServiceError|The resource availability check failed due to a transient error. Try it again. If the issue persists, contact customer support.|
 |resourceAvailabilityCheckNoIntuneReaderRoleError|The Cloud PC service principal has insufficient permissions to check the Intune platform restriction settings. Make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
 |resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation| Intune has a default Windows platform restriction policy, which can block you from provisioning.|
