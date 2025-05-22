@@ -3,124 +3,76 @@
       {
         "ChangeList": [
           {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "Id": "4934104c-06cd-49b5-a50e-c3f0ee1482f6",
             "ApiChange": "Enumeration",
-            "ChangedApiName": "protectionUnitsBulkJobStatus",
+            "ChangedApiName": "restoreArtifactsBulkRequestStatus",
             "ChangeType": "Addition",
-            "Description": "Added the **protectionUnitsBulkJobStatus** enumeration type.",
-            "Target": "protectionUnitsBulkJobStatus"
+            "Description": "Added the **restoreArtifactsBulkRequestStatus** enumeration type.",
+            "Target": "restoreArtifactsBulkRequestStatus"
           },
           {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "driveProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **driveProtectionUnitsBulkAdditionJobs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-1.0) resource.",
-            "Target": "backupRestoreRoot"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "mailboxProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **mailboxProtectionUnitsBulkAdditionJobs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-1.0) resource.",
-            "Target": "backupRestoreRoot"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "siteProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **siteProtectionUnitsBulkAdditionJobs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-1.0) resource.",
-            "Target": "backupRestoreRoot"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "Id": "4934104c-06cd-49b5-a50e-c3f0ee1482f6",
             "ApiChange": "Resource",
-            "ChangedApiName": "driveProtectionUnitsBulkAdditionJob",
+            "ChangedApiName": "driveRestoreArtifactsBulkAdditionRequest",
             "ChangeType": "Addition",
-            "Description": "Added the [driveProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnitsBulkAdditionJob?view=graph-rest-1.0) resource.",
-            "Target": "driveProtectionUnitsBulkAdditionJob"
+            "Description": "Added the [driveRestoreArtifactsBulkAdditionRequest](https://learn.microsoft.com/en-us/graph/api/resources/driveRestoreArtifactsBulkAdditionRequest?view=graph-rest-1.0) resource and associated methods.",
+            "Target": "driveRestoreArtifactsBulkAdditionRequest"
           },
           {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "Id": "4934104c-06cd-49b5-a50e-c3f0ee1482f6",
             "ApiChange": "Relationship",
-            "ChangedApiName": "mailboxProtectionUnitsBulkAdditionJobs",
+            "ChangedApiName": "mailboxRestoreArtifactsBulkAdditionRequests",
             "ChangeType": "Addition",
-            "Description": "Added the **mailboxProtectionUnitsBulkAdditionJobs** relationship to the [exchangeProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-1.0) resource.",
-            "Target": "exchangeProtectionPolicy"
+            "Description": "Added the **mailboxRestoreArtifactsBulkAdditionRequests** relationship to the [exchangeRestoreSession](https://learn.microsoft.com/en-us/graph/api/resources/exchangeRestoreSession?view=graph-rest-1.0) resource.",
+            "Target": "exchangeRestoreSession"
           },
           {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "Id": "4934104c-06cd-49b5-a50e-c3f0ee1482f6",
             "ApiChange": "Resource",
-            "ChangedApiName": "mailboxProtectionUnitsBulkAdditionJob",
+            "ChangedApiName": "mailboxRestoreArtifactsBulkAdditionRequest",
             "ChangeType": "Addition",
-            "Description": "Added the [mailboxProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnitsBulkAdditionJob?view=graph-rest-1.0) resource.",
-            "Target": "mailboxProtectionUnitsBulkAdditionJob"
+            "Description": "Added the [mailboxRestoreArtifactsBulkAdditionRequest](https://learn.microsoft.com/en-us/graph/api/resources/mailboxRestoreArtifactsBulkAdditionRequest?view=graph-rest-1.0) resource and associated methods.",
+            "Target": "mailboxRestoreArtifactsBulkAdditionRequest"
           },
           {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "Id": "4934104c-06cd-49b5-a50e-c3f0ee1482f6",
             "ApiChange": "Relationship",
-            "ChangedApiName": "driveProtectionUnitsBulkAdditionJobs",
+            "ChangedApiName": "driveRestoreArtifactsBulkAdditionRequests",
             "ChangeType": "Addition",
-            "Description": "Added the **driveProtectionUnitsBulkAdditionJobs** relationship to the [oneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-1.0) resource.",
-            "Target": "oneDriveForBusinessProtectionPolicy"
+            "Description": "Added the **driveRestoreArtifactsBulkAdditionRequests** relationship to the [oneDriveForBusinessRestoreSession](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessRestoreSession?view=graph-rest-1.0) resource.",
+            "Target": "oneDriveForBusinessRestoreSession"
           },
           {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "Id": "4934104c-06cd-49b5-a50e-c3f0ee1482f6",
             "ApiChange": "Resource",
-            "ChangedApiName": "protectionUnitsBulkJobBase",
+            "ChangedApiName": "restoreArtifactsBulkRequestBase",
             "ChangeType": "Addition",
-            "Description": "Added the [protectionUnitsBulkJobBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitsBulkJobBase?view=graph-rest-1.0) resource.",
-            "Target": "protectionUnitsBulkJobBase"
+            "Description": "Added the [restoreArtifactsBulkRequestBase](https://learn.microsoft.com/en-us/graph/api/resources/restoreartifactsbulkrequestbase?view=graph-rest-1.0) resource.",
+            "Target": "restoreArtifactsBulkRequestBase"
           },
           {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "Id": "4934104c-06cd-49b5-a50e-c3f0ee1482f6",
             "ApiChange": "Relationship",
-            "ChangedApiName": "siteProtectionUnitsBulkAdditionJobs",
+            "ChangedApiName": "siteRestoreArtifactsBulkAdditionRequests",
             "ChangeType": "Addition",
-            "Description": "Added the **siteProtectionUnitsBulkAdditionJobs** relationship to the [sharePointProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-1.0) resource.",
-            "Target": "sharePointProtectionPolicy"
+            "Description": "Added the **siteRestoreArtifactsBulkAdditionRequests** relationship to the [sharePointRestoreSession](https://learn.microsoft.com/en-us/graph/api/resources/sharePointRestoreSession?view=graph-rest-1.0) resource.",
+            "Target": "sharePointRestoreSession"
           },
           {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "Id": "4934104c-06cd-49b5-a50e-c3f0ee1482f6",
             "ApiChange": "Resource",
-            "ChangedApiName": "siteProtectionUnitsBulkAdditionJob",
+            "ChangedApiName": "siteRestoreArtifactsBulkAdditionRequest",
             "ChangeType": "Addition",
-            "Description": "Added the [siteProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnitsBulkAdditionJob?view=graph-rest-1.0) resource.",
-            "Target": "siteProtectionUnitsBulkAdditionJob"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "NavigationPropertyBinding",
-            "ChangedApiName": "backupRestore/exchangeProtectionPolicies/mailboxProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the [backupRestore/exchangeProtectionPolicies/mailboxProtectionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
-            "Target": "solutions"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "NavigationPropertyBinding",
-            "ChangedApiName": "backupRestore/oneDriveForBusinessProtectionPolicies/driveProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the [backupRestore/oneDriveForBusinessProtectionPolicies/driveProtectionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
-            "Target": "solutions"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "NavigationPropertyBinding",
-            "ChangedApiName": "backupRestore/sharePointProtectionPolicies/siteProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the [backupRestore/sharePointProtectionPolicies/siteProtectionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
-            "Target": "solutions"
+            "Description": "Added the [siteRestoreArtifactsBulkAdditionRequest](https://learn.microsoft.com/en-us/graph/api/resources/siteRestoreArtifactsBulkAdditionRequest?view=graph-rest-1.0) resource and associated methods.",
+            "Target": "siteRestoreArtifactsBulkAdditionRequest"
           }
         ],
-        "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+        "Id": "4934104c-06cd-49b5-a50e-c3f0ee1482f6",
         "Cloud": "Prod",
         "Version": "v1.0",
-        "CreatedDateTime": "2025-05-20T20:56:50.6135343Z",
-        "WorkloadArea": "EnhancedRestore",
-        "SubArea": "Backup and Restore"
+        "CreatedDateTime": "2025-05-20T07:45:06.6167349Z",
+        "WorkloadArea": "Backup storage",
+        "SubArea": ""
       },
       {
         "ChangeList": [

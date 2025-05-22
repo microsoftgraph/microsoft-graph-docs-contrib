@@ -18,6 +18,9 @@ Namespace: microsoft.graph
 
 Represents the restore point and destination details that can be used to restore a site, drive, or mailbox [protection unit](protectionunitbase.md).
 
+> [!NOTE]
+> Restore artifacts that are older than one year and in a terminal state are removed.
+
 ## Properties
 
 |Property|Type|Description|
