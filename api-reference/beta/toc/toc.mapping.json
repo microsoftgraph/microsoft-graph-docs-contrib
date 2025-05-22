@@ -3403,7 +3403,7 @@
         "configurationDrift",
         "configurationMonitoringResult",
         "configurationApplication",
-        "configurationSnapshot"
+        "configurationSnapshotJob"
       ]
     }
   ],
