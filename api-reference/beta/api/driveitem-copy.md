@@ -86,7 +86,7 @@ The response returns details about how to [monitor the progress](/graph/long-run
 ### Example 1: Copy a file to a folder
 
 This example shows how to copy a file identified by `{item-id}` into a destination folder identified by its `driveId` and `id` values.
-The copied file is given a new name `contoso plan (copy).txt`
+The copied file is given a new name `contoso plan (copy).txt`.
 
 
 #### Request
