@@ -3,7 +3,7 @@
 #
 items:
 - name: Overview
-  href: ../../resources/unified-tenant-configuration-management-overview.md
+  href: ../../concepts/unified-tenant-configuration-management-overview.md
 - name: Configuration monitor
   items:
   - name: Configuration monitor
