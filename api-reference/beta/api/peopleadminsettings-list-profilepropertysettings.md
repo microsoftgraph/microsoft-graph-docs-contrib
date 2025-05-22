@@ -20,11 +20,7 @@ Get a collection of [profilePropertySetting](../resources/profilepropertysetting
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "peopleadminsettings-list-profilepropertysettings-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "peopleadminsettings_list_profilepropertysettings" } -->
 [!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-list-profilepropertysettings-permissions.md)]
 
 ## HTTP request
