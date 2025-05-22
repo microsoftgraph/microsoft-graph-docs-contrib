@@ -16,15 +16,19 @@ Namespace: microsoft.graph
 
 Represents a type of shift request to swap a [shift](../resources/shift.md) with another user in the [team](../resources/team.md).
 
+Inherits from [offerShiftRequest](../resources/offershiftrequest.md).
+
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List](../api/swapshiftschangerequest-list.md) | Collection of [swapShiftsChangeRequest](swapshiftschangerequest.md) | List the properties and relationships of **swapShiftsChangeRequest** objects in a team. |
-| [Create](../api/swapshiftschangerequest-post.md) | [swapshiftschangerequest](swapshiftschangerequest.md) | Create an instance of an swapshiftschangerequest object. |
+| [Create](../api/swapshiftschangerequest-post.md) | [swapshiftschangerequest](swapshiftschangerequest.md) | Create an instance of an **swapShiftsChangeRequest** object. |
 | [Get](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Read the properties and relationships of a **swapShiftsChangeRequest** object. |
-|[Approve](../api/swapshiftschangerequest-approve.md)|None|Approve a **swapShiftsChangeRequest**. |
-|[Decline](../api/swapshiftschangerequest-decline.md)|None|Decline a **swapShiftsChangeRequest**.|
+| [Approve](../api/swapshiftschangerequest-approve.md)|None|Approve an **swapShiftsChangeRequest**. |
+| [Approve for user](../api/schedulechangerequest-approveforuser.md)|None|Approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object for a user. This action only supports application permissions.|
+| [Decline](../api/swapshiftschangerequest-decline.md)|None|Decline an **swapShiftsChangeRequest**. |
+| [Decline for user](../api/schedulechangerequest-declineforuser.md)|None|Decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object for a user. This action only supports application permissions.|
 
 ## Properties
 
