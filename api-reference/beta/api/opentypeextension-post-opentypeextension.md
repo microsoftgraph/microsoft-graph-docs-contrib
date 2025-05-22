@@ -760,8 +760,7 @@ Content-type: application/json
 
 ### Response 6
 
-The following example shows the response, including the properties of the new **driveItem**
-and the following for the new extension:
+The following example shows the response, including the following properties for the new extension:
 
 - The **id** property with the fully qualified name.
 - The default property **extensionName** specified in the request.
@@ -772,7 +771,7 @@ and the following for the new extension:
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.driveItem"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -914,7 +913,7 @@ The following example shows the response, including the properties of the new ex
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": ""
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created

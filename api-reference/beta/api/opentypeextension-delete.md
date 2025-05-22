@@ -250,7 +250,7 @@ The following example shows how to delete an extension by its name from the spec
   "sampleKeys": ["8f52f9ad-4f4f-4739-b682-7c0283207937", "Com.Contoso.Referral"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/drive/sites/8f52f9ad-4f4f-4739-b682-7c0283207937/extensions/Com.Contoso.Referral
+DELETE https://graph.microsoft.com/beta/sites/8f52f9ad-4f4f-4739-b682-7c0283207937/extensions/Com.Contoso.Referral
 ```
 
 ### Response 4
