@@ -1,6 +1,6 @@
 ---
 title: "UTCM [Unified Tenant Configuration Monitoring] APIs"
-description: "This document talks about what UTCM APIs are, and what all admins can do via them."
+description: "This document talks about what UTCM APIs are, and what all admins can do via these APIs."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
