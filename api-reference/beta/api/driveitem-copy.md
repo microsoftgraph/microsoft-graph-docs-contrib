@@ -61,7 +61,7 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 >[!NOTE]
 > The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
 >
-> The `@microsoft.graph.conflictBehavior` will be applied to all the items being copied during the operation. The `replace` value is only supported for files, and folders with conflicts will use the `fail` behavior instead.
+> The `@microsoft.graph.conflictBehavior` parameter is applied to all the items copied during the operation. The `replace` value is only supported for files; folders with conflicts use the `fail` behavior instead.
 
 ## Request body
 
