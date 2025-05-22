@@ -1,18 +1,16 @@
 ---
 title: "driveRestoreArtifactsBulkAdditionRequest resource type"
 description: "Represents the properties of a driveRestoreArtifactsBulkAdditionRequest associated with a OneDrive for work or school restore session."
-author: "vidula-verma"
+author: "nupur-munda"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
-ms.date: 12/11/2024
+ms.date: 05/20/2025
 ---
 
 # driveRestoreArtifactsBulkAdditionRequest resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the properties of a **driveRestoreArtifactsBulkAdditionRequest** associated with a [OneDrive for work or school restore session](../resources/onedriveforbusinessrestoresession.md). It contains a list of drives that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
 
@@ -33,7 +31,7 @@ Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbul
 | createdBy              | [identitySet](../resources/identityset.md)                            | The identity of the person who created the bulk request. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).       |
 | createdDateTime        | DateTimeOffset                                                       | The time when the bulk request was created. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).                    |
 | destinationType        | destinationType                                                      | Indicates the restoration destination. The possible values are: `new`, `inPlace`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
-| directoryObjectIds     | String collection                                                    | The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.           |
+| directoryObjectIds     | String collection                                                    | The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.            |
 | displayName            | String                                                               | Name of the addition request. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).                                 |
 | drives                 | String collection                                                    | The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.                                                                                                          |
 | error                  | [publicError](../resources/publicerror.md)                            | Error details are populated for resource resolution failures. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
@@ -79,4 +77,3 @@ The following JSON representation shows the resource type.
   "tags": "String"
 }
 ```
-

@@ -1,18 +1,16 @@
 ---
 title: "siteRestoreArtifactsBulkAdditionRequest resource type"
 description: "Represents the properties of a siteRestoreArtifactsBulkAdditionRequest associated with a SharePoint restore session."
-author: "vidula-verma"
+author: "nupur-munda"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
-ms.date: 12/11/2024
+ms.date: 05/20/2025
 ---
 
 # siteRestoreArtifactsBulkAdditionRequest resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the properties of a **siteRestoreArtifactsBulkAdditionRequest** associated with a [SharePoint restore session](../resources/sharepointrestoresession.md). It includes a list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
 
@@ -79,4 +77,3 @@ The following JSON representation shows the resource type.
   "tags": "String"
 }
 ```
-
