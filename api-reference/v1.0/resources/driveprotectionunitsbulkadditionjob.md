@@ -5,7 +5,7 @@ author: "nupurmunda"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
-ms.date: 03/31/2025
+ms.date: 05/22/2025
 ---
 
 # driveProtectionUnitsBulkAdditionJob resource type

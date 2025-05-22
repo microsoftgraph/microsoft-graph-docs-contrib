@@ -5,6 +5,7 @@ author: "nupurmunda"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 05/22/2025
 ---
 
 # Create siteProtectionUnitsBulkAdditionJob
