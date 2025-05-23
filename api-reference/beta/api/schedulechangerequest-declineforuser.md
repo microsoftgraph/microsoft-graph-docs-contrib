@@ -22,39 +22,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 Permissions for [offerShiftRequest](../resources/offershiftrequest.md):
 
-<!-- {
-  "blockType": "permissions",
-  "name": "offershiftrequest-declineforuser-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/offershiftrequest-declineforuser-permissions.md)]
+<!-- { "blockType": "permissions", "name": "schedulechangerequest_declineforuser" } -->
+[!INCLUDE [permissions-table](../includes/permissions/schedulechangerequest-declineforuser-permissions.md)]
 
 Permissions for [openShiftChangeRequest](../resources/openshiftchangerequest.md):
 
-<!-- {
-  "blockType": "permissions",
-  "name": "openshiftchangerequest-declineforuser-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/openshiftchangerequest-declineforuser-permissions.md)]
+<!-- { "blockType": "permissions", "name": "schedulechangerequest_declineforuser_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/schedulechangerequest-declineforuser-2-permissions.md)]
 
 Permissions for [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md):
 
-<!-- {
-  "blockType": "permissions",
-  "name": "swapshiftschangerequest-declineforuser-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/swapshiftschangerequest-declineforuser-permissions.md)]
+<!-- { "blockType": "permissions", "name": "schedulechangerequest_declineforuser_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/schedulechangerequest-declineforuser-3-permissions.md)]
 
 Permissions for [timeOffRequest](../resources/timeoffrequest.md):
 
-<!-- {
-  "blockType": "permissions",
-  "name": "timeoffrequest-declineforuser-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/timeoffrequest-declineforuser-permissions.md)]
+<!-- { "blockType": "permissions", "name": "schedulechangerequest_declineforuser_4" } -->
+[!INCLUDE [permissions-table](../includes/permissions/schedulechangerequest-declineforuser-4-permissions.md)]
 
 ## HTTP request
 

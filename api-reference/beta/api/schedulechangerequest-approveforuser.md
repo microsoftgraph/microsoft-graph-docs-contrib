@@ -22,39 +22,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 Permissions for [offerShiftRequest](../resources/offershiftrequest.md):
 
-<!-- {
-  "blockType": "permissions",
-  "name": "offershiftrequest-approveforuser-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/offershiftrequest-approveforuser-permissions.md)]
+<!-- { "blockType": "permissions", "name": "schedulechangerequest_approveforuser" } -->
+[!INCLUDE [permissions-table](../includes/permissions/schedulechangerequest-approveforuser-permissions.md)]
 
 Permissions for [openShiftChangeRequest](../resources/openshiftchangerequest.md):
 
-<!-- {
-  "blockType": "permissions",
-  "name": "openshiftchangerequest-approveforuser-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/openshiftchangerequest-approveforuser-permissions.md)]
+<!-- { "blockType": "permissions", "name": "schedulechangerequest_approveforuser_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/schedulechangerequest-approveforuser-2-permissions.md)]
 
 Permissions for [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md):
 
-<!-- {
-  "blockType": "permissions",
-  "name": "swapshiftschangerequest-approveforuser-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/swapshiftschangerequest-approveforuser-permissions.md)]
+<!-- { "blockType": "permissions", "name": "schedulechangerequest_approveforuser_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/schedulechangerequest-approveforuser-3-permissions.md)]
 
 Permissions for [timeOffRequest](../resources/timeoffrequest.md):
 
-<!-- {
-  "blockType": "permissions",
-  "name": "timeoffrequest-approveforuser-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/timeoffrequest-approveforuser-permissions.md)]
+<!-- { "blockType": "permissions", "name": "schedulechangerequest_approveforuser_4" } -->
+[!INCLUDE [permissions-table](../includes/permissions/schedulechangerequest-approveforuser-4-permissions.md)]
 
 ## HTTP request
 
