@@ -60,6 +60,40 @@
         "WorkloadArea": "Reports",
         "SubArea": "Identity and access reports"
       },
+    {
+        "ChangeList": [
+        {
+          "Id": "13a8d5bb-99cb-48b2-a7a1-9a797f730885",
+          "ApiChange": "Property",
+          "ChangedApiName": "agent",
+          "ChangeType": "Addition",
+          "Description": "Added the **agent** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "13a8d5bb-99cb-48b2-a7a1-9a797f730885",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "agentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentType** enumeration type.",
+          "Target": "agentType"
+        },
+        {
+          "Id": "13a8d5bb-99cb-48b2-a7a1-9a797f730885",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentSignIn](https://learn.microsoft.com/en-us/graph/api/resources/agentic-agentSignIn?view=graph-rest-beta) resource.",
+          "Target": "agentSignIn"
+        }
+      ],
+      "Id": "13a8d5bb-99cb-48b2-a7a1-9a797f730885",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-13T18:51:24.4957292Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
       {
         "ChangeList": [
           {

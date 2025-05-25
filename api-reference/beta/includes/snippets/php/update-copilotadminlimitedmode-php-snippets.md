@@ -13,8 +13,8 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CopilotAdminLimitedMode();
 $requestBody->setOdataType('#microsoft.graph.copilotAdminLimitedMode');
-$requestBody->setIsEnabledForGroup(boolean);
-$requestBody->setGroupId('String');
+$requestBody->setIsEnabledForGroup(true);
+$requestBody->setGroupId('4c563cdf-0efa-44c5-a384-dbf57db277df');
 
 $result = $graphServiceClient->copilot()->admin()->settings()->limitedMode()->patch($requestBody)->wait();
 

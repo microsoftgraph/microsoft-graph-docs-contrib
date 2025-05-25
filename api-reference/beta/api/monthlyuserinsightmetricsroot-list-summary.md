@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /reports/userInsightsRoot/monthly/summary
+GET /reports/userInsights/monthly/summary
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/userInsightsRoot/monthly/summary
+GET https://graph.microsoft.com/beta/reports/userInsights/monthly/summary
 ```
 
 ### Response
