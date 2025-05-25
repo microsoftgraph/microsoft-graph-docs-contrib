@@ -66,6 +66,7 @@ If successful, this action returns a `200 OK` response code and a [computeRights
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sensitivitylabelthis.computerightsandinheritance"
@@ -88,6 +89,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/sensitivitylabelthiscomputerightsandinheritance-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
