@@ -16,17 +16,24 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
+
 ## May 2025: New and generally available
 
 ### Security | eDiscovery
-- Added the `description` property to [eDiscovery review set](/graph/api/resources/security-ediscoveryreviewset) resource.
-- [Update](/graph/api/security-ediscoveryreviewset-update) the `displayName` and `description` of an [eDiscovery review set](/graph/api/resources/security-ediscoveryreviewset).
+
+- Use the `description` property on [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset) to get or set the eDiscovery review set description..
+- [Update](/graph/api/security-ediscoveryreviewset-update) the **displayName** and **description** of an [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset).
 
 ## May 2025: New in preview only
 
 ### Identity and access | Multicloud permissions management
 
 Effective April 1, 2025, Microsoft Entra Permissions Management APIs are deprecated. On October 1, 2025, we'll retire and discontinue support of the APIs. More information can be found [here](https://aka.ms/MEPMretire).
+
+### Security | eDiscovery
+
+- Use the `description` property on [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta&preserve-view=true) to get or set the eDiscovery review set description..
+- [Update](/graph/api/security-ediscoveryreviewset-update?view=graph-rest-beta&preserve-view=true) the **displayName** and **description** of an [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta&preserve-view=true).
 
 ## April 2025: New and generally available
 
