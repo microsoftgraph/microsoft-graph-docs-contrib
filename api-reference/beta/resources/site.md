@@ -86,7 +86,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 | Property             | Type               | Description                                                                                    |
 | :------------------- | :----------------- | :--------------------------------------------------------------------------------------------- |
-| createdDateTime      | DateTimeOffset     | The date and time the item was created. Read-only.                                             |
+| createdDateTime      | DateTimeOffset     | The date and time when the item was created. Read-only.                                             |
 | description          | string             | The descriptive text for the site.                                                             |
 | displayName          | string             | The full title for the site. Read-only.                                                        |
 | eTag                 | string             | ETag for the item. Read-only.                                                                  |
