@@ -16,15 +16,21 @@ Namespace: microsoft.graph
 
 Represents type of shift request to offer a shift to another user in the team.
 
+Base type of [swapShiftsChangeRequest](swapshiftschangerequest.md).
+
+Inherits from [scheduleChangeRequest](../resources/schedulechangerequest.md).
+
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Create an instance of an offerShiftRequest object. |
-| [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Read properties and relationships of offerShiftRequest object. |
-| [List](../api/offershiftrequest-list.md) | Collection of [offerShiftRequest](offershiftrequest.md) | Read properties and relationships of all offerShiftRequest objects in a team. |
-|[Approve](../api/offershiftrequest-approve.md)|None|Approve an offerShiftRequest. |
-|[Decline](../api/offershiftrequest-decline.md)|None|Decline an offerShiftRequest. |
+| [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Create an instance of an **offerShiftRequest** object. |
+| [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Read properties and relationships of **offerShiftRequest** object. |
+| [List](../api/offershiftrequest-list.md) | Collection of [offerShiftRequest](offershiftrequest.md) | Read properties and relationships of all **offerShiftRequest** objects in a team. |
+| [Approve](../api/offershiftrequest-approve.md)|None|Approve an **offerShiftRequest**. |
+| [Approve for user](../api/schedulechangerequest-approveforuser.md)|None|Approve an [offerShiftRequest](../resources/offershiftrequest.md) object for a user. This action only supports application permissions.|
+| [Decline](../api/offershiftrequest-decline.md)|None|Decline an **offerShiftRequest**. |
+| [Decline for user](../api/schedulechangerequest-declineforuser.md)|None|Decline an [offerShiftRequest](../resources/offershiftrequest.md) object for a user. This action only supports application permissions.|
 
 ## Properties
 

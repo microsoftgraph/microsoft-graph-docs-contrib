@@ -30,6 +30,7 @@ Represents a timecard entry in the schedule.
 |[Start break](../api/timecard-startbreak.md) | None | Start a **timeCardBreak** in a specific **timecard**.|
 |[End break](../api/timecard-endbreak.md) | None | End the open **timeCardBreak** in a specific **timecard**.|
 |[Confirm](../api/timecard-confirm.md) | None | Confirm a **timecard** record.|
+|[Confirm for user](../api/timecard-confirmforuser.md) | [timeCard](timecard.md) | Confirm a specific **timeCard** for a user.|
 
 ## Properties
 |Property               |Type           |Description                                                                |
