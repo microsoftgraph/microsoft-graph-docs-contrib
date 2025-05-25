@@ -1,6 +1,6 @@
 ---
 title: "Update ediscoveryReviewSet"
-description: "Update the properties of a microsoft.graph.security.ediscoveryReviewSet object."
+description: "Update the properties of an ediscoveryReviewSet object."
 author: "manjarisenthil"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-Update the properties of a [microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.
+Update the properties of an [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.
 
 ## Permissions
 
@@ -48,9 +48,8 @@ PATCH /security/cases/ediscoveryCases/{ediscoverycaseId}/reviewSets/{reviewSetId
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of review set. Optional.|
-|description|String|The description of review set. Optional.|
-
+|description|String|The description of the review set. Optional.|
+|displayName|String|The name of the review set. Optional.|
 
 ## Response
 
@@ -60,7 +59,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following example shows a request that updates the review set name to `reviewset01` and description to `reviewset description`
+The following example shows a request that updates the review set name to `reviewset01` and the description to `reviewset description`.
+
 <!-- {
   "blockType": "request",
   "name": "update_ediscoveryreviewset"
@@ -76,11 +76,10 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
