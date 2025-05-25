@@ -23,7 +23,7 @@ You can use the _people API_ and _insights API_ in Microsoft Graph to build smar
 
 The people API returns people ordered by relevance to a user, based on that user's contacts, organization directory, and recent communications on email. This is particularly useful for people-picking scenarios.
 
-The insights API uses advanced analytics and machine learning to provide the most relevant files users need throughout their work day. The API powers familiar Microsoft 365 experiences, including Office Delve, SharePoint Home, the Discover view in OneDrive for Business, and Outlook on the web.
+The insights API uses advanced analytics and machine learning to provide the most relevant files users need throughout their work day. The API powers familiar Microsoft 365 experiences, including SharePoint Home, the Discover view in OneDrive for Business, and Outlook on the web.
 
 ![People and insights API return relevant people and documents for a user](images/social-intel-concept-overview-data-update2020-1.png)
 
@@ -84,16 +84,6 @@ You can use the insights API, which includes the [trending](/graph/api/resources
 
 It is easy to render the results from the insights API in your app. Every result comes with a set of common visualization properties, like a preview image URL or preview text.
 
-### Make relevant content visible
-
-In Microsoft 365, Delve uses the _trending_ insight to help users discover the documents that are most interesting to them right now. See figure 1.
-
-Programmatically, you can use the [trending](/graph/api/resources/insights-trending) entity in the insights API to provide your app customers a similar experience. Use the **trending** entity to connect to documents that are trending around and relevant to the user. [Listing trending documents](/graph/api/insights-list-trending) returns those files stored on OneDrive or SharePoint team sites, sorted by relevance with the most important ones first. 
-
-**Figure 1. Delve in Microsoft 365 showing popular documents for a user**
-
-![Screenshot of Delve in Microsoft 365 showing popular documents for a user](images/delve-concept.png)
-
 ### Allow users to collaborate and get back to work
 
 The new Microsoft 365 people cards tap into the _used_ and _shared_ insights to connect the dots between people and units of knowledge. The people card identifies and displays relevant documents about a person. Users can see people cards across the suite, for example, in Outlook on the web. See figure 2.
@@ -134,3 +124,4 @@ Looking for the API reference for these services?
 - Find out more about [item insights](item-insights-overview.md), [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
 - Find more about the [analytics API](/graph/api/resources/social-overview#help-users-balance-work-and-life).
 - Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).
+  

@@ -42,6 +42,7 @@ Security providers create an alert in the system when they detect a threat. Micr
 |classification|[microsoft.graph.security.alertClassification](#alertclassification-values)| Specifies whether the alert represents a true threat. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |comments|[microsoft.graph.security.alertComment](security-alertComment.md) collection| Array of comments created by the Security Operations (SecOps) team during the alert management process.|
 |createdDateTime|DateTimeOffset| Time when Microsoft 365 Defender created the alert.|
+|customDetails|microsoft.graph.security.dictionary| User defined custom fields with string values. |
 |description|String| String value describing each alert.|
 |detectionSource|[microsoft.graph.security.detectionSource](#detectionsource-values)| Detection technology or sensor that identified the notable component or activity. Possible values are: `unknown`, `microsoftDefenderForEndpoint`, `antivirus`, `smartScreen`, `customTi`, `microsoftDefenderForOffice365`, `automatedInvestigation`, `microsoftThreatExperts`, `customDetection`, `microsoftDefenderForIdentity`, `cloudAppSecurity`, `microsoft365Defender`, `azureAdIdentityProtection`, `manual`, `microsoftDataLossPrevention`, `appGovernancePolicy`, `appGovernanceDetection`, `unknownFutureValue`, `microsoftDefenderForCloud`, `microsoftDefenderForIoT`, `microsoftDefenderForServers`, `microsoftDefenderForStorage`, `microsoftDefenderForDNS`, `microsoftDefenderForDatabases`, `microsoftDefenderForContainers`, `microsoftDefenderForNetwork`, `microsoftDefenderForAppService`, `microsoftDefenderForKeyVault`, `microsoftDefenderForResourceManager`, `microsoftDefenderForApiManagement`, `microsoftSentinel`, `nrtAlerts`, `scheduledAlerts`, `microsoftDefenderThreatIntelligenceAnalytics`, `builtInMl`, `microsoftThreatIntelligence`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoftDefenderForCloud`, `microsoftDefenderForIoT`, `microsoftDefenderForServers`, `microsoftDefenderForStorage`, `microsoftDefenderForDNS`, `microsoftDefenderForDatabases`, `microsoftDefenderForContainers`, `microsoftDefenderForNetwork`, `microsoftDefenderForAppService`, `microsoftDefenderForKeyVault`, `microsoftDefenderForResourceManager`, `microsoftDefenderForApiManagement`, `microsoftSentinel`, `nrtAlerts`, `scheduledAlerts`, `microsoftDefenderThreatIntelligenceAnalytics`, `builtInMl`, `microsoftThreatIntelligence`.|
 |detectorId|String| The ID of the detector that triggered the alert.|
@@ -242,6 +243,9 @@ The following JSON representation shows the resource type.
     "String"
   ],
   "additionalData": {
+    "@odata.type": "microsoft.graph.security.dictionary"
+  },
+  "customDetails": {
     "@odata.type": "microsoft.graph.security.dictionary"
   }
 }

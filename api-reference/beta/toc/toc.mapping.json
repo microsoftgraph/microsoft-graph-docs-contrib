@@ -422,12 +422,6 @@
       ]
     },
     {
-      "name": "Data Security and Governance (preview)",
-      "resources": [
-        "userDataSecurityAndGoverance"
-      ]
-    },
-    {
       "name": "Device and app management",
       "childNodes": [
         {
@@ -2603,17 +2597,10 @@
         {
           "name": "Data security and compliance (preview)",
           "resources": [
-            "security",
-            "activitiesContainer",
             "contentActivity",
-            "dataSecurityAndGovernance",
-            "labelContentRight",
             "microsoft.graph.security.sensitivityLabel",
             "tenantDataSecurityAndGovernance",
-            "tenantProtectionScopeContainer",
-            "usageRightsIncluded",
-            "userDataSecurityAndGovernance",
-            "userProtectionScopeContainer"
+            "userDataSecurityAndGovernance"
            ],
             "complexTypes": [
               "activityMetadata",
@@ -2632,6 +2619,7 @@
               "groupScope",
               "integratedApplicationMetadata",
               "labelActionBase",
+              "labelContentRight",
               "labelPolicy",
               "notifyUserAction",
               "operatingSystemSpecifications",
@@ -2644,7 +2632,6 @@
               "policyTenantScope",
               "policyUserScope",
               "processContentBatchRequest",
-              "processConversationMetadata",
               "processContentRequest",
               "processContentResponse",
               "processContentResponses",
@@ -3264,6 +3251,7 @@
             "openShift",
             "openShiftChangeRequest",
             "schedule",
+            "scheduleChangeRequest",
             "schedulingGroup",
             "shift",
             "shiftPreferences",
