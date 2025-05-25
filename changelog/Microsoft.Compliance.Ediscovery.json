@@ -16,7 +16,7 @@
           "ChangedApiName": "ediscoveryReviewSet",
           "ChangeType": "Addition",
           "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryreviewset-update?view=graph-rest-beta) method to the [ediscoveryReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta) resource.",
-          "Target": "dataSet"
+          "Target": "ediscoveryReviewSet"
         }
       ],
       "Id": "cb2aa45a-2a19-4385-b841-ce4a84b40f01",
@@ -42,7 +42,7 @@
           "ChangedApiName": "ediscoveryReviewSet",
           "ChangeType": "Addition",
           "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryreviewset-update?view=graph-rest-1.0) method to the [ediscoveryReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-1.0) resource.",
-          "Target": "dataSet"
+          "Target": "ediscoveryReviewSet"
         }
       ],
       "Id": "07d79d56-72d0-45b4-80ac-48f307d281e8",
