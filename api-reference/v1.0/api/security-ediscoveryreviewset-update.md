@@ -5,6 +5,7 @@ author: "manjarisenthil"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 05/25/2025
 ---
 
 # Update ediscoveryReviewSet
