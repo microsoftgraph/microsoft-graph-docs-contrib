@@ -883,7 +883,7 @@ Content-type: application/json
 
 ### Request 8
 
-The following example shows how to create an open extension on a existing **site**.
+The following example shows how to create an open extension on an existing **site**.
 
 <!-- {
   "blockType": "request",
