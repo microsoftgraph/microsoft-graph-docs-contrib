@@ -22,7 +22,7 @@ Represents the static set of electronically stored information collected for use
 |[List](../api/security-ediscoverycase-list-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) collection|Get a list of the [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) objects and their properties.|
 |[Create](../api/security-ediscoverycase-post-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Create a new [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
 |[Get](../api/security-ediscoveryreviewset-get.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Read the properties and relationships of an [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
-|[Update](../api/security-ediscoveryreviewset-update.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Update the properties of a [microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
+|[Update](../api/security-ediscoveryreviewset-update.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Update the properties of an [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
 |[Export](../api/security-ediscoveryreviewset-export.md)|None|Initiate an export of data from a [review set](../resources/security-ediscoveryreviewset.md).|
 |[Add to review set](../api/security-ediscoveryreviewset-addtoreviewset.md)|None|Start the process of adding a collection from Microsoft 365 services to a [review set](../resources/security-ediscoveryreviewset.md).|
 |[List files](../api/security-ediscoveryreviewset-list-files.md)|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md) collection|Get the ediscoveryFile resources from the files navigation property.|
@@ -56,13 +56,11 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.ediscoveryReviewSet",
-  "id": "String (identifier)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)"
+  "id": "String (identifier)"
 }
 ```
 
