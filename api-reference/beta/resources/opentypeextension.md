@@ -64,7 +64,7 @@ Apply the following guidelines when you create open extensions on Outlook resour
 ### Site-specific considerations
 
 Apply the following limits when you create extension resources on **site** objects:
-- A maximum character length of 4000 characters for the extension value.
+- A maximum character length of 4,000 characters for the extension value.
 - A maximum character length of 36 characters for the extension key.
 - A maximum of 100 custom extensions per site object.
 - A maximum of five custom extensions per app ID.
