@@ -59,7 +59,7 @@ Each open extension on an Outlook resource (event, message, or personal contact)
 Apply the following guidelines when you create open extensions on Outlook resources:
 
 - Create the minimum number of extensions required. Most applications should require no more than one extension. Extensions have no defined properties or structure, so you can store multiple values in a single extension.
-- Avoid naming extensions in a variable manner (such as based on user input, etc.). Each time an open extension is created with a new name that hasn't been used in a user's mailbox before, a new MAPI named property is created. Removing the extension doesn't remove the named property.
+- Avoid naming extensions in a variable manner, such as based on user input. Each time an open extension is created with a new name that hasn't been used in a user's mailbox before, a new MAPI named property is created. Removing the extension doesn't remove the named property.
 
 ### Site-specific considerations
 
