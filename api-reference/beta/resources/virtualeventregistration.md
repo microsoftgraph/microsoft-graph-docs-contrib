@@ -41,13 +41,14 @@ Inherits from [entity](../resources/entity.md).
 |firstName|String|First name of the registrant.|
 |id|String|Unique identifier of the registrant. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastName|String|Last name of the registrant.|
-|videoOnDemandWebUrl| String | The [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar organizers to quickly publish and share event recordings. |
+|preferredTimezone|String|The registrant's time zone details.|
+|preferredLanguage|String|The registrant's preferred language.|
 |registrationDateTime|DateTimeOffset|Date and time when the registrant registers for the virtual event. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions.|
 |status|[virtualEventAttendeeRegistrationStatus](#virtualeventattendeeregistrationstatus-values)|Registration status of the registrant. Read-only. |
 |userId|String|The registrant's ID in Microsoft Entra ID. Only appears when the registrant is registered in Microsoft Entra ID.|
-|preferredTimezone|String|The registrant's time zone details.|
-|preferredLanguage|String|The registrant's preferred language.|
+|videoOnDemandWebUrl| String | The [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar organizers to quickly publish and share event recordings. |
+
 
 ### virtualEventAttendeeRegistrationStatus values
 
@@ -85,10 +86,10 @@ The following JSON representation shows the resource type
   "lastName": "String",
   "preferredLanguage": "String",
   "preferredTimezone": "String",
-  "videoOnDemandWebUrl" : "String",
   "registrationDateTime": "String (timestamp)",
   "registrationQuestionAnswers": [{"@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"}],
   "status": "String",
-  "userId": "String"
+  "userId": "String",
+  "videoOnDemandWebUrl" : "String"
 }
 ```
