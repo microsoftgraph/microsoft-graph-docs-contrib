@@ -186,7 +186,7 @@ Content-Type: application/json
 
 To receive updated notifications for a particular town hall, you need to create a subscription for that unique town hall by using the following resource:  `solutions/virtualEvents/townhalls/{townhall_id}`.
 
-An application can have only one subscription per town hall inside a tenant.
+An application can only have one subscription per town hall inside a tenant.
 A user-delegated token allows you to set up one subscription for receiving town hall update notifications within a tenant. This subscription is only available for users who organized or co-organized town halls in the same tenant as the event host.
 
 ```http
