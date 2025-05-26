@@ -37,7 +37,7 @@ Effective April 1, 2025, Microsoft Entra Permissions Management APIs are depreca
 ### Teamwork and communications | Calls and online meetings
 
 - Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it's over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight?view=graph-rest-beta&preserve-view=true).
-- Use the **registrantVideoOnDemandWebUrl** on [virtualEventRegistration](/graph/api/resources/virtualEventRegistration?view=graph-rest-beta&preserve-view=true) to get the [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
+- Use the **videoOnDemandWebUrl** on [virtualEventRegistration](/graph/api/resources/virtualEventRegistration?view=graph-rest-beta&preserve-view=true) to get the [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
 ### Teamwork and communications | Messaging
 
