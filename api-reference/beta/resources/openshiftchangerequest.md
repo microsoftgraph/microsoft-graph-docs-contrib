@@ -16,15 +16,19 @@ Namespace: microsoft.graph
 
 Represents a type of shift request to claim an [openshift](../resources/openshift.md) in a [schedule](../resources/schedule.md).
 
+Inherits from [scheduleChangeRequest](../resources/schedulechangerequest.md).
+
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create](../api/openshiftchangerequest-post.md) | [openshiftchangerequest](openshiftchangerequest.md) | Create an instance of an openshiftchangerequest object. |
+| [Create](../api/openshiftchangerequest-post.md) | [openshiftchangerequest](openshiftchangerequest.md) | Create an instance of an **openShiftChangeRequest** object. |
 | [List](../api/openshiftchangerequest-list.md) | Collection of [openshiftchangerequest](openshiftchangerequest.md) | List the properties and relationships of **openShiftChangeRequest** objects in a team. |
 | [Get](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Read the properties and relationships of an **openShiftChangeRequest** object. |
-|[Approve](../api/openshiftchangerequest-approve.md)|None|Approve an open shift change request.|
-|[Decline](../api/openshiftchangerequest-decline.md)|None| Decline an open shift change request.|
+| [Approve](../api/openshiftchangerequest-approve.md)|None|Approve an **openshiftchangerequest**. |
+| [Approve for user](../api/schedulechangerequest-approveforuser.md)|None|Approve an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object for a user. This action only supports application permissions.|
+| [Decline](../api/openshiftchangerequest-decline.md)|None|Decline an **openshiftchangerequest**. |
+| [Decline for user](../api/schedulechangerequest-declineforuser.md)|None|Decline an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object for a user. This action only supports application permissions.|
 
 ## Properties
 

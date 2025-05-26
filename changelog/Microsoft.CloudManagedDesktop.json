@@ -6823,6 +6823,24 @@
      {
       "ChangeList": [
         {
+          "Id": "b3f2c8a1-4d5e-4f9b-8a6e-2c7d3f9e1a4b",
+          "ApiChange": "Member",
+          "ChangedApiName": "resourceAvailabilityCheckMissingRegistrationForLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the `resourceAvailabilityCheckMissingRegistrationForLocation` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+          "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+        }
+      ],
+      "Id": "b3f2c8a1-4d5e-4f9b-8a6e-2c7d3f9e1a4b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-22T03:02:09.0363351Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+     },
+     {
+      "ChangeList": [
+        {
           "Id": "6ca39a86-8ad0-475f-b102-37529b5ab803",
           "ApiChange": "Enumeration",
           "ChangedApiName": "cloudPcPolicyTimezone",
