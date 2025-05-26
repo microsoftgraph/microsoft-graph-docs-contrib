@@ -1052,6 +1052,8 @@ The following table compares the extension types, which should help you decide w
 | Filterable | Yes | Yes | Yes | No |
 | Can store a collection | No | Yes | No | Yes |
 | Tied to an "owner" application | No | Yes | Yes | No |
+| Scoping | Assign values to pre-defined properties of the target object instance | Define at application-level then assign to target object instance | Define for the tenant then assign to target object instance | Define and assign on the object instance |
+| Discoverability | Select or filter on the target object instance | LIST, select, or filter on the application level to GET definitions; Select or filter on the target object to GET assignments | LIST or filter to GET tenant-wide definitions; Select or filter on the target object to GET assignments | LIST or select on the target object to GET definitions and assignments  |
 | Managed via | Microsoft Graph <br/> Exchange admin center | Microsoft Graph | Microsoft Graph | Microsoft Graph |
 | Sync data from on-premises to extensions using [AD connect][] | Yes, for users | [Yes][ADConnect-YES] | No | No |
 | Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | [Yes][DynamicMembership-YES] | No | No |

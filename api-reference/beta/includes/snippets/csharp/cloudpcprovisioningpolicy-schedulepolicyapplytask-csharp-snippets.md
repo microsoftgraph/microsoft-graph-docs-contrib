@@ -19,6 +19,15 @@ var requestBody = new SchedulePolicyApplyTaskPostRequestBody
 		{
 			"cronScheduleExpression" , "0 0 0 20 * *"
 		},
+		{
+			"startDateTime" , "2025-03-12 00:00:00"
+		},
+		{
+			"endDateTime" , null
+		},
+		{
+			"timezone" , "cst"
+		},
 	},
 };
 
