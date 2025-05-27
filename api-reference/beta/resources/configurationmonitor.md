@@ -1,6 +1,6 @@
 ---
 title: "configurationMonitor resource type"
-description: "This endpoint allows admins to create and manage monitors for tenant monitoring purposes for all the UTCM supported workloads."
+description: "Represents the information and properties of a configurationMonitor object."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This endpoint allows admins to create and manage monitors for tenant monitoring or drift monitoring purposes for all the Unified Tenant Configuration Management [UTCM] supported workloads. It means that admins can now detect any deviations, periodically, from the desired configuration state settings.
+Represents the information and properties of a [configurationMonitor](../resources/configurationmonitor.md) object.
+
+This resource allows admins to create and manage monitors for tenant monitoring or drift monitoring across all workloads supported by unified-tenant configuration management, enabling them to periodically detect any deviations from the desired configuration state settings.
 
 This API is currently in preview and is available in commercial environments only.
 
@@ -28,8 +30,7 @@ Inherits from [entity](../resources/entity.md)
 |[Get](../api/configurationmonitor-get.md)|[configurationMonitor](../resources/configurationmonitor.md)|Get a particular configurationMonitor object.|
 |[Update](../api/configurationmonitor-update.md)|[configurationMonitor](../resources/configurationmonitor.md)|Update the properties like monitorName, description, or baseline of a configurationMonitor object.|
 |[Delete](../api/configurationmanagement-delete-configurationmonitors.md)|None|Delete a configurationMonitor object.|
-|[Get configurationBaseline](../api/configurationbaseline-get.md)|[configurationBaseline](../resources/configurationbaseline.md) collection|Get baseline of a configurationMonitor object.|
-
+|[Get configuration baseline](../api/configurationbaseline-get.md)|[configurationBaseline](../resources/configurationbaseline.md) collection|Get baseline of a configurationMonitor object.|
 
 ## Properties
 |Property|Type|Description|
@@ -64,23 +65,17 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationMonitor",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
-  "tenantId": "String",
-  "status": "String",
-  "monitorRunFrequencyInHours": "Integer",
-  "mode": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "runningOnBehalfOf": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "parameters": {
-    "@odata.type": "microsoft.graph.openComplexDictionaryType"
-  }
+  "mode": "String",
+  "monitorRunFrequencyInHours": "Int32",
+  "parameters": {"@odata.type": "microsoft.graph.openComplexDictionaryType"},
+  "runningOnBehalfOf": {"@odata.type": "microsoft.graph.identitySet"},
+  "status": "String",
+  "tenantId": "String"
 }
 ```
