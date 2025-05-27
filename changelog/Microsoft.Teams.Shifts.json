@@ -1032,7 +1032,7 @@
           "ChangedApiName": "post",
           "ChangeType": "Addition",
           "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/timeoffrequest-post?view=graph-rest-beta) method to the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
+          "Target": "timeoffrequest"
         }
       ],
       "Id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
@@ -1050,7 +1050,7 @@
           "ChangedApiName": "post",
           "ChangeType": "Addition",
           "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/timeoffrequest-post?view=graph-rest-1.0) method to the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-1.0) resource.",
-          "Target": "timeCard"
+          "Target": "timeoffrequest"
         },
         {
           "Id": "5e605695-52a5-406e-8832-2e59b74f8c75",
