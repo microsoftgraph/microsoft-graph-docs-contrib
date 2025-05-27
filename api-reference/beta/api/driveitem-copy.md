@@ -696,7 +696,7 @@ Content-Length: 285
 
 ### Example 10: Successful children-only copy
 
-This example demonstrates how to copy the child items of a folder (without copying the folder itself) into a new destination. The source folder is identified by `{item-id}` and the destination folder is specified using its `driveId` and `id`. The request sets the `childrenOnly` property to `true`, which is valid only for folder items.
+This example demonstrates how to copy the child items of a folder (without copying the folder itself) into a new destination. The source folder is identified by `{item-id}`, and the destination folder is specified using its `driveId` and `id`. The request sets the `childrenOnly` property to `true`, which is valid only for folder items.
 
 
 #### Request
