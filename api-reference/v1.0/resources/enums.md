@@ -3469,6 +3469,16 @@ Possible values for user account types (group membership), per Windows definitio
 | declined |
 | unknownFutureValue |
 
+### scheduleChangeRequestActor values
+
+| Member |
+| ----------------------------- |
+| sender |
+| recipient |
+| manager |
+| system |
+| unknownFutureValue |
+
 ## authenticationMethodPlatform values
 
 | Member  |
