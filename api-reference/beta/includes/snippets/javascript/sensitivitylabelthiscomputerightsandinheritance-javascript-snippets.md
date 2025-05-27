@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const sensitivityLabel = {
+const computeRightsAndInheritanceResult = {
   delegatedUserEmail: 'String',
   locale: 'String',
   protectedContents: [
@@ -25,6 +25,6 @@ const sensitivityLabel = {
 
 await client.api('/security/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance')
 	.version('beta')
-	.post(sensitivityLabel);
+	.post(computeRightsAndInheritanceResult);
 
 ```
