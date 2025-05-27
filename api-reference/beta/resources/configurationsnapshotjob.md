@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an asynchronous job that is created when an admin creates a snapshot. When an admin calls the [configurationBaseline: createSnapshot](../api/configurationsnapshotjob-createsnapshot.md) API, a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) is created and runs asynchronously. Once the job completes successfully, the admin can download the extraction.
+Represents an asynchronous job that is created when an admin creates a snapshot. When an admin calls the [configurationBaseline: createSnapshot](../api/configurationbaseline-createsnapshot.md) API, a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) is created and runs asynchronously. Once the job completes successfully, the admin can download the extraction.
 
 Inherits from [entity](../resources/entity.md)
 
