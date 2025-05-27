@@ -3460,6 +3460,15 @@ Possible values for user account types (group membership), per Windows definitio
 |clockedOut|
 |unknownFutureValue|
 
+### scheduleChangeState values
+
+| Member |
+| ----------------------------- |
+| pending |
+| approved |
+| declined |
+| unknownFutureValue |
+
 ## authenticationMethodPlatform values
 
 | Member  |
