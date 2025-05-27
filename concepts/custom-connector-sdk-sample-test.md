@@ -1,17 +1,17 @@
 ---
-title: "Test your Microsoft Graph connector"
+title: "Test your Microsoft 365 Copilot connector"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Follow the steps in this article to test the custom connector you built using the Microsoft Graph connectors SDK."
+description: "Follow the steps in this article to test the custom connector you built using the Copilot connectors SDK."
 ms.date: 11/07/2024
 ---
 
-# Test your Microsoft Graph connector
+# Test your Copilot connector
 
-You can use the [TestApp utility](/graph/custom-connector-sdk-testapp) to test your Microsoft Graph connector. This is a console application that is used to test connector before deployment. It will not create any connections or ingest any data.
+You can use the [TestApp utility](/graph/custom-connector-sdk-testapp) to test your Microsoft 365 Copilot connector (formerly Microsoft Graph connector). This is a console application that is used to test connector before deployment. It will not create any connections or ingest any data.
 
 Use the following steps to test your connector:
 

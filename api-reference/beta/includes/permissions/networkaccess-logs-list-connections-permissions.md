@@ -1,5 +1,5 @@
 ---
-description: Automatically generated file. DO NOT MODIFY
+description: "Automatically generated file. DO NOT MODIFY"
 ms.topic: include
 ms.localizationpriority: medium
 ---
@@ -8,4 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|NetworkAccess-Reports.Read.All|NetworkAccess.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|NetworkAccess-Reports.Read.All|Not available.|
+|Application|NetworkAccess-Reports.Read.All|NetworkAccess.ReadWrite.All|
+

@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 05/05/2025
+ms.date: 05/26/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -386,6 +386,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read, create, and update all attack simulation data of an organization | Read, create, and update attack simulation data of an organization |
 | Description | Allows the app to read, create, and update attack simulation and training data for an organization without a signed-in user. | Allows the app to read, create, and update attack simulation and training data for an organization for the signed-in user. |
 | AdminConsentRequired | Yes | No |
+
+---
+
+### AuditActivity.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 99bc85fb-e857-4220-9f8c-3a1c83148d2e | 16786f81-40d2-4116-bb26-d1a753bf0b20 |
+| DisplayText | Read activity audit log from the audit store. | Read activity audit log from the audit store. |
+| Description | Read activity audit log from the audit store. | Read activity audit log from the audit store. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### AuditActivity.Write
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f6318678-2713-4bb6-b123-233e7336c1bd | a78fd341-0672-4792-a8ae-a5925b2546eb |
+| DisplayText | Upload activity audit logs to the audit store. | Upload activity audit logs to the audit store. |
+| Description | Allows the application to upload bulk activity audit logs to the audit store. | Allows the application to upload bulk activity audit logs to the audit store. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -1554,6 +1576,50 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Read and write user and shared contacts |
 | Description | - | Allows the app to create, read, update, and delete contacts a user has permissions to, including their own and shared contacts. |
 | AdminConsentRequired | - | No |
+
+---
+
+### Content.Process.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 5ad511bf-571c-4ef6-8c3c-85b94b85df98 | 7e2467d1-f874-46bb-828e-24cb06b29d3f |
+| DisplayText | Process content for data security, governance and compliance | Process content for data security, governance and compliance |
+| Description | Allows the app to process and evaluate content for data security, governance and compliance outcomes at tenant scope. | Allows the app to process and evaluate content for data security, governance and compliance outcomes at tenant scope. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### Content.Process.User
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 24ceb246-ad29-4680-90b4-3e91ffad15eb | 1d787a13-f750-4ad6-875a-fcbd2725596b |
+| DisplayText | Process content for data security, governance and compliance | Process content for data security, governance and compliance |
+| Description | Allows the app to process and evaluate content for data security, governance and compliance outcomes for a user. | Allows the app to process and evaluate content for data security, governance and compliance outcomes for a user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### ContentActivity.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 368425e7-6954-4f5a-9d92-90b75bd580c9 | 62c55b2f-a2b1-4312-8385-be57afd901b4 |
+| DisplayText | Read contents activity audit log from the audit store. | Read contents activity audit log from the audit store. |
+| Description | Read contents activity audit log from the audit store. | Read contents activity audit log from the audit store. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### ContentActivity.Write
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 2932e07a-3c29-44e4-bb36-6d0fc176387f | 948caae6-152a-48cd-a746-4844af30e8e9 |
+| DisplayText | Upload content activity audit logs to the audit store. | Upload contents activity audit logs to the audit store. |
+| Description | Allows the application to upload bulk contents activity audit logs to the audit store. | Allows the application to upload bulk contents activity audit logs to the audit store. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -5443,6 +5509,39 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### ProtectionScopes.Compute.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e5a76501-dbb0-492c-ab55-5d09e8837263 | 98f5a27a-539a-48bc-a597-f78e9e1e76bf |
+| DisplayText | Compute Purview policies at tenant scope | Compute Purview policies at tenant scope |
+| Description | Allows the app to identify Purview data protection, compliance and governance policy scopes defined for all users across tenant. | Allows the app to identify Purview data protection, compliance and governance policy scopes defined for all users across tenant. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### ProtectionScopes.Compute.User
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | fe696d63-5e1f-4515-8232-cccc316903c6 | 4fc04d16-a9fc-4c5e-8da4-79b6c33638a4 |
+| DisplayText | Compute Purview policies for an individual user | Compute Purview policies for an individual user |
+| Description | Allows the app to identify Purview data protection, compliance and governance policy scopes defined for an individual user. | Allows the app to identify Purview data protection, compliance and governance policy scopes defined for an individual user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### ProvisioningLog.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 091937d3-3e38-47a1-8649-b2f99d3035f1 | 95aec97b-cf27-4a8d-a67d-42f60b5b38ef |
+| DisplayText | Read all provisioning log data | Read provisioning log data |
+| Description | Allows the app to read and query your provisioning log activities, without a signed-in user. | Allows the app to read and query your provisioning log activities, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### PublicKeyInfrastructure.Read.All
 
 | Category | Application | Delegated |
@@ -6094,6 +6193,39 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### SensitivityLabel.Evaluate
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 57f0b71b-a759-45a0-9a0f-cc099fbd9a44 | - |
+| DisplayText | Evaluate sensitivity labels | - |
+| Description | Allow the app to determine if there is any sensitivity label to be applied automatically to the content or recommended to the user for manual application, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### SensitivityLabel.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 3b8e7aad-f6e3-4299-83f8-6fc6a5777f0b | - |
+| DisplayText | Get labels application scope. | - |
+| Description | Allows the app to get sensitivity labels. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### SensitivityLabels.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e46a01e9-b2cf-4d89-8424-bcdc6dd445ab | - |
+| DisplayText | Get labels tenant scope. | - |
+| Description | Allows the app to get sensitivity labels. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### ServiceActivity-Exchange.Read.All
 
 | Category | Application | Delegated |
@@ -6372,6 +6504,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 17b78cfd-eeff-447d-8bab-2795af00055a | 8ba47079-8c47-4bfe-b2ce-13f28ef37247 |
 | DisplayText | Read and write SPIFFE trust domains and child resources | Read and write SPIFFE trust domains and child resources |
 | Description | Allows the app to read and write your organization's SPIFFE trust domains and child resources without a signed in user. | Allows the app to read and write your organization's SPIFFE trust domains and child resources on behalf of the user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### Storyline.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 6eff534b-699e-44d9-af61-a4182f0ec37e | fd1d61cb-4e4b-4d15-a6d2-161348681d84 |
+| DisplayText | Read and write all Viva Engage storylines | Read and write all Viva Engage storylines |
+| Description | Allows the app to modify Viva Engage storylines, read all storylines properties, update storyline properties, and delete storyline properties without a signed-in user. | Allows the app to modify the Viva Engage storyline and read all storyline properties on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -8082,6 +8225,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Write app activity to users' timeline |
 | Description | - | Allows the app to report the signed-in user's app activity information to Microsoft Timeline. |
 | AdminConsentRequired | - | No |
+
+---
+
+### UserWindowsSettings.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 77e07bab-1b34-40a5-bb6c-4b197b3f6027 |
+| DisplayText | - | Read windows settings for all devices |
+| Description | - | Allows the app to read a user's windows settings which are stored in cloud and their values on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserWindowsSettings.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | dcb1026d-b7e1-4d31-9f61-6724d5140bf9 |
+| DisplayText | - | Read and write windows settings for all devices |
+| Description | - | Allows the app to read and write a user's windows settings which are stored in cloud and their values on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
 
 ---
 
