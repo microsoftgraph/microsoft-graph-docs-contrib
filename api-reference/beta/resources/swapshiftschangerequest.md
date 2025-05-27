@@ -32,28 +32,65 @@ Inherits from [offerShiftRequest](../resources/offershiftrequest.md).
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|recipientShiftId|String|Shift ID for the recipient user with whom the request is to swap.|
+|Property|Type|Description|
+|:---|:---|:---|
+|assignedTo|scheduleChangeRequestActor|Indicates who the request is assigned to. Inherited from [scheduleChangeRequest](../resources/schedulechangerequest.md).The possible values are: `sender`, `recipient`, `manager`, `system`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/intune-identityset.md)|The user who created the entity. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
+|createdDateTime|DateTimeOffset|The date and time when the entity was created. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
+|id|String|The unique identifier for the entity. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|The user who last modified the entity. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the entity was last modified. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
+|managerActionDateTime|DateTimeOffset|The date and time when the manager approved or declined the request. Inherited from [scheduleChangeRequest](../resources/schedulechangerequest.md).|
+|managerActionMessage|String|The message sent by the manager regarding the request. Inherited from [scheduleChangeRequest](../resources/schedulechangerequest.md).|
+|managerUserId|String|The user ID of the manager who approved or declined the request. Inherited from [scheduleChangeRequest](../resources/schedulechangerequest.md).|
+|recipientActionDateTime|DateTimeOffset|The date and time when the recipient approved or declined the request. Inherited from [offerShiftRequest](../resources/offershiftrequest.md).|
+|recipientActionMessage|String|The message sent by the recipient regarding the request. Inherited from [offerShiftRequest](../resources/offershiftrequest.md).|
+|recipientShiftId|String|The recipient's Shift ID|
+|recipientUserId|String|The recipient's user ID. Inherited from [offerShiftRequest](../resources/offershiftrequest.md).|
+|senderDateTime|DateTimeOffset|The date and time when the sender sent the request. Inherited from [scheduleChangeRequest](../resources/schedulechangerequest.md).|
+|senderMessage|String|The message sent by the sender of the request. Inherited from [scheduleChangeRequest](../resources/schedulechangerequest.md).|
+|senderShiftId|String|The sender's shift ID. Inherited from [offerShiftRequest](../resources/offershiftrequest.md).|
+|senderUserId|String|The user ID of the sender of the request. Inherited from [scheduleChangeRequest](../resources/schedulechangerequest.md).|
+|state|scheduleChangeState|The state of the entity. Inherited from [scheduleChangeRequest](../resources/schedulechangerequest.md).The possible values are: `pending`, `approved`, `declined`, `unknownFutureValue`.|
 
 ## Relationships
 
 None.
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.swapShiftsChangeRequest"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.swapShiftsChangeRequest",
+  "baseType": "microsoft.graph.offerShiftRequest",
+  "openType": false
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.swapShiftsChangeRequest",
+  "id": "String (identifier)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "assignedTo": "String",
+  "state": "String",
+  "senderMessage": "String",
+  "senderDateTime": "String (timestamp)",
+  "managerActionMessage": "String",
+  "managerActionDateTime": "String (timestamp)",
+  "senderUserId": "String",
+  "managerUserId": "String",
+  "recipientActionMessage": "String",
+  "recipientActionDateTime": "String (timestamp)",
+  "senderShiftId": "String",
+  "recipientUserId": "String",
   "recipientShiftId": "String"
 }
 ```

@@ -1023,6 +1023,42 @@
       "CreatedDateTime": "2025-05-15T22:49:05.1424181Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d77cb4c0-7492-4fd1-9c72-7eedeb0ad3fd",
+          "ApiChange": "Method",
+          "ChangedApiName": "confirmForUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/timeoffrequest-post?view=graph-rest-beta) method to the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        }
+      ],
+      "Id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-26T22:49:05.1424181Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d77cb4c0-7492-4fd1-9c72-7eedeb0ad3fd",
+          "ApiChange": "Method",
+          "ChangedApiName": "confirmForUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/timeoffrequest-post?view=graph-rest-beta) method to the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        }
+      ],
+      "Id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-05-26T22:49:05.1424181Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
