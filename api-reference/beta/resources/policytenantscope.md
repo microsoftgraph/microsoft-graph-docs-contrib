@@ -1,6 +1,5 @@
 ---
-title: "policyTenantScope resource type"
-toc.title: "policyTenantScope resource type (preview)"
+title: "policyTenantScope resource type (preview)"
 description: "Defines the scope of a data governance policy at the tenant level, including user binding information."
 author: "ArunGedela"
 ms.date: 04/08/2025

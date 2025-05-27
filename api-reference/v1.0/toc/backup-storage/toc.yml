@@ -144,6 +144,9 @@ items:
       href: ../../resources/siterestoreartifact.md
     - name: List
       href: ../../api/sharepointrestoresession-list-siterestoreartifacts.md
+- name: Restore artifacts bulk request
+  href: ../../resources/restoreartifactsbulkrequestbase.md
+  items: []
 - name: Restore point
   items:
   - name: Restore point

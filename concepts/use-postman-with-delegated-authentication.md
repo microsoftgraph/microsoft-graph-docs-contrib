@@ -63,4 +63,4 @@ See [403 Forbidden "Access to OData is disabled."](resolve-auth-errors.md#403-fo
 
 - [Use Postman with the Microsoft Graph API](use-postman.md)
 - [Use app-only authentication with Postman for Microsoft Graph](use-postman-with-app-only-authentication.md)
-- [Use Postman with the Microsoft Graph connectors API](connecting-external-content-connectors-api-postman.md)
+

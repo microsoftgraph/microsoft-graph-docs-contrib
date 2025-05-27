@@ -422,12 +422,6 @@
       ]
     },
     {
-      "name": "Data Security and Governance (preview)",
-      "resources": [
-        "userDataSecurityAndGoverance"
-      ]
-    },
-    {
       "name": "Device and app management",
       "childNodes": [
         {
@@ -838,6 +832,11 @@
       ],
       "complexTypes": [
         "challengingWord",
+        "educationAiFeedbackAudienceEngagementSettings",
+        "educationAiFeedbackContentSettings",
+        "educationAiFeedbackCriteria",
+        "educationAiFeedbackDeliverySettings",
+        "educationAiFeedbackSettings",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -856,6 +855,11 @@
         "educationMediaResource",
         "educationPowerPointResource",
         "educationResource",
+        "educationSpeakerCoachAudienceEngagementSettings",
+        "educationSpeakerCoachContentSettings",
+        "educationSpeakerCoachDeliverySettings",
+        "educationSpeakerCoachSettings",
+        "educationSpeakerProgressResource",
         "educationSubmissionIndividualRecipient",
         "educationSubmissionRecipient",
         "educationTeamsAppResource",
@@ -2227,6 +2231,7 @@
         "enhancedPersonalizationSetting",
         "profile",
         "profileSource",
+        "profilePropertySetting",
         "userAnalytics"
       ],
       "childNodes": [
@@ -2239,6 +2244,7 @@
         {
           "name": "People admin settings",
           [
+          "resources": [
             "namePronunciationSettings",
             "photoUpdateSettings",
             "profileCardProperty",
@@ -2594,28 +2600,30 @@
         {
           "name": "Data security and compliance (preview)",
           "resources": [
-            "activitiesContainer",
             "contentActivity",
-            "dataSecurityAndGovernance",
+            "microsoft.graph.security.sensitivityLabel",
             "tenantDataSecurityAndGovernance",
-            "tenantProtectionScopeContainer",
-            "userDataSecurityAndGovernance",
-            "userProtectionScopeContainer",
+            "userDataSecurityAndGovernance"
            ],
             "complexTypes": [
               "activityMetadata",
               "aiInteractionPlugin",
+              "autoLabeling",
               "binaryContent",
               "blockAccessAction",
               "classifcationErrorBase",
               "classificationError",
               "classificationInnerError",
+              "computeRightsAndInheritanceResult",
               "contentBase",
               "customMetadataDictionary",
               "deviceMetadata",
               "dlpActionInfo",
               "groupScope",
               "integratedApplicationMetadata",
+              "labelActionBase",
+              "labelContentRight",
+              "labelPolicy",
               "notifyUserAction",
               "operatingSystemSpecifications",
               "policyBinding",
@@ -2627,7 +2635,6 @@
               "policyTenantScope",
               "policyUserScope",
               "processContentBatchRequest",
-              "processConversationMetadata",
               "processContentRequest",
               "processContentResponse",
               "processContentResponses",
@@ -2635,6 +2642,7 @@
               "processFileMetadata",
               "processingError",
               "protectedApplicationMetadata",
+              "protectedContent",
               "scopeBase",
               "tenantScope",
               "textContent",
@@ -3246,6 +3254,7 @@
             "openShift",
             "openShiftChangeRequest",
             "schedule",
+            "scheduleChangeRequest",
             "schedulingGroup",
             "shift",
             "shiftPreferences",
