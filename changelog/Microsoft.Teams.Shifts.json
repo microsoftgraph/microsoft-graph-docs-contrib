@@ -1027,9 +1027,9 @@
     {
       "ChangeList": [
         {
-          "Id": "d77cb4c0-7492-4fd1-9c72-7eedeb0ad3fd",
+          "Id": "9f8c2b9e-4d3a-4f6b-8a1e-2b5f3c7d8e9f",
           "ApiChange": "Method",
-          "ChangedApiName": "confirmForUser",
+          "ChangedApiName": "post",
           "ChangeType": "Addition",
           "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/timeoffrequest-post?view=graph-rest-beta) method to the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta) resource.",
           "Target": "timeCard"
@@ -1045,12 +1045,20 @@
     {
       "ChangeList": [
         {
-          "Id": "d77cb4c0-7492-4fd1-9c72-7eedeb0ad3fd",
+          "Id": "9f8c2b9e-4d3a-4f6b-8a1e-2b5f3c7d8e9f",
           "ApiChange": "Method",
-          "ChangedApiName": "confirmForUser",
+          "ChangedApiName": "post",
           "ChangeType": "Addition",
-          "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/timeoffrequest-post?view=graph-rest-beta) method to the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/timeoffrequest-post?view=graph-rest-1.0) method to the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-1.0) resource.",
           "Target": "timeCard"
+        },
+        {
+          "Id": "5e605695-52a5-406e-8832-2e59b74f8c75",
+          "ApiChange": "Resource",
+          "ChangedApiName": "scheduleChangeRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [scheduleChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/scheduleChangeRequest?view=graph-rest-1.0) resource.",
+          "Target": "scheduleChangeRequest"
         }
       ],
       "Id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
@@ -1059,6 +1067,6 @@
       "CreatedDateTime": "2025-05-26T22:49:05.1424181Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
-    }
+    },
   ]
 }
