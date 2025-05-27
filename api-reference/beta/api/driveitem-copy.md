@@ -219,7 +219,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-The `Location` field of the response contains a monitoring URL that you can use to check the progress of the copy operation. Because copy operations happen asynchronously and can finish after an unspecified amount of time, you can use this URL repeatedly to track its status.
+The `Location` field of the response contains a monitoring     URL that you can use to check the progress of the copy operation. Because copy operations happen asynchronously and can finish after an unspecified amount of time, you can use this URL repeatedly to track its status.
 
 To receive a status report similar to the one in the following example, GET the URL in the `Location` field of the response.
 ```
