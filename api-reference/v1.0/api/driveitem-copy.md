@@ -94,8 +94,6 @@ The copied file is given a new name `contoso plan (copy).txt`
 
 #### Request
 
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item-1", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/copy
@@ -109,39 +107,6 @@ Content-Type: application/json
   "name": "contoso plan (copy).txt"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/copy-item-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/copy-item-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/copy-item-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/copy-item-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/copy-item-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/copy-item-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/copy-item-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 
 #### Response
 
@@ -161,8 +126,7 @@ The example copies only the contents of a folder, not the folder itself, to a di
 The request sets the `childrenOnly` parameter to true, which is valid only when the source item is a folder.
 
 #### Request 
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item-2", "scopes": "files.readwrite", "target": "action" } -->
+
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/copy
@@ -216,8 +180,7 @@ To avoid this error, use the [@microsoft.graph.conflictBehavior](#optional-query
 
 #### Request
 
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item-3", "scopes": "files.readwrite", "target": "action" } -->
+
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/copy
@@ -269,8 +232,7 @@ The possible values for `@microsoft.graph.conflictBehavior` are:
 
 
 #### Request
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item-4", "scopes": "files.readwrite", "target": "action" } -->
+
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/copy?@microsoft.graph.conflictBehavior=replace
@@ -305,8 +267,7 @@ To avoid this error, use `rename` or `fail` instead of `replace` when copying ch
 
 
 #### Request
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item-conflicts", "scopes": "files.readwrite", "target": "action" } -->
+
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/copy?@microsoft.graph.conflictBehavior=replace
@@ -376,8 +337,6 @@ If the source file has more versions than the destination site allows, only the 
 
 #### Request
 
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item-5", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/copy
