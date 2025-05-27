@@ -34,7 +34,8 @@
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "People admin settings"
     },  
-    "ChangeList": [
+    {
+      "ChangeList": [
         { 
           "Id": "007fd93d-4e7e-4575-b05e-9d3adb6c3b5a",
           "ApiChange": "Enumeration",
