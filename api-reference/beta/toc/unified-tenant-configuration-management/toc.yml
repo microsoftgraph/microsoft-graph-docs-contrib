@@ -20,6 +20,12 @@ items:
     href: ../../api/configurationmanagement-delete-configurationmonitors.md
   - name: Get configurationBaseline
     href: ../../api/configurationbaseline-get.md
+- name: Configuration drift
+  items:
+  - name: Configuration drift
+    href: ../../resources/configurationdrift.md
+  - name: Get
+    href: ../../api/configurationdrift-get.md
 - name: Configuration monitoring result
   items:
   - name: Configuration monitoring result
