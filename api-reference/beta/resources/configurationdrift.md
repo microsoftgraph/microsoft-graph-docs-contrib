@@ -1,6 +1,6 @@
 ---
 title: "configurationDrift resource type"
-description: "This endpoint allows admins to get granular details regarding all active drifts for all existing monitors."
+description: "Represents the information and properties of a configurationDrift object."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -10,18 +10,18 @@ doc_type: resourcePageType
 
 # configurationDrift resource type
 
-Namespace: microsoft.graph.configurationManagement.configurationDrifts
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This endpoint allows admins to get granular details regarding all active drifts for all existing monitors. This API is currently in preview and is available in commercial environments only.
+Represents the information and properties of a [configurationDrift](../resources/configurationdrift.md) object. This resource allows admins to get granular details about all active drifts across all existing monitors. This API is currently in preview and is available in commercial environments only.
 
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/configurationdrift-get.md)|[configurationDrift](../resources/configurationdrift.md)|Get all active drifts against all existing monitors |
+|[Get](../api/configurationdrift-get.md)|[configurationDrift](../resources/configurationdrift.md)|Get all active drifts against all existing monitors.|
 
 ## Properties
 |Property|Type|Description|
@@ -51,20 +51,14 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationDrift",
-  "id": "String (identifier)",
-  "tenantId": "String",
-  "monitorId": "String",
-  "resourceType": "String",
   "baselineResourceDisplayName": "String",
-  "resourceInstanceIdentifier": {
-    "@odata.type": "microsoft.graph.openComplexDictionaryType"
-  },
+  "driftedProperties": [{"@odata.type": "microsoft.graph.driftedProperty"}],
   "firstReportedDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "monitorId": "String",
+  "resourceInstanceIdentifier": {"@odata.type": "microsoft.graph.openComplexDictionaryType"},
+  "resourceType": "String",
   "status": "String",
-  "driftedProperties": [
-    {
-      "@odata.type": "microsoft.graph.driftedProperty"
-    }
-  ]
+  "tenantId": "String"
 }
 ```
