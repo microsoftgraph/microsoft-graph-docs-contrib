@@ -78,25 +78,13 @@ POST https://graph.microsoft.com/beta/users/{7c1f8f10-cba8-4a8d-9449-db4b876d1ef
 Content-type: application/json
 
 {
-  "activities": "uploadText",
-  "locations": [
-    {
-      "@odata.type": "#microsoft.graph.policyLocationDomain",
-      "value": "public.contoso.com"
-    }
-  ],
-  "pivotOn": "activity",
-  "deviceMetadata": {
-    "deviceType": "Managed",
-    "operatingSystemSpecifications": {
-       "operatingSystemPlatform": "Windows",
-       "operatingSystemVersion": "10.0.19045"
-    }
-  },
-  "integratedAppMetadata": {
-      "name": "Contoso Browser Helper",
-      "version": "1.2.3"
-  }
+   "activities": "uploadText,downloadText",
+   "locations": [
+      {
+         "@odata.type": "microsoft.graph.policyLocationApplication",
+         "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
+      }
+   ]
 }
 ```
 
@@ -114,27 +102,24 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.policyUserScope)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.policyUserScope",
+      "activities": "uploadText,downloadText",
+      "executionMode": "evaluateOffline",
       "locations": [
         {
-          "@odata.type": "#microsoft.graph.policyLocationDomain",
-          "value": "public.contoso.com"
+          "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
         }
       ],
+      "policyActions": []
+    },
+    {
       "activities": "uploadText",
       "executionMode": "evaluateInline",
-      "policyActions": [
-         {
-            "@odata.type": "#microsoft.graph.browserRestrictionAction",
-             "action": "browserRestriction",
-             "restrictionAction": "block",
-             "message": "Uploading sensitive content to this site is blocked by policy.",
-             "triggers": ["upload"], // Conceptual trigger, actual values TBD
-             "webSiteGroupId": "website-group-guid"
-         }
-      ]
+      "locations": [
+        {
+          "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
+        }
+      ],
+      "policyActions": []
     }
-    // Potentially other scopes for different activities/locations if requested/applicable
   ]
-}
-```
+}```
