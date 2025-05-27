@@ -718,14 +718,13 @@ Content-Type: application/json
 #### Response
 <!-- { "blockType": "ignored" } -->
 
+Use the Location URL to track the status of the asynchronous copy operation. A successful response might look like this:
+
 ```http
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/sites/FromSite/_api/v2.1/monitor/780293e6-07b3-4544-a126-fea909efcc84
 ```
 
-#### Monitoring the Operation
-
-Use the Location URL to track the status of the asynchronous copy operation. A successful response might look like this:
 
 ```json
 {
