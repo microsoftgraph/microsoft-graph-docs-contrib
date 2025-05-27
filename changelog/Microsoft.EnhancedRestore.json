@@ -12,43 +12,11 @@
           },
           {
             "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "driveProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **driveProtectionUnitsBulkAdditionJobs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-1.0) resource.",
-            "Target": "backupRestoreRoot"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "mailboxProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **mailboxProtectionUnitsBulkAdditionJobs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-1.0) resource.",
-            "Target": "backupRestoreRoot"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "siteProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **siteProtectionUnitsBulkAdditionJobs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-1.0) resource.",
-            "Target": "backupRestoreRoot"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
             "ApiChange": "Resource",
             "ChangedApiName": "driveProtectionUnitsBulkAdditionJob",
             "ChangeType": "Addition",
             "Description": "Added the [driveProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnitsBulkAdditionJob?view=graph-rest-1.0) resource.",
             "Target": "driveProtectionUnitsBulkAdditionJob"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "mailboxProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **mailboxProtectionUnitsBulkAdditionJobs** relationship to the [exchangeProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-1.0) resource.",
-            "Target": "exchangeProtectionPolicy"
           },
           {
             "Id": "991146f6-22d4-4e50-b893-fbea11342412",
@@ -60,14 +28,6 @@
           },
           {
             "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "driveProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **driveProtectionUnitsBulkAdditionJobs** relationship to the [oneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-1.0) resource.",
-            "Target": "oneDriveForBusinessProtectionPolicy"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
             "ApiChange": "Resource",
             "ChangedApiName": "protectionUnitsBulkJobBase",
             "ChangeType": "Addition",
@@ -76,43 +36,11 @@
           },
           {
             "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "siteProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **siteProtectionUnitsBulkAdditionJobs** relationship to the [sharePointProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-1.0) resource.",
-            "Target": "sharePointProtectionPolicy"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
             "ApiChange": "Resource",
             "ChangedApiName": "siteProtectionUnitsBulkAdditionJob",
             "ChangeType": "Addition",
             "Description": "Added the [siteProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnitsBulkAdditionJob?view=graph-rest-1.0) resource.",
             "Target": "siteProtectionUnitsBulkAdditionJob"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "NavigationPropertyBinding",
-            "ChangedApiName": "backupRestore/exchangeProtectionPolicies/mailboxProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the [backupRestore/exchangeProtectionPolicies/mailboxProtectionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
-            "Target": "solutions"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "NavigationPropertyBinding",
-            "ChangedApiName": "backupRestore/oneDriveForBusinessProtectionPolicies/driveProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the [backupRestore/oneDriveForBusinessProtectionPolicies/driveProtectionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
-            "Target": "solutions"
-          },
-          {
-            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
-            "ApiChange": "NavigationPropertyBinding",
-            "ChangedApiName": "backupRestore/sharePointProtectionPolicies/siteProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the [backupRestore/sharePointProtectionPolicies/siteProtectionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
-            "Target": "solutions"
           }
         ],
         "Id": "991146f6-22d4-4e50-b893-fbea11342412",
