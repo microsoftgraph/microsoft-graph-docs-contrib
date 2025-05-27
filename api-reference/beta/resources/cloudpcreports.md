@@ -52,7 +52,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 | :------------------------- | :---------------- |
 | performanceTrendReport     | Indicates a daily aggregated report that provides a list of connection quality metrics for Cloud PCs over the past seven days within a tenant. The metrics include `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, and `LowTimeConnectedCloudPcCount`. Each daily report is an aggregation of the previous 28 days, counted back from the trigger time.  | 
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.             |
-| cloudPcInsightReport       | Indicates Cloud PC-level configuration data with insights.   |
+| cloudPcInsightReport       | Indicates Cloud PC-level configuration data with insights. The `cloudPcInsightReport` member isn't currently implemented. Don't use.   |
 
 ### cloudPCTroubleshootReportType values
 
