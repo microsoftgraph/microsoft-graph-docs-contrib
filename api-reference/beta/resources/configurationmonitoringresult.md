@@ -1,6 +1,6 @@
 ---
 title: "configurationMonitoringResult resource type"
-description: "The endpoint allows admins to look for the monitor run details. The admins can to understand if the monitor is running successfully. If the monitor is not running successfully, they can understand reasons why they aren't running successfully. The endpoint also informs number of drifts found per monitor run."
+description: "Represents the information and properties of a configurationMonitoringResult object."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -14,16 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The endpoint allows admins to look for the monitor run details. The admins can to understand if the monitor is running successfully. If the monitor is not running successfully, they can understand reasons why they aren't running successfully. The endpoint also informs number of drifts found per monitor run. This API is currently in preview and is available in commercial environments only.
+Represents the information and properties of a [configurationMonitoringResult](../resources/configurationmonitoringresult.md) object. This resource allows administrators to view monitor run details. They can determine whether the monitor is running successfully. If it isn't, they can identify the reasons for the failure. The resource also reports the number of drifts found in each monitor run. This API is currently in preview and is available in commercial environments only.
 
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|
-|[Get](../api/configurationmonitoringresult-get.md)|[configurationMonitoringResult](../resources/configurationmonitoringresult.md)|Get the list of all monitoring run details across all existing monitors|
-
+|[Get](../api/configurationmonitoringresult-get.md)|[configurationMonitoringResult](../resources/configurationmonitoringresult.md)|Get the list of all monitoring run details across all existing monitors.|
 
 ## Properties
 |Property|Type|Description|
@@ -52,17 +50,13 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationMonitoringResult",
+  "driftsCount": "Int32",
+  "errorDetails": [{"@odata.type": "microsoft.graph.errorDetail"}],
   "id": "String (identifier)",
-  "tenantId": "String",
   "monitorId": "String",
   "runCompletionDateTime": "String (timestamp)",
   "runInitiationDateTime": "String (timestamp)",
   "runStatus": "String",
-  "driftsCount": "Integer",
-  "errorDetails": [
-    {
-      "@odata.type": "microsoft.graph.errorDetail"
-    }
-  ]
+  "tenantId": "String"
 }
 ```
