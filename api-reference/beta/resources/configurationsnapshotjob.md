@@ -1,6 +1,6 @@
 ---
 title: "configurationSnapshotJob resource type"
-description: "It's an asynchronous job that is created when an admin creates a snapshot."
+description: "Represents an asynchronous job that is created when an admin creates a snapshot."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-It's an asynchronous job that is created when an admin creates or triggers a snapshot. Once an admin hits the createSnapshot endpoint, a configurationSnapshotJob is created that will run asynchronously. Once this job is successfully completed, the admin can then download the extraction.
+Represents an asynchronous job that is created when an admin creates a snapshot. When an admin calls the [configurationBaseline: createSnapshot](../api/configurationsnapshotjob-createsnapshot.md) API, a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) is created and runs asynchronously. Once the job completes successfully, the admin can download the extraction.
 
 Inherits from [entity](../resources/entity.md)
 
@@ -55,22 +55,16 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationSnapshotJob",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
-  "tenantId": "String",
-  "status": "String",
-  "resources": [
-    "String"
-  ],
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
   "completedDateTime": "String (timestamp)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
+  "errorDetails": ["String"],
+  "id": "String (identifier)",
   "resourceLocation": "String",
-  "errorDetails": [
-    "String"
-  ]
+  "resources": ["String"],
+  "status": "String",
+  "tenantId": "String"
 }
 ```
