@@ -4,7 +4,7 @@ description: "Update the properties of a configurationApplication object."
 author: "swatyario"
 ms.date: 04/11/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"
+ms.subservice: "tenant-administration"
 doc_type: apiPageType
 ---
 

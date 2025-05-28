@@ -4,7 +4,7 @@ description: "Represents properties that are drifted from their desired configur
 author: "swatya"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"
+ms.subservice: "tenant-administration"
 doc_type: resourcePageType
 ---
 

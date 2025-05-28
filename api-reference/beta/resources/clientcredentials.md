@@ -4,7 +4,7 @@ description: "clientCredentials are one of the pre-requisites for the admins to 
 author: "swatya"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"
+ms.subservice: "tenant-administration"
 doc_type: resourcePageType
 ---
 

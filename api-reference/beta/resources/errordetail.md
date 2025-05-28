@@ -4,7 +4,7 @@ description: "The errorDetails allow the admins to get details of errors found d
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"
+ms.subservice: "tenant-administration"
 doc_type: resourcePageType
 ---
 

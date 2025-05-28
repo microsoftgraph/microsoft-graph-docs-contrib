@@ -1,10 +1,10 @@
 ---
 title: "baselineResource resource type"
-description: "**The baseline can contain 1 or more resources.**"
+description: "The baseline can contain 1 or more resources."
 author: "swatya"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"
+ms.subservice: "tenant-administration"
 doc_type: resourcePageType
 ---
 

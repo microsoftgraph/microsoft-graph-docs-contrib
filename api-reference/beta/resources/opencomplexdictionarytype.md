@@ -4,7 +4,7 @@ description: "A dictionary of name-value pairs. Names must be valid property nam
 author: "swatya"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"
+ms.subservice: "tenant-administration"
 doc_type: resourcePageType
 ---
 
