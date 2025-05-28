@@ -47,8 +47,6 @@ Inherits from [entity](../resources/entity.md).
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions.|
 |status|[virtualEventAttendeeRegistrationStatus](#virtualeventattendeeregistrationstatus-values)|Registration status of the registrant. Read-only. |
 |userId|String|The registrant's ID in Microsoft Entra ID. Only appears when the registrant is registered in Microsoft Entra ID.|
-|videoOnDemandWebUrl| String | The [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar organizers to quickly publish and share event recordings. |
-
 
 ### virtualEventAttendeeRegistrationStatus values
 
@@ -89,7 +87,6 @@ The following JSON representation shows the resource type
   "registrationDateTime": "String (timestamp)",
   "registrationQuestionAnswers": [{"@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"}],
   "status": "String",
-  "userId": "String",
-  "videoOnDemandWebUrl" : "String"
+  "userId": "String"
 }
 ```

@@ -1,41 +1,5 @@
 {
   "changelog": [
-    {      
-      "ChangeList":[
-        {
-          "Id": "cea1aef3-c3ae-48f4-84ee-88ce3bb2d778",
-          "ApiChange": "Property",
-          "ChangedApiName": "videoOnDemandWebUrl",
-          "ChangeType": "Addition",
-          "Description": "Added the **videoOnDemandWebUrl** property to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource.",
-          "Target": "virtualEventRegistration"
-        }
-      ],
-      "Id": "cea1aef3-c3ae-48f4-84ee-88ce3bb2d778",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2025-06-01T04:07:42.7434446Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Calls and online meetings"
-    },
-    {      
-      "ChangeList":[
-        {
-          "Id": "ca7a73dc-21ed-4e8a-875b-65678ac00163",
-          "ApiChange": "Property",
-          "ChangedApiName": "videoOnDemandWebUrl",
-          "ChangeType": "Addition",
-          "Description": "Added the **videoOnDemandWebUrl** property to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
-          "Target": "virtualEventRegistration"
-        }
-      ],
-      "Id": "ca7a73dc-21ed-4e8a-875b-65678ac00163",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-05-01T04:07:42.7434446Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Calls and online meetings"
-    },
     {
       "ChangeList":[
         {
