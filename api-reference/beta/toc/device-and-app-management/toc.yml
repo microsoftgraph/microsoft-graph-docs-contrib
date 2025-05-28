@@ -278,8 +278,6 @@ items:
       href: ../../api/cloudpcreports-getactionstatusreports.md
     - name: Get bulk action status reports
       href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
-    - name: Get Cloud PC recommendation reports
-      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: Get Cloud PC troubleshooting reports
       href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
     - name: Get frontline report
@@ -296,6 +294,8 @@ items:
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Retrieve Cloud PC recommendation reports
+      href: ../../api/cloudpcreports-retrievecloudpcrecommendationreports.md
     - name: Retrieve Cloud PC tenant metrics report
       href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
     - name: Retrieve cross-region disaster recovery report
@@ -306,6 +306,8 @@ items:
       href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
     - name: Get Cloud PC performance report (deprecated)
       href: ../../api/cloudpcreports-getcloudpcperformancereport.md
+    - name: Get Cloud PC recommendation reports (deprecated)
+      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: Get connection quality reports (deprecated)
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: Get shared use license usage report (deprecated)
