@@ -15,9 +15,11 @@ Namespace: microsoft.graph
 Create a copy of a [driveItem][item-resource] asynchronously including child items. You can specify a new parent folder, or provide a new name. Once the request is accepted, the operation is queued and processed asynchronously. Use the [monitor URL](/graph/long-running-actions-overview) to track progress until the operation completes.
 
 > [!IMPORTANT]
-> Permissions aren't retained when an driveItem is copied. The copied driveItem inherits the permissions of the destination folder.
+> Metadata is not retained when a driveItem is copied, including system metadata and custom metadata. An entirely new driveItem is created in the target location instead.
 >
-> File versions are only retained when the includeAllVersionHistory parameter is explicitly set to true. Otherwise, only the latest version is copied.
+> Permissions are not retained when a driveItem is copied. The copied driveItem inherits the permissions of the destination folder.
+>
+> File versions are only retained when the `includeAllVersionHistory` parameter is explicitly set to `true`. Otherwise, only the latest version is copied.
 >
 > The copy operation is restricted to 30,000 driveItems. For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites).
 
@@ -54,14 +56,10 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 | replace         | The preexisting file item is deleted and replaced with the new item when a conflict occurs. This option is only supported for file items. The new item has the same name as the old one. The old item's history is deleted.  |
 | rename          | Appends the lowest integer that guarantees uniqueness to the name of the new file or folder and completes the operation.  |
 
-
-
 >[!NOTE]
 > The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
 >
-> If you use `@microsoft.graph.conflictBehavior=replace` on a source folder, the API returns a 202 Accepted response, but the copy operation fails. When you query the monitoring URL, it returns a `nameAlreadyExists` error.
->
-> If you use this parameter together with `childrenOnly`, a `nameAlreadyExists` error occurs if any child items are folders.
+> The `@microsoft.graph.conflictBehavior` parameter is applied to all the items copied during the operation. The `replace` value is only supported for files; folders with conflicts use the `fail` behavior instead.
 
 ## Request body
 
@@ -76,8 +74,7 @@ In the request body, provide a JSON object with the following parameters.
 
 >[!NOTE]
 >The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
-
-If you use the `@microsoft.graph.conflictBehavior` query parameter with the `childrenOnly` parameter, then every child in the operation is subject to the `@microsoft.graph.conflictBehavior` specified.
+ 
 
 
 ## Response
@@ -89,7 +86,7 @@ The response returns details about how to [monitor the progress](/graph/long-run
 ### Example 1: Copy a file to a folder
 
 This example shows how to copy a file identified by `{item-id}` into a destination folder identified by its `driveId` and `id` values.
-The copied file is given a new name `contoso plan (copy).txt`
+The copied file is given a new name `contoso plan (copy).txt`.
 
 
 #### Request
@@ -117,11 +114,11 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
-Monitor the progress of the asynchronous copy operation with the URL in the `Location` header.
+Use the URL in the `Location` header to monitor the progress of the asynchronous copy operation.
 
 ### Example 2: Copy the child items in a folder
 
-The example copies only the contents of a folder, not the folder itself, to a different destination. The source folder is identified by `{item-id}` and the destination is identified by its `driveId` and `id` values.
+The example copies only the contents of a folder, not the folder itself, to a different destination. The source folder is identified by `{item-id}`, and the destination is identified by its `driveId` and `id` values.
 
 The request sets the `childrenOnly` parameter to true, which is valid only when the source item is a folder.
 
@@ -152,7 +149,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-The `Location` field of the response contains a monitoring URL that you can use to check the progress of the copy operation. Because copy operations happen asynchronously and can finish after an unspecified amount of time, you can use this URL repeatedly to track its status.
+The `Location` field of the response contains a monitoring     URL that you can use to check the progress of the copy operation. Because copy operations happen asynchronously and can finish after an unspecified amount of time, you can use this URL repeatedly to track its status.
 
 To receive a status report similar to the one in the following example, GET the URL in the `Location` field of the response.
 ```
@@ -171,11 +168,11 @@ To receive a status report similar to the one in the following example, GET the 
 
 ### Example 3: Copy fails due to a name conflict in the destination folder
 
-This example shows a failed attempt to copy a file to a destination folder that already contains a file with the same name. The request doesn't specify a `@microsoft.graph.conflictBehavior` query parameter to resolve the conflict.
+This example shows a failed attempt to copy a file to a destination folder that already contains a file with the same name. The request does not specify a `@microsoft.graph.conflictBehavior` query parameter to resolve the conflict.
 
 Because no conflict behavior is provided, the API accepts the request but fails during processing. The operation returns a `nameAlreadyExists` error.
 
-To avoid this error, use the [@microsoft.graph.conflictBehavior](#optional-query-parameters), parameter with a value of replace, rename, or fail.
+To avoid this error, use the [@microsoft.graph.conflictBehavior](#optional-query-parameters), parameter with a value of `replace` or `rename`.
 
 
 #### Request
@@ -221,7 +218,7 @@ The following example shows an example status report obtained by visiting the UR
 
 ### Example 4: Copy a file to a folder containing a file with the same name
 
-This example shows how to copy a file to a folder already containing a file with the same name. The request uses the `@microsoft.graph.conflictBehavior` query parameter to handle the naming conflict.
+This example shows how to copy a file to a folder already containing a file with the same name. The request uses the [@microsoft.graph.conflictBehavior](#optional-query-parameters) query parameter to handle the naming conflict.
 
 The parameter is set to `replace`, which instructs the API to overwrite the existing item in the destination folder.
 
@@ -261,7 +258,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 
 This example shows a failed request that attempts to copy only the child items of a folder. The request sets the `childrenOnly` parameter to `true` and uses the `@microsoft.graph.conflictBehavior` query parameter with a value of `replace`.
 
-One or more child items in the source folder are folders. Because the `replace` behavior isn't supported when a conflicting item is a folder, the copy operation fails. The request is accepted and a monitoring URL is returned, but the operation ultimately reports an error.
+One or more child items in the source folder are folders. Because the `replace` behavior is not supported when a conflicting item is a folder, the copy operation fails. The request is accepted and a monitoring URL is returned, but the operation ultimately reports an error.
 
 To avoid this error, use `rename` or `fail` instead of `replace` when copying child items that include folders.
 
@@ -333,7 +330,7 @@ Query the monitor URL in the location header to monitor the status of the operat
 
 This example shows how to copy a file item to a new location and include its version history in the copied item. The `includeAllVersionHistory` parameter is set to `true` in the request body to indicate that version history should be preserved.
 
-If the source file has more versions than the destination site allows, only the most recent versions are copied, up to the maximum version limit supported by the destination.
+If the source file has more versions than the destination site allows, all versions are initially copied and then the [version storage behavior](/sharepoint/document-library-version-history-limits#version-storage-behavior) when versions exceed settings applied is followed.
 
 #### Request
 
@@ -364,7 +361,7 @@ Use the `Location` URL in the response header to monitor the progress of the asy
 
 ### Example 7: Invalid request when copying the root folder without `childrenOnly`
 
-This example shows a failed request that attempts to copy the root folder by specifying `root` as the `{item-id}`. The request doesn't include the `childrenOnly` parameter. Because the root folder itself can't be copied, and `childrenOnly` isn't set to true, the request is rejected with an `invalidRequest` error.
+This example shows a failed request that attempts to copy the root folder by specifying `root` as the `{item-id}`. The request does not include the `childrenOnly` parameter. Because the root folder itself cannot be copied, and `childrenOnly` is not set to true, the request is rejected with an `invalidRequest` error.
 
 To copy the contents of the root folder without copying the folder itself, set the `childrenOnly` parameter to `true`.
 
@@ -409,7 +406,7 @@ To resolve this error, set the `childrenOnly` parameter to true.
 
 ### Example 8: Invalid request when copying the child items of a file
 
-This example shows a failed request that sets the `childrenOnly` parameter to `true` for a source item that is a file. The `childrenOnly` parameter is valid only for folder items. Because files don't contain child items, the request is rejected with an invalidRequest error.
+This example shows a failed request that sets the `childrenOnly` parameter to `true` for a source item that is a file. The `childrenOnly` parameter is valid only for folder items. Because files do not contain child items, the request is rejected with an invalidRequest error.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-8" } -->
@@ -498,7 +495,7 @@ Content-Length: 285
 
 ### Example 10: Successful children only copy
 
-This example demonstrates how to copy the child items of a folder (without copying the folder itself) into a new destination. The source folder is identified by `{item-id}` and the destination folder is specified using its `driveId` and `id`. The request sets the `childrenOnly` property to `true`, which is valid only for folder items.
+This example demonstrates how to copy the child items of a folder (without copying the folder itself) into a new destination. The source folder is identified by `{item-id}`, and the destination folder is specified using its `driveId` and `id`. The request sets the `childrenOnly` property to `true`, which is valid only for folder items.
 
 
 #### Request
@@ -519,6 +516,8 @@ Content-Type: application/json
 
 #### Response
 <!-- { "blockType": "ignored" } -->
+
+Use the Location URL to track the status of the asynchronous copy operation. A successful response might look like this:
 
 ```http
 HTTP/1.1 202 Accepted
