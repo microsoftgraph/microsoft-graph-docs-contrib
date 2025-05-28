@@ -960,6 +960,51 @@ Content-type: application/json
 }
 ```
 
+### Example 14: List all users whose management is restricted
+
+The following example shows how to list all users whose management is restricted.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_user_restricted"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$filter=isManagementRestricted eq true&$select=displayName,userPrincipalName
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,userPrincipalName)",
+  "value": [
+    {
+      "displayName": "Adele",
+      "userPrincipalName": "Adele@contoso.com"
+    },
+    {
+      "displayName": "Bob",
+      "userPrincipalName": "Bob@contoso.com"
+    }
+  ]
+}
+```
+
 ### Example 15: Use $filter and endsWith to get users with a specified top-level domain in otherMails
 
 #### Request
@@ -1037,51 +1082,6 @@ Content-type: application/json
             "id": "0012cd20-3890-409e-9db3-afc3055ebe22"
         }
     ]
-}
-```
-
-### Example 12: List all users whose management is restricted
-
-The following example shows how to list all users whose management is restricted.
-
-#### Request
-
-The following example shows a request.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_user_restricted"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$filter=isManagementRestricted eq true&$select=displayName,userPrincipalName
-```
-
-#### Response
-
-The following example shows the response.
-
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,userPrincipalName)",
-  "value": [
-    {
-      "displayName": "Adele",
-      "userPrincipalName": "Adele@contoso.com"
-    },
-    {
-      "displayName": "Bob",
-      "userPrincipalName": "Bob@contoso.com"
-    }
-  ]
 }
 ```
 
