@@ -47,6 +47,7 @@ PATCH /security/alerts_v2/{alertId}
 |:---|:---|:---|
 |status|microsoft.graph.security.alertStatus|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
 |classification|microsoft.graph.security.alertClassification|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
+|customDetails|microsoft.graph.security.dictionary| User defined custom fields with string values. |
 |determination|microsoft.graph.security.alertDetermination|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |assignedTo|String|Owner of the incident, or null if no owner is assigned.|
 
@@ -76,7 +77,8 @@ Content-length: 2450
     "assignedTo": "secAdmin@contoso.com",
     "classification": "truePositive",
     "determination": "malware",
-    "status": "inProgress"
+    "status": "inProgress",
+    "CustomDetails": {"newKey":"newValue"}
 }
 ```
 
@@ -161,6 +163,7 @@ Content-type: application/json
     "lastActivityDateTime": "2021-05-02T07:56:58.222Z",
     "comments": [],
     "evidence": [],
-    "systemTags" : []
+    "systemTags" : [],
+    "customDetails": {"newKey":"newValue"}
 }
 ```
