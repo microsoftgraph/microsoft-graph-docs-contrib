@@ -224,14 +224,14 @@ The `Location` field of the response contains a monitoring     URL that you can 
 To receive a status report similar to the one in the following example, GET the URL in the `Location` field of the response.
 ```
 {
-  "@odata.context": "https://https://contoso.sharepoint.com/sites/site1/_api/v2.1/$metadata#drives('driveId')/operations/$entity",
+  "@odata.context": "https://contoso.sharepoint.com/sites/site1/_api/v2.1/$metadata#drives('driveId')/operations/$entity",
   "id": "049af13f-d177-4c70-aed0-eb6f04a5d88b",
   "createdDateTime": "0001-01-01T00:00:00Z",
   "lastActionDateTime": "0001-01-01T00:00:00Z",
   "percentageComplete": 100,
   "percentComplete": 100,
   "resourceId": "016OGUCSF6Y2GOVW7725BZO354PWSELRRZ",
-  "resourceLocation": "https://https://contoso.sharepoint.com/sites/site2/_api/v2.0/drives/b!1YwGyNd6RUuVB42eCVw7ULlXybr_-09Br67iDGnYY-neBqwZd6jJRJbgCTx0On5n/items/016OGUCSF6Y2GOVW7725BZO354PWSELRRZ",
+  "resourceLocation": "https://contoso.sharepoint.com/sites/site2/_api/v2.0/drives/b!1YwGyNd6RUuVB42eCVw7ULlXybr_-09Br67iDGnYY-neBqwZd6jJRJbgCTx0On5n/items/016OGUCSF6Y2GOVW7725BZO354PWSELRRZ",
   "status": "completed"
 }
 ```
