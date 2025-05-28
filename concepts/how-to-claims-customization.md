@@ -1,44 +1,33 @@
 ---
 title: Customize Claims with Claims Mapping Policy in Microsoft Graph
-description: "[Article description]."
+description: Learn how to add custom claims to access tokens in Microsoft Graph so your app can use extra user attributes to make authorization decisions.
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: rahulnagraj, odaishalabi
 ms.subservice: entra-applications
 ms.topic: how-to
-ms.date: 05/14/2025
-
-#customer intent: As a <role>, I want <what> so that <why>.
-
+ms.date: 05/28/2025
+#customer intent: As a developer, I want to add custom claims to access tokens through Microsoft Graph so that my app can use additional user attributes.
 ---
 
-# Customize claims with Claims Mapping Policy in Microsoft Graph
+# Customize claims with the claims mapping policy in Microsoft Graph
 
-
-[Introduce and explain the purpose of the article.]
-
-<!-- Required: Introductory paragraphs (no heading)
-
-Write a brief introduction that can help the user
-determine whether the article is relevant for them
-and to describe the task the article covers.
-
--->
+You can add extra user attributes to access tokens to help your app make better authorization decisions. This article shows how to use Microsoft Graph APIs to create and assign a claims mapping policy, add custom claims to access tokens, and verify the custom claim in the token.
 
 > [!IMPORTANT]
-> Some API operations in this tutorial use the `beta` endpoint.
+> Some API operations in this article use the `beta` endpoint.
 
 ## Prerequisites
 
-To follow this tutorial:
+To complete this tutorial, you need:
 
-- Sign in to an API client like [Graph Explorer](https://aka.ms/ge) with a Microsoft Entra account that has the Application Administrator Microsoft Entra role.
-- Grant the following delegated permissions: *Policy.Read.All*, *Policy.ReadWrite.ApplicationConfiguration*, and *Application.ReadWrite.All*.
-- Have a service principal to assign the claims mapping policy to.
+- Access to an API client such as [Graph Explorer](https://aka.ms/ge), signed in with a Microsoft Entra account that has the Application Administrator role and grant the following delegated permissions: *Policy.Read.All*, *Policy.ReadWrite.ApplicationConfiguration*, and *Application.ReadWrite.All*.
+- A client service principal to assign the claims mapping policy to.
+- A resource service principal that exposes APIs.
 
 ## Create a claims mapping policy
 
-This policy adds the `department` claim from the user object into the token.
+This policy adds the `department` claim from the user object to the token.
 
 ### Request
 
@@ -60,88 +49,91 @@ Content-type: application/json
 
 ### Response
 
-Record the ID from the response for use later in this article.
+Record the ID from the response to use later in this article.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.claimsMappingPolicy"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
-
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
+  "id": "06d5d20d-2955-45f8-a15d-cf2f434b8116",
+  "deletedDateTime": null,
+  "definition": [
+      "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\",\"ClaimsSchema\":[{\"Source\":\"user\",\"ID\":\"department\",\"JwtClaimType\":\"department\"}]}}"
+  ],
+  "displayName": "ExtraClaimsTest",
+  "isOrganizationDefault": false
+}
 ```
 
-## Assign the policy to a service principal
+You can also add more than one attribute to the policy. The following sample adds both the `department` and `companyname` claims to the token.
 
-The request returns a `204 No Content` response.
+```json
+{
+  "definition": [
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\",\"ClaimsSchema\":[{\"Source\":\"user\",\"ID\":\"department\",\"JwtClaimType\":\"department\"},{\"Source\":\"user\",\"ID\":\"companyname\",\"JwtClaimType\":\"companyname\"}]}}"
+    ],
+ "displayName": "ExtraClaimsTest"
+}
+```
+
+## Assign the policy to a resource service principal
+
+The following request assigns the claims mapping policy to a service principal. A successful response returns `204 No Content`.
 
 <!-- {
   "blockType": "request",
   "name": "how_to_claims_customization_assign_claims_mapping_policy"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipalId}/claimsMappingPolicies/$ref
+POST https://graph.microsoft.com/v1.0/servicePrincipals/3bdbbc1a-5e94-4c2b-895f-231d8af4beee/claimsMappingPolicies/$ref
 Content-type: application/json
 
 {
- "@odata.id": "https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/{policyId}"
+ "@odata.id": "https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/06d5d20d-2955-45f8-a15d-cf2f434b8116"
 }
 ```
 
+## Enable mapped claims in the resource application object
 
-## Enable mapped claims in the application object
-
-The request returns a `204 No Content` response.
+Update the application object to accept mapped claims and use access token version 2. A successful response returns `204 No Content`.
 
 <!-- {
   "blockType": "request",
   "name": "how_to_claims_customization_update_application"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/applications/{ID}
+PATCH https://graph.microsoft.com/v1.0/applications/3dfbe85f-2d14-4660-b1a2-cb9c633ceebb
 Content-type: application/json
 
-
+{
+  "api": {
+    "acceptMappedClaims": true,
+    "requestedAccessTokenVersion": 2
+  }
+}
 ```
 
 ## Test the ID token
 
-Sign in to Graph Explorer as a test user. In Graph Explorer, select the Get token details option to decode the token and inspect its details. The `department` claim should be present in the token.
+In an API client that allows you to follow the [Microsoft identity platform and OAuth 2.0 authorization code flow](/entra/identity-platform/v2-oauth2-auth-code-flow), obtain an access token. In the **scope** parameter, include one of the scopes exposed by your resource service principal, such as `openid profile email scope-defined-by-your-api` where `scope-defined-by-your-api` might be `api://0c16e71f-5102-46c2-9519-600c5270ee0c/test`.
+
+Use [jwt.ms](https://jwt.ms) to decode the access token. The `department` claim should appear in the token.
 
 ## Clean up resources
 
-<!-- Optional: Steps to clean up resources - H2
+To unassign the claims mapping policy from the service principal, use the following request. A successful response returns `204 No Content`.
 
-Provide steps the user can take to clean up resources that
-they might no longer need.
+```http
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/3bdbbc1a-5e94-4c2b-895f-231d8af4beee/claimsMappingPolicies//06d5d20d-2955-45f8-a15d-cf2f434b8116/$ref
+```
 
--->
+## Related content
 
-## Next step -or- Related content
-
-> [!div class="nextstepaction"]
-> [Next sequential article title](link.md)
-
--or-
-
-* [Related article title](link.md)
-* [Related article title](link.md)
-* [Related article title](link.md)
-
-<!-- Optional: Next step or Related content - H2
-
-Consider adding one of these H2 sections (not both):
-
-A "Next step" section that uses 1 link in a blue box 
-to point to a next, consecutive article in a sequence.
-
--or- 
-
-A "Related content" section that lists links to 
-1 to 3 articles the user might find helpful.
-
--->
-
-<!--
-
-Remove all comments except the customer intent
-before you sign off or merge to the main branch.
-
--->
+* [Claims customization using PowerShell and Claims Mapping Policy](/entra/identity-platform/claims-customization-powershell)

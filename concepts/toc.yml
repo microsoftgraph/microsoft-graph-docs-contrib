@@ -343,6 +343,8 @@ items:
         href: application-rollkey-prooftoken.md
       - name: Authentication behaviors
         href: applications-authenticationbehaviors.md
+      - name: Customize claims
+        href: how-to-claims-customization.md
     - name: Synchronization
       items:
       - name: Synchronize custom target attributes
