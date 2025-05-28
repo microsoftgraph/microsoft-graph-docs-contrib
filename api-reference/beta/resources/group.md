@@ -309,6 +309,7 @@ The following JSON representation shows the resource type.
   "isFavorite": "Boolean",
   "isArchived": "Boolean",
   "isAssignableToRole": "Boolean",
+  "isManagementRestricted": "Boolean",
   "isSubscribedByMail": "Boolean",
   "licenseProcessingState": "String",
   "mail": "String",
