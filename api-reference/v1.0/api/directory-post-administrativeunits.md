@@ -157,6 +157,7 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits
 Content-type: application/json
+
 {
     "displayName": "Executive Division",
     "description": "Executive division administration",
@@ -175,6 +176,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#administrativeUnits/$entity",
     "id": "2sd35b05-ae71-48ab-9e7d-4r41a28te37d",
