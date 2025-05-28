@@ -14,9 +14,6 @@ ms.date: 05/28/2025
 
 You can add extra user attributes to access tokens to help your app make better authorization decisions. This article shows how to use Microsoft Graph APIs to create and assign a claims mapping policy, add custom claims to access tokens, and verify the custom claim in the token.
 
-> [!IMPORTANT]
-> Some API operations in this article use the `beta` endpoint.
-
 ## Prerequisites
 
 To complete this tutorial, you need:
@@ -137,3 +134,4 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/3bdbbc1a-5e94-4c2b-895
 ## Related content
 
 * [Claims customization using PowerShell and Claims Mapping Policy](/entra/identity-platform/claims-customization-powershell)
+* [claimsMappingPolicy resource type](/graph/api/resources/claimsMappingPolicy)
