@@ -1,14 +1,14 @@
 ---
-title: "cloudPcReports: getCloudPcRecommendationReports (deprecated)"
+title: "cloudPcReports: retrieveCloudPcRecommendationReports"
 description: "Get the device recommendation reports for Cloud PCs, such as the usage category report."
-author: "XiaolouT"
+author: "Ward1994"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 06/21/2024
+ms.date: 04/01/2025
 ---
 
-# cloudPcReports: getCloudPcRecommendationReports (deprecated)
+# cloudPcReports: retrieveCloudPcRecommendationReports
 
 Namespace: microsoft.graph
 
@@ -16,17 +16,14 @@ Namespace: microsoft.graph
 
 Get the device recommendation reports for Cloud PCs, such as the usage category report. The usage category report categorizes a Cloud PC as `Undersized`, `Oversized`, `Rightsized`, or `Underutilized`, and also provides the recommended SKU when the Cloud PC isn't `Rightsized`.
 
->[!CAUTION] 
-> This API is deprecated and will stop returning data on July 01, 2025. Going forward, use the [retrieveCloudPcRecommendationReports](../api/cloudpcreports-retrievecloudpcrecommendationreports.md) API.
-
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "cloudpcreports_getcloudpcrecommendationreports" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpcreports-getcloudpcrecommendationreports-permissions.md)]
+<!-- { "blockType": "permissions", "name": "cloudpcreports_retrievecloudpcrecommendationreports" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcreports-retrievecloudpcrecommendationreports-permissions.md)]
 
 ## HTTP request
 
@@ -35,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /deviceManagement/virtualEndpoint/reports/getCloudPcRecommendationReports
+POST /deviceManagement/virtualEndpoint/reports/retrieveCloudPcRecommendationReports
 ```
 
 ## Request headers
@@ -56,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 |filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
 |groupBy|String collection|Specifies how to group the reports. If used, must have the same content as the **select** parameter.|
 |orderBy|String collection|Specifies how to sort the reports.|
-|reportName|[cloudPcReportName](../resources/cloudpcexportjob.md#cloudpcreportname-values)|Specifies the report name. Supports a subset of the values for **cloudPcReportName**. Supported values are: `cloudPcUsageCategoryReports`.|
+|reportName|[cloudPcRecommendationReportType](../resources/cloudpcreports.md#cloudpcrecommendationreporttype-values)|The report name. The possible values are: `cloudPcUsageCategoryReports`, `unknownFutureValue`. The default value is `cloudPcUsageCategoryReports`.|
 |search|String|Specifies a String to search.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. |
 |skip|Int32|Number of records to skip.|
@@ -68,7 +65,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 ## Examples
 
-### Example 1: List recommendation reports by device
+### Example 1: List the recommendation reports by device
 
 The following example shows how to list the reports of the top 50 devices.
 
@@ -76,14 +73,8 @@ The following example shows how to list the reports of the top 50 devices.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "cloudpcreportsthis.getcloudpcrecommendationreports"
-}
--->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/getCloudPcRecommendationReports
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveCloudPcRecommendationReports
 Content-Type: application/json
 Content-length: 262
 
@@ -108,36 +99,6 @@ Content-length: 262
   ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsthisgetcloudpcrecommendationreports-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsthisgetcloudpcrecommendationreports-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsthisgetcloudpcrecommendationreports-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsthisgetcloudpcrecommendationreports-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsthisgetcloudpcrecommendationreports-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetcloudpcrecommendationreports-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisgetcloudpcrecommendationreports-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -237,14 +198,8 @@ The following example shows how to summarize the report by usage insight.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "cloudpcreportsthis.getcloudpcrecommendationreports_byusageinsight"
-}
--->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/getCloudPcRecommendationReports
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveCloudPcRecommendationReports
 Content-Type: application/json
 Content-length: 262
 
@@ -259,36 +214,6 @@ Content-length: 262
   "filter": ""
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsthisgetcloudpcrecommendationreports-byusageinsight-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsthisgetcloudpcrecommendationreports-byusageinsight-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsthisgetcloudpcrecommendationreports-byusageinsight-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsthisgetcloudpcrecommendationreports-byusageinsight-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsthisgetcloudpcrecommendationreports-byusageinsight-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetcloudpcrecommendationreports-byusageinsight-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisgetcloudpcrecommendationreports-byusageinsight-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
