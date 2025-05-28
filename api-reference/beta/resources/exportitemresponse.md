@@ -35,7 +35,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.exportItemResponse",
   "changeKey": "String",
-  "data": "Stream",
+  "data": "String",
   "error": {"@odata.type": "microsoft.graph.mailTipsError"},
   "itemId": "String"
 }

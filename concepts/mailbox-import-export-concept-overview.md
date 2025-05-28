@@ -15,6 +15,9 @@ The mailbox import and export APIs in Microsoft Graph let your application impor
 
 These APIs support access to data in users' primary mailboxes and shared mailboxes on Exchange Online. Items can be imported to the same mailbox or a different one.
 
+> [!Important]
+> The mailbox import and export APIs in Microsoft Graph are not designed for mailbox backup and restore.
+
 ## Why integrate with the mailbox import and export APIs?
 
 ### Export a copy of a mailbox item in full-fidelity
