@@ -3124,6 +3124,22 @@
         {
           "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
           "ApiChange": "Resource",
+          "ChangedApiName": "signUpIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [signUpIdentity](https://learn.microsoft.com/en-us/graph/api/resources/signUpIdentity?view=graph-rest-beta) resource.",
+          "Target": "signUpIdentity"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signUpStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [signUpStatus](https://learn.microsoft.com/en-us/graph/api/resources/signUpStatus?view=graph-rest-beta) resource.",
+          "Target": "signUpStatus"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Resource",
           "ChangedApiName": "selfServiceSignUp",
           "ChangeType": "Addition",
           "Description": "Added the [selfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/selfServiceSignUp?view=graph-rest-beta) resource.",
