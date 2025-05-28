@@ -117,9 +117,9 @@ Content-type: application/json
 }
 ```
 
-## Test the ID token
+## Test the access token
 
-In an API client that allows you to follow the [Microsoft identity platform and OAuth 2.0 authorization code flow](/entra/identity-platform/v2-oauth2-auth-code-flow), obtain an access token. In the **scope** parameter, include one of the scopes exposed by your resource service principal, such as `openid profile email scope-defined-by-your-api` where `scope-defined-by-your-api` might be `api://0c16e71f-5102-46c2-9519-600c5270ee0c/test`.
+In an API client that allows you to follow the [Microsoft identity platform and OAuth 2.0 authorization code flow](/entra/identity-platform/v2-oauth2-auth-code-flow), obtain an access token. In the **scope** parameter, include one of the scopes exposed by your resource service principal, such as `openid profile email scope-defined-by-your-api` where `scope-defined-by-your-api` might be `api://00001111-aaaa-2222-bbbb-3333cccc4444/test`.
 
 Use [jwt.ms](https://jwt.ms) to decode the access token. The `department` claim should appear in the token.
 
