@@ -224,7 +224,6 @@ Content-Type: application/json
         "startDateTime": "2025-01-08T12:30:00Z",
         "endDateTime": "2025-01-09T22:00:00Z",
         "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%221cd068e4-5b08-4e75-a7f9-7b4e067a0820%22%7d",
-        "videoOnDemandWebUrl" : "https://events.teams.microsoft.com/event/6721e133-4ebc-4fb9-8345-69781007fd14@51bd81cf-6806-4619-be63-6bb872224b4b?vod&attendeeId=127962bb-84e1-7b62-fd98-1c9d39def7b6",
         "subject": "Session one",
         "participants": {
           "@odata.type": "microsoft.graph.meetingParticipants"
