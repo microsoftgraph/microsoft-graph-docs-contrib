@@ -26,9 +26,9 @@ Inherits from [scheduleChangeRequest](../resources/schedulechangerequest.md).
 | [Create](../api/timeoffrequest-post.md) | [timeOffRequest](timeoffrequest.md) | Create a **timeOffRequest** objects in this schedule.|
 | [Get](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Read the properties and relationships of a **timeOffRequest** object. |
 | [Delete](../api/timeoffrequest-delete.md) | None | Delete a **timeOffRequest** object. |
-| [Approve](../api/timeoffrequest-approve.md)|None|Approve an **timeOffRequest**. |
+| [Approve](../api/timeoffrequest-approve.md)|None|Approve a **timeOffRequest**. |
 | [Approve for user](../api/schedulechangerequest-approveforuser.md)|None|Approve a [timeOffRequest](../resources/timeoffrequest.md) object for a user. This action only supports application permissions.|
-| [Decline](../api/timeoffrequest-decline.md)|None|Decline an **timeOffRequest**. |
+| [Decline](../api/timeoffrequest-decline.md)|None|Decline a **timeOffRequest**. |
 | [Decline for user](../api/schedulechangerequest-declineforuser.md)|None|Decline a [timeOffRequest](../resources/timeoffrequest.md) object for a user. This action only supports application permissions.|
 
 ## Properties
