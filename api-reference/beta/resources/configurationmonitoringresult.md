@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information and properties of a [configurationMonitoringResult](../resources/configurationmonitoringresult.md) object. This resource allows administrators to view monitor run details. They can determine whether the monitor is running successfully. If it isn't, they can identify the reasons for the failure. The resource also reports the number of drifts found in each monitor run. This API is currently in preview and is available in commercial environments only.
+Represents the information and properties of a [configurationMonitoringResult](../resources/configurationmonitoringresult.md) object. This resource allows administrators to view monitor run details. They can determine whether the monitor is running successfully. If it isn't, they can identify the reasons for the failure. The resource also reports the number of drifts found in each monitor run.
 
 Inherits from [entity](../resources/entity.md)
 
@@ -26,14 +26,14 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|driftsCount|Int32|Number of drifts observed during a monitor run|
+|driftsCount|Int32|Number of drifts observed during a monitor run.|
 |errorDetails|[errorDetail](../resources/errordetail.md) collection|An array containing all the error details that are stopping the monitor to run successfully. The error details are a contained entity.|
-|id|String|Globally unique identifier / GUID of the monitor run [Created by the system] Inherits from [entity](../resources/entity.md)|
-|monitorId|String|Globally unique identifier / GUID of the monitor [Created by the system]|
-|runCompletionDateTime|DateTimeOffset|Date & time at which the monitor run completed|
-|runInitiationDateTime|DateTimeOffset|Date & time at which the monitor run initiated|
+|id|String|Globally unique identifier / GUID of the monitor run [Created by the system] Inherits from [entity](../resources/entity.md).|
+|monitorId|String|Globally unique identifier / GUID of the monitor [Created by the system].|
+|runCompletionDateTime|DateTimeOffset|Date and time at which the monitor run completed.|
+|runInitiationDateTime|DateTimeOffset|Date and time at which the monitor run initiated.|
 |runStatus|monitorRunStatus|Status of the monitor run. It can either be successful, partiallySuccessful, or failed.|
-|tenantId|String|Globally unique identifier / GUID of the tenant for which the monitor is being run [Fetched automatically by the system]|
+|tenantId|String|Globally unique identifier / GUID of the tenant for which the monitor is being run [Fetched automatically by the system].|
 
 ## Relationships
 None.

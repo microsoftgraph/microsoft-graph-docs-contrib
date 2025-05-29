@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Parameterization is the concept of abstracting out values that are specific to a given tenant into parameters that will be provided at the time of tenant monitoring. Parameters in configurationBaseline can help admins create one baseline object that can then be used for monitoring multiple tenants. Users will be responsible for the parameterization of their configurationBaselines if they wish to use the baseline on multiple tenants. Users are also responsible for defining parameters on their own. Users can define multiple parameters in a configurationBaseline. If baselineParameters are not used in the configurationbaseline, those parameters won't be considered valid and users should avoid defining configurationBaseline with parameters that are not being used.**
+Parameterization is the concept of abstracting out values that are specific to a given tenant into parameters that will be provided at the time of tenant monitoring. Parameters in configurationBaseline can help admins create one baseline object that can then be used for monitoring multiple tenants. Users will be responsible for the parameterization of their configurationBaselines if they wish to use the baseline on multiple tenants. Users are also responsible for defining parameters on their own. Users can define multiple parameters in a configurationBaseline. If baselineParameters are not used in the configurationbaseline, those parameters won't be considered valid and users should avoid defining configurationBaseline with parameters that are not being used.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**User friendly description of the parameter**|
-|displayName|String|**Parameter names like FQDN, Tenant ID etc.**|
-|parameterType|baselineParameterType|**The type of baselineParameters**.The possible values are: `string`, `integer`, `boolean` etc.|
+|description|String|User friendly description of the parameter|
+|displayName|String|Parameter names like FQDN, Tenant ID etc.|
+|parameterType|baselineParameterType|The type of baselineParameters.The possible values are: `string`, `integer`, `boolean` etc.|
 
 ## Relationships
 None.

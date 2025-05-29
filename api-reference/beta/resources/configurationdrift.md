@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information and properties of a [configurationDrift](../resources/configurationdrift.md) object. This resource allows admins to get granular details about all active drifts across all existing monitors. This API is currently in preview and is available in commercial environments only.
+Represents the information and properties of a [configurationDrift](../resources/configurationdrift.md) object. This resource allows admins to get granular details about all active drifts across all existing monitors.
 
 Inherits from [entity](../resources/entity.md)
 
@@ -26,15 +26,15 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|baselineResourceDisplayName|String|Resource instance for which the drift is detected|
-|driftedProperties|[driftedProperty](../resources/driftedproperty.md) collection|Properties within  one or more resource instances where the drift is detected|
-|firstReportedDateTime|DateTimeOffset|Date & time at which the drift is first detected|
-|id|String|Globally unique identifier / GUID of the drift Created by the system Inherits from [entity](../resources/entity.md)|
-|monitorId|String|Globally unique identifier / GUID of the monitor [Created by the system]|
-|resourceInstanceIdentifier|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|An identifier that allow users to understand where the drift exactly is|
-|resourceType|String|Resource for which the drift is detected|
+|baselineResourceDisplayName|String|Resource instance for which the drift is detected.|
+|driftedProperties|[driftedProperty](../resources/driftedproperty.md) collection|Properties within one or more resource instances where the drift is detected.|
+|firstReportedDateTime|DateTimeOffset|Date and time at which the drift is first detected.|
+|id|String|Globally unique identifier / GUID of the drift Created by the system Inherits from [entity](../resources/entity.md).|
+|monitorId|String|Globally unique identifier / GUID of the monitor [Created by the system].|
+|resourceInstanceIdentifier|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|An identifier that allow users to understand where the drift exactly is.|
+|resourceType|String|Resource for which the drift is detected.|
 |status|driftStatus|Status of the drift. The possible values as of now are: `active` and `fixed`.|
-|tenantId|String|Globally unique identifier / GUID of the tenant for which the monitor is being run [Fetched automatically by the system]|
+|tenantId|String|Globally unique identifier / GUID of the tenant for which the monitor is being run [Fetched automatically by the system].|
 
 ## Relationships
 None.

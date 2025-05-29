@@ -28,15 +28,15 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|The date and time when the snapshot job was completed|
-|createdBy|[identitySet](../resources/identityset.md)|The user who triggered the snapshot|
-|createdDateTime|DateTimeOffset|The date and time when the snapshot job was created|
+|completedDateTime|DateTimeOffset|The date and time when the snapshot job was completed.|
+|createdBy|[identitySet](../resources/identityset.md)|The user who triggered the snapshot.|
+|createdDateTime|DateTimeOffset|The date and time when the snapshot job was created.|
 |description|String|User friendly description of the snapshot given by the user. Optional.|
 |displayName|String|User friendly name given by the user while triggering a snapshot. Required.|
-|errorDetails|String collection|Details of errors related to reasons why snapshot couldn't get completed [This is not visible to the customer, by default.]|
-|id|String|Globally unique identifier / GUID of the snapshot job. Inherits from [entity](../resources/entity.md)|
-|resourceLocation|String|The URL at which the snapshot file resides|
-|resources|String collection|Name of all resources put in the request body by the user who triggered the snapshot [Fetched by the system]|
+|errorDetails|String collection|Details of errors related to reasons why snapshot couldn't get completed. [This is not visible to the customer, by default.]|
+|id|String|Globally unique identifier / GUID of the snapshot job. Inherits from [entity](../resources/entity.md).|
+|resourceLocation|String|The URL at which the snapshot file resides.|
+|resources|String collection|Name of all resources put in the request body by the user who triggered the snapshot [Fetched by the system].|
 |status|snapshotJobStatus|Status of the snapshot. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, and `partiallySuccessful`.
 |tenantId|String|Globally unique identifier / GUID of the tenant for which the snapshot is triggered.|
 

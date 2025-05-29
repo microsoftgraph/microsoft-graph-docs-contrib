@@ -34,9 +34,9 @@ Inherits from [entity](../resources/entity.md)
 |Property|Type|Description|
 |:---|:---|:---|
 |appId|String|The app ID is the app ID of the application created in Azure portal Required.|
+|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| clientCredentials will include keyVaultURI & certificateName that the user must have obtained while creating a Key Vault. Required.|
 |displayName|String|User friendly name given by the user while creating a configurationApplication. Required.|
 |description|String|User friendly description of the configurationApplication. Optional.|
-|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| clientCredentials will include keyVaultURI & certificateName that the user must have obtained while creating a Key Vault. Required.|
 
 ## Relationships
 None.

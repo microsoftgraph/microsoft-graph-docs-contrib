@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**clientCredentials are one of the pre-requisites for the admins to call the UTCM Application Onboarding API. The clientCredentials will include keyVault and certificateName that have been generated during Key Vault creation.**
+clientCredentials are one of the pre-requisites for the admins to call the UTCM Application Onboarding API. The clientCredentials will include keyVault and certificateName that have been generated during Key Vault creation.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|certificateName|String|**Name of the certificate that is uploaded by the admin in Azure Key Vault**|
-|keyVaultUri|String|**The Key Vault URI generated during Azure Key Vault creation**|
+|certificateName|String|Name of the certificate that is uploaded by the admin in Azure Key Vault|
+|keyVaultUri|String|The Key Vault URI generated during Azure Key Vault creation|
 
 ## Relationships
 None.
