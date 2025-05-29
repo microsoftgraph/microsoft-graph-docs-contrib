@@ -55,9 +55,11 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [virtualEventRegistration](../resources/virtualeventregistration.md) object in the response body.
 
-## Example 1: Retrieve a webinar registration by registration ID
+### Example 1: Get a webinar registration by ID
 
-### Request
+The following example shows how to get a webinar registration by registration ID.
+
+#### Request
 The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-5
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -162,14 +164,30 @@ Content-Type: application/json
 }
 ```
 
-## Example 2: Retrieve a webinar registration expanding the session by registration ID
+### Example 2: Get a webinar registration by ID and include sessions
 
-### Request
+The following example shows how to get a webinar registration by registration ID and use `$expand` to include **sessions**.
+
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_virtualeventregistration_sessions"
+}
+-->
 ```http
-GET /solutions/virtualEvent/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6?$expand=sessions
+GET https://graph.microsoft.com/v1.0/solutions/virtualEvent/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6?$expand=sessions
 ```
 
-### Response
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.virtualEventRegistration"
+}
+-->
 ```http
 HTTP/1.1 200 Ok
 Content-Type: application/json
