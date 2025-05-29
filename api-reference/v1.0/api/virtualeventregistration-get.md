@@ -219,41 +219,41 @@ Content-Type: application/json
       ]
     }
   ],
-  "sessions@odata.navigationLink": "/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6/sessions"
-  "sessions" : [
+  "sessions@odata.navigationLink": "/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6/sessions",
+  "sessions": [
     {
       "@odata.type": "#microsoft.graph.virtualEventSession",
-        "id": "8d62dd52-4dff-4c75-96a9-f905cc3ff942",
-        "startDateTime": "2025-01-08T12:30:00Z",
-        "endDateTime": "2025-01-09T22:00:00Z",
-        "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%221cd068e4-5b08-4e75-a7f9-7b4e067a0820%22%7d",
-        "subject": "Session one",
-        "participants": {
-          "@odata.type": "microsoft.graph.meetingParticipants"
-        },
-        "isBroadcast": null,
-        "broadcastSettings": null,
-        "capabilities": [],
-        "audioConferencing": null,
-        "chatInfo": {
-          "threadId": "19:meeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5@thread.v2",
-          "messageId": "0",
-          "replyChainMessageId": null
-        },
-        "videoTeleconferenceId": null,
-        "externalId": null,
-        "joinMeetingIdSettings": null,
-        "lobbyBypassSettings": null,
-        "isEntryExitAnnounced": null,
-        "allowedPresenters": null,
-        "allowAttendeeToEnableMic": null,
-        "allowAttendeeToEnableCamera": null,
-        "allowMeetingChat": null,
-        "shareMeetingChatHistoryDefault": null,
-        "allowTeamworkReactions": null,
-        "recordAutomatically": null,
-        "watermarkProtection": null,
-        "allowParticipantsToChangeName": null
+      "id": "8d62dd52-4dff-4c75-96a9-f905cc3ff942",
+      "startDateTime": "2025-01-08T12:30:00Z",
+      "endDateTime": "2025-01-09T22:00:00Z",
+      "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%221cd068e4-5b08-4e75-a7f9-7b4e067a0820%22%7d",
+      "subject": "Session one",
+      "participants": {
+        "@odata.type": "microsoft.graph.meetingParticipants"
+      },
+      "isBroadcast": null,
+      "broadcastSettings": null,
+      "capabilities": [],
+      "audioConferencing": null,
+      "chatInfo": {
+        "threadId": "19:meeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5@thread.v2",
+        "messageId": "0",
+        "replyChainMessageId": null
+      },
+      "videoTeleconferenceId": null,
+      "externalId": null,
+      "joinMeetingIdSettings": null,
+      "lobbyBypassSettings": null,
+      "isEntryExitAnnounced": null,
+      "allowedPresenters": null,
+      "allowAttendeeToEnableMic": null,
+      "allowAttendeeToEnableCamera": null,
+      "allowMeetingChat": null,
+      "shareMeetingChatHistoryDefault": null,
+      "allowTeamworkReactions": null,
+      "recordAutomatically": null,
+      "watermarkProtection": null,
+      "allowParticipantsToChangeName": null
     }
   ]
 }
