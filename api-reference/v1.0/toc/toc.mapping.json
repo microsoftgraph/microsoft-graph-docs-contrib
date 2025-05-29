@@ -162,9 +162,9 @@
         {
           "name": "Restore artifacts bulk request",
           "resources": [
-            "driveRestoreArtifactsBulkRequest",
-            "mailboxRestoreArtifactsBulkRequest",
-            "siteRestoreArtifactsBulkRequest"
+            "driveRestoreArtifactsBulkAdditionRequest",
+            "mailboxRestoreArtifactsBulkAdditionRequest",
+            "siteRestoreArtifactsBulkAdditionRequest"
           ]
         },
         {
