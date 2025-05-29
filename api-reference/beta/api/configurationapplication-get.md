@@ -34,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationApplications/{configurationApplicationId}
+GET /admin/configurationManagement/configurationApplications('{configurationApplicationId}')
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,7 +57,9 @@ If successful, this method returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the properties of a configurationApplication object
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -66,11 +68,11 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications/{configurationApplicationId}
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications('f6db8379-6071-6f8a-e313-a97b31f4f6b5')
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -86,15 +88,15 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.configurationApplication",
     "id": "f6db8379-6071-6f8a-e313-a97b31f4f6b5",
-    "tenantId": "String",
-    "appId": "String",
-    "displayName": "String",
-    "description": "String",
+    "tenantId": "c6df07c4-c1c8-4485-9043-ca1dff83a25f",
+    "appId": "ac6dea86-c6a8-467f-90c4-928419f73f79",
+    "displayName": "Contoso Test App",
+    "description": "Contoso Test App description",
     "clientCredentials": {
-      "@odata.type": "microsoft.graph.clientCredentials"
-    },
+      "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
+      "certificateName": "Contoso Test Cert"
+    }
   }
 }
 ```

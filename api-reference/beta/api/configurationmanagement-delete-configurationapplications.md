@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/configurationManagement/configurationApplications/{configurationApplicationId}
+DELETE /admin/configurationManagement/configurationApplications('{configurationApplicationId}')
 ```
 
 ## Request headers
@@ -53,7 +53,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Deletes a configurationApplication object
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -62,11 +64,11 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications/{configurationApplicationId}
+DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications('f6db8379-6071-6f8a-e313-a97b31f4f6b5')
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

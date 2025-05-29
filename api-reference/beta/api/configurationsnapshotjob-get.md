@@ -34,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationSnapshotJobs/{configurationSnapshotJobId}
+GET /admin/configurationManagement/configurationSnapshotJobs('{configurationSnapshotJobId}')
 ```
 
 ## Optional query parameters
 
-This method supports the $filter, $select, $orderBy, $pageSize, and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -58,7 +58,9 @@ If successful, this method returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the properties of a configurationSnapshotJob object
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -67,59 +69,10 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs/{configurationSnapshotJobId}
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs('c91a1470-acc9-4585-bc03-522ae898f82f')
 ```
 
-
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.configurationSnapshotJob"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.configurationSnapshotJob",
-    "id": "d291c346-15be-dc2f-7a55-0db28c4ba3a1",
-    "displayName": "String",
-    "description": "String",
-    "tenantId": "String",
-    "status": "String",
-    "resources": [
-      "String"
-    ],
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)",
-    "completedDateTime": "String (timestamp)",
-    "resourceLocation": "String",
-  }
-}
-```
-**Example 1**
-
-### Request
-
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "get_configurationsnapshotjob"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs/{c91a1470-acc9-4585-bc03-522ae898f82f}
-```
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

@@ -38,17 +38,12 @@ You can get the details of any particular monitor by making the following call. 
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationMonitors/{monitorId}
+GET /admin/configurationManagement/configurationMonitors('{monitorId}')
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-
-This method supports the $filter, $select, $orderBy, $pageSize, $top, and $expand OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-By default, this API doesn't return anything unless keyCredentials is specified in a $select query. For example, $select=createdBy. Use $select to choose only the properties your app needs, as this can lead to performance improvements.
+This method supports the $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +61,9 @@ If successful, this method returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the properties of a configurationMonitor object
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -75,64 +72,10 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/{configurationMonitorId}
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors('b166c9cb-db29-438b-95fb-247da1dc72c3')
 ```
 
-
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.configurationMonitor"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.configurationMonitor",
-    "id": "fe082480-bdc2-a90c-25f8-4c7fb2fe2f81",
-    "displayName": "String",
-    "description": "String",
-    "tenantId": "String",
-    "status": "String",
-    "monitorRunFrequencyInHours": "Integer",
-    "mode": "String",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "runningOnBehalfOf": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "parameters": {
-      "@odata.type": "microsoft.graph.openComplexDictionaryType"
-    }
-  }
-}
-```
-
-**Example 1**: Retrieve the details of a specific monitor
-
-### Request
-
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "get_configurationmonitor"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/{b166c9cb-db29-438b-95fb-247da1dc72c3}
-```
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /admin/configurationManagement/configurationApplications/{configurationApplicationId}
+PATCH /admin/configurationManagement/configurationApplications('{configurationApplicationId}')
 ```
 
 ## Request headers
@@ -52,7 +52,6 @@ You can specify the following properties when updating a **configurationApplicat
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|The app ID is the app ID of the application created in Azure portal. Required.|
 |displayName|String|User friendly name given by the user while creating a configurationApplication. Required.|
 |description|String|User friendly description of the configurationApplication. Optional.|
 |clientCredentials|[clientCredentials](../resources/clientcredentials.md)| clientCredentials will include keyVaultURI & certificateName that the user must have obtained while creating a Key Vault. Required.|
@@ -63,7 +62,9 @@ If successful, this method returns a `200 OK` response code and an updated [conf
 
 ## Examples
 
-### Request
+### Example 1: Update the displayName and description for a configurationApplication
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -72,21 +73,16 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications/{configurationApplicationId}
+PATCH https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications('f6db8379-6071-6f8a-e313-a97b31f4f6b5')
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.configurationApplication",
-   "appId": "String",
-  "displayName": "String",
-  "description": "String",
-  "clientCredentials": {
-    "@odata.type": "microsoft.graph.clientCredentials"
-  },
+  "displayName": "Contoso Test App Updated",
+  "description": "Contoso Test App description Updated"
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -100,14 +96,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.configurationApplication",
   "id": "f6db8379-6071-6f8a-e313-a97b31f4f6b5",
-  "tenantId": "String",
-  "appId": "String",
-  "displayName": "String",
-  "description": "String",
+  "tenantId": "c6df07c4-c1c8-4485-9043-ca1dff83a25f",
+  "appId": "ac6dea86-c6a8-467f-90c4-928419f73f79",
+  "displayName": "Contoso Test App Updated",
+  "description": "Contoso Test App description Updated",
   "clientCredentials": {
-    "@odata.type": "microsoft.graph.clientCredentials"
-  },
+     "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
+     "certificateName": "Contoso Test Cert"
+  }
 }
 ```

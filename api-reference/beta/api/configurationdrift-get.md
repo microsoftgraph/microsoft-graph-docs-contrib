@@ -34,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationDrifts/{driftId}
+GET /admin/configurationManagement/configurationDrifts('{driftId'})
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,7 +57,9 @@ If successful, this method returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the properties of a configurationDrift object
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -66,62 +68,11 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationDrifts/{driftId}
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationDrifts('4e808e99-7f60-4194-8294-02ede71effd8)
 ```
 
 
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.configurationDrift"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.configurationDrift",
-    "id": "6e11b0fa-a0c0-42d6-baed-e3cee06fb250",
-    "tenantId": "String",
-    "monitorId": "String",
-    "resourceType": "String",
-    "baselineResourceDisplayName": "String",
-    "resourceInstanceIdentifier": {
-      "@odata.type": "microsoft.graph.openComplexDictionaryType"
-    },
-    "firstReportedDateTime": "String (timestamp)",
-    "status": "String",
-    "driftedProperties": [
-      {
-        "@odata.type": "microsoft.graph.driftedProperty"
-      }
-    ]
-  }
-}
-```
-
-**Example 1**
-
-### Request
-
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "get_configurationdrift"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationDrifts/{'4e808e99-7f60-4194-8294-02ede71effd8}
-```
-
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

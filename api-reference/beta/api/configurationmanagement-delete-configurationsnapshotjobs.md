@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/configurationManagement/configurationSnapshotJobs/{configurationSnapshotJobId}
+DELETE /admin/configurationManagement/configurationSnapshotJobs('{configurationSnapshotJobId}')
 ```
 
 ## Request headers
@@ -53,35 +53,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Deletes a configurationSnapshotJob object
 
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "delete_configurationsnapshotjob"
-}
--->
-``` http
-DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs/{configurationSnapshotJobId}
-```
-
-
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 204 No Content
-```
-
-**Example 1**
-
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -93,8 +67,7 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs/{c91a1470-acc9-4585-bc03-522ae898f82f}
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

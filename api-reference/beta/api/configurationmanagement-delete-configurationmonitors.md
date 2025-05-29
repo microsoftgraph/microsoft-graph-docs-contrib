@@ -55,7 +55,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Deletes a configurationMonitor object
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -64,35 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/{configurationMonitorId}
-```
-
-
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 204 No Content
-```
-
-**Example 1**
-
-### Request
-
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "delete_configurationmonitor"
-}
--->
-``` http
-DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/{1bc248ae-a088-434d-a466-9930e533f7dd}
+DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors('1bc248ae-a088-434d-a466-9930e533f7dd')
 ```
 
 ### Response

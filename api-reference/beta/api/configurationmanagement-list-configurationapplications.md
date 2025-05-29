@@ -39,7 +39,7 @@ GET /admin/configurationManagement/configurationApplications
 
 ## Optional query parameters
 
-This method supports the $filter, $select, $orderBy, $pageSize, and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $filter, $select, $orderBy, and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,7 +57,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get the list of configurationApplications
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -69,8 +71,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -87,24 +88,26 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.configurationApplication",
       "id": "f6db8379-6071-6f8a-e313-a97b31f4f6b5",
-      "tenantId": "String",
-      "appOwnerOrganizationId": "String",
-      "appId": "String",
-      "displayName": "String",
-      "description": "String",
+      "tenantId": "c6df07c4-c1c8-4485-9043-ca1dff83a25f",
+      "appId": "ac6dea86-c6a8-467f-90c4-928419f73f79",
+      "displayName": "Contoso Test App",
+      "description": "Contoso Test App description",
       "clientCredentials": {
-        "@odata.type": "microsoft.graph.clientCredentials"
-      },
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)"
+        "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
+        "certificateName": "Contoso Test Cert"
+      }
+    },
+    {
+      "id": "9ff9ed53-3f36-4417-a8b7-bf213f0a58a4",
+      "tenantId": "c6df07c4-c1c8-4485-9043-ca1dff83a25f",
+      "appId": "ac6dea86-c6a8-467f-90c4-928419f73f79",
+      "displayName": "Contoso Test App 2",
+      "description": "Contoso Test App  2 description",
+      "clientCredentials": {
+        "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
+        "certificateName": "Contoso Test Cert"
+      }
     }
   ]
 }

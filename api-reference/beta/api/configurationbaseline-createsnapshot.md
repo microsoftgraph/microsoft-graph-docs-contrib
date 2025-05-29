@@ -10,7 +10,7 @@ doc_type: apiPageType
 
 # Trigger a snapshot job
 
-Namespace: microsoft
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -64,66 +64,9 @@ If successful, this action returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Request
+### Example 1: Create a snapshot with 2 Exchange resources
 
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "configurationbaselinethis.createsnapshot"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshots/createSnapshot
-Content-Type: application/json
-
-{
-  "displayName": "String",
-  "description": "String",
-  "resources": [
-    "String"
-  ]
-}
-```
-
-
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.configurationSnapshotJob"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.configurationSnapshotJob",
-    "id": "String (identifier)",
-    "displayName": "String",
-    "description": "String",
-    "tenantId": "String",
-    "status": "String",
-    "resources": [
-      "String"
-    ],
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)",
-    "completedDateTime": "String (timestamp)",
-    "resourceLocation": "String",
-  }
-}
-```
-
-**Example 1**
-
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -139,10 +82,10 @@ Content-Type: application/json
     "displayName": "Snapshot Demo",
     "description": "This is Snapshot Description",
     "resources":
-[
-        "microsoft.exchange.sharedmailbox",
-        "microsoft.exchange.transportrule"
-]
+    [
+      "microsoft.exchange.sharedmailbox",
+      "microsoft.exchange.transportrule"
+    ]
 }
 
 ```
@@ -178,7 +121,7 @@ Content-Type: application/json
     "createdBy": {
         "user": {
             "id": "98ceffcc-7c54-4227-8844-835af5a023ce",
-            "displayName": "AdminXTA SDFTestOrg627621"
+            "displayName": "Test Contoso User"
         }
     }
 }

@@ -39,7 +39,7 @@ GET /admin/configurationManagement/configurationSnapshotJobs
 
 ## Optional query parameters
 
-This method supports the $filter, $select, $orderBy, $pageSize, and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $select, $filter, $orderBy, and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -58,58 +58,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get the list of configurationSnapshotJobs
 
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "list_configurationsnapshotjob"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs
-```
-
-
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.configurationSnapshotJob"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.configurationSnapshotJob",
-      "id": "d291c346-15be-dc2f-7a55-0db28c4ba3a1",
-      "displayName": "String",
-      "description": "String",
-      "tenantId": "String",
-      "status": "String",
-      "resources": [
-        "String"
-      ],
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "createdDateTime": "String (timestamp)",
-      "completedDateTime": "String (timestamp)",
-      "resourceLocation": "String",
-    }
-  ]
-}
-```
-**Example 1**
-
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {

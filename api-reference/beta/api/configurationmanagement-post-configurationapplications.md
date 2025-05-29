@@ -63,7 +63,9 @@ If successful, this method returns a `201 Created` response code and a [configur
 
 ## Examples
 
-### Request
+### Example 1: Create a configurationApplication with given parameters
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -76,16 +78,16 @@ POST https://graph.microsoft.com/beta/admin/configurationManagement/configuratio
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.configurationApplication",
-  "appId": "String",
-  "displayName": "String",
-  "description": "String",
+  "appId": "ac6dea86-c6a8-467f-90c4-928419f73f79",
+  "displayName": "Contoso Test App",
+  "description": "Contoso Test App description",
   "clientCredentials": {
-    "@odata.type": "microsoft.graph.clientCredentials"
+     "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
+     "certificateName": "Contoso Test Cert"
   },
 }
 ```
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -100,14 +102,14 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.configurationApplication",
   "id": "f6db8379-6071-6f8a-e313-a97b31f4f6b5",
-  "tenantId": "String",
-  "appId": "String",
-  "displayName": "String",
-  "description": "String",
+  "tenantId": "c6df07c4-c1c8-4485-9043-ca1dff83a25f",
+  "appId": "ac6dea86-c6a8-467f-90c4-928419f73f79",
+  "displayName": "Contoso Test App",
+  "description": "Contoso Test App description",
   "clientCredentials": {
-    "@odata.type": "microsoft.graph.clientCredentials"
-  },
+     "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
+     "certificateName": "Contoso Test Cert"
+  }
 }
 ```

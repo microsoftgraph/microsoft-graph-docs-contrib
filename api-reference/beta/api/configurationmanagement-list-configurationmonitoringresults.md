@@ -39,7 +39,7 @@ GET /admin/configurationManagement/configurationMonitoringResults
 
 ## Optional query parameters
 
-This method supports the $filter, $orderBy, $pageSize, and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $select, $filter, $orderBy, and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,7 +57,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get the list of configurationMonitoringResults
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -69,56 +71,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitoringResults
 ```
 
-
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.configurationMonitoringResult"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.configurationMonitoringResult",
-      "id": "68c7a688-c7e5-0739-ebc3-1d73b2f9b5ff",
-      "tenantId": "String",
-      "monitorId": "String",
-      "runCompletionDateTime": "String (timestamp)",
-      "runInitiationDateTime": "String (timestamp)",
-      "runStatus": "String",
-      "driftsCount": "Integer",
-      "errorDetails": [
-        {
-          "@odata.type": "microsoft.graph.errorDetail"
-        }
-      ]
-    }
-  ]
-}
-```
-**Example 1**
-
-### Request
-
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "list_configurationmonitoringresult"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitoringResults
-```
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

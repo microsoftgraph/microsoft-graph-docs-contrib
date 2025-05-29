@@ -73,75 +73,9 @@ If successful, this method returns a `201 Created` response code and a [configur
 
 ## Examples
 
-### Request
+### Example 1: Create a configurationMonitor with given parameters
 
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "create_configurationmonitor_from_"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.configurationMonitor",
-  "displayName": "String",
-  "description": "String",
-  "parameters": {
-    "@odata.type": "microsoft.graph.openComplexDictionaryType"
-  },
-  "resources": {
-    "@odata.type": "microsoft.graph.openComplexDictionaryType"
-  }
-}
-```
-
-
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.configurationMonitor"
-}
--->
-``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.configurationMonitor",
-  "id": "fe082480-bdc2-a90c-25f8-4c7fb2fe2f81",
-  "displayName": "String",
-  "description": "String",
-  "tenantId": "String",
-  "status": "String",
-  "monitorRunFrequencyInHours": "Integer",
-  "mode": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "runningOnBehalfOf": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "parameters": {
-    "@odata.type": "microsoft.graph.openComplexDictionaryType"
-  }
-  "resources": {
-    "@odata.type": "microsoft.graph.openComplexDictionaryType"
-  }
-}
-```
-
-**Example 1**: Create a configurationMonitor with the default settings
-
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -199,7 +133,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

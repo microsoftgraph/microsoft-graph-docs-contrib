@@ -34,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationMonitors/{monitorId}/baseline
+GET /admin/configurationManagement/configurationMonitors('{monitorId}')/baseline
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,7 +57,9 @@ If successful, this method returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the baseline of a configurationMonitor object
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -66,58 +68,10 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationMonitors/{monitorId}/baseline
+GET /admin/configurationManagement/configurationMonitors('b86049ce-0180-404e-803a-5616d49290d7')/baseline
 ```
 
-
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.configurationBaseline"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.configurationBaseline",
-    "id": "51511c1b-8700-1ba8-d667-0891eda8015f",
-    "displayName": "String",
-    "description": "String",
-    "parameters": [
-      {
-        "@odata.type": "microsoft.graph.baselineParameter"
-      }
-    ],
-    "resources": [
-      {
-        "@odata.type": "microsoft.graph.baselineResource"
-      }
-    ]
-  }
-}
-```
-**Example 1**: Get baseline of any configurationMonitor
-
-### Request
-
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "get_configurationbaseline"
-}
--->
-``` http
-GET /admin/configurationManagement/configurationMonitors/{b86049ce-0180-404e-803a-5616d49290d7}/baseline
-```
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
