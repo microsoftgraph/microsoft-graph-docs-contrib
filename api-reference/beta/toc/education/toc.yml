@@ -308,7 +308,7 @@ items:
     href: ../../api/educationsubmissionresource-get.md
   - name: Delete submission resource
     href: ../../api/educationsubmissionresource-delete.md
-- name: Education
+- name: Reports
   items:
   - name: Reading assignment submission
     items:
