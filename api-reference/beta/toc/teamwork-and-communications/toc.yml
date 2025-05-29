@@ -750,6 +750,8 @@ items:
         href: ../../api/teamwork-list-teamtemplates.md
       - name: Get teamwork
         href: ../../api/teamwork-get.md
+      - name: Determine if interaction is allowed
+        href: ../../api/teamwork-determineifinteractionisallowed.md
   - name: User settings
     items:
     - name: User teamwork
