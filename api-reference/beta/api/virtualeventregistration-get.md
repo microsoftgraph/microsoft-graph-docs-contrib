@@ -41,7 +41,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}
 
 ## Optional query parameters
 
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,9 +57,13 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [virtualEventRegistration](../resources/virtualeventregistration.md) object in the response body.
 
-## Example 1: Retrieve a webinar registration by registration ID
+## Examples
 
-### Request
+### Example 1: Get a webinar registration by ID
+
+The following example shows how to get a webinar registration by registration ID.
+
+#### Request
 
 The following example shows a request.
 
@@ -108,7 +112,7 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-5
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -169,17 +173,36 @@ Content-Type: application/json
 }
 ```
 
-## Example 2: Retrieve a webinar registration expanding the session by registration ID
+### Example 2: Get a webinar registration by ID and include sessions
 
-### Request
-```http
-GET /solutions/virtualEvent/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6?$expand=sessions
+The following example shows how to get a webinar registration by registration ID and use `$expand` to include **sessions**.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_virtualEventRegistration_sessions",
+  "sampleKeys": ["f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21", "127962bb-84e1-7b62-fd98-1c9d39def7b6"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/virtualEvent/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6?$expand=sessions
 ```
 
-### Response
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.virtualEventRegistration"
+}
+-->
 ```http
-HTTP/1.1 200 Ok
+HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistration",
   "id": "127962bb-84e1-7b62-fd98-1c9d39def7b6",
@@ -213,7 +236,6 @@ Content-Type: application/json
         "startDateTime": "2025-01-08T12:30:00Z",
         "endDateTime": "2025-01-09T22:00:00Z",
         "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%221cd068e4-5b08-4e75-a7f9-7b4e067a0820%22%7d",
-        "videoOnDemandWebUrl" : "https://events.teams.microsoft.com/event/6721e133-4ebc-4fb9-8345-69781007fd14@51bd81cf-6806-4619-be63-6bb872224b4b?vod&attendeeId=127962bb-84e1-7b62-fd98-1c9d39def7b6",
         "subject": "Session one",
         "participants": {
           "@odata.type": "microsoft.graph.meetingParticipants"
