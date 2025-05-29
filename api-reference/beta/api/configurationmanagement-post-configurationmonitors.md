@@ -52,18 +52,10 @@ You can specify the following properties when creating a configurationMonitor.
 
 |Property|Type|Description|
 |:---|:---|:---|
+|baseline|[configurationBaseline](../resources/configurationBaseline.md)|A complex object containing the details of at least one resource and at least one property associated to the resource that is to be monitored. Required.|
 |displayName|String| User friendly name given by the user to the monitor. Required.|
 |description|String| User friendly description of the monitor given by the user. Optional.|
-|tenantId|String| Globally unique identifier / GUID of the tenant for which the monitor is being run. Fetched automatically by the system. |
-|status|monitorStatus| Status of the monitor. It can only be active as of now. [Default]|
-|monitorRunFrequencyInHours|Int32| Frequency at which the monitor is running [The default frequency, in preview, is 6 hours. In future, the users get a few more options to choose the frequency at which they want the monitors to run.] [Default]. Regardless of when you create or update a monitor, note that the monitor automatically gets triggered within next 6 hours. Currently, the monitors are picked at a fixed time of 0600 hours, 1200 hours, 1800 hours and 2400 hours [All hours in GMT]. For example: If you create a monitor at 0900 hours, the monitor gets triggered around 1200 hours. If you update a monitor at 1600 hours, the monitor gets triggered around 1800 hours.|
-|mode|monitorMode| Monitor mode in which the monitor is running. It can be monitorOnly as of now. [Default]
-|createdBy|[identitySet](../resources/identityset.md)| Identifier string of the user who created the monitor. Fetched by the system|
-|runningOnBehalfOf|[identitySet](../resources/identityset.md)|The user who has modified the monitor the latest, and hence on whose behalf the monitor is running.|
-|createdDateTime|DateTimeOffset| The date and time when the monitor were created. |
-|lastModifiedDateTime|DateTimeOffset| The date and time when the monitor was last modified. If there are no modifications made to the monitor, it is same as createdDateTime. |
 |parameters|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Key-Value pairs containing the value of the parameters which might be used in the baseline. Optional.|
-|baseline|[configurationBaseline](../resources/configurationBaseline.md)|A complex object containing the details of at least one resource and at least one property associated to the resource that is to be monitored. Required.|
 
 ## Response
 

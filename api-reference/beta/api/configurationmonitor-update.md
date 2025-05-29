@@ -61,9 +61,10 @@ In the request body, if the admin wants to update the monitorName or description
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String| User friendly name given by the user to the monitor. Required.|
+|baseline|[configurationBaseline](../resources/configurationBaseline.md)|A complex object containing the details of at least one resource and at least one property associated to the resource that is to be monitored. Optional.|
+|displayName|String| User friendly name given by the user to the monitor. Optional.|
 |description|String| User friendly description of the monitor given by the user. Optional.|
-|baseline|[configurationBaseline](../resources/configurationBaseline.md)|A complex object containing the details of at least one resource and at least one property associated to the resource that is to be monitored. Required.|
+|parameters|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Key-Value pairs containing the value of the parameters which might be used in the baseline. Optional.|
 
 ## Response
 
