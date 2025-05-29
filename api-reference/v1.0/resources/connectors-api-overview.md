@@ -5,7 +5,7 @@ ms.localizationpriority: high
 author: "snlraju-msft"
 ms.subservice: "search"
 doc_type: conceptualPageType
-ms.date: 06/04/2024
+ms.date: 05/29/2024
 ---
 
 # Use the Copilot connectors API
