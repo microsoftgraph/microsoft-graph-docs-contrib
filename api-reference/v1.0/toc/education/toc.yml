@@ -72,6 +72,8 @@ items:
     href: ../../api/educationassignment-delete.md
   - name: Publish
     href: ../../api/educationassignment-publish.md
+  - name: Create assignment resource
+    href: ../../api/educationassignment-post-resources.md
   - name: Get assignment resource
     href: ../../api/educationassignmentresource-get.md
   - name: Delete assignment resource
@@ -117,7 +119,7 @@ items:
   - name: Assignment resource
     href: ../../resources/educationassignmentresource.md
   - name: Create
-    href: ../../api/educationassignment-post-resource.md
+    href: ../../api/educationassignment-post-resources.md
   - name: Get
     href: ../../api/educationassignmentresource-get.md
   - name: Delete
