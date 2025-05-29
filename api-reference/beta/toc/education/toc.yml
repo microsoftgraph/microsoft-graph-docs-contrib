@@ -50,7 +50,7 @@ items:
     href: ../../api/educationclass-list-teachers.md
   - name: Remove teacher
     href: ../../api/educationclass-delete-teachers.md
-  - name: Create
+  - name: Create assignment
     href: ../../api/educationclass-post-assignments.md
   - name: List assignments
     href: ../../api/educationclass-list-assignments.md

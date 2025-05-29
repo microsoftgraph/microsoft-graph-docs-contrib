@@ -63,7 +63,7 @@ items:
   - name: Assignment
     href: ../../resources/educationassignment.md
   - name: Create
-    href: ../../api/educationclass-post-assignment.md
+    href: ../../api/educationclass-post-assignments.md
   - name: Get
     href: ../../api/educationassignment-get.md
   - name: Update
@@ -72,8 +72,6 @@ items:
     href: ../../api/educationassignment-delete.md
   - name: Publish
     href: ../../api/educationassignment-publish.md
-  - name: Create assignment resource
-    href: ../../api/educationassignment-post-resource.md
   - name: Get assignment resource
     href: ../../api/educationassignmentresource-get.md
   - name: Delete assignment resource
