@@ -81,7 +81,7 @@ The assignment APIs provide the following key resources:
 
 The assignment APIs support the following scenarios:
 
-- [Create assignment](../api/educationclass-post-assignment.md)
+- [Create assignment](../api/educationclass-post-assignments.md)
 - [Publish assignment](../api/educationassignment-publish.md)
 - [Create assignment resource](../api/educationassignment-post-resource.md)
 - [Create submission resource](../api/educationsubmission-post-resources.md)
