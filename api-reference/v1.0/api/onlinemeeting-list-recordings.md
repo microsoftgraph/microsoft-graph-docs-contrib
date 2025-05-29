@@ -157,3 +157,6 @@ Content-Type: application/json
   ]
 }
 ```
+
+## Related content
+[Learn more about Export APIs](/microsoftteams/export-teams-content)
