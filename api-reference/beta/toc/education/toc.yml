@@ -92,8 +92,8 @@ items:
   items:
   - name: Assignment
     href: ../../resources/educationassignment.md
-  - name: Create assignment resource
-    href: ../../api/educationassignment-post-resources.md
+  - name: Create assignment
+    href: ../../api/educationclass-post-assignments.md
   - name: Get assignment
     href: ../../api/educationassignment-get.md
   - name: Update
@@ -102,6 +102,12 @@ items:
     href: ../../api/educationassignment-delete.md
   - name: Publish
     href: ../../api/educationassignment-publish.md
+  - name: Create assignment resource
+    href: ../../api/educationassignment-post-resources.md
+  - name: Get assignment resource
+    href: ../../api/educationassignmentresource-get.md
+  - name: Delete assignment resource
+    href: ../../api/educationassignmentresource-get.md
   - name: Set up assignment resources folder
     href: ../../api/educationassignment-setupresourcesfolder.md
   - name: Set up assignment feedback resources folder
