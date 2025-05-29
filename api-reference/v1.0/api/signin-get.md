@@ -33,7 +33,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
+
 ```
+## Important note on accessing noninteractive, ServicePrincipal, and ManagedIdentity sign-in log events
+Only interactive sign-ins are returned through GET signins API requests unless you set an explicit filter. For example, the filter for getting non-interactive sign-ins is https://graph.microsoft.com/beta/auditLogs/signIns?&$filter=signInEventTypes/any(t: t eq 'nonInteractiveUser'). More details are included in the signInEventType attribute description. 
 
 ## Optional query parameters
 
@@ -57,7 +60,7 @@ If successful, this method returns a `200 OK` response code and [signIn](../reso
 
 ### Request
 
-The following example shows a request.
+The following example shows a request. Please note that "id" refers to RequestID property. 
 
 
 # [HTTP](#tab/http)
