@@ -75,7 +75,7 @@ These base properties are inherited by all **Place** types.
 
 ### Building properties 
 
-In addition to the base properties, the **building** supports the following additional properties:
+In addition to the base properties, the **building** type supports the following additional properties:
 
 |Property|Type|Description|
 |--|--|--|
@@ -85,7 +85,7 @@ In addition to the base properties, the **building** supports the following addi
 
 ### Floor properties
 
-In addition to the base properties, the building supports the following additional properties:
+In addition to the base properties, the **floor** type supports the following additional properties:
 
 |Property|Type|Description|
 |--|--|--|
@@ -95,11 +95,54 @@ In addition to the base properties, the building supports the following addition
 
 ### Section properties
 
-In addition to the base properties, the building supports the following additional properties:  
+In addition to the base properties, the **section** type supports the following additional properties:  
 
 |Property|Type|Description|
 |--|--|--|
 |parentId|String|ID of the floor in which this section is located.|
+
+### Room properties  
+
+In addition to the base properties, the **room** type supports the following additional properties:
+
+|Property|Type|Description|
+|--|--|--|
+|parentId|String|ID of the **floor** or **section** in which this room is located.|
+|capacity|Integer|The maximum number of people that the **place** can accommodate.|
+|audioDeviceName|String|The name of the audio device that is available in the room.|
+|videoDeviceName|String|The name of the video device that is available in the room.|
+|displayDeviceName|String|The name of the display device (e.g., monitor, projector, and so on) available in the room.|
+|isTeamsEnabled|Boolean|Identifies if the room is configured with Microsoft Teams Rooms.|
+|tags|Collection(String)|Custom tags that are associated with the place for categorization or filtering.|
+|emailAddress|String|The email address associated with the room. Used for booking.|
+|bookingPolicies|Collection of bookingPolicies|A collection of booking policy objects that define how the room can be reserved.|
+
+### Workspace properties
+
+In addition to the base properties, the **workspace** type supports the following additional properties:  
+
+|Property|Type|Description|
+|--|--|--|
+|parentId|String|ID of the **floor** or **section** in which this **workspace** is located.|
+|capacity|Integer|The maximum number of individual desks within a **workspace**.|
+|displayDeviceName|String|The name of the display device (e.g., monitor, projector, and so on) that is available in the workspace.|
+|tags|Collection(String)|Custom tags that are associated with the workspace for categorization or filtering.|
+|mode|placeMode|The mode for a workspace. We support 3 modes: <ul><li>Bookable: Workspaces that can be booked in advance using desk-pool reservation tools.</li><li>Walkup: First come, first serve workspaces. As soon as you plug in to one of the desks in the workspace, the desk will be booked for you, provided you have associated the peripherals in Teams Pro Management portal.</li><li>Offline: Workspaces that are taken down for maintenance or marked as not bookable.</li></ul>|
+|emailAddress|String|The email address associated with the workspace. Used for booking.|
+|bookingPolicies|Collection of bookingPolicies|A collection of booking policy objects that define how the workspace can be reserved.|
+
+### Desk properties  
+
+Apart from the base properties, the **desk** type supports the following additional properties:
+
+|Property|Type|Description|
+|--|--|--|
+|parentId|String|ID of the section in which this desk is located.|
+|mailboxDetails|mailboxDetails|The mailbox object-ids and email address that are associated with the desk.|
+|displayDeviceName|String|The name of the display device (e.g., monitor, projector, and so on) available at the desk.|
+|tags|Collection (String)|Custom tags that are associated with the desk for categorization or filtering.|
+|Mode|Dictionary|The mode of the **desk**. We support 4 modes:<ul><li>Assigned: Desks that are assigned to a user.</li><li>Bookable: Desks that can be booked in advance using desk reservation tools.</li><li>Walkup: First come, first serve desk. As soon as you plug in to these desks, they will be booked for you, provided you have associated the peripherals in Teams Pro Management portal.</li><li>Offline: Desks that are taken down for maintenance or marked as not bookable.</li></ul>|
+|bookingPolicies|Collection of bookingPolicies|A collection of booking policy objects that define how the place can be reserved.|
 
 -----
 
