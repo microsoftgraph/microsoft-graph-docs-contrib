@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-It creates a new configurationMonitor object that runs periodically, in the background, at a scheduled frequency.
-
-This API is available only in the public cloud.
+It creates a new [configurationMonitor](../resources/configurationmonitor.md) object that runs periodically, in the background, at a scheduled frequency.
 
 ## Permissions
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a configurationApplication object.
+Update the properties of a [configurationApplication](../resources/configurationapplication.md) object.
 
 ## Permissions
 

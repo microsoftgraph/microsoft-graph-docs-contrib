@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a configurationSnapshotJob object.
+Read the properties and relationships of a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) object.
 
 ## Permissions
 

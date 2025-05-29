@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new configurationApplication object.
+Create a new [configurationApplication](../resources/configurationapplication.md) object.
 
 ## Permissions
 

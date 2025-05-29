@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a configurationMonitoringResult object.
+Read the properties and relationships of a [configurationMonitoringResult](../resources/configurationmonitoringresult.md) object.
 
 ## Permissions
 

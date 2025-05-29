@@ -1,6 +1,6 @@
 ---
-title: "Trigger a snapshot job"
-description: "It allows an admin to trigger or initiates a snapshot job."
+title: "configurationBaseline: createSnapshot"
+description: "It allows an admin to create a snapshot asynchronously."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "tenant-administration"
 doc_type: apiPageType
 ---
 
-# Trigger a snapshot job
+# configurationBaseline: createSnapshot
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-It allows an admin to trigger or initiate a snapshot job. This is an asynchronous operation and will allow an admin to initiate the process of extraction of current tenant configuration. If the snapshot job is successfully created/triggered, it means that the async extraction process has been intiated.
+It allows an admin to create a snapshot asynchronously and will allow an admin to initiate the process of extraction of current tenant configuration. If the snapshot job is successfully created/triggered, it means that the async extraction process has been intiated.
 
 ## Permissions
 

@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the configurationMonitor objects and their properties.
-
-The API is available only in the public cloud.
+Get a list of the [configurationMonitor](../resources/configurationmonitor.md) objects and their properties.
 
 ## Permissions
 

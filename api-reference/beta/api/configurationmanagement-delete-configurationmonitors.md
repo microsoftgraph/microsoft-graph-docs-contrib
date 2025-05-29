@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a configurationMonitor object. When deleted, configurationMonitor data cannot be restored and the date is permanently deleted.
+Delete a [configurationMonitor](../resources/configurationmonitor.md) object. When deleted, configurationMonitor data cannot be restored and the date is permanently deleted.
 
 The API is available only in the public cloud.
 
@@ -72,7 +72,6 @@ DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurat
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get/read the properties and relationships of a configurationMonitor object.
-
-This API is available only in the public cloud.
+Get the properties and relationships of a [configurationMonitor](../resources/configurationmonitor.md) object.
 
 ## Permissions
 
@@ -91,7 +89,6 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.configurationMonitor",
     "id": "fe082480-bdc2-a90c-25f8-4c7fb2fe2f81",
     "displayName": "Demo Monitor",
     "description": "This is a demo monitor.",
@@ -100,13 +97,16 @@ Content-Type: application/json
     "monitorRunFrequencyInHours": 6,
     "mode": "monitorOnly",
     "createdBy":{
-              "user": {
-                  "id":"823da47e-fc25-48d8-8b5a-6186c760f0df",
-                  "displayName": "System Administrator"
-                      }
-                }
+      "user": {
+        "id":"823da47e-fc25-48d8-8b5a-6186c760f0df",
+        "displayName": "System Administrator"
+      }
+    }
     "runningOnBehalfOf": {
-      "@odata.type": "microsoft.graph.identitySet"
+      "user": {
+        "id":"823da47e-fc25-48d8-8b5a-6186c760f0df",
+        "displayName": "System Administrator"
+      }
     },
     "createdDateTime": "2024-12-12T09:52:18.7982733Z",
     "lastModifiedDateTime": "2024-12-12T09:52:18.7982733Z",

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the configurationDrift objects and their properties.
+Get a list of the [configurationDrift](../resources/configurationdrift.md) objects and their properties.
 
 ## Permissions
 

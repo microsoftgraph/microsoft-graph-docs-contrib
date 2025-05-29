@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the configurationSnapshotJob objects and their properties.
+Get a list of the [configurationSnapshotJob](../resources/configurationsnapshotjob.md) objects and their properties.
 
 ## Permissions
 
@@ -90,7 +90,8 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationSnapshotJobs",
     "@microsoft.graph.tips": "This request only returns a subset of the resource's properties. Your app will need to use $select to return non-default properties. To find out what other properties are available for this resource see https://learn.microsoft.com/graph/api/resources/configurationSnapshotJob",
-    "value":{
+    "value": [
+        {
             "id": "1a14c735-e01b-4c6e-a0e9-02ecbe7ad832",
             "displayName": "Snapshot Creation 1",
             "description": "Snapshot Description",
@@ -106,7 +107,7 @@ Content-Type: application/json
             "createdBy": {
                 "user": {
                     "id": "98ceffcc-7c54-4227-8844-835af5a023ce",
-                    "displayName": "AdminXTA SDFTestOrg627621"
+                    "displayName": "Test Contoso User"
                 }
             }
         },
@@ -126,9 +127,10 @@ Content-Type: application/json
             "createdBy": {
                 "user": {
                     "id": "98ceffcc-7c54-4227-8844-835af5a023ce",
-                    "displayName": "AdminXTA SDFTestOrg627621"
+                    "displayName": "Test Contoso User"
                 }
             }
         },
+    ]
 }
 ```

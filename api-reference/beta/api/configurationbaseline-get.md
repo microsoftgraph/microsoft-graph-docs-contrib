@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a configurationBaseline object.
+Read the properties and relationships of a [configurationBaseline](../resources/configurationbaseline.md) object.
 
 ## Permissions
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get/read the properties and relationships of a configurationDrift object.
+Get the properties and relationships of a [configurationDrift](../resources/configurationdrift.md) object.
 
 ## Permissions
 

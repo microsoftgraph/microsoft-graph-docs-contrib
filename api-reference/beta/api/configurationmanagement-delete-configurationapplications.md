@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a configurationApplication object.
+Deletes a [configurationApplication](../resources/configurationapplication.md) object.
 
 ## Permissions
 
@@ -71,7 +71,6 @@ DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurat
 #### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

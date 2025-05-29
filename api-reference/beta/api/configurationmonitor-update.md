@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a configurationMonitor object, including the monitor name, description or/and baseline. Note that while making this patch call, the entire monitor body should be passed.
-
-This API is available in only public cloud.
+Update the properties of a [configurationMonitor](../resources/configurationmonitor.md) object, including the monitor name, description or/and baseline. Note that while making this patch call, the entire monitor body should be passed.
 
 ## Permissions
 
@@ -94,7 +92,6 @@ Content-Type: application/json
 #### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -178,7 +175,6 @@ Content-Type: application/json
 #### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
