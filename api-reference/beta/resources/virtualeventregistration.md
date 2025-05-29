@@ -60,7 +60,10 @@ Inherits from [entity](../resources/entity.md).
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
-None.
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+| sessions | [virtualEventSession](../resources/virtualeventsession.md) collection | Sessions for a registration. |
 
 ## JSON representation
 
