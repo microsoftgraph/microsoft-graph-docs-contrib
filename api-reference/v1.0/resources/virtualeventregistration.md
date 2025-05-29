@@ -74,7 +74,7 @@ The following JSON representation shows the resource type
   "registrationDateTime": "String (timestamp)",
   "registrationQuestionAnswers": [{"@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"}],
   "status": "String",
-  "userId": "String",
+  "userId": "String"
 }
 ```
 
