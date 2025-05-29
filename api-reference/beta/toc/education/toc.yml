@@ -107,7 +107,7 @@ items:
   - name: Get assignment resource
     href: ../../api/educationassignmentresource-get.md
   - name: Delete assignment resource
-    href: ../../api/educationassignmentresource-get.md
+    href: ../../api/educationassignmentresource-delete.md
   - name: Set up assignment resources folder
     href: ../../api/educationassignment-setupresourcesfolder.md
   - name: Set up assignment feedback resources folder
