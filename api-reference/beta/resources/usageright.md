@@ -32,7 +32,7 @@ A usage right represents a license that a user or device has for either third pa
 |serviceIdentifier|String|Identifier of the service corresponding to the usage right.|
 |state|usageRightState|The state of the usage right. Possible values are: `active`, `inactive`, `warning`, `suspended`.|
 
-### usageRightState values 
+### usageRightState values
 
 | Member             |  Description               |
 | :----------------- |  :------------------------ |
@@ -43,8 +43,6 @@ A usage right represents a license that a user or device has for either third pa
 |unknownFutureValue      | Sentinel value to indicate future values. |
 
 >**Note:** Only the active and warning states represent a usable benefit. All other states should be treated as not resulting in a usable benefit.
-
-
 
 ## Relationships
 

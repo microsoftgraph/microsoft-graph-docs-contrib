@@ -67,11 +67,11 @@ conceptualContent:
         - url: ./outlook-mail-concept-overview.md
           itemType: overview
           text: Access and manage messages and mail data.
-    - title: Microsoft Graph connectors
+    - title: Microsoft 365 Copilot connectors
       links:
         - url: /graph/connecting-external-content-connectors-overview
           itemType: overview
-          text: Explore Microsoft Graph connectors.
+          text: Explore Copilot connectors.
         - url: /graph/connecting-external-content-build-quickstart
           itemType: get-started
           text: Build your first connector.

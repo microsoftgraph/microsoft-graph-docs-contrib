@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Subscriptions on Copilot AI interactions require a valid Copilot license that includes the following Copilot service plans:
 
-* **Microsoft Graph connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
+* **Microsoft 365 Copilot connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
 * **Intelligent search**: 931e4a88-a67f-48b5-814f-16a5f1e6028d
 * **Microsoft 365 Copilot in Microsoft Teams**: b95945de-b3bd-46db-8437-f2beb6ea2347
 * **Microsoft 365 Copilot in productivity apps**: a62f8878-de10-42f3-b68f-6149a25ceb97

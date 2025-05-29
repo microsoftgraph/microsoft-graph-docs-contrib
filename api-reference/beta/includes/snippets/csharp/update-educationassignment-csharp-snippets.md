@@ -20,6 +20,12 @@ var requestBody = new EducationAssignment
 	DueDateTime = DateTimeOffset.Parse("2021-09-10T00:00:00Z"),
 	AddedStudentAction = EducationAddedStudentAction.None,
 	AddToCalendarAction = EducationAddToCalendarOptions.StudentsAndPublisher,
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"languageTag" , "pt-BR"
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
