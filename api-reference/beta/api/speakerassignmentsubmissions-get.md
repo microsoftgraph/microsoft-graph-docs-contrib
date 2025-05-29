@@ -39,9 +39,7 @@ GET /education/reports/speakerAssignmentSubmissions
 
 ## Optional query parameters
 
-This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
-
-The `$filter` and `$orderby` query parameters are supported for all properties. 
+This method supports the `$top`, `$filter`, `$count`, `$skiptoken` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
 
 ## Request headers
 
@@ -90,94 +88,86 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/speakerAssignmentSubmissions",
-    "@odata.count": 2,
-    "value": [
-        {
-            "assignmentId": "3221a41a-6cdc-4deb-ad50-27a7e179ec27",
-            "classId": "4e9e40aa-b9ac-4af6-8a1d-4c44c27080da",
-            "submissionId": "3d292db5-189e-468b-8ca1-23ec6f74a8c2",
-            "studentId": "6ade364a-ea37-4a58-82df-1814fb617618",
-            "submissionDateTime": "2025-04-16T00:36:01.4848349Z",
-            "lengthOfSubmissionInSeconds": 185.5,
-            "wordsSpokenCount": 350,
-            "monotoneOccurrencesCount": 8,
-            "averageWordsPerMinutePace": 120,
-            "fillerWordsOccurrencesCount": 14,
-            "topFillerWords": [
-                "um",
-                "like",
-                "you know",
-                "actually"
-            ],
-            "topMispronouncedWords": [
-                "particularly",
-                "subsequently",
-                "statistics"
-            ],
-            "nonInclusiveLanguageOccurrencesCount": 2,
-            "topNonInclusiveWordsAndPhrases": [
-                "you guys",
-                "chairman"
-            ],
-            "repetitiveLanguageOccurrencesCount": 6,
-            "topRepetitiveWordsAndPhrases": [
-                "basically",
-                "essentially",
-                "so"
-            ],
-            "lostEyeContactOccurrencesCount": 5,
-            "incorrectCameraDistanceOccurrencesCount": null,
-            "obstructedViewOccurrencesCount": 0
-        },
-        {
-            "assignmentId": "f88c2e12-2277-4e5a-bc19-207278e820c5",
-            "classId": "39aeb453-fe67-4d19-95b9-e588095cb13e",
-            "submissionId": "c0d9706a-23a8-4d27-ba9e-5c97a4cede34",
-            "studentId": "27a9716d-05aa-4aaa-ae18-9fc10318a03d",
-            "submissionDateTime": "2025-04-16T15:36:01.4850452Z",
-            "lengthOfSubmissionInSeconds": 240.75,
-            "wordsSpokenCount": 420,
-            "monotoneOccurrencesCount": null,
-            "averageWordsPerMinutePace": 105,
-            "fillerWordsOccurrencesCount": 18,
-            "topFillerWords": [
-                "um",
-                "uh",
-                "like",
-                "sort of"
-            ],
-            "topMispronouncedWords": [
-                "necessarily",
-                "specifically",
-                "phenomenon"
-            ],
-            "nonInclusiveLanguageOccurrencesCount": 0,
-            "topNonInclusiveWordsAndPhrases": [],
-            "repetitiveLanguageOccurrencesCount": 9,
-            "topRepetitiveWordsAndPhrases": [
-                "literally",
-                "actually",
-                "basically"
-            ],
-            "lostEyeContactOccurrencesCount": 7,
-            "incorrectCameraDistanceOccurrencesCount": 2,
-            "obstructedViewOccurrencesCount": 1
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/speakerAssignmentSubmissions",
+  "value": [
+    {
+      "assignmentId": "f2a0074a-eca7-4563-9de2-17fa0a274ed1",
+      "classId": "36957e6c-2716-4794-b88b-5983e2502d7d",
+      "submissionId": "3d292db5-189e-468b-8ca1-23ec6f74a8c2",
+      "studentId": "6ade364a-ea37-4a58-82df-1814fb617618",
+      "submissionDateTime": "2025-05-28T14:51:31.0663974Z",
+      "lengthOfSubmissionInSeconds": 310.25,
+      "wordsSpokenCount": 580,
+      "monotoneOccurrencesCount": 5,
+      "averageWordsPerMinutePace": 115,
+      "fillerWordsOccurrencesCount": 9,
+      "topFillerWords": [
+        "so",
+        "umm",
+        "kind of"
+      ],
+      "topMispronouncedWords": [
+        "prerequisites",
+        "anonymous",
+        "miscellaneous"
+      ],
+      "nonInclusiveLanguageOccurrencesCount": 1,
+      "topNonInclusiveWordsAndPhrases": [
+        "you guys"
+      ],
+      "repetitiveLanguageOccurrencesCount": 4,
+      "topRepetitiveWordsAndPhrases": [
+        "just",
+        "right",
+        "okay"
+      ],
+      "lostEyeContactOccurrencesCount": 3,
+      "incorrectCameraDistanceOccurrencesCount": 0,
+      "obstructedViewOccurrencesCount": 0
+    },
+    {
+      "assignmentId": "1d468582-009d-42cb-9e32-172806ea5349",
+      "classId": "4e9fef60-58a3-423d-9f38-fc0425bb91ca",
+      "submissionId": "7058d2c1-9e3e-4dae-9932-970b8b45e87b",
+      "studentId": "28e10270-0566-46ef-80ab-435608609047",
+      "submissionDateTime": "2025-05-28T16:11:31.066402Z",
+      "lengthOfSubmissionInSeconds": 198.5,
+      "wordsSpokenCount": 380,
+      "monotoneOccurrencesCount": 3,
+      "averageWordsPerMinutePace": 135,
+      "fillerWordsOccurrencesCount": 7,
+      "topFillerWords": [
+        "um",
+        "actually"
+      ],
+      "topMispronouncedWords": [
+        "specific",
+        "particularly"
+      ],
+      "nonInclusiveLanguageOccurrencesCount": 0,
+      "topNonInclusiveWordsAndPhrases": [],
+      "repetitiveLanguageOccurrencesCount": 3,
+      "topRepetitiveWordsAndPhrases": [
+        "just"
+      ],
+      "lostEyeContactOccurrencesCount": null,
+      "incorrectCameraDistanceOccurrencesCount": null,
+      "obstructedViewOccurrencesCount": null
+    }
+  ]
 }
 ```
 
 ### Example 2: Get the reading assignment submissions for a specific date using $filter
 
-The following example shows how to get the reading assignment submissions for a specific date using the `$filter` query parameter.
+The following example shows how to get the reading assignment submissions for a specific date using the `$filter` query parameter. Please note that the requested time range must be 24 hours or shorter.
 
 #### Request
 
 The following example shows a request.
 
 ``` http
-GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmissions?$filter=submitDateTime gt 2023-10-10T00:00:00.000Z
+GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissions/$filter=submissionDateTime gt 2025-05-28T00:00:00Z and submissionDateTime lt 2025-05-29T00:00:00Z
 ```
 ---
 
@@ -197,43 +187,118 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/readingAssignmentSubmissions",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/speakerAssignmentSubmissions",
   "value": [
     {
-      "action": "Attempt",
-      "assignmentId": "c43f6736-7faf-4cee-a742-55a583bd3c18",
-      "classId": "adef893e-ff63-4b47-a081-7ea03e7dba6a",
-      "submissionId": "980cc32e-d476-66f7-2d8d-5e7b4f92f01c",
-      "studentId": "12d3e83c-786e-4b02-92bd-8fd5290d6d87",
-      "submissionDateTime": "2024-01-11T00:20:33.9812849Z",
-      "accuracyScore": 85,
-      "wordsPerMinute": 90,
-      "wordCount": 200,
-      "mispronunciations": 5,
-      "omissions": 3,
-      "insertions": 2,
-      "selfCorrections": 4,
-      "repetitions": 3,
-      "monotoneScore": 70,
-      "missedShorts": 2,
-      "missedExclamationMarks": 1,
-      "missedPeriods": 1,
-      "missedQuestionMarks": 1,
-      "unexpectedPauses": 2,
-      "challengingWords": [
-        {
-          "word": "photosynthesis",
-          "count": 2
-        },
-        {
-          "word": "ecosystem",
-          "count": 6
-        },
-        {
-          "word": "biodiversity",
-          "count": 6
-        }
-      ]
+      "assignmentId": "3221a41a-6cdc-4deb-ad50-27a7e179ec27",
+      "classId": "4e9e40aa-b9ac-4af6-8a1d-4c44c27080da",
+      "submissionId": "3d292db5-189e-468b-8ca1-23ec6f74a8c2",
+      "studentId": "6ade364a-ea37-4a58-82df-1814fb617618",
+      "submissionDateTime": "2025-05-28T01:27:42.5458886Z",
+      "lengthOfSubmissionInSeconds": 185.5,
+      "wordsSpokenCount": 350,
+      "monotoneOccurrencesCount": 8,
+      "averageWordsPerMinutePace": 120,
+      "fillerWordsOccurrencesCount": 14,
+      "topFillerWords": [
+        "um",
+        "like",
+        "you know",
+        "actually"
+      ],
+      "topMispronouncedWords": [
+        "particularly",
+        "subsequently",
+        "statistics"
+      ],
+      "nonInclusiveLanguageOccurrencesCount": 2,
+      "topNonInclusiveWordsAndPhrases": [
+        "you guys",
+        "chairman"
+      ],
+      "repetitiveLanguageOccurrencesCount": 6,
+      "topRepetitiveWordsAndPhrases": [
+        "basically",
+        "essentially",
+        "so"
+      ],
+      "lostEyeContactOccurrencesCount": 5,
+      "incorrectCameraDistanceOccurrencesCount": null,
+      "obstructedViewOccurrencesCount": 0
+    },
+    {
+      "assignmentId": "f88c2e12-2277-4e5a-bc19-207278e820c5",
+      "classId": "39aeb453-fe67-4d19-95b9-e588095cb13e",
+      "submissionId": "c0d9706a-23a8-4d27-ba9e-5c97a4cede34",
+      "studentId": "27a9716d-05aa-4aaa-ae18-9fc10318a03d",
+      "submissionDateTime": "2025-05-28T16:27:42.5458933Z",
+      "lengthOfSubmissionInSeconds": 240.75,
+      "wordsSpokenCount": 420,
+      "monotoneOccurrencesCount": null,
+      "averageWordsPerMinutePace": 105,
+      "fillerWordsOccurrencesCount": 18,
+      "topFillerWords": [
+        "um",
+        "uh",
+        "like",
+        "sort of"
+      ],
+      "topMispronouncedWords": [
+        "necessarily",
+        "specifically",
+        "phenomenon"
+      ],
+      "nonInclusiveLanguageOccurrencesCount": 0,
+      "topNonInclusiveWordsAndPhrases": [],
+      "repetitiveLanguageOccurrencesCount": 9,
+      "topRepetitiveWordsAndPhrases": [
+        "literally",
+        "actually",
+        "basically"
+      ],
+      "lostEyeContactOccurrencesCount": 7,
+      "incorrectCameraDistanceOccurrencesCount": 2,
+      "obstructedViewOccurrencesCount": 1
+    },
+    {
+      "assignmentId": "3ed5169c-ea75-4a3f-ae4e-6abe401064b0",
+      "classId": "00bc1413-d329-4a52-a92a-51971c0a3cf3",
+      "submissionId": "6e43da78-9d50-4fa7-b707-8fbd05c04e67",
+      "studentId": "02bcca3c-70cf-437b-813d-dd2bc32bef02",
+      "submissionDateTime": "2025-05-28T18:27:42.5458952Z",
+      "lengthOfSubmissionInSeconds": 275.85,
+      "wordsSpokenCount": 530,
+      "monotoneOccurrencesCount": 15,
+      "averageWordsPerMinutePace": 125,
+      "fillerWordsOccurrencesCount": 22,
+      "topFillerWords": [
+        "like",
+        "you know",
+        "uh",
+        "um",
+        "I mean"
+      ],
+      "topMispronouncedWords": [
+        "entrepreneur",
+        "hierarchy",
+        "infrastructure"
+      ],
+      "nonInclusiveLanguageOccurrencesCount": 3,
+      "topNonInclusiveWordsAndPhrases": [
+        "mankind",
+        "guys",
+        "manpower"
+      ],
+      "repetitiveLanguageOccurrencesCount": 11,
+      "topRepetitiveWordsAndPhrases": [
+        "basically",
+        "sort of",
+        "kind of",
+        "so"
+      ],
+      "lostEyeContactOccurrencesCount": 8,
+      "incorrectCameraDistanceOccurrencesCount": 3,
+      "obstructedViewOccurrencesCount": 2
     }
   ]
 }

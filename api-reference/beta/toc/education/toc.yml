@@ -308,24 +308,26 @@ items:
     href: ../../api/educationsubmissionresource-get.md
   - name: Delete submission resource
     href: ../../api/educationsubmissionresource-delete.md
-- name: Reading assignment submission
+- name: Education
   items:
   - name: Reading assignment submission
-    href: ../../resources/readingassignmentsubmission.md
-  - name: Get
-    href: ../../api/readingassignmentsubmission-get.md
-- name: Reflect check-in response
-  items:
+    items:
+    - name: Reading assignment submission
+      href: ../../resources/readingassignmentsubmission.md
+    - name: Get
+      href: ../../api/readingassignmentsubmission-get.md
   - name: Reflect check-in response
-    href: ../../resources/reflectcheckinresponse.md
-  - name: Get
-    href: ../../api/reflectcheckinresponse-get.md
-- name: Speaker assignment submission
-  items:
+    items:
+    - name: Reflect check-in response
+      href: ../../resources/reflectcheckinresponse.md
+    - name: Get
+      href: ../../api/reflectcheckinresponse-get.md
   - name: Speaker assignment submission
-    href: ../../resources/speakerassignmentsubmission.md
-  - name: Get
-    href: ../../api/speakerassignmentsubmissions-get.md    
+    items:
+    - name: Speaker assignment submission
+      href: ../../resources/speakerassignmentsubmission.md
+    - name: Get
+      href: ../../api/speakerassignmentsubmissions-get.md    
 - name: Related contact
   items:
   - name: Related contact
