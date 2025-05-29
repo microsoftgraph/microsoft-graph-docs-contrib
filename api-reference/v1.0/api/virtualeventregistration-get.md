@@ -39,7 +39,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}
 
 ## Optional query parameters
 
-This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -54,6 +54,8 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [virtualEventRegistration](../resources/virtualeventregistration.md) object in the response body.
+
+## Examples
 
 ### Example 1: Get a webinar registration by ID
 
@@ -189,8 +191,9 @@ The following example shows the response.
 }
 -->
 ```http
-HTTP/1.1 200 Ok
+HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistration",
   "id": "127962bb-84e1-7b62-fd98-1c9d39def7b6",
