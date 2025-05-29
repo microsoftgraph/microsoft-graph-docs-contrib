@@ -27,8 +27,8 @@ Inherits from [entity](../resources/entity.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create assignment](../api/educationclass-post-assignment.md) | [educationAssignment](educationassignment.md) |Creates an **educationAssignment** object.|
-|[Get assignment](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Read properties and relationships of an **educationAssignment** object.|
+|[Create](../api/educationclass-post-assignment.md) | [educationAssignment](educationassignment.md) |Creates an **educationAssignment** object.|
+|[Get](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Read properties and relationships of an **educationAssignment** object.|
 |[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md)	|Update an **educationAssignment** object. |
 |[Delete](../api/educationassignment-delete.md) | None |Delete an **educationAssignment** object. |
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Change the state of an **educationAssignment** object from draft to published.|
