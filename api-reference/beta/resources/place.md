@@ -14,12 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents different space types within a tenant. A `place` object can be one of the following types: 
-
-Place object represents different space types within a tenant. A place object can be one of the following types: 
+Represents different space types within a tenant. A `place` object can be one of the following types:
 
 |Place Type|Details|
-|--|--| 
+|:--|:--| 
 |Building|Represents a tenant building and has properties such as name, address, geographic coordinates, address, and so on.| 
 |Floor|Represents a floor within a building and has properties such as name, parentID, label, SortOrder, and so on. A floor must always be parented to a building.|
 |Section|Represents a section within a floor and has including properties such as name, parentID, label, and so on. A section must always be parented to a floor.|
@@ -27,9 +25,13 @@ Place object represents different space types within a tenant. A place object ca
 |Workspace|Represents a collection of desks. All the workspaces in Places must be associated with Exchange mailboxes. A workspace can be added to a floor or a section. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity.|
 |Desk|Represents individual desks. A desk must be added to a section. The rich properties for the section include email address, mode, and accessibility.|
 
-**Everything from here to the following table is slated to be reworked**
+**Everything from here to the Methods section needs to be reworked**
+**Everything from here to the Methods section needs to be reworked**
+**Everything from here to the Methods section needs to be reworked**
+**Everything from here to the Methods section needs to be reworked**
+**Everything from here to the Methods section needs to be reworked**
 
-**Note:** Places supports Roomlist as well to ensure backward compatibility with Outlook Roomfinder. However rely on the above-mentioned place types if you do not need backward compatibility with Roomfinder. More details on roomlist can be found here: roomList resource type - Microsoft Graph v1.0 | Microsoft Learn    
+**Note:** Places supports Roomlist as well to ensure backward compatibility with Outlook Roomfinder. However rely on the above-mentioned place types if you do not need backward compatibility with Roomfinder. More details on roomlist can be found here: roomList resource type - Microsoft Graph v1.0 | Microsoft Learn
 
 ## Using the Places API 
 
@@ -48,15 +50,21 @@ Note: The findRooms and findRoomLists functions are deprecated.
 |Supports only organizational scenarios with delegated (work or school accounts) or application permissions.|Supports only organizational scenarios with delegated or application permissions.|
 |Supports [updating an individual room or room list](../api/place-update.md) in a tenant.|Doesn't support updating an individual room or room list in a tenant.|
 
+**Everything up to the above disclaimer needs to be reworked**
+**Everything up to the above disclaimer needs to be reworked**
+**Everything up to the above disclaimer needs to be reworked**
+**Everything up to the above disclaimer needs to be reworked**
+**Everything up to the above disclaimer needs to be reworked**
+
 ## Methods 
 
 |Method|Return Type|Description|
-|--|--|--|
+|:--|:--|:--|
 |Create place|Created place|Create a new place|
-|[Get place](../api/place-get.md)|The requested, derived type of [place](./place.md) or list of places|Get the properties and relationships of a specified **place** object or a list of places object of a specific type|
-|[Update place](../api/place-update.md)|The requested, derived type of [place](./place.md)|Update the properties and relationships of a specified **place** object.|
+|[Get place](../api/place-get.md)|The requested, derived type of **place** or list of places|Get the properties and relationships of a specified **place** object or a list of places objects of a specific type|
+|[Update place](../api/place-update.md)|The requested, derived type of **place**|Update the properties and relationships of a specified **place** object.|
 |Delete place||Delete a **place** of any kind using the **id** of the **place**| 
-|descendants|List of Places objects|Returns the list of specific type (floor, section, rooms, desks, or workspaces) of places under a Place|
+|descendants|List of Places objects|Returns the list of specific types (floor, section, rooms, desks, or workspaces) under a **place**|
 
 ## Properties
 
@@ -65,20 +73,20 @@ Note: The findRooms and findRoomLists functions are deprecated.
 These base properties are inherited by all **Place** types.
 
 |Property|Type|Description|
-|--|--|--|
+|:--|:--|:--|
 |Id|String|A unique identifier for the **place**. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration.|
 |placeId|String|An alternate immutable unique identifier of the **place**. Read-only.|
 |displayName|String|The name is associated with the **place**. In legacy objects, this property will be called **label**.|
 |Description|String|User-defined description of the place. This property is referred to as **label** in the Places PowerShell cmdlet and in objects created in version 1 of Microsoft Places.|
-|resourceLinks|ResourceLink collection|A set of links to external resources associated with the place.|
-|IsWheelChairAccessible|Boolian|Is the **place** wheelchair accessible or not.|
+|resourceLinks|ResourceLink collection|A set of links to external resources associated with the **place**.|
+|IsWheelChairAccessible|Boolian|Specified whether the **place** is wheelchair accessible.|
 
 ### Building properties 
 
 In addition to the base properties, the **building** type supports the following additional properties:
 
 |Property|Type|Description|
-|--|--|--|
+|:--|:--|:--|
 |address|physicalAddress|The street address of the **place**, including Street, City, state, country or region, and postal code.|  
 |geoCoordinates|[outlookGeoCoordinates](../../v1.0/resources/outlookgeocoordinates.md)|Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates.|
 |phone|String|The phone number of the **place**.|
@@ -88,7 +96,7 @@ In addition to the base properties, the **building** type supports the following
 In addition to the base properties, the **floor** type supports the following additional properties:
 
 |Property|Type|Description|
-|--|--|--|
+|:--|:--|:--|
 |parentId|String|ID of a Building in which this floor is located.|
 |phone|String|The phone number of the place.|
 |SortOrder|Integer|Specifies the sort order of the floor. For example, a floor might be named "Lobby" with a sort order of 0 to show this floor first in ordered lists.|
@@ -98,7 +106,7 @@ In addition to the base properties, the **floor** type supports the following ad
 In addition to the base properties, the **section** type supports the following additional properties:  
 
 |Property|Type|Description|
-|--|--|--|
+|:--|:--|:--|
 |parentId|String|ID of the floor in which this section is located.|
 
 ### Room properties  
@@ -106,7 +114,7 @@ In addition to the base properties, the **section** type supports the following 
 In addition to the base properties, the **room** type supports the following additional properties:
 
 |Property|Type|Description|
-|--|--|--|
+|:--|:--|:--|
 |parentId|String|ID of the **floor** or **section** in which this room is located.|
 |capacity|Integer|The maximum number of people that the **place** can accommodate.|
 |audioDeviceName|String|The name of the audio device that is available in the room.|
@@ -122,7 +130,7 @@ In addition to the base properties, the **room** type supports the following add
 In addition to the base properties, the **workspace** type supports the following additional properties:  
 
 |Property|Type|Description|
-|--|--|--|
+|:--|:--|:--|
 |parentId|String|ID of the **floor** or **section** in which this **workspace** is located.|
 |capacity|Integer|The maximum number of individual desks within a **workspace**.|
 |displayDeviceName|String|The name of the display device (e.g., monitor, projector, and so on) that is available in the workspace.|
@@ -136,13 +144,19 @@ In addition to the base properties, the **workspace** type supports the followin
 Apart from the base properties, the **desk** type supports the following additional properties:
 
 |Property|Type|Description|
-|--|--|--|
+|:--|:--|:--|
 |parentId|String|ID of the section in which this desk is located.|
 |mailboxDetails|mailboxDetails|The mailbox object-ids and email address that are associated with the desk.|
 |displayDeviceName|String|The name of the display device (e.g., monitor, projector, and so on) available at the desk.|
 |tags|Collection (String)|Custom tags that are associated with the desk for categorization or filtering.|
 |Mode|Dictionary|The mode of the **desk**. We support 4 modes:<ul><li>Assigned: Desks that are assigned to a user.</li><li>Bookable: Desks that can be booked in advance using desk reservation tools.</li><li>Walkup: First come, first serve desk. As soon as you plug in to these desks, they will be booked for you, provided you have associated the peripherals in Teams Pro Management portal.</li><li>Offline: Desks that are taken down for maintenance or marked as not bookable.</li></ul>|
 |bookingPolicies|Collection of bookingPolicies|A collection of booking policy objects that define how the place can be reserved.|
+
+**Incomplete. Insert updated JSON section**
+**Incomplete. Insert updated JSON section**
+**Incomplete. Insert updated JSON section**
+**Incomplete. Insert updated JSON section**
+**Incomplete. Insert updated JSON section**
 
 -----
 
@@ -213,8 +227,8 @@ The following JSON representation shows the resource type.
 ```
 
 ## Related content
-- For administrators to create a room list, use the Exchange PowerShell cmdlet [New-DistributionGroup](/powershell/module/exchange/users-and-groups/new-distributiongroup).
-- For administrators to add a room to a room list, use the Exchange Powershell cmdlet [Add-DistributionGroupMember](/powershell/module/exchange/users-and-groups/add-distributiongroupmember).
+- To create a room list, use the [New-DistributionGroup](/powershell/module/exchange/users-and-groups/new-distributiongroup) Exchange PowerShell cmdlet.
+- To add a room to a room list, use the [Add-DistributionGroupMember](/powershell/module/exchange/users-and-groups/add-distributiongroupmember) Exchange Powershell cmdlet.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

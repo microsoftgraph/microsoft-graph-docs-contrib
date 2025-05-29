@@ -5,22 +5,34 @@ ms.localizationpriority: medium
 author: "vrod9429"
 ms.subservice: calendar
 doc_type: "apiPageType"
-ms.date: 07/22/2024
+ms.date: 05/29/2025
 ---
 
 # Update place
+
+**Revisit this article after Word doc draft is complete**
+**Revisit this article after Word doc draft is complete**
+**Revisit this article after Word doc draft is complete**
+**Revisit this article after Word doc draft is complete**
+**Revisit this article after Word doc draft is complete**
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). You can identify the **room**, **workspace**, or **roomList** by specifying the **id** or **emailAddress** property.
+Update the properties of a [place](../resources/place.md) object. A **place** can represent a desk, workspace, room, section, floor or building.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+**Update this table**
+**Update this table**
+**Update this table**
+**Update this table**
+**Update this table**
 
 <!-- { "blockType": "permissions", "name": "place_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/place-update-permissions.md)]
@@ -29,22 +41,26 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 
+**To be updated**
+**To be updated**
+**To be updated**
+**To be updated**
+**To be updated**
+
 ```http
 PATCH /places/{id | emailAddress}
 ```
 
 ## Request headers
 
-| Name       | Value|
-|:-----------|:------|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type | application/json. Required. |
+|Name|Type|Description|
+|:--|:--|:--|
+|Authorization|String|Bearer {token}. Required.|
+|Content-Type|string|application/json|
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Only one instance of a place resource (**room**, **workspace**, or **roomList**) can be updated at a time. In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
-
->**Note**: You can't use this API to update the **id**, **emailAddress**, **displayName**, or **bookingType**, or **placeId** of a [place](../resources/place.md) object.
+Provide only the properties you want to update. The following properties are supported for different [place](../resources/place.md) objects.
 
 | Property               | Type                                              | Description |
 |:-----------------------|:--------------------------------------------------|:--|

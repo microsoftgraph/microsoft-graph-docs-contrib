@@ -13,15 +13,13 @@ ms.date: 07/22/2024
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address. 
 
-The **place** object can be one of the following types:
+-	Get the properties and metadata of a specific [place](../resources/place.md) object in Microsoft Graph 
+-	Get the list of places of a specific place type
+-	Get the places of a specific type under a Place such as get all the desks on a specific floor
 
-* A [room](../resources/room.md), which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
-* A [workspace](../resources/workspace.md), which includes properties such as an email address for the workspace, and accessibility and capacity. 
-* A [room list](../resources/roomlist.md), which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
+A [place](../resources/place.md) can represent a desk, workspace, room, section, floor, or building.
 
-The **room**, **workspace**, and **roomList** resources are derived from the **place** object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
