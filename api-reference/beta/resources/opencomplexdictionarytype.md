@@ -21,6 +21,7 @@ This resource is an open type.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|None|None|None|
 
 ## Relationships
 None.
