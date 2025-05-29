@@ -22,8 +22,8 @@ Inherits from [scheduleChangeRequest](../resources/schedulechangerequest.md).
 
 | Method       | Return type | Description |
 |:-------------|:------------|:------------|
-| [Create](../api/timeoffrequest-post.md) | [timeOffRequest](timeoffrequest.md) | Create a **timeOffRequest** objects in this schedule.|
 | [List](../api/timeoffrequest-list.md) | [timeOffRequest](timeoffrequest.md) collection | Get the list of **timeOffRequest** objects in this schedule.|
+| [Create](../api/timeoffrequest-post.md) | [timeOffRequest](timeoffrequest.md) | Create a **timeOffRequest** objects in this schedule.|
 | [Get](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Read the properties and relationships of a **timeOffRequest** object. |
 | [Delete](../api/timeoffrequest-delete.md) | None | Delete a **timeOffRequest** object. |
 | [Approve](../api/timeoffrequest-approve.md)|None|Approve an **timeOffRequest**. |
