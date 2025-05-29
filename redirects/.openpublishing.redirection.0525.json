@@ -24,6 +24,11 @@
       "source_path_from_root": "/api-reference/v1.0/api/educationclass-post-assignment.md",
       "redirect_url": "https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments?view=graph-rest-1.0",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/educationassignment-post-resource.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/educationassignment-post-resources?view=graph-rest-1.0",
+      "redirect_document_id": false
     }
   ]
 }
