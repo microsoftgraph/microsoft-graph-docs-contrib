@@ -13,6 +13,12 @@ var requestBody = new EducationModule
 {
 	DisplayName = "Module 2",
 	Description = "Description for Module 2",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"languageTag" , "en-GB"
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

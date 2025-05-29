@@ -1,6 +1,5 @@
 ---
-title: "userScope resource type"
-toc-title: "userScope resource type (preview)"
+title: "userScope resource type (preview)"
 description: "Represents an individual user as a scope within policy bindings."
 author: "ArunGedela"
 ms.date: 04/08/2025

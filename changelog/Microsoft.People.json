@@ -3,6 +3,74 @@
     {
       "ChangeList": [
         {
+          "Id": "169d4187-5f10-4a82-8981-c644d541840c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileSourceLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the [profileSourceLocalization](https://learn.microsoft.com/en-us/graph/api/resources/profileSourceLocalization?view=graph-rest-beta) resource.",
+          "Target": "profileSourceLocalization"
+        },
+        {
+          "Id": "169d4187-5f10-4a82-8981-c644d541840c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "profileSources",
+          "ChangeType": "Addition",
+          "Description": "Added the **profileSources** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "169d4187-5f10-4a82-8981-c644d541840c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [profileSource](https://learn.microsoft.com/en-us/graph/api/resources/profileSource?view=graph-rest-beta) resource type.",
+          "Target": "profileSource"
+        }
+      ],
+      "Id": "169d4187-5f10-4a82-8981-c644d541840c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-27T07:25:23.8259345Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"
+    },  
+    {
+      "ChangeList": [
+        { 
+          "Id": "007fd93d-4e7e-4575-b05e-9d3adb6c3b5a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "organizationAllowedAudiences",
+          "ChangeType": "Addition",
+          "Description": "Added the **organizationAllowedAudiences** enumeration type.",
+          "Target": "organizationAllowedAudiences"
+        },
+        {
+          "Id": "007fd93d-4e7e-4575-b05e-9d3adb6c3b5a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profilePropertySetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [profilePropertySetting](https://learn.microsoft.com/en-us/graph/api/resources/profilePropertySetting?view=graph-rest-beta) resource and associated methods.",
+          "Target": "profilePropertySetting"
+        },
+        {
+          "Id": "007fd93d-4e7e-4575-b05e-9d3adb6c3b5a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "profilePropertySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **profilePropertySettings** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        }
+      ],
+      "Id": "007fd93d-4e7e-4575-b05e-9d3adb6c3b5a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-16T11:41:39.3053449Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f8b97d2c-dc2f-442c-ba64-ca7ce0fb6e12",
           "ApiChange": "Resource",
           "ChangedApiName": "enhancedPersonalizationSetting",

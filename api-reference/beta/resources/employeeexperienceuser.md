@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-"Represents a container that exposes navigation properties for the employee experience resources of a user.
+Represents a container that exposes navigation properties for the employee experience resources of a user.
 
 Inherits from [entity](../resources/entity.md).
 

@@ -1,6 +1,5 @@
 ---
-title: "tenantDataSecurityAndGovernance resource type"
-toc-title: "tenantDataSecurityAndGovernance resource type (preview)"
+title: "tenantDataSecurityAndGovernance resource type (preview)"
 description: "Represents the entry point for data security and governance features applicable across the entire tenant."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -22,6 +21,7 @@ Represents the entry point for data security and governance features applicable 
 | Method                                          | Return Type                                                                                                 | Description                                                                                 |
 | :---------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
 | [Compute protection scopes](../api/tenantprotectionscopecontainer-compute.md) | [policyTenantScope](../resources/policytenantscope.md) collection      | Compute the tenant-wide data protection policies, including user/group scoping.             |
+| [Process content](../api/userdatasecurityandgovernance-processcontent.md) | [processContentResponse](../resources/processcontentresponse.md) | Process content against data security and governance policies in the context of a specific user. |
 | [Process content async](../api/tenantdatasecurityandgovernance-processcontentasync.md) | [processContentResponses](../resources/processcontentresponses.md) collection | Process a batch of content entries asynchronously against data protection policies.           |
 
 ## Properties
