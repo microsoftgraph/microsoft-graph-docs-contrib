@@ -19,6 +19,11 @@
       "source_path_from_root": "/concepts/connecting-external-content-build-quickstart.md",
       "redirect_url": "https://learn.microsoft.com/graph/custom-connector-sdk-sample-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/educationclass-post-assignment.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments",
+      "redirect_document_id": false
     }
   ]
 }
