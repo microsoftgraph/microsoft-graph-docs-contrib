@@ -92,9 +92,9 @@ items:
   items:
   - name: Assignment
     href: ../../resources/educationassignment.md
-  - name: Create assignment
+  - name: Create
     href: ../../api/educationclass-post-assignments.md
-  - name: Get assignment
+  - name: Get
     href: ../../api/educationassignment-get.md
   - name: Update
     href: ../../api/educationassignment-update.md
