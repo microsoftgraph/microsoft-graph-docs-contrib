@@ -1073,6 +1073,8 @@ items:
     items:
     - name: Time off request
       href: ../../resources/timeoffrequest.md
+    - name: Create
+      href: ../../api/timeoffrequest-post.md
     - name: Get
       href: ../../api/timeoffrequest-get.md
     - name: List

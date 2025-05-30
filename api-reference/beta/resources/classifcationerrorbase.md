@@ -1,6 +1,5 @@
 ---
-title: "classifcationErrorBase resource type"
-toc.title: "classifcationErrorBase resource type (preview)"
+title: "classifcationErrorBase resource type (preview)"
 description: "Abstract base type for representing errors that occur during data classification, label evaluation, or policy processing."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -19,7 +18,7 @@ Abstract base type for representing errors that occur during data classification
 
 ## Properties
 
-| Property   | Type                                                                                             | Description                                                                    |
+| Property   | Type  | Description |
 | :--------- | :----------------------------------- | :----------------------------------------------------------------------------- |
 | code       | String   | A service-defined error code string.                                           |
 | innerError | [classificationInnerError](../resources/classificationinnererror.md) | Contains more specific, potentially internal error details.                    |

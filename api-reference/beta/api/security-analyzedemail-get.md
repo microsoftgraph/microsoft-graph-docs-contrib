@@ -51,15 +51,17 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ## Examples
 
-### Request
+### Example 1: Get an analyzedEmail
 
-The following example shows a request.
+#### Request
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_analyzedemail"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}
 ```
@@ -98,14 +100,17 @@ GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{anal
 
 ---
 
-### Response
+---
+
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.analyzedEmail"
+  "@odata.type": "microsoft.graph.security.analyzedEmail",
+  "name" : "get_analyzedemail"
 }
 -->
 ``` http
@@ -133,13 +138,11 @@ Content-Type: application/json
     "latestDelivery": {
       "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
     },
-    "attachmentsCount": "Integer",
     "attachments": [
       {
         "@odata.type": "microsoft.graph.security.analyzedEmailAttachment"
       }
     ],
-    "urlsCount": "Integer",
     "urls": [
       {
         "@odata.type": "microsoft.graph.security.analyzedEmailUrl"
@@ -175,7 +178,195 @@ Content-Type: application/json
     "bulkComplaintLevel": "String",
     "emailClusterId": "String",
     "policyAction": "String",
-    "policy": "String"
+    "policy": "String",
+    "timelineEvents": [
+      {
+        "@odata.type": "microsoft.graph.security.timelineEvent"
+      }
+    ],
+    "threatDetectionDetails": [
+      {
+        "@odata.type": "microsoft.graph.security.threatDetectionDetail"
+      }
+    ],
+    "primaryOverrideSource": "String",
+    "inboundConnectorFormattedName": "String",
+    "policyType": "String",
+    "clientType": "String",
+    "dlpRules": [
+      {
+        "@odata.type": "microsoft.graph.security.analyzedEmailDlpRuleInfo"
+      }
+    ],
+    "forwardingDetail": "String",
+    "recipientDetail": {
+      "@odata.type": "microsoft.graph.security.analyzedEmailRecipientDetail"
+    }
   }
+}
+```
+
+### Example 2: Get the URLs from an analyzedEmail
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_analyzedemail_urls"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}/Urls
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-analyzedemail-urls-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.security.analyzedEmailUrl",
+  "name" : "get_analyzedemail_urls"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.security.analyzedEmailUrl",
+      "url": "String",
+      "threatType": "String",
+      "detectionMethod": "String",
+      "tenantAllowBlockListDetailInfo": "String",
+      "detonationDetails": {
+        "@odata.type": "microsoft.graph.security.detonationDetails"
+      }
+    }
+  ]
+}
+```
+
+### Example 3: Get the attachments of an analyzedEmail
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_analyzedemail_attachments"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}/attachments
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-analyzedemail-attachments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+---
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.security.analyzedEmailAttachment",
+  "name" : "get_analyzedemail_attachments"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.security.analyzedEmailAttachment",
+      "fileName": "String",
+      "fileType": "String",
+      "fileSize": "Integer",
+      "fileExtension": "String",
+      "threatType": "String",
+      "malwareFamily": "String",
+      "tenantAllowBlockListDetailInfo": "String",
+      "sha256": "String",
+      "detonationDetails": {
+        "@odata.type": "microsoft.graph.security.detonationDetails"
+      }
+    }
+  ]
 }
 ```

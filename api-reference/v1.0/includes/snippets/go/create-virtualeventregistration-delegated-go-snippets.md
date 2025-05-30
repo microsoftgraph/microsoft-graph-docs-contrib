@@ -17,7 +17,7 @@ import (
 
 requestBody := graphmodels.NewVirtualEventRegistration()
 externalRegistrationInformation := graphmodels.NewVirtualEventExternalRegistrationInformation()
-referrer := "Facebook"
+referrer := "Fabrikam"
 externalRegistrationInformation.SetReferrer(&referrer) 
 registrationId := "myExternalRegistrationId"
 externalRegistrationInformation.SetRegistrationId(&registrationId) 

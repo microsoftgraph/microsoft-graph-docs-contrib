@@ -60,6 +60,9 @@ Namespace: microsoft.graph.security
 |generativeAi|
 |unknown|
 |unknownFutureValue|
+|aiModelProvider|
+|mcpServer|
+|clientAiApp|
 
 ### appInfoCsaStarLevel values 
 
@@ -1023,6 +1026,35 @@ Namespace: microsoft.graph.security
 |downloadText|
 |downloadFile|
 |unknownFutureValue|
+
+### labelActionSource values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+|none|
+|unknownFutureValue|
+
+### sensitivityLabelTarget values
+
+|Member|
+|:---|
+|email|
+|site|
+|unifiedGroup|
+|teamwork|
+|unknownFutureValue|
+
+### applicationMode values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+
 
 <!--
 {

@@ -422,12 +422,6 @@
       ]
     },
     {
-      "name": "Data Security and Governance (preview)",
-      "resources": [
-        "userDataSecurityAndGoverance"
-      ]
-    },
-    {
       "name": "Device and app management",
       "childNodes": [
         {
@@ -2236,6 +2230,8 @@
         "namePronunciationSettings",
         "enhancedPersonalizationSetting",
         "profile",
+        "profileSource",
+        "profilePropertySetting",
         "userAnalytics"
       ],
       "childNodes": [
@@ -2247,12 +2243,14 @@
         },
         {
           "name": "People admin settings",
+          [
           "resources": [
-            "pronounsSettings",
-            "profileCardProperty",
+            "namePronunciationSettings",
             "photoUpdateSettings",
-            "namePronunciationSettings"
-
+            "profileCardProperty",
+            "profilePropertySetting",
+            "profileSource",
+            "pronounsSettings"
           ]
         },
         {
@@ -2602,29 +2600,30 @@
         {
           "name": "Data security and compliance (preview)",
           "resources": [
-            "security",
-            "activitiesContainer",
             "contentActivity",
-            "dataSecurityAndGovernance",
+            "microsoft.graph.security.sensitivityLabel",
             "tenantDataSecurityAndGovernance",
-            "tenantProtectionScopeContainer",
-            "userDataSecurityAndGovernance",
-            "userProtectionScopeContainer",
+            "userDataSecurityAndGovernance"
            ],
             "complexTypes": [
               "activityMetadata",
               "aiInteractionPlugin",
+              "autoLabeling",
               "binaryContent",
               "blockAccessAction",
               "classifcationErrorBase",
               "classificationError",
               "classificationInnerError",
+              "computeRightsAndInheritanceResult",
               "contentBase",
               "customMetadataDictionary",
               "deviceMetadata",
               "dlpActionInfo",
               "groupScope",
               "integratedApplicationMetadata",
+              "labelActionBase",
+              "labelContentRight",
+              "labelPolicy",
               "notifyUserAction",
               "operatingSystemSpecifications",
               "policyBinding",
@@ -2636,7 +2635,6 @@
               "policyTenantScope",
               "policyUserScope",
               "processContentBatchRequest",
-              "processConversationMetadata",
               "processContentRequest",
               "processContentResponse",
               "processContentResponses",
@@ -2644,6 +2642,7 @@
               "processFileMetadata",
               "processingError",
               "protectedApplicationMetadata",
+              "protectedContent",
               "scopeBase",
               "tenantScope",
               "textContent",
@@ -3255,6 +3254,7 @@
             "openShift",
             "openShiftChangeRequest",
             "schedule",
+            "scheduleChangeRequest",
             "schedulingGroup",
             "shift",
             "shiftPreferences",
