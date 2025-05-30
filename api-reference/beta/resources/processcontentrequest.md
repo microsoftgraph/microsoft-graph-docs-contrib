@@ -54,7 +54,7 @@ The following JSON representation shows the resource type.
   },
   "integratedAppMetadata": {
     "@odata.type": "microsoft.graph.integratedApplicationMetadata"
-  }
+  },
   "protectedAppMetadata": {
     "@odata.type": "microsoft.graph.protectedApplicationMetadata"
   }
