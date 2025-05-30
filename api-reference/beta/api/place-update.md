@@ -10,17 +10,11 @@ ms.date: 05/29/2025
 
 # Update place
 
-**Revisit this article after Word doc draft is complete**
-**Revisit this article after Word doc draft is complete**
-**Revisit this article after Word doc draft is complete**
-**Revisit this article after Word doc draft is complete**
-**Revisit this article after Word doc draft is complete**
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [place](../resources/place.md) object. A **place** can represent a desk, workspace, room, section, floor or building.
+Update the properties of a [place](../resources/place.md) object. A **place** can represent a desk, workspace, room, section, floor, or building.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
