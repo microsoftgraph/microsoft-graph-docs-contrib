@@ -19,9 +19,7 @@ A dictionary of name-value pairs. Names must be valid property names, values may
 This resource is an open type.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|None|None|None|
+None.
 
 ## Relationships
 None.
