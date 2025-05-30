@@ -26,6 +26,14 @@ items:
       href: ../../resources/engagementasyncoperation.md
     - name: Get
       href: ../../api/engagementasyncoperation-get.md
+  - name: Engagement conversation
+    items:
+    - name: Engagement conversation
+      href: ../../resources/engagementconversation.md
+    - name: Engagement conversation message
+      href: ../../resources/engagementconversationmessage.md
+    - name: Engagement conversation message reaction
+      href: ../../resources/engagementconversationmessagereaction.md
   - name: Engagement role
     items:
     - name: Engagement role
