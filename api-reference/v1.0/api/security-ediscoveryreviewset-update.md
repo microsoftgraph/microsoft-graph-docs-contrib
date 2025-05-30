@@ -50,7 +50,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoverycaseId}/reviewSets/{reviewSetId
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The description of the review set. Optional.|
-|displayName|String|The name of the review set. Optional.|
+|displayName|String|The name of the review set. The name is unique with a maximum limit of 64 characters. Optional.|
 
 ## Response
 
@@ -68,7 +68,8 @@ The following example shows a request that updates the review set name to `revie
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/security/cases/{caseId}/reviewSets/{reviewSetId}
+PATCH https://graph.microsoft.com/v1.0/security/cases/ff8b82a4-071c-43c7-b0f4-a2708a8736c0/reviewSets/a5658335-7242-4550-ad22-e57b443f7442
+ 
 Content-Type: application/json
 
 {
