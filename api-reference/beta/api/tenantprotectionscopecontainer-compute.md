@@ -74,7 +74,7 @@ Content-type: application/json
     "locations": [
         {
             "@odata.type": "microsoft.graph.policyLocationApplication",
-            "value": "be1210c8f-ecd8-4026-b699-669e0ce1bcbf"
+            "value": "be121c8f-ecd8-4026-b699-669e0ce1bcbf"
         }
     ]
 }
@@ -107,7 +107,7 @@ Content-type: application/json
             },
             "locations": [
                 {
-                    "value": "be1210c8f-ecd8-4026-b699-669e0ce1bcbf"
+                    "value": "be121c8f-ecd8-4026-b699-669e0ce1bcbf"
                 }
             ],
             "policyActions": [
