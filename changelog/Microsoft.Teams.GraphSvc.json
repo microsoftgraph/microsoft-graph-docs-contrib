@@ -2797,6 +2797,40 @@
     {
       "ChangeList": [
         {
+          "Id": "1f838f5e-1e2f-4367-bd65-9943326f00aa",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "teamworkInteractionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamworkInteractionType** enumeration type.",
+          "Target": "teamworkInteractionType"
+        },
+        {
+          "Id": "1f838f5e-1e2f-4367-bd65-9943326f00aa",
+          "ApiChange": "Property",
+          "ChangedApiName": "userPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPrincipalName** property to the [teamworkUserIdentity](https://learn.microsoft.com/en-us/graph/api/resources/teamworkUserIdentity?view=graph-rest-beta) resource.",
+          "Target": "teamworkUserIdentity"
+        },
+        {
+          "Id": "1f838f5e-1e2f-4367-bd65-9943326f00aa",
+          "ApiChange": "Method",
+          "ChangedApiName": "determineIfInteractionIsAllowed",
+          "ChangeType": "Addition",
+          "Description": "Added the [determineIfInteractionIsAllowed](https://learn.microsoft.com/en-us/graph/api/teamwork-determineIfInteractionIsAllowed?view=graph-rest-beta) method to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Target": "teamwork"
+        }
+      ],
+      "Id": "1f838f5e-1e2f-4367-bd65-9943326f00aa",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-29T16:18:02.9126831Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
           "ApiChange": "Enumeration",
           "ChangedApiName": "aiInteractionType",
