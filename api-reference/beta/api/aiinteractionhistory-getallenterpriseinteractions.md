@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Get all Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. This API captures the user intent, the resources accessed by Copilot, and the response to the user for Microsoft 365 apps such as Teams, Word, and Outlook.
 
+To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
