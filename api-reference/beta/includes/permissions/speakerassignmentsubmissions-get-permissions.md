@@ -7,4 +7,4 @@ ms.localizationpriority: medium
 | :-------------------------------------| :------------------------------------------| :-----------------|
 | Delegated (work or school account)     | N/A  | Not Supported.     |
 | Delegated (personal Microsoft account) | N/A  | Not supported.     |
-| Application                            | 	EduReports-Reflect.Read.All, EduReports-Reflect.ReadAnonymous.All | beta|
+| Application                            | 	EduReports-Reading.Read.All, EduReports-Reading.ReadAnonymous.All | beta|
