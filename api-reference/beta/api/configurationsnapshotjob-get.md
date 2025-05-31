@@ -39,8 +39,7 @@ GET /admin/configurationManagement/configurationSnapshotJobs('{configurationSnap
 
 ## Optional query parameters
 
-This method supports the $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -58,9 +57,7 @@ If successful, this method returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Example 1: Retrieve the properties of a configurationSnapshotJob object
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -72,7 +69,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs('c91a1470-acc9-4585-bc03-522ae898f82f')
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -87,26 +84,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationSnapshotJobs/$entity",
-    "@microsoft.graph.tips": "This request only returns a subset of the resource's properties. Your app will need to use $select to return non-default properties. To find out what other properties are available for this resource see https://learn.microsoft.com/graph/api/resources/configurationSnapshotJob",
-    "id": "c91a1470-acc9-4585-bc03-522ae898f82f",
-    "displayName": "Snapshot Demo",
-    "description": "This is Snapshot Description",
-    "tenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843",
-    "status": "notStarted",
-    "resources": [
-        "microsoft.exchange.sharedmailbox",
-        "microsoft.exchange.transportrule"
-    ],
-    "createdDateTime": "2025-02-18T15:43:59.7935268Z",
-    "completedDateTime": "0001-01-01T00:00:00Z",
-    "resourceLocation": "",
-    "createdBy": {
-        "user": {
-            "id": "98ceffcc-7c54-4227-8844-835af5a023ce",
-            "displayName": "AdminXTA SDFTestOrg627621"
-        }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationSnapshotJobs/$entity",
+  "@microsoft.graph.tips": "This request only returns a subset of the resource's properties. Your app will need to use $select to return non-default properties. To find out what other properties are available for this resource see https://learn.microsoft.com/graph/api/resources/configurationSnapshotJob",
+  "id": "c91a1470-acc9-4585-bc03-522ae898f82f",
+  "displayName": "Snapshot Demo",
+  "description": "This is Snapshot Description",
+  "tenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843",
+  "status": "notStarted",
+  "resources": [
+    "microsoft.exchange.sharedmailbox",
+    "microsoft.exchange.transportrule"
+  ],
+  "createdDateTime": "2025-02-18T15:43:59.7935268Z",
+  "completedDateTime": "0001-01-01T00:00:00Z",
+  "resourceLocation": "",
+  "createdBy": {
+    "user": {
+      "id": "98ceffcc-7c54-4227-8844-835af5a023ce",
+      "displayName": "AdminXTA SDFTestOrg627621"
     }
+  }
 }
-
 ```
