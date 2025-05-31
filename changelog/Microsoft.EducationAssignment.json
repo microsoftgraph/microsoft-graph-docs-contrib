@@ -198,7 +198,7 @@
       ],
       "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
       "Cloud": "Prod",
-      "Version": "v1.0",
+      "Version": "1.0",
       "CreatedDateTime": "2025-04-14T18:32:24.5964486Z",
       "WorkloadArea": "Education",
       "SubArea": ""
