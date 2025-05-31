@@ -48,8 +48,6 @@ PATCH /admin/configurationManagement/configurationApplications('{configurationAp
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-You can specify the following properties when you update a **configurationApplication** object.
-
 |Property|Type|Description|
 |:---|:---|:---|
 |clientCredentials|[clientCredentials](../resources/clientcredentials.md)| Includes the **keyVaultURI** and **certificateName** properties that the user must have obtained during the creation of the key vault. Required.|
