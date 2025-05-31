@@ -1,6 +1,6 @@
 ---
 title: "clientCredentials resource type"
-description: "clientCredentials are one of the pre-requisites for the admins to call the UTCM Application Onboarding API. The clientCredentials will include keyVault and certificateName that have been generated during Key Vault creation.**"
+description: "Represents the information and properties of a clientCredentials object that is one of the prerequisites for administrators to call the UTCM application onboarding API."
 author: "swatya"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-clientCredentials are one of the pre-requisites for the admins to call the UTCM Application Onboarding API. The clientCredentials will include keyVault and certificateName that have been generated during Key Vault creation.
+Represents the information and properties of a [clientCredentials](../resources/clientcredentials.md) object that is one of the prerequisites for administrators to call the UTCM application onboarding API. The **clientCredentials** includes the key-vault URI and certificate name that are generated during the creation of the Azure Key Vault.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|certificateName|String|Name of the certificate that is uploaded by the admin in Azure Key Vault|
-|keyVaultUri|String|The Key Vault URI generated during Azure Key Vault creation|
+|certificateName|String|Name of the certificate that is uploaded by the admin in the Azure Key Vault.|
+|keyVaultUri|String|The key-vault URI generated during the creation of the Azure Key Vault.|
 
 ## Relationships
 None.
@@ -35,8 +35,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.clientCredentials",
-  "keyVaultUri": "String",
-  "certificateName": "String"
+  "certificateName": "String",
+  "keyVaultUri": "String"
 }
 ```
 
