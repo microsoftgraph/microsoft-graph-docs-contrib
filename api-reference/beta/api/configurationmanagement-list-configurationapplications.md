@@ -1,5 +1,5 @@
 ---
-title: "List configurationApplication objects"
+title: "List configurationApplications"
 description: "Get a list of the configurationApplication objects and their properties."
 author: "swatyario"
 ms.date: 04/10/2025
@@ -8,7 +8,7 @@ ms.subservice: "tenant-administration"
 doc_type: apiPageType
 ---
 
-# List configurationApplication objects
+# List configurationApplications
 
 Namespace: microsoft.graph
 
@@ -39,7 +39,7 @@ GET /admin/configurationManagement/configurationApplications
 
 ## Optional query parameters
 
-This method supports the $filter, $select, $orderBy, and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$select`, `$orderBy`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,9 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get the list of configurationApplications
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -71,7 +69,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
