@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationMonitors('{monitorId}')/baseline
+GET /admin/configurationManagement/configurationMonitors('{configurationMonitorId}')/baseline
 ```
 
 ## Optional query parameters
