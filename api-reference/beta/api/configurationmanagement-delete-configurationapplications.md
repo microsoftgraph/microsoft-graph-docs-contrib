@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [configurationApplication](../resources/configurationapplication.md) object.
+Delete a [configurationApplication](../resources/configurationapplication.md) object.
 
 ## Permissions
 
@@ -53,9 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Deletes a configurationApplication object
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -67,8 +65,7 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications('f6db8379-6071-6f8a-e313-a97b31f4f6b5')
 ```
 
-
-#### Response
+### Response
 
 The following example shows the response.
 <!-- {
@@ -79,4 +76,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-
