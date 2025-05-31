@@ -1,6 +1,6 @@
 ---
 title: "baselineParameter resource type"
-description: "Parameters in configurationBaseline can help admins create one baseline object that can then be used for monitoring multiple tenants."
+description: "Represents the information and properties of a baselineParameter object."
 author: "swatya"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -14,15 +14,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Parameterization is the concept of abstracting out values that are specific to a given tenant into parameters that will be provided at the time of tenant monitoring. Parameters in configurationBaseline can help admins create one baseline object that can then be used for monitoring multiple tenants. Users will be responsible for the parameterization of their configurationBaselines if they wish to use the baseline on multiple tenants. Users are also responsible for defining parameters on their own. Users can define multiple parameters in a configurationBaseline. If baselineParameters are not used in the configurationbaseline, those parameters won't be considered valid and users should avoid defining configurationBaseline with parameters that are not being used.
+Represents the information and properties of a [baselineParameter](../resources/baselineparameter.md) object. 
 
+Parameterization is the practice of abstracting tenant-specific values into parameters that are provided during tenant monitoring. Using parameters in a [configurationBaseline](../resources/configurationbaseline.md) allows administrators to create one baseline object that can be used to monitor multiple tenants. 
+
+Users are responsible for parameterizing their **configurationBaseline** objects if they want to use the baseline on multiple tenants. They must also define the necessary parameters themselves. Multiple parameters can be defined in a **configurationBaseline**. However, if baseline parameters aren't used within the **configurationBaseline**, those parameters are considered invalid, and users should avoid defining unused parameters.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|User friendly description of the parameter|
-|displayName|String|Parameter names like FQDN, Tenant ID etc.|
-|parameterType|baselineParameterType|The type of baselineParameters.The possible values are: `string`, `integer`, `boolean` etc.|
+|description|String|User friendly description of the parameter.|
+|displayName|String|Parameter names such as `FQDN` and `Tenant ID`.|
+|parameterType|baselineParameterType|The type of the **baselineParameter**. The possible values are: `string`, `integer`, `boolean`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -37,8 +40,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.baselineParameter",
-  "displayName": "String",
   "description": "String",
+  "displayName": "String",
   "parameterType": "String"
 }
 ```
