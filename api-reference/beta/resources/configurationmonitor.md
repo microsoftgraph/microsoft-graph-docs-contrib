@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information and properties of a [configurationMonitor](../resources/configurationmonitor.md) object. This resource allows admins to create and manage monitors for tenant monitoring or drift monitoring across all workloads supported by unified-tenant configuration management, enabling them to periodically detect any deviations from the desired configuration state settings.
+Represents the information and properties of a [configurationMonitor](../resources/configurationmonitor.md) object. This resource allows administrators to create and manage monitors for tenant or drift monitoring across all workloads supported by unified-tenant configuration management, enabling periodic detection of deviations from the desired configuration state.
 
 Inherits from [entity](../resources/entity.md)
 
@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md)
 |[Create](../api/configurationmanagement-post-configurationmonitors.md)|[configurationMonitor](../resources/configurationmonitor.md)|Create a new configurationMonitor object.|
 |[Get](../api/configurationmonitor-get.md)|[configurationMonitor](../resources/configurationmonitor.md)|Get a particular configurationMonitor object.|
 |[Update](../api/configurationmonitor-update.md)|[configurationMonitor](../resources/configurationmonitor.md)|Update the properties like monitorName, description, or baseline of a configurationMonitor object.|
-|[Delete](../api/configurationmanagement-delete-configurationmonitors.md)|None|Delete a configurationMonitor object.|
+|[Delete](../api/configurationmonitor-delete.md)|None|Delete a configurationMonitor object.|
 |[Get configuration baseline](../api/configurationbaseline-get.md)|[configurationBaseline](../resources/configurationbaseline.md) collection|Get baseline of a configurationMonitor object.|
 
 ## Properties
