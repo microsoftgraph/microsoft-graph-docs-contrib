@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationDrifts('{configurationDriftId'})
+GET /admin/configurationManagement/configurationDrifts('{configurationDriftId}')
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationDrifts('4e808e99-7f60-4194-8294-02ede71effd8)
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationDrifts('4e808e99-7f60-4194-8294-02ede71effd8')
 ```
 
 ### Response
