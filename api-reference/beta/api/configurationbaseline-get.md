@@ -1,6 +1,6 @@
 ---
 title: "Get configurationBaseline"
-description: "Read the properties and relationships of a configurationBaseline object."
+description: "Read the properties and relationships of a configurationBaseline object that is attached to a specific monitor."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [configurationBaseline](../resources/configurationbaseline.md) object.
+Read the properties and relationships of a [configurationBaseline](../resources/configurationbaseline.md) object that is attached to a specific monitor.
 
 ## Permissions
 
