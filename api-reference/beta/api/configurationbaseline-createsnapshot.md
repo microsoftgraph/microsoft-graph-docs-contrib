@@ -1,6 +1,6 @@
 ---
 title: "configurationBaseline: createSnapshot"
-description: "It allows an admin to create a snapshot asynchronously."
+description: "Create a configurationSnapshotJob asynchronously."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-It allows an admin to create a snapshot asynchronously and will allow an admin to initiate the process of extraction of current tenant configuration. If the snapshot job is successfully created/triggered, it means that the async extraction process has been intiated.
+Create a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) asynchronously. This API allows an admin to asynchronously create a snapshot and initiate the extraction of the current tenant configuration. If the snapshot job is successfully created, it indicates that the asynchronous extraction process is initiated.
 
 ## Permissions
 
@@ -52,11 +52,9 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|displayName|String|User friendly name given by the user while triggering a snapshot. Required.|
 |description|String|User friendly description of the snapshot given by the user. Optional.|
-|resources|String collection|Names of the resources that the admin wants to trigger a snapshot of. Required.|
-
-
+|displayName|String|User friendly name given by the user during the creation of the snapshot. Required.|
+|resources|String collection|Names of the resources for which the admin wants to create a snapshot. Required.|
 
 ## Response
 
@@ -64,11 +62,9 @@ If successful, this action returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Example 1: Create a snapshot with 2 Exchange resources
+### Request
 
-#### Request
-
-The following example shows a request.
+The following example shows a request that creates a snapshot with two Exchange resources.
 <!-- {
   "blockType": "request",
   "name": "configurationbaselinethis.createsnapshot"
@@ -79,15 +75,13 @@ POST https://graph.microsoft.com/beta/admin/configurationManagement/configuratio
 Content-Type: application/json
 
 {
-    "displayName": "Snapshot Demo",
-    "description": "This is Snapshot Description",
-    "resources":
-    [
-      "microsoft.exchange.sharedmailbox",
-      "microsoft.exchange.transportrule"
-    ]
+  "displayName": "Snapshot Demo",
+  "description": "This is Snapshot Description",
+  "resources": [
+    "microsoft.exchange.sharedmailbox",
+    "microsoft.exchange.transportrule"
+  ]
 }
-
 ```
 
 ### Response
@@ -105,25 +99,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.configurationSnapshotJob",
-    "id": "c91a1470-acc9-4585-bc03-522ae898f82f",
-    "displayName": "Snapshot Demo",
-    "description": "This is Snapshot Description",
-    "tenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843",
-    "status": "notStarted",
-    "resources": [
-        "microsoft.exchange.sharedmailbox",
-        "microsoft.exchange.transportrule"
-    ],
-    "createdDateTime": "2025-02-18T15:43:59.7935268Z",
-    "completedDateTime": "0001-01-01T00:00:00Z",
-    "resourceLocation": "",
-    "createdBy": {
-        "user": {
-            "id": "98ceffcc-7c54-4227-8844-835af5a023ce",
-            "displayName": "Test Contoso User"
-        }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.configurationSnapshotJob",
+  "id": "c91a1470-acc9-4585-bc03-522ae898f82f",
+  "displayName": "Snapshot Demo",
+  "description": "This is a snapshot description.",
+  "tenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843",
+  "status": "notStarted",
+  "resources": [
+    "microsoft.exchange.sharedmailbox",
+    "microsoft.exchange.transportrule"
+  ],
+  "createdDateTime": "2025-02-18T15:43:59.7935268Z",
+  "completedDateTime": "0001-01-01T00:00:00Z",
+  "resourceLocation": "",
+  "createdBy": {
+    "user": {
+      "id": "98ceffcc-7c54-4227-8844-835af5a023ce",
+      "displayName": "Test Contoso User"
     }
+  }
 }
-
 ```
