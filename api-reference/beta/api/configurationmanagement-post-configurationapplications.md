@@ -48,14 +48,14 @@ POST /admin/configurationManagement/configurationApplications
 
 In the request body, supply a JSON representation of the [configurationApplication](../resources/configurationapplication.md) object.
 
-You can specify the following properties when creating a configurationApplication.
+You can specify the following properties when you create a configurationApplication.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|The app ID is the app ID of the application created in Azure portal. Required.|
-|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| clientCredentials will include keyVaultURI & certificateName that the user must have obtained while creating a Key Vault. Required.|
-|displayName|String|User friendly name given by the user while creating a configurationApplication. Required.|
-|description|String|User friendly description of the configurationApplication. Optional.|
+|appId|String|The app ID of the application created in the Azure portal. Required.|
+|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| Includes the **keyVaultURI** and **certificateName** properties that the user must have obtained during the creation of the key vault. Required.|
+|description|String|User friendly description of the **configurationApplication**. Optional.|
+|displayName|String|User friendly name given by the user during the creation the **configurationApplication**. Required.|
 
 ## Response
 
@@ -63,9 +63,7 @@ If successful, this method returns a `201 Created` response code and a [configur
 
 ## Examples
 
-### Example 1: Create a configurationApplication with given parameters
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -82,12 +80,13 @@ Content-Type: application/json
   "displayName": "Contoso Test App",
   "description": "Contoso Test App description",
   "clientCredentials": {
-     "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
-     "certificateName": "Contoso Test Cert"
-  },
+    "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
+    "certificateName": "Contoso Test Cert"
+  }
 }
 ```
-#### Response
+
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -108,8 +107,8 @@ Content-Type: application/json
   "displayName": "Contoso Test App",
   "description": "Contoso Test App description",
   "clientCredentials": {
-     "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
-     "certificateName": "Contoso Test Cert"
+    "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
+    "certificateName": "Contoso Test Cert"
   }
 }
 ```
