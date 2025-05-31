@@ -1,7 +1,7 @@
 ---
 title: "aiUser resource type"
 description: "Represents an AI user or agent."
-ms.date: 11/15/2024
+ms.date: 5/4/2025
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "bkeerthivasa"
@@ -12,8 +12,6 @@ toc.title: "AI user"
 # aiUser resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an AI user or agent. 
 
@@ -29,7 +27,6 @@ None.
 | Relationship | Type | Description |
 |:-------------|:-----|:------------|
 | interactionHistory  | [aiInteractionHistory](../resources/aiinteractionhistory.md) | The history of interactions between AI agents and users. |
-| onlineMeetings | [aiOnlineMeeting](../resources/aionlinemeeting.md) collection | Information about an online meeting, including AI insights. |
 
 ## JSON representation
 

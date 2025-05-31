@@ -267,7 +267,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deletedChat",
           "ChangeType": "Addition",
-          "Description": "Added the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-v1.0) resource and its methods",
+          "Description": "Added the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-1.0) resource and its methods",
           "Target": "deletedChat"
         },
         {
@@ -275,7 +275,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "deletedChats",
           "ChangeType": "Addition",
-          "Description": "Added the **deletedChats** navigation property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **deletedChats** navigation property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-1.0) resource.",
           "Target": "teamwork"
         },
         {
@@ -283,7 +283,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "undoDelete",
           "ChangeType": "Addition",
-          "Description": "Added the [undoDelete](https://learn.microsoft.com/en-us/graph/api/deletedchat-undodelete?view=graph-rest-v1.0) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [undoDelete](https://learn.microsoft.com/en-us/graph/api/deletedchat-undodelete?view=graph-rest-1.0) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-1.0) resource.",
           "Target": "deletedChat"
         },
         {
@@ -291,7 +291,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delete",
           "ChangeType": "Addition",
-          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/chat-delete?view=graph-rest-v1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/chat-delete?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         },
         {
@@ -299,7 +299,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "get",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/deletedchat-get?view=graph-rest-v1.0) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/deletedchat-get?view=graph-rest-1.0) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-1.0) resource.",
           "Target": "deletedChat"
         }
       ],
@@ -2129,7 +2129,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/userteamwork-get?view=graph-rest-v1.0) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/userteamwork-get?view=graph-rest-1.0) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-1.0) resource.",
           "Target": "userTeamwork"
         },
         {
@@ -2137,7 +2137,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/teamwork-get?view=graph-rest-v1.0) operation to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/teamwork-get?view=graph-rest-1.0) operation to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-1.0) resource.",
           "Target": "teamwork"
         },
         {
@@ -2145,7 +2145,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [getTeamsLicensingDetails](https://learn.microsoft.com/en-us/graph/api/licenseDetails-getteamslicensingdetails?view=graph-rest-v1.0) operation to the [licensedetails](https://learn.microsoft.com/en-us/graph/api/resources/licensedetails?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [getTeamsLicensingDetails](https://learn.microsoft.com/en-us/graph/api/licenseDetails-getteamslicensingdetails?view=graph-rest-1.0) operation to the [licensedetails](https://learn.microsoft.com/en-us/graph/api/resources/licensedetails?view=graph-rest-1.0) resource.",
           "Target": "licensedetails"
         },
         {
@@ -2153,7 +2153,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamslicensingdetails",
           "ChangeType": "Addition",
-          "Description": "Added the [teamslicensingdetails](https://learn.microsoft.com/en-us/graph/api/resources/teamslicensingdetails?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [teamslicensingdetails](https://learn.microsoft.com/en-us/graph/api/resources/teamslicensingdetails?view=graph-rest-1.0) resource.",
           "Target": "teamslicensingdetails"
         },
         {
@@ -2161,7 +2161,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isTeamsEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isTeamsEnabled** property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **isTeamsEnabled** property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-1.0) resource.",
           "Target": "teamwork"
         },
         {
@@ -2169,7 +2169,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "region",
           "ChangeType": "Addition",
-          "Description": "Added the **region** property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **region** property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-1.0) resource.",
           "Target": "teamwork"
         },
         {
@@ -2177,7 +2177,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "locale",
           "ChangeType": "Addition",
-          "Description": "Added the **locale** property to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **locale** property to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-1.0) resource.",
           "Target": "userTeamwork"
         },
         {
@@ -2185,7 +2185,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "locale",
           "ChangeType": "Addition",
-          "Description": "Added the **region** property to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-v1.0 resource.",
+          "Description": "Added the **region** property to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-1.0 resource.",
           "Target": "userTeamwork"
         }
       ],
@@ -2751,7 +2751,7 @@
       "CreatedDateTime": "2025-04-14T08:54:28.4245939Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
-    }, 
+    },
     {
       "ChangeList": [
         {
@@ -2827,6 +2827,112 @@
       "CreatedDateTime": "2025-04-29T16:18:02.9126831Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "aiInteractionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **aiInteractionType** enumeration type.",
+          "Target": "aiInteractionType"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionAttachment](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionAttachment?view=graph-rest-1.0) resource type.",
+          "Target": "aiInteractionAttachment"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionContext",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionContext](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionContext?view=graph-rest-1.0) resource type.",
+          "Target": "aiInteractionContext"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionLink](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionLink?view=graph-rest-1.0) resource type.",
+          "Target": "aiInteractionLink"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionMention",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionMention](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionMention?view=graph-rest-1.0) resource type.",
+          "Target": "aiInteractionMention"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionMentionedIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionMentionedIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionMentionedIdentitySet?view=graph-rest-1.0) resource type.",
+          "Target": "aiInteractionMentionedIdentitySet"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteraction",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiInteraction?view=graph-rest-1.0) resource type.",
+          "Target": "aiInteraction"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-1.0) resource type.",
+          "Target": "aiInteractionHistory"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiUser](https://learn.microsoft.com/en-us/graph/api/resources/aiUser?view=graph-rest-1.0) resource type.",
+          "Target": "aiUser"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Resource",
+          "ChangedApiName": "copilotRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [copilotRoot](https://learn.microsoft.com/en-us/graph/api/resources/copilotRoot?view=graph-rest-1.0) resource type.",
+          "Target": "copilotRoot"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllEnterpriseInteractions",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-1.0) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-1.0) resource.",
+          "Target": "aiInteractionHistory"
+        },
+        {
+          "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+          "ApiChange": "Singleton",
+          "ChangedApiName": "copilot",
+          "ChangeType": "Addition",
+          "Description": "Added the **copilot** singleton.",
+          "Target": "TeamsGraphSvc"
+        }
+      ],
+      "Id": "81661ab5-e7f6-4373-86c4-6937d81dd484",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-04-25T07:19:22.6793915Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "AI interactions"
     }
   ]
 }
