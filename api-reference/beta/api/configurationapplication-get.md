@@ -39,7 +39,7 @@ GET /admin/configurationManagement/configurationApplications('{configurationAppl
 
 ## Optional query parameters
 
-This method supports the $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,9 +57,7 @@ If successful, this method returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Example 1: Retrieve the properties of a configurationApplication object
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -71,8 +69,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications('f6db8379-6071-6f8a-e313-a97b31f4f6b5')
 ```
 
-
-#### Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
