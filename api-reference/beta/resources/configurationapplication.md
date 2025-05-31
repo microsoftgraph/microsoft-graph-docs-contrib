@@ -1,6 +1,6 @@
 ---
 title: "configurationApplication resource type"
-description: "The configurationApplication is meant to ensures that UTCM gets to read and download application Certificate from the Customer Key Vault which will help UTCM during the background job flow to get access token for the service principal."
+description: "Represents the information and properties of a configurationApplication object. "
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -14,29 +14,30 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The configurationApplication is meant to ensures that UTCM gets to read and download application Certificate from the Customer Key Vault which will help UTCM during the background job flow to get access token for the service principal. The configurationApplicaton will help UTCM to:
-1.	Read certificate using Key Vault URI and Certificate name
-2.	Use that Certificate to get token from MS Entra for Exchange and other workload scopes depending on the resources the admin want to setup monitor on or take snapshot of.
-3.	Ensure that the Certificate from Key Vault is associated with the right application in Azure.
+Represents the information and properties of a [configurationApplication](../resources/configurationapplication.md) object. The **configurationApplication** resource ensures that unified-tenant configuration management (UTCM) can read and download the application certificate from the customer key vault that helps UTCM during the background job flow to get an access token for the service principal. The **configurationApplication** helps UTCM to:
+
+* Read the certificate using the key-vault URI and certificate name.
+* Use that certificate to get a token from Microsoft Entra for Exchange and other workload scopes, depending on the resources the admin wants to monitor or take a snapshot.
+* Ensure that the certificate from the key vault is associated with the correct application in Azure.
 
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/configurationmanagement-list-configurationapplications.md)|[configurationApplication](../resources/configurationapplication.md) collection|Get a list of the configurationApplication objects and their properties.|
-|[Create](../api/configurationmanagement-post-configurationapplications.md)|[configurationApplication](../resources/configurationapplication.md)|Create a new configurationApplication object.|
-|[Get](../api/configurationapplication-get.md)|[configurationApplication](../resources/configurationapplication.md)|Read the properties and relationships of a configurationApplication object.|
-|[Update](../api/configurationapplication-update.md)|[configurationApplication](../resources/configurationapplication.md)|Update the properties of a configurationApplication object.|
-|[Delete](../api/configurationmanagement-delete-configurationapplications.md)|None|Delete a configurationApplication object.|
+|[List](../api/configurationmanagement-list-configurationapplications.md)|[configurationApplication](../resources/configurationapplication.md) collection|Get a list of the [configurationApplication](../resources/configurationapplication.md) objects and their properties.|
+|[Create](../api/configurationmanagement-post-configurationapplications.md)|[configurationApplication](../resources/configurationapplication.md)|Create a new [configurationApplication](../resources/configurationapplication.md) object.|
+|[Get](../api/configurationapplication-get.md)|[configurationApplication](../resources/configurationapplication.md)|Read the properties and relationships of a [configurationApplication](../resources/configurationapplication.md) object.|
+|[Update](../api/configurationapplication-update.md)|[configurationApplication](../resources/configurationapplication.md)|Update the properties of a [configurationApplication](../resources/configurationapplication.md) object.|
+|[Delete](../api/configurationapplication-delete.md)|None|Delete a [configurationApplication](../resources/configurationapplication.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|The app ID is the app ID of the application created in Azure portal Required.|
-|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| clientCredentials will include keyVaultURI & certificateName that the user must have obtained while creating a Key Vault. Required.|
-|displayName|String|User friendly name given by the user while creating a configurationApplication. Required.|
-|description|String|User friendly description of the configurationApplication. Optional.|
+|appId|String|The app ID of the application created in the Azure portal.|
+|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| Includes the **keyVaultURI** and **certificateName** properties that the user must have obtained during the creation of the key vault.|
+|description|String|User friendly description of the **configurationApplication**.|
+|displayName|String|User friendly name given by the user during the creation the **configurationApplication**.|
 
 ## Relationships
 None.
@@ -53,14 +54,11 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationApplication",
-  "id": "String (identifier)",
-  "tenantId": "String",
   "appId": "String",
-  "displayName": "String",
+  "clientCredentials": {"@odata.type": "microsoft.graph.clientCredentials"},
   "description": "String",
-  "clientCredentials": {
-    "@odata.type": "microsoft.graph.clientCredentials"
-    },
+  "displayName": "String",
+  "id": "String (identifier)",
+  "tenantId": "String"
 }
 ```
-
