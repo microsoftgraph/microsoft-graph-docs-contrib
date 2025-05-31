@@ -39,7 +39,7 @@ GET /admin/configurationManagement/configurationMonitors('{monitorId}')/baseline
 
 ## Optional query parameters
 
-This method supports the $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,9 +57,7 @@ If successful, this method returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Example 1: Retrieve the baseline of a configurationMonitor object
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -68,10 +66,10 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationMonitors('b86049ce-0180-404e-803a-5616d49290d7')/baseline
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors('b86049ce-0180-404e-803a-5616d49290d7')/baseline
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -86,48 +84,47 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationMonitors('f1b46220-74af-4347-9ac7-89fe17d57bd7')/baseline/$entity",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET admin/configurationManagement/configurationMonitors('<guid>')/baseline?$select=description,displayName",
-    "id": "5b15be20-897f-4b79-85a6-97871c708f6f",
-    "displayName": "Demo Baseline",
-    "description": "This is a baseline with SharedMailbox, AcceptedDomain and MailContact",
-    "parameters": [],
-    "resources": [
-        {
-            "displayName": "TestSharedMailbox Resource",
-            "resourceType": "microsoft.exchange.sharedmailbox",
-            "properties": {
-                "DisplayName": "TestSharedMailbox",
-                "Alias": "testSharedMailbox",
-                "Identity": "TestSharedMailbox",
-                "Ensure": "Present",
-                "PrimarySmtpAddress": "testSharedMailbox@contoso.onmicrosoft.com",
-                "EmailAddresses": [
-                    "abc@contoso.onmicrosoft.com"
-                ]
-            }
-        },
-        {
-            "displayName": "Accepted Domain",
-            "resourceType": "microsoft.exchange.accepteddomain",
-            "properties": {
-                "Identity": "contoso.onmicrosoft.com",
-                "DomainType": "InternalRelay",
-                "Ensure": "Present"
-            }
-        },
-        {
-            "displayName": "Mail Contact Resource",
-            "resourceType": "microsoft.exchange.mailcontact",
-            "properties": {
-                "Name": "Chris",
-                "DisplayName": "Chris",
-                "ExternalEmailAddress": "SMTP:chris@ach.com",
-                "Alias": "Chrisa",
-                "Ensure": "Present"
-            }
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationMonitors('f1b46220-74af-4347-9ac7-89fe17d57bd7')/baseline/$entity",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET admin/configurationManagement/configurationMonitors('<guid>')/baseline?$select=description,displayName",
+  "id": "5b15be20-897f-4b79-85a6-97871c708f6f",
+  "displayName": "Demo Baseline",
+  "description": "This is a baseline with SharedMailbox, AcceptedDomain and MailContact",
+  "parameters": [],
+  "resources": [
+    {
+      "displayName": "TestSharedMailbox Resource",
+      "resourceType": "microsoft.exchange.sharedmailbox",
+      "properties": {
+        "DisplayName": "TestSharedMailbox",
+        "Alias": "testSharedMailbox",
+        "Identity": "TestSharedMailbox",
+        "Ensure": "Present",
+        "PrimarySmtpAddress": "testSharedMailbox@contoso.onmicrosoft.com",
+        "EmailAddresses": [
+          "abc@contoso.onmicrosoft.com"
+        ]
+      }
+    },
+    {
+      "displayName": "Accepted Domain",
+      "resourceType": "microsoft.exchange.accepteddomain",
+      "properties": {
+        "Identity": "contoso.onmicrosoft.com",
+        "DomainType": "InternalRelay",
+        "Ensure": "Present"
+      }
+    },
+    {
+      "displayName": "Mail Contact Resource",
+      "resourceType": "microsoft.exchange.mailcontact",
+      "properties": {
+        "Name": "Chris",
+        "DisplayName": "Chris",
+        "ExternalEmailAddress": "SMTP:chris@ach.com",
+        "Alias": "Chrisa",
+        "Ensure": "Present"
+      }
+    }
+  ]
 }
-
 ```
