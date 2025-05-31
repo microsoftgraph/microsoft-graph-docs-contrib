@@ -1,6 +1,6 @@
 ---
 title: "Get configurationMonitor"
-description: "Get/read the properties and relationships of a configurationMonitor object."
+description: "Get the properties and relationships of a configurationMonitor object."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -29,19 +29,21 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-You can get the details of any particular monitor by making the following call. Add the monitorId for which you want to get the details.
+To get the details of any particular monitor:
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationMonitors('{monitorId}')
+GET /admin/configurationManagement/configurationMonitors('{configurationMonitorId}')
 ```
+
+>**Note:** Replace `configurationMonitorId` with the monitor ID for which you want to get the details.
 
 ## Optional query parameters
 
-This method supports the $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -59,9 +61,7 @@ If successful, this method returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Example 1: Retrieve the properties of a configurationMonitor object
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -73,7 +73,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors('b166c9cb-db29-438b-95fb-247da1dc72c3')
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -96,24 +96,23 @@ Content-Type: application/json
     "status": "active",
     "monitorRunFrequencyInHours": 6,
     "mode": "monitorOnly",
-    "createdBy":{
+    "createdBy": {
       "user": {
-        "id":"823da47e-fc25-48d8-8b5a-6186c760f0df",
+        "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
         "displayName": "System Administrator"
       }
-    }
+    },
     "runningOnBehalfOf": {
       "user": {
-        "id":"823da47e-fc25-48d8-8b5a-6186c760f0df",
+        "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
         "displayName": "System Administrator"
       }
     },
     "createdDateTime": "2024-12-12T09:52:18.7982733Z",
     "lastModifiedDateTime": "2024-12-12T09:52:18.7982733Z",
-    "parameters":
-    {
-            "FQDN": "contoso.onmicrosoft.com",
-            "TenantId":"2fcf1c68-b412-4c85-bfb2-cb20152a6843"
+    "parameters": {
+      "FQDN": "contoso.onmicrosoft.com",
+      "TenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843"
     }
   }
 }
