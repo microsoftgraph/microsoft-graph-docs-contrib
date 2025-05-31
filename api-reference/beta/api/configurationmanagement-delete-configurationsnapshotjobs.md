@@ -53,9 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Deletes a configurationSnapshotJob object
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -67,7 +65,7 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs/{c91a1470-acc9-4585-bc03-522ae898f82f}
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 <!-- {
