@@ -1,6 +1,6 @@
 ---
 title: "Create configurationMonitor"
-description: "Create a new configurationMonitor object."
+description: "Create a new configurationMonitor object that runs periodically in the background at a scheduled frequency."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-It creates a new [configurationMonitor](../resources/configurationmonitor.md) object that runs periodically, in the background, at a scheduled frequency.
+Create a new [configurationMonitor](../resources/configurationmonitor.md) object that runs periodically in the background at a scheduled frequency.
 
 ## Permissions
 
@@ -48,14 +48,14 @@ POST /admin/configurationManagement/configurationMonitors
 
 In the request body, supply a JSON representation of the [configurationMonitor](../resources/configurationmonitor.md) object.
 
-You can specify the following properties when creating a configurationMonitor.
+You can specify the following properties when you create a configurationMonitor.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|baseline|[configurationBaseline](../resources/configurationBaseline.md)|A complex object containing the details of at least one resource and at least one property associated to the resource that is to be monitored. Required.|
-|displayName|String| User friendly name given by the user to the monitor. Required.|
+|baseline|[configurationBaseline](../resources/configurationBaseline.md)|A complex object that contains details of at least one resource and one property associated with the resource to be monitored. Required.|
 |description|String| User friendly description of the monitor given by the user. Optional.|
-|parameters|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Key-Value pairs containing the value of the parameters which might be used in the baseline. Optional.|
+|displayName|String| User friendly name given by the user to the monitor. Required.|
+|parameters|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Key-value pairs that contain the values of parameters which might be used in the baseline. Optional.|
 
 ## Response
 
@@ -63,9 +63,7 @@ If successful, this method returns a `201 Created` response code and a [configur
 
 ## Examples
 
-### Example 1: Create a configurationMonitor with given parameters
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -78,52 +76,52 @@ POST https://graph.microsoft.com/beta/admin/configurationManagement/configuratio
 Content-Type: application/json
 
 {
-    "displayName": "Demo Monitor",
-    "description": "This is a Demo Monitor",
-    "baseline": {
-        "displayName": "Demo Baseline",
-        "description": "This is a baseline with resources SharedMailbox, AcceptedDomain and MailContact",
-        "resources": [
-            {
-                "displayName": "TestSharedMailbox Resource",
-                "resourceType": "microsoft.exchange.sharedmailbox",
-                "properties": {
-                    "DisplayName": "TestSharedMailbox",
-                    "Alias": "testSharedMailbox",
-                    "Identity": "TestSharedMailbox",
-                    "Ensure": "Present",
-                    "PrimarySmtpAddress": "testSharedMailbox@contoso.onmicrosoft.com",
-                    "EmailAddresses": [
-                        "abc@contoso.onmicrosoft.com"
-                    ]
-                }
-            },
-            {
-                "displayName": "Accepted Domain",
-                "resourceType": "microsoft.exchange.accepteddomain",
-                "properties": {
-                    "Identity": "contoso.onmicrosoft.com",
-                    "DomainType": "InternalRelay",
-                    "Ensure": "Present"
-                }
-            },
-            {
-                "displayName": "Mail Contact Resource",
-                "resourceType": "microsoft.exchange.mailcontact",
-                "properties": {
-                    "Name": "Chris",
-                    "DisplayName": "Chris",
-                    "ExternalEmailAddress": "SMTP:chris@ach.com",
-                    "Alias": "Chrisa",
-                    "Ensure": "Present"
-                }
-            }
-        ]
-    }
+  "displayName": "Demo Monitor",
+  "description": "This is a Demo Monitor",
+  "baseline": {
+    "displayName": "Demo Baseline",
+    "description": "This is a baseline with resources SharedMailbox, AcceptedDomain and MailContact",
+    "resources": [
+      {
+        "displayName": "TestSharedMailbox Resource",
+        "resourceType": "microsoft.exchange.sharedmailbox",
+        "properties": {
+          "DisplayName": "TestSharedMailbox",
+          "Alias": "testSharedMailbox",
+          "Identity": "TestSharedMailbox",
+          "Ensure": "Present",
+          "PrimarySmtpAddress": "testSharedMailbox@contoso.onmicrosoft.com",
+          "EmailAddresses": [
+            "abc@contoso.onmicrosoft.com"
+          ]
+        }
+      },
+      {
+        "displayName": "Accepted Domain",
+        "resourceType": "microsoft.exchange.accepteddomain",
+        "properties": {
+          "Identity": "contoso.onmicrosoft.com",
+          "DomainType": "InternalRelay",
+          "Ensure": "Present"
+        }
+      },
+      {
+        "displayName": "Mail Contact Resource",
+        "resourceType": "microsoft.exchange.mailcontact",
+        "properties": {
+          "Name": "Chris",
+          "DisplayName": "Chris",
+          "ExternalEmailAddress": "SMTP:chris@ach.com",
+          "Alias": "Chrisa",
+          "Ensure": "Present"
+        }
+      }
+    ]
+  }
 }
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -137,28 +135,27 @@ The following example shows the response.
 HTTP/1.1 201 Created
 Content-Type: application/json
 
-
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationMonitors/$entity",
-    "id": "f1b46220-74af-4347-9ac7-89fe17d57bd7",
-    "displayName": "Monitor for EXO100",
-    "description": "This is a Monitor with EXO resources",
-    "tenantId": "909d5e4a-3d8e-47cf-979a-821619ebaf39",
-    "status": "active",
-    "monitorRunFrequencyInHours": 6,
-    "mode": "monitorOnly",
-    "createdDateTime": "2025-03-24T09:00:44.0028541Z",
-    "lastModifiedDateTime": "2025-03-24T09:00:44.0398641Z",
-    "createdBy": {
-        "user": {
-            "id": "ad14b3c8-e4db-4896-a963-3f420272d085",
-            "displayName": "MOD Administrator"
-        },
-        "application": {
-            "id": null,
-            "displayName": null
-        }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationMonitors/$entity",
+  "id": "f1b46220-74af-4347-9ac7-89fe17d57bd7",
+  "displayName": "Monitor for EXO100",
+  "description": "This is a Monitor with EXO resources",
+  "tenantId": "909d5e4a-3d8e-47cf-979a-821619ebaf39",
+  "status": "active",
+  "monitorRunFrequencyInHours": 6,
+  "mode": "monitorOnly",
+  "createdDateTime": "2025-03-24T09:00:44.0028541Z",
+  "lastModifiedDateTime": "2025-03-24T09:00:44.0398641Z",
+  "createdBy": {
+    "user": {
+      "id": "ad14b3c8-e4db-4896-a963-3f420272d085",
+      "displayName": "MOD Administrator"
     },
-    "parameters": {}
+    "application": {
+      "id": null,
+      "displayName": null
+    }
+  },
+  "parameters": {}
 }
 ```
