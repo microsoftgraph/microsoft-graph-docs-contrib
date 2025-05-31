@@ -21,7 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/configurationbaseline-get.md)|[configurationBaseline](../resources/configurationbaseline.md)|Read the properties and relationships of a configurationBaseline object which is attached to a specific monitor.|
+|[Get](../api/configurationbaseline-get.md)|[configurationBaseline](../resources/configurationbaseline.md)|Read the properties and relationships of a [configurationBaseline](../resources/configurationbaseline.md) object that is attached to a specific monitor.|
+|[Create snapshot](../api/configurationbaseline-createsnapshot.md)|[configurationSnapshotJob](../resources/configurationsnapshotjob.md)|Create a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) asynchronously.|
 
 ## Properties
 |Property|Type|Description|
