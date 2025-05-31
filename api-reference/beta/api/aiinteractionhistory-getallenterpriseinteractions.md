@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Get all Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. This API captures the user intent, the resources accessed by Copilot, and the response to the user for Microsoft 365 apps such as Teams, Word, and Outlook.
 
+To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -32,13 +34,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions
 ```
 
+> [!NOTE]
+> * Delta function call isn't supported.
+> * This API doesn't retrieve interactions in agents created by Copilot Studio.
+
 ## Optional query parameters
 
-This method supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
+This method supports the `$top` and data ranges [OData query parameters](/graph/query-parameters) to customize the response, as shown in the following example. For optimal performance, the recommended `$top` value is `100`.
 
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions?$filter=createdDateTime gt 2024-09-09T16:48:35Z and createdDateTime lt 2024-11-15T21:48:35Z
+GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions?$filter=createdDateTime gt 2024-09-09T16:48:35Z and createdDateTime lt 2024-11-15T21:48:35Z&$top=100
 ```
 
 This method also supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. The following table shows an example.

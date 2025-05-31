@@ -22,13 +22,13 @@ items:
       href: ../../resources/teamsadministration-effectivepolicyassignment.md
     - name: Policy assignment
       href: ../../resources/teamsadministration-policyassignment.md
-- name: AI interactions (preview)
+- name: AI interactions
   items:
   - name: AI interaction history
     items:
     - name: AI interaction history
       href: ../../resources/aiinteractionhistory.md
-    - name: List all enterprise interactions
+    - name: Get all enterprise interactions
       href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
   - name: Complex types
     items:
