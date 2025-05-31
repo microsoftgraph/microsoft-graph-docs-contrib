@@ -34,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationDrifts('{driftId'})
+GET /admin/configurationManagement/configurationDrifts('{configurationDriftId'})
 ```
 
 ## Optional query parameters
 
-This method supports the $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,9 +57,7 @@ If successful, this method returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Example 1: Retrieve the properties of a configurationDrift object
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -71,8 +69,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationDrifts('4e808e99-7f60-4194-8294-02ede71effd8)
 ```
 
-
-#### Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -87,25 +84,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationDrifts/$entity",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET admin/configurationManagement/configurationDrifts('<guid>')?$select=baselineResourceDisplayName,driftedProperties",
-    "id": "4e808e99-7f60-4194-8294-02ede71effd8",
-    "monitorId": "b166c9cb-db29-438b-95fb-247da1dc72c3",
-    "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
-    "resourceType": "microsoft.exchange.accepteddomain",
-    "baselineResourceDisplayName": "Accepted Domain",
-    "firstReportedDateTime": "2024-12-12T09:00:57.4830642Z",
-    "status": "active",
-    "resourceInstanceIdentifier": {
-        "Identity": "contoso.onmicrosoft.com"
-    },
-    "driftedProperties": [
-        {
-            "propertyName": "Ensure",
-            "currentValue": "Absent",
-            "desiredValue": "Present"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationDrifts/$entity",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET admin/configurationManagement/configurationDrifts('<guid>')?$select=baselineResourceDisplayName,driftedProperties",
+  "id": "4e808e99-7f60-4194-8294-02ede71effd8",
+  "monitorId": "b166c9cb-db29-438b-95fb-247da1dc72c3",
+  "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+  "resourceType": "microsoft.exchange.accepteddomain",
+  "baselineResourceDisplayName": "Accepted Domain",
+  "firstReportedDateTime": "2024-12-12T09:00:57.4830642Z",
+  "status": "active",
+  "resourceInstanceIdentifier": {
+    "Identity": "contoso.onmicrosoft.com"
+  },
+  "driftedProperties": [
+    {
+      "propertyName": "Ensure",
+      "currentValue": "Absent",
+      "desiredValue": "Present"
+    }
+  ]
 }
 ```
 
