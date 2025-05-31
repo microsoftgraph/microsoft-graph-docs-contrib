@@ -46,15 +46,15 @@ PATCH /admin/configurationManagement/configurationApplications('{configurationAp
 
 ## Request body
 
-You can specify the following properties when updating a **configurationApplication**.
-
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+You can specify the following properties when you update a **configurationApplication** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|User friendly name given by the user while creating a configurationApplication. Required.|
-|description|String|User friendly description of the configurationApplication. Optional.|
-|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| clientCredentials will include keyVaultURI & certificateName that the user must have obtained while creating a Key Vault. Required.|
+|clientCredentials|[clientCredentials](../resources/clientcredentials.md)| Includes the **keyVaultURI** and **certificateName** properties that the user must have obtained during the creation of the key vault. Required.|
+|description|String|User friendly description of the **configurationApplication**. Optional.|
+|displayName|String|User friendly name given by the user during the creation the **configurationApplication**. Required.|
 
 ## Response
 
@@ -62,9 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [conf
 
 ## Examples
 
-### Example 1: Update the displayName and description for a configurationApplication
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -82,7 +80,7 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -102,8 +100,8 @@ Content-Type: application/json
   "displayName": "Contoso Test App Updated",
   "description": "Contoso Test App description Updated",
   "clientCredentials": {
-     "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
-     "certificateName": "Contoso Test Cert"
+    "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
+    "certificateName": "Contoso Test Cert"
   }
 }
 ```
