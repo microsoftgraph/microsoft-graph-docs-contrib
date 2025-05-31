@@ -1,6 +1,6 @@
 ---
 title: "Delete configurationMonitor"
-description: "Delete a configurationMonitor object."
+description: "Delete a configurationMonitor object permanently."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [configurationMonitor](../resources/configurationmonitor.md) object. When deleted, configurationMonitor data cannot be restored and the date is permanently deleted.
+Delete a [configurationMonitor](../resources/configurationmonitor.md) object permanently. When deleted, the **configurationMonitor** data can't be restored.
 
 The API is available only in the public cloud.
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/configurationManagement/configurationMonitors/{monitorId}
+DELETE /admin/configurationManagement/configurationMonitors/{configurationMonitorId}
 ```
 
 ## Request headers
@@ -55,9 +55,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Deletes a configurationMonitor object
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
