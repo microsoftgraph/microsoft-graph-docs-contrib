@@ -1,5 +1,5 @@
 ---
-title: "List configurationSnapshotJob objects"
+title: "List configurationSnapshotJobs"
 description: "Get a list of the configurationSnapshotJob objects and their properties."
 author: "swatyario"
 ms.date: 04/10/2025
@@ -8,7 +8,7 @@ ms.subservice: "tenant-administration"
 doc_type: apiPageType
 ---
 
-# List configurationSnapshotJob objects
+# List configurationSnapshotJobs
 
 Namespace: microsoft.graph
 
@@ -39,8 +39,7 @@ GET /admin/configurationManagement/configurationSnapshotJobs
 
 ## Optional query parameters
 
-This method supports the $select, $filter, $orderBy, and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
+This method supports the `$select`, `$filter`, `$orderBy`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -58,9 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get the list of configurationSnapshotJobs
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -72,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -80,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.configurationSnapshotJob"
+  "@odata.type": "Collection(microsoft.graph.configurationSnapshotJob)"
 }
 -->
 ``` http
@@ -88,49 +84,49 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationSnapshotJobs",
-    "@microsoft.graph.tips": "This request only returns a subset of the resource's properties. Your app will need to use $select to return non-default properties. To find out what other properties are available for this resource see https://learn.microsoft.com/graph/api/resources/configurationSnapshotJob",
-    "value": [
-        {
-            "id": "1a14c735-e01b-4c6e-a0e9-02ecbe7ad832",
-            "displayName": "Snapshot Creation 1",
-            "description": "Snapshot Description",
-            "tenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843",
-            "status": "notStarted",
-            "resources": [
-                "microsoft.exchange.sharedmailbox",
-                "microsoft.exchange.transportrule"
-            ],
-            "createdDateTime": "2025-02-18T15:33:51.9823159Z",
-            "completedDateTime": "0001-01-01T00:00:00Z",
-            "resourceLocation": "",
-            "createdBy": {
-                "user": {
-                    "id": "98ceffcc-7c54-4227-8844-835af5a023ce",
-                    "displayName": "Test Contoso User"
-                }
-            }
-        },
-        {
-            "id": "c91a1470-acc9-4585-bc03-522ae898f82f",
-            "displayName": "Snapshot Creation Demo 1",
-            "description": "Snapshot Description",
-            "tenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843",
-            "status": "notStarted",
-            "resources": [
-                "microsoft.exchange.sharedmailbox",
-                "microsoft.exchange.transportrule"
-            ],
-            "createdDateTime": "2025-02-18T15:43:59.7935268Z",
-            "completedDateTime": "0001-01-01T00:00:00Z",
-            "resourceLocation": "",
-            "createdBy": {
-                "user": {
-                    "id": "98ceffcc-7c54-4227-8844-835af5a023ce",
-                    "displayName": "Test Contoso User"
-                }
-            }
-        },
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationSnapshotJobs",
+  "@microsoft.graph.tips": "This request only returns a subset of the resource's properties. Your app will need to use $select to return non-default properties. To find out what other properties are available for this resource see https://learn.microsoft.com/graph/api/resources/configurationSnapshotJob",
+  "value": [
+    {
+      "id": "1a14c735-e01b-4c6e-a0e9-02ecbe7ad832",
+      "displayName": "Snapshot Creation 1",
+      "description": "Snapshot Description",
+      "tenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843",
+      "status": "notStarted",
+      "resources": [
+        "microsoft.exchange.sharedmailbox",
+        "microsoft.exchange.transportrule"
+      ],
+      "createdDateTime": "2025-02-18T15:33:51.9823159Z",
+      "completedDateTime": "0001-01-01T00:00:00Z",
+      "resourceLocation": "",
+      "createdBy": {
+        "user": {
+          "id": "98ceffcc-7c54-4227-8844-835af5a023ce",
+          "displayName": "Test Contoso User"
+        }
+      }
+    },
+    {
+      "id": "c91a1470-acc9-4585-bc03-522ae898f82f",
+      "displayName": "Snapshot Creation Demo 1",
+      "description": "Snapshot Description",
+      "tenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843",
+      "status": "notStarted",
+      "resources": [
+        "microsoft.exchange.sharedmailbox",
+        "microsoft.exchange.transportrule"
+      ],
+      "createdDateTime": "2025-02-18T15:43:59.7935268Z",
+      "completedDateTime": "0001-01-01T00:00:00Z",
+      "resourceLocation": "",
+      "createdBy": {
+        "user": {
+          "id": "98ceffcc-7c54-4227-8844-835af5a023ce",
+          "displayName": "Test Contoso User"
+        }
+      }
+    }
+  ]
 }
 ```
