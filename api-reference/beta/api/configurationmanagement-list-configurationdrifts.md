@@ -1,5 +1,5 @@
 ---
-title: "List configurationDrift objects"
+title: "List configurationDrifts"
 description: "Get a list of the configurationDrift objects and their properties."
 author: "swatyario"
 ms.date: 04/10/2025
@@ -8,7 +8,7 @@ ms.subservice: "tenant-administration"
 doc_type: apiPageType
 ---
 
-# List configurationDrift objects
+# List configurationDrifts
 
 Namespace: microsoft.graph
 
@@ -39,7 +39,7 @@ GET /admin/configurationManagement/configurationDrifts
 
 ## Optional query parameters
 
-This method supports the $select, $filter, $orderBy, and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$orderBy`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,9 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get the list of configurationDrifts
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -71,8 +69,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationDrifts
 ```
 
-
-#### Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -86,69 +83,67 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-
-
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationDrifts",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET admin/configurationManagement/configurationDrifts?$select=baselineResourceDisplayName,driftedProperties",
-    "value": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationDrifts",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET admin/configurationManagement/configurationDrifts?$select=baselineResourceDisplayName,driftedProperties",
+  "value": [
+    {
+      "id": "4e808e99-7f60-4194-8294-02ede71effd8",
+      "monitorId": "b166c9cb-db29-438b-95fb-247da1dc72c3",
+      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "resourceType": "microsoft.exchange.accepteddomain",
+      "baselineResourceDisplayName": "Accepted Domain",
+      "firstReportedDateTime": "2024-12-12T09:00:57.4830642Z",
+      "status": "active",
+      "resourceInstanceIdentifier": {
+        "Identity": "contoso.onmicrosoft.com"
+      },
+      "driftedProperties": [
         {
-            "id": "4e808e99-7f60-4194-8294-02ede71effd8",
-            "monitorId": "b166c9cb-db29-438b-95fb-247da1dc72c3",
-            "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
-            "resourceType": "microsoft.exchange.accepteddomain",
-            "baselineResourceDisplayName": "Accepted Domain",
-            "firstReportedDateTime": "2024-12-12T09:00:57.4830642Z",
-            "status": "active",
-            "resourceInstanceIdentifier": {
-                "Identity": "contoso.onmicrosoft.com"
-            },
-            "driftedProperties": [
-                {
-                    "propertyName": "Ensure",
-                    "currentValue": "Absent",
-                    "desiredValue": "Present"
-                }
-            ]
-        },
+          "propertyName": "Ensure",
+          "currentValue": "Absent",
+          "desiredValue": "Present"
+        }
+      ]
+    },
+    {
+      "id": "f30f8d6b-ea1e-4e1e-995e-341735ea01f4",
+      "monitorId": "b166c9cb-db29-438b-95fb-247da1dc72c3",
+      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "resourceType": "microsoft.exchange.accepteddomain",
+      "baselineResourceDisplayName": "Accepted Domain",
+      "firstReportedDateTime": "2024-12-12T06:00:39.2072475Z",
+      "status": "active",
+      "resourceInstanceIdentifier": {
+        "Identity": "contoso.onmicrosoft.com"
+      },
+      "driftedProperties": [
         {
-            "id": "f30f8d6b-ea1e-4e1e-995e-341735ea01f4",
-            "monitorId": "b166c9cb-db29-438b-95fb-247da1dc72c3",
-            "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
-            "resourceType": "microsoft.exchange.accepteddomain",
-            "baselineResourceDisplayName": "Accepted Domain",
-            "firstReportedDateTime": "2024-12-12T06:00:39.2072475Z",
-            "status": "active",
-            "resourceInstanceIdentifier": {
-                "Identity": "contoso.onmicrosoft.com"
-            },
-            "driftedProperties": [
-                {
-                    "propertyName": "Ensure",
-                    "currentValue": "Absent",
-                    "desiredValue": "Present"
-                }
-            ]
-        },
+          "propertyName": "Ensure",
+          "currentValue": "Absent",
+          "desiredValue": "Present"
+        }
+      ]
+    },
+    {
+      "id": "9d43b643-71ab-4415-8d98-ca28c7cf0df4",
+      "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
+      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "resourceType": "microsoft.exchange.mailcontact",
+      "baselineResourceDisplayName": "Mail Contact Resource",
+      "firstReportedDateTime": "2024-12-12T06:00:38.1402661Z",
+      "status": "active",
+      "resourceInstanceIdentifier": {
+        "Name": "Chris"
+      },
+      "driftedProperties": [
         {
-            "id": "9d43b643-71ab-4415-8d98-ca28c7cf0df4",
-            "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
-            "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
-            "resourceType": "microsoft.exchange.mailcontact",
-            "baselineResourceDisplayName": "Mail Contact Resource",
-            "firstReportedDateTime": "2024-12-12T06:00:38.1402661Z",
-            "status": "active",
-            "resourceInstanceIdentifier": {
-                "Name": "Chris"
-            },
-            "driftedProperties": [
-                {
-                    "propertyName": "Ensure",
-                    "currentValue": "Absent",
-                    "desiredValue": "Present"
-                }
-            ]
-        },
-    ]
+          "propertyName": "Ensure",
+          "currentValue": "Absent",
+          "desiredValue": "Present"
+        }
+      ]
+    }
+  ]
 }
 ```
