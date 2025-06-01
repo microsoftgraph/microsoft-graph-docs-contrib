@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents the information and properties of a [configurationDrift](../resources/configurationdrift.md) object. This resource allows admins to get granular details about all active drifts across all existing monitors.
 
-Inherits from [entity](../resources/entity.md)
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -27,14 +27,14 @@ Inherits from [entity](../resources/entity.md)
 |Property|Type|Description|
 |:---|:---|:---|
 |baselineResourceDisplayName|String|Resource instance for which the drift is detected.|
-|driftedProperties|[driftedProperty](../resources/driftedproperty.md) collection|Properties within one or more resource instances where the drift is detected.|
-|firstReportedDateTime|DateTimeOffset|Date and time at which the drift is first detected.|
-|id|String|Globally unique identifier / GUID of the drift Created by the system Inherits from [entity](../resources/entity.md).|
-|monitorId|String|Globally unique identifier / GUID of the monitor [Created by the system].|
-|resourceInstanceIdentifier|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|An identifier that allow users to understand where the drift exactly is.|
+|driftedProperties|[driftedProperty](../resources/driftedproperty.md) collection|Properties within one or more resource instances in which drift is detected.|
+|firstReportedDateTime|DateTimeOffset|The date and time at which drift is first detected. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|id|String|Globally unique identifier (GUID) of the drift. System-generated. Inherited from [entity](../resources/entity.md).|
+|monitorId|String|Globally unique identifier (GUID) of the monitor. System-generated.|
+|resourceInstanceIdentifier|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|An identifier that allows users to understand exactly where the drift is.|
 |resourceType|String|Resource for which the drift is detected.|
-|status|driftStatus|Status of the drift. The possible values as of now are: `active` and `fixed`.|
-|tenantId|String|Globally unique identifier / GUID of the tenant for which the monitor is being run [Fetched automatically by the system].|
+|status|driftStatus|Status of the drift. The possible values are: `active`, `fixed`, `unknownFutureValue`.|
+|tenantId|String|Globally unique identifier (GUID) of the tenant for which the monitor runs. Fetched automatically by the system.|
 
 ## Relationships
 None.
