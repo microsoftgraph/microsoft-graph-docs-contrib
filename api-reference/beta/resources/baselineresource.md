@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information and properties of a [baselineResource](../resources/baselineresource.md) object. The baseline is a complex object that contains details of at least one resource and one property associated with the resource that the admin wants to monitor via the [configurationMonitor](../resources/configurationmonitor.md) object. The baselineResources is a collection of resources and its properties added to the baseline [At least one property of one resource must be present in the baseline].
+Represents the information and properties of a [baselineResource](../resources/baselineresource.md) object. The baseline is a complex object that contains details of at least one resource and one property associated with the resource that the admin wants to monitor via the [configurationMonitor](../resources/configurationmonitor.md) object. The baselineResources is a collection of resources and its properties added to the baseline. At least one property of one resource must be present in the baseline.
 
 ## Properties
 |Property|Type|Description|
