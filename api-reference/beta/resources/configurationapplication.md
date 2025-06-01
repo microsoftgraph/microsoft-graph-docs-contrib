@@ -20,7 +20,7 @@ Represents the information and properties of a [configurationApplication](../res
 * Use that certificate to get a token from Microsoft Entra for Exchange and other workload scopes, depending on the resources the admin wants to monitor or take a snapshot.
 * Ensure that the certificate from the key vault is associated with the correct application in Azure.
 
-Inherits from [entity](../resources/entity.md)
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
