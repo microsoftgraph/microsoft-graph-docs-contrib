@@ -14,19 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information and properties of a [configurationMonitor](../resources/configurationmonitor.md) object. This resource allows administrators to create and manage monitors for tenant or drift monitoring across all workloads supported by unified-tenant configuration management, enabling periodic detection of deviations from the desired configuration state.
+Represents the information and properties of a [configurationMonitor](../resources/configurationmonitor.md) object. This resource allows administrators to create and manage monitors for tenant or drift monitoring across all workloads supported by unified-tenant configuration management, enabling periodic detection of deviations from the expected configuration state.
 
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/configurationmanagement-list-configurationmonitors.md)|[configurationMonitor](../resources/configurationmonitor.md) collection|Get a list of all the existing configurationMonitor objects and their properties.|
-|[Create](../api/configurationmanagement-post-configurationmonitors.md)|[configurationMonitor](../resources/configurationmonitor.md)|Create a new configurationMonitor object.|
-|[Get](../api/configurationmonitor-get.md)|[configurationMonitor](../resources/configurationmonitor.md)|Get a particular configurationMonitor object.|
-|[Update](../api/configurationmonitor-update.md)|[configurationMonitor](../resources/configurationmonitor.md)|Update the properties like monitorName, description, or baseline of a configurationMonitor object.|
-|[Delete](../api/configurationmonitor-delete.md)|None|Delete a configurationMonitor object.|
-|[Get configuration baseline](../api/configurationbaseline-get.md)|[configurationBaseline](../resources/configurationbaseline.md) collection|Get baseline of a configurationMonitor object.|
+|[List](../api/configurationmanagement-list-configurationmonitors.md)|[configurationMonitor](../resources/configurationmonitor.md) collection|Get a list of the [configurationMonitor](../resources/configurationmonitor.md) objects and their properties.|
+|[Create](../api/configurationmanagement-post-configurationmonitors.md)|[configurationMonitor](../resources/configurationmonitor.md)|Create a new [configurationMonitor](../resources/configurationmonitor.md) object that runs periodically in the background at a scheduled frequency.|
+|[Get](../api/configurationmonitor-get.md)|[configurationMonitor](../resources/configurationmonitor.md)|Get the properties and relationships of a [configurationMonitor](../resources/configurationmonitor.md) object.|
+|[Update](../api/configurationmonitor-update.md)|[configurationMonitor](../resources/configurationmonitor.md)|Update the properties of a [configurationMonitor](../resources/configurationmonitor.md) object, including the monitor name, description, and baseline.|
+|[Delete](../api/configurationmonitor-delete.md)|None|Delete a [configurationMonitor](../resources/configurationmonitor.md) object permanently.|
+|[Get configuration baseline](../api/configurationbaseline-get.md)|[configurationBaseline](../resources/configurationbaseline.md) collection|Read the properties and relationships of a [configurationBaseline](../resources/configurationbaseline.md) object that is attached to a specific monitor.|
 
 ## Properties
 |Property|Type|Description|
