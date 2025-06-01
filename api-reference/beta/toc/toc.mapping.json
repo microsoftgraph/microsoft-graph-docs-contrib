@@ -3293,6 +3293,32 @@
       ]
     },
     {
+      "name": "Tenant administration",
+      "childNodes": [
+        {
+          "name": "Configuration monitoring",
+          "overview": "../../../../concepts/unified-tenant-configuration-management-overview.md",
+          "shouldSort": true,
+          "resources": [
+            "configurationApplication",
+            "configurationBaseline",
+            "configurationDrift",
+            "configurationMonitor",
+            "configurationMonitoringResult",
+            "configurationSnapshotJob"
+          ],
+          "complexTypes": [
+            "baselineParameter",
+            "baselineResource",
+            "clientCredentials",
+            "driftedProperty",
+            "errorDetail",
+            "openComplexDictionaryType"
+          ]
+        }
+      ]
+    },
+    {
       "name": "To-do tasks",
       "overview": "../../resources/todo-overview.md",
       "keywords": [
@@ -3392,18 +3418,6 @@
         "workbookSessionInfo",
         "workbookSortField",
         "workbookWorksheetProtectionOptions"
-      ]
-    },
-    {
-      "name": "Unified Tenant Configuration Management",
-      "overview": "../../../../concepts/unified-tenant-configuration-management-overview.md",
-      "shouldSort": false,
-      "resources": [
-        "configurationMonitor",
-        "configurationDrift",
-        "configurationMonitoringResult",
-        "configurationApplication",
-        "configurationSnapshotJob"
       ]
     }
   ],
