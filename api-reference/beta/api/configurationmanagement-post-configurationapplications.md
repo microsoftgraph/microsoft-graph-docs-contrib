@@ -94,7 +94,7 @@ The following example shows the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.configurationApplication"
-
+}
 -->
 ``` http
 HTTP/1.1 201 Created
