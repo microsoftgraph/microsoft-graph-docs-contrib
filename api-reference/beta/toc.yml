@@ -110,11 +110,11 @@ items:
   - name: Teamwork and communications
     href: toc/teamwork-and-communications/toc.yml
     displayName: Microsoft Teams
+  - name: Tenant administration
+    href: toc/tenant-administration/toc.yml
   - name: To-do tasks
     href: toc/to-do-tasks/toc.yml
     displayName: Microsoft To Do
   - name: Workbooks and charts
     href: toc/workbooks-and-charts/toc.yml
     displayName: Excel
-  - name: Unified Tenant Configuration Management
-    href: toc/unified-tenant-configuration-management/toc.yml
