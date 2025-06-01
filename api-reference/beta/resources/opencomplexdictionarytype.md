@@ -1,6 +1,6 @@
 ---
 title: "openComplexDictionaryType resource type"
-description: "A dictionary of name-value pairs. Names must be valid property names, values may be restricted to a list of types via an annotation with term Validation.OpenPropertyTypeConstraint"
+description: "Represents a dictionary type that consists of key-value pairs."
 author: "swatya"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A dictionary of name-value pairs. Names must be valid property names, values may be restricted to a list of types via an annotation with term `Validation.OpenPropertyTypeConstraint
-
-This resource is an open type.
+Represents a dictionary type that consists of key-value pairs. This resource is an open type that allows other properties to be passed in. Names must be valid property names and values might be restricted to a list of types via an annotation with the term `Validation.OpenPropertyTypeConstraint`.
 
 ## Properties
 None.
@@ -36,4 +34,3 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.openComplexDictionaryType"
 }
 ```
-
