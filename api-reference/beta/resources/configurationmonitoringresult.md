@@ -16,24 +16,25 @@ Namespace: microsoft.graph
 
 Represents the information and properties of a [configurationMonitoringResult](../resources/configurationmonitoringresult.md) object. This resource allows administrators to view monitor run details. They can determine whether the monitor is running successfully. If it isn't, they can identify the reasons for the failure. The resource also reports the number of drifts found in each monitor run.
 
-Inherits from [entity](../resources/entity.md)
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/configurationmonitoringresult-get.md)|[configurationMonitoringResult](../resources/configurationmonitoringresult.md)|Get the list of all monitoring run details across all existing monitors.|
+|[List](../api/configurationmanagement-list-configurationmonitoringresults.md)|[configurationMonitoringResult](../resources/configurationmonitoringresult.md) collection|Get a list of the [configurationMonitoringResult](../resources/configurationmonitoringresult.md) objects and their properties.|
+|[Get](../api/configurationmonitoringresult-get.md)|[configurationMonitoringResult](../resources/configurationmonitoringresult.md)|Read the properties and relationships of a [configurationMonitoringResult](../resources/configurationmonitoringresult.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |driftsCount|Int32|Number of drifts observed during a monitor run.|
-|errorDetails|[errorDetail](../resources/errordetail.md) collection|An array containing all the error details that are stopping the monitor to run successfully. The error details are a contained entity.|
-|id|String|Globally unique identifier / GUID of the monitor run [Created by the system] Inherits from [entity](../resources/entity.md).|
-|monitorId|String|Globally unique identifier / GUID of the monitor [Created by the system].|
-|runCompletionDateTime|DateTimeOffset|Date and time at which the monitor run completed.|
-|runInitiationDateTime|DateTimeOffset|Date and time at which the monitor run initiated.|
+|errorDetails|[errorDetail](../resources/errordetail.md) collection|All the error details that prevent the monitor from running successfully. The error details are a contained entity.|
+|id|String|Globally unique identifier (GUID) of the monitor run. System-generated. Inherited from [entity](../resources/entity.md).|
+|monitorId|String|Globally unique identifier (GUID) of the monitor. System-generated.|
+|runCompletionDateTime|DateTimeOffset|Date and time at which the monitor run completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|runInitiationDateTime|DateTimeOffset|Date and time at which the monitor run initiated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |runStatus|monitorRunStatus|Status of the monitor run. It can either be successful, partiallySuccessful, or failed.|
-|tenantId|String|Globally unique identifier / GUID of the tenant for which the monitor is being run [Fetched automatically by the system].|
+|tenantId|String|Globally unique identifier (GUID) of the tenant for which the monitor runs. Fetched automatically by the system.|
 
 ## Relationships
 None.
