@@ -1,7 +1,7 @@
 ---
 title: "aiInteractionLink resource type"
 description: "Represents the links that appear in an AI interaction."
-ms.date: 11/18/2024
+ms.date: 5/4/2025
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "bkeerthivasa"
@@ -12,8 +12,6 @@ toc.title: "AI interaction link"
 # aiInteractionLink resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the links that appear in an AI interaction.
 

@@ -3006,7 +3006,7 @@
           ]
         },
         {
-          "name": "AI interactions (preview)",
+          "name": "AI interactions",
           "resources": [
             "aiInteractionHistory"
           ],
