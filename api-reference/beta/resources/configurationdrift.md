@@ -21,7 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/configurationdrift-get.md)|[configurationDrift](../resources/configurationdrift.md)|Get all active drifts against all existing monitors.|
+|[List](../api/configurationmanagement-list-configurationdrifts.md)|[configurationDrift](../resources/configurationdrift.md) collection|Get a list of the [configurationDrift](../resources/configurationdrift.md) objects and their properties.|
+|[Get](../api/configurationdrift-get.md)|[configurationDrift](../resources/configurationdrift.md)|Get the properties and relationships of a [configurationDrift](../resources/configurationdrift.md) object.|
 
 ## Properties
 |Property|Type|Description|
