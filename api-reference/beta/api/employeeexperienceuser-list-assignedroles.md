@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Get a list of all the roles assigned to a user in Viva Engage.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -38,9 +40,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /users/{userId}/employeeExperience/assignedRoles
 
 GET /me/employeeExperience/assignedRoles
-
 ```
->**Note:** The userId represents the office user ID.
+>**Note:** The `userId` represents the office user ID.
 
 ## Optional query parameters
 
@@ -62,7 +63,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get a list of all the roles assigned to a signed-in user in Viva Engage.
+### Example 1: Get a list of all the roles assigned to a signed-in user in Viva Engage
+
+The following example shows how to get a list of all the roles assigned to a signed-in user in Viva Engage.
 
 #### Request
 
@@ -109,7 +112,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get a list of all the roles assigned to a user in Viva Engage.
+### Example 2: Get a list of all the roles assigned to a user in Viva Engage
+
+The following example shows how to get a list of all the roles assigned to a user in Viva Engage.
 
 #### Request
 
@@ -121,7 +126,6 @@ The following example shows a request.
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/{user-id}/employeeExperience/assignedRoles
-
 ```
 
 #### Response
