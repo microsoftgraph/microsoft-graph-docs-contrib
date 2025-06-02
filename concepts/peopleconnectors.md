@@ -17,7 +17,7 @@ These connectors create a view of a portion of the data from the third-party sou
 
 ## Using Microsoft 365 Copilot connectors for people data
 
-* Unified identity: Create a complete and coherent view of individuals by merging people data in M365 with other sources where people data is stored, such as Human Capital Management systems.  
+* Unified identity—create a complete and coherent view of individuals by merging people data in Microsoft 365 with other sources where people data is stored, such as Human Capital Management systems.  
 
 * Enhanced Copilot responses—enriched people data improves Copilot’s ability to reason and respond with contextually relevant information for people data-related queries.  
 
@@ -41,7 +41,7 @@ Admins can configure which properties are shown and how they map to Microsoft 36
 
 When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence]([https://learn.microsoft.com/en-us/graph/profilepriority-configure-profilepropertysetting).
 
-note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, the admin has to select what data is shown in the [profile card](https://learn.microsoft.com/en-us/graph/add-properties-profilecard).  
+Note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, the admin has to select what data is shown in the [profile card](https://learn.microsoft.com/en-us/graph/add-properties-profilecard).  
 
 
 ## Compliance, privacy, and data usage
@@ -58,7 +58,7 @@ People data imported via Copilot connectors is considered customer content and i
 
 To update incorrect information on a profile card, you need to submit a request.  
 
-1. [Export your profile data](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true) from your profile card. This export includes the Source ID of the information you wish to correct.  
+1. [Export your profile data](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true) from your profile card. This export includes the source ID of the information you wish to correct.  
 
 1. Contact your tenant administrator with these details to identify the appropriate connector within the Microsoft Admin Center portal by matching it to the connector ID of the configured connector.  
 
@@ -91,7 +91,7 @@ People data is stored as long as the end user is active and has a valid Microsof
 
 ### Data residency
 
-When you upload people data, each end user's data attributes are scoped to their Microsoft 365 User Profile and stored in the user's Exchange Online mailbox. For information on data residency for Exchange Online, see [Data Residency for Exchange Online - Microsoft 365 Enterprise | Microsoft Learn](/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide&preserve-view=true).
+When you upload people data, each end user's data attributes are scoped to their Microsoft 365 user profile and stored in the user's Exchange Online mailbox. For information on data residency for Exchange Online, see [Data residency for Exchange Online - Microsoft 365 Enterprise | Microsoft Learn](/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide&preserve-view=true).
 
 ## Removing a connector
 
