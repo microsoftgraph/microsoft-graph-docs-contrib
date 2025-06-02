@@ -13,7 +13,7 @@ ms.subservice: developer
 
 Microsoft 365 Copilot connectors for people data are a type of connector (formerly Microsoft Graph connectors) that enhance how individuals are portrayed across Microsoft 365 apps and APIs. They help organizations bring people data from third-party systems into Microsoft 365, ensuring a unified and consistent view of individuals across Copilot, Microsoft Search, profile cards, and more.
 
-These connectors provide a replica view of a subset of the data in the 3P source system, ensuring that the data remains authoritative in its original location while being surfaced coherently across Microsoft 365 experiences.  
+These connectors create a view of a portion of the data from the third-party source system, ensuring the data stays authoritative in its original location while being displayed consistently across Microsoft 365.
 
 ## Using Microsoft 365 Copilot connectors for people data
 
@@ -21,9 +21,9 @@ These connectors provide a replica view of a subset of the data in the 3P source
 
 * Enhanced copilot responses: Enriched people data improves Copilot’s ability to reason and respond with contextually relevant information for people data-related queries.  
 
-* Improved discoverability: Customer’s people data becomes searchable across M365, including in profile cards, Org Explorer, and semantic search.
+* Improved discoverability: Customer’s people data becomes searchable across Microsoft 365, including in profile cards, Org Explorer, and semantic search.
 
-* Profile card integration: Updated profile information in the M365 profile cards, with links directly to the 3P content source. 
+* Profile card integration: Updated profile information in the Microsoft 365 profile cards, with links directly to the 3P content source. 
 
 ## Where to find the data?
 
@@ -31,17 +31,17 @@ Once connected, people's data from the 3P system can appear in M365 experiences,
 
 **M365 Profile Cards** (LPC) 
 
-**M365 Copilot chat** 
+* Microsoft 365 Copilot chat
 
-**Microsoft Search** 
+* Microsoft Search
 
-**Org Explorer** 
+ *Org Explorer 
 
 Admins can configure which properties are shown and how they map to Microsoft 365 schema in [MAC](https://admin-ignite.microsoft.com/Adminportal/Home?#/copilot/connectors/add).  
 
-When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. Read more about **source precedence** [here]([https://learn.microsoft.com/en-us/graph/profilepriority-configure-profilepropertysetting).
+When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence]([https://learn.microsoft.com/en-us/graph/profilepriority-configure-profilepropertysetting).
 
-Please note that not all the data ingested from 3P systems will appear automatically in M365 experiences by default. For example, the admin has to select what data is shown in the [profile card](https://learn.microsoft.com/en-us/graph/add-properties-profilecard).  
+note that not all the data ingested from 3P systems appears automatically in Microsoft 365 experiences by default. For example, the admin has to select what data is shown in the [profile card](https://learn.microsoft.com/en-us/graph/add-properties-profilecard).  
 
 
 ## Compliance, privacy, and how data is used, edited, and retained
