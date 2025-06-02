@@ -40,9 +40,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /users/{userId}/employeeExperience/assignedRoles
 
 GET /me/employeeExperience/assignedRoles
-
 ```
->**Note:** The userId represents the office user ID.
+>**Note:** The `userId` represents the office user ID.
 
 ## Optional query parameters
 
@@ -64,7 +63,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get a list of all the roles assigned to a signed-in user in Viva Engage.
+### Example 1: Get a list of all the roles assigned to a signed-in user in Viva Engage
+
+The following example shows how to get a list of all the roles assigned to a signed-in user in Viva Engage.
 
 #### Request
 
@@ -111,7 +112,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get a list of all the roles assigned to a user in Viva Engage.
+### Example 2: Get a list of all the roles assigned to a user in Viva Engage
+
+The following example shows how to get a list of all the roles assigned to a user in Viva Engage.
 
 #### Request
 
@@ -123,7 +126,6 @@ The following example shows a request.
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/{user-id}/employeeExperience/assignedRoles
-
 ```
 
 #### Response
