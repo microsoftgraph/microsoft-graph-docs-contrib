@@ -115,5 +115,5 @@ For more information, see [https://learn.microsoft.com/en-us/microsoftsearch/man
 
 - [Source precedence](https://learn.microsoft.com/en-us/graph/profilepriority-configure-profilepropertysetting)  
 
-- [Organizational Data in Microsoft 365 | Microsoft Learn](/viva/organizational-data) 
+- [Organizational data in Microsoft 365 | Microsoft Learn](/viva/organizational-data) 
 
