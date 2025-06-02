@@ -27,21 +27,21 @@ These connectors create a view of a portion of the data from the third-party sou
 
 ## Where to find the data?
 
-Once connected, people's data from the 3P system can appear in M365 experiences, such as:  
+Once connected, people data from the third-party system can appear in Microsoft 365  experiences, such as:  
 
-* Microsoft 365pProfile cards
+* Microsoft 365 profile cards
 
 * Microsoft 365 Copilot chat
 
 * Microsoft Search
 
- *Org Explorer 
+ * Org Explorer 
 
 Admins can configure which properties are shown and how they map to Microsoft 365 schema in [MAC](https://admin-ignite.microsoft.com/Adminportal/Home?#/copilot/connectors/add).  
 
 When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence]([https://learn.microsoft.com/en-us/graph/profilepriority-configure-profilepropertysetting).
 
-note that not all the data ingested from 3P systems appears automatically in Microsoft 365 experiences by default. For example, the admin has to select what data is shown in the [profile card](https://learn.microsoft.com/en-us/graph/add-properties-profilecard).  
+note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, the admin has to select what data is shown in the [profile card](https://learn.microsoft.com/en-us/graph/add-properties-profilecard).  
 
 
 ## Compliance, privacy, and how data is used, edited, and retained
@@ -60,11 +60,11 @@ If users notice incorrect information on their Profile card, they can follow the
 
 1. [Export your profile data](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true) from your profile card. This export includes the Source ID of the information you wish to correct.  
 
-1. Contact your tenant administrator with these details so they can identify the appropriate connector within the Microsoft Admin Center portal by matching it to the Connector ID of the connector they have configured.  
+1. Contact your tenant administrator with these details so they can identify the appropriate connector within the Microsoft Admin Center portal by matching it to the connector ID of the connector they have configured.  
 
 1. The administrator can then update the information directly in the 3P source system. 
 
-1. Once the connector performs its next scheduled crawl, the updated data will be reflected on the user's profile card. 
+1. Once the connector performs its next scheduled crawl, the updated data is reflected on the user's profile card. 
 
  
 ### Deleting profile information
