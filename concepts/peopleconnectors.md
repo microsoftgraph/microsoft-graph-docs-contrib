@@ -44,7 +44,7 @@ When multiple sources provide overlapping data, Microsoft 365 uses a precedence 
 note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, the admin has to select what data is shown in the [profile card](https://learn.microsoft.com/en-us/graph/add-properties-profilecard).  
 
 
-## Compliance, privacy, and how data is used, edited, and retained
+## Compliance, privacy, and data usage
 
 ### Data visibility
 
@@ -75,7 +75,7 @@ For more on DSRs, see Microsoft’s guidance on [GDPR and CCPA compliance](https
 
 ### Authentication & authorization
 
-Microsoft is committed to ensuring the highest standards of security by only supporting the most secure authentication protocols, such as OpenID Connect (OIDC) and OAuth 2.0. These protocols are integral to our security strategy, providing robust and reliable authentication mechanisms that safeguard user identities and data. To set up People Connectors, OAuth 2.0 authentication is required. 
+Microsoft is committed to ensuring the highest standards of security by only supporting the most secure authentication protocols, such as OpenID Connect (OIDC) and OAuth 2.0. These protocols are integral to our security strategy, providing robust and reliable authentication mechanisms that safeguard user identities and data. To set up people connectors, OAuth 2.0 authentication is required. 
 
 ## Admin roles 
 
@@ -97,11 +97,11 @@ When you upload people data, each end user's data attributes are scoped to their
 
 To delete a Copilot connector for people data, an admin should follow these steps: 
 
-1. Go to the Microsoft 365 Admin Center and navigate to the Connectors section. 
+1. Go to the Microsoft 365 Admin Center and navigate to the connectors section. 
 
 1. Locate the connector you want to delete. 
 
-1. Use the Delete operation available for both Microsoft-built and partner-built connectors. 
+1. Use the `delete` operation available for both Microsoft-built and partner-built connectors. 
 
 For more information, see [https://learn.microsoft.com/en-us/microsoftsearch/manage-connector](https://learn.microsoft.com/en-us/microsoftsearch/manage-connector).
 
