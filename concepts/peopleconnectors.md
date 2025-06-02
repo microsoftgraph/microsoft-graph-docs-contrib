@@ -29,7 +29,7 @@ These connectors create a view of a portion of the data from the third-party sou
 
 Once connected, people's data from the 3P system can appear in M365 experiences, such as:  
 
-**M365 Profile Cards** (LPC) 
+* Microsoft 365pProfile cards
 
 * Microsoft 365 Copilot chat
 
@@ -58,7 +58,7 @@ People data imported via Copilot connectors is considered customer content and i
 
 If users notice incorrect information on their Profile card, they can follow these steps to request an update: 
 
-1. [Export your profile data](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true) from your Profile card. This export includes the Source ID of the information you wish to correct.  
+1. [Export your profile data](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true) from your profile card. This export includes the Source ID of the information you wish to correct.  
 
 1. Contact your tenant administrator with these details so they can identify the appropriate connector within the Microsoft Admin Center portal by matching it to the Connector ID of the connector they have configured.  
 
