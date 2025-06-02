@@ -19,15 +19,15 @@ These connectors create a view of a portion of the data from the third-party sou
 
 * Unified identity: Create a complete and coherent view of individuals by merging people data in M365 with other sources where people data is stored, such as Human Capital Management systems.  
 
-* Enhanced copilot responses: Enriched people data improves Copilot’s ability to reason and respond with contextually relevant information for people data-related queries.  
+* Enhanced Copilot responses—enriched people data improves Copilot’s ability to reason and respond with contextually relevant information for people data-related queries.  
 
-* Improved discoverability: Customer’s people data becomes searchable across Microsoft 365, including in profile cards, Org Explorer, and semantic search.
+* Improved discoverability—people data becomes searchable across Microsoft 365, including in profile cards, Org Explorer, and semantic search.
 
-* Profile card integration: Updated profile information in the Microsoft 365 profile cards, with links directly to the 3P content source. 
+* Profile card integration—updated profile information in the Microsoft 365 profile cards, with links directly to the third-party content source. 
 
 ## Where to find the data?
 
-Once connected, people data from the third-party system can appear in Microsoft 365  experiences, such as:  
+Once connected, people data from the third-party system can appear in Microsoft 365 experiences, such as:  
 
 * Microsoft 365 profile cards
 
@@ -56,13 +56,13 @@ People data imported via Copilot connectors is considered customer content and i
 
 ### Editing incorrect profile information
 
-If users notice incorrect information on their Profile card, they can follow these steps to request an update: 
+To update incorrect information on a profile card, you need to submit a request.  
 
 1. [Export your profile data](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true) from your profile card. This export includes the Source ID of the information you wish to correct.  
 
-1. Contact your tenant administrator with these details so they can identify the appropriate connector within the Microsoft Admin Center portal by matching it to the connector ID of the connector they have configured.  
+1. Contact your tenant administrator with these details to identify the appropriate connector within the Microsoft Admin Center portal by matching it to the connector ID of the configured connector.  
 
-1. The administrator can then update the information directly in the 3P source system. 
+1. The administrator can update the information directly in the third-party source system. 
 
 1. Once the connector performs its next scheduled crawl, the updated data is reflected on the user's profile card. 
 
