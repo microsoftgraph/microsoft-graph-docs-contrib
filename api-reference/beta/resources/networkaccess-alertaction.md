@@ -1,6 +1,6 @@
 ---
 title: "alertAction resource type"
-description: "Represents a suggested action for admins to take for a given alert."
+description: "Represents a suggested action for admins to take for a given Global Secure Access [alert](../resources/networkaccess-alert.md)."
 author: "miritsadon"
 ms.date: 04/07/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a suggested action for admins to take for a given global secure access alert.
+Represents a suggested action for admins to take for a given global secure access [alert](../resources/networkaccess-alert.md).
 
 ## Properties
 |Property|Type|Description|
