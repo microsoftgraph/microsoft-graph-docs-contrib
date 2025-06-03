@@ -1,0 +1,58 @@
+---
+title: "tlsInspectionPolicyLink resource type"
+description: "Links a TLS inspection policy to a filtering profile.."
+author: "sisharm"
+ms.date: 05/23/2025
+ms.localizationpriority: medium
+ms.subservice: "entra-global-secure-access"
+doc_type: resourcePageType
+---
+
+# tlsInspectionPolicyLink resource type
+
+Namespace: microsoft.graph.networkaccess
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the link between a filtering profile and a TLS inspection policy.
+
+Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/networkaccess-tlsinspectionpolicylink-list.md)|[microsoft.graph.networkaccess.tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) collection|Get a list of the tlsInspectionPolicyLink objects on a filtering profile.|
+|[Get](../api/networkaccess-tlsinspectionpolicylink-get.md)|[microsoft.graph.networkaccess.tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md)|Get a tlsInspectionPolicyLink object.|
+|[Update](../api/networkaccess-tlsinspectionpolicylink-update.md)|None|Update the properties of a tlsInspectionPolicyLink object.|
+|[Delete](../api/networkaccess-tlsinspectionpolicylink-delete.md)|None|Delete a tlsInspectionPolicyLink object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|The unique identifier for the policy link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). Inherits from [entity](../resources/entity.md).|
+|state|microsoft.graph.networkaccess.status|The state of the policy link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
+|version|String|Version number of the policy link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
+
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|policy|[tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)|The TLS inspection policy associated with this link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.networkaccess.tlsInspectionPolicyLink",
+  "baseType": "microsoft.graph.networkaccess.policyLink",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.networkaccess.tlsInspectionPolicyLink",
+  "id": "String (identifier)",
+  "state": "String",
+  "version": "String"
+}
+```
