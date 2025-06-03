@@ -48,7 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-In most cases, when successful this method returns a 204, No Content. This method can also return a `200 OK` response code and a collection of [processContentResponses](../resources/processcontentresponses.md) objects in the response body. Each object in the collection corresponds to one of the request items in the batch, identified by the `requestId`, and contains the results (policy actions, errors, scope state) for that specific item. Because this is an asynchronous *intent* API from the perspective of the caller submitting the batch, the `200 OK` indicates the batch was accepted; the results within the response body reflect the outcome of each item's processing by the service.
+In most cases, when successful, this method returns a 204, No Content. This method can also return a `200 OK` response code and a collection of [processContentResponses](../resources/processcontentresponses.md) objects in the response body. Each object in the collection corresponds to one of the request items in the batch, identified by the `requestId`, and contains the results (policy actions, errors, scope state) for that specific item. Given that this is an asynchronous *intent* API from the perspective of the caller submitting the batch, the `200 OK` indicates the batch was accepted; the results within the response body reflect the outcome of each item's processing by the service.
 
 ## Example
 
