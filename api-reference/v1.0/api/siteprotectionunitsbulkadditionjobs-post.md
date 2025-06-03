@@ -58,6 +58,7 @@ If successful, this method returns a `201 Created` response code and a [siteProt
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "siteprotectionunitsbulkadditionjobs_post"
@@ -75,6 +76,12 @@ Content-Type: application/json
 }
 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/siteprotectionunitsbulkadditionjobs-post-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -111,6 +111,7 @@ The following example shows how to approve an [offerShiftRequest](../resources/o
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "offershiftrequestthis.approveforuser"
@@ -125,6 +126,12 @@ Content-Type: application/json
   "userId": "d2e7b5b2-0355-4c73-a543-08847b5b0884"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequestthisapproveforuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -145,6 +152,7 @@ The following example shows how to approve an [openShiftChangeRequest](../resour
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "openshiftchangerequestthis.approveforuser"
@@ -159,6 +167,12 @@ Content-Type: application/json
   "userId": "d2e7b5b2-0355-4c73-a543-08847b5b0884"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/openshiftchangerequestthisapproveforuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -179,6 +193,7 @@ The following example shows how to approve a [swapShiftsChangeRequest](../resour
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "swapShiftsChangeRequestthis.approveforuser"
@@ -193,6 +208,12 @@ Content-Type: application/json
   "userId": "d2e7b5b2-0355-4c73-a543-08847b5b0884"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/swapshiftschangerequestthisapproveforuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -213,6 +234,7 @@ The following example shows how to approve a [timeOffRequest](../resources/timeo
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoffrequestthis.approveforuser"
@@ -227,6 +249,12 @@ Content-Type: application/json
   "userId": "d2e7b5b2-0355-4c73-a543-08847b5b0884"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timeoffrequestthisapproveforuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

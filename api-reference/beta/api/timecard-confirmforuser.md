@@ -61,6 +61,7 @@ If successful, this action returns a `200 OK` response code and a [timeCard](../
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timecardthis.confirmforuser"
@@ -74,6 +75,12 @@ Content-Type: application/json
   "userId": "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timecardthisconfirmforuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
