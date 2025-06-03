@@ -23,8 +23,8 @@ Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkacc
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/networkaccess-tlsinspectionpolicy-list-policyrules.md)|[microsoft.graph.networkaccess.tlsInspectionRule](../api/networkaccess-tlsinspectionpolicy-list-policyrules.md) collection|Get a list of the tlsInspectionRule objects and their properties.|
-|[Get](../api/networkaccess-tlsinspectionrule-get.md)|[microsoft.graph.networkaccess.tlsInspectionRule](../resources/networkaccess-tlsinspectionrule-get.md)|Get a single tlsInspectionRule object.|
+|[List](../api/networkaccess-tlsinspectionpolicy-list-policyrules.md)|[microsoft.graph.networkaccess.tlsInspectionRule](networkaccess-tlsinspectionrule.md) collection|Get a list of the tlsInspectionRule objects and their properties.|
+|[Get](../api/networkaccess-tlsinspectionrule-get.md)|[microsoft.graph.networkaccess.tlsInspectionRule](networkaccess-tlsinspectionrule.md)|Get a single tlsInspectionRule object.|
 |[Update](../api/networkaccess-tlsinspectionrule-update.md)|None|Update the properties of a tlsInspectionRule object.|
 |[Delete](../api/networkaccess-tlsinspectionrule-delete.md)|None|Delete a tlsInspectionRule object.|
 

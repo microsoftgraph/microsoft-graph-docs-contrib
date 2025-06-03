@@ -21,6 +21,19 @@ A `tlsInspectionPolicy` can be linked to a filteringProfile using a [microsoft.g
 
 Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).
 
+
+## Methods
+
+|Method|Return Type|Description|
+|:---|:---|:---|
+|[List policies](../api/networkaccess-networkaccessroot-list-tlsinspectionpolicies.md)|[tlsInspectionPolicy](networkaccess-tlsinspectionpolicy.md) collection|Get a list of tlsInspectionPolicy objects.|
+|[Get policy](../api/networkaccess-tlsinspectionpolicy-get.md)|[tlsInspectionPolicy](networkaccess-tlsinspectionpolicy.md)|Get a single tlsInspectionPolicy object.|
+|[Create policy](../api/networkaccess-networkaccessroot-post-tlsinspectionpolicies.md)|[tlsInspectionPolicy](networkaccess-tlsinspectionpolicy.md)|Create a new tlsInspectionPolicy.|
+|[Update policy](../api/networkaccess-tlsinspectionpolicy-update.md)|None|Update properties of a tlsInspectionPolicy object.|
+|[Delete policy](../api/networkaccess-tlsinspectionpolicy-delete.md)|None|Delete a tlsInspectionPolicy object.|
+|[List rules](../api/networkaccess-tlsinspectionpolicy-list-policyrules.md)|[tlsInspectionRule](networkaccess-tlsinspectionrule.md) collection|Get a list of tlsInspectionRule objects.|
+|[Create rule](../api/networkaccess-tlsinspectionpolicy-post-policyrules.md)|[tlsInspectionRule](networkaccess-tlsinspectionrule.md)|Create a new tlsInspectionRule.|
+
 ## Properties
 
 |Property|Type|Description|
@@ -29,7 +42,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 |name|String|The display name of the policy.|
 |description|String|Optional description of the policy.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of when the policy was last modified. Read-only.|
-|settings|[tlsInspectionPolicySettings](#tlsinspectionpolicysettings-complex-type)|Settings that configure the default behavior of the policy.|
+|settings|[tlsInspectionPolicySettings](networkaccess-tlsinspectionpolicysettings.md)|Settings that configure the default behavior of the policy.|
 |version|String|Version number of the policy. Read-only.|
 
 ## Relationships
@@ -62,15 +75,3 @@ The following is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-## Methods
-
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List policies](../api/networkaccess-networkaccessroot-list-tlsinspectionpolicies.md)|[tlsInspectionPolicy](networkaccess-tlsinspectionpolicy.md) collection|Get a list of tlsInspectionPolicy objects.|
-|[Get policy](../api/networkaccess-tlsinspectionpolicy-get.md)|[tlsInspectionPolicy](networkaccess-tlsinspectionpolicy.md)|Get a single tlsInspectionPolicy object.|
-|[Create policy](../api/networkaccess-networkaccessroot-post-tlsinspectionpolicies.md)|[tlsInspectionPolicy](networkaccess-tlsinspectionpolicy.md)|Create a new tlsInspectionPolicy.|
-|[Update policy](../api/networkaccess-tlsinspectionpolicy-update.md)|None|Update properties of a tlsInspectionPolicy object.|
-|[Delete policy](../api/networkaccess-tlsinspectionpolicy-delete.md)|None|Delete a tlsInspectionPolicy object.|
-|[List rules](../api/networkaccess-tlsinspectionpolicy-list-policyrules.md)|[tlsInspectionRule](networkaccess-tlsinspectionrule.md) collection|Get a list of tlsInspectionRule objects.|
-|[Create rule](../api/networkaccess-tlsinspectionpolicy-post-policyrules.md)|[tlsInspectionRule](networkaccess-tlsinspectionrule.md)|Create a new tlsInspectionRule.|
