@@ -68,3 +68,4 @@ The following JSON representation shows the resource type.
   "certificate": "String",
   "chain": "String"
 }
+```

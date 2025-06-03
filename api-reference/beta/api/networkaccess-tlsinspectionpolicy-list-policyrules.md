@@ -1,5 +1,5 @@
 ---
-title: "List policyRules"
+title: "List tlsInspection policyRules"
 description: "Get a list of the tlsInspectionRule objects in a TLS inspection policy."
 author: "sisharm"
 ms.date: 05/23/2025
