@@ -49,7 +49,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policyRules|[tlsInspectionRule](networkaccess-tlsinspectionrule.md) collection|Collection of rules that define the specific maching conditions and desired actions for TLS inspection.  Must contain rules of type `tlsInspectionRule` only.|
+|policyRules|[tlsInspectionRule](networkaccess-tlsinspectionrule.md) collection|Collection of rules that define the specific matching conditions and desired actions for TLS inspection. Must contain rules of type `tlsInspectionRule` only.|
 
 ## JSON representation
 
