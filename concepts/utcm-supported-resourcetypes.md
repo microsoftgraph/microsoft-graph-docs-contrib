@@ -1,30 +1,35 @@
 ---
-title: "UTCM supported workloads and resource types"
-description: "This document talks about what UTCM supported workloads and resource types."
+title: "Supported workloads and resource types"
+description: "Learn the supported workloads and resource types in the unified-tenant configuration management API."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 ---
 
-# Supported Workloads & Resource Types
+# Supported workloads and resource types
 
-Unified-tenant configuration management APIs let administrators control and manage configuration settings for the entire organization. The settings can be on one or a combination of settings across the following workloads:
+This article describes the supported workloads and resource types in the unified-tenant configuration management (UTCM) APIs in Microsoft Graph. These APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization. 
 
-- MS Exchange Online
-- MS Entra
-- MS Teams
-- MS Purview
-- MS Defender
-- MS OneDrive SharePoint
-- MS Intune
+## Supported workloads
 
-UTCM supports 300+ resource types and various properties per resource type. The entire repository of is available in the JSON schema store.
- 
-For the schema, permissions, and sample examples per resource type, click [here](https://json.schemastore.org/utcm-monitor.json).
+The following list shows the supported workloads:
 
----
+- Microsoft Defender
+- Microsoft Entra
+- Microsoft Exchange Online
+- Microsoft Intune
+- Microsoft OneDrive
+- Microsoft Purview
+- Microsoft SharePoint
+- Microsoft Teams
 
-## MS Entra
+## Supported resource types
+
+UTCM supports more than 300 resource types, each with various associated properties. The complete repository is available in the JSON schema store. For more information about the schema, required permissions, and sample examples for each resource type, see [https://json.schemastore.org/utcm-monitor.json](https://json.schemastore.org/utcm-monitor.json).
+
+### Microsoft Entra
+
+The following list shows the supported resource types in Microsoft Entra.
 
 - `microsoft.entra.AdministrativeUnit`
 - `microsoft.entra.Application`
@@ -66,9 +71,9 @@ For the schema, permissions, and sample examples per resource type, click [here]
 - `microsoft.entra.TokenLifetimePolicy`
 - `microsoft.entra.User`
 
----
+### Microsoft Exchange Online
 
-## MS Exchange Online
+The following list shows the supported resource types in Microsoft Exchange Online.
 
 - `microsoft.exchange.AcceptedDomain`
 - `microsoft.exchange.ActiveSyncDeviceAccessRule`
@@ -139,9 +144,9 @@ For the schema, permissions, and sample examples per resource type, click [here]
 - `microsoft.exchange.TransportConfig`
 - `microsoft.exchange.TransportRule`
 
----
+### MS Intune
 
-## MS Intune
+The following list shows the supported resource types in Microsoft Intune.
 
 - `microsoft.intune.AccountProtectionLocalAdministratorPasswordSolutionPolicy`
 - `microsoft.intune.AccountProtectionLocalUserGroupMembershipPolicy`
@@ -214,9 +219,9 @@ For the schema, permissions, and sample examples per resource type, click [here]
 - `microsoft.intune.WindowsUpdateForBusinessFeatureUpdateProfileWindows10`
 - `microsoft.intune.WindowsUpdateForBusinessRingUpdateProfileWindows10`
 
----
+### Microsoft Teams
 
-## MS Teams
+The following list shows the supported resource types in Microsoft Teams.
 
 - `microsoft.teams.AppPermissionPolicy`
 - `microsoft.teams.AppSetupPolicy`
@@ -277,8 +282,6 @@ For the schema, permissions, and sample examples per resource type, click [here]
 - `microsoft.teams.VoiceRoutingPolicy`
 - `microsoft.teams.WorkloadPolicy`
 
----
-
 ## S&C
 
 - `SCAuditConfigurationPolicy`
@@ -310,9 +313,9 @@ For the schema, permissions, and sample examples per resource type, click [here]
 - `SCSupervisoryReviewPolicy`
 - `SCSupervisoryReviewRule`
 
----
+### Microsoft SharePoint
 
-## SharePoint
+The following list shows the supported resource types in Microsoft SharePoint.
 
 - `microsoft.sharepoint.AccessControlSettings`
 - `microsoft.sharepoint.App`
@@ -337,8 +340,6 @@ For the schema, permissions, and sample examples per resource type, click [here]
 - `microsoft.sharepoint.Theme`
 - `microsoft.sharepoint.UserProfileProperty`
 
----
-
 ## OneDrive
 
-- `microsoft.onedrive.Settings`
+The supported resource type in Microsoft OneDrive is `microsoft.onedrive.Settings`.
