@@ -1,6 +1,6 @@
 ---
 title: "chats: getAllMessages"
-description: "Get messages from all chats that a user is a participant in."
+description: "Get all messages from all chats in which a user is a participant"
 author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: "teams"
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all messages from all [chats](../resources/chatmessage.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+Get all messages from all [chats](../resources/chatmessage.md) in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
 
-To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
+To learn more about how to use the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
