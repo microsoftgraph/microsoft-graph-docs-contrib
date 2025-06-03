@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Represents unique identities on Viva Engage.
 
 
-Inherits from [identitySet](../resources/intune-identityset.md).
+Inherits from [identitySet](../resources/identityset.md).
 
 This resource is an open type.
 
