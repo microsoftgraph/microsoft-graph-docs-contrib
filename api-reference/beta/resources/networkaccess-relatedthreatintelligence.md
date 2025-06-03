@@ -1,6 +1,6 @@
 ---
 title: "relatedThreatIntelligence resource type"
-description: "Represents threat intelligence information related to a network access alert."
+description: "Represents threat intelligence information related to a Global Secure Access alert."
 author: "miritsadon"
 ms.date: 04/07/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents threat intelligence information related to a network access alert.
+Represents threat intelligence information related to a Global Secure Access alert.
 
 Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/networkaccess-relatedresource.md).
 
@@ -36,6 +36,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.relatedThreatIntelligence",
-  "threatCount": "Integer"
+  "threatCount": 3
 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: "relatedDestination resource type"
-description: "Represents a destination involved in a network access alert."
+description: "Represents a destination involved in a Global Secure Access alert."
 author: "miritsadon"
 ms.date: 04/07/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a destination involved in a network access alert.
+Represents a destination involved in a Global Secure Access [alert](../resources/networkaccess-alert.md).
 
 Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/networkaccess-relatedresource.md).
 
@@ -39,9 +39,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.relatedDestination",
-  "fqdn": "String",
-  "ip": "String",
-  "port": "Integer",
-  "networkingProtocol": "String"
+  "fqdn": "example.contoso.com",
+  "ip": "192.168.1.10",
+  "port": 443,
+  "networkingProtocol": "tcp"
 }
 ```

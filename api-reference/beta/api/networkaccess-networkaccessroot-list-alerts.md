@@ -41,7 +41,7 @@ GET /networkAccess/alerts
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 |Name|Syntax|Notes|
 |:---|:---|:---|
@@ -98,16 +98,22 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.networkaccess.alert",
       "id": "6fb54016-77df-4d32-9946-7603af8433e1",
       "alertType": "String",
-      "creationDateTime": "String (timestamp)",
+      "creationDateTime": "2024-04-01T12:00:00Z",
       "description": "String",
       "actions": [
         {
-          "@odata.type": "microsoft.graph.networkaccess.alertAction"
+          "@odata.type": "microsoft.graph.networkaccess.alertAction",
+          "actionType": "block",
+          "timestamp": "2024-04-01T12:00:00Z",
+          "status": "completed"
         }
       ],
       "relatedResources": [
         {
-          "@odata.type": "microsoft.graph.networkaccess.relatedRemoteNetwork"
+          "@odata.type": "microsoft.graph.networkaccess.relatedRemoteNetwork",
+          "id": "remote-network-123",
+          "name": "RemoteNetwork1",
+          "ipAddress": "192.168.1.1"
         }
       ],
       "vendorName": "String",
@@ -125,11 +131,14 @@ Content-Type: application/json
       "subTechniques": [
         "String"
       ],
-      "firstActivityDateTime": "String (timestamp)",
-      "lastActivityDateTime": "String (timestamp)",
+     "firstActivityDateTime": "2024-04-01T12:05:00Z",
+     "lastActivityDateTime": "2024-04-01T13:00:00Z",
       "isPreview": "Boolean",
       "extendedProperties": {
-        "@odata.type": "microsoft.graph.networkaccess.extendedProperties"
+        "@odata.type": "microsoft.graph.networkaccess.extendedProperties",
+        "property1": "value1",
+        "property2": 42,
+        "property3": true
       }
     }
   ]

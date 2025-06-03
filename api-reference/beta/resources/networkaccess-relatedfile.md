@@ -1,6 +1,6 @@
 ---
 title: "relatedFile resource type"
-description: "Represents a file involved in a network access alert."
+description: "Represents a file involved in a Global Secure Access alert."
 author: "miritsadon"
 ms.date: 04/07/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a file involved in a network access alert.
+Represents a file involved in a Global Secure Access alert.
 
 Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/networkaccess-relatedresource.md).
 
@@ -38,8 +38,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.relatedFile",
-  "name": "String",
-  "directory": "String",
-  "sizeInBytes": "Integer"
+  "name": "malware.exe",
+  "directory": "C:\\Users\\Public\\Downloads",
+  "sizeInBytes": 204800
 }
 ```

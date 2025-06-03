@@ -18,11 +18,13 @@ Represents additional data for network access resources as key-value pairs. Used
 
 This resource is an open type, allowing arbitrary key-value pairs.
 
+Inherits from [microsoft.graph.dictionary](../resources/dictionary.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|*key*|String|The property name.|
-|*value*|String|The property value.|
+|key|String|The property name.|
+|value|String|The property value.|
 
 ## Relationships
 None.

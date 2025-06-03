@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a summary of entities for global secure access reporting.
+Represents a summary of entities for Global secure access reporting.
 
 ## Properties
 |Property|Type|Description|
@@ -37,9 +37,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.entitiesSummary",
-  "trafficType": "String",
-  "userCount": "Integer",
-  "deviceCount": "Integer",
-  "workloadCount": "Integer"
+  "trafficType": "internet",
+  "userCount": 100,
+  "deviceCount": 50,
+  "workloadCount": 10
 }
 ```

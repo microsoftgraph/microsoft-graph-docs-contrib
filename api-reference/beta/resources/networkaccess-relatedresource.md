@@ -1,6 +1,6 @@
 ---
 title: "relatedResource resource type"
-description: "Abstract base type for related entities in network access alerts."
+description: "Abstract base type for related entities in Global Secure Access alerts."
 author: "miritsadon"
 ms.date: 04/07/2025
 ms.localizationpriority: medium
@@ -14,14 +14,12 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type for related entities in network access alerts. This type is not intended to be instantiated directly.
+Abstract base type for related entities in Global Secure Access alerts. This type is not intended to be instantiated directly.
 
-This is an abstract type.
+This is an abstract type from which the following resources inherit:
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-<!-- No properties defined. -->
+None.
 
 ## Relationships
 None.

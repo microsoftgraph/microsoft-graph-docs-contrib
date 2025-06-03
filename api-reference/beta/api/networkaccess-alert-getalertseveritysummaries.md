@@ -92,7 +92,9 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.networkaccess.alertSeveritySummary"
+      "@odata.type": "microsoft.graph.networkaccess.alertSeveritySummary",
+      "severity": "medium",
+      "count": 8
     }
   ]
 }

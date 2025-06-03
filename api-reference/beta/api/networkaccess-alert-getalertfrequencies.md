@@ -1,6 +1,6 @@
 ---
 title: "alert: getAlertFrequencies"
-description: "Get the frequency of alerts detected by the network access system."
+description: "Get the frequency of alerts detected by Global Secure Access."
 author: "miritsadon"
 ms.date: 04/07/2025
 ms.localizationpriority: medium
@@ -92,7 +92,10 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.networkaccess.alertFrequencyPoint"
+      "@odata.type": "microsoft.graph.networkaccess.alertFrequencyPoint",
+      "date": "2024-04-01",
+      "severity": "high",
+      "alertCount": 5
     }
   ]
 }
