@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "networkaccess-tlstermination-delete-externalcertificateauthoritycertificates-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/networkaccess-tlstermination-delete-externalcertificateauthoritycertificates-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/networkaccess-externalcertificateauthoritycertificates-delete-permissions.md)]
 
 ## HTTP request
 

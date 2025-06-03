@@ -8,7 +8,7 @@ ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
-# List policyRules
+# List tlsInspection policyRules
 
 Namespace: microsoft.graph.networkaccess
 
