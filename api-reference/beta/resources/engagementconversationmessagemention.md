@@ -4,7 +4,7 @@ description: "Represents a mention within a Viva Engage conversation message."
 author: "aditijha4"
 ms.date: 05/21/2025
 ms.localizationpriority: medium
-ms.subservice: "viva-engage*"
+ms.subservice: "viva-engage"
 doc_type: resourcePageType
 ---
 

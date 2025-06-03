@@ -4,7 +4,7 @@ description: "The onlineMeetingEngagementConversation resource type represents a
 author: "PV-work-25"
 ms.date: 05/21/2025
 ms.localizationpriority: medium
-ms.subservice: viva-engage"
+ms.subservice: "viva-engage"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ Inherits from [engagementConversation](../resources/engagementconversation.md).
 |organizer|[engagementIdentitySet](../resources/engagementidentityset.md)|Unique identifier of the online meeting organizer|
 |starterId|String|The ID of the first message that initiated the Q&A conversation. Useful for tracing the origin of the thread.  Inherited from [engagementConversation](../resources/engagementconversation.md).|
 |upvoteCount|Int32|The number of upvotes the conversation has received. |
-|creationMode|engagementCreationMode|Indicates how the conversation was created. Inherited from [engagementConversation](../resources/engagementconversation.md).The possible values are: `none`, `migration`, `unknownFutureValue`.|-
+|creationMode|engagementCreationMode|Indicates how the conversation was created. Inherited from [engagementConversation](../resources/engagementconversation.md).The possible values are: `none`, `migration`, `unknownFutureValue`.|
 
 ### engagementConversationModerationState values
 | Member | Description |

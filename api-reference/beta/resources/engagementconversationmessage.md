@@ -44,7 +44,7 @@ No Methods supported at this time.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique ID of a Viva Engage conversation message. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|body|[itemBody](../resources/intune-itembody.md)|The main content of the message|
+|body|[itemBody](../resources/itembody.md)|The main content of the message|
 |createdDateTime|DateTimeOffset|Timestamp when the message was created.|
 |creationMode|[engagementCreationMode](../resources/engagementCreationMode.md)|Indicates how the message was created. The possible values are: `none`, `migration`, `unknownFutureValue`.|
 |from|[engagementIdentitySet](../resources/engagementidentityset.md)|Identity of the sender of the message.|

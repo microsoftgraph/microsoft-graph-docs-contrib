@@ -16,14 +16,14 @@ Namespace: microsoft.graph
 
 Export all Teams Q&A conversation messages in the tenant.
 
-It provides a point-in-time snapshot of all Q&A activity in JSON format.
+It provides a snapshot of all Q&A activity in JSON format.
 
 The export includes:
 - Original question/discussion text
 - User who posted
 - All replies and responders
 - Vote counts
-- Question status (pending/dismissed)
+- Moderation status (pending/dismissed)
 - Private replies
 - Meeting ID and organizer ID (for mapping to meeting metadata)
 

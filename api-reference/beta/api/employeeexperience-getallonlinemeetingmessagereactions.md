@@ -1,6 +1,6 @@
 ---
 title: "employeeExperience: get online meeting q&a message reactions"
-description: "Get all Teams Q&A conversation messages in a tenant"
+description: "Get all reactions associated with a Teams Q&A conversation message."
 author: "aditijha4"
 ms.date: 05/21/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Export all reactions associated with a Teams Q&A conversation message.
+Get all reactions associated with a Teams Q&A conversation message.
 
 It provides a point-in-time snapshot of all reactions posted to a Q&A message in Teams.
 
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/employeeExperience/onlineMeetingConversations/152396cc-4954-4ccf-b514-e1c75ba8b5dd/messages/aff83136-b7f6-450a-85e8-b430f1bd1129/reactions
+GET https://graph.microsoft.com/beta/employeeExperience/onlineMeetingConversations/eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9/messages/eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ/reactions
 ```
 
 
@@ -85,16 +85,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata/employeeExperience/onlineMeetingConversations/152396cc-4954-4ccf-b514-e1c75ba8b5dd/messages/aff83136-b7f6-450a-85e8-b430f1bd1129/reactions",
-    "@odata.nextLink": "/employeeExperience/onlineMeetingConversations/152396cc-4954-4ccf-b514-e1c75ba8b5dd/messages/aff83136-b7f6-450a-85e8-b430f1bd1129/reactions&skipToken=eyADASSDSA",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/onlineMeetingConversations('eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9')/messages('eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ')/reactions",
+    "@odata.nextLink": "/employeeExperience/onlineMeetingConversations('eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9')/messages('eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ')/reactions&skipToken=eyADASSDSA",
     "value": [
         {
            "@odata.type": "#microsoft.graph.engagementConversationMessageReaction",
-           "id": "ey",        
+           "id": "eyJxFkLBYM09IlRocmVhZCIsImlkIjoiMzM0NjU1NT0MzEzNiJ9ExODA",        
            "createdDateTime": "2019-02-04T19:58:15.511Z",
            "reactionBy": {
               "user":{
-                 "id": "2de80ca4-3e91-11ef-ba07-ce45dc06b08b"
+                "displayName": "admin@a830edad9050849lq4lepgz0ubr.onmicrosoft.com",
+                "id": "04222c1b-87eb-4cb1-80af-85cae1847a3c"
               }
            },
            "reactionType": "like"

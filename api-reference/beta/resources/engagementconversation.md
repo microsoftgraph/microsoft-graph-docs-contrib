@@ -40,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-<!--|creationMode|engagementCreationMode|Specifies how a Viva Engage conversation was initiated. The possible values are: `none`, `migration`, `unknownFutureValue`.|-->
+|creationMode|[engagementCreationMode](../resources/engagementCreationMode.md)|Specifies how a Viva Engage conversation was initiated. The possible values are: `none`, `migration`, `unknownFutureValue`.|
 |id|String|The unique ID of a conversation in Viva Engage. Inherited from [entity](../resources/entity.md).|
 |starterId|String|The unique ID of the first message in a Viva Engage conversation|
 

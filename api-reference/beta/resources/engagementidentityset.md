@@ -24,11 +24,11 @@ This resource is an open type.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|application|[identity](../resources/intune-identity.md)|The application identity. Inherited from [identitySet](../resources/intune-identityset.md).|
-|audience|[identity](../resources/intune-identity.md)|The audience identity in Viva Engage|
-|device|[identity](../resources/intune-identity.md)|The device identity. Inherited from [identitySet](../resources/intune-identityset.md).|
-|group|[identity](../resources/intune-identity.md)|The group identity in Viva Engage|
-|user|[identity](../resources/intune-identity.md)|The user identity. Inherited from [identitySet](../resources/intune-identityset.md).|
+|application|[identity](../resources/identity.md)|The application identity. Inherited from [identitySet](../resources/identityset.md).|
+|audience|[identity](../resources/identity.md)|The audience identity in Viva Engage|
+|device|[identity](../resources/identity.md)|The device identity. Inherited from [identitySet](../resources/identityset.md).|
+|group|[identity](../resources/identity.md)|The group identity in Viva Engage|
+|user|[identity](../resources/identity.md)|The user identity. Inherited from [identitySet](../resources/identityset.md).|
 
 ## Relationships
 None.
