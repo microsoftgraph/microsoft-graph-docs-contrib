@@ -280,7 +280,7 @@ Content-type: application/json
 
 ### Step 2.2: Edit or update the web content filtering policy
 
-After creating a filtering policy, you can programmatically edit or update it. You can add new rules to the policy by sending a POST request or update destinations in existing rules using a PATCH request. This allows you to adjust filtering policies as your organization's needs change, such as blocking additional categories or domains, or modifying existing rules. 
+After creating a filtering policy, you can programmatically edit or update it. You can add new rules to the policy by sending a POST request or update destinations in existing rules using a PATCH request. Either of these changes allow you to adjust filtering policies as your organization's needs change, such as blocking more categories or domains, or modifying existing rules. 
 
 In this example, you use a PATCH request to add a destination to the rule created in step 2.1.
 
@@ -552,7 +552,7 @@ Content-type: application/json
 
 ## Step 3: Link a Conditional Access policy
 
-To enforce your filtering profile, you need to link it to a Conditional Access (CA) policy. Doing so will make the contents of your filtering profile user- and context-aware. In this step, you create a CA policy with the following settings:
+To enforce your filtering profile, you need to link it to a Conditional Access (CA) policy. Doing so makes the contents of your filtering profile user- and context-aware. In this step, you create a CA policy with the following settings:
 
 - Target it to a user with ID `00aa00aa-bb11-cc22-dd33-44ee44ee44ee` and the app "All internet resources with Global Secure Access" with **appId** `5dc48733-b5df-475c-a49b-fa307ef00853`.
 - Configure a session control with **globalSecureAccessFilteringProfile** ID `dddddddd-9999-0000-1111-eeeeeeeeeeee`.
