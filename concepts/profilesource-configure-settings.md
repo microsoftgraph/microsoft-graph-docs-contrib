@@ -79,11 +79,11 @@ Content-Type: application/json
 }
 ```
 
-## Add a profile source
+### Add a profile source
 
 Use the [Create](/graph/api/peopleadminsettings-post-profilesources?view=graph-rest-beta&preserve-view=true) operation to add a profile source in your organization.
 
-### Request
+#### Request
 
 ``` http
 POST https://graph.microsoft.com/beta/admin/people/profileSources
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 If successful, this method returns a `201 Created` response code and a [profileSource](/graph/api/resources/profilesource?view=graph-rest-beta&preserve-view=true) object in the response body.
 
-### Response
+#### Response
 
 ``` http
 HTTP/1.1 201 Created
@@ -128,11 +128,11 @@ Content-type: application/json
 }
 ```
 
-## Update a profile source
+### Update a profile source
 
 Use the [Update](/graph/api/profilesource-update?view=graph-rest-beta&preserve-view=true) operation to modify a profile source in your organization.
 
-### Request
+#### Request
 
 ``` http
 PATCH https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
@@ -157,7 +157,7 @@ Content-Type: application/json
 
 If successful, this method returns a `200 OK` response code and a [profileSource](/graph/api/resources/profilesource?view=graph-rest-beta&preserve-view=true) object in the response body.
 
-### Response
+#### Response
 
 ``` http
 HTTP/1.1 200 OK
@@ -184,11 +184,11 @@ Content-type: application/json
 }
 ```
 
-## Remove a profile source
+### Remove a profile source
 
 Use the [Delete](/graph/api/profilesource-delete?view=graph-rest-beta&preserve-view=true) operation to remove a profile source in your organization.
 
-### Request
+#### Request
 
 ``` http
 DELETE https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
@@ -196,7 +196,7 @@ DELETE https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='ba
 
 If successful, this method returns a `204 No Content` response code.
 
-### Response
+#### Response
 
 ``` http
 HTTP/1.1 204 No Content
