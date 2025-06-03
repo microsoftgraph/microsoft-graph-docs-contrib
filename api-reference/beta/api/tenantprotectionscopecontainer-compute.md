@@ -70,25 +70,13 @@ POST https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/protect
 Content-type: application/json
 
 {
-  "activities": "uploadText",
-  "locations": [
-    {
-      "@odata.type": "#microsoft.graph.policyLocationDomain",
-      "value": "public.contoso.com"
-    }
-  ],
-  "pivotOn": "location",
-  "deviceMetadata": {
-    "deviceType": "managed",
-    "operatingSystemSpecifications": {
-       "operatingSystemPlatform": "Windows",
-       "operatingSystemVersion": "10.0.19045"
-    }
-  },
-  "integratedAppMetadata": {
-      "name": "Contoso Service Monitor",
-      "version": "2.0.1"
-  }
+    "activities": "uploadText,downloadText",
+    "locations": [
+        {
+            "@odata.type": "microsoft.graph.policyLocationApplication",
+            "value": "be121c8f-ecd8-4026-b699-669e0ce1bcbf"
+        }
+    ]
 }
 ```
 
@@ -103,37 +91,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.policyTenantScope)",
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.policyTenantScope",
-      "locations": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.policyTenantScope)",
+    "value": [
         {
-          "@odata.type": "#microsoft.graph.policyLocationDomain",
-          "value": "public.contoso.com"
+            "activities": "uploadText,downloadText",
+            "executionMode": "evaluateOffline",
+            "policyScope": {
+                "inclusions": [
+                    {
+                        "identity": "All"
+                    }
+                ],
+                "exclusions": [
+                ]
+            },
+            "locations": [
+                {
+                    "value": "be121c8f-ecd8-4026-b699-669e0ce1bcbf"
+                }
+            ],
+            "policyActions": [
+            ]
         }
-      ],
-      "activities": "uploadText",
-      "executionMode": "evaluateInline",
-      "policyActions": [
-         {
-            "@odata.type": "#microsoft.graph.browserRestrictionAction",
-             "action": "browserRestriction",
-             "restrictionAction": "block",
-             "message": "Uploading sensitive content to this site is blocked by policy.",
-             "triggers": ["upload"], // Conceptual trigger
-             "webSiteGroupId": "website-group-guid-1"
-         }
-      ],
-       "policyScope": {
-          "@odata.type": "microsoft.graph.policyBinding",
-          "inclusions": [
-            { "@odata.type": "#microsoft.graph.tenantScope", "identity": "All" }
-          ],
-          "exclusions": []
-       }
-    }
-    // Potentially other scopes for different locations/activities if requested/applicable
-  ]
+    ]
 }
 ```
