@@ -1,6 +1,5 @@
 ---
-title: "processContentResponses resource type"
-toc.title: "processContentResponses resource type (preview)"
+title: "processContentResponses resource type (preview)"
 description: "Represents the response for a single request within a batch content processing operation."
 author: "ArunGedela"
 ms.date: 04/08/2025

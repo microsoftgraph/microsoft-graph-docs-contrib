@@ -57,6 +57,7 @@ The following table shows the properties that are required when you update an [a
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Users eligible to request this access package from this policy. Required.|
 |requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Who must approve requests for access package in this policy. Required.|
 |accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews aren't required. Required.|
+|accessPackageNotificationSettings|[accessPackageNotificationSettings](../resources/accesspackagenotificationsettings.md)|Represents the settings for email notifications for requests to an access package.|
 
 
 ## Response

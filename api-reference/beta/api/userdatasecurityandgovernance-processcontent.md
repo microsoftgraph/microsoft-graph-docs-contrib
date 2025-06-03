@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Process content against data protection policies in the context of the current user. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -39,13 +41,15 @@ POST /me/dataSecurityAndGovernance/processContent
 POST /users/{usersId}/dataSecurityAndGovernance/processContent
 ```
 
+/me/dataSecurityAndGovernance/processContent supports delegated permissions only.
+
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
-| If-None-Match | Optional. This value is used by the API to determine if the policy state has changed since the last call to the API. The value is from the Etag header returned from [protectionScopes compute](../api/userprotectionscopecontainer-compute.md)|
+| If-None-Match | Optional. This value is used by the API to determine if the policy state changed since the last call to the API. The value is from the Etag header returned from [protectionScopes compute](../api/userprotectionscopecontainer-compute.md)|
 
 ## Request body
 
@@ -61,7 +65,7 @@ The following table lists the parameters that are required when you call this ac
 
 | Name          | Description   |
 | :------------ | :------------ |
-| ETag          | An indicator whether the configured policy state has changed. If the policy state has changed, the protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). |
+| ETag          | An indicator whether the configured policy state changed. If the policy state changed, the protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). |
 
 ## Response
 
@@ -72,6 +76,7 @@ If successful, this action returns a `200 OK` response code and a [processConten
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userdatasecurityandgovernance.processcontent"
@@ -82,47 +87,78 @@ POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processConten
 Content-Type: application/json
 
 {
-  "contentToProcess": {
-        "contentEntries": [
-            {
-                "@odata.Type": "microsoft.graph.processFileMetadata",
-                "identifier": "91e1ca70-6e5b-4120-abf0-472034ba05c3",
-                "content":{
-                    "@odata.Type": "microsoft.graph.binaryContent",
-                    "data": "<some-binary-data>"
-                },
-                "name": "Example.docx",
-                "createdDateTime": "2024-07-23T01:31:40.2020463Z",
-                "updatedDateTime": "2024-09-17T13:45:21.0000000Z",
-                "correlationId": "54689",
-                "sequenceNumber": 1,
-                "length": 17352,
-                "isTruncated": false,
-                "ownerId": "ffe1ca70-6e5b-4120-abf0-472034ba05d4",
-                "customProperties": {
-                    "Department": "Finance",
-                    "ReviewerName": "John Smith"
-                }
-            }
-        ],
-        "activityMetadata": {
-            "activity": "uploadFile",
-            "applicationLocation": "bing.com"
-        },
-        "deviceMetadata": {
-            "deviceType": "unmanaged",
-            "operatingSystemSpecifications": {
-                "operatingSystemPlatform": "windows",
-                "operatingSystemVersion": "10.0.2.4"
-            }
-        },
-        "integratedAppMetadata": {
-            "name": "ContosoIsvApplication",
-            "version": "1.2",
-        }
+    "contentToProcess": {
+       "contentEntries": [
+          {
+             "@odata.type": "microsoft.graph.processConversationMetadata",
+             "identifier": "07785517-9081-4fe7-a9dc-85bcdf5e9075",
+             "content": {
+                "@odata.type": "microsoft.graph.textContent", 
+                "data": "Write an acceptance letter for Alex Wilber with Credit card number 4532667785213500, ssn: 120-98-1437 at One Microsoft Way, Redmond, WA 98052"
+             },
+             "name":"PC Purview API Explorer message",
+             "correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d9580d",
+             "sequenceNumber": 0, 
+             "isTruncated": false,
+             "createdDateTime": "2025-05-27T17:23:20",
+             "modifiedDateTime": "2025-05-27T17:23:20"
+          }
+       ],
+       "activityMetadata": { 
+          "activity": "uploadText"
+       },
+       "deviceMetadata": {
+          "operatingSystemSpecifications": {
+             "operatingSystemPlatform": "Windows 11",
+             "operatingSystemVersion": "10.0.26100.0" 
+          },
+          "ipAddress": "127.0.0.1"
+       },
+       "protectedAppMetadata": {
+          "name": "PC Purview API Explorer",
+          "version": "0.2",
+          "applicationLocation":{
+             "@odata.type": "microsoft.graph.policyLocationApplication",
+             "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
+          }
+       },
+       "integratedAppMetadata": {
+          "name": "PC Purview API Explorer",
+          "version": "0.2" 
+       }
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/userdatasecurityandgovernanceprocesscontent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/userdatasecurityandgovernanceprocesscontent-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/userdatasecurityandgovernanceprocesscontent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/userdatasecurityandgovernanceprocesscontent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/userdatasecurityandgovernanceprocesscontent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/userdatasecurityandgovernanceprocesscontent-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/userdatasecurityandgovernanceprocesscontent-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -139,23 +175,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "protectionScopeState": "notModified",
-    "policyActions": [
-        {
-            "action": "restrictAccess",
-            "restrictionAction": "Block"
-        }
-    ],
-    "processingErrors": [
-        {
-            "code": "OcrNotAvailable",
-            "message": "OCR functionality isn't enabled for this user",
-            "errorType": "permanent",
-            "innerError": {
-                    "code": "Permanent",
-                    "clientRequestId": "6ebdb560-cb16-4176-94fa-e8d04ca054fd"
-            }
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
+  "protectionScopeState": "notModified",
+  "policyActions": [],
+  "processingErrors": []
 }
 ```

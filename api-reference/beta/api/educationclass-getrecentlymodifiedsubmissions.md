@@ -1018,7 +1018,6 @@ GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 ---
 
-
 #### Response
 The following example shows the response.
 

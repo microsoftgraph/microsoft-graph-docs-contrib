@@ -37,7 +37,7 @@ items:
       displayName: change notifications, data loss prevention, DLP, scenario
     - name: Augment Microsoft search
       href: patterns/augment-search-experience-with-custom-data.md
-      displayName: Microsoft Graph connectors, Microsoft 365 Copilot, scenario
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot, Copilot connectors, scenario
   - name: Metered APIs
     items:
     - name: Overview
@@ -554,50 +554,48 @@ items:
   - name: External data connections
     items:
     - name: Connectors overview
-      href: connecting-external-content-connectors-overview.md
-      displayName: Microsoft Graph connectors, connect external content
+      href: /microsoft-365-copilot/extensibility/overview-copilot-connector?toc=/graph/toc.json
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors, connect external content
     - name: Connectors experiences
       href: connecting-external-content-experiences.md
-      displayName: Microsoft Graph connectors, connect external content with Microsoft 365 experiences
-    - name: Connectors API
-      href: connecting-external-content-connectors-api-overview.md
-      displayName: Microsoft Graph connectors
-    - name: Use Postman
-      href: connecting-external-content-connectors-api-postman.md
-      displayName: connector, connectors
-    - name: Build your first custom connector
-      href: connecting-external-content-build-quickstart.yml
-      displayName: connectors, Microsoft Graph connectors
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors, connect external content with Microsoft 365 experiences
     - name: Connectors samples
       href: /samples/browse/?terms=graph%20connectors
     - name: Community connectors samples
       href: https://adoption.microsoft.com/sample-solution-gallery/?product=Microsoft+Graph+connectors
-    - name: Build your first custom connector using SDK
+    - name: Build your first connector
+      items:
+      - name: Build with Agents Toolkit
+        href: /microsoft-365-copilot/extensibility/build-your-first-connector?context=graph/context
+      - name: Build with SDK
+        items:
+        - name: Overview
+          href: custom-connector-sdk-sample-overview.md
+        - name: Build the connector
+          href: custom-connector-sdk-sample-create.md
+        - name: Test the connector
+          href: custom-connector-sdk-sample-test.md
+        - name: Host the connector as a Windows service
+          href: custom-connector-sdk-sample-hosting.md
+        - name: Publish the connector
+          href: custom-connector-sdk-sample-publish.md
+        - name: Surface the data in search
+          href: custom-connector-sdk-sample-search.md
+    - name: Connectors API
       items:
       - name: Overview
-        href: custom-connector-sdk-sample-overview.md
-      - name: Build the connector
-        href: custom-connector-sdk-sample-create.md
-      - name: Test the connector
-        href: custom-connector-sdk-sample-test.md
-      - name: Host the connector as a Windows service
-        href: custom-connector-sdk-sample-hosting.md
-      - name: Publish the connector
-        href: custom-connector-sdk-sample-publish.md
-      - name: Surface the data in search
-        href: custom-connector-sdk-sample-search.md
-    - name: Simplify connector deployment
-      href: connecting-external-content-deploy-teams.md
-    - name: Manage connections
-      href: connecting-external-content-manage-connections.md
-    - name: Manage schema
-      href: connecting-external-content-manage-schema.md
-    - name: Manage items
-      href: connecting-external-content-manage-items.md
-    - name: Use external groups
-      href: connecting-external-content-external-groups.md
-    - name: API limits
-      href: connecting-external-content-api-limits.md
+        href: connecting-external-content-connectors-api-overview.md
+        displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors,
+      - name: Manage connections
+        href: connecting-external-content-manage-connections.md
+      - name: Manage schema
+        href: connecting-external-content-manage-schema.md
+      - name: Manage items
+        href: connecting-external-content-manage-items.md
+      - name: Use external groups
+        href: connecting-external-content-external-groups.md
+      - name: API limits
+        href: connecting-external-content-api-limits.md   
   - name: Files
     items:
     - name: Overview
@@ -778,12 +776,16 @@ items:
     items:
     - name: Overview
       href: social-intel-concept-overview.md
+    - name: Configure profile source precedence (preview)
+      href: profilepriority-configure-profilepropertysetting.md
     - name: Customize item insights privacy
       href: insights-customize-item-insights-privacy.md
     - name: Customize people insights privacy (preview)
       href: insights-customize-people-insights-privacy.md
     - name: Customize the profile card
       href: add-properties-profilecard.md
+    - name: Customize profile source (preview)
+      href: profilesource-configure-settings.md
     - name: Enable or disable pronouns
       href: pronouns-configure-pronouns-availability.md
     - name: Enable or disable name pronunciation

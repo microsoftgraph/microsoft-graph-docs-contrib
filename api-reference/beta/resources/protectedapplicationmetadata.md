@@ -1,6 +1,5 @@
 ---
-title: "protectedApplicationMetadata resource type"
-toc-title: "protectedApplicationMetadata resource type (preview)"
+title: "protectedApplicationMetadata resource type (preview)"
 description: "Represents metadata about an application whose activities are being governed by an integrated application."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -23,7 +22,9 @@ For internal use only. Don't use.
 
 | Property      | Type   | Description                                                      |
 | :------------ | :----- | :--------------------------------------------------------------- |
-| applicationLocation | [policyLocation](../resources/policylocation.md) | For internal use only. Don't use. |
+| applicationLocation | [policyLocation](../resources/policylocation.md) |The Entra client (application) ID. Required.|
+| name     | String | The name of the integrated application. Inherited from [integratedApplicationMetadata](./integratedapplicationmetadata.md).       |
+| version  | String | The version number of the integrated application. Inherited from [integratedApplicationMetadata](./integratedapplicationmetadata.md). |
 
 ## Relationships
 

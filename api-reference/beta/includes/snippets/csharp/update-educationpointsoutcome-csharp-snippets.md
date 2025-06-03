@@ -15,7 +15,7 @@ var requestBody = new EducationPointsOutcome
 	Points = new EducationAssignmentPointsGrade
 	{
 		OdataType = "#microsoft.graph.educationAssignmentPointsGrade",
-		Points = 85.0f,
+		Points = 85.5f,
 	},
 };
 

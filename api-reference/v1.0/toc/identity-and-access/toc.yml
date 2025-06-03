@@ -756,6 +756,8 @@ items:
         href: ../../resources/accesspackageresource.md
       - name: List
         href: ../../api/accesspackagecatalog-list-resources.md
+      - name: Refresh
+        href: ../../api/accesspackageresource-refresh.md
     - name: Access package resource role
       items:
       - name: Access package resource role
@@ -1924,6 +1926,8 @@ items:
         href: ../../api/riskyuser-get.md
       - name: Confirm compromised
         href: ../../api/riskyuser-confirmcompromised.md
+      - name: Confirm safe
+        href: ../../api/riskyuser-confirmsafe.md
       - name: Dismiss
         href: ../../api/riskyuser-dismiss.md
       - name: List history
