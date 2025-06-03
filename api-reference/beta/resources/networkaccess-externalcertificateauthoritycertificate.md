@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md)
 |[Create](../api/networkaccess-tlstermination-post-externalcertificateauthoritycertificates.md)|[microsoft.graph.networkaccess.externalCertificateAuthorityCertificate](../resources/networkaccess-externalcertificateauthoritycertificate.md)|Create a new externalCertificateAuthorityCertificate object and receive a Certificate Signing Request (CSR).|
 |[Get](../api/networkaccess-externalcertificateauthoritycertificate-get.md)|[microsoft.graph.networkaccess.externalCertificateAuthorityCertificate](../resources/networkaccess-externalcertificateauthoritycertificate.md)|Get an externalCertificateAuthorityCertificate object.|
 |[Update](../api/networkaccess-externalcertificateauthoritycertificate-update.md)|None|Update the properties of an externalCertificateAuthorityCertificate object, including uploading the signed certificate.|
-|[Delete](../api/networkaccess-tlstermination-delete-externalcertificateauthoritycertificates.md)|None|Delete an externalCertificateAuthorityCertificate object.|
+|[Delete](../api/networkaccess-externalcertificateauthoritycertificate-delete.md)|None|Delete an externalCertificateAuthorityCertificate object.|
 
 ## Properties
 |Property|Type|Description|
