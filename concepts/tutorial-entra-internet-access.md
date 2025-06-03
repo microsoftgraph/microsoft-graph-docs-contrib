@@ -183,7 +183,7 @@ In this example, you create a filtering policy with rules that block access to t
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "tutorial_configure_entrainternetaccess_create_filteringPolicy"
+  "name": "tutorial_configure_entrainternetaccess_edit_filteringPolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/networkaccess/filteringPolicies
@@ -278,7 +278,109 @@ Content-type: application/json
 }
 ```
 
-### Step 2.2: Create a filtering profile or security profile
+### Step 2.2: Edit or update the web content filtering policy
+
+After creating a filtering policy, you can programmatically edit or update it. You can add new rules to the policy by sending a POST request or update destinations in existing rules using a PATCH request. This allows you to adjust filtering policies as your organization's needs change, such as blocking additional categories or domains, or modifying existing rules. 
+
+In this example, you use a PATCH request to add a destination to the rule created in step 2.1.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_entrainternetaccess_create_filteringPolicy"
+}-->
+```http
+POST https://graph.microsoft.com/beta/networkaccess/filteringPolicies('cccccccc-2222-3333-4444-dddddddddddd')/policyRules('<policyRuleId>')
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.networkaccess.fqdnFilteringRule",
+  "destinations": [
+    {
+      "@odata.type": "#microsoft.graph.networkaccess.fqdn",
+      "value": "bing.com"
+    },
+    {
+      "@odata.type": "#microsoft.graph.networkaccess.fqdn",
+      "value": "*.bing.com"
+    },
+    {
+      "@odata.type": "#microsoft.graph.networkaccess.fqdn",
+      "value": "bing.co.uk"
+    }
+  ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-entrainternetaccess-edit-filteringPolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-entrainternetaccess-edit-filteringPolicy-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-entrainternetaccess-edit-filteringPolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-entrainternetaccess-edit-filteringPolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-entrainternetaccess-edit-filteringPolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-entrainternetaccess-edit-filteringPolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-entrainternetaccess-edit-filteringPolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-entrainternetaccess-edit-filteringPolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "#microsoft.graph.networkaccess.fqdnFilteringRule"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.networkaccess.fqdnFilteringRule",
+  "id": "cccccccc-2222-3333-4444-dddddddddddd",
+  "name": "bing FQDNs",
+  "ruleType": "fqdn",
+  "destinations": [
+    {
+        "@odata.type": "#microsoft.graph.networkaccess.fqdn",
+        "value": "google.co.uk"
+    },
+    {
+        "@odata.type": "#microsoft.graph.networkaccess.fqdn",
+        "value": "google.com"
+    },
+    {
+        "@odata.type": "#microsoft.graph.networkaccess.fqdn",
+        "value": "bing.com"
+    }
+  ]
+}
+```
+
+### Step 2.3: Create a filtering profile or security profile
 
 Create a filtering or security profile to hold your policies and target it in Conditional Access session control. After creating the profile, note the filtering profile ID for later use in the Conditional Access policy.
 
@@ -358,7 +460,7 @@ Content-type: application/json
 }
 ```
 
-### Step 2.3: Link the filtering policy to the filtering profile or security profile
+### Step 2.4: Link the filtering policy to the filtering profile or security profile
 
 #### Request
 
