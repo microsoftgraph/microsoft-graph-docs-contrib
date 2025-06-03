@@ -21,7 +21,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Teamwork and communications | Messaging
 
-Updated the throttling information for [getAllRetainedMessages](/graph/api/chat-getallretainedmessages). The limit per app per tenant has changed from 200 requests per second to 30 requests per second. The limit per app across all tenants has increased from 1,000 requests per second to 1,500 requests per second.
+Updated the throttling information for [getAllRetainedMessages](/graph/api/chat-getallretainedmessages). The limit per app per tenant changed from 200 requests per second to 30 requests per second. The limit per app across all tenants increased from 1,000 requests per second to 1,500 requests per second.
 
 ## May 2025: New and generally available
 
