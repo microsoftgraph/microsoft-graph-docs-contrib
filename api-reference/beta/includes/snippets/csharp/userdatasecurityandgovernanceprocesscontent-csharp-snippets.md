@@ -17,62 +17,41 @@ var requestBody = new ProcessContentPostRequestBody
 	{
 		ContentEntries = new List<ProcessContentMetadataBase>
 		{
-			new ProcessContentMetadataBase
+			new ProcessConversationMetadata
 			{
-				OdataType = "microsoft.graph.processFileMetadata",
-				Identifier = "91e1ca70-6e5b-4120-abf0-472034ba05c3",
-				Content = new ContentBase
+				OdataType = "microsoft.graph.processConversationMetadata",
+				Identifier = "07785517-9081-4fe7-a9dc-85bcdf5e9075",
+				Content = new TextContent
 				{
-					OdataType = "microsoft.graph.binaryContent",
-					AdditionalData = new Dictionary<string, object>
-					{
-						{
-							"data" , "<some-binary-data>"
-						},
-					},
+					OdataType = "microsoft.graph.textContent",
+					Data = "Write an acceptance letter for Alex Wilber with Credit card number 4532667785213500, ssn: 120-98-1437 at One Microsoft Way, Redmond, WA 98052",
 				},
-				Name = "Example.docx",
-				CreatedDateTime = DateTimeOffset.Parse("2024-07-23T01:31:40.2020463Z"),
-				CorrelationId = "54689",
-				SequenceNumber = 1L,
-				Length = 17352L,
+				Name = "PC Purview API Explorer message",
+				CorrelationId = "d63eafd2-e3a9-4c1a-b726-a2e9b9d9580d",
+				SequenceNumber = 0L,
 				IsTruncated = false,
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"updatedDateTime" , "2024-09-17T13:45:21.0000000Z"
-					},
-					{
-						"ownerId" , "ffe1ca70-6e5b-4120-abf0-472034ba05d4"
-					},
-					{
-						"customProperties" , new UntypedObject(new Dictionary<string, UntypedNode>
-						{
-							{
-								"department", new UntypedString("Finance")
-							},
-							{
-								"reviewerName", new UntypedString("John Smith")
-							},
-						})
-					},
-				},
+				CreatedDateTime = DateTimeOffset.Parse("2025-05-27T17:23:20"),
+				ModifiedDateTime = DateTimeOffset.Parse("2025-05-27T17:23:20"),
 			},
 		},
 		ActivityMetadata = new ActivityMetadata
 		{
-			Activity = UserActivityType.UploadFile,
-			AdditionalData = new Dictionary<string, object>
+			Activity = UserActivityType.UploadText,
+		},
+		ProtectedAppMetadata = new ProtectedApplicationMetadata
+		{
+			Name = "PC Purview API Explorer",
+			Version = "0.2",
+			ApplicationLocation = new PolicyLocationApplication
 			{
-				{
-					"applicationLocation" , "bing.com"
-				},
+				OdataType = "microsoft.graph.policyLocationApplication",
+				Value = "83ef208a-0396-4893-9d4f-d36efbffc8bd",
 			},
 		},
 		IntegratedAppMetadata = new IntegratedApplicationMetadata
 		{
-			Name = "ContosoIsvApplication",
-			Version = "1.2",
+			Name = "PC Purview API Explorer",
+			Version = "0.2",
 		},
 		AdditionalData = new Dictionary<string, object>
 		{
@@ -80,18 +59,18 @@ var requestBody = new ProcessContentPostRequestBody
 				"deviceMetadata" , new UntypedObject(new Dictionary<string, UntypedNode>
 				{
 					{
-						"deviceType", new UntypedString("unmanaged")
-					},
-					{
 						"operatingSystemSpecifications", new UntypedObject(new Dictionary<string, UntypedNode>
 						{
 							{
-								"operatingSystemPlatform", new UntypedString("windows")
+								"operatingSystemPlatform", new UntypedString("Windows 11")
 							},
 							{
-								"operatingSystemVersion", new UntypedString("10.0.2.4")
+								"operatingSystemVersion", new UntypedString("10.0.26100.0")
 							},
 						})
+					},
+					{
+						"ipAddress", new UntypedString("127.0.0.1")
 					},
 				})
 			},
