@@ -1,6 +1,6 @@
 ---
 title: "chats: getAllMessages"
-description: "Get all messages from all chats in which a user is a participant"
+description: "Get all messages from all chats in which a user is a participant."
 author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: "teams"
