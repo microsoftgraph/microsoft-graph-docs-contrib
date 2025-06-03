@@ -1,6 +1,10 @@
-# CLI sample: Edit a filtering policy to add a destination using PATCH
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```sh
 az rest --method patch \
-  --url "https://graph.microsoft.com/beta/networkaccess/filteringPolicies/cccccccc-2222-3333-4444-dddddddddddd/policyRules/<policyRuleId>" \
+  --url "https://graph.microsoft.com/beta/networkaccess/filteringPolicies/cccccccc-2222-3333-4444-dddddddddddd/policyRules/{policyRuleId}" \
   --body '{
     "@odata.type": "#microsoft.graph.networkaccess.fqdnFilteringRule",
     "destinations": [
@@ -9,3 +13,4 @@ az rest --method patch \
       { "@odata.type": "#microsoft.graph.networkaccess.fqdn", "value": "bing.co.uk" }
     ]
   }'
+```

@@ -1,7 +1,15 @@
-// C# sample: Edit a filtering policy to add a destination using PATCH
-var graphClient = new GraphServiceClient(authProvider);
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-var fqdnFilteringRule = new FqdnFilteringRule
+```csharp
+
+using Microsoft.Graph.Beta;
+using Microsoft.Graph.Beta.Models.Networkaccess;
+
+var graphServiceClient = new GraphServiceClient(tokenRequestContext, scopes);
+
+var requestBody = new FqdnFilteringRule
 {
     Destinations = new List<Fqdn>
     {
@@ -11,7 +19,6 @@ var fqdnFilteringRule = new FqdnFilteringRule
     }
 };
 
-await graphClient.NetworkAccess.FilteringPolicies["cccccccc-2222-3333-4444-dddddddddddd"]
-    .PolicyRules["<policyRuleId>"]
-    .Request()
-    .UpdateAsync(fqdnFilteringRule);
+var result = await graphServiceClient.NetworkAccess.FilteringPolicies["cccccccc-2222-3333-4444-dddddddddddd"].PolicyRules["{policyRuleId}"].PatchAsync(requestBody);
+
+```

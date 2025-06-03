@@ -1,4 +1,8 @@
-// JavaScript sample: Edit a filtering policy to add a destination using PATCH
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
 const options = {
   method: 'PATCH',
   headers: {
@@ -15,6 +19,7 @@ const options = {
   })
 };
 
-fetch('https://graph.microsoft.com/beta/networkaccess/filteringPolicies/cccccccc-2222-3333-4444-dddddddddddd/policyRules/<policyRuleId>', options)
+fetch('https://graph.microsoft.com/beta/networkaccess/filteringPolicies/cccccccc-2222-3333-4444-dddddddddddd/policyRules/{policyRuleId}', options)
   .then(response => response.json())
   .then(data => console.log(data));
+```

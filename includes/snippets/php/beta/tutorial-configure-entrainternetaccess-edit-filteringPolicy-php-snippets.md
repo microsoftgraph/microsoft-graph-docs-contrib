@@ -1,27 +1,23 @@
-// PHP sample: Edit a filtering policy to add a destination using PATCH
-$accessToken = 'YOUR_ACCESS_TOKEN';
-$url = 'https://graph.microsoft.com/beta/networkaccess/filteringPolicies/cccccccc-2222-3333-4444-dddddddddddd/policyRules/<policyRuleId>';
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-$data = [
-    '@odata.type' => '#microsoft.graph.networkaccess.fqdnFilteringRule',
-    'destinations' => [
-        [ '@odata.type' => '#microsoft.graph.networkaccess.fqdn', 'value' => 'bing.com' ],
-        [ '@odata.type' => '#microsoft.graph.networkaccess.fqdn', 'value' => '*.bing.com' ],
-        [ '@odata.type' => '#microsoft.graph.networkaccess.fqdn', 'value' => 'bing.co.uk' ]
-    ]
-];
+```php
 
-$options = [
-    'http' => [
-        'header'  => [
-            'Authorization: Bearer ' . $accessToken,
-            'Content-type: application/json'
-        ],
-        'method'  => 'PATCH',
-        'content' => json_encode($data),
-    ],
-];
-$context  = stream_context_create($options);
-$result = file_get_contents($url, false, $context);
-if ($result === FALSE) { /* Handle error */ }
-echo $result;
+<?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\FqdnFilteringRule;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\Fqdn;
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestBody = new FqdnFilteringRule();
+$requestBody->setDestinations([
+    (new Fqdn())->setValue('bing.com'),
+    (new Fqdn())->setValue('*.bing.com'),
+    (new Fqdn())->setValue('bing.co.uk'),
+]);
+
+$result = $graphServiceClient->networkAccess()->filteringPolicies('cccccccc-2222-3333-4444-dddddddddddd')->policyRules('{policyRuleId}')->patch($requestBody)->wait();
+
+```

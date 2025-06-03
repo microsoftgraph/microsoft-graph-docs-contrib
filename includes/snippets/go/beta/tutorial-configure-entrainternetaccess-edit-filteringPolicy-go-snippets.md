@@ -1,3 +1,7 @@
-// Go sample: Edit a filtering policy to add a destination using PATCH
-// This is a placeholder. Replace with actual Go SDK usage when available.
-// Use HTTP PATCH request as shown in the HTTP example.
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+// Go SDK sample not available. Use HTTP PATCH as shown in CLI sample.
+```

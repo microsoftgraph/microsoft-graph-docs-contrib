@@ -1,6 +1,10 @@
-# PowerShell sample: Edit a filtering policy to add a destination using PATCH
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```powershell
 $accessToken = 'YOUR_ACCESS_TOKEN'
-$uri = 'https://graph.microsoft.com/beta/networkaccess/filteringPolicies/cccccccc-2222-3333-4444-dddddddddddd/policyRules/<policyRuleId>'
+$uri = 'https://graph.microsoft.com/beta/networkaccess/filteringPolicies/cccccccc-2222-3333-4444-dddddddddddd/policyRules/{policyRuleId}'
 $body = @{
     '@odata.type' = '#microsoft.graph.networkaccess.fqdnFilteringRule'
     destinations = @(
@@ -11,3 +15,4 @@ $body = @{
 } | ConvertTo-Json
 
 Invoke-RestMethod -Method Patch -Uri $uri -Headers @{Authorization = "Bearer $accessToken"; 'Content-Type' = 'application/json'} -Body $body
+```

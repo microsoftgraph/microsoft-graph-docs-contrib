@@ -1,21 +1,21 @@
-# Python sample: Edit a filtering policy to add a destination using PATCH
-import requests
-import json
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-access_token = 'YOUR_ACCESS_TOKEN'
-url = 'https://graph.microsoft.com/beta/networkaccess/filteringPolicies/cccccccc-2222-3333-4444-dddddddddddd/policyRules/<policyRuleId>'
-headers = {
-    'Authorization': f'Bearer {access_token}',
-    'Content-Type': 'application/json'
-}
-data = {
-    "@odata.type": "#microsoft.graph.networkaccess.fqdnFilteringRule",
-    "destinations": [
-        {"@odata.type": "#microsoft.graph.networkaccess.fqdn", "value": "bing.com"},
-        {"@odata.type": "#microsoft.graph.networkaccess.fqdn", "value": "*.bing.com"},
-        {"@odata.type": "#microsoft.graph.networkaccess.fqdn", "value": "bing.co.uk"}
+```python
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.networkaccess.fqdn_filtering_rule import FqdnFilteringRule
+from msgraph_beta.generated.models.networkaccess.fqdn import Fqdn
+
+graph_service_client = GraphServiceClient(token_request_context, scopes)
+
+request_body = FqdnFilteringRule(
+    destinations=[
+        Fqdn(value="bing.com"),
+        Fqdn(value="*.bing.com"),
+        Fqdn(value="bing.co.uk"),
     ]
-}
-response = requests.patch(url, headers=headers, data=json.dumps(data))
-print(response.status_code)
-print(response.json())
+)
+
+result = await graph_service_client.network_access.filtering_policies.by_filtering_policy_id('cccccccc-2222-3333-4444-dddddddddddd').policy_rules.by_policy_rule_id('{policyRuleId}').patch(request_body)
+```

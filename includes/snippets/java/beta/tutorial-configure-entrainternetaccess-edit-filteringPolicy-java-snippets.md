@@ -1,3 +1,7 @@
-// Java sample: Edit a filtering policy to add a destination using PATCH
-// This is a placeholder. Replace with actual Java SDK usage when available.
-// Use HTTP PATCH request as shown in the HTTP example.
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+// Java SDK sample not available. Use HTTP PATCH as shown in CLI sample.
+```
