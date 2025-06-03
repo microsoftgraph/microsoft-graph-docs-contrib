@@ -56,53 +56,10 @@ In the request body, supply only the values you want to update. Omitted properti
 
 If successful, this method returns a `200 OK` response code and the updated [security-incidentTask](../resources/security-incidenttask.md) object in the response body.
 
-## Error responses
+## Related content
 
-### Invalid task ID
-
-The task ID must be a valid GUID.
-
-```http
-HTTP/1.1 400 Bad Request
-Content-type: application/json
-```
-
-```json
-{
-    "error": {
-        "code": "BadRequest",
-        "message": "Invalid Task Id: {id}",
-        "innerError": {
-            "date": "2023-09-04T05:47:56",
-            "request-id": "43067534-c43a-4df8-a4d1-30660b99ac76",
-            "client-request-id": "b041e97f-24d2-bf6a-1731-7e0de686464c"
-        }
-    }
-}
-```
-
-### Task not found
-
-No task exists with the specified ID.
-
-```http
-HTTP/1.1 404 Not Found
-Content-type: application/json
-```
-
-```json
-{
-    "error": {
-        "code": "NotFound",
-        "message": "taskId {id} not found",
-        "innerError": {
-            "date": "2023-09-04T05:47:56",
-            "request-id": "43067534-c43a-4df8-a4d1-30660b99ac76",
-            "client-request-id": "b041e97f-24d2-bf6a-1731-7e0de686464c"
-        }
-    }
-}
-```
+- Learn about [Microsoft Graph error responses](/graph/errors).
+- [incidentTask](../resources/security-incidenttask.md)
 
 ## Examples
 
