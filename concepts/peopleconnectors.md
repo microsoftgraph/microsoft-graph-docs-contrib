@@ -39,9 +39,9 @@ Once connected, people data from the third-party system can appear in Microsoft 
 
 Admins can configure which properties are shown and how they map to Microsoft 365 schema in [MAC](https://admin-ignite.microsoft.com/Adminportal/Home?#/copilot/connectors/add).  
 
-When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence]([https://learn.microsoft.com/en-us/graph/profilepriority-configure-profilepropertysetting).
+When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence](microsoftgraph/microsoft-graph-docs/concepts/profilepriority-configure-profilepropertysetting).
 
-Note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, the admin has to select what data is shown in the [profile card](https://learn.microsoft.com/en-us/graph/add-properties-profilecard).  
+Note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, the admin has to select what data is shown in the [profile card](microsoftgraph/microsoft-graph-docs/concepts/add-properties-profilecard).  
 
 
 ## Compliance, privacy, and data usage
@@ -71,7 +71,7 @@ To update incorrect information on a profile card, you need to submit a request.
 
 Only tenant admins can delete people's data that originates from a source owned by your employer and is exposed in Microsoft 365 experiences via the user profile. Depending on your employer's policies, you may or may not be able to delete the data. Alternatively, your administrator may update a Copilot people data connector configuration to reflect this. 
 
-For more on DSRs, see Microsoft’s guidance on [GDPR and CCPA compliance](https://learn.microsoft.com/en-us/compliance/regulatory/gdpr-data-subject-requests).  
+For more on DSRs, see Microsoft’s guidance on [GDPR and CCPA compliance](MicrosoftDocs/Compliance-pr/compliance/regulatory/gdpr-data-subject-requests).  
 
 ### Authentication & authorization
 
@@ -103,7 +103,7 @@ To delete a Copilot connector for people data, an admin should follow these step
 
 1. Use the `delete` operation available for both Microsoft-built and partner-built connectors. 
 
-For more information, see [https://learn.microsoft.com/en-us/microsoftsearch/manage-connector](https://learn.microsoft.com/en-us/microsoftsearch/manage-connector).
+For more information, see [https://learn.microsoft.com/en-us/microsoftsearch/manage-connector](/microsoftsearch/manage-connector).
 
 #### Related content
 
