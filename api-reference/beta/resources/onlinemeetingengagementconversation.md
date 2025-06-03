@@ -31,11 +31,11 @@ Inherits from [engagementConversation](../resources/engagementconversation.md).
 |Property|Type|Description|
 |:---|:---|:---|
 | id | String | The unique identifier for the conversation object. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md) |
-|moderationState|[engagementConversationModerationState](#engagementconversationmoderationstate-values)|Represents the moderation status of the conversation.The possible values are: `published`, `pendingReview`, `dismissed`, `unknownFutureValue`.|
+|moderationState|[engagementConversationModerationState](#engagementconversationmoderationstate-values)|Represents the moderation status of the conversation. The possible values are: `published`, `pendingReview`, `dismissed`, `unknownFutureValue`.|
 |onlineMeetingId|String|The unique identifier of the online meeting associated with this conversation. This links the conversation to a specific meeting instance.|
 |organizer|[engagementIdentitySet](../resources/engagementidentityset.md)|Unique identifier of the online meeting organizer|
 |starterId|String|The ID of the first message that initiated the Q&A conversation. Useful for tracing the origin of the thread.  Inherited from [engagementConversation](../resources/engagementconversation.md).|
-|upvoteCount|Int32|The number of upvotes the conversation has received. |
+|upvoteCount|Int32|The number of upvotes received by the conversation. |
 |creationMode|engagementCreationMode|Indicates how the conversation was created. Inherited from [engagementConversation](../resources/engagementconversation.md).The possible values are: `none`, `migration`, `unknownFutureValue`.|
 
 ### engagementConversationModerationState values

@@ -20,9 +20,9 @@ Represents a Viva Engage message attachment, such as a file, weblink, image, vid
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|contentId|String|The unique identity of the attachment content, e.g. SharePoint file id|
+|contentId|String|The unique identity of the attachment content, for example, SharePoint file ID|
 |contentType|[engagementConversationMessageAttachmentType](#engagementconversationmessageattachmenttype-values)|The type of the attachment. The possible values are: `file`, `videoFile`, `imageFile`, `message`, `webLink`, `webImage`, `webVideo`, `unknownFutureValue`.|
-|contentUrl|String|The url pointing to the attachment content, e.g., url of a SharePoint site|
+|contentUrl|String|The url pointing to the attachment content, for example, url of a SharePoint site|
 |description|String|The description of the attachment|
 |id|String|The unique identity of the attachment.|
 |name|String|The name of the attachment.|
@@ -31,10 +31,10 @@ Represents a Viva Engage message attachment, such as a file, weblink, image, vid
 ### engagementConversationMessageAttachmentType values
 | Member | Description |
 |:---------------|:----------|
-| file | Attachment is a uploaded file. The content id should match the uploaded file id.  |
-| videoFile | Attachment is a uploaded video. The content id should match the uploaded file id. |
-| imageFile | Attachment is a uploaded image. The content id should match the uploaded file id. |
-| message | Attachment is a link to another message. The content id should match the conversation message id.|
+| file | Attachment is an uploaded file. The content ID should match the uploaded file ID.  |
+| videoFile | Attachment is an uploaded video. The content ID should match the uploaded file ID. |
+| imageFile | Attachment is an uploaded image. The content ID should match the uploaded file ID. |
+| message | Attachment is a link to another message. The content ID should match the conversation message ID.|
 | webLink | Attachment is a link to a web page. The contentUrl should be the URL.  |
 | webImage | Attachment is a link to a web image. The contentUrl should be the URL. |
 | webVideo | Attachment is a link to a web video. The contentUrl should be the URL. |
