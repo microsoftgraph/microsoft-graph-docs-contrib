@@ -3415,7 +3415,7 @@
     },
     {
       "resource": "incidentTask",
-      "overview": "../../resources/security-incident-task-overview.md"
+      "overview": "../../resources/security-incidenttask.md"
     }
   ]
 }
