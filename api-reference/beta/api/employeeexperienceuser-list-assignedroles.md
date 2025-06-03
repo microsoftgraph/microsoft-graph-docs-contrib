@@ -70,6 +70,7 @@ The following example shows how to get a list of all the roles assigned to a sig
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_assignedrole_me"
@@ -78,6 +79,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/employeeExperience/assignedRoles
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-assignedrole-me-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -119,6 +126,7 @@ The following example shows how to get a list of all the roles assigned to a use
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_assignedrole_user"
@@ -127,6 +135,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/users/{user-id}/employeeExperience/assignedRoles
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-assignedrole-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
