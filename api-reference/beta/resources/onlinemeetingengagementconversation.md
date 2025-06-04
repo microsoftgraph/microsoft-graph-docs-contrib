@@ -36,7 +36,6 @@ Inherits from [engagementConversation](../resources/engagementconversation.md).
 |organizer|[engagementIdentitySet](../resources/engagementidentityset.md)|Unique identifier of the online meeting organizer|
 |starterId|String|The ID of the first message that initiated the Q&A conversation. Useful for tracing the origin of the thread.  Inherited from [engagementConversation](../resources/engagementconversation.md).|
 |upvoteCount|Int32|The number of upvotes received by the conversation. |
-|creationMode|engagementCreationMode|Indicates how the conversation was created. Inherited from [engagementConversation](../resources/engagementconversation.md).The possible values are: `none`, `migration`, `unknownFutureValue`.|
 
 ### engagementConversationModerationState values
 | Member | Description |
