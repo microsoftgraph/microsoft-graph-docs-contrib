@@ -50,7 +50,7 @@ No Methods supported at this time.
 |from|[engagementIdentitySet](../resources/engagementidentityset.md)|Identity of the sender of the message.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification to the message.|
 |replyToId|String|ID of the parent message this one is a reply to, if applicable.|
-|attachments|[engagementConversationMessageAttachment](../resources/engagementconversationmessageattachment.md) collection|Collection of attachments included in the message, such as files or images.|
+|attachments|[engagementConversationMessageAttachment](../resources/engagementconversationmessageattachment.md) collection|Collection of attachments included in the message, such as files, weblinks, videos, or images. |
 |mentions|[engagementConversationMessageMention](../resources/engagementconversationmessagemention.md) collection|Collection of user identities mentioned in the message.|
 
 ## Relationships
