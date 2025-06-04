@@ -1,23 +1,5 @@
 {
-  "changelog": [   
-    {
-      "ChangeList": [
-        {
-          "Id": "4da111db-21a0-4673-9bc7-aece291b40ea",
-          "ApiChange": "Resource",
-          "ChangedApiName": "speakerAssignmentSubmissions",
-          "ChangeType": "Addition",
-          "Description":  "Added the [speakerAssignmentSubmission](https://learn.microsoft.com/en-us/graph/api/resources/speakerAssignmentSubmission?view=graph-rest-beta) resource and a supported method.",
-          "Target": "speakerAssignmentSubmissions"
-        }
-      ],
-      "Id": "4da111db-21a0-4673-9bc7-aece291b40ea",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-04-30T18:32:24.5964486Z",
-      "WorkloadArea": "Education",
-      "SubArea": ""
-    },
+  "changelog": [
     {
       "ChangeList": [
         {
@@ -198,7 +180,7 @@
       ],
       "Id": "f002547f-f5f2-4503-8b2f-b193481ec70b",
       "Cloud": "Prod",
-      "Version": "1.0",
+      "Version": "v1.0",
       "CreatedDateTime": "2025-04-14T18:32:24.5964486Z",
       "WorkloadArea": "Education",
       "SubArea": ""
