@@ -63,7 +63,7 @@ PATCH /admin/configurationManagement/configurationMonitors/{configurationMonitor
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an updated [configurationMonitor](../resources/configurationmonitor.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -98,7 +98,6 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
 ```
 
 ### Example 2: Update the baseline of a configurationMonitor
@@ -183,5 +182,4 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
 ```
