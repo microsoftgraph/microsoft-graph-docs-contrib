@@ -33,8 +33,8 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the monitor.|
 |createdDateTime|DateTimeOffset|The date and time when the monitor was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|description|String|User friendly description of the monitor given by the user.|
-|displayName|String|User friendly name given by the user to the monitor.|
+|description|String|User-friendly description of the monitor given by the user.|
+|displayName|String|User-friendly name given by the user to the monitor.|
 |id|String|Globally unique identifier (GUID) for the monitor. System-generated. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the monitor was last modified. If no modifications are made to the monitor, it's the same as **createdDateTime**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |mode|monitorMode|Monitor mode in which the monitor runs.  The possible values are: `monitorOnly`, `unknownFutureValue`. The default value is `monitorOnly`.|
