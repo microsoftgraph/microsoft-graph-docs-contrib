@@ -96,6 +96,7 @@ Content-Type: application/json
     "@odata.nextLink": "/employeeExperience/getAllOnlineMeetingMessages?$expand=conversation&skipToken=eyADASSDSA",
     "value": [
     {
+      "@odata.type": "#microsoft.graph.engagementConversationDiscussionMessage",
       "id": "eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0OTcwNzMxNTEyNjI3MiJ9",
       "createdDateTime": "2025-05-20T06:35:58.936313Z",
       "lastModifiedDateTime": "2025-05-20T06:35:58.936313Z",
