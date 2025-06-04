@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information and properties of a [configurationApplication](../resources/configurationapplication.md) object. The **configurationApplication** resource ensures that unified-tenant configuration management (UTCM) can read and download the application certificate from the customer key vault that helps UTCM during the background job flow to get an access token for the service principal. The **configurationApplication** helps UTCM to:
+Represents the information and properties of a [configurationApplication](../resources/configurationapplication.md) object. The **configurationApplication** resource ensures that unified tenant configuration monitoring (UTCM) can read and download the application certificate from the customer key vault that helps UTCM during the background job flow to get an access token for the service principal. The **configurationApplication** helps UTCM to:
 
 * Read the certificate using the key-vault URI and certificate name.
 * Use that certificate to get a token from Microsoft Entra for Exchange and other workload scopes, depending on the resources the admin wants to monitor or take a snapshot.
