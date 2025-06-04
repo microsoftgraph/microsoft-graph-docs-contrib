@@ -11,18 +11,15 @@ ms.subservice: developer
 
 # Microsoft 365 Copilot connectors for people data
 
-Microsoft 365 Copilot connectors for people data are a type of connector (formerly Microsoft Graph connectors) that enhance how individuals are portrayed across Microsoft 365 apps and APIs. They help organizations bring people data from third-party systems into Microsoft 365, ensuring a unified and consistent view of individuals across Copilot, Microsoft Search, profile cards, and more.
+Microsoft 365 Copilot connectors for people data(formerly Microsoft Graph connectors) are a type of connector that enhance how individuals are portrayed across Microsoft 365 apps and APIs. They help organizations bring people data from third-party systems into Microsoft 365, ensuring a unified and consistent view of individuals across Copilot, Microsoft Search, profile cards, and more.
 
 These connectors create a view of a portion of the data from the third-party source system, ensuring the data stays authoritative in its original location while being displayed consistently across Microsoft 365.
 
-## Using Microsoft 365 Copilot connectors for people data
+You can use Copilot connectors for people data to:
 
 * Unified identity—create a complete and coherent view of individuals by merging people data in Microsoft 365 with other sources where people data is stored, such as Human Capital Management systems.  
-
 * Enhanced Copilot responses—enriched people data improves Copilot’s ability to reason and respond with contextually relevant information for people data-related queries.  
-
 * Improved discoverability—people data becomes searchable across Microsoft 365, including in profile cards, Org Explorer, and semantic search.
-
 * Profile card integration—updated profile information in the Microsoft 365 profile cards, with links directly to the third-party content source. 
 
 ## Where to find the data?
@@ -30,18 +27,15 @@ These connectors create a view of a portion of the data from the third-party sou
 Once connected, people data from the third-party system can appear in Microsoft 365 experiences, such as:  
 
 * Microsoft 365 profile cards
-
 * Microsoft 365 Copilot chat
-
 * Microsoft Search
-
  * Org Explorer 
 
 Admins can configure which properties are shown and how they map to Microsoft 365 schema in [MAC](https://admin-ignite.microsoft.com/Adminportal/Home?#/copilot/connectors/add).  
 
 When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence](profilepriority-configure-profilepropertysetting.md).
 
-Note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, the admin has to select what data is shown in the [profile card](https://learn.microsoft.com/graph/add-properties-profilecard).  
+Note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, admins have to select what data is shown in the [profile card](https://learn.microsoft.com/graph/add-properties-profilecard).  
 
 ## Compliance, privacy, and data usage
 
@@ -53,18 +47,16 @@ By default, people data provided via a Copilot connector is visible to all users
 
 People data imported via Copilot connectors is considered customer content and is used by Microsoft 365 services as mentioned above. Within your organization, this data is treated as publicly accessible. In cross-tenant collaboration scenarios and Copilot experiences, connector data may also be used to enhance context and productivity. 
 
+## Profile information
+
 ### Editing incorrect profile information
 
 To update incorrect information on a profile card, you need to submit a request.  
 
 1. [Export your profile data](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true) from your profile card. This export includes the source ID of the information you wish to correct.  
-
 1. Contact your tenant administrator with these details to identify the appropriate connector within the Microsoft Admin Center portal by matching it to the connector ID of the configured connector.  
-
 1. The administrator can update the information directly in the third-party source system. 
-
 1. Once the connector performs its next scheduled crawl, the updated data is reflected on the user's profile card. 
-
 
 ### Deleting profile information
 
@@ -77,7 +69,7 @@ For more on DSRs, see Microsoft’s guidance on [GDPR and CCPA compliance](https
 Microsoft is committed to ensuring the highest standards of security by only supporting the most secure authentication protocols, such as OpenID Connect (OIDC) and OAuth 2.0. These protocols are integral to our security strategy, providing robust and reliable authentication mechanisms that safeguard user identities and data. To set up people connectors, OAuth 2.0 authentication is required. 
 
 > [!Note]
-> Initially, only Global Admins and Copilot Admins can configure people connectors. 
+> Only Global Admins and Copilot Admins can configure people connectors. 
 
 ## Data refresh and accuracy
 
@@ -94,9 +86,7 @@ When you upload people data, each end user's data attributes are scoped to their
 To delete a Copilot connector for people data, an admin should follow these steps: 
 
 1. Go to the Microsoft 365 Admin Center and navigate to the connectors section. 
-
 1. Locate the connector you want to delete. 
-
 1. Use the `delete` operation available for both Microsoft-built and partner-built connectors. 
 
 For more information, see [https://learn.microsoft.com/microsoftsearch/manage-connector](/microsoftsearch/manage-connector).
@@ -104,12 +94,8 @@ For more information, see [https://learn.microsoft.com/microsoftsearch/manage-co
 ## Related content
 
 - [Microsoft 365 Copilot connectors gallery | Microsoft Learn](/microsoftsearch/connectors-gallery) 
-
 - [Map non-Entra identities to Microsoft Entra ID](/microsoftsearch/map-non-aad) 
-
 - [Export data from your profile card - Microsoft support](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d) 
-
 - [Source precedence](https://learn.microsoft.com/graph/profilepriority-configure-profilepropertysetting)  
-
 - [Organizational data in Microsoft 365 | Microsoft Learn](/viva/organizational-data) 
 
