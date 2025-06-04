@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information and properties of a [configurationMonitor](../resources/configurationmonitor.md) object. This resource allows administrators to create and manage monitors for tenant or drift monitoring across all workloads supported by unified-tenant configuration management, enabling periodic detection of deviations from the desired configuration state.
+Represents the information and properties of a [configurationMonitor](../resources/configurationmonitor.md) object. This resource allows administrators to create and manage monitors for tenant or drift monitoring across all workloads supported by unified-tenant configuration monitoring, enabling periodic detection of deviations from the desired configuration state.
 
 Inherits from [entity](../resources/entity.md).
 
