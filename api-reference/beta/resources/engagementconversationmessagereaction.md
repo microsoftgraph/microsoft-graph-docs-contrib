@@ -38,7 +38,6 @@ No Methods supported at this time.
 |id|String|Unique identifier of a reaction posted to a Viva Engage conversation message. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |reactionBy|[engagementIdentitySet](../resources/engagementidentityset.md)|Identity of the user who added the reaction.|
 |reactionType|engagementConversationMessageReactionType|Type of reaction.The possible values are: `like`, `love`, `celebrate`, `thank`, `laugh`, `sad`, `happy`, `excited`, `smile`, `silly`, `intenseLaugh`, `starStruck`, `goofy`, `thinking`, `surprised`, `mindBlown`, `scared`, `crying`, `shocked`, `angry`, `agree`, `praise`, `takingNotes`, `heartBroken`, `support`, `confirmed`, `watching`, `brain`, `medal`, `bullseye`, `unknownFutureValue`.|
-|creationMode|[engagementCreationMode](../resources/engagementCreationMode.md)|Indicates how the reaction was created. The possible values are: `none`, `migration`, `unknownFutureValue`.|
 
 ## Relationships
 None.
