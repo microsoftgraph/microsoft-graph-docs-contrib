@@ -23,7 +23,7 @@ Users are responsible for parameterizing their **configurationBaseline** objects
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|User friendly description of the parameter.|
+|description|String|User-friendly description of the parameter.|
 |displayName|String|Parameter names such as `FQDN` and `Tenant ID`.|
 |parameterType|baselineParameterType|The type of the **baselineParameter**. The possible values are: `string`, `integer`, `boolean`, `unknownFutureValue`.|
 
