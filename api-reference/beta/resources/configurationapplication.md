@@ -55,10 +55,13 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.configurationApplication",
   "appId": "String",
+  "appOwnerOrganizationId": "String",
   "clientCredentials": {"@odata.type": "microsoft.graph.clientCredentials"},
+  "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
+  "lastModifiedDateTime": "String (timestamp)",
   "tenantId": "String"
 }
 ```
