@@ -66,7 +66,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.onlineMeetingEngagementConversation",
   "id": "String (identifier)",
-  "creationMode": "String",
   "starterId": "String",
   "moderationState": "String",
   "upvoteCount": "Integer",
