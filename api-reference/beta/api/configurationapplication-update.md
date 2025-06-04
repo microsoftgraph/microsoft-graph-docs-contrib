@@ -56,7 +56,7 @@ PATCH /admin/configurationManagement/configurationApplications/{configurationApp
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [configurationApplication](../resources/configurationapplication.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [configurationApplication](../resources/configurationapplication.md) object in the response body.
 
 ## Examples
 
@@ -81,26 +81,12 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.configurationApplication"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 Content-Type: application/json
-
-{
-  "id": "f6db8379-6071-6f8a-e313-a97b31f4f6b5",
-  "tenantId": "c6df07c4-c1c8-4485-9043-ca1dff83a25f",
-  "appId": "ac6dea86-c6a8-467f-90c4-928419f73f79",
-  "displayName": "Contoso Test App Updated",
-  "description": "Contoso Test App description Updated",
-  "clientCredentials": {
-    "keyVaultUri": "https://TestKeyVault.vault.azure.net/",
-    "certificateName": "Contoso Test Cert"
-  }
-}
 ```

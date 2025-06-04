@@ -63,7 +63,7 @@ PATCH /admin/configurationManagement/configurationMonitors/{configurationMonitor
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [configurationMonitor](../resources/configurationmonitor.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [configurationMonitor](../resources/configurationmonitor.md) object in the response body.
 
 ## Examples
 
