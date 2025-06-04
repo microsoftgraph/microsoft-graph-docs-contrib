@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List](../api/configurationmanagement-list-configurationsnapshotjobs.md)|[configurationSnapshotJob](../resources/configurationsnapshotjob.md) collection|Get a list of the [configurationSnapshotJob](../resources/configurationsnapshotjob.md) objects and their properties.|
 |[Get](../api/configurationsnapshotjob-get.md)|[configurationSnapshotJob](../resources/configurationsnapshotjob.md)|Read the properties and relationships of a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) object.|
-|[Delete](../api/configurationmanagement-delete-configurationsnapshotjobs.md)|None|Delete a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) object.|
+|[Delete](../api/configurationsnapshotjob-delete.md)|None|Delete a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) object.|
 
 ## Properties
 |Property|Type|Description|
