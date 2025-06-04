@@ -35,7 +35,7 @@ Admins can configure which properties are shown and how they map to Microsoft 36
 
 When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence](profilepriority-configure-profilepropertysetting.md).
 
-Note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, admins have to select what data is shown in the [profile card](https://learn.microsoft.com/graph/add-properties-profilecard).  
+Note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, admins have to select what data is shown in the [profile card](graph/add-properties-profilecard.md).  
 
 ## Compliance, privacy, and data usage
 
@@ -96,6 +96,6 @@ For more information, see [https://learn.microsoft.com/microsoftsearch/manage-co
 - [Microsoft 365 Copilot connectors gallery | Microsoft Learn](/microsoftsearch/connectors-gallery) 
 - [Map non-Entra identities to Microsoft Entra ID](/microsoftsearch/map-non-aad) 
 - [Export data from your profile card - Microsoft support](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d) 
-- [Source precedence](https://learn.microsoft.com/graph/profilepriority-configure-profilepropertysetting)  
+- [Source precedence](profilepriority-configure-profilepropertysetting.md)  
 - [Organizational data in Microsoft 365 | Microsoft Learn](/viva/organizational-data) 
 
