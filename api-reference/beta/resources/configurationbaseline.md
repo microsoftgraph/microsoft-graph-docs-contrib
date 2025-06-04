@@ -27,8 +27,8 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|User friendly description of the baseline given by the user.|
-|displayName|String|User friendly name given by the user to the baseline.|
+|description|String|User-friendly description of the baseline given by the user.|
+|displayName|String|User-friendly name given by the user to the baseline.|
 |id|String|The unique identifier for the **configurationBaseline** object. Inherited from [entity](../resources/entity.md).|
 |parameters|[baselineParameter](../resources/baselineparameter.md) collection|Collection of parameters attached to the baseline.|
 |resources|[baselineResource](../resources/baselineresource.md) collection|Collection of resources and their properties that are added to the baseline. At least one property of one resource must be present in the baseline.|
