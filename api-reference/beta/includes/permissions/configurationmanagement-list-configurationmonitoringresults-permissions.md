@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|ConfigurationMonitoring.Read.All|ConfigurationMonitoring.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|ConfigurationMonitoring.Read.All|ConfigurationMonitoring.ReadWrite.All
+|Application|ConfigurationMonitoring.Read.All|ConfigurationMonitoring.ReadWrite.All|
 
