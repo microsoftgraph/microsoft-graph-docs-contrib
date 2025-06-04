@@ -109,7 +109,7 @@ Content-Type: application/json
       },
       "body": {
         "content": "This is a sample message body.",
-        "contentType": "text"
+        "contentType": "html"
       },
       "mentions": [],
       "attachments": [],
