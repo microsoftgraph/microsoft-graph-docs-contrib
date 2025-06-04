@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents the information and properties of an [errorDetail](../resources/errordetail.md) object. This resource allows the admins to get details of errors found during a [configurationMonitor](../resources/configurationmonitor.md) run or a [configurationSnapshotJob](../resources/configurationsnapshotjob.md). These details help admins identify the issues. Once the admin fixes the issues, the monitor runs and snapshot jobs will run successfully.
 
-The admins use $select to get errorDetails in configurationMonitorResults API and configurationSnapshotJob API.
+Administrators can use the `$select` query parameter to get **errorDetails** from the [configurationMonitoringResult](../resources/configurationmonitoringresult.md) and [configurationSnapshotJob](../resources/configurationsnapshotjob.md) APIs.
 
 ## Properties
 |Property|Type|Description|
