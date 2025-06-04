@@ -43,7 +43,6 @@ When multiple sources provide overlapping data, Microsoft 365 uses a precedence 
 
 Note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, the admin has to select what data is shown in the [profile card](https://learn.microsoft.com/graph/add-properties-profilecard).  
 
-
 ## Compliance, privacy, and data usage
 
 ### Data visibility
@@ -66,34 +65,31 @@ To update incorrect information on a profile card, you need to submit a request.
 
 1. Once the connector performs its next scheduled crawl, the updated data is reflected on the user's profile card. 
 
- 
+
 ### Deleting profile information
 
 Only tenant admins can delete people's data that originates from a source owned by your employer and is exposed in Microsoft 365 experiences via the user profile. Depending on your employer's policies, you may or may not be able to delete the data. Alternatively, your administrator may update a Copilot people data connector configuration to reflect this. 
 
 For more on DSRs, see Microsoft’s guidance on [GDPR and CCPA compliance](https://myaccount.microsoft.com/settingsandprivacy/privacy).  
 
-### Authentication & authorization
+## Authentication & authorization
 
 Microsoft is committed to ensuring the highest standards of security by only supporting the most secure authentication protocols, such as OpenID Connect (OIDC) and OAuth 2.0. These protocols are integral to our security strategy, providing robust and reliable authentication mechanisms that safeguard user identities and data. To set up people connectors, OAuth 2.0 authentication is required. 
 
-## Admin roles 
+> [!Note]
+> Initially, only Global Admins and Copilot Admins can configure people connectors. 
 
-Initially, only Global Admins and Copilot Admins can configure people connectors. 
-
-### Data refresh and accuracy
+## Data refresh and accuracy
 
 To maintain accurate and up-to-date profiles, admins should set up regular crawls or syncs to ensure alignment with source systems and prevent data staleness. 
 
-### Data retention
-
-People data is stored as long as the end user is active and has a valid Microsoft 365 license, provided no deletion request has been made by the admin. If a connector is deleted, it will be removed from all instances, but delays can be expected.
+People data is stored as long as the end user is active and has a valid Microsoft 365 license, provided no deletion request has been made by the admin. If a connector is deleted, it's removed from all instances, but delays can be expected.
 
 ### Data residency
 
 When you upload people data, each end user's data attributes are scoped to their Microsoft 365 user profile and stored in the user's Exchange Online mailbox. For information on data residency for Exchange Online, see [Data residency for Exchange Online - Microsoft 365 Enterprise | Microsoft Learn](/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide&preserve-view=true).
 
-## Removing a connector
+### Removing a connector
 
 To delete a Copilot connector for people data, an admin should follow these steps: 
 
@@ -105,7 +101,7 @@ To delete a Copilot connector for people data, an admin should follow these step
 
 For more information, see [https://learn.microsoft.com/microsoftsearch/manage-connector](/microsoftsearch/manage-connector).
 
-#### Related content
+## Related content
 
 - [Microsoft 365 Copilot connectors gallery | Microsoft Learn](/microsoftsearch/connectors-gallery) 
 
