@@ -39,16 +39,16 @@ Once connected, people data from the third-party system can appear in Microsoft 
 
 Admins can configure which properties are shown and how they map to Microsoft 365 schema in [MAC](https://admin-ignite.microsoft.com/Adminportal/Home?#/copilot/connectors/add).  
 
-When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence](microsoftgraph/microsoft-graph-docs/concepts/profilepriority-configure-profilepropertysetting).
+When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence](https://learn.microsoft.com/graph/profilepriority-configure-profilepropertysetting).
 
-Note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, the admin has to select what data is shown in the [profile card](microsoftgraph/microsoft-graph-docs/concepts/add-properties-profilecard).  
+Note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, the admin has to select what data is shown in the [profile card](https://learn.microsoft.com/graph/add-properties-profilecard).  
 
 
 ## Compliance, privacy, and data usage
 
 ### Data visibility
 
-By default, people data provided via a Copilot connector is visible to all users in the tenant. This connector data is stored in the user’s Microsoft 365 profile. Data is retained as long as the user is active and licensed, unless deleted by an admin or the user via a Data Subject Request (DSR). DSRs allow users to [export their profile data](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true).  
+By default, people data provided via a Copilot connector is visible to all users in the tenant. This connector data is stored in the user’s Microsoft 365 profile. Data is retained as long as the user is active and licensed, unless deleted by an admin or the user via a Data Subject Request (DSR). DSRs allow users to [export their profile data](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true).  
 
 ### Data usage 
 
@@ -58,7 +58,7 @@ People data imported via Copilot connectors is considered customer content and i
 
 To update incorrect information on a profile card, you need to submit a request.  
 
-1. [Export your profile data](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true) from your profile card. This export includes the source ID of the information you wish to correct.  
+1. [Export your profile data](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true) from your profile card. This export includes the source ID of the information you wish to correct.  
 
 1. Contact your tenant administrator with these details to identify the appropriate connector within the Microsoft Admin Center portal by matching it to the connector ID of the configured connector.  
 
@@ -103,7 +103,7 @@ To delete a Copilot connector for people data, an admin should follow these step
 
 1. Use the `delete` operation available for both Microsoft-built and partner-built connectors. 
 
-For more information, see [https://learn.microsoft.com/en-us/microsoftsearch/manage-connector](/microsoftsearch/manage-connector).
+For more information, see [https://learn.microsoft.com/microsoftsearch/manage-connector](/microsoftsearch/manage-connector).
 
 #### Related content
 
@@ -111,9 +111,9 @@ For more information, see [https://learn.microsoft.com/en-us/microsoftsearch/man
 
 - [Map non-Entra identities to Microsoft Entra ID](/microsoftsearch/map-non-aad) 
 
-- [Export data from your profile card - Microsoft support](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d) 
+- [Export data from your profile card - Microsoft support](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d) 
 
-- [Source precedence](https://learn.microsoft.com/en-us/graph/profilepriority-configure-profilepropertysetting)  
+- [Source precedence](https://learn.microsoft.com/graph/profilepriority-configure-profilepropertysetting)  
 
 - [Organizational data in Microsoft 365 | Microsoft Learn](/viva/organizational-data) 
 
