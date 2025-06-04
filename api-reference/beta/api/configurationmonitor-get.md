@@ -36,7 +36,7 @@ To get the details of any particular monitor:
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationMonitors('{configurationMonitorId}')
+GET /admin/configurationManagement/configurationMonitors/{configurationMonitorId}
 ```
 
 >**Note:** Replace `configurationMonitorId` with the monitor ID for which you want to get the details.
@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors('b166c9cb-db29-438b-95fb-247da1dc72c3')
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/b166c9cb-db29-438b-95fb-247da1dc72c3
 ```
 
 ### Response

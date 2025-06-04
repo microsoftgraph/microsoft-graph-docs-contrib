@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/configurationManagement/configurationSnapshotJobs('{configurationSnapshotJobId}')
+DELETE /admin/configurationManagement/configurationSnapshotJobs/{configurationSnapshotJobId}
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs/{c91a1470-acc9-4585-bc03-522ae898f82f}
+DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs/c91a1470-acc9-4585-bc03-522ae898f82f
 ```
 
 ### Response

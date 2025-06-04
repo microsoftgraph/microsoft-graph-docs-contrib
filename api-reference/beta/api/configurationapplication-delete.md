@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/configurationManagement/configurationApplications('{configurationApplicationId}')
+DELETE /admin/configurationManagement/configurationApplications/{configurationApplicationId}
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications('f6db8379-6071-6f8a-e313-a97b31f4f6b5')
+DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications/f6db8379-6071-6f8a-e313-a97b31f4f6b5'
 ```
 
 ### Response

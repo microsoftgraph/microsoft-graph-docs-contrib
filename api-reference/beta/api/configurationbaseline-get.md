@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationMonitors('{configurationMonitorId}')/baseline
+GET /admin/configurationManagement/configurationMonitors/{configurationMonitorId}/baseline
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors('b86049ce-0180-404e-803a-5616d49290d7')/baseline
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/b86049ce-0180-404e-803a-5616d49290d7/baseline
 ```
 
 ### Response

@@ -36,7 +36,7 @@ To update the details of any particular monitor:
 }
 -->
 ``` http
-PATCH /admin/configurationManagement/configurationMonitors('{configurationMonitorId}')
+PATCH /admin/configurationManagement/configurationMonitors/{configurationMonitorId}
 ```
 
 >**Note:** Replace `configurationMonitorId` with the monitor ID for which you want to update the details.
@@ -55,8 +55,8 @@ PATCH /admin/configurationManagement/configurationMonitors('{configurationMonito
 |Property|Type|Description|
 |:---|:---|:---|
 |baseline|[configurationBaseline](../resources/configurationBaseline.md)|A complex object that contains details of at least one resource and one property associated with the resource to be monitored. Optional.|
-|description|String| User friendly description of the monitor given by the user. Optional.|
-|displayName|String| User friendly name given by the user to the monitor. Optional.|
+|description|String| User-friendly description of the monitor given by the user. Optional.|
+|displayName|String| User-friendly name given by the user to the monitor. Optional.|
 |parameters|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Key-value pairs that contain the values of parameters which might be used in the baseline. Optional.|
 
 >**Note**: The [configurationBaseline](../resources/configurationBaseline.md) resource is a contained entity. If an admin wants to update the **configurationBaseline**, they must provide the full monitor body, including values for all fields, particularly those that are relevant and can be updated.
@@ -80,7 +80,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors('b86049ce-0180-404e-803a-5616d49290d7')
+PATCH https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/b86049ce-0180-404e-803a-5616d49290d7
 Content-Type: application/json
 
 {
@@ -114,7 +114,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors('b86049ce-0180-404e-803a-5616d49290d7')
+PATCH https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/b86049ce-0180-404e-803a-5616d49290d7
 Content-Type: application/json
 
 {

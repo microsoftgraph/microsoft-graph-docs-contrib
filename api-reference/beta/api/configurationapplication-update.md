@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /admin/configurationManagement/configurationApplications('{configurationApplicationId}')
+PATCH /admin/configurationManagement/configurationApplications/{configurationApplicationId}
 ```
 
 ## Request headers
@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications('f6db8379-6071-6f8a-e313-a97b31f4f6b5')
+PATCH https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications/f6db8379-6071-6f8a-e313-a97b31f4f6b5
 Content-Type: application/json
 
 {

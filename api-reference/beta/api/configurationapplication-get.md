@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationApplications('{configurationApplicationId}')
+GET /admin/configurationManagement/configurationApplications/{configurationApplicationId}
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications('f6db8379-6071-6f8a-e313-a97b31f4f6b5')
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationApplications/f6db8379-6071-6f8a-e313-a97b31f4f6b5
 ```
 
 ### Response

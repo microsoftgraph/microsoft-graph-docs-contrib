@@ -52,8 +52,8 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|description|String|User friendly description of the snapshot given by the user. Optional.|
-|displayName|String|User friendly name given by the user during the creation of the snapshot. Required.|
+|description|String|User-friendly description of the snapshot given by the user. Optional.|
+|displayName|String|User-friendly name given by the user during the creation of the snapshot. Required.|
 |resources|String collection|Names of the resources for which the admin wants to create a snapshot. Required.|
 
 ## Response

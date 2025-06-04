@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/configurationManagement/configurationSnapshotJobs('{configurationSnapshotJobId}')
+GET /admin/configurationManagement/configurationSnapshotJobs/{configurationSnapshotJobId}
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs('c91a1470-acc9-4585-bc03-522ae898f82f')
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationSnapshotJobs/c91a1470-acc9-4585-bc03-522ae898f82f
 ```
 
 ### Response

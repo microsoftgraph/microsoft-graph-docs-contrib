@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors('1bc248ae-a088-434d-a466-9930e533f7dd')
+DELETE https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/1bc248ae-a088-434d-a466-9930e533f7dd
 ```
 
 ### Response

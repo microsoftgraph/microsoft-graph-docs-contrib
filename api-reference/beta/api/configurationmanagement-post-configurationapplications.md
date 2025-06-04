@@ -54,8 +54,8 @@ You can specify the following properties when you create a configurationApplicat
 |:---|:---|:---|
 |appId|String|The app ID of the application created in the Azure portal. Required.|
 |clientCredentials|[clientCredentials](../resources/clientcredentials.md)| Includes the **keyVaultUri** and **certificateName** properties that the user must have obtained during the creation of the key vault. Required.|
-|description|String|User friendly description of the **configurationApplication**. Optional.|
-|displayName|String|User friendly name given by the user during the creation the **configurationApplication**. Required.|
+|description|String|User-friendly description of the **configurationApplication**. Optional.|
+|displayName|String|User-friendly name given by the user during the creation the **configurationApplication**. Required.|
 
 ## Response
 
