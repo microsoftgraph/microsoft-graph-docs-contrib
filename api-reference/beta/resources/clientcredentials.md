@@ -1,6 +1,6 @@
 ---
 title: "clientCredentials resource type"
-description: "Represents the information and properties of a clientCredentials object that is one of the prerequisites for administrators to call the UTCM application onboarding API."
+description: "Represents the information and properties of a clientCredentials object that is one of the prerequisites for administrators to call the Unified Tenant Configuration Management application onboarding API."
 author: "swatya"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information and properties of a [clientCredentials](../resources/clientcredentials.md) object that is one of the prerequisites for administrators to call the UTCM application onboarding API. The **clientCredentials** includes the key-vault URI and certificate name that are generated during the creation of the Azure Key Vault.
+Represents the information and properties of a [clientCredentials](../resources/clientcredentials.md) object that is one of the prerequisites for administrators to call the Unified Tenant Configuration Management application onboarding API. The **clientCredentials** includes the key-vault URI and certificate name that are generated during the creation of the Azure Key Vault.
 
 ## Properties
 |Property|Type|Description|

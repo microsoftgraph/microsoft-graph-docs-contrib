@@ -20,7 +20,7 @@ Represents the information and properties of a [baselineResource](../resources/b
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Unique name of the resource.|
-|properties|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Properties of a resource supported by UTCM.|
+|properties|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Properties of a resource supported by Unified Tenant Configuration Management.|
 |resourceType|String|Name of the resource type.|
 
 ## Relationships

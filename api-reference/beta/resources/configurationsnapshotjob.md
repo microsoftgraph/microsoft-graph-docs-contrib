@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|The date and time when the snapshot job was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|User-friendly description of the snapshot given by the user.|
 |displayName|String|User-friendly name provided by the user during snapshot creation.|
-|errorDetails|String collection|Details of errors related to the reasons why the snapshot can't complete. [This is not visible to the customer, by default.]|
+|errorDetails|String collection|Details of errors related to the reasons why the snapshot can't complete.|
 |id|String|Globally unique identifier (GUID) of the snapshot job. Inherited from [entity](../resources/entity.md).|
 |resourceLocation|String|The URL at which the snapshot file resides.|
 |resources|String collection|The names of all resources included in the request body by the user who created the snapshot. Fetched by the system.|

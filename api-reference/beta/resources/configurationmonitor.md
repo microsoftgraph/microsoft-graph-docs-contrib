@@ -37,11 +37,11 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|User friendly name given by the user to the monitor.|
 |id|String|Globally unique identifier (GUID) for the monitor. System-generated. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the monitor was last modified. If no modifications are made to the monitor, it's the same as **createdDateTime**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|mode|monitorMode|Monitor mode in which the monitor runs. It can be monitorOnly as of now. [Default]|
-|monitorRunFrequencyInHours|Int32|Frequency at which the monitor runs. The default frequency is six hours. In future, the users get few more options to choose the frequency at which they want the monitors to run. [Default] Regardless of when you create or update a monitor, it gets triggered within the next 6 hours. Currently, monitors are picked up at fixed times: 6 AM, 12 PM, 6 PM, and 12 AM (all in GMT). For example, if you create a monitor at 9 AM, it gets triggered around 12 PM. If you update a monitor at 4 PM, it gets triggered around 6 PM.|
+|mode|monitorMode|Monitor mode in which the monitor runs.  The possible values are: `monitorOnly`, `unknownFutureValue`. The default value is `monitorOnly`.|
+|monitorRunFrequencyInHours|Int32|Frequency at which the monitor runs. The default frequency is six hours. Regardless of when you create or update a monitor, it gets triggered within the next 6 hours. Currently, monitors are picked up at fixed times: 6 AM, 12 PM, 6 PM, and 12 AM (all in GMT). For example, if you create a monitor at 9 AM, it gets triggered around 12 PM. If you update a monitor at 4 PM, it gets triggered around 6 PM.|
 |parameters|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Key-value pairs that contain parameter values which might be used in the baseline.|
 |runningOnBehalfOf|[identitySet](../resources/identityset.md)|The user for whom the monitor runs.|
-|status|monitorStatus|Status of the monitor It can only be active as of now. [Default].|
+|status|monitorStatus|Status of the monitor  The possible values are: `active`, `unknownFutureValue`. The default value is `active`.|
 |tenantId|String|Globally unique identifier (GUID) of the tenant for which the monitor runs. Fetched automatically by the system.|
 
 ## Relationships

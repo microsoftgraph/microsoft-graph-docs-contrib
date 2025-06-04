@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information and properties of an [errorDetail](../resources/errordetail.md) object. This resource allows the admins to get details of errors found during a [configurationMonitor](../resources/configurationmonitor.md) run or a [configurationSnapshotJob](../resources/configurationsnapshotjob.md). These details help admins identify the issues. Once the admin fixes the issues, the monitor runs and snapshot jobs run will become successful.
+Represents the information and properties of an [errorDetail](../resources/errordetail.md) object. This resource allows the admins to get details of errors found during a [configurationMonitor](../resources/configurationmonitor.md) run or a [configurationSnapshotJob](../resources/configurationsnapshotjob.md). These details help admins identify the issues. Once the admin fixes the issues, the monitor runs and snapshot jobs will run successfully.
 
 The admins use $expand to get errorDetails in configurationMonitorResults API and configurationSnapshotJob API.
 
