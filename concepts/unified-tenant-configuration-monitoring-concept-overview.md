@@ -8,8 +8,6 @@ ms.localizationpriority: medium
 
 # UTCM [Unified Tenant Configuration Monitoring] APIs
 
-**Namespace:** `microsoft.graph`
-
 In the traditional Microsoft Tenant Configuration Management space, any administrator from an organization could use their identity to access resources that they have access to. Administrators today didn't have complete control over the tenant configuration, and didn’t have a view on if there are deviations from the desired configuration state.
 
 **Unified-tenant configuration management APIs** let administrators control and manage configuration settings for the entire organization. The settings can be on one or a combination of settings across the following workloads:
