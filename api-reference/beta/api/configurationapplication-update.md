@@ -56,7 +56,7 @@ PATCH /admin/configurationManagement/configurationApplications/{configurationApp
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an updated [configurationApplication](../resources/configurationapplication.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -88,5 +88,4 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
 ```
