@@ -26,7 +26,6 @@ Represents a Viva Engage message attachment, such as a file, weblink, image, vid
 |description|String|The description of the attachment|
 |id|String|The unique identity of the attachment.|
 |name|String|The name of the attachment.|
-|creationMode|[engagementCreationMode](../resources/engagementCreationMode.md)|Indicates how the attachment was created. The possible values are: `none`, `migration`, `unknownFutureValue`.|
 
 ### engagementConversationMessageAttachmentType values
 | Member | Description |
