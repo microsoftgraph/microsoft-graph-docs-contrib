@@ -3490,3 +3490,11 @@ Possible values for user account types (group membership), per Windows definitio
 | android |
 | linux   |
 | unknownFutureValue |
+
+### restoreJobType values 
+
+|Member|
+|:---|
+|standard|
+|bulk|
+|unknownFutureValue|
