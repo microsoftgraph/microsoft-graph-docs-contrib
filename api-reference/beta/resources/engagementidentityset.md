@@ -46,12 +46,6 @@ The following JSON representation shows the resource type.
   },
   "user": {
     "@odata.type": "microsoft.graph.identity"
-  },
-  "group": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "audience": {
-    "@odata.type": "microsoft.graph.identity"
   }
 }
 ```
