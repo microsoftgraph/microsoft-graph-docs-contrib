@@ -87,7 +87,7 @@ To maintain accurate and up-to-date profiles, admins should set up regular crawl
 
 ### Data retention
 
-People data is stored as long as the end user is active and has a valid Microsoft 365 license, provided no deletion request has been made by the admin. If a connector is deleted, it takes 24h before it's removed from all instances. 
+People data is stored as long as the end user is active and has a valid Microsoft 365 license, provided no deletion request has been made by the admin. If a connector is deleted, it will be removed from all instances, but delays can be expected.
 
 ### Data residency
 
