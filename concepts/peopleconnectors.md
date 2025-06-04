@@ -72,7 +72,7 @@ Only tenant admins can delete people's data that originates from a source owned 
 
 For more on DSRs, see Microsoft’s guidance on [GDPR and CCPA compliance](https://myaccount.microsoft.com/settingsandprivacy/privacy).  
 
-## Authentication & authorization
+## Authentication and authorization
 
 Microsoft is committed to ensuring the highest standards of security by only supporting the most secure authentication protocols, such as OpenID Connect (OIDC) and OAuth 2.0. These protocols are integral to our security strategy, providing robust and reliable authentication mechanisms that safeguard user identities and data. To set up people connectors, OAuth 2.0 authentication is required. 
 
