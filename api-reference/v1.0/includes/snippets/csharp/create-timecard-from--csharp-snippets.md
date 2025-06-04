@@ -11,6 +11,7 @@ using Microsoft.Graph.Models;
 
 var requestBody = new TimeCard
 {
+	UserId = "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2",
 	ClockInEvent = new TimeCardEvent
 	{
 		DateTime = DateTimeOffset.Parse("2025-01-07T21:00:00.000Z"),

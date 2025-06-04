@@ -57,6 +57,7 @@ If successful, this method returns a `201 Created` response code and a [drivePro
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveprotectionunitsbulkadditionjobs_post"
@@ -74,6 +75,12 @@ Content-Type: application/json
 }
 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveprotectionunitsbulkadditionjobs-post-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
