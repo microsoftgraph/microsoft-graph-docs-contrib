@@ -73,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/employeeExperience/getAllOnlineMeetingMessages
+GET https://graph.microsoft.com/beta/employeeExperience/getAllOnlineMeetingMessages?$expand=conversation
 ```
 
 
