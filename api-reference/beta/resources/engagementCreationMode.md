@@ -18,5 +18,6 @@ Represents the creation mode of a Viva Engage entity such as a message, reaction
 
 | Member | Description |
 |:---------------|:----------|
+| none | Unspecified creation mechanism. Default value. |
 | migration | The creation mechanism was through migration.  |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
