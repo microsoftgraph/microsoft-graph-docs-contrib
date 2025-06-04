@@ -1,6 +1,6 @@
 ---
 title: "Supported workloads and resource types"
-description: "Learn the supported workloads and resource types in the unified-tenant configuration management API."
+description: "Learn the supported workloads and resource types in the unified tenant configuration monitoring API."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Supported workloads and resource types
 
-This article describes the supported workloads and resource types in the unified-tenant configuration management (UTCM) APIs in Microsoft Graph. These APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization. 
+This article describes the supported workloads and resource types in the unified tenant configuration monitoring (UTCM) APIs in Microsoft Graph. These APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization. 
 
 ## Supported workloads
 
