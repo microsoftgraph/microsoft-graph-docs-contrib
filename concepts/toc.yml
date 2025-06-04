@@ -776,6 +776,8 @@ items:
     items:
     - name: Overview
       href: social-intel-concept-overview.md
+    - name: Microsoft 365 Copilot connectors for people data
+      href: peopleconnectors.md
     - name: Configure profile source precedence (preview)
       href: profilepriority-configure-profilepropertysetting.md
     - name: Customize item insights privacy
