@@ -2,10 +2,10 @@
 # GENERATED FILE - DO NOT EDIT
 #
 items:
-- name: Configuration monitoring
+- name: Configuration management
   items:
   - name: Overview
-    href: ../../concepts/unified-tenant-configuration-management-overview.md
+    href: ../../resources/unified-tenant-configuration-management-api-overview.md
   - name: Configuration application
     items:
     - name: Configuration application
@@ -32,6 +32,8 @@ items:
     items:
     - name: Configuration drift
       href: ../../resources/configurationdrift.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationdrifts.md
     - name: Get
       href: ../../api/configurationdrift-get.md
   - name: Configuration monitor
@@ -54,6 +56,8 @@ items:
     items:
     - name: Configuration monitoring result
       href: ../../resources/configurationmonitoringresult.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationmonitoringresults.md
     - name: Get
       href: ../../api/configurationmonitoringresult-get.md
   - name: Configuration snapshot job
@@ -64,6 +68,8 @@ items:
       href: ../../api/configurationmanagement-list-configurationsnapshotjobs.md
     - name: Get
       href: ../../api/configurationsnapshotjob-get.md
+    - name: Delete
+      href: ../../api/configurationsnapshotjob-delete.md
   - name: Complex types
     items:
     - name: Baseline parameter
