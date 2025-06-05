@@ -1,14 +1,14 @@
 ---
-title: "Get protectionUnitBase"
-description: "Read the properties and relationships of a protection unit object."
-author: "tushar20"
+title: "protectionUnitBase: Offboard"
+description: "Offboard a protection unit"
+author: "haputta"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ms.date: 08/26/2024
 ---
-# Get protectionUnitBase
+# protectionUnitBase
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ Read the properties and relationships of a [protectionUnitBase](../resources/pro
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "protectionunitbase_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/protectionunitbase-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/protectionunitbase-offboard-permissions.md)]
 
 ## HTTP request
 
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/backupRestore/protectionUnits/{protectionUnitBaseId}
+POST /solutions/backupRestore/protectionUnits/{protectionUnitBaseId}/offboard
 ```
 
 ## Request headers
@@ -53,17 +53,19 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
-### Request
+### Example 1: Offboard a removed protection unit
 
-The following example shows a request.
+The following example shows a request to offboard a protection unit removed from a policy.
+
+#### Request
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "protectionunitbase_get"
+  "name": "protectionunitbase_offboard"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c
+POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/offboard
 ```
 
 # [C#](#tab/csharp)
@@ -100,7 +102,7 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/890
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
@@ -116,7 +118,7 @@ HTTP/1.1 200 OK
   "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
   "siteId": "contoso-jpn.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e900900",
   "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-  "status": "protectRequested",
+  "status": "offboardRequested",
   "protectionSources": "manual",
   "createdBy": {
     "application": {
@@ -141,7 +143,77 @@ HTTP/1.1 200 OK
       "displayName": "Ryan"
     }
   },
-  "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-  "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
+  "lastModifiedDateTime": "2015-07-19T12:01:03.45Z",
+  "offboardRequestedDateTime": "2015-07-19T12:01:03.45Z"
+}
+```
+### Example 2: Offboard a protection unit attached to a policy
+
+The following example shows a request to offboard a protection unit which is attached to a policy.
+
+#### Request
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "protectionunitbase_offboard"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/offboard
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/protectionunitbase-get-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/protectionunitbase-get-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/protectionunitbase-get-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/protectionunitbase-get-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/protectionunitbase-get-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/protectionunitbase-get-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/protectionunitbase-get-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/protectionunitbase-get-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.publicError"
+}
+-->
+
+``` http
+HTTP/1.1 403 Operation Not Allowed
+{
+  "error": {
+    "code": "OperationNotAllowed",
+    "message": "Can't process this request as it is not in valid state.",
+    "details": []
+  }
 }
 ```
