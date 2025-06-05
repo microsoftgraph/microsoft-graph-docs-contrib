@@ -1,79 +1,46 @@
 ---
-title: "UTCM [Unified Tenant Configuration Monitoring] APIs"
-description: "This document talks about what UTCM APIs are, and what all admins can do via these APIs."
+title: "Overview of the unified tenant configuration management APIs in Microsoft Graph (preview)"
+description: "Use the unified tenant configuration management APIs in Microsoft Graph to control and manage configuration settings for the entire organization."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
+doc_type: conceptual
 ---
 
-# UTCM [Unified Tenant Configuration Monitoring] APIs
+# Overview of the unified tenant configuration management APIs in Microsoft Graph (preview)
 
-In the traditional Microsoft Tenant Configuration Management space, any administrator from an organization could use their identity to access resources that they have access to. Administrators today didn't have complete control over the tenant configuration, and didn’t have a view on if there are deviations from the desired configuration state.
+In traditional tenant configuration management, any administrator within an organization uses their credentials to access the resources to which they have access. However, administrators don't have full control over the tenant configuration and lack visibility into whether it deviates from the desired configuration state.
 
-**Unified-tenant configuration monitoring APIs** let administrators control and manage configuration settings for the entire organization. The settings can be on one or a combination of settings across the following workloads:
+The unified tenant configuration management (UTCM) APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization. The following list shows the supported workloads:
 
-- MS Exchange Online
-- MS Entra
-- MS Teams
-- MS Purview
-- MS Defender
-- MS OneDrive SharePoint
-- MS Intune
+- Microsoft Defender
+- Microsoft Entra
+- Microsoft Exchange Online
+- Microsoft Intune
+- Microsoft OneDrive
+- Microsoft Purview
+- Microsoft SharePoint
+- Microsoft Teams
 
-The list of supported resource types across the above 7 workloads is [here](utcm-supported-resourcetypes.md).
+> [!IMPORTANT]
+> UTCM APIs give administrators the ability to manage tenant configuration through a declarative representation that helps maintain configuration settings in the desired state. This representation can define one or multiple resources, each with one or more associated properties. For the complete list of supported resource types and their properties, see [Supported workloads and resource types](utcm-supported-resourcetypes.md).
 
-> **Important**  
-> UTCM APIs are providing admins capabilities to manage tenant configuration via the declarative representation helping them keep the tenant configurations settings in the desired state. The declarative representation can contain one or many resources and one or more properties for each of these resources. The list of all resources and all properties for these mentioned resource types that UTCM support can be seen [here](utcm-supported-resourcetypes.md).
+## Why integrate with the unified tenant configuration management APIs?
 
----
+### Maintain a secure and consistent tenant configuration
 
-## Why Integrate with the Unified Tenant Configuration Management (UTCM) API?
+As the Microsoft 365 ecosystem grows, keeping tenant settings aligned with the desired configuration of an organization becomes increasingly complex. Currently, IT administrators often have to manually detect and resolve configuration drift, a process that is time-consuming and prone to error. The UTCM APIs address this challenge by enabling automated monitoring of tenant settings. With the [monitoring](/graph/api/resources/configurationmonitoring?view=graph-rest-beta&preserve-view=true) APIs in UTCM, you can ensure your configurations remain secure and consistent, and quickly identify any deviations from the desired state.
 
-### Maintain a Secure and Consistent Tenant Configuration
+### Easily extract and understand current configuration states
 
-As the Microsoft 365 ecosystem grows, keeping tenant settings aligned with your organization’s desired configuration becomes increasingly complex. Today, IT admins often have to manually detect and resolve configuration drift - a time-consuming and error-prone process. The UTCM APIs solve this by enabling automated monitoring of tenant settings. With UTCM monitoring APIs, you can ensure your configurations remain secure and consistent, and quickly identify any deviations from the desired state.
+The [snapshot](/graph/api/resources/configurationsnapshotjob?view=graph-rest-beta&preserve-view=true) APIs in UTCM simplify the process of retrieving the current configuration across multiple workloads within a tenant. Administrators can use these snapshots to get a clear, declarative view of how settings are currently applied, which making audits, reviews, and troubleshooting much easier.
 
-### Easily Extract and Understand Current Configuration States
+## API reference
 
-UTCM’s snapshot APIs simplify the process of retrieving your tenant’s current configuration across multiple workloads. Admins can use these snapshots to get a clear, declarative view of how settings are currently applied - making audits, reviews, and troubleshooting much easier.
+Looking for the API reference for this service, see [Unified tenant configuration management APIs in Microsoft Graph beta](/graph/api/resources/unified-tenant-configuration-monitoring-overview?view=graph-rest-beta&preserve-view=true).
 
----
+## Next steps
 
-## Tenant/Drift Monitoring APIs
-
-UTCM tenant monitoring APIs will allow admins to create a monitor or multiple monitors, check the monitoring results of these monitors and get information regarding all active drifts in their tenant. The administrators can then fix the drifts by going to the relevant admin centres or any other means.
-
----
-
-## Snapshot APIs
-
-UTCM snapshots will allow admins to extract the current tenant configuration settings. This will allow admins to get a baseline (depicting possible desired tenant configuration) to initiate periodic tenant monitoring.
-
-> **Important**  
-> UTCM APIs will work with all Azure in-built roles only. The administrators will need to have one of the roles (e.g., Exchange administrator, Global reader, Compliance administrator, etc.) assigned to access the APIs.
-
----
-
-## Restrictions
-
-### Tenant Monitoring:
-
-- A maximum of **10 configurationMonitors** can be created per tenant.
-- A maximum of **500 configuration resources** per configurationMonitor can be part of the configurationBaseline.  
-  _Example: If an administrator wants to monitor 300 Transport Rules and 200 Conditional Access Policies, they can put it in the baseline during monitor creation._
-- The configurationMonitors can run at one of the following frequencies:  
-  **6 hours**, **12 hours**, and **24 hours** _(Default)_
-- When a baseline of a monitor is updated by the admin, associated existing monitoring results and drifts will automatically get deleted.
-
-### Drifts:
-
-- All active drifts will be retained and will be available for the admin to check at any point of time.
-- Every fixed drift will get deleted after **30 days** of the drift getting fixed.
-
-### Snapshot:
-
-- A maximum of **5 snapshots** can be taken **per day** per tenant.
-- A maximum of **20 snapshots** can be taken **per month** per tenant.
-- A maximum of **1000 resources** can be extracted per snapshot.
-- A maximum of **12 snapshot jobs** are visible to the admin. If the admin wants to create more snapshot jobs, they have to delete one or more of the existing jobs.
-- A snapshot will be retained for maximum **7 days** and then will automatically get deleted.
+- To learn more about the unified tenant configuration management APIs, see [Use the unified tenant configuration management APIs in Microsoft Graph (preview)](/graph/api/resources/unified-tenant-configuration-monitoring-overview).
+- To learn more about the supported workloads and resource types for UTCM, see [Supported workloads and resource types](/graph/import-exchange-mailbox-item).
+- Try the unified tenant configuration management APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
