@@ -5,6 +5,7 @@ author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
 doc_type: conceptual
+ms.subservice: "tenant-administration"
 ---
 
 # Overview of the unified tenant configuration management APIs in Microsoft Graph (preview)
