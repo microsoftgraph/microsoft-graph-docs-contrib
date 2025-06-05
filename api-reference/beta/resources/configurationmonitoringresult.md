@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |monitorId|String|Globally unique identifier (GUID) of the monitor. System-generated.|
 |runCompletionDateTime|DateTimeOffset|Date and time at which the monitor run completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |runInitiationDateTime|DateTimeOffset|Date and time at which the monitor run initiated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|runStatus|monitorRunStatus|Status of the monitor run. The possible values are: `successful`, `partiallySuccessful`, `failed`, `unknownFutureValue`. The default value is `???`.|
+|runStatus|monitorRunStatus|Status of the monitor run. The possible values are: `successful`, `partiallySuccessful`, `failed`, `unknownFutureValue`.|
 |tenantId|String|Globally unique identifier (GUID) of the tenant for which the monitor runs. Fetched automatically by the system.|
 
 ## Relationships

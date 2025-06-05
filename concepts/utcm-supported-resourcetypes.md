@@ -282,7 +282,7 @@ The following list shows the supported resource types in Teams.
 - microsoft.teams.voiceRoutingPolicy
 - microsoft.teams.workloadPolicy
 
-## S&C
+## SecurityAndCompliance
 
 - SCAuditConfigurationPolicy
 - SCAutoSensitivityLabelPolicy
