@@ -27,6 +27,18 @@ The list of supported resource types across the above 7 workloads is [here](utcm
 
 ---
 
+## Why Integrate with the Unified Tenant Configuration Management (UTCM) API?
+
+### Maintain a Secure and Consistent Tenant Configuration
+
+As the Microsoft 365 ecosystem grows, keeping tenant settings aligned with your organization’s desired configuration becomes increasingly complex. Today, IT admins often have to manually detect and resolve configuration drift - a time-consuming and error-prone process. The UTCM APIs solve this by enabling automated monitoring of tenant settings. With UTCM monitoring APIs, you can ensure your configurations remain secure and consistent, and quickly identify any deviations from the desired state.
+
+### Easily Extract and Understand Current Configuration States
+
+UTCM’s snapshot APIs simplify the process of retrieving your tenant’s current configuration across multiple workloads. Admins can use these snapshots to get a clear, declarative view of how settings are currently applied - making audits, reviews, and troubleshooting much easier.
+
+---
+
 ## Tenant/Drift Monitoring APIs
 
 UTCM tenant monitoring APIs will allow admins to create a monitor or multiple monitors, check the monitoring results of these monitors and get information regarding all active drifts in their tenant. The administrators can then fix the drifts by going to the relevant admin centres or any other means.
@@ -35,7 +47,7 @@ UTCM tenant monitoring APIs will allow admins to create a monitor or multiple mo
 
 ## Snapshot APIs
 
-UTCM snapshots will allow admins to extract the current tenant configuration settings. This will allow admins to get a baseline [depicting possible desired tenant configuration] to initiate periodic tenant monitoring.
+UTCM snapshots will allow admins to extract the current tenant configuration settings. This will allow admins to get a baseline (depicting possible desired tenant configuration) to initiate periodic tenant monitoring.
 
 > **Important**  
 > UTCM APIs will work with all Azure in-built roles only. The administrators will need to have one of the roles (e.g., Exchange administrator, Global reader, Compliance administrator, etc.) assigned to access the APIs.

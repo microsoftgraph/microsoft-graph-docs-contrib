@@ -36,8 +36,12 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |appId|String|The app ID of the application created in the Azure portal.|
 |clientCredentials|[clientCredentials](../resources/clientcredentials.md)| Includes the **keyVaultUri** and **certificateName** properties that the user must have obtained during the creation of the key vault.|
+|createdBy|[identitySet](../resources/identityset.md)|The user who created the application onboarding request.|
+|createdDateTime|DateTimeOffset|The date and time when the application onboarding request was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|User-friendly description of the **configurationApplication**.|
 |displayName|String|User-friendly name given by the user during the creation the **configurationApplication**.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The user who last modified the application.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the application onboarding request was last modified. If no modifications are made to the application, it's the same as **createdDateTime**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships
 None.
