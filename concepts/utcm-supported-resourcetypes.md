@@ -1,6 +1,6 @@
 ---
 title: "Supported workloads and resource types"
-description: "Learn the supported workloads and resource types in the unified tenant configuration monitoring API."
+description: "Learn the supported workloads and resource types in the unified tenant configuration management API."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Supported workloads and resource types
 
-This article describes the supported workloads and resource types in the unified tenant configuration monitoring (UTCM) APIs in Microsoft Graph. These APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization. 
+This article describes the supported workloads and resource types in the unified tenant configuration management (UTCM) APIs in Microsoft Graph. These APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization. 
 
 ## Supported workloads
 
@@ -219,6 +219,70 @@ The following list shows the supported resource types in Intune.
 - microsoft.intune.windowsUpdateForBusinessFeatureUpdateProfileWindows10
 - microsoft.intune.windowsUpdateForBusinessRingUpdateProfileWindows10
 
+### OneDrive
+
+The supported resource type in OneDrive is `microsoft.onedrive.settings`.
+
+### Security and compliance
+
+The following list shows the supported resource types in security and compliance.
+
+- SCAuditConfigurationPolicy
+- SCAutoSensitivityLabelPolicy
+- SCAutoSensitivityLabelRule
+- SCCaseHoldPolicy
+- SCCaseHoldRule
+- SCComplianceCase
+- SCComplianceSearch
+- SCComplianceSearchAction
+- SCComplianceTag
+- SCDeviceConditionalAccessPolicy
+- SCDeviceConfigurationPolicy
+- SCDLPCompliancePolicy
+- SCDLPComplianceRule
+- SCFilePlanPropertyAuthority
+- SCFilePlanPropertyCategory
+- SCFilePlanPropertyCitation
+- SCFilePlanPropertyDepartment
+- SCFilePlanPropertyReferenceId
+- SCFilePlanPropertySubCategory
+- SCLabelPolicy
+- SCProtectionAlert
+- SCRetentionCompliancePolicy
+- SCRetentionComplianceRule
+- SCRetentionEventType
+- SCSecurityFilter
+- SCSensitivityLabel
+- SCSupervisoryReviewPolicy
+- SCSupervisoryReviewRule
+
+### SharePoint
+
+The following list shows the supported resource types in SharePoint.
+
+- microsoft.sharepoint.accessControlSettings
+- microsoft.sharepoint.app
+- microsoft.sharepoint.browserIdleSignout
+- microsoft.sharepoint.homeSite
+- microsoft.sharepoint.hubSite
+- microsoft.sharepoint.orgAssetsLibrary
+- microsoft.sharepoint.propertyBag
+- microsoft.sharepoint.searchManagedProperty
+- microsoft.sharepoint.searchResultSource
+- microsoft.sharepoint.sharingSettings
+- microsoft.sharepoint.site
+- microsoft.sharepoint.siteAuditSettings
+- microsoft.sharepoint.siteDesign
+- microsoft.sharepoint.siteDesignRights
+- microsoft.sharepoint.siteGroup
+- microsoft.sharepoint.siteScript
+- microsoft.sharepoint.storageEntity
+- microsoft.sharepoint.tenantCdnEnabled
+- microsoft.sharepoint.tenantCdnPolicy
+- microsoft.sharepoint.tenantSettings
+- microsoft.sharepoint.theme
+- microsoft.sharepoint.userProfileProperty
+
 ### Teams
 
 The following list shows the supported resource types in Teams.
@@ -281,65 +345,3 @@ The following list shows the supported resource types in Teams.
 - microsoft.teams.voiceRoute
 - microsoft.teams.voiceRoutingPolicy
 - microsoft.teams.workloadPolicy
-
-## SecurityAndCompliance
-
-- SCAuditConfigurationPolicy
-- SCAutoSensitivityLabelPolicy
-- SCAutoSensitivityLabelRule
-- SCCaseHoldPolicy
-- SCCaseHoldRule
-- SCComplianceCase
-- SCComplianceSearch
-- SCComplianceSearchAction
-- SCComplianceTag
-- SCDeviceConditionalAccessPolicy
-- SCDeviceConfigurationPolicy
-- SCDLPCompliancePolicy
-- SCDLPComplianceRule
-- SCFilePlanPropertyAuthority
-- SCFilePlanPropertyCategory
-- SCFilePlanPropertyCitation
-- SCFilePlanPropertyDepartment
-- SCFilePlanPropertyReferenceId
-- SCFilePlanPropertySubCategory
-- SCLabelPolicy
-- SCProtectionAlert
-- SCRetentionCompliancePolicy
-- SCRetentionComplianceRule
-- SCRetentionEventType
-- SCSecurityFilter
-- SCSensitivityLabel
-- SCSupervisoryReviewPolicy
-- SCSupervisoryReviewRule
-
-### SharePoint
-
-The following list shows the supported resource types in SharePoint.
-
-- microsoft.sharepoint.accessControlSettings
-- microsoft.sharepoint.app
-- microsoft.sharepoint.browserIdleSignout
-- microsoft.sharepoint.homeSite
-- microsoft.sharepoint.hubSite
-- microsoft.sharepoint.orgAssetsLibrary
-- microsoft.sharepoint.propertyBag
-- microsoft.sharepoint.searchManagedProperty
-- microsoft.sharepoint.searchResultSource
-- microsoft.sharepoint.sharingSettings
-- microsoft.sharepoint.site
-- microsoft.sharepoint.siteAuditSettings
-- microsoft.sharepoint.siteDesign
-- microsoft.sharepoint.siteDesignRights
-- microsoft.sharepoint.siteGroup
-- microsoft.sharepoint.siteScript
-- microsoft.sharepoint.storageEntity
-- microsoft.sharepoint.tenantCdnEnabled
-- microsoft.sharepoint.tenantCdnPolicy
-- microsoft.sharepoint.tenantSettings
-- microsoft.sharepoint.theme
-- microsoft.sharepoint.userProfileProperty
-
-## OneDrive
-
-The supported resource type in OneDrive is `microsoft.onedrive.settings`.
