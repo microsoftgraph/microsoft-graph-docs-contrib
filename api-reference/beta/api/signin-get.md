@@ -5,7 +5,7 @@ description: "Get a signIn object that contains all sign-ins for a Microsoft Ent
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
-ms.date: 11/08/2024
+ms.date: 06/05/2025
 ---
 
 # Get signIn
@@ -35,8 +35,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /auditLogs/signIns/{id}
 ```
-## Important note on accessing noninteractive, ServicePrincipal, and ManagedIdentity sign-in log events
-Only interactive sign-ins are returned through GET signins API requests unless you set an explicit filter. For example, the filter for getting non-interactive sign-ins is https://graph.microsoft.com/beta/auditLogs/signIns?&$filter=signInEventTypes/any(t: t eq 'nonInteractiveUser'). More details are included in the signInEventType attribute description. 
+> [!Important]
+> Regarding accessing noninteractive, ServicePrincipal, and ManagedIdentity sign-in log events:
+> 
+> Only interactive sign-ins are returned through GET signins API requests unless you set an explicit filter. For example, the filter for getting non-interactive sign-ins is `https://graph.microsoft.com/beta/auditLogs/signIns?&$filter=signInEventTypes/any(t: t eq 'nonInteractiveUser')`. More details are included in the `signInEventType` attribute description. 
 
 ## Example filters on SigninEventType
 
@@ -68,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a [signIn](../re
 
 ### Request
 
-The following example shows a request. Please note that "id" refers to RequestID property. 
+The following example shows a request. Note that "id" refers to RequestID property. 
 
 # [HTTP](#tab/http)
 <!-- {
