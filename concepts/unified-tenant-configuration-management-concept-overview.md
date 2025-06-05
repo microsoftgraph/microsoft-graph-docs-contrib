@@ -30,7 +30,7 @@ The unified tenant configuration management (UTCM) APIs allow administrators to 
 
 ### Maintain a secure and consistent tenant configuration
 
-As the Microsoft 365 ecosystem grows, keeping tenant settings aligned with the desired configuration of an organization becomes increasingly complex. Currently, IT administrators often have to manually detect and resolve configuration drift, a process that is time-consuming and prone to error. The UTCM APIs address this challenge by enabling automated monitoring of tenant settings. With the [monitoring](/graph/api/resources/configurationmonitoring?view=graph-rest-beta&preserve-view=true) APIs in UTCM, you can ensure your configurations remain secure and consistent, and quickly identify any deviations from the desired state.
+As the Microsoft 365 ecosystem grows, keeping tenant settings aligned with the desired configuration of an organization becomes increasingly complex. Currently, IT administrators often have to manually detect and resolve configuration drift, a process that is time-consuming and prone to error. The UTCM APIs address this challenge by enabling automated monitoring of tenant settings. With the [monitoring](/graph/api/resources/configurationmonitor?view=graph-rest-beta&preserve-view=true) APIs in UTCM, you can ensure your configurations remain secure and consistent, and quickly identify any deviations from the desired state.
 
 ### Easily extract and understand current configuration states
 
