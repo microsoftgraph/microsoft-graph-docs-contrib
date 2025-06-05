@@ -40,8 +40,10 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|The date and time when the application onboarding request was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|User-friendly description of the **configurationApplication**.|
 |displayName|String|User-friendly name given by the user during the creation the **configurationApplication**.|
+|id|String|Globally unique identifier (GUID) of the application onboarding request. System-generated. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The user who last modified the application.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the application onboarding request was last modified. If no modifications are made to the application, it's the same as **createdDateTime**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|tenantId|String|Globally unique identifier (GUID) of the tenant for which the application onboarding request is created. Fetched automatically by the system.|
 
 ## Relationships
 None.
@@ -65,6 +67,7 @@ The following JSON representation shows the resource type.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
+  "lastModifiedBy": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "tenantId": "String"
 }
