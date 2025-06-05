@@ -3296,8 +3296,8 @@
       "name": "Tenant administration",
       "childNodes": [
         {
-          "name": "Configuration monitoring",
-          "overview": "../../../../concepts/unified-tenant-configuration-management-overview.md",
+          "name": "Configuration management",
+          "overview": "../../resources/unified-tenant-configuration-management-api-overview.md",
           "shouldSort": true,
           "resources": [
             "configurationApplication",
