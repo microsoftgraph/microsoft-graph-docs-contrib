@@ -4,7 +4,7 @@ description: "Update the properties of a desk object."
 author: mattpennathe3rd
 ms.date: 06/03/2025
 ms.localizationpriority: medium
-ms.subservice: places
+ms.subservice:
 doc_type: apiPageType
 ---
 
@@ -50,6 +50,7 @@ PATCH /desk
 
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|

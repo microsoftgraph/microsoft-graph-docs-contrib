@@ -4,7 +4,7 @@ description: "Delete a building object."
 author: mattpennathe3rd
 ms.date: 06/03/2025
 ms.localizationpriority: medium
-ms.subservice: places
+ms.subservice:
 doc_type: apiPageType
 ---
 
