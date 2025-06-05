@@ -37,10 +37,10 @@ The [snapshot](/graph/api/resources/configurationsnapshotjob?view=graph-rest-bet
 
 ## API reference
 
-Looking for the API reference for this service, see [Unified tenant configuration management APIs in Microsoft Graph beta](/graph/api/resources/unified-tenant-configuration-monitoring-overview?view=graph-rest-beta&preserve-view=true).
+Looking for the API reference for this service, see [Unified tenant configuration management APIs in Microsoft Graph beta](/graph/api/resources/unified-tenant-configuration-management-overview?view=graph-rest-beta&preserve-view=true).
 
 ## Next steps
 
-- To learn more about the unified tenant configuration management APIs, see [Use the unified tenant configuration management APIs in Microsoft Graph (preview)](/graph/api/resources/unified-tenant-configuration-monitoring-overview).
+- To learn more about the unified tenant configuration management APIs, see [Use the unified tenant configuration management APIs in Microsoft Graph (preview)](/graph/api/resources/unified-tenant-configuration-management-overview).
 - To learn more about the supported workloads and resource types for UTCM, see [Supported workloads and resource types](/graph/import-exchange-mailbox-item).
 - Try the unified tenant configuration management APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
