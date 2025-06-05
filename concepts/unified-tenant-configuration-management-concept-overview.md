@@ -1,6 +1,6 @@
 ---
 title: "Overview of the unified tenant configuration management APIs in Microsoft Graph (preview)"
-description: "Use the unified tenant configuration management APIs in Microsoft Graph to control and manage configuration settings for the entire organization."
+description: "Use the unified tenant configuration management APIs in Microsoft Graph to control and manage configuration settings for an entire organization."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
