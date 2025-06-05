@@ -275,7 +275,7 @@ items:
     - name: Place
       href: ../../resources/place.md
     - name: Create place
-      href: ../../api/place-create.md
+      href: ../../api/place-post-places.md
     - name: List places
       href: ../../api/place-list.md
     - name: Get place
