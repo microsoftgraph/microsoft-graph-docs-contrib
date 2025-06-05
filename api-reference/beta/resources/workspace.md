@@ -1,11 +1,11 @@
 ---
 title: "workspace resource type"
-description: "Specifies the properties of a workspace in a tenant."
+description: "**TODO: Add Description**"
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 06/03/2025
 ms.localizationpriority: medium
-author: "slister1001"
-ms.subservice: "outlook"
-doc_type: "resourcePageType"
-ms.date: 03/22/2024
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+doc_type: resourcePageType
 ---
 
 # workspace resource type
@@ -14,53 +14,51 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a workspace in a tenant. 
+**TODO: Add Description**
 
-In Exchange Online, each workspace is associated with a workspace mailbox. Derived from [place](place.md).
+
+Inherits from [place](../resources/place.md).
+
 
 ## Methods
-
-| Method                              | Return Type                  | Description |
-|:------------------------------------|:-----------------------------|:--------|
-| [List places](../api/place-list.md) | A collection of the requested, derived type of [place](place.md) | Get a collection of the specified type of **place** object defined in the tenant. For example, you can get all the rooms all the workspaces, all the room lists, the workspaces in a specific room list, or the rooms in a specific room list in the tenant. |
-| [Get place](../api/place-get.md)    | The requested, derived type of [place](place.md)            | Get the properties and relationships of the specified **place** object, such as a room. |
-| [Update place](../api/place-update.md)    | The requested, derived type of [place](place.md)            | Update the properties and relationships of a specified **place** object. |
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/roomlist-list-workspaces.md)|[workspace](../resources/workspace.md) collection|Get a list of the workspace objects and their properties.|
+|[Create](../api/roomlist-post-workspaces.md)|[workspace](../resources/workspace.md)|Create a new workspace object.|
+|[Get](../api/workspace-get.md)|[workspace](../resources/workspace.md)|Read the properties and relationships of a workspace object.|
+|[Update](../api/workspace-update.md)|[workspace](../resources/workspace.md)|Update the properties of a workspace object.|
+|[Delete](../api/roomlist-delete-workspaces.md)|None|Delete a workspace object.|
+|[descendants](../api/workspace-descendants.md)|[place](../resources/place.md) collection|**TODO: Add Description**|
 
 ## Properties
-
-| Property               | Type                                              | Description |
-|:-----------------------|:--------------------------------------------------|:--|
-| address                | [physicalAddress](physicaladdress.md)             | The street address of the workspace. |
-| building               | String                                            | Specifies the building name or building number that the workspace is in. |
-| capacity               | Int32                                             | Specifies the capacity of the workspace. |
-| displayName            | String                                            | The name associated with the workspace. |
-| emailAddress           | String                                            | Email address of the workspace. |
-| floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
-| floorNumber            | Int32                                             | Specifies the floor number that the workspace is on. |
-| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the workspace location in latitude, longitude, and optionally, altitude coordinates. |
-| id                     | String                                            | Unique identifier for the workspace. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or to the tenant configuration. |
-| isWheelChairAccessible | Boolean                                           | Specifies whether the workspace is wheelchair accessible. |
-| label                  | String                                            | Specifies a descriptive label for the workspace, for example, a number or name. |
-| nickname               | String                                            | Specifies a nickname for the workspace, for example, "quiet workspace". |
-| phone                  | String                                            | The phone number of the workspace. |
-| placeId                | String                                            | A unique, immutable identifier for the workspace. Read-only. The value of this identifier is equal to the **ExternalDirectoryObjectId** returned from the `Get-Mailbox` cmdlet. |
-| tags                   | String collection                                 | Specifies other features of the workspace; for example, the type of view or furniture type. |
-
-### bookingType values
-
-| Value    | Description                                               |
-|:---------|:----------------------------------------------------------|
-| standard | The workspace can be reserved based on the other settings in this cmdlet. This value is the default. |
-| reserved | The workspace is available only on a first-come, first-served basis. It can't be reserved.|
+|Property|Type|Description|
+|:---|:---|:---|
+|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+|building|String|**TODO: Add Description**|
+|capacity|Int32|**TODO: Add Description**|
+|description|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+|displayDeviceName|String|**TODO: Add Description**|
+|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+|emailAddress|String|**TODO: Add Description**|
+|floorLabel|String|**TODO: Add Description**|
+|floorNumber|Int32|**TODO: Add Description**|
+|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+|label|String|**TODO: Add Description**|
+|mode|[placeMode](../resources/placemode.md)|**TODO: Add Description**|
+|nickname|String|**TODO: Add Description**|
+|parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+|tags|String collection|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 
 ## Relationships
-
 None.
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -81,18 +79,29 @@ The following JSON representation shows the resource type.
   "address": {
     "@odata.type": "microsoft.graph.physicalAddress"
   },
+  "placeId": "String",
+  "parentId": "String",
+  "description": "String",
+  "resourceLinks": [
+    {
+      "@odata.type": "microsoft.graph.resourceLink"
+    }
+  ],
+  "tags": [
+    "String"
+  ],
+  "isWheelChairAccessible": "Boolean",
   "emailAddress": "String",
   "nickname": "String",
   "building": "String",
   "floorNumber": "Integer",
   "label": "String",
   "capacity": "Integer",
-  "isWheelChairAccessible": "Boolean",
-  "tags": [
-    "String"
-  ],
   "floorLabel": "String",
-  "placeId": "String (alternate identifier)"
+  "displayDeviceName": "String",
+  "mode": {
+    "@odata.type": "microsoft.graph.placeMode"
+  }
 }
 ```
 
