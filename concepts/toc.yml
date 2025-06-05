@@ -989,7 +989,7 @@ items:
       href: teamwork-national-cloud-differences.md
   - name: Tenant administration (preview)
     items:
-    - name: Configuration monitoring
+    - name: Configuration management
       items:
       - name: Overview
         href: unified-tenant-configuration-monitoring-concept-overview.md
