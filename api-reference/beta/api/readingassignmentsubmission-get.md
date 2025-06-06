@@ -1,6 +1,6 @@
 ---
-title: "Get readingAssignmentSubmission"
-description: "Read the properties and relationships of a readingAssignmentSubmission object."
+title: "Get readingAssignmentSubmissions"
+description: "Read the properties and relationships of a collection of readingAssignmentSubmission objects."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 07/29/2024
 ---
 
-# Get readingAssignmentSubmission
+# Get readingAssignmentSubmissions
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) object.
+Read the properties and relationships of a collection of [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) objects.
 
 ## Permissions
 
@@ -34,14 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /education/reports/readingAssignmentSubmission
+GET /education/reports/readingAssignmentSubmissions
 ```
 
 ## Optional query parameters
 
-This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
-
-The `$filter` and `$orderby` query parameters are supported for all properties. 
+This method supports the `$top`, `$filter`, `$count`, `$skiptoken` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -55,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) objects in the response body.
 
 ## Examples
 
@@ -73,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmission
+GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmissions
 ```
 
 #### Response
@@ -132,7 +130,7 @@ Content-Type: application/json
 
 ### Example 2: Get the reading assignment submissions for a specific date using $filter
 
-The following example shows how to get the reading assignment submissions for a specific date using the `$filter` query parameter.
+The following example shows how to get the reading assignment submissions for a specific date using the `$filter` query parameter. Please note that the requested time range must be 24 hours or shorter.
 
 #### Request
 
@@ -145,7 +143,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmissions?$filter=submitDateTime gt 2023-10-10T00:00:00.000Z
+GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmissions?$filter=submissionDateTime gt 2023-10-10T00:00:00.000Z and submissionDateTime lt 2023-10-11T00:00:00Z
 ```
 
 # [C#](#tab/csharp)
@@ -202,7 +200,7 @@ Content-Type: application/json
       "classId": "adef893e-ff63-4b47-a081-7ea03e7dba6a",
       "submissionId": "980cc32e-d476-66f7-2d8d-5e7b4f92f01c",
       "studentId": "12d3e83c-786e-4b02-92bd-8fd5290d6d87",
-      "submissionDateTime": "2024-01-11T00:20:33.9812849Z",
+      "submissionDateTime": "2023-10-10T00:20:33.9812849Z",
       "accuracyScore": 85,
       "wordsPerMinute": 90,
       "wordCount": 200,

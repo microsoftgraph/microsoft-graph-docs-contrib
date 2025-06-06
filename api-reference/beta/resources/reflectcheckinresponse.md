@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/reflectcheckinresponse-get.md)|[reflectCheckInResponse](../resources/reflectcheckinresponse.md)|Read the properties and relationships of a [reflectCheckInResponse](../resources/reflectcheckinresponse.md) object.|
+|[Get](../api/reflectcheckinresponse-get.md)|[reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection|Read the properties and relationships of a collection of [reflectCheckInResponse](../resources/reflectcheckinresponse.md) objects.|
 
 ## Properties
 |Property|Type|Description|

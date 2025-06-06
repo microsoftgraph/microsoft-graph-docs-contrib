@@ -1,6 +1,6 @@
 ---
-title: "Get reflectCheckInResponse"
-description: "Read the properties and relationships of a reflectCheckInResponse object."
+title: "Get reflectCheckInResponses"
+description: "Read the properties and relationships of a collection of reflectCheckInResponse objects."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 08/14/2024
 ---
 
-# Get reflectCheckInResponse
+# Get reflectCheckInResponses
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [reflectCheckInResponse](../resources/reflectcheckinresponse.md) object. This method gets the responses to a [Microsoft Reflect](https://reflect.microsoft.com/) check-in.
+Read the properties and relationships of a collection of [reflectCheckInResponse](../resources/reflectcheckinresponse.md) objects. This method gets the responses to a [Microsoft Reflect](https://reflect.microsoft.com/) check-in.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -36,9 +36,8 @@ GET /education/reports/reflectCheckInResponses
 ```
 
 ## Optional query parameters
-This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
 
-The `$filter` and `$orderby` query parameters are supported for all properties. 
+This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -52,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [reflectCheckInResponse](../resources/reflectcheckinresponse.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [reflectCheckInResponse](../resources/reflectcheckinresponse.md) objects in the response body.
 
 ## Examples
 
@@ -156,7 +155,7 @@ Content-Type: application/json
 
 ### Example 2: Get the Reflect check-in responses for a specific date using $filter
 
-The following example shows how to get the Reflect check-in responses for a specific date using the `$filter` query parameter.
+The following example shows how to get the Reflect check-in responses for a specific date using the `$filter` query parameter. Please note that the requested time range must be 24 hours or shorter.
 
 #### Request
 
@@ -169,7 +168,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/reports/reflectCheckInResponses?$filter=submitDateTime gt 2023-10-10T00:00:00.000Z
+GET https://graph.microsoft.com/beta/education/reports/reflectCheckInResponses?$filter=submitDateTime gt 2023-10-10T00:00:00.000Z and submitDateTime lt 2023-10-11T00:00:00.000Z
 ```
 
 # [C#](#tab/csharp)
@@ -230,11 +229,11 @@ Content-Type: application/json
       "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
       "checkInTitle": "How are you feeling today?",
       "isClosed": false,
-      "createdDateTime": "2023-10-19T11:44:16.0821219Z",
+      "createdDateTime": "2023-10-10T11:44:16.0821219Z",
       "responderId": "f2df94da-9a47-4c65-958c-8289ae30243b",
       "responseFeedback": "pleasant",
       "responseEmotion": "motivated",
-      "submitDateTime": "2023-10-19T11:46:16.2813907Z"
+      "submitDateTime": "2023-10-10T11:46:16.2813907Z"
     },
     {
       "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c",
@@ -242,11 +241,11 @@ Content-Type: application/json
       "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
       "checkInTitle": "How are you feeling today?",
       "isClosed": false,
-      "createdDateTime": "2023-10-19T11:44:16.0821219Z",
+      "createdDateTime": "2023-10-10T11:44:16.0821219Z",
       "responderId": "958c7306-9a47-15fb-958c-8289ae30243b",
       "responseFeedback": "unpleasant",
       "responseEmotion": "bored",
-      "submitDateTime": "2023-11-19T11:55:16.2813907Z"
+      "submitDateTime": "2023-10-10T11:55:16.2813907Z"
     }
   ]
 }
