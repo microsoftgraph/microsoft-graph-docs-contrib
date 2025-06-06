@@ -1,10 +1,10 @@
 ---
 title: "Update emailNotificationsSetting"
 description: "Update the properties of an emailNotificationsSetting object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "Vassu05"
 ms.date: 05/29/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
@@ -48,13 +48,11 @@ PATCH /solutions/backupRestore/emailNotificationsSetting
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|**TODO: Add Description** Required.|
-|additionalEvents|notificationEventsType|**TODO: Add Description**. The possible values are: `none`, `restoreAndPolicyUpdates`, `unknownFutureValue`. Required.|
-|recipients|[notificationRecipients](../resources/notificationrecipients.md)|**TODO: Add Description** Required.|
+|isEnabled|Boolean|Represents whether notifications are enabled or not.|
+|additionalEvents|notificationEventsType|Represents whether you want to opt for additional policy and restore updates. The possible values are: `none`, `restoreAndPolicyUpdates`, `unknownFutureValue`.|
+|recipients|[notificationRecipients](../resources/notificationrecipients.md)|List of recipients.|
 
 
 

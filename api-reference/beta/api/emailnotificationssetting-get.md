@@ -1,10 +1,10 @@
 ---
 title: "Get emailNotificationsSetting"
 description: "Read the properties and relationships of an emailNotificationsSetting object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "Vassu05"
 ms.date: 05/29/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
