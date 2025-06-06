@@ -73,7 +73,6 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/emailNotificationsS
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,7 +84,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "isEnabled": "true",
+  "isEnabled": true,
   "additionalEvents": "restoreAndPolicyUpdates",
   "recipients": {
     "recipients": {
