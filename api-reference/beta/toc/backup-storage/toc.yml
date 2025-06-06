@@ -10,6 +10,14 @@ items:
     href: ../../api/backuprestoreroot-get.md
   - name: Enable
     href: ../../api/backuprestoreroot-enable.md
+- name: Multi Admin Notification
+  items:
+  - name: Email Notifications Setting
+    href: ../../resources/emailnotificationssetting.md
+  - name: Get
+    href: ../../api/emailnotificationssetting-get.md
+  - name: Update
+    href: ../../api/emailnotificationssetting-update.md
 - name: Protection policy
   items:
   - name: Protection policy
