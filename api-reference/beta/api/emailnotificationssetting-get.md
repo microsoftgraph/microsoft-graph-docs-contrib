@@ -85,13 +85,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.emailNotificationsSetting",
-    "id": "03960da0-81a4-4f5d-af4d-787a905ef8e3",
-    "isEnabled": "Boolean",
-    "additionalEvents": "String",
+  "isEnabled": "true",
+  "additionalEvents": "restoreAndPolicyUpdates",
+  "recipients": {
     "recipients": {
-      "@odata.type": "microsoft.graph.notificationRecipients"
+      "role": "globalAdmins"
     }
   }
 }

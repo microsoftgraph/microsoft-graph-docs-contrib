@@ -75,11 +75,23 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/emailNotification
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.emailNotificationsSetting",
-  "isEnabled": "Boolean",
-  "additionalEvents": "String",
+  "isEnabled": "true",
+  "additionalEvents": "restoreAndPolicyUpdates",
   "recipients": {
-    "@odata.type": "microsoft.graph.notificationRecipients"
+    "recipients": {
+      "role": "custom",
+      "customRecipients": [
+        {
+          "email": "amala@contoso.com"
+        },
+        {
+          "email": "conrad@contoso.com"
+        },
+        {
+          "email": "lothar@contoso.com"
+        }
+      ]
+    }
   }
 }
 ```
@@ -99,12 +111,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.emailNotificationsSetting",
-  "id": "03960da0-81a4-4f5d-af4d-787a905ef8e3",
-  "isEnabled": "Boolean",
-  "additionalEvents": "String",
+  "isEnabled": "true",
+  "additionalEvents": "restoreAndPolicyUpdates",
   "recipients": {
-    "@odata.type": "microsoft.graph.notificationRecipients"
+    "recipients": {
+      "role": "custom",
+      "customRecipients": [
+        {
+          "email": "amala@contoso.com"
+        },
+        {
+          "email": "conrad@contoso.com"
+        },
+        {
+          "email": "lothar@contoso.com"
+        }
+      ]
+    }
   }
 }
 ```
