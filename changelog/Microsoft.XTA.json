@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "baselineParameter",
           "ChangeType": "Addition",
-          "Description": "Added the [baselineParameter](https://learn.microsoft.com/en-us/graph/api/resources/baselineParameter?view=graph-rest-beta) resource.",
+          "Description": "Added the [baselineParameter](https://learn.microsoft.com/en-us/graph/api/resources/baselineParameter?view=graph-rest-beta) resource type.",
           "Target": "baselineParameter"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "baselineResource",
           "ChangeType": "Addition",
-          "Description": "Added the [baselineResource](https://learn.microsoft.com/en-us/graph/api/resources/baselineResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [baselineResource](https://learn.microsoft.com/en-us/graph/api/resources/baselineResource?view=graph-rest-beta) resource type.",
           "Target": "baselineResource"
         },
         {
@@ -71,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "clientCredentials",
           "ChangeType": "Addition",
-          "Description": "Added the [clientCredentials](https://learn.microsoft.com/en-us/graph/api/resources/clientCredentials?view=graph-rest-beta) resource.",
+          "Description": "Added the [clientCredentials](https://learn.microsoft.com/en-us/graph/api/resources/clientCredentials?view=graph-rest-beta) resource type.",
           "Target": "clientCredentials"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "driftedProperty",
           "ChangeType": "Addition",
-          "Description": "Added the [driftedProperty](https://learn.microsoft.com/en-us/graph/api/resources/driftedProperty?view=graph-rest-beta) resource.",
+          "Description": "Added the [driftedProperty](https://learn.microsoft.com/en-us/graph/api/resources/driftedProperty?view=graph-rest-beta) resource type.",
           "Target": "driftedProperty"
         },
         {
@@ -87,7 +87,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "errorDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [errorDetail](https://learn.microsoft.com/en-us/graph/api/resources/errorDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the [errorDetail](https://learn.microsoft.com/en-us/graph/api/resources/errorDetail?view=graph-rest-beta) resource type.",
           "Target": "errorDetail"
         },
         {
@@ -95,7 +95,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "openComplexDictionaryType",
           "ChangeType": "Addition",
-          "Description": "Added the [openComplexDictionaryType](https://learn.microsoft.com/en-us/graph/api/resources/openComplexDictionaryType?view=graph-rest-beta) resource.",
+          "Description": "Added the [openComplexDictionaryType](https://learn.microsoft.com/en-us/graph/api/resources/openComplexDictionaryType?view=graph-rest-beta) resource type.",
           "Target": "openComplexDictionaryType"
         },
         {
@@ -111,7 +111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationApplication",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationApplication](https://learn.microsoft.com/en-us/graph/api/resources/configurationApplication?view=graph-rest-beta) resource.",
+          "Description": "Added the [configurationApplication](https://learn.microsoft.com/en-us/graph/api/resources/configurationApplication?view=graph-rest-beta) resource and associated methods.",
           "Target": "configurationApplication"
         },
         {
@@ -119,7 +119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationBaseline",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationBaseline](https://learn.microsoft.com/en-us/graph/api/resources/configurationBaseline?view=graph-rest-beta) resource.",
+          "Description": "Added the [configurationBaseline](https://learn.microsoft.com/en-us/graph/api/resources/configurationBaseline?view=graph-rest-beta) resource and an associated method.",
           "Target": "configurationBaseline"
         },
         {
@@ -127,7 +127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationDrift",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationDrift](https://learn.microsoft.com/en-us/graph/api/resources/configurationDrift?view=graph-rest-beta) resource.",
+          "Description": "Added the [configurationDrift](https://learn.microsoft.com/en-us/graph/api/resources/configurationDrift?view=graph-rest-beta) resource and supported methods.",
           "Target": "configurationDrift"
         },
         {
@@ -135,7 +135,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationManagement",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationManagement](https://learn.microsoft.com/en-us/graph/api/resources/configurationManagement?view=graph-rest-beta) resource.",
+          "Description": "Added the [configurationManagement](https://learn.microsoft.com/en-us/graph/api/resources/configurationManagement?view=graph-rest-beta) resource type.",
           "Target": "configurationManagement"
         },
         {
@@ -143,7 +143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationMonitor",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationMonitor](https://learn.microsoft.com/en-us/graph/api/resources/configurationMonitor?view=graph-rest-beta) resource.",
+          "Description": "Added the [configurationMonitor](https://learn.microsoft.com/en-us/graph/api/resources/configurationMonitor?view=graph-rest-beta) resource and associated methods.",
           "Target": "configurationMonitor"
         },
         {
@@ -151,7 +151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationMonitoringResult",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationMonitoringResult](https://learn.microsoft.com/en-us/graph/api/resources/configurationMonitoringResult?view=graph-rest-beta) resource.",
+          "Description": "Added the [configurationMonitoringResult](https://learn.microsoft.com/en-us/graph/api/resources/configurationMonitoringResult?view=graph-rest-beta) resource and associated methods.",
           "Target": "configurationMonitoringResult"
         },
         {
@@ -159,7 +159,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationSnapshotJob",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationSnapshotJob](https://learn.microsoft.com/en-us/graph/api/resources/configurationSnapshotJob?view=graph-rest-beta) resource.",
+          "Description": "Added the [configurationSnapshotJob](https://learn.microsoft.com/en-us/graph/api/resources/configurationSnapshotJob?view=graph-rest-beta) resource and associated methods.",
           "Target": "configurationSnapshotJob"
         },
         {
