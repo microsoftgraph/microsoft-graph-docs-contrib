@@ -54,12 +54,12 @@ PATCH /admin/configurationManagement/configurationMonitors/{configurationMonitor
 
 |Property|Type|Description|
 |:---|:---|:---|
-|baseline|[configurationBaseline](../resources/configurationBaseline.md)|A complex object that contains details of at least one resource and one property associated with the resource to be monitored. Optional.|
+|baseline|[configurationBaseline](../resources/configurationbaseline.md)|A complex object that contains details of at least one resource and one property associated with the resource to be monitored. Optional.|
 |description|String| User-friendly description of the monitor given by the user. Optional.|
 |displayName|String| User-friendly name given by the user to the monitor. Optional.|
 |parameters|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Key-value pairs that contain the values of parameters which might be used in the baseline. Optional.|
 
->**Note**: The [configurationBaseline](../resources/configurationBaseline.md) resource is a contained entity. If an admin wants to update the **configurationBaseline**, they must provide the full monitor body, including values for all fields, particularly those that are relevant and can be updated.
+>**Note**: The [configurationBaseline](../resources/configurationbaseline.md) resource is a contained entity. If an admin wants to update the **configurationBaseline**, they must provide the full monitor body, including values for all fields, particularly those that are relevant and can be updated.
 
 ## Response
 
