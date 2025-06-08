@@ -21,6 +21,9 @@ request_body = EducationAssignment(
 	due_date_time = "2021-09-10T00:00:00Z",
 	added_student_action = EducationAddedStudentAction.None,
 	add_to_calendar_action = EducationAddToCalendarOptions.StudentsAndPublisher,
+	additional_data = {
+			"language_tag" : "pt-BR",
+	}
 )
 
 result = await graph_client.education.classes.by_education_class_id('educationClass-id').assignments.by_education_assignment_id('educationAssignment-id').patch(request_body)

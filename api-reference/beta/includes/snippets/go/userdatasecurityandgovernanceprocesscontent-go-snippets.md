@@ -20,71 +20,60 @@ requestBody := graphusers.NewItemProcessContentPostRequestBody()
 contentToProcess := graphmodels.NewProcessContentRequest()
 
 
-processContentMetadataBase := graphmodels.NewProcessContentMetadataBase()
-odataType := "microsoft.graph.processFileMetadata"
-processContentMetadataBase.SetOdataType(&odataType) 
-identifier := "91e1ca70-6e5b-4120-abf0-472034ba05c3"
+processContentMetadataBase := graphmodels.NewProcessConversationMetadata()
+identifier := "07785517-9081-4fe7-a9dc-85bcdf5e9075"
 processContentMetadataBase.SetIdentifier(&identifier) 
-content := graphmodels.NewContentBase()
-odataType := "microsoft.graph.binaryContent"
-content.SetOdataType(&odataType) 
-additionalData := map[string]interface{}{
-	"data" : "<some-binary-data>", 
-}
-content.SetAdditionalData(additionalData)
+content := graphmodels.NewTextContent()
+data := "Write an acceptance letter for Alex Wilber with Credit card number 4532667785213500, ssn: 120-98-1437 at One Microsoft Way, Redmond, WA 98052"
+content.SetData(&data) 
 processContentMetadataBase.SetContent(content)
-name := "Example.docx"
+name := "PC Purview API Explorer message"
 processContentMetadataBase.SetName(&name) 
-createdDateTime , err := time.Parse(time.RFC3339, "2024-07-23T01:31:40.2020463Z")
-processContentMetadataBase.SetCreatedDateTime(&createdDateTime) 
-correlationId := "54689"
+correlationId := "d63eafd2-e3a9-4c1a-b726-a2e9b9d9580d"
 processContentMetadataBase.SetCorrelationId(&correlationId) 
-sequenceNumber := int64(1)
+sequenceNumber := int64(0)
 processContentMetadataBase.SetSequenceNumber(&sequenceNumber) 
-length := int64(17352)
-processContentMetadataBase.SetLength(&length) 
 isTruncated := false
 processContentMetadataBase.SetIsTruncated(&isTruncated) 
-additionalData := map[string]interface{}{
-	"updatedDateTime" : "2024-09-17T13:45:21.0000000Z", 
-	"ownerId" : "ffe1ca70-6e5b-4120-abf0-472034ba05d4", 
-customProperties := graph.New()
-department := "Finance"
-customProperties.SetDepartment(&department) 
-reviewerName := "John Smith"
-customProperties.SetReviewerName(&reviewerName) 
-	processContentMetadataBase.SetCustomProperties(customProperties)
-}
-processContentMetadataBase.SetAdditionalData(additionalData)
+createdDateTime , err := time.Parse(time.RFC3339, "2025-05-27T17:23:20")
+processContentMetadataBase.SetCreatedDateTime(&createdDateTime) 
+modifiedDateTime , err := time.Parse(time.RFC3339, "2025-05-27T17:23:20")
+processContentMetadataBase.SetModifiedDateTime(&modifiedDateTime) 
 
 contentEntries := []graphmodels.ProcessContentMetadataBaseable {
 	processContentMetadataBase,
 }
 contentToProcess.SetContentEntries(contentEntries)
 activityMetadata := graphmodels.NewActivityMetadata()
-activity := graphmodels.UPLOADFILE_USERACTIVITYTYPE 
+activity := graphmodels.UPLOADTEXT_USERACTIVITYTYPE 
 activityMetadata.SetActivity(&activity) 
-additionalData := map[string]interface{}{
-	"applicationLocation" : "bing.com", 
-}
-activityMetadata.SetAdditionalData(additionalData)
 contentToProcess.SetActivityMetadata(activityMetadata)
+protectedAppMetadata := graphmodels.NewProtectedApplicationMetadata()
+name := "PC Purview API Explorer"
+protectedAppMetadata.SetName(&name) 
+version := "0.2"
+protectedAppMetadata.SetVersion(&version) 
+applicationLocation := graphmodels.NewPolicyLocationApplication()
+value := "83ef208a-0396-4893-9d4f-d36efbffc8bd"
+applicationLocation.SetValue(&value) 
+protectedAppMetadata.SetApplicationLocation(applicationLocation)
+contentToProcess.SetProtectedAppMetadata(protectedAppMetadata)
 integratedAppMetadata := graphmodels.NewIntegratedApplicationMetadata()
-name := "ContosoIsvApplication"
+name := "PC Purview API Explorer"
 integratedAppMetadata.SetName(&name) 
-version := "1.2"
+version := "0.2"
 integratedAppMetadata.SetVersion(&version) 
 contentToProcess.SetIntegratedAppMetadata(integratedAppMetadata)
 additionalData := map[string]interface{}{
 deviceMetadata := graph.New()
-deviceType := "unmanaged"
-deviceMetadata.SetDeviceType(&deviceType) 
 operatingSystemSpecifications := graph.New()
-operatingSystemPlatform := "windows"
+operatingSystemPlatform := "Windows 11"
 operatingSystemSpecifications.SetOperatingSystemPlatform(&operatingSystemPlatform) 
-operatingSystemVersion := "10.0.2.4"
+operatingSystemVersion := "10.0.26100.0"
 operatingSystemSpecifications.SetOperatingSystemVersion(&operatingSystemVersion) 
 	deviceMetadata.SetOperatingSystemSpecifications(operatingSystemSpecifications)
+ipAddress := "127.0.0.1"
+deviceMetadata.SetIpAddress(&ipAddress) 
 	contentToProcess.SetDeviceMetadata(deviceMetadata)
 }
 contentToProcess.SetAdditionalData(additionalData)

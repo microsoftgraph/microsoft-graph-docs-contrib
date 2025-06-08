@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Process content against data protection policies in the context of the current user. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -85,44 +87,45 @@ POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processConten
 Content-Type: application/json
 
 {
-  "contentToProcess": {
-        "contentEntries": [
-            {
-                "@odata.Type": "microsoft.graph.processFileMetadata",
-                "identifier": "91e1ca70-6e5b-4120-abf0-472034ba05c3",
-                "content":{
-                    "@odata.Type": "microsoft.graph.binaryContent",
-                    "data": "<some-binary-data>"
-                },
-                "name": "Example.docx",
-                "createdDateTime": "2024-07-23T01:31:40.2020463Z",
-                "updatedDateTime": "2024-09-17T13:45:21.0000000Z",
-                "correlationId": "54689",
-                "sequenceNumber": 1,
-                "length": 17352,
-                "isTruncated": false,
-                "ownerId": "ffe1ca70-6e5b-4120-abf0-472034ba05d4",
-                "customProperties": {
-                    "Department": "Finance",
-                    "ReviewerName": "John Smith"
-                }
-            }
-        ],
-        "activityMetadata": {
-            "activity": "uploadFile",
-            "applicationLocation": "bing.com"
-        },
-        "deviceMetadata": {
-            "deviceType": "unmanaged",
-            "operatingSystemSpecifications": {
-                "operatingSystemPlatform": "windows",
-                "operatingSystemVersion": "10.0.2.4"
-            }
-        },
-        "integratedAppMetadata": {
-            "name": "ContosoIsvApplication",
-            "version": "1.2",
-        }
+    "contentToProcess": {
+       "contentEntries": [
+          {
+             "@odata.type": "microsoft.graph.processConversationMetadata",
+             "identifier": "07785517-9081-4fe7-a9dc-85bcdf5e9075",
+             "content": {
+                "@odata.type": "microsoft.graph.textContent", 
+                "data": "Write an acceptance letter for Alex Wilber with Credit card number 4532667785213500, ssn: 120-98-1437 at One Microsoft Way, Redmond, WA 98052"
+             },
+             "name":"PC Purview API Explorer message",
+             "correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d9580d",
+             "sequenceNumber": 0, 
+             "isTruncated": false,
+             "createdDateTime": "2025-05-27T17:23:20",
+             "modifiedDateTime": "2025-05-27T17:23:20"
+          }
+       ],
+       "activityMetadata": { 
+          "activity": "uploadText"
+       },
+       "deviceMetadata": {
+          "operatingSystemSpecifications": {
+             "operatingSystemPlatform": "Windows 11",
+             "operatingSystemVersion": "10.0.26100.0" 
+          },
+          "ipAddress": "127.0.0.1"
+       },
+       "protectedAppMetadata": {
+          "name": "PC Purview API Explorer",
+          "version": "0.2",
+          "applicationLocation":{
+             "@odata.type": "microsoft.graph.policyLocationApplication",
+             "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
+          }
+       },
+       "integratedAppMetadata": {
+          "name": "PC Purview API Explorer",
+          "version": "0.2" 
+       }
     }
 }
 ```
@@ -172,23 +175,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "protectionScopeState": "notModified",
-    "policyActions": [
-        {
-            "action": "restrictAccess",
-            "restrictionAction": "Block"
-        }
-    ],
-    "processingErrors": [
-        {
-            "code": "OcrNotAvailable",
-            "message": "OCR functionality isn't enabled for this user",
-            "errorType": "permanent",
-            "innerError": {
-                    "code": "Permanent",
-                    "clientRequestId": "6ebdb560-cb16-4176-94fa-e8d04ca054fd"
-            }
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
+  "protectionScopeState": "notModified",
+  "policyActions": [],
+  "processingErrors": []
 }
 ```

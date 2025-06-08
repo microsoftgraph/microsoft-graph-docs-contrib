@@ -68,7 +68,7 @@ POST https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50
 Content-type: application/json
 
 {
-  "onBehalfOfUserId":"a3601044-a1b5-438e-b742-f78d01d68a67",
+  "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
   "clockInEvent":{
      "dateTime":"2019-03-18T00:00:00.000Z",
      "isAtApprovedLocation":true,
