@@ -17,28 +17,21 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## June 2025: New and generally available
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **videoOnDemandWebUrl** on [virtualEventSession](/graph/api/resources/virtualeventsession) to get the [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
+
+### Teamwork and communications | Messaging
+
+Updated the throttling information for [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions). The limit per app per tenant changed from 200 requests per second to 30 requests per second. The limit per app across all tenants increased from 1,000 requests per second to 1,500 requests per second.
+
 ## June 2025: New in preview only
 
 ### Tenant administration | Configuration management
 
 The new unified tenant configuration management APIs in Microsoft Graph allow administrators to control and manage configuration settings across a single workload or multiple workloads within an organization. To learn more about supported use cases, see [Use the unified tenant configuration management APIs in Microsoft Graph (preview)](/graph/api/resources/unified-tenant-configuration-management-api-overview?view=graph-rest-beta&preserve-view=true).
-
-## May 2025: New and generally available
-
-### Teamwork and communications | Calls and online meetings
-
-- [Get](/graph/api/copilotadminlimitedmode-get) or [set](/graph/api/copilotadminlimitedmode-update) whether users of Microsoft 365 Copilot in Teams meetings can receive responses to sentiment-related prompts.
-- Use the **videoOnDemandWebUrl** on [virtualEventSession](/graph/api/resources/virtualeventsession) to get the [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
-
-## May 2025: New in preview only
-
-### Identity and access | Multicloud permissions management
-
-## June 2025: New and generally available
-
-### Teamwork and communications | Messaging
-
-Updated the throttling information for [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions). The limit per app per tenant changed from 200 requests per second to 30 requests per second. The limit per app across all tenants increased from 1,000 requests per second to 1,500 requests per second.
 
 ## May 2025: New and generally available
 
@@ -80,7 +73,8 @@ Use the [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallent
 
 ### Device and app management | Cloud PC
 
-Added **resourceAvailabilityCheckMissingRegistrationForLocation** as a possible error type for the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true).
+- Added **resourceAvailabilityCheckMissingRegistrationForLocation** as a possible error type for the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true).
+- Deprecated the [getCloudPcRecommendationReports](/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true) method of the [cloudPcReports](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true) resource in favor of the [retrieveCloudPcRecommendationReports](/graph/api/cloudpcreports-retrievecloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true) method.
 
 ### Education
 
@@ -123,10 +117,6 @@ Use the new Teams meeting AI insights APIs to get AI-generated insights for a me
 
 - Added support for the `$filter` query parameter by Microsoft Entra user ID when you list channel members using the [List allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API.
 - [Determine](/graph/api/teamwork-determineifinteractionisallowed?view=graph-rest-beta&preserve-view=true) if a specified Microsoft Teams interaction is allowed between the signed-in user and specified users.
-
-### Device and app management | Cloud PC
-
-Deprecated the [getCloudPcRecommendationReports](/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true) method of the [cloudPcReports](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true) resource in favor of the [retrieveCloudPcRecommendationReports](/graph/api/cloudpcreports-retrievecloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true) method.
 
 ### Teamwork and communications | Shift management
 
