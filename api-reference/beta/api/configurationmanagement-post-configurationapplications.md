@@ -48,7 +48,7 @@ POST /admin/configurationManagement/configurationApplications
 
 In the request body, supply a JSON representation of the [configurationApplication](../resources/configurationapplication.md) object.
 
-You can specify the following properties when you create a configurationApplication.
+You can specify the following properties when you create a **configurationApplication**.
 
 |Property|Type|Description|
 |:---|:---|:---|
