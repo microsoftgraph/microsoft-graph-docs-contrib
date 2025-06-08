@@ -23,11 +23,11 @@ To call the UTCM APIs in Microsoft Graph, your app needs to acquire an access to
 
 ## Tenant monitoring APIs
 
-The tenant [monitoring](./configurationmonitor.md) APIs in UTCM allow administrators to create one or more monitors, review their monitoring results, and get information about all active drifts in a tenant. Administrators can then resolve these [drifts]](./configurationdrift.md) by using the relevant admin centers or other available methods.
+The tenant [monitoring](../resources/configurationmonitor.md) APIs in UTCM allow administrators to create one or more monitors, review their monitoring results, and get information about all active drifts in a tenant. Administrators can then resolve these [drifts](../resources/configurationdrift.md) by using the relevant admin centers or other available methods.
 
 ## Snapshot APIs
 
-The [snapshot](./configurationsnapshotjob.md) APIs in UTCM allow administrators to extract the current tenant configuration settings. This will allow administrators to get a baseline (depicting possible desired tenant configuration) to initiate periodic tenant monitoring.
+The [snapshot](../resources/configurationsnapshotjob.md) APIs in UTCM allow administrators to extract the current tenant configuration settings. This process allows administrators to get a baseline that represents the desired tenant configuration and serves as the foundation for periodic tenant monitoring.
 
 ## Common use cases
 
