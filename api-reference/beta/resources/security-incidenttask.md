@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A Microsoft Defender XDR incident task represents a remediation action for an incident. When Defender Experts for XDR identifies a needed action, it creates a task in Microsoft Defender XDR. Review and take action on these tasks through the portal or using this API.
+Represents a remediation action for an incident. When Defender Experts for XDR identifies a needed action, it creates a task in Microsoft Defender XDR. Review and take action on these tasks through the portal or using this API.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 

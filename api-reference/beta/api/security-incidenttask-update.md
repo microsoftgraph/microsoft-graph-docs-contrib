@@ -1,5 +1,5 @@
 ---
-title: "Update incident task"
+title: "Update incidentTask"
 description: "Update the status of an incident task in Microsoft Defender XDR."
 author: "BenAlfasi"
 ms.date: 05/07/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Update incident task
+# Update incidentTask
 
 Namespace: microsoft.graph.security
 
@@ -55,11 +55,6 @@ In the request body, supply only the values you want to update. Omitted properti
 ## Response
 
 If successful, this method returns a `200 OK` response code and the updated [security-incidentTask](../resources/security-incidenttask.md) object in the response body.
-
-## Related content
-
-- Learn about [Microsoft Graph error responses](/graph/errors).
-- [incidentTask](../resources/security-incidenttask.md)
 
 ## Examples
 
@@ -110,3 +105,8 @@ Content-Type: application/json
     "responseAction": null
 }
 ```
+
+## Related content
+
+- Learn about [Microsoft Graph error responses](/graph/errors).
+- [incidentTask](../resources/security-incidenttask.md)

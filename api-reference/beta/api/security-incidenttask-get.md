@@ -51,11 +51,6 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the [security-incidentTask](../resources/security-incidenttask.md) object in the response body.
 
-## Related content
-
-- Learn about [Microsoft Graph error responses](/graph/errors).
-- [incidentTask](../resources/security-incidenttask.md)
-
 ## Examples
 
 ### Request
@@ -103,6 +98,10 @@ Content-type: application/json
     }
 }
 ```
+## Related content
+
+- Learn about [Microsoft Graph error responses](/graph/errors).
+- [incidentTask](../resources/security-incidenttask.md)
 
 <!--
 {
