@@ -169,6 +169,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [createSnapshot](https://learn.microsoft.com/en-us/graph/api/configurationBaseline-createSnapshot?view=graph-rest-beta) method to the [configurationBaseline](https://learn.microsoft.com/en-us/graph/api/resources/configurationBaseline?view=graph-rest-beta) resource.",
           "Target": "configurationBaseline"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "PropertyPath",
+          "ChangedApiName": "Org.OData.Capabilities.V1.FilterRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the **Org.OData.Capabilities.V1.FilterRestrictions**.",
+          "Target": "microsoft.graph.container/admin/configurationManagement/configurationApplications"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "PropertyPath",
+          "ChangedApiName": "Org.OData.Capabilities.V1.SortRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the **Org.OData.Capabilities.V1.SortRestrictions**.",
+          "Target": "microsoft.graph.container/admin/configurationManagement/configurationApplications"
         }
       ],
       "Id": "38093077-4be7-4687-b812-1de93c82854e",
