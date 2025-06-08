@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "configurationmanagement-delete-configurationapplications-permissions"
+  "name": "configurationapplication-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/configurationmanagement-delete-configurationapplications-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/configurationapplication-delete-permissions.md)]
 
 ## HTTP request
 
