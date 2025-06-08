@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "configurationmanagement-delete-configurationsnapshotjobs-permissions"
+  "name": "configurationsnapshotjob-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/configurationmanagement-delete-configurationsnapshotjobs-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/configurationsnapshotjob-delete-permissions.md)]
 
 ## HTTP request
 
