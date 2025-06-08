@@ -48,7 +48,7 @@ POST /admin/configurationManagement/configurationMonitors
 
 In the request body, supply a JSON representation of the [configurationMonitor](../resources/configurationmonitor.md) object.
 
-You can specify the following properties when you create a configurationMonitor.
+You can specify the following properties when you create a **configurationMonitor**.
 
 |Property|Type|Description|
 |:---|:---|:---|
