@@ -1,0 +1,250 @@
+---
+title: "Get reflectCheckInResponses"
+description: "Read the properties and relationships of a collection of reflectCheckInResponse objects."
+author: "v-rmanda"
+ms.localizationpriority: medium
+ms.subservice: "education"
+doc_type: apiPageType
+ms.date: 06/09/2025
+---
+
+# Get reflectCheckInResponses
+
+Namespace: microsoft.graph
+
+Read the properties and relationships of a collection of [reflectCheckInResponse](../resources/reflectcheckinresponse.md) objects. This method gets the responses to a [Microsoft Reflect](https://reflect.microsoft.com/) check-in.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "reflectcheckinresponse_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/reflectcheckinresponse-get-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /education/reports/reflectCheckInResponses
+```
+
+## Optional query parameters
+
+This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [reflectCheckInResponse](../resources/reflectcheckinresponse.md) objects in the response body.
+
+## Examples
+
+### Example 1: Get the Reflect check-in responses from the last 24 hours
+
+The following example shows how to get the Reflect check-in responses from the last 24 hours.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_reflectcheckinresponse"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/education/reports/reflectCheckInResponses
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-reflectcheckinresponse-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-reflectcheckinresponse-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-reflectcheckinresponse-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-reflectcheckinresponse-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-reflectcheckinresponse-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-reflectcheckinresponse-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-reflectcheckinresponse-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-reflectcheckinresponse-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the default response that includes Reflect check-in responses from the last 24 hours.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.reflectCheckInResponse"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/reports/reflectCheckInResponses",
+  "value": [
+    {
+      "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c",
+      "classId": "f2df94da-9a47-4c65-958c-8289ae30243b",
+      "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
+      "checkInTitle": "How are you feeling today?",
+      "isClosed": false,
+      "createdDateTime": "2023-09-19T11:44:16.0821219Z",
+      "responderId": "f2df94da-9a47-4c65-958c-8289ae30243b",
+      "responseFeedback": "pleasant",
+      "responseEmotion": "motivated",
+      "submitDateTime": "2023-09-19T11:46:16.2813907Z"
+    },
+    {
+      "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c",
+      "classId": null,
+      "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
+      "checkInTitle": "How are you feeling today?",
+      "isClosed": false,
+      "createdDateTime": "2023-09-19T11:44:16.0821219Z",
+      "responderId": "958c7306-9a47-15fb-958c-8289ae30243b",
+      "responseFeedback": "unpleasant",
+      "responseEmotion": "bored",
+      "submitDateTime": "2023-09-19T11:55:16.2813907Z"
+    }
+  ]
+}
+```
+
+### Example 2: Get the Reflect check-in responses for a specific date using $filter
+
+The following example shows how to get the Reflect check-in responses for a specific date using the `$filter` query parameter. Please note that the requested time range must be 24 hours or shorter.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_ReflectCheckinResponses_filter"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/education/reports/reflectCheckInResponses?$filter=submitDateTime gt 2023-10-10T00:00:00.000Z and submitDateTime lt 2023-10-11T00:00:00.000Z
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-reflectcheckinresponses-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-reflectcheckinresponses-filter-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-reflectcheckinresponses-filter-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-reflectcheckinresponses-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-reflectcheckinresponses-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-reflectcheckinresponses-filter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-reflectcheckinresponses-filter-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-reflectcheckinresponses-filter-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.reflectCheckInResponse",
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/reports/reflectCheckInResponses",
+  "value": [
+    {
+      "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c",
+      "classId": "f2df94da-9a47-4c65-958c-8289ae30243b",
+      "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
+      "checkInTitle": "How are you feeling today?",
+      "isClosed": false,
+      "createdDateTime": "2023-10-10T11:44:16.0821219Z",
+      "responderId": "f2df94da-9a47-4c65-958c-8289ae30243b",
+      "responseFeedback": "pleasant",
+      "responseEmotion": "motivated",
+      "submitDateTime": "2023-10-10T11:46:16.2813907Z"
+    },
+    {
+      "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c",
+      "classId": null,
+      "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
+      "checkInTitle": "How are you feeling today?",
+      "isClosed": false,
+      "createdDateTime": "2023-10-10T11:44:16.0821219Z",
+      "responderId": "958c7306-9a47-15fb-958c-8289ae30243b",
+      "responseFeedback": "unpleasant",
+      "responseEmotion": "bored",
+      "submitDateTime": "2023-10-10T11:55:16.2813907Z"
+    }
+  ]
+}
+```
