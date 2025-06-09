@@ -1977,9 +1977,9 @@ Content-type: application/json
   "reactions": []
 }
 ```
-### Example 15: Send a message with a loop component
+### Example 15: Send a message with a Loop component
 
-The following example shows how to send a message with a embeded loop component. The loop component is a special type of message that allows users to collaborate in real-time on a shared task or project. It can be used to create a collaborative workspace within a chat or channel.
+The following example shows how to send a message with an embedded Loop component. The Loop component is a special type of message that allows users to collaborate in real-time on a shared task or project. It can be used to create a collaborative workspace within a chat or channel.
 
 #### Request
 
