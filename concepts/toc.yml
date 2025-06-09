@@ -337,7 +337,7 @@ items:
       - name: Build an Electron app
         href: toolkit/get-started/build-an-electron-app.md
       - name: Build a productivity hub app
-        href: /graph/toolkit/get-started/building-one-productivity-hub
+        href: toolkit/get-started/building-one-productivity-hub.md
     - name: Providers
       items:
       - name: Using the providers
@@ -481,7 +481,7 @@ items:
       href: data-connect-concept-overview.md
       displayName: Microsoft Graph Data Connect, access data, bulk data
     - name: Build your Data Connect application
-      href: data-connect-quickstart.yml
+      href: data-connect-quickstart.md
       displayName: Microsoft Graph Data Connect
     - name: Datasets, regions, and sinks
       href: data-connect-datasets.md
