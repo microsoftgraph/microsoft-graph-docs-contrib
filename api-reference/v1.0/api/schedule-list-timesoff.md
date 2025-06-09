@@ -40,7 +40,7 @@ This method supports the `$filter` [OData query parameter](/graph/query-paramete
 | Header       | Value |
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This Header is deprecated. It is no longer required for application token.|
 
 ## Request body
 Don't supply a request body for this method.

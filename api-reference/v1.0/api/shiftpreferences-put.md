@@ -39,7 +39,7 @@ PATCH /users/{userId}/settings/shiftPreferences
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
-| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This Header is deprecated. It is no longer required for application token.|
 
 ## Request body
 In the request body, supply a JSON representation of a [shiftPreferences](../resources/shiftpreferences.md) object.

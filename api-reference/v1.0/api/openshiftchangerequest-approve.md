@@ -23,6 +23,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
+> [!IMPORTANT]
+> Starting January 1, 2026, this API will no longer support application permissions. To approve a request with application permissions, use [/approveForUser](../../beta/api/schedulechangerequest-approveforuser.md) instead.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +40,7 @@ POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/app
 |:--------------|:--------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
-| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
+| MS-APP-ACTS-AS | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
