@@ -281,7 +281,7 @@ Content-Type: application/json
     "developerToolsForShowingAppUsageMetrics": "DeveloperPortal"
   }
 }
-
+```
 #### Response
 
 The following example shows the response.
