@@ -828,8 +828,8 @@
         "educationSubmissionResource",
         "readingAssignmentSubmission",
         "reflectCheckInResponse",
-        "speakerassignmentsubmission",
-        "relatedContact"
+        "relatedContact",
+        "speakerassignmentsubmission"
       ],
       "complexTypes": [
         "challengingWord",

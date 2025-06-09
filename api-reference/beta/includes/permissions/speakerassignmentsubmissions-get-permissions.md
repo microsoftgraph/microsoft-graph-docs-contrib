@@ -3,8 +3,9 @@ description: Automatically generated file. DO NOT MODIFY
 ms.topic: include
 ms.localizationpriority: medium
 ---
-| Permission type|Permissions (from least to most privileged)|Supported versions|
-| :-------------------------------------| :------------------------------------------| :-----------------|
-| Delegated (work or school account)     | N/A  | Not Supported.     |
-| Delegated (personal Microsoft account) | N/A  | Not supported.     |
-| Application                            | 	EduReports-Reading.Read.All, EduReports-Reading.ReadAnonymous.All | beta|
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|Not supported.|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|EduReports-Reading.ReadAnonymous.All|EduReports-Reading.Read.All|
