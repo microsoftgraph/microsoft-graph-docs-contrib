@@ -18,9 +18,7 @@ The following list shows the supported workloads:
 - Microsoft Entra
 - Microsoft Exchange Online
 - Microsoft Intune
-- Microsoft OneDrive
 - Microsoft Purview
-- Microsoft SharePoint
 - Microsoft Teams
 
 ## Supported resource types
@@ -219,69 +217,38 @@ The following list shows the supported resource types in Intune.
 - microsoft.intune.windowsUpdateForBusinessFeatureUpdateProfileWindows10
 - microsoft.intune.windowsUpdateForBusinessRingUpdateProfileWindows10
 
-### OneDrive
-
-The supported resource type in OneDrive is `microsoft.onedrive.settings`.
-
 ### Security and compliance
 
 The following list shows the supported resource types in security and compliance.
 
-- SCAuditConfigurationPolicy
-- SCAutoSensitivityLabelPolicy
-- SCAutoSensitivityLabelRule
-- SCCaseHoldPolicy
-- SCCaseHoldRule
-- SCComplianceCase
-- SCComplianceSearch
-- SCComplianceSearchAction
-- SCComplianceTag
-- SCDeviceConditionalAccessPolicy
-- SCDeviceConfigurationPolicy
-- SCDLPCompliancePolicy
-- SCDLPComplianceRule
-- SCFilePlanPropertyAuthority
-- SCFilePlanPropertyCategory
-- SCFilePlanPropertyCitation
-- SCFilePlanPropertyDepartment
-- SCFilePlanPropertyReferenceId
-- SCFilePlanPropertySubCategory
-- SCLabelPolicy
-- SCProtectionAlert
-- SCRetentionCompliancePolicy
-- SCRetentionComplianceRule
-- SCRetentionEventType
-- SCSecurityFilter
-- SCSensitivityLabel
-- SCSupervisoryReviewPolicy
-- SCSupervisoryReviewRule
-
-### SharePoint
-
-The following list shows the supported resource types in SharePoint.
-
-- microsoft.sharepoint.accessControlSettings
-- microsoft.sharepoint.app
-- microsoft.sharepoint.browserIdleSignout
-- microsoft.sharepoint.homeSite
-- microsoft.sharepoint.hubSite
-- microsoft.sharepoint.orgAssetsLibrary
-- microsoft.sharepoint.propertyBag
-- microsoft.sharepoint.searchManagedProperty
-- microsoft.sharepoint.searchResultSource
-- microsoft.sharepoint.sharingSettings
-- microsoft.sharepoint.site
-- microsoft.sharepoint.siteAuditSettings
-- microsoft.sharepoint.siteDesign
-- microsoft.sharepoint.siteDesignRights
-- microsoft.sharepoint.siteGroup
-- microsoft.sharepoint.siteScript
-- microsoft.sharepoint.storageEntity
-- microsoft.sharepoint.tenantCdnEnabled
-- microsoft.sharepoint.tenantCdnPolicy
-- microsoft.sharepoint.tenantSettings
-- microsoft.sharepoint.theme
-- microsoft.sharepoint.userProfileProperty
+- microsoft.securityandcompliance.auditconfigurationpolicy  
+- microsoft.securityandcompliance.autosensitivitylabelpolicy  
+- microsoft.securityandcompliance.autosensitivitylabelrule  
+- microsoft.securityandcompliance.caseholdpolicy  
+- microsoft.securityandcompliance.caseholdrule  
+- microsoft.securityandcompliance.compliancecase  
+- microsoft.securityandcompliance.compliancesearch  
+- microsoft.securityandcompliance.compliancesearchaction  
+- microsoft.securityandcompliance.compliancetag  
+- microsoft.securityandcompliance.deviceconditionalaccesspolicy  
+- microsoft.securityandcompliance.deviceconfigurationpolicy  
+- microsoft.securityandcompliance.dlpcompliancepolicy  
+- microsoft.securityandcompliance.dlpcompliancerule  
+- microsoft.securityandcompliance.fileplanpropertyauthority  
+- microsoft.securityandcompliance.fileplanpropertycategory  
+- microsoft.securityandcompliance.fileplanpropertycitation  
+- microsoft.securityandcompliance.fileplanpropertydepartment  
+- microsoft.securityandcompliance.fileplanpropertyreferenceid  
+- microsoft.securityandcompliance.fileplanpropertysubcategory  
+- microsoft.securityandcompliance.labelpolicy  
+- microsoft.securityandcompliance.protectionalert  
+- microsoft.securityandcompliance.retentioncompliancepolicy  
+- microsoft.securityandcompliance.retentioncompliancerule  
+- microsoft.securityandcompliance.retentioneventtype  
+- microsoft.securityandcompliance.securityfilter  
+- microsoft.securityandcompliance.sensitivitylabel  
+- microsoft.securityandcompliance.supervisoryreviewpolicy  
+- microsoft.securityandcompliance.supervisoryreviewrule 
 
 ### Teams
 

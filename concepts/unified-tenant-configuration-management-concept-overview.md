@@ -18,9 +18,7 @@ The unified tenant configuration management (UTCM) APIs allow administrators to 
 - Microsoft Entra
 - Microsoft Exchange Online
 - Microsoft Intune
-- Microsoft OneDrive
 - Microsoft Purview
-- Microsoft SharePoint
 - Microsoft Teams
 
 > [!IMPORTANT]
