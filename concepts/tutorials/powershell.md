@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 This tutorial teaches you how to build a PowerShell script that uses the Microsoft Graph API to access data on behalf of a user.
 
 > [!NOTE]
-> To learn how to use Microsoft Graph to access data using app-only authentication, see this [app-only authentication tutorial](/graph/tutorials/powershell-app-only).
+> To learn how to use Microsoft Graph to access data using app-only authentication, see this [app-only authentication tutorial](powershell-app-only.md).
 
 In this tutorial, you will:
 

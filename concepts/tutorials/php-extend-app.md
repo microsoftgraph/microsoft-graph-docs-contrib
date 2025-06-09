@@ -31,7 +31,7 @@ Find an API in Microsoft Graph you'd like to try. For example, the [Create event
 Check the **Permissions** section of the reference documentation for your chosen API to see which authentication methods are supported. Some APIs don't support app-only, or personal Microsoft accounts, for example.
 
 - To call an API with user authentication (if the API supports user (delegated) authentication), add the required permission scope in **.env**.
-- To call an API with app-only authentication see the [app-only authentication](/graph/tutorials/php-app-only) tutorial.
+- To call an API with app-only authentication see the [app-only authentication](php-app-only.md) tutorial.
 
 ## Add your code
 
@@ -41,7 +41,7 @@ Add your code into the `makeGraphCall` function in **GraphHelper.php**.
 
 You've completed the PHP Microsoft Graph tutorial. Now that you have a working app that calls Microsoft Graph, you can experiment and add new features.
 
-- Learn how to use [app-only authentication](/graph/tutorials/php-app-only) with the Microsoft Graph PHP SDK.
+- Learn how to use [app-only authentication](php-app-only.md) with the Microsoft Graph PHP SDK.
 - Visit the [Overview of Microsoft Graph](/graph/overview) to see all of the data you can access with Microsoft Graph.
 
 ### PHP Samples

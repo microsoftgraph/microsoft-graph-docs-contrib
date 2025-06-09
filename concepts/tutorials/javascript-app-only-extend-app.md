@@ -30,7 +30,7 @@ Find an API in Microsoft Graph you'd like to try. For example, the [Create event
 
 Check the **Permissions** section of the reference documentation for your chosen API to see which authentication methods are supported. Some APIs don't support app-only, or personal Microsoft accounts, for example.
 
-- To call an API with user authentication (if the API supports user (delegated) authentication), see the [user (delegated) authentication](/graph/tutorials/javascript) tutorial.
+- To call an API with user authentication (if the API supports user (delegated) authentication), see the [user (delegated) authentication](javascript.md) tutorial.
 - To call an API with app-only authentication (if the API supports it), add the required permission scope in the Azure AD admin center.
 
 ## Add your code
@@ -41,7 +41,7 @@ Copy your code into the `makeGraphCallAsync` function in **graphHelper.js**. If 
 
 You've completed the JavaScript Microsoft Graph tutorial. Now that you have a working app that calls Microsoft Graph, you can experiment and add new features.
 
-- Learn how to use [user (delegated) authentication](/graph/tutorials/javascript) with the Microsoft Graph JavaScript SDK.
+- Learn how to use [user (delegated) authentication](javascript.md) with the Microsoft Graph JavaScript SDK.
 - Visit the [Overview of Microsoft Graph](/graph/overview) to see all of the data you can access with Microsoft Graph.
 
 ### Microsoft Graph Toolkit

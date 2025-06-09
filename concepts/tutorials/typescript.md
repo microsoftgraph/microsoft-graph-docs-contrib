@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 This tutorial teaches you how to build a TypeScript console app that uses the Microsoft Graph API.
 
 > [!NOTE]
-> To learn how to use Microsoft Graph to access data using app-only authentication, see this [app-only authentication tutorial](/graph/tutorials/typescript-app-only).
+> To learn how to use Microsoft Graph to access data using app-only authentication, see this [app-only authentication tutorial](typescript-app-only.md).
 
 In this tutorial, you will:
 
