@@ -25,7 +25,7 @@ Inherits from [appScope](appscope.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List for Exchange Online](../api/unifiedrbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider. |
+| [List for Exchange Online](../api/unifiedrbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for the Exchange Online RBAC provider. |
 | [Create for Exchange Online](../api/unifiedrbacapplication-post-customappscope.md) | [customAppScope](customappscope.md) | Create a new [customAppScope](../resources/customappscope.md) object for an RBAC provider. |
 | [Get](../api/customappscope-get.md) | [customAppScope](customappscope.md) | Get the properties of a [customAppScope](../resources/customappscope.md) object for an RBAC provider. |
 | [Update](../api/customappscope-update.md)| None | Update an existing [customAppScope](../resources/customappscope.md) object of an RBAC provider.|
