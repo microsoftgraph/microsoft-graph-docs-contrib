@@ -76,6 +76,8 @@ Use the [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallent
 
 Added **resourceAvailabilityCheckMissingRegistrationForLocation** as a possible error type for the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true).
 
+Added [retrieveCloudPcCountByStatus](/graph/api/cloudpc-retrieveCloudPcCountByStatus?view=graph-rest-beta&preserve-view=true) method to retrieve Cloud PC count group by Status column.
+
 ### Education
 
 - Use the [educationSpeakerProgressResource](/graph/api/resources/educationspeakerprogressresource?view=graph-rest-beta&preserve-view=true) to help students gain confidence and reduce anxiety with AI-powered real-time feedback on public speaking skills, such as pace, pitch, and filler words. Speaker Progress also saves educators time and creates more opportunities for independent practice during in-class presentations.

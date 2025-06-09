@@ -147,6 +147,8 @@ items:
     - name: Retrieve snapshots
       href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
+      href: ../../api/cloudpc-retrieveCloudPcCountByStatus.md
+    - name: Retrieve Cloud PC count group by Status column
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
     - name: Bulk reprovision remote action (deprecated)
       href: ../../api/manageddevice-bulkreprovisioncloudpc.md
