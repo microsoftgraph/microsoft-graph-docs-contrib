@@ -19,7 +19,7 @@ Represents tenant-wide custom app settings for all [Microsoft Teams apps](teamsa
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|developerToolsForShowingAppUsageMetrics|[developerToolsForShowingAppUsageMetrics](../resources/customAppSettings.md#developerToolsForShowingAppUsageMetrics-values)|A comma-separated list of developer tools that are allowed to display app usage metrics. At present, only `developerPortal` is supported.|
+|developerToolsForShowingAppUsageMetrics|[developerToolsForShowingAppUsageMetrics](../resources/customAppSettings.md#developertoolsforshowingappusagemetrics-values)|A comma-separated list of developer tools that are allowed to display app usage metrics. At present, only `developerPortal` is supported.|
 
 
 ## developerToolsForShowingAppUsageMetrics values
