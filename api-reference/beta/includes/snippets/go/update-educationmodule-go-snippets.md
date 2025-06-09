@@ -20,6 +20,10 @@ displayName := "New_Module5 updated"
 requestBody.SetDisplayName(&displayName) 
 description := "updated for description"
 requestBody.SetDescription(&description) 
+additionalData := map[string]interface{}{
+	"languageTag" : "en-GB", 
+}
+requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 modules, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Modules().ByEducationModuleId("educationModule-id").Patch(context.Background(), requestBody, nil)

@@ -101,7 +101,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |status|[signInStatus](signinstatus.md)|The sign-in status. Includes the error code and description of the error (for a sign-in failure). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
 |tokenIssuerName|String|The name of the identity provider. For example, `sts.microsoft.com`. <br/><br/> Supports `$filter` (`eq`).|
 |tokenIssuerType|tokenIssuerType|The type of identity provider. The possible values are: `AzureAD`, `ADFederationServices`, `UnknownFutureValue`, `AzureADBackupAuth`, `ADFederationServicesMFAAdapter`, `NPSExtension`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `AzureADBackupAuth` , `ADFederationServicesMFAAdapter` , `NPSExtension`.|
-|uniqueTokenIdentifier|String|A unique base64 encoded request identifier used to track tokens issued by Microsoft Entra ID as they're redeemed at resource providers. |
+|uniqueTokenIdentifier|String|A unique base64-encoded request identifier used to track tokens issued by Microsoft Entra ID as they're redeemed at resource providers.|
 |userAgent|String|The user agent information related to sign-in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userDisplayName|String|The display name of the user. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userId|String|The identifier of the user. <br/><br/> Supports `$filter` (`eq`).|
@@ -244,6 +244,10 @@ The following JSON representation shows the resource type.
   "userType": "String"
 }
 ```
+
+## Related content
+
+-  [Linkable identifiers in Microsoft Entra](/entra/identity/authentication/how-to-authentication-track-linkable-identifiers).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

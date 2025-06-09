@@ -22,13 +22,13 @@ items:
       href: ../../resources/teamsadministration-effectivepolicyassignment.md
     - name: Policy assignment
       href: ../../resources/teamsadministration-policyassignment.md
-- name: AI interactions (preview)
+- name: AI interactions
   items:
   - name: AI interaction history
     items:
     - name: AI interaction history
       href: ../../resources/aiinteractionhistory.md
-    - name: List all enterprise interactions
+    - name: Get all enterprise interactions
       href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
   - name: Complex types
     items:
@@ -750,6 +750,8 @@ items:
         href: ../../api/teamwork-list-teamtemplates.md
       - name: Get teamwork
         href: ../../api/teamwork-get.md
+      - name: Determine if interaction is allowed
+        href: ../../api/teamwork-determineifinteractionisallowed.md
   - name: User settings
     items:
     - name: User teamwork
@@ -1219,8 +1221,12 @@ items:
       href: ../../api/offershiftrequest-list.md
     - name: Approve
       href: ../../api/offershiftrequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/offershiftrequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Open shift
     items:
     - name: Open shift
@@ -1251,8 +1257,12 @@ items:
       href: ../../api/openshiftchangerequest-get.md
     - name: Approve
       href: ../../api/openshiftchangerequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/openshiftchangerequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Schedule
     items:
     - name: Schedule
@@ -1263,6 +1273,14 @@ items:
       href: ../../api/schedule-get.md
     - name: Share
       href: ../../api/schedule-share.md
+  - name: Schedule change request
+    items:
+    - name: Schedule change request
+      href: ../../resources/schedulechangerequest.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Scheduling group
     items:
     - name: Scheduling group
@@ -1321,8 +1339,12 @@ items:
       href: ../../api/swapshiftschangerequest-get.md
     - name: Approve
       href: ../../api/swapshiftschangerequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/swapshiftschangerequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Time card
     items:
     - name: Time card
@@ -1347,6 +1369,8 @@ items:
       href: ../../api/timecard-endbreak.md
     - name: Confirm
       href: ../../api/timecard-confirm.md
+    - name: Confirm for user
+      href: ../../api/timecard-confirmforuser.md
   - name: Time off
     items:
     - name: Time off
@@ -1383,14 +1407,20 @@ items:
       href: ../../resources/timeoffrequest.md
     - name: List
       href: ../../api/timeoffrequest-list.md
+    - name: Create
+      href: ../../api/timeoffrequest-post.md
     - name: Get
       href: ../../api/timeoffrequest-get.md
     - name: Delete
       href: ../../api/timeoffrequest-delete.md
     - name: Approve
       href: ../../api/timeoffrequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/timeoffrequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Workforce integration
     items:
     - name: Workforce integration

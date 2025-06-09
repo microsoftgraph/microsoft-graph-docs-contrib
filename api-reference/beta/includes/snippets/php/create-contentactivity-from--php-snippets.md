@@ -21,35 +21,31 @@ $requestBody = new ContentActivity();
 $contentMetadata = new ProcessContentRequest();
 $contentEntriesProcessContentMetadataBase1 = new ProcessConversationMetadata();
 $contentEntriesProcessContentMetadataBase1->setOdataType('microsoft.graph.processConversationMetadata');
-$contentEntriesProcessContentMetadataBase1->setIdentifier('68fa951a-898a-4427-8e9e-6f8c05e9fe2b');
-$contentEntriesProcessContentMetadataBase1->setName('API Explorer message');
-$contentEntriesProcessContentMetadataBase1->setCorrelationId('559a2343-7aa2-4912-93fe-72c47b2706ed');
+$contentEntriesProcessContentMetadataBase1->setIdentifier('d6ab5054-e111-45c3-9fba-9f2a59c9bbf8');
+$contentEntriesProcessContentMetadataBase1->setName('CA Purview API Explorer message');
+$contentEntriesProcessContentMetadataBase1->setCorrelationId('edfb7f88-b963-4ef2-8b30-5cb90f80e01e');
+$contentEntriesProcessContentMetadataBase1->setSequenceNumber(0);
 $contentEntriesProcessContentMetadataBase1->setIsTruncated(false);
-$contentEntriesProcessContentMetadataBase1->setCreatedDateTime(new \DateTime('2025-04-28T20:17:55'));
-$contentEntriesProcessContentMetadataBase1->setModifiedDateTime(new \DateTime('2025-04-28T20:17:55'));
-$additionalData = [
-	'sequenceNo' => 0,
-];
-$contentEntriesProcessContentMetadataBase1->setAdditionalData($additionalData);
+$contentEntriesProcessContentMetadataBase1->setCreatedDateTime(new \DateTime('2025-05-28T20:20:37'));
+$contentEntriesProcessContentMetadataBase1->setModifiedDateTime(new \DateTime('2025-05-28T20:20:37'));
 $contentEntriesArray []= $contentEntriesProcessContentMetadataBase1;
 $contentMetadata->setContentEntries($contentEntriesArray);
 
 $contentMetadataActivityMetadata = new ActivityMetadata();
-$contentMetadataActivityMetadata->setActivity(new UserActivityType('uploadText'));
+$contentMetadataActivityMetadata->setActivity(new UserActivityType('downloadText'));
 $contentMetadata->setActivityMetadata($contentMetadataActivityMetadata);
 $contentMetadataIntegratedAppMetadata = new IntegratedApplicationMetadata();
-$contentMetadataIntegratedAppMetadata->setName('API Explorer');
+$contentMetadataIntegratedAppMetadata->setName('CA Purview API Explorer');
 $contentMetadataIntegratedAppMetadata->setVersion('0.1');
 $contentMetadata->setIntegratedAppMetadata($contentMetadataIntegratedAppMetadata);
 $additionalData = [
 'deviceMetadata' => [
-	'deviceType' => 'unmanaged',
 	'operatingSystemSpecifications' => [
 		'operatingSystemPlatform' => 'Windows 11',
 		'operatingSystemVersion' => '10.0.26100.0',
 	],
 ],
-'userId' => '7c2f8f10-cba8-4a8d-9449-db4b76d17390',
+'userId' => '7c497f10-cba8-4a8d-9449-db4b76d1ef80',
 'scopeIdentifier' => '0',
 ];
 $contentMetadata->setAdditionalData($additionalData);

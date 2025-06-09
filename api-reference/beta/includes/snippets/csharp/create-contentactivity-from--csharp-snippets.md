@@ -19,27 +19,22 @@ var requestBody = new ContentActivity
 			new ProcessConversationMetadata
 			{
 				OdataType = "microsoft.graph.processConversationMetadata",
-				Identifier = "68fa951a-898a-4427-8e9e-6f8c05e9fe2b",
-				Name = "API Explorer message",
-				CorrelationId = "559a2343-7aa2-4912-93fe-72c47b2706ed",
+				Identifier = "d6ab5054-e111-45c3-9fba-9f2a59c9bbf8",
+				Name = "CA Purview API Explorer message",
+				CorrelationId = "edfb7f88-b963-4ef2-8b30-5cb90f80e01e",
+				SequenceNumber = 0L,
 				IsTruncated = false,
-				CreatedDateTime = DateTimeOffset.Parse("2025-04-28T20:17:55"),
-				ModifiedDateTime = DateTimeOffset.Parse("2025-04-28T20:17:55"),
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"sequenceNo" , 0
-					},
-				},
+				CreatedDateTime = DateTimeOffset.Parse("2025-05-28T20:20:37"),
+				ModifiedDateTime = DateTimeOffset.Parse("2025-05-28T20:20:37"),
 			},
 		},
 		ActivityMetadata = new ActivityMetadata
 		{
-			Activity = UserActivityType.UploadText,
+			Activity = UserActivityType.DownloadText,
 		},
 		IntegratedAppMetadata = new IntegratedApplicationMetadata
 		{
-			Name = "API Explorer",
+			Name = "CA Purview API Explorer",
 			Version = "0.1",
 		},
 		AdditionalData = new Dictionary<string, object>
@@ -47,9 +42,6 @@ var requestBody = new ContentActivity
 			{
 				"deviceMetadata" , new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					{
-						"deviceType", new UntypedString("unmanaged")
-					},
 					{
 						"operatingSystemSpecifications", new UntypedObject(new Dictionary<string, UntypedNode>
 						{
@@ -64,7 +56,7 @@ var requestBody = new ContentActivity
 				})
 			},
 			{
-				"userId" , "7c2f8f10-cba8-4a8d-9449-db4b76d17390"
+				"userId" , "7c497f10-cba8-4a8d-9449-db4b76d1ef80"
 			},
 			{
 				"scopeIdentifier" , "0"

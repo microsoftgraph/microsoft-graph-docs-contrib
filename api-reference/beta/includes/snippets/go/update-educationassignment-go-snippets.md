@@ -31,6 +31,10 @@ addedStudentAction := graphmodels.NONE_EDUCATIONADDEDSTUDENTACTION
 requestBody.SetAddedStudentAction(&addedStudentAction) 
 addToCalendarAction := graphmodels.STUDENTSANDPUBLISHER_EDUCATIONADDTOCALENDAROPTIONS 
 requestBody.SetAddToCalendarAction(&addToCalendarAction) 
+additionalData := map[string]interface{}{
+	"languageTag" : "pt-BR", 
+}
+requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 assignments, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Patch(context.Background(), requestBody, nil)
