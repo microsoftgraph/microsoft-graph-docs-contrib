@@ -1137,6 +1137,14 @@
         {
           "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
           "ApiChange": "Header",
+          "ChangedApiName": "timeCard",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header to all operations of the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timecard?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
           "ChangedApiName": "timeOff",
           "ChangeType": "Deprecation",
           "Description": "Deprecated the `MS-APP-ACTS-AS` request header to all operations of the [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeoff?view=graph-rest-beta) resource.",
@@ -1239,6 +1247,14 @@
           "ChangeType": "Deprecation",
           "Description": "Deprecated the `MS-APP-ACTS-AS` request header to all operations of the [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0) resource.",
           "Target": "swapShiftsChangeRequest"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "timeCard",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header to all operations of the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timecard?view=graph-rest-1.0) resource.",
+          "Target": "timeCard"
         },
         {
           "Id": "123e4567-e89b-12d3-a456-426614174000",
