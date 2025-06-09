@@ -63,7 +63,7 @@ POST /teams/{teamsId}/schedule/timesOff/{timeOffId}/stageForDeletion
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This Header is deprecatedand is no longer required for application token.|
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This Header is deprecated and is no longer required for application token.|
 
 ## Request body
 
