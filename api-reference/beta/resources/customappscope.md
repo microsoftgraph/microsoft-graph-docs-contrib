@@ -1,18 +1,19 @@
 ---
 title: "customAppScope resource type"
-description: "Represents a customized RBAC scope object from each provider."
+description: "Represents a customized RBAC scope object from each RBAC provider."
 ms.localizationpriority: medium
 author: "cubika"
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ms.date: 07/22/2024
+toc.title: Custom app scope for RBAC providers
 ---
 
 # customAppScope resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a customized RBAC scope object from each provider. This resource is a subtype of [appScope](appscope.md), which is a scope defined and understood by a specific application. A custom app scope has its own lifecycle for role assignment objects across various RBAC providers. A custom app scope can also store custom attributes sourced from different RBAC providers.
+Represents a customized RBAC scope object from each RBAC provider. This resource is a subtype of [appScope](appscope.md), which is a scope defined and understood by a specific application. A custom app scope has its own lifecycle for role assignment objects across various RBAC providers. A custom app scope can also store custom attributes sourced from different RBAC providers.
 
 For example, in the Exchange Online provider, **customAppScope** maps to [management role scope](/exchange/understanding-management-role-scopes-exchange-2013-help) that can be managed separately by Exchange administrators. The CRUD operations for **customAppScope** entities are supported. You can use the ID of a **customAppScope** as the **appScopeId** of a [unifiedRoleAssignment](unifiedroleassignment.md).
 
