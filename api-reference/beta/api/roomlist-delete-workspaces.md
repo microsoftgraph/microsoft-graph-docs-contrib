@@ -1,10 +1,10 @@
 ---
 title: "Delete workspace"
 description: "Delete a workspace object."
-author: mattpennathe3rd
-ms.date: 06/03/2025
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: apiPageType
 ---
 

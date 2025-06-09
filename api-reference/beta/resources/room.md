@@ -1,10 +1,10 @@
 ---
 title: "room resource type"
 description: "**TODO: Add Description**"
-author: mattpennathe3rd
-ms.date: 06/03/2025
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: resourcePageType
 ---
 
@@ -38,7 +38,6 @@ Inherits from [place](../resources/place.md).
 |bookingType|bookingType|**TODO: Add Description**.The possible values are: `unknown`, `standard`, `reserved`.|
 |building|String|**TODO: Add Description**|
 |capacity|Int32|**TODO: Add Description**|
-|description|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |displayDeviceName|String|**TODO: Add Description**|
 |displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |emailAddress|String|**TODO: Add Description**|
@@ -48,7 +47,7 @@ Inherits from [place](../resources/place.md).
 |id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |isTeamsEnabled|Boolean|**TODO: Add Description**|
 |isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|label|String|**TODO: Add Description**|
+|label|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |nickname|String|**TODO: Add Description**|
 |parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
@@ -84,7 +83,6 @@ The following JSON representation shows the resource type.
   },
   "placeId": "String",
   "parentId": "String",
-  "description": "String",
   "resourceLinks": [
     {
       "@odata.type": "microsoft.graph.resourceLink"
@@ -94,11 +92,11 @@ The following JSON representation shows the resource type.
     "String"
   ],
   "isWheelChairAccessible": "Boolean",
+  "label": "String",
   "emailAddress": "String",
   "nickname": "String",
   "building": "String",
   "floorNumber": "Integer",
-  "label": "String",
   "capacity": "Integer",
   "bookingType": "String",
   "audioDeviceName": "String",

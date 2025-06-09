@@ -1,10 +1,10 @@
 ---
 title: "Create place"
 description: "Create a new place object."
-author: mattpennathe3rd
-ms.date: 06/03/2025
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: apiPageType
 ---
 
@@ -59,10 +59,10 @@ You can specify the following properties when creating a **place**.
 |address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Optional.|
 |placeId|String|**TODO: Add Description** Optional.|
 |parentId|String|**TODO: Add Description** Optional.|
-|description|String|**TODO: Add Description** Optional.|
 |resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Required.|
 |tags|String collection|**TODO: Add Description** Required.|
 |isWheelChairAccessible|Boolean|**TODO: Add Description** Required.|
+|label|String|**TODO: Add Description** Optional.|
 
 
 
@@ -96,7 +96,6 @@ Content-Type: application/json
   },
   "placeId": "String",
   "parentId": "String",
-  "description": "String",
   "resourceLinks": [
     {
       "@odata.type": "microsoft.graph.resourceLink"
@@ -105,7 +104,8 @@ Content-Type: application/json
   "tags": [
     "String"
   ],
-  "isWheelChairAccessible": "Boolean"
+  "isWheelChairAccessible": "Boolean",
+  "label": "String"
 }
 ```
 
@@ -137,7 +137,6 @@ Content-Type: application/json
   },
   "placeId": "String",
   "parentId": "String",
-  "description": "String",
   "resourceLinks": [
     {
       "@odata.type": "microsoft.graph.resourceLink"
@@ -146,7 +145,8 @@ Content-Type: application/json
   "tags": [
     "String"
   ],
-  "isWheelChairAccessible": "Boolean"
+  "isWheelChairAccessible": "Boolean",
+  "label": "String"
 }
 ```
 

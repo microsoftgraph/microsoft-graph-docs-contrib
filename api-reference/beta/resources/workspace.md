@@ -1,10 +1,10 @@
 ---
 title: "workspace resource type"
 description: "**TODO: Add Description**"
-author: mattpennathe3rd
-ms.date: 06/03/2025
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,6 @@ Inherits from [place](../resources/place.md).
 |address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |building|String|**TODO: Add Description**|
 |capacity|Int32|**TODO: Add Description**|
-|description|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |displayDeviceName|String|**TODO: Add Description**|
 |displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |emailAddress|String|**TODO: Add Description**|
@@ -45,7 +44,7 @@ Inherits from [place](../resources/place.md).
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|label|String|**TODO: Add Description**|
+|label|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |mode|[placeMode](../resources/placemode.md)|**TODO: Add Description**|
 |nickname|String|**TODO: Add Description**|
 |parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
@@ -81,7 +80,6 @@ The following JSON representation shows the resource type.
   },
   "placeId": "String",
   "parentId": "String",
-  "description": "String",
   "resourceLinks": [
     {
       "@odata.type": "microsoft.graph.resourceLink"
@@ -91,11 +89,11 @@ The following JSON representation shows the resource type.
     "String"
   ],
   "isWheelChairAccessible": "Boolean",
+  "label": "String",
   "emailAddress": "String",
   "nickname": "String",
   "building": "String",
   "floorNumber": "Integer",
-  "label": "String",
   "capacity": "Integer",
   "floorLabel": "String",
   "displayDeviceName": "String",
