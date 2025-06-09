@@ -40,7 +40,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve
 |:--------------|:--------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
-| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This Header is deprecated and is no longer required for application token.|
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This API will no longer support application permissions starting January 1, 2026.|
 
 ## Request body
 

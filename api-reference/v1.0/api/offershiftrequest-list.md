@@ -40,7 +40,7 @@ This method supports some of the OData query parameters to help customize the re
 | Name      |Description|
 |:----------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This Header is deprecated and is no longer required for application token.|
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This API will no longer support application permissions starting January 1, 2026.|
 
 ## Request body
 
