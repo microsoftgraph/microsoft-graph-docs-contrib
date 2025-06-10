@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Represents an abstract base type for data sets used in eDiscovery.
 
-Base type of [ediscoveryReviewSet](../resources/ediscoveryreviewset.md).
+Base type of [ediscoveryReviewSet](../resources/security-ediscoveryreviewset).
 
 Inherits from [entity](../resources/entity.md).
 
