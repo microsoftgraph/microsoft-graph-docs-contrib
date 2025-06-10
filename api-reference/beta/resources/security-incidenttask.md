@@ -1,6 +1,6 @@
 ---
 title: "incidentTask resource type"
-description: "An incident task in Microsoft Defender XDR represents a remediation action identified by Defender Experts for XDR."
+description: "Represents a remediation action identified by Defender Experts for XDR."
 author: "BenAlfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
@@ -24,7 +24,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[List](../api/security-list-incidenttasks.md)|[microsoft.graph.security.incidentTask](../resources/security-incidenttask.md) collection|Get incident task objects and their properties.|
 |[Get](../api/security-incidenttask-get.md)|[microsoft.graph.security.incidentTask](../resources/security-incidenttask.md)|Read properties and relationships of an incident task.|
 |[Update](../api/security-incidenttask-update.md)|[microsoft.graph.security.incidentTask](../resources/security-incidenttask.md)|Update the status of an incident task.|
-|[executeResponseAction](../api/security-incidenttask-executeresponseaction.md)|None|Execute a remediation action on an incident task. Limited to supported action types.|
+|[Execute response action](../api/security-incidenttask-executeresponseaction.md)|None|Execute a remediation action on an incident task. Limited to supported action types.|
 
 ## Properties
 |Property|Type|Description|
