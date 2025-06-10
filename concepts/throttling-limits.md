@@ -214,6 +214,10 @@ Outlook service limits apply to the public cloud and [national cloud deployments
 
 [!INCLUDE [Viva Engage throttling documentation](../includes/throttling-viva-engage.md)]
 
+## Windows 365 service limits
+
+[!INCLUDE [Viva Engage throttling documentation](../includes/throttling-windows365.md)]
+
 ## Related content
 
 - [Best practices for working with Microsoft Graph](best-practices-concept.md)
