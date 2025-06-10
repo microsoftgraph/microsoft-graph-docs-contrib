@@ -183,7 +183,7 @@ In this example, you create a filtering policy with rules that block access to t
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "tutorial_configure_entrainternetaccess_edit_filteringPolicy"
+  "name": "tutorial_configure_entrainternetaccess_create_filteringPolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/networkaccess/filteringPolicies
