@@ -363,3 +363,28 @@ Content-type: application/json
 }
 ```
 
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageResourceRoleScopes/$entity",
+    "id": "ad5c7636-e481-4528-991f-198e3b38dd56_ffd4004a-f4a9-4b22-b027-759e55c0d1db",
+    "createdBy": "admin@example.com",
+    "createdDateTime": "2019-12-11T01:35:26.4754081Z",
+    "modifiedBy": "admin@example.com",
+    "modifiedDateTime": "2019-12-11T01:35:26.4754081Z"
+}
+```
