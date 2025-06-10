@@ -240,6 +240,8 @@ Content-Type: application/json
 
 ```
 
+---
+
 #### Response
 
 The following example shows the response.
@@ -321,6 +323,8 @@ Content-Type: application/json
     }
 }
 ```
+
+---
 
 #### Response
 
