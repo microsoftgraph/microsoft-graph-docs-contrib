@@ -334,7 +334,7 @@ Content-type: application/json
 ```
 
 
-### Example 3: Add eligible group membership of a group managed by PIM as a resource role to an access package
+### Example 4: Add eligible group membership of a group managed by PIM as a resource role to an access package
 
 #### Request
 
@@ -362,3 +362,4 @@ Content-type: application/json
  }
 }
 ```
+
