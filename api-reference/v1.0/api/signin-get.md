@@ -34,20 +34,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /auditLogs/signIns/{id}
 
-```
-> [!Important]
-> Regarding accessing noninteractive, ServicePrincipal, and ManagedIdentity sign-in log events:
-> 
-> Only interactive sign-ins are returned through GET signins API requests unless you set an explicit filter. For example, the filter for getting non-interactive sign-ins is `https://graph.microsoft.com/beta/auditLogs/signIns?&$filter=signInEventTypes/any(t: t eq 'nonInteractiveUser')`. More details are included in the `signInEventType` attribute description. 
-
-## Example filters on SigninEventType
-
-Filter to request non-interactive sign-ins:
-GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=(createdDateTime ge 2024-01-13T14:13:32Z and createdDateTime le 2024-01-14T17:43:26Z) and signInEventTypes/any(t: t eq 'nonInteractiveUser')
-
-Filter to request service principal sign-ins:
-GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=(createdDateTime ge 2024-01-13T14:13:32Z and createdDateTime le 2024-01-14T17:43:26Z) and signInEventTypes/any(t: t eq 'servicePrincipal')
-
 
 ## Optional query parameters
 
