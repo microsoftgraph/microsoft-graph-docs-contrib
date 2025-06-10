@@ -189,7 +189,6 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userdatasecurityandgovernance.processcontent_2"
@@ -240,8 +239,6 @@ Content-Type: application/json
 
 ```
 
----
-
 #### Response
 
 The following example shows the response.
@@ -275,7 +272,6 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userdatasecurityandgovernance.processcontent_3"
@@ -323,8 +319,6 @@ Content-Type: application/json
     }
 }
 ```
-
----
 
 #### Response
 

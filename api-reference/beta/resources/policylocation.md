@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Abstract base type representing a location (like a domain or URL) to which a data protection policy applies.
 
-Use [policy location application](../resources/policylocationapp.md) for application locations, [policy location domain](../resources/policylocationdomain.md) for domain locations, or [policy location URL](../resources/policylocationurl.md) for URL locations.
+Use [policy location application](../resources/policylocationapplication.md) for application locations, [policy location domain](../resources/policylocationdomain.md) for domain locations, or [policy location URL](../resources/policylocationurl.md) for URL locations.
 
 ## Properties
 
