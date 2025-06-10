@@ -39,7 +39,7 @@ GET /education/reports/speakerAssignmentSubmissions
 
 ## Optional query parameters
 
-This method supports the `$top`, `$filter`, `$count`, `$skiptoken` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
+This method supports the `$top`, `$filter`, `$count`, `$skipToken`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
 
 ## Request headers
 
@@ -66,7 +66,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_speakerAssignmentSubmissions"
+  "name": "get_speakerAssignmentSubmissions_1"
 }
 -->
 ``` http
@@ -160,16 +160,20 @@ Content-Type: application/json
 
 ### Example 2: Get the reading assignment submissions for a specific date using $filter
 
-The following example shows how to get the reading assignment submissions for a specific date using the `$filter` query parameter. Please note that the requested time range must be 24 hours or shorter.
+The following example shows how to get the reading assignment submissions for a specific date using the `$filter` query parameter. The requested time range must be 24 hours or shorter.
 
 #### Request
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_speakerAssignmentSubmissions_2"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissions/$filter=submissionDateTime gt 2025-05-28T00:00:00Z and submissionDateTime lt 2025-05-29T00:00:00Z
 ```
----
 
 #### Response
 
