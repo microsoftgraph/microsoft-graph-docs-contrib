@@ -1,7 +1,7 @@
 ---
 title: "Network Access enum values"
 description: "Microsoft Graph Network Access enumeration values"
-author: "miritsadon"
+author: "sisharm"
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
 doc_type: enumTypes
@@ -391,6 +391,23 @@ Namespace: microsoft.graph.networkaccess
 |:---|
 |forwardingRule|
 |filteringRule|
+|unknownFutureValue|
+
+### tlsCertificateStatus values 
+
+|Member|
+|:---|
+|csrGenerated|
+|enrolling|
+|active|
+|unknownFutureValue|
+
+### tlsInspectionAction values 
+
+|Member|
+|:---|
+|bypass|
+|inspect|
 |unknownFutureValue|
 
 <!--
