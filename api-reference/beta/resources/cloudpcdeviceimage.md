@@ -53,22 +53,22 @@ Represents the image resource on a Cloud PC.
 |sourceImageNotFound|The source image is inaccessible or not found.|
 |osVersionNotSupported|The OS version isn't supported.|
 |sourceImageInvalid|The source image is invalid for provisioning a Windows virtual machine (VM).|
-|sourceImageNotGeneralized|The uploaded image hasn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by deprovisioning or generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
+|sourceImageNotGeneralized|The uploaded image isn't generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by deprovisioning or generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 |vmAlreadyAzureAdJoined|The VM that generates a source image for creating a device image has already been joined to Microsoft Entra. This prevents the validation process from allowing the creation of a device image using such a source image.|
 |paidSourceImageNotSupport|This source image is built from another paid image from the Azure Marketplace and isn't supported; use another source to proceed.|
 |sourceImageNotSupportCustomizeVMName|A computer name setting issue exists on the resultant generalized image, which prevents the customization of the VM name with the provided image.|
 |sourceImageSizeExceedsLimitation|The size of the customer-uploaded source image exceeds the shared image gallery (SIG) limitations, which results in image creation failure.|
-|sourceImageWithDataDiskNotSupported|Indicates the error code where source image has an associated data disk attached. Note that setting up a provisioning policy with this configuration is not supported with W365 Frontline.|
-|sourceImageWithDiskEncryptionSetNotSupported|Indicates that the uploaded image uses a disk encryption set with a customer-managed key, which is not supported in Windows 365. Please upload a new image encrypted with a platform-managed key.|
-|sourceImageWithAzureDiskEncryptionNotSupported|Indicates that uploaded image was captured from an Azure virtual machine that had Azure disk encryption enabled, which is not supported in Windows 365. Please upload a new image captured from a VM encrypted only with a platform-managed key.|
+|sourceImageWithDataDiskNotSupported|Indicates the error code where the source image has an associated data disk attached. Setting up a provisioning policy with this configuration is not supported with W365 Frontline.|
+|sourceImageWithDiskEncryptionSetNotSupported|Indicates that the uploaded image uses a disk encryption set with a customer-managed key, which is not supported in Windows 365. Upload a new image encrypted with a platform-managed key.|
+|sourceImageWithAzureDiskEncryptionNotSupported|Indicates that the uploaded image was captured from an Azure virtual machine that had Azure disk encryption enabled, which is not supported in Windows 365. Upload a new image captured from a VM encrypted only with a platform-managed key.|
 
 ### cloudPcDeviceImageOsStatus values
 
 |Member|Description|
 |:---|:---|
 |supported|Indicates the Cloud PC device image operating system is active and ready to be used for provisioning.|
-|supportedWithWarning|Indicates that the Cloud PC device image operating system is expired, but Cloud PC continues support. If users continue to use, they may not be able to get security updates.|
+|supportedWithWarning|Indicates that the Cloud PC device image operating system is expired, but Cloud PC continues to support. If users continue to use it, they may not be able to get security updates.|
 |unknown|Default. Indicates that the status of the operating system image for the Cloud PC device is unknown.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
@@ -90,9 +90,9 @@ Represents the image resource on a Cloud PC.
 |sourceImageNotFound|The source image is inaccessible or not found.|
 |osVersionNotSupported|The OS version isn't supported.|
 |sourceImageInvalid|The source image is invalid for provisioning a Windows virtual machine (VM).|
-|sourceImageNotGeneralized|The uploaded image isn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by deprovisioning or generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
+|sourceImageNotGeneralized|The uploaded image isn’t generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by deprovisioning or generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
-|vmAlreadyAzureAdJoined|The VM that generates a source image for creating a device image has already been joined to Microsoft Entra. This prevents the validation process from allowing the creation of a device image using such a source image.|
+|vmAlreadyAzureAdJoined|The VM that generates a source image for creating a device image that joined Microsoft Entra. It prevents the validation process from allowing the creation of a device image using such a source image.|
 |paidSourceImageNotSupport|This source image is built from another paid image from the Azure Marketplace and isn't supported; use another source to proceed.|
 |sourceImageNotSupportCustomizeVMName|A computer name setting issue exists on the resultant generalized image, which prevents the customization of the VM name with the provided image.|
 |sourceImageSizeExceedsLimitation|The size of the customer-uploaded source image exceeds the shared image gallery (SIG) limitations, which results in image creation failure.|
