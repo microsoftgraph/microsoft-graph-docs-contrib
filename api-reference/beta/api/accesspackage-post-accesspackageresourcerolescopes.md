@@ -332,3 +332,33 @@ Content-type: application/json
    "createdDateTime": "2023-06-28T01:19:48.4216782Z"
 }
 ```
+
+
+### Example 3: Add eligible group membership of a group managed by PIM as a resource role to an access package
+
+#### Request
+
+The following example shows a request. Previous to this request, the access package resource `b86a1828-3171-409e-8343-32a224f324a0` for the PIM-managed group `bcfae74a-91a6-46e9-99bf-89d6487cc3f3` must already have been added to the access package catalog containing this access package.  The resource could have been added to the catalog by [creating an access package resource request](entitlementmanagement-post-accesspackageresourcerequests.md).
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_from_accesspackage_pim_group"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/accessPackageResourceRoleScopes
+Content-type: application/json
+
+{
+  "accessPackageResourceRole":{
+    "originId":"Member_bcfae74a-91a6-46e9-99bf-89d6487cc3f3",
+    "displayName":"Eligible Member",
+    "originSystem":"AadGroup",
+    "accessPackageResource":{"id":"b86a1828-3171-409e-8343-32a224f324a0","resourceType":"O365 Group","originId":"bcfae74a-91a6-46e9-99bf-89d6487cc3f3","originSystem":"AadGroup"}
+  },
+ "accessPackageResourceScope":{
+   "originId":"bcfae74a-91a6-46e9-99bf-89d6487cc3f3","originSystem":"AadGroup"
+ }
+}
+```
