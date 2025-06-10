@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an emailNotificationsSetting object.
+Update the properties of an [emailNotificationsSetting](../resources/emailnotificationssetting.md) object.
 
 ## Permissions
 
@@ -50,11 +50,9 @@ PATCH /solutions/backupRestore/emailNotificationsSetting
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|Represents whether notifications are enabled or not.|
-|additionalEvents|notificationEventsType|Represents whether you want to opt for additional policy and restore updates. The possible values are: `none`, `restoreAndPolicyUpdates`, `unknownFutureValue`.|
-|recipients|[notificationRecipients](../resources/notificationrecipients.md)|List of recipients.|
-
-
+|additionalEvents|notificationEventsType|Indicates whether to opt in to additional policy and restore updates. Possible values: `none`, `restoreAndPolicyUpdates`, `unknownFutureValue`.|
+|isEnabled|Boolean|Indicates whether notifications are enabled.|
+|recipients|[notificationRecipients](../resources/notificationrecipients.md)|A list of recipients who receive the notifications.|
 
 ## Response
 
@@ -95,7 +93,6 @@ Content-Type: application/json
   }
 }
 ```
-
 
 ### Response
 
