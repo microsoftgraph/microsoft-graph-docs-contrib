@@ -46,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 | :-------------------- | :---------------------------------------------- | :------------------------------------------------------ |
 | processContentRequests| [processContentBatchRequest](../resources/processcontentbatchrequest.md) collection | Required. A collection of individual content processing requests, each with its own user context, content, and request ID. |
 
-The request body is limited to 2 MB in size. The maximum number of content entries per request is 64. These could be spread across up to 64 processContentRequests, each containing one content entry or 2 processContentRequests, each containing 32 content entries or some other combination that does not exceed 64 content entries.
+The request body is limited to 2 MB in size. The maximum number of content entries per request is 64. These could be spread across up to 64 **processContentRequests**, each containing one content entry or 2 **processContentRequests**, each containing 32 content entries or some other combination that does not exceed 64 content entries.
 
 ## Response
 

@@ -254,7 +254,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://canary.graph.microsoft.com/testprodbetadcsdogfood/$metadata#microsoft.graph.processContentResponse",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
   "protectionScopeState": "modified",
   "policyActions": [
     {
@@ -335,7 +335,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://canary.graph.microsoft.com/testprodbetadcsdogfood/$metadata#microsoft.graph.processContentResponse",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
   "protectionScopeState": "modified",
   "policyActions": [
     {
