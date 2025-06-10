@@ -1,6 +1,6 @@
 ---
 title: "emailIdentity resource type"
-description: "Email Identiy of a User or a Group"
+description: "Represents the email identity of a user or an email-enabled distribution group."
 author: "Vassu05"
 ms.date: 05/29/2025
 ms.localizationpriority: medium
@@ -14,14 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the mail identity of a user or a mail enabled distribution group
+Represents the email identity of a user or an email-enabled distribution group.
+
+Inherits from [identity](identity.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name of the user or the group|
-|email|String|mail address of the user or the group|
-|id|String|id of the user or the group|
+|displayName|String|The display name of the user or the group. Inherited from [identity](identity.md).|
+|email|String|The email address of the user or the group.|
+|id|String|The unique identifier of the user or the group. Inherited from [identity](identity.md).|
 
 ## Relationships
 None.
@@ -37,8 +39,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.emailIdentity",
   "displayName": "String",
-  "id": "String",
-  "email": "String"
+  "email": "String",
+  "id": "String (identifier)"
 }
 ```
 
