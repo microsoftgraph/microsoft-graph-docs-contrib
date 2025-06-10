@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an emailNotificationsSetting object.
+Read the properties and relationships of an [emailNotificationsSetting](../resources/emailnotificationssetting.md) object.
 
 ## Permissions
 
@@ -69,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/solutions/backupRestore/emailNotificationsSetting
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -93,4 +92,3 @@ Content-Type: application/json
   }
 }
 ```
-
