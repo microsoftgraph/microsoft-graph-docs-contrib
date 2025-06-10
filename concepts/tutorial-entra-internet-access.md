@@ -289,7 +289,7 @@ In this example, you use a PATCH request to add a destination to the rule create
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "tutorial_configure_entrainternetaccess_create_filteringPolicy"
+  "name": "tutorial_configure_entrainternetaccess_edit_filteringPolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/networkaccess/filteringPolicies('cccccccc-2222-3333-4444-dddddddddddd')/policyRules('<policyRuleId>')
