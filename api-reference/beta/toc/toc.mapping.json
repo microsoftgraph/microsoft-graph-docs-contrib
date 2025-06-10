@@ -422,12 +422,6 @@
       ]
     },
     {
-      "name": "Data Security and Governance (preview)",
-      "resources": [
-        "userDataSecurityAndGoverance"
-      ]
-    },
-    {
       "name": "Device and app management",
       "childNodes": [
         {
@@ -2236,6 +2230,7 @@
         "namePronunciationSettings",
         "enhancedPersonalizationSetting",
         "profile",
+        "profileSource",
         "profilePropertySetting",
         "userAnalytics"
       ],
@@ -2248,11 +2243,13 @@
         },
         {
           "name": "People admin settings",
+          [
           "resources": [
             "namePronunciationSettings",
             "photoUpdateSettings",
             "profileCardProperty",
             "profilePropertySetting",
+            "profileSource",
             "pronounsSettings"
           ]
         },
@@ -2603,17 +2600,10 @@
         {
           "name": "Data security and compliance (preview)",
           "resources": [
-            "security",
-            "activitiesContainer",
             "contentActivity",
-            "dataSecurityAndGovernance",
-            "labelContentRight",
             "microsoft.graph.security.sensitivityLabel",
             "tenantDataSecurityAndGovernance",
-            "tenantProtectionScopeContainer",
-            "usageRightsIncluded",
-            "userDataSecurityAndGovernance",
-            "userProtectionScopeContainer"
+            "userDataSecurityAndGovernance"
            ],
             "complexTypes": [
               "activityMetadata",
@@ -2632,6 +2622,7 @@
               "groupScope",
               "integratedApplicationMetadata",
               "labelActionBase",
+              "labelContentRight",
               "labelPolicy",
               "notifyUserAction",
               "operatingSystemSpecifications",
@@ -2644,7 +2635,6 @@
               "policyTenantScope",
               "policyUserScope",
               "processContentBatchRequest",
-              "processConversationMetadata",
               "processContentRequest",
               "processContentResponse",
               "processContentResponses",
@@ -3016,7 +3006,7 @@
           ]
         },
         {
-          "name": "AI interactions (preview)",
+          "name": "AI interactions",
           "resources": [
             "aiInteractionHistory"
           ],
@@ -3264,6 +3254,7 @@
             "openShift",
             "openShiftChangeRequest",
             "schedule",
+            "scheduleChangeRequest",
             "schedulingGroup",
             "shift",
             "shiftPreferences",

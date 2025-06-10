@@ -210,30 +210,12 @@ items:
       href: ../../resources/security-defaultauditdata.md
 - name: Data security and compliance (preview)
   items:
-  - name: Security
-    items:
-    - name: Security
-      href: ../../resources/security.md
-    - name: Run hunting query
-      href: ../../api/security-security-runhuntingquery.md
-  - name: Activities container
-    href: ../../resources/activitiescontainer.md
   - name: Content activity
     items:
     - name: Content activity
       href: ../../resources/contentactivity.md
     - name: Create
       href: ../../api/activitiescontainer-post-contentactivities.md
-  - name: Data security and governance
-    items:
-    - name: Data security and governance
-      href: ../../resources/datasecurityandgovernance.md
-    - name: Compute protection scopes
-      href: ../../api/tenantprotectionscopecontainer-compute.md
-    - name: Process content async
-      href: ../../api/tenantdatasecurityandgovernance-processcontentasync.md
-  - name: Label content right
-    href: ../../resources/labelcontentright.md
   - name: Sensitivity label
     items:
     - name: Sensitivity label
@@ -266,34 +248,18 @@ items:
       href: ../../resources/tenantdatasecurityandgovernance.md
     - name: Compute protection scopes
       href: ../../api/tenantprotectionscopecontainer-compute.md
+    - name: Process content
+      href: ../../api/userdatasecurityandgovernance-processcontent.md
     - name: Process content async
       href: ../../api/tenantdatasecurityandgovernance-processcontentasync.md
-  - name: Tenant protection scope container
-    items:
-    - name: Tenant protection scope container
-      href: ../../resources/tenantprotectionscopecontainer.md
-    - name: Compute protection scopes
-      href: ../../api/tenantprotectionscopecontainer-compute.md
-  - name: Usage rights included
-    items:
-    - name: Usage rights included
-      href: ../../resources/usagerightsincluded.md
-    - name: Get
-      href: ../../api/usagerightsincluded-get.md
   - name: User data security and governance
     items:
     - name: User data security and governance
       href: ../../resources/userdatasecurityandgovernance.md
     - name: Compute protection scopes
-      href: ../../api/userdatasecurityandgovernance-processcontent.md
+      href: ../../api/userprotectionscopecontainer-compute.md
     - name: Process content
       href: ../../api/userdatasecurityandgovernance-processcontent.md
-  - name: User protection scope container
-    items:
-    - name: User protection scope container
-      href: ../../resources/userprotectionscopecontainer.md
-    - name: Compute protection scopes
-      href: ../../api/userprotectionscopecontainer-compute.md
   - name: Complex types
     items:
     - name: Activity metadata
@@ -324,6 +290,8 @@ items:
       href: ../../resources/groupscope.md
     - name: Label action base
       href: ../../resources/labelactionbase.md
+    - name: Label content right
+      href: ../../resources/labelcontentright.md
     - name: Label policy
       href: ../../resources/labelpolicy.md
     - name: Notify user action
@@ -352,8 +320,6 @@ items:
       href: ../../resources/processcontentresponse.md
     - name: Process content responses
       href: ../../resources/processcontentresponses.md
-    - name: Process conversation metadata
-      href: ../../resources/processconversationmetadata.md
     - name: Process conversation metadata
       href: ../../resources/processconversationmetadata.md
     - name: Process file metadata

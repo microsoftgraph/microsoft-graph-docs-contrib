@@ -43,6 +43,7 @@ const retentionLabel = {
 };
 
 await client.api('/security/labels/retentionLabels')
+	.version('beta')
 	.post(retentionLabel);
 
 ```
