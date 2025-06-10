@@ -1,10 +1,10 @@
 ---
 title: "Get place"
 description: "Read the properties and relationships of a place object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "vrod9429"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice:
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a place object.
+Read the properties of a place object, which can be a [desk](../resources/desk.md), [workspace](../resources/workspace.md), [room](../resources/room.md), [section](../resources/section.md), [floor](../resources/floor.md), or [building](../resources/building.md).
 
 ## Permissions
 
@@ -71,6 +71,8 @@ GET https://graph.microsoft.com/beta/places/{placesId}
 
 
 ### Response
+
+If successful, this method returns a 200 OK response code and a **place** object or the list of places in the response.
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

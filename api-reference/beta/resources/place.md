@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A **Place** object represents different space types within a tenant. A place object can be one of the following types:
+A **place** object represents different space types within a tenant. A place object can be one of the following types:
 
 |Place Type	|Details |
 |:--|:--|
@@ -53,7 +53,7 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |[List places](../../v1.0/api/place-list.md) can return more than 100 rooms in a tenant. |[findRooms](../api/user-findrooms.md) returns up to the first 100 rooms in a tenant. |
 |Supports [getting an individual room or room list](../../v1.0/api/place-get.md) in a tenant. |Doesn't support getting an individual room or room list in a tenant. |
 |Defines the specific entities of [room](../../v1.0/resources/room.md) and [roomList](../../v1.0/resources/roomlist.md) that specify a richer property set, in addition to the display name and SMTP address.	|Each room and room list is of a lighter-weight [emailAddress](../../v1.0/resources/emailaddress.md) type that specifies only the display name and SMTP address. |
-|Supports only organizational scenarios with delegated (work or school accounts) or application permissions. |Supports only organizational scenarios with delegated or application permissions.
+|Supports only organizational scenarios with delegated (only for work or school accounts) or application permissions. |Supports only organizational scenarios with delegated or application permissions.
 |Supports [updating an individual room or room list](../../v1.0/api/place-update.md) in a tenant. |Doesn't support updating an individual room or room list in a tenant. |
 
 ## Properties

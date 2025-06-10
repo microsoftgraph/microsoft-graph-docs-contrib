@@ -1,6 +1,6 @@
 ---
 title: "List place objects"
-description: "Get a list of the place objects and their properties."
+description: "Get a list of place objects and their properties."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the place objects and their properties.
+Get a collection of the specified type of **place** objects defined in the tenant, which can be a [desk](../resources/desk.md), [workspace](../resources/workspace.md), [room](../resources/room.md), [section](../resources/section.md), [floor](../resources/floor.md), or [building](../resources/building.md).
+
+For example, you can get all the places within a building or get all the places on a floor.
 
 ## Permissions
 
@@ -36,6 +38,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /places
 ```
+
+Or:
+
+```http
+GET /places/{placeType}
+```
+
+{placeType} can be any supported place type, such as `microsoft.graph.desk`.
 
 ## Optional query parameters
 
