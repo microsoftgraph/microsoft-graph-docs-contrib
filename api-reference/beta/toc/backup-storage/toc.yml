@@ -10,9 +10,9 @@ items:
     href: ../../api/backuprestoreroot-get.md
   - name: Enable
     href: ../../api/backuprestoreroot-enable.md
-- name: Multi Admin Notification
+- name: Email notifications setting
   items:
-  - name: Email Notifications Setting
+  - name: Email notifications setting
     href: ../../resources/emailnotificationssetting.md
   - name: Get
     href: ../../api/emailnotificationssetting-get.md
@@ -303,6 +303,8 @@ items:
   items:
   - name: Artifact query
     href: ../../resources/artifactquery.md
+  - name: Notification recipients
+    href: ../../resources/notificationrecipients.md
   - name: Restore point search response
     href: ../../resources/restorepointsearchresponse.md
   - name: Restore point search result
