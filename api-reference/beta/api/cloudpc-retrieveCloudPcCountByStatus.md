@@ -87,11 +87,11 @@ Content-Type: application/json
   "value": [
     {
       "status": "provisioned",
-      "count" : "22",
+      "count" : 22,
     },
     {
       "status": "failed",
-      "count" : "11",
+      "count" : 11,
     }
   ]
 }
