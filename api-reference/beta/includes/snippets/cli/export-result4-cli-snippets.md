@@ -9,7 +9,7 @@ mgc-beta security cases ediscovery-cases searches microsoft-graph-security-expor
   "displayName": "Export 4",\
   "exportCriteria": "partiallyIndexed",\
   "exportLocation": "responsiveLocations, nonresponsiveLocations",\
-  "additionalOptions": "teamsAndYammerConversations, cloudAttachments, allDocumentVersions, subfolderContents, listAttachments",\
+  "additionalOptions": "advancedIndexing, subfolderContents, allItemsInFolder, listAttachments, teamsAndYammerConversations, htmlTranscripts, cloudAttachments, includeFolderAndPath, splitSource, condensePaths, friendlyName, optimizedPartitionSize, includeReport",\
   "exportFormat": "eml"\
 }\
 '

@@ -60,6 +60,7 @@ Content-type: application/json
 
 { 
   "displayName":"Module 2",
+  "languageTag": "en-GB",
   "description": "Description for Module 2"
 }
 ```
@@ -113,20 +114,21 @@ HTTP/1.1 201 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules/$entity",
     "displayName": "Module 2",
     "description": "Description for Module 2",
     "resourcesFolderUrl": null,
     "isPinned": false,
     "status": "draft",
-    "createdDateTime": "2023-06-21T17:25:44.1277744Z",
-    "lastModifiedDateTime": "2023-06-21T17:25:44.1494968Z",
-    "id": "ba8e4215-4fb2-4dba-abe7-a8f2585177d3",
+    "createdDateTime": "2025-05-16T20:23:47.0119173Z",
+    "lastModifiedDateTime": "2025-05-16T20:23:47.0641043Z",
+    "languageTag": "en-GB",
+    "id": "1516df94-6817-405f-877f-d440ed32ca06",
     "createdBy": {
         "application": null,
         "device": null,
         "user": {
-            "id": "4aa81579-714a-4f46-8a05-605558455fa1",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -134,7 +136,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "id": "4aa81579-714a-4f46-8a05-605558455fa1",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     }

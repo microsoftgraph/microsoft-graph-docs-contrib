@@ -2230,6 +2230,7 @@
         "namePronunciationSettings",
         "enhancedPersonalizationSetting",
         "profile",
+        "profileSource",
         "profilePropertySetting",
         "userAnalytics"
       ],
@@ -2242,11 +2243,13 @@
         },
         {
           "name": "People admin settings",
+          [
           "resources": [
             "namePronunciationSettings",
             "photoUpdateSettings",
             "profileCardProperty",
             "profilePropertySetting",
+            "profileSource",
             "pronounsSettings"
           ]
         },
@@ -3003,7 +3006,7 @@
           ]
         },
         {
-          "name": "AI interactions (preview)",
+          "name": "AI interactions",
           "resources": [
             "aiInteractionHistory"
           ],

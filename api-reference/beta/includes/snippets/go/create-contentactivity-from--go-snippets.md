@@ -20,41 +20,37 @@ contentMetadata := graphmodels.NewProcessContentRequest()
 
 
 processContentMetadataBase := graphmodels.NewProcessConversationMetadata()
-identifier := "68fa951a-898a-4427-8e9e-6f8c05e9fe2b"
+identifier := "d6ab5054-e111-45c3-9fba-9f2a59c9bbf8"
 processContentMetadataBase.SetIdentifier(&identifier) 
-name := "API Explorer message"
+name := "CA Purview API Explorer message"
 processContentMetadataBase.SetName(&name) 
-correlationId := "559a2343-7aa2-4912-93fe-72c47b2706ed"
+correlationId := "edfb7f88-b963-4ef2-8b30-5cb90f80e01e"
 processContentMetadataBase.SetCorrelationId(&correlationId) 
+sequenceNumber := int64(0)
+processContentMetadataBase.SetSequenceNumber(&sequenceNumber) 
 isTruncated := false
 processContentMetadataBase.SetIsTruncated(&isTruncated) 
-createdDateTime , err := time.Parse(time.RFC3339, "2025-04-28T20:17:55")
+createdDateTime , err := time.Parse(time.RFC3339, "2025-05-28T20:20:37")
 processContentMetadataBase.SetCreatedDateTime(&createdDateTime) 
-modifiedDateTime , err := time.Parse(time.RFC3339, "2025-04-28T20:17:55")
+modifiedDateTime , err := time.Parse(time.RFC3339, "2025-05-28T20:20:37")
 processContentMetadataBase.SetModifiedDateTime(&modifiedDateTime) 
-additionalData := map[string]interface{}{
-	"sequenceNo" : int32(0) , 
-}
-processContentMetadataBase.SetAdditionalData(additionalData)
 
 contentEntries := []graphmodels.ProcessContentMetadataBaseable {
 	processContentMetadataBase,
 }
 contentMetadata.SetContentEntries(contentEntries)
 activityMetadata := graphmodels.NewActivityMetadata()
-activity := graphmodels.UPLOADTEXT_USERACTIVITYTYPE 
+activity := graphmodels.DOWNLOADTEXT_USERACTIVITYTYPE 
 activityMetadata.SetActivity(&activity) 
 contentMetadata.SetActivityMetadata(activityMetadata)
 integratedAppMetadata := graphmodels.NewIntegratedApplicationMetadata()
-name := "API Explorer"
+name := "CA Purview API Explorer"
 integratedAppMetadata.SetName(&name) 
 version := "0.1"
 integratedAppMetadata.SetVersion(&version) 
 contentMetadata.SetIntegratedAppMetadata(integratedAppMetadata)
 additionalData := map[string]interface{}{
 deviceMetadata := graph.New()
-deviceType := "unmanaged"
-deviceMetadata.SetDeviceType(&deviceType) 
 operatingSystemSpecifications := graph.New()
 operatingSystemPlatform := "Windows 11"
 operatingSystemSpecifications.SetOperatingSystemPlatform(&operatingSystemPlatform) 
@@ -62,7 +58,7 @@ operatingSystemVersion := "10.0.26100.0"
 operatingSystemSpecifications.SetOperatingSystemVersion(&operatingSystemVersion) 
 	deviceMetadata.SetOperatingSystemSpecifications(operatingSystemSpecifications)
 	contentMetadata.SetDeviceMetadata(deviceMetadata)
-	"userId" : "7c2f8f10-cba8-4a8d-9449-db4b76d17390", 
+	"userId" : "7c497f10-cba8-4a8d-9449-db4b76d1ef80", 
 	"scopeIdentifier" : "0", 
 }
 contentMetadata.SetAdditionalData(additionalData)

@@ -22,7 +22,9 @@ For internal use only. Don't use.
 
 | Property      | Type   | Description                                                      |
 | :------------ | :----- | :--------------------------------------------------------------- |
-| applicationLocation | [policyLocation](../resources/policylocation.md) | For internal use only. Don't use. |
+| applicationLocation | [policyLocation](../resources/policylocation.md) |The Entra client (application) ID. Required.|
+| name     | String | The name of the integrated application. Inherited from [integratedApplicationMetadata](./integratedapplicationmetadata.md).       |
+| version  | String | The version number of the integrated application. Inherited from [integratedApplicationMetadata](./integratedapplicationmetadata.md). |
 
 ## Relationships
 

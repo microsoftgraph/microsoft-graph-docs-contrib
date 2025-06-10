@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Process content against data protection policies in the context of the current user. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -71,13 +73,15 @@ If successful, this action returns a `200 OK` response code and a [processConten
 
 ## Examples
 
-### Request
+### Example 1: Enterprise AI app
+
+#### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "userdatasecurityandgovernance.processcontent"
+  "name": "userdatasecurityandgovernance.processcontent_1"
 }
 -->
 ``` http
@@ -85,44 +89,45 @@ POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processConten
 Content-Type: application/json
 
 {
-  "contentToProcess": {
-        "contentEntries": [
-            {
-                "@odata.Type": "microsoft.graph.processFileMetadata",
-                "identifier": "91e1ca70-6e5b-4120-abf0-472034ba05c3",
-                "content":{
-                    "@odata.Type": "microsoft.graph.binaryContent",
-                    "data": "<some-binary-data>"
-                },
-                "name": "Example.docx",
-                "createdDateTime": "2024-07-23T01:31:40.2020463Z",
-                "updatedDateTime": "2024-09-17T13:45:21.0000000Z",
-                "correlationId": "54689",
-                "sequenceNumber": 1,
-                "length": 17352,
-                "isTruncated": false,
-                "ownerId": "ffe1ca70-6e5b-4120-abf0-472034ba05d4",
-                "customProperties": {
-                    "Department": "Finance",
-                    "ReviewerName": "John Smith"
-                }
-            }
-        ],
-        "activityMetadata": {
-            "activity": "uploadFile",
-            "applicationLocation": "bing.com"
-        },
-        "deviceMetadata": {
-            "deviceType": "unmanaged",
-            "operatingSystemSpecifications": {
-                "operatingSystemPlatform": "windows",
-                "operatingSystemVersion": "10.0.2.4"
-            }
-        },
-        "integratedAppMetadata": {
-            "name": "ContosoIsvApplication",
-            "version": "1.2",
-        }
+    "contentToProcess": {
+       "contentEntries": [
+          {
+             "@odata.type": "microsoft.graph.processConversationMetadata",
+             "identifier": "07785517-9081-4fe7-a9dc-85bcdf5e9075",
+             "content": {
+                "@odata.type": "microsoft.graph.textContent", 
+                "data": "Write an acceptance letter for Alex Wilber with Credit card number 4532667785213500, ssn: 120-98-1437 at One Microsoft Way, Redmond, WA 98052"
+             },
+             "name":"PC Purview API Explorer message",
+             "correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d9580d",
+             "sequenceNumber": 0, 
+             "isTruncated": false,
+             "createdDateTime": "2025-05-27T17:23:20",
+             "modifiedDateTime": "2025-05-27T17:23:20"
+          }
+       ],
+       "activityMetadata": { 
+          "activity": "uploadText"
+       },
+       "deviceMetadata": {
+          "operatingSystemSpecifications": {
+             "operatingSystemPlatform": "Windows 11",
+             "operatingSystemVersion": "10.0.26100.0" 
+          },
+          "ipAddress": "127.0.0.1"
+       },
+       "protectedAppMetadata": {
+          "name": "PC Purview API Explorer",
+          "version": "0.2",
+          "applicationLocation":{
+             "@odata.type": "microsoft.graph.policyLocationApplication",
+             "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
+          }
+       },
+       "integratedAppMetadata": {
+          "name": "PC Purview API Explorer",
+          "version": "0.2" 
+       }
     }
 }
 ```
@@ -157,7 +162,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -172,23 +177,173 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "protectionScopeState": "notModified",
-    "policyActions": [
-        {
-            "action": "restrictAccess",
-            "restrictionAction": "Block"
-        }
-    ],
-    "processingErrors": [
-        {
-            "code": "OcrNotAvailable",
-            "message": "OCR functionality isn't enabled for this user",
-            "errorType": "permanent",
-            "innerError": {
-                    "code": "Permanent",
-                    "clientRequestId": "6ebdb560-cb16-4176-94fa-e8d04ca054fd"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
+  "protectionScopeState": "notModified",
+  "policyActions": [],
+  "processingErrors": []
+}
+```
+
+### Example 2: Network provider app 
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "userdatasecurityandgovernance.processcontent_2"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processContent
+Content-Type: application/json
+
+{
+    "contentToProcess": {
+        "contentEntries": [
+            {
+                "@odata.type": "#microsoft.graph.processConversationMetadata",
+                "identifier": "f7af180f-dc2e-467c-9719-757e1c61eabf",
+                "content": {
+                    "@odata.type": "#microsoft.graph.textContent",
+                    "data": "some data"
+                },
+                "name": "Some name",
+             "correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d95811",
+             "sequenceNumber": 0, 
+            }
+        ],
+        "activityMetadata": {
+            "activity": "uploadText"
+        },
+        "deviceMetadata": {
+            "deviceType": "Unmanaged",
+            "ipAddress": null,
+            "operatingSystemSpecifications": {
+                "operatingSystemPlatform": "Windows",
+                "operatingSystemVersion": "11.1"
+            }
+        },
+        "integratedAppMetadata": {
+            "name": "Some integrated app name",
+            "version": "1.0.0"
+        },
+        "protectedAppMetadata": {
+            "applicationLocation": {
+                "@odata.type": "#microsoft.graph.policyLocationUrl",
+                "value": "https://gemini.google.com"
             }
         }
-    ]
+    }
+} 
+
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.processContentResponse"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
+  "protectionScopeState": "modified",
+  "policyActions": [
+    {
+      "@odata.type": "#microsoft.graph.restrictAccessAction",
+      "action": "restrictAccess",
+      "restrictionAction": "block"
+    }
+  ],
+  "processingErrors": []
+}
+```
+
+### Example 3: Network provider app with file content
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "userdatasecurityandgovernance.processcontent_3"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processContent
+Content-Type: application/json
+
+{
+    "contentToProcess": {
+        "contentEntries": [
+            {
+                "@odata.type": "#microsoft.graph.processConversationMetadata",
+                "identifier": "f7af180f-dc2e-467c-9719-757e1c61eabf",
+                "content": {
+                    "@odata.type": "#microsoft.graph.binaryContent",
+                    "data": "Base64 encoded content"
+                },
+                "name": "Some name",
+                "correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d95822"
+            }
+        ],
+        "activityMetadata": {
+            "activity": "uploadFile"
+        },
+        "deviceMetadata": {
+            "deviceType": "Unmanaged",
+            "ipAddress": null,
+            "operatingSystemSpecifications": {
+                "operatingSystemPlatform": "Windows",
+                "operatingSystemVersion": "11.1"
+            }
+        },
+        "integratedAppMetadata": {
+            "name": "Some integrated app name",
+            "version": "1.0.0"
+        },
+        "protectedAppMetadata": {
+            "applicationLocation": {
+                "@odata.type": "#microsoft.graph.policyLocationUrl",
+                "value": "https://gemini.google.com"
+            }
+        }
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.processContentResponse"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
+  "protectionScopeState": "modified",
+  "policyActions": [
+    {
+      "@odata.type": "#microsoft.graph.restrictAccessAction",
+      "action": "restrictAccess",
+      "restrictionAction": "block"
+    }
+  ],
+  "processingErrors": []
 }
 ```

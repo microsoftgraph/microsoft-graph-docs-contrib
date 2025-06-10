@@ -6,8 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 
 mgc-beta education classes assignments create --education-class-id {educationClass-id} --body '{\
-    "dueDateTime": "2022-09-16T00:00:00Z",\
-    "displayName": "Reading test 09.14 Beta",\
+    "dueDateTime": "2025-09-16T00:00:00Z",\
+    "displayName": "Reading test 09.14",\
+    "languageTag": "es-MX",\
     "instructions": {\
         "contentType": "text",\
         "content": "Read chapter 4"\

@@ -111,6 +111,7 @@ The following example shows how to decline an [offerShiftRequest](../resources/o
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "offershiftrequestthis.declineforuser"
@@ -125,6 +126,12 @@ Content-Type: application/json
   "userId": "d2e7b5b2-0355-4c73-a543-08847b5b0884"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequestthisdeclineforuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -145,6 +152,7 @@ The following example shows how to decline an [openShiftChangeRequest](../resour
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "openshiftchangerequestthis.declineforuser"
@@ -159,6 +167,12 @@ Content-Type: application/json
   "userId": "d2e7b5b2-0355-4c73-a543-08847b5b0884"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/openshiftchangerequestthisdeclineforuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -179,6 +193,7 @@ The following example shows how to decline a [swapShiftsChangeRequest](../resour
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "swapShiftsChangeRequestthis.declineforuser"
@@ -193,6 +208,12 @@ Content-Type: application/json
   "userId": "d2e7b5b2-0355-4c73-a543-08847b5b0884"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/swapshiftschangerequestthisdeclineforuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -213,6 +234,7 @@ The following example shows how to decline a [timeOffRequest](../resources/timeo
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoffrequestthis.declineforuser"
@@ -227,6 +249,12 @@ Content-Type: application/json
   "userId": "d2e7b5b2-0355-4c73-a543-08847b5b0884"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timeoffrequestthisdeclineforuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

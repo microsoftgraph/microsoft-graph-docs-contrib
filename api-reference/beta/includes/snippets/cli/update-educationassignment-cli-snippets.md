@@ -13,6 +13,7 @@ mgc-beta education classes assignments patch --education-class-id {educationClas
     },\
     "dueDateTime": "2021-09-10T00:00:00Z",\
     "addedStudentAction": "none",\
+    "languageTag": "pt-BR",\
     "addToCalendarAction": "studentsAndPublisher"\
 }\
 '
