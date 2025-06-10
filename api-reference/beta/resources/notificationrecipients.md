@@ -1,6 +1,6 @@
 ---
 title: "notificationRecipients resource type"
-description: "Represent Recipients of Multi Admin Notifications"
+description: "Represents the recipients of multi-admin notifications."
 author: "Vassu05"
 ms.date: 05/29/2025
 ms.localizationpriority: medium
@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent Recipients of Multi Admin Notifications
+Represents the recipients of multi-admin notifications.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customRecipients|[emailIdentity](../resources/backuprestore-emailidentity.md) collection|List of users or groups that recieve notifications|
-|role|notificationRecipientsType|Represents whether the recipient type is an admin or a custom list. The possible values are: `none`, `globalAdmins`, `backupAdmins`, `custom`, `allAdmins`, `unknownFutureValue`.|
+|customRecipients|[emailIdentity](../resources/backuprestore-emailidentity.md) collection|A list of users or groups that receive notifications.|
+|role|notificationRecipientsType|Indicates whether the recipient type is an admin role or a custom list. The possible values are: `none`, `globalAdmins`, `backupAdmins`, `custom`, `allAdmins`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -35,12 +35,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.notificationRecipients",
-  "role": "String",
-  "customRecipients": [
-    {
-      "@odata.type": "microsoft.graph.emailIdentity"
-    }
-  ]
+  "customRecipients": [{"@odata.type": "microsoft.graph.emailIdentity"}],
+  "role": "String"
 }
 ```
-
