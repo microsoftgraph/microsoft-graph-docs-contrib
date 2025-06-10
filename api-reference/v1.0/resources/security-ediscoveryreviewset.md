@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Represents the static set of electronically stored information collected for use in a litigation, investigation, or regulatory request.
 
+Inherited from [dataSet](../resources/dataset.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -29,11 +31,11 @@ Represents the static set of electronically stored information collected for use
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The user who created the review set. Read-only. |
-|createdDateTime|DateTimeOffset|The datetime when the review set was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|description|String|The review set description.|
-|displayName|String|The review set name. The name is unique with a maximum limit of 64 characters.|
-|id|String|The review set unique identifier. Read-only.|
+|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The user who created the review set. Read-only. Inherited from [dataSet](../resources/dataset.md). |
+|createdDateTime|DateTimeOffset|The datetime when the review set was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [dataSet](../resources/dataset.md).|
+|description|String|The review set description. Inherited from [dataSet](../resources/dataset.md).|
+|displayName|String|The review set name. The name is unique with a maximum limit of 64 characters. Inherited from [dataSet](../resources/dataset.md).|
+|id|String|The review set unique identifier. Read-only. Inherited from [dataSet](../resources/dataset.md).|
 
 ## Relationships
 |Relationship|Type|Description|
