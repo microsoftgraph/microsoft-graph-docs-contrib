@@ -1,6 +1,6 @@
 ---
 title: "emailNotificationsSetting resource type"
-description: "Represents the Email Setting of Multi Admin Notifications"
+description: "Represents the email settings for multi-admin notifications."
 author: "Vassu05"
 ms.date: 05/29/2025
 ms.localizationpriority: medium
@@ -14,21 +14,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Email Setting of Multi Admin Notifications
+Represents the email settings for multi-admin notifications.
 
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/emailnotificationssetting-get.md)|[emailNotificationsSetting](../resources/emailnotificationssetting.md)|Read the properties and relationships of an emailNotificationsSetting object.|
-|[Update](../api/emailnotificationssetting-update.md)|[emailNotificationsSetting](../resources/emailnotificationssetting.md)|Update the properties of an emailNotificationsSetting object.|
+|[Get](../api/emailnotificationssetting-get.md)|[emailNotificationsSetting](../resources/emailnotificationssetting.md)|Read the properties and relationships of an [emailNotificationsSetting](../resources/emailnotificationssetting.md) object.|
+|[Update](../api/emailnotificationssetting-update.md)|[emailNotificationsSetting](../resources/emailnotificationssetting.md)|Update the properties of an [emailNotificationsSetting](../resources/emailnotificationssetting.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|additionalEvents|notificationEventsType|Represents whether you want to opt for additional policy and restore updates. The possible values are: `none`, `restoreAndPolicyUpdates`, `unknownFutureValue`.|
-|isEnabled|Boolean|Represents whether notifications are enabled or not.|
-|recipients|[notificationRecipients](../resources/notificationrecipients.md)|List of recipients.|
+|additionalEvents|notificationEventsType|Indicates whether to opt in to additional policy and restore updates. Possible values: `none`, `restoreAndPolicyUpdates`, `unknownFutureValue`.|
+|id|String|Unique identifier for the **emailNotificationsSetting**.|
+|isEnabled|Boolean|Indicates whether notifications are enabled.|
+|recipients|[notificationRecipients](../resources/notificationrecipients.md)|A list of recipients who receive the notifications.|
 
 ## Relationships
 None.
@@ -46,12 +48,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.emailNotificationsSetting",
+  "additionalEvents": "String",
   "id": "String (identifier)",
   "isEnabled": "Boolean",
-  "additionalEvents": "String",
-  "recipients": {
-    "@odata.type": "microsoft.graph.notificationRecipients"
-  }
+  "recipients": {"@odata.type": "microsoft.graph.notificationRecipients"}
 }
 ```
-
