@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents the static set of electronically stored information collected for use in a litigation, investigation, or regulatory request.
 
-Inherits from [dataSet](../resources/dataset.md).
+Inherits from [dataSet](../resources/security-dataset.md).
 
 ## Methods
 |Method|Return type|Description|
