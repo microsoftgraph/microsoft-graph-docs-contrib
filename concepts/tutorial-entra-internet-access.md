@@ -7,7 +7,7 @@ ms.reviewer: fgomulka
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
-ms.date: 04/01/2025
+ms.date: 06/10/2025
 #Customer intent: As a security administrator, I want to use Microsoft Graph APIs to block specific web traffic and domains so that I can protect users from unwanted content and secure my organization's internet traffic.
 ---
 
