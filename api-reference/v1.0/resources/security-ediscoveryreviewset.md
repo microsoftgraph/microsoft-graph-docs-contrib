@@ -32,7 +32,7 @@ Inherited from [dataSet](../resources/dataset.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The user who created the review set. Read-only. Inherited from [dataSet](../resources/dataset.md). |
-|createdDateTime|DateTimeOffset|The datetime when the review set was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [dataSet](../resources/dataset.md).|
+|createdDateTime|DateTimeOffset|The date and time when the review set was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [dataSet](../resources/dataset.md).|
 |description|String|The review set description. Inherited from [dataSet](../resources/dataset.md).|
 |displayName|String|The review set name. The name is unique with a maximum limit of 64 characters. Inherited from [dataSet](../resources/dataset.md).|
 |id|String|The review set unique identifier. Read-only. Inherited from [dataSet](../resources/dataset.md).|
@@ -54,13 +54,11 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.ediscoveryReviewSet",
-  "id": "String (identifier)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)"
+  "id": "String (identifier)"
 }
 ```
 
