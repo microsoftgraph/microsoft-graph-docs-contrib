@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "e45f1bb8-e874-49b1-8055-967c42bf53a3",
+          "ApiChange": "Member",
+          "ChangedApiName": "unifiedGroupSource",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `optimizedPartitionSize` member from the **exportOptions** enumeration.",
+          "Target":"exportOptions"
+        }
+      ],
+      "Id": "e45f1bb8-e874-49b1-8055-967c42bf53a3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-10T17:13:06.5520497Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
           "ApiChange": "Member",
           "ChangedApiName": "advancedIndexing",
