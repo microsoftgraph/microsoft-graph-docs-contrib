@@ -147,9 +147,9 @@ items:
     - name: Retrieve snapshots
       href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
-      href: ../../api/cloudpc-retrieveCloudPcCountByStatus.md
-    - name: Retrieve Cloud PC count group by Status column
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
+    - name: Retrieve Cloud PC count group by Status column  
+      href: ../../api/cloudpc-retrieveCloudPcCountByStatus.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
