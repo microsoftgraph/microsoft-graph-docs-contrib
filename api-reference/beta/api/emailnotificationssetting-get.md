@@ -39,7 +39,7 @@ GET /solutions/backupRestore/emailNotificationsSetting
 
 ## Optional query parameters
 
-This method doesn't support [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method doesn't support [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
