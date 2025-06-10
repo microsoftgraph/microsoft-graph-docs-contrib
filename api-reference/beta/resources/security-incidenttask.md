@@ -29,8 +29,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionStatus|microsoft.graph.security.incidentTaskActionStatus|The execution status of the action. Values: `notStarted`, `inProgress`, `partiallyCompleted`, `completed`, `failed`, `unknownFutureValue`.|
-|actionType|microsoft.graph.security.incidentTaskActionType|The remediation action to perform. When creating tasks, these types aren't supported: `markUserAsCompromised`, `requireSignIn`, `hardDeleteEmail`, `softDeleteEmail`. Values: `text`, `isolateDevice`, `stopAndQuarantineFile`, `runAntiVirusScan`, `collectInvestigationPackage`, `restrictAppExecution`, `submitIocRule`, `forceUserPasswordReset`, `disableUser`, `markUserAsCompromised`, `requireSignIn`, `hardDeleteEmail`, `softDeleteEmail`, `unIsolateDevice`, `unRestrictAppExecution`, `enableUser`, `unknownFutureValue`.|
+|actionStatus|microsoft.graph.security.incidentTaskActionStatus|The execution status of the action. The possible values are: `notStarted`, `inProgress`, `partiallyCompleted`, `completed`, `failed`, `unknownFutureValue`.|
+|actionType|microsoft.graph.security.incidentTaskActionType|The remediation action to perform. When creating tasks, these types aren't supported: `markUserAsCompromised`, `requireSignIn`, `hardDeleteEmail`, `softDeleteEmail`. The possible values are: `text`, `isolateDevice`, `stopAndQuarantineFile`, `runAntiVirusScan`, `collectInvestigationPackage`, `restrictAppExecution`, `submitIocRule`, `forceUserPasswordReset`, `disableUser`, `markUserAsCompromised`, `requireSignIn`, `hardDeleteEmail`, `softDeleteEmail`, `unIsolateDevice`, `unRestrictAppExecution`, `enableUser`, `unknownFutureValue`.|
 |createdByDisplayName|String|Name of the entity that created the task. Read-only.|
 |createdDateTime|DateTimeOffset|Creation time of the task. Read-only.|
 |description|String|Description of the remediation action.|
@@ -38,8 +38,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |id|String|Unique GUID identifier for the task.|
 |lastModifiedByDisplayName|String|Name of the entity that last updated the task. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Last update time of the task. Read-only.|
-|source|microsoft.graph.security.incidentTaskSource|Origin of the task. Values: `defenderExpertsGuidedResponse`, `defenderExpertsManagedResponse`, `unknownFutureValue`.|
-|status|microsoft.graph.security.incidentTaskStatus|Current task status. This is the only property you can update. Values: `open`, `inProgress`, `completed`, `failed`, `notRelevant`, `unknownFutureValue`.|
+|source|microsoft.graph.security.incidentTaskSource|Origin of the task. The possible values are: `defenderExpertsGuidedResponse`, `defenderExpertsManagedResponse`, `unknownFutureValue`.|
+|status|microsoft.graph.security.incidentTaskStatus|Current task status. This is the only property you can update. The possible values are: `open`, `inProgress`, `completed`, `failed`, `notRelevant`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
