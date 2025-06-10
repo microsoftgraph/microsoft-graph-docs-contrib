@@ -73,13 +73,15 @@ If successful, this action returns a `200 OK` response code and a [processConten
 
 ## Examples
 
-### Request
+### Example 1: Enterprise AI app
+
+#### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "userdatasecurityandgovernance.processcontent"
+  "name": "userdatasecurityandgovernance.processcontent_1"
 }
 -->
 ``` http
@@ -160,7 +162,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -178,6 +180,172 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
   "protectionScopeState": "notModified",
   "policyActions": [],
+  "processingErrors": []
+}
+```
+
+### Example 2: Network provider app 
+
+#### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "userdatasecurityandgovernance.processcontent_2"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processContent
+Content-Type: application/json
+
+{
+    "contentToProcess": {
+        "contentEntries": [
+            {
+                "@odata.type": "#microsoft.graph.processConversationMetadata",
+                "identifier": "f7af180f-dc2e-467c-9719-757e1c61eabf",
+                "content": {
+                    "@odata.type": "#microsoft.graph.textContent",
+                    "data": "some data"
+                },
+                "name": "Some name",
+             "correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d95811",
+             "sequenceNumber": 0, 
+            }
+        ],
+        "activityMetadata": {
+            "activity": "uploadText"
+        },
+        "deviceMetadata": {
+            "deviceType": "Unmanaged",
+            "ipAddress": null,
+            "operatingSystemSpecifications": {
+                "operatingSystemPlatform": "Windows",
+                "operatingSystemVersion": "11.1"
+            }
+        },
+        "integratedAppMetadata": {
+            "name": "Some integrated app name",
+            "version": "1.0.0"
+        },
+        "protectedAppMetadata": {
+            "applicationLocation": {
+                "@odata.type": "#microsoft.graph.policyLocationUrl",
+                "value": "https://gemini.google.com"
+            }
+        }
+    }
+} 
+
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.processContentResponse"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://canary.graph.microsoft.com/testprodbetadcsdogfood/$metadata#microsoft.graph.processContentResponse",
+  "protectionScopeState": "modified",
+  "policyActions": [
+    {
+      "@odata.type": "#microsoft.graph.restrictAccessAction",
+      "action": "restrictAccess",
+      "restrictionAction": "block"
+    }
+  ],
+  "processingErrors": []
+}
+```
+
+### Example 3: Network provider app with file content
+
+#### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "userdatasecurityandgovernance.processcontent_3"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processContent
+Content-Type: application/json
+
+{
+    "contentToProcess": {
+        "contentEntries": [
+            {
+                "@odata.type": "#microsoft.graph.processConversationMetadata",
+                "identifier": "f7af180f-dc2e-467c-9719-757e1c61eabf",
+                "content": {
+                    "@odata.type": "#microsoft.graph.binaryContent",
+                    "data": "Base64 encoded content"
+                },
+                "name": "Some name",
+                "correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d95822"
+            }
+        ],
+        "activityMetadata": {
+            "activity": "uploadFile"
+        },
+        "deviceMetadata": {
+            "deviceType": "Unmanaged",
+            "ipAddress": null,
+            "operatingSystemSpecifications": {
+                "operatingSystemPlatform": "Windows",
+                "operatingSystemVersion": "11.1"
+            }
+        },
+        "integratedAppMetadata": {
+            "name": "Some integrated app name",
+            "version": "1.0.0"
+        },
+        "protectedAppMetadata": {
+            "applicationLocation": {
+                "@odata.type": "#microsoft.graph.policyLocationUrl",
+                "value": "https://gemini.google.com"
+            }
+        }
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.processContentResponse"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://canary.graph.microsoft.com/testprodbetadcsdogfood/$metadata#microsoft.graph.processContentResponse",
+  "protectionScopeState": "modified",
+  "policyActions": [
+    {
+      "@odata.type": "#microsoft.graph.restrictAccessAction",
+      "action": "restrictAccess",
+      "restrictionAction": "block"
+    }
+  ],
   "processingErrors": []
 }
 ```
