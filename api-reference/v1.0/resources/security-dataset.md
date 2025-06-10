@@ -10,8 +10,6 @@ ms.date: 06/10/2025
 
 # dataSet resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Namespace: microsoft.graph.security
 
 Represents an abstract base type for data sets used in eDiscovery.
