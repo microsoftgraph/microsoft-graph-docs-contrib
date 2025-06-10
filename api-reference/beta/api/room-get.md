@@ -1,6 +1,6 @@
 ---
-title: "List place objects"
-description: "Get a list of the place objects and their properties."
+title: "Get room"
+description: "Read the properties and relationships of a room object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# List place objects
+# Get room
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the place objects and their properties.
+Read the properties and relationships of a room object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "place-list-permissions"
+  "name": "room-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/place-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/room-get-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /places
+GET /room
+GET /roomList/rooms/{roomId}
 ```
 
 ## Optional query parameters
@@ -53,7 +54,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [place](../resources/place.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [room](../resources/room.md) object in the response body.
 
 ## Examples
 
@@ -62,11 +63,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_place"
+  "name": "get_room"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/places
+GET https://graph.microsoft.com/beta/room
 ```
 
 
@@ -77,7 +78,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.place"
+  "@odata.type": "microsoft.graph.room"
 }
 -->
 ``` http
@@ -85,32 +86,41 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.place",
-      "id": "7d752e23-0fb5-7333-be1b-a1ae3d19ac4b",
-      "displayName": "String",
-      "geoCoordinates": {
-        "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-      },
-      "phone": "String",
-      "address": {
-        "@odata.type": "microsoft.graph.physicalAddress"
-      },
-      "placeId": "String",
-      "parentId": "String",
-      "resourceLinks": [
-        {
-          "@odata.type": "microsoft.graph.resourceLink"
-        }
-      ],
-      "tags": [
-        "String"
-      ],
-      "isWheelChairAccessible": "Boolean",
-      "label": "String"
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.room",
+    "id": "e3087de3-2ba1-cfb4-3a47-e63ff49f52e8",
+    "displayName": "String",
+    "geoCoordinates": {
+      "@odata.type": "microsoft.graph.outlookGeoCoordinates"
+    },
+    "phone": "String",
+    "address": {
+      "@odata.type": "microsoft.graph.physicalAddress"
+    },
+    "placeId": "String",
+    "parentId": "String",
+    "resourceLinks": [
+      {
+        "@odata.type": "microsoft.graph.resourceLink"
+      }
+    ],
+    "tags": [
+      "String"
+    ],
+    "isWheelChairAccessible": "Boolean",
+    "label": "String",
+    "emailAddress": "String",
+    "nickname": "String",
+    "building": "String",
+    "floorNumber": "Integer",
+    "capacity": "Integer",
+    "bookingType": "String",
+    "audioDeviceName": "String",
+    "videoDeviceName": "String",
+    "displayDeviceName": "String",
+    "floorLabel": "String",
+    "isTeamsEnabled": "Boolean"
+  }
 }
 ```
 

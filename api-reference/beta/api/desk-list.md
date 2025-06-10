@@ -1,6 +1,6 @@
 ---
-title: "List place objects"
-description: "Get a list of the place objects and their properties."
+title: "List desk objects"
+description: "Get a list of the desk objects and their properties."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# List place objects
+# List desk objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the place objects and their properties.
+Get a list of the desk objects and their properties.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "place-list-permissions"
+  "name": "desk-list-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/place-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/desk-list-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /places
+GET ** Collection URI for microsoft.graph.desk not found
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [place](../resources/place.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [desk](../resources/desk.md) objects in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_place"
+  "name": "list_desk"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/places
+GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.desk not found
 ```
 
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.place"
+  "@odata.type": "microsoft.graph.desk"
 }
 -->
 ``` http
@@ -87,8 +87,8 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.place",
-      "id": "7d752e23-0fb5-7333-be1b-a1ae3d19ac4b",
+      "@odata.type": "#microsoft.graph.desk",
+      "id": "24420c90-4ee4-0d01-ce17-d46ed4282abb",
       "displayName": "String",
       "geoCoordinates": {
         "@odata.type": "microsoft.graph.outlookGeoCoordinates"
@@ -108,7 +108,14 @@ Content-Type: application/json
         "String"
       ],
       "isWheelChairAccessible": "Boolean",
-      "label": "String"
+      "label": "String",
+      "displayDeviceName": "String",
+      "mailboxDetails": {
+        "@odata.type": "microsoft.graph.mailboxDetails"
+      },
+      "mode": {
+        "@odata.type": "microsoft.graph.placeMode"
+      }
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
-title: "List place objects"
-description: "Get a list of the place objects and their properties."
+title: "building: descendants"
+description: "**TODO: Add Description**"
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# List place objects
+# building: descendants
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the place objects and their properties.
+**TODO: Add Description**
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "place-list-permissions"
+  "name": "building-descendants-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/place-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/building-descendants-permissions.md)]
 
 ## HTTP request
 
@@ -34,12 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /places
+GET /building/descendants
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -53,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [place](../resources/place.md) objects in the response body.
+If successful, this function returns a `200 OK` response code and a [place](../resources/place.md) collection in the response body.
 
 ## Examples
 
@@ -62,11 +58,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_place"
+  "name": "buildingthis.descendants"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/places
+GET https://graph.microsoft.com/beta/building/descendants
 ```
 
 
@@ -77,7 +73,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.place"
+  "@odata.type": "Collection(microsoft.graph.place)"
 }
 -->
 ``` http
@@ -88,7 +84,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.place",
-      "id": "7d752e23-0fb5-7333-be1b-a1ae3d19ac4b",
+      "id": "String (identifier)",
       "displayName": "String",
       "geoCoordinates": {
         "@odata.type": "microsoft.graph.outlookGeoCoordinates"

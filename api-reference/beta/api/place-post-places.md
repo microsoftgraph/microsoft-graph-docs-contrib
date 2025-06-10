@@ -1,6 +1,6 @@
 ---
-title: "Update place"
-description: "Update the properties of a place object."
+title: "Create place"
+description: "Create a new place object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# Update place
+# Create place
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a place object.
+Create a new place object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "place-update-permissions"
+  "name": "place-post-places-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/place-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/place-post-places-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /places/{placesId}
+POST /places
 ```
 
 ## Request headers
@@ -46,8 +46,9 @@ PATCH /places/{placesId}
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [place](../resources/place.md) object.
 
+You can specify the following properties when creating a **place**.
 
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
@@ -67,7 +68,7 @@ PATCH /places/{placesId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [place](../resources/place.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [place](../resources/place.md) object in the response body.
 
 ## Examples
 
@@ -76,11 +77,11 @@ If successful, this method returns a `200 OK` response code and an updated [plac
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_place"
+  "name": "create_place_from_places"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/places/{placesId}
+POST https://graph.microsoft.com/beta/places
 Content-Type: application/json
 
 {
@@ -115,11 +116,12 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.place"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {

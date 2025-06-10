@@ -1,5 +1,5 @@
 ---
-title: "workspace resource type"
+title: "building resource type"
 description: "**TODO: Add Description**"
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/09/2025
@@ -8,7 +8,7 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: resourcePageType
 ---
 
-# workspace resource type
+# building resource type
 
 Namespace: microsoft.graph
 
@@ -23,30 +23,22 @@ Inherits from [place](../resources/place.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/roomlist-list-workspaces.md)|[workspace](../resources/workspace.md) collection|Get a list of the workspace objects and their properties.|
-|[Create](../api/roomlist-post-workspaces.md)|[workspace](../resources/workspace.md)|Create a new workspace object.|
-|[Get](../api/workspace-get.md)|[workspace](../resources/workspace.md)|Read the properties and relationships of a workspace object.|
-|[Update](../api/workspace-update.md)|[workspace](../resources/workspace.md)|Update the properties of a workspace object.|
-|[Delete](../api/roomlist-delete-workspaces.md)|None|Delete a workspace object.|
-|[descendants](../api/workspace-descendants.md)|[place](../resources/place.md) collection|**TODO: Add Description**|
+|[List](../api/building-list.md)|[building](../resources/building.md) collection|Get a list of the building objects and their properties.|
+|[Get](../api/building-get.md)|[building](../resources/building.md)|Read the properties and relationships of a building object.|
+|[Update](../api/building-update.md)|[building](../resources/building.md)|Update the properties of a building object.|
+|[Delete](../api/building-delete.md)|None|Delete a building object.|
+|[descendants](../api/building-descendants.md)|[place](../resources/place.md) collection|**TODO: Add Description**|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|building|String|**TODO: Add Description**|
-|capacity|Int32|**TODO: Add Description**|
-|displayDeviceName|String|**TODO: Add Description**|
 |displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|emailAddress|String|**TODO: Add Description**|
-|floorLabel|String|**TODO: Add Description**|
-|floorNumber|Int32|**TODO: Add Description**|
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+|hasWiFi|Boolean|**TODO: Add Description**|
 |id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |label|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|mode|[placeMode](../resources/placemode.md)|**TODO: Add Description**|
-|nickname|String|**TODO: Add Description**|
 |parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
@@ -61,14 +53,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.workspace",
+  "@odata.type": "microsoft.graph.building",
   "baseType": "microsoft.graph.place",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.workspace",
+  "@odata.type": "#microsoft.graph.building",
   "id": "String (identifier)",
   "displayName": "String",
   "geoCoordinates": {
@@ -90,16 +82,7 @@ The following JSON representation shows the resource type.
   ],
   "isWheelChairAccessible": "Boolean",
   "label": "String",
-  "emailAddress": "String",
-  "nickname": "String",
-  "building": "String",
-  "floorNumber": "Integer",
-  "capacity": "Integer",
-  "floorLabel": "String",
-  "displayDeviceName": "String",
-  "mode": {
-    "@odata.type": "microsoft.graph.placeMode"
-  }
+  "hasWiFi": "Boolean"
 }
 ```
 
