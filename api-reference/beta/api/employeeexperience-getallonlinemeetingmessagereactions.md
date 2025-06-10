@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "employeeexperience-getallonlinemeetingmessages-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/employeeexperience-getallonlinemeetingmessages-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/employeeexperience-getallonlinemeetingmessagereactions-permissions.md)]
 
 ## HTTP request
 
@@ -44,6 +44,10 @@ GET /employeeExperience/onlineMeetingConversations/{conversation-id}/messages/{m
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Optional query parameters
+
+This method does not support any [OData query parameters](/graph/query-parameters).
 
 ## Request body
 

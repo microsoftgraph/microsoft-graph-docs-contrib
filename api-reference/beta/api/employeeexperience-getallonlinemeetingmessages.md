@@ -48,6 +48,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /employeeExperience/getAllOnlineMeetingMessages
 ```
 
+## Optional query parameters
+
+This method does not support any [OData query parameters](/graph/query-parameters).
+
+
 ## Request headers
 
 |Name|Description|

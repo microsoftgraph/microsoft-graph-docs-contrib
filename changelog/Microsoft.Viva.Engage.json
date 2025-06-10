@@ -207,6 +207,128 @@
       "CreatedDateTime": "2025-04-29T19:49:47.6640112Z",
       "WorkloadArea": "Employee experience",
       "SubArea": "Employee engagement"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "engagementConversationMessageAttachmentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **engagementConversationMessageAttachmentType** enumeration type.",
+          "Target": "engagementConversationMessageAttachmentType"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "engagementConversationMessageReactionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **engagementConversationMessageReactionType** enumeration type.",
+          "Target": "engagementConversationMessageReactionType"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "engagementConversationModerationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **engagementConversationModerationState** enumeration type.",
+          "Target": "engagementConversationModerationState"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "engagementCreationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **engagementCreationMode** enumeration type.",
+          "Target": "engagementCreationMode"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Resource",
+          "ChangedApiName": "engagementConversationMessageAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [engagementConversationMessageAttachment](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessageAttachment?view=graph-rest-beta) resource.",
+          "Target": "engagementConversationMessageAttachment"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Resource",
+          "ChangedApiName": "engagementConversationMessageMention",
+          "ChangeType": "Addition",
+          "Description": "Added the [engagementConversationMessageMention](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessageMention?view=graph-rest-beta) resource.",
+          "Target": "engagementConversationMessageMention"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Resource",
+          "ChangedApiName": "engagementIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [engagementIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/engagementIdentitySet?view=graph-rest-beta) resource.",
+          "Target": "engagementIdentitySet"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "onlineMeetingConversations",
+          "ChangeType": "Addition",
+          "Description": "Added the **onlineMeetingConversations** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource.",
+          "Target": "employeeExperience"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Resource",
+          "ChangedApiName": "engagementConversation",
+          "ChangeType": "Addition",
+          "Description": "Added the [engagementConversation](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversation?view=graph-rest-beta) resource.",
+          "Target": "engagementConversation"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Resource",
+          "ChangedApiName": "engagementConversationMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [engagementConversationMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessage?view=graph-rest-beta) resource.",
+          "Target": "engagementConversationMessage"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Resource",
+          "ChangedApiName": "engagementConversationMessageReaction",
+          "ChangeType": "Addition",
+          "Description": "Added the [engagementConversationMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessageReaction?view=graph-rest-beta) resource.",
+          "Target": "engagementConversationMessageReaction"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeetingEngagementConversation",
+          "ChangeType": "Addition",
+          "Description": "Added the [onlineMeetingEngagementConversation](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingEngagementConversation?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingEngagementConversation"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllOnlineMeetingMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllOnlineMeetingMessages](https://learn.microsoft.com/en-us/graph/api/employeeExperience-getAllOnlineMeetingMessages?view=graph-rest-beta) method to the [onlineMeetingEngagementConversation](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingEngagementConversation?view=graph-rest-beta) resource.",
+          "Target": "employeeExperience"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllOnlineMeetingMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllOnlineMeetingMessageReactions](https://learn.microsoft.com/en-us/graph/api/employeeexperience-getallonlinemeetingmessagereactions?view=graph-rest-beta) method to the [onlineMeetingEngagementConversation](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingEngagementConversation?view=graph-rest-beta) resource.",
+          "Target": "employeeExperience"
+        }
+      ],
+      "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-21T17:48:38.4464308Z",
+      "WorkloadArea": "Employee experience",
+      "SubArea": "Employee engagement"
     }
   ]
 }
