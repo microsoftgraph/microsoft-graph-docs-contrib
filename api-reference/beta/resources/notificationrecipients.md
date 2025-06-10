@@ -19,7 +19,7 @@ Represents the recipients of multi-admin notifications.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customRecipients|[emailIdentity](../resources/backuprestore-emailidentity.md) collection|A list of users or groups that receive notifications.|
+|customRecipients|[emailIdentity](../resources/emailidentity.md) collection|A list of users or groups that receive notifications.|
 |role|notificationRecipientsType|Indicates whether the recipient type is an admin role or a custom list. The possible values are: `none`, `globalAdmins`, `backupAdmins`, `custom`, `allAdmins`, `unknownFutureValue`.|
 
 ## Relationships
