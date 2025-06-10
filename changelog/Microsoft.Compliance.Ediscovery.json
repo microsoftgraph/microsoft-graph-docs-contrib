@@ -12,6 +12,14 @@
         },
         {
           "Id": "cb2aa45a-2a19-4385-b841-ce4a84b40f01",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSet](https://learn.microsoft.com/en-us/graph/api/resources/security-dataset?view=graph-rest-beta) resource type.",
+          "Target": "dataSet"
+        },
+        {
+          "Id": "cb2aa45a-2a19-4385-b841-ce4a84b40f01",
           "ApiChange": "Method",
           "ChangedApiName": "ediscoveryReviewSet",
           "ChangeType": "Addition",
@@ -34,6 +42,14 @@
           "ChangedApiName": "description",
           "ChangeType": "Addition",
           "Description": "Added the **description** property to the [ediscoveryReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-1.0) resource.",
+          "Target": "dataSet"
+        },
+        {
+          "Id": "cb2aa45a-2a19-4385-b841-ce4a84b40f01",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSet](https://learn.microsoft.com/en-us/graph/api/resources/security-dataset?view=graph-rest-1.0) resource type.",
           "Target": "dataSet"
         },
         {
