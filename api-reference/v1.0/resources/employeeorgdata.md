@@ -12,7 +12,7 @@ ms.date: 08/09/2024
 
 Namespace: microsoft.graph
 
-Represents organization data associated with a user. The **employeeOrgData** property of the [user](user.md) entity is a collection of organization attributes. When updating employeeOrgData, both property values need to be provided in the request body. If all property values are not provided, the properties that are not specified in the request will be set to null. 
+Represents organization data associated with a user. The **employeeOrgData** property of the [user](user.md) entity is a collection of organization attributes. Include both property values when updating **employeeOrgData**; if you omit any, the system sets them to `null`.
 
 ## Properties
 | Property       | Type    |Description|
