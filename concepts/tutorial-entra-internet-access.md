@@ -286,7 +286,6 @@ In this example, you use a PATCH request to add a destination to the rule create
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_entrainternetaccess_edit_filteringPolicy"
@@ -313,8 +312,6 @@ Content-type: application/json
   ]
 }
 ```
-
----
 
 #### Response
 <!-- {
