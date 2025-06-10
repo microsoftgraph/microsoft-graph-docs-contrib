@@ -34,6 +34,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Updated the throttling information for [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions). The limit per app per tenant changed from 200 requests per second to 30 requests per second. The limit per app across all tenants increased from 1,000 requests per second to 1,500 requests per second.
 
+## June 2025: New in preview only
+
+### Backup storage
+
+[Get](/graph/api/emailnotificationssetting-get) or [update](/graph/api/emailnotificationssetting-update) email notification settings in a tenant.
+
 ## May 2025: New and generally available
 
 ### Backup storage
