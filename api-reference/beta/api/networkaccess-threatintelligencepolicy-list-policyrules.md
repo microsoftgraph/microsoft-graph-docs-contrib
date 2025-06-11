@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [policyRule](../resources/policyrule.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [policyRule](../resources/networkaccess-policyrule.md) objects in the response body.
 
 ## Examples
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_policyrule"
+  "name": "list_threatintelligence_policyrule"
 }
 -->
 ``` http
