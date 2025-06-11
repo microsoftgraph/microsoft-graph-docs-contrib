@@ -36,7 +36,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 |:---|:---|:---|
 |description|String|A description of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 |id|String|The unique identifier for the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Inherits from [entity](../resources/entity.md)|
-|kind|String|The kind of policy. For threat intelligence policies, this will be a specific value denoting the threat intelligence type. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|kind|String|The kind of policy. For threat intelligence policies, this is a specific value denoting the threat intelligence type. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified.|
 |name|String|The display name of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 |settings|[microsoft.graph.networkaccess.threatIntelligencePolicySettings](../resources/networkaccess-threatintelligencepolicysettings.md)|Settings that define how the threat intelligence policy operates and evaluates threats.|

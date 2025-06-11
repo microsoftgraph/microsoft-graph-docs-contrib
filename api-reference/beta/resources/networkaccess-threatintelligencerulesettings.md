@@ -14,13 +14,13 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configurable settings that define how a threat intelligence rule operates. These settings control the operational status of the rule and how it's enforced.
+Configurable settings that define how a threat intelligence rule operates. These settings control the operational status of the rule and how the rule is enforced.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|status|microsoft.graph.networkaccess.securityRuleStatus|The operational status of the threat intelligence rule that determines how it's enforced. The possible values are: `enabled` (rule is active and enforced), `disabled` (rule is inactive), `reportOnly` (rule evaluates traffic but only reports matches without enforcing actions), `unknownFutureValue`.|
+|status|microsoft.graph.networkaccess.securityRuleStatus|The operational status of the threat intelligence rule that determines whether it is enforced. The possible values are: `enabled` (rule is active and enforced), `disabled` (rule is inactive), `reportOnly` (rule evaluates traffic but only logs without enforcing actions), `unknownFutureValue`.|
 
 ## Relationships
 None.

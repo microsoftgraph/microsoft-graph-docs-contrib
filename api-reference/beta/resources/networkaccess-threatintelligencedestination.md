@@ -14,8 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a destination that is associated with potential security threats. This is an abstract base type for specific destination types used in threat intelligence rules.
-This is an abstract type.
+Represents a destination that is associated with potential security threats. This resource type is an abstract base type for specific destination types used in threat intelligence rules.
+This resource type is an abstract type.
 
 
 ## Properties
