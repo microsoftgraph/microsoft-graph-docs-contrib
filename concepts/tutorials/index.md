@@ -14,7 +14,7 @@ Microsoft Graph tutorials are step-by-step training exercises that guide you thr
 
 In the delegated authentication tutorials, you create a basic command-line application that has the following features:
 
-- Enables user authentication to [get access on behalf of a user](auth-v2-user.md)
+- Enables user authentication to [get access on behalf of a user](../auth-v2-user.md)
 - Accesses the user's profile
 - Lists the user's mailbox
 - Sends an email from the user's mailbox
@@ -26,35 +26,35 @@ If you prefer to download a completed project, you can do so from one of the fol
 
 | Tutorial | GitHub repository |
 |----------|-------------------|
-| [.NET](tutorials/dotnet.md) | [microsoftgraph/msgraph-training-dotnet-core](https://github.com/microsoftgraph/msgraph-training-dotnet) |
-| [Go](tutorials/go.md) | [microsoftgraph/msgraph-training-go](https://github.com/microsoftgraph/msgraph-training-go) |
-| [Java](tutorials/java.md) | [microsoftgraph/msgraph-training-java](https://github.com/microsoftgraph/msgraph-training-java) |
-| [JavaScript](tutorials/javascript.md) | [microsoftgraph/msgraph-training-javascript](https://github.com/microsoftgraph/msgraph-training-javascript) |
-| [PHP](tutorials/php.md) | [microsoftgraph/msgraph-training-php](https://github.com/microsoftgraph/msgraph-training-php) |
-| [Power Automate](tutorials/power-automate.md) | [microsoftgraph/msgraph-training-powerautomate](https://github.com/microsoftgraph/msgraph-training-powerautomate) |
-| [PowerShell](tutorials/powershell.md) | [microsoftgraph/msgraph-training-powershell](https://github.com/microsoftgraph/msgraph-training-powershell) |
-| [Python](tutorials/python.md) | [microsoftgraph/msgraph-training-python](https://github.com/microsoftgraph/msgraph-training-python) |
-| [TypeScript](tutorials/typescript.md) | [microsoftgraph/msgraph-training-typescript](https://github.com/microsoftgraph/msgraph-training-typescript) |
+| [.NET](dotnet.md) | [microsoftgraph/msgraph-training-dotnet-core](https://github.com/microsoftgraph/msgraph-training-dotnet) |
+| [Go](go.md) | [microsoftgraph/msgraph-training-go](https://github.com/microsoftgraph/msgraph-training-go) |
+| [Java](java.md) | [microsoftgraph/msgraph-training-java](https://github.com/microsoftgraph/msgraph-training-java) |
+| [JavaScript](javascript.md) | [microsoftgraph/msgraph-training-javascript](https://github.com/microsoftgraph/msgraph-training-javascript) |
+| [PHP](php.md) | [microsoftgraph/msgraph-training-php](https://github.com/microsoftgraph/msgraph-training-php) |
+| [Power Automate](power-automate.md) | [microsoftgraph/msgraph-training-powerautomate](https://github.com/microsoftgraph/msgraph-training-powerautomate) |
+| [PowerShell](powershell.md) | [microsoftgraph/msgraph-training-powershell](https://github.com/microsoftgraph/msgraph-training-powershell) |
+| [Python](python.md) | [microsoftgraph/msgraph-training-python](https://github.com/microsoftgraph/msgraph-training-python) |
+| [TypeScript](typescript.md) | [microsoftgraph/msgraph-training-typescript](https://github.com/microsoftgraph/msgraph-training-typescript) |
 
 ## App-only authentication
 
 In the app-only authentication tutorials, you create a basic command-line application that has the following features:
 
-- Enables app-only authentication to [get access without a user](auth-v2-service.md)
+- Enables app-only authentication to [get access without a user](../auth-v2-service.md)
 - Lists users in Microsoft Entra ID
 
 If you prefer to download a completed project, you can do so from the project's corresponding GitHub repository. Instructions for registering an application and configuring the sample are located in each repository.
 
 | Tutorial | GitHub repository |
 |----------|-------------------|
-| [.NET](tutorials/dotnet-app-only.md) | [microsoftgraph/msgraph-training-dotnet-core](https://github.com/microsoftgraph/msgraph-training-dotnet/tree/main/app-auth) |
-| [Go](tutorials/go-app-only.md) | [microsoftgraph/msgraph-training-go](https://github.com/microsoftgraph/msgraph-training-go/tree/main/app-auth) |
-| [Java](tutorials/java-app-only.md) | [microsoftgraph/msgraph-training-java](https://github.com/microsoftgraph/msgraph-training-java/tree/main/app-auth) |
-| [JavaScript](tutorials/javascript-app-only.md) | [microsoftgraph/msgraph-training-javascript](https://github.com/microsoftgraph/msgraph-training-javascript/tree/main/app-auth) |
-| [PHP](tutorials/php-app-only.md) | [microsoftgraph/msgraph-training-php](https://github.com/microsoftgraph/msgraph-training-php/tree/main/app-auth) |
-| [PowerShell](tutorials/powershell-app-only.md) | [microsoftgraph/msgraph-training-powershell](https://github.com/microsoftgraph/msgraph-training-powershell/tree/main/app-auth) |
-| [Python](tutorials/python-app-only.md) | [microsoftgraph/msgraph-training-python](https://github.com/microsoftgraph/msgraph-training-python/tree/main/app-auth) |
-| [TypeScript](tutorials/typescript-app-only.md) | [microsoftgraph/msgraph-training-typescript](https://github.com/microsoftgraph/msgraph-training-typescript/tree/main/app-auth) |
+| [.NET](dotnet-app-only.md) | [microsoftgraph/msgraph-training-dotnet-core](https://github.com/microsoftgraph/msgraph-training-dotnet/tree/main/app-auth) |
+| [Go](go-app-only.md) | [microsoftgraph/msgraph-training-go](https://github.com/microsoftgraph/msgraph-training-go/tree/main/app-auth) |
+| [Java](java-app-only.md) | [microsoftgraph/msgraph-training-java](https://github.com/microsoftgraph/msgraph-training-java/tree/main/app-auth) |
+| [JavaScript](javascript-app-only.md) | [microsoftgraph/msgraph-training-javascript](https://github.com/microsoftgraph/msgraph-training-javascript/tree/main/app-auth) |
+| [PHP](php-app-only.md) | [microsoftgraph/msgraph-training-php](https://github.com/microsoftgraph/msgraph-training-php/tree/main/app-auth) |
+| [PowerShell](powershell-app-only.md) | [microsoftgraph/msgraph-training-powershell](https://github.com/microsoftgraph/msgraph-training-powershell/tree/main/app-auth) |
+| [Python](python-app-only.md) | [microsoftgraph/msgraph-training-python](https://github.com/microsoftgraph/msgraph-training-python/tree/main/app-auth) |
+| [TypeScript](typescript-app-only.md) | [microsoftgraph/msgraph-training-typescript](https://github.com/microsoftgraph/msgraph-training-typescript/tree/main/app-auth) |
 
 ## Next steps
 

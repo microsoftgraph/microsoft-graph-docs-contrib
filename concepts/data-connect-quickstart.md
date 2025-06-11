@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 
 # Build your first Microsoft Graph Data Connect application
 
+<!-- cSpell:ignore rimisra mgdc mgdcdemoap mgdcdemoapp tostorage synapsedatalstorage flsynapse mgdcm influencers -->
+
 Microsoft Graph Data Connect (Data Connect) augments transactional APIs with an intelligent way to access rich data at scale. Data Connect is ideal for big data applications and machine learning as it allows you to develop applications for analytics, intelligence, and business process optimization by extending Microsoft 365 data into Microsoft Azure. Through this offering, you'll be able to take advantage of the vast suite of compute and storage in Azure while staying compliant with industry standards and keeping your data secure.
 
 ![An architectural diagram of Microsoft Graph Data Connect, showing defined data controls, extending Office 365 data into Azure, and enabling big data and machine learning.](../concepts/images/data-connect-mgdc-capabilities.PNG)
@@ -389,11 +391,11 @@ Now that you've created the pipeline, it's time to run it.
 
 1. After starting the job, from the sidebar menu, select **Monitor** to view the current running jobs.
 
-1. On the left pane, select the **Pipeline runs** tab. In the **Pipeline name** column, select the pipeline to view the **Activity runs**. This pipeline will show as _In Progress_.
+1. On the left pane, select the **Pipeline runs** tab. In the **Pipeline name** column, select the pipeline to view the **Activity runs**. This pipeline will show as *In Progress*.
 
     ![A screenshot of the Pipeline runs page with Pipeline runs highlighted.](../concepts/images/data-connect-synapse-pipeline-runs.png)
 
-1. After you're in the **Activity runs** view, go to the _Activity runs_ section on the bottom side of the page.
+1. After you're in the **Activity runs** view, go to the *Activity runs* section on the bottom side of the page.
 
 1. Hover over the **Activity name** and select the goggles option. This will open the **Details** tab.
 
@@ -483,7 +485,7 @@ Now that you've created the pipeline, it's time to run it.
         - **Column name**: CreatedDateTime
         - **Start time (UTC)**: Select a date sometime prior to the current date.
         - **End time (UTC)**: Select the current date.
-        - Select **Import schema** in the _Output columns_ section.
+        - Select **Import schema** in the *Output columns* section.
 
     1. Select the **Sink** tab.
 
@@ -530,11 +532,11 @@ With the pipeline created, now it is time to run it.
 
 1. After starting the job, from the sidebar menu, select **Monitor** to view current running jobs.
 
-1. On the left-side navigation bar, locate the **Pipeline runs** tab and select it. Select the pipeline under the **Pipeline name** column to view the **Activity runs**. This pipeline will show as _In progress_.
+1. On the left-side navigation bar, locate the **Pipeline runs** tab and select it. Select the pipeline under the **Pipeline name** column to view the **Activity runs**. This pipeline will show as *In progress*.
 
     ![A screenshot of the Azure portal Pipeline runs page with pipeline1 highlighted.](../concepts/images/data-connect-adf-pipeline-runs.png)
 
-1. After you're in the **Activity runs** view, go to the _Activity runs_ section that is located in the bottom side of the page.
+1. After you're in the **Activity runs** view, go to the *Activity runs* section that is located in the bottom side of the page.
 
 1. Hover over the **Activity name** and select the goggles option. This will bring up the **Details** tab.
 
