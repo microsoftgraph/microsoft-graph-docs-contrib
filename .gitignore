@@ -11,6 +11,3 @@ apidoc.exe
 
 # Unotes related files
 .unotes/
-
-# docstubs for TI
-tidocstubs/
