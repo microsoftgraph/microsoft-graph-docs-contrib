@@ -1,10 +1,10 @@
 ---
 title: "bookablePlaceMode resource type"
-description: "**TODO: Add Description**"
-author: "MSGraphDocsvTeam"
+description: "This mode indicates whether a desk or workspace is allowed to be booked in advance."
+author: "vrod9429"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: 
 doc_type: resourcePageType
 ---
 
@@ -14,17 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+This mode indicates whether a desk or workspace is allowed to be booked in advance.
 
 Inherits from [placeMode](../resources/placemode.md).
 
-
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+None.
 
 ## Relationships
+
 None.
 
 ## JSON representation
@@ -36,7 +35,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.bookablePlaceMode"
+  "@odata.type": "#microsoft.graph.bookablePlaceMode "
 }
 ```
 

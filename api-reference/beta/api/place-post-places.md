@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new place object.
+Create a new place object, which can be a [desk](../resources/desk.md), [workspace](../resources/workspace.md), [room](../resources/room.md), [section](../resources/section.md), [floor](../resources/floor.md), or [building](../resources/building.md).
 
 ## Permissions
 
@@ -41,30 +41,14 @@ POST /places
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
+|Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
+|Content-Type |application/json. Required. |
 
 ## Request body
 
 In the request body, supply a JSON representation of the [place](../resources/place.md) object.
 
-You can specify the following properties when creating a **place**.
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|**TODO: Add Description** Required.|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Optional.|
-|phone|String|**TODO: Add Description** Optional.|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Optional.|
-|placeId|String|**TODO: Add Description** Optional.|
-|parentId|String|**TODO: Add Description** Optional.|
-|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Required.|
-|tags|String collection|**TODO: Add Description** Required.|
-|isWheelChairAccessible|Boolean|**TODO: Add Description** Required.|
-|label|String|**TODO: Add Description** Optional.|
-
-
+Go to [the place resource page](../resources/place.md) for a list of all properties that are available when creating a **place**.
 
 ## Response
 
@@ -85,30 +69,15 @@ POST https://graph.microsoft.com/beta/places
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.place",
-  "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "placeId": "String",
-  "parentId": "String",
-  "resourceLinks": [
-    {
-      "@odata.type": "microsoft.graph.resourceLink"
-    }
-  ],
-  "tags": [
-    "String"
-  ],
-  "isWheelChairAccessible": "Boolean",
-  "label": "String"
+  "@odata.type": "microsoft.graph.desk",
+  "displayName": "D1",
+  "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
+  "mode": {
+    "@odata.type": "microsoft.graph.assignedPlaceMode",
+    "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
+  }
 }
 ```
-
 
 ### Response
 
@@ -122,31 +91,17 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 201 Created
-Content-Type: application/json
-
 {
-  "@odata.type": "#microsoft.graph.place",
-  "id": "7d752e23-0fb5-7333-be1b-a1ae3d19ac4b",
-  "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "placeId": "String",
-  "parentId": "String",
-  "resourceLinks": [
-    {
-      "@odata.type": "microsoft.graph.resourceLink"
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaheads_test_placescrud/$metadata#places/$entity",
+    "@odata.type": "#microsoft.graph.desk",
+    "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
+    "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
+    "displayName": "D1",
+    "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
+    "mode": {
+      "@odata.type": "microsoft.graph.assignedPlaceMode",
+      "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
     }
-  ],
-  "tags": [
-    "String"
-  ],
-  "isWheelChairAccessible": "Boolean",
-  "label": "String"
 }
 ```
 

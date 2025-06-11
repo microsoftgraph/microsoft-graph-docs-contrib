@@ -1,10 +1,10 @@
 ---
 title: "offlinePlaceMode resource type"
-description: "**TODO: Add Description**"
-author: "MSGraphDocsvTeam"
+description: "Describes why a desk has been marked as offline and unavailable for booking."
+author: "vrod9429"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: 
 doc_type: resourcePageType
 ---
 
@@ -14,16 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Describes why a desk has been marked as offline and unavailable for booking. This mode is only supported for [desks](./desk.md).
 
 Inherits from [placeMode](../resources/placemode.md).
-
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|reason|String|**TODO: Add Description**|
+|reason|String|Reason for marking a **place** offline.|
 
 ## Relationships
 None.
@@ -38,7 +36,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.offlinePlaceMode",
-  "reason": "String"
+  "reason": "scheduled maintenance",
 }
 ```
 
