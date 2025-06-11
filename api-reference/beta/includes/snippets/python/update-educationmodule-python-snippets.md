@@ -11,6 +11,9 @@ from msgraph_beta.generated.models.education_module import EducationModule
 request_body = EducationModule(
 	display_name = "New_Module5 updated",
 	description = "updated for description",
+	additional_data = {
+			"language_tag" : "en-GB",
+	}
 )
 
 result = await graph_client.education.classes.by_education_class_id('educationClass-id').modules.by_education_module_id('educationModule-id').patch(request_body)

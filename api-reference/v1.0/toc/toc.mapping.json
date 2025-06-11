@@ -120,6 +120,7 @@
         "protectionRuleBase",
         "protectionUnitBase",
         "restoreArtifactBase",
+        "restoreArtifactsBulkRequestBase",
         "restorePoint",
         "restoreSessionBase",
         "serviceApp"
@@ -150,12 +151,28 @@
           ]
         },
         {
+          "name": "Protection units bulk job",
+          "resources": [
+            "driveProtectionUnitsBulkAdditionJob",
+            "mailboxProtectionUnitsBulkAdditionJob",
+            "siteProtectionUnitsBulkAdditionJob"
+          ]
+        },
+        {
           "name": "Restore artifact",
           "resources": [
             "granularMailBoxRestoreArtifact",
             "driveRestoreArtifact",
             "mailboxRestoreArtifact",
             "siteRestoreArtifact"
+          ]
+        },
+        {
+          "name": "Restore artifacts bulk request",
+          "resources": [
+            "driveRestoreArtifactsBulkAdditionRequest",
+            "mailboxRestoreArtifactsBulkAdditionRequest",
+            "siteRestoreArtifactsBulkAdditionRequest"
           ]
         },
         {
@@ -995,7 +1012,7 @@
               ]
             },
             {
-              "name": "Authentication methods policy",
+              "name": "Authentication methods policies",
               "overview": "../../resources/authenticationmethodspolicies-overview.md",
               "resources": [
                 "authenticationMethodsPolicy",
@@ -1762,6 +1779,22 @@
       ],
       "childNodes": [
         {
+          "name": "AI interactions",
+          "resources": [
+            "aiInteractionHistory"
+          ],
+          "complexTypes": [
+            "aiInteraction",
+            "aiInteractionAttachment",
+            "aiInteractionContext",
+            "aiInteractionLink",
+            "aiInteractionMention",
+            "aiInteractionMentionedIdentitySet",
+            "aiUser",
+            "copilotRoot"
+          ]
+        },
+        {
           "name": "Apps",
           "resources": [
             "teamsApp",
@@ -1801,6 +1834,17 @@
               ],
               "complexTypes": [
                 "microsoft.graph.callRecords.networkInfo"
+              ]
+            },
+            {
+              "name": "Copilot settings",
+              "resources": [
+                "copilotAdminLimitedMode"
+              ],
+              "complexTypes": [
+                "copilotAdmin",
+                "copilotAdminSetting",
+                "copilotRoot"
               ]
             },
             {

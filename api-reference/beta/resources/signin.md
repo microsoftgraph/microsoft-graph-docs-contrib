@@ -29,8 +29,11 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |[Confirm safe](../api/signin-confirmsafe.md)|None|mark an event in Microsoft Entra sign-in logs as safe.|
 
 ## Properties
+
+<!-- markdownlint-disable MD033 -->
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
+|agent|[microsoft.graph.agentic.agentSignIn](agentic-agentsignin.md)|Represents details about the agentic sign-in. Includes the type of agent as well as parentAppID in some cases|
 |appDisplayName|String|The application name displayed in the Microsoft Entra admin center. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |appId|String|The application identifier in Microsoft Entra ID. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that the corresponding sign-in activity triggers. Apps need more Conditional Access-related privileges to read the details of this property. For more information, see [Permissions for viewing applied conditional access (CA) policies in sign-ins](../api/signin-list.md#permissions).|
@@ -98,18 +101,18 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |status|[signInStatus](signinstatus.md)|The sign-in status. Includes the error code and description of the error (for a sign-in failure). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
 |tokenIssuerName|String|The name of the identity provider. For example, `sts.microsoft.com`. <br/><br/> Supports `$filter` (`eq`).|
 |tokenIssuerType|tokenIssuerType|The type of identity provider. The possible values are: `AzureAD`, `ADFederationServices`, `UnknownFutureValue`, `AzureADBackupAuth`, `ADFederationServicesMFAAdapter`, `NPSExtension`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `AzureADBackupAuth` , `ADFederationServicesMFAAdapter` , `NPSExtension`.|
-|uniqueTokenIdentifier|String|A unique base64 encoded request identifier used to track tokens issued by Microsoft Entra ID as they're redeemed at resource providers. |
+|uniqueTokenIdentifier|String|A unique base64-encoded request identifier used to track tokens issued by Microsoft Entra ID as they're redeemed at resource providers.|
 |userAgent|String|The user agent information related to sign-in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userDisplayName|String|The display name of the user. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userId|String|The identifier of the user. <br/><br/> Supports `$filter` (`eq`).|
 |userPrincipalName|String|User principal name of the user that initiated the sign-in. This value is always in lowercase. For guest users whose values in the user object typically contain `#EXT#` before the domain part, this property stores the value in both lowercase and the "true" format. For example, while the user object stores `AdeleVance_fabrikam.com#EXT#@contoso.com`, the sign-in logs store `adelevance@fabrikam.com`.<br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userType|signInUserType|Identifies whether the user is a member or guest in the tenant. Possible values are: `member`, `guest`, `unknownFutureValue`.|
 |mfaDetail (deprecated)|[mfaDetail](../resources/mfadetail.md)|This property is deprecated.|
-
+<!-- markdownlint-enable MD033 -->
 
 ## Relationships
-None
 
+None
 
 ## JSON representation
 
@@ -124,6 +127,9 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.signIn",
+  "agent": {
+    "@odata.type": "microsoft.graph.agentic.agentSignIn"
+  },
   "appDisplayName": "String",
   "appId": "String",
   "authenticationContextClassReferences": [{"@odata.type": "microsoft.graph.authenticationContext"}],
@@ -238,6 +244,10 @@ The following JSON representation shows the resource type.
   "userType": "String"
 }
 ```
+
+## Related content
+
+-  [Linkable identifiers in Microsoft Entra](/entra/identity/authentication/how-to-authentication-track-linkable-identifiers).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

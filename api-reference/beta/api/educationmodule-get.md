@@ -116,6 +116,7 @@ Content-type: application/json
     "status": "draft",
     "createdDateTime": "2023-07-24T22:02:06.8286097Z",
     "lastModifiedDateTime": "2023-07-24T22:02:44.2906308Z",
+    "languageTag": null,
     "id": "72a3879f-af73-4179-8a0e-4cb29c0fa369",
     "createdBy": {
         "application": null,

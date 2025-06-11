@@ -115,6 +115,10 @@ HTTP/1.1 200 OK
 {
     "@odata.type": "https://graph.microsoft.com/beta/$metadata#cloudPcPolicyScheduledApplyActionDetail",
     "reservePercentage": 50,
-    "cronScheduleExpression": "0 0 0 20 * *"
+    "cronScheduleExpression": "0 0 0 20 * *",
+    "nextRunDateTime": "2025-03-20 08:00:00",
+    "startDateTime": "2025-03-12 00:00:00",
+    "endDateTime": null,
+    "timezone": "cst"
 }
 ```

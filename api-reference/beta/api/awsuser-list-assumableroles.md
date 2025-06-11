@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get the [assumableRole](../resources/awsrole.md) objects for an [awsUser](../resources/awsuser.md).
 
 ## Permissions
@@ -113,4 +115,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 

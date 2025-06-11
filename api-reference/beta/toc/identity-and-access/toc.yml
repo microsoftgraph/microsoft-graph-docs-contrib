@@ -655,13 +655,13 @@ items:
           href: ../../api/unifiedrbacresourcenamespace-list-resourceactions.md
         - name: Get
           href: ../../api/unifiedrbacresourceaction-get.md
-    - name: Custom app scope
+    - name: Custom app scope for RBAC providers
       items:
-      - name: Custom app scope
+      - name: Custom app scope for RBAC providers
         href: ../../resources/customappscope.md
-      - name: List
+      - name: List for Exchange Online
         href: ../../api/unifiedrbacapplication-list-customappscopes.md
-      - name: Create
+      - name: Create for Exchange Online
         href: ../../api/unifiedrbacapplication-post-customappscope.md
       - name: Get
         href: ../../api/customappscope-get.md
@@ -2234,39 +2234,41 @@ items:
       - name: Delete
         href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
     - name: QR code authentication
-      displayName: QRCodePin
       items:
       - name: QR code authentication
-        href: ../../resources/qrcodepinauthenticationmethod.md
-      - name: Get
-        href: ../../api/qrcodepinauthenticationmethod-get.md
-      - name: Create
-        href: ../../api/authentication-put-qrcodepinmethod.md
-      - name: Delete
-        href: ../../api/authentication-delete-qrcodepinmethod.md
-    - name: QR Code
-      displayName: QRCodePin, QRCode
-      items:
+        displayName: QRCodePin
+        items:
+        - name: QR code authentication
+          href: ../../resources/qrcodepinauthenticationmethod.md
+        - name: Get
+          href: ../../api/qrcodepinauthenticationmethod-get.md
+        - name: Create
+          href: ../../api/authentication-put-qrcodepinmethod.md
+        - name: Delete
+          href: ../../api/authentication-delete-qrcodepinmethod.md
       - name: QR Code
-        href: ../../resources/qrcode.md
-      - name: Create or update
-        href: ../../api/qrcode-update.md
-      - name: Get
-        href: ../../api/qrcode-get.md
-      - name: Update
-        href: ../../api/qrcode-update.md
-      - name: Delete
-        href: ../../api/qrcode-delete.md
-    - name: PIN
-      displayName: QRCodePin, QRCode
-      items:
+        displayName: QRCodePin, QRCode
+        items:
+        - name: QR Code
+          href: ../../resources/qrcode.md
+        - name: Create or update
+          href: ../../api/qrcode-update.md
+        - name: Get
+          href: ../../api/qrcode-get.md
+        - name: Update
+          href: ../../api/qrcode-update.md
+        - name: Delete
+          href: ../../api/qrcode-delete.md
       - name: PIN
-        href: ../../resources/qrpin.md
-      - name: Reset PIN
-        href: ../../api/qrpin-update.md
-      - name: Update PIN
-        href: ../../api/qrpin-updatepin.md
-  - name: Authentication methods policy
+        displayName: QRCodePin, QRCode
+        items:
+        - name: PIN
+          href: ../../resources/qrpin.md
+        - name: Reset PIN
+          href: ../../api/qrpin-update.md
+        - name: Update PIN
+          href: ../../api/qrpin-updatepin.md
+  - name: Authentication methods policies
     items:
     - name: Overview
       href: ../../resources/authenticationmethodspolicies-overview.md
@@ -2344,10 +2346,9 @@ items:
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-    - name: QR Code and PIN
-      displayName: QRCodePin
+    - name: QR Code authentication
       items:
-      - name: QR Code and PIN
+      - name: QR Code authentication
         href: ../../resources/qrcodepinauthenticationmethodconfiguration.md
       - name: Get
         href: ../../api/qrcodepinauthenticationmethodconfiguration-get.md
@@ -2355,8 +2356,6 @@ items:
         href: ../../api/qrcodepinauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/qrcodepinauthenticationmethodconfiguration-delete.md
-    - name: QR code authentication
-      items: []
     - name: SMS
       items:
       - name: SMS
@@ -2754,6 +2753,8 @@ items:
         href: ../../api/riskyusers-get.md
       - name: Confirm compromised
         href: ../../api/riskyusers-confirmcompromised.md
+      - name: Confirm safe
+        href: ../../api/riskyuser-confirmsafe.md
       - name: Dismiss
         href: ../../api/riskyusers-dismiss.md
       - name: List history
@@ -3436,7 +3437,7 @@ items:
         href: ../../api/identityuserflow-get.md
       - name: Delete
         href: ../../api/identityuserflow-delete.md
-- name: Multicloud permissions management (preview)
+- name: Multicloud permissions management (deprecated)
   items:
   - name: Overview
     href: ../../resources/permissions-management-api-overview.md
