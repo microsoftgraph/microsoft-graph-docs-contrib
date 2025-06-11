@@ -1,6 +1,6 @@
 ---
 title: "floor resource type"
-description: "**TODO: Add Description**"
+description: "Represents a floor within a building."
 author: "MSGraphDocsvTeam"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,36 +14,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a floor within a [building](./building.md). A floor must always be parented to a building.
 
 Inherits from [place](../resources/place.md).
-
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/floor-list.md)|[floor](../resources/floor.md) collection|Get a list of the floor objects and their properties.|
-|[Get](../api/floor-get.md)|[floor](../resources/floor.md)|Read the properties and relationships of a floor object.|
-|[Update](../api/floor-update.md)|[floor](../resources/floor.md)|Update the properties of a floor object.|
-|[Delete](../api/floor-delete.md)|None|Delete a floor object.|
-|[descendants](../api/floor-descendants.md)|[place](../resources/place.md) collection|**TODO: Add Description**|
+|[List](../api/floor-list.md)|A list of **floor** objects |Get a list of **floor** objects and their properties.|
+|[Get](../api/floor-get.md)|The requested **floor** |Get the properties and relationships of a specified **floor**.|
+|[Update](../api/floor-update.md)|The requested **floor** |Update the properties and relationships of a specified **floor**. |
+|[Delete](../api/floor-delete.md)|None|Delete the **floor** with the specified id.|
+|[descendants](../api/floor-descendants.md)|List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, sections, rooms, desks, or workspaces) under a given **floor**.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|label|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|sortOrder|Int32|**TODO: Add Description**|
-|tags|String collection|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+
+The **floor** type supports all [base properties of a **place** object](./place.md#base-properties), as well as the following properties:
+
+|Property |Type |Description |
+|:--|:--|:--|
+|SortOrder |Integer |Specifies the sort order of the floor. For example, a floor might be named "Lobby" with a sort order of 0 to show this floor first in ordered lists. |
 
 ## Relationships
 None.

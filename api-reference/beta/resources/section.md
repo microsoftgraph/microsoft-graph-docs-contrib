@@ -1,6 +1,6 @@
 ---
 title: "section resource type"
-description: "**TODO: Add Description**"
+description: "Represents a section within a floor."
 author: "MSGraphDocsvTeam"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a section within a [floor](./floor.md). A section must always be parented to a floor.
 
 Inherits from [place](../resources/place.md).
 
@@ -23,11 +22,11 @@ Inherits from [place](../resources/place.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/section-list.md)|[section](../resources/section.md) collection|Get a list of the section objects and their properties.|
-|[Get](../api/section-get.md)|[section](../resources/section.md)|Read the properties and relationships of a section object.|
-|[Update](../api/section-update.md)|[section](../resources/section.md)|Update the properties of a section object.|
-|[Delete](../api/section-delete.md)|None|Delete a section object.|
-|[descendants](../api/section-descendants.md)|[place](../resources/place.md) collection|**TODO: Add Description**|
+|[List](../api/section-list.md)|A list of **section** objects |Get a list of **section** objects and their properties.|
+|[Get](../api/section-get.md)|The requested **section** |Get the properties and relationships of a specified **section**.|
+|[Update](../api/section-update.md)|The requested **section** |Update the properties and relationships of a specified **section**. |
+|[Delete](../api/section-delete.md)|None|None|Delete the **section** with the specified id.|
+|[descendants](../api/section-descendants.md)|List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, rooms, desks, or workspaces) under a given **section**.|
 
 ## Properties
 |Property|Type|Description|

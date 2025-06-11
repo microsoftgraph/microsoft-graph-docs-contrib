@@ -1,6 +1,6 @@
 ---
 title: "building resource type"
-description: "**TODO: Add Description**"
+description: "Represents a building within the tenant."
 author: "MSGraphDocsvTeam"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,36 +14,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a building withing the tenant.
 
 Inherits from [place](../resources/place.md).
-
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/building-list.md)|[building](../resources/building.md) collection|Get a list of the building objects and their properties.|
-|[Get](../api/building-get.md)|[building](../resources/building.md)|Read the properties and relationships of a building object.|
-|[Update](../api/building-update.md)|[building](../resources/building.md)|Update the properties of a building object.|
-|[Delete](../api/building-delete.md)|None|Delete a building object.|
-|[descendants](../api/building-descendants.md)|[place](../resources/place.md) collection|**TODO: Add Description**|
+|[List](../api/building-list.md)|A list of **building** objects |Get a list of **building** objects and their properties.|
+|[Get](../api/building-get.md)|The requested **building** |Get the properties and relationships of a specified **building** object.|
+|[Update](../api/building-update.md)|The requested **building** |Update the properties and relationships of a specified **place** object. |
+|[Delete](../api/building-delete.md)|None|Delete a **building** with the specified id.|
+|[descendants](../api/building-descendants.md)|List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, floors, sections, rooms, desks, or workspaces) under a given **building**.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|hasWiFi|Boolean|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|label|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|tags|String collection|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+
+The **building** type supports all [base properties of a **place** object](./place.md#base-properties), as well as the following properties:
+
+|Property |Type |Description |
+|:--|:--|:--|
+|hasWiFi |Boolean |Whether or not the building has WiFi. |
 
 ## Relationships
 None.

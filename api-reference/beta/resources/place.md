@@ -18,29 +18,27 @@ A **place** object represents different space types within a tenant. A place obj
 
 |Place Type	|Details |
 |:--|:--|
-|[building](./building.md) | Represents a tenant building and has properties such as name, address, geographic coordinates, and so on. |
+|[building](./building.md) | Represents a building within the tenant and has properties such as name, address, geographic coordinates, and so on. |
 |[floor](./floor.md) |Represents a floor within a building, including properties such as name, parentID, SortOrder, and so on. A floor must always be parented to a building. |
 |[section](./section.md) |Represents a section within a floor, including properties such as name, parentID, label, and so on. A section must always be parented to a floor. |
 |[room](./room.md) |Represents a room within the tenant. All the rooms in Places must be associated with Exchange mailboxes. A room can be added to a floor or to a section. The rich properties of the room include an email address for the room, accessibility, capacity, audio device, video device, and so on. |
 |[workspace](./workspace.md) |Represents a collection of desks. All the workspaces in Places must be associated with Exchange mailboxes. A workspace can be added to a floor or a section. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
 |[desk](./desk.md) |Represents individual desks. A desk must be added to a section. The rich properties for the section include email address, mode, and accessibility. |
-|roomList |A collection of rooms in the tenant. Places supports **Roomlist** to ensure room booking works in RoomFinder across all clients on all devices, such as classic Outlook across desktop and mobile.
-
-However, we recommend that you rely on the new **place** types and hierarchy if you do not use **Roomfinder** in the tenant. More details on **Roomlist** can be found at [roomList resource type](../../v1.0/resources/roomlist.md). |
+|roomList |A collection of rooms in the tenant. Places supports **roomList** to ensure room booking works in RoomFinder across all clients on all devices, such as classic Outlook across desktop and mobile. <br/><br/>However, we recommend that you rely on the new **place** types and hierarchy if you do not use **Roomfinder** in the tenant. More details on **roomList** can be found at [roomList resource type](../../v1.0/resources/roomlist.md). |
 
 ## Using the Places API
 
-The **Places** API can be used by applications that have the right read or write permissions on a **places** object. All the **places** objects have basic properties such as ID, placeID, and display name. While the more advanced spaces such as rooms, workspaces, and desks support properties such as mode, email address, and device information.
+The Places API can be used by applications that have the right read or write permissions on a **places** object. All the **places** objects have basic properties such as ID, placeID, and display name. While the more advanced spaces such as rooms, workspaces, and desks support properties such as mode, email address, and device information.
 
 ## Methods
 |Method |Return |Type |Description |
 |:--|:--|:--|:--|
-|[Create place](../api/place-post-places.md) |Created Place |Create a new **place**. | 
-|[Get place](../api/place-get.md) |The requested, derived type of **place** |Get the properties and relationships of a specified **place** object.|
-[List Place](../api/place-list.md) |A list of **place** objects |Get the properties and relationships of multiple **place** objects. |
-[Update place](../api/place-update.md) |The requested, derived type of **place** |Update the properties and relationships of a specified **place** object. |
-|[Delete Place](../api/place-delete.md) | |Delete a **place** of any kind using the id of the **place**. |
-|[descendants](../api/place-descendants.md) |List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, floor, section, rooms, desks, or workspaces) under a given **place**. | 
+|[Create](../api/place-post-places.md) |Created **place** |Create a new **place**. | 
+|[Get](../api/place-get.md) |The requested, derived type of **place** |Get the properties and relationships of a specified **place** object.|
+|[List](../api/place-list.md) |A list of **place** objects |Get the properties and relationships of multiple **place** objects. |
+|[Update](../api/place-update.md) |The requested, derived type of **place** |Update the properties and relationships of a specified **place** object. |
+|[Delete](../api/place-delete.md) |None |Delete a **place** with the specified id. |
+|[descendants](../api/place-descendants.md) |List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, floors, sections, rooms, desks, or workspaces) under a given **place**. | 
 
 The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions support similar lookups for rooms and room lists in a tenant. The following table compares the places API and these functions.
 
@@ -75,79 +73,6 @@ The base properties are inherited by all **place** types.
 |[geoCoordinates](../../v1.0/resources/geocoordinates.md) |outlookGeoCoordinates |Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates. |
 |phone |String |The phone number of the place.|
 |parentId |String |ID of a parent **place**. |
-
-### Building properties 
-The **building** type supports all [base properties](#base-properties), as well as the following properties:
-
-|Property |Type |Description |
-|:--|:--|:--|
-|hasWiFi |Boolean |Whether or not the building has WiFi. |
-
-### Floor properties 
-
-The **floor** type supports all [base properties](#base-properties), as well as the following properties:
-
-|Property |Type |Description |
-|:--|:--|:--|
-|SortOrder |Integer |Specifies the sort order of the floor. For example, a floor might be named "Lobby" with a sort order of 0 to show this floor first in ordered lists. |
-
-### Room properties:
-
-The **room** type supports all [base properties](#base-properties), as well as the following properties:
-
-|Property |Type |Description |
-|:--|:--|:--|
-|capacity |Integer |The maximum number of people in the **room** can accommodate. |
-|audioDeviceName |String |The name of the audio device that is available in the room. |
-|videoDeviceName |String |The name of the video device that is available in the room. |
-|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the room.
-|isTeamsEnabled |Boolean |Whether or not the room is configured with the Microsoft Teams Room system. |
-|emailAddress |String |The email address associated with the room. This email address is used for booking. |
-|nickname |String |A short, friendly name for the **place**, often used for easier identification or display in UI. |
-|building |String |The name or identifier of the building where the **place** (such as a room or a desk) is located. |
-|floorNumber |Integer |The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. |
-|floorLabel |String |A human-readable label for the floor, such as "Ground Floor". |
-|label |String |A custom identifier or tag for the **place**, often used to distinguish it within a floor or section. |
-|bookingType |Enum |Specifies how the place can be booked. Possible values are:
-<ul><li>standard - Available for general booking</li>
-<li>reserved – Reserved for specific users or purposes</li>
-<li>unknown – Default or unspecified booking behavior</li>
-</ul> |
-
-### Workspace properties
-
-The **workspace** type supports all [base properties](#base-properties), as well as the following properties:
-
-|Property |Type |Description |
-|:--|:--|:--|
-|capacity |Integer |The maximum number of individual desks within a workspace. |
-|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the workspace. |
-|mode |placeMode |The mode for a workspace. We support 3 modes:
-<ul><li>bookable - Workspaces that can be booked in advance using desk pool reservation tools</li>
-<li>walkup - First come, first serve workspaces. As soon as you plug in to a peripheral on one of the desks in the workspace, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
-<li>Offline - Workspaces that are taken down for maintenance or marked as not bookable</li></ul> |
-|emailAddress |String |The email address that is associated with the workspace. This email address is used for booking. |
-|Nickname |String |A short, friendly name for the **place**, often used for easier identification or display in the UI. |
-|Building |String |The name or identifier of the building where the **place** (such as a room or a desk) is located. |
-|floorNumber |Integer |The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. |
-|floorLabel |String |A human-readable label for the floor, such as "Ground Floor". |
-|Label |String |A custom identifier or tag for the **place**, often used to distinguish it within a floor or section. |
-
-### Desk properties
-
-The **desk** type supports all [base properties](#base-properties), as well as the following properties:
-
-|Property |Type |Description |
-|:--|:--|:--|
-|mailboxDetails |mailboxDetails |The mailbox object-ids and email address that are associated with the desk. |
-|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available at the desk. |
-|Mode |Dictionary |The mode of the desk. We support 4 modes:
-<ul><li>assigned - Desks that are assigned to a user</li>
-<li>bookable - Desks that can be booked in advance using desk reservation tools</li>
-<li>walkup - First come, first serve desks. When you plug in to a peripheral on one of these desks, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
-<li>offline - Desk that are taken down for maintenance or marked as not bookable.</li></ul> |
-
-
 
 ## Relationships
 None.

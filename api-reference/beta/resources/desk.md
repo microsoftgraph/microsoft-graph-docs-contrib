@@ -1,6 +1,6 @@
 ---
 title: "desk resource type"
-description: "**TODO: Add Description**"
+description: "Represents individual desks."
 author: "MSGraphDocsvTeam"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,38 +14,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents individual desks. A desk must be added to a [section](./section.md).
 
 Inherits from [place](../resources/place.md).
-
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/desk-list.md)|[desk](../resources/desk.md) collection|Get a list of the desk objects and their properties.|
-|[Get](../api/desk-get.md)|[desk](../resources/desk.md)|Read the properties and relationships of a desk object.|
-|[Update](../api/desk-update.md)|[desk](../resources/desk.md)|Update the properties of a desk object.|
-|[Delete](../api/desk-delete.md)|None|Delete a desk object.|
-|[descendants](../api/desk-descendants.md)|[place](../resources/place.md) collection|**TODO: Add Description**|
+|[List](../api/section-list.md)|A list of **desk** objects |Get a list of **desk** objects and their properties.|
+|[Get](../api/section-get.md)|The requested **desk** |Get the properties and relationships of a specified **desk**.|
+|[Update](../api/section-update.md)|The requested **desk** |Update the properties and relationships of a specified **desk**. |
+|[Delete](../api/section-delete.md)|None|None|Delete the **desk** with the specified id.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|displayDeviceName|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|label|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|mailboxDetails|[mailboxDetails](../resources/mailboxdetails.md)|**TODO: Add Description**|
-|mode|[placeMode](../resources/placemode.md)|**TODO: Add Description**|
-|parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|tags|String collection|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+
+The **desk** type supports all [base properties of a **place** object](./place.md#base-properties), as well as the following properties:
+
+|Property |Type |Description |
+|:--|:--|:--|
+|mailboxDetails |mailboxDetails |The mailbox object-ids and email address that are associated with the desk. |
+|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available at the desk. |
+|Mode |Dictionary |The mode of the desk. We support 4 modes: <br/><br/>
+<ul><li>assigned - Desks that are assigned to a user</li>
+<li>bookable - Desks that can be booked in advance using desk reservation tools</li>
+<li>walkup - First come, first serve desks. When you plug in to a peripheral on one of these desks, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
+<li>offline - Desk that are taken down for maintenance or marked as not bookable.</li></ul> |
 
 ## Relationships
 None.
