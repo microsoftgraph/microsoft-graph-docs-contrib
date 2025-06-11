@@ -1,10 +1,10 @@
 ---
 title: "placeMode resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Abstract base type for modes for desks and workspaces."
+author: "vrod9429"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice:
 doc_type: resourcePageType
 ---
 
@@ -14,15 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type.
+This is an abstract base type for **modes** for [desks](./desk.md) and [workspaces](./workspace.md).
 
+This is the base type of [bookablePlaceMode](./bookableplacemode.md), [dropInUpPlaceMode](./dropinplacemode.md), [assignedPlaceMode](./assignedplacemode.md), and [offlinePlaceMode](./offlineplacemode.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+None.
 
 ## Relationships
+
 None.
 
 ## JSON representation
@@ -34,7 +35,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.placeMode"
+  "@odata.type": "#microsoft.graph.placeMode "
 }
 ```
 

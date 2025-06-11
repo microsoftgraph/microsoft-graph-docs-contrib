@@ -1,10 +1,10 @@
 ---
 title: "assignedPlaceMode resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Defines the user to whom a desk is assigned."
+author: "vrod9429"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: 
 doc_type: resourcePageType
 ---
 
@@ -14,17 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Defines the user to whom a desk is assigned. This mode is only supported for [desks](./desk.md). All the assigned **desks** must be assigned to a user. Either property can be used to assign a **desk** to a user.
 
 Inherits from [placeMode](../resources/placemode.md).
-
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedUserEmailAddress|String|**TODO: Add Description**|
-|assignedUserId|String|**TODO: Add Description**|
+|assignedUserEmailAddress|String|Email address of the user to whom the desk is assigned.|
+|assignedUserId|String|User id of the user to whom the desk is assigned.|
 
 ## Relationships
 None.
@@ -38,9 +36,9 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.assignedPlaceMode",
-  "assignedUserId": "String",
-  "assignedUserEmailAddress": "String"
+  "@odata.type": "#microsoft.graph.assignedPlaceMode ",
+  "assignedPersonId": "u123",
+  "assignedPersonEmailAddress": "meganb@contoso.com"
 }
 ```
 

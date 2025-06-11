@@ -260,6 +260,13 @@
             "room",
             "roomList"
           ],
+          "complexTypes": [
+            "placeMode",
+            "bookablePlaceMode",
+            "dropInPlaceMode",
+            "assignedPlaceMode",
+            "offlinePlaceMode"
+          ],
            "childNodes": [
             {
               "name": "Devices (preview)",

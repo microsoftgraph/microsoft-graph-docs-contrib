@@ -1,10 +1,10 @@
 ---
 title: "Delete place"
 description: "Delete a place object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "vrod9429"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice:
 doc_type: apiPageType
 ---
 
@@ -34,8 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /places/{placesId}
+DELETE /places/{id | placesId}
 ```
+
+You can use **id** (the unique identifier of the place), or **placeId**, if defined as an alternate key.
 
 ## Request headers
 
@@ -49,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
