@@ -92,14 +92,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicyLink",
-  "id": "ce676072-3617-c4ec-0a56-f5549ef31403",
-  "state": "String",
-  "version": "String"
-}
+HTTP/1.1 204 No Content
 ```
 

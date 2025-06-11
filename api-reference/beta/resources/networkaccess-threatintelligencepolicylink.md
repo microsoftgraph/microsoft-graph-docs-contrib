@@ -41,7 +41,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[policy](../resources/networkaccess-policy.md)|The policy associated with this threat intelligence policy link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
+|policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|The policy associated with this threat intelligence policy link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

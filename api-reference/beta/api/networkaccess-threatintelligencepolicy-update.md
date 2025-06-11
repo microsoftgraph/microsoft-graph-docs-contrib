@@ -101,20 +101,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
-  "id": "b8521f33-fa6d-a78b-308c-b6dfdf1c1798",
-  "name": "String",
-  "description": "String",
-  "version": "String",
-  "kind": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "settings": {
-    "@odata.type": "microsoft.graph.networkaccess.threatIntelligencePolicySettings"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
