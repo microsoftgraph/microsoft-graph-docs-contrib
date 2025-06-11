@@ -10,11 +10,11 @@ ms.localizationpriority: medium
 
 # Add user authentication to .NET apps for Microsoft Graph
 
-In this article, you'll add user authentication to the application you created in [Build .NET apps with Microsoft Graph](dotnet.md). You'll then use the Microsoft Graph user API to get the authenticated user.
+In this article, you add user authentication to the application you created in [Build .NET apps with Microsoft Graph](dotnet.md). You then use the Microsoft Graph user API to get the authenticated user.
 
 ## Add user authentication
 
-The [Azure Identity client library for .NET](https://www.nuget.org/packages/Azure.Identity) provides a number of `TokenCredential` classes that implement OAuth2 token flows. The [Microsoft Graph .NET client library](https://github.com/microsoftgraph/msgraph-sdk-dotnet) uses those classes to authenticate calls to Microsoft Graph.
+The [Azure Identity client library for .NET](https://www.nuget.org/packages/Azure.Identity) provides many `TokenCredential` classes that implement OAuth2 token flows. The [Microsoft Graph .NET client library](https://github.com/microsoftgraph/msgraph-sdk-dotnet) uses those classes to authenticate calls to Microsoft Graph.
 
 ### Configure Graph client for user authentication
 
@@ -92,7 +92,7 @@ Now that authentication is configured, you can make your first Microsoft Graph A
 
     :::code language="csharp" source="includes/dotnet/src/user-auth/GraphTutorial/Program.cs" id="GreetUserSnippet":::
 
-If you run the app now, after you log in the app welcomes you by name.
+If you run the app now, after you sign in the app welcomes you by name.
 
 ```Shell
 Hello, Megan Bowen!
@@ -112,16 +112,16 @@ GET /me
 GET /users/{user-id}
 ```
 
-In this case, the code calls the `GET /me` API endpoint. This is a shortcut method to get the authenticated user without knowing their user ID.
+In this case, the code calls the `GET /me` API endpoint. This endpoint is a shortcut method to get the authenticated user without knowing their user ID.
 
 > [!NOTE]
-> Because the `GET /me` API endpoint gets the authenticated user, it is only available to apps that use user authentication. App-only authentication apps cannot access this endpoint.
+> Because the `GET /me` API endpoint gets the authenticated user, it's only available to apps that use user authentication. App-only authentication apps can't access this endpoint.
 
 #### Requesting specific properties
 
-The function uses the `Select` method on the request to specify the set of properties it needs. This adds the [$select query parameter](/graph/query-parameters#select-parameter) to the API call.
+The function uses the `Select` method on the request to specify the set of properties it needs. This method adds the [$select query parameter](/graph/query-parameters#select-parameter) to the API call.
 
-#### Strongly-typed return type
+#### Strongly typed return type
 
 The function returns a `Microsoft.Graph.User` object deserialized from the JSON response from the API. Because the code uses `Select`, only the requested properties have values in the returned `User` object. All other properties have default values.
 

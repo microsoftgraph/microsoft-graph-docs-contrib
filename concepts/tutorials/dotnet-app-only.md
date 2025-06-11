@@ -1,6 +1,6 @@
 ---
 title: Build .NET apps with Microsoft Graph and app-only authentication
-description: In this tutorial, you'll build a .NET app that uses the Microsoft Graph API to access data using app-only authentication.
+description: In this tutorial, you build a .NET app that uses the Microsoft Graph API to access data using app-only authentication.
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -29,7 +29,7 @@ Before you start this tutorial, you should have the [.NET SDK](https://dotnet.mi
 [!INCLUDE [account-requirements-app-only](includes/shared/account-requirements-app-only.md)]
 
 > [!NOTE]
-> This tutorial was written with .NET SDK version 7.0.102. The steps in this guide may work with other versions, but that has not been tested.
+> This tutorial was written with .NET SDK version 7.0.102. The steps in this guide might work with other versions, but that hasn't been tested.
 
 [!INCLUDE [app-auth-app-reg-steps](includes/shared/app-auth-app-reg-steps.md)]
 
@@ -53,13 +53,13 @@ Begin by creating a new .NET console project using the [.NET CLI](/dotnet/core/t
 
 ## Install dependencies
 
-Before moving on, add some additional dependencies that you will use later.
+Before moving on, add some dependencies that you use later.
 
 - [.NET configuration packages](/dotnet/core/extensions/configuration) to read application configuration from **appsettings.json**.
 - [Azure Identity client library for .NET](https://www.nuget.org/packages/Azure.Identity)  to authenticate the user and acquire access tokens.
 - [Microsoft Graph .NET client library](https://github.com/microsoftgraph/msgraph-sdk-dotnet) to make calls to the Microsoft Graph.
 
-Run the following commands in your CLI to install the dependencies.
+To install the dependencies, run the following commands in your CLI.
 
 ```Shell
 dotnet add package Microsoft.Extensions.Configuration.Binder
@@ -71,7 +71,7 @@ dotnet add package Microsoft.Graph
 
 ## Load application settings
 
-In this section you'll add the details of your app registration to the project.
+Add the details of your app registration to the project.
 
 1. Create a file in the **GraphAppOnlyTutorial** directory named **appsettings.json** and add the following code.
 
@@ -110,13 +110,13 @@ In this section you'll add the details of your app registration to the project.
 
 ## Design the app
 
-In this section you will create a simple console-based menu.
+Create a console-based menu.
 
 1. Open **./Program.cs** and replace its entire contents with the following code.
 
     :::code language="csharp" source="includes/dotnet/src/app-auth/GraphAppOnlyTutorial/Program.cs" id="ProgramSnippet":::
 
-1. Add the following placeholder methods at the end of the file. You'll implement them in later steps.
+1. Add the following placeholder methods at the end of the file. You implement them in later steps.
 
     ```csharp
     void InitializeGraph(Settings settings)
