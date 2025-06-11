@@ -1,5 +1,5 @@
 ---
-title: "policyScopeBase resource type (preview)"
+title: "policyScopeBase resource type"
 description: "Abstract base type defining the scope of applicability for a data governance policy, including locations, activities, and execution mode."
 author: "ArunGedela"
 ms.date: 04/08/2025

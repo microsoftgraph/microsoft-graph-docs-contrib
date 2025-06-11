@@ -1,5 +1,5 @@
 ---
-title: "policyLocationDomain resource type (preview)"
+title: "policyLocationDomain resource type"
 description: "Represents a domain name as a location for data protection policy scoping."
 author: "ArunGedela"
 ms.date: 04/08/2025

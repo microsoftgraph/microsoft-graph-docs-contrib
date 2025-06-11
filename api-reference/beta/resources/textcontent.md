@@ -1,5 +1,5 @@
 ---
-title: "textContent resource type (preview)"
+title: "textContent resource type"
 description: "Represents content provided as a plain text string."
 author: "ArunGedela"
 ms.date: 04/08/2025

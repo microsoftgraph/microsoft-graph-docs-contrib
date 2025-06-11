@@ -1,5 +1,5 @@
 ---
-title: "dataSecurityAndGovernance resource type (preview)"
+title: "dataSecurityAndGovernance resource type"
 description: "Abstract base type representing the entry point for data security and governance features, scoped to the tenant."
 author: "ArunGedela"
 ms.date: 04/08/2025

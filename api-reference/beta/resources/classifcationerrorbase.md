@@ -1,5 +1,5 @@
 ---
-title: "classifcationErrorBase resource type (preview)"
+title: "classifcationErrorBase resource type"
 description: "Abstract base type for representing errors that occur during data classification, label evaluation, or policy processing."
 author: "ArunGedela"
 ms.date: 04/08/2025

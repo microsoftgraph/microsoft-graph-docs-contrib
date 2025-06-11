@@ -1,5 +1,5 @@
 ---
-title: "processContentResponse resource type (preview)"
+title: "processContentResponse resource type"
 description: "Contains the outcome of a processContent action or a single result within a processContentAsync action."
 author: "ArunGedela"
 ms.date: 04/08/2025

@@ -1,5 +1,5 @@
 ---
-title: "classificationError resource type (preview)"
+title: "classificationError resource type"
 description: "Represents a detailed error object, potentially containing multiple nested errors, encountered during classification or policy evaluation."
 author: "ArunGedela"
 ms.date: 04/08/2025

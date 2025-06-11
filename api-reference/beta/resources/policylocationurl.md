@@ -1,5 +1,5 @@
 ---
-title: "policyLocationUrl resource type (preview)"
+title: "policyLocationUrl resource type"
 description: "Represents a specific URL as a location for data protection policy scoping."
 author: "ArunGedela"
 ms.date: 04/08/2025

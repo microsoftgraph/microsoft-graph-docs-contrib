@@ -1,5 +1,5 @@
 ---
-title: "groupScope resource type (preview)"
+title: "groupScope resource type"
 description: "Represents a Microsoft 365 group or distribution list as a scope within policy bindings."
 author: "ArunGedela"
 ms.date: 04/08/2025

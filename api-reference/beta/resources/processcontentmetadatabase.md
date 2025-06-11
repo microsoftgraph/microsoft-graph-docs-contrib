@@ -1,6 +1,5 @@
 ---
 title: "processContentMetadataBase resource type"
-toc.title: "processContentMetadataBase resource type (preview)"
 description: "Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps."
 author: "ArunGedela"
 ms.date: 04/08/2025

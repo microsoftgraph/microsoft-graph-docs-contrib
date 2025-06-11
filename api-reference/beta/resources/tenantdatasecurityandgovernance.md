@@ -1,5 +1,5 @@
 ---
-title: "tenantDataSecurityAndGovernance resource type (preview)"
+title: "tenantDataSecurityAndGovernance resource type"
 description: "Represents the entry point for data security and governance features applicable across the entire tenant."
 author: "ArunGedela"
 ms.date: 04/08/2025

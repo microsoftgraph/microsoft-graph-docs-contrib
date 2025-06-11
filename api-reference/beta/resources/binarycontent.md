@@ -1,5 +1,5 @@
 ---
-title: "binaryContent resource type (preview)"
+title: "binaryContent resource type"
 description: "Represents content provided as a Base64 encoded binary data stream."
 author: "ArunGedela"
 ms.date: 04/08/2025

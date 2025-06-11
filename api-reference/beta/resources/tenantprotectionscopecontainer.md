@@ -1,5 +1,5 @@
 ---
-title: "tenantProtectionScopeContainer resource type (preview)"
+title: "tenantProtectionScopeContainer resource type"
 description: "Container for tenant-wide protection scope computation actions."
 author: "ArunGedela"
 ms.date: 04/08/2025

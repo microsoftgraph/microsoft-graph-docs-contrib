@@ -1,7 +1,7 @@
 ---
-title: "scopeBase resource type (preview)"
+title: "scopeBase resource type"
 description: "Abstract base type representing a scope identifier for users, groups, or the tenant within policy bindings."
-author: "ArunGedela"
+author: "kylemar"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"

@@ -1,5 +1,5 @@
 ---
-title: "policyLocation resource type (preview)"
+title: "policyLocation resource type"
 description: "Abstract base type representing a location like a domain or URL, to which a data protection policy applies."
 author: "ArunGedela"
 ms.date: 04/08/2025
