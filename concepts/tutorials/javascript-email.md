@@ -1,6 +1,6 @@
 ---
 title: Add email capabilities to JavaScript apps using Microsoft Graph
-description: Learn how use Microsoft Graph to read and send email in JavaScript apps
+description: Learn how to use Microsoft Graph to read and send email in JavaScript apps
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -10,7 +10,9 @@ ms.localizationpriority: medium
 
 # Add email capabilities to JavaScript apps using Microsoft Graph
 
-In this article, you'll extend the application you created in [Build JavaScript apps with Microsoft Graph](javascript.md) with Microsoft Graph mail APIs. You'll use Microsoft Graph to list the user's inbox and send an email.
+<!-- cSpell:ignore graphtutorial -->
+
+In this article, you extend the application you created in [Build JavaScript apps with Microsoft Graph](javascript.md) with Microsoft Graph mail APIs. You use Microsoft Graph to list the user's inbox and send an email.
 
 ## List user's inbox
 
@@ -70,28 +72,28 @@ Consider the code in the `getInboxAsync` function.
 
 #### Accessing well-known mail folders
 
-The function passes `/me/mailFolders/inbox/messages` to the `_userClient.api` request builder, which builds a request to the [List messages](/graph/api/user-list-messages) API. Because it includes the `/mailFolders/inbox` portion of the API endpoint, the API will only return messages in the requested mail folder. In this case, because the inbox is a default, well-known folder inside a user's mailbox, it's accessible via its well-known name. Non-default folders are accessed the same way, by replacing the well-known name with the mail folder's ID property. For details on the available well-known folder names, see [mailFolder resource type](/graph/api/resources/mailfolder).
+The function passes `/me/mailFolders/inbox/messages` to the `_userClient.api` request builder, which builds a request to the [List messages](/graph/api/user-list-messages) API. Because it includes the `/mailFolders/inbox` portion of the API endpoint, the API only returns messages in the requested mail folder. In this case, because the inbox is a default, well-known folder inside a user's mailbox, it's accessible via its well-known name. Nondefault folders are accessed the same way, by replacing the well-known name with the mail folder's ID property. For details on the available well-known folder names, see [mailFolder resource type](/graph/api/resources/mailfolder).
 
 #### Accessing a collection
 
-Unlike the `getUserAsync` function from the previous section, which returns a single object, this method returns a collection of messages. Most APIs in Microsoft Graph that return a collection do not return all available results in a single response. Instead, they use [paging](/graph/paging) to return a portion of the results while providing a method for clients to request the next "page".
+Unlike the `getUserAsync` function from the previous section, which returns a single object, this method returns a collection of messages. Most APIs in Microsoft Graph that return a collection don't return all available results in a single response. Instead, they use [paging](/graph/paging) to return a portion of the results while providing a method for clients to request the next page.
 
 ##### Default page sizes
 
-APIs that use paging implement a default page size. For messages, the default value is 10. Clients can request more (or less) by using the [$top](/graph/query-parameters#top-parameter) query parameter. In `getInboxAsync`, this is accomplished with the `.top(25)` method.
+APIs that use paging implement a default page size. For messages, the default value is 10. Clients can request more (or less) by using the [$top](/graph/query-parameters#top-parameter) query parameter. In `getInboxAsync`, adding `$top` is accomplished with the `.top(25)` method.
 
 > [!NOTE]
 > The value passed to `.top()` is an upper-bound, not an explicit number. The API returns a number of messages *up to* the specified value.
 
 ##### Getting subsequent pages
 
-If there are more results available on the server, collection responses include an `@odata.nextLink` property with an API URL to access the next page. The JavaScript client library exposes this property on `PageCollection` objects. If this property is not undefined, there are more results available.
+If there are more results available on the server, collection responses include an `@odata.nextLink` property with an API URL to access the next page. The JavaScript client library exposes this property on `PageCollection` objects. If this property isn't undefined, there are more results available.
 
 The value of `@odata.nextLink` can be passed to `_userClient.api` to get the next page of results. Alternatively, you can use the `PageIterator` object from the client library to [iterate over all available pages](/graph/sdks/paging).
 
 #### Sorting collections
 
-The function uses the `orderby` method on the request to request results sorted by the time the message is received (`receivedDateTime` property). It includes the `DESC` keyword so that messages received more recently are listed first. This adds the [$orderby query parameter](/graph/query-parameters#orderby-parameter) to the API call.
+The function uses the `orderby` method on the request to request results sorted by the time the message is received (`receivedDateTime` property). It includes the `DESC` keyword so that messages received more recently are listed first. This method adds the [$orderby query parameter](/graph/query-parameters#orderby-parameter) to the API call.
 
 ## Send mail
 
@@ -132,7 +134,7 @@ The function passes `/me/sendMail` to the `_userClient.api` request builder, whi
 
 #### Creating objects
 
-Unlike the previous calls to Microsoft Graph that only read data, this call creates data. To do this with the client library you create an instance of the class representing the data (in this case, `Message`), set the desired properties, then send it in the API call. Because the call is sending data, the `post` method is used instead of `get`.
+Unlike the previous calls to Microsoft Graph that only read data, this call creates data. To create items with the client library, you create an instance of the class representing the data (in this case, `Message`), set the desired properties, then send it in the API call. Because the call is sending data, the `post` method is used instead of `get`.
 
 ## Next step
 

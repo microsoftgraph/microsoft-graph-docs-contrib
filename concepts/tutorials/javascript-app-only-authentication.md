@@ -10,13 +10,15 @@ ms.localizationpriority: medium
 
 # Add app-only authentication to JavaScript apps for Microsoft Graph
 
-In this article, you'll add app-only authentication to the application you created in [Build JavaScript apps with Microsoft Graph and app-only authentication](javascript-app-only.md).
+<!-- cSpell:ignore graphapponlytutorial -->
 
-The [Azure Identity client library for JavaScript](https://www.npmjs.com/package/@azure/identity) provides a number of `TokenCredential` classes that implement OAuth2 token flows. The [Microsoft Graph JavaScript client library](https://www.npmjs.com/package/@microsoft/microsoft-graph-client) uses those classes to authenticate calls to Microsoft Graph.
+In this article, you add app-only authentication to the application you created in [Build JavaScript apps with Microsoft Graph and app-only authentication](javascript-app-only.md).
+
+The [Azure Identity client library for JavaScript](https://www.npmjs.com/package/@azure/identity) provides many `TokenCredential` classes that implement OAuth2 token flows. The [Microsoft Graph JavaScript client library](https://www.npmjs.com/package/@microsoft/microsoft-graph-client) uses those classes to authenticate calls to Microsoft Graph.
 
 ## Configure Graph client for app-only authentication
 
-In this section you will use the `ClientSecretCredential` class to request an access token by using the [client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
+In this section, you use the `ClientSecretCredential` class to request an access token by using the [client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
 1. Open **graphHelper.js** and add the following code.
 

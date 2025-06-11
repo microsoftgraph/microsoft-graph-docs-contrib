@@ -10,11 +10,13 @@ ms.localizationpriority: medium
 
 # Add user authentication to JavaScript apps for Microsoft Graph
 
-In this article, you'll add user authentication to the application you created in [Build JavaScript apps with Microsoft Graph](javascript.md). You'll then use the Microsoft Graph user API to get the authenticated user.
+<!-- cSpell:ignore graphtutorial -->
+
+In this article, you add user authentication to the application you created in [Build JavaScript apps with Microsoft Graph](javascript.md). You then use the Microsoft Graph user API to get the authenticated user.
 
 ## Add user authentication
 
-The [Azure Identity client library for JavaScript](https://www.npmjs.com/package/@azure/identity) provides a number of `TokenCredential` classes that implement OAuth2 token flows. The [Microsoft Graph JavaScript client library](https://www.npmjs.com/package/@microsoft/microsoft-graph-client) uses those classes to authenticate calls to Microsoft Graph.
+The [Azure Identity client library for JavaScript](https://www.npmjs.com/package/@azure/identity) provides many `TokenCredential` classes that implement OAuth2 token flows. The [Microsoft Graph JavaScript client library](https://www.npmjs.com/package/@microsoft/microsoft-graph-client) uses those classes to authenticate calls to Microsoft Graph.
 
 ### Configure Graph client for user authentication
 
@@ -28,7 +30,7 @@ Start by using the `DeviceCodeCredential` class to request an access token by us
 
     :::code language="javascript" source="includes/javascript/src/user-auth/graphtutorial/index.js" id="InitializeGraphSnippet":::
 
-This code declares two private properties, a `DeviceCodeCredential` object and a `Client` object. The `initializeGraphForUserAuth` function creates a new instance of `DeviceCodeCredential`, then uses that instance to create a new instance of `Client`. Every time an API call is made to Microsoft Graph through the `_userClient`, it will use the provided credential to get an access token.
+This code declares two private properties, a `DeviceCodeCredential` object and a `Client` object. The `initializeGraphForUserAuth` function creates a new instance of `DeviceCodeCredential`, then uses that instance to create a new instance of `Client`. Every time an API call is made to Microsoft Graph through the `_userClient`, it uses the provided credential to get an access token.
 
 ### Test the DeviceCodeCredential
 
@@ -84,7 +86,7 @@ Now that authentication is configured, you can make your first Microsoft Graph A
 
     :::code language="javascript" source="includes/javascript/src/user-auth/graphtutorial/index.js" id="GreetUserSnippet":::
 
-If you run the app now, after you log in the app welcomes you by name.
+If you run the app now, after you sign in the app welcomes you by name.
 
 ```bash
 Hello, Megan Bowen!
@@ -104,18 +106,18 @@ GET /me
 GET /users/{user-id}
 ```
 
-In this case, the code will call the `GET /me` API endpoint. This is a shortcut method to get the authenticated user without knowing their user ID.
+In this case, the code calls the `GET /me` API endpoint. This endpoint is a shortcut method to get the authenticated user without knowing their user ID.
 
 > [!NOTE]
-> Because the `GET /me` API endpoint gets the authenticated user, it is only available to apps that use user authentication. App-only authentication apps cannot access this endpoint.
+> Because the `GET /me` API endpoint gets the authenticated user, it's only available to apps that use user authentication. App-only authentication apps can't access this endpoint.
 
 #### Requesting specific properties
 
-The function uses the `select` method on the request to specify the set of properties it needs. This adds the [$select query parameter](/graph/query-parameters#select-parameter) to the API call.
+The function uses the `select` method on the request to specify the set of properties it needs. This method adds the [$select query parameter](/graph/query-parameters#select-parameter) to the API call.
 
-#### Strongly-typed return type
+#### Strongly typed return type
 
-The function returns a `User` object deserialized from the JSON response from the API. Because the code uses `select`, only the requested properties will have values in the returned `User` object. All other properties will have default values.
+The function returns a `User` object deserialized from the JSON response from the API. Because the code uses `select`, only the requested properties have values in the returned `User` object. All other properties have default values.
 
 ## Next step
 

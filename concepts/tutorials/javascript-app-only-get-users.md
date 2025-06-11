@@ -1,6 +1,6 @@
 ---
 title: List users in JavaScript apps using Microsoft Graph
-description: Learn how use Microsoft Graph to list users with app-only authentication in JavaScript apps
+description: Learn how to use Microsoft Graph to list users with app-only authentication in JavaScript apps
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -10,7 +10,9 @@ ms.localizationpriority: medium
 
 # List users in JavaScript apps using Microsoft Graph
 
-In this article, you'll extend the application you created in [Build JavaScript apps with Microsoft Graph and app-only authentication](javascript-app-only.md) with Microsoft Graph user APIs. You'll use Microsoft Graph to list users in your organization.
+<!-- cSpell:ignore graphapponlytutorial Pisani -->
+
+In this article, you extend the application you created in [Build JavaScript apps with Microsoft Graph and app-only authentication](javascript-app-only.md) with Microsoft Graph user APIs. You use Microsoft Graph to list users in your organization.
 
 1. Open **graphHelper.js** and add the following function.
 
