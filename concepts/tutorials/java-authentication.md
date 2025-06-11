@@ -10,11 +10,13 @@ ms.localizationpriority: medium
 
 # Add user authentication to Java apps for Microsoft Graph
 
-In this article, you'll add user authentication to the application you created in [Build Java apps with Microsoft Graph](java.md). You'll then use the Microsoft Graph user API to get the authenticated user.
+<!-- cSpell:ignore graphtutorial -->
+
+In this article, you add user authentication to the application you created in [Build Java apps with Microsoft Graph](java.md). You then use the Microsoft Graph user API to get the authenticated user.
 
 ## Add user authentication
 
-The [Azure Identity client library for Java](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/identity/azure-identity) provides a number of `TokenCredential` classes that implement OAuth2 token flows. The [Microsoft Graph SDK for Java](https://github.com/microsoftgraph/msgraph-sdk-java) uses those classes to authenticate calls to Microsoft Graph.
+The [Azure Identity client library for Java](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/identity/azure-identity) provides many `TokenCredential` classes that implement OAuth2 token flows. The [Microsoft Graph SDK for Java](https://github.com/microsoftgraph/msgraph-sdk-java) uses those classes to authenticate calls to Microsoft Graph.
 
 ### Configure Graph client for user authentication
 
@@ -31,7 +33,7 @@ Start by using the `DeviceCodeCredential` class to request an access token by us
     }
     ```
 
-1. Add the following code to the Graph class.
+1. Add the following code to the `Graph` class.
 
     :::code language="java" source="includes/java/src/user-auth/graphtutorial/app/src/main/java/graphtutorial/Graph.java" id="UserAuthConfigSnippet":::
 
@@ -39,7 +41,7 @@ Start by using the `DeviceCodeCredential` class to request an access token by us
 
     :::code language="java" source="includes/java/src/user-auth/graphtutorial/app/src/main/java/graphtutorial/App.java" id="InitializeGraphSnippet":::
 
-This code declares two private properties, a `DeviceCodeCredential` object and a `GraphServiceClient` object. The `InitializeGraphForUserAuth` function creates a new instance of `DeviceCodeCredential`, then uses that instance to create a new instance of `GraphServiceClient`. Every time an API call is made to Microsoft Graph through the `_userClient`, it will use the provided credential to get an access token.
+This code declares two private properties, a `DeviceCodeCredential` object and a `GraphServiceClient` object. The `InitializeGraphForUserAuth` function creates a new instance of `DeviceCodeCredential`, then uses that instance to create a new instance of `GraphServiceClient`. Every time an API call is made to Microsoft Graph through the `_userClient`, it uses the provided credential to get an access token.
 
 ### Test the DeviceCodeCredential
 
@@ -81,7 +83,7 @@ Next, add code to get an access token from the `DeviceCodeCredential`.
 
 Now that authentication is configured, you can make your first Microsoft Graph API call. Add code to get the authenticated user's name and email address.
 
-1. Open **Graph.java** and add the following function to the **Graph** class.
+1. Open **Graph.java** and add the following function to the `Graph` class.
 
     :::code language="java" source="includes/java/src/user-auth/graphtutorial/app/src/main/java/graphtutorial/Graph.java" id="GetUserSnippet":::
 
@@ -89,7 +91,7 @@ Now that authentication is configured, you can make your first Microsoft Graph A
 
     :::code language="java" source="includes/java/src/user-auth/graphtutorial/app/src/main/java/graphtutorial/App.java" id="GreetUserSnippet":::
 
-If you run the app now, after you log in the app welcomes you by name.
+If you run the app now, after you sign in the app welcomes you by name.
 
 ```bash
 Hello, Megan Bowen!
@@ -109,18 +111,18 @@ GET /me
 GET /users/{user-id}
 ```
 
-In this case, the code will call the `GET /me` API endpoint. This is a shortcut method to get the authenticated user without knowing their user ID.
+In this case, the code calls the `GET /me` API endpoint. This endpoint is a shortcut method to get the authenticated user without knowing their user ID.
 
 > [!NOTE]
-> Because the `GET /me` API endpoint gets the authenticated user, it is only available to apps that use user authentication. App-only authentication apps cannot access this endpoint.
+> Because the `GET /me` API endpoint gets the authenticated user, it's only available to apps that use user authentication. App-only authentication apps can't access this endpoint.
 
 #### Requesting specific properties
 
-The function uses the `select` property on the request configuration to specify the set of properties it needs. This adds the [$select query parameter](/graph/query-parameters#select-parameter) to the API call.
+The function uses the `select` property on the request configuration to specify the set of properties it needs. This property adds the [$select query parameter](/graph/query-parameters#select-parameter) to the API call.
 
-#### Strongly-typed return type
+#### Strongly typed return type
 
-The function returns a `com.microsoft.graph.models.User` object deserialized from the JSON response from the API. Because the code uses `select`, only the requested properties will have values in the returned `User` object. All other properties will have default values.
+The function returns a `com.microsoft.graph.models.User` object deserialized from the JSON response from the API. Because the code uses `select`, only the requested properties have values in the returned `User` object. All other properties have default values.
 
 ## Next step
 

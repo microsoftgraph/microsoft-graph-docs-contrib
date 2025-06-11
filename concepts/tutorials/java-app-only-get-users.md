@@ -1,6 +1,6 @@
 ---
 title: List users in Java apps using Microsoft Graph
-description: Learn how use Microsoft Graph to list users with app-only authentication in Java apps
+description: Learn how to use Microsoft Graph to list users with app-only authentication in Java apps
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -10,9 +10,11 @@ ms.localizationpriority: medium
 
 # List users in Java apps using Microsoft Graph
 
-In this article, you'll extend the application you created in [Build Java apps with Microsoft Graph and app-only authentication](java-app-only.md) with Microsoft Graph user APIs. You'll use Microsoft Graph to list users in your organization.
+<!-- cSpell:ignore graphapponlytutorial, Pisani -->
 
-1. Open **Graph.java** and add the following function to the **Graph** class.
+In this article, you extend the application you created in [Build Java apps with Microsoft Graph and app-only authentication](java-app-only.md) with Microsoft Graph user APIs. You use Microsoft Graph to list users in your organization.
+
+1. Open **Graph.java** and add the following function to the `Graph` class.
 
     :::code language="java" source="includes/java/src/app-auth/graphapponlytutorial/app/src/main/java/graphapponlytutorial/Graph.java" id="GetUsersSnippet":::
 
@@ -56,22 +58,22 @@ Consider the code in the `getUsers` function.
 
 ### Accessing a collection
 
-This method returns a collection of users. Most APIs in Microsoft Graph that return a collection do not return all available results in a single response. Instead, they use [paging](/graph/paging) to return a portion of the results while providing a method for clients to request the next "page".
+This method returns a collection of users. Most APIs in Microsoft Graph that return a collection don't return all available results in a single response. Instead, they use [paging](/graph/paging) to return a portion of the results while providing a method for clients to request the next page.
 
 #### Default page sizes
 
-APIs that use paging implement a default page size. For users, the default value is 10. Clients can request more (or less) by using the [$top](/graph/query-parameters#top-parameter) query parameter. In `getUsers`, this is accomplished with the `top` property in the request configuration.
+APIs that use paging implement a default page size. For users, the default value is 10. Clients can request more (or less) by using the [$top](/graph/query-parameters#top-parameter) query parameter. In `getUsers`, adding `$top` is accomplished with the `top` property in the request configuration.
 
 > [!NOTE]
 > The value set in `top` is an upper-bound, not an explicit number. The API returns a number of users *up to* the specified value.
 
 #### Getting subsequent pages
 
-If there are more results available on the server, collection responses include an `@odata.nextLink` property with an API URL to access the next page. The Java client library exposes this as the `getOdataNextLink` method on collection response objects. If this method returns non-null, there are more results available.
+If there are more results available on the server, collection responses include an `@odata.nextLink` property with an API URL to access the next page. The Java client library provides the `getOdataNextLink` method on collection response objects. If this method returns non-null, there are more results available.
 
 ### Sorting collections
 
-The function uses the `orderBy` property on the request configuration to request results sorted by the users' display names. This adds the [$orderby query parameter](/graph/query-parameters#orderby-parameter) to the API call.
+The function uses the `orderBy` property on the request configuration to request results sorted by the users' display names. This property adds the [$orderby query parameter](/graph/query-parameters#orderby-parameter) to the API call.
 
 ## Next step
 

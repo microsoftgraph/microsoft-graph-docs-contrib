@@ -1,6 +1,6 @@
 ---
 title: Build Java apps with Microsoft Graph and app-only authentication
-description: In this tutorial, you'll build a Java app that uses the Microsoft Graph API to access data using app-only authentication.
+description: In this tutorial, you build a Java app that uses the Microsoft Graph API to access data using app-only authentication.
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ---
 
 # Build Java apps with Microsoft Graph and app-only authentication
+
+<!-- cSpell:ignore graphapponlytutorial gradlew -->
 
 This tutorial teaches you how to build a Java console app that uses the Microsoft Graph API to access data using app-only authentication. App-only authentication is a good choice for background services or applications that need to access data for all users in an organization.
 
@@ -29,13 +31,13 @@ Before you start this tutorial, you should have the [Java SE Development Kit (JD
 [!INCLUDE [account-requirements-app-only](includes/shared/account-requirements-app-only.md)]
 
 > [!NOTE]
-> This tutorial was written with OpenJDK version 17.0.2 and Gradle 7.4.2. The steps in this guide may work with other versions, but that has not been tested.
+> This tutorial was written with OpenJDK version 17.0.2 and Gradle 7.4.2. The steps in this guide might work with other versions, but that hasn't been tested.
 
 [!INCLUDE [app-auth-app-reg-steps](includes/shared/app-auth-app-reg-steps.md)]
 
 ## Create a Java console app
 
-In this section you'll create a basic Java console app.
+Create a basic Java console app.
 
 1. Open your command-line interface (CLI) in a directory where you want to create the project. Run the following command to create a new Gradle project.
 
@@ -53,7 +55,7 @@ In this section you'll create a basic Java console app.
 
 ## Install dependencies
 
-Before moving on, add some additional dependencies that you will use later.
+Before moving on, add dependencies that you use later.
 
 - [Azure Identity client library for Java](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/identity/azure-identity) to authenticate the user and acquire access tokens.
 - [Microsoft Graph SDK for Java](https://github.com/microsoftgraph/msgraph-sdk-java) to make calls to the Microsoft Graph.
@@ -70,7 +72,7 @@ Before moving on, add some additional dependencies that you will use later.
 
 ## Load application settings
 
-In this section you'll add the details of your app registration to the project.
+Add the details of your app registration to the project.
 
 1. Create a new directory named **graphapponlytutorial** in the **./app/src/main/resources** directory.
 
@@ -91,7 +93,7 @@ In this section you'll add the details of your app registration to the project.
 
 ## Design the app
 
-In this section you will create a simple console-based menu.
+Create a console-based menu.
 
 1. Open **./app/src/main/java/graphapponlytutorial/App.java** and add the following `import` statements.
 
@@ -101,7 +103,7 @@ In this section you will create a simple console-based menu.
 
     :::code language="java" source="includes/java/src/app-auth/graphapponlytutorial/app/src/main/java/graphapponlytutorial/App.java" id="MainSnippet":::
 
-1. Add the following placeholder methods at the end of the file. You'll implement them in later steps.
+1. Add the following placeholder methods at the end of the file. You implement them in later steps.
 
     ```csharp
     private static void initializeGraph(Properties properties) {
