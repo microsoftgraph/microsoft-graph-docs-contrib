@@ -8,7 +8,7 @@ ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
-# List policy
+# List threat intelligence policy
 
 Namespace: microsoft.graph.networkaccess
 
