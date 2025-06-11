@@ -1,10 +1,10 @@
 ---
 title: "assignedPlaceMode resource type"
 description: "Defines the user to whom a desk is assigned."
-author: "vrod9429"
+author: "MSGraphDocsvTeam"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice:
 doc_type: resourcePageType
 ---
 

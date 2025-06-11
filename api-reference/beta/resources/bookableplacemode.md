@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This mode which indicates whether a desk or workspace is allowed to be booked in advance or not.
+This mode indicates whether a desk or workspace is allowed to be booked in advance.
 
 Inherits from [placeMode](../resources/placemode.md).
 

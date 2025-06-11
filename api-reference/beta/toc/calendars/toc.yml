@@ -16,6 +16,8 @@ items:
     href: ../../api/calendar-update.md
   - name: Delete
     href: ../../api/calendar-delete.md
+  - name: Get delta
+    href: ../../api/calendar-delta.md
   - name: Permanently delete
     href: ../../api/calendar-permanentdelete.md
   - name: List calendar view
@@ -272,6 +274,8 @@ items:
     items:
     - name: Place
       href: ../../resources/place.md
+    - name: Create place
+      href: ../../api/place-post-places.md
     - name: List places
       href: ../../api/place-list.md
     - name: Get place

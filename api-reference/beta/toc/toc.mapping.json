@@ -2250,7 +2250,6 @@
         },
         {
           "name": "People admin settings",
-          [
           "resources": [
             "namePronunciationSettings",
             "photoUpdateSettings",
@@ -3422,4 +3421,3 @@
     }
   ]
 }
-
