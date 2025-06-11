@@ -8,7 +8,7 @@ ms.date: 11/07/2024
 
 # Microsoft Graph tutorials
 
-Microsoft Graph tutorials are step-by-step training exercises that guide you through creating a basic application that accesses data via Microsoft Graph. They are designed to be completed within 30 minutes.
+Microsoft Graph tutorials are step-by-step training exercises that guide you through creating a basic application that accesses data via Microsoft Graph. They're designed to be completed within 30 minutes.
 
 ## Delegated (user) authentication
 
