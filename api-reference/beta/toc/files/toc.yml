@@ -264,3 +264,19 @@ items:
     href: ../../api/sharepointgroupmember-get.md
   - name: Delete
     href: ../../api/sharepointgroup-delete-members.md
+- name: Migration job
+  items:
+  - name: Migration job
+    href: ../../resources/migrationjob.md
+  - name: Provision migration containers
+    href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
+  - name: Create
+    href: ../../api/filestoragecontainer-post-migrationjobs.md
+  - name: Delete
+    href: ../../api/filestoragecontainer-delete-migrationjobs.md
+- name: Migration event
+  items:
+  - name: Migration event
+    href: ../../resources/migrationevent.md
+  - name: List
+    href: ../../api/migrationjob-list-progressevents.md

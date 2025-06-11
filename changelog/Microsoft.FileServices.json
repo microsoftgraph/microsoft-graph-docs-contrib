@@ -4299,6 +4299,128 @@
       "CreatedDateTime": "2025-03-19T18:23:42.5437381Z",
       "WorkloadArea": "Files",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "migrationJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationJobs** relationship to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "migrationJobErrorLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationJobErrorLevel** enumeration type.",
+          "Target": "migrationJobErrorLevel"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "migrationObjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationObjectType** enumeration type.",
+          "Target": "migrationObjectType"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrationContainerInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrationContainerInfo](https://learn.microsoft.com/en-us/graph/api/resources/migrationContainerInfo?view=graph-rest-beta) resource.",
+          "Target": "migrationContainerInfo"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrationEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrationEvent](https://learn.microsoft.com/en-us/graph/api/resources/migrationEvent?view=graph-rest-beta) resource.",
+          "Target": "migrationEvent"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrationFinishManifestFileUploadEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrationFinishManifestFileUploadEvent](https://learn.microsoft.com/en-us/graph/api/resources/migrationFinishManifestFileUploadEvent?view=graph-rest-beta) resource.",
+          "Target": "migrationFinishManifestFileUploadEvent"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrationJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrationJob](https://learn.microsoft.com/en-us/graph/api/resources/migrationJob?view=graph-rest-beta) resource.",
+          "Target": "migrationJob"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrationJobCancelledEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrationJobCancelledEvent](https://learn.microsoft.com/en-us/graph/api/resources/migrationJobCancelledEvent?view=graph-rest-beta) resource.",
+          "Target": "migrationJobCancelledEvent"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrationJobDeletedEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrationJobDeletedEvent](https://learn.microsoft.com/en-us/graph/api/resources/migrationJobDeletedEvent?view=graph-rest-beta) resource.",
+          "Target": "migrationJobDeletedEvent"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrationJobErrorEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrationJobErrorEvent](https://learn.microsoft.com/en-us/graph/api/resources/migrationJobErrorEvent?view=graph-rest-beta) resource.",
+          "Target": "migrationJobErrorEvent"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrationJobPostponedEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrationJobPostponedEvent](https://learn.microsoft.com/en-us/graph/api/resources/migrationJobPostponedEvent?view=graph-rest-beta) resource.",
+          "Target": "migrationJobPostponedEvent"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrationJobProgressEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrationJobProgressEvent](https://learn.microsoft.com/en-us/graph/api/resources/migrationJobProgressEvent?view=graph-rest-beta) resource.",
+          "Target": "migrationJobProgressEvent"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrationJobQueuedEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrationJobQueuedEvent](https://learn.microsoft.com/en-us/graph/api/resources/migrationJobQueuedEvent?view=graph-rest-beta) resource.",
+          "Target": "migrationJobQueuedEvent"
+        },
+        {
+          "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrationJobStartEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrationJobStartEvent](https://learn.microsoft.com/en-us/graph/api/resources/migrationJobStartEvent?view=graph-rest-beta) resource.",
+          "Target": "migrationJobStartEvent"
+        }
+      ],
+      "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-04T15:15:11.1030018Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     }
   ]
 }

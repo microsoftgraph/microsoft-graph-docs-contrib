@@ -213,6 +213,31 @@ Namespace: microsoft.graph
 | active |
 | unknownfuturevalue |
 
+### migrationJobErrorLevel values
+
+|Member|
+|:---|
+|important|
+|warning|
+|error|
+|fatalError|
+|unknownFutureValue|
+
+### migrationObjectType values
+
+|Member|
+|:---|
+|site|
+|web|
+|folder|
+|list|
+|listItem|
+|file|
+|alert|
+|sharedWithObject|
+|invalid|
+|unknownFutureValue|
+
 ### siteLockState values
 
 | Value         |
