@@ -61,13 +61,12 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [selfServiceSignUp](../resources/selfservicesignup.md) objects in the response body. The collection of objects is listed in descending order based on **createdDateTime**.
 
-## Example
+## Examples
 
-This example lists all sign-up events during a specific time period. In this example, four signup events related to one sign-up attempt are returned. The response object shows the user signed up using Email OTP, and includes an interrupt involving verification of user's identity (by entering the OTP sent to the user's email).
+### Request
 
-#### Request
+This example lists all sign-up events during a specific time period. Four signup events related to one sign-up attempt are returned. The response object shows the user signed up using Email OTP, and includes an interrupt involving verification of user's identity (by entering the OTP sent to the user's email).
 
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_selfservicesignup"
@@ -78,7 +77,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signUps?$filter=createdDateTime g
 ```
 
 
-#### Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
