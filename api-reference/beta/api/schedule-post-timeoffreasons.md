@@ -30,9 +30,6 @@ This API supports admin permissions. Users with admin roles can access teams tha
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.ReadWrite.All* |
 
-> [!NOTE]
-> The Schedule.ReadWrite.All application permission is currently in private preview only and isn't available for public use.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

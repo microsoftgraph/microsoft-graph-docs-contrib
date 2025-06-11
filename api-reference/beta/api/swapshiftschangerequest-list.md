@@ -25,9 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "swapshiftschangerequest_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/swapshiftschangerequest-list-permissions.md)]
 
-> [!NOTE]
-> The Schedule.Read.All and Schedule.ReadWrite.All application permissions are currently in private preview only and are not available for public use.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

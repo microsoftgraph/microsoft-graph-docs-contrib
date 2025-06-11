@@ -23,9 +23,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timeoffrequest_decline" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timeoffrequest-decline-permissions.md)]
 
-> [!NOTE]
-> The Schedule.ReadWrite.All application permission is currently in private preview only and isn't available for public use.
-
 > [!IMPORTANT]
 > Starting January 1, 2026, this API will no longer support application permissions. To decline a request with application permissions, use [/declineForUser](https://learn.microsoft.com/graph/api/schedulechangerequest-declineforuser) instead.
 

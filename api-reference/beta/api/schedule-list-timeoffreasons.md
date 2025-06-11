@@ -26,9 +26,6 @@ This API supports admin permissions. Users with admin roles can access teams tha
 <!-- { "blockType": "permissions", "name": "schedule_list_timeoffreasons" } -->
 [!INCLUDE [permissions-table](../includes/permissions/schedule-list-timeoffreasons-permissions.md)]
 
-> [!NOTE]
-> The Schedule.Read.All and Schedule.ReadWrite.All application permissions are currently in private preview only and are not available for public use.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

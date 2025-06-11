@@ -25,9 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timeoffrequest_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timeoffrequest-get-permissions.md)]
 
-> [!NOTE]
-> The Schedule.Read.All and Schedule.ReadWrite.All application permissions are currently in private preview only and aren't available for public use.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

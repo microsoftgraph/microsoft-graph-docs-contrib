@@ -29,9 +29,6 @@ This API supports admin permissions. Users with admin roles can access teams tha
 <!-- { "blockType": "permissions", "name": "timeoffreason_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timeoffreason-delete-permissions.md)]
 
-> [!NOTE]
-> The Schedule.ReadWrite.All application permission is currently in private preview only and isn't available for public use.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

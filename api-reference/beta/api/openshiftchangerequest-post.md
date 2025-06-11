@@ -25,9 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "openshiftchangerequest_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/openshiftchangerequest-post-permissions.md)]
 
-> [!NOTE]
-> The Schedule.ReadWrite.All application permission is currently in private preview only and ins't available for public use.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

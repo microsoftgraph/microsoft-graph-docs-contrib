@@ -25,9 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timeoffrequest_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timeoffrequest-delete-permissions.md)]
 
-> [!NOTE]
-> The Schedule.ReadWrite.All application permission is currently in private preview only and isn't available for public use.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
