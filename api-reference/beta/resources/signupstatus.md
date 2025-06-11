@@ -1,6 +1,6 @@
 ---
 title: "signUpStatus resource type"
-description: "Provides the sign-up status (Success or Failure) of the sign-up step."
+description: "Provides the sign-up status (success or failure) of the sign-up step."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-monitoring-health"
