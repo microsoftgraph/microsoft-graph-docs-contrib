@@ -1,6 +1,6 @@
 ---
 title: List users in TypeScript apps using Microsoft Graph
-description: Learn how use Microsoft Graph to list users with app-only authentication in TypeScript apps
+description: Learn how to use Microsoft Graph to list users with app-only authentication in TypeScript apps
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -10,7 +10,9 @@ ms.localizationpriority: medium
 
 # List users in TypeScript apps using Microsoft Graph
 
-In this article, you'll extend the application you created in [Build TypeScript apps with Microsoft Graph and app-only authentication](typescript-app-only.md) with Microsoft Graph user APIs. You'll use Microsoft Graph to list users in your organization.
+<!-- cSpell:ignore graphapponlytutorial Pisani -->
+
+In this article, you extend the application you created in [Build TypeScript apps with Microsoft Graph and app-only authentication](typescript-app-only.md) with Microsoft Graph user APIs. You use Microsoft Graph to list users in your organization.
 
 1. Open **graphHelper.ts** and add the following function.
 
@@ -52,7 +54,7 @@ In this article, you'll extend the application you created in [Build TypeScript 
 
 ## Code explained
 
-Consider the code in the `getUsersAsync` function. It is very similar to the code in `getInboxAsync`:
+Consider the code in the `getUsersAsync` function.
 
 - It gets a collection of users
 - It uses `select` to request specific properties

@@ -1,6 +1,6 @@
 ---
 title: Build TypeScript apps with Microsoft Graph
-description: In this tutorial, you'll build a TypeScript app that uses Azure Active Directory for authentication and Microsoft Graph for retrieving data.
+description: In this tutorial, you build a TypeScript app that uses Microsoft Entra ID for authentication and Microsoft Graph for retrieving data.
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ---
 
 # Build TypeScript apps with Microsoft Graph
+
+<!-- cSpell:ignore graphtutorial -->
 
 This tutorial teaches you how to build a TypeScript console app that uses the Microsoft Graph API.
 
@@ -33,7 +35,7 @@ Before you start this tutorial, you should have [Node.js](https://nodejs.org) in
 [!INCLUDE [account-requirements](includes/shared/account-requirements.md)]
 
 > [!NOTE]
-> This tutorial was written with Node.js version 16.14.2. The steps in this guide may work with other versions, but that has not been tested.
+> This tutorial was written with Node.js version 16.14.2. The steps in this guide might work with other versions, but that hasn't been tested.
 
 [!INCLUDE [user-auth-app-reg-steps](includes/shared/user-auth-app-reg-steps.md)]
 
@@ -49,13 +51,13 @@ Begin by creating a new Node.js project and configuring TypeScript.
 
     Answer the prompts by either supplying your own values or accepting the defaults.
 
-1. Run the following command to install TypeScript.
+1. To install TypeScript, run the following command.
 
     ```bash
     npm install -D typescript ts-node
     ```
 
-1. Run the following command to initialize TypeScript.
+1. To initialize TypeScript, run the following command.
 
     ```bash
     npx tsc --init
@@ -63,14 +65,14 @@ Begin by creating a new Node.js project and configuring TypeScript.
 
 ## Install dependencies
 
-Before moving on, add some additional dependencies that you will use later.
+Before moving on, add dependencies that you use later.
 
 - [Azure Identity client library for JavaScript](https://www.npmjs.com/package/@azure/identity)  to authenticate the user and acquire access tokens.
 - [Microsoft Graph JavaScript client library](https://www.npmjs.com/package/@microsoft/microsoft-graph-client) to make calls to the Microsoft Graph.
 - [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) to add `fetch` API to Node.js. This is a dependency for the Microsoft Graph JavaScript client library.
 - [readline-sync](https://www.npmjs.com/package/readline-sync) for prompting the user for input.
 
-Run the following commands in your CLI to install the dependencies.
+To install the dependencies, run the following commands in your CLI.
 
 ```bash
 npm install @azure/identity @microsoft/microsoft-graph-client isomorphic-fetch readline-sync
@@ -96,7 +98,7 @@ Next, add the details of your app registration to the project.
 
 Continue by creating a simple console-based menu.
 
-1. Create a file in the root of your project named **graphHelper.ts** and add the following placeholder code. You'll add more code this file in later steps.
+1. Create a file in the root of your project named **graphHelper.ts** and add the following placeholder code. You add more code this file in later steps.
 
     ```typescript
     export {};
@@ -106,7 +108,7 @@ Continue by creating a simple console-based menu.
 
     :::code language="typescript" source="includes/typescript/src/user-auth/graphtutorial/index.ts" id="ProgramSnippet":::
 
-1. Add the following placeholder methods at the end of the file. You'll implement them in later steps.
+1. Add the following placeholder methods at the end of the file. You implement them in later steps.
 
     ```typescript
     function initializeGraph(settings: AppSettings) {
