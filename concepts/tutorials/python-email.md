@@ -1,6 +1,6 @@
 ---
 title: Add email capabilities to Python apps using Microsoft Graph
-description: Learn how use Microsoft Graph to read and send email in Python apps
+description: Learn how to use Microsoft Graph to read and send email in Python apps
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -10,7 +10,9 @@ ms.localizationpriority: medium
 
 # Add email capabilities to Python apps using Microsoft Graph
 
-In this article, you'll extend the application you created in [Build Python apps with Microsoft Graph](python.md) with Microsoft Graph mail APIs. You'll use Microsoft Graph to list the user's inbox and send an email.
+<!-- cSpell:ignore graphtutorial -->
+
+In this article, you extend the application you created in [Build Python apps with Microsoft Graph](python.md) with Microsoft Graph mail APIs. You use Microsoft Graph to list the user's inbox and send an email.
 
 ## List user's inbox
 
@@ -70,26 +72,26 @@ Consider the code in the `get_inbox` function.
 
 #### Accessing well-known mail folders
 
-The function builds a request to the [List messages](/graph/api/user-list-messages) API. Because it includes the `mail_folders.by_mail_folder_id('inbox')` request builder, the API will only return messages in the requested mail folder. In this case, because the inbox is a default, well-known folder inside a user's mailbox, it's accessible via its well-known name. Non-default folders are accessed the same way, by replacing the well-known name with the mail folder's ID property. For details on the available well-known folder names, see [mailFolder resource type](/graph/api/resources/mailfolder).
+The function builds a request to the [List messages](/graph/api/user-list-messages) API. Because it includes the `mail_folders.by_mail_folder_id('inbox')` request builder, the API only returns messages in the requested mail folder. In this case, because the inbox is a default, well-known folder inside a user's mailbox, it's accessible via its well-known name. Nondefault folders are accessed the same way, by replacing the well-known name with the mail folder's ID property. For details on the available well-known folder names, see [mailFolder resource type](/graph/api/resources/mailfolder).
 
 #### Accessing a collection
 
-Unlike the `get_user` function from the previous section, which returns a single object, this method returns a collection of messages. Most APIs in Microsoft Graph that return a collection do not return all available results in a single response. Instead, they use [paging](/graph/paging) to return a portion of the results while providing a method for clients to request the next "page".
+Unlike the `get_user` function from the previous section, which returns a single object, this method returns a collection of messages. Most APIs in Microsoft Graph that return a collection don't return all available results in a single response. Instead, they use [paging](/graph/paging) to return a portion of the results while providing a method for clients to request the next page.
 
 ##### Default page sizes
 
-APIs that use paging implement a default page size. For messages, the default value is 10. Clients can request more (or less) by using the [$top](/graph/query-parameters#top-parameter) query parameter. In `get_inbox`, this is accomplished with the `top` parameter in the `MessagesRequestBuilderGetQueryParameters` object.
+APIs that use paging implement a default page size. For messages, the default value is 10. Clients can request more (or less) by using the [$top](/graph/query-parameters#top-parameter) query parameter. In `get_inbox`, adding `$top` is accomplished with the `top` parameter in the `MessagesRequestBuilderGetQueryParameters` object.
 
 > [!NOTE]
 > The value passed in `$top` is an upper-bound, not an explicit number. The API returns a number of messages *up to* the specified value.
 
 ##### Getting subsequent pages
 
-If there are more results available on the server, collection responses include an `@odata.nextLink` property with an API URL to access the next page. The Python SDK exposes this as the `odata_next_link` property on collection page objects. If this property is present, there are more results available.
+If there are more results available on the server, collection responses include an `@odata.nextLink` property with an API URL to access the next page. The Python SDK provides the `odata_next_link` property on collection page objects. If this property is present, there are more results available.
 
 #### Sorting collections
 
-The function uses the [$orderby query parameter](/graph/query-parameters#orderby-parameter) to request results sorted by the time the message is received (`receivedDateTime` property). It includes the `DESC` keyword so that messages received more recently are listed first. In `get_inbox`, this is accomplished with the `orderby` parameter in the `MessagesRequestBuilderGetQueryParameters` object.
+The function uses the [$orderby query parameter](/graph/query-parameters#orderby-parameter) to request results sorted by the time the message is received (`receivedDateTime` property). It includes the `DESC` keyword so that messages received more recently are listed first. In `get_inbox`, adding `$orderby` is accomplished with the `orderby` parameter in the `MessagesRequestBuilderGetQueryParameters` object.
 
 ## Send mail
 
@@ -130,7 +132,7 @@ The function uses the `user_client.me.send_mail` request builder, which builds a
 
 #### Creating objects
 
-Unlike the previous calls to Microsoft Graph that only read data, this call creates data. To do this with the client library you create a dictionary representing the request payload, set the desired properties, then send it in the API call. Because the call is sending data, the `post` method is used instead of `get`.
+Unlike the previous calls to Microsoft Graph that only read data, this call creates data. To create items with the client library, you create a dictionary representing the request payload, set the desired properties, then send it in the API call. Because the call is sending data, the `post` method is used instead of `get`.
 
 ## Next step
 

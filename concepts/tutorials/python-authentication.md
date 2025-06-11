@@ -10,11 +10,13 @@ ms.localizationpriority: medium
 
 # Add user authentication to Python apps for Microsoft Graph
 
-In this article, you'll add user authentication to the application you created in [Build Python apps with Microsoft Graph](python.md). You'll then use the Microsoft Graph user API to get the authenticated user.
+<!-- cSpell:ignore graphtutorial -->
+
+In this article, you add user authentication to the application you created in [Build Python apps with Microsoft Graph](python.md). You then use the Microsoft Graph user API to get the authenticated user.
 
 ## Add user authentication
 
-The [Azure Identity client library for Python](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity) provides a number of `TokenCredential` classes that implement OAuth2 token flows. The [Microsoft Graph SDK for Python (preview)](https://github.com/microsoftgraph/msgraph-sdk-python) uses those classes to authenticate calls to Microsoft Graph.
+The [Azure Identity client library for Python](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity) provides many `TokenCredential` classes that implement OAuth2 token flows. The [Microsoft Graph SDK for Python (preview)](https://github.com/microsoftgraph/msgraph-sdk-python) uses those classes to authenticate calls to Microsoft Graph.
 
 ### Configure Graph client for user authentication
 
@@ -24,7 +26,7 @@ Start by using the `DeviceCodeCredential` class to request an access token by us
 
     :::code language="python" source="includes/python/src/user-auth/graphtutorial/graph.py" id="UserAuthConfigSnippet":::
 
-    This code declares two private properties, a `DeviceCodeCredential` object and a `GraphServiceClient` object. The `__init__` function creates a new instance of `DeviceCodeCredential`, then uses that instance to create a new instance of `GraphServiceClient`. Every time an API call is made to Microsoft Graph through the `user_client`, it will use the provided credential to get an access token.
+    This code declares two private properties, a `DeviceCodeCredential` object and a `GraphServiceClient` object. The `__init__` function creates a new instance of `DeviceCodeCredential`, then uses that instance to create a new instance of `GraphServiceClient`. Every time an API call is made to Microsoft Graph through the `user_client`, it uses the provided credential to get an access token.
 
 1. Add the following function to **graph.py**.
 
@@ -70,7 +72,7 @@ Now that authentication is configured, you can make your first Microsoft Graph A
 
     :::code language="python" source="includes/python/src/user-auth/graphtutorial/main.py" id="GreetUserSnippet":::
 
-If you run the app now, after you log in the app welcomes you by name.
+If you run the app now, after you sign in the app welcomes you by name.
 
 ```bash
 Hello, Megan Bowen!
@@ -90,14 +92,14 @@ GET /me
 GET /users/{user-id}
 ```
 
-In this case, the code will call the `GET /me` API endpoint. This is a shortcut method to get the authenticated user without knowing their user ID.
+In this case, the code calls the `GET /me` API endpoint. This endpoint is a shortcut method to get the authenticated user without knowing their user ID.
 
 > [!NOTE]
-> Because the `GET /me` API endpoint gets the authenticated user, it is only available to apps that use user authentication. App-only authentication apps cannot access this endpoint.
+> Because the `GET /me` API endpoint gets the authenticated user, it's only available to apps that use user authentication. App-only authentication apps can't access this endpoint.
 
 #### Requesting specific properties
 
-The function uses the [$select query parameter](/graph/query-parameters#select-parameter) to specify the set of properties it needs. Microsoft Graph will return only the requested properties in the response. In `get_user`, this is accomplished with the `select` parameter in the `MeRequestBuilderGetQueryParameters` object.
+The function uses the [$select query parameter](/graph/query-parameters#select-parameter) to specify the set of properties it needs. Microsoft Graph returns only the requested properties in the response. In `get_user`, adding `$select` is accomplished with the `select` parameter in the `MeRequestBuilderGetQueryParameters` object.
 
 ## Next step
 

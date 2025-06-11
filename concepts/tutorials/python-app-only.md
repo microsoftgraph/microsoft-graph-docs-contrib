@@ -1,6 +1,6 @@
 ---
 title: Build Python apps with Microsoft Graph and app-only authentication
-description: In this tutorial, you'll build a Python app that uses the Microsoft Graph API to access data using app-only authentication.
+description: In this tutorial, you build a Python app that uses the Microsoft Graph API to access data using app-only authentication.
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ---
 
 # Build Python apps with Microsoft Graph and app-only authentication
+
+<!-- cSpell:ignore graphapponlytutorial asyncio -->
 
 This tutorial teaches you how to build a Python console app that uses the Microsoft Graph API to access data using app-only authentication. App-only authentication is a good choice for background services or applications that need to access data for all users in an organization.
 
@@ -29,7 +31,7 @@ Before you start this tutorial, you should have [Python](https://www.python.org/
 [!INCLUDE [account-requirements-app-only](includes/shared/account-requirements-app-only.md)]
 
 > [!NOTE]
-> This tutorial was written with Python version 3.10.4 and pip version 20.0.2. The steps in this guide may work with other versions, but that has not been tested.
+> This tutorial was written with Python version 3.10.4 and pip version 20.0.2. The steps in this guide might work with other versions, but that hasn't been tested.
 
 [!INCLUDE [app-auth-app-reg-steps](includes/shared/app-auth-app-reg-steps.md)]
 
@@ -53,12 +55,12 @@ Begin by creating a new Python file.
 
 ## Install dependencies
 
-Before moving on, add some additional dependencies that you will use later.
+Before moving on, add dependencies that you use later.
 
 - [Azure Identity client library for Python](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity) to authenticate the user and acquire access tokens.
 - [Microsoft Graph SDK for Python (preview)](https://github.com/microsoftgraph/msgraph-sdk-python) to make calls to the Microsoft Graph.
 
-Run the following commands in your CLI to install the dependencies.
+To install the dependencies, run the following commands in your CLI.
 
 ```bash
 python3 -m pip install azure-identity
@@ -67,7 +69,7 @@ python3 -m pip install msgraph-sdk
 
 ## Load application settings
 
-In this section you'll add the details of your app registration to the project.
+Add the details of your app registration to the project.
 
 1. Create a file in the same directory as **main.py** named **config.cfg** and add the following code.
 
@@ -86,7 +88,7 @@ In this section you'll add the details of your app registration to the project.
 
 ## Design the app
 
-In this section you will create a simple console-based menu.
+Create a console-based menu.
 
 1. Create a new file named **graph.py** and add the following code to that file.
 
@@ -97,13 +99,13 @@ In this section you will create a simple console-based menu.
             self.settings = config
     ```
 
-    This code is a placeholder. You will implement the `Graph` class in the next section.
+    This code is a placeholder. You implement the `Graph` class in the next section.
 
 1. Open **main.py** and replace its entire contents with the following code.
 
     :::code language="python" source="includes/python/src/app-auth/graphapponlytutorial/main.py" id="ProgramSnippet":::
 
-1. Add the following placeholder methods at the end of the file. You'll implement them in later steps.
+1. Add the following placeholder methods at the end of the file. You implement them in later steps.
 
     ```python
     async def display_access_token(graph: Graph):
