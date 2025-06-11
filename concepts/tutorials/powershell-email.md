@@ -1,6 +1,6 @@
 ---
 title: Add email capabilities to PowerShell scripts using Microsoft Graph
-description: Learn how use Microsoft Graph to read and send email in PowerShell scripts.
+description: Learn how to use Microsoft Graph to read and send email in PowerShell scripts.
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Add email capabilities to PowerShell scripts using Microsoft Graph
 
-In this article, you'll extend the application you created in [Build PowerShell scripts with Microsoft Graph](powershell.md) with Microsoft Graph mail APIs. You'll use Microsoft Graph to list the user's inbox and send an email.
+In this article, you extend the application you created in [Build PowerShell scripts with Microsoft Graph](powershell.md) with Microsoft Graph mail APIs. You use Microsoft Graph to list the user's inbox and send an email.
 
 ## List user's inbox
 
@@ -46,22 +46,22 @@ Consider the command used to list the user's inbox
 
 #### Accessing well-known mail folders
 
-The `Get-MgUserMailFolderMessage` command builds a request to the [List messages](/graph/api/user-list-messages) API, specifically using the `GET /users/{user-id}/mailFolders/{folder-id}/messages` endpoint. Using that endpoint, the API only returns messages in the requested mail folder. In this case, because the inbox is a default, well-known folder inside a user's mailbox, it's accessible via its well-known name: `-MailFolderId Inbox`. Non-default folders are accessed the same way, by replacing the well-known name with the mail folder's ID property. For details on the available well-known folder names, see [mailFolder resource type](/graph/api/resources/mailfolder).
+The `Get-MgUserMailFolderMessage` command builds a request to the [List messages](/graph/api/user-list-messages) API, specifically using the `GET /users/{user-id}/mailFolders/{folder-id}/messages` endpoint. The API only returns messages in the requested mail folder. In this case, because the inbox is a default, well-known folder inside a user's mailbox, it's accessible via its well-known name: `-MailFolderId Inbox`. Nondefault folders are accessed the same way, by replacing the well-known name with the mail folder's ID property. For details on the available well-known folder names, see [mailFolder resource type](/graph/api/resources/mailfolder).
 
 #### Accessing a collection
 
-Unlike the `Get-MgUser` command from the previous section, which returns a single object, this method returns a collection of messages. Most APIs in Microsoft Graph that return a collection do not return all available results in a single response. Instead, they use [paging](/graph/paging) to return a portion of the results while providing a method for clients to request the next "page".
+Unlike the `Get-MgUser` command from the previous section, which returns a single object, this method returns a collection of messages. Most APIs in Microsoft Graph that return a collection don't return all available results in a single response. Instead, they use [paging](/graph/paging) to return a portion of the results while providing a method for clients to request the next page.
 
 ##### Default page sizes
 
-APIs that use paging implement a default page size. For messages, the default value is 10. Clients can request more (or less) by using the [$top](/graph/query-parameters#top-parameter) query parameter. In the Microsoft Graph PowerShell SDK, this is accomplished with the `-Top 25` parameter.
+APIs that use paging implement a default page size. For messages, the default value is 10. Clients can request more (or less) by using the [$top](/graph/query-parameters#top-parameter) query parameter. In the Microsoft Graph PowerShell SDK, adding `$top` is accomplished with the `-Top 25` parameter.
 
 > [!NOTE]
 > The value passed via `-Top` is an upper-bound, not an explicit number. The API returns a number of messages *up to* the specified value.
 
 #### Sorting collections
 
-The function uses the `-OrderBy` parameter on the request to request results sorted by the time the message is received (`receivedDateTime` property). It includes the `DESC` keyword so that messages received more recently are listed first. This adds the [$orderby query parameter](/graph/query-parameters#orderby-parameter) to the API call.
+The function uses the `-OrderBy` parameter on the request to request results sorted by the time the message is received (`receivedDateTime` property). It includes the `DESC` keyword so that messages received more recently are listed first. This parameter adds the [$orderby query parameter](/graph/query-parameters#orderby-parameter) to the API call.
 
 ## Send mail
 
@@ -96,7 +96,7 @@ The `Send-MgUserMail` command builds a request to the [Send mail](/graph/api/use
 
 #### Creating objects
 
-Unlike the previous calls to Microsoft Graph that only read data, this call creates data. To do this with the SDK you create an object representing the request body, set the desired properties, then pass it in the `BodyParameter` parameter.
+Unlike the previous calls to Microsoft Graph that only read data, this call creates data. To create items with the SDK, you create an object representing the request body, set the desired properties, then pass it in the `BodyParameter` parameter.
 
 ## Next step
 

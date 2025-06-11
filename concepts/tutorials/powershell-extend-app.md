@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Extend PowerShell scripts with additional Microsoft Graph APIs
 
-In this article you will add your own Microsoft Graph capabilities to the application you created in [Build PowerShell scripts with Microsoft Graph](powershell.md). This could be a code snippet from Microsoft Graph [documentation](/graph/api/overview) or [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer), or code that you created.
+In this article you will add your own Microsoft Graph capabilities to the application you created in [Build PowerShell scripts with Microsoft Graph](powershell.md). For example, you might want to add a code snippet from Microsoft Graph [documentation](/graph/api/overview) or [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer), or code that you created.
 
 ## Choose an API
 
@@ -51,7 +51,7 @@ Now that you are connected with the required permissions, run your chosen comman
 
 ## Related content
 
-You've completed the PowerShell Microsoft Graph tutorial. Now that you have a working app that calls Microsoft Graph, you can experiment and add new features.
+Now that you have a working app that calls Microsoft Graph, you can experiment and add new features.
 
 - Learn how to use [app-only authentication](powershell-app-only.md) with the Microsoft Graph PowerShell SDK.
 - Visit the [Overview of Microsoft Graph](/graph/overview) to see all of the data you can access with Microsoft Graph.

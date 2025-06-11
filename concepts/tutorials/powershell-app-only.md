@@ -1,6 +1,6 @@
 ---
 title: Build PowerShell scripts with Microsoft Graph and app-only authentication
-description: In this tutorial, you'll build a PowerShell script that uses the Microsoft Graph API to access data using app-only authentication.
+description: In this tutorial, you build a PowerShell script that uses the Microsoft Graph API to access data using app-only authentication.
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ---
 
 # Build PowerShell scripts with Microsoft Graph and app-only authentication
+
+<!-- cSpell:ignore newkey keyout pkcs inkey -->
 
 This tutorial teaches you how to build a PowerShell script that uses the Microsoft Graph API to access data using app-only authentication. App-only authentication is a good choice for background services or applications that need to access data for all users in an organization.
 
@@ -29,11 +31,11 @@ Before you start this tutorial, you should have [PowerShell](/powershell) instal
 [!INCLUDE [account-requirements-app-only](includes/shared/account-requirements-app-only.md)]
 
 > [!NOTE]
-> This tutorial was written with PowerShell 7.2.2 and Microsoft Graph PowerShell SDK version 1.9.5. The steps in this guide may work with other versions, but that has not been tested.
+> This tutorial was written with PowerShell 7.2.2 and Microsoft Graph PowerShell SDK version 1.9.5. The steps in this guide might work with other versions, but that hasn't been tested.
 
 ## Register application for app-only authentication
 
-Register a new application in Microsoft Entra to enable [app-only authentication](/graph/auth-v2-service).
+To enable [app-only authentication](/graph/auth-v2-service), register a new application in Microsoft Entra.
 
 ### Create a self-signed certificate
 
@@ -50,9 +52,9 @@ $cert = New-SelfSignedCertificate -Subject "CN=PowerShell App-Only" -CertStoreLo
 Export-Certificate -Cert $cert -FilePath "./PowerShellAppOnly.cer"
 ```
 
-#### [Linux/MacOS](#tab/linux-macos)
+#### [Linux/macOS](#tab/linux-macos)
 
-On Linux or MacOS, you can use [OpenSSL](https://www.openssl.org/) to generate the private and public keys, then use PowerShell to install the private key into a certificate store readable by PowerShell.
+On Linux or macOS, you can use [OpenSSL](https://www.openssl.org/) to generate the private and public keys, then use PowerShell to install the private key into a certificate store readable by PowerShell.
 
 1. Generate a new X509 certificate using the following command.
 
@@ -60,7 +62,7 @@ On Linux or MacOS, you can use [OpenSSL](https://www.openssl.org/) to generate t
     openssl req -x509 -newkey rsa:2048 -sha256 -days 365 -keyout powershell.pem -out powershell.crt -subj "/CN=PowerShell App-Only"
     ```
 
-1. OpenSSL prompts you for a PEM pass phrase. Enter a pass phrase you will remember.
+1. OpenSSL prompts you for a PEM pass phrase. Enter a pass phrase you can remember.
 
 1. Create a PFX file using the following command.
 
@@ -68,9 +70,9 @@ On Linux or MacOS, you can use [OpenSSL](https://www.openssl.org/) to generate t
     openssl pkcs12 -export -out powershell.pfx -inkey powershell.pem -in powershell.crt
     ```
 
-1. OpenSSL prompts you for the pass phrase for **powershell.pem**, enter the pass phrase you used in the previous step.
+1. OpenSSL prompts you for the pass phrase for **powershell.pem**. Enter the pass phrase you used in the previous step.
 
-1. OpenSSL prompts you for an export password. Enter a password you will remember.
+1. OpenSSL prompts you for an export password. Enter a password you can remember.
 
 1. Open PowerShell and run the following commands, replacing *&lt;export-password&gt;* with the export password you used in the previous step.
 
@@ -86,7 +88,7 @@ On Linux or MacOS, you can use [OpenSSL](https://www.openssl.org/) to generate t
 
 ### Register application in the Microsoft Entra admin center
 
-1. Open a browser and navigate to the [Microsoft Entra admin center](https://entra.microsoft.com) and login using a Global administrator account.
+1. Open a browser and navigate to the [Microsoft Entra admin center](https://entra.microsoft.com) and sign in using a Global administrator account.
 
 1. Select **Microsoft Entra ID** in the left-hand navigation, expand **Identity**, expand **Applications**, then select **App registrations**.
 
@@ -98,7 +100,7 @@ On Linux or MacOS, you can use [OpenSSL](https://www.openssl.org/) to generate t
 
 1. Leave **Redirect URI** empty.
 
-1. Select **Register**. On the application's **Overview** page, copy the value of the **Application (client) ID** and **Directory (tenant) ID** and save them, you will need these values in the next step.
+1. Select **Register**. On the application's **Overview** page, copy the value of the **Application (client) ID** and **Directory (tenant) ID** and save them. You'll need these values in the next step.
 
     :::image type="content" source="images/aad-app-only-application-id.png" alt-text="A screenshot of the application ID of the new app registration":::
 
@@ -121,7 +123,7 @@ On Linux or MacOS, you can use [OpenSSL](https://www.openssl.org/) to generate t
 1. Select **Upload certificate**. Upload the **PowerShellAppOnly.cer** or **powershell.crt** file you created in the previous step, then select **Add**.
 
 > [!NOTE]
-> Notice that, unlike the steps when registering for user authentication, in this section you did configure Microsoft Graph permissions on the app registration. This is because app-only auth uses the [client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), which requires that permissions be configured on the app registration. See [The .default scope](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope) for details.
+> Notice that, unlike the steps when registering for user authentication, in this section you did configure Microsoft Graph permissions on the app registration. App-only auth uses the [client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), which requires that permissions be configured on the app registration. See [The .default scope](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope) for details.
 
 ## Connect with app-only authentication
 
@@ -153,7 +155,7 @@ On Linux or MacOS, you can use [OpenSSL](https://www.openssl.org/) to generate t
 
     :::code language="powershell" source="includes/powershell/src/app-auth/GraphTutorialAppOnly.ps1" id="AppOnlyAuthSnippet":::
 
-1. Use `Get-MgContext` to verify that you are authenticated with app-only authentication. Verify that **AuthType** is `AppOnly`.
+1. Use `Get-MgContext` to verify that you're authenticated with app-only authentication. Verify that **AuthType** is `AppOnly`.
 
     ```powershell
     PS > Get-MgContext

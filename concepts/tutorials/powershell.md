@@ -33,7 +33,7 @@ Before you start this tutorial, you should have [PowerShell](/powershell) instal
 [!INCLUDE [account-requirements](includes/shared/account-requirements.md)]
 
 > [!NOTE]
-> This tutorial was written with PowerShell 7.2.2 and Microsoft Graph PowerShell SDK version 1.9.5. The steps in this guide may work with other versions, but that has not been tested.
+> This tutorial was written with PowerShell 7.2.2 and Microsoft Graph PowerShell SDK version 1.9.5. The steps in this guide might work with other versions, but that has not been tested.
 
 [!INCLUDE [user-auth-app-reg-steps](includes/shared/user-auth-app-reg-steps.md)]
 

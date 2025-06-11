@@ -10,9 +10,11 @@ ms.localizationpriority: medium
 
 # Get users in PowerShell scripts with Microsoft Graph and app-only authentication
 
-In this article, you'll extend the application you created in [Build PowerShell scripts with Microsoft Graph and app-only authentication](powershell-app-only.md) with Microsoft Graph user APIs. You'll use Microsoft Graph to get a list of users in your organization.
+<!-- cSpell:ignore Pisani -->
 
-1. In your authenticated PowerShell session, run the following command to list users.
+In this article, you extend the application you created in [Build PowerShell scripts with Microsoft Graph and app-only authentication](powershell-app-only.md) with Microsoft Graph user APIs. You use Microsoft Graph to get a list of users in your organization.
+
+1. Run the following command in your authenticated PowerShell session to list users.
 
     :::code language="powershell" source="includes/powershell/src/app-auth/GraphTutorialAppOnly.ps1" id="GetUsersSnippet":::
 
