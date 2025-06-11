@@ -1,0 +1,166 @@
+items:
+- name: Overview
+  href: index.md
+  displayName: tutorials
+- name: Delegated (user) auth
+  items:
+  - name: .NET
+    items:
+    - name: Create the app
+      href: tutorials/dotnet.md
+    - name: Add authentication
+      href: tutorials/dotnet-authentication.md
+    - name: Add mail API
+      href: tutorials/dotnet-email.md
+    - name: Add additional APIs
+      href: tutorials/dotnet-extend-app.md
+  - name: Go
+    items:
+    - name: Create the app
+      href: tutorials/go.md
+    - name: Add authentication
+      href: tutorials/go-authentication.md
+    - name: Add mail API
+      href: tutorials/go-email.md
+    - name: Add additional APIs
+      href: tutorials/go-extend-app.md
+  - name: Java
+    items:
+    - name: Create the app
+      href: tutorials/java.md
+    - name: Add authentication
+      href: tutorials/java-authentication.md
+    - name: Add mail API
+      href: tutorials/java-email.md
+    - name: Add additional APIs
+      href: tutorials/java-extend-app.md
+  - name: JavaScript
+    items:
+    - name: Create the app
+      href: tutorials/javascript.md
+    - name: Add authentication
+      href: tutorials/javascript-authentication.md
+    - name: Add mail API
+      href: tutorials/javascript-email.md
+    - name: Add additional APIs
+      href: tutorials/javascript-extend-app.md
+  - name: PHP
+    items:
+    - name: Create the app
+      href: tutorials/php.md
+    - name: Add authentication
+      href: tutorials/php-authentication.md
+    - name: Add mail API
+      href: tutorials/php-email.md
+    - name: Add additional APIs
+      href: tutorials/php-extend-app.md
+  - name: Power Automate
+    href: tutorials/power-automate.md
+  - name: PowerShell
+    items:
+    - name: Create the script
+      href: tutorials/powershell.md
+    - name: Add mail API
+      href: tutorials/powershell-email.md
+    - name: Add additional APIs
+      href: tutorials/powershell-extend-app.md
+  - name: Python
+    items:
+    - name: Create the app
+      href: tutorials/python.md
+    - name: Add authentication
+      href: tutorials/python-authentication.md
+    - name: Add mail API
+      href: tutorials/python-email.md
+    - name: Add additional APIs
+      href: tutorials/python-extend-app.md
+  - name: TypeScript
+    items:
+    - name: Create the app
+      href: tutorials/typescript.md
+    - name: Add authentication
+      href: tutorials/typescript-authentication.md
+    - name: Add mail API
+      href: tutorials/typescript-email.md
+    - name: Add additional APIs
+      href: tutorials/typescript-extend-app.md
+- name: App-only auth
+  items:
+  - name: .NET
+    items:
+    - name: Create the app
+      href: tutorials/dotnet-app-only.md
+    - name: Add authentication
+      href: tutorials/dotnet-app-only-authentication.md
+    - name: Add users API
+      href: tutorials/dotnet-app-only-get-users.md
+    - name: Add additional APIs
+      href: tutorials/dotnet-app-only-extend-app.md
+  - name: Go
+    items:
+    - name: Create the app
+      href: tutorials/go-app-only.md
+    - name: Add authentication
+      href: tutorials/go-app-only-authentication.md
+    - name: Add users API
+      href: tutorials/go-app-only-get-users.md
+    - name: Add additional APIs
+      href: tutorials/go-app-only-extend-app.md
+  - name: Java
+    items:
+    - name: Create the app
+      href: tutorials/java-app-only.md
+    - name: Add authentication
+      href: tutorials/java-app-only-authentication.md
+    - name: Add users API
+      href: tutorials/java-app-only-get-users.md
+    - name: Add additional APIs
+      href: tutorials/java-app-only-extend-app.md
+  - name: JavaScript
+    items:
+    - name: Create the app
+      href: tutorials/javascript-app-only.md
+    - name: Add authentication
+      href: tutorials/javascript-app-only-authentication.md
+    - name: Add users API
+      href: tutorials/javascript-app-only-get-users.md
+    - name: Add additional APIs
+      href: tutorials/javascript-app-only-extend-app.md
+  - name: PHP
+    items:
+    - name: Create the app
+      href: tutorials/php-app-only.md
+    - name: Add authentication
+      href: tutorials/php-app-only-authentication.md
+    - name: Add users API
+      href: tutorials/php-app-only-get-users.md
+    - name: Add additional APIs
+      href: tutorials/php-app-only-extend-app.md
+  - name: PowerShell
+    items:
+    - name: Create the app
+      href: tutorials/powershell-app-only.md
+    - name: Add users API
+      href: tutorials/powershell-app-only-users.md
+    - name: Add additional APIs
+      href: tutorials/powershell-app-only-extend-app.md
+  - name: Python
+    items:
+    - name: Create the app
+      href: tutorials/python-app-only.md
+    - name: Add authentication
+      href: tutorials/python-app-only-authentication.md
+    - name: Add users API
+      href: tutorials/python-app-only-get-users.md
+    - name: Add additional APIs
+      href: tutorials/python-app-only-extend-app.md
+  - name: TypeScript
+    items:
+    - name: Create the app
+      href: tutorials/typescript-app-only.md
+    - name: Add authentication
+      href: tutorials/typescript-app-only-authentication.md
+    - name: Add users API
+      href: tutorials/typescript-app-only-get-users.md
+    - name: Add additional APIs
+      href: tutorials/typescript-app-only-extend-app.md
