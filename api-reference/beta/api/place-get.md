@@ -1,11 +1,11 @@
 ---
 title: "Get place"
 description: "Read the properties and relationships of a place object."
+author: "vrod9429"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
-author: "vrod9429"
-ms.subservice: 
-doc_type: "apiPageType"
+ms.subservice:
+doc_type: apiPageType
 ---
 
 # Get place
