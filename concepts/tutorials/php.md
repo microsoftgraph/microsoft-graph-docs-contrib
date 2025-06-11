@@ -1,6 +1,6 @@
 ---
 title: Build PHP apps with Microsoft Graph
-description: In this tutorial, you'll build a PHP app that uses Azure Active Directory for authentication and Microsoft Graph for retrieving data.
+description: In this tutorial, you build a PHP app that uses Microsoft Entra ID for authentication and Microsoft Graph for retrieving data.
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ---
 
 # Build PHP apps with Microsoft Graph
+
+<!-- cSpell:ignore graphtutorial vlucas phpdotenv -->
 
 This tutorial teaches you how to build a PHP console app that uses the Microsoft Graph API to access data on behalf of a user.
 
@@ -33,7 +35,7 @@ Before you start this tutorial, you should have [PHP](https://www.php.net/) and 
 [!INCLUDE [account-requirements](includes/shared/account-requirements.md)]
 
 > [!NOTE]
-> This tutorial was written with PHP version 8.1.5 and Composer version 2.3.5. The steps in this guide may work with other versions, but that has not been tested.
+> This tutorial was written with PHP version 8.1.5 and Composer version 2.3.5. The steps in this guide might work with other versions, but that hasn't been tested.
 
 [!INCLUDE [user-auth-app-reg-steps](includes/shared/user-auth-app-reg-steps.md)]
 
@@ -45,7 +47,7 @@ Begin by initializing a new Composer project. Open your command-line interface (
 composer init
 ```
 
-Answer the prompts. You can accept the defaults for most questions, but respond `n` to the following:
+Answer the prompts. You can accept the defaults for most questions, but respond `n` to the following questions:
 
 ```bash
 Would you like to define your dependencies (require) interactively [yes]? n
@@ -55,12 +57,12 @@ Add PSR-4 autoload mapping? Maps namespace "Microsoft\Graphtutorial" to the ente
 
 ## Install dependencies
 
-Before moving on, add some additional dependencies that you will use later.
+Before moving on, add dependencies that you use later.
 
 - [Microsoft Graph SDK for PHP](https://github.com/microsoftgraph/msgraph-sdk-php) to make calls to the Microsoft Graph.
 - [vlucas/phpdotenv](https://github.com/vlucas/phpdotenv) for reading environment variables from .env files.
 
-Run the following command in your CLI to install the dependencies.
+To install the dependencies, run the following command in your CLI.
 
 ```bash
 composer require microsoft/microsoft-graph vlucas/phpdotenv
@@ -99,7 +101,7 @@ Continue by creating a simple console-based menu.
 
     :::code language="php" source="includes/php/src/user-auth/graphtutorial/main.php" id="ProgramSnippet":::
 
-1. Add the following placeholder methods at the end of the file before the closing PHP tag. You'll implement them in later steps.
+1. Add the following placeholder methods at the end of the file before the closing PHP tag. You implement them in later steps.
 
     ```php
     function initializeGraph(): void {

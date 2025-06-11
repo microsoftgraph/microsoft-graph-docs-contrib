@@ -1,6 +1,6 @@
 ---
 title: Add email capabilities to PHP apps using Microsoft Graph
-description: Learn how use Microsoft Graph to read and send email in PHP apps
+description: Learn how to use Microsoft Graph to read and send email in PHP apps
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -10,7 +10,9 @@ ms.localizationpriority: medium
 
 # Add email capabilities to PHP apps using Microsoft Graph
 
-In this article, you'll extend the application you created in [Build PHP apps with Microsoft Graph](php.md) with Microsoft Graph mail APIs. You'll use Microsoft Graph to list the user's inbox and send an email.
+<!-- cSpell:ignore graphtutorial -->
+
+In this article, you extend the application you created in [Build PHP apps with Microsoft Graph](php.md) with Microsoft Graph mail APIs. You use Microsoft Graph to list the user's inbox and send an email.
 
 ## List user's inbox
 
@@ -70,22 +72,22 @@ Consider the code in the `getInbox` function.
 
 #### Accessing well-known mail folders
 
-The function passes `/me/mailFolders/inbox/messages` to the request builder, which builds a request to the [List messages](/graph/api/user-list-messages) API. Because it includes the `/mailFolders/inbox` segment, the API will only return messages in the requested mail folder. In this case, because the inbox is a default, well-known folder inside a user's mailbox, it's accessible via its well-known name. Non-default folders are accessed the same way, by replacing the well-known name with the mail folder's ID property. For details on the available well-known folder names, see [mailFolder resource type](/graph/api/resources/mailfolder).
+The function passes `/me/mailFolders/inbox/messages` to the request builder, which builds a request to the [List messages](/graph/api/user-list-messages) API. Because it includes the `/mailFolders/inbox` segment, the API only returns messages in the requested mail folder. In this case, because the inbox is a default, well-known folder inside a user's mailbox, it's accessible via its well-known name. Nondefault folders are accessed the same way, by replacing the well-known name with the mail folder's ID property. For details on the available well-known folder names, see [mailFolder resource type](/graph/api/resources/mailfolder).
 
 #### Accessing a collection
 
-Unlike the `getUser` function from the previous section, which returns a single object, this method returns a collection of messages. Most APIs in Microsoft Graph that return a collection do not return all available results in a single response. Instead, they use [paging](/graph/paging) to return a portion of the results while providing a method for clients to request the next "page".
+Unlike the `getUser` function from the previous section, which returns a single object, this method returns a collection of messages. Most APIs in Microsoft Graph that return a collection don't return all available results in a single response. Instead, they use [paging](/graph/paging) to return a portion of the results while providing a method for clients to request the next page.
 
 ##### Default page sizes
 
-APIs that use paging implement a default page size. For messages, the default value is 10. Clients can request more (or less) by using the [$top](/graph/query-parameters#top-parameter) query parameter. In `getInbox`, this is accomplished with the `queryParameters->top` property in the query parameters.
+APIs that use paging implement a default page size. For messages, the default value is 10. Clients can request more (or less) by using the [$top](/graph/query-parameters#top-parameter) query parameter. In `getInbox`, adding `$top` is accomplished with the `queryParameters->top` property in the query parameters.
 
 > [!NOTE]
 > The value passed in `queryParameters->top` is an upper-bound, not an explicit number. The API returns a number of messages *up to* the specified value.
 
 ##### Getting subsequent pages
 
-If there are more results available on the server, collection responses include an `@odata.nextLink` property with an API URL to access the next page. The PHP SDK exposes this as the `getOdataNextLink` method on collection request objects. If this method returns a non-empty string, there are more results available.  For more information, see [Page through a collection using the Microsoft Graph SDKs](/graph/sdks/paging?tabs=PHP).
+If there are more results available on the server, collection responses include an `@odata.nextLink` property with an API URL to access the next page. The PHP SDK provides the `getOdataNextLink` method on collection request objects. If this method returns a nonempty string, there are more results available. For more information, see [Page through a collection using the Microsoft Graph SDKs](/graph/sdks/paging?tabs=PHP).
 
 #### Sorting collections
 
@@ -131,7 +133,7 @@ The function uses the `$userClient->me()->sendMail()` request builder, which bui
 
 #### Creating objects
 
-Unlike the previous calls to Microsoft Graph that only read data, this call creates data. To do this with the client library you create an associative array representing the data, set the desired properties, then send it in the API call. Because the call is sending data, the `POST` method is used instead of `GET`.
+Unlike the previous calls to Microsoft Graph that only read data, this call creates data. To create items with the client library, you create an associative array representing the data, set the desired properties, then send it in the API call. Because the call is sending data, the `POST` method is used instead of `GET`.
 
 ## Next step
 
