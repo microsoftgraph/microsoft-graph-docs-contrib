@@ -177,3 +177,42 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+### Example 3: Resume an access package assignment request
+
+#### Request
+
+The following example shows a request of a call to resume an access package assignment request that's waiting for a callback.
+
+<!-- {
+  "blockType": "request",
+  "name": "accesspackageassignmentrequestthis.resume_custom_extension"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/0e60f18c-b2a0-4887-9da8-da2e30a39d99/resume
+Content-Type: application/json
+
+{
+  "source": "Contoso.SodCheckProcess",
+  "type": "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated",
+  "data": {
+    "@odata.type": "microsoft.graph.accessPackageRequestApprovalStageCallbackConfiguration",
+    "stage": "assignmentRequestCreated",
+    "customExtensionStageInstanceId": "7bf58d34-b3f9-4bae-8deb-abcd25cddea1",
+    "customExtensionStageInstanceDetail": "This user is all verified"
+  }
+}
+```
+
+### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
