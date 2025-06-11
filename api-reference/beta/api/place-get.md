@@ -1,11 +1,11 @@
 ---
 title: "Get place"
 description: "Read the properties and relationships of a place object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
-doc_type: apiPageType
+author: "vrod9429"
+ms.subservice: 
+doc_type: "apiPageType"
 ---
 
 # Get place
