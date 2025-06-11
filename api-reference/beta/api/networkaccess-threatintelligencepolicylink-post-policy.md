@@ -1,0 +1,113 @@
+---
+title: "Add policy"
+description: "Add policy by posting to the policy collection."
+author: "fgomulka"
+ms.date: 06/05/2025
+ms.localizationpriority: medium
+ms.subservice: "entra-global-secure-access"
+doc_type: apiPageType
+---
+
+# Add policy
+
+Namespace: microsoft.graph.networkaccess
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Add policy by posting to the policy collection.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "permissions",
+  "name": "networkaccess-threatintelligencepolicylink-post-policy-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/networkaccess-threatintelligencepolicylink-post-policy-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policy/$ref
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
+
+In the request body, supply a JSON representation of the [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.
+
+You can specify the following properties when creating a **policy**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|name|String|The display name of the policy. Required.|
+|description|String|A description of the policy. Optional.|
+|version|String|The version of the policy, used for tracking changes. Required.|
+|kind|String|The kind of policy. For threat intelligence policies, this will be a specific value denoting the threat intelligence type. Required.|
+
+
+
+## Response
+
+If successful, this method returns a `204 No Content` response code and a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object in the response body.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_policy_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policy/$ref
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.networkaccess.policy",
+  "name": "String",
+  "description": "String",
+  "version": "String",
+  "kind": "String"
+}
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.networkaccess.policy"
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.networkaccess.policy",
+  "id": "283f06b1-1d6a-c2f9-b285-4974e1c7c7b1",
+  "name": "String",
+  "description": "String",
+  "version": "String",
+  "kind": "String"
+}
+```
+

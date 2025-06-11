@@ -1,0 +1,40 @@
+---
+title: "threatIntelligenceDestination resource type"
+description: "Represents a destination that is associated with potential security threats."
+author: "fgomulka"
+ms.date: 06/05/2025
+ms.localizationpriority: medium
+ms.subservice: "entra-global-secure-access"
+doc_type: resourcePageType
+---
+
+# threatIntelligenceDestination resource type
+
+Namespace: microsoft.graph.networkaccess
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents a destination that is associated with potential security threats. This is an abstract base type for specific destination types used in threat intelligence rules.
+This is an abstract type.
+
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.networkaccess.threatIntelligenceDestination"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceDestination"
+}
+```
+
