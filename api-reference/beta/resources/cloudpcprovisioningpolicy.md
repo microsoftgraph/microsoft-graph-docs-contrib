@@ -55,6 +55,10 @@ Represents a Cloud PC provisioning policy.
 |domainJoinConfiguration (deprecated)|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs join Microsoft Entra ID. The **domainJoinConfiguration** property is deprecated and will stop returning data on May 31, 2024. Going forward, use the **domainJoinConfigurations** property.|
 |onPremisesConnectionId (deprecated)|String|The ID of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md). To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that the Cloud PC service validated it. The **onPremisesConnectionId** property is deprecated and will stop returning data on May 31, 2024. Going forward, use the **domainJoinConfigurations** property.|
 |windowsSettings (deprecated)|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Specific Windows settings to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. The **windowsSettings** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **windowsSetting** property.|
+|createdDateTime|DateTimeOffset|The Timestamp when this provisioning policy was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-Only. Supports: $select, $orderBy.|
+|lastModifiedDateTime|DateTimeOffset|The Timestamp when this provisioning policy was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-Only. Supports: $select, $orderBy.|
+|createdBy|String|The unique ID of the user who created this Policy. For example, "5ccb8d35-dd04-473e-a287-69bb4473208b". Read-only. Supports: $select.|
+|lastModifiedBy|String|The unique ID of the user who last updated this Policy. For example, "5ccb8d35-dd04-473e-a287-69bb4473208b". Read-only. Supports: $select.|
 
 ### cloudPcProvisioningType values
 
@@ -67,6 +71,7 @@ Represents a Cloud PC provisioning policy.
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                                                                           |
 | sharedByUser     | Indicates the provisioning policy when a dedicated Cloud PC is provisioned for each user in the assignment group. Users are always connected to the same Cloud PC. However, Cloud PC availability is limited by the total number of active sessions. |
 | sharedByEntraGroup   | Indicates the provisioning policy associated with Cloud PCs shared by a Microsoft Entra (Azure AD) group. When a shared Cloud PC is provisioned, it becomes available for any user in the Microsoft Entra ID assignment group to connect to. Users may be connected to a different Cloud PC on each connection and availability is limited by the number of provisioned Cloud PCs. |
+| reserve | Indicates that the policy should use dedicated, per-user, time bound licenses when provisioning Cloud PCs. These Cloud PCs that use the reserve Policy can be checked out and check in by user multiple times, and time bound license is consumed only after the Cloud PC is checked out. At present, each user can obtain 10 hours of usage time from each `Reserve` service plan instance. |
 
 ## Relationships
 
@@ -118,6 +123,10 @@ The following JSON representation shows the resource type.
   },
   "windowsSettings": {
     "@odata.type": "microsoft.graph.cloudPcWindowsSettings"
-  }
+  },
+  "createdDateTime": "DateTimeOffset",
+  "lastModifiedDateTime": "DateTimeOffset",
+  "createdBy": "String",
+  "lastModifiedBy": "String"
 }
 ```
