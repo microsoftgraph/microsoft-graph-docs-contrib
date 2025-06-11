@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the status (Success or Failure) of the sign-up step.
+Provides the status (success or failure) of the sign-up step.
 
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |additionalDetails|String|Provides additional details on the sign-up activity.|
 |errorCode|Int32|Provides the 5-6 digit error code that's generated during a sign-up failure.|

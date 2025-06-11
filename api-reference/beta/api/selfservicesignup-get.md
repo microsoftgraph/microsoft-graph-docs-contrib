@@ -5,7 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
-ms.date: 11/26/2024 
+ms.date: 06/11/2025
 ---
 
 # Get selfServiceSignUp object
@@ -28,8 +28,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/selfservicesignup-get-permissions.md)]
-
-Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Microsoft Entra ID.
 
 [!INCLUDE [rbac-self-service-sign-up-apis-read](../includes/rbac-for-apis/rbac-self-service-sign-up-apis-read.md)]
 

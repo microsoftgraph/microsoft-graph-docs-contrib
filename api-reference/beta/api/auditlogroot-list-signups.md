@@ -1,14 +1,14 @@
 ---
-title: "List selfServiceSignUp"
+title: "List signUps"
 description: "Get a list of the selfServiceSignUp objects and their properties."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
-ms.date: 11/26/2024 
+ms.date: 06/11/2025
 ---
 
-# List selfServiceSignUp objects
+# List signUps
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the Microsoft Entra External ID user [selfServiceSignUps](../resources/selfservicesignup.md) events for your tenant. 
 
-The maximum and default page size is 1,000 objects and by default, the most recent sign-ups are returned first. Only sign-up events that occurred within the Microsoft Entra ID [default retention period](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) are available.
+The maximum and default page size is 1,000 objects and by default, the most recent sign-ups are returned first. Only sign-up events that occurred within the Microsoft Entra ID [default retention period](/entra/identity/monitoring-health/reference-reports-data-retention#how-long-does-microsoft-entra-id-store-the-data) are available.
 
 ## Permissions
 
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-This example lists all sign-up events during a specific time period.  In this example, 4 signup events related to one sign-up attempt are returned.  The response object shows the user signed up using Email OTP, and included an interrupt involving verification of user's identity (by entering the OTP sent to the user's email).
+This example lists all sign-up events during a specific time period. In this example, four signup events related to one sign-up attempt are returned. The response object shows the user signed up using Email OTP, and includes an interrupt involving verification of user's identity (by entering the OTP sent to the user's email).
 
 #### Request
 
@@ -111,7 +111,7 @@ Content-Type: application/json
                 "additionalDetails": null
             },
             "signUpIdentity": {
-                "signUpIdentifier": "testuser@yahoo.com",
+                "signUpIdentifier": "testuser@fabrikam.com",
                 "signUpIdentifierType": "emailAddress"
             },
             "userId": "9fb7a577-9469-4489-912d-bc58a5bca276"
@@ -132,7 +132,7 @@ Content-Type: application/json
                 "additionalDetails": null
             },
             "signUpIdentity": {
-                "signUpIdentifier": "testuser@yahoo.com",
+                "signUpIdentifier": "testuser@fabrikam.com",
                 "signUpIdentifierType": "emailAddress"
             }
         },
@@ -152,7 +152,7 @@ Content-Type: application/json
                 "additionalDetails": null
             },
             "signUpIdentity": {
-                "signUpIdentifier": "testuser@yahoo.com",
+                "signUpIdentifier": "testuser@fabrikam.com",
                 "signUpIdentifierType": "emailAddress"
             }
         },
@@ -172,7 +172,7 @@ Content-Type: application/json
                 "additionalDetails": null
             },
             "signUpIdentity": {
-                "signUpIdentifier": "testuser@yahoo.com",
+                "signUpIdentifier": "testuser@fabrikam.com",
                 "signUpIdentifierType": "emailAddress"
             }
         }

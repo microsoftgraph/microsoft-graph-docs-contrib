@@ -2422,9 +2422,9 @@
               "resources": [
                 "customSecurityAttributeAudit",
                 "directoryAudit",
-                "signIn",
+                "provisioningObjectSummary",
                 "selfServiceSignUp",
-                "provisioningObjectSummary"
+                "signIn"
               ]
             }
           ]

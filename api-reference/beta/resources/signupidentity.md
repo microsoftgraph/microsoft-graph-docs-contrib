@@ -18,18 +18,10 @@ Represents the identity of the user who initiated a sign-up.
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |signUpIdentifier|String|The identification that the user is trying to utilize to sign up.|
-|signUpIdentifierType|signUpIdentifierType|The type of sign-up the user initiated. Possible values include:  `emailAddress`, `unknownFutureValue`.|
-
-
-### Filtering
-
-When filtering on the **signUpIdentity** property for a **selfServiceSignUp**:
-
-- Filtering on **signUpIdentifierType** is supported for the following values: `emailAddress`.
-
+|signUpIdentifierType|signUpIdentifierType|The type of sign-up the user initiated. Possible values include:  `emailAddress`, `unknownFutureValue`. Supports `$filter` (`eq`) on the `emailAddress`.|
 
 ## JSON representation
 
@@ -37,9 +29,6 @@ The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.signUpIdentity"
 }-->
 

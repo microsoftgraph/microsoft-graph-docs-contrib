@@ -5,7 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
-ms.date: 11/26/2024 
+ms.date: 06/11/2025
 ---
 
 # selfServiceSignUp resource type
@@ -32,11 +32,11 @@ Details self-service sign-up activity of Microsoft Entra External ID users on a 
 |correlationId|String|The request ID sent from the client when the sign-up is initiated. Used to troubleshoot sign-up activity. <br/><br/> Supports `$filter` (`eq`).|
 |createdDateTime|DateTimeOffset|Date and time (UTC) the sign-up was initiated. Example: midnight on Jan 1, 2014 is reported as `2014-01-01T00:00:00Z`. <br/><br/> Supports `$orderby`, `$filter` (`eq`, `le`, and `ge`).|
 |id|String|Unique ID representing the sign-up activity. <br/><br/> Supports `$filter` (`eq`). Inherited from [entity](../resources/entity.md).|
-|signUpIdentity|[signUpIdentity](../resources/signupidentity.md)|Unique identifier for self-service sign-up user|
+|signUpIdentity|[signUpIdentity](../resources/signupidentity.md)|Unique identifier for self-service sign-up user. Supports `$filter` (`eq`) on the **signUpIdentifierType**.|
 |signUpIdentityProvider|String|Describes the type of account for which the user registered. Values include `Email OTP`, `Email Password`, `Google`.|
 |signUpStage|signUpStage|Describes the step in the sign-up flow. The possible values are: `credentialCollection`, `credentialValidation`, `credentialFederation`, `consent`, `attributeCollectionAndValidation`, `userCreation`, `tenantConsent`, `unknownFutureValue`.|
 |status|[signUpStatus](../resources/signupstatus.md)|Sign-up status. Includes the error code and description of the error (if a sign-up failure or interrupt occurs). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
-|userId|String|The user identifier created during the sign up.|
+|userId|String|The identifier of the [user](../resources/user.md) object created during the sign-up.|
 
 ## Relationships
 None.

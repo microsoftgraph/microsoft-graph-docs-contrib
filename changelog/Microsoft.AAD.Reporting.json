@@ -1,9 +1,57 @@
 {
   "changelog": [
-    {
+      {
       "ChangeList": [
         {
-          "Id": "17ad1528-ba3e-4dc2-8167-baabbb5c0877",
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "signUpIdentifierType",
+          "ChangeType": "Addition",
+          "Description": "Added the **signUpIdentifierType** enumeration type.",
+          "Target": "signUpIdentifierType"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "signUpStage",
+          "ChangeType": "Addition",
+          "Description": "Added the **signUpStage** enumeration type.",
+          "Target": "signUpStage"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "signUps",
+          "ChangeType": "Addition",
+          "Description": "Added the **signUps** relationship to the [auditLogRoot](https://learn.microsoft.com/en-us/graph/api/resources/auditLogRoot?view=graph-rest-beta) resource.",
+          "Target": "auditLogRoot"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signUpIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [signUpIdentity](https://learn.microsoft.com/en-us/graph/api/resources/signUpIdentity?view=graph-rest-beta) resource.",
+          "Target": "signUpIdentity"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signUpStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [signUpStatus](https://learn.microsoft.com/en-us/graph/api/resources/signUpStatus?view=graph-rest-beta) resource.",
+          "Target": "signUpStatus"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Resource",
+          "ChangedApiName": "selfServiceSignUp",
+          "ChangeType": "Addition",
+          "Description": "Added the [selfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/selfServiceSignUp?view=graph-rest-beta) resource. Use this resource to analyze self-service sign-up requests in Microsoft Entra External ID.",
+          "Target": "selfServiceSignUp"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
           "ApiChange": "Resource",
           "ChangedApiName": "ciamUserSnapshot",
           "ChangeType": "Deletion",
@@ -11,7 +59,7 @@
           "Target": "ciamUserSnapshot"
         },
         {
-          "Id": "17ad1528-ba3e-4dc2-8167-baabbb5c0877",
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
           "ApiChange": "Property",
           "ChangedApiName": "userId",
           "ChangeType": "Addition",
@@ -19,7 +67,7 @@
           "Target": "selfServiceSignUp"
         },
         {
-          "Id": "17ad1528-ba3e-4dc2-8167-baabbb5c0877",
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
           "ApiChange": "Property",
           "ChangedApiName": "userSnapshot",
           "ChangeType": "Deletion",
@@ -27,10 +75,10 @@
           "Target": "selfServiceSignUp"
         }
       ],
-      "Id": "17ad1528-ba3e-4dc2-8167-baabbb5c0877",
+      "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-05-01T00:01:50.8788889Z",
+      "CreatedDateTime": "2025-06-20T04:05:00.070367Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
@@ -3144,64 +3192,6 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-10-24T19:42:37.8361251Z",
-      "WorkloadArea": "Reports",
-      "SubArea": "Identity and access reports"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "signUpIdentifierType",
-          "ChangeType": "Addition",
-          "Description": "Added the **signUpIdentifierType** enumeration type.",
-          "Target": "signUpIdentifierType"
-        },
-        {
-          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "signUpStage",
-          "ChangeType": "Addition",
-          "Description": "Added the **signUpStage** enumeration type.",
-          "Target": "signUpStage"
-        },
-        {
-          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "signUps",
-          "ChangeType": "Addition",
-          "Description": "Added the **signUps** relationship to the [auditLogRoot](https://learn.microsoft.com/en-us/graph/api/resources/auditLogRoot?view=graph-rest-beta) resource.",
-          "Target": "auditLogRoot"
-        },
-        {
-          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
-          "ApiChange": "Resource",
-          "ChangedApiName": "signUpIdentity",
-          "ChangeType": "Addition",
-          "Description": "Added the [signUpIdentity](https://learn.microsoft.com/en-us/graph/api/resources/signUpIdentity?view=graph-rest-beta) resource.",
-          "Target": "signUpIdentity"
-        },
-        {
-          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
-          "ApiChange": "Resource",
-          "ChangedApiName": "signUpStatus",
-          "ChangeType": "Addition",
-          "Description": "Added the [signUpStatus](https://learn.microsoft.com/en-us/graph/api/resources/signUpStatus?view=graph-rest-beta) resource.",
-          "Target": "signUpStatus"
-        },
-        {
-          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
-          "ApiChange": "Resource",
-          "ChangedApiName": "selfServiceSignUp",
-          "ChangeType": "Addition",
-          "Description": "Added the [selfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/selfServiceSignUp?view=graph-rest-beta) resource.",
-          "Target": "selfServiceSignUp"
-        }
-      ],
-      "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2024-09-12T04:05:00.070367Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
