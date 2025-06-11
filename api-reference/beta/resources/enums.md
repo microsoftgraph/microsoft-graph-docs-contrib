@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 06/09/2025
+ms.date: 12/31/2024
 ---
 
 # Enum values
@@ -5282,4 +5282,3 @@ Possible values for user account types (group membership), per Windows definitio
 |blobId|
 |url|
 |unknownFutureValue|
-

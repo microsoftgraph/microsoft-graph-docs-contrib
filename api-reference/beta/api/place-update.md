@@ -14,14 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a place object.
+Update the properties of a place object, which can be a [desk](../resources/desk.md), [workspace](../resources/workspace.md), [room](../resources/room.md), [section](../resources/section.md), [floor](../resources/floor.md), or [building](../resources/building.md).
 
 ## Permissions
-
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- {
-  "blockType": "permissions",
   "name": "place-update-permissions"
 }
 -->
@@ -34,8 +30,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /places/{placesId}
+PATCH /places/{id | placeId | emailAddress}
 ```
+- {id} is the unique identifier of the **place** to update.
+- {placeId} is a unique alternate identifier of the **place** to update.
+- {emailAddress} is the String email address of the mailbox associated with this **place**.
 
 ## Request headers
 
@@ -48,22 +47,12 @@ PATCH /places/{placesId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+For best performance, don't include existing values that haven't changed.
 
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|**TODO: Add Description** Required.|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Optional.|
-|phone|String|**TODO: Add Description** Optional.|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Optional.|
-|placeId|String|**TODO: Add Description** Optional.|
-|parentId|String|**TODO: Add Description** Optional.|
-|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Required.|
-|tags|String collection|**TODO: Add Description** Required.|
-|isWheelChairAccessible|Boolean|**TODO: Add Description** Required.|
-|label|String|**TODO: Add Description** Optional.|
+Only one instance of a **place** resource can be updated at a time. In the request body, use `@odata.type` to specify the type of place and include the properties to update.
 
-
+> [!Note]
+> You can't use this API to update the **id**, **placeID**, **emailAddress**, or **bookingType** of a [place](../resources/place.md) object.
 
 ## Response
 
