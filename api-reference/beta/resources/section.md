@@ -29,19 +29,8 @@ Inherits from [place](../resources/place.md).
 |[descendants](../api/section-descendants.md)|List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, rooms, desks, or workspaces) under a given **section**.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|label|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|tags|String collection|**TODO: Add Description** Inherited from [place](../resources/place.md).|
+
+The **section** object type has no unique properties and inherits all properties from the **place** object type.
 
 ## Relationships
 None.

@@ -1,6 +1,6 @@
 ---
 title: "section: descendants"
-description: "**TODO: Add Description**"
+description: "Returns a list of place objects that are parented to the specified section."
 author: "MSGraphDocsvTeam"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Returns a list of [place](../resources/place.md) objects that are parented to the specified section.
 
 ## Permissions
 
