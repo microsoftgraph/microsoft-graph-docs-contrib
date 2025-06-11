@@ -1,6 +1,6 @@
 ---
 title: List users in Go apps using Microsoft Graph
-description: Learn how use Microsoft Graph to list users with app-only authentication in Go apps
+description: Learn how to use Microsoft Graph to list users with app-only authentication in Go apps
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -10,7 +10,9 @@ ms.localizationpriority: medium
 
 # List users in Go apps using Microsoft Graph
 
-In this article, you'll extend the application you created in [Build Go apps with Microsoft Graph and app-only authentication](go-app-only.md) with Microsoft Graph user APIs. You'll use Microsoft Graph to list users in your organization.
+<!-- cSpell:ignore graphhelper, graphapponlytutorial, Pisani -->
+
+In this article, you extend the application you created in [Build Go apps with Microsoft Graph and app-only authentication](go-app-only.md) with Microsoft Graph user APIs. You use Microsoft Graph to list users in your organization.
 
 1. Add the following function to **./graphhelper/graphhelper.go**.
 

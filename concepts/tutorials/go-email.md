@@ -1,6 +1,6 @@
 ---
 title: Add email capabilities to Go apps using Microsoft Graph
-description: Learn how use Microsoft Graph to read and send email in Go apps
+description: Learn how to use Microsoft Graph to read and send email in Go apps
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -10,7 +10,9 @@ ms.localizationpriority: medium
 
 # Add email capabilities to Go apps using Microsoft Graph
 
-In this article, you'll extend the application you created in [Build Go apps with Microsoft Graph](go.md) with Microsoft Graph mail APIs. You'll use Microsoft Graph to list the user's inbox and send an email.
+<!-- cSpell:ignore graphhelper, graphtutorial -->
+
+In this article, you extend the application you created in [Build Go apps with Microsoft Graph](go.md) with Microsoft Graph mail APIs. You use Microsoft Graph to list the user's inbox and send an email.
 
 ## List user's inbox
 
@@ -70,26 +72,26 @@ Consider the code in the `GetInbox` function.
 
 #### Accessing well-known mail folders
 
-The function uses the `userClient.Me().MailFolders.ByMailFolderId("inbox").Messages()` request builder, which builds a request to the [List messages](/graph/api/user-list-messages) API. Because it includes the `ByMailFolderId("inbox")` request builder, the API will only return messages in the requested mail folder. In this case, because the inbox is a default, well-known folder inside a user's mailbox, it's accessible via its well-known name. Non-default folders are accessed the same way, by replacing the well-known name with the mail folder's ID property. For details on the available well-known folder names, see [mailFolder resource type](/graph/api/resources/mailfolder).
+The function uses the `userClient.Me().MailFolders.ByMailFolderId("inbox").Messages()` request builder, which builds a request to the [List messages](/graph/api/user-list-messages) API. Because it includes the `ByMailFolderId("inbox")` request builder, the API only returns messages in the requested mail folder. In this case, because the inbox is a default, well-known folder inside a user's mailbox, it's accessible via its well-known name. Nondefault folders are accessed the same way, by replacing the well-known name with the mail folder's ID property. For details on the available well-known folder names, see [mailFolder resource type](/graph/api/resources/mailfolder).
 
 #### Accessing a collection
 
-Unlike the `GetUser` function from the previous section, which returns a single object, this method returns a collection of messages. Most APIs in Microsoft Graph that return a collection do not return all available results in a single response. Instead, they use [paging](/graph/paging) to return a portion of the results while providing a method for clients to request the next "page".
+Unlike the `GetUser` function from the previous section, which returns a single object, this method returns a collection of messages. Most APIs in Microsoft Graph that return a collection don't return all available results in a single response. Instead, they use [paging](/graph/paging) to return a portion of the results while providing a method for clients to request the next page.
 
 ##### Default page sizes
 
-APIs that use paging implement a default page size. For messages, the default value is 10. Clients can request more (or less) by using the [$top](/graph/query-parameters#top-parameter) query parameter. In `GetInbox`, this is accomplished with the `Top` property in the query parameters.
+APIs that use paging implement a default page size. For messages, the default value is 10. Clients can request more (or less) by using the [$top](/graph/query-parameters#top-parameter) query parameter. In `GetInbox`, adding `$top` is accomplished with the `Top` property in the query parameters.
 
 > [!NOTE]
 > The value passed in `Top` is an upper-bound, not an explicit number. The API returns a number of messages *up to* the specified value.
 
 ##### Getting subsequent pages
 
-If there are more results available on the server, collection responses include an `@odata.nextLink` property with an API URL to access the next page. The Go SDK exposes this as the `GetOdataNextLink` method on collection page objects. If this method returns non-nil, there are more results available.
+If there are more results available on the server, collection responses include an `@odata.nextLink` property with an API URL to access the next page. The Go SDK provides the `GetOdataNextLink` method on collection page objects. If this method returns non-nil, there are more results available.
 
 #### Sorting collections
 
-The function uses the `OrderBy` property in the query parameters to request results sorted by the time the message is received (`receivedDateTime` property). It includes the `DESC` keyword so that messages received more recently are listed first. This adds the [$orderby query parameter](/graph/query-parameters#orderby-parameter) to the API call.
+The function uses the `OrderBy` property in the query parameters to request results sorted by the time the message is received (`receivedDateTime` property). It includes the `DESC` keyword so that messages received more recently are listed first. The `OrderBy` property adds the [$orderby query parameter](/graph/query-parameters#orderby-parameter) to the API call.
 
 ## Send mail
 
@@ -130,7 +132,7 @@ The function uses the `userClient.Me().SendMail()` request builder, which builds
 
 #### Creating objects
 
-Unlike the previous calls to Microsoft Graph that only read data, this call creates data. To do this with the client library you create an instance of the class representing the data (in this case, `models.Message`), set the desired properties, then send it in the API call. Because the call is sending data, the `Post` method is used instead of `Get`.
+Unlike the previous calls to Microsoft Graph that only read data, this call creates data. To create items with the client library, create an instance of the class representing the data (in this case, `models.Message`), set the desired properties, then send it in the API call. Because the call is sending data, the `Post` method is used instead of `Get`.
 
 ## Next step
 

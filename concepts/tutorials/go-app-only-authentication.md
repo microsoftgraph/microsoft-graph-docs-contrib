@@ -10,26 +10,28 @@ ms.localizationpriority: medium
 
 # Add app-only authentication to Go apps for Microsoft Graph
 
-In this article, you'll add app-only authentication to the application you created in [Build Go apps with Microsoft Graph and app-only authentication](go-app-only.md).
+<!-- cSpell:ignore graphhelper, goimports, graphapponlytutorial -->
 
-The [Azure Identity Client Module for Go](https://github.com/Azure/azure-sdk-for-go/tree/main/sdk/azidentity) provides a number of `TokenCredential` classes that implement OAuth2 token flows. The [Microsoft Graph SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go) uses those classes to authenticate calls to Microsoft Graph.
+In this article, you add app-only authentication to the application you created in [Build Go apps with Microsoft Graph and app-only authentication](go-app-only.md).
+
+The [Azure Identity Client Module for Go](https://github.com/Azure/azure-sdk-for-go/tree/main/sdk/azidentity) provides many `TokenCredential` classes that implement OAuth2 token flows. The [Microsoft Graph SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go) uses those classes to authenticate calls to Microsoft Graph.
 
 ## Configure Graph client for app-only authentication
 
-In this section you will use the `ClientSecretCredential` class to request an access token by using the [client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
+In this section, you use the `ClientSecretCredential` class to request an access token by using the [client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
 1. Add the following function to **./graphhelper/graphhelper.go**.
 
     :::code language="go" source="includes/go/src/app-auth/graphapponlytutorial/graphhelper/graphhelper.go" id="AppAuthConfigSnippet":::
 
     > [!TIP]
-    > If you are using **goimports**, some modules may have been auto-removed from your `import` statement in **graphhelper.go** on save. You may need to re-add the modules to build.
+    > If you're using `goimports`, some modules might be removed from your `import` statement in **graphhelper.go** on save. You might need to add the modules again to build.
 
 1. Replace the empty `initializeGraph` function in **graphapponlytutorial.go** with the following.
 
     :::code language="go" source="includes/go/src/app-auth/graphapponlytutorial/graphapponlytutorial.go" id="InitializeGraphSnippet":::
 
-This code initializes two properties, a `DeviceCodeCredential` object and a `GraphServiceClient` object. The `InitializeGraphForUserAuth` function creates a new instance of `DeviceCodeCredential`, then uses that instance to create a new instance of `GraphServiceClient`. Every time an API call is made to Microsoft Graph through the `userClient`, it will use the provided credential to get an access token.
+This code initializes two properties, a `DeviceCodeCredential` object and a `GraphServiceClient` object. The `InitializeGraphForUserAuth` function creates a new instance of `DeviceCodeCredential`, then uses that instance to create a new instance of `GraphServiceClient`. Every time an API call is made to Microsoft Graph through the `userClient`, it uses the provided credential to get an access token.
 
 ## Test the ClientSecretCredential
 

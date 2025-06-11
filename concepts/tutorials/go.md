@@ -1,6 +1,6 @@
 ---
 title: Build Go apps with Microsoft Graph
-description: In this tutorial, you'll build a Go app that uses Azure Active Directory for authentication and Microsoft Graph for retrieving data.
+description: In this tutorial, you build a Go app that uses Microsoft Entra ID for authentication and Microsoft Graph for retrieving data.
 author: jasonjoh
 ms.author: jasonjoh
 ms.topic: how-to
@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ---
 
 # Build Go apps with Microsoft Graph
+
+<!-- cSpell:ignore graphhelper, graphtutorial -->
 
 This tutorial teaches you how to build a Go console app that uses the Microsoft Graph API to access data on behalf of a user.
 
@@ -33,7 +35,7 @@ Before you start this tutorial, you should have [Go](https://go.dev/) installed 
 [!INCLUDE [account-requirements](includes/shared/account-requirements.md)]
 
 > [!NOTE]
-> This tutorial was written with Go version 1.19.3. The steps in this guide may work with other versions, but that has not been tested.
+> This tutorial was written with Go version 1.19.3. The steps in this guide might work with other versions, but that hasn't been tested.
 
 [!INCLUDE [user-auth-app-reg-steps](includes/shared/user-auth-app-reg-steps.md)]
 
@@ -47,13 +49,13 @@ go mod init graphtutorial
 
 ## Install dependencies
 
-Before moving on, add some additional dependencies that you will use later.
+Before moving on, add dependencies that you use later.
 
 - [Azure Identity Client Module for Go](https://github.com/Azure/azure-sdk-for-go/tree/main/sdk/azidentity) to authenticate the user and acquire access tokens.
 - [Microsoft Graph SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go) to make calls to the Microsoft Graph.
 - [GoDotEnv](https://github.com/joho/godotenv) for reading environment variables from .env files.
 
-Run the following commands in your CLI to install the dependencies.
+To install the dependencies, run the following commands in your CLI.
 
 ```bash
 go get github.com/Azure/azure-sdk-for-go/sdk/azidentity
@@ -89,13 +91,13 @@ Continue by creating a simple console-based menu.
 
     :::code language="go" source="includes/go/src/user-auth/graphtutorial/graphhelper/graphhelper.go" id="GraphHelperSnippet":::
 
-    This creates a basic **GraphHelper** type that you will extend in later sections to use Microsoft Graph.
+    This code creates a basic **GraphHelper** type that you extend in later sections to use Microsoft Graph.
 
 1. Create a file in the same directory as **go.mod** named **graphtutorial.go**. Add the following code.
 
     :::code language="go" source="includes/go/src/user-auth/graphtutorial/graphtutorial.go" id="ProgramSnippet":::
 
-1. Add the following placeholder methods at the end of the file. You'll implement them in later steps.
+1. Add the following placeholder methods at the end of the file. You implement them in later steps.
 
     ```go
     func initializeGraph(graphHelper *graphhelper.GraphHelper) {
