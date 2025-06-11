@@ -3,273 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "labelActionSource",
-          "ChangeType": "Addition",
-          "Description": "Added the **labelActionSource** enumeration type.",
-          "Target": "labelActionSource"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "usageRights",
-          "ChangeType": "Addition",
-          "Description": "Added the **usageRights** enumeration type.",
-          "Target": "usageRights"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "sensitivityLabelTarget",
-          "ChangeType": "Addition",
-          "Description": "Added the **sensitivityLabelTarget** enumeration type.",
-          "Target": "sensitivityLabelTarget"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "applicationMode",
-          "ChangeType": "Addition",
-          "Description": "Added the **applicationMode** enumeration type.",
-          "Target": "applicationMode"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "computeRightsAndInheritanceResult",
-          "ChangeType": "Addition",
-          "Description": "Added the [computeRightsAndInheritanceResult](https://learn.microsoft.com/en-us/graph/api/resources/computeRightsAndInheritanceResult?view=graph-rest-beta) resource.",
-          "Target": "computeRightsAndInheritanceResult"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "protectedContent",
-          "ChangeType": "Addition",
-          "Description": "Added the [protectedContent](https://learn.microsoft.com/en-us/graph/api/resources/protectedContent?view=graph-rest-beta) resource.",
-          "Target": "protectedContent"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "labelActionBase",
-          "ChangeType": "Addition",
-          "Description": "Added the [labelActionBase](https://learn.microsoft.com/en-us/graph/api/resources/labelActionBase?view=graph-rest-beta) resource.",
-          "Target": "labelActionBase"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "labelContentRight",
-          "ChangeType": "Addition",
-          "Description": "Added the [labelContentRight](https://learn.microsoft.com/en-us/graph/api/resources/labelContentRight?view=graph-rest-beta) resource.",
-          "Target": "labelContentRight"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "labelPolicy",
-          "ChangeType": "Addition",
-          "Description": "Added the [labelPolicy](https://learn.microsoft.com/en-us/graph/api/resources/labelPolicy?view=graph-rest-beta) resource.",
-          "Target": "labelPolicy"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "autoLabeling",
-          "ChangeType": "Addition",
-          "Description": "Added the [autoLabeling](https://learn.microsoft.com/en-us/graph/api/resources/autoLabeling?view=graph-rest-beta) resource.",
-          "Target": "autoLabeling"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "blockAccessAction",
-          "ChangeType": "Addition",
-          "Description": "Added the [blockAccessAction](https://learn.microsoft.com/en-us/graph/api/resources/blockAccessAction?view=graph-rest-beta) resource.",
-          "Target": "blockAccessAction"
-        },
-                {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "classifcationErrorBase",
-          "ChangeType": "Addition",
-          "Description": "Added the [classifcationErrorBase](https://learn.microsoft.com/en-us/graph/api/resources/classifcationErrorBase?view=graph-rest-beta) resource.",
-          "Target": "classifcationErrorBase"
-        },
-                {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "classificationError",
-          "ChangeType": "Addition",
-          "Description": "Added the [classificationError](https://learn.microsoft.com/en-us/graph/api/resources/classificationError?view=graph-rest-beta) resource.",
-          "Target": "classificationError"
-        },
-                {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "classificationInnerError",
-          "ChangeType": "Addition",
-          "Description": "Added the [classificationInnerError](https://learn.microsoft.com/en-us/graph/api/resources/classificationInnerError?view=graph-rest-beta) resource.",
-          "Target": "classificationInnerError"
-        },
-                {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "customMetadataDictionary",
-          "ChangeType": "Addition",
-          "Description": "Added the [customMetadataDictionary](https://learn.microsoft.com/en-us/graph/api/resources/customMetadataDictionary?view=graph-rest-beta) resource.",
-          "Target": "customMetadataDictionary"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Property",
-          "ChangedApiName": "actionSource",
-          "ChangeType": "Addition",
-          "Description": "Added the **actionSource** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Property",
-          "ChangedApiName": "autoTooltip",
-          "ChangeType": "Addition",
-          "Description": "Added the **autoTooltip** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Property",
-          "ChangedApiName": "isScopedToUser",
-          "ChangeType": "Addition",
-          "Description": "Added the **isScopedToUser** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Property",
-          "ChangedApiName": "locale",
-          "ChangeType": "Addition",
-          "Description": "Added the **locale** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Property",
-          "ChangedApiName": "autoLabeling",
-          "ChangeType": "Addition",
-          "Description": "Added the **autoLabeling** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Property",
-          "ChangedApiName": "applicableTo",
-          "ChangeType": "Addition",
-          "Description": "Added the **applicableTo** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Property",
-          "ChangedApiName": "displayName",
-          "ChangeType": "Addition",
-          "Description": "Added the **displayName** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Property",
-          "ChangedApiName": "isDefault",
-          "ChangeType": "Addition",
-          "Description": "Added the **isDefault** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-                {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Property",
-          "ChangedApiName": "isEnabled",
-          "ChangeType": "Addition",
-          "Description": "Added the **isEnabled** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-                {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Property",
-          "ChangedApiName": "isEndpointProtectionEnabled",
-          "ChangeType": "Addition",
-          "Description": "Added the **isEndpointProtectionEnabled** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-                {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Property",
-          "ChangedApiName": "labelActions",
-          "ChangeType": "Addition",
-          "Description": "Added the **labelActions** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-                {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Property",
-          "ChangedApiName": "priority",
-          "ChangeType": "Addition",
-          "Description": "Added the **priority** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "rights",
-          "ChangeType": "Addition",
-          "Description": "Added the **rights** relationship to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "sublabels",
-          "ChangeType": "Addition",
-          "Description": "Added the **sublabels** relationship to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "usageRightsIncluded",
-          "ChangeType": "Addition",
-          "Description": "Added the [usageRightsIncluded](https://learn.microsoft.com/en-us/graph/api/resources/usageRightsIncluded?view=graph-rest-beta) resource.",
-          "Target": "usageRightsIncluded"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Method",
-          "ChangedApiName": "computeRightsAndInheritance",
-          "ChangeType": "Addition",
-          "Description": "Added the [computeRightsAndInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeRightsAndInheritance?view=graph-rest-beta) method to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-          "ApiChange": "Method",
-          "ChangedApiName": "computeInheritance",
-          "ChangeType": "Addition",
-          "Description": "Added the [computeInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeInheritance?view=graph-rest-beta) method to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "sensitivityLabel"
-        }
-      ],
-      "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-05-13T21:52:01.8849287Z",
-      "WorkloadArea": "Security",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Enumeration",
           "ChangedApiName": "contentProcessingErrorType",
           "ChangeType": "Addition",
@@ -277,7 +11,15 @@
           "Target": "contentProcessingErrorType"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "dlpAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **dlpAction** enumeration type.",
+          "Target": "dlpAction"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Enumeration",
           "ChangedApiName": "executionMode",
           "ChangeType": "Addition",
@@ -285,7 +27,15 @@
           "Target": "executionMode"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "labelActionSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **labelActionSource** enumeration type.",
+          "Target": "labelActionSource"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Enumeration",
           "ChangedApiName": "policyPivotProperty",
           "ChangeType": "Addition",
@@ -293,7 +43,7 @@
           "Target": "policyPivotProperty"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Enumeration",
           "ChangedApiName": "protectionScopeState",
           "ChangeType": "Addition",
@@ -301,7 +51,23 @@
           "Target": "protectionScopeState"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "restrictionAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **restrictionAction** enumeration type.",
+          "Target": "restrictionAction"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "usageRights",
+          "ChangeType": "Addition",
+          "Description": "Added the **usageRights** enumeration type.",
+          "Target": "usageRights"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Enumeration",
           "ChangedApiName": "userActivityType",
           "ChangeType": "Addition",
@@ -309,7 +75,7 @@
           "Target": "userActivityType"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Enumeration",
           "ChangedApiName": "userActivityTypes",
           "ChangeType": "Addition",
@@ -317,7 +83,7 @@
           "Target": "userActivityTypes"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Enumeration",
           "ChangedApiName": "userScopeType",
           "ChangeType": "Addition",
@@ -325,311 +91,439 @@
           "Target": "userScopeType"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "activityMetadata",
           "ChangeType": "Addition",
-          "Description": "Added the [activityMetadata](https://learn.microsoft.com/en-us/graph/api/resources/activityMetadata?view=graph-rest-beta) resource.",
+          "Description": "Added the [activityMetadata](https://learn.microsoft.com/en-us/graph/api/resources/activityMetadata?view=graph-rest-1.0) resource.",
           "Target": "activityMetadata"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionPlugin",
           "ChangeType": "Addition",
-          "Description": "Added the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource.",
+          "Description": "Added the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-1.0) resource.",
           "Target": "aiInteractionPlugin"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "binaryContent",
           "ChangeType": "Addition",
-          "Description": "Added the [binaryContent](https://learn.microsoft.com/en-us/graph/api/resources/binaryContent?view=graph-rest-beta) resource.",
+          "Description": "Added the [binaryContent](https://learn.microsoft.com/en-us/graph/api/resources/binaryContent?view=graph-rest-1.0) resource.",
           "Target": "binaryContent"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "classifcationErrorBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [classifcationErrorBase](https://learn.microsoft.com/en-us/graph/api/resources/classifcationErrorBase?view=graph-rest-1.0) resource.",
+          "Target": "classifcationErrorBase"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "classificationError",
+          "ChangeType": "Addition",
+          "Description": "Added the [classificationError](https://learn.microsoft.com/en-us/graph/api/resources/classificationError?view=graph-rest-1.0) resource.",
+          "Target": "classificationError"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "classificationInnerError",
+          "ChangeType": "Addition",
+          "Description": "Added the [classificationInnerError](https://learn.microsoft.com/en-us/graph/api/resources/classificationInnerError?view=graph-rest-1.0) resource.",
+          "Target": "classificationInnerError"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "computeRightsAndInheritanceResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [computeRightsAndInheritanceResult](https://learn.microsoft.com/en-us/graph/api/resources/computeRightsAndInheritanceResult?view=graph-rest-1.0) resource.",
+          "Target": "computeRightsAndInheritanceResult"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "contentBase",
           "ChangeType": "Addition",
-          "Description": "Added the [contentBase](https://learn.microsoft.com/en-us/graph/api/resources/contentBase?view=graph-rest-beta) resource.",
+          "Description": "Added the [contentBase](https://learn.microsoft.com/en-us/graph/api/resources/contentBase?view=graph-rest-1.0) resource.",
           "Target": "contentBase"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customMetadataDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [customMetadataDictionary](https://learn.microsoft.com/en-us/graph/api/resources/customMetadataDictionary?view=graph-rest-1.0) resource.",
+          "Target": "customMetadataDictionary"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceMetadata](https://learn.microsoft.com/en-us/graph/api/resources/deviceMetadata?view=graph-rest-1.0) resource.",
+          "Target": "deviceMetadata"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dlpActionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [dlpActionInfo](https://learn.microsoft.com/en-us/graph/api/resources/dlpActionInfo?view=graph-rest-1.0) resource.",
+          "Target": "dlpActionInfo"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "groupScope",
           "ChangeType": "Addition",
-          "Description": "Added the [groupScope](https://learn.microsoft.com/en-us/graph/api/resources/groupScope?view=graph-rest-beta) resource.",
+          "Description": "Added the [groupScope](https://learn.microsoft.com/en-us/graph/api/resources/groupScope?view=graph-rest-1.0) resource.",
           "Target": "groupScope"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "integratedApplicationMetadata",
           "ChangeType": "Addition",
-          "Description": "Added the [integratedApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/integratedApplicationMetadata?view=graph-rest-beta) resource.",
+          "Description": "Added the [integratedApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/integratedApplicationMetadata?view=graph-rest-1.0) resource.",
           "Target": "integratedApplicationMetadata"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "operatingSystemSpecifications",
+          "ChangeType": "Addition",
+          "Description": "Added the [operatingSystemSpecifications](https://learn.microsoft.com/en-us/graph/api/resources/operatingSystemSpecifications?view=graph-rest-1.0) resource.",
+          "Target": "operatingSystemSpecifications"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "policyBinding",
           "ChangeType": "Addition",
-          "Description": "Added the [policyBinding](https://learn.microsoft.com/en-us/graph/api/resources/policyBinding?view=graph-rest-beta) resource.",
+          "Description": "Added the [policyBinding](https://learn.microsoft.com/en-us/graph/api/resources/policyBinding?view=graph-rest-1.0) resource.",
           "Target": "policyBinding"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "policyLocation",
           "ChangeType": "Addition",
-          "Description": "Added the [policyLocation](https://learn.microsoft.com/en-us/graph/api/resources/policyLocation?view=graph-rest-beta) resource.",
+          "Description": "Added the [policyLocation](https://learn.microsoft.com/en-us/graph/api/resources/policyLocation?view=graph-rest-1.0) resource.",
           "Target": "policyLocation"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyLocationApplication",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyLocationApplication](https://learn.microsoft.com/en-us/graph/api/resources/policyLocationApplication?view=graph-rest-1.0) resource.",
+          "Target": "policyLocationApplication"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "policyLocationDomain",
           "ChangeType": "Addition",
-          "Description": "Added the [policyLocationDomain](https://learn.microsoft.com/en-us/graph/api/resources/policyLocationDomain?view=graph-rest-beta) resource.",
+          "Description": "Added the [policyLocationDomain](https://learn.microsoft.com/en-us/graph/api/resources/policyLocationDomain?view=graph-rest-1.0) resource.",
           "Target": "policyLocationDomain"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "policyLocationUrl",
           "ChangeType": "Addition",
-          "Description": "Added the [policyLocationUrl](https://learn.microsoft.com/en-us/graph/api/resources/policyLocationUrl?view=graph-rest-beta) resource.",
+          "Description": "Added the [policyLocationUrl](https://learn.microsoft.com/en-us/graph/api/resources/policyLocationUrl?view=graph-rest-1.0) resource.",
           "Target": "policyLocationUrl"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "policyScopeBase",
           "ChangeType": "Addition",
-          "Description": "Added the [policyScopeBase](https://learn.microsoft.com/en-us/graph/api/resources/policyScopeBase?view=graph-rest-beta) resource.",
+          "Description": "Added the [policyScopeBase](https://learn.microsoft.com/en-us/graph/api/resources/policyScopeBase?view=graph-rest-1.0) resource.",
           "Target": "policyScopeBase"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "policyTenantScope",
           "ChangeType": "Addition",
-          "Description": "Added the [policyTenantScope](https://learn.microsoft.com/en-us/graph/api/resources/policyTenantScope?view=graph-rest-beta) resource.",
+          "Description": "Added the [policyTenantScope](https://learn.microsoft.com/en-us/graph/api/resources/policyTenantScope?view=graph-rest-1.0) resource.",
           "Target": "policyTenantScope"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "policyUserScope",
           "ChangeType": "Addition",
-          "Description": "Added the [policyUserScope](https://learn.microsoft.com/en-us/graph/api/resources/policyUserScope?view=graph-rest-beta) resource.",
+          "Description": "Added the [policyUserScope](https://learn.microsoft.com/en-us/graph/api/resources/policyUserScope?view=graph-rest-1.0) resource.",
           "Target": "policyUserScope"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentBatchRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [processContentBatchRequest](https://learn.microsoft.com/en-us/graph/api/resources/processContentBatchRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [processContentBatchRequest](https://learn.microsoft.com/en-us/graph/api/resources/processContentBatchRequest?view=graph-rest-1.0) resource.",
           "Target": "processContentBatchRequest"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentMetadataBase",
           "ChangeType": "Addition",
-          "Description": "Added the [processContentMetadataBase](https://learn.microsoft.com/en-us/graph/api/resources/processContentMetadataBase?view=graph-rest-beta) resource.",
+          "Description": "Added the [processContentMetadataBase](https://learn.microsoft.com/en-us/graph/api/resources/processContentMetadataBase?view=graph-rest-1.0) resource.",
           "Target": "processContentMetadataBase"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [processContentRequest](https://learn.microsoft.com/en-us/graph/api/resources/processContentRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [processContentRequest](https://learn.microsoft.com/en-us/graph/api/resources/processContentRequest?view=graph-rest-1.0) resource.",
           "Target": "processContentRequest"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [processContentResponse](https://learn.microsoft.com/en-us/graph/api/resources/processContentResponse?view=graph-rest-beta) resource.",
+          "Description": "Added the [processContentResponse](https://learn.microsoft.com/en-us/graph/api/resources/processContentResponse?view=graph-rest-1.0) resource.",
           "Target": "processContentResponse"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "processContentResponses",
           "ChangeType": "Addition",
-          "Description": "Added the [processContentResponses](https://learn.microsoft.com/en-us/graph/api/resources/processContentResponses?view=graph-rest-beta) resource.",
+          "Description": "Added the [processContentResponses](https://learn.microsoft.com/en-us/graph/api/resources/processContentResponses?view=graph-rest-1.0) resource.",
           "Target": "processContentResponses"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "processConversationMetadata",
           "ChangeType": "Addition",
-          "Description": "Added the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-beta) resource.",
+          "Description": "Added the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-1.0) resource.",
           "Target": "processConversationMetadata"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "processFileMetadata",
           "ChangeType": "Addition",
-          "Description": "Added the [processFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processFileMetadata?view=graph-rest-beta) resource.",
+          "Description": "Added the [processFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processFileMetadata?view=graph-rest-1.0) resource.",
           "Target": "processFileMetadata"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "processingError",
           "ChangeType": "Addition",
-          "Description": "Added the [processingError](https://learn.microsoft.com/en-us/graph/api/resources/processingError?view=graph-rest-beta) resource.",
+          "Description": "Added the [processingError](https://learn.microsoft.com/en-us/graph/api/resources/processingError?view=graph-rest-1.0) resource.",
           "Target": "processingError"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "protectedApplicationMetadata",
           "ChangeType": "Addition",
-          "Description": "Added the [protectedApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/protectedApplicationMetadata?view=graph-rest-beta) resource.",
+          "Description": "Added the [protectedApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/protectedApplicationMetadata?view=graph-rest-1.0) resource.",
           "Target": "protectedApplicationMetadata"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectedContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [protectedContent](https://learn.microsoft.com/en-us/graph/api/resources/protectedContent?view=graph-rest-1.0) resource.",
+          "Target": "protectedContent"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restrictAccessAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [restrictAccessAction](https://learn.microsoft.com/en-us/graph/api/resources/restrictAccessAction?view=graph-rest-1.0) resource.",
+          "Target": "restrictAccessAction"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restrictAccessActionBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [restrictAccessActionBase](https://learn.microsoft.com/en-us/graph/api/resources/restrictAccessActionBase?view=graph-rest-1.0) resource.",
+          "Target": "restrictAccessActionBase"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "scopeBase",
           "ChangeType": "Addition",
-          "Description": "Added the [scopeBase](https://learn.microsoft.com/en-us/graph/api/resources/scopeBase?view=graph-rest-beta) resource.",
+          "Description": "Added the [scopeBase](https://learn.microsoft.com/en-us/graph/api/resources/scopeBase?view=graph-rest-1.0) resource.",
           "Target": "scopeBase"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantScope",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantScope](https://learn.microsoft.com/en-us/graph/api/resources/tenantScope?view=graph-rest-beta) resource.",
+          "Description": "Added the [tenantScope](https://learn.microsoft.com/en-us/graph/api/resources/tenantScope?view=graph-rest-1.0) resource.",
           "Target": "tenantScope"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "textContent",
           "ChangeType": "Addition",
-          "Description": "Added the [textContent](https://learn.microsoft.com/en-us/graph/api/resources/textContent?view=graph-rest-beta) resource.",
+          "Description": "Added the [textContent](https://learn.microsoft.com/en-us/graph/api/resources/textContent?view=graph-rest-1.0) resource.",
           "Target": "textContent"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "userScope",
           "ChangeType": "Addition",
-          "Description": "Added the [userScope](https://learn.microsoft.com/en-us/graph/api/resources/userScope?view=graph-rest-beta) resource.",
+          "Description": "Added the [userScope](https://learn.microsoft.com/en-us/graph/api/resources/userScope?view=graph-rest-1.0) resource.",
           "Target": "userScope"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "activitiesContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [activitiesContainer](https://learn.microsoft.com/en-us/graph/api/resources/activitiesContainer?view=graph-rest-beta) resource.",
+          "Description": "Added the [activitiesContainer](https://learn.microsoft.com/en-us/graph/api/resources/activitiesContainer?view=graph-rest-1.0) resource.",
           "Target": "activitiesContainer"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "contentActivity",
           "ChangeType": "Addition",
-          "Description": "Added the [contentActivity](https://learn.microsoft.com/en-us/graph/api/resources/contentActivity?view=graph-rest-beta) resource.",
+          "Description": "Added the [contentActivity](https://learn.microsoft.com/en-us/graph/api/resources/contentActivity?view=graph-rest-1.0) resource.",
           "Target": "contentActivity"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "dataSecurityAndGovernance",
           "ChangeType": "Addition",
-          "Description": "Added the [dataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/dataSecurityAndGovernance?view=graph-rest-beta) resource.",
+          "Description": "Added the [dataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/dataSecurityAndGovernance?view=graph-rest-1.0) resource.",
           "Target": "dataSecurityAndGovernance"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "labelContentRight",
+          "ChangeType": "Addition",
+          "Description": "Added the [labelContentRight](https://learn.microsoft.com/en-us/graph/api/resources/labelContentRight?view=graph-rest-1.0) resource.",
+          "Target": "labelContentRight"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantDataSecurityAndGovernance",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/tenantDataSecurityAndGovernance?view=graph-rest-beta) resource.",
+          "Description": "Added the [tenantDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/tenantDataSecurityAndGovernance?view=graph-rest-1.0) resource.",
           "Target": "tenantDataSecurityAndGovernance"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantProtectionScopeContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/tenantProtectionScopeContainer?view=graph-rest-beta) resource.",
+          "Description": "Added the [tenantProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/tenantProtectionScopeContainer?view=graph-rest-1.0) resource.",
           "Target": "tenantProtectionScopeContainer"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "usageRightsIncluded",
+          "ChangeType": "Addition",
+          "Description": "Added the [usageRightsIncluded](https://learn.microsoft.com/en-us/graph/api/resources/usageRightsIncluded?view=graph-rest-1.0) resource.",
+          "Target": "usageRightsIncluded"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "userDataSecurityAndGovernance",
           "ChangeType": "Addition",
-          "Description": "Added the [userDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/userDataSecurityAndGovernance?view=graph-rest-beta) resource.",
+          "Description": "Added the [userDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/userDataSecurityAndGovernance?view=graph-rest-1.0) resource.",
           "Target": "userDataSecurityAndGovernance"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "userProtectionScopeContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [userProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/userProtectionScopeContainer?view=graph-rest-beta) resource.",
+          "Description": "Added the [userProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/userProtectionScopeContainer?view=graph-rest-1.0) resource.",
           "Target": "userProtectionScopeContainer"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Method",
           "ChangedApiName": "compute",
           "ChangeType": "Addition",
-          "Description": "Added the [compute](https://learn.microsoft.com/en-us/graph/api/tenantprotectionscopecontainer-compute?view=graph-rest-beta) method to the [tenantProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/tenantProtectionScopeContainer?view=graph-rest-beta) resource.",
+          "Description": "Added the [compute](https://learn.microsoft.com/en-us/graph/api/tenantProtectionScopeContainer-compute?view=graph-rest-1.0) method to the [tenantProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/tenantProtectionScopeContainer?view=graph-rest-1.0) resource.",
           "Target": "tenantProtectionScopeContainer"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Method",
           "ChangedApiName": "compute",
           "ChangeType": "Addition",
-          "Description": "Added the [compute](https://learn.microsoft.com/en-us/graph/api/userprotectionscopecontainer-compute?view=graph-rest-beta) method to the [userProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/userProtectionScopeContainer?view=graph-rest-beta) resource.",
+          "Description": "Added the [compute](https://learn.microsoft.com/en-us/graph/api/userProtectionScopeContainer-compute?view=graph-rest-1.0) method to the [userProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/userProtectionScopeContainer?view=graph-rest-1.0) resource.",
           "Target": "userProtectionScopeContainer"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Method",
+          "ChangedApiName": "computeRightsAndInheritance",
+          "ChangeType": "Addition",
+          "Description": "Added the [computeRightsAndInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeRightsAndInheritance?view=graph-rest-1.0) method to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-1.0) resource.",
+          "Target": "sensitivityLabel"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Method",
           "ChangedApiName": "processContent",
           "ChangeType": "Addition",
-          "Description": "Added the [processContent](https://learn.microsoft.com/en-us/graph/api/userDataSecurityAndGovernance-processContent?view=graph-rest-beta) method to the [userDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/userDataSecurityAndGovernance?view=graph-rest-beta) resource.",
+          "Description": "Added the [processContent](https://learn.microsoft.com/en-us/graph/api/userDataSecurityAndGovernance-processContent?view=graph-rest-1.0) method to the [userDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/userDataSecurityAndGovernance?view=graph-rest-1.0) resource.",
           "Target": "userDataSecurityAndGovernance"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Method",
           "ChangedApiName": "processContentAsync",
           "ChangeType": "Addition",
-          "Description": "Added the [processContentAsync](https://learn.microsoft.com/en-us/graph/api/tenantDataSecurityAndGovernance-processContentAsync?view=graph-rest-beta) method to the [tenantDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/tenantDataSecurityAndGovernance?view=graph-rest-beta) resource.",
+          "Description": "Added the [processContentAsync](https://learn.microsoft.com/en-us/graph/api/tenantDataSecurityAndGovernance-processContentAsync?view=graph-rest-1.0) method to the [tenantDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/tenantDataSecurityAndGovernance?view=graph-rest-1.0) resource.",
           "Target": "tenantDataSecurityAndGovernance"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Method",
+          "ChangedApiName": "computeInheritance",
+          "ChangeType": "Addition",
+          "Description": "Added the [computeInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeInheritance?view=graph-rest-1.0) method to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-1.0) resource.",
+          "Target": "sensitivityLabel"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
           "ChangedApiName": "security",
           "ChangeType": "Addition",
-          "Description": "Added the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Description": "Added the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-1.0) resource.",
           "Target": "security"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Enumeration",
           "ChangedApiName": "auditLogRecordType",
           "ChangeType": "Addition",
@@ -637,39 +531,54 @@
           "Target": "auditLogRecordType"
         },
         {
-          "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Enumeration",
           "ChangedApiName": "auditLogUserType",
           "ChangeType": "Addition",
           "Description": "Added the **auditLogUserType** enumeration type.",
           "Target": "auditLogUserType"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "auditData",
+          "ChangeType": "Addition",
+          "Description": "Added the [auditData](https://learn.microsoft.com/en-us/graph/api/resources/auditData?view=graph-rest-1.0) resource.",
+          "Target": "auditData"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Dictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [Dictionary](https://learn.microsoft.com/en-us/graph/api/resources/Dictionary?view=graph-rest-1.0) resource.",
+          "Target": "Dictionary"
         }
       ],
-      "Id": "b1e78bac-28ac-4381-aa07-a4141f5df4a6",
+      "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
       "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-04-21T21:35:10.5081824Z",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-06-10T15:59:09.6830762Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "9c10cce6-6262-4673-9a7f-87b52bc9119e",
+          "Id": "3ae1b896-317c-4c4a-af59-b6135b004ea2",
           "ApiChange": "Relationship",
           "ChangedApiName": "dataSecurityAndGovernance",
           "ChangeType": "Addition",
-          "Description": "Added the **dataSecurityAndGovernance** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Description": "Added the **dataSecurityAndGovernance** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
           "Target": "user"
         }
       ],
-      "Id": "9c10cce6-6262-4673-9a7f-87b52bc9119e",
+      "Id": "3ae1b896-317c-4c4a-af59-b6135b004ea2",
       "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-04-21T21:35:10.508777Z",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-06-10T15:59:09.6833592Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }
   ]
 }
-
