@@ -237,3 +237,71 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
+### Example 3: Retrieving the roles of a resource for a PIM-managed group
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_eligible_accesspackageresourceroles"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/15d889df-3eb8-4e9b-bfb4-b1908849aec4/accessPackageResourceRoles?$filter=(originSystem+eq+%27AadGroup%27+and+accessPackageResource/id+eq+%27a35bef72-a8aa-4ca3-af30-f6b2ece7208f%27)&$expand=accessPackageResource
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRole",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "id-value",
+      "displayName": "Member",
+      "description": "description-value",
+      "originId": "originId-value",
+      "originSystem": "originSystem-value"
+    },
+    {
+      "id": "id-value",
+      "displayName": "Eligible Member",
+      "description": "description-value",
+      "originId": "originId-value",
+      "originSystem": "originSystem-value"
+    },
+    {
+      "id": "id-value",
+      "displayName": "Owner",
+      "description": "description-value",
+      "originId": "originId-value",
+      "originSystem": "originSystem-value"
+    },
+    {
+      "id": "id-value",
+      "displayName": "Eligible Owner",
+      "description": "description-value",
+      "originId": "originId-value",
+      "originSystem": "originSystem-value"
+    }
+  ]
+}
+```
+
