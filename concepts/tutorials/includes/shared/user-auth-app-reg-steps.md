@@ -6,11 +6,11 @@ ms.localizationpriority: medium
 
 ## Register an application for user authentication
 
-In this section you will register an application that supports [user authentication](/graph/auth-v2-user) using [device code flow](/azure/active-directory/develop/v2-oauth2-device-code). You can register an application using the Microsoft Entra admin center, or by using the [Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
+Register an application that supports [user authentication](/graph/auth-v2-user) using [device code flow](/azure/active-directory/develop/v2-oauth2-device-code). You can register an application using the Microsoft Entra admin center, or by using the [Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
 
 ### [Microsoft Entra admin center](#tab/aad)
 
-1. Open a browser and navigate to the [Microsoft Entra admin center](https://entra.microsoft.com) and login using a Global administrator account.
+1. Open a browser and navigate to the [Microsoft Entra admin center](https://entra.microsoft.com) and sign in using a Global administrator account.
 
 1. Select **Microsoft Entra ID** in the left-hand navigation, expand **Identity**, expand **Applications**, then select **App registrations**.
 
@@ -28,7 +28,7 @@ In this section you will register an application that supports [user authenticat
 
 1. Leave **Redirect URI** empty.
 
-1. Select **Register**. On the application's **Overview** page, copy the value of the **Application (client) ID** and save it, you will need it in the next step. If you chose **Accounts in this organizational directory only** for **Supported account types**, also copy the **Directory (tenant) ID** and save it.
+1. Select **Register**. On the application's **Overview** page, copy the value of the **Application (client) ID** and save it. You'll need it in the next step. If you chose **Accounts in this organizational directory only** for **Supported account types**, also copy the **Directory (tenant) ID** and save it.
 
     :::image type="content" source="../../images/aad-application-id.png" alt-text="A screenshot of the application ID of the new app registration":::
 
@@ -38,7 +38,7 @@ In this section you will register an application that supports [user authenticat
 
 ### [PowerShell](#tab/powershell)
 
-To use PowerShell, you'll need the Microsoft Graph PowerShell SDK. If you do not have it, see [Install the Microsoft Graph PowerShell SDK](/graph/powershell/installation) for installation instructions.
+To use PowerShell, you need the Microsoft Graph PowerShell SDK. If you don't have it, see [Install the Microsoft Graph PowerShell SDK](/graph/powershell/installation) for installation instructions.
 
 > [!IMPORTANT]
 > The PowerShell script requires a work/school account with the Application administrator, Cloud application administrator, or Global administrator role. If your account has the Application developer role, you can register in the Microsoft Entra admin center.
@@ -51,7 +51,7 @@ To use PowerShell, you'll need the Microsoft Graph PowerShell SDK. If you do not
 
 1. Open PowerShell and change the current directory to the location of **RegisterAppForUserAuth.ps1**.
 
-1. Run the following command, replacing *&lt;audience-value&gt;* with the desired value (see table below).
+1. Run the following command, replacing *&lt;audience-value&gt;* with the desired value (see the following table).
 
     ```powershell
     .\RegisterAppForUserAuth.ps1 -AppName "Graph User Auth Tutorial" -SignInAudience <audience-value>
@@ -66,7 +66,7 @@ To use PowerShell, you'll need the Microsoft Graph PowerShell SDK. If you do not
 
 1. Follow the prompt to open `https://microsoft.com/devicelogin` in a browser, enter the provided code, and complete the authentication process.
 
-1. Copy the **Client ID** and **Auth tenant** values from the script output. You will need these values in the next step.
+1. Copy the **Client ID** and **Auth tenant** values from the script output. You'll need these values in the next step.
 
     ```powershell
     SUCCESS
@@ -77,4 +77,4 @@ To use PowerShell, you'll need the Microsoft Graph PowerShell SDK. If you do not
 ---
 
 > [!NOTE]
-> Notice that you did not configure any Microsoft Graph permissions on the app registration. This is because the sample uses [dynamic consent](/azure/active-directory/develop/v2-permissions-and-consent#incremental-and-dynamic-user-consent) to request specific permissions for user authentication.
+> Notice that you didn't configure any Microsoft Graph permissions on the app registration. The sample uses [dynamic consent](/azure/active-directory/develop/v2-permissions-and-consent#incremental-and-dynamic-user-consent) to request specific permissions for user authentication.
