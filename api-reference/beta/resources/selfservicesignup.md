@@ -26,7 +26,7 @@ Details self-service sign-up activity of Microsoft Entra External ID users on a 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appDisplayName|String|App name displayed in the Mirosoft Entra admin center. <br/><br/> Supports `$filter` (`eq`, `startsWith`)|
+|appDisplayName|String|App name displayed in the Microsoft Entra admin center. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |appId|String|Unique GUID that represents the app ID in the Microsoft Entra ID. <br/><br/> Supports `$filter` (`eq`).|
 |appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, which the corresponding events in the sign-up event triggered.|
 |correlationId|String|The request ID sent from the client when the sign-up is initiated. Used to troubleshoot sign-up activity. <br/><br/> Supports `$filter` (`eq`).|
