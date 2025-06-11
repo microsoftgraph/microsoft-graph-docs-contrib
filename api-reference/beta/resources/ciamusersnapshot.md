@@ -1,6 +1,6 @@
 ---
 title: "ciamUserSnapshot resource type"
-description: "**TODO: Add Description**"
+description: "Details the user referred to by the sign-up log entry"
 author: "nanguil"
 ms.date: 05/09/2025
 ms.localizationpriority: medium
@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Details the user referred to by the sign-up log entry
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|userId|String|**TODO: Add Description**|
+|userId|String|ID of the user that initiated the sign-in.|
 
 ## Relationships
 None.
