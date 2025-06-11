@@ -1,6 +1,6 @@
 ---
-title: "Update place"
-description: "Update the properties of a place object."
+title: "Update building"
+description: "Update the properties of a building object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# Update place
+# Update building
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a place object.
+Update the properties of a building object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "place-update-permissions"
+  "name": "building-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/place-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/building-update-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /places/{placesId}
+PATCH /building
 ```
 
 ## Request headers
@@ -52,22 +52,23 @@ PATCH /places/{placesId}
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Required.|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Optional.|
-|phone|String|**TODO: Add Description** Optional.|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Optional.|
-|placeId|String|**TODO: Add Description** Optional.|
-|parentId|String|**TODO: Add Description** Optional.|
-|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Required.|
-|tags|String collection|**TODO: Add Description** Required.|
-|isWheelChairAccessible|Boolean|**TODO: Add Description** Required.|
-|label|String|**TODO: Add Description** Optional.|
+|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
+|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
+|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
+|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
+|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
+|parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
+|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
+|tags|String collection|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
+|isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
+|label|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
+|hasWiFi|Boolean|**TODO: Add Description** Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [place](../resources/place.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [building](../resources/building.md) object in the response body.
 
 ## Examples
 
@@ -76,15 +77,15 @@ If successful, this method returns a `200 OK` response code and an updated [plac
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_place"
+  "name": "update_building"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/places/{placesId}
+PATCH https://graph.microsoft.com/beta/building
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.place",
+  "@odata.type": "#microsoft.graph.building",
   "displayName": "String",
   "geoCoordinates": {
     "@odata.type": "microsoft.graph.outlookGeoCoordinates"
@@ -104,7 +105,8 @@ Content-Type: application/json
     "String"
   ],
   "isWheelChairAccessible": "Boolean",
-  "label": "String"
+  "label": "String",
+  "hasWiFi": "Boolean"
 }
 ```
 
@@ -123,8 +125,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.place",
-  "id": "7d752e23-0fb5-7333-be1b-a1ae3d19ac4b",
+  "@odata.type": "#microsoft.graph.building",
+  "id": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
   "displayName": "String",
   "geoCoordinates": {
     "@odata.type": "microsoft.graph.outlookGeoCoordinates"
@@ -144,7 +146,8 @@ Content-Type: application/json
     "String"
   ],
   "isWheelChairAccessible": "Boolean",
-  "label": "String"
+  "label": "String",
+  "hasWiFi": "Boolean"
 }
 ```
 

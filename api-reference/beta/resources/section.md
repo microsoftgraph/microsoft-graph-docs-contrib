@@ -1,5 +1,5 @@
 ---
-title: "room resource type"
+title: "section resource type"
 description: "**TODO: Add Description**"
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/11/2025
@@ -8,7 +8,7 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: resourcePageType
 ---
 
-# room resource type
+# section resource type
 
 Namespace: microsoft.graph
 
@@ -23,38 +23,26 @@ Inherits from [place](../resources/place.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/roomlist-list-rooms.md)|[room](../resources/room.md) collection|Get a list of the room objects and their properties.|
-|[Create](../api/roomlist-post-rooms.md)|[room](../resources/room.md)|Create a new room object.|
-|[Get](../api/room-get.md)|[room](../resources/room.md)|Read the properties and relationships of a room object.|
-|[Update](../api/room-update.md)|[room](../resources/room.md)|Update the properties of a room object.|
-|[Delete](../api/roomlist-delete-rooms.md)|None|Delete a room object.|
-|[descendants](../api/room-descendants.md)|[place](../resources/place.md) collection|**TODO: Add Description**|
+|[List](../api/section-list.md)|[section](../resources/section.md) collection|Get a list of the section objects and their properties.|
+|[Get](../api/section-get.md)|[section](../resources/section.md)|Read the properties and relationships of a section object.|
+|[Update](../api/section-update.md)|[section](../resources/section.md)|Update the properties of a section object.|
+|[Delete](../api/section-delete.md)|None|Delete a section object.|
+|[descendants](../api/section-descendants.md)|[place](../resources/place.md) collection|**TODO: Add Description**|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|audioDeviceName|String|**TODO: Add Description**|
-|bookingType|bookingType|**TODO: Add Description**.The possible values are: `unknown`, `standard`, `reserved`.|
-|building|String|**TODO: Add Description**|
-|capacity|Int32|**TODO: Add Description**|
-|displayDeviceName|String|**TODO: Add Description**|
 |displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|emailAddress|String|**TODO: Add Description**|
-|floorLabel|String|**TODO: Add Description**|
-|floorNumber|Int32|**TODO: Add Description**|
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isTeamsEnabled|Boolean|**TODO: Add Description**|
 |isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |label|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|nickname|String|**TODO: Add Description**|
 |parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Inherited from [place](../resources/place.md).|
 |tags|String collection|**TODO: Add Description** Inherited from [place](../resources/place.md).|
-|videoDeviceName|String|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -64,14 +52,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.room",
+  "@odata.type": "microsoft.graph.section",
   "baseType": "microsoft.graph.place",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.room",
+  "@odata.type": "#microsoft.graph.section",
   "id": "String (identifier)",
   "displayName": "String",
   "geoCoordinates": {
@@ -92,18 +80,7 @@ The following JSON representation shows the resource type.
     "String"
   ],
   "isWheelChairAccessible": "Boolean",
-  "label": "String",
-  "emailAddress": "String",
-  "nickname": "String",
-  "building": "String",
-  "floorNumber": "Integer",
-  "capacity": "Integer",
-  "bookingType": "String",
-  "audioDeviceName": "String",
-  "videoDeviceName": "String",
-  "displayDeviceName": "String",
-  "floorLabel": "String",
-  "isTeamsEnabled": "Boolean"
+  "label": "String"
 }
 ```
 
