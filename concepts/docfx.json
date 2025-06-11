@@ -75,7 +75,8 @@
     },
     "fileMetadata": {
       "ms.service": {
-        "**/*.md": "microsoft-graph"
+        "**/*.md": "microsoft-graph",
+        "**/*.yml": "microsoft-graph"
       },
       "ms.topic": {
         "**/*.md": "conceptual"
