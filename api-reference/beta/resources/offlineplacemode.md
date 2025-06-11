@@ -2,7 +2,7 @@
 title: "offlinePlaceMode resource type"
 description: "Describes why a desk has been marked as offline and unavailable for booking."
 author: "vrod9429"
-ms.date: 06/09/2025
+ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice: 
 doc_type: resourcePageType

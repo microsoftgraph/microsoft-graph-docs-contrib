@@ -2,7 +2,7 @@
 title: "resourceLink resource type"
 description: "**TODO: Add Description**"
 author: "MSGraphDocsvTeam"
-ms.date: 06/09/2025
+ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice:
 doc_type: resourcePageType
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|linkType|resourceLinkType|**TODO: Add Description**.The possible values are: `unspecified`, `blobId`, `url`, `unknownFutureValue`.|
+|linkType|resourceLinkType|The possible values are: `url`, `unknownFutureValue`.|
 |name|String|**TODO: Add Description**|
 |value|String|**TODO: Add Description**|
 

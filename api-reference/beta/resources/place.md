@@ -2,7 +2,7 @@
 title: "place resource type"
 description: "Represents different space types within a tenant."
 author: "vrod9429"
-ms.date: 06/09/2025
+ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice:
 doc_type: resourcePageType

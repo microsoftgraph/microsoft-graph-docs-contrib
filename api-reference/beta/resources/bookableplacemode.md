@@ -2,7 +2,7 @@
 title: "bookablePlaceMode resource type"
 description: "This mode indicates whether a desk or workspace is allowed to be booked in advance."
 author: "vrod9429"
-ms.date: 06/09/2025
+ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice: 
 doc_type: resourcePageType

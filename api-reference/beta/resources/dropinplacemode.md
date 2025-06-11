@@ -2,7 +2,7 @@
 title: "dropInPlaceMode resource type"
 description: "This mode indicates that the desk or workspace is a drop-in place, meaning it is first come, first serve."
 author: "vrod9429"
-ms.date: 06/09/2025
+ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice: 
 doc_type: resourcePageType

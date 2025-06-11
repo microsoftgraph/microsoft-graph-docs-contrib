@@ -2,7 +2,7 @@
 title: "Get place"
 description: "Read the properties and relationships of a place object."
 author: "vrod9429"
-ms.date: 06/09/2025
+ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice:
 doc_type: apiPageType
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/places/{placesId}
 ```
-
 
 ### Response
 
