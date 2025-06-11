@@ -1,5 +1,5 @@
 ---
-title: "List policy"
+title: "List threat intelligence policy"
 description: "Get a list of policies associated with a threat intelligence policy link."
 author: "fgomulka"
 ms.date: 06/05/2025

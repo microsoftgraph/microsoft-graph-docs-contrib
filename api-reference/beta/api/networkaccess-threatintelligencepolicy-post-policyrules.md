@@ -1,5 +1,5 @@
 ---
-title: "Create policyRule"
+title: "Create threat intelligence policyRule"
 description: "Create a new policyRule object."
 author: "fgomulka"
 ms.date: 06/05/2025

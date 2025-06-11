@@ -1,5 +1,5 @@
 ---
-title: "Add policy"
+title: "Add threat intelligence policy"
 description: "Add policy by posting to the policy collection."
 author: "fgomulka"
 ms.date: 06/05/2025

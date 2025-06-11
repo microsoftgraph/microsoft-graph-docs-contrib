@@ -1,5 +1,5 @@
 ---
-title: "List policyRules"
+title: "List threat intelligence policyRules"
 description: "Get a list of the rules associated with a threat intelligence policy."
 author: "fgomulka"
 ms.date: 06/05/2025

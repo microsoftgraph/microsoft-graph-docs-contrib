@@ -1,10 +1,10 @@
 ---
 title: "Create threatIntelligencePolicy"
 description: "Create a new threatIntelligencePolicy object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "fgomulka"
 ms.date: 06/05/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
