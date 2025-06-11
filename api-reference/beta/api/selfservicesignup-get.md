@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 06/11/2025
 ---
 
-# Get selfServiceSignUp object
+# Get selfServiceSignUp
 
 Namespace: microsoft.graph
 
@@ -43,7 +43,7 @@ GET /auditLogs/signUps/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
