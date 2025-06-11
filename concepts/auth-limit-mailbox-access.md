@@ -9,6 +9,6 @@ ms.date: 11/07/2024
 
 # Limiting application permissions to specific Exchange Online mailboxes
 
-Administrators who want to limit app access to specific mailboxes can do so with Exchange Application RBAC. You can learn more about this feature [here](https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac).
+Administrators who want to limit app access to specific mailboxes can do so with Exchange Application RBAC. You can learn more about this feature [here](https://learn.microsoft.com/exchange/permissions-exo/application-rbac).
 
 
