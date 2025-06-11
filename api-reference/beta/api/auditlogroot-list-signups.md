@@ -1,5 +1,5 @@
 ---
-title: "List selfServiceSignUp objects"
+title: "List selfServiceSignUp"
 description: "Get a list of the selfServiceSignUp objects and their properties."
 author: "nanguil"
 ms.localizationpriority: medium
