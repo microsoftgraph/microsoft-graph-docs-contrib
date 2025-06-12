@@ -16,13 +16,11 @@ Namespace: microsoft.graph
 
 Represents an individual message posted in a Viva Engage conversation, which can be a starter message, a reply, or a reply to a reply.
 
-
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 
-No Methods supported at this time.
+None.
 
 <!--|Method|Return type|Description|
 |:---|:---|:---|
@@ -43,15 +41,23 @@ No Methods supported at this time.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique ID of a Viva Engage conversation message. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|attachments|[engagementConversationMessageAttachment](../resources/engagementconversationmessageattachment.md) collection|Collection of attachments included in the message, such as files, weblinks, videos, or images. |
 |body|[itemBody](../resources/itembody.md)|The main content of the message|
 |createdDateTime|DateTimeOffset|Timestamp when the message was created.|
-|creationMode|[engagementCreationMode](../resources/engagementCreationMode.md)|Indicates how the message was created. The possible values are: `none`, `migration`, `unknownFutureValue`.|
+|creationMode|[engagementConversationMessage](../resources/engagementconversationmessage.md#engagementcreationmode-values)|Indicates how the message was created. The possible values are: `none`, `migration`, `unknownFutureValue`.|
 |from|[engagementIdentitySet](../resources/engagementidentityset.md)|Identity of the sender of the message.|
+|id|String|Unique ID of a Viva Engage conversation message. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification to the message.|
-|replyToId|String|ID of the parent message this one is a reply to, if applicable.|
-|attachments|[engagementConversationMessageAttachment](../resources/engagementconversationmessageattachment.md) collection|Collection of attachments included in the message, such as files, weblinks, videos, or images. |
 |mentions|[engagementConversationMessageMention](../resources/engagementconversationmessagemention.md) collection|Collection of user identities mentioned in the message.|
+|replyToId|String|ID of the parent message this one is a reply to, if applicable.|
+
+### engagementCreationMode values
+
+| Member             | Description                                                  |
+|:-------------------|:-------------------------------------------------------------|
+| none               | Unspecified creation mechanism. Default.                     |
+| migration          | Indicates that the creation mechanism was through migration. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.             |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -71,30 +77,17 @@ The following JSON representation shows the resource type.
   "openType": false
 }
 -->
-
 ``` json
 {
   "@odata.type": "#microsoft.graph.engagementConversationMessage",
-  "id": "String (identifier)",
-  "creationMode": "String",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "replyToId": "String",
+  "attachments": [{"@odata.type": "microsoft.graph.engagementConversationMessageAttachment"}],
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
   "createdDateTime": "String (timestamp)",
+  "creationMode": "String",
+  "from": {"@odata.type": "microsoft.graph.engagementIdentitySet"},
+  "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "from": {
-    "@odata.type": "microsoft.graph.engagementIdentitySet"
-  },
-  "mentions": [
-    {
-      "@odata.type": "microsoft.graph.engagementConversationMessageMention"
-    }
-  ],
-  "attachments": [
-    {
-      "@odata.type": "microsoft.graph.engagementConversationMessageAttachment"
-    }
-  ]
+  "mentions": [{"@odata.type": "microsoft.graph.engagementConversationMessageMention"}],
+  "replyToId": "String"
 }
 ```
