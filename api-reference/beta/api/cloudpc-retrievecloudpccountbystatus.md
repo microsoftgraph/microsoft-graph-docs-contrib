@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: retrieveCloudPcCountByStatus"
-description: "Retrieve Cloud PC count group by Status column"
+description: "Retrieve the Cloud PC count grouped by status."
 author: "ziqifu9527"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve [cloudPcStatusSummary](../resources/cloudPcStatusSummary.md) for each status.
+Retrieve the [Cloud PC](../resources/cloudpc.md) count grouped by status.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -31,7 +31,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-
 ``` http
 GET /deviceManagement/virtualEndpoint/cloudPCs/retrieveCloudPcCountByStatus?customFilter={filter}
 ```
@@ -48,7 +47,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [cloudPcStatusSummary](../resources/cloudPcStatusSummary.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [cloudPcStatusSummary](../resources/cloudpcstatussummary.md) objects in the response body.
 
 ## Examples
 
@@ -61,7 +60,6 @@ The following example shows a request.
   "name": "cloudpc_retrievecloudpccountbystatus"
 }
 -->
-
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/retrieveCloudPcCountByStatus?customFilter=contains(tolower(managedDeviceName), 'a') or contains(tolower(imageDisplayName), 'a') or contains(tolower(userPrincipalName), 'a')
 ```
@@ -77,7 +75,6 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.cloudPcStatusSummary)"
 }
 -->
-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -87,11 +84,11 @@ Content-Type: application/json
   "value": [
     {
       "status": "provisioned",
-      "count" : 22
+      "count": 22
     },
     {
       "status": "failed",
-      "count" : 11
+      "count": 11
     }
   ]
 }
