@@ -120,6 +120,7 @@ Content-Type: application/json
     "allowUserRequestsForAppAccess": true,
     "isChatResourceSpecificConsentEnabled": "true",
     "isUserPersonalScopeResourceSpecificConsentEnabled": "true",
+    "isUserPersonalScopeResourceSpecificConsentEnabled": "true",
     "customAppSettings": {
       "developerToolsForShowingAppUsageMetrics": "developerPortal"
     }
@@ -129,4 +130,4 @@ Content-Type: application/json
 
 ## Related content
 
-- [Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+[Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
