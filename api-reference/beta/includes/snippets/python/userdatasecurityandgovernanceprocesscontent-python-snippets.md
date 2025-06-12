@@ -9,56 +9,54 @@ from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.users.item.datasecurityandgovernance.process_content.process_content_post_request_body import ProcessContentPostRequestBody
 from msgraph_beta.generated.models.process_content_request import ProcessContentRequest
 from msgraph_beta.generated.models.process_content_metadata_base import ProcessContentMetadataBase
-from msgraph_beta.generated.models.content_base import ContentBase
+from msgraph_beta.generated.models.process_conversation_metadata import ProcessConversationMetadata
+from msgraph_beta.generated.models.text_content import TextContent
 from msgraph_beta.generated.models.activity_metadata import ActivityMetadata
 from msgraph_beta.generated.models.user_activity_type import UserActivityType
+from msgraph_beta.generated.models.protected_application_metadata import ProtectedApplicationMetadata
+from msgraph_beta.generated.models.policy_location_application import PolicyLocationApplication
 from msgraph_beta.generated.models.integrated_application_metadata import IntegratedApplicationMetadata
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ProcessContentPostRequestBody(
 	content_to_process = ProcessContentRequest(
 		content_entries = [
-			ProcessContentMetadataBase(
-				odata_type = "microsoft.graph.processFileMetadata",
-				identifier = "91e1ca70-6e5b-4120-abf0-472034ba05c3",
-				content = ContentBase(
-					odata_type = "microsoft.graph.binaryContent",
-					additional_data = {
-							"data" : "<some-binary-data>",
-					}
+			ProcessConversationMetadata(
+				odata_type = "microsoft.graph.processConversationMetadata",
+				identifier = "07785517-9081-4fe7-a9dc-85bcdf5e9075",
+				content = TextContent(
+					odata_type = "microsoft.graph.textContent",
+					data = "Write an acceptance letter for Alex Wilber with Credit card number 4532667785213500, ssn: 120-98-1437 at One Microsoft Way, Redmond, WA 98052",
 				),
-				name = "Example.docx",
-				created_date_time = "2024-07-23T01:31:40.2020463Z",
-				correlation_id = "54689",
-				sequence_number = 1,
-				length = 17352,
+				name = "PC Purview API Explorer message",
+				correlation_id = "d63eafd2-e3a9-4c1a-b726-a2e9b9d9580d",
+				sequence_number = 0,
 				is_truncated = False,
-				additional_data = {
-						"updated_date_time" : "2024-09-17T13:45:21.0000000Z",
-						"owner_id" : "ffe1ca70-6e5b-4120-abf0-472034ba05d4",
-						"custom_properties" : {
-								"department" : "Finance",
-								"reviewer_name" : "John Smith",
-						},
-				}
+				created_date_time = "2025-05-27T17:23:20",
+				modified_date_time = "2025-05-27T17:23:20",
 			),
 		],
 		activity_metadata = ActivityMetadata(
-			activity = UserActivityType.UploadFile,
-			additional_data = {
-					"application_location" : "bing.com",
-			}
+			activity = UserActivityType.UploadText,
+		),
+		protected_app_metadata = ProtectedApplicationMetadata(
+			name = "PC Purview API Explorer",
+			version = "0.2",
+			application_location = PolicyLocationApplication(
+				odata_type = "microsoft.graph.policyLocationApplication",
+				value = "83ef208a-0396-4893-9d4f-d36efbffc8bd",
+			),
 		),
 		integrated_app_metadata = IntegratedApplicationMetadata(
-			name = "ContosoIsvApplication",
-			version = "1.2",
+			name = "PC Purview API Explorer",
+			version = "0.2",
 		),
 		additional_data = {
 				"device_metadata" : {
-						"device_type" : "unmanaged",
 						"operating_system_specifications" : {
-								"operating_system_platform" : "windows",
-								"operating_system_version" : "10.0.2.4",
+								"operating_system_platform" : "Windows 11",
+								"operating_system_version" : "10.0.26100.0",
 						},
+						"ip_address" : "127.0.0.1",
 				},
 		}
 	),

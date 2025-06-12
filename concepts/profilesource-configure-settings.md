@@ -79,11 +79,11 @@ Content-Type: application/json
 }
 ```
 
-## Add a profile source
+### Add a profile source
 
 Use the [Create](/graph/api/peopleadminsettings-post-profilesources?view=graph-rest-beta&preserve-view=true) operation to add a profile source in your organization.
 
-### Request
+#### Request
 
 ``` http
 POST https://graph.microsoft.com/beta/admin/people/profileSources
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 If successful, this method returns a `201 Created` response code and a [profileSource](/graph/api/resources/profilesource?view=graph-rest-beta&preserve-view=true) object in the response body.
 
-### Response
+#### Response
 
 ``` http
 HTTP/1.1 201 Created
@@ -128,11 +128,11 @@ Content-type: application/json
 }
 ```
 
-## Update a profile source
+### Update a profile source
 
 Use the [Update](/graph/api/profilesource-update?view=graph-rest-beta&preserve-view=true) operation to modify a profile source in your organization.
 
-### Request
+#### Request
 
 ``` http
 PATCH https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
@@ -157,7 +157,7 @@ Content-Type: application/json
 
 If successful, this method returns a `200 OK` response code and a [profileSource](/graph/api/resources/profilesource?view=graph-rest-beta&preserve-view=true) object in the response body.
 
-### Response
+#### Response
 
 ``` http
 HTTP/1.1 200 OK
@@ -184,11 +184,11 @@ Content-type: application/json
 }
 ```
 
-## Remove a profile source
+### Remove a profile source
 
 Use the [Delete](/graph/api/profilesource-delete?view=graph-rest-beta&preserve-view=true) operation to remove a profile source in your organization.
 
-### Request
+#### Request
 
 ``` http
 DELETE https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
@@ -196,123 +196,8 @@ DELETE https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='ba
 
 If successful, this method returns a `204 No Content` response code.
 
-### Response
+#### Response
 
 ``` http
 HTTP/1.1 204 No Content
-```
-
-## Configure profile source settings using the Microsoft Graph PowerShell SDK
-
-You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to configure profile source settings in your organization.
-
-### Prerequisites
-
-- **PowerShell module** - Install [module version 2.3.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
-- **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
-
-> [!NOTE]
-> The PowerShell commands for profile source settings are only available in beta. Switch to the beta experience before you run the following commands.
->
-> ```powershell
-> Install-Module -Name Microsoft.Graph.Beta
-> Update-Module Microsoft.Graph.Beta
-> ```
-
-### Confirm your current settings
-
-To get a collection of profile source configurations for an organization, use the following command.
-
-```powershell
-Get-MgAdminPeopleProfileSource
-```
-
-To get a specific profile source configuration in an organization, use the following command.
-
-```powershell
-Get-MgAdminPeopleProfileSource -SourceId $sourceId
-```
-
-> [!NOTE]
-> The get commands require the `PeopleSettings.Read.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
->
-> ```powershell
-> Connect-MgGraph -Scopes "PeopleSettings.Read.All"
-> ```
-
-### Add a profile source in your organization
-
-You can use the Microsoft Graph PowerShell module to make an external people data source available in your organization.
-
-> [!NOTE]
-> The new command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
->
-> ```powershell
-> Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
-> ```
-
-Use the following command.
-
-```powershell
-$params = @{
-  sourceId = "bamboohr1"
-  displayName = "HR platform"
-  webUrl = "http://bamboohr.contoso.com/login"
-  localizations = @(
-    @{
-      displayName = "HR-Plattform"
-      webUrl = "http://bamboohr.contoso.com/de/login"
-      languageTag = "de"
-    }
-  )
-}
-
-New-MgAdminPeopleProfileSource -BodyParameter $params
-```
-
-### Update a profile source in your organization
-
-You can use the Microsoft Graph PowerShell module to update a profile source in your organization.
-
-> [!NOTE]
-> The update command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
->
-> ```powershell
-> Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
-> ```
-
-Use the following command, where you replace `$sourceId` with the ID of the property to be updated.
-
-```powershell
-$params = @{
-  sourceId = "bamboohr1"
-  displayName = "Updated HR platform"
-  webUrl = "http://bamboohr.contoso.com/login"
-	localizations = @(
-    @{
-      displayName = "Aktualisierte HR-Plattform"
-      webUrl = "http://bamboohr.contoso.com/de/login"
-      languageTag = "de"
-    }
-  )
-}
-
-Update-MgAdminPeopleProfileSource -SourceId $sourceId -BodyParameter $params
-```
-
-### Remove a profile source in your organization
-
-You can use the Microsoft Graph PowerShell module to remove a profile source from your organization.
-
-> [!NOTE]
-> The remove command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
->
-> ```powershell
-> Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
-> ```
-
-Use the following command, where you replace `$sourceId` with the ID of the property to be removed.
-
-```powershell
-Remove-MgAdminPeopleProfileSource -SourceId $sourceId
 ```

@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 05/26/2025
+ms.date: 06/09/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -6200,6 +6200,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 57f0b71b-a759-45a0-9a0f-cc099fbd9a44 | - |
 | DisplayText | Evaluate sensitivity labels | - |
 | Description | Allow the app to determine if there is any sensitivity label to be applied automatically to the content or recommended to the user for manual application, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### SensitivityLabel.Evaluate.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 986fa56a-6680-4aac-af09-4d1765376739 | - |
+| DisplayText | Evaluate labels tenant scope. | - |
+| Description | Allows the app to evaluate all sensitivity label. | - |
 | AdminConsentRequired | Yes | - |
 
 ---

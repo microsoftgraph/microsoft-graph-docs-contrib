@@ -15,30 +15,29 @@ const contentActivity = {
        contentEntries: [
           {
              '@odata.type': 'microsoft.graph.processConversationMetadata',
-             identifier: '68fa951a-898a-4427-8e9e-6f8c05e9fe2b',
-             name: 'API Explorer message',
-             correlationId: '559a2343-7aa2-4912-93fe-72c47b2706ed',
-             sequenceNo: 0, 
+             identifier: 'd6ab5054-e111-45c3-9fba-9f2a59c9bbf8',
+             name: 'CA Purview API Explorer message',
+             correlationId: 'edfb7f88-b963-4ef2-8b30-5cb90f80e01e',
+             sequenceNumber: 0, 
              isTruncated: false,
-             createdDateTime: '2025-04-28T20:17:55',
-             modifiedDateTime: '2025-04-28T20:17:55'
+             createdDateTime: '2025-05-28T20:20:37',
+             modifiedDateTime: '2025-05-28T20:20:37'
           }
        ],
        activityMetadata: { 
-          activity: 'uploadText'
+          activity: 'downloadText'
        },
        deviceMetadata: {
-          deviceType: 'unmanaged',
           operatingSystemSpecifications: {
              operatingSystemPlatform: 'Windows 11',
              operatingSystemVersion: '10.0.26100.0' 
           }
        },
        integratedAppMetadata: {
-          name: 'API Explorer',
+          name: 'CA Purview API Explorer',
           version: '0.1' 
        },
-       userId: '7c2f8f10-cba8-4a8d-9449-db4b76d17390',
+       userId: '7c497f10-cba8-4a8d-9449-db4b76d1ef80',
        scopeIdentifier: '0'
     }
 };

@@ -2244,7 +2244,6 @@
         },
         {
           "name": "People admin settings",
-          [
           "resources": [
             "namePronunciationSettings",
             "photoUpdateSettings",
@@ -3007,7 +3006,7 @@
           ]
         },
         {
-          "name": "AI interactions (preview)",
+          "name": "AI interactions",
           "resources": [
             "aiInteractionHistory"
           ],
@@ -3416,4 +3415,3 @@
     }
   ]
 }
-
