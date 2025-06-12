@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 
 Represents a speaker assignment that was submitted by a student.
 
-Inherits from [entity](../resources/entity.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

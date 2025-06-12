@@ -1,6 +1,6 @@
 ---
 title: "List speakerAssignmentSubmissions"
-description: "Read the properties and relationships of a collection of speakerAssignmentSubmission objects."
+description: "Read the properties and relationships of a list of speaker assignments submitted by a student."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of [speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md) objects.
+Get a list of [speaker assignments](../resources/speakerassignmentsubmission.md) that were submitted by a student.
 
 ## Permissions
 
