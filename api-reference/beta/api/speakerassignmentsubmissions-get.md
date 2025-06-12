@@ -1,5 +1,5 @@
 ---
-title: "Get speakerAssignmentSubmissions"
+title: "Get speakerAssignmentSubmission"
 description: "Read the properties and relationships of a collection of speakerAssignmentSubmission objects."
 author: "v-rmanda"
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 05/05/2025
 ---
 
-# Get speakerAssignmentSubmissions
+# Get speakerAssignmentSubmission
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a collection of [speakerAssignmentSubmission](../resources/speakerAssignmentSubmission.md) objects.
+Read the properties and relationships of a collection of [speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md) objects.
 
 ## Permissions
 
@@ -80,7 +80,7 @@ The following example shows the default response from the last 24 hours.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.speakerAssignmentSubmission"
+  "@odata.type": "Collection(microsoft.graph.speakerAssignmentSubmission)"
 }
 -->
 ``` http
@@ -183,7 +183,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.speakerAssignmentSubmissions"
+  "@odata.type": "Collection(microsoft.graph.speakerAssignmentSubmission)"
 }
 -->
 ``` http
