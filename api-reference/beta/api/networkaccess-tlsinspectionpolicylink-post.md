@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of the [tlsInspectionPolicyLin
 |Property|Type|Description|
 |:---|:---|:---|
 |state|microsoft.graph.networkaccess.status|The state of the policy link. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
-|policy|[tlsInspectionPolicy](../resources/networkaccess-tlsInspectionPolicy.md)|The TLS inspection policy to be linked. Supply the policy object with its ID. Required.|
+|policy|[microsoft.graph.networkaccess.tlsInspectionPolicy](../resources/networkaccess-intune-policy.md)|The TLS inspection policy to be linked. Supply the policy object with its ID. Required.|
 
 ## Response
 

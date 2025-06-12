@@ -36,7 +36,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)|The TLS inspection policy associated with this link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
+|policy|[microsoft.graph.networkaccess.tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)|The TLS inspection policy associated with this link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.

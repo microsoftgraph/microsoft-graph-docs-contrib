@@ -410,6 +410,16 @@ Namespace: microsoft.graph.networkaccess
 |inspect|
 |unknownFutureValue|
 
+### securityRuleStatus values 
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|reportOnly|
+|unknownFutureValue|
+
+
 <!--
 {
   "type": "#page.annotation",

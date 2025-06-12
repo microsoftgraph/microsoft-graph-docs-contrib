@@ -42,14 +42,14 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 |name|String|The display name of the policy.|
 |description|String|Optional description of the policy.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of when the policy was last modified. Read-only.|
-|settings|[tlsInspectionPolicySettings](networkaccess-tlsinspectionpolicysettings.md)|Settings that configure the default behavior of the policy.|
+|settings|[microsoft.graph.networkaccess.tlsInspectionPolicySettings](networkaccess-tlsinspectionpolicysettings.md)|Settings that configure the default behavior of the policy.|
 |version|String|Version number of the policy. Read-only.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policyRules|[tlsInspectionRule](networkaccess-tlsinspectionrule.md) collection|Collection of rules that define the specific matching conditions and desired actions for TLS inspection. Must contain rules of type `tlsInspectionRule` only.|
+|policyRules|[microsoft.graph.networkaccess.tlsInspectionRule](networkaccess-tlsinspectionrule.md) collection|Collection of rules that define the specific matching conditions and desired actions for TLS inspection. Must contain rules of type `tlsInspectionRule` only.|
 
 ## JSON representation
 
