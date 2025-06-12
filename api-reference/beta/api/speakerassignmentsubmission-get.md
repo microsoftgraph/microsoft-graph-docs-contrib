@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "speakerAssignmentSubmissions-get-permissions"
+  "name": "speakerAssignmentSubmission-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/speakerassignmentsubmissions-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/speakerassignmentsubmission-get-permissions.md)]
 
 ## HTTP request
 
