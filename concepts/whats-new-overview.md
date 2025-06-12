@@ -31,7 +31,7 @@ Updated the throttling information for [getAllEnterpriseInteractions](/graph/api
 
 ### Device and app management | Cloud PC
 
-[Retrieve Cloud PC count by status](/graph/api/cloudpc-retrievecloudpccountbystatus?view=graph-rest-beta&preserve-view=true).
+[Retrieve the Cloud PC count grouped by status](/graph/api/cloudpc-retrievecloudpccountbystatus?view=graph-rest-beta&preserve-view=true).
 
 ## May 2025: New and generally available
 
