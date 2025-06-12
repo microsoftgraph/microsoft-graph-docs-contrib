@@ -1,6 +1,6 @@
 ---
 title: "resourceLink resource type"
-description: "**TODO: Add Description**"
+description: "Specifies external links that should be associated to a building in Places, such as a dining menu or a link to other services."
 author: "MSGraphDocsvTeam"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,15 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+The **resourceLink** parameter specifies external links that should be associated to this [building](./building.md), such as a dining menu, a link to services, and so on. For more information on how to set up services in Places, see [Services in Places](/deployoffice/places/services-in-places).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|linkType|resourceLinkType|The possible values are: `url`, `unknownFutureValue`.|
-|name|String|**TODO: Add Description**|
-|value|String|**TODO: Add Description**|
+|linkType|resourceLinkType|Possible values are: `url`.|
+|name|String|The link text that is visible in the Places app. (Maximum length=200 characters)|
+|value|String|URL. (Maximum length=1000 characters)|
 
 ## Relationships
 None.
