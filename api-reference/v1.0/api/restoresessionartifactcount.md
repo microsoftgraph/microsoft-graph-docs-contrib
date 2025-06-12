@@ -1,8 +1,8 @@
 ---
 title: "restoreSessionArtifactCount resource type"
 description: "Represents artifact count metadata for a restore session."
-author: "satpatel1"
-ms.reviewer: "satpatel1"
+author: "divchauhan"
+ms.reviewer: "divchauhan"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -12,8 +12,6 @@ toc.title: RestoreSessionArtifactCount
 # restoreSessionArtifactCount resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents artifact count metadata for a [restore session](../resources/restoreSessionBase.md). Restore session APIs are used by SharePoint, OneDrive, and Exchange Online admins to perform restore-related tasks on artifacts that are protected as part of a protection policy.
 
