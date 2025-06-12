@@ -314,32 +314,28 @@ items:
     href: ../../api/educationsubmissionresource-get.md
   - name: Delete submission resource
     href: ../../api/educationsubmissionresource-delete.md
-- name: Reports
+- name: Reading assignment submission
   items:
   - name: Reading assignment submission
-    items:
-    - name: Reading assignment submission
-      href: ../../resources/readingassignmentsubmission.md
-    - name: Get
-      href: ../../api/readingassignmentsubmission-get.md
+    href: ../../resources/readingassignmentsubmission.md
+  - name: Get
+    href: ../../api/readingassignmentsubmission-get.md
+- name: Reflect check-in response
+  items:
   - name: Reflect check-in response
-    items:
-    - name: Reflect check-in response
-      href: ../../resources/reflectcheckinresponse.md
-    - name: Get
-      href: ../../api/reflectcheckinresponse-get.md
-  - name: Speaker assignment submission
-    items:
-    - name: Speaker assignment submission
-      href: ../../resources/speakerassignmentsubmission.md
-    - name: Get
-      href: ../../api/speakerassignmentsubmissions-get.md    
+    href: ../../resources/reflectcheckinresponse.md
+  - name: Get
+    href: ../../api/reflectcheckinresponse-get.md
 - name: Related contact
   items:
   - name: Related contact
     href: ../../resources/relatedcontact.md
   - name: Update
     href: ../../api/relatedcontact-update.md
+- name: Speaker assignment submission
+  items:
+  - name: Speaker assignment submission
+    href: ../../resources/speakerassignmentsubmission.md
 - name: Complex types
   items:
   - name: Challenging word
