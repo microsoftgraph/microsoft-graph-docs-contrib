@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |allowUserRequestsForAppAccess|Boolean|Indicates whether users are allowed to request access to the unavailable Teams apps.|
-|customAppSettings|[customAppSettings](../resources/customappsettings.md)|Defines the settings for all custom apps in the tenant.|
+|customAppSettings|[customAppSettings](../resources/customappsettings.md)|The settings for all custom apps in the tenant.|
 |id|String|Unique identifier for the **teamsAppSettings** object. Inherited from [entity](../resources/entity.md).|
 |isChatResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. `True` indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. `False` blocks the installation of any Teams app that requires resource-specific permissions in a chat or a meeting.|
 |isUserPersonalScopeResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for personal scope in Teams apps has been enabled for the tenant. `True` indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope. `False` blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.|
