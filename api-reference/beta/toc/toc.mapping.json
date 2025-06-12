@@ -829,7 +829,7 @@
         "readingAssignmentSubmission",
         "reflectCheckInResponse",
         "relatedContact",
-        "speakerassignmentsubmission"
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
         "challengingWord",
