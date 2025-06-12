@@ -5,7 +5,7 @@ author: "tingh-msft"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: apiPageType
-ms.date: 035/07/2025
+ms.date: 06/11/2025
 ---
 
 # unbilledReconciliation: export
@@ -70,13 +70,13 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/reports/partners/billing/reconciliation/unbilled/export
+POST https://graph.microsoft.com/v1.0/reports/partners/billing/reconciliation/unbilled/export
 Content-Type: application/json
 
 {
-  "currencyCode": "USD",
   "attributeSet": "full",
-  "billingPeriod": "current"
+  "billingPeriod": "current",
+  "currencyCode": "USD"
 }
 ```
 
@@ -91,5 +91,5 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
+Location: https://graph.microsoft.com/v1.0/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
 ```

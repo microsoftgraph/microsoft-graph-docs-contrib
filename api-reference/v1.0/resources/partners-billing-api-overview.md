@@ -5,7 +5,7 @@ author: "tingh-msft"
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: "reports"
-ms.date: 05/07/2025
+ms.date: 06/11/2025
 ---
 
 # Use the Microsoft Graph API to export partner billing data
@@ -34,7 +34,7 @@ To export reconciliation data, the calling principal must be in the partner tena
 
 ## Common use cases
 
-The partner billing API provides methods and actions that allow Microsoft direct partners to export their high-volume billed reconciliation data and billed and unbilled Azure usage data.
+The partner billing API provides methods and actions that allow Microsoft direct partners to export their high-volume billed and unbilled Azure usage data, as well as billed and unbilled invoice reconciliation data.
 
 ### Billed usage data
 
@@ -72,7 +72,7 @@ The download of usage or reconciliation data is a long-running operation that co
 
 Use the [billedUsage: export](../api/partners-billing-billedusage-export.md) or [unbilledUsage: export](../api/partners-billing-unbilledusage-export.md) API to access billed or unbilled consumption line items. The API returns a `202 Accepted` response code and a `Location` header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request at regular intervals until you receive a success status with a [manifest](../resources/partners-billing-manifest.md) URL.
 
-### Invoice line-item endpoint
+### Invoice reconciliation endpoint
 
 Use the [billedReconciliation: export](../api/partners-billing-billedreconciliation-export.md) API to access billed invoice reconciliation line items or or [unbilledReconciliation: export](../api/partners-billing-unbilledreconciliation-export.md) to access unbilled invoice reconciliation line items. The API returns a `202 Accepted` response code and a `Location` header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request at regular intervals until you receive a success status with a [manifest](../resources/partners-billing-manifest.md) URL.
 

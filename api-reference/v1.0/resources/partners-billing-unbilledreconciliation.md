@@ -5,7 +5,7 @@ author: "tingh-msft"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: resourcePageType
-ms.date: 05/07/2025
+ms.date: 06/11/2025
 ---
 
 # unbilledReconciliation resource type
