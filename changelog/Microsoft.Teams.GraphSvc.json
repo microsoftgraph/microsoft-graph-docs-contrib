@@ -4,6 +4,14 @@
       "ChangeList": [
         {
           "Id": "edddaf0d-8c8b-491c-92ba-cec7db9d898d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appDevelopmentPlatforms",
+          "ChangeType": "Addition",
+          "Description": "Added the **appDevelopmentPlatforms** enumeration type.",
+          "Target": "appDevelopmentPlatforms"
+        },
+        {
+          "Id": "edddaf0d-8c8b-491c-92ba-cec7db9d898d",
           "ApiChange": "Property",
           "ChangedApiName": "customAppSettings",
           "ChangeType": "Addition",
