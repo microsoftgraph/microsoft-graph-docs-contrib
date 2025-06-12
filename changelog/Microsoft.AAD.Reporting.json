@@ -49,30 +49,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [selfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/selfServiceSignUp?view=graph-rest-beta) resource. Use this resource to analyze self-service sign-up requests in Microsoft Entra External ID.",
           "Target": "selfServiceSignUp"
-        },
-        {
-          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
-          "ApiChange": "Resource",
-          "ChangedApiName": "ciamUserSnapshot",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **ciamUserSnapshot** resource.",
-          "Target": "ciamUserSnapshot"
-        },
-        {
-          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
-          "ApiChange": "Property",
-          "ChangedApiName": "userId",
-          "ChangeType": "Addition",
-          "Description": "Added the **userId** property to the [selfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/selfServiceSignUp?view=graph-rest-beta) resource.",
-          "Target": "selfServiceSignUp"
-        },
-        {
-          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
-          "ApiChange": "Property",
-          "ChangedApiName": "userSnapshot",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **userSnapshot** property from the [selfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/selfServiceSignUp?view=graph-rest-beta) resource.",
-          "Target": "selfServiceSignUp"
         }
       ],
       "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
