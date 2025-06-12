@@ -1,6 +1,6 @@
 ---
 title: "List speakerAssignmentSubmissions"
-description: "Read the properties and relationships of a list of speaker assignments submitted by a student."
+description: "Get a list of speaker assignments that were submitted by a student."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
