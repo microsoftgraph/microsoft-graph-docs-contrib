@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "purviewecosystem-sensitivitylabels-getsensitivitylabels-permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sensitivitylabel-get-permissions.md)]
 
-When using application permissions (`SensitivityLabels.Read.All`), the API returns all labels for the tenant by default.
+When an application calls this API with an application permission (`SensitivityLabels.Read.All`), the API returns all labels for the tenant by default.
 
 ## HTTP request
 
