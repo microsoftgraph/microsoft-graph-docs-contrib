@@ -19,13 +19,8 @@ Represents a building withing the tenant.
 Inherits from [place](../resources/place.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/building-list.md)|A list of **building** objects |Get a list of **building** objects and their properties.|
-|[Get](../api/building-get.md)|The requested **building** |Get the properties and relationships of a specified **building** object.|
-|[Update](../api/building-update.md)|The requested **building** |Update the properties and relationships of a specified **place** object. |
-|[Delete](../api/building-delete.md)|None|Delete a **building** with the specified id.|
-|[descendants](../api/building-descendants.md)|List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, floors, sections, rooms, desks, or workspaces) under a given **building**.|
+
+Go to the [place](./place.md) documentation for supported methods.
 
 ## Properties
 

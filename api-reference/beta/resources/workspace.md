@@ -19,14 +19,8 @@ Represents a collection of desks. A workspace can be added to a [floor](./floor.
 Inherits from [place](../resources/place.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/roomlist-list-rooms.md)|A list of **workspace** objects |Get a list of the **workspace** objects and their properties.|
-|[Create](../api/roomlist-post-rooms.md)|The created **workspace** |Create a new **workspace**.|
-|[Get](../api/room-get.md)|The requested **workspace** |Get the properties and relationships of the specified **workspace**.|
-|[Update](../api/room-update.md)|The requested **workspace** |Update the properties and relationships of a specified **workspace**.|
-|[Delete](../api/roomlist-delete-rooms.md)|None|Delete the **workspace** with the specified id.|
-|[descendants](../api/room-descendants.md)|List of **desk** objects |Returns the list of descendant **desk** objects under a given **workspace**.|
+
+Go to the [place](./place.md) documentation for supported methods.
 
 ## Properties
 

@@ -19,14 +19,8 @@ Represents a room within the tenant. A room can be added to a [floor](./floor.md
 Inherits from [place](../resources/place.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/roomlist-list-rooms.md)|A list of **room** objects |Get a list of the **room** objects and their properties.|
-|[Create](../api/roomlist-post-rooms.md)|The created **room** |Create a new **room**.|
-|[Get](../api/room-get.md)|The requested **room** |Get the properties and relationships of the specified **room**.|
-|[Update](../api/room-update.md)|The requested **room** |Update the properties and relationships of a specified **room**.|
-|[Delete](../api/roomlist-delete-rooms.md)|None|Delete the **room** with the specified id.|
-|[descendants](../api/room-descendants.md)|List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, desks or workspaces) under a given **room**.|
+
+Go to the [place](./place.md) documentation for supported methods.
 
 ## Properties
 

@@ -20,13 +20,8 @@ Inherits from [place](../resources/place.md).
 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/section-list.md)|A list of **section** objects |Get a list of **section** objects and their properties.|
-|[Get](../api/section-get.md)|The requested **section** |Get the properties and relationships of a specified **section**.|
-|[Update](../api/section-update.md)|The requested **section** |Update the properties and relationships of a specified **section**. |
-|[Delete](../api/section-delete.md)|None|None|Delete the **section** with the specified id.|
-|[descendants](../api/section-descendants.md)|List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, rooms, desks, or workspaces) under a given **section**.|
+
+Go to the [place](./place.md) documentation for supported methods.
 
 ## Properties
 

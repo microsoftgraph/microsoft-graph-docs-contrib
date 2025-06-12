@@ -19,12 +19,8 @@ Represents individual desks. A desk must be added to a [section](./section.md).
 Inherits from [place](../resources/place.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/section-list.md)|A list of **desk** objects |Get a list of **desk** objects and their properties.|
-|[Get](../api/section-get.md)|The requested **desk** |Get the properties and relationships of a specified **desk**.|
-|[Update](../api/section-update.md)|The requested **desk** |Update the properties and relationships of a specified **desk**. |
-|[Delete](../api/section-delete.md)|None|None|Delete the **desk** with the specified id.|
+
+Go to the [place](./place.md) documentation for supported methods.
 
 ## Properties
 

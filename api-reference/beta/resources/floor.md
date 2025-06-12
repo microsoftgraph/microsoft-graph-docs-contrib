@@ -19,13 +19,8 @@ Represents a floor within a [building](./building.md). A floor must always be pa
 Inherits from [place](../resources/place.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/floor-list.md)|A list of **floor** objects |Get a list of **floor** objects and their properties.|
-|[Get](../api/floor-get.md)|The requested **floor** |Get the properties and relationships of a specified **floor**.|
-|[Update](../api/floor-update.md)|The requested **floor** |Update the properties and relationships of a specified **floor**. |
-|[Delete](../api/floor-delete.md)|None|Delete the **floor** with the specified id.|
-|[descendants](../api/floor-descendants.md)|List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, sections, rooms, desks, or workspaces) under a given **floor**.|
+
+Go to the [place](./place.md) documentation for supported methods.
 
 ## Properties
 
