@@ -30,7 +30,7 @@ None.
 |:-----------|:---|:----------|
 |readingAssignmentSubmission|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|Details of submitted reading assignments.|
 |reflectCheckInResponse|[reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection|Details of check-in responses.|
-|speakerAssignmentSubmission|[speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md) collection|Details of submitted speaker assignments.|
+|speakerAssignmentSubmissions|[speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md) collection|Details of submitted speaker assignments.|
 
 ## JSON representation
 
