@@ -913,6 +913,14 @@ Namespace: microsoft.graph.security
 |  replaced  |
 |  unknownFutureValue  |
 
+### contentProcessingErrorType values
+
+|Member|
+|:---|
+|transient|
+|permanent|
+|unknownFutureValue|
+
 ### dlpAction values
 
 |Member|
