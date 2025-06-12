@@ -259,7 +259,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 4: Enable app usage metrics in the developer portal
+### Example 4: Enable the developer portal to display app usage metrics
 
 The following example shows how to add `developerPortal` to the list of developer tools that are allowed to display app usage metrics.
 
