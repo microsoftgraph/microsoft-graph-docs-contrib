@@ -5228,6 +5228,7 @@ Possible values for user account types (group membership), per Windows definitio
 |federatedOrganizations|
 |everyone|
 |unknownFutureValue|
+
 ### educationSpeechType values 
 
 |Member|
@@ -5236,6 +5237,64 @@ Possible values for user account types (group membership), per Windows definitio
 |personal|
 |persuasive|
 |unknownFutureValue|
+
+### engagementConversationMessageReactionType values
+
+| Member           |
+|:-----------------|
+| like             |
+| love             |
+| celebrate        |
+| thank            |
+| laugh            |
+| sad              |
+| happy            |
+| excited          |
+| smile            |
+| silly            |
+| intenseLaugh     |
+| starStruck       |
+| goofy            |
+| thinking         |
+| surprised        |
+| mindBlown        |
+| scared           |
+| crying           |
+| shocked          |
+| angry            |
+| agree            |
+| praise           |
+| takingNotes      |
+| heartBroken      |
+| support          |
+| confirmed        |
+| watching         |
+| brain            |
+| medal            |
+| bullseye         |
+| unknownFutureValue |
+
+### engagementConversationMessageAttachmentType values
+
+| Member           |
+|:-----------------|
+| file             |
+| videoFile        |
+| imageFile        |
+| message          |
+| webLink          |
+| webImage         |
+| webVideo         |
+| unknownFutureValue |
+
+### engagementConversationModerationState values
+
+| Member             |
+|:-------------------|
+| published          |
+| pendingReview      |
+| dismissed          |
+| unknownFutureValue |
 
 ### cloudPcPolicyTimezone values 
 
