@@ -1,5 +1,5 @@
 ---
-title: "Get speakerAssignmentSubmission"
+title: "List speakerAssignmentSubmissions"
 description: "Read the properties and relationships of a collection of speakerAssignmentSubmission objects."
 author: "v-rmanda"
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 05/05/2025
 ---
 
-# Get speakerAssignmentSubmission
+# List speakerAssignmentSubmissions
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a collection of [speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md) objects.
+Get a collection of [speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md) objects.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "speakerAssignmentSubmission-get-permissions"
+  "name": "reportsroot-list-speakerassignmentsubmissions-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/speakerassignmentsubmission-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/reportsroot-list-speakerassignmentsubmissions-permissions.md)]
 
 ## HTTP request
 
