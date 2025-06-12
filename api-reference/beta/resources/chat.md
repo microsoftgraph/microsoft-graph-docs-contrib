@@ -64,6 +64,7 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 |[List pinned messages](../api/chat-list-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md) collection|Get a list of pinned messages in a chat.|
 |[Pin message](../api/chat-post-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md)|Pin a chat message in a chat.|
 |[Unpin message](../api/chat-delete-pinnedmessages.md)|None|Unpin a message from a chat.|
+|[Start migration](../api/chat-startmigration.md)|[chat](chat.md)| Starts the migration mode on the chat.|
 
 >**Note:** When using application permissions, be sure you know how to get the chat ID. Because listing chats with application permissions is not supported, not all scenarios are possible. It is possible to get chat IDs with delegated permissions, and from [change notifications for /chats/getAllMessages](../api/subscription-post-subscriptions.md) with application permissions.
 
@@ -82,7 +83,8 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
 | viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
 | webUrl| String | The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.|
-
+|migrationMode|[migrationMode](../resources/chat.md#migrationMode-values)|Setting to indicate whether a chat is in migrationMode. This will be `null` for chats that never entered migration mode.|
+|originalCreatedDateTime|dateTimeOffset|Timestamp for the original creation time of chat/channel. `null` if the chat/channel has never been in migration mode.|
 
 ### chatType values 
 
@@ -92,6 +94,14 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 |group               | Indicates that the chat is a group chat. The roster size (of at least two people) can be updated for this type of chat. Members can be removed/added later.|
 |meeting             | Indicates that the chat is associated with an online meeting. This type of chat is only created as part of the creation of an online meeting.|
 |unknownFutureValue  | Evolvable enumeration sentinel value. Don't use. |
+
+### migrationMode values
+
+| Member             | Description                                                                       |
+|:-------------------|:----------------------------------------------------------------------------------|
+| InProgress           | Channel has entered migration mode.                          |
+| Completed            | Channel is out of migration mode. |
+| UnknownFutureValue | Evolvable enumeration sentinel value. Don't use.     |
 
 ## Relationships
 

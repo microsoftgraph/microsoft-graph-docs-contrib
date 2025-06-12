@@ -45,6 +45,7 @@ where files are shared, and where tabs are added.
 |[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Removes the migration mode from the channel and makes the channel available to users to post and read messages.|
+|[Start migration](../api/channel-startmigration.md)|[channel](channel.md)| Starts the migration mode on the channel.|
 |[List tabs in channel](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a channel.|
 |[Add tab to channel](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a channel.|
 |[Get tab in channel](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a channel.|
@@ -77,6 +78,8 @@ where files are shared, and where tabs are added.
 |summary|[channelSummary](../resources/channelsummary.md)|Contains summary information about the channel, including number of guests, members, owners, and an indicator for members from other tenants. The **summary** property is only returned if it appears in the `$select` clause of the [Get channel](../api/channel-get.md) method.|
 |tenantId |string | The ID of the Microsoft Entra tenant. |
 |isArchived| Boolean | Indicates whether the channel is archived. Read-only. |
+|migrationMode|[migrationMode](../resources/channel.md#migrationMode-values)|Setting to indicate whether a channel is in migrationMode. This will be `null` for channels that never entered migration mode.|
+|originalCreatedDateTime|dateTimeOffset|Timestamp for the original creation time of chat/channel. `null` if the chat/channel has never been in migration mode.|
 
 ### channelMembershipType values
 
@@ -86,6 +89,14 @@ where files are shared, and where tabs are added.
 | private            | Channel can have members that are a subset of all the members on the parent team. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                 |
 | shared             | Members can be directly added to the channel without adding them to the team.     |
+
+### migrationMode values
+
+| Member             | Description                                                                       |
+|:-------------------|:----------------------------------------------------------------------------------|
+| InProgress           | Channel has entered migration mode.                          |
+| Completed            | Channel is out of migration mode. |
+| UnknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                 |
 
 ### Instance attributes
 

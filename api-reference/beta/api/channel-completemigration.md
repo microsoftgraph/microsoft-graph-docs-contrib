@@ -14,9 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complete the message migration process by removing `migration mode` from a [channel](../resources/channel.md) in a team. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+The API will allow users to complete migration on existing channels or new channels. Previously, users were only allowed to initiate complete migration operations on newly created Standard Channels, which were created for initial migration flow. ([import-external-messages-to-teams](https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
-After a **completeMigration** request is made, you can't import more messages into the team. You can add members to the team after the request returns a successful response.
+This API expands import capabilities to
+
+1) New channels (General, Standard, Private, and Shared) created in migration mode for initial import flow.
+2) Existing channels (General, Standard, Private, and Shared) which are already in migration mode.
+
+Points to note:
+
+1) When channel is created in migration mode for initial import flow, this API will complete the message migration process by removing `migration mode` from a [channel](../resources/channel.md) in a team. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+
+2) For **existing** channels which are already in migration mode, this API will complete the message migration process by populating `migration mode` to `Completed` for a [channel](../resources/channel.md) in a team.
+
+After a **completeMigration** request is made for existing or new channels, you can still import more messages into the team by calling [start migration on channel](channel-startmigration.md). 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -54,8 +65,6 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 Here's an example  of the request.
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD022 -->
-
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -129,3 +138,9 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+## Related content
+
+- [channel-startMigration](channel-startmigration.md)
+- [Import-message-with-older-timestamp](channel-post-messages.md#example-2-import-messages)
+- [get-channel-migration-status](channel-get#example-1-get-a-channel.md)
