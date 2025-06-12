@@ -28,7 +28,7 @@ The **desk** type supports all [base properties of a **place** object](./place.m
 
 |Property |Type |Description |
 |:--|:--|:--|
-|mailboxDetails |mailboxDetails |The mailbox object-ids and email address that are associated with the desk. |
+|mailboxDetails |mailboxDetails |The mailbox object **id** and email address that are associated with the desk. |
 |displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available at the desk. |
 |Mode |Dictionary |The mode of the desk. We support 4 modes: <br/><br/>
 <ul><li>assigned - Desks that are assigned to a user</li>

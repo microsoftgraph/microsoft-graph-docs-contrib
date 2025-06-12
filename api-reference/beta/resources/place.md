@@ -19,8 +19,8 @@ A **place** object represents different space types within a tenant. A place obj
 |Place Type	|Details |
 |:--|:--|
 |[building](./building.md) | Represents a building within the tenant and has properties such as name, address, geographic coordinates, and so on. |
-|[floor](./floor.md) |Represents a floor within a building, including properties such as name, parentID, SortOrder, and so on. A floor must always be parented to a building. |
-|[section](./section.md) |Represents a section within a floor, including properties such as name, parentID, label, and so on. A section must always be parented to a floor. |
+|[floor](./floor.md) |Represents a floor within a building, including properties such as name, parentID, SortOrder, and so on. A building is always the parent of a floor. |
+|[section](./section.md) |Represents a section within a floor, including properties such as name, parentID, label, and so on. A floor is always the parent of a section. |
 |[room](./room.md) |Represents a room within the tenant. All the rooms in Places must be associated with Exchange mailboxes. A room can be added to a floor or to a section. The rich properties of the room include an email address for the room, accessibility, capacity, audio device, video device, and so on. |
 |[workspace](./workspace.md) |Represents a collection of desks. All the workspaces in Places must be associated with Exchange mailboxes. A workspace can be added to a floor or a section. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
 |[desk](./desk.md) |Represents individual desks. A desk must be added to a section. The rich properties for the section include email address, mode, and accessibility. |

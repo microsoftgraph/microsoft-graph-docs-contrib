@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a floor within a [building](./building.md). A floor must always be parented to a building.
+Represents a floor within a [building](./building.md). A building is always the parent of a floor.
 
 Inherits from [place](../resources/place.md).
 

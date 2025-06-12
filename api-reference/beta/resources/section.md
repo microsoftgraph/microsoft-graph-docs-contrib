@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a section within a [floor](./floor.md). A section must always be parented to a floor.
+Represents a section within a [floor](./floor.md). A floor is always the parent of a section.
 
 Inherits from [place](../resources/place.md).
 
