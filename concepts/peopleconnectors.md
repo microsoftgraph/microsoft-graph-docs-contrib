@@ -11,7 +11,7 @@ ms.subservice: developer
 
 # Microsoft 365 Copilot connectors for people data
 
-Microsoft 365 Copilot connectors for people data(formerly Microsoft Graph connectors) are a type of connector that enhance how individuals are portrayed across Microsoft 365 apps and APIs. They help organizations bring people data from third-party systems into Microsoft 365, ensuring a unified and consistent view of individuals across Copilot, Microsoft Search, profile cards, and more.
+Microsoft 365 Copilot connectors for people data (formerly Microsoft Graph connectors) are a type of connector that enhances how individuals are portrayed across Microsoft 365 apps and APIs. They help organizations bring people data from third-party systems into Microsoft 365, ensuring a unified and consistent view of individuals across Copilot, Microsoft Search, profile cards, and more.
 
 These connectors create a view of a portion of the data from the third-party source system, ensuring the data stays authoritative in its original location while being displayed consistently across Microsoft 365.
 
@@ -31,7 +31,7 @@ Once connected, people data from the third-party system can appear in Microsoft 
 * Microsoft Search
  * Org Explorer 
 
-Admins can configure which properties are shown and how they map to Microsoft 365 schema in [MAC](https://admin.microsoft.com/adminportal/home?#/MicrosoftSearch/Connectors/add).  
+Admins can configure which properties are shown and how they map to Microsoft 365 schema in the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/MicrosoftSearch/Connectors/add).  
 
 When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence](profilepriority-configure-profilepropertysetting.md).
 
