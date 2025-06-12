@@ -15,18 +15,19 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a speaker assignment that was submitted by a student.
+
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/speakerAssignmentSubmissions-get.md)|[speakerAssignmentSubmission](../resources/speakerAssignmentSubmission.md)|Read the properties and relationships of a [speakerAssignmentSubmission](../resources/speakerAssignmentSubmission.md) object.|
+|[Get](../api/speakerassignmentsubmission-get.md)|[speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md)|Read the properties and relationships of a collection of [speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md) objects.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |assignmentId|String|ID of the assignment with which this submission is associated.|
-|averageWordsPerMinutePace|Int64|The average speaking pace of the student in words per minute.|
+|averageWordsPerMinutePace|Int64|The average speaking pace of the student, measured in words per minute.|
 |classId|String|ID of the class this speaker progress is associated with.|
 |fillerWordsOccurrencesCount|Int64|The number of times the student was flagged by Speaker Coach for using a filler word.|
 |incorrectCameraDistanceOccurrencesCount|Int64|The number of times the student was flagged by Speaker Coach for being either too close or too far away from the camera.|
@@ -44,7 +45,6 @@ Inherits from [entity](../resources/entity.md).
 |topNonInclusiveWordsAndPhrases|String collection|The non-inclusive or sensitive words and phrases most used by the student.|
 |topRepetitiveWordsAndPhrases|String collection|The words and phrases most repeated by the student.|
 |wordsSpokenCount|Int64|Total number of words spoken by the student in the submission.|
-
 
 ## Relationships
 None.
@@ -79,11 +79,10 @@ The following JSON representation shows the resource type.
   "selfCorrections": "Int64",
   "studentId": "String",
   "submissionDateTime": "String (timestamp)",
-  "topFillerWords": "String",
-  "topMispronouncedWords": "String",
-  "topNonInclusiveWordsAndPhrases": "String",
-  "topRepetitiveWordsAndPhrases": "String",
+  "topFillerWords": ["String"],
+  "topMispronouncedWords": ["String"],
+  "topNonInclusiveWordsAndPhrases": ["String"],
+  "topRepetitiveWordsAndPhrases": ["String"],
   "wordsSpokenCount": "Int64"
 }
 ```
-
