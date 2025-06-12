@@ -336,6 +336,8 @@ items:
   items:
   - name: Speaker assignment submission
     href: ../../resources/speakerassignmentsubmission.md
+  - name: List
+    href: ../../api/reportsroot-list-speakerassignmentsubmissions.md
 - name: Complex types
   items:
   - name: Challenging word
