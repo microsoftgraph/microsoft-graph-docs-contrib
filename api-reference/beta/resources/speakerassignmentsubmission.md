@@ -19,7 +19,7 @@ Represents a speaker assignment that was submitted by a student.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/speakerassignmentsubmission-get.md)|[speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md)|Read the properties and relationships of a collection of [speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md) objects.|
+|[List](../api/reportsroot-list-speakerassignmentsubmissions.md)|[speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md)|Get a list of [speaker assignments](../resources/speakerassignmentsubmission.md) that were submitted by a student.|
 
 ## Properties
 |Property|Type|Description|
