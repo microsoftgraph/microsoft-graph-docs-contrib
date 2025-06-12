@@ -27,6 +27,12 @@ Use the **videoOnDemandWebUrl** on [virtualEventSession](/graph/api/resources/vi
 
 Updated the throttling information for [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions). The limit per app per tenant changed from 200 requests per second to 30 requests per second. The limit per app across all tenants increased from 1,000 requests per second to 1,500 requests per second.
 
+## June 2025: New in preview only
+
+### Device and app management | Cloud PC
+
+[Retrieve cloud PC count by status](/graph/api/cloudpc-retrievecloudpccountbystatus?view=graph-rest-beta&preserve-view=true).
+
 ## May 2025: New and generally available
 
 ### Backup storage
@@ -69,8 +75,6 @@ Use the [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallent
 
 - Added **resourceAvailabilityCheckMissingRegistrationForLocation** as a possible error type for the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true).
 - Deprecated the [getCloudPcRecommendationReports](/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true) method of the [cloudPcReports](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true) resource in favor of the [retrieveCloudPcRecommendationReports](/graph/api/cloudpcreports-retrievecloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true) method.
-
-Added [retrieveCloudPcCountByStatus](/graph/api/cloudpc-retrieveCloudPcCountByStatus?view=graph-rest-beta&preserve-view=true) method to retrieve Cloud PC count group by Status column.
 
 ### Education
 
