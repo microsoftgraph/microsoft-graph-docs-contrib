@@ -48,22 +48,7 @@ PATCH /section
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|tags|String collection|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|label|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-
-
+The **section** object type has no unique properties and inherits all properties from the **place** object type.
 
 ## Response
 

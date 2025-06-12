@@ -48,23 +48,9 @@ PATCH /floor
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|tags|String collection|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|label|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|sortOrder|Int32|**TODO: Add Description** Optional.|
-
-
+|SortOrder |Integer |Specifies the sort order of the floor. For example, a floor might be named "Lobby" with a sort order of 0 to show this floor first in ordered lists. |
 
 ## Response
 

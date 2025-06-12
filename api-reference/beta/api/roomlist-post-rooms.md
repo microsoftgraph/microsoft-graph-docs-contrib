@@ -50,32 +50,23 @@ In the request body, supply a JSON representation of the [room](../resources/roo
 
 You can specify the following properties when creating a **room**.
 
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|tags|String collection|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|label|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|emailAddress|String|**TODO: Add Description** Optional.|
-|nickname|String|**TODO: Add Description** Required.|
-|building|String|**TODO: Add Description** Optional.|
-|floorNumber|Int32|**TODO: Add Description** Optional.|
-|capacity|Int32|**TODO: Add Description** Optional.|
-|bookingType|bookingType|**TODO: Add Description**. The possible values are: `unknown`, `standard`, `reserved`. Optional.|
-|audioDeviceName|String|**TODO: Add Description** Optional.|
-|videoDeviceName|String|**TODO: Add Description** Optional.|
-|displayDeviceName|String|**TODO: Add Description** Optional.|
-|floorLabel|String|**TODO: Add Description** Optional.|
-|isTeamsEnabled|Boolean|**TODO: Add Description** Required.|
-
-
+|Property |Type |Description |
+|:--|:--|:--|
+|capacity |Integer |The maximum number of people in the **room** can accommodate. |
+|audioDeviceName |String |The name of the audio device that is available in the room. |
+|videoDeviceName |String |The name of the video device that is available in the room. |
+|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the room.
+|isTeamsEnabled |Boolean |Whether or not the room is configured with the Microsoft Teams Room system. |
+|emailAddress |String |The email address associated with the room. This email address is used for booking. |
+|nickname |String |A short, friendly name for the **place**, often used for easier identification or display in UI. |
+|building |String |The name or identifier of the building where the **place** (such as a room or a desk) is located. |
+|floorNumber |Integer |The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. |
+|floorLabel |String |A human-readable label for the floor, such as "Ground Floor". |
+|label |String |A custom identifier or tag for the **place**, often used to distinguish it within a floor or section. |
+|bookingType |Enum |Specifies how the place can be booked. Possible values are: <br/><br/> <ul><li>standard - Available for general booking</li>
+<li>reserved – Reserved for specific users or purposes</li>
+<li>unknown – Default or unspecified booking behavior</li>
+</ul> |
 
 ## Response
 

@@ -48,25 +48,15 @@ PATCH /desk
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|tags|String collection|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|label|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|displayDeviceName|String|**TODO: Add Description** Optional.|
-|mailboxDetails|[mailboxDetails](../resources/mailboxdetails.md)|**TODO: Add Description** Optional.|
-|mode|[placeMode](../resources/placemode.md)|**TODO: Add Description** Optional.|
-
-
+|mailboxDetails |mailboxDetails |The mailbox object-ids and email address that are associated with the desk. |
+|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available at the desk. |
+|Mode |Dictionary |The mode of the desk. We support 4 modes: <br/><br/>
+<ul><li>assigned - Desks that are assigned to a user</li>
+<li>bookable - Desks that can be booked in advance using desk reservation tools</li>
+<li>walkup - First come, first serve desks. When you plug in to a peripheral on one of these desks, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
+<li>offline - Desk that are taken down for maintenance or marked as not bookable.</li></ul> |
 
 ## Response
 
