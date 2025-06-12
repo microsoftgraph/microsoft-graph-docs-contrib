@@ -24,7 +24,7 @@ Go to the [place](./place.md) documentation for supported methods.
 
 ## Properties
 
-The **desk** type supports all [base properties of a **place** object](./place.md#base-properties), as well as the following properties:
+The **desk** type supports all [base properties of a **place** object](./place.md#base-properties) and the following properties:
 
 |Property |Type |Description |
 |:--|:--|:--|
@@ -33,8 +33,8 @@ The **desk** type supports all [base properties of a **place** object](./place.m
 |Mode |Dictionary |The mode of the desk. We support 4 modes: <br/><br/>
 <ul><li>assigned - Desks that are assigned to a user</li>
 <li>bookable - Desks that can be booked in advance using desk reservation tools</li>
-<li>walkup - First come, first serve desks. When you plug in to a peripheral on one of these desks, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
-<li>offline - Desk that are taken down for maintenance or marked as not bookable.</li></ul> |
+<li>walkup - First come, first serve desks. When you plug in to a peripheral on one of these desks, the desk is booked for you, assuming that the peripheral is associated to the desk in Teams Pro Management portal</li>
+<li>offline - Desk that is taken down for maintenance or marked as not bookable.</li></ul> |
 
 ## Relationships
 None.

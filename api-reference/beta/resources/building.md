@@ -24,7 +24,7 @@ Go to the [place](./place.md) documentation for supported methods.
 
 ## Properties
 
-The **building** type supports all [base properties of a **place** object](./place.md#base-properties), as well as the following properties:
+The **building** type supports all [base properties of a **place** object](./place.md#base-properties) and the following properties:
 
 |Property |Type |Description |
 |:--|:--|:--|

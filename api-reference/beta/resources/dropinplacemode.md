@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This mode indicates that the desk or workspace is a drop-in **place**, meaning it is first come, first serve. These **places** are bookable, but cannot be booked in advance. The **place** is automatically booked for you once you connect your Windows or macOS device to a configured peripheral on the **place**.
+This mode indicates that the desk or workspace is a drop-in **place**, meaning it is first come, first serve. These **places** are bookable, but can't be booked in advance. The **place** is automatically booked for you when you connect your Windows or macOS device to a configured peripheral on the **place**.
 
 Inherits from [placeMode](../resources/placemode.md).
 
