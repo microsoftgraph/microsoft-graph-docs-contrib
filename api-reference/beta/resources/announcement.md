@@ -1,5 +1,5 @@
 ---
-title: "announcement resource type"
+title: "announcement resource type (deprecated)"
 description: "Represents the Microsoft Entra change announcements, including deprecations, breaking changes, retirements, feature changes, and Microsoft-managed policies."
 author: "garretraziel"
 ms.date: 11/20/2024
@@ -9,11 +9,13 @@ doc_type: resourcePageType
 toc.title: Change announcements
 ---
 
-# announcement resource type
+# announcement resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [entra-lifecycle-announcements-deprecation-note](../includes/entra-lifecycle-announcements-deprecation-note.md)]
 
 Represents the Microsoft Entra change announcements, including deprecations, breaking changes, retirements, feature changes, and Microsoft-managed policies.
 

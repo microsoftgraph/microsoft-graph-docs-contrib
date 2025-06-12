@@ -38,12 +38,9 @@ $additionalData = [
 ];
 $assignment->setAdditionalData($additionalData);
 $requestBody->setAssignment($assignment);
+$requestBody->setJustification('Access for direct employee');
 $requestBody->setRequestType(new AccessPackageRequestType('userAdd'));
 $requestBody->setAnswers([	]);
-$additionalData = [
-	'justification' => 'Access for direct employee',
-];
-$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentRequests()->post($requestBody)->wait();
 

@@ -58,7 +58,7 @@ A direct assignment policy is useful when access package assignment requests wil
 
 #### Request
 
-The following example shows a request to create an access package assignment policy. In this policy, no users can request, no approval is required, and there are no access reviews.
+The following example shows a request to create an access package assignment policy. In this policy, no users can request, no approval is required, and there are no access reviews. 
 
 # [HTTP](#tab/http)
 <!-- {

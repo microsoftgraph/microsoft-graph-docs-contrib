@@ -45,12 +45,19 @@ To get all attendance reports for a webinar session with delegated and app permi
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
 ```
 
+To get all attendance reports for a town hall session using delegated and application permissions:
+<!-- { "blockType": "ignored" } -->
+``` http
+GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attendanceReports
+```
+
 > [!TIP]
 >
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
->- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
->- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
+>- `webinarId` is the **id** of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
+>- `sessionId` is the **id** of a [virtualEventSession](../resources/virtualeventsession.md) object.
+>- `townhallId` is the **id** of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
 ## Optional query parameters
 
@@ -72,6 +79,7 @@ If successful, this method returns a `200 OK` response code and a list of [meeti
 
 > [!TIP]
 > The **attendanceRecords** property is empty in the response.
+> If your scenario needs **externalEventInformation**, you must make an explicit call to the [Get meetingAttendanceReport](../api/meetingattendancereport-get.md) API. This data isn't returned by default when you query the virtual event or online meeting object.
 
 ## Example
 
@@ -227,7 +235,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/virtualEvents/webinars('f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd')/sessions('8d62dd52-4dff-4c75-96a9-f905cc3ff942')/attendanceReports/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#solutions/virtualEvents/webinars('f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd')/sessions('8d62dd52-4dff-4c75-96a9-f905cc3ff942')/attendanceReports/$entity",
   "value": [
     {
       "id": "c9b6db1c-d5eb-427d-a5c0-2022d7",
@@ -244,3 +252,55 @@ Content-Type: application/json
   ]
 }
 ```
+
+### Example 3: List attendance reports for a town hall session
+
+The following example shows how to list attendance reports for a town hall session.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_virtualevent_attendancereport_townhall",
+  "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd", "8d62dd52-4dff-4c75-96a9-f905cc3ff942"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.meetingAttendanceReport)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#solutions/virtualEvents/townhalls('f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd')/sessions('8d62dd52-4dff-4c75-96a9-f905cc3ff942')/attendanceReports/$entity",
+  "value": [
+    {
+      "id": "c9b6db1c-d5eb-427d-a5c0-2022d7",
+      "totalParticipantCount": 1,
+      "meetingStartDateTime": "2021-10-05T04:38:23.945Z",
+      "meetingEndDateTime": "2021-10-05T04:43:49.77Z"
+    },
+    {
+      "id": "2c2c2454-7613-4d6e-9c7c-4ce89",
+      "totalParticipantCount": 2,
+      "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
+      "meetingEndDateTime": "2021-10-04T23:18:57.563Z"
+    }
+  ]
+}
+```
+

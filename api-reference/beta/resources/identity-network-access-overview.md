@@ -141,7 +141,7 @@ Microsoft Graph also provides the following identity and access capabilities for
 |-----------------------------------------------------|---------------------------------------------------------------|
 | Manage contracts for the partner with its customers | [contract resource type](contract.md) and its associated APIs |
 | Microsoft partners can empower their customers to ensure the partners have least privileged access to their customers' tenants. This feature gives extra control to customers over their security posture while allowing them to receive support from the Microsoft resellers | See [Granular delegated admin privileges (GDAP) API overview](delegatedadminrelationships-api-overview.md) |
-| Get detections and security alerts for unauthorized party abuse, account takeovers, and anomalous usage of Azure subscriptions in the customer tenants that you're responsible for. :::image type="content" source="../images/preview-label.png" alt-text="Available on beta only."::: | See [Use the partner security alert API in Microsoft Graph](identity-network-access-overview.md) |
+| Get detections and security alerts for unauthorized party abuse, account takeovers, and anomalous usage of Azure subscriptions in the customer tenants that you're responsible for. :::image type="content" source="../images/preview-label.png" alt-text="Available on beta only."::: | See [Use the partner security alert API in Microsoft Graph](partner-security-partnersecurityalert-api-overview.md) |
 
 ## Identity and access reports
 

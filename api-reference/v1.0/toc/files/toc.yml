@@ -174,14 +174,6 @@ items:
     href: ../../api/filestoragecontainer-update-customproperty.md
   - name: Delete custom property
     href: ../../api/filestoragecontainer-delete-customproperty.md
-  - name: Add column
-    href: ../../api/filestoragecontainer-post-columns.md
-  - name: Update column
-    href: ../../api/filestoragecontainer-update-column.md
-  - name: Delete file storage container column
-    href: ../../api/filestoragecontainer-delete-column.md
-  - name: Get column
-    href: ../../api/filestoragecontainer-get-column.md
   - name: Update recycle bin settings
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items

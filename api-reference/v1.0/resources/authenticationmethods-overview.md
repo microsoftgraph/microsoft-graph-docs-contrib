@@ -2,7 +2,7 @@
 title: "Microsoft Entra authentication methods API overview"
 description: "Authentication methods are the ways that users authenticate in Microsoft Entra ID."
 ms.localizationpriority: medium
-ms.custom: has-azure-ad-ps-ref
+ms.custom: no-azure-ad-ps-ref
 author: FaithOmbongi
 ms.reviewer: julija.pettere, intelligentaccesspm
 ms.subservice: "entra-sign-in"
@@ -43,6 +43,7 @@ We don't recommend using the authentication methods APIs for scenarios where you
 |[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|A user can use Microsoft Authenticator app to sign-in or perform multi-factor authentication to Microsoft Entra ID|Delete a Microsoft Authenticator authentication method.|
 |[passwordAuthenticationMethod](passwordauthenticationmethod.md)| A password is currently the default primary authentication method in Microsoft Entra ID.|Reset a user's password|
 |[phoneAuthenticationMethod](phoneauthenticationmethod.md)|A user can use a phone to authenticate using [SMS or voice calls](/azure/active-directory/authentication/concept-authentication-methods#phone-options) as allowed by policy.|See a user's authentication phone numbers. Add, update, or remove a phone number for a user. Enable or disable a primary mobile phone for SMS sign-in.|
+|[platformCredentialAuthenticationMethod](platformcredentialauthenticationmethod.md)|A user can use a platform credential to sign in to Microsoft Entra ID.|Delete a lost platform credential authentication method.|
 |[softwareOathAuthenticationMethod](softwareoathauthenticationmethod.md)| Allow users to perform multifactor authentication using an application that supports the OATH TOTP specification and provides a one-time code.|Get and delete a software OATH token assigned to a user.|
 |[temporaryAccessPassAuthenticationMethod](temporaryaccesspassauthenticationmethod.md)|A time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials.| Create and manage a customized time-limted passcode for a given user to use for strong authentication or recovery. 
 |[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello for Business is a passwordless sign-in method on Windows devices.|See devices where a user has enabled Windows Hello for Business sign-in. Delete a Windows Hello for Business credential.|
@@ -51,7 +52,7 @@ The following authentication methods are not yet supported in Microsoft Graph v1
 
 |Authentication method       | Description |Examples     |
 |:---------------------------|:------------|:------------|
-|Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method. <br/> **NOTE:** Managing the details of the default method is currently supported only through the MSOL `Get-MsolUser` and `Set-MsolUser` cmdlets, using the **StrongAuthenticationMethods** property. |
+|Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method. |
 |Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
 |Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
 |Authentication states|Manage a user's sign-in preferences and per-user MFA|See or set the MFA state for a user. See or set the system-preferred multifactor authentication (MFA) setting.|

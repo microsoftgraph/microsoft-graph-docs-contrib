@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Read the properties and relationships of a [superAwsRoleFinding](../resources/superawsrolefinding.md) object.
 
 ## Permissions
@@ -129,4 +131,5 @@ Content-type: application/json
   ]
 }
 ```
+
 

@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object within a [sharePointGroup](../resources/sharepointgroup.md). A **sharePointGroup** can have up to 5,000 users. For more information on service limits, see [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups). Users and Microsoft 365 groups are supported as viable identities for **sharePointGroupMember**. The newly created **sharePointGroupMember** immediately inherits [driveItem](../resources/driveitem.md) permissions that have been granted to the **sharePointGroup**. It may take several minutes for substrate-related functionality, such as search and Copilot, to reflect the addition of the new **sharePointGroupMember**.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -67,6 +69,7 @@ If successful, this method returns a `201 Created` response code and a [sharePoi
 
 The following example shows a request that creates a **sharePointGroupMember** using their user principal name.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_sharepointgroup_members",
@@ -85,6 +88,36 @@ Content-Type: application/json
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-sharepointgroup-members-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-sharepointgroup-members-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-sharepointgroup-members-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-sharepointgroup-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-sharepointgroup-members-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-sharepointgroup-members-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-sharepointgroup-members-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

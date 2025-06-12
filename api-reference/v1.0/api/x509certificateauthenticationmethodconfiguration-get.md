@@ -5,7 +5,7 @@ author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 03/10/2025
 ---
 
 # Get x509CertificateAuthenticationMethodConfiguration
@@ -128,6 +128,10 @@ Content-Type: application/json
     "authenticationModeConfiguration": {
         "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
         "rules": []
+    },
+    "crlValidationConfiguration": {
+        "state": "disabled",
+        "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": []
     },
     "includeTargets": [
         {

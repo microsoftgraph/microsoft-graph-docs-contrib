@@ -38,11 +38,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 >   - To add a Microsoft Entra group as a resource to a catalog:
 >       - If using delegated permissions, the user requesting to add a group should be an owner of the group or in a directory role that allows them to modify groups.
 >       - If using application permissions, the application requesting to add the group should also be assigned the `Group.ReadWrite.All` permission.
+>   - To add a Microsoft Entra role as a resource to a catalog:
+>       - If using delegated permissions, the user who wants to add the role to the catalog needs to be a Global Administrator or a Privileged Role Administrator with Catalog Owner permissions.
+>       - Applications with the Entitlement Management.ReadWrite.All permissions cannot add Microsoft Entra roles to catalogs unless they also have Global Administrator or Privilege Role Administrator permissions.
 >   - To add a Microsoft Entra application as a resource to a catalog:
 >       - If using delegated permissions, the user requesting to add an application should be an owner of the application or in a directory role that allows them to modify application role assignments.
 >       - If using application permissions, the application requesting to add the [servicePrincipal](../resources/serviceprincipal.md) should also be assigned the *Application.ReadWrite.All* permission.
 >   - To add a SharePoint Online site as a resource to a catalog:
->       - If using delegated permissions, the user who wants to add the site should be in a role that allows them to modify the SharePoint site roles, such as the *SharePoint Administrator* role.
+>       - If using delegated permissions, the user must be assigned the *SharePoint Administrator* role or be an administrator of the SharePoint site.
 >       - If using application permissions, the application should also be assigned the `Sites.FullControl.All` permission.
 
 ## HTTP request

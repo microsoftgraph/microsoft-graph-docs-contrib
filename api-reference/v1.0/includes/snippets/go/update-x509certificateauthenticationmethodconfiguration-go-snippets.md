@@ -60,6 +60,14 @@ rules := []graphmodels.X509CertificateRuleable {
 }
 authenticationModeConfiguration.SetRules(rules)
 requestBody.SetAuthenticationModeConfiguration(authenticationModeConfiguration)
+crlValidationConfiguration := graphmodels.NewX509CertificateCRLValidationConfiguration()
+state := graphmodels.DISABLED_X509CERTIFICATECRLVALIDATIONCONFIGURATIONSTATE 
+crlValidationConfiguration.SetState(&state) 
+exemptedCertificateAuthoritiesSubjectKeyIdentifiers := []string {
+
+}
+crlValidationConfiguration.SetExemptedCertificateAuthoritiesSubjectKeyIdentifiers(exemptedCertificateAuthoritiesSubjectKeyIdentifiers)
+requestBody.SetCrlValidationConfiguration(crlValidationConfiguration)
 
 
 authenticationMethodTarget := graphmodels.NewAuthenticationMethodTarget()

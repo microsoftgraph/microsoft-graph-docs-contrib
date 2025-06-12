@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/teams/a738af50-90f1-472c-b3c3-a468f88ceaba/
 [!INCLUDE [sample-code](../includes/snippets/php/list-plans-owned-by-channel-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-plans-owned-by-channel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-plans-owned-by-channel-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

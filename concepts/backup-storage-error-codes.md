@@ -31,6 +31,7 @@ The following table lists the possible error and response codes that can be retu
 |400|InvalidProtectionUnitId|Thrown when one of the Protection Unit IDs is invalid.|Protection Unit ID is invalid.|
 |413|ProtectionUnitsLimitBreached|Thrown when the user tries to add more Protection Units than supported in one request.|Number of Protection Units in each request must not exceed 50.|
 |409|PolicyCreationNotAllowed|Thrown when an active protection policy already exists for the service and the user tries to create a new policy.|Can't create Policy. Another active Policy already exists.|
+|409|ProtectionUnitAlreadyExists|Artifact ArtifactId is not eligible for protection because it is already protected under policy PolicyId.| Thrown when artifact is already protected under another policy.
 |500|PolicySaveFailed|Thrown when a transient error occurs in the M365 Backup service.|An unknown error occurred. Try again.|
 
 ## Get protection policy API errors
@@ -59,6 +60,7 @@ The following table lists the possible error and response codes that can be retu
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |200|ProtectionUnitNotFound|This is a delta patch ProtectionUnit level error returned when the user requests to remove Protection Unit, which isn't present in the service.|ProtectionUnit level error: ProtectionUnit doesn't exist.|
+|200|ProtectionUnitAlreadyExists|Artifact ArtifactId is not eligible for protection because it is already protected under policy PolicyId.| Thrown when artifact is already protected under another policy.
 |400|DuplicateProtectionUnitInList|This is a Protection Unit level error returned when the request has duplicate artifacts in the list.|Protection Unit level error: Duplicate Protection Unit in list.|
 |400|ProtectionUnitActionNotAllowed|The artifact with the given protection unit ID can't be removed as it's protected by a dynamic rule.| Protection units protected via dynamic rules can't be removed manually.|
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|

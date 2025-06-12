@@ -10,12 +10,12 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 UnifiedRoleAssignmentScheduleRequest unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequest();
 unifiedRoleAssignmentScheduleRequest.setAction(UnifiedRoleScheduleRequestActions.SelfActivate);
-unifiedRoleAssignmentScheduleRequest.setPrincipalId("7146daa8-1b4b-4a66-b2f7-cf593d03c8d2");
+unifiedRoleAssignmentScheduleRequest.setPrincipalId("d9771b4c-06c5-491a-92cb-3aa4e225a725");
 unifiedRoleAssignmentScheduleRequest.setRoleDefinitionId("fe930be7-5e62-47db-91af-98c3a49a38b1");
 unifiedRoleAssignmentScheduleRequest.setDirectoryScopeId("/");
 unifiedRoleAssignmentScheduleRequest.setJustification("Need to invalidate all app refresh tokens for Contoso users.");
 RequestSchedule scheduleInfo = new RequestSchedule();
-OffsetDateTime startDateTime = OffsetDateTime.parse("2024-03-25T15:13:00.000Z");
+OffsetDateTime startDateTime = OffsetDateTime.parse("2025-03-21T11:46:00.000Z");
 scheduleInfo.setStartDateTime(startDateTime);
 ExpirationPattern expiration = new ExpirationPattern();
 expiration.setType(ExpirationPatternType.AfterDuration);

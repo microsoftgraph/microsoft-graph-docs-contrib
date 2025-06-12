@@ -5,7 +5,7 @@ author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 03/10/2024
 ---
 
 # Update x509CertificateAuthenticationMethodConfiguration
@@ -46,6 +46,7 @@ The following properties can be updated.
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 |certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Microsoft Entra user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
 |authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Defines strong authentication configurations. This configuration includes the default authentication mode and the different rules for strong authentication bindings. |
+|crlValidationConfiguration|[x509CertificateCRLValidationConfiguration](../resources/x509certificatecrlvalidationconfiguration.md)|Determines whether certificate based authentication should fail if the issuing CA doesn't have a valid certificate revocation list configured. |
 
 >**Note:** The `@odata.type` property with a value of `#microsoft.graph.x509CertificateAuthenticationMethodConfiguration` must be included in the body.
 
@@ -99,6 +100,10 @@ Content-Type: application/json
                 "x509CertificateAuthenticationMode": "x509CertificateMultiFactor"
             }
         ]
+    },
+    "crlValidationConfiguration": {
+        "state": "disabled",
+        "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": []
     },
     "includeTargets": [
         {

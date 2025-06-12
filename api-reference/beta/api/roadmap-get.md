@@ -1,5 +1,5 @@
 ---
-title: "Get roadmap"
+title: "Get roadmap (deprecated)"
 description: "Read the properties and relationships of a roadmap object."
 author: "garretraziel"
 ms.date: 11/20/2024
@@ -8,11 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Get roadmap
+# Get roadmap (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [entra-lifecycle-announcements-deprecation-note](../includes/entra-lifecycle-announcements-deprecation-note.md)]
 
 Read the properties and relationships of a [roadmap](../resources/roadmap.md) object.
 

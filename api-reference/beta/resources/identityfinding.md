@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents a finding related to an identity such as a user, role, or function in the authorization system.
 
 Inherits from [finding](../resources/finding.md).
@@ -84,4 +86,5 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
 

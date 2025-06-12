@@ -68,6 +68,7 @@ POST https://graph.microsoft.com/v1.0/teams/871dbd5c-3a6a-4392-bfe1-042452793a50
 Content-Type: application/json
 
 {
+  "userId": "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2",
   "clockInEvent": {
     "dateTime": "2025-01-07T21:00:00.000Z",
     "isAtApprovedLocation": true,
@@ -105,6 +106,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-timecard-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-timecard-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

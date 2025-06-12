@@ -1,5 +1,99 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "8005dbe5-181e-4378-8f35-ee5aba52cbb7",
+          "ApiChange": "Member",
+          "ChangedApiName": "conditionalAccessBlockedSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the `conditionalAccessBlockedSignIn` member to the **alertType** enumeration.",
+          "Target": "alertType"
+        },
+        {
+          "Id": "8005dbe5-181e-4378-8f35-ee5aba52cbb7",
+          "ApiChange": "Member",
+          "ChangedApiName": "conditionalAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the `conditionalAccess` member to the **scenario** enumeration.",
+          "Target": "scenario"
+        }
+      ],
+      "Id": "8005dbe5-181e-4378-8f35-ee5aba52cbb7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-01T20:35:45.6129113Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+      {
+        "ChangeList": [
+          {
+            "Id": "a1cc6d38-1d11-4250-a6e7-0e40ead43bbe",
+            "ApiChange": "Property",
+            "ChangedApiName": "linkableIdentifiers",
+            "ChangeType": "Addition",
+            "Description": "Added the **linkableIdentifiers** property to the [auditActivityInitiator](https://learn.microsoft.com/en-us/graph/api/resources/auditActivityInitiator?view=graph-rest-beta) resource.",
+            "Target": "auditActivityInitiator"
+          },
+          {
+            "Id": "a1cc6d38-1d11-4250-a6e7-0e40ead43bbe",
+            "ApiChange": "Resource",
+            "ChangedApiName": "linkableIdentifiers",
+            "ChangeType": "Addition",
+            "Description": "Added the [linkableIdentifiers](https://learn.microsoft.com/en-us/graph/api/resources/linkableIdentifiers?view=graph-rest-beta) resource.",
+            "Target": "linkableIdentifiers"
+          },
+          {
+            "Id": "a1cc6d38-1d11-4250-a6e7-0e40ead43bbe",
+            "ApiChange": "Resource",
+            "ChangedApiName": "tokenDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the [tokenDetails](https://learn.microsoft.com/en-us/graph/api/resources/tokenDetails?view=graph-rest-beta) resource.",
+            "Target": "tokenDetails"
+          }
+        ],
+        "Id": "a1cc6d38-1d11-4250-a6e7-0e40ead43bbe",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-03-26T23:17:39.7938263Z",
+        "WorkloadArea": "Reports",
+        "SubArea": "Identity and access reports"
+      },
+    {
+        "ChangeList": [
+        {
+          "Id": "13a8d5bb-99cb-48b2-a7a1-9a797f730885",
+          "ApiChange": "Property",
+          "ChangedApiName": "agent",
+          "ChangeType": "Addition",
+          "Description": "Added the **agent** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "13a8d5bb-99cb-48b2-a7a1-9a797f730885",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "agentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentType** enumeration type.",
+          "Target": "agentType"
+        },
+        {
+          "Id": "13a8d5bb-99cb-48b2-a7a1-9a797f730885",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentSignIn](https://learn.microsoft.com/en-us/graph/api/resources/agentic-agentSignIn?view=graph-rest-beta) resource.",
+          "Target": "agentSignIn"
+        }
+      ],
+      "Id": "13a8d5bb-99cb-48b2-a7a1-9a797f730885",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-13T18:51:24.4957292Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
       {
         "ChangeList": [
           {
@@ -520,6 +614,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-11-06T20:26:18.8331804Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d77145a7-d11f-44e3-a272-6b6a32df9002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/recommendationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "recommendationConfiguration"
+        }
+      ],
+      "Id": "d77145a7-d11f-44e3-a272-6b6a32df9002",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-05T21:42:15.2101254Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
@@ -3330,6 +3442,33 @@
       "CreatedDateTime": "2024-10-09T17:27:30.6437075Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "30d94910-be78-448d-8099-1b83a326bf4c",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForConditionalAccessBlockedSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForConditionalAccessBlockedSignIn](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForConditionalAccessBlockedSignIn?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "30d94910-be78-448d-8099-1b83a326bf4c",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deprecation",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Target": "getMetricsForConditionalAccessBlockedSignIn"
+        }
+      ],
+      "Id": "30d94910-be78-448d-8099-1b83a326bf4c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-11T16:50:10.8533511Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
     }
+
   ]
 }

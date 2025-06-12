@@ -1,6 +1,6 @@
 ---
 title: "mailFolder resource type"
-description: "A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders."
+description: "Represents a mail folder in a user's mailbox, such as Inbox or Drafts. Mail folders can contain messages, other Outlook items, and child mail folders."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
@@ -14,29 +14,29 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders.
+Represents a mail folder in a user's mailbox, such as Inbox or Drafts. Mail folders can contain messages, other Outlook items, and child mail folders.
 
 This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
 by providing a [delta](../api/mailfolder-delta.md) function.
 
 **Well-known folder names**
 
-Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use the well-known folder names from the table below when accessing these folders. For example, you can get the Drafts folder using its well-known name with the following query.
+Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use the well-known folder names from the following table when accessing these folders. For example, you can get the Drafts folder using its well-known name with the following query.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/drafts
 ```
 
-Well-known names work regardless of the locale of the user's mailbox, so the above query will always return the user's Drafts folder regardless of its name.
+Well-known names work regardless of the locale of the user's mailbox, so the previous query always returns the user's Drafts folder regardless of its name.
 
 | Well-known folder name | Description |
 |:-----------------------|:------------|
-| archive | The archive folder messages are sent to when using the One_Click Archive feature in Outlook clients that support it. **Note:** this isn't the same as the Archive Mailbox feature of Exchange online. |
+| archive | The archive folder messages are sent to when using the One-Click Archive feature in Outlook clients that support it. **Note:** This property is different from the Archive Mailbox feature of Exchange online. |
 | clutter | The clutter folder low-priority messages are moved to when using the Clutter feature. |
 | conflicts | The folder that contains conflicting items in the mailbox. |
 | conversationhistory | The folder where Skype saves IM conversations (if Skype is configured to do so). |
-| deleteditems | The folder items are moved to when they are deleted. |
+| deleteditems | The folder items are moved to when they're deleted. |
 | drafts | The folder that contains unsent messages. |
 | inbox | The inbox folder. |
 | junkemail | The junk email folder. |
@@ -67,6 +67,8 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 |[Get folder delta](../api/mailfolder-delta.md)|[mailFolder](mailfolder.md) collection|Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.|
 |[Move mail folder](../api/mailfolder-move.md)|[mailFolder](mailfolder.md)|Move a mailFolder and its contents to another mailFolder.|
 |[Permanently delete](../api/mailfolder-permanentdelete.md)|None|Permanently delete a mail folder and remove its items from the user's mailbox.|
+|[Update all messages read state](../api/mailfolder-updateallmessagesreadstate.md) |[mailFolder](mailfolder.md)|Update the read state of all messages in a [mailFolder](../resources/mailfolder.md) object.|
+|[List operations](../api/mailfolder-list-operations.md)|[mailFolderOperation](mailfolderoperation.md) collection|List the long-running folder operations of a [mailFolder](../resources/mailfolder.md) object.|
 |**Extended properties**| | |
 |[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[mailFolder](mailfolder.md)  |Create one or more single-value extended properties in a new or existing mailFolder.   |
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get mailFolders that contain a single-value extended property by using `$expand` or `$filter`. |
@@ -108,11 +110,12 @@ By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only 
 
 | Relationship | Type | Description |
 |:-------------|:-----|:------------|
-|childFolders|[MailFolder](mailfolder.md) collection|The collection of child folders in the mailFolder.|
+|childFolders|[mailFolder](mailfolder.md) collection|The collection of child folders in the **mailFolder**.|
 |messageRules | [messageRule](messagerule.md) collection | The collection of rules that apply to the user's Inbox folder. |
-|messages|[Message](message.md) collection|The collection of messages in the mailFolder.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.|
+|messages|[message](message.md) collection|The collection of messages in the **mailFolder**.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the **mailFolder**. Read-only. Nullable.|
+|operations|[mailFolderOperation](mailfolderoperation.md) collection|The collection of long-running operations in the **mailFolder**.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the **mailFolder**. Read-only. Nullable.|
 
 ## JSON representation
 

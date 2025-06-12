@@ -6,7 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: apiPageType
-ms.date: 12/23/2024
+ms.date: 5/16/2025
 ---
 
 # List users
@@ -957,6 +957,85 @@ Content-type: application/json
       }
     }
   ]
+}
+```
+
+### Example 12: Use $filter and endsWith to get users with a specified top-level domain in otherMails
+
+#### Request
+The following example shows a request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_users_filterOtherMails"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$filter=otherMails/any(x:endswith(x,'.edu'))&$count=true
+ConsistencyLevel: eventual
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-users-filterothermails-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-users-filterothermails-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-users-filterothermails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-users-filterothermails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-users-filterothermails-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-users-filterothermails-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-users-filterothermails-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-users-filterothermails-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "@odata.count": 2,
+    "value": [
+        {
+            "displayName": "Isaiah Langer",
+            "mail": "isaiahl@fineartschool.edu",
+            "id": "0012cd20-3890-409e-9db3-afc3055ebe22"
+        },
+        {
+            "displayName": "Adele Vance",
+            "mail": "adelev@bellowscollege.edu",
+            "id": "0012cd20-3890-409e-9db3-afc3055ebe22"
+        }
+    ]
 }
 ```
 

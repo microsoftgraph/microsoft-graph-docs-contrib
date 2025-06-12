@@ -1,6 +1,58 @@
 {
   "changelog": [
       {
+      "ChangeList": [
+        {
+          "Id": "635880d1-3e93-4996-9771-2f7eeaa16247",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "childrenOnly",
+          "ChangeType": "Addition",
+          "Description": "Added the `childrenOnly` parameter to the [copy](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-1.0) method.",
+          "Target": "copy"
+        },
+        {
+          "Id": "635880d1-3e93-4996-9771-2f7eeaa16247",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "includeAllVersionHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeAllVersionHistory` parameter to the [copy](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-1.0) method.",
+          "Target": "copy"
+        }
+      ],
+      "Id": "635880d1-3e93-4996-9771-2f7eeaa16247",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-05-28T20:00:01.538089Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "6a814e1a-0f37-4c0c-8528-20fe037ec6e1",
+            "ApiChange": "Header",
+            "ChangedApiName": "content",
+            "ChangeType": "Addition",
+            "Description": "Added the `forceInfectedDownload` prefer header to the [Get content](https://learn.microsoft.com/en-us/graph/api/driveitem-get-content?view=graph-rest-beta) method of the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource to enable the download of infected files when specifically requested.",
+            "Target": "driveItem"
+          },
+          {
+            "Id": "6a814e1a-0f37-4c0c-8528-20fe037ec6e1",
+            "ApiChange": "Header",
+            "ChangedApiName": "contentStream",
+            "ChangeType": "Addition",
+            "Description": "Added the `forceInfectedDownload` prefer header to the [Get contentStream](https://learn.microsoft.com/en-us/graph/api/driveitem-get-contentstream?view=graph-rest-beta) method of the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource to enable the download of infected files when specifically requested.",
+            "Target": "driveItem"
+          }
+        ],
+        "Id": "6a814e1a-0f37-4c0c-8528-20fe037ec6e1",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-03-28T10:30:00.3354597Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
+      },
+      {
           "ChangeList": [
             {
               "Id": "5d4a0643-925e-4659-a4e7-f1dac8dbfa18",
@@ -4085,22 +4137,6 @@
         {
           "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Method",
-          "ChangedApiName": "Delete",
-          "ChangeType": "Addition",
-          "Description": "Added the [delete column](https://learn.microsoft.com/graph/api/filestoragecontainer-delete-column?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
-          "Target": "fileStorageContainer"
-        },
-        {
-          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
-          "ApiChange": "Method",
-          "ChangedApiName": "Get",
-          "ChangeType": "Addition",
-          "Description": "Added the [get column](https://learn.microsoft.com/graph/api/filestoragecontainer-get-column?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
-          "Target": "fileStorageContainer"
-        },
-        {
-          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
-          "ApiChange": "Method",
           "ChangedApiName": "List",
           "ChangeType": "Addition",
           "Description": "Added the [list columns](https://learn.microsoft.com/graph/api/filestoragecontainer-list-columns?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
@@ -4117,25 +4153,9 @@
         {
           "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Method",
-          "ChangedApiName": "Post",
-          "ChangeType": "Addition",
-          "Description": "Added the [post columns](https://learn.microsoft.com/graph/api/filestoragecontainer-post-columns?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
-          "Target": "fileStorageContainer"
-        },
-        {
-          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
-          "ApiChange": "Method",
           "ChangedApiName": "Restore",
           "ChangeType": "Addition",
           "Description": "Added the [restore recyclebinitem](https://learn.microsoft.com/graph/api/filestoragecontainer-restore-recyclebinitem?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
-          "Target": "fileStorageContainer"
-        },
-        {
-          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
-          "ApiChange": "Method",
-          "ChangedApiName": "Update",
-          "ChangeType": "Addition",
-          "Description": "Added the [update column](https://learn.microsoft.com/graph/api/filestoragecontainer-update-column?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainer"
         },
         {
@@ -4159,6 +4179,32 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-12-10T19:48:29.7062786Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "64a50aa6-80e0-485d-beb4-c5d1a628001f",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/recycleBinItem-delete?view=graph-rest-beta) method to the [recycleBinItem](https://learn.microsoft.com/en-us/graph/api/resources/recycleBinItem?view=graph-rest-beta) resource.",
+          "Target": "recycleBinItem"
+        },
+        {
+          "Id": "64a50aa6-80e0-485d-beb4-c5d1a628001f",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/recycleBinItem-restore?view=graph-rest-beta) method to the [recycleBinItem](https://learn.microsoft.com/en-us/graph/api/resources/recycleBinItem?view=graph-rest-beta) resource.",
+          "Target": "recycleBinItem"
+        }
+      ],
+      "Id": "64a50aa6-80e0-485d-beb4-c5d1a628001f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-02-21T21:54:19.9776762Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     },
@@ -4195,6 +4241,65 @@
       "CreatedDateTime": "2025-03-24T20:05:07.5172911Z",
       "WorkloadArea": "Files",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "extensions",
+          "ChangeType": "Addition",
+          "Description": "Added the **extensions** relationship to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extension",
+          "ChangeType": "Addition",
+          "Description": "Added the [extension](https://learn.microsoft.com/en-us/graph/api/resources/extension?view=graph-rest-beta) resource type.",
+          "Target": "extension"
+        },
+        {
+          "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
+          "ApiChange": "Method",
+          "ChangedApiName": "openTypeExtension",
+          "ChangeType": "Change",
+          "Description": "Enabled [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) as a supported resource for the [delete](https://learn.microsoft.com/en-us/graph/api/opentypeextension-delete?view=graph-rest-beta) operation of the [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        },
+        {
+          "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
+          "ApiChange": "Method",
+          "ChangedApiName": "openTypeExtension",
+          "ChangeType": "Change",
+          "Description": "Enabled [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) as a supported resource for the [get](https://learn.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-beta) operation of the [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        },
+        {
+          "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
+          "ApiChange": "Method",
+          "ChangedApiName": "openTypeExtension",
+          "ChangeType": "Change",
+          "Description": "Enabled [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) as a supported resource for the [create](https://learn.microsoft.com/en-us/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta) operation of the [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        },
+        {
+          "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
+          "ApiChange": "Method",
+          "ChangedApiName": "openTypeExtension",
+          "ChangeType": "Change",
+          "Description": "Enabled [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) as a supported resource for the [update](https://learn.microsoft.com/en-us/graph/api/opentypeextension-update?view=graph-rest-beta) operation of the [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        }
+      ],
+      "Id": "d76034d8-21ee-41fa-b215-bd3e5efc7580",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-19T18:23:42.5437381Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     }
   ]
 }
+
