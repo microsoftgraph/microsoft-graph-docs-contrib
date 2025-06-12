@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new room object.
+Create a new [room](../resources/room.md) object.
 
 ## Permissions
 

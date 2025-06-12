@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a room object.
+Update the properties of a [room](../resources/room.md) object.
 
 ## Permissions
 

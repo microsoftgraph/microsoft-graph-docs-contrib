@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a list of [place](../resources/place.md) objects that are parented to the specified workspace.
+Returns a list of [place](../resources/place.md) objects that are parented to the specified [workspace](../resources/workspace.md).
 
 ## Permissions
 

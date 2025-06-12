@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a room object.
+Read the properties and relationships of a [room](../resources/room.md) object.
 
 ## Permissions
 

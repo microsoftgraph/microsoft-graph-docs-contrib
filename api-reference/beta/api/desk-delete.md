@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a desk object.
+Delete a [desk](../resources/desk.md) object.
 
 ## Permissions
 

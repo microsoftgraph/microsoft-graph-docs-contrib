@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a floor object.
+Delete a [floor](../resources/floor.md) object.
 
 ## Permissions
 

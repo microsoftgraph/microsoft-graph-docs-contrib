@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the floor objects and their properties.
+Get a list of [floor](../resources/floor.md) objects and their properties.
 
 ## Permissions
 

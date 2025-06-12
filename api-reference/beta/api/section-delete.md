@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a section object.
+Delete a [section](../resources/section.md) object.
 
 ## Permissions
 

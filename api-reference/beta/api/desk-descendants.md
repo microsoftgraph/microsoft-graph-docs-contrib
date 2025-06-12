@@ -1,6 +1,6 @@
 ---
 title: "desk: descendants"
-description: "**TODO: Add Description**"
+description: "Returns a list of place objects that are parented to the specified desk."
 author: "MSGraphDocsvTeam"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Returns a list of [place](../resources/place.md) objects that are parented to the specified [desk](../resources/desk.md). In practice, this method will always return an empty list because desks have no objects parented to them.
 
 ## Permissions
 

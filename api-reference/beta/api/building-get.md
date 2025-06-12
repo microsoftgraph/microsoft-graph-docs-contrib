@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a building object.
+Read the properties and relationships of a [building](../resources/building.md) object.
 
 ## Permissions
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a desk object.
+Update the properties of a [desk](../resources/desk.md) object.
 
 ## Permissions
 

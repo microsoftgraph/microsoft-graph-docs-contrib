@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a floor object.
+Update the properties of a [floor](../resources/floor.md) object.
 
 ## Permissions
 

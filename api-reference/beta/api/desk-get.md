@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a desk object.
+Read the properties and relationships of a [desk](../resources/desk.md) object.
 
 ## Permissions
 

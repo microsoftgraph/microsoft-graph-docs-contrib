@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a section object.
+Read the properties and relationships of a [section](../resources/section.md) object.
 
 ## Permissions
 

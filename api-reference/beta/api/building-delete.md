@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a building object.
+Delete a [building](../resources/building.md) object.
 
 ## Permissions
 

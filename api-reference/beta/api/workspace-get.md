@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a workspace object.
+Read the properties and relationships of a [workspace](../resources/workspace.md) object.
 
 ## Permissions
 

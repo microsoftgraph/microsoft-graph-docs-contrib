@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a workspace object.
+Update the properties of a [workspace](../resources/workspace.md) object.
 
 ## Permissions
 
