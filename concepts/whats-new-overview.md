@@ -21,9 +21,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Device and app management | Cloud PC
 
-New rate limits apply to Cloud PC APIs:
-- [List Cloud PCs](/graph/api/virtualendpoint-list-cloudpcs) – 180 requests per minute (per tenant), 162 requests per minute (per app/user)
-- [Get Cloud PC](/graph/api/cloudpc-get) – 540 requests per minute (per tenant), 486 requests per minute (per app/user)
+New rate limits apply to Cloud PC APIs. The [List Cloud PCs](/graph/api/virtualendpoint-list-cloudpcs) API is now limited to 180 requests per minute per tenant and 162 requests per minute per app or user. The [Get Cloud PC](/graph/api/cloudpc-get) API is limited to 540 requests per minute per tenant and 486 requests per minute per app or user. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#windows-365-service-limits).
 
 ### Teamwork and communications | Calls and online meetings
 
