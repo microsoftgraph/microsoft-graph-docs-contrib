@@ -29,7 +29,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | The street address of the room. |
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, and `reserved`. |
+| bookingType            | String (Go to [bookingtype-values](#bookingtype-values))                | Type of room. Possible values are `standard`, and `reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
 | capacity               | Int32                                             | Specifies the capacity of the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |

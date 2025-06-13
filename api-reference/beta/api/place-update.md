@@ -59,7 +59,7 @@ Only one instance of a **place** resource can be updated at a time. In the reque
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | The street address of the room, workspace, or roomlist. |
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | [bookingType](../resources/room.md)                            | Type of room. Possible values are `Standard` and `Reserved`. |
+| bookingType            | String                            | Type of room. Possible values are `Standard` and `Reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room or workspace is in. |
 | capacity               | Int32                                             | Specifies the capacity of the room or workspace. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |

@@ -39,7 +39,7 @@ The **room** type supports all [base properties of a **place** object](./place.m
 |floorNumber |Integer |The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. |
 |floorLabel |String |A human-readable label for the floor, such as "Ground Floor". |
 |label |String |A custom identifier or tag for the **place**, often used to distinguish it within a floor or section. |
-|bookingType |Enum |Specifies how the place can be booked. Possible values are: <br/><br/> <ul><li>standard - Available for general booking</li>
+|bookingType |String |Specifies how the place can be booked. Possible values are: <br/><br/> <ul><li>standard - Available for general booking</li>
 <li>reserved – Reserved for specific users or purposes</li>
 <li>unknown – Default or unspecified booking behavior</li>
 </ul> |
