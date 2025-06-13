@@ -300,3 +300,57 @@ Content-type: application/json
     "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
 }
 ```
+
+### Example 3
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_place"
+}
+-->
+PATCH https://graph.microsoft.com/beta/places/D123
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
+  "displayName": "Updated Desk 1",
+  "displayDeviceName": "Samsung monitor",
+  "tags": ["AdjustableHeight"]
+}
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.desk"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+HTTP/1.1 200 OK
+{
+  "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
+  "@odata.type": "#microsoft.graph.desk",
+    "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
+    "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
+  "displayName": "Updated Desk 1",
+  "displayDeviceName": "Samsung monitor",
+  "tags": ["AdjustableHeight"],
+    "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
+    "mode": {
+      "@odata.type": "microsoft.graph.assignedPlaceMode",
+      "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
+    }
+}
+```
