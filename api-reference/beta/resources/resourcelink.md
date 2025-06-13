@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **resourceLink** parameter specifies external links that should be associated to this [building](./building.md), such as a dining menu, a link to services, and so on. For more information on how to set up services in Places, see [Services in Places](/deployoffice/places/services-in-places).
+The **resourceLink** parameter specifies external links that should be associated to this [building](./building.md), such as a dining menu, a link to services, and so on. For more information on how to set up services in Places, go to [Add services to buildings](/microsoft-365/places/services-in-places).
 
 ## Properties
 |Property|Type|Description|
