@@ -86,6 +86,7 @@ The following JSON representation shows the resource type.
 - [anonymousGuestConversationMember](anonymousGuestConversationMember.md)
 - [skypeUserConversationMember](skypeUserConversationMember.md)
 - [microsoftAccountUserConversationMember](microsoftAccountUserConversationMember.md)
+- [phoneUserConversationMember](phoneUserConversationMember.md)
 - [azureCommunicationServicesUserConversationMember](azureCommunicationServicesUserConversationMember.md)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

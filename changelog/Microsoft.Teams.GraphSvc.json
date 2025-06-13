@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "70a96fe2-cefe-4bf8-bd4b-50d928d86763",
+          "ApiChange": "Resource",
+          "ChangedApiName": "phoneUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [phoneUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/phoneUserConversationMember?view=graph-rest-beta) resource.",
+          "Target": "phoneUserConversationMember"
+        }
+      ],
+      "Id": "70a96fe2-cefe-4bf8-bd4b-50d928d86763",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-10T00:42:31.2815475Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Chats"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "edddaf0d-8c8b-491c-92ba-cec7db9d898d",
           "ApiChange": "Enumeration",
           "ChangedApiName": "appDevelopmentPlatforms",
