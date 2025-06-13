@@ -316,7 +316,7 @@ PATCH https://graph.microsoft.com/beta/places/{placesId}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.place",
+  "@odata.type": "microsoft.graph.place",
   "displayName": "String",
   "geoCoordinates": {
     "@odata.type": "microsoft.graph.outlookGeoCoordinates"
