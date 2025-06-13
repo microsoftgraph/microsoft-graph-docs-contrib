@@ -13,9 +13,6 @@ Namespace: microsoft.graph
 
 Search the hierarchy of items for items matching a query.
 You can search within a folder hierarchy, a whole drive, or files shared with the current user.
->[!Note] 
->If a file doesn't appear in search results, manually searching for it in OneDrive UI may trigger indexing and help resolve the issue.
-
 
 ## Permissions
 
@@ -187,7 +184,7 @@ GET /me/drive/search(q='Contoso Project')
 ### Response
 
 Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user).
-These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive.
+These items include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
@@ -217,8 +214,7 @@ Content-type: application/json
 
 ## Error responses
 
-See [Error Responses][error-response] for more information about
-how errors are returned.
+For more information about how errors are returned, see [Error responses][error-response].
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
