@@ -257,7 +257,7 @@ Content-type: application/json
 
 The following example shows the response.
 
->**Note**: The response object shown here might be shortened for readability.
+> **Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -311,6 +311,8 @@ The following example shows a request.
   "name": "update_place"
 }
 -->
+
+```http
 PATCH https://graph.microsoft.com/beta/places/D123
 Content-Type: application/json
 
@@ -320,6 +322,7 @@ Content-Type: application/json
   "displayDeviceName": "Samsung monitor",
   "tags": ["AdjustableHeight"]
 }
+```
 
 #### Response
 
@@ -338,7 +341,6 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-HTTP/1.1 200 OK
 {
   "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
   "@odata.type": "#microsoft.graph.desk",
