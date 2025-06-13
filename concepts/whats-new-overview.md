@@ -39,6 +39,10 @@ Updated the throttling information for [getAllEnterpriseInteractions](/graph/api
 - Use the **description** property on [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta&preserve-view=true) to get or set the eDiscovery review set description.
 - [Update](/graph/api/security-ediscoveryreviewset-update?view=graph-rest-beta&preserve-view=true) the **displayName** and **description** of an [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta&preserve-view=true).
 
+### Teamwork and communications | Apps
+
+Use the **customAppSettings** property on [teamsAppSettings](/graph/api/resources/teamsappsettings?view=graph-rest-beta&preserve-view=true) to get or set tenant-wide custom app settings for all Microsoft Teams apps.
+
 ## May 2025: New and generally available
 
 ### Backup storage
