@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The API will allow users to complete migration on existing chats or new chats. Previously, users were only allowed to initiate complete migration operations on newly created Standard Channels, which were created for initial migration flow. ([import-external-messages-to-teams](https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+The API will allow users to complete migration on existing chats or new chats. Previously, users were only allowed to initiate complete migration operations on newly created Standard Channels, which were created for initial migration flow. ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
 For chat which is already in migration mode, this API will complete the message migration process by populating `migration mode` to `Completed` for a [chat](../resources/chat.md).
 
@@ -101,6 +101,6 @@ HTTP/1.1 204 No Content
 
 - [chat-startMigration](chat-startmigration.md)
 - [Import-message-with-older-timestamp](channel-post-messages.md#example-2-import-messages)
-- [get-channel-migration-status](channel-get#example-1-get-a-channel.md)
+- [get-channel-migration-status](channel-get.md#example-1-get-a-channel)
 - [channel-completeMigration](channel-completemigration.md)
 - [channel-startMigration](channel-startmigration.md)
