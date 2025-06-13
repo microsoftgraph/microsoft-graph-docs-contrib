@@ -19,7 +19,7 @@ Understand how Microsoft 365 Copilot achieves greater personalization through va
 
 ## Data Processing Scenario
 
-To provide a more personalized experience with Microsoft 365 Copilot. Microsoft with consent provided from enabling this control uses a user's private communication data connected to Microsoft 365 such as Microsoft Teams Chats, Outlook Emails, Microsoft Transcripts and from connectors. This data is used solely to make the individual user's tools more efficient and personalized to them. It's important to note that this information remains confidential and won't be shared with other users ensuring user privacy. The option to disable this scenario and all linked features is available anytime through this control, and Microsoft will cease using a user's data for this purpose.
+To provide a more personalized experience with Microsoft 365 Copilot. Microsoft with consent provided from enabling this control uses a user's private communication data connected to Microsoft 365 such as Microsoft Teams Chats, Outlook Emails, Microsoft Transcripts and from connectors. This data is used solely to make the individual user's tools more efficient and personalized to them. It's important to note that this information remains confidential and is not shared with other users ensuring user privacy. The option to disable all linked features for the tenant or a group of users through this scenario control is available anytime, causing Microsoft to cease using a user's data for this purpose. In some cases this renders a feature disabled for use, such as Copilot Memory which is dependent on this data processing scenario.
 
 ## Products Controlled by Enhanced Personalization
 
