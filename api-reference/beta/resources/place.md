@@ -33,9 +33,9 @@ The Places API can be used by applications that have the right read or write per
 ## Methods
 |Method |Return |Type |Description |
 |:--|:--|:--|:--|
+|[List](../api/place-list.md) |A list of **place** objects |Get the properties and relationships of multiple **place** objects. |
 |[Create](../api/place-post-places.md) |Created **place** |Create a new **place**. | 
 |[Get](../api/place-get.md) |The requested, derived type of **place** |Get the properties and relationships of a specified **place** object.|
-|[List](../api/place-list.md) |A list of **place** objects |Get the properties and relationships of multiple **place** objects. |
 |[Update](../api/place-update.md) |The requested, derived type of **place** |Update the properties and relationships of a specified **place** object. |
 |[Delete](../api/place-delete.md) |None |Delete a **place** with the specified id. |
 |[descendants](../api/place-descendants.md) |List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, floors, sections, rooms, desks, or workspaces) under a given **place**. | 
