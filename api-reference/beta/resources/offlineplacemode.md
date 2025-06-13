@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes why a desk has been marked as offline and unavailable for booking. This mode is only supported for [desks](./desk.md).
+Describes why a desk has been marked as offline and unavailable for booking.
+
+This mode is only supported for [desks](./desk.md).
 
 Inherits from [placeMode](../resources/placemode.md).
 

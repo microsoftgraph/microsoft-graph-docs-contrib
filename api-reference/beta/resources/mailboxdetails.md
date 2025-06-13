@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details about a [mailbox](./mailbox.md), including its unique directory identifier and associated email address. Mailboxes are associated with bookable Places V3 objects such as [desks](./desk.md).
+Represents details about a [mailbox](./mailbox.md), including its unique directory identifier and associated email address.
+
+Mailboxes are associated with bookable Places V3 objects such as [desks](./desk.md).
 
 ## Properties
 |Property|Type|Description|

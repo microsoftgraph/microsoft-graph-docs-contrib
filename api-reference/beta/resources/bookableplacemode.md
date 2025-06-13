@@ -1,6 +1,6 @@
 ---
 title: "bookablePlaceMode resource type"
-description: "This mode indicates whether a desk or workspace is allowed to be booked in advance."
+description: "Indicates whether a desk or workspace is allowed to be booked in advance."
 author: "vrod9429"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This mode indicates whether a desk or workspace is allowed to be booked in advance.
+Indicates whether a desk or workspace is allowed to be booked in advance.
 
 Inherits from [placeMode](../resources/placemode.md).
 

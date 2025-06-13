@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a room within the tenant. A room can be added to a [floor](./floor.md) or to a [section](./section.md).
+Represents a room within the tenant.
+
+A room can be added to a [floor](./floor.md) or to a [section](./section.md).
 
 Inherits from [place](../resources/place.md).
 
@@ -28,21 +30,21 @@ The **room** type supports all [base properties of a **place** object](./place.m
 
 |Property |Type |Description |
 |:--|:--|:--|
-|capacity |Integer |The maximum number of people in the **room** can accommodate. |
 |audioDeviceName |String |The name of the audio device that is available in the room. |
-|videoDeviceName |String |The name of the video device that is available in the room. |
-|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the room.
-|isTeamsEnabled |Boolean |Whether or not the room is configured with the Microsoft Teams Room system. |
-|emailAddress |String |The email address associated with the room. This email address is used for booking. |
-|nickname |String |A short, friendly name for the **place**, often used for easier identification or display in UI. |
-|building |String |The name or identifier of the building where the **place** (such as a room or a desk) is located. |
-|floorNumber |Integer |The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. |
-|floorLabel |String |A human-readable label for the floor, such as "Ground Floor". |
-|label |String |A custom identifier or tag for the **place**, often used to distinguish it within a floor or section. |
 |bookingType |String |Specifies how the place can be booked. Possible values are: <br/><br/> <ul><li>standard - Available for general booking</li>
 <li>reserved – Reserved for specific users or purposes</li>
 <li>unknown – Default or unspecified booking behavior</li>
 </ul> |
+|building |String |The name or identifier of the building where the **place** (such as a room or a desk) is located. |
+|capacity |Integer |The maximum number of people in the **room** can accommodate. |
+|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the room. |
+|emailAddress |String |The email address associated with the room. This email address is used for booking. |
+|floorLabel |String |A human-readable label for the floor, such as "Ground Floor". |
+|floorNumber |Integer |The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. |
+|isTeamsEnabled |Boolean |Whether or not the room is configured with the Microsoft Teams Room system. |
+|label |String |A custom identifier or tag for the **place**, often used to distinguish it within a floor or section. |
+|nickname |String |A short, friendly name for the **place**, often used for easier identification or display in UI. |
+|videoDeviceName |String |The name of the video device that is available in the room. |
 
 ## Relationships
 None.

@@ -48,7 +48,7 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |Places API |findRooms and findRoomLists functions (deprecated) |
 |:--|:--|
 |Gets all the rooms or room lists in a tenant, and all the rooms in a room list. |Gets all the rooms or room lists in a tenant, and all the rooms in a room list.
-|[List places](../api/place-list.md) can return more than 100 rooms in a tenant. |[findRooms](/graph/api/user-findrooms) returns up to the first 100 rooms in a tenant. |
+|[List](../api/place-list.md) can return more than 100 rooms in a tenant. |[findRooms](/graph/api/user-findrooms) returns up to the first 100 rooms in a tenant. |
 |Supports [getting an individual room or room list](/graph/api/place-get) in a tenant. |Doesn't support getting an individual room or room list in a tenant. |
 |Defines the specific entities of [room](/graph/api/resources/room) and [roomList](/graph/api/resources/roomlist) that specify a richer property set, in addition to the display name and SMTP address.	|Each room and room list is of a lighter-weight [emailAddress](/graph/api/resources/emailaddress) type that specifies only the display name and SMTP address. |
 |Supports only organizational scenarios with delegated (only for work or school accounts) or application permissions. |Supports only organizational scenarios with delegated or application permissions.
@@ -62,17 +62,18 @@ The base properties are inherited by all **place** types.
 
 |Property |Type |Description |
 |:--|:--|:--|
-|id |String |A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. |
-|placeId |String |An alternate immutable unique identifier of the **place**. Read-only. |
-|displayName |String |The name that is associated with the place. |   
-|description |String |User-defined description of the place. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) |
-|resourceLinks |ResourceLink collection	|A set of links to external resources that are associated with the place. |
-|isWheelChairAccessible |Boolean |Whether or not the **place** is wheelchair accessible. |
-|tags |Collection(String) |Custom tags that are associated with the place for categorization or filtering. |
 |address |[physicalAddress](./physicaladdress.md) |The physical address of the **place**, including the street, city, state, country or region, and postal code. |
+|description |String |User-defined description of the place. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) |
+|displayName |String |The name that is associated with the place. |
 |[geoCoordinates](./geocoordinates.md) |outlookGeoCoordinates |Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates. |
-|phone |String |The phone number of the place.|
+|id |String |A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. |
+|isWheelChairAccessible |Boolean |Whether or not the **place** is wheelchair accessible. |
 |parentId |String |ID of a parent **place**. |
+|phone |String |The phone number of the place.|
+|placeId |String |An alternate immutable unique identifier of the **place**. Read-only. |
+|resourceLinks |ResourceLink collection	|A set of links to external resources that are associated with the place. |
+|tags |Collection(String) |Custom tags that are associated with the place for categorization or filtering. |
+
 
 ## Relationships
 None.
