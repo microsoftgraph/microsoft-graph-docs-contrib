@@ -24,7 +24,7 @@ A **place** object represents different space types within a tenant. A place obj
 |[room](./room.md) |Represents a room within the tenant. All the rooms in Places must be associated with Exchange mailboxes. A room can be added to a floor or to a section. The rich properties of the room include an email address for the room, accessibility, capacity, audio device, video device, and so on. |
 |[workspace](./workspace.md) |Represents a collection of desks. All the workspaces in Places must be associated with Exchange mailboxes. A workspace can be added to a floor or a section. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
 |[desk](./desk.md) |Represents individual desks. A desk must be added to a section. The rich properties for the section include email address, mode, and accessibility. |
-|[roomList](/graph/api/resources/roomlist.md) |A collection of rooms in the tenant. Places supports **roomList** to ensure room booking works in RoomFinder across all clients on all devices, such as classic Outlook across desktop and mobile. <br/><br/>However, we recommend that you rely on the new **place** types and hierarchy if you do not use **Roomfinder** in the tenant. More details on **roomList** can be found at [roomList resource type](/graph/api/resources/roomlist.md). |
+|[roomList](./roomlist.md) |A collection of rooms in the tenant. Places supports **roomList** to ensure room booking works in RoomFinder across all clients on all devices, such as classic Outlook across desktop and mobile. <br/><br/>However, we recommend that you rely on the new **place** types and hierarchy if you do not use **Roomfinder** in the tenant. More details on **roomList** can be found at [roomList resource type](./roomlist.md). |
 
 ## Using the Places API
 
@@ -48,11 +48,11 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |Places API |findRooms and findRoomLists functions (deprecated) |
 |:--|:--|
 |Gets all the rooms or room lists in a tenant, and all the rooms in a room list. |Gets all the rooms or room lists in a tenant, and all the rooms in a room list.
-|[List places](/graph/api/v1.0/place-list) can return more than 100 rooms in a tenant. |[findRooms](/graph/api/v1.0/user-findrooms) returns up to the first 100 rooms in a tenant. |
-|Supports [getting an individual room or room list](/graph/api/v1.0/api/place-get) in a tenant. |Doesn't support getting an individual room or room list in a tenant. |
-|Defines the specific entities of [room](/graph/api/v1.0/resources/room) and [roomList](/graph/api/v1.0/resources/roomlist) that specify a richer property set, in addition to the display name and SMTP address.	|Each room and room list is of a lighter-weight [emailAddress](/graph/api/v1.0/resources/emailaddress) type that specifies only the display name and SMTP address. |
+|[List places](../api/place-list.md) can return more than 100 rooms in a tenant. |[findRooms](/graph/api/user-findrooms) returns up to the first 100 rooms in a tenant. |
+|Supports [getting an individual room or room list](/graph/api/place-get) in a tenant. |Doesn't support getting an individual room or room list in a tenant. |
+|Defines the specific entities of [room](/graph/api/resources/room) and [roomList](/graph/api/resources/roomlist) that specify a richer property set, in addition to the display name and SMTP address.	|Each room and room list is of a lighter-weight [emailAddress](/graph/api/resources/emailaddress) type that specifies only the display name and SMTP address. |
 |Supports only organizational scenarios with delegated (only for work or school accounts) or application permissions. |Supports only organizational scenarios with delegated or application permissions.
-|Supports [updating an individual room or room list](/graph/api/v1.0/api/place-update) in a tenant. |Doesn't support updating an individual room or room list in a tenant. |
+|Supports [updating an individual room or room list](../api/place-update.md) in a tenant. |Doesn't support updating an individual room or room list in a tenant. |
 
 ## Properties
 
@@ -69,8 +69,8 @@ The base properties are inherited by all **place** types.
 |resourceLinks |ResourceLink collection	|A set of links to external resources that are associated with the place. |
 |isWheelChairAccessible |Boolean |Whether or not the **place** is wheelchair accessible. |
 |tags |Collection(String) |Custom tags that are associated with the place for categorization or filtering. |
-|address |[physicalAddress](/graph/api/resources/physicaladdress) |The physical address of the **place**, including the street, city, state, country or region, and postal code. |
-|[geoCoordinates](/graph/api/resources/geocoordinates) |outlookGeoCoordinates |Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates. |
+|address |[physicalAddress](./physicaladdress.md) |The physical address of the **place**, including the street, city, state, country or region, and postal code. |
+|[geoCoordinates](./geocoordinates.md) |outlookGeoCoordinates |Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates. |
 |phone |String |The phone number of the place.|
 |parentId |String |ID of a parent **place**. |
 
