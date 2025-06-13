@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract base type for **modes** for [desks](./desk.md) and [workspaces](./workspace.md).
+Abstract base type for **modes** for [desks](./desk.md) and [workspaces](./workspace.md).
 
 This is the base type of [bookablePlaceMode](./bookableplacemode.md), [dropInUpPlaceMode](./dropinplacemode.md), [assignedPlaceMode](./assignedplacemode.md), and [offlinePlaceMode](./offlineplacemode.md).
 
