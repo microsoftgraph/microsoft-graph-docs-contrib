@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 06/12/2025
 ---
 
-# channel: startMigration
+# chat: startMigration
 
 Namespace: microsoft.graph
 
@@ -70,14 +70,13 @@ Here's an example  of the request.
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD022 -->
 
-# [HTTP]
 <!-- {
   "blockType": "request",
-  "name": "startMigration_channel",
+  "name": "startMigration_chat",
   "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
 }-->
 
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/startMigration
 ```
 
@@ -114,3 +113,5 @@ HTTP/1.1 204 No Content
 - [chat-completeMigration](chat-completemigration.md)
 - [Import-message-with-older-timestamp](channel-post-messages.md#example-2-import-messages)
 - [get-message-import-status](chatmessage-get.md)
+- [channel-completeMigration](channel-completemigration.md)
+- [channel-startMigration](channel-startmigration.md)

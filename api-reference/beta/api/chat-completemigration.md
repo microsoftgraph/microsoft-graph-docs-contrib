@@ -57,14 +57,13 @@ Here's an example  of the request.
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD022 -->
 
-# [HTTP]
 <!-- {
   "blockType": "request",
-  "name": "completeMigration_channel",
+  "name": "completeMigration_chat",
   "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
 }-->
 
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
 ```
 
@@ -103,3 +102,5 @@ HTTP/1.1 204 No Content
 - [chat-startMigration](chat-startmigration.md)
 - [Import-message-with-older-timestamp](channel-post-messages.md#example-2-import-messages)
 - [get-channel-migration-status](channel-get#example-1-get-a-channel.md)
+- [channel-completeMigration](channel-completemigration.md)
+- [channel-startMigration](channel-startmigration.md)

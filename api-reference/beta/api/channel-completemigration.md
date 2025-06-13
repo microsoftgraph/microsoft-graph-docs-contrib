@@ -143,4 +143,6 @@ HTTP/1.1 204 No Content
 
 - [channel-startMigration](channel-startmigration.md)
 - [Import-message-with-older-timestamp](channel-post-messages.md#example-2-import-messages)
-- [get-channel-migration-status](channel-get#example-1-get-a-channel.md)
+- [get-channel-migration-status](channel-get.md#example-1-get-a-channel.md)
+- [chat-completeMigration](chat-completemigration.md)
+- [chat-startMigration](chat-startmigration.md)
