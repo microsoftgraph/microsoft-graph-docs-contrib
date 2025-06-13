@@ -257,8 +257,15 @@
           "name": "Places",
           "resources": [
             "place",
+            "building",
+            "floor",
+            "section",
             "room",
-            "roomList"
+            "roomList",
+            "workspace",
+            "desk",
+            "mailboxDetails",
+            "resourceLink"
           ],
           "complexTypes": [
             "placeMode",
