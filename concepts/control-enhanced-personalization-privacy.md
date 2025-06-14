@@ -17,14 +17,14 @@ Microsoft 365 Copilot can become personalized to each user, aiding them in their
   
 Understand how Microsoft 365 Copilot achieves greater personalization through various features when enhanced personalization is enabled. How your privacy is maintained, and how to control the use of enhanced personalization for Microsoft 365 Copilot.
 
-## Data Processing Scenario
+## Data processing scenario
 
-To provide a more personalized experience with Microsoft 365 Copilot. Microsoft with consent provided from enabling this control uses a user's private communication data connected to Microsoft 365 such as Microsoft Teams Chats, Outlook Emails, Microsoft Transcripts and from connectors. This data is used solely to make the individual user's tools more efficient and personalized to them. It's important to note that this information remains confidential and is not shared with other users ensuring user privacy. The option to disable all linked features for the tenant or a group of users through this scenario control is available anytime, causing Microsoft to cease using a user's data for this purpose. In some cases this renders a feature disabled for use, such as Copilot Memory which is dependent on this data processing scenario.
+To provide a more personalized experience with Microsoft 365 Copilot. Microsoft, with consent provided from enabling this control, uses a user's private communication data connected to Microsoft 365, such as Microsoft Teams chats, Outlook emails, Microsoft transcripts, and from connectors. This data is used solely to make the individual user's tools more efficient and personalized to them. It's important to note that this information remains confidential and is not shared with other users, ensuring user privacy. The option to disable all linked features for the tenant or a group of users through this scenario control is available anytime, causing Microsoft to cease using a user's data for this purpose. In some cases, this renders a feature disabled for use, such as Copilot Memory, which is dependent on this data processing scenario.
 
-## Products Controlled by Enhanced Personalization
+## Products controlled by enhanced personalization
 
-- [Copilot Memory](https://go.microsoft.com/fwlink/?linkid=2323887)
+- [Copilot memory](https://go.microsoft.com/fwlink/?linkid=2323887)
 
 ## Related content
 
-- [Enhanced Personalization](/graph/api/resources/enhancedpersonalizationsetting)
+- [Enhanced ersonalization](/graph/api/resources/enhancedpersonalizationsetting)
