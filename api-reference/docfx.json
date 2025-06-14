@@ -218,6 +218,23 @@
         "moniker_range": "graph-rest-beta"
       }
     },
+    "rules": {
+      "filename-incomplete": {
+        "exclude": [
+          "**/*"
+        ]
+      },
+      "include-structure-incorrect": {
+        "exclude": [
+          "**/*"
+        ]
+      },
+      "filename-exceeds-max-length": {
+        "exclude": [
+          "**/*"
+        ]
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {

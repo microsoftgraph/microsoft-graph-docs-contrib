@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let calendar = await client.api('/me/calendars/delta')
+let delta = await client.api('/me/calendars/delta')
 	.version('beta')
 	.get();
 
