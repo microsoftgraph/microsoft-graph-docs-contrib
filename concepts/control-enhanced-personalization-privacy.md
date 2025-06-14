@@ -27,4 +27,4 @@ To provide a more personalized experience with Microsoft 365 Copilot. Microsoft,
 
 ## Related content
 
-- [Enhanced ersonalization](/graph/api/resources/enhancedpersonalizationsetting)
+- [Enhanced personalization](/graph/api/resources/enhancedpersonalizationsetting)
