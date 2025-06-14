@@ -50,13 +50,7 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
 
 ## Request body
 
-In the request body, supply a JSON object with the following parameters.
-
-| Parameter      | Type              | Description                                                                                                                                                                            |
-| :------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| labelIds       | String collection | Required. A collection of sensitivity label GUIDs from the input or referenced artifacts.                                                                                              |
-| locale         | String            | Optional. Specifies the locale for the returned `sensitivityLabel` object. |
-| contentFormats | String collection | Optional. A collection of content formats (for example, `File`, `Email`) applicable to the *output* artifact. Filters the input `labelIds` to consider only those applicable to these formats during inheritance calculation. |
+Don't supply a request body for this method.
 
 ## Response
 
