@@ -62,18 +62,6 @@ The following JSON representation shows the resource type.
   "openType": false
 }
 -->
-
-<!-- 
-``` json
-{
-  "@odata.type": "#microsoft.graph.engagementConversation",
-  "id": "String (identifier)",
-  "creationMode": "String",
-  "starterId": "String"
-}
-```
--->
-
 ``` json
 {
   "@odata.type": "#microsoft.graph.engagementConversation",
