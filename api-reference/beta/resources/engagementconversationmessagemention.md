@@ -16,12 +16,11 @@ Namespace: microsoft.graph
 
 Represents a mention within a Viva Engage conversation message.
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The mention id|
-|mentioned|[engagementIdentitySet](../resources/engagementidentityset.md)|The identity that is mentioned|
+|id|String|The unique identifier of the mention.|
+|mentioned|[engagementIdentitySet](../resources/engagementidentityset.md)|The identity that is mentioned in the message.|
 
 ## Relationships
 None.
@@ -37,9 +36,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.engagementConversationMessageMention",
   "id": "String",
-  "mentioned": {
-    "@odata.type": "microsoft.graph.engagementIdentitySet"
-  }
+  "mentioned": {"@odata.type": "microsoft.graph.engagementIdentitySet"}
 }
 ```
 
