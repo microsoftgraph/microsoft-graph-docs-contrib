@@ -884,7 +884,7 @@
             "engagementAsyncOperation",
             "engagementConversation",
             "engagementConversationMessage",
-            "engagementConversationMessageReaction"
+            "engagementConversationMessageReaction",
             "engagementRole",
             "engagementRoleMember",
             "employeeExperienceUser",
@@ -892,7 +892,7 @@
           ],
           "complexTypes": [
             "engagementConversationMessageAttachment",
-            "engagementConversationMessageMention"
+            "engagementConversationMessageMention",
             "engagementIdentitySet"
           ]
         },
