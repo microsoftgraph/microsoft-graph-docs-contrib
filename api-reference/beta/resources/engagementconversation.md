@@ -1,6 +1,6 @@
 ---
 title: "engagementConversation resource type"
-description: "Represents a conversation in Viva Engage."
+description: "An abstract type that represents a conversation in Viva Engage."
 author: "aditijha4"
 ms.date: 05/21/2025
 ms.localizationpriority: medium
@@ -14,11 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Conversation in Viva Engage. 
+An abstract type that represents a conversation in Viva Engage. 
 
-A Viva Engage conversation is a threaded discussion within a Viva Engage scope, e.g. a community or storyline, enabling users to post messages, reply, react, and share content in a structured, persistent format for enterprise social collaboration.
+A Viva Engage conversation is a threaded discussion within a Viva Engage scope, such as a community or a storyline, that enables users to post messages, reply, react, and share content in a structured, persistent format for enterprise social collaboration.
 
-This is an abstract type.
+Base type of [networkQuestionEngagementConversation](../resources/networkquestionengagementconversation.md) and [onlineMeetingEngagementConversation](../resources/onlinemeetingengagementconversation.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -43,14 +43,12 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The unique ID of a conversation in Viva Engage. Inherited from [entity](../resources/entity.md).|
 |starterId|String|The unique ID of the first message in a Viva Engage conversation|
 
-
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
 |messages|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|The messages in a Viva Engage conversation|
 |starter|[engagementConversationMessage](../resources/engagementconversationmessage.md)|The first message in a Viva Engage conversation|
-
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -69,4 +67,3 @@ The following JSON representation shows the resource type.
   "starterId": "String"
 }
 ```
-
