@@ -1,6 +1,6 @@
 ---
 title: "engagementIdentitySet resource type"
-description: "The Viva Engage Identities"
+description: "Represents a unique identity in Viva Engage."
 author: "aditijha"
 ms.date: 05/21/2025
 ms.localizationpriority: medium
@@ -14,12 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents unique identities on Viva Engage.
-
+Represents a unique identity in Viva Engage. This resource is an open type.
 
 Inherits from [identitySet](../resources/identityset.md).
-
-This resource is an open type.
 
 ## Properties
 |Property|Type|Description|
@@ -49,4 +46,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-
