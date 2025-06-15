@@ -25,9 +25,7 @@ Represents a container that exposes navigation properties for employee experienc
 |[Create community](../api/employeeexperience-post-communities.md)|[community](../resources/community.md)|Create a new [community](../resources/community.md) in Viva Engage.|
 |[List learningProviders](../api/employeeexperience-list-learningproviders.md)|[learningProvider](../resources/learningprovider.md) collection|Get a list of the [learningProvider](../resources/learningprovider.md) resources registered in Viva Learning for a tenant.|
 |[Create learningProvider](../api/employeeexperience-post-learningproviders.md)|[learningProvider](../resources/learningprovider.md)|Create a new [learningProvider](../resources/learningprovider.md) object and register it with Viva Learning using the specified display name and logos for different themes.|
-|[Get all Q&A messages](../api/employeeexperience-getallonlinemeetingmessages.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|Retrieves all Teams Q&A messages in a tenant|
-|[Get all Q&A message reactions](../api/employeeexperience-getallonlinemeetingmessagereactions.md)|[engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) collection|Retrieves all reactions for a Q&A message|
-
+|[Get all online meeting messages](../api/employeeexperience-getallonlinemeetingmessages.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|Get all Teams question and answer (Q&A) conversation messages in a tenant.|
 
 ## Properties
 
