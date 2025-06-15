@@ -882,9 +882,18 @@
           "resources": [
             "community",
             "engagementAsyncOperation",
+            "engagementConversation",
+            "engagementConversationMessage",
+            "engagementConversationMessageReaction"
             "engagementRole",
             "engagementRoleMember",
-            "employeeExperienceUser"
+            "employeeExperienceUser",
+            "onlineMeetingEngagementConversation"
+          ],
+          "complexTypes": [
+            "engagementConversationMessageAttachment",
+            "engagementConversationMessageMention"
+            "engagementIdentitySet"
           ]
         },
         {
