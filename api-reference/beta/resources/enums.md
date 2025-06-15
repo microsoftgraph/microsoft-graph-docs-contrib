@@ -5274,28 +5274,6 @@ Possible values for user account types (group membership), per Windows definitio
 | bullseye         |
 | unknownFutureValue |
 
-### engagementConversationMessageAttachmentType values
-
-| Member           |
-|:-----------------|
-| file             |
-| videoFile        |
-| imageFile        |
-| message          |
-| webLink          |
-| webImage         |
-| webVideo         |
-| unknownFutureValue |
-
-### engagementConversationModerationState values
-
-| Member             |
-|:-------------------|
-| published          |
-| pendingReview      |
-| dismissed          |
-| unknownFutureValue |
-
 ### cloudPcPolicyTimezone values 
 
 | Member             | Value | Description                                                                                                   |
