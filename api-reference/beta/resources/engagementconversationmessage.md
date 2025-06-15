@@ -1,6 +1,6 @@
 ---
 title: "engagementConversationMessage resource type"
-description: "Represents an individual message posted in a Viva Engage conversation"
+description: "Represents an individual message posted in a Viva Engage conversation, which can be a starter post, a reply, or a reply to a reply."
 author: "PV-work-25"
 ms.date: 05/21/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an individual message posted in a Viva Engage conversation, which can be a starter message, a reply, or a reply to a reply.
+Represents an individual message posted in a Viva Engage conversation, which can be a starter post, a reply, or a reply to a reply.  
 
 Inherits from [entity](../resources/entity.md).
 
@@ -41,15 +41,15 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attachments|[engagementConversationMessageAttachment](../resources/engagementconversationmessageattachment.md) collection|Collection of attachments included in the message, such as files, weblinks, videos, or images. |
-|body|[itemBody](../resources/itembody.md)|The main content of the message|
-|createdDateTime|DateTimeOffset|Timestamp when the message was created.|
-|creationMode|[engagementConversationMessage](../resources/engagementconversationmessage.md#engagementcreationmode-values)|Indicates how the message was created. The possible values are: `none`, `migration`, `unknownFutureValue`.|
+|attachments|[engagementConversationMessageAttachment](../resources/engagementconversationmessageattachment.md) collection|A collection of attachments included in the message, such as files, web links, videos, or images. |
+|body|[itemBody](../resources/itembody.md)|The main content of the message.|
+|createdDateTime|DateTimeOffset|The date and time when the message was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+|creationMode|[engagementCreationMode](../resources/engagementconversationmessage.md#engagementcreationmode-values)|Indicates how the message was created. The possible values are: `none`, `migration`, `unknownFutureValue`.|
 |from|[engagementIdentitySet](../resources/engagementidentityset.md)|Identity of the sender of the message.|
 |id|String|Unique ID of a Viva Engage conversation message. Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification to the message.|
-|mentions|[engagementConversationMessageMention](../resources/engagementconversationmessagemention.md) collection|Collection of user identities mentioned in the message.|
-|replyToId|String|ID of the parent message this one is a reply to, if applicable.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when message was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|mentions|[engagementConversationMessageMention](../resources/engagementconversationmessagemention.md) collection|A collection of user identities mentioned in the message.|
+|replyToId|String|The ID of the parent message to which this message is a reply, if applicable.|
 
 ### engagementCreationMode values
 
@@ -62,10 +62,10 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|conversation|[engagementConversation](../resources/engagementconversation.md)|The Viva Engage conversation that this message belongs to. This establishes the thread context for the message.|
-|reactions|[engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) collection|A collection of reactions (such as like, smile, etc.) that users have applied to this message.|
-|replies|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|A collection of messages that are replies to this message, forming a threaded discussion.|
-|replyTo|[engagementConversationMessage](../resources/engagementconversationmessage.md)|The parent message that this one is replying to, if it is part of a reply chain.|
+|conversation|[engagementConversation](../resources/engagementconversation.md)|The Viva Engage conversation to which this message belongs. This relationship establishes the thread context for the message.|
+|reactions|[engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) collection|A collection of reactions (such as like and smile) that users have applied to this message.|
+|replies|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|A collection of messages that are replies to this message and form a threaded discussion.|
+|replyTo|[engagementConversationMessage](../resources/engagementconversationmessage.md)|The parent message to which this message is a reply, if it is part of a reply chain.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
