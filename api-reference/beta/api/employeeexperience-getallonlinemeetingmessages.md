@@ -1,6 +1,6 @@
 ---
 title: "employeeExperience: getAllOnlineMeetingMessages"
-description: "Get all Teams Q&A conversation messages in a tenant."
+description: "Get all Teams question and answer (Q&A) conversation messages in a tenant."
 author: "PV-work-25"
 ms.date: 05/21/2025
 ms.localizationpriority: medium
@@ -14,18 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all Teams Q&A conversation messages in a tenant.
-
-It provides a snapshot of all Q&A activity in JSON format.
+Get all Teams question and answer (Q&A) conversation messages in a tenant. This function returns a snapshot of all Q&A activity in JSON format.
 
 The export includes:
-- Original question/discussion text
-- User who posted
+- The original question or discussion text
+- The user who posted the message
 - All replies and responders
 - Vote counts
-- Moderation status (pending/dismissed)
+- Moderation status (pending or dismissed)
 - Private replies
-- Meeting ID and organizer ID (for mapping to meeting metadata)
+- The meeting ID and organizer ID (for mapping to meeting metadata)
 
 ## Permissions
 
