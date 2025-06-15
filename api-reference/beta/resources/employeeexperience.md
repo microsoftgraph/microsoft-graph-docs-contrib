@@ -40,7 +40,7 @@ None.
 |engagementAsyncOperations|[engagementAsyncOperation](../resources/engagementasyncoperation.md) collection| A collection of long-running, asynchronous operations related to Viva Engage. |
 |goals|[goals](../resources/goals.md) collection|Represents a collection of goals in a Viva Goals organization.|
 |learningProviders|[learningProvider](../resources/learningprovider.md) collection|A collection of learning providers.|
-|onlineMeetingConversations|[onlineMeetingEngagementConversation](../resources/onlinemeetingengagementconversation.md) collection|A collection of questions-and-answers based conversation that is directly tied to an online meeting.|
+|onlineMeetingConversations|[onlineMeetingEngagementConversation](../resources/onlinemeetingengagementconversation.md) collection|A collection of question-and-answer–based conversations that are directly associated with an online meeting.|
 
 ## JSON representation
 
