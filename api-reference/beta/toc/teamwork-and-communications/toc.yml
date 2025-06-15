@@ -582,14 +582,6 @@ items:
         href: ../../resources/meetingnotesubpoint.md
       - name: Mention event
         href: ../../resources/mentionevent.md
-  - name: Online meetings Q&A
-    items:
-    - name: onlineMeetingEngagementConversation
-      href: ../../resources/onlinemeetingengagementconversation.md
-    - name: Get all Q&A conversation messages
-      href: ../../api/employeeexperience-getallonlinemeetingmessages.md
-    - name: Get all Q&A message reactions
-      href: ../../api/employeeexperience-getallonlinemeetingmessagereactions.md
   - name: Virtual events
     items:
     - name: Virtual event presenter
@@ -1411,6 +1403,8 @@ items:
     items:
     - name: Time off request
       href: ../../resources/timeoffrequest.md
+    - name: Create
+      href: ../../api/timeoffrequest-post.md
     - name: List
       href: ../../api/timeoffrequest-list.md
     - name: Get
