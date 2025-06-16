@@ -27,7 +27,7 @@ Go to the [place](./place.md) documentation for supported methods.
 
 ## Properties
 
-The **section** object type has no unique properties and inherits all properties from the **place** object type.
+The **section** type supports all [base properties of a **place** object](./place.md#base-properties).
 
 ## Relationships
 None.

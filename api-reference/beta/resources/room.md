@@ -26,14 +26,14 @@ Go to the [place](./place.md) documentation for supported methods.
 
 ## Properties
 
-The **room** type supports all [base properties of a **place** object](./place.md#base-properties), as well as the following properties:
+The **room** type supports all [base properties of a **place** object](./place.md#base-properties) and the following properties:
 
 |Property |Type |Description |
 |:--|:--|:--|
 |audioDeviceName |String |The name of the audio device that is available in the room. |
-|bookingType |String |Specifies how the place can be booked. Possible values are: <br/><br/> <ul><li>standard - Available for general booking</li>
-<li>reserved – Reserved for specific users or purposes</li>
-<li>unknown – Default or unspecified booking behavior</li>
+|bookingType |String |Specifies how the place can be booked. Possible values are: <br/><br/> <ul><li>**standard** - Available for general booking</li>
+<li>**reserved** – Reserved for specific users or purposes</li>
+<li>**unknown** – Default or unspecified booking behavior</li>
 </ul> |
 |building |String |The name or identifier of the building where the **place** (such as a room or a desk) is located. |
 |capacity |Integer |The maximum number of people in the **room** can accommodate. |

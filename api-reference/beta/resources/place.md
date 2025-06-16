@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A **place** object represents different space types within a tenant. A place object can be one of the following types:
+A **place** object represents different space types within a tenant. A **place** object can be one of the following types:
 
 |Place Type	|Details |
 |:--|:--|

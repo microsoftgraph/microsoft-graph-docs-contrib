@@ -38,9 +38,9 @@ The **workspace** type supports all [base properties of a **place** object](./pl
 |floorNumber |Integer |The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. |
 |label |String |A custom identifier or tag for the **workspace**, often used to distinguish it within a floor or section. |
 |mode |placeMode |The mode for a **workspace**. We support 3 modes:
-<ul><li>bookable - Workspaces that can be booked in advance using desk pool reservation tools</li>
-<li>walkup - First come, first serve workspaces. As soon as you plug in to a peripheral on one of the desks in the workspace, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
-<li>Offline - Workspaces that are taken down for maintenance or marked as not bookable</li></ul> |
+<ul><li>**bookable** - Workspaces that can be booked in advance using desk pool reservation tools</li>
+<li>**walkup** - First come, first serve workspaces. As soon as you plug in to a peripheral on one of the desks in the workspace, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
+<li>**offline** - Workspaces that are taken down for maintenance or marked as not bookable</li></ul> |
 |nickname |String |A short, friendly name for the **workspace**, often used for easier identification or display in the UI. |
 
 ## Relationships
