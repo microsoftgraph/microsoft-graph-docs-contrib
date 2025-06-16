@@ -172,7 +172,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissions/$filter=submissionDateTime gt 2025-05-28T00:00:00Z and submissionDateTime lt 2025-05-29T00:00:00Z
+GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissions?$filter=submissionDateTime gt 2025-05-28T00:00:00Z and submissionDateTime lt 2025-05-29T00:00:00Z
 ```
 
 #### Response
