@@ -39,7 +39,15 @@ Represents a Cloud PC user setting.
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
 |selfServiceEnabled (deprecated)|Boolean|Indicates whether the self-service option is enabled. Default value is `false`. To enable the self-service option, change the setting to `true`. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1, 2023.|
 |notificationSetting|[cloudPcNotificationSetting](../resources/cloudpcnotificationsetting.md)|Defines the setting of the Cloud PC notification prompts for the Cloud PC user.|
+|provisioningSourceType|[cloudPcProvisioningSourceType](../resources/cloudpcusersetting.md#cloudpcprovisioningsourcetype-values)|Indicates the provisioning source of the Cloud PC prepared for an end user. Possible values are image and snapshot. The default value is `image`. If the property is not set or set to `null`, its functionality is the same as setting it to `image`.|
 
+### cloudPcProvisioningSourceType values
+
+| Member             | Description                                                                                                              |
+|:-------------------|:-------------------------------------------------------------------------------------------------------------------------|
+| image              | Indicates the Windows 365 image will be used as the source to provision Cloud PC.                                        |
+| snapshot           | Indicates that the pre-uploaded VHD snapshot for this end user will be used as source to provision Cloud PC.             |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                                                         |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -71,6 +79,9 @@ The following JSON representation shows the resource type.
   "selfServiceEnabled": "Boolean",
   "notificationSetting": {
     "@odata.type": "microsoft.graph.cloudPcNotificationSetting"
+  },
+  "provisioningSourceType": {
+    "@odata.type": "microsoft.graph.cloudPcProvisioningSourceType"
   }
 }
 ```

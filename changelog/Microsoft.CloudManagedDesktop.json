@@ -1,5 +1,31 @@
 {
   "changelog": [
+  {
+      "ChangeList": [
+        {
+          "Id": "f064222f-fcc8-4493-b2ed-43075268f1dd",
+          "ApiChange": "Property",
+          "ChangedApiName": "provisioningSourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **provisioningSourceType** property  to the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource.",
+          "Target": "cloudPcUserSetting"
+        },          
+        {
+          "Id": "f064222f-fcc8-4493-b2ed-43075268f1dd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcProvisioningSourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcProvisioningSourceType** enumeration type.",
+          "Target": "cloudPcProvisioningSourceType"
+        }
+      ],
+      "Id": "f064222f-fcc8-4493-b2ed-43075268f1dd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-01T12:24:33.7283612Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
     {
       "ChangeList": [
         {

@@ -169,6 +169,7 @@ Content-Type: application/json
     "frequencyType": "sixteenHours",
     "userRestoreEnabled": true
   },
+  "provisioningSourceType": null,
   "lastModifiedDateTime": "2021-02-01T10:29:57Z"  
 }
 ```

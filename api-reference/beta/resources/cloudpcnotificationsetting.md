@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the settings of a point-in-time restore of a Cloud PC.
+Represents the settings of notification prompts.
 
 ## Properties
 
