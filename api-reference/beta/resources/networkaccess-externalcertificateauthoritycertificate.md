@@ -31,10 +31,10 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the certificate authority. Inherits from [entity](../resources/entity.md). Read-only.|
-|name|String|The display name of the certificate authority.|
+|id|String|The unique identifier for the CA. Inherits from [entity](../resources/entity.md). Read-only.|
+|name|String|The display name of the CA.|
 |commonName|String|The common name (CN) field of the certificate.|
-|organizationName|String|The organization name (O) field of the certificate.|
+|organizationName|String|The organization name (OU) field of the certificate.|
 |validity|[microsoft.graph.networkaccess.validityDate](../resources/networkaccess-validitydate.md)|The validity period of the certificate, including start and end dates.|
 |status|microsoft.graph.networkaccess.tlsCertificateStatus|The current status of the certificate. The possible values are: `csrGenerated`, `enrolling`, `active`, `unknownFutureValue`. Read-only.|
 |certificateSigningRequest|String|The Certificate Signing Request (CSR) generated when creating the CA. This CSR should be signed using the customer's PKI infrastructure. Read-only.|

@@ -50,6 +50,8 @@ POST /networkAccess/tlsInspectionPolicies/{tlsInspectionPolicyId}/policyRules
 
 In the request body, supply a JSON representation of the [tlsInspectionRule](../resources/networkaccess-tlsinspectionrule.md) object.
 
+You can specify the following properties when creating a **policyRule**.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|The display name of the rule. Required.|

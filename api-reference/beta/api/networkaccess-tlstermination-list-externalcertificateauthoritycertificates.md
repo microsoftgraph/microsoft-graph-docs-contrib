@@ -1,5 +1,5 @@
 ---
-title: "List externalCertificateAuthorityCertificate objects"
+title: "List externalCertificateAuthorityCertificates"
 description: "Get a list of the externalCertificateAuthorityCertificate objects and their properties."
 author: "sisharm"
 ms.date: 05/23/2025

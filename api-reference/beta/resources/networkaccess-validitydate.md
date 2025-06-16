@@ -1,6 +1,6 @@
 ---
 title: "validityDate resource type"
-description: "Represents the validity dates for a certificate."
+description: "Represents the validity dates for an externalCertificateAuthorityCertificate object."
 author: "sisharm"
 ms.date: 05/23/2025
 ms.localizationpriority: medium
@@ -14,14 +14,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-"Represents the validity dates for a certificate."
+"Represents the validity dates for an [externalCertificateAuthorityCertificate](../resources/networkaccess-externalcertificateauthoritycertificate.md) "
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|endDateTime|DateTimeOffset| Date & time when certificate validity expires.|
-|startDateTime|DateTimeOffset|Date & time when certificate validity begins.|
+|endDateTime|DateTimeOffset| Date and time when certificate validity expires.|
+|startDateTime|DateTimeOffset|Date and time when certificate validity begins.|
 
 ## Relationships
 None.

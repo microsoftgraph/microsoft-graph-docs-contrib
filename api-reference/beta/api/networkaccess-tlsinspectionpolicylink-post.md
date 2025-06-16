@@ -50,6 +50,8 @@ POST /networkAccess/filteringProfiles/{filteringProfileId}/policies
 
 In the request body, supply a JSON representation of the [tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) object.
 
+You can specify the following properties when creating a **tlsInspectionPolicyLink**.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |state|microsoft.graph.networkaccess.status|The state of the policy link. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
