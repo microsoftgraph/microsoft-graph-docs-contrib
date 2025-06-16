@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "phoneUserConversationMember",
           "ChangeType": "Addition",
-          "Description": "Added the [phoneUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/phoneUserConversationMember?view=graph-rest-beta) resource.",
+          "Description": "Added the [phoneUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/phoneUserConversationMember?view=graph-rest-beta) resource type.",
           "Target": "phoneUserConversationMember"
         }
       ],
@@ -16,7 +16,7 @@
       "Version": "beta",
       "CreatedDateTime": "2025-06-10T00:42:31.2815475Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Chats"
+      "SubArea": "Messaging"
     },
     {
       "ChangeList": [
