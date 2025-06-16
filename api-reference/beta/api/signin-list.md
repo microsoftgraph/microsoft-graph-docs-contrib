@@ -45,7 +45,15 @@ This method supports the `$top`, `$skiptoken`, and `$filter` OData query paramet
 To avoid having the request time out, apply the `$filter` parameter with a time range for which to get all sign-ins, as shown in [Example 1](signin-list.md#example-1-list-all-sign-ins-during-a-specific-time-period).
 
 > [!NOTE]
-> This API returns only interactive sign-ins unless you set an explicit filter. For example, the filter for getting non-interactive sign-ins is `https://graph.microsoft.com/beta/auditLogs/signIns?&$filter=signInEventTypes/any(t: t eq 'nonInteractiveUser')`.
+> Only interactive sign-ins are returned through GET signins API requests unless you set an explicit filter on SignInEventType. 
+
+## Example filters on SigninEventType
+
+To request non-interactive sign-ins:
+GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=(createdDateTime ge 2024-01-13T14:13:32Z and createdDateTime le 2024-01-14T17:43:26Z) and signInEventTypes/any(t: t eq 'nonInteractiveUser')
+
+To request service principal sign-ins:
+GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=(createdDateTime ge 2024-01-13T14:13:32Z and createdDateTime le 2024-01-14T17:43:26Z) and signInEventTypes/any(t: t eq 'servicePrincipal')
 
 ## Request headers
 
@@ -65,6 +73,7 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 ### Example 1: List all sign-ins during a specific time period
 In this example, the response object shows the user signed in using MFA that was triggered by a conditional access policy, and the primary authentication method is through FIDO.
+
 
 #### Request
 
