@@ -72,7 +72,7 @@ The download of usage or reconciliation data is a long-running operation that co
 
 Use the [billedUsage: export](../api/partners-billing-billedusage-export.md) or [unbilledUsage: export](../api/partners-billing-unbilledusage-export.md) API to access billed or unbilled consumption line items. The API returns a `202 Accepted` response code and a `Location` header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request at regular intervals until you receive a success status with a [manifest](../resources/partners-billing-manifest.md) URL.
 
-### Invoice reconciliation endpoint
+### Invoice line-item endpoint
 
 Use the [billedReconciliation: export](../api/partners-billing-billedreconciliation-export.md) or [unbilledReconciliation: export](../api/partners-billing-unbilledreconciliation-export.md) API to access billed or unbilled invoice reconciliation line items. The API returns a `202 Accepted` response code and a `Location` header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request at regular intervals until you receive a success status with a [manifest](../resources/partners-billing-manifest.md) URL.
 
