@@ -21,6 +21,7 @@ Base type for the following supported conversation member types:
 - [anonymousGuestConversationMember](anonymousguestconversationmember.md)
 - [azureCommunicationServicesUserConversationMember](azurecommunicationservicesuserconversationmember.md)
 - [microsoftAccountUserConversationMember](microsoftaccountuserconversationmember.md)
+- [phoneUserConversationMember](phoneuserconversationmember.md)
 - [skypeForBusinessUserConversationMember](skypeforbusinessuserconversationmember.md)
 - [skypeUserConversationMember](skypeuserconversationmember.md)
 
