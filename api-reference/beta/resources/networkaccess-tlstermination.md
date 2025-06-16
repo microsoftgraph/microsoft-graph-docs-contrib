@@ -1,5 +1,5 @@
 ---
-title: "tlsInspectionPolicy resource type"
+title: "tlsTermination resource type"
 description: "A container for tenant level tls inspection settings for Entra Global Secure Access."
 author: "sisharm"
 ms.date: 05/23/2025
