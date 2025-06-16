@@ -50,15 +50,14 @@ In the request body, supply a JSON representation of the [microsoft.graph.networ
 
 You can specify the following properties when creating a **threatIntelligencePolicy**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Required.|
-|description|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Optional.|
-|version|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Required.|
-|kind|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Required.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|settings|[microsoft.graph.networkaccess.threatIntelligencePolicySettings](../resources/networkaccess-threatintelligencepolicysettings.md)|**TODO: Add Description** Required.|
+|name|String|The display name of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Required.|
+|description|String|A description of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Optional.|
+|version|String|The version of the policy, used for tracking changes. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Required.|
+|kind|String|The kind of policy. For threat intelligence policies, this is a specific value denoting the threat intelligence type. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Required.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. Required.|
+|settings|[microsoft.graph.networkaccess.threatIntelligencePolicySettings](../resources/networkaccess-threatintelligencepolicysettings.md)|Settings that define how the threat intelligence policy operates and evaluates threats. Required.|
 
 
 
@@ -82,12 +81,13 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
-  "name": "String",
-  "description": "String",
-  "version": "String",
-  "kind": "String",
+  "name": "Malicious Domains Policy",
+  "description": "Policy to block traffic to known malicious domains based on threat intelligence",
+  "version": "1.0",
+  "kind": "domainReputation",
   "settings": {
-    "@odata.type": "microsoft.graph.networkaccess.threatIntelligencePolicySettings"
+    "@odata.type": "microsoft.graph.networkaccess.threatIntelligencePolicySettings",
+    "defaultAction": "block"
   }
 }
 ```
@@ -110,13 +110,14 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
   "id": "b8521f33-fa6d-a78b-308c-b6dfdf1c1798",
-  "name": "String",
-  "description": "String",
-  "version": "String",
-  "kind": "String",
-  "lastModifiedDateTime": "String (timestamp)",
+  "name": "Malicious Domains Policy",
+  "description": "Policy to block traffic to known malicious domains based on threat intelligence",
+  "version": "1.0",
+  "kind": "domainReputation",
+  "lastModifiedDateTime": "2025-06-16T14:30:51Z",
   "settings": {
-    "@odata.type": "microsoft.graph.networkaccess.threatIntelligencePolicySettings"
+    "@odata.type": "microsoft.graph.networkaccess.threatIntelligencePolicySettings",
+    "defaultAction": "block"
   }
 }
 ```
