@@ -18,7 +18,7 @@ Delete a [tlsInspectionRule](../resources/networkaccess-tlsinspectionrule.md) ob
 
 ## Permissions
 
-One of these permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-overview).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
@@ -26,6 +26,8 @@ One of these permissions is required to call this API. To learn more, including 
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-tlsinspectionrule-delete-permissions.md)]
+
+[!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 
 ## HTTP request
 
