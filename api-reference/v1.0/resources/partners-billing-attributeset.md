@@ -18,11 +18,11 @@ Represents attributes for exported data sets in the Microsoft Graph partner bill
 
 ## Members
 
-| Member             | Value | Description                                      |
-|:-------------------|:------|:-------------------------------------------------|
-| full               | 1     | All attributes in the exported data.             |
-| basic              | 2     | Only basic attributes in the exported data.      |
-| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Don't use. |
+| Member             | Description                                      |
+|:-------------------|:-------------------------------------------------|
+| full               | All attributes in the exported data.             |
+| basic              | Only basic attributes in the exported data.      |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### Attributes
 
