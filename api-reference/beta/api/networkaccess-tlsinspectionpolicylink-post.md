@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) to connect a filtering profile with a TLS inspection policy. One 1 TLS inspection policy is allowed for every filtering profile.
+Create a new [tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) to connect a filtering profile with a [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md). One 1 [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) is allowed for every filtering profile.
 
 ## Permissions
 

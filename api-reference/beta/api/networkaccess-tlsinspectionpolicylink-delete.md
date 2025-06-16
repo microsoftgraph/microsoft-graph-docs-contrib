@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) object. Used to unlink a tls inspection policy from a filtering profile.
+Delete a [tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) object. Used to unlink a [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) from a filtering profile.
 
 ## Permissions
 

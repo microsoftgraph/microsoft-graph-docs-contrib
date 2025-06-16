@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.networkaccess
 
-Get a list of the externalCertificateAuthorityCertificate objects and their properties.
+Get a list of the [externalCertificateAuthorityCertificate](../resources/networkaccess-externalcertificateauthoritycertificate.md) objects and their properties.
 
 ## Permissions
 

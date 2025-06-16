@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a tlsInspectionPolicy object.
+Get a [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) object.
 
 ## Permissions
 

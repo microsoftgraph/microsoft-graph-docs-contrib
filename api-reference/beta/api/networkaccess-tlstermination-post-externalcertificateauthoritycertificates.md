@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.networkaccess
 
-Create a new externalCertificateAuthorityCertificate object, which would provide a GSA admin the Certificate Signing Request (CSR) that can be downloaded to sign and generate a certificate.
+Create a new [externalCertificateAuthorityCertificate](../resources/networkaccess-externalcertificateauthoritycertificate.md) object, which would provide a GSA admin the Certificate Signing Request (CSR) that can be downloaded to sign and generate a certificate.
 
 ## Permissions
 

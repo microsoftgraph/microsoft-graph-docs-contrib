@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [tlsInspectionRule](../resources/networkaccess-tlsinspectionrule.md) object in a TLS inspection policy.
+Create a new [tlsInspectionRule](../resources/networkaccess-tlsinspectionrule.md) object in a [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md).
 
 ## Permissions
 

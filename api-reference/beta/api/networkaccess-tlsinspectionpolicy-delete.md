@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a tlsInspectionPolicy object.
+Delete a [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) object.
 
 ## Permissions
 

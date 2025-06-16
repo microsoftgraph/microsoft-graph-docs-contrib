@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.networkaccess
 
-Get a externalCertificateAuthorityCertificate object.
+Get a [externalCertificateAuthorityCertificate](../resources/networkaccess-externalcertificateauthoritycertificate.md) object.
 
 ## Permissions
 

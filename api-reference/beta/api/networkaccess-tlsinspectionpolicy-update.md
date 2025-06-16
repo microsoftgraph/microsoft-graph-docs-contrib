@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a tlsInspectionPolicy object.
+Update the properties of a [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) object.
 
 ## Permissions
 
