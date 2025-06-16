@@ -163,7 +163,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "unbilled",
           "ChangeType": "Addition",
-          "Description": "Added the **unbilled** relationship to the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billingReconciliation?view=graph-rest-beta) resource type.",
+          "Description": "Added the **unbilled** relationship to the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billingReconciliation?view=graph-rest-beta) resource.",
           "Target": "billingReconciliation"
         },
         {
@@ -345,14 +345,15 @@
       "CreatedDateTime": "2024-02-14T08:51:46.3920632Z",
       "WorkloadArea": "Reports",
       "SubArea": "Partner billing reports"
-    },{
+    },
+    {
       "ChangeList": [
         {
           "Id": "c2ab2208-959d-41f7-9990-b559351720e1",
           "ApiChange": "Relationship",
           "ChangedApiName": "unbilled",
           "ChangeType": "Addition",
-          "Description": "Added the **unbilled** relationship to the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-billingReconciliation?view=graph-rest-1.0) resource.",
+          "Description": "Added the **unbilled** relationship to the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billingReconciliation?view=graph-rest-1.0) resource.",
           "Target": "billingReconciliation"
         },
         {
@@ -360,7 +361,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unbilledReconciliation",
           "ChangeType": "Addition",
-          "Description": "Added the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-unbilledReconciliation?view=graph-rest-1.0) resource.",
+          "Description": "Added the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-unbilledReconciliation?view=graph-rest-1.0) resource type.",
           "Target": "unbilledReconciliation"
         },
         {
@@ -368,7 +369,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "export",
           "ChangeType": "Addition",
-          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners.billing-unbilledReconciliation-export?view=graph-rest-1.0) method to the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-unbilledReconciliation?view=graph-rest-1.0) resource.",
+          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-unbilledReconciliation-export?view=graph-rest-1.0) method to the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-unbilledReconciliation?view=graph-rest-1.0) resource.",
           "Target": "unbilledReconciliation"
         }
       ],
