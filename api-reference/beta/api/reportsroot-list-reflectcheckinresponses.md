@@ -1,6 +1,6 @@
 ---
-title: "Get reflectCheckInResponses"
-description: "Read the properties and relationships of a collection of reflectCheckInResponse objects."
+title: "List reflectCheckInResponses"
+description: "Get a list of reflect check-ins that were submitted by a student."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -8,22 +8,20 @@ doc_type: apiPageType
 ms.date: 08/14/2024
 ---
 
-# Get reflectCheckInResponses
+# List reflectCheckInResponses
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a collection of [reflectCheckInResponse](../resources/reflectcheckinresponse.md) objects. This method gets the responses to a [Microsoft Reflect](https://reflect.microsoft.com/) check-in.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Get a list of [reflect check-ins](../resources/reflectcheckinresponse.md) that were submitted by a student.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "reflectcheckinresponse_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/reflectcheckinresponse-get-permissions.md)]
+<!-- { "blockType": "permissions", "name": "reportsroot-list-reflectcheckinresponses-permissions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/reportsroot-list-reflectcheckinresponses-permissions.md)]
 
 ## HTTP request
 
@@ -66,7 +64,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_reflectcheckinresponse"
+  "name": "get_reflectCheckinResponses_1"
 }
 -->
 ``` http
@@ -115,7 +113,7 @@ The following example shows the default response that includes Reflect check-in 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.reflectCheckInResponse"
+  "@odata.type": "Collection(microsoft.graph.reflectCheckInResponse)"
 }
 -->
 ``` http
@@ -155,7 +153,7 @@ Content-Type: application/json
 
 ### Example 2: Get the Reflect check-in responses for a specific date using $filter
 
-The following example shows how to get the Reflect check-in responses for a specific date using the `$filter` query parameter. Please note that the requested time range must be 24 hours or shorter.
+The following example shows how to get the Reflect check-in responses for a specific date using the `$filter` query parameter. The requested time range must be 24 hours or shorter.
 
 #### Request
 
@@ -164,7 +162,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_ReflectCheckinResponses_filter"
+  "name": "get_reflectCheckinResponses_2"
 }
 -->
 ``` http
@@ -213,7 +211,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.reflectCheckInResponse",
+  "@odata.type": "Collection(microsoft.graph.reflectCheckInResponse)",
 }
 -->
 ``` http

@@ -1,6 +1,6 @@
 ---
-title: "Get readingAssignmentSubmissions"
-description: "Read the properties and relationships of a collection of readingAssignmentSubmission objects."
+title: "List readingAssignmentSubmissions"
+description: "Get a list of reading assignments that were submitted by a student."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a collection of [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) objects.
+Get a list of [reading assignments](../resources/readingassignmentsubmission.md) that were submitted by a student.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "readingassignmentsubmission-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/readingassignmentsubmission-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/reportsroot-list-readingassignmentsubmissions-permissions.md)]
 
 ## HTTP request
 
@@ -67,7 +67,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_readingassignmentsubmission"
+  "name": "get_readingassignmentsubmissions_1"
 }
 -->
 ``` http
@@ -82,7 +82,7 @@ The following example shows the default response from the last 24 hours.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.readingAssignmentSubmission"
+  "@odata.type": "Collection(microsoft.graph.readingAssignmentSubmission)"
 }
 -->
 ``` http
@@ -139,7 +139,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_ReadingAssignmentSubmission_filter"
+  "name": "get_ReadingAssignmentSubmissions_2"
 }
 -->
 ``` http
@@ -184,7 +184,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.readingAssignmentSubmission"
+  "@odata.type": "Collection(microsoft.graph.readingAssignmentSubmission)"
 }
 -->
 ``` http
