@@ -819,7 +819,15 @@
     {
       "ChangeList": [
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "securityRuleStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityRuleStatus** enumeration type.",
+          "Target": "securityRuleStatus"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Enumeration",
           "ChangedApiName": "tlsCertificateStatus",
           "ChangeType": "Addition",
@@ -827,7 +835,7 @@
           "Target": "tlsCertificateStatus"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Enumeration",
           "ChangedApiName": "tlsInspectionAction",
           "ChangeType": "Addition",
@@ -835,7 +843,7 @@
           "Target": "tlsInspectionAction"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Resource",
           "ChangedApiName": "tlsInspectionDestination",
           "ChangeType": "Addition",
@@ -843,7 +851,7 @@
           "Target": "tlsInspectionDestination"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Resource",
           "ChangedApiName": "tlsInspectionFqdnDestination",
           "ChangeType": "Addition",
@@ -851,7 +859,7 @@
           "Target": "tlsInspectionFqdnDestination"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Resource",
           "ChangedApiName": "tlsInspectionMatchingConditions",
           "ChangeType": "Addition",
@@ -859,7 +867,7 @@
           "Target": "tlsInspectionMatchingConditions"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Resource",
           "ChangedApiName": "tlsInspectionPolicySettings",
           "ChangeType": "Addition",
@@ -867,7 +875,7 @@
           "Target": "tlsInspectionPolicySettings"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Resource",
           "ChangedApiName": "tlsInspectionRuleSettings",
           "ChangeType": "Addition",
@@ -875,7 +883,7 @@
           "Target": "tlsInspectionRuleSettings"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Resource",
           "ChangedApiName": "tlsInspectionWebCategoryDestination",
           "ChangeType": "Addition",
@@ -883,7 +891,7 @@
           "Target": "tlsInspectionWebCategoryDestination"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Resource",
           "ChangedApiName": "validityDate",
           "ChangeType": "Addition",
@@ -891,7 +899,7 @@
           "Target": "validityDate"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Resource",
           "ChangedApiName": "externalCertificateAuthorityCertificate",
           "ChangeType": "Addition",
@@ -899,7 +907,15 @@
           "Target": "externalCertificateAuthorityCertificate"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tls",
+          "ChangeType": "Addition",
+          "Description": "Added the **tls** relationship to the [networkAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-networkAccessRoot?view=graph-rest-beta) resource.",
+          "Target": "networkAccessRoot"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Relationship",
           "ChangedApiName": "tlsInspectionPolicies",
           "ChangeType": "Addition",
@@ -907,7 +923,7 @@
           "Target": "networkAccessRoot"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Resource",
           "ChangedApiName": "tlsInspectionPolicy",
           "ChangeType": "Addition",
@@ -915,7 +931,7 @@
           "Target": "tlsInspectionPolicy"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Resource",
           "ChangedApiName": "tlsInspectionPolicyLink",
           "ChangeType": "Addition",
@@ -923,18 +939,26 @@
           "Target": "tlsInspectionPolicyLink"
         },
         {
-          "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Resource",
           "ChangedApiName": "tlsInspectionRule",
           "ChangeType": "Addition",
           "Description": "Added the [tlsInspectionRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tlsInspectionRule?view=graph-rest-beta) resource.",
           "Target": "tlsInspectionRule"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tlsTermination",
+          "ChangeType": "Addition",
+          "Description": "Added the [tlsTermination](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tlsTermination?view=graph-rest-beta) resource.",
+          "Target": "tlsTermination"
         }
       ],
-      "Id": "5bb1adf5-efcf-44a4-ac84-e43ce94f77a6",
+      "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-06-10T22:57:55.019611Z",
+      "CreatedDateTime": "2025-06-13T21:06:04.9437879Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
     }
