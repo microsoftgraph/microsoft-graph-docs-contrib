@@ -45,7 +45,7 @@ Use the **customAppSettings** property on [teamsAppSettings](/graph/api/resource
 
 ### Teamwork and communications | Messaging
 
-Added [phoneUserConversationMember](/graph/api/resources/phoneuserconversationmember?view=graph-rest-beta&preserve-view=true) as a supported conversation member types.
+Added [phoneUserConversationMember](/graph/api/resources/phoneuserconversationmember?view=graph-rest-beta&preserve-view=true) as a supported conversation member type.
 
 ## May 2025: New and generally available
 
