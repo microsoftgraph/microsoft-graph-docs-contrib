@@ -2643,6 +2643,7 @@
               "processingError",
               "protectedApplicationMetadata",
               "protectedContent",
+              "restrictAccessAction",
               "scopeBase",
               "tenantScope",
               "textContent",
