@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and [signIn](../reso
 
 ### Request
 
-The following example shows a request. Please note that "id" refers to the "RequestID" property in the sign-in logs UX. 
+The following example shows a request. Note that "id" is synonomous with the  the "RequestID" property in the sign-in logs UX. 
 
 
 # [HTTP](#tab/http)
