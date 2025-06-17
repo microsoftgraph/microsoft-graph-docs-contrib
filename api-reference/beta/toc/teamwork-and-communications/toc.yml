@@ -22,13 +22,13 @@ items:
       href: ../../resources/teamsadministration-effectivepolicyassignment.md
     - name: Policy assignment
       href: ../../resources/teamsadministration-policyassignment.md
-- name: AI interactions (preview)
+- name: AI interactions
   items:
   - name: AI interaction history
     items:
     - name: AI interaction history
       href: ../../resources/aiinteractionhistory.md
-    - name: List all enterprise interactions
+    - name: Get all enterprise interactions
       href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
   - name: Complex types
     items:
@@ -208,6 +208,10 @@ items:
       href: ../../api/team-list-permissiongrants.md
     - name: List permission grants of a user
       href: ../../api/user-list-permissiongrants.md
+  - name: Complex types
+    items:
+    - name: Custom app settings
+      href: ../../resources/customappsettings.md
 - name: Calls and online meetings
   items:
   - name: Overview
@@ -750,6 +754,8 @@ items:
         href: ../../api/teamwork-list-teamtemplates.md
       - name: Get teamwork
         href: ../../api/teamwork-get.md
+      - name: Determine if interaction is allowed
+        href: ../../api/teamwork-determineifinteractionisallowed.md
   - name: User settings
     items:
     - name: User teamwork
@@ -1407,6 +1413,8 @@ items:
       href: ../../api/timeoffrequest-post.md
     - name: List
       href: ../../api/timeoffrequest-list.md
+    - name: Create
+      href: ../../api/timeoffrequest-post.md
     - name: Get
       href: ../../api/timeoffrequest-get.md
     - name: Delete
