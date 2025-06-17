@@ -4,7 +4,7 @@ description: "Allow admins to dimiss risk from Microsoft Entra sign-in events fo
 author: "ddonhin"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
