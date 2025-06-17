@@ -5274,6 +5274,25 @@ Possible values for user account types (group membership), per Windows definitio
 | bullseye         |
 | unknownFutureValue |
 
+### notificationEventsType values 
+
+|Member|
+|:---|
+|none|
+|restoreAndPolicyUpdates|
+|unknownFutureValue|
+
+### notificationRecipientsType values 
+
+|Member|
+|:---|
+|none|
+|globalAdmins|
+|backupAdmins|
+|custom|
+|allAdmins|
+|unknownFutureValue|
+
 ### cloudPcPolicyTimezone values 
 
 | Member             | Value | Description                                                                                                   |

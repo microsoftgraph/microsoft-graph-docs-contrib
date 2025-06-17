@@ -25,6 +25,7 @@ None.
 |:---|:---|:---|
 |admin|[copilotAdmin](../resources/copilotadmin.md)|The Microsoft 365 Copilot admin who can add or modify Copilot settings. Read-only. Nullable.|
 |interactionHistory|[aiInteractionHistory](../resources/aiinteractionhistory.md)|The history of interactions between AI agents and users.|
+|users|[aiUser](../resources/aiuser.md) collection|The list of AI users or agents. Read-only. Nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

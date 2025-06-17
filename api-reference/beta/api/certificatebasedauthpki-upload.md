@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Append additional certificate authority details to a [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) resource. Only one operation can run at a time and this operation can take up to 30 minutes to complete. To know whether another upload is in progress, call the [Get certificateBasedAuthPki](../api/certificatebasedauthpki-get.md). The **status** property will have the value `running`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

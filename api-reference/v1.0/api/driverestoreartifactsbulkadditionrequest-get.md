@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusiness
 
 ---
 
-
 ### Response
 
 The following example shows the response.

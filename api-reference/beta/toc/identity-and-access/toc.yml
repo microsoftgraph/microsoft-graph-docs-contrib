@@ -655,13 +655,13 @@ items:
           href: ../../api/unifiedrbacresourcenamespace-list-resourceactions.md
         - name: Get
           href: ../../api/unifiedrbacresourceaction-get.md
-    - name: Custom app scope
+    - name: Custom app scope for RBAC providers
       items:
-      - name: Custom app scope
+      - name: Custom app scope for RBAC providers
         href: ../../resources/customappscope.md
-      - name: List
+      - name: List for Exchange Online
         href: ../../api/unifiedrbacapplication-list-customappscopes.md
-      - name: Create
+      - name: Create for Exchange Online
         href: ../../api/unifiedrbacapplication-post-customappscope.md
       - name: Get
         href: ../../api/customappscope-get.md

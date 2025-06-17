@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps.
+Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps. Use [processConversationMetadata](./processconversationmetadata.md) for conversation content and [processFileMetadata](./processfilemetadata.md) for file content.
 
 ## Properties
 
