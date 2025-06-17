@@ -1020,7 +1020,7 @@ items:
     - name: Manage app access (CSPs)
       href: auth-cloudsolutionprovider.md
     - name: Limit mailbox access
-      href: auth-limit-mailbox-access.md
+      href: /exchange/permissions-exo/application-rbac?toc=/graph/toc.json
     - name: Resolve authorization errors
       href: resolve-auth-errors.md
   - name: Use the API
