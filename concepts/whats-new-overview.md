@@ -31,7 +31,7 @@ Updated the throttling information for [getAllEnterpriseInteractions](/graph/api
 
 ### Places
 
-[Create](../api-reference/beta/api/place-post-places.md), [get](../api-reference/beta/api/place-get.md), [update](../api-reference/beta/api/place-update.md), and [delete](../api-reference/beta/api/place-delete.md) [Places](../api-reference/beta/resources/place.md) objects. These APIs enable scalable onboarding and management of the Places directory.
+[Create](/graph/api/place-post-places?view=graph-rest-beta), [get](/graph/api/place-get?view=graph-rest-beta), [update](/graph/api/place-update?view=graph-rest-beta), and [delete](/graph/api/place-delete?view=graph-rest-beta) [Places](/graph/api/place?view=graph-rest-beta) objects. These APIs enable scalable onboarding and management of the Places directory.
 
 ## May 2025: New and generally available
 
