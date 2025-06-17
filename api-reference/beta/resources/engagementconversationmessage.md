@@ -16,29 +16,13 @@ Namespace: microsoft.graph
 
 Represents an individual message posted in a Viva Engage conversation, which can be a starter post, a reply, or a reply to a reply.  
 
-Base type of [engagementConversationArticleMessage](../resources/engagementconversationarticlemessage.md), [engagementConversationDiscussionMessage](../resources/engagementconversationdiscussionmessage.md), [engagementConversationMediaMessage](../resources/engagementconversationmediamessage.md), [engagementConversationPollMessage](../resources/engagementconversationpollmessage.md), [engagementConversationPraiseMessage](../resources/engagementconversationpraisemessage.md), [engagementConversationQuestionMessage](../resources/engagementconversationquestionmessage.md), [engagementConversationSystemMessage](../resources/engagementconversationsystemmessage.md).
+Base type of [engagementConversationDiscussionMessage](../resources/engagementconversationdiscussionmessage.md) and [engagementConversationQuestionMessage](../resources/engagementconversationquestionmessage.md).
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
 None.
-
-<!--|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/onlinemeetingengagementconversation-list-starter.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|Get a list of the engagementConversationMessage objects and their properties.|
-|[Create](../api/onlinemeetingengagementconversation-post-starter.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md)|Create a new engagementConversationMessage object.|
-|[Get](../api/engagementconversationmessage-get.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md)|Read the properties and relationships of an engagementConversationMessage object.|
-|[Update](../api/engagementconversationmessage-update.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md)|Update the properties of an engagementConversationMessage object.|
-|[Delete](../api/onlinemeetingengagementconversation-delete-starter.md)|None|Delete an engagementConversationMessage object.|
-|[List reactions](../api/engagementconversationmessage-list-reactions.md)|[engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) collection|**TODO: Add a useful description.**|
-|[Create engagementConversationMessageReaction](../api/engagementconversationmessage-post-reactions.md)|[engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md)|Create a new engagementConversationMessageReaction object.|
-|[List replies](../api/engagementconversationmessage-list-replies.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|**TODO: Add a useful description.**|
-|[Create engagementConversationMessage](../api/engagementconversationmessage-post-replies.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md)|Create a new engagementConversationMessage object.|
-|[List engagementConversationMessage](../api/engagementconversationmessage-list-replyto.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|**TODO: Add a useful description.**|
-|[Add engagementConversationMessage](../api/engagementconversationmessage-post-replyto.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md)|Add replyTo by posting to the replyTo collection.|
-|[Remove engagementConversationMessage](../api/engagementconversationmessage-delete-replyto.md)|None|Remove an [engagementConversationMessage](../resources/engagementconversationmessage.md) object.|
--->
 
 ## Properties
 |Property|Type|Description|
