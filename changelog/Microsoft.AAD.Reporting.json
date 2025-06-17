@@ -3468,6 +3468,58 @@
       "CreatedDateTime": "2025-04-11T16:50:10.8533511Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fbb0cc8a-c51e-4909-a514-08704a852821",
+          "ApiChange": "Method",
+          "ChangedApiName": "dismiss",
+          "ChangeType": "Addition",
+          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/signIn-dismiss?view=graph-rest-beta) method to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "fbb0cc8a-c51e-4909-a514-08704a852821",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-09T17:50:36.6108245Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e3f790f7-6add-4fc9-a947-63b5df732d5b",
+          "ApiChange": "Method",
+          "ChangedApiName": "confirmCompromised",
+          "ChangeType": "Addition",
+          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signIn-confirmCompromised?view=graph-rest-1.0) method to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-1.0) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "e3f790f7-6add-4fc9-a947-63b5df732d5b",
+          "ApiChange": "Method",
+          "ChangedApiName": "confirmSafe",
+          "ChangeType": "Addition",
+          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signIn-confirmSafe?view=graph-rest-1.0) method to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-1.0) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "e3f790f7-6add-4fc9-a947-63b5df732d5b",
+          "ApiChange": "Method",
+          "ChangedApiName": "dismiss",
+          "ChangeType": "Addition",
+          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/signIn-dismiss?view=graph-rest-1.0) method to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-1.0) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "e3f790f7-6add-4fc9-a947-63b5df732d5b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-06-09T17:50:36.6110895Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
     }
 
   ]
