@@ -47,7 +47,7 @@ GET /users/{usersId}/dataSecurityAndGovernance/sensitivityLabels
 | :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | isScopedToUser | Boolean          | Optional. Used only with application permissions (`/security/...` path). If value set to 'true' to scope labels to the current user. If omitted with application permissions, returns all tenant labels. |
 | locale         | String           | Optional. Specifies the locale for localizable fields.                                                                                                                                        |
-| applicableTo   | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. Possible values are `Email`,`File`,`SchematizedData`,`Site`,`Teamwork`,`UnifiedGroup`. |
+| applicableTo   | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. Possible values are `email`,`file`,`schematizedData`,`site`,`teamwork`,`unifiedGroup`. |
 | id             | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
 
 ## Request body
