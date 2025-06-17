@@ -45,6 +45,7 @@ PATCH /teamwork/teamsAppSettings
 |Property|Type|Description|
 |:---|:---|:---|
 |allowUserRequestsForAppAccess|Boolean|Indicates whether users are allowed to request access to the unavailable Teams apps.|
+|customAppSettings|[customAppSettings](../resources/customappsettings.md)|The settings for all custom apps in the tenant.|
 |isChatResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. `True` indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. `False` blocks the installation of any Teams app that requires resource-specific permissions in a chat or a meeting.|
 |isUserPersonalScopeResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for personal scope in Teams apps has been enabled for the tenant. `True` indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope. `False` blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.|
 
@@ -258,6 +259,44 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
+### Example 4: Enable the developer portal to display app usage metrics
+
+The following example shows how to add `developerPortal` to the list of developer tools that are allowed to display app usage metrics.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_teamsappsettings_4"
+}
+-->
+```http
+PATCH https://graph.microsoft.com/beta/teamwork/teamsAppSettings
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.teamsAppSettings",
+  "customAppSettings": {
+    "developerToolsForShowingAppUsageMetrics": "developerPortal"
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+
 ## Related content
 
-- [Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+[Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

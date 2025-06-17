@@ -148,6 +148,7 @@
       ],
       "resources": [
         "backupRestoreRoot",
+        "emailNotificationsSetting",
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
@@ -219,6 +220,7 @@
       ],
       "complexTypes": [
         "artifactQuery",
+        "notificationRecipients",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
@@ -842,7 +844,8 @@
         "educationSubmissionResource",
         "readingAssignmentSubmission",
         "reflectCheckInResponse",
-        "relatedContact"
+        "relatedContact",
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
         "challengingWord",
@@ -3053,6 +3056,9 @@
             "teamsAppSettings",
             "teamsTab",
             "resourceSpecificPermissionGrant"
+          ],
+          "complexTypes": [
+            "customAppSettings"
           ]
         },
         {
