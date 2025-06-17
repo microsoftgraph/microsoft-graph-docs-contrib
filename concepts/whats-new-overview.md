@@ -27,6 +27,12 @@ Use the **videoOnDemandWebUrl** on [virtualEventSession](/graph/api/resources/vi
 
 Updated the throttling information for [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions). The limit per app per tenant changed from 200 requests per second to 30 requests per second. The limit per app across all tenants increased from 1,000 requests per second to 1,500 requests per second.
 
+## June 2025: New in preview only
+
+### Places
+
+[Create](../api-reference/beta/api/place-post-places.md), [get](../api-reference/beta/api/place-get.md), [update](../api-reference/beta/api/place-update.md), and [delete](../api-reference/beta/api/place-delete.md) [Places](../api-reference/beta/resources/place.md) objects. These APIs enable scalable onboarding and management of the Places directory.
+
 ## May 2025: New and generally available
 
 ### Backup storage
