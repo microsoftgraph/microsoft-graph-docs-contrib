@@ -1,6 +1,6 @@
 ---
 title: "reportsRoot resource type"
-description: "Represents a container for reading assignment submissions and reflection check-in responses."
+description: "A container for all endpoints related to education analytics reports."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for reading assignment submissions and reflection check-in responses.
+A container for all endpoints related to education analytics reports.
 
 ## Methods
 
@@ -28,8 +28,11 @@ None.
 
 |Relationship|Type|Description|
 |:-----------|:---|:----------|
-|readingAssignmentSubmission|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|The submission details of the reading assignment submitted by a student.|
-|reflectCheckInResponse|[reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection|The response to the Microsoft Reflect check-in.|
+|readingAssignmentSubmission|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|Details of submitted reading assignments.|
+|reflectCheckInResponse|[reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection|Details of check-in responses.|
+|speakerAssignmentSubmissions|[speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md) collection|Details of submitted speaker assignments.|
+
+## JSON representation
 
 The following JSON representation shows the resource type.
 
