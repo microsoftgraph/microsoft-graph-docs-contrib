@@ -38,6 +38,10 @@ Updated the throttling information for [getAllEnterpriseInteractions](/graph/api
 
 ## June 2025: New in preview only
 
+## Education
+
+[Get](/graph/api/reportsroot-list-speakerassignmentsubmissions?view=graph-rest-beta&preserve-view=true) a list of speaker assignments that were submitted by a student.
+
 ### Security | eDiscovery
 
 - Use the **description** property on [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta&preserve-view=true) to get or set the eDiscovery review set description.
