@@ -42,7 +42,7 @@ Updated the throttling information for [getAllEnterpriseInteractions](/graph/api
 
 [Create](/graph/api/place-post-places?view=graph-rest-beta&preserve-view=true), [get](/graph/api/place-get?view=graph-rest-beta&preserve-view=true), [update](/graph/api/place-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/place-delete?view=graph-rest-beta&preserve-view=true) [Places](/graph/api/resources/place) objects. These APIs enable scalable onboarding and management of the Places directory.
 
-## Education
+### Education
 
 [Get](/graph/api/reportsroot-list-speakerassignmentsubmissions?view=graph-rest-beta&preserve-view=true) a list of speaker assignments that were submitted by a student.
 
