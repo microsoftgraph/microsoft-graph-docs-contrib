@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents an individual message posted in a Viva Engage conversation, which can be a starter post, a reply, or a reply to a reply.  
 
-Base type of [engagementConversationDiscussionMessage](../resources/engagementconversationdiscussionmessage.md) and [engagementConversationQuestionMessage](../resources/engagementconversationquestionmessage.md).
+Base type of [engagementConversationDiscussionMessage](../resources/engagementconversationdiscussionmessage.md), [engagementConversationQuestionMessage](../resources/engagementconversationquestionmessage.md), and [engagementConversationSystemMessage](../resources/engagementconversationsystemmessage.md).
 
 Inherits from [entity](../resources/entity.md).
 
