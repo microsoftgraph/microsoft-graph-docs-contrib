@@ -233,6 +233,11 @@
         "exclude": [
           "**/*"
         ]
+      },
+      "filename-contains-gerund": {
+        "exclude": [
+          "**/*"
+        ]
       }
     },
     "overwrite": [],
