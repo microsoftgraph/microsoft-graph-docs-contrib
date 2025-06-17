@@ -68,7 +68,7 @@ Request to get the rights for a specific sensitivity label for the user `4e4234d
   "sampleKeys": ["4e4234dd-377b-42a3-935b-0e42f138fa23"]
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/4e4234dd-377b-42a3-935b-0e42f138fa23/rights?ownerEmail=bob@contoso.com
+GET https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/sensitivityLabels/4e4234dd-377b-42a3-935b-0e42f138fa23/rights?ownerEmail=bob@contoso.com
 Authorization: Bearer {token}
 Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
 ```
@@ -87,7 +87,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.usageRight)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.usageRight)",
   "id": "f306e677-4c14-4136-b2c3-d9c7dd448cc1",
   "ownerEmail": "bob@contoso.com",
   "value": "docEdit, edit, forward, print, reply, replyAll, view, extract, viewRightsData, objModel"

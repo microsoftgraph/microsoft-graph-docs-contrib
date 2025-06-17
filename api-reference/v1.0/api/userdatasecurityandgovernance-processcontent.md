@@ -82,7 +82,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processContent
+POST https://graph.microsoft.com/v1.0/me/dataSecurityAndGovernance/processContent
 Content-Type: application/json
 
 {
@@ -144,7 +144,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.processContentResponse",
   "protectionScopeState": "notModified",
   "policyActions": [],
   "processingErrors": []
@@ -162,7 +162,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processContent
+POST https://graph.microsoft.com/v1.0/me/dataSecurityAndGovernance/processContent
 Content-Type: application/json
 
 {
@@ -221,7 +221,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.processContentResponse",
   "protectionScopeState": "modified",
   "policyActions": [
     {
@@ -245,7 +245,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processContent
+POST https://graph.microsoft.com/v1.0/me/dataSecurityAndGovernance/processContent
 Content-Type: application/json
 
 {
@@ -302,7 +302,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.processContentResponse",
   "protectionScopeState": "modified",
   "policyActions": [
     {

@@ -67,7 +67,7 @@ The following example shows a request to compute the inherited label from input 
   "name": "compute_inheritance_from_labels"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance(labelIds=["4e4234dd-377b-42a3-935b-0e42f138fa23"],locale='en-US',contentFormats=["File"])
+GET https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance(labelIds=["4e4234dd-377b-42a3-935b-0e42f138fa23"],locale='en-US',contentFormats=["File"])
 Authorization: Bearer {token}
 Content-Type: application/json
 Client-Request-Id: c5e4d3b2-a1f0-e9d8-c7b6-a5e4d3b2a1f0
@@ -89,7 +89,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.security.sensitivityLabel",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.sensitivityLabel",
   "id": "a7a21bba-8197-491f-a5d6-0d0f955397cf",
   "name": "Confidential",
   "description": "Confidential data.",

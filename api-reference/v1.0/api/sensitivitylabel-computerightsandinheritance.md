@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
+POST https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
 Content-Type: application/json
 
 {

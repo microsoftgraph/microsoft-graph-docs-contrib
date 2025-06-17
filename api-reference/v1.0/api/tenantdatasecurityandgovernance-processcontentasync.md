@@ -55,7 +55,7 @@ In most cases, when successful, this method returns a 204, No Content. This meth
 The following example shows a batch request with two items.
 
 ```http
-POST https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/processContentAsync
+POST https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/processContentAsync
 Content-type: application/json
 
 {

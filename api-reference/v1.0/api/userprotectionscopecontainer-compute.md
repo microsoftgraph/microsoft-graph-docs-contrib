@@ -72,7 +72,7 @@ If successful, this action returns a `200 OK` response code and a collection of 
 The following example computes the protection scope for a user performing text uploads, interested in a specific domain, pivoting the results by activity.
 
 ```http
-POST https://graph.microsoft.com/beta/users/{7c1f8f10-cba8-4a8d-9449-db4b876d1ef70}/dataSecurityAndGovernance/protectionScopes/compute
+POST https://graph.microsoft.com/v1.0/users/{7c1f8f10-cba8-4a8d-9449-db4b876d1ef70}/dataSecurityAndGovernance/protectionScopes/compute
 Content-type: application/json
 
 {
@@ -97,7 +97,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.policyUserScope)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.policyUserScope)",
   "value": [
     {
       "activities": "uploadText,downloadText",

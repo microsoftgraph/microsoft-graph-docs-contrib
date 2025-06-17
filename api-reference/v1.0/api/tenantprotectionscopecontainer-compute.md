@@ -64,7 +64,7 @@ If successful, this action returns a `200 OK` response code and a collection of 
 The following example computes the tenant-wide protection scope for text uploads, interested in a specific domain, pivoting the results by location.
 
 ```http
-POST https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/protectionScopes/compute
+POST https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/protectionScopes/compute
 Content-type: application/json
 
 {
@@ -89,7 +89,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.policyTenantScope)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.policyTenantScope)",
     "value": [
         {
             "activities": "uploadText,downloadText",

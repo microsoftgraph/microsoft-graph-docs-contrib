@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/activities/contentActivities
+POST https://graph.microsoft.com/v1.0/me/dataSecurityAndGovernance/activities/contentActivities
 Content-Type: application/json
 
 {
@@ -115,7 +115,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('7c497f10-cba8-4a8d-9449-db4b76d1ef80')/dataSecurityAndGovernance/activities/contentActivities/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('7c497f10-cba8-4a8d-9449-db4b76d1ef80')/dataSecurityAndGovernance/activities/contentActivities/$entity",
   "id": "4c3d1219-b1af-442f-85b5-06b7ef1cf8c8",
   "userId": "7c497f10-cba8-4a8d-9449-db4b76d1ef80",
   "scopeIdentifier": null,
