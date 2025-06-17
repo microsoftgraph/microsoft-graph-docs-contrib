@@ -1,6 +1,6 @@
 ---
 title: "employeeExperience: getAllOnlineMeetingMessages"
-description: "Get all Teams question and answer (Q&A) conversation messages in a tenant."
+description: "Get all Teams Q&A conversation messages in a tenant"
 author: "PV-work-25"
 ms.date: 05/21/2025
 ms.localizationpriority: medium
@@ -8,22 +8,24 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# employeeExperience: getAllOnlineMeetingMessages
+# employeeExperience: Get all Q&A messages in an online meeting
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all Teams question and answer (Q&A) conversation messages in a tenant. This function returns a snapshot of all Q&A activity in JSON format.
+Export all Teams Q&A conversation messages in the tenant.
+
+It provides a snapshot of all Q&A activity in JSON format.
 
 The export includes:
-- The original question or discussion text
-- The user who posted the message
+- Original question/discussion text
+- User who posted
 - All replies and responders
 - Vote counts
-- Moderation status (pending or dismissed)
+- Moderation status (pending/dismissed)
 - Private replies
-- The meeting ID and organizer ID (for mapping to meeting metadata)
+- Meeting ID and organizer ID (for mapping to meeting metadata)
 
 ## Permissions
 
@@ -35,6 +37,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/employeeexperience-getallonlinemeetingmessages-permissions.md)]
+
+>[!NOTE]
+> Delegated permissions are not supported currently; only application permissions are available for this API.
 
 ## HTTP request
 
@@ -48,7 +53,8 @@ GET /employeeExperience/getAllOnlineMeetingMessages
 
 ## Optional query parameters
 
-This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
+This method does not support any [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 
@@ -62,7 +68,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a collection of [engagementConversationMessage](../resources/engagementconversationmessage.md) objects in the response body.
+If successful, this function returns a `200 OK` response code and a [engagementConversationMessage](../resources/engagementconversationmessage.md) collection in the response body. 
 
 ## Examples
 
@@ -77,6 +83,7 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/employeeExperience/getAllOnlineMeetingMessages?$expand=conversation
 ```
+
 
 ### Response
 
@@ -93,15 +100,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/getAllOnlineMeetingMessages",
-  "@odata.nextLink": "/employeeExperience/getAllOnlineMeetingMessages?$expand=conversation&skipToken=eyADASSDSA",
-  "value": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/getAllOnlineMeetingMessages",
+    "@odata.nextLink": "/employeeExperience/getAllOnlineMeetingMessages?$expand=conversation&skipToken=eyADASSDSA",
+    "value": [
     {
       "@odata.type": "#microsoft.graph.engagementConversationDiscussionMessage",
       "id": "eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0OTcwNzMxNTEyNjI3MiJ9",
       "createdDateTime": "2025-05-20T06:35:58.936313Z",
       "lastModifiedDateTime": "2025-05-20T06:35:58.936313Z",
-      "replyToId": "eyJjh1wwZSI6IlRocmVhZCIsImlkIjxyzqzM0OTcwNzMxNTEyNjI2q1fw",
+      "replyToId": eyJjh1wwZSI6IlRocmVhZCIsImlkIjxyzqzM0OTcwNzMxNTEyNjI2q1fw,
       "from": {
         "user": {
           "displayName": "John Doe",
@@ -132,3 +139,4 @@ Content-Type: application/json
   ]
 }
 ```
+

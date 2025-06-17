@@ -887,8 +887,7 @@
             "engagementConversationMessageReaction",
             "engagementRole",
             "engagementRoleMember",
-            "employeeExperienceUser",
-            "onlineMeetingEngagementConversation"
+            "employeeExperienceUser"
           ],
           "complexTypes": [
             "engagementConversationMessageAttachment",
@@ -3150,6 +3149,12 @@
                 "meetingNoteSubpoint",
                 "mentionEvent",
                 "identitySet"
+              ]
+            },
+            {
+              "name": "Online meeting Q&A",
+              "resources": [
+                "onlinemeetingengagementconversation"
               ]
             },
             {

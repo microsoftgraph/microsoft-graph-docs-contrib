@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents an individual message posted in a Viva Engage conversation, which can be a starter post, a reply, or a reply to a reply.  
 
-Base type of [engagementConversationArticleMessage](../resources/engagementconversationarticlemessage.md), [engagementConversationDiscussionMessage](../resources/engagementconversationdiscussionmessage.md), [engagementConversationMediaMessage](../resources/engagementconversationmediamessage.md), [engagementConversationPollMessage](../resources/engagementconversationpollmessage.md), [engagementConversationPraiseMessage](../resources/engagementconversationpraisemessage.md), [engagementConversationQuestionMessage](../resources/engagementconversationquestionmessage.md), [engagementConversationSystemMessage](../resources/engagementconversationsystemmessage.md).
+Base type of [engagementConversationDiscussionMessage](../resources/engagementconversationdiscussionmessage.md), [engagementConversationQuestionMessage](../resources/engagementconversationquestionmessage.md), [engagementConversationSystemMessage](../resources/engagementconversationsystemmessage.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -43,14 +43,12 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attachments|[engagementConversationMessageAttachment](../resources/engagementconversationmessageattachment.md) collection|A collection of attachments included in the message, such as files, web links, videos, or images. |
 |body|[itemBody](../resources/itembody.md)|The main content of the message.|
 |createdDateTime|DateTimeOffset|The date and time when the message was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |creationMode|[engagementCreationMode](../resources/engagementconversationmessage.md#engagementcreationmode-values)|Indicates how the message was created. The possible values are: `none`, `migration`, `unknownFutureValue`.|
 |from|[engagementIdentitySet](../resources/engagementidentityset.md)|Identity of the sender of the message.|
 |id|String|Unique ID of a Viva Engage conversation message. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when message was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|mentions|[engagementConversationMessageMention](../resources/engagementconversationmessagemention.md) collection|A collection of user identities mentioned in the message.|
 |replyToId|String|The ID of the parent message to which this message is a reply, if applicable.|
 
 ### engagementCreationMode values
@@ -82,14 +80,12 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.engagementConversationMessage",
-  "attachments": [{"@odata.type": "microsoft.graph.engagementConversationMessageAttachment"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "createdDateTime": "String (timestamp)",
   "creationMode": "String",
   "from": {"@odata.type": "microsoft.graph.engagementIdentitySet"},
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "mentions": [{"@odata.type": "microsoft.graph.engagementConversationMessageMention"}],
   "replyToId": "String"
 }
 ```

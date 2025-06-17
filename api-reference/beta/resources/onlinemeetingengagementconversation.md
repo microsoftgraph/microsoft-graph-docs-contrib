@@ -1,6 +1,6 @@
 ---
 title: "onlineMeetingEngagementConversation resource type"
-description: "Represents a structured question-and-answer (Q&A) thread in Viva Engage that is directly associated with an online meeting."
+description: "Represents a structured question-and-answer (Q&A) thread in Teams that is directly associated with an online meeting."
 author: "PV-work-25"
 ms.date: 05/21/2025
 ms.localizationpriority: medium

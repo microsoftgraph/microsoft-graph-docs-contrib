@@ -42,6 +42,8 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |id|String|The unique ID of a conversation in Viva Engage. Inherited from [entity](../resources/entity.md).|
 |starterId|String|The unique ID of the first message in a Viva Engage conversation|
+|creationMode|[engagementCreationMode](../resources/engagementconversationmessage.md#engagementcreationmode-values)|Do not use. This property is managed at [engagementConversationMessage](../resources/engagementconversationmessage.md) level.|
+|from|[engagementIdentitySet](../resources/engagementidentityset.md)|Identity of the sender of the message.|
 
 ## Relationships
 
