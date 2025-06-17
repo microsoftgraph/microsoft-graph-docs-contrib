@@ -22,6 +22,10 @@ Base type of [networkQuestionEngagementConversation](../resources/networkquestio
 
 Inherits from [entity](../resources/entity.md).
 
+## Methods
+
+None.
+
 ## Properties
 
 |Property|Type|Description|
