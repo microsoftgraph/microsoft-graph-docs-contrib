@@ -1,5 +1,5 @@
 ---
-title: "ProvisionMigrationContainers"
+title: "fileStorageContainer: provisionMigrationContainers"
 description: "Provision migrationContainerInfo"
 author: "wenzhou"
 ms.date: 06/04/2025
@@ -8,7 +8,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# ProvisionMigrationContainers
+# fileStorageContainer: provisionMigrationContainers
 
 Namespace: microsoft.graph
 
@@ -75,13 +75,15 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.migrationContainerInfo",
-  "dataContainerUri": "https://spoxxx.blob.core.windows.net/data?sp=rw&sig=",
-  "metadataContainerUri": "https://spoxxx.blob.core.windows.net/metadata?sp=rw&sig=",
-  "encryptionKey": "base64 encoded key for AES-256-CBC encryption"
+  "value": {
+    "@odata.type": "#microsoft.graph.migrationContainerInfo",
+    "dataContainerUri": "https://spoxxx.blob.core.windows.net/data?sp=rw&sig=",
+    "metadataContainerUri": "https://spoxxx.blob.core.windows.net/metadata?sp=rw&sig=",
+    "encryptionKey": "base64 encoded key for AES-256-CBC encryption"
+  }
 }
 ```

@@ -4311,6 +4311,14 @@
           "Target": "fileStorageContainer"
         },
         {
+          "Id": "ca359abf-2568-4dda-b9bd-fecc6445dd03",
+          "ApiChange": "Method",
+          "ChangedApiName": "provisionMigrationContainers",
+          "ChangeType": "Addition",
+          "Description": "Added the [provisionMigrationContainers](https://learn.microsoft.com/en-us/graph/api/fileStorageContainer-provisionMigrationContainers?view=graph-rest-beta) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
           "Id": "0c93aa80-2e5c-4eb5-b792-151991a6a2f2",
           "ApiChange": "Enumeration",
           "ChangedApiName": "migrationJobErrorLevel",
