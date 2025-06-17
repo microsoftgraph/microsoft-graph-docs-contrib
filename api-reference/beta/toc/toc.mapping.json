@@ -885,9 +885,6 @@
           "resources": [
             "community",
             "engagementAsyncOperation",
-            "engagementConversation",
-            "engagementConversationMessage",
-            "engagementConversationMessageReaction",
             "engagementRole",
             "engagementRoleMember",
             "employeeExperienceUser",
