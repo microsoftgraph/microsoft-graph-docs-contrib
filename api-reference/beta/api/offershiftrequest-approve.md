@@ -23,8 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "offershiftrequest_approve" } -->
 [!INCLUDE [permissions-table](../includes/permissions/offershiftrequest-approve-permissions.md)]
 
-> [!IMPORTANT]
-> Starting January 1, 2026, this API will no longer support application permissions. To approve a request with application permissions, use [/approveForUser](https://learn.microsoft.com/graph/api/schedulechangerequest-approveforuser) instead.
+[!INCLUDE [approveforuser-application-permission](../includes/approveforuser-application-permission.md)]
 
 ## HTTP request
 
