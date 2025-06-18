@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "edddaf0d-8c8b-491c-92ba-cec7db9d898d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appDevelopmentPlatforms",
+          "ChangeType": "Addition",
+          "Description": "Added the **appDevelopmentPlatforms** enumeration type.",
+          "Target": "appDevelopmentPlatforms"
+        },
+        {
+          "Id": "edddaf0d-8c8b-491c-92ba-cec7db9d898d",
+          "ApiChange": "Property",
+          "ChangedApiName": "customAppSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **customAppSettings** property to the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-beta) resource.",
+          "Target": "teamsAppSettings"
+        },
+        {
+          "Id": "edddaf0d-8c8b-491c-92ba-cec7db9d898d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAppSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/customAppSettings?view=graph-rest-beta) resource.",
+          "Target": "customAppSettings"
+        }
+      ],
+      "Id": "edddaf0d-8c8b-491c-92ba-cec7db9d898d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-13T16:45:47.7228313Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Apps"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "14ec2f31-54af-4ef3-9b8d-d1bc2aac0dce",
           "ApiChange": "Method",
           "ChangedApiName": "remove",
