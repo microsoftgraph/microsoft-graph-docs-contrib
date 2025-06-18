@@ -28,7 +28,6 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |additionalEvents|notificationEventsType|Indicates whether to opt in to additional policy and restore updates. Possible values: `none`, `restoreAndPolicyUpdates`, `unknownFutureValue`.|
-|id|String|Unique identifier for the **emailNotificationsSetting**.|
 |isEnabled|Boolean|Indicates whether notifications are enabled.|
 |recipients|[notificationRecipients](../resources/notificationrecipients.md)|A list of recipients who receive the notifications.|
 
@@ -49,7 +48,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.emailNotificationsSetting",
   "additionalEvents": "String",
-  "id": "String (identifier)",
   "isEnabled": "Boolean",
   "recipients": {"@odata.type": "microsoft.graph.notificationRecipients"}
 }
