@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [signIn](../re
 
 ### Request
 
-The following example shows a request. **id** is synonomous with the **RequestID** property in the sign-in logs window of the Microsoft Entra admin center. 
+The following example shows a request. **id** is synonymous with the **RequestID** property in the sign-in logs window of the Microsoft Entra admin center. 
 
 # [HTTP](#tab/http)
 <!-- {
