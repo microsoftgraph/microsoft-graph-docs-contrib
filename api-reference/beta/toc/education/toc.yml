@@ -331,7 +331,7 @@ items:
   - name: Reflect check-in response
     href: ../../resources/reflectcheckinresponse.md
   - name: Get
-    href: ../../api/reprotsroot-list-reflectcheckinresponses.md
+    href: ../../api/reportsroot-list-reflectcheckinresponses.md
 - name: Related contact
   items:
   - name: Related contact
