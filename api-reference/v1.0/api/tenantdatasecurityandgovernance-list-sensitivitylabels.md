@@ -62,14 +62,14 @@ Get tenant labels filtered by content format and ID with an application permissi
 
 #### Request
 
-The following example shows a request to get labels for the tenant, filtered for the `File` content format and specific IDs.
+The following example shows a request to get labels for the tenant, filtered for the `file` content format and specific IDs.
 
 <!-- {
   "blockType": "request",
   "name": "get_sensitivitylabels_tenant_filtered_app"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/sensitivityLabels?$filter=applicableTo eq 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')
+GET https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/sensitivityLabels?$filter=applicableTo eq 'file' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')
 Authorization: Bearer {token}
 Client-Request-Id: a0b9c8d7-e6f5-a4b3-c2d1-e0f9a8b7c6d5
 ```

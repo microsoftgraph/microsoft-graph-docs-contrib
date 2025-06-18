@@ -26,7 +26,7 @@ Represents metadata for a content entry that is part of a conversation, for exam
 |isTruncated|Boolean|Required. Indicates if the provided `content` has been truncated from its original form (for example, due to size limits).|
 |length|Int64|The length of the original content in bytes.|
 |modifiedDateTime|DateTimeOffset|Required. Timestamp indicating when the original content was last modified. For ephemeral content like messages, this might be the same as `createdDateTime`.|
-|name|String|Required. A descriptive name for the content (for example, file name, web page title, "Chat Message").|
+|name|String|Required. A descriptive name for the content (for example, file name, web page title, `Chat Message`).|
 |parentMessageId|String|Identifier of the parent message in a threaded conversation, if applicable.|
 |plugins|[aiInteractionPlugin](../resources/aiinteractionplugin.md) collection|List of plugins used during the generation of this message (relevant for AI/bot interactions).|
 |sequenceNumber|Int64|A sequence number indicating the order in which content was generated or should be processed, required when `correlationId` is used.|

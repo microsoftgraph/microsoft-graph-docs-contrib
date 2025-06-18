@@ -47,7 +47,7 @@ GET /users/{usersId}/dataSecurityAndGovernance/sensitivityLabels
 | :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | isScopedToUser | Boolean          | Optional. Used only with application permissions (`/security/...` path). If value set to 'true' to scope labels to the current user. If omitted with application permissions, returns all tenant labels. |
 | locale         | String           | Optional. Specifies the locale for localizable fields.                                                                                                                                        |
-| applicableTo   | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. Possible values are `email`,`file`,`schematizedData`,`site`,`teamwork`,`unifiedGroup`. |
+| applicableTo   | String           | Optional. A comma-separated string of content formats (for example, `file, email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. Possible values are `email`,`file`,`schematizedData`,`site`,`teamwork`,`unifiedGroup`. |
 | id             | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
 
 ## Request body
@@ -71,7 +71,7 @@ The following example shows a request to get labels for the tenant, filtered for
   "name": "get_sensitivitylabels_user_filtered_app"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/sensitivityLabels?$filter=applicableTo eq 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')
+GET https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/sensitivityLabels?$filter=applicableTo eq 'file' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')
 Authorization: Bearer {token}
 Client-Request-Id: a0b9c8d7-e6f5-a4b3-c2d1-e0f9a8b7c6d5
 ```
