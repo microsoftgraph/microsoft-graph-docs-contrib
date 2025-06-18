@@ -115,7 +115,7 @@ HTTP/1.1 200 OK
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "protectionunitbase_offboard"
+  "name": "protectionunitbase_canceloffboard"
 }
 -->
 ``` http
