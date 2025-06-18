@@ -85,18 +85,50 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/threatIntelligencePolicies('a8352c78-90c6-4edd-aaca-9dc4292e7750')/policyRules/$entity",
   "value": {
     "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",
-    "id": "45e8cf05-fb70-b38a-7288-0b47feb253b0",
-    "name": "String",
-    "description": "String",
-    "action": "String",
-    "priority": "Integer",
+    "id": "eee10b7a-437b-4212-b8c1-38a016ace6da",
+    "name": "Rule 1",
+    "priority": 100,
+    "description": "Rule 1",
+    "action": "allow",
     "settings": {
-      "@odata.type": "microsoft.graph.networkaccess.threatIntelligenceRuleSettings"
+      "status": "enabled"
     },
     "matchingConditions": {
-      "@odata.type": "microsoft.graph.networkaccess.threatIntelligenceMatchingConditions"
+      "severity": "high",
+      "destinations": [
+        {
+          "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
+          "values": [
+            "bing.com",
+            "*.bing.com"
+          ]
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",
+      "id": "e2854585-68ba-4889-868d-45668ff7a295",
+      "name": "Default threat intel rule",
+      "priority": 65000,
+      "description": "Auto-created rule blocking access to sites with high severity threat detected",
+      "action": "block",
+      "settings": {
+        "status": "enabled"
+      },
+      "matchingConditions": {
+        "severity": "high",
+        "destinations": [
+          {
+            "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      }
     }
   }
 }

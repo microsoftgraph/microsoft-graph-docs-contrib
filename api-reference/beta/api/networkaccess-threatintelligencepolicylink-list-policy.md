@@ -87,12 +87,15 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.networkaccess.policy",
-      "id": "283f06b1-1d6a-c2f9-b285-4974e1c7c7b1",
-      "name": "String",
-      "description": "String",
-      "version": "String",
-      "kind": "String"
+      "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
+      "id": "a8352c78-90c6-4edd-aaca-9dc4292e7750",
+      "name": "Threat Intel Policy",
+      "description": "",
+      "version": "1.0.0",
+      "lastModifiedDateTime": "2025-06-18T17:34:25.8207682Z",
+      "settings": {
+        "defaultAction": "allow"
+      }
     }
   ]
 }

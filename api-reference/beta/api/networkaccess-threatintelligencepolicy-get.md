@@ -88,13 +88,12 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
     "id": "b8521f33-fa6d-a78b-308c-b6dfdf1c1798",
-    "name": "String",
-    "description": "String",
-    "version": "String",
-    "kind": "String",
-    "lastModifiedDateTime": "String (timestamp)",
+    "name": "Threat Intelligence Policy ",
+    "description": "Policy to protect against known high severity threats",
+    "version": "1.0.0",
+    "lastModifiedDateTime": "2025-06-15T13:24:38Z",
     "settings": {
-      "@odata.type": "microsoft.graph.networkaccess.threatIntelligencePolicySettings"
+      "defaultAction": "allow"
     }
   }
 }

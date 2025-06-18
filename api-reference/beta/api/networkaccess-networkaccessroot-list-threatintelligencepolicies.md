@@ -88,16 +88,28 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
-      "id": "b8521f33-fa6d-a78b-308c-b6dfdf1c1798",
-      "name": "String",
-      "description": "String",
-      "version": "String",
-      "kind": "String",
-      "lastModifiedDateTime": "String (timestamp)",
+      "id": "a8352c78-90c6-4edd-aaca-9dc4292e7750",
+      "name": "Threat Intel Policy",
+      "description": "",
+      "version": "1.0.0",
+      "lastModifiedDateTime": "2025-06-18T17:34:25.8207682Z",
       "settings": {
-        "@odata.type": "microsoft.graph.networkaccess.threatIntelligencePolicySettings"
+        "defaultAction": "allow"
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
+      "id": "b9463d89-a1d7-5fee-badb-8ed5803e8861",
+      "name": "Threat Intel Policy 2",
+      "description": "",
+      "version": "1.0.0",
+      "lastModifiedDateTime": "2025-06-17T14:22:31.5643891Z",
+      "settings": {
+        "defaultAction": "allow"
       }
     }
+  ]
+}
   ]
 }
 ```

@@ -85,11 +85,53 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/threatIntelligencePolicies('a8352c78-90c6-4edd-aaca-9dc4292e7750')/policyRules",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET networkAccess/threatIntelligencePolicies('<guid>')/policyRules?$select=name",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.networkaccess.policyRule",
-      "id": "92bc5f58-a28b-94ee-0caa-92c81e446163",
-      "name": "String"
+      "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",
+      "id": "eee10b7a-437b-4212-b8c1-38a016ace6da",
+      "name": "Rule 1",
+      "priority": 100,
+      "description": "Rule 1",
+      "action": "allow",
+      "settings": {
+        "status": "enabled"
+      },
+      "matchingConditions": {
+        "severity": "high",
+        "destinations": [
+          {
+            "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
+            "values": [
+              "babsite.com",
+              "*.verybabwebsite.com"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",
+      "id": "e2854585-68ba-4889-868d-45668ff7a295",
+      "name": "Default threat intel rule",
+      "priority": 65000,
+      "description": "Auto-created rule blocking access to sites with high severity threat detected",
+      "action": "block",
+      "settings": {
+        "status": "enabled"
+      },
+      "matchingConditions": {
+        "severity": "high",
+        "destinations": [
+          {
+            "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      }
     }
   ]
 }

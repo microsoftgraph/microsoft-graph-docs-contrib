@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policy/$ref
+POST /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policy
 ```
 
 ## Request headers
@@ -74,15 +74,17 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policy/$ref
+POST https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policy
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.networkaccess.policy",
-  "name": "String",
-  "description": "String",
-  "version": "String",
-  "kind": "String"
+  "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
+  "name": "Threat Intel Policy",
+  "description": "",
+  "version": "1.0.0",
+  "settings": {
+    "defaultAction": "allow"
+  }
 }
 ```
 
@@ -90,7 +92,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,12 +103,15 @@ HTTP/1.1 204 No Content
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.networkaccess.policy",
-  "id": "283f06b1-1d6a-c2f9-b285-4974e1c7c7b1",
-  "name": "String",
-  "description": "String",
-  "version": "String",
-  "kind": "String"
+  "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
+  "id": "a8352c78-90c6-4edd-aaca-9dc4292e7750",
+  "name": "Threat Intel Policy",
+  "description": "",
+  "version": "1.0.0",
+  "lastModifiedDateTime": "2025-06-18T17:34:25.8207682Z",
+  "settings": {
+    "defaultAction": "allow"
+  }
 }
 ```
 

@@ -80,12 +80,13 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
-  "name": "String",
-  "description": "String",
-  "version": "String",
-  "kind": "String",
+  "id": "a8352c78-90c6-4edd-aaca-9dc4292e7750",
+  "name": "Threat Intel Policy",
+  "description": "",
+  "version": "1.0.0",
+  "lastModifiedDateTime": "2025-06-18T17:34:25.8207682Z",
   "settings": {
-    "@odata.type": "microsoft.graph.networkaccess.threatIntelligencePolicySettings"
+    "defaultAction": "allow"
   }
 }
 ```
@@ -94,7 +95,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -80,15 +80,46 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",
-  "name": "String",
-  "description": "String",
-  "action": "String",
-  "priority": "Integer",
+  "name": "Exclusion List Rule 1",
+  "priority": 100,
+  "description": "Rule 1",
+  "action": "allow",
   "settings": {
-    "@odata.type": "microsoft.graph.networkaccess.threatIntelligenceRuleSettings"
+    "status": "reportOnly"
   },
   "matchingConditions": {
-    "@odata.type": "microsoft.graph.networkaccess.threatIntelligenceMatchingConditions"
+    "severity": "high",
+    "destinations": [
+      {
+        "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
+        "values": [
+          "babsite.com",
+          "*.bing.com"
+        ]
+      }
+    ]
+  },
+  {
+    "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",
+    "id": "dbb15dcf-52bf-463a-af93-e6e8c0adf7ad",
+    "name": "Default threat intel rule",
+    "priority": 65000,
+    "description": "Auto-created rule blocking access to sites with high severity threat detected",
+    "action": "block",
+    "settings": {
+        "status": "enabled"
+    },
+    "matchingConditions": {
+        "severity": "high",
+        "destinations": [
+            {
+                "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
+                "values": [
+                    "*"
+                ]
+            }
+        ]
+    }
   }
 }
 ```
@@ -97,7 +128,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
