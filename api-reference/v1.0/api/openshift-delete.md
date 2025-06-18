@@ -1,5 +1,5 @@
-  ---
-title: "Delete openShift"  
+---
+title: "Delete openShift"
 description: "Delete an openShift object."
 ms.localizationpriority: medium
 author: "akumar39"
