@@ -1,7 +1,7 @@
 ---
 title: "reportsRoot resource type"
 description: "Represents a container for reading assignment submissions and reflection check-in responses."
-author: "v-rmanda"
+author: "pateljay-37"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType

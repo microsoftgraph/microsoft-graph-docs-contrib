@@ -1,18 +1,16 @@
 ---
 title: "educationRoot resource type"
 description: "The `/education` namespace exposes functionality that is specific to the education sector. "
-author: "mmast-msft"
+author: "pateljay-37"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
-ms.date: 07/29/2024
+ms.date: 06/18/2025
 ---
 
 # educationRoot resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The `/education` namespace exposes functionality that is specific to the education sector.
 Some objects in the `/education` namespace can be found in other parts of Microsoft Graph (for example, [users](user.md)). The education namespace provides education-specific properties and features on these objects.
@@ -38,7 +36,7 @@ None.
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) collection| Classes taught at the school. Nullable.|
 |me|[educationUser](educationuser.md)| Represents a user in the system. Nullable.|
-|reports|[reportsRoot](../resources/reportsroot.md)|A container for all endpoints related to education analytics reports. Read-only. Nullable.|
+|reports|[reportsRoot](../resources/reportsroot.md)|A container for reading assignment submissions and reflection check-in responses. Read-only. Nullable. |
 |schools|[educationSchool](educationschool.md) collection| Schools to which the user belongs. Nullable.|
 |users|[educationUser](educationuser.md) collection| Users in the school. Nullable.|
 

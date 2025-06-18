@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 07/29/2024
 ---
 
-# Get readingAssignmentSubmissions
+# List readingAssignmentSubmissions
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "readingassignmentsubmission-get-permissions"
+  "name": "reportsroot-list-readingassignmentsubmissions-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/reportsroot-list-readingassignmentsubmissions-permissions.md)]
@@ -130,7 +130,7 @@ Content-Type: application/json
 
 ### Example 2: Get the reading assignment submissions for a specific date using $filter
 
-The following example shows how to get the reading assignment submissions for a specific date using the `$filter` query parameter. Please note that the requested time range must be 24 hours or shorter.
+The following example shows how to get the reading assignment submissions for a specific date using the `$filter` query parameter. The requested time range must be 24 hours or shorter.
 
 #### Request
 

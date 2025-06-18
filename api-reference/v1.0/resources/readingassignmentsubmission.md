@@ -1,7 +1,7 @@
 ---
 title: "readingAssignmentSubmission resource type"
 description: "Represents a reading assignment that was submitted by a student."
-author: "v-rmanda"
+author: "pateljay-37"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
@@ -18,7 +18,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/readingassignmentsubmission-get.md)|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|Read the properties and relationships of a collection of [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) objects.|
+|[List](../api/reportsroot-list-readingassignmentsubmissions.md)|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|Get a list of [reading assignments](../resources/readingassignmentsubmission.md) that were submitted by a student.|
 
 ## Properties
 |Property|Type|Description|

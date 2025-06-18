@@ -1,7 +1,7 @@
 ---
 title: "reflectCheckInResponse resource type"
 description: "Represents a response to Microsoft Reflect check-in."
-author: "v-rmanda"
+author: "pateljay-37"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
@@ -19,7 +19,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/reflectcheckinresponse-get.md)|[reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection|Read the properties and relationships of a collection of [reflectCheckInResponse](../resources/reflectcheckinresponse.md) objects.|
+|[List](../api/reportsroot-list-reflectcheckinresponses.md)|[reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection|Get a list of [reflect check-ins](../resources/reflectcheckinresponse.md) that were submitted by a student.|
 
 ## Properties
 |Property|Type|Description|

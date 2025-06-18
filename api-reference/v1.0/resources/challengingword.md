@@ -1,7 +1,7 @@
 ---
 title: "challengingWord resource type"
 description: "Represents a word a student found challenging in a reading assignment submission."
-author: "v-rmanda"
+author: "pateljay-37"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType

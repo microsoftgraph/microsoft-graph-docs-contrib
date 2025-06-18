@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/reportsroot-list-readingassignmentsubmissions.md)|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|Read the properties and relationships of a collection of [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) objects.|
+|[List](../api/reportsroot-list-readingassignmentsubmissions.md)|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|Get a list of [reading assignments](../resources/readingassignmentsubmission.md) that were submitted by a student.|
 
 ## Properties
 |Property|Type|Description|
