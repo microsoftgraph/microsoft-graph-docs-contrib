@@ -120,7 +120,7 @@ The following example shows a request to offboard a protection unit which is att
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "protectionunitbase_offboard"
+  "name": "protectionunitbase_offboard2"
 }
 -->
 ``` http
