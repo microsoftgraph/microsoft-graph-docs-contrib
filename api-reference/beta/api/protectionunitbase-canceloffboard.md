@@ -1,6 +1,6 @@
 ---
 title: "protectionUnitBase: cancelOffboard"
-description: "Cancel Offboarding for a protection unit"
+description: "Cancel offboarding for a protection unit"
 author: "haputta"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -23,6 +23,7 @@ Cancel offboard for a [protectionUnitBase](../resources/protectionunitbase.md).
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "protectionunitbase_get" } -->
+
 [!INCLUDE [permissions-table](../includes/permissions/protectionunitbase-canceloffboard-permissions.md)]
 
 ## HTTP request
@@ -53,14 +54,16 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
-### Example 1: Cancel offboard for a protection unit in BillingStopped flow
+### Example 1: Cancel offboard for a protection unit in the billingStopped flow
 
 #### Request
+
 <!-- {
   "blockType": "request",
   "name": "protectionunitbase_cancelOffboard1"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/cancelOffboard
 ```
@@ -68,12 +71,14 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89
 #### Response
 
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.protectionUnitBase"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 
@@ -110,9 +115,10 @@ HTTP/1.1 200 OK
   "offboardRequestedDateTime": "2015-07-19T12:01:03.45Z"
 }
 ```
-### Example 2: Cancel Offboard for a protection unit which is not in offboarding flow
+### Example 2: Cancel offboarding for a protection unit that is not in the offboarding flow
 
 #### Request
+
 <!-- {
   "blockType": "request",
   "name": "protectionunitbase_canceloffboard"
