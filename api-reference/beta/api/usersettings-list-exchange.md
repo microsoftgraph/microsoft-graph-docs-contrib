@@ -127,3 +127,16 @@ Content-length: 232
       "primaryMailboxId": "MBX:e0643f21@a7809c93"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List exchangesettings",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  "Error: list_exchangesettings:
+    Failed to locate collection property 'value' in response."
+]
+}-->
+
