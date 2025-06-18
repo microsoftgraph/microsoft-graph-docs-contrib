@@ -148,6 +148,7 @@
       ],
       "resources": [
         "backupRestoreRoot",
+        "emailNotificationsSetting",
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
@@ -219,6 +220,7 @@
       ],
       "complexTypes": [
         "artifactQuery",
+        "notificationRecipients",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
