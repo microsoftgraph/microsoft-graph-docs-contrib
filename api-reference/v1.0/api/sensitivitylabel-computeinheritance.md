@@ -34,7 +34,7 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
 
 | Parameter      | Type                  | Description                                                                                                                                                                                                                                                                                           |
 | :------------- | :-------------------  | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| applicableTo   | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. Possible values are `email`,`file`,`schematizedData`,`site`,`teamwork`,`unifiedGroup`. |
+| applicableTo   | String           | Optional. A comma-separated string of content formats (for example, `file, email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. Possible values are `email`, `file`, `schematizedData`, `site`, `teamwork`, `unifiedGroup`. |
 | locale         | String                | Optional. Specifies the locale for localizable fields. |
 | labelIds       | Collection of Strings | Optional. A collection of comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
 

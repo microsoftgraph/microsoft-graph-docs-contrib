@@ -64,7 +64,7 @@ Get tenant labels filtered by content format and ID with an application permissi
 
 #### Request
 
-The following example shows a request to get labels for the tenant, filtered for the `File` content format and specific IDs.
+The following example shows a request to get labels for the tenant, filtered for the `file` content format and specific IDs.
 
 <!-- {
   "blockType": "request",

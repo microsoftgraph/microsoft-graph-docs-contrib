@@ -18,7 +18,7 @@ Abstract base type for actions associated with a sensitivity label, like applyin
 
 | Property  | Type    | Description                                                                    |
 | :-------- | :------ | :----------------------------------------------------------------------------- |
-| name      | String  | The name of the action (for example, "Encrypt", "AddHeader").                         |
+| name      | String  | The name of the action (for example, `encrypt`, `addHeader"`).                         |
 
 ## Relationships
 
