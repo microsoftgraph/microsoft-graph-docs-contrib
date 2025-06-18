@@ -1,10 +1,10 @@
 ---
 title: "restrictAccessAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
-ms.date: 06/10/2025
+description: "Represents a DLP action that explicitly restricts access to the content that triggered the rule match."
+author: "kylemar"
+ms.date: 06/17/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -12,24 +12,23 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
-
+Represents a DLP action that explicitly restricts access to the content that triggered the rule match.
 
 Inherits from [restrictAccessActionBase](../resources/restrictaccessactionbase.md).
 
-
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|action|dlpAction|**TODO: Add Description** Inherited from [dlpActionInfo](../resources/dlpactioninfo.md).The possible values are: `notifyUser`, `blockAccess`, `deviceRestriction`, `browserRestriction`, `unknownFutureValue`, `restrictAccess`, `generateAlert`, `generateIncidentReportAction`, `sPBlockAnonymousAccess`, `sPRuntimeAccessControl`, `sPSharingNotifyUser`, `sPSharingGenerateIncidentReport`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `restrictAccess` , `generateAlert` , `generateIncidentReportAction` , `sPBlockAnonymousAccess` , `sPRuntimeAccessControl` , `sPSharingNotifyUser` , `sPSharingGenerateIncidentReport`.|
-|restrictionAction|restrictionAction|**TODO: Add Description** Inherited from [restrictAccessActionBase](../resources/restrictaccessactionbase.md).The possible values are: `warn`, `audit`, `block`.|
+|action|dlpAction|The type of DLP action.  Inherited from [dlpActionInfo](../resources/dlpactioninfo.md).The possible values are: `notifyUser`, `blockAccess`, `deviceRestriction`, `browserRestriction`, `unknownFutureValue`, `restrictAccess`, `generateAlert`, `generateIncidentReportAction`, `sPBlockAnonymousAccess`, `sPRuntimeAccessControl`, `sPSharingNotifyUser`, `sPSharingGenerateIncidentReport`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `restrictAccess` , `generateAlert` , `generateIncidentReportAction` , `sPBlockAnonymousAccess` , `sPRuntimeAccessControl` , `sPSharingNotifyUser` , `sPSharingGenerateIncidentReport`.|
+|restrictionAction|restrictionAction|Action for the app to take. Inherited from [restrictAccessActionBase](../resources/restrictaccessactionbase.md).The possible values are: `warn`, `audit`, `block`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -43,4 +42,3 @@ The following JSON representation shows the resource type.
   "restrictionAction": "String"
 }
 ```
-

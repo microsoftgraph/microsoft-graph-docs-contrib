@@ -2644,6 +2644,7 @@
               "protectedApplicationMetadata",
               "protectedContent",
               "restrictAccessAction",
+              "restrictAccessActionBase",
               "scopeBase",
               "tenantScope",
               "textContent",
