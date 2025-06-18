@@ -58,7 +58,7 @@ For a list of possible error responses, see [Backup Storage API error responses]
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "protectionunitbase_cancelOffboard"
+  "name": "protectionunitbase_cancelOffboard1"
 }
 -->
 ``` http
