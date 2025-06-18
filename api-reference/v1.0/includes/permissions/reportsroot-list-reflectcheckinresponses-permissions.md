@@ -8,5 +8,4 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|Not supported.|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|EduRoster.Read.All|EduRoster.ReadWrite.All|
-
+|Application|EduReports-Reflect.ReadAnonymous.All|EduReports-Reflect.Read.All|

@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 06/09/2025
 ---
 
-# reportRoot resource type
+# reportsRoot resource type
 
 Namespace: microsoft.graph
 

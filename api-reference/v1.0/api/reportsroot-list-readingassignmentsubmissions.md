@@ -178,7 +178,6 @@ The following example shows how to get the reading assignment submissions for a 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_ReadingAssignmentSubmissions_2"

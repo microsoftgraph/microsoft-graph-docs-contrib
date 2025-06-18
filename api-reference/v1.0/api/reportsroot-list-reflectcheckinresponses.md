@@ -63,7 +63,6 @@ The following example shows how to get the Reflect check-in responses from the l
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_reflectCheckinResponses_1"
@@ -127,7 +126,6 @@ The following example shows how to get the Reflect check-in responses for a spec
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_reflectCheckinResponses_2"
