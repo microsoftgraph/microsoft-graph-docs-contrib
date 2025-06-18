@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/timecard-confirm-permissions.md)]
 
 > [!IMPORTANT]
-> Starting January 1, 2026, this API will no longer support application permissions. To decline a request with application permissions, use [timeCard: confirmForUser](../api/timecard-confirmforuser) instead.
+> Starting January 1, 2026, this API will no longer support application permissions. To decline a request with application permissions, use [timeCard: confirmForUser](/graph/api/timecard-confirmforuser?view=graph-rest-beta&preserve-view=true) instead.
 
 ## HTTP request
 
