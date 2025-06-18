@@ -23,8 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "offershiftrequest_decline" } -->
 [!INCLUDE [permissions-table](../includes/permissions/offershiftrequest-decline-permissions.md)]
 
-> [!IMPORTANT]
-> Starting January 1, 2026, this API will no longer support application permissions. To decline a request with application permissions, use [/declineForUser](https://learn.microsoft.com/graph/api/schedulechangerequest-declineforuser) instead.
+[!INCLUDE [declineforuser-application-permission](../includes/declineforuser-application-permission.md)]
 
 ## HTTP request
 
