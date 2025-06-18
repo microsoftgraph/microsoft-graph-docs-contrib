@@ -5,7 +5,7 @@ description: "Get a list of the user sign-ins in a Microsoft Entra tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
-ms.date: 05/16/2025
+ms.date: 06/18/2025
 ---
 
 # List signIns
@@ -45,15 +45,17 @@ This method supports the `$top`, `$skiptoken`, and `$filter` OData query paramet
 To avoid having the request time out, apply the `$filter` parameter with a time range for which to get all sign-ins, as shown in [Example 1](signin-list.md#example-1-list-all-sign-ins-during-a-specific-time-period).
 
 > [!NOTE]
-> Only interactive sign-ins are returned through GET signins API requests unless you set an explicit filter on SignInEventType. 
-
-## Example filters on SigninEventType
+> Only interactive sign-ins are returned through GET signins API requests unless you set an explicit filter on the **signInEventType** property as shown in the following examples:
 
 To request non-interactive sign-ins:
+```http
 GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=(createdDateTime ge 2024-01-13T14:13:32Z and createdDateTime le 2024-01-14T17:43:26Z) and signInEventTypes/any(t: t eq 'nonInteractiveUser')
+```
 
 To request service principal sign-ins:
+```http
 GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=(createdDateTime ge 2024-01-13T14:13:32Z and createdDateTime le 2024-01-14T17:43:26Z) and signInEventTypes/any(t: t eq 'servicePrincipal')
+```
 
 ## Request headers
 
