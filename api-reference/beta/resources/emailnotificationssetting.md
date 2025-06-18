@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 
 Represents the email settings for multi-admin notifications.
 
-Inherits from [entity](../resources/entity.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
