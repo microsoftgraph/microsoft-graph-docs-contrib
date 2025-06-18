@@ -45,15 +45,15 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 |inProgress|The restore artifact was picked for restoration.|
 |succeeded|The restore artifact was successfully restored.|
 |failed|The restoration of the artifact failed.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use.|
 
 ### destinationType values
 
 |Member | Description |
 |:------|:------------|
-|new|Restoration will occur at a new location. For SharePoint and OneDrive, a new site will be created and content will be restored in the new site. For Exchange, a restored folder is created and content will be restored there.|
-|inPlace|Restoration will occur in the same location. For SharePoint, it will be on the same site, for OneDrive, on the same drive, and for Exchange, the artifact will be restored in the same mailbox.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|new|Restoration occurs at a new location. For SharePoint and OneDrive, a new site is created, and content is restored in the new site. For Exchange, a restored folder is created, and the content is restored there.|
+|inPlace|Restoration occurs in the same location. For SharePoint, it's on the same site, for OneDrive, on the same drive, and for Exchange, the artifact is restored in the same mailbox.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 |Relationship|Type|Description|
