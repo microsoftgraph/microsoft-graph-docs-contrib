@@ -40,8 +40,8 @@ DELETE /users/{userId}/drive/items/{itemId}
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| if-match      | String. Optional. If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted. |
-| prefer        | String. Optional. A value of `BypassSharedLock` will bypass any shared locks on the driveItem (for example, from a co-authoring session). A value of `BypassCheckedOut` will bypass the checkout condition on the driveItem. Multiple comma-separated values are allowed. |
+| if-match      | String. Optional. If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item is not deleted. |
+| prefer        | String. Optional. A value of `BypassSharedLock` bypasses any shared locks on the driveItem (for example, from a co-authoring session). A value of `BypassCheckedOut` bypasses the checkout condition on the driveItem. Multiple comma-separated values are allowed. |
 
 ## Example
 
