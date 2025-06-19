@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Entity URI for microsoft.graph.networkaccess.threatIntelligencePolicyLink not found
+GET networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}
 ```
 
 ## Optional query parameters
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Entity URI for microsoft.graph.networkaccess.threatIntelligencePolicyLink not found
+GET https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}
 ```
 
 

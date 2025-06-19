@@ -26,6 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-threatintelligencepolicylink-delete-permissions.md)]
+
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 
 ## HTTP request
@@ -63,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta** Entity URI for microsoft.graph.networkaccess.threatIntelligencePolicyLink not found
+DELETE https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}
 ```
 
 

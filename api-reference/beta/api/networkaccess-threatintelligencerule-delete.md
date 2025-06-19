@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/networkaccess/threatIntelligencePolicies/ac253559-37a0-4f72-b666-103420b94e38/policyRules/0823cb1e-644b-4585-80db-1c1055894ec7
+DELETE https://graph.microsoft.com/beta/networkAccess/filteringProfiles/ab4f3459-c39d-4e99-b8d0-b1aee4726b84/policies/ac253559-37a0-4f72-b666-103420b94e38/policyRules/0823cb1e-644b-4585-80db-1c1055894ec7
 ```
 
 

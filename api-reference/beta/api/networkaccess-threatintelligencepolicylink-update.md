@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH ** Entity URI for microsoft.graph.networkaccess.threatIntelligencePolicyLink not found
+PATCH networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}
 ```
 
 ## Request headers
@@ -73,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta** Entity URI for microsoft.graph.networkaccess.threatIntelligencePolicyLink not found
+PATCH https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}
 Content-Type: application/json
 
 {
