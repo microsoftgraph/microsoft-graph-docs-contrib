@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.networkaccess.threatIntelligenceRule not found
+GET /networkaccess/threatIntelligencePolicies/{id}/policyRules
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.networkaccess.threatIntelligenceRule not found
+GET https://graph.microsoft.com/beta/networkaccess/threatIntelligencePolicies/ac253559-37a0-4f72-b666-103420b94e38/policyRules
 ```
 
 

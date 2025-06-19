@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /threatIntelligenceRule
+PATCH /networkaccess/threatIntelligencePolicies/{id}/policyRules/{id}
 ```
 
 ## Request headers
@@ -75,7 +75,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/threatIntelligenceRule
+PATCH https://graph.microsoft.com/beta/networkaccess/threatIntelligencePolicies/ac253559-37a0-4f72-b666-103420b94e38/policyRules/0823cb1e-644b-4585-80db-1c1055894ec7
 Content-Type: application/json
 
 {
