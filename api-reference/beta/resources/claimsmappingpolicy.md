@@ -25,9 +25,8 @@ The number of claims and transformations that can be added to a claims-mapping p
 Inherits from [stsPolicy](stsPolicy.md).
 
 For more scenarios and configuration details, see the following articles:
-- [Claims mapping policy type](/azure/active-directory/develop/reference-claims-mapping-policy-type)
-- [Reference: Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties)
-- [How to: Customize claims with the claims mapping policy in Microsoft Graph](/graph/how-to-claims-customization)
+- [Customize claims emitted in tokens for a specific app in a tenant through the Microsoft Entra admin center](/entra/identity-platform/saml-claims-customization).
+- [How to: Customize claims with the claims mapping policy in Microsoft Graph](/graph/how-to-claims-customization).
 - [Claims customization using a policy](/entra/identity-platform/reference-claims-customization) to learn the difference between this policy and the [custom claims policy](../resources/customclaimspolicy.md).
 
 ## Methods
