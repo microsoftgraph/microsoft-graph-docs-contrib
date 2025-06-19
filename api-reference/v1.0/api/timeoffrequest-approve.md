@@ -23,8 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
-> [!IMPORTANT]
-> The support for application permissions in this API ends on January 1, 2026. To approve a request with application permissions, use [/approveForUser](https://learn.microsoft.com/graph/api/schedulechangerequest-approveforuser) instead.
+[!INCLUDE [approveforuser-application-permission](../includes/approveforuser-application-permission.md)]
 
 ## HTTP request
 
@@ -40,7 +39,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve
 |:--------------|:--------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
-| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This API will no longer support application permissions starting January 1, 2026.|
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. Until January 1, 2026, this API supports application permissions only when used in combination with the deprecated `MS-APP-ACTS-AS` header.|
 
 ## Request body
 
