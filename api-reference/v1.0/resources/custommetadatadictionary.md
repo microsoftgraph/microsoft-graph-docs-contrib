@@ -36,8 +36,6 @@ The following JSON representation shows the resource type. Specific properties d
 }-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.customMetadataDictionary",
-  "ProjectCode": "Alpha",
-  "Department": "Finance"
+  "@odata.type": "#microsoft.graph.customMetadataDictionary"
 }
 ```
