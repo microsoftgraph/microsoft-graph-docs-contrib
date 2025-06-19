@@ -53,7 +53,7 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
-### Example 1: Offboard a removed protection unit
+### Example 1: offboard a removed protection unit
 
 The following example shows a request to offboard a protection unit removed from a policy.
 
@@ -113,14 +113,14 @@ HTTP/1.1 200 OK
   "offboardRequestedDateTime": "2015-07-19T12:01:03.45Z"
 }
 ```
-### Example 2: Offboard a protection unit attached to a policy
+### Example 2: offboard a protection unit attached to a policy
 
-The following example shows a request to offboard a protection unit which is attached to a policy.
+The following example shows a request to offboard a protection unit that is attached to a policy.
 
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "protectionunitbase_offboard"
+  "name": "protectionunitbase_offboard2"
 }
 -->
 ``` http
@@ -141,6 +141,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 403 Operation Not Allowed
+
 {
   "error": {
     "code": "OperationNotAllowed",

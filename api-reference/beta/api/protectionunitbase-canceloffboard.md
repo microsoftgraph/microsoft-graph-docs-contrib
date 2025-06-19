@@ -1,6 +1,6 @@
 ---
 title: "protectionUnitBase: cancelOffboard"
-description: "Cancel Offboarding for a protection unit"
+description: "Cancel offboarding for a protection unit"
 author: "haputta"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -53,12 +53,15 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
-### Example 1: Cancel offboard for a protection unit in BillingStopped flow
+### Example 1: Cancel offboard for a protection unit in the billingStopped flow
 
 #### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "protectionunitbase_cancelOffboard"
+  "name": "protectionunitbase_cancelOffboard1"
 }
 -->
 ``` http
@@ -74,6 +77,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionUnitBase"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 
@@ -110,12 +114,14 @@ HTTP/1.1 200 OK
   "offboardRequestedDateTime": "2015-07-19T12:01:03.45Z"
 }
 ```
-### Example 2: Cancel Offboard for a protection unit which is not in offboarding flow
+
+### Example 2: Cancel offboarding for a protection unit that is not in the offboarding flow
 
 #### Request
+
 <!-- {
   "blockType": "request",
-  "name": "protectionunitbase_offboard"
+  "name": "protectionunitbase_canceloffboard"
 }
 -->
 ``` http
@@ -132,9 +138,9 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.publicError"
 }
 -->
-
 ``` http
 HTTP/1.1 403 Operation Not Allowed
+
 {
   "error": {
     "code": "OperationNotAllowed",
