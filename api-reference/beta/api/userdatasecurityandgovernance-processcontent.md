@@ -1,7 +1,7 @@
 ---
 title: "userDataSecurityAndGovernance: processContent"
 toc.title: "userDataSecurityAndGovernance: processContent"
-description: "Process content against data protection policies in the context of the current user."
+description: "Process content against data protection policies in the context of the current, or specified, user."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Process content against data protection policies in the context of the current user. 
+Process [content](../resources/processcontentrequest.md) against data protection policies in the context of the current, or specified, user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -32,16 +32,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
+<!-- { "blockType": "ignored" } -->
+```http
 POST /me/dataSecurityAndGovernance/processContent
-POST /users/{usersId}/dataSecurityAndGovernance/processContent
 ```
 
-/me/dataSecurityAndGovernance/processContent supports delegated permissions only.
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{usersId}/dataSecurityAndGovernance/processContent
+```
 
 ## Request headers
 

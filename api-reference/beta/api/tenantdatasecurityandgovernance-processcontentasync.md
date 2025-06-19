@@ -1,7 +1,7 @@
 ---
 title: "tenantDataSecurityAndGovernance: processContentAsync"
 toc.title: "tenantDataSecurityAndGovernance: processContentAsync"
-description: "Process a batch of content entries asynchronously against data protection policies."
+description: "Process a batch of tenant-wide content entries asynchronously against data protection policies."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Process a batch of content entries asynchronously against data protection policies.
+Process a batch of tenant-wide content entries asynchronously against data protection policies.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -155,8 +155,6 @@ Content-type: application/json
 ### Response
 
 The following example shows the 204 No Content response.
-
-> **Note:** The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 204 No Content

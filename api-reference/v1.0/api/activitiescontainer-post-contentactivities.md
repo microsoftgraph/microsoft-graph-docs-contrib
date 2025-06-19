@@ -13,7 +13,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a content activity for the signed-in user.
+Create a [content activity](../resources/contentactivity.md) for the signed-in user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -36,6 +36,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/dataSecurityAndGovernance/activities/contentActivities
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/dataSecurityAndGovernance/activities/contentActivities
 ```
 
 ## Request headers

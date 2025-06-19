@@ -13,8 +13,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
->**Note:** At this time, returned results don't reflect filtering values provided in the request.
-
 Compute the tenant-wide data protection policies and actions, including user/group scoping.
 
 ## Permissions
@@ -50,7 +48,7 @@ In the request body, provide JSON object with the following parameters.
 | activities            | microsoft.graph.security.userActivityTypes                                                   | Optional. Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`. |
 | deviceMetadata        | [deviceMetadata](../resources/devicemetadata.md)                                    | Optional. Information about the device context (type, OS) used for contextual policy evaluation.                                                                   |
 | integratedAppMetadata | [integratedApplicationMetadata](../resources/integratedapplicationmetadata.md)      | Optional. Information about the calling application (name, version) integrating with Microsoft Purview.                                                                    |
-| locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations (domains or URLs) the application is interested in. If provided, results are trimmed to policies covering these locations.     |
+| locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations the application is interested in. If provided, results are trimmed to policies covering these locations. Use [policy location application](../resources/policylocationapplication.md) for application locations, [policy location domain](../resources/policylocationdomain.md) for domain locations, or [policy location URL](../resources/policylocationurl.md) for URL locations. You must specify the `@odata.type` property to declare the type of policyLocation. For example, `"@odata.type": "microsoft.graph.policyLocationApplication"`.|
 | pivotOn               | microsoft.graph.policyPivotProperty                          | Optional. Specifies how the results should be aggregated. If omitted or `none`, results might be less aggregated. Possible values are `activity`,`location`, `none`.|
 
 ## Response
