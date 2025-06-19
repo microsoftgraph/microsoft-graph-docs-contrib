@@ -19,8 +19,7 @@ This resource type is an abstract type.
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
