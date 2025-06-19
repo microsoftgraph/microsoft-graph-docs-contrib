@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a policy that defines how threat intelligence is evaluated and enforced in network access decisions. This policy type allows administrators to apply security controls based on known threats and malicious destinations.
+Represents a policy that defines how threat intelligence is evaluated and enforced in network access decisions through Global Secure Access. This policy type allows you to apply security controls based on known threats and malicious destinations.
 
 
 Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).
