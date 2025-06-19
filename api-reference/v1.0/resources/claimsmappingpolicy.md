@@ -25,7 +25,7 @@ Inherits from [stsPolicy](stsPolicy.md).
 For more scenarios and configuration details, see the following articles:
 - [Customize claims emitted in tokens for a specific app in a tenant through the Microsoft Entra admin center](/entra/identity-platform/saml-claims-customization).
 - [How to: Customize claims with the claims mapping policy in Microsoft Graph](/graph/how-to-claims-customization).
-- [Claims customization using a policy](/entra/identity-platform/reference-claims-customization) to learn the difference between this policy and the [custom claims policy](../resources/customclaimspolicy.md).
+- [Claims customization using a policy](/entra/identity-platform/reference-claims-customization) to learn the difference between this policy and the [custom claims policy (preview)](/graph/api/resources/customclaimspolicy).
 
 ## Methods
 
