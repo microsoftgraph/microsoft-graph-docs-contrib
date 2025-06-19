@@ -1,7 +1,7 @@
 ---
 author: spgraph-docs-team
 description: "Delete a DriveItem by using its ID or path."
-ms.date: 09/10/2017
+ms.date: 06/18/2025
 title: Delete a file or folder
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -37,11 +37,13 @@ DELETE /sites/{siteId}/drive/items/{itemId}
 DELETE /users/{userId}/drive/items/{itemId}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name          | Type   | Description                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item isn't deleted. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| if-match      | String. Optional. If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted. |
+| prefer        | String. Optional. A value of `BypassSharedLock` will bypass any shared locks on the driveItem (for example, from a co-authoring session). A value of `BypassCheckedOut` will bypass the checkout condition on the driveItem. Multiple comma-separated values are allowed. |
 
 ## Example
 
