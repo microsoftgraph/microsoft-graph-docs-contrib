@@ -53,12 +53,12 @@ PATCH /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLink
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The display name of the threat intelligence rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md). Required.|
-|description|String|A description of the threat intelligence rule. Optional.|
-|action|microsoft.graph.networkaccess.threatIntelligenceAction|The action to take when network traffic matches this rule's conditions. The possible values are: `allow`, `block`, `unknownFutureValue`. Required.|
-|priority|Int64|The priority of the rule which determines the order of rule evaluation. Lower values indicate higher priority. Required.|
-|settings|[microsoft.graph.networkaccess.threatIntelligenceRuleSettings](../resources/networkaccess-threatintelligencerulesettings.md)|Settings that define how the threat intelligence rule operates and is enforced. Required.|
-|matchingConditions|[microsoft.graph.networkaccess.threatIntelligenceMatchingConditions](../resources/networkaccess-threatintelligencematchingconditions.md)|Conditions that define what network traffic should be evaluated by this rule. Required.|
+|name|String|The display name of the threat intelligence rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
+|description|String|A description of the threat intelligence rule.|
+|action|microsoft.graph.networkaccess.threatIntelligenceAction|The action to take when network traffic matches this rule's conditions. The possible values are: `allow`, `block`, `unknownFutureValue`.|
+|priority|Int64|The priority of the rule which determines the order of rule evaluation. Lower values indicate higher priority. |
+|settings|[microsoft.graph.networkaccess.threatIntelligenceRuleSettings](../resources/networkaccess-threatintelligencerulesettings.md)|Settings that define how the threat intelligence rule operates and is enforced. |
+|matchingConditions|[microsoft.graph.networkaccess.threatIntelligenceMatchingConditions](../resources/networkaccess-threatintelligencematchingconditions.md)|Conditions that define what network traffic should be evaluated by this rule.|
 
 
 
