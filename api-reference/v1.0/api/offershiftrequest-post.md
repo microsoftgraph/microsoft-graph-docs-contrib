@@ -37,7 +37,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests
 |:----------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
-| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This API will no longer support application permissions starting January 1, 2026.|
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This header is deprecated and is no longer required for application token.|
 
 ## Request body
 Provide the new [offerShiftRequest](../resources/offershiftrequest.md) object in the request body for this method.

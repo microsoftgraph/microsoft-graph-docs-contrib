@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/timecard-confirm-permissions.md)]
 
 > [!IMPORTANT]
-> Starting January 1, 2026, this API will no longer support application permissions. To decline a request with application permissions, use [/confirmForUser](https://learn.microsoft.com/graph/api/timecard-confirmForUser) instead.
+> The support for application permissions in this API ends on January 1, 2026. To confirm a timeCard with application permissions, use [/confirmForUser](timecard-confirmForUser.md) instead.
 
 ## HTTP request
 
