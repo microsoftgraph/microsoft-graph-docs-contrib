@@ -1,0 +1,12 @@
+---
+author: "jarbashorst"
+ms.localizationpriority: high
+ms.subservice: "teams"
+ms.topic: include
+---
+
+<!-- markdownlint-disable MD041-->
+
+> [!CAUTION]
+> Starting January 1, 2026, this API will no longer support application permissions. To declide a request with application permissions, use [scheduleChangeRequest: declineForUser](/graph/api/schedulechangerequest-declineforuser?view=graph-rest-beta&preserve-view=true) instead.
+
