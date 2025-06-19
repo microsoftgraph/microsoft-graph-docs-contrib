@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.
+Remove a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) object.
 
 ## Permissions
 

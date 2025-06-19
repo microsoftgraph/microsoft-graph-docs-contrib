@@ -85,7 +85,7 @@ Content-Type: application/json
   "description": "Rule 1",
   "action": "allow",
   "settings": {
-    "status": "reportOnly"
+    "status": "enabled"
   },
   "matchingConditions": {
     "severity": "high",
@@ -98,28 +98,6 @@ Content-Type: application/json
         ]
       }
     ]
-  },
-  {
-    "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",
-    "id": "dbb15dcf-52bf-463a-af93-e6e8c0adf7ad",
-    "name": "Default threat intel rule",
-    "priority": 65000,
-    "description": "Auto-created rule blocking access to sites with high severity threat detected",
-    "action": "block",
-    "settings": {
-        "status": "enabled"
-    },
-    "matchingConditions": {
-        "severity": "high",
-        "destinations": [
-            {
-                "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
-                "values": [
-                    "*"
-                ]
-            }
-        ]
-    }
   }
 }
 ```

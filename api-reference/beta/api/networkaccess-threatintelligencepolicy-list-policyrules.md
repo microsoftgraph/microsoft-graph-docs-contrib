@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the rules associated with a threat intelligence policy. These rules define the specific conditions and actions for evaluating network traffic against known threat intelligence data.
+Get a list of the [threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md) objects associated with a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md). These rules define the specific conditions and actions for evaluating network traffic against known threat intelligence data.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policy/policyRules
+GET /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policyRules
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policy/policyRules
+GET https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policyRules
 ```
 
 

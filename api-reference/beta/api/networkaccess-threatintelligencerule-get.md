@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a threatIntelligenceRule object.
+Read the properties and relationships of a [threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md) object.
 
 ## Permissions
 
@@ -86,27 +86,29 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/threatIntelligencePolicies('a8352c78-90c6-4edd-aaca-9dc4292e7750')/policyRules/$entity",
-  "value": {
-    "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",
-    "id": "eee10b7a-437b-4212-b8c1-38a016ace6da",
-    "name": "Rule 1",
-    "priority": 100,
-    "description": "Rule 1",
-    "action": "allow",
-    "settings": {
-      "status": "enabled"
-    },
-    "matchingConditions": {
-      "severity": "high",
-      "destinations": [
-        {
-          "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
-          "values": [
-            "bing.com",
-            "*.bing.com"
-          ]
-        }
-      ]
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",
+      "id": "eee10b7a-437b-4212-b8c1-38a016ace6da",
+      "name": "Rule 1",
+      "priority": 100,
+      "description": "Rule 1",
+      "action": "allow",
+      "settings": {
+        "status": "enabled"
+      },
+      "matchingConditions": {
+        "severity": "high",
+        "destinations": [
+          {
+            "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
+            "values": [
+              "bing.com",
+              "*.bing.com"
+            ]
+          }
+        ]
+      }
     },
     {
       "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",
@@ -130,7 +132,7 @@ Content-Type: application/json
         ]
       }
     }
-  }
+  ]
 }
 ```
 

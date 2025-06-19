@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a threatIntelligencePolicy object.
+Delete a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) object.
 
 ## Permissions
 

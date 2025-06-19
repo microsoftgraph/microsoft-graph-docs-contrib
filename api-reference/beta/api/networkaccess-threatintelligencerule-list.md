@@ -85,8 +85,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/threatIntelligencePolicies('a8352c78-90c6-4edd-aaca-9dc4292e7750')/policyRules",
-  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET networkAccess/threatIntelligencePolicies('<guid>')/policyRules?$select=name",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/threatIntelligencePolicies('a8352c78-90c6-4edd-aaca-9dc4292e7750')/policyRules/$entity",
   "value": [
     {
       "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",
@@ -109,7 +108,7 @@ Content-Type: application/json
             ]
           }
         ]
-      }    
+      }
     },
     {
       "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",

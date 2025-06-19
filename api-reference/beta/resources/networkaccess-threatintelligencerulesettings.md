@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configurable settings that define how a threat intelligence rule operates. These settings control the operational status of the rule and how the rule is enforced.
+Configurable settings that define how a [threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md) operates. These settings control the operational status of the rule and how the rule is enforced.
 
 
 ## Properties

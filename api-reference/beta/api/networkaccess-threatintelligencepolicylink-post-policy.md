@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add policy by posting to the policy collection.
+Add a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) by posting to the policy collection.
 
 ## Permissions
 

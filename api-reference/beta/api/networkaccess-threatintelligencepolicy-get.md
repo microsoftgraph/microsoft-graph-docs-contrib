@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a threatIntelligencePolicy object.
+Read the properties and relationships of a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) object.
 
 ## Permissions
 
@@ -85,17 +85,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
-    "id": "b8521f33-fa6d-a78b-308c-b6dfdf1c1798",
-    "name": "Threat Intelligence Policy ",
-    "description": "Policy to protect against known high severity threats",
-    "version": "1.0.0",
-    "lastModifiedDateTime": "2025-06-15T13:24:38Z",
-    "settings": {
-      "defaultAction": "allow"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/threatIntelligencePolicies",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
+      "id": "b8521f33-fa6d-a78b-308c-b6dfdf1c1798",
+      "name": "Threat Intelligence Policy ",
+      "description": "Policy to protect against known high severity threats",
+      "version": "1.0.0",
+      "lastModifiedDateTime": "2025-06-15T13:24:38Z",
+      "settings": {
+        "defaultAction": "allow"
+      }
     }
-  }
+  ]
 }
 ```
 

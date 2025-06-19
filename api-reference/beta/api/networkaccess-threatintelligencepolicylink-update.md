@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a threatIntelligencePolicyLink object.
+Update the properties of a [threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md) object.
 
 ## Permissions
 

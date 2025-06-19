@@ -1968,13 +1968,8 @@
                 "microsoft.graph.networkaccess.fqdnFilteringRule",
                 "microsoft.graph.networkaccess.webCategoryFilteringRule",
                 "microsoft.graph.networkAccess.threatIntelligencePolicy",
-                "microsoft.graph.networkaccess.threatIntelligencePolicySettings",
                 "microsoft.graph.networkAccess.threatIntelligencePolicyLink",
-                "microsoft.graph.networkAccess.threatIntelligenceRule",
-                "microsoft.graph.networkaccess.threatIntelligenceDestination",
-                "microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
-                "microsoft.graph.networkaccess.threatIntelligenceMatchingConditions",
-                "microsoft.graph.networkaccess.threatIntelligenceRuleSettings"
+                "microsoft.graph.networkAccess.threatIntelligenceRule"
 
               ]
             },

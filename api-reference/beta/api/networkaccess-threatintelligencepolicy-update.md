@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a threatIntelligencePolicy object.
+Update the properties of a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) object.
 
 ## Permissions
 
@@ -51,12 +51,11 @@ PATCH /networkAccess/threatIntelligencePolicies/{threatIntelligencePolicyId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The display name of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Required.|
-|description|String|A description of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Optional.|
-|version|String|The version of the policy, used for tracking changes. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Required.|
-|kind|String|The kind of policy. For threat intelligence policies, this will be a specific value denoting the threat intelligence type. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Required.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. Required.|
-|settings|[microsoft.graph.networkaccess.threatIntelligencePolicySettings](../resources/networkaccess-threatintelligencepolicysettings.md)|Settings that define how the threat intelligence policy operates and evaluates threats. Required.|
+|name|String|The display name of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|description|String|A description of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|version|String|The version of the policy, used for tracking changes. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|kind|String|The kind of policy. For threat intelligence policies, this will be a specific value denoting the threat intelligence type. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|settings|[microsoft.graph.networkaccess.threatIntelligencePolicySettings](../resources/networkaccess-threatintelligencepolicysettings.md)|Settings that define how the threat intelligence policy operates and evaluates threats.|
 
 
 

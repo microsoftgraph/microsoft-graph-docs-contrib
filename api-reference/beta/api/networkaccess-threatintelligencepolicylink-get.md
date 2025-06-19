@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a threatIntelligencePolicyLink object.
+Read the properties and relationships of a [threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md) object.
 
 ## Permissions
 

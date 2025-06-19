@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new threatIntelligencePolicy object.
+Create a new [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) object.
 
 ## Permissions
 
@@ -56,7 +56,6 @@ You can specify the following properties when creating a **threatIntelligencePol
 |description|String|A description of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Optional.|
 |version|String|The version of the policy, used for tracking changes. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Required.|
 |kind|String|The kind of policy. For threat intelligence policies, this is a specific value denoting the threat intelligence type. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Required.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. Required.|
 |settings|[microsoft.graph.networkaccess.threatIntelligencePolicySettings](../resources/networkaccess-threatintelligencepolicysettings.md)|Settings that define how the threat intelligence policy operates and evaluates threats. Required.|
 
 

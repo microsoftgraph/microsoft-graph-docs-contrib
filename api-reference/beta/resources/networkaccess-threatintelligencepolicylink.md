@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Links a threat intelligence policy to an application, service, or other resource in the network access system. This link enables the threat intelligence capabilities to be applied to network traffic for the associated resource.
+Links a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) to an filtering profile in Global Secure Access. This link enables the threat intelligence capabilities to be applied to network traffic for the associated resource.
 
 
 Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).
@@ -27,9 +27,9 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |[Get](../api/networkaccess-threatintelligencepolicylink-get.md)|[microsoft.graph.networkaccess.threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md)|Read the properties and relationships of a threatIntelligencePolicyLink object.|
 |[Update](../api/networkaccess-threatintelligencepolicylink-update.md)|[microsoft.graph.networkaccess.threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md)|Update the properties of a threatIntelligencePolicyLink object.|
 |[Delete](../api/networkaccess-threatintelligencepolicylink-delete.md)|None|Delete a threatIntelligencePolicyLink object.|
-|[List policy](../api/networkaccess-threatintelligencepolicylink-list-policy.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) collection|Get a list of the policies associated with this threat intelligence policy link.|
-|[Add policy](../api/networkaccess-threatintelligencepolicylink-post-policy.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Add a policy by posting to the policy collection associated with this threat intelligence policy link.|
-|[Remove policy](../api/networkaccess-threatintelligencepolicylink-delete-policy.md)|None|Remove a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.|
+|[List policy](../api/networkaccess-threatintelligencepolicylink-list.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) collection|Get a list of the policies associated with this threat intelligence policy link.|
+|[Add policy](../api/networkaccess-threatintelligencepolicylink-post.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Add a policy by posting to the policy collection associated with this threat intelligence policy link.|
+|[Remove policy](../api/networkaccess-threatintelligencepolicylink-delete.md)|None|Remove a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -41,7 +41,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|The policy associated with this threat intelligence policy link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
+|policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|The threat intelligence policy associated with this link. The link connects the policy to filtering profiles, enabling the threat intelligence capabilities to be applied to network traffic. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.

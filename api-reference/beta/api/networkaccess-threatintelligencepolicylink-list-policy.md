@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of policies associated with a threat intelligence policy link. This retrieves all policies that are linked to network resources through the specified threat intelligence policy link.
+Get a list of [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) objects associated with a threat intelligence policy link.
 
 ## Permissions
 

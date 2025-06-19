@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new policyRule object.
+Create a new [threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md) object. Inherited from [microsoft.graph.networkaccess.rule](../resources/networkaccess-rule.md).
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policy/policyRules
+POST /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policyRules
 ```
 
 ## Request headers

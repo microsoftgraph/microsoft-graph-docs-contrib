@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configurable settings that define how a threat intelligence policy operates. These settings control the default action to take when a threat is detected.
+Configurable settings that define how a [threat intelligence policy](../resources/networkaccess-threatintelligencepolicy.md) operates. These settings control the default action to take when a threat is detected.
 
 
 ## Properties

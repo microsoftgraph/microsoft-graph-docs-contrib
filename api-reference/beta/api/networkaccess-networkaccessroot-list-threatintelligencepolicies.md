@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the threatIntelligencePolicy objects and their properties.
+Get a list of the [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) objects and their properties.
 
 ## Permissions
 
