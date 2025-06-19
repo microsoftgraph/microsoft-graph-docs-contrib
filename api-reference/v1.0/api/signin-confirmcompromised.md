@@ -1,6 +1,6 @@
 ---
 title: "signIn: confirmCompromised"
-description: "Allow admins to mark Microsoft Entra sign-in events as risky for Microsoft Entra ID Protection."
+description: "Mark Microsoft Entra sign-in events as risky for Microsoft Entra ID Protection."
 author: "ddonhin"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
@@ -12,8 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
-Allow admins to mark an event in the Microsoft Entra [sign-in](../resources/signin.md) logs as risky. Events marked as risky by an admin are immediately flagged as high risk in Microsoft Entra ID Protection, overriding previous risk states. Admins can confirm that events flagged as risky by Microsoft Entra ID Protection are in fact risky.
+Mark an event in the Microsoft Entra [sign-in](../resources/signin.md) logs as risky. Events marked as risky by an admin are immediately flagged as high risk in Microsoft Entra ID Protection, overriding previous risk states. Admins can confirm that events flagged as risky by Microsoft Entra ID Protection are in fact risky.
 
 For details about investigating Identity Protection risks, see [How to investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
 
@@ -29,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/signin-confirmcompromised-permissions.md)]
+
+[!INCLUDE [rbac-signin-apis-write](../includes/rbac-for-apis/rbac-signin-apis-write.md)]
 
 ## HTTP request
 
@@ -55,7 +56,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|requestIds|String collection|The IDs of the sign in events that should be marked risky for Microsoft Entra ID Protection.|
+|requestIds|String collection|The IDs of the sign-in events that should be marked risky for Microsoft Entra ID Protection.|
 
 
 
@@ -79,7 +80,8 @@ Content-Type: application/json
 
 {
   "requestIds": [
-    "String"
+    "29f270bb-4d23-4f68-8a57-dc73dc0d4caf",
+    "20f91ec9-d140-4d90-9cd9-f618587a1471"
   ]
 }
 ```
@@ -88,7 +90,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
