@@ -332,6 +332,12 @@ items:
     href: ../../resources/relatedcontact.md
   - name: Update
     href: ../../api/relatedcontact-update.md
+- name: Speaker assignment submission
+  items:
+  - name: Speaker assignment submission
+    href: ../../resources/speakerassignmentsubmission.md
+  - name: List
+    href: ../../api/reportsroot-list-speakerassignmentsubmissions.md
 - name: Complex types
   items:
   - name: Challenging word
