@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a rule that defines how to evaluate and respond to specific threat intelligence matches in network traffic. These rules determine what action to take when traffic matches specified threat intelligence criteria.
+Represents a rule that defines how to evaluate and respond to specific threat intelligence matches in network traffic through Global Secure Access. These rules determine what action to take when traffic matches specified threat intelligence criteria.
 
 
 Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).

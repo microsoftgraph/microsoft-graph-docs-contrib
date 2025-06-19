@@ -1,5 +1,5 @@
 ---
-title: "Create threat intelligence policyRule"
+title: "Create policyRule for threatIntelligencePolicy"
 description: "Create a new policyRule object."
 author: "fgomulka"
 ms.date: 06/05/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
-# Create policyRule
+# Create policyRule for threatIntelligencePolicy
 
 Namespace: microsoft.graph.networkaccess
 
