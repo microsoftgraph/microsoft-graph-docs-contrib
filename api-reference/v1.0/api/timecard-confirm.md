@@ -23,8 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timecard_confirm" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timecard-confirm-permissions.md)]
 
-> [!IMPORTANT]
-> The support for application permissions in this API ends on January 1, 2026. To confirm a timeCard with application permissions, use [/confirmForUser](https://learn.microsoft.com/graph/api/timecard-confirmForUser) instead.
+> [!CAUTION]
+> The support for application permissions in this API is deprecated and will end on January 1, 2026. To confirm a **timeCard** with application permissions, use [timeCard: confirmForUser](/graph/api/timecard-confirmforuser?view=graph-rest-beta&preserve-view=true) instead.
 
 ## HTTP request
 
@@ -41,7 +41,7 @@ POST /teams/{teamsId}/schedule/timeCards/{timeCardId}/confirm
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This API will no longer support application permissions starting January 1, 2026.|
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. Until January 1, 2026, this API supports application permissions only when used in combination with the deprecated `MS-APP-ACTS-AS` header.|
 
 ## Request body
 Don't supply a request body for this method.
