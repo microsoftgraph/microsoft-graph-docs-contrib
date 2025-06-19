@@ -3,10 +3,10 @@ title: Customize Claims with Claims Mapping Policy in Microsoft Graph
 description: Learn how to add custom claims to access tokens in Microsoft Graph so your app can use extra user attributes to make authorization decisions.
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: rahulnagraj, odaishalabi
+ms.reviewer: vimrang, odaishalabi
 ms.subservice: entra-applications
 ms.topic: how-to
-ms.date: 05/28/2025
+ms.date: 06/19/2025
 #customer intent: As a developer, I want to add custom claims to access tokens through Microsoft Graph so that my app can use additional user attributes.
 ---
 

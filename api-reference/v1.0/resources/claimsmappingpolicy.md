@@ -2,7 +2,7 @@
 title: "claimsMappingPolicy resource type"
 description: "Represents the claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application."
 ms.localizationpriority: medium
-author: "paulgarn"
+author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ms.date: 05/28/2025
@@ -18,13 +18,15 @@ Represents the claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Co
 - Create claim types that don't already exist
 - Choose or change the source of data emitted in specific claims  
 
-The number of claims and transformations that can be added to a claims-mapping policy are limited to reduce token size. Any claims schema entries or transformations that are encountered after reaching the limit are ignored and not included in the issued token. For more information about the limits, see [Properties of a claims-mapping policy definition](#properties-of-a-claims-mapping-policy-definition)
-
-For more scenario and configuration details, see [Claims mapping policy type](/azure/active-directory/develop/reference-claims-mapping-policy-type) and [How to: Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).
-
-Additionally, visit [Claims customization using a policy](/entra/identity-platform/reference-claims-customization) to learn the difference between this policy and the [custom claims policy](/graph/api/resources/customclaimspolicy).
+The number of claims and transformations that can be added to a claims-mapping policy are limited to reduce token size. Any claims schema entries or transformations that are encountered after reaching the limit are ignored and not included in the issued token. For more information about the limits, see [Properties of a claims-mapping policy definition](#properties-of-a-claims-mapping-policy-definition).
 
 Inherits from [stsPolicy](stsPolicy.md).
+
+For more scenarios and configuration details, see the following articles:
+- [Claims mapping policy type](/azure/active-directory/develop/reference-claims-mapping-policy-type)
+- [Reference: Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties)
+- [How to: Customize claims with the claims mapping policy in Microsoft Graph](/graph/how-to-claims-customization)
+- [Claims customization using a policy](/entra/identity-platform/reference-claims-customization) to learn the difference between this policy and the [custom claims policy](../resources/customclaimspolicy.md).
 
 ## Methods
 
