@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Links a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) to an filtering profile in Global Secure Access. This link enables the threat intelligence capabilities to be applied to network traffic for the associated resource.
+Links a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) to a [filteringProfile](../resources/networkaccess-filteringprofile.md) in Global Secure Access. This link enables the threat intelligence capabilities to be applied to network traffic for the associated resource.
 
 
 Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).

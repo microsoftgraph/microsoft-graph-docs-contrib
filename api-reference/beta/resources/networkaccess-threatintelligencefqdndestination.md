@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of fully qualified domain names (FQDNs) associated with potential security threats. These domains can be used in threat intelligence policies to identify and block access to malicious destinations.
+Represents a collection of fully qualified domain names (FQDNs) associated with potential security threats. These domains can be used in threat intelligence policies to identify and block access to malicious destinations. Parent resource [threatintelligenceMatchingConditions](networkaccess-threatintelligencematchingconditions.md) consumes this complex type. 
 
 
 Inherits from [microsoft.graph.networkaccess.threatIntelligenceDestination](../resources/networkaccess-threatintelligencedestination.md).

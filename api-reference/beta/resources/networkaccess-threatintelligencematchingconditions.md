@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the conditions used to evaluate and match against potential threats in network traffic. These conditions define what network destinations should be considered threats and how they should be evaluated based on severity levels.
+Specifies the conditions used to evaluate and match against potential threats in network traffic. These conditions define what network destinations should be considered threats and how they should be evaluated based on severity levels. Parent resource [threatIntelligenceRule](networkaccess-threatintelligencerule.md) consumes this complex type.
 
 
 ## Properties

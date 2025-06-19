@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-threatintelligencerule-list-permissions.md)]
 
+[!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -34,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkaccess/threatIntelligencePolicies/{id}/policyRules
+GET /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policyRules
 ```
 
 ## Optional query parameters
@@ -66,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkaccess/threatIntelligencePolicies/ac253559-37a0-4f72-b666-103420b94e38/policyRules
+GET https://graph.microsoft.com/beta/networkAccess/filteringProfiles/ab4f3459-c39d-4e99-b8d0-b1aee4726b84/policies/ac253559-37a0-4f72-b666-103420b94e38/policyRules
 ```
 
 
