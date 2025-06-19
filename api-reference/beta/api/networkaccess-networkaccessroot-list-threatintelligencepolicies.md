@@ -110,7 +110,5 @@ Content-Type: application/json
     }
   ]
 }
-  ]
-}
 ```
 

@@ -28,7 +28,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |[Update](../api/networkaccess-threatintelligencepolicylink-update.md)|[microsoft.graph.networkaccess.threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md)|Update the properties of a threatIntelligencePolicyLink object.|
 |[Delete](../api/networkaccess-threatintelligencepolicylink-delete.md)|None|Delete a threatIntelligencePolicyLink object.|
 |[List policy](../api/networkaccess-threatintelligencepolicylink-list.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) collection|Get a list of the policies associated with this threat intelligence policy link.|
-|[Add policy](../api/networkaccess-threatintelligencepolicylink-post.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Add a policy by posting to the policy collection associated with this threat intelligence policy link.|
+|[Add policy](../api/networkaccess-threatintelligencepolicylink-post-policy.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Add a policy by posting to the policy collection associated with this threat intelligence policy link.|
 |[Remove policy](../api/networkaccess-threatintelligencepolicylink-delete.md)|None|Remove a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.|
 
 ## Properties

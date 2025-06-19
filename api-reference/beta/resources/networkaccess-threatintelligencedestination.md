@@ -15,7 +15,7 @@ Namespace: microsoft.graph.networkaccess
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a destination that is associated with potential security threats. This resource type is an abstract base type for specific destination types used in threat intelligence rules.
-This resource type is an abstract type from which the [threatIntelligenceFqdnDestination](add link) resoruce type is derived. Inherited from [microsoft.graph.networkaccess.destination](../resources/netwokraccess-destination.md).
+This resource type is an abstract type from which the [threatIntelligenceFqdnDestination](add link) resoruce type is derived. Inherited from [microsoft.graph.networkaccess.destination](../resources/networkaccess-destination.md).
 
 
 ## Properties

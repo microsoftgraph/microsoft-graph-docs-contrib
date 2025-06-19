@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md) object. Inherited from [microsoft.graph.networkaccess.rule](../resources/networkaccess-rule.md).
+Create a new [threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md) object. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyRule.md).
 
 ## Permissions
 
