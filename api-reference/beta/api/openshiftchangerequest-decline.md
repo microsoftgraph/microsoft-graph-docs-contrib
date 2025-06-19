@@ -23,8 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "openshiftchangerequest_decline" } -->
 [!INCLUDE [permissions-table](../includes/permissions/openshiftchangerequest-decline-permissions.md)]
 
-> [!IMPORTANT]
-> The support for application permissions in this API ends on January 1, 2026. To decline a request with application permissions, use [/declineForUser](https://learn.microsoft.com/graph/api/schedulechangerequest-declineforuser) instead.
+[!INCLUDE [declineforuser-application-permission](../includes/declineforuser-application-permission.md)]
 
 ## HTTP request
 
@@ -39,7 +38,7 @@ POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/dec
 | Name          | Description   |
 |:--------------|:--------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. This API will no longer support application permissions starting January 1, 2026.|
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. Until January 1, 2026, this API supports application permissions only when used in combination with the deprecated `MS-APP-ACTS-AS` header.|
 
 ## Request body
 
