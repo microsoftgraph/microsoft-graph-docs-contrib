@@ -1,5 +1,5 @@
 ---
-title: "List threat intelligence policyRules"
+title: "List policyRules for threatIntelligencePolicy"
 description: "Get a list of the rules associated with a threat intelligence policy."
 author: "fgomulka"
 ms.date: 06/05/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
-# List threat intelligence policyRules
+# List policyRules for threatIntelligencePolicy
 
 Namespace: microsoft.graph.networkaccess
 
