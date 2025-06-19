@@ -352,7 +352,7 @@ Content-type: application/json
 
 {
   "accessPackageResourceRole":{
-    "originId":"Member_bcfae74a-91a6-46e9-99bf-89d6487cc3f3",
+    "originId":"Eligible_Member_bcfae74a-91a6-46e9-99bf-89d6487cc3f3",
     "displayName":"Eligible Member",
     "originSystem":"AadGroup",
     "accessPackageResource":{"id":"b86a1828-3171-409e-8343-32a224f324a0","resourceType":"O365 Group","originId":"bcfae74a-91a6-46e9-99bf-89d6487cc3f3","originSystem":"AadGroup"}
