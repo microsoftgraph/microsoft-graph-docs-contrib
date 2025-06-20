@@ -38,7 +38,7 @@ The Places API can be used by applications that have the right read or write per
 |[Get](../api/place-get.md) |The requested, derived type of **place** |Get the properties and relationships of a specified **place** object.|
 |[Update](../api/place-update.md) |The requested, derived type of **place** |Update the properties and relationships of a specified **place** object. |
 |[Delete](../api/place-delete.md) |None |Delete a **place** with the specified id. |
-|[descendants](../api/place-descendants.md) |List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, floors, sections, rooms, desks, or workspaces) under a given **place**. | 
+|[descendants](../api/place-descendants.md) |List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, [buildings](./building.md, [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [desks](./desk.md), or [workspaces](./workspace.md)) under a given **place**. | 
 
 The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions support similar lookups for rooms and room lists in a tenant. The following table compares the places API and these functions.
 
@@ -63,17 +63,16 @@ The base properties are inherited by all **place** types.
 |Property |Type |Description |
 |:--|:--|:--|
 |address |[physicalAddress](./physicaladdress.md) |The physical address of the **place**, including the street, city, state, country or region, and postal code. |
-|description |String |User-defined description of the place. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) |
-|displayName |String |The name that is associated with the place. |
-|[geoCoordinates](./geocoordinates.md) |outlookGeoCoordinates |Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates. |
+|description |String |User-defined description of the **place**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) |
+|displayName |String |The name that is associated with the **place**. |
+|geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates. |
 |id |String |A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. |
 |isWheelChairAccessible |Boolean |Whether or not the **place** is wheelchair accessible. |
-|parentId |String |ID of a parent **place**. |
-|phone |String |The phone number of the place.|
+|parentId |String |**id** of a parent **place**. |
+|phone |String |The phone number of the **place**. |
 |placeId |String |An alternate immutable unique identifier of the **place**. Read-only. |
-|resourceLinks |ResourceLink collection	|A set of links to external resources that are associated with the place. |
-|tags |Collection(String) |Custom tags that are associated with the place for categorization or filtering. |
-
+|resourceLinks |[resourceLink](./resourcelink.md) collection |A set of links to external resources that are associated with the **place**. |
+|tags |Collection(String) |Custom tags that are associated with the **place** for categorization or filtering. |
 
 ## Relationships
 None.

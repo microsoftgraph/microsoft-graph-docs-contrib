@@ -16,19 +16,33 @@ Namespace: microsoft.graph
 
 Represents a building within the tenant.
 
-Inherits from [place](../resources/place.md).
+Inherits from [place](./place.md).
 
 ## Methods
 
-Go to the [place](./place.md) documentation for supported methods.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/building-list.md)|[building](./building.md) collection|Get a list of the building objects and their properties.|
+|[Get](../api/building-get.md)|[building](./building.md)|Read the properties and relationships of a building object.|
+|[Update](../api/building-update.md)|[building](./building.md)|Update the properties of a building object.|
+|[Delete](../api/building-delete.md)|None|Delete a building object.|
+|[descendants](../api/building-descendants.md)|[place](./place.md) collection|Returns the list of descendant **place** objects of a specific type (for example, [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [desks](./desk.md), or [workspaces](./workspace.md)) under a given **building**. .|
 
 ## Properties
-
-The **building** type supports all [base properties of a **place** object](./place.md#base-properties) and the following properties:
-
-|Property |Type |Description |
-|:--|:--|:--|
-|hasWiFi |Boolean |Whether or not the building has WiFi. |
+|Property|Type|Description|
+|:---|:---|:---|
+|address|[physicalAddress](./physicaladdress.md)|The physical address of the **building**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md). |
+|description |String |User-defined description of the place. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](./place.md). |
+|displayName|String|The name that is associated with the place. Inherited from [place](./place.md). |
+|geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **building** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md). |
+|hasWiFi|Boolean|Whether or not the **building** has Wifi. |
+|id|String|A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. Inherits from [entity](./entity.md) |
+|isWheelChairAccessible|Boolean|Whether or not the **building** is wheelchair accessible. Inherited from [place](./place.md). |
+|parentId|String|ID of a parent **place**. Inherited from [place](./place.md).|
+|phone|String|The phone number of the **building**. Inherited from [place](./place.md). |
+|placeId|String|An alternate immutable unique identifier of the **building**. Read-only. Inherited from [place](./place.md). |
+|resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **building**. Inherited from [place](./place.md). |
+|tags|String collection|Custom tags that are associated with the place for categorization or filtering. Inherited from [place](./place.md). |
 
 ## Relationships
 None.

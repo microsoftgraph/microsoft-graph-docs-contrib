@@ -18,33 +18,46 @@ Represents a room within the tenant.
 
 A room can be added to a [floor](./floor.md) or to a [section](./section.md).
 
-Inherits from [place](../resources/place.md).
+Inherits from [place](./place.md).
 
 ## Methods
-
-Go to the [place](./place.md) documentation for supported methods.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/roomlist-list-rooms.md)|[room](./room.md) collection|Get a list of **room** objects and their properties.|
+|[Create](../api/roomlist-post-rooms.md)|[room](./room.md)|Create a new **room** object.|
+|[Get](../api/room-get.md)|[room](./room.md)|Read the properties and relationships of a **room** object.|
+|[Update](../api/room-update.md)|[room](./room.md)|Update the properties of a **room** object.|
+|[Delete](../api/roomlist-delete-rooms.md)|None|Delete a **room** object.|
+|[descendants](../api/room-descendants.md)|[place](./place.md) collection|Returns the list of descendant **place** objects of a specific type (for example, [desks](./desk.md) or [workspaces](./workspace.md)) under a given **room**.|
 
 ## Properties
-
-The **room** type supports all [base properties of a **place** object](./place.md#base-properties) and the following properties:
-
 |Property |Type |Description |
 |:--|:--|:--|
-|audioDeviceName |String |The name of the audio device that is available in the room. |
-|bookingType |String |Specifies how the place can be booked. Possible values are: <br/><br/> <ul><li>**standard** - Available for general booking</li>
+|address |[physicalAddress](./physicaladdress.md) |The physical address of the **room**, including the street, city, state, country or region, and postal code. |
+|audioDeviceName |String |The name of the audio device that is available in the **room**. |
+|bookingType |enum |Specifies how the **room** can be booked. Possible values are:
+<ul><li>**standard** - Available for general booking</li>
 <li>**reserved** – Reserved for specific users or purposes</li>
-<li>**unknown** – Default or unspecified booking behavior</li>
-</ul> |
-|building |String |The name or identifier of the building where the **place** (such as a room or a desk) is located. |
+<li>**unknown** – Default or unspecified booking behavior</li></ul> |
+|building |String |The name or identifier of the [building](./building.md) where the **room** is located. |
 |capacity |Integer |The maximum number of people in the **room** can accommodate. |
-|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the room. |
+|description |String |User-defined description of the **room**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) |
+|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the **room**. |
+|displayName |String |The name that is associated with the **room**. |
 |emailAddress |String |The email address associated with the room. This email address is used for booking. |
-|floorLabel |String |A human-readable label for the floor, such as "Ground Floor". |
+|floorLabel |String |A human-readable label for the **floor**, such as "Ground Floor". |
 |floorNumber |Integer |The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. |
-|isTeamsEnabled |Boolean |Whether or not the room is configured with the Microsoft Teams Room system. |
-|label |String |A custom identifier or tag for the **place**, often used to distinguish it within a floor or section. |
-|nickname |String |A short, friendly name for the **place**, often used for easier identification or display in UI. |
-|videoDeviceName |String |The name of the video device that is available in the room. |
+|[geoCoordinates](./geocoordinates.md) |outlookGeoCoordinates |Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates. |
+|id |String |A unique identifier for the **room**. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. |
+|isTeamsEnabled |Boolean |Whether or not the **room** is configured with the Microsoft Teams Room system. |
+|isWheelChairAccessible |Boolean |Whether or not the **room** is wheelchair accessible. |
+|nickname |String |A short, friendly name for the **room**, often used for easier identification or display in UI. |
+|parentId |String |**id** of a parent **floor** or **section**. |
+|phone |String |The phone number of the **room**. |
+|placeId |String |An alternate immutable unique identifier of the **room**. Read-only. |
+|resourceLinks |ResourceLink collection	|A set of links to external resources that are associated with the **room**. |
+|tags |Collection(String) |Custom tags that are associated with the **room** for categorization or filtering. |
+|videoDeviceName |String |The name of the video device that is available in the **room**. |
 
 ## Relationships
 None.
