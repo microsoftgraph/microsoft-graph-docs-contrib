@@ -1,6 +1,6 @@
 ---
-title: "List reactions to the messages in online meeting conversations"
-description: "Get a list of the engagementConversationMessageReaction objects and their properties."
+title: "List reactions"
+description: "Get a list of the engagementConversationMessageReaction objects and their properties for an engagementConversationMessage in an online meeting."
 author: "aditijha"
 ms.date: 06/19/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# List engagementConversationMessageReaction objects
+# List reactions
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List reactions to the messages in online meeting conversations
+Get a list of the [engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) objects and their properties for an [engagementConversationMessage](../resources/engagementconversationmessage.md) in an online meeting.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/engagementconversationdiscussionmessage-list-reactions-permissions.md)]
 
 >[!NOTE]
-> Delegated permissions are not supported currently; only application permissions are available for this API.
+> Currently, this API doesn't support delegated permissions.
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ GET /employeeExperience/onlineMeetingConversations/{onlineMeetingEngagementConve
 
 ## Optional query parameters
 
-This method does not support any [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -87,22 +87,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/onlineMeetingConversations('eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9')/messages('eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ')/reactions",
-    "@odata.nextLink": "/communications/onlineMeetingConversations('eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9')/messages('eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ')/reactions&skipToken=eyADASSDSA",
-    "value": [
-        {
-           "@odata.type": "#microsoft.graph.engagementConversationMessageReaction",
-           "id": "eyJxFkLBYM09IlRocmVhZCIsImlkIjoiMzM0NjU1NT0MzEzNiJ9ExODA",        
-           "createdDateTime": "2019-02-04T19:58:15.511Z",
-           "reactionBy": {
-              "user":{
-                "displayName": "admin@a830edad9050849lq4lepgz0ubr.onmicrosoft.com",
-                "id": "04222c1b-87eb-4cb1-80af-85cae1847a3c"
-              }
-           },
-           "reactionType": "like"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/onlineMeetingConversations('eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9')/messages('eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ')/reactions",
+  "@odata.nextLink": "/communications/onlineMeetingConversations('eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9')/messages('eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ')/reactions&skipToken=eyADASSDSA",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.engagementConversationMessageReaction",
+      "id": "eyJxFkLBYM09IlRocmVhZCIsImlkIjoiMzM0NjU1NT0MzEzNiJ9ExODA",
+      "createdDateTime": "2019-02-04T19:58:15.511Z",
+      "reactionBy": {
+        "user": {
+          "displayName": "admin@a830edad9050849lq4lepgz0ubr.onmicrosoft.com",
+          "id": "04222c1b-87eb-4cb1-80af-85cae1847a3c"
         }
-    ]
+      },
+      "reactionType": "like"
+    }
+  ]
 }
 ```
 
