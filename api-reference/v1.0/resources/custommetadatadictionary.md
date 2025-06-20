@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 # customMetadataDictionary resource type
 
-Namespace: microsoft.dataClassificationService.contract
+Namespace: microsoft.graph
 
 Represents a dictionary specifically for storing custom metadata extracted from content, where values must be strings.
 

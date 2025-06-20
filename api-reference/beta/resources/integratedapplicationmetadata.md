@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 # integratedApplicationMetadata resource type
 
-Namespace: microsoft.dataClassificationService.contract
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

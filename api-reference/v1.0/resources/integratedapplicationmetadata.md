@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 # integratedApplicationMetadata resource type
 
-Namespace: microsoft.dataClassificationService.contract
+Namespace: microsoft.graph
 
 Represents metadata about the application integrated with Microsoft Purview data security APIs.
 
