@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Represents the entire tenant ('All users') as a scope within policy bindings.
 
+inherits from [scopeBase](../resources/scopebase.md).
+
 ## Properties
 
 | Property | Type   | Description                                                                                        |

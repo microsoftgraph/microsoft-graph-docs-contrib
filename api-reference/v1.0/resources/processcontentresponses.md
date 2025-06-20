@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the response for a single request within a batch content processing operation.
+Represents the response for a single request within a [batch content processing operation](../api/tenantdatasecurityandgovernance-processcontentasync.md).
 
 ## Properties
 

@@ -12,7 +12,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Abstract base type representing a scope identifier for users, groups, or the tenant within policy bindings. 
+Abstract base type representing a scope identifier for users, groups, or the tenant within policy bindings.
+
+Use [groupScope](../resources/groupscope.md) for groups, [userScope](../resources/userscope.md) for individual users or [tenantScope](../resources/tenantscope.md) for all users in the tenant.
+
+> **Note**: This is an abstract type and won't be instantiated directly. It serves as a base for more specific scope types like `groupScope`, `userScope` and `tenantScope`.
 
 ## Properties
 

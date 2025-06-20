@@ -14,6 +14,10 @@ Namespace: microsoft.graph
 
 Defines the scope of a data governance policy as it applies to a specific user.
 
+Returned from [compute protection scopes](../api/userprotectionscopecontainer-compute.md).
+
+Inherits from [policyScopeBase](../resources/policyscopebase.md).
+
 ## Properties
 
 |Property|Type|Description|

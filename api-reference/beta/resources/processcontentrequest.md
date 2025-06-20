@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# processContentRequest type
+# processContentRequest resource type
 
 Namespace: microsoft.graph
 

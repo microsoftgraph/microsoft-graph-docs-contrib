@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a single entry within a request submitted to the processContentAsync action.
+Represents a single entry within a request submitted to the [processContentAsync](../api/tenantdatasecurityandgovernance-processcontentasync.md) action.
 
 ## Properties
 

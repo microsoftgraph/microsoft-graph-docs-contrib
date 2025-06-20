@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the response for a single request within a batch content processing operation.
+Represents the response for a single request within a [batch content processing operation](../api/tenantdatasecurityandgovernance-processcontentasync.md).
 
 ## Properties
 

@@ -20,7 +20,7 @@ Represents metadata for a content entry that is part of a conversation, for exam
 |:---|:---|:---|
 |accessedResources|String collection|List of resources (for example, file URLs, web URLs) accessed during the generation of this message (relevant for bot interactions).|
 |content| [contentBase](../resources/contentbase.md)| Represents the actual content, either as text (`textContent`) or binary data (`binaryContent`). Optional if metadata alone is sufficient for policy evaluation. **Do not use for [contentActivities](../api/activitiescontainer-post-contentactivities.md)** Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
-|correlationId|String|A GUID identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).|
+|correlationId|String|An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).|
 |createdDateTime|DateTimeOffset|Required. Timestamp indicating when the original content was created (for example, file creation time, message sent time).|
 |identifier|String|Required. A unique identifier for this specific content entry within the context of the calling application or enforcement plane (for example, message ID, file path/URL).|
 |isTruncated|Boolean|Required. Indicates if the provided `content` has been truncated from its original form (for example, due to size limits).|
