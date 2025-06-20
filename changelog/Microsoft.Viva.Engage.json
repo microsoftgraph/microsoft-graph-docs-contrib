@@ -245,18 +245,26 @@
         {
           "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
           "ApiChange": "Resource",
-          "ChangedApiName": "engagementConversationMessageAttachment",
+          "ChangedApiName": "engagementConversationDiscussionMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [engagementConversationMessageAttachment](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessageAttachment?view=graph-rest-beta) resource.",
-          "Target": "engagementConversationMessageAttachment"
+          "Description": "Added the [engagementConversationDiscussionMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationDiscussionMessage?view=graph-rest-beta) resource.",
+          "Target": "engagementConversationDiscussionMessage"
         },
         {
           "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
           "ApiChange": "Resource",
-          "ChangedApiName": "engagementConversationMessageMention",
+          "ChangedApiName": "engagementConversationQuestionMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [engagementConversationMessageMention](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessageMention?view=graph-rest-beta) resource.",
-          "Target": "engagementConversationMessageMention"
+          "Description": "Added the [engagementConversationQuestionMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationQuestionMessage?view=graph-rest-beta) resource.",
+          "Target": "engagementConversationQuestionMessage"
+        },      
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Resource",
+          "ChangedApiName": "engagementConversationSystemMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [engagementConversationSystemMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationSystemMessage?view=graph-rest-beta) resource.",
+          "Target": "engagementConversationSystemMessage"
         },
         {
           "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
@@ -271,8 +279,8 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "onlineMeetingConversations",
           "ChangeType": "Addition",
-          "Description": "Added the **onlineMeetingConversations** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource.",
-          "Target": "employeeExperience"
+          "Description": "Added the **onlineMeetingConversations** relationship to the [cloudCommunications](https://learn.microsoft.com/en-us/graph/api/resources/cloudCommunications?view=graph-rest-beta) resource.",
+          "Target": "cloudCommunications"
         },
         {
           "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
@@ -311,8 +319,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllOnlineMeetingMessages",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllOnlineMeetingMessages](https://learn.microsoft.com/en-us/graph/api/employeeExperience-getAllOnlineMeetingMessages?view=graph-rest-beta) method to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource.",
-          "Target": "employeeExperience"
+          "Description": "Added the [getAllOnlineMeetingMessages](https://learn.microsoft.com/en-us/graph/api/cloudCommunications-getAllOnlineMeetingMessages?view=graph-rest-beta) method to the [cloudCommunications](https://learn.microsoft.com/en-us/graph/api/resources/cloudCommunications?view=graph-rest-beta) resource.",
+          "Target": "cloudCommunications"
         }
       ],
       "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",

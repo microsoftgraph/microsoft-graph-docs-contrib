@@ -3119,6 +3119,7 @@
                 "meetingAttendanceReport",
                 "attendanceRecord",
                 "onlineMeeting",
+                "onlineMeetingEngagementConversation",
                 "externalMeetingRegistration",
                 "meetingRegistration",
                 "callAiInsight",
@@ -3152,12 +3153,6 @@
                 "meetingNoteSubpoint",
                 "mentionEvent",
                 "identitySet"
-              ]
-            },
-            {
-              "name": "Online meeting Q&A",
-              "resources": [
-                "onlinemeetingengagementconversation"
               ]
             },
             {
