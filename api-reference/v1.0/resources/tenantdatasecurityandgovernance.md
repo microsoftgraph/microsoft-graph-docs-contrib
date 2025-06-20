@@ -34,7 +34,6 @@ Represents the entry point for data security and governance features applicable 
 | :--------------- | :------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
 | protectionScopes | [tenantProtectionScopeContainer](../resources/tenantprotectionscopecontainer.md) | Container for actions related to computing tenant-wide data protection scopes. |
 
-
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Represents a specific application as a location for data protection policy scoping.
 
+Inherits from [policyLocation](../resources/policylocation.md).
+
 ## Properties
 
 | Property | Type   | Description                                                    |
