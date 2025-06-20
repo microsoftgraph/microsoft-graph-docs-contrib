@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Represents a Data Loss Prevention (DLP) action that involves notifying users about a policy match.
 
+Inherits from [dlpActionInfo](../resources/dlpactioninfo.md).
+
 ## Properties
 
 | Property                      | Type                                                                                   | Description                                                                                                                             |

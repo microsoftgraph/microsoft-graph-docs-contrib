@@ -20,7 +20,7 @@ Specific actions like `blockAccessAction` or `notifyUserAction` inherit from thi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|microsoft.graph.security.dlpAction|The type of DLP action. Possible values are `notifyUser`, `blockAccess`, `deviceRestriction`, `browserRestriction`,`restrictAccess`,`generateAlert`,`generateIncidentReportAction`,`sPBlockAnonymousAccess`,`sPRuntimeAccessControl`,`sPSharingNotifyUser`,`sPSharingGenerateIncidentReport`.|
+|action|microsoft.graph.security.dlpAction|The type of DLP action. Possible values are `notifyUser`, `blockAccess`, `deviceRestriction`, `browserRestriction`,`unknownFutureValue`,`restrictAccess`,`generateAlert`,`generateIncidentReportAction`,`sPBlockAnonymousAccess`,`sPRuntimeAccessControl`,`sPSharingNotifyUser`,`sPSharingGenerateIncidentReport`.|
 
 ## Relationships
 

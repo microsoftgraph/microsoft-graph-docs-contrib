@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Defines the user/group inclusions and exclusions for a tenant-level policy scope.
+Defines the user/group inclusions and exclusions for a [tenant-level policy scope](../resources/policyTenantScope.md).
 
 ## Properties
 

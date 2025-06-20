@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the user/group inclusions and exclusions for a tenant-level policy scope.
+Defines the user/group inclusions and exclusions for a [tenant-level policy scope](../resources/policyTenantScope.md).
 
 ## Properties
 

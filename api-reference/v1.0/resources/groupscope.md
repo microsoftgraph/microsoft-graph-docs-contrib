@@ -12,7 +12,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a Microsoft 365 group or distribution list as a scope within policy bindings. 
+Represents a Microsoft 365 group or distribution list as a scope within policy bindings.
+
+Inherits from [scopeBase](../resources/scopebase.md).
 
 ## Properties
 
