@@ -56,6 +56,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.engagementConversationDiscussionMessage",
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "createdDateTime": "String (timestamp)",
+  "creationMode": "String",
   "from": {"@odata.type": "microsoft.graph.engagementIdentitySet"},
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
