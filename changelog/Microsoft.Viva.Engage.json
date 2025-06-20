@@ -245,22 +245,6 @@
         {
           "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
           "ApiChange": "Resource",
-          "ChangedApiName": "engagementConversationMessageAttachment",
-          "ChangeType": "Addition",
-          "Description": "Added the [engagementConversationMessageAttachment](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessageAttachment?view=graph-rest-beta) resource.",
-          "Target": "engagementConversationMessageAttachment"
-        },
-        {
-          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
-          "ApiChange": "Resource",
-          "ChangedApiName": "engagementConversationMessageMention",
-          "ChangeType": "Addition",
-          "Description": "Added the [engagementConversationMessageMention](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessageMention?view=graph-rest-beta) resource.",
-          "Target": "engagementConversationMessageMention"
-        },
-        {
-          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
-          "ApiChange": "Resource",
           "ChangedApiName": "engagementConversationDiscussionMessage",
           "ChangeType": "Addition",
           "Description": "Added the [engagementConversationDiscussionMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationDiscussionMessage?view=graph-rest-beta) resource.",
@@ -336,7 +320,7 @@
           "ChangedApiName": "getAllOnlineMeetingMessages",
           "ChangeType": "Addition",
           "Description": "Added the [getAllOnlineMeetingMessages](https://learn.microsoft.com/en-us/graph/api/cloudCommunications-getAllOnlineMeetingMessages?view=graph-rest-beta) method to the [cloudCommunications](https://learn.microsoft.com/en-us/graph/api/resources/cloudCommunications?view=graph-rest-beta) resource.",
-          "Target": "employeeExperience"
+          "Target": "cloudCommunications"
         }
       ],
       "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
