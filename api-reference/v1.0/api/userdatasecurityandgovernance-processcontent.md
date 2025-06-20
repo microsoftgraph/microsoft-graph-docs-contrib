@@ -3,7 +3,7 @@ title: "userDataSecurityAndGovernance: processContent"
 toc.title: "userDataSecurityAndGovernance: processContent"
 description: "Process content against data protection policies in the context of the current, or specified, user."
 author: "kylemar"
-ms.date: 04/08/2025
+ms.date: 06/19/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType

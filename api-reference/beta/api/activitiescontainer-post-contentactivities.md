@@ -2,8 +2,8 @@
 title: "Create contentActivity"
 toc.title: "Create contentActivity"
 description: "Create a content activity for the signed-in user."
-author: "ArunGedela"
-ms.date: 04/03/2025
+author: "kylemar"
+ms.date: 06/19/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType

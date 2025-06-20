@@ -3,7 +3,7 @@ title: "userProtectionScopeContainer: compute"
 toc.title: "userProtectionScopeContainer: compute"
 description: "Compute the data protection policies and actions applicable to a specific user based on their context."
 author: "kylemar"
-ms.date: 04/08/2025
+ms.date: 06/19/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType

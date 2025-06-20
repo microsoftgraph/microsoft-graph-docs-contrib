@@ -2,8 +2,8 @@
 title: "tenantProtectionScopeContainer: compute"
 toc.title: "tenantProtectionScopeContainer: compute"
 description: "Compute the tenant-wide data protection policies and actions, including user or group scoping."
-author: "ArunGedela"
-ms.date: 04/08/2025
+author: "kylemar"
+ms.date: 06/19/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType

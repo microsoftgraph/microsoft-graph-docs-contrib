@@ -2,7 +2,7 @@
 title: "tenantDataSecurityAndGovernance resource type"
 description: "Represents the entry point for data security and governance features applicable across the entire tenant."
 author: "kylemar"
-ms.date: 04/08/2025
+ms.date: 06/19/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
@@ -24,7 +24,9 @@ Represents the entry point for data security and governance features applicable 
 
 ## Properties
 
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|The unique ID of the data security and governance stream. Inherited from [dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).|
 
 ## Relationships
 
@@ -44,5 +46,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.tenantDataSecurityAndGovernance"
+  "id": "String (identifier)"
 }
 ```

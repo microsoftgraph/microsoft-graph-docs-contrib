@@ -3,7 +3,7 @@ title: "tenantDataSecurityAndGovernance: processContentAsync"
 toc.title: "tenantDataSecurityAndGovernance: processContentAsync"
 description: "Process a batch of tenant-wide content entries asynchronously against data protection policies."
 author: "kylemar"
-ms.date: 04/08/2025
+ms.date: 06/19/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
