@@ -32,18 +32,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-For a list of reactions to a message in a Viva Engage conversation:
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /employeeExperience/onlineMeetingConversations/{onlineMeetingEngagementConversationId}/starter/reactions
-```
-
-For a list of reactions for a Teams questions and answers message:
-
 <!-- {
   "blockType": "ignored"
 }
