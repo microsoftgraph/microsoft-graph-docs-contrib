@@ -22,7 +22,7 @@ Cancel offboard for a [protectionUnitBase](../resources/protectionunitbase.md).
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "protectionunitbase_get" } -->
+<!-- { "blockType": "permissions", "name": "protectionunitbase_canceloffboard" } -->
 [!INCLUDE [permissions-table](../includes/permissions/protectionunitbase-canceloffboard-permissions.md)]
 
 ## HTTP request
@@ -61,7 +61,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "protectionunitbase_cancelOffboard1"
+  "name": "protectionunitbase_cancelOffboard_example1"
 }
 -->
 ``` http
@@ -121,7 +121,7 @@ HTTP/1.1 200 OK
 
 <!-- {
   "blockType": "request",
-  "name": "protectionunitbase_canceloffboard"
+  "name": "protectionunitbase_canceloffboard_example2"
 }
 -->
 ``` http

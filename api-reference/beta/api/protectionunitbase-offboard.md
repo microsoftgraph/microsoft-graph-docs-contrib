@@ -22,7 +22,7 @@ Offboard a [protectionUnitBase](../resources/protectionunitbase.md).
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "protectionunitbase_get" } -->
+<!-- { "blockType": "permissions", "name": "protectionunitbase_offboard" } -->
 [!INCLUDE [permissions-table](../includes/permissions/protectionunitbase-offboard-permissions.md)]
 
 ## HTTP request
@@ -60,7 +60,7 @@ The following example shows a request to offboard a protection unit removed from
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "protectionunitbase_offboard"
+  "name": "protectionunitbase_offboard_example1"
 }
 -->
 ```
@@ -120,7 +120,7 @@ The following example shows a request to offboard a protection unit that is atta
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "protectionunitbase_offboard2"
+  "name": "protectionunitbase_offboard_example2"
 }
 -->
 ``` http
