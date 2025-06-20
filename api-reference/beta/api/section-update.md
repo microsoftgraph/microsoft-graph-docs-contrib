@@ -1,0 +1,135 @@
+---
+title: "Update section"
+description: "Update the properties of a section object."
+author: "MSGraphDocsvTeam"
+ms.date: 06/11/2025
+ms.localizationpriority: medium
+ms.subservice:
+doc_type: apiPageType
+---
+
+# Update section
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of a [section](../resources/section.md) object.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "permissions",
+  "name": "section-update-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/section-update-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /section
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+The **section** object type has no unique properties and inherits all properties from the **place** object type.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and an updated [section](../resources/section.md) object in the response body.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_section"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/section
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.section",
+  "displayName": "String",
+  "geoCoordinates": {
+    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
+  },
+  "phone": "String",
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
+  "placeId": "String",
+  "parentId": "String",
+  "resourceLinks": [
+    {
+      "@odata.type": "microsoft.graph.resourceLink"
+    }
+  ],
+  "tags": [
+    "String"
+  ],
+  "isWheelChairAccessible": "Boolean",
+  "label": "String"
+}
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.section",
+  "id": "33491080-b007-37f2-c045-b46746ef402f",
+  "displayName": "String",
+  "geoCoordinates": {
+    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
+  },
+  "phone": "String",
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
+  "placeId": "String",
+  "parentId": "String",
+  "resourceLinks": [
+    {
+      "@odata.type": "microsoft.graph.resourceLink"
+    }
+  ],
+  "tags": [
+    "String"
+  ],
+  "isWheelChairAccessible": "Boolean",
+  "label": "String"
+}
+```
+
