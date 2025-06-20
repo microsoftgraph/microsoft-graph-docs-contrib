@@ -1,22 +1,20 @@
 ---
-title: "employeeExperience: get online meeting q&a message reactions"
-description: "Get all reactions associated with a Teams Q&A conversation message."
-author: "aditijha4"
-ms.date: 05/21/2025
+title: "List reactions to the messages in online meeting conversations"
+description: "Get a list of the engagementConversationMessageReaction objects and their properties."
+author: "aditijha"
+ms.date: 06/19/2025
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# employeeExperience: get all reactions for an online meeting Q&A message
+# List engagementConversationMessageReaction objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all reactions associated with a Teams Q&A conversation message.
-
-It provides a point-in-time snapshot of all reactions posted to a Q&A message in Teams.
+List reactions to the messages in online meeting conversations
 
 ## Permissions
 
@@ -24,10 +22,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "employeeexperience-getallonlinemeetingmessages-permissions"
+  "name": "engagementconversationdiscussionmessage-list-reactions-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/employeeexperience-getallonlinemeetingmessagereactions-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/engagementconversationdiscussionmessage-list-reactions-permissions.md)]
+
+>[!NOTE]
+> Delegated permissions are not supported currently; only application permissions are available for this API.
 
 ## HTTP request
 
@@ -36,8 +37,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /employeeExperience/onlineMeetingConversations/{conversation-id}/messages/{message-id}/reactions
+GET /employeeExperience/onlineMeetingConversations/{onlineMeetingEngagementConversationId}/starter/reactions
 ```
+
+## Optional query parameters
+
+This method does not support any [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -45,17 +50,13 @@ GET /employeeExperience/onlineMeetingConversations/{conversation-id}/messages/{m
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Optional query parameters
-
-This method does not support any [OData query parameters](/graph/query-parameters).
-
 ## Request body
 
 Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) objects in the response body.
 
 ## Examples
 
@@ -64,24 +65,21 @@ If successful, this function returns a `200 OK` response code and a [engagementC
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "employeeexperiencethis.getallonlinemeetingmessagereactions"
+  "name": "list_engagementconversationmessagereaction"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/employeeExperience/onlineMeetingConversations/eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9/messages/eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ/reactions
+GET https://graph.microsoft.com/beta/communications/onlineMeetingConversations/eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9/messages/eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ/reactions
 ```
-
 
 ### Response
 
 The following example shows the response.
-
 >**Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.engagementConversationMessage)"
+  "@odata.type": "microsoft.graph.engagementConversationMessageReaction"
 }
 -->
 ``` http
@@ -89,8 +87,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/onlineMeetingConversations('eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9')/messages('eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ')/reactions",
-    "@odata.nextLink": "/employeeExperience/onlineMeetingConversations('eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9')/messages('eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ')/reactions&skipToken=eyADASSDSA",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/onlineMeetingConversations('eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9')/messages('eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ')/reactions",
+    "@odata.nextLink": "/communications/onlineMeetingConversations('eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9')/messages('eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ')/reactions&skipToken=eyADASSDSA",
     "value": [
         {
            "@odata.type": "#microsoft.graph.engagementConversationMessageReaction",

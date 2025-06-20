@@ -1,14 +1,14 @@
 ---
-title: "employeeExperience: getAllOnlineMeetingMessages"
+title: "cloudCommunications: getAllOnlineMeetingMessages"
 description: "Get all Teams Q&A conversation messages in a tenant"
-author: "PV-work-25"
-ms.date: 05/21/2025
+author: "aditijha"
+ms.date: 06/19/2025
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# employeeExperience: Get all Q&A messages in an online meeting
+# cloudCommunications: getAllOnlineMeetingMessages
 
 Namespace: microsoft.graph
 
@@ -33,10 +33,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "employeeexperience-getallonlinemeetingmessages-permissions"
+  "name": "cloudcommunications-getallonlinemeetingmessages-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/employeeexperience-getallonlinemeetingmessages-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/cloudcommunications-getallonlinemeetingmessages-permissions.md)]
 
 >[!NOTE]
 > Delegated permissions are not supported currently; only application permissions are available for this API.
@@ -48,13 +48,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /employeeExperience/getAllOnlineMeetingMessages
+GET /communications/getAllOnlineMeetingMessages
 ```
 
 ## Optional query parameters
 
 This method does not support any [OData query parameters](/graph/query-parameters).
-
 
 ## Request headers
 
@@ -77,11 +76,11 @@ If successful, this function returns a `200 OK` response code and a [engagementC
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "employeeexperiencethis.getallonlinemeetingmessages"
+  "name": "cloudcommunicationsthis.getallonlinemeetingmessages"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/employeeExperience/getAllOnlineMeetingMessages?$expand=conversation
+GET https://graph.microsoft.com/beta/communications/getAllOnlineMeetingMessages
 ```
 
 
@@ -100,8 +99,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/getAllOnlineMeetingMessages",
-    "@odata.nextLink": "/employeeExperience/getAllOnlineMeetingMessages?$expand=conversation&skipToken=eyADASSDSA",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/getAllOnlineMeetingMessages",
+    "@odata.nextLink": "/communications/getAllOnlineMeetingMessages?$expand=conversation&skipToken=eyADASSDSA",
     "value": [
     {
       "@odata.type": "#microsoft.graph.engagementConversationDiscussionMessage",

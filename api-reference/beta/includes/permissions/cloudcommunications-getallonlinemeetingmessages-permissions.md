@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|EngagementMeetingConversation.Read.All|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|EngagementMeetingConversation.Read.All|Not available.|
+|Application|EngagementMeetingConversation.Read.All|Not supported.|
 

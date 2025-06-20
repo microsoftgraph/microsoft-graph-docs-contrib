@@ -14,14 +14,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a structured question-and-answer (Q&A) thread in Viva Engage that is directly associated with an online meeting.
+Represents a structured question-and-answer (Q&A) thread in Teams that is directly associated with an online meeting.
 
 Inherits from [engagementConversation](../resources/engagementconversation.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get all online meeting messages](../api/employeeexperience-getallonlinemeetingmessages.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|Get all Teams question and answer (Q&A) conversation messages in a tenant.|
+|[Get all online meeting messages](../api/cloudcommunications-getallonlinemeetingmessages.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|Get all Teams question and answer (Q&A) conversation messages in a tenant.|
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List reactions to online meeting message](../api/engagementconversationdiscussionmessage-list-reactions.md)|[engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) collection|Get a list of the engagementConversationMessageReaction objects and their properties for an [engagementConversationMessage](../resources/engagementconversationmessage.md) in an online meeting|
 
 ## Properties
 |Property|Type|Description|
