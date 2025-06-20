@@ -16,50 +16,30 @@ Namespace: microsoft.graph
 
 Represents a starter message for a discussion post in a Viva Engage conversation.
 
-
 Inherits from [engagementConversationMessage](../resources/engagementconversationmessage.md).
-
 
 ## Methods
 
 None.
 
-<!--|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/engagementconversationdiscussionmessage-list.md)|[engagementConversationDiscussionMessage](../resources/engagementconversationdiscussionmessage.md) collection|Get a list of the engagementConversationDiscussionMessage objects and their properties.|
-|[Get](../api/engagementconversationdiscussionmessage-get.md)|[engagementConversationDiscussionMessage](../resources/engagementconversationdiscussionmessage.md)|Read the properties and relationships of an engagementConversationDiscussionMessage object.|
-|[Update](../api/engagementconversationdiscussionmessage-update.md)|[engagementConversationDiscussionMessage](../resources/engagementconversationdiscussionmessage.md)|Update the properties of an engagementConversationDiscussionMessage object.|
-|[Delete](../api/engagementconversationdiscussionmessage-delete.md)|None|Delete an engagementConversationDiscussionMessage object.|
-|[List engagementConversation](../api/engagementconversationdiscussionmessage-list-conversation.md)|[engagementConversation](../resources/engagementconversation.md) collection|**TODO: Add a useful description.**|
-|[Add engagementConversation](../api/engagementconversationdiscussionmessage-post-conversation.md)|[engagementConversation](../resources/engagementconversation.md)|Add conversation by posting to the conversation collection.|
-|[Remove engagementConversation](../api/engagementconversationdiscussionmessage-delete-conversation.md)|None|Remove an [engagementConversation](../resources/engagementconversation.md) object.|
-|[List reactions](../api/engagementconversationdiscussionmessage-list-reactions.md)|[engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) collection|**TODO: Add a useful description.**|
-|[Create engagementConversationMessageReaction](../api/engagementconversationdiscussionmessage-post-reactions.md)|[engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md)|Create a new engagementConversationMessageReaction object.|
-|[List replies](../api/engagementconversationdiscussionmessage-list-replies.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|**TODO: Add a useful description.**|
-|[Create engagementConversationMessage](../api/engagementconversationdiscussionmessage-post-replies.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md)|Create a new engagementConversationMessage object.|
-|[List engagementConversationMessage](../api/engagementconversationdiscussionmessage-list-replyto.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|**TODO: Add a useful description.**|
-|[Add engagementConversationMessage](../api/engagementconversationdiscussionmessage-post-replyto.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md)|Add replyTo by posting to the replyTo collection.|
-|[Remove engagementConversationMessage](../api/engagementconversationdiscussionmessage-delete-replyto.md)|None|Remove an [engagementConversationMessage](../resources/engagementconversationmessage.md) object.|
--->
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|body|[itemBody](../resources/itembody.md)|The main content of the discussion post message on Viva Engage.|
-|createdDateTime|DateTimeOffset|The date and time when the message was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-|creationMode|[engagementCreationMode](../resources/engagementconversationmessage.md#engagementcreationmode-values)|Indicates how the message was created. The possible values are: `none`, `migration`, `unknownFutureValue`.|
-|from|[engagementIdentitySet](../resources/engagementidentityset.md)|Identity of the sender of the message.|
-|id|String|Unique ID of a Viva Engage conversation message. Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|The date and time when message was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|replyToId|String|The ID of the parent message to which this message is a reply, if applicable.|
+|body|[itemBody](../resources/itembody.md)|The main content of the discussion post message on Viva Engage. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
+|createdDateTime|DateTimeOffset|The date and time when the message was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
+|creationMode|[engagementCreationMode](../resources/engagementconversationmessage.md#engagementcreationmode-values)|Indicates how the message was created. The possible values are: `none`, `migration`, `unknownFutureValue`. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
+|from|[engagementIdentitySet](../resources/engagementidentityset.md)|Identity of the sender of the message. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
+|id|String|Unique ID of a Viva Engage conversation message. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time when message was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
+|replyToId|String|The ID of the parent message to which this message is a reply, if applicable. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|conversation|[engagementConversation](../resources/engagementconversation.md)|The Viva Engage conversation to which this message belongs. This relationship establishes the thread context for the message.|
-|reactions|[engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) collection|A collection of reactions (such as like and smile) that users have applied to this message.|
-|replies|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|A collection of messages that are replies to this message and form a threaded discussion.|
-|replyTo|[engagementConversationMessage](../resources/engagementconversationmessage.md)|The parent message to which this message is a reply, if it is part of a reply chain.|
+|conversation|[engagementConversation](../resources/engagementconversation.md)|The Viva Engage conversation to which this message belongs. This relationship establishes the thread context for the message. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
+|reactions|[engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) collection|A collection of reactions (such as like and smile) that users have applied to this message. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
+|replies|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|A collection of messages that are replies to this message and form a threaded discussion. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
+|replyTo|[engagementConversationMessage](../resources/engagementconversationmessage.md)|The parent message to which this message is a reply, if it is part of a reply chain. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -74,16 +54,12 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.engagementConversationDiscussionMessage",
-  "id": "String (identifier)",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "replyToId": "String",
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
   "createdDateTime": "String (timestamp)",
+  "from": {"@odata.type": "microsoft.graph.engagementIdentitySet"},
+  "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "from": {
-    "@odata.type": "microsoft.graph.engagementIdentitySet"
-  }
+  "replyToId": "String"
 }
 ```
 
