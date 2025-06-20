@@ -46,6 +46,8 @@ In the request body, provide a JSON object with the following parameters.
 | :-------------------- | :---------------------------------------------- | :------------------------------------------------------ |
 | processContentRequests| [processContentBatchRequest](../resources/processcontentbatchrequest.md) collection | Required. A collection of individual content processing requests, each with its own user context, content, and request ID. |
 
+The request body is limited to 2 MB in size. The maximum number of content entries per request is 64. These could be spread across up to 64 **processContentRequests**, each containing one content entry or 2 **processContentRequests**, each containing 32 content entries or some other combination that does not exceed 64 content entries.
+
 ## Response
 
 In most cases, when successful, this method returns a 204, No Content. This method can also return a `200 OK` response code and a collection of [processContentResponses](../resources/processcontentresponses.md) objects in the response body. Each object in the collection corresponds to one of the request items in the batch, identified by the `requestId`, and contains the results (policy actions, errors, scope state) for that specific item. Given that this is an asynchronous *intent* API from the perspective of the caller submitting the batch, the `200 OK` indicates the batch was accepted; the results within the response body reflect the outcome of each item's processing by the service.
