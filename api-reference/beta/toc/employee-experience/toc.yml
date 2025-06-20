@@ -50,18 +50,8 @@ items:
       href: ../../resources/employeeexperienceuser.md
     - name: List assignedRoles
       href: ../../api/employeeexperienceuser-list-assignedroles.md
-  - name: Online meeting engagement conversation
-    items:
-    - name: Online meeting engagement conversation
-      href: ../../resources/onlinemeetingengagementconversation.md
-    - name: Get all online meeting messages
-      href: ../../api/employeeexperience-getallonlinemeetingmessages.md
   - name: Complex types
     items:
-    - name: Engagement conversation message attachment
-      href: ../../resources/engagementconversationmessageattachment.md
-    - name: Engagement conversation message mention
-      href: ../../resources/engagementconversationmessagemention.md
     - name: Engagement identity set
       href: ../../resources/engagementidentityset.md
 - name: Employee goals (preview)
