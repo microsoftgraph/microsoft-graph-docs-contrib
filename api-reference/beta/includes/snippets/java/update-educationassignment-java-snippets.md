@@ -17,10 +17,8 @@ educationAssignment.setInstructions(instructions);
 OffsetDateTime dueDateTime = OffsetDateTime.parse("2021-09-10T00:00:00Z");
 educationAssignment.setDueDateTime(dueDateTime);
 educationAssignment.setAddedStudentAction(EducationAddedStudentAction.None);
+educationAssignment.setLanguageTag("pt-BR");
 educationAssignment.setAddToCalendarAction(EducationAddToCalendarOptions.StudentsAndPublisher);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("languageTag", "pt-BR");
-educationAssignment.setAdditionalData(additionalData);
 EducationAssignment result = graphClient.education().classes().byEducationClassId("{educationClass-id}").assignments().byEducationAssignmentId("{educationAssignment-id}").patch(educationAssignment);
 
 

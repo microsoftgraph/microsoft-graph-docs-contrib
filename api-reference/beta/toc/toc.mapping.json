@@ -148,6 +148,7 @@
       ],
       "resources": [
         "backupRestoreRoot",
+        "emailNotificationsSetting",
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
@@ -219,6 +220,7 @@
       ],
       "complexTypes": [
         "artifactQuery",
+        "notificationRecipients",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
@@ -828,7 +830,8 @@
         "educationSubmissionResource",
         "readingAssignmentSubmission",
         "reflectCheckInResponse",
-        "relatedContact"
+        "relatedContact",
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
         "challengingWord",
@@ -2243,7 +2246,6 @@
         },
         {
           "name": "People admin settings",
-          [
           "resources": [
             "namePronunciationSettings",
             "photoUpdateSettings",
@@ -3042,6 +3044,9 @@
             "teamsAppSettings",
             "teamsTab",
             "resourceSpecificPermissionGrant"
+          ],
+          "complexTypes": [
+            "customAppSettings"
           ]
         },
         {
@@ -3417,4 +3422,3 @@
     }
   ]
 }
-
