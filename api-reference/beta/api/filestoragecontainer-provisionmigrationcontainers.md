@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "filestoragecontainer-list-migrationjobs-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-migrationjobs-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-provisionmigrationcontainers-permissions.md)]
 
 ## HTTP request
 
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{fileStorageContainerId}/provisionMigrationContainers
+POST /storage/fileStorage/containers/{fileStorageContainerId}/provisionMigrationContainers
 ```
 
 ### Response
@@ -75,15 +75,13 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.migrationContainerInfo",
-    "dataContainerUri": "https://spoxxx.blob.core.windows.net/data?sp=rw&sig=",
-    "metadataContainerUri": "https://spoxxx.blob.core.windows.net/metadata?sp=rw&sig=",
-    "encryptionKey": "base64 encoded key for AES-256-CBC encryption"
-  }
+  "@odata.type": "#microsoft.graph.migrationContainerInfo",
+  "dataContainerUri": "https://spoxxx.blob.core.windows.net/data?sp=rw&sig=",
+  "metadataContainerUri": "https://spoxxx.blob.core.windows.net/metadata?sp=rw&sig=",
+  "encryptionKey": "base64 encoded key for AES-256-CBC encryption"
 }
 ```

@@ -73,9 +73,7 @@ POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{fileStorag
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.migrationJob",
   "containerInfo": {
-    "@odata.type": "microsoft.graph.migrationContainerInfo",
     "dataContainerUri": "https://spoxxx.blob.core.windows.net/data?sp=rw&sig=",
     "metadataContainerUri": "https://spoxxx.blob.core.windows.net/metadata?sp=rw&sig=",
     "encryptionKey": "base64 encoded key for AES-256-CBC encryption"
@@ -96,10 +94,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.migrationJob",
-  "id": "31090ce2-3b99-fa40-7ec5-46ebeeb5900b",
-  "containerInfo": {
-    "@odata.type": "microsoft.graph.migrationContainerInfo"
-  }
+  "value": "31090ce2-3b99-fa40-7ec5-46ebeeb5900b"
 }
 ```

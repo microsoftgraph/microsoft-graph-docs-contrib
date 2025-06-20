@@ -51,7 +51,7 @@ Represents a location where multiple users or a group of users can store files a
 |[Provision migrationContainers](../api/filestoragecontainer-provisionmigrationcontainers.md)|[migrationContainerInfo](../resources/migrationcontainerinfo.md)|Provision SharePoint-managed azure blob containers as temporary storage for migration content and metadata.|
 |[Create migrationJob](../api/filestoragecontainer-post-migrationjobs.md)|[migrationJob](../resources/migrationjob.md)|Create a new migrationJob in a fileStorageContainer.|
 |[Delete migrationJob](../api/filestoragecontainer-delete-migrationjobs.md)|[migrationJob](../resources/migrationjob.md)|Delete a migrationJob from a fileStorageContainer.|
-|[List migration events](../api/filestoragecontainer-list-progressevents.md)|[migrationJob](../resources/migrationevent.md) collection|List migration events for particular job.|
+|[List migration events](../api/migrationjob-list-progressevents.md)|[migrationJob](../resources/migrationevent.md) collection|List migration events for particular job.|
 
 ## Properties
 |Property|Type|Description|
