@@ -22,15 +22,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "engagementconversationmessage-list-reactions-permissions"
+  "name": "engagementconversationdiscussionmessage-list-reactions-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/engagementconversationmessage-list-reactions-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/engagementconversationdiscussionmessage-list-reactions-permissions.md)]
 
 >[!NOTE]
 > Currently, this API doesn't support delegated permissions.
 
 ## HTTP request
+
+For a list of reactions to a message in a Viva Engage conversation:
 
 <!-- {
   "blockType": "ignored"
@@ -38,6 +40,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /employeeExperience/onlineMeetingConversations/{onlineMeetingEngagementConversationId}/starter/reactions
+```
+
+For a list of reactions for a Teams questions and answers message:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /communications/onlineMeetingConversations/{onlineMeetingEngagementConversationId}/messages/{engagementConversationMessageId}/reactions
 ```
 
 ## Optional query parameters
@@ -62,7 +74,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request.
+The following example shows how to get a list of reactions for a Teams questions and answers message:
 <!-- {
   "blockType": "request",
   "name": "list_engagementconversationmessagereaction",
