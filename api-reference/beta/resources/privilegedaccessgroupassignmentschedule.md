@@ -31,19 +31,19 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 |assignmentType|privilegedAccessGroupAssignmentType|Indicates whether the membership or ownership assignment for the principal is granted through activation or direct assignment. Required. The possible values are: `assigned`, `activated`, `unknownFutureValue`. Supports `$filter` (`eq`).|
 |createdDateTime|DateTimeOffset|When the schedule was created. Optional.|
 |createdUsing|String|The identifier of the access assignment or eligibility request that created this schedule. Optional. Supports `$filter` (`eq`, `ne`, and on `null` values).|
-|groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for groups. Required. Supports `$filter` (`eq`).|
+|groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for Groups. Required. Supports `$filter` (`eq`).|
 |id|String|The identifier of the schedule. Required. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
 |memberType|privilegedAccessGroupMemberType|Indicates whether the assignment is derived from a direct group assignment or through a transitive assignment. The possible values are: `direct`, `group`, `unknownFutureValue`. Supports `$filter` (`eq`).|
 |modifiedDateTime|DateTimeOffset|When the schedule was last modified. Optional.|
-|principalId|String|The identifier of the principal whose membership or ownership assignment is granted through PIM for groups. Required. Supports `$filter` (`eq`).|
+|principalId|String|The identifier of the principal whose membership or ownership assignment is granted through PIM for Groups. Required. Supports `$filter` (`eq`).|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Represents the period of the access assignment or eligibility. The scheduleInfo can represent a single occurrence or multiple recurring instances. Required.|
 |status|String|The status of the access assignment or eligibility request. The possible values are: `Canceled`, `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`, `Provisioned`, `Revoked`, and `ScheduleCreated`. Not nullable. Optional. Supports `$filter` (`eq`, `ne`).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|activatedUsing|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|When the request activates an ownership or membership assignment in PIM for groups, this object represents the eligibility relationship. Otherwise, it's `null`. Supports `$expand`.|
-|group|[group](../resources/group.md)|References the group that is the scope of the membership or ownership assignment through PIM for groups. Supports `$expand` and `$select` nested in `$expand` for select properties like **id**, **displayName**, and **mail**.|
+|activatedUsing|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|When the request activates an ownership or membership assignment in PIM for Groups, this object represents the eligibility relationship. Otherwise, it's `null`. Supports `$expand`.|
+|group|[group](../resources/group.md)|References the group that is the scope of the membership or ownership assignment through PIM for Groups. Supports `$expand` and `$select` nested in `$expand` for select properties like **id**, **displayName**, and **mail**.|
 |principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of this membership or ownership assignment request to the group that's governed by PIM. Supports `$expand` and `$select` nested in `$expand` for **id** only.|
 
 ## JSON representation
