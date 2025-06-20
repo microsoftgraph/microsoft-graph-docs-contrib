@@ -24,7 +24,7 @@ Inherits from [engagementConversation](../resources/engagementconversation.md).
 |[Get all online meeting messages](../api/cloudcommunications-getallonlinemeetingmessages.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|Get all Teams question and answer (Q&A) conversation messages in a tenant.|
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List reactions to online meeting message](../api/engagementconversationdiscussionmessage-list-reactions.md)|[engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) collection|Get a list of the engagementConversationMessageReaction objects and their properties for an [engagementConversationMessage](../resources/engagementconversationmessage.md) in an online meeting|
+|[List reactions to online meeting message](../api/engagementconversationmessage-list-reactions.md)|[engagementConversationMessageReaction](../resources/engagementconversationmessagereaction.md) collection|Get a list of the engagementConversationMessageReaction objects and their properties for an [engagementConversationMessage](../resources/engagementconversationmessage.md) in an online meeting|
 
 ## Properties
 |Property|Type|Description|

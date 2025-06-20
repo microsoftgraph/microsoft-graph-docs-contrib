@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "engagementconversationdiscussionmessage-list-reactions-permissions"
+  "name": "engagementconversationmessage-list-reactions-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/engagementconversationdiscussionmessage-list-reactions-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/engagementconversationmessage-list-reactions-permissions.md)]
 
 >[!NOTE]
 > Delegated permissions are not supported currently; only application permissions are available for this API.
