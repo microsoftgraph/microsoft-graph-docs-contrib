@@ -74,7 +74,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows how to get a list of reactions for a Teams questions and answers message:
+The following example shows how to get a list of reactions for a Teams questions and answers message.
 <!-- {
   "blockType": "request",
   "name": "list_engagementconversationmessagereaction",
