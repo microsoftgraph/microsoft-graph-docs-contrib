@@ -1,6 +1,6 @@
 ---
 title: "signIn: dismiss"
-description: "Dimiss risk from Microsoft Entra sign-in events for Microsoft Entra ID Protection"
+description: "Dismiss risk from Microsoft Entra sign-in events for Microsoft Entra ID Protection"
 author: "ddonhin"
 ms.date: 06/09/2025
 ms.localizationpriority: medium
