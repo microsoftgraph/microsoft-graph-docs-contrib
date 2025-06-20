@@ -43,5 +43,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.userDataSecurityAndGovernance",
   "activities": { "@odata.type": "microsoft.graph.activitiesContainer" },
+  "id": "String (identifier)"
 }
 ```
