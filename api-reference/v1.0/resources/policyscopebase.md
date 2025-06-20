@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Abstract base type defining the scope of applicability for a data governance policy, including locations, activities, and execution mode.
 
-Used as a base type for more specific policy scopes like [policyTenantScope](../resources/policytenantscope.md) and [policyGroupScope](../resources/policygroupscope.md).
+Used as a base type for more specific policy scopes like [policyTenantScope](../resources/policytenantscope.md) and [policyGroupScope](../resources/groupscope.md).
 
 ## Properties
 
