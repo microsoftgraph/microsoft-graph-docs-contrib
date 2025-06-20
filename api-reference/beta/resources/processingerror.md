@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Represents an error encountered during content processing or policy evaluation, indicating if it's transient or permanent.
 
+Inherits from [classificationError](../resources/classificationerror.md).
+
 ## Properties
 
 | Property  | Type                                                                                               | Description                                                                                      |

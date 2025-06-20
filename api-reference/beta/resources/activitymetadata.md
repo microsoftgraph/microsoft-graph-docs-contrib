@@ -20,7 +20,7 @@ Represents metadata about a specific user activity being evaluated, including th
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activity|microsoft.graph.security.userActivityType|The type of user activity. Possible values are `uploadText`, `uploadFile`, `downloadText`, `downloadFile`. Required.|
+|activity|microsoft.graph.security.userActivityType|The type of user activity. Possible values are `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Required.|
 
 ## Relationships
 

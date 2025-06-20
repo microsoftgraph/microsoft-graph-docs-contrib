@@ -16,6 +16,10 @@ Namespace: microsoft.graph
 
 Abstract base type representing the actual content, text, or binary) being processed.
 
+Use [textContent](../resources/textcontent.md) for text or [binaryContent](../resources/binarycontent.md) binary content.
+
+> **Note:** This abstract type won't be instantiated directly.
+
 ## Properties
 
 None.

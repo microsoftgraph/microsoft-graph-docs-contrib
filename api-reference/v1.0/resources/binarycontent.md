@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Represents content provided as a Base64-encoded binary data stream.
 
+Inherits from [contentBase](../resources/contentbase.md).
+
 ## Properties
 
 | Property | Type   | Description                                      |

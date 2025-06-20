@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Represents a detailed error object, potentially containing multiple nested errors, encountered during classification or policy evaluation.
 
+Use [processingError](../resources/processingerror.md) for errors related to content processing or policy evaluation. Inherits from [classifcationErrorBase](../resources/classifcationerrorbase.md).
+
 ## Properties
 
 | Property | Type                                                                                                       | Description                                                   |

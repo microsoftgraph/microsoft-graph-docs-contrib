@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Represents content provided as a plain text string.
 
+Inherits from [contentBase](../resources/contentbase.md).
+
 ## Properties
 
 | Property | Type   | Description            |
