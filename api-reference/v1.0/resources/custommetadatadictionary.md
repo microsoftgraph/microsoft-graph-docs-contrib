@@ -14,13 +14,11 @@ Namespace: microsoft.graph
 
 Represents a dictionary specifically for storing custom metadata extracted from content, where values must be strings.
 
-It's an open type but constrained to only accept string values for its dynamic properties.
+It's an open type but constrained to only accept string values for its dynamic properties. Inherits from the base `Org.OData.Core.V1.Dictionary` type.
 
 ## Properties
 
-| Property    | Type   | Description                                                              |
-| :---------- | :----- | :----------------------------------------------------------------------- |
-| (dynamic)   | String | Represents dynamically added key-value pairs of custom content metadata. Keys are property names, values must be strings. |
+None.
 
 ## Relationships
 

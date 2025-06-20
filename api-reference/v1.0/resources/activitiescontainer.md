@@ -1,6 +1,6 @@
 ---
 title: "activitiesContainer resource type"
-description: "Represents a container for different types of activity logs related to data security and governance, such as content activities."
+description: "Represents a container for different types of activity logs related to Microsoft Purview data security and governance, such as content activities."
 author: "kylemar"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a container for different types of activity logs related to data security and governance, such as content activities.
+Represents a container for different types of activity logs related to Microsoft Purview data security and governance, such as content activities.
 
 ## Properties
 
