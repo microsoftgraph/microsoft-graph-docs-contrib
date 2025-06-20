@@ -16,20 +16,20 @@ Namespace: microsoft.graph
 
 The API will allow users to complete migration on existing channels or new channels. Previously, users were only allowed to initiate complete migration operations on newly created Standard Channels, which were created for initial migration flow. ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
-This API expands import capabilities to
-
-1) New channels (General, Standard, Private, and Shared) created in migration mode for initial import flow.
-2) Existing channels (General, Standard, Private, and Shared) which are already in migration mode.
-
 Points to note:
 
-1) When channel is created in migration mode for initial import flow, this API will complete the message migration process by removing `migration mode` from a [channel](../resources/channel.md) in a team. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+1) When channel is created in migration mode for initial import flow, then with this new API `Migration mode` from a [channel](../resources/channel.md) in a team will be updated to **Completed** instead of being dropped and the state will be marked to chat/channels permanently.`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 
 2) For **existing** channels which are already in migration mode, this API will complete the message migration process by populating `migration mode` to `Completed` for a [channel](../resources/channel.md) in a team.
 
 After a **completeMigration** request is made for existing or new channels, you can still import more messages into the team by calling [start migration on channel](channel-startmigration.md). 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Supported types of channels
+
+1) New channels (General, Standard, Private, and Shared) created in migration mode for initial import flow.
+2) Existing channels (General, Standard, Private, and Shared) which are already in migration mode.
 
 ## Permissions
 

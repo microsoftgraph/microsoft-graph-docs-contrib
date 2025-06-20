@@ -16,11 +16,6 @@ Namespace: microsoft.graph
 
 The API will allow users to enable migration mode on existing channels. Previously, users were only allowed to initiate import operations on newly created Standard Channels in empty state ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
-This API expands import capabilities to
-
-1) New Channels (General, Standard, Private and Shared)
-2) Existing Channels (General, Standard, Private and Shared).
-
 Starts the message migration process by populating `migration mode` to `inProgress` for a [channel](../resources/channel.md) in a team.
 
 Users are also allowed to define minimum timestamp for contents to be migrated, allowing them to import messages in the past. Provided timestamp is required to be older than the current `createdDateTime` for a [channel](../resources/channel.md).
@@ -28,6 +23,11 @@ Users are also allowed to define minimum timestamp for contents to be migrated, 
 Provided timestamp will be used to replace existing `createdDateTime` of the [channel](../resources/channel.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Supported types of channels
+
+1) New Channels (General, Standard, Private and Shared)
+2) Existing Channels (General, Standard, Private and Shared).
 
 ## Permissions
 

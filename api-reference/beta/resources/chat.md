@@ -38,6 +38,8 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 |[Mark chat as unread](../api/chat-markchatunreadforuser.md) |None| Mark chat as unread for a user.|
 |[Hide chat](../api/chat-hideforuser.md)|None|Hide a chat for a user.|
 |[Unhide chat](../api/chat-unhideforuser.md)|None|Unhide a chat for a user.|
+|[Start migration](../api/chat-startmigration.md)|[chat](chat.md)| Starts the migration mode on the chat.|
+|[Complete migration](../api/chat-completemigration.md)|[chat](chat.md)| Starts the migration mode on the chat.|
 | **Messages** |||
 |[List messages in a chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a chat. |
 |[Get message reply](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
@@ -64,7 +66,6 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 |[List pinned messages](../api/chat-list-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md) collection|Get a list of pinned messages in a chat.|
 |[Pin message](../api/chat-post-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md)|Pin a chat message in a chat.|
 |[Unpin message](../api/chat-delete-pinnedmessages.md)|None|Unpin a message from a chat.|
-|[Start migration](../api/chat-startmigration.md)|[chat](chat.md)| Starts the migration mode on the chat.|
 
 >**Note:** When using application permissions, be sure you know how to get the chat ID. Because listing chats with application permissions is not supported, not all scenarios are possible. It is possible to get chat IDs with delegated permissions, and from [change notifications for /chats/getAllMessages](../api/subscription-post-subscriptions.md) with application permissions.
 

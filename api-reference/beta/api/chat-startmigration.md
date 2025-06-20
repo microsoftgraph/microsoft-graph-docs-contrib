@@ -16,11 +16,6 @@ Namespace: microsoft.graph
 
 The API will allow users to enable migration mode on existing chats. Previously, users were only allowed to initiate import operations on newly created Standard Channels in empty state ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
-This API expands import capabilities to
-
-1) New Chats (Group, 1:1, and Federated)
-2) Existing Chats (Group, 1:1, and Federated).
-
 Starts the message migration process by populating `migration mode` to `inProgress` for a [chat](../resources/chat.md).
 
 Users are also allowed to define minimum timestamp for contents to be migrated, allowing them to import messages in the past. Provided timestamp is required to be older than the current `createdDateTime` for a [chat](../resources/chat.md).
@@ -28,6 +23,11 @@ Users are also allowed to define minimum timestamp for contents to be migrated, 
 Provided timestamp will be used to replace existing `createdDateTime` of the [chat](../resources/chat.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Supported types of chats
+
+1) New Chats (Group, 1:1, and Federated)
+2) Existing Chats (Group, 1:1, and Federated).
 
 ## Permissions
 
