@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of fully qualified domain name (FQDN) destinations in a [TLS inspection rule](../resources/tlsinspectionrule.md) for specifying domain names for TLS inspection matching.
+Represents a collection of fully qualified domain name (FQDN) destinations in a [TLS inspection rule](../resources/networkaccess-tlsinspectionrule.md) for specifying domain names for TLS inspection matching.
 
 Inherits from [microsoft.graph.networkaccess.tlsInspectionDestination](../resources/networkaccess-tlsinspectiondestination.md).
 

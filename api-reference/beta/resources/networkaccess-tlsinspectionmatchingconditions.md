@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the conditions used to match network traffic in [TLS inspection rules](../resources/networkaccess-tlsinspectionrules.md). 
+Defines the conditions used to match network traffic in [TLS inspection rules](../resources/networkaccess-tlsinspectionrule.md). 
 
 ## Properties
 |Property|Type|Description|
