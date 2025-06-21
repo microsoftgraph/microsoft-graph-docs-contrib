@@ -1,6 +1,6 @@
 ---
 title: "tlsInspectionPolicyLink resource type"
-description: "Links a TLS inspection policy to a filtering profile.."
+description: "Links a TLS inspection policy to a filtering profile."
 author: "sisharm"
 ms.date: 05/23/2025
 ms.localizationpriority: medium
@@ -32,12 +32,12 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |:---|:---|:---|
 |id|String|The unique identifier for the policy link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). Inherits from [entity](../resources/entity.md).|
 |state|microsoft.graph.networkaccess.status|The state of the policy link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`).|
-|version|String|Version number of the policy link. Supports `$filter` (`eq`, `ne`, `startsWith`). Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
+|version|String|Version number of the policy link.   Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|The TLS inspection policy associated with this link. This will be of derived type [microsoft.graph.networkaccess.tlsInspectionpolicy](../resources/networkaccess-tlsinspectionpolicy.md). Supports `$expand`.|
+|policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|The TLS inspection policy associated with this link. The policy is of derived type [microsoft.graph.networkaccess.tlsInspectionpolicy](../resources/networkaccess-tlsinspectionpolicy.md). Supports `$expand`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
