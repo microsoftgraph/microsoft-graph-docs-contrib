@@ -54,8 +54,8 @@ You can specify the following properties when creating a **tlsInspectionPolicy**
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The display name of the policy. Required.|
 |description|String|Optional description of the policy.|
+|name|String|The display name of the policy. Required.|
 |settings|[microsoft.graph.networkaccess.tlsInspectionPolicySettings](../resources/networkaccess-tlsinspectionpolicysettings.md)|Settings that configure the default behavior of the policy. Required.|
 
 ## Response

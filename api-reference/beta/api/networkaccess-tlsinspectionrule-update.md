@@ -52,12 +52,12 @@ PATCH /networkAccess/tlsInspectionPolicies/{tlsInspectionPolicyId}/policyRules/{
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The display name of the rule.|
-|description|String|Optional description explaining the purpose of the rule.|
 |action|microsoft.graph.networkaccess.tlsInspectionAction|The action to take when traffic matches this rule. The possible values are: `bypass`, `inspect`.|
+|description|String|Optional description explaining the purpose of the rule.|
+|matchingConditions|[microsoft.graph.networkaccess.tlsInspectionMatchingConditions](../resources/networkaccess-tlsinspectionmatchingconditions.md)|The conditions that determine when this rule should be applied to traffic.|
+|name|String|The display name of the rule.|
 |priority|Int64|The priority of the rule. Rules are evaluated in ascending order of priority. Lower numbers indicate higher priority.|
 |settings|[microsoft.graph.networkaccess.tlsInspectionRuleSettings](../resources/networkaccess-tlsinspectionrulesettings.md)|Additional settings that configure the rule's behavior.|
-|matchingConditions|[microsoft.graph.networkaccess.tlsInspectionMatchingConditions](../resources/networkaccess-tlsinspectionmatchingconditions.md)|The conditions that determine when this rule should be applied to traffic.|
 
 ## Response
 
