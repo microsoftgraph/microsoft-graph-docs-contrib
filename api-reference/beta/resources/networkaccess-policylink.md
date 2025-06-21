@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type from which the [forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md), [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) and [tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) resource types are derived.
+[PolicyLink](../resources/networkaccess-policylink.md) is an abstract type from which the [forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md), [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md), and [tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) resource types are derived.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
