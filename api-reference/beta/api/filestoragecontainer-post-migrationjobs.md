@@ -94,6 +94,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "value": "31090ce2-3b99-fa40-7ec5-46ebeeb5900b"
+  "id": "31090ce2-3b99-fa40-7ec5-46ebeeb5900b"
 }
 ```

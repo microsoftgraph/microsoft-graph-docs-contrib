@@ -85,9 +85,8 @@ Added **resourceAvailabilityCheckMissingRegistrationForLocation** as a possible 
 
 ### Files
 
-- [Delete](/graph/api/recyclebinitem-delete?view=graph-rest-beta&preserve-view=true) recycle bin items permanently from the recycle bin of a file storage container.
-- [Restore](/graph/api/recyclebinitem-restore?view=graph-rest-beta&preserve-view=true) recycle bin items from the recycle bin of a file storage container.
-- Create [migrationJob](/graph/resource/migrationjob?view=graph-rest-beta&preserve-view=true) and get progress in a file storage container.
+- [Delete](/graph/api/recyclebinitem-delete?view=graph-rest-beta&preserve-view=true) recycle bin items permanently from the recycle bin of a file storage container. 
+- [Restore](/graph/api/recyclebinitem-restore?view=graph-rest-beta&preserve-view=true) recycle bin items from the recycle bin of a file storage container. 
 
 ### People and workplace intelligence | People admin settings
 
