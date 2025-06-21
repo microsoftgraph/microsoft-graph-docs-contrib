@@ -38,10 +38,10 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 |:---|:---|:---|
 |id|String|The unique identifier for the policy. Read-only. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 |name|String|The display name of the policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
-|description|String|Optional description of the policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
-|lastModifiedDateTime|DateTimeOffset|The timestamp of when the policy was last modified. Read-only.|
+|description|String|Optional description of the policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Supports `$filter` (`eq`, `ne`, `startsWith`)|
+|lastModifiedDateTime|DateTimeOffset|The timestamp of when the policy was last modified. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`) and `$orderby`. Read-only.|
 |settings|[microsoft.graph.networkaccess.tlsInspectionPolicySettings](networkaccess-tlsinspectionpolicysettings.md)|Settings that configure the default behavior of the policy.|
-|version|String|Version number of the policy. Read-only.  Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|version|String|Version number of the policy. Supports `$filter` (`eq`, `ne`, `startsWith`). Read-only. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 
 ## Relationships
 

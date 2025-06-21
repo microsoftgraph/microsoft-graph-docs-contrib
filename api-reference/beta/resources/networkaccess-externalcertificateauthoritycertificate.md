@@ -34,11 +34,11 @@ Inherits from [entity](../resources/entity.md)
 |certificate|String|The signed X.509 certificate in PEM format.|
 |certificateSigningRequest|String|The Certificate Signing Request (CSR) generated when creating the CA. This CSR should be signed using the customer's PKI infrastructure. Read-only.|
 |chain|String|The certificate chain in PEM format, containing all intermediate certificates up to the root CA.|
-|commonName|String|The common name (CN) field of the certificate.|
+|commonName|String|The common name (CN) field of the certificate. Supports `$filter` (`eq`, `ne`, `startsWith`)|
 |id|String|The unique identifier for the CA. Inherits from [entity](../resources/entity.md). Read-only.|
-|name|String|The display name of the CA.|
-|organizationName|String|The organization name (OU) field of the certificate.|
-|status|microsoft.graph.networkaccess.tlsCertificateStatus|The current status of the certificate. The possible values are: `csrGenerated`, `enrolling`, `active`, `unknownFutureValue`. Read-only.|
+|name|String|The display name of the CA. Supports `$filter` (`eq`, `ne`, `startsWith`)|
+|organizationName|String|The organization name (OU) field of the certificate. Supports `$filter` (`eq`, `ne`, `startsWith`)|
+|status|microsoft.graph.networkaccess.tlsCertificateStatus|The current status of the certificate. The possible values are: `csrGenerated`, `enrolling`, `active`, `unknownFutureValue`. Read-only. Supports `$filter` (`eq`, `ne`)|
 |validity|[microsoft.graph.networkaccess.validityDate](../resources/networkaccess-validitydate.md)|The validity period of the certificate, including start and end dates.|
 
 ## Relationships

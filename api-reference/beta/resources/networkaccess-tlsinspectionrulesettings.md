@@ -19,7 +19,7 @@ For details about the parent resource, see [tlsInspectionRule](../resources/netw
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|status|microsoft.graph.networkaccess.securityRuleStatus|The enforcement status of the rule. The possible values are: `enabled`, `disabled`, `reportOnly`, `unknownFutureValue`.|
+|status|microsoft.graph.networkaccess.securityRuleStatus|The enforcement status of the rule. The possible values are: `enabled`, `disabled`, `reportOnly`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`).|
 
 ## Relationships
 None.

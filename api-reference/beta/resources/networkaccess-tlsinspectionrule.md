@@ -36,8 +36,8 @@ Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkacc
 |description|String|Optional description explaining the purpose of the rule.|
 |id|String|The unique identifier for the rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md). Inherits from [entity](../resources/entity.md).|
 |matchingConditions|[microsoft.graph.networkaccess.tlsInspectionMatchingConditions](../resources/networkaccess-tlsinspectionmatchingconditions.md)|The conditions that determine when this rule should be applied to traffic.|
-|name|String|The display name of the rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
-|priority|Int64|The priority of the rule. Rules are evaluated in ascending order of priority. Lower numbers indicate higher priority.|
+|name|String|The display name of the rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md). Supports `$filter` (`eq`, `ne`, `startsWith`).|
+|priority|Int64|The priority of the rule. Rules are evaluated in ascending order of priority. Lower numbers indicate higher priority. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`) and `$orderby`.|
 |settings|[microsoft.graph.networkaccess.tlsInspectionRuleSettings](../resources/networkaccess-tlsinspectionrulesettings.md)|Additional settings that configure the rule's behavior.|
 
 ## Relationships

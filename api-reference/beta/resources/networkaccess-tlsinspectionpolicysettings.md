@@ -20,7 +20,7 @@ Defines the default behavior and configuration settings for a TLS inspection pol
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultAction|microsoft.graph.networkaccess.tlsInspectionAction|The default action to take when no rules in the policy match the traffic. The possible values are: `bypass`, `inspect`, `unknownFutureValue`.|
+|defaultAction|microsoft.graph.networkaccess.tlsInspectionAction|The default action to take when no rules in the policy match the traffic. The possible values are: `bypass`, `inspect`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`).|
 
 ## Relationships
 None.
