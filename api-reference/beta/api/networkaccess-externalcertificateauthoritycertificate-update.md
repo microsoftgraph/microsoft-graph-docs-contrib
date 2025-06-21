@@ -50,8 +50,8 @@ PATCH /networkAccess/tls/externalCertificateAuthorityCertificates/{externalCerti
 
 |Property|Type|Description|
 |:---|:---|:---|
-|certificate|String|The signed X.509 certificate in PEM format. Required.|
-|chain|String|The certificate chain in PEM format, containing all intermediate certificates up to the root CA. Required.|
+|certificate|String|The signed X.509 certificate in PEM format. The certificate should be base64 encoded.|
+|chain|String|The certificate chain in PEM format, containing all intermediate certificates up to the root CA. The certificate should be base64 encoded.|
 
 ## Response
 
@@ -73,20 +73,13 @@ PATCH https://graph.microsoft.com/beta/networkAccess/tls/externalCertificateAuth
 Content-Type: application/json
 
 {
-	"certificate" : "<certificate>",
-	"chain" : "<chain>"
+  "certificate": "-----BEGIN CERTIFICATE-----\nMIIBIjANBgkqh...",
+  "chain": "-----BEGIN CERTIFICATE-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AM..."
 }
 ```
 
 ### Response
 
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
 ``` http
 HTTP/1.1 204 No Content
 ```

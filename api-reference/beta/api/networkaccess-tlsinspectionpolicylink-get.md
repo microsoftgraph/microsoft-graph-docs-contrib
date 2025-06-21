@@ -42,7 +42,7 @@ GET /networkAccess/filteringProfiles/{filteringProfileId}/policies/{tlsPolicyLin
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports all valid [OData query parameters](/graph/query-parameters) to help customize the response, except for `$search` and `$format`.
 
 ## Request headers
 

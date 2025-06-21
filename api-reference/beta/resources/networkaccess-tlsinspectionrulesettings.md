@@ -14,12 +14,12 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines settings for a TLS inspection rule.
+For details about the parent resource, see [tlsInspectionRule](../resources/networkaccess-tlsinspectionrule.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|status|microsoft.graph.networkaccess.securityRuleStatus|The enforcement status of the rule. The possible values are: `enabled`, `disabled`, `reportOnly`.|
+|status|microsoft.graph.networkaccess.securityRuleStatus|The enforcement status of the rule. The possible values are: `enabled`, `disabled`, `reportOnly`, `unknownFutureValue`.|
 
 ## Relationships
 None.

@@ -1,5 +1,5 @@
 ---
-title: "List tlsInspection policyRules"
+title: "List policyRules for TLS Inspection"
 description: "Get a list of the tlsInspectionRule objects in a TLS inspection policy."
 author: "sisharm"
 ms.date: 05/23/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
-# List tlsInspection policyRules
+# List policyRules for TLS Inspection
 
 Namespace: microsoft.graph.networkaccess
 
@@ -41,7 +41,7 @@ GET /networkAccess/tlsInspectionPolicies/{tlsInspectionPolicyId}/policyRules
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports all valid [OData query parameters](/graph/query-parameters) to help customize the response, except for `$search` and `$format`.
 
 ## Request headers
 

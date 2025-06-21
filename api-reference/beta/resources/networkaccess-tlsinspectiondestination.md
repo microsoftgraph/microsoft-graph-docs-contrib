@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that represents the set of destinations to be matched in TLS inspection rules. This type serves as a base for specific destination types like FQDN and web categories in TLS inspection policies.
+An abstract type that represents the set of destinations to be matched in [TLS inspection rules](../resoruces/tlsinspectionrule.md). This type serves as a base for specific destination types like FQDN and web categories in TLS inspection policies.
 
 This is an abstract type that can be instantiated as either:
 - [tlsInspectionFqdnDestination](networkaccess-tlsinspectionfqdndestination.md) - For matching against fully qualified domain names (FQDNs)

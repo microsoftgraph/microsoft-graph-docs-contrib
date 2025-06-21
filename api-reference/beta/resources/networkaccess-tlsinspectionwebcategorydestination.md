@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of web category destinations in a TLS inspection rule, allowing administrators to apply TLS inspection based on predefined web content categories.
+Represents a collection of web category destinations in a [TLS inspection rule](../resources/networkaccess-tlsinspectionrules.md) for applying TLS inspection based on predefined web content categories.
 
 Inherits from [microsoft.graph.networkaccess.tlsInspectionDestination](../resources/networkaccess-tlsinspectiondestination.md).
 

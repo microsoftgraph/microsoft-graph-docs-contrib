@@ -38,7 +38,7 @@ None.
 |reports|[microsoft.graph.networkaccess.reports](../resources/networkaccess-reports.md)|Represents the status of the Global Secure Access services for the tenant.|
 |settings|[microsoft.graph.networkaccess.settings](../resources/networkaccess-settings.md)|Global Secure Access settings.|
 |tenantStatus|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Represents the status of the Global Secure Access services for the tenant.|
-|tlsInspectionPolicies|[microsoft.graph.networkaccess.tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) collection|A tls inspection policy allows Global Secure Access admins to configure tls termination for their network traffic. |
+|tlsInspectionPolicies|[microsoft.graph.networkaccess.tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) collection|Allows you to configure TLS termination for your organization's network traffic through Global Secure Access. |
 
 ## JSON representation
 The following JSON representation shows the resource type.

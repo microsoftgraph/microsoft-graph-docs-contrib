@@ -55,7 +55,7 @@ You can specify the following properties when creating a **tlsInspectionPolicyLi
 |Property|Type|Description|
 |:---|:---|:---|
 |state|microsoft.graph.networkaccess.status|The state of the policy link. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
-|policy|[microsoft.graph.networkaccess.tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)|The TLS inspection policy to be linked. Supply the policy object with its ID. Required.|
+|policy|[microsoft.graph.networkaccess.tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)|The TLS inspection policy to be linked. Supply only the **id** of the policy. Required.|
 
 ## Response
 

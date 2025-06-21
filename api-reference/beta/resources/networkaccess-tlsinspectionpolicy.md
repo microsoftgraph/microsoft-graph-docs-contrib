@@ -1,6 +1,6 @@
 ---
 title: "tlsInspectionPolicy resource type"
-description: "A TLS inspection policy allows Global Secure Access admins to configure tls termination for their network traffic within GSA."
+description: "Let's you configure TLS termination for your organization's network traffic within Global Secure Access."
 author: "sisharm"
 ms.date: 05/23/2025
 ms.localizationpriority: medium
@@ -14,9 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A `tlsInspectionPolicy` allows Global Secure Access admins to configure tls termination for their network traffic within GSA.
-
-A `tlsInspectionPolicy` can be linked to a filteringProfile using a [microsoft.graph.networkaccess.tlsInspectionPolicyLink](../resources/networkaccess-tlsInspectionPolicyLink.md). Each filteringProfile is allowed to hold a single tlsInspectionPolicyLink.
+Let's you configure TLS termination for your organization's network traffic within Global Secure Access. You can link the policy to a filtering profile using the [microsoft.graph.networkaccess.tlsInspectionPolicyLink resource](../resources/networkaccess-tlsInspectionPolicyLink.md). Each filtering profile can hold only one **tlsInspectionPolicyLink**.
 
 
 Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).
@@ -38,12 +36,12 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the policy. Read-only.|
-|name|String|The display name of the policy.|
-|description|String|Optional description of the policy.|
+|id|String|The unique identifier for the policy. Read-only. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|name|String|The display name of the policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|description|String|Optional description of the policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of when the policy was last modified. Read-only.|
 |settings|[microsoft.graph.networkaccess.tlsInspectionPolicySettings](networkaccess-tlsinspectionpolicysettings.md)|Settings that configure the default behavior of the policy.|
-|version|String|Version number of the policy. Read-only.|
+|version|String|Version number of the policy. Read-only.  Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 
 ## Relationships
 

@@ -53,9 +53,9 @@ PATCH /networkAccess/tlsInspectionPolicies/{tlsInspectionPolicyId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The display name of the policy. Required.|
+|name|String|The display name of the policy.|
 |description|String|Optional description of the policy.|
-|settings|[microsoft.graph.networkaccess.tlsInspectionPolicySettings](../resources/networkaccess-tlsinspectionpolicysettings.md)|Settings that configure the default behavior of the policy. Required.|
+|settings|[microsoft.graph.networkaccess.tlsInspectionPolicySettings](../resources/networkaccess-tlsinspectionpolicysettings.md)|Settings that configure the default behavior of the policy.|
 
 ## Response
 

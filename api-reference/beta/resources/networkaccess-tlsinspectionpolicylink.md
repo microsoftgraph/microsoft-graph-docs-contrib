@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the link between a filtering profile and a TLS inspection policy.
+Represents the link between a [filtering profile](../resources/networkaccess-filteringprofile.md) and a [TLS inspection policy](../resources/networkaccess-tlsinspectionpolicy.md).
 
 Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).
 
@@ -22,7 +22,8 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/networkaccess-tlsinspectionpolicylink-list.md)|[microsoft.graph.networkaccess.tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) collection|Get a list of the tlsInspectionPolicyLink objects on a filtering profile.|
-|[Get](../api/networkaccess-tlsinspectionpolicylink-get.md)|[microsoft.graph.networkaccess.tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md)|Get a tlsInspectionPolicyLink object.|
+|[Create](../api/networkaccess-tlsinspectionpolicylink-post.md)|[microsoft.graph.networkaccess.tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md)|Create a new tlsInspectionPolicyLink object on a filtering profile.|
+|[Get](../api/networkaccess-tlsinspectionpolicylink-get.md)|[microsoft.graph.networkaccess.tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md)|Get a tlsInspectionPolicyLink object on a filtering profile.|
 |[Update](../api/networkaccess-tlsinspectionpolicylink-update.md)|None|Update the properties of a tlsInspectionPolicyLink object.|
 |[Delete](../api/networkaccess-tlsinspectionpolicylink-delete.md)|None|Delete a tlsInspectionPolicyLink object.|
 
@@ -36,7 +37,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[microsoft.graph.networkaccess.tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)|The TLS inspection policy associated with this link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
+|policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|The TLS inspection policy associated with this link. This will be of derived type [microsoft.graph.networkaccess.tlsInspectionpolicy](../resources/networkaccess-tlsinspectionpolicy.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.
