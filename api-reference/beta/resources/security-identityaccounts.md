@@ -20,25 +20,22 @@ This is an abstract type.
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/security-identitycontainer-list-identityaccounts.md)|[microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md) collection|Get a list of the identityAccounts objects and their properties.|
-|[Create](../api/security-identitycontainer-post-identityaccounts.md)|[microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md)|Create a new identityAccounts object.|
-|[Get](../api/security-identityaccounts-get.md)|[microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md)|Read the properties and relationships of a identityAccounts object.|
-|[Update](../api/security-identityaccounts-update.md)|[microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md)|Update the properties of a identityAccounts object.|
-|[Delete](../api/security-identitycontainer-delete-identityaccounts.md)|None|Delete a identityAccounts object.|
-|[invokeAction](../api/security-identityaccounts-invokeaction.md)|[microsoft.graph.security.invokeActionResult](../resources/security-invokeactionresult.md)|**TODO: Add Description**|
+|Method|Return type| Description                                                         |
+|:---|:---|:--------------------------------------------------------------------|
+|[List](../api/security-identitycontainer-list-identityaccounts.md)|[microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md) collection| Get a list of the identityAccounts objects and their properties.    |
+|[Get](../api/security-identityaccounts-get.md)|[microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md)| Read the properties and relationships of a identityAccounts object. |
+|[invokeAction](../api/security-identityaccounts-invokeaction.md)|[microsoft.graph.security.invokeActionResult](../resources/security-invokeactionresult.md)| Invoke an action for the account                                    |
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accounts|[microsoft.graph.security.account](../resources/security-account.md) collection|**TODO: Add Description**|
-|cloudSecurityIdentifier|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|domain|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isEnabled|Boolean|**TODO: Add Description**|
-|onPremisesSecurityIdentifier|String|**TODO: Add Description**|
+|accounts|[microsoft.graph.security.account](../resources/security-account.md) collection|Collection of accounts of the identity in different identity providers|
+|cloudSecurityIdentifier|String|The cloud security identifier of the identityAccount|
+|displayName|String|The display name of the identityAccount|
+|domain|String|The domain name of the identityAccount|
+|id|String|Unique identifier to represent the identityAccounts Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|isEnabled|Boolean|Boolean indicating if the identityAccounts is enabled|
+|onPremisesSecurityIdentifier|String|The on-premises security identifier of the identityAccount|
 
 ## Relationships
 None.

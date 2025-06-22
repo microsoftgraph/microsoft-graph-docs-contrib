@@ -1056,6 +1056,28 @@ Namespace: microsoft.graph.security
 |recommended|
 
 
+### action values
+
+|Member|
+|:---|
+|disable|
+|enable|
+|forcePasswordReset|
+|revokeAllSessions|
+|requireUserToSignInAgain|
+|markUserAsCompromised|
+|unknownFutureValue|
+
+
+### identityProvider values
+
+|Member|
+|:---|
+|entraID|
+|activeDirectory|
+|okta|
+|unknownFutureValue|
+
 <!--
 {
   "type": "#page.annotation",

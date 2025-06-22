@@ -17,12 +17,12 @@ Namespace: microsoft.graph.security
 Represents the invoke action result after disabling an account.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|accountId|String|**TODO: Add Description**|
-|action|microsoft.graph.security.action|**TODO: Add Description**. The possible values are: `disable`, `enable`, `forcePasswordReset`, `revokeAllSessions`, `requireUserToSignInAgain`, `markUserAsCompromised`, `unknownFutureValue`.|
-|correlationId|String|**TODO: Add Description**|
-|identityProvider|microsoft.graph.security.identityProvider|**TODO: Add Description**. The possible values are: `entraID`, `activeDirectory`, `okta`, `unknownFutureValue`.|
+|Property| Type                                                                                  |Description|
+|:---|:--------------------------------------------------------------------------------------|:---|
+|accountId| String                                                                                |The account ID|
+|action| microsoft.graph.security.action                                                       |The type of action|
+|correlationId| String                                                                                |The unique identifier for tracking the request|
+|identityProvider| microsoft.graph.security.identityProvider                                             |The identity provider type|
 
 ## Relationships
 None.

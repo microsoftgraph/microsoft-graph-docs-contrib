@@ -17,11 +17,11 @@ Namespace: microsoft.graph.security
 Represents the account.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|actions|microsoft.graph.security.action collection|**TODO: Add Description**|
-|identifier|String|**TODO: Add Description**|
-|identityProvider|microsoft.graph.security.identityProvider|**TODO: Add Description**. The possible values are: `entraID`, `activeDirectory`, `okta`, `unknownFutureValue`.|
+|Property| Type                                                                                                     |Description|
+|:---|:---------------------------------------------------------------------------------------------------------|:---|
+|actions| microsoft.graph.security.action collection                                                               |List of the type of action|
+|identifier| String                                                                                                   |The account ID|
+|identityProvider| microsoft.graph.security.identityProvider                                                                |The identity provider|
 
 ## Relationships
 None.
