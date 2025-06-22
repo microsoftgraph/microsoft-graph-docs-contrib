@@ -42,3 +42,4 @@ The following JSON representation shows the resource type.
   "identityProvider": "String",
   "correlationId": "String"
 }
+```

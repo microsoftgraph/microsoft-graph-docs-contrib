@@ -1,5 +1,5 @@
 ---
-title: "account resource type"
+title: "Account resource type"
 description: "Account field"
 author: "SamuelBenichou"
 ms.date: 06/22/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# account resource type
+# Account resource type
 
 Namespace: microsoft.graph.security
 
@@ -42,3 +42,4 @@ The following JSON representation shows the resource type.
     "String"
   ]
 }
+```
