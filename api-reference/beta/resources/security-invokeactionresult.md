@@ -1,0 +1,44 @@
+---
+title: "invokeActionResult resource type"
+description: "The invoke action result"
+author: "SamuelBenichou"
+ms.date: 06/22/2025
+ms.localizationpriority: medium
+ms.subservice: "security"
+doc_type: resourcePageType
+---
+
+# invokeActionResult resource type
+
+Namespace: microsoft.graph.security
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the invoke action result after disabling an account.
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|accountId|String|**TODO: Add Description**|
+|action|microsoft.graph.security.action|**TODO: Add Description**. The possible values are: `disable`, `enable`, `forcePasswordReset`, `revokeAllSessions`, `requireUserToSignInAgain`, `markUserAsCompromised`, `unknownFutureValue`.|
+|correlationId|String|**TODO: Add Description**|
+|identityProvider|microsoft.graph.security.identityProvider|**TODO: Add Description**. The possible values are: `entraID`, `activeDirectory`, `okta`, `unknownFutureValue`.|
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.security.invokeActionResult"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.security.invokeActionResult",
+  "accountId": "String",
+  "action": "String",
+  "identityProvider": "String",
+  "correlationId": "String"
+}
