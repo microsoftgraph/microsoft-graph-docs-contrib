@@ -28,9 +28,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][] (preview), [contact][], [conversation][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [openShiftChangeRequest][], [presence][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [todoTask][], [user][], [baseTask][] (deprecated) |
+| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][] (preview), [contact][], [conversation][], [conversationMember][], [driveItem][], [event][], [group][], [health monitoring alert][], [list][], [message][], [offerShiftRequest][], [openShiftChangeRequest][], [presence][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [todoTask][], [user][], [baseTask][] (deprecated) |
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [list][], [message][], [todoTask][], [baseTask][] (deprecated) |
-| Application                            | [alert][], [callRecord][], [approvals][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][], [contact][],  [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [onlineMeeting][], [openShiftChangeRequest][], [printer][], [printTaskDefinition][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [user][] |
+| Application                            | [alert][], [callRecord][], [approvals][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][], [contact][],  [conversationMember][], [driveItem][], [event][], [group][], [health monitoring alert][], [list][], [message][], [offerShiftRequest][], [onlineMeeting][], [openShiftChangeRequest][], [printer][], [printTaskDefinition][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [user][] |
 
 ## Related content
 
@@ -70,3 +70,4 @@ In general, subscription operations require read permission to the resource. For
 [callTranscript]: ./calltranscript.md
 [callRecording]: ./callrecording.md
 [approvals]: ./approvalitem.md
+[health monitoring alert]: ./healthmonitoring-alert.md

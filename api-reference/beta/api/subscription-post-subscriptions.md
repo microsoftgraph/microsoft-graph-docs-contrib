@@ -89,6 +89,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 |[virtualEventWebinar](../resources/virtualeventwebinar.md) | VirtualEvent.Read | Not supported. | VirtualEvent.Read.All |
 |[virtualEventTownhall](../resources/virtualeventtownhall.md) | VirtualEvent.Read | Not supported. | VirtualEvent.Read.All |
+|[health monitoring alert](../resources/healthmonitoring-alert.md) <br />`reports/healthmonitoring/alerts`| HealthMonitoringAlertConfig.ReadWrite.All | Not supported. | HealthMonitoringAlertConfig.ReadWrite.All |
 |[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported.  |
 
 > [!NOTE]
@@ -243,6 +244,7 @@ The following are valid values for the resource property.
 |[event](../resources/event.md)|`me/events`|
 |[group](../resources/group.md)|`groups`|
 |[group conversation](../resources/conversation.md)|`groups('{id}')/conversations`|
+|[health monitoring alert](../resources/healthmonitoring-alert.md)|`reports/healthmonitoring/alerts`|
 |[list](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[message](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[onlineMeeting](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`|
