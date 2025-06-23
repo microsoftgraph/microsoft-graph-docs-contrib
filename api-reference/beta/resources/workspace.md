@@ -45,7 +45,7 @@ Inherits from [place](./place.md).
 |floorLabel|String|A human-readable label for the [floor](./floor.md), such as "Ground Floor". |
 |floorNumber|Int32|The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. |
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **workspace** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
-|id|String|A unique identifier for the **workspace**. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. Inherited from [entity](./entity.md). Inherits from [entity](./entity.md)|
+|id|String|A unique identifier for the **workspace**. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. Inherited from [entity](./entity.md). |
 |isWheelChairAccessible|Boolean|Whether or not the **workspace** is wheelchair accessible. Inherited from [place](./place.md).|
 |mode|[placeMode](./placemode.md) |The mode for a **workspace**. We support 3 modes:
 <ul><li>**bookable** - Workspaces that can be booked in advance using desk pool reservation tools</li>

@@ -41,21 +41,21 @@ Inherits from [place](./place.md).
 <li>**unknown** – Default or unspecified booking behavior</li></ul> |
 |building |String |The name or identifier of the [building](./building.md) where the **room** is located. |
 |capacity |Integer |The maximum number of people in the **room** can accommodate. |
-|description |String |User-defined description of the **room**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) |
+|description |String |User-defined description of the **room**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md). |
 |displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the **room**. |
 |displayName |String |The name that is associated with the **room**. |
-|emailAddress |String |The email address associated with the room. This email address is used for booking. |
-|floorLabel |String |A human-readable label for the **floor**, such as "Ground Floor". |
+|emailAddress |String |The email address associated with the **room**. This email address is used for booking. |
+|floorLabel |String |A human-readable label for the [floor](./floor.md), such as "Ground Floor". |
 |floorNumber |Integer |The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. |
-|[geoCoordinates](./geocoordinates.md) |outlookGeoCoordinates |Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates. |
+|geoCoordinates |[outlookGeoCoordinates](./outlookgeocoordinates.md) |Specifies the **room** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). |
 |id |String |A unique identifier for the **room**. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. |
 |isTeamsEnabled |Boolean |Whether or not the **room** is configured with the Microsoft Teams Room system. |
-|isWheelChairAccessible |Boolean |Whether or not the **room** is wheelchair accessible. |
+|isWheelChairAccessible |Boolean |Whether or not the **room** is wheelchair accessible. Inherited from [place](../resources/place.md).|
 |nickname |String |A short, friendly name for the **room**, often used for easier identification or display in UI. |
-|parentId |String |**id** of a parent **floor** or **section**. |
+|parentId |String |**id** of a parent [floor](./floor.md) or [section](./section.md). |
 |phone |String |The phone number of the **room**. |
 |placeId |String |An alternate immutable unique identifier of the **room**. Read-only. |
-|resourceLinks |ResourceLink collection	|A set of links to external resources that are associated with the **room**. |
+|resourceLinks |[resourceLink](../resources/resourcelink.md) collection	|A set of links to external resources that are associated with the **room**. |
 |tags |Collection(String) |Custom tags that are associated with the **room** for categorization or filtering. |
 |videoDeviceName |String |The name of the video device that is available in the **room**. |
 

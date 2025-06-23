@@ -50,32 +50,32 @@ In the request body, supply a JSON representation of the [room](../resources/roo
 
 You can specify the following properties when creating a **room**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|parentId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|tags|String collection|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|isWheelChairAccessible|Boolean|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|label|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|emailAddress|String|**TODO: Add Description** Optional.|
-|nickname|String|**TODO: Add Description** Required.|
-|building|String|**TODO: Add Description** Optional.|
-|floorNumber|Int32|**TODO: Add Description** Optional.|
-|capacity|Int32|**TODO: Add Description** Optional.|
-|bookingType|bookingType|**TODO: Add Description**. The possible values are: `unknown`, `standard`, `reserved`. Optional.|
-|audioDeviceName|String|**TODO: Add Description** Optional.|
-|videoDeviceName|String|**TODO: Add Description** Optional.|
-|displayDeviceName|String|**TODO: Add Description** Optional.|
-|floorLabel|String|**TODO: Add Description** Optional.|
-|isTeamsEnabled|Boolean|**TODO: Add Description** Required.|
-
-
+|address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the **room**, including the street, city, state, country or region, and postal code. Optional.|
+|audioDeviceName|String|The name of the audio device that is available in the [room](../resources/room.md). Optional.|
+|bookingType|enum |Specifies how the [room](../resources/room.md) can be booked. Possible values are:
+<ul><li>**standard** - Available for general booking</li>
+<li>**reserved** – Reserved for specific users or purposes</li>
+<li>**unknown** – Default or unspecified booking behavior</li></ul>Optional. |
+|building|String|The name or identifier of the [building](./building.md) where the [room](../resources/room.md) is located. Optional.|
+|capacity|Int32|The maximum number of people in the [room](../resources/room.md) can accommodate. Optional.|
+|description|String|User-defined description of the [room](../resources/room.md). (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md). Optional.|
+|displayDeviceName|String|The name of the display device (such as a monitor or projector) that is available in the **room**. Optional.|
+|displayName|String|The name that is associated with the [room](../resources/room.md). Required.|
+|emailAddress|String|The email address associated with the [room](../resources/room.md). This email address is used for booking. Optional.|
+|floorLabel|String|A human-readable label for the [floor](../resources/floor.md), such as "Ground Floor". Optional.|
+|floorNumber|Int32|The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. Optional.|
+|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [room](../resources/room.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). Optional.|
+|isTeamsEnabled|Boolean|Whether or not the [room](../resources/room.md) is configured with the Microsoft Teams Room system. Required.|
+|isWheelChairAccessible|Boolean|Whether or not the [room](../resources/room.md) is wheelchair accessible. Inherited from [place](../resources/place.md). Required.|
+|nickname|String|A short, friendly name for the [room](../resources/room.md), often used for easier identification or display in UI. Required.|
+|parentId|String|**id** of a parent [floor](../resources/floor.md) or [section](../resources/section.md). Inherited from [place](../resources/place.md). Optional.|
+|phone|String|The phone number of the [room](../resources/room.md). Inherited from [place](../resources/place.md). Optional.|
+|placeId|String|An alternate immutable unique identifier of the [room](../resources/room.md). Inherited from [place](../resources/place.md). Optional.|
+|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|A set of links to external resources that are associated with the [room](../resources/room.md). Inherited from [place](../resources/place.md). Required.|
+|tags|String collection|Custom tags that are associated with the [room](../resources/room.md) for categorization or filtering. Inherited from [place](../resources/place.md). Required.|
+|videoDeviceName|String|The name of the video device that is available in the [room](../resources/room.md). Optional.|
 
 ## Response
 
