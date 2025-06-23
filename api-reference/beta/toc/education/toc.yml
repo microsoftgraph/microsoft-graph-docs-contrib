@@ -318,7 +318,7 @@ items:
   items:
   - name: Reading assignment submission
     href: ../../resources/readingassignmentsubmission.md
-  - name: Get
+  - name: List
     href: ../../api/reportsroot-list-readingassignmentsubmissions.md
 - name: Reading coach passage
   items:
@@ -330,7 +330,7 @@ items:
   items:
   - name: Reflect check-in response
     href: ../../resources/reflectcheckinresponse.md
-  - name: Get
+  - name: List
     href: ../../api/reportsroot-list-reflectcheckinresponses.md
 - name: Related contact
   items:
