@@ -22,8 +22,8 @@ For more information on how to set up services in Places, go to [Add services to
 |Property|Type|Description|
 |:---|:---|:---|
 |linkType|resourceLinkType|Type of link. The possible values are: `url`, `unknownFutureValue`.|
-|name|String|The link text that is visible in the Places app. (Maximum length=200 characters)|
-|value|String|URL. (Maximum length=1000 characters)|
+|name|String|The link text that is visible in the Places app. The max length is 200 characters|
+|value|String|The URL of the resource link. The max length is 200 characters.|
 
 ## Relationships
 None.
