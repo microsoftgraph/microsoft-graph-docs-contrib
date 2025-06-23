@@ -247,7 +247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "engagementConversationDiscussionMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [engagementConversationDiscussionMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationDiscussionMessage?view=graph-rest-beta) resource.",
+          "Description": "Added the [engagementConversationDiscussionMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationDiscussionMessage?view=graph-rest-beta) resource type.",
           "Target": "engagementConversationDiscussionMessage"
         },
         {
@@ -255,7 +255,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "engagementConversationQuestionMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [engagementConversationQuestionMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationQuestionMessage?view=graph-rest-beta) resource.",
+          "Description": "Added the [engagementConversationQuestionMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationQuestionMessage?view=graph-rest-beta) resource type.",
           "Target": "engagementConversationQuestionMessage"
         },      
         {
@@ -263,7 +263,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "engagementConversationSystemMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [engagementConversationSystemMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationSystemMessage?view=graph-rest-beta) resource.",
+          "Description": "Added the [engagementConversationSystemMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationSystemMessage?view=graph-rest-beta) resource type.",
           "Target": "engagementConversationSystemMessage"
         },
         {
@@ -271,7 +271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "engagementIdentitySet",
           "ChangeType": "Addition",
-          "Description": "Added the [engagementIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/engagementIdentitySet?view=graph-rest-beta) resource.",
+          "Description": "Added the [engagementIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/engagementIdentitySet?view=graph-rest-beta) resource type.",
           "Target": "engagementIdentitySet"
         },
         {
@@ -287,7 +287,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "engagementConversation",
           "ChangeType": "Addition",
-          "Description": "Added the [engagementConversation](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversation?view=graph-rest-beta) resource.",
+          "Description": "Added the [engagementConversation](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversation?view=graph-rest-beta) resource type.",
           "Target": "engagementConversation"
         },
         {
@@ -295,7 +295,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "engagementConversationMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [engagementConversationMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessage?view=graph-rest-beta) resource.",
+          "Description": "Added the [engagementConversationMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessage?view=graph-rest-beta) resource type.",
           "Target": "engagementConversationMessage"
         },
         {
@@ -303,7 +303,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "engagementConversationMessageReaction",
           "ChangeType": "Addition",
-          "Description": "Added the [engagementConversationMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessageReaction?view=graph-rest-beta) resource.",
+          "Description": "Added the [engagementConversationMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessageReaction?view=graph-rest-beta) resource and an associated method.",
           "Target": "engagementConversationMessageReaction"
         },
         {
@@ -311,8 +311,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onlineMeetingEngagementConversation",
           "ChangeType": "Addition",
-          "Description": "Added the [onlineMeetingEngagementConversation](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingEngagementConversation?view=graph-rest-beta) resource.",
+          "Description": "Added the [onlineMeetingEngagementConversation](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingEngagementConversation?view=graph-rest-beta) resource type.",
           "Target": "onlineMeetingEngagementConversation"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudCommunications",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudCommunications](https://learn.microsoft.com/en-us/graph/api/resources/cloudCommunications?view=graph-rest-beta) resource type.",
+          "Target": "cloudCommunications"
         },
         {
           "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
