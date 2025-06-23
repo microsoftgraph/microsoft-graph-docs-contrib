@@ -41,7 +41,7 @@ GET /networkAccess/tlsInspectionPolicies/{tlsInspectionPolicyId}
 
 ## Optional query parameters
 
-This method supports all valid [OData query parameters](/graph/query-parameters) to help customize the response, except for `$search` and `$format`.
+This method supports the `$expand`, `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 

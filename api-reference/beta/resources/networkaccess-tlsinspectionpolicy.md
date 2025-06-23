@@ -29,17 +29,15 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 |[Create policy](../api/networkaccess-networkaccessroot-post-tlsinspectionpolicies.md)|[tlsInspectionPolicy](networkaccess-tlsinspectionpolicy.md)|Create a new tlsInspectionPolicy.|
 |[Update policy](../api/networkaccess-tlsinspectionpolicy-update.md)|None|Update properties of a tlsInspectionPolicy object.|
 |[Delete policy](../api/networkaccess-tlsinspectionpolicy-delete.md)|None|Delete a tlsInspectionPolicy object.|
-|[List rules](../api/networkaccess-tlsinspectionpolicy-list-policyrules.md)|[tlsInspectionRule](networkaccess-tlsinspectionrule.md) collection|Get a list of tlsInspectionRule objects.|
-|[Create rule](../api/networkaccess-tlsinspectionpolicy-post-policyrules.md)|[tlsInspectionRule](networkaccess-tlsinspectionrule.md)|Create a new tlsInspectionRule.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the policy. Read-only. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
-|name|String|The display name of the policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 |description|String|Optional description of the policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Supports `$filter` (`eq`, `ne`, `startsWith`)|
+|id|String|The unique identifier for the policy. Read-only. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of when the policy was last modified. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`) and `$orderby`. Read-only.|
+|name|String|The display name of the policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 |settings|[microsoft.graph.networkaccess.tlsInspectionPolicySettings](networkaccess-tlsinspectionpolicysettings.md)|Settings that configure the default behavior of the policy.|
 |version|String|Version number of the policy. Supports `$filter` (`eq`, `ne`, `startsWith`). Read-only. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 
@@ -47,7 +45,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policyRules|[microsoft.graph.networkaccess.tlsInspectionRule](networkaccess-tlsinspectionrule.md) collection|Collection of rules that define the specific matching conditions and desired actions for TLS inspection. Must contain rules of type `tlsInspectionRule` only.|
+|policyRules|[microsoft.graph.networkaccess.tlsInspectionRule](networkaccess-tlsinspectionrule.md) collection|Collection of rules that define the specific matching conditions and desired actions for TLS inspection. Must contain rules of type `tlsInspectionRule` only. Inherited from Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). |
 
 ## JSON representation
 
