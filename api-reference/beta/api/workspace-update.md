@@ -92,37 +92,10 @@ PATCH https://graph.microsoft.com/beta/workspace
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.workspace",
-  "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "placeId": "String",
-  "parentId": "String",
-  "resourceLinks": [
-    {
-      "@odata.type": "microsoft.graph.resourceLink"
-    }
-  ],
-  "tags": [
-    "String"
-  ],
-  "isWheelChairAccessible": "Boolean",
-  "label": "String",
-  "emailAddress": "String",
-  "nickname": "String",
-  "building": "String",
-  "floorNumber": "Integer",
-  "capacity": "Integer",
-  "floorLabel": "String",
-  "displayDeviceName": "String",
-  "mode": {
-    "@odata.type": "microsoft.graph.placeMode"
-  }
+"@odata.type": "#microsoft.exchange.locationsAndTime.desk",
+  "displayName": "Updated Desk 1",
+  "displayDeviceName": "Samsung monitor",
+  "tags": ["AdjustableHeight"]
 }
 ```
 
@@ -141,37 +114,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.workspace",
-  "id": "96f5b1a5-cb16-2d10-bbd5-0a123ef6610c",
-  "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "placeId": "String",
-  "parentId": "String",
-  "resourceLinks": [
-    {
-      "@odata.type": "microsoft.graph.resourceLink"
-    }
-  ],
-  "tags": [
-    "String"
-  ],
-  "isWheelChairAccessible": "Boolean",
-  "label": "String",
-  "emailAddress": "String",
-  "nickname": "String",
-  "building": "String",
-  "floorNumber": "Integer",
-  "capacity": "Integer",
-  "floorLabel": "String",
-  "displayDeviceName": "String",
-  "mode": {
-    "@odata.type": "microsoft.graph.placeMode"
+  "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
+  "@odata.type": "#microsoft.graph.desk",
+      "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
+      "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
+    "displayName": "Updated Desk 1",
+    "displayDeviceName": "Samsung monitor",
+    "tags": ["AdjustableHeight"],
+      "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
+      "mode": {
+        "@odata.type": "microsoft.graph.assignedPlaceMode",
+        "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
   }
 }
 ```
