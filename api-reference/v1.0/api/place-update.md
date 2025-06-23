@@ -47,7 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | The street address of the room or roomlist. |
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | String                            | Type of room. Possible values are `Standard` and `Reserved`. |
+| bookingType            | [bookingType](../resources/room.md)                            | Type of room. Possible values are `Standard` and `Reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
 | capacity               | Int32                                             | Specifies the capacity of the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
