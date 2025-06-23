@@ -76,9 +76,6 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 ### Example 1: Restore a deleted item
 
 #### Request
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restore_directory_deleteditem"

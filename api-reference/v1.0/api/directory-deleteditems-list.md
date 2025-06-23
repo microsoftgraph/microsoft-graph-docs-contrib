@@ -98,9 +98,6 @@ If successful, this method returns a `200 OK` response code and collection of [d
 ### Example 1: Retrieve deleted groups
 
 #### Request
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_directory_deleteditems"
@@ -110,7 +107,6 @@ GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.grou
 ```
 
 #### Response
-
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
