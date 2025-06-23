@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the user.
 
 Inherits from [microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md).
 
