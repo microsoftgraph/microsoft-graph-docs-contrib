@@ -1,7 +1,7 @@
 ---
 title: "Update building"
 description: "Update the properties of a building object."
-author: "MSGraphDocsvTeam"
+author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
 ms.subservice:

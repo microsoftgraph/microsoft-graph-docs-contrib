@@ -1,7 +1,7 @@
 ---
 title: "mailboxDetails resource type"
 description: "Represents details about a mailbox, including its unique directory identifier and associated email address."
-author: "MSGraphDocsvTeam"
+author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice:

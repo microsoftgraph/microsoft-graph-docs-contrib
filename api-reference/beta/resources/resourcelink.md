@@ -1,7 +1,7 @@
 ---
 title: "resourceLink resource type"
 description: "Specifies external links that should be associated to a building in Places, such as a dining menu or a link to other services."
-author: "MSGraphDocsvTeam"
+author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice:

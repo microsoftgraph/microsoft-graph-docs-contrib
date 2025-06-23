@@ -1,7 +1,7 @@
 ---
 title: "List place objects"
 description: "Get a list of the place objects and their properties."
-author: "MSGraphDocsvTeam"
+author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice:

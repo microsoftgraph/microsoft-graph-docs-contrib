@@ -1,7 +1,7 @@
 ---
 title: "Delete floor"
 description: "Delete a floor object."
-author: "MSGraphDocsvTeam"
+author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
 ms.subservice:

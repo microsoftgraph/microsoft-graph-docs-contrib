@@ -1,7 +1,7 @@
 ---
 title: "workspace resource type"
 description: "Represents a collection of desks."
-author: "MSGraphDocsvTeam"
+author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice:

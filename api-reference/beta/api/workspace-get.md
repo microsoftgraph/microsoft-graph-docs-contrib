@@ -1,7 +1,7 @@
 ---
 title: "Get workspace"
 description: "Read the properties and relationships of a workspace object."
-author: "MSGraphDocsvTeam"
+author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice:

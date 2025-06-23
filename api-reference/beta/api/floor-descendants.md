@@ -1,7 +1,7 @@
 ---
 title: "floor: descendants"
 description: "Returns a list of place objects whose parent is the specified floor."
-author: "MSGraphDocsvTeam"
+author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
 ms.subservice:

@@ -1,7 +1,7 @@
 ---
 title: "List floor objects"
 description: "Get a list of the floor objects and their properties."
-author: "MSGraphDocsvTeam"
+author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
 ms.subservice:

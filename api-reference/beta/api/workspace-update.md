@@ -1,7 +1,7 @@
 ---
 title: "Update workspace"
 description: "Update the properties of a workspace object."
-author: "MSGraphDocsvTeam"
+author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice:
