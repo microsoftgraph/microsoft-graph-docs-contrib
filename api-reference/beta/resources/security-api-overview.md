@@ -213,6 +213,9 @@ The Microsoft Graph threat submission API helps organizations to submit a threat
 ### Sensors
 The Defender for Identity sensors management API allows you to create detailed reports of the sensors in your workspace, including information about the server's name, sensor version, type, state, and health status. It also enables you to manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to to query Entra ID.
 
+### identityAccounts
+The Microsoft Defender for Identity Identity Accounts API allows you to get users data, apply available actions on onPrem, okta users. For example, you can use the invokeAction API to take actions such as disabling a user or forcing a password reset on compromised user.
+
 ## Data security and governance (preview)
 Microsoft Purview unifies data governance and compliance across your organization's data estate. It provides centralized controls for data discovery, classification, and protection - integrating directly with Microsoft 365 and third-party data sources. Think of it as a command center for managing sensitive information and ensuring regulatory compliance across all your data, whether it lives in databases, documents, or cloud storage.
 

@@ -149,6 +149,13 @@ Use the new Teams meeting AI insights APIs to get AI-generated insights for a me
 - [Confirm](/graph/api/timecard-confirmforuser?view=graph-rest-beta&preserve-view=true) a specific [timeCard](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true) for a user.
 - [Approve](/graph/api/schedulechangerequest-approveforuser?view=graph-rest-beta&preserve-view=true) or [decline](/graph/api/schedulechangerequest-declineforuser?view=graph-rest-beta&preserve-view=true) an [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [openShiftChangeRequest](/graph/api//resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta&preserve-view=true), or [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true) object for a user using application permissions.
 
+
+### Security | Identities
+
+The Microsoft Defender for Identity Identity Accounts API allows you to get users data, apply available actions on onPrem, okta users. For example, you can use the invokeAction API to take actions such as disabling a user or forcing a password reset on compromised user.
+For more information, see [identityContainer](/graph/api/resources/security-identitycontainer?view=graph-rest-beta&preserve-view=true).
+
+
 ## Contribute to Microsoft Graph
 
 Are there scenarios you'd like Microsoft Graph to support?
