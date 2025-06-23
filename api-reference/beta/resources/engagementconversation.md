@@ -18,7 +18,7 @@ An abstract type that represents a conversation in Viva Engage.
 
 A Viva Engage conversation is a threaded discussion within a Viva Engage scope, such as a community or a storyline, that enables users to post messages, reply, react, and share content in a structured, persistent format for enterprise social collaboration.
 
-Base type of [networkQuestionEngagementConversation](../resources/networkquestionengagementconversation.md) and [onlineMeetingEngagementConversation](../resources/onlinemeetingengagementconversation.md).
+Base type of [onlineMeetingEngagementConversation](../resources/onlinemeetingengagementconversation.md).
 
 Inherits from [entity](../resources/entity.md).
 
