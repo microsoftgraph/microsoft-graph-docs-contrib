@@ -59,9 +59,9 @@ You can specify the following properties when creating a **workspace**.
 |displayDeviceName|String|The name of the display device (such as a monitor or projector) that is available in the [workspace](../resources/workspace.md). Optional.|
 |displayName|String|The name that is associated with the [workspace](../resources/workspace.md). Inherited from [place](../resources/place.md). Required.|
 |emailAddress|String|The email address that is associated with the [workspace](../resources/workspace.md). This email address is used for booking. Optional.|
-|floorLabel|String|A human-readable label for the [floor](./floor.md), such as "Ground Floor". Optional.|
+|floorLabel|String|A human-readable label for the [floor](../resources/floor.md), such as "Ground Floor". Optional.|
 |floorNumber|Int32|The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. Optional.|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [workspace](../resources/workspace.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md). Optional.|
+|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [workspace](../resources/workspace.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). Optional.|
 |isWheelChairAccessible|Boolean|Whether or not the [workspace](../resources/workspace.md) is wheelchair accessible. Inherited from [place](../resources/place.md). Required.|
 |mode|[placeMode](../resources/placemode.md)|The mode for a [workspace](../resources/workspace.md). We support 3 modes:
 <ul><li>**bookable** - Workspaces that can be booked in advance using desk pool reservation tools</li>
