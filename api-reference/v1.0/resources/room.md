@@ -2,7 +2,7 @@
 title: "room resource type"
 description: "Specifies the properties of a room in a tenant."
 ms.localizationpriority: medium
-author: "vrod9429"
+author: tiwarisakshi02
 ms.subservice: "outlook"
 doc_type: "resourcePageType"
 ms.date: 03/22/2024

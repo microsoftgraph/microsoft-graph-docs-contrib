@@ -1,7 +1,7 @@
 ---
 title: "placeMode resource type"
 description: "Abstract base type for modes for desks and workspaces."
-author: "vrod9429"
+author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice:

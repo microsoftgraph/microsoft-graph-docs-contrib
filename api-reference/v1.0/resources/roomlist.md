@@ -2,7 +2,7 @@
 title: "roomList resource type"
 description: "Represents a group of rooms created by the company."
 ms.localizationpriority: medium
-author: "vrod9429"
+author: tiwarisakshi02
 ms.subservice: "outlook"
 doc_type: "resourcePageType"
 ms.date: 03/22/2024

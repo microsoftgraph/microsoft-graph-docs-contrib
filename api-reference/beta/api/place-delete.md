@@ -1,7 +1,7 @@
 ---
 title: "Delete place"
 description: "Delete a place object."
-author: "vrod9429"
+author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
 ms.subservice:
