@@ -19,9 +19,7 @@ Retrieve a list of recently deleted directory objects from [deleted items](../re
 - [application](../resources/application.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
-- [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
-- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
 - [servicePrincipal](../resources/serviceprincipal.md)
 - [user](../resources/user.md)
 

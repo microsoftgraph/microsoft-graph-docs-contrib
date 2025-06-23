@@ -15,14 +15,8 @@ Namespace: microsoft.graph
 Permanently delete a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). After an item is permanently deleted, it **cannot** be restored.
 
 Permanently delete a recently deleted directory object from [deleted items](../resources/directory.md). The following types are supported:
-- [application](../resources/application.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
-- [externalUserProfile](../resources/externaluserprofile.md)
-- [group](../resources/group.md)
-- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
-- [servicePrincipal](../resources/serviceprincipal.md)
-- [user](../resources/user.md)
 
 After an item is permanently deleted, it **cannot** be restored.
 

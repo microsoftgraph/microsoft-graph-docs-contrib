@@ -1,6 +1,6 @@
 ---
 title: "Restore deleted item (directory object)"
-description: "Restore a recently deleted application, group, service principal, or user from deleted items."
+description: "Restore a recently deleted application, group, or user from deleted PKI items."
 author: "vimranga"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 06/23/2025
 ---
 
-# Restore deleted item (directory object)
+# Restore deleted item (PKI directory object)
 
 Namespace: microsoft.graph
 

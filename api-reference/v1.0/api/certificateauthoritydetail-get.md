@@ -1,7 +1,7 @@
 ---
 title: "Get certificateAuthorityDetail"
 description: "Read the properties and relationships of a certificateAuthorityDetail object."
-author: "vranganathan"
+author: "vimranga"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

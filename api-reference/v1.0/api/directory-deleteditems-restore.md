@@ -1,6 +1,6 @@
 ---
-title: "Restore deleted item (directory object)"
-description: "Restore a recently deleted application, group, service principal, or user from deleted items."
+title: "Restore deleted directory object item"
+description: "Restore a recently deleted application, group, or user from deleted items."
 author: "vimranga"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -19,9 +19,7 @@ Restore a recently deleted directory object from [deleted items](../resources/di
 - [application](../resources/application.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
-- [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
-- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
 - [servicePrincipal](../resources/serviceprincipal.md)
 - [user](../resources/user.md)
 - 
