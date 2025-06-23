@@ -2,7 +2,7 @@
 title: "Update place"
 description: "Update the properties of place object."
 ms.localizationpriority: medium
-author: tiwarisakshi02
+author: "vrod9429"
 ms.subservice: calendar
 doc_type: "apiPageType"
 ms.date: 07/22/2024

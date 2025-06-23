@@ -2,7 +2,7 @@
 title: "place resource type"
 description: "Represents a place. This resource is the base type for a room or roomList."
 ms.localizationpriority: medium
-author: tiwarisakshi02
+author: "vrod9429"
 ms.subservice: "outlook"
 doc_type: "resourcePageType"
 ms.date: 03/22/2024
