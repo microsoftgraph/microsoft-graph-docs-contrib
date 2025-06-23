@@ -32,13 +32,12 @@ Inherits from [place](./place.md).
 |[descendants](../api/place-descendants.md) |List of **place** objects |Returns the list of [desk](./desk.md) objects whose parent is the given **workspace**. | 
 
 ## Properties
-
 |Property |Type |Description |
 |:--|:--|:--|
 |address|[physicalAddress](./physicaladdress.md)|The physical address of the **place**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md).|
 |building |String |The name or identifier of the building where the **workspace** is located. |
 |capacity|Int32|The maximum number of individual desks within a **workspace**. |
-|description |String |User-defined description of the **workspace**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) |
+|description |String |User-defined description of the **workspace**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md).|
 |displayDeviceName|String|The name of the display device (such as a monitor or projector) that is available in the **workspace**.|
 |displayName|String|The name that is associated with the **workspace**. Inherited from [place](./place.md).|
 |emailAddress|String|The email address that is associated with the **workspace**. This email address is used for booking.|
@@ -54,7 +53,7 @@ Inherits from [place](./place.md).
 |nickname|String|A short, friendly name for the **workspace**, often used for easier identification or display in the UI. |
 |parentId|String|**id** of a parent [section](./section.md) or [floor](./floor.md). Inherited from [place](./place.md). |
 |phone|String|The phone number of the **workspace**. Inherited from [place](./place.md). |
-|placeId|String|An alternate immutable unique identifier of the **workspace**. Read-only. |
+|placeId|String|An alternate immutable unique identifier of the **workspace**. Read-only. Inherited from [place](../resources/place.md).|
 |resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **workspace**. Inherited from [place](./place.md). |
 |tags|String collection|Custom tags that are associated with the **workspace** for categorization or filtering. Inherited from [place](./place.md). |
 

@@ -38,7 +38,7 @@ Inherits from [place](./place.md).
 |displayName|String|The name that is associated with the **section**. Inherited from [place](./place.md).|
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **section** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
 |id|String|A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. Inherited from [entity](./entity.md). |
-|isWheelChairAccessible|Boolean|Whether or not the **section** is wheelchair accessible.  Inherited from [place](./place.md).|
+|isWheelChairAccessible|Boolean|Whether or not the **section** is wheelchair accessible. Inherited from [place](./place.md).|
 |parentId|String|ID of a parent **floor**. Inherited from [place](./place.md).|
 |phone|String|The phone number of the **section**. Inherited from [place](./place.md).|
 |placeId|String|An alternate immutable unique identifier of the **section**. Read-only. Inherited from [place](./place.md).|

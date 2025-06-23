@@ -56,8 +56,6 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 
 ## Properties
 
-### Base properties
-
 The base properties are inherited by all **place** types.
 
 |Property |Type |Description |

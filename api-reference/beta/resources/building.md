@@ -19,7 +19,6 @@ Represents a building within the tenant.
 Inherits from [place](./place.md).
 
 ## Methods
-
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/building-list.md)|[building](./building.md) collection|Get a list of the building objects and their properties.|
@@ -36,7 +35,7 @@ Inherits from [place](./place.md).
 |displayName|String|The name that is associated with the place. Inherited from [place](./place.md). |
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **building** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md). |
 |hasWiFi|Boolean|Whether or not the **building** has Wifi. |
-|id|String|A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. Inherits from [entity](./entity.md) |
+|id|String|A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. Inherited from [entity](./entity.md) |
 |isWheelChairAccessible|Boolean|Whether or not the **building** is wheelchair accessible. Inherited from [place](./place.md). |
 |parentId|String|ID of a parent **place**. Inherited from [place](./place.md).|
 |phone|String|The phone number of the **building**. Inherited from [place](./place.md). |
