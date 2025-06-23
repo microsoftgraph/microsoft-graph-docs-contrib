@@ -250,7 +250,7 @@ The following example shows a request.
   "name": "get_eligible_accesspackageresourceroles"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/15d889df-3eb8-4e9b-bfb4-b1908849aec4/accessPackageResourceRoles?$filter=(originSystem+eq+%27AadGroup%27+and+accessPackageResource/id+eq+%27a35bef72-a8aa-4ca3-af30-f6b2ece7208f%27)&$expand=accessPackageResource
 ```
 
