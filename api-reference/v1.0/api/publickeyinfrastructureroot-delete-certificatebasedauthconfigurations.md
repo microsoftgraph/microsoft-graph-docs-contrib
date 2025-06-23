@@ -76,9 +76,6 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 ### Example 1: Restore a deleted item
 
 #### Request
-
-
-# [HTTP](#tab/http)
 ```http
 POST https://graph.microsoft.com/v1.0/directory/deletedItems/78bf875b-9343-4edc-9130-0d3958113563/restore
 ```
@@ -108,17 +105,6 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create deletedItem",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->
 
 ### Example 2: Restore a deleted item and remove any conflicting proxy addresses
 
@@ -160,8 +146,6 @@ Content-type: application/json
 ### Example 3: Restore a deleted user and assign them a new userPrincipalName
 
 #### Request
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restore_directory_deleteditem_newUserPrincipalName"
