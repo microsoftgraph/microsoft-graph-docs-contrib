@@ -19,9 +19,7 @@ Restore a recently deleted directory object from [deleted items](../resources/di
 - [application](../resources/application.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
-- [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
-- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
 - [servicePrincipal](../resources/serviceprincipal.md)
 - [user](../resources/user.md)
 - 
@@ -81,10 +79,6 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "restore_directory_deleteditem"
-}-->
 ```http
 POST https://graph.microsoft.com/v1.0/directory/deletedItems/78bf875b-9343-4edc-9130-0d3958113563/restore
 ```
@@ -131,10 +125,6 @@ Content-type: application/json
 #### Request
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "restore_directory_deleteditem_autoreconcileproxyconflict"
-}-->
 ```http
 POST https://graph.microsoft.com/v1.0/directory/deleteditems/78bf875b-9343-4edc-9130-0d3958113563/restore
 Content-Type: application/json
@@ -146,11 +136,6 @@ Content-Type: application/json
 
 #### Response
 > **Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
-} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
