@@ -28,14 +28,14 @@ Inherits from [place](./place.md).
 |[Get](../api/room-get.md)|[room](./room.md)|Read the properties and relationships of a **room** object.|
 |[Update](../api/room-update.md)|[room](./room.md)|Update the properties of a **room** object.|
 |[Delete](../api/roomlist-delete-rooms.md)|None|Delete a **room** object.|
-|[descendants](../api/room-descendants.md)|[place](./place.md) collection|Returns the list of descendant **place** objects of a specific type (for example, [desks](./desk.md) or [workspaces](./workspace.md)) under a given **room**.|
+|[descendants](../api/room-descendants.md)|[place](./place.md) collection|Returns the list of descendant [place](../resources/place.md) objects of a specific type (for example, [desks](./desk.md) or [workspaces](./workspace.md)) under a given **room**.|
 
 ## Properties
 |Property |Type |Description |
 |:--|:--|:--|
 |address |[physicalAddress](./physicaladdress.md) |The physical address of the **room**, including the street, city, state, country or region, and postal code. Inherited from [place](../resources/place.md).|
 |audioDeviceName |String |The name of the audio device that is available in the **room**. |
-|bookingType |enum |Specifies how the **room** can be booked. Possible values are:
+|bookingType |[bookingType](#bookingtype-values) |Specifies how the **room** can be booked. Possible values are:
 <ul><li>**standard** - Available for general booking</li>
 <li>**reserved** – Reserved for specific users or purposes</li>
 <li>**unknown** – Default or unspecified booking behavior</li></ul> |
@@ -58,6 +58,13 @@ Inherits from [place](./place.md).
 |resourceLinks |[resourceLink](../resources/resourcelink.md) collection	|A set of links to external resources that are associated with the **room**. Inherited from [place](../resources/place.md).|
 |tags |Collection(String) |Custom tags that are associated with the **room** for categorization or filtering. Inherited from [place](../resources/place.md).|
 |videoDeviceName |String |The name of the video device that is available in the **room**. |
+
+### bookingType values
+
+| Value    | Description                                               |
+|:---------|:----------------------------------------------------------|
+| reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
+| standard | The room is available and can be reserved. This value is the default. |
 
 ## Relationships
 None.

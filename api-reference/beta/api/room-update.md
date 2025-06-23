@@ -51,23 +51,31 @@ PATCH /roomList/rooms/{roomId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|capacity |Integer |The maximum number of people in the **room** can accommodate. |
-|audioDeviceName |String |The name of the audio device that is available in the room. |
-|videoDeviceName |String |The name of the video device that is available in the room. |
-|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the room.
-|isTeamsEnabled |Boolean |Whether or not the room is configured with the Microsoft Teams Room system. |
-|emailAddress |String |The email address associated with the room. This email address is used for booking. |
-|nickname |String |A short, friendly name for the **place**, often used for easier identification or display in UI. |
-|building |String |The name or identifier of the building where the **place** (such as a room or a desk) is located. |
-|floorNumber |Integer |The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. |
-|floorLabel |String |A human-readable label for the floor, such as "Ground Floor". |
-|label |String |A custom identifier or tag for the **place**, often used to distinguish it within a floor or section. |
-|bookingType |Enum |Specifies how the place can be booked. Possible values are: <br/><br/> <ul><li>standard - Available for general booking</li>
-<li>reserved – Reserved for specific users or purposes</li>
-<li>unknown – Default or unspecified booking behavior</li>
-</ul> |
-
-
+|address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [room](../resources/room.md), including the street, city, state, country or region, and postal code. Inherited from [place](../resources/place.md). Optional.|
+|audioDeviceName |String |The name of the audio device that is available in the [room](../resources/room.md). Optional. |
+|bookingType |[bookingType](../resources/room.md#bookingtype-values) |Specifies how the place can be booked. Possible values are:
+<ul><li>**standard** - Available for general booking</li>
+<li>**reserved** – Reserved for specific users or purposes</li>
+<li>**unknown** – Default or unspecified booking behavior</li>
+</ul> Optional. |
+|building |String |The name or identifier of the building where the [room](../resources/room.md) is located. Optional. |
+|capacity |Integer |The maximum number of people in the [room](../resources/room.md) can accommodate. Optional. |
+|description |String |User-defined description of the [room](../resources/room.md). (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Optional. |
+|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the [room](../resources/room.md). Optional. |
+|displayName|String|The name that is associated with the [room](../resources/room.md). Inherited from [place](../resources/place.md). Required.|
+|emailAddress |String |The email address associated with the [room](../resources/room.md). This email address is used for booking. Optional. |
+|floorLabel |String |A human-readable label for the floor, such as "Ground Floor". Optional. |
+|floorNumber |Integer |The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. Optional. |
+|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [room](../resources/room.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). Optional.|
+|isTeamsEnabled |Boolean |Whether or not the [room](../resources/room.md) is configured with the Microsoft Teams Room system. Required.|
+|isWheelChairAccessible|Boolean|Whether or not the [room](../resources/room.md) is wheelchair accessible. Inherited from [place](../resources/place.md). Required.|
+|nickname |String |A short, friendly name for the [room](../resources/room.md), often used for easier identification or display in UI. Required. |
+|parentId|String|**id** of a parent [place](../resources/place.md). Inherited from [place](../resources/place.md). Optional.|
+|phone|String|The phone number of the [room](../resources/room.md). Inherited from [place](../resources/place.md). Optional.|
+|placeId|String|An alternate immutable unique identifier of the [room](../resources/room.md). Read-only. Inherited from [place](../resources/place.md). Optional.|
+|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|A set of links to external resources that are associated with the [room](../resources/room.md). Inherited from [place](../resources/place.md). Required.|
+|tags|String collection|Custom tags that are associated with the [room](../resources/room.md) for categorization or filtering. Inherited from [place](../resources/place.md). Required.|
+|videoDeviceName |String |The name of the video device that is available in the [room](../resources/room.md). Optional. |
 
 ## Response
 

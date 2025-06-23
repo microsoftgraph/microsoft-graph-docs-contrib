@@ -41,7 +41,7 @@ GET /places/{placesId}
 
 ## Optional query parameters
 
-- Use `$select` to get specific **place** properties.
+- Use `$select` to get specific [place](../resources/place.md) properties.
 
 - This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -220,7 +220,7 @@ GET https://graph.microsoft.com/beta/places/{placesId}
 
 #### Response
 
-If successful, this method returns a 200 OK response code and a **place** object or the list of places in the response.
+If successful, this method returns a 200 OK response code and a [place](../resources/place.md) object or the list of places in the response.
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

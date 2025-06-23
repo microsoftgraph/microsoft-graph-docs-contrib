@@ -48,7 +48,18 @@ PATCH /section
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-The **section** object type has no unique properties and inherits all properties from the **place** object type.
+|Property|Type|Description|
+|:---|:---|:---|
+|address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [section](../resources/section.md), including the street, city, state, country or region, and postal code. Inherited from [place](../resources/place.md). Optional.|
+|description|String|User-defined description of the [section](../resources/section.md). (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md). Optional.|
+|displayName|String|The name that is associated with the [section](../resources/section.md). Inherited from [place](../resources/place.md). Required.|
+|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [section](../resources/section.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). Optional.|
+|isWheelChairAccessible|Boolean|Whether or not the [section](../resources/section.md) is wheelchair accessible. Inherited from [place](../resources/place.md). Required.|
+|parentId|String|**id** of a parent [place](../resources/place.md). Inherited from [place](../resources/place.md). Optional.|
+|phone|String|The phone number of the [section](../resources/section.md). Inherited from [place](../resources/place.md). Optional.|
+|placeId|String|An alternate immutable unique identifier of the [section](../resources/section.md). Read-only. Inherited from [place](../resources/place.md). Optional.|
+|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|A set of links to external resources that are associated with the [section](../resources/section.md). Inherited from [place](../resources/place.md). Required.|
+|tags|String collection|Custom tags that are associated with the [section](../resources/section.md) for categorization or filtering. Inherited from [place](../resources/place.md). Required.|
 
 ## Response
 

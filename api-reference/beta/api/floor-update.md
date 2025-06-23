@@ -50,7 +50,17 @@ PATCH /floor
 
 |Property|Type|Description|
 |:---|:---|:---|
-|SortOrder |Integer |Specifies the sort order of the floor. For example, a floor might be named "Lobby" with a sort order of 0 to show this floor first in ordered lists. |
+|address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [floor](../resources/floor.md), including the street, city, state, country or region, and postal code. Inherited from [place](../resources/place.md). Optional.|
+|description |String|User-defined description of the [floor](../resources/floor.md). (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md). Optional.|
+|displayName|String|The name that is associated with the [floor](../resources/floor.md). Inherited from [place](../resources/place.md). Required.|
+|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [floor](../resources/floor.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). Optional.|
+|isWheelChairAccessible|Boolean|Whether or not the [floor](../resources/floor.md) is wheelchair accessible. Inherited from [place](../resources/place.md). Required.|
+|parentId|String|**id** of a parent [place](../resources/place.md). Inherited from [place](../resources/place.md). Optional.|
+|phone|String|The phone number of the [floor](../resources/floor.md). Inherited from [place](../resources/place.md). Optional.|
+|placeId|String|An alternate immutable unique identifier of the [floor](../resources/floor.md). Read-only. Inherited from [place](../resources/place.md). Optional.|
+|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|A set of links to external resources that are associated with the [floor](../resources/floor.md). Inherited from [place](../resources/place.md). Required.|
+|sortOrder |Integer |Specifies the sort order of the [floor](../resources/floor.md). For example, a floor might be named "Lobby" with a sort order of 0 to show this floor first in ordered lists. Optional. |
+|tags|String collection|Custom tags that are associated with the [floor](../resources/floor.md) for categorization or filtering. Inherited from [place](../resources/place.md). Required.|
 
 ## Response
 

@@ -54,11 +54,11 @@ You can specify the following properties when creating a **room**.
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the **room**, including the street, city, state, country or region, and postal code. Optional.|
 |audioDeviceName|String|The name of the audio device that is available in the [room](../resources/room.md). Optional.|
-|bookingType|enum |Specifies how the [room](../resources/room.md) can be booked. Possible values are:
+|bookingType|[bookingType](../resources/room.md#bookingtype-values) |Specifies how the [room](../resources/room.md) can be booked. Possible values are:
 <ul><li>**standard** - Available for general booking</li>
 <li>**reserved** – Reserved for specific users or purposes</li>
 <li>**unknown** – Default or unspecified booking behavior</li></ul>Optional. |
-|building|String|The name or identifier of the [building](./building.md) where the [room](../resources/room.md) is located. Optional.|
+|building|String|The name or identifier of the [building](../resources/building.md) where the [room](../resources/room.md) is located. Optional.|
 |capacity|Int32|The maximum number of people in the [room](../resources/room.md) can accommodate. Optional.|
 |description|String|User-defined description of the [room](../resources/room.md). (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md). Optional.|
 |displayDeviceName|String|The name of the display device (such as a monitor or projector) that is available in the **room**. Optional.|

@@ -50,13 +50,23 @@ PATCH /desk
 
 |Property|Type|Description|
 |:---|:---|:---|
-|mailboxDetails |mailboxDetails |The mailbox object-ids and email address that are associated with the desk. |
-|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available at the desk. |
-|Mode |Dictionary |The mode of the desk. We support 4 modes: <br/><br/>
-<ul><li>assigned - Desks that are assigned to a user</li>
-<li>bookable - Desks that can be booked in advance using desk reservation tools</li>
-<li>walkup - First come, first serve desks. When you plug in to a peripheral on one of these desks, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
-<li>offline - Desk that are taken down for maintenance or marked as not bookable.</li></ul> |
+|address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [desk](../resources/desk.md), including the street, city, state, country or region, and postal code. Inherited from [place](../resources/place.md). Optional.|
+|description |String |User-defined description of the [desk](../resources/desk.md). (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md). Optional.|
+|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available at the desk. Optional. |
+|displayName|String|The name that is associated with the [desk](../resources/desk.md). Inherited from [place](../resources/place.md). Required.|
+|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [desk](../resources/desk.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). Optional.|
+|isWheelChairAccessible|Boolean|Whether or not the [desk](../resources/desk.md) is wheelchair accessible. Inherited from [place](../resources/place.md). Required.|
+|mailboxDetails |mailboxDetails |The mailbox object-ids and email address that are associated with the desk. Optional.|
+|mode |[placeMode](../resources/placemode.md) |The mode of the desk. We support 4 modes:
+<ul><li>**assigned** - Desks that are assigned to a user</li>
+<li>**bookable** - Desks that can be booked in advance using desk reservation tools</li>
+<li>**walkup** - First come, first serve desks. When you plug in to a peripheral on one of these desks, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
+<li>**offline** - Desk that are taken down for maintenance or marked as not bookable.</li></ul> Optional. |
+|parentId|String|**id** of a parent [place](../resources/place.md). Inherited from [place](../resources/place.md). Optional.|
+|phone|String|The phone number of the [desk](../resources/desk.md). Inherited from [place](../resources/place.md). Optional.|
+|placeId|String|An alternate immutable unique identifier of the [desk](../resources/desk.md). Read-only. Inherited from [place](../resources/place.md). Optional. |
+|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|A set of links to external resources that are associated with the [desk](../resources/desk.md). Inherited from [place](../resources/place.md). Required.|
+|tags|String collection|Custom tags that are associated with the [desk](../resources/desk.md) for categorization or filtering. Inherited from [place](../resources/place.md). Required.|
 
 ## Response
 

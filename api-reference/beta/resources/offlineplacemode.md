@@ -23,7 +23,7 @@ Inherits from [placeMode](../resources/placemode.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|reason|String|Reason for marking a **place** offline.|
+|reason|String|Reason for marking a [place](../resources/place.md) offline.|
 
 ## Relationships
 None.

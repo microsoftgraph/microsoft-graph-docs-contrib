@@ -35,9 +35,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 PATCH /places/{id | placeId | emailAddress}
 ```
-- **id** is the unique identifier of the **place** to update.
-- **placeId** is a unique alternate identifier of the **place** to update.
-- **emailAddress** is the String email address of the mailbox associated with this **place**.
+- **id** is the unique identifier of the [place](../resources/place.md) to update.
+- **placeId** is a unique alternate identifier of the [place](../resources/place.md) to update.
+- **emailAddress** is the String email address of the mailbox associated with this [place](../resources/place.md).
 
 ## Request headers
 
@@ -52,30 +52,23 @@ PATCH /places/{id | placeId | emailAddress}
 
 For best performance, don't include existing values that haven't changed.
 
-Only one instance of a **place** resource can be updated at a time. In the request body, use `@odata.type` to specify the type of place and include the properties to update.
+Only one instance of a [place](../resources/place.md) resource can be updated at a time. In the request body, use `@odata.type` to specify the type of place and include the properties to update.
 
 > [!Note]
 > You can't use this API to update the **id**, **placeID**, **emailAddress**, or **bookingType** of a [place](../resources/place.md) object.
 
-
-| Property               | Type                                              | Description |
-|:-----------------------|:--------------------------------------------------|:--|
-| address                | [physicalAddress](../resources/physicaladdress.md)             | The street address of the room, workspace, or roomlist. |
-| audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | String                            | Type of room. Possible values are `Standard` and `Reserved`. |
-| building               | String                                            | Specifies the building name or building number that the room or workspace is in. |
-| capacity               | Int32                                             | Specifies the capacity of the room or workspace. |
-| displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
-| displayName            | String                                            | Specifies the name that is associated with a place. |
-| floorLabel             | String                                            | Specifies the floor letter that the room or workspace is on. |
-| floorNumber            | Int32                                             | Specifies the floor number that the room or workspace is on. |
-| geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Specifies the room, workspace, or roomlist location in latitude, longitude and optionally, altitude coordinates. |
-| isWheelChairAccessible | Boolean                                           | Specifies whether the room or workspace is wheelchair accessible. |
-| label                  | String                                            | Specifies a descriptive label for the room or workspace, for example, a number or name. |
-| nickname               | String                                            | Specifies a nickname for the room or workspace, for example, "conf room". |
-| phone                  | String                                            | The phone number of the room, workspace, or roomlist. |
-| tags                   | String collection                                 | Specifies additional features of the room or workspace, for example, details like the type of view or furniture type. |
-| videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
+|Property|Type|Description|
+|:---|:---|:---|
+|address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [place](../resources/place.md), including the street, city, state, country or region, and postal code. Optional.|
+|description |String|User-defined description of the [place](../resources/place.md). (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Optional.|
+|displayName|String|The name that is associated with the [place](../resources/place.md). Required.|
+|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [place](../resources/place.md) location in latitude, longitude, and (optionally) altitude coordinates. Optional.|
+|isWheelChairAccessible|Boolean|Whether or not the [place](../resources/place.md) is wheelchair accessible. Required.|
+|parentId|String|**id** of a parent [place](../resources/place.md). Optional.|
+|phone|String|The phone number of the [place](../resources/place.md). Optional.|
+|placeId|String|An alternate immutable unique identifier of the [place](../resources/place.md). Read-only. Optional.|
+|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|A set of links to external resources that are associated with the [place](../resources/place.md). Required.|
+|tags|String collection|Custom tags that are associated with the [place](../resources/place.md) for categorization or filtering. Required.|
 
 ## Response
 

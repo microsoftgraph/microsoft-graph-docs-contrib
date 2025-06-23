@@ -25,7 +25,7 @@ Inherits from [place](./place.md).
 |[Get](../api/building-get.md)|[building](./building.md)|Read the properties and relationships of a building object.|
 |[Update](../api/building-update.md)|[building](./building.md)|Update the properties of a building object.|
 |[Delete](../api/building-delete.md)|None|Delete a building object.|
-|[descendants](../api/building-descendants.md)|[place](./place.md) collection|Returns the list of descendant **place** objects of a specific type (for example, [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [desks](./desk.md), or [workspaces](./workspace.md)) under a given **building**. .|
+|[descendants](../api/building-descendants.md)|[place](./place.md) collection|Returns the list of descendant [place](../resources/place.md) objects of a specific type (for example, [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [desks](./desk.md), or [workspaces](./workspace.md)) under a given **building**. .|
 
 ## Properties
 |Property|Type|Description|
@@ -37,7 +37,7 @@ Inherits from [place](./place.md).
 |hasWiFi|Boolean|Whether or not the **building** has Wifi. |
 |id|String|A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. Inherited from [entity](./entity.md) |
 |isWheelChairAccessible|Boolean|Whether or not the **building** is wheelchair accessible. Inherited from [place](./place.md). |
-|parentId|String|ID of a parent **place**. Inherited from [place](./place.md).|
+|parentId|String|**id** of a parent [place](../resources/place.md). Inherited from [place](./place.md).|
 |phone|String|The phone number of the **building**. Inherited from [place](./place.md). |
 |placeId|String|An alternate immutable unique identifier of the **building**. Read-only. Inherited from [place](./place.md). |
 |resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **building**. Inherited from [place](./place.md). |

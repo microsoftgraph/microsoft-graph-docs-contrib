@@ -43,7 +43,7 @@ Inherits from [place](./place.md).
 <li>**bookable** - Desks that can be booked in advance using desk reservation tools</li>
 <li>**walkup** - First come, first serve desks. When you plug in to a peripheral on one of these desks, the desk is booked for you, assuming that the peripheral is associated to the desk in Teams Pro Management portal</li>
 <li>**offline** - Desk that is taken down for maintenance or marked as not bookable.</li></ul> |
-|parentId|String|ID of a parent **place**. Inherited from [place](./place.md).|
+|parentId|String|**id**** of a parent [place](../resources/place.md). Inherited from [place](./place.md).|
 |phone|String|The phone number of the **desk**. Inherited from [place](./place.md).|
 |placeId|String|An alternate immutable unique identifier of the **desk**. Read-only. Inherited from [place](./place.md).|
 |resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **desk**. Inherited from [place](./place.md).|

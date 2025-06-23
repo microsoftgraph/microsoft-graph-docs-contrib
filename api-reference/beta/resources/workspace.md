@@ -29,12 +29,12 @@ Inherits from [place](./place.md).
 |[Get](../api/workspace-get.md)|[workspace](./workspace.md)|Read the properties and relationships of a **workspace** object.|
 |[Update](../api/workspace-update.md)|[workspace](./workspace.md)|Update the properties of a **workspace** object.|
 |[Delete](../api/roomlist-delete-workspaces.md)|None|Delete a **workspace** object.|
-|[descendants](../api/place-descendants.md) |List of **place** objects |Returns the list of [desk](./desk.md) objects whose parent is the given **workspace**. | 
+|[descendants](../api/place-descendants.md) |List of [place](../resources/place.md) objects |Returns the list of [desk](./desk.md) objects whose parent is the given **workspace**. | 
 
 ## Properties
 |Property |Type |Description |
 |:--|:--|:--|
-|address|[physicalAddress](./physicaladdress.md)|The physical address of the **place**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md).|
+|address|[physicalAddress](./physicaladdress.md)|The physical address of the **workspace**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md).|
 |building |String |The name or identifier of the building where the **workspace** is located. |
 |capacity|Int32|The maximum number of individual desks within a **workspace**. |
 |description |String |User-defined description of the **workspace**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md).|

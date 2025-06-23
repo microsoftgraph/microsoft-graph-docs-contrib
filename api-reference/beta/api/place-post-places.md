@@ -50,7 +50,7 @@ POST /places
 
 In the request body, supply a JSON representation of the [place](../resources/place.md) object.
 
-Go to [the place resource page](../resources/place.md) for a list of all properties that are available when creating a **place**.
+Go to [the place resource page](../resources/place.md) for a list of all properties that are available when creating a [place](../resources/place.md).
 
 ## Response
 

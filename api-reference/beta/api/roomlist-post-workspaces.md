@@ -68,7 +68,7 @@ You can specify the following properties when creating a **workspace**.
 <li>**walkup** - First come, first serve workspaces. As soon as you plug in to a peripheral on one of the desks in the workspace, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
 <li>**offline** - Workspaces that are taken down for maintenance or marked as not bookable</li></ul> Optional.|
 |nickname|String|A short, friendly name for the [workspace](../resources/workspace.md), often used for easier identification or display in the UI. Required.|
-|parentId|String|**id** of a parent [section](./section.md) or [floor](./floor.md). Inherited from [place](../resources/place.md). Optional.|
+|parentId|String|**id** of a parent [section](../resources/section.md) or [floor](../resources/floor.md). Inherited from [place](../resources/place.md). Optional.|
 |phone|String|The phone number of the [workspace](../resources/workspace.md). Inherited from [place](../resources/place.md). Optional.|
 |placeId|String|An alternate immutable unique identifier of the [workspace](../resources/workspace.md). Read-only. Inherited from [place](../resources/place.md). Optional.|
 |resourceLinks|[resourceLink](../resources/resourcelink.md) collection|A set of links to external resources that are associated with the [workspace](../resources/workspace.md). Inherited from [place](../resources/place.md). Required.|
