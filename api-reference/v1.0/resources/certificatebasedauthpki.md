@@ -16,9 +16,7 @@ Namespace: microsoft.graph
 
 The collection of public key infrastructure (PKI) instances for the [certificate-based authentication method](../resources/x509certificateauthenticationmethodconfiguration.md). The [certificate-based authentication method](../resources/x509certificateauthenticationmethodconfiguration.md) must be enabled in the tenant for you to manage these PKI instances.
 
-
 Inherits from [directoryObject](../resources/directoryobject.md).
-
 
 ## Methods
 |Method|Return type|Description|
