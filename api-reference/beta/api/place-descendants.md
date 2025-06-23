@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the descendants of a specific type under a [place](../resources/place.md), which can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
+Get all the descendants of a specific type under a [place](../resources/place.md).
 
 ## Permissions
 
@@ -34,10 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /places/{placesId}/descendants/{placeType}
+GET /places/{id}/descendants/{placeType}
 ```
 
-{placeType} can be any supported [place](../resources/place.md) type such as `microsoft.graph.desk`.
+`{placeType}` can be any supported place type such as `microsoft.graph.desk`.
 
 ## Request headers
 
@@ -84,7 +84,6 @@ Content-Type: application/json
 {
   "value": [
     {
-         
       "id": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
       "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
       "displayName": "D2",

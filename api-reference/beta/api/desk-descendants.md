@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a list of [place](../resources/place.md) objects whose parent is the specified [desk](../resources/desk.md). In practice, this method will always return an empty list because desks have no descendant objects.
+Get all the descendants of a specific type under a [place](../resources/place.md).
+
+In practice, this method will always return an empty list because [desks](../resources/desk.md) have no descendant objects.
 
 ## Permissions
 
@@ -34,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /desk/descendants
+GET /places/{id}/descendants/{placeType}
 ```
 
 ## Request headers
@@ -49,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [place](../resources/place.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and an empty [place](../resources/place.md) collection.
 
 ## Examples
 
@@ -62,8 +64,10 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/desk/descendants
+GET /places/{id}/descendants/{placeType}
 ```
+
+`{placeType}` can be any supported place type such as `microsoft.graph.desk`.
 
 
 ### Response
@@ -83,28 +87,30 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.place",
-      "id": "String (identifier)",
-      "displayName": "String",
-      "geoCoordinates": {
-        "@odata.type": "microsoft.graph.outlookGeoCoordinates"
+      "id": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
+      "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
+      "displayName": "D2",
+      "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
+      "description": null,
+      "tags": [],
+      "mailboxDetails": {
+        "emailAddress": "desk2@contoso.com",
+        "externalDirectoryObjectId": "xx"
       },
-      "phone": "String",
-      "address": {
-        "@odata.type": "microsoft.graph.physicalAddress"
+      "resourceLinks": []
+    }, 
+    {
+      "id": "2dd2s2gg-b444-84rf-c4d1-f9a8342222s3",
+      "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
+      "displayName": "D4",
+      "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
+      "description": null,
+      "tags": [],
+      "mailboxDetails": {
+        "emailAddress": "desk4@contoso.com",
+        "externalDirectoryObjectId": "yy"
       },
-      "placeId": "String",
-      "parentId": "String",
-      "resourceLinks": [
-        {
-          "@odata.type": "microsoft.graph.resourceLink"
-        }
-      ],
-      "tags": [
-        "String"
-      ],
-      "isWheelChairAccessible": "Boolean",
-      "label": "String"
+      "resourceLinks": []
     }
   ]
 }

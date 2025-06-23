@@ -25,7 +25,7 @@ Inherits from [place](./place.md).
 |[Get](../api/building-get.md)|[building](./building.md)|Read the properties and relationships of a building object.|
 |[Update](../api/building-update.md)|[building](./building.md)|Update the properties of a building object.|
 |[Delete](../api/building-delete.md)|None|Delete a building object.|
-|[descendants](../api/building-descendants.md)|[place](./place.md) collection|Returns the list of descendant [place](../resources/place.md) objects of a specific type (for example, [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [desks](./desk.md), or [workspaces](./workspace.md)) under a given **building**. .|
+|[descendants](../api/building-descendants.md)|[place](./place.md) collection|Returns the list of descendant [place](../resources/place.md) objects of a specific type (for example, [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [desks](./desk.md), or [workspaces](./workspace.md)) under a given **building**.|
 
 ## Properties
 |Property|Type|Description|
