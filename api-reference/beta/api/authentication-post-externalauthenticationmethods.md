@@ -39,13 +39,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
-
-<!-- {
-  "blockType": "ignored"
-}
--->
+To assign an external authentication method to yourself:
+<!-- { "blockType": "ignored" } -->
 ``` http
 POST /me/authentication/externalAuthenticationMethods
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+To assign an external authentication method to yourself or another user:
+<!-- { "blockType": "ignored" } -->
+``` http
+POST /users/{id}/authentication/externalAuthenticationMethods
 ```
 
 ## Request headers
