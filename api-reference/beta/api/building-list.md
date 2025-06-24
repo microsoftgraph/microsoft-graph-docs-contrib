@@ -110,7 +110,6 @@ Content-Type: application/json
       "isWheelChairAccessible": "Boolean",
       "label": "String",
       "hasWiFi": "Boolean"
-      "hasWiFi": "Boolean"
     }
   ]
 }
