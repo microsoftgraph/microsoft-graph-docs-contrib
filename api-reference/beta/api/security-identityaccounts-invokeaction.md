@@ -86,7 +86,6 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/security/identities/identityAccounts/0104216-0539-4838-88b1-55baafdc296b/invokeAction
-
 Content-Type: application/json
 
 {
