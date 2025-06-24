@@ -22,10 +22,11 @@ Inherits from [place](../resources/place.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/building-list.md)|[building](../resources/building.md) collection|Get a list of the building objects and their properties.|
-|[Get](../api/building-get.md)|[building](../resources/building.md)|Read the properties and relationships of a building object.|
-|[Update](../api/building-update.md)|[building](../resources/building.md)|Update the properties of a building object.|
+|[List](../api/building-list.md)|[building](./building.md) collection|Get a list of the building objects and their properties.|
+|[Get](../api/building-get.md)|[building](./building.md)|Read the properties and relationships of a building object.|
+|[Update](../api/building-update.md)|[building](./building.md)|Update the properties of a building object.|
 |[Delete](../api/building-delete.md)|None|Delete a building object.|
+|[descendants](../api/building-descendants.md)|[place](./place.md) collection|Returns the list of descendant [place](../resources/place.md) objects of a specific type (for example, [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [desks](./desk.md), or [workspaces](./workspace.md)) under a given **building**.|
 |[ingestMapFile](../api/building-ingestmapfile.md)|None|**TODO: Add Description**|
 |[List buildingMap](../api/building-list-map.md)|[buildingMap](../resources/buildingmap.md) collection|**TODO: Add a useful description.**|
 |[Add buildingMap](../api/building-post-map.md)|[buildingMap](../resources/buildingmap.md)|Add map by posting to the map collection.|
