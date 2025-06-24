@@ -86,16 +86,25 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.security.identityAccounts",
-      "id": "String (identifier)",
-      "displayName": "String",
-      "domain": "String",
-      "onPremisesSecurityIdentifier": "String",
-      "cloudSecurityIdentifier": "String",
-      "isEnabled": "Boolean",
+      "id": "00104216-0539-4838-88b1-55baafdc296b",
+      "displayName": "accoundJon",
+      "domain": "domain1.test.local",
+      "onPremisesSecurityIdentifier": "S-1-5-21-989687458-3461180213-172365591-281652",
+      "cloudSecurityIdentifier": "S-1-12-4-2492432728-1225839317-3974870967-847981844",
+      "isEnabled": true,
       "accounts": [
         {
-          "@odata.type": "microsoft.graph.security.account"
+          "provider": "ActiveDirectory",
+          "identifier": "256db173-930a-4991-9061-0d51a9a93ba5",
+        },
+        {
+          "provider": "Entra",
+          "identifier": "69dfa3ea-1295-4e2c-b469-59564581143d",
+        },
+        {
+          "provider": "Okta",
+          "identifier": "878a6911-f3da-41eb-a895-1d46fa054d3e",
+          "actions": ["revokeAllSessions"]
         }
       ]
     }

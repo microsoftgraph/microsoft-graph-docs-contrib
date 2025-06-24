@@ -56,6 +56,16 @@ The following table lists the parameters that are required when you call this ac
 |action|microsoft.graph.security.action|The type of action to perform on the account. The possible values are: `disable`, `enable`, `forcePasswordReset`, `revokeAllSessions`, `requireUserToSignInAgain`, `markUserAsCompromised`.|
 |identityProvider|microsoft.graph.security.identityProvider|The identity provider associated with the account. The possible values are: `entraID`, `activeDirectory`, `okta`, `unknownFutureValue`.|
 
+
+| Action Value             | Description                                 |
+|--------------------------| ------------------------------------------- |
+| Disable                  | Disable account. Account will not be able to authenticate. If the account have recently logged in he will not have access to resources. |
+| Enable                   | Enable account. |
+| ForcePasswordReset       | Force password reset of the account. |
+| RevokeAllSessions        | Revoke all of active sessions for the account. |
+| RequireUserToSignInAgain | Require the user to sign in again. |
+| MarkUserAsCompromised    | Mark the user as compromised. |
+
 ## Response
 
 If successful, this action returns a `200 OK` response code and a [invokeActionResult](../resources/security-invokeactionresult.md) in the response body.

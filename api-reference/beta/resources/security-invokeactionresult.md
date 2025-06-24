@@ -17,12 +17,12 @@ Namespace: microsoft.graph.security
 Represents the invoke action result after disabling an account.
 
 ## Properties
-|Property| Type                                                                                  |Description|
-|:---|:--------------------------------------------------------------------------------------|:---|
-|accountId| String                                                                                |The account ID|
-|action| microsoft.graph.security.action                                                       |The type of action|
-|correlationId| String                                                                                |The unique identifier for tracking the request|
-|identityProvider| microsoft.graph.security.identityProvider                                             |The identity provider type|
+|Property| Type                                                                                  | Description                                                                                                                                                                             |
+|:---|:--------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|accountId| String                                                                                | The account ID.                                                                                                                                                                         |
+|action| microsoft.graph.security.action                                                       | The type of action. The possible values are: `disable`, `enable`, `forcePasswordReset`, `revokeAllSessions`, `requireUserToSignInAgain`, `markUserAsCompromised`, `unknownFutureValue`. |
+|correlationId| String                                                                                | The unique identifier for tracking the request.                                                                                                                                         |
+|identityProvider| microsoft.graph.security.identityProvider                                             | The identity provider type. The possible values are: `entraID`, `activeDirectory`, `okta`, `unknownFutureValue`.                                                                        |
 
 ## Relationships
 None.

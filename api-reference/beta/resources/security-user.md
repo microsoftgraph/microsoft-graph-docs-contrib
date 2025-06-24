@@ -18,13 +18,6 @@ Represents the user.
 
 Inherits from [microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md).
 
-## Methods
-|Method|Return type| Description                                                         |
-|:---|:---|:--------------------------------------------------------------------|
-|[List](../api/security-identitycontainer-list-identityaccounts.md)|[microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md) collection| Get a list of the identity account objects and their properties.    |
-|[Get](../api/security-identityaccounts-get.md)|[microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md)| Read the properties and relationships of a identity account object. |
-|[invokeAction](../api/security-identityaccounts-invokeaction.md)|[microsoft.graph.security.invokeActionResult](../resources/security-invokeactionresult.md)| Invoke an action for the account.                                   |
-
 ## Properties
 |Property|Type| Description                                                                                                                                                                    |
 |:---|:---|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
