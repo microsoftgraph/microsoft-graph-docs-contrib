@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 Base type for actions defined within a Data Loss Prevention (DLP) rule.
 
-Specific actions like `blockAccessAction` inherit from this type.
+Specific actions like `restrictAccessAction` inherit from this type.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|microsoft.graph.security.dlpAction|The type of DLP action. Possible value is `restrictAccess`.|
+|action|microsoft.graph.security.dlpAction|The type of DLP action. Possible value is `restrictAccessAction`.|
 
 ## Relationships
 
