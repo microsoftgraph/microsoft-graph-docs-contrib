@@ -17,7 +17,6 @@ Namespace: microsoft.graph
 Represents a building within the tenant.
 
 Inherits from [place](../resources/place.md).
-Inherits from [place](./place.md).
 
 ## Methods
 |Method|Return type|Description|
