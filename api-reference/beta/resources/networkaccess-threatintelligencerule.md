@@ -23,7 +23,8 @@ Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkacc
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/networkaccess-threatintelligencerule-list.md)|[microsoft.graph.networkaccess.threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md) collection|Get a list of the threatIntelligenceRule objects and their properties.|
+|[List](../api/networkaccess-threatintelligencepolicy-list-policyrules.md)|[microsoft.graph.networkaccess.threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md) collection|Get a list of the threatIntelligencePolicyRule objects and their properties.|
+|[Create](../api/networkaccess-threatintelligencepolicy-post-policyrules.md)|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md)|Create a new threatIntelligencePolicyRule object.|
 |[Get](../api/networkaccess-threatintelligencerule-get.md)|[microsoft.graph.networkaccess.threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md)|Read the properties and relationships of a threatIntelligenceRule object.|
 |[Update](../api/networkaccess-threatintelligencerule-update.md)|[microsoft.graph.networkaccess.threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md)|Update the properties of a threatIntelligenceRule object.|
 |[Delete](../api/networkaccess-threatintelligencerule-delete.md)|None|Delete a threatIntelligenceRule object.|
