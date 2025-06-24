@@ -1,20 +1,20 @@
 ---
-title: "Delete building"
-description: "Delete a building object."
-author: tiwarisakshi02
+title: "Delete fixtureMap"
+description: "Delete a fixtureMap object."
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: apiPageType
 ---
 
-# Delete building
+# Delete fixtureMap
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [building](../resources/building.md) object.
+Delete a fixtureMap object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "building-delete-permissions"
+  "name": "levelmap-delete-fixtures-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/building-delete-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/levelmap-delete-fixtures-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /building
+DELETE /building/map/levels/{levelMapId}/fixtures/{fixtureMapId}/$ref
 ```
 
 ## Request headers
@@ -58,11 +58,11 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_building"
+  "name": "delete_fixturemap"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/building
+DELETE https://graph.microsoft.com/beta/building/map/levels/{levelMapId}/fixtures/{fixtureMapId}
 ```
 
 

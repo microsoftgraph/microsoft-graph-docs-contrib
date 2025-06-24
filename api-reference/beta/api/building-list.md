@@ -2,7 +2,7 @@
 title: "List building objects"
 description: "Get a list of the building objects and their properties."
 author: tiwarisakshi02
-ms.date: 06/09/2025
+ms.date: 06/12/2025
 ms.localizationpriority: medium
 ms.subservice:
 doc_type: apiPageType

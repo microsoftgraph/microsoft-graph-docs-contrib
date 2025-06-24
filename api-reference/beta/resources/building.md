@@ -2,7 +2,7 @@
 title: "building resource type"
 description: "Represents a building within the tenant."
 author: tiwarisakshi02
-ms.date: 06/11/2025
+ms.date: 06/12/2025
 ms.localizationpriority: medium
 ms.subservice:
 doc_type: resourcePageType
@@ -26,6 +26,10 @@ Inherits from [place](./place.md).
 |[Update](../api/building-update.md)|[building](./building.md)|Update the properties of a building object.|
 |[Delete](../api/building-delete.md)|None|Delete a building object.|
 |[descendants](../api/building-descendants.md)|[place](./place.md) collection|Returns the list of descendant [place](../resources/place.md) objects of a specific type (for example, [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [desks](./desk.md), or [workspaces](./workspace.md)) under a given **building**.|
+|[ingestMapFile](../api/building-ingestmapfile.md)|None|**TODO: Add Description**|
+|[List buildingMap](../api/building-list-map.md)|[buildingMap](../resources/buildingmap.md) collection|**TODO: Add a useful description.**|
+|[Add buildingMap](../api/building-post-map.md)|[buildingMap](../resources/buildingmap.md)|Add map by posting to the map collection.|
+|[Remove buildingMap](../api/building-delete-map.md)|None|Remove a [buildingMap](../resources/buildingmap.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -44,7 +48,9 @@ Inherits from [place](./place.md).
 |tags|String collection|Custom tags that are associated with the place for categorization or filtering. Inherited from [place](./place.md). |
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|map|[buildingMap](../resources/buildingmap.md)|**TODO: Add Description**|
 
 ## JSON representation
 The following JSON representation shows the resource type.

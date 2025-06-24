@@ -1,20 +1,20 @@
 ---
-title: "Get building"
-description: "Read the properties and relationships of a building object."
-author: tiwarisakshi02
+title: "List fixtureMap objects"
+description: "Get a list of the fixtureMap objects and their properties."
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: apiPageType
 ---
 
-# Get building
+# List fixtureMap objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [building](../resources/building.md) object.
+Get a list of the fixtureMap objects and their properties.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "building-get-permissions"
+  "name": "levelmap-list-fixtures-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/building-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/levelmap-list-fixtures-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /building
+GET /building/map/levels/{levelMapId}/fixtures
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [building](../resources/building.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [fixtureMap](../resources/fixturemap.md) objects in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ If successful, this method returns a `200 OK` response code and a [building](../
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_building"
+  "name": "list_fixturemap"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/building
+GET https://graph.microsoft.com/beta/building/map/levels/{levelMapId}/fixtures
 ```
 
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.building"
+  "@odata.type": "microsoft.graph.fixtureMap"
 }
 -->
 ``` http
@@ -85,31 +85,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.building",
-    "id": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
-    "displayName": "String",
-    "geoCoordinates": {
-      "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-    },
-    "phone": "String",
-    "address": {
-      "@odata.type": "microsoft.graph.physicalAddress"
-    },
-    "placeId": "String",
-    "parentId": "String",
-    "resourceLinks": [
-      {
-        "@odata.type": "microsoft.graph.resourceLink"
-      }
-    ],
-    "tags": [
-      "String"
-    ],
-    "isWheelChairAccessible": "Boolean",
-    "label": "String",
-    "hasWiFi": "Boolean"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.fixtureMap",
+      "id": "87757cea-30f2-43f7-1ddb-7d669684b6e8",
+      "properties": "String",
+      "placeId": "String"
+    }
+  ]
 }
 ```
 
