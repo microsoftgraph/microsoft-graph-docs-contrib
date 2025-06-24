@@ -48,7 +48,6 @@ PATCH /building
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [building](../resources/building.md), including the street, city, state, country or region, and postal code. Inherited from [place](../resources/place.md). Optional.|
