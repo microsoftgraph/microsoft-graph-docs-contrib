@@ -2802,6 +2802,14 @@
           },
           {
             "Id": "1808128f-7b67-475a-a635-3cc1b0a8dc76",
+            "ApiChange": "Property",
+            "ChangedApiName": "deviceId",
+            "ChangeType": "Addition",
+            "Description": "Added the **deviceId** property to the [stopAndQuarantineFileIncidentTaskResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-stopAndQuarantineFileIncidentTaskResponseAction?view=graph-rest-beta) resource.",
+            "Target": "stopAndQuarantineFileIncidentTaskResponseAction"
+          },
+          {
+            "Id": "1808128f-7b67-475a-a635-3cc1b0a8dc76",
             "ApiChange": "Resource",
             "ChangedApiName": "incidentTask",
             "ChangeType": "Addition",
