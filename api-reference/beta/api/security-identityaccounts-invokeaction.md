@@ -92,7 +92,7 @@ Content-Type: application/json
 {
   "accountId": "256db173-930a-4991-9061-0d51a9a93ba5",
   "action": "disable",
-  "provider": "ActiveDirectory"
+  "identityProvider": "ActiveDirectory"
 }
 ```
 

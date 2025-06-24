@@ -122,7 +122,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_identityaccounts"
+  "name": "get_identityaccounts_selected"
 }
 -->
 ``` http
@@ -136,6 +136,7 @@ The following example shows the response of the identityAccount using the select
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.security.identityAccounts"
 }
 -->
 ``` http

@@ -138,7 +138,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_identityaccounts"
+  "name": "list_identityaccounts_filtered"
 }
 -->
 ``` http
