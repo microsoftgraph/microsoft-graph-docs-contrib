@@ -127,7 +127,7 @@ Content-Type: application/json
         "severity": "high",
         "destinations": [
           {
-            "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",Add commentMore actions
+            "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
             "values": [
               "*"
             ]
