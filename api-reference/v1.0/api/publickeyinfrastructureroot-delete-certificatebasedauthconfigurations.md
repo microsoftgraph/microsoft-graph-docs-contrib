@@ -109,8 +109,6 @@ Content-type: application/json
 ### Example 2: Restore a deleted item and remove any conflicting proxy addresses
 
 #### Request
-
-# [HTTP](#tab/http)
 ```http
 POST https://graph.microsoft.com/v1.0/directory/deleteditems/78bf875b-9343-4edc-9130-0d3958113563/restore
 Content-Type: application/json
@@ -148,7 +146,7 @@ Content-type: application/json
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "restore_directory_deleteditem_newUserPrincipalName"
+  "name": "restore_directory_deletedpkiitem_newUserPrincipalName"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/directory/deleteditems/78bf875b-9343-4edc-9130-0d3958113563/restore

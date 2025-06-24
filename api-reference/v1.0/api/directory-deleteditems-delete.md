@@ -58,10 +58,7 @@ Don't supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
-
-
-# [HTTP](#tab/http)
+### Request
 <!-- {
   "blockType": "request",
   "name": "delete_directory_deleteditem"
@@ -70,7 +67,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
 
-##### Response
+### Response
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -91,4 +88,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

@@ -138,9 +138,6 @@ Content-type: application/json
 ### Example 2: Retrieve the count of deleted user objects and order the results by the deletedDateTime property
 
 #### Request
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_directory_deleteditems_count"

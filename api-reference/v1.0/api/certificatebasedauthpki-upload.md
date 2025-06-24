@@ -64,7 +64,6 @@ If successful, this action returns a `204 No Content` response code. If another 
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "certificatebasedauthpkithis.upload"
