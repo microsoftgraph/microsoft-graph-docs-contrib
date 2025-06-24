@@ -2985,6 +2985,48 @@
       "CreatedDateTime": "2025-04-25T07:19:22.6793915Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "AI interactions"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce8",
+          "ApiChange": "Property",
+          "ChangedApiName": "iconId",
+          "ChangeType": "Addition",
+          "Description": "Added the **iconId** property to the [teamwork: sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-v1) method.",
+          "Target": "sendActivityNotificationToRecipients"
+        },
+        {
+          "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce8",
+          "ApiChange": "Property",
+          "ChangedApiName": "iconId",
+          "ChangeType": "Addition",
+          "Description": "Added the **iconId** property to the [userTeamwork: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/userteamwork-sendactivitynotification?view=graph-rest-v1) method.",
+          "Target": "sendActivityNotification"
+        },
+        {
+          "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce8",
+          "ApiChange": "Property",
+          "ChangedApiName": "iconId",
+          "ChangeType": "Addition",
+          "Description": "Added the **iconId** property to the [chat: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/chat-sendactivitynotification?view=graph-rest-v1) method.",
+          "Target": "sendActivityNotification"
+        },
+        {
+          "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce8",
+          "ApiChange": "Property",
+          "ChangedApiName": "iconId",
+          "ChangeType": "Addition",
+          "Description": "Added the **iconId** property to the [team: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/team-sendactivitynotification?view=graph-rest-v1) method.",
+          "Target": "sendActivityNotification"
+        }
+      ],
+      "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-24T18:54:16.6879906Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }

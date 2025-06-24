@@ -53,6 +53,7 @@ The following table shows the parameters that can be used with this action.
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|The values for the template variables defined in the activity feed entry corresponding to `activityType` in the [Teams app manifest](/microsoftteams/platform/overview).|
 |recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|The recipient of the notification. For more information, see [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) and [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |
 | teamsAppId         | String                                                       | Optional. The Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra ID app ID are installed for the same recipient user. Avoid sharing Microsoft Entra ID app IDs between Teams apps. |
+|iconId|String| Optional. The unique icon ID that allows apps to send customized icons per activity type. Icon IDs must be present in the Teams app manifest schema. If the icon ID is specified in the manifest but missing from the API request body, the icon falls back to the default icon for the app. |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityURL`:
 
@@ -502,6 +503,61 @@ The following example shows the response.
   "truncated": false
 }
 -->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 6: Notify the chat members about an event using a custom icon
+
+If you want to notify chat members with a customized icon instead of the default app icon, you can set the optional **iconId** property in the request body.
+
+>**Note:** The `activityType` in the manifest must contain the list of allowed icon IDs in order to use this parameter. The request validation fails if the app manifest is missing the customized list of icons. For more information, see [Public developer preview app manifest](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview).
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "chat_sendactivitynotification_6",
+  "sampleKeys": ["19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"]
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2/sendActivityNotification
+Content-Type: application/json
+{
+  "topic": {
+    "source": "entityUrl",
+    "value": "https://graph.microsoft.com/v1.0/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+  },
+  "activityType": "taskCreated",
+  "previewText": {
+    "content": "new task created"
+  },
+  "iconId": "taskCreatedIcon",
+  "recipient": {
+    "@odata.type": "microsoft.graph.chatMembersNotificationRecipient",
+    "chatId": "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+  },
+  "templateParameters": [
+    {
+      "name": "taskId",
+      "value": "Task 12322"
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
