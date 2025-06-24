@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of the run objects and their properties for a [lifecycle workflow](../resources/identitygovernance-workflow.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
