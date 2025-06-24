@@ -292,6 +292,14 @@
         },
         {
           "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "conversation",
+          "ChangeType": "Addition",
+          "Description": "Added the **conversation** relationship to the [engagementConversationMessage](https://learn.microsoft.com/en-us/graph/api/resources/engagementConversationMessage?view=graph-rest-beta) resource.",
+          "Target": "engagementConversationMessage"
+        },
+        {
+          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
           "ApiChange": "Resource",
           "ChangedApiName": "engagementConversationMessageReaction",
           "ChangeType": "Addition",
