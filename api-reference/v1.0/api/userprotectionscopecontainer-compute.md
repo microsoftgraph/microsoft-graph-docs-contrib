@@ -63,7 +63,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Name          | Description   |
 | :------------ | :------------ |
-| ETag          | An indicator whether the admin-configured policy state has changed. If you have cached Etag value andit matches ETag from previous results from this API, there is no need to parse the response and cache the parsed results. Cache this value for calls to [process content](../api/userdatasecurityandgovernance-processcontent.md). |
+| ETag          | An indicator whether the admin-configured policy state has changed. If you have cached Etag value and it matches ETag from previous results from this API, there is no need to parse the response and cache the parsed results. Cache this value for calls to [process content](../api/userdatasecurityandgovernance-processcontent.md). |
 
 ## Response
 
