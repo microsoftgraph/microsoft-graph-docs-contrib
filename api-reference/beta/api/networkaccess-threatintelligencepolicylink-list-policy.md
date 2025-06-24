@@ -1,5 +1,5 @@
 ---
-title: "List threat intelligence policy"
+title: "List threatIntelligencePolicies for a filteringProfile"
 description: "Get a list of policies associated with a threat intelligence policy link."
 author: "fgomulka"
 ms.date: 06/05/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
-# List threat intelligence policy
+# List threatIntelligencePolicies for a filteringProfile
 
 Namespace: microsoft.graph.networkaccess
 

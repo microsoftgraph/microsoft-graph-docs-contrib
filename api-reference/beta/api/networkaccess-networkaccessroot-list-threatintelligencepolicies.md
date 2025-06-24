@@ -27,6 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-networkaccessroot-list-threatintelligencepolicies-permissions.md)]
 
+[!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
+
+
 ## HTTP request
 
 <!-- {
@@ -39,7 +42,7 @@ GET /networkAccess/threatIntelligencePolicies
 
 ## Optional query parameters
 
-This method supports the `$select`, `$top`, `expand`, and `$filter` OData query parameters to help customize the response.  For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$top`, `$expand`, and `$filter` OData query parameters to help customize the response.  For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

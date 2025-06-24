@@ -24,24 +24,22 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/networkaccess-threatintelligencepolicylink-list.md)|[microsoft.graph.networkaccess.threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md) collection|Get a list of the threatIntelligencePolicyLink objects and their properties.|
+|[Create](../api/networkaccess-threatintelligencepolicylink-post-policy.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Add a policy by posting to the policy collection associated with this threat intelligence policy link.|
 |[Get](../api/networkaccess-threatintelligencepolicylink-get.md)|[microsoft.graph.networkaccess.threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md)|Read the properties and relationships of a threatIntelligencePolicyLink object.|
 |[Update](../api/networkaccess-threatintelligencepolicylink-update.md)|[microsoft.graph.networkaccess.threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md)|Update the properties of a threatIntelligencePolicyLink object.|
 |[Delete](../api/networkaccess-threatintelligencepolicylink-delete.md)|None|Delete a threatIntelligencePolicyLink object.|
-|[List policy](../api/networkaccess-threatintelligencepolicylink-list.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) collection|Get a list of the policies associated with this threat intelligence policy link.|
-|[Add policy](../api/networkaccess-threatintelligencepolicylink-post-policy.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Add a policy by posting to the policy collection associated with this threat intelligence policy link.|
-|[Remove policy](../api/networkaccess-threatintelligencepolicylink-delete.md)|None|Remove a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier for the threat intelligence policy link. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). Inherits from [entity](../resources/entity.md)|
-|state|microsoft.graph.networkaccess.status|The operational state of the policy link that determines if the threat intelligence policy is actively applied to network traffic. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
+|state|microsoft.graph.networkaccess.status|The operational state of the policy link that determines if the threat intelligence policy is actively applied to network traffic. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Supports `$filter` (`eq`).| 
 |version|String|The version of the policy link, used for tracking changes. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|The threat intelligence policy associated with this link. The link connects the policy to filtering profiles, enabling the threat intelligence capabilities to be applied to network traffic. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
+|policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|The threat intelligence policy associated with this link. The link connects the policy to filtering profiles, enabling the threat intelligence capabilities to be applied to network traffic. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). Supports `$expand`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

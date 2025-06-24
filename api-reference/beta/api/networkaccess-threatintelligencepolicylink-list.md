@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}
+GET /networkAccess/filteringProfiles/{filteringProfileId}/policies
 ```
 
 ## Optional query parameters
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}
+GET https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/
 ```
 
 
@@ -90,9 +90,20 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicyLink",
-      "id": "ce676072-3617-c4ec-0a56-f5549ef31403",
-      "state": "String",
-      "version": "String"
+      "id": "c1f610c8-5a8d-4563-9343-87422c2e0d5a",
+      "state": "enabled",
+      "version": "1.0.0",
+      "policy": {
+        "@odata.type": "#microsoft.graph.networkaccess.threatIntelligencePolicy",
+        "id": "2121dda1-3156-437e-88d3-a58745916f5d",
+        "name": "Threat Intel policy",
+        "description": "Sample description for Threat Intel policy",
+        "version": "1.0.0",
+        "lastModifiedDateTime": "2025-05-22T15:14:57.9011461Z",
+        "settings": {
+          "defaultAction": "allow"
+        }
+      }
     }
   ]
 }

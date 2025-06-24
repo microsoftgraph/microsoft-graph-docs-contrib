@@ -44,7 +44,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|The collection of rules that define how the threat intelligence policy is applied. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|
+|policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|The collection of rules that define how the threat intelligence policy is applied. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Supports `$expand`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

@@ -1,6 +1,6 @@
 ---
-title: "Add threat intelligence policy"
-description: "Add policy by posting to the policy collection."
+title: "Add threatIntelligencePolicy to filteringProfile"
+description: "Add threatIntelligencePolicy to filteringProfile"
 author: "fgomulka"
 ms.date: 06/05/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
-# Add policy
+# Add threatIntelligencePolicy to filteringProfile
 
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) by posting to the policy collection.
+Add a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md)  to a [filteringProfile](../resources/networkaccess-filteringprofile.md).
 
 ## Permissions
 
@@ -57,7 +57,6 @@ You can specify the following properties when creating a **policy**.
 |name|String|The display name of the policy. Required.|
 |description|String|A description of the policy. Optional.|
 |version|String|The version of the policy, used for tracking changes. Required.|
-|kind|String|The kind of policy. For threat intelligence policies, this will be a specific value denoting the threat intelligence type. Required.|
 
 
 
