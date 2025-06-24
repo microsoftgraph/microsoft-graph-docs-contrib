@@ -1,6 +1,6 @@
 ---
 title: "cloudPcStatusSummary resource type"
-description: "Represents Cloud PC count with this status."
+description: "Represents the number of Cloud PCs for each status."
 author: "ziqifu9527"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Cloud PC count with this status.
+Represents the number of Cloud PCs for each status.
 
 ## Methods
 
