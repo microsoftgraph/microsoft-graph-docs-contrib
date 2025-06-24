@@ -20,6 +20,7 @@ Update the properties of an externalAuthenticationMethod object.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions acting on self
 <!-- {
   "blockType": "permissions",
   "name": "externalauthenticationmethod-update-permissions"
@@ -27,14 +28,30 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/externalauthenticationmethod-update-permissions.md)]
 
-## HTTP request
+### Permissions acting on other users
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "permissions",
+  "name": "externalauthenticationmethod-update-permissions"
 }
 -->
+[!INCLUDE [permissions-table](../includes/permissions/externalauthenticationmethod-update-permissions.md)]
+
+[!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
+
+## HTTP request
+
+To update details of your own external authentication method:
+<!-- { "blockType": "ignored" } -->
 ``` http
 PATCH /me/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+To update details of your own or another user's external authentication method:
+<!-- { "blockType": "ignored" } -->
+``` http
 PATCH /users/{usersId}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}
 ```
 
