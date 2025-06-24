@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Remove an [access package](../resources/accesspackage.md) from the list of access packages marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

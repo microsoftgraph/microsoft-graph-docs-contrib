@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "serviceprincipal_get_owners"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/serviceprincipals(appId='bbec3106-565f-4907-941e-96b4dbfef21c')/owners
+GET https://graph.microsoft.com/v1.0/serviceprincipals/bbec3106-565f-4907-941e-96b4dbfef21c/owners
 ```
 
 ### Response
