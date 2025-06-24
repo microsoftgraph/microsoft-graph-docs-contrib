@@ -152,8 +152,7 @@ Use the new Teams meeting AI insights APIs to get AI-generated insights for a me
 
 ### Security | Identities
 
-The Microsoft Defender for Identity Identity Accounts API allows you to get users data, apply available actions on onPrem, okta users. For example, you can use the invokeAction API to take actions such as disabling a user or forcing a password reset on compromised user.
-For more information, see [identityContainer](/graph/api/resources/security-identitycontainer?view=graph-rest-beta&preserve-view=true).
+Added the [identityAccounts resource type](/graph/api/resources/security-identityaccounts?view=graph-rest-beta&preserve-view=true) and its related methods that let you retrieve details of users flagged in Microsoft Defender for Identity alerts and apply actions such as disabling their accounts or forcing a password reset.
 
 
 ## Contribute to Microsoft Graph

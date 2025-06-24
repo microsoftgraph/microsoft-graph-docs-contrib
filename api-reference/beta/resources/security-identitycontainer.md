@@ -29,8 +29,8 @@ None.
 | Relationship     | Type                                                                                 | Description                                                                                                                                    |
 |:-----------------|:-------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
 | healthIssues     | [microsoft.graph.security.healthIssue](security-healthissue.md) collection           | Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified. |
+| identityAccounts | [microsoft.graph.security.identityAccounts](security-identityaccounts.md) collection | Represents an identity's details in the context of Microsoft Defender for Identity.                                                                  |
 | sensors          | [microsoft.graph.security.sensor](security-sensor.md) collection                     | Represents a customer's Microsoft Defender for Identity sensors.                                                                               |
-| identityAccounts | [microsoft.graph.security.identityAccounts](security-identityaccounts.md) collection | Represents an identityAccounts of a customer's Microsoft Defender for Identity.                                                                 |
 
 ## JSON representation
 

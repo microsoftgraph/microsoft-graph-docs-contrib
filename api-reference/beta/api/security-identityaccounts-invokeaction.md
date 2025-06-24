@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform available actions for identity security identity accounts. This allows reading and performing identity security actions on behalf of the signed-in identity.
+Perform actions such as revoking accounts and forcing password reset for identity accounts that are flagged in Microsoft Defender for Identity [alerts](../resources/security-alert.md). This allows reading and performing identity security actions on behalf of the signed-in identity.
 
 ## Permissions
 
@@ -53,8 +53,8 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |accountId|String|The identifier of the account to perform the action on.|
-|action|microsoft.graph.security.action|The type of action to perform on the account.|
-|identityProvider|microsoft.graph.security.identityProvider|The identity provider associated with the account.|
+|action|microsoft.graph.security.action|The type of action to perform on the account. The possible values are: `disable`, `enable`, `forcePasswordReset`, `revokeAllSessions`, `requireUserToSignInAgain`, `markUserAsCompromised`.|
+|identityProvider|microsoft.graph.security.identityProvider|The identity provider associated with the account. The possible values are: `entraID`, `activeDirectory`, `okta`, `unknownFutureValue`.|
 
 ## Response
 
@@ -71,13 +71,14 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/identities/identityAccounts/{identityAccountsId}/invokeAction
+POST https://graph.microsoft.com/beta/security/identities/identityAccounts/0104216-0539-4838-88b1-55baafdc296b/invokeAction
+
 Content-Type: application/json
 
 {
-  "accountId": "String",
-  "action": "String",
-  "identityProvider": "String"
+  "accountId": "256db173-930a-4991-9061-0d51a9a93ba5",
+  "action": "disable",
+  "provider": "ActiveDirectory"
 }
 ```
 
@@ -96,8 +97,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.security.invokeActionResult"
-  }
+  "value": 
+    {
+      "accountId": "256db173-930a-4991-9061-0d51a9a93ba5",
+      "action": "disable",
+      "provider": "ActiveDirectory",
+      "correlationId": "ed2f052b-2a01-4cd9-acb3-f6145f83e1a5"
+    }
 }
 ```

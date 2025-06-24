@@ -86,7 +86,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.security.identityAccounts",
-    "id": "70682fc1-ada1-05b9-bfd1-dfaa4c12a41f",
+    "id": "String (identifier)",
     "displayName": "String",
     "domain": "String",
     "onPremisesSecurityIdentifier": "String",

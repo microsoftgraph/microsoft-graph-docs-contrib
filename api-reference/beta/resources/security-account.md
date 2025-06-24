@@ -1,6 +1,6 @@
 ---
-title: "Account resource type"
-description: "Account field"
+title: "account resource type"
+description: "Provides details of the identity's account."
 author: "SamuelBenichou"
 ms.date: 06/22/2025
 ms.localizationpriority: medium
@@ -14,14 +14,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the account.
+Provides details of an [identity's account](../resources/security-identityaccounts.md).
 
 ## Properties
-|Property| Type                                                                                                     |Description|
-|:---|:---------------------------------------------------------------------------------------------------------|:---|
-|actions| microsoft.graph.security.action collection                                                               |List of the type of action|
-|identifier| String                                                                                                   |The account ID|
-|identityProvider| microsoft.graph.security.identityProvider                                                                |The identity provider|
+|Property| Type                                                                                                     | Description                 |
+|:---|:---------------------------------------------------------------------------------------------------------|:----------------------------|
+|actions| microsoft.graph.security.action collection                                                               | List of the type of action. |
+|identifier| String                                                                                                   | The account ID.             |
+|identityProvider| microsoft.graph.security.identityProvider                                                                | The identity provider.      |
 
 ## Relationships
 None.

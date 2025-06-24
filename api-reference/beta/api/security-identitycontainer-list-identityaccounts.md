@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the identityAccounts objects and their properties.
+Get a list of the [identityAccounts](../resources/security-identityaccounts.md) objects and their properties.
 
 ## Permissions
 
@@ -87,7 +87,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.identityAccounts",
-      "id": "70682fc1-ada1-05b9-bfd1-dfaa4c12a41f",
+      "id": "String (identifier)",
       "displayName": "String",
       "domain": "String",
       "onPremisesSecurityIdentifier": "String",

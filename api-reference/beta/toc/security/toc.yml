@@ -740,20 +740,6 @@ items:
       href: ../../api/security-sensor-getdeploymentpackageuri.md
     - name: Regenerate deployment access key
       href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
-  - name: identityAccount
-    items:
-      - name: identityAccounts
-        href: ../../resources/security-identityaccounts.md
-      - name: List
-        href: ../../api/security-identitycontainer-list-identityaccounts.md 
-      - name: Get
-        href: ../../api/security-identityaccounts-get.md
-      - name: Invoke Action
-        href: ../../api/security-identityaccounts-invokeaction.md
-  - name: User
-    items:
-      - name: User
-        href: ../../resources/security-user.md
   - name: Complex types
     items:
     - name: Deployment access key type
@@ -766,10 +752,6 @@ items:
       href: ../../resources/security-sensordeploymentpackage.md
     - name: Sensor settings
       href: ../../resources/security-sensorsettings.md
-    - name: Account
-      href: ../../resources/security-account.md
-    - name: invokeActionResult
-      href: ../../resources/security-invokeactionresult.md
 - name: Information protection
   items:
   - name: Information protection label
