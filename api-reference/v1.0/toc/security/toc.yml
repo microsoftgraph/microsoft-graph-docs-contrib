@@ -194,18 +194,12 @@ items:
     items:
     - name: Tenant data security and governance
       href: ../../resources/tenantdatasecurityandgovernance.md
-    - name: Compute protection scopes
-      href: ../../api/tenantprotectionscopecontainer-compute.md
-    - name: Process content
-      href: ../../api/userdatasecurityandgovernance-processcontent.md
     - name: Process content async
       href: ../../api/tenantdatasecurityandgovernance-processcontentasync.md
   - name: User data security and governance
     items:
     - name: User data security and governance
       href: ../../resources/userdatasecurityandgovernance.md
-    - name: Compute protection scopes
-      href: ../../api/userprotectionscopecontainer-compute.md
     - name: Process content
       href: ../../api/userdatasecurityandgovernance-processcontent.md
   - name: Complex types
@@ -218,8 +212,6 @@ items:
       href: ../../resources/autolabeling.md
     - name: Binary content
       href: ../../resources/binarycontent.md
-    - name: Block access action
-      href: ../../resources/blockaccessaction.md
     - name: Classifcation error base
       href: ../../resources/classifcationerrorbase.md
     - name: Classification error
@@ -230,20 +222,22 @@ items:
       href: ../../resources/computerightsandinheritanceresult.md
     - name: Content base
       href: ../../resources/contentbase.md
+    - name: Custom metadata dictionary
+      href: ../../resources/custommetadatadictionary.md
     - name: Device metadata
       href: ../../resources/devicemetadata.md
     - name: Dlp action info
       href: ../../resources/dlpactioninfo.md
     - name: Group scope
       href: ../../resources/groupscope.md
+    - name: Integrated application metadata
+      href: ../../resources/integratedapplicationmetadata.md
     - name: Label action base
       href: ../../resources/labelactionbase.md
     - name: Label content right
       href: ../../resources/labelcontentright.md
     - name: Label policy
       href: ../../resources/labelpolicy.md
-    - name: Notify user action
-      href: ../../resources/notifyuseraction.md
     - name: Operating system specifications
       href: ../../resources/operatingsystemspecifications.md
     - name: Policy binding
@@ -280,6 +274,8 @@ items:
       href: ../../resources/protectedcontent.md
     - name: Restrict access action
       href: ../../resources/restrictaccessaction.md
+    - name: Restrict access action base
+      href: ../../resources/restrictaccessactionbase.md
     - name: Scope base
       href: ../../resources/scopebase.md
     - name: Tenant scope
