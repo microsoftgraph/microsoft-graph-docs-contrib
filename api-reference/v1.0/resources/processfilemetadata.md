@@ -25,7 +25,7 @@ Represents metadata for a content entry that is a file.
 | modifiedDateTime | DateTimeOffset                                                                 | Required. Timestamp indicating when the original content was last modified. For ephemeral content like messages, this might be the same as `createdDateTime`. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).                   | customProperties | [customMetadataDictionary](../resources/custommetadatadictionary.md)  | A dictionary containing custom metadata associated with the file, potentially extracted by the calling application. |
 | isTruncated      | Boolean                                                                        | Required. Indicates if the provided `content` has been truncated from its original form (for example, due to size limits). Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 | length           | Int64                                                                          | The length of the original content in bytes. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md). |
-| ownerId          | String                                                                                                   | The unique identifier (for example, Object ID or UPN) of the owner of the file.                                            |
+| ownerId          | String                                                                         | The unique identifier (for example, Entra User ID or UPN) of the owner of the file.                                            |
 
 ## Relationships
 
