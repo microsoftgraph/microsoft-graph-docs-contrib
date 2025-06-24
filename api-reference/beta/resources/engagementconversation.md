@@ -30,17 +30,16 @@ None.
 
 |Property|Type|Description|
 |:---|:---|:---|
+|creationMode|[engagementCreationMode](../resources/engagementconversationmessage.md#engagementcreationmode-values)|Don't use. This property is managed at [engagementConversationMessage](../resources/engagementconversationmessage.md) level.|
 |id|String|The unique ID of a conversation in Viva Engage. Inherited from [entity](../resources/entity.md).|
-|starterId|String|The unique ID of the first message in a Viva Engage conversation|
-|creationMode|[engagementCreationMode](../resources/engagementconversationmessage.md#engagementcreationmode-values)|Do not use. This property is managed at [engagementConversationMessage](../resources/engagementconversationmessage.md) level.|
-|from|[engagementIdentitySet](../resources/engagementidentityset.md)|Identity of the sender of the message.|
+|starterId|String|The unique ID of the first message in a Viva Engage conversation.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|messages|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|The messages in a Viva Engage conversation|
-|starter|[engagementConversationMessage](../resources/engagementconversationmessage.md)|The first message in a Viva Engage conversation|
+|messages|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|The messages in a Viva Engage conversation.|
+|starter|[engagementConversationMessage](../resources/engagementconversationmessage.md)|The first message in a Viva Engage conversation.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -55,6 +54,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.engagementConversation",
+  "creationMode": "String",
   "id": "String (identifier)",
   "starterId": "String"
 }
