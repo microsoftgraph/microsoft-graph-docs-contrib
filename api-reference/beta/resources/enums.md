@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 12/31/2024
+ms.date: 11/26/2024 
 ---
 
 # Enum values
@@ -4985,6 +4985,26 @@ Possible values for user account types (group membership), per Windows definitio
 | logoutUrl |
 | unknownFutureValue |
 
+### signUpIdentifierType values 
+
+|Member|
+|:---|
+|emailAddress|
+|unknownFutureValue|
+
+### signUpStage values 
+
+|Member|
+|:---|
+|credentialCollection|
+|credentialValidation|
+|credentialFederation|
+|consent|
+|attributeCollectionAndValidation|
+|userCreation|
+|tenantConsent|
+|unknownFutureValue|
+
 ### nativeAuthenticationApisEnabled values
 
 | Member |
@@ -5235,6 +5255,25 @@ Possible values for user account types (group membership), per Windows definitio
 |informative|
 |personal|
 |persuasive|
+|unknownFutureValue|
+
+### notificationEventsType values 
+
+|Member|
+|:---|
+|none|
+|restoreAndPolicyUpdates|
+|unknownFutureValue|
+
+### notificationRecipientsType values 
+
+|Member|
+|:---|
+|none|
+|globalAdmins|
+|backupAdmins|
+|custom|
+|allAdmins|
 |unknownFutureValue|
 
 ### cloudPcPolicyTimezone values 

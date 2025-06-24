@@ -382,6 +382,8 @@ items:
       href: ../../api/security-ediscoverycase-post-reviewsets.md
     - name: Get
       href: ../../api/security-ediscoveryreviewset-get.md
+    - name: Update
+      href: ../../api/security-ediscoveryreviewset-update.md
     - name: Export
       href: ../../api/security-ediscoveryreviewset-export.md
     - name: Add to review set

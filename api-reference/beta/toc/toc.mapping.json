@@ -148,6 +148,7 @@
       ],
       "resources": [
         "backupRestoreRoot",
+        "emailNotificationsSetting",
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
@@ -219,6 +220,7 @@
       ],
       "complexTypes": [
         "artifactQuery",
+        "notificationRecipients",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
@@ -828,7 +830,8 @@
         "educationSubmissionResource",
         "readingAssignmentSubmission",
         "reflectCheckInResponse",
-        "relatedContact"
+        "relatedContact",
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
         "challengingWord",
@@ -2247,7 +2250,6 @@
         },
         {
           "name": "People admin settings",
-          [
           "resources": [
             "namePronunciationSettings",
             "photoUpdateSettings",
@@ -2423,11 +2425,13 @@
             {
               "name": "Microsoft Entra audit logs",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
+              "shouldSort": true,
               "resources": [
                 "customSecurityAttributeAudit",
                 "directoryAudit",
-                "signIn",
-                "provisioningObjectSummary"
+                "provisioningObjectSummary",
+                "selfServiceSignUp",
+                "signIn"
               ]
             }
           ]
@@ -3044,6 +3048,9 @@
             "teamsAppSettings",
             "teamsTab",
             "resourceSpecificPermissionGrant"
+          ],
+          "complexTypes": [
+            "customAppSettings"
           ]
         },
         {
@@ -3419,4 +3426,3 @@
     }
   ]
 }
-

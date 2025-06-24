@@ -30,7 +30,7 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description.|
-||String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |name|String|Policy name.|
 |version|String|Version.|
 

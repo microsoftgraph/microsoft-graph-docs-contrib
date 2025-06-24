@@ -12,13 +12,8 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new EducationModule
 {
 	DisplayName = "New_Module5 updated",
+	LanguageTag = "en-GB",
 	Description = "updated for description",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"languageTag" , "en-GB"
-		},
-	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
