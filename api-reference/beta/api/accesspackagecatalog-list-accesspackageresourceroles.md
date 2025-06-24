@@ -274,32 +274,32 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "id-value",
-      "displayName": "Member",
-      "description": "description-value",
-      "originId": "originId-value",
-      "originSystem": "originSystem-value"
-    },
-    {
-      "id": "id-value",
+      "id": "4f880547-ad41-4a2f-a1a7-99395c247e5a",
       "displayName": "Eligible Member",
-      "description": "description-value",
-      "originId": "originId-value",
-      "originSystem": "originSystem-value"
+      "description": "Eligible Member",
+      "originId": "27a35bef72-a8aa-4ca3-af30-f6b2ece7208f",
+      "originSystem": "AadGroup"
     },
     {
-      "id": "id-value",
-      "displayName": "Owner",
-      "description": "description-value",
-      "originId": "originId-value",
-      "originSystem": "originSystem-value"
-    },
-    {
-      "id": "id-value",
+      "id": "f0934696-3aba-429d-b69b-c01748aa9323",
       "displayName": "Eligible Owner",
-      "description": "description-value",
-      "originId": "originId-value",
-      "originSystem": "originSystem-value"
+      "description": "Eligible Owner",
+      "originId": "27a35bef72-a8aa-4ca3-af30-f6b2ece7208f",
+      "originSystem": "AadGroup"
+    },
+    {
+      "id": "4e2cc45f-a3f0-4f0a-b33b-d30e04497315",
+      "displayName": "Member",
+      "description": "Member",
+      "originId": "27a35bef72-a8aa-4ca3-af30-f6b2ece7208f",
+      "originSystem": "AadGroup"
+    },
+    {
+      "id": "bd939e12-cf35-4347-aed9-80b87dc10aac",
+      "displayName": " Owner",
+      "description": "Owner",
+      "originId": "27a35bef72-a8aa-4ca3-af30-f6b2ece7208f",
+      "originSystem": "AadGroup"
     }
   ]
 }
