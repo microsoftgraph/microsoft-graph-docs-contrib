@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the building objects and their properties.
+Get a list of [building](../resources/building.md) objects and their properties.
 
 ## Permissions
 
