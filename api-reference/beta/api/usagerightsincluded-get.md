@@ -41,12 +41,9 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels/{labelId}/rights
 | Authorization       | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 | Client-Request-Id   | Optional. A client-generated GUID to trace the request. Recommended for troubleshooting.                                                  |
 
-## Query parameters
+## Optional query parameters
 
-| Parameter  | Type   | Description                                                                                                                                                               |
-| :--------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ownerEmail | String | Optional. The email address of the content owner. This parameter is sometimes required by the underlying Rights Management service depending on the protection template. |
-| userEmail  | String | Optional. The email address of the user for whom the rights are being requested. This parameter is sometimes required by the underlying Rights Management service.          |
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request body
 
