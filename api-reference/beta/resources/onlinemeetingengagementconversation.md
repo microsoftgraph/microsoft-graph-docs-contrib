@@ -27,6 +27,7 @@ Inherits from [engagementConversation](../resources/engagementconversation.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|creationMode|[engagementCreationMode](../resources/engagementconversationmessage.md#engagementcreationmode-values)|Don't use. This property is managed at [engagementConversationMessage](../resources/engagementconversationmessage.md) level. Inherited from [engagementConversation](../resources/engagementconversation.md).|
 | id | String | The unique identifier for the conversation object. Inherited from [engagementConversation](../resources/engagementconversation.md). |
 |moderationState|[engagementConversationModerationState](#engagementconversationmoderationstate-values)|The moderation status of the conversation. The possible values are: `published`, `pendingReview`, `dismissed`, `unknownFutureValue`.|
 |onlineMeetingId|String|The unique identifier of the online meeting associated with this conversation. The online meeting ID links the conversation to a specific meeting instance.|
