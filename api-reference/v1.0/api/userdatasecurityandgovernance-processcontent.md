@@ -47,7 +47,7 @@ POST /users/{userId}/dataSecurityAndGovernance/processContent
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
-| If-None-Match | Optional. This value is used by the API to determine if the policy state changed since the last call to the API. The value is from the Etag header returned from [protectionScopes compute](../api/userprotectionscopecontainer-compute.md)|
+| If-None-Match | Optional. This value is used by the API to determine if the policy state changed since the last call to the API. The value is from the Etag header returned from [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). If newly computed Etag value does not match the value passsed in this header, protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). |
 
 ## Request body
 
@@ -63,7 +63,7 @@ The following table lists the parameters that are required when you call this ac
 
 | Name          | Description   |
 | :------------ | :------------ |
-| ETag          | An indicatorthat can be used to detect if configured policy state changed. If the policy state changed, the ETag value will change and protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). |
+| ETag          | An indicator that can be used to detect if configured policy state changed. If the policy state changed, the ETag value will change and protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). |
 
 ## Response
 
