@@ -171,16 +171,62 @@ configuration:
       then:
       - removeLabel:
           label: ready for content review
-    - description: When Identity-related label is added to a pull request request review from FaithOmbongi
+    - description: When Security, Identity, & Compliance-related label is added to a pull request, request review from FaithOmbongi
       if:
       - payloadType: Pull_Request
       - or:
         - labelAdded:
-            label: 'area: Azure AD'
-        - labelAdded:
             label: 'area: Entra'
         - labelAdded:
             label: 'area: identity'
+        - labelAdded:
+            label: 'area: app model'
+        - labelAdded:
+            label: 'area: app role assignment'
+        - labelAdded:
+            label: 'area: applications'
+        - labelAdded:
+            label: 'area: authN/Z'
+        - labelAdded:
+            label: 'area: batch requests'
+        - labelAdded:
+            label: 'area: change notifications'
+        - labelAdded:
+            label: 'area: change tracking'
+        - labelAdded:
+            label: 'area: compliance'
+        - labelAdded:
+            label: 'area: directory management'
+        - labelAdded:
+            label: 'area: eDiscovery'
+        - labelAdded:
+            label: 'area: extensions'
+        - labelAdded:
+            label: 'area: governance'
+        - labelAdded:
+            label: 'area: groups'
+        - labelAdded:
+            label: 'area: GSA'
+        - labelAdded:
+            label: 'area: identity protection'
+        - labelAdded:
+            label: 'area: app model'
+        - labelAdded:
+            label: 'area: multicloud permissions management'
+        - labelAdded:
+            label: 'area: paging'
+        - labelAdded:
+            label: 'area: permissions'
+        - labelAdded:
+            label: 'area: query parameters'
+        - labelAdded:
+            label: 'area: security'
+        - labelAdded:
+            label: 'area: throttling'
+        - labelAdded:
+            label: 'area: users'
+        - labelAdded:
+            label: 'area: Azure AD B2C'
       - isOpen
       then:
       - requestReview:

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of the [group](../resources/group.md) objects marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

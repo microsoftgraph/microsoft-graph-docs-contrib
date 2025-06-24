@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Provide a summary of workflows processed, by category, in a tenant. This allows you to quickly get category information, by numerical value, bypassing other information found in the [WorkflowsProcessedSummary](identitygovernance-insights-workflowsprocessedsummary.md) call.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
