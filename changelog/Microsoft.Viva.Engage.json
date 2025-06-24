@@ -213,14 +213,6 @@
         {
           "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
           "ApiChange": "Enumeration",
-          "ChangedApiName": "engagementConversationMessageAttachmentType",
-          "ChangeType": "Addition",
-          "Description": "Added the **engagementConversationMessageAttachmentType** enumeration type.",
-          "Target": "engagementConversationMessageAttachmentType"
-        },
-        {
-          "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
-          "ApiChange": "Enumeration",
           "ChangedApiName": "engagementConversationMessageReactionType",
           "ChangeType": "Addition",
           "Description": "Added the **engagementConversationMessageReactionType** enumeration type.",
