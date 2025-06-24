@@ -1,6 +1,6 @@
 ---
 title: "aiInteractionHistory resource type"
-description: "Represents a list of messages exchanged involving AI."
+description: "Represents a list of messages that are exchanged and involve AI."
 ms.date: 11/15/2024
 doc_type: resourcePageType
 ms.localizationpriority: medium
@@ -15,13 +15,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a list of messages exchanged involving AI.
+Represents a list of messages that are exchanged and involve AI.
 
 ## Methods
 
 |  Method       |  Return Type  | Description| 
 |:---------------|:--------|:----------|
-|[List all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) | [aiInteraction](aiinteraction.md) collection | Get all Microsoft 365 Copilot interactions data, including user prompts to Copilot and the Copilot responses. |
+|[Get all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) | [aiInteraction](aiinteraction.md) collection | Get all Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. |
 
 ## Properties
 None.

@@ -36,7 +36,7 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "approvalstep_update_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-2-permissions.md)]
 
-### Permissions required for calling this API for PIM for groups
+### Permissions required for calling this API for PIM for Groups
 
 <!-- { "blockType": "permissions", "name": "approvalstep_update_3" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-3-permissions.md)]
@@ -57,7 +57,7 @@ To update an approval decision in PIM for Microsoft Entra roles:
 PATCH /roleManagement/directory/roleAssignmentApprovals/{id}/steps/{id}
 ```
 
-To update an approval decision in PIM for groups:
+To update an approval decision in PIM for Groups:
 
 <!-- { "blockType": "ignored" } -->
 ```http

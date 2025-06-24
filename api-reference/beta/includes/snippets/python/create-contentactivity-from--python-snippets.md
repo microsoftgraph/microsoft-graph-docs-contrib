@@ -19,33 +19,30 @@ request_body = ContentActivity(
 		content_entries = [
 			ProcessConversationMetadata(
 				odata_type = "microsoft.graph.processConversationMetadata",
-				identifier = "68fa951a-898a-4427-8e9e-6f8c05e9fe2b",
-				name = "API Explorer message",
-				correlation_id = "559a2343-7aa2-4912-93fe-72c47b2706ed",
+				identifier = "d6ab5054-e111-45c3-9fba-9f2a59c9bbf8",
+				name = "CA Purview API Explorer message",
+				correlation_id = "edfb7f88-b963-4ef2-8b30-5cb90f80e01e",
+				sequence_number = 0,
 				is_truncated = False,
-				created_date_time = "2025-04-28T20:17:55",
-				modified_date_time = "2025-04-28T20:17:55",
-				additional_data = {
-						"sequence_no" : 0,
-				}
+				created_date_time = "2025-05-28T20:20:37",
+				modified_date_time = "2025-05-28T20:20:37",
 			),
 		],
 		activity_metadata = ActivityMetadata(
-			activity = UserActivityType.UploadText,
+			activity = UserActivityType.DownloadText,
 		),
 		integrated_app_metadata = IntegratedApplicationMetadata(
-			name = "API Explorer",
+			name = "CA Purview API Explorer",
 			version = "0.1",
 		),
 		additional_data = {
 				"device_metadata" : {
-						"device_type" : "unmanaged",
 						"operating_system_specifications" : {
 								"operating_system_platform" : "Windows 11",
 								"operating_system_version" : "10.0.26100.0",
 						},
 				},
-				"user_id" : "7c2f8f10-cba8-4a8d-9449-db4b76d17390",
+				"user_id" : "7c497f10-cba8-4a8d-9449-db4b76d1ef80",
 				"scope_identifier" : "0",
 		}
 	),

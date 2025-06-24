@@ -3,6 +3,106 @@
       {
         "ChangeList": [
           {
+            "Id": "a9aa0a8e-95b2-4bf7-9851-9fe707d27968",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "notificationEventsType",
+            "ChangeType": "Addition",
+            "Description": "Added the **notificationEventsType** enumeration type.",
+            "Target": "notificationEventsType"
+          },
+          {
+            "Id": "a9aa0a8e-95b2-4bf7-9851-9fe707d27968",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "notificationRecipientsType",
+            "ChangeType": "Addition",
+            "Description": "Added the **notificationRecipientsType** enumeration type.",
+            "Target": "notificationRecipientsType"
+          },
+          {
+            "Id": "a9aa0a8e-95b2-4bf7-9851-9fe707d27968",
+            "ApiChange": "Resource",
+            "ChangedApiName": "notificationRecipients",
+            "ChangeType": "Addition",
+            "Description": "Added the [notificationRecipients](https://learn.microsoft.com/en-us/graph/api/resources/notificationRecipients?view=graph-rest-beta) resource type.",
+            "Target": "notificationRecipients"
+          },
+          {
+            "Id": "a9aa0a8e-95b2-4bf7-9851-9fe707d27968",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "emailNotificationsSetting",
+            "ChangeType": "Addition",
+            "Description": "Added the **emailNotificationsSetting** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+            "Target": "backupRestoreRoot"
+          },
+          {
+            "Id": "a9aa0a8e-95b2-4bf7-9851-9fe707d27968",
+            "ApiChange": "Resource",
+            "ChangedApiName": "emailNotificationsSetting",
+            "ChangeType": "Addition",
+            "Description": "Added the [emailNotificationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/emailNotificationsSetting?view=graph-rest-beta) resource and associated methods.",
+            "Target": "emailNotificationsSetting"
+          }
+        ],
+        "Id": "a9aa0a8e-95b2-4bf7-9851-9fe707d27968",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-06-17T09:39:55.7553844Z",
+        "WorkloadArea": "Backup storage",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "protectionUnitsBulkJobStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionUnitsBulkJobStatus** enumeration type.",
+            "Target": "protectionUnitsBulkJobStatus"
+          },
+          {
+            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "ApiChange": "Resource",
+            "ChangedApiName": "driveProtectionUnitsBulkAdditionJob",
+            "ChangeType": "Addition",
+            "Description": "Added the [driveProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnitsBulkAdditionJob?view=graph-rest-1.0) resource.",
+            "Target": "driveProtectionUnitsBulkAdditionJob"
+          },
+          {
+            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "ApiChange": "Resource",
+            "ChangedApiName": "mailboxProtectionUnitsBulkAdditionJob",
+            "ChangeType": "Addition",
+            "Description": "Added the [mailboxProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnitsBulkAdditionJob?view=graph-rest-1.0) resource.",
+            "Target": "mailboxProtectionUnitsBulkAdditionJob"
+          },
+          {
+            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "ApiChange": "Resource",
+            "ChangedApiName": "protectionUnitsBulkJobBase",
+            "ChangeType": "Addition",
+            "Description": "Added the [protectionUnitsBulkJobBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitsBulkJobBase?view=graph-rest-1.0) resource.",
+            "Target": "protectionUnitsBulkJobBase"
+          },
+          {
+            "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+            "ApiChange": "Resource",
+            "ChangedApiName": "siteProtectionUnitsBulkAdditionJob",
+            "ChangeType": "Addition",
+            "Description": "Added the [siteProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnitsBulkAdditionJob?view=graph-rest-1.0) resource.",
+            "Target": "siteProtectionUnitsBulkAdditionJob"
+          }
+        ],
+        "Id": "991146f6-22d4-4e50-b893-fbea11342412",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2025-06-02T20:56:50.6135343Z",
+        "WorkloadArea": "EnhancedRestore",
+        "SubArea": "Backup and Restore"
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "4934104c-06cd-49b5-a50e-c3f0ee1482f6",
             "ApiChange": "Enumeration",
             "ChangedApiName": "restoreArtifactsBulkRequestStatus",

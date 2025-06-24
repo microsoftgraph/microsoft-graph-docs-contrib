@@ -19,6 +19,8 @@ Namespace: microsoft.graph
 
 Compute the data protection policies and actions applicable to a specific user based on their context. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -54,7 +56,7 @@ In the request body, provide a JSON object with the following parameters.
 | activities            | microsoft.graph.security.userActivityTypes                                                   | Optional. Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`. |
 | deviceMetadata        | [deviceMetadata](../resources/devicemetadata.md)                                    | Required. Information about the user's device (type, OS) used for contextual policy evaluation.                                                                    |
 | integratedAppMetadata | [integratedApplicationMetadata](../resources/integratedapplicationmetadata.md)      | Required. Information about the calling application (name, version) integrating with Microsoft Purview.                                                                    |
-| locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations (domains or URLs) the application is interested in. If provided, results are trimmed to policies covering these locations.     |
+| locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations the application is interested in. If provided, results are trimmed to policies covering these locations. Use [policy location application](../resources/policylocationapplication.md) for application locations, [policy location domain](../resources/policylocationdomain.md) for domain locations, or [policy location URL](../resources/policylocationurl.md) for URL locations. |
 | pivotOn               | microsoft.graph.policyPivotProperty                                                 | Optional. Specifies how the results should be aggregated. If omitted or `none`, results might be less aggregated. Possible values are `activity`,`location`, `none`.                  |
 
 ## Response headers
@@ -78,25 +80,13 @@ POST https://graph.microsoft.com/beta/users/{7c1f8f10-cba8-4a8d-9449-db4b876d1ef
 Content-type: application/json
 
 {
-  "activities": "uploadText",
-  "locations": [
-    {
-      "@odata.type": "#microsoft.graph.policyLocationDomain",
-      "value": "public.contoso.com"
-    }
-  ],
-  "pivotOn": "activity",
-  "deviceMetadata": {
-    "deviceType": "Managed",
-    "operatingSystemSpecifications": {
-       "operatingSystemPlatform": "Windows",
-       "operatingSystemVersion": "10.0.19045"
-    }
-  },
-  "integratedAppMetadata": {
-      "name": "Contoso Browser Helper",
-      "version": "1.2.3"
-  }
+   "activities": "uploadText,downloadText",
+   "locations": [
+      {
+         "@odata.type": "microsoft.graph.policyLocationApplication",
+         "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
+      }
+   ]
 }
 ```
 
@@ -114,27 +104,25 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.policyUserScope)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.policyUserScope",
+      "activities": "uploadText,downloadText",
+      "executionMode": "evaluateOffline",
       "locations": [
         {
-          "@odata.type": "#microsoft.graph.policyLocationDomain",
-          "value": "public.contoso.com"
+          "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
         }
       ],
+      "policyActions": []
+    },
+    {
       "activities": "uploadText",
       "executionMode": "evaluateInline",
-      "policyActions": [
-         {
-            "@odata.type": "#microsoft.graph.browserRestrictionAction",
-             "action": "browserRestriction",
-             "restrictionAction": "block",
-             "message": "Uploading sensitive content to this site is blocked by policy.",
-             "triggers": ["upload"], // Conceptual trigger, actual values TBD
-             "webSiteGroupId": "website-group-guid"
-         }
-      ]
+      "locations": [
+        {
+          "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
+        }
+      ],
+      "policyActions": []
     }
-    // Potentially other scopes for different activities/locations if requested/applicable
   ]
 }
 ```
