@@ -34,10 +34,10 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|A description of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
-|id|String|The unique identifier for the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Inherits from [entity](../resources/entity.md)|
+|description|String|A description of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Supports `$filter` (`eq`).|
+|id|String|The unique identifier for the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Inherits from [entity](../resources/entity.md). Supports `$filter` (`eq`).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified.|
-|name|String|The display name of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|name|String|The display name of the threat intelligence policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Supports `$filter` (`eq`).|
 |settings|[microsoft.graph.networkaccess.threatIntelligencePolicySettings](../resources/networkaccess-threatintelligencepolicysettings.md)|Settings that define how the threat intelligence policy operates and evaluates threats.|
 |version|String|The version of the policy, used for tracking changes. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 

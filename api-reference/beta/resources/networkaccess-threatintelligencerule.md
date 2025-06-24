@@ -32,12 +32,12 @@ Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkacc
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|microsoft.graph.networkaccess.threatIntelligenceAction|The action to take when network traffic matches this rule's conditions. The possible values are: `allow`, `block`, `unknownFutureValue`.|
-|description|String|A description of the threat intelligence rule.|
-|id|String|The unique identifier for the threat intelligence rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md). Inherits from [entity](../resources/entity.md)|
+|action|microsoft.graph.networkaccess.threatIntelligenceAction|The action to take when network traffic matches this rule's conditions. The possible values are: `allow`, `block`, `unknownFutureValue`. Supports `$filter` (`eq`).|
+|description|String|A description of the threat intelligence rule. Supports `$filter` (`eq`).|
+|id|String|The unique identifier for the threat intelligence rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md). Inherits from [entity](../resources/entity.md). Supports `$filter` (`eq`).|
 |matchingConditions|[microsoft.graph.networkaccess.threatIntelligenceMatchingConditions](../resources/networkaccess-threatintelligencematchingconditions.md)|Conditions that define what network traffic should be evaluated by this rule.|
-|name|String|The display name of the threat intelligence rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
-|priority|Int64|The priority of the rule which determines the order of rule evaluation. Lower values indicate higher priority.|
+|name|String|The display name of the threat intelligence rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md). Supports `$filter` (`eq`).|
+|priority|Int64|The priority of the rule which determines the order of rule evaluation. Lower values indicate higher priority. Supports `$filter` (`eq`).|
 |settings|[microsoft.graph.networkaccess.threatIntelligenceRuleSettings](../resources/networkaccess-threatintelligencerulesettings.md)|Settings that define how the threat intelligence rule operates and is enforced.|
 
 ## Relationships
