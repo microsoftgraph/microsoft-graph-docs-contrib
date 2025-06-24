@@ -63,8 +63,6 @@ PATCH /building
 |resourceLinks|[resourceLink](../resources/resourcelink.md) collection|A set of links to external resources that are associated with the [building](../resources/building.md). Inherited from [place](../resources/place.md). Required.|
 |tags|String collection|Custom tags that are associated with the [building](../resources/building.md) for categorization or filtering. Inherited from [place](../resources/place.md). Required.|
 
-
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [building](../resources/building.md) object in the response body.
