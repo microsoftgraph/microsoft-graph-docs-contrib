@@ -73,7 +73,7 @@ If successful, this action returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example computes the protection scope for a user performing text uploads, interested in a specific domain, pivoting the results by activity.
+The following example computes the protection scope for a user performing text uploads and downloads.
 
 ```http
 POST https://graph.microsoft.com/v1.0/users/7c1f8f10-cba8-4a8d-9449-db4b876d1ef70/dataSecurityAndGovernance/protectionScopes/compute
@@ -92,7 +92,7 @@ Content-type: application/json
 
 ### Response
 
-The following example shows the response. It indicates that for the `uploadText` activity to `public.contoso.com`, policies require inline evaluation and trigger a `browserRestriction` action (likely blocking uploads based on sensitive content).
+The following example shows the response. It indicates that for the `uploadText` activity for the integrated application with id 83ef208a-0396-4893-9d4f-d36efbffc8bd, policies require inline evaluation. For the `uploadText` activity for the integrated application with id 83ef208a-0396-4893-9d4f-d36efbffc8bd, policies require offline evaluation and trigger a `restrictAccess` action (likely blocking uploads based on sensitive content).
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -104,8 +104,8 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.policyUserScope)",
   "value": [
     {
-      "activities": "uploadText,downloadText",
-      "executionMode": "evaluateOffline",
+      "activities": "uploadText",
+      "executionMode": "evaluateInline",
       "locations": [
         {
           "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
@@ -115,13 +115,19 @@ Content-type: application/json
     },
     {
       "activities": "uploadText",
-      "executionMode": "evaluateInline",
+      "executionMode": "evaluateOffline",
       "locations": [
         {
           "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
         }
       ],
-      "policyActions": []
+      "policyActions": [
+        {
+            "@odata.type": "#microsoft.graph.restrictAccessAction",
+            "action": "restrictAccess",
+            "restrictionAction": "block"
+        }
+     ],      
     }
   ]
 }
