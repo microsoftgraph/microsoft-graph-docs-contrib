@@ -31,6 +31,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/dataSecurityAndGovernance/processContent
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
 POST /users/{userId}/dataSecurityAndGovernance/processContent
 ```
 
