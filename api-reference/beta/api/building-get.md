@@ -97,7 +97,7 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.physicalAddress"
     },
     "placeId": "String",
-"parentId": "String",
+    "parentId": "String",
     "resourceLinks": [
       {
         "@odata.type": "microsoft.graph.resourceLink"
