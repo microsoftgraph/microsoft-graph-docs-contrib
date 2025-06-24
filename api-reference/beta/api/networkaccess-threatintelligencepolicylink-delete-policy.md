@@ -1,6 +1,6 @@
 ---
-title: "Remove policy"
-description: "Remove a microsoft.graph.networkaccess.policy object."
+title: "Remove threatIntelligencePolicy from a filteringProfile"
+description: "Remove threatIntelligencePolicy from a filteringProfile"
 author: "fgomulka"
 ms.date: 06/05/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
-# Remove policy
+# Remove threatIntelligencePolicy from a filteringProfile
 
 Namespace: microsoft.graph.networkaccess
 
