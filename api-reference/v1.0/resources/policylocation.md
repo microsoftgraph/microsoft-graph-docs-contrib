@@ -20,7 +20,7 @@ Abstract base type representing a location (like a domain or URL) to which a dat
 
 | Property | Type   | Description                                                    |
 | :------- | :----- | :------------------------------------------------------------- |
-| value    | String | The actual value representing the location. Location value is specific for concretetype of the  policyLocation - application, domain, or URL (for example, "contoso.com", "https://partner.contoso.com/upload", "83ef198a-0396-4893-9d4f-d36efbffcaaa"). |
+| value    | String | The actual value representing the location. Location value is specific for concretetype of the  policyLocation - policyLocationDomain, policyLocationUrl, or policyLocationApplication (for example, "contoso.com", "https://partner.contoso.com/upload", "83ef198a-0396-4893-9d4f-d36efbffcaaa"). |
 
 ## Relationships
 
