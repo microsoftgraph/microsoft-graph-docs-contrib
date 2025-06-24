@@ -31,7 +31,7 @@ The following table lists the latency to expect between an event happening in th
 | [driveItem][]           | Less than 1 minute   | 5 minutes       |
 | [event][]               | Unknown              | Unknown         |
 | [group][]               | Unknown              | Unknown         |
-| [health monitoring alert][]| Unknown           | Unknown         |
+| [health monitoring alert][] | Unknown           | Unknown         |
 | [list][]                | Less than 1 minute   | 5 minutes       |
 | [message][]             | Less than 1 minute   | 3 minutes       |
 | [offerShiftRequest][]   | Less than 1 minute   | 60 minutes      |

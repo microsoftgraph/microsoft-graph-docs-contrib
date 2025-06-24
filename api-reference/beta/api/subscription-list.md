@@ -67,6 +67,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[event](../resources/event.md) | Calendars.Read, Subscription.Read.All | Calendars.Read, Subscription.Read.All | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All, Subscription.Read.All | Not supported.  | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All, Subscription.Read.All | Not supported.  | Not supported.  |
+|[health monitoring alert](../resources/healthmonitoring-alert.md) <br />`reports/healthmonitoring/alerts`| HealthMonitoringAlertConfig.Read.All | Not supported. | HealthMonitoringAlertConfig.Read.All |
 |[list](../resources/list.md) | Sites.ReadWrite.All, Subscription.Read.All | Not supported.  | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.Read |
 |[offerShiftRequest](../resources/offershiftrequest.md)<br />`/teams/{id}/schedule/offerShiftRequests` <br />Changes to any offer shift request in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported. | Schedule.Read.All, Schedule.ReadWrite.All |
@@ -83,7 +84,6 @@ Depending on the resource and the permission type (delegated or application) req
 |[timeOffRequest](../resources/timeoffrequest.md)<br />`/teams/{id}/schedule/timeOffRequests` <br />Changes to any time off request in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported. | Schedule.Read.All, Schedule.ReadWrite.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite, Subscription.Read.All | Tasks.ReadWrite, Subscription.Read.All | Not supported.  |
 |[user](../resources/user.md) | User.Read.All, Subscription.Read.All | User.Read.All | User.Read.All |
-|[health monitoring alert](../resources/healthmonitoring-alert.md) <br />`reports/healthmonitoring/alerts`| HealthMonitoringAlertConfig.ReadWrite.All | Not supported. | HealthMonitoringAlertConfig.ReadWrite.All |
 |[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite, Subscription.Read.All | Tasks.ReadWrite, Subscription.Read.All | Not supported.  |
 
 > [!NOTE]
