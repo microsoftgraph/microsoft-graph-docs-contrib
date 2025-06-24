@@ -13,9 +13,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
->**Note:** At this time, returned results don't reflect filtering values provided in the request.
-
-Compute the data protection policies and actions applicable to a specific user based on their context. 
+Compute the data protection policies and actions applicable to a specific user based on their context.
 
 ## Permissions
 
