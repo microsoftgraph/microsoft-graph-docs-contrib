@@ -97,6 +97,17 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.physicalAddress"
     },
     "placeId": "String",
+"parentId": "String",
+    "resourceLinks": [
+      {
+        "@odata.type": "microsoft.graph.resourceLink"
+      }
+    ],
+    "tags": [
+      "String"
+    ],
+    "isWheelChairAccessible": "Boolean",
+    "label": "String",
     "hasWiFi": "Boolean"
   }
 }
