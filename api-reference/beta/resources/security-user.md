@@ -1,5 +1,5 @@
 ---
-title: "user resource type"
+title: "user identity resource type"
 description: "User fields"
 author: "SamuelBenichou"
 ms.date: 06/22/2025
