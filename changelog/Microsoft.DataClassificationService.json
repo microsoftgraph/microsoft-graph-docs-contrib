@@ -63,14 +63,6 @@
         {
           "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Enumeration",
-          "ChangedApiName": "overrideOption",
-          "ChangeType": "Addition",
-          "Description": "Added the **overrideOption** enumeration type.",
-          "Target": "overrideOption"
-        },        
-        {
-          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
-          "ApiChange": "Enumeration",
           "ChangedApiName": "policyPivotProperty",
           "ChangeType": "Addition",
           "Description": "Added the **policyPivotProperty** enumeration type.",
@@ -147,14 +139,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [binaryContent](https://learn.microsoft.com/en-us/graph/api/resources/binaryContent?view=graph-rest-1.0) resource.",
           "Target": "binaryContent"
-        },
-        {
-          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
-          "ApiChange": "Resource",
-          "ChangedApiName": "blockAccessAction",
-          "ChangeType": "Addition",
-          "Description": "Added the [blockAccessAction](https://learn.microsoft.com/en-us/graph/api/resources/blockAccessAction?view=graph-rest-1.0) resource.",
-          "Target": "blockAccessAction"
         },
         {
           "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
@@ -268,14 +252,6 @@
           "Description": "Added the [labelPolicy](https://learn.microsoft.com/en-us/graph/api/resources/labelPolicy?view=graph-rest-1.0) resource.",
           "Target": "labelPolicy"
         },        
-        {
-          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
-          "ApiChange": "Resource",
-          "ChangedApiName": "notifyUserAction",
-          "ChangeType": "Addition",
-          "Description": "Added the [notifyUserAction](https://learn.microsoft.com/en-us/graph/api/resources/notifyUserAction?view=graph-rest-1.0) resource.",
-          "Target": "notifyUserAction"
-        },     
         {
           "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
@@ -547,6 +523,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [userProtectionScopeContainer](https://learn.microsoft.com/en-us/graph/api/resources/userProtectionScopeContainer?view=graph-rest-1.0) resource.",
           "Target": "userProtectionScopeContainer"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "protectionScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the **protectionScopes** relationship to the [tenantDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/tenantDataSecurityAndGovernance?view=graph-rest-1.0) resource.",
+          "Target": "tenantDataSecurityAndGovernance"
+        },
+        {
+          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "protectionScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the **protectionScopes** relationship to the [userDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/userDataSecurityAndGovernance?view=graph-rest-1.0) resource.",
+          "Target": "userDataSecurityAndGovernance"
         },
         {
           "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",

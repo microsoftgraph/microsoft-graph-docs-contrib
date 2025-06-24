@@ -946,17 +946,6 @@ Namespace: microsoft.graph.security
 |evaluateOffline|
 |unknownFutureValue|
 
-### overrideOption values
-
-|Member|
-|:---|
-|notAllowed|
-|allowFalsePositiveOverride|
-|allowWithJustification|
-|allowWithoutJustification|
-|unknownFutureValue|
-|allowWithAcknowledgement|
-
 ### policyPivotProperty values
 
 |Member|

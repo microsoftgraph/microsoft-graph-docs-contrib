@@ -18,7 +18,6 @@ Provides access to data security and governance functionalities specifically sco
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Compute protection scopes](../api/userprotectionscopecontainer-compute.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the protection scopes for this user. |
 | [Process content](../api/userdatasecurityandgovernance-processcontent.md) | [processContentResponse](../resources/processcontentresponse.md) | Process content against data security and governance policies in the context of this user. |
 
 ## Properties
@@ -30,6 +29,7 @@ None specific to this derived type.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |activities|[microsoft.graph.activitiesContainer](../resources/activitiescontainer.md)|Container for activity logs (content processing and audit) related to this user. ContainsTarget: true.|
+| [Compute protection scopes](../api/userprotectionscopecontainer-compute.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the protection scopes for this user. |
 
 ## JSON representation
 
