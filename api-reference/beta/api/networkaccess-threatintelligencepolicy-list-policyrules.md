@@ -1,6 +1,6 @@
 ---
-title: "List threatIntelligenceRule objects"
-description: "Get a list of the threatIntelligenceRule objects and their properties."
+title: "List policyRules for threatIntelligencePolicy"
+description: "Get a list of the rules associated with a threat intelligence policy."
 author: "fgomulka"
 ms.date: 06/05/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
-# List threatIntelligenceRule objects
+# List policyRules for threatIntelligencePolicy
 
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the threatIntelligenceRule objects and their properties.
+Get a list of the [threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md) objects associated with a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md). These rules define the specific conditions and actions for evaluating network traffic against known threat intelligence data.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "networkaccess-threatintelligencerule-list-permissions"
+  "name": "networkaccess-threatintelligencepolicy-list-policyrules-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/networkaccess-threatintelligencerule-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/networkaccess-threatintelligencepolicy-list-policyrules-permissions.md)]
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 
@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [policyRule](../resources/networkaccess-policyrule.md) objects in the response body.
 
 ## Examples
 
@@ -64,11 +64,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_threatintelligencerule"
+  "name": "list_threatintelligence_policyrule"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/filteringProfiles/ab4f3459-c39d-4e99-b8d0-b1aee4726b84/policies/ac253559-37a0-4f72-b666-103420b94e38/policyRules
+GET https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policyRules
 ```
 
 
@@ -79,7 +79,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.networkaccess.threatIntelligenceRule"
+  "@odata.type": "microsoft.graph.networkaccess.policyRule"
 }
 -->
 ``` http
@@ -87,7 +87,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/threatIntelligencePolicies('a8352c78-90c6-4edd-aaca-9dc4292e7750')/policyRules/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/threatIntelligencePolicies('a8352c78-90c6-4edd-aaca-9dc4292e7750')/policyRules",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET networkAccess/threatIntelligencePolicies('<guid>')/policyRules?$select=name",
   "value": [
     {
       "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceRule",
@@ -105,8 +106,8 @@ Content-Type: application/json
           {
             "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
             "values": [
-              "bing.com",
-              "*.bing.com"
+              "babsite.com",
+              "*.verybabwebsite.com"
             ]
           }
         ]
@@ -126,7 +127,7 @@ Content-Type: application/json
         "severity": "high",
         "destinations": [
           {
-            "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",
+            "@odata.type": "#microsoft.graph.networkaccess.threatIntelligenceFqdnDestination",Add commentMore actions
             "values": [
               "*"
             ]
@@ -137,4 +138,3 @@ Content-Type: application/json
   ]
 }
 ```
-
