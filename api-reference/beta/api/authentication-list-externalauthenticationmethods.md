@@ -41,12 +41,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+To retrieve details of your own external authentication methods:
+<!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/externalAuthenticationMethods
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+To retrieve details of your own or another user's external authentication methods:
+<!-- { "blockType": "ignored" } -->
+``` http
+GET /users/{id}/authentication/externalAuthenticationMethods
 ```
 
 ## Optional query parameters
