@@ -67,7 +67,7 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this action returns a `200 OK`  response code and a [processContentResponse](../resources/processcontentresponse.md) in the response body or `202 Accepted` with no response body.
+If successful, this action returns a `200 OK`  response code and a [processContentResponse](../resources/processcontentresponse.md) in the response body or `202 Accepted`, '204 No Content' with no response body.
 
 ## Examples
 
