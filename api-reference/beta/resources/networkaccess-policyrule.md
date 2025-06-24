@@ -15,7 +15,7 @@ Namespace: microsoft.graph.networkaccess
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An abstract data type for rules within policies.
-This is an abstract type from which the [forwardingRule](../resources/networkaccess-forwardingrule.md) resource and [filteringRule](../resources/networkaccess-filteringrule.md) resource types are derived.
+This is an abstract type from which the [forwardingRule](../resources/networkaccess-forwardingrule.md), [filteringRule](../resources/networkaccess-filteringrule.md), and [threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md) resource types are derived.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
