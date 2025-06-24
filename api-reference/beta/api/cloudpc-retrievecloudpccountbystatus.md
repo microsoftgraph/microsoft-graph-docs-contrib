@@ -32,8 +32,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /deviceManagement/virtualEndpoint/cloudPCs/retrieveCloudPcCountByStatus?customFilter={filter}
+GET /deviceManagement/virtualEndpoint/cloudPCs/retrieveCloudPcCountByStatus?customFilter={customFilter}
 ```
+
+## Function parameters
+
+In the request URL, provide the following parameter with a valid value.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+|customFilter|String| Use customFilter to customize responses just like "$filter" query parameter in OData query options. For guidance on using `$filter`, see [Use the $filter query parameter to filter a collection of objects](/concepts/filter-query-parameter).
 
 ## Request headers
 
