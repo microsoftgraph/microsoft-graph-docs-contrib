@@ -27,6 +27,10 @@ One of the following permissions is required to call this API. Choose the permis
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-identityaccounts-invokeaction-permissions.md)]
 
+[!INCLUDE [rbac-security-identity-accounts-apis-write](../includes/rbac-for-apis/rbac-security-identity-accounts-apis-write.md)]
+
+[!INCLUDE [rbac-security-identity-accounts-apis-read](../includes/rbac-for-apis/rbac-security-identity-accounts-apis-read.md)]
+
 ## HTTP request
 
 <!-- {

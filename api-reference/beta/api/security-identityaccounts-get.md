@@ -27,6 +27,10 @@ One of the following permissions is required to call this API. Choose the permis
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-identityaccounts-get-permissions.md)]
 
+[!INCLUDE [rbac-security-identity-accounts-apis-write](../includes/rbac-for-apis/rbac-security-identity-accounts-apis-write.md)]
+
+[!INCLUDE [rbac-security-identity-accounts-apis-read](../includes/rbac-for-apis/rbac-security-identity-accounts-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -39,7 +43,7 @@ GET /security/identities/identityAccounts/{identityAccountsId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the '$select' OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -55,7 +59,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md) object in the response body.
 
-## Examples
+## Example 1
 
 ### Request
 
@@ -100,6 +104,58 @@ Content-Type: application/json
         {
           "provider": "Entra",
           "identifier": "69dfa3ea-1295-4e2c-b469-59564581143d",
+        },
+        {
+          "provider": "Okta",
+          "identifier": "878a6911-f3da-41eb-a895-1d46fa054d3e",
+          "actions": ["revokeAllSessions"]
+        }
+      ]
+    }
+}
+```
+
+### Example 2
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_identityaccounts"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/identities/identityAccounts/0104216-0539-4838-88b1-55baafdc296b?$select=accounts
+```
+
+### Response
+
+The following example shows the response of the identityAccount using the select param.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": 
+    "value": 
+    {
+      "accounts": [
+        {
+          "provider": "ActiveDirectory",
+          "identifier": "256db173-930a-4991-9061-0d51a9a93ba5",
+          "actions": ["disable", "forcePasswordReset"]
+        },
+        {
+          "provider": "Entra",
+          "identifier": "69dfa3ea-1295-4e2c-b469-59564581143d",
+          "actions": ["disable"]
         },
         {
           "provider": "Okta",

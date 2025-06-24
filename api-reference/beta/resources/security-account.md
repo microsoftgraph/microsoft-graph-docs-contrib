@@ -19,9 +19,18 @@ Provides details of an [identity's account](../resources/security-identityaccoun
 ## Properties
 |Property| Type                                                                                                     | Description                 |
 |:---|:---------------------------------------------------------------------------------------------------------|:----------------------------|
-|actions| microsoft.graph.security.action collection                                                               | List of the type of action. |
+|actions| microsoft.graph.security.action collection                                                               | List of the type of action. The possible values are: `disable`, `enable`, `forcePasswordReset`, `revokeAllSessions`, `requireUserToSignInAgain`, `markUserAsCompromised`, `unknownFutureValue`.|
 |identifier| String                                                                                                   | The account ID.             |
-|identityProvider| microsoft.graph.security.identityProvider                                                                | The identity provider.      |
+|identityProvider| microsoft.graph.security.identityProvider                                                                | The identity provider. The possible values are: `entraID`, `activeDirectory`, `okta`, `unknownFutureValue`.     |
+
+| Action Value             | Description                                 |
+|--------------------------| ------------------------------------------- |
+| Disable                  | Disable account. Account will not be able to authenticate. If the account have recently logged in he will not have access to resources. |
+| Enable                   | Enable account. |
+| ForcePasswordReset       | Force password reset of the account. |
+| RevokeAllSessions        | Revoke all of active sessions for the account. |
+| RequireUserToSignInAgain | Require the user to sign in again. |
+| MarkUserAsCompromised    | Mark the user as compromised. |
 
 ## Relationships
 None.
