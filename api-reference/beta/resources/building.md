@@ -1,5 +1,6 @@
 ---
 title: "building resource type"
+description: "Represents a building within the tenant."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
