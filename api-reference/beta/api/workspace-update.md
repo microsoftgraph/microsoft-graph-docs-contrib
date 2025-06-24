@@ -77,55 +77,110 @@ PATCH /roomList/workspaces/{workspaceId}
 
 If successful, this method returns a `200 OK` response code and an updated [workspace](../resources/workspace.md) object in the response body.
 
-## Examples
+### Example
 
-### Request
+#### Request
 
 The following example shows a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["ws100@contoso.com"],
   "name": "update_workspace"
-}
--->
-``` http
-PATCH https://graph.microsoft.com/beta/workspace
-Content-Type: application/json
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/places/ws100@contoso.com
+Content-type: application/json
 
 {
-"@odata.type": "#microsoft.exchange.locationsAndTime.desk",
-  "displayName": "Updated Desk 1",
-  "displayDeviceName": "Samsung monitor",
-  "tags": ["AdjustableHeight"]
+  "@odata.type": "microsoft.graph.workspace",
+  "nickname": "Conf Room",
+  "building": "1",
+  "label": "100",
+  "capacity": 50,
+  "isWheelChairAccessible": false
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-workspace-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Response
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-workspace-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-workspace-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-workspace-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-workspace-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-workspace-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-workspace-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-workspace-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note**: The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
-}
--->
-``` http
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workspace"
+} -->
+
+```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
-  "@odata.type": "#microsoft.graph.desk",
-      "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-      "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-    "displayName": "Updated Desk 1",
-    "displayDeviceName": "Samsung monitor",
-    "tags": ["AdjustableHeight"],
-      "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
-      "mode": {
-        "@odata.type": "microsoft.graph.assignedPlaceMode",
-        "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+    "@odata.type": "#microsoft.graph.workspace",
+    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+    "emailAddress": "ws100@contoso.com",
+    "displayName": "Workspace 100",
+    "address": {
+      "street": "4567 Main Street",
+      "city": "Buffalo",
+      "state": "NY",
+      "postalCode": "98052",
+      "countryOrRegion": "USA"
+    },
+    "geoCoordinates": {
+      "latitude": 47.0,
+      "longitude": -122.0
+    },
+    "phone": "555-555-0100",
+    "nickname": "Workspace",
+    "label": "100",
+    "capacity": 50,
+    "building": "1",
+    "floorLabel": "1P",
+    "floorNumber": 1,
+    "isWheelChairAccessible": false,
+    "tags": [
+      "bean bags"
+    ],
+    "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
 }
 ```
-

@@ -60,66 +60,69 @@ If successful, this method returns a `200 OK` response code and a [workspace](..
 
 ### Request
 
-The following example shows a request.
+The following example specifies the **id** of a **workspace** to get its properties.
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"],
   "name": "get_workspace"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/workspace
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-workspace-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+>**Note**: The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
+  "name": "get_workspace",
   "truncated": true,
   "@odata.type": "microsoft.graph.workspace"
-}
--->
-``` http
+} -->
+```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
     "@odata.type": "#microsoft.graph.workspace",
-    "id": "96f5b1a5-cb16-2d10-bbd5-0a123ef6610c",
-    "displayName": "String",
-    "geoCoordinates": {
-      "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-    },
-    "phone": "String",
+    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+    "emailAddress": "ws100@contoso.com",
+    "displayName": "Workspace 100",
     "address": {
-      "@odata.type": "microsoft.graph.physicalAddress"
+      "street": "4567 Main Street",
+      "city": "Buffalo",
+      "state": "NY",
+      "postalCode": "98052",
+      "countryOrRegion": "USA"
     },
-    "placeId": "String",
-    "parentId": "String",
-    "resourceLinks": [
-      {
-        "@odata.type": "microsoft.graph.resourceLink"
-      }
-    ],
+    "geoCoordinates": {
+      "latitude": 47.640568390488626,
+      "longitude": -122.1293731033803
+    },
+    "phone": "000-000-0000",
+    "nickname": "Workspace",
+    "label": "100",
+    "capacity": 50,
+    "building": "1",
+    "floorNumber": 1,
+    "isWheelChairAccessible": false,
     "tags": [
-      "String"
+      "bean bags"
     ],
-    "isWheelChairAccessible": "Boolean",
-    "label": "String",
-    "emailAddress": "String",
-    "nickname": "String",
-    "building": "String",
-    "floorNumber": "Integer",
-    "capacity": "Integer",
-    "floorLabel": "String",
-    "displayDeviceName": "String",
-    "mode": {
-      "@odata.type": "microsoft.graph.placeMode"
-    }
-  }
+    "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
 }
 ```
-

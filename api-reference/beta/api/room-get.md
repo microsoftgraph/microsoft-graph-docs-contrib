@@ -60,67 +60,73 @@ If successful, this method returns a `200 OK` response code and a [room](../reso
 
 ### Request
 
-The following example shows a request.
+The following example specifies the **id** of a **room** to get its properties.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"],
   "name": "get_room"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/room
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-room-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+>**Note**: The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
+  "name": "get_room",
   "truncated": true,
   "@odata.type": "microsoft.graph.room"
-}
--->
-``` http
+} -->
+
+```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
     "@odata.type": "#microsoft.graph.room",
-    "id": "e3087de3-2ba1-cfb4-3a47-e63ff49f52e8",
-    "displayName": "String",
-    "geoCoordinates": {
-      "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-    },
-    "phone": "String",
+    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+    "emailAddress": "cf100@contoso.com",
+    "displayName": "Conf Room 100",
     "address": {
-      "@odata.type": "microsoft.graph.physicalAddress"
+      "street": "4567 Main Street",
+      "city": "Buffalo",
+      "state": "NY",
+      "postalCode": "98052",
+      "countryOrRegion": "USA"
     },
-    "placeId": "String",
-    "parentId": "String",
-    "resourceLinks": [
-      {
-        "@odata.type": "microsoft.graph.resourceLink"
-      }
-    ],
+    "geoCoordinates": {
+      "latitude": 47.640568390488626,
+      "longitude": -122.1293731033803
+    },
+    "phone": "000-000-0000",
+    "nickname": "Conf Room",
+    "label": "100",
+    "capacity": 50,
+    "building": "1",
+    "floorNumber": 1,
+    "isWheelChairAccessible": false,
+    "bookingType": "standard",
     "tags": [
-      "String"
+      "bean bags"
     ],
-    "isWheelChairAccessible": "Boolean",
-    "label": "String",
-    "emailAddress": "String",
-    "nickname": "String",
-    "building": "String",
-    "floorNumber": "Integer",
-    "capacity": "Integer",
-    "bookingType": "String",
-    "audioDeviceName": "String",
-    "videoDeviceName": "String",
-    "displayDeviceName": "String",
-    "floorLabel": "String",
-    "isTeamsEnabled": "Boolean"
-  }
+    "audioDeviceName": null,
+    "videoDeviceName": null,
+    "displayDeviceName": "surface hub",
+    "placeId": "62cfc8cb-fc2b-4783-aeea-f9ce0f8e2904"
 }
 ```
-
