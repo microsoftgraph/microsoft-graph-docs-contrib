@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a building object.
+Update the properties of a [building](../resources/building.md) object.
 
 ## Permissions
 
