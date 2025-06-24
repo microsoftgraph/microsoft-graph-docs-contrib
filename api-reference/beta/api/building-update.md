@@ -81,17 +81,10 @@ PATCH https://graph.microsoft.com/beta/building
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.building",
-  "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "placeId": "String",
-  "hasWiFi": "Boolean"
+"@odata.type": "#microsoft.exchange.locationsAndTime.desk",
+  "displayName": "Updated Desk 1",
+  "displayDeviceName": "Samsung monitor",
+  "tags": ["AdjustableHeight"]
 }
 ```
 
