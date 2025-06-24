@@ -49,15 +49,19 @@ PATCH /building
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|hasWiFi|Boolean|**TODO: Add Description** Required.|
+|address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [building](../resources/building.md), including the street, city, state, country or region, and postal code. Inherited from [place](../resources/place.md). Optional.|
+|description|String|User-defined description of the [building](../resources/building.md). (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md). Optional.|
+|displayName|String|The name that is associated with the [building](../resources/building.md). Inherited from [place](../resources/place.md). Required.|
+|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [building](../resources/building.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). Optional.|
+|hasWiFi|Boolean|Whether or not the building has WiFi. Required.|
+|isWheelChairAccessible|Boolean|Whether or not the [building](../resources/building.md) is wheelchair accessible. Inherited from [place](../resources/place.md). Required.|
+|parentId|String|**id** of a parent [place](../resources/place.md). Inherited from [place](../resources/place.md). Optional.|
+|phone|String|The phone number of the [building](../resources/building.md). Inherited from [place](../resources/place.md). Optional.|
+|placeId|String|An alternate immutable unique identifier of the [building](../resources/building.md). Inherited from [place](../resources/place.md). Optional.|
+|resourceLinks|[resourceLink](../resources/resourcelink.md) collection|A set of links to external resources that are associated with the [building](../resources/building.md). Inherited from [place](../resources/place.md). Required.|
+|tags|String collection|Custom tags that are associated with the [building](../resources/building.md) for categorization or filtering. Inherited from [place](../resources/place.md). Required.|
 
 
 
