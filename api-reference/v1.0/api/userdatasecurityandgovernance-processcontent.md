@@ -29,17 +29,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/userdatasecurityandgovernance-processcontent-permissions.md)]
 
 ## HTTP request
-
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/dataSecurityAndGovernance/processContent
-```
-
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
-
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{usersId}/dataSecurityAndGovernance/processContent
+POST /users/{userId}/dataSecurityAndGovernance/processContent
 ```
 
 ## Request headers
@@ -108,6 +100,7 @@ Content-Type: application/json
           "activity": "uploadText"
        },
        "deviceMetadata": {
+          "deviceType": "Unmanaged",
           "operatingSystemSpecifications": {
              "operatingSystemPlatform": "Windows 11",
              "operatingSystemVersion": "10.0.26100.0" 
@@ -163,7 +156,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/me/dataSecurityAndGovernance/processContent
+POST https://graph.microsoft.com/v1.0/users/{5def8f26-aff8-4db6-a08c-0fcf8f1aa2ba}/dataSecurityAndGovernance/processContent
 Content-Type: application/json
 
 {
@@ -185,7 +178,7 @@ Content-Type: application/json
             "activity": "uploadText"
         },
         "deviceMetadata": {
-            "deviceType": "Unmanaged",
+            "deviceType": "unmanaged",
             "ipAddress": null,
             "operatingSystemSpecifications": {
                 "operatingSystemPlatform": "Windows",
@@ -246,7 +239,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/me/dataSecurityAndGovernance/processContent
+POST https://graph.microsoft.com/v1.0/users/{5def8f26-aff8-4db6-a08c-0fcf8f1aa2ba}/dataSecurityAndGovernance/processContent
 Content-Type: application/json
 
 {
@@ -261,14 +254,25 @@ Content-Type: application/json
                 },
                 "name": "Some name",
                 "correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d95822"
+            },
+            "name": "TestFile.docx",
+            "createdDateTime": "2024-07-23T01:31:40.2020463Z",
+            "modifiedDateTime": "2024-09-17T13:45:21.0000000Z",
+            "correlationId": "9d84223c-521c-42f4-8f35-3cdeabe515d3",
+            "length": 17352,
+            "isTruncated": false,
+            "ownerId": "ffe1ca70-6e5b-4120-abf0-472034ba05d4",
+            "customProperties": {
+              "Department": "Finance",
+              "ReviewerName": "John Smith"
             }
+          }
         ],
         "activityMetadata": {
             "activity": "uploadFile"
         },
         "deviceMetadata": {
-            "deviceType": "Unmanaged",
-            "ipAddress": null,
+            "deviceType": "unmanaged",
             "operatingSystemSpecifications": {
                 "operatingSystemPlatform": "Windows",
                 "operatingSystemVersion": "11.1"
