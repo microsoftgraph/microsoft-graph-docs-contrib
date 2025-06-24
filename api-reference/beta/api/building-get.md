@@ -1,10 +1,10 @@
 ---
 title: "Get building"
 description: "Read the properties and relationships of a building object."
-author: tiwarisakshi02
-ms.date: 06/09/2025
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [building](../resources/building.md) object.
+Read the properties and relationships of a building object.
 
 ## Permissions
 
@@ -97,17 +97,6 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.physicalAddress"
     },
     "placeId": "String",
-    "parentId": "String",
-    "resourceLinks": [
-      {
-        "@odata.type": "microsoft.graph.resourceLink"
-      }
-    ],
-    "tags": [
-      "String"
-    ],
-    "isWheelChairAccessible": "Boolean",
-    "label": "String",
     "hasWiFi": "Boolean"
   }
 }

@@ -1,6 +1,6 @@
 ---
-title: "Update building"
-description: "Update the properties of a building object."
+title: "Update sectionMap"
+description: "Update the properties of a sectionMap object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# Update building
+# Update sectionMap
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a building object.
+Update the properties of a sectionMap object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "building-update-permissions"
+  "name": "sectionmap-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/building-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/sectionmap-update-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /building
+PATCH /building/map/levels/{levelMapId}/sections/{sectionMapId}
 ```
 
 ## Request headers
@@ -52,18 +52,14 @@ PATCH /building
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Required.|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|phone|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|placeId|String|**TODO: Add Description** Inherited from [place](../resources/place.md). Optional.|
-|hasWiFi|Boolean|**TODO: Add Description** Required.|
+|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|**TODO: Add Description** Optional.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [building](../resources/building.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [sectionMap](../resources/sectionmap.md) object in the response body.
 
 ## Examples
 
@@ -72,25 +68,17 @@ If successful, this method returns a `200 OK` response code and an updated [buil
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_building"
+  "name": "update_sectionmap"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/building
+PATCH https://graph.microsoft.com/beta/building/map/levels/{levelMapId}/sections/{sectionMapId}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.building",
-  "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "placeId": "String",
-  "hasWiFi": "Boolean"
+  "@odata.type": "#microsoft.graph.sectionMap",
+  "properties": "String",
+  "placeId": "String"
 }
 ```
 
@@ -109,18 +97,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.building",
-  "id": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
-  "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "placeId": "String",
-  "hasWiFi": "Boolean"
+  "@odata.type": "#microsoft.graph.sectionMap",
+  "id": "739ae398-9151-aa9a-fd26-88de707b452c",
+  "properties": "String",
+  "placeId": "String"
 }
 ```
 

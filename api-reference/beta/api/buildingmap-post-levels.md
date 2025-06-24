@@ -1,6 +1,6 @@
 ---
-title: "List building objects"
-description: "Get a list of the building objects and their properties."
+title: "Create levelMap"
+description: "Create a new levelMap object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# List building objects
+# Create levelMap
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the building objects and their properties.
+Create a new levelMap object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "building-list-permissions"
+  "name": "buildingmap-post-levels-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/building-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/buildingmap-post-levels-permissions.md)]
 
 ## HTTP request
 
@@ -34,26 +34,33 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.building not found
+POST /building/map/levels
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-Don't supply a request body for this method.
+In the request body, supply a JSON representation of the [levelMap](../resources/levelmap.md) object.
+
+You can specify the following properties when creating a **levelMap**.
+
+**TODO: Remove properties that don't apply**
+|Property|Type|Description|
+|:---|:---|:---|
+|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|**TODO: Add Description** Optional.|
+
+
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [building](../resources/building.md) objects in the response body.
+If successful, this method returns a `201 Created` response code and a [levelMap](../resources/levelmap.md) object in the response body.
 
 ## Examples
 
@@ -62,11 +69,18 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_building"
+  "name": "create_levelmap_from_"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.building not found
+POST https://graph.microsoft.com/beta/building/map/levels
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.levelMap",
+  "properties": "String",
+  "placeId": "String"
+}
 ```
 
 
@@ -77,30 +91,18 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.building"
+  "@odata.type": "microsoft.graph.levelMap"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.building",
-      "id": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
-      "displayName": "String",
-      "geoCoordinates": {
-        "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-      },
-      "phone": "String",
-      "address": {
-        "@odata.type": "microsoft.graph.physicalAddress"
-      },
-      "placeId": "String",
-      "hasWiFi": "Boolean"
-    }
-  ]
+  "@odata.type": "#microsoft.graph.levelMap",
+  "id": "d812dac9-fa56-20f8-a077-3a9d09f1a3cf",
+  "properties": "String",
+  "placeId": "String"
 }
 ```
 

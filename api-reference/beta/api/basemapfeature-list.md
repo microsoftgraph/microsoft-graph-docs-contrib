@@ -1,6 +1,6 @@
 ---
-title: "List building objects"
-description: "Get a list of the building objects and their properties."
+title: "List baseMapFeature objects"
+description: "Get a list of the baseMapFeature objects and their properties."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# List building objects
+# List baseMapFeature objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the building objects and their properties.
+Get a list of the baseMapFeature objects and their properties.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "building-list-permissions"
+  "name": "basemapfeature-list-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/building-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/basemapfeature-list-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.building not found
+GET ** Collection URI for microsoft.graph.baseMapFeature not found
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [building](../resources/building.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [baseMapFeature](../resources/basemapfeature.md) objects in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_building"
+  "name": "list_basemapfeature"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.building not found
+GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.baseMapFeature not found
 ```
 
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.building"
+  "@odata.type": "microsoft.graph.baseMapFeature"
 }
 -->
 ``` http
@@ -87,18 +87,9 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.building",
-      "id": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
-      "displayName": "String",
-      "geoCoordinates": {
-        "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-      },
-      "phone": "String",
-      "address": {
-        "@odata.type": "microsoft.graph.physicalAddress"
-      },
-      "placeId": "String",
-      "hasWiFi": "Boolean"
+      "@odata.type": "#microsoft.graph.baseMapFeature",
+      "id": "9b8d9992-576c-89a3-a869-007675837ddc",
+      "properties": "String"
     }
   ]
 }

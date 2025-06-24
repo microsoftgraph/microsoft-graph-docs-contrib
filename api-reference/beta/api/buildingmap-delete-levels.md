@@ -1,6 +1,6 @@
 ---
-title: "List building objects"
-description: "Get a list of the building objects and their properties."
+title: "Delete levelMap"
+description: "Delete a levelMap object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# List building objects
+# Delete levelMap
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the building objects and their properties.
+Delete a levelMap object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "building-list-permissions"
+  "name": "buildingmap-delete-levels-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/building-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/buildingmap-delete-levels-permissions.md)]
 
 ## HTTP request
 
@@ -34,12 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.building not found
+DELETE /building/map/levels/{levelMapId}/$ref
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -53,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [building](../resources/building.md) objects in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -62,11 +58,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_building"
+  "name": "delete_levelmap"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.building not found
+DELETE https://graph.microsoft.com/beta/building/map/levels/{levelMapId}
 ```
 
 
@@ -76,31 +72,10 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.building"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.building",
-      "id": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
-      "displayName": "String",
-      "geoCoordinates": {
-        "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-      },
-      "phone": "String",
-      "address": {
-        "@odata.type": "microsoft.graph.physicalAddress"
-      },
-      "placeId": "String",
-      "hasWiFi": "Boolean"
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
