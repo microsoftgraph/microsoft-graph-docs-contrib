@@ -1,6 +1,6 @@
 ---
 title: "identityAccounts: invokeAction"
-description: "Perform available actions for identity security identity accounts. This allows reading and performing identity security actions on behalf of the signed-in identity."
+description: "Perform available actions for identity security identity accounts. This action allows reading and performing identity security actions on behalf of the signed-in identity."
 author: "SamuelBenichou"
 ms.date: 06/22/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform actions such as revoking accounts and forcing password reset for identity accounts that are flagged in Microsoft Defender for Identity [alerts](../resources/security-alert.md). This allows reading and performing identity security actions on behalf of the signed-in identity.
+Perform actions such as revoking accounts and forcing password reset for identity accounts that are flagged in Microsoft Defender for Identity [alerts](../resources/security-alert.md). This action allows reading and performing identity security actions on behalf of the signed-in identity.
 
 ## Permissions
 
@@ -61,14 +61,14 @@ The following table lists the parameters that are required when you call this ac
 |identityProvider|microsoft.graph.security.identityProvider|The identity provider associated with the account. The possible values are: `entraID`, `activeDirectory`, `okta`, `unknownFutureValue`.|
 
 
-| Action Value             | Description                                 |
-|--------------------------| ------------------------------------------- |
-| Disable                  | Disable account. Account will not be able to authenticate. If the account have recently logged in he will not have access to resources. |
-| Enable                   | Enable account. |
-| ForcePasswordReset       | Force password reset of the account. |
-| RevokeAllSessions        | Revoke all of active sessions for the account. |
-| RequireUserToSignInAgain | Require the user to sign in again. |
-| MarkUserAsCompromised    | Mark the user as compromised. |
+| Action Value             | Description                                                                                                                        |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| Disable                  | Disable account. Account won't be able to authenticate. If the account has recently logged in, it does not have access to resources. |
+| Enable                   | Enable account.                                                                                                                    |
+| ForcePasswordReset       | Force password reset of the account.                                                                                               |
+| RevokeAllSessions        | Revoke all of active sessions for the account.                                                                                     |
+| RequireUserToSignInAgain | Require the user to sign in again.                                                                                                 |
+| MarkUserAsCompromised    | Mark the user as compromised.                                                                                                      |
 
 ## Response
 

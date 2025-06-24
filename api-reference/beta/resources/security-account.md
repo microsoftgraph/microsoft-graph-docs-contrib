@@ -1,5 +1,5 @@
 ---
-title: "account resource type"
+title: "account of the identity resource type"
 description: "Provides details of the identity's account."
 author: "SamuelBenichou"
 ms.date: 06/22/2025
@@ -25,7 +25,7 @@ Provides details of an [identity's account](../resources/security-identityaccoun
 
 | Action Value             | Description                                 |
 |--------------------------| ------------------------------------------- |
-| Disable                  | Disable account. Account will not be able to authenticate. If the account have recently logged in he will not have access to resources. |
+| Disable                  | Disable account. The account is not able to authenticate. If the account has recently logged in, it does not have access to resources. |
 | Enable                   | Enable account. |
 | ForcePasswordReset       | Force password reset of the account. |
 | RevokeAllSessions        | Revoke all of active sessions for the account. |

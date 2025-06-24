@@ -152,7 +152,7 @@ Use the new Teams meeting AI insights APIs to get AI-generated insights for a me
 
 ### Security | Identities
 
-Added the [identityAccounts resource type](/graph/api/resources/security-identityaccounts?view=graph-rest-beta&preserve-view=true) and its related methods that let you retrieve details of users flagged in Microsoft Defender for Identity alerts and apply actions such as disabling their accounts or forcing a password reset.
+Added the [identityAccounts](/graph/api/resources/security-identityaccounts?view=graph-rest-beta&preserve-view=true) and its related methods that let you retrieve details of users flagged in Microsoft Defender for Identity alerts and apply actions such as disabling their accounts or forcing a password reset.
 
 
 ## Contribute to Microsoft Graph

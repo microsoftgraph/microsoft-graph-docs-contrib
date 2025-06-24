@@ -1,5 +1,5 @@
 ---
-title: "User resource type"
+title: "user resource type"
 description: "User fields"
 author: "SamuelBenichou"
 ms.date: 06/22/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# user resource type
+# User resource type
 
 Namespace: microsoft.graph.security
 
