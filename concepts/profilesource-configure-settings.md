@@ -203,4 +203,4 @@ HTTP/1.1 204 No Content
 ```
 
 ## Related content
-* [Manage profile source precedence settings for an organization](/graph/profilepriority-configure-profilepropertysetting.md)
+[Manage profile source precedence settings for an organization](/graph/profilepriority-configure-profilepropertysetting)
