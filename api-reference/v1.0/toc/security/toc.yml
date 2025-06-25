@@ -232,8 +232,6 @@ items:
       href: ../../resources/groupscope.md
     - name: Integrated application metadata
       href: ../../resources/integratedapplicationmetadata.md
-    - name: Label action base
-      href: ../../resources/labelactionbase.md
     - name: Label content right
       href: ../../resources/labelcontentright.md
     - name: Label policy
