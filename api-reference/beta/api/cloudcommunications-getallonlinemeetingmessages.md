@@ -51,7 +51,7 @@ GET /communications/getAllOnlineMeetingMessages
 
 ## Optional query parameters
 
-This method supports the `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. 
+This method supports the `$expand` [OData query parameter](/graph/query-parameters) to help customize the response. 
 
 ## Request headers
 
@@ -78,7 +78,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/employeeexperience/getAllOnlineMeetingMessages?$expand=conversation
+GET https://graph.microsoft.com/beta/communications/getAllOnlineMeetingMessages?$expand=conversation
 ```
 
 ### Response
