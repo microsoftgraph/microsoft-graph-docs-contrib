@@ -79,15 +79,7 @@ The following JSON representation shows the resource type.
   "isEndpointProtectionEnabled": "Boolean",
   "isDefault": "Boolean",
   "applicationMode": "String",
-  "assignedPolicies": [
-    {
-      "@odata.type": "microsoft.graph.labelPolicy"
-    }
-  ],
   "priority": "Integer",
-  "autoLabeling": {
-    "@odata.type": "microsoft.graph.autoLabeling"
-  },
   "applicableTo": "String",
   "color": "String",
   "autoTooltip": "String",
