@@ -57,7 +57,7 @@ The following example shows a request that uses the **appId** alternate key to q
   "name": "application_get_owners"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/applications(appId='bbec3106-565f-4907-941e-96b4dbfef21c')/owners
+GET https://graph.microsoft.com/v1.0/applications/bbec3106-565f-4907-941e-96b4dbfef21c/owners
 ```
 
 ### Response

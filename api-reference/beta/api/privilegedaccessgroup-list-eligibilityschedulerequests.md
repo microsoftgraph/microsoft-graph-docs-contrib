@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of the [privilegedAccessGroupEligibilityScheduleRequest](../resources/privilegedaccessgroupeligibilityschedulerequest.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -134,7 +134,7 @@ Content-Type: application/json
       },
       "action": "adminAssign",
       "isValidationOnly": false,
-      "justification": "Assign eligibility to user for PIM for groups.",
+      "justification": "Assign eligibility to user for PIM for Groups.",
       "scheduleInfo": {
           "startDateTime": "2022-04-12T09:05:41.8532931Z",
           "recurrence": null,

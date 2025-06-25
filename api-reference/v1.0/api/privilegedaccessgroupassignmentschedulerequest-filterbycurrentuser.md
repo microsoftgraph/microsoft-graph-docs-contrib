@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupAssignmentScheduleRequest: filterByCurrentUser"
-description: "In PIM for groups, retrieve the requests for membership or ownership assignments for the calling principal to groups that are governed by PIM."
+description: "In PIM for Groups, retrieve the requests for membership or ownership assignments for the calling principal to groups that are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 # privilegedAccessGroupAssignmentScheduleRequest: filterByCurrentUser
 Namespace: microsoft.graph
 
-In PIM for groups, retrieve the requests for membership or ownership assignments for the calling principal to groups that are governed by PIM.
+In PIM for Groups, retrieve the requests for membership or ownership assignments for the calling principal to groups that are governed by PIM.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -28,13 +28,14 @@ The following table provides a summary of subscribable virtual event types, the 
 |:--------------------------------------------------------|:------------------------------------------------------------------------------------------|:--------------------------|:---------------------------|
 | All events (tenant-level)                               | `solutions/virtualEvents/events`                                                          | created                   | Application                |
 | All events (tenant-level by organizer/co-organizer IDs) | `solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`     | created                   | Application                |
-| The events of a specific webinar                        | `solutions/virtualEvents/webinars/{webinarId}`                                            | updated                   | Application, delegated     |
-| Attendance report ready events for a webinar            | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                       | created                   | Application, delegated     |
-| The session events of a webinar                         | `solutions/virtualEvents/webinars/{webinarId}/sessions`                                   | created, updated          | Application, delegated     |
+| The events of a specific **webinar**                    | `solutions/virtualEvents/webinars/{webinarId}`                                            | updated                   | Application, delegated     |
+| Attendance report ready events for a **webinar**        | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                       | created                   | Application, delegated     | 
+| The session events of a **webinar **                    | `solutions/virtualEvents/webinars/{webinarId}/sessions`                                   | created, updated          | Application, delegated     |
+| The registration events of a **webinar**                | `solutions/virtualEvents/webinars/{webinarId}/registrations`                              | created, updated          | Application, delegated     |
+| The events of a specific **townhall**                   | `solutions/virtualEvents/townhalls/{townhallId}`                                          | updated                   | Application, delegated     |
+| Attendance report ready events for a **townhall**       | `solutions/virtualEvents/townhalls/{townhallId}/getAttendanceReports`                     | created                   | Application, delegated     |
+| The session events of a specific **townhall**           | `solutions/virtualEvents/townhalls/{townhallId}/sessions`                                 | created, updated          | Application, delegated     |
 | Video-on-demand ready publication                       | `solutions/virtualEvents/{eventType}/{eventId}/getVideoOnDemandPublication`               | updated                   | Application, delegated     |
-| The registration events of a webinar                    | `solutions/virtualEvents/webinars/{webinarId}/registrations`                              | created, updated          | Application, delegated     |
-
->**Note:** Replace values in with parenthesis with actual values.
 
 ## Subscribe to all events created in a tenant
 
@@ -181,6 +182,25 @@ Content-Type: application/json
 }
 ```
 
+## Subscribe to updated events of a specific town hall
+
+To receive updated notifications for a particular town hall, you need to create a subscription for that unique town hall by using the following resource:  `solutions/virtualEvents/townhalls/{townhall_id}`.
+
+An application can only have one subscription per town hall inside a tenant.
+A user-delegated token allows you to set up one subscription for receiving town hall update notifications within a tenant. This subscription is only available for users who organized or co-organized town halls in the same tenant as the event host.
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+{
+    "changeType": "updated",
+    "notificationUrl": "https://contonso.com",
+    "lifecycleNotificationUrl": "https://contonso.com",
+    "resource": "solutions/virtualevents/townhalls/{townhall_id},
+    "expirationDateTime": "2026-01-31T12:00:00.0000000Z",
+    "clientState": "virtualevent-townhall-subscription",
+}
+```
+
 ## Receiving event notifications
 
 Notifications include the resource URL of the changed resource. You can send a separate request to the resource URL to get information about a created or updated resource.
@@ -189,13 +209,16 @@ Notifications include the resource URL of the changed resource. You can send a s
 
 The following table indicates the supported notification and change types for the virtual events resource.
 
-| Notification type                                                             | Resource ID                                                                                    | Change types      |
-|:------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
-| [Webinar](/graph/api/resources/virtualeventwebinar)                           | `solutions/virtualEvents/webinars/{webinarId}`                                                 | created, updated  |
-| [Session](/graph/api/resources/virtualeventsession)                           | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
-| [Session video-on-demand published](/graph/api/resources/virtualeventsession) | `solutions/virtualEvents/{eventType}/{eventId}/sessions/{sessionId}`                            | updated           |
-| [Registration](/graph/api/resources/virtualeventregistrant)                   | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
-| [Meeting attendance report](/graph/api/resources/meetingattendancereport)     | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                            | created           |
+| Notification type                                                         | Resource ID                                                                                    | Change types      |
+|:--------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
+| [Webinar](/graph/api/resources/virtualeventwebinar)                       | `solutions/virtualEvents/webinars/{webinarId}`                                                 | created, updated  |
+| [Session](/graph/api/resources/virtualeventsession)                       | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
+| [Registration](/graph/api/resources/virtualeventregistrant)               | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
+| [Meeting Attendance Report](/graph/api/resources/meetingattendancereport) | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                            | created           |
+| [Townhall](/graph/api/resources/virtualeventtownhall)                     | `solutions/virtualEvents/townhalls/{townhallId}`                                               | created, updated  |
+| [Session](/graph/api/resources/virtualeventsession)                       | `solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}`                          | created, updated  |
+| [Meeting Attendance Report](/graph/api/resources/meetingattendancereport) | `solutions/virtualEvents/townhalls/{webinarId}/getAttendanceReports`                           | created           |
+| [Session video-on-demand published](/graph/api/resources/virtualeventsession) | `solutions/virtualEvents/{eventType}/{eventId}/sessions/{sessionId}`                       | updated           |
 
 ## Event notification examples
 
@@ -223,7 +246,7 @@ The following JSON examples show the responses for each supported change type of
 }
 ```
 
-### Event updated
+### Webinar updated
 
 ```json
 {
@@ -391,6 +414,27 @@ Events that are created by an attendance report return the endpoint of the **mee
         "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}",
         "@odata.type": "#microsoft.graph.meetingAttendanceReport",
         "id": "{reportId}"
+      }
+    }
+  ]
+}
+```
+
+### Town hall created
+
+```json
+{
+  "value": [
+    {
+      "subscriptionId": "eb1226bf-be92-0a00-04c5-43d87ee913c6",
+      "clientState": "virtualevent-townhall-subscription",
+      "changeType": "created",
+      "resource": "solutions/virtualevents/townhalls/{townhallId}",
+      "subscriptionExpirationDateTime": "2026-01-28T00:00:00.0000000Z",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.virtualEventTownhall",
+        "@odata.id": "solutions/virtualevents/townhalls/{townhallId}",
+        "id": "solutions/virtualevents/townhalls/{townhallId}"
       }
     }
   ]
