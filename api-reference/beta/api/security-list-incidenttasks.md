@@ -1,6 +1,6 @@
 ---
 title: "List incidentTasks"
-description: "Get incident tasks in Microsoft Defender XDR that Defender Experts for XDR identified for remediation."
+description: "Get incident tasks that Microsoft Defender Experts for XDR identified for remediation."
 author: "BenAlfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get incident tasks in Microsoft Defender XDR. These tasks contain remediation actions identified by Defender Experts for XDR.
+Get incident tasks that Microsoft Defender Experts for XDR identified for remediation.
 
 ## Permissions
 
