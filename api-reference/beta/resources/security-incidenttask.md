@@ -1,6 +1,6 @@
 ---
 title: "incidentTask resource type"
-description: "Represents a remediation action identified by Defender Experts for  (Extended Detection and Response)."
+description: "Represents a remediation action identified by  Microsoft Defender Experts for  (Extended Detection and Response)."
 author: "BenAlfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a remediation action for an incident. When Defender Experts for XDR identifies a needed action, it creates a task in Microsoft Defender XDR. Review and take action on these tasks through the portal or using this API.
+Represents a remediation action for an incident. When Microsoft Defender Experts for XDR identifies a needed action, it creates a task for you to review and act on. Review and take action on these tasks through the portal or using this API.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
