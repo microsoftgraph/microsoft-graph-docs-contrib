@@ -345,7 +345,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-01-30T17:13:06.5520497Z",
-            "WorkloadArea": "Security",
+      "WorkloadArea": "Security",
       "SubArea": "eDiscovery"
     },
     {
