@@ -14,7 +14,11 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the base type for all incident task response actions in Microsoft Defender XDR. This is an abstract type that cannot be instantiated directly but serves as the parent type for specific response actions that can be executed on incident tasks.
+Represents the base type for all incident task response actions in Microsoft Defender XDR. This is an abstract type that cannot be instantiated directly but serves as the parent type for the following specific response actions that can be executed on incident tasks.
+
+- [stopAndQuarantineFileIncidentTaskResponseAction](../resources/security-stopandquarantinefileincidenttaskresponseaction.md) - Used to stop and quarantine a file.
+- {Document the rest 13 derived base types in list format)
+-
 
 Inherits from [responseAction](../resources/security-responseaction.md).
 
