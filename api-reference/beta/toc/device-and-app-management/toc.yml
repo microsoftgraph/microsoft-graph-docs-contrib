@@ -512,11 +512,7 @@ items:
     - name: Cloud PC status details
       href: ../../resources/cloudpcstatusdetails.md
     - name: Cloud PC status summary
-      items:
-      - name: Cloud PC status summary
-        href: ../../resources/cloudpcstatussummary.md
-      - name: Retrieve Cloud PC count group by status
-        href: ../../api/cloudpc-retrievecloudpccountbystatus.md
+      href: ../../resources/cloudpcstatussummary.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
     - name: Cloud PC supported region restriction detail
