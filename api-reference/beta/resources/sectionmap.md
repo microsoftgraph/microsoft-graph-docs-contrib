@@ -1,10 +1,10 @@
 ---
 title: "sectionMap resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents a section.geojson file in IMDF format showing sections (such as zones or partitions) on the floor of a building."
+author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: 
 doc_type: resourcePageType
 ---
 
@@ -14,27 +14,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a section.geojson file in IMDF format showing sections (such as zones or partitions) on the floor of a building.
 
 Inherits from [baseMapFeature](../resources/basemapfeature.md).
-
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/levelmap-list-sections.md)|[sectionMap](../resources/sectionmap.md) collection|Get a list of the sectionMap objects and their properties.|
-|[Create](../api/levelmap-post-sections.md)|[sectionMap](../resources/sectionmap.md)|Create a new sectionMap object.|
-|[Get](../api/sectionmap-get.md)|[sectionMap](../resources/sectionmap.md)|Read the properties and relationships of a sectionMap object.|
-|[Update](../api/sectionmap-update.md)|[sectionMap](../resources/sectionmap.md)|Update the properties of a sectionMap object.|
-|[Delete](../api/levelmap-delete-sections.md)|None|Delete a sectionMap object.|
+|[Create](../api/levelmap-post-sections.md)|[sectionMap](../resources/sectionmap.md)|Create a new **sectionMap** object.|
+|[Delete](../api/levelmap-delete-sections.md)|None|Delete a **sectionMap** object.|
+|[Get](../api/sectionmap-get.md)|[sectionMap](../resources/sectionmap.md)|Get the properties and relationships of a **sectionMap** object in IMDF format.|
+|[List](../api/levelmap-list-sections.md)|[sectionMap](../resources/sectionmap.md) collection|Get a list of **sectionMap** objects and their properties.|
+|[Update](../api/sectionmap-update.md)|[sectionMap](../resources/sectionmap.md)|Update the properties of a **sectionMap** object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|placeId|String|**TODO: Add Description**|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md).|
+|id|String|Unique identifier for the **sectionMap** object. Inherited from [entity](../resources/entity.md). |
+|placeId|String|Identifier of the [section](./section.md) to which this **sectionMap** belongs.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **sectionMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md).|
 
 ## Relationships
 None.

@@ -1,10 +1,10 @@
 ---
 title: "fixtureMap resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents a fixture.geojson file in IMDF format showing movable or semi-permanent physical assets within a space."
+author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: 
 doc_type: resourcePageType
 ---
 
@@ -14,27 +14,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a fixture.geojson file in IMDF format showing movable or semi-permanent physical assets within a space that supports utility, service, or aesthetic functions without affecting structural integrity.
 
-
-Inherits from [baseMapFeature](../resources/basemapfeature.md).
+Inherits from [baseMapFeature](./basemapfeature.md).
 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/levelmap-list-fixtures.md)|[fixtureMap](../resources/fixturemap.md) collection|Get a list of the fixtureMap objects and their properties.|
-|[Create](../api/levelmap-post-fixtures.md)|[fixtureMap](../resources/fixturemap.md)|Create a new fixtureMap object.|
-|[Get](../api/fixturemap-get.md)|[fixtureMap](../resources/fixturemap.md)|Read the properties and relationships of a fixtureMap object.|
-|[Update](../api/fixturemap-update.md)|[fixtureMap](../resources/fixturemap.md)|Update the properties of a fixtureMap object.|
-|[Delete](../api/levelmap-delete-fixtures.md)|None|Delete a fixtureMap object.|
+|[Create](../api/levelmap-post-fixtures.md)|[fixtureMap](./fixturemap.md)|Create a new **fixtureMap** object.|
+|[Delete](../api/levelmap-delete-fixtures.md)|None|Delete a **fixtureMap** object.|
+|[Get](../api/fixturemap-get.md)|[fixtureMap](./fixturemap.md)|Get the properties and relationships of a **fixtureMap** object in IMDF format.|
+|[List](../api/levelmap-list-fixtures.md)|[fixtureMap](./fixturemap.md) collection|Get a list of **fixtureMap** objects and their properties.|
+|[Update](../api/fixturemap-update.md)|[fixtureMap](./fixturemap.md)|Update the properties of a **fixtureMap** object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|placeId|String|**TODO: Add Description**|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md).|
+|id|String|Unique identifier for the **fixtureMap** object. Inherited from [entity](./entity.md). |
+|placeId|String|Identifier for the [floor](./floor.md) to which this **fixtureMap** belongs. |
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **fixtureMap**. Inherited from [baseMapFeature](./basemapfeature.md).|
 
 ## Relationships
 None.

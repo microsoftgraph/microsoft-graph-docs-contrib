@@ -1,10 +1,10 @@
 ---
 title: "baseMapFeature resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents different map types within a tenant."
+author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: 
 doc_type: resourcePageType
 ---
 
@@ -14,26 +14,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
 This is an abstract type.
 
-
-Inherits from [entity](../resources/entity.md).
+Inherits from [entity](./entity.md).
 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/basemapfeature-list.md)|[baseMapFeature](../resources/basemapfeature.md) collection|Get a list of the baseMapFeature objects and their properties.|
-|[Get](../api/basemapfeature-get.md)|[baseMapFeature](../resources/basemapfeature.md)|Read the properties and relationships of a baseMapFeature object.|
-|[Update](../api/basemapfeature-update.md)|[baseMapFeature](../resources/basemapfeature.md)|Update the properties of a baseMapFeature object.|
-|[Delete](../api/basemapfeature-delete.md)|None|Delete a baseMapFeature object.|
+|[List](../api/basemapfeature-list.md)|[baseMapFeature](./basemapfeature.md) collection|Get a list of **baseMapFeature** objects and their properties.|
+|[Get](../api/basemapfeature-get.md)|[baseMapFeature](./basemapfeature.md)|Get the properties and relationships of a **baseMapFeature** object in IMDF format.|
+|[Update](../api/basemapfeature-update.md)|[baseMapFeature](./basemapfeature.md)|Update the properties of a **baseMapFeature** object.|
+|[Delete](../api/basemapfeature-delete.md)|None|Delete a **baseMapFeature** object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|properties|String|**TODO: Add Description**|
+|id|String|Unique identifier for the **baseMapFeature** object. Inherited from [entity](./entity.md). Inherits from [entity](./entity.md)|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **baseMapFeature**.|
 
 ## Relationships
 None.

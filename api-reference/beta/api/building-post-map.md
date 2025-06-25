@@ -1,10 +1,10 @@
 ---
 title: "Create buildingMap"
 description: "Create a new buildingMap object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: 
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new buildingMap object.
+Create a new [buildingMap](../resources/buildingmap.md) object.
 
 ## Permissions
 
@@ -48,15 +48,12 @@ POST ** Collection URI for microsoft.graph.buildingMap not found
 
 In the request body, supply a JSON representation of the [buildingMap](../resources/buildingmap.md) object.
 
-You can specify the following properties when creating a **buildingMap**.
+You can specify the following properties when creating a [buildingMap](../resources/buildingmap.md).
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|**TODO: Add Description** Optional.|
-
-
+|properties|String|Contains the concatenated key value pair of all properties of a geojson file for a specific [place](../resources/place.md) type. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|A unique identifier for the [place](../resources/place.md) with which this map is associated. Optional.|
 
 ## Response
 

@@ -1,10 +1,10 @@
 ---
 title: "unitMap resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents a unit.geojson file in IMDF format showing units (such as rooms or offices) on the floor of a building."
+author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: 
 doc_type: resourcePageType
 ---
 
@@ -14,27 +14,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a unit.geojson file in IMDF format showing units (such as rooms or offices) on a floor of a building.
 
 Inherits from [baseMapFeature](../resources/basemapfeature.md).
-
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/levelmap-list-units.md)|[unitMap](../resources/unitmap.md) collection|Get a list of the unitMap objects and their properties.|
-|[Create](../api/levelmap-post-units.md)|[unitMap](../resources/unitmap.md)|Create a new unitMap object.|
-|[Get](../api/unitmap-get.md)|[unitMap](../resources/unitmap.md)|Read the properties and relationships of an unitMap object.|
-|[Update](../api/unitmap-update.md)|[unitMap](../resources/unitmap.md)|Update the properties of an unitMap object.|
-|[Delete](../api/levelmap-delete-units.md)|None|Delete an unitMap object.|
+|[Create](../api/levelmap-post-units.md)|[unitMap](../resources/unitmap.md)|Create a new **unitMap** object.|
+|[Delete](../api/levelmap-delete-units.md)|None|Delete a **unitMap** object.|
+|[Get](../api/unitmap-get.md)|[unitMap](../resources/unitmap.md)|Get the properties and relationships of a **unitMap** object in IMDF format.|
+|[List](../api/levelmap-list-units.md)|[unitMap](../resources/unitmap.md) collection|Get a list of **unitMap** objects and their properties.|
+|[Update](../api/unitmap-update.md)|[unitMap](../resources/unitmap.md)|Update the properties of a **unitMap** object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|placeId|String|**TODO: Add Description**|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md).|
+|id|String|Unique identifier for the **unitMap** object. Inherited from [entity](../resources/entity.md). |
+|placeId|String|Identifier of the [place](./place.md) (such as a [room](./room.md)) to which this **unitMap** belongs.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **unitMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md).|
 
 ## Relationships
 None.
