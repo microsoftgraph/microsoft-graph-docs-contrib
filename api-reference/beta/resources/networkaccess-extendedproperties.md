@@ -21,10 +21,7 @@ This resource is an open type, allowing arbitrary key-value pairs.
 Inherits from [microsoft.graph.Dictionary](../resources/dictionary.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|key|String|The property name.|
-|value|String|The property value.|
+This resource is an open type, allowing arbitrary key-value pairs.
 
 ## Relationships
 None.
