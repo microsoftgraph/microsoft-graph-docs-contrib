@@ -18,7 +18,7 @@ Represents additional data for network access resources as key-value pairs. Used
 
 This resource is an open type, allowing arbitrary key-value pairs.
 
-Inherits from [microsoft.graph.dictionary](../resources/dictionary.md).
+Inherits from [microsoft.graph.Dictionary](../resources/dictionary.md).
 
 ## Properties
 |Property|Type|Description|
