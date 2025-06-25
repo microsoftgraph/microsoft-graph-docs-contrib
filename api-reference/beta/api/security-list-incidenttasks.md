@@ -43,7 +43,7 @@ This method supports these OData query parameters to customize the response. For
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|$filter|string|Filter results by property values. Supported properties: incidentId, status, type, lastUpdateDateTime, createdDateTime, actionType.|
+|$filter|string|Filter results by property values. Supported properties: incidentId (eq), status(eq), type(eq), lastUpdateDateTime(eq), createdDateTime(eq), actionType(eq).|
 |$orderby|string|Sort results by property values. Supported property: lastUpdateDateTime.|
 |$top|integer|Set the page size of results.|
 |$select|string|Choose specific properties to include in results.|
