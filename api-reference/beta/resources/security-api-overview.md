@@ -195,7 +195,8 @@ You can integrate the [tiIndicator](tiindicator.md) entity into your application
 Threat indicators sent via the Microsoft Graph security API are available today in the following products:
 
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) – Enables you to alert and/or block threat indicators associated with malicious activity. You can also allow an indicator for ignoring the indicator from automated investigations. For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
-- [Microsoft Sentinel](/azure/sentinel/overview) – Only existing customers can use the [tiIndicator](tiindicator.md) API to send threat intelligence indicators to Microsoft Sentinel. For the most up-to-date, detailed instructions on how to send threat intelligent indicators to Microsoft Sentinel, see [Connect your threat intelligence platform to Microsoft Sentinel](/azure/sentinel/connect-threat-intelligence-tip).
+- [Microsoft Sentinel](/azure/sentinel/overview) – For the most up-to-date, detailed instructions on how to send threat intelligent indicators to Microsoft Sentinel, see [Connect your threat intelligence platform to Microsoft Sentinel](/azure/sentinel/connect-threat-intelligence-tip).
+
 ## Threat submission
 
 The Microsoft Graph threat submission API helps organizations to submit a threat received by any user in a tenant. This empowers customers to report spam or suspicious emails, phishing URLs, or malware attachments they receive to Microsoft. Microsoft checks the submission against the organizational policies in effect and sends it to human graders for analysis. The result then helps tenant administrators understand the threat scanning verdict and adjust their organizational policy. Admins can also use the results to report legitimate emails to prevent them from getting blocked.
@@ -211,6 +212,11 @@ The Microsoft Graph threat submission API helps organizations to submit a threat
 
 ### Sensors
 The Defender for Identity sensors management API allows you to create detailed reports of the sensors in your workspace, including information about the server's name, sensor version, type, state, and health status. It also enables you to manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to to query Entra ID.
+
+## Data security and governance (preview)
+Microsoft Purview unifies data governance and compliance across your organization's data estate. It provides centralized controls for data discovery, classification, and protection - integrating directly with Microsoft 365 and third-party data sources. Think of it as a command center for managing sensitive information and ensuring regulatory compliance across all your data, whether it lives in databases, documents, or cloud storage.
+
+The data security and governance APIs allow developers to seamlessly incorporate Purview's protection, essential for RAG applications, LOB applications, and systems handling sensitive data. These APIs provide programmatic access to Purview's policy evaluation engine, ensuring consistent data security and governance enforcement across various applications.
 
 ## Common use cases
 
@@ -275,6 +281,10 @@ The following are some of the most popular requests for working with the Microso
 | **Identities**|||
 | List health issues | [List health issues](../api/security-identitycontainer-list-healthissues.md) | [https://graph.microsoft.com/beta/security/identities/healthIssues](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/healthIssues&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | List sensors | [List sensors](../api/security-identitycontainer-list-sensors.md) | [https://graph.microsoft.com/beta/security/identities/sensors](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/sensors&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| **Data security and governance (preview)**|||
+| Compute protection scopes|[Compute protection scopes](../api/userprotectionscopecontainer-compute.md)||
+| Process content|[Process content](../api/userdatasecurityandgovernance-processcontent.md)||
+| Create content activity|[Create content activity](../api/activitiescontainer-post-contentactivities.md)||
 
 
 You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.

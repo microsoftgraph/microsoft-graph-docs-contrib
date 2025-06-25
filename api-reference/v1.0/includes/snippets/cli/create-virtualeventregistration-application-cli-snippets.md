@@ -10,7 +10,7 @@ mgc solutions virtual-events webinars registrations create --virtual-event-webin
   "lastName" : "Demoss",\
   "email" : "DianeDemoss@contoso.com",\
   "externalRegistrationInformation": {\
-    "referrer": "Facebook",\
+    "referrer": "Fabrikam",\
     "registrationId": "myExternalRegistrationId"\
   },\
   "preferredTimezone":"Pacific Standard Time",\

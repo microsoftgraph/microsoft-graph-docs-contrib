@@ -14,7 +14,8 @@ const alert = {
     assignedTo: 'secAdmin@contoso.com',
     classification: 'truePositive',
     determination: 'malware',
-    status: 'inProgress'
+    status: 'inProgress',
+    CustomDetails: {newKey: 'newValue'}
 };
 
 await client.api('/security/alerts_v2/da637551227677560813_-961444813')

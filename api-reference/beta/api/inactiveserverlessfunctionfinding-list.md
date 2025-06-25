@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 List the details of inactive serverless functions [inactiveServerlessFunctionFining](../resources/inactiveserverlessfunctionfinding.md) in authorization systems onboarded to Permissions Management.
 
 ## Permissions
@@ -172,4 +174,5 @@ Content-type: application/json
   ]
 }
 ```
+
 

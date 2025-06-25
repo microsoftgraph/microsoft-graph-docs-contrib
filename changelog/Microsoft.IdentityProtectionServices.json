@@ -1289,6 +1289,200 @@
     {
       "ChangeList": [
         {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "conditionalAccessWhatIfReasons",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **conditionalAccessWhatIfReasons** enumeration type.",
+          "Target": "conditionalAccessWhatIfReasons"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "whatIfAnalysisReasons",
+          "ChangeType": "Addition",
+          "Description": "Added the **whatIfAnalysisReasons** enumeration type.",
+          "Target": "whatIfAnalysisReasons"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationContext",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationContext](https://learn.microsoft.com/en-us/graph/api/resources/applicationContext?view=graph-rest-beta) resource.",
+          "Target": "applicationContext"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authContext",
+          "ChangeType": "Addition",
+          "Description": "Added the [authContext](https://learn.microsoft.com/en-us/graph/api/resources/authContext?view=graph-rest-beta) resource.",
+          "Target": "authContext"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessContext",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **conditionalAccessContext** resource.",
+          "Target": "conditionalAccessContext"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessWhatIfConditions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **conditionalAccessWhatIfConditions** resource.",
+          "Target": "conditionalAccessWhatIfConditions"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessWhatIfSubject",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **conditionalAccessWhatIfSubject** resource.",
+          "Target": "conditionalAccessWhatIfSubject"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the [servicePrincipalSignIn](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipalSignIn?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipalSignIn"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalSubject",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **servicePrincipalSubject** resource.",
+          "Target": "servicePrincipalSubject"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signInConditions",
+          "ChangeType": "Addition",
+          "Description": "Added the [signInConditions](https://learn.microsoft.com/en-us/graph/api/resources/signInConditions?view=graph-rest-beta) resource.",
+          "Target": "signInConditions"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signInContext",
+          "ChangeType": "Addition",
+          "Description": "Added the [signInContext](https://learn.microsoft.com/en-us/graph/api/resources/signInContext?view=graph-rest-beta) resource.",
+          "Target": "signInContext"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signInIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [signInIdentity](https://learn.microsoft.com/en-us/graph/api/resources/signInIdentity?view=graph-rest-beta) resource.",
+          "Target": "signInIdentity"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userActionContext",
+          "ChangeType": "Addition",
+          "Description": "Added the [userActionContext](https://learn.microsoft.com/en-us/graph/api/resources/userActionContext?view=graph-rest-beta) resource.",
+          "Target": "userActionContext"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSignIn](https://learn.microsoft.com/en-us/graph/api/resources/userSignIn?view=graph-rest-beta) resource.",
+          "Target": "userSignIn"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSubject",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **userSubject** resource.",
+          "Target": "userSubject"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whatIfApplicationContext",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **whatIfApplicationContext** resource.",
+          "Target": "whatIfApplicationContext"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whatIfAuthenticationContext",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **whatIfAuthenticationContext** resource.",
+          "Target": "whatIfAuthenticationContext"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whatIfUserActionContext",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **whatIfUserActionContext** resource.",
+          "Target": "whatIfUserActionContext"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessWhatIfPolicy",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **conditionalAccessWhatIfPolicy** resource.",
+          "Target": "conditionalAccessWhatIfPolicy"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whatIfAnalysisResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [whatIfAnalysisResult](https://learn.microsoft.com/en-us/graph/api/resources/whatIfAnalysisResult?view=graph-rest-beta) resource.",
+          "Target": "whatIfAnalysisResult"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Property",
+          "ChangedApiName": "analysisReasons",
+          "ChangeType": "Addition",
+          "Description": "Added the **analysisReasons** property to the [whatIfAnalysisResult](https://learn.microsoft.com/en-us/graph/api/resources/whatIfAnalysisResult?view=graph-rest-beta) resource.",
+          "Target": "whatIfAnalysisResult"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Method",
+          "ChangedApiName": "evaluate",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **evaluate** method from the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessRoot"
+        },
+        {
+          "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+          "ApiChange": "Method",
+          "ChangedApiName": "evaluate",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluate](https://learn.microsoft.com/en-us/graph/api/conditionalAccessRoot-evaluate?view=graph-rest-beta) method to the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessRoot"
+        }
+      ],
+      "Id": "d5e670eb-2c5c-41f5-a183-1cc49ca0ef85",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-21T23:31:16.5254917Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c1ddba56-7ffe-4bf3-bd1f-f0cfdefaddaf",
           "ApiChange": "Enumeration",
           "ChangedApiName": "conditionalAccessTransferMethods",
@@ -1343,6 +1537,42 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-04-04T21:15:21.511472Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "da5c89b8-f00f-43f8-b806-e849458a0cdd",
+          "ApiChange": "Method",
+          "ChangedApiName": "confirmSafe",
+          "ChangeType": "Addition",
+          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/riskyUser-confirmSafe?view=graph-rest-beta) method to the [riskyUser](https://learn.microsoft.com/en-us/graph/api/resources/riskyUser?view=graph-rest-beta) resource.",
+          "Target": "riskyUser"
+        }
+      ],
+      "Id": "da5c89b8-f00f-43f8-b806-e849458a0cdd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-29T19:58:07.5073443Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a215f697-0b0f-4f20-b5cb-bf43b83f4bd0",
+          "ApiChange": "Method",
+          "ChangedApiName": "confirmSafe",
+          "ChangeType": "Addition",
+          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/riskyUser-confirmSafe?view=graph-rest-1.0) method to the [riskyUser](https://learn.microsoft.com/en-us/graph/api/resources/riskyUser?view=graph-rest-1.0) resource.",
+          "Target": "riskyUser"
+        }
+      ],
+      "Id": "a215f697-0b0f-4f20-b5cb-bf43b83f4bd0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-05-29T19:58:07.5075874Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

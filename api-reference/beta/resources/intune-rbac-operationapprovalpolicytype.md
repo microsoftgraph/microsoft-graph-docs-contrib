@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -38,8 +38,8 @@ The set of available policy types that can be configured for approval. The polic
 |filter|14|Indicates that the configured policy type is for a Filter. Not in use at this time.|
 |endpointSecurityPolicy|15|Indicates that the configured policy type is for an Endpoint Security Policy. Not in use at this time.|
 |app|16|Indicates that the configured policy type is an application type, such as mobile apps or built-in apps.|
-|script|17|Indicates that the configured policy type is a script type, such as Powershell scripts or remediation scripts.|
-|role|18|Indicates that the configured policy type is for a Role. Not in use at this time.|
+|script|17|Indicates that the configured policy type is a script type, such as PowerShell scripts or remediation scripts.|
+|role|18|Indicates that the configured policy type type is for Intune roles, such as application administrator or a custom role.|
 |deviceResetPasscode|19|Indicates that the configured policy type is for a Device Reset Passcode Action. Not in use at this time.|
 |unknownFutureValue|21|Evolvable enumeration sentinel value. Do not use.|
 |operationApprovalPolicy|22|Indicates that the configured policy type is for an Operation Approval Policy.|

@@ -18,6 +18,7 @@ const educationAssignment = {
     },
     dueDateTime: '2021-09-10T00:00:00Z',
     addedStudentAction: 'none',
+    languageTag: 'pt-BR',
     addToCalendarAction: 'studentsAndPublisher'
 };
 

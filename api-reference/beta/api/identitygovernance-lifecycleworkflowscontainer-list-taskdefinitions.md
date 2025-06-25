@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of built-in workflow tasks in Lifecycle Workflows. A task is represented by the [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -124,7 +124,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions",
-    "@odata.count": 24,
+    "@odata.count": 25,
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/lifecycleWorkflows/taskDefinitions?$select=category,continueOnError",
     "value": [
         {
@@ -634,6 +634,14 @@ Content-Type: application/json
                     "valueType": "string"
                 }
             ]
+        },
+        {
+            "category": "leaver,mover",
+            "description": "Revoke all refresh tokens for user",
+            "displayName": "Revoke all refresh tokens for user",
+            "id": "509589a4-0466-4471-829e-49c5e502bdee",
+            "version": 1,
+            "parameters": []
         }
     ]
 }

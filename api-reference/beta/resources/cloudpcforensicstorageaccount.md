@@ -19,10 +19,10 @@ Represents the storage account information that can be used to store a snapshot 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessTier|[cloudPcStorageAccountAccessTier](#cloudpcstorageaccountaccesstier-values)| The access tier of the storage account. Possible values are `hot`, `cool`, `premium`, `cold`, and `unknownFutureValue`. Default value is `hot`. Read-only.|
+|accessTier|[cloudPcStorageAccountAccessTier](#cloudpcstorageaccountaccesstier-values)| Indicates the access tier of the storage account. Possible values are `hot`, `cool`, `premium`, `cold`, and `unknownFutureValue`. Default value is `hot`. Read-only.|
 |immutableStorage|Boolean|Indicates whether immutability policies are configured for the storage account. When `true`, the storage account only accepts `hot` as the snapshot access tier. When `false`, the storage account accepts all valid access tiers. Read-Only.|
-|storageAccountId|String|The ID of the storage account. Read-only.|
-|storageAccountName|String|The name of the storage account. Read-only.|
+|storageAccountId|String| Indicates the ID of the storage account. Read-only.|
+|storageAccountName|String| Indicates the name of the storage account. Read-only.|
 
 ### cloudPcStorageAccountAccessTier values
 
