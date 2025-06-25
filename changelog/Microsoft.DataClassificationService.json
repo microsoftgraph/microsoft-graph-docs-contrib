@@ -231,14 +231,6 @@
         {
           "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
-          "ChangedApiName": "labelActionBase",
-          "ChangeType": "Addition",
-          "Description": "Added the [labelActionBase](https://learn.microsoft.com/en-us/graph/api/resources/labelActionBase?view=graph-rest-1.0) resource.",
-          "Target": "labelActionBase"
-        },
-        {
-          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
-          "ApiChange": "Resource",
           "ChangedApiName": "labelContentRight",
           "ChangeType": "Addition",
           "Description": "Added the [labelContentRight](https://learn.microsoft.com/en-us/graph/api/resources/labelContentRight?view=graph-rest-1.0) resource.",
