@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a collection containing count tables for all alert severity type per day in global secure access.
+Returns a collection containing count tables for all alert severity type per day in Global Secure Access.
 
 ## Permissions
 
