@@ -1,5 +1,12 @@
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account) |SecurityIncidentReadAll, SecurityIncidentReadWriteAll|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|SecurityIncidentReadAll, SecurityIncidentReadWriteAll, SecurityIncidentTaskReadWriteAll|
+---
+description: Automatically generated file. DO NOT MODIFY
+ms.topic: include
+ms.localizationpriority: medium
+---
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|Not supported.|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
+
