@@ -81,7 +81,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcStatusSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcStatusSummary](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcStatusSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudPcStatusSummary](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcStatusSummary?view=graph-rest-beta) resource type.",
           "Target": "cloudPcStatusSummary"
         }
       ],
