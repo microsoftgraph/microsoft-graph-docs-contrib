@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a Microsoft Defender XDR incident task. You can only update the status property.
+Update a Microsoft Defender XDR [incident task](../resources/security-incidenttask.md). You can only update the **status** property.
 
 ## Permissions
 
