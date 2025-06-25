@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Abstract base type representing a data loss prevention (DLP) action that restricts access to content based on policy evaluation.
 
-Inherits from [dlpActionInfo](../resources/dlpactioninfo.md).
+Use [restrictaccessaction](../resources/restrictaccessaction.md) to explicitly restrict access to the content. Inherits from [dlpActionInfo](../resources/dlpactioninfo.md).
 
 ## Properties
 

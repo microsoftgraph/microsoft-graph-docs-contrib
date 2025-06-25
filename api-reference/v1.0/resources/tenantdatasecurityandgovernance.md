@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Represents the entry point for data security and governance features applicable across the entire tenant.
 
+Inherits from [dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).
+
 ## Methods
 
 | Method                                          | Return Type                                                                                                 | Description                                                                                 |

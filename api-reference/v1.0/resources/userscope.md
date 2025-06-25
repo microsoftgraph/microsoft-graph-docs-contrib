@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Represents an individual user as a scope within policy bindings.
 
+Inherits from [scopeBase](../resources/scopebase.md).
+
 ## Properties
 
 | Property | Type   | Description                                                                                        |
