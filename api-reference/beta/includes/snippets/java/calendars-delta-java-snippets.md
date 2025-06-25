@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-Calendar result = graphClient.me().calendars().byCalendarId("{calendar-id}").get();
+var result = graphClient.me().calendars().delta().get();
 
 
 ```
