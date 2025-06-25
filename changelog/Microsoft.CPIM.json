@@ -1,5 +1,47 @@
 ﻿{
   "changelog": [
+        {
+      "ChangeList": [
+        {
+          "Id": "0b0f1a5c-ffac-4d11-a36f-76762e3bb542",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onOtpSendCustomExtensionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onOtpSendCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onOtpSendCustomExtensionHandler?view=graph-rest-1.0) resource.",
+          "Target": "onOtpSendCustomExtensionHandler"
+        },
+        {
+          "Id": "0b0f1a5c-ffac-4d11-a36f-76762e3bb542",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onOtpSendHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onOtpSendHandler](https://learn.microsoft.com/en-us/graph/api/resources/onOtpSendHandler?view=graph-rest-1.0) resource.",
+          "Target": "onOtpSendHandler"
+        },
+        {
+          "Id": "0b0f1a5c-ffac-4d11-a36f-76762e3bb542",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onEmailOtpSendListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onEmailOtpSendListener](https://learn.microsoft.com/en-us/graph/api/resources/onEmailOtpSendListener?view=graph-rest-1.0) resource.",
+          "Target": "onEmailOtpSendListener"
+        },
+        {
+          "Id": "0b0f1a5c-ffac-4d11-a36f-76762e3bb542",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onOtpSendCustomExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [onOtpSendCustomExtension](https://learn.microsoft.com/en-us/graph/api/resources/onOtpSendCustomExtension?view=graph-rest-1.0) resource.",
+          "Target": "onOtpSendCustomExtension"
+        }
+      ],
+      "Id": "0b0f1a5c-ffac-4d11-a36f-76762e3bb542",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-06-20T16:45:45.5603767Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
     {
       "ChangeList": [
         {

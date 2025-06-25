@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 10/17/2024
+ms.date: 06/25/2025
 ---
 
 # customAuthenticationExtension: validateAuthenticationConfiguration
@@ -13,9 +13,12 @@ Namespace: microsoft.graph
 
 An API to check validity of the endpoint and and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md) object, which can represent one of the following derived types:
 
-- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.resource type.
+- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
+- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
+- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
+- [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -54,7 +57,7 @@ POST /identity/customAuthenticationExtensions/validateAuthenticationConfiguratio
 
 In the request body, supply JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action. Supply a endpointConfiguration and authenticationConfiguration if querying at the root level. Otherwise, for a specific custom extension, do not supply a request body for this method.
+The following table shows the parameters that can be used with this action. Supply a endpointConfiguration and authenticationConfiguration if querying at the root level. Otherwise, for a specific custom extension, Don't supply a request body for this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -107,7 +110,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.authenticationConfigurationValidation",
+    "@odata.context": "https://graph.microsoft.com/1.0/$metadata#microsoft.graph.authenticationConfigurationValidation",
     "errors": [
         {
             "code": "IncorrectResourceIdFormat",
@@ -136,7 +139,6 @@ Content-Type: application/json
 
 #### Request
 The following example shows a request.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
