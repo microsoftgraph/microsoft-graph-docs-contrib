@@ -239,14 +239,6 @@
         {
           "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
           "ApiChange": "Resource",
-          "ChangedApiName": "labelPolicy",
-          "ChangeType": "Addition",
-          "Description": "Added the [labelPolicy](https://learn.microsoft.com/en-us/graph/api/resources/labelPolicy?view=graph-rest-1.0) resource.",
-          "Target": "labelPolicy"
-        },        
-        {
-          "Id": "8412d359-a074-4c54-a379-cb3f01c34ced",
-          "ApiChange": "Resource",
           "ChangedApiName": "policyBinding",
           "ChangeType": "Addition",
           "Description": "Added the [policyBinding](https://learn.microsoft.com/en-us/graph/api/resources/policyBinding?view=graph-rest-1.0) resource.",
