@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Execute a remediation action on a Microsoft Defender XDR incident task. The action type must be supported for automated execution.
+Execute a remediation action on a Microsoft Defender XDR incident task. Only the following **actionType** values are supported for automated execution: `collectInvestigationPackage`, `isolateDevice`, `unRestrictAppExecution`, `unIsolateDevice`, `restrictAppExecution`, `runAntiVirusScan`, `stopAndQuarantineFile`, `submitIocRule`.
 
 ## Permissions
 
