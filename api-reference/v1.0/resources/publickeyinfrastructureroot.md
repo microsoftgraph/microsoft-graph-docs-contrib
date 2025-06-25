@@ -12,8 +12,6 @@ ms.date: 06/23/2025
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 The collection of public key infrastructure instances over different Microsoft Entra features.
 
 

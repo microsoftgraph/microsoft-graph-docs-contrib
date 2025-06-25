@@ -12,8 +12,6 @@ ms.date: 06/23/2025
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 The properties of each certificate authority object contained in the [certificateBasedAuthPki](../resources/certificateBasedAuthPki.md) resource.
 
 

@@ -43,6 +43,8 @@ The following table shows the least privileged permission or permissions require
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
 | [user](../resources/user.md) | User.DeleteRestore.All | Not supported. | User.DeleteRestore.All |
 
+<!-- { "blockType": "permissions", "name": "publickeyinfrastructureroot_delete_certificatebasedauthconfigurations" } -->
+[!INCLUDE [permissions-table](../includes/permissions/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations-permissions.md)]
 [!INCLUDE [rbac-deleted-items-restore-apis](../includes/rbac-for-apis/rbac-deleted-items-restore-apis.md)]
 
 ## HTTP request
