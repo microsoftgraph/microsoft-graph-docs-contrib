@@ -47,7 +47,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. If a status code other than 2xx or 404 is returned or if a provider times out, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
 > [!NOTE]
-> Attempting to execute a response action with an unsupported actionType will return a `400 Bad Request` error with the message "Currently {incidentTask.ActionType} is not supported"
+> Attempting to execute a response action with an unsupported actionType will return a `400 Bad Request` error with the message "Currently {incidentTask.ActionType} is not supported".
 
 ## Examples
 
