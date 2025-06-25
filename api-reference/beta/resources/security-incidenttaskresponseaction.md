@@ -17,8 +17,19 @@ Namespace: microsoft.graph.security
 Represents the base type for all incident task response actions in Microsoft Defender XDR. This is an abstract type that cannot be instantiated directly but serves as the parent type for the following specific response actions that can be executed on incident tasks.
 
 - [stopAndQuarantineFileIncidentTaskResponseAction](../resources/security-stopandquarantinefileincidenttaskresponseaction.md) - Used to stop and quarantine a file.
-- {Document the rest 13 derived base types in list format)
--
+- [collectInvestigationPackageIncidentTaskResponseAction](../resources/security-collectinvestigationpackageincidenttaskresponseaction.md) - Used to collect device logs for investigation.
+- [disableUserIncidentTaskResponseAction](../resources/security-disableuserincidenttaskresponseaction.md) - Used to temporarily disable a user account.
+- [enableUserIncidentTaskResponseAction](../resources/security-enableuserincidenttaskresponseaction.md) - Used to re-enable a previously disabled user account.
+- [forceUserPasswordResetIncidentTaskResponseAction](../resources/security-forceuserpasswordresetincidenttaskresponseaction.md) - Used to force a user to reset their password.
+- [hardDeleteEmailIncidentTaskResponseAction](../resources/security-harddeleteemailincidenttaskresponseaction.md) - Used to permanently delete an email message.
+- [isolateDeviceIncidentTaskResponseAction](../resources/security-isolatedeviceincidenttaskresponseaction.md) - Used to isolate a device from the network.
+- [markUserAsCompromisedIncidentTaskResponseAction](../resources/security-markuserascompromisedincidenttaskresponseaction.md) - Used to mark a user account as compromised.
+- [requireSignInIncidentTaskResponseAction](../resources/security-requiresigninincidenttaskresponseaction.md) - Used to require a user to sign in again.
+- [restrictAppExecutionIncidentTaskResponseAction](../resources/security-restrictappexecutionincidenttaskresponseaction.md) - Used to restrict application execution on a device.
+- [runAntivirusScanIncidentTaskResponseAction](../resources/security-runantivirusscanincidenttaskresponseaction.md) - Used to initiate an antivirus scan on a device.
+- [softDeleteIncidentTaskResponseAction](../resources/security-softdeleteincidenttaskresponseaction.md) - Used to move an email message to the deleted items folder.
+- [unIsolateDeviceIncidentTaskResponseAction](../resources/security-unisolatedeviceincidenttaskresponseaction.md) - Used to remove network isolation from a device.
+- [unRestrictAppExecutionIncidentTaskResponseAction](../resources/security-unrestrictappexecutionincidenttaskresponseaction.md) - Used to remove application execution restrictions from a device.
 
 Inherits from [responseAction](../resources/security-responseaction.md).
 
