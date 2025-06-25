@@ -45,7 +45,7 @@ This method supports these OData query parameters to customize the response. For
 |:---|:---|:---|
 |$filter|string|Filter results by property values. Supported properties: **incidentId** (`eq`), **status** (`eq`), **type** (`eq`), **lastUpdateDateTime** (`eq`), **createdDateTime** (`eq`), **actionType** (`eq`).|
 |$orderby|string|Sort results by property values. Supported property: **lastUpdateDateTime**.|
-|$top|integer|Set the page size of results.|
+|$top|integer|Set the page size of results. The default page size is 500 results and the maximum is 500 results.|
 |$select|string|Choose specific properties to include in results.|
 
 ## Request headers
