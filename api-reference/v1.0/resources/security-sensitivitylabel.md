@@ -53,6 +53,96 @@ Describes the information protection label that details how to properly apply a 
 | sensitivity    | Int32             | The sensitivity value of the label, where lower is less sensitive.                                         |
 | tooltip        | String            | The tooltip that should be displayed for the label in a UI.                                                |
 
+## Sensitivity Label API Filtering Rules
+
+This section outlines the filtering rules and constraints for various Sensitivity Label APIs.
+
+### Scenario 1: SensitivityLabel APIs (/ and /id)
+
+#### Rules
+
+1. **OR Restriction with scopeToUser**
+   - If `scopeToUser` filter parameter is present, then `or` is not allowed in the filter parameters
+
+2. **Prefiltering Behavior with OR**
+   - If `or` is present in the filter parameters, then `locale` and `contentFormats` filter parameters (if present) will not be used for prefiltering
+
+3. **Inner OR Exception**
+   - Inner `or` operations that fall under the parameter tree are permitted
+
+### Scenario 2: SensitivityLabelAndRights APIs expand=Rights (/ and /id) - Single ID
+
+#### Rules
+
+1. **OR Restriction with Multiple Parameters**
+   - If any of the following filter parameters are present: `scopeToUser`, `id`, or `ownerEmail`, then `or` is not allowed in the filter parameters
+
+2. **ownerEmail Validation**
+   - `ownerEmail` present without `id` will throw `ArgumentException`
+
+3. **Prefiltering Behavior with OR**
+   - If `or` is present in the filter parameters, then `locale` and `contentFormats` filter parameters (if present) will not be used for prefiltering
+
+4. **Inner OR Exception**
+   - Inner `or` operations that fall under the parameter tree are permitted
+
+### Scenario 2.5: SensitivityLabel And Rights APIs expand=Rights (/ and /id) - Multiple IDs
+
+#### Supported Pattern
+
+This API supports the following specific filtering pattern:
+
+```odata
+$filter=(id in ('guid1', 'guid2')) or ((id eq 'guid3' and rights/ownerEmail eq 'ownerEmail1') or (id eq 'guid4') or (id eq 'guid5' and rights/ownerEmail eq 'ownerEmail2') or (id eq 'guid6'))
+```
+
+#### Rules
+
+1. **Strict OR Pattern**
+   - Only the pattern shown above is supported for `or` operations
+   - Any other `or` usage with this API will result in `ArgumentException`
+
+2. **Inner OR Exception**
+   - Inner `or` operations that fall under the parameter tree are permitted
+
+### Scenario 3: SensitivityLabel Rights /id/rights
+
+#### Rules
+
+1. **OR Restriction with ownerEmail**
+   - `or` operations with filter parameter `ownerEmail` will result in an exception
+
+2. **Inner OR Exception**
+   - Inner `or` operations that fall under the parameter tree are permitted
+
+### isScopedToUser Parameter Rules
+
+This section outlines the behavior and constraints for the `isScopedToUser` parameter in sensitivity label APIs.
+
+#### Parameter Behavior
+
+##### isScopedToUser = true
+- **Result**: Shows enabled labels only
+- **Use Case**: Standard filtering for active/enabled labels
+- **Status**: Recommended usage
+
+##### isScopedToUser = false
+- **Result**: Shows disabled labels only
+- **Use Case**: Limited - ideally not used with this value
+- **Status**: Not recommended for typical operations
+
+##### isScopedToUser not passed
+- **Result**: Shows all labels (both enabled and disabled)
+- **Use Case**: Comprehensive label retrieval
+- **Status**: Default behavior when parameter is omitted
+
+#### Restrictions
+
+##### Tenant Labels Exception
+- **Behavior**: When getting tenant labels, using `isScopedToUser` will throw `ArgumentException`
+- **Reason**: Parameter is not applicable for tenant-level label operations
+- **Solution**: Omit the `isScopedToUser` parameter when working with tenant labels
+
 ## Relationships
 
 | Relationship | Type                                                          | Description                                                                        |
