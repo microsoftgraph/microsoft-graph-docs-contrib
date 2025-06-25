@@ -38,8 +38,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |id|String|Unique GUID identifier for the task.|
 |lastModifiedByDisplayName|String|Name of the entity that last updated the task. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Last update time of the task. Read-only.|
-|source|microsoft.graph.security.incidentTaskSource|Origin of the task. The possible values are: `defenderExpertsGuidedResponse`, `defenderExpertsManagedResponse`, `unknownFutureValue`.For more information, see [incidentTaskSource values](#incidenttasksource-values).|
-|status|microsoft.graph.security.incidentTaskStatus|Current task status. This is the only property you can update. The possible values are: `open`, `inProgress`, `completed`, `failed`, `notRelevant`, `unknownFutureValue`.For more information, see [incidentTaskStatus values](#incidenttaskstatus-values).|
+|source|microsoft.graph.security.incidentTaskSource|Origin of the task. The possible values are: `defenderExpertsGuidedResponse`, `defenderExpertsManagedResponse`, `unknownFutureValue`. For more information, see [incidentTaskSource values](#incidenttasksource-values).|
+|status|microsoft.graph.security.incidentTaskStatus|Current task status. This is the only property you can update. The possible values are: `open`, `inProgress`, `completed`, `failed`, `notRelevant`, `unknownFutureValue`. For more information, see [incidentTaskStatus values](#incidenttaskstatus-values).|
 
 ### incidentTaskActionStatus values
 
