@@ -46,7 +46,6 @@ Describes the information protection label that details how to properly apply a 
 | isEnabled      | Boolean           | `true` if the label is currently enabled; `false` otherwise. |
 | isEndpointProtectionEnabled | Boolean | `true` if the label provides protection settings enforced by endpoint Data Loss Prevention; `false` otherwise. |
 | isScopedToUser | Boolean           | Indicates if the label is scoped to specific users or groups (`true`) or available to the entire tenant (`false`). |
-| labelActions   | labelActionBase collection | The actions that are associated with the label.                                                                 |
 | locale         | String | The locale associated with the label's localized properties (for example, 'en-US'). Used in context of listing labels scoped to user/locale. |
 | name           | String            | The plaintext name of the label.                                                                           |
 | priority       | Int32             | The priority of the label. Lower numbers indicate higher priority. |
@@ -82,11 +81,6 @@ The following JSON representation shows the resource type.
   "isEndpointProtectionEnabled": "Boolean",
   "isDefault": "Boolean",
   "applicationMode": "String",
-  "labelActions": [
-    {
-      "@odata.type": "microsoft.graph.encryptWithUserDefinedRights"
-    }
-  ],
   "assignedPolicies": [
     {
       "@odata.type": "microsoft.graph.labelPolicy"
