@@ -2759,9 +2759,9 @@
         "SubArea": ""
       },
       {
-          "ChangeList": [
+        "ChangeList": [
           {
-            "Id": "1808128f-7b67-475a-a635-3cc1b0a8dc76",
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
             "ApiChange": "Relationship",
             "ChangedApiName": "incidentTasks",
             "ChangeType": "Addition",
@@ -2769,7 +2769,7 @@
             "Target": "security"
           },
           {
-            "Id": "1808128f-7b67-475a-a635-3cc1b0a8dc76",
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
             "ApiChange": "Enumeration",
             "ChangedApiName": "incidentTaskActionStatus",
             "ChangeType": "Addition",
@@ -2777,7 +2777,7 @@
             "Target": "incidentTaskActionStatus"
           },
           {
-            "Id": "1808128f-7b67-475a-a635-3cc1b0a8dc76",
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
             "ApiChange": "Enumeration",
             "ChangedApiName": "incidentTaskActionType",
             "ChangeType": "Addition",
@@ -2785,7 +2785,7 @@
             "Target": "incidentTaskActionType"
           },
           {
-            "Id": "1808128f-7b67-475a-a635-3cc1b0a8dc76",
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
             "ApiChange": "Enumeration",
             "ChangedApiName": "incidentTaskSource",
             "ChangeType": "Addition",
@@ -2793,7 +2793,7 @@
             "Target": "incidentTaskSource"
           },
           {
-            "Id": "1808128f-7b67-475a-a635-3cc1b0a8dc76",
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
             "ApiChange": "Enumeration",
             "ChangedApiName": "incidentTaskStatus",
             "ChangeType": "Addition",
@@ -2801,7 +2801,15 @@
             "Target": "incidentTaskStatus"
           },
           {
-            "Id": "1808128f-7b67-475a-a635-3cc1b0a8dc76",
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
+            "ApiChange": "Resource",
+            "ChangedApiName": "incidentTaskResponseAction",
+            "ChangeType": "Addition",
+            "Description": "Added the [incidentTaskResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-incidentTaskResponseAction?view=graph-rest-beta) resource.",
+            "Target": "incidentTaskResponseAction"
+          },
+          {
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
             "ApiChange": "Property",
             "ChangedApiName": "deviceId",
             "ChangeType": "Addition",
@@ -2809,15 +2817,15 @@
             "Target": "stopAndQuarantineFileIncidentTaskResponseAction"
           },
           {
-            "Id": "1808128f-7b67-475a-a635-3cc1b0a8dc76",
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
             "ApiChange": "Resource",
             "ChangedApiName": "incidentTask",
             "ChangeType": "Addition",
-            "Description": "Added the [incidentTask](https://learn.microsoft.com/en-us/graph/api/resources/security-incidentTask?view=graph-rest-beta) resource and its methods.",
+            "Description": "Added the [incidentTask](https://learn.microsoft.com/en-us/graph/api/resources/security-incidentTask?view=graph-rest-beta) resource.",
             "Target": "incidentTask"
           },
           {
-            "Id": "1808128f-7b67-475a-a635-3cc1b0a8dc76",
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
             "ApiChange": "Method",
             "ChangedApiName": "executeResponseAction",
             "ChangeType": "Addition",
@@ -2825,10 +2833,10 @@
             "Target": "incidentTask"
           }
         ],
-        "Id": "1808128f-7b67-475a-a635-3cc1b0a8dc76",
+        "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
         "Cloud": "Prod",
         "Version": "beta",
-        "CreatedDateTime": "2025-06-09T12:05:53.9792357Z",
+        "CreatedDateTime": "2025-06-25T14:49:25.1401197Z",
         "WorkloadArea": "Security",
         "SubArea": ""
       }
