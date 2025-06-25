@@ -41,7 +41,7 @@ POST /me/dataSecurityAndGovernance/processContent
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{usersId}/dataSecurityAndGovernance/processContent
+POST /users/{userId}/dataSecurityAndGovernance/processContent
 ```
 
 ## Request headers
@@ -50,7 +50,7 @@ POST /users/{usersId}/dataSecurityAndGovernance/processContent
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
-| If-None-Match | Optional. This value is used by the API to determine if the policy state changed since the last call to the API. The value is from the Etag header returned from [protectionScopes compute](../api/userprotectionscopecontainer-compute.md)|
+| If-None-Match | Optional. This value is used by the API to determine if the policy state changed since the last call to the API. The value is from the Etag header returned from [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). If newly computed Etag value does not match the value passsed in this header, protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). |
 
 ## Request body
 
@@ -66,11 +66,11 @@ The following table lists the parameters that are required when you call this ac
 
 | Name          | Description   |
 | :------------ | :------------ |
-| ETag          | An indicator whether the configured policy state changed. If the policy state changed, the protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). |
+| ETag          | An indicator that can be used to detect if configured policy state changed. If the policy state changed, the ETag value will change and protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). |
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [processContentResponse](../resources/processcontentresponse.md) in the response body.
+If successful, this action returns a `200 OK`  response code and a [processContentResponse](../resources/processcontentresponse.md) in the response body or `202 Accepted`, `204 No Content` with no response body.
 
 ## Examples
 
@@ -111,6 +111,7 @@ Content-Type: application/json
           "activity": "uploadText"
        },
        "deviceMetadata": {
+          "deviceType": "Unmanaged",
           "operatingSystemSpecifications": {
              "operatingSystemPlatform": "Windows 11",
              "operatingSystemVersion": "10.0.26100.0" 
@@ -196,47 +197,49 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processContent
+POST https://graph.microsoft.com/v1.0/users/{5def8f26-aff8-4db6-a08c-0fcf8f1aa2ba}/dataSecurityAndGovernance/processContent
 Content-Type: application/json
 
 {
-    "contentToProcess": {
-        "contentEntries": [
-            {
-                "@odata.type": "#microsoft.graph.processConversationMetadata",
-                "identifier": "f7af180f-dc2e-467c-9719-757e1c61eabf",
-                "content": {
-                    "@odata.type": "#microsoft.graph.textContent",
-                    "data": "some data"
-                },
-                "name": "Some name",
-             "correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d95811",
-             "sequenceNumber": 0, 
-            }
-        ],
-        "activityMetadata": {
-            "activity": "uploadText"
-        },
-        "deviceMetadata": {
-            "deviceType": "Unmanaged",
-            "ipAddress": null,
-            "operatingSystemSpecifications": {
-                "operatingSystemPlatform": "Windows",
-                "operatingSystemVersion": "11.1"
-            }
-        },
-        "integratedAppMetadata": {
-            "name": "Some integrated app name",
-            "version": "1.0.0"
-        },
-        "protectedAppMetadata": {
-            "applicationLocation": {
-                "@odata.type": "#microsoft.graph.policyLocationUrl",
-                "value": "https://gemini.google.com"
-            }
-        }
-    }
-} 
+	"contentToProcess": {
+		"contentEntries": [
+			{
+				"@odata.type": "#microsoft.graph.processConversationMetadata",
+				"identifier": "f7af180f-dc2e-467c-9719-757e1c61eabf",
+				"content": {
+					"@odata.type": "#microsoft.graph.textContent",
+					"data": "some data"
+				},
+				"correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d95811",
+				"sequenceNumber": 0,
+				"name": "Test Content"
+			}
+		],
+		"activityMetadata": {
+			"activity": "uploadText"
+		},
+		"deviceMetadata": {
+			"deviceType": "unmanaged",
+			"ipAddress": null,
+			"operatingSystemSpecifications": {
+				"operatingSystemPlatform": "Windows",
+				"operatingSystemVersion": "11.1"
+			}
+		},
+		"integratedAppMetadata": {
+			"name": "My Entra App",
+			"version": "0.1"
+		},
+		"protectedAppMetadata": {
+			"name": "My Entra App",
+			"version": "0.1",
+			"applicationLocation": {
+				"@odata.type": "#microsoft.graph.policyLocationUrl",
+				"value": "https://gemini.google.com"
+			}
+		}
+	}
+}
 
 ```
 
@@ -283,41 +286,52 @@ POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processConten
 Content-Type: application/json
 
 {
-    "contentToProcess": {
-        "contentEntries": [
-            {
-                "@odata.type": "#microsoft.graph.processConversationMetadata",
-                "identifier": "f7af180f-dc2e-467c-9719-757e1c61eabf",
-                "content": {
-                    "@odata.type": "#microsoft.graph.binaryContent",
-                    "data": "Base64 encoded content"
-                },
-                "name": "Some name",
-                "correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d95822"
-            }
-        ],
-        "activityMetadata": {
-            "activity": "uploadFile"
-        },
-        "deviceMetadata": {
-            "deviceType": "Unmanaged",
-            "ipAddress": null,
-            "operatingSystemSpecifications": {
-                "operatingSystemPlatform": "Windows",
-                "operatingSystemVersion": "11.1"
-            }
-        },
-        "integratedAppMetadata": {
-            "name": "Some integrated app name",
-            "version": "1.0.0"
-        },
-        "protectedAppMetadata": {
-            "applicationLocation": {
-                "@odata.type": "#microsoft.graph.policyLocationUrl",
-                "value": "https://gemini.google.com"
-            }
-        }
-    }
+	"contentToProcess": {
+		"contentEntries": [
+			{
+				"@odata.type": "#microsoft.graph.processFileMetadata",
+				"identifier": "f7af180f-dc2e-467c-9719-757e1c61eabf",
+				"content": {
+				"@odata.type": "#microsoft.graph.textContent",
+					"data": "Base64 encoded content"
+				},
+				"name": "Test File.docx",
+				"correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d95822",
+				"createdDateTime": "2024-07-23T01:31:40.2020463Z",
+				"modifiedDateTime": "2024-09-17T13:45:21.0000000Z",
+				"correlationId": "9d84223c-521c-42f4-8f35-3cdeabe515d3",
+				"length": 17352,
+				"isTruncated": false,
+				"ownerId": "ffe1ca70-6e5b-4120-abf0-472034ba05d4",
+				"customProperties": {
+					"Department": "Finance",
+					"ReviewerName": "John Smith"
+				}
+			}
+		],
+		"activityMetadata": {
+			"activity": "uploadFile"
+		},
+		"deviceMetadata": {
+			"deviceType": "unmanaged",
+			"operatingSystemSpecifications": {
+				"operatingSystemPlatform": "Windows",
+				"operatingSystemVersion": "11.1"
+			}
+		},
+		"integratedAppMetadata": {
+			"name": "Network Proxy App",
+			"version": "1.0.0"
+		},
+		"protectedAppMetadata": {
+			"name": "My App",
+			"version": "0.1",
+			"applicationLocation": {
+				"@odata.type": "#microsoft.graph.policyLocationUrl",
+				"value": "https://gemini.google.com"
+			}
+		}
+	}
 }
 ```
 
