@@ -18,9 +18,7 @@ Represents the number of Cloud PCs for each status.
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Retrieve Cloud PC count group by status](../api/cloudpc-retrievecloudpccountbystatus.md)|[cloudPcStatusSummary](../resources/cloudpcstatussummary.md) collection|Retrieve [cloudPcStatusSummary](../resources/cloudPcStatusSummary.md) for each status.|
+None.
 
 ## Properties
 
