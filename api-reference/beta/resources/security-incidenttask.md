@@ -93,6 +93,74 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |notRelevant|The incident task is marked as not relevant.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
+## Response Actions
+
+The following response actions are available for incident tasks:
+
+### stopAndQuarantineFileIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to stop and quarantine a file.
+
+Properties:
+
+- **deviceId** (String, optional): The ID of the device where the file is located.
+
+### disableUserIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to temporarily disable a user account.
+
+### enableUserIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to re-enable a previously disabled user account.
+
+### forceUserPasswordResetIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to force a user to reset their password.
+
+### requireSignInIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to require a user to sign in again.
+
+### markUserAsCompromisedIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to mark a user account as compromised.
+
+### collectInvestigationPackageIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to collect device logs for investigation.
+
+### restrictAppExecutionIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to restrict application execution on a device.
+
+### unRestrictAppExecutionIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to remove application execution restrictions from a device.
+
+### runAntivirusScanIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to initiate an antivirus scan on a device.
+
+### hardDeleteEmailIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to permanently delete an email message.
+
+### softDeleteIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to move an email message to the deleted items folder.
+
+### unIsolateDeviceIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to remove network isolation from a device.
+
+### isolateDeviceIncidentTaskResponseAction
+
+Inherits from incidentTaskResponseAction. Used to isolate a device from the network.
+
+Properties:
+
+- **isolationType** (isolationType): Required. The type of isolation to apply. Possible values are: `full`, `selective`, `unknownFutureValue`.
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
