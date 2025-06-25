@@ -29,8 +29,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionStatus|microsoft.graph.security.incidentTaskActionStatus|The execution status of the action. The possible values are: `notStarted`, `inProgress`, `partiallyCompleted`, `completed`, `failed`, `unknownFutureValue`.|
-|actionType|microsoft.graph.security.incidentTaskActionType|The remediation action to perform. The possible values are: `text`, `isolateDevice`, `stopAndQuarantineFile`, `runAntiVirusScan`, `collectInvestigationPackage`, `restrictAppExecution`, `submitIocRule`, `forceUserPasswordReset`, `disableUser`, `markUserAsCompromised`, `requireSignIn`, `hardDeleteEmail`, `softDeleteEmail`, `unIsolateDevice`, `unRestrictAppExecution`, `enableUser`, `unknownFutureValue`.|
+|actionStatus|microsoft.graph.security.incidentTaskActionStatus|The execution status of the action. The possible values are: `notStarted`, `inProgress`, `partiallyCompleted`, `completed`, `failed`, `unknownFutureValue`. For more information, see [incidentTaskActionStatus values](#incidenttaskactionstatus-values).|
+|actionType|microsoft.graph.security.incidentTaskActionType|The remediation action to perform. The possible values are: `text`, `isolateDevice`, `stopAndQuarantineFile`, `runAntiVirusScan`, `collectInvestigationPackage`, `restrictAppExecution`, `submitIocRule`, `forceUserPasswordReset`, `disableUser`, `markUserAsCompromised`, `requireSignIn`, `hardDeleteEmail`, `softDeleteEmail`, `unIsolateDevice`, `unRestrictAppExecution`, `enableUser`, `unknownFutureValue`. For more information, see [incidentTaskActionType values](#incidenttaskactiontype-values).|
 |createdByDisplayName|String|Name of the entity that created the task. Read-only.|
 |createdDateTime|DateTimeOffset|Creation time of the task. Read-only.|
 |description|String|Description of the remediation action.|
@@ -38,8 +38,60 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |id|String|Unique GUID identifier for the task.|
 |lastModifiedByDisplayName|String|Name of the entity that last updated the task. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Last update time of the task. Read-only.|
-|source|microsoft.graph.security.incidentTaskSource|Origin of the task. The possible values are: `defenderExpertsGuidedResponse`, `defenderExpertsManagedResponse`, `unknownFutureValue`.|
-|status|microsoft.graph.security.incidentTaskStatus|Current task status. This is the only property you can update. The possible values are: `open`, `inProgress`, `completed`, `failed`, `notRelevant`, `unknownFutureValue`.|
+|source|microsoft.graph.security.incidentTaskSource|Origin of the task. The possible values are: `defenderExpertsGuidedResponse`, `defenderExpertsManagedResponse`, `unknownFutureValue`.For more information, see [incidentTaskSource values](#incidenttasksource-values).|
+|status|microsoft.graph.security.incidentTaskStatus|Current task status. This is the only property you can update. The possible values are: `open`, `inProgress`, `completed`, `failed`, `notRelevant`, `unknownFutureValue`.For more information, see [incidentTaskStatus values](#incidenttaskstatus-values).|
+
+### incidentTaskActionStatus values
+
+|Member|Description|
+|:---|:---|
+|notStarted|The action related to the incident task is not started.|
+|inProgress|The action related to the incident task is inProgress.|
+|partiallyCompleted|The action related to the incident task is partially completed.|
+|completed|The action related to the incident task is completed.|
+|failed|The action related to the incident task is failed.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+
+### incidentTaskActionType values
+
+|Member|Description|
+|:---|:---|
+|text|Action could be any free text, for example, the SOC can guide the customer to format their device.|
+|isolateDevice|Uses Microsoft Defender for Endpoint to apply full network isolation, preventing the device from connecting to any application or service.|
+|stopAndQuarantineFile|Uses Microsoft Defender for Endpoint to delete a file from the device.|
+|runAntiVirusScan|Performs Microsoft Defender Antivirus scan on the device.|
+|collectInvestigationPackage|Uses Microsoft Defender for Endpoint to collect device logs and stores it in a ZIP file.|
+|restrictAppExecution|Sets restrictions on device to allow only executables that are signed with a Microsoft-issued certificate to run.|
+|submitIocRule|Submit IOC rule.|
+|forceUserPasswordReset|Forces the user to reset their password.|
+|disableUser|Temporarily prevents a user from logging in to the on-premises.|
+|markUserAsCompromised|Sets the users risk level to "high" in Azure Active Directory.|
+|requireSignIn|Requires the user to sign in again.|
+|hardDeleteEmail|Deletes the email message.|
+|softDeleteEmail|Moves the email message to the deleted folder.|
+|unIsolateDevice|Reverts isolateDevice response action.|
+|unRestrictAppExecution|Reverts restrictAppExecution response action.|
+|enableUser|Reverts disableUser response action.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+
+### incidentTaskSource values
+
+|Member|Description|
+|:---|:---|
+|defenderExpertsGuidedResponse|The incident task was generated by Defender Experts and its pending on the customer for execution.|
+|defenderExpertsManagedResponse|The incident task was generated by Defender Experts and the execution done by Defender Experts.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+
+### incidentTaskStatus values
+
+|Member|Description|
+|:---|:---|
+|open|The incident task is marked as open.|
+|inProgress|The incident task is marked as in progress.|
+|completed|The incident task is marked as completed.|
+|failed|The incident task is marked as failed. Failure in action execution will set the incident task status to failed as well.|
+|notRelevant|The incident task is marked as not relevant.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 |Relationship|Type|Description|

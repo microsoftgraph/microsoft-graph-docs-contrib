@@ -51,16 +51,6 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. If a status code other than 2xx or 404 is returned or if a provider times out, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
 
-The API supports only these action types:
-- collectInvestigationPackage
-- isolateDevice
-- unRestrictAppExecution
-- unIsolateDevice
-- restrictAppExecution
-- runAntiVirusScan
-- stopAndQuarantineFile
-- submitIocRule
-
 ## Examples
 
 ### Request

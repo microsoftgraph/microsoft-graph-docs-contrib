@@ -15,6 +15,7 @@ Namespace: microsoft.graph.security
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of a specific incident task in Microsoft Defender XDR.
+[incidentTask](../resources/security-incidenttask.md)
 
 ## Permissions
 
@@ -101,7 +102,6 @@ Content-type: application/json
 ## Related content
 
 - Learn about [Microsoft Graph error responses](/graph/errors).
-- [incidentTask](../resources/security-incidenttask.md)
 
 <!--
 {
