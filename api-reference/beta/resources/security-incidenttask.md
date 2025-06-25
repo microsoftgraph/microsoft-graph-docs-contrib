@@ -30,7 +30,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |actionStatus|microsoft.graph.security.incidentTaskActionStatus|The execution status of the action. The possible values are: `notStarted`, `inProgress`, `partiallyCompleted`, `completed`, `failed`, `unknownFutureValue`.|
-|actionType|microsoft.graph.security.incidentTaskActionType|The remediation action to perform. When creating tasks, these types aren't supported: `markUserAsCompromised`, `requireSignIn`, `hardDeleteEmail`, `softDeleteEmail`. The possible values are: `text`, `isolateDevice`, `stopAndQuarantineFile`, `runAntiVirusScan`, `collectInvestigationPackage`, `restrictAppExecution`, `submitIocRule`, `forceUserPasswordReset`, `disableUser`, `markUserAsCompromised`, `requireSignIn`, `hardDeleteEmail`, `softDeleteEmail`, `unIsolateDevice`, `unRestrictAppExecution`, `enableUser`, `unknownFutureValue`.|
+|actionType|microsoft.graph.security.incidentTaskActionType|The remediation action to perform. The possible values are: `text`, `isolateDevice`, `stopAndQuarantineFile`, `runAntiVirusScan`, `collectInvestigationPackage`, `restrictAppExecution`, `submitIocRule`, `forceUserPasswordReset`, `disableUser`, `markUserAsCompromised`, `requireSignIn`, `hardDeleteEmail`, `softDeleteEmail`, `unIsolateDevice`, `unRestrictAppExecution`, `enableUser`, `unknownFutureValue`.|
 |createdByDisplayName|String|Name of the entity that created the task. Read-only.|
 |createdDateTime|DateTimeOffset|Creation time of the task. Read-only.|
 |description|String|Description of the remediation action.|
