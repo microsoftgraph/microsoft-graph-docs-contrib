@@ -29,6 +29,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|responseAction|microsoft.graph.security.incidentTaskResponseAction|The reponse action see [incidentTaskResponseAction](../resources/security-incidenttaskresponseaction.md#incidenttaskresponseaction-resource-type).|
 |actionStatus|microsoft.graph.security.incidentTaskActionStatus|The execution status of the action. The possible values are: `notStarted`, `inProgress`, `partiallyCompleted`, `completed`, `failed`, `unknownFutureValue`. For more information, see [incidentTaskActionStatus values](#incidenttaskactionstatus-values).|
 |actionType|microsoft.graph.security.incidentTaskActionType|The remediation action to perform. The possible values are: `text`, `isolateDevice`, `stopAndQuarantineFile`, `runAntiVirusScan`, `collectInvestigationPackage`, `restrictAppExecution`, `submitIocRule`, `forceUserPasswordReset`, `disableUser`, `markUserAsCompromised`, `requireSignIn`, `hardDeleteEmail`, `softDeleteEmail`, `unIsolateDevice`, `unRestrictAppExecution`, `enableUser`, `unknownFutureValue`. For more information, see [incidentTaskActionType values](#incidenttaskactiontype-values).|
 |createdByDisplayName|String|Name of the entity that created the task. Read-only.|
