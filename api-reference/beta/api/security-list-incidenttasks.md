@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, se
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/incidentTasks
+GET /security/incidentTasks
 ```
 
 ## Optional query parameters
