@@ -42,13 +42,13 @@ Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resourc
 
 ## June 2025: New in preview only
 
+### Backup storage
+
+[Get](/graph/api/emailnotificationssetting-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/emailnotificationssetting-update?view=graph-rest-beta&preserve-view=true) email notification settings in a tenant.
+
 ## Education
 
 [Get](/graph/api/reportsroot-list-speakerassignmentsubmissions?view=graph-rest-beta&preserve-view=true) a list of speaker assignments that were submitted by a student.
-
-### Backup storage
-
-[Get](/graph/api/emailnotificationssetting-get) or [update](/graph/api/emailnotificationssetting-update) email notification settings in a tenant.
 
 ### Security | eDiscovery
 
