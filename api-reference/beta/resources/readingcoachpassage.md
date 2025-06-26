@@ -28,7 +28,7 @@ Represents a Reading Coach passage that was practiced by a student.
 |isReadingCompleted|Boolean|Indicates if the reading passage was completed.|
 |languageTag|String|The language of the reading passage.|
 |practiceWords|String collection|The number of times the student was flagged by Speaker Coach for using a filler word.|
-|storyType|storyType|The story type for the reading passage.|
+|storyType|readingCoachStoryType|The story type for the reading passage. The valid values are `aiGenerated`, `readWorks`, and `userProvided`.|
 |studentId|String|ID of the student that practiced the reading passage.|
 |timeSpentReadingInSeconds|Double|The time the student spent reading in seconds.|
 |wordsAccuracyPercentage|Double|The percentage of words that the student read correctly.|

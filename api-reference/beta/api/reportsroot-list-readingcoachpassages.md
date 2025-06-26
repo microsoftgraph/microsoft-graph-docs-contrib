@@ -1,6 +1,6 @@
 ---
 title: "List readingCoachPassages"
-description: "Get a list of reading coach passages that were completed by a student."
+description: "Get a list of Reading Coach passages that were practiced by a student."
 author: "pateljay-37"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [Reading Coach passages](../resources/readingcoachpassage.md) that were completed by a student.
+Get a list of [Reading Coach passages](../resources/readingcoachpassage.md) that were practiced by a student.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [reading coach passages](../resources/readingcoachpassage.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [Reading Coach passage](../resources/readingcoachpassage.md) objects in the response body.
 
 ## Examples
 
@@ -89,68 +89,35 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/readingCoachPassages",
   "value": [
     {
-      "assignmentId": "f2a0074a-eca7-4563-9de2-17fa0a274ed1",
-      "classId": "36957e6c-2716-4794-b88b-5983e2502d7d",
-      "submissionId": "3d292db5-189e-468b-8ca1-23ec6f74a8c2",
-      "studentId": "6ade364a-ea37-4a58-82df-1814fb617618",
-      "submissionDateTime": "2025-05-28T14:51:31.0663974Z",
-      "lengthOfSubmissionInSeconds": 310.25,
-      "wordsSpokenCount": 580,
-      "monotoneOccurrencesCount": 5,
-      "averageWordsPerMinutePace": 115,
-      "fillerWordsOccurrencesCount": 9,
-      "topFillerWords": [
-        "so",
-        "umm",
-        "kind of"
+      "createdAtUtcDateTime": "2025-06-25T14:51:31.0663974Z",
+      "studentId": "27a9716d-05aa-4aaa-ae18-9fc10318a03d",
+      "practiceWords": [
+        "science",
+        "experiment",
+        "laboratory",
+        "hypothesis",
+        "observation"
       ],
-      "topMispronouncedWords": [
-        "prerequisites",
-        "anonymous",
-        "miscellaneous"
-      ],
-      "nonInclusiveLanguageOccurrencesCount": 1,
-      "topNonInclusiveWordsAndPhrases": [
-        "you guys"
-      ],
-      "repetitiveLanguageOccurrencesCount": 4,
-      "topRepetitiveWordsAndPhrases": [
-        "just",
-        "right",
-        "okay"
-      ],
-      "lostEyeContactOccurrencesCount": 3,
-      "incorrectCameraDistanceOccurrencesCount": 0,
-      "obstructedViewOccurrencesCount": 0
+      "wordsPerMinute": 55.5,
+      "wordsAccuracyPercentage": 92.0,
+      "timeSpentReadingInSeconds": 165.75,
+      "languageTag": "en-US",
+      "storyType": "userProvided",
+      "isReadingCompleted" = true
     },
     {
-      "assignmentId": "1d468582-009d-42cb-9e32-172806ea5349",
-      "classId": "4e9fef60-58a3-423d-9f38-fc0425bb91ca",
-      "submissionId": "7058d2c1-9e3e-4dae-9932-970b8b45e87b",
-      "studentId": "28e10270-0566-46ef-80ab-435608609047",
-      "submissionDateTime": "2025-05-28T16:11:31.066402Z",
-      "lengthOfSubmissionInSeconds": 198.5,
-      "wordsSpokenCount": 380,
-      "monotoneOccurrencesCount": 3,
-      "averageWordsPerMinutePace": 135,
-      "fillerWordsOccurrencesCount": 7,
-      "topFillerWords": [
-        "um",
-        "actually"
+      "createdAtUtcDateTime": "2025-06-25T12:51:31.0663974Z",
+      "studentId": "27a9716d-05aa-4aaa-ae18-9fc10318a03d",
+      "practiceWords": [
+        "tortoise",
+        "experiment"
       ],
-      "topMispronouncedWords": [
-        "specific",
-        "particularly"
-      ],
-      "nonInclusiveLanguageOccurrencesCount": 0,
-      "topNonInclusiveWordsAndPhrases": [],
-      "repetitiveLanguageOccurrencesCount": 3,
-      "topRepetitiveWordsAndPhrases": [
-        "just"
-      ],
-      "lostEyeContactOccurrencesCount": null,
-      "incorrectCameraDistanceOccurrencesCount": null,
-      "obstructedViewOccurrencesCount": null
+      "wordsPerMinute": 52.5,
+      "wordsAccuracyPercentage": 94.5,
+      "timeSpentReadingInSeconds": 180.5,
+      "languageTag": "en-US",
+      "storyType": "aiGenerated",
+      "isReadingCompleted" = true
     }
   ]
 }
@@ -170,7 +137,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/reports/readingCoachPassages?$filter=submissionDateTime gt 2025-05-28T00:00:00Z and submissionDateTime lt 2025-05-29T00:00:00Z
+GET https://graph.microsoft.com/beta/education/reports/readingCoachPassages?$filter=createdAtUtcDateTime gt 2025-06-22T00:00:00Z and createdAtUtcDateTime lt 2025-06-23T00:00:00Z
 ```
 
 #### Response
@@ -192,115 +159,35 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/readingCoachPassages",
   "value": [
     {
-      "assignmentId": "3221a41a-6cdc-4deb-ad50-27a7e179ec27",
-      "classId": "4e9e40aa-b9ac-4af6-8a1d-4c44c27080da",
-      "submissionId": "3d292db5-189e-468b-8ca1-23ec6f74a8c2",
-      "studentId": "6ade364a-ea37-4a58-82df-1814fb617618",
-      "submissionDateTime": "2025-05-28T01:27:42.5458886Z",
-      "lengthOfSubmissionInSeconds": 185.5,
-      "wordsSpokenCount": 350,
-      "monotoneOccurrencesCount": 8,
-      "averageWordsPerMinutePace": 120,
-      "fillerWordsOccurrencesCount": 14,
-      "topFillerWords": [
-        "um",
-        "like",
-        "you know",
-        "actually"
-      ],
-      "topMispronouncedWords": [
-        "particularly",
-        "subsequently",
-        "statistics"
-      ],
-      "nonInclusiveLanguageOccurrencesCount": 2,
-      "topNonInclusiveWordsAndPhrases": [
-        "you guys",
-        "chairman"
-      ],
-      "repetitiveLanguageOccurrencesCount": 6,
-      "topRepetitiveWordsAndPhrases": [
-        "basically",
-        "essentially",
-        "so"
-      ],
-      "lostEyeContactOccurrencesCount": 5,
-      "incorrectCameraDistanceOccurrencesCount": null,
-      "obstructedViewOccurrencesCount": 0
-    },
-    {
-      "assignmentId": "f88c2e12-2277-4e5a-bc19-207278e820c5",
-      "classId": "39aeb453-fe67-4d19-95b9-e588095cb13e",
-      "submissionId": "c0d9706a-23a8-4d27-ba9e-5c97a4cede34",
+      "createdAtUtcDateTime": "2025-06-22T14:51:31.0663974Z",
       "studentId": "27a9716d-05aa-4aaa-ae18-9fc10318a03d",
-      "submissionDateTime": "2025-05-28T16:27:42.5458933Z",
-      "lengthOfSubmissionInSeconds": 240.75,
-      "wordsSpokenCount": 420,
-      "monotoneOccurrencesCount": null,
-      "averageWordsPerMinutePace": 105,
-      "fillerWordsOccurrencesCount": 18,
-      "topFillerWords": [
-        "um",
-        "uh",
-        "like",
-        "sort of"
+      "practiceWords": [
+        "science",
+        "experiment",
+        "laboratory",
+        "hypothesis",
+        "observation"
       ],
-      "topMispronouncedWords": [
-        "necessarily",
-        "specifically",
-        "phenomenon"
-      ],
-      "nonInclusiveLanguageOccurrencesCount": 0,
-      "topNonInclusiveWordsAndPhrases": [],
-      "repetitiveLanguageOccurrencesCount": 9,
-      "topRepetitiveWordsAndPhrases": [
-        "literally",
-        "actually",
-        "basically"
-      ],
-      "lostEyeContactOccurrencesCount": 7,
-      "incorrectCameraDistanceOccurrencesCount": 2,
-      "obstructedViewOccurrencesCount": 1
+      "wordsPerMinute": 55.5,
+      "wordsAccuracyPercentage": 92.0,
+      "timeSpentReadingInSeconds": 165.75,
+      "languageTag": "en-US",
+      "storyType": "userProvided",
+      "isReadingCompleted" = true
     },
     {
-      "assignmentId": "3ed5169c-ea75-4a3f-ae4e-6abe401064b0",
-      "classId": "00bc1413-d329-4a52-a92a-51971c0a3cf3",
-      "submissionId": "6e43da78-9d50-4fa7-b707-8fbd05c04e67",
-      "studentId": "02bcca3c-70cf-437b-813d-dd2bc32bef02",
-      "submissionDateTime": "2025-05-28T18:27:42.5458952Z",
-      "lengthOfSubmissionInSeconds": 275.85,
-      "wordsSpokenCount": 530,
-      "monotoneOccurrencesCount": 15,
-      "averageWordsPerMinutePace": 125,
-      "fillerWordsOccurrencesCount": 22,
-      "topFillerWords": [
-        "like",
-        "you know",
-        "uh",
-        "um",
-        "I mean"
+      "createdAtUtcDateTime": "2025-06-22T12:51:31.0663974Z",
+      "studentId": "27a9716d-05aa-4aaa-ae18-9fc10318a03d",
+      "practiceWords": [
+        "tortoise",
+        "experiment"
       ],
-      "topMispronouncedWords": [
-        "entrepreneur",
-        "hierarchy",
-        "infrastructure"
-      ],
-      "nonInclusiveLanguageOccurrencesCount": 3,
-      "topNonInclusiveWordsAndPhrases": [
-        "mankind",
-        "guys",
-        "manpower"
-      ],
-      "repetitiveLanguageOccurrencesCount": 11,
-      "topRepetitiveWordsAndPhrases": [
-        "basically",
-        "sort of",
-        "kind of",
-        "so"
-      ],
-      "lostEyeContactOccurrencesCount": 8,
-      "incorrectCameraDistanceOccurrencesCount": 3,
-      "obstructedViewOccurrencesCount": 2
+      "wordsPerMinute": 52.5,
+      "wordsAccuracyPercentage": 94.5,
+      "timeSpentReadingInSeconds": 180.5,
+      "languageTag": "en-US",
+      "storyType": "aiGenerated",
+      "isReadingCompleted" = true
     }
   ]
 }

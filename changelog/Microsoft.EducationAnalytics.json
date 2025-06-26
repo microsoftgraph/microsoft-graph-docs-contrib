@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "9f6b31a2-8e3b-495a-b9ec-d2c10271295e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "readingCoachStoryType",
+          "ChangeType": "Addition",
+          "Description": "Added the **readingCoachStoryType** enumeration type.",
+          "Target": "readingCoachStoryType"
+        },
+        {
+          "Id": "9f6b31a2-8e3b-495a-b9ec-d2c10271295e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "readingCoachPassage",
+          "ChangeType": "Addition",
+          "Description": "Added the [readingCoachPassage](https://learn.microsoft.com/en-us/graph/api/resources/readingCoachPassage?view=graph-rest-beta) resource.",
+          "Target": "readingCoachPassage"
+        },
+        {
+          "Id": "9f6b31a2-8e3b-495a-b9ec-d2c10271295e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "readingCoachPassages",
+          "ChangeType": "Addition",
+          "Description": "Added the **readingCoachPassages** relationship to the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-beta) resource.",
+          "Target": "reportsRoot"
+        }
+      ],
+      "Id": "9f6b31a2-8e3b-495a-b9ec-d2c10271295e",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-26T17:01:30.1461295Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0e199dee-0ffd-4682-9496-4402772111cf",
           "ApiChange": "Relationship",
           "ChangedApiName": "speakerAssignmentSubmissions",
