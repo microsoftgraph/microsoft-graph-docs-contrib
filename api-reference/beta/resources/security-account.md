@@ -1,5 +1,5 @@
 ---
-title: "account of the identity resource type"
+title: "account resource type (details of an identity account)"
 description: "Provides details of the identity's account."
 author: "SamuelBenichou"
 ms.date: 06/22/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# Account resource type
+# account resource type (details of an identity account)
 
 Namespace: microsoft.graph.security
 

@@ -1,5 +1,5 @@
 ---
-title: "user identity resource type"
+title: "user resource type (account in Microsoft Defender for Identity)"
 description: "User fields"
 author: "SamuelBenichou"
 ms.date: 06/22/2025
@@ -8,13 +8,13 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# User resource type
+# user resource type (account in Microsoft Defender for Identity)
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the user.
+Represents detaiuls of a user identity account.
 
 Inherits from [microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md).
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an identity security account object. This allows retrieving information about available identity accounts.
+Read the properties and relationships of an [identity security account](../resources/security-identityaccounts.md) object. This allows retrieving information about available identity accounts.
 
 ## Permissions
 
@@ -27,9 +27,7 @@ One of the following permissions is required to call this API. Choose the permis
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-identityaccounts-get-permissions.md)]
 
-[!INCLUDE [rbac-security-identity-accounts-apis-write](../includes/rbac-for-apis/rbac-security-identity-accounts-apis-write.md)]
-
-[!INCLUDE [rbac-security-identity-accounts-apis-read](../includes/rbac-for-apis/rbac-security-identity-accounts-apis-read.md)]
+[!INCLUDE [rbac-security-identity-accounts-apis](../includes/rbac-for-apis/rbac-security-identity-accounts-apis.md)]
 
 ## HTTP request
 
@@ -43,7 +41,7 @@ GET /security/identities/identityAccounts/{identityAccountsId}
 
 ## Optional query parameters
 
-This method supports the '$select' OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the '$select' OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -59,9 +57,11 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md) object in the response body.
 
-## Example 1
+## Examples
 
-### Request
+### Example 1: Get details of an identity account
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -73,7 +73,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/security/identities/identityAccounts/0104216-0539-4838-88b1-55baafdc296b
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -115,9 +115,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2
+### Example 2: Get the account details of an identity account
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -129,7 +129,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/security/identities/identityAccounts/0104216-0539-4838-88b1-55baafdc296b?$select=accounts
 ```
 
-### Response
+#### Response
 
 The following example shows the response of the identityAccount using the select param.
 >**Note:** The response object shown here might be shortened for readability.

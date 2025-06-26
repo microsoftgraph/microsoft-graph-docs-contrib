@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the invoke action result after disabling an account.
+Represents the invoke action result after [disabling an identity account](../api/security-identityaccounts-invokeaction.md).
 
 ## Properties
 |Property| Type                                                                                  | Description                                                                                                                                                                             |

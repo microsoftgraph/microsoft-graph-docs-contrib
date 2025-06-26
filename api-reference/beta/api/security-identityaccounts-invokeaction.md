@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform actions such as revoking accounts and forcing password reset for identity accounts that are flagged in Microsoft Defender for Identity [alerts](../resources/security-alert.md). This action allows reading and performing identity security actions on behalf of the signed-in identity.
+Perform actions such as revoking accounts and forcing password reset for [identity accounts](../resources/security-identityaccounts.md) that are flagged in Microsoft Defender for Identity [alerts](../resources/security-alert.md). This action allows reading and performing identity security actions on behalf of the signed-in identity.
 
 ## Permissions
 
@@ -27,9 +27,7 @@ One of the following permissions is required to call this API. Choose the permis
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-identityaccounts-invokeaction-permissions.md)]
 
-[!INCLUDE [rbac-security-identity-accounts-apis-write](../includes/rbac-for-apis/rbac-security-identity-accounts-apis-write.md)]
-
-[!INCLUDE [rbac-security-identity-accounts-apis-read](../includes/rbac-for-apis/rbac-security-identity-accounts-apis-read.md)]
+[!INCLUDE [rbac-security-identity-accounts-apis](../includes/rbac-for-apis/rbac-security-identity-accounts-apis.md)]
 
 ## HTTP request
 

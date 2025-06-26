@@ -27,9 +27,7 @@ One of the following permissions is required to call this API. Choose the permis
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-identitycontainer-list-identityaccounts-permissions.md)]
 
-[!INCLUDE [rbac-security-identity-accounts-apis-write](../includes/rbac-for-apis/rbac-security-identity-accounts-apis-write.md)]
-
-[!INCLUDE [rbac-security-identity-accounts-apis-read](../includes/rbac-for-apis/rbac-security-identity-accounts-apis-read.md)]
+[!INCLUDE [rbac-security-identity-accounts-apis](../includes/rbac-for-apis/rbac-security-identity-accounts-apis.md)]
 
 ## HTTP request
 
@@ -43,7 +41,7 @@ GET /security/identities/identityAccounts
 
 ## Optional query parameters
 
-This method supports the `$filter` OData query parameters to help customize the response. For more information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$select` OData query parameters to help customize the response. For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -59,9 +57,11 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [identityAccounts](../resources/security-identityaccounts.md) objects in the response body.
 
-## Example 1
+## Examples
 
-### Request
+### Example 1: Retrieve details of identity accounts
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -73,7 +73,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/security/identities/identityAccounts
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -131,9 +131,9 @@ Content-Type: application/json
 }
 ```
 
-## Example 2
+### Example 2: Retrieve details of identity accounts that match a security identifier
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -145,7 +145,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/security/identities/identityAccounts?$filter=onPremisesSecurityIdentifier eq 'S-1-5-21-989687458-3461180213-172365591-281652'
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
