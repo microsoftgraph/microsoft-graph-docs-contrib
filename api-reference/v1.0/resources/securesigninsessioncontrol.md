@@ -12,8 +12,6 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Session control to require sign in sessions to be bound to a device. Inherits from [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).
 
 ## Properties
