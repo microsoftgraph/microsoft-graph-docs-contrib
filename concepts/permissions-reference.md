@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 06/16/2025
+ms.date: 06/23/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -2504,8 +2504,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | ad248c30-1919-40c8-b3d2-304481894e88 | - |
-| DisplayText | Read all tenant reading and speaker assignments submissions data | - |
-| Description | Allows the app to read all tenant users reading and speaker assignments submissions data without a signed-in user. | - |
+| DisplayText | Read all tenant reading assignments submissions data | - |
+| Description | Allows the app to read all tenant users reading assignments submissions data without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -2515,8 +2515,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 040330d7-be7e-4130-b349-a6eb3a56e2f8 | - |
-| DisplayText | Read all tenant reading and speaker assignments submissions data | - |
-| Description | Allows the app to read all tenant users reading and speaker assignments submissions data (excludes student-identifying information) without a signed-in user. | - |
+| DisplayText | Read all tenant reading assignments submissions data | - |
+| Description | Allows the app to read all tenant users reading assignments submissions data (excludes student-identifying information) without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -4765,6 +4765,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | Yes |
 
 ![personal Microsoft accounts][MSA] The *Policy.Read.All* delegated permission is available for consent in personal Microsoft accounts.
+
+---
+
+### Policy.Read.AuthenticationMethod
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 8e3bc81b-d2f3-4b7b-838c-32c88218d2f0 | a6ff13ac-1851-4993-8ca9-a671d70de2d5 |
+| DisplayText | Read authentication method policies | Read authentication method policies |
+| Description | Allows the app to read all authentication method policies for the tenant, without a signed-in user.  | Allows the app to read the authentication method policies, on behalf of the signed-in user.  |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
