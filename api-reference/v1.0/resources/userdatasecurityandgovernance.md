@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Provides access to data security and governance functionalities specifically scoped to the context of a single user.
 
+Inherits from [dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -22,7 +24,9 @@ Provides access to data security and governance functionalities specifically sco
 
 ## Properties
 
-None specific to this derived type.
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|The unique ID of the data security and governance stream. Inherited from [entity](../resources/datasecurityandgovernance.md).|
 
 ## Relationships
 

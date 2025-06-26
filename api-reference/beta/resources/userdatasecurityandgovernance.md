@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Provides access to data security and governance functionalities specifically scoped to the context of a single user.
 
+Inherits from [dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).
+
 ## Methods
 
 | Method       | Return Type | Description |

@@ -1,6 +1,6 @@
 ---
 title: "contentActivity resource type"
-description: "Represents audit log data from content processing, in a structured way to ensure compliance, track user actions, and detect unusual behavior."
+description: "Represents audit data from content processing for Microsoft Purview to ensure compliance, track user actions, and detect unusual behavior."
 author: "kylemar"
 ms.date: 04/03/2025
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents audit log data from content processing in a structured way to ensure compliance, track user actions, and detect unusual behavior.
+Represents audit data from content processing for Microsoft Purview to ensure compliance, track user actions, and detect unusual behavior.
 
 ## Methods
 

@@ -1,6 +1,6 @@
 ---
 title: "userProtectionScopeContainer resource type"
-description: "Container for user-specific protection scope computation actions."
+description: "Container for user-specific  Microsoft Purview protection scope computation actions."
 author: "kylemar"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Container for user-specific protection scope computation actions.
+Container for user-specific  Microsoft Purview protection scope computation actions.
 
 ## Methods
 

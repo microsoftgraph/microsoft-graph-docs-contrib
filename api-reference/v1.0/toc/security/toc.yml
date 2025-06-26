@@ -208,8 +208,6 @@ items:
       href: ../../resources/activitymetadata.md
     - name: Ai interaction plugin
       href: ../../resources/aiinteractionplugin.md
-    - name: Auto labeling
-      href: ../../resources/autolabeling.md
     - name: Binary content
       href: ../../resources/binarycontent.md
     - name: Classifcation error base
@@ -232,12 +230,8 @@ items:
       href: ../../resources/groupscope.md
     - name: Integrated application metadata
       href: ../../resources/integratedapplicationmetadata.md
-    - name: Label action base
-      href: ../../resources/labelactionbase.md
     - name: Label content right
       href: ../../resources/labelcontentright.md
-    - name: Label policy
-      href: ../../resources/labelpolicy.md
     - name: Operating system specifications
       href: ../../resources/operatingsystemspecifications.md
     - name: Policy binding

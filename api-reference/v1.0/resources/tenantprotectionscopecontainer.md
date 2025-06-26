@@ -1,6 +1,6 @@
 ---
 title: "tenantProtectionScopeContainer resource type"
-description: "Container for tenant-wide protection scope computation actions."
+description: "Container for tenant-wide Microsoft Purview protection scope computation actions."
 author: "kylemar"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Container for tenant-wide protection scope computation actions.
+Container for tenant-wide  Microsoft Purview protection scope computation actions.
 
 ## Methods
 
