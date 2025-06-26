@@ -121,6 +121,7 @@ Content-type: application/json
     "deletedDateTime": null,
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
+    "isMemberManagementRestricted": false,
     "visibility": null,
     "membershipRule": "(user.country -eq \"United States\")",
     "membershipType": "Dynamic",
