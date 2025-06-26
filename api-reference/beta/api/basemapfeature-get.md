@@ -1,6 +1,6 @@
 ---
 title: "Get baseMapFeature"
-description: "Read the properties and relationships of a baseMapFeature object."
+description: "Get the map of a baseMapFeature object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a baseMapFeature object.
+Get the map of a [baseMapFeature](../resources/basemapfeature.md) object.
 
 ## Permissions
 

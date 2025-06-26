@@ -1,6 +1,6 @@
 ---
 title: "Update unitMap"
-description: "Update the properties of an unitMap object."
+description: "Update the properties of an unitMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an unitMap object.
+Update the properties of an [unitMap](../resources/unitmap.md) object in IMDF format.
 
 ## Permissions
 
@@ -34,8 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /building/map/levels/{levelMapId}/units/{unitMapId}
+PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/units/{unitImdfID}
 ```
+
+{buildingPlaceId} – **id** of a building with which this [unitmap](../resources/unitmap.md) is associated
+
+{levelImdfId} - **id** of the level in the IMDF file
+
+{unitImdfID} - **id** of the unit in the IMDF file 
 
 ## Request headers
 
@@ -49,11 +55,10 @@ PATCH /building/map/levels/{levelMapId}/units/{unitMapId}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|**TODO: Add Description** Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **unitMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|Identifier of the [place](./place.md) (such as a [room](./room.md)) to which this **unitMap** belongs. Optional.|
 
 
 
@@ -72,13 +77,12 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/building/map/levels/{levelMapId}/units/{unitMapId}
+PATCH places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map/levels/81e9fd76-b34a-45f6-a6dc-1f172f01e849/units/005eb3b8-c95d-4d35-a8a0-22d3cb4d6542
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.unitMap",
-  "properties": "String",
-  "placeId": "String"
+  "placeId": null,
+  "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6542\",\"type\":\"Feature\",\"feature_type\":\"unit\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test room from Test Floor 1 (120.3)\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"category\":\"room\"}}"
 }
 ```
 
@@ -97,10 +101,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.unitMap",
-  "id": "8b123db9-d62c-bfeb-d1d6-495052bba0cb",
-  "properties": "String",
-  "placeId": "String"
+  "placeId": null,
+  "id": "005eb3b8-c95d-4d35-a8a0-22d3cb4d6542",
+  "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6542\",\"type\":\"Feature\",\"feature_type\":\"unit\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test room from Test Floor 1 (120.3)\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"category\":\"room\"}}"
 }
 ```
 

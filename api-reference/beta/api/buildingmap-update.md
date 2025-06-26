@@ -1,6 +1,6 @@
 ---
 title: "Update buildingMap"
-description: "Update the properties of a buildingMap object."
+description: "Update the properties of a buildingMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a buildingMap object.
+Update the properties of a [buildingMap](../resources/buildingmap.md) object in IMDF format.
 
 ## Permissions
 
@@ -49,11 +49,10 @@ PATCH /building/map
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|**TODO: Add Description** Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **buildingMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|Identifier for the [building](./building.md) to which this **buildingMap** belongs. Optional.|
 
 
 

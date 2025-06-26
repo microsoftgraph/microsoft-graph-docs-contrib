@@ -36,7 +36,7 @@ Inherits from [baseMapFeature](./basemapfeature.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the **buildingMapFeature** object. Inherited from [entity](./entity.md). |
-|placeId|String|Unique identifier for the [building](./building.md) to which this **buildingMap** belongs. |
+|placeId|String|Identifier for the [building](./building.md) to which this **buildingMap** belongs. |
 |properties|String|Concatenated key-value pair of all properties of a geojson file for this **buildingMap**. Inherited from [baseMapFeature](./basemapfeature.md).|
 
 ## Relationships

@@ -1,6 +1,6 @@
 ---
 title: "Update baseMapFeature"
-description: "Update the properties of a baseMapFeature object."
+description: "Update the properties of a baseMapFeature object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a baseMapFeature object.
+Update the properties of a [baseMapFeature](../resources/basemapfeature.md) object in IMDF format.
 
 ## Permissions
 
@@ -49,10 +49,9 @@ PATCH /baseMapFeature
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|**TODO: Add Description** Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **baseMapFeature**. Optional.|
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Update footprintMap"
-description: "Update the properties of a footprintMap object."
+description: "Update the properties of a footprintMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a footprintMap object.
+Update the properties of a [footprintMap](../resources/footprintmap.md) object in IMDF format.
 
 ## Permissions
 
@@ -49,10 +49,9 @@ PATCH /building/map/footprints/{footprintMapId}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **footprintMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Create fixtureMap"
-description: "Create a new fixtureMap object."
+description: "Create a new fixtureMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new fixtureMap object.
+Create a new [fixtureMap](../resources/fixturemap.md) object in IMDF format.
 
 ## Permissions
 
@@ -34,8 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /building/map/levels/{levelMapId}/fixtures
+PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixture/{fixtureImdfID}
 ```
+
+{buildingPlaceId} – **id** of a building with which this [levelmap](../resources/levelmap.md) is associated.
+
+{levelImdfId}- **id** of the level in the IMDF file.
+
+{fixtureImdfID}- **id** of the fixture in the IMDF file.
 
 ## Request headers
 
@@ -50,11 +56,10 @@ In the request body, supply a JSON representation of the [fixtureMap](../resourc
 
 You can specify the following properties when creating a **fixtureMap**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|**TODO: Add Description** Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **levelMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|Identifier for the [floor](./floor.md) to which this **levelMap** belongs. Optional.|
 
 
 

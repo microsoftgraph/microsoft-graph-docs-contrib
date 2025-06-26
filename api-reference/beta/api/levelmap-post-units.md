@@ -1,6 +1,6 @@
 ---
 title: "Create unitMap"
-description: "Create a new unitMap object."
+description: "Create a new unitMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new unitMap object.
+Create a new [unitMap](../resources/unitmap.md) object in IMDF format.
 
 ## Permissions
 
@@ -34,8 +34,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /building/map/levels/{levelMapId}/units
+PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/units/{unitImdfID}
 ```
+
+{buildingPlaceId} – **id** of a building with which this [levelmap](../resources/levelmap.md) is associated.
+
+{levelImdfId}- **id** of the level in the IMDF file.
+
+{unitImdfID}- **id** of the unit in the IMDF file. 
+
 
 ## Request headers
 
@@ -48,13 +55,12 @@ POST /building/map/levels/{levelMapId}/units
 
 In the request body, supply a JSON representation of the [unitMap](../resources/unitmap.md) object.
 
-You can specify the following properties when creating an **unitMap**.
+You can specify the following properties when creating a **unitMap**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|**TODO: Add Description** Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **levelMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|Identifier of the [place](./place.md) (such as a [room](./room.md)) to which this **unitMap** belongs. Optional.|
 
 
 
@@ -73,16 +79,14 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/building/map/levels/{levelMapId}/units
+PATCH places/151e85a7-c0b8-4519-997e-1a0858255704/microsoft.graph.building/map/levels/81e9fd76-b34a-45f6-a6dc-1f172f01e849/units/005eb3b8-c95d-4d35-a8a0-22d3cb4d6996
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.unitMap",
-  "properties": "String",
-  "placeId": "String"
+  "placeId": null,
+  "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6996\",\"type\":\"Feature\",\"feature_type\":\"unit\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Create room111111111111\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"category\":\"room\"}}"
 }
 ```
-
 
 ### Response
 
@@ -99,10 +103,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.unitMap",
-  "id": "8b123db9-d62c-bfeb-d1d6-495052bba0cb",
-  "properties": "String",
-  "placeId": "String"
+  "placeId": null,
+  "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6996\",\"type\":\"Feature\",\"feature_type\":\"unit\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Create room111111111111\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"category\":\"room\"}}"
 }
 ```
 

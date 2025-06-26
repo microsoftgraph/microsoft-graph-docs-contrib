@@ -1,6 +1,6 @@
 ---
 title: "Update levelMap"
-description: "Update the properties of a levelMap object."
+description: "Update the properties of a levelMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a levelMap object.
+Update the properties of a [levelMap](../resources/levelmap.md) object in IMDF format.
 
 ## Permissions
 
@@ -49,11 +49,10 @@ PATCH /building/map/levels/{levelMapId}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|**TODO: Add Description** Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **levelMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|Identifier for the [floor](./floor.md) to which this **levelMap** belongs. Optional.|
 
 
 

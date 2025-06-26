@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a buildingMap object.
+Delete a [buildingMap](../resources/buildingmap.md) object.
 
 ## Permissions
 
@@ -34,8 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /building/map/$ref
+DELETE places/{buildingPlaceId}/microsoft.graph.building/map
 ```
+
+{buildingPlaceId} - **id** of the building with which this map is associated
 
 ## Request headers
 
@@ -62,9 +64,8 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/building/map
+DELETE places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map
 ```
-
 
 ### Response
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a footprintMap object.
+Delete a [footprintMap](../resources/footprintmap.md) object.
 
 ## Permissions
 

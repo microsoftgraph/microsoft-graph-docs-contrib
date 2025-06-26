@@ -1,6 +1,6 @@
 ---
 title: "Get buildingMap"
-description: "Read the properties and relationships of a buildingMap object."
+description: "Get a buildingMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a buildingMap object.
+Get a [buildingMap](../resources/buildingmap.md) object in IDMF format.
 
 ## Permissions
 
@@ -34,8 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /building/map
+GET places/{buildingPlaceId}/microsoft.graph.building/map
 ```
+
+{buildingPlaceId} - **id** of the building with which this map is associated
 
 ## Optional query parameters
 
@@ -66,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/building/map
+GET places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map
 ```
 
 
@@ -84,13 +86,6 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.buildingMap",
-    "id": "fdd0957f-e940-0039-ab5c-e2cfbabf08ba",
-    "properties": "String",
-    "placeId": "String"
-  }
-}
+{ "@odata.context": "https://localhost:444/PlacesAnalyticsService/api/v1/$metadata#buildingMaps/$entity", "placeId": "30ca79af-ecb7-46c2-a14b-afe264a91543", "id": "26f04b4f-9ae2-45e3-99d1-393c66d58eb4", "properties": "{"id":"26f04b4f-9ae2-45e3-99d1-393c66d58eb4","type":"Feature","feature_type":"building","geometry":null,"properties":{"name":{"en":"San Jose McEnery Convention Center"},"address_id":"e105efb7-b0d1-4144-8b8e-72eadf95724f","display_point":{"type":"Point","coordinates":[-121.889164,37.32925]}"}}" }
 ```
 

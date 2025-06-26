@@ -1,6 +1,6 @@
 ---
 title: "Update sectionMap"
-description: "Update the properties of a sectionMap object."
+description: "Update the properties of a sectionMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a sectionMap object.
+Update the properties of a [sectionMap](../resources/sectionmap.md) object in IMDF format.
 
 ## Permissions
 
@@ -34,8 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /building/map/levels/{levelMapId}/sections/{sectionMapId}
+PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/section/{sectionImdfID}
 ```
+
+{buildingPlaceId} – **id** of a building with which this [sectionmap](../resources/sectionmap.md) is associated
+
+{levelImdfId} - **id** of the level in the IMDF file
+
+{sectionImdfID} - **id** of the section in the IMDF file 
 
 ## Request headers
 
@@ -49,11 +55,10 @@ PATCH /building/map/levels/{levelMapId}/sections/{sectionMapId}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|**TODO: Add Description** Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **sectionMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|Identifier for the [section](./section.md) to which this **sectionMap** belongs. Optional.|
 
 
 

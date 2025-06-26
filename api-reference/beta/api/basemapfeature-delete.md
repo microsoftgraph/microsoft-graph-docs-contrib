@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a baseMapFeature object.
+Delete a [baseMapFeature](../resources/basemapfeature.md) object.
 
 ## Permissions
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a levelMap object.
+Delete a [levelMap](../resources/levelmap.md) object.
 
 ## Permissions
 

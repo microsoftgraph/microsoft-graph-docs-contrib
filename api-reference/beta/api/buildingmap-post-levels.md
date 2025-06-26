@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new levelMap object.
+Create a new [levelMap](../resources/levelmap.md) object.
 
 ## Permissions
 
@@ -50,11 +50,10 @@ In the request body, supply a JSON representation of the [levelMap](../resources
 
 You can specify the following properties when creating a **levelMap**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|**TODO: Add Description** Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **levelMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|Identifier for the [floor](./floor.md) to which this **levelMap** belongs. Optional.|
 
 
 

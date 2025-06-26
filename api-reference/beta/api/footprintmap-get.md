@@ -1,6 +1,6 @@
 ---
 title: "Get footprintMap"
-description: "Read the properties and relationships of a footprintMap object."
+description: "Get a footprintMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a footprintMap object.
+Get a [footprintMap](../resources/footprintmap.md) object in IMDF format.
 
 ## Permissions
 
@@ -34,8 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /building/map/footprints/{footprintMapId}
+GET places/{buildingPlaceId}/microsoft.graph.building/map/footprints
 ```
+
+{buildingPlaceId} - **id** of the building with which this map is associated
 
 ## Optional query parameters
 

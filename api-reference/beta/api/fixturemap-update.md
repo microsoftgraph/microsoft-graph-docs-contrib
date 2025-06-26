@@ -1,6 +1,6 @@
 ---
 title: "Update fixtureMap"
-description: "Update the properties of a fixtureMap object."
+description: "Update the properties of a fixtureMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a fixtureMap object.
+Update the properties of a [fixtureMap](../resources/fixturemap.md) object in IMDF format.
 
 ## Permissions
 
@@ -34,8 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /building/map/levels/{levelMapId}/fixtures/{fixtureMapId}
+PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixture/{fixtureImdfID}
 ```
+
+{buildingPlaceId} – **id** of a building with which this [fixturemap](../resources/fixturemap.md) is associated
+
+{levelImdfId} - **id** of the level in the IMDF file
+
+{fixtureImdfID} - **id** of the fixture in the IMDF file 
 
 ## Request headers
 
@@ -49,11 +55,10 @@ PATCH /building/map/levels/{levelMapId}/fixtures/{fixtureMapId}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|**TODO: Add Description** Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **fixtureMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|Identifier for the [floor](./floor.md) to which this **fixtureMap** belongs. Optional.|
 
 
 

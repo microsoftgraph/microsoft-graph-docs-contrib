@@ -1,6 +1,6 @@
 ---
 title: "Get sectionMap"
-description: "Read the properties and relationships of a sectionMap object."
+description: "Get a sectionMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a sectionMap object.
+Get a [sectionMap](../resources/sectionmap.md) object in IMDF format.
 
 ## Permissions
 
@@ -34,8 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /building/map/levels/{levelMapId}/sections/{sectionMapId}
+GET places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/sections
 ```
+
+{buildingPlaceId} - **id** of the building with which this map is associated
+
+{levelImdfId} - **id** of the level in the IMDF file
 
 ## Optional query parameters
 

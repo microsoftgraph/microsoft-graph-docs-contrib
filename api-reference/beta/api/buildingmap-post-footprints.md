@@ -1,6 +1,6 @@
 ---
 title: "Create footprintMap"
-description: "Create a new footprintMap object."
+description: "Create a new footprintMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new footprintMap object.
+Create a new [footprintMap](../resources/footprintmap.md) object in IMDF format.
 
 ## Permissions
 
@@ -50,10 +50,9 @@ In the request body, supply a JSON representation of the [footprintMap](../resou
 
 You can specify the following properties when creating a **footprintMap**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **footprintMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
 
 
 

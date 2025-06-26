@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a fixtureMap object.
+Delete a [fixtureMap](../resources/fixturemap.md) object.
 
 ## Permissions
 
@@ -34,8 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /building/map/levels/{levelMapId}/fixtures/{fixtureMapId}/$ref
+DELETE places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixtures
 ```
+
+{buildingPlaceId} - **id** of the building with which this map is associated
+
+{levelImdfID} - **id** of the level with which this map is associated
 
 ## Request headers
 
