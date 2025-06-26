@@ -1,5 +1,5 @@
 ---
-title: "List deletedItems (directory objects)"
+title: "List deleted items (directory objects)"
 description: "Retrieve a list of recently deleted items from deleted items."
 author: "vimranga"
 ms.localizationpriority: medium

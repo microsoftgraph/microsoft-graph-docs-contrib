@@ -8,4 +8,4 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|PublicKeyInfrastructure.Read.All|PublicKeyInfrastructure.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|PublicKeyInfrastructure.Read.All|PublicKeyInfrastructure.ReadWrite.All|
+|Application|PublicKeyInfrastructure.Read.All|PublicKeyInfrastructure.ReadWrite.All|git

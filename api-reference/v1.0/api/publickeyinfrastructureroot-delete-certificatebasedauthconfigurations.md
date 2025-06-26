@@ -1,186 +1,76 @@
 ---
-title: "Restore deleted item (directory object)"
-description: "Restore a recently deleted application, group, or user from deleted PKI items."
+title: "Delete certificateBasedAuthPki"
+description: "Delete a certificateBasedAuthPki object."
 author: "vimranga"
 ms.localizationpriority: medium
-ms.subservice: "entra-directory-management"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ms.date: 06/23/2025
 ---
 
-# Restore deleted item (PKI directory object)
+# Delete certificateBasedAuthPki
 
 Namespace: microsoft.graph
 
-Restore a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). 
-
-Restore a recently deleted directory object from [deleted items](../resources/directory.md). The following types are supported:
-- [administrativeUnit](../resources/administrativeunit.md)
-- [application](../resources/application.md)
-- [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
-- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
-- [group](../resources/group.md)
-- [servicePrincipal](../resources/serviceprincipal.md)
-- [user](../resources/user.md)
-- 
-If an item was accidentally deleted, you can fully restore the item. However, security groups can't be restored. Also, restoring an application doesn't restore the associated service principal automatically. You must call this API to explicitly restore the deleted service principal.
-
-A recently deleted item remains available for up to 30 days. After 30 days, the item is permanently deleted.
+Delete a [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
-|:-|:-|:-|:-|
-| [administrativeUnit](../resources/administrativeunit.md) | AdministrativeUnit.ReadWrite.All | Not supported. | AdministrativeUnit.ReadWrite.All |
-| [application](../resources/application.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
-| [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
-| [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
-| [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
-| [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
-| [user](../resources/user.md) | User.DeleteRestore.All | Not supported. | User.DeleteRestore.All |
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "publickeyinfrastructureroot_delete_certificatebasedauthconfigurations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations-permissions.md)]
-[!INCLUDE [rbac-deleted-items-restore-apis](../includes/rbac-for-apis/rbac-deleted-items-restore-apis.md)]
+
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
-```http
-POST /directory/deletedItems/{id}/restore
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+DELETE /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{certificateBasedAuthPkiId}
 ```
 
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
+
+|Name|Description|
+|:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-type | application/json |
 
 ## Request body
-In the request body, supply a JSON representation of the parameters.
 
-The following table lists the parameters that are required when you call this action.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|autoReconcileProxyConflict|Boolean|Optional parameter. Indicates whether Microsoft Entra ID should remove any conflicting proxy addresses while restoring a soft-deleted user whose one or more proxy addresses are currently used for an active user. Used only for restoring soft-deleted [user](../resources/user.md) objects. The default value for this parameter is `false`.|
-|newUserPrincipalName|String|The new **userPrincipalName** to add to the restored [user](../resources/user.md). Optional.|
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Restore a deleted item
+### Request
 
-#### Request
-```http
-POST https://graph.microsoft.com/v1.0/directory/deletedItems/78bf875b-9343-4edc-9130-0d3958113563/restore
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "delete_certificatebasedauthpki"
+}
+-->
+``` http
+DELETE https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{certificateBasedAuthPkiId}
 ```
+### Response
 
-#### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",
-  "@odata.type":"#microsoft.graph.group",
-  "id":"46cc6179-19d0-473e-97ad-6ff84347bbbb",
-  "displayName":"SampleGroup",
-  "groupTypes":["Unified"],
-  "mail":"example@contoso.com",
-  "mailEnabled":true,
-  "mailNickname":"Example",
-  "securityEnabled":false,
-  "visibility":"Public"
+  "truncated": true
 }
-```
-
-
-### Example 2: Restore a deleted item and remove any conflicting proxy addresses
-
-#### Request
-```http
-POST https://graph.microsoft.com/v1.0/directory/deleteditems/78bf875b-9343-4edc-9130-0d3958113563/restore
-Content-Type: application/json
-
-{
-  "autoReconcileProxyConflict": true
-}
-```
-
-#### Response
-> **Note:** The response object shown here might be shortened for readability.
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-    "@odata.type": "#microsoft.graph.user",
-    "id": "78bf875b-9343-4edc-9130-0d3958113563",
-    "businessPhones": [],
-    "displayName": "SampleUser",
-    "givenName": "Sample",
-    "jobTitle": "Product Marketing Manager",
-    "mail": "sampleuser@contoso.com",
-    "mobilePhone": "+1 425 555 0109",
-    "officeLocation": "18/2111",
-    "preferredLanguage": "en-US",
-    "surname": "Vance",
-    "userPrincipalName": "sampleuser@contoso.com"
-}
-```
-
-### Example 3: Restore a deleted user and assign them a new userPrincipalName
-
-#### Request
-<!-- {
-  "blockType": "request",
-  "name": "restore_directory_deletedpkiitem_newUserPrincipalName"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/directory/deleteditems/78bf875b-9343-4edc-9130-0d3958113563/restore
-Content-Type: application/json
-
-{
-  "newUserPrincipalName": "johndoe@contoso.com"
-}
-```
-
-#### Response
-> **Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",
-    "@odata.type": "#microsoft.graph.user",
-    "id": "78bf875b-9343-4edc-9130-0d3958113563",
-    "businessPhones": [],
-    "displayName": "SampleUser",
-    "givenName": "Sample",
-    "mobilePhone": "+1 425 555 0109",
-    "officeLocation": "18/2111",
-    "preferredLanguage": "en-US",
-    "surname": "Vance",
-    "userPrincipalName": "johndoe@contoso.com"
-}
+-->
+``` http
+HTTP/1.1 204 No Content
 ```

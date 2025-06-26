@@ -1164,13 +1164,6 @@
                ]
             },
             {
-              "name": "Trusted certificate authorities for apps (preview)",
-              "resources": [
-                "certificateBasedApplicationConfiguration",
-                "certificateAuthorityAsEntity"
-              ]
-            },
-            {
               "name": "User flows in external tenants",
               "resources": [
                 "authenticationEventsFlow",
