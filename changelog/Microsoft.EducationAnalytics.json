@@ -54,6 +54,22 @@
         },
         {
           "Id": "3c70e755-0efe-4847-8420-951382846f69",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "readingAssignmentSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the **readingAssignmentSubmission** relationship to the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportsRoot"
+        },
+        {
+          "Id": "3c70e755-0efe-4847-8420-951382846f69",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reflectCheckInResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the **reflectCheckInResponse** relationship to the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportsRoot"
+        },
+        {
+          "Id": "3c70e755-0efe-4847-8420-951382846f69",
           "ApiChange": "Resource",
           "ChangedApiName": "challengingWord",
           "ChangeType": "Addition",
@@ -73,7 +89,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "readingAssignmentSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the [readingAssignmentSubmission](https://learn.microsoft.com/en-us/graph/api/resources/readingAssignmentSubmission?view=graph-rest-1.0) resource.",
+          "Description": "Added the [readingAssignmentSubmission](https://learn.microsoft.com/en-us/graph/api/resources/readingAssignmentSubmission?view=graph-rest-1.0) resource and an associated method.",
           "Target": "readingAssignmentSubmission"
         },
         {
@@ -81,7 +97,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "reflectCheckInResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [reflectCheckInResponse](https://learn.microsoft.com/en-us/graph/api/resources/reflectCheckInResponse?view=graph-rest-1.0) resource.",
+          "Description": "Added the [reflectCheckInResponse](https://learn.microsoft.com/en-us/graph/api/resources/reflectCheckInResponse?view=graph-rest-1.0) resource and an associated method.",
           "Target": "reflectCheckInResponse"
         },
         {
