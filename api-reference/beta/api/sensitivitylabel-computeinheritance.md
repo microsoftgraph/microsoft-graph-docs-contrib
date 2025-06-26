@@ -112,8 +112,6 @@ Content-Type: application/json
   "isEnabled": true,
   "isEndpointProtectionEnabled": true,
   "autoTooltip": "",
-  "isSmimeSignEnabled": true,
-  "isSmimeEncryptEnabled": true,
   "actionSource": "manual",
   "applicableTo": "email,teamwork,file",
   "sublabels": []
