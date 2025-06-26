@@ -29,6 +29,12 @@ Enabled [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediatio
 
 ### Files
 
+### Identity and access | Directory management
+
+- Use the **isManagementRestricted** property on [device](/graph/api/resources/device), [group](/graph/api/resources/group), and [user](/graph/api/resources/user) resources to to indicate  whether a device, group, or user is a member of a restricted management administrative unit.
+- Use the **isMemberManagementRestricted** property on [administrativeUnit](/graph/api/resources/administrativeunit) to indicate whether members of an administrative unit should be treated as sensitive.
+
+
 ### Security | eDiscovery
 
 - Use the **description** property on [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset) to get or set the eDiscovery review set description.
@@ -48,13 +54,13 @@ Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resourc
 
 ## June 2025: New in preview only
 
+### Backup storage
+
+[Get](/graph/api/emailnotificationssetting-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/emailnotificationssetting-update?view=graph-rest-beta&preserve-view=true) email notification settings in a tenant.
+
 ## Education
 
 [Get](/graph/api/reportsroot-list-speakerassignmentsubmissions?view=graph-rest-beta&preserve-view=true) a list of speaker assignments that were submitted by a student.
-
-### Backup storage
-
-[Get](/graph/api/emailnotificationssetting-get) or [update](/graph/api/emailnotificationssetting-update) email notification settings in a tenant.
 
 ### Security | eDiscovery
 
