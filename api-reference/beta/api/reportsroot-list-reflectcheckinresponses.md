@@ -1,6 +1,6 @@
 ---
 title: "List reflectCheckInResponses"
-description: "Get a list of reflect check-ins that were submitted by a student."
+description: "Get a list of Reflect check-ins that were submitted by a student."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [reflect check-ins](../resources/reflectcheckinresponse.md) that were submitted by a student.
+Get a list of [Reflect check-ins](../resources/reflectcheckinresponse.md) that were submitted by a student.
 
 ## Permissions
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get a list of the reflect check-in responses from the last 24 hours
+### Example 1: Get a list of the Reflect check-in responses from the last 24 hours
 
 The following example shows how to get the Reflect check-in responses from the last 24 hours.
 
@@ -120,7 +120,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get a list of the reflect check-in responses for a specific date using $filter
+### Example 2: Get a list of the Reflect check-in responses for a specific date using $filter
 
 The following example shows how to get the Reflect check-in responses for a specific date using the `$filter` query parameter. The requested time range must be 24 hours or shorter.
 

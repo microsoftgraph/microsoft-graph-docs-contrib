@@ -1,6 +1,6 @@
 ---
 title: "List reflectCheckInResponses"
-description: "Get a list of reflect check-ins that were submitted by a student."
+description: "Get a list of Reflect check-ins that were submitted by a student."
 author: "pateljay-37"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -12,7 +12,7 @@ ms.date: 08/14/2024
 
 Namespace: microsoft.graph
 
-Get a list of [reflect check-ins](../resources/reflectcheckinresponse.md) that were submitted by a student.
+Get a list of [Reflect check-ins](../resources/reflectcheckinresponse.md) that were submitted by a student.
 
 ## Permissions
 
