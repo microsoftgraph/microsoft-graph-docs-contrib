@@ -1,5 +1,5 @@
 ---
-title: "account actions resource type"
+title: "identityAccounts resource type"
 description: "Refers to any user or service account that is monitored for suspicious or malicious activity by Microsoft Defender for Identity within your identity infrastructure."
 author: "SamuelBenichou"
 ms.date: 06/22/2025
