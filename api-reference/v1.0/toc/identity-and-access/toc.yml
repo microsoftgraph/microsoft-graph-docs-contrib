@@ -2282,8 +2282,6 @@ items:
         href: ../../api/directory-deleteditems-restore.md
       - name: Permanently delete item
         href: ../../api/directory-deleteditems-delete.md
-  - name: Trusted certificate authorities for apps (preview)
-    items: []
   - name: User flows in external tenants
     items:
     - name: Authentication events flow
