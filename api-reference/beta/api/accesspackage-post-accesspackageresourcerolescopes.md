@@ -332,3 +332,61 @@ Content-type: application/json
    "createdDateTime": "2023-06-28T01:19:48.4216782Z"
 }
 ```
+
+
+### Example 4: Add a PIM-managed group as a resource role to an access package
+
+#### Request
+
+The following example shows a request to add a PIM-managed group as a resource role to an access package. The group's members are eligible to the group. 
+
+Before this request, you must have already added the access package resource `b86a1828-3171-409e-8343-32a224f324a0` for the PIM-managed group `bcfae74a-91a6-46e9-99bf-89d6487cc3f3` to the access package catalog containing this access package. The resource could have been added to the catalog by [creating an access package resource request](entitlementmanagement-post-accesspackageresourcerequests.md).
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_from_accesspackage_pim_group"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/b86a1828-3171-409e-8343-32a224f324a0/accessPackageResourceRoleScopes
+Content-type: application/json
+
+{
+  "accessPackageResourceRole":{
+    "originId":"EligibleMember_89590e41-f49d-4792-b531-6ed6fe6cfe18",
+    "displayName":"Eligible Member",
+    "originSystem":"AadGroup",
+    "accessPackageResource":{"id":"b86a1828-3171-409e-8343-32a224f324a0","resourceType":"O365 Group","originId":"bcfae74a-91a6-46e9-99bf-89d6487cc3f3","originSystem":"AadGroup"}
+  },
+ "accessPackageResourceScope":{
+   "originId":"bcfae74a-91a6-46e9-99bf-89d6487cc3f3","originSystem":"AadGroup"
+ }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageResourceRoleScopes/$entity",
+    "id": "ad5c7636-e481-4528-991f-198e3b38dd56_ffd4004a-f4a9-4b22-b027-759e55c0d1db",
+    "createdBy": "admin@example.com",
+    "createdDateTime": "2019-12-11T01:35:26.4754081Z",
+    "modifiedBy": "admin@example.com",
+    "modifiedDateTime": "2019-12-11T01:35:26.4754081Z"
+}
+```
