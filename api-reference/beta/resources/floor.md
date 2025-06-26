@@ -27,7 +27,7 @@ Inherits from [place](./place.md).
 |[Get](../api/floor-get.md)|[floor](./floor.md)|Read the properties and relationships of a **floor** object.|
 |[Update](../api/floor-update.md)|[floor](./floor.md)|Update the properties of a **floor** object.|
 |[Delete](../api/floor-delete.md)|None|Delete a **floor** object.|
-|[descendants](../api/floor-descendants.md)|[place](./place.md) collection|Returns the list of descendant [place](../resources/place.md) objects of a specific type (for example, [sections](./section.md), [rooms](./room.md), [desks](./desk.md), or [workspaces](./workspace.md)) under a given **floor**. |
+|[descendants](../api/floor-descendants.md)|[place](./place.md) collection|Get all the descendants of a specific type (for example, [sections](./section.md), [rooms](./room.md), [workspaces](./workspace.md), or [desks](./desk.md)) under a **floor**. |
 
 ## Properties
 |Property|Type|Description|

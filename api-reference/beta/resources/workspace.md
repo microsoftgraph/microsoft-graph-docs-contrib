@@ -29,7 +29,7 @@ Inherits from [place](./place.md).
 |[Get](../api/workspace-get.md)|[workspace](./workspace.md)|Read the properties and relationships of a **workspace** object.|
 |[Update](../api/workspace-update.md)|[workspace](./workspace.md)|Update the properties of a **workspace** object.|
 |[Delete](../api/roomlist-delete-workspaces.md)|None|Delete a **workspace** object.|
-|[descendants](../api/place-descendants.md) |List of [place](../resources/place.md) objects |Returns the list of [desk](./desk.md) objects whose parent is the given **workspace**. | 
+|[descendants](../api/place-descendants.md) |List of [place](../resources/place.md) objects |Get all the descendants of a specific type (for example, [desks](./desk.md)) under a **workspace**. | 
 
 ## Properties
 |Property |Type |Description |

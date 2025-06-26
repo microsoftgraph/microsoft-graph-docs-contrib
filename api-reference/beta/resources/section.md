@@ -28,7 +28,7 @@ Inherits from [place](./place.md).
 |[Get](../api/section-get.md)|[section](./section.md)|Read the properties and relationships of a section object.|
 |[Update](../api/section-update.md)|[section](./section.md)|Update the properties of a section object.|
 |[Delete](../api/section-delete.md)|None|Delete a section object.|
-|[descendants](../api/section-descendants.md)|[place](./place.md) collection|Returns the list of descendant [place](../resources/place.md) objects of a specific type (for example, [rooms](./room.md), [desks](./desk.md), or [workspaces](./workspace.md)) under a given **section**. |
+|[descendants](../api/section-descendants.md)|[place](./place.md) collection|Get all the descendants of a specific type (for example, [rooms](./room.md), [workspaces](./workspace.md), or [desks](./desk.md)) under a **section**. |
 
 ## Properties
 |Property|Type|Description|

@@ -28,7 +28,7 @@ Inherits from [place](./place.md).
 |[Get](../api/room-get.md)|[room](./room.md)|Read the properties and relationships of a **room** object.|
 |[Update](../api/room-update.md)|[room](./room.md)|Update the properties of a **room** object.|
 |[Delete](../api/roomlist-delete-rooms.md)|None|Delete a **room** object.|
-|[descendants](../api/room-descendants.md)|[place](./place.md) collection|Returns the list of descendant [place](../resources/place.md) objects of a specific type (for example, [desks](./desk.md) or [workspaces](./workspace.md)) under a given **room**.|
+|[descendants](../api/room-descendants.md)|[place](./place.md) collection|Get all the descendants of a specific type (for example, [desks](./desk.md)) under a **room**.|
 
 ## Properties
 |Property |Type |Description |

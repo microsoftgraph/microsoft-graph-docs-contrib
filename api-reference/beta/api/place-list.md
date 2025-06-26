@@ -1,6 +1,6 @@
 ---
-title: "List place objects"
-description: "Get a list of the place objects and their properties."
+title: "List places"
+description: "Get a list of places and their properties."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice:
 doc_type: apiPageType
 ---
 
-# List place objects
+# List places
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant, which can be [buildings](../resources/building.md), [floors](../resources/floor.md), [sections](../resources/section.md), [rooms](../resources/room.md), [workspaces](../resources/workspace.md), or [desks](../resources/desk.md).
 
-For example, you can get all the places within a building or get all the places on a floor.
+For example, you can get all the [places](../resources/place.md) within a [building](../resources/building.md) or get all the [places](../resources/place.md) on a [floor](../resources/floor.md).
 
 ## Permissions
 

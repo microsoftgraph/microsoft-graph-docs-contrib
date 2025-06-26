@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a room object.
+Delete a [room](../resources/room.md) object.
 
 ## Permissions
 

@@ -1,6 +1,6 @@
 ---
-title: "List floor objects"
-description: "Get a list of the floor objects and their properties."
+title: "List floors"
+description: "Get a list of floors and their properties."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice:
 doc_type: apiPageType
 ---
 
-# List floor objects
+# List floors
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [floor](../resources/floor.md) objects and their properties.
+Get a list of [floors](../resources/floor.md) and their properties.
 
 ## Permissions
 

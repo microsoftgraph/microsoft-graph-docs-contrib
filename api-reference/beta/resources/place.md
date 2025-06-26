@@ -19,12 +19,12 @@ A **place** object represents different space types within a tenant. A **place**
 |Place Type	|Details |
 |:--|:--|
 |[building](./building.md) | Represents a building within the tenant and has properties such as name, address, geographic coordinates, and so on. |
-|[floor](./floor.md) |Represents a floor within a building, including properties such as name, parentID, SortOrder, and so on. A building is always the parent of a floor. |
+|[floor](./floor.md) |Represents a floor within a building, including properties such as name, parentID, sortOrder, and so on. A building is always the parent of a floor. |
 |[section](./section.md) |Represents a section within a floor, including properties such as name, parentID, label, and so on. A floor is always the parent of a section. |
-|[room](./room.md) |Represents a room within the tenant. All the rooms in Places must be associated with Exchange mailboxes. A room can be added to a floor or to a section. The rich properties of the room include an email address for the room, accessibility, capacity, audio device, video device, and so on. |
-|[workspace](./workspace.md) |Represents a collection of desks. All the workspaces in Places must be associated with Exchange mailboxes. A workspace can be added to a floor or a section. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
+|[room](./room.md) |Represents a room within the tenant. All rooms must be associated with Exchange mailboxes. A room can be added to a floor or to a section. The rich properties of the room include an email address for the room, accessibility, capacity, audio device, video device, and so on. |
+|[workspace](./workspace.md) |Represents a collection of desks. All workspaces must be associated with Exchange mailboxes. A workspace can be added to a floor or a section. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
 |[desk](./desk.md) |Represents individual desks. A desk must be added to a section. The rich properties for the section include email address, mode, and accessibility. |
-|[roomList](./roomlist.md) |A collection of rooms in the tenant. Places supports **roomList** to ensure room booking works in RoomFinder across all clients on all devices, such as classic Outlook across desktop and mobile. <br/><br/>However, we recommend that you rely on the new **place** types and hierarchy if you do not use **Roomfinder** in the tenant. More details on **roomList** can be found at [roomList resource type](./roomlist.md). |
+|[roomList](./roomlist.md) |A collection of rooms in the tenant. Places supports **roomList** to ensure room booking works in roomFinder across all clients on all devices, such as classic Outlook across desktop and mobile. <br/><br/>However, we recommend that you rely on the new **place** types and hierarchy if you do not use **roomFinder** in the tenant. More details on **roomList** can be found at [roomList resource type](./roomlist.md). |
 
 ## Using the Places API
 
@@ -38,7 +38,7 @@ The Places API can be used by applications that have the right read or write per
 |[Get](../api/place-get.md) |The requested, derived type of **place** |Get the properties and relationships of a specified **place** object.|
 |[Update](../api/place-update.md) |The requested, derived type of **place** |Update the properties and relationships of a specified **place** object. |
 |[Delete](../api/place-delete.md) |None |Delete a **place** with the specified id. |
-|[descendants](../api/place-descendants.md) |List of **place** objects |Returns the list of descendant **place** objects of a specific type (for example, [buildings](./building.md, [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [desks](./desk.md), or [workspaces](./workspace.md)) under a given **place**. | 
+|[descendants](../api/place-descendants.md) |List of **place** objects |Get all the descendants of a specific type (for example, [buildings](./building.md), [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [workspaces](./workspace.md), or [desks](./desk.md)) under a **place**. | 
 
 The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions support similar lookups for rooms and room lists in a tenant. The following table compares the places API and these functions.
 
@@ -55,8 +55,6 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |Supports [updating an individual room or room list](../api/place-update.md) in a tenant. |Doesn't support updating an individual room or room list in a tenant. |
 
 ## Properties
-
-The base properties are inherited by all **place** types.
 
 |Property |Type |Description |
 |:--|:--|:--|

@@ -25,7 +25,7 @@ Inherits from [place](./place.md).
 |[Get](../api/desk-get.md)|[desk](./desk.md)|Read the properties and relationships of a **desk** object.|
 |[Update](../api/desk-update.md)|[desk](./desk.md)|Update the properties of a **desk** object.|
 |[Delete](../api/desk-delete.md)|None|Delete a **desk** object.|
-|[descendants](../api/desk-descendants.md)|[place](./place.md) collection|Returns the list of objects whose parent is the given **desk**. In practice, this method always returns an empty list because there are no object types that can have a **desk** as a parent. |
+|[descendants](../api/desk-descendants.md)|[place](./place.md) collection|Get all the descendants of a specific type under a **desk**. This method always returns an empty list because there are no object types that can have a **desk** as a parent. |
 
 ## Properties
 |Property |Type |Description |

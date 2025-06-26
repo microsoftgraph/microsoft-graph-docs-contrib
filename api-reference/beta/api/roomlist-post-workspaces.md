@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new workspace object.
+Create a new [workspace](../resources/workspace.md) object.
 
 ## Permissions
 

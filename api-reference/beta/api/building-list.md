@@ -1,6 +1,6 @@
 ---
-title: "List building objects"
-description: "Get a list of the building objects and their properties."
+title: "List buildings"
+description: "Get a list of buildings and their properties."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice:
 doc_type: apiPageType
 ---
 
-# List building objects
+# List buildings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [building](../resources/building.md) objects and their properties.
+Get a list of [buildings](../resources/building.md) and their properties.
 
 ## Permissions
 

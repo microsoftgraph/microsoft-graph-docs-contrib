@@ -1,6 +1,6 @@
 ---
 title: "List section objects"
-description: "Get a list of section objects and their properties."
+description: "Get a list of sections and their properties."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [section](../resources/section.md) objects and their properties.
+Get a list of [sections](../resources/section.md) and their properties.
 
 ## Permissions
 

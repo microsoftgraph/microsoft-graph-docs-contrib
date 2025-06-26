@@ -1,6 +1,6 @@
 ---
 title: "List workspace objects"
-description: "Get a list of the workspace objects and their properties."
+description: "Get a list of workspaces and their properties."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the workspace objects and their properties.
+Get a list of [workspaces](../resources/workspace.md) and their properties.
 
 ## Permissions
 

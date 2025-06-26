@@ -1,6 +1,6 @@
 ---
 title: "floor: descendants"
-description: "Returns a list of place objects whose parent is the specified floor."
+description: "Get all the descendants of a specific type under a floor."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the descendants of a specific type under a [place](../resources/place.md).
+Get all the descendants of a specific type under a [floor](../resources/floor.md).
 
 ## Permissions
 
