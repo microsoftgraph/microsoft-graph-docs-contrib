@@ -58,7 +58,7 @@ PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}
 |Property|Type|Description|
 |:---|:---|:---|
 |properties|String|Concatenated key-value pair of all properties of a geojson file for this **unitMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|Identifier of the [place](../resources/place.md) (such as a [room](./room.md)) to which this **unitMap** belongs. Optional.|
+|placeId|String|Identifier of the [place](../resources/place.md) (such as a [room](../resources/room.md)) to which this **unitMap** belongs. Optional.|
 
 
 
