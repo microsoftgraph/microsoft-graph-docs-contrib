@@ -53,7 +53,7 @@ You can specify the following properties when creating a **levelMap**.
 |Property|Type|Description|
 |:---|:---|:---|
 |properties|String|Concatenated key-value pair of all properties of a geojson file for this **levelMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|Identifier for the [floor](./floor.md) to which this **levelMap** belongs. Optional.|
+|placeId|String|Identifier for the [floor](..resources/floor.md) to which this **levelMap** belongs. Optional.|
 
 
 

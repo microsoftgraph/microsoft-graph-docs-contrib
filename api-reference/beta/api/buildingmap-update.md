@@ -52,7 +52,7 @@ PATCH /building/map
 |Property|Type|Description|
 |:---|:---|:---|
 |properties|String|Concatenated key-value pair of all properties of a geojson file for this **buildingMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|Identifier for the [building](./building.md) to which this **buildingMap** belongs. Optional.|
+|placeId|String|Identifier for the [building](../resources/building.md) to which this **buildingMap** belongs. Optional.|
 
 
 

@@ -58,7 +58,7 @@ PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}
 |Property|Type|Description|
 |:---|:---|:---|
 |properties|String|Concatenated key-value pair of all properties of a geojson file for this **fixtureMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|Identifier for the [floor](./floor.md) to which this **fixtureMap** belongs. Optional.|
+|placeId|String|Identifier for the [floor](../resources/floor.md) to which this **fixtureMap** belongs. Optional.|
 
 
 
