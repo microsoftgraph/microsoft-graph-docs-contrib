@@ -55,9 +55,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get the Reflect check-in responses from the last 24 hours
+### Example 1: Get a list of the Reflect check-in responses from the last 24 hours
 
-The following example shows how to get the Reflect check-in responses from the last 24 hours.
+The following example shows how to get a list of the Reflect check-in responses from the last 24 hours.
 
 #### Request
 
@@ -118,9 +118,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get the Reflect check-in responses for a specific date using $filter
+### Example 2: Get a list of the Reflect check-in responses for a specific date using $filter
 
-The following example shows how to get the Reflect check-in responses for a specific date using the `$filter` query parameter. The requested time range must be 24 hours or shorter.
+The following example shows how to get a list of the Reflect check-in responses for a specific date using the `$filter` query parameter. The requested time range must be 24 hours or shorter.
 
 #### Request
 
