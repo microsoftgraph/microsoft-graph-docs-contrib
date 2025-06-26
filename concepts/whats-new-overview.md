@@ -23,10 +23,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 New rate limits apply to Cloud PC APIs. The [List Cloud PCs](/graph/api/virtualendpoint-list-cloudpcs) API is now limited to 180 requests per minute per tenant and 162 requests per minute per app or user. The [Get Cloud PC](/graph/api/cloudpc-get) API is limited to 540 requests per minute per tenant and 486 requests per minute per app or user. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#windows-365-service-limits).
 
+### Device and app management | Device updates
+
+Enabled [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta&preserve-view=true) as a supported value for the **contentFilter** property of the [contentApprovalRule](/graph/api/resources/windowsupdates-contentapprovalrule?view=graph-rest-beta&preserve-view=true) resource. Use the [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta&preserve-view=true) to determine which remediation update content matches the rule continuously.
+
+### Files
+
 ### Identity and access | Directory management
 
 - Use the **isManagementRestricted** property on [device](/graph/api/resources/device), [group](/graph/api/resources/group), and [user](/graph/api/resources/user) resources to to indicate  whether a device, group, or user is a member of a restricted management administrative unit.
 - Use the **isMemberManagementRestricted** property on [administrativeUnit](/graph/api/resources/administrativeunit) to indicate whether members of an administrative unit should be treated as sensitive.
+
 
 ### Security | eDiscovery
 
