@@ -103,7 +103,7 @@ Content-Type: application/json
       "timeSpentReadingInSeconds": 165.75,
       "languageTag": "en-US",
       "storyType": "userProvided",
-      "isReadingCompleted" = true
+      "isReadingCompleted": true
     },
     {
       "createdAtUtcDateTime": "2025-06-25T12:51:31.0663974Z",
@@ -117,7 +117,7 @@ Content-Type: application/json
       "timeSpentReadingInSeconds": 180.5,
       "languageTag": "en-US",
       "storyType": "aiGenerated",
-      "isReadingCompleted" = true
+      "isReadingCompleted": true
     }
   ]
 }
@@ -173,7 +173,7 @@ Content-Type: application/json
       "timeSpentReadingInSeconds": 165.75,
       "languageTag": "en-US",
       "storyType": "userProvided",
-      "isReadingCompleted" = true
+      "isReadingCompleted": true
     },
     {
       "createdAtUtcDateTime": "2025-06-22T12:51:31.0663974Z",
@@ -187,7 +187,7 @@ Content-Type: application/json
       "timeSpentReadingInSeconds": 180.5,
       "languageTag": "en-US",
       "storyType": "aiGenerated",
-      "isReadingCompleted" = true
+      "isReadingCompleted": true
     }
   ]
 }
