@@ -31,8 +31,8 @@ A **place** object represents different space types within a tenant. A **place**
 The Places API can be used by applications that have the right read or write permissions on a **places** object. All the **places** objects have basic properties such as ID, placeID, and display name. While the more advanced spaces such as rooms, workspaces, and desks support properties such as mode, email address, and device information.
 
 ## Methods
-|Method |Return |Type |Description |
-|:--|:--|:--|:--|
+|Method |Return type |Description |
+|:--|:--|:--|
 |[List](../api/place-list.md) |A list of **place** objects |Get the properties and relationships of multiple **place** objects. |
 |[Create](../api/place-post-places.md) |Created **place** |Create a new **place**. | 
 |[Get](../api/place-get.md) |The requested, derived type of **place** |Get the properties and relationships of a specified **place** object.|
