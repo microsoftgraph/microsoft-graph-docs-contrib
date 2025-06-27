@@ -192,6 +192,14 @@ items:
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
+  - name: Provision migrationContainers
+    href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
+  - name: Create migrationJob
+    href: ../../api/filestoragecontainer-post-migrationjobs.md
+  - name: Delete migrationJob
+    href: ../../api/filestoragecontainer-delete-migrationjobs.md
+  - name: List progressEvents
+    href: ../../api/filestoragecontainer-migrationjob-list-progressevents.md
 - name: Permission
   items:
   - name: Permission
@@ -264,19 +272,9 @@ items:
     href: ../../api/sharepointgroupmember-get.md
   - name: Delete
     href: ../../api/sharepointgroup-delete-members.md
-- name: Migration job
+- name: SharePoint migration job
   items:
-  - name: Migration job
-    href: ../../resources/migrationjob.md
-  - name: Provision migration containers
-    href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
-  - name: Create
-    href: ../../api/filestoragecontainer-post-migrationjobs.md
-  - name: Delete
-    href: ../../api/filestoragecontainer-delete-migrationjobs.md
-- name: Migration event
-  items:
-  - name: Migration event
-    href: ../../resources/migrationevent.md
-  - name: List
-    href: ../../api/migrationjob-list-progressevents.md
+  - name: SharePoint migration job
+    href: ../../resources/sharepointmigrationjob.md
+  - name: SharePoint migration event
+    href: ../../resources/sharepointmigrationevent.md

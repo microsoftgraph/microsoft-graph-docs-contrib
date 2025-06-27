@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainer: provisionMigrationContainers"
-description: "Provision migrationContainerInfo"
+description: "Provision sharepointMigrationContainerInfo"
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and [migrationContainerInfo](../resources/migrationcontainerinfo.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [sharepointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md) object in the response body.
 
 ## Examples
 
@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and [migrationC
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_migrationjob"
+  "name": "filestoragecontainerthis.provisionmigrationcontainers"
 }
 -->
 ``` http
@@ -71,7 +71,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.migrationJob"
+  "@odata.type": "microsoft.graph.sharepointMigrationContainerInfo"
 }
 -->
 ``` http

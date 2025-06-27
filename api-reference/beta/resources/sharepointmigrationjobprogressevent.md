@@ -1,5 +1,5 @@
 ---
-title: "migrationJobProgressEvent resource type"
+title: "sharepointMigrationJobProgressEvent resource type"
 description: "Migration progress status event"
 author: "wenzhou"
 ms.date: 06/04/2025
@@ -8,34 +8,34 @@ ms.subservice: "onedrive"
 doc_type: resourcePageType
 ---
 
-# migrationJobProgressEvent resource type
+# sharepointMigrationJobProgressEvent resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **migrationJobProgressEvent** resource represents the progress status of a migration job.
+The **sharepointMigrationJobProgressEvent** resource represents the progress status of a migration job.
 
-Inherits from [migrationEvent](../resources/migrationevent.md).
+Inherits from [sharepointMigrationEvent](../resources/sharepointmigrationevent.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/migrationjob-list-progressevents.md)|[migrationEvent](../resources/migrationevent.md) collection|Get a list of the migrationEvent objects and their properties.|
+|[List progressEvents](../api/filestoragecontainer-migrationjob-list-progressevents.md)|[sharepointMigrationEvent](../resources/sharepointmigrationevent.md) collection|Get a list of the migrationEvent objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |bytesProcessed|Int64|The number of bytes processed. Read-only. Only on OneDrive for Business and SharePoint.|
 |bytesProcessedOnlyCurrentVersion|Int64|The number of bytes processed exclusive of version history. Read-only. Only on OneDrive for Business and SharePoint.|
-|correlationId|String|The correlation id of a migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [migrationEvent](../resources/migrationevent.md).|
+|correlationId|String|The correlation id of a migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharepointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |cpuDurationMs|Int64|CPU duration in milliseconds. Read-only. Only on OneDrive for Business and SharePoint.|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobProgress** or **JobEnd**. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [migrationEvent](../resources/migrationevent.md).|
+|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobProgress** or **JobEnd**. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharepointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |filesProcessed|Int64|The number of files processed. Read-only. Only on OneDrive for Business and SharePoint.|
 |filesProcessedOnlyCurrentVersion|Int64|The number of files processed exclusive of version history. Read-only. Only on OneDrive for Business and SharePoint.|
 |id|String|The id of a **JobProgress** or **JobEnd** event. Read-only. Only on OneDrive for Business and SharePoint. Inherits from [entity](../resources/entity.md).|
 |isCompleted|Boolean|True if job is completed. False if job is in progress. Read-only. Only on OneDrive for Business and SharePoint.|
-|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [migrationEvent](../resources/migrationevent.md).|
+|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharepointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |lastProcessedObjectId|String|The unique identifier of the last object processed. Read-only. Only on OneDrive for Business and SharePoint.|
 |objectsProcessed|Int64|The number of objects processed. Read-only. Only on OneDrive for Business and SharePoint.|
 |sqlDurationMs|Int64|SQL duration in milliseconds. Read-only. Only on OneDrive for Business and SharePoint.|
@@ -56,14 +56,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.migrationJobProgressEvent",
-  "baseType": "microsoft.graph.migrationEvent",
+  "@odata.type": "microsoft.graph.sharepointMigrationJobProgressEvent",
+  "baseType": "microsoft.graph.sharepointMigrationEvent",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.migrationJobProgressEvent",
+  "@odata.type": "#microsoft.graph.sharepointMigrationJobProgressEvent",
   "id": "String (identifier)",
   "jobId": "String",
   "eventDateTime": "String (timestamp)",

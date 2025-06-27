@@ -1,6 +1,6 @@
 ---
-title: "Create migrationJob"
-description: "Create a new migrationJob object."
+title: "Create sharepointMigrationJob"
+description: "Create a new sharepointMigrationJob object."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Create migrationJob
+# Create sharepointMigrationJob
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)] local to a [fileStorageContainer](../resources/filestoragecontainer.md). The migration is queued for later processing in a separate timer job.
 
-Create a new [migrationJob](../resources/migrationjob.md) object.
+Create a new [sharepointMigrationJob](../resources/sharepointmigrationjob.md) object.
 
 ## Permissions
 
@@ -46,17 +46,17 @@ POST /storage/fileStorage/containers/{fileStorageContainerId}/migrationJobs
 
 ## Request body
 
-In the request body, supply a JSON representation of the [migrationJob](../resources/migrationjob.md) object.
+In the request body, supply a JSON representation of the [sharepointMigrationJob](../resources/sharepointmigrationjob.md) object.
 
-You can specify the following properties when creating a **migrationJob**.
+You can specify the following properties when creating a **sharepointMigrationJob**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|containerInfo|[migrationContainerInfo](../resources/migrationcontainerinfo.md)| The intermediate storage to temporarily store the file content and metadata. Required.|
+|containerInfo|[sharepointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md)| The intermediate storage to temporarily store the file content and metadata. Required.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and job ID in the response body.
+If successful, this method returns a `201 Created` response code and a [sharepointMigrationJob](../resources/sharepointmigrationjob.md) object in the response body.
 
 ## Examples
 
@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and job ID in t
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_migrationjob_from_"
+  "name": "create_migrationjob_from_filestoragecontainer"
 }
 -->
 ``` http
@@ -86,7 +86,8 @@ Content-Type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharepointMigrationJob"
 }
 -->
 ``` http
