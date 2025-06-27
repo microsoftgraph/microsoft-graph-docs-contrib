@@ -14,8 +14,6 @@ exportResultPostRequestBody.setExportCriteria(EnumSet.of(com.microsoft.graph.bet
 exportResultPostRequestBody.setExportLocation(EnumSet.of(com.microsoft.graph.beta.models.security.ExportLocation.ResponsiveLocations));
 exportResultPostRequestBody.setAdditionalOptions(EnumSet.of(com.microsoft.graph.beta.models.security.AdditionalOptions.CloudAttachments));
 exportResultPostRequestBody.setExportFormat(com.microsoft.graph.beta.models.security.ExportFormat.Eml);
-exportResultPostRequestBody.setCloudAttachmentVersion(com.microsoft.graph.beta.models.security.CloudAttachmentVersion.All);
-exportResultPostRequestBody.setDocumentVersion(com.microsoft.graph.beta.models.security.DocumentVersion.Recent100);
 graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").searches().byEdiscoverySearchId("{ediscoverySearch-id}").microsoftGraphSecurityExportResult().post(exportResultPostRequestBody);
 
 

@@ -8574,6 +8574,8 @@ items:
       href: ../../resources/windowsupdates-qualityupdatefilter.md
     - name: Rate driven rollout settings
       href: ../../resources/windowsupdates-ratedrivenrolloutsettings.md
+    - name: Remediation update filter
+      href: ../../resources/windowsupdates-remediationupdatefilter.md
     - name: Safeguard profile
       href: ../../resources/windowsupdates-safeguardprofile.md
     - name: Safeguard settings
