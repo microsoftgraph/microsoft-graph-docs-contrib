@@ -73,7 +73,7 @@ The following JSON representation shows the resource type.
   "lastModifiedDateTime": "String (timestamp)",
   "localAdminEnabled": "Boolean",
   "notificationSetting": {"@odata.type": "microsoft.graph.cloudPcNotificationSetting"},
-  "provisioningSourceType": {"@odata.type": "microsoft.graph.cloudPcProvisioningSourceType"},
+  "provisioningSourceType": "String",
   "resetEnabled": "Boolean",
   "restorePointSetting": {"@odata.type": "microsoft.graph.cloudPcRestorePointSetting"},
   "selfServiceEnabled": "Boolean"
