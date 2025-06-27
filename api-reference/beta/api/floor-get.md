@@ -1,22 +1,20 @@
 ---
-title: "Get place"
-description: "Read the properties and relationships of a place object."
+title: "Get floor"
+description: "Read the properties and relationships of a floor object."
 author: tiwarisakshi02
-ms.date: 06/11/2025
+ms.date: 06/09/2025
 ms.localizationpriority: medium
 ms.subservice:
 doc_type: apiPageType
 ---
 
-# Get place
+# Get floor
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties of a [place](../resources/place.md) object.
-
-Also used to read the properties of a child object type, which can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
+Read the properties and relationships of a [floor](../resources/floor.md) object.
 
 ## Permissions
 
@@ -24,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "place-get-permissions"
+  "name": "floor-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/place-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/floor-get-permissions.md)]
 
 ## HTTP request
 
@@ -36,14 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /places/{placesId}
+GET /floor
 ```
 
 ## Optional query parameters
 
-- Use `$select` to get specific [place](../resources/place.md) properties.
-
-- This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [place](../resources/place.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [floor](../resources/floor.md) object in the response body.
 
 ## Examples
 
@@ -66,23 +62,22 @@ If successful, this method returns a `200 OK` response code and a [place](../res
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_place"
+  "name": "get_floor"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/places/{placesId}
+GET https://graph.microsoft.com/beta/floor
 ```
 
-### Response
 
-If successful, this method returns a 200 OK response code and a [place](../resources/place.md) object or the list of places in the response.
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.place"
+  "@odata.type": "microsoft.graph.floor"
 }
 -->
 ``` http
@@ -91,8 +86,8 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.place",
-    "id": "7d752e23-0fb5-7333-be1b-a1ae3d19ac4b",
+    "@odata.type": "#microsoft.graph.floor",
+    "id": "c8c830fe-938f-bd39-efee-c0d62f43c9cf",
     "displayName": "String",
     "geoCoordinates": {
       "@odata.type": "microsoft.graph.outlookGeoCoordinates"
@@ -112,7 +107,8 @@ Content-Type: application/json
       "String"
     ],
     "isWheelChairAccessible": "Boolean",
-    "label": "String"
+    "label": "String",
+    "sortOrder": "Integer"
   }
 }
 ```
