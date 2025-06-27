@@ -35,18 +35,18 @@ Represents a Cloud PC user setting.
 |id|String|Unique identifier for the Cloud PC user setting. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 |localAdminEnabled|Boolean|Indicates whether the local admin option is enabled. Default value is `false`. To enable the local admin option, change the setting to `true`. If the local admin option is enabled, the end user can be an admin of the Cloud PC device. |
+|notificationSetting|[cloudPcNotificationSetting](../resources/cloudpcnotificationsetting.md)|Defines the setting of the Cloud PC notification prompts for the Cloud PC user.|
+|provisioningSourceType|[cloudPcProvisioningSourceType](../resources/cloudpcusersetting.md#cloudpcprovisioningsourcetype-values)|Indicates the provisioning source of the Cloud PC prepared for an end user. Possible values are: `image`, `snapshot`, and `unknownFutureValue`. The default value is `image`. If the property isn't set or set to `null`, its functionality is the same as setting it to `image`.|
 |resetEnabled|Boolean|Indicates whether an end user is allowed to reset their Cloud PC. When `true`, the user is allowed to reset their Cloud PC. When `false`, end-user initiated reset isn't allowed. The default value is `false`. |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
 |selfServiceEnabled (deprecated)|Boolean|Indicates whether the self-service option is enabled. Default value is `false`. To enable the self-service option, change the setting to `true`. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1, 2023.|
-|notificationSetting|[cloudPcNotificationSetting](../resources/cloudpcnotificationsetting.md)|Defines the setting of the Cloud PC notification prompts for the Cloud PC user.|
-|provisioningSourceType|[cloudPcProvisioningSourceType](../resources/cloudpcusersetting.md#cloudpcprovisioningsourcetype-values)|Indicates the provisioning source of the Cloud PC prepared for an end user. Possible values are image and snapshot. The default value is `image`. If the property is not set or set to `null`, its functionality is the same as setting it to `image`.|
 
 ### cloudPcProvisioningSourceType values
 
 | Member             | Description                                                                                                              |
 |:-------------------|:-------------------------------------------------------------------------------------------------------------------------|
-| image              | Indicates the Windows 365 image will be used as the source to provision Cloud PC.                                        |
-| snapshot           | Indicates that the pre-uploaded VHD snapshot for this end user will be used as source to provision Cloud PC.             |
+| image              | Indicates the Windows 365 image that is used as the source to provision the Cloud PC.                                    |
+| snapshot           | Indicates that the pre-uploaded VHD snapshot for this end user is used as the source to provision the Cloud PC.          |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                                                         |
 
 ## Relationships
@@ -69,19 +69,13 @@ The following JSON representation shows the resource type.
   "createdDateTime": "String (timestamp)",
   "crossRegionDisasterRecoverySetting": {"@odata.type": "microsoft.graph.cloudPcCrossRegionDisasterRecoverySetting"},
   "displayName": "String",
-  "id": "String (identifier)",  
+  "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "localAdminEnabled": "Boolean",
+  "notificationSetting": {"@odata.type": "microsoft.graph.cloudPcNotificationSetting"},
+  "provisioningSourceType": {"@odata.type": "microsoft.graph.cloudPcProvisioningSourceType"},
   "resetEnabled": "Boolean",
-  "restorePointSetting": {
-    "@odata.type": "microsoft.graph.cloudPcRestorePointSetting"
-  },
-  "selfServiceEnabled": "Boolean",
-  "notificationSetting": {
-    "@odata.type": "microsoft.graph.cloudPcNotificationSetting"
-  },
-  "provisioningSourceType": {
-    "@odata.type": "microsoft.graph.cloudPcProvisioningSourceType"
-  }
+  "restorePointSetting": {"@odata.type": "microsoft.graph.cloudPcRestorePointSetting"},
+  "selfServiceEnabled": "Boolean"
 }
 ```
