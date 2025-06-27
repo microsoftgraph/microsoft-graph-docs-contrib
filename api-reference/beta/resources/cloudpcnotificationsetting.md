@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the settings of notification prompts.
+Represents specific settings of notification prompt.
 
 ## Properties
 
