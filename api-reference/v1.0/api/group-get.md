@@ -258,6 +258,41 @@ Content-type: application/json
 }
 ```
 
+### Example 4: Check if the management of a group is restricted
+
+The following example shows how to check whether the management of a group is restricted.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_group_restricted"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groups/aed0b780-965f-4149-85c5-a8c73e58brt6?$select=isManagementRestricted
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "isManagementRestricted": true
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
