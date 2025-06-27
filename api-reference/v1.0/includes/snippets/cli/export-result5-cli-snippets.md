@@ -10,9 +10,7 @@ mgc-beta security cases ediscovery-cases searches microsoft-graph-security-expor
   "exportCriteria": "partiallyIndexed",\
   "exportLocation": "responsiveLocations",\
   "additionalOptions": "cloudAttachments",\
-  "exportFormat": "eml",\
-  "cloudAttachmentVersion": "all",\
-  "documentVersion": "recent100"\
+  "exportFormat": "eml"\
 }\
 '
 
