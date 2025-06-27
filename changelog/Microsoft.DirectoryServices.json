@@ -609,6 +609,48 @@
     {
       "ChangeList": [
         {
+          "Id": "cf36e724-9cf6-4325-b375-0f64652d11d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isMemberManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMemberManagementRestricted** property to the [administrativeUnit](https://learn.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-1.0) resource.",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "cf36e724-9cf6-4325-b375-0f64652d11d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManagementRestricted** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "cf36e724-9cf6-4325-b375-0f64652d11d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManagementRestricted** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "cf36e724-9cf6-4325-b375-0f64652d11d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManagementRestricted** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "cf36e724-9cf6-4325-b375-0f64652d11d5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-06-26T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3ea44add-bba5-48f7-9c74-1f1588d988d5",
           "ApiChange": "Property",
           "ChangedApiName": "membershipRule",
