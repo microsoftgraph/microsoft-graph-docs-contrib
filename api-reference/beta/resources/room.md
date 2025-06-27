@@ -1,11 +1,11 @@
 ---
 title: "room resource type"
-description: "Specifies the properties of a room in a tenant."
+description: "Represents a room within the tenant."
+author: tiwarisakshi02
+ms.date: 06/11/2025
 ms.localizationpriority: medium
-author: "vrod9429"
-ms.subservice: "outlook"
-doc_type: "resourcePageType"
-ms.date: 03/23/2024
+ms.subservice:
+doc_type: resourcePageType
 ---
 
 # room resource type
@@ -14,96 +14,106 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a room in a tenant. 
+Represents a room within the tenant.
 
-In Exchange Online, each room is associated with a room mailbox. Derived from [place](place.md).
+A room can be added to a [floor](./floor.md) or to a [section](./section.md).
+
+Inherits from [place](./place.md).
 
 ## Methods
-
-| Method                              | Return Type                  | Description |
-|:------------------------------------|:-----------------------------|:--------|
-| [List places](../api/place-list.md) | A collection of the requested, derived type of [place](place.md) | Get a collection of the specified type of **place** object defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant. |
-| [Get place](../api/place-get.md)    | The requested, derived type of [place](place.md)            | Get the properties and relationships of the specified **place** object, such as a room. |
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/roomlist-list-rooms.md)|[room](./room.md) collection|Get a list of **room** objects and their properties.|
+|[Create](../api/roomlist-post-rooms.md)|[room](./room.md)|Create a new **room** object.|
+|[Get](../api/room-get.md)|[room](./room.md)|Read the properties and relationships of a **room** object.|
+|[Update](../api/room-update.md)|[room](./room.md)|Update the properties of a **room** object.|
+|[Delete](../api/roomlist-delete-rooms.md)|None|Delete a **room** object.|
+|[descendants](../api/room-descendants.md)|[place](./place.md) collection|Returns the list of descendant [place](../resources/place.md) objects of a specific type (for example, [desks](./desk.md) or [workspaces](./workspace.md)) under a given **room**.|
 
 ## Properties
-
-| Property               | Type                                              | Description |
-|:-----------------------|:--------------------------------------------------|:--|
-| address                | [physicalAddress](physicaladdress.md)             | The street address of the room. |
-| audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, and `reserved`. |
-| building               | String                                            | Specifies the building name or building number that the room is in. |
-| capacity               | Int32                                             | Specifies the capacity of the room. |
-| displayName            | String                                            | The name associated with the room. |
-| displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
-| emailAddress           | String                                            | Email address of the room. |
-| floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
-| floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
-| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude, and optionally, altitude coordinates. |
-| id                     | String                                            | Unique identifier for the room. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. |
-| isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
-| label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
-| nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
-| phone                  | String                                            | The phone number of the room. |
-| placeId                | String                                            | A unique identifier for the room. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. |
-| tags                   | String collection                                 | Specifies other features of the room; for example, the type of view or furniture type. |
-| videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
+|Property |Type |Description |
+|:--|:--|:--|
+|address |[physicalAddress](./physicaladdress.md) |The physical address of the **room**, including the street, city, state, country or region, and postal code. Inherited from [place](../resources/place.md).|
+|audioDeviceName |String |The name of the audio device that is available in the **room**. |
+|bookingType |[bookingType](#bookingtype-values) |Specifies how the **room** can be booked. Possible values are:
+<ul><li>**standard** - Available for general booking</li>
+<li>**reserved** – Reserved for specific users or purposes</li>
+<li>**unknown** – Default or unspecified booking behavior</li></ul> |
+|building |String |The name or identifier of the [building](./building.md) where the **room** is located. |
+|capacity |Integer |The maximum number of people in the **room** can accommodate. |
+|description |String |User-defined description of the **room**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md). |
+|displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the **room**. |
+|displayName |String |The name that is associated with the **room**. Inherited from [place](../resources/place.md).|
+|emailAddress |String |The email address associated with the **room**. This email address is used for booking. |
+|floorLabel |String |A human-readable label for the [floor](./floor.md), such as "Ground Floor". |
+|floorNumber |Integer |The numeric floor level within the building. For example, 1 for first floor, 2 for second floor, and so on. |
+|geoCoordinates |[outlookGeoCoordinates](./outlookgeocoordinates.md) |Specifies the **room** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). |
+|id |String |A unique identifier for the **room**. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. Inherited from [entity](../resources/entity.md).|
+|isTeamsEnabled |Boolean |Whether or not the **room** is configured with the Microsoft Teams Room system. |
+|isWheelChairAccessible |Boolean |Whether or not the **room** is wheelchair accessible. Inherited from [place](../resources/place.md).|
+|nickname |String |A short, friendly name for the **room**, often used for easier identification or display in UI. |
+|parentId |String |**id** of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](../resources/place.md). |
+|phone |String |The phone number of the **room**. Inherited from [place](../resources/place.md).|
+|placeId |String |An alternate immutable unique identifier of the **room**. Read-only. Inherited from [place](../resources/place.md).|
+|resourceLinks |[resourceLink](../resources/resourcelink.md) collection	|A set of links to external resources that are associated with the **room**. Inherited from [place](../resources/place.md).|
+|tags |Collection(String) |Custom tags that are associated with the **room** for categorization or filtering. Inherited from [place](../resources/place.md).|
+|videoDeviceName |String |The name of the video device that is available in the **room**. |
 
 ### bookingType values
 
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
-| standard | The room can be reserved based on the other settings in this cmdlet. This value is the default. |
 | reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
+| standard | The room is available and can be reserved. This value is the default. |
 
 ## Relationships
-
 None.
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.room"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.room",
+  "baseType": "microsoft.graph.place",
+  "openType": false
+}
+-->
+``` json
 {
-  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "audioDeviceName": "String",
-  "bookingType": "String",
-  "building": "String",
-  "capacity": 1024,
-  "displayName": "String",
-  "displayDeviceName": "String",
-  "emailAddress": "String",
-  "floorLabel": "String",
-  "floorNumber": 1024,
-  "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "@odata.type": "#microsoft.graph.room",
   "id": "String (identifier)",
-  "isWheelChairAccessible": true,
-  "label": "String",
-  "nickname": "String",
+  "displayName": "String",
+  "geoCoordinates": {
+    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
+  },
   "phone": "String",
-  "tags": ["String"],
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
+  "placeId": "String",
+  "parentId": "String",
+  "resourceLinks": [
+    {
+      "@odata.type": "microsoft.graph.resourceLink"
+    }
+  ],
+  "tags": [
+    "String"
+  ],
+  "isWheelChairAccessible": "Boolean",
+  "label": "String",
+  "emailAddress": "String",
+  "nickname": "String",
+  "building": "String",
+  "floorNumber": "Integer",
+  "capacity": "Integer",
+  "bookingType": "String",
+  "audioDeviceName": "String",
   "videoDeviceName": "String",
-  "placeId": "String (alternate identifier)"
+  "displayDeviceName": "String",
+  "floorLabel": "String",
+  "isTeamsEnabled": "Boolean"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "room resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
 
