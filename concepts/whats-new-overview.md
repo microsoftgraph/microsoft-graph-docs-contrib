@@ -38,11 +38,6 @@ Updated the throttling information for [getAllEnterpriseInteractions](/graph/api
 
 ### Teamwork and communications | Shift management
 
-### Device and app management | Cloud PC
-
-[Retrieve the Cloud PC count grouped by status](/graph/api/cloudpc-retrievecloudpccountbystatus?view=graph-rest-beta&preserve-view=true).
-
-## Education
 Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resources: [offerShiftRequest](/graph/api/resources/offershiftrequest), [openShift](/graph/api/resources/openshift), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest), [schedule](/graph/api/resources/schedule), [schedulingGroup](/graph/api/resources/schedulinggroup), [shift](/graph/api/resources/shift), [shiftPreferences](/graph/api/resources/shiftpreferences), [shiftsRoleDefinition](/graph/api/resources/shiftsroledefinition), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest), [timeCard](/graph/api/resources/timecard), [timeOff](/graph/api/resources/timeoff), [timeOffReason](/graph/api/resources/timeoffreason), [timeOffRequest](/graph/api/resources/timeoffrequest), and [workforceIntegration](/graph/api/resources/workforceintegration). This header was also deprecated for the [changeTrackedEntity: stageForDeletion](/graph/api/changetrackedentity-stagefordeletion) method.
 
 ## June 2025: New in preview only
@@ -50,6 +45,10 @@ Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resourc
 ### Backup storage
 
 [Get](/graph/api/emailnotificationssetting-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/emailnotificationssetting-update?view=graph-rest-beta&preserve-view=true) email notification settings in a tenant.
+
+### Device and app management | Cloud PC
+
+[Retrieve the Cloud PC count grouped by status](/graph/api/cloudpc-retrievecloudpccountbystatus?view=graph-rest-beta&preserve-view=true).
 
 ## Education
 
