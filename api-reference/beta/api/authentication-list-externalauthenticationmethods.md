@@ -29,16 +29,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-list-externalauthenticationmethods-permissions.md)]
 
-### Permissions acting on other users
-<!-- {
-  "blockType": "permissions",
-  "name": "authentication-list-externalauthenticationmethods-2-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/authentication-list-externalauthenticationmethods-2-permissions.md)]
-
-[!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
-
 ## HTTP request
 
 To retrieve details of your own external authentication methods:
@@ -48,12 +38,6 @@ GET /me/authentication/externalAuthenticationMethods
 ```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
-
-To retrieve details of your own or another user's external authentication methods:
-<!-- { "blockType": "ignored" } -->
-``` http
-GET /users/{id}/authentication/externalAuthenticationMethods
-```
 
 ## Optional query parameters
 
