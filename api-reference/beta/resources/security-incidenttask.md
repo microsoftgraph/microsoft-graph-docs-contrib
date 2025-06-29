@@ -29,7 +29,6 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|responseAction|microsoft.graph.security.incidentTaskResponseAction|The reponse action see [incidentTaskResponseAction](../resources/security-incidenttaskresponseaction.md#incidenttaskresponseaction-resource-type).|
 |actionStatus|microsoft.graph.security.incidentTaskActionStatus|The execution status of the action. The possible values are: `notStarted`, `inProgress`, `partiallyCompleted`, `completed`, `failed`, `unknownFutureValue`. For more information, see [incidentTaskActionStatus values](#incidenttaskactionstatus-values).|
 |actionType|microsoft.graph.security.incidentTaskActionType|The remediation action to perform. The possible values are: `text`, `isolateDevice`, `stopAndQuarantineFile`, `runAntiVirusScan`, `collectInvestigationPackage`, `restrictAppExecution`, `submitIocRule`, `forceUserPasswordReset`, `disableUser`, `markUserAsCompromised`, `requireSignIn`, `hardDeleteEmail`, `softDeleteEmail`, `unIsolateDevice`, `unRestrictAppExecution`, `enableUser`, `unknownFutureValue`. For more information, see [incidentTaskActionType values](#incidenttaskactiontype-values).|
 |createdByDisplayName|String|Name of the entity that created the task. Read-only.|
@@ -39,6 +38,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |id|String|Unique GUID identifier for the task.|
 |lastModifiedByDisplayName|String|Name of the entity that last updated the task. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Last update time of the task. Read-only.|
+|responseAction|microsoft.graph.security.incidentTaskResponseAction|The reponse action.|
 |source|microsoft.graph.security.incidentTaskSource|Origin of the task. The possible values are: `defenderExpertsGuidedResponse`, `defenderExpertsManagedResponse`, `unknownFutureValue`. For more information, see [incidentTaskSource values](#incidenttasksource-values).|
 |status|microsoft.graph.security.incidentTaskStatus|Current task status. This property is the only property you can update. The possible values are: `open`, `inProgress`, `completed`, `failed`, `notRelevant`, `unknownFutureValue`. For more information, see [incidentTaskStatus values](#incidenttaskstatus-values).|
 
