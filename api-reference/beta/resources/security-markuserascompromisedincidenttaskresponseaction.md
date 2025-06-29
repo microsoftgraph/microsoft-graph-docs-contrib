@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an action to mark a user account as compromised in Microsoft Defender XDR. This action sets the user's risk level to "high" in Azure Active Directory, which can trigger conditional access policies and additional security measures.
+Represents an action to mark a user account as compromised in Microsoft Defender XDR. This action sets the user's risk level to "high" in Microsoft Entra ID Protection, which can trigger conditional access policies and additional security measures.
 
 Inherits from [microsoft.graph.security.incidentTaskResponseAction](../resources/security-incidenttaskresponseaction.md).
 
