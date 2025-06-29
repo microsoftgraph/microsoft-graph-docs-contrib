@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.security.incidentTaskResponseAction](../resources
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|identifierValue|String|Required. The identifier (such as UPN or object ID) of the user who will be required to sign in again. Inherited from [microsoft.graph.security.incidentTaskResponseAction](../resources/security-incidenttaskresponseaction.md).|
+|identifierValue|String|Required. The identifier (such as userPrincipalName or object ID) of the user who will be required to sign in again. Inherited from [microsoft.graph.security.incidentTaskResponseAction](../resources/security-incidenttaskresponseaction.md).|
 
 ## Relationships
 None.
