@@ -148,20 +148,6 @@ items:
       href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
-    - name: Bulk reprovision remote action (deprecated)
-      href: ../../api/manageddevice-bulkreprovisioncloudpc.md
-    - name: Bulk resize (deprecated)
-      href: ../../api/cloudpc-bulkresize.md
-    - name: Bulk restore remote action (deprecated)
-      href: ../../api/manageddevice-bulkrestorecloudpc.md
-    - name: Get remote action results (deprecated)
-      href: ../../api/manageddevice-getcloudpcremoteactionresults.md
-    - name: Get review status (deprecated)
-      href: ../../api/manageddevice-getcloudpcreviewstatus.md
-    - name: Set review status (deprecated)
-      href: ../../api/manageddevice-setcloudpcreviewstatus.md
-    - name: Bulk set review status (deprecated)
-      href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -278,8 +264,6 @@ items:
       href: ../../api/cloudpcreports-getactionstatusreports.md
     - name: Get bulk action status reports
       href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
-    - name: Get Cloud PC recommendation reports
-      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: Get Cloud PC troubleshooting reports
       href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
     - name: Get frontline report
@@ -296,6 +280,8 @@ items:
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Retrieve Cloud PC recommendation reports
+      href: ../../api/cloudpcreports-retrievecloudpcrecommendationreports.md
     - name: Retrieve Cloud PC tenant metrics report
       href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
     - name: Retrieve cross-region disaster recovery report
@@ -306,6 +292,8 @@ items:
       href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
     - name: Get Cloud PC performance report (deprecated)
       href: ../../api/cloudpcreports-getcloudpcperformancereport.md
+    - name: Get Cloud PC recommendation reports (deprecated)
+      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: Get connection quality reports (deprecated)
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: Get shared use license usage report (deprecated)
@@ -328,8 +316,8 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
-    - name: List (deprecated)
-      href: ../../api/virtualendpoint-list-snapshots.md
+    - name: Retrieve snapshots
+      href: ../../api/cloudpc-retrievesnapshots.md
   - name: Cloud PC supported region
     items:
     - name: Cloud PC supported region
@@ -384,8 +372,6 @@ items:
       href: ../../api/virtualendpoint-list-supportedregions.md
     - name: List service plans
       href: ../../api/virtualendpoint-list-serviceplans.md
-    - name: List snapshots
-      href: ../../api/virtualendpoint-list-snapshots.md
     - name: List external partner settings
       href: ../../api/virtualendpoint-list-externalpartnersettings.md
     - name: Create external partner setting
@@ -8588,6 +8574,8 @@ items:
       href: ../../resources/windowsupdates-qualityupdatefilter.md
     - name: Rate driven rollout settings
       href: ../../resources/windowsupdates-ratedrivenrolloutsettings.md
+    - name: Remediation update filter
+      href: ../../resources/windowsupdates-remediationupdatefilter.md
     - name: Safeguard profile
       href: ../../resources/windowsupdates-safeguardprofile.md
     - name: Safeguard settings

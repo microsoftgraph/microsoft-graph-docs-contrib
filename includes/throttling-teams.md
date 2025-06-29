@@ -50,6 +50,7 @@ Limits are expressed as requests per second (rps).
 | Get all chat messages for a user<br/>GET users/```{user-id}```/chats/[getAllMessages](/graph/api/chats-getallmessages)<br/>GET users/```{user-id}```/chats/allMessages | 200rps | 1000rps |
 | GET /teams/```{team-id}```/channels/[getAllRetainedMessages](/graph/api/channel-getallretainedmessages) | 200rps | 1000rps |
 | GET /users/```{user-id}```/chats/[getAllRetainedMessages](/graph/api/chat-getallretainedmessages) | 200rps | 1000rps |
+| GET /copilot/users/```{user-id}```/interactionHistory/[getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions) | 30rps | 1500rps |
 | Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps | 1rps |
 | Other API calls for Microsoft Teams              | 30 rps | 300 rps | 1rps |
 

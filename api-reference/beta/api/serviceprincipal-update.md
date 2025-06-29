@@ -17,7 +17,9 @@ Namespace: microsoft.graph
 Update the properties of [servicePrincipal](../resources/serviceprincipal.md) object.
 
 > [!IMPORTANT]
-> Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./serviceprincipal-addpassword.md) and [removePassword](./serviceprincipal-removepassword.md) methods to update the password or secret for a servicePrincipal.
+> - Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./serviceprincipal-addpassword.md) and [removePassword](./serviceprincipal-removepassword.md) methods to update the password or secret for a servicePrincipal.
+>
+> - Service principals inherit specific properties from their associated app registrations. These properties are synchronized from the app registration, but the synchronization isn't immediate or continuous. Sometimes, updating a service principal may prompt the directory to refresh properties from the app registration, causing updates that weren't part of the original request.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -238,3 +240,4 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+

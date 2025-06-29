@@ -56,6 +56,10 @@ items:
     href: ../../api/peopleadminsettings-post-photoupdatesettings.md
   - name: Delete photo update setting
     href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
+  - name: List profile sources
+    href: ../../api/peopleadminsettings-list-profilesources.md
+  - name: Create profile source
+    href: ../../api/peopleadminsettings-post-profilesources.md
   - name: List profile property settings
     href: ../../api/peopleadminsettings-list-profilepropertysettings.md
   - name: Create profile property setting
@@ -110,6 +114,21 @@ items:
       href: ../../api/profilepropertysetting-update.md
     - name: Delete
       href: ../../api/profilepropertysetting-delete.md
+  - name: Profile source
+    displayName: source attribution, connector source
+    items:
+    - name: Profile source
+      href: ../../resources/profilesource.md
+    - name: List
+      href: ../../api/peopleadminsettings-list-profilesources.md
+    - name: Create
+      href: ../../api/peopleadminsettings-post-profilesources.md
+    - name: Get
+      href: ../../api/profilesource-get.md
+    - name: Update
+      href: ../../api/profilesource-update.md
+    - name: Delete
+      href: ../../api/profilesource-delete.md
   - name: Pronouns settings
     items:
     - name: Pronouns settings
@@ -522,6 +541,21 @@ items:
       href: ../../api/personwebsite-update.md
     - name: Delete
       href: ../../api/personwebsite-delete.md
+- name: Profile source
+  displayName: source attribution, connector source
+  items:
+  - name: Profile source
+    href: ../../resources/profilesource.md
+  - name: List
+    href: ../../api/peopleadminsettings-list-profilesources.md
+  - name: Create
+    href: ../../api/peopleadminsettings-post-profilesources.md
+  - name: Get
+    href: ../../api/profilesource-get.md
+  - name: Update
+    href: ../../api/profilesource-update.md
+  - name: Delete
+    href: ../../api/profilesource-delete.md
 - name: Profile property setting
   items:
   - name: Profile property setting

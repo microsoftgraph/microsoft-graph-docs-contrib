@@ -47,6 +47,12 @@ Profile source precedence determines the order in which data sources are used fo
 
 The [profilePropertySetting](../resources/profilepropertysetting.md) represents a collection of configuration data for property-level settings configured by an administrator, including profile source precedence.
 
+### Feature: Profile source customization (preview)
+
+Provides administrators the ability to customize the display information of a profile source seen by users across an organization in Microsoft 365 experiences.
+
+The [profileSource](../resources/profilesource.md) resource represents the configuration data of a profile source created by an organization administrator. This configuration represents the source of profile data in a way that is understandable to end-users.
+
 ## Help users get the most relevant documents for their work
 
 ### Feature: Document insights

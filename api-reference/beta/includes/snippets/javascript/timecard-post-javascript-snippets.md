@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const timeCard = {
-  onBehalfOfUserId: 'a3601044-a1b5-438e-b742-f78d01d68a67',
+  userId: 'a3601044-a1b5-438e-b742-f78d01d68a67',
   clockInEvent: {
      dateTime: '2019-03-18T00:00:00.000Z',
      isAtApprovedLocation: true,
