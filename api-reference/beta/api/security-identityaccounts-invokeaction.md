@@ -56,7 +56,7 @@ The following table lists the parameters that are required when you call this ac
 |:---|:---|:---|
 |accountId|String|The identifier of the account to perform the action on.|
 |action|microsoft.graph.security.action|The type of action to perform on the account. The possible values are: `disable`, `enable`, `forcePasswordReset`, `revokeAllSessions`, `requireUserToSignInAgain`, `markUserAsCompromised`.|
-|identityProvider|microsoft.graph.security.identityProvider|The identity provider associated with the account. The possible values are: `entraID`, `activeDirectory`, `okta`, `unknownFutureValue`.|
+|identityProvider|microsoft.graph.security.identityProvider|The identity provider associated with the account. The possible values are: `entraID`, `activeDirectory`, `okta`.|
 
 
 | Action Value             | Description                                                                                                                        |
@@ -112,7 +112,7 @@ Content-Type: application/json
     {
       "accountId": "256db173-930a-4991-9061-0d51a9a93ba5",
       "action": "disable",
-      "provider": "ActiveDirectory",
+      "provider": "activeDirectory",
       "correlationId": "ed2f052b-2a01-4cd9-acb3-f6145f83e1a5"
     }
 }

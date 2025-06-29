@@ -20,9 +20,9 @@ Represents the invoke action result after [disabling an identity account](../api
 |Property| Type                                                                                  | Description                                                                                                                                                                             |
 |:---|:--------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |accountId| String                                                                                | The account ID.                                                                                                                                                                         |
-|action| microsoft.graph.security.action                                                       | The type of action. The possible values are: `disable`, `enable`, `forcePasswordReset`, `revokeAllSessions`, `requireUserToSignInAgain`, `markUserAsCompromised`, `unknownFutureValue`. |
+|action| microsoft.graph.security.action                                                       | The type of action. The possible values are: `disable`, `enable`, `forcePasswordReset`, `revokeAllSessions`, `requireUserToSignInAgain`, `markUserAsCompromised`. |
 |correlationId| String                                                                                | The unique identifier for tracking the request.                                                                                                                                         |
-|identityProvider| microsoft.graph.security.identityProvider                                             | The identity provider type. The possible values are: `entraID`, `activeDirectory`, `okta`, `unknownFutureValue`.                                                                        |
+|identityProvider| microsoft.graph.security.identityProvider                                             | The identity provider type. The possible values are: `entraID`, `activeDirectory`, `okta`.                                                                        |
 
 ## Relationships
 None.

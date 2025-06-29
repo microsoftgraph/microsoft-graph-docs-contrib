@@ -17,11 +17,11 @@ Namespace: microsoft.graph.security
 Provides details of an [identity's account](../resources/security-identityaccounts.md).
 
 ## Properties
-|Property| Type                                                                                                     | Description                 |
-|:---|:---------------------------------------------------------------------------------------------------------|:----------------------------|
-|actions| microsoft.graph.security.action collection                                                               | List of the type of action. The possible values are: `disable`, `enable`, `forcePasswordReset`, `revokeAllSessions`, `requireUserToSignInAgain`, `markUserAsCompromised`, `unknownFutureValue`.|
-|identifier| String                                                                                                   | The account ID.             |
-|identityProvider| microsoft.graph.security.identityProvider                                                                | The identity provider. The possible values are: `entraID`, `activeDirectory`, `okta`, `unknownFutureValue`.     |
+|Property| Type                                                                                                     | Description                                                                                                                                                              |
+|:---|:---------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|actions| microsoft.graph.security.action collection                                                               | List of the type of action. The possible values are: `disable`, `enable`, `forcePasswordReset`, `revokeAllSessions`, `requireUserToSignInAgain`, `markUserAsCompromised`.|
+|identifier| String                                                                                                   | The account ID.                                                                                                                                                          |
+|identityProvider| microsoft.graph.security.identityProvider                                                                | The identity provider. The possible values are: `entraID`, `activeDirectory`, `okta`.                                                                                    |
 
 | Action Value             | Description                                                                                                                          |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
