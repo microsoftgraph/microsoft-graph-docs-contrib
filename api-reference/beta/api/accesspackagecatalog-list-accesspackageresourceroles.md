@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [accessPackageResourceRole](../resources/accesspackageresourcerole.md) objects of an [accessPackageResource](../resources/accesspackageresource.md) in an [accessPackageCatalog](../resources/accesspackagecatalog.md). The resource should have been added to the catalog by [creating an accessPackageResourceRequest](entitlementmanagement-post-accesspackageresourcerequests.md). This list of roles can then be used by the caller to select a role, which is needed when later [creating an accessPackageResourceRoleScope](accesspackage-post-accesspackageresourcerolescopes.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -237,3 +237,71 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
+### Example 3: Retrieving the roles of a resource for a PIM-managed group
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_eligible_accesspackageresourceroles"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/15d889df-3eb8-4e9b-bfb4-b1908849aec4/accessPackageResourceRoles?$filter=(originSystem+eq+%27AadGroup%27+and+accessPackageResource/id+eq+%27a35bef72-a8aa-4ca3-af30-f6b2ece7208f%27)&$expand=accessPackageResource
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRole",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "4f880547-ad41-4a2f-a1a7-99395c247e5a",
+      "displayName": "Eligible Member",
+      "description": "Eligible Member",
+      "originId": "27a35bef72-a8aa-4ca3-af30-f6b2ece7208f",
+      "originSystem": "AadGroup"
+    },
+    {
+      "id": "f0934696-3aba-429d-b69b-c01748aa9323",
+      "displayName": "Eligible Owner",
+      "description": "Eligible Owner",
+      "originId": "27a35bef72-a8aa-4ca3-af30-f6b2ece7208f",
+      "originSystem": "AadGroup"
+    },
+    {
+      "id": "4e2cc45f-a3f0-4f0a-b33b-d30e04497315",
+      "displayName": "Member",
+      "description": "Member",
+      "originId": "27a35bef72-a8aa-4ca3-af30-f6b2ece7208f",
+      "originSystem": "AadGroup"
+    },
+    {
+      "id": "bd939e12-cf35-4347-aed9-80b87dc10aac",
+      "displayName": " Owner",
+      "description": "Owner",
+      "originId": "27a35bef72-a8aa-4ca3-af30-f6b2ece7208f",
+      "originSystem": "AadGroup"
+    }
+  ]
+}
+```
+
