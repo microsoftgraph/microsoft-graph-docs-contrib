@@ -34,6 +34,10 @@ Updated the throttling information for [getAllEnterpriseInteractions](/graph/api
 
 ## June 2025: New in preview only
 
+### Device and app management | Cloud PC
+
+Use the **provisioningSourceType** property on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to indicate the provisioning source of the Cloud PC prepared for an end user.
+
 ### Security | eDiscovery
 
 - Use the **description** property on [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta&preserve-view=true) to get or set the eDiscovery review set description.
