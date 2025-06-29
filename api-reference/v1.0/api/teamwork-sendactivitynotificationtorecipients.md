@@ -280,7 +280,7 @@ If you want to notify multiple users with a customized icon instead of the defau
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "teamworksendactivitynotificationtorecipients_customicon"
+  "name": "teamwork_sendactivitynotificationtorecipients_3"
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/teamwork/sendActivityNotificationToRecipients
