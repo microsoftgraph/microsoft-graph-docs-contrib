@@ -1,6 +1,6 @@
 ---
 title: "incidentTask resource type"
-description: "Represents a remediation action identified by  Microsoft Defender Experts for  (Extended Detection and Response)."
+description: "Represents a remediation action identified by Microsoft Defender Experts for XDR."
 author: "BenAlfasi"
 ms.date: 05/07/2025
 ms.localizationpriority: medium
