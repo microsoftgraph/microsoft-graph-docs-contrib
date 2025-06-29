@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.security.incidentTaskResponseAction](../resources
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|identifierValue|String|Required. The identifier (such as UPN or object ID) of the user account to mark as compromised. Inherited from [microsoft.graph.security.incidentTaskResponseAction](../resources/security-incidenttaskresponseaction.md).|
+|identifierValue|String|Required. The identifier (such as userPrincipalName or object ID) of the user account to mark as compromised. Inherited from [microsoft.graph.security.incidentTaskResponseAction](../resources/security-incidenttaskresponseaction.md).|
 
 ## Relationships
 None.
