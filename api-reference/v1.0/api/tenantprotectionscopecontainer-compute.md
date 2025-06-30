@@ -55,11 +55,13 @@ In the request body, provide JSON object with the following parameters.
 
 If successful, this action returns a `200 OK` response code and a collection of [policyTenantScope](../resources/policytenantscope.md) objects in the response body. Each object represents a set of locations and activities governed by a common set of policy actions and execution mode, along with the user/group bindings for that specific policy configuration.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Compute tenant-wide protection scope for an Enterprise AI app
 
-The following example computes the tenant-wide protection scope for text uploads, interested in a specific domain, pivoting the results by location.
+#### Request
+
+The following example computes the tenant-wide protection scope for text uploads and downloads, interested in a specific application.
 
 ```http
 POST https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/protectionScopes/compute
@@ -76,7 +78,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response. It indicates that uploadText or downloadText activities "All" users (tenant scope) with no exclusions require inline evaluation.
 
@@ -110,5 +112,83 @@ Content-type: application/json
             ]
         }
     ]
+}
+```
+
+### Example 2: Compute tenant-wide protection scope for a network provider app
+
+#### Request
+
+The following example computes the tenant-wide protection scope for text uploads and downloads and file uploads and downloads, interested in a specific application.
+
+```http
+POST https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/protectionScopes/compute
+Content-type: application/json
+
+{
+    "activities": "uploadText,downloadText",
+    "locations": [
+        {
+            "@odata.type": "microsoft.graph.policyLocationApplication",
+            "value": "be121c8f-ecd8-4026-b699-669e0ce1bcbf"
+        }
+    ]
+}
+```
+
+#### Response
+
+The following example shows the response. It indicates that uploadText, downloadText, uploadFile, or downloadFile activities for 'subdomain.domain.com', 'domain.com/content' or 'https://subdomain.domain.com/content/subcontent' require offline evaluation. UploadText activity for 'subdomain.domain2.com', 'domain2.com/content' or 'https://subdomain.domain2.com/content/subcontent' requires inline evaluation.
+
+```http
+
+> **Note:** The response object shown here might be shortened for readability.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.policyTenantScope)",
+  "value": [
+    {
+      "activities": "uploadText,uploadFile,downloadText,downloadFile",
+      "executionMode": "evaluateOffline",
+      "locations": [
+        {
+          "@odata.type": "#microsoft.graph.policyLocationDomain",
+          "value": "subdomain.domain.com"
+        },
+        {
+          "@odata.type": "#microsoft.graph.policyLocationDomain",
+          "value": "domain.com/content"
+        },
+        {
+          "@odata.type": "#microsoft.graph.policyLocationUrl",
+          "value": "https://subdomain.domain.com/content/subcontent"
+        }
+      ],
+      "policyActions": []
+    },
+    {
+      "activities": "uploadText",
+      "executionMode": "evaluateInline",
+      "locations": [
+        {
+          "@odata.type": "#microsoft.graph.policyLocationDomain",
+          "value": "subdomain.domain2.com"
+        },
+        {
+          "@odata.type": "#microsoft.graph.policyLocationDomain",
+          "value": "domain2.com/content"
+        },
+        {
+          "@odata.type": "#microsoft.graph.policyLocationUrl",
+          "value": "https://subdomain.domain2.com/content/subcontent"
+        }
+      ],
+      "policyActions": []
+    }
+  ]
 }
 ```
