@@ -3311,6 +3311,13 @@
       ],
       "childNodes": [
         {
+          "name": "Extended properties",
+          "overview": "../../resources/extended-properties-overview.md",
+          "resources": [
+            "singleValueExtendedProperty"
+          ]
+        },
+        {
           "name": "Deprecated Task APIs",
           "additionalLinks": [
             {
