@@ -90,6 +90,14 @@ items:
     href: ../../api/linkedresource-update.md
   - name: Delete
     href: ../../api/linkedresource-delete.md
+- name: Single value extended property
+  items:
+  - name: Single value extended property
+    href: ../../resources/singlevalueextendedproperty.md
+  - name: Create
+    href: ../../api/todotask-post-singlevalueextendedproperties.md
+  - name: Update
+    href: ../../api/singlevalueextendedproperty-update.md
 - name: Deprecated Task APIs
   items:
   - name: To-do API with base tasks

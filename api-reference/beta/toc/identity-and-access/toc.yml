@@ -2753,6 +2753,8 @@ items:
         href: ../../api/riskyusers-get.md
       - name: Confirm compromised
         href: ../../api/riskyusers-confirmcompromised.md
+      - name: Confirm safe
+        href: ../../api/riskyuser-confirmsafe.md
       - name: Dismiss
         href: ../../api/riskyusers-dismiss.md
       - name: List history
