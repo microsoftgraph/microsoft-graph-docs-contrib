@@ -126,7 +126,7 @@ POST https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/protect
 Content-type: application/json
 
 {
-    "activities": "uploadText,downloadText",
+    "activities": "uploadText,downloadText, uploadFile,downloadFile",
     "locations": [
         {
             "@odata.type": "microsoft.graph.policyLocationApplication",
