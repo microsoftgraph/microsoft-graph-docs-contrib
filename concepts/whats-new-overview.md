@@ -19,6 +19,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## July 2025: New and generally available
 
+### Education
+
+[Get](/graph/api/reportsroot-list-readingcoachpassages?view=graph-rest-beta&preserve-view=true) a list of Reading Coach passages that were practiced by a student.
+
 ### Files
 
 Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession) extends the expiration time.
