@@ -48,8 +48,7 @@ In the request body, supply a JSON representation of the [singleValueLegacyExten
 
 If successful, this method returns a 200 OK response code and an updated [todoTask](../resources/todotask.md) object in the response body. To ensure that the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object is returned in the response body include $expand query parameters in the request.
 
-## Example
-Update singleValueExtendedProperty on a task.
+## Example - Update singleValueExtendedProperty
 
 ### Request
 
@@ -94,8 +93,7 @@ Content-Type: application/json
   ]
 }
 ```
-## Example
-Delete singleValueExtendedProperty from a task.
+## Example - Delete singleValueExtendedProperty
 
 ### Request
 

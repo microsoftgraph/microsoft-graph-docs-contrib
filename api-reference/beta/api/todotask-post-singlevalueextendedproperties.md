@@ -1,6 +1,6 @@
 ---
 title: "Post single value extended property on a Task"
-description: "Update single value extended property on a Task"
+description: "Post single value extended property on a Task"
 author: "sgunturi"
 ms.date: 06/30/2025
 ---
