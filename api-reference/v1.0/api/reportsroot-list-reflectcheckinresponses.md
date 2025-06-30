@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/reports/reflectCheckInResponses
+GET https://graph.microsoft.com/v1.0/education/reports/reflectCheckInResponses
 ```
 
 #### Response
@@ -132,7 +132,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/reports/reflectCheckInResponses?$filter=submitDateTime gt 2025-06-11T00:00:00.000Z and submitDateTime lt 2025-06-12T00:00:00Z
+GET https://graph.microsoft.com/v1.0/education/reports/reflectCheckInResponses?$filter=submitDateTime gt 2025-06-11T00:00:00.000Z and submitDateTime lt 2025-06-12T00:00:00Z
 ```
 
 #### Response
