@@ -1,6 +1,13 @@
+---
+title: "Post single value extended property on a Task"
+description: "Update single value extended property on a Task"
+author: "sgunturi"
+ms.date: 06/30/2025
+---
+
 # Create singleValueExtendedProperties
 
-Create a new single-value extended property for a [todoTask](../resources/todotask.md) object.
+Create a new single value extended property for a [todoTask](../resources/todotask.md) object.
 
 ## Permissions
 
@@ -25,8 +32,6 @@ POST https://graph.microsoft.com/beta/me/todo/lists/AAMkAGRkODAyMWY4LThhNDAtNDY5
 
 In the request body, supply a JSON representation of the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.
 
-### Example
-
 ```json
 {
   "title": "sampleTitle",
@@ -37,6 +42,7 @@ In the request body, supply a JSON representation of the [singleValueLegacyExten
     }
   ]
 }
+```
 
 ## Response
 
