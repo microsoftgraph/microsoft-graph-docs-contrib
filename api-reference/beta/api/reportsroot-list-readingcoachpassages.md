@@ -89,7 +89,7 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/readingCoachPassages",
   "value": [
     {
-      "createdAtUtcDateTime": "2025-06-25T14:51:31.0663974Z",
+      "practicedAtDateTime": "2025-06-25T14:51:31.0663974Z",
       "studentId": "27a9716d-05aa-4aaa-ae18-9fc10318a03d",
       "practiceWords": [
         "science",
@@ -106,7 +106,7 @@ Content-Type: application/json
       "isReadingCompleted": true
     },
     {
-      "createdAtUtcDateTime": "2025-06-25T12:51:31.0663974Z",
+      "practicedAtDateTime": "2025-06-25T12:51:31.0663974Z",
       "studentId": "27a9716d-05aa-4aaa-ae18-9fc10318a03d",
       "practiceWords": [
         "tortoise",
@@ -137,7 +137,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/reports/readingCoachPassages?$filter=createdAtUtcDateTime gt 2025-06-22T00:00:00Z and createdAtUtcDateTime lt 2025-06-23T00:00:00Z
+GET https://graph.microsoft.com/beta/education/reports/readingCoachPassages?$filter=practicedAtDateTime gt 2025-06-22T00:00:00Z and practicedAtDateTime lt 2025-06-23T00:00:00Z
 ```
 
 #### Response
@@ -159,7 +159,7 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/readingCoachPassages",
   "value": [
     {
-      "createdAtUtcDateTime": "2025-06-22T14:51:31.0663974Z",
+      "practicedAtDateTime": "2025-06-22T14:51:31.0663974Z",
       "studentId": "27a9716d-05aa-4aaa-ae18-9fc10318a03d",
       "practiceWords": [
         "science",
@@ -176,7 +176,7 @@ Content-Type: application/json
       "isReadingCompleted": true
     },
     {
-      "createdAtUtcDateTime": "2025-06-22T12:51:31.0663974Z",
+      "practicedAtDateTime": "2025-06-22T12:51:31.0663974Z",
       "studentId": "27a9716d-05aa-4aaa-ae18-9fc10318a03d",
       "practiceWords": [
         "tortoise",
