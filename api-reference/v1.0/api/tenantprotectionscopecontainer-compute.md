@@ -78,7 +78,7 @@ Content-type: application/json
 
 ### Response
 
-The following example shows the response. It indicates that for uploads to `public.contoso.com`, there's a policy applicable to "All" users (tenant scope) that requires inline evaluation and triggers a browser restriction.
+The following example shows the response. It indicates that uploadText or downloadText activities "All" users (tenant scope) with no exclusions require inline evaluation.
 
 > **Note:** The response object shown here might be shortened for readability.
 
