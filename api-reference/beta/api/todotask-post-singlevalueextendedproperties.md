@@ -33,12 +33,6 @@ POST /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/singleValueExtendedPrope
 POST /users/{usersId}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/singleValueExtendedProperties
 ```
 
-To create one or more extended properties in a new task, use the same REST request as creating a task, and include the properties of the new task and extended property in the request body. 
-
-```HTTP
-POST https://graph.microsoft.com/beta/me/todo/lists/AAMkAGRkODAyMWY4LThhNDAtNDY5NC04NGZlLTg1MWI3ZjhlNzlkYQAuAAAAAABqWGq8OtNGQZXSxZmlbsdaAQAX-0TLdmcpTbYc7Xjt9MBtAAKE11mZAAA=/tasks$expand=singleValueExtendedProperties($filter=id eq 'String 0x3004')
-```
-
 ## Request headers
 
 |Name|Description|
