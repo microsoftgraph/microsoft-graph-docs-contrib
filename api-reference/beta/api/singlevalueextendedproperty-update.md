@@ -20,12 +20,7 @@ Update a [singleValueExtendedProperty](../resources/singlevalueextendedproperty.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "singlevalueextendedproperty-update-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/singlevalueextendedproperty-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/todotask-update-permissions.md)]
 
 ## HTTP request
 
@@ -49,7 +44,7 @@ PATCH /users/{usersId}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/singleValu
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-**TODO: Remove properties that don't apply**
+**TODO: Add or remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |value|String|**TODO: Add Description** Optional.|
