@@ -43,8 +43,9 @@ Note that not all the data ingested from third-party systems appears automatical
 
 By default, people data provided via a Copilot connector is visible to all users in the tenant. This connector data is stored in the user’s Microsoft 365 profile. Data is retained as long as the user is active and licensed, unless deleted by an admin or the user via a Data Subject Request (DSR). DSRs allow users to [export their profile data](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true).  
 
-#### Information Barriers 
-Microsoft 365 Copilot connectors for people data respects Information Barriers (IB), ensuring compliance across various platforms. Microsoft Purview Information Barriers (IB) restricts communication and collaboration between specific groups in Teams, SharePoint, and OneDrive. It helps prevent conflicts of interest and protects internal information by ensuring restricted users can't find, chat, or call each other, which is particularly useful in regulated industries. For more info see [Information Barriers](https://learn.microsoft.com/en-us/purview/information-barriers). 
+#### Information barriers 
+
+Microsoft 365 Copilot connectors for people data comply with information barriers (IB) to ensure compliance across various platforms. Microsoft Purview Information Barriers restrict communication and collaboration between specific groups in Teams, SharePoint, and OneDrive. It helps prevent conflicts of interest and protects internal information by ensuring restricted users can't find, chat, or call each other, which is particularly useful in regulated industries. For more information, see [Learn about information barriers](/purview/information-barriers).
 
 ### Data usage 
 
