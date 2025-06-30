@@ -71,7 +71,9 @@ If successful, this action returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Compute protection scope for an Enterprise AI app
+
+#### Request
 
 The following example computes the protection scope for a user performing text uploads and downloads.
 
@@ -90,7 +92,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response. It indicates that for the `uploadText` activity for the integrated application with id 83ef208a-0396-4893-9d4f-d36efbffc8bd, policies require inline evaluation. For the `uploadFile` activity for the integrated application with id 83ef208a-0396-4893-9d4f-d36efbffc8bd, policies require offline evaluation and trigger a `restrictAccess` action (likely blocking uploads based on contextual information, e.g. blocking uploads for specific users or group).
 
@@ -128,6 +130,78 @@ Content-type: application/json
             "restrictionAction": "block"
         }
      ]
+    }
+  ]
+}
+```
+
+### Example 2: Compute protection scope for a network provider app
+
+#### Request
+
+The following example computes the tenant-wide protection scope for text uploads and downloads and file uploads and downloads, interested in a specific application.
+
+```http
+POST https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/protectionScopes/compute
+Content-type: application/json
+
+{
+    "activities": "uploadText,downloadText, uploadFile,downloadFile"
+}
+```
+
+#### Response
+
+The following example shows the response. It indicates that uploadText, downloadText, uploadFile, or downloadFile activities for 'subdomain.domain1.com', 'domain2.com' or 'https://subdomain.domain3.com/content/subcontent' require offline evaluation. UploadText activity for 'subdomain.domain1.com', 'domain2.com' or 'https://subdomain.domain3.com/content/subcontent' require inline evaluation.
+
+```http
+
+> **Note:** The response object shown here might be shortened for readability.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.policyTenantScope)",
+  "value": [
+    {
+      "activities": "uploadText,uploadFile,downloadText,downloadFile",
+      "executionMode": "evaluateOffline",
+      "locations": [
+        {
+          "@odata.type": "#microsoft.graph.policyLocationDomain",
+          "value": "subdomain.domain1.com"
+        },
+        {
+          "@odata.type": "#microsoft.graph.policyLocationDomain",
+          "value": "domain2.com"
+        },
+        {
+          "@odata.type": "#microsoft.graph.policyLocationUrl",
+          "value": "https://subdomain.domain3.com/content/subcontent"
+        }
+      ],
+      "policyActions": []
+    },
+    {
+      "activities": "uploadText",
+      "executionMode": "evaluateInline",
+      "locations": [
+        {
+          "@odata.type": "#microsoft.graph.policyLocationDomain",
+          "value": "subdomain.domain1.com"
+        },
+        {
+          "@odata.type": "#microsoft.graph.policyLocationDomain",
+          "value": "domain2.com"
+        },
+        {
+          "@odata.type": "#microsoft.graph.policyLocationUrl",
+          "value": "https://subdomain.domain3.com/content/subcontent"
+        }
+      ],
+      "policyActions": []
     }
   ]
 }
