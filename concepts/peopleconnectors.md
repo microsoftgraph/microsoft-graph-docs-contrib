@@ -29,9 +29,9 @@ Once connected, people data from the third-party system can appear in Microsoft 
 * Microsoft 365 profile cards
 * Microsoft 365 Copilot chat
 * Microsoft Search
- * Org Explorer 
+* Org Explorer 
 
-Admins can configure which properties are shown and how they map to the Microsoft 365 schema in the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/MicrosoftSearch/Connectors/add).  
+Admin can configure which M365 Copilot connectors for people data in [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/MicrosoftSearch/Connectors/add).  
 
 When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence](profilepriority-configure-profilepropertysetting.md).
 
@@ -42,6 +42,9 @@ Note that not all the data ingested from third-party systems appears automatical
 ### Data visibility
 
 By default, people data provided via a Copilot connector is visible to all users in the tenant. This connector data is stored in the user’s Microsoft 365 profile. Data is retained as long as the user is active and licensed, unless deleted by an admin or the user via a Data Subject Request (DSR). DSRs allow users to [export their profile data](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d?preview=true).  
+
+#### Information Barriers 
+Microsoft 365 Copilot connectors for people data respects Information Barriers (IB), ensuring compliance across various platforms. Microsoft Purview Information Barriers (IB) restricts communication and collaboration between specific groups in Teams, SharePoint, and OneDrive. It helps prevent conflicts of interest and protects internal information by ensuring restricted users can't find, chat, or call each other, which is particularly useful in regulated industries. For more info see [Information Barriers](https://learn.microsoft.com/en-us/purview/information-barriers). 
 
 ### Data usage 
 
