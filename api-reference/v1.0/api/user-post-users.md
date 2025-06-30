@@ -291,7 +291,7 @@ Content-type: application/json
 This example shows how to create a customer account in Microsoft Entra External ID in external tenants.
 
 >[!NOTE]
->For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.
+>For local account identities, password expirations must be disabled.
 
 #### Request
 
