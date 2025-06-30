@@ -3307,16 +3307,10 @@
         "todoTask",
         "taskFileAttachment",
         "checklistItem",
-        "linkedResource"
+        "linkedResource",
+        "singleValueExtendedProperty"
       ],
       "childNodes": [
-        {
-          "name": "Extended properties",
-          "overview": "../../resources/extended-properties-overview.md",
-          "resources": [
-            "singleValueExtendedProperty"
-          ]
-        },
         {
           "name": "Deprecated Task APIs",
           "additionalLinks": [
