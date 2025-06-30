@@ -1,6 +1,6 @@
 ---
 title: "singleValueExtendedProperty resource type"
-description: "SingleValueExtendedProperty"
+description: "Represents an extended property that contains a single value."
 author: "SindhuGunturi"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,19 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An extended property that contains a single value.
+Represents an extended property that contains a single value.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/todotask-post-singlevalueextendedproperties.md)|[singleValueExtendedProperty](../resources/singlevalueextendedproperty.md)|Create a new singleValueExtendedProperty on a task.|
-|[Update](../api/todotask-update-singlevalueextendedproperties.md)|[singleValueExtendedProperty](../resources/singlevalueextendedproperty.md)|Update a singleValueExtendedProperty on a task.|
+|[Create](../api/todotask-post-singlevalueextendedproperties.md)|[singleValueExtendedProperty](../resources/singlevalueextendedproperty.md)|Create a new [singleValueExtendedProperty](../resources/singlevalueextendedproperty.md) on a task.|
+|[Update](../api/singlevalueextendedproperty-update.md)|[singleValueExtendedProperty](../resources/singlevalueextendedproperty.md)|Update a [singleValueExtendedProperty](../resources/singlevalueextendedproperty.md) on a task.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|For permitted formats of id, please see - (../resources/singlevaluelegacyextendedproperty.md)|
-|value|String|Value of the property|
+|id|String|The unique identifier for a **singleValueExtendedProperty** object. For the list of permitted ID formats, see [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md).|
+|value|String|The value of the property.|
 
 ## Relationships
 None.
