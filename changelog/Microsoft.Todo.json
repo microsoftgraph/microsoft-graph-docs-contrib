@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "singleValueExtendedProperty",
           "ChangeType": "Addition",
-          "Description": "Added the [singleValueExtendedProperty](https://learn.microsoft.com/en-us/graph/api/resources/singleValueExtendedProperty?view=graph-rest-beta) resource.",
+          "Description": "Added the [singleValueExtendedProperty](https://learn.microsoft.com/en-us/graph/api/resources/singleValueExtendedProperty?view=graph-rest-beta) resource and associated methods.",
           "Target": "singleValueExtendedProperty"
         },
         {
