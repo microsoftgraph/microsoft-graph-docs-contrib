@@ -19,8 +19,8 @@ Represents an extended property that contains a single value.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/todotask-post-singlevalueextendedproperties.md)|[singleValueExtendedProperty](../resources/singlevalueextendedproperty.md)|Create a new [singleValueExtendedProperty](../resources/singlevalueextendedproperty.md) on a task.|
-|[Update](../api/singlevalueextendedproperty-update.md)|[singleValueExtendedProperty](../resources/singlevalueextendedproperty.md)|Update a [singleValueExtendedProperty](../resources/singlevalueextendedproperty.md) on a task.|
+|[Create](../api/todotask-post-singlevalueextendedproperties.md)|[singleValueExtendedProperty](../resources/singlevalueextendedproperty.md)|Create a new [singleValueExtendedProperty](../resources/singlevalueextendedproperty.md) on a [todoTask](../resources/todotask.md) object.|
+|[Update](../api/singlevalueextendedproperty-update.md)|[singleValueExtendedProperty](../resources/singlevalueextendedproperty.md)|Update a [singleValueExtendedProperty](../resources/singlevalueextendedproperty.md) of a [todoTask](../resources/todotask.md) object.|
 
 ## Properties
 |Property|Type|Description|
