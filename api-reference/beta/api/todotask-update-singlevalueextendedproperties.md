@@ -8,11 +8,11 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
+# Update singleValueLegacyExtendedProperty
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-# Update singleValueLegacyExtendedProperty
 
 Update a [singleValueExtendedProperty](../resources/singlevalueextendedproperty.md) of a [todoTask](../resources/todotask.md) object.
 
