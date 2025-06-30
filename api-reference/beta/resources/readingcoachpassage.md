@@ -27,7 +27,7 @@ Represents a Reading Coach passage that was practiced by a student.
 |createdAtUtcDateTime|DateTimeOffset|The date and time of the completion this Reading Coach passage. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |isReadingCompleted|Boolean|Indicates if the reading passage was completed.|
 |languageTag|String|The language of the reading passage.|
-|practiceWords|String collection|The list of words that the student should practice further.|
+|practiceWords|String collection|The list of challenging words for the student that they could practice further.|
 |storyType|readingCoachStoryType|The story type for the reading passage. The valid values are `aiGenerated`, `readWorks`, and `userProvided`.|
 |studentId|String|ID of the student that practiced the reading passage.|
 |timeSpentReadingInSeconds|Double|The time the student spent reading in seconds.|
