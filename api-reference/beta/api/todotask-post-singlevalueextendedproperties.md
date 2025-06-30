@@ -1,7 +1,7 @@
 ---
 title: "Post single value extended property on a Task"
 description: "Post single value extended property on a Task"
-author: "sgunturi"
+author: "SindhuGunturi"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 
 # Create singleValueExtendedProperties
 
-Create a new single value extended property for a [todoTask](../resources/todotask.md) object.
+Create a new [singleValueExtendedProperty](../resources/singlevalueextendedproperty.md) on a [todoTask](../resources/todotask.md) object.
 
 ## Permissions
 
@@ -100,5 +100,5 @@ Content-Type: application/json
 
 ## See also
 
-- [singleValueLegacyExtendedProperty resource type](../resources/singlevaluelegacyextendedproperty.md)
+- [singleValueExtendedProperty resource type](../resources/singlevalueextendedproperty.md)
 - [todoTask resource type](../resources/todotask.md)

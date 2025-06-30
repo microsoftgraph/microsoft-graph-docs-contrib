@@ -1,7 +1,7 @@
 ---
 title: "Update single value extended property on a Task"
 description: "Update single value extended property on a Task"
-author: "sgunturi"
+author: "SindhuGunturi"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 
 # Update singleValueExtendedProperties
 
-Update a single-value extended property for a [todoTask](../resources/todotask.md) object.
+Update a [singleValueExtendedProperty](../resources/singlevalueextendedproperty.md) of a [todoTask](../resources/todotask.md) object.
 
 ## Permissions
 
@@ -138,5 +138,5 @@ Content-Type: application/json
 
 ## See also
 
-- [singleValueLegacyExtendedProperty resource type](../resources/singlevaluelegacyextendedproperty.md)
+- [singleValueExtendedProperty resource type](../resources/singlevalueextendedproperty.md)
 - [todoTask resource type](../resources/todotask.md)
