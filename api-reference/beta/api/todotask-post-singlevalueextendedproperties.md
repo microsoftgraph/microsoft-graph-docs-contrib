@@ -3,6 +3,9 @@ title: "Post single value extended property on a Task"
 description: "Post single value extended property on a Task"
 author: "sgunturi"
 ms.date: 06/30/2025
+ms.localizationpriority: medium
+ms.subservice: "outlook"
+doc_type: apiPageType
 ---
 
 # Create singleValueExtendedProperties
