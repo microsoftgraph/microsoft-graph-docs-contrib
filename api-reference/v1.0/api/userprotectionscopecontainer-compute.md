@@ -92,7 +92,7 @@ Content-type: application/json
 
 ### Response
 
-The following example shows the response. It indicates that for the `uploadText` activity for the integrated application with id 83ef208a-0396-4893-9d4f-d36efbffc8bd, policies require inline evaluation. For the `uploadFile` activity for the integrated application with id 83ef208a-0396-4893-9d4f-d36efbffc8bd, policies require offline evaluation and trigger a `restrictAccess` action (likely blocking uploads based on sensitive content).
+The following example shows the response. It indicates that for the `uploadText` activity for the integrated application with id 83ef208a-0396-4893-9d4f-d36efbffc8bd, policies require inline evaluation. For the `uploadFile` activity for the integrated application with id 83ef208a-0396-4893-9d4f-d36efbffc8bd, policies require offline evaluation and trigger a `restrictAccess` action (likely blocking uploads based on contextual information, e.g. blocking uploads for specific users or group).
 
 > **Note:** The response object shown here might be shortened for readability.
 
