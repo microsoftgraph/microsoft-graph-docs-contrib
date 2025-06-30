@@ -24,9 +24,9 @@ Represents a Reading Coach passage that was practiced by a student.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|practicedAtDateTime|DateTimeOffset|The date and time the Reading Coach passage was practiced. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |isReadingCompleted|Boolean|Indicates if the reading passage was completed.|
 |languageTag|String|The language of the reading passage.|
+|practicedAtDateTime|DateTimeOffset|The date and time the Reading Coach passage was practiced. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |practiceWords|String collection|The list of challenging words for the student that they could practice further.|
 |storyType|readingCoachStoryType|The story type for the reading passage. The valid values are `aiGenerated`, `readWorks`, and `userProvided`.|
 |studentId|String|ID of the student that practiced the reading passage.|
