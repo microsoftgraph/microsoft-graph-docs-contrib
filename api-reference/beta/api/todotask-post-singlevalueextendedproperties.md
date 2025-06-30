@@ -65,7 +65,8 @@ If successful, this method returns a `201 Created` response code and a [todoTask
 
 ### Request
 
-The following example shows a request.
+The following example shows how to create one or more extended properties in a new task. Use the same REST request as when you create a task, and include both the new properties of the task and the extended properties in the request body.
+
 <!-- {
   "blockType": "request",
   "name": "create_singlevalueextendedproperty_from_"
@@ -93,7 +94,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.singleValueExtendedProperty"
+  "@odata.type": "microsoft.graph.todoTask"
 }
 -->
 ``` http
