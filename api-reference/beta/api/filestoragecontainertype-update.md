@@ -49,17 +49,11 @@ PATCH /storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description** Required.|
-|owningAppId|Guid|**TODO: Add Description** Required.|
-|billingClassification|fileStorageContainerBillingClassification|**TODO: Add Description**. The possible values are: `standard`, `trial`, `directToCustomer`, `unknownFutureValue`. Required.|
-|billingStatus|fileStorageContainerBillingStatus|**TODO: Add Description**. The possible values are: `invalid`, `valid`, `unknownFutureValue`. Required.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|expirationDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|settings|[fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md)|**TODO: Add Description** Required.|
-|etag|String|**TODO: Add Description** Required.|
+|name|String|Name of the fileStorageContainerType. Optional.|
+|settings|[fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md)|fileStorageContainerType settings. Optional.|
+|etag|String|Used for optimistic concurrency control. Must be exactly the value returned from create or get. Required.|
 
 
 
@@ -78,20 +72,18 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerType",
-  "name": "String",
-  "owningAppId": "Guid",
-  "billingClassification": "String",
-  "billingStatus": "String",
-  "expirationDateTime": "String (timestamp)",
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings"
+    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
+    "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
+    "isItemVersioningEnabled": "true",
+    "isSharingRestricted": "false"
   },
-  "etag": "String"
+  "etag": "RVRhZw==",
 }
 ```
 
@@ -112,16 +104,24 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerType",
   "id": "73753c5e-0a5f-8add-fe59-88cd9740926e",
-  "name": "String",
-  "owningAppId": "Guid",
-  "billingClassification": "String",
-  "billingStatus": "String",
-  "createdDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)",
+  "name": "Container Type Name",
+  "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
+  "billingClassification": "trial",
+  "billingStatus": "valid",
+  "createdDateTime": "01/20/2025",
+  "expirationDateTime": "02/20/2025",
+  "etag": "RVRhZyArIDE=",
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings"
-  },
-  "etag": "String"
+    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
+    "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
+    "isDiscoverabilityEnabled": "true",
+    "isSearchEnabled": "true",
+    "isItemVersioningEnabled": "true",
+    "itemMajorVersionLimit": "50",
+    "maxStoragePerContainerInBytes": "104857600",
+    "isSharingRestricted": "false",
+    "consumingTenantOverridables": "",
+  }
 }
 ```
 

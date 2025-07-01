@@ -14,7 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a fileStorageContainerType object.
+Delete a fileStorageContainerType object from the tenant. It can only be deleted if there are no fileStorageContainerTypeRegistrations associated
+with it in any tenant.
+
+>**Note**: At this time, only Trial fileStorageContainerTypes can be deleted.
 
 ## Permissions
 
@@ -34,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /storage/fileStorage/containerTypes/{fileStorageContainerTypeId}/$ref
+DELETE /storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
 ```
 
 ## Request headers
@@ -53,23 +56,22 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
+Delete a fileStorageContainerType
+
 ### Request
 
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "delete_filestoragecontainertype"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
 ```
 
 
 ### Response
 
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

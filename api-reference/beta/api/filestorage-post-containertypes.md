@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new fileStorageContainerType object.
+Create a [fileStorageContainerType](../resources/storageContainerType.md) in the owning tenant. The number of container types in a tenant is limited to 25.
 
 ## Permissions
 
@@ -50,17 +50,12 @@ In the request body, supply a JSON representation of the [fileStorageContainerTy
 
 You can specify the following properties when creating a **fileStorageContainerType**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description** Required.|
-|owningAppId|Guid|**TODO: Add Description** Required.|
-|billingClassification|fileStorageContainerBillingClassification|**TODO: Add Description**. The possible values are: `standard`, `trial`, `directToCustomer`, `unknownFutureValue`. Required.|
-|billingStatus|fileStorageContainerBillingStatus|**TODO: Add Description**. The possible values are: `invalid`, `valid`, `unknownFutureValue`. Required.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|expirationDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|settings|[fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md)|**TODO: Add Description** Required.|
-|etag|String|**TODO: Add Description** Required.|
+|name|String|fileStorageContainerType name. Required.|
+|owningAppId|Guid|ID of the application that owns the fileStorageContainerType. Required.|
+|billingClassification|fileStorageContainerBillingClassification|Billing type. Defaults to standard. The possible values are: `standard`, `trial`, `directToCustomer`. Optional.|
+|settings|[fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md)|fileStorageContainerType settings. Optional.|
 
 
 
@@ -70,9 +65,10 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 
 ## Examples
 
+Create a Trial fileStorageContainerType with some defaults
+
 ### Request
 
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertype_from_"
@@ -84,22 +80,21 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerType",
-  "name": "String",
-  "owningAppId": "Guid",
-  "billingClassification": "String",
-  "billingStatus": "String",
-  "expirationDateTime": "String (timestamp)",
+  "name": "Test Trial Container",
+  "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
+  "billingClassification": "trial",
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings"
-  },
-  "etag": "String"
+    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
+    "isItemVersioningEnabled": "true",
+    "isSharingRestricted": "false",
+    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit"
+  }
 }
 ```
 
 
 ### Response
 
-The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -113,17 +108,26 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerType",
-  "id": "73753c5e-0a5f-8add-fe59-88cd9740926e",
-  "name": "String",
-  "owningAppId": "Guid",
-  "billingClassification": "String",
-  "billingStatus": "String",
-  "createdDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)",
+  "id": "de988700-d700-020e-0a00-0831f3042f00",
+  "name": "Test Trial Container",
+  "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
+  "billingClassification": "trial",
+  "billingStatus": "valid",
+  "createdDateTime": "01/20/2025",
+  "expirationDateTime": "02/20/2025",
+  "etag": "RVRhZw==",
+
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings"
-  },
-  "etag": "String"
+    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
+    "urlTemplate": "",
+    "isDiscoverabilityEnabled": "true",
+    "isSearchEnabled": "true",
+    "isItemVersioningEnabled": "true",
+    "itemMajorVersionLimit": "50",
+    "maxStoragePerContainerInBytes": "104857600",
+    "isSharingRestricted": "false",
+    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit"
+  }
 }
 ```
 

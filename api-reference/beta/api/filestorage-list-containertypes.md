@@ -8,7 +8,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# List fileStorageContainerType objects
+# List fileStorageContainerType objects in the current tenant
 
 Namespace: microsoft.graph
 
@@ -88,17 +88,45 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.fileStorageContainerType",
-      "id": "73753c5e-0a5f-8add-fe59-88cd9740926e",
-      "name": "String",
-      "owningAppId": "Guid",
-      "billingClassification": "String",
-      "billingStatus": "String",
-      "createdDateTime": "String (timestamp)",
-      "expirationDateTime": "String (timestamp)",
+      "id": "de988700-d700-020e-0a00-0831f3042f00",
+      "name": "Container Type 1",
+      "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
+      "billingClassification": "trial",
+      "createdDateTime": "01/20/2025",
+      "expirationDateTime": "02/20/2025",
+      "etag": "RVRhZw==",
       "settings": {
-        "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings"
-      },
-      "etag": "String"
+        "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
+        "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
+        "isDiscoverabilityEnabled": "true",
+        "isSearchEnabled": "true",
+        "isItemVersioningEnabled": "true",
+        "itemMajorVersionLimit": "50",
+        "maxStoragePerContainerInBytes": "104857600",
+        "isSharingRestricted": "false",
+        "consumingTenantOverridables": ""
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.fileStorageContainerType",
+      "id": "88aeae-d700-020e-0a00-0831f3042f01",
+      "name": "Container Type 2",
+      "owningAppId": "33225700-9a00-4c00-84dd-0c210f203f01",
+      "billingClassification": "standard",
+      "createdDateTime": "01/20/2025",
+      "expirationDateTime": "",
+      "etag": "RVRhZw==",
+      "settings": {
+        "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
+        "urlTemplate": "",
+        "isDiscoverabilityEnabled": "true",
+        "isSearchEnabled": "true",
+        "isItemVersioningEnabled": "false",
+        "itemMajorVersionLimit": "100",
+        "maxStoragePerContainerInBytes": "104857600",
+        "isSharingRestricted": "false",
+        "consumingTenantOverridables": ""
+      }
     }
   ]
 }

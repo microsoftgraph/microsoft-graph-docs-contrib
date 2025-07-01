@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-RRetrieve a fileStorageContainerType using the ID.
+Retrieve a fileStorageContainerType using the ID.
 
 ## Permissions
 
@@ -61,7 +61,6 @@ Get a fileStorageContainerType using the containerTypeId
 
 ### Request
 
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_filestoragecontainertype"
@@ -94,10 +93,18 @@ Content-Type: application/json
   "billingStatus": "valid",
   "createdDateTime": "01/20/2025",
   "expirationDateTime": "02/20/2025",
-  "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings"
-  },
   "etag": "RVRhZw==",
+  "settings": {
+    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
+    "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
+    "isDiscoverabilityEnabled": "true",
+    "isSearchEnabled": "true",
+    "isItemVersioningEnabled": "true",
+    "itemMajorVersionLimit": "50",
+    "maxStoragePerContainerInBytes": "104857600",
+    "isSharingRestricted": "false",
+    "consumingTenantOverridables": "",
+  }
 }
 ```
 
