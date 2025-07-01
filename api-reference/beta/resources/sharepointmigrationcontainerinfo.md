@@ -1,5 +1,5 @@
 ---
-title: "sharepointMigrationContainerInfo resource type"
+title: "sharePointMigrationContainerInfo resource type"
 description: "Azure blob containers as temporary migration storage"
 author: "wenzhou"
 ms.date: 06/04/2025
@@ -8,13 +8,13 @@ ms.subservice: "onedrive"
 doc_type: resourcePageType
 ---
 
-# sharepointMigrationContainerInfo resource type
+# sharePointMigrationContainerInfo resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharepointMigrationContainerInfo** type contains the Azure Blob Container URLs and the key for content encryption. The Azure containers are used as temporary storage for migration content and metadata.
+The **sharePointMigrationContainerInfo** type contains the Azure Blob Container URLs and the key for content encryption. The Azure containers are used as temporary storage for migration content and metadata.
 
 ## Properties
 |Property|Type|Description|
@@ -30,12 +30,12 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.sharepointMigrationContainerInfo"
+  "@odata.type": "microsoft.graph.sharePointMigrationContainerInfo"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.sharepointMigrationContainerInfo",
+  "@odata.type": "#microsoft.graph.sharePointMigrationContainerInfo",
   "dataContainerUri": "String",
   "metadataContainerUri": "String",
   "encryptionKey": "String"

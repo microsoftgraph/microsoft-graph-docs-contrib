@@ -1,6 +1,6 @@
 ---
-title: "List sharepointMigrationEvent objects"
-description: "Get a list of the sharepointMigrationEvent objects and their properties."
+title: "List sharePointMigrationEvent objects"
+description: "Get a list of the sharePointMigrationEvent objects and their properties."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# List sharepointMigrationEvent objects
+# List sharePointMigrationEvent objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the sharepointMigrationEvent objects and their properties. The migration events remain valid for 4 days and can be queried as frequently as needed within validity period.
+Get a list of the sharePointMigrationEvent objects and their properties. The migration events remain valid for 4 days and can be queried as frequently as needed within validity period.
 
 ## Permissions
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [sharepointMigrationEvent](../resources/sharepointmigrationevent.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [sharePointMigrationEvent](../resources/sharepointmigrationevent.md) objects in the response body.
 
 ## Examples
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_sharepointmigrationevent"
+  "name": "list_progressevents"
 }
 -->
 ``` http
@@ -75,7 +75,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sharepointMigrationEvent"
+  "@odata.type": "microsoft.graph.sharePointMigrationEvent"
 }
 -->
 ``` http
@@ -85,7 +85,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.sharepointMigrationJobStartEvent",
+      "@odata.type": "#microsoft.graph.sharePointMigrationJobStartEvent",
       "id": "ef788cc0-ff2c-02a7-5150-7aeb53a89445",
       "jobId": "7b04bfdd-5f8c-4bd9-97fa-a166a7922c61",
       "eventDateTime": "2025-05-08T09:08:04.451Z",
@@ -94,7 +94,7 @@ Content-Type: application/json
       "totalRetryCount": 0
     },
     {
-      "@odata.type": "#microsoft.graph.sharepointMigrationJobCancelledEvent",
+      "@odata.type": "#microsoft.graph.sharePointMigrationJobCancelledEvent",
       "id": "8ae8a944-1d91-4e16-3447-0e31ba915e1f",
       "jobId": "7b04bfdd-5f8c-4bd9-97fa-a166a7922c61",
       "eventDateTime": "2025-05-08T09:13:18.333Z",
@@ -103,7 +103,7 @@ Content-Type: application/json
       "isCancelledByUser": true
     },
     {
-      "@odata.type": "#microsoft.graph.sharepointMigrationJobProgressEvent",
+      "@odata.type": "#microsoft.graph.sharePointMigrationJobProgressEvent",
       "id": "e439f60c-1022-4eaa-dbbf-75c51361effe",
       "jobId": "7b04bfdd-5f8c-4bd9-97fa-a166a7922c61",
       "eventDateTime": "2025-05-08T09:13:45.565Z",
@@ -126,7 +126,7 @@ Content-Type: application/json
       "bytesProcessedOnlyCurrentVersion": 11
     },
     {
-      "@odata.type": "#microsoft.graph.sharepointMigrationJobErrorEvent",
+      "@odata.type": "#microsoft.graph.sharePointMigrationJobErrorEvent",
       "id": "8e37738c-76b2-bb16-346a-5b21cff6d1d0",
       "jobId": "7b04bfdd-5f8c-4bd9-97fa-a166a7922c61",
       "eventDateTime": "2025-05-08T09:13:46.028Z",
@@ -142,7 +142,7 @@ Content-Type: application/json
       }
     },
     {
-      "@odata.type": "#microsoft.graph.sharepointMigrationJobProgressEvent",
+      "@odata.type": "#microsoft.graph.sharePointMigrationJobProgressEvent",
       "id": "16ea963f-b78d-5016-e8b7-3c663ca30fd5",
       "jobId": "7b04bfdd-5f8c-4bd9-97fa-a166a7922c61",
       "eventDateTime": "2025-05-08T09:13:46.509Z",

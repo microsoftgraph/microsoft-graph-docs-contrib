@@ -1,6 +1,6 @@
 ---
-title: "Delete sharepointMigrationJob"
-description: "Delete a sharepointMigrationJob object."
+title: "Delete sharePointMigrationJob"
+description: "Delete a sharePointMigrationJob object."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Delete sharepointMigrationJob
+# Delete sharePointMigrationJob
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a sharepointMigrationJob object.
+Delete a sharePointMigrationJob object.
 
 ## Permissions
 

@@ -48,10 +48,10 @@ Represents a location where multiple users or a group of users can store files a
 |[List recycle bin items](../api/filestoragecontainer-list-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
 |[Lock](../api/filestoragecontainer-lock.md)|None|Lock a [fileStorageContainer](../resources/filestoragecontainer.md) to prevent modifications to its content.|
 |[Unlock](../api/filestoragecontainer-unlock.md)|None|Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) for users and application-only identities to allow the addition, updating, and deletion of content.|
-|[Provision migrationContainers](../api/filestoragecontainer-provisionmigrationcontainers.md)|[sharepointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md)|Provision SharePoint-managed azure blob containers as temporary storage for migration content and metadata.|
-|[Create migrationJob](../api/filestoragecontainer-post-migrationjobs.md)|[sharepointMigrationJob](../resources/sharepointmigrationjob.md)|Create a new migrationJob in a fileStorageContainer.|
+|[Provision migrationContainers](../api/filestoragecontainer-provisionmigrationcontainers.md)|[sharePointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md)|Provision SharePoint-managed azure blob containers as temporary storage for migration content and metadata.|
+|[Create migrationJob](../api/filestoragecontainer-post-migrationjobs.md)|[sharePointMigrationJob](../resources/sharepointmigrationjob.md)|Create a new migrationJob in a fileStorageContainer.|
 |[Delete migrationJob](../api/filestoragecontainer-delete-migrationjobs.md)|None|Delete a migrationJob from a fileStorageContainer.|
-|[List migration events](../api/filestoragecontainer-migrationjob-list-progressevents.md)|[sharepointMigrationEvent](../resources/sharepointmigrationevent.md) collection|List migration events for a particular job in a fileStorageContainer.|
+|[List migration events](../api/filestoragecontainer-migrationjob-list-progressevents.md)|[sharePointMigrationEvent](../resources/sharepointmigrationevent.md) collection|List migration events for a particular job in a fileStorageContainer.|
 
 ## Properties
 |Property|Type|Description|
@@ -79,7 +79,7 @@ Represents a location where multiple users or a group of users can store files a
 |permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the **fileStorageContainer**. The permission for each user is set by the **roles** property. The possible values are `reader`, `writer`, `manager`, and `owner`. Read-write.|
 |recycleBin|[recycleBin](../resources/recyclebin.md)|Recycle bin of the **fileStorageContainer**. Read-only.|
 |sharePointGroups|[sharePointGroup](../resources/sharepointgroup.md) collection|The collection of **sharePointGroup** objects local to the container. Read-write.|
-|migrationJobs|[migrationJob](../resources/sharepointmigrationjob.md) collection|The collection of **sharepointMigrationJob** objects local to the container. Read-write.|
+|migrationJobs|[migrationJob](../resources/sharepointmigrationjob.md) collection|The collection of **sharePointMigrationJob** objects local to the container. Read-write.|
 
 ### roles property values
 |Value|Description|

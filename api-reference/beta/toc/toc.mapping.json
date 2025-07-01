@@ -964,8 +964,8 @@
         "sharedDriveItem",
         "sharePointGroup",
         "sharePointGroupMember",
-        "sharepointMigrationJob",
-        "sharepointMigrationEvent"
+        "sharePointMigrationJob",
+        "sharePointMigrationEvent"
       ]
     },
     {

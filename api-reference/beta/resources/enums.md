@@ -213,7 +213,7 @@ Namespace: microsoft.graph
 | active |
 | unknownfuturevalue |
 
-### migrationJobErrorLevel values
+### sharePointMigrationJobErrorLevel values
 
 |Member|
 |:---|
@@ -223,7 +223,7 @@ Namespace: microsoft.graph
 |fatalError|
 |unknownFutureValue|
 
-### migrationObjectType values
+### sharePointMigrationObjectType values
 
 |Member|
 |:---|

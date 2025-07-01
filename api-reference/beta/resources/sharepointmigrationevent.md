@@ -8,20 +8,20 @@ ms.subservice: "onedrive"
 doc_type: resourcePageType
 ---
 
-# sharepointMigrationEvent resource type
+# sharePointMigrationEvent resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharepointMigrationEvent** resource represents the common information of a SharPoint migration event. All the progress events are inherited from this base event.
+The **sharePointMigrationEvent** resource represents the common information of a SharPoint migration event. All the progress events are inherited from this base event.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List progressEvents](../api/filestoragecontainer-migrationjob-list-progressevents.md)|[sharepointMigrationEvent](../resources/sharepointMigrationEvent.md) collection|Get a list of the sharepointMigrationEvent objects and their properties.|
+|[List progressEvents](../api/filestoragecontainer-migrationjob-list-progressevents.md)|[sharePointMigrationEvent](../resources/sharepointmigrationevent.md) collection|Get a list of the sharePointMigrationEvent objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
@@ -39,14 +39,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.sharepointMigrationEvent",
+  "@odata.type": "microsoft.graph.sharePointMigrationEvent",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.sharepointMigrationEvent",
+  "@odata.type": "#microsoft.graph.sharePointMigrationEvent",
   "id": "String (identifier)",
   "jobId": "String",
   "eventDateTime": "String (timestamp)",
