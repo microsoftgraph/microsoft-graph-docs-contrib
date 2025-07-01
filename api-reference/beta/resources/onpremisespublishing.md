@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An on-premises application published via [Microsoft Entra application proxy](/azure/active-directory/app-proxy/what-is-application-proxy) is represented by an [application](application.md) object and its associated **onPremisesPublishing** property. Application Proxy provides secure remote access to on-premises applications.
+An on-premises application published via [Microsoft Entra application proxy](/entra/identity/) is represented by an [application](application.md) object and its associated **onPremisesPublishing** property. Application Proxy provides secure remote access to on-premises applications.
 
 An **onPremisesPublishing** object represents the set of properties for configuring Application Proxy for an on-premises [application](application.md). 
 
