@@ -20,6 +20,9 @@ Read the properties and relationships of a fileStorageContainerTypeRegistration 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+When delegated tokens are used, SharePoint Embedded admin or Global admin permissions are required.
+If FileStorageContainerTypeReg.Selected is used, results are limited to [registrations](../resources/storageContainerTypeRegistration.md) owned by the application 
+making the call.
 <!-- {
   "blockType": "permissions",
   "name": "filestoragecontainertyperegistration-get-permissions"
@@ -57,16 +60,17 @@ If successful, this method returns a `200 OK` response code and a [fileStorageCo
 
 ## Examples
 
+Get a fileStorageContainerTypeRegistration using the containerTypeId
+
 ### Request
 
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_filestoragecontainertyperegistration"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}
+GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 ```
 
 
@@ -85,20 +89,37 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.fileStorageContainerTypeRegistration",
-    "id": "c22d3fd3-c5af-694e-453a-e17057f29dc1",
-    "name": "String",
-    "owningAppId": "Guid",
-    "billingClassification": "String",
-    "billingStatus": "String",
-    "registeredDateTime": "String (timestamp)",
-    "expirationDateTime": "String (timestamp)",
-    "settings": {
-      "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings"
+  "@odata.type": "#microsoft.graph.fileStorageContainerTypeRegistration",
+  "id": "de988700-d700-020e-0a00-0831f3042f00",
+  "name": "Container Type Name",
+  "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
+  "billingClassification": "trial",
+  "registredDateTime": "01/20/2025",
+  "expirationDateTime": "02/20/2025",
+  "etag": "RVRhZw==",
+  "settings": {
+    "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings",
+    "sharingCapability": "disabled",
+    "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
+    "isDiscoverabilityEnabled": "true",
+    "isSearchEnabled": "true",
+    "isItemVersioningEnabled": "true",
+    "itemMajorVersionLimit": "50",
+    "maxStoragePerContainerInBytes": "104857600",
+    "isSharingRestricted": "false"
+  },
+  "applicationPermissionGrants": [
+    {
+      "appId": "11335700-9a00-4c00-84dd-0c210f203f00",
+      "delegatedPermissions": ["read"],
+      "applicationPermissions": ["full"]
     },
-    "etag": "String"
-  }
+    {
+      "appId": "d893fd02-3578-4c7f-bd85-12fc3358af48",
+      "delegatedPermissions": ["none"],
+      "applicationPermissions": ["read"]
+    }
+  ]
 }
 ```
 

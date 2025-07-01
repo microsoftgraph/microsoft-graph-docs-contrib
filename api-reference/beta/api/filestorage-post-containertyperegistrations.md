@@ -14,11 +14,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new fileStorageContainerTypeRegistration object.
+Create a fileStorageContainerTypeRegistration object in the consuming tenant or replace the existing one.
+
+An application can only register a [fileStorageContainerType](../resources/fileStorageContainerType.md) that it owns, either using app-only or
+delegated tokens.
+
+Requisites to execute this request:
+- The ID of an existing fileStorageContainerType.
+- The application that owns the fileStorageContainerType must be registered in the tenant. In other words, it must have a service principal.
+- Billing setup should be complete, except for Trial fileStorageContainerTypes.
+
+Settings cannot be modified on registration.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+When delegated tokens are used, SharePoint Embedded admin or Global admin permissions are required.
+Registration must be done in the context of the application that owns the [fileStorageContainerType](../resources/storageContainerType.md).
 
 <!-- {
   "blockType": "permissions",
@@ -34,7 +47,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /storage/fileStorage/containerTypeRegistrations
+PUT /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeId}
 ```
 
 ## Request headers
@@ -53,15 +66,8 @@ You can specify the following properties when creating a **fileStorageContainerT
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description** Required.|
-|owningAppId|Guid|**TODO: Add Description** Required.|
-|billingClassification|fileStorageContainerBillingClassification|**TODO: Add Description**. The possible values are: `standard`, `trial`, `directToCustomer`, `unknownFutureValue`. Required.|
-|billingStatus|fileStorageContainerBillingStatus|**TODO: Add Description**. The possible values are: `invalid`, `valid`, `unknownFutureValue`. Required.|
-|registeredDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|expirationDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|**TODO: Add Description** Required.|
-|etag|String|**TODO: Add Description** Required.|
-
+|applicationPermissionGrants|[applicationPermissionGrants](../resources/fileStorageContainerTypeAppPermissionGrant.md)|define the access 
+privileges of applications on containers of a specific fileStorageContainerType. Optional.|
 
 
 ## Response
@@ -69,6 +75,8 @@ You can specify the following properties when creating a **fileStorageContainerT
 If successful, this method returns a `201 Created` response code and a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object in the response body.
 
 ## Examples
+
+Create a Trial fileStorageContainerTypeRegistration with some applicationPermissionGrants
 
 ### Request
 
@@ -79,21 +87,22 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations
+PUT https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.fileStorageContainerTypeRegistration",
-  "name": "String",
-  "owningAppId": "Guid",
-  "billingClassification": "String",
-  "billingStatus": "String",
-  "registeredDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)",
-  "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings"
-  },
-  "etag": "String"
+  "applicationPermissionGrants": [
+    {
+      "appId": "11335700-9a00-4c00-84dd-0c210f203f00",
+      "delegatedPermissions": ["readContent", "writeContent"],
+      "applicationPermissions": ["full"]
+    },
+    {
+      "appId": "d893fd02-3578-4c7f-bd85-12fc3358af48",
+      "delegatedPermissions": ["readContent"],
+      "applicationPermissions": ["read"]
+    }
+  ]
 }
 ```
 
@@ -114,17 +123,36 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerTypeRegistration",
-  "id": "c22d3fd3-c5af-694e-453a-e17057f29dc1",
-  "name": "String",
-  "owningAppId": "Guid",
-  "billingClassification": "String",
-  "billingStatus": "String",
-  "registeredDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)",
+  "id": "de988700-d700-020e-0a00-0831f3042f00",
+  "name": "Test Trial Container",
+  "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
+  "billingClassification": "trial",
+  "registredDateTime": "01/20/2025",
+  "expirationDateTime": "02/20/2025",
+  "etag": "RVRhZw==",
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings"
+    "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings",
+    "sharingCapability": "disabled",
+    "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
+    "isDiscoverabilityEnabled": "true",
+    "isSearchEnabled": "true",
+    "isItemVersioningEnabled": "true",
+    "itemMajorVersionLimit": "50",
+    "maxStoragePerContainerInBytes": "104857600",
+    "isSharingRestricted": "false"
   },
-  "etag": "String"
+  "applicationPermissionGrants": [
+    {
+      "appId": "11335700-9a00-4c00-84dd-0c210f203f00",
+      "delegatedPermissions": ["readContent", "writeContent"],
+      "applicationPermissions": ["full"]
+    },
+    {
+      "appId": "d893fd02-3578-4c7f-bd85-12fc3358af48",
+      "delegatedPermissions": ["readContent"],
+      "applicationPermissions": ["read"]
+    }
+  ]
 }
 ```
 
