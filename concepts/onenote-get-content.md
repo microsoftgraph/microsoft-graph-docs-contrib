@@ -122,13 +122,7 @@ The JSON response contains the preview content, which you can use to help users 
 }
 ```
 
-The **previewText** property contains a text snippet from the page. Microsoft Graph returns complete phrases, up to a maximum of 300 characters. 
-
-#### Example 
-
-`<img src="https://www.onenote.com/api/v1.0/resources/{id}/content?publicAuth=true&mimeType=image/png" />`
-
-<a name="get-page-content"></a> 
+The **previewText** property contains a text snippet from the page. Microsoft Graph returns complete phrases, up to a maximum of 300 characters.
 
 ### Page HTML content
 
