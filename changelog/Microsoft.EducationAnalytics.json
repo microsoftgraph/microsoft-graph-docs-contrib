@@ -94,7 +94,7 @@
         }
       ],
       "Id": "3c70e755-0efe-4847-8420-951382846f69",
-      "Cloud": "Review",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-06-24T17:52:46.7502641Z",
       "WorkloadArea": "Education",
