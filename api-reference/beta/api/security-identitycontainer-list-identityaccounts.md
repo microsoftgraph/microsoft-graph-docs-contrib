@@ -100,15 +100,17 @@ Content-Type: application/json
         {
           "provider": "ActiveDirectory",
           "identifier": "256db173-930a-4991-9061-0d51a9a93ba5",
+          "actions": []
         },
         {
-          "provider": "Entra",
+          "provider": "EntraID",
           "identifier": "69dfa3ea-1295-4e2c-b469-59564581143d",
+          "actions": []
         },
         {
           "provider": "Okta",
           "identifier": "878a6911-f3da-41eb-a895-1d46fa054d3e",
-          "actions": ["revokeAllSessions"]
+          "actions": []
         }
       ]
     },
@@ -123,7 +125,7 @@ Content-Type: application/json
         {
           "provider": "Okta",
           "identifier": "878a6911-f3da-41eb-a895-1d46fa054d3e",
-          "actions": ["revokeAllSessions"]
+          "actions": []
         }
       ]
     }
@@ -175,14 +177,14 @@ Content-Type: application/json
           "actions": []
         },
         {
-          "provider": "Entra",
+          "provider": "EntraID",
           "identifier": "69dfa3ea-1295-4e2c-b469-59564581143d",
           "actions": []
         },
         {
           "provider": "Okta",
           "identifier": "878a6911-f3da-41eb-a895-1d46fa054d3e",
-          "actions": ["revokeAllSessions"]
+          "actions": []
         }
       ]
     }

@@ -100,10 +100,12 @@ Content-Type: application/json
         {
           "provider": "ActiveDirectory",
           "identifier": "256db173-930a-4991-9061-0d51a9a93ba5",
+          "actions": ["Enable"]
         },
         {
-          "provider": "Entra",
+          "provider": "EntraID",
           "identifier": "69dfa3ea-1295-4e2c-b469-59564581143d",
+          "actions": ["enable"]
         },
         {
           "provider": "Okta",
@@ -153,7 +155,7 @@ Content-Type: application/json
           "actions": ["disable", "forcePasswordReset"]
         },
         {
-          "provider": "Entra",
+          "provider": "EntraID",
           "identifier": "69dfa3ea-1295-4e2c-b469-59564581143d",
           "actions": ["disable"]
         },
