@@ -1,5 +1,5 @@
 ---
-title: "integratedApplicationMetadata resource type (preview)"
+title: "integratedApplicationMetadata resource type"
 description: "Represents metadata about the application integrated with Microsoft Purview data security APIs."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 # integratedApplicationMetadata resource type
 
-Namespace: microsoft.dataClassificationService.contract
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

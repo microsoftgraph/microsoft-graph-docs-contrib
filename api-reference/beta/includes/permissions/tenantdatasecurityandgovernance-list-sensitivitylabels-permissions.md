@@ -10,3 +10,4 @@ ms.localizationpriority: medium
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|SensitivityLabel.Read|SensitivityLabels.Read.All|
 
+
