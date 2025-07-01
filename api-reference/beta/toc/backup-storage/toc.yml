@@ -115,7 +115,7 @@ items:
     href: ../../resources/protectionunitbase.md
   - name: Get
     href: ../../api/protectionunitbase-get.md
-  - name: offboard
+  - name: Offboard
     href: ../../api/protectionunitbase-offboard.md
   - name: Cancel offboard
     href: ../../api/protectionunitbase-canceloffboard.md
