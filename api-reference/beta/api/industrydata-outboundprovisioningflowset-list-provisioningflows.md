@@ -1,11 +1,11 @@
 ---
 title: "List provisioningFlow objects"
 description: "Get a list of the provisioningFlow objects and their properties."
-author: "cristobal-buenrostro"
+author: "mohanrajc"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
-ms.date: 06/22/2024
+ms.date: 06/30/2025
 ---
 
 # List provisioningFlow objects
@@ -15,6 +15,9 @@ Namespace: microsoft.graph.industryData
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [provisioningFlow](../resources/industrydata-provisioningflow.md) objects and their properties.
+
+> [!CAUTION]
+> The `additionalOptions` object contains properties from the deprecated [additionalUserOptions](../resources/industrydata-additionaluseroptions.md) resource. The `markAllStudentsAsMinors` property is deprecated and will be removed on October 15, 2025. Use the `studentAgeGroup` property instead.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -253,7 +256,8 @@ Content-Type: application/json
                 ],
                 "additionalOptions": {
                     "markAllStudentsAsMinors": true,
-                    "allowStudentContactAssociation": false
+                    "allowStudentContactAssociation": false,
+                    "studentAgeGroup": "minor"
                 }
             },
             "creationOptions": {

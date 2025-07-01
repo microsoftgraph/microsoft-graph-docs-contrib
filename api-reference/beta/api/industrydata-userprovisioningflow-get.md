@@ -1,7 +1,7 @@
 ---
 title: "Get userProvisioningFlow"
 description: "Read the properties and relationships of a userProvisioningFlow object."
-author: "cristobal-buenrostro"
+author: "mohanrajc"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
@@ -15,6 +15,9 @@ Namespace: microsoft.graph.industryData
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object.
+
+> [!CAUTION]
+> The `additionalOptions` object contains properties from the deprecated [additionalUserOptions](../resources/industrydata-additionaluseroptions.md) resource. The `markAllStudentsAsMinors` property is deprecated and will be removed on October 15, 2025. Use the `studentAgeGroup` property instead.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -141,7 +144,8 @@ Content-Type: application/json
         ],
         "additionalOptions": {
             "markAllStudentsAsMinors": true,
-            "allowStudentContactAssociation": false
+            "allowStudentContactAssociation": false,
+            "studentAgeGroup": "minor"
         }
     },
     "creationOptions": {

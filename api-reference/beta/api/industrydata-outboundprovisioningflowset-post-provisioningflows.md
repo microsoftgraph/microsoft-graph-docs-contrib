@@ -1,11 +1,11 @@
 ---
 title: "Create provisioningFlow"
 description: "Create a new provisioningFlow object."
-author: "cristobal-buenrostro"
+author: "mohanrajc"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
-ms.date: 06/22/2024
+ms.date: 06/30/2025
 ---
 
 # Create provisioningFlow
@@ -15,6 +15,9 @@ Namespace: microsoft.graph.industryData
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [provisioningFlow](../resources/industrydata-provisioningflow.md) object.
+
+> [!CAUTION]
+> The `additionalOptions` object contains properties from the deprecated [additionalUserOptions](../resources/industrydata-additionaluseroptions.md) resource. The `markAllStudentsAsMinors` property is deprecated and will be removed on October 15, 2025. Use the `studentAgeGroup` property instead.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -535,7 +538,7 @@ Content-type: application/json
         "additionalAttributes": ["userGradeLevel"],
         "additionalOptions":
         {
-            "markAllStudentsAsMinors": true,
+            "studentAgeGroup": "minor",
             "allowStudentContactAssociation"  : false
         }
     },
@@ -629,7 +632,8 @@ Content-type: application/json
         ],
         "additionalOptions": {
             "markAllStudentsAsMinors": true,
-            "allowStudentContactAssociation": false
+            "allowStudentContactAssociation": false,
+            "studentAgeGroup": "minor"
         }
     },
     "creationOptions": {
