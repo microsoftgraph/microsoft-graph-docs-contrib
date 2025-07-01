@@ -56,10 +56,10 @@ The following JSON representation shows the resource type.
       "status": "alive",
       "sourceIp": "xxx.xxx.xx.151",
       "destinationIp": "xx.xxx.xxx.0",
-      "sentBytes": 3524,
-      "receivedBytes": 2698,
+      "sentBytes": "Integer",
+      "receivedBytes": "Integer",
       "description": "",
-      "bgpRoutesAdvertisedCount": 25
+      "bgpRoutesAdvertisedCount": "Integer"
 }
 ```
 

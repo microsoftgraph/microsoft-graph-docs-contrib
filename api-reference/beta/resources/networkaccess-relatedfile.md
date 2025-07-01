@@ -38,8 +38,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.relatedFile",
-  "name": "malware.exe",
-  "directory": "C:\\Users\\Public\\Downloads",
-  "sizeInBytes": 204800
+  "name": "String",
+  "directory": "String",
+  "sizeInBytes": "Integer"
 }
 ```
