@@ -23,17 +23,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 New rate limits apply to Cloud PC APIs. The [List Cloud PCs](/graph/api/virtualendpoint-list-cloudpcs) API is now limited to 180 requests per minute per tenant and 162 requests per minute per app or user. The [Get Cloud PC](/graph/api/cloudpc-get) API is limited to 540 requests per minute per tenant and 486 requests per minute per app or user. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#windows-365-service-limits).
 
-### Device and app management | Device updates
-
-Enabled [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta&preserve-view=true) as a supported value for the **contentFilter** property of the [contentApprovalRule](/graph/api/resources/windowsupdates-contentapprovalrule?view=graph-rest-beta&preserve-view=true) resource. Use the [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta&preserve-view=true) to determine which remediation update content matches the rule continuously.
-
-### Files
-
 ### Identity and access | Directory management
 
 - Use the **isManagementRestricted** property on [device](/graph/api/resources/device), [group](/graph/api/resources/group), and [user](/graph/api/resources/user) resources to to indicate  whether a device, group, or user is a member of a restricted management administrative unit.
 - Use the **isMemberManagementRestricted** property on [administrativeUnit](/graph/api/resources/administrativeunit) to indicate whether members of an administrative unit should be treated as sensitive.
-
 
 ### Security | eDiscovery
 
@@ -46,7 +39,8 @@ Use the **videoOnDemandWebUrl** on [virtualEventSession](/graph/api/resources/vi
 
 ### Teamwork and communications | Messaging
 
-Updated the throttling information for [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions). The limit per app per tenant changed from 200 requests per second to 30 requests per second. The limit per app across all tenants increased from 1,000 requests per second to 1,500 requests per second.
+- Updated the throttling information for [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions). The limit per app per tenant changed from 200 requests per second to 30 requests per second. The limit per app across all tenants increased from 1,000 requests per second to 1,500 requests per second.
+- Use the **iconId** property on the [teamwork: sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients), [userTeamwork: sendActivityNotification](/graph/api/userteamwork-sendactivitynotification), [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification), and [team: sendActivityNotification](/graph/api/team-sendactivitynotification) to send activity notifications with customized icons.
 
 ### Teamwork and communications | Shift management
 
@@ -63,6 +57,10 @@ Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resourc
 ### Backup storage
 
 [Get](/graph/api/emailnotificationssetting-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/emailnotificationssetting-update?view=graph-rest-beta&preserve-view=true) email notification settings in a tenant.
+
+### Device and app management | Device updates
+
+Enabled [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta&preserve-view=true) as a supported value for the **contentFilter** property of the [contentApprovalRule](/graph/api/resources/windowsupdates-contentapprovalrule?view=graph-rest-beta&preserve-view=true) resource. Use the [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta&preserve-view=true) to determine which remediation update content matches the rule continuously.
 
 ## Education
 
@@ -174,6 +172,7 @@ Use the new Teams meeting AI insights APIs to get AI-generated insights for a me
 
 - [Confirm](/graph/api/timecard-confirmforuser?view=graph-rest-beta&preserve-view=true) a specific [timeCard](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true) for a user.
 - [Approve](/graph/api/schedulechangerequest-approveforuser?view=graph-rest-beta&preserve-view=true) or [decline](/graph/api/schedulechangerequest-declineforuser?view=graph-rest-beta&preserve-view=true) an [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [openShiftChangeRequest](/graph/api//resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta&preserve-view=true), or [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true) object for a user using application permissions.
+
 
 ## Contribute to Microsoft Graph
 
