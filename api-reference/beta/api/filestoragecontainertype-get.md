@@ -1,0 +1,103 @@
+---
+title: "Get fileStorageContainerType"
+description: "Read the properties and relationships of a fileStorageContainerType object."
+author: "javieralvarezchiang"
+ms.date: 06/30/2025
+ms.localizationpriority: medium
+ms.subservice: "onedrive"
+doc_type: apiPageType
+---
+
+# Get fileStorageContainerType
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+RRetrieve a fileStorageContainerType using the ID.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "permissions",
+  "name": "filestoragecontainertype-get-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainertype-get-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
+```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a [fileStorageContainerType](../resources/filestoragecontainertype.md) object in the response body.
+
+## Examples
+
+Get a fileStorageContainerType using the containerTypeId
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_filestoragecontainertype"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
+```
+
+
+### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fileStorageContainerType"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.fileStorageContainerType"
+  "id": "de988700-d700-020e-0a00-0831f3042f00",
+  "name": "Container Type Name",
+  "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
+  "billingClassification": "trial",
+  "billingStatus": "valid",
+  "createdDateTime": "01/20/2025",
+  "expirationDateTime": "02/20/2025",
+  "settings": {
+    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings"
+  },
+  "etag": "RVRhZw==",
+}
+```
+
