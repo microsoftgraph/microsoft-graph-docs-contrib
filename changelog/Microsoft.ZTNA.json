@@ -831,7 +831,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enrichedAuditLogs",
           "ChangeType": "Deletion",
-          "Description": "Removed the **enrichedAuditLogs** resource.",
+          "Description": "Removed the **enrichedAuditLogs** resource. Please note that we are modifying the way to consume Enriched Microsoft 365 logs [Learn more](https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-view-enriched-logs)",
           "Target": "enrichedAuditLogs"
         },
         {
