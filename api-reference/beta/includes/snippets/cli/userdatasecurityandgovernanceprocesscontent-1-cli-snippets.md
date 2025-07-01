@@ -27,6 +27,7 @@ mgc-beta users data-security-and-governance process-content post --user-id {user
           "activity": "uploadText"\
        },\
        "deviceMetadata": {\
+          "deviceType": "Unmanaged",\
           "operatingSystemSpecifications": {\
              "operatingSystemPlatform": "Windows 11",\
              "operatingSystemVersion": "10.0.26100.0" \

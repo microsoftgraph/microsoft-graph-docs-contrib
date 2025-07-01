@@ -106,7 +106,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signUps/eff4eb53-712f-778d-8754-3
 
 ---
 
-
 ### Response
 
 The following example shows the response.
