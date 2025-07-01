@@ -4,13 +4,31 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
-- name: AI interactions (preview)
+- name: Administration (preview)
+  items:
+  - name: Teams user configuration
+    items:
+    - name: Teams user configuration
+      href: ../../resources/teamsadministration-teamsuserconfiguration.md
+    - name: List
+      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
+    - name: Get
+      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
+  - name: Complex types
+    items:
+    - name: Assigned telephone number
+      href: ../../resources/teamsadministration-assignedtelephonenumber.md
+    - name: Effective policy assignment
+      href: ../../resources/teamsadministration-effectivepolicyassignment.md
+    - name: Policy assignment
+      href: ../../resources/teamsadministration-policyassignment.md
+- name: AI interactions
   items:
   - name: AI interaction history
     items:
     - name: AI interaction history
       href: ../../resources/aiinteractionhistory.md
-    - name: List all enterprise interactions
+    - name: Get all enterprise interactions
       href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
   - name: Complex types
     items:
@@ -190,6 +208,10 @@ items:
       href: ../../api/team-list-permissiongrants.md
     - name: List permission grants of a user
       href: ../../api/user-list-permissiongrants.md
+  - name: Complex types
+    items:
+    - name: Custom app settings
+      href: ../../resources/customappsettings.md
 - name: Calls and online meetings
   items:
   - name: Overview
@@ -334,6 +356,34 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
+  - name: Call delegation
+    items:
+    - name: Overview
+      href: ../../resources/calldelegation-api-overview.md
+    - name: Call settings
+      items:
+      - name: Call settings
+        href: ../../resources/callsettings.md
+      - name: List delegates
+        href: ../../api/callsettings-list-delegates.md
+      - name: List delegators
+        href: ../../api/callsettings-list-delegators.md
+    - name: Delegation settings
+      items:
+      - name: Delegation settings
+        href: ../../resources/delegationsettings.md
+      - name: Get
+        href: ../../api/delegationsettings-get.md
+      - name: List delegates
+        href: ../../api/callsettings-list-delegates.md
+      - name: List delegators
+        href: ../../api/callsettings-list-delegators.md
+    - name: Complex types
+      items:
+      - name: Delegate allowed actions
+        href: ../../resources/delegateallowedactions.md
+      - name: User cloud communication
+        href: ../../resources/usercloudcommunication.md
   - name: Call events
     items:
     - name: Call event
@@ -452,10 +502,12 @@ items:
         href: ../../api/onlinemeeting-delete.md
       - name: Create or get
         href: ../../api/onlinemeeting-createorget.md
-      - name: List transcripts
-        href: ../../api/onlinemeeting-list-transcripts.md
+      - name: List AI insights
+        href: ../../api/onlinemeeting-list-aiinsights.md
       - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
+      - name: List transcripts
+        href: ../../api/onlinemeeting-list-transcripts.md
     - name: External meeting registration (deprecated)
       items:
       - name: External meeting registration (deprecated)
@@ -478,6 +530,14 @@ items:
         href: ../../api/meetingregistration-update.md
       - name: Delete
         href: ../../api/meetingregistration-delete.md
+    - name: Call AI insight
+      items:
+      - name: Call AI insight
+        href: ../../resources/callaiinsight.md
+      - name: List
+        href: ../../api/onlinemeeting-list-aiinsights.md
+      - name: Get
+        href: ../../api/callaiinsight-get.md
     - name: Call recording
       items:
       - name: Call recording
@@ -510,6 +570,22 @@ items:
         href: ../../api/virtualappointment-sendvirtualappointmentremindersms.md
       - name: Send virtual appointment SMS
         href: ../../api/virtualappointment-sendvirtualappointmentsms.md
+    - name: Complex types
+      items:
+      - name: Action item
+        href: ../../resources/actionitem.md
+      - name: AI online meeting
+        href: ../../resources/aionlinemeeting.md
+      - name: Call AI insight viewpoint
+        href: ../../resources/callaiinsightviewpoint.md
+      - name: Identity set
+        href: ../../resources/identityset.md
+      - name: Meeting note
+        href: ../../resources/meetingnote.md
+      - name: Meeting note subpoint
+        href: ../../resources/meetingnotesubpoint.md
+      - name: Mention event
+        href: ../../resources/mentionevent.md
   - name: Virtual events
     items:
     - name: Virtual event presenter
@@ -678,6 +754,8 @@ items:
         href: ../../api/teamwork-list-teamtemplates.md
       - name: Get teamwork
         href: ../../api/teamwork-get.md
+      - name: Determine if interaction is allowed
+        href: ../../api/teamwork-determineifinteractionisallowed.md
   - name: User settings
     items:
     - name: User teamwork
@@ -1147,8 +1225,12 @@ items:
       href: ../../api/offershiftrequest-list.md
     - name: Approve
       href: ../../api/offershiftrequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/offershiftrequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Open shift
     items:
     - name: Open shift
@@ -1179,8 +1261,12 @@ items:
       href: ../../api/openshiftchangerequest-get.md
     - name: Approve
       href: ../../api/openshiftchangerequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/openshiftchangerequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Schedule
     items:
     - name: Schedule
@@ -1191,6 +1277,14 @@ items:
       href: ../../api/schedule-get.md
     - name: Share
       href: ../../api/schedule-share.md
+  - name: Schedule change request
+    items:
+    - name: Schedule change request
+      href: ../../resources/schedulechangerequest.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Scheduling group
     items:
     - name: Scheduling group
@@ -1249,8 +1343,12 @@ items:
       href: ../../api/swapshiftschangerequest-get.md
     - name: Approve
       href: ../../api/swapshiftschangerequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/swapshiftschangerequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Time card
     items:
     - name: Time card
@@ -1275,6 +1373,8 @@ items:
       href: ../../api/timecard-endbreak.md
     - name: Confirm
       href: ../../api/timecard-confirm.md
+    - name: Confirm for user
+      href: ../../api/timecard-confirmforuser.md
   - name: Time off
     items:
     - name: Time off
@@ -1311,14 +1411,20 @@ items:
       href: ../../resources/timeoffrequest.md
     - name: List
       href: ../../api/timeoffrequest-list.md
+    - name: Create
+      href: ../../api/timeoffrequest-post.md
     - name: Get
       href: ../../api/timeoffrequest-get.md
     - name: Delete
       href: ../../api/timeoffrequest-delete.md
     - name: Approve
       href: ../../api/timeoffrequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/timeoffrequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Workforce integration
     items:
     - name: Workforce integration

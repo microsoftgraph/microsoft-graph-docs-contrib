@@ -81,9 +81,9 @@ The assignment APIs provide the following key resources:
 
 The assignment APIs support the following scenarios:
 
-- [Create assignment](../api/educationclass-post-assignment.md)
+- [Create assignment](../api/educationclass-post-assignments.md)
 - [Publish assignment](../api/educationassignment-publish.md)
-- [Create assignment resource](../api/educationassignment-post-resource.md)
+- [Create assignment resource](../api/educationassignment-post-resources.md)
 - [Create submission resource](../api/educationsubmission-post-resources.md)
 - [Submit assignment](../api/educationsubmission-submit.md)
 - [Unsubmit assignment](../api/educationsubmission-unsubmit.md)
@@ -94,7 +94,7 @@ The following are some common use cases for the assignment-related education API
 
 | Use case                    | Description                                                                                                         | See also                                                          |
 | :-------------------------- | :------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------- |
-| Create assignments          | An external system can create an assignment for the class and attach resources to the assignment.                   | [Create assignment](../api/educationassignment-post-resource.md) |
+| Create assignments          | An external system can create an assignment for the class and attach resources to the assignment.                   | [Create assignment](../api/educationassignment-post-resources.md) |
 | Read assignment information | An analytics application can get information about assignments and student submissions, including dates and grades. | [Get assignment](../api/educationassignment-get.md)               |
 | Track student submissions   | Your app can provide a teacher dashboard that shows how many submissions from students need to be graded.           | [Submission resource](educationsubmission.md)                     |
 

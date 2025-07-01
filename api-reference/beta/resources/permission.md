@@ -21,7 +21,7 @@ The **permission** resource represents these different forms through facets on t
 >**Note:** OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.
 
 OneDrive for Business and SharePoint document libraries don't return the **inheritedFrom** property.
-**grantedTo** and **grantedToIdentities** will be deprecated going forward and the response will be migrated to **grantedToV2** and **grantedToIdentitiesV2** respectively under appropriate property names.
+**grantedTo** and **grantedToIdentities** are deprecated going forward and the response is migrated to **grantedToV2** and **grantedToIdentitiesV2** respectively under appropriate property names.
 
 
 ## Methods
@@ -47,7 +47,7 @@ OneDrive for Business and SharePoint document libraries don't return the **inher
 | grantedToV2                      | [SharePointIdentitySet][]                 | For user type permissions, the details of the users and applications for this permission. Read-only. |
 | grantedToIdentitiesV2            | Collection([SharePointIdentitySet][])     | For link type permissions, the details of the users to whom permission was granted. Read-only. |
 | invitation                       | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only. |
-| inheritedFrom                    | [ItemReference][]                         | Provides a reference to the ancestor of the current permission, if it's inherited from an ancestor. Read-only. |
+| inheritedFrom                    | [ItemReference][]                         | Provides a reference to the ancestor of the current permission, if inherited from an ancestor. Read-only. |
 | link                             | [SharingLink][]                           | Provides the link details of the current permission, if it's a link type permission. Read-only. |
 | roles                            | Collection(String)                        | The type of permission, for example, `read`. See the Roles property values section for the full list of roles. Read-only. |
 | shareId                          | String                                    | A unique token that can be used to access this shared item via the **[shares API][]**. Read-only. |
@@ -58,11 +58,11 @@ OneDrive for Business and SharePoint document libraries don't return the **inher
 
 ### Roles property values
 
-| Value           | Description                                                                    |
-|:----------------|:-------------------------------------------------------------------------------|
-| read            | Provides the ability to read the metadata and contents of the item.            |
-| write           | Provides the ability to read and modify the metadata and contents of the item. |
-| owner           | For SharePoint and OneDrive for Business this represents the owner role.       |
+| Value           | Description                                                                        |
+|:----------------|:-----------------------------------------------------------------------------------|
+| read            | Provides the ability to read the metadata and commment on the contents of the item.|
+| write           | Provides the ability to read and modify the metadata and contents of the item.     |
+| owner           | For SharePoint and OneDrive for Business, it represents the owner role.           |
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
@@ -117,7 +117,7 @@ The following JSON representation shows the resource type.
 ### Sharing links
 
 Permissions with a [**link**][SharingLink] facet represent sharing links created on the item.
-These are the most common kinds of permissions.
+This type of permissions are the most commonly used.
 Sharing links provide a unique URL that can be used to access a file or folder.
 They can be set up to grant access in various ways.
 For example, you can use the [createLink][] API to create a link that works for anyone signed into your organization, or you can create a link that works for anyone, without needing to sign in.

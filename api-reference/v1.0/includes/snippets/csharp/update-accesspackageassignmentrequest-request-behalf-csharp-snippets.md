@@ -40,15 +40,10 @@ var requestBody = new AccessPackageAssignmentRequest
 			},
 		},
 	},
+	Justification = "Access for direct employee",
 	RequestType = AccessPackageRequestType.UserAdd,
 	Answers = new List<AccessPackageAnswer>
 	{
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"justification" , "Access for direct employee"
-		},
 	},
 };
 

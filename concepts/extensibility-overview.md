@@ -862,7 +862,7 @@ Open extensions, together with their data, are accessible through the **extensio
 You define and manage open extensions on the fly on resource instances. They're considered unique for each object, and you don't need to apply a universally consistent pattern for all objects. For example, in the same tenant:
 
 - The user object for Adele can have an open extension named *socialSettings* that has three properties: **linkedInProfile**, **skypeId**, and **xboxGamertag**.
-- The user object for Bruno can have no open extension property.
+- The user object for Allan can have no open extension property.
 - The user object for Alex can have an open extension named *socialSettings* with five properties: **theme**, **color**, **language**, **font**, and **fontSize**.
 
 Additionally, open extension properties can have any valid JSON structure.
@@ -1052,6 +1052,8 @@ The following table compares the extension types, which should help you decide w
 | Filterable | Yes | Yes | Yes | No |
 | Can store a collection | No | Yes | No | Yes |
 | Tied to an "owner" application | No | Yes | Yes | No |
+| Scoping | Assign values to pre-defined properties of the target object instance | Define at application-level then assign to target object instance | Define for the tenant then assign to target object instance | Define and assign on the object instance |
+| Discoverability | Select or filter on the target object instance | LIST, select, or filter on the application level to GET definitions; Select or filter on the target object to GET assignments | LIST or filter to GET tenant-wide definitions; Select or filter on the target object to GET assignments | LIST or select on the target object to GET definitions and assignments  |
 | Managed via | Microsoft Graph <br/> Exchange admin center | Microsoft Graph | Microsoft Graph | Microsoft Graph |
 | Sync data from on-premises to extensions using [AD connect][] | Yes, for users | [Yes][ADConnect-YES] | No | No |
 | Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | [Yes][DynamicMembership-YES] | No | No |

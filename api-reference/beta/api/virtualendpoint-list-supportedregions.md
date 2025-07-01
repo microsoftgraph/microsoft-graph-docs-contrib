@@ -128,7 +128,12 @@ Content-Type: application/json
       "displayName": "Demo-1",
       "regionStatus": "available",
       "supportedSolution": "windows365",
-      "regionGroup": "usCentral"    
+      "regionGroup": "usCentral",
+      "regionRestrictionDetail": {
+        "cPURestricted": true,
+        "gPURestricted": true,
+        "nestedVirtualizationRestricted": true
+      }
     }
   ]
 }

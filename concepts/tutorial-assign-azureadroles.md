@@ -418,13 +418,48 @@ Content-type: application/json
 
 You can confirm your assignment by running the following request. The response object returns your newly activated role assignment with its status set to either `Provisioned` or `Granted`. With your new privilege, carry out any allowed actions within five hours your assignment is active for. After five hours, the active assignment expires but through your membership in the **IT Support (Users)** group, you're eligible for the User Administrator role.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleAssignmentScheduleRequests_verify"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')?$expand=roleDefinition
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-assignaadroles-roleassignmentschedulerequests-verify-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-assignaadroles-roleassignmentschedulerequests-verify-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-assignaadroles-roleassignmentschedulerequests-verify-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-assignaadroles-roleassignmentschedulerequests-verify-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-assignaadroles-roleassignmentschedulerequests-verify-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-assignaadroles-roleassignmentschedulerequests-verify-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-assignaadroles-roleassignmentschedulerequests-verify-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-assignaadroles-roleassignmentschedulerequests-verify-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ## Step 6: Clean up resources
 

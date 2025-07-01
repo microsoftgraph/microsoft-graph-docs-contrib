@@ -120,6 +120,7 @@
         "protectionRuleBase",
         "protectionUnitBase",
         "restoreArtifactBase",
+        "restoreArtifactsBulkRequestBase",
         "restorePoint",
         "restoreSessionBase",
         "serviceApp"
@@ -150,12 +151,28 @@
           ]
         },
         {
+          "name": "Protection units bulk job",
+          "resources": [
+            "driveProtectionUnitsBulkAdditionJob",
+            "mailboxProtectionUnitsBulkAdditionJob",
+            "siteProtectionUnitsBulkAdditionJob"
+          ]
+        },
+        {
           "name": "Restore artifact",
           "resources": [
             "granularMailBoxRestoreArtifact",
             "driveRestoreArtifact",
             "mailboxRestoreArtifact",
             "siteRestoreArtifact"
+          ]
+        },
+        {
+          "name": "Restore artifacts bulk request",
+          "resources": [
+            "driveRestoreArtifactsBulkAdditionRequest",
+            "mailboxRestoreArtifactsBulkAdditionRequest",
+            "siteRestoreArtifactsBulkAdditionRequest"
           ]
         },
         {
@@ -988,13 +1005,14 @@
                 "microsoftAuthenticatorAuthenticationMethod",
                 "passwordAuthenticationMethod",
                 "phoneAuthenticationMethod",
+                "platformCredentialAuthenticationMethod",
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod"
               ]
             },
             {
-              "name": "Authentication methods policy",
+              "name": "Authentication methods policies",
               "overview": "../../resources/authenticationmethodspolicies-overview.md",
               "resources": [
                 "authenticationMethodsPolicy",
@@ -1051,6 +1069,8 @@
               "name": "Custom authentication extensions",
               "resources": [
                 "customAuthenticationExtension",
+                "onAttributeCollectionStartCustomExtension",
+                "onAttributeCollectionSubmitCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -1137,11 +1157,23 @@
               ]
             },
             {
+              "name": "Public key infrastructure",
+              "resources": [
+                "certificateBasedAuthPki",
+                "certificateAuthorityDetail"
+               ]
+            },
+            {
               "name": "User flows in external tenants",
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
-                "authenticationConditionApplication"
+                "authenticationConditionApplication",
+                "onAttributeCollectionHandler",
+                "onAttributeCollectionStartHandler",
+                "onAttributeCollectionStartCustomExtensionHandler",
+                "onAttributeCollectionSubmitHandler",
+                "onAttributeCollectionSubmitCustomExtensionHandler"
               ]
             },
             {
@@ -1754,6 +1786,22 @@
       ],
       "childNodes": [
         {
+          "name": "AI interactions",
+          "resources": [
+            "aiInteractionHistory"
+          ],
+          "complexTypes": [
+            "aiInteraction",
+            "aiInteractionAttachment",
+            "aiInteractionContext",
+            "aiInteractionLink",
+            "aiInteractionMention",
+            "aiInteractionMentionedIdentitySet",
+            "aiUser",
+            "copilotRoot"
+          ]
+        },
+        {
           "name": "Apps",
           "resources": [
             "teamsApp",
@@ -1790,6 +1838,20 @@
                 "microsoft.graph.callRecords.participant",
                 "microsoft.graph.callRecords.pstnCallLogRow",
                 "microsoft.graph.callRecords.session"
+              ],
+              "complexTypes": [
+                "microsoft.graph.callRecords.networkInfo"
+              ]
+            },
+            {
+              "name": "Copilot settings",
+              "resources": [
+                "copilotAdminLimitedMode"
+              ],
+              "complexTypes": [
+                "copilotAdmin",
+                "copilotAdminSetting",
+                "copilotRoot"
               ]
             },
             {

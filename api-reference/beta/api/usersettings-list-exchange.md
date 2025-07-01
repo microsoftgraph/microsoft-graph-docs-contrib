@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of Exchange settings, including mailboxes that belong to a user. Currently, the mailbox types supported are the user's primary and in-place archive. To learn how to get a list of users in a tenant, see [List users](../api/user-list.md).
+Get a list of Exchange mailboxes that belong to a user. Currently, the mailbox types supported are the user's primary mailbox and shared mailboxes. To learn how to get a list of users in a tenant, see [List users](../api/user-list.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [exchangeSettings](../resources/exchangesettings.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an [exchangeSettings](../resources/exchangesettings.md) resource in the response body.
 
 ## Examples
 
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/users/megan@contoso.com/settings/exchange
 [!INCLUDE [sample-code](../includes/snippets/php/list-exchangesettings-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-exchangesettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-exchangesettings-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -119,12 +123,20 @@ Content-type: application/json
 Content-length: 232
 
 {
-  "value": [
-    {
       "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('megan%40contoso.com')/settings/exchange/$entity",
-      "primaryMailboxId": "MBX:e0643f21@a7809c93",
-      "inPlaceArchiveMailboxId": "MBX:4eba5149@a7809c93"
-    }
-  ]
+      "primaryMailboxId": "MBX:e0643f21@a7809c93"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List exchangesettings",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  "Error: list_exchangesettings:
+    Failed to locate collection property 'value' in response."
+]
+}-->
+

@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -27,6 +27,8 @@ Windows Quality Update Policy
 |[Delete windowsQualityUpdatePolicy](../api/intune-softwareupdate-windowsqualityupdatepolicy-delete.md)|None|Deletes a [windowsQualityUpdatePolicy](../resources/intune-softwareupdate-windowsqualityupdatepolicy.md).|
 |[Update windowsQualityUpdatePolicy](../api/intune-softwareupdate-windowsqualityupdatepolicy-update.md)|[windowsQualityUpdatePolicy](../resources/intune-softwareupdate-windowsqualityupdatepolicy.md)|Update the properties of a [windowsQualityUpdatePolicy](../resources/intune-softwareupdate-windowsqualityupdatepolicy.md) object.|
 |[assign action](../api/intune-softwareupdate-windowsqualityupdatepolicy-assign.md)|None||
+|[bulkAction action](../api/intune-softwareupdate-windowsqualityupdatepolicy-bulkaction.md)|[bulkCatalogItemActionResult](../resources/intune-softwareupdate-bulkcatalogitemactionresult.md)||
+|[retrieveWindowsQualityUpdateCatalogItemDetails function](../api/intune-softwareupdate-windowsqualityupdatepolicy-retrievewindowsqualityupdatecatalogitemdetails.md)|[windowsQualityUpdateCatalogItemPolicyDetail](../resources/intune-softwareupdate-windowsqualityupdatecatalogitempolicydetail.md) collection||
 
 ## Properties
 |Property|Type|Description|
@@ -38,6 +40,7 @@ Windows Quality Update Policy
 |lastModifiedDateTime|DateTimeOffset|Timestamp of when the profile was modified. The value cannot be modified and is automatically populated when the profile is modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. Read-only|
 |roleScopeTagIds|String collection|List of the scope tag ids for this profile.|
 |hotpatchEnabled|Boolean|Indicates if hotpatch is enabled for the tenants. When 'true', tenant can apply quality updates without rebooting their devices. When 'false', tenant devices will receive cold patch associated with Windows quality updates.|
+|approvalSettings|[windowsQualityUpdateApprovalSetting](../resources/intune-softwareupdate-windowsqualityupdateapprovalsetting.md) collection|The list of approval settings for this policy. The maximun number of approval settings supported for one policy is 6. The expected number of approval settings for one policy from UX is 4.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -63,6 +66,15 @@ Here is a JSON representation of the resource.
   "roleScopeTagIds": [
     "String"
   ],
-  "hotpatchEnabled": true
+  "hotpatchEnabled": true,
+  "approvalSettings": [
+    {
+      "@odata.type": "microsoft.graph.windowsQualityUpdateApprovalSetting",
+      "windowsQualityUpdateCadence": "String",
+      "windowsQualityUpdateCategory": "String",
+      "approvalMethodType": "String",
+      "deferredDeploymentInDay": 1024
+    }
+  ]
 }
 ```

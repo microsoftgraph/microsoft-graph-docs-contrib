@@ -6,7 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: apiPageType
-ms.date: 12/23/2024
+ms.date: 05/16/2025
 ---
 
 # List users
@@ -1139,8 +1139,9 @@ HTTP/1.1 200 OK
 ```
 
 ### Example 14: List all users whose management is restricted
-
+The following example shows how to list all users whose management is restricted.
 #### Request
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -1185,26 +1186,106 @@ GET https://graph.microsoft.com/beta/users?$filter=isManagementRestricted eq tru
 ---
 
 #### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeUnit"
+  "@odata.type": "microsoft.graph.user"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName,userPrincipalName)",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName,userPrincipalName)",
+  "value": [
+    {
+      "displayName": "Adele",
+      "userPrincipalName": "Adele@contoso.com"
+    },
+    {
+      "displayName": "Bob",
+      "userPrincipalName": "Bob@contoso.com"
+    }
+  ]
+}
+```
+
+### Example 15: Use $filter and endsWith to get users with a specified top-level domain in otherMails
+
+#### Request
+The following example shows a request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_users_filterOtherMails"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=otherMails/any(x:endswith(x,'.edu'))&$count=true
+ConsistencyLevel: eventual
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-users-filterothermails-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-users-filterothermails-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-users-filterothermails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-users-filterothermails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-users-filterothermails-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-users-filterothermails-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-users-filterothermails-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-users-filterothermails-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/users?$filter=otherMails%2fany(x%3aendswith(x%2c%27.edu%27))&$skiptoken=m~AQAoOzAzNWVkMDQ1MTE5ZjRlMmNiM2Y2ODQzMmM4YzNiOWJiOzswOzA7Ow",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET users?$select=signInActivity,cloudLicensing",
     "value": [
         {
-            "displayName": "Adele",
-            "userPrincipalName": "Adele@contoso.com"
+            "displayName": "Isaiah Langer",
+            "mail": "isaiahl@fineartschool.edu",
+            "id": "0012cd20-3890-409e-9db3-afc3055ebe22"
         },
         {
-            "displayName": "Bob",
-            "userPrincipalName": "Bob@contoso.com"
+            "displayName": "Adele Vance",
+            "mail": "adelev@bellowscollege.edu",
+            "id": "0012cd20-3890-409e-9db3-afc3055ebe22"
         }
     ]
 }

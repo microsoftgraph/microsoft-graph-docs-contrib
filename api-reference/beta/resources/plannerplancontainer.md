@@ -22,6 +22,7 @@ Planner currently supports the container types listed in the following table. Wh
 |----|-----------|--------------------|
 |driveItem| Plan is contained by a [driveItem](driveitem.md). | `https://graph.microsoft.com/beta/drives/<driveId>/items/<itemId>`|
 |group| Plan is contained by a [group](group.md).| `https://graph.microsoft.com/beta/groups/<id>` |
+|plannerTask| Plan is contained by a [plannerTask](plannertask.md). | `https://graph.microsoft.com/beta/planner/tasks/<taskId>` |
 |project| Plan is contained by a Project from [Microsoft Project for the web](/project-for-the-web/projectforweb-admin-home). | Microsoft Project currently doesn't have a resource path on Microsoft Graph. Project details and members can be managed from [Microsoft Project](https://project.microsoft.com). |
 |roster| Plan is contained by a [plannerRoster](plannerroster.md). | `https://graph.microsoft.com/beta/planner/rosters/<id>` |
 |teamsChannel| Plan is contained by a Teams [channel](channel.md). | `https://graph.microsoft.com/beta/teams/<teamId>/channels/<channelId>` |
@@ -31,7 +32,7 @@ Planner currently supports the container types listed in the following table. Wh
 |Property|Type|Description|
 |:---|:---|:---|
 |containerId|String|The identifier of the resource that contains the plan. Optional.|
-|type|plannerContainerType|The type of the resource that contains the plan. For supported types, see the previous table. Possible values are: `group`, `unknownFutureValue`, `roster`, `project`, `driveItem`, `user`, and `teamsChannel`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`, `project`, `driveItem`, and `user`. Optional.|
+|type|plannerContainerType|The type of the resource that contains the plan. For supported types, see the previous table. Possible values are: `group`, `unknownFutureValue`, `roster`, `project`, `driveItem`, `user`, `teamsChannel`, and `plannerTask`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`, `project`, `driveItem`, `user`, `teamsChannel`, and `plannerTask`. Optional.|
 |url|String|The full canonical URL of the container. Optional.|
 
 ## Relationships

@@ -1,5 +1,5 @@
 ---
-title: "Get roadmap"
+title: "Get roadmap (deprecated)"
 description: "Read the properties and relationships of a roadmap object."
 author: "garretraziel"
 ms.date: 11/20/2024
@@ -8,11 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Get roadmap
+# Get roadmap (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [entra-lifecycle-announcements-deprecation-note](../includes/entra-lifecycle-announcements-deprecation-note.md)]
 
 Read the properties and relationships of a [roadmap](../resources/roadmap.md) object.
 
@@ -58,7 +60,6 @@ If successful, this method returns a `200 OK` response code and a [roadmap](../r
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roadmap"
@@ -67,12 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.graph.roadmap/8370d119-d695-4dd9-bce2-00e893fadf7d
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-roadmap-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

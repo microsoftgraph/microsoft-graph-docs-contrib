@@ -21,9 +21,9 @@ The Microsoft Search API provides one unified search endpoint that you can use t
 
 ### Include custom external data in search experience
 
-Use [Microsoft Graph connectors](/microsoftsearch/connectors-overview) to include data outside of the Microsoft cloud in your search experience. For instance, connect to an organization's human resources database or product catalog. Then use the Microsoft Search API to seamlessly [query](/graph/api/search-query) the external data source.
+Use [Microsoft 365 Copilot connectors](/microsoftsearch/connectors-overview) (formerly Microsoft Graph connectors) to include data outside of the Microsoft cloud in your search experience. For instance, connect to an organization's human resources database or product catalog. Then use the Microsoft Search API to seamlessly [query](/graph/api/search-query) the external data source.
 
-Browse the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery) to find ready-to-use connectors. Alternatively, you can [build your own connectors](/graph/api/resources/connectors-api-overview#common-use-cases) to index external custom items and query specific external data sources.
+Browse the [Copilot connectors gallery](/microsoftsearch/connectors-gallery) to find ready-to-use connectors. Alternatively, you can [build your own connectors](/graph/api/resources/connectors-api-overview#common-use-cases) to index external custom items and query specific external data sources.
 
 ### Consistent, up-to-date search experience
 
@@ -36,7 +36,7 @@ The Microsoft Search API supports searching the following content in the Microso
 - Outlook email [message](/graph/api/resources/message) and calendar [event](/graph/api/resources/event) resources.
 - SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem) resources), [list](/graph/api/resources/list), [listItem](/graph/api/resources/listitem), [site](/graph/api/resources/site), and [drive](/graph/api/resources/drive) resources.
 - [Person](/graph/api/resources/person) resources in an organization who are most relevant to a user.
-- Content ingested through the Microsoft Graph connectors platform: [externalItem](/graph/api/resources/externalitem) resources.
+- Content ingested through the Copilot connectors platform: [externalItem](/graph/api/resources/externalitem) resources.
 - Administrative search answer resources: [acronym](/graph/api/resources/search-acronym), [bookmark](/graph/api/resources/search-bookmark), and [qna](/graph/api/resources/search-qna) resources.
 
 ## API reference

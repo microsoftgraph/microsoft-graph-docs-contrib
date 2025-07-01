@@ -34,7 +34,6 @@ The following limitations apply to this resource:
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the rule.|
 |createdDateTime|DateTimeOffset|The time of creation of the rule.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an operation on a rule fails.|
-|isAutoApplyEnabled|Boolean| `true` indicates that the protection rule is dynamic; `false` that it's static. Currently, only static rules are supported.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification made to the rule.|
 |status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. The `draft` member is currently unsupported.|
@@ -79,7 +78,6 @@ The following JSON representation shows the resource type.
   },
   "error": {
     "@odata.type": "microsoft.graph.publicError"
-  },
-  "isAutoApplyEnabled": "Boolean"
+  }
 }
 ```

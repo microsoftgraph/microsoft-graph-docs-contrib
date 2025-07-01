@@ -74,6 +74,14 @@ items:
       href: ../../api/user-list-calendarview.md
     - name: Reminder view
       href: ../../api/user-reminderview.md
+  - name: Call delegation
+    items:
+    - name: Get delegation settings
+      href: ../../api/delegationsettings-get.md
+    - name: List delegates
+      href: ../../api/callsettings-list-delegates.md
+    - name: List delegators
+      href: ../../api/callsettings-list-delegators.md
   - name: Cloud licensing
     items:
     - name: List usage rights
@@ -86,6 +94,14 @@ items:
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
+  - name: Data security and governance
+    items:
+    - name: Compute protection scopes
+      href: ../../api/userprotectionscopecontainer-compute.md
+    - name: Create content activity
+      href: ../../api/activitiescontainer-post-contentactivities.md
+    - name: Process content
+      href: ../../api/userdatasecurityandgovernance-processcontent.md
   - name: Delegated permission grants
     items:
     - name: List delegated permission grants

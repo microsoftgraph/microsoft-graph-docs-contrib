@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of built-in workflow tasks in Lifecycle Workflows. A task is represented by the [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -124,7 +124,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions",
-    "@odata.count": 24,
+    "@odata.count": 25,
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/lifecycleWorkflows/taskDefinitions?$select=category,continueOnError",
     "value": [
         {
@@ -228,6 +228,16 @@ Content-Type: application/json
                     "name": "locale",
                     "values": [],
                     "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
+                    "valueType": "string"
                 }
             ]
         },
@@ -256,6 +266,16 @@ Content-Type: application/json
                 {
                     "name": "locale",
                     "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
                     "valueType": "string"
                 }
             ]
@@ -345,8 +365,8 @@ Content-Type: application/json
         },
         {
             "category": "leaver",
-            "description": "Send offboarding email to user's manager before the last day of work",
-            "displayName": "Send email before user's last day",
+            "description": "Send offboarding email to user’s manager before the last day of work",
+            "displayName": "Send email before user’s last day",
             "id": "52853a3e-f4e5-4eb8-bb24-1ac09a1da935",
             "version": 1,
             "parameters": [
@@ -369,13 +389,23 @@ Content-Type: application/json
                     "name": "locale",
                     "values": [],
                     "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
+                    "valueType": "string"
                 }
             ]
         },
         {
             "category": "leaver",
-            "description": "Send offboarding email to user's manager on the last day of work",
-            "displayName": "Send email on user's last day",
+            "description": "Send offboarding email to user’s manager on the last day of work",
+            "displayName": "Send email on user’s last day",
             "id": "9c0a1eaf-5bda-4392-9d9e-6e155bb57411",
             "version": 1,
             "parameters": [
@@ -398,13 +428,23 @@ Content-Type: application/json
                     "name": "locale",
                     "values": [],
                     "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
+                    "valueType": "string"
                 }
             ]
         },
         {
             "category": "leaver",
-            "description": "Send offboarding email to user's manager after the last day of work",
-            "displayName": "Send email after user's last day",
+            "description": "Send offboarding email to user’s manager after the last day of work",
+            "displayName": "Send email after user’s last day",
             "id": "6f22ddd4-b3a5-47a4-a846-0d7c201a49ce",
             "version": 1,
             "parameters": [
@@ -427,12 +467,22 @@ Content-Type: application/json
                     "name": "locale",
                     "values": [],
                     "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
+                    "valueType": "string"
                 }
             ]
         },
         {
             "category": "joiner",
-            "description": "Send onboarding reminder email to user's manager",
+            "description": "Send onboarding reminder email to user’s manager",
             "displayName": "Send onboarding reminder email",
             "id": "3C860712-2D37-42A4-928F-5C93935D26A1",
             "version": 1,
@@ -455,6 +505,16 @@ Content-Type: application/json
                 {
                     "name": "locale",
                     "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
                     "valueType": "string"
                 }
             ]
@@ -510,7 +570,7 @@ Content-Type: application/json
         },
         {
             "category": "mover",
-            "description": "Send email to notify user's manager of user move",
+            "description": "Send email to notify user’s manager of user move",
             "displayName": "Send email to notify manager of user move",
             "id": "aab41899-9972-422a-9d97-f626014578b7",
             "version": 1,
@@ -533,6 +593,16 @@ Content-Type: application/json
                 {
                     "name": "locale",
                     "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
                     "valueType": "string"
                 }
             ]
@@ -564,6 +634,14 @@ Content-Type: application/json
                     "valueType": "string"
                 }
             ]
+        },
+        {
+            "category": "leaver,mover",
+            "description": "Revoke all refresh tokens for user",
+            "displayName": "Revoke all refresh tokens for user",
+            "id": "509589a4-0466-4471-829e-49c5e502bdee",
+            "version": 1,
+            "parameters": []
         }
     ]
 }

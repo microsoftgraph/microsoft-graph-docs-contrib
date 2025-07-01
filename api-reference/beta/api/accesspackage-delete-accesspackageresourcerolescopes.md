@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Remove an [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) from an [accessPackage](../resources/accesspackage.md) list of resource role scopes.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

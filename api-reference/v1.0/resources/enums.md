@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 03/10/2025
+ms.date: 06/23/2025
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
@@ -140,6 +140,14 @@ Namespace: microsoft.graph
 | recommeded |
 | unknownFutureValue |
 | peerRecommeded |
+
+### certificateAuthorityType values
+
+|Member|
+|:---|
+|root|
+|intermediate|
+|unknownFutureValue|
 
 ### courseStatus values
 
@@ -3459,3 +3467,34 @@ Possible values for user account types (group membership), per Windows definitio
 |onBreak|
 |clockedOut|
 |unknownFutureValue|
+
+### scheduleChangeState values
+
+| Member |
+| ----------------------------- |
+| pending |
+| approved |
+| declined |
+| unknownFutureValue |
+
+### scheduleChangeRequestActor values
+
+| Member |
+| ----------------------------- |
+| sender |
+| recipient |
+| manager |
+| system |
+| unknownFutureValue |
+
+## authenticationMethodPlatform values
+
+| Member  |
+| :------ |
+| unknown |
+| windows |
+| macOS   |
+| iOS     |
+| android |
+| linux   |
+| unknownFutureValue |

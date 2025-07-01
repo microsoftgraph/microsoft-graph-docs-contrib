@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 UnifiedRoleAssignmentCollectionResponse result = graphClient.roleManagement().directory().roleAssignments().get(requestConfiguration -> {
-	requestConfiguration.queryParameters.filter = "principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'";
+	requestConfiguration.queryParameters.filter = "principalId eq 'd9771b4c-06c5-491a-92cb-3aa4e225a725'";
 });
 
 

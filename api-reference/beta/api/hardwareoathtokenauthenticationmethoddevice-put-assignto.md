@@ -15,25 +15,39 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign a hardware OATH token, represented by a [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md)object, to a user.
+Assign a hardware OATH token, represented by a [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) object, to a user. Self-service operations are supported.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+## Permissions acting on self
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-[!INCLUDE [permissions-table](../includes/permissions/hardwareoathtokenauthenticationmethoddevice-post-assignto-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/hardwareoathtokenauthenticationmethoddevice-put-assignto-permissions.md)]
 
-[!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
+## Permissions acting on another user
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+[!INCLUDE [permissions-table](../includes/permissions/hardwareoathtokenauthenticationmethoddevice-put-assignto-2-permissions.md)]
+
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
-
+Assign a hardware OATH authentication method for yourself.
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-PUT /directory/authenticationMethodDevices/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/$ref
+PUT /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/device/assignTo/$ref
+```
+
+Assign a hardware OATH authentication method for another user.
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PUT /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/device/assignTo/$ref
 ```
 
 ## Request headers
@@ -73,7 +87,7 @@ PUT https://graph.microsoft.com/beta/users/{usersId}/authentication/hardwareOath
 Content-Type: application/json
 
 {
-    "@odata.id": "https://graph.microsoft-ppe.com/beta/users/0cadbf92-####-####-####-############"
+    "@odata.id": "https://graph.microsoft.com/beta/users/0cadbf92-####-####-####-############"
 }
 ```
 
