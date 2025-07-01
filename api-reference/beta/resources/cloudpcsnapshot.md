@@ -60,7 +60,7 @@ Inherits from [entity](../resources/entity.md).
 | automatic          | Indicates the snapshot is created automatically by Windows 365 regularly.           |
 | manual             | Indicates the snapshot is created manually by customer.               |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.     |
-| retention             | Indicates the snapshot is a retention snapshot. If a Cloud PC is about to be deprovisioned (manually triggered or due to license expire, etc.), a snapshot of the Cloud PC will be taken as retention snapshot, kept in a Microsoft managed limited-function storage account for 90 days. During this period, customer can extract the data or use the data to provision new Cloud PC. After 90-day retention period, Microsoft disables the account and deletes the customer data.               |
+| retention             | Indicates the snapshot is a retention snapshot. If a Cloud PC is about to be deprovisioned (manually triggered or due to license expiring etc.), a snapshot of the Cloud PC is taken as a retention snapshot. And, it's kept in a Microsoft-managed limited-function storage account for 90 days. During this period, customers can extract the data or use the data to provision a new Cloud PC. After a 90-day retention period, Microsoft disables the account and deletes the customer data. |
 
 ## Relationships
 None.
