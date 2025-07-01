@@ -118,14 +118,15 @@ Content-Type: application/json
 
 The response to this request, if successful, will provide the details for where the remainder of the requests should be sent as an [UploadSession](../resources/uploadsession.md) resource.
 
-When a session is created and it generates a pre-authenticated upload URLs, the upload URL can be used to complete the upload during a period of time sufficient enough to upload large files.
+When a session is created and generates pre-authenticated upload URLs, the upload URL can be used to complete the upload within a time window sufficient for large files. 
 
-The [UploadSession](../resources/uploadSession.md) resource provides details about where the byte range of the file should be uploaded, and the time when the upload session expires.
-The session expirationDateTime property indicates the time when the current session expires if no further activity occurs. This means that:
-- You have until that time to either upload the next fragment or commit the session.
-- Each fragment uploaded extends the expiration time, allowing for large file uploads to be completed. The updated expiration time is returned in every request to upload a file fragment.
+The [uploadSession](../resources/uploadsession.md) resource provides details about where each byte range of the file should be uploaded and specifies when the session expires. The **expirationDateTime** property indicates the time at which the current session expires if no further activity occurs. This results in the following:
+
+- You must upload the next fragment or commit the session before the time specified in the **expirationDateTime** property.
+- Each uploaded fragment extends the expiration time, which allows large file uploads to be completed successfully. The updated expiration time is returned in every request to upload a file fragment.
 - If no fragments are received and the session is not committed, all previously uploaded fragments are discarded.
-This process allows the upload of large files, while helping upload sessions to also be managed efficiently by preventing stale or abondended data from lingering in the system for too long.
+
+This process supports large file uploads and ensures that upload sessions are efficiently managed by preventing stale or abandoned data from remaining in the system too long.
 
 If the `fileSize` parameter is specified and exceeds the available quota, a `507 Insufficent Storage` response is returned and the upload session won't be created.
 
