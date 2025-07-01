@@ -59,14 +59,14 @@ The following table lists the parameters that are required when you call this ac
 |identityProvider|microsoft.graph.security.identityProvider|The identity provider associated with the account. The possible values are: `entraID`, `activeDirectory`, `okta`.|
 
 
-| Action Value             | Description                                                                                                                        | Supported identity providers   |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| Disable                  | Disable account. Account won't be able to authenticate. If the account has recently logged in, it does not have access to resources. | activeDirectory, entraId, okta |
-| Enable                   | Enable account.                                                                                                                    | activeDirectory, entraId, okta          |
-| ForcePasswordReset       | Force password reset of the account.                                                                                               | activeDirectory                         |
-| RevokeAllSessions        | Revoke all of active sessions for the account.                                                                                     | entraId, okta                  |
-| RequireUserToSignInAgain | Require the user to sign in again.                                                                                                 | entraId                        |
-| MarkUserAsCompromised    | Mark the user as compromised.                                                                                                      | entraId                        |
+| Action Value             | Description                                                                                                                         | Supported identity providers   |
+|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
+| Disable                  | Disable account. The account is unable to authenticate. If the account recently logged in, it doesn't have access to resources. | activeDirectory, entraId, okta |
+| Enable                   | Enable account.                                                                                                                     | activeDirectory, entraId, okta          |
+| ForcePasswordReset       | Force password reset of the account.                                                                                                | activeDirectory                         |
+| RevokeAllSessions        | Revoke all of active sessions for the account.                                                                                      | entraId, okta                  |
+| RequireUserToSignInAgain | Require the user to sign in again.                                                                                                  | entraId                        |
+| MarkUserAsCompromised    | Mark the user as compromised.                                                                                                       | entraId                        |
 
 ## Response
 
