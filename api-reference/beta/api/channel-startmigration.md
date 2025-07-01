@@ -1,6 +1,6 @@
 ---
 title: "channel: startMigration"
-description: "Start the migration of external messages by enabling migration mode in existing channel"
+description: "Start the migration of external messages by enabling migration mode in the existing channel"
 ms.localizationpriority: medium
 author: "MehakAgarwal"
 ms.subservice: "teams"
@@ -14,20 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The API will allow users to enable migration mode on existing channels. Previously, users were only allowed to initiate import operations on newly created Standard Channels in empty state ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+The API allows users to enable migration mode on existing channels. Previously, users were only allowed to initiate import operations on newly created Standard Channels in the empty state ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
 Starts the message migration process by populating `migration mode` to `inProgress` for a [channel](../resources/channel.md) in a team.
 
-Users are also allowed to define minimum timestamp for contents to be migrated, allowing them to import messages in the past. Provided timestamp is required to be older than the current `createdDateTime` for a [channel](../resources/channel.md).
+Users are also allowed to define a minimum timestamp for content to be migrated, allowing them to import messages in the past. Provided timestamp is required to be older than the current `createdDateTime` for a [channel](../resources/channel.md).
 
-Provided timestamp will be used to replace existing `createdDateTime` of the [channel](../resources/channel.md).
+Provided timestamp is used to replace the existing `createdDateTime` of the [channel](../resources/channel.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Supported types of channels
 
-1) New Channels (General, Standard, Private and Shared)
-2) Existing Channels (General, Standard, Private and Shared).
+1) New Channels (Standard, Private, and Shared)
+2) Existing Channels (Standard, Private, and Shared).
 
 ## Permissions
 
@@ -48,9 +48,9 @@ POST  /teams/{team-id}/channels/{channel-id}/startMigration
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Optional Request body
+## Optional request body
 
-You can optionally provide a request body to specify the minimum timestamp for the messages to be migrated. If you don't provide a request body, the API will use the current date and time as the minimum timestamp.
+You can optionally provide a request body to specify the minimum timestamp for the messages to be migrated. If you don't provide a request body, the API uses the current date and time as the minimum timestamp.
 
 ```json
 {
@@ -66,7 +66,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD022 -->
 
@@ -84,7 +84,7 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 <!-- markdownlint-disable MD024 -->
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
