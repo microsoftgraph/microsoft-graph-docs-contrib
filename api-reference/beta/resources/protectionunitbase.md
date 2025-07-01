@@ -27,7 +27,7 @@ Inherits from [entity](entity.md).
 |:---|:---|:---|
 |[Get](../api/protectionunitbase-get.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Read the properties and relationships of a [protectionUnitBase](../resources/protectionunitbase.md) object.|
 |[offboard](../api/protectionunitbase-offboard.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Offboard a [protectionUnitBase](../resources/protectionunitbase.md) |
-|[cancel offboard](../api/protectionunitbase-cancelOffboard.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Cancel offboard for a [protectionUnitBase](../resources/protectionunitbase.md).|
+|[Cancel offboard](../api/protectionunitbase-cancelOffboard.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Cancel offboard for a [protectionUnitBase](../resources/protectionunitbase.md).|
 
 ## Properties
 |Property|Type|Description|
