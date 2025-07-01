@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD022 -->
 
@@ -73,7 +73,7 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 <!-- markdownlint-disable MD024 -->
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

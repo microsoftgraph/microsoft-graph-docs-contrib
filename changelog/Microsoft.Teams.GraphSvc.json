@@ -3033,7 +3033,7 @@
         {
           "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db51",
           "ApiChange": "Property",
-          "ChangedApiName": "GET",
+          "ChangedApiName": "migrationMode",
           "ChangeType": "Addition",
           "Description": "Added the **migrationMode** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "chat"
@@ -3051,7 +3051,7 @@
         {
           "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db52",
           "ApiChange": "Property",
-          "ChangedApiName": "GET",
+          "ChangedApiName": "originalCreatedDateTime",
           "ChangeType": "Addition",
           "Description": "Added the **originalCreatedDateTime** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "chat"
@@ -3069,7 +3069,7 @@
         {
           "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db53",
           "ApiChange": "Property",
-          "ChangedApiName": "GET",
+          "ChangedApiName": "originalCreatedDateTime",
           "ChangeType": "Addition",
           "Description": "Added the **originalCreatedDateTime** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "chat"
@@ -3087,7 +3087,7 @@
         {
           "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db54",
           "ApiChange": "Property",
-          "ChangedApiName": "GET",
+          "ChangedApiName": "migrationMode",
           "ChangeType": "Addition",
           "Description": "Added the **migrationMode** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "chat"

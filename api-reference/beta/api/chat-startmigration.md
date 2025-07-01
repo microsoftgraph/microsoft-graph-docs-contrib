@@ -24,7 +24,7 @@ Provided timestamp will be used to replace existing `createdDateTime` of the [ch
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-## Supported types of chats
+**Supported types of chats**
 
 1) New Chats (Group, 1:1, and Federated)
 2) Existing Chats (Group, 1:1, and Federated).
@@ -66,7 +66,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD022 -->
 
@@ -84,7 +84,7 @@ POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@
 <!-- markdownlint-disable MD024 -->
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

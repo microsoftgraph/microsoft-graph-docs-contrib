@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The API will allow users to complete migration on existing channels or new channels. Previously, users were only allowed to initiate complete migration operations on newly created Standard Channels, which were created for initial migration flow. ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+Complete migration on existing channels or new channels. Previously, users were only allowed to initiate complete migration operations on newly created standard channels, which were created for the initial migration flow. ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
-Points to note:
+**Points to note:**
 
 1) When channel is created in migration mode for initial import flow, then with this new API `Migration mode` from a [channel](../resources/channel.md) in a team will be updated to **Completed** instead of being dropped and the state will be marked to chat/channels permanently.`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 
@@ -26,10 +26,10 @@ After a **completeMigration** request is made for existing or new channels, you 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-## Supported types of channels
+**Supported types of channels**
 
-1) New channels (General, Standard, Private, and Shared) created in migration mode for initial import flow.
-2) Existing channels (General, Standard, Private, and Shared) which are already in migration mode.
+1) New channels (Standard, Private, and Shared) created in migration mode for initial import flow.
+2) Existing channels (Standard, Private, and Shared) which are already in migration mode.
 
 ## Permissions
 
@@ -62,7 +62,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD022 -->
 
@@ -115,7 +115,7 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 <!-- markdownlint-disable MD024 -->
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

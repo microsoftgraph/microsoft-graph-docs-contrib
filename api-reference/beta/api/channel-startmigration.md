@@ -24,7 +24,7 @@ Provided timestamp is used to replace the existing `createdDateTime` of the [cha
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-## Supported types of channels
+**Supported types of channels**
 
 1) New Channels (Standard, Private, and Shared)
 2) Existing Channels (Standard, Private, and Shared).
