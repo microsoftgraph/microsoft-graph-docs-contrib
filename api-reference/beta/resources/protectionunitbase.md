@@ -84,4 +84,3 @@ The following JSON representation shows the resource type.
   "offboardRequestedDateTime": "String (timestamp)",
 }
 ```
-
