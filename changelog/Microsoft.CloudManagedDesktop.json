@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "9047eef5-8f23-4eb7-aa4a-64ac273614c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcFrontlineSharedDeviceDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcFrontlineSharedDeviceDetail** resource type.",
+          "Target": "cloudPcFrontlineSharedDeviceDetail"
+        },
+        {
+          "Id": "9047eef5-8f23-4eb7-aa4a-64ac273614c3",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharedDeviceDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharedDeviceDetail** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "9047eef5-8f23-4eb7-aa4a-64ac273614c3",
+          "ApiChange": "Property",
+          "ChangedApiName": "provisionedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **provisionedDateTime** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "9047eef5-8f23-4eb7-aa4a-64ac273614c3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-01T14:15:30.6132749Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
           "ApiChange": "Method",
           "ChangedApiName": "bulkRestoreCloudPc",
