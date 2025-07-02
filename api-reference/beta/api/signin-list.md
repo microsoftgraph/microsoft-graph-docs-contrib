@@ -5,7 +5,7 @@ description: "Get a list of the user sign-ins in a Microsoft Entra tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
-ms.date: 01/23/2025
+ms.date: 06/18/2025
 ---
 
 # List signIns
@@ -45,7 +45,17 @@ This method supports the `$top`, `$skiptoken`, and `$filter` OData query paramet
 To avoid having the request time out, apply the `$filter` parameter with a time range for which to get all sign-ins, as shown in [Example 1](signin-list.md#example-1-list-all-sign-ins-during-a-specific-time-period).
 
 > [!NOTE]
-> This API returns only interactive sign-ins unless you set an explicit filter. For example, the filter for getting non-interactive sign-ins is `https://graph.microsoft.com/beta/auditLogs/signIns?&$filter=signInEventTypes/any(t: t eq 'nonInteractiveUser')`.
+> Only interactive sign-ins are returned through GET signins API requests unless you set an explicit filter on the **signInEventType** property as shown in the following examples:
+
+To request non-interactive sign-ins:
+```http
+GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=(createdDateTime ge 2024-01-13T14:13:32Z and createdDateTime le 2024-01-14T17:43:26Z) and signInEventTypes/any(t: t eq 'nonInteractiveUser')
+```
+
+To request service principal sign-ins:
+```http
+GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=(createdDateTime ge 2024-01-13T14:13:32Z and createdDateTime le 2024-01-14T17:43:26Z) and signInEventTypes/any(t: t eq 'servicePrincipal')
+```
 
 ## Request headers
 
@@ -65,6 +75,7 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 ### Example 1: List all sign-ins during a specific time period
 In this example, the response object shows the user signed in using MFA that was triggered by a conditional access policy, and the primary authentication method is through FIDO.
+
 
 #### Request
 
@@ -603,6 +614,87 @@ Content-type: application/json
                 "resourceId": "",
                 "policyTenantId": ""
             }
+        }
+    ]
+}
+```
+
+### Example 4: Retrieve all types of sign-in event types
+
+#### Request
+
+This API returns only interactive sign-ins unless you set an explicit filter. The following request allows you to specify a filter and return all sign-in event types.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_signins_signInEventTypes"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventTypes/any(t: t eq 'nonInteractiveUser' OR t eq 'interactiveUser' OR t eq 'servicePrincipal' OR t eq 'managedIdentity'))
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-signins-signineventtypes-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-signins-signineventtypes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-signins-signineventtypes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.signIn",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET auditLogs/signIns?$select=agent,appDisplayName",
+    "value": [
+        {
+            "id": "30618271-709e-43f3-ac59-f213f7e40800",
+            "userPrincipalName": "admin@m365x06786268.onmicrosoft.com",
+            "appDisplayName": "Graph Explorer",
+            "clientAppUsed": "Browser",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+            "signInEventTypes": [
+                "nonInteractiveUser"
+            ]
         }
     ]
 }

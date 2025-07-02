@@ -2,7 +2,7 @@
 title: "List appliesTo"
 description: "Get a list of directoryObject objects that a claimsMappingPolicy object has been applied to."
 ms.localizationpriority: medium
-author: "paulgarn"
+author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 07/29/2024

@@ -11,7 +11,7 @@ ms.date: 11/07/2024
 
 # Create, update, and delete connections in Microsoft Graph
 
-The Microsoft Graph connectors platform offers an intuitive way to add your external data into Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
+The Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) platform offers an intuitive way to add your external data into Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
 After a connection has been created, you can add your content from any external data source such as an on-premises content source or an external software as a service (SaaS) service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
 
@@ -135,5 +135,5 @@ To remove all items that were indexed via a connection, you can [delete a connec
 ## Next steps
 
 - [Register the connection schema](connecting-external-content-manage-schema.md)
-- [Review the Microsoft Graph connectors API reference](/graph/api/resources/connectors-api-overview)
+- [Review the Copilot connectors API reference](/graph/api/resources/connectors-api-overview)
 - [Download the sample search connector from GitHub](https://github.com/microsoftgraph/msgraph-search-connector-sample)

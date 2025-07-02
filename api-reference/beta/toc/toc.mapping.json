@@ -148,6 +148,7 @@
       ],
       "resources": [
         "backupRestoreRoot",
+        "emailNotificationsSetting",
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
@@ -219,6 +220,7 @@
       ],
       "complexTypes": [
         "artifactQuery",
+        "notificationRecipients",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
@@ -419,12 +421,6 @@
         "physicalAddress",
         "staffAvailabilityItem",
         "timeSlot"
-      ]
-    },
-    {
-      "name": "Data Security and Governance (preview)",
-      "resources": [
-        "userDataSecurityAndGoverance"
       ]
     },
     {
@@ -706,6 +702,7 @@
             "microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation",
             "microsoft.graph.windowsUpdates.qualityUpdateFilter",
             "microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+            "microsoft.graph.windowsUpdates.remediationUpdateFilter",
             "microsoft.graph.windowsUpdates.safeguardProfile",
             "microsoft.graph.windowsUpdates.safeguardSettings",
             "microsoft.graph.windowsUpdates.scheduleSettings",
@@ -834,10 +831,16 @@
         "educationSubmissionResource",
         "readingAssignmentSubmission",
         "reflectCheckInResponse",
-        "relatedContact"
+        "relatedContact",
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
         "challengingWord",
+        "educationAiFeedbackAudienceEngagementSettings",
+        "educationAiFeedbackContentSettings",
+        "educationAiFeedbackCriteria",
+        "educationAiFeedbackDeliverySettings",
+        "educationAiFeedbackSettings",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -856,6 +859,11 @@
         "educationMediaResource",
         "educationPowerPointResource",
         "educationResource",
+        "educationSpeakerCoachAudienceEngagementSettings",
+        "educationSpeakerCoachContentSettings",
+        "educationSpeakerCoachDeliverySettings",
+        "educationSpeakerCoachSettings",
+        "educationSpeakerProgressResource",
         "educationSubmissionIndividualRecipient",
         "educationSubmissionRecipient",
         "educationTeamsAppResource",
@@ -881,6 +889,11 @@
             "engagementRole",
             "engagementRoleMember",
             "employeeExperienceUser"
+          ],
+          "complexTypes": [
+            "engagementConversationMessageAttachment",
+            "engagementConversationMessageMention",
+            "engagementIdentitySet"
           ]
         },
         {
@@ -2226,6 +2239,8 @@
         "namePronunciationSettings",
         "enhancedPersonalizationSetting",
         "profile",
+        "profileSource",
+        "profilePropertySetting",
         "userAnalytics"
       ],
       "childNodes": [
@@ -2238,11 +2253,12 @@
         {
           "name": "People admin settings",
           "resources": [
-            "pronounsSettings",
-            "profileCardProperty",
+            "namePronunciationSettings",
             "photoUpdateSettings",
-            "namePronunciationSettings"
-
+            "profileCardProperty",
+            "profilePropertySetting",
+            "profileSource",
+            "pronounsSettings"
           ]
         },
         {
@@ -2411,11 +2427,13 @@
             {
               "name": "Microsoft Entra audit logs",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
+              "shouldSort": true,
               "resources": [
                 "customSecurityAttributeAudit",
                 "directoryAudit",
-                "signIn",
-                "provisioningObjectSummary"
+                "provisioningObjectSummary",
+                "selfServiceSignUp",
+                "signIn"
               ]
             }
           ]
@@ -2590,30 +2608,32 @@
           ]
         },
         {
-          "name": "Data security and compliance (preview)",
+          "name": "Data security and compliance",
           "resources": [
-            "activitiesContainer",
             "contentActivity",
-            "dataSecurityAndGovernance",
+            "microsoft.graph.security.sensitivityLabel",
             "tenantDataSecurityAndGovernance",
-            "tenantProtectionScopeContainer",
-            "userDataSecurityAndGovernance",
-            "userProtectionScopeContainer",
+            "userDataSecurityAndGovernance"
            ],
             "complexTypes": [
               "activityMetadata",
               "aiInteractionPlugin",
+              "autoLabeling",
               "binaryContent",
               "blockAccessAction",
               "classifcationErrorBase",
               "classificationError",
               "classificationInnerError",
+              "computeRightsAndInheritanceResult",
               "contentBase",
               "customMetadataDictionary",
               "deviceMetadata",
               "dlpActionInfo",
               "groupScope",
               "integratedApplicationMetadata",
+              "labelActionBase",
+              "labelContentRight",
+              "labelPolicy",
               "notifyUserAction",
               "operatingSystemSpecifications",
               "policyBinding",
@@ -2625,7 +2645,6 @@
               "policyTenantScope",
               "policyUserScope",
               "processContentBatchRequest",
-              "processConversationMetadata",
               "processContentRequest",
               "processContentResponse",
               "processContentResponses",
@@ -2633,6 +2652,9 @@
               "processFileMetadata",
               "processingError",
               "protectedApplicationMetadata",
+              "protectedContent",
+              "restrictAccessAction",
+              "restrictAccessActionBase",
               "scopeBase",
               "tenantScope",
               "textContent",
@@ -2996,7 +3018,7 @@
           ]
         },
         {
-          "name": "AI interactions (preview)",
+          "name": "AI interactions",
           "resources": [
             "aiInteractionHistory"
           ],
@@ -3030,6 +3052,9 @@
             "teamsAppSettings",
             "teamsTab",
             "resourceSpecificPermissionGrant"
+          ],
+          "complexTypes": [
+            "customAppSettings"
           ]
         },
         {
@@ -3099,6 +3124,7 @@
                 "meetingAttendanceReport",
                 "attendanceRecord",
                 "onlineMeeting",
+                "onlineMeetingEngagementConversation",
                 "externalMeetingRegistration",
                 "meetingRegistration",
                 "callAiInsight",
@@ -3244,6 +3270,7 @@
             "openShift",
             "openShiftChangeRequest",
             "schedule",
+            "scheduleChangeRequest",
             "schedulingGroup",
             "shift",
             "shiftPreferences",
@@ -3404,4 +3431,3 @@
     }
   ]
 }
-
