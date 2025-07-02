@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerTypeRegistrationSettings resource type"
-description: "**TODO: Add Description**"
+description: "Settings associated with a fileStorageContainerTypeRegistration"
 author: "javieralvarezchiang"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,20 +14,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings associated with a fileStorageContainerTypeRegistration. Some of these settings can be read only, 
+depending on the [settings of the fileStorageContainerType](fileStorageContainerTypeSettings.md). 
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isDiscoverabilityEnabled|Boolean|**TODO: Add Description**|
-|isItemVersioningEnabled|Boolean|**TODO: Add Description**|
-|isSearchEnabled|Boolean|**TODO: Add Description**|
-|isSharingRestricted|Boolean|**TODO: Add Description**|
-|itemMajorVersionLimit|Int64|**TODO: Add Description**|
-|maxStoragePerContainerInBytes|Int64|**TODO: Add Description**|
-|sharingCapability|sharingCapabilities|**TODO: Add Description**.The possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`, `unknownFutureValue`.|
-|urlTemplate|String|**TODO: Add Description**|
+|isDiscoverabilityEnabled|Boolean|Enables or disables surface of items from containers in experiences like my activity or M356|
+|isItemVersioningEnabled|Boolean|Controls item versioning.|
+|isSearchEnabled|Boolean|Defines if search is enabled.|
+|isSharingRestricted|Boolean|Controls if sharing is restricted.|
+|itemMajorVersionLimit|Int64|Maximum number of versions. Versioning must be enabled.|
+|maxStoragePerContainerInBytes|Int64|Controls maximum storage in bytes.|
+|sharingCapability|sharingCapabilities|Sharing capabilities permitted for containers. The possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`.|
+|urlTemplate|String|Pattern used to redirect files.|
 
 ## Relationships
 None.

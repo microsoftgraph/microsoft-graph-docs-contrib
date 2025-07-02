@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerType resource type"
-description: "**TODO: Add Description**"
+description: "Prototype and configuration of fileStorageContainers"
 author: "javieralvarezchiang"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,10 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A fileStorageContainerType, also called container type, is a SharePoint Embedded resource that defines the relationship, access privileges, and billing accountability between a SharePoint Embedded application and a set of [containers][fileStorageContainer].
 
+Each container type is coupled with one SharePoint Embedded application, which is referred to as the owning application.
 
-Inherits from [entity](../resources/entity.md).
+A fileStorageContainerType must be [registered][fileStorageContainerTypeRegistration] in a tenant to be able to create containers.
 
 
 ## Methods
@@ -32,15 +33,15 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|billingClassification|fileStorageContainerBillingClassification|**TODO: Add Description**.The possible values are: `standard`, `trial`, `directToCustomer`, `unknownFutureValue`.|
-|billingStatus|fileStorageContainerBillingStatus|**TODO: Add Description**.The possible values are: `invalid`, `valid`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|etag|String|**TODO: Add Description**|
-|expirationDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|name|String|**TODO: Add Description**|
-|owningAppId|Guid|**TODO: Add Description**|
-|settings|[fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md)|**TODO: Add Description**|
+|billingClassification|fileStorageContainerBillingClassification|Billing type. Defaults to standard. The possible values are: `standard`, `trial`, `directToCustomer`.|
+|billingStatus|fileStorageContainerBillingStatus|Billing status. Valid when the billing has been set up and with trial fileStorageContainerTypes. The possible values are: `invalid`, `valid`.|
+|createdDateTime|DateTimeOffset|fileStorageContainerType creation date. Read-only.|
+|etag|String|Used in update for optimistic concurrency control.|
+|expirationDateTime|DateTimeOffset|Expiration Date. Read-only.|
+|id|String|fileStorageContainerType ID. Read-only|
+|name|String|name of the fileStorageContainerType|
+|owningAppId|Guid|ID of the application that owns the fileStorageContainerType.|
+|settings|[fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md)|fileStorageContainerType settings|
 
 ## Relationships
 None.

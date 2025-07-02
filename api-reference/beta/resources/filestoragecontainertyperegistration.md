@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerTypeRegistration resource type"
-description: "**TODO: Add Description**"
+description: "The object created when a fileStorageContainerType is registered in a tenant"
 author: "javieralvarezchiang"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A fileStorageContainerTypeRegistration is the entity created when a 
+[fileStorageContainerType][fileStorageContainerType], also known as container type,
+ is registered on a consuming tenant using its ID (`containerTypeId`). 
+ This registration is required to be able to create [containers][fileStorageContainer].
+
+A fileStorageContainerTypeRegistration can modify its own [settings][fileStorageContainerTypeRegistrationSettings]
+from the defined in the [container type settings][fileStorageContainerTypeSettings]
+only if they're set as overridable.
+
+[applicationPermissionGrants][fileStorageContainerTypeAppPermissionGrant] define the access 
+privileges of applications on containers of a specific `containerTypeId`. It supports defining both Application-Only and Delegated permissions. A `containerType` can have more than one [applicationPermissionGrant][fileStorageContainerTypeAppPermissionGrant] and an application can have access to more than one `containerType`. This arrangement allows container access to be shared across applications.
+
 
 
 Inherits from [entity](../resources/entity.md).
@@ -34,20 +45,21 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|billingClassification|fileStorageContainerBillingClassification|**TODO: Add Description**.The possible values are: `standard`, `trial`, `directToCustomer`, `unknownFutureValue`.|
-|billingStatus|fileStorageContainerBillingStatus|**TODO: Add Description**.The possible values are: `invalid`, `valid`, `unknownFutureValue`.|
-|etag|String|**TODO: Add Description**|
-|expirationDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|name|String|**TODO: Add Description**|
-|owningAppId|Guid|**TODO: Add Description**|
-|registeredDateTime|DateTimeOffset|**TODO: Add Description**|
-|settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|**TODO: Add Description**|
+|billingClassification|fileStorageContainerBillingClassification|Billing type. Defaults to standard. The possible values are: `standard`, `trial`, `directToCustomer`.|
+|billingStatus|fileStorageContainerBillingStatus|Billing status. Valid when the billing has been set up and with trial fileStorageContainerTypes. The possible values are: `invalid`, `valid`.|
+|etag|String|Used in update for optimistic concurrency control.|
+|expirationDateTime|DateTimeOffset|Expiration Date. Read-only.|
+|id|String|fileStorageContainerType ID. Read-only|
+|name|String|name of the fileStorageContainerType. Read-only.|
+|owningAppId|Guid|ID of the application that owns the fileStorageContainerType. Read-only|
+|registeredDateTime|DateTimeOffset|Registration Date. Read-only|
+|settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|fileStorageContainerType settings|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md) collection|**TODO: Add Description**|
+|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md) collection|Access 
+privileges of applications on containers|
 
 ## JSON representation
 The following JSON representation shows the resource type.

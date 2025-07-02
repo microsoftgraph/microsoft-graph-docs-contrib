@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerTypeSettings resource type"
-description: "**TODO: Add Description**"
+description: "Settings associated with a fileStorageContainerType"
 author: "javieralvarezchiang"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,21 +14,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Configuration associated with a fileStorageContainerType. 
+
+>**Note:**  Some values used when a fileStorageContainer is created, but are not affected if the settings are modified afterwards. For example, maxStoragePerContainerInBytes.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|consumingTenantOverridables|fileStorageContainerTypeSettingsOverride|**TODO: Add Description**.The possible values are: `urlTemplate`, `isDiscoverabilityEnabled`, `isSearchEnabled`, `isItemVersioningEnabled`, `itemMajorVersionLimit`, `maxStoragePerContainerInBytes`, `unknownFutureValue`.|
-|isDiscoverabilityEnabled|Boolean|**TODO: Add Description**|
-|isItemVersioningEnabled|Boolean|**TODO: Add Description**|
-|isSearchEnabled|Boolean|**TODO: Add Description**|
-|isSharingRestricted|Boolean|**TODO: Add Description**|
-|itemMajorVersionLimit|Int64|**TODO: Add Description**|
-|maxStoragePerContainerInBytes|Int64|**TODO: Add Description**|
-|sharingCapability|sharingCapabilities|**TODO: Add Description**.The possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`, `unknownFutureValue`.|
-|urlTemplate|String|**TODO: Add Description**|
+|consumingTenantOverridables|fileStorageContainerTypeSettingsOverrideSettings that can be overridden in the **consuming tenant**, comma separated. The possible values are: `urlTemplate`, `isDiscoverabilityEnabled`, `isSearchEnabled`, `isItemVersioningEnabled`, `itemMajorVersionLimit`, `maxStoragePerContainerInBytes`.|
+|isDiscoverabilityEnabled|Boolean|Enables or disables surface of items from containers in experiences like my activity or M356|
+|isItemVersioningEnabled|Boolean|Controls item versioning.|
+|isSearchEnabled|Boolean|Defines if search is enabled.|
+|isSharingRestricted|Boolean|Controls if sharing is restricted.|
+|itemMajorVersionLimit|Int64|Maximum number of versions. Versioning must be enabled.|
+|maxStoragePerContainerInBytes|Int64|Controls maximum storage in bytes.|
+|sharingCapability|sharingCapabilities|Sharing capabilities permitted for containers. This value can always be overriden in the registration if needed. The possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`.|
+|urlTemplate|String|Pattern used to redirect files.|
 
 ## Relationships
 None.

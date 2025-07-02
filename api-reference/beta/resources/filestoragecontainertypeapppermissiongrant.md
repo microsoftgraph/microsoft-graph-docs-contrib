@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerTypeAppPermissionGrant resource type"
-description: "**TODO: Add Description**"
+description: "Permissions granted to an app."
 author: "javieralvarezchiang"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Contains the permissions granted to an app when accessed with delegated permissions and application only permissions.
 
 
 ## Methods
@@ -29,9 +29,10 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|**TODO: Add Description**|
-|applicationPermissions|fileStorageContainerTypeAppPermission collection|**TODO: Add Description**|
-|delegatedPermissions|fileStorageContainerTypeAppPermission collection|**TODO: Add Description**|
+|appId|String|Application ID to set permissions to.|
+|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed [fileStorageContainerTypeAppPermissions][] when using delegated tokens.|
+|delegatedPermissions|fileStorageContainerTypeAppPermission collection|
+Allowed [fileStorageContainerTypeAppPermissions][] when using application tokens.|
 
 ## Relationships
 None.
