@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccessRoot/alerts/getAlertSummaries?startDateTime=2024-04-01T00:00:00Z&endDateTime=2024-04-21T23:59:59Z
+GET https://graph.microsoft.com/beta/networkAccessRoot/alerts/getAlertSummaries(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ### Response

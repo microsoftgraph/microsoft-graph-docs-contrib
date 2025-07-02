@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccessRoot/alerts/getAlertFrequencies(startDateTime='{startDateTime}',endDateTime='endDateTime')
+GET /networkAccessRoot/alerts/getAlertFrequencies(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters

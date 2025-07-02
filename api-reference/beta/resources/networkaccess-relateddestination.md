@@ -39,9 +39,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.relatedDestination",
-  "fqdn": "example.contoso.com",
-  "ip": "192.168.1.10",
-  "port": 443,
-  "networkingProtocol": "tcp"
+  "fqdn": "String",
+  "ip": "String",
+  "port": "Integer",
+  "networkingProtocol": "microsoft.graph.networkaccess.networkingProtocol"
 }
 ```
