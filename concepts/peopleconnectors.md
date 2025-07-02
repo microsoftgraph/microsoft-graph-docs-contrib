@@ -31,7 +31,7 @@ Once connected, people data from the third-party system can appear in Microsoft 
 * Microsoft Search
 * Org Explorer 
 
-Admin can configure M365 Copilot connectors for people data in [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/MicrosoftSearch/Connectors/add).  
+Admins can configure Microsoft 365 Copilot connectors for people data in the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/MicrosoftSearch/Connectors/add).  
 
 When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence](profilepriority-configure-profilepropertysetting.md).
 
