@@ -21,13 +21,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Files
 
-Each fragment uploaded during an [uploadSession](/graph/api/resources/uploadsession) session extends the expiration time.
+Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession) extends the expiration time.
 
 ## July 2025: New in preview only
 
 ### Files
 
-Each fragment uploaded during an [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta&preserve-view=true) session extends the expiration time.
+Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession?view=graph-rest-beta&preserve-view=true) extends the expiration time.
 
 ## June 2025: New and generally available
 
