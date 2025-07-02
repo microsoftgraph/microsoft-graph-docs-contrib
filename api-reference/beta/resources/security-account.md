@@ -25,12 +25,12 @@ Provides details of an [identity's account](../resources/security-identityaccoun
 
 | Action Value             | Description                                                                                                                          | Supported identity providers   |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| Disable                  | Disable account. The account is unable to authenticate. If the account recently logged in, it doesn't have access to resources. | activeDirectory, entraId, okta |
-| Enable                   | Enable account.                                                                                                                      | activeDirectory, entraId, okta |
-| ForcePasswordReset       | Force password reset of the account.                                                                                                 | activeDirectory                |
-| RevokeAllSessions        | Revoke all of active sessions for the account.                                                                                       | entraId, okta                  |
-| RequireUserToSignInAgain | Require the user to sign in again.                                                                                                   | entraId                        |
-| MarkUserAsCompromised    | Mark the user as compromised.                                                                                                        | entraId                        |
+| Disable                  | Disable account. The account is unable to authenticate. If the account recently logged in, it doesn't have access to resources. | `activeDirectory`, `entraID`, `okta` |
+| Enable                   | Enable account.                                                                                                                      | `activeDirectory`, `entraID`, `okta` |
+| ForcePasswordReset       | Force password reset of the account.                                                                                                 | `activeDirectory`                |
+| RevokeAllSessions        | Revoke all of active sessions for the account.                                                                                       | `entraID`, `okta`                  |
+| RequireUserToSignInAgain | Require the user to sign in again.                                                                                                   | `entraID`                        |
+| MarkUserAsCompromised    | Mark the user as compromised.                                                                                                        | `entraID`                        |
 
 ## Relationships
 None.
