@@ -56,6 +56,10 @@ To read details of your own or another user's external authentication method:
 GET /users/{usersId}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}
 ```
 
+## Optional query parameters
+
+Not supported.
+
 ## Request headers
 
 |Name|Description|
