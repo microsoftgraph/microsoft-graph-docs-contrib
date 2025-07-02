@@ -33,7 +33,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |documentVersion|microsoft.graph.security.documentVersion| The versions of files in SharePoint to include. Possible values are: `latest`, `recent10`, `recent100`, `all`, `unknownFutureValue`. |
 |exportCriteria|[microsoft.graph.security.exportCriteria](../resources/security-ediscoverysearchexportoperation.md#exportcriteria-values)|Items to be included in the export. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
 |exportFileMetadata|[microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md) collection|Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**.|
-|exportFormat|[microsoft.graph.security.exportFormat](../resources/security-ediscoverysearchexportoperation.md#exportformat-values)|Format of the emails of the export. The possible values are: `pst`, `msg`, `eml`, `unknownFutureValue`.|
+|exportFormat|[microsoft.graph.security.exportFormat](../resources/security-ediscoverysearchexportoperation.md#exportformat-values)|Format of the emails of the export. The possible values are: `pst`, `msg`, `eml`(deprecated), `unknownFutureValue`.|
 |exportLocation|[microsoft.graph.security.exportLocation](../resources/security-ediscoverysearchexportoperation.md#exportlocation-values)| Location scope for partially indexed items. You can choose to include partially indexed items only in responsive locations with search hits or in all targeted locations. The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`.|
 |exportSingleItems|Boolean|Indicates whether to export single items.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
@@ -75,7 +75,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |:----|-----------|
 | pst | Individual .pst files for each mailbox. |
 | msg | Individual .msg files for each message. |
-| eml | Individual .eml files for each message.       |
+| eml(deprecated) | Individual .eml files for each message.       |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### exportLocation values
