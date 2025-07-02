@@ -20,10 +20,15 @@ Create a new hardwareOathTokenAuthenticationMethodDevice object. Supports bulk c
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-[!INCLUDE [permissions-table](../includes/permissions/authenticationmethoddevice-post-hardwareoathdevices-permissions.md)]
+<!-- { "blockType": "permissions", "name": "authenticationmethoddevice_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationmethoddevice-update-permissions.md)]
 
-[!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
+> [!IMPORTANT]
+> When using delegated permissions with work or school accounts, the signed-in user must have an appropriate [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the necessary permissions. The least privileged built-in role required for this operation is *Authentication Policy Administrator*.
+> 
+> To create and assign a hardware OATH token to a user in a single request, the signed-in user must also have:
+> - The *UserAuthenticationMethod.ReadWrite.All* delegated permission.
+> - Either *Authentication Administrator* (least privileged role for assigning hardware tokens to nonadmin users) or *Privileged Authentication Administrator* (least privileged role for assigning hardware tokens to admin users) role.
 
 ## HTTP request
 
