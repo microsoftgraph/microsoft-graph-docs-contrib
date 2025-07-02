@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents detaiuls of a user identity account.
+Represents details of a user identity account.
 
 Inherits from [microsoft.graph.security.identityAccounts](../resources/security-identityaccounts.md).
 
