@@ -131,7 +131,7 @@ Content-Type: application/json
 
 ### Response
 
-The response to this request, if successful, will provide the details for where the remainder of the requests should be sent as an [UploadSession](../resources/uploadsession.md) resource.
+If successful, the response to this request provides the details of where the remainder of the requests should be sent as an [uploadSession](../resources/uploadsession.md) resource.
 
 When a session is created and generates pre-authenticated upload URLs, the upload URL can be used to complete the upload within a time window sufficient for large files. 
 
@@ -139,7 +139,7 @@ The [uploadSession](../resources/uploadsession.md) resource provides details abo
 
 - You must upload the next fragment or commit the session before the time specified in the **expirationDateTime** property.
 - Each uploaded fragment extends the expiration time, which allows large file uploads to be completed successfully. The updated expiration time is returned in every request to upload a file fragment.
-- If no fragments are received and the session is not committed, all previously uploaded fragments are discarded.
+- If no fragments are received and the session isn't committed, all previously uploaded fragments are discarded.
 
 This process supports large file uploads and ensures that upload sessions are efficiently managed by preventing stale or abandoned data from remaining in the system too long.
 
