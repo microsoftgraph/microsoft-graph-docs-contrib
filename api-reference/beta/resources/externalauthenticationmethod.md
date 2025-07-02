@@ -34,7 +34,7 @@ The **externalAuthenticationMethod** resource is a derived type of the [authenti
 |configurationId|String|A unique identifier used to manage the external auth method within Microsoft Entra ID.|
 |createdDateTime|DateTimeOffset|Represents the date and time when an entity was created. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 |displayName|String|Custom name given to the registered external authentication method.|
-|id|String|The unique identifier for an the authentication method for the user. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|The unique identifier for an the authentication method for the user. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

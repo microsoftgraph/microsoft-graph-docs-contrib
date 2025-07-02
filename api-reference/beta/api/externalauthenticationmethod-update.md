@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an externalAuthenticationMethod object.
+Update the properties of an [externalAuthenticationMethod](../resources/externalauthenticationmethod.md) object.
 
 ## Permissions
 
@@ -32,12 +32,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "externalauthenticationmethod-update-permissions"
+  "name": "externalauthenticationmethod-update-2-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/externalauthenticationmethod-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/externalauthenticationmethod-update-2-permissions.md)]
 
-[!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an externalAuthenticationMethod object.
+Delete an [externalAuthenticationMethod](../resources/externalauthenticationmethod.md) object.
 
 ## Permissions
 

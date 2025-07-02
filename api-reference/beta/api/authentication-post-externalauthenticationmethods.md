@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new externalAuthenticationMethod object.
+Create a new [externalAuthenticationMethod](../resources/externalauthenticationmethod.md) object.
 
 ## Permissions
 
@@ -33,12 +33,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "authentication-post-externalauthenticationmethods-permissions"
+  "name": "authentication-post-externalauthenticationmethods-2-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/authentication-post-externalauthenticationmethods-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/authentication-post-externalauthenticationmethods-2-permissions.md)]
 
-[!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 To assign an external authentication method to yourself:
