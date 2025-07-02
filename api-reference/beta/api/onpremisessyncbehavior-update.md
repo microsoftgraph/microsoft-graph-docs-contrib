@@ -25,11 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "onpremisessyncbehavior-update-permissions"
 }
 -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|Group-OnPremisesSyncBehavior.ReadWrite.All|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Group-OnPremisesSyncBehavior.ReadWrite.All|Not available.|
+[!INCLUDE [permissions-table](../includes/permissions/onpremisessyncbehavior-update-permissions.md)]
 
 ## HTTP request
 
