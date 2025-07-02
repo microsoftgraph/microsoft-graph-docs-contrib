@@ -24,7 +24,7 @@ Requisites to execute this request:
 - The application that owns the fileStorageContainerType must be registered in the tenant. In other words, it must have a service principal.
 - Billing setup should be complete, except for Trial fileStorageContainerTypes.
 
-Settings cannot be modified on registration.
+Settings can't be modified on registration.
 
 ## Permissions
 
