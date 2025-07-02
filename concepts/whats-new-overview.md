@@ -17,6 +17,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## July 2025: New and generally available
+
+### Files
+
+Each fragment uploaded during an [uploadSession](/graph/api/resources/uploadsession) session extends the expiration time.
+
+## July 2025: New in preview only
+
+### Files
+
+Each fragment uploaded during an [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta&preserve-view=true) session extends the expiration time.
+
 ## June 2025: New and generally available
 
 ### Device and app management | Cloud PC
