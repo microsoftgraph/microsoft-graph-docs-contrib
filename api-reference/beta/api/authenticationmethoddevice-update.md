@@ -1,20 +1,22 @@
 ---
-title: "Create one or multiple hardwareOathTokenAuthenticationMethodDevice"
+title: "Create one or more hardwareOathTokenAuthenticationMethodDevice"
 description: "Create a new hardwareOathTokenAuthenticationMethodDevice object. Supports bulk creation."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 12/06/2024
+ms.date: 07/02/2024
 ---
 
-# Create one or multiple hardwareOathTokenAuthenticationMethodDevice
+# Create one or more hardwareOathTokenAuthenticationMethodDevice objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new hardwareOathTokenAuthenticationMethodDevice object. Supports bulk creation.
+Create one or more [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) objects. This API supports two scenarios:
+- Create the new hardware tokens without assigning to users. You can then [assign to a user](authentication-post-hardwareoathmethods.md).
+- Create and assign any individual hardware tokens to users in the same request.
 
 ## Permissions
 
