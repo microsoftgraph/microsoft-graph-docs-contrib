@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A fileStorageContainerType, also called container type, is a SharePoint Embedded resource that defines the relationship, access privileges, and billing accountability between a SharePoint Embedded application and a set of [containers][fileStorageContainer].
+A fileStorageContainerType, also called container type, is a resource that associates a SharePoint Embedded application and a set of [containers][fileStorageContainer]. It defines settings, access privileges, and billing accountability.
 
 Each container type is coupled with one SharePoint Embedded application, which is referred to as the owning application.
 
@@ -34,7 +34,7 @@ A fileStorageContainerType must be [registered][fileStorageContainerTypeRegistra
 |Property|Type|Description|
 |:---|:---|:---|
 |billingClassification|fileStorageContainerBillingClassification|Billing type. Defaults to standard. The possible values are: `standard`, `trial`, `directToCustomer`.|
-|billingStatus|fileStorageContainerBillingStatus|Billing status. Valid when the billing has been set up and with trial fileStorageContainerTypes. The possible values are: `invalid`, `valid`.|
+|billingStatus|fileStorageContainerBillingStatus|Billing status. Valid when the billing is set up or with trial fileStorageContainerTypes, which doesn't require billing. The possible values are: `invalid`, `valid`.|
 |createdDateTime|DateTimeOffset|fileStorageContainerType creation date. Read-only.|
 |etag|String|Used in update for optimistic concurrency control.|
 |expirationDateTime|DateTimeOffset|Expiration Date. Read-only.|

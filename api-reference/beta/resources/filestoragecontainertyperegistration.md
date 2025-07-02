@@ -47,7 +47,7 @@ privileges of applications on containers of a specific `containerTypeId`. It sup
 |Property|Type|Description|
 |:---|:---|:---|
 |billingClassification|fileStorageContainerBillingClassification|Billing type. Defaults to standard. The possible values are: `standard`, `trial`, `directToCustomer`.|
-|billingStatus|fileStorageContainerBillingStatus|Billing status. Valid when the billing has been set up and with trial fileStorageContainerTypes. The possible values are: `invalid`, `valid`.|
+|billingStatus|fileStorageContainerBillingStatus|Billing status. Valid when the billing is set up or with trial fileStorageContainerTypes, which doesn't require billing. The possible values are: `invalid`, `valid`.|
 |etag|String|Used in update for optimistic concurrency control.|
 |expirationDateTime|DateTimeOffset|Expiration Date. Read-only.|
 |id|String|fileStorageContainerType ID. Read-only|

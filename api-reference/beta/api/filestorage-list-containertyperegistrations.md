@@ -60,10 +60,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-List fileStorageContainerTypeRegistrations using SPE admin delegated tokens
+List fileStorageContainerTypeRegistrations using SharePoint Embedded admin delegated tokens
 ### Request
 
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_filestoragecontainertyperegistration"
@@ -76,7 +75,6 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrati
 
 ### Response
 
-The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

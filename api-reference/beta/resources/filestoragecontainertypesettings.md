@@ -29,7 +29,7 @@ Configuration associated with a fileStorageContainerType.
 |isSharingRestricted|Boolean|Controls if sharing is restricted.|
 |itemMajorVersionLimit|Int64|Maximum number of versions. Versioning must be enabled.|
 |maxStoragePerContainerInBytes|Int64|Controls maximum storage in bytes.|
-|sharingCapability|sharingCapabilities|Sharing capabilities permitted for containers. This value can always be overriden in the registration if needed. The possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`.|
+|sharingCapability|sharingCapabilities|Sharing capabilities permitted for containers. This value can always be overridden in the registration if needed. The possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`.|
 |urlTemplate|String|Pattern used to redirect files.|
 
 ## Relationships
