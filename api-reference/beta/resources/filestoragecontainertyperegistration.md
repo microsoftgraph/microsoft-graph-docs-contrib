@@ -39,7 +39,8 @@ Inherits from [entity](../resources/entity.md).
 |[Get](../api/filestoragecontainertyperegistration-get.md)|[fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md)|Read the properties and relationships of a fileStorageContainerTypeRegistration object.|
 |[Update](../api/filestoragecontainertyperegistration-update.md)|[fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md)|Update the properties of a fileStorageContainerTypeRegistration object.|
 |[Delete](../api/filestorage-delete-containertyperegistrations.md)|None|Delete a fileStorageContainerTypeRegistration object.|
-|[List applicationPermissionGrants](../api/filestoragecontainertyperegistration-list-applicationpermissiongrants.md)|[fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md) collection|**TODO: Add a useful description.**|
+|[List applicationPermissionGrants](../api/filestoragecontainertyperegistration-list-applicationpermissiongrants.md)|[fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md) collection|Define the access 
+privileges of applications on containers of a specific `containerTypeId`. It supports defining both Application-Only and Delegated permissions. A `containerType` can have more than one [applicationPermissionGrant][fileStorageContainerTypeAppPermissionGrant] and an application can have access to more than one `containerType`. This arrangement allows container access to be shared across applications.|
 |[Create fileStorageContainerTypeAppPermissionGrant](../api/filestoragecontainertyperegistration-post-applicationpermissiongrants.md)|[fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md)|Create a new fileStorageContainerTypeAppPermissionGrant object.|
 
 ## Properties

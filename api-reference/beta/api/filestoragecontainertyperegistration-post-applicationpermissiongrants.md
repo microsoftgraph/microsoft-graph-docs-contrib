@@ -55,7 +55,6 @@ Don't include the appId in the body.
 
 You can specify the following properties when creating a **fileStorageContainerTypeAppPermissionGrant**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |delegatedPermissions|fileStorageContainerTypeAppPermission collection|Allowed [../resources/fileStorageContainerTypeAppPermissions][] when using delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|

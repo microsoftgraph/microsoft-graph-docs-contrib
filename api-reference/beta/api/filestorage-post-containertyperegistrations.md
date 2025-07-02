@@ -63,7 +63,6 @@ In the request body, supply a JSON representation of the [fileStorageContainerTy
 
 You can specify the following properties when creating a **fileStorageContainerTypeRegistration**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |applicationPermissionGrants|[applicationPermissionGrants](../resources/fileStorageContainerTypeAppPermissionGrant.md)|define the access 
