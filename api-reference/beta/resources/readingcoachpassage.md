@@ -26,9 +26,9 @@ Represents a Reading Coach passage that was practiced by a student.
 |:---|:---|:---|
 |isReadingCompleted|Boolean|Indicates if the reading passage was completed.|
 |languageTag|String|The language of the reading passage.|
-|practicedAtDateTime|DateTimeOffset|The date and time the Reading Coach passage was practiced. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|practiceWords|String collection|The list of challenging words for the student that they could practice further.|
-|storyType|readingCoachStoryType|The story type for the reading passage. The valid values are `aiGenerated`, `readWorks`, and `userProvided`.|
+|practicedAtDateTime|DateTimeOffset|The date and time when the Reading Coach passage was practiced. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|practiceWords|String collection|The list of challenging words for the student that they can practice further.|
+|storyType|readingCoachStoryType|The story type for the reading passage. The possible values are: `aiGenerated`, `readWorks`, `userProvided`, `unknownFutureValue`.|
 |studentId|String|ID of the student that practiced the reading passage.|
 |timeSpentReadingInSeconds|Double|The time the student spent reading in seconds.|
 |wordsAccuracyPercentage|Double|The percentage of words that the student read correctly.|
@@ -50,14 +50,14 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.readingCoachPassage",
-  "practicedAtDateTime": "String (timestamp)",
   "isReadingCompleted": "Boolean",
   "languageTag": "String",
+  "practicedAtDateTime": "String (timestamp)",
   "practiceWords": ["String"],
   "storyType": "String",
   "studentId": "String",
   "timeSpentReadingInSeconds": "Double",
   "wordsAccuracyPercentage": "Double",
-  "wordsAccuracyPercentage": "Double"
+  "wordsPerMinute": "Double"
 }
 ```
