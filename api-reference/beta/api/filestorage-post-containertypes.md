@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [fileStorageContainerType](../resources/storageContainerType.md) in the owning tenant. The number of container types in a tenant is limited to 25.
+Create a [fileStorageContainerType](../resources/filestoragecontainertype.md) in the owning tenant. The number of container types in a tenant is limited to 25.
 
 ## Permissions
 

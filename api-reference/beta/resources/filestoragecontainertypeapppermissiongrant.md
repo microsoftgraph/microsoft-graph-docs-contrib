@@ -30,9 +30,9 @@ Contains the permissions granted to an app when accessed with delegated permissi
 |Property|Type|Description|
 |:---|:---|:---|
 |appId|String|Application ID to set permissions to.|
-|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed [fileStorageContainerTypeAppPermissions][] when using delegated tokens.|
-|delegatedPermissions|fileStorageContainerTypeAppPermission collection|
-Allowed [fileStorageContainerTypeAppPermissions][] when using application tokens.|
+|applicationPermissions|String collection|Allowed permissions when using delegated tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
+|delegatedPermissions|String collection|
+Allowed permissions when using application tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
 
 ## Relationships
 None.
@@ -58,4 +58,3 @@ The following JSON representation shows the resource type.
   ]
 }
 ```
-

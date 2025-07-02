@@ -73,3 +73,5 @@ The following JSON representation shows the resource type.
 }
 ```
 
+[fileStorageContainer]: filestoragecontainer.md
+[fileStorageContainerTypeRegistration]: filestoragecontainertyperegistration.md

@@ -89,3 +89,9 @@ The following JSON representation shows the resource type.
 }
 ```
 
+[fileStorageContainerTypeRegistration]: filestoragecontainertyperegistration.md
+[fileStorageContainerType]: filestoragecontainertype.md
+[fileStorageContainer]: filestoragecontainer.md
+[fileStorageContainerTypeAppPermissionGrant]: filestoragecontainertypeapppermissiongrant.md
+[fileStorageContainerTypeRegistrationSettings]: filestoragecontainertyperegistrationsettings.md
+[fileStorageContainerTypeSettings]: filestoragecontainertypeSettings.md

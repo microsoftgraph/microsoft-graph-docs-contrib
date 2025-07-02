@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a fileStorageContainerTypeRegistration object in the consuming tenant or replace the existing one.
 
-An application can only register a [fileStorageContainerType](../resources/fileStorageContainerType.md) that it owns, either using app-only or
+An application can only register a [fileStorageContainerType](../resources/filestoragecontainertype.md) that it owns, either using app-only or
 delegated tokens.
 
 Requisites to execute this request:
@@ -31,7 +31,7 @@ Settings cannot be modified on registration.
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 When delegated tokens are used, SharePoint Embedded admin or Global admin permissions are required.
-Registration must be done in the context of the application that owns the [fileStorageContainerType](../resources/storageContainerType.md).
+Registration must be done in the context of the application that owns the [fileStorageContainerType](../resources/filestoragecontainertype.md).
 
 <!-- {
   "blockType": "permissions",
