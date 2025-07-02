@@ -21,7 +21,7 @@ Read the properties and relationships of a fileStorageContainerTypeRegistration 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 When delegated tokens are used, SharePoint Embedded admin or Global admin permissions are required.
-If FileStorageContainerTypeReg.Selected is used, results are limited to [registrations](../resources/storageContainerTypeRegistration.md) owned by the application 
+If FileStorageContainerTypeReg.Selected is used, results are limited to [registrations](../resources/fileStorageContainerTypeRegistration.md) owned by the application 
 making the call.
 <!-- {
   "blockType": "permissions",
@@ -94,6 +94,7 @@ Content-Type: application/json
   "name": "Container Type Name",
   "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
   "billingClassification": "trial",
+  "billingStatus": "valid",
   "registredDateTime": "01/20/2025",
   "expirationDateTime": "02/20/2025",
   "etag": "RVRhZw==",

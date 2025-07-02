@@ -127,6 +127,7 @@ Content-Type: application/json
   "name": "Test Trial Container",
   "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
   "billingClassification": "trial",
+  "billingStatus": "valid",
   "registredDateTime": "01/20/2025",
   "expirationDateTime": "02/20/2025",
   "etag": "RVRhZw==",

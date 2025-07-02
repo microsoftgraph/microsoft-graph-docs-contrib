@@ -14,12 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the fileStorageContainerTypeAppPermissionGrant objects and their properties.
+List all app permission grants in a [fileStorageContainerTypeRegistration](../resources/fileStorageContainerTypeRegistration.md)
+
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+When delegated tokens are used, SharePoint Embedded admin or Global admin permissions are required.
+If FileStorageContainerTypeReg.Selected is used, results are limited to [registrations](../resources/fileStorageContainerTypeRegistration.md) owned by the application 
+making the call.
 <!-- {
   "blockType": "permissions",
   "name": "filestoragecontainertyperegistration-list-applicationpermissiongrants-permissions"
@@ -66,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}/applicationPermissionGrants
+GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/21b52d99-7114-4c47-80b3-362b6a0bba3a/applicationPermissionGrants
 ```
 
 
@@ -85,16 +89,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
+    "value": [
     {
       "@odata.type": "#microsoft.graph.fileStorageContainerTypeAppPermissionGrant",
-      "appId": "469f9a3c-809e-a18c-5dfc-c20e628f65c4",
-      "delegatedPermissions": [
-        "String"
-      ],
-      "applicationPermissions": [
-        "String"
-      ]
+      "appId": "11335700-9a00-4c00-84dd-0c210f203f00",
+      "delegatedPermissions": ["readContent", "writeContent"],
+      "applicationPermissions": ["full"]
+    },
+    {
+      "@odata.type": "#microsoft.graph.fileStorageContainerTypeAppPermissionGrant",
+      "appId": "d893fd02-3578-4c7f-bd85-12fc3358af48",
+      "delegatedPermissions": ["read"],
+      "applicationPermissions": ["read", "write"]
+    },
+    {
+      "@odata.type": "#microsoft.graph.fileStorageContainerTypeAppPermissionGrant",
+      "appId": "33225700-9a00-4c00-84dd-0c210f203f01",
+      "delegatedPermissions": ["full"],
+      "applicationPermissions": ["none"]
     }
   ]
 }

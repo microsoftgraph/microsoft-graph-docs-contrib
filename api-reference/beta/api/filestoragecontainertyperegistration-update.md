@@ -20,6 +20,9 @@ Update the properties of a fileStorageContainerTypeRegistration object.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+When delegated tokens are used, SharePoint Embedded admin or Global admin permissions are required.
+If FileStorageContainerTypeReg.Selected is used, changes are limited to [registrations](../resources/fileStorageContainerTypeRegistration.md) owned by the application 
+making the call.
 <!-- {
   "blockType": "permissions",
   "name": "filestoragecontainertyperegistration-update-permissions"
@@ -52,14 +55,10 @@ PATCH /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeR
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description** Required.|
-|owningAppId|Guid|**TODO: Add Description** Required.|
-|billingClassification|fileStorageContainerBillingClassification|**TODO: Add Description**. The possible values are: `standard`, `trial`, `directToCustomer`, `unknownFutureValue`. Required.|
-|billingStatus|fileStorageContainerBillingStatus|**TODO: Add Description**. The possible values are: `invalid`, `valid`, `unknownFutureValue`. Required.|
-|registeredDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|expirationDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|**TODO: Add Description** Required.|
-|etag|String|**TODO: Add Description** Required.|
+|settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|fileStorageContainerTypeRegistration settings. Optional.|
+|applicationPermissionGrants|[applicationPermissionGrants](../resources/fileStorageContainerTypeAppPermissionGrant.md)|define the access 
+privileges of applications on containers of a specific fileStorageContainerType. Optional.|
+|etag|String|Used for optimistic concurrency control. Must be exactly the value returned from create or get. Required.|
 
 
 
@@ -69,30 +68,31 @@ If successful, this method returns a `200 OK` response code and an updated [file
 
 ## Examples
 
+Update a fileStorageContainerTypeRegistration
+
 ### Request
 
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertyperegistration"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.fileStorageContainerTypeRegistration",
-  "name": "String",
-  "owningAppId": "Guid",
-  "billingClassification": "String",
-  "billingStatus": "String",
-  "registeredDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)",
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings"
+    "sharingCapability": "externalUserAndGuestSharing",
   },
-  "etag": "String"
+  "applicationPermissionGrants": [
+    {
+      "appId": "33225700-9a00-4c00-84dd-0c210f203f01",
+      "delegatedPermissions": ["full"],
+      "applicationPermissions": ["none"]
+    }
+  ],
+  "etag": "RVRhZw=="
 }
 ```
 
@@ -112,17 +112,32 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerTypeRegistration",
-  "id": "c22d3fd3-c5af-694e-453a-e17057f29dc1",
-  "name": "String",
-  "owningAppId": "Guid",
-  "billingClassification": "String",
-  "billingStatus": "String",
-  "registeredDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)",
+  "id": "de988700-d700-020e-0a00-0831f3042f00",
+  "name": "Container Type Name",
+  "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
+  "billingClassification": "trial",
+  "billingStatus": "valid",
+  "registredDateTime": "01/20/2025",
+  "expirationDateTime": "02/20/2025",
+  "etag": "RVRhZyArIDE=",
   "settings": {
     "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings"
+    "sharingCapability": "externalUserAndGuestSharing",
+    "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
+    "isDiscoverabilityEnabled": "true",
+    "isSearchEnabled": "true",
+    "isItemVersioningEnabled": "true",
+    "itemMajorVersionLimit": "50",
+    "maxStoragePerContainerInBytes": "104857600",
+    "isSharingRestricted": "false"
   },
-  "etag": "String"
+  "applicationPermissionGrants": [
+    {
+      "appId": "33225700-9a00-4c00-84dd-0c210f203f01",
+      "delegatedPermissions": ["full"],
+      "applicationPermissions": ["none"]
+    }
+  ]
 }
 ```
 

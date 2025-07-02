@@ -20,6 +20,9 @@ Delete a fileStorageContainerTypeRegistration object.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+When delegated tokens are used, SharePoint Embedded admin or Global admin permissions are required.
+If FileStorageContainerTypeReg.Selected is used, changes are limited to [registrations](../resources/fileStorageContainerTypeRegistration.md) owned by the application 
+making the call.
 <!-- {
   "blockType": "permissions",
   "name": "filestorage-delete-containertyperegistrations-permissions"
@@ -34,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}/$ref
+DELETE /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}
 ```
 
 ## Request headers
@@ -53,9 +56,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
+Delete a fileStorageContainerTypeRegistration
+
 ### Request
 
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "delete_filestoragecontainertyperegistration"
@@ -68,8 +72,6 @@ DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistr
 
 ### Response
 
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

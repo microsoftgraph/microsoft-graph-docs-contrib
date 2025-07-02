@@ -20,6 +20,9 @@ Update the properties of a fileStorageContainerTypeAppPermissionGrant object.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+When delegated tokens are used, SharePoint Embedded admin or Global admin permissions are required.
+If FileStorageContainerTypeReg.Selected is used, changes are limited to [registrations](../resources/storageContainerTypeRegistration.md) owned by the application 
+making the call.
 <!-- {
   "blockType": "permissions",
   "name": "filestoragecontainertypeapppermissiongrant-update-permissions"
@@ -34,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}/applicationPermissionGrants/{fileStorageContainerTypeAppPermissionGrantId}
+PATCH /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}/applicationPermissionGrants/{appId}
 ```
 
 ## Request headers
@@ -52,9 +55,8 @@ PATCH /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeR
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|**TODO: Add Description** Required.|
-|delegatedPermissions|fileStorageContainerTypeAppPermission collection|**TODO: Add Description**. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`, `unknownFutureValue`. Optional.|
-|applicationPermissions|fileStorageContainerTypeAppPermission collection|**TODO: Add Description**. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`, `unknownFutureValue`. Optional.|
+|delegatedPermissions|fileStorageContainerTypeAppPermission collection|Allowed [../resources/fileStorageContainerTypeAppPermissions][] when using delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|
+|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed [../resources/fileStorageContainerTypeAppPermissions][] when using delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|
 
 
 
@@ -64,27 +66,21 @@ If successful, this method returns a `200 OK` response code and an updated [file
 
 ## Examples
 
+Update app-only permissions in an existing app permission grant
+
 ### Request
 
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertypeapppermissiongrant"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}/applicationPermissionGrants/{fileStorageContainerTypeAppPermissionGrantId}
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/21b52d99-7114-4c47-80b3-362b6a0bba3a/applicationPermissionGrants/11335700-9a00-4c00-84dd-0c210f203f00
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.fileStorageContainerTypeAppPermissionGrant",
-  "appId": "469f9a3c-809e-a18c-5dfc-c20e628f65c4",
-  "delegatedPermissions": [
-    "String"
-  ],
-  "applicationPermissions": [
-    "String"
-  ]
+  "applicationPermissions": ["full"]
 }
 ```
 
@@ -104,13 +100,9 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerTypeAppPermissionGrant",
-  "appId": "469f9a3c-809e-a18c-5dfc-c20e628f65c4",
-  "delegatedPermissions": [
-    "String"
-  ],
-  "applicationPermissions": [
-    "String"
-  ]
+  "appId": "11335700-9a00-4c00-84dd-0c210f203f00",
+  "delegatedPermissions": ["readContent", "writeContent"],
+  "applicationPermissions": ["full"]
 }
 ```
 
