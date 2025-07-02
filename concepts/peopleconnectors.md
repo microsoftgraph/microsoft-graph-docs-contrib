@@ -49,7 +49,7 @@ Microsoft 365 Copilot connectors for people data comply with information barrier
 
 ### Data usage 
 
-People data imported via Copilot connectors is considered customer content and is used by Microsoft 365 services as mentioned above. Within your organization, this data is treated as publicly accessible. In cross-tenant collaboration scenarios and Copilot experiences, connector data may also be used to enhance context and productivity. 
+People data imported via Copilot connectors is considered customer content and is used by Microsoft 365 services as mentioned previously. Within your organization, this data is treated as publicly accessible. In cross-tenant collaboration scenarios and Copilot experiences, connector data may also be used to enhance context and productivity. 
 
 ## Profile information
 
@@ -79,7 +79,7 @@ Microsoft is committed to ensuring the highest standards of security by only sup
 
 To maintain accurate and up-to-date profiles, admins should set up regular crawls or syncs to ensure alignment with source systems and prevent data staleness. 
 
-People data is stored as long as the end user is active and has a valid Microsoft 365 license, provided no deletion request has been made by the admin. If a connector is deleted, it's removed from all instances, but delays can be expected.
+People data is stored as long as the end user is active and has a valid Microsoft 365 license, provided no deletion request was made by the admin. If a connector is deleted, it's removed from all instances, but delays can be expected.
 
 ### Data residency
 
