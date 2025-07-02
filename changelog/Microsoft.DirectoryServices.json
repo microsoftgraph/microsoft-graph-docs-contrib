@@ -26,24 +26,6 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
-    {
-      "ChangeList": [
-        {
-          "Id": "2f9ab027-9e3a-49ed-aa2c-7ebbb4d9fb66",
-          "ApiChange": "Property",
-          "ChangedApiName": "isCompliantNetworkAccepted",
-          "ChangeType": "Addition",
-          "Description": "Added the **isCompliantNetworkAccepted** property to the [crossTenantAccessPolicyInboundTrust](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantAccessPolicyInboundTrust?view=graph-rest-beta) resource.",
-          "Target": "crossTenantAccessPolicyInboundTrust"
-        }
-      ],
-      "Id": "2f9ab027-9e3a-49ed-aa2c-7ebbb4d9fb66",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-04-25T19:25:52.9252889Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
-    },
      {
       "ChangeList": [
         {
