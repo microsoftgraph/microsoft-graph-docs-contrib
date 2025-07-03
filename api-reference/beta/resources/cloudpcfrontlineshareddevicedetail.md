@@ -1,6 +1,6 @@
 ---
 title: "cloudPcFrontlineSharedDeviceDetail resource type"
-description: "Indicates the Cloud PC device details associated with Front line Shared service plan. Example: 'assignedToUserPrincipalName'."
+description: "Represents the Cloud PC device details associated with the frontline shared service plan; for example, assignedToUserPrincipalName."
 author: "ziqifu9527"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates the Cloud PC device details associated with Front line Shared service plan. Example: 'assignedToUserPrincipalName'.
+Represents the Cloud PC device details associated with the frontline shared service plan; for example, **assignedToUserPrincipalName**.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedToUserPrincipalName|String|The user principal name (UPN) of the user which the device currently assigned to. If no user is assigned, it remains blank. Example value is `pmitchell@cpccustomer001.onmicrosoft.com` and ``.|
+|assignedToUserPrincipalName|String|The user principal name (UPN) of the user to whom the device is currently assigned. If no user is assigned, this field remains empty. Example values, `john.doe@contoso.onmicrosoft.com` and ``.|
 
 ## Relationships
 
@@ -35,10 +35,9 @@ The following JSON representation shows the resource type.
   "openType": false
 }
 -->
-
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcFrontlineSharedDeviceDetail",
-  "assignedToUserPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+  "assignedToUserPrincipalName": "String",
 }
 ```
