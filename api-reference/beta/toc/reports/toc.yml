@@ -346,6 +346,8 @@ items:
         href: ../../api/signin-confirmcompromised.md
       - name: Confirm safe
         href: ../../api/signin-confirmsafe.md
+      - name: Dismiss
+        href: ../../api/signin-dismiss.md
 - name: Microsoft 365 monitoring reports (preview)
   items:
   - name: Overview

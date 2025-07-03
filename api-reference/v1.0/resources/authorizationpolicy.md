@@ -7,6 +7,7 @@ ms.reviewer: msodsrbac
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ms.date: 05/23/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # authorizationPolicy resource type
