@@ -702,6 +702,7 @@
             "microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation",
             "microsoft.graph.windowsUpdates.qualityUpdateFilter",
             "microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+            "microsoft.graph.windowsUpdates.remediationUpdateFilter",
             "microsoft.graph.windowsUpdates.safeguardProfile",
             "microsoft.graph.windowsUpdates.safeguardSettings",
             "microsoft.graph.windowsUpdates.scheduleSettings",
@@ -888,6 +889,11 @@
             "engagementRole",
             "engagementRoleMember",
             "employeeExperienceUser"
+          ],
+          "complexTypes": [
+            "engagementConversationMessageAttachment",
+            "engagementConversationMessageMention",
+            "engagementIdentitySet"
           ]
         },
         {
@@ -1710,14 +1716,6 @@
               "resources": [
                 "certificateBasedApplicationConfiguration",
                 "certificateAuthorityAsEntity"
-              ]
-            },
-            {
-              "name": "Microsoft Entra lifecycle announcements (deprecated)",
-              "resources": [
-                "changeItemBase",
-                "announcement",
-                "roadmap"
               ]
             },
             {
@@ -2606,7 +2604,7 @@
           ]
         },
         {
-          "name": "Data security and compliance (preview)",
+          "name": "Data security and compliance",
           "resources": [
             "contentActivity",
             "microsoft.graph.security.sensitivityLabel",
@@ -2651,6 +2649,8 @@
               "processingError",
               "protectedApplicationMetadata",
               "protectedContent",
+              "restrictAccessAction",
+              "restrictAccessActionBase",
               "scopeBase",
               "tenantScope",
               "textContent",
@@ -3120,6 +3120,7 @@
                 "meetingAttendanceReport",
                 "attendanceRecord",
                 "onlineMeeting",
+                "onlineMeetingEngagementConversation",
                 "externalMeetingRegistration",
                 "meetingRegistration",
                 "callAiInsight",

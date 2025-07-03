@@ -4,7 +4,7 @@ description: "Get OneNote content and structure by sending a GET request to the 
 author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.subservice: "onenote"
-ms.date: 02/27/2025
+ms.date: 06/30/2025
 ---
 
 # Get OneNote content and structure
@@ -113,32 +113,16 @@ Get text and image preview content for a page.
 
 `../pages/{page-id}/preview`
 
-> [!NOTE]
-> Effective March 31, 2025, support for the **previewImageUrl** object will be removed. The **previewText** object will continue to be supported.
-
 The JSON response contains the preview content, which you can use to help users identify what's in the page.
 
 ```json
 {
   "@odata.context":"https://www.onenote.com/api/v1.0/$metadata#Microsoft.OneNote.Api.PagePreview",
-  "previewText":"text-snippet",
-  "links":{
-    "previewImageUrl":{
-      "href":"https://www.onenote.com/api/v1.0/resources/{id}/content?publicAuth=true&mimeType=image/png"
-    }
-  }
+  "previewText":"text-snippet"
 }
 ```
 
-The **previewText** property contains a text snippet from the page. Microsoft Graph returns complete phrases, up to a maximum of 300 characters. 
-
-If the page has an image that can be used to build a preview UI, the **href** property in the **previewImageUrl** object contains a link to a public [image resource](#image-or-other-file-resource). You can use this link in HTML. Otherwise, **href** returns null.
-
-#### Example 
-
-`<img src="https://www.onenote.com/api/v1.0/resources/{id}/content?publicAuth=true&mimeType=image/png" />`
-
-<a name="get-page-content"></a> 
+The **previewText** property contains a text snippet from the page. Microsoft Graph returns complete phrases, up to a maximum of 300 characters.
 
 ### Page HTML content
 

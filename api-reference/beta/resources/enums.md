@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 11/26/2024 
+ms.date: 07/03/2025
 ---
 
 # Enum values
@@ -5095,84 +5095,6 @@ Possible values for user account types (group membership), per Windows definitio
 |true|
 |unknownFutureValue|
 
-### changeItemService values
-
-|Member|
-|:---|
-|accessReviews|
-|appProxy|
-|audit|
-|authenticationsLogins|
-|azureADDomainServices|
-|b2B|
-|b2CConsumerIdentityManagement|
-|conditionalAccess|
-|deviceAccessManagement|
-|deviceRegistrationandManagement|
-|directoryManagement|
-|enterpriseApps|
-|entitlementManagement|
-|groupManagement|
-|identityProtection|
-|internetAccess|
-|lifecycleWorkflows|
-|linkedIn|
-|managedidentitiesforAzureresources|
-|mfA|
-|microsoftAuthenticatorApp|
-|microsoftIdentityManager|
-|msGraph|
-|myApps|
-|myProfileAccount|
-|na|
-|o365Groups|
-|other|
-|privateAccess|
-|privilegedIdentityManagement|
-|provisioning|
-|rbac|
-|reporting|
-|roles|
-|selfServicePasswordReset|
-|sovereignClouds|
-|termsofUse|
-|userAccessManagement|
-|userExperienceandManagement|
-|userManagement|
-|microsoftEntraDomainServices|
-|verifiedId|
-|unknownFutureValue|
-
-### changeItemState values
-
-|Member|
-|:---|
-|available|
-|comingSoon|
-|unknownFutureValue|
-
-### roadmapItemDeliveryStage values
-
-|Member|
-|:---|
-|privatePreview|
-|publicPreview|
-|ga|
-|unknownFutureValue|
-
-### changeAnnouncementChangeType values 
-
-|Member|
-|:---|
-|breakingChange|
-|deprecation|
-|endOfSupport|
-|featureChange|
-|other|
-|retirement|
-|securityIncident|
-|uxChange|
-
 ### restoreJobType values 
 
 |Member|
@@ -5248,6 +5170,7 @@ Possible values for user account types (group membership), per Windows definitio
 |federatedOrganizations|
 |everyone|
 |unknownFutureValue|
+
 ### educationSpeechType values 
 
 |Member|
@@ -5256,6 +5179,42 @@ Possible values for user account types (group membership), per Windows definitio
 |personal|
 |persuasive|
 |unknownFutureValue|
+
+### engagementConversationMessageReactionType values
+
+| Member           |
+|:-----------------|
+| like             |
+| love             |
+| celebrate        |
+| thank            |
+| laugh            |
+| sad              |
+| happy            |
+| excited          |
+| smile            |
+| silly            |
+| intenseLaugh     |
+| starStruck       |
+| goofy            |
+| thinking         |
+| surprised        |
+| mindBlown        |
+| scared           |
+| crying           |
+| shocked          |
+| angry            |
+| agree            |
+| praise           |
+| takingNotes      |
+| heartBroken      |
+| support          |
+| confirmed        |
+| watching         |
+| brain            |
+| medal            |
+| bullseye         |
+| unknownFutureValue |
 
 ### notificationEventsType values 
 

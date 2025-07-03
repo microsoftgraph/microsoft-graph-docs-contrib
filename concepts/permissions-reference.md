@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 06/23/2025
+ms.date: 06/30/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -3102,6 +3102,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | dbaae8cf-10b5-4b86-a4a1-f871c94c6695 | f81125ac-d3b7-4573-a3b2-7099cc39df9e |
 | DisplayText | Read and write all group memberships | Read and write group memberships |
 | Description | Allows the app to list groups, read basic properties, read and update the membership of the groups this app has access to without a signed-in user. Group properties and owners cannot be updated and groups cannot be deleted. | Allows the app to list groups, read basic properties, read and update the membership of the groups the signed-in user has access to. Group properties and owners cannot be updated and groups cannot be deleted. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### GroupSettings.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f3c4f514-c65a-43f5-bfce-1735872258dd | 2eb2bc92-94ef-4c6b-b4ab-2a09bc975e0e |
+| DisplayText | Read all group settings | Read all group settings that user can access |
+| Description | Allows the app to read a list of tenant-level or group-specific group settings objects, without a signed-in user. | Allows the app to read a list of tenant-level or group-specific group settings objects, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### GroupSettings.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 546168c3-1183-4281-9491-fafb24dea37e | c1691a6d-99e2-4cfa-b4b5-9e4d67dc0f36 |
+| DisplayText | Read and write all group settings | Read and write all group settings that user can access |
+| Description | Allows the app to create, read, update, and delete on the list of tenant-level or group-specific group settings objects, without a signed-in user. | Allows the app to create, read, update, and delete on the list of tenant-level or group-specific group settings objects that you have access to in the organization, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
