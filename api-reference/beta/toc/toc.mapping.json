@@ -889,6 +889,11 @@
             "engagementRole",
             "engagementRoleMember",
             "employeeExperienceUser"
+          ],
+          "complexTypes": [
+            "engagementConversationMessageAttachment",
+            "engagementConversationMessageMention",
+            "engagementIdentitySet"
           ]
         },
         {
@@ -1711,14 +1716,6 @@
               "resources": [
                 "certificateBasedApplicationConfiguration",
                 "certificateAuthorityAsEntity"
-              ]
-            },
-            {
-              "name": "Microsoft Entra lifecycle announcements (deprecated)",
-              "resources": [
-                "changeItemBase",
-                "announcement",
-                "roadmap"
               ]
             },
             {
@@ -3119,6 +3116,7 @@
                 "meetingAttendanceReport",
                 "attendanceRecord",
                 "onlineMeeting",
+                "onlineMeetingEngagementConversation",
                 "externalMeetingRegistration",
                 "meetingRegistration",
                 "callAiInsight",
