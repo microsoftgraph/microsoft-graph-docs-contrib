@@ -4116,14 +4116,6 @@ items:
         href: ../../resources/networkaccess-connectivityconfigurationlink.md
       - name: Get
         href: ../../api/networkaccess-branchconnectivityconfiguration-get.md
-  - name: Enriched audit logs
-    items:
-    - name: Enriched audit logs
-      href: ../../resources/networkaccess-enrichedauditlogs.md
-    - name: List
-      href: ../../api/networkaccess-settings-list-enrichedauditlogs.md
-    - name: Update
-      href: ../../api/networkaccess-enrichedauditlogs-update.md
   - name: Traffic logs
     items:
     - name: Traffic logs
