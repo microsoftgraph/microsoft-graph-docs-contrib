@@ -18,7 +18,7 @@ The `$search` query parameter is a powerful filtering mechanism in Microsoft Gra
 
 Support for this query parameter varies by entity. Some entities, like Microsoft Entra resources that derive from [directoryObject](/graph/api/resources/directoryobject), support `$search` only in [advanced queries](/graph/aad-advanced-queries).
 
-This article explains how to use the `$search` query parameter effectively with three key resource types: [mail messages](#using-search-on-message-collections), [people](#using-search-on-person-collections), and [Microsoft Entra ID objects (directory objects)](#using-search-on-directory-object-collections). You learn the specific syntax requirements, supported properties, and search behaviors for each resource type.
+This article explains how to use the `$search` query parameter effectively with three key resource types: [mail messages](#use-search-on-message-collections), [people](#use-search-on-person-collections), and [Microsoft Entra ID objects (directory objects)](#use-search-on-directory-object-collections). You learn the specific syntax requirements, supported properties, and search behaviors for each resource type.
 
 ## Use $search on message collections
 
