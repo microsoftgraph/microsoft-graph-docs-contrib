@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcFrontlineSharedDeviceDetail",
           "ChangeType": "Addition",
-          "Description": "Added the **cloudPcFrontlineSharedDeviceDetail** resource type.",
+          "Description": "Added the [cloudPcFrontlineSharedDeviceDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontlineSharedDeviceDetail?view=graph-rest-beta) resource type.",
           "Target": "cloudPcFrontlineSharedDeviceDetail"
         },
         {
