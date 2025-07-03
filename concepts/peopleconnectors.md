@@ -17,10 +17,10 @@ These connectors create a view of a portion of the data from the third-party sou
 
 You can use Copilot connectors for people data to:
 
-* Unified identity—create a complete and coherent view of individuals by merging people data in Microsoft 365 with other sources where people data is stored, such as Human Capital Management systems.  
-* Enhanced Copilot responses—enriched people data improves Copilot’s ability to reason and respond with contextually relevant information for people data-related queries.  
-* Improved discoverability—people data becomes searchable across Microsoft 365, including in profile cards, Org Explorer, and semantic search.
-* Profile card integration—updated profile information in the Microsoft 365 profile cards, with links directly to the third-party content source. 
+* Unified identity — create a complete and coherent view of individuals by merging people data in Microsoft 365 with other sources where people data is stored, such as Human Capital Management systems.  
+* Enhanced Copilot responses — enriched people data improves Copilot’s ability to reason and respond with contextually relevant information for people data-related queries.  
+* Improved discoverability — people data becomes searchable across Microsoft 365, including in profile cards, Org Explorer, and semantic search.
+* Profile card integration — updated profile information in the Microsoft 365 profile cards. 
 
 ## Where to find the data?
 
