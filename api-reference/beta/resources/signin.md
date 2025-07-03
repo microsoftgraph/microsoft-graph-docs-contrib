@@ -6,6 +6,7 @@ author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 ms.date: 01/23/2025
+ms.custom: sfi-ropc-nochange
 ---
 
 
