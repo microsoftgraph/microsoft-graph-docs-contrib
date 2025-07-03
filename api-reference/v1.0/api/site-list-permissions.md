@@ -13,6 +13,10 @@ Namespace: microsoft.graph
 
 Get the [permission](../resources/permission.md) resources from the permissions navigation property on a site.
 
+> [!IMPORTANT]
+> Using GET to list permissions of SharePoint subsites is not supported at this time.
+
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
