@@ -1,6 +1,6 @@
 ---
 title: "cloudPcFrontlineSharedDeviceDetail resource type"
-description: "Represents the Cloud PC device details associated with the frontline shared service plan; for example, assignedToUserPrincipalName."
+description: "Represents the Cloud PC device details (for example, assignedToUserPrincipalName) associated with the frontline shared service plan."
 author: "ziqifu9527"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Cloud PC device details associated with the frontline shared service plan; for example, **assignedToUserPrincipalName**.
+Represents the Cloud PC device details (for example, **assignedToUserPrincipalName**) associated with the frontline shared service plan.
 
 ## Properties
 
