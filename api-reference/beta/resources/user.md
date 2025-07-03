@@ -7,6 +7,7 @@ ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: resourcePageType
 ms.date: 01/10/2025
+ms.custom: sfi-ga-blocked
 ---
 
 # user resource type
