@@ -28,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_createuploadsession" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-createuploadsession-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## Create an upload session
 
 To begin a large file upload, your app must first request a new upload session.
