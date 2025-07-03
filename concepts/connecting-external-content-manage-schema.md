@@ -52,6 +52,7 @@ If a property is queryable, you can query against it using knowledge query langu
 
 ![A search for "search ba*" displaying results that match this prefix.](./images/connectors-images/connecting-external-content-manage-items-schema-2.svg)
 
+
 *A search for "search ba\*" displaying results that match this prefix.*
 
 ![A search for "tags:design" scoping down results to items with "design" in the tags property.](./images/connectors-images/connecting-external-content-manage-items-schema-3.svg)
@@ -115,8 +116,10 @@ You can assign semantic labels to your source properties on the **Assign propert
 | fileName              | In case of a file, the name of the file in the data source.                               |
 | fileExtension         | In case of a file, the extension of the file in the data source.                          |
 | iconUrl               | The URL of an icon.                                                                       |
-| containerName         | The name of the container.                                                                |
+| containerName         | The name of the container.Example,A project which contains tasks can be a container 
+                          or a google drive folder  that contains files can be container.                           |
 | containerUrl          | The URL of the container.                                                                 |
+
 
 For example, the connection property **lastEditedBy** has the same meaning as the Microsoft label *lastModifiedBy*.
 
