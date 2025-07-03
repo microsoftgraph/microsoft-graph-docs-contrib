@@ -9,7 +9,7 @@ ms.topic: include
 | Request type |  Limit per app for all tenants |  Limit per app per tenant |
 | ------------ | ------------------------------ |  ------------------------ |
 | Any | 122 requests per 10 seconds | Five requests per 10 seconds |
-| signInActivity | 10 requests per minute | 10 requests per minute |
+| GET [signInActivity](/graph/api/resources/signinactivity) | 10 requests per minute | 10 requests per minute |
 
 The preceding limits apply to the following resources:
 
