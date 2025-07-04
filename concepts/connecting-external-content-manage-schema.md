@@ -98,32 +98,87 @@ You should mark properties as searchable if:
 
 ### Queryable
 
-If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of one or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(*).
+Mark properties as queryable when users need to filter their search results based on specific values. For example, properties such as "ticketId," "TeamName" or "createdBy" can be queryable.  Now when you query something like “Tickets created by William” Copilot will be able to filter out only the tickets created by the said user and display it.  Prefix matching with wildcard operators (*) can further enhance search flexibility. 
 
+### **Which properties should be queryable?** 
+You should mark properties as queryable if: 
+- They are used for **filtering or narrowing down search results**. 
+- They represent **categorical or structured data** (e.g., status, priority, assigned user). 
+- You want to support **custom search experiences** or **faceted navigation**. 
+
+#### **Common examples:** 
+- status (e.g., Open, Closed) 
+- assignedTo (e.g., user email or ID) 
+- priority (e.g., High, Medium, Low) 
+- category or type 
+
+### **Best Practices** 
+- Avoid marking large text fields (like descriptions) as queryable. 
+- Combine Queryable with Retrievable so the property can be used and shown in results. 
+- Use Refinable if you want the property to appear as a **filter in the UI**. 
+
+In the case below, Queryable is set as true for the ‘Tags’ property. 
+
+![A search for "tags:design" scoping down results to items with "design" in the tags property.](./images/connectors-images/connecting-external-content-manage-items-schema-3.svg)
+*A search for "tags:design" scoping down results to items with "design" in the `tags` property.*
+
+If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of one or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(*). 
 > [!NOTE]
 > Suffix matching isn't supported.
 
 ![A search for "search ba*" displaying results that match this prefix.](./images/connectors-images/connecting-external-content-manage-items-schema-2.svg)
-
-
 *A search for "search ba\*" displaying results that match this prefix.*
 
-![A search for "tags:design" scoping down results to items with "design" in the tags property.](./images/connectors-images/connecting-external-content-manage-items-schema-3.svg)
-
-*A search for "tags:design" scoping down results to items with "design" in the `tags` property.*
 
 ### Retrievable
 
 If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose relevant properties.
 
 ![A set of retrievable properties rendered as a result.](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
-
 *A set of retrievable properties (`title` and `lastEditedBy`) rendered as a result.*
+
+### **Which properties should be retrievable?** 
+You should mark properties as retrievable if: 
+- You want them to be **visible in search results**. 
+- They are useful for **displaying context** (e.g., title, status, assigned user). 
+
+**Common examples:** 
+- title 
+- summary or description 
+- status 
+- assignedTo 
+- CreatedDateTime 
+
+### **Best Practices** 
+- Avoid marking sensitive or irrelevant fields as retrievable. 
+- Use `Retrievable: true` for fields shown in **search cards**, **Copilot prompts**, or **custom UI**. 
 
 ### Refinable
 
-If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. A `refinable` property can't be `searchable`.
+# If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. 
+The **Refinable** property allows a schema property to be used as a **filter** in Microsoft Search experiences. 
 
+When a property is marked as refinable: 
+- It can be used to **narrow down search results**. 
+- It appears as a **refiner control** (like a dropdown or checkbox) in the search UI. 
+- It supports **aggregation** in search queries. 
+
+### **Which Properties Should Be Refinable?** 
+You should mark properties as refinable if: 
+- They represent **categorical or structured data**. 
+- You want users to **filter or group** search results by these values. 
+
+#### **Common examples:** 
+- tags (e.g., "Finance", "HR", "Engineering") 
+- status (e.g., "Open", "Closed", "In Progress") 
+- priority (e.g., "High", "Medium", "Low") 
+- category or type 
+
+### **Important Notes** 
+- **Refinable properties cannot be searchable** — you must choose one or the other. 
+- Only **string or numeric types** can be refinable. 
+- Marking too many properties as refinable can **impact** performance.
+- 
 ![Refine results by tags, a refinable property.](./images/connectors-images/connecting-external-content-manage-schema-5.svg)
 
 *Refine results by `tags`, a refinable property.*
@@ -147,19 +202,33 @@ The **title** property doesn't specify exact matching. If nothing is specified, 
 
 ## Semantic labels
 
-A semantic label is a well-known tag published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience.
+A semantic label is a well-known tag published by Microsoft that you can add against a property in your schema. When building a custom Copilot connector using the Microsoft Graph API, applying semantic labels to your schema properties is essential. These labels help Microsoft 365 Copilot, and Microsoft Search understand the meaning and role of each property, enabling better search, summarization, and user experience.   
 
-Semantic labels provide a domain-independent approach to assigning properties from different content domains to a set of well-known classes. They find applications in many different content experiences, and provide automated support for tasks such as:
+You can assign semantic labels to your source properties on the Assign property labels page. Labels provide semantic meaning, and let you integrate your connector data into Microsoft 365 experiences. 
 
-* Data integration in heterogenous experiences
-* Building common knowledge graphs (for example, Viva Topics)
-* Default templates for user experiences
+Let's consider some of the project management tools like JIRA, Azure Dev ops, Asana etc. For the person who created a feature or work item, each of these platforms might use different terms like owner, ownedby, AssignedTo etc. So, if you have a property which is intended for a similar purpose you can use the ‘createdby’ semantic label.   
 
-You can assign semantic labels to your source properties on the **Assign property labels** page. Labels provide semantic meaning, and let you integrate your connector data into Microsoft 365 experiences.  
+You can assign semantic labels to your source properties using the graph API or from the **Assign property labels** page while using sdk. Labels provide semantic meaning, and let you integrate your connector data into Microsoft 365 experiences.  
 
-| Label                 | Description                                                                               |
+| Label              | Description                                                                                                      | Applies To Fields Like | 
+|--------------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------| 
+| title              | The main name or heading of the item that you want shown in search and other experiences.                        | documentTitle, ticketSubject, reportName       | 
+| url                | The target URL of the item in the data source. The direct link to open the item in its original system.          | documentLink, ticketUrl, recordUrl             | 
+| createdBy          | Identifies the user who originally created the item in the data source. Useful for filtering and context.        | authorEmail, submittedBy, createdByUser        | 
+| lastModifiedBy     | The name of the person who most recently edited the item in the data source.                                     | editorEmail, updatedBy, lastChangedBy          | 
+| authors            | The names of all the people who participated/collaborated on the item in the data source.                        | authorName, writer, reportAuthor               | 
+| createdDateTime    | The date and time that the item was created in the data source.                                                  | createdOn, submissionDate, entryDate           | 
+| lastModifiedDateTime | The date and time that the item was last modified in the data source.                                          | lastUpdated, modifiedOn, changeDate            | 
+| fileName           | In case of a file, the name of the file in the data source.                                                      | projectUrl, folderLink, groupPage              | 
+| fileExtension      | In case of a file, the extension of the file in the data source.                                                 | documentType, attachmentType, format           | 
+| iconUrl            | The URL of an icon.                                                                                              | thumbnailUrl, logo, previewImage               | 
+| containerName      | The name of the container. Ex: project is a container, google drive folder is a container.                       | projectName, folderName, groupName             | 
+| containerUrl       | The URL of the container.                                                                                        | projectUrl, folderLink, groupPage              | 
+
+
+| Label                 | Description                                                                               | Description                       |
 |---------------------- |------------------------------------------------------------------------------------------ |
-| title                 | The title of the item that you want shown in search and other experiences.                |
+| title                 | The main name or heading of the item that you want shown in search and other experiences                |
 | url                   | The target URL of the item in the data source.                                            |
 | createdBy             | The name of the person who created the item in the data source.                           |
 | lastModifiedBy        | The name of the person who most recently edited the item in the data source.              |
