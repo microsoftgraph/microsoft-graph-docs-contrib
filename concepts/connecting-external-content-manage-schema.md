@@ -210,7 +210,7 @@ Let's consider some of the project management tools like JIRA, Azure Dev ops, As
 
 You can assign semantic labels to your source properties using the graph API or from the **Assign property labels** page while using sdk. Labels provide semantic meaning, and let you integrate your connector data into Microsoft 365 experiences.  
 
-| Label              | Description                                                                                                      | Applies To Fields Like | 
+| Label              | Description                                                                                                      | Applies To Fields Like                         | 
 |--------------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------| 
 | title              | The main name or heading of the item that you want shown in search and other experiences.                        | documentTitle, ticketSubject, reportName       | 
 | url                | The target URL of the item in the data source. The direct link to open the item in its original system.          | documentLink, ticketUrl, recordUrl             | 
@@ -226,9 +226,10 @@ You can assign semantic labels to your source properties using the graph API or 
 | containerUrl       | The URL of the container.                                                                                        | projectUrl, folderLink, groupPage              | 
 
 
-| Label                 | Description                                                                               | Description                       |
+
+| Label                 | Description                                                                               | 
 |---------------------- |------------------------------------------------------------------------------------------ |
-| title                 | The main name or heading of the item that you want shown in search and other experiences                |
+| title                 | The main name or heading of the item that you want shown in search and other experiences  |
 | url                   | The target URL of the item in the data source.                                            |
 | createdBy             | The name of the person who created the item in the data source.                           |
 | lastModifiedBy        | The name of the person who most recently edited the item in the data source.              |
