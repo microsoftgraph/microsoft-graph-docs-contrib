@@ -225,25 +225,6 @@ You can assign semantic labels to your source properties using the graph API or 
 | containerName      | The name of the container. Ex: project is a container, google drive folder is a container.                       | projectName, folderName, groupName             | 
 | containerUrl       | The URL of the container.                                                                                        | projectUrl, folderLink, groupPage              | 
 
-
-
-| Label                 | Description                                                                               | 
-|---------------------- |------------------------------------------------------------------------------------------ |
-| title                 | The main name or heading of the item that you want shown in search and other experiences  |
-| url                   | The target URL of the item in the data source.                                            |
-| createdBy             | The name of the person who created the item in the data source.                           |
-| lastModifiedBy        | The name of the person who most recently edited the item in the data source.              |
-| authors               | The names of all the people who participated/collaborated on the item in the data source. |
-| createdDateTime       | The date and time that the item was created in the data source.                           |
-| lastModifiedDateTime  | The date and time that the item was last modified in the data source.                     |
-| fileName              | In case of a file, the name of the file in the data source.                               |
-| fileExtension         | In case of a file, the extension of the file in the data source.                          |
-| iconUrl               | The URL of an icon.                                                                       |
-| containerName         | The name of the container.Example,A project which contains tasks can be a container 
-                          or a google drive folder  that contains files can be container.                           |
-| containerUrl          | The URL of the container.                                                                 |
-
-
 For example, the connection property **lastEditedBy** has the same meaning as the Microsoft label *lastModifiedBy*.
 
 Add as many labels as you can, but ensure that they are accurately mapped to properties. Don't add a label to a property if it doesn't make sense. Incorrect mappings degrade the experience.
@@ -253,22 +234,19 @@ Add as many labels as you can, but ensure that they are accurately mapped to pro
 
 The label **title** is the most important label. Make sure that you assign a property to this label to allow your connection to participate in the result cluster experience. Incorrectly mapping labels degrades the search experience. It's okay for some labels to not have a property assigned to them.
 
-### Relevance
+### **Key considerations for relevance:** 
+By applying as many accurately mapped labels as possible, you can also improve the discovery of your content through search. We highly recommend defining as many of the following labels as possible, listed by potential impact on discovery in descending order: 
 
-By applying as many accurately mapped labels as possible, you can also improve the discovery of your content through search. We highly recommend defining as many of the following labels as possible, listed by potential impact on discovery in descending order:
-
-- title
-- lastModifiedDateTime
-- lastModifiedBy
-- url
-- fileName
+- title 
+- lastModifiedDateTime 
+- lastModifiedBy 
+- url 
+- fileName 
 - fileExtension
-
-For discovery (search scenarios), note the following:
-
-- Ensure that your mappings are accurate.
-- When you use a property as a label that contains large content, you might increase search latency and have to wait longer for search to return results.
-- Especially in the scenario where you configure a custom vertical that allows search over more than one connection, the search results greatly benefit from appointing as many labels as possible.
+  
+For discovery (search scenarios), note the following: 
+- Ensure that your mappings are accurate. 
+- When you use a property as a label for a property that contains large content, you might increase search latency and have to wait longer for search to return results. 
 
 ### Rank hints 
 
@@ -290,15 +268,11 @@ Use the following steps to set rank hints:
   ![Screenshot of the Relevance tuning tab showing importance weights for a selected property](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/51f79ff9-5a1f-405c-86ba-2aad677fb95b)
 
 
-
 ### Default result types
-
 Labels also affect how default result types are generated. Adding the title and content labels at a minimum ensures that a result type is created for your connection.
-
 ![A default result type with title and a result snippet.](./images/connectors-images/connecting-external-content-manage-schema-6.svg)
 
 *A default result type with `title` and a result snippet.*
-
 Your default result type provides a better experience when you define these labels, when applicable, listed by ascending order:
 
 - title
@@ -309,15 +283,71 @@ Your default result type provides a better experience when you define these labe
 - fileExtension
 
 Finally, when assigning labels, ensure the following:
-
 - The properties that you select to function as labels need to be marked retrievable.
 - The properties and their assigned labels must have the same datatype.
 - You can map exactly one label to exactly one property.
 
-## Aliases
+## Aliases 
 
-Aliases are friendly names for properties that you assign. These are used in queries and selections in refinable property filters.
+Aliases are friendly names for properties that you assign. These are used in queries and selections in refinable property filters. 
 
+### Real-World Examples of Aliases 
+| **Property Name** | **Possible Aliases** | **Use Case** | 
+|-------------------|------------------------------------|----------------------------------------------| 
+| createdBy | "author", "owner", "submittedBy" | Users asking “Who wrote this?” or “Who submitted?” | 
+| title | "subject", "heading" | Users asking “What’s the subject of this item?” | 
+| tags | "labels", "categories" | Users asking “Show items tagged with ‘Finance’” | 
+| filename | "documentName", "fileName" | Users asking “Find file named ‘report.docx’” | 
+| summary | "description", "abstract" | Users asking “Give me a quick overview” | 
+
+### Best Practices 
+- Use aliases for **common synonyms** or **domain-specific terms**. 
+- Avoid overly generic or ambiguous aliases. 
+- Keep aliases **short and intuitive**. 
+
+### **Using the `content` property** 
+The **Microsoft Graph connector schema** supports a **default property** called `content`. You do not have to define it in the schema like other properties (e.g., title, tags, etc.). Instead, it is **directly included in the item payload** when you ingest data. 
+
+This content added to the property will be: 
+- Indexed for text search. 
+- Used to generate dynamic snippets in search results. 
+- Available to Copilot for summarization and semantic understanding.
+
+## Add Unstructured data to Content property 
+- To ensure semantic search functionality for unstructured or free-flowing content, add properties like **Summary**, **Comment**, **Root Cause**, and **Description** to the `content` field. Additionally, retain these properties as separate retrievable entities only if their entire value needs to be retrieved and displayed for UI purposes. You can append multiple properties like `summary`, `description`, etc. to the content field. 
+
+A sample of how `content` property is used while ingesting data: 
+```json 
+{ 
+"@odata.type": "microsoft.graph.externalItem", 
+"acl": [ 
+{ 
+"type": "everyone", 
+"value": "everyone", 
+"accessType": "grant" 
+} 
+], 
+
+"properties": { 
+"title": "Payment Gateway Error", 
+"priority": "High", 
+"assignee": "john.doe@contoso.com" 
+}, 
+
+"content": { 
+"value": "Rootcause : Error in payment gateway : MoreDetails about the error.......", 
+"type": "text" 
+} 
+}
+
+**Additional tip if you are using a declarative agent:** 
+- If you are using a Declarative Agent (DA), you **can and should** provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. 
+- This is **very useful** because it helps the Declarative agent understand: 
+    - The **semantic meaning** of each property. 
+    - How to **reference and summarize** the data. 
+    - How to **respond to user queries** using the indexed content. 
+- Please make sure you have well-formed property descriptions for all properties. It should indicate what the property is about, other names or terms for the property, when it should be used, etc. 
+  
 ## Schema update capabilities
 
 This section includes information about the update capabilities for the [schema](/graph/api/resources/externalconnectors-schema) API.
