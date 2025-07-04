@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|uniqueTokenIdentifier|String|Unique identifier of the token. **Required.**|
+|uniqueTokenIdentifier|String|Unique identifier of the token. Required.|
 
 ## Relationships
 None.

@@ -1,6 +1,6 @@
 ---
 title: "alert: getAlertSeveritySummaries"
-description: "Get a summary of alert severities detected by the network access system."
+description: "Get a summary of alert severities detected by Global Secure Access."
 author: "miritsadon"
 ms.date: 04/07/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a collection containing count tables for all alert severity types in global secure access.
+Returns a collection containing count tables for all alert severity types in Global Secure Access.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccessRoot/alerts/getAlertSeveritySummaries(startDateTime='2025-04-19T00:00:00Z',endDateTime='2025-04-20T00:00:00Z')
+GET /networkAccessRoot/alerts/getAlertSeveritySummaries(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters
@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccessRoot/alerts/getAlertSeveritySummaries(startDateTime={startDateTime},endDateTime={endDateTime})
+GET https://graph.microsoft.com/beta/networkAccessRoot/alerts/getAlertSeveritySummaries(startDateTime='2025-04-19T00:00:00Z',endDateTime='2025-04-20T00:00:00Z')
 ```
 
 ### Response

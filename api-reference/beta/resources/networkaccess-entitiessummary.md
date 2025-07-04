@@ -19,10 +19,10 @@ Represents a summary of entities for Global secure access reporting.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceCount|Int64|The number of devices in the summary. **Required.**|
-|trafficType|microsoft.graph.networkaccess.trafficType|The type of network traffic summarized. **Required.** The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
-|userCount|Int64|The number of users in the summary. **Required.**|
-|workloadCount|Int64|The number of workloads in the summary. **Required.**|
+|deviceCount|Int64|The number of devices in the summary. Required.|
+|trafficType|microsoft.graph.networkaccess.trafficType|The type of network traffic summarized. Required. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
+|userCount|Int64|The number of users in the summary. Required.|
+|workloadCount|Int64|The number of workloads in the summary. Required.|
 
 ## Relationships
 None.

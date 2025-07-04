@@ -19,9 +19,9 @@ Represents a summary of a specific alert severity and alert type detected by Glo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|alertType|microsoft.graph.networkaccess.alertType|The type of the alerts. **Required.** The possible values are: `unhealthyRemoteNetworks`, `unhealthyConnectors`, `deviceTokenInconsistency`, `crossTenantAnomaly`, `suspiciousProcess`, `threatIntelligenceTransactions`, `unknownFutureValue`, `webContentBlocked`, `malware`, `patientZero`, `dlp`, `fallback`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `webContentBlocked` , `malware` , `patientZero` , `dlp` , `fallback`.|
-|count|Int64|Total number of alerts with this specific severity and type. **Required.**|
-|severity|microsoft.graph.networkaccess.alertSeverity|The severity of the alerts. **Required.** The possible values are: `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|alertType|microsoft.graph.networkaccess.alertType|The type of the alerts. Required. The possible values are: `unhealthyRemoteNetworks`, `unhealthyConnectors`, `deviceTokenInconsistency`, `crossTenantAnomaly`, `suspiciousProcess`, `threatIntelligenceTransactions`, `unknownFutureValue`, `webContentBlocked`, `malware`, `patientZero`, `dlp`, `fallback`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `webContentBlocked` , `malware` , `patientZero` , `dlp` , `fallback`.|
+|count|Int64|Total number of alerts with this specific severity and type. Required.|
+|severity|microsoft.graph.networkaccess.alertSeverity|The severity of the alerts. Required. The possible values are: `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 
 ## Relationships
 None.

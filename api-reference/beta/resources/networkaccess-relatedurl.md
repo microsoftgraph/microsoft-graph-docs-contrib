@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|url|String|The destination URL. **Required.**|
+|url|String|The destination URL. Required.|
 
 ## Relationships
 None.

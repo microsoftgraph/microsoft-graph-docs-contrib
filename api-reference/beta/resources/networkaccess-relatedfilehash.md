@@ -21,8 +21,8 @@ Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|algorithm|microsoft.graph.networkaccess.algorithm|The algorithm used to calculate the file hash. **Required.** The possible values are: `md5`, `sha1`, `sha256`, `sha256ac`, `unknownFutureValue`.|
-|value|String|The hash value. **Required.**|
+|algorithm|microsoft.graph.networkaccess.algorithm|The algorithm used to calculate the file hash. Required. The possible values are: `md5`, `sha1`, `sha256`, `sha256ac`, `unknownFutureValue`.|
+|value|String|The hash value. Required.|
 
 ## Relationships
 None.

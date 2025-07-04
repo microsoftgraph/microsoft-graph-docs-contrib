@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceId|String|Unique identifier of the device involved in the alert. **Required.**|
+|deviceId|String|Unique identifier of the device involved in the alert. Required.|
 
 ## Relationships
 None.

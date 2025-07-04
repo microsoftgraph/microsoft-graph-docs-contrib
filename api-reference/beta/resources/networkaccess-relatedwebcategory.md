@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|webCategoryName|String|Name of the web category. **Required.**|
+|webCategoryName|String|Name of the web category. Required.|
 
 ## Relationships
 None.

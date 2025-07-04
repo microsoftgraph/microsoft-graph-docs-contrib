@@ -21,9 +21,9 @@ Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|directory|String|Directory path of the file. **Required.**|
-|name|String|Name of the file. **Required.**|
-|sizeInBytes|Int64|Size of the file in bytes. **Required.**|
+|directory|String|Directory path of the file. Required.|
+|name|String|Name of the file. Required.|
+|sizeInBytes|Int64|Size of the file in bytes. Required.|
 
 ## Relationships
 None.

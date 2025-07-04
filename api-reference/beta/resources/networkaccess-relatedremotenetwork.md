@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|remoteNetworkId|String|Unique identifier of the remote network. **Required.**|
+|remoteNetworkId|String|Unique identifier of the remote network. Required.|
 
 ## Relationships
 None.

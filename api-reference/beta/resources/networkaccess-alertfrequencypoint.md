@@ -19,11 +19,11 @@ Represents a summary of all alert severities in a specific day detected by Globa
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|highSeverityCount|Int64|Total number of high alert severity. **Required.**|
-|informationalSeverityCount|Int64|Total number of informational alert severity. **Required.**|
-|lowSeverityCount|Int64|Total number of low alert severity. **Required.**|
-|mediumSeverityCount|Int64|Total number of medium alert severity. **Required.**|
-|timeStampDateTime|DateTimeOffset|The time bucket for counting the alert severities. **Required.**|
+|highSeverityCount|Int64|Total number of high alert severity. Required.|
+|informationalSeverityCount|Int64|Total number of informational alert severity. Required.|
+|lowSeverityCount|Int64|Total number of low alert severity. Required.|
+|mediumSeverityCount|Int64|Total number of medium alert severity. Required.|
+|timeStampDateTime|DateTimeOffset|The time bucket for counting the alert severities. Required.|
 
 ## Relationships
 None.

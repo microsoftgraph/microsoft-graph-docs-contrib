@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|String|Unique identifier of the tenant. **Required.**|
+|tenantId|String|Unique identifier of the tenant. Required.|
 
 ## Relationships
 None.

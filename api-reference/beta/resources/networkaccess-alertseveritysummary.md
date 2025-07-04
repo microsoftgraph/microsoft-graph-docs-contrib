@@ -19,8 +19,8 @@ Represents a summary of a specific alert severity detected by Global Secure Acce
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|count|Int64|Total number of alerts with this specific severity. **Required.**|
-|severity|microsoft.graph.networkaccess.alertSeverity|The severity of the alerts. **Required.** The possible values are: `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|count|Int64|Total number of alerts with this specific severity. Required.|
+|severity|microsoft.graph.networkaccess.alertSeverity|The severity of the alerts. Required. The possible values are: `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 
 ## Relationships
 None.

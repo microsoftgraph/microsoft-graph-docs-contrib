@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a collection containing count tables for all alert types and their severities in global secure access.
+Returns a collection containing count tables for all alert types and their severities in Global Secure Access.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccessRoot/alerts/getAlertSummaries(startDateTime='2025-04-19T00:00:00Z',endDateTime='2025-04-20T00:00:00Z')
+GET /networkAccessRoot/alerts/getAlertSummaries(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters
@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccessRoot/alerts/getAlertSummaries(startDateTime={startDateTime},endDateTime={endDateTime})
+GET https://graph.microsoft.com/beta/networkAccessRoot/alerts/getAlertSummaries(startDateTime='2025-04-19T00:00:00Z',endDateTime='2025-04-20T00:00:00Z')
 ```
 
 ### Response

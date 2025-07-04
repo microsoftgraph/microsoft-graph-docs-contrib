@@ -21,8 +21,8 @@ Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|userId|String|Unique identifier of the user. **Required.**|
-|userPrincipalName|String|Principal name of the user. **Required.**|
+|userId|String|Unique identifier of the user. Required.|
+|userPrincipalName|String|Principal name of the user. Required.|
 
 ## Relationships
 None.

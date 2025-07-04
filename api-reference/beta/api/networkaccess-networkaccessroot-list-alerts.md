@@ -46,8 +46,8 @@ This method supports the following OData query parameters to help customize the 
 |Name|Syntax|Notes|
 |:---|:---|:---|
 |Server-side pagination|@odata.nextLink=https://graph.microsoft.com/beta/networkAccess/alerts?$skiptoken="generatedtoken"|The page size defaults to and is limited to 1000.|
-|Filter|/networkAccess/alerts?$filter=severity eq 'high'|All properties are filterable. Filter by severity, alertType, vendorName, and other alert properties.|
-|Sort|/networkAccess/alerts?$orderby=creationDateTime desc|You can order by all properties. Sort by creationDateTime, severity, and other properties.|
+|Filter|/networkAccess/alerts?$filter=severity eq 'high'|All properties are filterable. Filter by **severity**, **alertType**, **vendorName**, and other alert properties.|
+|Sort|/networkAccess/alerts?$orderby=creationDateTime desc|You can order by all properties. Sort by **creationDateTime**, **severity**, and other properties.|
 |Top|/networkAccess/alerts?$top=50|Limit the number of results. Maximum value is 1000.|
 
 ## Request headers

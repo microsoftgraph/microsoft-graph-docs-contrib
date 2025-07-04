@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|transactionId|String|Unique identifier of the transaction. **Required.**|
+|transactionId|String|Unique identifier of the transaction. Required.|
 
 ## Relationships
 None.

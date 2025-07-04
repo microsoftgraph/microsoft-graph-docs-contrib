@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|threatCount|Int64|Number of threats detected by threat intelligence. **Required.**|
+|threatCount|Int64|Number of threats detected by threat intelligence. Required.|
 
 ## Relationships
 None.
