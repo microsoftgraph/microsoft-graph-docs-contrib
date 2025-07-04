@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 01/01/2025
+ms.date: 07/03/2025
 ---
 
 # What's new in Microsoft Graph
@@ -16,6 +16,22 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
+
+## July 2025: New and generally available
+
+### Files
+
+Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession) extends the expiration time.
+
+## July 2025: New in preview only
+
+### Files
+
+Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession?view=graph-rest-beta&preserve-view=true) extends the expiration time.
+
+### Identity and access | Identity and sign-in
+
+Retired the previously deprecated Microsoft Entra lifecycle announcements APIs that stopped returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
 
 ## June 2025: New and generally available
 

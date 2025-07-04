@@ -6,6 +6,7 @@ ms.subservice: "non-product-specific"
 ms.date: 06/23/2025
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
+ms.custom: sfi-ropc-nochange
 ---
 
 # Enum values
