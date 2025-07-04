@@ -13,7 +13,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Retrieve a list of tenant-level or group-specific group settings objects.
+Retrieve a list of tenant-level or group-specific [group settings](../resources/groupsetting.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -13,7 +13,7 @@ ms.date: 03/06/2024
 
 Namespace: microsoft.graph
 
-Retrieve the properties of a specific group setting object. The setting can be a tenant-level or group-specific setting.
+Retrieve the properties of a specific [group setting](../resources/groupsetting.md) object. The setting can be a tenant-level or group-specific setting.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
