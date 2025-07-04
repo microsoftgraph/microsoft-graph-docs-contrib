@@ -56,52 +56,50 @@ The following best practices should be considered when choosing property names.
 - Add property descriptions to help Copilot understand your property better and match relevant queries.
 
 > [!NOTE]
->  Support for adding property descriptions for custom connectors is expected to be in Q4 of 2025.
-> If you are using declarative agents (DA), we recommend adding the description of the properties to the DA instruction set. 
+> Support for adding property descriptions for custom connectors is expected to be in Q4 of 2025.
+> When using declarative agents (DA), add the description of the properties to the DA instruction set. 
 
-### Searchable
-If a property is searchable, its value is added to the full text index. This means that when a user performs a search on Copilot or SharePoint, we return results if the search string matches with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
+### Searchable properties
+If a property is searchable, its value is added to the full text index. This means that when a user performs a search on Copilot or SharePoint, results are returned if the search string matches with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
 
-**Which properties should be searchable?** 
 You should mark properties as searchable if: 
 - They contain **textual data** that users might search for. 
 - They are **relevant to search queries** (e.g., titles, descriptions, tags). 
 - You want them to contribute to **search hits** and **snippet generation**. 
 
-**Common examples:** 
+Some common examples are:
 - title 
 - description 
 - tags 
 - createdBy 
 - assignedTo 
 
-**Best Practices** 
-- **Avoid marking large binary fields** as searchable. 
-- **Do not mark refinable fields as searchable** — refinable and searchable are mutually exclusive. 
-- Do not mark all fields as searchable. **Limit searchable fields** to those that improve relevance and user experience.
+#### Best practices
+- Avoid marking large binary fields as searchable. 
+- Do not mark refinable fields as searchable— refinable and searchable are mutually exclusive. 
+- Do not mark all fields as searchable. Limit searchable fields to those that improve relevance and user experience.
 
 <!-- markdownlint-disable MD036 -->
 ![A search for "design" displaying results for hits against the property title and content.](./images/connectors-images/connecting-external-content-manage-items-schema-1.png)
-*A search for "design" displaying results for hits against the property (`title`) and content.*
+*A search for "design" displays results for hits against the property (`title`) and content.*
 
-### Queryable
-Mark properties as queryable when users need to filter their search results based on specific values. For example, properties such as "ticketId," "TeamName" or "createdBy" can be queryable.  Now when you query something like “Tickets created by William” Copilot will be able to filter out only the tickets created by the said user and display it.  Prefix matching with wildcard operators (*) can further enhance search flexibility. 
+### Queryable properties
+Mark properties as queryable when users need to filter their search results based on specific values. For example, properties such as **ticketId**, **teamName**, or **created** can be queryable.  When you query something like **Tickets created by William**, Copilot can filter out only the tickets created by the said user and display them.  Prefix matching with wildcard operators (*) can further enhance search flexibility. 
 
-**Which properties should be queryable?** 
 You should mark properties as queryable if: 
 - They are used for **filtering or narrowing down search results**. 
 - They represent **categorical or structured data** (e.g., status, priority, assigned user). 
 - You want to support **custom search experiences** or **faceted navigation**. 
 
-**Common examples:** 
-- status (e.g., Open, Closed) 
-- assignedTo (e.g., user email or ID) 
-- priority (e.g., High, Medium, Low) 
+Some common examples are:
+- status (e.g., open, closed) 
+- assignedTo (e.g., userEmail or ID) 
+- priority (e.g., high, medium, low) 
 - category or type 
 
-**Best Practices** 
+#### Best practices
 - Avoid marking large text fields (like descriptions) as queryable. 
-- Combine Queryable with Retrievable so the property can be used and shown in results. 
+- Combine Queryable with Retrievable so the property can be used and shown in the results. 
 - Use Refinable if you want the property to appear as a **filter in the UI**. 
 
 In the case below, Queryable is set as true for the ‘Tags’ property. 
@@ -109,7 +107,7 @@ In the case below, Queryable is set as true for the ‘Tags’ property.
 ![A search for "tags:design" scoping down results to items with "design" in the tags property.](./images/connectors-images/connecting-external-content-manage-items-schema-3.svg)
 *A search for "tags:design" scoping down results to items with "design" in the `tags` property.*
 
-If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of one or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(*). 
+If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of one or more free-text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(*). 
 
 > [!NOTE]
 > Suffix matching isn't supported.
