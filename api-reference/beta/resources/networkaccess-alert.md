@@ -1,5 +1,5 @@
 ---
-title: "networkaccess alert resource type"
+title: "alert resource type (in Global Secure Access)"
 description: "Represents an alert detected by Global Secure Access. Each entity is a separate instance of an alert."
 author: "miritsadon"
 ms.date: 04/07/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-global-secure-access"
 doc_type: resourcePageType
 ---
 
-# networkaccess alert resource type
+# alert resource type (in Global Secure Access)
 
 Namespace: microsoft.graph.networkaccess
 

@@ -1,6 +1,6 @@
 ---
 title: "entitiesSummary resource type"
-description: "Represents a summary of entities for network access reporting."
+description: "Represents a summary of entities for Global Secure Access reporting."
 author: "miritsadon"
 ms.date: 04/07/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a summary of entities for Global secure access reporting.
+Represents a summary of entities for Global Secure Access reporting.
 
 ## Properties
 |Property|Type|Description|

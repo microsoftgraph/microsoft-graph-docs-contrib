@@ -30,7 +30,8 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.networkaccess.extendedProperties"
+  "@odata.type": "microsoft.graph.networkaccess.extendedProperties",
+  "openType": true
 }
 -->
 ``` json
