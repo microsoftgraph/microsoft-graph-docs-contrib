@@ -283,7 +283,7 @@ Finally, when assigning labels, ensure the following:
 
 Aliases are friendly names for properties that you assign. These are used in queries and selections in refinable property filters. 
 
-### Real-World Examples of Aliases 
+**Real-World Examples of Aliases** 
 | **Property Name** | **Possible Aliases** | **Use Case** | 
 |-------------------|------------------------------------|----------------------------------------------| 
 | createdBy | "author", "owner", "submittedBy" | Users asking “Who wrote this?” or “Who submitted?” | 
@@ -292,12 +292,12 @@ Aliases are friendly names for properties that you assign. These are used in que
 | filename | "documentName", "fileName" | Users asking “Find file named ‘report.docx’” | 
 | summary | "description", "abstract" | Users asking “Give me a quick overview” | 
 
-### Best Practices 
+**Best Practices** 
 - Use aliases for **common synonyms** or **domain-specific terms**. 
 - Avoid overly generic or ambiguous aliases. 
 - Keep aliases **short and intuitive**. 
 
-### **Using the `content` property** 
+### Using the `content` property 
 The **Microsoft Graph connector schema** supports a **default property** called `content`. You do not have to define it in the schema like other properties (e.g., title, tags, etc.). Instead, it is **directly included in the item payload** when you ingest data. 
 
 This content added to the property will be: 
@@ -305,7 +305,7 @@ This content added to the property will be:
 - Used to generate dynamic snippets in search results. 
 - Available to Copilot for summarization and semantic understanding.
 
-## Add Unstructured data to Content property 
+### Add Unstructured data to Content property 
 - To ensure semantic search functionality for unstructured or free-flowing content, add properties like **Summary**, **Comment**, **Root Cause**, and **Description** to the `content` field. Additionally, retain these properties as separate retrievable entities only if their entire value needs to be retrieved and displayed for UI purposes. You can append multiple properties like `summary`, `description`, etc. to the content field. 
 
 A sample of how `content` property is used while ingesting data: 
@@ -332,7 +332,7 @@ A sample of how `content` property is used while ingesting data:
 } 
 }
 ``` 
-**Additional tip if you are using a declarative agent:** 
+### Additional tip if you are using a declarative agent:
 - If you are using a Declarative Agent (DA), you **can and should** provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. 
 - This is **very useful** because it helps the Declarative agent understand: 
     - The **semantic meaning** of each property. 
