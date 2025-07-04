@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
 toc.title: Range fill
+ms.date: 07/30/2024
 ---
 
 # workbookRangeFill resource type

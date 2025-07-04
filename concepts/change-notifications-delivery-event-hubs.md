@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.subservice: change-notifications
 ms.topic: tutorial
 ms.localizationpriority: high
-ms.custom: graphiamtop20, devx-track-azurecli
+ms.custom: graphiamtop20, devx-track-azurecli, sfi-ropc-nochange
 ms.date: 08/19/2024
 #customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources through Azure Event Hubs so I can build apps that process the changes according to the business requirements.
 ---
@@ -24,7 +24,7 @@ The article guides you through the process of managing your Microsoft Graph subs
 
 ## Using Azure Event Hubs to receive change notification
 
-[Azure Event Hubs](https://azure.microsoft.com/services/event-hubs) is a popular real-time events ingestion and distribution service built for scale. Using Azure Event Hubs to receive change notifications differs from webhooks in a few ways, including:
+[Azure Event Hubs](https://azure.microsoft.com/products/event-hubs/) is a popular real-time events ingestion and distribution service built for scale. Using Azure Event Hubs to receive change notifications differs from webhooks in a few ways, including:
 
 - You don't rely on publicly exposed notification URLs. The Event Hubs SDK relays the notifications to your application.
 - You don't need to reply to the [notification URL validation](change-notifications-delivery-webhooks.md#notificationurl-validation). You can ignore the validation message that you receive.

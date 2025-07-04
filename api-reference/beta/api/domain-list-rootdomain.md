@@ -5,6 +5,7 @@ author: "shilpi-kansal"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Get rootDomain
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "domain_list_rootdomain" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-list-rootdomain-permissions.md)]
+
+[!INCLUDE [rbac-domain-apis-read](../includes/rbac-for-apis/rbac-domain-apis-read.md)]
 
 ## HTTP request
 

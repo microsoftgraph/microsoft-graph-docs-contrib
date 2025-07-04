@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "qiwhuang"
 ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 08/07/2024
 ---
 
 # Update adminReportSettings

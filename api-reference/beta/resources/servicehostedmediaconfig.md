@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # serviceHostedMediaConfig resource type
@@ -21,6 +22,9 @@ The media that's hosted remotely. This is inherited from [mediaConfig](mediaconf
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | [mediaInfo](mediainfo.md) collection                        | The list of media to prefetch.                   |
 | removeFromDefaultAudioGroup | Boolean                                                     | Remove self participant from default audio group. |
+
+## Relationships
+None.
 
 ## JSON representation
 

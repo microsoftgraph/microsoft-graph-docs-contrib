@@ -4,6 +4,7 @@ description: "Learn how to create a meeting event in a shared or delegated Outlo
 author: "juforan"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Create Outlook events in a shared or delegated calendar

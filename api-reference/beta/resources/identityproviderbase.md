@@ -4,34 +4,40 @@ description: "Represents identity providers in a Microsoft Entra tenant and an A
 ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
-author: "namkedia"
+author: "brozbab"
 toc.title: "External Identities identity provider"
+ms.date: 11/16/2024
 ---
 
 # identityProviderBase resource type
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents identity providers with [External Identities](/azure/active-directory/external-identities/) for both Microsoft Entra ID and Azure AD B2C tenants.
+Represents identity providers for both Microsoft Entra and Azure AD B2C tenants.
 
-For Microsoft Entra B2B scenarios in a Microsoft Entra directory, the identity provider can be a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md), both of which inherit from the identityProviderBase resource type.
+Configuring an identity provider in your workforce tenant enables new B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 
-Configuring an identity provider in your Microsoft Entra directory enables new Microsoft Entra B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
+Configuring an identity provider in your external or Azure AD B2C tenant enables users to sign up and sign in using a social account or a custom OpenID Connect supported provider in an application. For example, an application can use Entra External ID or Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol (Open ID Connect is currently supported only with external tenants and Azure AD B2C).
 
-In an Azure AD B2C directory, the identity provider type can be a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), all which inherit from the identityProviderBase resource type.
-
-Configuring an identity provider in your Azure AD B2C directory enables users to sign up and sign in using a social account or a custom OpenID Connect supported provider in an application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol.
+| Supported  IdPs (types derived from identityProviderBase)                      | External tenant     | Workforce tenant    | Azure AD B2C tenant |
+|--------------------------------------------------------------------------------|---------------------|---------------------|---------------------|
+| [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)   | ![Supported][Yes]   | ![NotSupported][No] | ![Supported][Yes]   |
+| [builtInIdentityProvider](../resources/builtinidentityprovider.md)             | ![Supported][Yes]   | ![Supported][Yes]   | ![Supported][Yes]   |
+| [socialIdentityProvider](../resources/socialidentityprovider.md)               | ![Supported][Yes]   | ![Supported][Yes]   | ![Supported][Yes]   |
+| [oidcIdentityProvider](../resources/oidcidentityprovider.md)                   | ![Supported][Yes]   | ![NotSupported][No] | ![NotSupported][No] |
+| [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) | ![NotSupported][No] | ![NotSupported][No] | ![Supported][Yes]   |
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List configured identity providers](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant.|
-|[Create identity provider](../api/identitycontainer-post-identityproviders.md)| [socialidentityprovider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) |Create a new object of one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Microsoft Entra ID or Azure AD B2C) <li> [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) (Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) </li></ul>|
-|[Get ](../api/identityproviderbase-get.md) |[socialidentityprovider](../resources/socialidentityprovider.md), [builtInIdentityProvider](../resources/builtinidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)| Retrieve properties of one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Microsoft Entra ID or Azure AD B2C) <li> [builtInIdentityProvider](../resources/builtinidentityprovider.md) (Microsoft Entra ID or Azure AD B2C) <li> [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) (Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) </li></ul>|
-|[Update](../api/identityproviderbase-update.md)|None|Update one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Microsoft Entra ID or Azure AD B2C) <li> [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) (Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) </li></ul>|
-|[Delete](../api/identityproviderbase-delete.md)|None|Delete one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Microsoft Entra ID or Azure AD B2C) <li> [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) (Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) (Azure AD B2C)|
+|[Create](../api/identitycontainer-post-identityproviders.md)| [socialidentityprovider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [oidcIdentityProvider](../resources/oidcidentityprovider.md) or [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) |Create a new object of one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) <li>[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (External or Azure AD B2C tenant)<li>[oidcIdentityProvider](../resources/oidcidentityprovider.md) (External tenant only)</li><li> [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) (Azure AD B2C tenant only) </li></ul>|
+|[Get](../api/identityproviderbase-get.md) |[socialidentityprovider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtInIdentityProvider](../resources/builtinidentityprovider.md), [oidcIdentityProvider](../resources/oidcidentityprovider.md) or [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) | Retrieve properties of one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (External or Azure AD B2C tenant) <li> [builtInIdentityProvider](../resources/builtinidentityprovider.md)<li>[oidcIdentityProvider](../resources/oidcidentityprovider.md) (External tenant only)</li> <li> [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) (Azure AD B2C tenant only) </li></ul>|
+|[Update](../api/identityproviderbase-update.md)|None|Update one of the following object types: <ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) <li>[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (External or Azure AD B2C tenant)<li>[oidcIdentityProvider](../resources/oidcidentityprovider.md) (External tenant only)</li><li> [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) (Azure AD B2C tenant only) </li></ul>|
+|[Delete](../api/identityproviderbase-delete.md)|None|Delete one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md)<li>[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (External or Azure AD B2C tenant)<li>[oidcIdentityProvider](../resources/oidcidentityprovider.md) (External tenant only)</li><li> [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) (Azure AD B2C tenant only)</li></ul>|
 |[List available identity providers](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all supported identity provider types in the tenant.|
 
 ## Properties
@@ -41,9 +47,12 @@ Configuring an identity provider in your Azure AD B2C directory enables users to
 |id|String|The identifier of the identity provider.|
 |displayName|String|The display name of the identity provider.|
 
+## Relationships
+None.
+
 ## JSON representation
+
 The following JSON representation shows the resource type.
-The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -56,3 +65,7 @@ The following is a JSON representation of the resource.
     "displayName": "String",
 }
 ```
+
+
+[Yes]: /graph/images/yesandnosymbols/greencheck.svg
+[No]: /graph/images/yesandnosymbols/no.svg

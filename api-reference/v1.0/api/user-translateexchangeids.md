@@ -5,6 +5,7 @@ author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # user: translateExchangeIds
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Translate identifiers of Outlook-related resources between formats.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

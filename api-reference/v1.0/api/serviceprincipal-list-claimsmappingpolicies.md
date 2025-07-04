@@ -2,9 +2,10 @@
 title: "List assigned claimsMappingPolicies"
 description: "List claimsMappingPolicies that are assigned to a service principal."
 ms.localizationpriority: medium
-author: "paulgarn"
+author: "vimrang"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 07/30/2024
 ---
 
 # List assigned claimsMappingPolicy

@@ -5,6 +5,7 @@ author: "eringreenlee"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update adminConsentRequestPolicy
@@ -20,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "adminconsentrequestpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/adminconsentrequestpolicy-update-permissions.md)]
 
-For delegated scenarios, the calling user needs to belong to at least the *Application Administrator* or *Cloud Application Administrator* [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+[!INCLUDE [rbac-adminconsentrequestpolicy-apis-update](../includes/rbac-for-apis/rbac-adminconsentrequestpolicy-apis-update.md)]
 
 ## HTTP request
 

@@ -5,6 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 08/14/2024
 ---
 
 # Delete deletedItemContainer (permanently delete a deleted lifecycle workflow)
@@ -13,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Delete a [workflow](../resources/identitygovernance-workflow.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

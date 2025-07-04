@@ -1,16 +1,17 @@
 ---
-title: "Build a custom Microsoft Graph connector in C#"
+title: "Build a custom Microsoft 365 Copilot connector in C#"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Learn how to use the Microsoft Graph connectors SDK to build a custom connector in C#."
+description: "Learn how to use the Copilot connectors SDK to build a custom connector in C#."
+ms.date: 11/07/2024
 ---
 
-# Build a custom Microsoft Graph connector in C#
+# Build a custom Copilot connector in C#
 
-This article describes how to use the Microsoft Graph connector SDK to build a custom connector in C#.
+This article describes how to use the Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) SDK to build a custom connector in C#.
 
 ## Prerequisites
 

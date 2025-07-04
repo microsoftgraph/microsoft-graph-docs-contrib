@@ -5,6 +5,7 @@ author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # cloudPcUserRoleScopeTagInfo resource type

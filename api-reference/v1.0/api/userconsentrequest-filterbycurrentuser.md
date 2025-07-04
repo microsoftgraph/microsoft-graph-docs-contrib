@@ -5,6 +5,7 @@ author: "eringreenlee"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # userConsentRequest: filterByCurrentUser

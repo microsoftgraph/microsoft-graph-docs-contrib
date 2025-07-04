@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akjo"
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/13/2024
 ---
 
 # Create channel
@@ -21,6 +22,7 @@ You can add a maximum of 200 members when you create a private channel.
 > [!NOTE]
 > - Some special characters in the channel name cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](/graph/known-issues#create-channel).
 > - When you create a private/shared channel, the SharePoint site might fail to provision. If the site fails to provision after 5 minutes, use the [Get filesFolder](/graph/api/channel-get-filesfolder) API to trigger provisioning.
+> - You can create shared channels with only one owner initially. Adding multiple owners results in a `400 Bad Request` error code. After the initial request, you can add more owners using the [Add member to channel](/graph/api/channel-post-members) API.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -6,6 +6,7 @@ ms.reviewer: msodsrbac
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Get directoryRoleTemplate
@@ -13,6 +14,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!NOTE]
+> Microsoft recommends that you use the unified RBAC API instead of this API. The unified RBAC API provides more functionality and flexibility. For more information, see [Get unifiedRoleDefinition](./unifiedroledefinition-get.md).
 
 Retrieve the properties and relationships of a directoryroletemplate object.
 
@@ -23,6 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "directoryroletemplate_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryroletemplate-get-permissions.md)]
+
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *Global Reader* is the least privileged role supported for this operation.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

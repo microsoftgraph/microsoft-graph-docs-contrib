@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 07/22/2024
 ---
 
 # oAuth2PermissionGrant resource type

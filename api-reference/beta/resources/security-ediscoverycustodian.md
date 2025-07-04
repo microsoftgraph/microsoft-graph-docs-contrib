@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 10/15/2024
 ---
 
 # ediscoveryCustodian resource type
@@ -27,12 +28,18 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |[Apply hold](../api/security-ediscoverycustodian-applyhold.md)|None|Start the process of applying hold to eDiscovery custodians.|
 |[Remove hold](../api/security-ediscoverycustodian-removehold.md)|None|Start the process of removing hold from eDiscovery custodians.|
 |[Get last index operation](../api/security-ediscoverycustodian-list-lastindexoperation.md)|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) collection|Get a list of the [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
-|[List site sources](../api/security-ediscoverycustodian-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
-|[Create site source](../api/security-ediscoverycustodian-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new [siteSource](../resources/security-sitesource.md) object associated with an [eDiscovery custodian](../resources/security-ediscoverycustodian.md).|
-|[List unitifed group sources](../api/security-ediscoverycustodian-list-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) collection|Get the unifiedGroupSource resources from the unifiedGroupSources navigation property.|
-|[Create unifed group source](../api/security-ediscoverycustodian-post-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|Create a new [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object associated with an [eDiscovery custodian](../resources/security-ediscoverycustodian.md).|
-|[List user sources](../api/security-ediscoverycustodian-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Get the userSource resources from the userSources navigation property.|
-|[Create user source](../api/security-ediscoverycustodian-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Create a new [userSource](../resources/security-usersource.md) object associated with an [eDiscovery custodian](../resources/security-ediscoverycustodian.md).|
+| **Site sources** |  |  |
+|[List](../api/security-ediscoverycustodian-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get a list of the [siteSource](../resources/security-sitesource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+|[Create](../api/security-ediscoverycustodian-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new [siteSource](../resources/security-sitesource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+|[Delete](../api/security-ediscoverycustodian-delete-sitesources.md)|None|Delete a [siteSource](../resources/security-sitesource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+| **Unified group sources** |  |  |
+|[List](../api/security-ediscoverycustodian-list-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) collection|Get a list of the [unifiedGroupSource](../resources/security-unifiedgroupsource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+|[Create](../api/security-ediscoverycustodian-post-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|Create a new [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+|[Delete](../api/security-unifiedgroupsource-delete.md)|None|Delete a [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+| **User sources** |  |  |
+|[List](../api/security-ediscoverycustodian-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Get a list of the [userSource](../resources/security-usersource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) or [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
+|[Create](../api/security-ediscoverycustodian-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Create a new [userSource](../resources/security-usersource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+|[Delete](../api/security-ediscoverycustodian-delete-usersources.md)|None|Delete a [userSource](../resources/security-usersource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
 
 ## Properties
 |Property|Type|Description|

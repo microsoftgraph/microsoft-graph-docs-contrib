@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # androidDeviceOwnerEnrollmentProfile resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -57,6 +58,7 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 |wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|String that contains the wi-fi security type. Possible values are: `none`, `wpa`, `wep`.|
 |wifiHidden|Boolean|Boolean that indicates if hidden wifi networks are enabled|
 |isTeamsDeviceProfile|Boolean|Boolean indicating if this profile is an Android AOSP for Teams device profile.|
+|deviceNameTemplate|String|Indicates the device name template used for the enrolled Android devices. The maximum length allowed for this property is 63 characters. The template expression contains normal text and tokens, including the serial number of the device, user name, device type, upn prefix, or a randomly generated number. Supported Tokens for device name templates are: (for device naming template expression): {{SERIAL}}, {{SERIALLAST4DIGITS}}, {{ENROLLMENTDATETIME}}, {{USERNAME}}, {{DEVICETYPE}}, {{UPNPREFIX}}, {{rand:x}}. Supports: $select, $top, $skip. $Search, $orderBy and $filter are not supported.|
 
 ## Relationships
 None
@@ -99,6 +101,7 @@ Here is a JSON representation of the resource.
   "wifiPassword": "String",
   "wifiSecurityType": "String",
   "wifiHidden": true,
-  "isTeamsDeviceProfile": true
+  "isTeamsDeviceProfile": true,
+  "deviceNameTemplate": "String"
 }
 ```

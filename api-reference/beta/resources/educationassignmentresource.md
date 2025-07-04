@@ -6,6 +6,7 @@ author: "dipakboyed"
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Assignment resource
+ms.date: 06/10/2024
 ---
 
 # educationAssignmentResource resource type
@@ -14,15 +15,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a wrapper object that stores the resources associated with an assignment. The wrapper adds the **distributeForStudentWork** property and indicates that this resource is copied to the student submission.  If the object isn't copied, each student sees a link to the resource on the assignment. The student won't be able to update this resource. This is a handout from the teacher to the student with nothing to be turned in. If the resource is distributed, each student receives a copy of this resource in the resource list of their submission. Each student is able to modify their copy and submit it for grading.
+Represents a wrapper object that stores the resources associated with an assignment. The wrapper adds the **distributeForStudentWork** property and indicates that this resource is copied to the student submission. If the object isn't copied, each student sees a link to the resource on the assignment. The student won't be able to update this resource. This is a handout from the teacher to the student with nothing to be turned in. If the resource is distributed, each student receives a copy of this resource in the resource list of their submission. Each student is able to modify their copy and submit it for grading.
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Read properties and relationships of an **educationAssignmentResource** object.|
-|[Delete from assignment](../api/educationassignmentresource-delete.md) | None |Delete an **educationAssignmentResource** object. |
+|[Create](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Create an [assignment resource](../resources/educationassignmentresource.md).|
+|[Get](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Get the properties of an [education assignment resource](../resources/educationassignmentresource.md) associated with an [assignment](../resources/educationassignment.md).|
+|[Delete](../api/educationassignmentresource-delete.md) | None |Delete a specific [educationAssignmentResource](../resources/educationassignmentresource.md) attached to an assignment. |
 
 ## Properties
 | Property	   | Type	|Description|

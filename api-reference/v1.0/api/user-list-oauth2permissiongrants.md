@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-sign-in"
 author: "psignoret"
+ms.date: 07/11/2024
 ---
 
 # List a user's oauth2PermissionGrants
@@ -38,6 +39,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/oauth2PermissionGrants
 GET /users/{id | userPrincipalName}/oauth2PermissionGrants
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Optional query parameters
 

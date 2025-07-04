@@ -5,6 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # taskReport: summary
@@ -17,7 +18,7 @@ Get a [taskReportSummary](../resources/identitygovernance-taskreportsummary.md) 
 
 This API provides a summary of [task processing results](identitygovernance-taskreport-list-taskprocessingresults.md) for a specified time period. Because the volume of task processing results and task reports returned by the List API calls can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -5,6 +5,7 @@ author: "abhishek-microsoft-2021"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # driveItem: assignSensitivityLabel
@@ -116,6 +117,6 @@ The value of the `Location` header provides a URL for a service that will return
 You can use this information to [determine when the assign sensitivity label operation has finished](/graph/long-running-actions-overview).
 
 ### Remarks
-The response from the API only indicates that the assign sensitivity label operation was accepted or rejected. The operation might be rejected, for example, if the file type isn't supported, or the file is double encrypted.
+The response from the API only indicates that the assign sensitivity label operation was accepted or rejected. The operation might be rejected, for example, if the file type isn't supported, or the file is double encrypted. Audit events for both success and failure cases are logged. For more information, see [Audit log activities](/purview/audit-log-activities#sensitivity-label-activities).
 
 [item-resource]: ../resources/driveitem.md

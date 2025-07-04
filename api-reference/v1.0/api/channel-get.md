@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 doc_type: apiPageType
 ms.subservice: "teams"
 ms.localizationpriority: medium
+ms.date: 09/16/2024
 ---
 
 # Get channel

@@ -5,6 +5,7 @@ author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Create virtualEventRegistration
@@ -47,6 +48,7 @@ You can specify the following properties when you create a **virtualEventRegistr
 
 |Property|Type|Description|
 |:---|:---|:---|
+|externalRegistrationInformation|[virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md)| The external information for a virtual event registration. Optional. |
 |preferredTimezone|String|The registrant's time zone details. Required. |
 |preferredLanguage|String|The registrant's preferred language. Required. |
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
@@ -58,14 +60,15 @@ You can specify the following properties when you create a **virtualEventRegistr
 |firstName|String|The registrant's first name. Required. |
 |lastName|String|The registrant's last name. Required. |
 |email|String|The registrant's email address. Required. |
+|externalRegistrationInformation|[virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md)| The external information for a virtual event registration. Optional. |
 |preferredTimezone|String|The registrant's time zone details. Required. |
 |preferredLanguage|String|The registrant's preferred language. Required. |
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
 
 ## Response
 
-If successful, this action returns one of the following:
-* A `201 Created` response code and [virtualEventRegistration](../resources/virtualeventregistration.md) object for delegated permissions.
+If successful, this method returns one of the following results:
+* A `201 Created` response code and a [virtualEventRegistration](../resources/virtualeventregistration.md) object for delegated permissions.
 * A `204 No Content` response code for application permissions.
 
 ## Examples
@@ -89,6 +92,10 @@ POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-
 Content-Type: application/json
 
 {
+  "externalRegistrationInformation": {
+    "referrer": "Fabrikam",
+    "registrationId": "myExternalRegistrationId"
+  },
   "preferredTimezone":"Pacific Standard Time",
   "preferredLanguage":"en-us",
   "registrationQuestionAnswers": [
@@ -154,8 +161,6 @@ Content-Type: application/json
 
 ---
 
----
-
 #### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -176,6 +181,10 @@ Content-Type: application/json
   "firstName": "Emilee",
   "lastName": "Pham",
   "email": "EmileeMPham@contoso.com",
+  "externalRegistrationInformation": {
+    "referrer": "Fabrikam",
+    "registrationId": "myExternalRegistrationId"
+  },
   "status": "registered",
   "registrationDateTime": "2023-03-07T22:04:17",
   "cancelationDateTime": null,
@@ -235,6 +244,10 @@ Content-Type: application/json
   "firstName" : "Diane",
   "lastName" : "Demoss",
   "email" : "DianeDemoss@contoso.com",
+  "externalRegistrationInformation": {
+    "referrer": "Fabrikam",
+    "registrationId": "myExternalRegistrationId"
+  },
   "preferredTimezone":"Pacific Standard Time",
   "preferredLanguage":"en-us",
   "registrationQuestionAnswers": [
@@ -296,8 +309,6 @@ Content-Type: application/json
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-virtualeventregistration-application-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 

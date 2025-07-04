@@ -1,19 +1,19 @@
 ---
-title: "Complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs"
-description: "Learn how to complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs in Microsoft Graph."
+title: "Complete employee offboarding tasks in real time on their last day of work using Lifecycle Workflows APIs"
+description: "Complete employee offboarding tasks in real time on their last day of work using Lifecycle Workflows APIs in Microsoft Graph."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
 ms.topic: tutorial
-ms.date: 03/19/2024
+ms.date: 03/07/2025
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use Lifecycle Workflows APIs to automate employee offboarding tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
 
-# Complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs
+# Complete employee offboarding tasks in real time on their last day of work using Lifecycle Workflows APIs
 
-This tutorial provides step-by-step guidance for completing a real-time employee termination with Lifecycle Workflows APIs in Microsoft Graph. In this scenario, the employee termination isn't scheduled. See [Schedule employee offboarding tasks with Lifecycle Workflows APIs](/graph/tutorial-lifecycle-workflows-scheduled-leaver) for a scheduled scenario.
+This tutorial provides step-by-step guidance for completing a real time employee termination with Lifecycle Workflows APIs in Microsoft Graph. In this scenario, the employee termination isn't scheduled. See [Schedule employee offboarding tasks with Lifecycle Workflows APIs](/graph/tutorial-lifecycle-workflows-scheduled-leaver) for a scheduled scenario.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -25,10 +25,10 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-To complete this tutorial, you need the following resources and privileges:
+To complete this tutorial, you need these resources and privileges:
 
 + This feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with account that has at least the *Lifecycle Administrator* Microsoft Entra role.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with an account that has at least the *Lifecycle Administrator* Microsoft Entra role.
 + Grant yourself the *LifecycleWorkflows.ReadWrite.All* Microsoft Graph delegated permission.
 + Create a test user account that you use to represent an employee leaving your organization. This test user account is deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
 
@@ -36,7 +36,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 ### Request
 
-The following request creates an offboarding workflow with the following settings:
+The following request creates an offboarding workflow with these settings:
 
 + It can be run on-demand but not on schedule.
 + The workflow doesn't include execution conditions. Execution conditions, even when defined, are bypassed for workflows that are run on-demand.
@@ -160,7 +160,7 @@ Content-Type: application/json
 
 In the following request, the user that's the target of the workflow is identified by ID `8930f0c7-cdd7-4885-9260-3b4a8111de5c`.
 
-The request returns a `204 No Content` response code.
+The request returns a `204 No Content` response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -215,7 +215,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/work
 
 ## Check tasks and workflow status
 
-At any time, you can monitor the status of the workflows and the tasks at three levels.
+Monitor the status of the workflows and tasks at three levels:
 
 - Monitor tasks at the user level.
 - Monitor the aggregate high-level summary of the user-level results for a workflow, within a specified period.
@@ -373,8 +373,7 @@ Content-Type: application/json
 
 #### Request
 
-You can also retrieve the detailed log of all tasks that were executed for a specific user in the workflow.
-
+Retrieve the detailed log of all tasks executed for a specific user in the workflow.
 
 # [HTTP](#tab/http)
 <!-- {

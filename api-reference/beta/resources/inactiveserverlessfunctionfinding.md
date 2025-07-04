@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # inactiveServerlessFunctionFinding resource type
@@ -14,10 +15,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents the inactive serverless functions in AWS, Azure, and GCP.
 
 
-]Inherits from [identityFinding](../resources/identityfinding.md).
+Inherits from [identityFinding](../resources/identityfinding.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -67,4 +70,5 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
 

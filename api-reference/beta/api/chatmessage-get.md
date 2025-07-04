@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 10/29/2024
 ---
 
 # Get chatMessage in a channel or chat
@@ -72,7 +73,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [chatMessage](../resources/chatmessage.md) object in the response body.
 
 ## Examples
 
@@ -493,7 +494,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<p>I am looking&nbsp;<emoji id=\"1f440_eyes\" alt=\"👀\" title=\"Eyes\"></emoji><customemoji id=\"dGVzdHNjOzAtd3VzLWQyLTdiNWRkZGQ2ZGVjMDNkYzIwNTgxY2NkYTE1MmEyZTM4\" alt=\"testsc\" source=\"https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706638496169/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1jYW5hcnkuYXN5bmNndy50ZWFtcy5taWNyb3NvZnQuY29tL3YxL29iamVjdHMvMC13dXMtZDItN2I1ZGRkZDZkZWMwM2RjMjA1ODFjY2RhMTUyYTJlMzgvdmlld3MvaW1ndDJfYW5pbQ==/$value\"></customemoji></p>"
+        "content": "<p>I am looking&nbsp;<emoji id=\"1f440_eyes\" alt=\"👀\" title=\"Eyes\"></emoji><customemoji id=\"dGVzdHNjOzAtd3VzLWQyLTdiNWRkZGQ2ZGVjMDNkYzIwNTgxY2NkYTE1MmEyZTM4\" alt=\"microsoft_teams\" source=\"https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706638496169/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1jYW5hcnkuYXN5bmNndy50ZWFtcy5taWNyb3NvZnQuY29tL3YxL29iamVjdHMvMC13dXMtZDItN2I1ZGRkZDZkZWMwM2RjMjA1ODFjY2RhMTUyYTJlMzgvdmlld3MvaW1ndDJfYW5pbQ==/$value\"></customemoji></p>"
     },
     "attachments": [],
     "mentions": [],
@@ -588,7 +589,7 @@ GET https://graph.microsoft.com/beta/chats/19:80a7ff67c0ef43c19d88a7638be436b1@t
 
 #### Response
 
-The following example shows the response. The message body contains an @mention for everyone in a group chat that is represented by the `<at></at>` tag. The **conversationIdentityType** property is set to `chat` in the **conversation** identity of the **mentioned** object.
+The following example shows the response. The message body contains `<at></at>` tags for each @mention of everyone in a group chat. The **conversationIdentityType** property is set to `chat` in the **conversation** identity of the **mentioned** object.
 
 <!-- {
   "blockType": "response",
@@ -655,6 +656,361 @@ Content-type: application/json
         }
     ],
     "reactions": []
+}
+```
+
+### Example 6: Get a chat message with a forwarded message
+
+The following example shows a request that gets a chat message with a forwarded message as an attachment.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessage_6",
+  "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1727903166936"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@thread.v2/messages/1727903166936
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessage-6-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-chatmessage-6-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessage-6-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessage-6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessage-6-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-chatmessage-6-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessage-6-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-chatmessage-6-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response. The message body contains a forwarded message as an attachment. The **contentType** for the forwarded message is identified as `forwardedMessageReference`. The original message that was forwarded is also available in the attachment **content**.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ae2ed97baac8e4bffbb91299a38996790%40thread.v2')/messages/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
+    "id": "1727903166936",
+    "replyToId": null,
+    "etag": "1727903166936",
+    "messageType": "message",
+    "createdDateTime": "2024-10-02T21:06:06.936Z",
+    "lastModifiedDateTime": "2024-10-02T21:06:06.936Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "channelIdentity": null,
+    "onBehalfOf": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"1727881360458\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "1727881360458",
+            "contentType": "forwardedMessageReference",
+            "contentUrl": null,
+            "content": "{\"originalMessageId\":\"1727881360458\",\"originalMessageContent\":\"\\n<p>hello</p>\\n\",\"originalConversationId\":\"19:97641583cf154265a237da28ebbde27a@thread.v2\",\"originalSentDateTime\":\"2024-10-02T15:02:40.458+00:00\",\"originalMessageSender\":{\"application\":null,\"device\":null,\"user\":{\"userIdentityType\":\"aadUser\",\"tenantId\":\"2432b57b-0abd-43db-aa7b-16eadd115d34\",\"id\":\"28c10244-4bad-4fda-993c-f332faef94f0\",\"displayName\":null}}}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": null
+        }
+    ],
+    "mentions": [],
+    "reactions": []
+}
+```
+
+### Example 7: Get a chat message with a Microsoft Loop component
+
+The following example shows a request that gets a chat message that has a Loop component as two attachments. 
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessage_7",
+  "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1732043970539"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@thread.v2/messages/1732043970539
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessage-7-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-chatmessage-7-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessage-7-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessage-7-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessage-7-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-chatmessage-7-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessage-7-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-chatmessage-7-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response. The message body contains two attachments. The value of the **contentType** property of the Loop component is `application/vnd.microsoft.card.fluidEmbedCard`, and the value of the **contentType** property of the placeholder card is `application/vnd.microsoft.card.codesnippet`. 
+
+> **Note:** The **contentUrl** and **content** properties for a placeholder card don't have values.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ae2ed97baac8e4bffbb91299a38996790%40thread.v2')/messages/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
+    "id": "1732043970539",
+    "replyToId": null,
+    "etag": "1732043970539",
+    "messageType": "message",
+    "createdDateTime": "2024-11-19T19:19:30.539Z",
+    "lastModifiedDateTime": "2024-11-19T19:19:30.539Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "channelIdentity": null,
+    "onBehalfOf": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"placeholderCard\"></attachment><span style=\"display:none\"></span><attachment id=\"b21e256a-8581-45cf-ae05-8bb998360bcc\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "b21e256a-8581-45cf-ae05-8bb998360bcc",
+            "contentType": "application/vnd.microsoft.card.fluidEmbedCard",
+            "contentUrl": null,
+            "content": "{\r\n  \"componentUrl\": \"https://teamsgraph-my.sharepoint.com/:fl:/g/personal/sumanac_teamsgraph_onmicrosoft_com/EQnofOQM0MpOoDaRIvw-pS8Bfsj_WDFuanBBXnjDAD-w3g?nav=cz0lMkZwZXJzb25hbCUyRnN1bWFuYWNfdGVhbXNncmFwaF9vbm1pY3Jvc29mdF9jb20mZD1iIWVUcmxYX19jN2t5eW9GSFhJdG8yTDI4bmtnV2EtOXhEa244SVBOdGZFYnlxandPblkwdE9TcFVldkh6dWtBV1ImZj0wMUU2TzQ0WFlKNUI2T0lER1FaSkhLQU5VUkVMNkQ1SkpQJmM9JTJGJmZsdWlkPTEmYT1UZWFtcyZwPSU0MGZsdWlkeCUyRmxvb3AtcGFnZS1jb250YWluZXI%3D\",\r\n  \"sourceType\": \"Compose\"\r\n}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "FluidEmbedCard"
+        },
+        {
+            "id": "placeholderCard",
+            "contentType": "application/vnd.microsoft.card.codesnippet",
+            "contentUrl": null,
+            "content": "{}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "FLUID_PLACEHOLDER_CARD"
+        }
+    ],
+    "mentions": [],
+    "reactions": []
+}
+```
+
+### Example 8: Get a chat message with a code block
+
+The following example shows a request that gets a chat message with a code block.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessage_8",
+  "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1741124579808"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@thread.v2/messages/1741124579808
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessage-8-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-chatmessage-8-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessage-8-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessage-8-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessage-8-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-chatmessage-8-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessage-8-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-chatmessage-8-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response. The message body contains a code block represented inside the `<codeblock></codeblock>` and `<code></code>` tags. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#chatMessage/$entity",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
+  "id": "1741124579808",
+  "replyToId": null,
+  "etag": "1741124579808",
+  "messageType": "message",
+  "createdDateTime": "2025-03-04T21:42:59.808Z",
+  "lastModifiedDateTime": "2025-03-04T21:42:59.808Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "channelIdentity": null,
+  "onBehalfOf": null,
+  "policyViolation": null,
+  "eventDetail": null,
+  "from": {
+    "application": null,
+    "device": null,
+    "user": {
+      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+      "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+      "displayName": "Adele Vance",
+      "userIdentityType": "aadUser",
+      "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+    }
+  },
+  "body": {
+    "contentType": "html",
+    "content": "<p>&nbsp;</p>\n\n<codeblock class=\"Json\"><code>{<br> &nbsp;&nbsp; <span class=\"hljs-function\">\"body\"</span>:&nbsp;{<br> &nbsp;&nbsp; <span class=\"hljs-function\">\"contentType\"</span>:&nbsp;<span class=\"hljs-string\">\"html\"</span>,<br> &nbsp;&nbsp; <span class=\"hljs-function\">\"content\"</span>:&nbsp;<span class=\"hljs-string\">\"&lt;codeblock&gt;&lt;code&gt;Hello&nbsp;world&lt;/code&gt;&lt;/codeblock&gt;\"</span><br> &nbsp;&nbsp; }<br>}</code></codeblock>\n<p>&nbsp;</p>"
+  },
+  "attachments": [],
+  "mentions": [],
+  "reactions": []
 }
 ```
 

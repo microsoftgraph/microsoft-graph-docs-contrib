@@ -5,13 +5,14 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 08/23/2024
 ---
 
 # mailSearchFolder resource type
 
 Namespace: microsoft.graph
 
-A **mailSearchFolder** is a virtual folder in the user's mailbox that contains all the email items matching specified search criteria. **mailSearchFolder** inherits from [mailFolder](mailfolder.md). Search folders can be created in any folder in a user's Exchange Online mailbox. However, for a search folder to appear in Outlook, Outlook for the web, or Outlook Live, the folder must be created in the **WellKnownFolderName.SearchFolders** folder.
+A **mailSearchFolder** is a virtual folder in the user's mailbox that contains all the email items matching specified search criteria. **mailSearchFolder** inherits from [mailFolder](mailfolder.md). Search folders can be created in any folder in a user's Exchange Online mailbox. However, for a search folder to appear in Outlook, Outlook on the web, or Outlook Live, the folder must be created in the **WellKnownFolderName.SearchFolders** folder.
 
 ## Search folder lifecycle
 
@@ -32,6 +33,7 @@ When a search folder is deleted, your app should create a new search folder reso
 | [Get mail search folder](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | Get the specified search folder. |
 | [Update mail search folder](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | Update the specified search folder. |
 | [Delete mail search folder](../api/mailfolder-delete.md) | None | Delete the specified search folder. |
+| [Permanently delete](../api/mailsearchfolder-permanentdelete.md)|None|Permanently delete a mail search folder and remove its items from the user's mailbox.|
 | [List messages in folder](../api/mailfolder-list-messages.md) | [message](message.md) collection | List all the messages in the specified search folder. |
 
 ## Properties

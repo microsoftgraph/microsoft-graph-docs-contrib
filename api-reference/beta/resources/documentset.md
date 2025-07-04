@@ -5,6 +5,7 @@ author: "swapnil1993"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # documentSet resource type

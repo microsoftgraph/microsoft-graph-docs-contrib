@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # objectDefinitionMetadataEntry resource type
@@ -31,6 +32,9 @@ Metadata for the given object.
 |ConnectorDataStorageRequired |Indicates whether this object requires mapping storage. The service stores mapping for properties of types that will be mapped, like User and Group.  |
 |Extensions  |A JSON containing a list of attributes and values that extends the base object that this object inherits from.  |
 |BaseObjectName |If this object inherits another object, this is the name of the parent base object.  |
+
+## Relationships
+None.
 
 ## JSON representation
 

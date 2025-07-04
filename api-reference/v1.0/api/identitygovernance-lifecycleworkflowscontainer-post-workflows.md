@@ -5,6 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # Create workflow
@@ -13,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Create a new [workflow](../resources/identitygovernance-workflow.md) object. You can create up to 100 workflows in a tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

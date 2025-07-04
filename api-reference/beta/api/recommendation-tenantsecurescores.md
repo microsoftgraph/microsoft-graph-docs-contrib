@@ -5,6 +5,7 @@ author: "sacsai"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 07/08/2024
 ---
 
 # recommendation: tenantSecureScores

@@ -5,6 +5,7 @@ author: "mankadnandan"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/02/2024
 ---
 
 # callTranscript resource type
@@ -38,6 +39,9 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 | meetingOrganizer| [identitySet](identityset.md)| The identity information of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
 | metadataContent| Stream| The time-aligned metadata of the utterances in the transcript. Read-only.|
 | transcriptContentUrl| String| The URL that can be used to access the content of the transcript. Read-only.|
+
+## Relationships
+None.
 
 ## JSON representation
 

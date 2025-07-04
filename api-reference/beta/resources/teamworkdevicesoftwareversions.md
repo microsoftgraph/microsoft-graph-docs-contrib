@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkDeviceSoftwareVersions resource type
@@ -24,6 +25,9 @@ Represents the details about software versions for a Microsoft Teams-enabled [de
 |partnerAgentSoftwareVersion|String|The software version for the partner agent running on the device.|
 |teamsClientSoftwareVersion|String|The software version for the Teams client running on the device.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

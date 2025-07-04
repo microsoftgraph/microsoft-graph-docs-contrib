@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # userSource resource type
@@ -18,7 +19,17 @@ The container for a user's mailbox and OneDrive for Business site.
 Inherits from [dataSource](../resources/security-datasource.md).
 
 ## Methods
-None. 
+|Method|Return type|Description|
+|:---|:---|:---|
+| **eDiscovery custodian** |||
+|[List](../api/security-ediscoverycustodian-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Get a list of the [userSource](../resources/security-usersource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) or [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
+|[Create](../api/security-ediscoverycustodian-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Create a new [userSource](../resources/security-usersource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+|[Delete](../api/security-ediscoverycustodian-delete-usersources.md)|None|Delete a [userSource](../resources/security-usersource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+| **eDiscovery hold policy** |||
+|[List](../api/security-ediscoveryholdpolicy-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Get a list of the [userSource](../resources/security-usersource.md) objects associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
+|[Create](../api/security-ediscoveryholdpolicy-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Create a new [userSource](../resources/security-usersource.md) object.|
+|[Delete](../api/security-ediscoveryholdpolicy-delete-usersources.md)|None|Delete a [userSource](../resources/security-usersource.md) object associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

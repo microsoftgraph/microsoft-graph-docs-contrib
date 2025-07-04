@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "WiRawlinWork"
 ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 07/11/2024
 ---
 
 # plannerRoster: assignSensitivityLabel

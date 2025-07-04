@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 ms.subservice: extensions
 doc_type: "apiPageType"
+ms.date: 04/17/2024
 ---
 
 # Delete extensionProperty (directory extension)
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "extensionproperty_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/extensionproperty-delete-permissions.md)]
+
+[!INCLUDE [rbac-apps-applications-directoryextensions-apis](../includes/rbac-for-apis/rbac-apps-applications-directoryextensions-apis.md)]
 
 ## HTTP request
 

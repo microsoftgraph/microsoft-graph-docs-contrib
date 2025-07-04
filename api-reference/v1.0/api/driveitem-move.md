@@ -1,19 +1,19 @@
 ---
 author: spgraph-docs-team
 ms.date: 09/10/2017
-title: Move a file or folder
+title: Move a driveItem to a new folder
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
-description: "To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move."
+description: "To move a driveItem to a new parent item, your app requests to update the parentReference of the driveItem to move."
 doc_type: apiPageType
 ---
-# Move a DriveItem to a new folder
+# Move a driveItem to a new folder
 
 Namespace: microsoft.graph
 
-To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
+To move a driveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
 
-This is a special case of the [Update](driveitem-update.md) method.
+It is a special case of the [Update](driveitem-update.md) method.
 Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 
 Items cannot be moved between [Drives](../resources/drive.md) using this request.
@@ -44,20 +44,20 @@ PATCH /users/{user-id}/drive/items/{item-id}
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
-| if-match      | String. If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
+| if-match      | String. If this request header is included and the eTag (or cTag) provided doesn't match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
 ## Request body
 
 In the request body, supply the new value for the **parentReference** property.
-Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
-For best performance you shouldn't include existing values that haven't changed.
+Existing properties that aren't included in the request body maintain their previous values or be recalculated based on changes to other property values.
+For best performance, you shouldn't include existing values that don't change.
 
-**Note:** When moving items to the root of a drive your app cannot use the `"id:" "root"` syntax.
-Your app needs to provide the actual ID of the root folder for the parent reference.
+**Note:** When moving items to the root of a drive, your app can't use the `"id:" "root"` syntax.
+Your app needs to provide the actual ID of the root folder for the parent reference. For example, `/drives/{drive-id}/root`.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
+If successful, this method returns a `200 OK` response code and updated [driveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
 
@@ -137,7 +137,7 @@ Content-type: application/json
 
 ## Error responses
 
-See [Error Responses][error-response] for more info about
+See [Error responses][error-response] for more info about
 how errors are returned.
 
 [error-response]: /graph/errors

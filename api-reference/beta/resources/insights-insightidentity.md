@@ -5,6 +5,7 @@ author: "simonhult"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
 
 # insightIdentity resource type
@@ -14,6 +15,17 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Complex type containing properties of [sharedInsight](insights-shared.md) items.
+
+## Properties
+
+| Property              | Type          | Description  |
+| -------------         |-----------    | -------------|
+| displayName      	| String	      | The display name of the user who shared the item. |
+| id     		  | String        | The ID of the user who shared the item.     |
+| address      	      | String	    | The email address of the user who shared the item.  |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -31,13 +43,5 @@ The following JSON representation shows the resource type.
   "address": "string"
 }
 ```
-
-## Properties
-
-| Property              | Type          | Description  |
-| -------------         |-----------    | -------------|
-| displayName      	| String	      | The display name of the user who shared the item. |
-| id     		  | String        | The ID of the user who shared the item.     |
-| address      	      | String	    | The email address of the user who shared the item.  |
 
 

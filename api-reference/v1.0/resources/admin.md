@@ -5,6 +5,7 @@ author: "angelgolfer-ms"
 ms.localizationpriority: medium
 ms.subservice: "service-communications"
 doc_type: resourcePageType
+ms.date: 10/30/2024
 ---
 
 # admin resource type

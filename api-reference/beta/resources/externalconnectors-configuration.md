@@ -1,10 +1,11 @@
 ---
 title: "configuration resource type"
-description: "Specifies additional application IDs that are allowed to manage the externalConnection and to index content in a externalConnection."
+description: "Specifies other application IDs allowed to manage the externalConnection and to index content in an externalConnection."
 ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 07/23/2024
 ---
 
 # configuration resource type
@@ -13,13 +14,13 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies additional application IDs that are allowed to manage the externalConnection and to index content in a [externalConnection](../resources/externalconnectors-externalconnection.md).
+Specifies other application IDs allowed to manage the externalConnection and to index content in a [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## Properties
 
 | Property       | Type              | Description |
 |:---------------|:------------------|:------------|
-| authorizedAppIds | String collection | A collection of application IDs for registered Microsoft Entra apps that are allowed to manage the externalConnection and to index content in the externalConnection. |
+| authorizedAppIds | String collection | A collection of application IDs for registered Microsoft Entra apps allowed to manage the externalConnection and index content in the externalConnection. |
 
 > [!NOTE]
 > The `authorizedAppIds` property was previously named `authorizedApps`.

@@ -5,6 +5,7 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update printSettings
@@ -39,7 +40,8 @@ In the request body, supply the values for the relevant [printSettings](../resou
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Boolean|Specifies whether document conversion is enabled for the tenant. If document conversion is enabled, Universal Print service will automatically convert documents into a format compatible with the printer (for example, XPS to PDF) when needed.|
+|documentConversionEnabled|Boolean|Specifies whether document conversion is enabled for the tenant. If document conversion is enabled, Universal Print service automatically converts documents into a format compatible with the printer (for example, XPS to PDF) when needed.|
+|printerDiscoverySettings|[printerDiscoverySettings](../resources/printerdiscoverysettings.md)|Specifies settings that affect printer discovery when using Universal Print.|
 
 ## Response
 

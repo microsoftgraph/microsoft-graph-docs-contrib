@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.subservice: "business-scenarios"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List plannerPlanConfigurationLocalizations

@@ -5,6 +5,7 @@ author: "ebasseri"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # List riskyServicePrincipals
@@ -24,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "identityprotectionroot_list_riskyserviceprincipals" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityprotectionroot-list-riskyserviceprincipals-permissions.md)]
 
-[!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
+[!INCLUDE [rbac-identity-protection-apis-read](../includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
 ## HTTP request
 

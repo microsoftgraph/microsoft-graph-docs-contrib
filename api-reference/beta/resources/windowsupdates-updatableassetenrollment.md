@@ -3,8 +3,9 @@ title: "updatableAssetEnrollment resource type"
 description: "An abstract type that represents an enrollment into an area of Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # updatableAssetEnrollment resource type

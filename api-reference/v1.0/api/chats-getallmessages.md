@@ -1,17 +1,20 @@
 ---
 title: "chats: getAllMessages"
-description: "Get messages from all chats that a user is a participant in."
+description: "Get all messages from all chats in which a user is a participant."
 author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 05/22/2024
 ---
 
 # chats: getAllMessages
 
 Namespace: microsoft.graph
 
-Get all [messages](../resources/chatmessage.md) from all [chats](../resources/chat.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+Get all [messages](../resources/chatmessage.md) from all [chats](../resources/chat.md) in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+
+To learn more about how to use the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
@@ -110,10 +113,6 @@ GET https://graph.microsoft.com/v1.0/users/0b4f1cf6-54c8-4820-bbb7-2a1f4257ade5/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/chat-getallmessages-1-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/chat-getallmessages-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

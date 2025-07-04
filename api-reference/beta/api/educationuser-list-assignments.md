@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "Sureshpadimi88"
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 08/28/2024
 ---
 
 # List assignments of a user

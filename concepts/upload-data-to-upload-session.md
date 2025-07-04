@@ -4,6 +4,7 @@ description: "Use the Universal Print API in Microsoft Graph to create a print j
 author: "nilakhan"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Upload documents using the Microsoft Graph Universal Print API
@@ -36,7 +37,7 @@ The request body is a binary blob containing the bytes of the document that are 
 
 ```http
 PUT https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
-Content-Range: bytes=0-72796/4533322
+Content-Range: bytes 0-72796/4533322
 Content-Length: 72797
 
 <bytes 0-72796 of the file>
@@ -47,7 +48,7 @@ Here, 0 and 72796 are the start and end indexes of the file segment and 4533322 
 
 ### Response
 
-When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.
+When the request is complete, the server responds with `202 Accepted` if there are more byte ranges that need to be uploaded.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -80,14 +81,14 @@ Content-Type: application/json
 
 ### Remarks
 
-* On failures, when the client sends a fragment the server has already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. 
+* On failures, when the client sends a fragment the server has already received, the server responds with `HTTP 416 Requested Range Not Satisfiable`. 
   You can [request upload status](#get-the-upload-session) to get a more detailed list of missing ranges.
-* Including the `Authorization` header when making the `PUT` call might result in an `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when creating the upload session. It should be not be included when uploading data to the upload session.
+* Including the `Authorization` header when making the `PUT` call might result in an `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when creating the upload session. It shouldn't be included when uploading data to the upload session.
 * We recommend that you log the `X-MSEdge-Ref` and `request-id` response headers, if present, to assist in support team investigations.
 
 ## Complete a file upload
 
-When the last byte range of a file is received, the server will respond with an `HTTP 201 Created`. The response body will also include the property set for the associated **printDocument**.
+When the last byte range of a file is received, the server responds with an `HTTP 201 Created`. The response body also includes the property set for the associated **printDocument**.
 
 ### Request
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "printjob.readwrite" } -->

@@ -5,6 +5,7 @@ author: "hareldamti"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 05/31/2024
 ---
 
 # cloudLogonRequestEvidence resource type

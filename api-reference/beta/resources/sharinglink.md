@@ -17,27 +17,6 @@ The **sharingLink** resource groups link-related data items into a single struct
 
 If a [**permission**](permission.md) resource has a non-null **sharingLink** facet, the permission represents a sharing link (as opposed to permissions granted to a person or group).
 
-## JSON representation
-
-The following JSON representation shows the resource type.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ "application", "scope" ],
-  "@odata.type": "microsoft.graph.sharingLink"
-}-->
-
-```json
-{
-  "application": { "@odata.type": "microsoft.graph.identity" },
-  "preventsDownload": false,
-  "type": "view | edit | embed",
-  "scope": "anonymous | organization",
-  "webHtml": "string",
-  "webUrl": "url"
-}
-```
-
 ## Properties
 
 | Property       | Type          | Description
@@ -71,6 +50,30 @@ The following table defines the possible values for the **scope** property.
 | `organization`   | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
 | `existingAccess` | Only people who have already been granted access to the item through other means can access the item using this link. Only available in OneDrive for Business and SharePoint.
 | `users`          | The link grants access only to a specific list of people. Only available in OneDrive for Business and SharePoint.
+
+## Relationships
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ "application", "scope" ],
+  "@odata.type": "microsoft.graph.sharingLink"
+}-->
+
+```json
+{
+  "application": { "@odata.type": "microsoft.graph.identity" },
+  "preventsDownload": false,
+  "type": "view | edit | embed",
+  "scope": "anonymous | organization",
+  "webHtml": "string",
+  "webUrl": "url"
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

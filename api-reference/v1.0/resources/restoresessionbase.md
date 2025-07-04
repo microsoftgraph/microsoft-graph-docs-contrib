@@ -7,6 +7,8 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Restore session
+ms.date: 08/27/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # restoreSessionBase resource type
@@ -16,6 +18,9 @@ Namespace: microsoft.graph
 Represents a restore session for a [protection unit](protectionunitbase.md) that's protected by a [protection policy](protectionpolicybase.md). Restore session APIs are used by global admins, SharePoint Online admins, and Exchange Online admins to perform restore-related tasks on artifacts that are protected as part of protection policy.
 
 Restoring to both a new location and the same URL in a single restore session is not supported.
+
+> [!NOTE]
+> Restore sessions that are older than one year and in a terminal state are removed.
 
 ## Methods
 
@@ -37,7 +42,7 @@ Restoring to both a new location and the same URL in a single restore session is
 |error|publicError|Contains error details if the restore session fails or completes with an error.|
 |lastModifiedBy|identitySet|Identity of the person who last modified the restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of the restore session.|
-|status|[restoreSessionStatus](../resources/restoresessionbase.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of the restored artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|status|[restoreSessionStatus](../resources/restoresessionbase.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of the restored artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
 ### restoreSessionStatus values
 

@@ -5,6 +5,7 @@ author: "aditijha4"
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: apiPageType
+ms.date: 07/17/2024
 ---
 
 # List communities

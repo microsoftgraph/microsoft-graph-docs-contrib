@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 04/06/2024
 ---
 
 # dimension resource type
@@ -29,6 +30,9 @@ Represents a dimension in Dynamics 365 Business Central.
 |displayName         |string                 |Specifies the dimension's name. This name appears where the dimension is used.|
 |lastModifiedDateTime|datetime               |The last datetime the dimension was modified.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 

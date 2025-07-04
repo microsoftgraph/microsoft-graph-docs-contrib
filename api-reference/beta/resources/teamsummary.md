@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akhilkohlimicrosoft"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamSummary resource type
@@ -21,6 +22,9 @@ Contains information about a team in Microsoft Teams, including number of owners
 |guestsCount|Int32|Count of guests in a team.|
 |membersCount|Int32|Count of members in a team.|
 |ownersCount|Int32|Count of owners in a team.|
+
+## Relationships
+None.
 
 ## JSON representation
 

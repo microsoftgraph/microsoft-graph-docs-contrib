@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "njerigrevious"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # searchQueryString resource type (deprecated)

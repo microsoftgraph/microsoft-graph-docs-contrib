@@ -14,7 +14,7 @@ var requestBody = new ChatMessage
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>",
+		Content = "<at id=\"0\">TestTag</at>&nbsp;Testing Tags",
 	},
 	Mentions = new List<ChatMessageMention>
 	{

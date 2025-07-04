@@ -5,6 +5,7 @@ author: "zadinsmo"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # formsSettings resource type

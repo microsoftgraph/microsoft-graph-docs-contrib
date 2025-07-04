@@ -5,6 +5,7 @@ author: "chmahaj"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # workingTimeSchedule: endWorkingTime
@@ -91,10 +92,6 @@ POST https://graph.microsoft.com/beta/users/ccdf8279-8a3f-4c10-af1a-4a7f46b1489f
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/workingtimeschedulethisendworkingtime-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/workingtimeschedulethisendworkingtime-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

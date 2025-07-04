@@ -5,6 +5,7 @@ author: "hanknguyen"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 06/25/2024
 ---
 
 # Update audioRoutingGroup

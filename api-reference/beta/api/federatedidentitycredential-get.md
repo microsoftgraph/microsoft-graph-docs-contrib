@@ -5,6 +5,7 @@ author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 12/03/2024
 ---
 
 # Get federatedIdentityCredential
@@ -22,6 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "federatedidentitycredential_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-get-permissions.md)]
 
+[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ## HTTP request
 
@@ -126,7 +128,8 @@ Content-Type: application/json
     "description": "This is my test  federated identity credential",
     "audiences": [
         "api://AzureADTokenExchange"
-    ]
+    ],
+    "claimsMatchingExpression": null
   }
 }
 ```

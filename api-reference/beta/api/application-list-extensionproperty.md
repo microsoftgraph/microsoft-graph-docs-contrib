@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 ms.subservice: extensions
 doc_type: "apiPageType"
+ms.date: 04/17/2024
 ---
 
 # List extensionProperties (directory extensions)
@@ -24,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "application_list_extensionproperty" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-list-extensionproperty-permissions.md)]
 
-
+[!INCLUDE [rbac-apps-applications-directoryextensions-apis](../includes/rbac-for-apis/rbac-apps-applications-directoryextensions-apis.md)]
 
 ## HTTP request
 

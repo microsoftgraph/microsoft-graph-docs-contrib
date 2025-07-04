@@ -7,6 +7,7 @@ author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # shipmentMethod resource type

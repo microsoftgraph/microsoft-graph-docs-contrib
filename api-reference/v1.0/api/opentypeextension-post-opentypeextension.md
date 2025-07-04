@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "dkershaw10"
 ms.subservice: extensions
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # Create open extension
@@ -35,7 +36,7 @@ Depending on the resource you're creating, the extension and the permission type
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite | Not supported | User.ReadWrite.All |
 <!--
 | [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 

@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ContainersRequestBuilderGetRequestConfiguration();
 $queryParameters = ContainersRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "containerTypeId eq {containerTypeId}";
+$queryParameters->filter = "containerTypeId eq e2756c4d-fa33-4452-9c36-2325686e1082";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

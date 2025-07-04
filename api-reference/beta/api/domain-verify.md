@@ -5,6 +5,7 @@ author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 11/01/2024
 ---
 
 # domain: verify
@@ -13,10 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Validate the ownership of a domain.
+Validate the ownership of a [domain](../resources/domain.md). This operation only applies to an unverified domain. For an unverified domain, the **isVerified** property is `false`.
 
-> **Important:**
-> Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
+> [!NOTE]
+> Verifying a domain through Microsoft Graph doesn't configure the domain for use with Microsoft 365 services like Exchange. Fully configuring the domain to work with Microsoft 365 products might require extra steps. For more information, see [Microsoft 365 admin setup](/microsoft-365/admin/setup/add-domain).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -28,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_verify" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-verify-permissions.md)]
 
-The work or school account needs to belong to at least the *Domain Name Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+[!INCLUDE [rbac-domain-apis-write](../includes/rbac-for-apis/rbac-domain-apis-write.md)]
 
 ## HTTP request
 

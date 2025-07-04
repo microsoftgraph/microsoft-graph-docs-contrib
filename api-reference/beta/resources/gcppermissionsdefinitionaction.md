@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 04/18/2024
 ---
 
 # gcpPermissionsDefinitionAction resource type
@@ -13,6 +14,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 Represents permissions for GCP. This is an abstract type.
 
@@ -41,4 +44,5 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.gcpPermissionsDefinitionAction"
 }
 ```
+
 

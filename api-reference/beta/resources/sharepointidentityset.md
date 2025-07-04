@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "Represents a keyed collection of sharePointIdentity and identity resources."
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 # sharePointIdentitySet resource type
 
@@ -26,6 +27,9 @@ For usage information, see [driveItem][].
 | user        | [identity][]           | The user associated with this action. Optional. |
 | siteUser    | [sharePointIdentity][] | The SharePoint user associated with this action. Optional. |
 | siteGroup   | [sharePointIdentity][] | The SharePoint group associated with this action. Optional. |
+
+## Relationships
+None.
 
 ## JSON representation
 

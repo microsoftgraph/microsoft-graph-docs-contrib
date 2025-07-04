@@ -6,6 +6,7 @@ author: "yyuank"
 ms.reviewer: "iamut"
 ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # userSecurityState resource type
@@ -34,6 +35,9 @@ Contains stateful information about the user account.
 |riskScore|String|Provider-generated/calculated risk score of the user account. Recommended value range of 0-1, which equates to a percentage.|
 |userAccountType|userAccountSecurityType|User account type (group membership), per Windows definition. Possible values are: `unknown`, `standard`, `power`, `administrator`.|
 |userPrincipalName|String|User sign-in name - internet format: (user account name)@(user account DNS domain name).|
+
+## Relationships
+None.
 
 ## JSON representation
 

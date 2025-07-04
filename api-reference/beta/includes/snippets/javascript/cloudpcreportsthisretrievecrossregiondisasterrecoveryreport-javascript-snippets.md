@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const stream = {
+  reportName: 'crossRegionDisasterRecoveryReport',
   filter: 'DisasterRecoveryStatus eq \'Active outage\'',
   select: [
     'Id',
@@ -20,11 +21,12 @@ const stream = {
     'DeviceId',
     'CloudPCDeviceDisplayName',
     'UserPrincipalName',
-    'IsCrossRegionEnabled',
-    'CrossRegionHealthStatus',
+    'EnabledDRType',
+    'DRHealthStatus',
     'LicenseType',
     'DisasterRecoveryStatus',
     'CurrentRestorePointDateTime',
+    'BackupCloudPcStatus',
     'ActivationExpirationDateTime'
   ],
   skip: 0,

@@ -9,7 +9,9 @@ mgc-beta security cases ediscovery-cases searches microsoft-graph-security-expor
   "displayName": "Export 5",\
   "exportCriteria": "partiallyIndexed",\
   "exportLocation": "responsiveLocations",\
-  "additionalOptions": "cloudAttachments"\
+  "additionalOptions": "cloudAttachments",\
+  "cloudAttachmentVersion": "all",\
+  "doucmentVersion": "recent100"\
 }\
 '
 

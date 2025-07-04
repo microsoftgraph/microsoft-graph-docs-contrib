@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "psignoret"
+ms.date: 03/06/2024
 ---
 
 # permissionGrantConditionSet resource type

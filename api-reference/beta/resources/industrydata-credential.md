@@ -5,6 +5,7 @@ author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
 
 # credential resource type

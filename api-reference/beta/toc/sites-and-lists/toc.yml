@@ -32,6 +32,10 @@ items:
     href: ../../api/site-list-subsites.md
   - name: Search for sites
     href: ../../api/site-search.md
+  - name: Archive site
+    href: ../../api/site-archive.md
+  - name: Unarchive site
+    href: ../../api/site-unarchive.md
   - name: Follow site
     href: ../../api/site-follow.md
   - name: Unfollow site
@@ -148,6 +152,8 @@ items:
   items:
   - name: List item
     href: ../../resources/listitem.md
+  - name: List
+    href: ../../api/listitem-list.md
   - name: Create
     href: ../../api/listitem-create.md
   - name: Get
@@ -173,9 +179,9 @@ items:
   - name: List permissions
     href: ../../api/listitem-list-permissions.md
   - name: Create permission
-    href: ../../api/listitem-list-permissions.md
-  - name: Get permission
     href: ../../api/listitem-post-permissions.md
+  - name: Get permission
+    href: ../../api/listitem-get-permissions.md
   - name: Update permission
     href: ../../api/listitem-update-permissions.md
   - name: Delete permission
@@ -206,6 +212,10 @@ items:
     href: ../../resources/recyclebinitem.md
   - name: List
     href: ../../api/recyclebin-list-items.md
+  - name: Delete
+    href: ../../api/recyclebinitem-delete.md
+  - name: Restore
+    href: ../../api/recyclebinitem-restore.md
 - name: Rich long running operation
   items:
   - name: Rich long running operation
@@ -256,6 +266,36 @@ items:
       href: ../../api/basesitepage-get.md
     - name: Delete
       href: ../../api/basesitepage-delete.md
+  - name: News link page
+    items:
+    - name: News link page
+      href: ../../resources/newslinkpage.md
+    - name: List
+      href: ../../api/newslinkpage-list.md
+    - name: Create
+      href: ../../api/newslinkpage-create.md
+    - name: Get
+      href: ../../api/newslinkpage-get.md
+    - name: Update
+      href: ../../api/newslinkpage-update.md
+    - name: Delete
+      href: ../../api/basesitepage-delete.md
+    - name: Publish
+      href: ../../api/newslinkpage-publish.md
+  - name: Page template
+    items:
+    - name: Page template
+      href: ../../resources/pagetemplate.md
+    - name: List
+      href: ../../api/pagetemplate-list.md
+    - name: Create
+      href: ../../api/pagetemplate-create.md
+    - name: Get
+      href: ../../api/pagetemplate-get.md
+    - name: Update
+      href: ../../api/pagetemplate-update.md
+    - name: Delete
+      href: ../../api/pagetemplate-delete.md
   - name: Site page
     items:
     - name: Site page
@@ -274,6 +314,10 @@ items:
       href: ../../api/sitepage-publish.md
     - name: Get by position
       href: ../../api/sitepage-getwebpartsbyposition.md
+    - name: Save as template
+      href: ../../api/sitepage-saveastemplate.md
+    - name: Create from template
+      href: ../../api/sitepage-createfromtemplate.md
     - name: Horizontal section
       items:
       - name: Horizontal section
@@ -334,20 +378,6 @@ items:
       href: ../../resources/textwebpart.md
     - name: Standard web part
       href: ../../resources/standardwebpart.md
-  - name: Page template
-    items:
-    - name: Page template
-      href: ../../resources/pagetemplate.md
-    - name: List
-      href: ../../api/pagetemplate-list.md
-    - name: Create
-      href: ../../api/pagetemplate-create.md
-    - name: Get
-      href: ../../api/pagetemplate-get.md
-    - name: Update
-      href: ../../api/pagetemplate-update.md
-    - name: Delete
-      href: ../../api/pagetemplate-delete.md
   - name: Complex types
     items:
     - name: Save as template

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Category
+ms.date: 08/08/2024
 ---
 
 # educationCategory resource type

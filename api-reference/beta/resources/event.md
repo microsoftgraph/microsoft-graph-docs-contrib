@@ -5,6 +5,7 @@ author: "iamgirishck"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 08/21/2024
 ---
 
 # event resource type

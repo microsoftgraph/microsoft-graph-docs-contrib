@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "The system facet indicates that the object is managed by the system for its own operation."
 ms.subservice: sharepoint
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # system facet

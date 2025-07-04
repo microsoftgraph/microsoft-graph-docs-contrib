@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.subservice: "business-scenarios"
 doc_type: conceptualPageType
+ms.date: 03/12/2024
 ---
 
 # Use the business scenarios API in Microsoft Graph (preview)

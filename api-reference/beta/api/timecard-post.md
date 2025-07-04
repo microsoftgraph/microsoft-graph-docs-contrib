@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create timeCard
@@ -24,9 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timecard_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timecard-post-permissions.md)]
 
-> [!IMPORTANT]
-> When you use the Schedule.ReadWrite.All application permission, you must include the `MS-APP-ACTS-AS` header in the request.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +39,7 @@ POST /teams/{teamId}/schedule/timeCards
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required.|
-| MS-APP-ACTS-AS | The ID of the user on behalf of whom the app is acting. Required when you use the application permission scope. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. The `MS-APP-ACTS-AS` header is deprecated and no longer required with application tokens.|
 
 ## Request body
 
@@ -67,10 +65,10 @@ POST https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50
 Content-type: application/json
 
 {
-  "onBehalfOfUserId":"a3601044-a1b5-438e-b742-f78d01d68a67",
+  "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
   "clockInEvent":{
      "dateTime":"2019-03-18T00:00:00.000Z",
-     "atApprovedLocation":true,
+     "isAtApprovedLocation":true,
      "notes": {
         "content": "Started late due to traffic in CA 237",
         "contentType": "text"
@@ -89,7 +87,7 @@ Content-type: application/json
         },
         "start":{
            "dateTime":"2019-03-18T02:00:00.000Z",
-           "atApprovedLocation":true,
+           "isAtApprovedLocation":true,
            "notes": {
                 "content": "Reduced break to make up for lost time",
                 "contentType": "text"
@@ -172,6 +170,7 @@ Content-type: application/json
     "clockInEvent": {
       "dateTime": "2019-03-18T00:00:00.000Z",
       "atApprovedLocation": true,
+      "isAtApprovedLocation": true,
       "notes": {
         "content": "Started late due to traffic in CA 237",
         "contentType": "text"
@@ -188,6 +187,7 @@ Content-type: application/json
         "start": {
           "dateTime": "2019-03-18T02:00:00.000Z",
           "atApprovedLocation": true,
+          "isAtApprovedLocation": true,
           "notes": {
             "content": "Reduced break to make up for lost time",
             "contentType": "text"
@@ -200,6 +200,7 @@ Content-type: application/json
   "clockInEvent": {
     "dateTime": "2019-03-18T00:00:00.000Z",
     "atApprovedLocation": true,
+    "isAtApprovedLocation": true,
     "notes": {
       "content": "Started late due to traffic in CA 237",
       "contentType": "text"
@@ -220,6 +221,7 @@ Content-type: application/json
       "start": {
         "dateTime": "2019-03-18T02:00:00.000Z",
         "atApprovedLocation": true,
+        "isAtApprovedLocation": true,
         "notes": {
           "content": "Reduced break to make up for lost time",
           "contentType": "text"

@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 
@@ -122,6 +123,10 @@ Content-Type: application/json
   "firstName": "Emilee",
   "lastName": "Pham",
   "email": "EmileeMPham@contoso.com",
+  "externalRegistrationInformation": {
+    "referrer": "Fabrikam",
+    "registrationId": "myExternalRegistrationId"
+  },
   "status": "registered",
   "registrationDateTime": "2023-03-07T22:04:17",
   "cancelationDateTime": null,

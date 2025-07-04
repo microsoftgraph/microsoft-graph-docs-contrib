@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "suawat"
+ms.date: 10/04/2024
 ---
 
 # directorySizeQuota resource type
@@ -19,6 +20,9 @@ Represents the used and total directory quota for an [organization](organization
 |:---------------|:--------|:----------|
 |total|Int32| Total amount of the directory quota.|
 |used|Int32| Used amount of the directory quota. |
+
+## Relationships
+None.
 
 ## JSON representation
 

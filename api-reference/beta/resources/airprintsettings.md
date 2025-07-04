@@ -1,10 +1,11 @@
 ---
-title: airPrintSettings resource type
-description: Represents tenant-wide settings to configure the behavior of printers when print jobs are submitted to Universal Print from macOS, which requires AirPrint compatibility.
-author: JuliusShanMS
+title: "airPrintSettings resource type"
+description: "Represents tenant-wide settings to configure the behavior of printers when print jobs are submitted to Universal Print from macOS, which requires AirPrint compatibility."
+author: "JuliusShanMS"
 ms.localizationpriority: medium
-ms.subservice: universal-print
+ms.subservice: "universal-print"
 doc_type: resourcePageType
+ms.date: "03/06/2024"
 ---
 
 # airPrintSettings resource type
@@ -15,6 +16,9 @@ Namespace: microsoft.graph
 
 Represents tenant-wide settings to configure the behavior of printers when print jobs are submitted to Universal Print from macOS, which requires AirPrint compatibility.
 
+> [!NOTE]
+> **AirPrint**, **Mac**, and **macOS** are trademarks of Apple, Inc., registered in the US and other countries/regions.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -22,11 +26,11 @@ Represents tenant-wide settings to configure the behavior of printers when print
 
 ### incompatiblePrinterSettings values 
 
-|Member|Value|Description|
-|:---|:---|:---|
-|show|0|Show printers that aren't compatible with AirPrint.|
-|hide|1|Hide printers that aren't compatible with AirPrint.|
-|unknownFutureValue|2|Evolvable enumeration sentinel value. Don't use.|
+|Member|Description|
+|:---|:---|
+|show|Show printers that aren't compatible with AirPrint.|
+|hide|Hide printers that aren't compatible with AirPrint.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
@@ -40,10 +44,6 @@ The following JSON shows a representation of the resource.
 -->
 ``` json
 {
-  "incompatiblePrinters": "string"
+  "incompatiblePrinters": "String"
 }
 ```
-
-### Credit notice
-
-**AirPrint**, **Mac**, and **macOS** are trademarks of Apple, Inc., registered in the US and other countries/regions.

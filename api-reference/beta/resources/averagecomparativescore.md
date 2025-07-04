@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: security
 author: "preetikr"
+ms.date: 03/21/2024
 ---
 
 #  averageComparativeScore resource type
@@ -21,6 +22,9 @@ Contains various scores based on different scopes - such as average by industry 
 | deviceScore	| Double	| Average score within a specified basis. |
 | dataScore		| Double	| Average score within a specified basis. |
 | identityScore	| Double	| Average score within a specified basis. |
+
+## Relationships
+None.
 
 ## JSON representation
 

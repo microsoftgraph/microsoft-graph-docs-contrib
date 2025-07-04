@@ -5,6 +5,8 @@ author: "simonhult"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: "apiPageType"
+ms.date: 04/12/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Update insightsSettings

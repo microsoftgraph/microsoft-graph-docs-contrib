@@ -21,10 +21,10 @@ headers.Add("User-Agent", "Dsreg/10.0")
 headers.Add("ocp-client-name", "My Friendly Client")
 headers.Add("ocp-client-version", "1.2")
 
-requestParameters := &graphinformationprotection.InformationProtectionBitlockerRecoveryKeyItemRequestBuilderGetQueryParameters{
+requestParameters := &graphinformationprotection.BitlockerRecoveryKeysItemRequestBuilderGetQueryParameters{
 	Select: [] string {"key"},
 }
-configuration := &graphinformationprotection.InformationProtectionBitlockerRecoveryKeyItemRequestBuilderGetRequestConfiguration{
+configuration := &graphinformationprotection.BitlockerRecoveryKeysItemRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

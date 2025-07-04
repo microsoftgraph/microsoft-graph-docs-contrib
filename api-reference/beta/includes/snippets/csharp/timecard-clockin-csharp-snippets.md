@@ -12,16 +12,11 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new ClockInPostRequestBody
 {
+	IsAtApprovedLocation = true,
 	Notes = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "clock in notes",
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"atAprovedLocation" , true
-		},
+		Content = "clocking in",
 	},
 };
 

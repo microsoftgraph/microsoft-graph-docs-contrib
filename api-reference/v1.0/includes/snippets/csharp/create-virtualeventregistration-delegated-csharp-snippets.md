@@ -11,6 +11,11 @@ using Microsoft.Graph.Models;
 
 var requestBody = new VirtualEventRegistration
 {
+	ExternalRegistrationInformation = new VirtualEventExternalRegistrationInformation
+	{
+		Referrer = "Fabrikam",
+		RegistrationId = "myExternalRegistrationId",
+	},
 	PreferredTimezone = "Pacific Standard Time",
 	PreferredLanguage = "en-us",
 	RegistrationQuestionAnswers = new List<VirtualEventRegistrationQuestionAnswer>

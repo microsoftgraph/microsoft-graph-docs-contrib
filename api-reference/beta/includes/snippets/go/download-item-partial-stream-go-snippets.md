@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Range", "bytes=0-1023")
 
-configuration := &graphdrives.DriveItemItemItemContentStreamRequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.ItemItemsItemContentStreamRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 

@@ -5,6 +5,7 @@ description: "Represents a keyed collection of identity resources."
 ms.localizationpriority: medium
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # identitySet resource type

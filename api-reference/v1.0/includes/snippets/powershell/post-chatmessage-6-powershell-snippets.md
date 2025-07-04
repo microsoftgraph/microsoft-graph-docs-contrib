@@ -9,14 +9,7 @@ Import-Module Microsoft.Graph.Teams
 $params = @{
 	body = @{
 		contentType = "html"
-		content = "<div><div>
-<div><span><img height="297" src="../hostedContents/1/$value" width="297" style="vertical-align:bottom; width:297px; height:297px"></span>
-
-</div>
-
-
-</div>
-</div>"
+		content = "<img height="297" src="../hostedContents/1/$value" width="297">"
 	}
 	hostedContents = @(
 		@{

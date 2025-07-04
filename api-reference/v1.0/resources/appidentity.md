@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhanyahk"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # appIdentity resource type

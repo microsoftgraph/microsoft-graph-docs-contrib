@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphteams.TeamItemChannelItemRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.ItemChannelsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"summary"},
 }
-configuration := &graphteams.TeamItemChannelItemRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.ItemChannelsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

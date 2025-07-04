@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 description: "Represents a list in a site."
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # List resource type

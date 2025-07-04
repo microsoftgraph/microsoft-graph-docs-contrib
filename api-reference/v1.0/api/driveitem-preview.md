@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # driveItem: preview

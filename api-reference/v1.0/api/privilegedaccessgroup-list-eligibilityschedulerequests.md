@@ -5,6 +5,7 @@ author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List eligibilityScheduleRequests
@@ -131,7 +132,7 @@ Content-Type: application/json
       },
       "action": "adminAssign",
       "isValidationOnly": false,
-      "justification": "Assign eligibility to user for PIM for groups.",
+      "justification": "Assign eligibility to user for PIM for Groups.",
       "scheduleInfo": {
           "startDateTime": "2022-04-12T09:05:41.8532931Z",
           "recurrence": null,

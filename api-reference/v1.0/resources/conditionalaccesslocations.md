@@ -1,18 +1,19 @@
 ---
 title: "conditionalAccessLocations resource type"
-description: "Represents locations included in and excluded from the policy scope."
+description: "Represents locations included in and excluded from the scope of a conditional access policy."
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # conditionalAccessLocations resource type
 
 Namespace: microsoft.graph
 
-Represents locations included in and excluded from the policy scope.
+Represents locations included in and excluded from the scope of a [conditional access policy](../resources/conditionalaccesspolicy.md). Locations can be [countries and regions](../resources/countrynamedlocation.md) or [IP addresses](../resources/ipnamedlocation.md).
 
 ## Properties
 

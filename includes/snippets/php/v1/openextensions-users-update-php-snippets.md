@@ -14,7 +14,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new Extension();
 $additionalData = [
 	'theme' => 'light',
-	'color' => 'yellow',
+	'color' => 'purple',
 	'lang' => 'Swahili',
 ];
 $requestBody->setAdditionalData($additionalData);

@@ -5,6 +5,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 
-mgc solutions backup-restore drive-protection-units list
+mgc solutions backup-restore protection-units graph-drive-protection-unit get
 
 ```

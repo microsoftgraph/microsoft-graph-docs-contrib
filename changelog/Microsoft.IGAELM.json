@@ -255,6 +255,58 @@
     {
       "ChangeList": [
         {
+          "Id": "deed80eb-30d7-4e7a-a344-a50d10cd5563",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageNotificationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageNotificationSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageNotificationSettings?view=graph-rest-beta) resource.",
+          "Target": "accessPackageNotificationSettings"
+        },
+        {
+          "Id": "deed80eb-30d7-4e7a-a344-a50d10cd5563",
+          "ApiChange": "Property",
+          "ChangedApiName": "notificationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageNotificationSettings** property to the [accessPackageAssignmentPolicy](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentPolicy"
+        }
+      ],
+      "Id": "deed80eb-30d7-4e7a-a344-a50d10cd5563",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-05T00:04:35.9382979Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8fdae298-652a-4263-bde6-0bd083098d14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageNotificationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageNotificationSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageNotificationSettings?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageNotificationSettings"
+        },
+        {
+          "Id": "8fdae298-652a-4263-bde6-0bd083098d14",
+          "ApiChange": "Property",
+          "ChangedApiName": "notificationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageNotificationSettings** property to the [accessPackageAssignmentPolicy](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentPolicy"
+        }
+      ],
+      "Id": "8fdae298-652a-4263-bde6-0bd083098d14",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-05-13T00:04:35.9382979Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9b5a17bc-343d-4381-a7d3-6cd7224df1f1",
           "ApiChange": "Method",
           "ChangedApiName": "additionalAccess",
@@ -977,6 +1029,48 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-03-17T02:51:10.3743047Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2bf51009-434d-46f5-9fc3-df0e7c39282c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRequestorJustificationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRequestorJustificationRequired** property to the [accessPackageAssignmentApprovalSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentApprovalSettings?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentApprovalSettings"
+        },
+        {
+          "Id": "2bf51009-434d-46f5-9fc3-df0e7c39282c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRequestorJustificationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRequestorJustificationRequired** property to the [accessPackageAssignmentRequestRequirements](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestRequirements?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequestRequirements"
+        },
+        {
+          "Id": "2bf51009-434d-46f5-9fc3-df0e7c39282c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRequestorJustificationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **refresh** method to the [accessPackageResource](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestRequirements?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageResource"
+        },
+        {
+          "Id": "2bf51009-434d-46f5-9fc3-df0e7c39282c",
+          "ApiChange": "Property",
+          "ChangedApiName": "justification",
+          "ChangeType": "Addition",
+          "Description": "Added the **justification** property to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        }
+      ],
+      "Id": "2bf51009-434d-46f5-9fc3-df0e7c39282c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-05-13T23:10:11.3582933Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },

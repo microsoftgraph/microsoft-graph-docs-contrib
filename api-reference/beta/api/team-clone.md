@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 08/16/2024
 ---
 
 # team: clone

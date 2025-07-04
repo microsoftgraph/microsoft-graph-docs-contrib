@@ -1,16 +1,17 @@
 ---
-title: "Microsoft Graph connectors SDK common models"
+title: "Microsoft 365 Copilot connectors SDK common models"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Learn about the common models used in the Microsoft Graph connectors SDK."
+description: "Learn about the common models used in the Microsoft 365 Copilot connectors SDK."
+ms.date: 11/07/2024
 ---
 
-# Microsoft Graph connectors SDK common models
+# Copilot connectors SDK common models
 
-This article describes the common models used in the Microsoft Graph connectors SDK.
+This article describes the common models used in the Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) SDK.
 
 ## CustomConfiguration
 

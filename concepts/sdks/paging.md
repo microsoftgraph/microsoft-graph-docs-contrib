@@ -3,6 +3,7 @@ title: "Page through a collection using the Microsoft Graph SDKs"
 description: "Provides instructions for creating Microsoft Graph API requests using the Microsoft Graph SDKs."
 ms.localizationpriority: medium
 author: DarrelMiller
+ms.date: 11/07/2024
 ---
 
 <!-- markdownlint-disable MD051 -->
@@ -107,3 +108,7 @@ As an alternative to using the **PageIterator** class, you can manually check th
 
 ---
 <!-- markdownlint-enable MD024 -->
+
+## Error handling
+
+[!INCLUDE [paging-error-handling](../includes/paging-error-handling.md)]

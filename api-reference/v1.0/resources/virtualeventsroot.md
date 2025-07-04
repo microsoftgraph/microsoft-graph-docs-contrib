@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 doc_type: resourcePageType
+ms.date: 09/11/2024
 ---
 
 # virtualEventsRoot resource type
@@ -15,7 +16,9 @@ The container for [virtual event](virtualevent.md) APIs.
 
 ## Methods
 
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+| [List webinars](../api/virtualeventsroot-list-webinars.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in a tenant. |
 
 ## Properties
 

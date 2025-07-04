@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "include-unknown-enum-members")
 
-configuration := &grapheducation.EducationClasseItemAssignmentItemDeactivateRequestBuilderPostRequestConfiguration{
+configuration := &grapheducation.ClassesItemAssignmentsItemDeactivateRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 

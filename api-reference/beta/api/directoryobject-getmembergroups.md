@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/02/2024
 ---
 
 # directoryObject: getMemberGroups

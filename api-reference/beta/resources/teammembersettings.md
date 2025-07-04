@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akjo"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamMemberSettings resource type
@@ -24,6 +25,9 @@ Settings to configure whether members can perform certain actions, for example, 
 |allowAddRemoveApps|Boolean|If set to true, members can add and remove apps.|
 |allowCreateUpdateRemoveTabs|Boolean|If set to true, members can add, update, and remove tabs. |
 |allowCreateUpdateRemoveConnectors|Boolean|If set to true, members can add, update, and remove connectors.|
+
+## Relationships
+None.
 
 ## JSON representation
 

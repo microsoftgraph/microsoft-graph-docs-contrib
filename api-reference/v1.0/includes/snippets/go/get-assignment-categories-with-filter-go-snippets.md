@@ -18,10 +18,10 @@ import (
 
 requestFilter := "id eq '74b03ab5-5832-4f99-89f5-d52da13d93f7'"
 
-requestParameters := &grapheducation.EducationClasseItemAssignmentItemCategoriesRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ClassesItemAssignmentsItemCategoriesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &grapheducation.EducationClasseItemAssignmentItemCategoriesRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ClassesItemAssignmentsItemCategoriesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

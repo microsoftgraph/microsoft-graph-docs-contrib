@@ -5,6 +5,7 @@ author: "anandjo"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 07/30/2024
 ---
 
 # Update chat

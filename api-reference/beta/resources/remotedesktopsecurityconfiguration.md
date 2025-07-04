@@ -5,6 +5,7 @@ author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # remoteDesktopSecurityConfiguration resource type

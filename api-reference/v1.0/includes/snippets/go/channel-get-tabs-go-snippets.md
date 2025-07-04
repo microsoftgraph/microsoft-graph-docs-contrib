@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphteams.TeamItemChannelItemTabItemRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.ItemChannelsItemTabsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsApp"},
 }
-configuration := &graphteams.TeamItemChannelItemTabItemRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.ItemChannelsItemTabsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

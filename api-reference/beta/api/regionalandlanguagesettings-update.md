@@ -5,6 +5,7 @@ author: "jasonbro"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # Update regionalAndLanguageSettings
@@ -32,12 +33,16 @@ PUT /me/settings/regionalAndLanguageSettings
 PUT /users/{user-id | userPrincipalName}/settings/regionalAndLanguageSettings
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 To update a subset of the properties of a user's regional and language settings:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/settings/regionalAndLanguageSettings
 PATCH /users/{user-id | userPrincipalName}/settings/regionalAndLanguageSettings
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Request headers
 | Header       | Value|

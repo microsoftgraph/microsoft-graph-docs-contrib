@@ -5,13 +5,14 @@ ms.localizationpriority: high
 author: "keylimesoda"
 ms.subservice: change-notifications
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # subscription resource type
 
 Namespace: microsoft.graph
 
-Represents a subscription that allows a client app to receive change notifications about changes to data in Microsoft Graph.
+Represents a subscription that allows a client app to receive [change notifications](../resources/changenotificationcollection.md) about changes to data in Microsoft Graph.
 
 For more information about subscriptions and change notifications, including resources that support change notifications, see [Set up notifications for changes in resource data](change-notifications-api-overview.md).
 
@@ -20,7 +21,7 @@ For more information about subscriptions and change notifications, including res
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
 | [List](../api/subscription-list.md) | [subscription](subscription.md) | Lists active subscriptions. |
-| [Create](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive change notifications when Microsoft Graph data changes. |
+| [Create](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive change notifications when Microsoft Graph data changes. When a susbcription is created and valdiated sucessfully, Microsoft Graph sends the app at least one [changeNotificationCollection](../resources/changenotificationcollection.md) object every time there's a change in the subscribed resource. |
 | [Get](../api/subscription-get.md) | [subscription](subscription.md) | Reads properties and relationships of subscription object. |
 | [Update](../api/subscription-update.md) | [subscription](subscription.md) | Updates a subscription expiration time for renewal and/or updates the notificationUrl for delivery. |
 | [Delete](../api/subscription-delete.md) | None | Deletes a subscription object. |
@@ -36,7 +37,7 @@ For more information about subscriptions and change notifications, including res
 | creatorId | String | Optional. Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the ID of the service principal corresponding to the app. Read-only. |
 | encryptionCertificate | String | Optional. A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when **includeResourceData** is `true`. |
 | encryptionCertificateId | String | Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data. |
-| expirationDateTime | DateTimeOffset | Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see [Subscription lifetime](#subscription-lifetime). |
+| expirationDateTime | DateTimeOffset | Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. Any value under 45 minutes after the time of the request is automatically set to 45 minutes after the request time. For the maximum supported subscription length of time, see [Subscription lifetime](#subscription-lifetime). |
 | id | String | Optional. Unique identifier for the subscription. Read-only. |
 | includeResourceData | Boolean | Optional. When set to `true`, change notifications [include resource data](/graph/change-notifications-with-resource-data) (such as content of a chat message). |
 | latestSupportedTlsVersion | String | Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by **notificationUrl**, supports. The possible values are: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set [timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. </br></br>For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to `v1_2`. |
@@ -49,6 +50,8 @@ For more information about subscriptions and change notifications, including res
 ### Subscription lifetime
 
 Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time; otherwise, they need to create a new subscription. Apps can also unsubscribe at any time to stop getting change notifications.
+
+Additionally, any request with expirationDateTime set to under 45 minutes after the time of the request is automatically set to 45 minutes after the request time. 
 
 The following table shows the maximum expiration times for subscriptions per resource in Microsoft Graph.
 

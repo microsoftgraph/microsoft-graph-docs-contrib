@@ -5,6 +5,7 @@ description: "Check the publishing status of a content type in a content type hu
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.date: 04/05/2024
 ---
 
 # contentType: isPublished

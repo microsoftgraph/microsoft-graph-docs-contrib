@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 toc.title: AWS actions
+ms.date: 07/25/2024
 ---
 
 # awsAuthorizationSystemTypeAction resource type
@@ -14,6 +15,8 @@ toc.title: AWS actions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 Represents an action in an AWS authorization system.
 
@@ -61,4 +64,5 @@ The following JSON representation shows the resource type.
   "actionType": "String"
 }
 ```
+
 

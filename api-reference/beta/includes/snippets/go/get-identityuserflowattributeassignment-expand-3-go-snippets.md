@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentity.IdentityB2cUserFlowItemUserAttributeAssignmentItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentity.B2cUserFlowsItemUserAttributeAssignmentsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"userAttribute"},
 }
-configuration := &graphidentity.IdentityB2cUserFlowItemUserAttributeAssignmentItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.B2cUserFlowsItemUserAttributeAssignmentsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -6,6 +6,7 @@ author: "yyuank"
 ms.reviewer: "iamut"
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # List manager
@@ -35,6 +36,8 @@ Get the manager:
 GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Get the management chain:
 <!-- { "blockType": "ignored" } -->

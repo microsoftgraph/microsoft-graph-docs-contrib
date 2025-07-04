@@ -5,6 +5,7 @@ author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # smsLogRow resource type
@@ -15,8 +16,8 @@ Namespace: microsoft.graph.callRecords
 
 Represents a row of data in the log of a sent or received SMS. Each row maps to one SMS.
 
-Per-country privacy requirements include the obfuscation of the external (not owned by the customer) phone numbers for some countries based on the location of the organization.
-For those countries, the three or four last digits of the external phone number are replaced with asterisks (for example, +123 456789***).
+Per-country privacy requirements include the obfuscation of the external (not owned by the customer) phone numbers for some countries/regions based on the location of the organization.
+For those countries/regions, the three or four last digits of the external phone number are replaced with asterisks (for example, +123 456789***).
 
 ## Methods
 

@@ -17,17 +17,14 @@ import (
 )
 
 requestBody := graphteams.NewStartBreakPostRequestBody()
+isAtApprovedLocation := true
+requestBody.SetIsAtApprovedLocation(&isAtApprovedLocation) 
 notes := graphmodels.NewItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 
 notes.SetContentType(&contentType) 
-content := "start break smaple notes"
+content := "starting break"
 notes.SetContent(&content) 
 requestBody.SetNotes(notes)
-additionalData := map[string]interface{}{
-	atAprovedLocation := true
-requestBody.SetAtAprovedLocation(&atAprovedLocation) 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 startBreak, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimeCards().ByTimeCardId("timeCard-id").StartBreak().Post(context.Background(), requestBody, nil)

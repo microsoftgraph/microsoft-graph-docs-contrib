@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 07/22/2024
 ---
 
 # resourceAccess resource type
@@ -21,6 +22,9 @@ Object used to specify an OAuth 2.0 permission scope or an app role that an appl
 |:---------------|:--------|:----------|
 |id|Guid|The unique identifier of an [app role](approle.md) or [delegated permission](permissionScope.md) exposed by the resource application. For delegated permissions, this should match the **id** property of one of the [delegated permissions](permissionscope.md) in the **oauth2PermissionScopes** collection of the resource application's [service principal](serviceprincipal.md). For app roles (application permissions), this should match the **id** property of an [app role](approle.md) in the **appRoles** collection of the resource application's [service principal](serviceprincipal.md).|
 |type|String|Specifies whether the **id** property references a [delegated permission](permissionscope.md) or an [app role](approle.md) (application permission). The possible values are: `Scope` (for delegated permissions) or `Role` (for app roles).|
+
+## Relationships
+None.
 
 ## JSON representation
 

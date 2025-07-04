@@ -2,9 +2,10 @@
 title: "Assign claimsMappingPolicy"
 description: "Assign a claimsMappingPolicy to a service principal."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "vimrang"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 07/26/2024
 ---
 
 # Assign claimsMappingPolicy

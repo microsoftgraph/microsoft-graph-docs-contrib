@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: conceptualPageType
 toc.title: To-do tasks API overview (deprecated)
+ms.date: 08/08/2024
 ---
 
 # Use the To Do API built on base tasks in Microsoft Graph (deprecated)

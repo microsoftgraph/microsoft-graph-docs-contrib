@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 09/23/2024
 ---
 
 # Update profilePhoto
@@ -46,7 +47,7 @@ The following tables show the least privileged permission or permissions require
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 | Delegated (work or school account)        | TeamSettings.ReadWrite.All | Not supported. |
 | Delegated (personal Microsoft account)    | Not supported.     | Not supported. |
-| Application                               | Not supported. | Not supported. |
+| Application                               | TeamSettings.ReadWrite.All | Not supported. |
 
 ### To update the profile photo of a user
 
@@ -59,7 +60,7 @@ The following tables show the least privileged permission or permissions require
 
 > [!NOTE]
 >
-> - Users with admin roles such as User admins can update the photo of any user in the organization by using delegated permissions. This operation is also supported with application permissions. Updating the photo of any user in the organization requires *ProfilePhoto.ReadWrite.All* or *User.ReadWrite.All* permission. Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
+> - Users with admin roles such as User admins, Global admins, or People admins can update the photo of any user in the organization by using delegated permissions. This operation is also supported with application permissions. Updating the photo of any user in the organization requires *ProfilePhoto.ReadWrite.All* or *User.ReadWrite.All* permission. Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
 > - Updating a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## HTTP request

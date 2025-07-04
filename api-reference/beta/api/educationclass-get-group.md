@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mmast-msft"
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 07/30/2024
 ---
 
 # Get group

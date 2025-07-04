@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamDescriptionUpdatedEventMessageDetail resource type
@@ -25,6 +26,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |teamDescription|String|The updated description for the team.|
 |teamId|String|Unique identifier of the team.|
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

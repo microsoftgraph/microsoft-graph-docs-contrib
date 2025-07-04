@@ -5,6 +5,7 @@ author: "devjha-ms"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # associatedTeamInfo resource type
@@ -35,6 +36,9 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 |id|String|The unique identifier for the [team](team.md). Read-only.|
 |tenantId|String|The ID of the Microsoft Entra tenant. Inherited from [teamInfo](../resources/teaminfo.md).|
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

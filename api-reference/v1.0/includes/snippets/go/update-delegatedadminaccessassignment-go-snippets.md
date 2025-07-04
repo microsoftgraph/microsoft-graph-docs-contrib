@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("If-Match", "W/\"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==\"")
 
-configuration := &graphtenantrelationships.TenantRelationshipsDelegatedAdminRelationshipItemAccessAssignmentItemRequestBuilderPatchRequestConfiguration{
+configuration := &graphtenantrelationships.DelegatedAdminRelationshipsItemAccessAssignmentsItemRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewDelegatedAdminAccessAssignment()

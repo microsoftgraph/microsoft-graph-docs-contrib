@@ -5,6 +5,7 @@ author: "simonhult"
 ms.localizationpriority: high
 ms.subservice: "insights"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # People and workplace intelligence in Microsoft Graph
@@ -22,7 +23,7 @@ You can use the _people API_ and _insights API_ in Microsoft Graph to build smar
 
 The people API returns people ordered by relevance to a user, based on that user's contacts, organization directory, and recent communications on email. This is particularly useful for people-picking scenarios.
 
-The insights API uses advanced analytics and machine learning to provide the most relevant files users need throughout their work day. The API powers familiar Microsoft 365 experiences, including Office Delve, SharePoint Home, the Discover view in OneDrive for Business, and Outlook on the web.
+The insights API uses advanced analytics and machine learning to provide the most relevant files users need throughout their work day. The API powers familiar Microsoft 365 experiences, including SharePoint Home, the Discover view in OneDrive for Business, and Outlook on the web.
 
 ![People and insights API return relevant people and documents for a user](images/social-intel-concept-overview-data-update2020-1.png)
 
@@ -69,6 +70,14 @@ Profile cards let users in an organization see information about one another, su
 
 Pronouns serve as substitutes for a person's name in sentences, with gender-neutral versions available in multiple languages, for example in English, "she", "her, "he", "him" and the gender-neutral "they", "them". Accurate pronoun usage shows inclusivity and respect, avoiding assumptions based on names or initial observations of the person. In a hybrid, multicultural work or school environment, the simple act of using the right pronouns can help build trust and improve communication among one another. Administrators can use the [pronounsSettings](/graph/api/resources/pronounssettings) API to configure pronouns settings in your organization.
 
+## Why configure profile sources in your organization?
+
+[Profile source](/graph/api/resources/profilesource) configuration allows users in an organization to identify the origin of profile data shown across Microsoft 365 experiences. Administrators can customize the appearance of the **displayName** and **webUrl** properties in a profile source using a set of alternative translations for the languages supported in their organization.
+
+## Why configure profile source precedence in your organization?
+
+Profile source precedence allows administrators to control how profile data is displayed across Microsoft 365 experiences. When multiple sources provide overlapping data, administrators can define the authoritative source of profile data by configuring the order of data source priority using the [profilePropertySetting](/graph/api/resources/profilepropertysetting) API. For more information, see [Manage profile source precedence settings for an organization using the Microsoft Graph API (preview)](/graph/profilepriority-configure-profilepropertysetting).
+
 ## Why integrate with document-based insights?
 
 ### Use intelligence to improve collaboration
@@ -78,16 +87,6 @@ During a typical work day, users often interact with large amounts of informatio
 You can use the insights API, which includes the [trending](/graph/api/resources/insights-trending), [shared](/graph/api/resources/insights-shared), and [used](/graph/api/resources/insights-used) APIs, to surface files from across Microsoft 365 based on your users' current context and needs, making users more productive and improving collaboration in your organization. Organizations can [customize privacy settings](insights-customize-item-insights-privacy.md) for these document-based insights, and control the availability of these insights in specific Microsoft 365 experiences.
 
 It is easy to render the results from the insights API in your app. Every result comes with a set of common visualization properties, like a preview image URL or preview text.
-
-### Make relevant content visible
-
-In Microsoft 365, Delve uses the _trending_ insight to help users discover the documents that are most interesting to them right now. See figure 1.
-
-Programmatically, you can use the [trending](/graph/api/resources/insights-trending) entity in the insights API to provide your app customers a similar experience. Use the **trending** entity to connect to documents that are trending around and relevant to the user. [Listing trending documents](/graph/api/insights-list-trending) returns those files stored on OneDrive or SharePoint team sites, sorted by relevance with the most important ones first. 
-
-**Figure 1. Delve in Microsoft 365 showing popular documents for a user**
-
-![Screenshot of Delve in Microsoft 365 showing popular documents for a user](images/delve-concept.png)
 
 ### Allow users to collaborate and get back to work
 
@@ -113,7 +112,9 @@ Looking for the API reference for these services?
 - [Use the Microsoft Graph API to integrate people and workplace intelligence in an app (beta)](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true)
 - The People API [person](/graph/api/resources/person) resource
 - [Profile (preview)](/graph/api/resources/profile) resource
+- [Profile source (preview)](/graph/api/resources/profilesource?view=graph-rest-beta&preserve-view=true) resource
 - [Profile card property](/graph/api/resources/profilecardproperty) resource
+- [Profile property setting (preview)](/graph/api/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true) resource
 - [Pronouns settings](/graph/api/resources/pronounssettings) resource
 - [Insights API](/graph/api/resources/officegraphinsights)
 - [Analytics API (preview)](/graph/api/resources/useranalytics)
@@ -124,6 +125,9 @@ Looking for the API reference for these services?
 - Find more about the [people API](people-insights-overview.md).
 - See how to [customize the profile card](add-properties-profilecard.md).
 - See how to [manage pronouns settings for an organization](pronouns-configure-pronouns-availability.md).
+- See how to [manage profile source settings for an organization (preview)](profilesource-configure-settings.md).
+- See how to [manage profile source precedence settings for an organization (preview)](/graph/profilepriority-configure-profilepropertysetting).
 - Find out more about [item insights](item-insights-overview.md), [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
 - Find more about the [analytics API](/graph/api/resources/social-overview#help-users-balance-work-and-life).
 - Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).
+  

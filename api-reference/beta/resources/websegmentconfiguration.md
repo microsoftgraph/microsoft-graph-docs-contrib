@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 12/19/2024
 ---
 
 # webSegmentConfiguration resource type
@@ -15,33 +16,29 @@ Namespace: microsoft.graph
 
 A [webSegmentConfiguration](websegmentconfiguration.md) object represents application segments for an on-premises wildcard application published through Microsoft Entra application proxy.
 
-Inherits from [segmentsConfiguration](segmentconfiguration.md).
+Inherits from [segmentConfiguration](segmentconfiguration.md).
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|applicationSegments|[webApplicationSegment](webapplicationsegment.md) collection|A collection of application segments for an on-premises wildcard application published through Microsoft Entra application proxy. It includes the internal URL, external URL, alternate URLs, and cors configurations. |
+None.
 
 ## Relationships
 
-None.
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|applicationSegments|[webApplicationSegment](webapplicationsegment.md) collection|A collection of application segments for an on-premises wildcard application published through Microsoft Entra application proxy. It includes the internal URL, external URL, alternate URLs, and cors configurations. |
 
 ## JSON representation
 
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.onPremisesApplicationSegment"
+  "@odata.type": "microsoft.graph.webSegmentConfiguration",
+  "baseType": "microsoft.graph.segmentConfiguration"
 }
 -->
 ``` json
 {
- "@odata.type": "#microsoft.graph.webSegmentConfiguration",
- "applicationSegments": [
-    {
-      "@odata.type": "microsoft.graph.webApplicationSegment"
-    }
-  ],
+ "@odata.type": "#microsoft.graph.webSegmentConfiguration"
 }
 ```

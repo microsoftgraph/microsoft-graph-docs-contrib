@@ -3,6 +3,7 @@ title: "Use app-only authentication with Postman for Microsoft Graph"
 description: "Learn how to use app-only (application) authentication with Postman for Microsoft Graph to run requests without a signed-in user."
 author: "jasonjoh"
 ms.localizationpriority: high
+ms.date: 11/07/2024
 ---
 
 # Use app-only authentication with Postman for Microsoft Graph
@@ -61,4 +62,4 @@ See [403 Forbidden "Access to OData is disabled."](resolve-auth-errors.md#403-fo
 
 - [Use Postman with the Microsoft Graph API](use-postman.md)
 - [Use delegated authentication with Postman for Microsoft Graph](use-postman-with-delegated-authentication.md)
-- [Use Postman with the Microsoft Graph connectors API](connecting-external-content-connectors-api-postman.md)
+

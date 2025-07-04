@@ -5,6 +5,7 @@ author: "angelgolfer-ms"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # security resource type

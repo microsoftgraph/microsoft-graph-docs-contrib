@@ -28,6 +28,7 @@ $params = @{
 callOptions = @{
 	"@odata.type" = "#microsoft.graph.outgoingCallOptions"
 	isContentSharingNotificationEnabled = $true
+	isDeltaRosterEnabled = $true
 }
 mediaConfig = @{
 	"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"

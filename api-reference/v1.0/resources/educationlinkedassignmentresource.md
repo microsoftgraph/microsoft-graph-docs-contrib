@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "v-rmanda"
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # educationLinkedAssignmentResource resource type

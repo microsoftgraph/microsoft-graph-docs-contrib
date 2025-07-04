@@ -5,6 +5,7 @@ author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/05/2024
 ---
 
 # incident resource type
@@ -49,7 +50,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |tenantId|String|The Microsoft Entra tenant in which the alert was created.|
 
 ### incidentStatus values 
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `awaitingAction`.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `awaitingAction`.
 
 | Member              | Description                                                                                                                                  |
 | :-------------------| :------------------------------------------------------------------------------------------------------------------------------------------- |

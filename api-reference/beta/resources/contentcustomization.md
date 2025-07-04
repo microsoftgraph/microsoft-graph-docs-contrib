@@ -1,10 +1,11 @@
 ---
 title: "contentCustomization resource type"
 description: "Contains details of the various content options for a tenant."
-author: "quievey"
+author: nanguil
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # contentCustomization resource type

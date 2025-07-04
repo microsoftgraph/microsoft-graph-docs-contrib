@@ -5,6 +5,7 @@ author: "sharad-sharma-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete educationAssignmentResource

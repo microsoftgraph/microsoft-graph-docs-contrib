@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.PrivilegedAccessGroupEligibilityScheduleRequestsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"principalId","action","groupId"},
 }
-configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.PrivilegedAccessGroupEligibilityScheduleRequestsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

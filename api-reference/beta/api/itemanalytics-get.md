@@ -5,6 +5,7 @@ title: Get analytics
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.date: 04/05/2024
 ---
 # Get analytics
 

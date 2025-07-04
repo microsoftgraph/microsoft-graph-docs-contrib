@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Email
+ms.date: 07/19/2024
 ---
 
 # emailAuthenticationMethod resource type
@@ -33,6 +34,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The identifier of the email address registered to this user. The ID is always `3ddfcfc8-9383-446f-83cc-3ab9be4be18f`.|
+|createdDateTime|DateTimeOffset| The date and time the authentication method was registered to the user. Read-only. Optional. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |emailAddress|String|The email address registered to this user.|
 
 ## Relationships
@@ -51,6 +53,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethod",
+  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "emailAddress": "String"
 }

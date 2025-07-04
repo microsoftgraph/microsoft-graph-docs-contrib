@@ -5,6 +5,7 @@ author: "ms-amakumar"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # workplace resource type

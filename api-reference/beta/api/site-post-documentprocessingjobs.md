@@ -5,6 +5,7 @@ author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 08/06/2024
 ---
 
 # Create documentProcessingJob

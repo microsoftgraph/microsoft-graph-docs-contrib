@@ -18,10 +18,10 @@ import (
 
 requestTop := int32(2)
 
-requestParameters := &graphdevicemanagement.DeviceManagementVirtualEndpointCloudPCsRequestBuilderGetQueryParameters{
+requestParameters := &graphdevicemanagement.VirtualEndpointCloudPCsRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointCloudPCsRequestBuilderGetRequestConfiguration{
+configuration := &graphdevicemanagement.VirtualEndpointCloudPCsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -5,6 +5,7 @@ author: "sourishdeb"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # billingReconciliation resource type

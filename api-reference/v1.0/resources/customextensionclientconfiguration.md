@@ -5,6 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 04/24/2024
 ---
 
 # customExtensionClientConfiguration resource type

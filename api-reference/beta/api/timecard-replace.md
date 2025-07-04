@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Replace timeCard
@@ -22,9 +23,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timecard_replace" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timecard-replace-permissions.md)]
 
-> [!IMPORTANT]
-> When you use the Schedule.ReadWrite.All application permission, you must include the `MS-APP-ACTS-AS` header in the request.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +37,7 @@ PUT /teams/{teamId}/schedule/timeCards/{timeCardID}
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
-| MS-APP-ACTS-AS | The ID of the user on behalf of whom the app is acting. Required when you use the application permission scope. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. The `MS-APP-ACTS-AS` header is deprecated and no longer required with application tokens.|
 
 ## Request body
 
@@ -73,7 +71,7 @@ Content-type: application/json
     "notes": null,
     "clockInEvent": {
         "dateTime": "2021-05-21T21:58:41.327Z",
-        "atApprovedLocation": null,
+        "isAtApprovedLocation": null,
         "notes": {
             "contentType": "text",
             "content": "update sample notes"
@@ -81,7 +79,7 @@ Content-type: application/json
     },
     "clockOutEvent": {
         "dateTime": "2021-05-21T22:01:46.205Z",
-        "atApprovedLocation": null,
+        "isAtApprovedLocation": null,
         "notes": {
             "contentType": "text",
             "content": "update sample notes"
@@ -93,7 +91,7 @@ Content-type: application/json
             "notes": null,
             "start": {
                 "dateTime": "2021-05-21T21:59:59.328Z",
-                "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "update sample notes"
@@ -101,7 +99,7 @@ Content-type: application/json
             },
             "end": {
                 "dateTime": "2021-05-21T22:01:10.205Z",
-                "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "update sample notes"

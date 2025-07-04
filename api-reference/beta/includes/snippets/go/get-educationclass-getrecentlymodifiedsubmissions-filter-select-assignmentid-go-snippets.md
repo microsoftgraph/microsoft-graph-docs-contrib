@@ -18,11 +18,11 @@ import (
 
 requestFilter := "assignmentId eq 'b20d6737-f88e-4892-8174-73aa26d18784'"
 
-requestParameters := &grapheducation.EducationClasseItemGetRecentlyModifiedSubmissionsWithRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ClassesItemGetRecentlyModifiedSubmissionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"LastModifiedDateTime","status"},
 }
-configuration := &grapheducation.EducationClasseItemGetRecentlyModifiedSubmissionsWithRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ClassesItemGetRecentlyModifiedSubmissionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

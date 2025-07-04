@@ -1,19 +1,19 @@
 ---
 title: "Review access to security groups using access reviews APIs"
-description: "Learn how to use the access reviews API to review access to a security group in your Microsoft Entra tenant."
+description: "Learn how to use the access reviews APIs to review access to a security group in your Microsoft Entra tenant."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
-ms.date: 03/25/2024
+ms.date: 03/07/2025
 #Customer intent: As a developer, I want to use the access reviews APIs to review and attest to the access that principals have to resources in my organization, so that I can ensure proper security and compliance in my organization.
 ---
 
 # Review access to security groups using access reviews APIs
 
-The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. You can use security groups to efficiently manage access to resources in your organization. For example, access to a SharePoint site that contains marketing playbooks. And by using the access reviews API, organizations can periodically attest to principals that have access to such groups and by extension, resources in the organization.
+The access reviews APIs in Microsoft Graph lets organizations audit and attest to the access that identities (also called *principals*) have to resources. You can use security groups to efficiently manage access to resources in your organization, like a SharePoint site with marketing playbooks. By using the access reviews API, organizations can periodically attest to principals that have access to such groups and resources.
 
 In this tutorial, you learn how to:
 
@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-To complete this tutorial, you need the following resources and privileges:
+To complete this tutorial, you need these resources and privileges:
 
 + A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled. 
 + Two test guests and a test security group in your tenant. The guests should be members of the group and the group should have at least one owner.
@@ -33,17 +33,17 @@ To complete this tutorial, you need the following resources and privileges:
    
 >[!NOTE]
 >
-> Review of groups that are governed by PIM only assign active owners as the reviewers. Eligible owners are not included. At least one fallback reviewer is required for access review of groups governed by PIM. If there are no active owners when the review begins, the fallback reviewers are assigned the review.
+> Review of groups governed by PIM only assigns active owners as reviewers. Eligible owners aren't included. At least one fallback reviewer is required for access review of groups governed by PIM. If there are no active owners when the review begins, the fallback reviewers are assigned the review.
    
 ## Step 1: Create an access review for the security group
 
 ### Request
 
-In this call, replace the following values:
+In this call, replace these values:
 + `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` with the ID of the security group.
 + Value of **startDate** with today's date and value of **endDate** with a date five days from the start date.
 
-The access review has the following settings:
+The access review uses these settings:
 
 + It's a self-attesting review as inferred when you don't specify a value for the **reviewers** property. Therefore, each group member self-attests to their need to maintain access to the group.
 + The scope of the review is both direct and transitive members of the group.
@@ -132,7 +132,7 @@ Content-type: application/json
 
 ### Response
 
-The status of the access review is **NotStarted**. You can retrieve the access review (GET `https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b`) to monitor the status and when its status is **InProgress**, then instances have been created for the access review and decisions can be posted. You can also retrieve the access review to see its full settings.
+The status of the access review is **NotStarted**. Retrieve the access review (GET `https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b`) to monitor the status. When its status is **InProgress**, instances are created for the access review and decisions can be posted. You can also retrieve the access review to see its full settings.
 
 <!-- {
   "blockType": "response",
@@ -509,16 +509,18 @@ From the call, the **decision** property has the value of `NotReviewed` because 
 
 ## Step 5: Self-attest to a pending access decision
 
-You configured the access review as self-attesting. This configuration requires that both members of the group self-attest to their need to maintain their access to the group.
+You configured the access review as self-attesting. This configuration requires both members of the group to self-attest to their need to maintain access to the group.
 
 >[!NOTE]
 >Complete this step as one of the two members of the security group.
 
-In this step, you list your pending access reviews then complete the self-attestation process. You can complete this step in one of two ways, using the API or using the [My Access portal](https://myaccess.microsoft.com/). The other reviewer doesn't self-attest and instead, the default decisions are applied to their access review.
+In this step, you list your pending access reviews and complete the self-attestation process. You can complete this step in one of two ways: using the API or the [My Access portal](https://myaccess.microsoft.com/). The other reviewer doesn't self-attest, so the default decisions are applied to their access review.
 
 Start a new **incognito**, **anonymous**, or **InPrivate browsing** browser session, and sign in as one of the two members of the security group. By doing so, you don't interrupt your current administrator session. Alternatively, you can interrupt your current administrator session by logging out of Graph Explorer and logging back in as one of the two group members.
 
-### Method 1: Use the access reviews API to self-review pending access
+Start a new **incognito**, **anonymous**, or **InPrivate browsing** session, and sign in as one of the two members of the security group. This way, you don't interrupt your current administrator session. Alternatively, you can log out of Graph Explorer and log back in as one of the two group members.
+
+### Method 1: Use the access reviews APIs to self-review pending access
 
 #### List your access reviews decision items
 
@@ -599,13 +601,13 @@ PATCH https://graph.microsoft.com/v1.0/identitygovernance/accessReviews/definiti
 
 #### Verify the decisions
 
-To verify the decisions that you recorded for your access review, [list your access review decision items](#list-your-access-reviews-decision-items). While the access review period hasn't expired nor the decisions applied, the **applyResult** is marked as `New` and you're allowed to change the decision.
+To verify the decisions that you recorded for your access review, [list your access review decision items](#list-your-access-reviews-decision-items). While the access review period hasn't expired nor the decisions applied, the **applyResult** is marked as `New` and you can change the decision.
 
 You can now sign out and exit the incognito browser session.
 
 ### Method 2: Use the My Access portal
 
-Alternatively, you can check your pending access review instances through the [My Access portal](https://myaccess.microsoft.com/) portal.
+Alternatively, you can check your pending access review instances through the [My Access portal](https://myaccess.microsoft.com/).
 
 + List the pending access reviews. The user can follow one of two ways to get there:
   + Option 1: Select **Review access** button from the email notification that they received in their mail inbox. The email notification is similar to the following screenshot. This button is a direct link to the pending access review.
@@ -624,7 +626,7 @@ You can now sign out and exit the incognito browser session.
 
 Back in the main browser session where you're still logged in with administrator privileges, repeat Step 4 to see that the **decision** property for Adele Vance is now `Approve`. When the access review ends or expires, the default decision of `Deny` is recorded for Alex Wilber. The decisions are then automatically applied because the **autoApplyDecisionsEnabled** was set to `true` and the period of the access review instance ended. Adele maintains access to the security group while Alex is automatically removed from the group.
 
-Congratulations! You created an access review and self-attested to your need to maintain access. You only self-attested once, and will maintain your access until it's removed through either a `Deny` decision of another access review instance, or through another internal process.
+Congratulations! You created an access review and self-attested to your need to maintain access. You only self-attested once and maintain your access until it's removed through either a `Deny` decision of another access review instance or another internal process.
 
 ## Step 7: Clean up resources
 
@@ -679,10 +681,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definit
 
 You created an access review in which the principals self-attested to their need to maintain their access to a resource, in this case, the **Building security** group.
 
-This tutorial has demonstrated one of the scenarios by the Microsoft Entra access reviews API. The access reviews API supports different scenarios through a combination of resources, principals, and reviewers to suit your access attestation needs. For more information, see the [access reviews API](/graph/api/resources/accessreviewsv2-overview).
+This tutorial demonstrated one of the automation scenarios for the Microsoft Entra access reviews APIs. The APIs support different scenarios through a combination of resources, principals, and reviewers to suit your access attestation needs. For more information, see the [access reviews API](/graph/api/resources/accessreviewsv2-overview).
 
 ## Related content
 
 + [What are Microsoft Entra access reviews?](/entra/id-governance/access-reviews-overview)
 + [Tutorial: Review access for yourself to groups or applications in access reviews using the Microsoft Entra admin center](/entra/id-governance/review-your-access)
-+ [How-To: Configure the scope of your access review using access reviews APIs](/graph/accessreviews-scope-concept)
++ [How to configure the scope of your access review using access reviews APIs](/graph/accessreviews-scope-concept)

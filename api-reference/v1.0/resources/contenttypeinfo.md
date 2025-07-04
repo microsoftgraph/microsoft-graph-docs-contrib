@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "Represents the SharePoint content type of an item."
 ms.subservice: sharepoint
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # contentTypeInfo resource type

@@ -56,28 +56,22 @@ items:
     href: ../../api/peopleadminsettings-post-photoupdatesettings.md
   - name: Delete photo update setting
     href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
-  - name: Pronouns settings
+  - name: List profile sources
+    href: ../../api/peopleadminsettings-list-profilesources.md
+  - name: Create profile source
+    href: ../../api/peopleadminsettings-post-profilesources.md
+  - name: List profile property settings
+    href: ../../api/peopleadminsettings-list-profilepropertysettings.md
+  - name: Create profile property setting
+    href: ../../api/peopleadminsettings-post-profilepropertysettings.md
+  - name: Name pronunciation settings
     items:
-    - name: Pronouns settings
-      href: ../../resources/pronounssettings.md
-    - name: List
-      href: ../../api/peopleadminsettings-list-pronouns.md
-    - name: Update
-      href: ../../api/pronounssettings-update.md
-  - name: Profile card property
-    items:
-    - name: Profile card property
-      href: ../../resources/profilecardproperty.md
-    - name: List
-      href: ../../api/peopleadminsettings-list-profilecardproperties.md
-    - name: Create
-      href: ../../api/peopleadminsettings-post-profilecardproperties.md
+    - name: Name pronunciation settings
+      href: ../../resources/namepronunciationsettings.md
     - name: Get
-      href: ../../api/profilecardproperty-get.md
+      href: ../../api/namepronunciationsettings-get.md
     - name: Update
-      href: ../../api/profilecardproperty-update.md
-    - name: Delete
-      href: ../../api/profilecardproperty-delete.md
+      href: ../../api/namepronunciationsettings-update.md
   - name: Photo update settings
     items:
     - name: Photo update settings
@@ -92,14 +86,57 @@ items:
       href: ../../api/photoupdatesettings-update.md
     - name: Delete
       href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
-  - name: Name pronunciation settings
+  - name: Profile card property
     items:
-    - name: Name pronunciation settings
-      href: ../../resources/namepronunciationsettings.md
+    - name: Profile card property
+      href: ../../resources/profilecardproperty.md
+    - name: List
+      href: ../../api/peopleadminsettings-list-profilecardproperties.md
+    - name: Create
+      href: ../../api/peopleadminsettings-post-profilecardproperties.md
     - name: Get
-      href: ../../api/namepronunciationsettings-get.md
+      href: ../../api/profilecardproperty-get.md
     - name: Update
-      href: ../../api/namepronunciationsettings-update.md
+      href: ../../api/profilecardproperty-update.md
+    - name: Delete
+      href: ../../api/profilecardproperty-delete.md
+  - name: Profile property setting
+    items:
+    - name: Profile property setting
+      href: ../../resources/profilepropertysetting.md
+    - name: List
+      href: ../../api/peopleadminsettings-list-profilepropertysettings.md
+    - name: Create
+      href: ../../api/peopleadminsettings-post-profilepropertysettings.md
+    - name: Get
+      href: ../../api/profilepropertysetting-get.md
+    - name: Update
+      href: ../../api/profilepropertysetting-update.md
+    - name: Delete
+      href: ../../api/profilepropertysetting-delete.md
+  - name: Profile source
+    displayName: source attribution, connector source
+    items:
+    - name: Profile source
+      href: ../../resources/profilesource.md
+    - name: List
+      href: ../../api/peopleadminsettings-list-profilesources.md
+    - name: Create
+      href: ../../api/peopleadminsettings-post-profilesources.md
+    - name: Get
+      href: ../../api/profilesource-get.md
+    - name: Update
+      href: ../../api/profilesource-update.md
+    - name: Delete
+      href: ../../api/profilesource-delete.md
+  - name: Pronouns settings
+    items:
+    - name: Pronouns settings
+      href: ../../resources/pronounssettings.md
+    - name: List
+      href: ../../api/peopleadminsettings-list-pronouns.md
+    - name: Update
+      href: ../../api/pronounssettings-update.md
 - name: Insights settings
   items:
   - name: Insights settings
@@ -142,6 +179,14 @@ items:
     href: ../../api/namepronunciationsettings-get.md
   - name: Update
     href: ../../api/namepronunciationsettings-update.md
+- name: Enhanced personalization setting
+  items:
+  - name: Enhanced personalization setting
+    href: ../../resources/enhancedpersonalizationsetting.md
+  - name: Get
+    href: ../../api/enhancedpersonalizationsetting-get.md
+  - name: Update
+    href: ../../api/enhancedpersonalizationsetting-update.md
 - name: Profile
   items:
   - name: Profile
@@ -496,6 +541,35 @@ items:
       href: ../../api/personwebsite-update.md
     - name: Delete
       href: ../../api/personwebsite-delete.md
+- name: Profile source
+  displayName: source attribution, connector source
+  items:
+  - name: Profile source
+    href: ../../resources/profilesource.md
+  - name: List
+    href: ../../api/peopleadminsettings-list-profilesources.md
+  - name: Create
+    href: ../../api/peopleadminsettings-post-profilesources.md
+  - name: Get
+    href: ../../api/profilesource-get.md
+  - name: Update
+    href: ../../api/profilesource-update.md
+  - name: Delete
+    href: ../../api/profilesource-delete.md
+- name: Profile property setting
+  items:
+  - name: Profile property setting
+    href: ../../resources/profilepropertysetting.md
+  - name: List
+    href: ../../api/peopleadminsettings-list-profilepropertysettings.md
+  - name: Create
+    href: ../../api/peopleadminsettings-post-profilepropertysettings.md
+  - name: Get
+    href: ../../api/profilepropertysetting-get.md
+  - name: Update
+    href: ../../api/profilepropertysetting-update.md
+  - name: Delete
+    href: ../../api/profilepropertysetting-delete.md
 - name: User analytics
   items:
   - name: User analytics

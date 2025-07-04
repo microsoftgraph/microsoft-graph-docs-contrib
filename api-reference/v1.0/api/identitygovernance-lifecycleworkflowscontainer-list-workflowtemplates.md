@@ -5,6 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/16/2024
 ---
 
 # List workflowTemplates
@@ -13,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of the [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

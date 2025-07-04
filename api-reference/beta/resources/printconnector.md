@@ -5,6 +5,7 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printConnector resource type
@@ -36,6 +37,9 @@ Represents a print connector that has been registered by using a Universal Print
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the connector.|
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the connector was registered.|
 |registeredBy|[userIdentity](useridentity.md)|The user who registered the connector.|
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 07/11/2024
 ---
 
 # Update a delegated permission grant (oAuth2PermissionGrant)

@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphcompliance.ComplianceEdiscoveryCaseItemSourceCollectionItemRequestBuilderGetQueryParameters{
+requestParameters := &graphcompliance.EdiscoveryCasesItemSourceCollectionsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"addToReviewSetOperation","custodianSources","lastEstimateStatisticsOperation"},
 }
-configuration := &graphcompliance.ComplianceEdiscoveryCaseItemSourceCollectionItemRequestBuilderGetRequestConfiguration{
+configuration := &graphcompliance.EdiscoveryCasesItemSourceCollectionsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

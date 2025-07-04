@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.subservice: "teams"
+ms.date: 08/16/2024
 ---
 
 # conversationMember: add

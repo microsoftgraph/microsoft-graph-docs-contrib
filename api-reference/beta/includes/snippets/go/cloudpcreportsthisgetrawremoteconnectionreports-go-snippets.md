@@ -20,7 +20,7 @@ filter := "ActivityId eq 'cb6ad4c4-8a17-4245-a644-e4436b1ee204'"
 requestBody.SetFilter(&filter) 
 select := []string {
 	"RoundTripTimeInMs",
-	"AvailableBandwidthInMBps",
+	"AvailableBandwidthInMbps",
 	"SignInDateTime",
 }
 requestBody.SetSelect(select)

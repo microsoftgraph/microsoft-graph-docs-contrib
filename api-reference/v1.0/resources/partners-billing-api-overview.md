@@ -5,6 +5,7 @@ author: "sourishdeb"
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: "reports"
+ms.date: 05/13/2024
 ---
 
 # Use the Microsoft Graph API to export partner billing data

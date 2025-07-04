@@ -5,6 +5,7 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 11/14/2024
 ---
 
 # List internalSponsors
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of a [connectedOrganization](../resources/connectedorganization.md)'s internal sponsors.  The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "connectedorganization_list_internalsponsors" } -->
 [!INCLUDE [permissions-table](../includes/permissions/connectedorganization-list-internalsponsors-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 

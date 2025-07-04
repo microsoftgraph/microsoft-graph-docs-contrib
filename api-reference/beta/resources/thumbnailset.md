@@ -16,6 +16,9 @@ Namespace: microsoft.graph
 The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources.
 It's used to represent a set of thumbnails associated with a DriveItem.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

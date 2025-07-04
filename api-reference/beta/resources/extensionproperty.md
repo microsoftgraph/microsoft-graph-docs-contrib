@@ -6,6 +6,7 @@ author: "dkershaw10"
 ms.subservice: extensions
 doc_type: "resourcePageType"
 toc.title: Directory extension
+ms.date: 07/22/2024
 ---
 
 # extensionProperty resource type (directory extensions)

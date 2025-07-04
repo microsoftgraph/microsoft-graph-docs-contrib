@@ -63,6 +63,29 @@ items:
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
+- name: Cloud licensing (preview)
+  displayName: Cloud licensing, Microsoft Cloud Licensing
+  items:
+  - name: Overview
+    href: ../../resources/cloud-licensing-api-overview.md
+  - name: Usage right
+    items:
+    - name: Usage right
+      href: ../../resources/cloudlicensing-usageright.md
+    - name: List for group
+      href: ../../api/cloudlicensing-groupcloudlicensing-list-usagerights.md
+    - name: List for user
+      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+    - name: Get
+      href: ../../api/cloudlicensing-usageright-get.md
+  - name: Complex types
+    items:
+    - name: Group cloud licensing
+      href: ../../resources/cloudlicensing-groupcloudlicensing.md
+    - name: Service
+      href: ../../resources/cloudlicensing-service.md
+    - name: User cloud licensing
+      href: ../../resources/cloudlicensing-usercloudlicensing.md
 - name: Cloud PC
   items:
   - name: Overview
@@ -107,7 +130,7 @@ items:
       href: ../../api/cloudpc-retrievereviewstatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
-    - name: Get launch info for user
+    - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
     - name: Get connectivity history
       href: ../../api/cloudpc-getcloudpcconnectivityhistory.md
@@ -125,26 +148,6 @@ items:
       href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
-    - name: Bulk reprovision remote action (deprecated)
-      href: ../../api/manageddevice-bulkreprovisioncloudpc.md
-    - name: Bulk resize (deprecated)
-      href: ../../api/cloudpc-bulkresize.md
-    - name: Bulk restore remote action (deprecated)
-      href: ../../api/manageddevice-bulkrestorecloudpc.md
-    - name: Get remote action results (deprecated)
-      href: ../../api/manageddevice-getcloudpcremoteactionresults.md
-    - name: Get review status (deprecated)
-      href: ../../api/manageddevice-getcloudpcreviewstatus.md
-    - name: Reprovision remote action (deprecated)
-      href: ../../api/manageddevice-reprovisioncloudpc.md
-    - name: Resize remote action (deprecated)
-      href: ../../api/manageddevice-resizecloudpc.md
-    - name: Restore remote action (deprecated)
-      href: ../../api/manageddevice-restorecloudpc.md
-    - name: Set review status (deprecated)
-      href: ../../api/manageddevice-setcloudpcreviewstatus.md
-    - name: Bulk set review status (deprecated)
-      href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -259,28 +262,38 @@ items:
       href: ../../resources/cloudpcreports.md
     - name: Get action status reports
       href: ../../api/cloudpcreports-getactionstatusreports.md
-    - name: Get Cloud PC recommendation reports
-      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
+    - name: Get bulk action status reports
+      href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
+    - name: Get Cloud PC troubleshooting reports
+      href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
     - name: Get frontline report
       href: ../../api/cloudpcreports-getfrontlinereport.md
     - name: Get inaccessible Cloud PC reports
       href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
     - name: Get raw remote connection reports
       href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
-    - name: Get real time remote connection agency reports
+    - name: Get real-time remote connection latency reports
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
     - name: Get real-time remote connection status reports
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-    - name: Get remove connection hitorical reports
+    - name: Get remote connection historical reports
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Retrieve Cloud PC recommendation reports
+      href: ../../api/cloudpcreports-retrievecloudpcrecommendationreports.md
+    - name: Retrieve Cloud PC tenant metrics report
+      href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
     - name: Retrieve cross-region disaster recovery report
       href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
     - name: Retrieve connection quality reports
       href: ../../api/cloudpcreports-retrieveconnectionqualityreports.md
     - name: Get daily aggregated remote connection reports
       href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+    - name: Get Cloud PC performance report (deprecated)
+      href: ../../api/cloudpcreports-getcloudpcperformancereport.md
+    - name: Get Cloud PC recommendation reports (deprecated)
+      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: Get connection quality reports (deprecated)
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: Get shared use license usage report (deprecated)
@@ -303,10 +316,8 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
-    - name: Get
-      href: ../../api/cloudpcsnapshot-get.md
-    - name: List (deprecated)
-      href: ../../api/virtualendpoint-list-snapshots.md
+    - name: Retrieve snapshots
+      href: ../../api/cloudpc-retrievesnapshots.md
   - name: Cloud PC supported region
     items:
     - name: Cloud PC supported region
@@ -361,8 +372,6 @@ items:
       href: ../../api/virtualendpoint-list-supportedregions.md
     - name: List service plans
       href: ../../api/virtualendpoint-list-serviceplans.md
-    - name: List snapshots
-      href: ../../api/virtualendpoint-list-snapshots.md
     - name: List external partner settings
       href: ../../api/virtualendpoint-list-externalpartnersettings.md
     - name: Create external partner setting
@@ -385,6 +394,8 @@ items:
       href: ../../api/virtualendpoint-post-bulkactions.md
     - name: Get
       href: ../../api/cloudpcbulkaction-get.md
+    - name: Retry
+      href: ../../api/cloudpcbulkaction-retry.md
   - name: Alert monitoring
     items:
     - name: Monitoring
@@ -416,10 +427,14 @@ items:
       href: ../../resources/cloudpcauditresource.md
     - name: Cloud PC bulk create snapshot
       href: ../../resources/cloudpcbulkcreatesnapshot.md
+    - name: Cloud PC bulk disaster recovery
+      href: ../../resources/cloudpcbulkdisasterrecovery.md
     - name: Cloud PC bulk disaster recovery failback
       href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
     - name: Cloud PC bulk disaster recovery failover
       href: ../../resources/cloudpcbulkdisasterrecoveryfailover.md
+    - name: Cloud PC bulk move
+      href: ../../resources/cloudpcbulkmove.md
     - name: Cloud PC bulk power off
       href: ../../resources/cloudpcbulkpoweroff.md
     - name: Cloud PC bulk power on
@@ -466,6 +481,8 @@ items:
       href: ../../resources/cloudpcmanagementassignmenttarget.md
     - name: Cloud PC management group assignment target
       href: ../../resources/cloudpcmanagementgroupassignmenttarget.md
+    - name: Cloud PC notification setting
+      href: ../../resources/cloudpcnotificationsetting.md
     - name: Cloud PC on-premises connection status detail
       href: ../../resources/cloudpconpremisesconnectionstatusdetail.md
     - name: Cloud PC on-premises connection status details
@@ -474,6 +491,8 @@ items:
       href: ../../resources/cloudpcpartneragentinstallresult.md
     - name: Cloud PC provisioning policy assignment
       href: ../../resources/cloudpcprovisioningpolicyassignment.md
+    - name: Cloud PC provisioning policy autopatch
+      href: ../../resources/cloudpcprovisioningpolicyautopatch.md
     - name: Cloud PC remote action capability
       href: ../../resources/cloudpcremoteactioncapability.md
     - name: Cloud PC resize validation result
@@ -492,6 +511,8 @@ items:
       href: ../../resources/cloudpcstatusdetails.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
+    - name: Cloud PC supported region restriction detail
+      href: ../../resources/cloudpcsupportedregionrestrictiondetail.md
     - name: Cloud PC user role scope tag info
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment
@@ -509,6 +530,8 @@ items:
 - name: Cloud printing
   displayName: Universal Print
   items:
+  - name: Overview
+    href: ../../resources/print-overview.md
   - name: Print
     items:
     - name: Print
@@ -1748,6 +1771,8 @@ items:
         href: ../../api/intune-apps-win32lobapp-delete.md
       - name: Update win32LobApp
         href: ../../api/intune-apps-win32lobapp-update.md
+      - name: enableApplicableArchitectures action
+        href: ../../api/intune-apps-win32lobapp-enableapplicablearchitectures.md
     - name: Windows AppX
       items:
       - name: Windows AppX
@@ -6369,7 +6394,7 @@ items:
     - name: Managed device
       items:
       - name: Managed device
-        href: ../../resources/intune-devices-manageddevice.md
+        href: ../../resources/intune-shared-manageddevice.md
       - name: Get managedDevice
         href: ../../api/intune-devices-manageddevice-get.md
       - name: Update managedDevice
@@ -6828,10 +6853,6 @@ items:
       items:
       - name: User experience analytics device timeline event
         href: ../../resources/intune-devices-userexperienceanalyticsdevicetimelineevent.md
-      - name: List userExperienceAnalyticsDeviceTimelineEvents
-        href: ../../api/intune-devices-userexperienceanalyticsdevicetimelineevent-list.md
-      - name: Get userExperienceAnalyticsDeviceTimelineEvent
-        href: ../../api/intune-devices-userexperienceanalyticsdevicetimelineevent-get.md
     - name: User experience analytics device without cloud identity
       items:
       - name: User experience analytics device without cloud identity
@@ -8256,6 +8277,8 @@ items:
         href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-delete.md
       - name: Update windowsQualityUpdateCatalogItem
         href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-update.md
+      - name: retrieveWindowsQualityUpdateCatalogItemDetails function
+        href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-retrievewindowsqualityupdatecatalogitemdetails.md
     - name: Complex types
       items:
       - name: All devices assignment target
@@ -8547,8 +8570,12 @@ items:
       href: ../../resources/windowsupdates-qualityupdatecatalogentry.md
     - name: Quality update cve severity information
       href: ../../resources/windowsupdates-qualityupdatecveseverityinformation.md
+    - name: Quality update filter
+      href: ../../resources/windowsupdates-qualityupdatefilter.md
     - name: Rate driven rollout settings
       href: ../../resources/windowsupdates-ratedrivenrolloutsettings.md
+    - name: Remediation update filter
+      href: ../../resources/windowsupdates-remediationupdatefilter.md
     - name: Safeguard profile
       href: ../../resources/windowsupdates-safeguardprofile.md
     - name: Safeguard settings
@@ -8612,9 +8639,9 @@ items:
     items:
     - name: Cloud PC connection
       href: ../../resources/managedtenants-cloudpcconnection.md
-    - name: List cloud PC connections
+    - name: List Cloud PC connections
       href: ../../api/managedtenants-managedtenant-list-cloudpcconnections.md
-    - name: Get cloud PC connection
+    - name: Get Cloud PC connection
       href: ../../api/managedtenants-cloudpcconnection-get.md
   - name: Cloud PC device
     items:
