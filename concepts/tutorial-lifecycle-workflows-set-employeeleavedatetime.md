@@ -1,6 +1,6 @@
 ---
 title: Set employeeLeaveDateTime
-description: Configure the employeeLeaveDateTime property for a user using Microsoft Graph. 
+description: Configure the employeeLeaveDateTime property for a user using Microsoft Graph.
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Alexander.Filipin
@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-id-governance
 ms.topic: how-to
 ms.date: 01/13/2025
+ms.custom: sfi-ga-blocked
 #Customer intent: As a developer integrating with Microsoft Graph, I want programmatically configure the employeeLeaveDateTime property for a user, so that I can trigger scheduled "leaver" workflows using Lifecycle Workflows.
 ---
 
