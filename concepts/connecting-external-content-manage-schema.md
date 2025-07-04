@@ -226,7 +226,7 @@ Add as many labels as you can, but ensure that they are accurately mapped to pro
 
 The label **title** is the most important label. Make sure that you assign a property to this label to allow your connection to participate in the result cluster experience. Incorrectly mapping labels degrades the search experience. It's okay for some labels to not have a property assigned to them.
 
-### **Key considerations for relevance:** 
+### Relevance
 By applying as many accurately mapped labels as possible, you can also improve the discovery of your content through search. We highly recommend defining as many of the following labels as possible, listed by potential impact on discovery in descending order: 
 
 - title 
