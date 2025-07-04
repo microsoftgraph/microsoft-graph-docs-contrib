@@ -15,7 +15,6 @@ A guide to setting up the schema and the best practices to follow
 The connection [schema](/graph/api/resources/externalconnectors-schema) determines how your content is used in various Microsoft Graph experiences. The schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
 
 ## Attributes of a schema 
-
 - Property 
 - Type 
 - Searchable 
@@ -49,13 +48,10 @@ For Schema definition and API’s refer to [schema](/graph/api/resources/externa
 ## Description and best practices for each Property attributes
 
 ### Property 
-
 This refers to the Name of the property.  
 
 **Best Practices for property names**
-
 **Use Understandable and Unique Names:** Ensure property names are clear, distinct, and easily interpretable by both users and systems. Avoid ambiguous or overly similar names, such as "orgname," "brorgname," and "tporgname". Instead, opt for descriptive names like "ParentOrganizationName" or "DepartmentName." This will help Copilot to understand the property that is related to your query 
-
 **Avoid Complex Names:** Simplify overly technical or cryptic names, such as "datablob" or "ftxInvIsLead," . Instead use meaningful names like “IncidentRootCause”,”FullQualifiedSalesLeads” etc thus making them more comprehensible and aligned with user queries and search terms.  
 
 > [!NOTE]
@@ -63,7 +59,6 @@ This refers to the Name of the property.
 > If you are using Declarative agents (DA) we recommend adding the description of the properties to the DA instruction set. 
 
 ### Searchable
-
 If a property is searchable, its value is added to the full text index. This means that when a user performs a search on Copilot or SharePoint we return results if the  search string matches with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
 
 **Which properties should be searchable?** 
@@ -86,11 +81,9 @@ You should mark properties as searchable if:
 
 <!-- markdownlint-disable MD036 -->
 ![A search for "design" displaying results for hits against the property title and content.](./images/connectors-images/connecting-external-content-manage-items-schema-1.png)
-
 *A search for "design" displaying results for hits against the property (`title`) and content.*
 
 ### Queryable
-
 Mark properties as queryable when users need to filter their search results based on specific values. For example, properties such as "ticketId," "TeamName" or "createdBy" can be queryable.  Now when you query something like “Tickets created by William” Copilot will be able to filter out only the tickets created by the said user and display it.  Prefix matching with wildcard operators (*) can further enhance search flexibility. 
 
 **Which properties should be queryable?** 
@@ -116,15 +109,14 @@ In the case below, Queryable is set as true for the ‘Tags’ property.
 *A search for "tags:design" scoping down results to items with "design" in the `tags` property.*
 
 If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of one or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(*). 
+
 > [!NOTE]
 > Suffix matching isn't supported.
 
 ![A search for "search ba*" displaying results that match this prefix.](./images/connectors-images/connecting-external-content-manage-items-schema-2.svg)
 *A search for "search ba\*" displaying results that match this prefix.*
 
-
 ### Retrievable
-
 If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose relevant properties.
 
 ![A set of retrievable properties rendered as a result.](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
@@ -147,7 +139,6 @@ You should mark properties as retrievable if:
 - Use `Retrievable: true` for fields shown in **search cards**, **Copilot prompts**, or **custom UI**. 
 
 ### Refinable
-
 If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. 
 The **Refinable** property allows a schema property to be used as a **filter** in Microsoft Search experiences. 
 
@@ -171,13 +162,11 @@ You should mark properties as refinable if:
 - **Refinable properties cannot be searchable** — you must choose one or the other. 
 - Only **string or numeric types** can be refinable. 
 - Marking too many properties as refinable can **impact** performance.
-- 
+  
 ![Refine results by tags, a refinable property.](./images/connectors-images/connecting-external-content-manage-schema-5.svg)
-
 *Refine results by `tags`, a refinable property.*
 
 ### Exact match required
-
 If **isExactMatchRequired** is `true` for a property, the full string value is indexed. **isExactMatchRequired** can only be set to `true` for non-searchable properties.
 
 For example, the **ticketId** property is both queryable and specifies exact matching.
@@ -280,7 +269,6 @@ Finally, when assigning labels, ensure the following:
 - You can map exactly one label to exactly one property.
 
 ## Aliases 
-
 Aliases are friendly names for properties that you assign. These are used in queries and selections in refinable property filters. 
 
 **Real-World Examples of Aliases** 
