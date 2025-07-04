@@ -9,10 +9,11 @@ ms.date: 11/07/2024
 ---
 <!---<author of this doc: rsamai>--->
 
-# Register and manage schema for the Microsoft Graph connectors  
-A guide to setting up the schema and the best practices to follow
+# Register and manage schema for the Microsoft 365 Copilot connectors  
 
-The connection [schema](/graph/api/resources/externalconnectors-schema) determines how your content is used in various Microsoft Graph experiences. The schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
+This guide provides information on setting the schema and best practices for Microsoft 365 Copilot connectors. 
+
+The connection [schema](/graph/api/resources/externalconnectors-schema) determines how your content is used in various Microsoft Graph experiences. The schema is a flat list of all the properties that you plan to add to the connection, along with their attributes, labels, and aliases. You must register the schema before adding items to the connection.
 
 ## Attributes of a schema 
 - Property 
@@ -28,7 +29,7 @@ The connection [schema](/graph/api/resources/externalconnectors-schema) determin
 
 The following table represents an example of a possible schema for a work ticket system connector.
 
-| Property       | Type             | Searchable         | Queryable          | Retrievable        | Refinable          | Exact Match Required | Labels               | Aliases    |
+| Property       | Type             | Searchable         | Queryable          | Retrievable        | Refinable          | Exact match required | Labels               | Aliases    |
 |----------------|------------------|--------------------|--------------------|--------------------|--------------------|----------------------|----------------------|------------|
 | ticketId       | String           |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark:   |                      | ID         |
 | title          | String           | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                      | title                |            |
@@ -43,23 +44,23 @@ The following table represents an example of a possible schema for a work ticket
 | url            | String           |                    |                    |                    |                    |                      | url                  |            |
 | resolved       | Boolean          |                    | :heavy_check_mark: | :heavy_check_mark: |                    |                      |                      |            |
 
-For Schema definition and API’s refer to [schema](/graph/api/resources/externalconnectors-schema) section in the [Copilot Connector API reference](/graph/api/resources/connectors-api-overview)  
+For more information, see [schema](/graph/api/resources/externalconnectors-schema) section in the [Copilot Connector API reference](/graph/api/resources/connectors-api-overview).
 
-## Description and best practices for each Property attributes
+## Description and best practices for each property attribute
 
-### Property 
-This refers to the Name of the property.  
+### Property names
+The following best practices should be considered when choosing property names.  
 
-**Best Practices for property names**
-**Use Understandable and Unique Names:** Ensure property names are clear, distinct, and easily interpretable by both users and systems. Avoid ambiguous or overly similar names, such as "orgname," "brorgname," and "tporgname". Instead, opt for descriptive names like "ParentOrganizationName" or "DepartmentName." This will help Copilot to understand the property that is related to your query 
-**Avoid Complex Names:** Simplify overly technical or cryptic names, such as "datablob" or "ftxInvIsLead," . Instead use meaningful names like “IncidentRootCause”,”FullQualifiedSalesLeads” etc thus making them more comprehensible and aligned with user queries and search terms.  
+- Use understandable and unique names—make sure property names are clear, distinct, and easily interpretable by both users and systems. Avoid ambiguous or overly similar names, such as **orgName**, **brOrgName**, and **tpOrgName**. Instead, opt for descriptive names like **parentOrganizationName** or **departmentName**. It helps Copilot understand the property that is related to your query.
+- Avoid complex names—simplify overly technical or cryptic names, such as **dataBlob** or **ftxInvIsLead**. Instead, use meaningful names like *incidentRootCause**,**FullQualifiedSalesLead**, etc. Thus making them more comprehensible and aligned with user queries and search terms.
+- Add property descriptions to help Copilot understand your property better and match relevant queries.
 
 > [!NOTE]
-> Adding property descriptions can help copilot understand your property better and match relevant queries. Support for adding property descriptions for custom connectors is expected to in Q4 of 2025.
-> If you are using Declarative agents (DA) we recommend adding the description of the properties to the DA instruction set. 
+>  Support for adding property descriptions for custom connectors is expected to be in Q4 of 2025.
+> If you are using declarative agents (DA), we recommend adding the description of the properties to the DA instruction set. 
 
 ### Searchable
-If a property is searchable, its value is added to the full text index. This means that when a user performs a search on Copilot or SharePoint we return results if the  search string matches with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
+If a property is searchable, its value is added to the full text index. This means that when a user performs a search on Copilot or SharePoint, we return results if the search string matches with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
 
 **Which properties should be searchable?** 
 You should mark properties as searchable if: 
