@@ -148,7 +148,7 @@ You should mark properties as retrievable if:
 
 ### Refinable
 
-# If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. 
+If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. 
 The **Refinable** property allows a schema property to be used as a **filter** in Microsoft Search experiences. 
 
 **When a property is marked as refinable:?** 
@@ -331,7 +331,7 @@ A sample of how `content` property is used while ingesting data:
 "type": "text" 
 } 
 }
-
+``` 
 **Additional tip if you are using a declarative agent:** 
 - If you are using a Declarative Agent (DA), you **can and should** provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. 
 - This is **very useful** because it helps the Declarative agent understand: 
