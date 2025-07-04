@@ -9,9 +9,28 @@ ms.date: 11/07/2024
 ---
 <!---<author of this doc: rsamai>--->
 
-# Register and update schema for the Microsoft Graph connection
+# Register and manage schema for the Microsoft Graph connectors  
+A guide to setting up the schema and the best practices to follow
 
 The connection [schema](/graph/api/resources/externalconnectors-schema) determines how your content is used in various Microsoft Graph experiences. The schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
+
+## Attributes of a schema 
+
+- Property 
+
+- Type 
+
+- Searchable 
+
+- Retrievable 
+
+- Refinable 
+
+- Exact Match Required 
+
+- Labels 
+
+- Aliases 
 
 ## Example schema
 
@@ -32,12 +51,46 @@ The following table represents an example of a possible schema for a work ticket
 | url            | String           |                    |                    |                    |                    |                      | url                  |            |
 | resolved       | Boolean          |                    | :heavy_check_mark: | :heavy_check_mark: |                    |                      |                      |            |
 
-## Property attributes
+For Schema definition and API’s refer to [schema](/graph/api/resources/externalconnectors-schema) section in the [Copilot Connector API reference](/graph/api/resources/connectors-api-overview)  
+
+## Description and best practices for each Property attributes
+
+### Property 
+
+This refers to the Name of the property.  
+
+**Best Practices for property names**
+
+**Use Understandable and Unique Names:** Ensure property names are clear, distinct, and easily interpretable by both users and systems. Avoid ambiguous or overly similar names, such as "orgname," "brorgname," and "tporgname". Instead, opt for descriptive names like "ParentOrganizationName" or "DepartmentName." This will help Copilot to understand the property that is related to your query 
+
+**Avoid Complex Names:** Simplify overly technical or cryptic names, such as "datablob" or "ftxInvIsLead," . Instead use meaningful names like “IncidentRootCause”,”FullQualifiedSalesLeads” etc thus making them more comprehensible and aligned with user queries and search terms.  
+
+> [!NOTE]
+> Adding property descriptions can help copilot understand your property better and match relevant queries. Support for adding property descriptions for custom connectors is expected to in Q4 of 2025.
+> If you are using Declarative agents (DA) we recommend adding the description of the properties to the DA instruction set. 
 
 ### Searchable
 
-If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
+If a property is searchable, its value is added to the full text index. This means that when a user performs a search on Copilot or SharePoint we return results if the  search string matches with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
 
+### **Which properties should be searchable?** 
+You should mark properties as searchable if: 
+- They contain **textual data** that users might search for. 
+- They are **relevant to search queries** (e.g., titles, descriptions, tags). 
+- You want them to contribute to **search hits** and **snippet generation**. 
+
+### **Common examples:** 
+- title 
+- description 
+- tags 
+- createdBy 
+- assignedTo 
+
+### **Best Practices** 
+- **Avoid marking large binary fields** as searchable. 
+- **Do not mark refinable fields as searchable** — refinable and searchable are mutually exclusive. 
+- Do not mark all fields as searchable. **Limit searchable fields** to those that improve relevance and user experience.
+- 
 <!-- markdownlint-disable MD036 -->
 ![A search for "design" displaying results for hits against the property title and content.](./images/connectors-images/connecting-external-content-manage-items-schema-1.png)
 
