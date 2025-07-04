@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a fileStorageContainerTypeRegistration object.
+Update the properties of a fileStorageContainerTypeRegistration object. Updating settings is 
 
 >**Note**: Updating the settings changes the behavior of any new fileStorageContainer, but existing containers may require their [settings](../resources/fileStorageContainer.md) to be updated directly, or may not be updated. E.g., storage size.
 
@@ -69,9 +69,9 @@ If successful, this method returns a `200 OK` response code and an updated [file
 
 ## Examples
 
-Update a fileStorageContainerTypeRegistration
-
 ### Request
+
+Update a fileStorageContainerTypeRegistration.
 
 <!-- {
   "blockType": "request",
@@ -100,7 +100,6 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -142,3 +141,41 @@ Content-Type: application/json
 }
 ```
 
+### Request
+
+Update a fileStorageContainerTypeRegistration without ETag.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_filestoragecontainertyperegistration"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
+Content-Type: application/json
+
+{
+  "settings": {
+    "sharingCapability": "externalUserAndGuestSharing",
+  },
+  "applicationPermissionGrants": [
+    {
+      "appId": "33225700-9a00-4c00-84dd-0c210f203f01",
+      "delegatedPermissions": ["full"],
+      "applicationPermissions": ["none"]
+    }
+  ]
+}
+```
+
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 400 Bad Request
+```

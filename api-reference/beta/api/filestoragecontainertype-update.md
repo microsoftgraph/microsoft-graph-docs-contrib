@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and an updated [file
 
 ### Request
 
-The following example shows a request.
+Update a fileStorageContainerType.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertype"
@@ -94,7 +94,6 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -129,3 +128,38 @@ Content-Type: application/json
 }
 ```
 
+
+### Request
+
+Update a fileStorageContainerType without ETag.
+<!-- {
+  "blockType": "request",
+  "name": "update_filestoragecontainertype"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.fileStorageContainerType",
+  "settings": {
+    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
+    "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
+    "isItemVersioningEnabled": "true",
+    "isSharingRestricted": "false"
+  }
+}
+```
+
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 400 Bad Request
+```
