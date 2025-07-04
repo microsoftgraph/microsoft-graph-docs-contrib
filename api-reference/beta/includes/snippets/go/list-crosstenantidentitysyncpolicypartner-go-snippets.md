@@ -15,11 +15,11 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphpolicies.PoliciesCrossTenantAccessPolicyPartnersRequestBuilderGetQueryParameters{
+requestParameters := &graphpolicies.CrossTenantAccessPolicyPartnersRequestBuilderGetQueryParameters{
 	Select: [] string {"tenantId"},
 	Expand: [] string {"identitySynchronization"},
 }
-configuration := &graphpolicies.PoliciesCrossTenantAccessPolicyPartnersRequestBuilderGetRequestConfiguration{
+configuration := &graphpolicies.CrossTenantAccessPolicyPartnersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

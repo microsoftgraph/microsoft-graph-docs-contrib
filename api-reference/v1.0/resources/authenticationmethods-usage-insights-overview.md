@@ -1,43 +1,48 @@
 ---
 title: "Working with the authentication methods usage report API"
-description: "The authentication methods usage report helps you understand how users in your organization are using Microsoft Entra authentication capabilities such as self-service password reset and multifactor authentication (MFA)."
+description: "Authentication methods activity reports provides information on the registration and usage of authentication methods in your tenant."
 ms.localizationpriority: medium
-author: "egreenberg14"
-ms.subservice: "entra-monitoring-health"
+ms.subservice: entra-monitoring-health
+author: faithombongi
+ms.author: ombongifaith
+ms.reviewer: egreenberg
 doc_type: "conceptualPageType"
-ms.date: 01/18/2024
+ms.date: 12/30/2024
 ---
 
 # Working with the authentication methods usage report API
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-The authentication methods usage reports help you understand how users in your organization are using [Microsoft Entra authentication capabilities](../resources/authenticationmethods-overview.md) such as multifactor authentication (MFA), Self-Service Password Reset (SSPR), and Passwordless authentication.
+Authentication methods activity reports provides information on the registration and usage of [authentication methods](../resources/authenticationmethods-overview.md) in your tenant.
 
 These reports provide information such as:
 
 - How many users are registered for each authentication method
-- How many users are registered for features such as multifactor authentication (MFA), Self-Service Password Reset (SSPR), and Passwordless authentication.
-- The failure rates of each authentication method 
+- How many users are registered for features such as multifactor authentication (MFA), Self-Service Password Reset (SSPR), and passwordless authentication.
+- The failure rates of each authentication method
+
+These reports are available on the Microsoft Entra portal through **Protection** tab group > **Authentication methods** tab > **Activity** tab under the *Monitoring* tab group.
 
 ## Licenses
 
-A Microsoft Entra ID P1 or P2 license is required to access usage and insights. Microsoft Entra multifactor authentication and self-service password reset (SSPR) licensing information can be found on the [Microsoft Entra pricing site](https://azure.microsoft.com/pricing/details/active-directory/).
+A Microsoft Entra ID P1 or P2 license is required to access authentication methods usage and insights reports. Microsoft Entra multifactor authentication and self-service password reset (SSPR) licensing information can be found on the [Microsoft Entra pricing site](https://www.microsoft.com/security/business/microsoft-entra-pricing).
 
-## Common requests
+## Available reports
 
-The following table lists some common requests that you can use with this API.
+The following reports are available through Microsoft Graph:
 
-| Operation | Try in Graph Explorer | Description |
-| --------- | --- | ----------- |
-| [usersRegisteredByFeature](../resources/userregistrationfeaturesummary.md) | [GET /authenticationMethods/usersRegisteredByFeature](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='all',includedUserRoles='all')&version=v1.0) | Get the number of users capable of multifactor authentication, self-service password reset and passwordless authentication. |
-| [usersRegisteredByMethod](../resources/userregistrationmethodsummary.md) | [GET /authenticationMethods/usersRegisteredByMethod](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')&version=v1.0) | Get the number of users registered for each authentication method. |
-| [userRegistrationDetails](../resources/userregistrationdetails.md) | [GET /authenticationMethods/userRegistrationDetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/userRegistrationDetails&version=v1.0) | Get the MFA registration details for all users. |
+- Per-user report of the status of their authentication methods including the default methods, whether registered for MFA, SSPR, and a passwordless authentication method, and so on. For more information, see the [userRegistrationDetails resource type](../resources/userRegistrationDetails.md).
+- Count of users registered, enabled, and capable of using MFA, SSPR, and passwordless authentication. For more information, see the [usersRegisteredByFeature resource type](../resources/userregistrationfeaturesummary.md).
+- Raw count of users registered for email, password, and phone authentication methods. For more information, see the [usersRegisteredByMethod resource type](../resources/userregistrationmethodsummary.md).
+
+The following reports are available on the `beta` endpoint only:
+
+- Users registered and capable of self-service password reset (SSPR) and Azure multifactor authentication (MFA). For more information, see the [credentialUserRegistrationCount resource type](/graph/api/resources/credentialuserregistrationcount).
+- SSPR usage activity. For more information, see the [userCredentialUsageDetails resource type](/graph/api/resources/usercredentialusagedetails).
+- Tenant-level summary of user SSPR activity, including failure and successes. For more information, see the [credentialUsageSummary resource type](/graph/api/resources/credentialusagesummary).
+
 
 ## Related content
 
-- Learn how to [deploy Microsoft Entra self-service password reset](/azure/active-directory/authentication/howto-sspr-deployment).
-- Learn how to deploy [Microsoft Entra multifactor authentication](/azure/active-directory/authentication/howto-mfa-getstarted).
-- Learn how to enable [combined security info registration](/azure/active-directory/authentication/howto-registration-mfa-sspr-combined).
+- [Microsoft Entra authentication methods activity](/entra/identity/authentication/howto-authentication-methods-activity)

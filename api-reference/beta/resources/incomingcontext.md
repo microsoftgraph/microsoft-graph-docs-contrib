@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # incomingContext resource type
@@ -23,6 +24,9 @@ The context associated with an incoming call.
 | onBehalfOf            | [identitySet](identityset.md) | The identity that the call is happening on behalf of.                   |
 | sourceParticipantId   | String                        | The id of the participant that triggered the incoming call. Read-only.  |
 | transferor            | [identitySet](identityset.md) | The identity that transferred the call.                                 |
+
+## Relationships
+None.
 
 ## JSON representation
 

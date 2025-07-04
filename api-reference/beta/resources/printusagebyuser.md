@@ -5,6 +5,7 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printUsageByUser resource type
@@ -39,6 +40,9 @@ Describes print activity for a user during a specified time period (usageDate).
 |singleSidedSheetCount|Int64|The estimated number of single-sided media sheets printed on behalf of the user based on reporting by the printer.|
 |usageDate|Date|The date associated with these statistics.|
 |userPrincipalName|String|The UPN of the user represented by these statistics.|
+
+## Relationships
+None.
 
 ## JSON representation
 

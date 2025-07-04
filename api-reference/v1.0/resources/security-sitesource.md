@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # siteSource resource type
@@ -18,7 +19,17 @@ Inherits from [dataSource](../resources/security-datasource.md).
 
 
 ## Methods
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+| **eDiscovery custodian** |||
+|[List](../api/security-ediscoverycustodian-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get a list of the [siteSource](../resources/security-sitesource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+|[Create](../api/security-ediscoverycustodian-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new [siteSource](../resources/security-sitesource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+|[Delete](../api/security-ediscoverycustodian-delete-sitesources.md)|None|Delete a [siteSource](../resources/security-sitesource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+| **eDiscovery hold policy** |||
+|[List siteSources](../api/security-ediscoveryholdpolicy-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get a list of the [siteSource](../resources/security-sitesource.md) objects associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
+|[Create](../api/security-ediscoveryholdpolicy-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new [siteSource](../resources/security-sitesource.md) object.|
+|[Delete](../api/security-ediscoveryholdpolicy-delete-sitesources.md)|None|Delete a [siteSource](../resources/security-sitesource.md) object associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

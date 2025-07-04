@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "haoyli"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getFormsUserActivityUserDetail

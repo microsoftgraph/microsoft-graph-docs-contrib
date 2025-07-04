@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 11/01/2024
 ---
 
 # Get onlineMeeting
@@ -16,24 +17,111 @@ Retrieve the properties and relationships of an [onlineMeeting](../resources/onl
 For example, you can:
 
 - Get details of an online meeting using [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id),  [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl), or [joinMeetingId](#example-4-retrieve-an-online-meeting-by-joinmeetingid).
-- Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link. **(deprecated)**
+- Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 5](#example-5-fetch-attendee-report-of-a-teams-live-event-deprecated). **(deprecated)**
+- Use the `/recording` and `/alternativeRecording` paths to get the recordings of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 6](#example-6-fetch-the-recording-of-a-teams-live-event-deprecated). **(deprecated)**
 
-Teams live event attendee report **(deprecated)** is an online meeting artifact. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+Teams live event attendee report **(deprecated)** and Teams live event recordings **(deprecated)** are online meeting artifacts. For more information, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 > [!CAUTION]
-> 
-> The online meeting APIs that support Microsoft Teams live events stopped returning data on September 30, 2024. For details about the removal of these APIs and upcoming new APIs to replace them, see the [Deprecation of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/) blog post.
+> Teams live events was not removed on September 30, 2024, as previously announced. You can continue to use Teams live events; however, to get the latest new features and experiences, we recommend that you use [Teams town halls](https://support.microsoft.com/en-us/office/switch-from-microsoft-teams-live-events-to-town-halls-c71bf6e2-ece1-4809-900e-51271f39ac72) and the [Microsoft Graph virtual event townhall APIs](../resources/virtualeventtownhall.md) instead.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "onlinemeeting_get" } -->
+Permissions for the following HTTP requests:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/onlineMeetings/{meetingId}
+GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
+GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_get", 
+  "requestUrls": ["GET /me/onlineMeetings/{meetingId}", "GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'", "GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'"],
+  "mergePermissions": true
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-permissions.md)]
 
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
+Permissions for the following HTTP requests:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}
+GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
+GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
+GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_get_2", 
+  "requestUrls": ["GET /users/{userId}/onlineMeetings/{meetingId}", "GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'", "GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'", "GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'", "GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'"],
+  "mergePermissions": true
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-2-permissions.md)]
+
+Permissions for the following HTTP requests that apply only to Microsoft Teams live events:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/onlineMeetings/{meetingId}/attendeeReport
+GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_get_3", 
+  "requestUrls": ["GET /me/onlineMeetings/{meetingId}/attendeeReport", "GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport"],
+  "mergePermissions": true
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-3-permissions.md)]
+
+Permissions for the following HTTP requests that apply only to Microsoft Teams live events:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/onlineMeetings/{meetingId}/recording
+GET /me/onlineMeetings/{meetingId}/alternativeRecording
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_get_4", 
+  "requestUrls": ["GET /me/onlineMeetings/{meetingId}/recording", "GET /me/onlineMeetings/{meetingId}/alternativeRecording"],
+  "mergePermissions": true
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-4-permissions.md)]
+
+Permissions for the following HTTP requests that apply only to Microsoft Teams live events:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}/recording
+GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_get_5", 
+  "requestUrls": ["GET /users/{userId}/onlineMeetings/{meetingId}/recording", "GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording"],
+  "mergePermissions": true
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-5-permissions.md)]
+
+> [!NOTE]
+> To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
 > [!IMPORTANT]
 > Only the _OnlineMeetingArtifact.Read.All_ permissions are required if you fetch online meeting artifacts and you cannot fetch meeting artifacts without it. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
@@ -75,6 +163,16 @@ To get the attendee report of a [Teams live event](/microsoftteams/teams-live-ev
 ```http
 GET /me/onlineMeetings/{meetingId}/attendeeReport
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
+```
+
+To get the recordings of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) with delegated (`/me`) and app (`/users/{userId}`) permission: **(deprecated)**
+<!-- { "blockType": "ignored" }-->
+
+```http
+GET /me/onlineMeetings/{meetingId}/recording
+GET /me/onlineMeetings/{meetingId}/alternativeRecording
+GET /users/{userId}/onlineMeetings/{meetingId}/recording
+GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```
 
 > [!NOTE]
@@ -675,3 +773,77 @@ Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-51
   ]
 }
 -->
+
+
+### Example 6: Fetch the recording of a Teams live event (deprecated)
+
+The following example shows a request to download a recording.
+
+#### Request
+
+The following request uses delegated permission.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_live_event_recording",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-live-event-recording-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+The following request uses application permission.
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_live_event_recording"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
+```

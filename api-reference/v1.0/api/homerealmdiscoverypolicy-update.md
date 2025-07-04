@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "nickludwig"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 06/25/2024
 ---
 
 # Update homerealmdiscoverypolicy

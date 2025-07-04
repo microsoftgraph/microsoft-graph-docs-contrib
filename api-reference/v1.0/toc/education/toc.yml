@@ -38,6 +38,8 @@ items:
     href: ../../api/educationclass-delete.md
   - name: Get delta
     href: ../../api/educationclass-delta.md
+  - name: Get recently modified submissions
+    href: ../../api/educationclass-getrecentlymodifiedsubmissions.md
 - name: User
   items:
   - name: User
@@ -60,9 +62,9 @@ items:
   items:
   - name: Assignment
     href: ../../resources/educationassignment.md
-  - name: Create assignment resource
-    href: ../../api/educationassignment-post-resource.md
-  - name: Get assignment
+  - name: Create
+    href: ../../api/educationclass-post-assignments.md
+  - name: Get
     href: ../../api/educationassignment-get.md
   - name: Update
     href: ../../api/educationassignment-update.md
@@ -70,6 +72,12 @@ items:
     href: ../../api/educationassignment-delete.md
   - name: Publish
     href: ../../api/educationassignment-publish.md
+  - name: Create assignment resource
+    href: ../../api/educationassignment-post-resources.md
+  - name: Get assignment resource
+    href: ../../api/educationassignmentresource-get.md
+  - name: Delete assignment resource
+    href: ../../api/educationassignmentresource-delete.md
   - name: Set up assignment resources folder
     href: ../../api/educationassignment-setupresourcesfolder.md
   - name: Set up assignment feedback resources folder
@@ -110,9 +118,11 @@ items:
   items:
   - name: Assignment resource
     href: ../../resources/educationassignmentresource.md
+  - name: Create
+    href: ../../api/educationassignment-post-resources.md
   - name: Get
     href: ../../api/educationassignmentresource-get.md
-  - name: Delete from assignment
+  - name: Delete
     href: ../../api/educationassignmentresource-delete.md
 - name: Assignment settings
   items:

@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "sharepoint"
 description: "Retrieve the metadata for a driveItem in a drive by file system path or ID."
 doc_type: apiPageType
+ms.date: 06/12/2024
 ---
 # Get driveItem
 

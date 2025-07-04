@@ -5,6 +5,7 @@ author: "yogesh-randhawa"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # identifierUriConfiguration resource type
@@ -18,7 +19,8 @@ Namespace: microsoft.graph
 ## Properties
 | Property                            | Type                            | Description                 |
 | :-----------------------------------| :------------------------------ | :-------------------------- |
-| nonDefaultUriAddition               | [identifierUriRestriction](../resources/identifierurirestriction.md)       | Block new identifier URIs for applications, unless they are the "default" URI of the format `api://{appId}`.|
+| uriAdditionWithoutUniqueTenantIdentifier               | [identifierUriRestriction](../resources/identifierurirestriction.md)       | Block new identifier URIs for applications, unless they contain a unique tenant identifier like the tenant ID, **appId** (client ID), or verified domain. For example, `api://{tenatId}/string`, `api://{appId}/string`, `{scheme}://string/{tenantId}`, `{scheme}://string/{appId}`, `https://{verified-domain.com}/path`, `{scheme}://{subdomain}.{verified-domain.com}/path`.|
+| nonDefaultUriAddition               | [identifierUriRestriction](../resources/identifierurirestriction.md)       | Block new identifier URIs for applications, unless they are the "default" URI of the format `api://{appId}` or `api://{tenantId}/{appId}`.|
 
 ## Relationships
 None.
@@ -33,6 +35,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.identifierUriConfiguration",
+  "uriAdditionWithoutUniqueTenantIdentifier": {
+    "@odata.type": "microsoft.graph.identifierUriRestriction"
+  },
   "nonDefaultUriAddition": {
     "@odata.type": "microsoft.graph.identifierUriRestriction"
   }

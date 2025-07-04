@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "cloud-communications"
+ms.date: 07/22/2024
 ---
 
 # presence resource type

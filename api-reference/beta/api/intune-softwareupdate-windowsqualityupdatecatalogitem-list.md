@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List windowsQualityUpdateCatalogItems
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 446
+Content-Length: 1379
 
 {
   "value": [
@@ -74,7 +75,29 @@ Content-Length: 446
       "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
       "kbArticleId": "Kb Article Id value",
       "classification": "security",
-      "isExpeditable": true
+      "qualityUpdateCadence": "outOfBand",
+      "isExpeditable": true,
+      "productRevisions": [
+        {
+          "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogProductRevision",
+          "displayName": "Display Name value",
+          "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+          "versionName": "Version Name value",
+          "productName": "Product Name value",
+          "osBuild": {
+            "@odata.type": "microsoft.graph.windowsQualityUpdateProductBuildVersionDetail",
+            "majorVersionNumber": 2,
+            "minorVersionNumber": 2,
+            "buildNumber": 11,
+            "updateBuildRevision": 3
+          },
+          "knowledgeBaseArticle": {
+            "@odata.type": "microsoft.graph.windowsQualityUpdateProductKnowledgeBaseArticle",
+            "articleId": "Article Id value",
+            "articleUrl": "https://example.com/articleUrl/"
+          }
+        }
+      ]
     }
   ]
 }

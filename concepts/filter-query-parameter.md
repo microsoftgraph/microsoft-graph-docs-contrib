@@ -8,7 +8,7 @@ ms.reviewer: "Luca.Spolidoro"
 ms.localizationpriority: high
 ms.subservice: non-product-specific
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 04/19/2024
+ms.date: 12/30/2024
 #Customer intent: As a developer building apps that consume Microsoft Graph APIs, I want to learn how to use filter expressions to get only the items that meet specific criteria, and reduce the amount of data the app processes, improving app efficiency.
 ---
 
@@ -22,11 +22,11 @@ The `$filter` query parameter can also be applied against relationships like **m
 
 ## Operators and functions supported in filter expressions
 
-Microsoft Graph supports the use of following operators and functions. However, support by individual resources and its properties or relationships may vary. In addition, some properties and relationships support `$filter` only with [advanced queries](/graph/aad-advanced-queries). See the specific resource documentation for details, and [Syntax for using the filter OData query parameter](#syntax-for-using-the-filter-odata-query-parameter) for examples of how to use these operators and functions.
+Microsoft Graph supports the use of following operators and functions. However, support by individual resources and its properties or relationships may vary. In addition, some properties and relationships support `$filter` only with [advanced queries](/graph/aad-advanced-queries). See the specific resource documentation for details, and [Syntax for using the filter OData query parameter](#syntax-for-using-the-filter-odata-query-parameter) for examples of how to use these operators and functions. Also, [some limitations apply](/graph/known-issues?search=13635).
 
 | Operator type         | Operator                                                                                                                                         |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Equality operators    | <ul><li> Equals (`eq`) </li><li> Not equals (`ne`)</li><li> Logical negation (`not`)</li><li> In (`in`)</li><li> Has (`has`)</li></ul> <br/><br/> **Note:** When using the `in` operator, the request is limited to 15 expressions in the filter clause by default or a URL length of 2,048 characters when using [advanced query capabilities](./aad-advanced-queries.md).                               |
+| Equality operators    | <ul><li> Equals (`eq`) </li><li> Not equals (`ne`)</li><li> Logical negation (`not`)</li><li> In (`in`)</li><li> Has (`has`)</li></ul> <br/><br/> **Note:** See [query parameter limitations in the known issues](/graph/known-issues?search=13635) for limitations for `in` and `eq` operators.                         |
 | Relational operators  | <ul><li> Less than (`lt`) </li><li> Greater than (`gt`)</li><li> Less than or equal to (`le`)</li><li> Greater than or equal to (`ge`)</li></ul> |
 | Lambda operators      | <ul><li> Any (`any`) </li><li> All (`all`)</li></ul>                                                                                             |
 | Conditional operators | <ul><li> And (`and`) </li><li> Or (`or`)</li>                                                                                                    |
@@ -240,12 +240,12 @@ The following article demonstrates the syntax for using the `$filter` OData quer
 
 | Operator               | Syntax                                                                                                                             |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `eq`                   | `~/users?$filter=userType eq 'Member'`                                                                                             |
+| `eq`                   | `~/users?$filter=userType eq 'Member'` <br><br> `~/groups?$filter=isAssignableToRole eq true`                                                                                            |
 | `not`                  | `~/users?$filter=not(userType eq 'Member')`<sup> [ ** ](#**) </sup>                                                                                       |
-| `ne`                   | `~/users?$filter=companyName ne null`<sup> [ ** ](#**) </sup>                                                                                             |
+| `ne`                   | `~/users?$filter=companyName ne null`<sup> [ ** ](#**) </sup> <br><br> `~/groups?$filter=isAssignableToRole ne true`<sup> [ ** ](#**) </sup>                                                                                            |
 | `startswith`           | `~/users?$filter=startswith(userPrincipalName, 'admin')`                                                                           |
 | `endswith`             | `~/users?$filter=endswith(mail,'@outlook.com')`<sup> [ ** ](#**) </sup>                                                                                   |
-| `in`                   | `~/users?$filter=mail in ('mail1@domain.com', 'mail2@domain.com')`  <br/><br/> **Note:** For query strings using `in` operator, the request is limited to 15 expressions in the filter clause by default or a URL length of 2,048 characters when using [advanced query capabilities](./aad-advanced-queries.md).                                                                                          |
+| `in`                   | `~/users?$filter=mail in ('mail1@domain.com', 'mail2@domain.com')`  <br/><br/> **Note:** See [query parameter limitations in the known issues](/graph/known-issues?search=13635) for limitations for `in` and `eq` operators.                                                                                          |
 | `le`                   | `~/devices?$filter=registrationDateTime le 2021-01-02T12:00:00Z`<sup> [ ** ](#**) </sup>                                                                  |
 | `ge`                   | `~/devices?$filter=registrationDateTime ge 2021-01-02T12:00:00Z`<sup> [ ** ](#**) </sup>                                                                  |
 | `not` and `endswith`   | `~/users?$filter=not(endswith(mail, 'contoso.com'))`<sup> [ ** ](#**) </sup>                                                                          |

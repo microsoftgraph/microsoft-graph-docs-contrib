@@ -6,6 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
 
 # group resource type
@@ -69,6 +70,9 @@ This resource supports:
 | [Update event](../api/group-update-event.md) | None | Update the properties of an event object. |
 | [Delete event](../api/group-delete-event.md) | None | Delete event object. |
 | [List calendar view](../api/group-list-calendarview.md) | [event](event.md) collection | Get a collection of events in a specified time window. |
+| **Cloud licensing** |  |  |
+|[List usage rights](../api/cloudlicensing-groupcloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a group.|
+|[Get usage right](../api/cloudlicensing-usageright-get.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to a group.|
 | **Conversations** |  |  |
 | [List conversations](../api/group-list-conversations.md) | [conversation](conversation.md) collection | Get a conversation object collection. |
 | [Create conversation](../api/group-post-conversations.md) | [conversation](conversation.md) | Create a new conversation by posting to the conversations collection. |
@@ -149,6 +153,7 @@ name. |
 | assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the group. <br><br>Returned only on `$select`. Supports `$filter` (`eq`). Read-only. |
 | autoSubscribeNewMembers | Boolean | Indicates if new members added to the group are auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | classification | String | Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorysetting.md) value, based on the [template definition](directorysettingtemplate.md).<br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
+| cloudLicensing | [microsoft.graph.cloudLicensing.groupCloudLicensing](../resources/cloudlicensing-groupcloudlicensing.md) | The relationships of a group to cloud licensing resources. |
 | createdByAppId | String | App ID of the app used to create the group. Can be null for some groups. <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`, `startsWith`). |
 | createdDateTime | DateTimeOffset | Timestamp of when the group was created. The value can't be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only. |
 | deletedDateTime | DateTimeOffset | For some Microsoft Entra objects (user, group, application), if the object is deleted, it is first logically deleted, and this property is updated with the date and time when the object was deleted. Otherwise this property is null. If the object is restored, this property is updated to `null`. Inherited from [directoryObject](../resources/directoryobject.md). |
@@ -163,7 +168,7 @@ name. |
 | isArchived | Boolean | When a group is associated with a team, this property determines whether the team is in read-only mode. <br/>To read this property, use the `/group/{groupId}/team` endpoint or the [Get team](../api/team-get.md) API. To update this property, use the [archiveTeam](../api/team-archive.md) and [unarchiveTeam](../api/team-unarchive.md) APIs. |
 | isAssignableToRole | Boolean | Indicates whether this group can be assigned to a Microsoft Entra role. Optional. <br><br>This property can only be set while creating the group and is immutable. If set to `true`, the **securityEnabled** property must also be set to `true`,  **visibility** must be `Hidden`, and the group cannot be a dynamic group (that is, **groupTypes** can't contain `DynamicMembership`). <br/><br/>Only callers with at least the Privileged Role Administrator role can set this property. The caller must also be assigned the _RoleManagement.ReadWrite.Directory_ permission to set this property or update the membership of such groups. For more, see [Using a group to manage Microsoft Entra role assignments](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Using this feature requires a Microsoft Entra ID P1 license. Returned by default. Supports `$filter` (`eq`, `ne`, `not`). |
 | isFavorite | Boolean | Indicates whether the user marked the group as favorite. |
-| isManagementRestricted | Boolean | Indicates whether the group is a member of a restricted management administrative unit. The default value is `false`. Read-only. <br/><br/> To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit. |
+| isManagementRestricted | Boolean | Indicates whether the group is a member of a restricted management administrative unit. If not set, the default value is `null` and the default behavior is false. Read-only. <br/><br/> To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit. |
 | infoCatalogs | String collection | Identifies the info segments assigned to the group. Returned by default. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | isSubscribedByMail | Boolean | Indicates whether the signed-in user is subscribed to receive email conversations. The default value is `true`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | licenseProcessingState | String | Indicates the status of the group license assignment to all group members. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`. <br><br>Returned only on `$select`. Read-only. |
@@ -288,8 +293,9 @@ The following JSON representation shows the resource type.
   "accessType": "String",
   "assignedLabels": [{ "@odata.type": "microsoft.graph.assignedLabel" }],
   "assignedLicenses": [{ "@odata.type": "microsoft.graph.assignedLicense" }],
-  "allowExternalSenders": false,
-  "autoSubscribeNewMembers": true,
+  "allowExternalSenders": "Boolean",
+  "autoSubscribeNewMembers": "Boolean",
+  "cloudLicensing": { "@odata.type": "microsoft.graph.cloudLicensing.groupCloudLicensing" },
   "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
@@ -297,16 +303,17 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "expirationDateTime": "String (timestamp)",
   "groupTypes": ["String"],
-  "hideFromAddressLists": false,
-  "hideFromOutlookClients": false,
+  "hideFromAddressLists": "Boolean",
+  "hideFromOutlookClients": "Boolean",
   "id": "String (identifier)",
-  "isFavorite": true,
-  "isArchived": false,
-  "isAssignableToRole": false,
-  "isSubscribedByMail": true,
+  "isFavorite": "Boolean",
+  "isArchived": "Boolean",
+  "isAssignableToRole": "Boolean",
+  "isManagementRestricted": "Boolean",
+  "isSubscribedByMail": "Boolean",
   "licenseProcessingState": "String",
   "mail": "String",
-  "mailEnabled": true,
+  "mailEnabled": "Boolean",
   "mailNickname": "String",
   "onPremisesDomainName": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
@@ -316,21 +323,21 @@ The following JSON representation shows the resource type.
   ],
   "onPremisesSamAccountName": "String",
   "onPremisesSecurityIdentifier": "String",
-  "onPremisesSyncEnabled": true,
+  "onPremisesSyncEnabled": "Boolean",
   "preferredDataLocation": "String",
   "proxyAddresses": ["String"],
   "renewedDateTime": "String (timestamp)",
   "resourceBehaviorOptions": ["String"],
   "resourceProvisioningOptions": ["String"],
-  "securityEnabled": true,
+  "securityEnabled": "Boolean",
   "securityIdentifier": "String",
   "serviceProvisioningErrors": [
     { "@odata.type": "microsoft.graph.serviceProvisioningXmlError" }
   ],
   "uniqueName": "String",
-  "unseenConversationsCount": 1024,
-  "unseenCount": 1024,
-  "unseenMessagesCount": 1024,
+  "unseenConversationsCount": "Int32",
+  "unseenCount": "Int32",
+  "unseenMessagesCount": "Int32",
   "visibility": "String",
   "acceptedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
@@ -349,7 +356,7 @@ The following JSON representation shows the resource type.
   "sites": [{ "@odata.type": "microsoft.graph.site" }],
   "threads": [{ "@odata.type": "microsoft.graph.conversationThread" }],
   "classification": "String",
-  "hasMembersWithLicenseErrors": true,
+  "hasMembersWithLicenseErrors": "Boolean",
   "membershipRule": "String",
   "membershipRuleProcessingState": "String",
   "membershipRuleProcessingStatus": {

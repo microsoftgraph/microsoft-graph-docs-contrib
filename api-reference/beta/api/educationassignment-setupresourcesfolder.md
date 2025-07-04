@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sharmas"
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # educationAssignment: setUpResourcesFolder
@@ -50,15 +51,14 @@ The following example shows how to call this API.
 ### Request
 The following example shows a request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["955e0bd5-52c2-41ad-b7e8-5b33a18c5e78","18d17255-3278-49fb-8da7-d095b7f610c4"],  
+  "sampleKeys": ["ce2cd7da-e41b-4e66-8390-c9251e4c3a40","f5e60dc1-d084-4ca4-a3b4-025f11023059"],  
   "name": "educationassignment_setupresourcesfolder"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/education/classes/955e0bd5-52c2-41ad-b7e8-5b33a18c5e78/assignments/18d17255-3278-49fb-8da7-d095b7f610c4/setUpResourcesFolder
+POST https://graph.microsoft.com/beta/education/classes/ce2cd7da-e41b-4e66-8390-c9251e4c3a40/assignments/f5e60dc1-d084-4ca4-a3b4-025f11023059/setUpResourcesFolder
 Content-type: application/json
 
 {
@@ -112,42 +112,40 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('955e0bd5-52c2-41ad-b7e8-5b33a18c5e78')/assignments/$entity",
-    "classId": "955e0bd5-52c2-41ad-b7e8-5b33a18c5e78",
-    "displayName": "Unit 3 Essay",
-    "closeDateTime": "2021-04-06T00:00:00Z",
-    "dueDateTime": "2021-04-05T00:00:00Z",
-    "assignDateTime": "2021-04-01T00:00:00Z",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.educationAssignment",
+    "classId": "ce2cd7da-e41b-4e66-8390-c9251e4c3a40",
+    "displayName": "New assignment",
+    "closeDateTime": null,
+    "dueDateTime": "2025-05-09T00:00:00Z",
+    "assignDateTime": null,
     "assignedDateTime": null,
     "allowLateSubmissions": true,
-    "createdDateTime": "2021-03-04T00:02:31.9834674Z",
-    "lastModifiedDateTime": "2021-03-04T00:02:32.0954032Z",
-    "allowStudentsToAddResourcesToSubmission": true,
+    "resourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!uf0jSRLkbEOG04PymQ5PtqVEDwHjP_xMlkkpCG-1CkKVvLn9JeueT63KQGyKclfr/items/01VPGD5VK63GWH3UQMJVFKZHZUA545JCBB",
+    "feedbackResourcesFolderUrl": null,
+    "createdDateTime": "2025-05-07T18:17:06.2831309Z",
+    "lastModifiedDateTime": "2025-05-16T18:21:18.9640425Z",
+    "allowStudentsToAddResourcesToSubmission": false,
     "status": "draft",
     "notificationChannelUrl": null,
-    "addedStudentAction": "assignIfOpen",
-    "addToCalendarAction": "studentsAndTeamOwners",
-    "id": "18d17255-3278-49fb-8da7-d095b7f610c4",
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22ce2cd7da-e41b-4e66-8390-c9251e4c3a40%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22f5e60dc1-d084-4ca4-a3b4-025f11023059%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addToCalendarAction": "none",
+    "addedStudentAction": "none",
+    "languageTag": "es",
+    "moduleUrl": null,
+    "id": "f5e60dc1-d084-4ca4-a3b4-025f11023059",
+    "grading": null,
     "instructions": {
-        "content": "Upload a 500 word essay about the theme of nature in a Shakespearean sonnet.",
+        "content": null,
         "contentType": "text"
     },
-    "grading": {
-        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-        "maxPoints": 100
-    },
     "assignTo": {
-        "@odata.type": "#microsoft.graph.educationAssignmentIndividualRecipient",
-        "recipients": [
-            "42ff222c-571f-497c-a9d3-f77ea9ece327"
-        ]
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
     },
-    "resourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!H0Unq6KJREmMLHgbJXfKw4YTuh2luKRDvUVGQBLOmvaRxxvbedZKT4LKslSIjT9a/items/01SMYGQ3IUCDNLBJ4XCFE3AQMQHTLSLVYX",
     "createdBy": {
         "application": null,
         "device": null,
         "user": {
-            "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -155,7 +153,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
+            "id": "00000003-0000-0000-c000-000000000000",
             "displayName": null
         }
     }

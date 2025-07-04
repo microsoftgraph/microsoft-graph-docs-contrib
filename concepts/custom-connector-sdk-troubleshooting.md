@@ -1,16 +1,17 @@
 ---
-title: "Troubleshoot issues with the Microsoft Graph connectors SDK"
+title: "Troubleshoot issues with the Microsoft 365 Copilot connectors SDK"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Learn how to troubleshoot issues with the Microsoft Graph connectors SDK."
+description: "Learn how to troubleshoot issues with the Copilot connectors SDK."
+ms.date: 11/07/2024
 ---
 
-# Troubleshoot issues with the Microsoft Graph connectors SDK
+# Troubleshoot issues with the Copilot connectors SDK
 
-This article describes some of the most common issues with the Microsoft Graph connectors SDK, and how to troubleshoot them.
+This article describes some of the most common issues with the Microsoft 365 Copilot connectors SDK, and how to troubleshoot them.
 
 ## Items missing from the index
 
@@ -108,7 +109,7 @@ If the service fails to start, check the event viewer error logs. Open the event
 
 If you need more help troubleshooting an issue, you can raise an [issue](https://github.com/microsoftgraph/msgraph-connectors-sdk/issues) or start a [discussion](https://github.com/microsoftgraph/msgraph-connectors-sdk/discussions) on relevant topics through our GitHub repository.
 
-You can also reach out to the [Microsoft Graph Connectors team](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com) for more help and troubleshooting.
+You can also reach out to the [Copilot connectors team](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com) for more help and troubleshooting.
 
 ## Related content
 

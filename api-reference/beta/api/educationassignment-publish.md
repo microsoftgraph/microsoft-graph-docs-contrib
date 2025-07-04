@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 05/21/2024
 ---
 
 # educationAssignment: publish
@@ -59,12 +60,11 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1b6df208-ea5a-475c-8dd2-b92f693c928a"],
   "name": "educationassignment_publish_2"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1b6df208-ea5a-475c-8dd2-b92f693c928a/publish
+POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/bb8994da-8a57-4b64-9fd9-108099f3940f/publish
 ```
 
 # [C#](#tab/csharp)
@@ -114,29 +114,34 @@ The following example shows the response.
 HTTP/1.1 200 Ok
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationAssignment",
-    "@odata.type": "#microsoft.graph.educationAssignment",
-    "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
-    "displayName": "Reading Test 09.03 3",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.educationAssignment",
+    "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+    "displayName": "publish assignment 02 - draft",
     "closeDateTime": null,
-    "dueDateTime": "2021-09-05T06:59:00Z",
+    "dueDateTime": "2025-05-12T18:29:00Z",
     "assignDateTime": null,
     "assignedDateTime": null,
     "allowLateSubmissions": true,
     "resourcesFolderUrl": null,
-    "createdDateTime": "2021-09-03T23:26:35.4182773Z",
-    "lastModifiedDateTime": "2021-09-03T23:28:05.0704312Z",
+    "feedbackResourcesFolderUrl": null,
+    "createdDateTime": "2025-05-08T18:32:27.2633843Z",
+    "lastModifiedDateTime": "2025-05-08T18:33:46.9004801Z",
     "allowStudentsToAddResourcesToSubmission": true,
     "status": "published",
-    "notificationChannelUrl": null,
-    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2272a7baec-c3e9-4213-a850-f62de0adad5f%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%221b6df208-ea5a-475c-8dd2-b92f693c928a%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
-    "addToCalendarAction": "none",
-    "addedStudentAction": "none",
-    "id": "1b6df208-ea5a-475c-8dd2-b92f693c928a",
-    "grading": null,
+    "notificationChannelUrl": "https://graph.microsoft.com/beta/teams/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/channels/37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22bb8994da-8a57-4b64-9fd9-108099f3940f%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addToCalendarAction": "studentsAndTeamOwners",
+    "addedStudentAction": "assignIfOpen",
+    "languageTag": "en-US",
+    "moduleUrl": null,
+    "id": "bb8994da-8a57-4b64-9fd9-108099f3940f",
     "instructions": {
-        "content": "",
-        "contentType": "text"
+        "content": "publish assignment 02 - draft",
+        "contentType": "html"
+    },
+    "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 100
     },
     "assignTo": {
         "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
@@ -145,7 +150,7 @@ HTTP/1.1 200 Ok
         "application": null,
         "device": null,
         "user": {
-            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -153,7 +158,7 @@ HTTP/1.1 200 Ok
         "application": null,
         "device": null,
         "user": {
-            "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+            "id": "00000003-0000-0000-c000-000000000000",
             "displayName": null
         }
     }

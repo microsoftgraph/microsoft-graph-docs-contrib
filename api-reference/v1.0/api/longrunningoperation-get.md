@@ -6,6 +6,7 @@ author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 07/23/2024
 ---
 
 # Get longRunningOperation

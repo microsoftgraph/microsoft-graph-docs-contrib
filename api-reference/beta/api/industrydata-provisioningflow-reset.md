@@ -5,6 +5,7 @@ author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 07/09/2024
 ---
 
 # provisioningFlow: reset

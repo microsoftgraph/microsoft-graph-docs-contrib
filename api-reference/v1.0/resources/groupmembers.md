@@ -1,12 +1,13 @@
 ---
-title: "groupMembers complex type"
-description: "Identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer."
+title: "groupMembers resource type"
+description: "Identifies a collection of users in the tenant who are allowed as requestor, approver, or reviewer."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
-# groupMembers complex type
+# groupMembers resource type
 
 Namespace: microsoft.graph
 

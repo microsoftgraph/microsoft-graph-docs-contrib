@@ -6,6 +6,7 @@ author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Get authenticationMethod
@@ -42,6 +43,8 @@ Get your own authentication methods.
 ``` http
 GET /me/authentication/methods/{id}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Get your own or another user's authentication methods.
 <!-- { "blockType": "ignored" } -->

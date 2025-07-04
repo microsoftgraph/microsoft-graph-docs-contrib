@@ -1,10 +1,11 @@
 ---
 title: "List webinars"
-description: "Get the list of all virtual event webinars created in a tenant."
+description: "Get the list of all virtualEventWebinar objects created in a tenant."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/18/2024
 ---
 
 # List webinars
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in the tenant.
+Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in a tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -41,7 +42,7 @@ GET /solutions/virtualEvents/webinars
 
 ## Optional query parameters
 
-This method supports the `$count` [OData query parameter](/graph/query-parameters) to help customize the response. If you use `?$count=true` in the request URL, the response contains a root-level property that denotes the total number of the resource; for example: `"@odata.count": 6`.
+This method supports the `$count` [OData query parameter](/graph/query-parameters) to help customize the response. If you use `?$count=true` in the request URL, the response contains a root-level property that denotes the total number of the resource; for example, `"@odata.count": 6`.
 
 ## Request headers
 
@@ -160,7 +161,13 @@ Content-Type: application/json
       ],
       "settings": {
         "isAttendeeEmailNotificationEnabled": false
-      }
+      },
+      "externalEventInformation": [
+        {
+          "applicationId" : "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
+          "externalEventId": "myExternalEventId"
+        }
+      ]
     }
   ]
 }

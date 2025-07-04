@@ -1,13 +1,14 @@
 ---
-title: printerCapabilities complex type
+title: "printerCapabilities resource type"
 description: Represents the capabilities reported by a printer.
 author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
 
-# printerCapabilities complex type
+# printerCapabilities resource type
 
 Namespace: microsoft.graph
 

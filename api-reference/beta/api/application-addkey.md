@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # application: addKey
@@ -34,6 +35,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!NOTE]
 > An application does not need any specific permission to roll its own keys. 
+
+[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ## HTTP request
 

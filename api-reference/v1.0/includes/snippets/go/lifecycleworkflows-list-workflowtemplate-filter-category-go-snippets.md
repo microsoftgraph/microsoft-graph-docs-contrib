@@ -18,10 +18,10 @@ import (
 
 requestFilter := "category eq 'leaver'"
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowTemplatesRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.LifecycleWorkflowsWorkflowTemplatesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowTemplatesRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.LifecycleWorkflowsWorkflowTemplatesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

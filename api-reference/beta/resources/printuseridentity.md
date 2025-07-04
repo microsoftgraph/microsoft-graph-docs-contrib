@@ -5,6 +5,7 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printUserIdentity resource type
@@ -22,6 +23,9 @@ Represents a user identity within the Universal Print service. Maps to an [Micro
 |displayName|String|The printUserIdentity's display name.|
 |ipAddress|String|The printUserIdentity' IP address. Not populated.|
 |userPrincipalName|String|The printUserIdentity's user principal name (UPN).|
+
+## Relationships
+None.
 
 ## JSON representation
 

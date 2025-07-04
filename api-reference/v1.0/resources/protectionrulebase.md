@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Protection rule
+ms.date: 10/24/2024
 ---
 
 # protectionRuleBase resource type
@@ -33,20 +34,19 @@ The following limitations apply to this resource:
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the rule.|
 |createdDateTime|DateTimeOffset|The time of creation of the rule.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an operation on a rule fails.|
-|isAutoApplyEnabled|Boolean| `true` indicates that the protection rule is dynamic; `false` that it's static. Currently, only static rules are supported.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification made to the rule.|
-|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
+|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. The `draft` member is currently unsupported.|
 
 ### protectionRuleStatus values
 
 |Member | Description |
 |:------|:------------|
-|draft | The initial status of the protection rule upon creation.|
+|draft | The initial status of the protection rule upon creation. The `draft` member is currently unsupported. |
 |active | The status of the protection rule when it's running.|
 |completed | The status of the protection rule when it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status of the protection rule when the rule ran but encountered errors.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.    |
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.    |
 
 ## Relationships
 
@@ -78,7 +78,6 @@ The following JSON representation shows the resource type.
   },
   "error": {
     "@odata.type": "microsoft.graph.publicError"
-  },
-  "isAutoApplyEnabled": "Boolean"
+  }
 }
 ```

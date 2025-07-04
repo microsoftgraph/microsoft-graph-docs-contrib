@@ -1,10 +1,11 @@
 ---
 title: "List Windows settings"
-description: "Get a list of windowsSetting objects and their properties."
+description: "Get a list of windowsSetting objects and their properties for a user."
 author: "MS-Arko"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: apiPageType
+ms.date: 04/19/2024
 ---
 
 # List Windows settings
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [windowsSetting](../resources/windowssetting.md) objects and their properties for the signed in user.
+Get a list of [windowsSetting](../resources/windowssetting.md) objects and their properties for a user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -24,15 +25,30 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "usersettings_list_windows" } -->
 [!INCLUDE [permissions-table](../includes/permissions/usersettings-list-windows-permissions.md)]
 
+>[!NOTE]
+> * The calling user must be assigned the _Microsoft 365 Backup Administrator_ [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+> * The `UserWindowsSettings.Read` permission allows the app to read the settings of only the signed-in user. 
+> * The `UserWindowsSettings.Read.All` permission allows the app to read the settings of a specific user.
+
 ## HTTP request
 
+For a specific user:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /me/settings/windows
+GET /users/{user-id}@{tenant-id}/settings/windows
 ````
+
+> [!NOTE]
+> The `{tenant-id}` value must match the tenant ID of the calling user. To find your tenant ID, see [How to find your Microsoft Entra tenant ID](/entra/fundamentals/how-to-find-tenant).
+
+For the signed-in user:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/settings/windows
+```
 
 ## Optional query parameters
 
@@ -43,7 +59,7 @@ You can filter the results by the following properties:
 - **windowsDeviceId**: A string value that represents the unique identifier of a Windows device. This identifier can be found in the response body. When you filter on **windowsDeviceId**, you can get a list of settings specific to that device. Only the equality (`eq`) comparison is supported for this parameter.
 - **settingType**: An enumeration with the following valid values: `roaming` and `backup`. The **settingType** property allows you to narrow down the results to settings related to either roaming or backup. Only the equality (`eq`) comparison is supported for this parameter. For more information, see [windowsSettingType](../resources/enums.md#windowssettingtype-values).
 
-For more details about how to use this query parameter, see the [Examples](./usersettings-list-windows.md#examples) section.
+For more information about how to use this query parameter, see the [Examples](./usersettings-list-windows.md#examples) section.
 
 ## Request headers
 
@@ -60,7 +76,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [windowsSetting](../resources/windowssetting.md) objects in the response body.
 
-If the response contains more than one page of data, the response body will contain an `@odata.nextLink` property. This property will contain a URL that can be used to request the next page of data. The URL should be used without any modification.
+If the response contains more than one page of data, the response body contains an `@odata.nextLink` property. This property will contain a URL that can be used to request the next page of data. The URL should be used without any modification.
 
 
 ## Examples

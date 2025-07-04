@@ -5,6 +5,7 @@ author: "sureshja"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 08/05/2024
 ---
 
 # Add owner
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an owner to an [application](../resources/application.md). Currently, [users](../resources/user.md) and [service principals](../resources/serviceprincipal.md) are supported as owners of applications.
+Add an owner to an [application](../resources/application.md). Application owners can be individual users, the associated service principal, or another service principal.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

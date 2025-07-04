@@ -6,6 +6,7 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/15/2024
 ---
 
 # Update authorizationPolicy
@@ -25,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "authorizationpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authorizationpolicy-update-permissions.md)]
 
-For delegated scenarios, the user needs to have the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+[!INCLUDE [rbac-authorization-policy-apis-update](../includes/rbac-for-apis/rbac-authorization-policy-apis-update.md)]
 
 ## HTTP request
 
@@ -334,7 +335,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 5: Enable default user role to use Self-Serve Password Reset feature
+### Example 5: Enable administrators to use the self-serve password reset feature
 
 #### Request
 

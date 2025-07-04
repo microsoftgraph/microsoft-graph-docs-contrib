@@ -1,17 +1,18 @@
 ---
 title: "Create assignmentPolicies"
-description: "Create a new accessPackageAssignmentPolicy object."
+description: "Create a new accessPackageAssignmentPolicy object in Microsoft Entra entitlement management."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 07/16/2024
 ---
 
 # Create assignmentPolicies
 
 Namespace: microsoft.graph
 
-In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.  The request will include a reference to the [accessPackage](../resources/accesspackage.md) that will contain this policy, which must already exist.
+Create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md). The request includes a reference to the [accessPackage](../resources/accesspackage.md) that contains this policy, which must already exist.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -22,6 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_post_assignmentpolicies" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-assignmentpolicies-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-access-package-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-manager-apis-write.md)]
 
 ## HTTP request
 
@@ -50,6 +52,7 @@ You can specify the following properties when creating an **accessPackageAssignm
 |displayName|String|The display name of the policy.|
 |allowedTargetScope|allowedTargetScope|Who is allowed to be assigned the access package through this policy. The possible values are: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`. Optional.|
 |expiration|[expirationPattern](../resources/expirationpattern.md)|The expiration date for assignments created in this policy.|
+|notificationSettings|[accessPackageNotificationSettings](../resources/accesspackagenotificationsettings.md)|Represents the settings for email notifications for requests to an access package.|
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Specifies the settings for approval of requests for an access package assignment through this policy. For example, if approval is required for new requests.|
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Provides additional settings to select who can create a request for an access package assignment through this policy, and what they can include in their request.|
 |reviewSettings|[accessPackageAssignmentReviewSettings](../resources/accesspackageassignmentreviewsettings.md)|Settings for access reviews of assignments through this policy.|

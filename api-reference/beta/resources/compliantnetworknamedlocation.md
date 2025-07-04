@@ -5,6 +5,7 @@ author: "ckeatss"
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
 doc_type: resourcePageType
+ms.date: 06/05/2024
 ---
 
 # compliantNetworkNamedLocation resource type

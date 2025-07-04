@@ -5,6 +5,7 @@ author: "lfernandez"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # idleSessionSignOut resource type
@@ -22,6 +23,9 @@ Represents the idle session sign-out policy settings for SharePoint.
 | isEnabled             | Boolean  | Indicates whether the idle session sign-out policy is enabled.                            |
 | signOutAfterInSeconds | Int64    | Number of seconds of inactivity after which a user is signed out.                         |
 | warnAfterInSeconds    | Int64    | Number of seconds of inactivity after which a user is notified that they'll be signed out.|
+
+## Relationships
+None.
 
 ## JSON representation
 

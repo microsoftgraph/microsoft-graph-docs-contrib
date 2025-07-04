@@ -1,10 +1,11 @@
 ---
-title: printSettings resource type
-description: Represents tenant-wide settings for the Universal Print service.
-author: braedenp-msft
+title: "printSettings resource type"
+description: "Represents tenant-wide settings for the Universal Print service."
+author: "braedenp-msft"
 ms.localizationpriority: medium
-ms.subservice: universal-print
+ms.subservice: "universal-print"
 doc_type: resourcePageType
+ms.date: "07/23/2024"
 ---
 
 # printSettings resource type
@@ -14,6 +15,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents tenant-wide settings for the Universal Print service.
+
+> [!NOTE]
+> **AirPrint**, **Mac**, and **macOS** are trademarks of Apple, Inc., registered in the US and other countries/regions.
 
 ## Properties
 | Property     | Type        | Description |
@@ -38,13 +42,7 @@ The following JSON shows a representation of the resource.
 
 ```json
 {
-  "documentConversionEnabled": true,
-  "printerDiscoverySettings": {
-    "@odata.type": "microsoft.graph.printerDiscoverySettings"
-  }
+  "documentConversionEnabled": "Boolean",
+  "printerDiscoverySettings": {"@odata.type": "microsoft.graph.printerDiscoverySettings"}
 }
 ```
-
-## Credit notice
-
-**AirPrint**, **Mac**, and **macOS** are trademarks of Apple, Inc., registered in the US and other countries/regions.

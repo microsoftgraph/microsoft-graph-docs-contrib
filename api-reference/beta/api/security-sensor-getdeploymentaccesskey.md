@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Get the deployment access key associated with a Microsoft Defender for Identity, needed to install sensors associated with the workspace.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -17,17 +17,14 @@ import (
 )
 
 requestBody := graphteams.NewClockInPostRequestBody()
+isAtApprovedLocation := true
+requestBody.SetIsAtApprovedLocation(&isAtApprovedLocation) 
 notes := graphmodels.NewItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 
 notes.SetContentType(&contentType) 
-content := "clock in notes"
+content := "clocking in"
 notes.SetContent(&content) 
 requestBody.SetNotes(notes)
-additionalData := map[string]interface{}{
-	atAprovedLocation := true
-requestBody.SetAtAprovedLocation(&atAprovedLocation) 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 clockIn, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimeCards().ClockIn().Post(context.Background(), requestBody, nil)

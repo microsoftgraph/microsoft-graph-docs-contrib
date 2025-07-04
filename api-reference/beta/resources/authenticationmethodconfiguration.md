@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 05/01/2024
 ---
 
 # authenticationMethodConfiguration resource type
@@ -26,6 +27,7 @@ The following authentication methods are derived from the **authenticationMethod
 + [temporaryAccessPassAuthenticationMethodConfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)
 + [voiceAuthenticationMethodConfiguration](voiceauthenticationmethodconfiguration.md)
 + [x509CertificateAuthenticationMethodConfiguration](x509certificateauthenticationmethodconfiguration.md)
++ [qrCodePinAuthenticationMethodConfiguration](qrcodepinauthenticationmethodconfiguration.md)
 
 ## Properties
 |Property|Type|Description|

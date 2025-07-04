@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/05/2024
 ---
 
 # Delete accessPackageAssignmentRequest
@@ -17,7 +18,7 @@ Delete an [accessPackageAssignmentRequest](../resources/accesspackageassignmentr
 
 This request can be made to remove a denied or completed request.  You can't delete an access package assignment request if it has any **accessPackageAssignment** objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -25,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-delete-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-access-package-assignment-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-assignment-manager-apis-write.md)]
 
 ## HTTP request
 

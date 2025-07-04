@@ -5,6 +5,7 @@ author: "bkeerthivasa"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 10/14/2024
 ---
 
 # chat: getAllRetainedMessages
@@ -18,9 +19,9 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
 > [!NOTE]  
-> This API requires [Teams retention policies](/purview/create-retention-policies?tabs=teams-retention) to be configured. For more information, see [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies).
+> This API requires [Teams retention policies](/purview/create-retention-policies?tabs=teams-retention) to be configured. For more information, see [Learn about retention for Microsoft Teams](/purview/retention-policies-teams).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

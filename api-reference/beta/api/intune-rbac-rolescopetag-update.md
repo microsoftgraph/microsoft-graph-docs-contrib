@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update roleScopeTag
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -55,6 +56,7 @@ The following table shows the properties that are required when you create the [
 |displayName|String|The display or friendly name of the Role Scope Tag.|
 |description|String|Description of the Role Scope Tag.|
 |isBuiltIn|Boolean|Description of the Role Scope Tag. This property is read-only.|
+|permissions|String collection|Permissions associated with the Role Scope Tag. This property is read-only.|
 
 
 
@@ -68,13 +70,16 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/roleScopeTags/{roleScopeTagId}
 Content-type: application/json
-Content-length: 155
+Content-length: 206
 
 {
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "displayName": "Display Name value",
   "description": "Description value",
-  "isBuiltIn": true
+  "isBuiltIn": true,
+  "permissions": [
+    "Permissions value"
+  ]
 }
 ```
 
@@ -83,13 +88,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 204
+Content-Length: 255
 
 {
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "id": "9ed1e179-e179-9ed1-79e1-d19e79e1d19e",
   "displayName": "Display Name value",
   "description": "Description value",
-  "isBuiltIn": true
+  "isBuiltIn": true,
+  "permissions": [
+    "Permissions value"
+  ]
 }
 ```

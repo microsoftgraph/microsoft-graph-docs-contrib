@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: security
 author: "preetikr"
+ms.date: 07/09/2024
 ---
 
 # List secureScores

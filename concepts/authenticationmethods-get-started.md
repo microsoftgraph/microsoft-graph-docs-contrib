@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: jpeterre
 ms.localizationpriority: high
 ms.subservice: entra-sign-in
-ms.date: 01/18/2024
+ms.date: 01/27/2025
 ms.topic: concept-article
 #customer intent: As a developer, I want to understand what user authentication options are available for Microsoft Entra ID through Microsoft Graph, and how I can integrate them into my applications.
 ---

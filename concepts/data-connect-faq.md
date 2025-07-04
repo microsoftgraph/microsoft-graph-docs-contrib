@@ -4,6 +4,8 @@ description: "Find answers to frequently asked questions about how Data Connect 
 author: "David1997sb"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
+ms.date: 11/07/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Microsoft Graph Data Connect frequently asked questions
@@ -47,7 +49,7 @@ Because Data Connect is designed to extract large amounts of data in bulk, some 
 
 ## What regions is Microsoft Graph Data Connect available in?
 
-Microsoft Graph Data Connect is currently available in multiple regions across the following geographies: North America, Europe, Asia Pacific, United Kingdom/Great Britain, and Australia. Other regions will be available in the future.
+Microsoft Graph Data Connect is currently available in multiple regions across the following geographies: North America, Europe, Asia Pacific, United Kingdom, and Australia. Other regions will be available in the future.
 
 For a list of Office to Azure regions and mappings, see [Dataset, regions and sinks](/graph/data-connect-datasets#regions).
 

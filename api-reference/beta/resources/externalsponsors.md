@@ -1,13 +1,14 @@
 ---
-title: "externalSponsors complex type"
-description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
+title: "externalSponsors resource type"
+description: "Identifies a relationship to another user in the tenant who is allowed as approver."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 10/04/2024
 ---
 
-# externalSponsors complex type
+# externalSponsors resource type
 
 Namespace: microsoft.graph
 

@@ -5,9 +5,10 @@ author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
-# subdomain resource type
+# subdomain resource
 
 Namespace: microsoft.graph.security
 
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents an internet domain that is part of a primary domain. For example, learn.microsoft.com is a subdomain of microsoft.com. 
 
-For every subdomain, there can be a new set of IP addresses to which the domain resolves. This can be a great data source for finding related infrastructure.
+For every subdomain, there can be a new set of IP addresses to which the domain resolves. It can be a great data source for finding related infrastructure.
 
 ## Methods
 

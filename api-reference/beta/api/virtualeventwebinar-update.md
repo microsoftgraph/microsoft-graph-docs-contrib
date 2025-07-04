@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/18/2024
 ---
 
 # Update virtualEventWebinar
@@ -172,6 +173,12 @@ Content-Type: application/json
   ],
   "settings": {
       "isAttendeeEmailNotificationEnabled": false
-  }
+  },
+  "externalEventInformation": [
+    {
+      "applicationId" : "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
+      "externalEventId": "myExternalEventId"
+    }
+  ]
 }
 ```

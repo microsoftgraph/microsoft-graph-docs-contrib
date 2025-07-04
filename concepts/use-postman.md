@@ -3,6 +3,8 @@ title: "Use Postman with the Microsoft Graph API"
 description: "Postman is an API platform for building and using APIs. Use the Microsoft Graph Postman collection to get started with Microsoft Graph APIs."
 author: "jasonjoh"
 ms.localizationpriority: high
+ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Use Postman with the Microsoft Graph API
@@ -109,6 +111,3 @@ Certain [conditional access policies](/azure/active-directory/conditional-access
 
 See [403 Forbidden "Access to OData is disabled."](resolve-auth-errors.md#403-forbidden-access-to-odata-is-disabled).
 
-## Related content
-
-- [Use Postman with the Microsoft Graph connectors API](connecting-external-content-connectors-api-postman.md)

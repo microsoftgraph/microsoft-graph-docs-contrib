@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "DougKirschner"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # Add a scopedRoleMember
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "administrativeunit_post_scopedrolemembers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-post-scopedrolemembers-permissions.md)]
 
-To assign Microsoft Entra roles with an administrative unit scope, the calling principal must be assigned at least the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+[!INCLUDE [rbac-admin-units-apis-write](../includes/rbac-for-apis/rbac-admin-units-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

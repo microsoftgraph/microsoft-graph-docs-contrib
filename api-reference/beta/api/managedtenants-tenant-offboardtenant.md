@@ -5,6 +5,7 @@ author: "idwilliams"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # tenant: offboardTenant
@@ -80,10 +81,6 @@ POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/tenant-offboardtenant-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tenant-offboardtenant-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

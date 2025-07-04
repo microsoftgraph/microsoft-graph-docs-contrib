@@ -4,14 +4,15 @@ description: "Configure the visibility of insights derived from Microsoft Graph 
 author: "simonhult"
 ms.localizationpriority: high
 ms.subservice: "insights"
-ms.custom: scenarios:getting-started
+ms.custom: scenarios:getting-started, sfi-ga-nochange
+ms.date: 11/07/2024
 ---
 
 # Customize item insights privacy in Microsoft Graph
 
 Item insights are relationships that Microsoft calculates using advanced machine learning techniques. When users collaborate over documents, SharePoint sites and lists, Teams chats and channels, Microsoft aggregates these activities as signals. From these signals, Microsoft derives insights to make user-centric content recommendations for users in an organization.
 
-Item insights can help users quickly find files that matter to them, such as in the **Recommended** experience in Office.com and Delve. Users can discover in the **Discover** area in Outlook Mobile potentially useful content to which they have access but might not have seen before. From personalized insights such as **Recent files** in a persona card in Bing and **Recent** in Microsoft 365 apps, users can easily discover their recent files.
+Item insights can help users quickly find files that matter to them, such as in the **Recommended** experience in Microsoft365.com. Users can see potentially useful content to which they have access but might not have seen before in the **Discover** area in Outlook Mobile or the **Recent** section under a name in Bing. Users can easily discover their recent files from personalized insights such as **Recent files** in a persona card in Bing and **Recent** in Microsoft 365 apps.
 
 These item insights reflect only content to which users have access. No user gets recommendations to content that they can't access.
 
@@ -20,7 +21,7 @@ These item insights reflect only content to which users have access. No user get
 
 ## Item insights privacy
 
-Item insights privacy settings configure the visibility of insights derived from Microsoft Graph between users and other items (such as documents or sites) in Microsoft 365. You can disable the Delve app via the pre-existing controls, but allow other insights-based experiences to continue to provide assistance.
+Item insights privacy settings configure the visibility of insights derived from Microsoft Graph between users and other items (such as documents or sites) in Microsoft 365.
 
 There are a few ways to customize users' item insights privacy settings:
 
@@ -36,9 +37,9 @@ The rest of this article describes how an administrator can customize item insig
 
 ## Background
 
-At the time of first release in 2014, Office Graph was a backend service for Delve. They shared a set of privacy controls over both the Office Graph insights and the Delve user experience. Office Graph has since become more independent and powerful, as part of every Microsoft 365 experience and of Microsoft Graph. To offer a coherent Microsoft Graph schema, Microsoft introduced an [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-1.0&preserve-view=true) entity, which inherits all the properties of the pre-existing [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0&preserve-view=true) resource, and has kept **officeGraphInsights** around for backward compatibility. The introduction of **itemInsights** also decouples the privacy story for the two independent pieces.
+At the time of its first release in 2014, Microsot Graph was a backend service for Delve. (Delve was deprecated in December 2024.) They shared a set of privacy controls over both the Office Graph insights and the Delve user experience. Microsoft Graph has since become more independent and powerful, as part of every Microsoft 365 experience and of Microsoft Graph. To offer a coherent Microsoft Graph schema, Microsoft introduced an [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-1.0&preserve-view=true) entity, which inherits all the properties of the pre-existing [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0&preserve-view=true) resource, and has kept **officeGraphInsights** around for backward compatibility. The introduction of **itemInsights** also decouples the privacy story for the two independent pieces.
 
-Although existing apps can continue to use **officeGraphInsights**, they should upgrade to **itemInsights** to gain the flexibility to fine-tune item insights in Office Graph and Delve.
+Although existing apps can continue to use **officeGraphInsights**, they should upgrade to **itemInsights** to gain the flexibility to fine-tune item insights in Microsoft Graph.
 
 ## How to customize item insights in an organization
 
@@ -50,11 +51,11 @@ The next section describes how to use the admin center to configure item insight
 
 An administrator with the _global administrator role_ can tune item insights privacy settings via toggles for an organization or group. To change privacy settings for item insights in the Microsoft 365 admin center, expand **Settings**, select **Search & intelligence**, then select **Configurations**. In the **Item insights** tile, choose **Change**.
 
-![admincenter_toggleoverview](images/itemInsights/iteminsights_admincenter_toggleoverview.png)
+!["Search & intelligence" page in the M365 Admin Center, with the "Configurations" tab selected. Item insights, the right-most tile, shows "Active".](images/itemInsights/iteminsights_admincenter_toggleoverview.png)
 
 Then toggle item insights for your organization, or enable it or disable it for specific groups.
 
-![admincenter_toggledetails](images/itemInsights/iteminsights_admincenter_toggledetails.png)
+!["Item insights" pane. "Allow your organization to use item insights" is checked. "Disable group (optional)" is populated with "test site".](images/itemInsights/iteminsights_admincenter_toggledetails.png)
 
 ### Configure item insights settings via PowerShell
 
@@ -109,7 +110,7 @@ Use the [update](/graph/api/insightssettings-update?view=graph-rest-1.0&preserve
 | Disabled for the entire organization | `false` | ignored |
 
 Keep the following points in mind when updating item insights settings:
-- Get the ID of a Microsoft Entra group from the Microsoft Entra admin center, and make sure the group exists, because the update operation doesn't check the existence of the group. Specifying a nonexistent group in **disabledForGroup** doesn't_ disable insights for any users in the organization.
+- Get the ID of a Microsoft Entra group from the Microsoft Entra admin center, and make sure the group exists, because the update operation doesn't check the existence of the group. Specifying a nonexistent group in **disabledForGroup** doesn't disable insights for any users in the organization.
 - Regardless of item insights settings, Delve continues to respect Delve tenant and user level [privacy settings](/sharepoint/delve-for-office-365-admins#control-access-to-delve-and-related-features?view=graph-rest-beta&preserve-view=true).
 
 
@@ -119,14 +120,8 @@ For a full list of experiences affected when disabling item insights, see [Overv
 ## Transition period
 To accommodate configuring item insights settings, through the end of 2020, Microsoft 365 respects both Delve settings and item insights settings, and enforces the stricter of the two if they differ. This means that a user is considered as opted out of item insights if the user opted out by either Delve controls or item insights settings.
 
-After this transition period, Delve settings control only the Delve experience, and item insights settings affect only Microsoft Graph item insights. Make sure to configure item insights according to your organization's requirements.
+After this transition period, Delve settings controlled only the Delve experience, and item insights settings affect only Microsoft Graph item insights. Make sure to configure item insights according to your organization's requirements. (Delve was deprecated in December 2024.)
 
 
 > [!NOTE]
 > During the transition period, due to technical reasons, the SharePoint start page may provide stale suggestions if an organization disables item insights for all users. This issue will be addressed in upcoming server-side changes. 
-
-## Related content
-Learn more about Delve and using Delve feature settings to control documents showing up in the **Discover** feed: 
-- [Connect and collaborate in Office Delve](https://support.microsoft.com/office/connect-and-collaborate-in-office-delve-46f92806-b52c-4187-b60e-b3bf8d25f73e)
-- [Are my documents safe in Office Delve?](https://support.microsoft.com/office/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3)
-- [Delve for admins](/sharepoint/delve-for-office-365-admins)

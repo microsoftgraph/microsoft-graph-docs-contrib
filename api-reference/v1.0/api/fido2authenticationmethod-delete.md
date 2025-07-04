@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Delete fido2AuthenticationMethod
@@ -21,12 +22,12 @@ The following tables show the least privileged permission or permissions require
 
 ### Permissions acting on self
 
-<!-- { "blockType": "permissions", "name": "fido2authenticationmethod_delete" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/fido2authenticationmethod-delete-permissions.md)]
 
 ### Permissions acting on other users
 
-<!-- { "blockType": "permissions", "name": "fido2authenticationmethod_delete_2" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/fido2authenticationmethod-delete-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
@@ -38,6 +39,8 @@ Remove a FIDO2 authentication method from your own account. For a signed-in user
 ```http
 DELETE /me/authentication/fido2Methods/{id}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Remove a FIDO2 authentication method from another user's account.
 <!-- { "blockType": "ignored" } -->

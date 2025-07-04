@@ -31,6 +31,10 @@ mgc policies authentication-methods-policy authentication-method-configurations 
             }\
         ]\
     },\
+    "crlValidationConfiguration": {\
+        "state": "disabled",\
+        "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": []\
+    },\
     "includeTargets": [\
         {\
             "targetType": "group",\

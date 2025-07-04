@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "arvindmicrosoft"
 ms.subservice: "microsoft-bookings"
 doc_type: conceptualPageType
+ms.date: 05/23/2024
 ---
 
 # Use the Microsoft Bookings API in Microsoft Graph for shared bookings

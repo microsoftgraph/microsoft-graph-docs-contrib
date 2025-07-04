@@ -5,6 +5,7 @@ author: "subray2014"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get teamsAppSettings
@@ -118,11 +119,15 @@ Content-Type: application/json
     "id": "65bdf003-0c4c-4bca-b102-0821ab0d1364",
     "allowUserRequestsForAppAccess": true,
     "isChatResourceSpecificConsentEnabled": "true",
-    "isUserPersonalScopeResourceSpecificConsentEnabled": "true"
+    "isUserPersonalScopeResourceSpecificConsentEnabled": "true",
+    "isUserPersonalScopeResourceSpecificConsentEnabled": "true",
+    "customAppSettings": {
+      "developerToolsForShowingAppUsageMetrics": "developerPortal"
+    }
   }
 }
 ```
 
 ## Related content
 
-- [Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+[Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

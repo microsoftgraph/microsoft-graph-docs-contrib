@@ -5,6 +5,7 @@ description: "Provides a list of recycleBinItems."
 ms.localizationpriority: "medium"
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 09/26/2024
 ---
 
 # recycleBin resource type
@@ -16,6 +17,12 @@ Namespace: microsoft.graph
 Represents a container for a collection of [recycleBinItem](recyclebinitem.md) resources in a SharePoint [site](site.md) or a SharePoint Embedded [fileStorageContainer](filestoragecontainer.md).
 
 Inherits from [baseItem](baseitem.md).
+
+## Methods
+
+| Method | Return Type | Description |
+|:----------------------------------|:------------------------------------------|:---------------------------------------------------|
+| [List items](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md).|
 
 ## Properties
 

@@ -5,6 +5,7 @@ author: "mlafleur"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # industryDataRun resource type
@@ -32,6 +33,7 @@ For details about how statistics can assist with health and monitoring a run gro
 | [List](../api/industrydata-industrydatarun-list.md)  | [microsoft.graph.industryData.industryDataRun](industrydata-industrydatarun.md) collection          | Get a list of the [industryDataRun](industrydata-industrydatarun.md) objects and their properties.     |
 | [Get](../api/industrydata-industrydatarun-get.md)     | [microsoft.graph.industryData.industryDataRun](industrydata-industrydatarun.md)                     | Read the properties and relationships of an [industryDataRun](industrydata-industrydatarun.md) object. |
 | [Get statistics](../api/industrydata-industrydatarun-getstatistics.md) | [microsoft.graph.industryData.industryDataRunStatistics](industrydata-industrydatarunstatistics.md) | Calculate statistics for a run group.                                                                  |
+| [Start](../api/industrydata-industrydatarun-start.md) | None | Start a new [industryDataRun](../resources/industrydata-industrydatarun.md). |
 
 ## Properties
 

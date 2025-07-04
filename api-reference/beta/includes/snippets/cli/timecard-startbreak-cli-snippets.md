@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 
 mgc-beta teams schedule time-cards start-break post --team-id {team-id} --time-card-id {timeCard-id} --body '{\
-    "atAprovedLocation": true,\
+    "isAtApprovedLocation": true,\
     "notes": {\
         "contentType": "text",\
-        "content": "start break smaple notes"\
+        "content": "starting break"\
     }\
 }\
 '

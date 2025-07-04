@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/16/2024
 ---
 
 # teamsTemplate resource type
@@ -20,6 +21,9 @@ A team template is a blueprint for creating a [team](../resources/team.md) in Mi
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
 | id                  | String   | Unique identifier of the template. Cannot be null. |
+
+## Relationships
+None.
 
 ## JSON representation
 

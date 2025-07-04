@@ -5,6 +5,7 @@ title: "contentTypeOrder resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 07/22/2024
 ---
 
 # contentTypeOrder resource type
@@ -21,6 +22,9 @@ Specifies in which order a [contentType](contenttype.md)  appears in the selecti
 | :----------- | :------ | :---------------------------------------------------------------------------- |
 | default  | Boolean | Indicates whether this is the default content type.                               |
 | position | Int32   | Specifies the position in which the content type appears in the selection UI.     |
+
+## Relationships
+None.
 
 ## JSON representation
 

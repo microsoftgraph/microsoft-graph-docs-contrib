@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # servicePrincipal: removePassword
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "serviceprincipal_removepassword" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-removepassword-permissions.md)]
+
+[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ## HTTP request
 
@@ -41,7 +44,7 @@ POST /servicePrincipals(appId='{appId}')/removePassword
 
 ## Request body
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | keyId | Guid | The unique identifier for the password. Required. |
 

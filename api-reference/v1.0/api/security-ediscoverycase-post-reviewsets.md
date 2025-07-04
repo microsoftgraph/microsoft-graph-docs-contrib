@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # Create reviewSets
@@ -45,6 +46,7 @@ You can specify the following properties when you create an **ediscoveryReviewSe
 
 |Property|Type|Description|
 |:---|:---|:---|
+|description|String|The description of the review set.|
 |displayName|String|The name of the review set. Required.|
 
 

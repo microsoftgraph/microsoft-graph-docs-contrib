@@ -5,6 +5,7 @@ author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 10/01/2024
 ---
 
 # educationClass: getRecentlyModifiedSubmissions
@@ -41,6 +42,8 @@ This method supports the `$orderby`, `$top`, `$filter`, `$select`, and `$expand`
 The `$orderby` query parameter only supports the **lastModifiedDateTime** property of the [educationSubmission](../resources/educationsubmission.md) resource.
 
 The default ordering is by descending **lastModifiedDateTime** property values.
+
+**Note**: The `Equality` (eq) operator isn't supported for the **lastModifiedDateTime** property value.
 
 ## Request headers
 | Header       | Value |
@@ -498,7 +501,7 @@ The following example shows a request.
   "name": "get_educationclass_getrecentlymodifiedsubmissions_filter"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$filter=status eq 'working'
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z
 ```
 
 # [C#](#tab/csharp)
@@ -551,29 +554,29 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$filter=status+eq+%27working%27&$skiptoken=eyJJbm5lclNraXBUb2tlbiI6Ik15WlJWa1pDVVZWR1FsRlZSa1phTVd4Q1VWVkdRbEZWUmtKU1JXeENVVlZHUWxWWFZscE9SM040U3pCc1RGWlRjM2RTTUhkNlZGVlJlRlJzUW1oa2VqQTUifQ%3d%3d",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/microsoft.graph.getRecentlyModifiedSubmissions?$select=excusedBy,excusedDateTime",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/microsoft.graph.getRecentlyModifiedSubmissions?$select=assignmentId,excusedBy",
     "value": [
         {
-            "status": "working",
-            "submittedDateTime": null,
+            "status": "submitted",
+            "submittedDateTime": "2025-04-29T14:53:31.0207353Z",
             "unsubmittedDateTime": null,
             "returnedDateTime": null,
             "reassignedDateTime": null,
             "excusedDateTime": null,
-            "lastModifiedDateTime": "2024-08-26T15:57:23.5476513Z",
+            "lastModifiedDateTime": "2025-04-29T14:53:31.0866924Z",
             "resourcesFolderUrl": null,
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%223d2fcfd4-cb6a-4e31-aa63-16ca865e9014%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%227e2e0656-2bf4-1f95-b4b0-967f516340cd%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
-            "id": "7e2e0656-2bf4-1f95-b4b0-967f516340cd",
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22ed33a213-f67f-4eb8-bfea-f45e6cba041f%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%2215ab234b-3281-ada3-bff4-a51c335068e1%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "assignmentId": "ed33a213-f67f-4eb8-bfea-f45e6cba041f",
+            "id": "15ab234b-3281-ada3-bff4-a51c335068e1",
             "recipient": {
                 "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
-                "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+                "userId": "51cf5a99-d234-4e43-96de-cd65df14bfa1"
             },
             "submittedBy": {
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                     "displayName": null
                 }
             },
@@ -613,7 +616,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "5e3ce6c0-2b1f-4285-8d4b-75ee78787346",
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                     "displayName": null
                 }
             }
@@ -959,6 +962,141 @@ Content-type: application/json
                 "device": null,
                 "user": {
                     "id": "7254e396-868c-4bf7-96b2-6fe763590b5a",
+                    "displayName": null
+                }
+            }
+        }
+    ]
+}
+```
+
+### Example 8: Get recently modified submissions with `$filter` option for lastModifiedDateTime property using less than(lt) operator
+
+#### Request
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_educationclass_getrecentlymodifiedsubmissions_filter_lastModifiedDateTime"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime+lt+2025-04-29T15:48:31.3785886Z
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.educationSubmission)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/microsoft.graph.getRecentlyModifiedSubmissions?$select=assignmentId,excusedBy",
+    "value": [
+        {
+            "status": "returned",
+            "submittedDateTime": null,
+            "unsubmittedDateTime": null,
+            "returnedDateTime": "2025-04-29T15:48:14.4748477Z",
+            "reassignedDateTime": null,
+            "excusedDateTime": null,
+            "lastModifiedDateTime": "2025-04-29T15:48:14.5601548Z",
+            "resourcesFolderUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22ed33a213-f67f-4eb8-bfea-f45e6cba041f%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%2231d03cde-a936-afc6-5e49-66c0b3271fed%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "assignmentId": "ed33a213-f67f-4eb8-bfea-f45e6cba041f",
+            "id": "31d03cde-a936-afc6-5e49-66c0b3271fed",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "e5c17181-ad7e-4a66-86bf-b560ce0c8b29"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "e5c17181-ad7e-4a66-86bf-b560ce0c8b29",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "excusedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                     "displayName": null
                 }
             }

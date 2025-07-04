@@ -5,6 +5,7 @@ author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 04/19/2024
 ---
 
 # Update targetDeviceGroup

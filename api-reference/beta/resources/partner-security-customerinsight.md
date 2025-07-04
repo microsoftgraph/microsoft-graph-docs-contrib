@@ -5,6 +5,7 @@ author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: resourcePageType
+ms.date: 08/30/2024
 ---
 
 # customerInsight resource type

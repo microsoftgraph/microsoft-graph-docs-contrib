@@ -5,6 +5,7 @@ author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.subservice: "edge-browser-management"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete browserSharedCookie

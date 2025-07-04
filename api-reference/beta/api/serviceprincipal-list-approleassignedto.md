@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 05/23/2025
 ---
 
 # List appRoleAssignments granted for a service principal
@@ -13,11 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [appRoleAssignment](../resources/approleassignment.md) that users, groups, or client service principals have been granted for the given resource service principal.
+Retrieve all clients (users, groups, or client service principals) that have an [appRoleAssignment](../resources/approleassignment.md) for a given resource service principal.
 
-For example, if the resource service principal is the service principal for the Microsoft Graph API, this will return all service principals that have been granted any app-only permissions to Microsoft Graph.
-
-If the resource service principal is an application that has app roles granted to users and groups, this will return all the users and groups assigned app roles for this application.
+For example, if the resource service principal is the service principal for the Microsoft Graph API, this API returns all service principals that have been granted any app-only permissions to Microsoft Graph. If the resource service principal is an application with app roles granted to users and groups, this API returns all the users and groups assigned app roles for this application.
 
 >**Note** This request might have replication delays for app role assignments that were recently granted or removed.
 
@@ -30,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_list_approleassignedto" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-approleassignedto-permissions.md)]
 
-[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
+[!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
 
 
 ## HTTP request
@@ -42,7 +41,7 @@ GET /servicePrincipals/{id}/appRoleAssignedTo
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` and `$filter` (`eq`, `startswith`) [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 

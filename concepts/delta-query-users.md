@@ -1,6 +1,6 @@
 ---
 title: "Get incremental changes for users"
-description: "Use delta query to discover changes without fetching the entire set of users to compare changes. Example shows a series of requests to track changes to users."
+description: "Learn how to use delta query in Microsoft Graph to discover changes without fetching the entire set of users to compare changes."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 01/12/2024
+ms.date: 01/15/2025
 #customer intent: As a developer, I want to track changes to users, so that I can build apps that process the changes according to the business requirements.
 ---
 
@@ -44,9 +44,11 @@ To track changes in the user resource, make a request and include the **delta** 
 
 Take note of the following items:
 
-- The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests. If required, query parameters must be specified in the initial request.
+- The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests. If you want to use query parameters to control how much data is returned, you must include them in the initial request.
   - Only properties included in `$select` are tracked for changes. If `$select` isn't specified, all properties of the object are tracked for changes.
 - The initial request doesn't include a state token. State tokens are used in subsequent requests.
+- Subsequent requests can't be modified.
+- [Limitations of query parameters in delta functions](delta-query-overview.md#optional-query-parameters).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,s
 
 ### Initial response
 
-If successful, this method returns `200 OK` response code and [user](/graph/api/resources/user) collection object in the response body. Assuming the entire set of users is too large, the response includes a `@odata.nextLink` state token in an `@odata.nextLink` parameter.
+If successful, this method returns `200 OK` response code and [user](/graph/api/resources/user) collection object in the response body. If the entire set of users is too large, the response includes a `@odata.nextLink` state token in an `@odata.nextLink` parameter.
 
 In this example, a `@odata.nextLink` URL is returned indicating there are more pages of data to be retrieved in the session. Notice the `$skiptoken` in the URL. The `$select` query parameter from the initial request is encoded into the `@odata.nextLink` URL.
 

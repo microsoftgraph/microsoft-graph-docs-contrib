@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "outlook"
 author: "SuryaLashmiS"
+ms.date: 08/08/2024
 ---
 
 # Delete attachment

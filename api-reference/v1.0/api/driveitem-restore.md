@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "learafa"
 ms.subservice: "onedrive"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # driveItem: restore

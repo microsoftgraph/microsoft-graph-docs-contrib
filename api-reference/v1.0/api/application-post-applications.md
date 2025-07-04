@@ -5,6 +5,7 @@ author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
+ms.date: 05/14/2024
 ---
 
 # Create application
@@ -25,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "application_post_applications" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-post-applications-permissions.md)]
+
+[!INCLUDE [rbac-application-apis-write](../includes/rbac-for-apis/rbac-application-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

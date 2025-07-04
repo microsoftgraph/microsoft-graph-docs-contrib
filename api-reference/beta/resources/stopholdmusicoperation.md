@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # stopHoldMusicOperation resource type
@@ -23,6 +24,9 @@ Represents the status of a [stopHoldMusic](../api/participant-stopholdmusic.md) 
 | id                             | String                      | Inherited from **commsOperation**. The server operation ID. Read-only.                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | Inherited from **commsOperation**. The result information.  Read-only.                                                                                            |
 | status                         | String                      | Inherited from **commsOperation**. Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
+
+## Relationships
+None.
 
 ## JSON representation
 

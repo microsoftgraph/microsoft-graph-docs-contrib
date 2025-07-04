@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|SynchronizationData-User.Upload|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|SynchronizationData-User.Upload|Not available.|
+|Application|SynchronizationData-User.Upload.OwnedBy|SynchronizationData-User.Upload|
 

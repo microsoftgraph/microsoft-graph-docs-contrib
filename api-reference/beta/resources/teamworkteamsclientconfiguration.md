@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkTeamsClientConfiguration resource type
@@ -21,6 +22,9 @@ Represents configuration details for the Microsoft Teams client running on a Mic
 |accountConfiguration|[teamworkAccountConfiguration](../resources/teamworkaccountconfiguration.md)|The configuration of the Microsoft Teams client user account for a device.|
 |featuresConfiguration|[teamworkFeaturesConfiguration](../resources/teamworkfeaturesconfiguration.md)|The configuration of Microsoft Teams client features for a device.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

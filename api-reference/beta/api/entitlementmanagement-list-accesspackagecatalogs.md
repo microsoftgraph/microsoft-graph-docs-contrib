@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/05/2024
 ---
 
 # List accessPackageCatalogs
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [accessPackageCatalog](../resources/accesspackagecatalog.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_list_accesspackagecatalogs" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-list-accesspackagecatalogs-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 

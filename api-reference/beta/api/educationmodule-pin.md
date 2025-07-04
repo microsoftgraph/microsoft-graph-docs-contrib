@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # educationModule: pin
@@ -114,6 +115,7 @@ HTTP/1.1 200 OK
     "status": "draft",
     "createdDateTime": "2023-06-21T17:25:44.1277744Z",
     "lastModifiedDateTime": "2023-06-21T17:41:17.3790932Z",
+    "languageTag": null,
     "id": "ba8e4215-4fb2-4dba-abe7-a8f2585177d3",
     "createdBy": {
         "application": null,

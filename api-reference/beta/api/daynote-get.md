@@ -5,6 +5,7 @@ author: fmcgurrenw
 ms.localizationpriority: medium
 ms.subservice: teams
 doc_type: apiPageType
+ms.date: 08/14/2024
 ---
 
 # Get dayNote

@@ -5,6 +5,7 @@ author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List federatedIdentityCredentials
@@ -21,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "application_list_federatedidentitycredentials" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-list-federatedidentitycredentials-permissions.md)]
 
+[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ## HTTP request
 

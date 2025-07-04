@@ -3,6 +3,7 @@ title: "Picker component in the Microsoft Graph Toolkit"
 description: "The Picker component enables generic selection of Microsoft Graph entities from any Microsoft Graph API collections"
 ms.localizationpriority: medium
 author: Mnickii
+ms.date: 11/07/2024
 ---
 
 # Picker component in the Microsoft Graph Toolkit

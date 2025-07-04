@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # List mailboxProtectionUnits
@@ -32,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/backupRestore/mailboxProtectionUnits
+GET /solutions/backupRestore/protectionUnits/microsoft.graph.mailboxProtectionUnit
 GET /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxProtectionUnits/
 ```
 
@@ -59,6 +60,7 @@ For a list of possible error responses, see [Backup Storage API error responses]
 #### Request
 
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/mailboxProtectionUnits
+GET https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/microsoft.graph.mailboxProtectionUnit
 ```
 
 # [C#](#tab/csharp)
@@ -117,7 +119,7 @@ The following example shows the response.
 HTTP/1.1 200 OK
 
 {
-  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/mailboxProtectionUnits?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/microsoft.graph.mailboxProtectionUnit?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
   "value": [
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -126,7 +128,9 @@ HTTP/1.1 200 OK
       "directoryObjectId": "384974e2-72cd-48de-a6e8-6985d7c5db90",
       "displayName": "Jefferson Lee", // Newly Added
       "email": "lee@contoso.com", // Newly Added
+      "mailboxType": "user",
       "status": "unprotectRequested",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -151,7 +155,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -161,6 +166,8 @@ HTTP/1.1 200 OK
       "displayName": "Mastura Ibrahim", // Newly Added
       "email": "mastura@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
+      "mailboxType": "shared",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -185,7 +192,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -194,7 +202,9 @@ HTTP/1.1 200 OK
       "directoryObjectId": "2d1d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Ahmad Hakiki", // Newly Added
       "email": "ahmad@contoso.com", // Newly Added
+      "mailboxType": "user",
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -219,7 +229,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -228,7 +239,9 @@ HTTP/1.1 200 OK
       "directoryObjectId": "2e1d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Jeffry Goh", // Newly Added
       "email": "jeffry@contoso.com", // Newly Added
+      "mailboxType": "user",
       "status": "protected",
+      "protectionSources": "dynamicRule",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -253,7 +266,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -262,6 +276,8 @@ HTTP/1.1 200 OK
       "displayName": "Suresh Pasupuleti", // Newly Added
       "email": "suresh@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
+      "mailboxType": "shared",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -286,7 +302,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     }
   ]
 }
@@ -328,7 +345,9 @@ HTTP/1.1 200 OK
       "directoryObjectId": "384974e2-72cd-48de-a6e8-6985d7c5db90",
       "displayName": "Jefferson Lee", // Newly Added
       "email": "lee@contoso.com", // Newly Added
-      "status": "protectRequested",
+      "status": "protected",
+      "protectionSources": "manual, dynamicRule",
+      "mailboxType": "user",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -353,7 +372,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -362,7 +382,9 @@ HTTP/1.1 200 OK
       "directoryObjectId": "184d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Mastura Ibrahim", // Newly Added
       "email": "mastura@contoso.com", // Newly Added
+      "mailboxType": "shared",
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -387,7 +409,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -397,6 +420,8 @@ HTTP/1.1 200 OK
       "displayName": "Esmira Musayeva", // Newly Added
       "email": "esmira@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "manual",
+      "mailboxType": "user",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -421,7 +446,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -430,7 +456,9 @@ HTTP/1.1 200 OK
       "directoryObjectId": "781d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Ahmad Hakiki", // Newly Added
       "email": "ahmad@contoso.com", // Newly Added
-      "status": "protectRequested",
+      "status": "removeRequested",
+      "protectionSources": "none",
+      "mailboxType": "user",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -455,7 +483,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -465,6 +494,8 @@ HTTP/1.1 200 OK
       "displayName": "Rashmi Mishra ", // Newly Added
       "email": "rashmi@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "dynamicRule",
+      "mailboxType": "shared",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -489,7 +520,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     }
   ]
 }

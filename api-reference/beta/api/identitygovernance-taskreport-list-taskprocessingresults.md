@@ -5,6 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List taskProcessingResult (for a taskReport)
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get the task processing result resources from the [taskReport](../resources/identitygovernance-taskreport.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

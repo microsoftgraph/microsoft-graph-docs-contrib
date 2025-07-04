@@ -19,10 +19,10 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "odata.maxpagesize=2")
 
-requestParameters := &graphusers.ItemContactFolderItemContactsDeltaWithRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ContactFoldersItemContactsDeltaRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName"},
 }
-configuration := &graphusers.ItemContactFolderItemContactsDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ContactFoldersItemContactsDeltaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

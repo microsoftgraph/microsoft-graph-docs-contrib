@@ -13,6 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationModule();
 $requestBody->setDisplayName('Module 2');
+$requestBody->setLanguageTag('en-GB');
 $requestBody->setDescription('Description for Module 2');
 
 $result = $graphServiceClient->education()->classes()->byEducationClassId('educationClass-id')->modules()->post($requestBody)->wait();

@@ -4,6 +4,7 @@ description: "Learn how to use the Microsoft Search API in Microsoft Graph to se
 author: "yiwenwang"
 ms.localizationpriority: medium
 ms.subservice: "search"
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Search API to search with interleaved results

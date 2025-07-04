@@ -13,6 +13,9 @@ var requestBody = new AdministrativeUnit
 {
 	DisplayName = "Seattle District Technical Schools",
 	Description = "Seattle district technical schools administration",
+	MembershipType = "Dynamic",
+	MembershipRule = "(user.country -eq \"United States\")",
+	MembershipRuleProcessingState = "On",
 	Visibility = "HiddenMembership",
 };
 

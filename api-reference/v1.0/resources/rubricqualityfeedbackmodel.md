@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # rubricQualityFeedbackModel resource type

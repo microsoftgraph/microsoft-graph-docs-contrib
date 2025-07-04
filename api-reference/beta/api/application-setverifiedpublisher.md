@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "xurobertMSFT"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # application: setVerifiedPublisher
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "application_setverifiedpublisher" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-setverifiedpublisher-permissions.md)]
+
+[!INCLUDE [rbac-application-apis-write](../includes/rbac-for-apis/rbac-application-apis-write.md)]
 
 ## HTTP request
 

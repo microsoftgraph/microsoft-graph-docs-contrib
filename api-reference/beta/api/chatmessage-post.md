@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # Send chatMessage in a channel or a chat
@@ -76,6 +77,9 @@ If successful, this method returns a `201 Created` response code and a new [chat
 ## Examples
 
 In the following examples, the URL can use the [HTTP syntax](#http-request) described to [send a message to a chat](chat-post-messages.md), [send a message to a channel](channel-post-messages.md), or [send reply to a channel](chatmessage-post-replies.md).
+
+> [!NOTE]
+> The Teams client has specific HTML restrictions. Therefore, the HTML elements supported by the Microsoft Graph API are compatible with the Teams client. For example, certain elements like `<div>` and inline styles may not function as intended.
 
 ### Example 1: Send a Hello World message in a channel
 
@@ -712,7 +716,7 @@ Content-type: application/json
         "user": {
             "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": "Test User",
+            "displayName": "Adele Vance",
             "userIdentityType": "aadUser"
         }
     },
@@ -763,7 +767,7 @@ Content-type: application/json
 {
 	"body": {
         "contentType": "html",
-        "content": "<div><div>\n<div><span><img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span>\n\n</div>\n\n\n</div>\n</div>"
+        "content": "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">"
     },
     "hostedContents":[
         {
@@ -854,7 +858,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<div><div><div><span><img height=\"297\" src=\"https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1616991962672/hostedContents/aWQ9eF8wLXd1cy1kNy1kZTczYzM0YTYzZGVkYjViMDVlNjYyY2Y1NzQ5MGU5Yyx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kNy1kZTczYzM0YTYzZGVkYjViMDVlNjYyY2Y1NzQ5MGU5Yy92aWV3cy9pbWdv/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span></div></div></div>"
+        "content": "<img height=\"297\" src=\"https://graph.microsoft.com/v1.0/chats/19:97641583cf154265a237da28ebbde27a@thread.v2/messages/1736180156294/hostedContents/aWQ9eF8wLWV1cy1kMTQtYjUxMDlhMDhkODZkM2ZjODBkNzFlYjUzMWM4ZDlmZGEsdHlwZT0xLHVybD1odHRwczovL3VzLWFwaS5hc20uc2t5cGUuY29tL3YxL29iamVjdHMvMC1ldXMtZDE0LWI1MTA5YTA4ZDg2ZDNmYzgwZDcxZWI1MzFjOGQ5ZmRhL3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==/$value\" width=\"297\">"
     },
     "attachments": [],
     "mentions": [],
@@ -1033,7 +1037,7 @@ Content-type: application/json
 {
     "body": {
         "contentType": "html",
-        "content": "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+        "content": "<at id=\"0\">General</at>&nbsp;Hello there!"
     },
     "mentions": [
         {
@@ -1129,7 +1133,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+        "content": "<at id=\"0\">General</at>&nbsp;Hello there!"
     },
     "channelIdentity": {
         "teamId": "68a3e365-f7d9-4a56-b499-24332a9cc572",
@@ -1179,7 +1183,7 @@ Content-type: application/json
 {
     "body": {
         "contentType": "html",
-        "content": "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>"
+        "content": "<at id=\"0\">GraphTesting</at>&nbsp;Hello team"
     },
     "mentions": [
         {
@@ -1277,7 +1281,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>"
+        "content": "<at id=\"0\">GraphTesting</at>&nbsp;Hello team"
     },
     "channelIdentity": {
         "teamId": "68a3e365-f7d9-4a56-b499-24332a9cc572",
@@ -1325,7 +1329,7 @@ Content-type: application/json
 {
     "body": {
         "contentType": "html",
-        "content": "<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>"
+        "content": "<at id=\"0\">TestTag</at>&nbsp;Testing Tags"
     },
     "mentions": [
         {
@@ -1420,7 +1424,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>"
+        "content": "<at id=\"0\">TestTag</at>&nbsp;Testing Tags"
     },
     "channelIdentity": {
         "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
@@ -1622,7 +1626,7 @@ Content-type: application/json
             "id": "d7ddbf876ae340c3a03bada395ec7da7",
             "contentType": "application/vnd.microsoft.teams.messaging-announcementBanner",
             "contentUrl": null,
-            "content": "{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/1/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"../hostedContents/2/$value\"}}}}",
+            "content": "{\"title\":\"\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/2/$value\",\"imageContentType\":\"image/jpg\"},\"croppedImage\":{\"source\":\"../hostedContents/1/$value\"}}}}",
             "name": null,
             "thumbnailUrl": null
         }
@@ -1713,7 +1717,7 @@ Content-type: application/json
         "device": null,
         "user": {
             "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": "Test user",
+            "displayName": "Adele Vance",
             "userIdentityType": "aadUser"
         }
     },
@@ -1730,7 +1734,7 @@ Content-type: application/json
             "id": "d7ddbf876ae340c3a03bada395ec7da7",
             "contentType": "application/vnd.microsoft.teams.messaging-announcementBanner",
             "contentUrl": null,
-            "content": "{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"https://graph.microsoft.com/beta/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2/messages/1675104302171/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQyLTY3OTJlM2ExMzFmNzc4YjY5NWMwYTE5ZGRkZmIwYWNiL3ZpZXdzL2ltZ28=/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"https://graph.microsoft.com/beta/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2/messages/1675104302171/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQzLTAwYjhhNWZiZTA0MGRmY2MzMWZkNzM1ZDE4Yjk4NTM5L3ZpZXdzL2ltZ28=/$value\"}}}}",
+            "content": "{\"title\":\"Test title\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"https://graph.microsoft.com/beta/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/messages/1736180726031/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ5LTEzMzNjYzJhOWFlYTdjOWYwMWJmNjc2YWU5YWE3NTdhL3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==/$value\",\"width\":1317,\"height\":366,\"croppedWidth\":1317.0,\"croppedHeight\":366.0,\"leftMargin\":0.0,\"topMargin\":0.0},\"croppedImage\":{\"source\":\"https://graph.microsoft.com/beta/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/messages/1736180726031/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ5LTEzMzNjYzJhOWFlYTdjOWYwMWJmNjc2YWU5YWE3NTdhL3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==/$value\"}}}}",
             "name": null,
             "thumbnailUrl": null,
             "teamsAppId": null
@@ -1840,7 +1844,7 @@ Content-type: application/json
         "device": null,
         "user": {
             "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": "Test User",
+            "displayName": "Adele Vance",
             "userIdentityType": "aadUser"
         }
     },
@@ -1854,9 +1858,266 @@ Content-type: application/json
 }
 ```
 
+### Example 14: Send a message with a code block
+
+The following example shows how to send a message with a code block.
+
+#### Request
+
+The following example shows a request.
+
+> [!NOTE]
+> The highlighted code isn't supported for code blocks when sending a chat message with a code block.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_14",
+  "sampleKeys": ["19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2"]
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/chats/19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2/messages
+Content-type: application/json
+
+{
+  "body": {
+    "contentType": "html",
+    "content": "<codeblock><code>Hello world</code></codeblock>"
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-14-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-14-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-14-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-14-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-14-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-chatmessage-14-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-14-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-chatmessage-14-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#chatMessage/$entity",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
+  "id": "1741124357685",
+  "replyToId": null,
+  "etag": "1741124357685",
+  "messageType": "message",
+  "createdDateTime": "2025-03-04T21:39:17.685Z",
+  "lastModifiedDateTime": "2025-03-04T21:39:17.685Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "channelIdentity": null,
+  "onBehalfOf": null,
+  "policyViolation": null,
+  "eventDetail": null,
+  "from": {
+    "application": null,
+    "device": null,
+    "user": {
+      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+      "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+      "displayName": "Adele Vance",
+      "userIdentityType": "aadUser",
+      "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+    }
+  },
+  "body": {
+    "contentType": "html",
+    "content": "\n<codeblock class=\"\"><code>Hello world</code></codeblock>"
+  },
+  "attachments": [],
+  "mentions": [],
+  "reactions": []
+}
+```
+### Example 15: Send a message with a Loop component
+
+The following example shows how to send a message with an embedded Loop component. The Loop component is a special type of message that allows users to collaborate in real-time on a shared task or project. It can be used to create a collaborative workspace within a chat or channel.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_15",
+  "sampleKeys": ["19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2"]
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/chats/19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2/messages
+Content-type: application/json
+
+
+{
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+    },
+    "attachments": [
+		{
+			"id": "74d20c7f34aa4a7fb74e2b30004247c5",
+			"contentType": "application/vnd.microsoft.card.fluidEmbedCard",
+			"content": "{\"componentUrl\": \"{LoopComponent_url}\", \"sourceType\": \"Compose\"}",
+			"name": null,
+			"thumbnailUrl": null,
+			"teamsAppId": "FluidEmbedCard"
+		}
+	]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-15-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-15-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-15-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-15-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-15-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-chatmessage-15-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-15-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-chatmessage-15-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('5c884e2f-83f8-4cff-af8e-0177f260b9f8')/channels('19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2')/messages/$entity",
+    "id": "1675104302171",
+    "replyToId": null,
+    "etag": "1675104302171",
+    "messageType": "message",
+    "createdDateTime": "2023-01-30T18:45:02.171Z",
+    "lastModifiedDateTime": "2023-01-30T18:45:02.171Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": "Announcement Subheading",
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/1675104302171?groupId=5c884e2f-83f8-4cff-af8e-0177f260b9f8&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1675104302171&parentMessageId=1675104302171",
+    "onBehalfOf": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": "Adele Vance",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "text",
+        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+    },
+    "channelIdentity": {
+        "teamId": "5c884e2f-83f8-4cff-af8e-0177f260b9f8",
+        "channelId": "19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2"
+    },
+    "attachments": [
+		{
+			"id": "74d20c7f34aa4a7fb74e2b30004247c5",
+			"contentType": "application/vnd.microsoft.card.fluidEmbedCard",
+			"contentUrl": null,
+			"content": "{\"componentUrl\": \"{LoopComponent_url}\", \"sourceType\": \"Compose\"}",
+			"name": null,
+			"thumbnailUrl": null,
+			"teamsAppId": "FluidEmbedCard"
+		}
+	],  
+    "mentions": [],
+    "reactions": []
+}
+```
+
 ## Related content
 
-* [Cards reference](/microsoftteams/platform/concepts/cards/cards-reference)
+[Cards reference](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

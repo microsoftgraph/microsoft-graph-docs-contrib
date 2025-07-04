@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-sign-in"
 author: "psignoret"
+ms.date: 03/13/2024
 ---
 
 # List excludes collection of permissionGrantPolicy

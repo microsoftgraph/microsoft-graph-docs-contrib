@@ -6,6 +6,7 @@ author: "lumine2008"
 ms.subservice: "excel"
 doc_type: resourcePageType
 toc.title: Chart font
+ms.date: 08/01/2024
 ---
 
 # workbookChartFont resource type

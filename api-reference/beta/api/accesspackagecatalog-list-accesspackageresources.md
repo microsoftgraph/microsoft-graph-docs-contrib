@@ -1,10 +1,11 @@
 ---
 title: "List accessPackageResources"
-description: "Retrieve a list of accesspackageresource objects."
+description: "Retrieve a list of accessPackageResource objects in an accessPackageCatalog."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 11/20/2024
 ---
 
 # List accessPackageResources
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [accessPackageResource](../resources/accesspackageresource.md) objects in an [accessPackageCatalog](../resources/accesspackagecatalog.md).  To request to add or remove an [accessPackageResource](../resources/accesspackageresource.md), use [create accessPackageResourceRequest](entitlementmanagement-post-accesspackageresourcerequests.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackagecatalog_list_accesspackageresources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackagecatalog-list-accesspackageresources-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 

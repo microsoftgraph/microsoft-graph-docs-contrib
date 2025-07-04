@@ -5,6 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/14/2024
 ---
 
 # workflow: createNewVersion
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Create a new version of the [workflow](../resources/identitygovernance-workflow.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

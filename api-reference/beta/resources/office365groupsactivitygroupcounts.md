@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # office365GroupsActivityGroupCounts resource type

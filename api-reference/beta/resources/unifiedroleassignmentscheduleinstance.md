@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Assignment schedule instance
+ms.date: 06/12/2024
 ---
 
 # unifiedRoleAssignmentScheduleInstance resource type

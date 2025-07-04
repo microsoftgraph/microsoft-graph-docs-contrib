@@ -4,8 +4,9 @@ description: "Read the properties of an azureADDevice object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # Get azureADDevice
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Read the properties of an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

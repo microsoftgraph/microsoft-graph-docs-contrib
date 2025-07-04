@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.subservice: "cloud-communications"
 ms.localizationpriority: medium
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # callMediaState resource type
@@ -20,6 +21,9 @@ Represents the media state for a [call](call.md).
 | Property            | Type    | Description                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
 | audio           | mediaState  | The audio media state. Possible values are: `active`, `inactive`, `unknownFutureValue`. |
+
+## Relationships
+None.
 
 ## JSON representation
 

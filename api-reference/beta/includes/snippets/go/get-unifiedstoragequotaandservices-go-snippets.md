@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.ItemSettingsStorageQuotaRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.SettingsStorageQuotaRequestBuilderGetQueryParameters{
 	Expand: [] string {"services"},
 }
-configuration := &graphusers.ItemSettingsStorageQuotaRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.SettingsStorageQuotaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

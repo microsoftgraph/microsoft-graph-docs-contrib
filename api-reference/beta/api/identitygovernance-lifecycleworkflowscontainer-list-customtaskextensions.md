@@ -5,6 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List customTaskExtensions
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

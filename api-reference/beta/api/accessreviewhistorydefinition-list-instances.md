@@ -5,6 +5,7 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List instances (of an accessReviewHistoryDefinition)
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the [instances](../resources/accessreviewhistoryinstance.md) of an [access review history definition](../resources/accessreviewhistorydefinition.md) created in the last 30 days.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

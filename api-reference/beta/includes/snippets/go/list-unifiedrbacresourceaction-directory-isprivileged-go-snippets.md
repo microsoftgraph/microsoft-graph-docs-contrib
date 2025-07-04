@@ -18,10 +18,10 @@ import (
 
 requestFilter := "isPrivileged eq true"
 
-requestParameters := &graphrolemanagement.RoleManagementDirectoryResourceNamespaceItemResourceActionsRequestBuilderGetQueryParameters{
+requestParameters := &graphrolemanagement.DirectoryResourceNamespacesItemResourceActionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphrolemanagement.RoleManagementDirectoryResourceNamespaceItemResourceActionsRequestBuilderGetRequestConfiguration{
+configuration := &graphrolemanagement.DirectoryResourceNamespacesItemResourceActionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

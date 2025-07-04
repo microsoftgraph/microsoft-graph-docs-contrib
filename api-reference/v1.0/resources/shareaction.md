@@ -5,6 +5,7 @@ description: The shareAction object provides information about who an item was s
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # shareAction resource type
 

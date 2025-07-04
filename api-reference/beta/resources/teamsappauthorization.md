@@ -5,6 +5,7 @@ author: "sweta-thapliyal"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # teamsAppAuthorization resource type

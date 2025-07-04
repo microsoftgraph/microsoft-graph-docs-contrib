@@ -6,6 +6,7 @@ author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Get authenticationMethod
@@ -38,6 +39,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/authentication/methods/{id}
 GET /users/{id | userPrincipalName}/authentication/methods/{id}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Optional query parameters
 

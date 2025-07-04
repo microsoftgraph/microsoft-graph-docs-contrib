@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 08/09/2024
 ---
 
 # Update tenantAppManagementPolicy
@@ -130,7 +131,17 @@ Content-Type: application/json
             "nonDefaultUriAddition": {
                 "restrictForAppsCreatedAfterDateTime": "2024-01-01T10:37:00Z",
                 "excludeAppsReceivingV2Tokens": true,
-                "excludeSaml": true
+                "excludeSaml": true,
+                "excludeActors": {
+                    "customSecurityAttributes": [
+                        {
+                            "@odata.type": "microsoft.graph.customSecurityAttributeStringValueExemption",
+                            "id": "PolicyExemptions_AppManagementExemption",
+                            "operator": "equals",
+                            "value": "ExemptFromIdentifierUriAdditionRestriction"
+                        }
+                    ]
+                }
             }
         }
     }

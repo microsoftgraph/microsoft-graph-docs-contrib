@@ -5,6 +5,7 @@ author: "SuryaLashmiS"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "outlook"
+ms.date: 04/04/2024
 ---
 
 <!-- markdownlint-disable MD001 MD022 MD024 MD025 MD051-->

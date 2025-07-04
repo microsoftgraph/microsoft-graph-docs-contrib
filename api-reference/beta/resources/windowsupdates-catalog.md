@@ -5,6 +5,7 @@ author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: windows-update-business
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # catalog resource type

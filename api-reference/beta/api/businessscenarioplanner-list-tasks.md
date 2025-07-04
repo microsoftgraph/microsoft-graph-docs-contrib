@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.subservice: "business-scenarios"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List businessScenarioTasks
@@ -29,12 +30,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/businessScenarios/{businessScenarioId}/planner/tasks
+GET /solutions/businessScenarios/{businessScenarioId}/planner/tasks?$filter=businessScenarioProperties/externalObjectId eq '{externalObjectId}'
+GET /solutions/businessScenarios/{businessScenarioId}/planner/tasks?$filter=businessScenarioProperties/externalContextId eq '{externalContextId}'
+GET /solutions/businessScenarios/{businessScenarioId}/planner/tasks?$filter=target/microsoft.graph.businessScenarioGroupTarget/groupId eq '{groupId}'
 ```
 
-## Optional query parameters
+## Query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). You can query tasks with their context ID or location as filters.
+This method requires the `$filter` (`eq`) query parameter to scope the request to an **externalObjectId**, **externalContextId**, or a **groupId**.
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -52,9 +57,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get all tasks for a scenario
+### Example 1: Get tasks associated with a specific externalObjectId
 
-The following example shows a request that gets all tasks related to a scenario.
+The following example shows a request that gets all tasks associated with a specific external ID.
 
 #### Request
 
@@ -68,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks
+GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks?$filter=businessScenarioProperties/externalObjectId eq 'Order#12010'
 ```
 
 # [C#](#tab/csharp)
@@ -88,7 +93,7 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686491
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-businessscenariotask-e1-javascript-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -128,16 +133,16 @@ Content-Type: application/json
       "priority": 5,
       "id": "pmc1rS1Io0C3rXQhyXIsNmUAOeIi",
       "target": {
-          "@odata.type": "microsoft.graph.businessScenarioGroupTarget",
-          "taskTargetKind": "group",
-          "groupId": "7a339254-4b2b-4410-b295-c890a16776ee"
+        "@odata.type": "microsoft.graph.businessScenarioGroupTarget",
+        "taskTargetKind": "group",
+        "groupId": "7a339254-4b2b-4410-b295-c890a16776ee"
       },
       "businessScenarioProperties": {
-          "externalObjectId": "Order#12010",
-          "externalContextId": "Warehouse-CA-36",
-          "externalObjectVersion": "000001",
-          "webUrl": "https://ordertracking.contoso.com/view?id=12010",
-          "externalBucketId": "deliveryBucket"
+        "externalObjectId": "Order#12010",
+        "externalContextId": "Warehouse-CA-36",
+        "externalObjectVersion": "000001",
+        "webUrl": "https://ordertracking.contoso.com/view?id=12010",
+        "externalBucketId": "deliveryBucket"
       }
     }
   ]
@@ -252,7 +257,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks?$filter=location/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'
+GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks?$filter=target/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'
 ```
 
 # [C#](#tab/csharp)
@@ -272,7 +277,7 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686491
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-businessscenariotask-e3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

@@ -18,10 +18,10 @@ import (
 
 requestFilter := "businessScenarioProperties/externalContextId eq 'Warehouse-CA-36'"
 
-requestParameters := &graphsolutions.SolutionsBusinessScenarioItemPlannerTasksRequestBuilderGetQueryParameters{
+requestParameters := &graphsolutions.BusinessScenariosItemPlannerTasksRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphsolutions.SolutionsBusinessScenarioItemPlannerTasksRequestBuilderGetRequestConfiguration{
+configuration := &graphsolutions.BusinessScenariosItemPlannerTasksRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

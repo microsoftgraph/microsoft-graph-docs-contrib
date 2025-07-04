@@ -5,6 +5,7 @@ author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # messageRulePredicates resource type
@@ -48,6 +49,9 @@ Represents the set of conditions and exceptions that are available for a rule.
 | sentToOrCcMe | Boolean | Indicates whether the owner of the mailbox must be in either a **toRecipients** or **ccRecipients** property of an incoming message in order for the condition or exception to apply. |
 | subjectContains | String collection | Represents the strings that appear in the subject of an incoming message in order for the condition or exception to apply. |
 | withinSizeRange | [sizeRange](sizerange.md) | Represents the minimum and maximum sizes (in kilobytes) that an incoming message must fall in between in order for the condition or exception to apply. |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

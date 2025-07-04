@@ -5,6 +5,7 @@ author: "fondieki"
 ms.localizationpriority: medium
 ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 08/14/2024
 ---
 
 # Update photoUpdateSettings

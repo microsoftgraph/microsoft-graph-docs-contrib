@@ -5,6 +5,7 @@ author: "mashriv"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List tasks (deprecated)

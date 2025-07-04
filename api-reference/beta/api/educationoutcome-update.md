@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dipakboyed"
 ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 08/14/2024
 ---
 
 # Update educationOutcome
@@ -206,14 +207,14 @@ The following example shows a request to update a points outcome.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/0965958c-84f2-4ca4-b854-05cce3440aa4/submissions/fbf5605c-eba9-ccfb-d66c-afbd161dac41/outcomes/ea1351f6-ba33-4940-b2cb-6a7254af2dc8
 Content-type: application/json
 
 {
     "@odata.type":"#microsoft.graph.educationPointsOutcome",
     "points":{
         "@odata.type":"#microsoft.graph.educationAssignmentPointsGrade",
-        "points":85.0
+        "points":85.5
     }
 }
 ```
@@ -269,19 +270,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.type":"#microsoft.graph.educationPointsOutcome",
-    "id":"ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
-    "lastModifiedBy":{
-        "user":{
-            "id":"9391878d-903c-406c-bb1c-0f17d00fd878"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('0965958c-84f2-4ca4-b854-05cce3440aa4')/submissions('fbf5605c-eba9-ccfb-d66c-afbd161dac41')/outcomes/$entity",
+    "@odata.type": "#microsoft.graph.educationPointsOutcome",
+    "lastModifiedDateTime": "2025-05-15T18:05:13.1720895Z",
+    "id": "ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+            "displayName": null
         }
     },
-    "points":{
-        "gradedDateTime":"2019-07-15T22:35:48.2429387Z",
-        "points":85.0,
-        "gradedBy":{
-            "user":{
-                "id":"9391878d-903c-406c-bb1c-0f17d00fd878"
+    "points": {
+        "gradedDateTime": "2025-05-15T18:05:13.1720895Z",
+        "points": 85.5,
+        "grade": "B",
+        "gradedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                "displayName": null
             }
         }
     }

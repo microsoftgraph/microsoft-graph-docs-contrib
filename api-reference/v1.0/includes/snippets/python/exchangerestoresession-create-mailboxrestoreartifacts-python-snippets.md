@@ -15,17 +15,13 @@ request_body = ExchangeRestoreSession(
 	mailbox_restore_artifacts = [
 		MailboxRestoreArtifact(
 			restore_point = RestorePoint(
-				additional_data = {
-						"@odata_id" : "1f1fccc3-a642-4f61-bf49-f37b9a888279",
-				}
+				id = "1f1fccc3-a642-4f61-bf49-f37b9a888279",
 			),
 			destination_type = DestinationType.InPlace,
 		),
 		MailboxRestoreArtifact(
 			restore_point = RestorePoint(
-				additional_data = {
-						"@odata_id" : "1f1fccc3-a642-4f61-bf49-f37b9a888280",
-				}
+				id = "1f1fccc3-a642-4f61-bf49-f37b9a888280",
 			),
 			destination_type = DestinationType.InPlace,
 		),

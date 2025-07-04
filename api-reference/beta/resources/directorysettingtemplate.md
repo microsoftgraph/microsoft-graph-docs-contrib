@@ -6,6 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 07/08/2024
 ---
 
 # directorySettingTemplate resource type

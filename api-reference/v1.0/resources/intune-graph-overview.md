@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: high
 ms.subservice: "intune"
 doc_type: conceptualPageType
+ms.date: 09/25/2024
 ---
 
 # Working with Intune in Microsoft Graph  

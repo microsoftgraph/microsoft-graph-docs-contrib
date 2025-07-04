@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const extension = {
     theme: 'light',
-    color: 'yellow',
+    color: 'purple',
     lang: 'Swahili'
 };
 

@@ -9,6 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.retrievecrossregiondisasterrecoveryreport.RetrieveCrossRegionDisasterRecoveryReportPostRequestBody retrieveCrossRegionDisasterRecoveryReportPostRequestBody = new com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.retrievecrossregiondisasterrecoveryreport.RetrieveCrossRegionDisasterRecoveryReportPostRequestBody();
+retrieveCrossRegionDisasterRecoveryReportPostRequestBody.setReportName(CloudPcDisasterRecoveryReportName.CrossRegionDisasterRecoveryReport);
 retrieveCrossRegionDisasterRecoveryReportPostRequestBody.setFilter("DisasterRecoveryStatus eq 'Active outage'");
 LinkedList<String> select = new LinkedList<String>();
 select.add("Id");
@@ -18,11 +19,12 @@ select.add("UserSettingId");
 select.add("DeviceId");
 select.add("CloudPCDeviceDisplayName");
 select.add("UserPrincipalName");
-select.add("IsCrossRegionEnabled");
-select.add("CrossRegionHealthStatus");
+select.add("EnabledDRType");
+select.add("DRHealthStatus");
 select.add("LicenseType");
 select.add("DisasterRecoveryStatus");
 select.add("CurrentRestorePointDateTime");
+select.add("BackupCloudPcStatus");
 select.add("ActivationExpirationDateTime");
 retrieveCrossRegionDisasterRecoveryReportPostRequestBody.setSelect(select);
 retrieveCrossRegionDisasterRecoveryReportPostRequestBody.setSkip(0);

@@ -15,7 +15,9 @@ businessScenarioTask.setPriority(1);
 BusinessScenarioProperties businessScenarioProperties = new BusinessScenarioProperties();
 businessScenarioProperties.setExternalObjectVersion("000003");
 businessScenarioTask.setBusinessScenarioProperties(businessScenarioProperties);
-BusinessScenarioTask result = graphClient.solutions().businessScenarios().byBusinessScenarioId("{businessScenario-id}").planner().tasks().byBusinessScenarioTaskId("{businessScenarioTask-id}").patch(businessScenarioTask);
+BusinessScenarioTask result = graphClient.solutions().businessScenarios().byBusinessScenarioId("{businessScenario-id}").planner().tasks().byBusinessScenarioTaskId("{businessScenarioTask-id}").patch(businessScenarioTask, requestConfiguration -> {
+	requestConfiguration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");
+});
 
 
 ```

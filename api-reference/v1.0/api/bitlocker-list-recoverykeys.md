@@ -5,6 +5,7 @@ author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # List recoveryKeys
@@ -15,6 +16,8 @@ Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) o
 
 This operation does not return the **key** property. For information about how to read the **key** property, see [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
 
+You can use this API to programmatically iterate through the list of recovery keys in the tenant and identify devices with BitLocker enabled. For more information, see the sample PowerShell code in [BitLocker recovery process](/windows/security/operating-system-security/data-protection/bitlocker/recovery-process#helpdesk-recovery-in-microsoft-entra-id).
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -24,14 +27,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "bitlocker_list_recoverykeys" } -->
 [!INCLUDE [permissions-table](../includes/permissions/bitlocker-list-recoverykeys-permissions.md)]
 
-For delegated permissions, the calling user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or they must be in at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-* Cloud device administrator
-* Helpdesk administrator
-* Intune service administrator
-* Security administrator
-* Security reader
-* Global reader
+> [!IMPORTANT]
+> For delegated permissions, the calling user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or they must be assigned a supported [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).The following least privileged roles are supported for this operation.
+>
+> - Cloud device administrator
+> - Helpdesk administrator
+> - Intune service administrator
+> - Security administrator
+> - Security reader
+> - Global reader
 
 ## HTTP request
 

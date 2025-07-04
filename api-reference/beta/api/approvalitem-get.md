@@ -5,6 +5,7 @@ author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
 doc_type: apiPageType
+ms.date: 08/22/2024
 ---
 
 # Get approvalItem

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: cloud-pc
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 # networkConnection resource type
@@ -67,6 +68,9 @@ Contains stateful information about the network connection related to the alert.
 |ipx|1000| Internet Packet Exchange Protocol.|
 |spx|1256| Sequenced Packet Exchange protocol.|
 |spxII|1257| Sequenced Packet Exchange version 2 protocol.|
+
+## Relationships
+None.
 
 ## JSON representation
 

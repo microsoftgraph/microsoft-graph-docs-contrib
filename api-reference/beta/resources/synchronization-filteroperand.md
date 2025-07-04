@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # filterOperand resource type
@@ -19,6 +20,9 @@ Contains a collection of values for the operand.
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |values|String collection|Collection of values.|
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer {token}")
 
-configuration := &graphteams.TeamItemScheduleOfferShiftRequestsRequestBuilderPostRequestConfiguration{
+configuration := &graphteams.ItemScheduleOfferShiftRequestsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewOfferShiftRequest()

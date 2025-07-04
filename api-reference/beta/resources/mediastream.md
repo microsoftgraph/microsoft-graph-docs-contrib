@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # mediaStream resource type
@@ -24,6 +25,9 @@ Contains information about the media channel.
 | mediaType   | String  | The media type. The possible values are `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
 | serverMuted | Boolean | Indicates whether the server has muted the media.                                                                          |
 | sourceId    | String  | The source ID.                                                                                                |
+
+## Relationships
+None.
 
 ## JSON representation
 

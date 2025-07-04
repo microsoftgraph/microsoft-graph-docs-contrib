@@ -13,25 +13,25 @@ request_body = ExchangeRestoreSession(
 			"mailbox_restore_artifacts@delta" : [
 				{
 						"restore_point" : {
-								"@odata_id" : "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
+								"id" : "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
 						},
 						"destination_type" : "inPlace",
 				},
 				{
 						"restore_point" : {
-								"@odata_id" : "2b014d8c-71fe-4d00-a01a-31850bc5b32",
+								"id" : "2b014d8c-71fe-4d00-a01a-31850bc5b32",
 						},
 						"destination_type" : "inPlace",
 				},
 				{
 						"restore_point" : {
-								"@odata_id" : "3b014d8c-71fe-4d00-a01a-31850bc5b32c",
+								"id" : "3b014d8c-71fe-4d00-a01a-31850bc5b32c",
 						},
 						"destination_type" : "inPlace",
 				},
 				{
 						"restore_point" : {
-								"@odata_id" : "4b014d8c-71fe-4d00-a01a-31850bc5b32c",
+								"id" : "4b014d8c-71fe-4d00-a01a-31850bc5b32c",
 						},
 						"destination_type" : "inPlace",
 				},

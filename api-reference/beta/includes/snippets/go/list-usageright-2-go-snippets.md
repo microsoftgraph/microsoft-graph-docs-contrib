@@ -18,10 +18,10 @@ import (
 
 requestFilter := "state in ('active', 'suspended') and serviceIdentifier in ('ABCD')"
 
-requestParameters := &graphdevices.DeviceItemUsageRightsRequestBuilderGetQueryParameters{
+requestParameters := &graphdevices.ItemUsageRightsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphdevices.DeviceItemUsageRightsRequestBuilderGetRequestConfiguration{
+configuration := &graphdevices.ItemUsageRightsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

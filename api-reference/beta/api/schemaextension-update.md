@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
 ms.subservice: extensions
+ms.date: 07/29/2024
 ---
 
 # Update schemaExtension

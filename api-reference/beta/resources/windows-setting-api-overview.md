@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "MS-Arko"
 ms.subservice: "cloud-pc"
+ms.date: 06/11/2024
 ---
 
 # Use the Windows settings API in Microsoft Graph

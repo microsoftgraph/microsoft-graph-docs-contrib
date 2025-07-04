@@ -5,6 +5,7 @@ author: Yadong1106
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: resourcePageType
+ms.date: 09/11/2024
 ---
 
 # createFromPageTemplate resource type

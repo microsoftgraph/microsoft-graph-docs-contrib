@@ -6,6 +6,7 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
+ms.date: 07/26/2024
 ---
 
 # Get unifiedRoleDefinition
@@ -21,7 +22,7 @@ The following RBAC providers are currently supported:
 - device management (Intune)
 - directory (Microsoft Entra directory roles)
 - entitlement management (Microsoft Entra entitlement management)
-- Exchange Online
+- Exchange Online (Except China operated by 21Vianet)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

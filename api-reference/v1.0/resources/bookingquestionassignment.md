@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "razortbone"
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 05/13/2024
 ---
 
 # bookingQuestionAssignment resource type

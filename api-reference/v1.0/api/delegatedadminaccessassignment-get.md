@@ -5,6 +5,8 @@ author: "koravvams"
 ms.localizationpriority: medium
 ms.subservice: partner-customer-administration
 doc_type: apiPageType
+ms.date: 04/04/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Get delegatedAdminAccessAssignment

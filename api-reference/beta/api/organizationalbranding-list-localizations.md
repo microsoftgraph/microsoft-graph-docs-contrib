@@ -1,10 +1,11 @@
 ---
 title: "List localizations"
 description: "Get the organizationalBrandingLocalization resources from the localizations navigation property."
-author: "quievey"
+author: nanguil
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List localizations

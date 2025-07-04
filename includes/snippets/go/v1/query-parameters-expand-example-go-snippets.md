@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphdrives.DriveItemRootRequestBuilderGetQueryParameters{
+requestParameters := &graphdrives.ItemRootRequestBuilderGetQueryParameters{
 	Expand: [] string {"children"},
 }
-configuration := &graphdrives.DriveItemRootRequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.ItemRootRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

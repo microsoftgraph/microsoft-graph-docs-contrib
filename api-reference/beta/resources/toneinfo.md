@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # toneInfo resource type
@@ -21,6 +22,9 @@ A single DTMF event.
 |:---------------|:--------|:----------|
 | sequenceId | Int64 | An incremental identifier used for ordering DTMF events. |
 | tone | tone | Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`. |
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
 doc_type: "resourcePageType"
+ms.date: 08/20/2024
 ---
 
 # companyDetail resource type

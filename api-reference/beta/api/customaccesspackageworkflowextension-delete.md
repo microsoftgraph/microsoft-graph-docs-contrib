@@ -5,6 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 11/04/2024
 ---
 
 # Delete customAccessPackageWorkflowExtension
@@ -17,13 +18,15 @@ Delete a [customAccessPackageWorkflowExtension](../resources/customaccesspackage
 2. Use the access package catalog ID and retrieve the ID of the **customAccessPackageWorkflowExtension** object that you want to delete by running the [LIST customAccessPackageWorkflowExtensions](accesspackagecatalog-list-customaccesspackageworkflowextensions.md) operation.
 3. Call the [Update accessPackageAssignmentPolicy](accesspackageassignmentpolicy-update.md) operation to remove the custom workflow extension object from the policy. For an example, see [Example 2: Remove the customExtensionHandlers and verifiableCredentialSettings from a policy](accesspackageassignmentpolicy-update.md#example-2-remove-the-customextensionhandlers-and-verifiablecredentialsettings-from-a-policy).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "customaccesspackageworkflowextension_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/customaccesspackageworkflowextension-delete-permissions.md)]
+
+[!INCLUDE [rbac-for-logic-apps-write](../includes/rbac-for-apis/rbac-entitlement-management-logic-apps-apis-write.md)]
 
 ## HTTP request
 

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 mgc-beta teams channels messages create --team-id {team-id} --channel-id {channel-id} --body '{\
     "body": {\
         "contentType": "html",\
-        "content": "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>"\
+        "content": "<at id=\"0\">GraphTesting</at>&nbsp;Hello team"\
     },\
     "mentions": [\
         {\

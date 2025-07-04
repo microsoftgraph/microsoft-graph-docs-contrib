@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List timeCard
@@ -24,9 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timecard_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timecard-list-permissions.md)]
 
-> [!IMPORTANT]
-> When you use the Schedule.Read.All and Schedule.ReadWrite.All application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +42,7 @@ This method supports the `$filter`, `$orderby`, `$top`, `$skipToken` OData query
 | Header       | Value |
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| MS-APP-ACTS-AS | The ID of the user on behalf of whom the app is acting. Required when you use the application permission scope. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. The `MS-APP-ACTS-AS` header is deprecated and no longer required with application tokens.|
 
 ## Request body
 Don't supply a request body for this method.
@@ -141,6 +139,7 @@ Content-type: application/json
             "clockInEvent": {
                 "dateTime": "2020-09-21T18:01:29.302Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "ClockIn-OBO Shorbani"
@@ -149,6 +148,7 @@ Content-type: application/json
             "clockOutEvent": {
                 "dateTime": "2021-05-27T18:14:44.503Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "clock out notes"
@@ -159,6 +159,7 @@ Content-type: application/json
                 "clockInEvent": {
                     "dateTime": "2020-09-21T18:01:29.302Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "ClockIn-OBO Shorbani"
@@ -167,6 +168,7 @@ Content-type: application/json
                 "clockOutEvent": {
                     "dateTime": "2021-05-27T18:14:44.503Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "clock out notes"
@@ -205,6 +207,7 @@ Content-type: application/json
             "clockInEvent": {
                 "dateTime": "2020-09-21T18:02:48.688Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "ClockIn-OBO Shorbani"
@@ -213,6 +216,7 @@ Content-type: application/json
             "clockOutEvent": {
                 "dateTime": "2021-05-27T18:16:14.766Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "clock out notes"
@@ -223,6 +227,7 @@ Content-type: application/json
                 "clockInEvent": {
                     "dateTime": "2020-09-21T18:02:48.688Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "ClockIn-OBO Shorbani"
@@ -231,6 +236,7 @@ Content-type: application/json
                 "clockOutEvent": {
                     "dateTime": "2021-05-27T18:16:14.766Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "clock out notes"

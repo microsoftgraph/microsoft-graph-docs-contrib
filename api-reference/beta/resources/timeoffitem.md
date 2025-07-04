@@ -5,6 +5,7 @@ author: "aaku"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # timeOffItem resource type

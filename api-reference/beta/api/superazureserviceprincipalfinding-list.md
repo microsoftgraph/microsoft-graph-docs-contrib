@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # List superAzureServicePrincipalFinding objects
@@ -13,6 +14,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 Get a list of the [superAzureServicePrincipalFinding](../resources/superazureserviceprincipalfinding.md) objects and their properties.
 
@@ -157,3 +160,4 @@ Content-type: application/json
   ]
 }
 ```
+

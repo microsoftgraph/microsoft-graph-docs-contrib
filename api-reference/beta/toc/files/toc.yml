@@ -8,6 +8,8 @@ items:
   items:
   - name: Drive
     href: ../../resources/drive.md
+  - name: List drive
+    href: ../../api/drive-list.md
   - name: Get drive
     href: ../../api/drive-get.md
   - name: Get drive root
@@ -100,8 +102,16 @@ items:
     href: ../../api/driveitem-removeretentionlabel.md
   - name: Lock or unlock record
     href: ../../api/driveitem-lockorunlockrecord.md
+  - name: Create upload session
+    href: ../../api/driveitem-createuploadsession.md
   - name: Download file (deprecated)
     href: ../../api/driveitem-get-content.md
+  - name: Open extensions
+    items:
+    - name: Create open extension
+      href: ../../api/opentypeextension-post-opentypeextension.md
+    - name: Get open extension
+      href: ../../api/opentypeextension-get.md
 - name: Bundle
   items:
   - name: Bundle
@@ -120,26 +130,6 @@ items:
     href: ../../api/bundle-update.md
   - name: Delete bundle
     href: ../../api/bundle-delete.md
-- name: Permission
-  items:
-  - name: Permission
-    href: ../../resources/permission.md
-  - name: List permissions
-    href: ../../api/driveitem-list-permissions.md
-  - name: Get permission
-    href: ../../api/permission-get.md
-  - name: Create link
-    href: ../../api/driveitem-createlink.md
-  - name: Invite people
-    href: ../../api/driveitem-invite.md
-  - name: Update permission
-    href: ../../api/permission-update.md
-  - name: Delete permission
-    href: ../../api/permission-delete.md
-  - name: Grant access to sharing link
-    href: ../../api/permission-grant.md
-  - name: Revoke grants on sharing link
-    href: ../../api/permission-revokegrants.md
 - name: File storage container
   items:
   - name: File storage container
@@ -193,18 +183,84 @@ items:
   - name: Update recycle bin settings
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items
-    href: ../../api/filestoragecontainer-restore-recyclebin-items.md
+    href: ../../api/recyclebinitem-restore.md
   - name: Delete recycle bin items
-    href: ../../api/filestoragecontainer-delete-recyclebin-items.md
-  - name: Get recycle bin items
-    href: ../../api/filestoragecontainer-list-recyclebin-items.md
+    href: ../../api/recyclebinitem-delete.md
+  - name: List recycle bin items
+    href: ../../api/filestoragecontainer-list-recyclebinitem.md
   - name: Lock
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
+- name: Permission
+  items:
+  - name: Permission
+    href: ../../resources/permission.md
+  - name: List permissions
+    href: ../../api/driveitem-list-permissions.md
+  - name: Get permission
+    href: ../../api/permission-get.md
+  - name: Create link
+    href: ../../api/driveitem-createlink.md
+  - name: Invite people
+    href: ../../api/driveitem-invite.md
+  - name: Update permission
+    href: ../../api/permission-update.md
+  - name: Delete permission
+    href: ../../api/permission-delete.md
+  - name: Grant access to sharing link
+    href: ../../api/permission-grant.md
+  - name: Revoke grants on sharing link
+    href: ../../api/permission-revokegrants.md
+- name: Recycle bin
+  items:
+  - name: Recycle bin
+    href: ../../resources/recyclebin.md
+  - name: List items
+    href: ../../api/recyclebin-list-items.md
+- name: Recycle bin item
+  items:
+  - name: Recycle bin item
+    href: ../../resources/recyclebinitem.md
+  - name: List
+    href: ../../api/recyclebin-list-items.md
+  - name: Delete
+    href: ../../api/recyclebinitem-delete.md
+  - name: Restore
+    href: ../../api/recyclebinitem-restore.md
 - name: Shared drive item
   items:
   - name: Shared drive item
     href: ../../resources/shareddriveitem.md
   - name: Use sharing links
     href: ../../api/shares-get.md
+- name: SharePoint group
+  items:
+  - name: SharePoint group
+    href: ../../resources/sharepointgroup.md
+  - name: List
+    href: ../../api/filestoragecontainer-list-sharepointgroups.md
+  - name: Create
+    href: ../../api/filestoragecontainer-post-sharepointgroups.md
+  - name: Get
+    href: ../../api/sharepointgroup-get.md
+  - name: Update
+    href: ../../api/sharepointgroup-update.md
+  - name: Delete
+    href: ../../api/filestoragecontainer-delete-sharepointgroups.md
+  - name: List SharePoint group members
+    href: ../../api/sharepointgroup-list-members.md
+  - name: Create SharePoint group member
+    href: ../../api/sharepointgroup-post-members.md
+- name: SharePoint group member
+  items:
+  - name: SharePoint group member
+    href: ../../resources/sharepointgroupmember.md
+  - name: List
+    href: ../../api/sharepointgroup-list-members.md
+  - name: Create
+    href: ../../api/sharepointgroup-post-members.md
+  - name: Get
+    href: ../../api/sharepointgroupmember-get.md
+  - name: Delete
+    href: ../../api/sharepointgroup-delete-members.md

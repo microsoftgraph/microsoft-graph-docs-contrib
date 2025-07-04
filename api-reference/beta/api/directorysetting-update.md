@@ -6,6 +6,7 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update directorySetting
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a specific directory setting object.
+Update the properties of a specific [directory setting](../resources/directorysetting.md) object.
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -22,10 +23,12 @@ Update the properties of a specific directory setting object.
 ## Permissions
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### For all settings except the Consent Policy Settings object
+### For all settings *except* the Consent Policy Settings object
 
 <!-- { "blockType": "permissions", "name": "directorysetting_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-update-permissions.md)]
+
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
 
 ### For the Consent Policy Settings object
 
@@ -33,8 +36,6 @@ The following permissions are required to update the "Consent Policy Settings" *
 
 <!-- { "blockType": "permissions", "name": "directorysetting_update_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-update-2-permissions.md)]
-
-[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
 
 
 ## HTTP request

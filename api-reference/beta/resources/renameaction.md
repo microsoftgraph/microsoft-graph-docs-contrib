@@ -18,6 +18,16 @@ The presence of the **RenameAction** resource on an [**itemActivity**][activity]
 
 [activity]: itemactivity.md
 
+## Properties
+
+| Property | Type   | Description                    |
+| :------- | :----- | :----------------------------- |
+| oldName  | string | The previous name of the item. |
+| newName  | string | The new name of the item.      |
+
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {
@@ -32,13 +42,6 @@ The presence of the **RenameAction** resource on an [**itemActivity**][activity]
   "newName": "string"
 }
 ```
-
-## Properties
-
-| Property | Type   | Description                    |
-| :------- | :----- | :----------------------------- |
-| oldName  | string | The previous name of the item. |
-| newName  | string | The new name of the item.      |
 
 ## Remarks
 

@@ -5,6 +5,7 @@ author: "preetikr"
 ms.localizationpriority: medium
 ms.subservice: security
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
 # Update secureScoreControlProfile
@@ -236,17 +237,7 @@ Content-type: application/json
   ],
   "tier": "Core",
   "userImpact": "Low",
-  "complianceInformation": [
-    {
-      "certificationName": "FedRAMP_Moderate",
-      "certificationControls": [
-        {
-          "name": "AC-6(9)",
-          "url": "",
-        }
-      ]
-    }         
-  ],
+  "complianceInformation": null,
   "controlStateUpdates": [
     {
       "assignedTo": "",

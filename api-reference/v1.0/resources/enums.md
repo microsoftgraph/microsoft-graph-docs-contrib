@@ -3,8 +3,10 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
+ms.date: 06/23/2025
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
+ms.custom: sfi-ropc-nochange
 ---
 
 # Enum values
@@ -43,6 +45,13 @@ Namespace: microsoft.graph
 | inactive |
 | active |
 | unknownfuturevalue |
+
+### siteLockState values
+
+| Member         |
+| --------------- |
+| unlocked      |
+| lockedReadOnly |
 
 ### binaryOperator values
 
@@ -99,6 +108,14 @@ Namespace: microsoft.graph
 | additionalStepsRequired |
 | unknownFutureValue |
 
+### appManagementRestrictionState values
+
+| Member |
+| ---- |
+| enabled |
+| disabled |
+| unknownFutureValue |
+
 ### appCredentialRestrictionType values
 
 | Member |
@@ -124,6 +141,14 @@ Namespace: microsoft.graph
 | recommeded |
 | unknownFutureValue |
 | peerRecommeded |
+
+### certificateAuthorityType values
+
+|Member|
+|:---|
+|root|
+|intermediate|
+|unknownFutureValue|
 
 ### courseStatus values
 
@@ -718,6 +743,14 @@ Namespace: microsoft.graph
 | policyOID |
 | unknownFutureValue |
 
+### x509CertificateCRLValidationConfigurationState values
+
+| Member |
+| ---- |
+| disabled |
+| enabled |
+| unknownFutureValue |
+
 ### attestationLevel values
 
 | Member |
@@ -1176,6 +1209,20 @@ Possible types of Windows settings.
 | openShiftRequest |
 | offerShiftRequest |
 | unknownFutureValue |
+| timeCard |
+| timeOffReason |
+| timeOff |
+| timeOffRequest |
+
+### eligibilityFilteringEnabledEntities values 
+
+|Member|
+|:---|
+|none|
+|swapRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+|timeOffReason|
 
 ### timeZoneStandard values
 
@@ -3395,3 +3442,60 @@ Possible values for user account types (group membership), per Windows definitio
 | all |
 | unknownFutureValue |
 
+### conditionalAccessTransferMethods values
+
+|Member|
+|:---|
+|none|
+|deviceCodeFlow|
+|authenticationTransfer|
+|unknownFutureValue|
+
+### confirmedBy values 
+
+|Member|
+|:---|
+|none|
+|user|
+|manager|
+|unknownFutureValue|
+
+### timeCardState values 
+
+|Member|
+|:---|
+|clockedIn|
+|onBreak|
+|clockedOut|
+|unknownFutureValue|
+
+### scheduleChangeState values
+
+| Member |
+| ----------------------------- |
+| pending |
+| approved |
+| declined |
+| unknownFutureValue |
+
+### scheduleChangeRequestActor values
+
+| Member |
+| ----------------------------- |
+| sender |
+| recipient |
+| manager |
+| system |
+| unknownFutureValue |
+
+## authenticationMethodPlatform values
+
+| Member  |
+| :------ |
+| unknown |
+| windows |
+| macOS   |
+| iOS     |
+| android |
+| linux   |
+| unknownFutureValue |

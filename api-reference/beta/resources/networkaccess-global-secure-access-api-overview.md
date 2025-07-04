@@ -5,6 +5,7 @@ author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: conceptualPageType
+ms.date: 06/05/2024
 ---
 
 # Secure access to cloud, public, and private apps using Microsoft Graph network access APIs (preview)

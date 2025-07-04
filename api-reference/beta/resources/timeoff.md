@@ -5,6 +5,7 @@ author: "shanemalone"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # timeOff resource type
@@ -43,6 +44,9 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 | teamInfo             | [shiftsTeamInfo](shiftsteaminfo.md)                  | Information of the team that the **timeOff** is in. |
 | userId               | String                      | ID of the user assigned to the **timeOff**. Required. |
 | userInfo             | [shiftsUserInfo](shiftsuserinfo.md)                  | Information of the user assigned to the **timeOff**. |
+
+## Relationships
+None.
 
 ## JSON representation
 

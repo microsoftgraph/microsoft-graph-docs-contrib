@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: non-product-specific
 author: "SuryaLashmiS"
+ms.date: 04/05/2024
 ---
 
 # Create single-value extended property
@@ -113,6 +114,8 @@ POST /groups/{id}/threads
 POST /groups/{id}/conversations
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 To create one or more extended properties in an existing resource instance, specify the instance in the
 request, and include the extended property in the request body.
 
@@ -153,6 +156,8 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 PATCH /groups/{id}/events/{id}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Request headers
 | Name       | Value |

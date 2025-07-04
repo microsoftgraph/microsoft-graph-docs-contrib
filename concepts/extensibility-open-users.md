@@ -1,6 +1,6 @@
 ---
 title: "Add custom data to users using open extensions"
-description: "Learn how to add an open extension to a user's profile, query it, change and delete the extension."
+description: "Learn how to use open extensions to add lightweight data to a user's profile, query it, change, and delete the extension."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
@@ -8,7 +8,7 @@ ms.subservice: extensions
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.topic: tutorial
-ms.date: 01/25/2024
+ms.date: 01/17/2025
 #Customer intent: As a developer, I want to learn how to store lightweight data to Microsoft Entra users through Microsoft Graph, and avoid using an external database system.
 ---
 
@@ -16,7 +16,7 @@ ms.date: 01/25/2024
 
 In this tutorial, you lean how to use [open extensions](/graph/api/resources/opentypeextension).
 
-Imagine you're building an application that's available on multiple client platforms, such as desktop and mobile. You want to let users configure their UI experience so it's consistent no matter which device they use to sign in to your app.
+Imagine you're building an application that's available on multiple client platforms, such as desktop and mobile. You want to the app's users to configure their UI experience so it's consistent no matter which device they use to sign in.
 
 For this scenario, this article shows you how to:
 
@@ -34,7 +34,7 @@ For this scenario, this article shows you how to:
 
 To reproduce the steps in this article, you need the following privileges:
 
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) and the user you want to store the roaming profile for.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) as the user you want to store the roaming profile for.
 - Grant the app the *User.ReadWrite* delegated permission for the signed-in user.
 
 ## Step 1. Add roaming profile information
@@ -119,7 +119,7 @@ Content-Type: application/json
 
 ## Step 2. Retrieve roaming profile information
 
-When the user signs in to the app from another device, the app calls Microsoft Graph to retrieve the user's profile details and expand the **extensions** navigation property to get their roaming settings, then uses this data to provide the same experience as on the other device.
+When the user signs in to the app from another device, the app calls Microsoft Graph to retrieve their profile details including the **extensions** navigation property that contains their roaming settings, then uses this data to provide the same experience as on the other device.
 
 ### Request
 
@@ -202,7 +202,7 @@ Content-Type: application/json
 
 The user can choose to change their roaming profile information. The app calls Microsoft Graph by running the following query. The request returns a `204 No Content` response code.
 
-You must include all properties in the request body as well, even if you want to update only a subset of them. Otherwise, Microsoft Graph removes the properties you don't pass in. To delete data but keep a property, set the property value to `null`.
+You must include all properties in the request body, even if you want to update only a subset. Otherwise, Microsoft Graph removes the unspecified properties. To delete data but keep a property, set the property value to `null`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -215,7 +215,7 @@ Content-type: application/json
 
 {
     "theme":"light",
-    "color":"yellow",
+    "color":"purple",
     "lang":"Swahili"
 }
 ```

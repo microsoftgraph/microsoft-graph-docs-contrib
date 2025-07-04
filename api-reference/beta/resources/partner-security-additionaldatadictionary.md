@@ -5,6 +5,7 @@ author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: resourcePageType
+ms.date: 04/20/2024
 ---
 
 # additionalDataDictionary resource type
@@ -16,6 +17,9 @@ Namespace: microsoft.graph.partner.security
 Represents a bag of name-value pairs that contain additional details about an alert.
 
 ## Properties
+None.
+
+## Relationships
 None.
 
 ## JSON representation

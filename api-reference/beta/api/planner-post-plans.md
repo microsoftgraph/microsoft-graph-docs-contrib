@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 04/12/2024
 ---
 
 # Create plannerPlan

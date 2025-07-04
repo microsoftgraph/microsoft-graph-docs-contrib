@@ -5,6 +5,7 @@ author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # messageRuleActions resource type
@@ -30,6 +31,9 @@ Represents the set of actions that are available to a rule.
 | redirectTo | [recipient](recipient.md) | The email address to which a message should be redirected. |
 | stopProcessingRules | Boolean | Indicates whether subsequent rules should be evaluated. |
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

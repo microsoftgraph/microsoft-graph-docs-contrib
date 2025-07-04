@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Restore artifact
+ms.date: 06/22/2024
 ---
 
 # restoreArtifactBase resource type
@@ -16,6 +17,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the restore point and destination details that can be used to restore a site, drive, or mailbox [protection unit](protectionunitbase.md).
+
+> [!NOTE]
+> Restore artifacts that are older than one year and in a terminal state are removed.
 
 ## Properties
 

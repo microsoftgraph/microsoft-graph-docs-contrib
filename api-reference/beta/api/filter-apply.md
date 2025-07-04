@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
 ms.subservice: excel
+ms.date: 04/05/2024
 ---
 
 # filter: apply

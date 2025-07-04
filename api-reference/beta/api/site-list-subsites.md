@@ -5,6 +5,7 @@ title: List subsites for a site
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 # List subsites for a site
 

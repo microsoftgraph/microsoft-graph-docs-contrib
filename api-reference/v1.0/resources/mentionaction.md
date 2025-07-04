@@ -5,6 +5,7 @@ description: The MentionAction object provides information about who was mention
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # mentionAction resource type
 

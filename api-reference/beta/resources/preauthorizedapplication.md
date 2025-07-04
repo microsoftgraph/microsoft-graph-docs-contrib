@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 03/21/2024
 ---
 
 # preAuthorizedApplication resource type
@@ -23,6 +24,9 @@ In some rare cases, an identifier listed in the `permissionIds` property may ref
 |:---------------|:--------|:----------|
 |appId|String| The unique identifier for the client application. |
 |permissionIds|String collection| The unique identifier for the [scopes](permissionscope.md) the client application is granted. |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

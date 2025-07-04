@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("workbook-session-id", "{session-id}")
 
-configuration := &graphdrives.DriveItemItemItemWorkbookFunctionsVlookupRequestBuilderPostRequestConfiguration{
+configuration := &graphdrives.ItemItemsItemWorkbookFunctionsVlookupRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphdrives.NewVlookupPostRequestBody()

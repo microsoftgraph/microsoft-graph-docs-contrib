@@ -1,19 +1,20 @@
 ---
-title: "Work with the Microsoft Graph connectors API"
-description: "Use the Microsoft Graph connectors API to build custom connectors that bring external data into Microsoft Graph to enhance Microsoft 365 intelligent experiences."
+title: "Work with the Microsoft 365 Copilot connectors API"
+description: "Use the Copilot connectors API to build custom connectors that bring external data into Microsoft Graph to enhance Microsoft 365 intelligent experiences."
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: search
+ms.date: 11/07/2024
 ---
 
-# Work with the Microsoft Graph connectors API
+# Work with the Copilot connectors API
 
-Microsoft Graph connectors bring external data into Microsoft Graph and enhance Microsoft 365 intelligent experiences. You might want to build a custom connector to integrate with services that aren't available as connectors built by Microsoft. To build custom connectors, you use the Microsoft Graph connectors REST API. Items ingested through connections built with the APIs consume your item quota. For more information about how to determine how much item quota you have and purchasing additional quota, see [licensing requirements and pricing](/microsoftsearch/licensing).
+Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) bring external data into Microsoft Graph and enhance Microsoft 365 intelligent experiences. You might want to build a custom connector to integrate with services that aren't available as connectors built by Microsoft. To build custom connectors, you use the Copilot connectors REST API. Items ingested through connections built with the APIs consume your item quota. For more information about how to determine how much item quota you have and purchasing additional quota, see [licensing requirements and pricing](/microsoftsearch/licensing).
 
 ![Image showing the external data coming trough different types of connectors to Microsoft Graph](./images/connectors-images/api-overview.png)
 
-You can use the Microsoft Graph connectors API to:
+You can use the Copilot connectors API to:
 
 1. Create and manage external data connections.
 2. Define and register the schema of the external data types.
@@ -36,7 +37,7 @@ For more information, see [Register and update schema for the Microsoft Graph co
 
 Items added by your application to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalconnectors-externalitem) resource (external item API) in Microsoft Graph.
 
-For more information, see [Create, update, and delete items added by your application through Microsoft Graph connectors](connecting-external-content-manage-items.md).
+For more information, see [Create, update, and delete items added by your application through Copilot connectors](connecting-external-content-manage-items.md).
 
 ## Sync external groups
 

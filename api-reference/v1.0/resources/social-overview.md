@@ -5,6 +5,7 @@ author: "simonhult"
 ms.localizationpriority: high
 ms.subservice: "insights"
 doc_type: conceptualPageType
+ms.date: 03/12/2024
 ---
 
 # Use the Microsoft Graph API to integrate people intelligence in an app

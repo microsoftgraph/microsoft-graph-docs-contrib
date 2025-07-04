@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vikama-microsoft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 08/14/2024
 ---
 
 # accessPackageAssignmentRequest: resume
@@ -24,8 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_resume" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-resume-permissions.md)]
 
-> [!IMPORTANT]
-> App-only access can be authorized *without* granting the `EntitlementManagement.ReadWrite.All` application permission to the caller. Instead, assign the caller an [Entitlement Management role](/entra/id-governance/entitlement-management-delegate), where `Access package assignment manager` is the least privileged role supported for this operation. For more information on how to assign an Entitlement Management role, see [Create unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md#example-4-create-a-role-assignment-with-access-package-catalog-scope) or [Delegate access governance to access package managers in entitlement management](/entra/id-governance/entitlement-management-delegate-managers#as-a-catalog-owner-delegate-to-an-access-package-manager).
+[!INCLUDE [rbac-entitlement-access-package-assignment-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-assignment-manager-apis-write.md)]
 
 ## HTTP request
 

@@ -2,9 +2,10 @@
 title: "List claimsMappingPolicies"
 description: "Get a list of claimsMappingPolicy objects."
 ms.localizationpriority: medium
-author: "paulgarn"
+author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # List claimsMappingPolicies

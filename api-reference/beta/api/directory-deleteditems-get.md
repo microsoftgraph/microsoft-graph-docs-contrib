@@ -1,5 +1,6 @@
 ---
 title: "Get deleted item (directory object)"
+ms.date: 11/14/2024
 description: "Retrieve the properties of a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
@@ -13,7 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a recently deleted [administrative unit](../resources/administrativeunit.md), [application](../resources/application.md), [externalUserProfile](../resources/externaluserprofile.md), [group](../resources/group.md), [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md), [servicePrincipal](../resources/serviceprincipal.md), or [user](../resources/user.md) objects from [deleted items](../resources/directory.md).
+Retrieve the properties of a recently deleted directory object from [deleted items](../resources/directory.md). The following types are supported:
+- [administrativeUnit](../resources/administrativeunit.md)
+- [application](../resources/application.md)
+- [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
+- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md
+- [externalUserProfile](../resources/externaluserprofile.md)
+- [group](../resources/group.md)
+- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
+- [servicePrincipal](../resources/serviceprincipal.md)
+- [user](../resources/user.md)
 
 >**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
 
@@ -32,6 +42,8 @@ The following table shows the least privileged permission or permissions require
 | [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.Read.All | Not supported | PendingExternalUserProfile.Read.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.Read.All | Not supported. | Application.Read.All |
 | [user](../resources/user.md) | User.Read.All | Not supported. | User.Read.All |
+| [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

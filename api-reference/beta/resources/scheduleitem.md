@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "teams"
 author: "iamgirishck"
+ms.date: 07/22/2024
 ---
 
 # scheduleItem resource type
@@ -25,6 +26,9 @@ An item that describes the availability of a user corresponding to an actual eve
 |status |freeBusyStatus | The availability status of the user or resource during the corresponding event. The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
 |subject |String | The corresponding event's subject line. Optional.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 

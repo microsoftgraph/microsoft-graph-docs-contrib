@@ -3,8 +3,9 @@ title: "applicableContentDeviceMatch resource type"
 description: "Represents a collection of devices and recommendations for the applicable catalog content."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # applicableContentDeviceMatch resource type

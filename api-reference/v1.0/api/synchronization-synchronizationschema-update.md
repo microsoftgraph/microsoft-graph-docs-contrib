@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 10/01/2024
 ---
 
 # Update synchronizationSchema

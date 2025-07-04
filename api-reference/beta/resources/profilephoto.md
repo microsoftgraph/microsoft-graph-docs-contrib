@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kristinmcleod"
 ms.subservice: "people"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # profilePhoto resource type

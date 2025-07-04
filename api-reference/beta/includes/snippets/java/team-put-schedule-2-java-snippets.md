@@ -18,17 +18,10 @@ schedule.setSwapShiftsRequestsEnabled(true);
 schedule.setOfferShiftRequestsEnabled(true);
 schedule.setTimeOffRequestsEnabled(true);
 schedule.setStartDayOfWeek(DayOfWeek.Tuesday);
-schedule.setActivitiesIncludedWhenCopyingShiftsEnabled(true);
+schedule.setIsActivitiesIncludedWhenCopyingShiftsEnabled(true);
 schedule.setIsCrossLocationShiftsEnabled(true);
 schedule.setIsCrossLocationShiftRequestApprovalRequired(true);
 schedule.setTimeClockEnabled(true);
-TimeClockSettings timeClockSettings = new TimeClockSettings();
-GeoCoordinates approvedLocation = new GeoCoordinates();
-approvedLocation.setAltitude(1024.13d);
-approvedLocation.setLatitude(26.13246d);
-approvedLocation.setLongitude(24.34616d);
-timeClockSettings.setApprovedLocation(approvedLocation);
-schedule.setTimeClockSettings(timeClockSettings);
 Schedule result = graphClient.teams().byTeamId("{team-id}").schedule().put(schedule);
 
 

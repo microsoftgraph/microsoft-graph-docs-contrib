@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Update approvalStep
@@ -26,6 +27,8 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "approvalstep_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-end-user-apis-write](../includes/rbac-for-apis/rbac-entitlement-management-end-user-apis-write.md)]
+
 <a name='for-pim-for-azure-ad-roles'></a>
 
 ### For PIM for Microsoft Entra roles
@@ -33,7 +36,7 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "approvalstep_update_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-2-permissions.md)]
 
-### Permissions required for calling this API for PIM for groups
+### Permissions required for calling this API for PIM for Groups
 
 <!-- { "blockType": "permissions", "name": "approvalstep_update_3" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-3-permissions.md)]
@@ -54,7 +57,7 @@ To update an approval decision in PIM for Microsoft Entra roles:
 PATCH /roleManagement/directory/roleAssignmentApprovals/{id}/steps/{id}
 ```
 
-To update an approval decision in PIM for groups:
+To update an approval decision in PIM for Groups:
 
 <!-- { "blockType": "ignored" } -->
 ```http

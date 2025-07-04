@@ -3,15 +3,16 @@ title: "Enroll in update management by Windows Autopatch"
 description: "Enroll a device in update management so that you can use Windows Autopatch to manage content delivered from Windows Update to that device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Enroll in update management by Windows Autopatch
 
 When you enroll a device in update management by Windows Autopatch, you can use Windows Autopatch to manage content delivered from Windows Update to that device. You can enroll a device in update management by update category.
 
-Today, Windows Autopatch supports device enrollment for Windows 10/11 feature updates and driver updates. At this time, no device enrollment is required in the management of Windows 10/11 quality updates in order to deploy expedited quality updates.
+Today, Windows Autopatch supports device enrollment for Windows 10/11 feature updates and driver updates. At this time, no device enrollment is required in the management of Windows 10/11 quality updates in order to deploy hotpatch or expedited quality updates.
 
 ## Enroll the device in update management
 

@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SocialIdentityProvider();
 $requestBody->setOdataType('#microsoft.graph.socialIdentityProvider');
-$requestBody->setClientSecret('1111111111111');
+$requestBody->setClientSecret('4294967296');
 
 $result = $graphServiceClient->identity()->identityProviders()->byIdentityProviderBaseId('identityProviderBase-id')->patch($requestBody)->wait();
 

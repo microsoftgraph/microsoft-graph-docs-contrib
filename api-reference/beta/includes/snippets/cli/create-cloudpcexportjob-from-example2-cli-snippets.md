@@ -12,7 +12,7 @@ mgc-beta device-management virtual-endpoint reports export-jobs create --body '{
     "ManagedDeviceName",\
     "AvgRoundTripTimeInMsP50",\
     "LastConnectionRoundTripTimeInMs",\
-    "AvgAvailableBandwidthInMBpsP50",\
+    "AvgAvailableBandwidthInMbpsP50",\
     "LastConnectionAvailableBandWidthInMSps",\
     "AvgRemoteSignInTimeInSecP50",\
     "UDPConnectionPercentage",\

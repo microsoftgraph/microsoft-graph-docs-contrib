@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "entra-groups"
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.date: 04/03/2024
 ---
 
 # Endpoint resource type

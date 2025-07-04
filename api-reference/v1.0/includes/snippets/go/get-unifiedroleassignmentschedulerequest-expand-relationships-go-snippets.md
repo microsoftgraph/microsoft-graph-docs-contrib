@@ -15,11 +15,11 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphrolemanagement.RoleManagementDirectoryRoleAssignmentScheduleRequestItemRequestBuilderGetQueryParameters{
+requestParameters := &graphrolemanagement.DirectoryRoleAssignmentScheduleRequestsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"principalId","action","roleDefinitionId"},
 	Expand: [] string {"roleDefinition","activatedUsing","principal","targetSchedule"},
 }
-configuration := &graphrolemanagement.RoleManagementDirectoryRoleAssignmentScheduleRequestItemRequestBuilderGetRequestConfiguration{
+configuration := &graphrolemanagement.DirectoryRoleAssignmentScheduleRequestsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

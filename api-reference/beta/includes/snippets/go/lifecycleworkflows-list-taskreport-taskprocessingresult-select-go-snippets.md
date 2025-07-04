@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowItemTaskReportItemTaskProcessingResultsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.LifecycleWorkflowsWorkflowsItemTaskReportsItemTaskProcessingResultsRequestBuilderGetQueryParameters{
 	Select: [] string {"id","failureReason","processingStatus","subject","task"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowItemTaskReportItemTaskProcessingResultsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.LifecycleWorkflowsWorkflowsItemTaskReportsItemTaskProcessingResultsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
