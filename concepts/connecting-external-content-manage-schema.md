@@ -17,19 +17,12 @@ The connection [schema](/graph/api/resources/externalconnectors-schema) determin
 ## Attributes of a schema 
 
 - Property 
-
 - Type 
-
 - Searchable 
-
 - Retrievable 
-
 - Refinable 
-
 - Exact Match Required 
-
 - Labels 
-
 - Aliases 
 
 ## Example schema
@@ -73,24 +66,24 @@ This refers to the Name of the property.
 
 If a property is searchable, its value is added to the full text index. This means that when a user performs a search on Copilot or SharePoint we return results if the  search string matches with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
 
-### **Which properties should be searchable?** 
+**Which properties should be searchable?** 
 You should mark properties as searchable if: 
 - They contain **textual data** that users might search for. 
 - They are **relevant to search queries** (e.g., titles, descriptions, tags). 
 - You want them to contribute to **search hits** and **snippet generation**. 
 
-### **Common examples:** 
+**Common examples:** 
 - title 
 - description 
 - tags 
 - createdBy 
 - assignedTo 
 
-### **Best Practices** 
+**Best Practices** 
 - **Avoid marking large binary fields** as searchable. 
 - **Do not mark refinable fields as searchable** — refinable and searchable are mutually exclusive. 
 - Do not mark all fields as searchable. **Limit searchable fields** to those that improve relevance and user experience.
-- 
+
 <!-- markdownlint-disable MD036 -->
 ![A search for "design" displaying results for hits against the property title and content.](./images/connectors-images/connecting-external-content-manage-items-schema-1.png)
 
@@ -100,19 +93,19 @@ You should mark properties as searchable if:
 
 Mark properties as queryable when users need to filter their search results based on specific values. For example, properties such as "ticketId," "TeamName" or "createdBy" can be queryable.  Now when you query something like “Tickets created by William” Copilot will be able to filter out only the tickets created by the said user and display it.  Prefix matching with wildcard operators (*) can further enhance search flexibility. 
 
-### **Which properties should be queryable?** 
+**Which properties should be queryable?** 
 You should mark properties as queryable if: 
 - They are used for **filtering or narrowing down search results**. 
 - They represent **categorical or structured data** (e.g., status, priority, assigned user). 
 - You want to support **custom search experiences** or **faceted navigation**. 
 
-#### **Common examples:** 
+**Common examples:** 
 - status (e.g., Open, Closed) 
 - assignedTo (e.g., user email or ID) 
 - priority (e.g., High, Medium, Low) 
 - category or type 
 
-### **Best Practices** 
+**Best Practices** 
 - Avoid marking large text fields (like descriptions) as queryable. 
 - Combine Queryable with Retrievable so the property can be used and shown in results. 
 - Use Refinable if you want the property to appear as a **filter in the UI**. 
@@ -137,7 +130,7 @@ If a property is retrievable, its value can be returned in search results. Any p
 ![A set of retrievable properties rendered as a result.](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
 *A set of retrievable properties (`title` and `lastEditedBy`) rendered as a result.*
 
-### **Which properties should be retrievable?** 
+**Which properties should be retrievable?** 
 You should mark properties as retrievable if: 
 - You want them to be **visible in search results**. 
 - They are useful for **displaying context** (e.g., title, status, assigned user). 
@@ -149,7 +142,7 @@ You should mark properties as retrievable if:
 - assignedTo 
 - CreatedDateTime 
 
-### **Best Practices** 
+**Best Practices** 
 - Avoid marking sensitive or irrelevant fields as retrievable. 
 - Use `Retrievable: true` for fields shown in **search cards**, **Copilot prompts**, or **custom UI**. 
 
@@ -158,23 +151,23 @@ You should mark properties as retrievable if:
 # If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. 
 The **Refinable** property allows a schema property to be used as a **filter** in Microsoft Search experiences. 
 
-When a property is marked as refinable: 
+**When a property is marked as refinable:?** 
 - It can be used to **narrow down search results**. 
 - It appears as a **refiner control** (like a dropdown or checkbox) in the search UI. 
 - It supports **aggregation** in search queries. 
 
-### **Which Properties Should Be Refinable?** 
+**Which Properties Should Be Refinable?** 
 You should mark properties as refinable if: 
 - They represent **categorical or structured data**. 
 - You want users to **filter or group** search results by these values. 
 
-#### **Common examples:** 
+**Common examples:** 
 - tags (e.g., "Finance", "HR", "Engineering") 
 - status (e.g., "Open", "Closed", "In Progress") 
 - priority (e.g., "High", "Medium", "Low") 
 - category or type 
 
-### **Important Notes** 
+**Important Notes** 
 - **Refinable properties cannot be searchable** — you must choose one or the other. 
 - Only **string or numeric types** can be refinable. 
 - Marking too many properties as refinable can **impact** performance.
@@ -201,7 +194,6 @@ The **title** property doesn't specify exact matching. If nothing is specified, 
 - Querying `title:Contoso Title` returns any item that contains `Contoso` or `Title` in the **title** property.
 
 ## Semantic labels
-
 A semantic label is a well-known tag published by Microsoft that you can add against a property in your schema. When building a custom Copilot connector using the Microsoft Graph API, applying semantic labels to your schema properties is essential. These labels help Microsoft 365 Copilot, and Microsoft Search understand the meaning and role of each property, enabling better search, summarization, and user experience.   
 
 You can assign semantic labels to your source properties on the Assign property labels page. Labels provide semantic meaning, and let you integrate your connector data into Microsoft 365 experiences. 
