@@ -1914,20 +1914,14 @@
           ],
           "resources": [
             "microsoft.graph.networkaccess.tenantStatus",
-            "microsoft.graph.networkaccess.branchSite",
             "microsoft.graph.networkaccess.enrichedAuditLogs",
             "microsoft.graph.networkaccess.logs",
             "microsoft.graph.networkaccess.reports",
-            "microsoft.graph.networkaccess.remoteNetwork"
+            "microsoft.graph.networkaccess.remoteNetwork",
+            "microsoft.graph.networkaccess.alert",
+            "microsoft.graph.networkaccess.branchSite"
           ],
           "childNodes": [
-            {
-              "name": "Branch site (deprecated)",
-              "resources": [
-                "microsoft.graph.networkaccess.deviceLink",
-                "microsoft.graph.networkaccess.connectivityConfigurationLink"
-              ]
-            },
             {
               "name": "Settings",
               "resources": [
@@ -1971,6 +1965,13 @@
               "resources": [
                 "microsoft.graph.networkaccess.networkAccessTraffic",
                 "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
+              ]
+            },
+            {
+              "name": "Branch site (deprecated)",
+              "resources": [
+                "microsoft.graph.networkaccess.deviceLink",
+                "microsoft.graph.networkaccess.connectivityConfigurationLink"
               ]
             }
           ]
