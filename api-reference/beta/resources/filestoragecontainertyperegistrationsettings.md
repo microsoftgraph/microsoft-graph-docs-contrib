@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Settings associated with a fileStorageContainerTypeRegistration. Some of these settings can be read only, 
-depending on the [settings of the fileStorageContainerType](fileStorageContainerTypeSettings.md). 
+depending on the [settings of the fileStorageContainerType](fileStorageContainerTypeSettings.md), which define which settings are overridable.
 
 
 ## Properties

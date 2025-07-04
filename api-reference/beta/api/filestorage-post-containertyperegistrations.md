@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a fileStorageContainerTypeRegistration object in the consuming tenant or replace the existing one.
+Create a fileStorageContainerTypeRegistration object in the consuming tenant or replace the existing one. 
+In other words, it registers a [fileStorageContainerType](../resources/filestoragecontainertype.md) in the tenant.
 
-An application can only register a [fileStorageContainerType](../resources/filestoragecontainertype.md) that it owns, either using app-only or
+For standard containers, [billing](https://learn.microsoft.com/en-us/sharepoint/dev/embedded/administration/billing/billing) must be valid for the registration to complete successfully.
+
+> [!IMPORTANT]
+> An application can only register a [fileStorageContainerType](../resources/filestoragecontainertype.md) that it owns, either using app-only or
 delegated tokens.
 
-Requisites to execute this request:
-- The ID of an existing fileStorageContainerType.
-- The application that owns the fileStorageContainerType must be registered in the tenant. In other words, it must have a service principal.
-- Billing setup should be complete, except for Trial fileStorageContainerTypes.
 
 Settings can't be modified on registration.
 
@@ -30,7 +30,7 @@ Settings can't be modified on registration.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-When delegated tokens are used, SharePoint Embedded admin or Global admin permissions are required.
+When delegated tokens are used, SharePoint Embedded admin or Global admin role is required.
 Registration must be done in the context of the application that owns the [fileStorageContainerType](../resources/filestoragecontainertype.md).
 
 <!-- {
@@ -65,7 +65,7 @@ You can specify the following properties when creating a **fileStorageContainerT
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationPermissionGrants|[applicationPermissionGrants](../resources/fileStorageContainerTypeAppPermissionGrant.md)|define the access 
+|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/fileStorageContainerTypeAppPermissionGrant.md)|define the access 
 privileges of applications on containers of a specific fileStorageContainerType. Optional.|
 
 
@@ -75,11 +75,9 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 
 ## Examples
 
-Create a Trial fileStorageContainerTypeRegistration with some applicationPermissionGrants
-
 ### Request
 
-The following example shows a request.
+Create a fileStorageContainerTypeRegistration for a trial fileStorageContainerType with some applicationPermissionGrants
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertyperegistration_from_"
@@ -108,7 +106,6 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -127,7 +124,7 @@ Content-Type: application/json
   "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
   "billingClassification": "trial",
   "billingStatus": "valid",
-  "registredDateTime": "01/20/2025",
+  "registeredDateTime": "01/20/2025",
   "expirationDateTime": "02/20/2025",
   "etag": "RVRhZw==",
   "settings": {
@@ -156,3 +153,36 @@ Content-Type: application/json
 }
 ```
 
+### Request
+
+Create a fileStorageContainerTypeRegistration for a standard fileStorageContainerType with no billing setup.
+<!-- {
+  "blockType": "request",
+  "name": "create_filestoragecontainertyperegistration_from_"
+}
+-->
+``` http
+PUT https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
+Content-Type: application/json
+
+{
+  "applicationPermissionGrants": [
+    {
+      "appId": "11335700-9a00-4c00-84dd-0c210f203f00",
+      "delegatedPermissions": ["readContent", "writeContent"],
+      "applicationPermissions": ["full"]
+    }
+  ]
+}
+```
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 405 Method Not Allowed
+```

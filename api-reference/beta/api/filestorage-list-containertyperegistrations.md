@@ -20,7 +20,7 @@ Get a list of the fileStorageContainerTypeRegistration objects and their propert
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-When delegated tokens are used, SharePoint Embedded admin or Global admin permissions are required.
+When delegated tokens are used, SharePoint Embedded admin or Global admin role is required.
 If FileStorageContainerTypeReg.Selected is used, results are limited to [registrations](../resources/fileStorageContainerTypeRegistration.md) owned by the application 
 making the call.
 <!-- {
@@ -87,7 +87,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-{
   "value": 
   [
     {
@@ -97,7 +96,7 @@ Content-Type: application/json
       "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
       "billingClassification": "trial",
       "billingStatus": "valid",
-      "registredDateTime": "01/20/2025",
+      "registeredDateTime": "01/20/2025",
       "expirationDateTime": "02/20/2025",
       "etag": "RVRhZw==",
       "settings": {
@@ -131,8 +130,8 @@ Content-Type: application/json
       "owningAppId": "33225700-9a00-4c00-84dd-0c210f203f01",
       "billingClassification": "Standard",
       "billingStatus": "valid",
-      "registredDateTime": "01/20/2025",
-      "expirationDateTime": "",
+      "registeredDateTime": "01/20/2025",
+      "expirationDateTime": null,
       "etag": "RVRhZw==",
       "settings": {
         "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings",

@@ -30,9 +30,9 @@ Contains the permissions granted to an app when accessed with delegated permissi
 |Property|Type|Description|
 |:---|:---|:---|
 |appId|String|Application ID to set permissions to.|
-|applicationPermissions|String collection|Allowed permissions when using delegated tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
+|applicationPermissions|String collection|Allowed [permissions](https://learn.microsoft.com/en-us/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using delegated tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
 |delegatedPermissions|String collection|
-Allowed permissions when using application tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
+Allowed [permissions](https://learn.microsoft.com/en-us/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using application tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
 
 ## Relationships
 None.
