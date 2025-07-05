@@ -52,12 +52,11 @@ PATCH /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property             | Type                                                                        | Description                                                                                 |
-| :------------------- | :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| createUnmatchedUsers | Boolean                                                                     | A Boolean choice indicating whether unmatched users should be created or ignored. Optional. |
-            |
-| creationOptions      | [microsoft.graph.industryData.userCreationOptions](../resources/industrydata-usercreationoptions.md)     | The different management choices for the new users to be provisioned. Optional.             |
-| managementOptions    | [microsoft.graph.industryData.userManagementOptions](../resources/industrydata-usermanagementoptions.md) | The different attribute choices for all the users to be considered. Required.               |   
+| Property | Type | Description |
+|:---|:---|:---|
+| createUnmatchedUsers | Boolean | A Boolean choice indicating whether unmatched users should be created or ignored. Optional. |
+| creationOptions | [microsoft.graph.industryData.userCreationOptions](../resources/industrydata-usercreationoptions.md) | The different management choices for the new users to be provisioned. Optional. |
+| managementOptions | [microsoft.graph.industryData.userManagementOptions](../resources/industrydata-usermanagementoptions.md) | The different attribute choices for all the users to be considered. Required |
 
 > [!CAUTION]
 > The **markAllStudentsAsMinors** property of **additionalOptions** under **managementOptions** is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property.
