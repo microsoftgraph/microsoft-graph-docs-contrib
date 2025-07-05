@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [ad hoc call](../resources/adhoccall.md). This API supports the retrieval of ad hoc call transcripts from one-on-one, group and PSTN calls.
+Get the list of [callTranscript](../resources/calltranscript.md) objects associated with a [call](../resources/adhoccall.md). This API supports the retrieval of ad hoc call transcripts from one-on-one, group and PSTN calls.
 
 ## Permissions
 
