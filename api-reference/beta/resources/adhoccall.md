@@ -14,31 +14,29 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Contains information about an ad hoc call.
+
+This resource supports subscribing to [change notifications](/graph/webhooks).
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getAllRecordings](../api/adhoccall-getallrecordings.md)|[callRecording](../resources/callrecording.md) collection|**TODO: Add Description**|
-|[getAllTranscripts](../api/adhoccall-getalltranscripts.md)|[callTranscript](../resources/calltranscript.md) collection|**TODO: Add Description**|
-|[List recordings](../api/adhoccall-list-recordings.md)|[callRecording](../resources/callrecording.md) collection|**TODO: Add a useful description.**|
-|[Create callRecording](../api/adhoccall-post-recordings.md)|[callRecording](../resources/callrecording.md)|Create a new callRecording object.|
-|[List transcripts](../api/adhoccall-list-transcripts.md)|[callTranscript](../resources/calltranscript.md) collection|**TODO: Add a useful description.**|
-|[Create callTranscript](../api/adhoccall-post-transcripts.md)|[callTranscript](../resources/calltranscript.md)|Create a new callTranscript object.|
+|[List recordings](../api/adhoccall-list-recordings.md)|[callRecording](../resources/callrecording.md) collection | Retrieve the list of [callRecording](../resources/callrecording.md) objects associated with an **ad hoc call**. |
+|[List transcripts](../api/adhoccall-list-transcripts.md)|[callTranscript](../resources/calltranscript.md) collection | Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with an **ad hoc call**. |
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherits from [entity](../resources/entity.md)|
+|id|String|The default ID associated with the ad hoc call. Read-only.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|recordings|[callRecording](../resources/callrecording.md) collection|**TODO: Add Description**|
-|transcripts|[callTranscript](../resources/calltranscript.md) collection|**TODO: Add Description**|
+|recordings|[callRecording](../resources/callrecording.md) collection | The recordings of an ad hoc call. Read-only. |
+|transcripts|[callTranscript](../resources/calltranscript.md) collection | The transcripts of an ad hoc call. Read-only. |
 
 ## JSON representation
 
