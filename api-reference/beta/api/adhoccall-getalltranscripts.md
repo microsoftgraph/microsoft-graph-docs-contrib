@@ -1,6 +1,6 @@
 ---
 title: "adhocCall: getAllTranscripts"
-description: "Get transcripts for all ad hoc calls that a user participated in."
+description: "Get transcripts for all calls that a user participated in."
 author: "kanchm"
 ms.date: 07/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all transcripts from [ad hoc calls](../resources/adhoccall.md) instances for which the specified user is a participant. This API currently supports one-to-one, group and PSTN calls.
+Get all transcripts from [ad hoc calls](../resources/adhoccall.md) instances for which the specified user is a participant. This API currently supports one-to-one, group, and PSTN calls.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

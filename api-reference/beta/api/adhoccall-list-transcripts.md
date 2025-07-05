@@ -1,6 +1,6 @@
 ---
 title: "List transcripts"
-description: "Get the list of callTranscript objects associated with an adhoc call."
+description: "Get the list of callTranscript objects associated with a call."
 author: "kanchm"
 ms.date: 07/04/2025
 ms.localizationpriority: medium
