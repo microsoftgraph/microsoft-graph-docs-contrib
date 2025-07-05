@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about an ad hoc call.
+Contains information about a call.
 
 This resource supports subscribing to [change notifications](/graph/webhooks).
 
@@ -29,14 +29,14 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The default ID associated with the ad hoc call. Read-only.|
+|id|String|The default ID associated with the call. Read-only.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|recordings|[callRecording](../resources/callrecording.md) collection | The recordings of an ad hoc call. Read-only. |
-|transcripts|[callTranscript](../resources/calltranscript.md) collection | The transcripts of an ad hoc call. Read-only. |
+|recordings|[callRecording](../resources/callrecording.md) collection | The recordings of a call. Read-only. |
+|transcripts|[callTranscript](../resources/calltranscript.md) collection | The transcripts of a call. Read-only. |
 
 ## JSON representation
 
