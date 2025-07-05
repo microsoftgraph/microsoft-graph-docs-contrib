@@ -60,7 +60,7 @@ PATCH /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows
 | managementOptions    | [microsoft.graph.industryData.userManagementOptions](../resources/industrydata-usermanagementoptions.md) | The different attribute choices for all the users to be considered. Required.               |   
 
 > [!CAUTION]
-> The **markAllStudentsAsMinors** property from **managementOptions** is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property.
+> The **markAllStudentsAsMinors** property of **additionalOptions** under **managementOptions** is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property.
 
 ## Response
 
