@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 > **Notes:**
-> - We don't recommend using this API for data migration. It does not have the throughput necessary for a typical migration.
+> - We don't recommend using this API for data migration. It does not have the throughput necessary for a typical migration (limit of 10 messages per 10 seconds).
 > - It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
