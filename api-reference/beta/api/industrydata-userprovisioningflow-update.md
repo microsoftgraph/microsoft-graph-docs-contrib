@@ -16,9 +16,6 @@ Namespace: microsoft.graph.industryData
 
 Update the properties of a [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object.
 
-> [!CAUTION]
-> The `additionalOptions` object contains properties from the deprecated [additionalUserOptions](../resources/industrydata-additionaluseroptions.md) resource. The `markAllStudentsAsMinors` property is deprecated and will be removed on October 15, 2025. Use the `studentAgeGroup` property instead.
-
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -58,8 +55,12 @@ PATCH /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows
 | Property             | Type                                                                        | Description                                                                                 |
 | :------------------- | :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
 | createUnmatchedUsers | Boolean                                                                     | A Boolean choice indicating whether unmatched users should be created or ignored. Optional. |
-| managementOptions    | [microsoft.graph.industryData.userManagementOptions](../resources/industrydata-usermanagementoptions.md) | The different attribute choices for all the users to be considered. Required.               |
+            |
 | creationOptions      | [microsoft.graph.industryData.userCreationOptions](../resources/industrydata-usercreationoptions.md)     | The different management choices for the new users to be provisioned. Optional.             |
+| managementOptions    | [microsoft.graph.industryData.userManagementOptions](../resources/industrydata-usermanagementoptions.md) | The different attribute choices for all the users to be considered. Required.   
+
+> [!CAUTION]
+> The **markAllStudentsAsMinors** property from **managementOptions** is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property.
 
 ## Response
 
@@ -71,7 +72,6 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_userprovisioningflow"
@@ -83,76 +83,43 @@ PATCH https://graph.microsoft.com/beta/external/industryData/OutboundProvisionin
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.industryData.userProvisioningFlow",
-    "createUnmatchedUsers": true,
-    "managementOptions":
-    {
-        "additionalAttributes": ["userGradeLevel"],
-        "additionalOptions":
-        {
-            "studentAgeGroup": "minor",
-            "allowStudentContactAssociation"  : true
-        }
-    },
-    "creationOptions":
-    {
-        "configurations": [
-          {
-            "roleGroup@odata.bind": "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff",
-            "defaultPasswordSettings":
-            {
-              "@odata.type": "#microsoft.graph.industryData.simplePasswordSettings",
-              "password": "********"
-            },
-            "licenseSkus": [ "SkuUpdated"]
-          },
-          {
-            "roleGroup@odata.bind": "https://graph.microsoft.com/beta/external/industryData/roleGroups/students",
-            "defaultPasswordSettings":
-            {
-              "@odata.type": "#microsoft.graph.industryData.simplePasswordSettings",
-              "password": "********"
-            },
-            "licenseSkus": [ "SkuUpdated2"]
-          }
-        ]
+  "@odata.type": "#microsoft.graph.industryData.userProvisioningFlow",
+  "createUnmatchedUsers": true,
+  "managementOptions": {
+    "additionalAttributes": [
+      "userGradeLevel"
+    ],
+    "additionalOptions": {
+      "studentAgeGroup": "minor",
+      "allowStudentContactAssociation": true
     }
+  },
+  "creationOptions": {
+    "configurations": [
+      {
+        "roleGroup@odata.bind": "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff",
+        "defaultPasswordSettings": {
+          "@odata.type": "#microsoft.graph.industryData.simplePasswordSettings",
+          "password": "********"
+        },
+        "licenseSkus": [
+          "SkuUpdated"
+        ]
+      },
+      {
+        "roleGroup@odata.bind": "https://graph.microsoft.com/beta/external/industryData/roleGroups/students",
+        "defaultPasswordSettings": {
+          "@odata.type": "#microsoft.graph.industryData.simplePasswordSettings",
+          "password": "********"
+        },
+        "licenseSkus": [
+          "SkuUpdated2"
+        ]
+      }
+    ]
+  }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-userprovisioningflow-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-userprovisioningflow-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-userprovisioningflow-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-userprovisioningflow-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-userprovisioningflow-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-userprovisioningflow-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-userprovisioningflow-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-userprovisioningflow-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
