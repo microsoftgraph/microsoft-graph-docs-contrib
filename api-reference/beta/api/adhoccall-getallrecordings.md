@@ -1,10 +1,10 @@
 ---
 title: "adhocCall: getAllRecordings"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Get recordings for all ad hoc calls that a user participated in."
+author: "kanchm"
 ms.date: 07/04/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Get all recordings from [ad hoc calls](../resources/adhoccall.md) instances for which the specified user is a participant. This API currently supports one-to-one, group and PSTN calls.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -34,29 +36,32 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /communications/adhocCalls/getAllRecordings
-GET /users/{usersId}/adhocCalls/getAllRecordings
+GET /users/{usersId}/adhocCalls/(userId='{userId}',startDateTime={startDateTime},endDateTime={endDateTime})
 ```
+>**Note:** The request fails if you don't pass the function parameter **userId**.
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|**TODO: Add Description**|
-|startDateTime|DateTimeOffset|**TODO: Add Description**|
-|endDateTime|DateTimeOffset|**TODO: Add Description**|
+|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts created before the given end date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|userId|String|The user identifier of the participant to filter for artifacts for calls for the given user identifier.|
 
+## Optional query parameters
+
+This method supports the following OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+| Name           | Description                                                                       |
+| :------------- | :-------------------------------------------------------------------------------- |
+|  `$top`        | Allows the caller to specify the max number of objects per page as the page size. |
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-
-## Request body
-
-Don't supply a request body for this method.
 
 ## Response
 
@@ -73,9 +78,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/communications/adhocCalls/getAllRecordings(userId='parameterValue',startDateTime=String (timestamp),endDateTime=String (timestamp))
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/adhocCalls/getAllRecordings(userId='parameterValue',startDateTime=String (timestamp),endDateTime=String (timestamp))
 ```
-
 
 ### Response
 
@@ -92,22 +96,34 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#Microsoft.Teams.GraphSvc.callRecording",
-      "id": "String (identifier)",
-      "meetingId": "String",
-      "callId": "String",
-      "contentCorrelationId": "String",
-      "meetingOrganizer": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "createdDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "content": "Stream",
-      "recordingContentUrl": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(callRecording)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/users({userId})/adhocCalls/getAllRecordings(userId='8b081ef6-4792-4def-b2c9-c363a1bf41d5', startDateTime=2024-01-15T00:00:00Z, endDateTime=2024-01-31T00:00:00Z)?skipToken={skipToken}",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.callRecording",
+            "id": "TBD",
+            "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
+            "createdDateTime": "2023-12-02T06:59:34.7411768Z",
+            "recordingContentUrl": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/adhocCalls/af630fe0-04d3-4559-8cf9-91fe45e36296/recordings/{recordingId}/content",
+            "meetingOrganizer": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "a1d286db-6149-4b3d-95ad-23c9e1bf6853"
+                }
+            }
+        }
+    ]
 }
 ```
 
+## Related content
+
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+- [Delta query overview](/graph/delta-query-overview)
+- [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content)

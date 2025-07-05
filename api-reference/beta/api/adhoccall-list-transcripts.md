@@ -1,10 +1,10 @@
 ---
 title: "List transcripts"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Get the list of callTranscript objects associated with an adhoc call."
+author: "kanchm"
 ms.date: 07/04/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [ad hoc call](../resources/adhoccall.md). This API supports the retrieval of ad hoc call transcripts from one-on-one, group and PSTN calls.
 
 ## Permissions
 
@@ -34,6 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+GET /me/adhocCalls/{adhocCallId}/transcripts
 GET /users/{usersId}/adhocCalls/{adhocCallId}/transcripts
 ```
 
@@ -77,7 +78,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callTranscript"
+  "@odata.type": "Collection(microsoft.graph.callTranscript)"
 }
 -->
 ``` http
@@ -85,23 +86,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.callTranscript",
-      "id": "4ec37674-865f-9e68-35e7-28bc568be69d",
-      "meetingId": "String",
-      "callId": "String",
-      "contentCorrelationId": "String",
-      "meetingOrganizer": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "transcriptContentUrl": "String",
-      "createdDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "content": "Stream",
-      "metadataContent": "Stream"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/adhocCall('af630fe0-04d3-4559-8cf9-91fe45e36296')/transcripts",
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "MSMjMCMjZDAwYWU3NjUtNmM2Yi00NjQxLTgwMWQtMTkzMmFmMjEzNzdh",
+            "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
+            "createdDateTime": "2021-09-17T06:09:24.8968037Z",
+            "endDateTime": "2021-09-17T06:27:25.2346000Z",
+            "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
+            "transcriptContentUrl": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/adhocCall('af630fe0-04d3-4559-8cf9-91fe45e36296')/transcripts/('MSMjMCMjZDAwYWU3NjUtNmM2Yi00NjQxLTgwMWQtMTkzMmFmMjEzNzdh')/content",
+            "meetingOrganizer": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+                    "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
+                }
+            }
+        }
+    ]
 }
 ```
 
