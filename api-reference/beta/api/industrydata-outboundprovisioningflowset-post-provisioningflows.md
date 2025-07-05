@@ -16,9 +16,6 @@ Namespace: microsoft.graph.industryData
 
 Create a new [provisioningFlow](../resources/industrydata-provisioningflow.md) object.
 
-> [!CAUTION]
-> The `additionalOptions` object contains properties from the deprecated [additionalUserOptions](../resources/industrydata-additionaluseroptions.md) resource. The `markAllStudentsAsMinors` property is deprecated and will be removed on October 15, 2025. Use the `studentAgeGroup` property instead.
-
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -57,10 +54,13 @@ In the request body, supply a JSON representation of the [provisioningFlow](../r
 
 Any of the following provisioning flows are valid:
 
-- [administrativeUnitProvisioningFlow](../resources/industrydata-administrativeUnitProvisioningFlow.md)
-- [classGroupProvisioningFlow](../resources/industrydata-classGroupProvisioningFlow.md)
-- [securityGroupProvisioningFlow](../resources/industrydata-securityGroupProvisioningFlow.md)
-- [userProvisioningFlow](../resources/industrydata-userProvisioningFlow.md)
+- [administrativeUnitProvisioningFlow](../resources/industrydata-administrativeunitprovisioningflow.md)
+- [classGroupProvisioningFlow](../resources/industrydata-classgroupprovisioningflow.md)
+- [securityGroupProvisioningFlow](../resources/industrydata-securitygroupprovisioningflow.md)
+- [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md)
+
+> [!CAUTION]
+> The **markAllStudentsAsMinors** property of **additionalUserOptions** under **managementOptions** in **userProvisioningFlow** is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property.
 
 ## Response
 
