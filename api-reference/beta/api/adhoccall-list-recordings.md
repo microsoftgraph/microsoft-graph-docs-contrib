@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [callRecording](../resources/callrecording.md) objects associated with a [call](../resources/adhoccall.md). This API supports the retrieval of ad hoc call recordings from one-on-one, group and PSTN calls.
+Get the list of [callRecording](../resources/callrecording.md) objects associated with a [call](../resources/adhoccall.md). This API supports the retrieval of call recordings from one-on-one, group and PSTN calls.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
