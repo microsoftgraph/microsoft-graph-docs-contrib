@@ -57,7 +57,7 @@ PATCH /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows
 | createUnmatchedUsers | Boolean                                                                     | A Boolean choice indicating whether unmatched users should be created or ignored. Optional. |
             |
 | creationOptions      | [microsoft.graph.industryData.userCreationOptions](../resources/industrydata-usercreationoptions.md)     | The different management choices for the new users to be provisioned. Optional.             |
-| managementOptions    | [microsoft.graph.industryData.userManagementOptions](../resources/industrydata-usermanagementoptions.md) | The different attribute choices for all the users to be considered. Required.   
+| managementOptions    | [microsoft.graph.industryData.userManagementOptions](../resources/industrydata-usermanagementoptions.md) | The different attribute choices for all the users to be considered. Required.               |   
 
 > [!CAUTION]
 > The **markAllStudentsAsMinors** property from **managementOptions** is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property.
