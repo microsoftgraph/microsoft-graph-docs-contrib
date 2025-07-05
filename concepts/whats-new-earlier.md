@@ -4,6 +4,7 @@ description: "Find information about previous additions and updates to Microsoft
 author: "lauragra"
 ms.localizationpriority: medium
 ms.date: 01/01/2025
+ms.custom: sfi-ga-nochange
 ---
 
 # Microsoft Graph what's new history

@@ -25,7 +25,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_removeretentionlabel" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-removeretentionlabel-permissions.md)]
 
->**Note:** `Sites.FullControl.All` is the least privileged permission required to remove retention labels that classify the content as records.
+> [!NOTE]
+> `Sites.FullControl.All` is the least privileged permission required to remove retention labels that classify the content as records.
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 
