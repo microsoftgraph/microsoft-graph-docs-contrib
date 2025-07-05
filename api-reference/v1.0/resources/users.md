@@ -9,7 +9,7 @@ ms.subservice: entra-users
 doc_type: conceptualPageType
 ms.topic: overview
 ms.date: 03/17/2025
-
+ms.custom: sfi-ga-nochange
 #customer intent: As a developer, I want to access and manage user data using Microsoft Graph so that I can build personalized app experiences.
 ---
 

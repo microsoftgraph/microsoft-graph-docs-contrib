@@ -4,6 +4,7 @@ description: "Learn how to use app-only authentication to enable non-interactive
 ms.localizationpriority: medium
 author: jasonjoh
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Use app-only authentication with the Microsoft Graph CLI
