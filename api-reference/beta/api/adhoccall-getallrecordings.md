@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all recordings from [ad hoc calls](../resources/adhoccall.md) instances for which the specified user is a participant. This API currently supports one-to-one, group, and PSTN calls.
+Get all recordings from [call](../resources/adhoccall.md) instances for which the specified user is a participant. This API currently supports one-to-one, group, and PSTN calls.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
