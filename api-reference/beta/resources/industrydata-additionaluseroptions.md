@@ -16,16 +16,13 @@ Namespace: microsoft.graph.industryData
 
 Represents additional configuration options for user provisioning and management in industry data synchronization scenarios. This resource provides settings that control how users, particularly students, are processed and configured during data synchronization operations.
 
-> [!NOTE]
-> This resource is deprecated. The `markAllStudentsAsMinors` property is deprecated and will be removed on October 15, 2025. Use the `studentAgeGroup` property instead.
-
 ## Properties
 
 | Property                       | Type    | Description                                                     |
 | :----------------------------- | :------ | :-------------------------------------------------------------- |
 | allowStudentContactAssociation | Boolean | Indicates whether student contact association should be allowed. |
-| markAllStudentsAsMinors (deprecated) | Boolean | Indicates whether all students should be marked as minors.**Deprecated.** Use `studentAgeGroup` instead. |
 | studentAgeGroup | microsoft.graph.industryData.studentAgeGroup | Age group classification for students. Possible values: `minor`, `notAdult`, `adult`, `unknownFutureValue`. Use `null` to disable age group enforcement. |
+| markAllStudentsAsMinors (deprecated) | Boolean | Indicates whether all students should be marked as minors. The **markAllStudentsAsMinors** property is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property. |
 
 ## Relationships
 
@@ -44,8 +41,8 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.additionalUserOptions",
-  "markAllStudentsAsMinors": "Boolean",
   "allowStudentContactAssociation": "Boolean",
+  "markAllStudentsAsMinors": "Boolean",
   "studentAgeGroup": "String"
 }
 ```
