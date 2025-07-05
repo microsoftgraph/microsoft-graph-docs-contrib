@@ -30,6 +30,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |onlineMeetingConversations|[onlineMeetingEngagementConversation](../resources/onlinemeetingengagementconversation.md) collection|A collection of structured question-and-answer (Q&A) thread in Teams directly associated with online meetings.|
+|adhocCalls|[adhocCall](../resources/adhoccall.md) collection|A collection of ad hoc calls in Teams. |
 
 ## JSON representation
 The following JSON representation shows the resource type.
