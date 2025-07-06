@@ -3,9 +3,10 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 03/10/2025
+ms.date: 06/23/2025
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
+ms.custom: sfi-ropc-nochange
 ---
 
 # Enum values
@@ -140,6 +141,14 @@ Namespace: microsoft.graph
 | recommeded |
 | unknownFutureValue |
 | peerRecommeded |
+
+### certificateAuthorityType values
+
+|Member|
+|:---|
+|root|
+|intermediate|
+|unknownFutureValue|
 
 ### courseStatus values
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Delete a [workflow](../resources/identitygovernance-workflow.md) object and its associated [tasks](../resources/identitygovernance-task.md), [taskProcessingResults](../resources/identitygovernance-taskprocessingresult.md) and [versions](../resources/identitygovernance-workflowversion.md). You can restore a deleted workflow and its associated objects within 30 days of deletion.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

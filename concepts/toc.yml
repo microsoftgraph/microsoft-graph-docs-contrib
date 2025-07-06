@@ -302,6 +302,8 @@ items:
         href: application-rollkey-prooftoken.md
       - name: Authentication behaviors
         href: applications-authenticationbehaviors.md
+      - name: Customize claims
+        href: how-to-claims-customization.md
     - name: Synchronization
       items:
       - name: Synchronize custom target attributes
@@ -635,7 +637,7 @@ items:
         - name: Manage security alerts for Microsoft Entra roles (preview)
           href: how-to-pim-alerts.md
           displayName: PIM alerts, privileged identity management
-    - name: Multicloud permissions management (preview)
+    - name: Multicloud permissions management (deprecated)
       items:
       - name: API operations reference
         href: permissions-management-howto.md
