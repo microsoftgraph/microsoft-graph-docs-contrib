@@ -4,7 +4,7 @@ description: "Represents a role management container for unified role definition
 author: "adsela"
 ms.date: 05/15/2025
 ms.localizationpriority: medium
-ms.subservice: "defender-xdr"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
