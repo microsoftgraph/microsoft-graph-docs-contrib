@@ -96,19 +96,15 @@ Content-type: application/json
         "id": "00567",
         "type": "DeviceGroups",
         "displayName": "TLV1",
-        "description": "TLV floor 1 devices"
+        "description": "TLV floor 1 devices",
         "customAttributes" : []
     },
     {
         "id": "00123",
         "type": "UserGroupIds",
         "displayName": "NHS.local",
-        "description": "Rambam 5th floor"
-        "customAttributes" : 
-            [
-                "ScopeSource": "AD",
-                "Scopekind": "Domain"
-            ]
+        "description": "Rambam 5th floor",
+        "customAttributes" : [ ]
     }
     ]
 }
