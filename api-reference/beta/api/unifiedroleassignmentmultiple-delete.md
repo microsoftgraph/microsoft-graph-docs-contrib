@@ -20,6 +20,7 @@ Delete a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmulti
 This is applicable for a RBAC application that supports multiple principals and scopes. The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
+- Defender (Microsoft Security Defender Unified RBAC)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -37,7 +38,10 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_delete_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentmultiple-delete-2-permissions.md)]
 
+### For Defender provider
 
+<!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrbacapplicationmultiple-delete-roleassignments-permissions.md)]
 
 ## HTTP request
 
@@ -53,6 +57,13 @@ To delete a **unifiedRoleAssignmentMultiple** for an Intune provider:
 
 ```http
 DELETE /roleManagement/deviceManagement/roleAssignments/{id}
+```
+
+To delete a **unifiedRoleAssignmentMultiple** for a Defender provider:
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /roleManagement/defender/roleAssignments/{id}
 ```
 
 ## Request headers
@@ -213,4 +224,32 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }-->
 
+### Example 3: Delete a unifiedRoleAssignmentMultiple in a Defender provider
 
+The following example shows how to delete a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) in a Defender provider.
+
+### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_unifiedroleassignmentMultiple_defender"
+}-->
+
+```http
+DELETE https://graph.microsoft.com/beta/roleManagement/defender/roleAssignments/{id}
+```
+
+### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
