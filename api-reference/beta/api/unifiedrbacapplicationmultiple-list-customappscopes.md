@@ -1,6 +1,6 @@
 ---
 title: "List customAppScopes (UnifiedRbacApplicationMultiple)"
-description: "Get a list of customAppScope objects for an RBAC provider."
+description: "Get a list of customAppScope objects for an RBAC provider (UnifiedRbacApplicationMultiple)"
 ms.localizationpriority: medium
 author: "Adsela"
 ms.subservice: "entra-directory-management"
