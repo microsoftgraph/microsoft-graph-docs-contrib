@@ -38,6 +38,25 @@ var requestBody = new ProcessContentPostRequestBody
 		{
 			Activity = UserActivityType.UploadText,
 		},
+		DeviceMetadata = new DeviceMetadata
+		{
+			DeviceType = "Unmanaged",
+			IpAddress = "127.0.0.1",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"operatingSystemSpecifications" , new UntypedObject(new Dictionary<string, UntypedNode>
+					{
+						{
+							"operatingSystemPlatform", new UntypedString("Windows 11")
+						},
+						{
+							"operatingSystemVersion", new UntypedString("10.0.26100.0")
+						},
+					})
+				},
+			},
+		},
 		ProtectedAppMetadata = new ProtectedApplicationMetadata
 		{
 			Name = "PC Purview API Explorer",
@@ -52,28 +71,6 @@ var requestBody = new ProcessContentPostRequestBody
 		{
 			Name = "PC Purview API Explorer",
 			Version = "0.2",
-		},
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"deviceMetadata" , new UntypedObject(new Dictionary<string, UntypedNode>
-				{
-					{
-						"operatingSystemSpecifications", new UntypedObject(new Dictionary<string, UntypedNode>
-						{
-							{
-								"operatingSystemPlatform", new UntypedString("Windows 11")
-							},
-							{
-								"operatingSystemVersion", new UntypedString("10.0.26100.0")
-							},
-						})
-					},
-					{
-						"ipAddress", new UntypedString("127.0.0.1")
-					},
-				})
-			},
 		},
 	},
 };
