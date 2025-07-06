@@ -21,6 +21,7 @@ Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object f
 The following RBAC providers are currently supported:
 - Cloud PC
 - device management (Intune)
+- defender (Microsoft Security Defender Unified RBAC)
 - directory (Microsoft Entra ID) 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -38,6 +39,11 @@ The following tables show the least privileged permission or permissions require
 
 <!-- { "blockType": "permissions", "name": "unifiedroledefinition_delete_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-delete-2-permissions.md)]
+
+### For a Defender provider
+
+<!-- { "blockType": "permissions", "name": "unifiedrbacapplicationmultiple_delete_roledefinitions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrbacapplicationmultiple-delete-roledefinitions-permissions.md)]
 
 <a name='for-a-directory-azure-ad-provider'></a>
 
