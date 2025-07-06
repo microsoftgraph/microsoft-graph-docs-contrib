@@ -1,10 +1,10 @@
 ---
 title: "unifiedRbacApplicationMultiple resource type"
-description: "Represents a role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers."
+description: "Represents a role management container for unified role definitions, role assignments and scopes for Microsoft 365 RBAC providers."
 author: "adsela"
 ms.date: 05/15/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-directory-management"
+ms.subservice: "defender-xdr"
 doc_type: resourcePageType
 ---
 
