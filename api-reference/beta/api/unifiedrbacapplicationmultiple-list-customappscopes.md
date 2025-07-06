@@ -67,9 +67,9 @@ The following example shows how to request all **customAppScope** objects of Uni
 <!-- {
   "blockType": "request",
   "name": "list_customAppScope_DefenderProvider"
-}
--->
-```msgraph-interactive
+}-->
+
+```http
 GET https://graph.microsoft.com/beta/roleManagement/defender/customAppScopes
 ```
 ---
@@ -85,6 +85,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.customAppScope)"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
