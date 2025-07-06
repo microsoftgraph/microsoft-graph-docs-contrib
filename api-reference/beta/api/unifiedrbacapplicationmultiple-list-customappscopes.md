@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-<!--### Example 1: Request all custom app scope objects for Unified Rbac in Defender-->
+<!--### Example 1: Request all custom app scope objects for this tenant for Unified Rbac in Defender-->
 
 ### Request
 
