@@ -4,6 +4,7 @@ description: "Learn how to install the Microsoft Graph command-line interface (C
 ms.localizationpriority: medium
 author: jasonjoh
 ms.date: 11/07/2024
+ms.custom: sfi-ropc-nochange
 ---
 
 # Install the Microsoft Graph command-line interface (CLI)
