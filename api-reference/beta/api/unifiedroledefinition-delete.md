@@ -21,7 +21,7 @@ Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object f
 The following RBAC providers are currently supported:
 - Cloud PC
 - device management (Intune)
-- defender (Microsoft Security Defender Unified RBAC)
+- Defender (Microsoft Security Defender Unified RBAC)
 - directory (Microsoft Entra ID) 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
