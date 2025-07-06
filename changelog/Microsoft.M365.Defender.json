@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "99683d17-f392-44ea-915a-2613c8b89abb",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftThreatIntelligence",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftThreatIntelligence` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "99683d17-f392-44ea-915a-2613c8b89abb",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftThreatIntelligence",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftThreatIntelligence` member to the **serviceSource** enumeration.",
+          "Target": "serviceSource"
+        }
+      ],
+      "Id": "99683d17-f392-44ea-915a-2613c8b89abb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-26T09:14:16.8624443Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d60ee9a7-6f54-462e-9103-9af88aab9122",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftThreatIntelligence",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftThreatIntelligence` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "d60ee9a7-6f54-462e-9103-9af88aab9122",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftThreatIntelligence",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftThreatIntelligence` member to the **serviceSource** enumeration.",
+          "Target": "serviceSource"
+        }
+      ],
+      "Id": "d60ee9a7-6f54-462e-9103-9af88aab9122",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-05-26T05:53:29.5486832Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
           "ApiChange": "EnumType",
           "ChangedApiName": "incidentStatus",
@@ -2693,6 +2745,42 @@
         "Cloud": "Review",
         "Version": "v1.0",
         "CreatedDateTime": "2025-03-26T20:20:31.9078919Z",
+        "WorkloadArea": "Security",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "0b42926b-ca34-4b46-8ece-7d2ebc57d92c",
+            "ApiChange": "Property",
+            "ChangedApiName": "customDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the **customDetails** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
+            "Target": "alert"
+          }
+        ],
+        "Id": "0b42926b-ca34-4b46-8ece-7d2ebc57d92c",
+        "Cloud": "Review",
+        "Version": "beta",
+        "CreatedDateTime": "2025-05-21T03:30:26.499353Z",
+        "WorkloadArea": "Security",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "00bffed3-c1fc-46a7-bdf5-e62c5a7bd69f",
+            "ApiChange": "Property",
+            "ChangedApiName": "customDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the **customDetails** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-1.0) resource.",
+            "Target": "alert"
+          }
+        ],
+        "Id": "00bffed3-c1fc-46a7-bdf5-e62c5a7bd69f",
+        "Cloud": "Review",
+        "Version": "v1.0",
+        "CreatedDateTime": "2025-05-21T03:30:26.4995892Z",
         "WorkloadArea": "Security",
         "SubArea": ""
       }
