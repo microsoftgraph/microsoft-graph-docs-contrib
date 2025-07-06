@@ -39,6 +39,11 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "rbacapplication_post_roledefinitions_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/rbacapplication-post-roledefinitions-2-permissions.md)]
 
+### For a Defender provider
+
+<!-- { "blockType": "permissions", "name": "unifiedrbacapplicationmultiple_post_roledefinitions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrbacapplicationmultiple-post-roledefinitions-permissions.md)]
+
 <a name='for-a-directory-azure-ad-provider'></a>
 
 ### For a directory (Microsoft Entra ID) provider
