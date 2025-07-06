@@ -3,12 +3,12 @@ title: "List customAppScopes (UnifiedRbacApplicationMultiple)"
 description: "Get a list of customAppScope objects for an RBAC provider."
 ms.localizationpriority: medium
 author: "Adsela"
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "defender-xdr"
 doc_type: "apiPageType"
 ms.date: 07/06/2025
 ---
 
-# List customAppScopes
+# List customAppScopes (UnifiedRbacApplicationMultiple)
 
 Namespace: microsoft.graph
 
