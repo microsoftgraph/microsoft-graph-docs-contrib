@@ -20,7 +20,7 @@ Get the properties and relationships of a [unifiedRoleDefinition](../resources/u
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
-- defender (Microsoft Security Defender Unified RBAC)
+- Defender (Microsoft Security Defender Unified RBAC)
 - directory (Microsoft Entra directory roles)
 - entitlement management (Microsoft Entra entitlement management)
 - Exchange Online (Except China operated by 21Vianet)
