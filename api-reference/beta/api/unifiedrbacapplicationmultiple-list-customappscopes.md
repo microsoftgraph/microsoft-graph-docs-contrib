@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider.
+Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider (UnifiedRbacApplicationMultiple).
 
 Currently only the Defender RBAC provider is supported unifiedRbacApllicationMultiple (Exchange Rbac online has the same Api for UnifiedRbacApplication).
 
