@@ -120,6 +120,7 @@
         "protectionRuleBase",
         "protectionUnitBase",
         "restoreArtifactBase",
+        "restoreArtifactsBulkRequestBase",
         "restorePoint",
         "restoreSessionBase",
         "serviceApp"
@@ -150,12 +151,28 @@
           ]
         },
         {
+          "name": "Protection units bulk job",
+          "resources": [
+            "driveProtectionUnitsBulkAdditionJob",
+            "mailboxProtectionUnitsBulkAdditionJob",
+            "siteProtectionUnitsBulkAdditionJob"
+          ]
+        },
+        {
           "name": "Restore artifact",
           "resources": [
             "granularMailBoxRestoreArtifact",
             "driveRestoreArtifact",
             "mailboxRestoreArtifact",
             "siteRestoreArtifact"
+          ]
+        },
+        {
+          "name": "Restore artifacts bulk request",
+          "resources": [
+            "driveRestoreArtifactsBulkAdditionRequest",
+            "mailboxRestoreArtifactsBulkAdditionRequest",
+            "siteRestoreArtifactsBulkAdditionRequest"
           ]
         },
         {
@@ -995,7 +1012,7 @@
               ]
             },
             {
-              "name": "Authentication methods policy",
+              "name": "Authentication methods policies",
               "overview": "../../resources/authenticationmethodspolicies-overview.md",
               "resources": [
                 "authenticationMethodsPolicy",
@@ -1138,6 +1155,13 @@
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy"
               ]
+            },
+            {
+              "name": "Public key infrastructure",
+              "resources": [
+                "certificateBasedAuthPki",
+                "certificateAuthorityDetail"
+               ]
             },
             {
               "name": "User flows in external tenants",
@@ -1494,6 +1518,56 @@
           ]
         },
         {
+          "name": "Data security and compliance",
+          "resources": [
+            "contentActivity",
+            "microsoft.graph.security.sensitivityLabel",
+            "tenantDataSecurityAndGovernance",
+            "userDataSecurityAndGovernance"
+           ],
+            "complexTypes": [
+              "activityMetadata",
+              "aiInteractionPlugin",
+              "autoLabeling",
+              "binaryContent",
+              "classifcationErrorBase",
+              "classificationError",
+              "classificationInnerError",
+              "computeRightsAndInheritanceResult",
+              "contentBase",
+              "customMetadataDictionary",
+              "deviceMetadata",
+              "dlpActionInfo",
+              "groupScope",
+              "integratedApplicationMetadata",
+              "labelContentRight",
+              "operatingSystemSpecifications",
+              "policyBinding",
+              "policyLocation",
+              "policyLocationApplication",
+              "policyLocationDomain",
+              "policyLocationUrl",
+              "policyScopeBase",
+              "policyTenantScope",
+              "policyUserScope",
+              "processContentBatchRequest",
+              "processContentRequest",
+              "processContentResponse",
+              "processContentResponses",
+              "processConversationMetadata",
+              "processFileMetadata",
+              "processingError",
+              "protectedApplicationMetadata",
+              "protectedContent",
+              "restrictAccessAction",
+              "restrictAccessActionBase",
+              "scopeBase",
+              "tenantScope",
+              "textContent",
+              "userScope" 
+            ]
+        },
+        {
           "name": "eDiscovery",
           "overview": "../../resources/security-ediscovery-apioverview.md",
           "resources": [
@@ -1762,6 +1836,22 @@
       ],
       "childNodes": [
         {
+          "name": "AI interactions",
+          "resources": [
+            "aiInteractionHistory"
+          ],
+          "complexTypes": [
+            "aiInteraction",
+            "aiInteractionAttachment",
+            "aiInteractionContext",
+            "aiInteractionLink",
+            "aiInteractionMention",
+            "aiInteractionMentionedIdentitySet",
+            "aiUser",
+            "copilotRoot"
+          ]
+        },
+        {
           "name": "Apps",
           "resources": [
             "teamsApp",
@@ -1801,6 +1891,17 @@
               ],
               "complexTypes": [
                 "microsoft.graph.callRecords.networkInfo"
+              ]
+            },
+            {
+              "name": "Copilot settings",
+              "resources": [
+                "copilotAdminLimitedMode"
+              ],
+              "complexTypes": [
+                "copilotAdmin",
+                "copilotAdminSetting",
+                "copilotRoot"
               ]
             },
             {

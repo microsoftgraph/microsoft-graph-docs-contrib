@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects in [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md). If the delegated user is in a directory role, the resulting list includes all the assignment policies that the caller has access to read, across all catalogs and access packages.  If the delegated user is an access package manager or catalog owner, they should instead retrieve the policies for the access packages they can read with [list accessPackages](entitlementmanagement-list-accesspackages.md) by including `$expand=accessPackageAssignmentPolicies` in the query.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -37,7 +37,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## Optional query parameters
 
-This method supports the `$select`, `$filter` and `$expand` OData query parameters to help customize the response. For example, to retrieve an access package assignment policy with a specified display name, include `$filter=displayName eq 'Employee sales support'` in the query. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter` and `$expand` OData query parameters to help customize the response. For example, to retrieve an access package assignment policy with a specified display name, include `$filter=displayName eq 'Employee sales support'` in the query. To retrieve the access package assignment policies for an access package `136f166c-b85a-4403-85b1-656aa80d167a`, include `$filter=accesspackage/id eq '136f166c-b85a-4403-85b1-656aa80d167a'`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

@@ -6,12 +6,13 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ms.date: 04/04/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # List roleManagementPolicyAssignments
 Namespace: microsoft.graph
 
-Get the details of all role management policy assignments made in PIM for Microsoft Entra roles and PIM for groups.
+Get the details of all role management policy assignments made in PIM for Microsoft Entra roles and PIM for Groups.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -30,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
-### For PIM for groups
+### For PIM for Groups
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -62,7 +63,7 @@ GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq '{groupId}' and
 This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. 
 
 - To retrieve policies for Microsoft Entra roles, the **scopeId** must be `/` and, **scopeType** can be either `Directory` or `DirectoryRole`.
-- To retrieve policies for groups in PIM for groups, the **scopeId** must be the group ID and **scopeType** must be `Group`. 
+- To retrieve policies for groups in PIM for Groups, the **scopeId** must be the group ID and **scopeType** must be `Group`. 
 
 You can also filter by the **roleDefinitionId** or use the `$select` and `$expand` OData query parameters to help customize the response. This API also supports a nested `$expand` to retrieve the rules in policies and nested `$select` to return only specific properties of those rules. For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -555,11 +556,11 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Retrieve details of all role management policy assignments for PIM for groups
+### Example 3: Retrieve details of all role management policy assignments for PIM for Groups
 
 #### Request
 
-The following example retrieves details of all role management policy assignments that are scoped to the group and apply to PIM for groups membership and ownership.
+The following example retrieves details of all role management policy assignments that are scoped to the group and apply to PIM for Groups membership and ownership.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -641,7 +642,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Retrieve details of all role management policy assignments for PIM for groups ownership of a group and expand the policy and its associated rules
+### Example 4: Retrieve details of all role management policy assignments for PIM for Groups ownership of a group and expand the policy and its associated rules
 
 #### Request
 

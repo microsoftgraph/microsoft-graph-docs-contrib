@@ -148,6 +148,7 @@
       ],
       "resources": [
         "backupRestoreRoot",
+        "emailNotificationsSetting",
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
@@ -219,6 +220,7 @@
       ],
       "complexTypes": [
         "artifactQuery",
+        "notificationRecipients",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
@@ -700,6 +702,7 @@
             "microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation",
             "microsoft.graph.windowsUpdates.qualityUpdateFilter",
             "microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+            "microsoft.graph.windowsUpdates.remediationUpdateFilter",
             "microsoft.graph.windowsUpdates.safeguardProfile",
             "microsoft.graph.windowsUpdates.safeguardSettings",
             "microsoft.graph.windowsUpdates.scheduleSettings",
@@ -828,10 +831,16 @@
         "educationSubmissionResource",
         "readingAssignmentSubmission",
         "reflectCheckInResponse",
-        "relatedContact"
+        "relatedContact",
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
         "challengingWord",
+        "educationAiFeedbackAudienceEngagementSettings",
+        "educationAiFeedbackContentSettings",
+        "educationAiFeedbackCriteria",
+        "educationAiFeedbackDeliverySettings",
+        "educationAiFeedbackSettings",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -850,6 +859,11 @@
         "educationMediaResource",
         "educationPowerPointResource",
         "educationResource",
+        "educationSpeakerCoachAudienceEngagementSettings",
+        "educationSpeakerCoachContentSettings",
+        "educationSpeakerCoachDeliverySettings",
+        "educationSpeakerCoachSettings",
+        "educationSpeakerProgressResource",
         "educationSubmissionIndividualRecipient",
         "educationSubmissionRecipient",
         "educationTeamsAppResource",
@@ -871,7 +885,15 @@
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
-            "engagementAsyncOperation"
+            "engagementAsyncOperation",
+            "engagementRole",
+            "engagementRoleMember",
+            "employeeExperienceUser"
+          ],
+          "complexTypes": [
+            "engagementConversationMessageAttachment",
+            "engagementConversationMessageMention",
+            "engagementIdentitySet"
           ]
         },
         {
@@ -1482,14 +1504,21 @@
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
-                "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
-                "qrCodePinAuthenticationMethod",
-                "qrCode",
-                "qrPin"
+                "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
+              ],
+              "childNodes": [
+                {
+                  "name": "QR code authentication",
+                  "resources": [
+                    "qrCodePinAuthenticationMethod",
+                    "qrCode",
+                    "qrPin"
+                  ]
+                }
               ]
             },
             {
-              "name": "Authentication methods policy",
+              "name": "Authentication methods policies",
               "overview": "../../resources/authenticationmethodspolicies-overview.md",
               "shouldSort": true,
               "resources": [
@@ -1506,15 +1535,6 @@
                 "voiceAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration",
                 "qrCodePinAuthenticationMethodConfiguration"
-              ],
-              "childNodes": [
-                {
-                  "name": "QR Code and PIN",
-                  "resources": [
-                    "QR Code",
-                    "QR PIN"
-                  ]
-                }
               ]
             },
             {
@@ -1699,14 +1719,6 @@
               ]
             },
             {
-              "name": "Microsoft Entra lifecycle announcements (deprecated)",
-              "resources": [
-                "changeItemBase",
-                "announcement",
-                "roadmap"
-              ]
-            },
-            {
               "name": "User flows in external tenants",
               "resources": [
                 "authenticationEventsFlow",
@@ -1734,7 +1746,7 @@
           ]
         },
         {
-          "name": "Multicloud permissions management (preview)",
+          "name": "Multicloud permissions management (deprecated)",
           "overview": "../../resources/permissions-management-api-overview.md",
           "resources": [
             "authorizationSystem"
@@ -2219,6 +2231,8 @@
         "namePronunciationSettings",
         "enhancedPersonalizationSetting",
         "profile",
+        "profileSource",
+        "profilePropertySetting",
         "userAnalytics"
       ],
       "childNodes": [
@@ -2231,11 +2245,12 @@
         {
           "name": "People admin settings",
           "resources": [
-            "pronounsSettings",
-            "profileCardProperty",
+            "namePronunciationSettings",
             "photoUpdateSettings",
-            "namePronunciationSettings"
-
+            "profileCardProperty",
+            "profilePropertySetting",
+            "profileSource",
+            "pronounsSettings"
           ]
         },
         {
@@ -2322,7 +2337,8 @@
               "overview": "../../resources/recommendations-api-overview.md",
               "resources": [
                 "recommendation",
-                "impactedResource"
+                "impactedResource",
+                "recommendationConfiguration"
               ]
             },
             {
@@ -2403,11 +2419,13 @@
             {
               "name": "Microsoft Entra audit logs",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
+              "shouldSort": true,
               "resources": [
                 "customSecurityAttributeAudit",
                 "directoryAudit",
-                "signIn",
-                "provisioningObjectSummary"
+                "provisioningObjectSummary",
+                "selfServiceSignUp",
+                "signIn"
               ]
             }
           ]
@@ -2581,6 +2599,60 @@
             "microsoft.graph.security.defaultAuditData"
           ]
         },
+        {
+          "name": "Data security and compliance",
+          "resources": [
+            "contentActivity",
+            "microsoft.graph.security.sensitivityLabel",
+            "tenantDataSecurityAndGovernance",
+            "userDataSecurityAndGovernance"
+           ],
+            "complexTypes": [
+              "activityMetadata",
+              "aiInteractionPlugin",
+              "autoLabeling",
+              "binaryContent",
+              "blockAccessAction",
+              "classifcationErrorBase",
+              "classificationError",
+              "classificationInnerError",
+              "computeRightsAndInheritanceResult",
+              "contentBase",
+              "customMetadataDictionary",
+              "deviceMetadata",
+              "dlpActionInfo",
+              "groupScope",
+              "integratedApplicationMetadata",
+              "labelActionBase",
+              "labelContentRight",
+              "labelPolicy",
+              "notifyUserAction",
+              "operatingSystemSpecifications",
+              "policyBinding",
+              "policyLocation",
+              "policyLocationApplication",
+              "policyLocationDomain",
+              "policyLocationUrl",
+              "policyScopeBase",
+              "policyTenantScope",
+              "policyUserScope",
+              "processContentBatchRequest",
+              "processContentRequest",
+              "processContentResponse",
+              "processContentResponses",
+              "processConversationMetadata",
+              "processFileMetadata",
+              "processingError",
+              "protectedApplicationMetadata",
+              "protectedContent",
+              "restrictAccessAction",
+              "restrictAccessActionBase",
+              "scopeBase",
+              "tenantScope",
+              "textContent",
+              "userScope" 
+            ]
+          },
         {
           "name": "eDiscovery",
           "overview": "../../resources/security-ediscovery-apioverview.md",
@@ -2938,7 +3010,7 @@
           ]
         },
         {
-          "name": "AI interactions (preview)",
+          "name": "AI interactions",
           "resources": [
             "aiInteractionHistory"
           ],
@@ -2972,6 +3044,9 @@
             "teamsAppSettings",
             "teamsTab",
             "resourceSpecificPermissionGrant"
+          ],
+          "complexTypes": [
+            "customAppSettings"
           ]
         },
         {
@@ -3041,8 +3116,10 @@
                 "meetingAttendanceReport",
                 "attendanceRecord",
                 "onlineMeeting",
+                "onlineMeetingEngagementConversation",
                 "externalMeetingRegistration",
                 "meetingRegistration",
+                "callAiInsight",
                 "callRecording",
                 "callTranscript"
               ],
@@ -3064,6 +3141,15 @@
                     }
                   ]
                 }
+              ],
+              "complexTypes": [
+                "actionItem",
+                "aiOnlineMeeting",
+                "callAiInsightViewPoint",
+                "meetingNote",
+                "meetingNoteSubpoint",
+                "mentionEvent",
+                "identitySet"
               ]
             },
             {
@@ -3176,6 +3262,7 @@
             "openShift",
             "openShiftChangeRequest",
             "schedule",
+            "scheduleChangeRequest",
             "schedulingGroup",
             "shift",
             "shiftPreferences",
@@ -3336,4 +3423,3 @@
     }
   ]
 }
-

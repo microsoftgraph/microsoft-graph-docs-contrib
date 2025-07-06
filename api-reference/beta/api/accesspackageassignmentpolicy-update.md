@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update an existing [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object to change one or more of its properties, such as the display name or description.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -57,6 +57,7 @@ The following table shows the properties that are required when you update an [a
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Users eligible to request this access package from this policy. Required.|
 |requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Who must approve requests for access package in this policy. Required.|
 |accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews aren't required. Required.|
+|accessPackageNotificationSettings|[accessPackageNotificationSettings](../resources/accesspackagenotificationsettings.md)|Represents the settings for email notifications for requests to an access package.|
 
 
 ## Response

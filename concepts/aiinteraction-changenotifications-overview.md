@@ -32,7 +32,7 @@ To get change notifications for Copilot AI interactions that a particular user i
 ### Licensing requirements
 
 To access this change notification resource, the user in the resource path must have all of the following Copilot service plan IDs enabled: 
-* **Microsoft Graph connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
+* **Microsoft 365 Copilot connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
 * **Intelligent search**: 931e4a88-a67f-48b5-814f-16a5f1e6028d
 * **Microsoft 365 Copilot in Microsoft Teams**: b95945de-b3bd-46db-8437-f2beb6ea2347
 * **Microsoft 365 Copilot in productivity apps**: a62f8878-de10-42f3-b68f-6149a25ceb97
@@ -73,7 +73,7 @@ To get change notifications for Copilot AI interactions across the tenant, subsc
 
 To access this change notification resource, the tenant must have all of the following Copilot service plan IDs provisioned and in an active state:
 
-* **Microsoft Graph connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
+* **Microsoft 365 Copilot connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
 * **Intelligent search**: 931e4a88-a67f-48b5-814f-16a5f1e6028d
 * **Microsoft 365 Copilot in Microsoft Teams**: b95945de-b3bd-46db-8437-f2beb6ea2347
 * **Microsoft 365 Copilot in productivity apps**: a62f8878-de10-42f3-b68f-6149a25ceb97

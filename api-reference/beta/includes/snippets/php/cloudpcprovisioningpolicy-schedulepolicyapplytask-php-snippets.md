@@ -15,6 +15,9 @@ $requestBody = new SchedulePolicyApplyTaskPostRequestBody();
 $additionalData = [
 	'reservePercentage' => 50,
 	'cronScheduleExpression' => '0 0 0 20 * *',
+	'startDateTime' => '2025-03-12 00:00:00',
+	'endDateTime' => null,
+	'timezone' => 'cst',
 ];
 $requestBody->setAdditionalData($additionalData);
 
