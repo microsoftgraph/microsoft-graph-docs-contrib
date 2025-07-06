@@ -221,34 +221,34 @@ The following list shows the supported resource types in Intune.
 
 The following list shows the supported resource types in security and compliance.
 
-- microsoft.securityandcompliance.auditconfigurationpolicy  
-- microsoft.securityandcompliance.autosensitivitylabelpolicy  
-- microsoft.securityandcompliance.autosensitivitylabelrule  
-- microsoft.securityandcompliance.caseholdpolicy  
-- microsoft.securityandcompliance.caseholdrule  
-- microsoft.securityandcompliance.compliancecase  
-- microsoft.securityandcompliance.compliancesearch  
-- microsoft.securityandcompliance.compliancesearchaction  
-- microsoft.securityandcompliance.compliancetag  
-- microsoft.securityandcompliance.deviceconditionalaccesspolicy  
-- microsoft.securityandcompliance.deviceconfigurationpolicy  
-- microsoft.securityandcompliance.dlpcompliancepolicy  
-- microsoft.securityandcompliance.dlpcompliancerule  
-- microsoft.securityandcompliance.fileplanpropertyauthority  
-- microsoft.securityandcompliance.fileplanpropertycategory  
-- microsoft.securityandcompliance.fileplanpropertycitation  
-- microsoft.securityandcompliance.fileplanpropertydepartment  
-- microsoft.securityandcompliance.fileplanpropertyreferenceid  
-- microsoft.securityandcompliance.fileplanpropertysubcategory  
-- microsoft.securityandcompliance.labelpolicy  
-- microsoft.securityandcompliance.protectionalert  
-- microsoft.securityandcompliance.retentioncompliancepolicy  
-- microsoft.securityandcompliance.retentioncompliancerule  
-- microsoft.securityandcompliance.retentioneventtype  
-- microsoft.securityandcompliance.securityfilter  
-- microsoft.securityandcompliance.sensitivitylabel  
-- microsoft.securityandcompliance.supervisoryreviewpolicy  
-- microsoft.securityandcompliance.supervisoryreviewrule 
+- microsoft.securityAndCompliance.auditConfigurationPolicy
+- microsoft.securityAndCompliance.autoSensitivityLabelPolicy
+- microsoft.securityAndCompliance.autoSensitivityLabelRule
+- microsoft.securityAndCompliance.caseHoldPolicy
+- microsoft.securityAndCompliance.caseHoldRule
+- microsoft.securityAndCompliance.complianceCase
+- microsoft.securityAndCompliance.complianceSearch
+- microsoft.securityAndCompliance.complianceSearchAction
+- microsoft.securityAndCompliance.complianceTag
+- microsoft.securityAndCompliance.deviceConditionalAccessPolicy
+- microsoft.securityAndCompliance.deviceConfigurationPolicy
+- microsoft.securityAndCompliance.dlpCompliancePolicy
+- microsoft.securityAndCompliance.dlpComplianceRule
+- microsoft.securityAndCompliance.filePlanPropertyAuthority
+- microsoft.securityAndCompliance.filePlanPropertyCategory
+- microsoft.securityAndCompliance.filePlanPropertyCitation
+- microsoft.securityAndCompliance.filePlanPropertyDepartment
+- microsoft.securityAndCompliance.filePlanPropertyReferenceId
+- microsoft.securityAndCompliance.filePlanPropertySubcategory
+- microsoft.securityAndCompliance.labelPolicy
+- microsoft.securityAndCompliance.protectionAlert
+- microsoft.securityAndCompliance.retentionCompliancePolicy
+- microsoft.securityAndCompliance.retentionComplianceRule
+- microsoft.securityAndCompliance.retentionEventType
+- microsoft.securityAndCompliance.securityFilter
+- microsoft.securityAndCompliance.sensitivityLabel
+- microsoft.securityAndCompliance.supervisoryReviewPolicy
+- microsoft.securityAndCompliance.supervisoryReviewRule
 
 ### Teams
 
