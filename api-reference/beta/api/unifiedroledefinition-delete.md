@@ -76,6 +76,12 @@ DELETE /roleManagement/cloudPc/roleDefinitions/{id}
 
 ```
 
+To delete a role definition for a Defender provider:
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /roleManagement/defender/roleDefinitions/{id}
+```
+
 ## Request headers
 
 | Name          | Description   |
@@ -210,6 +216,33 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/b
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+## Example 3: Delete a **unifiedRoleDefinition** resource for a Defender provider
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_unifiedroledefinition_defender",
+  "sampleKeys": ["f189965f-f560-4c59-9101-933d4c87a91a"]
+}-->
+
+```http
+DELETE https://graph.microsoft.com/beta/roleManagement/defender/roleDefinitions/f189965f-f560-4c59-9101-933d4c87a91a
+```
 
 ### Response
 
