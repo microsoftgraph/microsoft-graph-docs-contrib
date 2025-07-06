@@ -17,7 +17,7 @@ Represents a customized RBAC scope object from each RBAC provider. This resource
 
 For example, in the Exchange Online provider, **customAppScope** maps to [management role scope](/exchange/understanding-management-role-scopes-exchange-2013-help) that can be managed separately by Exchange administrators. The CRUD operations for **customAppScope** entities are supported. You can use the ID of a **customAppScope** as the **appScopeId** of a [unifiedRoleAssignment](unifiedroleassignment.md).
 
-Currently only the Exchange Online RBAC provider is supported.
+Currently only the Exchange Online RBAC and provider is supported, and List is supported for Defender provider.
 
 Inherits from [appScope](appscope.md).
 
@@ -26,6 +26,8 @@ Inherits from [appScope](appscope.md).
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List for Exchange Online](../api/unifiedrbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for the Exchange Online RBAC provider. |
+| [List](../api/unifiedrbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider implementing UnifiedRbacApplication. |
+| [List](../api/unifiedrbacapplicationmultiple-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider implementing UnifiedRbacApplicaitonMultipe. |
 | [Create for Exchange Online](../api/unifiedrbacapplication-post-customappscope.md) | [customAppScope](customappscope.md) | Create a new [customAppScope](../resources/customappscope.md) object for an RBAC provider. |
 | [Get](../api/customappscope-get.md) | [customAppScope](customappscope.md) | Get the properties of a [customAppScope](../resources/customappscope.md) object for an RBAC provider. |
 | [Update](../api/customappscope-update.md)| None | Update an existing [customAppScope](../resources/customappscope.md) object of an RBAC provider.|
