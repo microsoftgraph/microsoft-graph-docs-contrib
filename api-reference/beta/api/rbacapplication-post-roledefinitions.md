@@ -324,6 +324,7 @@ Content-type: application/json
 ```http
 POST https://graph.microsoft.com/beta/roleManagement/defender/roleDefinitions
 Content-type: application/json
+
 {
   "description": "Role 1 description",
   "displayName": "Role 1",
@@ -352,6 +353,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/defender/roleDefinitions/$entity",
     "id": "d5eec5e0-6992-4c6b-b430-0f833f1a815b",
