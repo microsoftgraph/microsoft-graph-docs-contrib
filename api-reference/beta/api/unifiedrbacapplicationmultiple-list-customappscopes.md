@@ -63,7 +63,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows how to request all **customAppScope** objects of Unified Rbac Defender provider.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_customAppScope_DefenderProvider"
@@ -72,7 +71,6 @@ The following example shows how to request all **customAppScope** objects of Uni
 ```http
 GET https://graph.microsoft.com/beta/roleManagement/defender/customAppScopes
 ```
----
 
 ### Response
 
