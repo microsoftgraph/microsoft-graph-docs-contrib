@@ -4,7 +4,7 @@ description: "A dictionary"
 author: "adsela"
 ms.date: 03/03/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
