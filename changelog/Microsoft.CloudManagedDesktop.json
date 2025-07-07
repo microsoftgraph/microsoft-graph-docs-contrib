@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "cb667857-143a-4082-af3e-f15d484834ff",
+          "ApiChange": "Method",
+          "ChangedApiName": "resize",
+          "ChangeType": "Addition",
+          "Description": "Added the [resize](https://learn.microsoft.com/en-us/graph/api/intune-cloudPC-resize?view=graph-rest-1.0) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPC?view=graph-rest-1.0) resource.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "cb667857-143a-4082-af3e-f15d484834ff",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-07-01T02:47:14.4317136Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
           "ApiChange": "Method",
           "ChangedApiName": "bulkRestoreCloudPc",
