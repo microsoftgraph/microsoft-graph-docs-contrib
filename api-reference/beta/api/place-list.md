@@ -1,5 +1,5 @@
 ---
-title: "List places"
+title: "List place objects"
 description: "Get a list of places and their properties."
 author: tiwarisakshi02
 ms.date: 06/11/2025
@@ -8,7 +8,7 @@ ms.subservice:
 doc_type: apiPageType
 ---
 
-# List places
+# List place objects
 
 Namespace: microsoft.graph
 
