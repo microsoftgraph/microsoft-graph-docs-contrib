@@ -185,7 +185,31 @@
           "ChangeType": "Addition",
           "Description": "Added the **Org.OData.Capabilities.V1.SortRestrictions**.",
           "Target": "microsoft.graph.container/admin/configurationManagement/configurationApplications"
-        }
+        },
+		{
+		  "Id": "7c960c3a-9f89-4b73-a5ec-36f1ed93e1b4",
+		  "ApiChange": "Property",
+		  "ChangedApiName": "appOwnerOrganizationId",
+		  "ChangeType": "Addition",
+		  "Description": "Added the **appOwnerOrganizationId** property to the [configurationApplication](https://learn.microsoft.com/en-us/graph/api/resources/configurationApplication?view=graph-rest-beta) resource.",
+		  "Target": "configurationApplication"
+		},
+		{
+		  "Id": "7c960c3a-9f89-4b73-a5ec-36f1ed93e1b4",
+		  "ApiChange": "PropertyPath",
+		  "ChangedApiName": "Org.OData.Capabilities.V1.FilterRestrictions",
+		  "ChangeType": "Addition",
+		  "Description": "Added the [Org.OData.Capabilities.V1.FilterRestrictions](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+		  "Target": "microsoft.graph.container/admin/configurationManagement/configurationApplications"
+		},
+		{
+		  "Id": "7c960c3a-9f89-4b73-a5ec-36f1ed93e1b4",
+		  "ApiChange": "PropertyPath",
+		  "ChangedApiName": "Org.OData.Capabilities.V1.SortRestrictions",
+		  "ChangeType": "Addition",
+		  "Description": "Added the [Org.OData.Capabilities.V1.SortRestrictions](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+		  "Target": "microsoft.graph.container/admin/configurationManagement/configurationApplications"
+		}
       ],
       "Id": "38093077-4be7-4687-b812-1de93c82854e",
       "Cloud": "Prod",
