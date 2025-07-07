@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Create a fileStorageContainerTypeRegistration object in the consuming tenant or replace the existing one. 
 In other words, it registers a [fileStorageContainerType](../resources/filestoragecontainertype.md) in the tenant.
 
-For standard containers, [billing](https://learn.microsoft.com/en-us/sharepoint/dev/embedded/administration/billing/billing) must be valid for the registration to complete successfully.
+For standard containers, [billing](https://learn.microsoft.com/sharepoint/dev/embedded/administration/billing/billing) must be valid for the registration to complete successfully.
 
 > [!IMPORTANT]
 > An application can only register a [fileStorageContainerType](../resources/filestoragecontainertype.md) that it owns, either using app-only or delegated tokens.

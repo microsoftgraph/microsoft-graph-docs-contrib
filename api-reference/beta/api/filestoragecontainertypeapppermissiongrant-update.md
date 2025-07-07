@@ -54,8 +54,8 @@ PATCH /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeR
 
 |Property|Type|Description|
 |:---|:---|:---|
-|delegatedPermissions|fileStorageContainerTypeAppPermission collection|Allowed  [app permissions](../resources/fileStorageContainerTypeAppPermissions) when using delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|
-|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed [app permissions](../resources/fileStorageContainerTypeAppPermissions) when using delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|
+|delegatedPermissions|fileStorageContainerTypeAppPermission collection|Allowed permissions when using delegated tokens with the defined appId. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|
+|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed permissions when using application tokens with the defined appid. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|
 
 
 

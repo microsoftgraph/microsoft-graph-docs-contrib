@@ -57,8 +57,8 @@ You can specify the following properties when creating a **fileStorageContainerT
 
 |Property|Type|Description|
 |:---|:---|:---|
-|delegatedPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](https://learn.microsoft.com/en-us/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|
-|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](https://learn.microsoft.com/en-us/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using application tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|
+|delegatedPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](https://learn.microsoft.com/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|
+|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](https://learn.microsoft.com/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using application tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|
 
 
 

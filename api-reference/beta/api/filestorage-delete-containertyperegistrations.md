@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete a fileStorageContainerTypeRegistration object.
 
-A registration can only be deleted if it doesn't have [containers](../filestorage-list-containers.md), nor [deleted containers](../filestorage-list-deletedcontainers.md)
+A registration can only be deleted if it doesn't have [containers](filestorage-list-containers.md), nor [deleted containers](filestorage-list-deletedcontainers.md)
 
 ## Permissions
 
