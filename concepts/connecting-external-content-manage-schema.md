@@ -61,7 +61,7 @@ The following best practices should be considered when choosing property names.
 > When using declarative agents (DA), add the description of the properties to the DA instruction set. 
 
 ### Searchable
-If a property is searchable, its value is added to the full text index. So when a user searches on Copilot, results will be returned if there is a match with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
+If a property is searchable, its value is added to the full text index. So when a user searches on Copilot, results are returned if there is a match with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
 
 Mark a property as searchable if: 
 - They contain **textual data** that users might search for. 
@@ -119,7 +119,7 @@ If a property is queryable, you can query against it using knowledge query langu
 *A search for `search ba\*` displaying results that match this prefix.*
 
 ### Retrievable
-If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose relevant properties.
+If a property is retrievable, its value can be returned in search results. Any property that should be shown on the display template or returned from the query must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose relevant properties.
 
 ![A set of retrievable properties rendered as a result.](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
 
@@ -224,9 +224,7 @@ By applying as many accurately mapped labels as possible, you can also improve t
 - fileName 
 - fileExtension
   
-For discovery (search scenarios), note the following: 
-- Ensure that your mappings are accurate. 
-- When you use a property as a label for a property that contains large content, you might increase search latency and have to wait longer for search to return results. 
+Ensure that your mappings are accurate. When you use a property as a label for a property that contains large content, you might increase search latency and have to wait longer for search to return results. 
 
 ### Rank hints 
 
@@ -326,7 +324,7 @@ A sample of how `content` property is used while ingesting data:
     - The **semantic meaning** of each property. 
     - How to **reference and summarize** the data. 
     - How to **respond to user queries** using the indexed content. 
-- Please make sure you have well-formed property descriptions for all properties. It should indicate what the property is about, other names or terms for the property, when it should be used, etc. 
+- Define well-formed property descriptions for all properties. It should indicate what the property is about, other names or terms for the property, when it should be used, etc. 
   
 ## Schema update capabilities
 
