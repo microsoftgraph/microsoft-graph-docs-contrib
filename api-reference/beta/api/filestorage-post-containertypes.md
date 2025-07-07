@@ -55,7 +55,7 @@ You can specify the following properties when creating a **fileStorageContainerT
 |:---|:---|:---|
 |name|String|fileStorageContainerType name. Required.|
 |owningAppId|Guid|ID of the application that owns the fileStorageContainerType. Required.|
-|billingClassification|fileStorageContainerBillingClassification|Billing type. Defaults to standard. The possible values are: `standard`, `trial`, `directToCustomer`. Optional.|
+|billingClassification|fileStorageContainerBillingClassification|Billing type. Defaults to **standard**. The possible values are: `standard`, `trial`, `directToCustomer`. Optional.|
 |settings|[fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md)|fileStorageContainerType settings. Optional.|
 
 

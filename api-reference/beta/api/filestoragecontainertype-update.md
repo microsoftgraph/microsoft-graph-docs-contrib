@@ -57,7 +57,7 @@ PATCH /storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
 |:---|:---|:---|
 |name|String|Name of the fileStorageContainerType. Optional.|
 |settings|[fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md)|fileStorageContainerType settings. Optional.|
-|etag|String|Used for optimistic concurrency control. Must be exactly the value returned from create or get. Required.|
+|etag|String|Used for optimistic concurrency control. Must match the value returned from a Create or Get request. Required.|
 
 
 
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerType",
-  "id": "73753c5e-0a5f-8add-fe59-88cd9740926e",
+  "id": "de988700-d700-020e-0a00-0831f3042f00",
   "name": "Container Type Name",
   "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
   "billingClassification": "trial",

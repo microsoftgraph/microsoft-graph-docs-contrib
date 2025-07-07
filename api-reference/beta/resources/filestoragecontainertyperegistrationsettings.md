@@ -24,7 +24,7 @@ depending on the [settings of the fileStorageContainerType](fileStorageContainer
 |isDiscoverabilityEnabled|Boolean|Enables or disables surface of items from containers in experiences like my activity or M356|
 |isItemVersioningEnabled|Boolean|Controls item versioning.|
 |isSearchEnabled|Boolean|Defines if search is enabled.|
-|isSharingRestricted|Boolean|Controls if sharing is restricted.|
+|isSharingRestricted|Boolean|Only manager and owner can share files in the container if restricted sharing is true.|
 |itemMajorVersionLimit|Int64|Maximum number of versions. Versioning must be enabled.|
 |maxStoragePerContainerInBytes|Int64|Controls maximum storage in bytes.|
 |sharingCapability|sharingCapabilities|Sharing capabilities permitted for containers. The possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`.|

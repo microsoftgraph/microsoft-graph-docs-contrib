@@ -20,5 +20,5 @@ Namespace: microsoft.graph
 |:---|:---|:---|
 |containers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|The collection of active **fileStorageContainer** resources.|
 |deletedContainers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|The collection of deleted **fileStorageContainer** resources.|
-|containerTypes|[fileStorageContainerType](../resources/filestoragecontainertype.md) collection|The collection of fileStorageContainerTypeRegistration resources|
-|containerTypeRegistrations|[fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) collection|The collection of fileStorageContainerType resources|
+|containerTypes|[fileStorageContainerType](../resources/filestoragecontainertype.md) collection|The collection of fileStorageContainerType resources|
+|containerTypeRegistrations|[fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) collection|The collection of fileStorageContainerTypeRegistration resources|

@@ -16,17 +16,18 @@ Namespace: microsoft.graph
 
 Configuration associated with a fileStorageContainerType. 
 
->**Note:**  Some values used when a fileStorageContainer is created, but are not affected if the settings are modified afterwards. For example, maxStoragePerContainerInBytes.
+> [!NOTE]
+> Some values used when a fileStorageContainer is created, but are not affected if the settings are modified afterwards. For example, maxStoragePerContainerInBytes.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|consumingTenantOverridables|fileStorageContainerTypeSettingsOverrideSettings that can be overridden in the **consuming tenant**, comma separated. The possible values are: `urlTemplate`, `isDiscoverabilityEnabled`, `isSearchEnabled`, `isItemVersioningEnabled`, `itemMajorVersionLimit`, `maxStoragePerContainerInBytes`.|
+|consumingTenantOverridables|String|fileStorageContainerTypeSettingsOverrideSettings that can be overridden in the **consuming tenant**, comma separated. The possible values are: `urlTemplate`, `isDiscoverabilityEnabled`, `isSearchEnabled`, `isItemVersioningEnabled`, `itemMajorVersionLimit`, `maxStoragePerContainerInBytes`.|
 |isDiscoverabilityEnabled|Boolean|Enables or disables surface of items from containers in experiences like my activity or M356|
 |isItemVersioningEnabled|Boolean|Controls item versioning.|
 |isSearchEnabled|Boolean|Defines if search is enabled.|
-|isSharingRestricted|Boolean|Controls if sharing is restricted.|
+|isSharingRestricted|Boolean|Only manager and owner can share files in the container if restricted sharing is true.|
 |itemMajorVersionLimit|Int64|Maximum number of versions. Versioning must be enabled.|
 |maxStoragePerContainerInBytes|Int64|Controls maximum storage in bytes.|
 |sharingCapability|sharingCapabilities|Sharing capabilities permitted for containers. This value can always be overridden in the registration if needed. The possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`.|

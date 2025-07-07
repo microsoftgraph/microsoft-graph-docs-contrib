@@ -20,8 +20,7 @@ In other words, it registers a [fileStorageContainerType](../resources/filestora
 For standard containers, [billing](https://learn.microsoft.com/en-us/sharepoint/dev/embedded/administration/billing/billing) must be valid for the registration to complete successfully.
 
 > [!IMPORTANT]
-> An application can only register a [fileStorageContainerType](../resources/filestoragecontainertype.md) that it owns, either using app-only or
-delegated tokens.
+> An application can only register a [fileStorageContainerType](../resources/filestoragecontainertype.md) that it owns, either using app-only or delegated tokens.
 
 
 Settings can't be modified on registration.
@@ -155,7 +154,7 @@ Content-Type: application/json
 
 ### Request
 
-Create a fileStorageContainerTypeRegistration for a standard fileStorageContainerType with no billing setup.
+Create a fileStorageContainerTypeRegistration for a standard fileStorageContainerType where billing setup isn't completed.
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertyperegistration_from_"

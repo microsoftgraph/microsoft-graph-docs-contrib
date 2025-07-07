@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains the permissions granted to an app when accessed with delegated permissions and application only permissions.
+Defines the user-delegated or app-only permissions on a container type granted to an application.
 
 
 ## Methods
@@ -31,8 +31,7 @@ Contains the permissions granted to an app when accessed with delegated permissi
 |:---|:---|:---|
 |appId|String|Application ID to set permissions to.|
 |applicationPermissions|String collection|Allowed [permissions](https://learn.microsoft.com/en-us/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using delegated tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
-|delegatedPermissions|String collection|
-Allowed [permissions](https://learn.microsoft.com/en-us/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using application tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
+|delegatedPermissions|String collection|Allowed [permissions](https://learn.microsoft.com/en-us/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using application tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
 
 ## Relationships
 None.

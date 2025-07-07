@@ -56,10 +56,9 @@ PATCH /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeR
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|fileStorageContainerTypeRegistration settings. Optional.|
-|applicationPermissionGrants|[applicationPermissionGrants](../resources/fileStorageContainerTypeAppPermissionGrant.md)|define the access 
-privileges of applications on containers of a specific fileStorageContainerType. Optional.|
-|etag|String|Used for optimistic concurrency control. Must be exactly the value returned from create or get. Required.|
+|settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|fileStorageContainerTypeRegistration settings. The subset that can be updated depends on the overridable settings in the [fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md). Optional.|
+|applicationPermissionGrants|[applicationPermissionGrants](../resources/fileStorageContainerTypeAppPermissionGrant.md)|define the access privileges of applications on containers of a specific fileStorageContainerType. Optional.|
+|etag|String|Used for optimistic concurrency control. Must match the value returned from a Create or Get request. Required.|
 
 
 
@@ -156,7 +155,47 @@ Content-Type: application/json
 
 {
   "settings": {
-    "sharingCapability": "externalUserAndGuestSharing",
+    "sharingCapability": "externalUserAndGuestSharing"
+  },
+  "applicationPermissionGrants": [
+    {
+      "appId": "33225700-9a00-4c00-84dd-0c210f203f01",
+      "delegatedPermissions": ["full"],
+      "applicationPermissions": ["none"]
+    }
+  ]
+}
+```
+
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 400 Bad Request
+```
+
+### Request
+
+Update a fileStorageContainerTypeRegistration setting that isn't overridable in the fileStorageContainerType.
+In this particular case, urlTemplate isn't overridable.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_filestoragecontainertyperegistration"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
+Content-Type: application/json
+
+{
+  "settings": {
+    "urlTemplate": "https://fabrikam.example.com/{0}"
   },
   "applicationPermissionGrants": [
     {
