@@ -104,7 +104,7 @@ Some best practices to consider while marking property as queryable are:
 - Combine queryable with retrievable so the property can be used and shown in the results. 
 - Use refinable if you want the property to appear as a **filter in the UI**. 
 
-In the case below, queryable is set as true for the `Tags` property. 
+In this case, queryable is set as true for the `Tags` property. 
 
 ![A search for "tags:design" scoping down results to items with "design" in the tags property.](./images/connectors-images/connecting-external-content-manage-items-schema-3.svg)
 
@@ -188,7 +188,7 @@ A semantic label is a well-known tag published by Microsoft that you can add aga
 
 You can assign semantic labels to your source properties on the Assign property labels page. Labels provide semantic meaning, and let you integrate your connector data into Microsoft 365 experiences. 
 
-Let's consider some of the project management tools like JIRA, Azure Dev ops, Asana etc. For the user who created a feature or work item, each of these platforms might use different terms like owner, ownedBy, assignedTo etc. So, if you have a property which is intended for a similar purpose you can use the ‘createdby’ semantic label.   
+Let's consider some of the project management tools like JIRA, Azure Dev ops, Asana etc. For the user who created a feature or work item, each of these platforms might use different terms like owner, ownedBy, assignedTo etc. So, if you have a property, which is intended for a similar purpose you can use the ‘createdby’ semantic label.   
 
 You can assign semantic labels to your source properties using the graph API or from the **Assign property labels** page while using sdk. Labels provide semantic meaning, and let you integrate your connector data into Microsoft 365 experiences.  
 
@@ -201,8 +201,8 @@ You can assign semantic labels to your source properties using the graph API or 
 | authors            | The names of all the people who participated/collaborated on the item in the data source.                        | authorName, writer, reportAuthor               | 
 | createdDateTime    | The date and time that the item was created in the data source.                                                  | createdOn, submissionDate, entryDate           | 
 | lastModifiedDateTime | The date and time that the item was last modified in the data source.                                          | lastUpdated, modifiedOn, changeDate            | 
-| fileName           | In case of a file, the name of the file in the data source.                                                      | projectUrl, folderLink, groupPage              | 
-| fileExtension      | In case of a file, the extension of the file in the data source.                                                 | documentType, attachmentType, format           | 
+| fileName           | The name of the file in the data source.                                                      | projectUrl, folderLink, groupPage              | 
+| fileExtension      | The extension of the file in the data source.                                                 | documentType, attachmentType, format           | 
 | iconUrl            | The URL of an icon.                                                                                              | thumbnailUrl, logo, previewImage               | 
 | containerName      | The name of the container. Ex: A project or an OneDrive folder can be a container.                               | projectName, folderName, groupName             | 
 | containerUrl       | The URL of the container.                                                                                        | projectUrl, folderLink, groupPage              | 
@@ -262,13 +262,13 @@ Your default result type provides a better experience when you define these labe
 - fileName
 - fileExtension
 
-Finally, when assigning labels, ensure the following:
+when assigning labels ensure,
 - The properties that you select to function as labels need to be marked retrievable.
 - The properties and their assigned labels must have the same datatype.
 - You can map exactly one label to exactly one property.
 
 ### Aliases 
-Aliases are friendly names for properties that you assign. These are used in queries and selections in refinable property filters. 
+Aliases are friendly names for properties that you assign. Aliases are used in queries and selections in refinable property filters. 
 
 Some real-world Examples of Aliases are:
 | **Property**      | **Possible aliases**               | **Use case**                                       | 
@@ -285,10 +285,10 @@ Some best practices to consider while adding aliases are:
 - Keep aliases **short and intuitive**. 
 
 ### Content property 
-The **Microsoft Copilot connector schema** supports a **default property** called `content`. You do not have to define it in the schema like other properties (e.g., title, tags, etc.). Instead, it is **directly included in the item payload** when you ingest data. 
+The **Microsoft Copilot connector schema** supports a **default property** called `content`. You do not have to define it in the schema like other properties (for example, title, tags, etc.). Instead, it is **directly included in the item payload** when you ingest data. 
 
-This content added to the property will be: 
-- Indexed for text search. 
+This content property is, 
+- Semnatically Indexed for text search. 
 - Used to generate dynamic snippets in search results. 
 - Available to Copilot for summarization and semantic understanding.
 
@@ -320,7 +320,7 @@ A sample of how `content` property is used while ingesting data:
 } 
 }
 ``` 
-### Additional tip if you are using a declarative agent:
+### Tip if you are using a declarative agent:
 - If you are using a Declarative Agent (DA), you can and should provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. 
 - This is very useful because it helps the Declarative agent understand: 
     - The **semantic meaning** of each property. 
