@@ -49,7 +49,7 @@ For schema object and API reference, see [schema](/graph/api/resources/externalc
 ## Description and best practices for each schema attribute
 
 ### Property 
-This refers to the name of the property.  
+This attribute refers to the name of the property.  
 The following best practices should be considered when choosing property names.  
 
 - Use understandable and unique names—make sure property names are clear, distinct, and easily interpretable by both users and systems. Avoid ambiguous or overly similar names, such as **orgName**, **brOrgName**, and **tpOrgName**. Instead, opt for descriptive names like **parentOrganizationName** or **departmentName**. It helps Copilot understand the property that is related to your query.
@@ -61,11 +61,11 @@ The following best practices should be considered when choosing property names.
 > When using declarative agents (DA), add the description of the properties to the DA instruction set. 
 
 ### Searchable
-If a property is searchable, its value is added to the full text index. This means that when a user performs a search on Copilot or SharePoint, results are returned if the search string matches with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
+If a property is searchable, its value is added to the full text index. So when a user searches on Copilot, results will be returned if there is a match with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
 
 Mark a property as searchable if: 
 - They contain **textual data** that users might search for. 
-- They are **relevant to search queries** (e.g., titles, descriptions, tags). 
+- They are **relevant to search queries** (for example, titles, descriptions, tags). 
 - You want them to contribute to **search hits** and **snippet generation**. 
 
 Some common examples are:
@@ -78,7 +78,7 @@ Some common examples are:
 Some best practices to consider while marking property as searchable are:
 - Avoid marking large binary fields as searchable. 
 - Do not mark refinable fields as searchable— refinable and searchable are mutually exclusive. 
-- Do not mark all fields as searchable. Limit searchable fields to those that improve relevance and user experience.
+- Do not mark all fields as searchable. Limit searchable to properties whose contents need to be searched to get relevant results. 
 
 <!-- markdownlint-disable MD036 -->
 ![A search for "design" displaying results for hits against the property title and content.](./images/connectors-images/connecting-external-content-manage-items-schema-1.png)
@@ -90,13 +90,13 @@ Mark properties as queryable when users need to filter their search results base
 
 Mark a property as queryable if: 
 - They are used for **filtering or narrowing down search results**. 
-- They represent **categorical or structured data** (e.g., status, priority, assigned user). 
+- They represent **categorical or structured data** (for example, status, priority, assigned user). 
 - You want to support **custom search experiences** or **faceted navigation**. 
 
 Some common examples are:
-- status (e.g., open, closed) 
-- assignedTo (e.g., userEmail or ID) 
-- priority (e.g., high, medium, low) 
+- status (for example, open, closed) 
+- assignedTo (for example, userEmail or ID) 
+- priority (for example, high, medium, low) 
 - category or type 
 
 Some best practices to consider while marking property as queryable are:
@@ -119,7 +119,7 @@ If a property is queryable, you can query against it using knowledge query langu
 *A search for `search ba\*` displaying results that match this prefix.*
 
 ### Retrievable
-If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose relevant properties.
+If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose relevant properties.
 
 ![A set of retrievable properties rendered as a result.](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
 
