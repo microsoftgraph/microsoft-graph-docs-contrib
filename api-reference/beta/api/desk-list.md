@@ -1,5 +1,5 @@
 ---
-title: "List desks"
+title: "List desk objects"
 description: "Get a list of desks and their properties."
 author: tiwarisakshi02
 ms.date: 06/09/2025
@@ -8,7 +8,7 @@ ms.subservice:
 doc_type: apiPageType
 ---
 
-# List desks
+# List desk objects
 
 Namespace: microsoft.graph
 

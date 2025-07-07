@@ -1,5 +1,5 @@
 ---
-title: "List floors"
+title: "List floor objects"
 description: "Get a list of floors and their properties."
 author: tiwarisakshi02
 ms.date: 06/09/2025
@@ -8,7 +8,7 @@ ms.subservice:
 doc_type: apiPageType
 ---
 
-# List floors
+# List floor objects
 
 Namespace: microsoft.graph
 
