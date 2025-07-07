@@ -71,7 +71,6 @@ You can specify the following properties when creating an **externalAuthenticati
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Represents the date and time when an entity was created. Inherited from [authenticationMethod](../resources/authenticationmethod.md). Optional.|
 |configurationId|String|A unique identifier used to manage and integrate external auth methods within Microsoft Entra ID. Required.|
 |displayName|String|Custom name given to the registered external authentication method. Required.|
 
