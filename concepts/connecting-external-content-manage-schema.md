@@ -13,7 +13,7 @@ ms.date: 11/07/2024
 
 This guide provides information on setting the schema and best practices for Microsoft 365 Copilot connectors. 
 
-The connection [schema](/graph/api/resources/externalconnectors-schema) determines how your content is used in various Microsoft 365 Copilot experiences. The schema is a flat list of all the properties that you plan to add to the connection, along with their attributes, labels, and aliases. You must register the schema before adding items to the connection.
+The connection [schema](/graph/api/resources/externalconnectors-schema) determines how your content is used in various Microsoft 365 Copilot experiences. The schema is a flat list of all the properties that you plan to add to the connection. Each property includes attributes, labels, and aliases. You must register the schema before adding items to the connection.
 
 ## Attributes of a schema 
 - Property 
@@ -46,7 +46,7 @@ The following table represents an example of a possible schema for a work ticket
 
 For schema object and API reference, see [schema](/graph/api/resources/externalconnectors-schema) section in the [Copilot Connector API reference](/graph/api/resources/connectors-api-overview).
 
-## Description and best practices for each property attribute
+## Description and best practices for each schema attribute
 
 ### Property 
 This refers to the name of the property.  
@@ -63,7 +63,7 @@ The following best practices should be considered when choosing property names.
 ### Searchable
 If a property is searchable, its value is added to the full text index. This means that when a user performs a search on Copilot or SharePoint, results are returned if the search string matches with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
 
-You should mark properties as searchable if: 
+Mark a property as searchable if: 
 - They contain **textual data** that users might search for. 
 - They are **relevant to search queries** (e.g., titles, descriptions, tags). 
 - You want them to contribute to **search hits** and **snippet generation**. 
@@ -88,7 +88,7 @@ Some best practices to consider while marking property as searchable are:
 ### Queryable
 Mark properties as queryable when users need to filter their search results based on specific values. For example, properties such as **ticketId**, **teamName**, or **created** can be queryable.  When you query something like `tickets created by William`, Copilot can filter out only the tickets created by the said user and display them.  Prefix matching with wildcard operators (`*`) can further enhance search flexibility. 
 
-You should mark properties as queryable if: 
+Mark a property as queryable if: 
 - They are used for **filtering or narrowing down search results**. 
 - They represent **categorical or structured data** (e.g., status, priority, assigned user). 
 - You want to support **custom search experiences** or **faceted navigation**. 
@@ -125,7 +125,7 @@ If a property is retrievable, its value can be returned in search results. Any p
 
 *A set of retrievable properties (`title` and `lastEditedBy`) rendered as a result.*
 
-You should mark properties as retrievable if: 
+Mark a property as retrievable if: 
 - You want them to be **visible in search results**. 
 - They are useful for **displaying context** (e.g., title, status, assigned user). 
 
@@ -149,7 +149,7 @@ When a property is marked as refinable,
 - It appears as a **refiner control** (like a dropdown or checkbox) in the search UI. 
 - It supports **aggregation** in search queries. 
 
-You should mark properties as refinable if: 
+Mark a property as refinable if: 
 - They represent **categorical or structured data**. 
 - You want users to **filter or group** search results by these values. 
 
@@ -188,7 +188,7 @@ A semantic label is a well-known tag published by Microsoft that you can add aga
 
 You can assign semantic labels to your source properties on the Assign property labels page. Labels provide semantic meaning, and let you integrate your connector data into Microsoft 365 experiences. 
 
-Let's consider some of the project management tools like JIRA, Azure Dev ops, Asana etc. For the person who created a feature or work item, each of these platforms might use different terms like owner, ownedBy, assignedTo etc. So, if you have a property which is intended for a similar purpose you can use the ‘createdby’ semantic label.   
+Let's consider some of the project management tools like JIRA, Azure Dev ops, Asana etc. For the user who created a feature or work item, each of these platforms might use different terms like owner, ownedBy, assignedTo etc. So, if you have a property which is intended for a similar purpose you can use the ‘createdby’ semantic label.   
 
 You can assign semantic labels to your source properties using the graph API or from the **Assign property labels** page while using sdk. Labels provide semantic meaning, and let you integrate your connector data into Microsoft 365 experiences.  
 
@@ -197,7 +197,7 @@ You can assign semantic labels to your source properties using the graph API or 
 | title              | The main name or heading of the item that you want shown in search and other experiences.                        | documentTitle, ticketSubject, reportName       | 
 | url                | The target URL of the item in the data source. The direct link to open the item in its original system.          | documentLink, ticketUrl, recordUrl             | 
 | createdBy          | Identifies the user who originally created the item in the data source. Useful for filtering and context.        | authorEmail, submittedBy, createdByUser        | 
-| lastModifiedBy     | The name of the person who most recently edited the item in the data source.                                     | editorEmail, updatedBy, lastChangedBy          | 
+| lastModifiedBy     | The name of the user who most recently edited the item in the data source.                                     | editorEmail, updatedBy, lastChangedBy          | 
 | authors            | The names of all the people who participated/collaborated on the item in the data source.                        | authorName, writer, reportAuthor               | 
 | createdDateTime    | The date and time that the item was created in the data source.                                                  | createdOn, submissionDate, entryDate           | 
 | lastModifiedDateTime | The date and time that the item was last modified in the data source.                                          | lastUpdated, modifiedOn, changeDate            | 
@@ -210,7 +210,7 @@ You can assign semantic labels to your source properties using the graph API or 
 Add as many labels as you can, but ensure that they are accurately mapped to properties. Don't add a label to a property if it doesn't make sense. Incorrect mappings degrade the experience.
 
 > [!IMPORTANT]
-> All properties that you map to labels must be retrievable.
+> You must mark properties as retrievable before mapping them to labels.
 
 The label **title** is the most important label. Make sure that you assign a property to this label to allow your connection to participate in the result cluster experience. Incorrectly mapping labels degrades the search experience. It's okay for some labels to not have a property assigned to them.
 
