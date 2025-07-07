@@ -82,6 +82,7 @@ Some best practices to consider while marking property as searchable are:
 
 <!-- markdownlint-disable MD036 -->
 ![A search for "design" displaying results for hits against the property title and content.](./images/connectors-images/connecting-external-content-manage-items-schema-1.png)
+
 *A search for `design` displays results for hits against the property (`title`) and content.*
 
 ### Queryable
@@ -106,6 +107,7 @@ Some best practices to consider while marking property as queryable are:
 In the case below, Queryable is set as true for the `Tags` property. 
 
 ![A search for "tags:design" scoping down results to items with "design" in the tags property.](./images/connectors-images/connecting-external-content-manage-items-schema-3.svg)
+
 *A search for `tags:design` scoping down results to items with `design` in the `tags` property.*
 
 If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of one or more free-text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(*). 
@@ -120,6 +122,7 @@ If a property is queryable, you can query against it using knowledge query langu
 If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose relevant properties.
 
 ![A set of retrievable properties rendered as a result.](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
+
 *A set of retrievable properties (`title` and `lastEditedBy`) rendered as a result.*
 
 You should mark properties as retrievable if: 
