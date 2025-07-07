@@ -13,7 +13,7 @@ ms.date: 11/07/2024
 
 This guide provides information on setting the schema and best practices for Microsoft 365 Copilot connectors. 
 
-The connection [schema](/graph/api/resources/externalconnectors-schema) determines how your content is used in various Microsoft Graph experiences. The schema is a flat list of all the properties that you plan to add to the connection, along with their attributes, labels, and aliases. You must register the schema before adding items to the connection.
+The connection [schema](/graph/api/resources/externalconnectors-schema) determines how your content is used in various Microsoft 365 Copilot experiences. The schema is a flat list of all the properties that you plan to add to the connection, along with their attributes, labels, and aliases. You must register the schema before adding items to the connection.
 
 ## Attributes of a schema 
 - Property 
@@ -86,7 +86,7 @@ Some best practices to consider while marking property as searchable are:
 *A search for `design` displays results for hits against the property (`title`) and content.*
 
 ### Queryable
-Mark properties as queryable when users need to filter their search results based on specific values. For example, properties such as **ticketId**, **teamName**, or **created** can be queryable.  When you query something like **Tickets created by William**, Copilot can filter out only the tickets created by the said user and display them.  Prefix matching with wildcard operators (*) can further enhance search flexibility. 
+Mark properties as queryable when users need to filter their search results based on specific values. For example, properties such as **ticketId**, **teamName**, or **created** can be queryable.  When you query something like `tickets created by William`, Copilot can filter out only the tickets created by the said user and display them.  Prefix matching with wildcard operators (`*`) can further enhance search flexibility. 
 
 You should mark properties as queryable if: 
 - They are used for **filtering or narrowing down search results**. 
@@ -101,16 +101,16 @@ Some common examples are:
 
 Some best practices to consider while marking property as queryable are:
 - Avoid marking large text fields (like descriptions) as queryable. 
-- Combine Queryable with Retrievable so the property can be used and shown in the results. 
-- Use Refinable if you want the property to appear as a **filter in the UI**. 
+- Combine queryable with retrievable so the property can be used and shown in the results. 
+- Use refinable if you want the property to appear as a **filter in the UI**. 
 
-In the case below, Queryable is set as true for the `Tags` property. 
+In the case below, queryable is set as true for the `Tags` property. 
 
 ![A search for "tags:design" scoping down results to items with "design" in the tags property.](./images/connectors-images/connecting-external-content-manage-items-schema-3.svg)
 
 *A search for `tags:design` scoping down results to items with `design` in the `tags` property.*
 
-If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of one or more free-text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(*). 
+If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of one or more free-text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator (`*`). 
 
 > [!NOTE]
 > Suffix matching is not supported.
@@ -321,8 +321,8 @@ A sample of how `content` property is used while ingesting data:
 }
 ``` 
 ### Additional tip if you are using a declarative agent:
-- If you are using a Declarative Agent (DA), you **can and should** provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. 
-- This is **very useful** because it helps the Declarative agent understand: 
+- If you are using a Declarative Agent (DA), you can and should provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. 
+- This is very useful because it helps the Declarative agent understand: 
     - The **semantic meaning** of each property. 
     - How to **reference and summarize** the data. 
     - How to **respond to user queries** using the indexed content. 
