@@ -204,7 +204,7 @@ You can assign semantic labels to your source properties using the graph API or 
 | fileName           | The name of the file in the data source.                                                      | projectUrl, folderLink, groupPage              | 
 | fileExtension      | The extension of the file in the data source.                                                 | documentType, attachmentType, format           | 
 | iconUrl            | The URL of an icon.                                                                                              | thumbnailUrl, logo, previewImage               | 
-| containerName      | The name of the container. Ex: A project or an OneDrive folder can be a container.                               | projectName, folderName, groupName             | 
+| containerName      | The name of the container. Ex: A project or OneDrive folder can be a container.                               | projectName, folderName, groupName             | 
 | containerUrl       | The URL of the container.                                                                                        | projectUrl, folderLink, groupPage              | 
 
 Add as many labels as you can, but ensure that they are accurately mapped to properties. Don't add a label to a property if it doesn't make sense. Incorrect mappings degrade the experience.
@@ -260,7 +260,7 @@ Your default result type provides a better experience when you define these labe
 - fileName
 - fileExtension
 
-when assigning labels ensure,
+When assigning labels ensure,
 - The properties that you select to function as labels need to be marked retrievable.
 - The properties and their assigned labels must have the same datatype.
 - You can map exactly one label to exactly one property.
@@ -286,7 +286,7 @@ Some best practices to consider while adding aliases are:
 The **Microsoft Copilot connector schema** supports a **default property** called `content`. You do not have to define it in the schema like other properties (for example, title, tags, etc.). Instead, it is **directly included in the item payload** when you ingest data. 
 
 This content property is, 
-- Semnatically Indexed for text search. 
+- Semantically Indexed for text search. 
 - Used to generate dynamic snippets in search results. 
 - Available to Copilot for summarization and semantic understanding.
 
