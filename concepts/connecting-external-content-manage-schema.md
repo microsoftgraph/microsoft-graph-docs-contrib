@@ -127,7 +127,7 @@ If a property is retrievable, its value can be returned in search results. Any p
 
 Mark a property as retrievable if: 
 - You want them to be **visible in search results**. 
-- They are useful for **displaying context** (e.g., title, status, assigned user). 
+- They are useful for **displaying context** (for example, title, status, assigned user). 
 
 Some common examples are:
 - title 
@@ -154,9 +154,9 @@ Mark a property as refinable if:
 - You want users to **filter or group** search results by these values. 
 
 Some common examples are:
-- tags (e.g., `Finance`, `HR`, `Engineering`) 
-- status (e.g., `Open`, `Closed`, `In Progress`) 
-- priority (e.g., `High`, `Medium`, `Low`) 
+- tags (for example, `Finance`, `HR`, `Engineering`) 
+- status (for example, `Open`, `Closed`, `In Progress`) 
+- priority (for example, `High`, `Medium`, `Low`) 
 - category or type 
 
 Some best practices to consider while marking property as refinable are:
