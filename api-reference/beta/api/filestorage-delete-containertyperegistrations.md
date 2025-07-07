@@ -68,7 +68,7 @@ Delete a fileStorageContainerTypeRegistration
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 ```
 
 

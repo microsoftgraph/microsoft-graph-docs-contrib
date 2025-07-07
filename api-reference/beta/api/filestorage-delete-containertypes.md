@@ -57,9 +57,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-Delete a fileStorageContainerType
-
 ### Request
+
+Delete a fileStorageContainerType
 
 <!-- {
   "blockType": "request",
@@ -80,5 +80,31 @@ DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988
 -->
 ``` http
 HTTP/1.1 204 No Content
+```
+
+### Request
+
+Delete a not trial fileStorageContainerType
+
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_filestoragecontainertype"
+}
+-->
+``` http
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
+```
+
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 400 Bad Request
 ```
 
