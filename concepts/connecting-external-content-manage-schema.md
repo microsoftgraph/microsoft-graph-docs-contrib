@@ -82,7 +82,7 @@ Some best practices to consider while marking property as searchable are:
 
 <!-- markdownlint-disable MD036 -->
 ![A search for "design" displaying results for hits against the property title and content.](./images/connectors-images/connecting-external-content-manage-items-schema-1.png)
-*A search for "design" displays results for hits against the property (`title`) and content.*
+*A search for `design` displays results for hits against the property (`title`) and content.*
 
 ### Queryable
 Mark properties as queryable when users need to filter their search results based on specific values. For example, properties such as **ticketId**, **teamName**, or **created** can be queryable.  When you query something like **Tickets created by William**, Copilot can filter out only the tickets created by the said user and display them.  Prefix matching with wildcard operators (*) can further enhance search flexibility. 
@@ -103,18 +103,18 @@ Some best practices to consider while marking property as queryable are:
 - Combine Queryable with Retrievable so the property can be used and shown in the results. 
 - Use Refinable if you want the property to appear as a **filter in the UI**. 
 
-In the case below, Queryable is set as true for the ‘Tags’ property. 
+In the case below, Queryable is set as true for the `Tags` property. 
 
 ![A search for "tags:design" scoping down results to items with "design" in the tags property.](./images/connectors-images/connecting-external-content-manage-items-schema-3.svg)
-*A search for "tags:design" scoping down results to items with "design" in the `tags` property.*
+*A search for `tags:design` scoping down results to items with `design` in the `tags` property.*
 
 If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of one or more free-text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(*). 
 
 > [!NOTE]
-> Suffix matching isn't supported.
+> Suffix matching is not supported.
 
 ![A search for "search ba*" displaying results that match this prefix.](./images/connectors-images/connecting-external-content-manage-items-schema-2.svg)
-*A search for "search ba\*" displaying results that match this prefix.*
+*A search for `search ba\*` displaying results that match this prefix.*
 
 ### Retrievable
 If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose relevant properties.
@@ -273,7 +273,7 @@ Some real-world Examples of Aliases are:
 | createdBy         | author, owner, submittedBy   | Users asking `Who wrote this?` or `Who submitted?` | 
 | title             | subject, heading               | Users asking `What’s the subject of this item?`    | 
 | tags              | labels, categories             | Users asking `Show items tagged with Finance`    | 
-| filename          | documentName, fileName         | Users asking `Find file named ‘report.docx`      | 
+| filename          | documentName, fileName         | Users asking `Find file named report.docx`      | 
 | summary           | description, abstract          | Users asking `Give me a quick overview`            | 
 
 Some best practices to consider while adding aliases are:
