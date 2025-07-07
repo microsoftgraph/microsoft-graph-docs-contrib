@@ -23,8 +23,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-06-30T18:49:58.4872737Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "Groups",
+      "SubArea": ""
     },
      {
       "ChangeList": [

@@ -1,6 +1,6 @@
 ---
 title: "onPremisesSyncBehavior resource type"
-description: "OnPremisesSyncBehavior indicates the state of synchronization for a directory object in the cloud."
+description: "Indicates the state of synchronization for a group between the cloud and on-premises Active Directory."
 author: "rubytek-git"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-OnPremisesSyncBehavior indicates the state of synchronization for a directory object in the cloud. 
+Indicates the state of synchronization for a directory object and its settings between the cloud and on-premises Active Directory. Only the [group](../resources/group.md) resource is supported.
 
 
 ## Methods
@@ -26,7 +26,8 @@ OnPremisesSyncBehavior indicates the state of synchronization for a directory ob
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isCloudManaged|Boolean|Indicates whether the object’s source of authority is set to the cloud.|
+|id|String| The object ID of the **onPremisesSyncBehavior**. Read-only.|
+|isCloudManaged|Boolean|Indicates the state of synchronization for an object between the cloud and on-premises Active Directory. This object defines whether the source of authority for a group and its settings is on-premises Active Directory or Microsoft Entra ID.|
 
 ## Relationships
 None.

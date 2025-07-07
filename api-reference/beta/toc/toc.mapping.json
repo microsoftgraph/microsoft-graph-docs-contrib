@@ -1286,6 +1286,13 @@
               ]
             },
             {
+              "name": "On-Premises Sync Behavior",
+              "overview": "../../resources/onpremisessyncbehavior.md ",
+              "resources": [
+                "group"
+              ]
+            },
+            {
               "name": "Lifecycle workflows",
               "overview": "../../resources/identitygovernance-lifecycleworkflows-overview.md",
               "keywords": [

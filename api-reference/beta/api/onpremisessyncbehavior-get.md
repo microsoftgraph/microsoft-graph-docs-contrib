@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an onPremisesSyncBehavior object. Property IsCloudManaged indicates whether the object’s source of authority is set to the cloud.
+Read the properties and relationships of an [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md) object. The **isCloudManaged** property indicates whether the object’s source of authority is set to the cloud.
 
 ## Permissions
 
@@ -26,6 +26,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/onpremisessyncbehavior-get-permissions.md)]
+
+## Permissions for specific scenarios
+To read the [group](../resources/group.md) onPremisesSyncBehavior **IsCloudManaged** property:
+- In delegated scenarios, the signed-in user needs at least one of the following Microsoft Entra roles: *Group Administrator* (least privilege), *Hybrid Administrator*; the app must be granted the *Group-OnPremisesSyncBehavior.ReadWrite.All* delegated permission.
+- In app-only scenarios with Microsoft Graph permissions, the app must be granted the *Group-OnPremisesSyncBehavior.ReadWrite.All* permission.
+- *Group-OnPremisesSyncBehavior.ReadWrite.All* is the least privileged permission to read and write the **IsCloudManaged** property.
 
 ## HTTP request
 
@@ -39,7 +45,7 @@ GET /groups/{groupsId}/onPremisesSyncBehavior
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+Not Supported.
 
 ## Request headers
 
@@ -66,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/groups/{groupsId}/onPremisesSyncBehavior
+GET https://graph.microsoft.com/beta/groups/367c0f19-49s1-41b5-a03f-6f3887bd0ed8/onPremisesSyncBehavior
 ```
 
 
@@ -88,7 +94,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.onPremisesSyncBehavior",
     "id": "39b4e676-e148-6060-855c-a77f67b5ac06",
-    "isCloudManaged": "Boolean"
+    "isCloudManaged": true
   }
 }
 ```

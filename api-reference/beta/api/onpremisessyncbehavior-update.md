@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an onPremisesSyncBehavior object.
+Update the properties of an [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md) object.
 
 ## Permissions
 
@@ -26,6 +26,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/onpremisessyncbehavior-update-permissions.md)]
+
+## Permissions for specific scenarios
+To update the [group](../resources/group.md) onPremisesSyncBehavior **IsCloudManaged** property:
+- In delegated scenarios, the signed-in user needs at least one of the following Microsoft Entra roles: *Group Administrator* (least privilege), *Hybrid Administrator*; the app must be granted the *Group-OnPremisesSyncBehavior.ReadWrite.All* delegated permission.
+- In app-only scenarios with Microsoft Graph permissions, the app must be granted the *Group-OnPremisesSyncBehavior.ReadWrite.All* permission.
+- *Group-OnPremisesSyncBehavior.ReadWrite.All* is the least privileged permission to read and write the **IsCloudManaged** property.
+
 
 ## HTTP request
 
@@ -51,7 +58,7 @@ PATCH /groups/{groupsId}/onPremisesSyncBehavior
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isCloudManaged|Boolean|Indicates whether the object’s source of authority is set to the cloud.|
+|isCloudManaged|Boolean|Indicates whether the object’s source of authority is set to the cloud. `true` if updates from on-premises Active Directory are blocked; `false` if updates from cloud Active Directory are blocked; |
 
 
 
@@ -70,12 +77,12 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/groups/{groupsId}/onPremisesSyncBehavior
+PATCH https://graph.microsoft.com/beta/groups/26g4e676-h246-6060-855c-f87f78a7gd27/onPremisesSyncBehavior
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.onPremisesSyncBehavior",
-  "isCloudManaged": "Boolean"
+  "isCloudManaged": true
 }
 ```
 
@@ -96,7 +103,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.onPremisesSyncBehavior",
   "id": "39b4e676-e148-6060-855c-a77f67b5ac06",
-  "isCloudManaged": "Boolean"
+  "isCloudManaged": true
 }
 ```
 
