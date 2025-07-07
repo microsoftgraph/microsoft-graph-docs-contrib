@@ -24,7 +24,6 @@ The **externalAuthenticationMethod** resource is a derived type of the [authenti
 |[List](../api/authentication-list-externalauthenticationmethods.md)|[externalAuthenticationMethod](../resources/externalauthenticationmethod.md) collection|Get a list of the externalAuthenticationMethod objects and their properties.|
 |[Create](../api/authentication-post-externalauthenticationmethods.md)|[externalAuthenticationMethod](../resources/externalauthenticationmethod.md)|Create a new externalAuthenticationMethod object.|
 |[Get](../api/externalauthenticationmethod-get.md)|[externalAuthenticationMethod](../resources/externalauthenticationmethod.md)|Read the properties and relationships of an externalAuthenticationMethod object.|
-|[Update](../api/externalauthenticationmethod-update.md)|[externalAuthenticationMethod](../resources/externalauthenticationmethod.md)|Update the properties of an externalAuthenticationMethod object.|
 |[Delete](../api/authentication-delete-externalauthenticationmethods.md)|None|Delete an externalAuthenticationMethod object.|
 
 
