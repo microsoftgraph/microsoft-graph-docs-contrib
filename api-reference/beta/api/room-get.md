@@ -62,7 +62,6 @@ If successful, this method returns a `200 OK` response code and a [room](../reso
 
 The following example specifies the **id** of a **room** to get its properties.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"],
@@ -73,9 +72,6 @@ The following example specifies the **id** of a **room** to get its properties.
 GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-room-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
