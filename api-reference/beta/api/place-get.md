@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties of a [place](../resources/place.md) object.
 
-Also used to read the properties of a child object type, which can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
+You can also use this method to read the properties of the following child object types: [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
 
 ## Permissions
 
@@ -41,9 +41,7 @@ GET /places/{placesId}
 
 ## Optional query parameters
 
-- Use `$select` to get specific [place](../resources/place.md) properties.
-
-- This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -75,9 +73,7 @@ GET https://graph.microsoft.com/beta/places/{placesId}
 
 ### Response
 
-If successful, this method returns a 200 OK response code and a [place](../resources/place.md) object or the list of places in the response.
-
-The following example shows the response.
+The following example shows the response that includes a [place](../resources/place.md) object or the list of [place](../resources/place.md) objects.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
