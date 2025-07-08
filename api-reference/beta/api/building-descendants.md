@@ -4,7 +4,7 @@ description: "Get all the descendants of a specific type under a building."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /places/{id}/descendants/{placeType}
 ```
 
-`{placeType}` can be any supported place type such as `microsoft.graph.desk`.
+> **Note:**
+> `{placeType}` can be any supported place type such as `microsoft.graph.desk`.
 
 ## Request headers
 
@@ -51,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [place](../resources/place.md) collection of the specific [place](../resources/place.md) type under the [place](../resources/place.md) object represented by the provided {id}.
+If successful, this function returns a `200 OK` response code and a [place](../resources/place.md) collection of the specific [place](../resources/place.md) type under the [place](../resources/place.md) object represented by the provided ID.
 
 ## Examples
 
@@ -66,7 +67,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/building/descendants
 ```
-
 
 ### Response
 
