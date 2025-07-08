@@ -4,7 +4,7 @@ description: "Get a list of floors and their properties."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice: "outlook"
+ms.subservice: 
 doc_type: apiPageType
 ---
 
