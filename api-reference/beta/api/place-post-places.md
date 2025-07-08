@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [place](../resources/place.md) object.
 
-Also used to create a child object type, which can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
+You can also use this method to read create the following child object types: [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
 
 ## Permissions
 
@@ -50,7 +50,7 @@ POST /places
 
 In the request body, supply a JSON representation of the [place](../resources/place.md) object.
 
-Go to [the place resource page](../resources/place.md) for a list of all properties that are available when creating a [place](../resources/place.md).
+For a list of all properties that are available when you create a **place** object, see the [place](../resources/place.md) resource.
 
 ## Response
 
@@ -96,16 +96,16 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaheads_test_placescrud/$metadata#places/$entity",
-    "@odata.type": "#microsoft.graph.desk",
-    "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-    "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-    "displayName": "D1",
-    "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
-    "mode": {
-      "@odata.type": "microsoft.graph.assignedPlaceMode",
-      "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
-    }
+  "@odata.context": "https://canary.graph.microsoft.com/testprodbetaheads_test_placescrud/$metadata#places/$entity",
+  "@odata.type": "#microsoft.graph.desk",
+  "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
+  "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
+  "displayName": "D1",
+  "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
+  "mode": {
+    "@odata.type": "microsoft.graph.assignedPlaceMode",
+    "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
+  }
 }
 ```
 
