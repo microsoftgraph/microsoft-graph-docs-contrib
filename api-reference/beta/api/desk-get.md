@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a desk object."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice: "outlook"
+ms.subservice: 
 doc_type: apiPageType
 ---
 
