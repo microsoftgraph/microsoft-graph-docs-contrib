@@ -1,6 +1,6 @@
 ---
 title: "List place objects"
-description: "Get a list of places and their properties."
+description: "Get a list of the specified type of place objects defined in the tenant that can be buildings, floors, sections, rooms, workspaces, or desks."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant, which can be [buildings](../resources/building.md), [floors](../resources/floor.md), [sections](../resources/section.md), [rooms](../resources/room.md), [workspaces](../resources/workspace.md), or [desks](../resources/desk.md).
+Get a list of the specified type of [place](../resources/place.md) objects defined in the tenant, which can be [buildings](../resources/building.md), [floors](../resources/floor.md), [sections](../resources/section.md), [rooms](../resources/room.md), [workspaces](../resources/workspace.md), or [desks](../resources/desk.md).
 
 For example, you can get all the [places](../resources/place.md) within a [building](../resources/building.md) or get all the [places](../resources/place.md) on a [floor](../resources/floor.md).
 
@@ -31,6 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+For a list of places:
+
 <!-- {
   "blockType": "ignored"
 }
@@ -39,26 +41,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /places
 ```
 
-Or:
+For a list of places of a specific type:
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 GET /places/{placeType}
 ```
 
-{placeType} can be any supported place type, such as `microsoft.graph.desk`.
+> **Note:**
+> `{placeType}` can be any supported place type such as `microsoft.graph.desk`.
 
 ## Optional query parameters
 
-This method supports the following query parameters to help customize the response:
-- `$filter`
-- `$select`
-- `$top`
-- `$skip`
-- `$count=true`
-
-Use `$top` to customize the page size. The default page size is 100.
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$select`, `$top`, `$skip`, and `$count` [OData query parameters](/graph/query-parameters) to help customize the response. Use `$top` to customize the page size. The default page size is 100.
 
 ## Request headers
 
@@ -78,9 +76,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: List all the rooms defined in the tenant
 
+The following example shows how to get all the [room](../resources/room.md) objects in the tenant.
+
 #### Request
 
-The following example shows how to get all the [room](../resources/room.md) objects in the tenant.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -213,12 +213,14 @@ Content-type: application/json
   ]
 }
 ```
-### Example 2: List all the workspaces defined in the tenant
 
-#### Request
+### Example 2: List all the workspaces defined in the tenant
 
 The following example shows how to get all the [workspace](../resources/workspace.md) objects in the tenant.
 
+#### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -309,6 +311,8 @@ Content-type: application/json
 ```
 
 ### Example 3: List all the places defined in the tenant
+
+The following example shows how to get all the [place](../resources/place.md) objects in the tenant.
 
 #### Request
 
