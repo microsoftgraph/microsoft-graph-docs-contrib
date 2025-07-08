@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [place](../resources/place.md) object.
 
-Also used to update a child object type, which can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
+You can also use this method to update the following child object types: [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
 
 ## Permissions
 
@@ -35,9 +35,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 PATCH /places/{id | placeId | emailAddress}
 ```
-- **id** is the unique identifier of the [place](../resources/place.md) to update.
-- **placeId** is a unique alternate identifier of the [place](../resources/place.md) to update.
-- **emailAddress** is the String email address of the mailbox associated with this [place](../resources/place.md).
+
+>**Note:**
+> * **id** is the unique identifier of the [place](../resources/place.md) to update.
+> * **placeId** is a unique alternate identifier of the [place](../resources/place.md) to update.
+> * **emailAddress** is the String email address of the mailbox associated with this [place](../resources/place.md).
 
 ## Request headers
 
@@ -50,12 +52,10 @@ PATCH /places/{id | placeId | emailAddress}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-For best performance, don't include existing values that haven't changed.
-
 Only one instance of a [place](../resources/place.md) resource can be updated at a time. In the request body, use `@odata.type` to specify the type of place and include the properties to update.
 
 > [!Note]
-> You can't use this API to update the **id**, **placeID**, **emailAddress**, or **bookingType** of a [place](../resources/place.md) object.
+> You can't use this API to update the **id**, **placeId**, **emailAddress**, or **bookingType** of a [place](../resources/place.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -92,7 +92,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
   "displayName": "Updated Desk 1",
-  "displayDeviceName": "Samsung monitor",
+  "displayDeviceName": "Surface monitor",
   "tags": ["AdjustableHeight"]
 }
 ```
@@ -115,17 +115,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
   "@odata.type": "#microsoft.graph.desk",
-    "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-    "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
+  "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
+  "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
   "displayName": "Updated Desk 1",
-  "displayDeviceName": "Samsung monitor",
-  "tags": ["AdjustableHeight"],
-    "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
-    "mode": {
-      "@odata.type": "microsoft.graph.assignedPlaceMode",
-      "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
-    }
+  "displayDeviceName": "Surface monitor",
+  "tags": [
+    "AdjustableHeight"
+  ],
+  "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
+  "mode": {
+    "@odata.type": "microsoft.graph.assignedPlaceMode",
+    "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
+  }
 }
 ```
