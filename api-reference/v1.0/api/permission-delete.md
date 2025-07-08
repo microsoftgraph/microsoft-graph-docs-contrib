@@ -46,7 +46,7 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
-| if-match      | String. If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
+| if-match      | String. If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item isn't deleted. |
 
 ## Response
 
@@ -108,7 +108,7 @@ HTTP/1.1 204 No Content
 
 ## Remarks
 
-* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.
+* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) can't create or modify permissions on the root DriveItem.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
