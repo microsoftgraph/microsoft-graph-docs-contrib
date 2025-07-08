@@ -50,6 +50,10 @@ items:
       href: ../../resources/employeeexperienceuser.md
     - name: List assignedRoles
       href: ../../api/employeeexperienceuser-list-assignedroles.md
+  - name: Complex types
+    items:
+    - name: Engagement identity set
+      href: ../../resources/engagementidentityset.md
 - name: Employee goals (preview)
   items:
   - name: Goals export job
