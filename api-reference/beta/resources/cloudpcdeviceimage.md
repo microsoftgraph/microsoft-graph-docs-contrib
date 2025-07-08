@@ -25,7 +25,7 @@ Represents the image resource on a Cloud PC.
 |[Create](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
 |[Delete](../api/cloudpcdeviceimage-delete.md)|None|Delete a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
 |[Get source images](../api/cloudpcdeviceimage-getsourceimages.md)|[cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection|Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects.|
-|[Re-upload](../api/cloudpcdeviceimage-reupload.md)|None|Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload.|
+|[Reupload](../api/cloudpcdeviceimage-reupload.md)|None|Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload.|
 
 ## Properties
 
@@ -40,6 +40,7 @@ Represents the image resource on a Cloud PC.
 |osBuildNumber|String|The OS build version of the image. For example, `1909`. Read-only.|
 |osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknown`, `unknownFutureValue`. The default value is `unknown`. Read-only.|
 |osVersionNumber|String|The operating system version of this image. For example, `10.0.22000.296`. Read-only.|
+|sizeInGB|Int32|The size of the image in GB. For example, `64`. Read-only.|
 |sourceImageResourceId|String|The unique identifier (ID) of the source image resource on Azure. The required ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-only.|
 |status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on the Cloud PC. Possible values are: `pending`, `ready`, `warning`, `failed`, `unknownFutureValue`. Read-only.|
 |version|String|The image version. For example, `0.0.1` and `1.5.13`. Read-only.|
@@ -59,8 +60,8 @@ Represents the image resource on a Cloud PC.
 |paidSourceImageNotSupport|This source image is built from another paid image from the Azure Marketplace and isn't supported; use another source to proceed.|
 |sourceImageNotSupportCustomizeVMName|A computer name setting issue exists on the resultant generalized image, which prevents the customization of the VM name with the provided image.|
 |sourceImageSizeExceedsLimitation|The size of the customer-uploaded source image exceeds the shared image gallery (SIG) limitations, which results in image creation failure.|
-|sourceImageWithDataDiskNotSupported|Indicates the error code where source image has an associated data disk attached. Note that setting up a provisioning policy with this configuration is not supported with W365 Frontline.|
-|sourceImageWithDiskEncryptionSetNotSupported|Indicates that the uploaded image uses a disk encryption set with a customer-managed key, which is not supported in Windows 365. Please upload a new image encrypted with a platform-managed key.|
+|sourceImageWithDataDiskNotSupported|Indicates the error code where source image has an associated data disk attached. Note that setting up a provisioning policy with this configuration isn't supported with W365 Frontline.|
+|sourceImageWithDiskEncryptionSetNotSupported|Indicates that the uploaded image uses a disk encryption set with a customer-managed key, which isn't supported in Windows 365. Please upload a new image encrypted with a platform-managed key.|
 
 ### cloudPcDeviceImageOsStatus values
 
@@ -124,6 +125,7 @@ The following JSON representation shows the resource type.
   "osBuildNumber": "String",
   "osStatus": "String",
   "osVersionNumber": "String",
+  "sizeInGB": "Int32",
   "sourceImageResourceId": "String",
   "status": "String",
   "statusDetails": "String",
