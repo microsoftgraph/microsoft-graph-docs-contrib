@@ -232,7 +232,8 @@ When assigning labels, ensure:
 
 Aliases are friendly names for properties that you assign. Aliases are used in queries and selections in refinable property filters. 
 
-Some real-world Examples of Aliases are:
+The table shows some real examples.
+
 | Property    | Possible aliases              | Use case                                       | 
 |:-------------------|:------------------------------------|:----------------------------------------------------| 
 | createdBy         | author, owner, submittedBy   | Users asking `Who wrote this?` or `Who submitted?` | 
