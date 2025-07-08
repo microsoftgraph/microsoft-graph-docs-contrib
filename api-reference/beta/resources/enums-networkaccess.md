@@ -323,12 +323,38 @@ Namespace: microsoft.graph.networkaccess
 |israelCentral|
 |unknownFutureValue|
 
+### securityRuleStatus values 
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|reportOnly|
+|unknownFutureValue|
+
 ### status values 
 
 |Member|
 |:---|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+### threatIntelligenceAction values 
+
+|Member|
+|:---|
+|allow|
+|block|
+|unknownFutureValue|
+
+### threatIntelligenceSeverity values 
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
 |unknownFutureValue|
 
 ### trafficForwardingType values 
