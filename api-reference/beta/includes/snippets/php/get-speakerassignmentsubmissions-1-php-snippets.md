@@ -11,6 +11,6 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->networkAccess()->settings()->enrichedAuditLogs()->get()->wait();
+$result = $graphServiceClient->education()->reports()->speakerAssignmentSubmissions()->get()->wait();
 
 ```

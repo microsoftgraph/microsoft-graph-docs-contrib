@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 
-result = await graph_client.network_access.settings.enriched_audit_logs.get()
+result = await graph_client.education.reports.speaker_assignment_submissions.get()
 
 
 ```

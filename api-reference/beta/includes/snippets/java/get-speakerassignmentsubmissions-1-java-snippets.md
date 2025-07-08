@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-com.microsoft.graph.models.networkaccess.EnrichedAuditLogs result = graphClient.networkAccess().settings().enrichedAuditLogs().get();
+SpeakerAssignmentSubmissionCollectionResponse result = graphClient.education().reports().speakerAssignmentSubmissions().get();
 
 
 ```

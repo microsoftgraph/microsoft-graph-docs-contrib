@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let enrichedAuditLogs = await client.api('/networkaccess/settings/enrichedAuditLogs')
+let speakerAssignmentSubmissions = await client.api('/education/reports/speakerAssignmentSubmissions')
 	.version('beta')
 	.get();
 
