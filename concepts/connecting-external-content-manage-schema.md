@@ -157,13 +157,14 @@ The **title** property doesn't specify exact matching. If nothing is specified, 
 - Querying `title: Contoso Title` returns any item that contains `Contoso` or `Title` in the **title** property.
 
 ### Semantic labels
+
 A semantic label is a well-known tag published by Microsoft that you can add against a property in your schema. When building a custom Copilot connector using the Microsoft Graph API, applying semantic labels to your schema properties is essential. These labels help Microsoft 365 Copilot and Microsoft Search understand the meaning and role of each property, enabling better search, summarization, and user experience.   
 
 You can assign semantic labels to your source properties on the Assign property labels page. Labels provide semantic meaning and let you integrate your connector data into Microsoft 365 experiences. 
 
-Let's consider some of the project management tools like JIRA, Azure Dev ops, Asana etc. For the user who created a feature or work item, each of these platforms might use different terms like owner, ownedBy, assignedTo, etc. So, if you have a property, which is intended for a similar purpose, you can use the ‘createdby’ semantic label.   
+Let's consider some of the project management tools like JIRA, Azure DevOps, Asana, etc. For the user who created a feature or work item, each of these platforms might use different terms like owner, ownedBy, assignedTo, etc. So, if you have a property that is intended for a similar purpose, you can use the ‘createdby’ semantic label.   
 
-You can assign semantic labels to your source properties using the graph API or from the **Assign property labels** page while using sdk. Labels provide semantic meaning, and let you integrate your connector data into Microsoft 365 experiences.  
+You can assign semantic labels to your source properties using the graph API or from the **Assign property labels** page while using sdk. Labels provide semantic meaning and let you integrate your connector data into Microsoft 365 experiences.  
 
 | Label              | Description                                                                                                      | Applies to fields like                         | 
 |--------------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------| 
@@ -188,13 +189,13 @@ Add as many labels as you can, but ensure that they are accurately mapped to pro
 The label **title** is the most important label. Make sure that you assign a property to this label to allow your connection to participate in the result cluster experience. Incorrectly mapping labels degrades the search experience. It's okay for some labels to not have a property assigned to them.
 
 ### Relevance
-By applying as many accurately mapped labels as possible, you can also improve the discovery of your content through search. Microsoft recommends efining as many of the following labels as possible, listed in descending order of their potential impact on discovery: title, lastModifiedDateTime, lastModifiedBy, url, fileName, and fileExtension.
+By applying as many accurately mapped labels as possible, you can also improve the discovery of your content through search. Microsoft recommends defining as many of the following labels as possible, listed in descending order of their potential impact on discovery: title, lastModifiedDateTime, lastModifiedBy, url, fileName, and fileExtension.
   
 Ensure that your mappings are accurate. When you use a property as a label for a property that contains large content, you might increase search latency and have to wait longer for search to return results. 
 
 ### Rank hints 
 
-Rank hints can be applied to textual properties that aren't mapped to semantic labels and are set as searchable. They can be set in a range from **default** to **very high** in the Search admin portal. The hints are consumed with other attributes of each item, to return the most relevant items for a given query. 
+Rank hints can be applied to textual properties that aren't mapped to semantic labels and are set as searchable. They can be set in a range from **default** to **very high** in the Search admin portal. The hints are consumed with other attributes of each item to return the most relevant items for a given query. 
 
 Use the following steps to set rank hints:
 
@@ -241,6 +242,7 @@ Some real-world Examples of Aliases are:
 | summary           | description, abstract          | Users asking `Give me a quick overview`            | 
 
 Some best practices to consider while adding aliases are:
+
 - Use aliases for **common synonyms** or **domain-specific terms**. 
 - Avoid overly generic or ambiguous aliases. 
 - Keep aliases **short and intuitive**. 
@@ -256,7 +258,7 @@ This content property is:
 
 Some best practices to consider while using content property are:
 - Add any unstructured data to the content property to make Copilot do a semantic search on the content to match with your query.
-- To ensure semantic search functionality for unstructured or free-flowing content, add properties like **Summary**, **Comment**, **Root cause**, and **Description** to the `content` field. Additionally, retain these properties as separate retrievable entities only if their entire value needs to be retrieved and displayed for UI purposes. You can append multiple properties like `summary`, `description`, etc. to the content field. 
+- To ensure semantic search functionality for unstructured or free-flowing content, add properties like **Summary**, **Comment**, **Root cause**, and **Description** to the `content` field. Additionally, retain these properties as separate retrievable entities only if their entire value needs to be retrieved and displayed for UI purposes. You can append multiple properties like `summary`, `description`, etc., to the content field. 
 
 A sample of how the `content` property is used while ingesting data: 
 ```json 
@@ -283,8 +285,7 @@ A sample of how the `content` property is used while ingesting data:
 }
 ``` 
 
-If you are using a Declarative Agent (DA), you can and should provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. 
-This is very useful because it helps the Declarative agent understand: 
+If you are using a declarative agent (DA), you can and should provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. It's very useful because it helps the declarative agent understand: 
     - The **semantic meaning** of each property. 
     - How to **reference and summarize** the data. 
     - How to **respond to user queries** using the indexed content. 
@@ -307,7 +308,7 @@ When you add a property, you can include all the search attributes that you need
 
 You can add specific search attributes to a property, but keep in mind that you can't add a refiner search attribute as a schema change. Also, it isn't possible to use refinable attributes as searchable capabilities.
 
-Adding a search capability requires reingestion.
+Adding a search capability requires re-ingestion.
 
 ### Add/remove an alias
 
