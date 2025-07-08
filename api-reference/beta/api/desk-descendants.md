@@ -4,7 +4,7 @@ description: "Get all the descendants of a specific type under a desk."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get all the descendants of a specific type under a [desk](../resources/place.md).
 
-This method always returns an empty list because [desks](../resources/desk.md) have no descendant objects.
+This method always returns an empty list because a [desk](../resources/desk.md) have no descendant objects.
 
 ## Permissions
 
@@ -38,6 +38,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /places/{id}/descendants/{placeType}
 ```
+
+> **Note:**
+> `{placeType}` can be any supported place type such as `microsoft.graph.desk`.
 
 ## Request headers
 
@@ -64,11 +67,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /places/{id}/descendants/{placeType}
+GET https://graph.microsoft.com/places/{id}/descendants/{placeType}
 ```
-
-`{placeType}` can be any supported place type such as `microsoft.graph.desk`.
-
 
 ### Response
 
