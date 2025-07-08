@@ -4,7 +4,7 @@ description: "Delete a place object."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete a [place](../resources/place.md) object.
 
-Also used to delete a child object type, which can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
+You can also use this method to delete the following child object types: [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
 
 ## Permissions
 
@@ -39,7 +39,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 DELETE /places/{id | placesId}
 ```
 
-You can use **id** (the unique identifier of the place), or **placeId**, if defined as an alternate key.
+> **Note:**
+> You can use **id** (the unique identifier of the place), or **placeId**, if defined as an alternate key.
 
 ## Request headers
 
@@ -53,7 +54,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -69,11 +70,9 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/places/{placesId}
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
