@@ -4,7 +4,7 @@ description: "Update the properties of a building object."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -81,10 +81,12 @@ PATCH https://graph.microsoft.com/beta/building
 Content-Type: application/json
 
 {
-"@odata.type": "#microsoft.exchange.locationsAndTime.desk",
+  "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
   "displayName": "Updated Desk 1",
-  "displayDeviceName": "Samsung monitor",
-  "tags": ["AdjustableHeight"]
+  "displayDeviceName": "Surface monitor",
+  "tags": [
+    "AdjustableHeight"
+  ]
 }
 ```
 
@@ -104,17 +106,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
   "@odata.type": "#microsoft.graph.desk",
-      "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-      "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-    "displayName": "Updated Desk 1",
-    "displayDeviceName": "Samsung monitor",
-    "tags": ["AdjustableHeight"],
-      "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
-      "mode": {
-        "@odata.type": "microsoft.graph.assignedPlaceMode",
-        "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
+  "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
+  "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
+  "displayName": "Updated Desk 1",
+  "displayDeviceName": "Surface monitor",
+  "tags": [
+    "AdjustableHeight"
+  ],
+  "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
+  "mode": {
+    "@odata.type": "microsoft.graph.assignedPlaceMode",
+    "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
   }
 }
 ```
