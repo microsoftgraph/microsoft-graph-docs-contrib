@@ -303,7 +303,7 @@ This section includes information about the update capabilities for the [schema]
 
 You can add a property to your schema; doing so doesn't require re-ingestion, but we recommend it.
 
-When you add a property, you can include all the search attributes that you need.
+When adding a property, you can include all the search attributes that you need.
 
 ### Add/remove a search capability
 
@@ -311,7 +311,7 @@ You can add specific search attributes to a property, but keep in mind that you 
 
 Adding a search capability requires re-ingestion.
 
-### Add/remove an alias
+### Add or remove an alias
 
 You can add or remove aliases and use them for your search queries.
 
