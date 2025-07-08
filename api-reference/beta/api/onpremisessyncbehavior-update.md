@@ -27,11 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/onpremisessyncbehavior-update-permissions.md)]
 
-## Permissions for specific scenarios
-To update the [group](../resources/group.md) onPremisesSyncBehavior **IsCloudManaged** property:
-- In delegated scenarios, the signed-in user needs at least one of the following Microsoft Entra roles: *Group Administrator* (least privilege), *Hybrid Administrator*; the app must be granted the *Group-OnPremisesSyncBehavior.ReadWrite.All* delegated permission.
-- In app-only scenarios with Microsoft Graph permissions, the app must be granted the *Group-OnPremisesSyncBehavior.ReadWrite.All* permission.
-- *Group-OnPremisesSyncBehavior.ReadWrite.All* is the least privileged permission to read and write the **IsCloudManaged** property.
+> [!IMPORTANT]
+> I> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation: *Groups Administrator* (least privilege), *Hybrid Administrator*.
 
 
 ## HTTP request
@@ -58,7 +55,7 @@ PATCH /groups/{groupsId}/onPremisesSyncBehavior
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isCloudManaged|Boolean|Indicates whether the object’s source of authority is set to the cloud. `true` if updates from on-premises Active Directory are blocked; `false` if updates from cloud Active Directory are blocked; |
+|isCloudManaged|Boolean|Indicates whether the object’s source of authority is set to the cloud. If `true`, updates from on-premises Active Directory are blocked; if `false`, updates from cloud Active Directory are blocked; |
 
 
 
