@@ -6929,6 +6929,24 @@
         "SubArea": "Cloud PC"
     },
     {
+      "ChangeList": [
+        {
+          "Id": "8280d3cc-9063-4830-9fc1-0adffd688f41",
+          "ApiChange": "Property",
+          "ChangedApiName": "sizeInGB",
+          "ChangeType": "Addition",
+          "Description": "Added the **sizeInGB** property to the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDeviceImage?view=graph-rest-beta) resource.",
+          "Target": "cloudPcDeviceImage"
+        }
+      ],
+      "Id": "8280d3cc-9063-4830-9fc1-0adffd688f41",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-19T01:54:26.1206975Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
         "ChangeList": [
           {
             "Id": "05d810e7-7e8d-4178-ba45-34c97ff8fec8",

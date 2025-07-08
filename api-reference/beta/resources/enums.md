@@ -362,6 +362,7 @@ Namespace: microsoft.graph
 | microsoftEntraIdGovernance |
 | microsoftEntraWorkloadId |
 | unknownFutureValue |
+| aatp |
 
 ### recommendationCategory values
 
@@ -370,6 +371,7 @@ Namespace: microsoft.graph
 | identityBestPractice |
 | identitySecureScore |
 | unknownFutureValue |
+| mdiSecureScore |
 
 ### recommendationFeatureAreas values
 
@@ -402,6 +404,10 @@ Namespace: microsoft.graph
 | dismissed |
 | postponed |
 | unknownFutureValue |
+| riskAccepted |
+| thirdParty |
+| planned |
+| alternateMitigation |
 
 ### recommendationType values
 
