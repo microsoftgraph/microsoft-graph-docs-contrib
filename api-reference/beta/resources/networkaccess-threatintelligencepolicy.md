@@ -1,6 +1,6 @@
 ---
 title: "threatIntelligencePolicy resource type"
-description: "Represents a policy that defines how threat intelligence is evaluated and enforced in network access decisions."
+description: "Represents a policy that defines how threat intelligence is evaluated and enforced in network access decisions through Global Secure Access."
 author: "fgomulka"
 ms.date: 06/05/2025
 ms.localizationpriority: medium

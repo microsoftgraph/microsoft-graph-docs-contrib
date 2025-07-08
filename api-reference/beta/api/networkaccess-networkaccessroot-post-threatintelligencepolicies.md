@@ -85,7 +85,6 @@ Content-Type: application/json
   "name": "Malicious Domains Policy",
   "description": "Policy to block traffic to known malicious domains based on threat intelligence",
   "version": "1.0",
-  "kind": "domainReputation",
   "settings": {
     "@odata.type": "microsoft.graph.networkaccess.threatIntelligencePolicySettings",
     "defaultAction": "block"

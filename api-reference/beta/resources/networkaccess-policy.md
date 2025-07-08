@@ -1,5 +1,5 @@
 ---
-title: "Policy resource type"
+title: "policy resource type"
 description: "A traffic forwarding policy consists of a policy and its associated rules. It defines the guidelines and instructions for routing and handling network traffic."
 author: "Moti-ba"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 07/22/2024
 ---
 
-# Policy resource type
+# policy resource type
 
 Namespace: microsoft.graph.networkaccess
 
@@ -16,7 +16,11 @@ Namespace: microsoft.graph.networkaccess
 
 A traffic forwarding policy consists of a policy and its associated rules. It defines the guidelines and instructions for routing and handling network traffic.
 
-It's an abstract type from which the [microsoft.graph.networkaccess.forwardingPolicy](networkaccess-forwardingpolicy.md), [microsoft.graph.networkaccess.filteringPolicy](networkaccess-filteringpolicy.md), and [microsoft.graph.networkaccess.threatIntelligencePolicy](networkaccess-threatintelligencepolicy.md) resource types are derived.
+It's an abstract type from which the following resources are derived:
+
+- [microsoft.graph.networkaccess.forwardingPolicy](networkaccess-forwardingpolicy.md)
+- [microsoft.graph.networkaccess.filteringPolicy](networkaccess-filteringpolicy.md)
+- [microsoft.graph.networkaccess.threatIntelligencePolicy](networkaccess-threatintelligencepolicy.md)
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
