@@ -194,13 +194,13 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 Content-Type: application/json
 
 {
-  "source": "Contoso.SodCheckProcess",
+  "source": "Contoso.AADProcess",
   "type": "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated",
   "data": {
     "@odata.type": "microsoft.graph.accessPackageRequestApprovalStageCallbackConfiguration",
     "stage": "assignmentRequestCreated",
     "customExtensionStageInstanceId": "7bf58d34-b3f9-4bae-8deb-abcd25cddea1",
-    "customExtensionStageInstanceDetail": "This user is all verified"
+    "customExtensionStageInstanceDetail": "Completed."
   }
 }
 ```
