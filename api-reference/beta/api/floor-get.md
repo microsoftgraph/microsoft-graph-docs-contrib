@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a floor object."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/floor
 ```
-
 
 ### Response
 
