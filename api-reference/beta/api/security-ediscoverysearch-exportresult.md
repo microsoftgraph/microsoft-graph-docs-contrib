@@ -66,9 +66,9 @@ If the export started successfully, this action returns a `202 Accepted` respons
 
 ## Examples
 
-### Example 1: Export results with search hits only, excluding partially indexed items, with no additional options, as .pst files for each mailbox
+### Example 1: Export results with search hits only, excluding partially indexed items, as .pst files for each mailbox and contextual chat messages are threaded into HTML transcripts
 
-The following example shows how to export results with search hits only, excluding partially indexed items, with no additional options selected, as .pst files for each mailbox.
+The following example shows how to export results with search hits only, excluding partially indexed items, as .pst files for each mailbox and contextual chat messages are threaded into HTML transcripts.
 
 #### Request
 
@@ -87,7 +87,7 @@ Content-Type: application/json
 {
   "displayName": "Export 1 - simple PST",
   "exportCriteria": "searchHits",
-  "additionalOptions": "none",
+  "additionalOptions": "htmlTranscripts, splitSource, includeFolderAndPath, condensePaths, friendlyName",
   "exportFormat": "pst"
 }
 ```
@@ -142,9 +142,9 @@ Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('01826ce3-43a3-4235-a121-81d05926efae')
 ```
 
-### Example 2: Export results with search hits and partially indexed items in all locations, with no additional options, as .pst files for each mailbox.
+### Example 2: Export results with search hits and partially indexed items in all locations, as .pst files for each mailbox
 
-The following example shows how to export results with search hits and partially indexed items in all locations, with no additional options selected, as .pst files for each mailbox.
+The following example shows how to export results with search hits and partially indexed items in all locations, as .pst files for each mailbox.
 
 #### Request
 
@@ -164,7 +164,7 @@ Content-Type: application/json
   "displayName": "Export 2",
   "exportCriteria": "searchHits, partiallyIndexed",
   "exportLocation": "responsiveLocations, nonresponsiveLocations",
-  "additionalOptions": "none",
+  "additionalOptions": "splitSource",
   "exportFormat": "pst"
 }
 ```
@@ -373,9 +373,9 @@ Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('05b5c707-ed0d-4f5c-bbfd-e4941137baf1')
 ```
 
-### Example 5: Export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each message
+### Example 5: Export results with partially indexed items in search hit locations and cloud attachments. It specifies how many document and cloud attachment versions to include and .eml files for each message
 
-The following example shows how to export results with partially indexed items in search hit locations and cloud attachments. It specifies how many document and cloud attachment versions to include and .eml files for each message. 
+The following example shows how to export results with partially indexed items in search hit locations and cloud attachments. It specifies how many document and cloud attachment versions to include and .eml files for each message.
 
 #### Request
 
@@ -395,7 +395,7 @@ Content-Type: application/json
   "displayName": "Export 5",
   "exportCriteria": "partiallyIndexed",
   "exportLocation": "responsiveLocations",
-  "additionalOptions": "cloudAttachments",
+  "additionalOptions": "splitSource, includeFolderAndPath, condensePaths, friendlyName",
   "exportFormat": "eml",
   "cloudAttachmentVersion": "all",
   "documentVersion": "recent100"
