@@ -286,11 +286,9 @@ A sample of how the `content` property is used while ingesting data:
 }
 ``` 
 
-If you are using a declarative agent (DA), you can and should provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. It's very useful because it helps the declarative agent understand: 
-    - The **semantic meaning** of each property. 
-    - How to **reference and summarize** the data. 
-    - How to **respond to user queries** using the indexed content. 
-- Define well-formed property descriptions for all properties. It should indicate what the property is about, other names or terms for the property, when it should be used, etc. 
+If you are using a declarative agent (DA), you can and should provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. It's useful because it helps the declarative agent understand the **semantic meaning** of each property, how to **reference and summarize** the data, and, how to **respond to user queries** using the indexed content. 
+
+Define well-formed property descriptions for all properties. It should indicate what the property is about, other names or terms for the property, when it should be used, etc. 
   
 ## Schema update capabilities
 
@@ -301,9 +299,7 @@ This section includes information about the update capabilities for the [schema]
 
 ### Add a property
 
-You can add a property to your schema; doing so doesn't require re-ingestion, but we recommend it.
-
-When adding a property, you can include all the search attributes that you need.
+You can add a property to your schema; doing so doesn't require re-ingestion, but we recommend it. When adding a property, you can include all the search attributes that you need.
 
 ### Add/remove a search capability
 
