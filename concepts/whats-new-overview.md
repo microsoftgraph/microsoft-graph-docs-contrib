@@ -25,6 +25,10 @@ Each fragment uploaded during an [upload session](/graph/api/resources/uploadses
 
 ## July 2025: New in preview only
 
+### Device and app management | Cloud PC
+
+Use the **sizeInGB** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) to get the size of the image in GB.
+
 ### Files
 
 Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession?view=graph-rest-beta&preserve-view=true) extends the expiration time.

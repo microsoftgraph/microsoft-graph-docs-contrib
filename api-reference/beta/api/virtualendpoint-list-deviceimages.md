@@ -137,7 +137,8 @@ Content-Type: application/json
       "status": "ready",
       "statusDetails": null,
       "errorCode": null,
-      "osVersionNumber": "10.0.22631.3593"
+      "osVersionNumber": "10.0.22631.3593",
+      "sizeInGB": 64
     }
   ]
 }
