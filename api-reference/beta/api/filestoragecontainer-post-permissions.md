@@ -15,7 +15,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a [permission](../resources/permission.md) to an existing [fileStorageContainer](../resources/filestoragecontainer.md). 
+Add a [permission](../resources/permission.md) to an existing [fileStorageContainer](../resources/filestoragecontainer.md).
+
+> [!IMPORTANT]
+> Permissions added to a [fileStorageContainer](../resources/filestoragecontainer.md) apply to all its [driveItems](../resources/driveItem.md), regardless of unique or restrictive permissions applied on those items.
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
