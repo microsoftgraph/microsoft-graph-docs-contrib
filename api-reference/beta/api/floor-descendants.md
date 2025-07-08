@@ -4,7 +4,7 @@ description: "Get all the descendants of a specific type under a floor."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /places/{id}/descendants/{placeType}
 ```
 
-`{placeType}` can be any supported place type such as `microsoft.graph.desk`.
+> **Note:**
+> `{placeType}` can be any supported place type such as `microsoft.graph.desk`.
 
 ## Request headers
 
