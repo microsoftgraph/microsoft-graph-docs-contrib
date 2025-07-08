@@ -1,10 +1,10 @@
 ---
 title: "List desk objects"
-description: "Get a list of desks and their properties."
+description: "Get a list of desk objects and their properties."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [desks](../resources/desk.md) and their properties.
+Get a list of [desk](../resources/desk.md) objects and their properties.
 
 ## Permissions
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.desk not found
 ```
-
 
 ### Response
 
