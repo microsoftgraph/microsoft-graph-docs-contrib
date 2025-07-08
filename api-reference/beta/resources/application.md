@@ -6,6 +6,7 @@ author: "sureshja"
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ms.date: 11/26/2024
+ms.custom: sfi-ropc-nochange
 ---
 
 # application resource type

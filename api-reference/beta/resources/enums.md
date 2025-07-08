@@ -5,7 +5,8 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 12/31/2024
+ms.date: 07/03/2025
+ms.custom: sfi-ropc-nochange
 ---
 
 # Enum values
@@ -361,6 +362,7 @@ Namespace: microsoft.graph
 | microsoftEntraIdGovernance |
 | microsoftEntraWorkloadId |
 | unknownFutureValue |
+| aatp |
 
 ### recommendationCategory values
 
@@ -369,6 +371,7 @@ Namespace: microsoft.graph
 | identityBestPractice |
 | identitySecureScore |
 | unknownFutureValue |
+| mdiSecureScore |
 
 ### recommendationFeatureAreas values
 
@@ -401,6 +404,10 @@ Namespace: microsoft.graph
 | dismissed |
 | postponed |
 | unknownFutureValue |
+| riskAccepted |
+| thirdParty |
+| planned |
+| alternateMitigation |
 
 ### recommendationType values
 
@@ -4985,6 +4992,26 @@ Possible values for user account types (group membership), per Windows definitio
 | logoutUrl |
 | unknownFutureValue |
 
+### signUpIdentifierType values 
+
+|Member|
+|:---|
+|emailAddress|
+|unknownFutureValue|
+
+### signUpStage values 
+
+|Member|
+|:---|
+|credentialCollection|
+|credentialValidation|
+|credentialFederation|
+|consent|
+|attributeCollectionAndValidation|
+|userCreation|
+|tenantConsent|
+|unknownFutureValue|
+
 ### nativeAuthenticationApisEnabled values
 
 | Member |
@@ -5075,84 +5102,6 @@ Possible values for user account types (group membership), per Windows definitio
 |true|
 |unknownFutureValue|
 
-### changeItemService values
-
-|Member|
-|:---|
-|accessReviews|
-|appProxy|
-|audit|
-|authenticationsLogins|
-|azureADDomainServices|
-|b2B|
-|b2CConsumerIdentityManagement|
-|conditionalAccess|
-|deviceAccessManagement|
-|deviceRegistrationandManagement|
-|directoryManagement|
-|enterpriseApps|
-|entitlementManagement|
-|groupManagement|
-|identityProtection|
-|internetAccess|
-|lifecycleWorkflows|
-|linkedIn|
-|managedidentitiesforAzureresources|
-|mfA|
-|microsoftAuthenticatorApp|
-|microsoftIdentityManager|
-|msGraph|
-|myApps|
-|myProfileAccount|
-|na|
-|o365Groups|
-|other|
-|privateAccess|
-|privilegedIdentityManagement|
-|provisioning|
-|rbac|
-|reporting|
-|roles|
-|selfServicePasswordReset|
-|sovereignClouds|
-|termsofUse|
-|userAccessManagement|
-|userExperienceandManagement|
-|userManagement|
-|microsoftEntraDomainServices|
-|verifiedId|
-|unknownFutureValue|
-
-### changeItemState values
-
-|Member|
-|:---|
-|available|
-|comingSoon|
-|unknownFutureValue|
-
-### roadmapItemDeliveryStage values
-
-|Member|
-|:---|
-|privatePreview|
-|publicPreview|
-|ga|
-|unknownFutureValue|
-
-### changeAnnouncementChangeType values 
-
-|Member|
-|:---|
-|breakingChange|
-|deprecation|
-|endOfSupport|
-|featureChange|
-|other|
-|retirement|
-|securityIncident|
-|uxChange|
-
 ### restoreJobType values 
 
 |Member|
@@ -5228,6 +5177,7 @@ Possible values for user account types (group membership), per Windows definitio
 |federatedOrganizations|
 |everyone|
 |unknownFutureValue|
+
 ### educationSpeechType values 
 
 |Member|
@@ -5235,6 +5185,61 @@ Possible values for user account types (group membership), per Windows definitio
 |informative|
 |personal|
 |persuasive|
+|unknownFutureValue|
+
+### engagementConversationMessageReactionType values
+
+| Member           |
+|:-----------------|
+| like             |
+| love             |
+| celebrate        |
+| thank            |
+| laugh            |
+| sad              |
+| happy            |
+| excited          |
+| smile            |
+| silly            |
+| intenseLaugh     |
+| starStruck       |
+| goofy            |
+| thinking         |
+| surprised        |
+| mindBlown        |
+| scared           |
+| crying           |
+| shocked          |
+| angry            |
+| agree            |
+| praise           |
+| takingNotes      |
+| heartBroken      |
+| support          |
+| confirmed        |
+| watching         |
+| brain            |
+| medal            |
+| bullseye         |
+| unknownFutureValue |
+
+### notificationEventsType values 
+
+|Member|
+|:---|
+|none|
+|restoreAndPolicyUpdates|
+|unknownFutureValue|
+
+### notificationRecipientsType values 
+
+|Member|
+|:---|
+|none|
+|globalAdmins|
+|backupAdmins|
+|custom|
+|allAdmins|
 |unknownFutureValue|
 
 ### cloudPcPolicyTimezone values 

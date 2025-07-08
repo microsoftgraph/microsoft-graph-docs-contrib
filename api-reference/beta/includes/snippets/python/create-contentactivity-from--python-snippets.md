@@ -7,48 +7,46 @@ description: "Automatically generated file. DO NOT MODIFY"
 # Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.content_activity import ContentActivity
-from msgraph_beta.generated.models.process_content_request import ProcessContentRequest
-from msgraph_beta.generated.models.process_content_metadata_base import ProcessContentMetadataBase
-from msgraph_beta.generated.models.process_conversation_metadata import ProcessConversationMetadata
-from msgraph_beta.generated.models.activity_metadata import ActivityMetadata
-from msgraph_beta.generated.models.user_activity_type import UserActivityType
-from msgraph_beta.generated.models.integrated_application_metadata import IntegratedApplicationMetadata
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ContentActivity(
-	content_metadata = ProcessContentRequest(
-		content_entries = [
-			ProcessConversationMetadata(
-				odata_type = "microsoft.graph.processConversationMetadata",
-				identifier = "68fa951a-898a-4427-8e9e-6f8c05e9fe2b",
-				name = "API Explorer message",
-				correlation_id = "559a2343-7aa2-4912-93fe-72c47b2706ed",
-				is_truncated = False,
-				created_date_time = "2025-04-28T20:17:55",
-				modified_date_time = "2025-04-28T20:17:55",
-				additional_data = {
-						"sequence_no" : 0,
-				}
-			),
-		],
-		activity_metadata = ActivityMetadata(
-			activity = UserActivityType.UploadText,
-		),
-		integrated_app_metadata = IntegratedApplicationMetadata(
-			name = "API Explorer",
-			version = "0.1",
-		),
-		additional_data = {
-				"device_metadata" : {
-						"device_type" : "unmanaged",
-						"operating_system_specifications" : {
-								"operating_system_platform" : "Windows 11",
-								"operating_system_version" : "10.0.26100.0",
+	additional_data = {
+			"content_to_process" : {
+					"content_entries" : [
+						{
+								"@odata_type" : "microsoft.graph.processConversationMetadata",
+								"identifier" : "07785517-9081-4fe7-a9dc-85bcdf5e9075",
+								"name" : "PC Purview API Explorer message",
+								"correlation_id" : "d63eafd2-e3a9-4c1a-b726-a2e9b9d9580d",
+								"sequence_number" : 0,
+								"is_truncated" : False,
+								"created_date_time" : "2025-05-27T17:23:20",
+								"modified_date_time" : "2025-05-27T17:23:20",
 						},
-				},
-				"user_id" : "7c2f8f10-cba8-4a8d-9449-db4b76d17390",
-				"scope_identifier" : "0",
-		}
-	),
+					],
+					"activity_metadata" : {
+							"activity" : "uploadText",
+					},
+					"device_metadata" : {
+							"operating_system_specifications" : {
+									"operating_system_platform" : "Windows 11",
+									"operating_system_version" : "10.0.26100.0",
+							},
+							"ip_address" : "127.0.0.1",
+					},
+					"protected_app_metadata" : {
+							"name" : "PC Purview API Explorer",
+							"version" : "0.2",
+							"application_location" : {
+									"@odata_type" : "microsoft.graph.policyLocationApplication",
+									"value" : "83ef208a-0396-4893-9d4f-d36efbffc8bd",
+							},
+					},
+					"integrated_app_metadata" : {
+							"name" : "PC Purview API Explorer",
+							"version" : "0.2",
+					},
+			},
+	}
 )
 
 result = await graph_client.me.data_security_and_governance.activities.content_activities.post(request_body)

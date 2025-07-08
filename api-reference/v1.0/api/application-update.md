@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
 ms.date: 05/23/2025
+ms.custom: sfi-ropc-nochange
 ---
 
 # Update application
@@ -25,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "application_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-update-permissions.md)]
+
+[!INCLUDE [rbac-application-apis-write](../includes/rbac-for-apis/rbac-application-apis-write.md)]
 
 ## HTTP request
 

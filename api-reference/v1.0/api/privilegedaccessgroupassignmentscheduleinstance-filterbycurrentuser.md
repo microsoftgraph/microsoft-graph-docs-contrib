@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupAssignmentScheduleInstance: filterByCurrentUser"
-description: "In PIM for groups, retrieve the schedule instances for membership or ownership assignments for the calling principal to groups that are governed by PIM."
+description: "In PIM for Groups, retrieve the schedule instances for membership or ownership assignments for the calling principal to groups that are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -11,7 +11,7 @@ ms.date: 06/25/2024
 # privilegedAccessGroupAssignmentScheduleInstance: filterByCurrentUser
 Namespace: microsoft.graph
 
-In PIM for groups, retrieve the schedule instances for membership or ownership assignments for the calling principal to groups that are governed by PIM.
+In PIM for Groups, retrieve the schedule instances for membership or ownership assignments for the calling principal to groups that are governed by PIM.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "deviceMetadata resource type (preview)"
+title: "deviceMetadata resource type"
 description: "Contains details about the device involved in a session, including type and OS specifications."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -20,8 +20,9 @@ Contains details about the device involved in a session, including type and OS s
 
 | Property                    | Type                                                                                                               | Description                                       |
 | :-------------------------- | :----------------------------------------------------------------------------------------------------------------- | :------------------------------------------------ |
-| deviceType                  | String                                                                                                             | The general type of the device (for example, "Managed", "Unmanaged", "Unknown"). |
-| operatingSystemSpecifications | [operatingSystemSpecifications](../resources/operatingsystemspecifications.md) | Details about the operating system platform and version. |
+| deviceType                  | String                                                                                                             | Optional. The general type of the device (for example, "Managed", "Unmanaged"). |
+| operatingSystemSpecifications | [operatingSystemSpecifications](../resources/operatingsystemspecifications.md)                                   | Details about the operating system platform and version. |
+| ipAddress                   | String                                                                                                             | The Internet Protocol (IP) address of the device. |
 
 ## Relationships
 
@@ -41,6 +42,7 @@ The following JSON representation shows the resource type.
   "deviceType": "String",
   "operatingSystemSpecifications": {
     "@odata.type": "microsoft.graph.operatingSystemSpecifications"
-  }
+  },
+  "ipAddress": "String"
 }
 ```

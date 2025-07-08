@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: apiPageType
 ms.date: 12/03/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Update copilotAdminLimitedMode

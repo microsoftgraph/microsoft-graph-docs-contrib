@@ -8,8 +8,7 @@ ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: entra-applications
 ms.date: 10/30/2024
-ms.custom: graphiamtop20, scenarios:getting-started
-
+ms.custom: graphiamtop20, scenarios:getting-started, sfi-ga-nochange
 #customer intent: As a developer integrating with Microsoft Graph, I want to learn about using Microsoft Graph permissions, so that I can properly request and manage permissions for my app.
 ---
 
