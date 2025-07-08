@@ -4,7 +4,7 @@ description: "Delete a floor object."
 author: tiwarisakshi02
 ms.date: 06/09/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -65,11 +65,9 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/floor
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
