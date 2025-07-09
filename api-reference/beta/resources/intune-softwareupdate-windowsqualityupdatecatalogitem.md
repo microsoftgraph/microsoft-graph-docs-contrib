@@ -43,6 +43,7 @@ Inherits from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-wind
 |qualityUpdateCadence|[windowsQualityUpdateCadence](../resources/intune-softwareupdate-windowsqualityupdatecadence.md)|The publishing cadence of the quality update. Possible values are: monthly, outOfBand. This property cannot be modified and is automatically populated when the catalog is created. Read-only. Possible values are: `monthly`, `outOfBand`, `unknownFutureValue`.|
 |isExpeditable|Boolean|When TRUE, indicates that the quality updates qualify for expedition. When FALSE, indicates the quality updates do not quality for expedition. Default value is FALSE. Read-only|
 |productRevisions|[windowsQualityUpdateCatalogProductRevision](../resources/intune-softwareupdate-windowsqualityupdatecatalogproductrevision.md) collection|The operating system product revisions that are released as part of this quality update. Read-only.|
+|qualityUpdateSeverityInformation|[windowsQualityUpdateCatalogItemSeverityInformation](../resources/intune-softwareupdate-windowsqualityupdatecatalogitemseverityinformation.md)|CVE information for catalog items|
 
 ## Relationships
 None
@@ -86,6 +87,18 @@ Here is a JSON representation of the resource.
         "articleUrl": "String"
       }
     }
-  ]
+  ],
+  "qualityUpdateSeverityInformation": {
+    "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemSeverityInformation",
+    "maxSeverity": "String",
+    "maxBaseScore": "4.2",
+    "exploitedCves": [
+      {
+        "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemExploitedCve",
+        "number": "String",
+        "url": "String"
+      }
+    ]
+  }
 }
 ```

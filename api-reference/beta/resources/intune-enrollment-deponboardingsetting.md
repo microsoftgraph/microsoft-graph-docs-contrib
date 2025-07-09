@@ -33,6 +33,7 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |[shareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|None||
 |[unshareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|None||
 |[getExpiringVppTokenCount function](../api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount.md)|Int32||
+|[releaseAppleDevices action](../api/intune-enrollment-deponboardingsetting-releaseappledevices.md)|None||
 
 ## Properties
 |Property|Type|Description|

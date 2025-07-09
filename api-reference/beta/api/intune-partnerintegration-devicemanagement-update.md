@@ -12,11 +12,11 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [deviceManagement](../resources/intune-enrollment-devicemanagement.md) object.
+Update the properties of a [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -45,18 +45,18 @@ PATCH /deviceManagement
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-enrollment-devicemanagement.md) object.
+In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object.
 
-The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-enrollment-devicemanagement.md).
+The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The GUID for the object.|
+|id|String|Key of the entity.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-enrollment-devicemanagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object in the response body.
 
 ## Example
 

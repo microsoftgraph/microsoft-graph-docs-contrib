@@ -37,7 +37,6 @@ Role Scope Tag
 |displayName|String|The display or friendly name of the Role Scope Tag.|
 |description|String|Description of the Role Scope Tag.|
 |isBuiltIn|Boolean|Description of the Role Scope Tag. This property is read-only.|
-|permissions|String collection|Permissions associated with the Role Scope Tag. This property is read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -58,9 +57,6 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
-  "isBuiltIn": true,
-  "permissions": [
-    "String"
-  ]
+  "isBuiltIn": true
 }
 ```

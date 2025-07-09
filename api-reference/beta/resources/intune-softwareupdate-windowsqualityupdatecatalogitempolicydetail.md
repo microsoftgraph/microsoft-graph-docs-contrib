@@ -22,7 +22,7 @@ Class to describe quality update policy's approval detail for specific catalog i
 |Property|Type|Description|
 |:---|:---|:---|
 |policyId|Guid|Policy Id for this approval intend|
-|catalogItemId|Guid|Catalog item id for this approval intend|
+|catalogItemId|String|Catalog item id for this approval intend|
 |approvalStatus|[windowsQualityUpdateApprovalStatus](../resources/intune-softwareupdate-windowsqualityupdateapprovalstatus.md)|Approval status for this approval intend. Possible values are: `unknown`, `approved`, `suspended`, `unknownFutureValue`.|
 
 ## Relationships
@@ -39,7 +39,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItemPolicyDetail",
   "policyId": "Guid",
-  "catalogItemId": "Guid",
+  "catalogItemId": "String",
   "approvalStatus": "String"
 }
 ```

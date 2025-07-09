@@ -26,9 +26,9 @@ Product Status of Windows Defender
 |serviceStartedWithoutMalwareProtection|2|Service started without any malware protection engine|
 |pendingFullScanDueToThreatAction|4|Pending full scan due to threat action|
 |pendingRebootDueToThreatAction|8|Pending reboot due to threat action|
-|pendingManualStepsDueToThreatAction|16|Pending manual steps due to threat action |
-|avSignaturesOutOfDate|32|AV signatures out of date|
-|asSignaturesOutOfDate|64|AS signatures out of date|
+|pendingManualStepsDueToThreatAction|16|Pending manual steps due to threat action|
+|avSignaturesOutOfDate|32|Antivirus (AV) signatures out of date|
+|asSignaturesOutOfDate|64|Antisypware (AS) signatures out of date|
 |noQuickScanHappenedForSpecifiedPeriod|128|No quick scan has happened for a specified period|
 |noFullScanHappenedForSpecifiedPeriod|256|No full scan has happened for a specified period|
 |systemInitiatedScanInProgress|512|System initiated scan in progress|

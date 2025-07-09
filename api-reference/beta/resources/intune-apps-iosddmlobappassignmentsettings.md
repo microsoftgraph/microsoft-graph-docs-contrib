@@ -1,6 +1,6 @@
 ---
 title: "iosDdmLobAppAssignmentSettings resource type"
-description: "Contains properties used to assign an iOS Store mobile app to a group."
+description: "Contains properties used to assign an iOS iOS Declarative Device Management (DDM) Line Of Business (LOB) mobile app to a group."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Contains properties used to assign an iOS Store mobile app to a group.
+Contains properties used to assign an iOS iOS Declarative Device Management (DDM) Line Of Business (LOB) mobile app to a group.
 
 
 Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)

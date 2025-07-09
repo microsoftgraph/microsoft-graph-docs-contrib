@@ -52,6 +52,8 @@ Singleton entity that acts as a container for all reports functionality.
 |[getCompliancePolicyNonComplianceReport action](../api/intune-reporting-devicemanagementreports-getcompliancepolicynoncompliancereport.md)|Stream||
 |[getComplianceSettingNonComplianceReport action](../api/intune-reporting-devicemanagementreports-getcompliancesettingnoncompliancereport.md)|Stream||
 |[retrieveAndroidWorkProfileDeviceMigrationStatuses action](../api/intune-reporting-devicemanagementreports-retrieveandroidworkprofiledevicemigrationstatuses.md)|Stream||
+|[retrieveAppleOSUpdateFailures action](../api/intune-reporting-devicemanagementreports-retrieveappleosupdatefailures.md)|Stream||
+|[retrieveAppleDeviceOSUpdateStatus action](../api/intune-reporting-devicemanagementreports-retrieveappledeviceosupdatestatus.md)|Stream||
 |[getCachedReport action](../api/intune-reporting-devicemanagementreports-getcachedreport.md)|Stream||
 |[getHistoricalReport action](../api/intune-reporting-devicemanagementreports-gethistoricalreport.md)|Stream||
 
