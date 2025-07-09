@@ -160,7 +160,7 @@ The **title** property doesn't specify exact matching. If nothing is specified, 
 
 A semantic label is a well-known tag published by Microsoft that you can add against a property in your schema. When building a custom Copilot connector using the Microsoft Graph API, applying semantic labels to your schema properties is essential. These labels help Microsoft 365 Copilot and Microsoft Search understand the meaning and role of each property, enabling better search, summarization, and user experience.   
 
-You can assign semantic labels to your source properties on the Assign property labels page. Labels provide semantic meaning and let you integrate your connector data into Microsoft 365 experiences. 
+You can assign semantic labels to your source properties on the assign property labels page. Labels provide semantic meaning and let you integrate your connector data into Microsoft 365 experiences. 
 
 Let's consider some of the project management tools like JIRA, Azure DevOps, Asana, etc. For the user who created a feature or work item, each of these platforms might use different terms like owner, ownedBy, assignedTo, etc. So, if you have a property that is intended for a similar purpose, you can use the ‘createdby’ semantic label.   
 
@@ -186,25 +186,26 @@ Add as many labels as you can, but ensure that they are accurately mapped to pro
 > [!IMPORTANT]
 > You must mark properties as retrievable before mapping them to labels.
 
-The label **title** is the most important label. Make sure that you assign a property to this label to allow your connection to participate in the result cluster experience. Incorrectly mapping labels degrades the search experience. It's okay for some labels to not have a property assigned to them.
+**Title** is the most important label. Make sure that you assign a property to this label to allow your connection to participate in the result cluster experience. Incorrect mappings degrade the search experience. It's okay for some labels not to have a property assigned to them.
 
 ### Relevance
+
 By applying as many accurately mapped labels as possible, you can also improve the discovery of your content through search. Microsoft recommends defining as many of the following labels as possible, listed in descending order of their potential impact on discovery: title, lastModifiedDateTime, lastModifiedBy, url, fileName, and fileExtension.
   
-Ensure that your mappings are accurate. When you use a property as a label for a property that contains large content, you might increase search latency and have to wait longer for search to return results. 
+Make sure that your mappings are accurate. When you use a property as a label for a property that contains large content, you might increase search latency and have to wait longer for search to return results. 
 
 ### Rank hints 
 
 Rank hints can be applied to textual properties that aren't mapped to semantic labels and are set as searchable. They can be set in a range from **default** to **very high** in the Search admin portal. The hints are consumed with other attributes of each item to return the most relevant items for a given query. 
 
-Use the following steps to set rank hints:
+To set rank hints:
 
 1. Go to the **Search and intelligence** tab in the admin portal.
 2. Select **Customization** > **Relevance tuning**.
 
   ![Screenshot of the Search and intelligence tab with Relevance Tuning highlighted](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/6f58a0b7-a558-4709-803b-fcbae9cb4eb3)
 
-3. To see a list of connections that can be tuned, choose **View Details** > **Configure rank hints**.  
+3. To see a list of connections that can be tuned, choose **View details** > **Configure rank hints**.  
 
   ![Screenshot of the Relevance tuning tab with Configure rank hints highlighted](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/7472fceb-6062-4079-8205-ce165ff12788)
 
@@ -222,11 +223,11 @@ Labels also affect how default result types are generated. Adding the title and 
 
 Your default result type provides a better experience when you define these labels, when applicable, listed in ascending order: title, url, lastModifiedBy, lastModifiedDateTime, fileName, and fileExtension.
 
-When assigning labels, ensure:
+When assigning labels, validate the following:
 
 - The properties that you select to function as labels need to be marked as retrievable.
 - The properties and their assigned labels must have the same datatype.
-- You can map exactly one label to exactly one property.
+- Map one label to exactly one property.
 
 ### Aliases 
 
