@@ -34,7 +34,8 @@ The following table represents an example of a possible schema for a work ticket
 
 For schema object and API reference, see the [schema](/graph/api/resources/externalconnectors-schema) section in the [Copilot Connector API reference](/graph/api/resources/connectors-api-overview).
 
-## Description and best practices for each schema attribute
+## Schema attributes
+This section provides descriptions for each schema attribute and best practices on how to use them. 
 
 ### Property 
 
