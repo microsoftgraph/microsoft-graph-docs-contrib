@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ms.date: 10/17/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Get conditionalAccessTemplate

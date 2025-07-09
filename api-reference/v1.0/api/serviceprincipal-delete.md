@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-delete-permissions.md)]
 
+[!INCLUDE [rbac-serviceprincipal-apis-write](../includes/rbac-for-apis/rbac-serviceprincipal-apis-write.md)]
+
 ## HTTP request
 
 You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.

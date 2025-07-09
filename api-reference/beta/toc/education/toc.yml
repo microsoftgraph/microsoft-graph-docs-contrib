@@ -320,6 +320,12 @@ items:
     href: ../../resources/readingassignmentsubmission.md
   - name: Get
     href: ../../api/readingassignmentsubmission-get.md
+- name: Reading Coach passage
+  items:
+  - name: Reading Coach passage
+    href: ../../resources/readingcoachpassage.md
+  - name: List
+    href: ../../api/reportsroot-list-readingcoachpassages.md
 - name: Reflect check-in response
   items:
   - name: Reflect check-in response
