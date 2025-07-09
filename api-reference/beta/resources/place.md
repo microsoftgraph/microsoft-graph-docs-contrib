@@ -59,7 +59,7 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |Property |Type |Description |
 |:--|:--|:--|
 |address |[physicalAddress](./physicaladdress.md) |The physical address of the **place**, including the street, city, state, country or region, and postal code. |
-|description |String |User-defined description of the **place**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) |
+|label |String |User-defined description of the **place**.|
 |displayName |String |The name that is associated with the **place**. |
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates. |
 |id |String |A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. |
