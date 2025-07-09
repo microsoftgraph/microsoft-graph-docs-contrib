@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Access package assignment request workflow callback that defines a custom extension endpoint callback that is derived from [customextensiondata](../resources/customextensiondata.md). The following type is derived from this abstract type:
+Access package assignment request workflow callback that defines a custom extension endpoint callback that is derived from [customextensiondata](../resources/customextensiondata.md). The following type is derived from this type:
 
 - [assignmentRequestApprovalStageCallbackData](../resources/assignmentrequestapprovalstagecallbackdata.md)
 
