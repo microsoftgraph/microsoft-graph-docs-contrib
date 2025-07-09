@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md) object. The **isCloudManaged** property indicates whether the object’s source of authority is set to the cloud.
-
+Read the properties and relationships of an [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md) object. The **isCloudManaged** property indicates whether the object’s source of authority is set to the cloud. If `true`, updates from on-premises Active Directory are blocked; if `false`, updates from Microsoft Entra ID are blocked;
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

@@ -55,7 +55,7 @@ PATCH /groups/{groupsId}/onPremisesSyncBehavior
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isCloudManaged|Boolean|Indicates whether the object’s source of authority is set to the cloud. If `true`, updates from on-premises Active Directory are blocked; if `false`, updates from cloud Active Directory are blocked; |
+|isCloudManaged|Boolean|Indicates whether the object’s source of authority is set to the cloud. If `true`, updates from on-premises Active Directory are blocked; if `false`, updates from Microsoft Entra ID are blocked; |
 
 
 
