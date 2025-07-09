@@ -1728,7 +1728,7 @@ The following example shows a request.
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/chats/19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2/messages
-Content-type: application/json
+Content-Type: application/json
 
 {
   "body": {
@@ -1760,7 +1760,7 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('5c884e2f-83f8-4cff-af8e-0177f260b9f8')/channels('19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2')/messages/$entity",
