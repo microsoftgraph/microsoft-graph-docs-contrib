@@ -116,7 +116,7 @@ Mark a property as **retrievable** if its value should be returned in search res
 
 *A set of retrievable properties (`title` and `lastEditedBy`) rendered as a result.*
 
-Mark a property as retrievable if:
+**Mark a property as retrievable if:**
 
 - You want it to be **visible in search results**.
 - It provides **contextual information** (e.g., title, status, assigned user).
@@ -139,7 +139,7 @@ When a property is refinable:
 - It appears as a **refiner control** (e.g., dropdown or checkbox) in the UI.
 - It supports **aggregation** in search queries.
 
-** Mark a property as refinable if:**
+**Mark a property as refinable if:**
 
 - It represents **categorical or structured data**.
 - You want users to **filter or group** results by these values.
