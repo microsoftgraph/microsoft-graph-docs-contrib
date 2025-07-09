@@ -2063,54 +2063,54 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('5c884e2f-83f8-4cff-af8e-0177f260b9f8')/channels('19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2')/messages/$entity",
-    "id": "1675104302171",
-    "replyToId": null,
-    "etag": "1675104302171",
-    "messageType": "message",
-    "createdDateTime": "2023-01-30T18:45:02.171Z",
-    "lastModifiedDateTime": "2023-01-30T18:45:02.171Z",
-    "lastEditedDateTime": null,
-    "deletedDateTime": null,
-    "subject": "Announcement Subheading",
-    "summary": null,
-    "chatId": null,
-    "importance": "normal",
-    "locale": "en-us",
-    "webUrl": "https://teams.microsoft.com/l/message/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/1675104302171?groupId=5c884e2f-83f8-4cff-af8e-0177f260b9f8&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1675104302171&parentMessageId=1675104302171",
-    "onBehalfOf": null,
-    "policyViolation": null,
-    "eventDetail": null,
-    "from": {
-        "application": null,
-        "device": null,
-        "user": {
-            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": "Adele Vance",
-            "userIdentityType": "aadUser"
-        }
-    },
-    "body": {
-        "contentType": "text",
-        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
-    },
-    "channelIdentity": {
-        "teamId": "5c884e2f-83f8-4cff-af8e-0177f260b9f8",
-        "channelId": "19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2"
-    },
-    "attachments": [
-		{
-			"id": "74d20c7f34aa4a7fb74e2b30004247c5",
-			"contentType": "application/vnd.microsoft.card.fluidEmbedCard",
-			"contentUrl": null,
-			"content": "{\"componentUrl\": \"{LoopComponent_url}\", \"sourceType\": \"Compose\"}",
-			"name": null,
-			"thumbnailUrl": null,
-			"teamsAppId": "FluidEmbedCard"
-		}
-	],  
-    "mentions": [],
-    "reactions": []
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('5c884e2f-83f8-4cff-af8e-0177f260b9f8')/channels('19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2')/messages/$entity",
+  "id": "1675104302171",
+  "replyToId": null,
+  "etag": "1675104302171",
+  "messageType": "message",
+  "createdDateTime": "2023-01-30T18:45:02.171Z",
+  "lastModifiedDateTime": "2023-01-30T18:45:02.171Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": "Announcement Subheading",
+  "summary": null,
+  "chatId": null,
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": "https://teams.microsoft.com/l/message/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/1675104302171?groupId=5c884e2f-83f8-4cff-af8e-0177f260b9f8&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1675104302171&parentMessageId=1675104302171",
+  "onBehalfOf": null,
+  "policyViolation": null,
+  "eventDetail": null,
+  "from": {
+    "application": null,
+    "device": null,
+    "user": {
+      "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+      "displayName": "Adele Vance",
+      "userIdentityType": "aadUser"
+    }
+  },
+  "body": {
+    "contentType": "text",
+    "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+  },
+  "channelIdentity": {
+    "teamId": "5c884e2f-83f8-4cff-af8e-0177f260b9f8",
+    "channelId": "19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2"
+  },
+  "attachments": [
+    {
+      "id": "74d20c7f34aa4a7fb74e2b30004247c5",
+      "contentType": "application/vnd.microsoft.card.fluidEmbedCard",
+      "contentUrl": null,
+      "content": "{\"componentUrl\": \"{LoopComponent_url}\", \"sourceType\": \"Compose\"}",
+      "name": null,
+      "thumbnailUrl": null,
+      "teamsAppId": "FluidEmbedCard"
+    }
+  ],
+  "mentions": [],
+  "reactions": []
 }
 ```
 
