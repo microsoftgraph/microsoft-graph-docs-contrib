@@ -1,6 +1,6 @@
 ---
 title: "externalCertificateAuthorityCertificate resource type"
-description: "Represents a customer's Certificate Authority (CA) certificate used for TLS inspection in Microsoft Entra Global Secure Access. This enables secure TLS termination at the edge while using customer-managed certificates for traffic inspection."
+description: "Represents a customer's Certificate Authority (CA) certificate used for TLS inspection in Global Secure Access. This enables secure TLS termination at the edge while using customer-managed certificates for traffic inspection."
 author: "sisharm"
 ms.date: 05/23/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a customer's Certificate Authority (CA) certificate used for TLS inspection in Microsoft Entra Global Secure Access. This resource enables secure TLS termination at the edge while using customer-managed certificates for traffic inspection. When creating a new CA, the service generates a Certificate Signing Request (CSR) that customers can sign using their PKI infrastructure, providing a secure way to use customer certificates without sharing private keys.
+Represents a customer's Certificate Authority (CA) certificate used for TLS inspection in Global Secure Access. This resource enables secure TLS termination at the edge while using customer-managed certificates for traffic inspection. When creating a new CA, the service generates a Certificate Signing Request (CSR) that customers can sign using their PKI infrastructure, providing a secure way to use customer certificates without sharing private keys.
 
 
 Inherits from [entity](../resources/entity.md)

@@ -6,6 +6,7 @@ ms.date: 05/23/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
 doc_type: resourcePageType
+toc.title: Policy rule
 ---
 
 # tlsInspectionRule resource type

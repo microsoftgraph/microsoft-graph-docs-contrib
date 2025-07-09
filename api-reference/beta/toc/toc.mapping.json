@@ -1990,7 +1990,7 @@
               ]
             },
             {
-              "name": "TLS Inspection",
+              "name": "TLS inspection",
               "resources": [
                 "microsoft.graph.networkaccess.externalCertificateAuthorityCertificate",
                 "microsoft.graph.networkaccess.tlsInspectionPolicy",
