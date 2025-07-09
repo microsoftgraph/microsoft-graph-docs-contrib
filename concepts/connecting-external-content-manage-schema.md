@@ -11,11 +11,11 @@ ms.date: 11/07/2024
 
 # Register and manage schema for the Microsoft 365 Copilot connectors  
 
-This guide provides information on setting the schema and best practices for Microsoft 365 Copilot connectors. 
+This guide provides guidance on defining schemas and following best practices for Microsoft 365 Copilot connectors.
 
-The connection [schema](/graph/api/resources/externalconnectors-schema) determines how your content is used in various Microsoft 365 Copilot experiences. The schema is a flat list of all the properties you plan to add to the connection, with each property including attributes, labels, and aliases. You must register the schema before adding items to the connection. The attributes of a schema include property, type, searchable, retrievable, refinable, exact match required, labels, and aliases.
+The connection [schema](/graph/api/resources/externalconnectors-schema) defines how your content is used across Microsoft 365 Copilot experiences. A schema is a flat list of all the properties you plan to add to the connection. Each property includes attributes, labels, and aliases. You must register the schema before adding items to the connection.
 
-The following table represents an example of a possible schema for a work ticket system connector.
+The following table shows an example schema for a work ticket system connector:
 
 | Property       | Type             | Searchable         | Queryable          | Retrievable        | Refinable          | Exact match required | Labels               | Aliases    |
 |----------------|------------------|--------------------|--------------------|--------------------|--------------------|----------------------|----------------------|------------|
@@ -35,36 +35,39 @@ The following table represents an example of a possible schema for a work ticket
 For schema object and API reference, see the [schema](/graph/api/resources/externalconnectors-schema) section in the [Copilot Connector API reference](/graph/api/resources/connectors-api-overview).
 
 ## Schema attributes
-This section provides descriptions for each schema attribute and best practices on how to use them. 
+
+This section describes each schema attribute and provides best practices for using them.
 
 ### Property 
 
 This attribute refers to the name of the property.  
-The following best practices should be considered when choosing property names.  
 
-- Use understandable and unique names—make sure property names are clear, distinct, and easily interpretable by both users and systems. Avoid ambiguous or overly similar names, such as **orgName**, **brOrgName**, and **tpOrgName**. Instead, opt for descriptive names like **parentOrganizationName** or **departmentName**. It helps Copilot understand the property that is related to your query.
-- Avoid complex names—simplify overly technical or cryptic names, such as **dataBlob** or **ftxInvIsLead**. Instead, use meaningful names like **incidentRootCause**,**QualifiedSalesLead**, etc. Thus making them more comprehensible and aligned with user queries and search terms.
-- Add property descriptions to help Copilot understand your property better and match relevant queries.
+**Best practices:**
+
+- **Use clear and unique names** – Ensure property names are easy to understand and distinguish. Avoid ambiguous names like `orgName`, `brOrgName`, or `tpOrgName`. Instead, use descriptive names such as `parentOrganizationName` or `departmentName` to help Copilot interpret the property correctly.
+- **Avoid overly technical or cryptic names** – Replace names like `dataBlob` or `ftxInvIsLead` with meaningful alternatives like `incidentRootCause` or `qualifiedSalesLead` to improve readability and relevance to user queries.
+- **Add property descriptions** – Descriptions help Copilot better understand and match properties to user queries.
 
 > [!NOTE]
-> Support for adding property descriptions for custom connectors is expected to be available in Q4 of 2025.
-> When using declarative agents (DA), add the description of the properties to the DA instruction set. 
+> Support for adding property descriptions to custom connectors is expected in Q4 2025.  
+> When using declarative agents (DA), include property descriptions in the DA instruction set.
 
 ### Searchable
-If a property is searchable, its value is added to the full text index. So when a user searches on Copilot, results are returned if there is a match with one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
+When a property is marked as searchable, its value is added to the full-text index. This allows Copilot to return results when a user’s query matches the property or its [content](connecting-external-content-manage-items.md#content).
 
-Mark a property as searchable if: 
-- It contains **textual data** that users might search for. 
-- It's **relevant to search queries** (for example, titles, descriptions, tags). 
-- You want them to contribute to **search hits** and **snippet generation**. 
+**Mark a property as searchable if:**
 
-Some common examples are **title**, **description**, **tags**, **createdBy**, and **assignedTo**.
+- It contains **textual data** users are likely to search for.
+- It’s **relevant to search queries** (e.g., titles, descriptions, tags).
+- You want it to contribute to **search hits** and **snippet generation**.
 
-Some best practices to consider when marking a property as searchable include:
+**Common examples:** `title`, `description`, `tags`, `createdBy`, `assignedTo`.
 
-- Avoid marking large binary fields as searchable. 
-- Don't mark refinable fields as searchable— refinable and searchable are mutually exclusive. 
-- Don't mark all fields as searchable. Limit the searchable attribute to properties whose contents need to be searched to get relevant results. 
+**Best practices:**
+
+- Avoid marking large binary fields as searchable.
+- Don’t mark refinable fields as searchable—these attributes are mutually exclusive.
+- Only mark properties as searchable if they are essential for search relevance.
 
 <!-- markdownlint-disable MD036 -->
 ![A search for "design" displaying results for hits against the property title and content.](./images/connectors-images/connecting-external-content-manage-items-schema-1.png)
@@ -72,98 +75,114 @@ Some best practices to consider when marking a property as searchable include:
 *A search for `design` displays results for hits against the property (`title`) and content.*
 
 ### Queryable
-Mark a property as queryable if users need to filter their search results based on specific values. For example, properties such as **ticketId**, **teamName**, or **created** can be queryable. When you query something like `tickets created by William`, Copilot can filter out only the tickets created by the said user and display them. Prefix matching with wildcard operators (`*`) can further enhance search flexibility. 
 
-Mark a property as queryable if: 
-- They're used for **filtering or narrowing down search results**. 
-- They represent **categorical or structured data** (for example, status, priority, assigned user). 
-- You want to support **custom search experiences** or **faceted navigation**. 
+Mark a property as **queryable** if users need to filter their search results based on specific values. For example, properties such as `ticketId`, `teamName`, or `created` can be queryable. When a user queries something like `tickets created by William`, Copilot can filter and return only the relevant tickets. Prefix matching with wildcard operators (`*`) can further enhance search flexibility.
 
-Some common examples include **status** (for example, open, closed), **assignedTo** (for example, userEmail or ID), **priority** (for example, high, medium, low), and category or type.
+**Mark a property as queryable if:**
 
-Some best practices to consider when marking a property as queryable include:
-- Avoid marking large text fields (like descriptions) as queryable. 
-- Combine queryable with retrievable so the property can be used and shown in the results. 
-- Use refinable if you want the property to appear as a **filter in the UI**. 
+- It’s used for **filtering or narrowing down search results**.
+- It represents **categorical or structured data** (for example, status, priority, assigned user).
+- You want to support **custom search experiences** or **faceted navigation**.
 
-In this case, queryable is set as true for the `Tags` property. 
+**Common examples:**  
+
+`status` (e.g., open, closed), `assignedTo` (e.g., userEmail or ID), `priority` (e.g., high, medium, low), `category`, or `type`.
+
+**Best practices:**
+
+- Avoid marking large text fields (like descriptions) as queryable.
+- Combine `Queryable: true` with `Retrievable: true` so the property can be used and shown in results.
+- Use `Refinable: true` if you want the property to appear as a **filter in the UI**.
+
+In this example, `tags` is marked as queryable:
 
 ![A search for "tags:design" scoping down results to items with "design" in the tags property.](./images/connectors-images/connecting-external-content-manage-items-schema-3.svg)
 
 *A search for `tags:design` scoping down results to items with `design` in the `tags` property.*
 
-If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of one or more free-text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator (`*`). 
+If a property is queryable, you can query against it using **KQL (Keyword Query Language)**. KQL supports free-text keywords and property restrictions. The property name must be included in the query, either explicitly or programmatically. Prefix matching with the wildcard operator (`*`) is supported.
 
-> [!NOTE]
+> [!NOTE]  
 > Suffix matching is not supported.
 
 ![A search for "search ba*" displaying results that match this prefix.](./images/connectors-images/connecting-external-content-manage-items-schema-2.svg)
 *A search for `search ba\*` displaying results that match this prefix.*
 
 ### Retrievable
-If a property is retrievable, its value can be returned in search results. Any property that should be shown on the display template or returned from the query must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose relevant properties.
+
+Mark a property as **retrievable** if its value should be returned in search results. Any property that appears in the display template or is returned from a query must be retrievable. Be selective—marking too many or large properties as retrievable can increase search latency.
 
 ![A set of retrievable properties rendered as a result.](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
 
 *A set of retrievable properties (`title` and `lastEditedBy`) rendered as a result.*
 
-Mark a property as retrievable if: 
-- You want them to be **visible in search results**. 
-- They are useful for **displaying context** (for example, title, status, assigned user). 
+Mark a property as retrievable if:
 
-Some common examples include **title**, **summary** or **description**, **status**, **assignedTo**, and **createdDateTime**.
+- You want it to be **visible in search results**.
+- It provides **contextual information** (e.g., title, status, assigned user).
 
-Some best practices to consider when marking a property as retrievable include:
-- Avoid marking sensitive or irrelevant fields as retrievable. 
-- Use `Retrievable: true` for fields shown in **search cards**, **Copilot prompts**, or **custom UI**. 
+**Common examples:**  
+`title`, `summary`, `description`, `status`, `assignedTo`, `createdDateTime`.
+
+**Best practices:**
+
+- Avoid marking sensitive or irrelevant fields as retrievable.
+- Use `Retrievable: true` for fields shown in **search cards**, **Copilot prompts**, or **custom UI**.
 
 ### Refinable
-If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. 
-The **Refinable** property allows a schema property to be used as a **filter** in Microsoft Search experiences. 
 
-When a property is marked as refinable,
-- It can be used to **narrow down search results**. 
-- It appears as a **refiner control** (like a dropdown or checkbox) in the search UI. 
-- It supports **aggregation** in search queries. 
+Mark a property as **refinable** if you want it to be used as a filter in Microsoft Search experiences. Refinable properties can be configured by admins to appear as custom filters on the search results page.
 
-Mark a property as refinable if: 
-- It represents **categorical or structured data**. 
-- You want users to **filter or group** search results by these values. 
+When a property is refinable:
 
-Some common examples include **tags** (for example, finance, HR, engineering), **status** (for example, open, closed, in Progress), **priority** (for example, high, medium, low), and **category** or **type**.
+- It can be used to **narrow down search results**.
+- It appears as a **refiner control** (e.g., dropdown or checkbox) in the UI.
+- It supports **aggregation** in search queries.
 
-Some best practices to consider while marking property as refinable are:
-- **Refinable properties cannot be searchable** — you must choose one or the other. 
-- Only **string or numeric types** can be refinable. 
-- Marking too many properties as refinable can **impact** performance.
+** Mark a property as refinable if:**
+
+- It represents **categorical or structured data**.
+- You want users to **filter or group** results by these values.
+
+**Common examples:**  
+`tags` (e.g., finance, HR, engineering), `status` (e.g., open, closed, in progress), `priority` (e.g., high, medium, low), `category`, `type`.
+
+**Best practices:**
+
+- **Refinable and searchable are mutually exclusive**—a property cannot be both.
+- Only **string or numeric types** can be refinable.
+- Marking too many properties as refinable can **impact performance**.
   
 ![Refine results by tags, a refinable property.](./images/connectors-images/connecting-external-content-manage-schema-5.svg)
 *Refine results by `tags`, a refinable property.*
 
 ### Exact match required
 
-If **isExactMatchRequired** is `true` for a property, the full string value is indexed. **isExactMatchRequired** can only be set to `true` for non-searchable properties.
+If `isExactMatchRequired` is set to `true` for a property, the full string value is indexed. This setting can **only** be applied to properties that are **not searchable**.
 
-For example, the **ticketId** property is both queryable and specifies exact matching.
-- Querying `ticketId:CTS-ce913b61` returns the item with a ticket ID property **CTS-ce913b61**.
-- Querying `ticketId:CTS` doesn't return the item with ticket ID **CTS-ce913b61**.
+For example, the `ticketId` property is both queryable and requires exact matching:
 
-Similarly, the **tags** property also specifies exact matching.
-- Querying `tags:contoso` returns any item with the tag **contoso**.
-- Querying `tags:contoso` doesn't return items with the tag **contoso ticket**.
+- Querying `ticketId:CTS-ce913b61` returns the item with ticket ID **CTS-ce913b61**.
+- Querying `ticketId:CTS` does **not** return the item with ticket ID **CTS-ce913b61**.
 
-For example, there might be a scenario where the item property is a GUID-formatted string. If this property must be matched exactly for item queries, specify that **isExactMatchRequired** is `true`.
+Similarly, the `tags` property also uses exact matching:
 
-The **title** property doesn't specify exact matching. If nothing is specified, then **isExactMatchRequired** is `false`. The **title** property is tokenized based on the tokenization rules of the language of the item content.
-- Querying `title: Contoso Title` returns any item that contains `Contoso` or `Title` in the **title** property.
+- Querying `tags:contoso` returns items with the tag **contoso**.
+- Querying `tags:contoso` does **not** return items with the tag **contoso ticket**.
+
+This is especially useful when the property contains values like GUIDs or other identifiers that must be matched exactly. In such cases, set `isExactMatchRequired` to `true`.
+
+If `isExactMatchRequired` is not specified, it defaults to `false`. For example, the `title` property does **not** require exact matching. It is tokenized based on the language rules of the item content:
+
+- Querying `title: Contoso Title` returns items that contain either `Contoso` or `Title` in the title.
 
 ### Semantic labels
 
-A semantic label is a well-known tag published by Microsoft that you can add against a property in your schema. When building a custom Copilot connector using the Microsoft Graph API, applying semantic labels to your schema properties is essential. These labels help Microsoft 365 Copilot and Microsoft Search understand the meaning and role of each property, enabling better search, summarization, and user experience.   
+A **semantic label** is a well-known tag published by Microsoft that you can assign to a property in your schema. When building a custom Copilot connector using the Microsoft Graph API, applying semantic labels is essential. These labels help Microsoft 365 Copilot and Microsoft Search understand the meaning and role of each property, improving search, summarization, and overall user experience.
 
-You can assign semantic labels to your source properties on the assign property labels page. Labels provide semantic meaning and let you integrate your connector data into Microsoft 365 experiences. 
+You can assign semantic labels using the Graph API or from the **Assign property labels** page when using the SDK. Labels provide semantic meaning and allow your connector data to integrate seamlessly into Microsoft 365 experiences.
 
-Let's consider some of the project management tools like JIRA, Azure DevOps, Asana, etc. For the user who created a feature or work item, each of these platforms might use different terms like owner, ownedBy, assignedTo, etc. So, if you have a property that is intended for a similar purpose, you can use the ‘createdby’ semantic label.   
+For example, different project management tools (like JIRA, Azure DevOps, Asana) may use different terms for the user who created a work item—such as `owner`, `ownedBy`, or `assignedTo`. If your property serves a similar purpose, you can assign the `createdBy` semantic label. 
 
 You can assign semantic labels to your source properties using the graph API or from the **Assign property labels** page while using sdk. Labels provide semantic meaning and let you integrate your connector data into Microsoft 365 experiences.  
 
@@ -182,31 +201,40 @@ You can assign semantic labels to your source properties using the graph API or 
 | containerName      | The name of the container. Ex: A project or OneDrive folder can be a container.                               | projectName, folderName, groupName             | 
 | containerUrl       | The URL of the container.                                                                                        | projectUrl, folderLink, groupPage              | 
 
-Add as many labels as you can, but ensure that they are accurately mapped to properties. Don't add a label to a property if it doesn't make sense. Incorrect mappings degrade the experience.
+**Best practices:**
 
-> [!IMPORTANT]
-> You must mark properties as retrievable before mapping them to labels.
+- Add as many labels as are relevant, but ensure they are accurately mapped.
+- Do **not** assign a label to a property if it doesn’t match its purpose—incorrect mappings degrade the experience.
 
-**Title** is the most important label. Make sure that you assign a property to this label to allow your connection to participate in the result cluster experience. Incorrect mappings degrade the search experience. It's okay for some labels not to have a property assigned to them.
+> [!IMPORTANT]  
+> Properties must be marked as **retrievable** before they can be mapped to labels.
+
+The `title` label is the most important. Assigning a property to this label enables your connection to participate in the **result cluster experience**. While not all labels need to be used, ensure that the ones you do assign are meaningful and accurate.
 
 ### Relevance
 
-By applying as many accurately mapped labels as possible, you can also improve the discovery of your content through search. Microsoft recommends defining as many of the following labels as possible, listed in descending order of their potential impact on discovery: title, lastModifiedDateTime, lastModifiedBy, url, fileName, and fileExtension.
-  
-Make sure that your mappings are accurate. When you use a property as a label for a property that contains large content, you might increase search latency and have to wait longer for search to return results. 
+Applying accurately mapped semantic labels improves the discoverability of your content through search. Microsoft recommends defining as many of the following labels as possible, listed in descending order of their impact on discovery:  
+**title**, **lastModifiedDateTime**, **lastModifiedBy**, **url**, **fileName**, and **fileExtension**.
+
+Ensure that your label mappings are accurate. Assigning a label to a property that contains large content may increase search latency and delay results.
 
 ### Rank hints 
 
-Rank hints can be applied to textual properties that aren't mapped to semantic labels and are set as searchable. They can be set in a range from **default** to **very high** in the Search admin portal. The hints are consumed with other attributes of each item to return the most relevant items for a given query. 
+Rank hints can be applied to textual properties that:
 
-To set rank hints:
+- Are **searchable**
+- Are **not mapped** to semantic labels
 
-1. Go to the **Search and intelligence** tab in the admin portal.
+Rank hints help prioritize certain properties in search results. You can set their importance from **default** to **very high** in the Microsoft 365 Search admin portal. These hints are used alongside other item attributes to return the most relevant results.
+
+To configure rank hints:
+
+1. Go to the **Search and intelligence** tab in the Microsoft 365 admin portal.
 2. Select **Customization** > **Relevance tuning**.
 
   ![Screenshot of the Search and intelligence tab with Relevance Tuning highlighted](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/6f58a0b7-a558-4709-803b-fcbae9cb4eb3)
 
-3. To see a list of connections that can be tuned, choose **View details** > **Configure rank hints**.  
+3. Under **Relevance tuning**, choose **View details** > **Configure rank hints**. 
 
   ![Screenshot of the Relevance tuning tab with Configure rank hints highlighted](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/7472fceb-6062-4079-8205-ce165ff12788)
 
@@ -214,27 +242,28 @@ To set rank hints:
 
   ![Screenshot of the Relevance tuning tab showing importance weights for a selected property](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/51f79ff9-5a1f-405c-86ba-2aad677fb95b)
 
-
 ### Default result types
 
-Labels also affect how default result types are generated. Adding the title and content labels at a minimum ensures that a result type is created for your connection.
+Semantic labels also influence how **default result types** are generated. At a minimum, assigning the `title` and `content` labels ensures that a result type is created for your connection.
+
 ![A default result type with title and a result snippet.](./images/connectors-images/connecting-external-content-manage-schema-6.svg)
 
 *A default result type with `title` and a result snippet.*
 
-Your default result type provides a better experience when you define these labels, when applicable, listed in ascending order: title, url, lastModifiedBy, lastModifiedDateTime, fileName, and fileExtension.
+To enhance the default result experience, define the following labels when applicable (listed in ascending order of impact):  
+**title**, **url**, **lastModifiedBy**, **lastModifiedDateTime**, **fileName**, and **fileExtension**.
 
-When assigning labels, validate the following:
+**Validation checklist for assigning labels:**
 
-- The properties that you select to function as labels need to be marked as retrievable.
-- The properties and their assigned labels must have the same datatype.
-- Map one label to exactly one property.
+- Properties assigned to labels must be marked as **retrievable**.
+- The **data type** of the property must match the expected type for the label.
+- Each label should be mapped to **exactly one property**.
 
 ### Aliases 
 
-Aliases are friendly names for properties that you assign. Aliases are used in queries and selections in refinable property filters. 
+**Aliases** are friendly names assigned to properties. They are used in queries and in refinable property filters to improve usability and query flexibility.
 
-The table shows some real examples.
+Here are some real-world examples:
 
 | Property    | Possible aliases              | Use case                                       | 
 |:-------------------|:------------------------------------|:----------------------------------------------------| 
@@ -244,24 +273,30 @@ The table shows some real examples.
 | filename          | documentName, fileName         | Users asking `Find file named report.docx`      | 
 | summary           | description, abstract          | Users asking `Give me a quick overview`            | 
 
-Some best practices to consider while adding aliases are:
+**Best practices for aliases:**
 
-- Use aliases for **common synonyms** or **domain-specific terms**. 
-- Avoid overly generic or ambiguous aliases. 
-- Keep aliases **short and intuitive**. 
+- Use aliases for **common synonyms** or **domain-specific terms**.
+- Avoid overly generic or ambiguous aliases.
+- Keep aliases **short and intuitive**.
 
 ### Content property 
 
 The **Microsoft Copilot connector schema** supports a **default property** called `content`. You do not have to define it in the schema like other properties (for example, title, tags, etc.). Instead, it is **directly included in the item payload** when you ingest data. 
 
-This content property is: 
-- Semantically indexed for text search. 
-- Used to generate dynamic snippets in search results. 
-- Available to Copilot for summarization and semantic understanding.
+The Microsoft Copilot connector schema includes a built-in `content` property. Unlike other properties (such as `title` or `tags`), you do **not** need to define it in the schema. Instead, it is **included directly in the item payload** during data ingestion.
 
-Some best practices to consider while using content property are:
-- Add any unstructured data to the content property to make Copilot do a semantic search on the content to match with your query.
-- To ensure semantic search functionality for unstructured or free-flowing content, add properties like **Summary**, **Comment**, **Root cause**, and **Description** to the `content` field. Additionally, retain these properties as separate retrievable entities only if their entire value needs to be retrieved and displayed for UI purposes. You can append multiple properties like `summary`, `description`, etc., to the content field. 
+The `content` property is:
+
+- Semantically indexed for **text search**.
+- Used to generate **dynamic snippets** in search results.
+- Available to Copilot for **summarization** and **semantic understanding**.
+
+**Best practices for using the content property:**
+
+- Add any **unstructured data** to the `content` property to enable Copilot to perform semantic search and match queries effectively.
+- For unstructured or free-form content, include properties like `summary`, `comment`, `rootCause`, and `description` in the `content` field.
+- Retain these properties as separate retrievable fields **only if** their full value needs to be displayed in the UI.
+- You can **append multiple properties** (e.g., `summary`, `description`) into the `content` field to enrich semantic understanding.
 
 A sample of how the `content` property is used while ingesting data: 
 ```json 
@@ -288,34 +323,48 @@ A sample of how the `content` property is used while ingesting data:
 }
 ``` 
 
-If you are using a declarative agent (DA), you can and should provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. It's useful because it helps the declarative agent understand the **semantic meaning** of each property, how to **reference and summarize** the data, and how to **respond to user queries** using the indexed content. 
+### Declarative agents and property descriptions
 
-Define well-formed property descriptions for all properties. It should indicate what the property is about, other names or terms for the property, when it should be used, etc. 
-  
+If you're using a **declarative agent (DA)**, you should include property descriptions from your **Copilot connector schema** in the **instruction set** provided to the agent. This helps the DA understand:
+
+- The **semantic meaning** of each property
+- How to **reference and summarize** the data
+- How to **respond to user queries** using the indexed content
+
+Define clear, well-formed descriptions for all properties. A good description should explain:
+
+- What the property represents
+- Any alternate names or terms
+- When and how it should be used
+
+
 ## Schema update capabilities
 
-This section includes information about the update capabilities for the [schema](/graph/api/resources/externalconnectors-schema) API.
+This section outlines the update capabilities of the [schema](/graph/api/resources/externalconnectors-schema) API.
 
-> [!NOTE]
-> We recommend that you reindex items after an update to bring them to the latest schema. Without reingestion, the behavior of the items is inconsistent.
+> [!NOTE]  
+> After updating your schema, we recommend reindexing items to align them with the latest schema. Without reingestion, item behavior may be inconsistent.
 
 ### Add a property
 
-You can add a property to your schema; doing so doesn't require re-ingestion, but we recommend it. When adding a property, you can include all the search attributes that you need.
+You can add a new property to your schema. While reingestion is not required, it is recommended. When adding a property, include all necessary search attributes.
 
-### Add/remove a search capability
+### Add or remove a search capability
 
-You can add specific search attributes to a property, but keep in mind that you can't add a refine search attribute as a schema change. Also, refinable attributes can't be used as searchable capabilities.
+You can modify search attributes for a property. However:
 
-Adding a search capability requires re-ingestion.
+- You **cannot** add a **refinable** attribute as part of a schema update.
+- A property **cannot** be both **searchable** and **refinable**.
+
+Adding or removing a search capability **requires reingestion**.
 
 ### Add or remove an alias
 
-You can add or remove aliases and use them for your search queries. The original alias of a refinable property can't be removed if it's autocreated by the system.
+You can add or remove aliases for use in search queries. However, aliases that were **autocreated by the system** for refinable properties **cannot be removed**.
 
-### Add/remove a semantic label
+### Add or remove a semantic label
 
-Adding a semantic label can affect experiences like Relevance and Viva Topics.
+You can assign or remove semantic labels. These labels influence experiences such as **Relevance** and **Viva Topics**.
 
 ## Next steps
 
