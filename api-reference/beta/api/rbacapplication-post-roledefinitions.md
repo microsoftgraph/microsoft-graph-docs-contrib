@@ -20,7 +20,7 @@ Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) obje
 The following RBAC providers are currently supported:
 - Cloud PC
 - device management (Intune)
-- Defender (Microsoft Security Defender Unified RBAC)
+- Defender (Microsoft Defender XDR)
 - directory (Microsoft Entra ID)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -60,6 +60,7 @@ To create a role definition for a device management provider:
 ```http
 POST /roleManagement/deviceManagement/roleDefinitions
 ```
+
 To create a role definition for a Defender provider:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -312,7 +313,7 @@ Content-type: application/json
 }
 ```
 
-## Example 3：Create a custom role for a defender provider
+## Example 3: Create a custom role for a Defender provider
 
 ### Request
 

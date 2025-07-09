@@ -1,6 +1,6 @@
 ---
 title: "Dictionary resource type"
-description: "A dictionary"
+description: "A dictionary."
 author: "adsela"
 ms.date: 03/03/2025
 ms.localizationpriority: medium
@@ -14,13 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A dictionary
-
-This resource is an open type.
+A dictionary. This resource is an open type.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

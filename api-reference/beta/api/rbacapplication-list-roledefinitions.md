@@ -20,7 +20,7 @@ Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) obj
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
-- Defender (Microsoft Security Defender Unified RBAC)
+- Defender (Microsoft Defender XDR)
 - directory (Microsoft Entra ID) 
 - entitlement management (Microsoft Entra ID)
 - Exchange Online
@@ -96,6 +96,7 @@ To list role definitions for a device management provider:
 ```http
 GET /roleManagement/deviceManagement/roleDefinitions
 ```
+
 To list role definitions for a Defender provider:
 <!-- { "blockType": "ignored" } -->
 ```http

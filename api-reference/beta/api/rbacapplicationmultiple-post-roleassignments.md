@@ -20,7 +20,7 @@ Create a new [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentm
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
-- Defender (Microsoft Security Defender Unified RBAC)
+- Defender (Microsoft Defender XDR)
 
 For other Microsoft 365 applications (like Microsoft Entra ID), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
@@ -358,8 +358,8 @@ Content-type: application/json
 
 Use the following information for creating Intune role assignments:
 - To allow assignments over all and future workloads, use the `/` value in **appScopeIds**.
-- To allow assignments over workload, on all scopes, don't add any scope after the workload '&lt;Mdi/Mdc/Mda/Mde/Mdo/SecureScoreExternal&gt;' value in **appScopeIds**.
-- To allow assignments over all and future workload, on specific scope, use `/`, '/&lt;ScopeType&gt;/&lt;ScopeId&gt;' values in **directoryScopeIds**.
+- To allow assignments over workload, on all scopes, don't add any scope after the following workload IDs in **appScopeIds**: `Mdi`, `Mdc`, `Mda`, `Mde`, `Mdo`, `SecureScoreExternal`.
+- To allow assignments over all current and future workloads, on specific scope, use one of the following values in **directoryScopeIds**: `/`, `ScopeType`, `ScopeId` .
 
 #### Request
 

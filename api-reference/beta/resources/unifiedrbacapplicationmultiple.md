@@ -14,11 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a role management container for unified role definitions and role assignments for role-based access control (RBAC) providers in Microsoft 365. This shared entity is meant to replace [rbacApplication](./rbacapplication.md). Currently, only Defender RbacProvider is using it.
+Represents a role management container for unified role definitions and role assignments for role-based access control (RBAC) providers in the Microsoft cloud. Currently, only the Microsoft Defender XDR Unified RBAC provider consumes this resource.
 
-
-Inherits from [rbacApplicationMultiple](../resources/rbacapplicationmultiple.md), and includes also CustomAppScopes navigation property as in [unifiedRbacApplication](../resources/unifiedrbacapplication.md)
-
+Inherits from [rbacApplicationMultiple](../resources/rbacapplicationmultiple.md).
 
 ## Methods
 
@@ -31,8 +29,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|customAppScopes|[customAppScope](../resources/customappscope.md) collection| scope object that represents the resources for which the principal has been granted access. |
-|resourceNamespaces|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection|Resource that represents a collection of related actions. Inherits from [rbacApplicationMultiple](../resources/rbacapplicationmultiple.md)|
+|customAppScopes|[customAppScope](../resources/customappscope.md) collection| Represents the resources that the principal has been granted access. |
+|resourceNamespaces|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection|Represents a service group and the collection of allowed actions. Inherits from [rbacApplicationMultiple](../resources/rbacapplicationmultiple.md)|
 |roleAssignments|[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) collection| Resource to grant access to users or groups. Inherits from [rbacApplicationMultiple](../resources/rbacapplicationmultiple.md)|
 |roleDefinitions|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection|The roles allowed by RBAC providers and the permissions assigned to the roles. Inherits from [rbacApplicationMultiple](../resources/rbacapplicationmultiple.md)|
 

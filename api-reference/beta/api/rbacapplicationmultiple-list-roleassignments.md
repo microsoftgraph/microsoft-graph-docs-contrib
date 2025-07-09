@@ -21,7 +21,7 @@ Get a list of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignment
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
-- Defender (Microsoft Security Defender Unified RBAC)
+- Defender (Microsoft Defender XDR)
 
 For other Microsoft 365 applications (like Microsoft Entra ID), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
