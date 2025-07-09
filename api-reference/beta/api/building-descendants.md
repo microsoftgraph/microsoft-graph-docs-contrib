@@ -89,7 +89,6 @@ Content-Type: application/json
       "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
       "displayName": "D2",
       "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
-      "description": null,
       "tags": [],
       "mailboxDetails": {
         "emailAddress": "desk2@contoso.com",
@@ -102,7 +101,6 @@ Content-Type: application/json
       "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
       "displayName": "D4",
       "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
-      "description": null,
       "tags": [],
       "mailboxDetails": {
         "emailAddress": "desk4@contoso.com",
