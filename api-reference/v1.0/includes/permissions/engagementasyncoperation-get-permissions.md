@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|Community.Read.All|Community.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Community.Read.All|Community.ReadWrite.All|
+|Application|Community.Read.All|Community.ReadWrite.All, EngagementConversation.Migration.All|
 

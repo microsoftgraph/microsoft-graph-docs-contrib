@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-get-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
