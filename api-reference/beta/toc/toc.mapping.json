@@ -830,6 +830,7 @@
         "educationSubmission",
         "educationSubmissionResource",
         "readingAssignmentSubmission",
+        "readingCoachPassage",
         "reflectCheckInResponse",
         "relatedContact",
         "speakerAssignmentSubmission"
@@ -1986,6 +1987,15 @@
               "resources": [
                 "microsoft.graph.networkaccess.networkAccessTraffic",
                 "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
+              ]
+            },
+            {
+              "name": "TLS inspection",
+              "resources": [
+                "microsoft.graph.networkaccess.externalCertificateAuthorityCertificate",
+                "microsoft.graph.networkaccess.tlsInspectionPolicy",
+                "microsoft.graph.networkaccess.tlsInspectionPolicyLink",
+                "microsoft.graph.networkaccess.tlsInspectionRule"
               ]
             }
           ]

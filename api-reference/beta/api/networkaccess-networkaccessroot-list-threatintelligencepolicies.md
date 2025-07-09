@@ -20,11 +20,7 @@ Get a list of the [threatIntelligencePolicy](../resources/networkaccess-threatin
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "networkaccess-networkaccessroot-list-threatintelligencepolicies-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "networkaccess_networkaccessroot_list_threatintelligencepolicies" } -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-networkaccessroot-list-threatintelligencepolicies-permissions.md)]
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
