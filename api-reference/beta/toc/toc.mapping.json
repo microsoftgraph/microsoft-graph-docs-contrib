@@ -830,6 +830,7 @@
         "educationSubmission",
         "educationSubmissionResource",
         "readingAssignmentSubmission",
+        "readingCoachPassage",
         "reflectCheckInResponse",
         "relatedContact",
         "speakerAssignmentSubmission"
@@ -1967,7 +1968,11 @@
                 "microsoft.graph.networkaccess.filteringPolicyLink",
                 "microsoft.graph.networkaccess.filteringRule",
                 "microsoft.graph.networkaccess.fqdnFilteringRule",
-                "microsoft.graph.networkaccess.webCategoryFilteringRule"
+                "microsoft.graph.networkaccess.webCategoryFilteringRule",
+                "microsoft.graph.networkAccess.threatIntelligencePolicy",
+                "microsoft.graph.networkAccess.threatIntelligencePolicyLink",
+                "microsoft.graph.networkAccess.threatIntelligenceRule"
+
               ]
             },
             {
@@ -1982,6 +1987,15 @@
               "resources": [
                 "microsoft.graph.networkaccess.networkAccessTraffic",
                 "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
+              ]
+            },
+            {
+              "name": "TLS Inspection",
+              "resources": [
+                "microsoft.graph.networkaccess.externalCertificateAuthorityCertificate",
+                "microsoft.graph.networkaccess.tlsInspectionPolicy",
+                "microsoft.graph.networkaccess.tlsInspectionPolicyLink",
+                "microsoft.graph.networkaccess.tlsInspectionRule"
               ]
             }
           ]
