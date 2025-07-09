@@ -287,7 +287,7 @@ A sample of how the `content` property is used while ingesting data:
 }
 ``` 
 
-If you are using a declarative agent (DA), you can and should provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. It's useful because it helps the declarative agent understand the **semantic meaning** of each property, how to **reference and summarize** the data, and, how to **respond to user queries** using the indexed content. 
+If you are using a declarative agent (DA), you can and should provide property descriptions from your **Copilot connector schema** as part of the **instruction set to the declarative agent** in Copilot. It's useful because it helps the declarative agent understand the **semantic meaning** of each property, how to **reference and summarize** the data, and how to **respond to user queries** using the indexed content. 
 
 Define well-formed property descriptions for all properties. It should indicate what the property is about, other names or terms for the property, when it should be used, etc. 
   
@@ -304,15 +304,13 @@ You can add a property to your schema; doing so doesn't require re-ingestion, bu
 
 ### Add/remove a search capability
 
-You can add specific search attributes to a property, but keep in mind that you can't add a refiner search attribute as a schema change. Also, it isn't possible to use refinable attributes as searchable capabilities.
+You can add specific search attributes to a property, but keep in mind that you can't add a refine search attribute as a schema change. Also, refinable attributes can't be used as searchable capabilities.
 
 Adding a search capability requires re-ingestion.
 
 ### Add or remove an alias
 
-You can add or remove aliases and use them for your search queries.
-
-Consider that you can't remove the original alias of a refinable property that was autocreated by the system.
+You can add or remove aliases and use them for your search queries. The original alias of a refinable property can't be removed if it's autocreated by the system.
 
 ### Add/remove a semantic label
 
