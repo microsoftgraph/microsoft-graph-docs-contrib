@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /places/{placesId}
+GET /places/{id}
 ```
 
 ## Optional query parameters
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/places/{placesId}
+GET https://graph.microsoft.com/beta/places/0ab8619b-2d82-4a4e-9a87-d1e2a836a120
 ```
 
 ### Response
@@ -87,28 +87,36 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.place",
-    "id": "7d752e23-0fb5-7333-be1b-a1ae3d19ac4b",
-    "displayName": "String",
-    "geoCoordinates": {
-      "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-    },
-    "phone": "String",
-    "address": {
-      "@odata.type": "microsoft.graph.physicalAddress"
-    },
-    "placeId": "String",
-    "parentId": "String",
-    "resourceLinks": [
-      {
-        "@odata.type": "microsoft.graph.resourceLink"
-      }
-    ],
+        "@odata.type": "#microsoft.graph.building",
+    "id": "0ab8619b-2d82-4a4e-9a87-d1e2a836a120",
+    "placeId": "0ab8619b-2d82-4a4e-9a87-d1e2a836a120",
+    "displayName": "Building 121",
+    "phone": "+1 425-555-1234",
+    "parentId": null,
     "tags": [
-      "String"
+        "engineering",
+        "north-campus"
     ],
-    "isWheelChairAccessible": "Boolean",
-    "label": "String"
+    "isWheelChairAccessible": true,
+    "label": "Main Engineering Hub",
+    "hasWiFi": true,
+    "address": {
+        "type": null,
+        "postOfficeBox": null,
+        "street": "1 Microsoft Way",
+        "city": "Redmond",
+        "state": "WA",
+        "countryOrRegion": "US",
+        "postalCode": "98052"
+    },
+    "geoCoordinates": {
+        "latitude": 47.6396,
+        "longitude": -122.1281,
+        "accuracy": 0,
+        "altitude": 0,
+        "altitudeAccuracy": 0
+    },
+    "resourceLinks": []
   }
 }
 ```
