@@ -15,6 +15,7 @@ use Microsoft\Graph\Beta\Generated\Models\CustomMetadataDictionary;
 use Microsoft\Graph\Beta\Generated\Models\ActivityMetadata;
 use Microsoft\Graph\Beta\Generated\Models\UserActivityType;
 use Microsoft\Graph\Beta\Generated\Models\DeviceMetadata;
+use Microsoft\Graph\Beta\Generated\Models\OperatingSystemSpecifications;
 use Microsoft\Graph\Beta\Generated\Models\IntegratedApplicationMetadata;
 use Microsoft\Graph\Beta\Generated\Models\ProtectedApplicationMetadata;
 use Microsoft\Graph\Beta\Generated\Models\PolicyLocationUrl;
@@ -54,13 +55,10 @@ $contentToProcessActivityMetadata->setActivity(new UserActivityType('uploadFile'
 $contentToProcess->setActivityMetadata($contentToProcessActivityMetadata);
 $contentToProcessDeviceMetadata = new DeviceMetadata();
 $contentToProcessDeviceMetadata->setDeviceType('unmanaged');
-$additionalData = [
-'operatingSystemSpecifications' => [
-	'operatingSystemPlatform' => 'Windows',
-	'operatingSystemVersion' => '11.1',
-],
-];
-$contentToProcessDeviceMetadata->setAdditionalData($additionalData);
+$contentToProcessDeviceMetadataOperatingSystemSpecifications = new OperatingSystemSpecifications();
+$contentToProcessDeviceMetadataOperatingSystemSpecifications->setOperatingSystemPlatform('Windows');
+$contentToProcessDeviceMetadataOperatingSystemSpecifications->setOperatingSystemVersion('11.1');
+$contentToProcessDeviceMetadata->setOperatingSystemSpecifications($contentToProcessDeviceMetadataOperatingSystemSpecifications);
 $contentToProcess->setDeviceMetadata($contentToProcessDeviceMetadata);
 $contentToProcessIntegratedAppMetadata = new IntegratedApplicationMetadata();
 $contentToProcessIntegratedAppMetadata->setName('Network Proxy App');

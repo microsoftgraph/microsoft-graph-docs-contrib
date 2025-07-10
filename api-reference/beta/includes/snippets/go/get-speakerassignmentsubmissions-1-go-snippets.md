@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-enrichedAuditLogs, err := graphClient.NetworkAccess().Settings().EnrichedAuditLogs().Get(context.Background(), nil)
+speakerAssignmentSubmissions, err := graphClient.Education().Reports().SpeakerAssignmentSubmissions().Get(context.Background(), nil)
 
 
 ```

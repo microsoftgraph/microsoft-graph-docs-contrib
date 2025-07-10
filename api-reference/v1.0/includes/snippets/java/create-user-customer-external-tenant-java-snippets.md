@@ -20,7 +20,7 @@ user.setIdentities(identities);
 user.setMail("adelev@adatum.com");
 PasswordProfile passwordProfile = new PasswordProfile();
 passwordProfile.setPassword("passwordValue");
-passwordProfile.setForceChangePasswordNextSignIn(false);
+passwordProfile.setForceChangePasswordNextSignIn(true);
 user.setPasswordProfile(passwordProfile);
 user.setPasswordPolicies("DisablePasswordExpiration");
 User result = graphClient.users().post(user);
