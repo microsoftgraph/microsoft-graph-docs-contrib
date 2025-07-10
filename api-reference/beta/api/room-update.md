@@ -60,7 +60,6 @@ PATCH /roomList/rooms/{roomId}
 </ul> Optional. |
 |building |String |The name or identifier of the building where the [room](../resources/room.md) is located. Optional. |
 |capacity |Integer |The maximum number of people in the [room](../resources/room.md) can accommodate. Optional. |
-|description |String |User-defined description of the [room](../resources/room.md). (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Optional. |
 |displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the [room](../resources/room.md). Optional. |
 |displayName|String|The name that is associated with the [room](../resources/room.md). Inherited from [place](../resources/place.md). Required.|
 |emailAddress |String |The email address associated with the [room](../resources/room.md). This email address is used for booking. Optional. |
@@ -69,6 +68,7 @@ PATCH /roomList/rooms/{roomId}
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [room](../resources/room.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). Optional.|
 |isTeamsEnabled |Boolean |Whether or not the [room](../resources/room.md) is configured with the Microsoft Teams Room system. Required.|
 |isWheelChairAccessible|Boolean|Whether or not the [room](../resources/room.md) is wheelchair accessible. Inherited from [place](../resources/place.md). Required.|
+|label |String |User-defined description of the [room](../resources/room.md). Optional. |
 |nickname |String |A short, friendly name for the [room](../resources/room.md), often used for easier identification or display in UI. Required. |
 |parentId|String|**id** of a parent [place](../resources/place.md). Inherited from [place](../resources/place.md). Optional.|
 |phone|String|The phone number of the [room](../resources/room.md). Inherited from [place](../resources/place.md). Optional.|
