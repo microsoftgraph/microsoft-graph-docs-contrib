@@ -96,7 +96,7 @@ Content-Type: application/json
         "altitude": 0,
         "altitudeAccuracy": 0
     },
-    "phone": ""+1 425-555-1234",
+    "phone": "+1 425-555-1234",
     "address": {
         "type": null,
         "postOfficeBox": null,
