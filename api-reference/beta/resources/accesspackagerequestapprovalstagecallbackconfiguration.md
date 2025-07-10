@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Callback settings that define how long Microsoft Entra ID can wait for a resume signal for the callout that it made to the logic app. Inherits from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).
+Callback settings that define how long Microsoft Entra ID can wait for a resume signal for the callout [assignmentRequestApprovalStageCallbackData](../resources/assignmentrequestapprovalstagecallbackdata.md) that comes back from the logic app. Inherits from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).
 
 
 ## Properties
