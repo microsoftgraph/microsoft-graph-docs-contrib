@@ -51,10 +51,10 @@ PATCH /floor
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [floor](../resources/floor.md), including the street, city, state, country or region, and postal code. Inherited from [place](../resources/place.md). Optional.|
-|description |String|User-defined description of the [floor](../resources/floor.md). (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md). Optional.|
 |displayName|String|The name that is associated with the [floor](../resources/floor.md). Inherited from [place](../resources/place.md). Required.|
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [floor](../resources/floor.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). Optional.|
 |isWheelChairAccessible|Boolean|Whether or not the [floor](../resources/floor.md) is wheelchair accessible. Inherited from [place](../resources/place.md). Required.|
+|label |String|User-defined description of the [floor](../resources/floor.md). Inherited from [place](../resources/place.md). Optional.|
 |parentId|String|**id** of a parent [place](../resources/place.md). Inherited from [place](../resources/place.md). Optional.|
 |phone|String|The phone number of the [floor](../resources/floor.md). Inherited from [place](../resources/place.md). Optional.|
 |placeId|String|An alternate immutable unique identifier of the [floor](../resources/floor.md). Read-only. Inherited from [place](../resources/place.md). Optional.|
