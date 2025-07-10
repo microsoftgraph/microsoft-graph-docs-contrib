@@ -14,13 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a fileStorageContainerTypeRegistration object in the consuming tenant or replace the existing one. 
-In other words, it registers a [fileStorageContainerType](../resources/filestoragecontainertype.md) in the tenant.
+Register a [fileStorageContainerType](../resources/filestoragecontainertype.md) in the tenant. This creates or replaces a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object. 
+In other words, it .
 
 For standard containers, [billing](https://learn.microsoft.com/sharepoint/dev/embedded/administration/billing/billing) must be valid for the registration to complete successfully.
 
 > [!IMPORTANT]
-> An application can only register a [fileStorageContainerType](../resources/filestoragecontainertype.md) that it owns, either using app-only or delegated tokens.
+> 1. An application can only register a [fileStorageContainerType](../resources/filestoragecontainertype.md) that it owns, either using app-only or delegated tokens. 
+> 2. Registering a container type in a newly created tenant can fail due to readiness of tenant. You may need to wait at least an hour before registering a container type in a new tenant.
 
 
 Settings can't be modified on registration.
@@ -41,6 +42,7 @@ Registration must be done in the context of the application that owns the [fileS
 
 ## HTTP request
 
+Registers a fileStorageContainerType in the current tenant. Note that the method is PUt since this will create an object with the provided id (fileStorageContainerTypeId).
 <!-- {
   "blockType": "ignored"
 }

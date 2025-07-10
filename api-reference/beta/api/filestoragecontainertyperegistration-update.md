@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a fileStorageContainerTypeRegistration object.
+Update the properties of a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object.
 
 > [!NOTE]
 > 1. [The settings in the owning fileStorageContainerType](../resources/fileStorageContainerTypeSettings.md) control which [settings](../resources/fileStorageContainerTypeRegistrationSettings.md) can be updated. 
@@ -25,7 +25,7 @@ Update the properties of a fileStorageContainerTypeRegistration object.
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 When delegated tokens are used, SharePoint Embedded admin or Global admin role is required.
-If FileStorageContainerTypeReg.Selected is used, changes are limited to [registrations](../resources/fileStorageContainerTypeRegistration.md) owned by the application 
+If FileStorageContainerTypeReg.Selected is used, changes are limited to [registrations](../resources/filestoragecontainertyperegistration.md) owned by the application 
 making the call.
 <!-- {
   "blockType": "permissions",
@@ -72,7 +72,8 @@ If successful, this method returns a `200 OK` response code and an updated [file
 
 ### Request
 
-Update a fileStorageContainerTypeRegistration.
+Update a fileStorageContainerTypeRegistration where the owning fileStorageContainerType marked isSearchEnabled as an overridable setting.
+Note sharingCapability is always be overridden.
 
 <!-- {
   "blockType": "request",
@@ -86,6 +87,7 @@ Content-Type: application/json
 {
   "settings": {
     "sharingCapability": "externalUserAndGuestSharing",
+    "isSearchEnabled": "false"
   },
   "applicationPermissionGrants": [
     {
@@ -126,7 +128,7 @@ Content-Type: application/json
     "sharingCapability": "externalUserAndGuestSharing",
     "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
     "isDiscoverabilityEnabled": "true",
-    "isSearchEnabled": "true",
+    "isSearchEnabled": "false",
     "isItemVersioningEnabled": "true",
     "itemMajorVersionLimit": "50",
     "maxStoragePerContainerInBytes": "104857600",

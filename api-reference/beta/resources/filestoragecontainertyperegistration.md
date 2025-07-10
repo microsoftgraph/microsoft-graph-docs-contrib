@@ -19,7 +19,7 @@ A fileStorageContainerTypeRegistration is the entity created when a
  is registered on a consuming tenant using its ID (`containerTypeId`). 
  This registration is required to be able to create [containers][fileStorageContainer].
 
-fileStorageContainerTypeRegistration [settings][fileStorageContainerTypeRegistrationSettings]
+Some fileStorageContainerTypeRegistration [settings][fileStorageContainerTypeRegistrationSettings]
 can be made different from the defined in the [container type settings][fileStorageContainerTypeSettings] only if they're set as overridable.
 
 [applicationPermissionGrants][fileStorageContainerTypeAppPermissionGrant] define the access 

@@ -17,7 +17,8 @@ Namespace: microsoft.graph
 Create a [fileStorageContainerType](../resources/filestoragecontainertype.md) in the owning tenant. The number of container types in a tenant is [limited](https://learn.microsoft.com/sharepoint/dev/embedded/development/limits-calling).
 
 > [!IMPORTANT]
-> Registering a container type in a newly created tenant can fail due to readiness of tenant. You may need to wait at least an hour before registering a container type in a new tenant.
+> 1. The application assigned as owner of the fileStorageContainerType (owningAppId) must be owned by the tenant.
+> 2. Registering a container type in a newly created tenant can fail due to readiness of tenant. You may need to wait at least an hour before registering a container type in a new tenant.
 
 ## Permissions
 
@@ -69,7 +70,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 
 ## Examples
 
-Create a Trial fileStorageContainerType with some defaults
+Create a Trial [fileStorageContainerTypeRegistration](../resources/filestoragecontainertype.md) with some defaults
 
 ### Request
 

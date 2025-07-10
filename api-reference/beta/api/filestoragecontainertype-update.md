@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a fileStorageContainerType object. The properties updated are reflected in 
+Update the properties of a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertype.md) object. The properties updated are reflected in 
 registered [fileStorageContainerTypeRegistrations](../resources/filestoragecontainertyperegistration.md) in a maximum of 24 hours. 
 Settings overridden in a tenant aren't updated.
 
