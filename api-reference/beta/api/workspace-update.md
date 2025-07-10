@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /workspace
+PATCH /places/{id}
 PATCH /roomList/workspaces/{workspaceId}
 ```
 
@@ -62,10 +62,7 @@ PATCH /roomList/workspaces/{workspaceId}
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [workspace](../resources/workspace.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). Optional.|
 |isWheelChairAccessible|Boolean|Whether or not the [workspace](../resources/workspace.md) is wheelchair accessible. Inherited from [place](../resources/place.md). Required.|
 |label |String|User-defined description of the [workspace](../resources/workspace.md). Inherited from [place](../resources/place.md). Optional.|
-|mode |[placeMode](../resources/placemode.md) |The mode for a [workspace](../resources/workspace.md). We support 3 modes:
-<ul><li>**reservable** - Workspaces that can be booked in advance using desk pool reservation tools</li>
-<li>**dropIn** - First come, first serve workspaces. As soon as you plug in to a peripheral on one of the desks in the workspace, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
-<li>**offline** - Workspaces that are taken down for maintenance or marked as not reservable</li></ul> Optional. |
+|mode |[placeMode](../resources/placemode.md) |The mode for a [workspace](../resources/workspace.md). We support 3 modes:<ul><li>**reservable** - Workspaces that can be booked in advance using desk pool reservation tools</li><li>**dropIn** - First come, first serve workspaces. As soon as you plug in to a peripheral on one of the desks in the workspace, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li><li>**offline** - Workspaces that are taken down for maintenance or marked as not reservable</li></ul> Optional. |
 |nickname|String|A short, friendly name for the [workspace](../resources/workspace.md), often used for easier identification or display in the UI. Required.|
 |parentId|String|**id** of a parent [place](../resources/place.md). Inherited from [place](../resources/place.md). Optional.|
 |phone|String|The phone number of the [workspace](../resources/workspace.md). Inherited from [place](../resources/place.md). Optional.|
@@ -90,7 +87,7 @@ The following example shows a request.
   "name": "update_workspace"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/places/ws100@contoso.com
+PATCH https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 Content-type: application/json
 
 {
@@ -102,40 +99,6 @@ Content-type: application/json
   "isWheelChairAccessible": false
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-workspace-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-workspace-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-workspace-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-workspace-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-workspace-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-workspace-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-workspace-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-workspace-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
