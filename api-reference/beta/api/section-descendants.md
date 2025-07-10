@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/section/descendants
+GET https://graph.microsoft.com/beta/places/3e7160bb-75da-4456-ab3c-5ee061f4611a/descendants/microsoft.graph.desk
 ```
 
 
@@ -89,24 +89,24 @@ Content-Type: application/json
       "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
       "displayName": "D2",
       "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
-      "description": null,
+      "label": "Desk 2",
       "tags": [],
       "mailboxDetails": {
         "emailAddress": "desk2@contoso.com",
-        "externalDirectoryObjectId": "xx"
+        "externalDirectoryObjectId": "d3b84b23-71db-4adc-a916-f0e255a54e5a"
       },
       "resourceLinks": []
     }, 
     {
       "id": "2dd2s2gg-b444-84rf-c4d1-f9a8342222s3",
-      "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
+      "placeId": "9d7ed313-993f-430b-ae92-03259e24b509",
       "displayName": "D4",
       "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
-      "description": null,
+      "label": "Desk 4",
       "tags": [],
       "mailboxDetails": {
         "emailAddress": "desk4@contoso.com",
-        "externalDirectoryObjectId": "yy"
+        "externalDirectoryObjectId": "56f84c36-b541-4add-bcdd-f68d5d15e134"
       },
       "resourceLinks": []
     }
