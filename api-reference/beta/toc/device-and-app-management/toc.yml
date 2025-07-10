@@ -180,7 +180,7 @@ items:
       href: ../../api/cloudpcdeviceimage-delete.md
     - name: Get source images
       href: ../../api/cloudpcdeviceimage-getsourceimages.md
-    - name: Re-upload
+    - name: Reupload
       href: ../../api/cloudpcdeviceimage-reupload.md
   - name: Cloud PC external partner setting
     items:

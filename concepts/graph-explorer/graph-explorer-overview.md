@@ -4,6 +4,7 @@ description: Try Microsoft Graph APIs on the default sample tenant to explore ca
 ms.localizationpriority: high
 author: wujessica
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Use Graph Explorer to try Microsoft Graph APIs
