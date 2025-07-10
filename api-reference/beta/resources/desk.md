@@ -41,7 +41,7 @@ Inherits from [place](./place.md).
 |mode |[placeMode](./placemode.md) |The mode of the desk. We support 4 modes:
 <ul><li>**assigned** - Desks that are assigned to a user</li>
 <li>**reservable** - Desks that can be booked in advance using desk reservation tools</li>
-<li>**walkup** - First come, first serve desks. When you plug in to a peripheral on one of these desks, the desk is booked for you, assuming that the peripheral is associated to the desk in Teams Pro Management portal</li>
+<li>**dropin** - First come, first serve desks. When you plug in to a peripheral on one of these desks, the desk is booked for you, assuming that the peripheral is associated to the desk in Teams Pro Management portal</li>
 <li>**offline** - Desk that is taken down for maintenance or marked as not reservable.</li></ul> |
 |parentId|String|**id**** of a parent [place](../resources/place.md). Inherited from [place](./place.md).|
 |phone|String|The phone number of the **desk**. Inherited from [place](./place.md).|
