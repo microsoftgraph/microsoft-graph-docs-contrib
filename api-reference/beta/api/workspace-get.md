@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /workspace
+GET /places/microsoft.graph/workspace
 GET /roomList/workspaces/{workspaceId}
 ```
 
