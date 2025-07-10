@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /floor
+DELETE /places/{id}
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/floor
+DELETE https://graph.microsoft.com/beta/places/5e19bbf6-067c-4a92-9685-1f01545f02e4
 ```
 
 ### Response
