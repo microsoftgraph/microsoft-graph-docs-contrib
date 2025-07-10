@@ -63,9 +63,9 @@ PATCH /roomList/workspaces/{workspaceId}
 |isWheelChairAccessible|Boolean|Whether or not the [workspace](../resources/workspace.md) is wheelchair accessible. Inherited from [place](../resources/place.md). Required.|
 |label |String|User-defined description of the [workspace](../resources/workspace.md). Inherited from [place](../resources/place.md). Optional.|
 |mode |[placeMode](../resources/placemode.md) |The mode for a [workspace](../resources/workspace.md). We support 3 modes:
-<ul><li>**bookable** - Workspaces that can be booked in advance using desk pool reservation tools</li>
-<li>**walkup** - First come, first serve workspaces. As soon as you plug in to a peripheral on one of the desks in the workspace, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
-<li>**offline** - Workspaces that are taken down for maintenance or marked as not bookable</li></ul> Optional. |
+<ul><li>**reservable** - Workspaces that can be booked in advance using desk pool reservation tools</li>
+<li>**dropIn** - First come, first serve workspaces. As soon as you plug in to a peripheral on one of the desks in the workspace, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
+<li>**offline** - Workspaces that are taken down for maintenance or marked as not reservable</li></ul> Optional. |
 |nickname|String|A short, friendly name for the [workspace](../resources/workspace.md), often used for easier identification or display in the UI. Required.|
 |parentId|String|**id** of a parent [place](../resources/place.md). Inherited from [place](../resources/place.md). Optional.|
 |phone|String|The phone number of the [workspace](../resources/workspace.md). Inherited from [place](../resources/place.md). Optional.|
