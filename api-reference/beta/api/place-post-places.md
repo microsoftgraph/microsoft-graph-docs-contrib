@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [place](../resources/place.md) object.
 
-You can also use this method to read create the following child object types: [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
+You can also use this method to create the following child object types: [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
 
 ## Permissions
 
@@ -96,7 +96,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.context": "https://canary.graph.microsoft.com/testprodbetaheads_test_placescrud/$metadata#places/$entity",
   "@odata.type": "#microsoft.graph.desk",
   "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
   "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
