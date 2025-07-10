@@ -271,7 +271,7 @@
           ],
           "complexTypes": [
             "placeMode",
-            "bookablePlaceMode",
+            "reservablePlaceMode",
             "dropInPlaceMode",
             "assignedPlaceMode",
             "offlinePlaceMode"
