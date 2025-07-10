@@ -34,8 +34,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.building not found
+GET /places/{placeType}
 ```
+
+> **Note:**
+> `{placeType}` can be any supported place type such as `microsoft.graph.building`.
 
 ## Optional query parameters
 
@@ -66,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.building not found
+GET https://graph.microsoft.com/beta/places/microsoft.graph.building
 ```
 
 ### Response
@@ -86,29 +89,35 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.building",
-      "id": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
-      "displayName": "String",
-      "geoCoordinates": {
-        "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-      },
-      "phone": "String",
-      "address": {
-        "@odata.type": "microsoft.graph.physicalAddress"
-      },
-      "placeId": "String",
-      "parentId": "String",
-      "resourceLinks": [
-        {
-          "@odata.type": "microsoft.graph.resourceLink"
-        }
-      ],
-      "tags": [
-        "String"
-      ],
-      "isWheelChairAccessible": "Boolean",
-      "label": "String",
-      "hasWiFi": "Boolean"
+       "@odata.type": "#microsoft.graph.building",
+    "id": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
+    "displayName": "Building 121",
+    "geoCoordinates": {
+        "latitude": 47.6396,
+        "longitude": -122.1281,
+        "accuracy": 0,
+        "altitude": 0,
+        "altitudeAccuracy": 0
+    },
+    "phone": "+1 425-555-1234",
+    "address": {
+        "type": null,
+        "postOfficeBox": null,
+        "street": "1 Microsoft Way",
+        "city": "Redmond",
+        "state": "WA",
+        "countryOrRegion": "US",
+        "postalCode": "98052"
+    },
+    "placeId": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
+    "resourceLinks": [],
+    "tags": [
+        "engineering",
+        "north-campus"
+    ],
+    "isWheelChairAccessible": true,
+    "label": "Main Engineering Hub",
+    "hasWiFi": true
     }
   ]
 }
