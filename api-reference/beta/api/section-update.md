@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /section
+PATCH /places/{id}
 ```
 
 ## Request headers
@@ -76,14 +76,13 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/section
+PATCH https://graph.microsoft.com/beta/places/f7de7265-e420-47b4-9d49-28d728716241
 Content-Type: application/json
 
 {
-"@odata.type": "#microsoft.exchange.locationsAndTime.desk",
-  "displayName": "Updated Desk 1",
-  "displayDeviceName": "Samsung monitor",
-  "tags": ["AdjustableHeight"]
+"@odata.type": "#microsoft.graph.section",
+  "displayName": "Updated Section 1",
+  "isWheelChairAccessible": true
 }
 ```
 
@@ -103,18 +102,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
-  "@odata.type": "#microsoft.graph.desk",
-      "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-      "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-    "displayName": "Updated Desk 1",
-    "displayDeviceName": "Samsung monitor",
-    "tags": ["AdjustableHeight"],
-      "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
-      "mode": {
-        "@odata.type": "microsoft.graph.assignedPlaceMode",
-        "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
-  }
+  "@odata.type": "#microsoft.graph.section",
+      "id": "f7de7265-e420-47b4-9d49-28d728716241",
+      "placeId": "f7de7265-e420-47b4-9d49-28d728716241",
+      "displayName": "Updated Section 1",
+       "phone": "+1 425-555-1234",
+        "parentId": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
+         "tags": [
+                "Engineering", 
+                "East-Side"
+            ],
+          "isWheelChairAccessible": true,
+           "label": "This section is dedicated to engineering design.",
+            "address": {
+       	 "type": null,
+       	 "postOfficeBox": null,
+      	  "street": "1 Microsoft Way",
+      	  "city": "Redmond",
+      	  "state": "WA",
+      	  "countryOrRegion": "US",
+      	  "postalCode": "98052"
+  	  },
+            "geoCoordinates": {
+                "latitude": 47.639611,
+                "longitude": -122.128011,
+                "accuracy": 0,
+                "altitude": 0,
+                "altitudeAccuracy": 0
+            },
+            "resourceLinks": [ ]
+
 }
 ```
 
