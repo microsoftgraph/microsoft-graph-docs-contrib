@@ -88,27 +88,34 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.building",
     "id": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
-    "displayName": "String",
+    "displayName": "Building 121",
     "geoCoordinates": {
-      "@odata.type": "microsoft.graph.outlookGeoCoordinates"
+        "latitude": 47.6396,
+        "longitude": -122.1281,
+        "accuracy": 0,
+        "altitude": 0,
+        "altitudeAccuracy": 0
     },
-    "phone": "String",
+    "phone": ""+1 425-555-1234",
     "address": {
-      "@odata.type": "microsoft.graph.physicalAddress"
+        "type": null,
+        "postOfficeBox": null,
+        "street": "1 Microsoft Way",
+        "city": "Redmond",
+        "state": "WA",
+        "countryOrRegion": "US",
+        "postalCode": "98052"
     },
-    "placeId": "String",
-    "parentId": "String",
-    "resourceLinks": [
-      {
-        "@odata.type": "microsoft.graph.resourceLink"
-      }
-    ],
+    "placeId": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
+    "resourceLinks": [],
     "tags": [
-      "String"
+        "engineering",
+        "north-campus"
+
     ],
-    "isWheelChairAccessible": "Boolean",
-    "label": "String",
-    "hasWiFi": "Boolean"
+    "isWheelChairAccessible": true,
+    "label": "Main Engineering Hub",
+    "hasWiFi": true
   }
 }
 ```
