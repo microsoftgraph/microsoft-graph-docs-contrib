@@ -1,14 +1,14 @@
 ---
-title: "bookablePlaceMode resource type"
+title: "reservablePlaceMode resource type"
 description: "Indicates whether a desk or workspace is allowed to be booked in advance."
-author: tiwarisakshi02
+author: "tiwarisakshi02"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice: 
 doc_type: resourcePageType
 ---
 
-# bookablePlaceMode resource type
+# reservablePlaceMode resource type
 
 Namespace: microsoft.graph
 
@@ -30,12 +30,11 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.bookablePlaceMode"
+  "@odata.type": "microsoft.graph.reservablePlaceMode"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.bookablePlaceMode "
+  "@odata.type": "#microsoft.graph.reservablePlaceMode"
 }
 ```
-
