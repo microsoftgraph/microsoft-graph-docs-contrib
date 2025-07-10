@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /places/{id}/descendants/{placeType}
 ```
 
-`{placeType}` can be any supported place type such as `microsoft.graph.desk`.
+`{placeType}` can be any supported place type such as `microsoft.graph.workspace`.
 
 ## Request headers
 
@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [place](../resources/place.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and an empty collection as workspaces/ desk-pools do not have descendants.
 
 ## Examples
 
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/workspace/descendants
+GET https://graph.microsoft.com/beta/places/a74edd7c-60a4-4066-8f9d-ee6487e04093/descendants/microsoft.graph.workspace
 ```
 
 
@@ -83,34 +83,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "displayName": "D2",
-      "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
-      "description": null,
-      "tags": [],
-      "mailboxDetails": {
-        "emailAddress": "desk2@contoso.com",
-        "externalDirectoryObjectId": "xx"
-      },
-      "resourceLinks": []
-    }, 
-    {
-      "id": "2dd2s2gg-b444-84rf-c4d1-f9a8342222s3",
-      "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "displayName": "D4",
-      "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
-      "description": null,
-      "tags": [],
-      "mailboxDetails": {
-        "emailAddress": "desk4@contoso.com",
-        "externalDirectoryObjectId": "yy"
-      },
-      "resourceLinks": []
-    }
-  ]
+  "value": []
 }
 ```
 
