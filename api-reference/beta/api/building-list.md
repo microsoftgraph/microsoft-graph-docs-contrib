@@ -42,7 +42,7 @@ GET /places/{placeType}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select`, `$top`, and `$skip` query parameters to help customize the response. Use `$top` to customize the page size. The default page size is 1000. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
