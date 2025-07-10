@@ -89,7 +89,7 @@ PATCH https://graph.microsoft.com/beta/places/D123
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
+  "@odata.type": "#microsoft.graph.desk",
   "displayName": "Updated Desk 1",
   "displayDeviceName": "Surface monitor",
   "tags": ["AdjustableHeight"]
