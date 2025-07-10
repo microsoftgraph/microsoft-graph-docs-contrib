@@ -37,7 +37,7 @@ Inherits from [place](./place.md).
 |address|[physicalAddress](./physicaladdress.md)|The physical address of the **workspace**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md).|
 |building |String |The name or identifier of the building where the **workspace** is located. |
 |capacity|Int32|The maximum number of individual desks within a **workspace**. |
-|description |String |User-defined description of the **workspace**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md).|
+|label |String |User-defined description of the **workspace**. Inherited from [place](../resources/place.md).|
 |displayDeviceName|String|The name of the display device (such as a monitor or projector) that is available in the **workspace**.|
 |displayName|String|The name that is associated with the **workspace**. Inherited from [place](./place.md).|
 |emailAddress|String|The email address that is associated with the **workspace**. This email address is used for booking.|
