@@ -34,9 +34,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.desk not found
+GET /places/{placeType}
 ```
-
+> **Note:**
+> `{placeType}` can be any supported place type such as `microsoft.graph.desk`.
+> 
 ## Optional query parameters
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -66,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.desk not found
+GET https://graph.microsoft.com/beta/places/microsoft.graph.desk
 ```
 
 ### Response
@@ -86,36 +88,45 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.desk",
-      "id": "24420c90-4ee4-0d01-ce17-d46ed4282abb",
-      "displayName": "String",
-      "geoCoordinates": {
-        "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-      },
-      "phone": "String",
-      "address": {
-        "@odata.type": "microsoft.graph.physicalAddress"
-      },
-      "placeId": "String",
-      "parentId": "String",
-      "resourceLinks": [
-        {
-          "@odata.type": "microsoft.graph.resourceLink"
-        }
-      ],
-      "tags": [
-        "String"
-      ],
-      "isWheelChairAccessible": "Boolean",
-      "label": "String",
-      "displayDeviceName": "String",
-      "mailboxDetails": {
-        "@odata.type": "microsoft.graph.mailboxDetails"
-      },
-      "mode": {
-        "@odata.type": "microsoft.graph.placeMode"
-      }
+    "@odata.type": "#microsoft.graph.desk",
+    "id": "fa1e9144-b4ba-4e53-9186-2ef453f4017f",
+    "placeId": "fa1e9144-b4ba-4e53-9186-2ef453f4017f",
+    "displayName": "Desk 1",
+    "phone": "+1 425-555-1234",
+    "parentId": "f7de7265-e420-47b4-9d49-28d728716241",
+    "tags": [
+        "HeightAdjustable",
+        "Docking System",
+    ],
+    "isWheelChairAccessible": false,
+    "label": "Desk 1 in engineering section",
+    "displayDeviceName": "Samsung Monitor",
+     "address": {
+        "type": null,
+        "postOfficeBox": null,
+        "street": "1 Microsoft Way",
+        "city": "Redmond",
+        "state": "WA",
+        "countryOrRegion": "US",
+        "postalCode": "98052"
+    },
+    "mailboxDetails": {
+                "externalDirectoryObjectId": "dfc480de-8f40-44f8-bc8d-6306cea4ab27",
+                "emailAddress": "Desk1fa1e9144b4ba4e @M365x42405544.onmicrosoft.com"
+            },
+    "geoCoordinates": {
+        "latitude": 47.6396,
+        "longitude": -122.128,
+        "accuracy": 0,
+        "altitude": 0,
+        "altitudeAccuracy": 0
+    },
+    "resourceLinks": [],
+    "mode": {
+        "@odata.type": "#microsoft.graph.dropInPlaceMode",
     }
+}
+
   ]
 }
 ```
