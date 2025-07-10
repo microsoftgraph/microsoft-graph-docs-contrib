@@ -105,7 +105,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaplacesproperties/$metadata#places/$entity",
     "@odata.type": "#microsoft.graph.building",
     "id": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
     "placeId": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
