@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /floor
+GET /places/{id}
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/floor
+GET https://graph.microsoft.com/beta/places/5e19bbf6-067c-4a92-9685-1f01545f02e4
 ```
 
 ### Response
@@ -85,29 +85,36 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.floor",
-    "id": "c8c830fe-938f-bd39-efee-c0d62f43c9cf",
-    "displayName": "String",
-    "geoCoordinates": {
-      "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-    },
-    "phone": "String",
-    "address": {
-      "@odata.type": "microsoft.graph.physicalAddress"
-    },
-    "placeId": "String",
-    "parentId": "String",
-    "resourceLinks": [
-      {
-        "@odata.type": "microsoft.graph.resourceLink"
-      }
-    ],
+        "@odata.type": "#microsoft.graph.floor",
+    "id": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
+    "placeId": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
+    "displayName": "Floor 1",
+    "phone": "+1 425-555-1234",
+    "parentId": "e18a8e21-0494-4296-a5bc-f848dba2740d",
     "tags": [
-      "String"
+        "First floor",
     ],
-    "isWheelChairAccessible": "Boolean",
-    "label": "String",
-    "sortOrder": "Integer"
+    "isWheelChairAccessible": false,
+    "label": "First floor.",
+    "sortOrder": 1,
+         "address": {
+        "type": null,
+        "postOfficeBox": null,
+        "street": "1 Microsoft Way",
+        "city": "Redmond",
+        "state": "WA",
+        "countryOrRegion": "US",
+        "postalCode": "98052"
+    },
+    "geoCoordinates": {
+        "latitude": 40.6396,
+        "longitude": -120.128,
+        "accuracy": 0,
+        "altitude": 0,
+        "altitudeAccuracy": 0
+    },
+    "resourceLinks": [ ]
+
   }
 }
 ```
