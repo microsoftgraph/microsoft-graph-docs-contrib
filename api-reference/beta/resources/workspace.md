@@ -47,9 +47,9 @@ Inherits from [place](./place.md).
 |id|String|A unique identifier for the **workspace**. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. Inherited from [entity](./entity.md). |
 |isWheelChairAccessible|Boolean|Whether or not the **workspace** is wheelchair accessible. Inherited from [place](./place.md).|
 |mode|[placeMode](./placemode.md) |The mode for a **workspace**. We support 3 modes:
-<ul><li>**bookable** - Workspaces that can be booked in advance using desk pool reservation tools</li>
-<li>**walkup** - First come, first serve workspaces. As soon as you plug in to a peripheral on one of the desks in the workspace, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
-<li>**offline** - Workspaces that are taken down for maintenance or marked as not bookable</li></ul> |
+<ul><li>**reservable** - Workspaces that can be booked in advance using desk pool reservation tools</li>
+<li>**dropin** - First come, first serve workspaces. As soon as you plug in to a peripheral on one of the desks in the workspace, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
+<li>**offline** - Workspaces that are taken down for maintenance or marked as not reservable</li></ul> |
 |nickname|String|A short, friendly name for the **workspace**, often used for easier identification or display in the UI. |
 |parentId|String|**id** of a parent [section](./section.md) or [floor](./floor.md). Inherited from [place](./place.md). |
 |phone|String|The phone number of the **workspace**. Inherited from [place](./place.md). |
