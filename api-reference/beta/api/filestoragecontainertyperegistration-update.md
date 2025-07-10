@@ -14,9 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a fileStorageContainerTypeRegistration object. Updating settings is 
+Update the properties of a fileStorageContainerTypeRegistration object.
 
->**Note**: Updating the settings changes the behavior of any new fileStorageContainer, but existing containers may require their [settings](../resources/fileStorageContainer.md) to be updated directly, or may not be updated. E.g., storage size.
+> [!NOTE]
+> 1. [The settings in the owning fileStorageContainerType](../resources/fileStorageContainerTypeSettings.md) control which [settings](../resources/fileStorageContainerTypeRegistrationSettings.md) can be updated. 
+> 2. The updated settings change the behavior of new fileStorageContainers, but existing containers might require their [settings](../resources/fileStorageContainer.md) to be updated directly. Some can't be updated at all. For example, changing storage capability.
 
 ## Permissions
 

@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Configuration associated with a fileStorageContainerType. 
 
 > [!NOTE]
-> Some values used when a fileStorageContainer is created, but are not affected if the settings are modified afterwards. For example, maxStoragePerContainerInBytes.
+> Some values are used when a fileStorageContainer is created but are not affected if the settings are modified afterwards. For example, maxStoragePerContainerInBytes.
 
 
 ## Properties
