@@ -31,7 +31,7 @@ Inherits from [place](./place.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](./physicaladdress.md)|The physical address of the **building**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md). |
-|description |String |User-defined description of the place. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](./place.md). |
+|label |String |User-defined description of the place. Inherited from [place](./place.md). |
 |displayName|String|The name that is associated with the place. Inherited from [place](./place.md). |
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **building** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md). |
 |hasWiFi|Boolean|Whether or not the **building** has Wifi. |
