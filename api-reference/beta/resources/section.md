@@ -34,7 +34,7 @@ Inherits from [place](./place.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](./physicaladdress.md)|The physical address of the **section**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md).|
-|description |String |User-defined description of the **section**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](./place.md). |
+|label |String |User-defined description of the **section**. Inherited from [place](./place.md). |
 |displayName|String|The name that is associated with the **section**. Inherited from [place](./place.md).|
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **section** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
 |id|String|A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. Inherited from [entity](./entity.md). |
