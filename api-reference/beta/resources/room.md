@@ -41,7 +41,7 @@ Inherits from [place](./place.md).
 <li>**unknown** – Default or unspecified booking behavior</li></ul> |
 |building |String |The name or identifier of the [building](./building.md) where the **room** is located. |
 |capacity |Integer |The maximum number of people in the **room** can accommodate. |
-|description |String |User-defined description of the **room**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md). |
+|label |String |User-defined description of the **room**. Inherited from [place](../resources/place.md). |
 |displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the **room**. |
 |displayName |String |The name that is associated with the **room**. Inherited from [place](../resources/place.md).|
 |emailAddress |String |The email address associated with the **room**. This email address is used for booking. |
