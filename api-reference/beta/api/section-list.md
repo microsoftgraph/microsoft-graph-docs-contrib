@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.section not found
+GET /places/{placeType}
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.section not found
+GET https://graph.microsoft.com/beta/places/microsoft.graph.section
 ```
 
 
@@ -87,28 +87,35 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.section",
-      "id": "33491080-b007-37f2-c045-b46746ef402f",
-      "displayName": "String",
-      "geoCoordinates": {
-        "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-      },
-      "phone": "String",
-      "address": {
-        "@odata.type": "microsoft.graph.physicalAddress"
-      },
-      "placeId": "String",
-      "parentId": "String",
-      "resourceLinks": [
-        {
-          "@odata.type": "microsoft.graph.resourceLink"
-        }
-      ],
-      "tags": [
-        "String"
-      ],
-      "isWheelChairAccessible": "Boolean",
-      "label": "String"
+            "id": "f7de7265-e420-47b4-9d49-28d728716241",
+            "placeId": "f7de7265-e420-47b4-9d49-28d728716241",
+            "displayName": "Engineering design section",
+            "phone": "+1 425-555-1234",
+            "parentId": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
+            "tags": [
+                "Engineering", 
+                "East-Side"
+            ],
+            "isWheelChairAccessible": false,
+            "label": "This section is dedicated to engineering design.",
+            "address": {
+       	 "type": null,
+       	 "postOfficeBox": null,
+      	  "street": "1 Microsoft Way",
+      	  "city": "Redmond",
+      	  "state": "WA",
+      	  "countryOrRegion": "US",
+      	  "postalCode": "98052"
+  	  },
+            "geoCoordinates": {
+                "latitude": 47.639611,
+                "longitude": -122.128011,
+                "accuracy": 0,
+                "altitude": 0,
+                "altitudeAccuracy": 0
+            },
+            "resourceLinks": [ ]
+
     }
   ]
 }
