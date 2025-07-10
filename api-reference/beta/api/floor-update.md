@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /floor
+PATCH /places/{id}
 ```
 
 ## Request headers
@@ -77,16 +77,13 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/floor
+PATCH https://graph.microsoft.com/beta/places/5e19bbf6-067c-4a92-9685-1f01545f02e4
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
-  "displayName": "Updated Desk 1",
-  "displayDeviceName": "Surface monitor",
-  "tags": [
-    "AdjustableHeight"
-  ]
+  "@odata.type": "#microsoft.graph.floor",
+  "displayName": "First Floor",
+  "isWheelChairAccessible": true
 }
 ```
 
@@ -105,19 +102,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.desk",
-  "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-  "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-  "displayName": "Updated Desk 1",
-  "displayDeviceName": "Surface monitor",
-  "tags": [
-    "AdjustableHeight"
-  ],
-  "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
-  "mode": {
-    "@odata.type": "microsoft.graph.assignedPlaceMode",
-    "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
-  }
+  "@odata.type": "#microsoft.graph.floor",
+    "id": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
+    "placeId": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
+    "displayName": "First Floor",
+    "phone": "+1 425-555-1234",
+    "parentId": "e18a8e21-0494-4296-a5bc-f848dba2740d",
+    "tags": [
+        "First floor",
+    ],
+    "isWheelChairAccessible": true,
+    "label": "First floor.",
+    "sortOrder": 1,
+         "address": {
+        "type": null,
+        "postOfficeBox": null,
+        "street": "1 Microsoft Way",
+        "city": "Redmond",
+        "state": "WA",
+        "countryOrRegion": "US",
+        "postalCode": "98052"
+    },
+    "geoCoordinates": {
+        "latitude": 40.6396,
+        "longitude": -120.128,
+        "accuracy": 0,
+        "altitude": 0,
+        "altitudeAccuracy": 0
+    },
+    "resourceLinks": [ ]
 }
 ```
 
