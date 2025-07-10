@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /desk
+PATCH /places/{id}
 ```
 
 ## Request headers
@@ -57,11 +57,7 @@ PATCH /desk
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [desk](../resources/desk.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). Optional.|
 |isWheelChairAccessible|Boolean|Whether or not the [desk](../resources/desk.md) is wheelchair accessible. Inherited from [place](../resources/place.md). Required.|
 |mailboxDetails |mailboxDetails |The mailbox object-ids and email address that are associated with the desk. Optional.|
-|mode |[placeMode](../resources/placemode.md) |The mode of the desk. We support 4 modes:
-<ul><li>**assigned** - Desks that are assigned to a user</li>
-<li>**bookable** - Desks that can be booked in advance using desk reservation tools</li>
-<li>**walkup** - First come, first serve desks. When you plug in to a peripheral on one of these desks, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li>
-<li>**offline** - Desk that are taken down for maintenance or marked as not bookable.</li></ul> Optional. |
+|mode |[placeMode](../resources/placemode.md) |The mode of the desk. We support 4 modes: <ul><li>**assigned** - Desks that are assigned to a user</li><li>**bookable** - Desks that can be booked in advance using desk reservation tools</li><li>**dropIn** - First come, first serve desks. When you plug in to a peripheral on one of these desks, the desk is booked for you, assuming that the peripheral has been associated to the desk in Teams Pro Management portal</li><li>**offline** - Desk that are taken down for maintenance or marked as not bookable.</li></ul> Optional. |
 |parentId|String|**id** of a parent [place](../resources/place.md). Inherited from [place](../resources/place.md). Optional.|
 |phone|String|The phone number of the [desk](../resources/desk.md). Inherited from [place](../resources/place.md). Optional.|
 |placeId|String|An alternate immutable unique identifier of the [desk](../resources/desk.md). Read-only. Inherited from [place](../resources/place.md). Optional. |
@@ -83,7 +79,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/desk
+PATCH https://graph.microsoft.com/beta/places/fa1e9144-b4ba-4e53-9186-2ef453f4017f
 Content-Type: application/json
 
 {
@@ -112,19 +108,43 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.desk",
-  "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-  "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-  "displayName": "Updated Desk 1",
-  "displayDeviceName": "Surface monitor",
-  "tags": [
-    "AdjustableHeight"
-  ],
-  "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
-  "mode": {
-    "@odata.type": "microsoft.graph.assignedPlaceMode",
-    "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
-  }
+    "@odata.type": "#microsoft.graph.desk",
+    "id": "fa1e9144-b4ba-4e53-9186-2ef453f4017f",
+    "placeId": "fa1e9144-b4ba-4e53-9186-2ef453f4017f",
+    "displayName": "Updated Desk 1",
+    "phone": "+1 425-555-1234",
+    "parentId": "f7de7265-e420-47b4-9d49-28d728716241",
+    "tags": [
+        " AdjustableHeight",
+    ],
+    "isWheelChairAccessible": false,
+    "label": "Desk 1 in engineering section",
+    "displayDeviceName": "Surface monitor",
+     "address": {
+        "type": null,
+        "postOfficeBox": null,
+        "street": "1 Microsoft Way",
+        "city": "Redmond",
+        "state": "WA",
+        "countryOrRegion": "US",
+        "postalCode": "98052"
+    },
+    "mailboxDetails": {
+                "externalDirectoryObjectId": "dfc480de-8f40-44f8-bc8d-6306cea4ab27",
+                "emailAddress": "Desk1fa1e9144b4ba4e @M365x42405544.onmicrosoft.com"
+            },
+    "geoCoordinates": {
+        "latitude": 47.6396,
+        "longitude": -122.128,
+        "accuracy": 0,
+        "altitude": 0,
+        "altitudeAccuracy": 0
+    },
+    "resourceLinks": [],
+    "mode": {
+        "@odata.type": "#microsoft.graph.dropInPlaceMode",
+    }
 }
+
 ```
 
