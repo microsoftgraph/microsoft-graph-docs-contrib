@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md) object. The **isCloudManaged** property indicates whether the object’s source of authority is set to the cloud. If `true`, updates from on-premises Active Directory are blocked; if `false`, updates from Microsoft Entra ID are blocked;
+Read the properties and relationships of an [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md) object. The **isCloudManaged** property indicates whether the object’s source of authority is set to the cloud. If `true`, updates from on-premises Active Directory are blocked in the cloud; if `false`, updates from on-premises Active Directory are allowed in the cloud and object can be taken over by the on-premises Active Directory.
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/groups/367c0f19-49s1-41b5-a03f-6f3887bd0ed8/onPremisesSyncBehavior
+GET https://graph.microsoft.com/beta/groups/673f83c9-7e84-4db8-9a63-b8a8c309fdad/onPremisesSyncBehavior
 ```
 
 
@@ -89,7 +89,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.onPremisesSyncBehavior",
-    "id": "39b4e676-e148-6060-855c-a77f67b5ac06",
+    "id": "673f83c9-7e84-4db8-9a63-b8a8c309fdad",
     "isCloudManaged": true
   }
 }

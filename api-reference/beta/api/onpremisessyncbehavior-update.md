@@ -55,7 +55,7 @@ PATCH /groups/{groupsId}/onPremisesSyncBehavior
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isCloudManaged|Boolean|Indicates whether the object’s source of authority is set to the cloud. If `true`, updates from on-premises Active Directory are blocked; if `false`, updates from Microsoft Entra ID are blocked; |
+|isCloudManaged|Boolean|Indicates whether the object’s source of authority is set to the cloud. If `true`, updates from on-premises Active Directory are blocked in the cloud; if `false`, updates from on-premises Active Directory are allowed in the cloud and object can be taken over by the on-premises Active Directory.|
 
 
 
@@ -74,7 +74,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/groups/26g4e676-h246-6060-855c-f87f78a7gd27/onPremisesSyncBehavior
+PATCH https://graph.microsoft.com/beta/groups/e7c2f02a-7a59-40de-8d6e-1e0197b8cfba/onPremisesSyncBehavior
 Content-Type: application/json
 
 {
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.onPremisesSyncBehavior",
-  "id": "39b4e676-e148-6060-855c-a77f67b5ac06",
+  "id": "e7c2f02a-7a59-40de-8d6e-1e0197b8cfba",
   "isCloudManaged": true
 }
 ```

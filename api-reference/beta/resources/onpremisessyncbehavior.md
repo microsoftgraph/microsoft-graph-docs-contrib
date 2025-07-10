@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The object ID of the **onPremisesSyncBehavior**. Read-only. Inherits from [entity](../resources/entity.md)|
+|id|String|The object ID of the parent object. Read-only. Inherits from [entity](../resources/entity.md)|
 |isCloudManaged|Boolean|Indicates the state of synchronization for an object between the cloud and on-premises Active Directory. This object defines whether the source of authority for a directory object and its settings is on-premises Active Directory or Microsoft Entra ID.|
 
 ## Relationships
