@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/places/{placesId}
+DELETE https://graph.microsoft.com/beta/places/5e19bbf6-067c-4a92-9685-1f01545f02e4
 ```
 
 ### Response
