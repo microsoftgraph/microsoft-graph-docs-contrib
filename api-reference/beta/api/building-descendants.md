@@ -87,24 +87,24 @@ Content-Type: application/json
     {
       "id": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
       "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "displayName": "D2",
+      "displayName": "Desk 2",
       "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
       "tags": [],
       "mailboxDetails": {
         "emailAddress": "desk2@contoso.com",
-        "externalDirectoryObjectId": "xx"
+        "externalDirectoryObjectId": "dfc480de-8f40-44f8-bc8d-6306cea4ab27"
       },
       "resourceLinks": []
     }, 
     {
       "id": "2dd2s2gg-b444-84rf-c4d1-f9a8342222s3",
-      "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "displayName": "D4",
+      "placeId": "2dd2s2gg-b444-84rf-c4d1-f9a8342222s3",
+      "displayName": "Desk 4",
       "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
       "tags": [],
       "mailboxDetails": {
         "emailAddress": "desk4@contoso.com",
-        "externalDirectoryObjectId": "yy"
+        "externalDirectoryObjectId": "f7bf0b43-0ae0-47e4-b3e6-02c9f7733398"
       },
       "resourceLinks": []
     }
