@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/floor/descendants
+GET https://graph.microsoft.com/beta/places/5e19bbf6-067c-4a92-9685-1f01545f02e4/descendants/microsoft.graph.section
 ```
 
 
@@ -86,30 +86,65 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "displayName": "D2",
-      "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
-      "description": null,
-      "tags": [],
-      "mailboxDetails": {
-        "emailAddress": "desk2@contoso.com",
-        "externalDirectoryObjectId": "xx"
-      },
-      "resourceLinks": []
+         "id": "68cb3706-e145-4c54-9488-c2b6214565e5",
+            "placeId": "68cb3706-e145-4c54-9488-c2b6214565e5",
+            "displayName": "Tech support Section 1",
+            "phone": "+1 425-555-1234",
+            "parentId": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
+            "tags": [
+                "Tech Support", 
+                "North-Side"
+            ],
+            "isWheelChairAccessible": false,
+            "label": "This section is dedicated to tech support.",
+            "address": {
+       	 "type": null,
+       	 "postOfficeBox": null,
+      	  "street": "1 Microsoft Way",
+      	  "city": "Redmond",
+      	  "state": "WA",
+      	  "countryOrRegion": "US",
+      	  "postalCode": "98052"
+  	  },
+            "geoCoordinates": {
+                "latitude": 47.639611,
+                "longitude": -122.128011,
+                "accuracy": 0,
+                "altitude": 0,
+                "altitudeAccuracy": 0
+            },
+            "resourceLinks": [ ]
     }, 
     {
-      "id": "2dd2s2gg-b444-84rf-c4d1-f9a8342222s3",
-      "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "displayName": "D4",
-      "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
-      "description": null,
-      "tags": [],
-      "mailboxDetails": {
-        "emailAddress": "desk4@contoso.com",
-        "externalDirectoryObjectId": "yy"
-      },
-      "resourceLinks": []
+       "id": "f7de7265-e420-47b4-9d49-28d728716241",
+            "placeId": "f7de7265-e420-47b4-9d49-28d728716241",
+            "displayName": "Engineering design section",
+            "phone": "+1 425-555-1234",
+            "parentId": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
+            "tags": [
+                "Engineering", 
+                "East-Side"
+            ],
+            "isWheelChairAccessible": false,
+            "label": "This section is dedicated to engineering design.",
+            "address": {
+       	 "type": null,
+       	 "postOfficeBox": null,
+      	  "street": "1 Microsoft Way",
+      	  "city": "Redmond",
+      	  "state": "WA",
+      	  "countryOrRegion": "US",
+      	  "postalCode": "98052"
+  	      },
+            "geoCoordinates": {
+                "latitude": 47.639611,
+                "longitude": -122.128011,
+                "accuracy": 0,
+                "altitude": 0,
+                "altitudeAccuracy": 0
+            },
+            "resourceLinks": [ ]
+
     }
   ]
 }
