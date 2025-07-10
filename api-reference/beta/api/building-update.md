@@ -51,7 +51,7 @@ PATCH /building
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [building](../resources/building.md), including the street, city, state, country or region, and postal code. Inherited from [place](../resources/place.md). Optional.|
-|description|String|User-defined description of the [building](../resources/building.md). (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md). Optional.|
+|label|String|User-defined description of the [building](../resources/building.md). Inherited from [place](../resources/place.md). Optional.|
 |displayName|String|The name that is associated with the [building](../resources/building.md). Inherited from [place](../resources/place.md). Required.|
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [building](../resources/building.md) location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md). Optional.|
 |hasWiFi|Boolean|Whether or not the building has WiFi. Required.|
