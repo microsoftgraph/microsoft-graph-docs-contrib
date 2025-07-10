@@ -31,7 +31,7 @@ Inherits from [place](./place.md).
 |Property |Type |Description |
 |:--|:--|:--|
 |address|[physicalAddress](./physicaladdress.md)|The physical address of the **desk**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md).|
-|description |String |User-defined description of the **desk**. (This property is referred to as **label** in the Places PowerShell cmdlet and on Places version 1 objects.) Inherited from [place](../resources/place.md).|
+|label |String |User-defined description of the **desk**. Inherited from [place](../resources/place.md).|
 |displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available at the **desk**. |
 |displayName|String|The name that is associated with the **desk**. Inherited from [place](./place.md).|
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **desk** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
