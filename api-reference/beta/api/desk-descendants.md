@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/places/{id}/descendants/{placeType}
+GET https://graph.microsoft.com/beta/places/fa1e9144-b4ba-4e53-9186-2ef453f4017f/descendants/microsoft.graph.desk
 ```
 
 ### Response
@@ -85,34 +85,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "displayName": "D2",
-      "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
-      "description": null,
-      "tags": [],
-      "mailboxDetails": {
-        "emailAddress": "desk2@contoso.com",
-        "externalDirectoryObjectId": "xx"
-      },
-      "resourceLinks": []
-    }, 
-    {
-      "id": "2dd2s2gg-b444-84rf-c4d1-f9a8342222s3",
-      "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "displayName": "D4",
-      "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
-      "description": null,
-      "tags": [],
-      "mailboxDetails": {
-        "emailAddress": "desk4@contoso.com",
-        "externalDirectoryObjectId": "yy"
-      },
-      "resourceLinks": []
-    }
-  ]
+  "value": []
 }
 ```
 
