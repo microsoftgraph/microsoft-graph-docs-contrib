@@ -84,7 +84,7 @@ HTTP/1.1 204 No Content
 
 ### Request
 
-Delete a not trial fileStorageContainerType
+Delete a standard fileStorageContainerType (currently not supported).
 
 
 <!-- {
