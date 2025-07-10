@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /building
+GET /places/{id}
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/building
+GET https://graph.microsoft.com/beta/places/3e377efd-add0-aa15-d67a-38ad2f81f08e
 ```
 
 
