@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Abstract base type for **modes** for [desks](./desk.md) and [workspaces](./workspace.md).
 
-This is the base type of [bookablePlaceMode](./bookableplacemode.md), [dropInUpPlaceMode](./dropinplacemode.md), [assignedPlaceMode](./assignedplacemode.md), and [offlinePlaceMode](./offlineplacemode.md).
+This is the base type of [reservableplacemode](./reservableplacemode.md), [dropInUpPlaceMode](./dropinplacemode.md), [assignedPlaceMode](./assignedplacemode.md), and [offlinePlaceMode](./offlineplacemode.md).
 
 ## Properties
 
