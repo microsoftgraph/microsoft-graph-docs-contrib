@@ -53,11 +53,7 @@ PATCH /roomList/rooms/{roomId}
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [room](../resources/room.md), including the street, city, state, country or region, and postal code. Inherited from [place](../resources/place.md). Optional.|
 |audioDeviceName |String |The name of the audio device that is available in the [room](../resources/room.md). Optional. |
-|bookingType |[bookingType](../resources/room.md#bookingtype-values) |Specifies how the place can be booked. Possible values are:
-<ul><li>**standard** - Available for general booking</li>
-<li>**reserved** – Reserved for specific users or purposes</li>
-<li>**unknown** – Default or unspecified booking behavior</li>
-</ul> Optional. |
+|bookingType |[bookingType](../resources/room.md#bookingtype-values) |Specifies how the place can be booked. Possible values are:<ul><li>**standard** - Available for general booking</li><li>**reserved** – Reserved for specific users or purposes</li><li>**unknown** – Default or unspecified booking behavior</li></ul> Optional. |
 |building |String |The name or identifier of the building where the [room](../resources/room.md) is located. Optional. |
 |capacity |Integer |The maximum number of people in the [room](../resources/room.md) can accommodate. Optional. |
 |displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available in the [room](../resources/room.md). Optional. |
@@ -105,40 +101,6 @@ Content-type: application/json
   "isWheelChairAccessible": false
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-room-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-room-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-room-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-room-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-room-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-room-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-room-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-room-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
