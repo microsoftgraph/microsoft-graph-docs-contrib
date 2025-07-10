@@ -1,17 +1,21 @@
 ---
 title: "accessPackageApprovalStage resource type"
 description: "Used for the stages property of approval settings. Specifies the primary, fallback, and escalation approvers of each stage."
-author: "markwahl-msft"
+author: "vikama-microsoft"
+ms.date: 07/02/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 10/04/2024
 ---
+
 # accessPackageApprovalStage resource type
 
 Namespace: microsoft.graph
 
-Used for the **stages** property of [approval settings](accesspackageassignmentapprovalsettings.md) in an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Used for the **stages** property of approval settings in an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.
+
 
 ## Properties
 |Property|Type|Description|
@@ -27,6 +31,7 @@ Used for the **stages** property of [approval settings](accesspackageassignmenta
 
 ## Relationships
 None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
@@ -38,30 +43,28 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.accessPackageApprovalStage",
   "durationBeforeAutomaticDenial": "String (duration)",
+  "isApproverJustificationRequired": "Boolean",
+  "isEscalationEnabled": "Boolean",
   "durationBeforeEscalation": "String (duration)",
-  "escalationApprovers": [
+  "primaryApprovers": [
     {
-      "@odata.type": "microsoft.graph.singleUser"
-    }
-  ],
-  "fallbackEscalationApprovers": [
-    {
-      "@odata.type": "microsoft.graph.singleUser"
+      "@odata.type": "microsoft.graph.identityGovernance.ruleBasedSubjectSet"
     }
   ],
   "fallbackPrimaryApprovers": [
     {
-      "@odata.type": "microsoft.graph.singleUser"
+      "@odata.type": "microsoft.graph.identityGovernance.ruleBasedSubjectSet"
     }
   ],
-  "isApproverJustificationRequired": "Boolean",
-  "isEscalationEnabled": "Boolean",
-  "primaryApprovers": [
+  "escalationApprovers": [
     {
-      "@odata.type": "microsoft.graph.singleUser"
+      "@odata.type": "microsoft.graph.identityGovernance.ruleBasedSubjectSet"
+    }
+  ],
+  "fallbackEscalationApprovers": [
+    {
+      "@odata.type": "microsoft.graph.identityGovernance.ruleBasedSubjectSet"
     }
   ]
-  
 }
 ```
-
