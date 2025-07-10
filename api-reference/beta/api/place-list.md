@@ -36,10 +36,6 @@ For a list of places:
 <!-- {
   "blockType": "ignored"
 }
--->
-``` http
-GET /places
-```
 
 For a list of places of a specific type:
 
@@ -91,40 +87,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-all-rooms-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-all-rooms-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-all-rooms-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-all-rooms-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-all-rooms-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-all-rooms-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-all-rooms-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -310,7 +272,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: List all the places defined in the tenant
+### Example 3: List all the buildings defined in the tenant
 
 The following example shows how to get all the [place](../resources/place.md) objects in the tenant.
 
@@ -323,7 +285,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/places
+GET https://graph.microsoft.com/beta/places/microsoft.graph.building
 ```
 
 #### Response
@@ -343,28 +305,34 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.place",
+      "@odata.type": "#microsoft.graph.building",
       "id": "7d752e23-0fb5-7333-be1b-a1ae3d19ac4b",
-      "displayName": "String",
+      "displayName": "Building 121",
       "geoCoordinates": {
-        "@odata.type": "microsoft.graph.outlookGeoCoordinates"
+           "latitude": 47.639611,
+           "longitude": -122.128011,
+           "accuracy": 0,
+           "altitude": 0,
+           "altitudeAccuracy": 0
       },
-      "phone": "String",
+      "phone": "+1 425-555-1234",
       "address": {
-        "@odata.type": "microsoft.graph.physicalAddress"
+        "type": null,
+       	 "postOfficeBox": null,
+      	  "street": "1 Microsoft Way",
+      	  "city": "Redmond",
+      	  "state": "WA",
+      	  "countryOrRegion": "US",
+      	  "postalCode": "98052"
       },
-      "placeId": "String",
-      "parentId": "String",
-      "resourceLinks": [
-        {
-          "@odata.type": "microsoft.graph.resourceLink"
-        }
-      ],
+      "placeId": "7d752e23-0fb5-7333-be1b-a1ae3d19ac4b",
+      "parentId": null,
+      "resourceLinks": [ ],
       "tags": [
-        "String"
+        "Engineering Hub"
       ],
-      "isWheelChairAccessible": "Boolean",
-      "label": "String"
+      "isWheelChairAccessible": true,
+      "label": "Engineering hub building"
     }
   ]
 }
