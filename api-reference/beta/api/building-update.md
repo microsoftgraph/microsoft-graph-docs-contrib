@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /building
+PATCH /places/{id}
 ```
 
 ## Request headers
@@ -77,15 +77,14 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/building
+PATCH https://graph.microsoft.com/beta/places/3e377efd-add0-aa15-d67a-38ad2f81f08e
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.exchange.locationsAndTime.desk",
-  "displayName": "Updated Desk 1",
-  "displayDeviceName": "Surface monitor",
-  "tags": [
-    "AdjustableHeight"
+   "@odata.type": "microsoft.graph.building",
+    "displayName": "Building 121 Engineering Hub", 
+    "tags": [
+    "engineering", "north-campus","Cafeteria", "EV Charging"
   ]
 }
 ```
@@ -106,19 +105,39 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.desk",
-  "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-  "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-  "displayName": "Updated Desk 1",
-  "displayDeviceName": "Surface monitor",
-  "tags": [
-    "AdjustableHeight"
-  ],
-  "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
-  "mode": {
-    "@odata.type": "microsoft.graph.assignedPlaceMode",
-    "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
-  }
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaplacesproperties/$metadata#places/$entity",
+    "@odata.type": "#microsoft.graph.building",
+    "id": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
+    "placeId": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
+    "displayName": "Building 121 Engineering Hub",
+    "phone": "+1 425-555-1234",
+    "parentId": null,
+    "tags": [
+        "engineering",
+        "north-campus",
+        "Cafeteria",
+        "EV Charging"
+    ],
+    "isWheelChairAccessible": true,
+    "label": "Main Engineering Hub",
+    "hasWiFi": true,
+    "address": {
+        "type": null,
+        "postOfficeBox": null,
+        "street": "1 Microsoft Way",
+        "city": "Redmond",
+        "state": "WA",
+        "countryOrRegion": "US",
+        "postalCode": "98052"
+    },
+    "geoCoordinates": {
+        "latitude": 47.6396,
+        "longitude": -122.1281,
+        "accuracy": 0,
+        "altitude": 0,
+        "altitudeAccuracy": 0
+    },
+    "resourceLinks": []
 }
 ```
 
