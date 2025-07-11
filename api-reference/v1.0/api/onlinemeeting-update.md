@@ -101,6 +101,7 @@ The last column indicates whether updating this property will take effect for an
 | allowWhiteboard             | Boolean                                                    | Indicates whether whiteboard is enabled for the meeting.                            | No                                  |
 | anonymizeIdentityForRoles   | onlineMeetingRole collection                               | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
 | endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                                  |
+| isEndToEndEncryptionEnabled | Boolean                                                    | Indicates whether end-to-end encryption (E2EE) is enabled for the meeting.          | No                                  |
 | isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                                 |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                                 |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting. Only attendees can be updated. | No                                  |
@@ -327,6 +328,95 @@ Content-Type: application/json
         "scope": "organization",
         "isDialInBypassEnabled": true
     }
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2020-7-16 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Patch online meeting",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
+
+### Example 3: Enable end-to-end encryption on an existing online meeting
+
+The following example shows how to enable end-to-end encryption on an existing online meeting.
+
+> **Note:** This property must be used with Teams policies to determine the final behavior, and policy updates can take up to 24 hours to apply. For more information, see [Require end-to-end encryption for sensitive Teams meetings](/microsoftteams/end-to-end-encrypted-meetings).
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
+  "name": "update_isendtoendencryptionenabled"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/V1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
+Content-Type: application/json 
+
+{
+  "isEndToEndEncryptionEnabled": true
+}
+```
+
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi",
+  "creationDateTime": "2020-07-03T00:23:39.444642Z",
+  "startDateTime": "2020-09-09T21:33:30.8546353Z",
+  "endDateTime": "2020-09-09T22:03:30.8566356Z",
+  "joinWebUrl": "(redacted)",
+  "subject": "Patch Meeting Subject",
+  "autoAdmittedUsers": "EveryoneInCompany",
+  "isEndToEndEncryptionEnabled": true,
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "everyone",
+  "videoTeleconferenceId": "(redacted)",
+  "participants": {
+    "organizer": {
+      "upn": "(redacted)",
+      "role": "presenter",
+      "identity": {
+        "user": {
+          "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+          "displayName": null,
+          "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+          "identityProvider": "AAD"
+        }
+      }
+    },
+    "attendees": []
+  },
+  "lobbyBypassSettings": {
+    "scope": "organization",
+    "isDialInBypassEnabled": true
+  }
 }
 ```
 
