@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [fileStorageCo
 
 ## Examples
 
-Get a fileStorageContainerTypeRegistration using the containerTypeId
+Get a fileStorageContainerTypeRegistration using the ID.
 
 ### Request
 

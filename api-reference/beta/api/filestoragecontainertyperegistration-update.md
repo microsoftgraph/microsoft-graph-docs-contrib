@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Update the properties of a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object.
 
 > [!NOTE]
-> 1. [The settings in the owning fileStorageContainerType](../resources/fileStorageContainerTypeSettings.md) control which [settings](../resources/fileStorageContainerTypeRegistrationSettings.md) can be updated. 
+> 1. [The settings in the fileStorageContainerType](../resources/fileStorageContainerTypeSettings.md) control which [settings](../resources/fileStorageContainerTypeRegistrationSettings.md) can be updated. 
 > 2. The updated settings change the behavior of new fileStorageContainers, but existing containers might require their [settings](../resources/fileStorageContainer.md) to be updated directly. Some can't be updated at all. For example, changing storage capability.
 
 ## Permissions
@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and an updated [file
 ### Request
 
 Update a fileStorageContainerTypeRegistration where the owning fileStorageContainerType marked isSearchEnabled as an overridable setting.
-Note sharingCapability is always be overridden.
+Note sharingCapability can always be overridden.
 
 <!-- {
   "blockType": "request",

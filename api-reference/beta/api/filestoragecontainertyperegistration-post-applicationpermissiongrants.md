@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new fileStorageContainerTypeAppPermissionGrant object.
+Create a new fileStorageContainerTypeAppPermissionGrant object in a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md).
 
 ## Permissions
 

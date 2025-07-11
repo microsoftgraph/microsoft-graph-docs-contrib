@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertype.md) using the ID.
+Retrieve a [fileStorageContainerType](../resources/filestoragecontainertype.md) using the ID.
 
 ## Permissions
 

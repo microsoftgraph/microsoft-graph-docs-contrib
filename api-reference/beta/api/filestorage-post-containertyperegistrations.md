@@ -69,8 +69,7 @@ You can specify the following properties when creating a **fileStorageContainerT
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/fileStorageContainerTypeAppPermissionGrant.md)|define the access 
-privileges of applications on containers of a specific fileStorageContainerType. Optional.|
+|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/fileStorageContainerTypeAppPermissionGrant.md)|define the access privileges of applications on containers of a specific fileStorageContainerType. Optional.|
 
 
 ## Response
@@ -166,7 +165,7 @@ Create a fileStorageContainerTypeRegistration for a standard fileStorageContaine
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
+PUT https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/52a2630c-5e6a-41ff-8645-15406bafe66a
 Content-Type: application/json
 
 {

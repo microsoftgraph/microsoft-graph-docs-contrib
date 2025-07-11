@@ -72,7 +72,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 
 ## Examples
 
-Create a Trial [fileStorageContainerTypeRegistration](../resources/filestoragecontainertype.md) with some defaults
+Create a Trial [fileStorageContainerType](../resources/filestoragecontainertype.md) with some defaults
 
 ### Request
 

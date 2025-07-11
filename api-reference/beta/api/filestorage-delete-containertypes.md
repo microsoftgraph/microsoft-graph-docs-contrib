@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertype.md) object from the tenant. It can only be deleted if there are no fileStorageContainerTypeRegistrations associated
+Delete a [fileStorageContainerType](../resources/filestoragecontainertype.md) object from the tenant. It can only be deleted if there are no fileStorageContainerTypeRegistrations associated
 with it in any tenant.
 
 >**Note**: At this time, only Trial fileStorageContainerTypes can be deleted.
@@ -93,7 +93,7 @@ Delete a standard fileStorageContainerType (currently not supported).
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/52a2630c-5e6a-41ff-8645-15406bafe66a
 ```
 
 

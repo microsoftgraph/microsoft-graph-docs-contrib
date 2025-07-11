@@ -81,6 +81,7 @@ The following JSON representation shows the resource type.
   "settings": {
     "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings"
   },
+  "applicationPermissionGrants": "Collection(microsoft.graph.fileStorageContainerTypeAppPermissionGrant)"
   "etag": "String"
 }
 ```

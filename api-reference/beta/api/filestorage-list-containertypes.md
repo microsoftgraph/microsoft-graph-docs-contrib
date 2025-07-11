@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [fileStorageContainerTypeRegistration](../resources/filestoragecontainertype.md) objects and their properties.
+Get a list of the [fileStorageContainerType](../resources/filestoragecontainertype.md) objects and their properties.
 
 ## Permissions
 
