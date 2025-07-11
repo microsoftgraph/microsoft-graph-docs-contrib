@@ -21,8 +21,6 @@ This is an abstract type.
 Inherits from [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) and[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
 None
 
 ## Properties

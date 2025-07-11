@@ -18,13 +18,9 @@ Resource type showing the relationship with deletable policy types.
 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
 None
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
 None
 
 ## Relationships
