@@ -20,11 +20,7 @@ Get a list of [Reflect check-ins](../resources/reflectcheckinresponse.md) that w
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-    "blockType": "permissions",
-    "name": "reportsroot-list-reflectcheckinresponses-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "reportsroot_list_reflectcheckinresponses" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportsroot-list-reflectcheckinresponses-permissions.md)]
 
 ## HTTP request
