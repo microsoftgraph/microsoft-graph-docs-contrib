@@ -38,7 +38,7 @@ GET /places/{id}/descendants/{placeType}
 ```
 
 > **Note:**
-> `{placeType}` can be any supported place type such as `microsoft.graph.desk`.
+> `{placeType}` can be any supported place type such as `microsoft.graph.desk`. A floor supports the following descendant types `microsoft.graph.section`, `microsoft.graph.room`,`microsoft.graph.workspace`, `microsoft.graph.desk`.
 
 ## Request headers
 
