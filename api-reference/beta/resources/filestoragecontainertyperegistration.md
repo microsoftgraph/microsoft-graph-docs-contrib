@@ -52,6 +52,7 @@ This arrangement allows container access to be shared across applications.
 |owningAppId|Guid|ID of the application that owns the fileStorageContainerType. Read-only|
 |registeredDateTime|DateTimeOffset|Registration Date. Read-only|
 |settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|fileStorageContainerTypeRegistration settings|
+|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/fileStorageContainerTypeAppPermissionGrant.md) collection|Access privileges of applications on containers.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -81,7 +82,7 @@ The following JSON representation shows the resource type.
   "settings": {
     "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings"
   },
-  "applicationPermissionGrants": "Collection(microsoft.graph.fileStorageContainerTypeAppPermissionGrant)"
+  "applicationPermissionGrants": "Collection(microsoft.graph.fileStorageContainerTypeAppPermissionGrant)",
   "etag": "String"
 }
 ```

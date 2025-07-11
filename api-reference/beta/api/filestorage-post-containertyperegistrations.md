@@ -69,7 +69,7 @@ You can specify the following properties when creating a **fileStorageContainerT
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/fileStorageContainerTypeAppPermissionGrant.md)|define the access privileges of applications on containers of a specific fileStorageContainerType. Optional.|
+|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/fileStorageContainerTypeAppPermissionGrant.md) collection|define the access privileges of applications on containers of a specific fileStorageContainerType. Optional.|
 
 
 ## Response

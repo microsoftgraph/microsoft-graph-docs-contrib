@@ -59,7 +59,7 @@ PATCH /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeR
 |Property|Type|Description|
 |:---|:---|:---|
 |settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|fileStorageContainerTypeRegistration settings. The subset that can be updated depends on the overridable settings in the [fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md). Optional.|
-|applicationPermissionGrants|[applicationPermissionGrants](../resources/fileStorageContainerTypeAppPermissionGrant.md)|define the access privileges of applications on containers of a specific fileStorageContainerType. Optional.|
+|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/fileStorageContainerTypeAppPermissionGrant.md) collection|define the access privileges of applications on containers of a specific fileStorageContainerType. Optional.|
 |etag|String|Used for optimistic concurrency control. Must match the value returned from a Create or Get request. Required.|
 
 
