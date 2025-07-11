@@ -1,6 +1,40 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "7b3b450f-7d32-4b67-a678-20b186525452",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowCopyingAndSharingMeetingContent",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowCopyingAndSharingMeetingContent** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "7b3b450f-7d32-4b67-a678-20b186525452",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowCopyingAndSharingMeetingContent",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowCopyingAndSharingMeetingContent** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "7b3b450f-7d32-4b67-a678-20b186525452",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowCopyingAndSharingMeetingContent",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowCopyingAndSharingMeetingContent** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "7b3b450f-7d32-4b67-a678-20b186525452",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-03-26T17:05:23.3008252Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
       "ChangeList":[
         {
           "Id": "5f408e9d-15ae-45a2-89c1-427f83598967",

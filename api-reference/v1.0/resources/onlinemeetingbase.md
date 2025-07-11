@@ -26,6 +26,7 @@ Inherits from [entity](../resources/entity.md).
 | allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. |
 | allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. |
 | allowBreakoutRooms | Boolean | Indicates whether breakout rooms are enabled for the meeting. |
+| allowCopyingAndSharingMeetingContent | Boolean | Indicates whether copying and sharing meeting content is enabled for the meeting. |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of the meeting chat. |
 | allowLiveShare | [meetingLiveShareOptions](#meetingliveshareoptions-values) | Indicates whether live share is enabled for the meeting. Possible values are: `enabled`, `disabled`, `unknownFutureValue`. |
@@ -119,6 +120,7 @@ The following JSON representation shows the resource type.
   "allowAttendeeToEnableCamera": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
   "allowBreakoutRooms": "Boolean",
+  "allowCopyingAndSharingMeetingContent": "Boolean",
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
   "allowTeamworkReactions": "Boolean",
   "allowedLobbyAdmitters": "String",
