@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /places/{id}/descendants/{placeType}
 ```
 
-`{placeType}` can be any supported place type such as `microsoft.graph.room`.
+`{placeType}` can be any supported place type such as `microsoft.graph.room`. Room does not have any descendants hence this method will always return an empty collection. 
 
 ## Request headers
 
