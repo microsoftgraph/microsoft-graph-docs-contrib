@@ -359,12 +359,11 @@ The following example shows how to enable end-to-end encryption on an existing o
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
-  "name": "update_isendtoendencryptionenabled"
 }-->
+
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/V1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
 Content-Type: application/json 
@@ -423,19 +422,4 @@ Content-Type: application/json
   }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2020-7-16 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Patch online meeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
-
 

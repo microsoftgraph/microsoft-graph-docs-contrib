@@ -590,20 +590,6 @@ Content-Type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create onlineMeeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
-
 ### Example 5: Create an encrypted online meeting
 
 The following example shows how to create an online meeting that is end-to-end encrypted.
@@ -614,11 +600,11 @@ The following example shows how to create an online meeting that is end-to-end e
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
+
 <!-- {
-  "blockType": "request",
-  "name": "create-online-meeting-with-isendtoendencryptionenabled"
+  "blockType": "request"
 }-->
+
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/me/onlineMeetings
 Content-Type: application/json 
