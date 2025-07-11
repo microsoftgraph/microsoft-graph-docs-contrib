@@ -58,6 +58,7 @@ For a list of possible error responses, see [Backup Storage API error responses]
 The following example shows a request to offboard a protection unit removed from a policy.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "protectionunitbase_offboard_example1"
@@ -66,6 +67,12 @@ The following example shows a request to offboard a protection unit removed from
 ```
 POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/offboard
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/protectionunitbase-offboard-example1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
@@ -118,6 +125,7 @@ HTTP/1.1 200 OK
 The following example shows a request to offboard a protection unit that is attached to a policy.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "protectionunitbase_offboard_example2"
@@ -126,6 +134,12 @@ The following example shows a request to offboard a protection unit that is atta
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/offboard
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/protectionunitbase-offboard-example2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response

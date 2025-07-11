@@ -19,6 +19,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## July 2025: New and generally available
 
+### Education
+
+[Get](/graph/api/reportsroot-list-readingassignmentsubmissions?view=graph-rest-1.0&preserve-view=true) a list of reading assignments that were submitted by a student.
+[Get](/graph/api/reportsroot-list-reflectcheckinresponses?view=graph-rest-1.0&preserve-view=true) a list of Reflect check-ins that were submitted by a student.
+
 ### Files
 
 Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession) extends the expiration time.
@@ -88,7 +93,7 @@ Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resourc
 
 Enabled [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta&preserve-view=true) as a supported value for the **contentFilter** property of the [contentApprovalRule](/graph/api/resources/windowsupdates-contentapprovalrule?view=graph-rest-beta&preserve-view=true) resource. Use the [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta&preserve-view=true) to determine which remediation update content matches the rule continuously.
 
-## Education
+### Education
 
 [Get](/graph/api/reportsroot-list-speakerassignmentsubmissions?view=graph-rest-beta&preserve-view=true) a list of speaker assignments that were submitted by a student.
 
