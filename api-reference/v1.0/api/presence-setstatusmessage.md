@@ -273,6 +273,7 @@ Content-Type: application/json
       "content": "Hey I am available now",
       "contentType": "text"
     }
-  }
+  },
+  "sequenceNumber": "A0129311063"
 }
 ```

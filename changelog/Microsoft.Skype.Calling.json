@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+      "ChangeList": [        
+        {
+          "Id": "ee042115-b7c2-4ca4-b98a-d7397ed237da",
+          "ApiChange": "Property",
+          "ChangedApiName": "sequenceNumber",
+          "ChangeType": "Addition",
+          "Description": "Added the **sequenceNumber** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "ee042115-b7c2-4ca4-b98a-d7397ed237da",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-07T18:27:57.4426258Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"  
+    },
+    {
       "ChangeList":[
         {
           "Id": "5f408e9d-15ae-45a2-89c1-427f83598967",
