@@ -369,7 +369,7 @@ Content-Type: application/json
   "isEndToEndEncryptionEnabled": true
 }
 ```
-
+---
 
 #### Response
 
