@@ -85,14 +85,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.levelMap",
-      "id": "d812dac9-fa56-20f8-a077-3a9d09f1a3cf",
-      "properties": "String",
-      "placeId": "String"
-    }
-  ]
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetamapserviceapi0613/$metadata#places('91ac6c16-cda9-4506-b55d-e1f4dac3cbe7')/microsoft.graph.building/map/levels",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET places('<guid>')/microsoft.graph.building/map/levels?$select=placeId",
+    "value": [
+        {
+            "placeId": "4bff9586-c9ee-401d-9d35-c476231a33e6",
+            "id": "e537d463-475b-43c3-a650-184566c68bc9",
+            "properties": "{\"id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"type\":\"Feature\",\"feature_type\":\"level\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8891473,37.3297928],[-121.8893961,37.3299621],[-121.8894513,37.3300349],[-121.8894531,37.3300373],[-121.8891236,37.3297614],[-121.8891473,37.3297928]……]]},\"properties\":{\"name\":{\"en\":\"Test Floor 1\"},\"building_ids\":[\"26f04b4f-9ae2-45e3-99d1-393c66d58eb4\"],\"address_id\":\"e105efb7-b0d1-4144-8b8e-72eadf95724f\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.88904,37.3289553]},\"places_category\":\"unspecified\",\"directory_id\":\"4bff9586-c9ee-401d-9d35-c476231a33e6\",\"ordinal\":0}}"
+        }
+    ]
 }
+
 ```
 

@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/building/map/levels/{levelMapId}/units
+GET https://graph.microsoft.com/beta/building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/units
 ```
 
 
@@ -85,14 +85,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unitMap",
-      "id": "8b123db9-d62c-bfeb-d1d6-495052bba0cb",
-      "properties": "String",
-      "placeId": "String"
-    }
-  ]
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetamapserviceapi0613/$metadata#places('91ac6c16-cda9-4506-b55d-e1f4dac3cbe7')/microsoft.graph.building/map/levels('e537d463-475b-43c3-a650-184566c68bc9')/units",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET places('<guid>')/microsoft.graph.building/map/levels('<guid>')/units?$select=placeId",
+    "value": [
+        {
+            "placeId": null,
+            "id": "005eb3b8-c95d-4d35-a8a0-22d3cb4d6542",
+            "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6542\",\"type\":\"Feature\",\"feature_type\":\"unit\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test room from Test Floor 1 (120.3)\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"places_category\":\"room\"}}"
+        },
+        {
+            "placeId": null,
+            "id": "92171039-cf9b-4590-a406-43ca824c8418",
+            "properties": "{\"id\":\"92171039-cf9b-4590-a406-43ca824c8418\",\"type\":\"Feature\",\"feature_type\":\"unit\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8884352,37.3296641],[-121.8883999,37.329681],[-121.8883976,37.3296821],[-121.8883886,37.3296864],[-121.8883712,37.3296947],[-121.8884224,37.3297623],[-121.888436,37.3297802],[-121.8884642,37.3297667],[-121.8884817,37.3297583],[-121.8885142,37.3297428],[-121.8885182,37.3297408],[-121.8885162,37.3297381],[-121.8884834,37.3296948],[-121.8884725,37.3296805],[-121.8884577,37.3296608],[-121.8884535,37.3296554],[-121.8884495,37.3296573],[-121.8884352,37.3296641]]]},\"properties\":{\"name\":{\"en\":\"Test room 2 from Test Floor 1 (120.14)\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8884437,37.3297165]},\"places_category\":\"conferenceroom\"}}"
+        },……
+    ]
 }
+
 ```
 

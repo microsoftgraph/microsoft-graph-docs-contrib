@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/units
+DELETE places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/units/{unitImdfID}
 ```
 
 {buildingPlaceId} - **id** of the building with which this map is associated

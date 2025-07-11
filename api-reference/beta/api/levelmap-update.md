@@ -1,6 +1,6 @@
 ---
-title: "Create sectionMap"
-description: "Create a new sectionMap object in IMDF format."
+title: "Update levelMap"
+description: "Update the properties of a levelMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice:
 doc_type: apiPageType
 ---
 
-# Create sectionMap
+# Update levelMap
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [sectionMap](../resources/sectionmap.md) object in IMDF format.
+Update the properties of a [levelMap](../resources/levelmap.md) object in IMDF format.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "levelmap-post-sections-permissions"
+  "name": "levelmap-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/levelmap-post-sections-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/levelmap-update-permissions.md)]
 
 ## HTTP request
 
@@ -34,14 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/section/{sectionImdfID}
+PATCH /building/map/levels/{levelMapId}
 ```
-
-{buildingPlaceId} – **id** of a building with which this [levelmap](../resources/levelmap.md) is associated.
-
-{levelImdfId}- **id** of the level in the IMDF file.
-
-{sectionImdfID}- **id** of the section in the IMDF file.
 
 ## Request headers
 
@@ -52,9 +46,8 @@ PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [sectionMap](../resources/sectionmap.md) object.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-You can specify the following properties when creating a **sectionMap**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -65,7 +58,7 @@ You can specify the following properties when creating a **sectionMap**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [sectionMap](../resources/sectionmap.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [levelMap](../resources/levelmap.md) object in the response body.
 
 ## Examples
 
@@ -74,15 +67,15 @@ If successful, this method returns a `201 Created` response code and a [sectionM
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_sectionmap_from_"
+  "name": "update_levelmap"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/building/map/levels/{levelMapId}/sections
+PATCH https://graph.microsoft.com/beta/building/map/levels/{levelMapId}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.sectionMap",
+  "@odata.type": "#microsoft.graph.levelMap",
   "properties": "String",
   "placeId": "String"
 }
@@ -96,16 +89,16 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectionMap"
+  "@odata.type": "microsoft.graph.levelMap"
 }
 -->
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.sectionMap",
-  "id": "739ae398-9151-aa9a-fd26-88de707b452c",
+  "@odata.type": "#microsoft.graph.levelMap",
+  "id": "d812dac9-fa56-20f8-a077-3a9d09f1a3cf",
   "properties": "String",
   "placeId": "String"
 }
