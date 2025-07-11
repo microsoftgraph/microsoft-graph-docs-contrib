@@ -1,6 +1,6 @@
 ---
-title: "Delete policyDeletableItem"
-description: "Delete a policyDeletableItem object."
+title: "Permanently delete policyDeletableItem"
+description: "Permanently delete a policyDeletableItem object."
 author: "ashyasingh"
 ms.date: 06/18/2025
 ms.localizationpriority: medium
