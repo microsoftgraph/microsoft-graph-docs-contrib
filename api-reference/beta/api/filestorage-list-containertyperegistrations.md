@@ -100,7 +100,6 @@ Content-Type: application/json
       "expirationDateTime": "02/20/2025",
       "etag": "RVRhZw==",
       "settings": {
-        "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings",
         "sharingCapability": "disabled",
         "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
         "isDiscoverabilityEnabled": true,
@@ -134,7 +133,6 @@ Content-Type: application/json
       "expirationDateTime": null,
       "etag": "RVRhZw==",
       "settings": {
-        "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings",
         "sharingCapability": "externalUserSharingOnly",
         "urlTemplate": "",
         "isDiscoverabilityEnabled": true,

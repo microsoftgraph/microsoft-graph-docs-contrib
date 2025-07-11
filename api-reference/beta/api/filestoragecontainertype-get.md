@@ -95,7 +95,6 @@ Content-Type: application/json
   "expirationDateTime": "02/20/2025",
   "etag": "RVRhZw==",
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
     "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
     "isDiscoverabilityEnabled": true,
     "isSearchEnabled": true,

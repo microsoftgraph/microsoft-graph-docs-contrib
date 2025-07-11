@@ -80,9 +80,7 @@ PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de9887
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.fileStorageContainerType",
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
     "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
     "isItemVersioningEnabled": true,
     "isSharingRestricted": false
@@ -97,7 +95,8 @@ Content-Type: application/json
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fileStorageContainerType"
 }
 -->
 ``` http
@@ -115,7 +114,6 @@ Content-Type: application/json
   "expirationDateTime": "02/20/2025",
   "etag": "RVRhZyArIDE=",
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
     "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
     "isDiscoverabilityEnabled": true,
     "isSearchEnabled": true,
@@ -144,7 +142,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerType",
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
     "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
     "isItemVersioningEnabled": true,
     "isSharingRestricted": false
