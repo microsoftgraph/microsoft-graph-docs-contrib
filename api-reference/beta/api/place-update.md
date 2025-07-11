@@ -32,13 +32,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /places/{id | placeId | emailAddress}
+PATCH /places/{id}
 ```
 
 >**Note:**
 > * **id** is the unique identifier of the [place](../resources/place.md) to update.
-> * **placeId** is a unique alternate identifier of the [place](../resources/place.md) to update.
-> * **emailAddress** is the String email address of the mailbox associated with this [place](../resources/place.md).
 
 ## Request headers
 
@@ -85,7 +83,7 @@ The following example shows a request.
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/places/D123
+PATCH https://graph.microsoft.com/beta/places/69b2309c-4ded-40b2-9e15-dd9841fcfd71
 Content-Type: application/json
 
 {
