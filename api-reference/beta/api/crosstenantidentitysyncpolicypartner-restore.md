@@ -1,10 +1,10 @@
 ---
-title: "crossTenantIdentitySyncPolicyPartner: restore"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+title: "Restore crossTenantIdentitySyncPolicyPartner"
+description: "Restore the user synchronization policy for a partner-specific configuration."
+author: "ashyasingh"
 ms.date: 06/18/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Restore the user synchronization policy for a partner-specific configuration.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 
 ## Permissions
 
@@ -27,6 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantidentitysyncpolicypartner-restore-permissions.md)]
 
+[!INCLUDE [rbac-xtap-apis-write](../includes/rbac-for-apis/rbac-xtap-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -35,7 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /policies/deletedItems/crossTenantSyncPolicyPartners/{crossTenantIdentitySyncPolicyPartnerId}/restore
-POST /policies/crossTenantAccessPolicy/partners/{crossTenantAccessPolicyConfigurationPartnerId}/identitySynchronization/restore
+
 ```
 
 ## Request headers
@@ -63,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicyPartners/{crossTenantIdentitySyncPolicyPartnerId}/restore
+POST https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicyPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb/restore
 ```
 
 
@@ -77,20 +82,14 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.crossTenantIdentitySyncPolicyPartner"
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
+```json
+  HTTP/1.1 200 OK 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
-    "deletedDateTime": "String (timestamp)",
-    "tenantId": "String (identifier)",
-    "displayName": "String",
-    "externalCloudAuthorizedApplicationId": "String",
-    "userSyncInbound": {
-      "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
-    }
-  }
+  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
+  "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
+  "displayName": null,
+  "deletedDateTime": "2025-06-18T23:14:25Z",
+  "externalCloudAuthorizedApplicationId": null,
+  "userSyncInbound": null
 }
 ```

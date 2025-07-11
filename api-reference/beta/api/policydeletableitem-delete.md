@@ -1,10 +1,10 @@
 ---
 title: "Delete policyDeletableItem"
 description: "Delete a policyDeletableItem object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "ashyasingh"
 ms.date: 06/18/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -25,7 +25,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "policydeletableitem-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-delete-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-delete-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|Policy.ReadWrite.CrossTenantAccess|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Policy.ReadWrite.CrossTenantAccess|Not available.|
 
 ## HTTP request
 

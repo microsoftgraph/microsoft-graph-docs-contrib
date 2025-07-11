@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resource type showing the deletable policy types.
+Resource type showing the deletable policy types. Policies under this resource type support soft delete functionality meaning they can be deleted and restored within 30 days. After 30 days, the policy is permanently deleted.
 
 This is an abstract type.
 

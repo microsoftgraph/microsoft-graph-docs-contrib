@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Defines the cross-tenant policy for synchronization of users from a partner tenant. Use this user synchronization policy to streamline collaboration between users in a multi-tenant organization by automating the creation, update, and deletion of users from one tenant to another.
 
+Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
+
 ## Methods
 
 |Method|Return type|Description|
@@ -25,11 +27,13 @@ Defines the cross-tenant policy for synchronization of users from a partner tena
 |[Get](../api/crosstenantidentitysyncpolicypartner-get.md)|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Get the user synchronization policy of a partner-specific configuration.|
 |[Update](../api/crosstenantidentitysyncpolicypartner-update.md)|None|Update the user synchronization policy of a partner-specific configuration.|
 |[Delete](../api/crosstenantidentitysyncpolicypartner-delete.md)|None|Delete the user synchronization policy for a partner-specific configuration.|
+|[Restore](../api/crosstenantidentitysyncpolicypartner-restore.md)|None|Restore the user synchronization policy for a partner-specific configuration.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
+|deletedDateTime|DateTimeOffset|Shows the last date and time the policy was deleted.|
 |displayName|String|Display name for the cross-tenant user synchronization policy. Use the name of the partner Microsoft Entra tenant to easily identify the policy. Optional.|
 |tenantId|String|Tenant identifier for the partner Microsoft Entra organization. Read-only.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Defines whether users can be synchronized from the partner tenant. Key. |

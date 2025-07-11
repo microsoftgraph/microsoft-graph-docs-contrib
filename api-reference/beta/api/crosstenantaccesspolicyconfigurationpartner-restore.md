@@ -1,10 +1,10 @@
 ---
-title: "crossTenantAccessPolicyConfigurationPartner: restore"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+title: "Restore crossTenantAccessPolicyConfigurationPartner"
+description: "Restore a partner-specific configuration in a cross-tenant access policy."
+author: "ashyasingh"
 ms.date: 06/18/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Restore a [partner-specific configuration](../resources/crosstenantaccesspolicyconfigurationpartner.md) in a cross-tenant access policy. 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -27,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantaccesspolicyconfigurationpartner-restore-permissions.md)]
 
+[!INCLUDE [rbac-xtap-apis-write](../includes/rbac-for-apis/rbac-xtap-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -34,7 +38,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /policies/crossTenantAccessPolicy/partners/{crossTenantAccessPolicyConfigurationPartnerId}/restore
 POST /policies/deletedItems/crossTenantPartners/{crossTenantAccessPolicyConfigurationPartnerId}/restore
 ```
 
@@ -63,9 +66,8 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/{crossTenantAccessPolicyConfigurationPartnerId}/restore
+POST https://graph.microsoft.com/beta//policies/deletedItems/crossTenantPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb/restore
 ```
-
 
 ### Response
 
@@ -77,38 +79,34 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationPartner"
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
+```json
+  HTTP/1.1 200 OK 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
-    "deletedDateTime": "String (timestamp)",
-    "tenantId": "String (identifier)",
-    "isServiceProvider": "Boolean",
-    "isInMultiTenantOrganization": "Boolean",
-    "inboundTrust": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
-    },
-    "b2bCollaborationOutbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-    },
-    "b2bCollaborationInbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-    },
-    "b2bDirectConnectOutbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-    },
-    "b2bDirectConnectInbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-    },
-    "tenantRestrictions": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyTenantRestrictions"
-    },
-    "automaticUserConsentSettings": {
-      "@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"
-    }
+  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
+  "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
+  "deletedDateTime": "2025-06-18T22:58:04Z",
+  "displayName": null,
+  "isServiceProvider": null,
+  "isInMultiTenantOrganization": false,
+  "blockServiceProviderOutboundAccess": null,
+  "inboundTrust": null,
+  "b2bCollaborationOutbound": null,
+  "b2bCollaborationInbound": null,
+  "b2bDirectConnectOutbound": null,
+  "b2bDirectConnectInbound": null,
+  "tenantRestrictions": null,
+  "invitationRedemptionIdentityProviderConfiguration": null,
+  "crossCloudMeetingConfiguration": {
+    "inboundAllowed": null,
+    "outboundAllowed": null
+  },
+  "automaticUserConsentSettings": {
+    "inboundAllowed": null,
+    "outboundAllowed": null
+  },
+  "protectedContentSharing": {
+    "inboundAllowed": null,
+    "outboundAllowed": null
   }
 }
 ```
