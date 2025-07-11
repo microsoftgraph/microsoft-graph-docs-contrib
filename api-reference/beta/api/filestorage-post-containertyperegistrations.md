@@ -135,12 +135,12 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings",
     "sharingCapability": "disabled",
     "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
-    "isDiscoverabilityEnabled": "true",
-    "isSearchEnabled": "true",
-    "isItemVersioningEnabled": "true",
-    "itemMajorVersionLimit": "50",
-    "maxStoragePerContainerInBytes": "104857600",
-    "isSharingRestricted": "false"
+    "isDiscoverabilityEnabled": true,
+    "isSearchEnabled": true,
+    "isItemVersioningEnabled": true,
+    "itemMajorVersionLimit": 50,
+    "maxStoragePerContainerInBytes": 104857600,
+    "isSharingRestricted": false
   },
   "applicationPermissionGrants": [
     {

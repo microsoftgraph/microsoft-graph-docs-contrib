@@ -84,8 +84,8 @@ Content-Type: application/json
   "settings": {
     "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
     "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
-    "isItemVersioningEnabled": "true",
-    "isSharingRestricted": "false"
+    "isItemVersioningEnabled": true,
+    "isSharingRestricted": false
   },
   "etag": "RVRhZw==",
 }
@@ -117,12 +117,12 @@ Content-Type: application/json
   "settings": {
     "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
     "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
-    "isDiscoverabilityEnabled": "true",
-    "isSearchEnabled": "true",
-    "isItemVersioningEnabled": "true",
-    "itemMajorVersionLimit": "50",
-    "maxStoragePerContainerInBytes": "104857600",
-    "isSharingRestricted": "false",
+    "isDiscoverabilityEnabled": true,
+    "isSearchEnabled": true,
+    "isItemVersioningEnabled": true,
+    "itemMajorVersionLimit": 50,
+    "maxStoragePerContainerInBytes": 104857600,
+    "isSharingRestricted": false,
     "consumingTenantOverridables": "",
   }
 }
@@ -146,8 +146,8 @@ Content-Type: application/json
   "settings": {
     "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
     "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
-    "isItemVersioningEnabled": "true",
-    "isSharingRestricted": "false"
+    "isItemVersioningEnabled": true,
+    "isSharingRestricted": false
   }
 }
 ```

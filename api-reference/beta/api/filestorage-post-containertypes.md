@@ -92,8 +92,8 @@ Content-Type: application/json
   "billingClassification": "trial",
   "settings": {
     "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
-    "isItemVersioningEnabled": "true",
-    "isSharingRestricted": "false",
+    "isItemVersioningEnabled": true,
+    "isSharingRestricted": false,
     "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit"
   }
 }
@@ -127,12 +127,12 @@ Content-Type: application/json
   "settings": {
     "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
     "urlTemplate": "",
-    "isDiscoverabilityEnabled": "true",
-    "isSearchEnabled": "true",
-    "isItemVersioningEnabled": "true",
-    "itemMajorVersionLimit": "50",
-    "maxStoragePerContainerInBytes": "104857600",
-    "isSharingRestricted": "false",
+    "isDiscoverabilityEnabled": true,
+    "isSearchEnabled": true,
+    "isItemVersioningEnabled": true,
+    "itemMajorVersionLimit": 50,
+    "maxStoragePerContainerInBytes": 104857600,
+    "isSharingRestricted": false,
     "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit"
   }
 }
