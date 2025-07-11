@@ -518,9 +518,12 @@
         "educationRubric",
         "educationRubricOutcome",
         "educationSubmission",
-        "educationSubmissionResource"
+        "educationSubmissionResource",
+        "readingAssignmentSubmission",
+        "reflectCheckInResponse"
       ],
       "complexTypes": [
+        "challengingWord",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",

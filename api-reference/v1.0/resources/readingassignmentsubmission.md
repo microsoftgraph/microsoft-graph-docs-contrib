@@ -1,18 +1,16 @@
 ---
 title: "readingAssignmentSubmission resource type"
 description: "Represents a reading assignment that was submitted by a student."
-author: "v-rmanda"
+author: "pateljay-37"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
-ms.date: 07/29/2024
+ms.date: 06/09/2025
 ---
 
 # readingAssignmentSubmission resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a reading assignment that was submitted by a student.
 Inherits from [entity](../resources/entity.md).

@@ -1,18 +1,16 @@
 ---
 title: "challengingWord resource type"
 description: "Represents a word a student found challenging in a reading assignment submission."
-author: "v-rmanda"
+author: "pateljay-37"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
-ms.date: 07/29/2024
+ms.date: 06/09/2025
 ---
 
 # challengingWord resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a word a student found challenging in a reading assignment submission.
 
