@@ -20,15 +20,6 @@ Create a new [externalAuthenticationMethod](../resources/externalauthenticationm
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-
-<!-- {
-  "blockType": "permissions",
-  "name": "authentication-post-externalauthenticationmethods-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/authentication-post-externalauthenticationmethods-permissions.md)]
-
 ### Permissions acting on other users
 
 <!-- {
@@ -41,16 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
-To assign an external authentication method to yourself:
-<!-- { "blockType": "ignored" } -->
-``` http
-POST /me/authentication/externalAuthenticationMethods
-```
 
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
-
-
-To assign an external authentication method to yourself or another user:
+To assign an external authentication method to another user:
 <!-- { "blockType": "ignored" } -->
 ``` http
 POST /users/{usersId}/authentication/externalAuthenticationMethods
@@ -91,7 +74,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/authentication/externalAuthenticationMethods
+POST https://graph.microsoft.com/beta/users/{id}/authentication/externalAuthenticationMethods
 Content-Type: application/json
 
 {
