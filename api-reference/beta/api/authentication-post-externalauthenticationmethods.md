@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [externalAuthenticationMethod](../resources/externalauthenticationmethod.md) object.
+Create a new [externalAuthenticationMethod](../resources/externalauthenticationmethod.md) object. This API doesn't support self-service operations.
 
 ## Permissions
 
