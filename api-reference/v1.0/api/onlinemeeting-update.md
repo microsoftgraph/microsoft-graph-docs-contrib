@@ -16,6 +16,10 @@ Update the properties of the specified [onlineMeeting](../resources/onlinemeetin
 
 For the list of properties that support updating, see the [Request body](#request-body) section.
 
+> [!NOTE]
+> If you invite a contact list of more than 150 members to a meeting, they’ll only be able to access chat during the meeting. If some people in the contact list are required attendees and the rest are optional, add them directly as participant.
+> If adding a contact list will make the chat exceed 1,000 people, you won’t be able to add the list.​​​​​​ Find more details about it [here](https://support.microsoft.com/office/chat-in-microsoft-teams-meetings-64e2cb91-8a11-4781-94ea-fbb23f2b922f)
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions

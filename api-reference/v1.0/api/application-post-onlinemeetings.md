@@ -20,6 +20,10 @@ Create an online meeting on behalf of a user.
 > * This API doesn't create a Teams live event.
 > * To be able to retrieve meeting transcripts at a later stage, use the [Create event](../api/user-post-events.md#example-4-create-and-enable-an-event-as-an-online-meeting) API that is calendar-backed.
 
+> [!NOTE]
+> If you invite a contact list of more than 150 members to a meeting, they’ll only be able to access chat during the meeting. If some people in the contact list are required attendees and the rest are optional, add them directly as participant.
+> If adding a contact list will make the chat exceed 1,000 people, you won’t be able to add the list.​​​​​​ Find more details about it [here](https://support.microsoft.com/office/chat-in-microsoft-teams-meetings-64e2cb91-8a11-4781-94ea-fbb23f2b922f)
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
