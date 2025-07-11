@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /places/{id}/descendants/{placeType}
 ```
 
-`{placeType}` can be any supported place type such as `microsoft.graph.desk`.
+`{placeType}` can be any supported place type such as `microsoft.graph.desk`. A section supports the following descendant types `microsoft.graph.room`, `microsoft.graph.workspace`, `microsoft.graph.desk`.
 
 ## Request headers
 
