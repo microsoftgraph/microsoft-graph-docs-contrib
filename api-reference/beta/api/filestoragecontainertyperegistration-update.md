@@ -125,7 +125,6 @@ Content-Type: application/json
   "expirationDateTime": "02/20/2025",
   "etag": "RVRhZyArIDE=",
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistrationSettings"
     "sharingCapability": "externalUserAndGuestSharing",
     "urlTemplate": "https://app.contoso.com/redirect?tenant={tenant-id}&drive={drive-id}&folder={folder-id}&item={item-id}",
     "isDiscoverabilityEnabled": true,
@@ -151,7 +150,7 @@ Update a fileStorageContainerTypeRegistration without ETag.
 
 <!-- {
   "blockType": "request",
-  "name": "update_filestoragecontainertyperegistration"
+  "name": "update_filestoragecontainertyperegistration_no_etag"
 }
 -->
 ``` http
@@ -191,7 +190,7 @@ In this particular case, urlTemplate isn't overridable.
 
 <!-- {
   "blockType": "request",
-  "name": "update_filestoragecontainertyperegistration"
+  "name": "update_filestoragecontainertyperegistration_not_overridable"
 }
 -->
 ``` http

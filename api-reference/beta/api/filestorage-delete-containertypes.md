@@ -89,7 +89,7 @@ Delete a standard fileStorageContainerType (currently not supported).
 
 <!-- {
   "blockType": "request",
-  "name": "delete_filestoragecontainertype"
+  "name": "delete_filestoragecontainertype_standard"
 }
 -->
 ``` http

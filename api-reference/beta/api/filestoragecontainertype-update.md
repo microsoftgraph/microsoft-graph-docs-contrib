@@ -132,7 +132,7 @@ Content-Type: application/json
 Update a fileStorageContainerType without ETag.
 <!-- {
   "blockType": "request",
-  "name": "update_filestoragecontainertype"
+  "name": "update_filestoragecontainertype_no_etag"
 }
 -->
 ``` http

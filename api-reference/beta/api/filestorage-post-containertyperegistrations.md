@@ -83,7 +83,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 Create a fileStorageContainerTypeRegistration for a trial fileStorageContainerType with some applicationPermissionGrants
 <!-- {
   "blockType": "request",
-  "name": "create_filestoragecontainertyperegistration_from_"
+  "name": "create_filestoragecontainertyperegistration"
 }
 -->
 ``` http
@@ -161,7 +161,7 @@ Content-Type: application/json
 Create a fileStorageContainerTypeRegistration for a standard fileStorageContainerType where billing setup isn't completed.
 <!-- {
   "blockType": "request",
-  "name": "create_filestoragecontainertyperegistration_from_"
+  "name": "create_filestoragecontainertyperegistration_no_billing"
 }
 -->
 ``` http

@@ -85,7 +85,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.fileStorageContainerType"
+  "@odata.type": "#microsoft.graph.fileStorageContainerType",
   "id": "de988700-d700-020e-0a00-0831f3042f00",
   "name": "Container Type Name",
   "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",

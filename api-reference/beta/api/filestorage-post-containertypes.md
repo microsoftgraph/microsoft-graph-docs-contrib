@@ -86,12 +86,10 @@ POST https://graph.microsoft.com/beta/storage/fileStorage/containerTypes
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.fileStorageContainerType",
   "name": "Test Trial Container",
   "owningAppId": "11335700-9a00-4c00-84dd-0c210f203f00",
   "billingClassification": "trial",
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
     "isItemVersioningEnabled": true,
     "isSharingRestricted": false,
     "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit"
@@ -125,7 +123,6 @@ Content-Type: application/json
   "etag": "RVRhZw==",
 
   "settings": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeSettings",
     "urlTemplate": "",
     "isDiscoverabilityEnabled": true,
     "isSearchEnabled": true,
