@@ -20,15 +20,6 @@ Delete an [externalAuthenticationMethod](../resources/externalauthenticationmeth
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-
-<!-- {
-  "blockType": "permissions",
-  "name": "authentication-delete-externalauthenticationmethods-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/authentication-delete-externalauthenticationmethods-permissions.md)]
-
 ### Permissions acting on other users
 <!-- {
   "blockType": "permissions",
@@ -40,15 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To delete your own external authentication method:
-<!-- { "blockType": "ignored" } -->
-``` http
-DELETE /me/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}/$ref
-```
-
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
-
-To delete your own or another user's external authentication method:
+To delete another user's external authentication method:
 <!-- { "blockType": "ignored" } -->
 ``` http
 DELETE /users/{usersId}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}/$ref
@@ -79,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}/$ref
+DELETE https://graph.microsoft.com/beta/users/{id}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}/$ref
 ```
 
 
