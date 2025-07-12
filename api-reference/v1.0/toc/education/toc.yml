@@ -286,6 +286,8 @@ items:
     href: ../../api/reportsroot-list-reflectcheckinresponses.md
 - name: Complex types
   items:
+  - name: Challenging word
+    href: ../../resources/challengingword.md
   - name: Education assignment class recipient
     href: ../../resources/educationassignmentclassrecipient.md
   - name: Education assignment grade
