@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 
 Update the properties of a [bookingBusiness](../resources/bookingbusiness.md) object.
 
+> [!IMPORTANT]
+> Using PATCH to set email or displayName is not supported. Use the Exchange Online PowerShell Set-Mailbox method to update the email or displayName for a Booking Business.
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -41,8 +44,8 @@ PATCH /solutions/bookingBusinesses/{id}
 |businessHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
 |defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
-|displayName|String|A name for the business that interfaces with customers.|
-|email|String|The email address for the business.|
+<!--|displayName|String|A name for the business that interfaces with customers.|-->
+<!--|email|String|The email address for the business.|-->
 |phone|String|The telephone number for the business.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
 |webSiteUrl|String|The URL of the business web site.|
