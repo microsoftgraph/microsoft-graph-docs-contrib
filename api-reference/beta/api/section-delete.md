@@ -65,11 +65,10 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/places/3e7160bb-75da-4456-ab3c-5ee061f4611a
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
