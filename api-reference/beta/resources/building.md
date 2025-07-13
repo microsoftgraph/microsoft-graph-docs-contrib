@@ -21,23 +21,23 @@ Inherits from [place](./place.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/building-list.md)|[building](./building.md) collection|Get a list of the building objects and their properties.|
-|[Get](../api/building-get.md)|[building](./building.md)|Read the properties and relationships of a building object.|
-|[Update](../api/building-update.md)|[building](./building.md)|Update the properties of a building object.|
-|[Delete](../api/building-delete.md)|None|Delete a building object.|
-|[descendants](../api/building-descendants.md)|[place](./place.md) collection|Get all the descendants of a specific type (for example, [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [workspaces](./workspace.md), or [desks](./desk.md)) under a **building**.|
+|[List](../api/building-list.md)|[building](./building.md) collection|Get a list of [building](../resources/building.md) objects and their properties.|
+|[Get](../api/building-get.md)|[building](./building.md)|Read the properties and relationships of a [building](../resources/building.md) object.|
+|[Update](../api/building-update.md)|[building](./building.md)|Update the properties of a [building](../resources/building.md) object.|
+|[Delete](../api/building-delete.md)|None|Delete a [building](../resources/building.md) object.|
+|[Descendants](../api/building-descendants.md)|[place](./place.md) collection|Get all the descendants of a specific type (for example, [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [workspaces](./workspace.md), or [desks](./desk.md)) under a **building**.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](./physicaladdress.md)|The physical address of the **building**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md). |
-|label |String |User-defined description of the place. Inherited from [place](./place.md). |
 |displayName|String|The name that is associated with the place. Inherited from [place](./place.md). |
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **building** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md). |
-|hasWiFi|Boolean|Whether or not the **building** has Wifi. |
-|id|String|A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. Inherited from [entity](./entity.md) |
-|isWheelChairAccessible|Boolean|Whether or not the **building** is wheelchair accessible. Inherited from [place](./place.md). |
-|parentId|String|**id** of a parent [place](../resources/place.md). Inherited from [place](./place.md).|
+|hasWiFi|Boolean|Indicates whether the **building** has a wireless network. |
+|id|String|The unique identifier for the place. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md).|
+|isWheelChairAccessible|Boolean|Indicates whether the **building** is wheelchair accessible. Inherited from [place](./place.md). |
+|label |String |User-defined description of the place. Inherited from [place](./place.md). |
+|parentId|String|The ID of a parent [place](../resources/place.md). Inherited from [place](./place.md).|
 |phone|String|The phone number of the **building**. Inherited from [place](./place.md). |
 |placeId|String|An alternate immutable unique identifier of the **building**. Read-only. Inherited from [place](./place.md). |
 |resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **building**. Inherited from [place](./place.md). |
@@ -59,28 +59,18 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.building",
-  "id": "String (identifier)",
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "placeId": "String",
-  "parentId": "String",
-  "resourceLinks": [
-    {
-      "@odata.type": "microsoft.graph.resourceLink"
-    }
-  ],
-  "tags": [
-    "String"
-  ],
+  "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "hasWiFi": "Boolean",
+  "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
   "label": "String",
-  "hasWiFi": "Boolean"
+  "parentId": "String",
+  "phone": "String",
+  "placeId": "String",
+  "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],
+  "tags": ["String"]
 }
 ```
 
