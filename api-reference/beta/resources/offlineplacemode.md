@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Describes why a desk has been marked as offline and unavailable for booking.
 
-This mode is only supported for [desks](./desk.md).
+This mode is only supported for [desk](./desk.md) objects.
 
 Inherits from [placeMode](../resources/placemode.md).
 
@@ -38,7 +38,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.offlinePlaceMode",
-  "reason": "scheduled maintenance",
+  "reason": "String"
 }
 ```
-
