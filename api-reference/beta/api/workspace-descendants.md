@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the descendants of a specific type under a [workspace](../resources/workspace.md).
+Get all the descendants of a specific type under a [workspace](../resources/workspace.md). This method always returns an empty list because a [workspace](../resources/workspace.md) has no descendant objects.
 
 ## Permissions
 
@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /places/{id}/descendants/{placeType}
 ```
 
-`{placeType}` can be any supported place type such as `microsoft.graph.workspace`. Workspace does not have any descendants hence this method will always return an empty collection. 
+> **Note:** `{placeType}` can be any supported place type such as `microsoft.graph.workspace`. Workspace doesn't have any descendants; hence, this method always returns an empty collection.
 
 ## Request headers
 
@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and an empty collection as workspaces/ desk-pools do not have descendants.
+If successful, this function returns a `200 OK` response code and an empty [place](../resources/place.md) collection.
 
 ## Examples
 
@@ -60,13 +60,13 @@ If successful, this function returns a `200 OK` response code and an empty colle
 The following example shows a request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["a74edd7c-60a4-4066-8f9d-ee6487e04093", "microsoft.graph.workspace"],
   "name": "workspacethis.descendants"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/places/a74edd7c-60a4-4066-8f9d-ee6487e04093/descendants/microsoft.graph.workspace
 ```
-
 
 ### Response
 
