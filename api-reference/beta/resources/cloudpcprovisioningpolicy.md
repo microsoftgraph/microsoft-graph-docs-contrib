@@ -71,7 +71,7 @@ Represents a Cloud PC provisioning policy.
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                                                                           |
 | sharedByUser     | Indicates the provisioning policy when a dedicated Cloud PC is provisioned for each user in the assignment group. Users are always connected to the same Cloud PC. However, Cloud PC availability is limited by the total number of active sessions. |
 | sharedByEntraGroup   | Indicates the provisioning policy associated with Cloud PCs shared by a Microsoft Entra (Azure AD) group. When a shared Cloud PC is provisioned, it becomes available for any user in the Microsoft Entra ID assignment group to connect to. Users may be connected to a different Cloud PC on each connection and availability is limited by the number of provisioned Cloud PCs. |
-| reserve | Indicates that the policy should use dedicated, per-user, time-bound licenses when Cloud PCs are provisioned. These Cloud PCs that use the reserve policy can be checked out and checked in by the user multiple times, and the time-bound license is consumed only after the Cloud PC is checked out. Currently, each user can obtain 10 hours of usage time from each `reserve` service plan instance. |
+| reserve | Indicates that the policy should use dedicated, per-user, time-bound licenses when Cloud PCs are provisioned. These Cloud PCs that use the reserve policy can be checked out and checked in by the user multiple times, and the time-bound license is consumed only after the Cloud PC is checked out. Currently, each user can obtain 10 hours of usage time from each reserve service plan instance. |
 
 ## Relationships
 
