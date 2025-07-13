@@ -66,7 +66,6 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/room
 ```
 
-
 ### Response
 
 The following example shows the response.
