@@ -1,5 +1,5 @@
 ---
-title: "List workspace objects"
+title: "List workspaces"
 description: "Get a list of workspace objects and their properties."
 author: tiwarisakshi02
 ms.date: 06/11/2025
@@ -8,7 +8,7 @@ ms.subservice:
 doc_type: apiPageType
 ---
 
-# List workspace objects
+# List workspaces
 
 Namespace: microsoft.graph
 
