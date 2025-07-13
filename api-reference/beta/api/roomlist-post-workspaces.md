@@ -48,7 +48,7 @@ POST /roomList/workspaces
 
 In the request body, supply a JSON representation of the [workspace](../resources/workspace.md) object.
 
-You can specify the following properties when creating a **workspace**.
+You can specify the following properties when you create a **workspace**.
 
 |Property|Type|Description|
 |:---|:---|:---|
