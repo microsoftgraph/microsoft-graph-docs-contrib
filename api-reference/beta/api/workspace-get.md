@@ -40,7 +40,7 @@ GET /roomList/workspaces/{workspaceId}
 
 ## Optional query parameters
 
-This method supports $select query parameter to help get specific properties. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` query parameter to help get specific properties. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -62,8 +62,6 @@ If successful, this method returns a `200 OK` response code and a [workspace](..
 
 The following example specifies the **id** of a **workspace** to get its properties.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"],
@@ -73,12 +71,6 @@ The following example specifies the **id** of a **workspace** to get its propert
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-workspace-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -97,32 +89,32 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
-    "@odata.type": "#microsoft.graph.workspace",
-    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
-    "emailAddress": "ws100@contoso.com",
-    "displayName": "Workspace 100",
-    "address": {
-      "street": "4567 Main Street",
-      "city": "Buffalo",
-      "state": "NY",
-      "postalCode": "98052",
-      "countryOrRegion": "USA"
-    },
-    "geoCoordinates": {
-      "latitude": 47.640568390488626,
-      "longitude": -122.1293731033803
-    },
-    "phone": "000-000-0000",
-    "nickname": "Workspace",
-    "label": "100",
-    "capacity": 50,
-    "building": "1",
-    "floorNumber": 1,
-    "isWheelChairAccessible": false,
-    "tags": [
-      "bean bags"
-    ],
-    "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+  "@odata.type": "#microsoft.graph.workspace",
+  "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+  "emailAddress": "ws100@contoso.com",
+  "displayName": "Workspace 100",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "latitude": 47.640568390488625,
+    "longitude": -122.1293731033803
+  },
+  "phone": "000-000-0000",
+  "nickname": "Workspace",
+  "label": "100",
+  "capacity": 50,
+  "building": "1",
+  "floorNumber": 1,
+  "isWheelChairAccessible": false,
+  "tags": [
+    "bean bags"
+  ],
+  "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
 }
 ```
