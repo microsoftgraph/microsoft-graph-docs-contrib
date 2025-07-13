@@ -116,40 +116,40 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
-    "@odata.type": "#microsoft.graph.room",
-    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
-    "emailAddress": "cf100@contoso.com",
-    "displayName": "Conf Room 100",
-    "address": {
-      "street": "4567 Main Street",
-      "city": "Buffalo",
-      "state": "NY",
-      "postalCode": "98052",
-      "countryOrRegion": "USA"
-    },
-    "geoCoordinates": {
-      "latitude": 47.0,
-      "longitude": -122.0
-    },
-    "phone": "555-555-0100",
-    "nickname": "Conf Room",
-    "label": "100",
-    "capacity": 50,
-    "building": "1",
-    "floorLabel": "1P",
-    "floorNumber": 1,
-    "isWheelChairAccessible": false,
-    "bookingType": "standard",
-    "tags": [
-      "bean bags"
-    ],
-    "audioDeviceName": null,
-    "videoDeviceName": null,
-    "displayDeviceName": "surface hub",
-    "placeId": "080ed1a0-7b54-4995-85a5-eeec751786f5"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+  "@odata.type": "#microsoft.graph.room",
+  "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+  "emailAddress": "cf100@contoso.com",
+  "displayName": "Conf Room 100",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "latitude": 47,
+    "longitude": -122
+  },
+  "phone": "555-555-0100",
+  "nickname": "Conf Room",
+  "label": "100",
+  "capacity": 50,
+  "building": "1",
+  "floorLabel": "1P",
+  "floorNumber": 1,
+  "isWheelChairAccessible": false,
+  "bookingType": "standard",
+  "tags": [
+    "bean bags"
+  ],
+  "audioDeviceName": null,
+  "videoDeviceName": null,
+  "displayDeviceName": "surface hub",
+  "placeId": "080ed1a0-7b54-4995-85a5-eeec751786f5"
 }
 ```
