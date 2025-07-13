@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /places/{id}/descendants/{placeType}
 ```
 
-`{placeType}` can be any supported place type such as `microsoft.graph.desk`. A section supports the following descendant types `microsoft.graph.room`, `microsoft.graph.workspace`, `microsoft.graph.desk`.
+> **Note:** `{placeType}` can be any supported place type such as `microsoft.graph.desk`. A section supports the following descendant types: `microsoft.graph.room`, `microsoft.graph.workspace`, `microsoft.graph.desk`.
 
 ## Request headers
 
@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [place](../resources/place.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [place](../resources/place.md) objects in the response body.
 
 ## Examples
 
@@ -60,13 +60,13 @@ If successful, this function returns a `200 OK` response code and a [place](../r
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "sectionthis.descendants"
+  "name": "sectionthis.descendants",
+  "sampleKeys": ["3e7160bb-75da-4456-ab3c-5ee061f4611a", "microsoft.graph.desk"]
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/places/3e7160bb-75da-4456-ab3c-5ee061f4611a/descendants/microsoft.graph.desk
 ```
-
 
 ### Response
 
@@ -96,7 +96,7 @@ Content-Type: application/json
         "externalDirectoryObjectId": "d3b84b23-71db-4adc-a916-f0e255a54e5a"
       },
       "resourceLinks": []
-    }, 
+    },
     {
       "id": "2dd2s2gg-b444-84rf-c4d1-f9a8342222s3",
       "placeId": "9d7ed313-993f-430b-ae92-03259e24b509",
