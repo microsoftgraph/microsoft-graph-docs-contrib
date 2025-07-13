@@ -100,7 +100,7 @@ The following JSON representation shows the resource type.
   "cloudPcGroupDisplayName": "String",
   "cloudPcNamingTemplate": "String",
   "createdBy": "String",
-  "createdDateTime": "String (timestamp)"
+  "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
   "domainJoinConfiguration": {"@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"},
