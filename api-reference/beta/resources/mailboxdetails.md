@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents details about a [mailbox](./mailbox.md), including its unique directory identifier and associated email address.
 
-Mailboxes are associated with reservable Places V3 objects such as [desks](./desk.md).
+Mailboxes are associated with reservable Places V3 objects such as [desk](./desk.md) objects.
 
 ## Properties
 |Property|Type|Description|
@@ -37,8 +37,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.mailboxDetails",
-  "externalDirectoryObjectId": "String",
-  "emailAddress": "String"
+  "emailAddress": "String",
+  "externalDirectoryObjectId": "String"
 }
 ```
 
