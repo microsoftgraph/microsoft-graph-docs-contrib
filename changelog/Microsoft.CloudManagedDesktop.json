@@ -7,7 +7,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "reserve",
           "ChangeType": "Addition",
-          "Description": "Added the reserve member to the cloudPcProvisioningType enumeration.",
+          "Description": "Added the `reserve` member to the **cloudPcProvisioningType** enumeration.",
           "Target": "cloudPcProvisioningType"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "createdBy",
           "ChangeType": "Addition",
-          "Description": "Added the createdBy property to the cloudPcProvisioningPolicy resource.",
+          "Description": "Added the **createdBy** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
           "Target": "cloudPcProvisioningPolicy"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "createdDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the createdDateTime property to the cloudPcProvisioningPolicy resource.",
+          "Description": "Added the **createdDateTime** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
           "Target": "cloudPcProvisioningPolicy"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "lastModifiedBy",
           "ChangeType": "Addition",
-          "Description": "Added the lastModifiedBy property to the cloudPcProvisioningPolicy resource.",
+          "Description": "Added the **lastModifiedBy** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
           "Target": "cloudPcProvisioningPolicy"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "lastModifiedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the lastModifiedDateTime property to the cloudPcProvisioningPolicy resource.",
+          "Description": "Added the **lastModifiedDateTime** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
           "Target": "cloudPcProvisioningPolicy"
         }
       ],
@@ -47,7 +47,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-06-30T07:09:52.6940623Z",
-      "WorkloadArea": "Devices and app management",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {
@@ -2791,7 +2791,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-06-12T05:55:14.173894Z",
-      "WorkloadArea": "Devices and app management",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {
@@ -2827,7 +2827,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-07-31T10:21:43.9533784Z",
-      "WorkloadArea": "Devices and app management",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {
@@ -2845,7 +2845,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-05-25T03:34:35.6186992Z",
-      "WorkloadArea": "Devices and app management",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {
