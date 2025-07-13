@@ -14,21 +14,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A **place** object represents different space types within a tenant. A **place** object can be one of the following types:
+Represents different space types within a tenant. A **place** object can be one of the following types.
 
-|Place Type	|Details |
+|Place type	|Details |
 |:--|:--|
 |[building](./building.md) | Represents a building within the tenant and has properties such as name, address, geographic coordinates, and so on. |
-|[floor](./floor.md) |Represents a floor within a building, including properties such as name, parentID, sortOrder, and so on. A building is always the parent of a floor. |
-|[section](./section.md) |Represents a section within a floor, including properties such as name, parentID, label, and so on. A floor is always the parent of a section. |
-|[room](./room.md) |Represents a room within the tenant. All rooms must be associated with Exchange mailboxes. A room can be added to a floor or to a section. The rich properties of the room include an email address for the room, accessibility, capacity, audio device, video device, and so on. |
-|[workspace](./workspace.md) |Represents a collection of desks. All workspaces must be associated with Exchange mailboxes. A workspace can be added to a floor or a section. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
-|[desk](./desk.md) |Represents individual desks. A desk must be added to a section. The rich properties for the section include email address, mode, and accessibility. |
-|[roomList](./roomlist.md) |A collection of rooms in the tenant. Places supports **roomList** to ensure room booking works in Room Finder across all clients on all devices, such as classic Outlook across desktop and mobile. <br/><br/>However, we recommend that you rely on the new **place** types and hierarchy if you do not use **roomFinder** in the tenant. More details on **roomList** can be found at [roomList resource type](./roomlist.md). |
+|[desk](./desk.md) |Represents individual desks. A desk must be added to a section. The rich properties of the section include email address, mode, and accessibility. |
+|[floor](./floor.md) |Represents a floor within a building, including properties such as **name**, **parentId**, **sortOrder**, and so on. A **building** is always the parent of a **floor**. |
+|[room](./room.md) |Represents a room within the tenant. All rooms must be associated with Exchange mailboxes. A **room** can be added to a **floor** or to a **section**. The rich properties of the **room** include an email address for the room, accessibility, capacity, audio device, video device, and so on. |
+|[roomList](./roomlist.md) |A collection of rooms in the tenant. Places supports **roomList** to ensure room booking works in **Room Finder** across all clients on all devices, such as classic Outlook across desktop and mobile. <br/><br/>However, we recommend that you rely on the new **place** types and hierarchy if you don't use **roomFinder** in the tenant. For more information about **roomList**, see the [roomList](./roomlist.md) resource type. |
+|[section](./section.md) |Represents a section within a floor, including properties such as **name**, **parentId**, **label**, and so on. A **floor** is always the parent of a **section**. |
+|[workspace](./workspace.md) |Represents a collection of desks. All workspaces must be associated with Exchange mailboxes. A **workspace** can be added to a **floor** or a **section**. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
 
-## Using the Places API
+### Using the Places API
 
-The Places API can be used by applications that have the right read or write permissions on a **places** object. All the **places** objects have basic properties such as ID, placeID, and display name. While the more advanced spaces such as rooms, workspaces, and desks support properties such as mode, email address, and device information.
+The Places API can be used by applications that have the right read or write permissions on a **place** object. All the **place** objects have basic properties such as ID, place ID, and display name. The more advanced spaces, such as rooms, workspaces, and desks, support properties such as mode, email address, and device information.
 
 ## Methods
 |Method |Return type |Description |
@@ -62,13 +62,13 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |label |String |User-defined description of the **place**.|
 |displayName |String |The name that is associated with the **place**. |
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates. |
-|id |String |A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. |
-|isWheelChairAccessible |Boolean |Whether or not the **place** is wheelchair accessible. |
-|parentId |String |**id** of a parent **place**. |
+|id |String |The unique identifier for the **place**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. |
+|isWheelChairAccessible |Boolean |Indicates whether the **place** is wheelchair accessible. |
+|parentId |String |The ID of a parent **place**. |
 |phone |String |The phone number of the **place**. |
 |placeId |String |An alternate immutable unique identifier of the **place**. Read-only. |
 |resourceLinks |[resourceLink](./resourcelink.md) collection |A set of links to external resources that are associated with the **place**. |
-|tags |Collection(String) |Custom tags that are associated with the **place** for categorization or filtering. |
+|tags |String collection |Custom tags that are associated with the **place** for categorization or filtering. |
 
 ## Relationships
 None.
@@ -85,49 +85,18 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-    "displayName": "Edm.String",
-    "geoCoordinates": {
-        "latitude": "Edm.Double",
-        "longitude": "Edm.Double",
-        "accuracy": "Edm.Double",
-        "altitude": "Edm.Double",
-        "altitudeAccuracy": "Edm.Double"
-    },
-    "phone": "Edm.String",
-    "address": {
-        "type": "unknown | home | business | other",
-        "postOfficeBox": "Edm.String",
-        "street": "Edm.String",
-        "city": "Edm.String",
-        "state": "Edm.String",
-        "countryOrRegion": "Edm.String",
-        "postalCode": "Edm.String"
-    },
-    "placeId": "Edm.String",
-    "parentId": "Edm.String",
-    "description": "Edm.String",
-    "resourceLinks": [
-        {
-            "linkType": "unspecified | blobId | url",
-            "name": "Edm.String",
-            "value": "Edm.String"
-        }
-    ],
-    "tags": "Collection(Edm.String)",
-    "isWheelChairAccessible": "Edm.Boolean",
-    "emailAddress": "Edm.String",
-    "nickname": "Edm.String",
-    "building": "Edm.String",
-    "floorNumber": "Edm.Int32",
-    "label": "Edm.String",
-    "capacity": "Edm.Int32",
-    "bookingType": "unknown | standard | reserved",
-    "audioDeviceName": "Edm.String",
-    "videoDeviceName": "Edm.String",
-    "displayDeviceName": "Edm.String",
-    "floorLabel": "Edm.String",
-    "isTeamsEnabled": "Edm.Boolean"
-} 
-
+  "@odata.type": "#microsoft.graph.place",
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "displayName": "String",
+  "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "id": "String (identifier)",
+  "isWheelChairAccessible": "Boolean",
+  "label": "String",
+  "parentId": "String",
+  "phone": "String",
+  "placeId": "String",
+  "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],
+  "tags": ["String"]
+}
 ```
 
