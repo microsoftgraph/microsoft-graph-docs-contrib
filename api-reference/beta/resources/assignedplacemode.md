@@ -14,17 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the user to whom a desk is assigned.
-
-This mode is only supported for [desks](./desk.md). All the assigned **desks** must be assigned to a user. Either property can be used to assign a **desk** to a user.
+Defines the user to whom a [desk](./desk.md) is assigned. This mode is only supported for **desk** objects. All the assigned **desk** objects must be assigned to a user. Either property can be used to assign a **desk** to a user.
 
 Inherits from [placeMode](../resources/placemode.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedUserEmailAddress|String|Email address of the user to whom the desk is assigned.|
-|assignedUserId|String|User id of the user to whom the desk is assigned.|
+|assignedUserEmailAddress|String|The email address of the user to whom the desk is assigned.|
+|assignedUserId|String|The user ID of the user to whom the desk is assigned.|
 
 ## Relationships
 None.
@@ -39,8 +37,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.assignedPlaceMode ",
-  "assignedPersonId": "u123",
-  "assignedPersonEmailAddress": "meganb@contoso.com"
+  "assignedPersonId": "String",
+  "assignedPersonEmailAddress": "String"
 }
 ```
-
