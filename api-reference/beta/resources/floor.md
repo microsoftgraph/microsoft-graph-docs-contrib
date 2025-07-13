@@ -40,7 +40,7 @@ Inherits from [place](./place.md).
 |phone|String|The phone number of the **floor**. Inherited from [place](./place.md).|
 |placeId|String|An alternate immutable unique identifier of the **floor**. Read-only. Inherited from [place](./place.md).|
 |resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **floor**. Inherited from [place](./place.md).|
-|sortOrder|Int32|Specifies the sort order of the floor. For example, a floor might be named "Lobby" with a sort order of `0` to show this floor first in ordered lists. |
+|sortOrder|Int32|Specifies the sort order of the **floor**. For example, a floor might be named "Lobby" with a sort order of `0` to show this floor first in ordered lists. |
 |tags|String collection|Custom tags that are associated with the **floor** for categorization or filtering. Inherited from [place](./place.md).|
 
 ## Relationships
