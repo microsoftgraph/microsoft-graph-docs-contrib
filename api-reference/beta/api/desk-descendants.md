@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the descendants of a specific type under a [desk](../resources/place.md).
-
-This method always returns an empty list because a [desk](../resources/desk.md) have no descendant objects.
+Get all the descendants of a specific type under a [desk](../resources/place.md). This method always returns an empty list because a [desk](../resources/desk.md) has no descendant objects.
 
 ## Permissions
 
@@ -63,7 +61,8 @@ If successful, this function returns a `200 OK` response code and an empty [plac
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "deskthis.descendants"
+  "name": "deskthis.descendants",
+  "sampleKeys": ["fa1e9144-b4ba-4e53-9186-2ef453f4017f", "microsoft.graph.desk"]
 }
 -->
 ``` http
