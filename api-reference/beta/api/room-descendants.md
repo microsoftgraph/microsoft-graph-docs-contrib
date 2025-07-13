@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the descendants of a specific type under a [room](../resources/room.md).
+Get all the descendants of a specific type under a [room](../resources/room.md). This method always returns an empty list because a [room](../resources/room.md) has no descendant objects.
 
 ## Permissions
 
@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /places/{id}/descendants/{placeType}
 ```
 
-`{placeType}` can be any supported place type such as `microsoft.graph.room`. Room does not have any descendants hence this method will always return an empty collection. 
+> **Note:** `{placeType}` can be any supported place type such as `microsoft.graph.room`. Room doesn't have any descendants; hence, this method always returns an empty collection.
 
 ## Request headers
 
@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code with an empty collection as room does not have descendants.
+If successful, this function returns a `200 OK` response code and an empty [place](../resources/place.md) collection.
 
 ## Examples
 
@@ -66,7 +66,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/places/085908dd-f248-4c43-8969-91810f78e559/descendants/microsoft.graph.room
 ```
-
 
 ### Response
 
