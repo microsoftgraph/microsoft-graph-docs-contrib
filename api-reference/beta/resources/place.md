@@ -33,12 +33,12 @@ The Places API can be used by applications that have the right read or write per
 ## Methods
 |Method |Return type |Description |
 |:--|:--|:--|
-|[List](../api/place-list.md) |A list of **place** objects |Get the properties and relationships of multiple **place** objects. |
-|[Create](../api/place-post-places.md) |Created **place** |Create a new **place**. | 
-|[Get](../api/place-get.md) |The requested, derived type of **place** |Get the properties and relationships of a specified **place** object.|
-|[Update](../api/place-update.md) |The requested, derived type of **place** |Update the properties and relationships of a specified **place** object. |
-|[Delete](../api/place-delete.md) |None |Delete a **place** with the specified id. |
-|[descendants](../api/place-descendants.md) |List of **place** objects |Get all the descendants of a specific type (for example, [buildings](./building.md), [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [workspaces](./workspace.md), or [desks](./desk.md)) under a **place**. | 
+|[List](../api/place-list.md) |[place](./place.md) collection |Get a list of the specified type of [place](../resources/place.md) objects defined in the tenant, which can be [buildings](../resources/building.md), [floors](../resources/floor.md), [sections](../resources/section.md), [rooms](../resources/room.md), [workspaces](../resources/workspace.md), or [desks](../resources/desk.md). |
+|[Create](../api/place-post-places.md) |[place](./place.md) |Create a new [place](../resources/place.md) object.| 
+|[Get](../api/place-get.md) |[place](./place.md) |Read the properties of a [place](../resources/place.md) object. Returns the requested, derived type of **place**.|
+|[Update](../api/place-update.md) |[place](./place.md) |Update the properties of a [place](../resources/place.md) object. Returns the requested, derived type of **place**. |
+|[Delete](../api/place-delete.md) |None |Delete a [place](../resources/place.md) object. |
+|[descendants](../api/place-descendants.md) |[place](./place.md) collection|Get all the descendants of a specific type (for example, [buildings](./building.md), [floors](./floor.md), [sections](./section.md), [rooms](./room.md), [workspaces](./workspace.md), or [desks](./desk.md)) under a **place**. | 
 
 The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions support similar lookups for rooms and room lists in a tenant. The following table compares the places API and these functions.
 
