@@ -74,21 +74,20 @@ PATCH /roomList/workspaces/{workspaceId}
 
 If successful, this method returns a `200 OK` response code and an updated [workspace](../resources/workspace.md) object in the response body.
 
-### Example
+## Example
 
-#### Request
+### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["ws100@contoso.com"],
+  "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"],
   "name": "update_workspace"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
-Content-type: application/json
+Content-Type: application/json
 
 {
   "@odata.type": "microsoft.graph.workspace",
@@ -100,7 +99,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 
@@ -114,36 +113,36 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
-    "@odata.type": "#microsoft.graph.workspace",
-    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
-    "emailAddress": "ws100@contoso.com",
-    "displayName": "Workspace 100",
-    "address": {
-      "street": "4567 Main Street",
-      "city": "Buffalo",
-      "state": "NY",
-      "postalCode": "98052",
-      "countryOrRegion": "USA"
-    },
-    "geoCoordinates": {
-      "latitude": 47.0,
-      "longitude": -122.0
-    },
-    "phone": "555-555-0100",
-    "nickname": "Workspace",
-    "label": "100",
-    "capacity": 50,
-    "building": "1",
-    "floorLabel": "1P",
-    "floorNumber": 1,
-    "isWheelChairAccessible": false,
-    "tags": [
-      "bean bags"
-    ],
-    "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+  "@odata.type": "#microsoft.graph.workspace",
+  "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+  "emailAddress": "ws100@contoso.com",
+  "displayName": "Workspace 100",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "latitude": 47,
+    "longitude": -122
+  },
+  "phone": "555-555-0100",
+  "nickname": "Workspace",
+  "label": "100",
+  "capacity": 50,
+  "building": "1",
+  "floorLabel": "1P",
+  "floorNumber": 1,
+  "isWheelChairAccessible": false,
+  "tags": [
+    "bean bags"
+  ],
+  "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
 }
 ```
