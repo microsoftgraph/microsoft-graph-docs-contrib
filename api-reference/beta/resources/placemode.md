@@ -1,6 +1,6 @@
 ---
 title: "placeMode resource type"
-description: "Abstract base type for modes for desks and workspaces."
+description: "Represents an abstract base type for modes of desks and workspaces."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type for **modes** for [desks](./desk.md) and [workspaces](./workspace.md).
+Represents an abstract base type for modes of [desk](./desk.md) and [workspace](./workspace.md) objects.
 
-This is the base type of [reservableplacemode](./reservableplacemode.md), [dropInUpPlaceMode](./dropinplacemode.md), [assignedPlaceMode](./assignedplacemode.md), and [offlinePlaceMode](./offlineplacemode.md).
+Base type of [assignedPlaceMode](./assignedplacemode.md), [dropInUpPlaceMode](./dropinplacemode.md), [offlinePlaceMode](./offlineplacemode.md), [reservablePlaceMode](./reservableplacemode.md).
 
 ## Properties
 
