@@ -40,7 +40,7 @@ GET /roomList/rooms/{roomId}
 
 ## Optional query parameters
 
-This method supports $select query parameter to help get specific properties. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` query parameter to help get specific properties. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -72,9 +72,6 @@ The following example specifies the **id** of a **room** to get its properties.
 GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
 
-
----
-
 ### Response
 
 The following example shows the response.
@@ -90,39 +87,39 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
-    "@odata.type": "#microsoft.graph.room",
-    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
-    "emailAddress": "cf100@contoso.com",
-    "displayName": "Conf Room 100",
-    "address": {
-      "street": "4567 Main Street",
-      "city": "Buffalo",
-      "state": "NY",
-      "postalCode": "98052",
-      "countryOrRegion": "USA"
-    },
-    "geoCoordinates": {
-      "latitude": 47.640568390488626,
-      "longitude": -122.1293731033803
-    },
-    "phone": "000-000-0000",
-    "nickname": "Conf Room",
-    "label": "100",
-    "capacity": 50,
-    "building": "1",
-    "floorNumber": 1,
-    "isWheelChairAccessible": false,
-    "bookingType": "standard",
-    "tags": [
-      "bean bags"
-    ],
-    "audioDeviceName": null,
-    "videoDeviceName": null,
-    "displayDeviceName": "surface hub",
-    "placeId": "62cfc8cb-fc2b-4783-aeea-f9ce0f8e2904"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+  "@odata.type": "#microsoft.graph.room",
+  "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+  "emailAddress": "cf100@contoso.com",
+  "displayName": "Conf Room 100",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "latitude": 47.640568390488625,
+    "longitude": -122.1293731033803
+  },
+  "phone": "000-000-0000",
+  "nickname": "Conf Room",
+  "label": "100",
+  "capacity": 50,
+  "building": "1",
+  "floorNumber": 1,
+  "isWheelChairAccessible": false,
+  "bookingType": "standard",
+  "tags": [
+    "bean bags"
+  ],
+  "audioDeviceName": null,
+  "videoDeviceName": null,
+  "displayDeviceName": "surface hub",
+  "placeId": "62cfc8cb-fc2b-4783-aeea-f9ce0f8e2904"
 }
 ```
