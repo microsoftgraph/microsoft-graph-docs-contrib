@@ -80,12 +80,11 @@ PATCH https://graph.microsoft.com/beta/places/f7de7265-e420-47b4-9d49-28d7287162
 Content-Type: application/json
 
 {
-"@odata.type": "#microsoft.graph.section",
+  "@odata.type": "#microsoft.graph.section",
   "displayName": "Updated Section 1",
   "isWheelChairAccessible": true
 }
 ```
-
 
 ### Response
 
@@ -103,35 +102,33 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.section",
-      "id": "f7de7265-e420-47b4-9d49-28d728716241",
-      "placeId": "f7de7265-e420-47b4-9d49-28d728716241",
-      "displayName": "Updated Section 1",
-       "phone": "+1 425-555-1234",
-        "parentId": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
-         "tags": [
-                "Engineering", 
-                "East-Side"
-            ],
-          "isWheelChairAccessible": true,
-           "label": "This section is dedicated to engineering design.",
-            "address": {
-       	 "type": null,
-       	 "postOfficeBox": null,
-      	  "street": "1 Microsoft Way",
-      	  "city": "Redmond",
-      	  "state": "WA",
-      	  "countryOrRegion": "US",
-      	  "postalCode": "98052"
-  	  },
-            "geoCoordinates": {
-                "latitude": 47.639611,
-                "longitude": -122.128011,
-                "accuracy": 0,
-                "altitude": 0,
-                "altitudeAccuracy": 0
-            },
-            "resourceLinks": [ ]
-
+  "id": "f7de7265-e420-47b4-9d49-28d728716241",
+  "placeId": "f7de7265-e420-47b4-9d49-28d728716241",
+  "displayName": "Updated Section 1",
+  "phone": "+1 425-555-1234",
+  "parentId": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
+  "tags": [
+    "Engineering",
+    "East-Side"
+  ],
+  "isWheelChairAccessible": true,
+  "label": "This section is dedicated to engineering design.",
+  "address": {
+    "type": null,
+    "postOfficeBox": null,
+    "street": "1 Microsoft Way",
+    "city": "Redmond",
+    "state": "WA",
+    "countryOrRegion": "US",
+    "postalCode": "98052"
+  },
+  "geoCoordinates": {
+    "latitude": 47.639611,
+    "longitude": -122.128011,
+    "accuracy": 0,
+    "altitude": 0,
+    "altitudeAccuracy": 0
+  },
+  "resourceLinks": []
 }
 ```
-
