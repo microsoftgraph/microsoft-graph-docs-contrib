@@ -60,7 +60,8 @@ If successful, this function returns a `200 OK` response code and an empty [plac
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "roomthis.descendants"
+  "name": "roomthis.descendants",
+  "sampleKeys": ["085908dd-f248-4c43-8969-91810f78e559", "microsoft.graph.room"]
 }
 -->
 ``` http
