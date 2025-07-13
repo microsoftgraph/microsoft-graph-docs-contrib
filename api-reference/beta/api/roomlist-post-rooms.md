@@ -48,7 +48,7 @@ POST /roomList/rooms
 
 In the request body, supply a JSON representation of the [room](../resources/room.md) object.
 
-You can specify the following properties when creating a **room**.
+You can specify the following properties when you create a **room**.
 
 |Property|Type|Description|
 |:---|:---|:---|
