@@ -1,6 +1,6 @@
 ---
 title: "List section objects"
-description: "Get a list of sections and their properties."
+description: "Get a list of section objects and their properties."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [sections](../resources/section.md) and their properties.
+Get a list of [section](../resources/section.md) objects and their properties.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /places/{placeType}
 
 ## Optional query parameters
 
-This method supports `$select`, `$top`, and `$skip` query parameters to help customize the response. Use `$top` to customize the page size. The default page size is 1000. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$top`, and `$skip` query parameters to help customize the response. Use `$top` to customize the page size. The default page size is 1000. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -62,13 +62,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_section"
+  "name": "list_section",
+  "sampleKeys": ["microsoft.graph.section"]
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/places/microsoft.graph.section
 ```
-
 
 ### Response
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.section"
+  "@odata.type": "Collection(microsoft.graph.section)"
 }
 -->
 ``` http
@@ -87,37 +87,35 @@ Content-Type: application/json
 {
   "value": [
     {
-            "id": "f7de7265-e420-47b4-9d49-28d728716241",
-            "placeId": "f7de7265-e420-47b4-9d49-28d728716241",
-            "displayName": "Engineering design section",
-            "phone": "+1 425-555-1234",
-            "parentId": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
-            "tags": [
-                "Engineering", 
-                "East-Side"
-            ],
-            "isWheelChairAccessible": false,
-            "label": "This section is dedicated to engineering design.",
-            "address": {
-       	 "type": null,
-       	 "postOfficeBox": null,
-      	  "street": "1 Microsoft Way",
-      	  "city": "Redmond",
-      	  "state": "WA",
-      	  "countryOrRegion": "US",
-      	  "postalCode": "98052"
-  	  },
-            "geoCoordinates": {
-                "latitude": 47.639611,
-                "longitude": -122.128011,
-                "accuracy": 0,
-                "altitude": 0,
-                "altitudeAccuracy": 0
-            },
-            "resourceLinks": [ ]
-
+      "id": "f7de7265-e420-47b4-9d49-28d728716241",
+      "placeId": "f7de7265-e420-47b4-9d49-28d728716241",
+      "displayName": "Engineering design section",
+      "phone": "+1 425-555-1234",
+      "parentId": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
+      "tags": [
+        "Engineering",
+        "East-Side"
+      ],
+      "isWheelChairAccessible": false,
+      "label": "This section is dedicated to engineering design.",
+      "address": {
+        "type": null,
+        "postOfficeBox": null,
+        "street": "1 Microsoft Way",
+        "city": "Redmond",
+        "state": "WA",
+        "countryOrRegion": "US",
+        "postalCode": "98052"
+      },
+      "geoCoordinates": {
+        "latitude": 47.639611,
+        "longitude": -122.128011,
+        "accuracy": 0,
+        "altitude": 0,
+        "altitudeAccuracy": 0
+      },
+      "resourceLinks": []
     }
   ]
 }
 ```
-
