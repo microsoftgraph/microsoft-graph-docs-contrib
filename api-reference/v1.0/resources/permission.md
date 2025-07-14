@@ -95,7 +95,7 @@ Permissions with an [**invitation**][SharingInvitation] facet represent permissi
 |:----------------|:-------------------------------------------------------------------------------|
 | read            | Provides the ability to read the metadata and contents of the item.            |
 | write           | Provides the ability to read and modify the metadata and contents of the item. |
-| fullcontrol           | For SharePoint and OneDrive for Business this represents the owner role.       |
+| fullcontrol     | For SharePoint and OneDrive for Business this represents the owner role.       |
 
 ## Sharing links
 The most common type of permissions is sharing links.
