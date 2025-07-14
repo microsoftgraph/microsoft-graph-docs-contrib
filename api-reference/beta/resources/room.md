@@ -99,7 +99,7 @@ The following JSON representation shows the resource type.
   "nickname": "String",
   "parentId": "String",
   "phone": "String",
-  "placeId": "String",
+  "placeId": "String (alternate identifier)",
   "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],
   "tags": ["String"],
   "videoDeviceName": "String"
