@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [conversationMembers](../resources/conversationmember.md) from a [channel](../resources/channel.md). This includes direct members of standard, private, and shared channels. Use the [list all members]((../api/channel-list-allmembers.md)) API to retrieve both direct and indirect members of a shared channel.
+Retrieve a list of [conversationMembers](../resources/conversationmember.md) from a [channel](../resources/channel.md). This includes direct members of standard, private, and shared channels. Use the [list all members](../api/channel-list-allmembers.md) API to retrieve both direct and indirect members of a shared channel.
 
 
 
