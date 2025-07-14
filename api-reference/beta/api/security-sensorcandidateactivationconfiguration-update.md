@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_sensorcandidateactivationconfiguration_from_"
+  "name": "update_sensorcandidateactivationconfiguration"
 }
 -->
 ``` http
@@ -84,8 +84,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.sensorCandidateActivationConfiguration"
+  "truncated": true
 }
 -->
 ``` http
