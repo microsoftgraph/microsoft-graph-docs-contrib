@@ -34,7 +34,7 @@ Inherits from [place](./place.md).
 |displayDeviceName |String |The name of the display device (such as a monitor or projector) that is available at the **desk**. |
 |displayName|String|The name that is associated with the **desk**. Inherited from [place](./place.md).|
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **desk** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
-|id|String|The unique identifier for the **desk**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [entity](./entity.md). |
+|id|String|The unique identifier for the **desk**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md). |
 |isWheelChairAccessible|Boolean|Indicates whether the **desk** is wheelchair accessible. Inherited from [place](./place.md).|
 |label |String |User-defined description of the **desk**. Inherited from [place](../resources/place.md).|
 |mailboxDetails |[mailboxDetails](mailboxdetails.md) |The mailbox object **id** and email address that are associated with the desk. |
