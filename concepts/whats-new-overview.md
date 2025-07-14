@@ -28,6 +28,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession) extends the expiration time.
 
+### Teamwork and communications | Messaging
+
+[Send a message with a Loop component](/graph/api/chatmessage-post).
+
 ## July 2025: New in preview only
 
 ### Device and app management | Cloud PC
@@ -72,7 +76,6 @@ New rate limits apply to Cloud PC APIs. The [List Cloud PCs](/graph/api/virtuale
 - Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it's over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight?view=graph-rest-beta&preserve-view=true).
 - [Get a webinar registration by ID and include sessions](/graph/api/virtualeventregistration-get?view=graph-rest-beta&preserve-view=true#example-2-get-a-webinar-registration-by-ID-and-include-sessions)
 - Use the **videoOnDemandWebUrl** on [virtualEventSession](/graph/api/resources/virtualeventsession) to get the [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
-
 
 ### Teamwork and communications | Messaging
 
