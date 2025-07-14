@@ -689,6 +689,56 @@
       "CreatedDateTime": "2025-01-30T00:00:00",
       "WorkloadArea": "Change notifications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+       {
+          "Id": "b2f8b874-6182-4a6a-b79c-58b6ffdeb218",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the method to [delete](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-v1.0) a subscription for [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiinteraction?view=graph-rest-v1.0).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "b2f8b874-6182-4a6a-b79c-58b6ffdeb218",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the method to [update](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-v1.0) a subscription for [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiinteraction?view=graph-rest-v1.0).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "b2f8b874-6182-4a6a-b79c-58b6ffdeb218",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the methods to [get](https://learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-v1.0) and [list](https://learn.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-v1.0) a subscription for [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiinteraction?view=graph-rest-v1.0).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "b2f8b874-6182-4a6a-b79c-58b6ffdeb218",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the method to [create](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0) a subscription for [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiinteraction?view=graph-rest-v1.0).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "b2f8b874-6182-4a6a-b79c-58b6ffdeb218",
+          "ApiChange": "Method",
+          "ChangedApiName": "reauthorize",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the method to [reauthorize](https://learn.microsoft.com/en-us/graph/api/subscription-reauthorize?view=graph-rest-v1.0) a subscription for [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiinteraction?view=graph-rest-v1.0).",
+          "Target": "subscription"
+       }
+      ],
+      "Id": "b2f8b874-6182-4a6a-b79c-58b6ffdeb218",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-07-14T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
     }
   ]
 }
