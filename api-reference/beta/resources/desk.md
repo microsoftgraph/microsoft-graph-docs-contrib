@@ -38,11 +38,7 @@ Inherits from [place](./place.md).
 |isWheelChairAccessible|Boolean|Indicates whether the **desk** is wheelchair accessible. Inherited from [place](./place.md).|
 |label |String |User-defined description of the **desk**. Inherited from [place](../resources/place.md).|
 |mailboxDetails |[mailboxDetails](mailboxdetails.md) |The mailbox object **id** and email address that are associated with the desk. |
-|mode |[placeMode](./placemode.md) |The mode of the desk. The supported modes are:
-<ul><li>**assigned** - Desks that are assigned to a user.</li>
-<li>**reservable** - Desks that can be booked in advance using desk reservation tools.</li>
-<li>**dropin** - First come, first served desks. When you plug into a peripheral on one of these desks, the desk is booked for you, assuming the peripheral is associated with the desk in the Teams Pro management portal.</li>
-<li>**offline** - Desk that is taken down for maintenance or marked as not reservable.</li></ul> |
+|mode |[placeMode](./placemode.md) |The mode of the desk. The supported modes are:<ul><li>`assigned` - Desks that are assigned to a user.</li><li>`reservable` - Desks that can be booked in advance using desk reservation tools.</li><li>`dropin` - First come, first served desks. When you plug into a peripheral on one of these desks, the desk is booked for you, assuming the peripheral is associated with the desk in the Teams Pro management portal.</li><li>`offline` - Desk that is taken down for maintenance or marked as not reservable.</li></ul> |
 |parentId|String|The ID of a parent [place](../resources/place.md). Inherited from [place](./place.md).|
 |phone|String|The phone number of the **desk**. Inherited from [place](./place.md).|
 |placeId|String|An alternate immutable unique identifier of the **desk**. Read-only. Inherited from [place](./place.md).|
