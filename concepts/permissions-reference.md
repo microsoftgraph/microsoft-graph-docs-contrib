@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 06/02/2025
+ms.date: 07/07/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -2633,6 +2633,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### EngagementMeetingConversation.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | d746beae-b46e-446e-924a-5b805a5c4467 | 58c5819e-29bd-4400-ad52-82cd82a63fbd |
+| DisplayText | Read all Viva Engage Teams QA conversations | Read all Viva Engage Teams QA conversations |
+| Description | Allows the app to list Viva Engage Teams QA conversations, and to read their properties without a signed-in user. | Allows the app to read Viva Engage Teams QA conversations, and to read their properties on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### EngagementRole.Read
 
 | Category | Application | Delegated |
@@ -3091,6 +3102,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | dbaae8cf-10b5-4b86-a4a1-f871c94c6695 | f81125ac-d3b7-4573-a3b2-7099cc39df9e |
 | DisplayText | Read and write all group memberships | Read and write group memberships |
 | Description | Allows the app to list groups, read basic properties, read and update the membership of the groups this app has access to without a signed-in user. Group properties and owners cannot be updated and groups cannot be deleted. | Allows the app to list groups, read basic properties, read and update the membership of the groups the signed-in user has access to. Group properties and owners cannot be updated and groups cannot be deleted. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### GroupSettings.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f3c4f514-c65a-43f5-bfce-1735872258dd | 2eb2bc92-94ef-4c6b-b4ab-2a09bc975e0e |
+| DisplayText | Read all group settings | Read all group settings that user can access |
+| Description | Allows the app to read a list of tenant-level or group-specific group settings objects, without a signed-in user. | Allows the app to read a list of tenant-level or group-specific group settings objects, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### GroupSettings.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 546168c3-1183-4281-9491-fafb24dea37e | c1691a6d-99e2-4cfa-b4b5-9e4d67dc0f36 |
+| DisplayText | Read and write all group settings | Read and write all group settings that user can access |
+| Description | Allows the app to create, read, update, and delete on the list of tenant-level or group-specific group settings objects, without a signed-in user. | Allows the app to create, read, update, and delete on the list of tenant-level or group-specific group settings objects that you have access to in the organization, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -4757,6 +4790,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Policy.Read.AuthenticationMethod
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 8e3bc81b-d2f3-4b7b-838c-32c88218d2f0 | a6ff13ac-1851-4993-8ca9-a671d70de2d5 |
+| DisplayText | Read authentication method policies | Read authentication method policies |
+| Description | Allows the app to read all authentication method policies for the tenant, without a signed-in user.  | Allows the app to read the authentication method policies, on behalf of the signed-in user.  |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### Policy.Read.ConditionalAccess
 
 | Category | Application | Delegated |
@@ -6197,10 +6241,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | 57f0b71b-a759-45a0-9a0f-cc099fbd9a44 | - |
-| DisplayText | Evaluate sensitivity labels | - |
-| Description | Allow the app to determine if there is any sensitivity label to be applied automatically to the content or recommended to the user for manual application, without a signed-in user. | - |
-| AdminConsentRequired | Yes | - |
+| Identifier | 57f0b71b-a759-45a0-9a0f-cc099fbd9a44 | a4633e44-d355-4474-99df-8c2de6b0e39e |
+| DisplayText | Evaluate sensitivity labels | Evaluate sensitivity labels |
+| Description | Allow the app to determine if there is any sensitivity label to be applied automatically to the content or recommended to the user for manual application, without a signed-in user. | Allow the app to determine if there is any sensitivity label to be applied automatically to the content or recommended to the user for manual application, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -6208,10 +6252,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | 986fa56a-6680-4aac-af09-4d1765376739 | - |
-| DisplayText | Evaluate labels tenant scope. | - |
-| Description | Allows the app to evaluate all sensitivity label. | - |
-| AdminConsentRequired | Yes | - |
+| Identifier | 986fa56a-6680-4aac-af09-4d1765376739 | a42e3c42-b31e-4919-b699-696dca5dc9e7 |
+| DisplayText | Evaluate labels tenant scope. | Evaluate labels tenant scope. |
+| Description | Allows the app to evaluate all sensitivity label. | Allows the app to evaluate all sensitivity label. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -6219,10 +6263,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | 3b8e7aad-f6e3-4299-83f8-6fc6a5777f0b | - |
-| DisplayText | Get labels application scope. | - |
-| Description | Allows the app to get sensitivity labels. | - |
-| AdminConsentRequired | Yes | - |
+| Identifier | 3b8e7aad-f6e3-4299-83f8-6fc6a5777f0b | 1aeb73ce-68d7-49b7-913a-eedc80844551 |
+| DisplayText | Get labels application scope. | Get labels user scope. |
+| Description | Allows the app to get sensitivity labels. | Allows the app to get sensitivity labels. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -6230,10 +6274,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | e46a01e9-b2cf-4d89-8424-bcdc6dd445ab | - |
-| DisplayText | Get labels tenant scope. | - |
-| Description | Allows the app to get sensitivity labels. | - |
-| AdminConsentRequired | Yes | - |
+| Identifier | e46a01e9-b2cf-4d89-8424-bcdc6dd445ab | 8b377c27-ea19-4863-a948-8a8588c8f2c3 |
+| DisplayText | Get labels tenant scope. | Get labels app scope. |
+| Description | Allows the app to get sensitivity labels. | Allows the app to get sensitivity labels. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -8173,6 +8217,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### UserCloudClipboard.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 61e8a09a-087f-4e36-8c8c-1c77c5228017 |
+| DisplayText | - | Read cloud clipboard items |
+| Description | - | Allows the app to read cloud clipboard data on behalf of the signed-in user. |
+| AdminConsentRequired | - | No |
+
+---
+
 ### UserNotification.ReadWrite.CreatedByApp
 
 | Category | Application | Delegated |
@@ -8427,6 +8482,7 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 | ChatSettings.ReadWrite.Chat | ed928a9c-7530-496a-a624-4c0a460ab3ed | Read and write this chat's settings | Allows the app to read and write this chat's settings, without a signed-in user. |
 | Member.Read.Group | 0a8ce3c7-89dd-46cf-b2c3-5ef0064437a8 | Read this group's members | Allows the app to read the basic profile of this group's members, without a signed-in user. |
 | OnlineMeeting.ReadBasic.Chat | eda8d262-4e6e-4ff6-a7ba-a2fb50535165 | Read basic properties of meetings associated with this chat | Allows the app to read basic properties, such as name, schedule, organizer, join link, and start or end notifications, of meetings associated with this chat, without a signed-in user. |
+| OnlineMeetingArtifact.Read.Chat | c5d06837-8c0d-42fc-9e49-545e3f941261 | Read virtual event artifacts | Read attendance reports & attendance records for this webinar or town hall. |
 | OnlineMeetingNotification.Send.Chat | d9837fe0-9c31-4faa-8acb-b10874560161 | Send notifications in the meetings associated with this chat | Allows the app to send notifications inside meetings associated with this chat, without a signed-in user. |
 | OnlineMeetingParticipant.Read.Chat | 6324a770-185c-4b4f-be13-2d9a1668e6eb | Read the participants of the meetings associated with this chat | Allows the app to read participant information, including name, role, id, joined and left times, of meetings associated with this chat, without a signed-in user. |
 | OnlineMeetingRecording.Read.Chat | d20f0153-08ff-48a9-b299-96a8d1131d1d | Read the recordings of the meetings associated with this chat  | Allows the app to read recordings of the meetings associated with this chat, without a signed-in user. |
@@ -8451,6 +8507,8 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 | TeamsTab.Read.Group | 60d920d0-44e7-44f4-a811-1a172a2ea5b3 | Read this team's tabs | Allows the app to read this team's tabs, without a signed-in user. |
 | TeamsTab.ReadWrite.Chat | d583f4d7-57da-4b2c-9744-253e9ec3c7be | Manage this chat's tabs | Allows the app to manage this chat's tabs, without a signed-in user. |
 | TeamsTab.ReadWrite.Group | 717ca3a4-bc73-47f8-b613-4d43e657fa9c | Manage this team's tabs | Allows the app to manage this team's tabs, without a signed-in user. |
+| VirtualEvent.Read.Chat | 298266a0-fbf7-4804-b988-5a54e61566c8 | Read virtual event details | Read information for this webinars or town halls, including schedules, speakers, and event settings and webinar registrations. |
+| VirtualEventRegistration-Anon.ReadWrite.Chat | 0e646cc8-6b07-4030-9a41-a7db4644b4cc | Manage virtual event registrations | Register attendees and cancel registrations for this webinar. |
 
 ---
 

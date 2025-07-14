@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Read the details of a built-in workflow [task](../resources/identitygovernance-taskdefinition.md) in Lifecycle Workflows.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

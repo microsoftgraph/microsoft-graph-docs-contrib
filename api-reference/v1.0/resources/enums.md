@@ -3,14 +3,91 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 03/10/2025
+ms.date: 06/23/2025
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
+ms.custom: sfi-ropc-nochange
 ---
 
 # Enum values
 
 Namespace: microsoft.graph
+
+### responseFeedbackType values
+
+| Member |
+| -------------------- |
+| none |
+| notDetected |
+| veryUnpleasant |
+| unpleasant |
+| neutral |
+| pleasant |
+| veryPleasant |
+| unknownFutureValue |
+
+### responseEmotionType values
+
+| Member |
+| -------------------- |
+| none |
+| confident |
+| excited |
+| happy |
+| motivated |
+| peaceful |
+| ambitious |
+| cheerful |
+| comfortable |
+| creative |
+| determined |
+| energized |
+| focused |
+| fulfilled |
+| grateful |
+| included |
+| inspired |
+| optimistic |
+| proud |
+| successful |
+| valuable |
+| annoyed |
+| bored |
+| calm |
+| confused |
+| glad |
+| content |
+| pensive |
+| reserved |
+| restless |
+| shocked |
+| tired |
+| angry |
+| depressed |
+| exhausted |
+| lonely |
+| nervous |
+| anxious |
+| apathetic |
+| concerned |
+| disappointed |
+| frightened |
+| frustrated |
+| hopeless |
+| hurt |
+| jealous |
+| miserable |
+| overwhelmed |
+| skeptical |
+| stressed |
+| stuck |
+| worthless |
+| awed |
+| ashamed |
+| curious |
+| sensitive |
+| sad |
+| unknownFutureValue |
 
 ### virtualEventRegistrationPredefinedQuestionLabel values
 
@@ -140,6 +217,14 @@ Namespace: microsoft.graph
 | recommeded |
 | unknownFutureValue |
 | peerRecommeded |
+
+### certificateAuthorityType values
+
+|Member|
+|:---|
+|root|
+|intermediate|
+|unknownFutureValue|
 
 ### courseStatus values
 

@@ -1,5 +1,5 @@
 ---
-title: "classificationInnerError resource type (preview)"
+title: "classificationInnerError resource type"
 description: "Contains more specific, potentially internal, details about an error that occurred during data classification, label evaluation, or policy processing."
 author: "ArunGedela"
 ms.date: 04/08/2025

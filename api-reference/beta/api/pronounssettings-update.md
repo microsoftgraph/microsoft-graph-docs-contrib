@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "people"
 doc_type: apiPageType
 ms.date: 06/11/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Update pronounsSettings

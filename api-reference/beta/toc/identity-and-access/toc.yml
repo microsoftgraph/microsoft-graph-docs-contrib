@@ -655,13 +655,13 @@ items:
           href: ../../api/unifiedrbacresourcenamespace-list-resourceactions.md
         - name: Get
           href: ../../api/unifiedrbacresourceaction-get.md
-    - name: Custom app scope
+    - name: Custom app scope for RBAC providers
       items:
-      - name: Custom app scope
+      - name: Custom app scope for RBAC providers
         href: ../../resources/customappscope.md
-      - name: List
+      - name: List for Exchange Online
         href: ../../api/unifiedrbacapplication-list-customappscopes.md
-      - name: Create
+      - name: Create for Exchange Online
         href: ../../api/unifiedrbacapplication-post-customappscope.md
       - name: Get
         href: ../../api/customappscope-get.md
@@ -2753,6 +2753,8 @@ items:
         href: ../../api/riskyusers-get.md
       - name: Confirm compromised
         href: ../../api/riskyusers-confirmcompromised.md
+      - name: Confirm safe
+        href: ../../api/riskyuser-confirmsafe.md
       - name: Dismiss
         href: ../../api/riskyusers-dismiss.md
       - name: List history
@@ -2883,30 +2885,6 @@ items:
         href: ../../api/identityprovider-list-availableprovidertypes.md
     - name: OpenID Connect identity provider (deprecated)
       href: ../../resources/openidconnectprovider.md
-  - name: Microsoft Entra lifecycle announcements (deprecated)
-    items:
-    - name: Product changes
-      items:
-      - name: Product changes
-        href: ../../resources/changeitembase.md
-      - name: List
-        href: ../../api/identitycontainer-list-productchanges.md
-    - name: Change announcements
-      items:
-      - name: Change announcements
-        href: ../../resources/announcement.md
-      - name: List
-        href: ../../api/announcement-list.md
-      - name: Get
-        href: ../../api/announcement-get.md
-    - name: Roadmap
-      items:
-      - name: Roadmap
-        href: ../../resources/roadmap.md
-      - name: List
-        href: ../../api/roadmap-list.md
-      - name: Get
-        href: ../../api/roadmap-get.md
   - name: Multitenant organization
     displayName: MTO
     items:
@@ -4114,14 +4092,6 @@ items:
         href: ../../resources/networkaccess-connectivityconfigurationlink.md
       - name: Get
         href: ../../api/networkaccess-branchconnectivityconfiguration-get.md
-  - name: Enriched audit logs
-    items:
-    - name: Enriched audit logs
-      href: ../../resources/networkaccess-enrichedauditlogs.md
-    - name: List
-      href: ../../api/networkaccess-settings-list-enrichedauditlogs.md
-    - name: Update
-      href: ../../api/networkaccess-enrichedauditlogs-update.md
   - name: Traffic logs
     items:
     - name: Traffic logs
@@ -4340,6 +4310,110 @@ items:
       href: ../../resources/networkaccess-fqdnfilteringrule.md
     - name: Web category filtering rule
       href: ../../resources/networkaccess-webcategoryfilteringrule.md
+    - name: Threat intelligence policy
+      items:
+      - name: Threat intelligence policy
+        href: ../../resources/networkaccess-threatintelligencepolicy.md
+      - name: List
+        href: ../../api/networkaccess-networkaccessroot-list-threatintelligencepolicies.md
+      - name: Create
+        href: ../../api/networkaccess-networkaccessroot-post-threatintelligencepolicies.md
+      - name: Get
+        href: ../../api/networkaccess-threatintelligencepolicy-get.md
+      - name: Update
+        href: ../../api/networkaccess-threatintelligencepolicy-update.md
+      - name: Delete
+        href: ../../api/networkaccess-networkaccessroot-delete-threatintelligencepolicies.md
+      - name: List policyRules
+        href: ../../api/networkaccess-threatintelligencepolicy-list-policyrules.md
+      - name: Create policyRule
+        href: ../../api/networkaccess-threatintelligencepolicy-post-policyrules.md
+    - name: Threat intelligence policy link
+      items:
+      - name: Threat intelligence policy link
+        href: ../../resources/networkaccess-threatintelligencepolicylink.md
+      - name: List
+        href: ../../api/networkaccess-threatintelligencepolicylink-list.md
+      - name: Create
+        href: ../../api/networkaccess-threatintelligencepolicylink-post-policy.md
+      - name: Get
+        href: ../../api/networkaccess-threatintelligencepolicylink-get.md
+      - name: Update
+        href: ../../api/networkaccess-threatintelligencepolicylink-update.md
+      - name: Delete
+        href: ../../api/networkaccess-threatintelligencepolicylink-delete.md
+    - name: Threat intelligence rule
+      items:
+      - name: Threat intelligence rule
+        href: ../../resources/networkaccess-threatintelligencerule.md
+      - name: List
+        href: ../../api/networkaccess-threatintelligencepolicy-list-policyrules.md
+      - name: Create
+        href: ../../api/networkaccess-threatintelligencepolicy-post-policyrules.md
+      - name: Get
+        href: ../../api/networkaccess-threatintelligencerule-get.md
+      - name: Update
+        href: ../../api/networkaccess-threatintelligencerule-update.md
+      - name: Delete
+        href: ../../api/networkaccess-threatintelligencerule-delete.md
+  - name: TLS inspection
+    items:
+    - name: External certificate authority certificate
+      items:
+      - name: External certificate authority certificate
+        href: ../../resources/networkaccess-externalcertificateauthoritycertificate.md
+      - name: List
+        href: ../../api/networkaccess-tlstermination-list-externalcertificateauthoritycertificates.md
+      - name: Create
+        href: ../../api/networkaccess-tlstermination-post-externalcertificateauthoritycertificates.md
+      - name: Get
+        href: ../../api/networkaccess-externalcertificateauthoritycertificate-get.md
+      - name: Update
+        href: ../../api/networkaccess-externalcertificateauthoritycertificate-update.md
+      - name: Delete
+        href: ../../api/networkaccess-externalcertificateauthoritycertificate-delete.md
+    - name: Policy
+      items:
+      - name: Policy
+        href: ../../resources/networkaccess-tlsinspectionpolicy.md
+      - name: List policies
+        href: ../../api/networkaccess-networkaccessroot-list-tlsinspectionpolicies.md
+      - name: Get policy
+        href: ../../api/networkaccess-tlsinspectionpolicy-get.md
+      - name: Create policy
+        href: ../../api/networkaccess-networkaccessroot-post-tlsinspectionpolicies.md
+      - name: Update policy
+        href: ../../api/networkaccess-tlsinspectionpolicy-update.md
+      - name: Delete policy
+        href: ../../api/networkaccess-tlsinspectionpolicy-delete.md
+    - name: Policy link to filtering profile
+      items:
+      - name: Policy link to filtering profile
+        href: ../../resources/networkaccess-tlsinspectionpolicylink.md
+      - name: List
+        href: ../../api/networkaccess-tlsinspectionpolicylink-list.md
+      - name: Create
+        href: ../../api/networkaccess-tlsinspectionpolicylink-post.md
+      - name: Get
+        href: ../../api/networkaccess-tlsinspectionpolicylink-get.md
+      - name: Update
+        href: ../../api/networkaccess-tlsinspectionpolicylink-update.md
+      - name: Delete
+        href: ../../api/networkaccess-tlsinspectionpolicylink-delete.md
+    - name: Policy rule
+      items:
+      - name: Policy rule
+        href: ../../resources/networkaccess-tlsinspectionrule.md
+      - name: List
+        href: ../../api/networkaccess-tlsinspectionpolicy-list-policyrules.md
+      - name: Create
+        href: ../../api/networkaccess-tlsinspectionpolicy-post-policyrules.md
+      - name: Get
+        href: ../../api/networkaccess-tlsinspectionrule-get.md
+      - name: Update
+        href: ../../api/networkaccess-tlsinspectionrule-update.md
+      - name: Delete
+        href: ../../api/networkaccess-tlsinspectionrule-delete.md
 - name: Partner customer administration
   items:
   - name: Partner security alert
