@@ -220,9 +220,6 @@ For details about what topics are supported for each scenario, see the specific 
 
 ## Custom activity icons in activity feed notifications
 
-> [!NOTE]
-> Custom activity icons in activity feed notifications are available only in the [Teams public developer preview](/microsoftteams/platform/resources/dev-preview/developer-preview-intro?tabs=new-teams-client).
-
 You can use custom activity icons in activity feed notifications to help users easily identify the source and intent of the notification. A notification with a custom activity icon adds a unique and Teams-native feel, enhancing user engagement with your app. The following screenshot shows an activity feed notification with a custom activity icon.
 
 :::image type="content" source="images/custom-icon-notification-activity-feed.png" alt-text="The screenshot shows activity feed notifications with custom activity icons." lightbox="images/custom-icon-notification-activity-feed.png":::
