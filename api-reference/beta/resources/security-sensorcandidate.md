@@ -53,3 +53,4 @@ The following JSON representation shows the resource type.
   "senseClientVersion": "String",
   "lastSeenDateTime": "String (timestamp)"
 }
+```
