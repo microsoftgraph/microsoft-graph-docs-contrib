@@ -1063,6 +1063,14 @@ Namespace: microsoft.graph.security
 |audit|
 |block|
 
+### sensorCandidateActivationMode values
+
+|Member|
+|:---|
+|manual|
+|automated|
+
+
 <!--
 {
   "type": "#page.annotation",
