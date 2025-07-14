@@ -1,5 +1,5 @@
 ---
-title: "List room objects"
+title: "List rooms"
 description: "Get a list of room objects and their properties."
 author: tiwarisakshi02
 ms.date: 06/11/2025
