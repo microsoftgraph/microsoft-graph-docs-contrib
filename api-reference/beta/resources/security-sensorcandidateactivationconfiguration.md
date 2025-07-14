@@ -19,10 +19,10 @@ Represents the configuration for sensor candidate activation in Microsoft Defend
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type| Description                                                                                                                                                                         |
-|:---|:---|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|[Get](../api/security-sensorcandidateactivationconfiguration-get.md)|[microsoft.graph.security.sensorCandidateActivationConfiguration](../resources/security-sensorcandidateactivationconfiguration.md)| Read the properties and relationships of [microsoft.graph.security.sensorCandidateActivationConfiguration](../resources/security-sensorcandidateactivationconfiguration.md) object. |
-|[Update](../api/security-sensorcandidateactivationconfiguration-update.md)|[microsoft.graph.security.sensorCandidateActivationConfiguration](../resources/security-sensorcandidateactivationconfiguration.md)| Update the activation mode of a sensorCandidateActivationConfiguration object.                                                                                                      |
+|Method|Return type| Description                                                                       |
+|:---|:---|:----------------------------------------------------------------------------------|
+|[Get](../api/security-sensorcandidateactivationconfiguration-get.md)|[microsoft.graph.security.sensorCandidateActivationConfiguration](../resources/security-sensorcandidateactivationconfiguration.md)| Read the properties and relationships of sensor candidate activation mode object. |
+|[Update](../api/security-sensorcandidateactivationconfiguration-update.md)|[microsoft.graph.security.sensorCandidateActivationConfiguration](../resources/security-sensorcandidateactivationconfiguration.md)| Update the activation mode of a sensor candidate activation mode object.    |
 
 ## Properties
 |Property|Type|Description|

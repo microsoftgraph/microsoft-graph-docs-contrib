@@ -19,10 +19,10 @@ Represents a sensor candidate for Microsoft Defender for Identity.
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/security-identitycontainer-list-sensorcandidates.md)|[microsoft.graph.security.sensorCandidate](../resources/security-sensorcandidate.md) collection|Get a list of the sensorCandidate objects and their properties.|
-|[activate](../api/security-sensorcandidate-activate.md)|None|Activate sensor candidates for Microsoft Defender for Identity.|
+|Method| Return type                                                                                      |Description|
+|:---|:-------------------------------------------------------------------------------------------------|:---|
+|[List](../api/security-identitycontainer-list-sensorcandidates.md)| [microsoft.graph.security.sensorCandidates](../resources/security-sensorcandidate.md) collection |Get a list of the sensorCandidate objects and their properties.|
+|[activate](../api/security-sensorcandidate-activate.md)| None                                                                                             |Activate sensor candidates for Microsoft Defender for Identity.|
 
 ## Properties
 |Property|Type|Description|

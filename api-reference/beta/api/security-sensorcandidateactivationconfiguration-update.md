@@ -50,9 +50,9 @@ In the request body, supply a JSON representation of the [microsoft.graph.securi
 
 You can specify the following properties when creating a **sensorCandidateActivationConfiguration**.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|activationMode|microsoft.graph.security.sensorCandidateActivationMode|The activation mode for the sensor candidate. The possible values are: `manual`, `automated`, `unknownFutureValue`. Required.|
+|Property|Type| Description                                                                                                |
+|:---|:---|:-----------------------------------------------------------------------------------------------------------|
+|activationMode|microsoft.graph.security.sensorCandidateActivationMode| The activation mode for the sensor candidate. The possible values are: `manual` and `automated`. Required. |
 
 ## Response
 
@@ -90,3 +90,4 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
+```
