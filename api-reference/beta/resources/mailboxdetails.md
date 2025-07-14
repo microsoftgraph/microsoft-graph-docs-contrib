@@ -16,13 +16,13 @@ Namespace: microsoft.graph
 
 Represents details about a [mailbox](./mailbox.md), including its unique directory identifier and associated email address.
 
-Mailboxes are associated with reservable Places V3 objects such as [desk](./desk.md) objects.
+Mailboxes are associated with reservable Places objects such as [desk](./desk.md) objects.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |emailAddress|String|The primary SMTP address associated with the mailbox.|
-|externalDirectoryObjectId|String|The unique identifier of the mailbox in the external directory (such as Azure Active Directory).|
+|externalDirectoryObjectId|String|The unique identifier of the mailbox in the external directory (such as Microsoft Entra).|
 
 ## Relationships
 None.
