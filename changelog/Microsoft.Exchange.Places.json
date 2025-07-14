@@ -247,9 +247,17 @@
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
           "ApiChange": "Resource",
+          "ChangedApiName": "placeMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [placeMode](https://learn.microsoft.com/en-us/graph/api/resources/placeMode?view=graph-rest-beta) resource type.",
+          "Target": "placeMode"
+        },
+        {
+          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
+          "ApiChange": "Resource",
           "ChangedApiName": "assignedPlaceMode",
           "ChangeType": "Addition",
-          "Description": "Added the [assignedPlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/assignedPlaceMode?view=graph-rest-beta) resource.",
+          "Description": "Added the [assignedPlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/assignedPlaceMode?view=graph-rest-beta) resource type.",
           "Target": "assignedPlaceMode"
         },
         {
@@ -257,47 +265,47 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dropInPlaceMode",
           "ChangeType": "Addition",
-          "Description": "Added the [dropInPlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/dropInPlaceMode?view=graph-rest-beta) resource.",
+          "Description": "Added the [dropInPlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/dropInPlaceMode?view=graph-rest-beta) resource type.",
           "Target": "dropInPlaceMode"
         },
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
           "ApiChange": "Resource",
-          "ChangedApiName": "mailboxDetails",
+          "ChangedApiName": "bookablePlaceMode",
           "ChangeType": "Addition",
-          "Description": "Added the [mailboxDetails](https://learn.microsoft.com/en-us/graph/api/resources/mailboxDetails?view=graph-rest-beta) resource.",
-          "Target": "mailboxDetails"
+          "Description": "Added the [bookablePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/bookablePlaceMode?view=graph-rest-beta) resource type.",
+          "Target": "bookablePlaceMode"
         },
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
           "ApiChange": "Resource",
           "ChangedApiName": "offlinePlaceMode",
           "ChangeType": "Addition",
-          "Description": "Added the [offlinePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/offlinePlaceMode?view=graph-rest-beta) resource.",
+          "Description": "Added the [offlinePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/offlinePlaceMode?view=graph-rest-beta) resource type.",
           "Target": "offlinePlaceMode"
-        },
-        {
-          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
-          "ApiChange": "Resource",
-          "ChangedApiName": "placeMode",
-          "ChangeType": "Addition",
-          "Description": "Added the [placeMode](https://learn.microsoft.com/en-us/graph/api/resources/placeMode?view=graph-rest-beta) resource.",
-          "Target": "placeMode"
         },
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
           "ApiChange": "Resource",
           "ChangedApiName": "reservablePlaceMode",
           "ChangeType": "Addition",
-          "Description": "Added the [reservablePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/reservablePlaceMode?view=graph-rest-beta) resource.",
+          "Description": "Added the [reservablePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/reservablePlaceMode?view=graph-rest-beta) resource type.",
           "Target": "reservablePlaceMode"
+        },
+        {
+          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailboxDetails](https://learn.microsoft.com/en-us/graph/api/resources/mailboxDetails?view=graph-rest-beta) resource type.",
+          "Target": "mailboxDetails"
         },
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
           "ApiChange": "Resource",
           "ChangedApiName": "resourceLink",
           "ChangeType": "Addition",
-          "Description": "Added the [resourceLink](https://learn.microsoft.com/en-us/graph/api/resources/resourceLink?view=graph-rest-beta) resource.",
+          "Description": "Added the [resourceLink](https://learn.microsoft.com/en-us/graph/api/resources/resourceLink?view=graph-rest-beta) resource type.",
           "Target": "resourceLink"
         },
         {
@@ -305,7 +313,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "building",
           "ChangeType": "Addition",
-          "Description": "Added the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-beta) resource.",
+          "Description": "Added the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-beta) resource and associated methods.",
           "Target": "building"
         },
         {
@@ -313,7 +321,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "desk",
           "ChangeType": "Addition",
-          "Description": "Added the [desk](https://learn.microsoft.com/en-us/graph/api/resources/desk?view=graph-rest-beta) resource.",
+          "Description": "Added the [desk](https://learn.microsoft.com/en-us/graph/api/resources/desk?view=graph-rest-beta) resource and associated methods.",
           "Target": "desk"
         },
         {
@@ -321,8 +329,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "floor",
           "ChangeType": "Addition",
-          "Description": "Added the [floor](https://learn.microsoft.com/en-us/graph/api/resources/floor?view=graph-rest-beta) resource.",
+          "Description": "Added the [floor](https://learn.microsoft.com/en-us/graph/api/resources/floor?view=graph-rest-beta) resource and associated methods.",
           "Target": "floor"
+        },
+        {
+          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "section",
+          "ChangeType": "Addition",
+          "Description": "Added the [section](https://learn.microsoft.com/en-us/graph/api/resources/section?view=graph-rest-beta) resource and associated methods.",
+          "Target": "section"
         },
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
@@ -375,6 +391,22 @@
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
           "ApiChange": "Property",
+          "ChangedApiName": "displayDeviceName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayDeviceName** property to the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
+          "Target": "workspace"
+        },
+        {
+          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
+          "ApiChange": "Property",
+          "ChangedApiName": "mode",
+          "ChangeType": "Addition",
+          "Description": "Added the **mode** property to the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
+          "Target": "workspace"
+        },
+        {
+          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
+          "ApiChange": "Property",
           "ChangedApiName": "isWheelChairAccessible",
           "ChangeType": "Deletion",
           "Description": "Removed the **isWheelChairAccessible** property from the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-beta) resource.",
@@ -398,22 +430,6 @@
         },
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
-          "ApiChange": "Resource",
-          "ChangedApiName": "section",
-          "ChangeType": "Addition",
-          "Description": "Added the [section](https://learn.microsoft.com/en-us/graph/api/resources/section?view=graph-rest-beta) resource.",
-          "Target": "section"
-        },
-        {
-          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
-          "ApiChange": "Property",
-          "ChangedApiName": "displayDeviceName",
-          "ChangeType": "Addition",
-          "Description": "Added the **displayDeviceName** property to the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
-          "Target": "workspace"
-        },
-        {
-          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
           "ApiChange": "Property",
           "ChangedApiName": "isWheelChairAccessible",
           "ChangeType": "Deletion",
@@ -426,14 +442,6 @@
           "ChangedApiName": "label",
           "ChangeType": "Deletion",
           "Description": "Removed the **label** property from the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
-          "Target": "workspace"
-        },
-        {
-          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
-          "ApiChange": "Property",
-          "ChangedApiName": "mode",
-          "ChangeType": "Addition",
-          "Description": "Added the **mode** property to the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
           "Target": "workspace"
         },
         {
