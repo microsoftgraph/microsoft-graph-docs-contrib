@@ -20,9 +20,9 @@ Describe the details of the agent health status.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|agentHealthCheckDetails|[cloudPcAgentHealthCheckDetail](../resources/cloudpcagenthealthcheckdetail.md) collection|A list of health check results that were performed for the target agent. Used to provides detailed information of health checks. Empty by default. Read Only. |
+|agentHealthCheckDetails|[cloudPcAgentHealthCheckDetail](../resources/cloudpcagenthealthcheckdetail.md) collection|A list of health check results that were performed for the target agent. Used to provide detailed information of health checks. Empty by default. Read Only. |
 |lastSucceededHealthCheckDateTime|DateTimeOffset|Indicates the date and time when the last health check finished successfully. The date and time information is shown using ISO 8601 format and is always in UTC time. Read Only.|
-|latestHealthCheckStatus|[cloudPcAgentHealthCheckStatusDetail](../resources/cloudpcagenthealthcheckstatusdetail.md)|Indicates the status of the latest agent health check. It can be an ongoing agent health check or the last finished health check. Used to track the latest triggered health check.Read Only. |
+|latestHealthCheckStatus|[cloudPcAgentHealthCheckStatusDetail](../resources/cloudpcagenthealthcheckstatusdetail.md)|Indicates the status of the latest agent health check. It can be an ongoing agent health check or the last finished health check. Used to track the latest triggered health check. Read Only. |
 
 ## Relationships
 None.
