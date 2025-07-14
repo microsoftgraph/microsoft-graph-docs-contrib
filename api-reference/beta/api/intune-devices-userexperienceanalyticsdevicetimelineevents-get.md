@@ -1,0 +1,82 @@
+---
+title: "Get userExperienceAnalyticsDeviceTimelineEvents"
+description: "Read properties and relationships of the userExperienceAnalyticsDeviceTimelineEvents object."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
+doc_type: apiPageType
+ms.date: 08/01/2024
+---
+
+# Get userExperienceAnalyticsDeviceTimelineEvents
+
+Namespace: microsoft.graph
+
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector.
+
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
+Read properties and relationships of the [userExperienceAnalyticsDeviceTimelineEvents](../resources/intune-devices-userexperienceanalyticsdevicetimelineevents.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+
+## HTTP Request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /deviceManagement/userExperienceAnalyticsDeviceTimelineEvents/{userExperienceAnalyticsDeviceTimelineEventsId}
+```
+
+## Optional query parameters
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+## Request headers
+|Header|Value|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Accept|application/json|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+If successful, this method returns a `200 OK` response code and [userExperienceAnalyticsDeviceTimelineEvents](../resources/intune-devices-userexperienceanalyticsdevicetimelineevents.md) object in the response body.
+
+## Example
+
+### Request
+Here is an example of the request.
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceTimelineEvents/{userExperienceAnalyticsDeviceTimelineEventsId}
+```
+
+### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 479
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceTimelineEvents",
+    "id": "c958258a-258a-c958-8a25-58c98a2558c9",
+    "deviceId": "Device Id value",
+    "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
+    "eventLevel": "verbose",
+    "eventSource": "Event Source value",
+    "eventName": "Event Name value",
+    "eventDetails": "Event Details value",
+    "eventAdditionalInformation": "Event Additional Information value"
+  }
+}
+```

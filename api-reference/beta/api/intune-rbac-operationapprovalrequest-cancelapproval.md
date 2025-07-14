@@ -1,0 +1,88 @@
+---
+title: "cancelApproval action"
+description: "Cancels an already approved instance of an operationApprovalRequest."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
+doc_type: apiPageType
+ms.date: 08/01/2024
+---
+
+# cancelApproval action
+
+Namespace: microsoft.graph
+
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector.
+
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
+Cancels an already approved instance of an operationApprovalRequest.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All|
+
+## HTTP Request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/operationApprovalRequests/{operationApprovalRequestId}/cancelApproval
+```
+
+## Request headers
+|Header|Value|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Accept|application/json|
+
+## Request body
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|justification|String|Indicates the justification for cancellation of a request that has already been approved. Maximum length of justification is 1024 characters. For example: 'Cancelled - Change 23423 no longer needed.'|
+|approvalSource|[operationApprovalSource](../resources/intune-rbac-operationapprovalsource.md)|Indicates the source of the action on the approval request. Possible values are: `unknown`, `adminConsole`, `email`. Default value is `unknown`.|
+
+
+
+## Response
+If successful, this action returns a `200 OK` response code and a String in the response body.
+
+## Example
+
+### Request
+Here is an example of the request.
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/operationApprovalRequests/{operationApprovalRequestId}/cancelApproval
+
+Content-type: application/json
+Content-length: 83
+
+{
+  "justification": "Justification value",
+  "approvalSource": "adminConsole"
+}
+```
+
+### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 40
+
+{
+  "value": "Cancel Approval value"
+}
+```

@@ -1,0 +1,85 @@
+---
+title: "Delete fixtureMap"
+description: "Delete a fixtureMap object."
+author: tiwarisakshi02
+ms.date: 06/12/2025
+ms.localizationpriority: medium
+ms.subservice: 
+doc_type: apiPageType
+---
+
+# Delete fixtureMap
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Delete a [fixtureMap](../resources/fixturemap.md) object.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "permissions",
+  "name": "levelmap-delete-fixtures-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/levelmap-delete-fixtures-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+DELETE places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixtures/{fixturesImdfID}
+```
+
+{buildingPlaceId} - **id** of the building with which this map is associated
+
+{levelImdfID} - **id** of the level with which this map is associated
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "delete_fixturemap"
+}
+-->
+``` http
+DELETE https://graph.microsoft.com/beta/building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/fixtures/005eb3b8-c95d-4d35-a8a0-22d3cb4d6002
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+

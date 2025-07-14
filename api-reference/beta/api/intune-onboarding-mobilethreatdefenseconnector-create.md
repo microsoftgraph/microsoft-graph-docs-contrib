@@ -1,0 +1,146 @@
+---
+title: "Create mobileThreatDefenseConnector"
+description: "Create a new mobileThreatDefenseConnector object."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
+doc_type: apiPageType
+ms.date: 08/01/2024
+---
+
+# Create mobileThreatDefenseConnector
+
+Namespace: microsoft.graph
+
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector.
+
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
+Create a new [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+
+## HTTP Request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/mobileThreatDefenseConnectors
+```
+
+## Request headers
+|Header|Value|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Accept|application/json|
+
+## Request body
+In the request body, supply a JSON representation for the mobileThreatDefenseConnector object.
+
+The following table shows the properties that are required when you create the mobileThreatDefenseConnector.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String||
+|lastHeartbeatDateTime|DateTimeOffset|DateTime of last Heartbeat recieved from the Mobile Threat Defense partner|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Mobile Threat Defense partner state for this account. Possible values are: `unavailable`, `available`, `enabled`, `unresponsive`, `notSetUp`, `error`, `unknownFutureValue`.|
+|androidMobileApplicationManagementEnabled|Boolean|When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for Android devices. When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during Mobile Application Management (MAM) evaluations for Android devices. Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation. Default value is FALSE.|
+|iosMobileApplicationManagementEnabled|Boolean|When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for iOS devices. When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during Mobile Application Management (MAM) evaluations for iOS devices. Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation. Default value is FALSE.|
+|windowsMobileApplicationManagementEnabled|Boolean|When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for iOS devices. When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during Mobile Application Management (MAM) evaluations for iOS devices. Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation. Default value is FALSE.|
+|androidEnabled|Boolean|When TRUE, indicates that data from the Mobile Threat Defense partner will be used during compliance evaluations for Android devices. When FALSE, indicates that data from the Mobile Threat Defense partner will not be used during compliance evaluations for Android devices. Default value is FALSE.|
+|iosEnabled|Boolean|When TRUE, indicates that data from the Mobile Threat Defense partner will be used during compliance evaluations for iOS devices. When FALSE, indicates that data from the Mobile Threat Defense partner will not be used during compliance evaluations for iOS devices. Default value is FALSE.|
+|windowsEnabled|Boolean|When TRUE, indicates that data from the Mobile Threat Defense partner will be used during compliance evaluations for Windows. When FALSE, indicates that data from the Mobile Threat Defense partner will not be used during compliance evaluations for Windows. Default value is FALSE.|
+|macEnabled|Boolean|When TRUE, indicates that data from the Mobile Threat Defense partner will be used during compliance evaluations for Mac devices. When FALSE, indicates that data from the Mobile Threat Defense partner will not be used during compliance evaluations for Mac devices. Default value is FALSE.|
+|androidDeviceBlockedOnMissingPartnerData|Boolean|When TRUE, indicates that Intune must receive data from the Mobile Threat Defense partner prior to marking an Android device compliant. When FALSE, indicates that Intune may mark an Android device compliant before receiving data from the Mobile Threat Defense partner.|
+|iosDeviceBlockedOnMissingPartnerData|Boolean|When TRUE, indicates that Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant. When FALSE, indicates that Intune may not recieve data from Mobile Threat Defense partner prior to making device compliant. Default value is FALSE.|
+|windowsDeviceBlockedOnMissingPartnerData|Boolean|When TRUE, indicates that Intune must receive data from the data sync partner prior to marking a device compliant for Windows. When FALSE, indicates that Intune may mark a device compliant without receiving data from the data sync partner for Windows. Default value is FALSE.|
+|macDeviceBlockedOnMissingPartnerData|Boolean|When TRUE, indicates that Intune must receive data from the Mobile Threat Defense partner prior to marking a Mac device compliant. When FALSE, indicates that Intune may mark a Mac device compliant prior to receiving data from the Mobile Threat Defense partner. Default value is FALSE.|
+|partnerUnsupportedOsVersionBlocked|Boolean|When TRUE, indicates that Intune will mark devices noncompliant on enabled platforms that do not meet the minimum version requirements of the Mobile Threat Defense partner. When FALSE, indicates that Intune will not mark devices noncompliant on enabled platforms that do not meet the minimum version requirements of the Mobile Threat Defense partner. Default value is FALSE.|
+|partnerUnresponsivenessThresholdInDays|Int32|Indicates the number of days without receiving a heartbeat from a Mobile Threat Defense partner before the partner is marked as unresponsive. Intune will the ignore the data from this Mobile Threat Defense Partner for next compliance calculation.|
+|allowPartnerToCollectIOSApplicationMetadata|Boolean|When TRUE, indicates the Mobile Threat Defense partner may collect metadata about installed applications from Intune for iOS devices. When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about installed applications from Intune for iOS devices. Default value is FALSE.|
+|allowPartnerToCollectIOSPersonalApplicationMetadata|Boolean|When TRUE, indicates the Mobile Threat Defense partner may collect metadata about personally installed applications from Intune for iOS devices. When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about personally installed applications from Intune for iOS devices. Default value is FALSE.|
+|microsoftDefenderForEndpointAttachEnabled|Boolean|When TRUE, inidicates that configuration profile management via Microsoft Defender for Endpoint is enabled. When FALSE, inidicates that configuration profile management via Microsoft Defender for Endpoint is disabled. Default value is FALSE.|
+|allowPartnerToCollectIosCertificateMetadata|Boolean|When TRUE, allows the Mobile Threat Defense partner to request a list of installed certificates on iOS/iPadOS devices from Intune to use for threat analysis. This list of installed certificates will be sent from enrolled iOS/iPadOS devices and will include unmanaged certificates (certificates not deployed through Intune). When FALSE, indicates that metadata about installed certificates will not be collected. Default value is FALSE.|
+|allowPartnerToCollectIosPersonalCertificateMetadata|Boolean|When TRUE, allows the Mobile Threat Defense partner to request a list of installed certificates on personally owned iOS/iPadOS devices from Intune to use for threat analysis. This list of installed certificates will be sent from enrolled personally owned iOS/iPadOS devices and will include unmanaged certificates (certificates not deployed through Intune). When FALSE, no metadata for installed certificates is sent for personally owned iOS/iPadOS devices. Default value is FALSE.|
+
+
+
+## Response
+If successful, this method returns a `201 Created` response code and a [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) object in the response body.
+
+## Example
+
+### Request
+Here is an example of the request.
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnectors
+Content-type: application/json
+Content-length: 1018
+
+{
+  "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
+  "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
+  "partnerState": "available",
+  "androidMobileApplicationManagementEnabled": true,
+  "iosMobileApplicationManagementEnabled": true,
+  "windowsMobileApplicationManagementEnabled": true,
+  "androidEnabled": true,
+  "iosEnabled": true,
+  "windowsEnabled": true,
+  "macEnabled": true,
+  "androidDeviceBlockedOnMissingPartnerData": true,
+  "iosDeviceBlockedOnMissingPartnerData": true,
+  "windowsDeviceBlockedOnMissingPartnerData": true,
+  "macDeviceBlockedOnMissingPartnerData": true,
+  "partnerUnsupportedOsVersionBlocked": true,
+  "partnerUnresponsivenessThresholdInDays": 6,
+  "allowPartnerToCollectIOSApplicationMetadata": true,
+  "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
+  "microsoftDefenderForEndpointAttachEnabled": true,
+  "allowPartnerToCollectIosCertificateMetadata": true,
+  "allowPartnerToCollectIosPersonalCertificateMetadata": true
+}
+```
+
+### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 1067
+
+{
+  "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
+  "id": "e4bede14-de14-e4be-14de-bee414debee4",
+  "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
+  "partnerState": "available",
+  "androidMobileApplicationManagementEnabled": true,
+  "iosMobileApplicationManagementEnabled": true,
+  "windowsMobileApplicationManagementEnabled": true,
+  "androidEnabled": true,
+  "iosEnabled": true,
+  "windowsEnabled": true,
+  "macEnabled": true,
+  "androidDeviceBlockedOnMissingPartnerData": true,
+  "iosDeviceBlockedOnMissingPartnerData": true,
+  "windowsDeviceBlockedOnMissingPartnerData": true,
+  "macDeviceBlockedOnMissingPartnerData": true,
+  "partnerUnsupportedOsVersionBlocked": true,
+  "partnerUnresponsivenessThresholdInDays": 6,
+  "allowPartnerToCollectIOSApplicationMetadata": true,
+  "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
+  "microsoftDefenderForEndpointAttachEnabled": true,
+  "allowPartnerToCollectIosCertificateMetadata": true,
+  "allowPartnerToCollectIosPersonalCertificateMetadata": true
+}
+```
