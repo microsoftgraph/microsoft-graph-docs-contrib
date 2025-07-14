@@ -14,32 +14,29 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a section within a [floor](./floor.md).
-
-A [floor](./floor.md) is always the parent of a [section](./section.md).
+Represents a section within a [floor](./floor.md). A [floor](./floor.md) is always the parent of a [section](./section.md).
 
 Inherits from [place](./place.md).
-
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/section-list.md)|[section](./section.md) collection|Get a list of the section objects and their properties.|
+|[List](../api/section-list.md)|[section](./section.md) collection|Get a list of [section](../resources/section.md) objects and their properties.|
 |[Get](../api/section-get.md)|[section](./section.md)|Read the properties and relationships of a section object.|
-|[Update](../api/section-update.md)|[section](./section.md)|Update the properties of a section object.|
-|[Delete](../api/section-delete.md)|None|Delete a section object.|
+|[Update](../api/section-update.md)|[section](./section.md)|Update the properties of a [section](../resources/section.md) object.|
+|[Delete](../api/section-delete.md)|None|Delete a [section](../resources/section.md) object.|
 |[descendants](../api/section-descendants.md)|[place](./place.md) collection|Get all the descendants of a specific type (for example, [rooms](./room.md), [workspaces](./workspace.md), or [desks](./desk.md)) under a **section**. |
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](./physicaladdress.md)|The physical address of the **section**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md).|
-|label |String |User-defined description of the **section**. Inherited from [place](./place.md). |
 |displayName|String|The name that is associated with the **section**. Inherited from [place](./place.md).|
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **section** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
-|id|String|A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. Inherited from [entity](./entity.md). |
-|isWheelChairAccessible|Boolean|Whether or not the **section** is wheelchair accessible. Inherited from [place](./place.md).|
-|parentId|String|ID of a parent **floor**. Inherited from [place](./place.md).|
+|id|String|The unique identifier for the **place**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md). |
+|isWheelChairAccessible|Boolean|Indicates whether the **section** is wheelchair accessible. Inherited from [place](./place.md).|
+|label |String |User-defined description of the **section**. Inherited from [place](./place.md). |
+|parentId|String|The ID of a parent **floor**. Inherited from [place](./place.md).|
 |phone|String|The phone number of the **section**. Inherited from [place](./place.md).|
 |placeId|String|An alternate immutable unique identifier of the **section**. Read-only. Inherited from [place](./place.md).|
 |resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **section**. Inherited from [place](./place.md).|
@@ -61,27 +58,17 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.section",
-  "id": "String (identifier)",
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "placeId": "String",
-  "parentId": "String",
-  "resourceLinks": [
-    {
-      "@odata.type": "microsoft.graph.resourceLink"
-    }
-  ],
-  "tags": [
-    "String"
-  ],
+  "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
-  "label": "String"
+  "label": "String",  
+  "parentId": "String",
+  "phone": "String",
+  "placeId": "String",
+  "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],
+  "tags": ["String"]
 }
 ```
 
