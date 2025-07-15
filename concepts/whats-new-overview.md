@@ -28,6 +28,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession) extends the expiration time.
 
+### Reports | Partner billing reports
+
+[Export](/graph/api/partners-billing-unbilledreconciliation-export) unbilled invoice reconciliation data.
+
 ### Teamwork and communications | Messaging
 
 [Send a message with a Loop component](/graph/api/chatmessage-post).
