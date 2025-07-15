@@ -1,6 +1,6 @@
 ---
 title: "fido2AuthenticationMethodConfiguration resource type"
-description: "Represents a FIDO2 authentication methods policy"
+description: "Represents a FIDO2 authentication methods policy."
 author: "calvinlui"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
