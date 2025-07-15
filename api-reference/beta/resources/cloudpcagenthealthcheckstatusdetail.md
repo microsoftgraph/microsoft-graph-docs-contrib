@@ -21,7 +21,7 @@ Describes the working status of the agent health check task.
 |:---|:---|:---|
 |additionalHealthCheckMessage|String|The optional information about this health check to help explain its current status. For example, `HealthCheck can't be triggered while installing.` Empty by default. Read-only.|
 |cloudPcId|String|The unique identifier of the Cloud PC where the agent health check occurs. Read-only.|
-|healthCheckState|cloudPcAgentHealthCheckState|Indicates the working status of the health check. Default value is `pending`. The possible values are: `pending`, `processing`, `succeeded`, `failed`, `conflict`, `canceled`, `unknownFutureValue`. Read-only.|
+|healthCheckState|[cloudPcAgentHealthCheckState](../resources/cloudpcagenthealthcheckstatusdetail.md#cloudpcagenthealthcheckstate-values)|Indicates the working status of the health check. Default value is `pending`. The possible values are: `pending`, `processing`, `succeeded`, `failed`, `conflict`, `canceled`, `unknownFutureValue`. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Indicates the date and time when the health check state was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |startDateTime|DateTimeOffset|Indicates the date and time when the latest agent health check started. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 
