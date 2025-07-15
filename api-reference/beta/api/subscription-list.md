@@ -67,7 +67,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[event](../resources/event.md) | Calendars.Read, Subscription.Read.All | Calendars.Read, Subscription.Read.All | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All, Subscription.Read.All | Not supported.  | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All, Subscription.Read.All | Not supported.  | Not supported.  |
-|[Microsoft Entra Health monitoring alert](../resources/healthmonitoring-alert.md) <br />`reports/healthmonitoring/alerts`| HealthMonitoringAlertConfig.Read.All | Not supported. | HealthMonitoringAlertConfig.Read.All |
+|[Microsoft Entra Health monitoring alert](../resources/healthmonitoring-alert.md) <br />`/reports/healthmonitoring/alerts`| HealthMonitoringAlertConfig.Read.All | Not supported. | HealthMonitoringAlertConfig.Read.All |
 |[list](../resources/list.md) | Sites.ReadWrite.All, Subscription.Read.All | Not supported.  | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.Read |
 |[offerShiftRequest](../resources/offershiftrequest.md)<br />`/teams/{id}/schedule/offerShiftRequests` <br />Changes to any offer shift request in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported. | Schedule.Read.All, Schedule.ReadWrite.All |
