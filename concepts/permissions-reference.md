@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 06/30/2025
+ms.date: 07/14/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -90,6 +90,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write all administrative units | Read and write administrative units |
 | Description | Allows the app to create, read, update, and delete administrative units and manage administrative unit membership without a signed-in user. | Allows the app to create, read, update, and delete administrative units and manage administrative unit membership on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### AgentApplication.Create
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 2f479c7e-27df-4053-826b-57d8ce55be3e | - |
+| DisplayText | Create agent applications. | - |
+| Description | Allows creating new agent applications and their associated service principals. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### AgentIdentity.Create
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 2c4c43c7-1903-4658-a911-b8f2bb31e32e | - |
+| DisplayText | Create agent identities linked to itself. | - |
+| Description | Allows the app to create linked agent identities without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -6127,6 +6149,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### SecurityCopilotWorkspaces.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 84499c31-ac2e-44d3-a0cf-a6c386d4dfe8 |
+| DisplayText | - | Read all Security Copilot resources for the signed-in user |
+| Description | - | Allows the app to read all Security Copilot signed-in user's resources on behalf of the signed-in user |
+| AdminConsentRequired | - | No |
+
+---
+
+### SecurityCopilotWorkspaces.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 206291b0-2167-47a7-a640-6cdc1df710ba |
+| DisplayText | - | Read and write individually owned Security Copilot resources of the signed-in user |
+| Description | - | Allows the app to read and write Security Copilot resources owned by the signed-in user on their behalf. |
+| AdminConsentRequired | - | No |
+
+---
+
 ### SecurityEvents.Read.All
 
 | Category | Application | Delegated |
@@ -6145,6 +6189,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | d903a879-88e0-4c09-b0c9-82f6a1333f84 | 6aedf524-7e1c-45a7-bd76-ded8cab8d0fc |
 | DisplayText | Read and update your organization's security events | Read and update your organization's security events |
 | Description | Allows the app to read your organization's security events without a signed-in user. Also allows the app to update editable properties in security events. | Allows the app to read your organization's security events on behalf of the signed-in user. Also allows the app to update editable properties in security events on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### SecurityIdentitiesAccount.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | c5bc96f5-b4a1-4cfc-8189-d5f0d772278f | 3e9ed69a-a48e-473c-8b97-413016703a37 |
+| DisplayText | Read all identity security available identity accounts | Read identity security available identity accounts |
+| Description | Allows the app to read all the identity security available identity accounts without a signed-in user. | Allows the app to read all the identity security available identity accounts |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### SecurityIdentitiesActions.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | af2bf46f-7bf1-4be3-8bad-e17e279e8462 | 818229ce-20e4-47bd-92f4-bc94dbb37a56 |
+| DisplayText | Read and perform all identity security available actions | Read and perform identity security available actions |
+| Description | Allows the app to read and write identity security available actions without a signed-in user. | Allows the app to read and write identity security available actions on behalf of the signed-in identity. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6453,6 +6519,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read, create, edit, and delete all users' short notes | - |
 | Description | Allows the app to read, create, edit, and delete all the short notes without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
+
+---
+
+### SignInIdentifier.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 28e1fe78-598f-4df4-b55e-18bf34218925 | 458e1edc-1e75-438c-8c7b-c32115c9d373 |
+| DisplayText | Read all sign-in identifiers | Read SignInIdentifiers |
+| Description | Allows the app to read your organization's sign-in identifiers, without a signed-in user. | Allows the app to read your organization's sign-in identifiers, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### SignInIdentifier.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 7fc588a2-ea2d-4d1f-bcf7-33c324b149b8 | b4673c3c-7b5a-4012-9826-7c7e3c8db6af |
+| DisplayText | Read and write all sign-in identifiers | Read and write all sign-in identifiers |
+| Description | Allows the app to read and write your organization's sign-in identifiers, without a signed-in user. | Allows the app to read and write your organization's sign-in identifiers, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
