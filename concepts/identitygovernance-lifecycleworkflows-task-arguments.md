@@ -510,13 +510,13 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 23: Revoke all refresh tokens for user (Preview)
+### Example 23: Revoke all refresh tokens for user
 
 ```json
 {
   "category": "leaver, mover",
   "continueOnError": false,
-  "description": "Revoke all refresh tokens for user (Preview)",
+  "description": "Revoke all refresh tokens for user",
   "displayName": "Revoke all refresh tokens for user",
   "isEnabled": true,
   "taskDefinitionId": "509589a4-0466-4471-829e-49c5e502bdee",
