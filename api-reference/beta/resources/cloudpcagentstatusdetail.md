@@ -47,7 +47,7 @@ Describes the agent status of the Cloud PC.
 |versionOutdated|Indicates that the agent is functional but outdated.|
 |functionalityDefect|Indicates that some agent functionality is unavailable, but the agent might still operate with reduced functionality.|
 |communicationUnhealthy|Indicates that communication is currently unhealthy. The communication between the agent and the service might have partially or completely failed.|
-|unknownError|Indicates that unknown errors have occurred.|
+|unknownError|Indicates that unknown errors occurred.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
