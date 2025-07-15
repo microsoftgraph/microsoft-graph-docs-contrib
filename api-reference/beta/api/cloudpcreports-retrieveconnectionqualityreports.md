@@ -62,6 +62,24 @@ The following table shows the parameters that can be used with this action.
 
 If successful, this action returns a `200 OK` response code and a Stream in the response body.
 
+The following table describes the columns in the returned report when you specify `regionalConnectionQualityTrendReport` for the **reportName** property in your API call.
+
+| Member                              | Description                                                                                                                                                                                                           |
+|:------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| GatewayRegion                       | The region where the gateway is located.                                                                                                                                                                             |
+| RoundTripTimeTrend                  | The trend in weekly average round trip time. The trend is calculated using linear regression over 4 weeks of data. Values can be "Increasing" (slope > 10), "Decreasing" (slope < -10), or "Static" (otherwise). |
+| AvailableBandwidthTrend             | The trend in weekly average available bandwidth. The trend is calculated using linear regression over 4 weeks of data. Values can be "Increasing" (slope > 15), "Decreasing" (slope < -15), or "Static" (otherwise). |
+| UDPUtilizationTrend                 | The trend in weekly average UDP utilization. The trend is calculated using linear regression over 4 weeks of data. Values can be "Increasing" (slope > 0.1), "Decreasing" (slope < -0.1), or "Static" (otherwise). |
+| DroppedConnectionTrend              | The trend in weekly ratio of dropped connections to total device count in the region. The trend is calculated using linear regression over 4 weeks of data. Values can be "Increasing" (slope > 0.1), "Decreasing" (slope < -0.1), or "Static" (otherwise). |
+| WeeklyAvgRoundTripTimeInMs          | The weekly average round trip time in milliseconds. The weekly period starts from Sunday to the current day.                                                                                                         |
+| DailyAvgRoundTripTimeInMs           | The daily average round trip time in milliseconds for the most recent day.                                                                                                                                           |
+| WeeklyAvailableBandwidthInMbps      | The weekly average available bandwidth in Mbps. The weekly period starts from Sunday to the current day.                                                                                                            |
+| DailyAvailableBandwidthInMbps       | The daily average available bandwidth in Mbps for the most recent day.                                                                                                                                               |
+| WeeklyUdpUtilization                | The weekly average UDP utilization percentage. The weekly period starts from Sunday to the current day.                                                                                                              |
+| DailyWeeklyUdpUtilization           | The daily average UDP utilization percentage for the most recent day.                                                                                                                                                |
+| WeeklyDroppedConnectionsCount       | The weekly count of dropped connections. The weekly period starts from Sunday to the current day.                                                                                                                    |
+| DailyDroppedConnectionsCount        | The daily count of dropped connections for the most recent day.                                                                                                                                                      |
+
 ## Examples
 
 ### Request
