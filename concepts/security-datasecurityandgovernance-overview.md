@@ -85,12 +85,12 @@ The behavior of the `executionMode` field in the response from the [Compute prot
 The following execution modes and their behaviors are expected:
 
 1. **`evaluateInline`**: The application should wait for the [Process content](/graph/api/userdatasecurityandgovernance-processcontent) API to produce results before deciding whether to allow or block the user activity. No action should be taken until the API response is received.
-2. **`evaluateOffline`**: The application should not wait for the [Process content](/graph/api/userdatasecurityandgovernance-processcontent) API's verdict and can take action (e.g., restrict access) immediately without waiting for the API response.
+2. **`evaluateOffline`**: The application should not wait for the [Process content](/graph/api/userdatasecurityandgovernance-processcontent) API's verdict and can take action (for example, restrict access) immediately without waiting for the API response.
 
 | Execution Mode    | Action        | Description                                                                 |
 | ----------------- | ------------ | --------------------------------------------------------------------------- |
 | `evaluateInline`  | None         | The caller should invoke the Process content API and wait for results before allowing user activity to proceed. |
-| `evaluateInline`  | restrictAccess | Not expected. Future actions that do not interfere with user activities may be present (e.g., notify user). |
+| `evaluateInline`  | restrictAccess | Not expected. Future actions that do not interfere with user activities may be present (for example, notify user). |
 | `evaluateOffline` | restrictAccess | The caller should restrict user activity and call the process content API independently of taking action. |
 | `evaluateOffline` | None         | The caller should not restrict user activity and should call the process content API independently. |
 
