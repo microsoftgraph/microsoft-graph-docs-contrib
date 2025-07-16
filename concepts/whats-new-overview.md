@@ -54,6 +54,10 @@ Each fragment uploaded during an [upload session](/graph/api/resources/uploadses
 
 Retired the previously deprecated Microsoft Entra lifecycle announcements APIs that stopped returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
 
+### Industry data ETL
+
+Deprecated the **markAllStudentsAsMinors** property on [additionalUserOptions](/graph/api/resources/industrydata-additionaluseroptions?view=graph-rest-beta&preserve-view=true) in favor of the **studentAgeGroup** property.
+
 ## June 2025: New and generally available
 
 ### Teamwork and communications | Calls and online meetings
