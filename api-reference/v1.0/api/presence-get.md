@@ -118,6 +118,10 @@ Content-Length: 1574
 	"id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
 	"availability": "Available",
 	"activity": "Available",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  },
   "sequenceNumber": "A0129311063"
 }
 ```
@@ -190,6 +194,10 @@ Content-Length: 1574
 	"id": "66825e03-7ef5-42da-9069-724602c31f6b",
 	"availability": "DoNotDisturb",
 	"activity": "Presenting",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  },
   "sequenceNumber": "A0129311063"
 }
 ```
@@ -263,6 +271,10 @@ HTTP/1.1 200 OK
             "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
             "availability": "Away",
             "activity": "BeRightBack",
+              "outOfOfficeSettings": {
+              "message": null,
+              "isOutOfOffice": false
+            },
             "sequenceNumber": "A0129311063"
         }
     ]

@@ -3,15 +3,31 @@
     {
       "ChangeList": [        
         {
-          "Id": "ee042115-b7c2-4ca4-b98a-d7397ed237da",
+          "Id": "6d4c9aa2-5099-464d-8e68-a33bde304ad9",
           "ApiChange": "Property",
           "ChangedApiName": "sequenceNumber",
           "ChangeType": "Addition",
           "Description": "Added the **sequenceNumber** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
           "Target": "presence"
+        },
+        {
+          "Id": "6d4c9aa2-5099-464d-8e68-a33bde304ad9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "presence",
+          "ChangeType": "Addition",
+          "Description": "Added the **outOfOfficeSettings** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource type.",
+          "Target": "outOfOfficeSettings"
+        },
+        {
+          "Id": "6d4c9aa2-5099-464d-8e68-a33bde304ad9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "presence",
+          "ChangeType": "Addition",
+          "Description": "Added the [outOfOfficeSettings](https://learn.microsoft.com/en-us/graph/api/resources/outofofficesettings?view=graph-rest-1.0) complex type.",
+          "Target": "outOfOfficeSettings"
         }
       ],
-      "Id": "ee042115-b7c2-4ca4-b98a-d7397ed237da",
+      "Id": "6d4c9aa2-5099-464d-8e68-a33bde304ad9",
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-01-07T18:27:57.4426258Z",
