@@ -77,7 +77,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter          | Type                           | Description
 |:-------------------|:-------------------------------|:-------------------------
 | recipients         | [driveRecipient][] collection | A collection of recipients who receive access.
-| roles              | String collecton             | If the link is an "existing access" link, specifies roles to be granted to the users. Otherwise must match the role of the link.
+| roles              | String collection             | If the link is an "existing access" link, specifies roles to be granted to the users. Otherwise must match the role of the link.
 
 For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).
 
