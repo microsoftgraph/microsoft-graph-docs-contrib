@@ -36,11 +36,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /places/{id | placesId}
+DELETE /places/{id}
 ```
 
 > **Note:**
-> You can use **id** (the unique identifier of the place), or **placeId**, if defined as an alternate key.
+> You can use **id** (the unique identifier of the place).
 
 ## Request headers
 
