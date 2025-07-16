@@ -4278,42 +4278,10 @@
         },
         {
           "Id": "0b8873d3-0ebd-409c-b1f8-d8403775b7c5",
-          "ApiChange": "Member",
-          "ChangedApiName": "urlTemplate",
-          "ChangeType": "Addition",
-          "Description": "Added the `urlTemplate` member to the **fileStorageContainerTypeSettingsOverride** enumeration.",
-          "Target": "fileStorageContainerTypeSettingsOverride"
-        },
-        {
-          "Id": "0b8873d3-0ebd-409c-b1f8-d8403775b7c5",
-          "ApiChange": "Member",
-          "ChangedApiName": "isDiscoverabilityEnabled",
-          "ChangeType": "Addition",
-          "Description": "Added the `isDiscoverabilityEnabled` member to the **fileStorageContainerTypeSettingsOverride** enumeration.",
-          "Target": "fileStorageContainerTypeSettingsOverride"
-        },
-        {
-          "Id": "0b8873d3-0ebd-409c-b1f8-d8403775b7c5",
-          "ApiChange": "Member",
-          "ChangedApiName": "isSearchEnabled",
-          "ChangeType": "Addition",
-          "Description": "Added the `isSearchEnabled` member to the **fileStorageContainerTypeSettingsOverride** enumeration.",
-          "Target": "fileStorageContainerTypeSettingsOverride"
-        },
-        {
-          "Id": "0b8873d3-0ebd-409c-b1f8-d8403775b7c5",
-          "ApiChange": "Member",
-          "ChangedApiName": "none",
-          "ChangeType": "Deletion",
-          "Description": "Removed the `none` member from the **fileStorageContainerTypeSettingsOverride** enumeration.",
-          "Target": "fileStorageContainerTypeSettingsOverride"
-        },
-        {
-          "Id": "0b8873d3-0ebd-409c-b1f8-d8403775b7c5",
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerTypeRegistrationSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [fileStorageContainerTypeRegistrationSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeRegistrationSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [fileStorageContainerTypeRegistrationSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeRegistrationSettings?view=graph-rest-beta) resource type.",
           "Target": "fileStorageContainerTypeRegistrationSettings"
         },
         {
@@ -4321,7 +4289,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerTypeSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [fileStorageContainerTypeSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [fileStorageContainerTypeSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeSettings?view=graph-rest-beta) resource type.",
           "Target": "fileStorageContainerTypeSettings"
         },
         {
@@ -4345,15 +4313,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerType",
           "ChangeType": "Addition",
-          "Description": "Added the [fileStorageContainerType](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerType?view=graph-rest-beta) resource.",
-          "Target": "fileStorageContainerType"
-        },
-        {
-          "Id": "0b8873d3-0ebd-409c-b1f8-d8403775b7c5",
-          "ApiChange": "Property",
-          "ChangedApiName": "etag",
-          "ChangeType": "Addition",
-          "Description": "Added the **etag** property to the [fileStorageContainerType](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerType?view=graph-rest-beta) resource.",
+          "Description": "Added the [fileStorageContainerType](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerType?view=graph-rest-beta) resource and associated methods.",
           "Target": "fileStorageContainerType"
         },
         {
@@ -4361,7 +4321,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerTypeAppPermissionGrant",
           "ChangeType": "Addition",
-          "Description": "Added the [fileStorageContainerTypeAppPermissionGrant](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeAppPermissionGrant?view=graph-rest-beta) resource.",
+          "Description": "Added the [fileStorageContainerTypeAppPermissionGrant](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeAppPermissionGrant?view=graph-rest-beta) resource and associated methods.",
           "Target": "fileStorageContainerTypeAppPermissionGrant"
         },
         {
@@ -4369,15 +4329,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerTypeRegistration",
           "ChangeType": "Addition",
-          "Description": "Added the [fileStorageContainerTypeRegistration](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeRegistration?view=graph-rest-beta) resource.",
-          "Target": "fileStorageContainerTypeRegistration"
-        },
-        {
-          "Id": "0b8873d3-0ebd-409c-b1f8-d8403775b7c5",
-          "ApiChange": "Property",
-          "ChangedApiName": "etag",
-          "ChangeType": "Addition",
-          "Description": "Added the **etag** property to the [fileStorageContainerTypeRegistration](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeRegistration?view=graph-rest-beta) resource.",
+          "Description": "Added the [fileStorageContainerTypeRegistration](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeRegistration?view=graph-rest-beta) resource and associated methods.",
           "Target": "fileStorageContainerTypeRegistration"
         }
       ],
