@@ -77,17 +77,17 @@ The following table describes the columns in the returned report when you specif
 
 | Member                         | Description                                                         |
 |:-------------------------------|:--------------------------------------------------------------------|
-| CloudPcId                      | The unique identifier of the Cloud PC.                              |
-| CloudPcName                    | The display name of the Cloud PC.                                   |
-| DeviceHealthStatus             | The current health status of the Cloud PC device.                   |
-| DeviceHealthStatusDateTime     | The date and time when the device health status was last updated.   |
-| ProvisioningStatus             | The provisioning status of the Cloud PC.                            |
-| RecentConnectionFailureCount   | The count of recent connection failures for the Cloud PC.           |
-| RecentDeviceHealthFailureCount | The count of recent device health check failures.                   |
-| Region                         | The Azure region where the Cloud PC is hosted.                      |
-| SystemStatus                   | The current system status of the Cloud PC.                          |
-| SystemStatusDateTime           | The date and time when the system status was last updated.          |
-| UserPrincipalName              | The user principal name (UPN) of the user assigned to the Cloud PC. |
+| cloudPcId                      | The unique identifier of the Cloud PC.                              |
+| cloudPcName                    | The display name of the Cloud PC.                                   |
+| deviceHealthStatus             | The current health status of the Cloud PC device.                   |
+| deviceHealthStatusDateTime     | The date and time when the device health status was last updated.   |
+| provisioningStatus             | The provisioning status of the Cloud PC.                            |
+| recentConnectionFailureCount   | The count of recent connection failures for the Cloud PC.           |
+| recentDeviceHealthFailureCount | The count of recent device health check failures.                   |
+| region                         | The Azure region where the Cloud PC is hosted.                      |
+| systemStatus                   | The current system status of the Cloud PC.                          |
+| systemStatusDateTime           | The date and time when the system status was last updated.          |
+| userPrincipalName              | The user principal name (UPN) of the user assigned to the Cloud PC. |
 
 The following table describes the columns in the returned report when you specify `regionalInaccessibleCloudPcTrendReport` for the **reportName** property in your API call.
 
