@@ -96,7 +96,7 @@ The following table describes the columns in the returned report when you specif
 | CloudPcCount                        | The total number of Cloud PCs in the region. |
 | HostRegionName                      | The name of the Azure region where the Cloud PCs are hosted. |
 | Last24hPeakInaccessibleCloudPcCount | The peak number of inaccessible Cloud PCs during the last 24 hours. |
-| WeeklyInaccessibleTrend             | The trend in the weekly ratio of inaccessible Cloud PCs to the total Cloud PC count in the region. The trend is calculated using linear regression over four weeks of data. Values can be "Increasing" (slope > 0.05), "Decreasing" (slope < -0.05), or "Static" (otherwise). |
+| WeeklyInaccessibleTrend             | The trend in the weekly ratio of inaccessible Cloud PCs to the total Cloud PC count in the region. The trend is calculated using linear regression over four weeks of data. Values can be `Increasing` (slope > 0.05), `Decreasing` (slope < -0.05), or `Static` (otherwise). |
 | WeeklyPeakInaccessibleCloudPcCount  | The peak number of inaccessible Cloud PCs during the current week. The weekly period starts from Sunday to the current day. |
 
 ## Examples
