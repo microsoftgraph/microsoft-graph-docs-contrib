@@ -96,24 +96,24 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.networkaccess.alert",
-      "id": "6fb54016-77df-4d32-9946-7603af8433e1",
+      "id": "String (identifier)",
       "alertType": "String",
-      "creationDateTime": "2024-04-01T12:00:00Z",
+      "creationDateTime": "String (timestamp)",
       "description": "String",
       "actions": [
         {
           "@odata.type": "microsoft.graph.networkaccess.alertAction",
-          "actionType": "block",
-          "timestamp": "2024-04-01T12:00:00Z",
-          "status": "completed"
+          "actionType": "String",
+          "timestamp": "String (timestamp)",
+          "status": "String"
         }
       ],
       "relatedResources": [
         {
           "@odata.type": "microsoft.graph.networkaccess.relatedRemoteNetwork",
-          "id": "remote-network-123",
-          "name": "RemoteNetwork1",
-          "ipAddress": "192.168.1.1"
+          "id": "String (identifier)",
+          "name": "String",
+          "ipAddress": "String (IP address)"
         }
       ],
       "vendorName": "String",
@@ -131,14 +131,12 @@ Content-Type: application/json
       "subTechniques": [
         "String"
       ],
-     "firstActivityDateTime": "2024-04-01T12:05:00Z",
-     "lastActivityDateTime": "2024-04-01T13:00:00Z",
+      "firstActivityDateTime": "String (timestamp)",
+      "lastActivityDateTime": "String (timestamp)",
       "isPreview": "Boolean",
       "extendedProperties": {
         "@odata.type": "microsoft.graph.networkaccess.extendedProperties",
-        "property1": "value1",
-        "property2": 42,
-        "property3": true
+        "propertyKey": "String"
       }
     }
   ]

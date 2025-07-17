@@ -35,7 +35,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.alertSeveritySummary",
-  "severity": "high",
-  "count": 8
+  "severity": "String",
+  "count": "Integer"
 }
 ```

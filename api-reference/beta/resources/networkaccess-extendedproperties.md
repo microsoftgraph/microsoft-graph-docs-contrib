@@ -35,9 +35,7 @@ The following JSON representation shows the resource type.
 }
 -->
 ``` json
-{
-  "@odata.type": "#microsoft.graph.networkaccess.extendedProperties",
-  "customProperty1": "Value1",
-  "customProperty2": 123
+{ 
+  "@odata.type": "#microsoft.graph.networkaccess.extendedProperties"
 }
 ```

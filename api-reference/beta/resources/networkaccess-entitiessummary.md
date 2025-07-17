@@ -37,9 +37,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.entitiesSummary",
-  "trafficType": "internet",
-  "userCount": 100,
-  "deviceCount": 50,
-  "workloadCount": 10
+  "trafficType": "String",
+  "userCount": "Integer",
+  "deviceCount": "Integer",
+  "workloadCount": "Integer"
 }
 ```

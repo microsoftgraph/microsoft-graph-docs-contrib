@@ -50,16 +50,15 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-      "id": "69be33d9-8609-4104-b256-2e7ff1579698",
-      "remoteNetworkId": "a2b07922-f62b-4679-84f5-67f11e9fd41b",
-      "createdDateTime": "2023-09-07T14:47:33.8346145Z",
-      "status": "alive",
-      "sourceIp": "xxx.xxx.xx.151",
-      "destinationIp": "xx.xxx.xxx.0",
+      "id": "String (identifier)",
+      "remoteNetworkId": "String (identifier)",
+      "createdDateTime": "String (timestamp)",
+      "status": "enum",
+      "sourceIp": "String (IP address)",
+      "destinationIp": "String (IP address)",
       "sentBytes": "Integer",
       "receivedBytes": "Integer",
-      "description": "",
+      "description": "String",
       "bgpRoutesAdvertisedCount": "Integer"
 }
 ```
-

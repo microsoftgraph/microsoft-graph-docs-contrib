@@ -38,10 +38,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.alertFrequencyPoint",
-  "timeStampDateTime": "2024-04-01T00:00:00Z",
-  "highSeverityCount": 5,
-  "mediumSeverityCount": 3,
-  "lowSeverityCount": 2,
-  "informationalSeverityCount": 1
+  "timeStampDateTime": "String (timestamp)",
+  "highSeverityCount": "Integer",
+  "mediumSeverityCount": "Integer",
+  "lowSeverityCount": "Integer",
+  "informationalSeverityCount": "Integer"
 }
 ```
