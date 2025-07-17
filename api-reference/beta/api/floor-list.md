@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /places/{placeType}
+GET /places/microsoft.graph.floor
 ```
 
 ## Optional query parameters
@@ -86,7 +86,6 @@ Content-Type: application/json
 {
   "value": [
     {
-       "@odata.type": "#microsoft.graph.floor",
     "id": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
     "placeId": "5e19bbf6-067c-4a92-9685-1f01545f02e4",
     "displayName": "Floor 1",
