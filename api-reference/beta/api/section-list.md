@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /places/{placeType}
+GET /places/microsoft.graph.section
 ```
 
 ## Optional query parameters
