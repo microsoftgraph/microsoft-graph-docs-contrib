@@ -34,11 +34,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /places/{placeType}
+GET /places/microsoft.graph.building
 ```
 
-> **Note:**
-> `{placeType}` can be any supported place type such as `microsoft.graph.building`.
 
 ## Optional query parameters
 
