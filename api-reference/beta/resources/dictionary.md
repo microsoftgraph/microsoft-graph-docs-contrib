@@ -4,7 +4,7 @@ description: "A dictionary of name-value pairs that allows arbitrary key-value p
 author: "miritsadon"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
-ms.subservice: "microsoft-graph-api"
+ms.subservice: "entra-global-secure-access"
 doc_type: resourcePageType
 ---
 
