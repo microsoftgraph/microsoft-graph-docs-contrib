@@ -1,38 +1,48 @@
 {
   "changelog": [
     {
-      "ChangeList": [        
+      "ChangeList": [
         {
-          "Id": "6d4c9aa2-5099-464d-8e68-a33bde304ad9",
+          "Id": "f172483d-128f-4174-828f-d5b133aa5c7b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "outOfOfficeSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [outOfOfficeSettings](https://learn.microsoft.com/en-us/graph/api/resources/outOfOfficeSettings?view=graph-rest-1.0) resource.",
+          "Target": "outOfOfficeSettings"
+        }
+      ],
+      "Id": "f172483d-128f-4174-828f-d5b133aa5c7b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-07-16T23:52:04.1387626Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9ae3e4e6-451d-43f2-ba1c-b1f3402ee10c",
+          "ApiChange": "Property",
+          "ChangedApiName": "outOfOfficeSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **outOfOfficeSettings** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "9ae3e4e6-451d-43f2-ba1c-b1f3402ee10c",
           "ApiChange": "Property",
           "ChangedApiName": "sequenceNumber",
           "ChangeType": "Addition",
           "Description": "Added the **sequenceNumber** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
           "Target": "presence"
-        },
-        {
-          "Id": "6d4c9aa2-5099-464d-8e68-a33bde304ad9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "presence",
-          "ChangeType": "Addition",
-          "Description": "Added the **outOfOfficeSettings** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource type.",
-          "Target": "outOfOfficeSettings"
-        },
-        {
-          "Id": "6d4c9aa2-5099-464d-8e68-a33bde304ad9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "presence",
-          "ChangeType": "Addition",
-          "Description": "Added the [outOfOfficeSettings](https://learn.microsoft.com/en-us/graph/api/resources/outofofficesettings?view=graph-rest-1.0) complex type.",
-          "Target": "outOfOfficeSettings"
         }
       ],
-      "Id": "6d4c9aa2-5099-464d-8e68-a33bde304ad9",
+      "Id": "9ae3e4e6-451d-43f2-ba1c-b1f3402ee10c",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2025-01-07T18:27:57.4426258Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Calls and online meetings"  
+      "CreatedDateTime": "2025-07-16T23:52:04.1390021Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
     },
     {
       "ChangeList":[
