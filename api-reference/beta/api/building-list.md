@@ -87,7 +87,6 @@ Content-Type: application/json
 {
   "value": [
     {
-       "@odata.type": "#microsoft.graph.building",
     "id": "3e377efd-add0-aa15-d67a-38ad2f81f08e",
     "displayName": "Building 121",
     "geoCoordinates": {
