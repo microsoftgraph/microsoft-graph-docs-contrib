@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Update the properties of a [bookingBusiness](../resources/bookingbusiness.md) object.
 
 > [!IMPORTANT]
-> Using PATCH to set email or displayName is not supported. Use the Exchange Online PowerShell Set-Mailbox method to update the email or displayName for a Booking Business.
+> Using the PATCH method to set the email or display name isn't supported. To update these properties for a booking business, use the `Set-Mailbox cmdlet` in Exchange Online PowerShell.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
