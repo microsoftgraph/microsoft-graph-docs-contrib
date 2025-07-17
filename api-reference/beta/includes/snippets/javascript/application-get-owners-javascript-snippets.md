@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let owners = await client.api('/applications/{id}/owners')
+let owners = await client.api('/applications/bbec3106-565f-4907-941e-96b4dbfef21c/owners')
 	.version('beta')
 	.get();
 

@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/12/2024
 ---
 
 # Create fileStorageContainer
@@ -19,7 +20,7 @@ The respective container type identified by **containerTypeId** must be enabled 
 
 For delegated calls, the calling user is set as the owner of the **fileStorageContainer**. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -27,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-post-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 
@@ -37,6 +40,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 POST /storage/fileStorage/containers
 ```
+## Optional query parameters
+
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+| Name      |Description|
+|:----------|:----------|
+| dataLocation |Specifies the desired data location for container creation in Multi-Geo tenants. Omitting the `$dataLocation` parameter in the request creates the container at the tenant's default location. For more information, see [available Multi-Geo regions and their location codes](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide#microsoft-365-multi-geo-availability). |
 
 ## Request headers
 |Name|Description|
@@ -54,6 +64,7 @@ You can specify the following properties when you create a **fileStorageContaine
 |displayName|String|The display name of the container. Required.|
 |description|String|Provides a user-visible description of the item. Optional.|
 |containerTypeId|GUID|The container type of the container instance. Required.|
+|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with the container. Optional.|
 
 ## Response
 
@@ -76,7 +87,10 @@ Content-Type: application/json
 {
   "displayName": "My Application Storage Container",
   "description": "Description of My Application Storage Container",
-  "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73"
+  "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
+  "settings": {
+    "isOcrEnabled": true
+  }
 }
 ```
 
@@ -130,7 +144,12 @@ Content-type: application/json
   "description": "Description of My Application Storage Container",
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
   "status": "inactive",
-  "createdDateTime": "2021-11-24T15:41:52.347Z"
+  "createdDateTime": "2021-11-24T15:41:52.347Z",
+  "settings": {
+    "isOcrEnabled": false,
+    "itemMajorVersionLimit": 50,
+    "isItemVersioningEnabled": true
+  }
 }
 
 ```

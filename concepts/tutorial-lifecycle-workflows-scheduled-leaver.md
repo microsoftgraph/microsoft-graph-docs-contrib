@@ -7,7 +7,7 @@ ms.reviewer: Alexander.Filipin
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
-ms.date: 03/12/2024
+ms.date: 03/07/2025
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use Lifecycle Workflows APIs to automate employee offboarding tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
 
@@ -29,19 +29,19 @@ In this tutorial, you learn how to:
 To complete this tutorial, you need the following resources and privileges:
 
 + This feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with account that has at least the *Lifecycle Administrator* Microsoft Entra role.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with an account that has at least the *Lifecycle Administrator* Microsoft Entra role.
 + Grant yourself the *LifecycleWorkflows.ReadWrite.All* Microsoft Graph delegated permission.
-+ Create a test user account that you use to represent an employee leaving your organization. This test user account is deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
++ Create a test user account to represent an employee leaving your organization. This test user account is deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
 
 ## Create a "leaver" workflow
 
 ### Request
 
-The following request creates an offboarding workflow with the following settings:
+The following request creates an offboarding workflow with these settings:
 
-+ It can be run on-demand but not on schedule. This step allows us to validate the workflow using the test user's account. The workflow is updated to run on schedule later in this tutorial.
-+ The workflow runs seven days after the employee's [employeeLeaveDateTime](/graph/tutorial-lifecycle-workflows-set-employeeleavedatetime?tabs=http), and if they are in the "Marketing" department.
-+ Three workflow tasks are enabled to run in sequence: the user is unassigned all licenses, then removed from all teams, then their user account is deleted.
++ It can run on-demand but not on schedule. This step lets us validate the workflow using the test user's account. The workflow is updated to run on schedule later in this tutorial.
++ The workflow runs seven days after the employee's [employeeLeaveDateTime](/graph/tutorial-lifecycle-workflows-set-employeeleavedatetime?tabs=http) if the employee is in the "Marketing" department.
++ Three workflow tasks run in sequence: the user is unassigned all licenses, removed from all teams, and then their user account is deleted.
 
 
 # [HTTP](#tab/http)
@@ -181,9 +181,9 @@ Content-Type: application/json
 
 ## Run the workflow
 
-Because the workflow isn't scheduled to run, it must be run manually, on-demand. In the following request, the user that's the target of the workflow is identified by ID `df744d9e-2148-4922-88a8-633896c1e929`.
+Because the workflow isn't scheduled to run, you must run it manually, on-demand. In this request, the user targeted by the workflow is identified by ID `df744d9e-2148-4922-88a8-633896c1e929`.
 
-When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions. Therefore, even if the user isn't in the "Marketing" department or their **employeeLeaveDateTime** is set to `null`, this command still runs the tasks that are defined in the workflow, for the user.
+When you run a workflow on demand, the tasks execute regardless of whether the user state matches the scope and trigger execution conditions. Therefore, even if the user isn't in the "Marketing" department or their **employeeLeaveDateTime** is set to `null`, this command still runs the tasks defined in the workflow for the user.
 
 The request returns a `204 No Content` response code.
 
@@ -241,10 +241,10 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/work
 
 ## Check tasks and workflow status
 
-At any time, you can monitor the status of the workflows and the tasks at three levels.
+You can monitor the status of the workflows and tasks at three levels.
 
 - Monitor tasks at the user level.
-- Monitor the aggregate high-level summary of the user-level results for a workflow, within a specified period.
+- Monitor the aggregate high-level summary of the user-level results for a workflow within a specified period.
 - Retrieve the detailed log of all tasks that were executed for a specific user in the workflow.
 
 ### Option 1: Monitor tasks for a workflow at the user level
@@ -528,9 +528,9 @@ Content-Type: application/json
 
 ## [Optional] Schedule the workflow to run automatically
 
-After running your workflow on-demand and checking that everything is working fine, you might want to enable the workflow so that it can run automatically on a tenant-defined schedule. Run the following request.
+After running your workflow on-demand and checking that everything works fine, you might want to enable the workflow to run automatically on a tenant-defined schedule. Run this request.
 
-The request returns a `204 No Content` response code. When a workflow is scheduled, the Lifecycle Workflows engine checks every three hours for users in the associated execution condition and execute the configured tasks for those users. You can customize this recurrence from between one hour to 24 hours.
+The request returns a `204 No Content` response code. When a workflow is scheduled, the Lifecycle Workflows engine checks every three hours for users in the associated execution condition and executes the configured tasks for those users. You can customize this recurrence from one hour to 24 hours.
 
 # [HTTP](#tab/http)
 <!-- {

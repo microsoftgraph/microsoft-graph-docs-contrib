@@ -1,12 +1,13 @@
 ---
-title: "singleServicePrincipal complex type"
-description: "Identifies a service principal in the tenant who will be allowed as requestor, approver, or reviewer."
+title: "singleServicePrincipal resource type"
+description: "Identifies a service principal in the tenant who is allowed as requestor, approver, or reviewer."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
-# singleServicePrincipal complex type
+# singleServicePrincipal resource type
 
 Namespace: microsoft.graph
 
@@ -21,7 +22,7 @@ Used in the request, approval, and assignment review settings of an access packa
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.singleServicePrincipal",

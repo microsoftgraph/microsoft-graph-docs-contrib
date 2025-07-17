@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 09/18/2024
 ---
 
 # Update workforceIntegration
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "workforceintegration_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/workforceintegration-update-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 
@@ -37,20 +38,21 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 | Name       | Description|
 |:-----------|:-----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. The `MS-APP-ACTS-AS` header is deprecated and no longer required with application tokens.|
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|apiVersion|Int32|API version for the call back URL. Start with 1.|
+|apiVersion|Int32|API version for the callback URL. Start with 1.|
 |displayName|String|Name of the workforce integration.|
-|encryption|workforceIntegrationEncryption|The workforce integration encryption resource. |
+|eligibilityFilteringEnabledEntities|eligibilityFilteringEnabledEntities| Support to view eligibility-filtered results. Possible values are: `none`, `swapRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason`.|
+|encryption|[workforceIntegrationEncryption](../resources/workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supportedEntities|string| Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
-|url|String| Workforce integration URL for callbacks from the shift service. |
+|supportedEntities|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts call the provided URL when client changes occur to the entities specified in this property. Possible values are: `none`, `shift`, `swapRequest`, `userShiftPreferences`, `openShift`, `openShiftRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason` , `timeOff` , `timeOffRequest`.|
+|url|String| Workforce integration URL for callbacks from the Shifts service.|
 
 ## Response
 
@@ -62,7 +64,6 @@ If successful, this method returns a `200 OK` response code and an updated [work
 
 The following example shows a request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -71,18 +72,19 @@ The following example shows a request.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforceIntegrationId}
-Content-type: application/json
+Content-Type: application/json
 
 {
-  "displayName": "displayName-value",
-  "apiVersion": 99,
-  "encryption": {
-    "protocol": "protocol-value",
-    "secret": "secret-value"
-  },
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
   "isActive": true,
-  "url": "url-value",
-  "supportedEntities": "supportedEntities-value"
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": "My Secret"
+  },
+  "url": "https://ABCWorkforceIntegration.com/Contoso/",
+  "supportedEntities": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
 
@@ -137,19 +139,21 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "apiVersion": 99,
-  "encryption": {
-    "protocol": "protocol-value",
-    "secret": "secret-value"
-  },
+  "id": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
   "isActive": true,
-  "url": "url-value",
-  "supportedEntities": "supportedEntities-value"
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": null
+  },
+  "url": "https://abcWorkforceIntegration.com/Contoso/",
+  "supportedEntities": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
 
-## Examples Use cases of WorkforceIntegration entity for Filtering by WFM rules eligibility
+## Examples use cases of WorkforceIntegration entity for Eligibility Filtering by workforce management system (WFM) rules
 
 ### Use case: Replace an existing WorkforceIntegration to enable SwapRequest for eligibility filtering
 
@@ -163,11 +167,11 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforce
   "apiVersion": 1,
   "isActive": true,
   "encryption": {
-    - "protocol": "sharedSecret",
+    "protocol": "sharedSecret",
     "secret": "My Secret"
   },
   "url": "https://abcWorkforceIntegration.com/Contoso/",
-  "supports": "Shift,SwapRequest",
+  "supportedEntities": "Shift,SwapRequest",
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
@@ -187,14 +191,14 @@ Content-type: application/json
     "secret": null
   },
   "url": "https://abcWorkforceIntegration.com/Contoso/",
-  "supports": "Shift,SwapRequest",
+  "supportedEntities": "Shift,SwapRequest",
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
-To see how to create a new workforceintegration with SwapRequest enabled for eligibility filtering, see [Create](../api/workforceintegration-post.md).
+To see how to create a new workforceIntegration with SwapRequest enabled for eligibility filtering, see [Create](../api/workforceintegration-post.md).
 
 ## Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
-The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.
+The interaction between Shifts app and workforce integration endpoints  follow the existing pattern.
 
 ### Request
 
@@ -214,20 +218,15 @@ Accept-Language: en-us
 ```
 ### Response
 
-The following is an example of the response from the workforce integration service.
+The following example shows the response from the workforce integration service.
 ```
 HTTP/1.1 200 OK
 {
   "responses": [
-  {
-    "body": {
-      "SHFT_6548f642-cbc1-4228-8621-054327576457",
-      "SHFT_6548f642-cbc1-4228-8621-054327571234"
-  }
     "id": "{shiftId}",
     "status: 200,
     "body": {
-       "data": [{ShiftId}, {ShiftId}...]
+       "data": [{shiftId}, {shiftId}...]
        "error": null
     }
   ]

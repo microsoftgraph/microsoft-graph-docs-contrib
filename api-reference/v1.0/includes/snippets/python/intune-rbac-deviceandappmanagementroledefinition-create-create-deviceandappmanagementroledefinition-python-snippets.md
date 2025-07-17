@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.device_and_app_management_role_definition import DeviceAndAppManagementRoleDefinition
 from msgraph.generated.models.role_permission import RolePermission
 from msgraph.generated.models.resource_action import ResourceAction
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = DeviceAndAppManagementRoleDefinition(
 	odata_type = "#microsoft.graph.deviceAndAppManagementRoleDefinition",
 	display_name = "Display Name value",

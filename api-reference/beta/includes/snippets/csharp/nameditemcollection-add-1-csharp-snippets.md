@@ -8,11 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Names.Add;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AddPostRequestBody
 {
 	Name = "test5",
-	Reference = "=Sheet1!$F$15:$N$27",
+	Reference = new UntypedString("=Sheet1!$F$15:$N$27"),
 	Comment = "Comment for the named item",
 };
 

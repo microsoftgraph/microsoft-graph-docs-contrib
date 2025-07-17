@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.call import Call
 from msgraph_beta.generated.models.call_direction import CallDirection
@@ -13,9 +14,7 @@ from msgraph_beta.generated.models.chat_info import ChatInfo
 from msgraph_beta.generated.models.organizer_meeting_info import OrganizerMeetingInfo
 from msgraph_beta.generated.models.identity_set import IdentitySet
 from msgraph_beta.generated.models.identity import Identity
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Call(
 	odata_type = "#microsoft.graph.call",
 	direction = CallDirection.Outgoing,

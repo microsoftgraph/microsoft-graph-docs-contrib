@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Submission resource
+ms.date: 06/08/2024
 ---
 
 # educationSubmissionResource resource type

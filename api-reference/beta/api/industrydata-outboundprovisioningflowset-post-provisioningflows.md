@@ -1,10 +1,11 @@
 ---
 title: "Create provisioningFlow"
 description: "Create a new provisioningFlow object."
-author: "cristobal-buenrostro"
+author: "mohanrajc"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 06/30/2025
 ---
 
 # Create provisioningFlow
@@ -53,10 +54,13 @@ In the request body, supply a JSON representation of the [provisioningFlow](../r
 
 Any of the following provisioning flows are valid:
 
-- [administrativeUnitProvisioningFlow](../resources/industrydata-administrativeUnitProvisioningFlow.md)
-- [classGroupProvisioningFlow](../resources/industrydata-classGroupProvisioningFlow.md)
-- [securityGroupProvisioningFlow](../resources/industrydata-securityGroupProvisioningFlow.md)
-- [userProvisioningFlow](../resources/industrydata-userProvisioningFlow.md)
+- [administrativeUnitProvisioningFlow](../resources/industrydata-administrativeunitprovisioningflow.md)
+- [classGroupProvisioningFlow](../resources/industrydata-classgroupprovisioningflow.md)
+- [securityGroupProvisioningFlow](../resources/industrydata-securitygroupprovisioningflow.md)
+- [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md)
+
+> [!CAUTION]
+> The **markAllStudentsAsMinors** property of **additionalUserOptions** under **managementOptions** in **userProvisioningFlow** is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property.
 
 ## Response
 
@@ -516,7 +520,6 @@ Content-type: application/json
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_user"
@@ -534,7 +537,7 @@ Content-type: application/json
         "additionalAttributes": ["userGradeLevel"],
         "additionalOptions":
         {
-            "markAllStudentsAsMinors": true,
+            "studentAgeGroup": "minor",
             "allowStudentContactAssociation"  : false
         }
     },
@@ -563,40 +566,6 @@ Content-type: application/json
     }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/post-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-user-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/post-user-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/post-user-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-user-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/post-user-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-user-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/post-user-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -628,7 +597,8 @@ Content-type: application/json
         ],
         "additionalOptions": {
             "markAllStudentsAsMinors": true,
-            "allowStudentContactAssociation": false
+            "allowStudentContactAssociation": false,
+            "studentAgeGroup": "minor"
         }
     },
     "creationOptions": {

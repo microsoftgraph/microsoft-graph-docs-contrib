@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # educationLinkedAssignmentResource resource type
@@ -20,9 +21,13 @@ A subclass of [educationResource](educationresource.md) that represents a link t
 |:---------------|:--------|:----------|
 |url|String|URL of the actual assignment.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

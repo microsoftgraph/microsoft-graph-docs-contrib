@@ -5,6 +5,7 @@ author: "idwilliams"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # tenantRelationship resource type
@@ -12,10 +13,6 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Represent the various type of tenant relationships.
-
-## Methods
-
-None.
 
 ## Properties
 
@@ -30,7 +27,7 @@ None.
 |multiTenantOrganization|[multiTenantOrganization](../resources/multitenantorganization.md)|Defines an organization with more than one instance of Microsoft Entra ID.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

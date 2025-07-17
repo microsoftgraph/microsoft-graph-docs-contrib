@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "Represents the default value for a columnDefinition."
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # defaultColumnValue resource type
@@ -26,7 +27,7 @@ SharePoint formulas use a syntax similar to Excel formulas. For more information
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.defaultColumnValue" } -->
 

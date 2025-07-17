@@ -5,6 +5,7 @@ author: Sangle7
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: resourcePageType
+ms.date: 10/24/2024
 ---
 
 # sitePage resource type
@@ -75,7 +76,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

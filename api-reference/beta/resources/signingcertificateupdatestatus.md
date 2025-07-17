@@ -5,6 +5,7 @@ author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # signingCertificateUpdateStatus resource type
@@ -45,7 +46,7 @@ Provides status and timestamp of the last update of the signing certificate.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.signingCertificateUpdateStatus"

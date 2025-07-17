@@ -1,10 +1,11 @@
 ---
 title: "List accessPackageResourceRoleScopes"
-description: "Retrieve a list of accesspackageresourcerolescope objects."
+description: "Retrieve an access package with a list of accessPackageResourceRoleScope objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/20/2024
 ---
 
 # List accessPackageResourceRoleScopes
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve an access package with a list of [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) objects. These objects represent the resource roles that an access package assigns to each subject. Each object links to an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) and an [accessPackageResourceScope](../resources/accesspackageresourcescope.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackage_list_accesspackageresourcerolescopes" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-list-accesspackageresourcerolescopes-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 

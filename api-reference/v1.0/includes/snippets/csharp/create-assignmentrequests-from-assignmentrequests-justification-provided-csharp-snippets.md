@@ -8,20 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AccessPackageAssignmentRequest
 {
 	RequestType = AccessPackageRequestType.UserAdd,
+	Justification = "Need access to New Hire access package",
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"accessPackageAssignment" , new 
+			"accessPackageAssignment" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				AccessPackageId = "a914b616-e04e-476b-aa37-91038f0b165b",
-			}
-		},
-		{
-			"justification" , "Need access to New Hire access package"
+				{
+					"accessPackageId", new UntypedString("a914b616-e04e-476b-aa37-91038f0b165b")
+				},
+			})
 		},
 	},
 };

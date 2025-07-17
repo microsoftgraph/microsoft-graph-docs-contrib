@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: conceptualPageType
+ms.date: 03/06/2024
 ---
 
 # Outlook extended properties overview

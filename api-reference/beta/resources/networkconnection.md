@@ -1,11 +1,11 @@
 ---
 title: "networkConnection resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Contains stateful information about the network connection related to the alert."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: cloud-pc
-ms.technology: microsoft-graph
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 # networkConnection resource type
@@ -69,9 +69,12 @@ Contains stateful information about the network connection related to the alert.
 |spx|1256| Sequenced Packet Exchange protocol.|
 |spxII|1257| Sequenced Packet Exchange version 2 protocol.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

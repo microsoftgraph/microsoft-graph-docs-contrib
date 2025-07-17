@@ -6,10 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-$params = @{
-	"@odata.id" = "https://graph.microsoft.com/beta/identity/userFlowAttributes/city"
-}
-
-Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeIdentityUserFlowAttributeByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -IdentityUserFlowAttributeId $identityUserFlowAttributeId
 
 ```

@@ -1,10 +1,11 @@
 ---
 title: "List joinedTeams"
 description: "Get the teams in Microsoft Teams that the user is a direct member of."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 08/16/2024
 ---
 
 # List joinedTeams

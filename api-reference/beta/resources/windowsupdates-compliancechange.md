@@ -3,8 +3,9 @@ title: "complianceChange resource type"
 description: "An abstract type that represents a change to enforce policy such as approving content."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # complianceChange resource type
@@ -37,7 +38,7 @@ An abstract type that represents a change to enforce policy such as approving co
 | updatePolicy | [microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) | The policy this compliance change is a member of. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

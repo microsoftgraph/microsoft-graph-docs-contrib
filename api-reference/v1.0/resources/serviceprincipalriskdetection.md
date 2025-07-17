@@ -5,6 +5,7 @@ author: "ebasseri"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 10/29/2024
 ---
 
 # servicePrincipalRiskDetection resource type
@@ -29,7 +30,7 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activity|activityType|Indicates the activity type the detected risk is linked to.  The possible values are: `signin`, `servicePrincipal`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `servicePrincipal`. |
+|activity|activityType|Indicates the activity type the detected risk is linked to.  The possible values are: `signin`, `servicePrincipal`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `servicePrincipal`. |
 |activityDateTime|DateTimeOffset|Date and time when the risky activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |additionalInfo|String|Additional information associated with the risk detection. This string value is represented as a JSON object with the quotations escaped. |
 |appId|String|The unique identifier for the associated application.|
@@ -42,7 +43,7 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 |lastUpdatedDateTime|DateTimeOffset|Date and time when the risk detection was last updated.|
 |location|[signInLocation](signinlocation.md)|Location from where the sign-in was initiated. |
 |requestId|String|Request identifier of the sign-in activity associated with the risk detection. This property is `null` if the risk detection is not associated with a sign-in activity. Supports `$filter` (`eq`).|
-|riskDetail|riskDetail|Details of the detected risk. <br>**Note:** Details for this property are only available for Workload Identities Premium customers. Events in tenants without this license will be returned `hidden`. <br/>The possible values are: `none`, `hidden`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised` , `adminDismissedAllRiskForServicePrincipal`.|
+|riskDetail|riskDetail|Details of the detected risk. <br>**Note:** Details for this property are only available for Workload Identities Premium customers. Events in tenants without this license will be returned `hidden`. <br/>The possible values are: `none`, `hidden`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised` , `adminDismissedAllRiskForServicePrincipal`.|
 |riskEventType|String|The type of risk event detected. The possible values are: `investigationsThreatIntelligence`, `generic`, `adminConfirmedServicePrincipalCompromised`, `suspiciousSignins`, `leakedCredentials`, `anomalousServicePrincipalActivity`, `maliciousApplication`, `suspiciousApplication`.|
 |riskLevel|riskLevel|Level of the detected risk. <br>**Note:** Details for this property are only available for Workload Identities Premium customers. Events in tenants without this license will be returned `hidden`. The possible values are: `low`, `medium`, `high`, `hidden`, `none`.|
 |riskState|riskState|The state of a detected risky service principal or sign-in activity. The possible values are: `none`, `dismissed`, `atRisk`, `confirmedCompromised`.|
@@ -55,7 +56,7 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

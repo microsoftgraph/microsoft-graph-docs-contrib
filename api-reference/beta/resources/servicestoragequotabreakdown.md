@@ -5,6 +5,7 @@ author: "BarryShehadeh"
 ms.localizationpriority: medium
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # serviceStorageQuotaBreakdown resource type
@@ -33,7 +34,7 @@ Represents a proportion of the unified storage quota associated with a specific 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

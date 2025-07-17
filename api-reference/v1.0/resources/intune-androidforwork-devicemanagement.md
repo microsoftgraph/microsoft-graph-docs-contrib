@@ -2,9 +2,10 @@
 title: "deviceManagement resource type"
 description: "Singleton entity that acts as a container for Android for Work settings functionality under device management."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceManagement resource type

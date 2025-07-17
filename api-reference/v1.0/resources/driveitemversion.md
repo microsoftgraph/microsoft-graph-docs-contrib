@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # driveItemVersion resource type
@@ -53,7 +54,7 @@ Removing file permissions for a user might not immediately invalidate the URL.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

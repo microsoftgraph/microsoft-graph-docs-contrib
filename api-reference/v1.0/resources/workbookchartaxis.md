@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 07/30/2024
 ---
 
 # workbookChartAxis resource type
@@ -18,8 +19,8 @@ Represents a single axis in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis-get.md) | [workbookChartAxis](workbookchartaxis.md) |Read properties and relationships of chartAxis object.|
-|[Update](../api/chartaxis-update.md) | [workbookChartAxis](workbookchartaxis.md)	|Update ChartAxis object. |
+|[Get](../api/chartaxis-get.md) | [workbookChartAxis](workbookchartaxis.md) |Read the properties and relationships of a chart axis.|
+|[Update](../api/chartaxis-update.md) | [workbookChartAxis](workbookchartaxis.md)	|Update a chart axis. |
 
 ## Properties
 | Property	   | Type	|Description|

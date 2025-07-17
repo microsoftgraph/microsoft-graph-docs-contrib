@@ -6,6 +6,7 @@ author: "kevinbellinger"
 ms.service: "microsoft-graph"
 ms.subservice: "people"
 doc_type: "resourcePageType"
+ms.date: 05/14/2024
 ---
 
 # itemFacet resource type

@@ -38,16 +38,18 @@ items:
   items:
   - name: Planner plan
     href: ../../resources/plannerplan.md
-  - name: Get plan
+  - name: Create
+    href: ../../api/planner-post-plans.md
+  - name: Get
     href: ../../api/plannerplan-get.md
+  - name: Update
+    href: ../../api/plannerplan-update.md
+  - name: Delete
+    href: ../../api/plannerplan-delete.md
   - name: List plan buckets
     href: ../../api/plannerplan-list-buckets.md
   - name: List plan tasks
     href: ../../api/plannerplan-list-tasks.md
-  - name: Update plan
-    href: ../../api/plannerplan-update.md
-  - name: Delete plan
-    href: ../../api/plannerplan-delete.md
 - name: Planner plan details
   items:
   - name: Planner plan details
@@ -68,11 +70,13 @@ items:
   items:
   - name: Planner task
     href: ../../resources/plannertask.md
-  - name: Get task
+  - name: Create
+    href: ../../api/planner-post-tasks.md
+  - name: Get
     href: ../../api/plannertask-get.md
-  - name: Update task
+  - name: Update
     href: ../../api/plannertask-update.md
-  - name: Delete task
+  - name: Delete
     href: ../../api/plannertask-delete.md
 - name: Planner task details
   items:

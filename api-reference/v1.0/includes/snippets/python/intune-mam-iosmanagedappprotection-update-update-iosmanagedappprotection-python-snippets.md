@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.ios_managed_app_protection import IosManagedAppProtection
 from msgraph.generated.models.managed_app_data_transfer_level import ManagedAppDataTransferLevel
@@ -12,9 +13,7 @@ from msgraph.generated.models.managed_app_pin_character_set import ManagedAppPin
 from msgraph.generated.models.managed_app_data_storage_location import ManagedAppDataStorageLocation
 from msgraph.generated.models.managed_browser_type import ManagedBrowserType
 from msgraph.generated.models.managed_app_data_encryption_type import ManagedAppDataEncryptionType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = IosManagedAppProtection(
 	odata_type = "#microsoft.graph.iosManagedAppProtection",
 	display_name = "Display Name value",

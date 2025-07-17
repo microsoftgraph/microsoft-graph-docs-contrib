@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Eligibility schedule
+ms.date: 07/22/2024
 ---
 
 # unifiedRoleEligibilitySchedule resource type
@@ -48,7 +49,7 @@ Inherits from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)
 |roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Detailed information for the roleDefinition object that is referenced through the **roleDefinitionId** property. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

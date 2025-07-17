@@ -1,9 +1,10 @@
 ---
 title: "Configure the built-in tab types in Microsoft Teams"
 description: "You can use the Microsoft Graph API to create a Microsoft Teams tab. Learn how to get the app ID and appropriate values for the various built-in tab types."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 11/07/2024
 ---
 
 # Configure the built-in tab types in Microsoft Teams

@@ -6,6 +6,7 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # group: evaluateDynamicMembership
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Evaluate whether a user or device is or would be a member of a dynamic group. The membership rule is returned along with other details that were used in the evaluation. You can complete this operation in the following ways:
+Evaluate whether a user or device is or would be a member of a dynamic [group](../resources/group.md). The membership rule is returned along with other details that were used in the evaluation. You can complete this operation in the following ways:
 
 - Evaluate whether a user or device is a member of a specified dynamic group.
 - Evaluate whether a user or device would be a member of a dynamic group based on the ID of the user or device and a membership rule.

@@ -6,6 +6,7 @@ author: "yyuank"
 ms.reviewer: "iamut"
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 07/29/2024
 ---
 
 # List directReports
@@ -21,7 +22,7 @@ Get a user's direct reports. Returns the users and contacts for whom this user i
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "user_list_directreports" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-directreports-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -35,6 +36,8 @@ GET /me/directReports
 GET /users/{id | userPrincipalName}/directReports
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 To retrieve the user and their direct reports, use the `$expand` query parameter:
 
 >**Note**: `$expand` returns a maximum of 20 objects. For details, see [query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635).
@@ -44,6 +47,8 @@ To retrieve the user and their direct reports, use the `$expand` query parameter
 GET /me?$expand=directReports
 GET /users/{id | userPrincipalName}?$expand=directReports
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Optional query parameters
 

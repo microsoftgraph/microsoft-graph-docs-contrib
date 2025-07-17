@@ -5,6 +5,7 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printOperation resource type
@@ -28,9 +29,12 @@ Represents a long-running Universal Print operation. Base class for operation ty
 |status|[printOperationStatus](printoperationstatus.md)|The status of the operation. Read-only.|
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the operation was created. Read-only.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

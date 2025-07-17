@@ -1,10 +1,11 @@
 ---
 title: "timeSlot resource type"
-description: "A time period."
+description: "Represents a time slot for a meeting."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "vrod9429"
 ms.subservice: "outlook"
+ms.date: 11/08/2024
 ---
 
 # timeSlot resource type
@@ -21,9 +22,13 @@ Represents a time slot for a meeting.
 |end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that a period ends. |
 |start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that a period begins.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

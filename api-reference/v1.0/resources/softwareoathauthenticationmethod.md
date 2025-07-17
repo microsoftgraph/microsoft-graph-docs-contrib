@@ -6,6 +6,8 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Software OATH
+ms.date: 07/22/2024
 ---
 
 # softwareOathAuthenticationMethod resource type

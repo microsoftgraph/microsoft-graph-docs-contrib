@@ -5,6 +5,7 @@ author: "shubhamguptacal"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # membershipoutlierinsight resource type
@@ -33,7 +34,7 @@ Inherits from [governanceInsight](governanceinsight.md).
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

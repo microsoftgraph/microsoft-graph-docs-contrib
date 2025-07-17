@@ -11,7 +11,6 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new BusinessScenarioTask
 {
-	OdataType = "#microsoft.graph.businessScenarioTask",
 	Title = "Customer order #12010",
 	PercentComplete = 0,
 	Priority = 5,

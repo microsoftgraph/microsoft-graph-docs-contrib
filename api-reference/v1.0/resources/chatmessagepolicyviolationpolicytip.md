@@ -5,6 +5,7 @@ author: "RamjotSingh"
 doc_type: resourcePageType
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 07/22/2024
 ---
 # chatMessagePolicyTip resource type
 
@@ -22,7 +23,7 @@ Policy tips are typically set by a data loss prevention (DLP) app which watches 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

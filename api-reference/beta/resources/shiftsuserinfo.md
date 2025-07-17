@@ -5,6 +5,7 @@ author: shanemalone
 ms.localizationpriority: high
 ms.subservice: teams
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # shiftsUserInfo resource type
@@ -20,7 +21,11 @@ Represents the details of a user in a [schedule](schedule.md).
 | Property             | Type                          | Description            |
 | -------------------- | ----------------------------- | ---------------------- |
 | displayName          | `string`                      | The display name for the `user`. Required.      |
-| userId    | `string`                      | ID of the `user`.  
+| userId    | `string`                      | ID of the `user`.  |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

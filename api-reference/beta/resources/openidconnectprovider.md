@@ -1,16 +1,19 @@
 ---
 title: "openIdConnectProvider resource type"
-description: "Represents OpenIDConnect identity providers in an Azure Active Directory B2C tenant."
+description: "Represents OpenIDConnect identity providers in an Azure Active Directory B2C tenant (deprecated)."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "namkedia"
+toc.title: OpenID Connect identity provider (deprecated)
+ms.date: 11/16/2024
 ---
 
 # openIdConnectProvider resource type (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant.
@@ -21,14 +24,9 @@ Inherits from [identityProvider](../resources/identityprovider.md).
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List](../api/identityprovider-list.md)|identityProvider collection|Retrieve all identity providers configured in a tenant.|
-|[Create](../api/identityprovider-post-identityproviders.md)|openIdConnectProvider|Create a new OpenID Connect identity provider.|
-|[Get](../api/identityprovider-get.md) |openIdConnectProvider|Retrieve properties of an OpenID Connect identity provider.|
-|[Update](../api/identityprovider-update.md)|None|Update an OpenID Connect identity provider.|
-|[Delete](../api/identityprovider-delete.md)|None|Delete an OpenID Connect identity provider.|
-|[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types.|
+None.
+
+For the list of API operations for managing the Open ID Connect provider, see [identityProvider](../resources/identityprovider.md).
 
 ## Properties
 
@@ -53,6 +51,9 @@ Inherits from [identityProvider](../resources/identityprovider.md).
 |code|As per the authorization code flow, a code is returned back to Azure AD B2C. Azure AD B2C proceeds to call the token_endpoint to exchange the code for the token.|
 |id_token|An ID token is returned back to Azure AD B2C from the custom identity provider. |
 |token|An access token is returned back to Azure AD B2C from the custom identity provider. Currently not supported by Azure AD B2C. |
+
+## Relationships
+None.
 
 ## JSON representation
 

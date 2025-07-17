@@ -2,6 +2,7 @@
 title: "Generate Microsoft Graph client libraries with Kiota"
 description: "Learn how to use Kiota to generate custom client libraries for Microsoft Graph."
 author: jasonjoh
+ms.date: 11/07/2024
 ---
 
 # Generate Microsoft Graph client libraries with Kiota
@@ -19,7 +20,7 @@ Using a Kiota-generated client has some advantages and disadvantages over using 
 
 ### Disadvantages
 
-- The end result of client generation with Kiota is source files, which must be added to your project. This increases the overall size of your code base.
+- The end result of client generation with Kiota is source files, which must be added to your project. This increases the overall size of your code base. However, this is likely minimal compared to the overall size of the full Microsoft Graph SDK.
 - If your application needs to call other Microsoft Graph APIs in the future, the client must be regenerated to add the required models and request builders.
 
 ## Generating a client

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let clientUniqueId = await client.api('/storage/fileStorage/containers/{containerId}/customProperties/clientUniqueId')
+let clientUniqueId = await client.api('/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties/clientUniqueId')
 	.version('beta')
 	.get();
 

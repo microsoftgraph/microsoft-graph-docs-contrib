@@ -2,9 +2,10 @@
 title: "onPremisesConditionalAccessSettings resource type"
 description: "Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # onPremisesConditionalAccessSettings resource type

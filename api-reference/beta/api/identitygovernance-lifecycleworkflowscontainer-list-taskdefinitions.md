@@ -1,10 +1,11 @@
 ---
 title: "List taskDefinitions"
-description: "Get a list of the taskDefinition objects and their properties."
+description: "Get a list of built-in workflow tasks in Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 08/23/2024
 ---
 
 # List taskDefinitions
@@ -13,9 +14,9 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [taskDefinition](../resources/identitygovernance-taskdefinition.md) objects and their properties.
+Get a list of built-in workflow tasks in Lifecycle Workflows. A task is represented by the [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -109,6 +110,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskD
 #### Response
 
 The following example shows the response.
+<!-- Keep the full response object for this example for other internal purposes-->
 
 <!-- {
   "blockType": "response",
@@ -123,6 +125,7 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions",
     "@odata.count": 25,
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/lifecycleWorkflows/taskDefinitions?$select=category,continueOnError",
     "value": [
         {
             "category": "joiner,leaver,mover",
@@ -225,6 +228,16 @@ Content-Type: application/json
                     "name": "locale",
                     "values": [],
                     "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
+                    "valueType": "string"
                 }
             ]
         },
@@ -253,6 +266,16 @@ Content-Type: application/json
                 {
                     "name": "locale",
                     "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
                     "valueType": "string"
                 }
             ]
@@ -366,6 +389,16 @@ Content-Type: application/json
                     "name": "locale",
                     "values": [],
                     "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
+                    "valueType": "string"
                 }
             ]
         },
@@ -394,6 +427,16 @@ Content-Type: application/json
                 {
                     "name": "locale",
                     "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
                     "valueType": "string"
                 }
             ]
@@ -424,6 +467,16 @@ Content-Type: application/json
                     "name": "locale",
                     "values": [],
                     "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
+                    "valueType": "string"
                 }
             ]
         },
@@ -452,6 +505,16 @@ Content-Type: application/json
                 {
                     "name": "locale",
                     "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
                     "valueType": "string"
                 }
             ]
@@ -531,6 +594,16 @@ Content-Type: application/json
                     "name": "locale",
                     "values": [],
                     "valueType": "string"
+                },
+                {
+                    "name": "to",
+                    "values": [
+                        "User",
+                        "Manager",
+                        "Sponsors",
+                        "{UserId}"
+                    ],
+                    "valueType": "string"
                 }
             ]
         },
@@ -564,9 +637,9 @@ Content-Type: application/json
         },
         {
             "category": "leaver,mover",
-            "description": "Transfer groups the user owned to the user's manager",
-            "displayName": "Transfer group ownership to manager",
-            "id": "dde2a64c-8420-447b-9075-7309449de5cd",
+            "description": "Revoke all refresh tokens for user",
+            "displayName": "Revoke all refresh tokens for user",
+            "id": "509589a4-0466-4471-829e-49c5e502bdee",
             "version": 1,
             "parameters": []
         }

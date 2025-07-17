@@ -2,18 +2,19 @@
 title: "user resource type"
 description: "Intune Troubleshooting User Source_Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # user resource type
 
 Namespace: microsoft.graph
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 
 
@@ -27,6 +28,7 @@ Namespace: microsoft.graph
 |[Update user](../api/intune-troubleshooting-user-update.md)|[user](../resources/intune-troubleshooting-user.md)|Update the properties of a [user](../resources/intune-troubleshooting-user.md) object.|
 |[getManagedDevicesWithAppFailures function](../api/intune-troubleshooting-user-getmanageddeviceswithappfailures.md)|String collection|Retrieves the list of devices with failed apps|
 |[getManagedDevicesWithFailedOrPendingApps function](../api/intune-troubleshooting-user-getmanageddeviceswithfailedorpendingapps.md)|[managedDeviceSummarizedAppState](../resources/intune-troubleshooting-manageddevicesummarizedappstate.md) collection|Retrieves the list of devices with failed or pending apps|
+|[retrieveManagedDevicesWithAppInstallationIssues function](../api/intune-troubleshooting-user-retrievemanageddeviceswithappinstallationissues.md)|[managedDeviceSummarizedAppState](../resources/intune-troubleshooting-manageddevicesummarizedappstate.md) collection|Retrieves the list of devices with failed or pending apps|
 
 ## Properties
 |Property|Type|Description|

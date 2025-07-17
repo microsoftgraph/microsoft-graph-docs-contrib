@@ -1,10 +1,11 @@
 ---
 title: "Add member to team"
 description: "Add a new member to a team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 08/16/2024
 ---
 
 # Add member to team

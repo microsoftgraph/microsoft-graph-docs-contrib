@@ -4,6 +4,8 @@ description: "To integrate your application service with notifications, register
 ms.localizationpriority: high
 ms.subservice: "notifications"
 author: "merzink"
+ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Manage app registration and API permission for Microsoft Graph notifications (deprecated)

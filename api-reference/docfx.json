@@ -218,13 +218,33 @@
         "moniker_range": "graph-rest-beta"
       }
     },
+    "rules": {
+      "filename-incomplete": {
+        "exclude": [
+          "**/*"
+        ]
+      },
+      "include-structure-incorrect": {
+        "exclude": [
+          "**/*"
+        ]
+      },
+      "filename-exceeds-max-length": {
+        "exclude": [
+          "**/*"
+        ]
+      },
+      "filename-contains-gerund": {
+        "exclude": [
+          "**/*"
+        ]
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
       "feedback_system": "Standard",
       "feedback_product_url": "https://developer.microsoft.com/graph/support",
-      "feedback_help_link_url": "https://learn.microsoft.com/en-us/answers/tags/161/ms-graph",
-      "feedback_help_link_type": "get-help-at-qna",
       "feedback_github_repo": "microsoftgraph/microsoft-graph-docs-contrib",
       "author": "MSGraphDocsVteam",
       "ms.author": "MSGraphDocsVteam",
@@ -237,8 +257,8 @@
     },
     "fileMetadata": {
       "breadcrumb_path": {
-        "v1.0/**": "/graph/breadcrumb/toc.json",
-        "beta/**": "/graph/breadcrumb/toc.json"
+        "v1.0/**": "/graph/ref-breadcrumb/toc.json",
+        "beta/**": "/graph/ref-breadcrumb/toc.json"
       },
       "monikerRange": {
         "v1.0/**": "graph-rest-1.0",

@@ -16,7 +16,9 @@ mgc-beta communications calls answer post --call-id {call-id} --body '{\
   ],\
   "callOptions": {\
     "@odata.type": "#microsoft.graph.incomingCallOptions",\
-    "isContentSharingNotificationEnabled": true\
+    "isContentSharingNotificationEnabled": true,\
+    "isDeltaRosterEnabled": true,\
+    "isInteractiveRosterEnabled": true\
   },\
   "participantCapacity": 200\
 }\

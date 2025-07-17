@@ -1,13 +1,14 @@
 ---
-title: "approvalSettings complex type"
+title: "approvalSettings resource type"
 description: "The settings for approval as defined in a role management policy rule."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 10/04/2024
 ---
 
-# approvalSettings complex type
+# approvalSettings resource type
 
 Namespace: microsoft.graph
 
@@ -29,7 +30,7 @@ The settings for approval as defined in a role management policy rule.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.approvalSettings"

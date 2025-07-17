@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "WiRawlinWork"
 ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 07/11/2024
 ---
 
 # plannerRoster: assignSensitivityLabel
@@ -105,6 +106,10 @@ If-Match: "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\""
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/assign-sensitivitylabel-to-roster--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/assign-sensitivitylabel-to-roster--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

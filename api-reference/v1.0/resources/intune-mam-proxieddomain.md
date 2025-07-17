@@ -2,9 +2,10 @@
 title: "proxiedDomain resource type"
 description: "Proxied Domain"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # proxiedDomain resource type

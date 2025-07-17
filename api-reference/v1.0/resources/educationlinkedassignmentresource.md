@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "v-rmanda"
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # educationLinkedAssignmentResource resource type
@@ -18,6 +19,10 @@ A subclass of [educationResource](educationresource.md) that represents a link t
 | Property | Type   | Description                   |
 | :------- | :----- | :---------------------------- |
 | url      | String | URL of the actual assignment. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

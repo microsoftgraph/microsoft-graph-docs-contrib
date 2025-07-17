@@ -5,6 +5,7 @@ author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # userProvisioningFlow resource type
@@ -34,7 +35,7 @@ Inherits from [microsoft.graph.industryData.provisioningFlow](industrydata-provi
 | Property             | Type                                                                                                     | Description                                                                                                                                                                                                         |
 | :------------------- | :------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | createdDateTime      | DateTimeOffset                                                                                           | Inherited from [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md).                                                                                                      |
-| createUnmatchedUsers | Boolean                                                                                                  | A boolean choice indicating whether unmatched users should be created or ignored.                                                                                                                                    |
+| createUnmatchedUsers | Boolean                                                                                                  | A Boolean choice indicating whether unmatched users should be created or ignored.                                                                                                                                    |
 | creationOptions      | [microsoft.graph.industryData.userCreationOptions](industrydata-usercreationoptions.md)     | The different management choices for the new users to be provisioned.                                                                                                                                                |
 | id                   | String                                                                                                   | Inherited from [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md).                                                                                                      |
 | lastModifiedDateTime | DateTimeOffset                                                                                           | Inherited from [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md).                                                                                                      |

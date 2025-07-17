@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkPeripheralsHealth resource type
@@ -26,8 +27,11 @@ Represents health details for all peripheral devices attached to a Microsoft Tea
 |speakerHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|The health details about the speaker.|
 
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkPeripheralsHealth"

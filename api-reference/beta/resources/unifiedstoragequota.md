@@ -5,6 +5,7 @@ author: "BarryShehadeh"
 ms.localizationpriority: medium
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # unifiedStorageQuota resource type
@@ -39,7 +40,7 @@ Provides an aggregate view of a user's quota information across multiple service
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

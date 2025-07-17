@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "billbliss"
 ms.subservice: teams
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # operationError resource type
@@ -23,7 +24,7 @@ Describes errors in [teamsAsyncOperation](teamsasyncoperation.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 10/01/2024
 ---
 
 # channel: completeMigration
@@ -14,6 +15,10 @@ Namespace: microsoft.graph
 Complete the message migration process by removing `migration mode` from a [channel](../resources/channel.md) in a team. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 
 After a **completeMigration** request is made, you can't import additional messages into the team. You can add members to the team after the request returns a successful response.
+
+> [!NOTE]
+> Completing the migration of the channel `General` before completing the migration of other channels leads to a situation in
+> which the team is marked as migrated, prohibiting you from creating further channels to be migrated.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

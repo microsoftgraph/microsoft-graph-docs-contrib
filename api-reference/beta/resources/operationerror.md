@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: teams
 author: "billbliss"
+ms.date: 07/22/2024
 ---
 
 # operationError resource type
@@ -15,15 +16,18 @@ Namespace: microsoft.graph
 
 Describes errors in [teamsAsyncOperation](teamsasyncoperation.md).
 
-## operationError Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |code|string (readonly)|Operation error code.|
 |message|string (readonly)|Operation error message.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

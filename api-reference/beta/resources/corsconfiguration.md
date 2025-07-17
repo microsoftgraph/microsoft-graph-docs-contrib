@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # corsConfiguration resource type (deprecated)
@@ -26,10 +27,13 @@ Represents the CORS settings for the [onPremisesApplicationSegment](onPremisesAp
 |maxAgeInSeconds|Integer|The maximum amount of time that a browser should cache the response to the preflight **OPTIONS** request.|
 |resource|String|Resource within the application segment for which CORS permissions are granted. `/` grants permission for whole app segment.|
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

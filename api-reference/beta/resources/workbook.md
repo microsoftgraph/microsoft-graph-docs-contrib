@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 07/17/2024
 ---
 
 # workbook resource type
@@ -19,7 +20,7 @@ Contains related workbook objects such as worksheets, tables, ranges, and so on.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
+|[Create](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
 |[Close session](../api/workbook-closesession.md) | None |Close an existing session.|
 |[Refresh session](../api/workbook-refreshsession.md) | None |Refresh an existing session.|
 

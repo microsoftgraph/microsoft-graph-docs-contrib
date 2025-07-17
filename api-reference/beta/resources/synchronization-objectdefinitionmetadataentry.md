@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # objectDefinitionMetadataEntry resource type
@@ -32,9 +33,12 @@ Metadata for the given object.
 |Extensions  |A JSON containing a list of attributes and values that extends the base object that this object inherits from.  |
 |BaseObjectName |If this object inherits another object, this is the name of the parent base object.  |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.objectDefinitionMetadataEntry"

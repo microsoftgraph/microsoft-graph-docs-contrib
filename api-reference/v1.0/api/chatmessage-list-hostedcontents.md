@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.subservice: teams
 doc_type: "apiPageType"
+ms.date: 08/13/2024
 ---
 
 # List hostedContents
@@ -60,7 +61,7 @@ This operation doesn't support the [OData query parameters](/graph/query-paramet
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

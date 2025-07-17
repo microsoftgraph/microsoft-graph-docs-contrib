@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 04/19/2024
 ---
 
 # Delete servicePrincipal
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "serviceprincipal_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-delete-permissions.md)]
+
+[!INCLUDE [rbac-serviceprincipal-apis-write](../includes/rbac-for-apis/rbac-serviceprincipal-apis-write.md)]
 
 ## HTTP request
 

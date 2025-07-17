@@ -1,0 +1,134 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "approvalItemState",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvalItemState** enumeration type.",
+          "Target": "approvalItemState"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "approvalItemType",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvalItemType** enumeration type.",
+          "Target": "approvalItemType"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "approvalOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvalOperationStatus** enumeration type.",
+          "Target": "approvalOperationStatus"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "approverRole",
+          "ChangeType": "Addition",
+          "Description": "Added the **approverRole** enumeration type.",
+          "Target": "approverRole"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "provisionState",
+          "ChangeType": "Addition",
+          "Description": "Added the **provisionState** enumeration type.",
+          "Target": "provisionState"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvalIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [approvalIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/approvalIdentitySet?view=graph-rest-beta) resource.",
+          "Target": "approvalIdentitySet"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvalItemViewPoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [approvalItemViewPoint](https://learn.microsoft.com/en-us/graph/api/resources/approvalItemViewPoint?view=graph-rest-beta) resource.",
+          "Target": "approvalItemViewPoint"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvalItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [approvalItem](https://learn.microsoft.com/en-us/graph/api/resources/approvalItem?view=graph-rest-beta) resource.",
+          "Target": "approvalItem"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvalItemRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [approvalItemRequest](https://learn.microsoft.com/en-us/graph/api/resources/approvalItemRequest?view=graph-rest-beta) resource.",
+          "Target": "approvalItemRequest"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvalItemResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [approvalItemResponse](https://learn.microsoft.com/en-us/graph/api/resources/approvalItemResponse?view=graph-rest-beta) resource.",
+          "Target": "approvalItemResponse"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvalOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [approvalOperation](https://learn.microsoft.com/en-us/graph/api/resources/approvalOperation?view=graph-rest-beta) resource.",
+          "Target": "approvalOperation"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvalSolution",
+          "ChangeType": "Addition",
+          "Description": "Added the [approvalSolution](https://learn.microsoft.com/en-us/graph/api/resources/approvalSolution?view=graph-rest-beta) resource.",
+          "Target": "approvalSolution"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "approval",
+          "ChangeType": "Addition",
+          "Description": "Added the **approval** relationship to the [solutionsRoot](https://learn.microsoft.com/en-us/graph/api/resources/solutionsRoot?view=graph-rest-beta) resource.",
+          "Target": "solutionsRoot"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/approvalitem-cancel?view=graph-rest-beta) method to the [approvalItem](https://learn.microsoft.com/en-us/graph/api/resources/approvalItem?view=graph-rest-beta) resource.",
+          "Target": "cancel"
+        },
+        {
+          "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+          "ApiChange": "Method",
+          "ChangedApiName": "provision",
+          "ChangeType": "Addition",
+          "Description": "Added the [provision](https://learn.microsoft.com/en-us/graph/api/approvalsolution-provision?view=graph-rest-beta) method to the [approvalSolution](https://learn.microsoft.com/en-us/graph/api/resources/approvalSolution?view=graph-rest-beta) resource.",
+          "Target": "provision"
+        }
+      ],
+      "Id": "5df96036-e055-4098-a2c2-009f3fb3d977",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-01T17:00:02.5894887Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Approvals"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ author: "sumanac"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # pinnedChatMessageInfo resource type
@@ -36,7 +37,7 @@ Inherits from [entity](../resources/entity.md).
 | message | [chatMessage](../resources/chatmessage.md) | Represents details about the chat message that is pinned.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

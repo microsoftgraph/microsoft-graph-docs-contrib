@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kristinmcleod"
 ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 08/08/2024
 ---
 
 # Get profilePhoto
@@ -40,9 +41,9 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   Group.Read.All | Group.ReadWrite.All           |
+|Delegated (work or school account)      |  ProfilePhoto.Read.All | ProfilePhoto.ReadWrite.All, Group.Read.All, Group.ReadWrite.All           |
 |Delegated (personal Microsoft account)      |   Not supported.            |  Not supported. |
-|Application      |    Group.Read.All | Group.ReadWrite.All           |
+|Application      |   ProfilePhoto.Read.All | ProfilePhoto.ReadWrite.All, Group.Read.All, Group.ReadWrite.All           |
 
 ### To retrieve the profile photo of a team
 
@@ -58,15 +59,14 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   User.Read | User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Delegated (work or school account)      |  ProfilePhoto.Read.All | ProfilePhoto.ReadWrite.All, User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
 |Delegated (personal Microsoft account)      |   User.Read | User.ReadWrite            |
-|Application      |    User.Read.All | User.ReadWrite.All           |
+|Application      |   ProfilePhoto.Read.All | ProfilePhoto.ReadWrite.All, User.Read.All, User.ReadWrite.All           |
 
 > [!NOTE]
 > 
-> - Metadata operation isn't supported for personal Microsoft accounts.
-> - An app with only application permissions cannot access a group's photo.
 > - Retrieving a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
+> - Guest users can view profile photos of users, even when the **Guest user access** settings are configured to the **most restrictive** option in Azure Active Directory External Identities settings.
 
 ## HTTP request
 

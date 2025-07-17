@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhanyahk"
 ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # userIdentity resource type
@@ -23,6 +24,10 @@ Inherits from [identity](identity.md).
 | id          | String | Unique identifier for the identity. Nullable. When the unique identifier is unavailable, the **displayName** property is provided for the identity, but the **id** property isn't included in the response. |
 | ipAddress   | String | Indicates the client IP address associated with the user performing the activity (audit log only).|
 | userPrincipalName | String  | The **userPrincipalName** attribute of the user. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

@@ -5,6 +5,8 @@ author: "payiAzure"
 ms.localizationpriority: medium
 ms.subservice: "service-communications"
 doc_type: apiPageType
+ms.date: 08/01/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # List attachments
@@ -111,7 +113,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#admin/serviceAnnouncement/messages('MC54091')/attachments",
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/messages('MC54091')/attachments",
     "value": [
         {
             "contentType": "application/csv",
@@ -195,7 +197,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#admin/serviceAnnouncement/messages('MC54091')/attachmentsArchive",
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/messages('MC54091')/attachmentsArchive",
     "value": "Stream"
 }
 ```

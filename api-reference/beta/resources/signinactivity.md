@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # signInActivity resource type
@@ -17,6 +18,8 @@ Provides the last interactive or non-interactive sign-in *attempt* time for a sp
 
 Effective December 1, 2023, the **lastSuccessfulSignInDateTime** property is available to provide the last *successful* sign-in time for a specific user, regardless of whether the sign-in was interactive or non-interactive. The data isn't backfilled for this property.
 
+See an example of [getting the **signInActivity** details](../api/user-list.md#example-4-list-the-last-sign-in-time-of-users-with-a-specific-display-name).
+
 ## Properties
 
 | Property     | Type        | Description |
@@ -25,12 +28,12 @@ Effective December 1, 2023, the **lastSuccessfulSignInDateTime** property is ava
 |lastNonInteractiveSignInRequestId|String|Request identifier of the last non-interactive sign-in performed by this user.|
 |lastSignInDateTime|DateTimeOffset|The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Microsoft Entra ID maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see [Manage inactive user accounts in Microsoft Entra ID](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts).|
 |lastSignInRequestId|String|Request identifier of the last interactive sign-in performed by this user.|
-|lastSuccessfulSignInDateTime|DateTimeOffset|The date and time of the user's most recent successful sign-in activity. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastSuccessfulSignInDateTime|DateTimeOffset|The date and time of the user's most recent successful interactive or non-interactive sign-in. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |lastSuccessfulSignInRequestId|String|The request ID of the last successful sign-in.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

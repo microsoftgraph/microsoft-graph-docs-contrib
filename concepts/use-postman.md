@@ -3,6 +3,8 @@ title: "Use Postman with the Microsoft Graph API"
 description: "Postman is an API platform for building and using APIs. Use the Microsoft Graph Postman collection to get started with Microsoft Graph APIs."
 author: "jasonjoh"
 ms.localizationpriority: high
+ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Use Postman with the Microsoft Graph API
@@ -35,6 +37,9 @@ To use the Postman collection, fork it to your own Postman workspace. Do this fr
 1. Fill in a label for your own fork; this can be any text.
 1. Under **Workspace**, ensure that **My Workspace** is selected in the dropdown list.
 1. Select **Fork Collection**.
+
+> [!IMPORTANT]
+> Don't fork this collection to a public workspace. Use a private workspace to reduce the risk of exposing credentials or other sensitive data.
 
 You are redirected to a fork of the main Microsoft Graph Postman collection in your own workspace.
 
@@ -106,6 +111,3 @@ Certain [conditional access policies](/azure/active-directory/conditional-access
 
 See [403 Forbidden "Access to OData is disabled."](resolve-auth-errors.md#403-forbidden-access-to-odata-is-disabled).
 
-## Related content
-
-- [Use Postman with the Microsoft Graph connectors API](connecting-external-content-connectors-api-postman.md)

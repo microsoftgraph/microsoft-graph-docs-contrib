@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.device_management_export_job import DeviceManagementExportJob
 from msgraph.generated.models.device_management_report_file_format import DeviceManagementReportFileFormat
 from msgraph.generated.models.device_management_export_job_localization_type import DeviceManagementExportJobLocalizationType
 from msgraph.generated.models.device_management_report_status import DeviceManagementReportStatus
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = DeviceManagementExportJob(
 	odata_type = "#microsoft.graph.deviceManagementExportJob",
 	report_name = "Report Name value",

@@ -5,6 +5,7 @@ title: "columnDefinition resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
 ms.subservice: "sharepoint"
+ms.date: 08/01/2024
 ---
 
 # columnDefinition resource type
@@ -34,11 +35,11 @@ By default, **columnDefinitions** and field values for `hidden` columns aren't s
 
 Columns can hold data of various types.
 The following properties indicate what type of data a column stores, as well as additional settings for that data.
-The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text, term, hyperlinkOrPicture, thumbnail, and contentApprovalStatus) are mutually exclusive; a column can only have one of them specified.
+The type-related properties (Boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text, term, hyperlinkOrPicture, thumbnail, and contentApprovalStatus) are mutually exclusive; a column can only have one of them specified.
 
 | Property name           | Type    | Description|
 |:------------------------|:--------|:-----------------------------------------|
-| **boolean**       | [booleanColumn][]       | This column stores boolean values.|
+| **boolean**       | [booleanColumn][]       | This column stores Boolean values.|
 | **calculated**    | [calculatedColumn][]    | This column's data is calculated based on other columns.|
 | **choice**        | [choiceColumn][]        | This column stores data from a list of choices.|
 | **columnGroup**         | string  | For site columns, the name of the group this column belongs to. Helps organize related columns.|
@@ -84,7 +85,7 @@ Sites and list columns response won't contain **isDeletable**, **propagateChange
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

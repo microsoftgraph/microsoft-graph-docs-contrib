@@ -5,6 +5,7 @@ author: "raghuchek"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 05/21/2024
 ---
 
 # educationSubmission: excuse

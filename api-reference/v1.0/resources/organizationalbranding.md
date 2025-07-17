@@ -1,10 +1,11 @@
 ---
 title: "organizationalBranding resource type"
-description: "Contains details of the organization's branding."
-author: "quievey"
+description: "Contains details of the organization's default branding."
+author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # organizationalBranding resource type
@@ -71,7 +72,7 @@ You can't change your original configuration's language. However, companies can 
 | localizations | [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) collection | Add different branding based on a locale. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

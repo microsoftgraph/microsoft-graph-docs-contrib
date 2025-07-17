@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const identityProviderBase = {
   '@odata.type': '#microsoft.graph.socialIdentityProvider',
-  clientSecret: '1111111111111'
+  clientSecret: '4294967296'
 };
 
 await client.api('/identity/identityProviders/Amazon-OAUTH')

@@ -76,6 +76,7 @@ var requestBody = new BookingService
 	DisplayName = "Bento",
 	IsLocationOnline = true,
 	SmsNotificationsEnabled = true,
+	IsCustomerAllowedToManageBooking = true,
 	LanguageTag = "en-US",
 	IsHiddenFromCustomers = false,
 	Notes = "Home-cooked special",

@@ -5,6 +5,7 @@ author: agnesliu
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # deletedTeam resource type
@@ -34,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |channels|[channel](../resources/channel.md) collection|The channels that are either shared with this deleted team or created in this deleted team.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

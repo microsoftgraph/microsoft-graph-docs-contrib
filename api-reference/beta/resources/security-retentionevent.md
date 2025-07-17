@@ -5,6 +5,7 @@ author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # retentionEvent resource type
@@ -50,7 +51,7 @@ To learn more about it, see [Start retention when an event occurs](/microsoft-36
 |retentionEventType|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Specifies the event that will start the retention period for labels that use this event type when an event is created.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

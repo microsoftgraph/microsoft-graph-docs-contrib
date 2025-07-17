@@ -6,6 +6,8 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Windows Hello for Business
+ms.date: 07/22/2024
 ---
 
 # windowsHelloForBusinessAuthenticationMethod resource type
@@ -38,8 +40,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |:---|:---|:---|
 |device|[device](../resources/device.md)|The registered device on which this Windows Hello for Business key resides. Supports `$expand`. <br/><br/>When you get a user's Windows Hello for Business registration information, this property is returned only on a single GET and when you specify `?$expand`. For example, GET `/users/admin@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device`.|
 
-## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -53,7 +54,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
   "id": "String (Identifier)",
   "displayName": "String",
-  "createdDateTime": "String",
+  "createdDateTime": "String (timestamp)",
   "keyStrength": {"@odata.type": "microsoft.graph.authenticationMethodKeyStrength"}
 }
 ```

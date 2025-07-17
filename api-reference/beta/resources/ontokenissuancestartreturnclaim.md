@@ -5,6 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # onTokenIssuanceStartReturnClaim resource type
@@ -24,7 +25,7 @@ A claim returned by an API that is to be added to a token after the event when a
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onTokenIssuanceStartReturnClaim"

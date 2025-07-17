@@ -5,6 +5,7 @@ title: "calculatedColumn resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
 ms.subservice: sharepoint
+ms.date: 07/22/2024
 ---
 
 # calculatedColumn resource type
@@ -29,7 +30,7 @@ SharePoint formulas use a syntax similar to Excel formulas. For more information
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.calculatedColumn" } -->
 

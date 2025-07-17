@@ -5,6 +5,8 @@ author: "CecilyK"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/24/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # List customSecurityAttributeDefinitions

@@ -1,10 +1,11 @@
 ---
 title: "teamMessagingSettings resource type"
 description: "Settings to configure messaging and mentions in the team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/19/2024
 ---
 
 # teamMessagingSettings resource type
@@ -26,7 +27,7 @@ Settings to configure messaging and mentions in the [team](team.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

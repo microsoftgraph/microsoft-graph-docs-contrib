@@ -11,6 +11,7 @@ $params = @{
 	visibility = "Private"
 	displayName = "Sample Engineering Team"
 	description = "This is a sample engineering team, used to showcase the range of properties supported by this API"
+	firstChannelName = "My first channel of the sample team"
 	channels = @(
 		@{
 			displayName = "Announcements 📢"

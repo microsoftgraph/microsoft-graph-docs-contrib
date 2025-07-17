@@ -5,6 +5,7 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printUsageByPrinter resource type
@@ -39,7 +40,7 @@ Describes print activity for a printer during a specified time period (usageDate
 |usageDate|Date|The date associated with these statistics.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,8 +3,9 @@ title: "qualityUpdateCveSeverityInformation resource type"
 description: "Represents the summary of severity information regarding the Common Vulnerabilities and Exposures (CVEs) addressed by a quality update."
 author: "angiechen22"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # qualityUpdateCveSeverityInformation resource type
@@ -29,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation"

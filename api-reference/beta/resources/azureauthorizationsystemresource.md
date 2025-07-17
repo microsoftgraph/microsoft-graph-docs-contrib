@@ -6,6 +6,8 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+toc.title: Azure resources
+ms.date: 07/25/2024
 ---
 
 # azureAuthorizationSystemResource resource type
@@ -13,6 +15,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 Represents an Azure resource in an Azure authorization system onboarded to Permissions Management.
 
@@ -57,4 +61,5 @@ The following JSON representation shows the resource type.
   "resourceType": "String"
 }
 ```
+
 

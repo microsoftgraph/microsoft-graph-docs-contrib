@@ -5,6 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # customExtensionHandler resource type (deprecated)
@@ -16,9 +17,6 @@ Namespace: microsoft.graph
 Defines when to execute a [custom access package workflow extension](customaccesspackageworkflowextension.md).
 
 Inherits from [entity](entity.md).
-
-## Methods
-None.
 
 > [!NOTE]
 >

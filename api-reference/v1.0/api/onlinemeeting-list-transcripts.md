@@ -5,13 +5,14 @@ author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 08/06/2024
 ---
 
 # List transcripts
 
 Namespace: microsoft.graph
 
-Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API doesn't support getting call transcripts from channel meetings.
+Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call recordings from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
 
 > [!NOTE]
 > * This API doesn't support meetings created using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
@@ -47,7 +48,7 @@ GET /users/{user-id}/onlineMeetings/{online-meeting-id}/transcripts
 
 ## Optional query parameters
 
-This method doesn't support any [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$top`  [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -61,11 +62,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [callTranscript](../resources/callTranscript.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [callTranscript](../resources/calltranscript.md) objects in the response body.
 
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -76,7 +79,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts
-
 ```
 
 # [C#](#tab/csharp)
@@ -113,9 +115,9 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 ---
 
----
-
 ### Response
+
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -136,7 +138,10 @@ Content-Type: application/json
         {
             "id": "MSMjMCMjZDAwYWU3NjUtNmM2Yi00NjQxLTgwMWQtMTkzMmFmMjEzNzdh",
             "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
+            "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
             "createdDateTime": "2021-09-17T06:09:24.8968037Z",
+            "endDateTime": "2023-04-10T08:27:25.2346000Z",
+            "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
             "transcriptContentUrl": "https://graph.microsoft.com/v1.0/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/('MSMjMCMjZDAwYWU3NjUtNmM2Yi00NjQxLTgwMWQtMTkzMmFmMjEzNzdh')/content",
             "meetingOrganizer": {
                 "application": null,
@@ -146,14 +151,17 @@ Content-Type: application/json
                     "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
                     "displayName": null,
                     "userIdentityType": "aadUser",
-                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
+                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331"
                 }
             }
         },
         {
             "id": "MSMjMCMjMzAxNjNhYTctNWRmZi00MjM3LTg5MGQtNWJhYWZjZTZhNWYw",
             "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
+            "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
             "createdDateTime": "2021-09-16T18:58:58.6760692Z",
+            "endDateTime": "2023-04-10T08:27:25.2346000Z",
+            "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
             "transcriptContentUrl": "https://graph.microsoft.com/v1.0/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/('MSMjMCMjMzAxNjNhYTctNWRmZi00MjM3LTg5MGQtNWJhYWZjZTZhNWYw')/content",
             "meetingOrganizer": {
                 "application": null,
@@ -163,14 +171,17 @@ Content-Type: application/json
                     "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
                     "displayName": null,
                     "userIdentityType": "aadUser",
-                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
+                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331"
                 }
             }
         },
         {
             "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
             "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
+            "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
             "createdDateTime": "2021-09-16T18:56:00.9038309Z",
+            "endDateTime": "2023-04-10T08:27:25.2346000Z",
+            "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
             "transcriptContentUrl": "https://graph.microsoft.com/v1.0/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/('MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4')/content",
             "meetingOrganizer": {
                 "application": null,
@@ -180,10 +191,10 @@ Content-Type: application/json
                     "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
                     "displayName": null,
                     "userIdentityType": "aadUser",
-                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
+                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331"
                 }
             }
-        }        
+        }
     ]
 }
 ```

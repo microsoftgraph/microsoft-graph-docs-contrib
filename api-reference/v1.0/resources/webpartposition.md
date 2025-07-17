@@ -5,6 +5,7 @@ author: "sangle7"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # webPartPosition resource type
@@ -21,7 +22,7 @@ Represents the position information of the given web part to the current page.
 | :------------------ | :------ | :--------------------------------------------------------------------------------------- |
 | columnId            | Double  | Indicates the identifier of the column where the web part is located.                      |
 | horizontalSectionId | Double  | Indicates the horizontal section where the web part is located.                            |
-| isInVerticalSection | boolean | Indicates whether the web part is located in the vertical section.                            |
+| isInVerticalSection | Boolean | Indicates whether the web part is located in the vertical section.                            |
 | webPartIndex        | Double  | Index of the current web part. Represents the order of the web part in this column or section. |
 
 ## Relationships
@@ -30,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

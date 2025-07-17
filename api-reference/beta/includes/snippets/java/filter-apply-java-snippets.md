@@ -20,7 +20,7 @@ icon.setSet("set-value");
 icon.setIndex(99);
 criteria.setIcon(icon);
 criteria.setDynamicCriteria("dynamicCriteria-value");
-Values values = new Values();
+UntypedNode values = new UntypedNode();
 criteria.setValues(values);
 criteria.setFilterOn("filterOn-value");
 applyPostRequestBody.setCriteria(criteria);

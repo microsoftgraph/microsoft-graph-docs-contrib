@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-id-governance"
 author: "iamgirishck"
+ms.date: 07/23/2024
 ---
 
 # recurrenceRange resource type
@@ -35,6 +36,10 @@ Use the **type** property to specify the different types of **recurrenceRange**.
 |`endDate` |Range with end date | Event repeats on all the days that fit the corresponding recurrence pattern between the **startDate** and **endDate** inclusive. | Repeat event in the date range between June 1, 2017 and June 15, 2017. | **type**, **startDate**, **endDate** |
 |`noEnd`   |Range without an end date | Event repeats on all the days that fit the corresponding recurrence pattern beginning on the **startDate**. | Repeat event in the date range starting on June 1, 2017 indefinitely. | **type**, **startDate** |
 |`numbered`|Range with specific number of occurrences | Event repeats for the **numberOfOccurrences** based on the recurrence pattern beginning on the **startDate**. | Repeat event in the date range starting on June 1, 2017, for 10 occurrences.  | **type**, **startDate**, **numberOfOccurrences** |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

@@ -5,6 +5,8 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+toc.title: Meeting registration (deprecated)
+ms.date: 07/11/2024
 ---
 
 # meetingRegistration resource type (deprecated)

@@ -1,0 +1,31 @@
+{
+  "hydrated": true,
+  "properties": {
+    "helpUri": "https://eng.ms/docs/microsoft-security/security/azure-security/cloudai-security-fundamentals-engineering/security-integration/guardian-wiki/microsoft-guardian/general/suppressions",
+    "hydrationStatus": "This file does not contain identifying data. It is safe to check into your repo. To hydrate this file with identifying data, run `guardian hydrate --help` and follow the guidance."
+  },
+  "version": "1.0.0",
+  "suppressionSets": {
+    "default": {
+      "name": "default",
+      "createdDate": "2024-08-26 12:06:54Z",
+      "lastUpdatedDate": "2024-08-26 12:06:54Z"
+    }
+  },
+  "results": {
+    "b3d46ea406a66acd0fa8b1130ec9be5b501ad4a933d98ce70193c68771b6e7be": {
+      "signature": "b3d46ea406a66acd0fa8b1130ec9be5b501ad4a933d98ce70193c68771b6e7be",
+      "alternativeSignatures": [
+        "79e125fb7927450b0ebb02d6b3ddb03d7a6a971e21dfdc1c246ba8fd39f0969e"
+      ],
+      "target": "update-permissions-reference.ps1",
+      "line": 170,
+      "memberOf": [
+        "default"
+      ],
+      "tool": "psscriptanalyzer",
+      "ruleId": "PSAvoidUsingConvertToSecureStringWithPlainText",
+      "createdDate": "2024-08-26 12:06:54Z"
+    }
+  }
+}

@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphrolemanagement.RoleManagementDeviceManagementRoleAssignmentItemRequestBuilderGetQueryParameters{
+requestParameters := &graphrolemanagement.DeviceManagementRoleAssignmentsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"roleDefinition","principals","directoryScopes"},
 }
-configuration := &graphrolemanagement.RoleManagementDeviceManagementRoleAssignmentItemRequestBuilderGetRequestConfiguration{
+configuration := &graphrolemanagement.DeviceManagementRoleAssignmentsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

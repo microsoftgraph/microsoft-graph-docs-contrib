@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 11/10/2024
 ---
 
 # Create sharePointRestoreSession
@@ -57,6 +58,8 @@ You can specify the following properties when you create a **sharePointRestoreSe
 
 If successful, this method returns a `201 Created` response code and a [sharePointRestoreSession](../resources/sharepointrestoresession.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -75,11 +78,11 @@ Content-Type: application/json
 {
   "siteRestoreArtifacts": [
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "destinationType": "inPlace"
     },
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
       "destinationType": "inPlace"
     }
   ]
@@ -110,6 +113,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/sharepointrestoresession-create-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sharepointrestoresession-create-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/sharepointrestoresession-create-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -136,6 +143,13 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.sharepointRestoreSession",
   "id": "61633878-8321-4950-bfaf-ed285bdd1461",
   "status": "activating",
+  "restoreJobType": "standard",
+  "restoreSessionArtifactCount": {
+    "total": 2,
+    "completed": 0,
+    "inProgress": 2,
+    "failed": 0
+  },
   "createdBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -146,7 +160,7 @@ Content-Type: application/json
       "displayName": "User1"
     }
   },
-  "createdDateTime": "2015-06-19T12-01-03.45Z",
+  "createdDateTime": "2015-06-19T12:01:03.45Z",
   "lastModifiedBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -157,7 +171,7 @@ Content-Type: application/json
       "displayName": "User2"
     }
   },
-  "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
+  "lastModifiedDateTime": "2015-06-19T12:01:03.45Z"
 }
 ```
 

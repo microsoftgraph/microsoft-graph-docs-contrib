@@ -1,20 +1,21 @@
 ---
 title: "domain: verify"
-description: "Validates the ownership of the domain."
+description: "Validate the ownership of a domain."
 author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/31/2024
 ---
 
 # domain: verify
 
 Namespace: microsoft.graph
 
-Validates the ownership of the domain.
+Validate the ownership of a [domain](../resources/domain.md). This operation only applies to an unverified domain. For an unverified domain, the **isVerified** property is `false`.
 
-> **Important:**
-> Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
+> [!NOTE]
+> Verifying a domain through Microsoft Graph doesn't configure the domain for use with Office 365 services like Exchange. Fully configuring the domain to work with Microsoft 365 products might require extra steps. For more information, see [Microsoft 365 admin setup](/microsoft-365/admin/setup/add-domain).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -26,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_verify" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-verify-permissions.md)]
 
-The work or school account needs to belong to at least the *Domain Name Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+[!INCLUDE [rbac-domain-apis-write](../includes/rbac-for-apis/rbac-domain-apis-write.md)]
 
 ## HTTP request
 
@@ -45,6 +46,14 @@ POST /domains/{id}/verify
 | Content-Type  | application/json |
 
 ## Request body
+
+In the request body, supply a JSON representation of the parameters.
+
+The following table lists the parameters that are optional when you call this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|forceTakeover|Boolean|Optional. Used for external admin takeover of an unmanaged domain. The default value for this parameter is `false`. <br/><br/>If the domain to be verified is currently linked to an unmanaged tenant but you own the domain, use this parameter to take over that domain. Force takeover only succeeds when this tenant has verified their ownership of the domain by adding the TXT records to the domain registrar. For more information, see [Take over an unmanaged directory as administrator in Microsoft Entra ID](/entra/identity/users/domains-admin-takeover).|
 
 ## Response
 

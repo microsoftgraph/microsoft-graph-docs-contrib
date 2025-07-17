@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cristianv-ms"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 08/08/2024
 ---
 
 # resultTemplate resource type
@@ -21,9 +22,13 @@ Represents a dictionary of **resultTemplateIds** and associated values, which in
 |displayName|String|Name of the result template.|
 |key|String|ID of a result template. The **key** property must map to a **resultTemplateId** in the [searchHit](searchhit.md) collection.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

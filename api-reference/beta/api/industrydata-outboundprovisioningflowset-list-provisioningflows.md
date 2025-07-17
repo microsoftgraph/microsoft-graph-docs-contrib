@@ -1,10 +1,11 @@
 ---
 title: "List provisioningFlow objects"
 description: "Get a list of the provisioningFlow objects and their properties."
-author: "cristobal-buenrostro"
+author: "mohanrajc"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 06/30/2025
 ---
 
 # List provisioningFlow objects
@@ -57,6 +58,9 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [provisioningFlow](../resources/industrydata-provisioningflow.md) objects in the response body.
+
+> [!CAUTION]
+> The **markAllStudentsAsMinors** property of **additionalOptions** under **managementOptions** in [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property.
 
 ## Examples
 
@@ -252,7 +256,8 @@ Content-Type: application/json
                 ],
                 "additionalOptions": {
                     "markAllStudentsAsMinors": true,
-                    "allowStudentContactAssociation": false
+                    "allowStudentContactAssociation": false,
+                    "studentAgeGroup": "minor"
                 }
             },
             "creationOptions": {

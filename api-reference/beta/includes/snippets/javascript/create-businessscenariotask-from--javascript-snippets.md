@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 const businessScenarioTask = {
-  '@odata.type': '#microsoft.graph.businessScenarioTask',
   title: 'Customer order #12010',
   percentComplete: 0,
   priority: 5,

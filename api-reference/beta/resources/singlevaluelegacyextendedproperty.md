@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: cloud-pc
 author: "SuryaLashmiS"
+ms.date: 05/23/2024
 ---
 
 # singleValueLegacyExtendedProperty resource type

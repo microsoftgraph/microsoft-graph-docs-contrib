@@ -5,6 +5,7 @@ author: "javieralvarezchiang"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 10/09/2024
 ---
 
 # driveItem: discardCheckout
@@ -19,7 +20,7 @@ Discard the check out of a [driveItem](../resources/driveitem.md). This action r
 The same user that performed the checkout must discard it. Another alternative is to use application permissions.
 
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -62,11 +63,18 @@ Don't supply a request body for this method.
 
 If successful, this action returns a `204 No Content` response code.
 
+### Error responses
+
+The request returns `400 Bad Request` if the file isn't checked out. Requests made with delegated access return `423 Locked` if another user has the file checked out. Requests made with application access can discard any checkout. 
+
+For more information about how errors are returned, see [Error responses][error-response].
+
 ## Examples
 
 ### Request
 
 The following example shows a discard checkout request on a file identified by `{item-id}`.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveitemthis.discardcheckout"
@@ -76,6 +84,39 @@ The following example shows a discard checkout request on a file identified by `
 POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/discardCheckout
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/driveitemthisdiscardcheckout-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/driveitemthisdiscardcheckout-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/driveitemthisdiscardcheckout-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/driveitemthisdiscardcheckout-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveitemthisdiscardcheckout-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/driveitemthisdiscardcheckout-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/driveitemthisdiscardcheckout-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/driveitemthisdiscardcheckout-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -87,4 +128,4 @@ The following example shows the response.
 HTTP/1.1 204 No content
 ```
 
-
+[error-response]: /graph/errors

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 author: "spgraph-docs-team"
+ms.date: 08/01/2024
 ---
 
 # driveItem: preview
@@ -17,7 +18,8 @@ This action allows you to obtain short-lived embeddable URLs for an item in orde
 
 If you want to obtain long-lived embeddable links, use the [createLink][] API instead.
 
-> **Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.
+> [!NOTE]
+> The **preview** action is currently only available on SharePoint and OneDrive for Business.
 
 [createLink]: driveitem-createlink.md
 
@@ -29,6 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "driveitem_preview" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-preview-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 
@@ -51,8 +55,8 @@ The request should be a JSON object with the following properties.
 |   Name      |  Type         | Description
 |:------------|:--------------|:-----------------------------------------------
 | viewer      | string        | Optional. Preview app to use. `onedrive` or `office`. If null, a suitable viewer will be chosen automatically.
-| chromeless  | boolean       | Optional. If `true` (default), the embedded view will not include any controls.
-| allowEdit   | boolean       | Optional. If `true`, the file can be edited from the embedded UI.
+| chromeless  | Boolean       | Optional. If `true` (default), the embedded view will not include any controls.
+| allowEdit   | Boolean       | Optional. If `true`, the file can be edited from the embedded UI.
 | page        | string/number | Optional. Page number of document to start at, if applicable. Specified as string for future use cases around file types such as ZIP.
 | zoom        | number        | Optional. Zoom level to start at, if applicable.
 

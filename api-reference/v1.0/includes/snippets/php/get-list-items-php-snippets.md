@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ItemsRequestBuilderGetRequestConfiguration();
 $queryParameters = ItemsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->expand = ["fields(\$select=Name,Color,Quantity)"];
+$queryParameters->expand = ["fields(select=Name,Color,Quantity)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

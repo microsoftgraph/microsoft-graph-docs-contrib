@@ -20,17 +20,11 @@ roles := []string {
 	"write",
 }
 requestBody.SetRoles(roles)
-
-
-identitySet := graph.NewIdentitySet()
-application := graph.New()
+grantedTo := graphmodels.NewIdentitySet()
+application := graphmodels.NewIdentity()
 id := "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
 application.SetId(&id) 
-identitySet.SetApplication(application)
-
-grantedTo := []graph.IdentitySetable {
-	identitySet,
-}
+grantedTo.SetApplication(application)
 requestBody.SetGrantedTo(grantedTo)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

@@ -5,6 +5,7 @@ title: "Delete baseSitePage"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 # Delete baseSitePage
 
@@ -39,7 +40,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------
-|Authorization|Bearer {token}.| Required|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).| Required|
 | _if-match_ | etag  | If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted.
 
 ## Request body
@@ -59,7 +60,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-page", "scopes": "files.readwrite sites.readwrite.all" } -->
 ```http
-DELETE /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202
+DELETE https://graph.microsoft.com/v1.0/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202
 ```
 
 # [C#](#tab/csharp)

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: resourcePageType
 author: "ailae"
+ms.date: 07/22/2024
 ---
 
 # activityHistoryItem resource type
@@ -46,7 +47,7 @@ When an app creates a session, a **activityHistoryItem** object should be added 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

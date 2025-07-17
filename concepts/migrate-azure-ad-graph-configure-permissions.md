@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-applications
 ms.topic: how-to
 zone_pivot_groups: configure-azure-ad-graph-permissions
-ms.date: 12/19/2023
+ms.date: 08/16/2024
 #customer intent: As an app developer, I want to grant Azure AD Graph permissions to my app registration, so that my app can continue to function while I plan for migration from Azure AD Graph to Microsoft Graph.
 ---
 
@@ -16,7 +16,7 @@ ms.date: 12/19/2023
 
 Azure Active Directory (Azure AD) Graph [is deprecated and is in its retirement path](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270). We recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you migrate your apps to [Microsoft Graph](/graph/overview).
 
-Your app might still temporarily require Azure AD Graph permissions to access resources. You can follow one of four methods described in this article to configure Azure AD Graph permissions for your app registration:
+Your app might still temporarily require Azure AD Graph permissions to access resources. You can follow one of three methods described in this article to configure Azure AD Graph permissions for your app registration:
 
 1. [Use the Microsoft Entra admin center to find the APIs your organization uses](/graph/migrate-azure-ad-graph-configure-permissions?pivots=entra-portal-app-manifest#use-the-microsoft-entra-admin-center-to-find-the-apis-your-organization-uses)
 1. [Update the application manifest on the Microsoft Entra admin center](/graph/migrate-azure-ad-graph-configure-permissions?pivots=entra-portal-app-manifest#update-the-application-manifest-on-the-microsoft-entra-admin-center)

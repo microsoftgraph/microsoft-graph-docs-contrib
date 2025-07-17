@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphadmin.AdminWindowsUpdatesProductsfindByKbNumberWithRequestBuilderGetQueryParameters{
+requestParameters := &graphadmin.WindowsUpdatesProductsfindByKbNumberRequestBuilderGetQueryParameters{
 	Expand: [] string {"revisions($expand=catalogEntry,knowledgeBaseArticle)","knownIssues"},
 }
-configuration := &graphadmin.AdminWindowsUpdatesProductsfindByKbNumberWithRequestBuilderGetRequestConfiguration{
+configuration := &graphadmin.WindowsUpdatesProductsfindByKbNumberRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

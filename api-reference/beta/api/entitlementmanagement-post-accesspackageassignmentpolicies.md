@@ -1,10 +1,11 @@
 ---
 title: "Create accessPackageAssignmentPolicy"
-description: "Use this API to create a new accessPackageAssignmentPolicy."
+description: "Create a new accessPackageAssignmentPolicy object in Microsoft Entra entitlement management."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/20/2024
 ---
 
 # Create accessPackageAssignmentPolicy
@@ -13,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.
+Create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_post_accesspackageassignmentpolicies" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-accesspackageassignmentpolicies-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-access-package-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-manager-apis-write.md)]
 
 ## HTTP request
 
@@ -55,7 +58,7 @@ A direct assignment policy is useful when access package assignment requests wil
 
 #### Request
 
-The following example shows a request to create an access package assignment policy. In this policy, no users can request, no approval is required, and there are no access reviews.
+The following example shows a request to create an access package assignment policy. In this policy, no users can request, no approval is required, and there are no access reviews. 
 
 # [HTTP](#tab/http)
 <!-- {
@@ -643,12 +646,13 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Create a policy and specify the stages to trigger pre-defined access package custom extensions
+### Example 5: Create a policy and specify the stages to trigger predefined access package custom extensions
+
+In the following example, the predefined **accessPackageCustomWorkflowExtension** object is triggered by the creation or approval of an access package assignment request. The identifier in the **customExtension** property corresponds to the ID of the **accessPackageCustomWorkflowExtension** object.
 
 #### Request
 
-In the following example, the pre-defined **accessPackageCustomWorkflowExtension** object is triggered when an access package assignment request is created and when it's granted.  The identifier provided within the **customExtension** field is the **accessPackageCustomWorkflowExtension** object's ID.
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -732,7 +736,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response. The **customExtensionStageSettings** object isn't returned by default. To retrieve this object, use the **GET** method with `$expand`. For more information, see [Retrieve the custom extension stage settings for a policy](accesspackageassignmentpolicy-get.md#example-3-retrieve-the-custom-extension-stage-settings-for-a-policy)
+The following example shows the response. The **customExtensionStageSettings** object isn't returned by default. To retrieve this object, use the [GET accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) method with `$expand`. For more information, see [Example 3: Retrieve the custom extension stage settings for a policy](../api/accesspackageassignmentpolicy-get.md#example-3-retrieve-the-custom-extension-stage-settings-for-a-policy).
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

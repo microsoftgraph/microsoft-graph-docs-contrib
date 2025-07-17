@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.delegated_permission_classification import DelegatedPermissionClassification
 from msgraph_beta.generated.models.permission_classification_type import PermissionClassificationType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = DelegatedPermissionClassification(
 	permission_id = "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
 	permission_name = "User.Read",

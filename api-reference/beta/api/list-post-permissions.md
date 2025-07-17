@@ -5,6 +5,7 @@ author: "BarrySh"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 06/17/2024
 ---
 
 # Create permission on a list

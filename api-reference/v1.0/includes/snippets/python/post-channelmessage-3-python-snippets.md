@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.chat_message import ChatMessage
 from msgraph.generated.models.chat_message_from_identity_set import ChatMessageFromIdentitySet
@@ -11,9 +12,7 @@ from msgraph.generated.models.identity import Identity
 from msgraph.generated.models.item_body import ItemBody
 from msgraph.generated.models.body_type import BodyType
 from msgraph.generated.models.chat_message_hosted_content import ChatMessageHostedContent
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ChatMessage(
 	created_date_time = "2019-02-04T19:58:15.511Z",
 	from = ChatMessageFromIdentitySet(

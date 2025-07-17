@@ -2,16 +2,17 @@
 title: "List androidStoreApps"
 description: "List properties and relationships of the androidStoreApp objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List androidStoreApps
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1728
+Content-Length: 1776
 
 {
   "value": [
@@ -95,7 +96,6 @@ Content-Length: 1728
       "supersedingAppCount": 3,
       "supersededAppCount": 2,
       "packageId": "Package Id value",
-      "appIdentifier": "App Identifier value",
       "appStoreUrl": "https://example.com/appStoreUrl/",
       "minimumSupportedOperatingSystem": {
         "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -114,7 +114,11 @@ Content-Length: 1728
         "v8_1": true,
         "v9_0": true,
         "v10_0": true,
-        "v11_0": true
+        "v11_0": true,
+        "v12_0": true,
+        "v13_0": true,
+        "v14_0": true,
+        "v15_0": true
       }
     }
   ]

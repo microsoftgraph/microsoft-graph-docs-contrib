@@ -2,18 +2,19 @@
 title: "deviceManagementAutopilotEvent resource type"
 description: "Represents an Autopilot flow event."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # deviceManagementAutopilotEvent resource type
 
 Namespace: microsoft.graph
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Represents an Autopilot flow event.
 
@@ -31,6 +32,7 @@ Represents an Autopilot flow event.
 |:---|:---|:---|
 |id|String|UUID for the object|
 |deviceId|String|Device id associated with the object|
+|userId|String|UserId id associated with the object|
 |eventDateTime|DateTimeOffset|Time when the event occurred .|
 |deviceRegisteredDateTime|DateTimeOffset|Device registration date.|
 |enrollmentStartDateTime|DateTimeOffset|Device enrollment start date.|
@@ -48,19 +50,14 @@ Represents an Autopilot flow event.
 |osVersion|String|Device operating system version.|
 |deploymentDuration|Duration|Autopilot deployment duration including enrollment.|
 |deploymentTotalDuration|Duration|Total deployment duration from enrollment to Desktop screen.|
-|devicePreparationDuration|Duration|Time spent in device enrollment.|
 |deviceSetupDuration|Duration|Time spent in device ESP.|
 |accountSetupDuration|Duration|Time spent in user ESP.|
 |deploymentStartDateTime|DateTimeOffset|Deployment start time.|
 |deploymentEndDateTime|DateTimeOffset|Deployment end time.|
-|targetedAppCount|Int32|Count of applications targeted.|
-|targetedPolicyCount|Int32|Count of policies targeted.|
 |enrollmentFailureDetails|String|Enrollment failure details.|
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|policyStatusDetails|[deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) collection|Policy and application status details for this device.|
+None
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -75,6 +72,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
   "id": "String (identifier)",
   "deviceId": "String",
+  "userId": "String",
   "eventDateTime": "String (timestamp)",
   "deviceRegisteredDateTime": "String (timestamp)",
   "enrollmentStartDateTime": "String (timestamp)",
@@ -92,13 +90,10 @@ Here is a JSON representation of the resource.
   "osVersion": "String",
   "deploymentDuration": "String (duration)",
   "deploymentTotalDuration": "String (duration)",
-  "devicePreparationDuration": "String (duration)",
   "deviceSetupDuration": "String (duration)",
   "accountSetupDuration": "String (duration)",
   "deploymentStartDateTime": "String (timestamp)",
   "deploymentEndDateTime": "String (timestamp)",
-  "targetedAppCount": 1024,
-  "targetedPolicyCount": 1024,
   "enrollmentFailureDetails": "String"
 }
 ```

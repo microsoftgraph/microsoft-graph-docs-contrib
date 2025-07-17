@@ -5,6 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # customExtensionAuthenticationConfiguration resource type
@@ -22,6 +23,10 @@ This abstract type is inherited by the following resource types:
 The type of token authentication used depends on the token security. If the token security value is normal, you use the [azureAdTokenAuthentication](../resources/azureadtokenauthentication.md) resource type. If the value is Proof of Possession, you use the [azureAdPopTokenAuthentication](../resources/azureAdPopTokenAuthentication.md) resource type.
 
 ## Properties
+
+None.
+
+## Relationships
 
 None.
 

@@ -5,6 +5,7 @@ author: "kwekua"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # staffAvailabilityItem resource type
@@ -22,9 +23,13 @@ Represents the available and busy time slots of a Microsoft Bookings [staff memb
 |availabilityItems |[availabilityItem](availabilityitem.md) collection |Each item in this collection indicates a slot and the status of the staff member.|
 |staffId |String |The ID of the staff member.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

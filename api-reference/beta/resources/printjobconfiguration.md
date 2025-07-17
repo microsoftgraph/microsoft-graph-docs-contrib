@@ -5,6 +5,7 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # printJobConfiguration resource type
@@ -128,6 +129,10 @@ A group of settings that a printer should use to print a job.
 |fit|3|The printer scales the document to fit the printable area of the requested media size, preserving the aspect ratio of the document data without cropping the document.|
 |none|4|The printer doesn't scale the document to fit the requested media size. If the document is larger than the requested media, the printer centers and clips the resulting output. If the document is smaller than the requested media, printer centers the resulting output.|
 |unknownFutureValue|5|Evolvable enumeration sentinel value. Don't use.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

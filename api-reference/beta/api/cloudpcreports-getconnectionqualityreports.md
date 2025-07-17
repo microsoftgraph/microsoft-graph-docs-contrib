@@ -1,19 +1,23 @@
 ---
-title: "cloudPcReports: getConnectionQualityReports"
+title: "cloudPcReports: getConnectionQualityReports (deprecated)"
 description: "Get the overall connection quality reports for all devices within a current tenant during a given time period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/13/2024
 ---
 
-# cloudPcReports: getConnectionQualityReports
+# cloudPcReports: getConnectionQualityReports (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the overall connection quality reports for all devices within a current tenant during a given time period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage. Get also other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol.
+
+>[!CAUTION] 
+> This API is deprecated and will stop returning data on December 31, 2024. Going forward, use the [retrieveConnectionQualityReports](cloudpcreports-retrieveconnectionqualityreports.md) API.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -86,7 +90,7 @@ Content-length: 200
     "ManagedDeviceName",
     "AvgRoundTripTimeInMsP50",
     "LastConnectionRoundTripTimeInMs",
-    "AvgAvailableBandwidthInMBpsP50",
+    "AvgAvailableBandwidthInMbpsP50",
     "LastConnectionAvailableBandWidthInMSps",
     "AvgRemoteSignInTimeInSecP50",
     "UDPConnectionPercentage",
@@ -122,10 +126,6 @@ Content-length: 200
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetconnectionqualityreports-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetconnectionqualityreports-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -169,7 +169,7 @@ Content-Type: application/octet-stream
       "PropertyType": "Double"
     },
     {
-      "Column": "AvgAvailableBandwidthInMBpsP50",
+      "Column": "AvgAvailableBandwidthInMbpsP50",
       "PropertyType": "Double"
     },
     {

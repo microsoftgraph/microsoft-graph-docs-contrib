@@ -2,9 +2,10 @@
 title: "deviceAppManagement resource type"
 description: "Device app management singleton entity."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # deviceAppManagement resource type

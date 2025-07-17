@@ -3,8 +3,9 @@ title: "contentApproval resource type"
 description: "Represents content approval to be deployed according to a policy."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # contentApproval resource type
@@ -43,7 +44,7 @@ Inherits from [complianceChange](../resources/windowsupdates-compliancechange.md
 |updatePolicy|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|The policy this compliance change is a member of. Inherited from [microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md).|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

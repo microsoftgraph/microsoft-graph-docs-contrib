@@ -5,6 +5,7 @@ author: "anthona"
 ms.localizationpriority: high
 ms.subservice: "insights"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List people

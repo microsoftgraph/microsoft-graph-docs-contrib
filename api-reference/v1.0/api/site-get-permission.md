@@ -5,12 +5,16 @@ author: "BarrySh"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get permission
 Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [permission](../resources/permission.md) object on a site.
+
+> [!IMPORTANT]
+> Using the GET method to retrieve SharePoint subsites' permissions isn't supported at this time.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

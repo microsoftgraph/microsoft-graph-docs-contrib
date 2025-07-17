@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "frank-masuelli"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 07/24/2024
 ---
 
 # subscribedSku resource type
@@ -13,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about a service SKU that a company is subscribed to.
+Represents information about a service SKU that a company is subscribed to. Use the values of **skuId** and **servicePlans** > **servicePlanId** to assign licenses to unassigned users and groups through the [user: assignLicense](../api/user-assignlicense.md) and [group: assignLicense](../api/group-assignlicense.md) APIs respectively.
+
+For more information about subscriptions and licenses, see [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
 Inherits from [directoryObject](directoryobject.md).
 
@@ -31,7 +34,7 @@ Inherits from [directoryObject](directoryobject.md).
 | accountId        | String                                           | The unique ID of the account this SKU belongs to.                                                                                                                                                                                                               |
 | accountName      | String                                           | The name of the account this SKU belongs to.                                                                                                                                                                                                                    |
 | appliesTo        | String                                           | The target class for this SKU. Only SKUs with target class `User` are assignable. Possible values are: `User`, `Company`.                                                                                                                                                  |
-| capabilityStatus | String                                           | `Enabled` indicates that the **prepaidUnits** property has at least one unit that is enabled. `LockedOut` indicates that the customer cancelled their subscription. Possible values are: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
+| capabilityStatus | String                                           | `Enabled` indicates that the **prepaidUnits** property has at least one unit that is enabled. `LockedOut` indicates that the customer canceled their subscription. Possible values are: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
 | consumedUnits    | Int32                                            | The number of licenses that have been assigned.                                                                                                                                                                                                                 |
 | id               | String                                           | The unique identifier for the subscribed SKU object. Key, not nullable.                                                                                                                                                                                         |
 | prepaidUnits     | [licenseUnitsDetail](licenseunitsdetail.md)      | Information about the number and status of prepaid licenses.                                                                                                                                                                                                    |
@@ -46,7 +49,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

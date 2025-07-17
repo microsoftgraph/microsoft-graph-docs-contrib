@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 11/10/2024
 ---
 
 # List mailboxRestoreArtifacts
@@ -49,6 +50,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -88,6 +91,10 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSess
 [!INCLUDE [sample-code](../includes/snippets/php/mailboxrestoreartifact-list-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/mailboxrestoreartifact-list-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/mailboxrestoreartifact-list-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -119,6 +126,7 @@ Content-Type: application/json
       "completionDateTime": "2023-12-04T13:22:12.7209691Z",
       "restoredFolderId": "0bdb38aa-5ad4-43ae-b63d-54426c97caa3",
       "restoredFolderName": "testmailbox101",
+      "restoredItemCount": 5,
       "restorePoint": {
           "id": "ffd2687a-f507-4a82-9dff-2fa78cfdaa41_1801645000_12_2",
           "protectionDateTime": "2023-12-04T00:00:00Z",
@@ -133,6 +141,7 @@ Content-Type: application/json
       "completionDateTime": "2024-02-10T13:22:12.7209691Z",
       "restoredFolderId": "f8bb7c43-dabd-4300-a56a-510f093bc537",
       "restoredFolderName": "testmailbox102",
+      "restoredItemCount": 10,
       "restorePoint": {
           "id": "86ba0fa7-db56-4c70-bf47-62adafefc0ee_1801645000_12_2",
           "protectionDateTime": "2024-02-10T00:00:00Z",

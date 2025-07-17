@@ -1,10 +1,11 @@
 ---
 title: "longRunningOperation resource type"
-description: "Represents the status of a long-running operation."
+description: "Represents the status of a long-running Microsoft Graph API operation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/19/2024
 ---
 
 # longRunningOperation resource type
@@ -13,9 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the status of a long-running operation.
+Represents the status of a long-running Microsoft Graph API operation.
 
-Base type of [attackSimulationOperation](../resources/attacksimulationoperation.md), [engagementAsyncOperation](../resources/engagementasyncoperation.md), and [validateOperation](../resources/industrydata-validateoperation.md).
+The following types derive from this object:
+- [richLongRunningOperation](richlongrunningoperation.md)
+- [attackSimulationOperation](../resources/attacksimulationoperation.md)
+- [engagementAsyncOperation](../resources/engagementasyncoperation.md)
+- [validateOperation](../resources/industrydata-validateoperation.md)
 
 ## Methods
 
@@ -33,6 +38,9 @@ Base type of [attackSimulationOperation](../resources/attacksimulationoperation.
 |resourceLocation|String| URI of the resource that the operation is performed on. |
 |status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
 |statusDetail|String|Details about the status of the operation.|
+
+## Relationships
+None.
 
 ## JSON representation
 

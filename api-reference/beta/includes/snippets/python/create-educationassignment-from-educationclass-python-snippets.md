@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.education_assignment import EducationAssignment
 from msgraph_beta.generated.models.education_item_body import EducationItemBody
@@ -11,12 +12,11 @@ from msgraph_beta.generated.models.body_type import BodyType
 from msgraph_beta.generated.models.education_assignment_points_grade_type import EducationAssignmentPointsGradeType
 from msgraph_beta.generated.models.education_assignment_class_recipient import EducationAssignmentClassRecipient
 from msgraph_beta.generated.models.education_assignment_status import EducationAssignmentStatus
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = EducationAssignment(
-	due_date_time = "2022-09-16T00:00:00Z",
-	display_name = "Reading test 09.14 Beta",
+	due_date_time = "2025-09-16T00:00:00Z",
+	display_name = "Reading test 09.14",
+	language_tag = "es-MX",
 	instructions = EducationItemBody(
 		content_type = BodyType.Text,
 		content = "Read chapter 4",

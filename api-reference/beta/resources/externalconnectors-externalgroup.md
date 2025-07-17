@@ -5,6 +5,7 @@ author: "snlraju-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # externalGroup resource type
@@ -45,7 +46,7 @@ Examples of external groups are business units and work teams.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

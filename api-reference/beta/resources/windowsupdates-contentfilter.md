@@ -3,8 +3,9 @@ title: "contentFilter resource type"
 description: "An abstract type that represents a filter to determine which content matches the rule on an ongoing basis."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 08/31/2024
 ---
 
 # contentFilter resource type
@@ -22,7 +23,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.contentFilter"

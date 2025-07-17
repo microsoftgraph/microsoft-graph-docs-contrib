@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 mgc users extensions patch --user-id {user-id} --extension-id {extension-id} --body '{\
     "theme":"light",\
-    "color":"yellow",\
+    "color":"purple",\
     "lang":"Swahili"\
 }\
 '

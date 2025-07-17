@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "njerigrevious"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 07/25/2024
 ---
 
 # aggregationOption resource type
@@ -22,6 +23,10 @@ Specifies which aggregations should be returned alongside the search results. Th
 |bucketDefinition|[bucketAggregationDefinition](bucketaggregationdefinition.md)|Specifies the criteria to compute an aggregation. Optional.|
 |field|String|Computes aggregation on the field while the field exists in the current entity type. Required.|
 |size|Int32|The number of [searchBucket](searchBucket.md) resources to be returned. This isn't required when the range is provided manually in the search request. The minimum accepted size is 1, and the maximum is 65535. Optional.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

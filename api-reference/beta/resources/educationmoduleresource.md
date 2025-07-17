@@ -6,6 +6,7 @@ author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Module resource
+ms.date: 07/23/2024
 ---
 
 # educationModuleResource resource type
@@ -33,8 +34,8 @@ A wrapper object that stores the resources associated with a module. The student
 |resource|[educationResource](educationresource.md)|Resource object that has been associated with this module.|
 
 ## Relationships
-None.
 
+None.
 
 ## JSON representation
 

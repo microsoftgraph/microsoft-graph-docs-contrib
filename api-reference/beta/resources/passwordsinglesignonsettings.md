@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "luleonpla"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 05/15/2024
 ---
 
 # passwordSingleSignOnSettings resource type

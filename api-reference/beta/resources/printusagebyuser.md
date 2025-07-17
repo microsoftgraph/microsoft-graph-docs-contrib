@@ -5,6 +5,7 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printUsageByUser resource type
@@ -40,9 +41,12 @@ Describes print activity for a user during a specified time period (usageDate).
 |usageDate|Date|The date associated with these statistics.|
 |userPrincipalName|String|The UPN of the user represented by these statistics.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

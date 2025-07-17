@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # assignmentReviewSettings resource type
@@ -39,6 +40,10 @@ This type has the following properties:
 | keepAccess | The review decision is to keep current access. |
 | removeAccess | The review decision is to remove access to access package. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

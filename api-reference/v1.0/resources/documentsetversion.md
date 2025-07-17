@@ -5,6 +5,7 @@ author: "swapnil1993"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # documentSetVersion resource type
@@ -36,7 +37,7 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 | lastModifiedBy       | [identitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).|
 | lastModifiedDateTime | [dateTimeOffset](../resources/timestamp.md)          | Date and time when the version was last modified. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).     |
 | published            | [publicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).|
-| shouldCaptureMinorVersion | boolean  | If `true`, minor versions of items are also captured; otherwise, only major versions are captured. The default value is `false`.|
+| shouldCaptureMinorVersion | Boolean  | If `true`, minor versions of items are also captured; otherwise, only major versions are captured. The default value is `false`.|
 
 ## Relationships
 |Relationship|Type|Description|

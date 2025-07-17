@@ -5,14 +5,15 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Follow the steps in this article to add Microsoft Graph connectors SDK data to Microsoft Search."
+description: "Follow the steps in this article to add Microsoft 365 Copilot connectors SDK data to Microsoft Search."
+ms.date: 11/07/2024
 ---
 
 # Surface the data in Microsoft Search
 
 To make it easier for users to find information that they have permission to see, you can create search verticals and result types to customize the search results in Microsoft SharePoint, Microsoft Office, and Microsoft Search in Bing.
 
-To create and enable a search vertical at the organization level, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) by using the global administrator role, and do the following:
+To create and enable a search vertical at the organization level, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) by using the Search Administrator role, and do the following:
 
 1. Go to **Settings** > **Search & intelligence** > **Customizations**.
 2. Go to **Vertical**, and then select **Add**.
@@ -46,7 +47,7 @@ To create a result type:
 
    * **Rules**: None
 
-   * Paste contents of [result-type.json](https://github.com/microsoftgraph/msgraph-connectors-sdk/blob/main/C%23%20sample/ResultType.json) into the layout designer textbox.
+   * Paste contents of [result-type.json](https://github.com/microsoftgraph/msgraph-connectors-sdk/blob/main/C%23%20samples/CsvConnector/ResultType.json) into the layout designer textbox.
 
      ![Screenshot of the "Design layout" section with the JSON pasted](images/connectors-sdk/build18.png)
 

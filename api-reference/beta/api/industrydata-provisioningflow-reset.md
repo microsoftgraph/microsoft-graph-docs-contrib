@@ -5,6 +5,7 @@ author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 07/09/2024
 ---
 
 # provisioningFlow: reset
@@ -89,6 +90,10 @@ POST https://graph.microsoft.com/beta/external/industryData/outboundProvisioning
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/provisioningflowthisreset-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/provisioningflowthisreset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

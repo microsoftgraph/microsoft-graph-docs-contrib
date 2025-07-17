@@ -6,6 +6,7 @@ doc_type: resourcePageType
 
 ms.subservice: security
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 # secureScoreControlProfile resource type
@@ -31,7 +32,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |actionType|String|Control action type (Config, Review, Behavior).|
 |actionUrl|String|URL to where the control can be actioned.|
 |azureTenantId|String|GUID string for tenant ID.|
-|complianceInformation|[complianceInformation](complianceinformation.md) collection|The collection of compliance information associated with secure score control|
+|complianceInformation|[complianceInformation](complianceinformation.md) collection|The collection of compliance information associated with secure score control. **Not implemented. Currently returns `null`.**|
 |controlCategory|String|Control action category (Account, Data, Device, Apps, Infrastructure).|
 |controlName|String|Name of the control.|
 |controlStateUpdates|[secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection|Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)).|
@@ -56,7 +57,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

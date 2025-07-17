@@ -5,6 +5,7 @@ author: "mcm223"
 doc_type: conceptualPageType
 ms.subservice: cloud-communications
 ms.localizationpriority: high
+ms.date: 05/28/2024
 ---
 
 # Working with the call records API in Microsoft Graph
@@ -36,7 +37,11 @@ Each **session** contains one or more [segment](callrecords-segment.md) entities
 
 In the diagram above, the numbers denote how many children of each type can be present. For example, a 1..N relationship between a **callRecord** and a **session** means one **callRecord** instance can contain one or more **session** instances. Similarly, a 1..N relationship between a **segment** and a **media** means one **segment** instance can contain one or more [media](callrecords-media.md) streams.
 
+## PSTN and direct routing logs
+
+The [pstnCallLogRow](callrecords-pstncalllogrow.md) and [directRoutingLogRow](callrecords-directroutinglogrow.md) resources only include information about calls that utilize public switched telephone network (PSTN) infrastructure. This information can be useful to understand the usage of calling products in your organization. However, these resources may only reflect a portion of a larger call or meeting experience. For example, a log row include information about a user who places a PSTN call to join an online meeting, but doesn't include information about other participants in that online meeting. Because a log row is also only a subset of call record information, the ID for a particular log row can't be used to fetch a [callRecord](callrecords-callrecord.md) object.
+
 ## Related content
 
-- [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true)
+[Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true)
 

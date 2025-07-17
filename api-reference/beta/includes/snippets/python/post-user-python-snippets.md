@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.industry_data.user_provisioning_flow import UserProvisioningFlow
 from msgraph_beta.generated.models.industry_data.user_management_options import UserManagementOptions
@@ -13,9 +14,7 @@ from msgraph_beta.generated.models.industry_data.additional_user_options import 
 from msgraph_beta.generated.models.industry_data.user_creation_options import UserCreationOptions
 from msgraph_beta.generated.models.industry_data.user_configuration import UserConfiguration
 from msgraph_beta.generated.models.industry_data.simple_password_settings import SimplePasswordSettings
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = UserProvisioningFlow(
 	odata_type = "#microsoft.graph.industryData.userProvisioningFlow",
 	create_unmatched_users = True,

@@ -3,8 +3,9 @@ title: "complianceChangeRule resource type"
 description: "An abstract type that represents a rule for governing the automatic creation of compliance changes."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # complianceChangeRule resource type
@@ -16,17 +17,17 @@ Namespace: microsoft.graph.windowsUpdates
 An abstract type that represents a rule for governing the automatic creation of compliance changes.
 
 ## Properties
-| Property              | Type           | Description                                         |
-|:----------------------|:---------------|:----------------------------------------------------|
-| createdDateTime       | DateTimeOffset | The date and time when the rule was created.        |
-| lastEvaluatedDateTime | DateTimeOffset | The date and time when the rule was last evaluated. |
-| lastModifiedDateTime  | DateTimeOffset | The date and time when the rule was last modified.  |
+| Property                 | Type           | Description                                         |
+|:-------------------------|:---------------|:----------------------------------------------------|
+| createdDateTime          | DateTimeOffset | The date and time when the rule was created.        |
+| lastEvaluatedDateTime    | DateTimeOffset | The date and time when the rule was last evaluated. |
+| lastModifiedDateTime     | DateTimeOffset | The date and time when the rule was last modified.  |
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.complianceChangeRule"

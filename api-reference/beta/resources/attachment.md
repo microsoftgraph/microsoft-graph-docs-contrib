@@ -1,10 +1,11 @@
 ---
 title: "attachment resource type"
-description: "You can add related content to an event,"
+description: "The base type for several types of attachments on a user, message, task, or group post."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "outlook"
 author: "SuryaLashmiS"
+ms.date: 08/08/2024
 ---
 
 # attachment resource type
@@ -13,20 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+The base type for several types of attachments on a user, message, task, or group post that serves as the base resource for the following derived types of attachments:
+
+* A file ([fileAttachment](../resources/fileattachment.md) resource)
+* An item (contact, event, or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
+* A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource)
 
 You can add related content to a user [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or group [post](../resources/post.md) in the form of an attachment.
 
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
 Events in group calendars do not support attachments.
 
 Outlook tasks do not support reference attachments.
-
-**attachment** is the base resource for the following derived types of attachments:
-
-* A file ([fileAttachment](../resources/fileattachment.md) resource)
-* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
-* A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource)
 
 >**Note**: If you're attaching a file to a group post, or attaching an item to an event, message, or group post, limit the size of the attachment to 3 MB.
 >
@@ -41,7 +42,8 @@ The following methods apply to any of the derived types of attachments (**fileAt
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get attachment](../api/attachment-get.md) | [attachment](attachment.md) |Read the properties, relationships, or raw contents of an attachment, attached to a user event, message, Outlook task, or post.|
+|[Get](../api/attachment-get.md) | [attachment](attachment.md) |Read the properties, relationships, or raw contents of an attachment, attached to a user event, message, Outlook task, or post.|
+|[Delete](../api/attachment-delete.md) | None |Delete an attachment on an event, message, Outlook task, or post. |
 |[Add attachment to a user event](../api/event-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event in a user calendar. This operation limits the size of the attachment you can add to under 3 MB.|
 |[Add attachment to a message](../api/message-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message. This operation limits the size of the attachment you can add to under 3 MB.|
 |[Create session to attach large file](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified **message** or **event**. The file size must be between 3 MB and 150 MB.|
@@ -51,7 +53,6 @@ The following methods apply to any of the derived types of attachments (**fileAt
 |[List attachments of a message](../api/message-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
 |[List attachments of an Outlook task](../api/outlooktask-list-attachments.md) (deprecated) | [attachment](attachment.md) collection | Get a list of attachments for an Outlook task. |
 |[List attachments of a post](../api/post-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
-|[Delete](../api/attachment-delete.md) | None |Delete an attachment on an event, message, Outlook task, or post. |
 
 ## Properties
 

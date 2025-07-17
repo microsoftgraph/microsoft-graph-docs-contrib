@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "spgraph-docs-team"
 ms.subservice: onedrive
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # driveItem: restore
@@ -15,7 +16,8 @@ Namespace: microsoft.graph
 
 Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin.
 
->**Note**: This functionality is currently only available for OneDrive Personal.
+> [!IMPORTANT]
+> This functionality is currently only available for OneDrive Personal.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "driveitem_restore" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-restore-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 

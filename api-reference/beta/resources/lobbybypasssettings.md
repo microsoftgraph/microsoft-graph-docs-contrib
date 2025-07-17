@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # lobbyBypassSettings resource type
@@ -24,7 +25,7 @@ Specifies which participants can bypass the meeting lobby.
 
 ### lobbyBypassScope values
 
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `invited`, `organizationExcludingGuests`.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `invited`, `organizationExcludingGuests`.
 
 | Value                    | Description     |
 | ------------------------ | --------------------------------------------------- |
@@ -36,9 +37,12 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 | organizationExcludingGuests |  Only the participants from the same company are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

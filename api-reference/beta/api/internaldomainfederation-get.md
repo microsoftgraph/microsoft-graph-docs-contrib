@@ -5,6 +5,7 @@ author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 08/21/2024
 ---
 
 # Get internalDomainFederation
@@ -129,7 +130,8 @@ Content-Type: application/json
         "certificateUpdateResult": "Success",
         "lastRunDateTime": "2021-08-25T07:44:46.2616778Z"
     },
-    "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"
+    "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp",
+    "passwordResetUri": "https://sts.contoso.com/adfs/passwordReset"
   }
 }
 ```

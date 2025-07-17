@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.users.item.messages.item.attachments.create_upload_session.create_upload_session_post_request_body import CreateUploadSessionPostRequestBody
 from msgraph_beta.generated.models.attachment_item import AttachmentItem
 from msgraph_beta.generated.models.attachment_type import AttachmentType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = CreateUploadSessionPostRequestBody(
 	attachment_item = AttachmentItem(
 		attachment_type = AttachmentType.File,

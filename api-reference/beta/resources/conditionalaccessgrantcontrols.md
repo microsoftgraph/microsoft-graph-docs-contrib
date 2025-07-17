@@ -6,6 +6,7 @@ author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 11/29/2024
 ---
 
 # conditionalAccessGrantControls resource type
@@ -42,7 +43,7 @@ Consider the following when you use the `passwordChange` control:
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -62,8 +63,7 @@ The following is a JSON representation of the resource.
   "builtInControls": ["String"],
   "customAuthenticationFactors": ["String"],
   "operator": "String",
-  "termsOfUse": ["String"],
-  "authenticationStrength": {"@odata.type": "microsoft.graph.authenticationStrengthPolicy"}
+  "termsOfUse": ["String"]
 }
 ```
 

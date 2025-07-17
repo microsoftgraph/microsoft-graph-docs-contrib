@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.permission_grant_condition_set import PermissionGrantConditionSet
 from msgraph.generated.models.permission_type import PermissionType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = PermissionGrantConditionSet(
 	permission_type = PermissionType.Delegated,
 	client_applications_from_verified_publisher_only = True,

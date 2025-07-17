@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
+ms.date: 05/23/2024
 ---
 
 # governanceRoleAssignmentRequest resource type

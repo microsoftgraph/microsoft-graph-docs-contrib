@@ -8,11 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Worksheets.Item.Charts.Add;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AddPostRequestBody
 {
 	Type = "ColumnStacked",
-	SourceData = "A1:B1",
+	SourceData = new UntypedString("A1:B1"),
 	SeriesBy = "Auto",
 };
 

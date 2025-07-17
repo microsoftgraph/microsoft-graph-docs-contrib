@@ -6,6 +6,7 @@ author: "yyuank"
 ms.reviewer: "iamut"
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 08/16/2024
 ---
 
 # user: changePassword
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable the user to update their password. Any user can update their password without belonging to any administrator role.
+Update the signed-in [user's](../resources/user.md) password. Any user can update their password without belonging to any administrator role.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -30,6 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 POST /me/changePassword
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|

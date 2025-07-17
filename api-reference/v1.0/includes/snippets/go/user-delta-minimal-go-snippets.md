@@ -19,10 +19,10 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=minimal")
 
-requestParameters := &graphusers.UsersDeltaWithRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.UsersDeltaRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","jobTitle","mobilePhone"},
 }
-configuration := &graphusers.UsersDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UsersDeltaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

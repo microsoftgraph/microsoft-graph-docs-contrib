@@ -5,6 +5,7 @@ description: The EditAction object provides information about an activity that e
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # editAction resource type
 

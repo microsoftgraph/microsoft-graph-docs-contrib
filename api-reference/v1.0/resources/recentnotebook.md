@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.subservice: onenote
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # recentNotebook resource type
@@ -23,7 +24,7 @@ A recently accessed OneNote notebook. A **recentNotebook** is similar to a [note
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

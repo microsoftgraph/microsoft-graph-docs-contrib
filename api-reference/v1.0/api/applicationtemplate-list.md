@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: luleonpla
 ms.subservice: entra-applications
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # List applicationTemplates
@@ -45,7 +46,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name          | Description   |
 | :------------ | :------------ |
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

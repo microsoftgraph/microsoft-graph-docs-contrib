@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.education_rubric_outcome import EducationRubricOutcome
 from msgraph_beta.generated.models.rubric_quality_feedback_model import RubricQualityFeedbackModel
 from msgraph_beta.generated.models.education_item_body import EducationItemBody
 from msgraph_beta.generated.models.body_type import BodyType
 from msgraph_beta.generated.models.rubric_quality_selected_column_model import RubricQualitySelectedColumnModel
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = EducationRubricOutcome(
 	odata_type = "#microsoft.graph.educationRubricOutcome",
 	rubric_quality_feedback = [

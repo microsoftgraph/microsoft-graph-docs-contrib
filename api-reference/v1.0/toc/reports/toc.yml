@@ -4,6 +4,8 @@
 items:
 - name: Identity and access reports
   items:
+  - name: Overview
+    href: ../../resources/report-identity-access.md
   - name: Microsoft Entra activity reports
     items:
     - name: AD FS application activity
@@ -14,7 +16,7 @@ items:
           href: ../../resources/relyingpartydetailedsummary.md
         - name: Get relying party detailed summary
           href: ../../api/reportroot-getrelyingpartydetailedsummary.md
-    - name: Registration and usage
+    - name: Authentication methods registration and usage
       items:
       - name: Overview
         href: ../../resources/authenticationmethods-usage-insights-overview.md
@@ -58,6 +60,12 @@ items:
         href: ../../api/signin-list.md
       - name: Get
         href: ../../api/signin-get.md
+      - name: Confirm compromised
+        href: ../../api/signin-confirmcompromised.md
+      - name: Confirm safe
+        href: ../../api/signin-confirmsafe.md
+      - name: Dismiss
+        href: ../../api/signin-dismiss.md
     - name: Provisioning object summary
       items:
       - name: Provisioning object summary
@@ -68,6 +76,14 @@ items:
   items:
   - name: Overview
     href: ../../resources/report.md
+  - name: Admin report settings
+    items:
+    - name: Admin report settings
+      href: ../../resources/adminreportsettings.md
+    - name: Get
+      href: ../../api/adminreportsettings-get.md
+    - name: Update
+      href: ../../api/adminreportsettings-update.md
   - name: Report root
     items:
     - name: Report root
@@ -288,37 +304,3 @@ items:
       href: ../../resources/attacksimulationtrainingusercoverage.md
     - name: Get training coverage for users
       href: ../../api/securityreportsroot-getattacksimulationtrainingusercoverage.md
-- name: Partner billing reports
-  items:
-  - name: Overview
-    href: ../../resources/partners-billing-api-overview.md
-  - name: Billed reconciliation
-    items:
-    - name: Billed reconciliation
-      href: ../../resources/partners-billing-billedreconciliation.md
-    - name: Export
-      href: ../../api/partners-billing-billedreconciliation-export.md
-  - name: Billed usage
-    items:
-    - name: Billed usage
-      href: ../../resources/partners-billing-billedusage.md
-    - name: Export
-      href: ../../api/partners-billing-billedusage-export.md
-  - name: Manifest
-    items:
-    - name: Manifest
-      href: ../../resources/partners-billing-manifest.md
-    - name: Get
-      href: ../../api/partners-billing-manifest-get.md
-  - name: Operation
-    items:
-    - name: Operation
-      href: ../../resources/partners-billing-operation.md
-    - name: Get
-      href: ../../api/partners-billing-operation-get.md
-  - name: Unbilled usage
-    items:
-    - name: Unbilled usage
-      href: ../../resources/partners-billing-unbilledusage.md
-    - name: Export
-      href: ../../api/partners-billing-unbilledusage-export.md

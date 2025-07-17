@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "reports"
 author: "sarahwxy"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph reports API overview
@@ -38,24 +39,26 @@ The authentication methods usage reports help you understand how users in your o
 
 Gain a better understanding of how your users access and use Microsoft Entra services. You can analyze the data to create custom solutions tailored to your organization's specific needs.
 
+### Understand the usage of Microsoft Graph APIs by applications
+
+You can use the Microsoft Graph API usage report to gain insight into how frequently applications access Microsoft Graph APIs. Use this data to identify applications that might be optimized for data access efficiency.
+
 ## What data can I access by using the reports API?
 
 You can use the reports API to access the data sets listed in the following table.
 
 | Reports API | Data set |
 |:------------ |:-------- |
-| Activity | [Directory audit](/graph/api/resources/directoryaudit)<br/>[Sign-in](/graph/api/resources/signin)<br/>[Provisioning](/graph/api/resources/provisioningobjectsummary) |
-| AD FS applications | [Relying part detailed summary (preview)](/graph/api/resources/relyingpartydetailedsummary) |
-| Application registration | [Credential user registration count (preview)](/graph/api/resources/credentialuserregistrationcount)<br/>[Credential user registration details (preview)](/graph/api/resources/credentialuserregistrationdetails) <br/>[User credential usage details (preview)](/graph/api/resources/usercredentialusagedetails) <br/>[Credential usage summary (preview)](/graph/api/resources/credentialusagesummary)|
-| Application sign-in | [Sign-in summary (preview)](/graph/api/resources/applicationsigninsummary) <br/>[Sign-in details (preview)](/graph/api/resources/applicationsignindetailedsummary)|
-| Microsoft Teams | [Device usage](/graph/api/resources/microsoft-teams-device-usage-reports)<br/>[Team activity (preview)](/graph/api/resources/microsoft-teams-team-usage-reports)<br/>[User activity](/graph/api/resources/microsoft-teams-user-activity-reports)|
-| Microsoft 365 (general) | [Activations](/graph/api/resources/office-365-activations-reports)<br/>[Active users](/graph/api/resources/office-365-active-users-reports)<br/>[Apps usage](/graph/api/resources/microsoft-365-apps-usage-report)<br/>[Browser usage (preview)](/graph/api/resources/microsoft-365-browser-usage-report)<br/>[Groups activity](/graph/api/resources/office-365-groups-activity-reports) |
-| OneDrive | [Activity](/graph/api/resources/onedrive-activity-reports)<br/>[Usage](/graph/api/resources/onedrive-usage-reports) |
-| Outlook | [Activity](/graph/api/resources/email-activity-reports)<br/>[App usage](/graph/api/resources/email-app-usage-reports)<br/>[Mailbox usage](/graph/api/resources/mailbox-usage-reports) |
+|Identity and access reports such as directory activities, sign-ins, authentication message usage, application usage |/graph/api/resources/report-identity-access |
+| Microsoft Teams | [Device usage](/graph/api/resources/reportroot#microsoft-teams-device-usage)<br/>[Team activity](/graph/api/resources/reportroot#microsoft-teams-team-activity)<br/>[User activity](/graph/api/resources/reportroot#microsoft-teams-user-activity)|
+| Microsoft 365 (general) | [Activations](/graph/api/resources/reportroot#microsoft-365-activations)<br/>[Active users](/graph/api/resources/reportroot#microsoft-365-active-users)<br/>[Apps usage](/graph/api/resources/reportroot#microsoft-365-apps-usage)<br/>[Browser usage (preview)](/graph/api/resources/reportroot?view=graph-rest-beta&preserve-view=true#microsoft-365-browser-usage)<br/>[Groups activity](/graph/api/resources/reportroot#microsoft-365-groups-activity) |
+| Microsoft Graph (preview) | [API usage](/graph/api/resources/reportroot#microsoft-graph-api-usage?view=graph-rest-beta&preserve-view=true) |
+| OneDrive | [Activity](/graph/api/resources/reportroot#onedrive-activity)<br/>[Usage](/graph/api/resources/reportroot#onedrive-usage) |
+| Outlook | [Activity](/graph/api/resources/reportroot#outlook-activity)<br/>[App usage](/graph/api/resources/reportroot#outlook-app-usage)<br/>[Mailbox usage](/graph/api/resources/reportroot#outlook-mailbox-usage) |
 | Partner billing |  [Billed usage](/graph/api/resources/partners-billing-billedusage)<br/>[Unbilled usage](/graph/api/resources/partners-billing-unbilledusage) |
-| SharePoint | [Activity](/graph/api/resources/sharepoint-activity-reports)<br/>[Site usage](/graph/api/resources/sharepoint-site-usage-reports) |
-| Skype for Business | [Activity](/graph/api/resources/skype-for-business-activity-reports)<br/>[Device usage](/graph/api/resources/skype-for-business-device-usage-reports)<br/>[Organizer activity](/graph/api/resources/skype-for-business-organizer-activity-reports)<br/>[Participant activity](/graph/api/resources/skype-for-business-participant-activity-reports)<br/>[Peer to peer activity](/graph/api/resources/skype-for-business-peer-to-peer-activity) |
-| Yammer | [Activity](/graph/api/resources/yammer-activity-reports)<br/>[Device usage](/graph/api/resources/yammer-device-usage-reports)<br/>[Groups activity](/graph/api/resources/yammer-groups-activity-reports) |
+| SharePoint | [Activity](/graph/api/resources/reportroot#sharepoint-activity)<br/>[Site usage](/graph/api/resources/reportroot#sharepoint-site-usage) |
+| Skype for Business | [Activity](/graph/api/resources/reportroot#skype-for-business-activity)<br/>[Device usage](/graph/api/resources/reportroot#skype-for-business-device-usage)<br/>[Organizer activity](/graph/api/resources/reportroot#skype-for-business-organizer-activity)<br/>[Participant activity](/graph/api/resources/reportroot#skype-for-business-participant-activity)<br/>[Peer to peer activity](/graph/api/resources/reportroot#skype-for-business-peer-to-peer-activity) |
+| Viva Engage | [Activity](/graph/api/resources/reportroot#viva-engage-activity)<br/>[Device usage](/graph/api/resources/reportroot#viva-engage-device-usage)<br/>[Groups activity](/graph/api/resources/reportroot#viva-engage-groups-activity) |
 
 ## API reference
 

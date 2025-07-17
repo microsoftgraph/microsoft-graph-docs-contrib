@@ -5,6 +5,7 @@ author: "ArvindHarinder1"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # synchronizationJobApplicationParameters resource type
@@ -23,7 +24,7 @@ Represents the objects that will be provisioned and the synchronization rules ex
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.synchronizationJobApplicationParameters"

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: security
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 # process resource type
@@ -32,9 +33,12 @@ Contains stateful information about the process related to the alert.
 |path|String|Full path, including filename.|
 |processId|Int32|The Process ID (PID) of the process.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

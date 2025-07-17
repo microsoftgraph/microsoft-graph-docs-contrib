@@ -6,6 +6,8 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Get unifiedRoleAssignmentMultiple

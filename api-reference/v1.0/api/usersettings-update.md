@@ -6,6 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 07/22/2024
 ---
 
 # Update userSettings
@@ -16,7 +17,7 @@ Update the properties of the [userSettings](../resources/usersettings.md) object
 Users in the same organization can have different settings based on their preference or on the organization policies. 
 To get the user current settings, see [current user settings](usersettings-get.md). 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ### Batch request
 
@@ -39,6 +40,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 PATCH /me/settings
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions-reference). 
 

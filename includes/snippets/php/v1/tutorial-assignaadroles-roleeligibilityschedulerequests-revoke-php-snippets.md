@@ -14,7 +14,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleEligibilityScheduleRequest();
 $requestBody->setAction(new UnifiedRoleScheduleRequestActions('adminRemove'));
-$requestBody->setPrincipalId('e77cbb23-0ff2-4e18-819c-690f58269752');
+$requestBody->setPrincipalId('1189bbdd-1268-4a72-8c6d-6fe77d28f2e3');
 $requestBody->setRoleDefinitionId('fe930be7-5e62-47db-91af-98c3a49a38b1');
 $requestBody->setDirectoryScopeId('/');
 

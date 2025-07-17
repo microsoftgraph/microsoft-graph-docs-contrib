@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dipakboyed"
 ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 07/30/2024
 ---
 
 # Delete educationRubric
@@ -59,7 +60,7 @@ The following example shows a request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/education/me/rubrics/{id}
+DELETE https://graph.microsoft.com/beta/education/me/rubrics/767f2532-1fdd-41a5-85de-1f641e7bb9fc
 ```
 
 # [C#](#tab/csharp)

@@ -8,12 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new Team
 {
 	Visibility = TeamVisibilityType.Private,
 	DisplayName = "Sample Engineering Team",
 	Description = "This is a sample engineering team, used to showcase the range of properties supported by this API",
+	FirstChannelName = "My First Channel of the team",
 	Channels = new List<Channel>
 	{
 		new Channel
@@ -127,10 +129,12 @@ var requestBody = new Team
 			"template@odata.bind" , "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
 		},
 		{
-			"discoverySettings" , new 
+			"discoverySettings" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				ShowInTeamsSearchAndSuggestions = true,
-			}
+				{
+					"showInTeamsSearchAndSuggestions", new UntypedBoolean(true)
+				},
+			})
 		},
 	},
 };

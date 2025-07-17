@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dongkyun"
 ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # teleconferenceDeviceScreenSharingQuality resource type
@@ -21,7 +22,7 @@ The **teleconferenceDeviceScreenSharingQuality** inherits all the properties fro
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

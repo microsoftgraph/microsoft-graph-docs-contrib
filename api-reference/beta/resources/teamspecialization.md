@@ -1,10 +1,11 @@
 ---
 title: "teamSpecialization enum type"
 description: "Describes the special use case for a team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: enumPageType
+ms.date: 08/16/2024
 ---
 
 # teamSpecialization enum type

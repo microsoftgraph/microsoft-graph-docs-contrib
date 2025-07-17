@@ -1,10 +1,11 @@
 ---
 title: "updatableAssetEnrollment resource type"
-description: "Represents an enrollment into an area of the service."
+description: "An abstract type that represents an enrollment into an area of Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # updatableAssetEnrollment resource type
@@ -13,11 +14,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an enrollment into an area of the service.
+An abstract type that represents an enrollment into an area of Windows Autopatch.
 
 Base type of [updateManagementEnrollment](../resources/windowsupdates-updatemanagementenrollment.md).
-
-This is an abstract type.
 
 ## Properties
 None.
@@ -26,7 +25,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.updatableAssetEnrollment"

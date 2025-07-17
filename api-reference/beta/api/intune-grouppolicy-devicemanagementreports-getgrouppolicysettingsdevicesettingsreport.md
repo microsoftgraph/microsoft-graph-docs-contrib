@@ -2,16 +2,17 @@
 title: "getGroupPolicySettingsDeviceSettingsReport action"
 description: "Intune Grouppolicy Devicemanagementreports Getgrouppolicysettingsdevicesettingsreport Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # getGroupPolicySettingsDeviceSettingsReport action
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -59,6 +60,7 @@ The following table shows the parameters that can be used with this action.
 |top|Int32||
 |sessionId|String||
 |filter|String||
+|skiptoken|String||
 
 
 
@@ -73,7 +75,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/reports/getGroupPolicySettingsDeviceSettingsReport
 
 Content-type: application/json
-Content-length: 278
+Content-length: 313
 
 {
   "name": "Name value",
@@ -90,7 +92,8 @@ Content-length: 278
   "skip": 4,
   "top": 3,
   "sessionId": "Session Id value",
-  "filter": "Filter value"
+  "filter": "Filter value",
+  "skiptoken": "Skiptoken value"
 }
 ```
 

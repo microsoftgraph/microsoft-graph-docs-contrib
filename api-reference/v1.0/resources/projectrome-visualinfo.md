@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "project-rome"
 author: "ailae"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # visualInfo resource type
@@ -32,7 +33,7 @@ If a custom card is not provided, a simple card will be generated using displayT
 
 ## JSON Representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

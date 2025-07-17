@@ -2,9 +2,10 @@
 title: "teamGuestSettings resource type"
 description: "Settings to configure whether guests can create, update, or delete channels in the team."
 ms.localizationpriority: medium
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/16/2024
 ---
 
 # teamGuestSettings resource type
@@ -21,9 +22,12 @@ Settings to configure whether guests can create, update, or delete channels in t
 |allowCreateUpdateChannels|Boolean|If set to true, guests can add and update channels.|
 |allowDeleteChannels|Boolean|If set to true, guests can delete channels.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

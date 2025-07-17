@@ -5,6 +5,7 @@ author: "RamjotSingh"
 doc_type: resourcePageType
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 07/22/2024
 ---
 # chatMessagePolicyTip resource type
 
@@ -22,9 +23,12 @@ Policy tips are typically set by a data loss prevention (DLP) app which watches 
 |generalText|string|Explanatory text shown to the sender of the message.|
 |matchedConditionDescriptions|string collection|The list of improper data in the message that was detected by the data loss prevention app. Each DLP app defines its own conditions, examples include "Credit Card Number" and "Social Security Number".|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

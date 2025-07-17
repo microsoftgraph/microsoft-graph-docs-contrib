@@ -1,10 +1,11 @@
 ---
 title: "Get channel"
 description: "Retrieve the properties and relationships of a channel."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 08/16/2024
 ---
 
 # Get channel

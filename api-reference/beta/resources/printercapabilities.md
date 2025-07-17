@@ -1,13 +1,14 @@
 ---
-title: printerCapabilities complex type
+title: "printerCapabilities resource type"
 description: Represents the capabilities reported by a printer.
 author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
 
-# printerCapabilities complex type
+# printerCapabilities resource type
 
 Namespace: microsoft.graph
 
@@ -45,7 +46,7 @@ Represents the capabilities reported by a printer.
 |collation|Boolean|True if the printer supports collating when printing multiple copies of a multi-page document; false otherwise.|
 |scalings|printScaling collection|Supported print scalings.|
 
-## printerFeedOrientation values
+### printerFeedOrientation values
 
 |Member|Value|Description|
 |:---|:---|
@@ -207,6 +208,10 @@ Represents the capabilities reported by a printer.
 |Photo l 3.5x5in|
 |Business Card|
 |Photo|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

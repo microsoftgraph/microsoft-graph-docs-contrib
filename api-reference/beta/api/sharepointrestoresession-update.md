@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 08/26/2024
 ---
 
 # Update sharePointRestoreSession
@@ -54,6 +55,8 @@ PATCH /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessi
 
 If successful, this method returns a `200 OK` response code and an updated [sharePointRestoreSession](../resources/sharepointrestoresession.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -69,25 +72,25 @@ To remove a **siteRestoreArtifact** from a site restore session, specify the @re
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharepointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952eessions
+PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharepointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952
 Content-Type: application/json
 
 {
   "siteRestoreArtifacts@delta": [
     {
-      "restorePoint": { "@odata.id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" }, //Create a new site restore artifact and add it under the Restore Session.
+      "restorePoint": { "id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" }, //Create a new site restore artifact and add it under the Restore Session.
       "destinationType": "new"
     },
     {
-      "restorePoint": { "@odata.id": "2b014d8c-71fe-4d00-a01a-31850bc5b32" },
+      "restorePoint": { "id": "2b014d8c-71fe-4d00-a01a-31850bc5b32" },
       "destinationType": "new"
     },
     {
-      "restorePoint": { "@odata.id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "new"
     },
     {
-      "restorePoint": { "@odata.id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "new"
     },
     {
@@ -132,6 +135,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/sharepointrestoresession-update-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sharepointrestoresession-update-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/sharepointrestoresession-update-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -155,38 +162,38 @@ HTTP/1.1 200 OK
   "siteRestoreArtifacts@delta": [
     {
       "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "restorePoint": { "@odata.id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "new",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "67014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "restorePoint": { "@odata.id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "new",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "56014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "restorePoint": { "@odata.id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "new",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "32014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "restorePoint": { "@odata.id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "new",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "99954f18-c8ec-4b62-85bf-cdf3b70b140e",
-      "restorePoint": { "@odata.id": "7b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "7b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "new",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       //Error scenario

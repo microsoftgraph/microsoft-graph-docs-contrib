@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Member
+ms.date: 07/22/2024
 ---
 
 # multiTenantOrganizationMember resource type
@@ -41,7 +42,7 @@ Defines a tenant added to a multitenant organization.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "tenantId",

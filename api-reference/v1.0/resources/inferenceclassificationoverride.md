@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: outlook
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # inferenceClassificationOverride resource type

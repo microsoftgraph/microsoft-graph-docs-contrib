@@ -7,6 +7,7 @@ ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 toc.title: Role definition
+ms.date: 07/22/2024
 ---
 
 # unifiedRoleDefinition resource type
@@ -47,7 +48,7 @@ A role definition is a collection of permissions in Microsoft Entra listing the 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

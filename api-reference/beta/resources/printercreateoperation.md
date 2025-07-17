@@ -5,6 +5,7 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printerCreateOperation resource type
@@ -30,9 +31,12 @@ Represents a long-running printer registration operation. Derived from [printOpe
 |certificate|String|The signed certificate created during the registration process. Read-only.|
 |printer|[printer](printer.md)|The created printer entity. Read-only.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

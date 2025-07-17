@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 
 mgc-beta teams schedule time-cards clock-in post --team-id {team-id} --body '{\
-    "atAprovedLocation": true,\
+    "isAtApprovedLocation": true,\
     "notes": {\
         "contentType": "text",\
-        "content": "clock in notes"\
+        "content": "clocking in"\
     }\
 }\
 '

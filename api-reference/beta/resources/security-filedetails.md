@@ -24,15 +24,17 @@ File common properties.
 |filePublisher|String|The publisher of the file.|
 |fileSize|Int64|The size of the file in bytes.|
 |issuer|String|The certificate authority (CA) that issued the certificate.|
+|md5|String|The Md5 cryptographic hash of the file content.|
 |sha1|String|The Sha1 cryptographic hash of the file content.|
 |sha256|String|The Sha256 cryptographic hash of the file content.|
+|sha265Ac|String|The Sha256Ac cryptographic hash of the file content.|
 |signer|String|The signer of the signed file.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.fileDetails"

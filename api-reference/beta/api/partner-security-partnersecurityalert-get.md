@@ -5,6 +5,7 @@ author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: apiPageType
+ms.date: 07/11/2024
 ---
 
 # Get partnerSecurityAlert
@@ -89,6 +90,10 @@ GET https://graph.microsoft.com/beta/security/partner/securityAlerts/d8b202fc-a2
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-partnersecurityalert-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-partnersecurityalert-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

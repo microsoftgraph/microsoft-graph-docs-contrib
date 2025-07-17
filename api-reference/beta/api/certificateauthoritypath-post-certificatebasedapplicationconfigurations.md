@@ -5,6 +5,7 @@ author: "madansr7"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create certificateBasedApplicationConfiguration
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "certificateauthoritypath_post_certificatebasedapplicationconfigurations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/certificateauthoritypath-post-certificatebasedapplicationconfigurations-permissions.md)]
 
-[!INCLUDE [app-cert-config-apis](../includes/rbac-for-apis/app-cert-config-apis.md)]
+[!INCLUDE [rbac-trusted-app-cert-config-apis](../includes/rbac-for-apis/rbac-trusted-app-cert-config-apis.md)]
 
 ## HTTP request
 
@@ -53,7 +54,7 @@ You can specify the following properties when you create a **certificateBasedApp
 |:---|:---|:---|
 |description|String|The description for the configuration. Optional.|
 |displayName|String|The friendly name for the configuration. Optional.|
-|trustedCertificateAuthorities	|[certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md)|Multi-value property that represents a list of trusted certificate authorities. At least one trusted certificate authority must be provided when you create a certificate-based application configuration.  |
+|trustedCertificateAuthorities    |[certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md)|Multi-value property that represents a list of trusted certificate authorities. At least one trusted certificate authority must be provided when you create a certificate-based application configuration.  |
 
 
 ## Response

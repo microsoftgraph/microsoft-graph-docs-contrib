@@ -5,6 +5,8 @@ author: "jkdouglas"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Default settings
+ms.date: 07/22/2024
 ---
 
 # crossTenantAccessPolicyConfigurationDefault resource type

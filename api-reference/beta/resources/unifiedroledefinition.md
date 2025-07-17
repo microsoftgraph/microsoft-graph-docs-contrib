@@ -7,6 +7,7 @@ ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 toc.title: Role definition
+ms.date: 07/22/2024
 ---
 
 # unifiedRoleDefinition resource type
@@ -60,7 +61,7 @@ The following RBAC providers are currently supported:
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

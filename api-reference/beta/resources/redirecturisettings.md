@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 04/03/2024
 ---
 
 # redirectUriSettings resource type
@@ -22,6 +23,9 @@ Specifies the index of the URLs where user tokens are sent for sign-in. This is 
 | uri | String | Specifies the URI that tokens are sent to. |
 |index|Int32|Identifies the specific URI within the redirectURIs collection in SAML SSO flows. Defaults to `null`. The index is unique across all the redirectUris for the application.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

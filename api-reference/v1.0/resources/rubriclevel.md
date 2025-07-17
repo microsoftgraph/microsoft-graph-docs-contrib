@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # rubricLevel resource type
@@ -23,6 +24,10 @@ See [educationRubric](educationrubric.md) for a description of the relationship 
 |displayName|String|The name of this rubric level.|
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|Null if this is a no-points rubric; [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) if it's a points rubric.|
 |levelId|String|The ID of this resource.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "njerigrevious"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 07/25/2024
 ---
 
 # searchHitsContainer resource type
@@ -24,9 +25,13 @@ Represent the list of search results.
 |total|Int32|The total number of results. Note this is not the number of results on the page, but the total number of results satisfying the query.|
 |aggregations|[searchAggregation](searchaggregation.md) collection|Contains the collection of aggregations computed based on the provided [aggregationOption](aggregationoption.md) specified in the request.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

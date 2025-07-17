@@ -5,6 +5,7 @@ author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 10/07/2024
 ---
 
 # cloudPcSupportedRegion resource type
@@ -27,9 +28,10 @@ Represents a supported region to establish an Azure network connection for Cloud
 |:---      |:---  |:---         |
 |displayName|String|The name for the supported region. Read-only.|
 |id|String|The unique identifier for the supported region. Read-only.|
-|regionGroup|[cloudPcRegionGroup](#cloudpcregiongroup-values)|The geographic group this region belongs to. Multiple regions can belong to one region group. For example, the `europeUnion` region group contains the Northern Europe and Western Europe regions. A customer can select a region group when provisioning a Cloud PC; however, the Cloud PC is put under one of the regions under the group based on resource capacity. The region with more quota is chosen. Possible values are: `default`, `australia`, `canada`, `usCentral`, `usEast`, `usWest`, `france`, `germany`, `europeUnion`, `unitedKingdom`, `japan`, `asia`, `india`, `southAmerica`, `euap`, `usGovernment`, `usGovernmentDOD`, `unknownFutureValue`, `norway`, `switzerland`，`southKorea`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `norway`, `switzerland`，`southKorea`. Read-only.|
+|regionGroup|[cloudPcRegionGroup](#cloudpcregiongroup-values)|The geographic group this region belongs to. Multiple regions can belong to one region group. For example, the `europeUnion` region group contains the Northern Europe and Western Europe regions. A customer can select a region group when provisioning a Cloud PC; however, the Cloud PC is put under one of the regions under the group based on resource capacity. The region with more quota is chosen. Possible values are: `default`, `australia`, `canada`, `usCentral`, `usEast`, `usWest`, `france`, `germany`, `europeUnion`, `unitedKingdom`, `japan`, `asia`, `india`, `southAmerica`, `euap`, `usGovernment`, `usGovernmentDOD`, `unknownFutureValue`, `norway`, `switzerland`，`southKorea`, `middleEast`, `mexico`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `norway`, `switzerland`，`southKorea`, `middleEast`, `mexico`. Read-only.|
+|regionRestrictionDetail|[cloudPcSupportedRegionRestrictionDetail](../resources/cloudpcsupportedregionrestrictiondetail.md)| When the region isn't available, all region restrictions are set to `true`. These restrictions apply to three properties: **cPURestricted**, **gPURestricted**, and **nestedVirtualizationRestricted**. **cPURestricted** indicates whether the region is available for CPU, **gPURestricted** indicates whether the region is available for GPU, and **nestedVirtualizationRestricted** indicates whether the region is available for nested virtualization. Read-only.|
 |regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedregionstatus-values)|The status of the supported region. Possible values are: `available`, `restricted`, `unavailable`, `unknownFutureValue`. Read-only.|
-|supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `unknownFutureValue`, `rpaBox`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rpaBox`. Read-only.|
+|supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `unknownFutureValue`, `rpaBox`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rpaBox`. Read-only.|
 
 ### cloudPcSupportedRegionStatus values
 
@@ -65,6 +67,10 @@ Represents a supported region to establish an Azure network connection for Cloud
 | norway             | The region belongs to the region group: Norway.                                    |
 | switzerland        | The region belongs to the region group: Switzerland.                               |
 | southKorea         | The region belongs to the region group: South Korea.                               |
+| middleEast         | The region belongs to the region group: Middle East.                               |
+| mexico             | The region belongs to the region group: Mexico.                                    |
+| australasia        | The region belongs to the region group: Australasia.                               |
+| europe             | The region belongs to the region group: Europe.                                    |
 
 ## Relationships
 
@@ -88,6 +94,7 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "id": "String (identifier)",
   "regionGroup": "String",
+  "regionRestrictionDetail": {"@odata.type": "microsoft.graph.cloudPcSupportedRegionRestrictionDetail"},
   "regionStatus": "String",
   "supportedSolution": "String"
 }

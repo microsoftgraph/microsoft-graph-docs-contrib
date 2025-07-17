@@ -22,6 +22,7 @@ internalDomainFederation.setPromptLoginBehavior(PromptLoginBehavior.NativeSuppor
 internalDomainFederation.setIsSignedAuthenticationRequestRequired(true);
 internalDomainFederation.setNextSigningCertificate("MIIE3jCCAsagAwIBAgIQQcyDaZz3MI");
 internalDomainFederation.setFederatedIdpMfaBehavior(FederatedIdpMfaBehavior.RejectMfaByFederatedIdp);
+internalDomainFederation.setPasswordResetUri("https://sts.contoso.com/adfs/passwordReset");
 InternalDomainFederation result = graphClient.domains().byDomainId("{domain-id}").federationConfiguration().post(internalDomainFederation);
 
 

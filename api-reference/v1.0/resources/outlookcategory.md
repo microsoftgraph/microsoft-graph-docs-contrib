@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+toc.title: Outlook category (deprecated)
+ms.date: 08/08/2024
 ---
 
 # outlookCategory resource type
@@ -27,11 +29,11 @@ to 25 different colors to categories in a user's master list.
 ## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) collection |Get all the categories that have been defined for the user.|
-|[Get category](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |Get the properties and relationships of the specified **outlookCategory** object.|
-|[Create category](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Create an **outlookCategory** object in the user's master list of categories.|
-|[Update category](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |Update the writable property, **color**, of the specified **outlookCategory** object. |
-|[Delete category](../api/outlookcategory-delete.md) | None |Delete the specified **outlookCategory** object. |
+|[List](../api/outlookuser-list-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) collection |Get all the categories that have been defined for the user.|
+|[Get](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |Get the properties and relationships of the specified **outlookCategory** object.|
+|[Create](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Create an **outlookCategory** object in the user's master list of categories.|
+|[Update](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |Update the writable property, **color**, of the specified **outlookCategory** object. |
+|[Delete](../api/outlookcategory-delete.md) | None |Delete the specified **outlookCategory** object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -72,7 +74,7 @@ color is dependent on the Outlook client that the categories are being displayed
 | Preset24 | DarkCranberry |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

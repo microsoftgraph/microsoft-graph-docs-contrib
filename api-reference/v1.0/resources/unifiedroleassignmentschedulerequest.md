@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Assignment schedule request
+ms.date: 07/22/2024
 ---
 
 # unifiedRoleAssignmentScheduleRequest resource type
@@ -57,7 +58,7 @@ For more information about PIM scenarios you can define through the **unifiedRol
 |targetSchedule|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|The schedule for an eligible role assignment that is referenced through the **targetScheduleId** property. Supports `$expand` and `$select` nested in `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

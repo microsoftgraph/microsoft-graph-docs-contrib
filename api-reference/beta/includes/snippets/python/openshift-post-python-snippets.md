@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.teams.item.schedule.open_shifts.open_shifts_request_builder import OpenShiftsRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
@@ -13,9 +14,7 @@ from msgraph_beta.generated.models.schedule_entity_theme import ScheduleEntityTh
 from msgraph_beta.generated.models.shift_activity import ShiftActivity
 from msgraph_beta.generated.models.identity_set import IdentitySet
 from msgraph_beta.generated.models.identity import Identity
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = OpenShift(
 	id = "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
 	scheduling_group_id = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",

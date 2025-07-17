@@ -5,6 +5,7 @@ author: "kylewirpel"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # tenantUsage resource type
@@ -34,7 +35,7 @@ Represents the number of monthly active users per service in a managed tenant fo
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

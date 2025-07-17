@@ -5,6 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # List identityProviders (in a user flow)
@@ -83,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/identity/authenticationEventsFlows/0313cc37
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-onauthenticationmethodloadstartexternalusersselfservicesignup-identityproviders-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-onauthenticationmethodloadstartexternalusersselfservicesignup-identityproviders-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

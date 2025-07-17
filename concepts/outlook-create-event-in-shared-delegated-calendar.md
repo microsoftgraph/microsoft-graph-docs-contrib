@@ -4,6 +4,7 @@ description: "Learn how to create a meeting event in a shared or delegated Outlo
 author: "juforan"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Create Outlook events in a shared or delegated calendar
@@ -139,6 +140,8 @@ Signed in as Adele, use the calendar ID obtained from step 1 to create an [event
 **Microsoft Graph permissions**
 
 Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [Calendars.ReadWrite.Shared permission in the permissions reference](permissions-reference.md#calendarsreadwriteshared).
+
+# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",

@@ -5,6 +5,7 @@ author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # forwardingPolicyLink resource type
@@ -39,7 +40,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|A traffic forwarding policy consists of a policy and its associated rules. It defines the guidelines and instructions for routing and handling network traffic.. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

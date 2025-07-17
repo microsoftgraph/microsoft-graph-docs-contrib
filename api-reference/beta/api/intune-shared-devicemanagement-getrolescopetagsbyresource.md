@@ -2,9 +2,10 @@
 title: "getRoleScopeTagsByResource function"
 description: "Intune Shared Devicemanagement Getrolescopetagsbyresource Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # getRoleScopeTagsByResource function

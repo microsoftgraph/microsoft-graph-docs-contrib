@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AccessPackageAssignmentRequest
 {
@@ -15,10 +16,12 @@ var requestBody = new AccessPackageAssignmentRequest
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"assignment" , new 
+			"assignment" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				Id = "a6bb6942-3ae1-4259-9908-0133aaee9377",
-			}
+				{
+					"id", new UntypedString("a6bb6942-3ae1-4259-9908-0133aaee9377")
+				},
+			})
 		},
 	},
 };

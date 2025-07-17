@@ -5,6 +5,7 @@ author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # directRoutingLogRow resource type
@@ -13,11 +14,13 @@ Namespace: microsoft.graph.callRecords
 
 Represents a row of data in the direct routing call log. Each row maps to one call.
 
+Because a direct routing call log may only reflect a portion of a larger call or meeting, the ID of a **directRoutingLogRow** can't be used to retrieve a [callRecord](callrecords-callrecord.md) object.
+
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List direct routing calls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow collection](callrecords-directroutinglogrow.md)| List **directRoutingLogRow** objects for a call record. |
+| [List direct routing calls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md) collection| List **directRoutingLogRow** objects for a call record. |
 
 ## Properties
 

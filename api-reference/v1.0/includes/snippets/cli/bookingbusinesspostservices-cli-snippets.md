@@ -48,6 +48,7 @@ mgc solutions booking-businesses services create --booking-business-id {bookingB
     "displayName":"Bento",\
     "isLocationOnline": true,\
     "smsNotificationsEnabled": true,\
+    "isCustomerAllowedToManageBooking": true,\
     "languageTag": "en-US",\
     "isHiddenFromCustomers":false,\
     "notes":"Home-cooked special",\

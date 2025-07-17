@@ -5,12 +5,13 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # Add includeApplication (to a user flow)
 Namespace: microsoft.graph
 
-Add or link an application to a user flow, or [authenticationEventsFlow](../resources/authenticationeventsflow.md). This enables the authentication experience defined by the user flow to be enabled for the application. An application can only be linked to one user flow.
+Add or link an application to a user flow, or [authenticationEventsFlow](../resources/authenticationeventsflow.md). This enables the authentication experience defined by the user flow to be enabled for the application. An application can only be linked to one user flow. The app must have an associated service principal in the tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -39,7 +40,7 @@ POST /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/condition
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, provide a JSON representation of the **appId** of the application to associate with the user flow.
+In the request body, provide a JSON representation of the **appId** of the service principal to associate with the user flow.
 
 ## Response
 
@@ -88,6 +89,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/post-includeapplications-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-includeapplications-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

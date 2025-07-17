@@ -3,6 +3,100 @@
     {
       "ChangeList": [
         {
+          "Id": "799131f4-3b4c-4f47-a100-a173117b0f96",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateAuthorityScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateAuthorityScope](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthorityScope?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateAuthorityScope"
+        },
+        {
+          "Id": "799131f4-3b4c-4f47-a100-a173117b0f96",
+          "ApiChange": "Property",
+          "ChangedApiName": "certificateAuthorityScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateAuthorityScopes** property to the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "799131f4-3b4c-4f47-a100-a173117b0f96",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-16T15:06:33.8095461Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3dfecfbd-2d27-4fb9-bef3-294d2bb54e41",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "x509CertificateCRLValidationConfigurationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateCRLValidationConfigurationState** enumeration type.",
+          "Target": "x509CertificateCRLValidationConfigurationState"
+        },
+        {
+          "Id": "3dfecfbd-2d27-4fb9-bef3-294d2bb54e41",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateCRLValidationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateCRLValidationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateCRLValidationConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "x509CertificateCRLValidationConfiguration"
+        },
+        {
+          "Id": "3dfecfbd-2d27-4fb9-bef3-294d2bb54e41",
+          "ApiChange": "Property",
+          "ChangedApiName": "crlValidationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **crlValidationConfiguration** property to the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "x509CertificateAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "3dfecfbd-2d27-4fb9-bef3-294d2bb54e41",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-03-10T22:45:55.1918452Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2cbecfbd-2d27-4fb9-bef3-294d2bb54e41",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "x509CertificateCRLValidationConfigurationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateCRLValidationConfigurationState** enumeration type.",
+          "Target": "x509CertificateCRLValidationConfigurationState"
+        },
+        {
+          "Id": "2cbecfbd-2d27-4fb9-bef3-294d2bb54e41",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateCRLValidationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateCRLValidationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateCRLValidationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateCRLValidationConfiguration"
+        },
+        {
+          "Id": "2cbecfbd-2d27-4fb9-bef3-294d2bb54e41",
+          "ApiChange": "Property",
+          "ChangedApiName": "crlValidationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **crlValidationConfiguration** property to the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "2cbecfbd-2d27-4fb9-bef3-294d2bb54e41",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-03T22:45:55.1918452Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5ce5e1de-e07b-4994-9098-329cab21b268",
           "ApiChange": "Resource",
           "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
@@ -629,6 +723,24 @@
       "CreatedDateTime": "2023-11-02T16:40:54.9462605Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+      },
+    {
+      "ChangeList": [
+        {
+          "Id": "cd2520bf-b70f-482a-b505-18c3696c46fa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passkeyAuthenticationMethodTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [passkeyAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/passkeyAuthenticationMethodTarget?view=graph-rest-beta) resource.",
+          "Target": "passkeyAuthenticationMethodTarget"
+        }
+      ],
+      "Id": "cd2520bf-b70f-482a-b505-18c3696c46fa",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-24T19:09:22.8776342Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -785,6 +897,24 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-06-18T22:12:03.7462338Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7c4999f7-9c25-4f8e-8b84-766eb28a1b49",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCodePinAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrCodePinAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/qrCodePinAuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
+          "Target": "qrCodePinAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "7c4999f7-9c25-4f8e-8b84-766eb28a1b49",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-24T21:15:06.8370991Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

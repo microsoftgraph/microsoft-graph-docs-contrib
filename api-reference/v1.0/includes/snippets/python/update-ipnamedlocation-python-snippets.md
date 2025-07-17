@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.ip_named_location import IpNamedLocation
 from msgraph.generated.models.ip_range import IpRange
 from msgraph.generated.models.i_pv4_cidr_range import IPv4CidrRange
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = IpNamedLocation(
 	odata_type = "#microsoft.graph.ipNamedLocation",
 	display_name = "Untrusted named location with only IPv4 address",

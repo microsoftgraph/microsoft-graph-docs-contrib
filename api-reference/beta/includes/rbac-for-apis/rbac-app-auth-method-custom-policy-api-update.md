@@ -4,5 +4,10 @@ ms.topic: include
 ms.author: saumadan
 ---
 
-To configure a custom application authentication method policy, the calling user must be assigned at least the *Application Administrator* or *Cloud Application Administrator* [directory role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+> [!IMPORTANT]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation:
+> 
+> - Cloud Application Administrator
+> - Application Administrator
 

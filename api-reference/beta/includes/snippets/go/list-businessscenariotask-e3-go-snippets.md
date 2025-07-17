@@ -16,12 +16,12 @@ import (
 )
 
 
-requestFilter := "location/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'"
+requestFilter := "target/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'"
 
-requestParameters := &graphsolutions.SolutionsBusinessScenarioItemPlannerTasksRequestBuilderGetQueryParameters{
+requestParameters := &graphsolutions.BusinessScenariosItemPlannerTasksRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphsolutions.SolutionsBusinessScenarioItemPlannerTasksRequestBuilderGetRequestConfiguration{
+configuration := &graphsolutions.BusinessScenariosItemPlannerTasksRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

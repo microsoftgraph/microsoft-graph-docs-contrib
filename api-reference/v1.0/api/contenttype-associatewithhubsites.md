@@ -5,6 +5,7 @@ description: "Associate a content type with a list of hub sites."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.date: 04/04/2024
 ---
 
 # contentType: associateWithHubSites
@@ -53,8 +54,8 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |-|-|-|
-|hubSiteUrls| Collection(string) |List of canonical URLs to the hub sites where the content type needs to be enforced. Required.|
-|propagateToExistingLists| Boolean |If `true`, content types will be enforced on existing lists in the hub sites; otherwise, it'll be applied only to newly created lists.|
+|hubSiteUrls| String collection |List of canonical URLs to the hub sites where the content type needs to be enforced. Required.|
+|propagateToExistingLists| Boolean |If `true`, content types are enforced on existing lists in the hub sites; otherwise, they're applied only to newly created lists.|
 
 ## Response
 

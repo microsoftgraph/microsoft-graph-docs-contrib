@@ -10,8 +10,11 @@ const options = {
 
 const client = Client.init(options);
 
+const serviceApp = {
+};
+
 await client.api('/solutions/backupRestore/serviceApps')
 	.version('beta')
-	.post();
+	.post(serviceApp);
 
 ```

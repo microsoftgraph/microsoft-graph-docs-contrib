@@ -6,6 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # expressionEvaluationDetails resource type
@@ -27,7 +28,7 @@ Represents the expression details, result, and property details.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

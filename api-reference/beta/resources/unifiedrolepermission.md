@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
+ms.date: 07/23/2024
+ms.custom: sfi-ropc-nochange
 ---
 
 # unifiedRolePermission resource type
@@ -67,9 +69,13 @@ The following is an example of a role permission with a condition.
 ```
 Conditions aren't supported for custom roles.
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

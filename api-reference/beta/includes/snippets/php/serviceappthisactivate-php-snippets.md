@@ -13,7 +13,7 @@ use Microsoft\Graph\Beta\Generated\Solutions\BackupRestore\ServiceApps\Item\Acti
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ActivatePostRequestBody();
-$requestBody->setEffectiveDateTime(new \DateTime('2024-04-19T12-01-03.45Z'));
+$requestBody->setEffectiveDateTime(new \DateTime('2024-04-19T12:01:03.45Z'));
 $requestConfiguration = new ActivateRequestBuilderPostRequestConfiguration();
 $headers = [
 		'Authorization' => 'Bearer <Access-Token>',

@@ -5,6 +5,7 @@ author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.subservice: "edge-browser-management"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # internetExplorerMode resource type
@@ -32,7 +33,7 @@ None.
 |siteLists|[browserSiteList](../resources/browsersitelist.md) collection|A collection of site lists to support Internet Explorer mode.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

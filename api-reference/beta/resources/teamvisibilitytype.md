@@ -1,10 +1,11 @@
 ---
 title: "Members"
 description: "Describes the visibility of a team. "
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: enumPageType
+ms.date: 08/16/2024
 ---
 
 # teamVisibilityType enum type

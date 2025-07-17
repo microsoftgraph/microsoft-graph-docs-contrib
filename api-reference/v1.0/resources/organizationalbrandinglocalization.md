@@ -1,10 +1,11 @@
 ---
 title: "organizationalBrandingLocalization resource type"
 description: "Contains details of the organization's branding localizations."
-author: "quievey"
+author: nanguil
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # organizationalBrandingLocalization resource type
@@ -64,7 +65,7 @@ Inherits from [organizationalBrandingProperties](../resources/organizationalbran
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 07/26/2024
 ---
 
 # restorePointSearchResult resource type
@@ -17,8 +18,9 @@ Namespace: microsoft.graph
 Contains a list of [restorePoint](../resources/restorepoint.md) objects associated with a [protectionUnit](../resources/protectionunitbase.md).
 
 ## Properties
-
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|artifactHitCount|int| Total number of artifacts restored.|
 
 ## Relationships
 
@@ -36,6 +38,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.restorePointSearchResult"
+  "@odata.type": "#microsoft.graph.restorePointSearchResult",
+  "artifactHitCount": "Int"
 }
 ```

@@ -128,19 +128,20 @@ Content-type: application/json
     "status": "Active",
     "severity": "Medium",
     "customTags": [
-      "Demo"
+        "Demo"
     ],
     "comments": [
-      {
-		"comment": "Demo incident",
-		"createdBy": "DavidS@contoso.com",
-		"createdTime": "2021-09-30T12:07:37.2756993Z"
-      }
+        {
+            "comment": "Demo incident",
+            "createdBy": "DavidS@contoso.com",
+            "createdTime": "2021-09-30T12:07:37.2756993Z"
+        }
     ],
-    "systemTags" : [
+    "systemTags": [
         "Defender Experts"
     ],
-    "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
-    "lastModifiedBy": "DavidS@contoso.onmicrosoft.com"
+    "description": "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
+    "lastModifiedBy": "DavidS@contoso.onmicrosoft.com",
+    "summary": "Defender Experts has identified some malicious activity. This incident has been raised for your awareness and should be investigated as normal."
 }
 ```

@@ -2,16 +2,17 @@
 title: "getNoncompliantDevicesAndSettingsReport action"
 description: "Intune Reporting Devicemanagementreports Getnoncompliantdevicesandsettingsreport Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # getNoncompliantDevicesAndSettingsReport action
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -52,9 +53,9 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |name|String||
 |select|String collection||
-|search|String||
 |groupBy|String collection||
 |orderBy|String collection||
+|search|String||
 |skip|Int32||
 |top|Int32||
 |sessionId|String||
@@ -80,13 +81,13 @@ Content-length: 278
   "select": [
     "Select value"
   ],
-  "search": "Search value",
   "groupBy": [
     "Group By value"
   ],
   "orderBy": [
     "Order By value"
   ],
+  "search": "Search value",
   "skip": 4,
   "top": 3,
   "sessionId": "Session Id value",

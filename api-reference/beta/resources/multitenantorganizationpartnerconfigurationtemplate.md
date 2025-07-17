@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Partner configuration template
+ms.date: 05/23/2024
 ---
 
 # multiTenantOrganizationPartnerConfigurationTemplate resource type

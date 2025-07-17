@@ -3,8 +3,9 @@ title: "servicingPeriod resource type"
 description: "Represents information about a servicing period related to a product edition."
 author: "skandula"
 ms.localizationpriority: medium
-ms.subservice: "windows-update-business"
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # servicingPeriod resource type

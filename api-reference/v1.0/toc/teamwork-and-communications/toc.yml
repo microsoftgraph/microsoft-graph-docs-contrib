@@ -4,6 +4,32 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
+- name: AI interactions
+  items:
+  - name: AI interaction history
+    items:
+    - name: AI interaction history
+      href: ../../resources/aiinteractionhistory.md
+    - name: Get all enterprise interactions
+      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
+  - name: Complex types
+    items:
+    - name: AI interaction
+      href: ../../resources/aiinteraction.md
+    - name: AI interaction attachment
+      href: ../../resources/aiinteractionattachment.md
+    - name: AI interaction context
+      href: ../../resources/aiinteractioncontext.md
+    - name: AI interaction link
+      href: ../../resources/aiinteractionlink.md
+    - name: AI interaction mention
+      href: ../../resources/aiinteractionmention.md
+    - name: AI interaction mentioned identity set
+      href: ../../resources/aiinteractionmentionedidentityset.md
+    - name: AI user
+      href: ../../resources/aiuser.md
+    - name: Copilot root
+      href: ../../resources/copilotroot.md
 - name: Apps
   items:
   - name: Teams app
@@ -44,6 +70,16 @@ items:
       href: ../../api/userteamwork-teamsappinstallation-upgrade.md
     - name: Remove app for user
       href: ../../api/userteamwork-delete-installedapps.md
+    - name: List apps in chat
+      href: ../../api/chat-list-installedapps.md
+    - name: Get app installed in chat
+      href: ../../api/chat-get-installedapps.md
+    - name: Add app in chat
+      href: ../../api/chat-post-installedapps.md
+    - name: Upgrade app installed in chat
+      href: ../../api/chat-teamsappinstallation-upgrade.md
+    - name: Remove app from chat
+      href: ../../api/chat-delete-installedapps.md
   - name: Teams app settings
     items:
     - name: Teams app settings
@@ -76,6 +112,8 @@ items:
       href: ../../api/group-list-permissiongrants.md
     - name: List permission grants of a team
       href: ../../api/team-list-permissiongrants.md
+    - name: List permission grants of a user
+      href: ../../api/user-list-permissiongrants.md
 - name: Calls and online meetings
   items:
   - name: Overview
@@ -120,12 +158,18 @@ items:
         href: ../../resources/callrecords-session.md
       - name: List sessions
         href: ../../api/callrecords-callrecord-list-sessions.md
+    - name: Complex types
+      items:
+      - name: Network info
+        href: ../../resources/callrecords-networkinfo.md
   - name: Calls
     items:
     - name: Call
       items:
       - name: Call
         href: ../../resources/call.md
+      - name: Create
+        href: ../../api/application-post-calls.md
       - name: Get
         href: ../../api/call-get.md
       - name: Delete/hang up
@@ -228,6 +272,24 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
+  - name: Copilot settings
+    items:
+    - name: Copilot admin limited mode
+      items:
+      - name: Copilot admin limited mode
+        href: ../../resources/copilotadminlimitedmode.md
+      - name: Get
+        href: ../../api/copilotadminlimitedmode-get.md
+      - name: Update
+        href: ../../api/copilotadminlimitedmode-update.md
+    - name: Complex types
+      items:
+      - name: Copilot admin
+        href: ../../resources/copilotadmin.md
+      - name: Copilot admin setting
+        href: ../../resources/copilotadminsetting.md
+      - name: Copilot root
+        href: ../../resources/copilotroot.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -270,6 +332,10 @@ items:
         href: ../../api/onlinemeeting-list-recordings.md
       - name: Get
         href: ../../api/callrecording-get.md
+      - name: Get delta by organizer
+        href: ../../api/callrecording-delta.md
+      - name: List recordings by organizer
+        href: ../../api/onlinemeeting-getallrecordings.md
     - name: Call transcript
       items:
       - name: Call transcript
@@ -278,6 +344,10 @@ items:
         href: ../../api/onlinemeeting-list-transcripts.md
       - name: Get transcript
         href: ../../api/calltranscript-get.md
+      - name: Get delta by organizer
+        href: ../../api/calltranscript-delta.md
+      - name: List transcripts by organizer
+        href: ../../api/onlinemeeting-getalltranscripts.md
     - name: Virtual appointment
       items:
       - name: Get virtual appointment join link
@@ -306,26 +376,50 @@ items:
       href: ../../api/presence-setstatusmessage.md
   - name: Virtual events
     items:
-    - name: Virtual event webinar
+    - name: Virtual event presenter
       items:
-      - name: Virtual event webinar
-        href: ../../resources/virtualeventwebinar.md
+      - name: Virtual event presenter
+        href: ../../resources/virtualeventpresenter.md
       - name: List
-        href: ../../api/virtualeventsroot-list-webinars.md
+        href: ../../api/virtualevent-list-presenters.md
+      - name: Create
+        href: ../../api/virtualevent-post-presenters.md
       - name: Get
-        href: ../../api/virtualeventwebinar-get.md
-      - name: List by user role
-        href: ../../api/virtualeventwebinar-getbyuserrole.md
-      - name: List by user ID and role
-        href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+        href: ../../api/virtualeventpresenter-get.md
+      - name: Update
+        href: ../../api/virtualeventpresenter-update.md
+      - name: Delete
+        href: ../../api/virtualeventpresenter-delete.md
     - name: Virtual event registration
       items:
       - name: Virtual event registration
         href: ../../resources/virtualeventregistration.md
       - name: List
-        href: ../../api/virtualeventwebinar-list-registrations.md
+        href: ../../api/virtualeventregistration-list.md
+      - name: Create
+        href: ../../api/virtualeventwebinar-post-registrations.md
       - name: Get
         href: ../../api/virtualeventregistration-get.md
+      - name: Cancel
+        href: ../../api/virtualeventregistration-cancel.md
+      - name: List sessions
+        href: ../../api/virtualeventregistration-list-sessions.md
+    - name: Virtual event webinar registration configuration
+      items:
+      - name: Virtual event webinar registration configuration
+        href: ../../resources/virtualeventwebinarregistrationconfiguration.md
+      - name: Get
+        href: ../../api/virtualeventwebinarregistrationconfiguration-get.md
+    - name: Virtual event registration question
+      items:
+      - name: Virtual event registration question
+        href: ../../resources/virtualeventregistrationquestionbase.md
+      - name: List
+        href: ../../api/virtualeventregistrationconfiguration-list-questions.md
+      - name: Create
+        href: ../../api/virtualeventregistrationconfiguration-post-questions.md
+      - name: Delete
+        href: ../../api/virtualeventregistrationquestionbase-delete.md
     - name: Virtual event session
       items:
       - name: Virtual event session
@@ -334,6 +428,50 @@ items:
         href: ../../api/virtualevent-list-sessions.md
       - name: Get
         href: ../../api/virtualeventsession-get.md
+    - name: Virtual event townhall
+      items:
+      - name: Virtual event townhall
+        href: ../../resources/virtualeventtownhall.md
+      - name: List
+        href: ../../api/virtualeventsroot-list-townhalls.md
+      - name: Create
+        href: ../../api/virtualeventsroot-post-townhalls.md
+      - name: Get
+        href: ../../api/virtualeventtownhall-get.md
+      - name: Update
+        href: ../../api/virtualeventtownhall-update.md
+      - name: Publish
+        href: ../../api/virtualeventtownhall-publish.md
+      - name: Cancel
+        href: ../../api/virtualeventtownhall-cancel.md
+      - name: List by user role
+        href: ../../api/virtualeventtownhall-getbyuserrole.md
+      - name: List by user ID and role
+        href: ../../api/virtualeventtownhall-getbyuseridandrole.md
+      - name: Set external event information
+        href: ../../api/virtualevent-setexternaleventinformation.md
+    - name: Virtual event webinar
+      items:
+      - name: Virtual event webinar
+        href: ../../resources/virtualeventwebinar.md
+      - name: List
+        href: ../../api/virtualeventsroot-list-webinars.md
+      - name: Create
+        href: ../../api/virtualeventsroot-post-webinars.md
+      - name: Get
+        href: ../../api/virtualeventwebinar-get.md
+      - name: Update
+        href: ../../api/virtualeventwebinar-update.md
+      - name: Publish
+        href: ../../api/virtualeventwebinar-publish.md
+      - name: Cancel
+        href: ../../api/virtualeventwebinar-cancel.md
+      - name: List by user role
+        href: ../../api/virtualeventwebinar-getbyuserrole.md
+      - name: List by user ID and role
+        href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+      - name: Set external event information
+        href: ../../api/virtualevent-setexternaleventinformation.md
 - name: Employee learning
   displayName: Viva Learning
   items:
@@ -407,12 +545,12 @@ items:
       href: ../../api/channel-patch.md
     - name: Delete channel
       href: ../../api/channel-delete.md
-    - name: Get message delta
-      href: ../../api/chatmessage-delta.md
     - name: List channel messages
       href: ../../api/channel-list-messages.md
     - name: Get all channel messages
       href: ../../api/channel-getallmessages.md
+    - name: Get all retained channel messages
+      href: ../../api/channel-getallretainedmessages.md
     - name: Create channel message post
       href: ../../api/channel-post-messages.md
     - name: Create reply to channel message post
@@ -423,6 +561,8 @@ items:
       href: ../../api/channel-list-tabs.md
     - name: List channel members
       href: ../../api/channel-list-members.md
+    - name: List all members
+      href: ../../api/channel-list-allmembers.md
     - name: Add channel member
       href: ../../api/channel-post-members.md
     - name: Get channel member
@@ -495,6 +635,10 @@ items:
         href: ../../api/chatmessage-get.md
       - name: Get messages across all chats
         href: ../../api/chats-getallmessages.md
+      - name: Get retained messages across all chats
+        href: ../../api/chat-getallretainedmessages.md
+      - name: Get delta chat messages for user
+        href: ../../api/chatmessage-delta.md
     - name: Apps
       items:
       - name: List apps in chat
@@ -537,8 +681,6 @@ items:
       items:
       - name: List messages in channel
         href: ../../api/channel-list-messages.md
-      - name: Get delta of messages in channel
-        href: ../../api/chatmessage-delta.md
       - name: Create subscription for new channel messages
         href: ../../api/subscription-post-subscriptions.md
       - name: Get message in channel
@@ -581,6 +723,8 @@ items:
         href: ../../api/chatmessage-get.md
       - name: Get messages across all chats for user
         href: ../../api/chats-getallmessages.md
+      - name: Get delta chat messages for user
+        href: ../../api/chatmessage-delta.md
       - name: Get all channel messages
         href: ../../api/channel-getallmessages.md
       - name: Create subscription for new chat messages
@@ -649,6 +793,8 @@ items:
       href: ../../api/team-update-members.md
     - name: Remove member
       href: ../../api/team-delete-members.md
+    - name: Remove members in bulk
+      href: ../../api/conversationmember-remove.md
     - name: Archive team
       href: ../../api/team-archive.md
     - name: Unarchive team
@@ -749,6 +895,20 @@ items:
         href: ../../api/userteamwork-get.md
 - name: Shift management
   items:
+  - name: Day note
+    items:
+    - name: Day note
+      href: ../../resources/daynote.md
+    - name: List
+      href: ../../api/schedule-list-daynotes.md
+    - name: Create
+      href: ../../api/schedule-post-daynotes.md
+    - name: Get
+      href: ../../api/daynote-get.md
+    - name: Update
+      href: ../../api/daynote-update.md
+    - name: Delete
+      href: ../../api/schedule-delete-daynotes.md
   - name: Offer shift request
     items:
     - name: Offer shift request
@@ -777,6 +937,8 @@ items:
       href: ../../api/openshift-update.md
     - name: Delete
       href: ../../api/openshift-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Open shift change request
     items:
     - name: Open shift change request
@@ -829,6 +991,8 @@ items:
       href: ../../api/shift-put.md
     - name: Delete
       href: ../../api/shift-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Shift preferences
     items:
     - name: Shift preferences
@@ -851,6 +1015,30 @@ items:
       href: ../../api/swapshiftschangerequest-approve.md
     - name: Decline
       href: ../../api/swapshiftschangerequest-decline.md
+  - name: Time card
+    items:
+    - name: Time card
+      href: ../../resources/timecard.md
+    - name: List
+      href: ../../api/schedule-list-timecards.md
+    - name: Create
+      href: ../../api/schedule-post-timecards.md
+    - name: Get
+      href: ../../api/timecard-get.md
+    - name: Replace
+      href: ../../api/timecard-replace.md
+    - name: Delete
+      href: ../../api/schedule-delete-timecards.md
+    - name: Clock in
+      href: ../../api/timecard-clockin.md
+    - name: Clock out
+      href: ../../api/timecard-clockout.md
+    - name: Start break
+      href: ../../api/timecard-startbreak.md
+    - name: End break
+      href: ../../api/timecard-endbreak.md
+    - name: Confirm
+      href: ../../api/timecard-confirm.md
   - name: Time off
     items:
     - name: Time off
@@ -865,6 +1053,8 @@ items:
       href: ../../api/timeoff-put.md
     - name: Delete
       href: ../../api/timeoff-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Time off reason
     items:
     - name: Time off reason
@@ -883,10 +1073,12 @@ items:
     items:
     - name: Time off request
       href: ../../resources/timeoffrequest.md
-    - name: Get
-      href: ../../api/timeoffrequest-get.md
     - name: List
       href: ../../api/timeoffrequest-list.md
+    - name: Create
+      href: ../../api/timeoffrequest-post.md
+    - name: Get
+      href: ../../api/timeoffrequest-get.md
     - name: Delete
       href: ../../api/timeoffrequest-delete.md
     - name: Approve
@@ -907,14 +1099,26 @@ items:
       href: ../../api/workforceintegration-update.md
     - name: Delete
       href: ../../api/workforceintegration-delete.md
+  - name: Working time schedule
+    items:
+    - name: Working time schedule
+      href: ../../resources/workingtimeschedule.md
+    - name: Get
+      href: ../../api/workingtimeschedule-get.md
+    - name: Start working time
+      href: ../../api/workingtimeschedule-startworkingtime.md
+    - name: End working time
+      href: ../../api/workingtimeschedule-endworkingtime.md
   - name: Complex types
     items:
-    - name: Change tracked entity
-      href: ../../resources/changetrackedentity.md
+    - name: Geo coordinates
+      href: ../../resources/geocoordinates.md
     - name: Identity
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
+    - name: Item body
+      href: ../../resources/itembody.md
     - name: Open shift item
       href: ../../resources/openshiftitem.md
     - name: Patterned recurrence
@@ -929,9 +1133,19 @@ items:
       href: ../../resources/shiftavailability.md
     - name: Shift item
       href: ../../resources/shiftitem.md
+    - name: Time card break
+      href: ../../resources/timecardbreak.md
+    - name: Time card entry
+      href: ../../resources/timecardentry.md
+    - name: Time card event
+      href: ../../resources/timecardevent.md
+    - name: Time clock settings
+      href: ../../resources/timeclocksettings.md
     - name: Time off item
       href: ../../resources/timeoffitem.md
     - name: Time range
       href: ../../resources/timerange.md
+    - name: User solution root
+      href: ../../resources/usersolutionroot.md
     - name: Workforce integration encryption
       href: ../../resources/workforceintegrationencryption.md

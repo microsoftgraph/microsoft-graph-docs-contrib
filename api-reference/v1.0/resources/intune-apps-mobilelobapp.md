@@ -2,9 +2,10 @@
 title: "mobileLobApp resource type"
 description: "An abstract base class containing properties for all mobile line of business apps."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # mobileLobApp resource type

@@ -5,6 +5,7 @@ author: "vikailas"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # bookingPageSettings resource type

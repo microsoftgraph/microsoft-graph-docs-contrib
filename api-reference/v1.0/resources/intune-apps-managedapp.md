@@ -2,9 +2,10 @@
 title: "managedApp resource type"
 description: "Abstract class that contains properties and inherited properties for apps that you can manage with an Intune app protection policy."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # managedApp resource type

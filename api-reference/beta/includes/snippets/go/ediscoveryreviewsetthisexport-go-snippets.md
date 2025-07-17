@@ -21,9 +21,9 @@ outputName := "Export via API"
 requestBody.SetOutputName(&outputName) 
 description := "Export for the Contoso investigation"
 requestBody.SetDescription(&description) 
-exportOptions := graphmodels.ORIGINALFILES,FILEINFO,TAGS_EXPORTOPTIONS 
+exportOptions := graphmodels.ORIGINALFILES, TAGS, SPLITSOURCE, INCLUDEFOLDERANDPATH, FRIENDLYNAME, CONDENSEPATHS, OPTIMIZEDPARTITIONSIZE_EXPORTOPTIONS 
 requestBody.SetExportOptions(&exportOptions) 
-exportStructure := graphmodels.DIRECTORY_EXPORTFILESTRUCTURE 
+exportStructure := graphmodels.MSG_EXPORTFILESTRUCTURE 
 requestBody.SetExportStructure(&exportStructure) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

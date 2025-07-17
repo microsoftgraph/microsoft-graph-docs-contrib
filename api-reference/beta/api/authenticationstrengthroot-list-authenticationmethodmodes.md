@@ -6,6 +6,7 @@ ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List authenticationMethodModes
@@ -200,6 +201,11 @@ Content-Type: application/json
         "id": "x509CertificateMultiFactor",
         "displayName" : "Certificate-based authentication (multifactor)",
         "authenticationMethod" : "x509Certificate"
+    },
+    {
+        "id": "qrCodePin",
+        "displayName": "QR Code",
+        "authenticationMethod": "qrCodePin"
     }
   ]
 }
@@ -289,7 +295,8 @@ Content-Type: application/json
         "sms",
         "password",
         "federatedSingleFactor",
-        "email"
+        "email",
+        "qrCodePin"
     ]
 }
 ```

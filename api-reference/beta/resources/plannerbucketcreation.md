@@ -5,6 +5,7 @@ author: "DanluCui"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # plannerBucketCreation resource type
@@ -22,7 +23,7 @@ The resources that derive from plannerBucketCreation contain information about t
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerBucketCreation"

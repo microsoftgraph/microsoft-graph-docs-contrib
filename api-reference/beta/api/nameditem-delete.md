@@ -5,6 +5,7 @@ author: isvargasmsft
 ms.localizationpriority: medium
 ms.subservice: excel
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete namedItem

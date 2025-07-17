@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # educationAssignmentIndividualRecipient resource type
@@ -21,9 +22,13 @@ This resource is a subclass of [educationAssignmentRecipient](educationassignmen
 |:---------------|:--------|:----------|
 |recipients|String collection|A collection of IDs of the recipients.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -4,14 +4,15 @@ description: "Represents organization data associated with a user."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: entra-users
-author: "cmmdesai"
+author: "yyuank"
+ms.date: 08/09/2024
 ---
 
 # employeeOrgData resource type
 
 Namespace: microsoft.graph
 
-Represents organization data associated with a user. The **employeeOrgData** property of the [user](user.md) entity is a collection of organization attributes.
+Represents organization data associated with a user. The **employeeOrgData** property of the [user](user.md) entity is a collection of organization attributes. Include both property values when updating **employeeOrgData**; if you omit any, the system sets them to `null`.
 
 ## Properties
 | Property       | Type    |Description|
@@ -21,7 +22,7 @@ Represents organization data associated with a user. The **employeeOrgData** pro
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

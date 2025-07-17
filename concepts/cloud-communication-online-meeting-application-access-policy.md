@@ -4,6 +4,7 @@ description: "Use the cloud communications API in Microsoft Graph to configure a
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
+ms.date: 11/07/2024
 ---
 
 # Configure application access to online meetings or virtual events
@@ -28,7 +29,7 @@ The following table compares application access policy for online meeting and vi
 
 - _Policy_1_ contains one app ID (_app_1_)
 - _Policy_2_ contains one app ID (_app_2_)
-- _Policy_3_) contains both app IDs (_app_1_ and _app_2_)
+- _Policy_3_ contains both app IDs (_app_1_ and _app_2_)
 
 | Scenario | Online meeting | Virtual event |
 |----------|----------------|---------------|

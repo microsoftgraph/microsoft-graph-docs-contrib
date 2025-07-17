@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "reports"
 doc_type: "resourcePageType"
+ms.date: 07/30/2024
+toc.title: Service principal sign-in activity (preview)
 ---
 
 # servicePrincipalSignInActivity resource type
@@ -14,6 +16,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the service principal sign-in activity usage in a given tenant. This resource contains information about the last usage time of a service principal.
+
+For more information about this report, see [Usage and insights report: Service principal sign-in activity (preview)](/entra/identity/monitoring-health/concept-usage-insights-report?tabs=microsoft-entra-admin-center#service-principal-sign-in-activity-preview)
 
 ## Methods
 
@@ -26,7 +30,7 @@ Represents the service principal sign-in activity usage in a given tenant. This 
 
 | Property                                        | Type                                             | Description                                                                                                                                     |
 | :---------------------------------------------- | :----------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| appId                                           | String                                           | The application ID of the resource.                                                                                                             |
+| appId                                           | String                                           | The globally unique **appId** (also called *client ID* on the Microsoft Entra admin center) of the credentialed resource application.                                                                                                             |
 | applicationAuthenticationClientSignInActivity   | [signInActivity](../resources/signinactivity.md) | The sign-in activity of the application in a app-only authentication flow (app-to-app tokens) where the application acts like a client.              |
 | applicationAuthenticationResourceSignInActivity | [signInActivity](../resources/signinactivity.md) | The sign-in activity of the application in a app-only authentication flow (app-to-app tokens) where the application acts like a resource.            |
 | delegatedClientSignInActivity                   | [signInActivity](../resources/signinactivity.md) | The sign-in activity of the application in a delegated flow (user sign-in) where the application acts like a client.                       |
@@ -41,7 +45,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

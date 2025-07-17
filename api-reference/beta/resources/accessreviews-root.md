@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
+ms.date: 08/21/2024
 ---
 
 # Microsoft Entra access reviews (deprecated)
@@ -25,7 +26,7 @@ Typical customer scenarios for access reviews of group memberships and applicati
 
 - Customers can collect access review controls into programs that are relevant for your organization to track reviews for compliance or risk-sensitive applications.
 
-There's also a related capability for customers to review and certify the role assignments of administrative users who are assigned to Microsoft Entra roles such as Global Administrator or Azure subscription roles.  This capability is included in [Microsoft Entra Privileged Identity Management](privilegedidentitymanagement-root.md).
+There's also a related capability for customers to review and certify the role assignments of administrative users who are assigned to [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or [Azure subscription](/azure/role-based-access-control/built-in-roles) roles. This capability is included in [Microsoft Entra Privileged Identity Management](privilegedidentitymanagementv3-overview.md).
 
 The tenant where an access review is being created or managed via the API must have sufficient purchased or trial licenses. For more information about the license requirements, see [Access reviews license requirements](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 

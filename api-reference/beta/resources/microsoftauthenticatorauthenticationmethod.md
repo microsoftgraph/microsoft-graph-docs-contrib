@@ -6,6 +6,8 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Microsoft Authenticator
+ms.date: 07/19/2024
 ---
 
 # microsoftAuthenticatorAuthenticationMethod resource type
@@ -16,7 +18,7 @@ Namespace: microsoft.graph
 
 A representation of the Microsoft Authenticator app registered to a user. Microsoft Authenticator is an authentication method.
 
-This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
+This type inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
@@ -28,7 +30,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time that this app was registered. This property is null if the device is not registered for passwordless Phone Sign-In.|
+|createdDateTime|DateTimeOffset|The date and time that this app was registered. This property is null if the device isn't registered for passwordless Phone Sign-In.|
 |displayName|String|The name of the device on which this app is registered.|
 |id|String|A unique identifier for this authentication method. Inherited from [authenticationMethod](../resources/authenticationmethod.md)|
 |deviceTag|String|Tags containing app metadata.|
@@ -38,7 +40,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|device|[device](../resources/device.md)|The registered device on which Microsoft Authenticator resides. This property is null if the device is not registered for passwordless Phone Sign-In.|
+|device|[device](../resources/device.md)|The registered device on which Microsoft Authenticator resides. This property is null if the device isn't registered for passwordless Phone Sign-In.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -57,7 +59,7 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "deviceTag": "String",
   "phoneAppVersion": "String",
-  "createdDateTime": "DateTimeOffset",
+  "createdDateTime": "String (timestamp)",
   "clientAppName": "microsoftAuthenticator"
 }
 ```

@@ -5,6 +5,8 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Custom access package workflow extension (deprecated)
+ms.date: 07/22/2024
 ---
 
 # customAccessPackageWorkflowExtension resource type (deprecated)
@@ -49,7 +51,7 @@ Inherits and derived from [customCalloutExtension](../resources/customcalloutext
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

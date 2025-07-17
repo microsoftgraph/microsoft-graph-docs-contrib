@@ -3,10 +3,11 @@ title: "Overview of Selected Permissions in OneDrive and SharePoint"
 description: "OneDrive and SharePoint services on Microsoft Graph expose a set of Selected scopes allowing for granular consent down to the list & list item level."
 author: "patrick-rodgers"
 ms.localizationpriority: high
-ms.subservice: "entra-applications"
+ms.subservice: sharepoint
 ms.topic: concept-article
 scenarios: getting-started
 #Customer intent: As a developer integrating with Microsoft Graph, I want to learn about using Selected permissions to access SharePoint and OneDrive resources in the least privileged way.
+ms.date: 11/07/2024
 ---
 
 # Overview of Selected permissions in OneDrive and SharePoint

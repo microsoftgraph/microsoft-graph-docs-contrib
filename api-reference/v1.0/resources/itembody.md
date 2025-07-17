@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "grangeryy"
 ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # itemBody resource type
@@ -18,6 +19,10 @@ Represents properties of the body of an item, such as a message, event or group 
 |:---------------|:--------|:----------|
 |content|String|The content of the item.|
 |contentType|bodyType|The type of the content. Possible values are `text` and `html`.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

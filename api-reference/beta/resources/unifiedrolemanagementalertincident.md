@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Role management alert incident
+ms.date: 07/22/2024
 ---
 
 # unifiedRoleManagementAlertIncident resource type
@@ -46,7 +47,7 @@ For more information about working with security alerts for Microsoft Entra role
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

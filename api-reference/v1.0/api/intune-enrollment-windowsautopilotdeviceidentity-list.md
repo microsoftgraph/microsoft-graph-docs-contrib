@@ -2,9 +2,10 @@
 title: "List windowsAutopilotDeviceIdentities"
 description: "List properties and relationships of the windowsAutopilotDeviceIdentity objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List windowsAutopilotDeviceIdentities
@@ -34,6 +35,21 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/windowsAutopilotDeviceIdentities
 ```
+
+## Optional query parameters
+This method supports certain [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+### Using filters
+This method supports a limited subset of `$filter` _operators_ and _functions_.  
+Most notably, Equality _operators_ such as `eq` are not currently supported.  
+
+Filter _functions_ can be used in-place of Equality _operators_, for example, `contains(serialNumber, '[DeviceSN]')`.
+
+Using an unsupported filter _operator_ or _function_ can result in the following error:
+
+- Error code: `BadRequest`
+- Error message: `An error has occurred - Operation ID (for customer support): 00000000-0000-0000-0000-000000000000 [...]`
+
 
 ## Request headers
 |Header|Value|

@@ -11,7 +11,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 ChatMessage chatMessage = new ChatMessage();
 ItemBody body = new ItemBody();
 body.setContentType(BodyType.Html);
-body.setContent("<div><div>\n<div><span><img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span>\n\n</div>\n\n\n</div>\n</div>");
+body.setContent("<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">");
 chatMessage.setBody(body);
 LinkedList<ChatMessageHostedContent> hostedContents = new LinkedList<ChatMessageHostedContent>();
 ChatMessageHostedContent chatMessageHostedContent = new ChatMessageHostedContent();

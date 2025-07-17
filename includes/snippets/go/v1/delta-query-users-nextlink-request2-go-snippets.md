@@ -18,10 +18,10 @@ import (
 
 requestSkiptoken := "pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7"
 
-requestParameters := &graphusers.UsersDeltaWithRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.UsersDeltaRequestBuilderGetQueryParameters{
 	Skiptoken: &requestSkiptoken,
 }
-configuration := &graphusers.UsersDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UsersDeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

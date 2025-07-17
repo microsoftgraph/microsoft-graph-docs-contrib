@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "merzink"
 ms.subservice: "notifications"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # fallbackPolicyProperties resource type
@@ -27,7 +28,7 @@ Allows fallback policy to be specified for high-priority raw notifications on iO
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

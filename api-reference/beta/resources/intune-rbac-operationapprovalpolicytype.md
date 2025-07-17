@@ -2,18 +2,19 @@
 title: "operationApprovalPolicyType enum type"
 description: "The set of available policy types that can be configured for approval. The policy type must always be defined in an OperationApprovalRequest."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # operationApprovalPolicyType enum type
 
 Namespace: microsoft.graph
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 The set of available policy types that can be configured for approval. The policy type must always be defined in an OperationApprovalRequest.
 
@@ -37,9 +38,8 @@ The set of available policy types that can be configured for approval. The polic
 |filter|14|Indicates that the configured policy type is for a Filter. Not in use at this time.|
 |endpointSecurityPolicy|15|Indicates that the configured policy type is for an Endpoint Security Policy. Not in use at this time.|
 |app|16|Indicates that the configured policy type is an application type, such as mobile apps or built-in apps.|
-|script|17|Indicates that the configured policy type is a script type, such as Powershell scripts or remediation scripts.|
-|role|18|Indicates that the configured policy type is for a Role. Not in use at this time.|
+|script|17|Indicates that the configured policy type is a script type, such as PowerShell scripts or remediation scripts.|
+|role|18|Indicates that the configured policy type type is for Intune roles, such as application administrator or a custom role.|
 |deviceResetPasscode|19|Indicates that the configured policy type is for a Device Reset Passcode Action. Not in use at this time.|
-|customOrganizationalMessage|20|Indicates that the configured policy type is for a Custom Organizational Message. Not in use at this time.|
 |unknownFutureValue|21|Evolvable enumeration sentinel value. Do not use.|
 |operationApprovalPolicy|22|Indicates that the configured policy type is for an Operation Approval Policy.|

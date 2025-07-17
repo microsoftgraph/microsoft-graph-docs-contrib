@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new CustomSecurityAttributeDefinition
 {
@@ -16,16 +17,24 @@ var requestBody = new CustomSecurityAttributeDefinition
 		{
 			"allowedValues@delta" , new List<object>
 			{
-				new 
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					Id = "Baker",
-					IsActive = false,
-				},
-				new 
+					{
+						"id", new UntypedString("Baker")
+					},
+					{
+						"isActive", new UntypedBoolean(false)
+					},
+				}),
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					Id = "Skagit",
-					IsActive = true,
-				},
+					{
+						"id", new UntypedString("Skagit")
+					},
+					{
+						"isActive", new UntypedBoolean(true)
+					},
+				}),
 			}
 		},
 	},

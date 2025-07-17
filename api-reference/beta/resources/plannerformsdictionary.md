@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cpanga22"
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # plannerFormsDictionary resource type
@@ -18,6 +19,10 @@ An open type that represents a dictionary of data about the forms associated wit
 
 ## Properties
 You can add and remove values from open type properties. Provide GUID values as keys, and [plannerFormReference](plannerformreference.md) objects as values. To remove an item in the forms, set its value to `null`.
+
+## Relationships
+
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "luleonpla"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/16/2024
 ---
 
 # applicationTemplate resource type
@@ -29,6 +30,7 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |categories|String collection|The list of categories for the application. Supported values can be: `Collaboration`, `Business Management`, `Consumer`, `Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools`, `Travel`, and `Web design & hosting`.|
+|configurationUris|[configurationUri](../resources/configurationuri.md) collection|The URIs required for the single sign-on configuration of a preintegrated application.|
 |description|String|A description of the application.|
 |displayName|String|The name of the application.|
 |homePageUrl|String|The home page URL of the application.|
@@ -57,16 +59,22 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-    "id" : "id-value",
-    "displayName" : "displayName-value",
-    "homePageUrl" : "homePageUrl-value",
-    "supportedSingleSignOnModes" : ["supportedSingleSignOnModes-value"],
-    "logoUrl" : "logoUrl-value",
-    "categories" : ["categories-value"],
-    "publisher" : "publisher-value",
-    "description" : "description-value"
+  "categories": ["String"],
+  "configurationUris": [{"@odata.type": "microsoft.graph.configurationUri"}],
+  "description": "String",
+  "displayName": "String",
+  "homePageUrl": "String",
+  "id": "String (identifier)",
+  "logoUrl": "String",
+  "publisher": "String",
+  "supportedProvisioningTypes": ["String"],
+  "supportedSingleSignOnModes": ["String"]
 }
 ```
+
+## Related content
+
+[Quickstart: Add an enterprise application from the Microsoft Entra gallery](/entra/identity/enterprise-apps/add-application-portal)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

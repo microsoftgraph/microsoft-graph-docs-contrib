@@ -5,6 +5,7 @@ author: sangle7
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # sitePage: getWebPartsByPosition
@@ -39,7 +40,7 @@ In the request URL, provide one or more following parameters with a valid value.
 | :------------------ | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | columnId            | Double  | Indicates the identifier of the column where the WebPart located. Only works if `horizontalSectionId` is provided.                                           |
 | horizontalSectionId | Double  | Indicates the horizontal section where the WebPart located.                                                                                                  |
-| isInVerticalSection | boolean | Indicate whether the WebPart is contained in the current vertical section.                                                                                                  |
+| isInVerticalSection | Boolean | Indicate whether the WebPart is contained in the current vertical section.                                                                                                  |
 | webPartIndex        | Double  | The index of the current WebPart. Represents the order of WebPart in the current column or section. Only works if either `columnId` or `isInVerticalSection` is provided. |
 
 ## Optional query parameters

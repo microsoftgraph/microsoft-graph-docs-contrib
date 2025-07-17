@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madhavpatel6"
 ms.subservice: entra-sign-in
 doc_type: "resourcePageType"
+ms.date: 07/08/2024
 ---
 
 # featureRolloutPolicy resource type
@@ -30,8 +31,8 @@ For more information about staged rollout, see [How to configure staged rollout 
 | [Create](../api/featurerolloutpolicies-post.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy object.                                 |
 | [Update](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Update the properties of featurerolloutpolicy object.                     |
 | [Delete](../api/featurerolloutpolicy-delete.md)           | None                                            | Delete a featureRolloutPolicy object.                                     |
-| [Create appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Assign a directoryObject to feature rollout.                              |
-| [Delete appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | None                                            | Remove a directoryObject from feature rollout.                            |
+| [Create applies to](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Assign a directoryObject to feature rollout.                              |
+| [Delete applies to](../api/featurerolloutpolicy-delete-appliesto.md)            | None                                            | Remove a directoryObject from feature rollout.                            |
 
 ## Properties
 
@@ -39,7 +40,7 @@ For more information about staged rollout, see [How to configure staged rollout 
 |:-------------|:------------|:------------|
 |description|String|A description for this feature rollout policy.|
 |displayName|String|The display name for this  feature rollout policy.|
-|feature|stagedFeatureName| Possible values are: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`, `unknownFutureValue`, `certificateBasedAuthentication`, `multiFactorAuthentication`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `certificateBasedAuthentication`, `multiFactorAuthentication`. For more information about the prerequisites for the enabled features, see [Prerequisites for enabled features](#prerequisites-for-enabled-features).|
+|feature|stagedFeatureName| Possible values are: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`, `unknownFutureValue`, `certificateBasedAuthentication`, `multiFactorAuthentication`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `certificateBasedAuthentication`, `multiFactorAuthentication`. For more information about the prerequisites for the enabled features, see [Prerequisites for enabled features](#prerequisites-for-enabled-features).|
 |id|String| Read-only.|
 |isAppliedToOrganization|Boolean|Indicates whether this feature rollout policy should be applied to the entire organization.|
 |isEnabled|Boolean|Indicates whether the feature rollout is enabled.|

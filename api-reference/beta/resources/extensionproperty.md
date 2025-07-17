@@ -6,6 +6,7 @@ author: "dkershaw10"
 ms.subservice: extensions
 doc_type: "resourcePageType"
 toc.title: Directory extension
+ms.date: 07/22/2024
 ---
 
 # extensionProperty resource type (directory extensions)
@@ -66,7 +67,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

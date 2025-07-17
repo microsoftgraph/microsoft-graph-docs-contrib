@@ -5,6 +5,7 @@ title: List followed sites
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # List followed sites
 

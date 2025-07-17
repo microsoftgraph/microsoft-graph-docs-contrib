@@ -5,6 +5,7 @@ author: "payiAzure"
 ms.localizationpriority: medium
 ms.subservice: "service-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # serviceAnnouncementAttachment resource type
@@ -32,7 +33,7 @@ Represents an attachment associated with a [serviceUpdateMessage](../resources/s
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

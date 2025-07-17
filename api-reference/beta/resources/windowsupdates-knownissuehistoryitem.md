@@ -3,8 +3,9 @@ title: "knownIssueHistoryItem resource type"
 description: "Represents the description text for the known issue, used to maintain historical records."
 author: "skandula"
 ms.localizationpriority: medium
-ms.subservice: "windows-update-business"
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # knownIssueHistoryItem resource type

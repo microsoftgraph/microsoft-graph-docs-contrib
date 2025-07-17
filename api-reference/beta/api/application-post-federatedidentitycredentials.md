@@ -5,6 +5,7 @@ author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 10/02/2024
 ---
 
 # Create federatedIdentityCredential
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "application_post_federatedidentitycredentials" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-post-federatedidentitycredentials-permissions.md)]
+
+[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ## HTTP request
 
@@ -44,10 +47,11 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|audiences|String collection|The audience that can appear in the external token. This field is mandatory and should be set to `api://AzureADTokenExchange` for Microsoft Entra ID. It says what Microsoft identity platform should accept in the `aud` claim in the incoming token. This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. This field can only accept a single value and has a limit of 600 characters. Required.|
-|issuer|String|TThe URL of the external identity provider and must match the issuer claim of the external token being exchanged. The combination of the values of **issuer** and **subject** must be unique on the app. It has a limit of 600 characters. Required.|
-|name|String|The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly. It is immutable once created|
-|subject|String|Required. The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the sub claim within the token presented to Microsoft Entra ID. It has a limit of 600 characters. The combination of **issuer** and **subject** must be unique on the app.|
+|audiences|String collection|Required. The audience that can appear in the external token. This field is mandatory and should be set to `api://AzureADTokenExchange` for Microsoft Entra ID. It says what Microsoft identity platform should accept in the `aud` claim in the incoming token. This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. This field can only accept a single value and has a limit of 600 characters.|
+| claimsMatchingExpression |[federatedIdentityExpression](../resources/federatedidentityexpression.md)| Nullable.  Defaults to `null` if not set. Enables the use of claims matching expressions against specified claims. If **claimsMatchingExpression** is defined, **subject** must be `null`. For the list of supported expression syntax and claims, visit the [Flexible FIC reference](https://aka.ms/flexiblefic). |
+|issuer|String|Required. The URL of the external identity provider and must match the issuer claim of the external token being exchanged. The combination of the values of **issuer** and **subject** must be unique on the app. It has a limit of 600 characters.|
+|name|String|Required. The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly. It is immutable once created.|
+|subject|String|Nullable. Defaults to `null` if not set. The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the sub claim within the token presented to Microsoft Entra ID. It has a limit of 600 characters. The combination of **issuer** and **subject** must be unique on the app. If **subject** is defined, **claimsMatchingExpression** must be `null`.|
 
 
 

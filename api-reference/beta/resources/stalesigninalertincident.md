@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Inactive account
+ms.date: 09/19/2024
 ---
 
 # staleSignInAlertIncident resource type
@@ -19,6 +20,11 @@ Represents an alert incident that is triggered if there are accounts in a privil
 The threshold that triggers this alert when it's reached is defined in the [staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md) resource type.
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) resource type.
 
 ## Properties
 |Property|Type|Description|

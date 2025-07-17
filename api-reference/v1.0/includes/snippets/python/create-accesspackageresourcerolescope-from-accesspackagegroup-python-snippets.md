@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_package_resource_role_scope import AccessPackageResourceRoleScope
 from msgraph.generated.models.access_package_resource_role import AccessPackageResourceRole
 from msgraph.generated.models.access_package_resource import AccessPackageResource
 from msgraph.generated.models.access_package_resource_scope import AccessPackageResourceScope
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageResourceRoleScope(
 	role = AccessPackageResourceRole(
-		id = "748f8431-c7c6-404d-8564-df67aa8cfc5e",
 		display_name = "Member",
 		origin_system = "AadGroup",
 		origin_id = "Member_0282e19d-bf41-435d-92a4-99bab93af305",

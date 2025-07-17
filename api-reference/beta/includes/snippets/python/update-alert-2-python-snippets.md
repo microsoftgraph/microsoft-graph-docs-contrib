@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.security.alerts.item.alert_item_request_builder import AlertItemRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
@@ -11,9 +12,7 @@ from msgraph_beta.generated.models.alert import Alert
 from msgraph_beta.generated.models.alert_feedback import AlertFeedback
 from msgraph_beta.generated.models.alert_status import AlertStatus
 from msgraph_beta.generated.models.security_vendor_information import SecurityVendorInformation
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Alert(
 	assigned_to = "String",
 	closed_date_time = "String (timestamp)",

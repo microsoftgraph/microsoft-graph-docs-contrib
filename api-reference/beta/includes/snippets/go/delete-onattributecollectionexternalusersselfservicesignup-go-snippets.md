@@ -11,18 +11,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphidentity "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
 	  //other-imports
 )
 
-requestBody := graphidentity.New$refDeleteRequestBody()
-additionalData := map[string]interface{}{
-	"@odata.id" : "https://graph.microsoft.com/beta/identity/userFlowAttributes/city", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-graphClient.Identity().AuthenticationEventsFlows().ByAuthenticationEventsFlowId("authenticationEventsFlow-id").GraphExternalUsersSelfServiceSignUpEventsFlow().OnAttributeCollection().GraphOnAttributeCollectionExternalUsersSelfServiceSignUp().Attributes().Ref().Delete(context.Background(), requestBody, nil)
+graphClient.Identity().AuthenticationEventsFlows().ByAuthenticationEventsFlowId("authenticationEventsFlow-id").GraphExternalUsersSelfServiceSignUpEventsFlow().OnAttributeCollection().GraphOnAttributeCollectionExternalUsersSelfServiceSignUp().Attributes().ByIdentityUserFlowAttributeId("identityUserFlowAttribute-id").Ref().Delete(context.Background(), nil)
 
 
 ```

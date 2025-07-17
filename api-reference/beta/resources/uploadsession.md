@@ -5,6 +5,7 @@ title: "uploadSession resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
 ms.subservice: "non-product-specific"
+ms.date: 07/23/2024
 ---
 # uploadSession resource type
 
@@ -19,6 +20,19 @@ Represents information for an iterative process to upload large files to:
 - SharePoint document libraries
 - Outlook [event](event.md) and [message](message.md) items as attachments
 - Universal Print [printDocument](printdocument.md) items
+
+## Properties
+
+
+| Property         | Type              |Description
+|:-------------------|:------------------|:------------------------------------
+| expirationDateTime | DateTimeOffset    | The date and time in UTC that the upload session expires. The complete file must be uploaded before this expiration time is reached. Each fragment uploaded during the session extends the expiration time.
+| nextExpectedRanges | String collection | When uploading files to document libraries, this property is a collection of byte ranges that the server is missing for the file. These ranges are zero-indexed and of the format, "{start}-{end}" (for example "0-26" to indicate the first 27 bytes of the file). When uploading files as Outlook attachments, instead of a collection of ranges, this property always indicates a single value "{start}", the location in the file where the next upload should begin.
+| uploadUrl          | String            | The URL endpoint that accepts PUT requests for byte ranges of the file.
+
+## Relationships
+
+None.
 
 ## JSON representation
 
@@ -38,15 +52,6 @@ The following JSON representation shows the resource type.
   "nextExpectedRanges": ["String"]
 }
 ```
-
-## Properties
-
-
-| Property         | Type              |Description
-|:-------------------|:------------------|:------------------------------------
-| expirationDateTime | DateTimeOffset    | The date and time in UTC that the upload session expires. The complete file must be uploaded before this expiration time is reached.
-| nextExpectedRanges | String collection | When uploading files to document libraries, this property is a collection of byte ranges that the server is missing for the file. These ranges are zero-indexed and of the format, "{start}-{end}" (for example "0-26" to indicate the first 27 bytes of the file). When uploading files as Outlook attachments, instead of a collection of ranges, this property always indicates a single value "{start}", the location in the file where the next upload should begin.
-| uploadUrl          | String            | The URL endpoint that accepts PUT requests for byte ranges of the file.
 
 ## Related content
 

@@ -5,6 +5,7 @@ author: "mlafleur"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # educationOnPremisesInfo resource type
@@ -19,9 +20,12 @@ Additional information used to associate an on-premises Active Directory user ac
 | :---------- | :----- | :-------------------------------------------------------- |
 | immutableId | String | Unique identifier for the user object in Active Directory. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

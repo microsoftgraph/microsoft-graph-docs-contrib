@@ -37,6 +37,8 @@ $requestBody->setRequestedModalities([new Modality('audio'),]);
 $callOptions = new OutgoingCallOptions();
 $callOptions->setOdataType('#microsoft.graph.outgoingCallOptions');
 $callOptions->setIsContentSharingNotificationEnabled(true);
+$callOptions->setIsDeltaRosterEnabled(true);
+$callOptions->setIsInteractiveRosterEnabled(true);
 $requestBody->setCallOptions($callOptions);
 $mediaConfig = new ServiceHostedMediaConfig();
 $mediaConfig->setOdataType('#microsoft.graph.serviceHostedMediaConfig');

@@ -7,6 +7,7 @@ ms.service: "microsoft-graph"
 ms.subservice: "non-product-specific"
 doc_type: conceptualPageType
 ms.topic: overview
+ms.date: 07/16/2024
 ---
 
 # Microsoft Graph REST API v1.0 endpoint reference
@@ -64,7 +65,7 @@ For more information, see [Versioning and support](/graph/versioning-and-support
 ## What's new
 Find out [what's new](/graph/whats-new-overview) in the v1.0 endpoint.
 
-For details about changes to Microsoft Graph APIs in v1.0, explore the [API changelog](https://developer.microsoft.com/en-us/graph/changelog/?filterby=v1.0).
+For details about changes to Microsoft Graph APIs in v1.0, explore the [API changelog](https://developer.microsoft.com/graph/changelog/?filterby=v1.0).
 
 ## Related content
 

@@ -17,7 +17,7 @@ const timeCard = {
     notes: null,
     clockInEvent: {
         dateTime: '2021-05-21T21:58:41.327Z',
-        atApprovedLocation: null,
+        isAtApprovedLocation: null,
         notes: {
             contentType: 'text',
             content: 'update sample notes'
@@ -25,7 +25,7 @@ const timeCard = {
     },
     clockOutEvent: {
         dateTime: '2021-05-21T22:01:46.205Z',
-        atApprovedLocation: null,
+        isAtApprovedLocation: null,
         notes: {
             contentType: 'text',
             content: 'update sample notes'
@@ -37,7 +37,7 @@ const timeCard = {
             notes: null,
             start: {
                 dateTime: '2021-05-21T21:59:59.328Z',
-                atApprovedLocation: null,
+                isAtApprovedLocation: null,
                 notes: {
                     contentType: 'text',
                     content: 'update sample notes'
@@ -45,7 +45,7 @@ const timeCard = {
             },
             end: {
                 dateTime: '2021-05-21T22:01:10.205Z',
-                atApprovedLocation: null,
+                isAtApprovedLocation: null,
                 notes: {
                     contentType: 'text',
                     content: 'update sample notes'

@@ -2,9 +2,10 @@
 title: "teamFunSettings resource type"
 description: "Settings to configure use of Giphy, memes, and stickers in the team."
 ms.localizationpriority: medium
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/19/2024
 ---
 
 # teamFunSettings resource type
@@ -25,7 +26,7 @@ Settings to configure use of Giphy, memes, and stickers in the [team](team.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

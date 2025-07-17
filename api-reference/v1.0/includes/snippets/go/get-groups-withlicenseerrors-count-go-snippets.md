@@ -10,26 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 import (
 	  "context"
-	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
 	  //other-imports
 )
 
-headers := abstractions.NewRequestHeaders()
-headers.Add("ConsistencyLevel", "eventual")
 
-
-requestCount := true
 requestFilter := "hasMembersWithLicenseErrors eq true"
 
 requestParameters := &graphgroups.GroupsRequestBuilderGetQueryParameters{
-	Count: &requestCount,
 	Filter: &requestFilter,
 	Select: [] string {"id","displayName"},
 }
 configuration := &graphgroups.GroupsRequestBuilderGetRequestConfiguration{
-	Headers: headers,
 	QueryParameters: requestParameters,
 }
 

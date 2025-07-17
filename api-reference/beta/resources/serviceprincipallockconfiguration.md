@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "madansr7"
+ms.date: 03/21/2024
 ---
 
 # servicePrincipalLockConfiguration resource type
@@ -26,6 +27,9 @@ For more information about managing this object, see [Lock sensitive properties 
 | credentialsWithUsageVerify | Boolean | Locks the keyCredentials and passwordCredentials properties for modification where credential **usage** type is `Verify`. This locks OAuth service principals.                                                   |
 | credentialsWithUsageSign   | Boolean | Locks the keyCredentials and passwordCredentials properties for modification where credential **usage** type is `Sign`.                                                                 |
 | tokenEncryptionKeyId       | Boolean | Locks the tokenEncryptionKeyId property for modification on the service principal.                                                                            |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

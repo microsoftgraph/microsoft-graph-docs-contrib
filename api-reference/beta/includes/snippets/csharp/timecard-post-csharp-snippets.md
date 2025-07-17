@@ -11,10 +11,11 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new TimeCard
 {
+	UserId = "a3601044-a1b5-438e-b742-f78d01d68a67",
 	ClockInEvent = new TimeCardEvent
 	{
 		DateTime = DateTimeOffset.Parse("2019-03-18T00:00:00.000Z"),
-		AtApprovedLocation = true,
+		IsAtApprovedLocation = true,
 		Notes = new ItemBody
 		{
 			Content = "Started late due to traffic in CA 237",
@@ -39,19 +40,13 @@ var requestBody = new TimeCard
 			Start = new TimeCardEvent
 			{
 				DateTime = DateTimeOffset.Parse("2019-03-18T02:00:00.000Z"),
-				AtApprovedLocation = true,
+				IsAtApprovedLocation = true,
 				Notes = new ItemBody
 				{
 					Content = "Reduced break to make up for lost time",
 					ContentType = BodyType.Text,
 				},
 			},
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"onBehalfOfUserId" , "a3601044-a1b5-438e-b742-f78d01d68a67"
 		},
 	},
 };

@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update tablerow
@@ -42,7 +43,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain errors return the error string.|
+|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a Boolean. Cells that contain errors return the error string.|
 
 ## Response
 

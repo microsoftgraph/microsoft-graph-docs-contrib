@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "njerigrevious"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 08/08/2024
 ---
 
 # alteredQueryToken resource type
@@ -21,9 +22,13 @@ Represents changed segments related to an original user query.
 |offset|Int32| Defines the offset of a changed segment.|
 |suggestion|String| Represents the corrected segment string.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

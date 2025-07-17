@@ -5,6 +5,7 @@ author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # externalGroup resource type
@@ -41,7 +42,7 @@ Examples of external groups are business units and work teams.
 | members      | [microsoft.graph.externalConnectors.identity](../resources/externalconnectors-identity.md) collection | A member added to an **externalGroup**. You can add Microsoft Entra users, Microsoft Entra groups, or an **externalGroup** as members. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

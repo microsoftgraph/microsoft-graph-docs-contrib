@@ -5,6 +5,7 @@ author: "yizhenww"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # participantJoiningResponse resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 An abstract base class that contains the response to a participant joining notification.
 
-## Derived types
+The following table shows the types that inherit from this type.
 
 | Type                                                   | Description                                                                                          |
 | :----------------------------------------------------- | :--------------------------------------------------------------------                                |
@@ -23,9 +24,15 @@ An abstract base class that contains the response to a participant joining notif
 | [rejectJoinResponse](./rejectjoinresponse.md)          | Response to reject participant to the call.                                                           |
 | [inviteNewBotResponse](./invitenewbotresponse.md)      | Response to request participant joining notification sent out again as an incoming call notification. |
 
+## Properties
+None.
+
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

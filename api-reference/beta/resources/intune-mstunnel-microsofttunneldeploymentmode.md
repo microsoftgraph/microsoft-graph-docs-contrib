@@ -2,26 +2,27 @@
 title: "microsoftTunnelDeploymentMode enum type"
 description: "The available deployment modes for a managed Tunnel server. The deployment mode is determined during the deployment depending on the Tunnel containers, namely standalone or as part of a pod, and whether the containers are running in rootful or rootless mode."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # microsoftTunnelDeploymentMode enum type
 
 Namespace: microsoft.graph
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 The available deployment modes for a managed Tunnel server. The deployment mode is determined during the deployment depending on the Tunnel containers, namely standalone or as part of a pod, and whether the containers are running in rootful or rootless mode.
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|standaloneRootful|0|Default. Indicates that the Tunnel containers are deployed standalone and in rootful mode.|
-|standaloneRootless|1|Indicates that the Tunnel containers are deployed standalone and in rootless mode.|
-|podRootful|2|Indicates that the Tunnel containers are deployed as part of a pod and in rootful mode.|
-|podRootless|3|Indicates that the Tunnel containers are deployed as part of a pod and in rootless mode.|
-|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+|standaloneRootful|0||
+|standaloneRootless|1||
+|podRootful|2||
+|podRootless|3||
+|unknownFutureValue|4||

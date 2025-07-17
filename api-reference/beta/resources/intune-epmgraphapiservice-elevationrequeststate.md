@@ -2,29 +2,30 @@
 title: "elevationRequestState enum type"
 description: "Indicates state of elevation request"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # elevationRequestState enum type
 
 Namespace: microsoft.graph
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Indicates state of elevation request
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|none|0|Default Value. Indicates that elevation request status is unavailable|
-|pending|1|Initial state when request is submitted but no approval/denial action taken|
-|approved|2|Indicates elevation request has been approved by IT Admin.|
-|denied|3|Indicates elevation request has been denied by IT Admin.|
-|expired|4|Set to expire when Approved for is elapsed or ExpireDate is elapsed, whichever is sooner.|
-|unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
-|revoked|6|Set to expire when Approved for is elapsed or ExpireDate is elapsed, whichever is sooner.|
-|completed|7|Indicates an elevation request that was previously approved and expired has been completed.|
+|none|0||
+|pending|1||
+|approved|2||
+|denied|3||
+|expired|4||
+|unknownFutureValue|5||
+|revoked|6||
+|completed|7||

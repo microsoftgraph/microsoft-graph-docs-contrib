@@ -4,21 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.teams.item.schedule.timecards.item.clock_out.clock_out_post_request_body import ClockOutPostRequestBody
 from msgraph_beta.generated.models.item_body import ItemBody
 from msgraph_beta.generated.models.body_type import BodyType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ClockOutPostRequestBody(
+	is_at_approved_location = True,
 	notes = ItemBody(
 		content_type = BodyType.Text,
-		content = "clock out smaple notes",
+		content = "clocking out",
 	),
-	additional_data = {
-			"at_aproved_location" : True,
-	}
 )
 
 result = await graph_client.teams.by_team_id('team-id').schedule.time_cards.by_time_card_id('timeCard-id').clock_out.post(request_body)

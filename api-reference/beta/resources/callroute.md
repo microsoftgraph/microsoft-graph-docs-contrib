@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # callRoute resource type
@@ -23,9 +24,12 @@ The callRoute type.
 | original            | [identitySet](identityset.md) | The identity that was originally used in the call.           |
 | routingType         | String                        | Possible values are: `forwarded`, `lookup`, `selfFork`.  |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

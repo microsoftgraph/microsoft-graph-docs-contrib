@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ruoyingl"
 ms.subservice: "excel" 
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update nameditem
@@ -41,7 +42,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|visible|boolean|Specifies whether the object is visible or not.|
+|visible|Boolean|Specifies whether the object is visible or not.|
 |comment|    string    |Represents the comment associated with this name.|
 
 ## Response

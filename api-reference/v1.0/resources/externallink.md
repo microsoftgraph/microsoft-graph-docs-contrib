@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.subservice: onenote
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # externalLink resource type
@@ -19,9 +20,13 @@ Represents a URL that opens a OneNote page or notebook.
 |:---------------|:--------|:---------------------|
 | href           | String  | The URL of the link. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

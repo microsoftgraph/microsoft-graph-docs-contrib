@@ -6,6 +6,7 @@ ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # authenticationStrengthUsage resource type
@@ -32,7 +33,7 @@ None.
 |none|[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) collection|A collection of Conditional Access policies that reference the specified authentication strength policy and that *do not* require an MFA claim.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationStrengthUsage",

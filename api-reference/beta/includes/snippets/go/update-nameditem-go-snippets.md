@@ -22,7 +22,7 @@ scope := "scope-value"
 requestBody.SetScope(&scope) 
 comment := "comment-value"
 requestBody.SetComment(&comment) 
-value := graph.Newvalue()
+value := graph.NewUntypedNode()
 requestBody.SetValue(value)
 visible := true
 requestBody.SetVisible(&visible) 

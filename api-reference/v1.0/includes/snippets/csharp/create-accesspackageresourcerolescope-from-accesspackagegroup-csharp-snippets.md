@@ -13,7 +13,6 @@ var requestBody = new AccessPackageResourceRoleScope
 {
 	Role = new AccessPackageResourceRole
 	{
-		Id = "748f8431-c7c6-404d-8564-df67aa8cfc5e",
 		DisplayName = "Member",
 		OriginSystem = "AadGroup",
 		OriginId = "Member_0282e19d-bf41-435d-92a4-99bab93af305",

@@ -1,13 +1,14 @@
 ---
-title: "List permissions"
+title: "List fileStorageContainer permissions"
 description: "Get the set of permissions for a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/12/2024
 ---
 
-# List permissions
+# List fileStorageContainer permissions
 
 Namespace: microsoft.graph
 
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a list of the [permission](../resources/permission.md) objects associated with a [fileStorageContainer](../resources/filestoragecontainer.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_list_permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-permissions-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 
@@ -36,6 +39,8 @@ GET /storage/fileStorage/containers/{containerId}/permissions
 
 ## Optional query parameters
 This method supports the `$skip`, `$top`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+By default, this API lists only container-scoped permissions. You can use the `includeAllContainerUsers=true` query parameter to include entries for identities that may have at least one item-level permission in the container but don't have container-scoped permission.
 
 ## Request headers
 |Name|Description|
@@ -57,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/permissions
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions
 ```
 
 # [C#](#tab/csharp)

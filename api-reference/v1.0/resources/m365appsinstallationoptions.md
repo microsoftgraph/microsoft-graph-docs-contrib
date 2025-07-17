@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "reports"
 author: "yan-git"
 toc.title: Installation options
+ms.date: 06/06/2024
 ---
 
 # m365AppsInstallationOptions resource type

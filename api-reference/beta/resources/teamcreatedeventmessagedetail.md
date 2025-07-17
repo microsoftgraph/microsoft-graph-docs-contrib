@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamCreatedEventMessageDetail resource type
@@ -27,8 +28,11 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |teamDisplayName|String|Display name of the team.|
 |teamId|String|Unique identifier of the team.|
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamCreatedEventMessageDetail",

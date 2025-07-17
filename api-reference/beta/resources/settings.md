@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madehmer"
 ms.subservice: "insights"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # settings resource type
@@ -33,7 +34,7 @@ For the analytics API to return results for users, they must have a cloud-hosted
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

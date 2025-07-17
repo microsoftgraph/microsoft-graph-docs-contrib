@@ -4,7 +4,8 @@ description: "Represents the archival details of a siteCollection."
 title: "siteArchivalDetails resource type"
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
-doc_type: apiPageType
+doc_type: resourcePageType
+ms.date: 07/31/2024
 ---
 
 # siteArchivalDetails resource type

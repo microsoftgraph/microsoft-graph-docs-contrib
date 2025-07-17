@@ -5,24 +5,22 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "namkedia"
+ms.date: 11/16/2024
 ---
 
 # builtInIdentityProvider resource type
 Namespace: microsoft.graph
 
-Represents built-in identity providers with [External Identities](/azure/active-directory/external-identities/) for a Microsoft Entra tenant.
+Represents built-in identity providers for a Microsoft Entra tenant.
 
 For Microsoft Entra B2B scenarios in a Microsoft Entra tenant, the built-in identity provider type can be a Microsoft Entra ID, Microsoft account(MSA) or email one-time passcode (EmailOTP).
 
 This type inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 ## Methods
+None.
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List configured identity providers](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant including the built-in identity providers. There's no way to retrieve only the built-in identity providers in a tenant.|
-|[Get identity provider](../api/identityproviderbase-get.md) |builtInIdentityProvider|Retrieve properties of a built-in identity provider.|
-|[List available identity providers](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
+For the list of API operations for managing built-in identity providers, see the [identityProviderBase](../resources/identityproviderbase.md) resource type.
 
 ## Properties
 

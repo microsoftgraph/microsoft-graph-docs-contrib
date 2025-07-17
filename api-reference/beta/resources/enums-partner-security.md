@@ -5,6 +5,7 @@ author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: enumPageType
+ms.date: 06/27/2024
 ---
 
 # Partner security enum values
@@ -49,6 +50,42 @@ Namespace: microsoft.graph.partner.security
 |active|
 |resolved|
 |investigating|
+|unknownFutureValue|
+
+
+### complianceStatus values 
+
+|Member|
+|:---|
+|compliant|
+|noncomplaint|
+|unknownFutureValue|
+
+### policyStatus values 
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### securityRequirementState values 
+
+|Member|
+|:---|
+|active|
+|preview|
+|unknownFutureValue|
+
+### securityRequirementType values 
+
+|Member|
+|:---|
+|mfaEnforcedForAdmins|
+|mfaEnforcedForAdminsOfCustomers|
+|securityAlertsPromptlyResolved|
+|securityContactProvided|
+|spendingBudgetSetForCustomerAzureSubscriptions|
 |unknownFutureValue|
 
 <!--

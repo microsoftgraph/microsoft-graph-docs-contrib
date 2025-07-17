@@ -5,6 +5,8 @@ author: "koravvams"
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: partner-customer-administration
+ms.date: 06/04/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Granular delegated admin privileges (GDAP) API overview

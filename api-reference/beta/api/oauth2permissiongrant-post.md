@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 07/09/2024
 ---
 
 # Create oAuth2PermissionGrant (a delegated permission grant)
@@ -25,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "oauth2permissiongrant_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/oauth2permissiongrant-post-permissions.md)]
+
+[!INCLUDE [rbac-oauth2permissiongrant-apis-write](../includes/rbac-for-apis/rbac-oauth2permissiongrant-apis-write.md)]
 
 ## HTTP request
 

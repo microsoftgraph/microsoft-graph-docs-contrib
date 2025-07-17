@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.managed_device import ManagedDevice
 from msgraph.generated.models.managed_device_owner_type import ManagedDeviceOwnerType
@@ -18,9 +19,7 @@ from msgraph.generated.models.device_management_exchange_access_state_reason imp
 from msgraph.generated.models.configuration_manager_client_enabled_features import ConfigurationManagerClientEnabledFeatures
 from msgraph.generated.models.device_health_attestation_state import DeviceHealthAttestationState
 from msgraph.generated.models.managed_device_partner_reported_health_state import ManagedDevicePartnerReportedHealthState
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ManagedDevice(
 	odata_type = "#microsoft.graph.managedDevice",
 	user_id = "User Id value",

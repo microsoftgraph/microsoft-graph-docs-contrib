@@ -6,13 +6,14 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 07/22/2024
 ---
 
 # group: addFavorite
 
 Namespace: microsoft.graph
 
-Add the group to the list of the current user's favorite groups. Supported for Microsoft 365 groups only.
+Add the group to the list of the current user's favorite groups.  The group shows up in Outlook and Teams favorites. Supported for Microsoft 365 groups only.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

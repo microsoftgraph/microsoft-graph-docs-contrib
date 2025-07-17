@@ -2,9 +2,10 @@
 title: "teamMemberSettings resource type"
 description: "Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team."
 ms.localizationpriority: medium
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/19/2024
 ---
 
 # teamMemberSettings resource type
@@ -27,7 +28,7 @@ Settings to configure whether members can perform certain actions, for example, 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

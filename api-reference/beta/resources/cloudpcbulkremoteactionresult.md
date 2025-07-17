@@ -5,6 +5,7 @@ author: "rongting"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # cloudPcBulkRemoteActionResult resource type
@@ -27,7 +28,7 @@ Represents the Cloud PC-specified bulk remote action result.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult"

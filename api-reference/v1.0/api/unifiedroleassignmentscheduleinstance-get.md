@@ -5,6 +5,8 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Get unifiedRoleAssignmentScheduleInstance

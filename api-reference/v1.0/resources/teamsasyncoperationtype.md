@@ -1,10 +1,11 @@
 ---
 title: "teamsAsyncOperationType enum type"
 description: "Types of teamsAsyncOperation."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: enumPageType
+ms.date: 08/19/2024
 ---
 
 # teamsAsyncOperationType enum type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 
 
-Types of [teamsAsyncOperation](teamsasyncoperation.md). Members are added as more async operations are supported. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `teamifyGroup`, `createChannel`, `archiveChannel`, `unarchiveChannel`.
+Types of [teamsAsyncOperation](teamsasyncoperation.md). Members are added as more async operations are supported. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `teamifyGroup`, `createChannel`, `archiveChannel`, `unarchiveChannel`.
 
 ## Members
 

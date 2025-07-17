@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
+ms.custom: sfi-ropc-nochange
 ---
 
 # unifiedRolePermission resource type
@@ -69,7 +71,7 @@ Conditions aren't supported for custom roles.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

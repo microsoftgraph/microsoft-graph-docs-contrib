@@ -5,6 +5,7 @@ author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # shiftsRoleDefinition resource type

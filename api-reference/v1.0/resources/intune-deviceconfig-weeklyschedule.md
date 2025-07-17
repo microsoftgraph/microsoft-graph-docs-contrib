@@ -2,9 +2,10 @@
 title: "weeklySchedule enum type"
 description: "Possible values for a weekly schedule."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # weeklySchedule enum type

@@ -1,11 +1,13 @@
 ---
 title: "awsIdentityAccessManagementKeyUsageFinding resource type"
-description: "The IAM access key age represents the number of keys that have not been used in the over 90 days."
+description: "The IAM access key age represents the number of keys that haven't been used in the over 90 days."
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+toc.title: AWS IAM access key usage finding
+ms.date: 07/25/2024
 ---
 
 # awsIdentityAccessManagementKeyUsageFinding resource type
@@ -14,7 +16,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The IAM access key age represents the number of keys that have not been used in the over 90 days.
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
+The IAM access key age represents the number of keys that haven't been used in the over 90 days.
 
 
 Inherits from [finding](../resources/finding.md).
@@ -30,7 +34,7 @@ Inherits from [finding](../resources/finding.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionSummary|[actionSummary](../resources/actionsummary.md)|Contains information on authorization system actions granted to an identity and actions executed by this identity in the last 90 days. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identity.|
+|actionSummary|[actionSummary](../resources/actionsummary.md)|Contains information on authorization system actions granted to an identity and actions executed by this identity in the last 90 days. This property and its values are a snapshot as of when the finding was created and might not reflect the current values for the identity.|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
 |id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
 |permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|A score for an identity's excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and might not reflect the current score for the identity. Supports `$filter` (`gt`) and `$orderby`.|
@@ -65,4 +69,5 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
 

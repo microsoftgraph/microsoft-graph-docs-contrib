@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # educationAssignmentPointsGradeType resource type
@@ -21,9 +22,13 @@ an [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) property 
 |:---------------|:--------|:----------|
 |maxPoints|Single| Max points possible for this assignment.  |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

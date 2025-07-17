@@ -5,6 +5,7 @@ author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # cloudPcBulkRestart resource type
@@ -16,8 +17,6 @@ Namespace: microsoft.graph
 Represents the entity that performs a bulk restart action.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
-
-## Methods
 
 ## Properties
 |Property|Type|Description|

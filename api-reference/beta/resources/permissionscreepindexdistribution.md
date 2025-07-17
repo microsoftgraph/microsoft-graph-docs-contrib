@@ -6,6 +6,8 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+toc.title: Permissions Creep Index
+ms.date: 07/25/2024
 ---
 
 # permissionsCreepIndexDistribution resource type
@@ -13,6 +15,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 Represents the Permissions Creep Index Distribution for the authorization system. PCI distribution chart shows the classification of human and non-human identities based on the PCI score in three buckets: low, medium, high.
 
@@ -64,4 +68,5 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
 

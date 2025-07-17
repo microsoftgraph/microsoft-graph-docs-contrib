@@ -1,13 +1,14 @@
 ---
-title: printMargin resource type
+title: "printMargin resource type"
 description: Specifies the margin widths to use when printing.
 author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
 
-# printMargin complex type
+# printMargin resource type
 
 Namespace: microsoft.graph
 
@@ -23,9 +24,13 @@ Specifies the margin widths to use when printing.
 |right|Int32|The margin in microns from the right edge.|
 |left|Int32|The margin in microns from the left edge.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

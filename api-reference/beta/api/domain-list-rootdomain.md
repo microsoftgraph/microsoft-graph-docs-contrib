@@ -5,6 +5,7 @@ author: "shilpi-kansal"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Get rootDomain
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "domain_list_rootdomain" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-list-rootdomain-permissions.md)]
+
+[!INCLUDE [rbac-domain-apis-read](../includes/rbac-for-apis/rbac-domain-apis-read.md)]
 
 ## HTTP request
 
@@ -89,6 +92,10 @@ GET https://graph.microsoft.com/beta/domains/sub.contoso.com/rootDomain
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-rootdomain-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-rootdomain-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

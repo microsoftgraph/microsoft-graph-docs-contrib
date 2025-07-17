@@ -8,10 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Worksheets.Item.Charts.Item.SetData;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new SetDataPostRequestBody
 {
-	SourceData = "sourceData-value",
+	SourceData = new UntypedString("sourceData-value"),
 	SeriesBy = "seriesBy-value",
 };
 

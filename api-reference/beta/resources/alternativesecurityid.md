@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "myra-ramdenbourg"
+ms.date: 07/22/2024
 ---
 
 # alternativeSecurityId resource type
@@ -21,9 +22,12 @@ For internal use only. This complex type will be deprecated in the future.
 | key              | Edm.Binary | For internal use only.|
 | type             | Int32      | For internal use only.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

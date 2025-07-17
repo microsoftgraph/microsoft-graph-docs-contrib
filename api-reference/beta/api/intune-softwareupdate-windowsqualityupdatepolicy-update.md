@@ -2,16 +2,17 @@
 title: "Update windowsQualityUpdatePolicy"
 description: "Update the properties of a windowsQualityUpdatePolicy object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update windowsQualityUpdatePolicy
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -57,6 +58,7 @@ The following table shows the properties that are required when you create the [
 |lastModifiedDateTime|DateTimeOffset|Timestamp of when the profile was modified. The value cannot be modified and is automatically populated when the profile is modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. Read-only|
 |roleScopeTagIds|String collection|List of the scope tag ids for this profile.|
 |hotpatchEnabled|Boolean|Indicates if hotpatch is enabled for the tenants. When 'true', tenant can apply quality updates without rebooting their devices. When 'false', tenant devices will receive cold patch associated with Windows quality updates.|
+|approvalSettings|[windowsQualityUpdateApprovalSetting](../resources/intune-softwareupdate-windowsqualityupdateapprovalsetting.md) collection|The list of approval settings for this policy. The maximun number of approval settings supported for one policy is 6. The expected number of approval settings for one policy from UX is 4.|
 
 
 
@@ -70,7 +72,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsQualityUpdatePolicies/{windowsQualityUpdatePolicyId}
 Content-type: application/json
-Content-length: 237
+Content-length: 539
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdatePolicy",
@@ -79,7 +81,16 @@ Content-length: 237
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "hotpatchEnabled": true
+  "hotpatchEnabled": true,
+  "approvalSettings": [
+    {
+      "@odata.type": "microsoft.graph.windowsQualityUpdateApprovalSetting",
+      "windowsQualityUpdateCadence": "outOfBand",
+      "windowsQualityUpdateCategory": "security",
+      "approvalMethodType": "automatic",
+      "deferredDeploymentInDay": 7
+    }
+  ]
 }
 ```
 
@@ -88,7 +99,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 409
+Content-Length: 711
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdatePolicy",
@@ -100,6 +111,15 @@ Content-Length: 409
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "hotpatchEnabled": true
+  "hotpatchEnabled": true,
+  "approvalSettings": [
+    {
+      "@odata.type": "microsoft.graph.windowsQualityUpdateApprovalSetting",
+      "windowsQualityUpdateCadence": "outOfBand",
+      "windowsQualityUpdateCategory": "security",
+      "approvalMethodType": "automatic",
+      "deferredDeploymentInDay": 7
+    }
+  ]
 }
 ```

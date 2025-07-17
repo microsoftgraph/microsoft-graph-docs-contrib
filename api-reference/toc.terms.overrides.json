@@ -61,12 +61,20 @@
     "override": "BitLocker"
   },
   {
+    "term": "Certificate based",
+    "override": "Certificate-based"
+  },
+  {
     "term": "cloud pc",
     "override": "Cloud PC"
   },
   {
     "term": "cors",
     "override": "CORS"
+  },
+  {
+    "term": "Cross tenant",
+    "override": "Cross-tenant"
   },
   {
     "term": "cvss",
@@ -239,6 +247,11 @@
   {
     "term": "on premises",
     "override": "on-premises",
+    "caseSensitive": true
+  },
+  {
+    "term": "One note",
+    "override": "OneNote",
     "caseSensitive": true
   },
   {

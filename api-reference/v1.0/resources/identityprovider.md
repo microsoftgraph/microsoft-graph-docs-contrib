@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "namkedia"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # identityProvider resource type (deprecated)
@@ -47,7 +48,7 @@ Each identity provider has a process for creating an app registration. For examp
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

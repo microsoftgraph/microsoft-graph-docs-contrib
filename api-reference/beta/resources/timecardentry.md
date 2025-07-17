@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # timeCardEntry resource type
@@ -22,6 +23,9 @@ Represents a specific [timeCard](timecard.md) entry.
 | clockOutEvent			        |[timeCardEvent](timecardevent.md)  |The clock-out event of the **timeCard**. |
 | breaks 	|[timeCardBreak](timecardbreak.md) collection    |The list of breaks associated with the **timeCard**.|
 
+## Relationships
+
+None.
 
 ## JSON representation
 

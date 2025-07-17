@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # onPremisesPublishingSingleSignOn resource type
@@ -26,9 +27,13 @@ If you are configuring password-based single-sign this must be set using [create
 |kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| The Kerberos Constrained Delegation settings for applications that use Integrated Window Authentication. |
 |singleSignOnMode|singleSignOnMode| The preferred single-sign on mode for the application. Possible values are: `none`, `onPremisesKerberos`, `aadHeaderBased`,`pingHeaderBased`, `oAuthToken`. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

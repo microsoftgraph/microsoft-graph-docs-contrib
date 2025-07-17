@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: resourcePageType
+ms.date: 07/26/2024
 ---
 
 # office365ActiveUserDetail resource type
@@ -40,9 +41,14 @@ Namespace: microsoft.graph
 | teamsLicenseAssignDate            | Date              | The last date when the user was assigned a Teams license. |
 | assignedProducts                  | String collection | All the products assigned for the user.  |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 
 <!-- {
   "blockType": "resource",

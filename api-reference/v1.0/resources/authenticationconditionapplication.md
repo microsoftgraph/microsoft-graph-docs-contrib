@@ -6,13 +6,14 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: "Linked applications"
+ms.date: 08/06/2024
 ---
 
 # authenticationConditionApplication resource type
 
 Namespace: microsoft.graph
 
-An object representing the application that will be triggered for an authenticationEventListener.
+An object representing the application that will be triggered for an authenticationEventListener. The object is the service principal instance in the tenant.
 
 ## Methods
 

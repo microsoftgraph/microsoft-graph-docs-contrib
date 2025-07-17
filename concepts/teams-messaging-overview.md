@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Working with Microsoft Teams messaging APIs in Microsoft Graph
@@ -22,53 +23,13 @@ The [chatMessage](/graph/api/resources/chatMessage) resource type represents mes
 
 The [chatMessageAttachment](/graph/api/resources/chatmessageattachment) resource type represents entities that can be referenced from a [chatMessage](/graph/api/resources/chatMessage?preserve-view=true). These entities include files, tabs, cards, meetings, or other messages. The items themselves might be located somewhere else. For example, files might be stored in SharePoint. The following sections describe the possible types of attachments on a **chatMessage** object.
 
-#### file attachment
-
-When an [attachment](/graph/api/resources/chatmessageattachment) object refers to a file, it contains information about the file, including the link to open the file. The file itself is located in an accessible store like SharePoint. When a **chatMessage** has an attachment of type file, the value of the **contentType** property on the [attachment](/graph/api/resources/chatmessageattachment) resource is set to `reference`, and the **contentUrl** property contains the file URL.
-
-> **Note:** The SharePoint URL is the link that opens the file; it is not the Microsoft Graph URL. Callers can, however, use the [access shared items](/graph/api/shares-get) API to get the information about the contents of the file.
-
-The following example shows the schema for a file attachment.
-
-```json
-    "attachments": [
-        {
-            "id": "924D1F74-E0D2-4927-8A67-15ECEF455527",
-            "contentType": "reference",
-            "contentUrl": "https://testing.sharepoint.com/sites/Samples/Shared Documents/General/color.png",
-            "content": null,
-            "name": "color.png",
-            "thumbnailUrl": null,
-            "teamsAppId": null
-        }
-    ],
-```
-
-#### tab attachment
-
-When an [attachment](/graph/api/resources/chatmessageattachment) object refers to a [tab](/graph/api/resources/teamstab) hosted in the present context, the **contentType** property is set to `tabReference`, the **id** property is set to the ID of the tab, and the **name** property is set to the tab name. This scenario often applies when tabs are newly added. 
-
-The following example shows the schema for an tab attachment.
-
-``` json
-"attachments": [
-        {
-            "id": "tab::d64ea8d0-8b63-4f53-9bf6-806648176968",
-            "contentType": "tabReference",
-            "contentUrl": null,
-            "content": null,
-            "name": "Bing",
-            "thumbnailUrl": null,
-            "teamsAppId": null
-        }
-    ],
-```
 #### card attachment
 
 Cards represent visual elements backed by a predefined schema. Teams supports the cards defined by the [Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0&preserve-view=true#attachment-object) in addition to the following card types:
 
-- Code snippet - Set **contentType** to `application/vnd.microsoft.card.codesnippet`
+- Code snippet or place holder - Set **contentType** to `application/vnd.microsoft.card.codesnippet`
 - Announcement card - Set **contentType** set to `application/vnd.microsoft.card.announcement`
+- Microsoft Loop component card - Set **contentType** set to `application/vnd.microsoft.card.fluidEmbedCard`
 
 For cards, the **contentType** property is set to the type of card, and the **content** property contains the serialized json for the card.
 
@@ -108,7 +69,74 @@ The following example shows the schema for an adaptive card attachment when the 
     ]
 ```
 
-> **Note:** Microsoft Graph only supports cards that have the **OpenUrl** action set. Other actions like **ShowCard** are not supported. Microsoft Graph does allow messages posted by bots that have other actions in them to be read.
+> **Note:** Microsoft Graph only supports cards that have the **OpenUrl** action set. Other actions like **ShowCard** aren't supported. Microsoft Graph does allow messages posted by bots that have other actions in them to be read.
+
+The following example shows the schema for a Loop component as two attachments.
+
+```json
+    "attachments": [
+        {
+            "id": "b21e256a-8581-45cf-ae05-8bb998360bcc",
+            "contentType": "application/vnd.microsoft.card.fluidEmbedCard",
+            "contentUrl": null,
+            "content": "{\r\n  \"componentUrl\": \"https://teamsgraph-my.sharepoint.com/:fl:/g/personal/sumanac_teamsgraph_onmicrosoft_com/EQnofOQM0MpOoDaRIvw-pS8Bfsj_WDFuanBBXnjDAD-w3g?nav=cz0lMkZwZXJzb25hbCUyRnN1bWFuYWNfdGVhbXNncmFwaF9vbm1pY3Jvc29mdF9jb20mZD1iIWVUcmxYX19jN2t5eW9GSFhJdG8yTDI4bmtnV2EtOXhEa244SVBOdGZFYnlxandPblkwdE9TcFVldkh6dWtBV1ImZj0wMUU2TzQ0WFlKNUI2T0lER1FaSkhLQU5VUkVMNkQ1SkpQJmM9JTJGJmZsdWlkPTEmYT1UZWFtcyZwPSU0MGZsdWlkeCUyRmxvb3AtcGFnZS1jb250YWluZXI%3D\",\r\n  \"sourceType\": \"Compose\"\r\n}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "FluidEmbedCard"
+        },
+        {
+            "id": "placeholderCard",
+            "contentType": "application/vnd.microsoft.card.codesnippet",
+            "contentUrl": null,
+            "content": "{}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "FLUID_PLACEHOLDER_CARD"
+        }
+    ],
+```
+
+#### file attachment
+
+When an [attachment](/graph/api/resources/chatmessageattachment) object refers to a file, it contains information about the file, including the link to open the file. The file itself is located in an accessible store like SharePoint. When a **chatMessage** has an attachment of type file, the value of the **contentType** property on the [attachment](/graph/api/resources/chatmessageattachment) resource is set to `reference`, and the **contentUrl** property contains the file URL.
+
+> **Note:** The SharePoint URL is the link that opens the file; it isn't the Microsoft Graph URL. Callers can, however, use the [access shared items](/graph/api/shares-get) API to get the information about the contents of the file.
+
+The following example shows the schema for a file attachment.
+
+```json
+    "attachments": [
+        {
+            "id": "924D1F74-E0D2-4927-8A67-15ECEF455527",
+            "contentType": "reference",
+            "contentUrl": "https://testing.sharepoint.com/sites/Samples/Shared Documents/General/color.png",
+            "content": null,
+            "name": "color.png",
+            "thumbnailUrl": null,
+            "teamsAppId": null
+        }
+    ],
+```
+
+#### forwarded message attachment
+
+An [attachment](/graph/api/resources/chatmessageattachment) object contains a forwarded message that was forwarded to a [chat](/graph/api/resources/chat). For message attachments, the **id** property contains the ID of the forwarded message. The **content** property contains more details about the message; for example, the original message context and original sender detail. For message attachments, the **contentType** property is set to `forwardedMessageReference`.
+
+The following example shows the schema for a forwarded message attachment.
+
+```json
+    "attachments": [
+        {
+            "id": "1727881360458",
+            "contentType": "forwardedMessageReference",
+            "contentUrl": null,
+            "content": "{\"originalMessageId\":\"1727881360458\",\"originalMessageContent\":\"\\n<p>hello</p>\\n\",\"originalConversationId\":\"19:97641583cf154265a237da28ebbde27a@thread.v2\",\"originalSentDateTime\":\"2024-10-02T15:02:40.458+00:00\",\"originalMessageSender\":{\"application\":null,\"device\":null,\"user\":{\"userIdentityType\":\"aadUser\",\"tenantId\":\"2432b57b-0abd-43db-aa7b-16eadd115d34\",\"id\":\"28c10244-4bad-4fda-993c-f332faef94f0\",\"displayName\":null}}}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": null
+        }
+    ],
+```
 
 #### meeting attachment
 
@@ -147,6 +175,26 @@ The following example shows the schema for a message attachment.
     ],
 ```
 
+#### tab attachment
+
+When an [attachment](/graph/api/resources/chatmessageattachment) object refers to a [tab](/graph/api/resources/teamstab) hosted in the present context, the **contentType** property is set to `tabReference`, the **id** property is set to the ID of the tab, and the **name** property is set to the tab name. This scenario often applies when tabs are newly added. 
+
+The following example shows the schema for an tab attachment.
+
+``` json
+"attachments": [
+        {
+            "id": "tab::d64ea8d0-8b63-4f53-9bf6-806648176968",
+            "contentType": "tabReference",
+            "contentUrl": null,
+            "content": null,
+            "name": "Bing",
+            "thumbnailUrl": null,
+            "teamsAppId": null
+        }
+    ],
+```
+
 ### body
 
 The **body** property of a **chatMessage** object represents the body of the message. The **body** property can refer to other elements in the schema such as mentions or attachments. The contents can be `text` or `html`, as specified by the **contentType** property of the [itemBody](/graph/api/resources/itembody) resource type.
@@ -160,11 +208,12 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
     - id - The ID of the emoji.
     - alt - An alternate representation for the emoji; for example, Unicode.
     - title - A title for the emoji.
-- customemoji - When the body of the message contains a custom emoji, the `$"<customemoji id=\"dGVzdHNjOzAtd3VzLWQyLTdiNWRkZGQ2ZGVjMDNkYzIwNTgxY2NkYTE1MmEyZTM4\" alt=\"testsc\" source=\"https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706638496169/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1jYW5hcnkuYXN5bmNndy50ZWFtcy5taWNyb3NvZnQuY29tL3YxL29iamVjdHMvMC13dXMtZDItN2I1ZGRkZDZkZWMwM2RjMjA1ODFjY2RhMTUyYTJlMzgvdmlld3MvaW1ndDJfYW5pbQ==/$value\"></customemoji>"` element represents the properties of a *customemoji*:
+- customemoji - When the body of the message contains a custom emoji, the `$"<customemoji id="IdOfTheCustomEmoji" alt="AlternateRepresentationOfCustomEmoji" source="HostedContentOfCustomEmoji"></customemoji>"` element represents the properties of a *customemoji*:
     - id - The ID of the custom emoji.
     - alt - An alternate representation for the custom emoji; for example, the name of the custom emoji.
     - source - The hosted content of the custom emoji associated with the message.
-
+- codeblock - When the body of the message contains a code block, the `"<codeblock class=\"Json\"><code>Hello world</code></codeblock>"` element represents the properties of a code block.
+ 
 **Example: A message that @mentions a team**
 
 ```json
@@ -257,13 +306,35 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
 
 **Example: A message with a custom emoji**
 
->**Note:** Custom emojis are only available on the `/beta` endpoint.
-
 ```json
 {
     "body": {
         "contentType": "html",
         "content": "<p><customemoji id=\"dGVzdHNjOzAtd3VzLWQyLTdiNWRkZGQ2ZGVjMDNkYzIwNTgxY2NkYTE1MmEyZTM4\" alt=\"testsc\" source=\"https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706638496169/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1jYW5hcnkuYXN5bmNndy50ZWFtcy5taWNyb3NvZnQuY29tL3YxL29iamVjdHMvMC13dXMtZDItN2I1ZGRkZDZkZWMwM2RjMjA1ODFjY2RhMTUyYTJlMzgvdmlld3MvaW1ndDJfYW5pbQ==/$value\"></customemoji></p>"
+    }
+}
+```
+
+**Example: A message with a code block**
+
+>**Note:** Highlighted code blocks aren't supported when a message with a code block is sent using the Microsoft Graph API.
+
+```json
+{
+    "body": {
+        "contentType": "html",
+        "content": "\n<codeblock class=\"\"><code>Hello world</code></codeblock>"
+    }
+}
+```
+
+**Example: A message with a code block that has language-specific highlighting**
+
+```json
+{
+    "body": {
+        "contentType": "html",
+        "content": "<p>&nbsp;</p>\n\n<codeblock class=\"Json\"><code>{<br> &nbsp;&nbsp; <span class=\"hljs-function\">\"body\"</span>:&nbsp;{<br> &nbsp;&nbsp; <span class=\"hljs-function\">\"contentType\"</span>:&nbsp;<span class=\"hljs-string\">\"html\"</span>,<br> &nbsp;&nbsp; <span class=\"hljs-function\">\"content\"</span>:&nbsp;<span class=\"hljs-string\">\"&lt;codeblock&gt;&lt;code&gt;Hello&nbsp;world&lt;/code&gt;&lt;/codeblock&gt;\"</span><br> &nbsp;&nbsp; }<br>}</code></codeblock>\n<p>&nbsp;</p>"
     }
 }
 ```
@@ -648,13 +719,14 @@ The **reactions** property represents reactions from other users on the message,
 
 The following example shows a message with reactions.
 
->**Note:** The display name isn't always present.
+>**Note:** The display name isn't always present in the **user** property.
 
 ```json
 {
     "reactions": [
         {
-            "reactionType": "like",
+            "reactionType": "💯",
+            "displayName": "Hundred points",
             "createdDateTime": "2022-01-18T23:41:57.573Z",
             "user": {
                 "application": null,
@@ -674,13 +746,14 @@ The following example shows a message with a custom reaction.
 
 >**Note:**
 > * Custom reactions are only available on the `/beta` endpoint.
-> * The display name isn't always present.
+> * The display name isn't always present for user.
 
 ```json
 {
     "reactions": [
         {
             "reactionType": "custom",
+            "displayName": "microsoft_teams",
             "reactionContentUrl": "https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706763669648/hostedContents/aWQ9MC13dXMtZDExLTc3ZmI2NmY4MTMwMGI2OGEzYzRkOWUyNmU1YTc5ZmMyLHR5cGU9MSx1cmw9/$value",
             "createdDateTime": "2024-02-14T22:07:02.288Z",
             "user": {

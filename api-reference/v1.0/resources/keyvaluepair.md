@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # keyValuePair resource type
@@ -20,9 +21,13 @@ Key value pair for action parameters.
 |name|String|Name for this key-value pair|
 |value|String|Value for this key-value pair|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

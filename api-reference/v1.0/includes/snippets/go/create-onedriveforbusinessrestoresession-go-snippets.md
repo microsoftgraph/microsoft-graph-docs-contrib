@@ -1,0 +1,46 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewOneDriveForBusinessRestoreSession()
+
+
+driveRestoreArtifact := graphmodels.NewDriveRestoreArtifact()
+restorePoint := graphmodels.NewRestorePoint()
+id := "1f1fccc3-a642-4f61-bf49-f37b9a888279"
+restorePoint.SetId(&id) 
+driveRestoreArtifact.SetRestorePoint(restorePoint)
+destinationType := graphmodels.NEW_DESTINATIONTYPE 
+driveRestoreArtifact.SetDestinationType(&destinationType) 
+driveRestoreArtifact1 := graphmodels.NewDriveRestoreArtifact()
+restorePoint := graphmodels.NewRestorePoint()
+id := "1f1fccc3-a642-4f61-bf49-f37b9a888280"
+restorePoint.SetId(&id) 
+driveRestoreArtifact1.SetRestorePoint(restorePoint)
+destinationType := graphmodels.NEW_DESTINATIONTYPE 
+driveRestoreArtifact1.SetDestinationType(&destinationType) 
+
+driveRestoreArtifacts := []graphmodels.DriveRestoreArtifactable {
+	driveRestoreArtifact,
+	driveRestoreArtifact1,
+}
+requestBody.SetDriveRestoreArtifacts(driveRestoreArtifacts)
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+oneDriveForBusinessRestoreSessions, err := graphClient.Solutions().BackupRestore().OneDriveForBusinessRestoreSessions().Post(context.Background(), requestBody, nil)
+
+
+```

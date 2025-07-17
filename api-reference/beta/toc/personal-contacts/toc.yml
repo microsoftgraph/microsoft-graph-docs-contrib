@@ -6,14 +6,16 @@ items:
   items:
   - name: Contact
     href: ../../resources/contact.md
-  - name: Get contact
+  - name: Get
     href: ../../api/contact-get.md
-  - name: Create contact
+  - name: Create
     href: ../../api/user-post-contacts.md
-  - name: Update contact
+  - name: Update
     href: ../../api/contact-update.md
-  - name: Delete contact
+  - name: Delete
     href: ../../api/contact-delete.md
+  - name: Permanently delete
+    href: ../../api/contact-permanentdelete.md
   - name: Get contact delta
     href: ../../api/contact-delta.md
   - name: Open extensions
@@ -36,12 +38,14 @@ items:
   items:
   - name: Contact folder
     href: ../../resources/contactfolder.md
-  - name: Get contact folder
+  - name: Get
     href: ../../api/contactfolder-get.md
-  - name: Update contact folder
+  - name: Update
     href: ../../api/contactfolder-update.md
-  - name: Delete contact folder
+  - name: Delete
     href: ../../api/contactfolder-delete.md
+  - name: Permanently delete
+    href: ../../api/contactfolder-permanentdelete.md
   - name: List child folders
     href: ../../api/contactfolder-list-childfolders.md
   - name: Create child folder
@@ -62,19 +66,19 @@ items:
       href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
     - name: Get multi-value property
       href: ../../api/multivaluelegacyextendedproperty-get.md
-- name: Outlook category
+- name: Outlook category (deprecated)
   items:
-  - name: Outlook category
+  - name: Outlook category (deprecated)
     href: ../../resources/outlookcategory.md
-  - name: List categories
+  - name: List
     href: ../../api/outlookuser-list-mastercategories.md
-  - name: Get category
+  - name: Get
     href: ../../api/outlookcategory-get.md
-  - name: Create category
+  - name: Create
     href: ../../api/outlookuser-post-mastercategories.md
-  - name: Update category
+  - name: Update
     href: ../../api/outlookcategory-update.md
-  - name: Delete category
+  - name: Delete
     href: ../../api/outlookcategory-delete.md
 - name: Contact merge suggestions
   items:

@@ -2,9 +2,10 @@
 title: "iosDeviceType resource type"
 description: "Contains properties of the possible iOS device types the mobile app can run on."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # iosDeviceType resource type

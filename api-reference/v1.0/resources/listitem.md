@@ -5,6 +5,7 @@ description: Represents an item in a sharepoint list.
 ms.localizationpriority: high
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 10/09/2024
 ---
 
 # listItem resource type
@@ -24,6 +25,7 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 
 | Method                                                                   | Return Type                        | Description                                                               |
 |:-------------------------------------------------------------------------|:-----------------------------------|:--------------------------------------------------------------------------|
+| [List](../api/listitem-list.md)                                          | listItem collection                | Get the collection of items in a list.                                    |
 | [Get][]                                                                  | listItem                           | Get an item in a list.                                                    |
 | [Get column values][Get]                                                 | listItem                           | Get column values from listItem.                                          |
 | [Get analytics][]                                                        | [itemAnalytics][]                  | Get analytics for this resource.                                          |
@@ -32,7 +34,7 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 | [Delete][]                                                               | No Content                         | Removes an item from a list.                                              |
 | [Update][]                                                               | [fieldValueSet][]                  | Update the properties on a listItem.                                      |
 | [Update column values][Update]                                           | [fieldValueSet][]                  | Update column values on a listItem.                                       |
-| [List](../api/listitem-list-documentsetversions.md)  | [documentSetVersion][] collection  | Get a list of the versions of a document set item in a list.              |
+| [List document set version](../api/listitem-list-documentsetversions.md)  | [documentSetVersion][] collection  | Get a list of the versions of a document set item in a list.              |
 | [Create](../api/listitem-post-documentsetversions.md) | [documentSetVersion][]             | Create a new version of a document set item in a list.                    |
 | [Restore](../api/documentsetversion-restore.md)       | No Content                         | Restore the document set item to a specific version.                      |
 | [Get delta](../api/listitem-delta.md) | [listItem](../resources/listitem.md) collection | Get newly created, updated, or deleted [list items](../resources/listitem.md) without having to perform a full read of the entire items collection. |

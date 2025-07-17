@@ -5,6 +5,7 @@ description: "The hyperlinkOrPictureColumn resource indicates that the column co
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 03/12/2024
 ---
 # hyperlinkOrPictureColumn resource type
 

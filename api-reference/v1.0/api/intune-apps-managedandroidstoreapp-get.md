@@ -2,9 +2,10 @@
 title: "Get managedAndroidStoreApp"
 description: "Read properties and relationships of the managedAndroidStoreApp object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/13/2024
 ---
 
 # Get managedAndroidStoreApp

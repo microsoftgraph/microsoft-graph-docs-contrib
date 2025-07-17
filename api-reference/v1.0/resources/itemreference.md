@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "The itemReference resource provides information necessary to address a driveItem or listItem via the API."
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # itemReference resource type
@@ -28,7 +29,7 @@ The **itemReference** resource provides information necessary to address a [driv
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -5,6 +5,7 @@ description: Indicates that a drive item has been shared with others.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: onedrive
+ms.date: 06/13/2024
 ---
 # shared resource type
 
@@ -34,6 +35,9 @@ If a [driveItem](driveitem.md) has a non-null **shared** facet, the item was sha
 | `anonymous`    | The item is shared by using a link that works for anyone with the link.               |
 | `organization` | The item is shared by using a link that works for anyone in the owner's organization. |
 | `users`        | The item is shared with specific users only.                                          |
+
+## Relationships
+None.
 
 ## JSON representation
 

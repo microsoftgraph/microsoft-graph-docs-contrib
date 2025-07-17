@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # List tags
@@ -24,10 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ```
@@ -46,14 +43,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following example shows a request.
+The following example shows a request that lists tags.
 
-# [HTTP](#tab/http)
+# [HTTP](#tab/http) 
 <!-- {
   "blockType": "request",
   "name": "list_ediscoveryreviewtag_and_properties"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
 ```

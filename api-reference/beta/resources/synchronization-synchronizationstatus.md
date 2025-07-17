@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # synchronizationStatus resource type
@@ -42,9 +43,12 @@ Represents the current status of the [synchronizationJob](synchronization-synchr
 |Paused                              |Job was paused (usually by an administrator) and currently is not running, but the state of the job is preserved.|
 |Quarantine                          |Job is in quarantine. This might happen when there is a high volume of errors, or critical errors such as revoked/expired credentials. While in quarantine, the synchronization process will attempt to run the job with reduced frequency.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

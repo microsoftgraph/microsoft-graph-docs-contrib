@@ -2,9 +2,10 @@
 title: "managedDevicePartnerReportedHealthState enum type"
 description: "Available health states for the Device Health API"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # managedDevicePartnerReportedHealthState enum type

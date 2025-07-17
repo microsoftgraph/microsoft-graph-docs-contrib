@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkUserIdentity resource type
@@ -23,14 +24,15 @@ Inherits from [identity](../resources/identity.md).
 |:---|:---|:---|
 |displayName|String|Inherited from [identity](../resources/identity.md). Display name of the user. Optional.|
 |id|String|Inherited from [identity](../resources/identity.md). ID of the user. |
-|userIdentityType|teamworkUserIdentityType| Type of user. Possible values are: `aadUser`, `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, `phoneUser`, `emailUser` and `azureCommunicationServicesUser`.|
 |tenantId|String|Identifier of tenant, which user is part of. Optional. |
+|userIdentityType|teamworkUserIdentityType| Type of user. Possible values are: `aadUser`, `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, `phoneUser`, `emailUser` and `azureCommunicationServicesUser`.|
+|userPrincipalName|String|User principal name (UPN) of the user.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkUserIdentity"
@@ -39,9 +41,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-  "id": "String (identifier)",
   "displayName": "String",
-  "userIdentityType": "String"
+  "id": "String (identifier)",
+  "tenantId": "String",
+  "userIdentityType": "String",
+  "userPrincipalName": "String"
 }
 ```
 

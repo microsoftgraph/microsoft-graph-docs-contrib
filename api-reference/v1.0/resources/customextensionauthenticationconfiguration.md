@@ -5,6 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # customExtensionAuthenticationConfiguration resource type
@@ -23,9 +24,14 @@ The type of token authentication used depends on the token security. If the toke
 
 None.
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration",

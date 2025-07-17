@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: entra-users
 author: "psignoret"
+ms.date: 10/15/2024
 ---
 
 # List appRoleAssignments granted to a user
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [appRoleAssignments](../resources/approleassignment.md) that a user has been granted. This operation also returns app role assignments granted to groups that the user is a direct member of.
+Retrieve the list of [appRoleAssignments](../resources/approleassignment.md) that a [user](../resources/user.md) has been granted. This operation also returns app role assignments granted to groups that the user is a direct member of.
 
 > [!IMPORTANT]
 > To ensure complete results for users with many indirect app role assignments, use the **ConsistencyLevel** header set to `eventual` and `$count`, as described in [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#group-properties). For an example, see [Example 1](#example-1-list-approleassignments-granted-to-a-user).
@@ -27,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "user_list_approleassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-approleassignments-permissions.md)]
 
+[!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -34,6 +37,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /users/{id | userPrincipalName}/appRoleAssignments
 GET /me/appRoleAssignments
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Optional query parameters
 

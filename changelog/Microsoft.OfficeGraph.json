@@ -99,6 +99,40 @@
       "CreatedDateTime": "2021-06-23T09:10:00.188Z",
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "Insights"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3670025f-0d7d-463a-a670-7c7be6341f75",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userInsightsSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [userInsightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "userInsightsSettings"
+        },
+        {
+          "Id": "3670025f-0d7d-463a-a670-7c7be6341f75",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "itemInsights",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemInsights** relationship to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-1.0) resource.",
+          "Target": "userSettings"
+        },
+        {
+          "Id": "3670025f-0d7d-463a-a670-7c7be6341f75",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "insights",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **insights** navigation property of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource from [officeGraphInsights](https://learn.microsoft.com/en-us/graph/api/resources/officegraphinsights?view=graph-rest-1.0) to [itemInsights](https://learn.microsoft.com/graph/api/resources/iteminsights?view=graph-rest-1.0).",
+          "Target": "user"
+        }
+      ],
+      "Id": "3670025f-0d7d-463a-a670-7c7be6341f75",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-08-06T10:12:19.0540756Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "Insights"
     }
   ]
 }

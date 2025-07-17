@@ -7,7 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 mgc-beta storage file-storage containers patch --file-storage-container-id {fileStorageContainer-id} --body '{\
   "displayName": "Updated Name",\
-  "description": "Updated Description"\
+  "description": "Updated Description",\
+  "settings": {\
+    "isOcrEnabled": false\
+  }\
 }\
 '
 

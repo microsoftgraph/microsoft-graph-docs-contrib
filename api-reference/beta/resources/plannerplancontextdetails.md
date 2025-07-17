@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # plannerPlanContextDetails resource type
@@ -31,9 +32,13 @@ The **plannerPlanContextDetails** resource contains additional information about
 |delinked           | A formerly linked **plannerPlanContext** is no longer linked to the plan. |
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                     |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

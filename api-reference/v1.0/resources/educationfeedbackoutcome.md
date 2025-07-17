@@ -6,6 +6,7 @@ author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: "resourcePageType"
 toc.title: Feedback outcome
+ms.date: 07/26/2024
 ---
 
 # educationFeedbackOutcome resource type
@@ -34,7 +35,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

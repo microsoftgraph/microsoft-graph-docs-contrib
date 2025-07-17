@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update charttitle
@@ -40,9 +41,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|overlay|boolean|Boolean value representing if the chart title overlays the chart or not.|
+|overlay|Boolean|Boolean value representing if the chart title overlays the chart or not.|
 |text|string|Represents the title text of a chart.|
-|visible|boolean|A boolean value that represents the visibility of a chart title object.|
+|visible|Boolean|A Boolean value that represents the visibility of a chart title object.|
 
 ## Response
 

@@ -2,26 +2,27 @@
 title: "deviceManagementReportStatus enum type"
 description: "Possible statuses associated with a generated report."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # deviceManagementReportStatus enum type
 
 Namespace: microsoft.graph
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Possible statuses associated with a generated report.
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Report generation status is unknown.|
-|notStarted|1|Report generation has not started.|
-|inProgress|2|Report generation is in progress.|
-|completed|3|Report generation is completed.|
-|failed|4|Report generation has failed.|
+|unknown|0||
+|notStarted|1||
+|inProgress|2||
+|completed|3||
+|failed|4||

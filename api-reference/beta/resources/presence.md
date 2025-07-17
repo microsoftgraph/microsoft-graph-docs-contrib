@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "cloud-communications"
+ms.date: 07/22/2024
 ---
 
 # presence resource type
@@ -39,6 +40,7 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | availability        | String collection                             | The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`.                                                                                                           |
 | id                  | String                                        | The unique identifier for the user.                                                                                                                                                                                                                                                                             |
 | outOfOfficeSettings | [outOfOfficeSettings](outofofficesettings.md) | The out of office settings for a user.                                                                                                                                                                                                                                                     |
+| sequenceNumber | String | The lexicographically sortable String stamp that represents the version of a **presence** object. |
 | statusMessage | [presenceStatusMessage](presencestatusmessage.md) | The presence status message of a user. |
 
 >**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
@@ -49,7 +51,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -59,10 +61,11 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-   "activity": "String",
-   "availability": "String",
-   "id": "String (identifier)",
-   "outOfOfficeSettings": {"@odata.type": "#microsoft.graph.outOfOfficeSettings"},
-   "statusMessage": {"@odata.type": "#microsoft.graph.presenceStatusMessage"}
+  "activity": "String",
+  "availability": "String",
+  "id": "String (identifier)",
+  "outOfOfficeSettings": {"@odata.type": "#microsoft.graph.outOfOfficeSettings"},
+  "sequenceNumber": "String",
+  "statusMessage": {"@odata.type": "#microsoft.graph.presenceStatusMessage"}
 }
 ```

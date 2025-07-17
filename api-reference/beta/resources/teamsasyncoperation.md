@@ -1,10 +1,11 @@
 ---
 title: "teamsAsyncOperation resource type"
 description: "A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request. "
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/16/2024
 ---
 
 # teamsAsyncOperation resource type
@@ -37,10 +38,13 @@ When the request completes successfully, the status will be "succeeded" and the 
 |error|[operationError](operationerror.md)|Any error that causes the async operation to fail.|
 |id|string |Unique operation ID.|
 |lastActionDateTime|DateTimeOffset |Time when the async operation was last updated.|
-|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Denotes the type of operation described. Possible values are: `invalid`, `cloneTeam`, `archiveTeam`, `unarchiveTeam`, `createTeam`, `unknownFutureValue`, `teamifyGroup`, `createChannel`, `createChat`, `archiveChannel`, `unarchiveChannel`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `teamifyGroup`, `createChannel`, `createChat`, `archiveChannel`, `unarchiveChannel`.|
+|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Denotes the type of operation described. Possible values are: `invalid`, `cloneTeam`, `archiveTeam`, `unarchiveTeam`, `createTeam`, `unknownFutureValue`, `teamifyGroup`, `createChannel`, `createChat`, `archiveChannel`, `unarchiveChannel`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `teamifyGroup`, `createChannel`, `createChat`, `archiveChannel`, `unarchiveChannel`.|
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Operation status.|
 |targetResourceId|String |The ID of the object that's created or modified as result of this async operation, typically a [team](../resources/team.md).|
 |targetResourceLocation|string|The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.|
+
+## Relationships
+None.
 
 ## JSON representation
 

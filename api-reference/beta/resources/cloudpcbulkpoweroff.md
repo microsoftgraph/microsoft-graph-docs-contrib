@@ -5,6 +5,7 @@ author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # cloudPcBulkPowerOff resource type
@@ -16,8 +17,6 @@ Namespace: microsoft.graph
 Defines the bulk power-off action, with Cloud PC IDs as the only input parameter for the bulk power-off operation.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
-
-## Methods
 
 ## Properties
 |Property|Type|Description|

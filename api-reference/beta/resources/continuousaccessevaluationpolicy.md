@@ -5,6 +5,7 @@ author: "Jerrysai-zz"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # continuousAccessEvaluationPolicy resource type
@@ -35,7 +36,7 @@ Continuous Access Evaluation (CAE) manages authentication sessions in real time.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

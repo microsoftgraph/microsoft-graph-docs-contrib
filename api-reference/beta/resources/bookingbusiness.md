@@ -1,10 +1,11 @@
 ---
 title: "bookingBusiness resource type"
 description: "Represents a business in Microsoft Bookings."
-ms.localizationpriority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # bookingBusiness resource type
@@ -69,7 +70,7 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

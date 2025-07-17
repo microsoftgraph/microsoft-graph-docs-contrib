@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphnetworkaccess.NetworkAccessFilteringPolicieItemRequestBuilderGetQueryParameters{
+requestParameters := &graphnetworkaccess.FilteringPoliciesItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"policyRules"},
 }
-configuration := &graphnetworkaccess.NetworkAccessFilteringPolicieItemRequestBuilderGetRequestConfiguration{
+configuration := &graphnetworkaccess.FilteringPoliciesItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

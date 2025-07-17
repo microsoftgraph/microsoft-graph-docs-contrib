@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: preetikr
 ms.subservice: security
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 #  controlScore resource type
@@ -23,7 +24,7 @@ Contains a tenant score and description for an individual control.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

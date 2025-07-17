@@ -1,10 +1,11 @@
 ---
 title: "teamsApp resource type"
 description: "Represents an app in the Microsoft Teams app catalog."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/19/2024
 ---
 
 # teamsApp resource type

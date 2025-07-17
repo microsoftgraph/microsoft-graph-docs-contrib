@@ -16,9 +16,10 @@ use Microsoft\Graph\Beta\Generated\Models\TimeCardBreak;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TimeCard();
+$requestBody->setUserId('a3601044-a1b5-438e-b742-f78d01d68a67');
 $clockInEvent = new TimeCardEvent();
 $clockInEvent->setDateTime(new \DateTime('2019-03-18T00:00:00.000Z'));
-$clockInEvent->setAtApprovedLocation(true);
+$clockInEvent->setIsAtApprovedLocation(true);
 $clockInEventNotes = new ItemBody();
 $clockInEventNotes->setContent('Started late due to traffic in CA 237');
 $clockInEventNotes->setContentType(new BodyType('text'));
@@ -36,7 +37,7 @@ $breaksTimeCardBreak1Notes->setContentType(new BodyType('text'));
 $breaksTimeCardBreak1->setNotes($breaksTimeCardBreak1Notes);
 $breaksTimeCardBreak1Start = new TimeCardEvent();
 $breaksTimeCardBreak1Start->setDateTime(new \DateTime('2019-03-18T02:00:00.000Z'));
-$breaksTimeCardBreak1Start->setAtApprovedLocation(true);
+$breaksTimeCardBreak1Start->setIsAtApprovedLocation(true);
 $breaksTimeCardBreak1StartNotes = new ItemBody();
 $breaksTimeCardBreak1StartNotes->setContent('Reduced break to make up for lost time');
 $breaksTimeCardBreak1StartNotes->setContentType(new BodyType('text'));
@@ -45,10 +46,6 @@ $breaksTimeCardBreak1->setStart($breaksTimeCardBreak1Start);
 $breaksArray []= $breaksTimeCardBreak1;
 $requestBody->setBreaks($breaksArray);
 
-$additionalData = [
-'onBehalfOfUserId' => 'a3601044-a1b5-438e-b742-f78d01d68a67',
-];
-$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timeCards()->post($requestBody)->wait();
 

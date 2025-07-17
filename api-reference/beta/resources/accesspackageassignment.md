@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/10/2024
 ---
 
 # accessPackageAssignment resource type
@@ -21,8 +22,8 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |:-------------|:------------|:------------|
 |[List](../api/entitlementmanagement-list-accesspackageassignments.md)|[accessPackageAssignment](accesspackageassignment.md) collection|Retrieve a list of **accessPackageAssignment** objects.|
 |[Filter by current user](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects filtered on the signed-in user.|
-|[Reprocess](../api/accesspackageassignment-reprocess.md)|None|Automatically reevaluate and enforce a user’s assignments for a specific access package.|
-|[Additional access](../api/accesspackageassignment-additionalaccess.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects for users who have assignments to incompatible access packages.|
+|[Reprocess](../api/accesspackageassignment-reprocess.md)|None|Automatically reevaluate and enforce a user's assignments for a specific access package.|
+|[Check other access](../api/accesspackageassignment-additionalaccess.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects for users who have assignments to incompatible access packages.|
 
 > [!NOTE]
 > To create or remove an access package assignment for a user, use the [create an accessPackageAssignmentRequest](../api/entitlementmanagement-post-accesspackageassignmentrequests.md)
@@ -40,7 +41,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |expiredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String|Read-only.|
 |isExtended|Boolean|Indicates whether the access package assignment is extended. Read-only.|
-|targetId|String|The ID of the subject with the assignment. Read-only.|
+|targetId|String|This property should not be used as a dependency, as it may change without notice. Instead, expand the **target** relationship and use the **objectId** property. Read-only.|
 |schedule|[requestSchedule](requestschedule.md)|When the access assignment is to be in place. Read-only.|
 
 ## Relationships

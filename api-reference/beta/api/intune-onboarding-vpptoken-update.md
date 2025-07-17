@@ -2,16 +2,17 @@
 title: "Update vppToken"
 description: "Update the properties of a vppToken object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update vppToken
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -68,6 +69,7 @@ The following table shows the properties that are required when you create the [
 |locationName|String|Token location returned from Apple VPP.|
 |claimTokenManagementFromExternalMdm|Boolean|Admin consent to allow claiming token management from external MDM.|
 |roleScopeTagIds|String collection|Role Scope Tags IDs assigned to this entity.|
+|lastAppCount|Int32|The number of apps under the Apple Volume Purchase Program Token since the last token sync.|
 
 
 
@@ -81,7 +83,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenId}
 Content-type: application/json
-Content-length: 1002
+Content-length: 1025
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -110,7 +112,8 @@ Content-length: 1002
   "claimTokenManagementFromExternalMdm": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "lastAppCount": 12
 }
 ```
 
@@ -119,7 +122,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1115
+Content-Length: 1138
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -150,6 +153,7 @@ Content-Length: 1115
   "claimTokenManagementFromExternalMdm": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "lastAppCount": 12
 }
 ```

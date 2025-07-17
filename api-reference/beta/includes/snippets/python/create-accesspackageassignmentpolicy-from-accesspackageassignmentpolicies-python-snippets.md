@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
 from msgraph_beta.generated.models.requestor_settings import RequestorSettings
 from msgraph_beta.generated.models.user_set import UserSet
 from msgraph_beta.generated.models.approval_settings import ApprovalSettings
 from msgraph_beta.generated.models.approval_stage import ApprovalStage
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageAssignmentPolicy(
 	access_package_id = "56ff43fd-6b05-48df-9634-956a777fce6d",
 	display_name = "direct",

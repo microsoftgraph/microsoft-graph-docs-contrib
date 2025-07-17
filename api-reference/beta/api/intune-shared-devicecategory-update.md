@@ -2,9 +2,10 @@
 title: "Update deviceCategory"
 description: "Update the properties of a deviceCategory object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update deviceCategory
@@ -16,8 +17,6 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [deviceCategory](../resources/intune-shared-devicecategory.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
         ## Permissions
 
@@ -32,6 +31,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application||
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 

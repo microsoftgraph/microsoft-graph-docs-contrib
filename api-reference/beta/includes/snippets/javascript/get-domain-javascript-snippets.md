@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let domain = await client.api('/domains/contoso.com')
+let domain = await client.api('/domains/woodgrovedemo.com')
 	.version('beta')
 	.get();
 

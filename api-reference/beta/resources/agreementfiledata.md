@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
+ms.date: 07/24/2024
 ---
 
 # agreementFileData resource type
@@ -20,10 +21,13 @@ Represents the blob of a Microsoft Entra terms of use agreement file.
 |:-------------|:------------|:------------|
 |data|Binary|Data that represents the terms of use PDF document. Read-only. <br/><br/>**Note:** You can use the .NET [Convert.ToBase64String](/dotnet/api/system.convert.tobase64string) method to convert your file to binary data for uploading using the [Create agreements](../api/termsofusecontainer-post-agreements.md) API. A sample syntax using this method in PowerShell is `[convert]::ToBase64String((Get-Content -path "your_file_path" -Encoding byte))`. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

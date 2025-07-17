@@ -2,9 +2,10 @@
 title: "stateManagementSetting enum type"
 description: "State Management Setting."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # stateManagementSetting enum type

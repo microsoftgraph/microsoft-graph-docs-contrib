@@ -46,6 +46,8 @@ items:
     href: ../../api/message-recall.md
   - name: Unsubscribe
     href: ../../api/message-unsubscribe.md
+  - name: Permanently delete
+    href: ../../api/message-permanentdelete.md
   - name: Attachments
     items:
     - name: List attachments
@@ -72,8 +74,10 @@ items:
   items:
   - name: Attachment
     href: ../../resources/attachment.md
-  - name: Get attachment
+  - name: Get
     href: ../../api/attachment-get.md
+  - name: Delete
+    href: ../../api/attachment-delete.md
   - name: Add attachment to a user event
     href: ../../api/event-post-attachments.md
   - name: Add attachment to a message
@@ -92,21 +96,19 @@ items:
     href: ../../api/outlooktask-list-attachments.md
   - name: List attachments of a post
     href: ../../api/post-list-attachments.md
-  - name: Delete
-    href: ../../api/attachment-delete.md
-- name: Outlook category
+- name: Outlook category (deprecated)
   items:
-  - name: Outlook category
+  - name: Outlook category (deprecated)
     href: ../../resources/outlookcategory.md
-  - name: List categories
+  - name: List
     href: ../../api/outlookuser-list-mastercategories.md
-  - name: Get category
+  - name: Get
     href: ../../api/outlookcategory-get.md
-  - name: Create category
+  - name: Create
     href: ../../api/outlookuser-post-mastercategories.md
-  - name: Update category
+  - name: Update
     href: ../../api/outlookcategory-update.md
-  - name: Delete category
+  - name: Delete
     href: ../../api/outlookcategory-delete.md
 - name: Mail folder
   items:
@@ -136,6 +138,12 @@ items:
     href: ../../api/mailfolder-delta.md
   - name: Move mail folder
     href: ../../api/mailfolder-move.md
+  - name: Permanently delete
+    href: ../../api/mailfolder-permanentdelete.md
+  - name: Update all messages read state
+    href: ../../api/mailfolder-updateallmessagesreadstate.md
+  - name: List operations
+    href: ../../api/mailfolder-list-operations.md
   - name: Extended properties
     items:
     - name: Create single-value property
@@ -146,20 +154,30 @@ items:
       href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
     - name: Get multi-value property
       href: ../../api/multivaluelegacyextendedproperty-get.md
+- name: Mail folder operation
+  items:
+  - name: Mail folder operation
+    href: ../../resources/mailfolderoperation.md
+  - name: List
+    href: ../../api/mailfolder-list-operations.md
+  - name: Get
+    href: ../../api/mailfolderoperation-get.md
 - name: Mail search folder
   items:
   - name: Mail search folder
     href: ../../resources/mailsearchfolder.md
-  - name: Create mail search folder
+  - name: Create
     href: ../../api/mailsearchfolder-post.md
+  - name: Get
+    href: ../../api/mailfolder-get.md
+  - name: Update
+    href: ../../api/mailsearchfolder-update.md
+  - name: Delete
+    href: ../../api/mailfolder-delete.md
+  - name: Permanently delete
+    href: ../../api/mailsearchfolder-permanentdelete.md
   - name: List child folders
     href: ../../api/mailfolder-list-childfolders.md
-  - name: Get mail search folder
-    href: ../../api/mailfolder-get.md
-  - name: Update mail search folder
-    href: ../../api/mailsearchfolder-update.md
-  - name: Delete mail search folder
-    href: ../../api/mailfolder-delete.md
   - name: List messages in folder
     href: ../../api/mailfolder-list-messages.md
 - name: Message rule
@@ -208,3 +226,7 @@ items:
       href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
     - name: Get multi-value property
       href: ../../api/multivaluelegacyextendedproperty-get.md
+- name: Complex types
+  items:
+  - name: Update all messages read state operation
+    href: ../../resources/updateallmessagesreadstateoperation.md

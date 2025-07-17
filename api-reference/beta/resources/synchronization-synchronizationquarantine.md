@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # synchronizationQuarantine resource type
@@ -25,9 +26,12 @@ Provides information about the quarantine state of a [synchronizationJob](synchr
 |seriesCount|Int64|Number of times in this series the quarantine was re-evaluated and left in effect (a series starts when quarantine is first imposed, and is reset as soon as quarantine is lifted).|
 |error|[synchronizationError](synchronization-synchronizationerror.md)|Describes the error(s) that occurred when putting the synchronization job into quarantine.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

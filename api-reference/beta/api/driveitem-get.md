@@ -5,6 +5,7 @@ title: Get driveItem
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 06/12/2024
 ---
 # Get driveItem
 
@@ -24,8 +25,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-get-permissions.md)]
 
-> Note:
-> The `/teams` endpoint requires the use of Group.Read.All or Group.ReadWrite.All permissions.
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
+> [!NOTE]
+> The `/teams` endpoint requires the use of `Group.Read.All` or `Group.ReadWrite.All` permissions.
 
 ## HTTP request
 

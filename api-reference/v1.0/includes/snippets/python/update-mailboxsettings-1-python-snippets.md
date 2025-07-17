@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.mailbox_settings import MailboxSettings
 from msgraph.generated.models.automatic_replies_setting import AutomaticRepliesSetting
 from msgraph.generated.models.automatic_replies_status import AutomaticRepliesStatus
 from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = MailboxSettings(
 	automatic_replies_setting = AutomaticRepliesSetting(
 		status = AutomaticRepliesStatus.Scheduled,

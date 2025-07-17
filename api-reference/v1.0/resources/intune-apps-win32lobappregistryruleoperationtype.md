@@ -2,9 +2,10 @@
 title: "win32LobAppRegistryRuleOperationType enum type"
 description: "Contains all supported registry data detection type."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # win32LobAppRegistryRuleOperationType enum type

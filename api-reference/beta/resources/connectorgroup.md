@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 author: "dhruvinrshah"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # connectorGroup resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Each [Microsoft Entra application proxy](/azure/active-directory/app-proxy/what-is-application-proxy) connector is always part of a connector group. All the connectors that belong to the same connector group act as a separate unit for high-availability and load balancing. If you don't create connector groups, all your connectors will be part of the default group. When configuring an application with Application Proxy, you must also specify which connector group to assign the application to.
+Each [Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) connector is always part of a connector group. All the connectors that belong to the same connector group act as a separate unit for high-availability and load balancing. If you don't create connector groups, all your connectors will be part of the default group. When configuring an application with Application Proxy, you must also specify which connector group to assign the application to.
 
 After a connector group is created, you can add or move connectors to the connector group by using [Add connector](../api/connectorgroup-post-members.md). You can also use [Add application](../api/connectorgroup-post-applications.md) to assign an application to a connector group.
 
@@ -34,9 +35,9 @@ After a connector group is created, you can add or move connectors to the connec
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|connectorGroupType|connectorGroupType| Indicates the type of hybrid agent. This pre-set by the system. Possible values are: `applicationProxy`. Read-only. |
+|connectorGroupType|connectorGroupType| Indicates the type of hybrid agent. This pre-set by the system. Possible values are: `applicationProxy`, `syncFabric`. Read-only. |
 |id|string| Unique identifier for this connectorGroup. Read-only. |
-|isDefault|boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is pre-set by the system. Read-only. |
+|isDefault|Boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is pre-set by the system. Read-only. |
 |name|string| The name associated with the connectorGroup. |
 |region|connectorGroupRegion| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no connectors or applications** are assigned to the connectorGroup. The possible values are: `nam` (for **North America**), `eur` (for Europe), `aus` (for Australia), `asia` (for Asia), `ind` (for India), and `unknownFutureValue`.|
 
@@ -48,7 +49,7 @@ After a connector group is created, you can add or move connectors to the connec
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

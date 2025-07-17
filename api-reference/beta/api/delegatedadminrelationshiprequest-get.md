@@ -5,6 +5,7 @@ author: "koravvams"
 ms.localizationpriority: medium
 ms.subservice: partner-customer-administration
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get delegatedAdminRelationshipRequest

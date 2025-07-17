@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphcommunications.CommunicationsCallRecordItemSessionsRequestBuilderGetQueryParameters{
+requestParameters := &graphcommunications.CallRecordsItemSessionsRequestBuilderGetQueryParameters{
 	Expand: [] string {"segments"},
 }
-configuration := &graphcommunications.CommunicationsCallRecordItemSessionsRequestBuilderGetRequestConfiguration{
+configuration := &graphcommunications.CallRecordsItemSessionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

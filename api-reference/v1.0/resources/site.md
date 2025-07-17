@@ -5,6 +5,7 @@ description: The site resource provides metadata and relationships for a Sharepo
 ms.localizationpriority: high
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 09/17/2024
 ---
 
 # site resource type
@@ -20,6 +21,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get root site][]        | site | Access the root SharePoint site within a tenant.
 | [Get site][]             | site | Access a sharePoint site using the siteId.
 | [List sites across geographies][] |  collection of sites  | List sites across all geographies in an organization.
+| [List subsites for a site][] |  collection of sites  | Get a collection of subsites defined for a site.
+| [List root sites](../api/site-list.md)  | site  | List all available sites in an organization. 
 | [Get site by path][]     | site | Access the root SharePoint site with a relative path.
 | [Get site for a group][] | site | Access the team site for a group.
 | [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource.
@@ -40,6 +43,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
 [List sites across geographies]: ../api/site-getallsites.md
+[List subsites for a site]: ../api/site-list-subsites.md
 [Get site by path]: ../api/site-getbypath.md
 [Get site for a group]: ../api/site-get.md
 [Get analytics]: ../api/itemanalytics-get.md

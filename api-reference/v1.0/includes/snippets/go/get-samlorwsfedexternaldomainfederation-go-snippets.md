@@ -5,23 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
-// Code snippets are only available for the latest major version. Current major version is $v0.*
+// Code snippets are only available for the latest major version. Current major version is $v1.*
 
 // Dependencies
 import (
 	  "context"
-	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphdirectory "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphdirectory "github.com/microsoftgraph/msgraph-sdk-go/directory"
 	  //other-imports
 )
 
 
 requestFilter := "domains/any(x: x/id eq 'contoso.com')"
 
-requestParameters := &graphdirectory.DirectoryFederationConfigurationItemRequestBuilderGetQueryParameters{
+requestParameters := &graphdirectory.FederationConfigurationsItemRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphdirectory.DirectoryFederationConfigurationItemRequestBuilderGetRequestConfiguration{
+configuration := &graphdirectory.FederationConfigurationsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

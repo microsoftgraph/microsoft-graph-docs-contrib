@@ -1,10 +1,11 @@
 ---
 title: "searchQuery resource type"
-description: "searchQuery"
+description: "Represents a search query that contains search terms and optional filters."
 ms.localizationpriority: medium
 author: "njerigrevious"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 08/08/2024
 ---
 
 # searchQuery resource type
@@ -19,9 +20,14 @@ Represents a search query that contains search terms and optional filters.
 |:-------------|:------------|:------------|
 |queryString|String|The search query containing the search terms. Required.|
 |queryTemplate|String|Provides a way to decorate the query string. Supports both KQL and query variables. Optional.|
+
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -4,11 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.security.cases.ediscoverycases.item.custodians.microsoft_graph_security_remove_hold.remove_hold_post_request_body import RemoveHoldPostRequestBody
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = RemoveHoldPostRequestBody(
 	ids = [
 		"7f697316-43ed-48e1-977f-261be050db93",

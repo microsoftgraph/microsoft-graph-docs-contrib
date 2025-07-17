@@ -5,6 +5,7 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printJob resource type
@@ -36,6 +37,8 @@ Represents a print job that has been queued for a printer.
 |redirectedFrom|Edm.String|Contains the source job URL, if the job has been redirected from another printer.|
 |redirectedTo|Edm.String|Contains the destination job URL, if the job has been redirected to another printer.|
 |status|[printJobStatus](printjobstatus.md)|The status of the print job. Read-only.|
+|errorCode|Int32|The error code of the print job. Read-only.|
+|acknowledgedDateTime|DateTimeOffset|The dateTimeOffset when the job was acknowledged. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -44,7 +47,7 @@ Represents a print job that has been queued for a printer.
 |tasks|[printTask](printtask.md) collection|A list of [printTasks](printtask.md) that were triggered by this print job.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

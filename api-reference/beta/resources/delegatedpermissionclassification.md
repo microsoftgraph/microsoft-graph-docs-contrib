@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 03/06/2024
 ---
 
 # delegatedPermissionClassification resource type
@@ -25,6 +26,9 @@ Delegated permission classifications can be used in combination with user consen
 | classification | permissionClassificationType | The classification value. Possible values: `low`, `medium` (preview), `high` (preview). Doesn't support `$filter`. |
 | permissionId | Guid | The unique identifier (**id**) for the delegated permission listed in the **publishedPermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Required on create. Doesn't support `$filter`. |
 | permissionName | String | The claim value (**value**) for the delegated permission listed in the **publishedPermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Doesn't support `$filter`. |
+
+## Relationships
+None.
 
 ## JSON representation
 

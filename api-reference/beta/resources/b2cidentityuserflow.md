@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "jkdouglas"
+ms.date: 07/22/2024
 ---
 
 # b2cIdentityUserFlow resource type
@@ -67,7 +68,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

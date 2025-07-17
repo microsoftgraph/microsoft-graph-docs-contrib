@@ -2,16 +2,17 @@
 title: "setEnrollmentTimeDeviceMembershipTarget action"
 description: "Intune Deviceconfigv2 Devicemanagementconfigurationpolicy Setenrollmenttimedevicemembershiptarget Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # setEnrollmentTimeDeviceMembershipTarget action
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -51,12 +52,12 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|enrollmentTimeDeviceMembershipTargets|[enrollmentTimeDeviceMembershipTarget](../resources/intune-deviceconfigv2-enrollmenttimedevicemembershiptarget.md) collection||
+|enrollmentTimeDeviceMembershipTargets|[enrollmentTimeDeviceMembershipTarget](../resources/intune-shared-enrollmenttimedevicemembershiptarget.md) collection||
 
 
 
 ## Response
-If successful, this action returns a `200 OK` response code and a [enrollmentTimeDeviceMembershipTargetResult](../resources/intune-deviceconfigv2-enrollmenttimedevicemembershiptargetresult.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [enrollmentTimeDeviceMembershipTargetResult](../resources/intune-shared-enrollmenttimedevicemembershiptargetresult.md) in the response body.
 
 ## Example
 

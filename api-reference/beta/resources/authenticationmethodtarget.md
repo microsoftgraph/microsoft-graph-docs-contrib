@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 06/15/2024
 ---
 
 # authenticationMethodTarget resource type
@@ -20,7 +21,7 @@ The following types are derived from this resource type:
 - [microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md)
 - [smsAuthenticationMethodTarget](../resources/smsauthenticationmethodtarget.md)
 - [voiceAuthenticationMethodTarget](../resources/voiceauthenticationmethodtarget.md)
-
+- [passkeyAuthenticationMethodTarget](../resources/passkeyauthenticationmethodtarget.md)
 
 ## Properties
 |Property|Type|Description|

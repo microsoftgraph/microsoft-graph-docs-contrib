@@ -1,10 +1,11 @@
 ---
 title: "Get userProvisioningFlow"
 description: "Read the properties and relationships of a userProvisioningFlow object."
-author: "cristobal-buenrostro"
+author: "mohanrajc"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get userProvisioningFlow
@@ -57,6 +58,9 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object in the response body.
+
+> [!CAUTION]
+> The **markAllStudentsAsMinors** property of **additionalOptions** under **managementOptions** is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property.
 
 ## Examples
 
@@ -140,7 +144,8 @@ Content-Type: application/json
         ],
         "additionalOptions": {
             "markAllStudentsAsMinors": true,
-            "allowStudentContactAssociation": false
+            "allowStudentContactAssociation": false,
+            "studentAgeGroup": "minor"
         }
     },
     "creationOptions": {
@@ -172,7 +177,7 @@ Content-Type: application/json
                     "@odata.type": "#microsoft.graph.industryData.simplePasswordSettings",
                     "password": "***************"
                 },
-                "roleGroup@odata.context": "https://canary.graph.microsoft.com/testprodbetalocal_sds-ppe/$metadata#external/industryData/outboundProvisioningFlowSets('9ab41255-5364-4c53-e15c-08dc4ab6ee03')/provisioningFlows('dbd36d16-c574-4ed8-3ac7-08dc4ac6fb7f')/microsoft.graph.industryData.userProvisioningFlow/creationOptions/configurations/roleGroup/$entity",
+                "roleGroup@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/outboundProvisioningFlowSets('9ab41255-5364-4c53-e15c-08dc4ab6ee03')/provisioningFlows('dbd36d16-c574-4ed8-3ac7-08dc4ac6fb7f')/microsoft.graph.industryData.userProvisioningFlow/creationOptions/configurations/roleGroup/$entity",
                 "roleGroup": {
                     "id": "staff",
                     "displayName": "Staff",

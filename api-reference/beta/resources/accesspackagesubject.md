@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/10/2024
 ---
 
 # accessPackageSubject resource type
@@ -13,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.  It may represent a requestor from a connected organization who isn't yet in the tenant.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package. It might represent a requestor from a connected organization who isn't yet in the tenant.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update](../api/accesspackagesubject-update.md)|None | Update the properties of an **accesspackagesubject** object. |
 | [Get](../api/accesspackagesubject-get.md)|[accessPackageSubject](../resources/accesspackagesubject.md) | Get the properties of an **accesspackagesubject** object. |
+| [Update](../api/accesspackagesubject-update.md)|None | Update the properties of an **accesspackagesubject** object. |
 
 ## Properties
 
@@ -31,7 +32,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |connectedOrganizationId|String|The identifier of the connected organization of the subject.|
 |displayName|String|The display name of the subject.|
 |email|String|The email address of the subject.|
-|id|String| Read-only. Key.|
+|id|String| This property shouldn't be used as a dependency, as it could change without notice. Instead, use the **objectId** property.|
 |objectId|String|The object identifier of the subject. `null` if the subject isn't yet a user in the tenant. Alternate key.|
 |onPremisesSecurityIdentifier|String|A string representation of the principal's security identifier, if known, or `null` if the subject doesn't have a security identifier.|
 |principalName|String|The principal name, if known, of the subject.|

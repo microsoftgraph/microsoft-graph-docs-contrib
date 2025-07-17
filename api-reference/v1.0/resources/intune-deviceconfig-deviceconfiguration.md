@@ -2,9 +2,10 @@
 title: "deviceConfiguration resource type"
 description: "Device Configuration."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceConfiguration resource type

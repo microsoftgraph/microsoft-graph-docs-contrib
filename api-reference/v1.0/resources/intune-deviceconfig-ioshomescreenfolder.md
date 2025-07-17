@@ -2,9 +2,10 @@
 title: "iosHomeScreenFolder resource type"
 description: "A folder containing pages of apps and web clips on the Home Screen."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # iosHomeScreenFolder resource type

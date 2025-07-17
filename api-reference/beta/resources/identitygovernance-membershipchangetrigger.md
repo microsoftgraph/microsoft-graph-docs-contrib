@@ -1,10 +1,11 @@
 ---
 title: "membershipChangeTrigger resource type"
-description: "An abstract type representing the change in group membership that triggers the execution conditions of a workflow for a user."
+description: "Represents the change in group membership that triggers the execution conditions of a workflow for a user."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/21/2024
 ---
 
 # membershipChangeTrigger resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type representing the change in group membership that triggers the execution conditions of a workflow for a user.
+Represents the change in group membership that triggers the execution conditions of a workflow for a user.
 
 Inherits from [microsoft.graph.identityGovernance.workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md).
 

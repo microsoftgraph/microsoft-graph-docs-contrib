@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # office365GroupsActivityFileCounts resource type
@@ -20,6 +21,10 @@ Namespace: microsoft.graph
 | active            | Int64  | The number of files that were viewed, edited, shared, or synced in the group's SharePoint document library. |
 | reportDate        | Date   | The date on which a number of files were active in the group's SharePoint site. |
 | reportPeriod      | String | The number of days the report covers.    |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

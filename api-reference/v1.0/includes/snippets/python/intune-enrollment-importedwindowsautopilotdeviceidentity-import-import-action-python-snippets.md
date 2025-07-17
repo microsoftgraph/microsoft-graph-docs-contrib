@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.devicemanagement.importedwindowsautopilotdeviceidentities.import.import_post_request_body import ImportPostRequestBody
 from msgraph.generated.models.imported_windows_autopilot_device_identity import ImportedWindowsAutopilotDeviceIdentity
 from msgraph.generated.models.imported_windows_autopilot_device_identity_state import ImportedWindowsAutopilotDeviceIdentityState
 from msgraph.generated.models.imported_windows_autopilot_device_identity_import_status import ImportedWindowsAutopilotDeviceIdentityImportStatus
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ImportPostRequestBody(
 	imported_windows_autopilot_device_identities = [
 		ImportedWindowsAutopilotDeviceIdentity(

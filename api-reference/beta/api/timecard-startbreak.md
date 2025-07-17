@@ -2,6 +2,7 @@
 title: "timeCard: startBreak"
 description: "Start break in a specific timecard."
 author: "akumar39"
+ms.date: 04/05/2024
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
@@ -24,9 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timecard_startbreak" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timecard-startbreak-permissions.md)]
 
-> [!IMPORTANT]
-> When you use Schedule.ReadWrite.All application permission, you must include the `MS-APP-ACTS-AS` header in the request.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +39,7 @@ POST /teams/{teamId}/schedule/timeCards/{timeCardID}/startBreak
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required.|
-| MS-APP-ACTS-AS | The ID of the user on behalf of whom the app is acting. Required when you use the application permission scope. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. The `MS-APP-ACTS-AS` header is deprecated and no longer required with application tokens.|
 
 ## Request body
 
@@ -49,8 +47,9 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|atApprovedLocation| `Edm.boolean ` | Indicate if this action happens at an approved location.|
-|notes| [itemBody](../resources/itembody.md)  |Notes during start of break.|
+|isAtApprovedLocation|Boolean|Indicates whether this action happens at an approved location.|
+|notes|[itemBody](../resources/itembody.md)|Notes for the start of the break.|
+|atApprovedLocation (deprecated)|Boolean|Indicates whether this action happens at an approved location. This property will be removed by November 27, 2027. Use `isAtApprovedLocation` instead. `atApprovedLocation` and `isAtApprovedLocation` always have the same value, so setting one automatically sets the value for the other. If both are included in the request with different values, the value for `isAtApprovedLocation` takes precedence.|
 
 ## Response
 
@@ -74,10 +73,10 @@ POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32
 Content-type: application/json
 
 {
-    "atAprovedLocation": true,
+    "isAtApprovedLocation": true,
     "notes": {
         "contentType": "text",
-        "content": "start break smaple notes"
+        "content": "starting break"
     }
 }
 ```
