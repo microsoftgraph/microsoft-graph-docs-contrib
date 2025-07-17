@@ -27,11 +27,14 @@ Inherits from [entity](../resources/entity.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create assignment resource](../api/educationassignment-post-resource.md) |[educationAssignmentResource](educationassignmentresource.md)| Create a new **educationAssignmentResource** by posting to the resources collection.|
-|[Get assignment](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Read properties and relationships of an **educationAssignment** object.|
+|[Create](../api/educationclass-post-assignments.md) | [educationAssignment](educationassignment.md) |Create a new [assignment](educationassignment.md).|
+|[Get](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Read properties and relationships of an **educationAssignment** object.|
 |[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md)	|Update an **educationAssignment** object. |
 |[Delete](../api/educationassignment-delete.md) | None |Delete an **educationAssignment** object. |
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Change the state of an **educationAssignment** object from draft to published.|
+|[Create assignment resource](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)|Create an [assignment resource](educationassignmentresource.md). |
+|[Get assignment resource](../api/educationassignmentresource-get.md) |[educationAssignmentResource](educationassignmentresource.md)|Get the properties of an [education assignment resource](educationassignmentresource.md) associated with an [assignment](educationassignment.md).|
+|[Delete assignment resource](../api/educationassignmentresource-delete.md) |None|Delete a specific [education assignment resource](educationassignmentresource.md) attached to an [assignment](educationassignment.md).|
 |[Set up assignment resources folder](../api/educationassignment-setupresourcesfolder.md)| string| Create a SharePoint folder (under predefined location) to upload files as assignment resources.|
 |[Set up assignment feedback resources folder](../api/educationassignment-setupfeedbackresourcesfolder.md)|[educationAssignment](../resources/educationassignment.md)|Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md).|
 |[List resources](../api/educationassignment-list-resources.md) |[educationAssignmentResource](educationassignmentresource.md) collection| Get an **educationAssignmentResource** object collection.|

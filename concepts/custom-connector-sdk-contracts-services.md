@@ -1,15 +1,15 @@
 ---
-title: "Microsoft Graph connectors SDK contract services"
+title: "Microsoft 365 Copilot connectors SDK contract services"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: Learn about the Microsoft Graph connectors SDK contract services.
+description: Learn about the Copilot connectors SDK contract services.
 ms.date: 11/07/2024
 ---
 
-# Microsoft Graph connectors SDK services
+# Copilot connectors SDK services
 
 This article describes the services that are part of the contract protocol buffer files. Implement these services as part of the connector.
 
@@ -20,4 +20,4 @@ This article describes the services that are part of the contract protocol buffe
 |[ConnectorCrawl](/graph/custom-connector-sdk-contracts-connectorcrawler) |Includes APIs that are called during a crawl. |
 |[ConnectorOAuth](/graph/custom-connector-sdk-contracts-connectoroauth) |Service for OAuth flows such as refreshing access tokens during crawls. |
 
-You can download the contract protocol buffer files from the Microsoft Graph connectors SDK [contracts](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/Contracts) page on GitHub.
+You can download the contract protocol buffer files from the Copilot connectors SDK [contracts](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/Contracts) page on GitHub.

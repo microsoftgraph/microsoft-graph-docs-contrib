@@ -1,15 +1,15 @@
 ---
-title: "Use the Microsoft Search API to search custom types imported using connectors"
-description: "Use the Microsoft Search API in Microsoft Graph to search across external content ingested and indexed by Microsoft Graph connectors."
+title: "Use the Microsoft Search API to search custom types imported using cMicrosoft 365 Copilot connectors"
+description: "Use the Microsoft Search API in Microsoft Graph to search across external content ingested and indexed by Copilot connectors."
 author: "njerigrevious"
 ms.localizationpriority: medium
 ms.subservice: "search"
 ms.date: 11/07/2024
 ---
 
-# Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors
+# Use the Microsoft Search API to search custom types imported using Copilot connectors
 
-Use the Microsoft Search API in Microsoft Graph to search across external content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview). The content is imported either via [built-in connectors](https://www.microsoft.com/microsoft-search/connectors) provided by Microsoft, or via custom connectors implemented by using the [Microsoft Graph connectors ingestion API](/graph/api/resources/connectors-api-overview).
+Use the Microsoft Search API in Microsoft Graph to search across external content ingested and indexed by [Microsoft 365 Copilot connectors](/microsoftsearch/connectors-overview) (formerly Microsoft Graph connectors). The content is imported either via [built-in connectors](https://www.microsoft.com/microsoft-search/connectors) provided by Microsoft, or via custom connectors implemented by using the [Copilot connectors ingestion API](/graph/api/resources/connectors-api-overview).
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 

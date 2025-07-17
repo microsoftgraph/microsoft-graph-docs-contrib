@@ -41,7 +41,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
-### For PIM for groups
+### For PIM for Groups
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -198,7 +198,7 @@ Content-Type: application/json
 + [Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
 + [Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules](/graph/how-to-pim-update-rules)
 
-### Example 2: Update a rule defined for a policy in PIM for groups
+### Example 2: Update a rule defined for a policy in PIM for Groups
 
 #### Request
 

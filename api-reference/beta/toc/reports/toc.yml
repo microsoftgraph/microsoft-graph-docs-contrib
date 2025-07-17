@@ -320,6 +320,20 @@ items:
         href: ../../api/directoryaudit-list.md
       - name: Get
         href: ../../api/directoryaudit-get.md
+    - name: Provisioning object summary
+      items:
+      - name: Provisioning object summary
+        href: ../../resources/provisioningobjectsummary.md
+      - name: List
+        href: ../../api/provisioningobjectsummary-list.md
+    - name: Self-service sign-up
+      items:
+      - name: Self-service sign-up
+        href: ../../resources/selfservicesignup.md
+      - name: List
+        href: ../../api/auditlogroot-list-signups.md
+      - name: Get
+        href: ../../api/selfservicesignup-get.md
     - name: Sign in
       items:
       - name: Sign in
@@ -332,12 +346,8 @@ items:
         href: ../../api/signin-confirmcompromised.md
       - name: Confirm safe
         href: ../../api/signin-confirmsafe.md
-    - name: Provisioning object summary
-      items:
-      - name: Provisioning object summary
-        href: ../../resources/provisioningobjectsummary.md
-      - name: List
-        href: ../../api/provisioningobjectsummary-list.md
+      - name: Dismiss
+        href: ../../api/signin-dismiss.md
 - name: Microsoft 365 monitoring reports (preview)
   items:
   - name: Overview

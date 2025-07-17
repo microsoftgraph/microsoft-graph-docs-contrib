@@ -50,7 +50,7 @@ items:
     href: ../../api/educationclass-list-teachers.md
   - name: Remove teacher
     href: ../../api/educationclass-delete-teachers.md
-  - name: Create
+  - name: Create assignment
     href: ../../api/educationclass-post-assignments.md
   - name: List assignments
     href: ../../api/educationclass-list-assignments.md
@@ -92,9 +92,9 @@ items:
   items:
   - name: Assignment
     href: ../../resources/educationassignment.md
-  - name: Create assignment resource
-    href: ../../api/educationassignment-post-resources.md
-  - name: Get assignment
+  - name: Create
+    href: ../../api/educationclass-post-assignments.md
+  - name: Get
     href: ../../api/educationassignment-get.md
   - name: Update
     href: ../../api/educationassignment-update.md
@@ -102,6 +102,12 @@ items:
     href: ../../api/educationassignment-delete.md
   - name: Publish
     href: ../../api/educationassignment-publish.md
+  - name: Create assignment resource
+    href: ../../api/educationassignment-post-resources.md
+  - name: Get assignment resource
+    href: ../../api/educationassignmentresource-get.md
+  - name: Delete assignment resource
+    href: ../../api/educationassignmentresource-delete.md
   - name: Set up assignment resources folder
     href: ../../api/educationassignment-setupresourcesfolder.md
   - name: Set up assignment feedback resources folder
@@ -312,24 +318,46 @@ items:
   items:
   - name: Reading assignment submission
     href: ../../resources/readingassignmentsubmission.md
-  - name: Get
-    href: ../../api/readingassignmentsubmission-get.md
+  - name: List
+    href: ../../api/reportsroot-list-readingassignmentsubmissions.md
+- name: Reading coach passage
+  items:
+  - name: Reading coach passage
+    href: ../../resources/readingcoachpassage.md
+  - name: List
+    href: ../../api/reportsroot-list-readingcoachpassages.md
 - name: Reflect check-in response
   items:
   - name: Reflect check-in response
     href: ../../resources/reflectcheckinresponse.md
-  - name: Get
-    href: ../../api/reflectcheckinresponse-get.md
+  - name: List
+    href: ../../api/reportsroot-list-reflectcheckinresponses.md
 - name: Related contact
   items:
   - name: Related contact
     href: ../../resources/relatedcontact.md
   - name: Update
     href: ../../api/relatedcontact-update.md
+- name: Speaker assignment submission
+  items:
+  - name: Speaker assignment submission
+    href: ../../resources/speakerassignmentsubmission.md
+  - name: List
+    href: ../../api/reportsroot-list-speakerassignmentsubmissions.md
 - name: Complex types
   items:
   - name: Challenging word
     href: ../../resources/challengingword.md
+  - name: Education AI feedback audience engagement settings
+    href: ../../resources/educationaifeedbackaudienceengagementsettings.md
+  - name: Education AI feedback content settings
+    href: ../../resources/educationaifeedbackcontentsettings.md
+  - name: Education AI feedback criteria
+    href: ../../resources/educationaifeedbackcriteria.md
+  - name: Education AI feedback delivery settings
+    href: ../../resources/educationaifeedbackdeliverysettings.md
+  - name: Education AI feedback settings
+    href: ../../resources/educationaifeedbacksettings.md
   - name: Education assignment class recipient
     href: ../../resources/educationassignmentclassrecipient.md
   - name: Education assignment grade
@@ -366,6 +394,16 @@ items:
     href: ../../resources/educationpowerpointresource.md
   - name: Education resource
     href: ../../resources/educationresource.md
+  - name: Education speaker coach audience engagement settings
+    href: ../../resources/educationspeakercoachaudienceengagementsettings.md
+  - name: Education speaker coach content settings
+    href: ../../resources/educationspeakercoachcontentsettings.md
+  - name: Education speaker coach delivery settings
+    href: ../../resources/educationspeakercoachdeliverysettings.md
+  - name: Education speaker coach settings
+    href: ../../resources/educationspeakercoachsettings.md
+  - name: Education speaker progress resource
+    href: ../../resources/educationspeakerprogressresource.md
   - name: Education submission individual recipient
     href: ../../resources/educationsubmissionindividualrecipient.md
   - name: Education submission recipient

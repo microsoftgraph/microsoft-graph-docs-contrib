@@ -3,6 +3,24 @@
     {
       "ChangeList":[
         {
+          "Id": "5f408e9d-15ae-45a2-89c1-427f83598967",
+          "ApiChange": "Property",
+          "ChangedApiName": "videoOnDemandWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **videoOnDemandWebUrl** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "5f408e9d-15ae-45a2-89c1-427f83598967",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-05-01T04:07:42.7434446Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList":[
+        {
           "Id": "aec55ab7-4c55-40ed-a6d5-8fabde7f71b5",
           "ApiChange": "Property",
           "ChangedApiName": "videoOnDemandWebUrl",
@@ -36,6 +54,40 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"  
     },
+    {
+      "ChangeList": [
+        {
+          "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalRegistrationInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalRegistrationInformation** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-1.0) resource.",
+          "Target": "attendanceRecord"
+        },
+        {
+          "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationId** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-1.0) resource.",
+          "Target": "attendanceRecord"
+        },
+        {
+          "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalEventInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalEventInformation** property to the [meetingAttendanceReport](https://learn.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-1.0) resource.",
+          "Target": "meetingAttendanceReport"
+        }
+      ],
+      "Id": "35103523-bc12-4f61-b0bf-e3ac06459a3a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-04-07T14:47:19.0842305Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },   
     {
       "ChangeList": [
         {

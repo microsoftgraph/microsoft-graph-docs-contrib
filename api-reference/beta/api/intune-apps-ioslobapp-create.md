@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -93,7 +93,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1500
+Content-length: 1520
 
 {
   "@odata.type": "#microsoft.graph.iosLobApp",
@@ -140,7 +140,8 @@ Content-length: 1500
     "v14_0": true,
     "v15_0": true,
     "v16_0": true,
-    "v17_0": true
+    "v17_0": true,
+    "v18_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
@@ -153,7 +154,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1672
+Content-Length: 1692
 
 {
   "@odata.type": "#microsoft.graph.iosLobApp",
@@ -203,7 +204,8 @@ Content-Length: 1672
     "v14_0": true,
     "v15_0": true,
     "v16_0": true,
-    "v17_0": true
+    "v17_0": true,
+    "v18_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",

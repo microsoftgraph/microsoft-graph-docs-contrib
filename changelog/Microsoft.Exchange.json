@@ -1513,6 +1513,50 @@
       "CreatedDateTime": "2025-02-11T04:13:38.5525311Z",
       "WorkloadArea": "Mail",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ff44ac84-ed7f-4024-b84e-c5b08346ad94",
+          "ApiChange": "Property",
+          "ChangedApiName": "cancelledOccurrences",
+          "ChangeType": "Addition",
+          "Description": "Added the **cancelledOccurrences** property to the [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) resource.",
+          "Target": "event"
+        },
+        {
+          "Id": "ff44ac84-ed7f-4024-b84e-c5b08346ad94",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "exceptionOccurrences",
+          "ChangeType": "Addition",
+          "Description": "Added the **exceptionOccurrences** relationship to the [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) resource.",
+          "Target": "event"
+        }
+      ],
+      "Id": "ff44ac84-ed7f-4024-b84e-c5b08346ad94",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-05-14T16:01:47.1972971Z",
+      "WorkloadArea": "Calendars",
+      "SubArea": ""
+    },
+        {
+      "ChangeList": [
+        {
+          "Id": "14f9d61e-4c75-48b5-afa9-1e1b363dfa58",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/calendar-delta?view=graph-rest-beta) method to the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) resource.",
+          "Target": "calendar"
+        }
+      ],
+      "Id": "14f9d61e-4c75-48b5-afa9-1e1b363dfa58",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-19T05:33:14.8749152Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
     }
   ]
 }

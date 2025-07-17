@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object to request the addition of a resource to an access package catalog, update of a resource, or the removal of a resource from a catalog.  A resource must be included in an access package catalog before a [role of that resource](../resources/accesspackageresourcerole.md) can be added to an access package.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -45,7 +45,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 >       - If using delegated permissions, the user requesting to add an application should be an owner of the application or in a directory role that allows them to modify application role assignments.
 >       - If using application permissions, the application requesting to add the [servicePrincipal](../resources/serviceprincipal.md) should also be assigned the *Application.ReadWrite.All* permission.
 >   - To add a SharePoint Online site as a resource to a catalog:
->       - If using delegated permissions, the user who wants to add the site should be in a role that allows them to modify the SharePoint site roles, such as the *SharePoint Administrator* role.
+>       - If using delegated permissions, the user must be assigned the *SharePoint Administrator* role or be an administrator of the SharePoint site.
 >       - If using application permissions, the application should also be assigned the `Sites.FullControl.All` permission.
 
 ## HTTP request

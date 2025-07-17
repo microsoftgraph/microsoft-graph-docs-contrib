@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -59,7 +59,8 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |size|Int64|The total size, including all uploaded files. This property is read-only. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |installCommandLine|String|Indicates the command line to install this app. Used to install the Win32 app. Example: `msiexec /i "Orca.Msi" /qn`.|
 |uninstallCommandLine|String|Indicates the command line to uninstall this app. Used to uninstall the app. Example: `msiexec /x "{85F4CBCB-9BBC-4B50-A7D8-E1106771498D}" /qn`.|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Indicates the Windows architecture(s) for which this app can run on. Value `arm64` is not supported via this property. Higher order of precedence is given to `allowedArchitectures` property as compared to `applicableArchitectures` to indicate usage of arm64 win32 LOB apps model/process. When both property values (applicableArchitectures and allowedArchitectures) are provided only `allowedArchitectures` value is used and `applicableArchitectures` will be set to `none`. Default value is `none`. Possible values are: `none`, `x86`, `x64`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Indicates the Windows architecture(s) this app should be installed on. The app will be treated as not applicable for devices with architectures not matching the selected value. When a non-null value is provided for the `allowedArchitectures` property, the value of the `applicableArchitectures` property is set to `none`. Default value is `none`. Possible values are: `none`, `x86`, `x64`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|allowedArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Indicates the Windows architecture(s) this app should be installed on. The app will be treated as not applicable for devices with architectures not matching the selected value. When a non-null value is provided for the `allowedArchitectures` property, the value of the `applicableArchitectures` property is set to `none`. Possible values are: `null`, `x86`, `x64`, `arm64`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Indicates the value for the minimum applicable operating system.|
 |minimumFreeDiskSpaceInMB|Int32|Indicates the value for the minimum free disk space which is required to install this app. Allowed range from `0` to `driver's maximum available free space`.|
 |minimumMemoryInMB|Int32|Indicates the value for the minimum physical memory which is required to install this app. Allowed range from `0` to `total physical memory from WMI helper`.|
@@ -75,7 +76,6 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |minimumSupportedWindowsRelease|String|Indicates the value for the minimum supported windows release. Example: `Windows11_23H2`.|
 |displayVersion|String|Indicates the version displayed in the UX for this app. Used to set the version of the app. Example: `1.0.3.215`.|
 |allowAvailableUninstall|Boolean|Indicates whether the uninstall is supported from the company portal for the Win32 app with an available assignment. When TRUE, indicates that uninstall is supported from the company portal for the Windows app (Win32) with an available assignment. When FALSE, indicates that uninstall is not supported for the Windows app (Win32) with an Available assignment. Default value is FALSE.|
-|allowedArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Indicates the Windows architecture(s) this app can run on. Value `arm64` is supported only via this property. Default value is null. Null value skips the applicability rule. Higher order of precedence is given to `allowedArchitectures` property as compared to `applicableArchitectures` to indicate usage of arm64 win32 LOB apps model/process. When both property values (applicableArchitectures and allowedArchitectures) are provided only `allowedArchitectures` value is used and `applicableArchitectures` will be set to `none`. Possible values are: `none`, `x86`, `x64`, `arm64`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -128,6 +128,7 @@ Here is a JSON representation of the resource.
   "installCommandLine": "String",
   "uninstallCommandLine": "String",
   "applicableArchitectures": "String",
+  "allowedArchitectures": "String",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
     "v8_0": true,
@@ -208,7 +209,6 @@ Here is a JSON representation of the resource.
   "setupFilePath": "String",
   "minimumSupportedWindowsRelease": "String",
   "displayVersion": "String",
-  "allowAvailableUninstall": true,
-  "allowedArchitectures": "String"
+  "allowAvailableUninstall": true
 }
 ```

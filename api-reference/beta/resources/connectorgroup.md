@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Each [Microsoft Entra application proxy](/azure/active-directory/app-proxy/what-is-application-proxy) connector is always part of a connector group. All the connectors that belong to the same connector group act as a separate unit for high-availability and load balancing. If you don't create connector groups, all your connectors will be part of the default group. When configuring an application with Application Proxy, you must also specify which connector group to assign the application to.
+Each [Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) connector is always part of a connector group. All the connectors that belong to the same connector group act as a separate unit for high-availability and load balancing. If you don't create connector groups, all your connectors will be part of the default group. When configuring an application with Application Proxy, you must also specify which connector group to assign the application to.
 
 After a connector group is created, you can add or move connectors to the connector group by using [Add connector](../api/connectorgroup-post-members.md). You can also use [Add application](../api/connectorgroup-post-applications.md) to assign an application to a connector group.
 

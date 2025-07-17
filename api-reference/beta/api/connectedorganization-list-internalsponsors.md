@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of a [connectedOrganization](../resources/connectedorganization.md)'s internal sponsors.  The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

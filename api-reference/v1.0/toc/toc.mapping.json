@@ -120,6 +120,7 @@
         "protectionRuleBase",
         "protectionUnitBase",
         "restoreArtifactBase",
+        "restoreArtifactsBulkRequestBase",
         "restorePoint",
         "restoreSessionBase",
         "serviceApp"
@@ -150,12 +151,28 @@
           ]
         },
         {
+          "name": "Protection units bulk job",
+          "resources": [
+            "driveProtectionUnitsBulkAdditionJob",
+            "mailboxProtectionUnitsBulkAdditionJob",
+            "siteProtectionUnitsBulkAdditionJob"
+          ]
+        },
+        {
           "name": "Restore artifact",
           "resources": [
             "granularMailBoxRestoreArtifact",
             "driveRestoreArtifact",
             "mailboxRestoreArtifact",
             "siteRestoreArtifact"
+          ]
+        },
+        {
+          "name": "Restore artifacts bulk request",
+          "resources": [
+            "driveRestoreArtifactsBulkAdditionRequest",
+            "mailboxRestoreArtifactsBulkAdditionRequest",
+            "siteRestoreArtifactsBulkAdditionRequest"
           ]
         },
         {
@@ -501,9 +518,12 @@
         "educationRubric",
         "educationRubricOutcome",
         "educationSubmission",
-        "educationSubmissionResource"
+        "educationSubmissionResource",
+        "readingAssignmentSubmission",
+        "reflectCheckInResponse"
       ],
       "complexTypes": [
+        "challengingWord",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -1140,6 +1160,13 @@
               ]
             },
             {
+              "name": "Public key infrastructure",
+              "resources": [
+                "certificateBasedAuthPki",
+                "certificateAuthorityDetail"
+               ]
+            },
+            {
               "name": "User flows in external tenants",
               "resources": [
                 "authenticationEventsFlow",
@@ -1392,6 +1419,7 @@
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",
             "microsoft.graph.partners.billing.operation",
+            "microsoft.graph.partners.billing.unbilledReconciliation",
             "microsoft.graph.partners.billing.unbilledUsage"
           ]
     },
@@ -1492,6 +1520,56 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Data security and compliance",
+          "resources": [
+            "contentActivity",
+            "microsoft.graph.security.sensitivityLabel",
+            "tenantDataSecurityAndGovernance",
+            "userDataSecurityAndGovernance"
+           ],
+            "complexTypes": [
+              "activityMetadata",
+              "aiInteractionPlugin",
+              "autoLabeling",
+              "binaryContent",
+              "classifcationErrorBase",
+              "classificationError",
+              "classificationInnerError",
+              "computeRightsAndInheritanceResult",
+              "contentBase",
+              "customMetadataDictionary",
+              "deviceMetadata",
+              "dlpActionInfo",
+              "groupScope",
+              "integratedApplicationMetadata",
+              "labelContentRight",
+              "operatingSystemSpecifications",
+              "policyBinding",
+              "policyLocation",
+              "policyLocationApplication",
+              "policyLocationDomain",
+              "policyLocationUrl",
+              "policyScopeBase",
+              "policyTenantScope",
+              "policyUserScope",
+              "processContentBatchRequest",
+              "processContentRequest",
+              "processContentResponse",
+              "processContentResponses",
+              "processConversationMetadata",
+              "processFileMetadata",
+              "processingError",
+              "protectedApplicationMetadata",
+              "protectedContent",
+              "restrictAccessAction",
+              "restrictAccessActionBase",
+              "scopeBase",
+              "tenantScope",
+              "textContent",
+              "userScope" 
+            ]
         },
         {
           "name": "eDiscovery",
@@ -1762,6 +1840,22 @@
       ],
       "childNodes": [
         {
+          "name": "AI interactions",
+          "resources": [
+            "aiInteractionHistory"
+          ],
+          "complexTypes": [
+            "aiInteraction",
+            "aiInteractionAttachment",
+            "aiInteractionContext",
+            "aiInteractionLink",
+            "aiInteractionMention",
+            "aiInteractionMentionedIdentitySet",
+            "aiUser",
+            "copilotRoot"
+          ]
+        },
+        {
           "name": "Apps",
           "resources": [
             "teamsApp",
@@ -1801,6 +1895,17 @@
               ],
               "complexTypes": [
                 "microsoft.graph.callRecords.networkInfo"
+              ]
+            },
+            {
+              "name": "Copilot settings",
+              "resources": [
+                "copilotAdminLimitedMode"
+              ],
+              "complexTypes": [
+                "copilotAdmin",
+                "copilotAdminSetting",
+                "copilotRoot"
               ]
             },
             {

@@ -2,7 +2,7 @@
 title: "Remove claimsMappingPolicy"
 description: "Remove a claimsMappingPolicy from a servicePrincipal."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "vimrang"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 07/26/2024

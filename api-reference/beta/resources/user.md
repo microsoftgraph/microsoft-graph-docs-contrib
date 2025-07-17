@@ -7,6 +7,7 @@ ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: resourcePageType
 ms.date: 01/10/2025
+ms.custom: sfi-ga-blocked
 ---
 
 # user resource type
@@ -45,7 +46,7 @@ This resource supports:
 | [Revoke sign-in sessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This operation forces the user to sign in to those applications again. This method replaces **invalidateAllRefreshTokens**. |
 | [Export personal data](../api/user-exportpersonaldata.md) | None | Submits a data policy operation request made by a company administrator to export an organizational user's data. |
 | **AI interaction**|||
-| [Get all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) |[aiInteraction](../resources/aiinteraction.md) collection|Get all Microsoft 365 Copilot interactions data, including both user prompts to Copilot and Copilot responses. |
+| [Get all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) |[aiInteraction](../resources/aiinteraction.md) collection|Get all Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. |
 | **App role assignments**|||
 | [List](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles that a user has been assigned. |
 | [Add](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to a user. |
@@ -74,6 +75,10 @@ This resource supports:
 | **Cloud PC**|||
 |[List cloud PCs](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 |[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
+| **Data security and governance** | | |
+|[Compute protection scopes](../api/userprotectionscopecontainer-compute.md)|[policyUserScope](../resources/policyuserscope.md) collection|Compute the protection scopes for the signed-in user. |
+|[Create content activity](../api/activitiescontainer-post-contentactivities.md)|[contentActivity](../resources/contentactivity.md)|Create a content activity for the signed-in user. |
+|[Process content](../api/userdatasecurityandgovernance-processcontent.md)|[processContentResponse](../resources/processcontentresponse.md)|Process content against data protection policies in the context of the signed-in user. |
 | **Delegated permission grants** | | |
 | [List delegated permission grants](../api/user-list-oauth2permissiongrants.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection | Retrieve a list of delegated permissions granted to enable a client application to access an API on behalf of the user. |
 | **Directory objects**|||
@@ -227,7 +232,7 @@ This resource supports:
 | infoCatalogs | String collection | Identifies the info segments assigned to the user.  Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | interests | String collection | A list for users to describe their interests. <br><br>Returned only on `$select`. |
 | isLicenseReconciliationNeeded | Boolean | Indicates whether the user is pending an exchange mailbox license assignment. <br><br> Read-only. <br><br> Supports `$filter` (`eq` where `true` only).  |
-| isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit. Default value is `false`. Read-only. <br/><br/> To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.|
+| isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit. If not set, the default value is `null` and the default behavior is false. Read-only. <br/><br/> To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.|
 | isResourceAccount | Boolean | Do not use – reserved for future use. |
 | jobTitle | String | The user's job title. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | lastPasswordChangeDateTime | DateTimeOffset | When this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br>Returned only on `$select`.  |
@@ -354,6 +359,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |contactFolders|[contactFolder](contactfolder.md) collection|The user's contacts folders. Read-only. Nullable.|
 |contacts|[contact](contact.md) collection|The user's contacts. Read-only. Nullable.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that the user created. Read-only. Nullable.|
+|dataSecurityAndGovernance|[userDataSecurityAndGovernance](../resources/userDatasecurityandgovernance.md)| The data security and governance settings for the user. Read-only. Nullable.|
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts with their manager property set to this user.) Read-only. Nullable. Supports `$expand`. |
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
 |drives|[drive](drive.md) collection| A collection of drives available for this user. Read-only. |
@@ -436,7 +442,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "aboutMe": "String",
-  "accountEnabled": true,
+  "accountEnabled": "Boolean",
   "ageGroup": "String",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
@@ -475,8 +481,9 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
   "interests": ["String"],
-  "isLicenseReconciliationNeeded": false,
-  "isResourceAccount": false,
+  "isLicenseReconciliationNeeded": "Boolean",
+  "isManagementRestricted": "Boolean",
+  "isResourceAccount": "Boolean",
   "jobTitle": "String",
   "legalAgeGroupClassification": "String",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],

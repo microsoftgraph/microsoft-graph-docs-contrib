@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -96,7 +96,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1734
+Content-length: 1754
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -141,7 +141,8 @@ Content-length: 1734
     "v11_0": true,
     "v12_0": true,
     "v13_0": true,
-    "v14_0": true
+    "v14_0": true,
+    "v15_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
@@ -167,7 +168,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1906
+Content-Length: 1926
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -215,7 +216,8 @@ Content-Length: 1906
     "v11_0": true,
     "v12_0": true,
     "v13_0": true,
-    "v14_0": true
+    "v14_0": true,
+    "v15_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",

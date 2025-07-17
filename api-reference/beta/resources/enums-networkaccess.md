@@ -446,6 +446,14 @@ Namespace: microsoft.graph.networkaccess
 |israelCentral|
 |unknownFutureValue|
 
+### securityRuleStatus values 
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|reportOnly|
+|unknownFutureValue|
 
 ### status values 
 
@@ -453,6 +461,23 @@ Namespace: microsoft.graph.networkaccess
 |:---|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+### threatIntelligenceAction values 
+
+|Member|
+|:---|
+|allow|
+|block|
+|unknownFutureValue|
+
+### threatIntelligenceSeverity values 
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
 |unknownFutureValue|
 
 ### trafficForwardingType values 
@@ -526,6 +551,35 @@ Namespace: microsoft.graph.networkaccess
 |forwardingRule|
 |filteringRule|
 |unknownFutureValue|
+
+### tlsCertificateStatus values 
+
+|Member|
+|:---|
+|csrGenerated|
+|enrolling|
+|active|
+|unknownFutureValue|
+
+### tlsInspectionAction values 
+
+|Member|
+|:---|
+|bypass|
+|inspect|
+|unknownFutureValue|
+
+### securityRuleStatus values 
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|reportOnly|
+|unknownFutureValue|
+
+
+
 
 <!--
 {

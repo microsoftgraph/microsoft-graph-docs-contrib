@@ -74,6 +74,10 @@ The rest of this article provides an overview of the service-specific throttling
 
 [!INCLUDE [Identity and access data policy operation documentation](../includes/throttling-datapolicy-operation.md)]
 
+## Identity and access device operation service limits
+
+[!INCLUDE [Identity and access device operation throttling documentation](../includes/throttling-device-operation.md)]
+
 ## Identity protection and conditional access service limits
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
@@ -209,6 +213,10 @@ Outlook service limits apply to the public cloud and [national cloud deployments
 ## Viva Engage service limits
 
 [!INCLUDE [Viva Engage throttling documentation](../includes/throttling-viva-engage.md)]
+
+## Windows 365 service limits
+
+[!INCLUDE [Windows 365 throttling documentation](../includes/throttling-windows-365.md)]
 
 ## Related content
 

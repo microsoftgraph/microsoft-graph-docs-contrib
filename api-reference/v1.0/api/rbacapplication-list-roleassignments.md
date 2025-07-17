@@ -7,6 +7,7 @@ ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ms.date: 07/26/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # List unifiedRoleAssignments
