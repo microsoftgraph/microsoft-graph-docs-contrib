@@ -66,49 +66,46 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.alert",
-  "id": "6fb54016-77df-4d32-9946-7603af8433e1",
-  "alertType": "malware",
-  "creationDateTime": "2024-04-01T12:00:00Z",
-  "description": "Malware detected on remote network.",
+  "id": "String",
+  "alertType": "String",
+  "creationDateTime": "String (timestamp)",
+  "description": "String",
   "actions": [
     {
       "@odata.type": "microsoft.graph.networkaccess.alertAction",
-      "actionType": "block",
-      "timestamp": "2024-04-01T12:00:00Z",
-      "status": "completed"
+      "actionType": "String",
+      "timestamp": "String (timestamp)",
+      "status": "String"
     }
   ],
   "relatedResources": [
     {
       "@odata.type": "microsoft.graph.networkaccess.relatedRemoteNetwork",
-      "id": "remote-network-123",
-      "name": "RemoteNetwork1",
-      "ipAddress": "192.168.1.1"
+      "id": "String",
+      "name": "String",
+      "ipAddress": "String (IP address)"
     }
   ],
-  "vendorName": "Contoso Security",
-  "detectionTechnology": "signature-based",
-  "severity": "high",
-  "displayName": "Malware Alert",
-  "productName": "Contoso Defender",
-  "componentName": "Network Scanner",
+  "vendorName": "String",
+  "detectionTechnology": "String",
+  "severity": "String",
+  "displayName": "String",
+  "productName": "String",
+  "componentName": "String",
   "categories": [
-    "threat"
+    "String"
   ],
   "techniques": [
-    "malwareDelivery"
+    "String"
   ],
   "subTechniques": [
-    "emailAttachment"
+    "String"
   ],
-  "firstActivityDateTime": "2024-04-01T12:05:00Z",
-  "lastActivityDateTime": "2024-04-01T13:00:00Z",
-  "isPreview": false,
+  "firstActivityDateTime": "String (timestamp)",
+  "lastActivityDateTime": "String (timestamp)",
+  "isPreview": "Boolean",
   "extendedProperties": {
     "@odata.type": "microsoft.graph.networkaccess.extendedProperties",
-    "property1": "value1",
-    "property2": 42,
-    "property3": true
+    "propertyKey": "String"
   }
 }
-```
