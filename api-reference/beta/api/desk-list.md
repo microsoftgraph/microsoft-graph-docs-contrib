@@ -34,11 +34,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /places/{placeType}
+GET /places/microsoft.graph.desk
 ```
-> **Note:**
-> `{placeType}` can be any supported place type such as `microsoft.graph.desk`.
-> 
+ 
 ## Optional query parameters
 
 This method supports `$select`, `$top`, and `$skip` query parameters to help customize the response. Use `$top` to customize the page size. The default page size is 1000. For general information, see [OData query parameters](/graph/query-parameters).
@@ -88,7 +86,6 @@ Content-Type: application/json
 {
   "value": [
     {
-    "@odata.type": "#microsoft.graph.desk",
     "id": "fa1e9144-b4ba-4e53-9186-2ef453f4017f",
     "placeId": "fa1e9144-b4ba-4e53-9186-2ef453f4017f",
     "displayName": "Desk 1",
