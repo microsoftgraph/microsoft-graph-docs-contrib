@@ -1,16 +1,16 @@
 ---
-title: "Create assignment with a Speaker progress resource"
-description: "Learn how to use Microsoft Graph to create assignment with Speaker Progress resource."
+title: "Create an assignment with a Speaker Progress resource"
+description: "Learn how to use Microsoft Graph to create an assignment with a Speaker Progress resource."
 ms.localizationpriority: medium
-author: "Megha Shri G"
+author: "GatadiMegha"
 ms.subservice: "education"
 doc_type: conceptualPageType
-ms.date: 16/07/2025
+ms.date: 07/16/2025
 ---
 
-# Add Speaker Progress resource in an assignment
+# Create an assignment with a Speaker Progress resource
 
-This article describes how to create assignment with Speaker Progress resource.
+This article describes how to create an assignment with [Speaker Progress resource](/graph/api/resources/educationspeakerprogressresource).
 
 ## Create the new assignment
 
@@ -18,7 +18,13 @@ An assignment represents a task or unit of work assigned to a student or team me
 
 ## Add the speaker progress resource
 
-An education Teams app resource allows education service users to create and share assignments with speaker progress resource. You can use the [Create educationAssignmentResource](/graph/api/educationassignment-post-resources?view=graph-rest-beta&tabs=http#example-8-create-an-educationspeakerprogressresource) API to create and load the app resource into an assignment. This operation requires you to provide an [SpeakerProgressResource](/graph/api/resources/educationspeakerprogressresource?view=graph-rest-beta) in the request body.
+ You can use the [Create educationAssignmentResource](/graph/api/educationassignment-post-resources?view=graph-rest-beta&tabs=http#example-8-create-an-educationspeakerprogressresource) API to create and attach the Speaker Progress resource to an assignment. This operation requires you to provide a [educationSpeakerProgressResource](/graph/api/resources/educationspeakerprogressresource?view=graph-rest-beta) in the request body.
+
+## Get the Speaker Progress resource
+
+ Retrieve the created Speaker Progress resource by calling the [Get educationAssignmentResource](/graph/api/educationassignmentresource-get) API using the resource ID obtained in the previous step.
+
+ To view all resources associated with a specific assignment, you can use the [list assignment resources](/graph/api/educationassignment-list-resources) API.
 
 ## Permissions
 
