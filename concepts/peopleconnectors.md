@@ -68,6 +68,12 @@ Only tenant admins can delete people's data that originates from a source owned 
 
 For more on DSRs, see Microsoft’s guidance on [GDPR and CCPA compliance](https://myaccount.microsoft.com/settingsandprivacy/privacy).  
 
+### Property specific considerations
+
+- User editable properties - All properties ingested via the people connectors are read-only. We recommend to disable user editing of any properties that is also ingested via people connectors, to avoid scenarios where user edits are not shown on the profile card due to the [precedence model](https://learn.microsoft.com/graph/profilepriority-configure-profilepropertysetting). To configure editing of properties use the [SharePoint User Profile Admin center](https://learn.microsoft.com/sharepoint/manage-user-profiles) to disable user editing.
+- Skills - Skills is a supported property to ingest via people connectors, as read-only skills, and will be merged with the user editable skills, unless specifically editing of skills is disabled. If the tenant has opted-in to the People Skills service then only skills originating from [People Skills](https://learn.microsoft.com/copilot/microsoft-365/people-skills-overview) will be shown on the profile card. In such scenario when People Skills is enabled, the skills originating from people connectors will only be available in people search and Microsoft 365 Copilot chat.
+
+
 ## Authentication and authorization
 
 Microsoft is committed to ensuring the highest standards of security by only supporting the most secure authentication protocols, such as OpenID Connect (OIDC) and OAuth 2.0. These protocols are integral to our security strategy, providing robust and reliable authentication mechanisms that safeguard user identities and data. To set up people connectors, OAuth 2.0 authentication is required. 
