@@ -26,7 +26,7 @@ Represents common properties for a user account.
 | domainName        | String | The name of the Active Directory domain of which the user is a member. |
 | userPrincipalName | String | The user principal name of the account in Microsoft Entra ID.                    |
 | userSid           | String | The local security identifier of the user account.                     |
-| resourceAccessInfo | [microsoft.graph.security.resourceAccessEvent](./security-resourceaccessevent.md) Collection | Information on resource access attempts made by the user account. |
+| resourceAccessEvents | [microsoft.graph.security.resourceAccessEvent](./security-resourceaccessevent.md) Collection | Information on resource access attempts made by the user account. |
 
 ## Relationships
 
