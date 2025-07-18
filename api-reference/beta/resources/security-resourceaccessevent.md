@@ -23,7 +23,7 @@ Represents a resource access attempt made by a user account.
 | accountId      | String | The account id of the user account.                                |
 | resourceIdentifier     | String | The protocol and host name pairs describing the connection.    |
 | ipAddress       | String | Ip address of the resource.   |
-| accessTime        | DateTime | The time of the access event. |
+| accessDateTime        | DateTime | The time of the access event. |
 
 ## Relationships
 
@@ -43,6 +43,6 @@ The following JSON representation shows the resource type.
   "accountId": "String",
   "resourceIdentifier": "String",
   "ipAddress": "String",
-  "accessTime": "String (timestamp)",
+  "accessDateTime": "String (timestamp)",
 }
 ```
