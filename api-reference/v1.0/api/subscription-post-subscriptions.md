@@ -25,9 +25,6 @@ Some resources support rich notifications, that is, notifications that include r
 To create a subscription, your app must have read permissions for the resource. For example, to get change notifications for messages, your app needs the `Mail.Read` permission.
  
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing the permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
-
-| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
-
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
 |[callRecording](../resources/callrecording.md) <br /> `communications/onlineMeetings/getAllRecordings` <br /> All recordings in an organization. | Not supported.  | Not supported.  | OnlineMeetingRecording.Read.All |
@@ -39,13 +36,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[channel](../resources/channel.md) (/teams/getAllChannels – all channels in an organization) | Not supported  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All |
 |[channel](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) (/chats – all chats in an organization) | Not supported | Not supported | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
-
-(For details, see [get change notifications for messages in Teams channels and chats using Microsoft Graph] ((/graph/teams-changenotifications-chatmessage.md).))
-
-| Feature | Description |
-|---------|-------------|
-| **Teams message change notifications support** | Now available in Microsoft Graph v1.0 for delegated scenarios. | **Filtering options** | Filter by messages containing specific text or messages that **@mention** a user. || **Learn more** | [Get change notifications for messages in Teams channels and chats using Microsoft Graph] ( https://learn.microsoft.com/en-us/graph/teams-changenotifications-chatmessage)
-
+For details, see [get change notifications for messages in Teams channels and chats using Microsoft Graph] (/graph/teams-changenotifications-chatmessage).
 |[chat](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Not supported | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chat](../resources/chat.md) <br />/appCatalogs/teamsApps/{id}/installedToChats <br />All chats in an organization where a particular Teams app is installed. | Not supported | Not supported | Chat.ReadBasic.WhereInstalled, Chat.Read.WhereInstalled, Chat.ReadWrite.WhereInstalled |
 |[chat](../resources/chat.md) <br />`/users/{id}/chats` <br /> All chats that a particular user is part of. | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Not supported. | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
