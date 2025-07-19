@@ -1,5 +1,5 @@
 ---
-title: "Create an assignment with a Speaker Progress resource"
+title: "Create an assignment with a Speaker Progress resource (preview)"
 description: "Learn how to use Microsoft Graph to create an assignment with a Speaker Progress resource."
 ms.localizationpriority: medium
 author: "GatadiMegha"
@@ -8,7 +8,7 @@ doc_type: conceptualPageType
 ms.date: 07/16/2025
 ---
 
-# Create an assignment with a Speaker Progress resource
+# Create an assignment with a Speaker Progress resource (preview)
 
 This article describes how to create an assignment with a [Speaker Progress resource](/graph/api/resources/educationspeakerprogressresource?view=graph-rest-beta&preserve-view=true).
 
