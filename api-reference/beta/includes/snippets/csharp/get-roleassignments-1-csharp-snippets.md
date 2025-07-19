@@ -1,6 +1,5 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
-ms.custom: sfi-ga-nochange
 ---
 
 ```csharp

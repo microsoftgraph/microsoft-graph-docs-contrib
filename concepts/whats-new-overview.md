@@ -23,11 +23,33 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/resources/cloudpc) to upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
+### Education
+
+[Get](/graph/api/reportsroot-list-readingassignmentsubmissions?view=graph-rest-1.0&preserve-view=true) a list of reading assignments that were submitted by a student.
+[Get](/graph/api/reportsroot-list-reflectcheckinresponses?view=graph-rest-1.0&preserve-view=true) a list of Reflect check-ins that were submitted by a student.
+
 ### Files
 
 Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession) extends the expiration time.
 
+### Reports | Partner billing reports
+
+[Export](/graph/api/partners-billing-unbilledreconciliation-export) unbilled invoice reconciliation data.
+
+### Teamwork and communications | Messaging
+
+[Send a message with a Loop component](/graph/api/chatmessage-post).
+
 ## July 2025: New in preview only
+
+### Device and app management | Cloud PC
+
+- Enabled `retention` as a supported snapshot type for a [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true).
+- Use the **sizeInGB** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) to get the size of the image in GB.
+
+### Education
+
+[Get](/graph/api/reportsroot-list-readingcoachpassages?view=graph-rest-beta&preserve-view=true) a list of Reading Coach passages that were practiced by a student.
 
 ### Files
 
@@ -37,7 +59,16 @@ Each fragment uploaded during an [upload session](/graph/api/resources/uploadses
 
 Retired the previously deprecated Microsoft Entra lifecycle announcements APIs that stopped returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
 
+### Industry data ETL
+
+Deprecated the **markAllStudentsAsMinors** property on [additionalUserOptions](/graph/api/resources/industrydata-additionaluseroptions?view=graph-rest-beta&preserve-view=true) in favor of the **studentAgeGroup** property.
+
 ## June 2025: New and generally available
+
+### Teamwork and communications | Calls and online meetings
+
+- [Get](/graph/api/copilotadminlimitedmode-get) or [set](/graph/api/copilotadminlimitedmode-update) whether users of Microsoft 365 Copilot in Teams meetings can receive responses to sentiment-related prompts.
+- [Get a webinar registration by ID and include sessions](/graph/api/virtualeventregistration-get#example-2-get-a-webinar-registration-by-ID-and-include-sessions)
 
 ### Device and app management | Cloud PC
 
@@ -55,7 +86,9 @@ New rate limits apply to Cloud PC APIs. The [List Cloud PCs](/graph/api/virtuale
 
 ### Teamwork and communications | Calls and online meetings
 
-Use the **videoOnDemandWebUrl** on [virtualEventSession](/graph/api/resources/virtualeventsession) to get the [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
+- Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it's over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight?view=graph-rest-beta&preserve-view=true).
+- [Get a webinar registration by ID and include sessions](/graph/api/virtualeventregistration-get?view=graph-rest-beta&preserve-view=true#example-2-get-a-webinar-registration-by-ID-and-include-sessions)
+- Use the **videoOnDemandWebUrl** on [virtualEventSession](/graph/api/resources/virtualeventsession) to get the [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
 ### Teamwork and communications | Messaging
 
@@ -76,7 +109,7 @@ Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resourc
 
 Enabled [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta&preserve-view=true) as a supported value for the **contentFilter** property of the [contentApprovalRule](/graph/api/resources/windowsupdates-contentapprovalrule?view=graph-rest-beta&preserve-view=true) resource. Use the [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta&preserve-view=true) to determine which remediation update content matches the rule continuously.
 
-## Education
+### Education
 
 [Get](/graph/api/reportsroot-list-speakerassignmentsubmissions?view=graph-rest-beta&preserve-view=true) a list of speaker assignments that were submitted by a student.
 

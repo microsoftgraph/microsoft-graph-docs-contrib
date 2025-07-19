@@ -22,7 +22,7 @@ Add a key credential to an [application](../resources/application.md). This meth
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed. 
 
-Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action. You can use the [Update application](../api/application-update.md) operation to perform an update instead.
+Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action. You can use the [Update application](../api/application-update.md) operation to perform an update instead.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -34,6 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!NOTE] 
 > An application does not need any specific permission to roll its own keys.
+
+[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ## HTTP request
 
@@ -56,7 +58,7 @@ POST /applications(appId='{appId}')/addKey
 
 In the request body, provide the following required properties.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | keyCredential | [keyCredential](../resources/keycredential.md) | The new application key credential to add. The __type__, __usage__ and __key__ are required properties for this usage. Supported key types are:<br><ul><li>`AsymmetricX509Cert`: The usage must be `Verify`.</li><li>`X509CertAndPassword`: The usage must be `Sign`</li></ul>|
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Only __secretText__ is required to be set which should contain the password for the key. This property is required only for keys of type `X509CertAndPassword`. Set it to `null` otherwise.|

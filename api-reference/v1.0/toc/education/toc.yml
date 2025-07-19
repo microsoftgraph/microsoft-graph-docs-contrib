@@ -272,8 +272,22 @@ items:
     href: ../../api/educationsubmissionresource-get.md
   - name: Delete submission resource
     href: ../../api/educationsubmissionresource-delete.md
+- name: Reading assignment submission
+  items:
+  - name: Reading assignment submission
+    href: ../../resources/readingassignmentsubmission.md
+  - name: List
+    href: ../../api/reportsroot-list-readingassignmentsubmissions.md
+- name: Reflect check-in response
+  items:
+  - name: Reflect check-in response
+    href: ../../resources/reflectcheckinresponse.md
+  - name: List
+    href: ../../api/reportsroot-list-reflectcheckinresponses.md
 - name: Complex types
   items:
+  - name: Challenging word
+    href: ../../resources/challengingword.md
   - name: Education assignment class recipient
     href: ../../resources/educationassignmentclassrecipient.md
   - name: Education assignment grade

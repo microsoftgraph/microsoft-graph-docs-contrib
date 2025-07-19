@@ -13,6 +13,82 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### responseFeedbackType values
+
+| Member |
+| -------------------- |
+| none |
+| notDetected |
+| veryUnpleasant |
+| unpleasant |
+| neutral |
+| pleasant |
+| veryPleasant |
+| unknownFutureValue |
+
+### responseEmotionType values
+
+| Member |
+| -------------------- |
+| none |
+| confident |
+| excited |
+| happy |
+| motivated |
+| peaceful |
+| ambitious |
+| cheerful |
+| comfortable |
+| creative |
+| determined |
+| energized |
+| focused |
+| fulfilled |
+| grateful |
+| included |
+| inspired |
+| optimistic |
+| proud |
+| successful |
+| valuable |
+| annoyed |
+| bored |
+| calm |
+| confused |
+| glad |
+| content |
+| pensive |
+| reserved |
+| restless |
+| shocked |
+| tired |
+| angry |
+| depressed |
+| exhausted |
+| lonely |
+| nervous |
+| anxious |
+| apathetic |
+| concerned |
+| disappointed |
+| frightened |
+| frustrated |
+| hopeless |
+| hurt |
+| jealous |
+| miserable |
+| overwhelmed |
+| skeptical |
+| stressed |
+| stuck |
+| worthless |
+| awed |
+| ashamed |
+| curious |
+| sensitive |
+| sad |
+| unknownFutureValue |
+
 ### virtualEventRegistrationPredefinedQuestionLabel values
 
 |Member|

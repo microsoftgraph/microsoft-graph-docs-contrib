@@ -1,7 +1,7 @@
 ---
 title: "Get userProvisioningFlow"
 description: "Read the properties and relationships of a userProvisioningFlow object."
-author: "cristobal-buenrostro"
+author: "mohanrajc"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
@@ -58,6 +58,9 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object in the response body.
+
+> [!CAUTION]
+> The **markAllStudentsAsMinors** property of **additionalOptions** under **managementOptions** is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property.
 
 ## Examples
 
@@ -141,7 +144,8 @@ Content-Type: application/json
         ],
         "additionalOptions": {
             "markAllStudentsAsMinors": true,
-            "allowStudentContactAssociation": false
+            "allowStudentContactAssociation": false,
+            "studentAgeGroup": "minor"
         }
     },
     "creationOptions": {

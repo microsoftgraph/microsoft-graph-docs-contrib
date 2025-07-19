@@ -37,7 +37,7 @@ requestBody.SetMail(&mail)
 passwordProfile := graphmodels.NewPasswordProfile()
 password := "passwordValue"
 passwordProfile.SetPassword(&password) 
-forceChangePasswordNextSignIn := false
+forceChangePasswordNextSignIn := true
 passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn) 
 requestBody.SetPasswordProfile(passwordProfile)
 passwordPolicies := "DisablePasswordExpiration"
