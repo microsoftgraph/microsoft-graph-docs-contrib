@@ -500,7 +500,7 @@ items:
         href: embed-teams-app-in-assignment.md
       - name: Work with grading categories
         href: work-with-grading-categories.md
-      - name: Create an assignment with a Speaker Progress resource
+      - name: Create a Speaker Progress resource assignment
         href: create-assignment-with-speaker-progress-resource.md
   - name: External data connections
     items:
