@@ -70,8 +70,8 @@ For more on DSRs, see Microsoft’s guidance on [GDPR and CCPA compliance](https
 
 ### Property-specific considerations
 
-- User editable properties - All properties ingested via the people connectors are read-only. We recommend disabling user editing of any properties that are also ingested via people connectors to avoid scenarios where user edits aren't displayed on the profile card due to the [precedence model](/graph/profilepriority-configure-profilepropertysetting). To configure editing of properties, use the SharePoint admin center to [disable user editing in user profiles](/sharepoint/manage-user-profiles).
-- Skills - Skills is a supported property for ingestion via people connectors as read-only skills and merges with user-editable skills, unless editing of skills is disabled. If the tenant opts in to the People Skills service, only skills that originate from [People Skills](/copilot/microsoft-365/people-skills-overview) are shown on the profile card. In this scenario, when People Skills is enabled, skills from people connectors are only available in people search and Microsoft 365 Copilot Chat.
+- User editable properties - All properties ingested via the people connectors are read-only. We recommend that you disable user editing of any properties that are also ingested via people connectors to avoid scenarios where user edits aren't displayed on the profile card due to the [precedence model](/graph/profilepriority-configure-profilepropertysetting). To configure editing of properties, use the SharePoint admin center to [disable user editing in user profiles](/sharepoint/manage-user-profiles).
+- Skills - Skills is a supported property for ingestion via people connectors as read-only skills and merges with user-editable skills, unless editing of skills is disabled. If the tenant opts in to the People Skills service, only skills that originate from [People Skills](/copilot/microsoft-365/people-skills-overview) are displayed on the profile card. In this scenario, when People Skills is enabled, skills from people connectors are only available in people search and Microsoft 365 Copilot Chat.
 
 ## Authentication and authorization
 
