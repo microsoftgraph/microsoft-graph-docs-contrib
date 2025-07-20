@@ -1,6 +1,6 @@
 ---
 title: "Get change notifications for membership changes in teams using Microsoft Graph"
-description: "Learn how to get change notifications for any changes (create, update, and delete) in teams and channels membership using Microsoft Graph."
+description: "Learn how to get change notifications for any changes (create, update, and delete) in teams membership using Microsoft Graph."
 author: "anandab"
 ms.localizationpriority: high
 ms.subservice: "teams"
@@ -15,7 +15,7 @@ Change notifications enable you to subscribe to membership changes (create, upda
 Continue with this article about scenarios for the [conversationMember](/graph/api/resources/conversationmember) resource in the **team** context. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
 > [!NOTE]
-> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
+> If you request a subscription **expirationDateTime** that is more than one hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request fails with the following error message: `lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour`.
 
 ## Subscribe to changes in membership of a particular team
 
@@ -81,7 +81,7 @@ Content-Type: application/json
 
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks like the following. This payload is for adding a member in a team.
+For notifications with resource data, the payload looks like the following. This payload is used to add a member to a team.
 
 ```json
 {
@@ -110,7 +110,7 @@ For notifications with resource data, the payload looks like the following. This
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [aaduserconversationmember](/graph/api/resources/aaduserconversationmember?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
@@ -150,6 +150,7 @@ The **resource** and **@odata.id** properties can be used to make calls to Micro
 
 ## Related content
 - [Microsoft Graph change notifications](change-notifications-overview.md)
+- [Get change notifications for membership changes in channels using Microsoft Graph](teams-changenotifications-channelmembership.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
 - [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
 - [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
