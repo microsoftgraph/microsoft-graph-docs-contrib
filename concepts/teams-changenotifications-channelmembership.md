@@ -15,9 +15,9 @@ Change notifications enable you to subscribe to membership changes (create, upda
 Continue with this article about scenarios for the [conversationMember](/graph/api/resources/conversationmember) resource in **channel** context. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
 > [!NOTE]
-> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
+> If you request a subscription **expirationDateTime** that is more than one hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request fails with the following error message: `lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour`.
 
-## Subscribe to membership changes in all channels across the tenant (Preview)
+## Subscribe to membership changes in all channels across the tenant (preview)
 
 To get change notifications for membership changes in all channels across the tenant, subscribe to `/teams/getAllChannels/getAllMembers`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. Currently, only private channels are supported. This subscription is only available in the beta endpoint.
 
@@ -62,7 +62,9 @@ To get change notifications for membership changes in all the private and shared
 |Application | ChannelMember.Read.All, ChannelMember.ReadWrite.All   |
 
 
-### Example 1: Subscribe to changes to receive direct membership notification for private and shared channel.
+### Example 1: Subscribe to changes to receive direct membership notifications for private and shared channels
+
+The following request shows how to subscribe to changes to receive direct membership notifications for private and shared channels.
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -82,7 +84,7 @@ Content-Type: application/json
 
 ### Notifications with resource data
 
-This is a payload where member is added to a shared or private channel. 
+For notifications with resource data, the payload looks like the following. This payload for adding a member to a shared or private channel.
 
 ```json
 {
@@ -113,7 +115,7 @@ The payload for channel membership events in which the **resource** property ref
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [aaduserconversationmember](/graph/api/resources/aaduserconversationmember?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
@@ -151,8 +153,9 @@ For notifications without resource data, the payload looks like the following. T
 ```
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the channel member. 
 
-### Example 2: Subscribe to changes to receive indirect membership notification for shared channel using query parameters (Preview).
-Subscribing with these query parameters enables notifications for both direct and indirect membership updates.
+### Example 2: Subscribe to changes to receive indirect membership notifications for shared channels using query parameters (preview)
+
+The following query parameters in a subscription request enable notifications for both direct and indirect membership updates.
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -172,7 +175,7 @@ Content-Type: application/json
 
 ### Notifications with resource data
 
-This is a payload where member is added to a team where channel is shared with. 
+For notifications with resource data, the payload looks like the following. This payload is for adding a member to a team with which a channel is shared.
 
 ```json
 {
@@ -203,7 +206,7 @@ The payload for the channel indirect membership that the **resource** property p
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [aaduserconversationmember](/graph/api/resources/aaduserconversationmember?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
@@ -218,14 +221,15 @@ The decrypted notification payload looks like the following. The payload conform
   "tenantId": "10eda0c8-cb50-4390-8751-488c29218b02"
 }
 ```
-**@microsoft.graph.originalSourceMembershipUrl** shows the the original source of this member that is been added and can be used to make calls to Microsoft Graph to get the payload of the member in a team. The property in the example shows that a member is added in a team where channel is shared. 
 
->**Note:** 
-> 1. Indirect membership notifications are only available when subscribing to the owning team of the shared channel.
-> 1. When subscribing to changes to receive both direct and indirect notifications for shared channel, please choose to receive notification with resource. Therefore, `@microsoft.graph.originalSourceMembershipUrl` can be used to identify direct or indirect membership changes clearly.
-> 2. When as a subscriber, you receive a notification that a member has been removed, use the [channel: doesUserHaveAccess](../api-reference/v1.0/api/channel-doesuserhaveaccess.md) API to verify that the user's access has actually been revoked.
+The **@microsoft.graph.originalSourceMembershipUrl** annotation shows the original source of the added member and can be used to make calls to Microsoft Graph to get the payload of the member in a team. The property in the example shows that a member is added to a team with which a channel is shared.
 
-## Subscribe to changes when a specific channel is shared with or unshared from a team (Preview)
+> **Note:** 
+> 1. Indirect membership notifications are only available when you subscribe to the team that owns the shared channel.
+> 1. When you subscribe to changes to receive both direct and indirect notifications for shared channels, we recommend that you choose to receive notifications with the resource. This approach allows you to use the **@microsoft.graph.originalSourceMembershipUrl** annotation to identify direct or indirect membership changes.
+> 1. When as a subscriber, you receive a notification that a member was removed, use the [channel: doesUserHaveAccess](/graph/api/channel-doesuserhaveaccess) API to verify that the user's access was actually revoked.
+
+## Subscribe to changes when a specific channel is shared with or unshared from a team (preview)
 
 Subscribers can receive change notifications when a specific channel is shared with or unshared from a team. 
 
@@ -254,9 +258,10 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks like the following. This payload is for shared a channel with team.
+For notifications with resource data, the payload looks like the following. This payload is for sharing a channel with a team.
 
 ```json
 {
@@ -289,10 +294,10 @@ The decrypted notification payload looks like the following. The payload conform
 
 ```json
 {
-    "isHostTeam": false,
-    "id": "04460120-3ca5-40cf-bc72-e890777256a3",
-    "tenantId": "10eda0c8-cb50-4390-8751-488c29218b02",
-    "displayName": "My Sample Team for first"
+  "isHostTeam": false,
+  "id": "04460120-3ca5-40cf-bc72-e890777256a3",
+  "tenantId": "10eda0c8-cb50-4390-8751-488c29218b02",
+  "displayName": "My Sample Team for first"
 }
 ```
 
@@ -310,16 +315,16 @@ For notifications without resource data, the payload looks like the following. T
   "subscriptionExpirationDateTime": "2025-07-14T22:33:21.5040567+00:00",
   "resource": "teams('cd28795b-988a-48ec-b652-781178957d8b')/channels('19:lRZHL5VwvZs0XN2orTn7DlinJDETkgSVTHXbDLUEKf01@thread.tacv2')/sharedWithTeams('04460120-3ca5-40cf-bc72-e890777256a3')",
   "resourceData": {
-      "id": "04460120-3ca5-40cf-bc72-e890777256a3",
-      "@odata.type": "#Microsoft.Graph.sharedWithChannelTeamInfo",
-      "@odata.id": "teams('cd28795b-988a-48ec-b652-781178957d8b')/channels('19:lRZHL5VwvZs0XN2orTn7DlinJDETkgSVTHXbDLUEKf01@thread.tacv2')/sharedWithTeams('04460120-3ca5-40cf-bc72-e890777256a3')"
-  },
+    "id": "04460120-3ca5-40cf-bc72-e890777256a3",
+    "@odata.type": "#Microsoft.Graph.sharedWithChannelTeamInfo",
+    "@odata.id": "teams('cd28795b-988a-48ec-b652-781178957d8b')/channels('19:lRZHL5VwvZs0XN2orTn7DlinJDETkgSVTHXbDLUEKf01@thread.tacv2')/sharedWithTeams('04460120-3ca5-40cf-bc72-e890777256a3')"
+  }
 }
 ```
+
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the shared and unshared with team info. 
 
-After receiving a notification event indicating that a shared channel has been shared with or unshared from a team, call the [get all members](../api-reference/v1.0/api/channel-list-allmembers.md) API to refresh the shared channel membership.
-
+After you receive a notification event that indicates a shared channel was shared with or unshared from a team, call the [List allMembers](/graph/api/channel-list-allmembers) API to refresh the shared channel membership.
 
 ## Related content
 - [Microsoft Graph change notifications](change-notifications-overview.md)
@@ -328,3 +333,4 @@ After receiving a notification event indicating that a shared channel has been s
 - [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
 - [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)
+- [Get change notifications for membership changes in teams using Microsoft Graph](teams-changenotifications-teammembership.md)
