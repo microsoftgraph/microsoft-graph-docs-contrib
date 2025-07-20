@@ -23,6 +23,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession) extends the expiration time.
 
+### Security | eDiscovery
+
+Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, **additionalDataOptions**, and **statisticsOptions** as supported properties and parameters across various resources and actions of the eDiscovery API.
+
 ## July 2025: New in preview only
 
 ### Device and app management | Cloud PC
@@ -59,7 +63,6 @@ New rate limits apply to Cloud PC APIs. The [List Cloud PCs](/graph/api/virtuale
 
 ### Security | eDiscovery
 
-- Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, **additionalDataOptions**, and **statisticsOptions** as supported properties and parameters across various resources and actions of the eDiscovery API.
 - Use the **description** property on [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset) to get or set the eDiscovery review set description.
 - [Update](/graph/api/security-ediscoveryreviewset-update) the **displayName** and **description** of an [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset).
 
