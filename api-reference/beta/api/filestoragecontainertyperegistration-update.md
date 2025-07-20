@@ -17,22 +17,23 @@ Namespace: microsoft.graph
 Update the properties of a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object.
 
 > [!NOTE]
-> 1. [The settings in the fileStorageContainerType](../resources/fileStorageContainerTypeSettings.md) control which [settings](../resources/fileStorageContainerTypeRegistrationSettings.md) can be updated. 
-> 2. The updated settings change the behavior of new fileStorageContainers, but existing containers might require their [settings](../resources/fileStorageContainer.md) to be updated directly. Some can't be updated at all. For example, changing storage capability.
+> * [The settings in the fileStorageContainerType](../resources/filestoragecontainertypesettings.md) control which [settings](../resources/filestoragecontainertyperegistrationsettings.md) can be updated.
+> * The updated settings change the behavior of new **fileStorageContainer** objects, but existing containers might require their [settings](../resources/filestoragecontainer.md) to be updated directly. Some settings can't be updated at all. For example, changing storage capability.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-When delegated tokens are used, SharePoint Embedded admin or Global admin role is required.
-If FileStorageContainerTypeReg.Selected is used, changes are limited to [registrations](../resources/filestoragecontainertyperegistration.md) owned by the application 
-making the call.
 <!-- {
   "blockType": "permissions",
   "name": "filestoragecontainertyperegistration-update-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainertyperegistration-update-permissions.md)]
+
+>**Note:**
+> * When delegated tokens are used, either the SharePoint Embedded admin role or the Global admin role is required.
+> * If the `FileStorageContainerTypeReg.Selected` permission is used, changes are limited to [registrations](../resources/filestoragecontainertyperegistration.md) owned by the application that makes the call.
 
 ## HTTP request
 
@@ -55,14 +56,11 @@ PATCH /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeR
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|fileStorageContainerTypeRegistration settings. The subset that can be updated depends on the overridable settings in the [fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md). Optional.|
-|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/fileStorageContainerTypeAppPermissionGrant.md) collection|define the access privileges of applications on containers of a specific fileStorageContainerType. Optional.|
-|etag|String|Used for optimistic concurrency control. Must match the value returned from a Create or Get request. Required.|
-
-
+|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/fileStorageContainerTypeAppPermissionGrant.md) collection|The access privileges of applications on containers of a specific **fileStorageContainerType**. Optional.|
+|etag|String|Used for optimistic concurrency control. The value must match the one returned from a Create or Get request. Required.|
+|settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|The settings of the **fileStorageContainerTypeRegistration**. The subset that can be updated depends on the overridable settings in the [fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md). Optional.|
 
 ## Response
 
@@ -72,8 +70,7 @@ If successful, this method returns a `200 OK` response code and an updated [file
 
 ### Request
 
-Update a fileStorageContainerTypeRegistration where the owning fileStorageContainerType marked isSearchEnabled as an overridable setting.
-Note sharingCapability can always be overridden.
+The following example shows how to update a **fileStorageContainerTypeRegistration** where the owning **fileStorageContainerType** marked **isSearchEnabled** as an overridable setting. The **sharingCapability** property can always be overridden.
 
 <!-- {
   "blockType": "request",
@@ -100,9 +97,8 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
-
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -145,9 +141,7 @@ Content-Type: application/json
 ```
 
 ### Request
-
-Update a fileStorageContainerTypeRegistration without ETag.
-
+The following example shows how to update a **fileStorageContainerTypeRegistration** without an **etag**.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertyperegistration_no_etag"
@@ -171,9 +165,8 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -184,9 +177,7 @@ HTTP/1.1 400 Bad Request
 ```
 
 ### Request
-
-Update a fileStorageContainerTypeRegistration setting that isn't overridable in the fileStorageContainerType.
-In this particular case, urlTemplate isn't overridable.
+The following example shows how to update a **fileStorageContainerTypeRegistration** setting that isn't overridable in the **fileStorageContainerType**. In this example, the **urlTemplate** property isn't overridable.
 
 <!-- {
   "blockType": "request",
@@ -213,7 +204,7 @@ Content-Type: application/json
 
 
 ### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
