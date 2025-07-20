@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [app permission grants](../resources/filestoragecontainertypeapppermissiongrant.md) in a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md)
+List all [app permission grants](../resources/filestoragecontainertypeapppermissiongrant.md) in a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md).
 
 ## Permissions
 
