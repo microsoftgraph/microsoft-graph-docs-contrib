@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const contentActivities = {
+const contentActivity = {
     contentToProcess: {
        contentEntries: [
           {
@@ -50,6 +50,6 @@ const contentActivities = {
 };
 
 await client.api('/me/dataSecurityAndGovernance/activities/contentActivities')
-	.post(contentActivities);
+	.post(contentActivity);
 
 ```

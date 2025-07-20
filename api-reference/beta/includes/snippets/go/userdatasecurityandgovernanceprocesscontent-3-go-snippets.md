@@ -62,15 +62,12 @@ contentToProcess.SetActivityMetadata(activityMetadata)
 deviceMetadata := graphmodels.NewDeviceMetadata()
 deviceType := "unmanaged"
 deviceMetadata.SetDeviceType(&deviceType) 
-additionalData := map[string]interface{}{
-operatingSystemSpecifications := graph.New()
+operatingSystemSpecifications := graphmodels.NewOperatingSystemSpecifications()
 operatingSystemPlatform := "Windows"
 operatingSystemSpecifications.SetOperatingSystemPlatform(&operatingSystemPlatform) 
 operatingSystemVersion := "11.1"
 operatingSystemSpecifications.SetOperatingSystemVersion(&operatingSystemVersion) 
-	deviceMetadata.SetOperatingSystemSpecifications(operatingSystemSpecifications)
-}
-deviceMetadata.SetAdditionalData(additionalData)
+deviceMetadata.SetOperatingSystemSpecifications(operatingSystemSpecifications)
 contentToProcess.SetDeviceMetadata(deviceMetadata)
 integratedAppMetadata := graphmodels.NewIntegratedApplicationMetadata()
 name := "Network Proxy App"
