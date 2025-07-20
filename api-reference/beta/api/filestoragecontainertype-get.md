@@ -1,6 +1,6 @@
 ---
 title: "Get fileStorageContainerType"
-description: "Read the properties and relationships of a fileStorageContainerType object."
+description: "Get a fileStorageContainerType using its ID."
 author: "javieralvarezchiang"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [fileStorageContainerType](../resources/filestoragecontainertype.md) using the ID.
+Get a [fileStorageContainerType](../resources/filestoragecontainertype.md) using its ID.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
 
 ## Optional query parameters
 
-This method supports $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,10 +57,8 @@ If successful, this method returns a `200 OK` response code and a [fileStorageCo
 
 ## Examples
 
-Get a fileStorageContainerType using the containerTypeId
-
 ### Request
-
+The following example shows how to get a **fileStorageContainerType** using the **containerTypeId**.
 <!-- {
   "blockType": "request",
   "name": "get_filestoragecontainertype"
@@ -70,9 +68,8 @@ Get a fileStorageContainerType using the containerTypeId
 GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
 ```
 
-
 ### Response
-
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -102,7 +99,7 @@ Content-Type: application/json
     "itemMajorVersionLimit": 50,
     "maxStoragePerContainerInBytes": 104857600,
     "isSharingRestricted": false,
-    "consumingTenantOverridables": "",
+    "consumingTenantOverridables": ""
   }
 }
 ```
