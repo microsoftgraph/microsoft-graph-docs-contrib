@@ -1,6 +1,6 @@
 ---
 title: "Delete fileStorageContainerType"
-description: "Delete a fileStorageContainerType object."
+description: "Delete a fileStorageContainerType object from the tenant."
 author: "javieralvarezchiang"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,22 +14,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [fileStorageContainerType](../resources/filestoragecontainertype.md) object from the tenant. It can only be deleted if there are no fileStorageContainerTypeRegistrations associated
-with it in any tenant.
+Delete a [fileStorageContainerType](../resources/filestoragecontainertype.md) object from the tenant. A **fileStorageContainerType** can only be deleted if no [registrations](../resources/filestoragecontainertyperegistration.md) are associated with it in any tenant.
 
->**Note**: At this time, only Trial fileStorageContainerTypes can be deleted.
+>**Note**: Currently, only trial **fileStorageContainerType** objects can be deleted.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-SharePoint Embedded admin or Global admin role is required.
 <!-- {
   "blockType": "permissions",
   "name": "filestorage-delete-containertypes-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestorage-delete-containertypes-permissions.md)]
+
+>**Note:**
+> Either the SharePoint Embedded admin role or the Global admin role is required to call this API.
 
 ## HTTP request
 
@@ -59,7 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-Delete a fileStorageContainerType
+The following example shows how to delete a **fileStorageContainerType**.
 
 <!-- {
   "blockType": "request",
@@ -70,9 +71,8 @@ Delete a fileStorageContainerType
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
 ```
 
-
 ### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
