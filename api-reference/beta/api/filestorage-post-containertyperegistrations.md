@@ -1,6 +1,6 @@
 ---
 title: "Create fileStorageContainerTypeRegistration"
-description: "Create a new fileStorageContainerTypeRegistration object."
+description: "Create or replace a fileStorageContainerTypeRegistration object."
 author: "javieralvarezchiang"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,25 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Register a [fileStorageContainerType](../resources/filestoragecontainertype.md) in the tenant. This action creates or replaces a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object. 
+Create or replace a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object. This method registers a [fileStorageContainerType](../resources/filestoragecontainertype.md) in the tenant. 
 
-For standard containers, [billing](https://learn.microsoft.com/sharepoint/dev/embedded/administration/billing/billing) must be valid for the registration to complete successfully.
-
-> [!IMPORTANT]
-> An application can only register a [fileStorageContainerType](../resources/filestoragecontainertype.md) that it owns, either using app-only or delegated tokens.
+For standard containers, [billing](/sharepoint/dev/embedded/administration/billing/billing) must be valid for the registration to complete successfully.
 
 > [!IMPORTANT]
-> Registering a container type in a newly created tenant can fail due to readiness of tenant. You might need to wait at least an hour before registering a container type in a new tenant.
+> * An application can only register a [fileStorageContainerType](../resources/filestoragecontainertype.md) that it owns, either using app-only or delegated tokens.
+> * The registration of a container type in a newly created tenant can fail if the tenant isn't yet fully ready. You might need to wait at least an hour before you can register a container type in a new tenant.
 
-
-Settings can't be modified on registration.
+Settings can't be modified during registration.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-When delegated tokens are used, SharePoint Embedded admin or Global admin role is required.
-Registration must be done in the context of the application that owns the [fileStorageContainerType](../resources/filestoragecontainertype.md).
 
 <!-- {
   "blockType": "permissions",
@@ -41,11 +35,14 @@ Registration must be done in the context of the application that owns the [fileS
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestorage-post-containertyperegistrations-permissions.md)]
 
+>**Note:**
+> When delegated tokens are used, either the SharePoint Embedded admin role or the Global admin role is required.
+> The registration must be done in the context of the application that owns the [fileStorageContainerType](../resources/filestoragecontainertype.md).
+
 ## HTTP request
 
-Registers a fileStorageContainerType in the current tenant. 
+To register a **fileStorageContainerType** in the current tenant. 
 
->**Note:** Use the PUT method. This request creates a fileStorageContainertypeRegistration object with the provided id (fileStorageContainerTypeId). 
 <!-- {
   "blockType": "ignored"
 }
@@ -53,6 +50,8 @@ Registers a fileStorageContainerType in the current tenant.
 ``` http
 PUT /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeId}
 ```
+
+>**Note:** Use the PUT method. This request creates a **fileStorageContainertypeRegistration** object with the provided ID (**fileStorageContainerTypeId**). 
 
 ## Request headers
 
@@ -65,12 +64,11 @@ PUT /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeId}
 
 In the request body, supply a JSON representation of the [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object.
 
-You can specify the following properties when creating a **fileStorageContainerTypeRegistration**.
+You can specify the following property when you create a **fileStorageContainerTypeRegistration**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/fileStorageContainerTypeAppPermissionGrant.md) collection|define the access privileges of applications on containers of a specific fileStorageContainerType. Optional.|
-
+|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md) collection|The access privileges of applications on containers of a specific **fileStorageContainerType**. Optional.|
 
 ## Response
 
@@ -80,7 +78,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 
 ### Request
 
-Create a fileStorageContainerTypeRegistration for a trial fileStorageContainerType with some applicationPermissionGrants
+The following example shows how to create a **fileStorageContainerTypeRegistration** for a trial **fileStorageContainerType** with some **applicationPermissionGrants**.
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertyperegistration"
@@ -108,7 +106,7 @@ Content-Type: application/json
 
 
 ### Response
-
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -158,7 +156,7 @@ Content-Type: application/json
 
 ### Request
 
-Create a fileStorageContainerTypeRegistration for a standard fileStorageContainerType where billing setup isn't completed.
+The following example shows how to create a **fileStorageContainerTypeRegistration** for a standard **fileStorageContainerType** where the billing setup isn't completed.
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertyperegistration_no_billing"
@@ -180,7 +178,7 @@ Content-Type: application/json
 ```
 
 ### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
