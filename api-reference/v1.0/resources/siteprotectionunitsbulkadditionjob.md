@@ -12,7 +12,7 @@ ms.date: 05/22/2025
 
 Namespace: microsoft.graph
 
-Represents the properties of a siteProtectionUnitsBulkAdditionJob associated with a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). It contains a list of SharePoint site URLs, and a list of site IDs to be added to the SharePoint protection policy for backup.
+Represents the properties of a **siteProtectionUnitsBulkAdditionJob** associated with a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). It contains a list of SharePoint site URLs, and a list of site IDs to be added to the SharePoint protection policy for backup.
 
 Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobbase.md).
 
@@ -36,8 +36,8 @@ Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobba
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the job.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification to the job.|
 |status|[protectionUnitsBulkJobStatus](../resources/protectionunitsbulkjobbase.md#protectionunitsbulkjobstatus-values )|Status of the job. The possible values are:  `unknown`, `active`, `completed`, `completedWithErrors`, and  `unknownFutureValue`.|
-|siteWebUrls|Collection(String)|The list of SharePoint site URLs to add to the SharePoint protection policy.|
-|siteIds|Collection(String)|The list of SharePoint site IDs to add to the SharePoint protection policy.|
+|siteWebUrls|String collection|The list of SharePoint site URLs to add to the SharePoint protection policy.|
+|siteIds|String collection|The list of SharePoint site IDs to add to the SharePoint protection policy.|
 
 ## Relationships
 

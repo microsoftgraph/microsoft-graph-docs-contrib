@@ -28,6 +28,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession) extends the expiration time.
 
+### Reports | Partner billing reports
+
+[Export](/graph/api/partners-billing-unbilledreconciliation-export) unbilled invoice reconciliation data.
+
 ### Teamwork and communications | Messaging
 
 [Send a message with a Loop component](/graph/api/chatmessage-post).
@@ -36,7 +40,8 @@ Each fragment uploaded during an [upload session](/graph/api/resources/uploadses
 
 ### Device and app management | Cloud PC
 
-Use the **sizeInGB** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) to get the size of the image in GB.
+- Enabled `retention` as a supported snapshot type for a [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true).
+- Use the **sizeInGB** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) to get the size of the image in GB.
 
 ### Education
 
@@ -49,6 +54,10 @@ Each fragment uploaded during an [upload session](/graph/api/resources/uploadses
 ### Identity and access | Identity and sign-in
 
 Retired the previously deprecated Microsoft Entra lifecycle announcements APIs that stopped returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
+
+### Industry data ETL
+
+Deprecated the **markAllStudentsAsMinors** property on [additionalUserOptions](/graph/api/resources/industrydata-additionaluseroptions?view=graph-rest-beta&preserve-view=true) in favor of the **studentAgeGroup** property.
 
 ### Teamwork and communications | Messaging
 
