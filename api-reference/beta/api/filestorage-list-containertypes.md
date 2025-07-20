@@ -122,7 +122,7 @@ Content-Type: application/json
         "isDiscoverabilityEnabled": true,
         "isSearchEnabled": true,
         "isItemVersioningEnabled": false,
-        "itemMajorVersionLimit": "100",
+        "itemMajorVersionLimit": 100,
         "maxStoragePerContainerInBytes": 104857600,
         "isSharingRestricted": false,
         "consumingTenantOverridables": ""
