@@ -157,3 +157,5 @@ The previous example shows a notification corresponding to a chat message resour
 * [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 * [Microsoft Teams API overview](teams-concept-overview.md)
 * [Get change notification for meeting transcripts and recordings using Microsoft Graph](teams-changenotifications-callrecording-and-calltranscript.md)
+* [Get change notifications for membership changes in channels using Microsoft Graph](teams-changenotifications-channelmembership.md)
+* [Get change notifications for membership changes in teams using Microsoft Graph](teams-changenotifications-teammembership.md)
