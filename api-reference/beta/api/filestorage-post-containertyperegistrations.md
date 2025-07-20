@@ -36,8 +36,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/filestorage-post-containertyperegistrations-permissions.md)]
 
 >**Note:**
-> When delegated tokens are used, either the SharePoint Embedded admin role or the Global admin role is required.
-> The registration must be done in the context of the application that owns the [fileStorageContainerType](../resources/filestoragecontainertype.md).
+> * When delegated tokens are used, either the SharePoint Embedded admin role or the Global admin role is required.
+> * The registration must be done in the context of the application that owns the [fileStorageContainerType](../resources/filestoragecontainertype.md).
 
 ## HTTP request
 
