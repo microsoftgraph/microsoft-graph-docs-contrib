@@ -14,11 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [fileStorageContainerType](../resources/filestoragecontainertype.md) object. The properties updated are reflected in 
-registered [fileStorageContainerTypeRegistrations](../resources/filestoragecontainertyperegistration.md) in a maximum of 24 hours.
-Settings overridden in a tenant aren't updated.
+Update the properties of a [fileStorageContainerType](../resources/filestoragecontainertype.md) object. The properties updated are reflected in each registered [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) in a maximum of 24 hours. Settings overridden in a tenant aren't updated.
 
->**Note**: Updating the settings changes the behavior of any new fileStorageContainer, but existing containers may require their [settings](../resources/fileStorageContainer.md) to be updated directly, or may not be updated. E.g., storage size.
+>**Note**: Updating the settings changes the behavior of any new **fileStorageContainer**, but existing containers might require their [settings](../resources/fileStorageContainer.md) to be updated directly, or might not be updated; for example, storage size.
 
 ## Permissions
 
@@ -52,14 +50,11 @@ PATCH /storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Name of the fileStorageContainerType. Optional.|
-|settings|[fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md)|fileStorageContainerType settings. Optional.|
-|etag|String|Used for optimistic concurrency control. Must match the value returned from a Create or Get request. Required.|
-
-
+|etag|String|Used for optimistic concurrency control. The value must match the one returned from a Create or Get request. Required.|
+|name|String|The name of the **fileStorageContainerType**. Optional.|
+|settings|[fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md)|The settings of the **fileStorageContainerType**. Optional.|
 
 ## Response
 
@@ -68,8 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [file
 ## Examples
 
 ### Request
-
-Update a fileStorageContainerType.
+The following example shows how to update a **fileStorageContainerType**.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertype"
@@ -85,13 +79,12 @@ Content-Type: application/json
     "isItemVersioningEnabled": true,
     "isSharingRestricted": false
   },
-  "etag": "RVRhZw==",
+  "etag": "RVRhZw=="
 }
 ```
 
-
 ### Response
-
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -121,15 +114,13 @@ Content-Type: application/json
     "itemMajorVersionLimit": 50,
     "maxStoragePerContainerInBytes": 104857600,
     "isSharingRestricted": false,
-    "consumingTenantOverridables": "",
+    "consumingTenantOverridables": ""
   }
 }
 ```
 
-
 ### Request
-
-Update a fileStorageContainerType without ETag.
+The following example shows how to update a **fileStorageContainerType** without an **etag**.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertype_no_etag"
@@ -148,7 +139,6 @@ Content-Type: application/json
   }
 }
 ```
-
 
 ### Response
 
