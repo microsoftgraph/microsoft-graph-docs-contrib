@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of all [members](../resources/conversationmember.md) in a [channel](../resources/channel.md), supporting all channel types, including shared channels. For shared channels, the response includes:
+Get a list of all [members](../resources/conversationmember.md) in a [channel](../resources/channel.md), supporting all channel types, including shared channels. For shared channels, the response includes:
 
 - **Direct members**: Users who are added directly to the channel, including users from other tenants (cross-tenant).
 - **Indirect members**: Users who are members of a team with which the channel is shared, including teams in the same tenant or in a different tenant (cross-tenant).
@@ -131,12 +131,12 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/allMembers",
   "@odata.count": 2,
-"value": [
+  "value": [
     {
       "@odata.type": "#microsoft.graph.aadUserConversationMember",
       "@microsoft.graph.originalSourceMembershipUrl": "https://graph.microsoft.com/beta/tenants/2432b57b-0abd-43db-aa7b-16eadd115d34/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1/channels/19%3AlRZHL5VwvZs0XN2orTn7DlinJDETkgSVTHXbDLUEKf01%40thread.tacv2/members/MCMjMyMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpsUlpITDVWd3ZaczBYTjJvclRuN0RsaW5KREVUa2dTVlRIWGJETFVFS2YwMUB0aHJlYWQudGFjdjIjIzI4YzEwMjQ0LTRiYWQtNGZkYS05OTNjLWYzMzJmYWVmOTRmMA==",
       "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkMTQ=",
-      "roles": [ ],
+      "roles": [],
       "displayName": "Caleb Foster",
       "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
       "email": "calfos@contoso.com",
