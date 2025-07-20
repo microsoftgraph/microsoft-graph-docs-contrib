@@ -21,7 +21,8 @@ If the group was created less than 15 minutes ago, calls to create a team might 
 > [!TIP]
 > We recommend that you retry this API call up to three times, with a 10‑second delay between attempts. If the call still fails after three retries, wait at least 15 minutes after the group was created before you try again.
 
-> **Note:** SharePoint provisioning doesn't occur in real time, it's a background process. The completion of the provisioning can't be determined.
+> [!NOTE]
+> SharePoint provisioning doesn't occur in real time, it's a background process. The completion of the provisioning can't be determined.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
