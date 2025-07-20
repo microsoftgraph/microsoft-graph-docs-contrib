@@ -56,8 +56,8 @@ Inherits from [conversationMember](conversationmember.md).
 Instance attributes are properties with special behaviors. These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
 
 | Property name| Type   | Description
-|:-----------------------|:-------|:-------------------------|
-|@microsoft.graph.originalSourceMembershipUrl|String|This annotation represents the URL of the original source membership that helps distinguish between direct and indirect members. Use this annotation with the [List allMembers](../api/channel-list-allmembers.md) API. |
+|:---|:---|:---|
+|@microsoft.graph.originalSourceMembershipUrl|String|This annotation represents the URL of the original source membership that distinguishes between direct and indirect members. Use this annotation with the [List allMembers](../api/channel-list-allmembers.md) API. |
 
 ## Relationships
 None.
