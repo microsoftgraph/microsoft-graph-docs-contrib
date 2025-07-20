@@ -234,9 +234,9 @@ items:
     href: ../../api/filestoragecontainertyperegistration-update.md
   - name: Delete
     href: ../../api/filestorage-delete-containertyperegistrations.md
-  - name: List applicationPermissionGrants
+  - name: List application permission grants
     href: ../../api/filestoragecontainertyperegistration-list-applicationpermissiongrants.md
-  - name: Create fileStorageContainerTypeAppPermissionGrant
+  - name: Create file storage container type app permission grant
     href: ../../api/filestoragecontainertyperegistration-post-applicationpermissiongrants.md
 - name: Permission
   items:
