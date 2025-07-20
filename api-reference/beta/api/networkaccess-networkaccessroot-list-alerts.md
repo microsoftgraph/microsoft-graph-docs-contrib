@@ -96,47 +96,49 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.networkaccess.alert",
-      "id": "String (identifier)",
-      "alertType": "String",
-      "creationDateTime": "String (timestamp)",
-      "description": "String",
+      "id": "6fb54016-77df-4d32-9946-7603af8433e1",
+      "alertType": "malware",
+      "creationDateTime": "2024-04-01T12:00:00Z",
+      "description": "Malware detected on remote network.",
       "actions": [
         {
           "@odata.type": "microsoft.graph.networkaccess.alertAction",
-          "actionType": "String",
-          "timestamp": "String (timestamp)",
-          "status": "String"
+          "actionType": "block",
+          "timestamp": "2024-04-01T12:00:00Z",
+          "status": "completed"
         }
       ],
       "relatedResources": [
         {
           "@odata.type": "microsoft.graph.networkaccess.relatedRemoteNetwork",
-          "id": "String (identifier)",
-          "name": "String",
-          "ipAddress": "String (IP address)"
+          "id": "5a8f7ade-c123-45b7-89ef-0123456789ab",
+          "name": "RemoteNetwork1",
+          "ipAddress": "192.168.1.1"
         }
       ],
-      "vendorName": "String",
-      "detectionTechnology": "String",
-      "severity": "String",
-      "displayName": "String",
-      "productName": "String",
-      "componentName": "String",
+      "vendorName": "Contoso Security",
+      "detectionTechnology": "signature-based",
+      "severity": "high",
+      "displayName": "Malware Alert",
+      "productName": "Contoso Defender",
+      "componentName": "Network Scanner",
       "categories": [
-        "String"
+        "threat"
       ],
       "techniques": [
-        "String"
+        "malwareDelivery"
       ],
       "subTechniques": [
-        "String"
+        "emailAttachment"
       ],
-      "firstActivityDateTime": "String (timestamp)",
-      "lastActivityDateTime": "String (timestamp)",
-      "isPreview": "Boolean",
+      "firstActivityDateTime": "2024-04-01T12:05:00Z",
+      "lastActivityDateTime": "2024-04-01T13:00:00Z",
+      "isPreview": false,
       "extendedProperties": {
         "@odata.type": "microsoft.graph.networkaccess.extendedProperties",
-        "propertyKey": "String"
+        "malwareFamily": "Trojan.Win32",
+        "affectedFiles": 3,
+        "detectionConfidence": 95
       }
     }
   ]
