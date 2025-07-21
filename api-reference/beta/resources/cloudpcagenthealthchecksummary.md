@@ -1,6 +1,6 @@
 ---
 title: "cloudPcAgentHealthCheckSummary resource type"
-description: "Describe the details of the agent health status."
+description: "Describes the details of the agent health status."
 author: "jianawu"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
@@ -14,15 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describe the details of the agent health status.
-
+Describes the details of the agent health status.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|agentHealthCheckDetails|[cloudPcAgentHealthCheckDetail](../resources/cloudpcagenthealthcheckdetail.md) collection|A list of health check results that were performed for the target agent. Used to provide detailed information of health checks. Empty by default. Read Only. |
-|lastSucceededHealthCheckDateTime|DateTimeOffset|Indicates the date and time when the last health check finished successfully. The date and time information is shown using ISO 8601 format and is always in UTC time. Read Only.|
-|latestHealthCheckStatus|[cloudPcAgentHealthCheckStatusDetail](../resources/cloudpcagenthealthcheckstatusdetail.md)|Indicates the status of the latest agent health check. It can be an ongoing agent health check or the last finished health check. Used to track the latest triggered health check. Read Only. |
+|agentHealthCheckDetails|[cloudPcAgentHealthCheckDetail](../resources/cloudpcagenthealthcheckdetail.md) collection|A list of health check results performed for the target agent. Provides detailed information about the health checks. Empty by default. Read-only. |
+|lastSucceededHealthCheckDateTime|DateTimeOffset|Indicates the date and time when the last health check finished successfully. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|latestHealthCheckStatus|[cloudPcAgentHealthCheckStatusDetail](../resources/cloudpcagenthealthcheckstatusdetail.md)|Indicates the status of the latest agent health check. It can be an ongoing agent health check or the last finished health check. Tracks the latest triggered health check. Read-only. |
 
 ## Relationships
 None.
@@ -37,14 +36,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcAgentHealthCheckSummary",
+  "agentHealthCheckDetails": [{"@odata.type": "microsoft.graph.cloudPcAgentHealthCheckDetail"}],
   "lastSucceededHealthCheckDateTime": "String (timestamp)",
-  "agentHealthCheckDetails": [
-    {
-      "@odata.type": "microsoft.graph.cloudPcAgentHealthCheckDetail"
-    }
-  ],
-  "latestHealthCheckStatus": {
-    "@odata.type": "microsoft.graph.cloudPcAgentHealthCheckStatusDetail"
-  }
+  "latestHealthCheckStatus": {"@odata.type": "microsoft.graph.cloudPcAgentHealthCheckStatusDetail"}
 }
 ```

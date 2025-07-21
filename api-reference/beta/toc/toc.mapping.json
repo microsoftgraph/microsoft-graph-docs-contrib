@@ -489,6 +489,10 @@
           ],
           "complexTypes": [
             "appScope",
+            "cloudPcAgentHealthCheckDetail",
+            "cloudPcAgentHealthCheckStatusDetail",
+            "cloudPcAgentHealthCheckSummary",
+            "cloudPcAgentStatusDetail",
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
@@ -498,6 +502,7 @@
             "cloudPcBulkMove",
             "cloudPcBulkPowerOff",
             "cloudPcBulkPowerOn",
+            "cloudPcBulkReinstallAgent",
             "cloudPcBulkReprovision",
             "cloudPcBulkResize",
             "cloudPcBulkRestart",

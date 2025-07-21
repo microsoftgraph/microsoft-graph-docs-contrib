@@ -16,20 +16,19 @@ Namespace: microsoft.graph
 
 Defines the entity for performing a bulk Cloud PC agent reinstall action.
 
-
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|The run summary of this bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|cloudPcIds|String collection|The IDs of the Cloud PCs the bulk action applies to. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
+|cloudPcIds|String collection|The IDs of the Cloud PCs to which the bulk action applies. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |createdDateTime|DateTimeOffset|The date and time when the bulk action was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |displayName|String|Name of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|id|String|The ID of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). Inherits from [entity](../resources/entity.md)|
+|id|String|The ID of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |initiatedByUserPrincipalName|String|The user principal name (UPN) of the user who initiated this bulk action. Read-only. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk action is scheduled according to the maintenance window. When `true`, the bulk action uses the maintenance window to schedule the action; `false` means that the bulk action doesn't use the maintenance window. The default value is `false`. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|status|cloudPcBulkActionStatus|The status of the bulk actions. Possible values are `pending`, `succeeded`, `failed`, `unknownFutureValue`. The default value is `pending`. Read-only. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). The possible values are: `pending`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|[cloudPcBulkActionStatus](../resources/cloudpcbulkaction.md#cloudpcbulkactionstatus-values)|The status of the bulk action. Possible values are: `pending`, `succeeded`, `failed`, `unknownFutureValue`. The default value is `pending`. Read-only. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 
 ## Relationships
 None.
@@ -47,17 +46,13 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcBulkReinstallAgent",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "cloudPcIds": [
-    "String"
-  ],
-  "actionSummary": {
-    "@odata.type": "microsoft.graph.cloudPcBulkActionSummary"
-  },
+  "actionSummary": {"@odata.type": "microsoft.graph.cloudPcBulkActionSummary"},
+  "cloudPcIds": ["String"],
   "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "initiatedByUserPrincipalName": "String",
   "scheduledDuringMaintenanceWindow": "Boolean",
-  "status": "String",
-  "initiatedByUserPrincipalName": "String"
+  "status": "String"
 }
 ```
