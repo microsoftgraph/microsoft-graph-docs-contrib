@@ -73,7 +73,7 @@ The following table shows the parameters that you can use with this method.
 
 If successful, this method returns a `200 OK` response code and a Stream object in the response body.
 
-The following table describes the columns in the returned report when you specify `inaccessibleCloudPcReports` for the **reportName** property in your API call.
+The following table describes the columns in the returned report when you specify `inaccessibleCloudPcReports` for the **reportName** property in your API call. For `inaccessibleCloudPcReports`, the member values must be in camel case format.
 
 | Member                         | Description                                                         |
 |:-------------------------------|:--------------------------------------------------------------------|
