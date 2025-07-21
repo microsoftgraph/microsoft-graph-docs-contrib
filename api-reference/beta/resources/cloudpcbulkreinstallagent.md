@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkReinstallAgent resource type"
-description: "Defines the entity for performing a bulk Cloud PC agent reinstall action with the executeAction API."
+description: "Defines the entity for performing a bulk Cloud PC agent reinstall action."
 author: "jianawu"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the entity for performing a bulk Cloud PC agent reinstall action with the executeAction API.
+Defines the entity for performing a bulk Cloud PC agent reinstall action.
 
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
