@@ -20,6 +20,7 @@ Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) obje
 The following RBAC providers are currently supported:
 - Cloud PC
 - device management (Intune)
+- Defender (Microsoft Defender XDR)
 - directory (Microsoft Entra ID)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -38,6 +39,11 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "rbacapplication_post_roledefinitions_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/rbacapplication-post-roledefinitions-2-permissions.md)]
 
+### For a Defender provider
+
+<!-- { "blockType": "permissions", "name": "unifiedrbacapplicationmultiple_post_roledefinitions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrbacapplicationmultiple-post-roledefinitions-permissions.md)]
+
 <a name='for-a-directory-azure-ad-provider'></a>
 
 ### For a directory (Microsoft Entra ID) provider
@@ -53,6 +59,12 @@ To create a role definition for a device management provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /roleManagement/deviceManagement/roleDefinitions
+```
+
+To create a role definition for a Defender provider:
+<!-- { "blockType": "ignored" } -->
+```http
+POST /roleManagement/defender/roleDefinitions
 ```
 
 To create a role definition for a directory provider:
@@ -298,5 +310,62 @@ Content-type: application/json
         }
     ],
     "resourceScopes":["/"]
+}
+```
+
+## Example 3: Create a custom role for a Defender provider
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroledefinition_from_rbacapplication_defender"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/defender/roleDefinitions
+Content-type: application/json
+
+{
+  "description": "Role 1 description",
+  "displayName": "Role 1",
+  "rolePermissions":
+    [
+        {
+            "allowedResourceActions": 
+            [
+                "microsoft.xdr/securityposture/read"
+            ]
+        }
+    ]
+}
+```
+
+### Response
+
+The following example shows the response.
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/defender/roleDefinitions/$entity",
+    "id": "d5eec5e0-6992-4c6b-b430-0f833f1a815b",
+    "description": "Role 1 description",
+    "displayName": "Role 1",
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "microsoft.xdr/securityposture/read"
+            ]
+        }
+    ]
 }
 ```
