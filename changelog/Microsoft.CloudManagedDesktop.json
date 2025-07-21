@@ -7107,6 +7107,24 @@
     {
       "ChangeList": [
         {
+          "Id": "a33e63f8-911f-404e-a6bb-2c4b8fc32680",
+          "ApiChange": "Member",
+          "ChangedApiName": "retention",
+          "ChangeType": "Addition",
+          "Description": "Added the `retention` member to the **cloudPcSnapshotType** enumeration.",
+          "Target": "cloudPcSnapshotType"
+        }
+      ],
+      "Id": "a33e63f8-911f-404e-a6bb-2c4b8fc32680",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-17T03:39:45.154Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+       "ChangeList": [
+        {
           "Id": "73a56c7e-61e5-4f70-97a9-ef8eb312b947",
           "ApiChange": "Member",
           "ChangedApiName": "sourceImageWithAzureDiskEncryptionNotSupported",
