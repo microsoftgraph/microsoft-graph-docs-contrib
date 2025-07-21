@@ -22,6 +22,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_post_owners" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-post-owners-permissions.md)]
 
+> [!IMPORTANT]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Hybrid Identity Administrator
+> - Cloud Application Administrator
+> - Application Administrator
+
 ## HTTP request
 
 You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.

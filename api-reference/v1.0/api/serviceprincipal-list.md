@@ -23,7 +23,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-permissions.md)]
 
+[!INCLUDE [rbac-serviceprincipal-apis-read](../includes/rbac-for-apis/rbac-serviceprincipal-apis-read.md)]
 
+### Permissions for specific scenarios
+- A service principal can retrieve its own application and service principal details without being granted any application permissions.
+- The *Application.ReadWrite.OwnedBy* permission allows an app to call `GET /applications` and `GET /servicePrincipals` to list all applications and service principals in the tenant. This scope of access has been allowed for the permission.
 
 ## HTTP request
 
