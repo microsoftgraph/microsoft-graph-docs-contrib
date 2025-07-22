@@ -31,7 +31,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |description|String| The description provided for the export.|
 |exportFileMetadata | [microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md)| Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**.  |
 |exportOptions|[microsoft.graph.security.exportOptions](#exportoptions-values)| The options provided for the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `tags`, `unknownFutureValue`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`.|
-|exportStructure|[microsoft.graph.security.exportFileStructure](#exportfilestructure-values)|The options that specify the structure of the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`(deprecated), `pst`, `unknownFutureValue`, `msg`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `msg`.|
+|exportStructure|[microsoft.graph.security.exportFileStructure](#exportfilestructure-values)|The options that specify the structure of the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory` (deprecated), `pst`, `unknownFutureValue`, `msg`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `msg`. The `directory` member is deprecated. It remains in v1.0 for backward compatibility. Going forward, use either `pst` or `msg`.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
@@ -43,12 +43,12 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 |Member|Description|
 |:----|-----------|
-|originalFiles|Include original files in native format; for example: docx, xlsx, pptx, doc, xlst, pptm, etc.|
+|originalFiles|Include original files in native format; for example: docx, xlsx, pptx, doc, xlst, and pptm.|
 |text|Include extracted text from the original files.|
 |pdfReplacement|Replace original file with PDF version when available.|
 |tags|Include tag information.|
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
-|splitSource|Organize data from different locations into separate folders or PSTs.|
+|splitSource|Organize data from different locations into separate folders or .pst.|
 |includeFolderAndPath|Include folder and path structure of source.|
 |friendlyName|Give each item a friendly name.|
 |condensePaths|Condense paths to fit within 259 characters.|
@@ -58,10 +58,13 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |Member|Description|
 |:----|-----------|
 |None|Default file structure.|
-|directory(deprecated)|All files in a single folder called Native files.|
-|pst|Mails are grouped in PST format.|
+|directory (deprecated)|All files in a single folder called Native files.|
+|pst|Mails are grouped in .pst format.|
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
-|msg|Mails are in MSG format.|
+|msg|Mails are in .msg format.|
+
+> [!TIP]
+> The `directory` member is deprecated. It remains in v1.0 for backward compatibility. Going forward, use either `pst` or `msg`.
 
 ## Relationships
 |Relationship|Type|Description|
