@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Remove a [group](../resources/group.md) from the list of groups marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

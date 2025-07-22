@@ -3,6 +3,24 @@
     {
       "ChangeList":[
         {
+          "Id": "5f408e9d-15ae-45a2-89c1-427f83598967",
+          "ApiChange": "Property",
+          "ChangedApiName": "videoOnDemandWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **videoOnDemandWebUrl** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "5f408e9d-15ae-45a2-89c1-427f83598967",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-05-01T04:07:42.7434446Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList":[
+        {
           "Id": "aec55ab7-4c55-40ed-a6d5-8fabde7f71b5",
           "ApiChange": "Property",
           "ChangedApiName": "videoOnDemandWebUrl",

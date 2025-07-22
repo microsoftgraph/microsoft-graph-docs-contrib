@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [permission](../resources/permission.md) object on a site.
 
+> [!IMPORTANT]
+> Using the GET method to retrieve SharePoint subsites' permissions isn't supported at this time.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions

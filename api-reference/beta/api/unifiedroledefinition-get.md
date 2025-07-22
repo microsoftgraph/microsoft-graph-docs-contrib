@@ -20,6 +20,7 @@ Get the properties and relationships of a [unifiedRoleDefinition](../resources/u
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
+- Defender (Microsoft Defender XDR Unified RBAC)
 - directory (Microsoft Entra directory roles)
 - entitlement management (Microsoft Entra entitlement management)
 - Exchange Online (Except China operated by 21Vianet)
@@ -45,6 +46,14 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (work or school account) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+
+### For a Defender provider
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.Read.Defender, RoleManagement.ReadWrite.Defender, RoleManagement.Read.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | RoleManagement.Read.Defender, RoleManagement.ReadWrite.Defender, RoleManagement.Read.All  |
 
 <a name='for-a-directory-azure-ad-provider'></a>
 
@@ -86,6 +95,12 @@ Get a role definition for a device management provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/deviceManagement/roleDefinitions/{id}
+```
+
+Get a role definition for a Defender provider:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/defender/roleDefinitions/{id}
 ```
 
 Get a role definition for a directory provider:
@@ -593,6 +608,51 @@ Content-type: application/json
 }
 ```
 
+### Example 6: Get the definition of a custom role for a defender provider
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_custom_role_unifiedroledefinition_defender",
+  "sampleKeys": ["f189965f-f560-4c59-9101-933d4c87a91b"]
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/defender/roleDefinitions/f189965f-f560-4c59-9101-933d4c87a91b
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/defender/roleDefinitions/$entity",
+    "id": "f189965f-f560-4c59-9101-933d4c87a91b",
+    "description": "Role definition 2 description.",
+    "displayName": "Role Definition 2",
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "microsoft.xdr/securityposture/read"
+            ],
+        }
+    ]
+}
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

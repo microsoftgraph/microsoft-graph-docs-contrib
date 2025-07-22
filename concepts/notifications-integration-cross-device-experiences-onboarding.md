@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "notifications"
 author: "merzink"
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Onboarding to cross-device experiences for Microsoft Graph notifications (deprecated)

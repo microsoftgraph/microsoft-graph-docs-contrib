@@ -148,20 +148,6 @@ items:
       href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
-    - name: Bulk reprovision remote action (deprecated)
-      href: ../../api/manageddevice-bulkreprovisioncloudpc.md
-    - name: Bulk resize (deprecated)
-      href: ../../api/cloudpc-bulkresize.md
-    - name: Bulk restore remote action (deprecated)
-      href: ../../api/manageddevice-bulkrestorecloudpc.md
-    - name: Get remote action results (deprecated)
-      href: ../../api/manageddevice-getcloudpcremoteactionresults.md
-    - name: Get review status (deprecated)
-      href: ../../api/manageddevice-getcloudpcreviewstatus.md
-    - name: Set review status (deprecated)
-      href: ../../api/manageddevice-setcloudpcreviewstatus.md
-    - name: Bulk set review status (deprecated)
-      href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -194,7 +180,7 @@ items:
       href: ../../api/cloudpcdeviceimage-delete.md
     - name: Get source images
       href: ../../api/cloudpcdeviceimage-getsourceimages.md
-    - name: Re-upload
+    - name: Reupload
       href: ../../api/cloudpcdeviceimage-reupload.md
   - name: Cloud PC external partner setting
     items:
@@ -278,8 +264,6 @@ items:
       href: ../../api/cloudpcreports-getactionstatusreports.md
     - name: Get bulk action status reports
       href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
-    - name: Get Cloud PC recommendation reports
-      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: Get Cloud PC troubleshooting reports
       href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
     - name: Get frontline report
@@ -296,6 +280,8 @@ items:
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Retrieve Cloud PC recommendation reports
+      href: ../../api/cloudpcreports-retrievecloudpcrecommendationreports.md
     - name: Retrieve Cloud PC tenant metrics report
       href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
     - name: Retrieve cross-region disaster recovery report
@@ -306,6 +292,8 @@ items:
       href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
     - name: Get Cloud PC performance report (deprecated)
       href: ../../api/cloudpcreports-getcloudpcperformancereport.md
+    - name: Get Cloud PC recommendation reports (deprecated)
+      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: Get connection quality reports (deprecated)
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: Get shared use license usage report (deprecated)
@@ -328,8 +316,8 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
-    - name: List (deprecated)
-      href: ../../api/virtualendpoint-list-snapshots.md
+    - name: Retrieve snapshots
+      href: ../../api/cloudpc-retrievesnapshots.md
   - name: Cloud PC supported region
     items:
     - name: Cloud PC supported region
@@ -384,8 +372,6 @@ items:
       href: ../../api/virtualendpoint-list-supportedregions.md
     - name: List service plans
       href: ../../api/virtualendpoint-list-serviceplans.md
-    - name: List snapshots
-      href: ../../api/virtualendpoint-list-snapshots.md
     - name: List external partner settings
       href: ../../api/virtualendpoint-list-externalpartnersettings.md
     - name: Create external partner setting
@@ -841,6 +827,12 @@ items:
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
       - name: createToken action
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
+      - name: setEnrollmentTimeDeviceMembershipTarget action
+        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-setenrollmenttimedevicemembershiptarget.md
+      - name: retrieveEnrollmentTimeDeviceMembershipTarget action
+        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-retrieveenrollmenttimedevicemembershiptarget.md
+      - name: clearEnrollmentTimeDeviceMembershipTarget action
+        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-clearenrollmenttimedevicemembershiptarget.md
     - name: Android for Work app
       items:
       - name: Android for Work app
@@ -4707,8 +4699,6 @@ items:
         href: ../../api/intune-raimportcerts-userpfxcertificate-create.md
       - name: Delete userPFXCertificate
         href: ../../api/intune-raimportcerts-userpfxcertificate-delete.md
-      - name: Update userPFXCertificate
-        href: ../../api/intune-raimportcerts-userpfxcertificate-update.md
     - name: VPN configuration
       items:
       - name: VPN configuration
@@ -6861,10 +6851,6 @@ items:
       items:
       - name: User experience analytics device timeline event
         href: ../../resources/intune-devices-userexperienceanalyticsdevicetimelineevent.md
-      - name: List userExperienceAnalyticsDeviceTimelineEvents
-        href: ../../api/intune-devices-userexperienceanalyticsdevicetimelineevent-list.md
-      - name: Get userExperienceAnalyticsDeviceTimelineEvent
-        href: ../../api/intune-devices-userexperienceanalyticsdevicetimelineevent-get.md
     - name: User experience analytics device without cloud identity
       items:
       - name: User experience analytics device without cloud identity
@@ -8289,6 +8275,8 @@ items:
         href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-delete.md
       - name: Update windowsQualityUpdateCatalogItem
         href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-update.md
+      - name: retrieveWindowsQualityUpdateCatalogItemDetails function
+        href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-retrievewindowsqualityupdatecatalogitemdetails.md
     - name: Complex types
       items:
       - name: All devices assignment target
@@ -8584,6 +8572,8 @@ items:
       href: ../../resources/windowsupdates-qualityupdatefilter.md
     - name: Rate driven rollout settings
       href: ../../resources/windowsupdates-ratedrivenrolloutsettings.md
+    - name: Remediation update filter
+      href: ../../resources/windowsupdates-remediationupdatefilter.md
     - name: Safeguard profile
       href: ../../resources/windowsupdates-safeguardprofile.md
     - name: Safeguard settings

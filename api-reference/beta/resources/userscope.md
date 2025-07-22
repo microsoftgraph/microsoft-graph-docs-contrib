@@ -1,6 +1,5 @@
 ---
 title: "userScope resource type"
-toc-title: "userScope resource type (preview)"
 description: "Represents an individual user as a scope within policy bindings."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -16,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an individual user as a scope within policy bindings.
+
+Inherits from [scopeBase](../resources/scopebase.md).
 
 ## Properties
 

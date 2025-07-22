@@ -1,6 +1,5 @@
 ---
 title: "textContent resource type"
-toc.title: "textContent resource type (preview)"
 description: "Represents content provided as a plain text string."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -16,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents content provided as a plain text string.
+
+Inherits from [contentBase](../resources/contentbase.md).
 
 ## Properties
 

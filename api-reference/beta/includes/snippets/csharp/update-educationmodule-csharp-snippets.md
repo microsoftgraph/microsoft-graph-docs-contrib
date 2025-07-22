@@ -12,6 +12,7 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new EducationModule
 {
 	DisplayName = "New_Module5 updated",
+	LanguageTag = "en-GB",
 	Description = "updated for description",
 };
 

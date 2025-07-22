@@ -13,7 +13,7 @@ $params = @{
 "HideApp"
 )
 info = @{
-logoUrl = "https://cdn.pixabay.com/photo/2016/03/21/23/25/link-1271843_1280.png"
+logoUrl = "https://cdn.contoso.com/photo/2016/03/21/23/25/link-1271843_1280.png"
 marketingUrl = "https://www.contoso.com/app/marketing"
 privacyStatementUrl = "https://www.contoso.com/app/privacy"
 supportUrl = "https://www.contoso.com/app/support"

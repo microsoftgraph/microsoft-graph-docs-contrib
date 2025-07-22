@@ -1,6 +1,5 @@
 ---
 title: "policyLocation resource type"
-toc.title: "policyLocation resource type (preview)"
 description: "Abstract base type representing a location like a domain or URL, to which a data protection policy applies."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,13 +8,15 @@ ms.subservice: "security"
 doc_type: resourceTypePageType
 ---
 
-# policyLocation
+# policyLocation resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing a location (like a domain or URL) to which a data protection policy applies. 
+Abstract base type representing a location (like a domain or URL) to which a data protection policy applies. Use [policy location application](../resources/policylocationapplication.md) for application locations, [policy location domain](../resources/policylocationdomain.md) for domain locations, or [policy location URL](../resources/policylocationurl.md) for URL locations.
+
+>**Note** This is an abstract type and isn't instantiated directly.
 
 ## Properties
 
@@ -30,7 +31,6 @@ None.
 ## JSON representation
 
 The following JSON representation shows the resource. 
->**Note** This is an abstract type and isn't instantiated directly.
 <!-- {
   "blockType": "resource",
   "abstract": true,

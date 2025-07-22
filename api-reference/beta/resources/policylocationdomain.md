@@ -1,6 +1,5 @@
 ---
 title: "policyLocationDomain resource type"
-toc.title: "policyLocationDomain resource type (preview)"
 description: "Represents a domain name as a location for data protection policy scoping."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -9,13 +8,15 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# policyLocationDomain
+# policyLocationDomain resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a domain name as a location for data protection policy scoping.
+
+Inherits from [policyLocation](../resources/policylocation.md).
 
 ## Properties
 
