@@ -48,7 +48,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |pdfReplacement|Replace original file with PDF version when available.|
 |tags|Include tag information.|
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
-|splitSource|Organize data from different locations into separate folders or .pst.|
+|splitSource|Organize data from different locations into separate folders or PSTs.|
 |includeFolderAndPath|Include folder and path structure of source.|
 |friendlyName|Give each item a friendly name.|
 |condensePaths|Condense paths to fit within 259 characters.|
