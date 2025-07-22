@@ -19,15 +19,11 @@ Cancel a registrant's [registration record](../resources/virtualeventregistratio
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "virtualeventregistration-cancel-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "virtualeventregistration_cancel" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventregistration-cancel-permissions.md)]
 
 > [!NOTE]
-> - Use delegated permissions to cancel a registration record for a person who has a [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis).
+> - Use delegated permissions to cancel a registration record for a person who has a [Microsoft Entra ID](/entra/fundamentals/whatis).
 > - Use application permissions to cancel a registration record for an anonymous user. 
 
 ## HTTP request

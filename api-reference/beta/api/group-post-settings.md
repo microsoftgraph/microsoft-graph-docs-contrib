@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
 
 ### Create group-specific settings
-<!-- { "blockType": "permissions", "name": "group_post_settings" } -->
+<!-- { "blockType": "permissions", "name": "group_post_settings_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-post-settings-2-permissions.md)]
 
 ## HTTP request

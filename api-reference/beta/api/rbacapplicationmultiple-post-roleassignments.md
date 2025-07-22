@@ -42,8 +42,8 @@ The following tables show the least privileged permission or permissions require
 
 ### For Defender provider
 
-<!-- { "blockType": "permissions", "name": "unifiedrbacapplicationmultiple_post_roleassignments" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedrbacapplicationmultiple-post-roleassignments-permissions.md)]
+<!-- { "blockType": "permissions", "name": "rbacapplicationmultiple_post_roleassignments_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplicationmultiple-post-roleassignments-3-permissions.md)]
 
 ## HTTP request
 
