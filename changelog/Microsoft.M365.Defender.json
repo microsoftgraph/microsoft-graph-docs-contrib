@@ -2799,6 +2799,32 @@
         "CreatedDateTime": "2025-05-21T03:30:26.4995892Z",
         "WorkloadArea": "Security",
         "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "19f92158-7e37-46d9-b159-e1ecbdd9a2d3",
+            "ApiChange": "Resource",
+            "ChangedApiName": "resourceAccessEvent",
+            "ChangeType": "Addition",
+            "Description": "Added the [resourceAccessEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-resourceAccessEvent?view=graph-rest-1.0) resource.",
+            "Target": "resourceAccessEvent"
+          },
+          {
+            "Id": "19f92158-7e37-46d9-b159-e1ecbdd9a2d3",
+            "ApiChange": "Property",
+            "ChangedApiName": "resourceAccessEvents",
+            "ChangeType": "Addition",
+            "Description": "Added the **resourceAccessEvents** property to the [userAccount](https://learn.microsoft.com/en-us/graph/api/resources/security-userAccount?view=graph-rest-1.0) resource.",
+            "Target": "userAccount"
+          }
+        ],
+        "Id": "19f92158-7e37-46d9-b159-e1ecbdd9a2d3",
+        "Cloud": "Review",
+        "Version": "v1.0",
+        "CreatedDateTime": "2025-07-21T17:23:14.3550133Z",
+        "WorkloadArea": "Security",
+        "SubArea": ""
       }
   ]
 }
