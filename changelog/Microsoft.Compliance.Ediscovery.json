@@ -5,7 +5,7 @@
         {
           "Id": "e45f1bb8-e874-49b1-8055-967c42bf53a3",
           "ApiChange": "Member",
-          "ChangedApiName": "unifiedGroupSource",
+          "ChangedApiName": "optimizedPartitionSize",
           "ChangeType": "Deletion",
           "Description": "Removed the `optimizedPartitionSize` member from the **exportOptions** enumeration.",
           "Target":"exportOptions"
