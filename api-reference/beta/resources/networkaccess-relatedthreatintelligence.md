@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents threat intelligence information related to a Global Secure Access alert.
+Represents threat intelligence information related to a Global Secure Access [alert](../resources/networkaccess-alert.md).
 
 Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/networkaccess-relatedresource.md).
 

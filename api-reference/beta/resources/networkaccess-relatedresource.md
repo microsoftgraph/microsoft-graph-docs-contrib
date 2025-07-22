@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type for related entities in Global Secure Access alerts. This type is not intended to be instantiated directly.
+Abstract base type for related entities in Global Secure Access [alerts](../resources/networkaccess-alert.md). This type is not intended to be instantiated directly.
 
 This is an abstract type from which the following resources inherit:
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a transaction involved in a Global Secure Access alert.
+Represents a transaction involved in a Global Secure Access [alert](../resources/networkaccess-alert.md).
 
 Inherits from [microsoft.graph.networkaccess.relatedResource](../resources/networkaccess-relatedresource.md).
 

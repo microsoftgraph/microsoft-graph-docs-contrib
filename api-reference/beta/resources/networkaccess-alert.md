@@ -60,30 +60,25 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.networkaccess.alert",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.alert",
-  "id": "String",
+  "id": "String (identifier)",
   "alertType": "String",
   "creationDateTime": "String (timestamp)",
   "description": "String",
   "actions": [
     {
-      "@odata.type": "microsoft.graph.networkaccess.alertAction",
-      "actionType": "String",
-      "timestamp": "String (timestamp)",
-      "status": "String"
+      "@odata.type": "microsoft.graph.networkaccess.alertAction"
     }
   ],
   "relatedResources": [
     {
-      "@odata.type": "microsoft.graph.networkaccess.relatedRemoteNetwork",
-      "id": "String",
-      "name": "String",
-      "ipAddress": "String (IP address)"
+      "@odata.type": "microsoft.graph.networkaccess.relatedRemoteNetwork"
     }
   ],
   "vendorName": "String",
@@ -105,8 +100,7 @@ The following JSON representation shows the resource type.
   "lastActivityDateTime": "String (timestamp)",
   "isPreview": "Boolean",
   "extendedProperties": {
-    "@odata.type": "microsoft.graph.networkaccess.extendedProperties",
-    "propertyKey": "String"
+    "@odata.type": "microsoft.graph.networkaccess.extendedProperties"
   }
 }
 ```

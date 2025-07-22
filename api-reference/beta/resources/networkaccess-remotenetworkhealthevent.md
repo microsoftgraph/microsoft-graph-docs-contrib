@@ -15,7 +15,7 @@ Namespace: microsoft.graph.networkaccess
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains information about network health, status, metrics, and operations.
-This is an abstract type.
+This resource is an abstract type.
 
 ## Methods
 |Method|Return type|Description|
