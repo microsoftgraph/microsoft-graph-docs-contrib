@@ -42,15 +42,15 @@ The following tables show the least privileged permission or permissions require
 
 ### For a Defender provider
 
-<!-- { "blockType": "permissions", "name": "unifiedrbacapplicationmultiple_delete_roledefinitions" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedrbacapplicationmultiple-delete-roledefinitions-permissions.md)]
+<!-- { "blockType": "permissions", "name": "unifiedroledefinition_delete_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-delete-3-permissions.md)]
 
 <a name='for-a-directory-azure-ad-provider'></a>
 
 ### For a directory (Microsoft Entra ID) provider
 
-<!-- { "blockType": "permissions", "name": "unifiedroledefinition_delete_3" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-delete-3-permissions.md)]
+<!-- { "blockType": "permissions", "name": "unifiedroledefinition_delete_4" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-delete-4-permissions.md)]
 
 [!INCLUDE [rbac-role-definition-apis-write](../includes/rbac-for-apis/rbac-role-definition-apis-write.md)]
 

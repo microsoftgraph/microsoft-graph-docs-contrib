@@ -40,8 +40,8 @@ The following tables show the least privileged permission or permissions require
 
 ### For Defender provider
 
-<!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_delete" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedrbacapplicationmultiple-delete-roleassignments-permissions.md)]
+<!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_delete_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentmultiple-delete-3-permissions.md)]
 
 ## HTTP request
 
