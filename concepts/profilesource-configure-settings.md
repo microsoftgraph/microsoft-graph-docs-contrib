@@ -202,5 +202,115 @@ If successful, this method returns a `204 No Content` response code.
 HTTP/1.1 204 No Content
 ```
 
+## Configure profile source settings using the Microsoft Graph PowerShell SDK
+
+You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to configure profile source settings in your organization.
+
+### Prerequisites
+
+- **PowerShell module** - Install [module version 2.3.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
+- **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
+
+> [!NOTE]
+> The PowerShell commands for profile source settings are only available in beta. Switch to the beta experience before you run the following commands.
+>
+> ```powershell
+> Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.3.0
+> Update-Module Microsoft.Graph.Beta
+> ```
+
+### Confirm your current settings
+
+To get profile source settings configuration for an organization, use the following command.
+
+```powershell
+Get-MgAdminPeopleProfileSource
+```
+
+To get a profile source setting configuration in an organization, use the following command.
+
+```powershell
+Get-MgAdminPeopleProfileSource -ProfileSourceId $sourceId
+```
+
+> [!NOTE]
+> The get commands require the `PeopleSettings.Read.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
+>
+> ```powershell
+> Connect-MgGraph -Scopes "PeopleSettings.Read.All"
+> ```
+
+### Add a profile source setting in your organization
+
+You can use the Microsoft Graph PowerShell module to configure a profile source setting in your organization.
+
+> [!NOTE]
+> The new command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
+>
+> ```powershell
+> Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+> ```
+
+```powershell
+$params = @{
+  displayName = "HR-Platform",
+  localizations = @(
+    @{
+      displayName = "HR-Plattform",
+      webUrl = "http://bamboohr.contoso.com/de/login",
+      languageTag = "de"
+    }
+  )
+}
+
+New-MgAdminPeopleProfileSource -BodyParameter $params
+```
+
+### Update a profile source setting in your organization
+
+You can use the Microsoft Graph PowerShell module to update a profile source setting in your organization.
+
+> [!NOTE]
+> The update command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
+>
+> ```powershell
+> Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+> ```
+
+```powershell
+$params = @{
+  displayName = "HR-Platform Updated",
+  localizations = @(
+    @{
+      displayName = "HR-Platform",
+      webUrl = "http://bamboohr.contoso.com/en-us/login",
+      languageTag = "en-us"
+    },
+    @{
+      displayName = "HR-Plattform",
+      webUrl = "http://bamboohr.contoso.com/de/login",
+      languageTag = "de"
+    }
+  )
+}
+
+Update-MgAdminPeopleProfileSource -ProfileSourceId $sourceId -BodyParameter $params
+```
+
+### Remove a profile source setting in your organization
+
+You can use the Microsoft Graph PowerShell module to remove a profile source setting from your organization.
+
+> [!NOTE]
+> The remove command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
+>
+> ```powershell
+> Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+> ```
+
+```powershell
+Remove-MgAdminPeopleProfileSource -ProfileSourceId $sourceId 
+```
+
 ## Related content
 [Manage profile source precedence settings for an organization](/graph/profilepriority-configure-profilepropertysetting)
