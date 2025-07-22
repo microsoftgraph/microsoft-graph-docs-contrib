@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventregistration-cancel-permissions.md)]
 
 > [!NOTE]
-> - Use delegated permissions to cancel a registration record for a person who has a [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis).
+> - Use delegated permissions to cancel a registration record for a person who has a [Microsoft Entra ID](/entra/fundamentals/whatis).
 > - Use application permissions to cancel a registration record for an anonymous user. 
 
 ## HTTP request
