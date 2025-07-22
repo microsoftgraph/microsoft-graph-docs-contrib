@@ -722,7 +722,6 @@ Content-type: application/json
 }
 ```
 
-****
 
 #### Request 7
 
