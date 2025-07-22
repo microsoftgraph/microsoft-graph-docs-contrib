@@ -41,7 +41,7 @@ GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 
 ## Query parameters
 
-This method requires the `containerTypeId` parameter. It supports the `$expand` OData query parameter, except for the **drive**, **permissions**, and **customProperties** properties. If other `$filter` conditions are used, the endpoint may return empty intermediate pages and the caller needs to follow all pages to get all applicable results. For more information, see [OData query parameters](/graph/query-parameters).
+This method requires the `containerTypeId` parameter. It supports the `$expand` OData query parameter, except for the **drive**, **permissions**, and **customProperties** properties. If other `$filter` conditions are used, the endpoint may return intermediate pages with partial results or even no results, and the caller needs to continue reading all pages to get all applicable results. For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
