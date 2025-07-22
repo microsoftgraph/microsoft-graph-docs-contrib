@@ -47,8 +47,8 @@
         "Cloud": "Prod",
         "Version": "v1.0",
         "CreatedDateTime": "2025-07-21T11:07:05.8540762Z",
-        "WorkloadArea": "EnhancedRestore",
-        "SubArea": "Backup and Restore"
+        "WorkloadArea": "Backup storage",
+        "SubArea": ""
       },
       {
         "ChangeList": [
