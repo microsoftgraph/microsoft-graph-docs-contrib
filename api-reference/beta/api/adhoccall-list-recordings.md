@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /md/adhocCalls/{adhocCallId}/recordings
+GET /me/adhocCalls/{adhocCallId}/recordings
 GET /users/{usersId}/adhocCalls/{adhocCallId}/recordings
 ```
 

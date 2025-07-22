@@ -3057,6 +3057,14 @@
           ],
           "childNodes": [
             {
+              "name": "Ad hoc Calls",
+              "resources": [
+                "adhocCall",
+                "callRecording",
+                "callTranscript"
+              ]
+            },
+            {
               "name": "Calls",
               "resources": [
                 "call",
