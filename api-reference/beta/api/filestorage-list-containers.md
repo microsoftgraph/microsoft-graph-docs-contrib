@@ -1,6 +1,6 @@
 ---
 title: "List containers"
-description: "Get a list of fileStorageContainers and their properties."
+description: "Get a list of fileStorageContainer objects that are accessible to a caller."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -15,10 +15,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [fileStorageContainer](../resources/filestoragecontainer.md) objects that are accessible to the caller. The `containerTypeId` filter parameter is required.
+Get a list of [fileStorageContainer](../resources/filestoragecontainer.md) objects that are accessible to a caller. The **containerTypeId** filter parameter is required.
 
 > [!IMPORTANT]
-> Requests on behalf of a user fail if the user doesn't have a OneDrive. This requirement doesn't apply when calling the endpoint without a user context (app-only mode). Likewise, the endpoint only returns containers that the user is a direct member of. Containers that the user has membership via a group aren't returned.
+> Requests made on behalf of a user fail if the user doesn't have a OneDrive. This requirement doesn't apply when you call the endpoint without a user context (app-only authentication). The endpoint also only returns containers that the user is a direct member of. Containers that the user is a member of via a group aren't returned.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -42,7 +42,7 @@ GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 
 ## Query parameters
 
-This method requires the `containerTypeId` parameter. It supports the `$expand` OData query parameter, except for the **drive**, **permissions**, and **customProperties** properties. If other `$filter` conditions are used, the endpoint may return intermediate pages with partial results or even no results, and the caller needs to continue reading all pages to get all applicable results. For more information, see [OData query parameters](/graph/query-parameters).
+This method requires the **containerTypeId** parameter. It supports the `$expand` OData query parameter, except for the **drive**, **permissions**, and **customProperties** properties. If other `$filter` conditions are used, the endpoint might return intermediate pages with partial results or even no results, and the caller must continue to read all pages to get all applicable results. For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
