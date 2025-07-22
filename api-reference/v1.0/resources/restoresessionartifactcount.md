@@ -5,6 +5,7 @@ author: "divchauhan"
 ms.reviewer: "divchauhan"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
+ms.date: 07/22/2025
 doc_type: resourcePageType
 toc.title: RestoreSessionArtifactCount
 ---
