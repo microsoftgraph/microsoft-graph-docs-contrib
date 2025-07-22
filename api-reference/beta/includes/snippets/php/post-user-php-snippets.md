@@ -23,8 +23,11 @@ $requestBody->setCreateUnmatchedUsers(true);
 $managementOptions = new UserManagementOptions();
 $managementOptions->setAdditionalAttributes([new AdditionalUserAttributes('userGradeLevel'),	]);
 $managementOptionsAdditionalOptions = new AdditionalUserOptions();
-$managementOptionsAdditionalOptions->setMarkAllStudentsAsMinors(true);
 $managementOptionsAdditionalOptions->setAllowStudentContactAssociation(false);
+$additionalData = [
+	'studentAgeGroup' => 'minor',
+];
+$managementOptionsAdditionalOptions->setAdditionalData($additionalData);
 $managementOptions->setAdditionalOptions($managementOptionsAdditionalOptions);
 $requestBody->setManagementOptions($managementOptions);
 $creationOptions = new UserCreationOptions();

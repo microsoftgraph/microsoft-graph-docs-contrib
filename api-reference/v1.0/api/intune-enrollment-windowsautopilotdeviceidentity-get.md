@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/windowsAutopilotDeviceIden
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-enrollment-windowsautopilotdeviceidentity-get-get-windowsautopilotdeviceidentity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-enrollment-windowsautopilotdeviceidentity-get-get-windowsautopilotdeviceidentity-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-enrollment-windowsautopilotdeviceidentity-get-get-windowsautopilotdeviceidentity-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsA
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-companyterms-termsandconditionsassignment-list-list-termsandconditionsassignments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-companyterms-termsandconditionsassignment-list-list-termsandconditionsassignments-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-companyterms-termsandconditionsassignment-list-list-termsandconditionsassignments-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

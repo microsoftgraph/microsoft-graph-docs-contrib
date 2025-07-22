@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/resourceOperations/{resour
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-rbac-resourceoperation-get-get-resourceoperation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-rbac-resourceoperation-get-get-resourceoperation-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-rbac-resourceoperation-get-get-resourceoperation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
