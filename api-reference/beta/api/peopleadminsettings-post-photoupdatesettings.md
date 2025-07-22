@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/photoupdatesettings-update-permissions.md)]
 
+>**Note:** To use delegated permissions for this operation, the signed-in user must have either the [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role or the [People Administrator](/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
+
 ## HTTP request
 
 <!-- {
