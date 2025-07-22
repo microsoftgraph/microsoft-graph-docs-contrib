@@ -1,6 +1,6 @@
 ---
 title: "eventQuery resource type"
-description: "Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event."
+description: "Represents the workload (SharePoint Online, OneDrive for work or school, Exchange Online) and identification information associated with a retention event."
 author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "compliance"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
+Represents the workload (SharePoint Online, OneDrive for work or school, Exchange Online) and identification information associated with a retention event.
 
 ## Properties
 |Property|Type|Description|
@@ -26,7 +26,7 @@ Represents the workload (SharePoint Online, OneDrive for Business, Exchange Onli
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.eventQuery"
