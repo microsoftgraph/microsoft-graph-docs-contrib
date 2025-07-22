@@ -12,16 +12,16 @@ ms.date: 07/17/2025
 
 Namespace: microsoft.graph.security
 
-Represents a resource access attempt made by a user account.
+Represents a resource access attempt made by a [user account](./security-useraccount.md).
 
 ## Properties
 
 | Property          | Type   | Description                                                            |
 |:------------------|:-------|:-----------------------------------------------------------------------|
-| accountId      | String | The account id of the user account.                                |
-| resourceIdentifier     | String | The protocol and host name pairs describing the connection.    |
-| ipAddress       | String | Ip address of the resource.   |
 | accessDateTime        | DateTime | The time of the access event. |
+| accountId      | String | The identifier of the user account.                                |
+| ipAddress       | String | Ip address of the resource.   |
+| resourceIdentifier     | String | The protocol and host name pairs describing the connection.    |
 
 ## Relationships
 

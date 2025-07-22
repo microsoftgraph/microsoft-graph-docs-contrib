@@ -49,7 +49,7 @@ The following JSON representation shows the resource type.
   "domainName": "String",
   "userPrincipalName": "String",
   "userSid": "String",
-  "resourceAccessInfo": [
+  "resourceAccessEvents": [
     {
       "@odata.type": "microsoft.graph.security.resourceAccessEvent"
     },
