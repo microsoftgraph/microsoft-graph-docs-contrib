@@ -4,7 +4,7 @@ description: "A dictionary of name-value pairs that allows arbitrary key-value p
 author: "miritsadon"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-global-secure-access"
+ms.subservice: "non-product-specific"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ A dictionary of name-value pairs that allows arbitrary key-value pairs to be sto
 Base type of [extendedProperties](../resources/networkaccess-extendedproperties.md).
 
 ## Properties
-This resource is an open type, allowing arbitrary key-value pairs. Names must be valid property names, and values may be restricted to specific types via annotations with term `Validation.OpenPropertyTypeConstraint`.
+None.
 
 ## Relationships
 None.
