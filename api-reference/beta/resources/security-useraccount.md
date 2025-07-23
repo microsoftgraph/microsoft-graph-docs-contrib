@@ -52,7 +52,7 @@ The following JSON representation shows the resource type.
   "resourceAccessEvents": [
     {
       "@odata.type": "microsoft.graph.security.resourceAccessEvent"
-    },
-  ],
+    }
+  ]
 }
 ```
