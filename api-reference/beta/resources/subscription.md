@@ -31,7 +31,7 @@ For more information about subscriptions and change notifications, including res
 | [Update](../api/subscription-update.md) | [subscription](subscription.md) | Renew a subscription by updating its expiration time. |
 | [Delete](../api/subscription-delete.md) | None | Delete a subscription object. |
 |[Reauthorize](../api/subscription-reauthorize.md)|None|Reauthorize a subscription when you receive a **reauthorizationRequired** challenge. |
-|[getVapidPublicKey](../api/subscription-getvapidpublickey.md)|String|Get the VAPID public key to be used to create subscription following [RFC8292](https://www.rfc-editor.org/rfc/rfc8292.html)|
+|[Get VAPID](../api/subscription-getvapidpublickey.md)|String|Get the Voluntary Application Server Identification (VAPID) public key to be used to create subscription following [RFC8292](https://www.rfc-editor.org/rfc/rfc8292.html).|
 
 ## Properties
 
