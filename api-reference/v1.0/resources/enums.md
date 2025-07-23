@@ -2896,17 +2896,6 @@ Possible values for user account types (group membership), per Windows definitio
 | privateContent |
 | unknownFutureValue |
 
-### authenticationEventType values
-
-| Member |
-| ------------------ |
-| tokenIssuanceStart |
-| pageRenderStart |
-| unknownFutureValue |
-| attributeCollectionStart |
-| attributeCollectionSubmit |
-| emailOtpSend |
-
 ### authenticationMethodsPolicyMigrationState values
 
 | Member |

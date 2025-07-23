@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 06/25/2025
+ms.date: 07/21/2025
 ---
 
 # Update customAuthenticationExtension
@@ -57,6 +57,7 @@ You must specify the `@odata.type` property when updating a [customAuthenticatio
 |handler|[onAttributeCollectionStartCustomExtensionHandler](../resources/onattributecollectionstartcustomextensionhandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionStartCustomExtensionListener** listener type.|
 |handler|[onAttributeCollectionSubmitCustomExtensionHandler](../resources/onattributecollectionsubmitcustomextensionhandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionSubmitCustomExtensionListener** listener type.|
 |handler|[onOtpSendCustomExtensionHandler](../resources/onOtpSendCustomExtensionHandler.md)|The handler to invoke when conditions are met. Can be updated for the **onOtpSendCustomExtensionListener** listener type.|
+|handler|[onTokenIssuanceStartCustomExtensionHandler](../resources/onTokenIssuanceStartCustomExtensionHandler.md)|The handler to invoke when conditions are met. Can be updated for the **onTokenIssuanceStartCustomExtensionListener** listener type.|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom extension will call. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |behaviorOnError|[customExtensionBehaviorOnError](../resources/customextensionbehavioronerror.md)|Let to configure behavior if the call to custom authentication extension returns error. Optional.|
 
@@ -77,7 +78,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH hhttps://graph.microsoft.com/v1.0/identity/customAuthenticationExtensions/6fc5012e-7665-43d6-9708-4370863f4e6e
+PATCH https://graph.microsoft.com/v1.0/identity/customAuthenticationExtensions/6fc5012e-7665-43d6-9708-4370863f4e6e
 Content-Type: application/json
 Content-length: 468
 

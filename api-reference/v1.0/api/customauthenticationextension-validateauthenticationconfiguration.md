@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 06/25/2025
+ms.date: 07/21/2025
 ---
 
 # customAuthenticationExtension: validateAuthenticationConfiguration
@@ -57,7 +57,7 @@ POST /identity/customAuthenticationExtensions/validateAuthenticationConfiguratio
 
 In the request body, supply JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action. Supply a endpointConfiguration and authenticationConfiguration if querying at the root level. Otherwise, for a specific custom extension, Don't supply a request body for this method.
+The following table shows the parameters that can be used with this action. Supply a endpointConfiguration and authenticationConfiguration if querying at the root level. Otherwise, for a specific custom extension, Do not supply a request body for this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -110,7 +110,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/1.0/$metadata#microsoft.graph.authenticationConfigurationValidation",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.authenticationConfigurationValidation", 
     "errors": [
         {
             "code": "IncorrectResourceIdFormat",
