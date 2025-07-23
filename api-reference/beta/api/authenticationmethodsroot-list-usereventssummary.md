@@ -6,7 +6,6 @@ ms.date: 07/23/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
-ms.date: 07/26/2024
 ---
 
 # List userEventsSummary objects

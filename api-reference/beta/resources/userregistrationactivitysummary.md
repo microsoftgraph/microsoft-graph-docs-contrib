@@ -20,7 +20,7 @@ Represents the summary of the number of successful/unsuccessful registration and
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/userregistrationactivitysummary-list.md)|[userRegistrationActivitySummary](../resources/userregistrationactivitysummary.md) collection|Get the summary of the number of successful/unsuccessful registration and reset events for each authentication method.|
+|[List](../api/authenticationmethodsroot-userregistrationactivity.md)|[userRegistrationActivitySummary](../resources/userregistrationactivitysummary.md) collection|Get the summary of the number of successful/unsuccessful registration and reset events for each authentication method.|
 
 ## Properties
 |Property|Type|Description|

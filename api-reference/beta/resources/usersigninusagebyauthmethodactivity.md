@@ -21,7 +21,7 @@ Represents the summary of the number of successful sign ins for each authenticat
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/usersigninusagebyauthmethodactivity-list.md)|[userSignInUsageByAuthMethodActivity](../resources/usersigninusagebyauthmethodactivity.md) collection|Get the number of successful sign ins for each authentication method.|
+|[List](../api/authenticationmethodsroot-usersigninsbyauthmethodsummary.md)|[userSignInUsageByAuthMethodActivity](../resources/usersigninusagebyauthmethodactivity.md) collection|Get the number of successful sign ins for each authentication method.|
 
 ## Properties
 |Property|Type|Description|
