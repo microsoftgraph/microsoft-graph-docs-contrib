@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
       {
       "ChangeList": [
@@ -3750,6 +3750,7 @@
       "CreatedDateTime": "2025-07-23T14:44:53.5395251Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
-    }      
+    }
+
   ]
 }
