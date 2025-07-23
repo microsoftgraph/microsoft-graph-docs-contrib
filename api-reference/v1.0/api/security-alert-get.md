@@ -253,17 +253,14 @@ Content-type: application/json
         "azureAdUserId": null,
         "userPrincipalName": null,
         "displayName": "System",
-        "resourceAccessEvents":[
+        "resourceAccessEvents": [
           {
-            {
-              "accountId":"d68742fe-2171-4324-9f73-0f91034abd54",
-              "resourceIdentifier":"ldap/domain1.test.local",
-              "ipAddress":"192.168.11.32",
-              "accessDateTime":"2025-04-06T11:09:55.2010002Z"
-            }
+            "accountId":"d68742fe-2171-4324-9f73-0f91034abd54",
+            "resourceIdentifier":"ldap/domain1.test.local",
+            "ipAddress":"192.168.11.32",
+            "accessDateTime":"2025-04-06T11:09:55.2010002Z"
           }
         ]
-      }
     },
     {
       "@odata.type": "#microsoft.graph.security.registryKeyEvidence",
