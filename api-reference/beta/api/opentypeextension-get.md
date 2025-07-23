@@ -243,8 +243,6 @@ Content-type: application/json
 }
 ```
 
-****
-
 
 #### Request 2
 
@@ -443,8 +441,6 @@ Content-type: application/json
      ]
 }
 ```
-
-****
 
 #### Request 4
 
@@ -664,6 +660,7 @@ HTTP/1.1 200 OK
 
 The following example shows how to get a **driveItem** and expand its extensions using a filter. The filter returns the extension with an ID that matches a fully qualified name.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_6",
