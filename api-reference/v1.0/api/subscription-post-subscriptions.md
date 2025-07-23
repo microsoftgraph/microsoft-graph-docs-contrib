@@ -28,7 +28,7 @@ Depending on the resource and the permission type (delegated or application) req
 
 | Supported Resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |--------------------|------------------------------------|---------------------|-------------------------------------|
-| [callRecord](../resources/callrecords-callrecord.md) <br />'/communications/callRecords' | Not supported | Not supported | CallRecords.Read.All  |
+| [callRecord](../resources/callrecords-callrecord.md) <br />/communications/callRecords | Not supported | Not supported | CallRecords.Read.All  |
 | [callRecording](../resources/callrecording.md) <br />communications/onlineMeetings/getAllRecordings <br /> All recordings in an organization. | Not supported | Not supported | OnlineMeetingRecording.Read.All |
 | [callRecording](../resources/callrecording.md) <br />communications/onlineMeetings/{onlineMeetingId}/recordings <br /> All recordings for a specific meeting. | OnlineMeetingRecording.Read.All | Not supported | OnlineMeetingRecording.Read.All |
 | [callRecording](../resources/callrecording.md) <br /> users/{userId}/onlineMeetings/getAllRecordings <br /> A call recording that becomes available in a meeting organized by a specific user. | 
