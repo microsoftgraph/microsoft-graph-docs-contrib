@@ -253,6 +253,7 @@ Content-type: application/json
         "azureAdUserId": null,
         "userPrincipalName": null,
         "displayName": "System"
+      }
     },
     {
       "@odata.type": "#microsoft.graph.security.registryKeyEvidence",
