@@ -21,6 +21,7 @@ Get a list of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignment
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
+- Defender (Microsoft Defender XDR)
 
 For other Microsoft 365 applications (like Microsoft Entra ID), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
@@ -40,6 +41,10 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "rbacapplicationmultiple_list_roleassignments_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/rbacapplicationmultiple-list-roleassignments-2-permissions.md)]
 
+### For Defender provider
+
+<!-- { "blockType": "permissions", "name": "rbacapplicationmultiple_list_roleassignments_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplicationmultiple-list-roleassignments-3-permissions.md)]
 
 ## HTTP request
 
@@ -57,6 +62,14 @@ To list role assignments for an Intune provider:
 
 ```http
 GET /roleManagement/deviceManagement/roleAssignments
+```
+
+To list role assignments for a Defender provider:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/defender/roleAssignments
 ```
 
 ## Optional query parameters
@@ -355,6 +368,64 @@ Content-type: application/json
     }]
 }
 ```
+
+### Example 4: List role assignments for specific role of a Defender provider
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "list_defender_unifiedroleassignmentmultiple",
+  "sampleKeys": ["b5c08161-a7af-481c-ace2-a20a69a48fb1"]
+}-->
+
+```msgraph-interactive
+GET  https://graph.microsoft.com/beta/roleManagement/defender/roleAssignments?$filter=roleDefinitionId eq 'b5c08161-a7af-481c-ace2-a20a69a48fb1'
+```
+
+### Response
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentMultiple"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/defender/roleAssignments",
+    "value": [
+          {
+            "id": "dbe9d288-fd87-41f4-b33d-b498ed207096",
+            "displayName": "Example role assignment scoped to specific domain identity",
+            "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+            "principalIds": [
+                "8e811502-ebda-4782-8f81-071d17f0f892",
+                "30e3492f-964c-4d73-88c6-986a53c6e2a0"
+            ],
+            "appScopeIds": [
+                "Mdi", "/UserGroupId/481c-ace2-a20a69a48f"
+            ]
+        },
+        {
+            "id": "fad74173-3fe3-4e64-9a80-297bdad2b36e",
+            "displayName": "Example role assignment not scoped to any workload nor scope",
+            "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+            "principalIds": [
+                "8e811502-ebda-4782-8f81-071d17f0f892"
+            ],
+            "appScopeIds": [
+                "/"
+            ]
+        }
+    ]
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

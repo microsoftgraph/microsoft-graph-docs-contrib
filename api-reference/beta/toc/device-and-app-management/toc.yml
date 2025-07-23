@@ -182,7 +182,7 @@ items:
       href: ../../api/cloudpcdeviceimage-delete.md
     - name: Get source images
       href: ../../api/cloudpcdeviceimage-getsourceimages.md
-    - name: Re-upload
+    - name: Reupload
       href: ../../api/cloudpcdeviceimage-reupload.md
   - name: Cloud PC external partner setting
     items:
@@ -4703,8 +4703,6 @@ items:
         href: ../../api/intune-raimportcerts-userpfxcertificate-create.md
       - name: Delete userPFXCertificate
         href: ../../api/intune-raimportcerts-userpfxcertificate-delete.md
-      - name: Update userPFXCertificate
-        href: ../../api/intune-raimportcerts-userpfxcertificate-update.md
     - name: VPN configuration
       items:
       - name: VPN configuration
