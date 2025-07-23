@@ -108,7 +108,7 @@ Content-Type: application/json
       "userPrincipalName": "johndoe@contoso.net",
       "userDisplayName": "John Doe",
       "isSuccess": true,
-      "authMethod": microsoftAuthenticatorPush,
+      "authMethod": "microsoftAuthenticatorPush",
       "failureReason": "",
       "eventDateTime": "2025-07-16T16:19:18Z"
     }
