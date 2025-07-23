@@ -42,15 +42,15 @@ The following tables show the least privileged permission or permissions require
 
 ### For a Defender provider
 
-<!-- { "blockType": "permissions", "name": "unifiedrbacapplicationmultiple_delete_roledefinitions" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedrbacapplicationmultiple-delete-roledefinitions-permissions.md)]
+<!-- { "blockType": "permissions", "name": "unifiedroledefinition_delete_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-delete-3-permissions.md)]
 
 <a name='for-a-directory-azure-ad-provider'></a>
 
 ### For a directory (Microsoft Entra ID) provider
 
-<!-- { "blockType": "permissions", "name": "unifiedroledefinition_delete_3" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-delete-3-permissions.md)]
+<!-- { "blockType": "permissions", "name": "unifiedroledefinition_delete_4" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-delete-4-permissions.md)]
 
 [!INCLUDE [rbac-role-definition-apis-write](../includes/rbac-for-apis/rbac-role-definition-apis-write.md)]
 
@@ -113,10 +113,6 @@ DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroledefinition-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-unifiedroledefinition-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -187,10 +183,6 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/b
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroledefinition-cloudpc-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-unifiedroledefinition-cloudpc-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedroledefinition-cloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -234,6 +226,7 @@ HTTP/1.1 204 No Content
 
 ### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_unifiedroledefinition_defender",
@@ -243,6 +236,36 @@ HTTP/1.1 204 No Content
 ```http
 DELETE https://graph.microsoft.com/beta/roleManagement/defender/roleDefinitions/f189965f-f560-4c59-9101-933d4c87a91a
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroledefinition-defender-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedroledefinition-defender-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedroledefinition-defender-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-unifiedroledefinition-defender-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-unifiedroledefinition-defender-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedroledefinition-defender-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-unifiedroledefinition-defender-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

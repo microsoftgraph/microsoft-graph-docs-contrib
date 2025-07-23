@@ -100,10 +100,6 @@ Content-length: 534
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-iosmobileappconfiguration-update-update-iosmobileappconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-iosmobileappconfiguration-update-update-iosmobileappconfiguration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-iosmobileappconfiguration-update-update-iosmobileappconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

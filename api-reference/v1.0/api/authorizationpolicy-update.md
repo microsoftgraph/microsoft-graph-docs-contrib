@@ -88,10 +88,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authorizationpolicy-allowemailverifieduserstojoinorganization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authorizationpolicy-allowemailverifieduserstojoinorganization-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-authorizationpolicy-allowemailverifieduserstojoinorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -152,10 +148,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authorizationpolicy-blockmsolpowershell-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authorizationpolicy-blockmsolpowershell-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -222,10 +214,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -286,10 +274,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authorizationpolicy-allowedtousesspr-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authorizationpolicy-allowedtousesspr-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -356,10 +340,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authorizationpolicy-disableusercontent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authorizationpolicy-disableusercontent-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-authorizationpolicy-disableusercontent-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -424,10 +404,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authorizationpolicy-defaultuserrolepermissions-permissiongrantpoliciesassigned-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authorizationpolicy-defaultuserrolepermissions-permissiongrantpoliciesassigned-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

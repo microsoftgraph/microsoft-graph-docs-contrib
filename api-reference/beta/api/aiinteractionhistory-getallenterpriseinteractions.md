@@ -86,10 +86,6 @@ GET https://graph.microsoft.com/beta/copilot/users/9fcefe95-9677-483e-a3c1-22c5d
 [!INCLUDE [sample-code](../includes/snippets/csharp/aiinteraction-getallenterpriseinteractions-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/aiinteraction-getallenterpriseinteractions-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/aiinteraction-getallenterpriseinteractions-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -199,10 +195,6 @@ GET https://graph.microsoft.com/beta/copilot/users/4db02e4b-d144-400e-b194-53253
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/aiinteraction-getallenterpriseinteractions-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/aiinteraction-getallenterpriseinteractions-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
