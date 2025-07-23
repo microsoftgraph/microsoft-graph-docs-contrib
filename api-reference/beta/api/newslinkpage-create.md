@@ -303,7 +303,9 @@ Content-Type: application/json
   "Error: /api/newslinkpage-create.md/create-newslinkpage-multipart:
       Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2.",
   "Error: /api/newslinkpage-create.md/create-newslinkpage:
-      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2."
+      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2.",
+  "Error: /api/newslinkpage-create.md/create-newslinkpage:
+        Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2."
   ]
 }
 -->
