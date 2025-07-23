@@ -126,7 +126,7 @@ Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.3.0
 
 ### Confirm your current settings
 
-To get the name pronunciation settings configuration for an organization, use the following command. Note that the 'get' method requires PeopleSettings.Read.All permissions, and to create a Microsoft Graph session with the specifically required scope, use the following command and consent to the requested permissions.
+To get the name pronunciation settings configuration for an organization, use the following command. Note that the `get` method requires PeopleSettings.Read.All permissions, and to create a Microsoft Graph session with the specifically required scope, use the following command and consent to the requested permissions.
 
  ```powershell
 Connect-MgGraph -Scopes "PeopleSettings.Read.All"
@@ -135,7 +135,7 @@ Get-MgBetaAdminPeopleNamePronunciation
 
 ### Enable name pronunciation in your organization
 
-By default, name pronunciation is disabled in an organization, but you can use the Microsoft Graph PowerShell module to make it available. The 'update' method requires additional PeopleSettings.ReadWrite.All permissions, and to create a Microsoft Graph session with the specifically required scope, use the following command and consent to the requested permissions.
+By default, name pronunciation is disabled in an organization, but you can use the Microsoft Graph PowerShell module to make it available. The `update` method requires additional PeopleSettings.ReadWrite.All permissions, and to create a Microsoft Graph session with the specifically required scope, use the following command and consent to the requested permissions.
 
 ```powershell
 Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
