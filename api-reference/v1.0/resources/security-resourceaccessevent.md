@@ -20,7 +20,7 @@ Represents a resource access attempt made by a [user account](./security-useracc
 |:------------------|:-------|:-----------------------------------------------------------------------|
 | accessDateTime        | DateTimeOffset | The time of the access event. |
 | accountId      | String | The identifier of the user account.                                |
-| ipAddress       | String | Ip address of the resource.   |
+| ipAddress       | String | IP address of the resource.   |
 | resourceIdentifier     | String | The protocol and host name pairs describing the connection.    |
 
 ## Relationships
