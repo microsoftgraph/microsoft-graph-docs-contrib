@@ -30,19 +30,18 @@ Represents a resource access attempt made by a [user account](./security-useracc
 None.
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.userAccount"
+  "@odata.type": "microsoft.graph.security.resourceAccessEvent"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.userAccount",
+  "@odata.type": "#microsoft.graph.security.resourceAccessEvent",
   "accountId": "String",
   "resourceIdentifier": "String",
   "ipAddress": "String",
-  "accessDateTime": "String (timestamp)",
+  "accessDateTime": "String (timestamp)"
 }
 ```
