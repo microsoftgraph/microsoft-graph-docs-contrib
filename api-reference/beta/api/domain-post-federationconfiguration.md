@@ -196,7 +196,10 @@ Content-Type: application/json
   "suppressions": [
     "Error: /api/domain-post-federationconfiguration.md:
       Exception processing links.
-      Link Definition was null. Link text: !INCLUDE Azure AD PowerShell deprecation note (Parameter 'Definition')"
+      Link Definition was null. Link text: !INCLUDE Azure AD PowerShell deprecation note (Parameter 'Definition')",
+    "Error: /api/domain-post-federationconfiguration.md:
+        Exception processing links.
+        Link Definition was null. Link text: !INCLUDE Azure AD PowerShell deprecation note (Parameter 'Definition')"
   ]
 }
 -->
