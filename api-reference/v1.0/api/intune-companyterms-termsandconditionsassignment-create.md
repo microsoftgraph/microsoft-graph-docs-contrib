@@ -82,10 +82,6 @@ Content-length: 220
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-companyterms-termsandconditionsassignment-create-create-termsandconditionsassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-companyterms-termsandconditionsassignment-create-create-termsandconditionsassignment-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-companyterms-termsandconditionsassignment-create-create-termsandconditionsassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
