@@ -28,19 +28,19 @@ Depending on the resource and the permission type (delegated or application) req
 
 | Supported Resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |--------------------|------------------------------------|---------------------|-------------------------------------|
-| [callRecord](../resources/callrecords-callrecord.md) <br />/communications/callRecords | Not supported | Not supported | CallRecords.Read.All  |
-| [callRecording](../resources/callrecording.md) <br />communications/onlineMeetings/getAllRecordings <br /> All recordings in an organization. | Not supported | Not supported | OnlineMeetingRecording.Read.All |
-| [callRecording](../resources/callrecording.md) <br />communications/onlineMeetings/{onlineMeetingId}/recordings <br /> All recordings for a specific meeting. | OnlineMeetingRecording.Read.All | Not supported | OnlineMeetingRecording.Read.All |
-| [callRecording](../resources/callrecording.md) <br /> users/{userId}/onlineMeetings/getAllRecordings <br /> A call recording that becomes available in a meeting organized by a specific user. | 
-| [callTranscript](../resources/calltranscript.md) <br />communications/onlineMeetings/getAllTranscripts <br /> All transcripts in an organization. | Not supported | Not supported | OnlineMeetingTranscript.Read.All |
-| [callTranscript](../resources/calltranscript.md)<br />communications/onlineMeetings/{onlineMeetingId}/transcripts <br /> All transcripts for a specific meeting. | OnlineMeetingTranscript.Read.All | Not supported | OnlineMeetingTranscript.Read.All |
-| [callTranscript](../resources/calltranscript.md) <br /> users/{userId}/onlineMeetings/getAllTranscripts <br /> A call transcript that becomes available in a meeting organized by a specific user. | OnlineMeetingTranscript.Read.All | Not supported | OnlineMeetingTranscript.Read.All |
+| [callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
+| [callRecording](../resources/callrecording.md) <br />`communications/onlineMeetings/getAllRecordings` <br /> All recordings in an organization. | Not supported | Not supported | OnlineMeetingRecording.Read.All |
+| [callRecording](../resources/callrecording.md) <br />`communications/onlineMeetings/{onlineMeetingId}/recordings` <br /> All recordings for a specific meeting. | OnlineMeetingRecording.Read.All | Not supported | OnlineMeetingRecording.Read.All |
+| [callRecording](../resources/callrecording.md) <br /> `users/{userId}/onlineMeetings/getAllRecordings` <br /> A call recording that becomes available in a meeting organized by a specific user. | 
+| [callTranscript](../resources/calltranscript.md) <br />`communications/onlineMeetings/getAllTranscripts` <br /> All transcripts in an organization. | Not supported | Not supported | OnlineMeetingTranscript.Read.All |
+| [callTranscript](../resources/calltranscript.md)<br />`communications/onlineMeetings/{onlineMeetingId}/transcripts` <br /> All transcripts for a specific meeting. | OnlineMeetingTranscript.Read.All | Not supported | OnlineMeetingTranscript.Read.All |
+| [callTranscript](../resources/calltranscript.md) <br /> `users/{userId}/onlineMeetings/getAllTranscripts` <br /> A call transcript that becomes available in a meeting organized by a specific user. | OnlineMeetingTranscript.Read.All | Not supported | OnlineMeetingTranscript.Read.All |
 | [channel](../resources/channel.md) <br /> /teams/getAllChannels – all channels in an organization | Not supported | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All |
 | [channel](../resources/channel.md) <br /> (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 | [chat](../resources/chat.md) <br /> (/chats – all chats in an organization) | Not supported | Not supported | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 | [chat](../resources/chat.md) <br/> (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Not supported | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 | [chat](../resources/chat.md) <br /> /appCatalogs/teamsApps/{id}/installedToChats <br /> All chats in an organization where a particular Teams app is installed. | Not supported | Not supported | Chat.ReadBasic.WhereInstalled, Chat.Read.WhereInstalled, Chat.ReadWrite.WhereInstalled |
-| [chat](../resources/chat.md) <br /> /users/{id}/chats <br /> All chats that a particular user is part of. | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Not supported | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+| [chat](../resources/chat.md) <br /> `/users/{id}/chats` <br /> All chats that a particular user is part of. | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Not supported | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 | [chatMessage](../resources/chatmessage.md) <br /> (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All | Not supported | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 | [chatMessage](../resources/chatmessage.md) <br /> (/teams/getAllMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
 | [chatMessage](../resources/chatmessage.md) <br /> (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Not supported | Chat.Read.All  |
