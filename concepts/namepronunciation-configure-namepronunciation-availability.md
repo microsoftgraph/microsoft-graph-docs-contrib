@@ -119,10 +119,10 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 
 > [!NOTE]
 > The PowerShell commands for name pronunciation settings are only available in beta. Switch to the beta experience before you run the following commands.
->
-> ```powershell
->    Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.3.0
-> ```
+
+```powershell
+Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.3.0
+```
 
 ### Confirm your current settings
 
@@ -130,30 +130,27 @@ To get name pronunciation settings configuration for an organization, use the fo
 
 > [!NOTE]
 > The get method requires `PeopleSettings.Read.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
->
-> ```powershell
->    Connect-MgGraph -Scopes "PeopleSettings.Read.All"
->
 
-```powershell
-  Get-MgBetaAdminPeopleNamePronunciation
+ ```powershell
+Connect-MgGraph -Scopes "PeopleSettings.Read.All"
+Get-MgBetaAdminPeopleNamePronunciation
 ```
 
 ### Enable name pronunciation in your organization
 
-By default, name pronunciation are disabled. You can use the Microsoft Graph PowerShell module to make name pronunciation available in your organization.
+By default, name pronunciation is disabled in an organization. You can use the Microsoft Graph PowerShell module to make name pronunciation available in your organization.
 
 > [!NOTE]
 > The update method requires additional `PeopleSettings.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
->
-> ```powershell
->    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
-> ```
+
+```powershell
+Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+```
 
 Use the following command, specify `-IsEnabledInOrganization` as `true`.
 
 ```powershell
-  Update-MgBetaAdminPeopleNamePronunciation -IsEnabledInOrganization:$true
+Update-MgBetaAdminPeopleNamePronunciation -IsEnabledInOrganization:$true
 ```
 
 ### Disable name pronunciation in your organization
@@ -161,5 +158,5 @@ Use the following command, specify `-IsEnabledInOrganization` as `true`.
 Alternatively, you can make name pronunciation unavailable for your organization using the following command, where you specify `-IsEnabledInOrganization` as `false`.
 
 ```powershell
-  Update-MgBetaAdminPeopleNamePronunciation -IsEnabledInOrganization:$false
+Update-MgBetaAdminPeopleNamePronunciation -IsEnabledInOrganization:$false
 ```
