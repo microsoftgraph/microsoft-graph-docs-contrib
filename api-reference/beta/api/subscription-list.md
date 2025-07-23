@@ -6,6 +6,7 @@ author: "keylimesoda"
 doc_type: apiPageType
 ms.subservice: change-notifications
 ms.date: 07/26/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # List subscriptions
@@ -162,10 +163,6 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscriptions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-subscriptions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: apiPageType
 ms.date: 12/03/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Update copilotAdminLimitedMode
@@ -89,10 +90,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-copilotadminlimitedmode-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-copilotadminlimitedmode-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

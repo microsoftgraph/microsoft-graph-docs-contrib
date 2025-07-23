@@ -87,10 +87,6 @@ Content-length: 257
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-devices-applogcollectionrequest-update-update-applogcollectionrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-devices-applogcollectionrequest-update-update-applogcollectionrequest-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-devices-applogcollectionrequest-update-update-applogcollectionrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
