@@ -13,7 +13,7 @@ ms.date: 07/22/2025
 
 Microsoft 365 Copilot connectors offer an intuitive way to add your external data into Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
-After a connection is created, you can add your content from any external data source such as an on-premises content source or an external software as a service (SaaS) service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant in **Copilot** > **Agents and connectors** section of the Microsoft 365 admin center.
+After a connection is created, you can add your content from any external data source such as an on-premises content source or an external software as a service (SaaS) service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant via the **Copilot** > **Agents and connectors** section of the Microsoft 365 admin center.
 
 <!-- markdownlint-disable MD036 -->
 ![Sample custom helpdesk system Tickets connector structure.](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
