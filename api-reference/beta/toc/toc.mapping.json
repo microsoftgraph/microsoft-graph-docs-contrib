@@ -3059,9 +3059,7 @@
             {
               "name": "Ad hoc Calls",
               "resources": [
-                "adhocCall",
-                "callRecording",
-                "callTranscript"
+                "adhocCall"
               ]
             },
             {
