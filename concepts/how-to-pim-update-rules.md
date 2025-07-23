@@ -282,7 +282,6 @@ Content-Type: application/json
         "approvalMode": "SingleStage",
         "approvalStages": [
             {
-                "@odata.type": "microsoft.graph.unifiedApprovalStage",
                 "approvalStageTimeOutInDays": 1,
                 "isApproverJustificationRequired": true,
                 "escalationTimeInMinutes": 0,

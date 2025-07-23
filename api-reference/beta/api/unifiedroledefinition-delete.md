@@ -21,6 +21,7 @@ Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object f
 The following RBAC providers are currently supported:
 - Cloud PC
 - device management (Intune)
+- Defender (Microsoft Defender XDR Unified RBAC)
 - directory (Microsoft Entra ID) 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -39,12 +40,17 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "unifiedroledefinition_delete_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-delete-2-permissions.md)]
 
+### For a Defender provider
+
+<!-- { "blockType": "permissions", "name": "unifiedroledefinition_delete_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-delete-3-permissions.md)]
+
 <a name='for-a-directory-azure-ad-provider'></a>
 
 ### For a directory (Microsoft Entra ID) provider
 
-<!-- { "blockType": "permissions", "name": "unifiedroledefinition_delete_3" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-delete-3-permissions.md)]
+<!-- { "blockType": "permissions", "name": "unifiedroledefinition_delete_4" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-delete-4-permissions.md)]
 
 [!INCLUDE [rbac-role-definition-apis-write](../includes/rbac-for-apis/rbac-role-definition-apis-write.md)]
 
@@ -68,6 +74,12 @@ To delete a role definition for a Cloud PC provider:
 ```http
 DELETE /roleManagement/cloudPc/roleDefinitions/{id}
 
+```
+
+To delete a role definition for a Defender provider:
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /roleManagement/defender/roleDefinitions/{id}
 ```
 
 ## Request headers
@@ -204,6 +216,33 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/b
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+## Example 3: Delete a **unifiedRoleDefinition** resource for a Defender provider
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_unifiedroledefinition_defender",
+  "sampleKeys": ["f189965f-f560-4c59-9101-933d4c87a91a"]
+}-->
+
+```http
+DELETE https://graph.microsoft.com/beta/roleManagement/defender/roleDefinitions/f189965f-f560-4c59-9101-933d4c87a91a
+```
 
 ### Response
 

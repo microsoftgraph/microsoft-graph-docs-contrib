@@ -41,6 +41,7 @@ Depending on the resource that the extension was created in and the permission t
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported. | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [site](../resources/site.md) | Sites.ReadWrite.All | Not supported. | Not supported. |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [user](../resources/user.md) | User.ReadWrite | Not supported. | User.ReadWrite.All |
@@ -69,6 +70,7 @@ PATCH /users/me/todo/lists/{listId}/extensions/{extensionId}
 PATCH /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 PATCH /users/me/tasks/lists/{listId}/extensions/{extensionId}
 PATCH /drive/items/{itemId}/extensions/{extensionId}
+PATCH /sites/{siteId}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to update an extension in it. 
@@ -358,6 +360,48 @@ Content-type: application/json
 ---
 
 #### Response 3
+
+The following example shows the response that includes the updated **extensionName** in the extension.
+
+<!-- {  
+  "blockType": "response",  
+  "truncated": true,  
+  "@odata.type": "microsoft.graph.openTypeExtension"  
+} --> 
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "extensionId",
+  "extensionName": "newExtensionName",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
+}
+```
+
+
+#### Request 4
+
+The following example shows how to update an open extension on a **site**.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_opentypeextension_4",
+  "sampleKeys": ["8f52f9ad-4f4f-4739-b682-7c0283207937", "Com.Contoso.Estimate"]
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/sites/8f52f9ad-4f4f-4739-b682-7c0283207937/extensions/Com.Contoso.Estimate
+Content-type: application/json
+
+{
+  "extensionName": "newExtensionName",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
+}
+```
+
+#### Response 4
 
 The following example shows the response that includes the updated **extensionName** in the extension.
 

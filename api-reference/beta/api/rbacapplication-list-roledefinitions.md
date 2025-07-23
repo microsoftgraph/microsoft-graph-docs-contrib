@@ -20,6 +20,7 @@ Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) obj
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
+- Defender (Microsoft Defender XDR)
 - directory (Microsoft Entra ID) 
 - entitlement management (Microsoft Entra ID)
 - Exchange Online
@@ -45,6 +46,14 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (work or school account) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+
+### For a Defender provider
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.Read.Defender, RoleManagement.ReadWrite.Defender, RoleManagement.Read.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | RoleManagement.Read.Defender, RoleManagement.ReadWrite.Defender, RoleManagement.Read.All  |
 
 <a name='for-a-directory-azure-ad-provider'></a>
 
@@ -86,6 +95,12 @@ To list role definitions for a device management provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/deviceManagement/roleDefinitions
+```
+
+To list role definitions for a Defender provider:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/defender/roleDefinitions
 ```
 
 To list role definitions for a directory provider:
@@ -768,6 +783,77 @@ Content-type: application/json
             "inheritsPermissionsFrom": [
                 {
                     "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+                }
+            ]
+        }
+    ]
+}
+```
+### Example 6: List role definitions for a Defender provider
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roledefinitions_defender"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/defender/roleDefinitions
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "name": "get_roledefinitions_defender",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/defender/roleDefinitions",
+    "value": [
+         {
+            "id": "02cd625a-f26c-426d-8c81-931fc075205f",
+            "description": "Role allows read and manage security operations, security posture and configuration",
+            "displayName": "Role Definition 1",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.xdr/secops/rawdata/huntingschema/read",
+                        "microsoft.xdr/secops/securitydata/alerts/manage",
+                        "microsoft.xdr/secops/securitydata/response/manage",
+                        "microsoft.xdr/configuration/security/read",
+                        "microsoft.xdr/configuration/security/manage",
+                        "microsoft.xdr/secops/securitydata/liveresponse-basic/manage",
+                        "microsoft.xdr/securityposture/posturemanagement/read",
+                        "microsoft.xdr/securityposture/posturemanagement/exceptionhandling/manage",
+                        "microsoft.xdr/securityposture/posturemanagement/remediate/manage",
+                        "microsoft.xdr/securityposture/posturemanagement/applicationhandling/manage"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "87b93997-ee6e-45ce-b1ae-06a7104d2f65",
+            "description": "Role allows security posture read only",
+            "displayName": "Role Definition 2",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.xdr/securityposture/read"
+                    ]
                 }
             ]
         }

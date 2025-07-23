@@ -23,14 +23,12 @@ The following tables show the least privileged permission or permissions require
 
 ### List tenant-wide settings
 <!-- { "blockType": "permissions", "name": "group_list_settings" } -->
-
 [!INCLUDE [permissions-table](../includes/permissions/group-list-settings-permissions.md)]
 
 [!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
 
 ### List group-specific settings
 <!-- { "blockType": "permissions", "name": "group_list_settings_2" } -->
-
 [!INCLUDE [permissions-table](../includes/permissions/group-list-settings-2-permissions.md)]
 
 ## HTTP request
@@ -305,3 +303,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
