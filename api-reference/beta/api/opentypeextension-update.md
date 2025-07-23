@@ -380,7 +380,6 @@ Content-type: application/json
 }
 ```
 
-****
 
 #### Request 4
 
