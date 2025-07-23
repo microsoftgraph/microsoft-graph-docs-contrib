@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Voluntary Application Server Identification (VAPID) is a protocol that enables push services to identify the application server that sent push notifications. This feature allows developers to authenticate push messages using cryptographic keys and provides a way for push services to contact the application server if needed.
-
-The Microsoft Graph Change Notification service which is the application service needs to expose VAPID information to enable proper identification and authentication for web push notifications sent to subscribers. This API provides developers with the public key information required to validate push notifications according to RFC 8292 specifications.
+Get the public key information required to validate push notifications according to [RFC 8292](https://www.rfc-editor.org/rfc/rfc8292.html) specifications.
 
 ## Permissions
 
