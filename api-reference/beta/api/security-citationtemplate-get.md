@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/security/labels/citations/c0475d01-d532-8a5
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

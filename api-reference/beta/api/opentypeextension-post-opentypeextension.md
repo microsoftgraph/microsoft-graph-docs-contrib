@@ -39,6 +39,7 @@ Depending on the resource you're creating the extension in and the permission ty
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported. | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [site](../resources/site.md) | Sites.ReadWrite.All | Not supported. | Not supported. |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [user](../resources/user.md) | User.ReadWrite | Not supported. | User.ReadWrite.All |
@@ -93,6 +94,7 @@ POST /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions
 POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}/extensions
 POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions
 POST /drive/items/{itemId}/extensions
+POST /sites/{siteId}/extensions
 ```
 
 >**Note:** This syntax shows some common ways to identify a resource instance, in order to create an
@@ -734,8 +736,7 @@ Content-type: application/json
 
 ### Response 6
 
-The following example shows the response, including the properties of the new **driveItem**
-and the following for the new extension:
+The following example shows the response, including the following properties for the new extension:
 
 - The **id** property with the fully qualified name.
 - The default property **extensionName** specified in the request.
@@ -746,7 +747,7 @@ and the following for the new extension:
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.driveItem"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -818,8 +819,6 @@ Content-type: application/json
 
 ---
 
----
-
 ### Response 7
 
 The following example shows the response, including properties of the new **driveItem** and the following for the new extension:
@@ -851,6 +850,52 @@ Content-type: application/json
       "myCustomBool": false
     }
   ]
+}
+```
+
+### Request 8
+
+The following example shows how to create an open extension on an existing **site**.
+
+<!-- {
+  "blockType": "request",
+  "name": "post_opentypeextension_8",
+  "sampleKeys": ["8f52f9ad-4f4f-4739-b682-7c0283207937"]
+}-->
+```http
+POST https://graph.microsoft.com/beta/sites/8f52f9ad-4f4f-4739-b682-7c0283207937/extensions
+
+{
+  "extensionName": "myCustomExtension",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
+}
+```
+
+### Response 8
+
+The following example shows the response, including the properties of the new extension:
+
+- The **id** property with the fully qualified name.
+- The default property **extensionName** specified in the request.
+- The custom data specified in the request stored as two custom properties.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.openTypeExtension"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "myCustomExtension",
+  "extensionName": "myCustomExtension",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
 }
 ```
 
