@@ -83,7 +83,9 @@ The following example shows the response.
 }
 -->
 ```json
-  HTTP/1.1 200 OK 
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",

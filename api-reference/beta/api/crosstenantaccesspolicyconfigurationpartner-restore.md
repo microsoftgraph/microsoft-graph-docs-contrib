@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta//policies/deletedItems/crossTenantPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb/restore
+POST https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb/restore
 ```
 
 ### Response
@@ -80,7 +80,8 @@ The following example shows the response.
 }
 -->
 ```json
-  HTTP/1.1 200 OK 
+HTTP/1.1 200 OK
+Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",

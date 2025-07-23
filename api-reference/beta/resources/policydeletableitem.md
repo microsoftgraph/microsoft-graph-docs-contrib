@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 
 Resource type showing the deletable policy types. Policies under this resource type support soft delete functionality meaning they can be deleted and restored within 30 days. After 30 days, the policy is permanently deleted.
 
-This is an abstract type.
-
-Inherits from [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) and[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md).
+This resource is an abstract type from which the following resources inherit: 
+- [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)
+- [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)
 
 ## Methods
 None

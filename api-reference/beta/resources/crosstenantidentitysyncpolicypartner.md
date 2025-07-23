@@ -40,7 +40,9 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|deletedDateTime|DateTimeOffset|Shows the last date and time the policy was deleted.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

@@ -30,7 +30,10 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 | [Get](../api/crosstenantaccesspolicyconfigurationpartner-get.md) | [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) | Read the partner-specific configuration settings. |
 | [Update](../api/crosstenantaccesspolicyconfigurationpartner-update.md) | [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) | Update the properties of a partner-specific configuration. |
 | [Delete](../api/crosstenantaccesspolicyconfigurationpartner-delete.md) | None | Delete the partner-specific configuration. |
-| [Restore](../api/crosstenantaccesspolicyconfigurationpartner-restore.md) | None | Restore the partner-specific configuration. |
+| [List deleted policies](../api/policydeletableitem-list.md) | None | List all deleted partner-specific configuration policies. |
+| [Get deleted policies](../api/policydeletableitem-get.md) | None | Get a single deleted partner-specific configuration policy. |
+| [Permanently delete deleted policies](../api/policydeletableitem-delete.md) | None | Permanently delete a deleted partner-specific configuration policy. |
+| [Restore](../api/crosstenantaccesspolicyconfigurationpartner-restore.md) | None | Restore the partner-specific configuration policy. |
 
 ## Properties
 
@@ -53,6 +56,7 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |identitySynchronization|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Defines the cross-tenant policy for the synchronization of users from a partner tenant. Use this user synchronization policy to streamline collaboration between users in a multitenant organization by automating the creation, update, and deletion of users from one tenant to another.|
+|deletedDateTime|DateTimeOffset|Shows the last date and time the policy was deleted.|
 
 ## JSON representation
 
