@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /users/{usersId}/adhocCalls/(userId='{userId}',startDateTime={startDateTime},endDateTime={endDateTime})
+GET /users/{usersId}/adhocCalls/getAllRecordings(userId='{userId}',startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 >**Note:** The request fails if you don't pass the function parameter **userId**.
 
