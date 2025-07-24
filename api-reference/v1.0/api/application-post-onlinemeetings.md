@@ -21,8 +21,8 @@ Create an online meeting on behalf of a user.
 > * To be able to retrieve meeting transcripts at a later stage, use the [Create event](../api/user-post-events.md#example-4-create-and-enable-an-event-as-an-online-meeting) API that is calendar-backed.
 
 > [!NOTE]
-> If you invite a contact list of more than 150 members to a meeting, they’ll only be able to access chat during the meeting. If some people in the contact list are required attendees and the rest are optional, add them directly as participant.
-> If adding a contact list will make the chat exceed 1,000 people, you won’t be able to add the list.​​​​​​ Find more details about it [here](https://support.microsoft.com/office/chat-in-microsoft-teams-meetings-64e2cb91-8a11-4781-94ea-fbb23f2b922f)
+> If you invite a contact list of more than 150 members to a meeting, they can only access the chat during the meeting. If some people in the contact list are required attendees and the rest are optional, add them directly as participants.
+> If you add a contact list that makes the chat exceed 1,000 people, you aren't able to add the list. For more information, see [Chat in Microsoft Teams meetings](https://support.microsoft.com/office/chat-in-microsoft-teams-meetings-64e2cb91-8a11-4781-94ea-fbb23f2b922f).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -578,15 +578,15 @@ Content-Type: application/json
 
 The following example shows how to create an online meeting that is end-to-end encrypted.
 
-> **Note:** This property must be used with Teams policies to determine the final behavior, and policy updates can take up to 24 hours to apply. For details, see [Require end-to-end encryption for sensitive Teams meetings](/microsoftteams/end-to-end-encrypted-meetings).
+> **Note:** The **isEndToEndEncryptionEnabled** property must be used with Teams policies to determine the final behavior, and policy updates can take up to 24 hours to apply. For more information, see [Require end-to-end encryption for sensitive Teams meetings](/microsoftteams/end-to-end-encrypted-meetings).
 
 #### Request
 
 The following example shows a request.
 
-
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "create-encrypted-online-meeting"
 }-->
 
 ```msgraph-interactive
@@ -600,8 +600,6 @@ Content-Type: application/json
   "isEndToEndEncryptionEnabled": true
 }
 ```
-
----
 
 #### Response
 
@@ -650,6 +648,7 @@ Content-Type: application/json
   }
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
