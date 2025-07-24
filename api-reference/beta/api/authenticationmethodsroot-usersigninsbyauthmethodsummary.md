@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /reports/authenticationMethods/userSignInsByAuthMethodSummary
+GET /reports/authenticationMethods/userSignInsByAuthMethodSummary(period='{period}')
 ```
 
 ## Function parameters

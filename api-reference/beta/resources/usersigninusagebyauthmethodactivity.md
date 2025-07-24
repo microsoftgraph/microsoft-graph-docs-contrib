@@ -1,6 +1,6 @@
 ---
 title: "userSignInUsageByAuthMethodActivity resource type"
-description: "Represents the summary of the number of successful sign ins for each authentication method."
+description: "Represents the summary of the number of successful sign-ins for each authentication method enabled on the tenant."
 ms.date: 07/23/2025
 author: "egreenberg14"
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the summary of the number of successful sign ins for each authentication method.
+Represents the summary of the number of successful sign-ins for each authentication method enabled on the tenant.
 
 
 ## Methods
