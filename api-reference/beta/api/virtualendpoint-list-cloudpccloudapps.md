@@ -23,7 +23,6 @@ List all the [cloudPcCloudApp](../resources/cloudpccloudapp.md) objects filter b
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "virtualendpoint_list_cloudpccloudapp" } -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualendpoint-list-cloudpccloudapp-permissions.md)]
 
 ## HTTP request
 
@@ -52,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [cloudPcCloudApp](../resources/cloudpccloudapp.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [cloudPcCloudApp](../resources/cloudpccloudapp.md) objects in the response body, Where [cloudPcCloudAppDetail](../resources/cloudpccloudapp.md#cloudpccloudappdetail-values) specifies details about the Cloud App.
 
 ## Examples
 

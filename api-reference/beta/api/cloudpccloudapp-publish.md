@@ -23,7 +23,6 @@ Publish a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object to make it a
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "cloudpccloudapp_publish" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpccloudapp-publish-permissions.md)]
 
 ## HTTP request
 
@@ -70,6 +69,7 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudApps/publish
 Content-Type: application/json
+
 {
    ["30d0e128-de93-41dc-89ec-33d84bb662a0", "40d0e128-de93-41dc-89ec-33d84bb662a0"]
 }

@@ -23,7 +23,6 @@ Update the properties of a [cloudPcCloudApp](../resources/cloudpccloudapp.md) ob
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "cloudpccloudapp_update" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpccloudapp-update-permissions.md)]
 
 ## HTTP request
 
@@ -52,7 +51,7 @@ The following table shows the properties that can be updated for the [cloudPcClo
 |:---|:---|:---|
 |displayName|String|Specifies the display name for a Cloud App.  This is the name of the app that appears on the end-user portal, and it MUST be unique within a single provisioning policy. It uses the discovered app name as default value. Maximum allowed length for this property is 64. For example, "Paint". Supports: $filter, $select, $orderBy.|
 |description|String|Specifies the description associated with the Cloud App.  The maximum allowed length for this property is `512`. Supports: $filter, $select, $orderBy.|
-|appDetail|[cloudPcCloudAppDetail](#cloudpccloudappdetail-values)|Specifies details about the Cloud App.  These values come initially from the appDetail property of the associated discovered app.  The `iconPath`, `iconIndex`, and `commandLineArguments` properties can be changed as needed when updating the Cloud App. Supports: $select.|
+|appDetail|[cloudPcCloudAppDetail](../resources/cloudpccloudapp.md#cloudpccloudappdetail-values)|Specifies details about the Cloud App.  These values come initially from the appDetail property of the associated discovered app.  The `iconPath`, `iconIndex`, and `commandLineArguments` properties can be changed as needed when updating the Cloud App. Supports: $select.|
 
 ## Response
 
@@ -72,6 +71,7 @@ The following example shows a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudApps/40d0e128-de93-41dc-89ec-33d84bb662a0
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.cloudPcCloudApp",
    "displayName": "Cloud App example3"

@@ -5,7 +5,7 @@ author: "niniliu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
-ms.date: 12/06/2025
+ms.date: 06/12/2025
 ---
 
 # cloudPcDiscoveredApp resource type
@@ -22,7 +22,7 @@ Represents a defined collection of discovered app which app details can be used 
 |:---|:---|:---|
 |discoveredAppId |String| The unique identifier of the discovered app.  Read-only.|
 |appName |String| The name of the discovered app; for example, "Paint". Read-only.  | 
-|appDetail |[cloudPcCloudAppDetail](#cloudpccloudappdetail-values) | Specifies the details of the discovered app. Read-only.| 
+|appDetail |[cloudPcCloudAppDetail](../resources/cloudpccloudapp.md#cloudpccloudappdetail-values) | Specifies the details of the discovered app. Read-only.| 
 |sourceId |String | Specifies the ID of the source of the discovered app. For example, if the source is a custom device image, the sourceId value is the id of the image. For example: "3035e17f-c0f7-49c1-9502-5990afcaf86f". Read-only. |
 
 ### cloudPcCloudAppDetail values

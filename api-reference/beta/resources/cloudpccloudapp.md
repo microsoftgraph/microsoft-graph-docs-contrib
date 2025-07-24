@@ -107,7 +107,7 @@ The following JSON representation shows the resource type.
   "appDetail": {
     "@odata.type": "microsoft.graph.cloudPcCloudAppDetail"
   },
-  "scopeIds": "String",
+  "scopeIds": "Collection(String)",
   "actionFailedErrorCode": "String",
   "appStatus": "String",
   "actionFailedErrorMessage": "String",

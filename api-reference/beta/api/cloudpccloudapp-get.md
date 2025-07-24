@@ -23,7 +23,7 @@ Read the properties of a specific [cloudPcCloudApp](../resources/cloudpccloudapp
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "cloudpccloudapp_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpccloudapp-get-permissions.md)]
+
 
 ## HTTP request
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcCloudA
 
 ### Request
 
-<!-- {
+<!-- {Device and app management
   "blockType": "request",
   "name": "get_cloudpccloudapp"
 }
@@ -95,7 +95,7 @@ Content-Type: application/json
                         "iconPath": "C:\\Windows\\system32\\mspaint.exe",
                         "iconIndex": 0
     },
-    "provisionPolicyId": "jw3de35f-3385-46c8-a6f5-6c3dfad7708b"
+    "provisionPolicyId": "jw3de35f-3385-46c8-a6f5-6c3dfad7708b",
     "appStatus":"published",
     "lastPublishedDateTime": "2022-07-15T12:19:27.7211305Z",
     "availableToUser": true,
