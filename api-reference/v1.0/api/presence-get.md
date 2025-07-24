@@ -38,7 +38,7 @@ GET /me/presence
 > - To retrieve presence information for a specific user you **must** pass that user’s **`id`**.
 > - If you call **`GET /users/{userId}/presence`**, replace **`{userId}`** with the user’s GUID.
 > - If you call **`GET /communications/presences/{userId}`**, replace **`{userId}`** with the user’s GUID.
->  See the **[Get user](../api/user-get)** endpoint for examples on how to retrieve it.
+>  See the **[Get user](../api/user-get.md)** endpoint for examples on how to retrieve it.
 
 ## Request Headers
 | Name          | Description               |
