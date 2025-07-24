@@ -75,11 +75,15 @@ You can specify the following property when you create a **fileStorageContainerT
 If successful, this method returns a `201 Created` response code and a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object in the response body.
 
 ## Examples
+
 ### Example 1: Create a fileStorageContainerTypeRegistration for a trial fileStorageContainerType
 
-### Request
-
 The following example shows how to create a **fileStorageContainerTypeRegistration** for a trial **fileStorageContainerType** with some **applicationPermissionGrants**.
+
+#### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertyperegistration"
@@ -105,8 +109,7 @@ Content-Type: application/json
 }
 ```
 
-
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -155,11 +158,12 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create a fileStorageContainerTypeRegistration for a standard fileStorageContainerType where billing setup isn't completed.
-
-### Request
+### Example 2: Create a fileStorageContainerTypeRegistration for a standard fileStorageContainerType where billing setup isn't completed
 
 The following example shows how to create a **fileStorageContainerTypeRegistration** for a standard **fileStorageContainerType** where the billing setup isn't completed.
+
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertyperegistration_no_billing"
@@ -180,7 +184,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
