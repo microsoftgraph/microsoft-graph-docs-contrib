@@ -7,6 +7,10 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 
+| Request type |Limit per app per tenant |
+| ------------ |------------------------ |
+| POST, PATCH, DELETE | 3,000 requests per 2 minutes and 30 seconds |
+
 | Request type |Limit per user per tenant |
 | ------------ |------------------------ |
 | POST, PATCH, DELETE | 25 requests per 10 seconds |
