@@ -37,11 +37,11 @@ The [applicationPermissionGrants](../resources/filestoragecontainertypeapppermis
 |billingClassification|fileStorageContainerBillingClassification|The billing type. The possible values are: `standard`, `trial`, `directToCustomer`, `unknownFutureValue`. The default value is `standard`.|
 |billingStatus|fileStorageContainerBillingStatus|The billing status. Valid when the billing is set up or with trial **fileStorageContainerType** objects that don't require billing. The possible values are: `invalid`, `valid`, `unknownFutureValue`.|
 |etag|String|Used in update scenarios for optimistic concurrency control. Read-only.|
-|expirationDateTime|DateTimeOffset|Expiration Date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|expirationDateTime|DateTimeOffset|The expiration date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |id|String|The unique identifier of the **fileStorageContainerTypeRegistration** object. Read-only.|
 |name|String|The name of the **fileStorageContainerTypeRegistration**. Read-only.|
 |owningAppId|Guid|ID of the application that owns the **fileStorageContainerType**. Read-only.|
-|registeredDateTime|DateTimeOffset|Registration Date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|registeredDateTime|DateTimeOffset|The registration date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|The settings of the **fileStorageContainerTypeRegistration**.|
 
 ## Relationships
