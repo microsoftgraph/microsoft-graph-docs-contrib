@@ -36,6 +36,10 @@ Each fragment uploaded during an [upload session](/graph/api/resources/uploadses
 
 [Send a message with a Loop component](/graph/api/chatmessage-post).
 
+### Security
+
+Added [ResourceAccessEvent](/graph/api/security-resourceaccessevent) resource as a property in [UserAccount](/graph/api/security-useraccount)
+
 ## July 2025: New in preview only
 
 ### Device and app management | Cloud PC
