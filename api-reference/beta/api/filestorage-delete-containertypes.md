@@ -58,13 +58,11 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example1: Delete a trial fileStorageContainerType
-
->**Note**: At this time, only Trial fileStorageContainerTypes can be deleted. Attempting to delete any other type of container yields a 400 Bad Request
-
 ### Request
 
 The following example shows how to delete a **fileStorageContainerType**.
+
+>**Note**: Currently, only trial **fileStorageContainerType** objects can be deleted. If you attempt to delete any other type of container, the request results in a `400 Bad Request`.
 
 <!-- {
   "blockType": "request",
