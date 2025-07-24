@@ -1,6 +1,6 @@
 ---
-title: "message: reportMessage"
-description: "report the message as junk or phish or not junk"
+title: "Message: reportMessage"
+description: "Report the message as junk or phish or not junk"
 author: "ka-gunase"
 ms.date: 07/09/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# message: reportMessage
+# Message: reportMessage
 
 Namespace: microsoft.graph
 
@@ -52,7 +52,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ReportAction|reportAction|Indicates the type of action to be reported on the message which can be junk, notJunk or phish.|
+|ReportAction|reportAction|Indicates the type of action to be reported on the message, which can be junk, notJunk, or phish.|
 |IsMessageMoveRequested|Boolean|Indicates if the message should be moved out of current folder.|
 
 
