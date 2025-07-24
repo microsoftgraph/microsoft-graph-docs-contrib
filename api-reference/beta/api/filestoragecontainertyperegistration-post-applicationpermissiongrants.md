@@ -65,8 +65,6 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 
 ## Examples
 
-### Example 1: Add a new permission grant to a registration.
-
 ### Request
 The following example shows how to add a new permission grant to a registration.
 <!-- {
