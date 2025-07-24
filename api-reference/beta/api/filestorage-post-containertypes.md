@@ -73,7 +73,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 ### Example 1: Create a Trial fileStorageContainerType
 
 ### Request
-The following example shows how to create a trial [fileStorageContainerType](../resources/filestoragecontainertype.md) with some defaults.
+The following example shows how to create a trial [fileStorageContainerType](../resources/filestoragecontainertype.md).
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertype_from_"

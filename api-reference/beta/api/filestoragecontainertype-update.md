@@ -18,6 +18,8 @@ Update the properties of a [fileStorageContainerType](../resources/filestorageco
 
 >**Note**: When the settings are updated, the behavior of any new **fileStorageContainer** changes, but existing containers might require their [settings](../resources/filestoragecontainer.md) to be updated directly or might not be updated; for example, storage size.
 
+ETag is used for optimistic concurrency control. It must match the value from [Create](./filestorage-post-containertypes.md), [Get](./filestoragecontainertype-get.md) or the previous Update.
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

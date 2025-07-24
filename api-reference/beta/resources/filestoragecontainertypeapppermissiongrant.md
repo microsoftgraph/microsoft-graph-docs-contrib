@@ -29,8 +29,8 @@ Defines the user-delegated or app-only permissions on a container type granted t
 |Property|Type|Description|
 |:---|:---|:---|
 |appId|String|Application ID to which to set permissions.|
-|applicationPermissions|String collection|Allowed [permissions](/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when you use delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`, `unknownFutureValue`.|
-|delegatedPermissions|String collection|Allowed [permissions](/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when you use application tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`, `unknownFutureValue`.|
+|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when you use delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`, `unknownFutureValue`.|
+|delegatedPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when you use application tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -48,7 +48,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerTypeAppPermissionGrant",
   "appId": "String (identifier)",
-  "applicationPermissions": ["String"],
-  "delegatedPermissions": ["String"]
+  "applicationPermissions": ["fileStorageContainerTypeAppPermission"],
+  "delegatedPermissions": ["fileStorageContainerTypeAppPermission"]
 }
 ```

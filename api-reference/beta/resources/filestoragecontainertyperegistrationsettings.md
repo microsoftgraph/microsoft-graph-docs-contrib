@@ -26,7 +26,7 @@ Represents the settings associated with a [fileStorageContainerTypeRegistration]
 |isItemVersioningEnabled|Boolean|Indicates whether item versioning is enabled.|
 |isSearchEnabled|Boolean|Indicates whether search is enabled.|
 |isSharingRestricted|Boolean|Only the manager and owner can share files in the container if restricted sharing is enabled.|
-|itemMajorVersionLimit|Int64|Maximum number of versions. Versioning must be enabled.|
+|itemMajorVersionLimit|Int64|Maximum number of versions. Versioning must be enabled (`"isItemVersioningEnabled"=true`).|
 |maxStoragePerContainerInBytes|Int64|Controls maximum storage in bytes.|
 |sharingCapability|sharingCapabilities|Sharing capabilities permitted for containers. The possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`, `unknownFutureValue`. Can always be updated.|
 |urlTemplate|String|Pattern used to redirect files.|
