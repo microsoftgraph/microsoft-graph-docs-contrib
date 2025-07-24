@@ -5585,6 +5585,24 @@
       "CreatedDateTime": "2025-05-03T09:04:47.884691Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c7cd14b5-66f1-4c4a-b994-1a447beaa249",
+          "ApiChange": "Property",
+          "ChangedApiName": "isInteractiveRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isInteractiveRosterEnabled** property to the [callOptions](https://learn.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-1.0) resource.",
+          "Target": "callOptions"
+        }
+      ],
+      "Id": "c7cd14b5-66f1-4c4a-b994-1a447beaa249",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-07-23T20:17:07.7199965Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
     }
   ]
 }
