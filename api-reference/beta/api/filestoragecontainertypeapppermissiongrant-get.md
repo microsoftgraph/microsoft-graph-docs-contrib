@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [fileStorageCo
 
 ## Examples
 
-Get a specific app permission grant.
+### Example 1: Get a specific app permission grant.
 
 ### Request
 

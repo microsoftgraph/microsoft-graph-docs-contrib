@@ -18,7 +18,7 @@ Update the properties of a [fileStorageContainerType](../resources/filestorageco
 registered [fileStorageContainerTypeRegistrations](../resources/filestoragecontainertyperegistration.md) in a maximum of 24 hours.
 Settings overridden in a tenant aren't updated.
 
->**Note**: Updating the settings changes the behavior of any new fileStorageContainer, but existing containers may require their [settings](../resources/fileStorageContainer.md) to be updated directly, or may not be updated. E.g., storage size.
+>**Note**: When the settings are updated, the behavior of any new **fileStorageContainer** changes, but existing containers might require their [settings](../resources/filestoragecontainer.md) to be updated directly or might not be updated; for example, storage size.
 
 ## Permissions
 
@@ -57,7 +57,7 @@ PATCH /storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
 |:---|:---|:---|
 |name|String|Name of the fileStorageContainerType. Optional.|
 |settings|[fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md)|fileStorageContainerType settings. Optional.|
-|etag|String|Used for optimistic concurrency control. Must match the value returned from a Create or Get request. Required.|
+|etag|String|Used for optimistic concurrency control. Must match the value returned from a [Create](filestorage-post-containertypes.md) or [Get](filestoragecontainertype-get.md) request. Required.|
 
 
 
@@ -67,9 +67,9 @@ If successful, this method returns a `200 OK` response code and an updated [file
 
 ## Examples
 
-### Request
+### Example 1: Update a fileStorageContainerType.
 
-Update a fileStorageContainerType.
+### Request
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertype"
@@ -126,10 +126,9 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Update a fileStorageContainerType without ETag.
 
 ### Request
-
-Update a fileStorageContainerType without ETag.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertype_no_etag"

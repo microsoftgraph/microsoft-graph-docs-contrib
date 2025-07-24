@@ -15,7 +15,7 @@ import (
 )
 
 
-// To initialize your graphClient, see https://learn.microsoft.com/graph/sdks/create-client?from=snippets&tabs=go
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Storage().FileStorage().Containers().ByFileStorageContainerId("fileStorageContainer-id").PermanentDelete().Post(context.Background(), nil)
 
 

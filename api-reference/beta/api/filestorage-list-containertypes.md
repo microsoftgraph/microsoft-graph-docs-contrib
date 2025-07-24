@@ -58,9 +58,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+### Example 1: Get a list of fileStorageContainerType objects.
+
 ### Request
 
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_filestoragecontainertype"
@@ -69,7 +70,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypes
 ```
-
 
 ### Response
 

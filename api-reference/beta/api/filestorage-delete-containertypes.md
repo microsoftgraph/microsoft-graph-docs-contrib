@@ -57,9 +57,12 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
+### Example1: Delete a trial fileStorageContainerType
+
+>**Note**: At this time, only Trial fileStorageContainerTypes can be deleted. Attempting to delete any other type of container yields a 400 Bad Request
+
 ### Request
 
-Delete a fileStorageContainerType
 
 <!-- {
   "blockType": "request",
@@ -81,30 +84,3 @@ DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-### Request
-
-Delete a standard fileStorageContainerType (currently not supported).
-
-
-<!-- {
-  "blockType": "request",
-  "name": "delete_filestoragecontainertype_standard"
-}
--->
-``` http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/52a2630c-5e6a-41ff-8645-15406bafe66a
-```
-
-
-### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 400 Bad Request
-```
-

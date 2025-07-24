@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [fileStorageCo
 
 ## Examples
 
-Get a fileStorageContainerTypeRegistration using the ID.
+### Example 1: Get a fileStorageContainerTypeRegistration using the ID.
 
 ### Request
 
@@ -76,7 +76,6 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrati
 
 ### Response
 
-The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-List the permission grants associated with a fileStorageContainerTypeRegistration.
+### Example 1: List the permission grants associated with a fileStorageContainerTypeRegistration.
 
 ### Request
 

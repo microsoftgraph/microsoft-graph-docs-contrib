@@ -23,7 +23,7 @@ Configuration associated with a fileStorageContainerType.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|consumingTenantOverridables|String|fileStorageContainerTypeSettingsOverrideSettings that can be overridden in the **consuming tenant**, comma separated. The possible values are: `urlTemplate`, `isDiscoverabilityEnabled`, `isSearchEnabled`, `isItemVersioningEnabled`, `itemMajorVersionLimit`, `maxStoragePerContainerInBytes`.|
+|consumingTenantOverridables|fileStorageContainerTypeSettingsOverride|fileStorageContainerTypeSettingsOverrideSettings that can be overridden in the **consuming tenant**, comma separated. The possible values are: `urlTemplate`, `isDiscoverabilityEnabled`, `isSearchEnabled`, `isItemVersioningEnabled`, `itemMajorVersionLimit`, `maxStoragePerContainerInBytes`.|
 |isDiscoverabilityEnabled|Boolean|Enables or disables surface of items from containers in experiences like my activity or M356|
 |isItemVersioningEnabled|Boolean|Controls item versioning.|
 |isSearchEnabled|Boolean|Defines if search is enabled.|

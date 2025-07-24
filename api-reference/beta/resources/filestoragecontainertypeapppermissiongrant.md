@@ -30,8 +30,8 @@ Defines the user-delegated or app-only permissions on a container type granted t
 |Property|Type|Description|
 |:---|:---|:---|
 |appId|String|Application ID to set permissions to.|
-|applicationPermissions|String collection|Allowed [permissions](https://learn.microsoft.com/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using delegated tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
-|delegatedPermissions|String collection|Allowed [permissions](https://learn.microsoft.com/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using application tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
+|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](https://learn.microsoft.com/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using delegated tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
+|delegatedPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](https://learn.microsoft.com/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using application tokens. Allowed values: none, readContent, writeContent, manageContent, create, delete, read, write, enumeratePermissions, addPermissions, updatePermissions, deletePermissions, deleteOwnPermission, managePermissions, full|
 
 ## Relationships
 None.

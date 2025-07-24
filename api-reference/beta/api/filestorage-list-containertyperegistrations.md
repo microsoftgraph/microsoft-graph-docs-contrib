@@ -60,7 +60,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-List fileStorageContainerTypeRegistrations using SharePoint Embedded admin delegated tokens
+
+### Example 1: List fileStorageContainertypeRegistrations with delegated tokens
+The following example shows how to list fileStorageContainerTypeRegistration objects using delegated tokens with SharePoint Embedded admin permissions.
+
 ### Request
 
 <!-- {

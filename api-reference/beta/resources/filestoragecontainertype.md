@@ -35,9 +35,9 @@ A fileStorageContainerType must be [registered][fileStorageContainerTypeRegistra
 |:---|:---|:---|
 |billingClassification|fileStorageContainerBillingClassification|Billing type. Defaults to standard. The possible values are: `standard`, `trial`, `directToCustomer`.|
 |billingStatus|fileStorageContainerBillingStatus|Billing status. Valid when the billing is set up or with trial fileStorageContainerTypes, which doesn't require billing. The possible values are: `invalid`, `valid`.|
-|createdDateTime|DateTimeOffset|Creation date. Read-only.|
+|createdDateTime|DateTimeOffset|The date and time when the container type was created. Read-only.|
 |etag|String|Used in update for optimistic concurrency control. Read-only|
-|expirationDateTime|DateTimeOffset|Expiration Date. Read-only.|
+|expirationDateTime|DateTimeOffset|The expiration date and time of the container type, if any. Read-only.|
 |id|String|fileStorageContainerType ID. Read-only|
 |name|String|name of the fileStorageContainerType|
 |owningAppId|Guid|ID of the application that owns the fileStorageContainerType.|

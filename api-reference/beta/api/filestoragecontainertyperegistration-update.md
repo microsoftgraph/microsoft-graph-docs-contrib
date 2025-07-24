@@ -60,7 +60,7 @@ PATCH /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeR
 |:---|:---|:---|
 |settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|fileStorageContainerTypeRegistration settings. The subset that can be updated depends on the overridable settings in the [fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md). Optional.|
 |applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/fileStorageContainerTypeAppPermissionGrant.md) collection|define the access privileges of applications on containers of a specific fileStorageContainerType. Optional.|
-|etag|String|Used for optimistic concurrency control. Must match the value returned from a Create or Get request. Required.|
+|etag|String|Used for optimistic concurrency control. Must match the value returned from a [Create](filestorage-post-containertyperegistrations.md) or [Get](filestoragecontainertyperegistration-get.md) request. Required.|
 
 
 
@@ -69,11 +69,13 @@ PATCH /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeR
 If successful, this method returns a `200 OK` response code and an updated [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object in the response body.
 
 ## Examples
-
-### Request
+### Example 1: Update a fileStorageContainerTypeRegistration setting.
 
 Update a fileStorageContainerTypeRegistration where the owning fileStorageContainerType marked isSearchEnabled as an overridable setting.
 Note sharingCapability can always be overridden.
+
+### Request
+
 
 <!-- {
   "blockType": "request",
@@ -144,9 +146,13 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Update a fileStorageContainerTypeRegistration without ETag.
+
+Update a fileStorageContainerTypeRegistration without ETag fails with 400 Bad Request
+
 ### Request
 
-Update a fileStorageContainerTypeRegistration without ETag.
+
 
 <!-- {
   "blockType": "request",
@@ -182,11 +188,13 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 400 Bad Request
 ```
+### Example 3: Update a non-overridable fileStorageContainerTypeRegistration setting
+
+Update a fileStorageContainerTypeRegistration setting that isn't overridable in the fileStorageContainerType fails with 400 Bad Request.
+In this particular case, urlTemplate isn't overridable.
 
 ### Request
 
-Update a fileStorageContainerTypeRegistration setting that isn't overridable in the fileStorageContainerType.
-In this particular case, urlTemplate isn't overridable.
 
 <!-- {
   "blockType": "request",
