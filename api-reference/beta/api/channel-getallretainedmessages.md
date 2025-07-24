@@ -92,10 +92,6 @@ GET https://graph.microsoft.com/beta/teams/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 [!INCLUDE [sample-code](../includes/snippets/csharp/channelthisgetallretainedmessages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/channelthisgetallretainedmessages-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/channelthisgetallretainedmessages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

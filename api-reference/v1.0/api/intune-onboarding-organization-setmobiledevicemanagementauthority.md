@@ -63,10 +63,6 @@ POST https://graph.microsoft.com/v1.0/organization/{organizationId}/setMobileDev
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-organization-setmobiledevicemanagementauthority-setmobiledevicemanagementauthority-action-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-organization-setmobiledevicemanagementauthority-setmobiledevicemanagementauthority-action-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-organization-setmobiledevicemanagementauthority-setmobiledevicemanagementauthority-action-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

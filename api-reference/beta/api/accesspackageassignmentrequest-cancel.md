@@ -78,10 +78,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 [!INCLUDE [sample-code](../includes/snippets/csharp/accesspackageassignmentrequest-cancel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/accesspackageassignmentrequest-cancel-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignmentrequest-cancel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

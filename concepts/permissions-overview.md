@@ -136,10 +136,6 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/permissions-overview-limitedinfo-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/permissions-overview-limitedinfo-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/permissions-overview-limitedinfo-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
