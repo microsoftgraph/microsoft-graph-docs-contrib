@@ -16,9 +16,6 @@ Namespace: microsoft.graph
 
 Represents the structure of active and deleted [fileStorageContainer](../resources/filestoragecontainer.md) objects, [fileStorageContainerTypes](../resources/filestoragecontainer.md), and [fileStorageContainerTypeRegistrations](../resources/filestoragecontainertyperegistration.md).
 
-## Properties
-None.
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -28,6 +25,9 @@ None.
 |[Create file storage container type](../api/filestorage-post-containertypes.md)|[fileStorageContainerType](../resources/filestoragecontainertype.md)|Create a new [fileStorageContainerType](../resources/filestoragecontainertype.md) in the owning tenant.|
 |[List container type registrations](../api/filestorage-list-containertyperegistrations.md)|[fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) collection|Get a list of the [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) objects and their properties.|
 |[Create file storage container type registration](../api/filestorage-post-containertyperegistrations.md)|[fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md)|Create or replace a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object.|
+
+## Properties
+None.
 
 ## Relationships
 |Relationship|Type|Description|
