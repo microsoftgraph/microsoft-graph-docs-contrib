@@ -14,10 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## Properties
-None.
 
 Represents the structure of active and deleted [fileStorageContainer](../resources/filestoragecontainer.md) objects as well as [fileStorageContainerTypes](../resources/filestoragecontainer.md) and [fileStorageContainerTypeRegistrations](../resources/filestoragecontainertyperegistration.md)
+
+## Properties
+None.
 
 ## Methods
 |Method|Return type|Description|
@@ -32,6 +33,20 @@ Represents the structure of active and deleted [fileStorageContainer](../resourc
 |Relationship|Type|Description|
 |:---|:---|:---|
 |containers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|The collection of active **fileStorageContainer** resources.|
+|containerTypeRegistrations|[fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) collection|The collection of **fileStorageContainerTypeRegistration** resources.|
+|containerTypes|[fileStorageContainerType](../resources/filestoragecontainertype.md) collection|The collection of **fileStorageContainerType** resources.|
 |deletedContainers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|The collection of deleted **fileStorageContainer** resources.|
-|containerTypes|[fileStorageContainerType](../resources/filestoragecontainertype.md) collection|The collection of fileStorageContainerType resources|
-|containerTypeRegistrations|[fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) collection|The collection of fileStorageContainerTypeRegistration resources|
+
+## JSON representation
+
+The following JSON representation shows the response. 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.fileStorage"
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.fileStorage"
+}
+```
+

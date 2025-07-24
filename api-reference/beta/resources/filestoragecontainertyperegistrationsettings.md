@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerTypeRegistrationSettings resource type"
-description: "Settings associated with a fileStorageContainerTypeRegistration"
+description: "Represents the settings associated with a fileStorageContainerTypeRegistration."
 author: "javieralvarezchiang"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,22 +14,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings associated with a fileStorageContainerTypeRegistration. Some of these settings can be read only, 
-depending on the [settings of the fileStorageContainerType](fileStorageContainerTypeSettings.md), which define which settings are overridable.
+Represents the settings associated with a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md). Some of these settings can be read-only, depending on the [settings of the fileStorageContainerType](../resources/filestoragecontainertypesettings.md) that define which settings are overridable.
 
 > [!NOTE]
-> Some values are used when a fileStorageContainer is created but aren't affected if the settings are modified afterwards. For example, maxStoragePerContainerInBytes.
+> Some values are used when a **fileStorageContainer** is created but aren't affected if the settings are modified afterwards. For example, **maxStoragePerContainerInBytes**.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isDiscoverabilityEnabled|Boolean|Enables or disables surface of items from containers in experiences like my activity or M356|
-|isItemVersioningEnabled|Boolean|Controls item versioning.|
-|isSearchEnabled|Boolean|Defines if search is enabled.|
-|isSharingRestricted|Boolean|Only manager and owner can share files in the container if restricted sharing is true.|
+|isDiscoverabilityEnabled|Boolean|Indicates whether items from containers are surfaced in experiences such as **My Activity** or Microsoft 365.|
+|isItemVersioningEnabled|Boolean|Indicates whether item versioning is enabled.|
+|isSearchEnabled|Boolean|Indicates whether search is enabled.|
+|isSharingRestricted|Boolean|Only the manager and owner can share files in the container if restricted sharing is enabled.|
 |itemMajorVersionLimit|Int64|Maximum number of versions. Versioning must be enabled.|
 |maxStoragePerContainerInBytes|Int64|Controls maximum storage in bytes.|
-|sharingCapability|sharingCapabilities|Sharing capabilities permitted for containers. The possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`. Can always be updated|
+|sharingCapability|sharingCapabilities|Sharing capabilities permitted for containers. The possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`, `unknownFutureValue`. Can always be updated.|
 |urlTemplate|String|Pattern used to redirect files.|
 
 ## Relationships
@@ -45,14 +44,14 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerTypeRegistrationSettings",
-  "sharingCapability": "String",
-  "urlTemplate": "String",
   "isDiscoverabilityEnabled": "Boolean",
-  "isSearchEnabled": "Boolean",
   "isItemVersioningEnabled": "Boolean",
-  "itemMajorVersionLimit": "Integer",
-  "maxStoragePerContainerInBytes": "Integer",
-  "isSharingRestricted": "Boolean"
+  "isSearchEnabled": "Boolean",
+  "isSharingRestricted": "Boolean",
+  "itemMajorVersionLimit": "Int64",
+  "maxStoragePerContainerInBytes": "Int64",
+  "sharingCapability": "String",
+  "urlTemplate": "String"
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
-title: "List fileStorageContainerType objects"
-description: "Get a list of the fileStorageContainerType objects and their properties."
+title: "List containerTypes"
+description: "Get a list of the fileStorageContainerType objects and their properties for the current tenant."
 author: "javieralvarezchiang"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -8,25 +8,27 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# List fileStorageContainerType objects in the current tenant
+# List containerTypes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [fileStorageContainerType](../resources/filestoragecontainertype.md) objects and their properties.
+Get a list of the [fileStorageContainerType](../resources/filestoragecontainertype.md) objects and their properties for the current tenant.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-SharePoint Embedded admin or Global admin role is required.
 <!-- {
   "blockType": "permissions",
   "name": "filestorage-list-containertypes-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestorage-list-containertypes-permissions.md)]
+
+>**Note:**
+> Either the SharePoint Embedded admin role or the Global admin role is required to call this API.
 
 ## HTTP request
 
@@ -40,7 +42,7 @@ GET /storage/fileStorage/containerTypes
 
 ## Optional query parameters
 
-This method supports `$filter, $select, $orderby, $count, $top and $skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$select`, `$orderby`, `$count`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -78,7 +80,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.fileStorageContainerType"
+  "@odata.type": "Collection(microsoft.graph.fileStorageContainerType)"
 }
 -->
 ``` http
@@ -121,7 +123,7 @@ Content-Type: application/json
         "isDiscoverabilityEnabled": true,
         "isSearchEnabled": true,
         "isItemVersioningEnabled": false,
-        "itemMajorVersionLimit": "100",
+        "itemMajorVersionLimit": 100,
         "maxStoragePerContainerInBytes": 104857600,
         "isSharingRestricted": false,
         "consumingTenantOverridables": ""

@@ -20,15 +20,16 @@ Read the properties and relationships of a [fileStorageContainerTypeRegistration
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-When delegated tokens are used, SharePoint Embedded admin or Global admin role is required.
-If FileStorageContainerTypeReg.Selected is used, results are limited to [registrations](../resources/filestoragecontainertyperegistration.md) owned by the application 
-making the call.
 <!-- {
   "blockType": "permissions",
   "name": "filestoragecontainertyperegistration-get-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainertyperegistration-get-permissions.md)]
+
+>**Note:**
+> * When delegated tokens are used, either the SharePoint Embedded admin role or the Global admin role is required.
+> * If the `FileStorageContainerTypeReg.Selected` permission is used, results are limited to [registrations](../resources/filestoragecontainertyperegistration.md) owned by the application that makes the call.
 
 ## HTTP request
 
@@ -42,7 +43,7 @@ GET /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeReg
 
 ## Optional query parameters
 
-This method supports $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -63,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a [fileStorageCo
 ### Example 1: Get a fileStorageContainerTypeRegistration using the ID.
 
 ### Request
-
+The following example shows how to get a **fileStorageContainerTypeRegistration** using its ID.
 <!-- {
   "blockType": "request",
   "name": "get_filestoragecontainertyperegistration"
@@ -72,7 +73,6 @@ If successful, this method returns a `200 OK` response code and a [fileStorageCo
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 ```
-
 
 ### Response
 

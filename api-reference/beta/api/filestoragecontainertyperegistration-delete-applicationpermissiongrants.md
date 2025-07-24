@@ -1,6 +1,6 @@
 ---
 title: "Delete fileStorageContainerTypeAppPermissionGrant"
-description: "Delete a fileStorageContainerTypeAppPermissionGrant object."
+description: "Delete a fileStorageContainerTypeAppPermissionGrant object in a fileStorageContainerTypeRegistration."
 author: "javieralvarezchiang"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,16 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a fileStorageContainerTypeAppPermissionGrant object in a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md)
-
+Delete a [fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md) object in a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md).
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-When delegated tokens are used, SharePoint Embedded admin or Global admin role is required.
-If FileStorageContainerTypeReg.Selected is used, changes are limited to [registrations](../resources/filestoragecontainertyperegistration.md) owned by the application
-making the call.
 
 <!-- {
   "blockType": "permissions",
@@ -31,6 +26,10 @@ making the call.
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainertyperegistration-delete-applicationpermissiongrants-permissions.md)]
+
+>**Note:**
+> * When delegated tokens are used, either the SharePoint Embedded admin role or the Global admin role is required.
+> * If the `FileStorageContainerTypeReg.Selected` permission is used, changes are limited to [registrations](../resources/filestoragecontainertyperegistration.md) owned by the application that makes the call.
 
 ## HTTP request
 
@@ -62,6 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following example shows how to delete a permission grant in a storage container type registration.
 <!-- {
   "blockType": "request",
   "name": "delete_filestoragecontainertypeapppermissiongrant"
@@ -72,7 +72,7 @@ DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistr
 ```
 
 ### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

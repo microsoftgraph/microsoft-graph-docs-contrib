@@ -1,6 +1,6 @@
 ---
 title: "Create fileStorageContainerTypeAppPermissionGrant"
-description: "Create a new fileStorageContainerTypeAppPermissionGrant object."
+description: "Create a new fileStorageContainerTypeAppPermissionGrant object in a fileStorageContainerTypeRegistration."
 author: "javieralvarezchiang"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,21 +14,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new fileStorageContainerTypeAppPermissionGrant object in a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md).
+Create a new [fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md) object in a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md).
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-When delegated tokens are used, SharePoint Embedded admin or Global admin role is required.
-If FileStorageContainerTypeReg.Selected is used, changes are limited to [registrations](../resources/filestoragecontainertypeRegistration.md) owned by the application
-making the call.
 <!-- {
   "blockType": "permissions",
   "name": "filestoragecontainertyperegistration-post-applicationpermissiongrants-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainertyperegistration-post-applicationpermissiongrants-permissions.md)]
+
+>**Note:**
+> * When delegated tokens are used, either the SharePoint Embedded admin role or the Global admin role is required.
+> * If the `FileStorageContainerTypeReg.Selected` permission is used, changes are limited to [registrations](../resources/filestoragecontainertyperegistration.md) owned by the application that makes the call.
 
 ## HTTP request
 
@@ -49,18 +50,14 @@ PUT /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeReg
 
 ## Request body
 
-In the request body, supply a JSON representation of the [fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md) object.
+In the request body, supply a JSON representation of the [fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md) object. Don't include the **appId** in the body.
 
-Don't include the appId in the body.
-
-You can specify the following properties when creating a **fileStorageContainerTypeAppPermissionGrant**.
+You can specify the following properties when you create a **fileStorageContainerTypeAppPermissionGrant**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|delegatedPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](https://learn.microsoft.com/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|
-|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](https://learn.microsoft.com/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when using application tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`. Optional.|
-
-
+|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when you use application tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`, `unknownFutureValue`. Optional.|
+|delegatedPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when you use delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`, `unknownFutureValue`. Optional.|
 
 ## Response
 
@@ -71,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 ### Example 1: Add a new permission grant to a registration.
 
 ### Request
-
+The following example shows how to add a new permission grant to a registration.
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertypeapppermissiongrant_from_"
@@ -87,9 +84,8 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
-
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

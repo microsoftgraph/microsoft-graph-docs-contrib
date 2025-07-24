@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [fileStorageContainerType](../resources/filestoragecontainertype.md) object. The properties updated are reflected in 
-registered [fileStorageContainerTypeRegistrations](../resources/filestoragecontainertyperegistration.md) in a maximum of 24 hours.
-Settings overridden in a tenant aren't updated.
+Update the properties of a [fileStorageContainerType](../resources/filestoragecontainertype.md) object. The properties updated are reflected in each registered [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) in a maximum of 24 hours. Settings overridden in a tenant aren't updated.
 
 >**Note**: When the settings are updated, the behavior of any new **fileStorageContainer** changes, but existing containers might require their [settings](../resources/filestoragecontainer.md) to be updated directly or might not be updated; for example, storage size.
 
@@ -52,7 +50,6 @@ PATCH /storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|Name of the fileStorageContainerType. Optional.|
@@ -70,6 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [file
 ### Example 1: Update a fileStorageContainerType.
 
 ### Request
+The following example shows how to update a **fileStorageContainerType**.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertype"
@@ -85,13 +83,12 @@ Content-Type: application/json
     "isItemVersioningEnabled": true,
     "isSharingRestricted": false
   },
-  "etag": "RVRhZw==",
+  "etag": "RVRhZw=="
 }
 ```
 
-
 ### Response
-
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -121,7 +118,7 @@ Content-Type: application/json
     "itemMajorVersionLimit": 50,
     "maxStoragePerContainerInBytes": 104857600,
     "isSharingRestricted": false,
-    "consumingTenantOverridables": "",
+    "consumingTenantOverridables": ""
   }
 }
 ```
@@ -129,6 +126,7 @@ Content-Type: application/json
 ### Example 2: Update a fileStorageContainerType without ETag.
 
 ### Request
+The following example shows how to update a **fileStorageContainerType** without an **etag**.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertype_no_etag"
@@ -148,9 +146,8 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
