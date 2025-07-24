@@ -5,7 +5,7 @@ author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 06/25/2025
+ms.date: 07/24/2025
 toc.title: On email OTP send listener
 ---
 
@@ -33,7 +33,7 @@ For the list of API operations for managing this resource type, see the [authent
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |handler|[onOtpSendHandler](../resources/onotpsendhandler.md)|Used to configure what to invoke if the onEmailOTPSend event resolves to this listener. This base class serves as a generic OTP event handler used for both email and SMS OTP messages.|
 |id|String|The unique identifier for the onEmailOtpSendCustomExtension object. Inherited from [entity](../resources/entity.md).|
-|priority|Int32|The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+[authenticationEventListener](../resources/authenticationeventlistener.md).|
 
 ## Relationships
 None.
@@ -52,7 +52,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.onEmailOtpSendListener",
   "id": "String (identifier)",
-  "priority": "Integer",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },
