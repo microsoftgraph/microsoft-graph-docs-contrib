@@ -35,7 +35,7 @@ None.
 |userRegistrationDetails|[userRegistrationDetails](../resources/userregistrationdetails.md)| Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multifactor authentication, self-service password reset, and passwordless authentication).|
 |userEventsSummary|[userEventsSummary](../resources/usereventssummary.md) collection|Represents a specific user MFA/SSPR registration or reset event, including whether the event was successful, which authentication method was targeted, and failure reason if any.|
 |userMfaSignInSummary|[userMfaSignInSummary](../resources/usermfasigninsummary.md) collection|Represents the total count of MFA vs non MFA sign in counts for a given window|
-|userPasswordResetsAndChangesSummary|[userPasswordResetsAndChangesSummary](../resources/userpasswordresetsandchangessummary.md) collection|Represents the summary of password resets and changes for a specific day. This includes the number of password resets that were self service as well as triggered by an administrator. This also includes the number of self service password changes. |
+|userPasswordResetsAndChangesSummary|[userPasswordResetsAndChangesSummary](../resources/userpasswordresetsandchangessummary.md) collection|Represents the summary of password resets and changes for a specific day. This includes the number of password resets that were self-service and those triggered by an administrator.|
 
 
 ## JSON representation

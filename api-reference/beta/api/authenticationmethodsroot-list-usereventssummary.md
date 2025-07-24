@@ -44,7 +44,7 @@ GET /reports/authenticationMethods/userEventsSummary
 
 ## Optional query parameters
 
-This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [usereventssummary](../resources/usereventssummary.md) resource.
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [usereventssummary](../resources/usereventssummary.md) resource. You may also apply the `$top` query parameter to limit the number of results returned to a specific number. The default and max `$top` parameter is 1000 records. 
 
 | Property          | Description                                                                                                                     | Example                                                                   |
 |:------------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|

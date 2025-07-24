@@ -4,7 +4,7 @@ description: "Represents a specific user MFA/SSPR registration or reset event, i
 author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
-doc_type: resourcePageType"
+doc_type: resourcePageType
 ms.date: 07/23/2025
 ---
 
@@ -27,13 +27,13 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authMethod|usageAuthMethod|The authentication method being targeted in the event. The possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion`, `appNotification`, `appCode`, `alternateMobileCall`, `fido`, `appPassword`, `unknownFutureValue`, `externalAuthMethod`.|
+|authMethod|usageAuthMethod|The authentication method being targeted in the event. The possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion`, `appNotification`, `appCode`, `alternateMobileCall`, `fido`, `appPassword`, `unknownFutureValue`, `externalAuthMethod`.. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `externalAuthMethod`.|
 |eventDateTime|DateTimeOffset|The date and time (UTC) when the event occurred.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |failureReason|String|The specific reason why the event failed (if it was not successful.)|
 |feature|featureType|The type of event that occurred. The possible values are: `registration`, `reset`, `unknownFutureValue`.|
 |id|String|User object identifier in Microsoft Entra ID. Inherited from [entity](../resources/entity.md).|
 |isSuccess|Boolean|Indicates whether the event was successful or not.|
-|userDisplayName|String|*The user display name, such as `Adele Vance`. Supports `$filter` (`eq`, `startsWith`) and `$orderby`.|
+|userDisplayName|String|The user display name, such as `Adele Vance`. Supports `$filter` (`eq`, `startsWith`) and `$orderby`.|
 |userPrincipalName|String|The user principal name, such as `AdeleV@contoso.com`. Supports `$filter` (`eq`, `startsWith`) and `$orderby`.|
 
 ## Relationships

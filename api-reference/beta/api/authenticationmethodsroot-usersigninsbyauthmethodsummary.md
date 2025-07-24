@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodsRoot: userSignInsByAuthMethodSummary"
-description: "Gets the number of successful sign ins for each authentication methods."
+description: "Gets a list of the number of successful sign ins for each authentication method that is available."
 ms.date: 07/23/2025
 author: "egreenberg14"
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the number of successful sign ins for each authentication methods.
+Gets a list of the number of successful sign ins for each authentication method that is available.
 
 ## Permissions
 

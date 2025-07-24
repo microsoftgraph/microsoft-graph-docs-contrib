@@ -8,7 +8,7 @@ ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
-# List userPasswordResetsAndChangesSummary
+# List userPasswordResetsAndChangesSummary objects
 
 Namespace: microsoft.graph
 
@@ -109,7 +109,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.userPasswordResetsAndChangesSummary",
       "id": "05c13e12-e8e7-4b8f-8963-db3257ddc39d",
-      "aggregatedDateTime": "2025-07-5T16:19:18Z",
+      "aggregatedDateTime": "2025-07-05T16:19:18Z",
       "passwordResetsByAdminCount": 50,
       "passwordResetsSelfServiceCount": 0,
       "changePasswordSelfServiceCount": 10

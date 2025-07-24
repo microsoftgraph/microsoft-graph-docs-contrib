@@ -1606,6 +1606,7 @@ Namespace: microsoft.graph
 | fido |
 | appPassword |
 | unknownFutureValue |
+| externalAuthMethod |
 
 ### authenticationAppAdminConfiguration values
 

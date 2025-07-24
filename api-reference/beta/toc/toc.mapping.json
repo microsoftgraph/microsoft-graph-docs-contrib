@@ -2425,7 +2425,12 @@
                     "userCredentialUsageDetails",
                     "userRegistrationDetails",
                     "userRegistrationFeatureSummary",
-                    "userRegistrationMethodSummary"
+                    "userRegistrationMethodSummary",
+                    "userEventsSummary",
+                    "userMfaSignInSummary",
+                    "userPasswordResetsAndChangesSummary",
+                    "userRegistrationActivitySummary",
+                    "userSignInUsageByAuthMethodActivity"
                   ]
                 }
               ]

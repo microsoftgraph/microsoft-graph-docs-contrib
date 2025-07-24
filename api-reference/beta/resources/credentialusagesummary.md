@@ -6,7 +6,7 @@ author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ms.date: 07/22/2024
-toc.title: Credential Usage Summary (deprecated)
+toc.title: Credential usage summary (deprecated)
 ---
 
 # credentialUsageSummary resource type
