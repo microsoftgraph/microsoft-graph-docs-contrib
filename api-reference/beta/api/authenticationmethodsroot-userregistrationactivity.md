@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /reports/authenticationMethods/userRegistrationActivity
+GET /reports/authenticationMethods/userRegistrationActivity(period='{period}')
 ```
 
 ## Function parameters
