@@ -327,44 +327,29 @@ Content-Type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2020-7-16 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Patch online meeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
-
 ### Example 3: Enable end-to-end encryption on an existing online meeting
 
 The following example shows how to enable end-to-end encryption on an existing online meeting.
 
-> **Note:** This property must be used with Teams policies to determine the final behavior, and policy updates can take up to 24 hours to apply. For more information, see [Require end-to-end encryption for sensitive Teams meetings](/microsoftteams/end-to-end-encrypted-meetings).
+> **Note:** The **isEndToEndEncryptionEnabled** property must be used with Teams policies to determine the final behavior, and policy updates can take up to 24 hours to apply. For more information, see [Require end-to-end encryption for sensitive Teams meetings](/microsoftteams/end-to-end-encrypted-meetings).
 
 #### Request
 
 The following example shows a request.
 
-
 <!-- {
   "blockType": "request",
+  "name": "enable-encryption-on-existing-online-meeting"
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/V1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
+PATCH https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
 Content-Type: application/json 
 
 {
   "isEndToEndEncryptionEnabled": true
 }
 ```
----
 
 #### Response
 
@@ -415,3 +400,16 @@ Content-Type: application/json
 }
 ```
 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2020-7-16 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Patch online meeting",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
