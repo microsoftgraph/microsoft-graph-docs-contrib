@@ -28,8 +28,8 @@ Represents information about companies related to entities within their [profile
 |pronunciation   |String                               | Pronunciation guide for the company name.              |
 |secondaryDepartment|String                            | Secondary Department Name within a company.            |
 |webUrl          |String                               | Link to the company home page.                         |
-|costCenter      |String                               | TODO add description                                   |
-|division        |String                               | TODO add description                                   |
+|costCenter      |String                               | The cost center associated with the company or department. |
+|division        |String                               | The division within the company.                       |
 
 ## JSON representation
 
@@ -53,7 +53,9 @@ The following JSON representation shows the resource type.
   "officeLocation": "String",
   "pronunciation": "String",
   "secondaryDepartment": "String",
-  "webUrl": "String"
+  "webUrl": "String",
+  "costCenter": "String",
+  "division": "String"
 }
 ```
 

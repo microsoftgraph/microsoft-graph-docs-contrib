@@ -44,8 +44,8 @@ Inherits from [itemFacet](itemfacet.md).
 |preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Contains the language the user has associated as preferred for the account.   |
 |source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |userPrincipalName|String|The user principal name (UPN) of the user associated with the account.   |
-|userPersona|userPerasona|Represents the users persona with following possible values: `unknown`, `externalMember`, `externalGuest`, `internalMember`, `internalGuest`, `unknownFutureValue`.|
-|originTenantInfo|[originTenantInfo](../resources/originTenantInfo.md)|TODO descrition|
+|userPersona|userPersona|Represents the user's persona with the following possible values: `unknown`, `externalMember`, `externalGuest`, `internalMember`, `internalGuest`, `unknownFutureValue`.|
+|originTenantInfo|[originTenantInfo](../resources/originTenantInfo.md)|Contains identifiers of the user and the origin tenant that provisioned the user. It is populated when the user is invited as a guest to the host tenant.|
 
 ## Relationships
 None.
@@ -84,6 +84,10 @@ The following JSON representation shows the resource type.
   "preferredLanguageTag": {
     "@odata.type": "microsoft.graph.localeInfo"
   },
-  "userPrincipalName": "String"
+  "userPrincipalName": "String",
+  "userPersona": "String",
+  "originTenantInfo": {
+    "@odata.type": "microsoft.graph.originTenantInfo"
+  }
 }
 ```
