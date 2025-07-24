@@ -49,11 +49,13 @@ PATCH /policies/mobileDeviceManagementPolicies/{id}
 
 In the request body, supply a JSON representation of the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object.
 
-In the request body, supply the values for fields listed below that should be updated. **Note:** You cannot use `PATCH` operation for `appliesTo` with the other properties.
+In the request body, supply the values for fields listed below that should be updated. 
+**Note:** `PATCH` operation for `appliesTo` or `isMdmEnrollmentDuringRegistrationDisabled` cannot be combined with the other properties.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |appliesTo|policyScope|Determines the groups this policy setting applies to. Possible values are: `none`, `all`, `selected` **Important:** `selected` cannot be used when specifying this property. Use [includedGroups](../api/mobiledevicemanagementpolicies-post-includedgroups.md) to add specific groups. Using `all` will remove any existing groups.|
+|isMdmEnrollmentDuringRegistrationDisabled|Boolean|Determines whether user will be asked to enroll the device to the MDM provider when they register their new device.|
 |complianceUrl|String|Compliance URL of the mobility management application|
 |discoveryUrl|String|Discovery URL of the mobility management application|
 |termsOfUseUrl|String|Terms of Use URL of the mobility management application|
