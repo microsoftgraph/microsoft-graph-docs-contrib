@@ -9,8 +9,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EngagementRoleMember engagementRoleMember = new EngagementRoleMember();
-engagementRoleMember.setOdataType("#microsoft.graph.engagementrolemember");
-engagementRoleMember.setUserId("String");
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("user@odata.bind", "https://graph.microsoft.com/beta/users('userId')");
+engagementRoleMember.setAdditionalData(additionalData);
 EngagementRoleMember result = graphClient.employeeExperience().roles().byEngagementRoleId("{engagementRole-id}").members().post(engagementRoleMember);
 
 

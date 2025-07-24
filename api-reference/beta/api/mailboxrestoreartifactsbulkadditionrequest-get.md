@@ -78,10 +78,6 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSess
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxrestoreartifactsbulkadditionrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-mailboxrestoreartifactsbulkadditionrequest-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-mailboxrestoreartifactsbulkadditionrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
