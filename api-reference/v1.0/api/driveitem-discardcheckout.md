@@ -84,10 +84,6 @@ POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}/discardC
 [!INCLUDE [sample-code](../includes/snippets/csharp/driveitemthisdiscardcheckout-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/driveitemthisdiscardcheckout-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/driveitemthisdiscardcheckout-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
