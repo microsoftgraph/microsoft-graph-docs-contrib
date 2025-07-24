@@ -7,7 +7,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: sharepoint
 ---
-
 # Delete a sharing permission from a file or folder
 
 Namespace: microsoft.graph
