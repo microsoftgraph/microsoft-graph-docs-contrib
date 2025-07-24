@@ -57,8 +57,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Delete a permission grant in a storage container type registration.
-
 ### Request
 
 The following example shows how to delete a permission grant in a storage container type registration.
