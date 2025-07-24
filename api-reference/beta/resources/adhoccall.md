@@ -18,13 +18,6 @@ Contains information about a call.
 
 This resource supports subscribing to [change notifications](/graph/webhooks).
 
-## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List recordings](../api/adhoccall-list-recordings.md)|[callRecording](../resources/callrecording.md) collection | Retrieve the list of [callRecording](../resources/callrecording.md) objects associated with a call. |
-|[List transcripts](../api/adhoccall-list-transcripts.md)|[callTranscript](../resources/calltranscript.md) collection | Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a call. |
-
 ## Properties
 
 |Property|Type|Description|
