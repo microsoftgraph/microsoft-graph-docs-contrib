@@ -61,8 +61,6 @@ If successful, this method returns a `200 OK` response code and a [fileStorageCo
 
 ## Examples
 
-### Example 1: Get a fileStorageContainerTypeRegistration using the ID.
-
 ### Request
 The following example shows how to get a **fileStorageContainerTypeRegistration** using its ID.
 <!-- {
