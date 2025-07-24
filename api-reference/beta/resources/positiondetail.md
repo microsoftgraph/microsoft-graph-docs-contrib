@@ -31,6 +31,8 @@ Represents information about positions related to entities within a user's [prof
 |secondaryRole|String|An optional role for the position entailed.|
 |startMonthYear|Date|The start date of the position.|
 |summary|String|The summary of the position.|
+|employeeId|String|TODO add description|
+|employeeType|String|TODO add description|
 
 ## JSON representation
 

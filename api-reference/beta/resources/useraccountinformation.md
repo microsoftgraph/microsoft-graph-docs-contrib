@@ -44,6 +44,8 @@ Inherits from [itemFacet](itemfacet.md).
 |preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Contains the language the user has associated as preferred for the account.   |
 |source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |userPrincipalName|String|The user principal name (UPN) of the user associated with the account.   |
+|userPersona|userPerasona|Represents the users persona with following possible values: `unknown`, `externalMember`, `externalGuest`, `internalMember`, `internalGuest`, `unknownFutureValue`.|
+|originTenantInfo|[originTenantInfo](../resources/originTenantInfo.md)|TODO descrition|
 
 ## Relationships
 None.
