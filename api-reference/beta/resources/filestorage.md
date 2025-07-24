@@ -1,6 +1,6 @@
 ---
 title: "fileStorage resource type"
-description: "Represents the structure of active and deleted fileStorageContainer objects."
+description: "Represents the structure of active and deleted fileStorageContainer objects, fileStorageContainerTypes, and fileStorageContainerTypeRegistrations."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Represents the structure of active and deleted [fileStorageContainer](../resources/filestoragecontainer.md) objects as well as [fileStorageContainerTypes](../resources/filestoragecontainer.md) and [fileStorageContainerTypeRegistrations](../resources/filestoragecontainertyperegistration.md)
+Represents the structure of active and deleted [fileStorageContainer](../resources/filestoragecontainer.md) objects, [fileStorageContainerTypes](../resources/filestoragecontainer.md), and [fileStorageContainerTypeRegistrations](../resources/filestoragecontainertyperegistration.md).
 
 ## Properties
 None.
