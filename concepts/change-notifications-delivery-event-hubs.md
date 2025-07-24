@@ -281,10 +281,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='0bf30f3b-4a52-48df
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-eventhubs-get-changetrackingapp-sp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-eventhubs-get-changetrackingapp-sp-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/change-notifications-eventhubs-get-changetrackingapp-sp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -331,10 +327,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-eventhubs-create-changetrackingapp-sp-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-eventhubs-create-changetrackingapp-sp-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

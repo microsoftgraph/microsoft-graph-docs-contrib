@@ -22,6 +22,7 @@ var requestBody = new SendActivityNotificationPostRequestBody
 	{
 		Content = "new announcemnet posted",
 	},
+	IconId = "announcementCreated",
 	Recipient = new AadUserNotificationRecipient
 	{
 		OdataType = "microsoft.graph.aadUserNotificationRecipient",
@@ -38,12 +39,6 @@ var requestBody = new SendActivityNotificationPostRequestBody
 		{
 			Name = "currentSlot",
 			Value = "23",
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"iconId" , "announcementCreated"
 		},
 	},
 };

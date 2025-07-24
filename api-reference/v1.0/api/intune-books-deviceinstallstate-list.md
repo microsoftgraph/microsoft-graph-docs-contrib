@@ -64,10 +64,6 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedE
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-books-deviceinstallstate-list-list-deviceinstallstates-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-books-deviceinstallstate-list-list-deviceinstallstates-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-books-deviceinstallstate-list-list-deviceinstallstates-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

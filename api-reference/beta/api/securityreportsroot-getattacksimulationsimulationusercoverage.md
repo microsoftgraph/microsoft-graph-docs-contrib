@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationSimulat
 [!INCLUDE [sample-code](../includes/snippets/csharp/securityreportsrootthisgetattacksimulationsimulationusercoverage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/securityreportsrootthisgetattacksimulationsimulationusercoverage-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/securityreportsrootthisgetattacksimulationsimulationusercoverage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

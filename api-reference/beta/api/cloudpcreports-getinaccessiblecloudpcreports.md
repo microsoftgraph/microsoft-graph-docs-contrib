@@ -73,6 +73,32 @@ The following table shows the parameters that you can use with this method.
 
 If successful, this method returns a `200 OK` response code and a Stream object in the response body.
 
+The following table describes the columns in the returned report when you specify `inaccessibleCloudPcReports` for the **reportName** property in your API call. For `inaccessibleCloudPcReports`, the member values must be in camel case format.
+
+| Member                         | Description                                                         |
+|:-------------------------------|:--------------------------------------------------------------------|
+| cloudPcId                      | The unique identifier of the Cloud PC.                              |
+| cloudPcName                    | The display name of the Cloud PC.                                   |
+| deviceHealthStatus             | The current health status of the Cloud PC device.                   |
+| deviceHealthStatusDateTime     | The date and time when the device health status was last updated.   |
+| provisioningStatus             | The provisioning status of the Cloud PC.                            |
+| recentConnectionFailureCount   | The count of recent connection failures for the Cloud PC.           |
+| recentDeviceHealthFailureCount | The count of recent device health check failures.                   |
+| region                         | The Azure region where the Cloud PC is hosted.                      |
+| systemStatus                   | The current system status of the Cloud PC.                          |
+| systemStatusDateTime           | The date and time when the system status was last updated.          |
+| userPrincipalName              | The user principal name (UPN) of the user assigned to the Cloud PC. |
+
+The following table describes the columns in the returned report when you specify `regionalInaccessibleCloudPcTrendReport` for the **reportName** property in your API call.
+
+| Member | Description |
+|:---|:---|
+| CloudPcCount                        | The total number of Cloud PCs in the region. |
+| HostRegionName                      | The name of the Azure region where the Cloud PCs are hosted. |
+| Last24hPeakInaccessibleCloudPcCount | The peak number of inaccessible Cloud PCs during the last 24 hours. |
+| WeeklyInaccessibleTrend             | The trend in the weekly ratio of inaccessible Cloud PCs to the total Cloud PC count in the region. The trend is calculated using linear regression over four weeks of data. Values can be `Increasing` (slope > 0.05), `Decreasing` (slope < -0.05), or `Static` (otherwise). |
+| WeeklyPeakInaccessibleCloudPcCount  | The peak number of inaccessible Cloud PCs during the current week. The weekly period starts from Sunday to the current day. |
+
 ## Examples
 
 ### Example 1: Get reports of inaccessible Cloud PCs in a specific region
@@ -120,10 +146,6 @@ Content-length: 199
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsgetinaccessiblecloudpcreports-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsgetinaccessiblecloudpcreports-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

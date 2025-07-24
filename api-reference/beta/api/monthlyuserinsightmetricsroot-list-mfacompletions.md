@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/beta/reports/userInsights/monthly/mfaCompletions
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-monthlymfacompletionmetric-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-monthlymfacompletionmetric-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-monthlymfacompletionmetric-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
