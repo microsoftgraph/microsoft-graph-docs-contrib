@@ -3,6 +3,64 @@
         {
           "ChangeList": [
             {
+              "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcCloudApp",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource type.",
+              "Target": "cloudPcCloudApp"
+            },
+            {
+              "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcDiscoveredApp",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcDiscoveredApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDiscoveredApp?view=graph-rest-beta) resource type.",
+              "Target": "cloudPcDiscoveredApp"
+            },
+            {
+            "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+            "ApiChange": "Method",
+            "ChangedApiName": "PublishCloudPcCloudApp",
+            "ChangeType": "Addition",
+            "Description": "Added the [PublishCloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-publish?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
+            "Target": "cloudPcCloudApp"
+            },
+            {
+            "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+            "ApiChange": "Method",
+            "ChangedApiName": "UnpublishCloudPcCloudApp",
+            "ChangeType": "Addition",
+            "Description": "Added the [UnpublishCloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-unpublish?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
+            "Target": "cloudPcCloudApp"
+            },
+            {
+            "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+            "ApiChange": "Method",
+            "ChangedApiName": "ResetCloudPcCloudApp",
+            "ChangeType": "Addition",
+            "Description": "Added the [ResetCloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-reset?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
+            "Target": "cloudPcCloudApp"
+            },
+            {
+            "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+            "ApiChange": "Method",
+            "ChangedApiName": "RetrieveCloudPcDiscoveredApp",
+            "ChangeType": "Addition",
+            "Description": "Added the [RetrieveCloudPcDiscoveredApp](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-retrieveDiscoveredApp?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
+            "Target": "cloudPcCloudApp"
+            }
+          ],
+          "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2025-07-24T015:02:57.4615148Z",
+          "WorkloadArea": "CloudApp",
+          "SubArea": "Cloud PC"
+        },
+        {
+          "ChangeList": [
+            {
               "Id": "d96d0af7-66ee-4bbf-80b4-e35216afb105",
               "ApiChange": "Annotation",
               "ChangedApiName": "Org.OData.Core.V1.Revisions",
