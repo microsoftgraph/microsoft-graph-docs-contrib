@@ -20,7 +20,7 @@ Only sharing permissions that **aren't** inherited can be deleted.
 The **inheritedFrom** property must be `null`.
 
 > [!IMPORTANT]
-> In SharePoint Embedded, permissions added to a [fileStorageContainer](../resources/filestoragecontainer.md) can't be removed from its [driveItem](../resources/driveitem.md) objectss, which means that users and groups with container permissions have access to all items in that container.
+> In SharePoint Embedded, permissions added to a [fileStorageContainer](../resources/filestoragecontainer.md) can't be removed from its [driveItem](../resources/driveitem.md) objects, which means that users and groups with container permissions have access to all items in that container.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
