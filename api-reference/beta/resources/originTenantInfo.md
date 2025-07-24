@@ -4,7 +4,7 @@ description: "orginTenantInfo resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "people"
-author: "bberdiyev"
+author: "bayram53"
 ms.date: 07/24/2025
 ---
 
