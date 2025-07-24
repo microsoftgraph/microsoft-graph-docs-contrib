@@ -6,7 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
-ms.date: 11/21/2024
+ms.date: 07/24/2025
 ---
 
 # Get emailAuthenticationMethod
@@ -21,23 +21,9 @@ Retrieve a user's single [email Authentication Method](../resources/emailauthent
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Permissions acting on self
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { "blockType": "permissions", "name": "emailauthenticationmethod-get-permissions", "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/emailMethods/{emailMethods-id}"] } -->
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.Read|UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
-
-### Permissions acting on other users
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
+[!INCLUDE [permissions-table](../includes/permissions/emailauthenticationmethod-get-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
@@ -54,6 +40,9 @@ GET /me/authentication/emailMethods/{emailMethods-id}
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Get details of your own or another user's email authentication method.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /users/{id | userPrincipalName}/authentication/emailMethods/{emailMethods-id}
