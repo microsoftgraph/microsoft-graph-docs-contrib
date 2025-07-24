@@ -237,13 +237,7 @@ items:
   - name: Ad hoc Calls
     items:
     - name: Adhoc call
-      items:
-      - name: Adhoc call
-        href: ../../resources/adhoccall.md
-      - name: List recordings
-        href: ../../api/adhoccall-list-recordings.md
-      - name: List transcripts
-        href: ../../api/adhoccall-list-transcripts.md
+      href: ../../resources/adhoccall.md
   - name: Calls
     items:
     - name: Call
