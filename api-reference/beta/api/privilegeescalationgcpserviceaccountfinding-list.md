@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-privilegeescalationgcpserviceaccountfinding-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-privilegeescalationgcpserviceaccountfinding-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-privilegeescalationgcpserviceaccountfinding-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

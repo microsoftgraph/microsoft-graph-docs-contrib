@@ -11,8 +11,12 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new EngagementRoleMember
 {
-	OdataType = "#microsoft.graph.engagementrolemember",
-	UserId = "String",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"user@odata.bind" , "https://graph.microsoft.com/beta/users('userId')"
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
