@@ -23,11 +23,12 @@ None.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List containers](../api/filestorage-list-containers.md)|[fileStorageContainer](../resources/filestoragecontainer.md) collection|Get a list of the [fileStorageContainer](../resources/filestoragecontainer.md) objects and their properties.|
 |[Remove deleted containers](../api/filestorage-delete-deletedcontainers.md)|[fileStorage](../resources/filestorage.md) collection|Delete the [fileStorageContainer](../resources/filestoragecontainer.md) objects and their properties.|
-|[List containerTypes](../api/filestorage-list-containertypes.md)|[fileStorageContainerType](../resources/filestoragecontainertype.md) collection|List fileStorageContainerType objects|
-|[Create fileStorageContainerType](../api/filestorage-post-containertypes.md)|[fileStorageContainerType](../resources/filestoragecontainertype.md)|Create a new fileStorageContainerType object.|
-|[List containerTypeRegistrations](../api/filestorage-list-containertyperegistrations.md)|[fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) collection| List containerTypeRegistration objects|
-|[Create fileStorageContainerTypeRegistration](../api/filestorage-post-containertyperegistrations.md)|[fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md)|Create a new fileStorageContainerTypeRegistration object.|
+|[List container types](../api/filestorage-list-containertypes.md)|[fileStorageContainerType](../resources/filestoragecontainertype.md) collection|Get a list of the [fileStorageContainerType](../resources/filestoragecontainertype.md) objects and their properties for the current tenant.|
+|[Create file storage container type](../api/filestorage-post-containertypes.md)|[fileStorageContainerType](../resources/filestoragecontainertype.md)|Create a new [fileStorageContainerType](../resources/filestoragecontainertype.md) in the owning tenant.|
+|[List container type registrations](../api/filestorage-list-containertyperegistrations.md)|[fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) collection|Get a list of the [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) objects and their properties.|
+|[Create file storage container type registration](../api/filestorage-post-containertyperegistrations.md)|[fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md)|Create or replace a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object.|
 
 ## Relationships
 |Relationship|Type|Description|
