@@ -11,13 +11,13 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Remove access to a [DriveItem](../resources/driveitem.md).
+Remove access to a [driveItem](../resources/driveitem.md).
 
-Only sharing permissions that are **not** inherited can be deleted.
+Only sharing permissions that **aren't** inherited can be deleted.
 The **inheritedFrom** property must be `null`.
 
 > [!IMPORTANT]
-> In SharePoint Embedded, permissions added to a [fileStorageContainer](../resources/filestoragecontainer.md) can't be removed from its [driveItems](../resources/driveItem.md). This means that users and groups with container permissions have access to all items in that container.
+> In SharePoint Embedded, permissions added to a [fileStorageContainer](../resources/filestoragecontainer.md) can't be removed from its [driveItem](../resources/driveitem.md) objects, which means that users and groups with container permissions have access to all items in that container.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -108,7 +108,7 @@ HTTP/1.1 204 No Content
 
 ## Remarks
 
-* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) can't create or modify permissions on the root DriveItem.
+* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) can't create or modify permissions on the root **driveItem**.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
