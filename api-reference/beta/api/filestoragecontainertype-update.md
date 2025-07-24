@@ -58,18 +58,16 @@ PATCH /storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
 |settings|[fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md)|fileStorageContainerType settings. Optional.|
 |etag|String|Used for optimistic concurrency control. Must match the value returned from a [Create](filestorage-post-containertypes.md) or [Get](filestoragecontainertype-get.md) request. Required.|
 
-
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [fileStorageContainerType](../resources/filestoragecontainertype.md) object in the response body.
 
 ## Examples
 
-### Example 1: Update a fileStorageContainerType.
-
-### Request
+### Example 1: Update a fileStorageContainerType
 The following example shows how to update a **fileStorageContainerType**.
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertype"
@@ -89,7 +87,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -125,10 +123,10 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Update a fileStorageContainerType without ETag.
-
-### Request
+### Example 2: Update a fileStorageContainerType without ETag
 The following example shows how to update a **fileStorageContainerType** without an **etag**.
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertype_no_etag"
@@ -148,7 +146,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
