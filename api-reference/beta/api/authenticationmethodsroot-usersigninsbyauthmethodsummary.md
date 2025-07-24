@@ -45,7 +45,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|period|aggregationPeriod|The aggregation window to get summary for. The possible values are: `d1`, `d7`, `d30`. These values correlate to the number of days to get report for (For example d1 would be for the past 1 day).|
+|period|aggregationPeriod|The aggregation window to get summary for. The possible values are: `d1` (1 day), `d7` (7 days), `d30` (30 days). |
 
 
 ## Request headers
