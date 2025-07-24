@@ -1,6 +1,6 @@
 ---
 title: "List userMfaSignInSummary objects"
-description: "Get the summary of MFA vs non MFA sign in events for a given window of time."
+description: "Get the summary of MFA vs non-MFA sign-in events for a given window of time."
 ms.date: 07/23/2025
 author: "egreenberg14"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the summary of MFA vs non MFA sign in events for a given window of time as defined in the [userMfaSignInSummary](../resources/usermfasigninsummary.md) object.
+Get the summary of MFA vs non-MFA sign-in events for a specified time window, as defined in the ../resources/usermfasigninsummary.md object.
 
 ## Permissions
 
