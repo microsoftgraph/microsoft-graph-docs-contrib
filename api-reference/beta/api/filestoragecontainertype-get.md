@@ -57,8 +57,6 @@ If successful, this method returns a `200 OK` response code and a [fileStorageCo
 
 ## Examples
 
-### Example 1: Get a fileStorageContainerType using the containerTypeId
-
 ### Request
 The following example shows how to get a **fileStorageContainerType** using the **containerTypeId**.
 <!-- {
