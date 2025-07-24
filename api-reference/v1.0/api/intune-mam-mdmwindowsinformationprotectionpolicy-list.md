@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mdmWindowsInformationPr
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-mam-mdmwindowsinformationprotectionpolicy-list-list-mdmwindowsinformationprotectionpolicies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-mam-mdmwindowsinformationprotectionpolicy-list-list-mdmwindowsinformationprotectionpolicies-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-mam-mdmwindowsinformationprotectionpolicy-list-list-mdmwindowsinformationprotectionpolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

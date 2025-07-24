@@ -94,10 +94,6 @@ POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 [!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-determineifinteractionisallowed-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/teamwork-determineifinteractionisallowed-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-determineifinteractionisallowed-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -112,6 +108,10 @@ POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/teamwork-determineifinteractionisallowed-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-determineifinteractionisallowed-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -174,10 +174,6 @@ POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 [!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-determineifinteractionisallowed-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/teamwork-determineifinteractionisallowed-2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-determineifinteractionisallowed-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -192,6 +188,10 @@ POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/teamwork-determineifinteractionisallowed-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-determineifinteractionisallowed-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -253,10 +253,6 @@ POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 [!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-determineifinteractionisallowed-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/teamwork-determineifinteractionisallowed-3-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-determineifinteractionisallowed-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -271,6 +267,10 @@ POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/teamwork-determineifinteractionisallowed-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-determineifinteractionisallowed-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -332,10 +332,6 @@ POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 [!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-determineifinteractionisallowed-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/teamwork-determineifinteractionisallowed-4-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-determineifinteractionisallowed-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -350,6 +346,10 @@ POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/teamwork-determineifinteractionisallowed-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-determineifinteractionisallowed-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -419,10 +419,6 @@ POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 [!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-determineifinteractionisallowed-5-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/teamwork-determineifinteractionisallowed-5-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-determineifinteractionisallowed-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -437,6 +433,10 @@ POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/teamwork-determineifinteractionisallowed-5-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-determineifinteractionisallowed-5-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

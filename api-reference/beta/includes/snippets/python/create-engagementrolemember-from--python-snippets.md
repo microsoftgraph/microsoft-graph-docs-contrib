@@ -9,8 +9,9 @@ from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.engagement_role_member import EngagementRoleMember
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = EngagementRoleMember(
-	odata_type = "#microsoft.graph.engagementrolemember",
-	user_id = "String",
+	additional_data = {
+			"user@odata_bind" : "https://graph.microsoft.com/beta/users('userId')",
+	}
 )
 
 result = await graph_client.employee_experience.roles.by_engagement_role_id('engagementRole-id').members.post(request_body)
