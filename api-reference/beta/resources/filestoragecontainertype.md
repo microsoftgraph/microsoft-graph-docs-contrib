@@ -34,9 +34,9 @@ A **fileStorageContainerType** must be [registered](../resources/filestoragecont
 |:---|:---|:---|
 |billingClassification|fileStorageContainerBillingClassification|The billing type. The possible values are: `standard`, `trial`, `directToCustomer`, `unknownFutureValue`. The default value is `standard`.|
 |billingStatus|fileStorageContainerBillingStatus|The billing status. Valid when the billing is set up or with trial **fileStorageContainerType** objects that don't require billing. The possible values are: `invalid`, `valid`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|Creation date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|createdDateTime|DateTimeOffset|The creation date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |etag|String|Used in update scenarios for optimistic concurrency control. Read-only.|
-|expirationDateTime|DateTimeOffset|Expiration Date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|expirationDateTime|DateTimeOffset|The expiration date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |id|String|The unique identifier of the **fileStorageContainerType** object. Read-only.|
 |name|String|The name of the **fileStorageContainerType**.|
 |owningAppId|Guid|ID of the application that owns the **fileStorageContainerType**.|
