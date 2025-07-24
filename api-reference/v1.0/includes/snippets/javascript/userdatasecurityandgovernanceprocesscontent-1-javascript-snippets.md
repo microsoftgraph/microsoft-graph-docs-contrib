@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const processContent = {
+const processContentResponse = {
     contentToProcess: {
        contentEntries: [
           {
@@ -55,6 +55,6 @@ const processContent = {
 };
 
 await client.api('/me/dataSecurityAndGovernance/processContent')
-	.post(processContent);
+	.post(processContentResponse);
 
 ```

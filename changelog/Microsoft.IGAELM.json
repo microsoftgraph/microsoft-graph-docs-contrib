@@ -1035,6 +1035,48 @@
     {
       "ChangeList": [
         {
+          "Id": "05d0e308-d306-44ae-a27f-0bc0ee1aa90b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageApprovalStage",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageApprovalStage](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageApprovalStage?view=graph-rest-beta) resource.",
+          "Target": "accessPackageApprovalStage"
+        },
+        {
+          "Id": "05d0e308-d306-44ae-a27f-0bc0ee1aa90b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageDynamicApprovalStage",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageDynamicApprovalStage](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageDynamicApprovalStage?view=graph-rest-beta) resource.",
+          "Target": "accessPackageDynamicApprovalStage"
+        },
+        {
+          "Id": "05d0e308-d306-44ae-a27f-0bc0ee1aa90b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageRequestApprovalStageCallbackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageRequestApprovalStageCallbackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageRequestApprovalStageCallbackConfiguration?view=graph-rest-beta) resource.",
+          "Target": "accessPackageRequestApprovalStageCallbackConfiguration"
+        },
+        {
+          "Id": "05d0e308-d306-44ae-a27f-0bc0ee1aa90b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignmentRequestApprovalStageCallbackData",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignmentRequestApprovalStageCallbackData](https://learn.microsoft.com/en-us/graph/api/resources/assignmentRequestApprovalStageCallbackData?view=graph-rest-beta) resource.",
+          "Target": "assignmentRequestApprovalStageCallbackData"
+        }
+      ],
+      "Id": "05d0e308-d306-44ae-a27f-0bc0ee1aa90b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-02T15:39:07.8562407Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2bf51009-434d-46f5-9fc3-df0e7c39282c",
           "ApiChange": "Property",
           "ChangedApiName": "isRequestorJustificationRequired",

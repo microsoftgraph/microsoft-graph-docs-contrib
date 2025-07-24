@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |healthCheckStatus|[cloudPcSnapshotHealthCheckStatus](#cloudpcsnapshothealthcheckstatus-values)|Indicates the health check status of the Cloud PC snapshot. Possible values are, `unknown`, `healthy`, `unhealthy`, `unknownFutureValue`. The default value is `unknown`. Read-only. Nullable.|
 |id|String|The unique identifier for the snapshot of the Cloud PC device at a specific point in time. Inherited from [entity](../resources/entity.md).|
 |lastRestoredDateTime|DateTimeOffset|The date and time at which the snapshot was last used to restore the Cloud PC device. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|snapshotType| [cloudPcSnapshotType](#cloudpcsnapshottype-values)   | The type of snapshot that indicates how to create the snapshot. Possible values are `automatic`, `manual`. Default value is `automatic`.|
+|snapshotType| [cloudPcSnapshotType](#cloudpcsnapshottype-values)   | The type of snapshot that indicates how to create the snapshot. Possible values are `automatic`, `manual`, `unknownFutureValue`, `retention`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `retention`. The default value is `automatic`.|
 |status|[cloudPcSnapshotStatus](#cloudpcsnapshotstatus-values)|The status of the Cloud PC snapshot. The possible values are: `ready`, `unknownFutureValue`.|
 
 ### cloudPcSnapshotHealthCheckStatus values
@@ -57,9 +57,10 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description|
 |:---|:---|
-| automatic          | The snapshot is created automatically.           |
-| manual             | The snapshot is created manually.               |
+| automatic          | Indicates that the snapshot is created automatically by Windows 365 regularly. |
+| manual             | Indicates that the snapshot is created manually by the customer.               |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.     |
+| retention          | Indicates that the snapshot is a retention snapshot. If a Cloud PC is about to be deprovisioned (manually, due to license expiration, and so on), a snapshot of the Cloud PC is taken as a retention snapshot. It's stored in a Microsoft-managed, limited-function storage account for 90 days. During this period, customers can extract the data or use it to provision a new Cloud PC. After the 90-day retention period, Microsoft disables the account and deletes the customer data. |
 
 ## Relationships
 None.
