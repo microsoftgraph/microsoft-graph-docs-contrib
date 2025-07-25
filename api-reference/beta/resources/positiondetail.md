@@ -22,6 +22,8 @@ Represents information about positions related to entities within a user's [prof
 |:-------|:---|:----------|
 |company|[companyDetail](companydetail.md)|Information about the company or employer.|
 |description|String|A description for the position in question.|
+|employeeId|String|The identifier assigned to the employee.|
+|employeeType|String|The type of employment for the position.|
 |endMonthYear|Date|The date when the position ended.|
 |jobTitle|String|The title of the position.|
 |layer|Int32|The place where the employee is within the organizational hierarchy.|
@@ -31,8 +33,6 @@ Represents information about positions related to entities within a user's [prof
 |secondaryRole|String|An optional role for the position entailed.|
 |startMonthYear|Date|The start date of the position.|
 |summary|String|The summary of the position.|
-|employeeId|String|The identifier assigned to the employee.|
-|employeeType|String|The type of employment for the position.|
 
 ## JSON representation
 

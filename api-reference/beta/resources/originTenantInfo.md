@@ -1,11 +1,11 @@
 ---
 title: "originTenantInfo resource type"
 description: "Information about the origin tenant of a user."
-ms.localizationpriority: medium
-doc_type: resourcePageType
-ms.subservice: "people"
 author: "bayram53"
 ms.date: 07/24/2025
+ms.localizationpriority: medium
+ms.subservice: "people"
+doc_type: resourcePageType
 ---
 
 # originTenantInfo resource type
@@ -21,8 +21,8 @@ Represents identifiers of a tenant and a user. It is used to represent identifie
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| originTenantId | String | The identifier of the tenant where the user account was originally provisioned. |
-| originUserId | String | The identifier of the user in the origin tenant. |
+|originTenantId|String|The identifier of the tenant where the user account was originally provisioned.|
+|originUserId|String|The identifier of the user in the origin tenant.|
 
 ## Relationships
 None.
@@ -31,14 +31,13 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-  ],
   "@odata.type": "microsoft.graph.originTenantInfo"
 }
 -->
-```json
+``` json
 {
-  "originTenantId": "string",
-  "originUserId": "string"
+  "@odata.type": "#microsoft.graph.originTenantInfo",
+  "originTenantId": "String",
+  "originUserId": "String"
 }
 ```
