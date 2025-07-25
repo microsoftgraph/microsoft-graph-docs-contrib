@@ -19,14 +19,7 @@ Represents a room within the tenant. A room can be added to a [floor](./floor.md
 Inherits from [place](./place.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/roomlist-list-rooms.md)|[room](./room.md) collection|Get a list of [room](../resources/room.md) objects and their properties.|
-|[Create](../api/roomlist-post-rooms.md)|[room](./room.md)|Create a new [room](../resources/room.md) object.|
-|[Get](../api/room-get.md)|[room](./room.md)|Read the properties and relationships of a [room](../resources/room.md) object.|
-|[Update](../api/room-update.md)|[room](./room.md)|Update the properties of a [room](../resources/room.md) object.|
-|[Delete](../api/roomlist-delete-rooms.md)|None|Delete a [room](../resources/room.md) object.|
-|[Descendants](../api/room-descendants.md)|[place](./place.md) collection|Get all the descendants of a specific type (for example, [desks](./desk.md)) under a **room**.|
+For the list of supported methods, see [place](./place.md).
 
 ## Properties
 |Property |Type |Description |
@@ -52,14 +45,6 @@ Inherits from [place](./place.md).
 |placeId |String |An alternate immutable unique identifier of the **room**. Read-only. Inherited from [place](../resources/place.md).|
 |tags |String collection |Custom tags that are associated with the **room** for categorization or filtering. Inherited from [place](../resources/place.md).|
 |videoDeviceName |String |The name of the video device that is available in the **room**. |
-
-### bookingType values
-
-| Value    | Description                                               |
-|:---------|:----------------------------------------------------------|
-| standard | The room is available and can be reserved. This value is the default. |
-| reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
-| unknown  | TODO |
 
 ## Relationships
 None.

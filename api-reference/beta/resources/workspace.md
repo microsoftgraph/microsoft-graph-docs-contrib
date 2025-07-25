@@ -19,15 +19,7 @@ Represents a collection of desks. A [workspace](./workspace.md) can be added to 
 Inherits from [place](./place.md).
 
 ## Methods
-
-|Method |Return |Type |Description |
-|:--|:--|:--|:--|
-|[List](../api/roomlist-list-workspaces.md)|[workspace](./workspace.md) collection|Get a list of **workspace** objects and their properties.|
-|[Create](../api/roomlist-post-workspaces.md)|[workspace](./workspace.md)|Create a new **workspace** object.|
-|[Get](../api/workspace-get.md)|[workspace](./workspace.md)|Read the properties and relationships of a **workspace** object.|
-|[Update](../api/workspace-update.md)|[workspace](./workspace.md)|Update the properties of a **workspace** object.|
-|[Delete](../api/roomlist-delete-workspaces.md)|None|Delete a **workspace** object.|
-|[descendants](../api/place-descendants.md) |List of [place](../resources/place.md) objects |Get all the descendants of a specific type (for example, [desks](./desk.md)) under a **workspace**. | 
+For the list of supported methods, see [place](./place.md).
 
 ## Properties
 |Property |Type |Description |
