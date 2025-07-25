@@ -58,53 +58,268 @@ If successful, this method returns a `201 Created` response code and a [place](.
 
 ## Examples
 
+### Example 1: create a building
+
 ### Request
 
 The following example shows a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_place_from_places"
-}
--->
-``` http
+  "name": "create_building"
+}-->
+```http
 POST https://graph.microsoft.com/beta/places
-Content-Type: application/json
+Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.desk",
-  "displayName": "D1",
-  "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
-  "mode": {
-    "@odata.type": "microsoft.graph.assignedPlaceMode",
-    "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
-  }
+  "@odata.type": "microsoft.graph.building",
+  "displayName": "B001"
 }
 ```
 
 ### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.place"
-}
--->
+  "@odata.type": "microsoft.graph.building"
+} -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.desk",
-  "id": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-  "placeId": "69b2309c-4ded-40b2-9e15-dd9841fcfd71",
-  "displayName": "D1",
-  "parentId": "a6b276f3-1215-4614-b4ad-983f7f410416",
-  "mode": {
-    "@odata.type": "microsoft.graph.assignedPlaceMode",
-    "assignedUserId": "79058544-bce5-4224-a754-726b15b8600b"
-  }
+	"@odata.type": "#microsoft.graph.building",
+	"id": "767a31a7-6987-41c9-b829-ab351b8aab53",
+	"placeId": "767a31a7-6987-41c9-b829-ab351b8aab53",
+	"displayName": "B001"
 }
+```
+
+### Example 2: create a floor
+
+### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_floor"
+}-->
+```http
+POST https://graph.microsoft.com/beta/places
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.floor",
+  "displayName": "F1",
+	"parentId": "767a31a7-6987-41c9-b829-ab351b8aab53"
+}
+```
+
+### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.floor"
+} -->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+	"@odata.type": "#microsoft.graph.floor",
+	"id": "46ef7aed-5d94-4fd4-ae03-b333bc7a6955",
+	"placeId": "46ef7aed-5d94-4fd4-ae03-b333bc7a6955",
+	"displayName": "F1",
+	"parentId": "767a31a7-6987-41c9-b829-ab351b8aab53",
+	"tags": [],
+	"isWheelChairAccessible": false
+}
+```
+
+### Example 3: create a section
+
+### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_section
+}-->
+```http
+POST https://graph.microsoft.com/beta/places
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.section",
+  "displayName": "S1",
+	"parentId": "46ef7aed-5d94-4fd4-ae03-b333bc7a6955"
+}
+```
+
+### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.section"
+} -->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+	"@odata.type": "#microsoft.graph.section",
+	"id": "1ad0f725-6885-49c5-9a47-3b22a1f9409d",
+	"placeId": "1ad0f725-6885-49c5-9a47-3b22a1f9409d",
+	"displayName": "S1",
+	"parentId": "46ef7aed-5d94-4fd4-ae03-b333bc7a6955",
+	"tags": [],
+	"isWheelChairAccessible": false,
+}
+```
+
+### Example 4: create a desk
+
+### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_desk"
+}-->
+```http
+POST https://graph.microsoft.com/beta/places
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.desk",
+  "displayName": "D1",
+	"parentId": "1ad0f725-6885-49c5-9a47-3b22a1f9409d"
+}
+```
+
+### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.desk"
+} -->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+	"@odata.type": "#microsoft.graph.desk",
+	"id": "fc25d4dc-817a-45bc-a72d-2616cd7566ac",
+	"placeId": "fc25d4dc-817a-45bc-a72d-2616cd7566ac",
+	"displayName": "D1",
+	"parentId": "1ad0f725-6885-49c5-9a47-3b22a1f9409d",
+	"tags": [],
+	"isWheelChairAccessible": false,
+	"mode": {
+		"@odata.type": "#microsoft.graph.offlinePlaceMode",
+		"reason": "New"
+	}
+}
+```
+
+### Example 5: create a room
+
+### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_room"
+}-->
+```http
+POST https://graph.microsoft.com/beta/places
+Content-type: application/json
+
+
+```
+
+### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.room"
+} -->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+
+```
+
+### Example 6: create a workspace
+
+### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_workspace"
+}-->
+```http
+POST https://graph.microsoft.com/beta/places
+Content-type: application/json
+
+
+```
+
+### Response
+
+The following example shows the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workspace"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+
 ```
 

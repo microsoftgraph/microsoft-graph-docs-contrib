@@ -14,9 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties of a [place](../resources/place.md) object.
+Read the properties of a [place](../resources/place.md) object specified by its Id.
 
-You can also use this method to read the properties of the following child object types: [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
+The **place** object can be one of the following types:
+
+* A [building](../resources/building.md), which includes rich properties such as resource links and has Wifi. 
+* A [floor](../resources/floor.md), which includes rich properties such as sort order.
+* A [section](../resources/section.md).
+* A [desk](../resources/desk.md), which includes rich properties such as mailbox details and mode.
+* A [room](../resources/room.md), which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
+* A [workspace](../resources/workspace.md), which includes properties such as an email address for the workspace, and accessibility and capacity. 
+* A [room list](../resources/roomlist.md), which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
+
+The listed resources are derived from the **place** object.
 
 ## Permissions
 
@@ -41,7 +51,7 @@ GET /places/{id}
 
 ## Optional query parameters
 
-This method supports $select query parameter to help get specific properties. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select` query parameter to help get specific properties. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -59,21 +69,22 @@ If successful, this method returns a `200 OK` response code and a [place](../res
 
 ## Examples
 
-### Request
+### Example 1: Get a building
+#### Request
 
-The following example shows a request.
+The following example shows a request to get a building.
 <!-- {
   "blockType": "request",
-  "name": "get_place"
+  "name": "get_building"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/places/0ab8619b-2d82-4a4e-9a87-d1e2a836a120
+GET https://graph.microsoft.com/beta/places/ca147fcf-ae27-43bb-9d91-f11e626e58bf
 ```
 
-### Response
+#### Response
 
-The following example shows the response that includes a [place](../resources/place.md) object or the list of [place](../resources/place.md) objects.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -86,38 +97,258 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-        "@odata.type": "#microsoft.graph.building",
-    "id": "0ab8619b-2d82-4a4e-9a87-d1e2a836a120",
-    "placeId": "0ab8619b-2d82-4a4e-9a87-d1e2a836a120",
-    "displayName": "Building 121",
-    "phone": "+1 425-555-1234",
-    "parentId": null,
-    "tags": [
-        "engineering",
-        "north-campus"
-    ],
-    "isWheelChairAccessible": true,
-    "label": "Main Engineering Hub",
-    "hasWiFi": true,
-    "address": {
-        "type": null,
-        "postOfficeBox": null,
-        "street": "1 Microsoft Way",
-        "city": "Redmond",
-        "state": "WA",
-        "countryOrRegion": "US",
-        "postalCode": "98052"
-    },
-    "geoCoordinates": {
-        "latitude": 47.6396,
-        "longitude": -122.1281,
-        "accuracy": 0,
-        "altitude": 0,
-        "altitudeAccuracy": 0
-    },
-    "resourceLinks": []
-  }
+	"@odata.type": "#microsoft.graph.building",
+	"id": "ca147fcf-ae27-43bb-9d91-f11e626e58bf",
+	"placeId": "ca147fcf-ae27-43bb-9d91-f11e626e58bf",
+	"displayName": "B06",
+	"phone": "+1 (425) 615 8888 Ext 06",
+	"isWheelChairAccessible": true,
+	"label": "This is a building for demo",
+	"hasWiFi": true,
+	"geoCoordinates": {
+		"latitude": 47.644125,
+		"longitude": -122.122411,
+		"accuracy": null,
+		"altitude": null,
+		"altitudeAccuracy": null
+	},
+	"resourceLinks": [
+		{
+			"name": "Microsoft Web",
+			"linkType": "url",
+			"value": "www.microsoft.com"
+		}
+	]
+}
+```
+### Example 2: Get a floor
+#### Request
+
+The following example shows a request to get a floor.
+<!-- {
+  "blockType": "request",
+  "name": "get_floor"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/places/49558ad4-6ede-46d7-8254-3ca9f90fc4e2
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.place"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+	"@odata.type": "#microsoft.graph.floor",
+	"id": "49558ad4-6ede-46d7-8254-3ca9f90fc4e2",
+	"placeId": "49558ad4-6ede-46d7-8254-3ca9f90fc4e2",
+	"displayName": "3",
+	"parentId": "ca147fcf-ae27-43bb-9d91-f11e626e58bf",
+	"sortOrder": 3,
+}
+```
+### Example 3: Get a section
+#### Request
+
+The following example shows a request to get a section.
+<!-- {
+  "blockType": "request",
+  "name": "get_section"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/places/ca163ae1-14a3-4e2a-8a97-5f82d672186f
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.place"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+	"@odata.type": "#microsoft.graph.section",
+	"id": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
+	"placeId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
+	"displayName": "Mode Section 1",
+	"parentId": "49558ad4-6ede-46d7-8254-3ca9f90fc4e2"
+}
+```
+### Example 4: Get a desk
+#### Request
+
+The following example shows a request to get a desk.
+<!-- {
+  "blockType": "request",
+  "name": "get_desk"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/places/df7dd4ef-04c4-41dd-816e-35475f4dd546
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.place"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+	"@odata.type": "#microsoft.graph.desk",
+	"id": "df7dd4ef-04c4-41dd-816e-35475f4dd546",
+	"placeId": "df7dd4ef-04c4-41dd-816e-35475f4dd546",
+	"displayName": "Desk6",
+	"parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
+	"mode": {
+		"@odata.type": "#microsoft.graph.offlinePlaceMode",
+		"reason": "New"
+	}
+}
+```
+### Example 5: Get a room
+#### Request
+
+The following example shows a request to get a room.
+<!-- {
+  "blockType": "request",
+  "name": "get_room"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/places/0be387a4-d53b-410f-9daf-f4fa07e5b05a
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.place"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+	"@odata.type": "#microsoft.graph.room",
+	"id": "0be387a4-d53b-410f-9daf-f4fa07e5b05a",
+	"placeId": "4923e5a8-453e-4edf-b272-9c33757d4fb3",
+	"displayName": "TestRoom-123",
+	"parentId": "88d25c73-e9c2-4284-86d7-2cf5685b67b9",
+	"isWheelChairAccessible": true,
+	"emailAddress": "TestRoom-123@contoso.com",
+	"nickname": "TestRoomZihan-123",
+	"bookingType": "standard",
+	"isTeamsEnabled": true
+}
+```
+### Example 6: Get a workspace
+#### Request
+
+The following example shows a request to get a workspace.
+<!-- {
+  "blockType": "request",
+  "name": "get_workspace"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/places/ec10ce32-2065-40ba-aa2f-ecd5ea175420
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.place"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+	"@odata.type": "#microsoft.graph.workspace",
+	"id": "ec10ce32-2065-40ba-aa2f-ecd5ea175420",
+	"placeId": "8abb4849-b6a0-4c45-baab-92a6b63227a5",
+	"displayName": "deskpool 003",
+	"parentId": "46e0d2ec-d026-4e1d-861d-80ede4470f67",
+	"emailAddress": "deskpool0039052bd811752731134695@contoso.com",
+	"nickname": "deskpool 003",
+	"capacity": 10
+}
+```
+### Example 7: Get a room list
+#### Request
+
+The following example shows a request to get a room list.
+<!-- {
+  "blockType": "request",
+  "name": "get_roomlist"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.place"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.roomList",
+  "id": "dc404124-302a-92aa-f98d-7b4deb0c1705",
+  "displayName": "Building 1",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "emailAddress": "bldg1@contoso.com",
+  "placeId": "406bd1b2-237c-4710-bda2-8b7900d61b27"
 }
 ```
 

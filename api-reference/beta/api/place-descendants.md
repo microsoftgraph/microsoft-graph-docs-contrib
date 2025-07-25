@@ -16,6 +16,9 @@ Namespace: microsoft.graph
 
 Get all the descendants of a specific type under a [place](../resources/place.md).
 
+> **Note:**
+> This method cannot return more than 2500 places.
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -38,7 +41,7 @@ GET /places/{id}/descendants/{placeType}
 ```
 
 > **Note:**
-> `{placeType}` can be any supported place type such as `microsoft.graph.floor`, `microsoft.graph.section`, `microsoft.graph.room`, `microsoft.graph.workspace`, `microsoft.graph.desk`.
+> `{placeType}` can be any supported place type such as `microsoft.graph.building`, `microsoft.graph.floor`, `microsoft.graph.section`, `microsoft.graph.room`, `microsoft.graph.workspace` and `microsoft.graph.desk`.
 
 ## Request headers
 
@@ -65,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/places/56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3/descendants/microsoft.graph.desk
+GET https://graph.microsoft.com/beta/places/ca163ae1-14a3-4e2a-8a97-5f82d672186f/descendants/microsoft.graph.desk
 ```
 
 ### Response
@@ -83,34 +86,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "displayName": "Desk 2",
-      "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
-      "label": "Desk 2 in Tech support section",
-      "tags": [],
-      "mailboxDetails": {
-        "emailAddress": "desk2@contoso.com",
-        "externalDirectoryObjectId": "dfc480de-8f40-44f8-bc8d-6306cea4ab27"
-      },
-      "resourceLinks": []
-    }, 
-    {
-      "id": "2dd2s2gg-b444-84rf-c4d1-f9a8342222s3",
-      "placeId": "3ee1d2fd-a744-49ed-a5b3-c0a9647339a6",
-      "displayName": "Desk 4",
-      "parentId": "56d4f8cd-90e6-4b77-bbe4-ebd34e413fd3",
-      "label": "Desk 4 in tech support section",
-      "tags": [],
-      "mailboxDetails": {
-        "emailAddress": "desk4@contoso.com",
-        "externalDirectoryObjectId": "f7bf0b43-0ae0-47e4-b3e6-02c9f7733398"
-      },
-      "resourceLinks": []
-    }
-  ]
+	"value": [
+		{
+			"id": "530f7900-8063-4daf-9cc1-168cb3ac26e9",
+			"placeId": "530f7900-8063-4daf-9cc1-168cb3ac26e9",
+			"displayName": "desk 5",
+			"parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
+			"isWheelChairAccessible": false,
+			"mode": {
+				"@odata.type": "#microsoft.graph.offlinePlaceMode",
+				"reason": "New"
+			}
+		},
+		{
+			"id": "57289959-4add-4270-872b-cc93ca099ce5",
+			"placeId": "57289959-4add-4270-872b-cc93ca099ce5",
+			"displayName": "desk 6",
+			"parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
+			"isWheelChairAccessible": true,
+			"mailboxDetails": {
+				"externalDirectoryObjectId": "6abaaee5-b796-48d0-be3d-0aa980258321",
+				"emailAddress": "desk54a4fce541749088182888@contoso.com"
+			},
+			"mode": {
+				"@odata.type": "#microsoft.graph.reservablePlaceMode"
+			}
+		}
+	]
 }
 ```
 
