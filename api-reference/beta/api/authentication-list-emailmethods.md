@@ -6,7 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
-ms.date: 07/24/2025
+ms.date: 07/25/2025
 ---
 
 # List emailAuthenticationMethods
@@ -29,12 +29,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 Get details of your own email authentication method.
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/emailMethods
 ```
-
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Get details of your own or another user's email authentication method.
 

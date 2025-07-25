@@ -6,7 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
-ms.date: 07/24/2025
+ms.date: 07/25/2025
 ---
 
 # Get emailAuthenticationMethod
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a user's single [email Authentication Method](../resources/emailauthenticationmethod.md) object.
+Retrieve a user's single [email authentication method](../resources/emailauthenticationmethod.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -32,12 +32,13 @@ One of the following permissions is required to call this API. To learn more, in
 The ID of the email authentication method, referenced by `{emailMethods-id}`, is always `3ddfcfc8-9383-446f-83cc-3ab9be4be18f`.
 
 Get details of your own email authentication method.
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/emailMethods/{emailMethods-id}
 ```
-
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Get details of your own or another user's email authentication method.
 

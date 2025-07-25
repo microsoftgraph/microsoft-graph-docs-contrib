@@ -31,12 +31,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 The ID of the email authentication method, referenced by `{emailMethods-id}`, is always `3ddfcfc8-9383-446f-83cc-3ab9be4be18f`.
 
 Delete the email method from your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 <!-- {  "blockType": "ignored" } -->
 ``` http
 DELETE /me/authentication/emailMethods/{emailMethods-id}
 ```
-
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Delete the email authentication method from another user's account.
 
