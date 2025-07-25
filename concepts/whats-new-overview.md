@@ -32,9 +32,17 @@ Each fragment uploaded during an [upload session](/graph/api/resources/uploadses
 
 [Export](/graph/api/partners-billing-unbilledreconciliation-export) unbilled invoice reconciliation data.
 
+### Security | eDiscovery
+
+Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, **additionalDataOptions**, and **statisticsOptions** as supported properties and parameters across various resources and actions of the eDiscovery API.
+
 ### Teamwork and communications | Messaging
 
 [Send a message with a Loop component](/graph/api/chatmessage-post).
+
+### Security
+
+Added [ResourceAccessEvent](/graph/api/security-resourceaccessevent) resource as a property in [UserAccount](/graph/api/security-useraccount)
 
 ## July 2025: New in preview only
 
