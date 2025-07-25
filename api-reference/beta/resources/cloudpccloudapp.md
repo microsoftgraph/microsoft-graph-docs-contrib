@@ -36,7 +36,6 @@ Represents a Cloud App. Cloud Apps are built on Frontline shared options and pro
 |discoveredAppName|String|Name of the discovered app assiciated with the cloud app. For example: `Paint`, Supports: $filter, $select, $orderBy. Read-only.|
 |description|String|Specifies the description associated with the Cloud App.  The maximum allowed length for this property is 512. Supports: $filter, $select, $orderBy.|
 |provisioningPolicyId|String|Specifies the ID of the provisioning policy associated with this Cloud App. This is a required property. For example: "96133506-c05b-4dbb-a150-ed4adc59895f". Supports: $filter, $select, $orderBy.  Read-only.|
-|provisioningPolicyId|String|Name of the discovered app assiciated with the cloud app. For example: `Paint`, Supports: $filter, $select, $orderBy. Read-only.|
 |id|String|Specifies the unique ID of the Cloud App. This is created automatically during the creation of a new Cloud App. Supports: $filter, $select, $orderBy.  Read-Only. |
 |lastPublishedDateTime|DateTimeOffset|The latest date time when the admin published the cloud app.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`. Returned by default,this property value cannot be set or modified by IT Admin. Supports: $filter, $select, $orderBy. Read-only.|
 |scopeIds|Collection(String)|Specifies the list of Scope Tag IDs for this Cloud App. This is inherited from the provisioning policy when the app is created or updated. Read-only.|
@@ -85,6 +84,25 @@ None.
 
 ## JSON representation
 
+### cloudPcCloudAppDetail
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.cloudPcCloudAppDetail"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.cloudPcCloudAppDetail",
+  "filePath": "String",
+  "iconPath": "String",
+  "iconIndex": "Int32",
+  "commandLineArguments": "String"
+}
+```
+
+### cloudPcCloudApp
+
 The following JSON representation shows the resource type.
 
 <!-- {
@@ -107,11 +125,11 @@ The following JSON representation shows the resource type.
   "appDetail": {
     "@odata.type": "microsoft.graph.cloudPcCloudAppDetail"
   },
-  "scopeIds": "Collection(String)",
+  "scopeIds": ["String"],
   "actionFailedErrorCode": "String",
   "appStatus": "String",
   "actionFailedErrorMessage": "String",
   "addedDateTime": "String (timestamp)",
-  "availableToUser": "Boolean",
+  "availableToUser": "Boolean"
 }
 ```
