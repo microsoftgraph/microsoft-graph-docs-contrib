@@ -1,6 +1,6 @@
 ---
 title: "domain: verify"
-description: "Validates the ownership of the domain."
+description: "Validate the ownership of a domain."
 author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -12,10 +12,7 @@ ms.date: 10/31/2024
 
 Namespace: microsoft.graph
 
-Validates the ownership of the domain.
-
-> **Important:**
-> Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
+Validate the ownership of a [domain](../resources/domain.md). This operation only applies to an unverified domain. For an unverified domain, the **isVerified** property is `false`.
 
 > [!NOTE]
 > Verifying a domain through Microsoft Graph doesn't configure the domain for use with Office 365 services like Exchange. Fully configuring the domain to work with Microsoft 365 products might require extra steps. For more information, see [Microsoft 365 admin setup](/microsoft-365/admin/setup/add-domain).
@@ -50,6 +47,14 @@ POST /domains/{id}/verify
 
 ## Request body
 
+In the request body, supply a JSON representation of the parameters.
+
+The following table lists the parameters that are optional when you call this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|forceTakeover|Boolean|Optional. Used for external admin takeover of an unmanaged domain. The default value for this parameter is `false`. <br/><br/>If the domain to be verified is currently linked to an unmanaged tenant but you own the domain, use this parameter to take over that domain. Force takeover only succeeds when this tenant has verified their ownership of the domain by adding the TXT records to the domain registrar. For more information, see [Take over an unmanaged directory as administrator in Microsoft Entra ID](/entra/identity/users/domains-admin-takeover).|
+
 ## Response
 
 If successful, this method returns `200 OK` response code and [domain](../resources/domain.md) object in the response body.
@@ -68,10 +73,6 @@ POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/domain-verify-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/domain-verify-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

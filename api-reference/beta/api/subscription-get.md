@@ -66,6 +66,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Not supported.  | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported.  | Not supported.  |
+|Microsoft Entra Health monitoring [alert](../resources/healthmonitoring-alert.md) <br />`/reports/healthmonitoring/alerts`| HealthMonitoringAlertConfig.Read.All | Not supported. | HealthMonitoringAlertConfig.Read.All |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported.  | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
 |[offerShiftRequest](../resources/offershiftrequest.md) <br />`/teams/{id}/schedule/offerShiftRequests` <br />Changes to any offer shift request in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported. | Schedule.Read.All, Schedule.ReadWrite.All |
@@ -166,10 +167,6 @@ GET https://graph.microsoft.com/beta/subscriptions/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscription-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-subscription-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

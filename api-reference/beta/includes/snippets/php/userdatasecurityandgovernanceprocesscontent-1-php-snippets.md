@@ -13,6 +13,8 @@ use Microsoft\Graph\Beta\Generated\Models\ProcessConversationMetadata;
 use Microsoft\Graph\Beta\Generated\Models\TextContent;
 use Microsoft\Graph\Beta\Generated\Models\ActivityMetadata;
 use Microsoft\Graph\Beta\Generated\Models\UserActivityType;
+use Microsoft\Graph\Beta\Generated\Models\DeviceMetadata;
+use Microsoft\Graph\Beta\Generated\Models\OperatingSystemSpecifications;
 use Microsoft\Graph\Beta\Generated\Models\ProtectedApplicationMetadata;
 use Microsoft\Graph\Beta\Generated\Models\PolicyLocationApplication;
 use Microsoft\Graph\Beta\Generated\Models\IntegratedApplicationMetadata;
@@ -41,6 +43,14 @@ $contentToProcess->setContentEntries($contentEntriesArray);
 $contentToProcessActivityMetadata = new ActivityMetadata();
 $contentToProcessActivityMetadata->setActivity(new UserActivityType('uploadText'));
 $contentToProcess->setActivityMetadata($contentToProcessActivityMetadata);
+$contentToProcessDeviceMetadata = new DeviceMetadata();
+$contentToProcessDeviceMetadata->setDeviceType('Unmanaged');
+$contentToProcessDeviceMetadataOperatingSystemSpecifications = new OperatingSystemSpecifications();
+$contentToProcessDeviceMetadataOperatingSystemSpecifications->setOperatingSystemPlatform('Windows 11');
+$contentToProcessDeviceMetadataOperatingSystemSpecifications->setOperatingSystemVersion('10.0.26100.0');
+$contentToProcessDeviceMetadata->setOperatingSystemSpecifications($contentToProcessDeviceMetadataOperatingSystemSpecifications);
+$contentToProcessDeviceMetadata->setIpAddress('127.0.0.1');
+$contentToProcess->setDeviceMetadata($contentToProcessDeviceMetadata);
 $contentToProcessProtectedAppMetadata = new ProtectedApplicationMetadata();
 $contentToProcessProtectedAppMetadata->setName('PC Purview API Explorer');
 $contentToProcessProtectedAppMetadata->setVersion('0.2');
@@ -53,16 +63,6 @@ $contentToProcessIntegratedAppMetadata = new IntegratedApplicationMetadata();
 $contentToProcessIntegratedAppMetadata->setName('PC Purview API Explorer');
 $contentToProcessIntegratedAppMetadata->setVersion('0.2');
 $contentToProcess->setIntegratedAppMetadata($contentToProcessIntegratedAppMetadata);
-$additionalData = [
-'deviceMetadata' => [
-	'operatingSystemSpecifications' => [
-		'operatingSystemPlatform' => 'Windows 11',
-		'operatingSystemVersion' => '10.0.26100.0',
-	],
-	'ipAddress' => '127.0.0.1',
-],
-];
-$contentToProcess->setAdditionalData($additionalData);
 $requestBody->setContentToProcess($contentToProcess);
 
 $result = $graphServiceClient->me()->dataSecurityAndGovernance()->processContent()->post($requestBody)->wait();

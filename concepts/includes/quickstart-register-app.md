@@ -7,8 +7,8 @@ ms.reviewer: jackson.woods
 ms.topic: include
 ms.localizationpriority: high
 ms.subservice: entra-applications
+ms.custom: sfi-image-nochange, sfi-ropc-nochange
 #Customer intent: As developer, I want to know how to register my client application with the Microsoft identity platform so it can be authorized to access data in the Microsoft cloud.
-
 # Content in this include file is largely duplicated from https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app
 ---
 

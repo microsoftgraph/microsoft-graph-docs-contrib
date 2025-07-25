@@ -315,7 +315,69 @@ Content-Type: application/json
            "altitude": 0,
            "altitudeAccuracy": 0
       },
-      "phone": "+1 425-555-1234",
+      "phone": "000-000-0000",
+      "nickname": "Conf Room",
+      "label": "200",
+      "capacity": 40,
+      "building": "2",
+      "floorNumber": 2,
+      "isWheelChairAccessible": false,
+      "bookingType": "standard",
+      "tags": [
+        "benches",
+        "nice view"
+      ],
+      "audioDeviceName": null,
+      "videoDeviceName": null,
+      "displayDeviceName": "surface hub",
+      "placeId": "62cfc8cb-fc2b-4783-aeea-f9ce0f8e2904"
+    }
+  ]
+}
+```
+
+### Example 5: List workspaces contained in a room list
+
+#### Request
+
+The following example shows how to get a list of [workspace](../resources/workspace.md) objects contained in a **roomList**. 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_workspaces_in_roomlist",
+  "sampleKeys": ["bldg2@contoso.com"]
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/workspaces
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_workspaces_in_roomlist",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workspace",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places('bldg2%40contoso.com')/microsoft.graph.roomList/workspaces",
+  "value": [
+    {
+      "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
+      "emailAddress": "ws200@contoso.com",
+      "displayName": "Workspace 200",
       "address": {
         "type": null,
        	 "postOfficeBox": null,

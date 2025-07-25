@@ -127,3 +127,170 @@ Content-Type: application/json
   }
 }
 ```
+
+### Example 2: Update a workspace
+
+### Request
+
+The following example shows a request.
+
+
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["ws100@contoso.com"],
+  "name": "update_workspace"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/places/ws100@contoso.com
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.workspace",
+  "nickname": "Conf Room",
+  "building": "1",
+  "label": "100",
+  "capacity": 50,
+  "isWheelChairAccessible": false
+}
+```
+
+### Response
+
+The following example shows the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workspace"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+    "@odata.type": "#microsoft.graph.workspace",
+    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+    "emailAddress": "ws100@contoso.com",
+    "displayName": "Workspace 100",
+    "address": {
+      "street": "4567 Main Street",
+      "city": "Buffalo",
+      "state": "NY",
+      "postalCode": "98052",
+      "countryOrRegion": "USA"
+    },
+    "geoCoordinates": {
+      "latitude": 47.0,
+      "longitude": -122.0
+    },
+    "phone": "555-555-0100",
+    "nickname": "Workspace",
+    "label": "100",
+    "capacity": 50,
+    "building": "1",
+    "floorLabel": "1P",
+    "floorNumber": 1,
+    "isWheelChairAccessible": false,
+    "tags": [
+      "bean bags"
+    ],
+    "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
+}
+```
+### Example 3: Update a roomlist
+
+### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["Building1RroomList@contoso.com"],
+  "name": "update_roomlist"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/places/Building1RroomList@contoso.com
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.roomList",
+  "displayName": "Building 1",
+  "phone":"555-555-0100",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "altitude": null,
+    "latitude": 47.0,
+    "longitude": -122.0,
+    "accuracy": null,
+    "altitudeAccuracy": null
+ }
+}
+```
+
+### Response
+
+The following example shows the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.roomList"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+  "@odata.type": "#microsoft.graph.roomList",
+  "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
+  "displayName": "Building 1",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "altitude": null,
+    "latitude": 47.0,
+    "longitude": -122.0,
+    "accuracy": null,
+    "altitudeAccuracy": null
+ },
+  "phone": "555-555-0100",
+  "emailAddress": "bldg1@contoso.com",
+  "placeId": "406bd1b2-237c-4710-bda2-8b7900d61b27"
+}
+```
+
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update place",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
+
+

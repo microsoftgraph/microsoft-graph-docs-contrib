@@ -96,10 +96,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ope
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-rolemanagementalerts-running-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-rolemanagementalerts-running-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-longrunningoperation-rolemanagementalerts-running-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -166,10 +162,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ope
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-rolemanagementalerts-succeeded-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-rolemanagementalerts-succeeded-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -243,10 +235,6 @@ GET https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authenticati
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-passwordreset-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-passwordreset-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-longrunningoperation-passwordreset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -314,10 +302,6 @@ GET https://graph.microsoft.com/beta/external/industryData/operations/d194fa3e-1
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-industrydata-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-industrydata-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
