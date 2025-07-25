@@ -19,13 +19,7 @@ Represents individual desks.
 Inherits from [place](./place.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/desk-list.md)|[desk](./desk.md) collection|Get a list of [desk](../resources/desk.md) objects and their properties.|
-|[Get](../api/desk-get.md)|[desk](./desk.md)|Read the properties and relationships of a [desk](../resources/desk.md) object.|
-|[Update](../api/desk-update.md)|[desk](./desk.md)|Update the properties of a [desk](../resources/desk.md) object.|
-|[Delete](../api/desk-delete.md)|None|Delete a [desk](../resources/desk.md) object.|
-|[descendants](../api/desk-descendants.md)|[place](./place.md) collection|Get all the descendants of a specific type under a [desk](../resources/place.md). |
+For the list of supported methods, see [place](./place.md).
 
 ## Properties
 |Property |Type |Description |

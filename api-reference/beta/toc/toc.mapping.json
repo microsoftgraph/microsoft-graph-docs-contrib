@@ -260,21 +260,21 @@
           "resources": [
             "place",
             "building",
-            "desk",
             "floor",
-            "room",
-            "roomList",
             "section",
-            "workspace"
+            "desk",
+            "room",
+            "workspace",
+            "roomList"
           ],
           "complexTypes": [
+            "resourceLink",
+            "mailboxDetails",
+            "placeMode",
             "assignedPlaceMode",
             "dropInPlaceMode",
-            "mailboxDetails",
-            "offlinePlaceMode",
-            "placeMode",
             "reservablePlaceMode",
-            "resourceLink"
+            "offlinePlaceMode"
           ],
            "childNodes": [
             {

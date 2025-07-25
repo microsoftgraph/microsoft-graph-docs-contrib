@@ -19,21 +19,15 @@ Represents a floor within a [building](./building.md). A [building](./building.m
 Inherits from [place](./place.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/floor-list.md)|[floor](./floor.md) collection|Get a list of [floor](../resources/floor.md) objects and their properties.|
-|[Get](../api/floor-get.md)|[floor](./floor.md)|Read the properties and relationships of a [floor](../resources/floor.md) object.|
-|[Update](../api/floor-update.md)|[floor](./floor.md)|Update the properties of a [floor](../resources/floor.md) object.|
-|[Delete](../api/floor-delete.md)|None|Delete a [floor](../resources/floor.md) object.|
-|[Descendants](../api/floor-descendants.md)|[place](./place.md) collection|Get all the descendants of a specific type (for example, [sections](./section.md), [rooms](./room.md), [workspaces](./workspace.md), or [desks](./desk.md)) under a **floor**. |
+For the list of supported methods, see [place](./place.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](./physicaladdress.md)|The physical address of the **floor**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md). |
-|displayName|String|The name that is associated with the place. Inherited from [place](./place.md).|
+|displayName|String|The name that is associated with the floor. Inherited from [place](./place.md).|
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **floor** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
-|id|String|The unique identifier for the place. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md).|
+|id|String|The unique identifier for the floor. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md).|
 |isWheelChairAccessible|Boolean|Indicates whether **floor** is wheelchair accessible. Inherited from [place](./place.md).|
 |label |String |User-defined description of the **floor**. Inherited from [place](./place.md).|
 |parentId|String|The ID of a parent [building](./building.md). Inherited from [place](./place.md).|
