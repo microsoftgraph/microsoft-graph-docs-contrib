@@ -66,7 +66,6 @@ This example shows how to add a `write` [permission](../resources/permission.md)
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "driveitem-post-permissions-1", "scopes": "filestoragecontainer.selected", "target": "action" } -->
 
 ```http
@@ -131,7 +130,6 @@ This example shows how to add a `write` [permission](../resources/permission.md)
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "driveitem-post-permissions-2", "scopes": "filestoragecontainer.selected", "target": "action" } -->
 
 ```http
