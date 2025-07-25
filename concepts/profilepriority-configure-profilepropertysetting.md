@@ -69,7 +69,8 @@ Content-Type: application/json
 
 {
   "prioritizedSourceUrls": [
-    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')"
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
   ]
 }
 ```
@@ -107,7 +108,8 @@ Content-Type: application/json
 {
   "prioritizedSourceUrls": [
     "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
-    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')"
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')",
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
   ]
 }
 ```
@@ -127,7 +129,8 @@ Content-type: application/json
   "allowedAudiences": null,
   "prioritizedSourceUrls": [
     "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
-    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')"
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')",
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
   ]
 }
 ```
@@ -172,13 +175,13 @@ Update-Module Microsoft.Graph.Beta
 To get profile property settings configuration for an organization, use the following command.
 
 ```powershell
-Get-MgAdminPeopleProfilePropertySetting
+Get-MgBetaAdminPeopleProfilePropertySetting
 ```
 
 To get the profile source precedence configuration in an organization, use the following command.
 
 ```powershell
-Get-MgAdminPeopleProfilePropertySetting -Id $id
+Get-MgBetaAdminPeopleProfilePropertySetting -ProfilePropertySettingId $id
 ```
 
 > [!NOTE]
@@ -202,11 +205,12 @@ Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 ```powershell
 $params = @{
     prioritizedSourceUrls = @(
-        "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')"
+      "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='hrPlatform1')",
+	    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
     )
 }
 
-New-MgAdminPeopleProfilePropertySetting -BodyParameter $params
+New-MgBetaAdminPeopleProfilePropertySetting -BodyParameter $params
 ```
 
 ### Update profile source precedence setting in your organization
@@ -224,11 +228,12 @@ Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 $params = @{
     prioritizedSourceUrls = @(
         "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
-        "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')"
+        "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')",
+        "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
     )
 }
 
-Update-MgAdminPeopleProfilePropertySetting -Id $id -BodyParameter $params
+Update-MgBetaAdminPeopleProfilePropertySetting -ProfilePropertySettingId $id -BodyParameter $params
 ```
 
 ### Remove profile source precedence setting in your organization
@@ -243,7 +248,7 @@ Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 ```
 
 ```powershell
-Remove-MgAdminPeopleProfilePropertySetting -Id $id
+Remove-MgBetaAdminPeopleProfilePropertySetting -ProfilePropertySettingId $id
 ```
 
 ## Related content

@@ -224,13 +224,13 @@ Update-Module Microsoft.Graph.Beta
 To get profile source settings configuration for an organization, use the following command.
 
 ```powershell
-Get-MgAdminPeopleProfileSource
+Get-MgBetaAdminPeopleProfileSource
 ```
 
 To get a profile source setting configuration in an organization, use the following command.
 
 ```powershell
-Get-MgAdminPeopleProfileSource -ProfileSourceId $sourceId
+Get-MgBetaAdminPeopleProfileSource -ProfileSourceId $id
 ```
 
 > [!NOTE]
@@ -253,17 +253,19 @@ Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 
 ```powershell
 $params = @{
-  displayName = "HR-Platform",
-  localizations = @(
-    @{
-      displayName = "HR-Plattform",
-      webUrl = "http://bamboohr.contoso.com/de/login",
-      languageTag = "de"
-    }
-  )
+	displayName = "HR-Platform"
+	sourceId = "hrPlatform1"
+	webUrl = "http://bamboohr.contoso.com/login"
+	localizations = @(
+		@{
+			displayName = "HR-Plattform"
+			webUrl = "http://bamboohr.contoso.com/de/login"
+			languageTag = "de"
+		}
+	)
 }
 
-New-MgAdminPeopleProfileSource -BodyParameter $params
+New-MgBetaAdminPeopleProfileSource -BodyParameter $params
 ```
 
 ### Update a profile source setting in your organization
@@ -279,22 +281,24 @@ Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 
 ```powershell
 $params = @{
-  displayName = "HR-Platform Updated",
-  localizations = @(
+	displayName = "HR-Platform Updated"
+	sourceId = "hrPlatform1"
+	webUrl = "http://bamboohr.contoso.com/login"
+	localizations = @(
     @{
-      displayName = "HR-Platform",
-      webUrl = "http://bamboohr.contoso.com/en-us/login",
+      displayName = "HR-Platform"
+      webUrl = "http://bamboohr.contoso.com/en-us/login"
       languageTag = "en-us"
     },
-    @{
-      displayName = "HR-Plattform",
-      webUrl = "http://bamboohr.contoso.com/de/login",
-      languageTag = "de"
-    }
-  )
+		@{
+			displayName = "HR-Plattform"
+			webUrl = "http://bamboohr.contoso.com/de/login"
+			languageTag = "de"
+		}
+	)
 }
 
-Update-MgAdminPeopleProfileSource -ProfileSourceId $sourceId -BodyParameter $params
+Update-MgBetaAdminPeopleProfileSource -ProfileSourceId $id -BodyParameter $params
 ```
 
 ### Remove a profile source setting in your organization
@@ -309,7 +313,7 @@ Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 ```
 
 ```powershell
-Remove-MgAdminPeopleProfileSource -ProfileSourceId $sourceId 
+Remove-MgBetaAdminPeopleProfileSource -ProfileSourceId $id 
 ```
 
 ## Related content
