@@ -1,5 +1,5 @@
 ---
-title: "Publish cloudPcCloudApp"
+title: "cloudPcCloudApp: publish"
 description: "Publish a Cloud App to make it available to end-users through their portal, such as the Windows App. Note that there is a limit of 500 Cloud Apps that an admin can publish under a single provisioning policy."
 author: "niniliu"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 06/12/2025
 ---
 
-# Publish cloudPcCloudApp
+# cloudPcCloudApp: publish
 
 Namespace: microsoft.graph
 
