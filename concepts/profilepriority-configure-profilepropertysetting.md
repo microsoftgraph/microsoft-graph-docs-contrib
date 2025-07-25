@@ -193,10 +193,7 @@ Connect-MgGraph -Scopes "PeopleSettings.Read.All"
 
 ### Add profile source precedence setting in your organization
 
-You can use the Microsoft Graph PowerShell module to configure profile precedence in your organization.
-
-> [!NOTE]
-> The new command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
+You can use the Microsoft Graph PowerShell module to configure profile precedence in your organization. The new command requires the PeopleSettings.ReadWrite.All permission, and to create a Microsoft Graph session with the specific required scope, use the following command and consent to the requested permissions.
 
 ```powershell
 Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
@@ -215,10 +212,7 @@ New-MgBetaAdminPeopleProfilePropertySetting -BodyParameter $params
 
 ### Update profile source precedence setting in your organization
 
-You can use the Microsoft Graph PowerShell module to update the profile source precedence setting in your organization.
-
-> [!NOTE]
-> The update command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
+You can use the Microsoft Graph PowerShell module to update the profile source precedence setting in your organization. The update command requires the PeopleSettings.ReadWrite.All permission, and to create a Microsoft Graph session with the specific required scope, use the following command and consent to the requested permissions.
 
 ```powershell
 Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
@@ -238,10 +232,7 @@ Update-MgBetaAdminPeopleProfilePropertySetting -ProfilePropertySettingId $id -Bo
 
 ### Remove profile source precedence setting in your organization
 
-You can use the Microsoft Graph PowerShell module to remove the profile source precedence setting from your organization.
-
-> [!NOTE]
-> The remove command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
+You can use the Microsoft Graph PowerShell module to remove the profile source precedence setting from your organization. The remove command requires the PeopleSettings.ReadWrite.All permission, and to create a Microsoft Graph session with the specific required scope, use the following command and consent to the requested permissions.
 
 ```powershell
 Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"

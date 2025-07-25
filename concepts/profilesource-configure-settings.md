@@ -242,10 +242,7 @@ Connect-MgGraph -Scopes "PeopleSettings.Read.All"
 
 ### Add a profile source setting in your organization
 
-You can use the Microsoft Graph PowerShell module to configure a profile source setting in your organization.
-
-> [!NOTE]
-> The new command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
+You can use the Microsoft Graph PowerShell module to configure a profile source setting in your organization. The new command requires the PeopleSettings.ReadWrite.All permission, and to create a Microsoft Graph session with the specific required scope, use the following command and consent to the requested permissions.
 
 ```powershell
 Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
@@ -270,10 +267,7 @@ New-MgBetaAdminPeopleProfileSource -BodyParameter $params
 
 ### Update a profile source setting in your organization
 
-You can use the Microsoft Graph PowerShell module to update a profile source setting in your organization.
-
-> [!NOTE]
-> The update command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
+You can use the Microsoft Graph PowerShell module to update a profile source setting in your organization. The update command requires the PeopleSettings.ReadWrite.All permission, and to create a Microsoft Graph session with the specific required scope, use the following command and consent to the requested permissions.
 
 ```powershell
 Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
@@ -303,10 +297,7 @@ Update-MgBetaAdminPeopleProfileSource -ProfileSourceId $id -BodyParameter $param
 
 ### Remove a profile source setting in your organization
 
-You can use the Microsoft Graph PowerShell module to remove a profile source setting from your organization.
-
-> [!NOTE]
-> The remove command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
+You can use the Microsoft Graph PowerShell module to remove a profile source setting from your organization. The remove command requires the PeopleSettings.ReadWrite.All permission, and to create a Microsoft Graph session with the specific required scope, use the following command and consent to the requested permissions.
 
 ```powershell
 Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"

@@ -16,16 +16,16 @@ Correctly pronouncing someone's name shows inclusion and respect because names a
 
 Administrators can enable or disable name pronunciation for everyone in the organization by using the Microsoft Graph API. By default, name pronunciation is disabled. 
 
-When name pronunciation is enabled in an an organization:
+When name pronunciation is enabled in an organization:
 
 - Users can optionally add and manage pronunciations in the profile card in Teams and Outlook, both in desktop and on the web. 
-- Name pronunciations appears by users' names on the profile card in Teams. 
+- Name pronunciations appear by users' names on the profile card in Teams. 
 - Pronunciations are only displayed internally within the organization. In multi-tenant organizations, users in all tenants can access the pronunciations provided by users in any other tenant. 
 - Pronunciations are visible on profile cards to anyone who has an account in the organization, including guest accounts.
 
 Name pronunciation data is stored in the user's mailbox. For more information, see [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide#how-can-i-determine-customer-data-location&preserve-view=true).
 
-Administrators can decide whether to display pronunciations that users set up in their profile cards. To enable the display of user-created name pronunciations, set the **isEnabledInOrganization** property of the [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object to `true`. When this property is set to `true`, pronunciation is displayed for everyone within the organization. When this property is set to `false`, pronunciation not displayed for anyone within or outside the organization. The default setting is `false`.
+Administrators can decide whether to display pronunciations that users set up in their profile cards. To enable the display of user-created name pronunciations, set the **isEnabledInOrganization** property of the [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object to `true`. When this property is set to `true`, pronunciation is displayed for everyone within the organization. When this property is set to `false`, pronunciation is not displayed for anyone within or outside the organization. The default setting is `false`.
 
 > [!IMPORTANT]
 > When you turn name pronunciation on or off, it can take up to seven hours for users to see changes. For example, if you turn pronunciation on, users might not see the option to add recordings on their profile card for up to seven hours. If you turn pronunciation off, any previously set recording might stay visible in Microsoft 365 (for example, on profile cards) for up to seven hours. 
@@ -118,7 +118,7 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 - **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
 
 > [!NOTE]
-> The PowerShell commands for name pronunciation settings are only available in beta. Switch to the beta experience before you run the following commands.
+> The PowerShell commands for name pronunciation settings are only available in beta. Switch to the beta experience before you run the commands.
 
 ```powershell
 Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.3.0
@@ -126,10 +126,7 @@ Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.3.0
 
 ### Confirm your current settings
 
-To get name pronunciation settings configuration for an organization, use the following command:
-
-> [!NOTE]
-> The get method requires `PeopleSettings.Read.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+To get the name pronunciation settings configuration for an organization, use the following command. Note that the `get` method requires PeopleSettings.Read.All permissions, and to create a Microsoft Graph session with the specifically required scope, use the following command and consent to the requested permissions.
 
  ```powershell
 Connect-MgGraph -Scopes "PeopleSettings.Read.All"
@@ -138,10 +135,7 @@ Get-MgBetaAdminPeopleNamePronunciation
 
 ### Enable name pronunciation in your organization
 
-By default, name pronunciation is disabled in an organization. You can use the Microsoft Graph PowerShell module to make name pronunciation available in your organization.
-
-> [!NOTE]
-> The update method requires additional `PeopleSettings.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+By default, name pronunciation is disabled in an organization, but you can use the Microsoft Graph PowerShell module to make it available. The `update` method requires additional PeopleSettings.ReadWrite.All permissions, and to create a Microsoft Graph session with the specifically required scope, use the following command and consent to the requested permissions.
 
 ```powershell
 Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
