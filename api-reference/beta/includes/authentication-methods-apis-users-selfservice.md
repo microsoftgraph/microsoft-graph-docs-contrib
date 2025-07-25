@@ -1,7 +1,6 @@
 ---
 author: FaithOmbongi
 ms.topic: include
-ms.date: 07/24/2025
 ---
 
 <!-- markdownlint-disable MD041-->
