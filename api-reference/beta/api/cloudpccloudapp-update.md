@@ -74,7 +74,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcCloudApp",
-   "displayName": "Cloud App example3"
+   "displayName": "Cloud App example3",
     "appDetail": {
         "iconPath": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell_ise.exe"
     }

@@ -24,7 +24,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "cloudpccloudapp_get" } -->
 
-
 ## HTTP request
 
 <!-- {
@@ -58,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcCloudA
 
 ### Request
 
-<!-- {Device and app management
+<!-- {
   "blockType": "request",
   "name": "get_cloudpccloudapp"
 }

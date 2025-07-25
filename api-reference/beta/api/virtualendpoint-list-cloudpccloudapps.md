@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 List all the [cloudPcCloudApp](../resources/cloudpccloudapp.md) objects filter by a provision policy id.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]p
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [cloudPcCloudApp](../resources/cloudpccloudapp.md) objects in the response body, Where [cloudPcCloudAppDetail](../resources/cloudpccloudapp.md#cloudpccloudappdetail-values) specifies details about the Cloud App.
+If successful, this method returns a `200 OK` response code and a collection of [cloudPcCloudApp](../resources/cloudpccloudapp.md) objects in the response body.
 
 ## Examples
 

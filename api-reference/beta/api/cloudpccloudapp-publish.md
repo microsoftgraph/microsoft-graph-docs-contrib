@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 06/12/2025
 ---
 
-# Update cloudPcCloudApp
+# Publish cloudPcCloudApp
 
 Namespace: microsoft.graph
 
@@ -71,7 +71,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudApps
 Content-Type: application/json
 
 {
-   ["30d0e128-de93-41dc-89ec-33d84bb662a0", "40d0e128-de93-41dc-89ec-33d84bb662a0"]
+   "cloudAppIds": ["30d0e128-de93-41dc-89ec-33d84bb662a0", "40d0e128-de93-41dc-89ec-33d84bb662a0"]
 }
 ```
 

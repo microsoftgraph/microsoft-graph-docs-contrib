@@ -52,10 +52,10 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.cloudPcDiscoveredApp",
   "discoveredAppId": "String",
-  "type": "String"
-   "appDetail": {
+  "appName": "String",
+  "appDetail": {
     "@odata.type": "microsoft.graph.cloudPcCloudAppDetail"
   },
-  "sourceId": "String",
+  "sourceId": "String"
 }
 ```
