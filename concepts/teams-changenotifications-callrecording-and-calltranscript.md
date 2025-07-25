@@ -10,7 +10,7 @@ ms.date: 11/07/2024
 
 # Get change notifications for meeting transcripts and recordings using Microsoft Graph
 
-Change notifications enable you to subscribe to changes to transcripts and recordings. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) or a [recording](/graph/api/resources/callrecording) is available after an online meeting.
+Change notifications enable you to subscribe to changes to transcripts and recordings. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) or a [recording](/graph/api/resources/callrecording) is available after a a scheduled online meeting or an ad hoc call.
 
 This article describes scenarios for the **transcript** and **recording** resources. For more information, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
@@ -19,19 +19,59 @@ This article describes scenarios for the **transcript** and **recording** resour
 
 ## Subscribe to transcripts available at the tenant-level
 
++ **For online meetings**
+
 To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
 > **Note:** This subscription doesn't currently support private channel meetings.
 
 ### Permissions
 
-One of the following permissions is required to subscribe to `communications/onlineMeetings/getAllTranscripts`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to subscribe to `communications/onlineMeetings/getAllTranscripts` for online meetings. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | OnlineMeetingTranscript.Read.All            |
+
+### Example
+
+The following example shows how to subscribe to transcripts available at the tenant level.
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "communications/onlineMeetings/getAllTranscripts",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2023-03-20T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
++ **For ad hoc calls**
+
+To obtain change notifications for any transcript available for any ad hoc call in a tenant, subscribe to `/communications/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. 
+The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports [ad hoc calls](https://review.learn.microsoft.com/en-us/graph/api/resources/adhoccall?view=graph-rest-beta&branch=pr-en-us-26954).
+
+> **Note:** This subscription only pertains to impromptu calls where a meeting ID is not created; not on shared or private channels.
+
+### Permissions
+
+One of the following permissions is required to subscribe to `/communications/adhocCalls/getAllTranscripts` for ad hoc calls. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | CallTranscripts.Read.All.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not Supported.   
 
 ### Example
 
