@@ -4,7 +4,7 @@ description: "Represents a collection of desks."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
@@ -49,7 +49,6 @@ Inherits from [place](./place.md).
 |parentId|String|The ID of a parent [section](./section.md) or [floor](./floor.md). Inherited from [place](./place.md). |
 |phone|String|The phone number of the **workspace**. Inherited from [place](./place.md). |
 |placeId|String|An alternate immutable unique identifier of the **workspace**. Read-only. Inherited from [place](../resources/place.md).|
-|resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **workspace**. Inherited from [place](./place.md). |
 |tags|String collection|Custom tags that are associated with the **workspace** for categorization or filtering. Inherited from [place](./place.md). |
 
 ## Relationships
@@ -85,7 +84,6 @@ The following JSON representation shows the resource type.
   "parentId": "String",
   "phone": "String",
   "placeId": "String",
-  "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],
   "tags": ["String"]
 }
 ```

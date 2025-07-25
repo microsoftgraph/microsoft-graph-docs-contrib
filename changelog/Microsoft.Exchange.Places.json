@@ -367,14 +367,6 @@
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
           "ApiChange": "Property",
-          "ChangedApiName": "resourceLinks",
-          "ChangeType": "Addition",
-          "Description": "Added the **resourceLinks** property to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
-          "Target": "place"
-        },
-        {
-          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
-          "ApiChange": "Property",
           "ChangedApiName": "tags",
           "ChangeType": "Addition",
           "Description": "Added the **tags** property to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",

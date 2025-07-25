@@ -4,7 +4,7 @@ description: "Indicates whether a desk or workspace is allowed to be booked in a
 author: "tiwarisakshi02"
 ms.date: 06/11/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 

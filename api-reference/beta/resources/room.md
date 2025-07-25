@@ -4,7 +4,7 @@ description: "Represents a room within the tenant."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
@@ -50,7 +50,6 @@ Inherits from [place](./place.md).
 |parentId |String |The ID of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](../resources/place.md). |
 |phone |String |The phone number of the **room**. Inherited from [place](../resources/place.md).|
 |placeId |String |An alternate immutable unique identifier of the **room**. Read-only. Inherited from [place](../resources/place.md).|
-|resourceLinks |[resourceLink](../resources/resourcelink.md) collection	|A set of links to external resources that are associated with the **room**. Inherited from [place](../resources/place.md).|
 |tags |String collection |Custom tags that are associated with the **room** for categorization or filtering. Inherited from [place](../resources/place.md).|
 |videoDeviceName |String |The name of the video device that is available in the **room**. |
 
@@ -97,7 +96,6 @@ The following JSON representation shows the resource type.
   "parentId": "String",
   "phone": "String",
   "placeId": "String (alternate identifier)",
-  "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],
   "tags": ["String"],
   "videoDeviceName": "String"
 }

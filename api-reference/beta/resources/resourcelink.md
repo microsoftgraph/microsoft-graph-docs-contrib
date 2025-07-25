@@ -4,7 +4,7 @@ description: "Represents external links that should be associated with a buildin
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 

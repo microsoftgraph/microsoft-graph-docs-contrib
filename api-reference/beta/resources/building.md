@@ -4,7 +4,7 @@ description: "Represents a building within the tenant."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
@@ -40,7 +40,7 @@ Inherits from [place](./place.md).
 |parentId|String|The ID of a parent [place](../resources/place.md). Inherited from [place](./place.md).|
 |phone|String|The phone number of the **building**. Inherited from [place](./place.md). |
 |placeId|String|An alternate immutable unique identifier of the **building**. Read-only. Inherited from [place](./place.md). |
-|resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **building**. Inherited from [place](./place.md). |
+|resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **building**. |
 |tags|String collection|Custom tags that are associated with the place for categorization or filtering. Inherited from [place](./place.md). |
 
 ## Relationships

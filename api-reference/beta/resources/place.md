@@ -4,7 +4,7 @@ description: "Represents different space types within a tenant."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
@@ -67,7 +67,6 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |parentId |String |The ID of a parent **place**. |
 |phone |String |The phone number of the **place**. |
 |placeId |String |An alternate immutable unique identifier of the **place**. Read-only. |
-|resourceLinks |[resourceLink](./resourcelink.md) collection |A set of links to external resources that are associated with the **place**. |
 |tags |String collection |Custom tags that are associated with the **place** for categorization or filtering. |
 
 ## Relationships
@@ -95,7 +94,6 @@ The following JSON representation shows the resource type.
   "parentId": "String",
   "phone": "String",
   "placeId": "String",
-  "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],
   "tags": ["String"]
 }
 ```

@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a place object."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: outlook
 doc_type: apiPageType
 ---
 
