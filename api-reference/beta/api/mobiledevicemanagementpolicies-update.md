@@ -55,7 +55,7 @@ In the request body, supply the values for fields listed below that should be up
 |Property|Type|Description|
 |:---|:---|:---|
 |appliesTo|policyScope|Determines the groups this policy setting applies to. Possible values are: `none`, `all`, `selected` **Important:** `selected` cannot be used when specifying this property. Use [includedGroups](../api/mobiledevicemanagementpolicies-post-includedgroups.md) to add specific groups. Using `all` will remove any existing groups.|
-|isMdmEnrollmentDuringRegistrationDisabled|Boolean|Determines whether user will be asked to enroll the device to the MDM provider when they register their new device.|
+|isMdmEnrollmentDuringRegistrationDisabled|Boolean|Determines whether to disable MDM enrollment prompts during device registration for users in scope of the policy|
 |complianceUrl|String|Compliance URL of the mobility management application|
 |discoveryUrl|String|Discovery URL of the mobility management application|
 |termsOfUseUrl|String|Terms of Use URL of the mobility management application|
