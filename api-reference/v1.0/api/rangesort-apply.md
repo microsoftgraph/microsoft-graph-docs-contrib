@@ -42,10 +42,10 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |fields|WorkbookSortField collection|The list of conditions to sort on.|
-|matchCase|Boolean|Optional. Whether to have the casing determine string ordering.|
-|hasHeaders|Boolean|Optional. Whether the range has a header.|
-|orientation|string|Optional. Whether the operation is sorting rows or columns.  The possible values are: `Rows`, `Columns`.|
-|method|string|Optional. The ordering method used for Chinese characters.  The possible values are: `PinYin`, `StrokeCount`.|
+|matchCase|Boolean|Optional. Indicates whether to have the casing determine string ordering.|
+|hasHeaders|Boolean|Optional. Indicates whether the range has a header.|
+|orientation|string|Optional. Indicates whether the operation is sorting rows or columns. The possible values are: `Rows`, `Columns`.|
+|method|string|Optional. Indicates the ordering method used for Chinese characters. The possible values are: `PinYin`, `StrokeCount`.|
 
 ## Response
 
