@@ -19,7 +19,7 @@ Create a new [permission](../resources/permission.md) object on a [driveItem](..
 > Consider the following restrictions for this API:
 >
 > - For OneDrive and SharePoint Online, you can only use this method to create a new application permission. If you want to create a new user permission in a drive item, see [invite](./driveitem-invite.md). For more information on application permissions, see [Selected permissions in OneDrive and SharePoint](/graph/permissions-selected-overview).
-> - For SharePoint Embedded, you can only use this method to create a new [sharePointGroup](../resources/sharepointgroup.md) permission. Currently, creating a group permission for the root item of a container isn't supported.
+> - For SharePoint Embedded, you can only use this method to create a new [sharePointGroup](../resources/sharepointgroup.md) permission. Currently, creating a permission on the root item of a container isn't supported.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
