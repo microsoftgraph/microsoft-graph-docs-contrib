@@ -1605,6 +1605,74 @@
       "CreatedDateTime": "2022-03-31T17:05:38.1837303Z",
       "WorkloadArea": "Compliance",
       "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4d361e36-9d33-49ae-bf29-c61f80e46e86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reportFileMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [reportFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryReportFileMetadata?view=graph-rest-beta) resource.",
+          "Target": "reportFileMetadata"
+        },
+        {
+          "Id": "4d361e36-9d33-49ae-bf29-c61f80e46e86",
+          "ApiChange": "Property",
+          "ChangedApiName": "reportFileMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **reportFileMetadata** property to the [ediscoveryAddToReviewSetOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryAddToReviewSetOperation"
+        },
+        {
+          "Id": "4d361e36-9d33-49ae-bf29-c61f80e46e86",
+          "ApiChange": "Property",
+          "ChangedApiName": "reportFileMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **reportFileMetadata** property to the [ediscoveryEstimateOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryEstimateOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryEstimateOperation"
+        }
+      ],
+      "Id": "4d361e36-9d33-49ae-bf29-c61f80e46e86",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-23T22:41:55.458412Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d0ce94bb-aad3-44b8-939f-80d32cdb33c6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reportFileMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [reportFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryReportFileMetadata?view=graph-rest-1.0) resource.",
+          "Target": "reportFileMetadata"
+        },
+        {
+          "Id": "d0ce94bb-aad3-44b8-939f-80d32cdb33c6",
+          "ApiChange": "Property",
+          "ChangedApiName": "reportFileMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **reportFileMetadata** property to the [ediscoveryAddToReviewSetOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryAddToReviewSetOperation"
+        },
+        {
+          "Id": "d0ce94bb-aad3-44b8-939f-80d32cdb33c6",
+          "ApiChange": "Property",
+          "ChangedApiName": "reportFileMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **reportFileMetadata** property to the [ediscoveryEstimateOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryEstimateOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryEstimateOperation"
+        }
+      ],
+      "Id": "d0ce94bb-aad3-44b8-939f-80d32cdb33c6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-07-23T22:41:55.4587083Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": ""
     }
   ]
 }
