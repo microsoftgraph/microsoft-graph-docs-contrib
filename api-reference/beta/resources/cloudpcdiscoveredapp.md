@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a defined collection of discovered app which app details can be used to create cloud app.
+Represents a defined collection of discovered apps whose details can be used to create a cloud app.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|discoveredAppId |String| The unique identifier of the discovered app.  Read-only.|
-|appName |String| The name of the discovered app; for example, "Paint". Read-only.  | 
 |appDetail |[cloudPcCloudAppDetail](../resources/cloudpccloudapp.md#cloudpccloudappdetail-values) | Specifies the details of the discovered app. Read-only.| 
-|sourceId |String | Specifies the ID of the source of the discovered app. For example, if the source is a custom device image, the sourceId value is the id of the image. For example: "3035e17f-c0f7-49c1-9502-5990afcaf86f". Read-only. |
+|appName |String| The name of the discovered app; for example, `Paint`. Read-only.| 
+|discoveredAppId |String| The unique identifier of the discovered app. Read-only.|
+|sourceId |String | The ID of the source of the discovered app. For example, if the source is a custom device image, the **sourceId** value is the ID of that image. For example, `3035e17f-c0f7-49c1-9502-5990afcaf86f`. Read-only. |
 
 ### cloudPcCloudAppDetail values
 
@@ -47,15 +47,12 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.cloudPcDiscoveredApp"
 }
 -->
-
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcDiscoveredApp",
-  "discoveredAppId": "String",
+  "appDetail": {"@odata.type": "microsoft.graph.cloudPcCloudAppDetail"},
   "appName": "String",
-  "appDetail": {
-    "@odata.type": "microsoft.graph.cloudPcCloudAppDetail"
-  },
+  "discoveredAppId": "String",
   "sourceId": "String"
 }
 ```
