@@ -1,6 +1,6 @@
 ---
 title: "cloudPcCloudApp: publish"
-description: "Publish a Cloud App to make it available to end-users through their portal, such as the Windows App. Note that there is a limit of 500 Cloud Apps that an admin can publish under a single provisioning policy."
+description: "Publish a cloudPcCloudApp object to make it available to end users through their portal, such as the Windows App."
 author: "niniliu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Publish a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object to make it available to end-users through their portal, such as the Windows App. Note that there is a limit of 500 Cloud Apps that an admin can publish under a single provisioning policy.
+Publish a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object to make it available to end users through their portal, such as the Windows App. 
+
+> [!NOTE]
+> A limit of 500 cloud apps can be published by an admin under a single provisioning policy.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -45,11 +48,11 @@ POST /deviceManagement/virtualEndpoint/cloudApps/publish
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameter that you can use with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudAppIds|String collection|The selected app ID list to be published. The max count that an admin can publish under a single provisioning policy is 500.|
+|cloudAppIds|String collection|The selected app ID list to be published. The maximum number of apps an admin can publish under a single provisioning policy is 500.|
 
 ## Response
 
