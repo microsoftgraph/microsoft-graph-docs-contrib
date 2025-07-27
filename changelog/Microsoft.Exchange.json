@@ -1570,26 +1570,26 @@
         },
         {
           "Id": "d65d0346-7f4c-48d2-9fec-8adbfc774555",
-          "ApiChange": "Annotation",
-          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ApiChange": "Method",
+          "ChangedApiName": "markAsJunk",
           "ChangeType": "Deprecation",
-          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
-          "Target": "markAsJunk"
+          "Description": "Deprecated the [markAsJunk](https://learn.microsoft.com/en-us/graph/api/message-markasjunk?view=graph-rest-beta) of the [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resource. The **markAsJunk** API is deprecated and will stop working data on December 30, 2025. Going forward use the [reportMessage](https://learn.microsoft.com/en-us/graph/api/message-reportmessage?view=graph-rest-beta) API.",
+          "Target": "message"
         },
         {
           "Id": "d65d0346-7f4c-48d2-9fec-8adbfc774555",
-          "ApiChange": "Annotation",
-          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ApiChange": "Method",
+          "ChangedApiName": "markAsNotJunk",
           "ChangeType": "Deprecation",
-          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
-          "Target": "markAsNotJunk"
+          "Description": "Deprecated the [markAsNotJunk](https://learn.microsoft.com/en-us/graph/api/message-markasnotjunk?view=graph-rest-beta) of the [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resource. The **markAsNotJunk** API is deprecated and will stop working data on December 30, 2025. Going forward use the [reportMessage](https://learn.microsoft.com/en-us/graph/api/message-reportmessage?view=graph-rest-beta) API.",
+          "Target": "message"
         },
         {
           "Id": "d65d0346-7f4c-48d2-9fec-8adbfc774555",
           "ApiChange": "Method",
           "ChangedApiName": "reportMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [reportMessage](https://learn.microsoft.com/en-us/graph/api/message-reportMessage?view=graph-rest-beta) method to the [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resource.",
+          "Description": "Added the [reportMessage](https://learn.microsoft.com/en-us/graph/api/message-reportmessage?view=graph-rest-beta) method to the [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resource.",
           "Target": "message"
         }
       ],
