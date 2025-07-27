@@ -2291,7 +2291,9 @@
             "personWebsite"
           ],
           "complexTypes": [
-            "originTenantInfo"
+            "companyDetail",
+            "originTenantInfo",
+            "positionDetail"
           ]
         },
         {
