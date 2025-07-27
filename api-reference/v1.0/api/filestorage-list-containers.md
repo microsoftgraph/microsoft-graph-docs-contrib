@@ -1,19 +1,21 @@
 ---
 title: "List containers"
-description: "Get a list of fileStorageContainers and their properties."
+description: "Get a list of fileStorageContainer objects that are accessible to a caller."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 05/28/2024
+ms.date: 07/21/2025
 ---
 
 # List containers
 
-
 Namespace: microsoft.graph
 
-Retrieve a list of [fileStorageContainer](../resources/filestoragecontainer.md) objects that are visible to the caller. The `containerTypeId` filter parameter is required.
+Get a list of [fileStorageContainer](../resources/filestoragecontainer.md) objects that are accessible to a caller. The **containerTypeId** filter parameter is required.
+
+> [!IMPORTANT]
+> Requests made on behalf of a user fail if the user doesn't have a OneDrive. This requirement doesn't apply when you call the endpoint without a user context (app-only authentication). The endpoint also only returns containers that the user is a direct member of. Containers that the user is a member of via a group aren't returned.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -39,7 +41,7 @@ GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 
 ## Query parameters
 
-This method required the `containerTypeId` parameter. It supports the `$expand` OData query parameter, except for the **drive**, **permissions**, and **customProperties** properties. For more information, see [OData query parameters](/graph/query-parameters).
+This method requires the **containerTypeId** parameter. It supports the `$expand` OData query parameter, except for the **drive**, **permissions**, and **customProperties** properties. If other `$filter` conditions are used, the endpoint might return intermediate pages with partial results or even no results, and the caller must continue to read all pages to get all applicable results. For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -74,10 +76,6 @@ GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers?$filter=cont
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filestoragecontainer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-filestoragecontainer-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -161,10 +161,6 @@ Content-length: 1963
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-windowsupdateforbusinessconfiguration-update-update-windowsupdateforbusinessconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-windowsupdateforbusinessconfiguration-update-update-windowsupdateforbusinessconfiguration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-windowsupdateforbusinessconfiguration-update-update-windowsupdateforbusinessconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointProtectio
 [!INCLUDE [sample-code](../includes/snippets/csharp/sharepointprotectionpolicy-list-siteinclusionrules-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/sharepointprotectionpolicy-list-siteinclusionrules-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sharepointprotectionpolicy-list-siteinclusionrules-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

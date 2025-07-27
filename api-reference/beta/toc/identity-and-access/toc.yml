@@ -659,15 +659,17 @@ items:
       items:
       - name: Custom app scope for RBAC providers
         href: ../../resources/customappscope.md
-      - name: List for Exchange Online
+      - name: List for Exchange Online and Defender
         href: ../../api/unifiedrbacapplication-list-customappscopes.md
+      - name: List for Defender
+        href: ../../api/unifiedrbacapplicationmultiple-list-customappscopes.md
       - name: Create for Exchange Online
         href: ../../api/unifiedrbacapplication-post-customappscope.md
-      - name: Get
+      - name: Get for Exchange Online
         href: ../../api/customappscope-get.md
-      - name: Update
+      - name: Update for Exchange Online
         href: ../../api/customappscope-update.md
-      - name: Delete
+      - name: Delete for Exchange Online
         href: ../../api/customappscope-delete.md
   - name: Tenant information
     items:
@@ -4356,7 +4358,7 @@ items:
         href: ../../api/networkaccess-threatintelligencerule-update.md
       - name: Delete
         href: ../../api/networkaccess-threatintelligencerule-delete.md
-  - name: TLS Inspection
+  - name: TLS inspection
     items:
     - name: External certificate authority certificate
       items:
@@ -4372,9 +4374,9 @@ items:
         href: ../../api/networkaccess-externalcertificateauthoritycertificate-update.md
       - name: Delete
         href: ../../api/networkaccess-externalcertificateauthoritycertificate-delete.md
-    - name: Tls inspection policy
+    - name: Policy
       items:
-      - name: Tls inspection policy
+      - name: Policy
         href: ../../resources/networkaccess-tlsinspectionpolicy.md
       - name: List policies
         href: ../../api/networkaccess-networkaccessroot-list-tlsinspectionpolicies.md
@@ -4386,9 +4388,9 @@ items:
         href: ../../api/networkaccess-tlsinspectionpolicy-update.md
       - name: Delete policy
         href: ../../api/networkaccess-tlsinspectionpolicy-delete.md
-    - name: Tls inspection policy link
+    - name: Policy link to filtering profile
       items:
-      - name: Tls inspection policy link
+      - name: Policy link to filtering profile
         href: ../../resources/networkaccess-tlsinspectionpolicylink.md
       - name: List
         href: ../../api/networkaccess-tlsinspectionpolicylink-list.md
@@ -4400,9 +4402,9 @@ items:
         href: ../../api/networkaccess-tlsinspectionpolicylink-update.md
       - name: Delete
         href: ../../api/networkaccess-tlsinspectionpolicylink-delete.md
-    - name: Tls inspection rule
+    - name: Policy rule
       items:
-      - name: Tls inspection rule
+      - name: Policy rule
         href: ../../resources/networkaccess-tlsinspectionrule.md
       - name: List
         href: ../../api/networkaccess-tlsinspectionpolicy-list-policyrules.md
