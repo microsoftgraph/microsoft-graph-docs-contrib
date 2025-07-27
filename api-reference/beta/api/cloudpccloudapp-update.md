@@ -1,6 +1,6 @@
 ---
 title: "Update cloudPcCloudApp"
-description: " Update the properties of a cloudPcCloudApp object. Such as update the display name or icon path."
+description: "Update the properties of a cloudPcCloudApp object, such as the display name or icon path."
 author: "niniliu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object. Such as update the display name or icon path.
+Update the properties of a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object, such as the display name or icon path.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -40,18 +40,19 @@ PATCH /deviceManagement/virtualEndpoint/cloudApps/{id}
 | Name          | Description               |
 | :------------ | :------------------------ |
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-type | application/json. Required.|
 
 ## Request body
 
 In the request body, supply a JSON representation of the [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.
 
-The following table shows the properties that can be updated for the [cloudPcCloudApp](../resources/cloudpccloudapp.md).
+The following table shows the properties that you can use when you updated a **cloudPcCloudApp**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Specifies the display name for a Cloud App.  This is the name of the app that appears on the end-user portal, and it MUST be unique within a single provisioning policy. It uses the discovered app name as default value. Maximum allowed length for this property is 64. For example, "Paint". Supports: $filter, $select, $orderBy.|
-|description|String|Specifies the description associated with the Cloud App.  The maximum allowed length for this property is `512`. Supports: $filter, $select, $orderBy.|
-|appDetail|[cloudPcCloudAppDetail](../resources/cloudpccloudapp.md#cloudpccloudappdetail-values)|Specifies details about the Cloud App.  These values come initially from the appDetail property of the associated discovered app.  The `iconPath`, `iconIndex`, and `commandLineArguments` properties can be changed as needed when updating the Cloud App. Supports: $select.|
+|appDetail|[cloudPcCloudAppDetail](../resources/cloudpccloudapp.md#cloudpccloudappdetail-values)|The details about the cloud app. These values come initially from the **appDetail** property of the associated discovered app. The **iconPath**, **iconIndex**, and **commandLineArguments** properties can be changed as needed when you update the cloud app. Supports `$select`.|
+|description|String|The description associated with the cloud app. The maximum allowed length for this property is 512 characters. Supports `$filter`, `$select`, and `$orderBy`.|
+|displayName|String|The display name for the cloud app. This is the name of the app that appears on the end-user portal, and it must be unique within a single provisioning policy. It uses the discovered app name as the default value. The maximum allowed length for this property is 64 characters. For example, `Paint`. Supports `$filter`, `$select`, and `$orderBy`.|
 
 ## Response
 
@@ -74,10 +75,10 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcCloudApp",
-   "displayName": "Cloud App example3",
-    "appDetail": {
-        "iconPath": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell_ise.exe"
-    }
+  "displayName": "Cloud App example3",
+  "appDetail": {
+    "iconPath": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell_ise.exe"
+  }
 }
 ```
 
