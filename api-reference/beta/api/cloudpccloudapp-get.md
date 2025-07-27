@@ -30,14 +30,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-
 ``` http
 GET /deviceManagement/virtualEndpoint/cloudApps/{id}
 ```
 
 ## Optional query parameters
 
-This method supports `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -56,49 +55,47 @@ If successful, this method returns a `200 OK` response code and a [cloudPcCloudA
 ## Examples
 
 ### Request
-
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_cloudpccloudapp"
 }
 -->
-
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudApps/eda7ed64-7705-4079-9d08-c2bd883f4fff
 ```
 
 ### Response
-
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.cloudPcCloudApp"
 }
 -->
-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcCloudApps/$entity",
-    "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b",
-    "discoveredAppId": "9a383274-a9b3-4c5f-ac95-0ea5d54fb365",
-    "displayName": "Cloud App example",
-    "discoveredAppName": "Paint",
-    "description": "",      
-    "appDetail": {
-                        "filePath": "C:\\Windows\\system32\\mspaint.exe",                     
-                        "commandLineArguments": "",
-                        "iconPath": "C:\\Windows\\system32\\mspaint.exe",
-                        "iconIndex": 0
-    },
-    "provisionPolicyId": "jw3de35f-3385-46c8-a6f5-6c3dfad7708b",
-    "appStatus":"published",
-    "lastPublishedDateTime": "2022-07-15T12:19:27.7211305Z",
-    "availableToUser": true,
-    "addedDateTime": "2022-07-14T12:19:27.7211305Z",
-    "scopeIds": ["0", "1"]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcCloudApps/$entity",
+  "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b",
+  "discoveredAppId": "9a383274-a9b3-4c5f-ac95-0ea5d54fb365",
+  "displayName": "Cloud App example",
+  "discoveredAppName": "Paint",
+  "description": "",
+  "appDetail": {
+    "filePath": "C:\\Windows\\system32\\mspaint.exe",
+    "commandLineArguments": "",
+    "iconPath": "C:\\Windows\\system32\\mspaint.exe",
+    "iconIndex": 0
+  },
+  "provisionPolicyId": "jw3de35f-3385-46c8-a6f5-6c3dfad7708b",
+  "appStatus": "published",
+  "lastPublishedDateTime": "2022-07-15T12:19:27.7211305Z",
+  "availableToUser": true,
+  "addedDateTime": "2022-07-14T12:19:27.7211305Z",
+  "scopeIds": ["0", "1"]
 }
 ```
