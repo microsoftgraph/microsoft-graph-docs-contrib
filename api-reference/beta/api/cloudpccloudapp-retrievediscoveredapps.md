@@ -1,6 +1,6 @@
 ---
-title: "Retrieve cloudPcDiscoveredApp"
-description: "Get discovered app list which app details can be used to mapped to a cloud app."
+title: "cloudPcCloudApp: retrieveDiscoveredApps"
+description: "Get a list of cloudPcDiscoveredApp objects whose app details can be used to map to a cloudPcCloudApp object."
 author: "niniliu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 06/12/2025
 ---
 
-# Retrieve cloudPcDiscoveredApp
+# cloudPcCloudApp: retrieveDiscoveredApps
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get discovered app list which app details can be used to mapped to a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.
+Get a list of [cloudPcDiscoveredApp](../resources/cloudpcdiscoveredapp.md) objects whose app details can be used to map to a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -47,29 +47,28 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [cloudPcDiscoveredApp](../resources/cloudpcdiscoveredapp.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [cloudPcDiscoveredApp](../resources/cloudpcdiscoveredapp.md) objects in the response body.
 
 ## Examples
 
 ### Request
-
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "get_cloudpcdiscoveredapp"
 }
 -->
-
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudApps/retrieveDiscoveredApps(sourceId='30d0e128-de93-41dc-89ec-33d84bb662a0',provisionPolicyId='30d0e128-de93-41dc-89ec-33d84bb662a0')
 ```
 
 ### Response
-
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcDiscoveredApp"
+  "@odata.type": "Collection(microsoft.graph.cloudPcDiscoveredApp)"
 }
 -->
 
@@ -78,28 +77,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPcDiscoveredApp)",
-    "value": [
-                {
-                    "id": "9a383274-a9b3-4c5f-ac95-0ea5d54fb365",
-                    "appName": "Character Map",
-                    "properties": {
-                        "filePath": "C:\\Windows\\system32\\charmap.exe",            
-                        "commandLineArguments": "",
-                        "iconPath": "C:\\Windows\\system32\\charmap.exe",
-                        "iconIndex": 0
-                    }
-                },
-                {
-                    "id": "ja383274-a9b3-4c5f-ac95-0ea5d54fb365",
-                    "appName": "Paint",
-                    "properties": {
-                        "filePath": "C:\\Windows\\system32\\mspaint.exe",
-                        "commandLineArguments": "",
-                        "iconPath": "C:\\Windows\\system32\\mspaint.exe",
-                        "iconIndex": 0
-                    }
-                }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPcDiscoveredApp)",
+  "value": [
+    {
+      "id": "9a383274-a9b3-4c5f-ac95-0ea5d54fb365",
+      "appName": "Character Map",
+      "properties": {
+        "filePath": "C:\\Windows\\system32\\charmap.exe",
+        "commandLineArguments": "",
+        "iconPath": "C:\\Windows\\system32\\charmap.exe",
+        "iconIndex": 0
+      }
+    },
+    {
+      "id": "ja383274-a9b3-4c5f-ac95-0ea5d54fb365",
+      "appName": "Paint",
+      "properties": {
+        "filePath": "C:\\Windows\\system32\\mspaint.exe",
+        "commandLineArguments": "",
+        "iconPath": "C:\\Windows\\system32\\mspaint.exe",
+        "iconIndex": 0
+      }
+    }
+  ]
 }
 ```
