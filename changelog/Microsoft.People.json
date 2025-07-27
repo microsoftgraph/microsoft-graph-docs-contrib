@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "originTenantInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [originTenantInfo](https://learn.microsoft.com/en-us/graph/api/resources/originTenantInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the [originTenantInfo](https://learn.microsoft.com/en-us/graph/api/resources/originTenantInfo?view=graph-rest-beta) resource type.",
           "Target": "originTenantInfo"
         },
         {
@@ -72,7 +72,7 @@
       "Version": "beta",
       "CreatedDateTime": "2025-07-24T09:45:31.4250497Z",
       "WorkloadArea": "People and workplace intelligence",
-      "SubArea": "People"
+      "SubArea": "Profile"
     },
     {
       "ChangeList": [
