@@ -1,6 +1,6 @@
 ---
 title: "cloudPcCloudApp resource type"
-description: "Represents a Cloud App. Cloud Apps are built on Frontline shared options and provide the Windows 365 end-user an experience to access app-only sessions rather than a full desktop experience. The following table describes the Cloud App configurations."
+description: "Represents a cloud app."
 author: "niniliu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,50 +14,49 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Cloud App. Cloud Apps are built on Frontline shared options and provide the Windows 365 end-user an experience to access app-only sessions rather than a full desktop experience. The following table describes the Cloud App configurations.
+Represents a cloud app. Cloud apps are built on frontline shared options and provide Windows 365 end users with an experience to access app-only sessions rather than a full desktop experience. The following table describes the Cloud App configurations.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/virtualendpoint-list-cloudpccloudapps.md)|[cloudPcCloudApp](../resources/cloudpccloudapp.md) collection|List the properties and relationships of [cloudPcCloudApp](../resources/cloudpccloudapp.md) objects.|
-|[Get](../api/cloudPcCloudApp-get.md)|[cloudPcCloudApp](../resources/cloudpccloudapp.md)|Read the properties and relationships of a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.|
-|[Update](../api/cloudPcCloudApp-update.md)|[cloudPcCloudApp](../resources/cloudpccloudapp.md)|Update the properties of a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.|
-|[Publish](../api/cloudPcCloudApp-publish.md)|None|Publish a [cloudPcCloudApp](../resources/cloudpccloudapp.md) to make it available to end-users through their portal, such as the Windows App. Note that there is a limit of 500 Cloud Apps that an admin can publish under a single provisioning policy.|
-|[Unpublish](../api/cloudPcCloudApp-unpublish.md)|None|Unpublish a [cloudPcCloudApp](../resources/cloudpccloudapp.md) to remove it from the end-user portal, for example, the Windows App. Unpublishing a Cloud App will revert any changes made to its appDetails and reset them to the values of the discovered app that the Cloud App is linked to.|
-|[Reset](../api/cloudPcCloudApp-reset.md)|None|Reset the appDetails of the [cloudPcCloudApp](../resources/cloudpccloudapp.md) to the appDetails of the initial discovered app that this Cloud App is mapped to. The Reset action requires the "Microsoft.CloudPC/CloudApps/Update" permission.|
-|[RetrieveDiscoveredApps](../api/cloudPcCloudApp-retrievediscoveredapps.md)|[cloudPcDiscoveredApp](../resources/cloudpcdiscoveredapp.md)|Get discovered app list. Admin need to have "Microsoft.CloudPC/DeviceImages/Read" permission and mapped scope tags when the discovered apps are coming from the image which is choosen in provisioning policy.|
+|[List](../api/virtualendpoint-list-cloudapps.md)|[cloudPcCloudApp](../resources/cloudpccloudapp.md) collection|List all the [cloudPcCloudApp](../resources/cloudpccloudapp.md) objects filtered by a provision policy ID.|
+|[Get](../api/cloudpccloudapp-get.md)|[cloudPcCloudApp](../resources/cloudpccloudapp.md)|Read the properties of a specific [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.|
+|[Update](../api/cloudpccloudapp-update.md)|[cloudPcCloudApp](../resources/cloudpccloudapp.md)|Update the properties of a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object, such as the display name or icon path.|
+|[Publish](../api/cloudpccloudapp-publish.md)|None|Publish a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object to make it available to end users through their portal, such as the Windows App.|
+|[Unpublish](../api/cloudpccloudapp-unpublish.md)|None|Unpublish a [cloudPcCloudApp](../resources/cloudpccloudapp.md) to remove it from the end-user portal, for example, the Windows App.|
+|[Reset](../api/cloudpccloudapp-reset.md)|None|Reset the app details of the [cloudPcCloudApp](../resources/cloudpccloudapp.md) object to the app details of the initially discovered app that this cloud app is mapped to.|
+|[Retrieve discovered apps](../api/cloudpccloudapp-retrievediscoveredapps.md)|[cloudPcDiscoveredApp](../resources/cloudpcdiscoveredapp.md)|Get a list of [cloudPcDiscoveredApp](../resources/cloudpcdiscoveredapp.md) objects whose app details can be used to map to a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Specifies the display name for a Cloud App.  This is the name of the app that appears on the end-user portal, and it MUST be unique within a single provisioning policy. It uses the discovered app name as default value. Maximum allowed length for this property is 64. For example, "Paint". Supports: $filter, $select, $orderBy.|
-|discoveredAppName|String|Name of the discovered app assiciated with the cloud app. For example: `Paint`, Supports: $filter, $select, $orderBy. Read-only.|
-|description|String|Specifies the description associated with the Cloud App.  The maximum allowed length for this property is 512. Supports: $filter, $select, $orderBy.|
-|provisioningPolicyId|String|Specifies the ID of the provisioning policy associated with this Cloud App. This is a required property. For example: "96133506-c05b-4dbb-a150-ed4adc59895f". Supports: $filter, $select, $orderBy.  Read-only.|
-|id|String|Specifies the unique ID of the Cloud App. This is created automatically during the creation of a new Cloud App. Supports: $filter, $select, $orderBy.  Read-Only. |
-|lastPublishedDateTime|DateTimeOffset|The latest date time when the admin published the cloud app.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`. Returned by default,this property value cannot be set or modified by IT Admin. Supports: $filter, $select, $orderBy. Read-only.|
-|scopeIds|Collection(String)|Specifies the list of Scope Tag IDs for this Cloud App. This is inherited from the provisioning policy when the app is created or updated. Read-only.|
-|actionFailedErrorMessage|String|Specifies the error message when the IT admin failed to publish/unpublish/update/reset a Cloud App. For example: Publish failed because it exceeds the 500 Cloud Apps limitation under the policy,` you need to unpublish some Cloud Apps under this policy in order to publish this Cloud App again. Read-Only. |
-|appStatus|[cloudPcCloudAppStatus](#cloudpccloudappstatus-values)|Specifies the status of the Cloud App.  Possible values are `preparing`, `publishing`, `published`, `unpublishing`, `ready`, `failed`.  Default value is `preparing`. For example, the state is `preparing` when the Cloud App can be seen on the Intune portal, indicating that the Cloud App is not yet ready for publishing. The state then transitions to `ready`, indicating that the Cloud App is ready to be published. When an admin publishes or unpublishes a Cloud App, the status transitions to `publishing` or `unpublishing`, respectively, before finally moving to `published` or `ready`. Supports: $filter, $select, $orderBy.  Read-Only.|
-|appDetail|[cloudPcCloudAppDetail](#cloudpccloudappdetail-values)|Specifies details about the Cloud App.  These values come initially from the appDetail property of the associated discovered app.  The iconPath, iconIndex, and commandLineArguments properties can be changed as needed when updating the Cloud App. Supports: $select.|
-|addedDateTime|DateTimeOffset|The time the cloud app was added to this tenant and can be seen from the admin portal. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`. Returned by default, this property value cannot be set or modified by the IT Admin. Supports: $filter, $select, $orderBy. Read-only. |
-|availableToUser|Boolean|Indicates whether this cloud app is available to end-users through the end-user portal or the Windows App. The default value is `false`. It will change to `true` if the cloud app is successfully published, and revert to `false` when the admin unpublishes the cloud app.  Supports: $filter, $select, $orderBy.|
-|actionFailedErrorCode|[cloudPcCloudAppActionFailedErrorCode](#cloudpccloudappactionfailederrorcode-values)|Specifies the error code if publishing, unpublishing, or resetting a Cloud App fails. Possible values are `cloudAppQuotaExceeded`, `cloudPcLicenseNotFound`, or `internalServerError`. Default value is null. Supports: $filter, $select, $orderBy.  Read-Only.|
+|displayName|String|The display name for the cloud app. This is the name of the app that appears on the end-user portal, and it must be unique within a single provisioning policy. It uses the discovered app name as the default value. The maximum allowed length for this property is 64 characters. For example, `Paint`. Supports `$filter`, `$select`, and `$orderBy`.|
+|discoveredAppName|String|Name of the discovered app associated with the cloud app. For example, `Paint`, Supports `$filter`, `$select`, and `$orderBy`. Read-only.|
+|description|String|The description associated with the cloud app. The maximum allowed length for this property is 512 characters. Supports `$filter`, `$select`, and `$orderBy`.|
+|provisioningPolicyId|String|The ID of the provisioning policy associated with this cloud app. For example, `96133506-c05b-4dbb-a150-ed4adc59895f`. Supports `$filter`, `$select`, and `$orderBy`. Read-only. Required.|
+|id|String|The unique ID of the cloud app. Auto-generated value during the creation of a new cloud app. Supports `$filter`, `$select`, and `$orderBy`. Read-only. |
+|lastPublishedDateTime|DateTimeOffset|The latest date time when the admin published the cloud app. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Returned by default. It can't be set or modified by an IT admin. Supports `$filter`, `$select`, and `$orderBy`. Read-only.|
+|scopeIds|String collection|The list of scope tag IDs for this cloud app. Inherited from the provisioning policy when the app is created or updated. Read-only.|
+|actionFailedErrorMessage|String|The error message when the IT admin failed to publish, unpublish, update, or reset a cloud app. For example: "Publish failed because it exceeds the 500 cloud apps limitation under the policy. You need to unpublish some cloud apps under this policy in order to publish this cloud app again." Read-only. |
+|appStatus|[cloudPcCloudAppStatus](#cloudpccloudappstatus-values)|The status of the cloud app. Possible values are: `preparing`, `ready`, `publishing`, `published`, `unpublishing`, `failed`, `unknownFutureValue`. The default value is `preparing`. For example, the state is `preparing` when the cloud app appears in the Intune portal, which indicates that the cloud app isn't yet ready to be published. The state then transitions to `ready`, which indicates that the cloud app is ready to be published. When an admin publishes or unpublishes a cloud app, the status transitions to `publishing` or `unpublishing`, respectively, before finally moving to `published` or `ready`. Supports `$filter`, `$select`, and `$orderBy`. Read-only.|
+|appDetail|[cloudPcCloudAppDetail](#cloudpccloudappdetail-values)|The details about the cloud app. These values come initially from the **appDetail** property of the associated discovered app. The **iconPath**, **iconIndex**, and **commandLineArguments** properties can be changed as needed when you update the cloud app. Supports `$select`.|
+|addedDateTime|DateTimeOffset|The date and time when the cloud app was added to this tenant and became visible in the admin portal. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Returned by default. It can't be set or modified by an IT admin. Supports `$filter`, `$select`, and `$orderBy`. Read-only.|
+|availableToUser|Boolean|Indicates whether this cloud app is available to end users through the end-user portal or the Windows App. The default value is `false`. It changes to `true` if the cloud app is successfully published, and reverts to `false` when the admin unpublishes the cloud app. Supports `$filter`, `$select`, and `$orderBy`.|
+|actionFailedErrorCode|[cloudPcCloudAppActionFailedErrorCode](#cloudpccloudappactionfailederrorcode-values)|The error code if publishing, unpublishing, or resetting a cloud app fails. Possible values are: `cloudAppQuotaExceeded`, `cloudPcLicenseNotFound`, `internalServerError`, `unknownFutureValue`. The default value is `null`. Supports `$filter`, `$select`, `$orderBy`. Read-only.|
 
 ### cloudPcCloudAppStatus values
 
 |Member|Description|
 |:---|:---|
-|preparing|Default. This is the initial state of a Cloud App. Indicates that the Cloud App is yet not ready for publishing.|    
-|ready| Indicates the cloud app is ready for publishing.|        
-|publishing|Indicates the cloud app is in publishing/updating state.|
-|published|Indicates the application has been published/updated successfully.|
-|unpublishing|Indicates the cloud app is in unpublishing state.|
-|failed|Indicates the application has failed to complete publishing or unpublishing or updating or reseting process.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
-
+|preparing|Default. This is the initial state of a cloud app. Indicates that the cloud app isn't yet ready for publishing.| 
+|ready|Indicates that the cloud app is ready for publishing.|        
+|publishing|Indicates that the cloud app is in publishing or updating state.|
+|published|Indicates that the application was published or updated successfully.|
+|unpublishing|Indicates that the cloud app is in unpublishing state.|
+|failed|Indicates that the application failed to complete the publishing, unpublishing, updating, or resetting process.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcCloudAppDetail values
 
@@ -73,10 +72,10 @@ Represents a Cloud App. Cloud Apps are built on Frontline shared options and pro
 |Member|Description|
 |:---|:---|
 |cloudAppQuotaExceeded| Indicates that the provisioning policy has reached the limit of 500 Cloud Apps. To proceed, unpublish an existing Cloud App and try again. |
-|cloudPcLicenseNotFound| Indicates that the tenant does not have an available frontline license.|
-|internalServerError| Indicates that the Cloud App could not be published or unpublished due to an internal server error.|
+|cloudPcLicenseNotFound| Indicates that the tenant doesn't have any available frontline licenses.|
+|internalServerError| Indicates that the cloud app can't be published or unpublished due to an internal server error.|
 |appDiscoveryFailed| Indicates that the app discovery has failed in the associated Cloud PC device.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
@@ -116,20 +115,18 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcCloudApp",
-  "displayName": "String",
-  "description": "String",
-  "discoveredAppName": "String",
-  "provisioningPolicyId": "String",
-  "id": "String (identifier)",
-  "lastPublishedDateTime": "String (timestamp)",
-  "appDetail": {
-    "@odata.type": "microsoft.graph.cloudPcCloudAppDetail"
-  },
-  "scopeIds": ["String"],
   "actionFailedErrorCode": "String",
-  "appStatus": "String",
   "actionFailedErrorMessage": "String",
   "addedDateTime": "String (timestamp)",
-  "availableToUser": "Boolean"
+  "appDetail": {"@odata.type": "microsoft.graph.cloudPcCloudAppDetail"},
+  "appStatus": "String",
+  "availableToUser": "Boolean",
+  "description": "String",
+  "discoveredAppName": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "lastPublishedDateTime": "String (timestamp)",
+  "provisioningPolicyId": "String",
+  "scopeIds": ["String"]
 }
 ```
