@@ -1,6 +1,6 @@
 ---
 title: "cloudPcAgentHealthCheckSummary resource type"
-description: "Describes the details of the agent health status."
+description: "Describes the details of an agent health status."
 author: "jianawu"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the details of the agent health status.
+Describes the details of an agent health status.
 
 ## Properties
 |Property|Type|Description|
