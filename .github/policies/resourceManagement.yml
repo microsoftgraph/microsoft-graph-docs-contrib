@@ -210,6 +210,8 @@ configuration:
         - labelAdded:
             label: 'area: identity protection'
         - labelAdded:
+            label: 'area: intune'
+        - labelAdded:
             label: 'area: app model'
         - labelAdded:
             label: 'area: multicloud permissions management'
@@ -1000,7 +1002,7 @@ configuration:
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
-    - description: 'Add ready for content review label if author comments #sign-off'
+    - description: 'Add ready to merge label if author comments #sign-off'
       if:
       - payloadType: Issue_Comment
       - isActivitySender:
@@ -1011,7 +1013,7 @@ configuration:
           isRegex: False
       then:
       - addLabel:
-          label: ready for content review
+          label: ready to merge
     - description: Add do not merge label to new pull requests opened by contributors
       if:
       - payloadType: Pull_Request

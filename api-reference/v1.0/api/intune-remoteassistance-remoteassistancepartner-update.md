@@ -85,10 +85,6 @@ Content-length: 266
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-remoteassistance-remoteassistancepartner-update-update-remoteassistancepartner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-remoteassistance-remoteassistancepartner-update-update-remoteassistancepartner-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-remoteassistance-remoteassistancepartner-update-update-remoteassistancepartner-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

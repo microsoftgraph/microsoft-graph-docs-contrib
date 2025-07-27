@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcprovisioningpolicy-retrievepolicyapplyschedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcprovisioningpolicy-retrievepolicyapplyschedule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpcprovisioningpolicy-retrievepolicyapplyschedule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

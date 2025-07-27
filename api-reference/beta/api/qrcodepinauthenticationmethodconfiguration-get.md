@@ -20,11 +20,7 @@ Read the properties and relationships of a qrCodePinAuthenticationMethodConfigur
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "qrcodepinauthenticationmethodconfiguration-get-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "qrcodepinauthenticationmethodconfiguration_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethodconfiguration-get-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
@@ -74,10 +70,6 @@ GET https://graph.microsoft.com/beta/policies/authenticationmethodspolicy/authen
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-qrcodepinauthenticationmethodconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-qrcodepinauthenticationmethodconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

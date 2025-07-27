@@ -63,10 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigu
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-enrollmentconfigurationassignment-delete-delete-enrollmentconfigurationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-enrollmentconfigurationassignment-delete-delete-enrollmentconfigurationassignment-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-enrollmentconfigurationassignment-delete-delete-enrollmentconfigurationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

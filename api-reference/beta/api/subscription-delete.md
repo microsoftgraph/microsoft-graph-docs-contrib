@@ -83,6 +83,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 |[virtualEventWebinar](../resources/virtualeventwebinar.md) | VirtualEvent.Read | Not supported. | VirtualEvent.Read.All |
+|Microsoft Entra Health monitoring [alert](../resources/healthmonitoring-alert.md) <br />`/reports/healthmonitoring/alerts`| HealthMonitoringAlertConfig.ReadWrite.All | Not supported. | HealthMonitoringAlertConfig.ReadWrite.All |
 |[baseTask](../resources/todotask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 
 > [!NOTE]
@@ -164,10 +165,6 @@ DELETE https://graph.microsoft.com/beta/subscriptions/7f105c7d-2dc5-4530-97cd-4e
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-subscription-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-subscription-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

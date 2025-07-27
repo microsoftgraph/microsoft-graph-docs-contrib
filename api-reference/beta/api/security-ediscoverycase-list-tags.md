@@ -60,10 +60,6 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ceb
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoveryreviewtag-and-properties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-ediscoveryreviewtag-and-properties-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-ediscoveryreviewtag-and-properties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
