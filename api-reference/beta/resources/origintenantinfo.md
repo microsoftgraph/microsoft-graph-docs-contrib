@@ -1,6 +1,6 @@
 ---
 title: "originTenantInfo resource type"
-description: "Represents information about the origin tenant of a user."
+description: "Represents the identifiers of a tenant and a user that are used to identify them in the origin tenant when a user is invited as a guest."
 author: "bayram53"
 ms.date: 07/24/2025
 ms.localizationpriority: medium
