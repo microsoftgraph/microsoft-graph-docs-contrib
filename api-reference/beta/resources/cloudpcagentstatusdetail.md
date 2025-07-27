@@ -1,6 +1,6 @@
 ---
 title: "cloudPcAgentStatusDetail resource type"
-description: "Describes the agent status of the Cloud PC."
+description: "Describes the agent status of a Cloud PC."
 author: "jianawu"
 ms.date: 03/20/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the agent status of the Cloud PC.
+Describes the agent status of a Cloud PC.
 
 ## Properties
 |Property|Type|Description|
