@@ -1,6 +1,6 @@
 ---
-title: "Report Message"
-description: "Report the message as junk or phish or not junk"
+title: "message: reportMessage"
+description: "Report a message as junk, phishing, or not junk to help improve mail filtering."
 author: "ka-gunase"
 ms.date: 07/09/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# Report Message
+# message: reportMessage
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Report a message as junk, phish, or not junk to help improve mail filtering.**
+Report a [message](../resources/message.md) as junk, phishing, or not junk to help improve mail filtering.
 
 ## Permissions
 
@@ -52,10 +52,8 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ReportAction|reportAction|Indicates the type of action to be reported on the message, which can be junk, notJunk, or phish. For more information, see [reportAction](../resources/enums.md#reportaction-values)|
-|IsMessageMoveRequested|Boolean|Indicates if the message should be moved out of current folder.|
-
-
+|ReportAction|reportAction|Indicates the type of action to be reported on the message that can be junk, not junk, or phishing. The possible values are: `unknown`, `junk`, `notJunk`, `phish`, `unknownFutureValue`. |
+|IsMessageMoveRequested|Boolean|Indicates whether the message should be moved out of current folder.|
 
 ## Response
 
