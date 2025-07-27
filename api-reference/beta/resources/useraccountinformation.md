@@ -42,7 +42,7 @@ Inherits from [itemFacet](itemfacet.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
 |lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
 |originTenantInfo|[originTenantInfo](../resources/origintenantinfo.md)|Contains the identifiers of the user and the origin tenant that provisioned the user. This property is populated when the user is invited as a guest to the host tenant.|
-|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Contains the language the user has associated as preferred for the account.   |
+|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Contains the language that the user associated as preferred for their account.  |
 |source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |userPersona|userPersona|Represents the user's persona. The possible values are: `unknown`, `externalMember`, `externalGuest`, `internalMember`, `internalGuest`, `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user associated with the account.   |
