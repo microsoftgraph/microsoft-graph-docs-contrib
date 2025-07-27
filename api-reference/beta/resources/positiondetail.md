@@ -51,17 +51,17 @@ The following JSON representation shows the resource type.
 {
   "company": {"@odata.type": "microsoft.graph.companyDetail"},
   "description": "String",
+  "employeeId": "String",
+  "employeeType": "String",
   "endMonthYear": "String (timestamp)",
   "jobTitle": "String",
-  "layer": "Integer",
+  "layer": "Int32",
   "level": "String",
   "role": "String",
   "secondaryJobTitle": "String",
   "secondaryRole": "String",
   "startMonthYear": "String (timestamp)",
-  "summary": "String",
-  "employeeId": "String",
-  "employeeType": "String"
+  "summary": "String"
 }
 ```
 
