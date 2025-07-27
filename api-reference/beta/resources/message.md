@@ -50,7 +50,7 @@ by providing a [delta](../api/message-delta.md) function.
 |[Recall message](../api/message-recall.md)|[message](message.md)|Recall a message in the specified user's mailbox Sent Items folder.|
 |[Unsubscribe](../api/message-unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
 |[Permanently delete](../api/message-permanentdelete.md)|None|Permanently delete a message and place it in the Purges folder in the Recoverable Items folder in the user's mailbox.|
-|[Report message](../api/message-reportmessage.md)|[message](../resources/message.md)|Report a [message](../resources/message.md) as junk, phishing, or not junk to help improve mail filtering.|
+|[Report message](../api/message-reportmessage.md)|[message](../resources/message.md)|Report a [message](../resources/message.md) as junk, phishing, or not junk, which improves mail filtering.|
 |**Attachments**| | |
 |[List attachments](../api/message-list-attachments.md) |[Attachment](attachment.md) collection| Get all attachments on a message.|
 |[Add attachment](../api/message-post-attachments.md) |[Attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|
