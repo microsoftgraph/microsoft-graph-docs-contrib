@@ -1,6 +1,6 @@
 ---
 title: "originTenantInfo resource type"
-description: "Information about the origin tenant of a user."
+description: "Represents information about the origin tenant of a user."
 author: "bayram53"
 ms.date: 07/24/2025
 ms.localizationpriority: medium
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents identifiers of a tenant and a user. It is used to represent identifiers in the origin tenant when a user is invited as a guest user.
-
+Represents the identifiers of a tenant and a user that are used to identify them in the origin tenant when a user is invited as a guest.
 
 ## Properties
 
