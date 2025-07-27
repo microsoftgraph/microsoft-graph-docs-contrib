@@ -1,6 +1,6 @@
 ---
 title: "cloudPcCloudApp: reset"
-description: "Reset the appDetails of the Cloud App to the appDetails of the initial discovered app that this Cloud App is mapped to. The Reset action requires the "Microsoft.CloudPC/CloudApps/Update" permission."
+description: "Reset the app details of the cloudPcCloudApp object to the app details of the initially discovered app that this cloud app is mapped to."
 author: "niniliu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
