@@ -1,5 +1,5 @@
 ---
-title: "Message: reportMessage"
+title: "Report Message"
 description: "Report the message as junk or phish or not junk"
 author: "ka-gunase"
 ms.date: 07/09/2025
@@ -8,13 +8,13 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# Message: reportMessage
+# Report Message
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+**Report a message as junk, phish, or not junk to help improve mail filtering.**
 
 ## Permissions
 
@@ -52,7 +52,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ReportAction|reportAction|Indicates the type of action to be reported on the message, which can be junk, notJunk, or phish.|
+|ReportAction|reportAction|Indicates the type of action to be reported on the message, which can be junk, notJunk, or phish. For more information, see [reportAction](../resources/enums.md#reportaction-values)|
 |IsMessageMoveRequested|Boolean|Indicates if the message should be moved out of current folder.|
 
 
@@ -76,8 +76,8 @@ POST https://graph.microsoft.com/beta/me/messages/{messageId}/reportMessage
 Content-Type: application/json
 
 {
-  "ReportAction": "String",
-  "IsMessageMoveRequested": "Boolean"
+  "ReportAction": "junk",
+  "IsMessageMoveRequested": "true"
 }
 ```
 
