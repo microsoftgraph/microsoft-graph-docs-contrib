@@ -1,6 +1,6 @@
 ---
 title: "message: reportMessage"
-description: "Report a message as junk, phishing, or not junk to help improve mail filtering."
+description: "Report a message as junk, phishing, or not junk, which improves mail filtering."
 author: "ka-gunase"
 ms.date: 07/09/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Report a [message](../resources/message.md) as junk, phishing, or not junk to help improve mail filtering.
+Report a [message](../resources/message.md) as junk, phishing, or not junk, which improves mail filtering.
 
 ## Permissions
 
