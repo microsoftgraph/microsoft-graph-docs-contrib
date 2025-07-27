@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Publish a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object to make it available to end users through their portal, such as the Windows App. 
 
 > [!NOTE]
-> A limit of 500 cloud apps can be published by an admin under a single provisioning policy.
+> An admin can publish up to 500 cloud apps under a single provisioning policy
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
