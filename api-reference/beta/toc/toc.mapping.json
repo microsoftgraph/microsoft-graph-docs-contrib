@@ -469,6 +469,7 @@
           "resources": [
             "cloudPC",
             "cloudPcAuditEvent",
+            "cloudPcCloudApp",
             "cloudPcCrossCloudGovernmentOrganizationMapping",
             "cloudPcDeviceImage",
             "cloudPcExternalPartnerSetting",
@@ -510,6 +511,7 @@
             "cloudPcDisasterRecoveryAzureConnectionSetting",
             "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting",
             "cloudPcDisasterRecoveryNetworkSetting",
+            "cloudPcDiscoveredApp",
             "cloudPcDomainJoinConfiguration",
             "cloudPcForensicStorageAccount",
             "cloudPcHealthCheckItem",
