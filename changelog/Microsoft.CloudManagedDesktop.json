@@ -7,7 +7,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "cloudPcCloudApp",
               "ChangeType": "Addition",
-              "Description": "Added the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource type.",
+              "Description": "Added the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource type and associated methods.",
               "Target": "cloudPcCloudApp"
             },
             {
@@ -19,36 +19,36 @@
               "Target": "cloudPcDiscoveredApp"
             },
             {
-            "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
-            "ApiChange": "Method",
-            "ChangedApiName": "PublishCloudPcCloudApp",
-            "ChangeType": "Addition",
-            "Description": "Added the [PublishCloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-publish?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
-            "Target": "cloudPcCloudApp"
+              "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+              "ApiChange": "Method",
+              "ChangedApiName": "publish",
+              "ChangeType": "Addition",
+              "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-publish?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
+              "Target": "cloudPcCloudApp"
             },
             {
-            "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
-            "ApiChange": "Method",
-            "ChangedApiName": "UnpublishCloudPcCloudApp",
-            "ChangeType": "Addition",
-            "Description": "Added the [UnpublishCloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-unpublish?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
-            "Target": "cloudPcCloudApp"
+              "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+              "ApiChange": "Method",
+              "ChangedApiName": "unpublish",
+              "ChangeType": "Addition",
+              "Description": "Added the [unpublish](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-unpublish?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
+              "Target": "cloudPcCloudApp"
             },
             {
-            "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
-            "ApiChange": "Method",
-            "ChangedApiName": "ResetCloudPcCloudApp",
-            "ChangeType": "Addition",
-            "Description": "Added the [ResetCloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-reset?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
-            "Target": "cloudPcCloudApp"
+              "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+              "ApiChange": "Method",
+              "ChangedApiName": "reset",
+              "ChangeType": "Addition",
+              "Description": "Added the [reset](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-reset?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
+              "Target": "cloudPcCloudApp"
             },
             {
-            "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
-            "ApiChange": "Method",
-            "ChangedApiName": "RetrieveCloudPcDiscoveredApp",
-            "ChangeType": "Addition",
-            "Description": "Added the [RetrieveCloudPcDiscoveredApp](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-retrieveDiscoveredApp?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
-            "Target": "cloudPcCloudApp"
+              "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+              "ApiChange": "Method",
+              "ChangedApiName": "retrieveDiscoveredApps",
+              "ChangeType": "Addition",
+              "Description": "Added the [retrieveDiscoveredApps](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-retrieveDiscoveredApps?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
+              "Target": "cloudPcCloudApp"
             }
           ],
           "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
