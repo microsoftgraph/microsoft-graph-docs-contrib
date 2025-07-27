@@ -1,6 +1,6 @@
 ---
-title: "Unpublish cloudPcCloudApp"
-description: "Unpublish a Cloud App to remove it from the end-user portal, for example, the Windows App. Unpublishing a Cloud App will revert any changes made to its appDetails and reset them to the values of the discovered app that the Cloud App is linked to."
+title: "cloudPcCloudApp: unpublish"
+description: "Unpublish a cloudPcCloudApp to remove it from the end-user portal, for example, the Windows App."
 author: "niniliu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 06/12/2025
 ---
 
-# Update cloudPcCloudApp
+# cloudPcCloudApp: unpublish
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unpublish a [cloudPcCloudApp](../resources/cloudpccloudapp.md) to remove it from the end-user portal, for example, the Windows App. Unpublishing a Cloud App will revert any changes made to its appDetails and reset them to the values of the discovered app that the Cloud App is linked to.
+Unpublish a [cloudPcCloudApp](../resources/cloudpccloudapp.md) to remove it from the end-user portal, for example, the Windows App. When a cloud app is unpublished, any changes made to its app details are reverted and reset to the values of the discovered app it is linked to.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -40,12 +40,13 @@ POST /deviceManagement/virtualEndpoint/cloudApps/unpublish
 | Name          | Description               |
 | :------------ | :------------------------ |
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-type | application/json. Required.|
 
 ## Request body
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameter that you can use with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
