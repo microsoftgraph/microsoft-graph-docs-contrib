@@ -48,14 +48,14 @@ The following JSON representation shows the resource type.
 {
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "companyCode": "String",
+  "costCenter": "String",
   "department": "String",
   "displayName": "String",
+  "division": "String",
   "officeLocation": "String",
   "pronunciation": "String",
   "secondaryDepartment": "String",
-  "webUrl": "String",
-  "costCenter": "String",
-  "division": "String"
+  "webUrl": "String"
 }
 ```
 
