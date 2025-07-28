@@ -156,6 +156,32 @@
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
+    {
+      "ChangeList": [
+        {
+          "Id": "18cc5515-d7ee-0c67-bd32-c43d25ecadfc",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveCloudPcCountByStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrieveCloudPcCountByStatus](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrieveCloudPcCountByStatus?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "18cc5515-d7ee-0c67-bd32-c43d25ecadfc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcStatusSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcStatusSummary](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcStatusSummary?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcStatusSummary"
+        }
+      ],
+      "Id": "18cc5515-d7ee-0c67-bd32-c43d25ecadfc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-28T08:02:57.4615148Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
         {
           "ChangeList": [
             {

@@ -128,6 +128,8 @@ items:
       href: ../../api/cloudpc-setreviewstatus.md
     - name: Retrieve review status
       href: ../../api/cloudpc-retrievereviewstatus.md
+    - name: Retrieve Cloud PC count by status
+      href: ../../api/cloudpc-retrievecloudpccountbystatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
@@ -519,6 +521,8 @@ items:
       href: ../../resources/cloudpcstatusdetail.md
     - name: Cloud PC status details
       href: ../../resources/cloudpcstatusdetails.md
+    - name: Cloud PC status summary
+      href: ../../resources/cloudpcstatussummary.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
     - name: Cloud PC supported region restriction detail

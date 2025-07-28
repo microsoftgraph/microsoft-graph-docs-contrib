@@ -37,6 +37,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Restore](../api/cloudpc-restore.md)|None|Restore a Cloud PC object to a previous state from a snapshot.|
 |[Set review status](../api/cloudpc-setreviewstatus.md)|None|Set the review status of a specific Cloud PC device using the Cloud PC ID.|
 |[Retrieve review status](../api/cloudpc-retrievereviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the [review status](../resources/cloudpcreviewstatus.md) of a Cloud PC.|
+|[Retrieve Cloud PC count by status](../api/cloudpc-retrievecloudpccountbystatus.md)|[cloudPcStatusSummary](../resources/cloudpcstatussummary.md) collection|Retrieve the [Cloud PC](../resources/cloudpc.md) count grouped by status.|
 |[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the Cloud PC devices that are attributed to the signed-in user.|
 |[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific Cloud PC.|
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
