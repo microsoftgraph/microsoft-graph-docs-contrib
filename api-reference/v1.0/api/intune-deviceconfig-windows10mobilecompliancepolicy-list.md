@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-windows10mobilecompliancepolicy-list-list-windows10mobilecompliancepolicies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-windows10mobilecompliancepolicy-list-list-windows10mobilecompliancepolicies-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-windows10mobilecompliancepolicy-list-list-windows10mobilecompliancepolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

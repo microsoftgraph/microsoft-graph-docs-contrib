@@ -25,7 +25,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_removeretentionlabel" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-removeretentionlabel-permissions.md)]
 
->**Note:** `Sites.FullControl.All` is the least privileged permission required to remove retention labels that classify the content as records.
+> [!NOTE]
+> `Sites.FullControl.All` is the least privileged permission required to remove retention labels that classify the content as records.
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 
@@ -72,10 +75,6 @@ DELETE https://graph.microsoft.com/v1.0/drives/22e064df-3562-4a3c-98c3-74721ca06
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/driveitem-removeretentionlabel-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/driveitem-removeretentionlabel-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

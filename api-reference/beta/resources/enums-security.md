@@ -1055,6 +1055,14 @@ Namespace: microsoft.graph.security
 |automatic|
 |recommended|
 
+### restrictionAction values
+
+|Member|
+|:---|
+|warn|
+|audit|
+|block|
+
 <!--
 {
   "type": "#page.annotation",

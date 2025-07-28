@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusiness
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-driverestoreartifactsbulkadditionrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-driverestoreartifactsbulkadditionrequest-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-driverestoreartifactsbulkadditionrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -93,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusiness
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-driverestoreartifactsbulkadditionrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-driverestoreartifactsbulkadditionrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

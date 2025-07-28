@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Export Exchange [mailboxItem](../resources/mailboxitem.md) objects in full-fidelity [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450) format for backup purposes. This item format can be restored to the same mailbox or a different one.
+Export Exchange [mailboxItem](../resources/mailboxitem.md) objects in full fidelity. This API exports each item as an opaque stream. The data stream isn't intended for parsing, but can be used to import an item back into an Exchange mailbox. For more information, see: [Overview of the mailbox import and export APIs in Microsoft Graph (preview)](/graph/mailbox-import-export-concept-overview)
 
 You can export up to 20 items in a single export request.
 
@@ -86,10 +86,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailboxthisexportitems-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/mailboxthisexportitems-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/mailboxthisexportitems-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -132,11 +128,13 @@ Content-length: 232
     "value": [
         {
             "itemId": "EDSVrdi3lRAADmpnf1AAA=",
-            "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAEu4C+G"
+            "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAEu4C+G",
+            "data": "VGhpcyBpcyBhIHRlc3QgZGF0YSB0aGF0IHdpbGwgYmUgY29udmVydGVkIHRvIGEgQmFzZTY0IHN0cmVhbQ=="
         },
         {
             "itemId": "EDSVrdi3lRAAD45b7RAAA=",
-            "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAD4pUax"
+            "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAD4pUax",
+            "data": "VGhpcyBpcyBhIHRlc3QgZGF0YSB0aGF0IHdpbGwgYmUgY29udmVydGVkIHRvIGEgQmFzZTY0IHN0cmVhbQ=="
         }
     ]
 }

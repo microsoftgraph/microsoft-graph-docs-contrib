@@ -22,7 +22,7 @@ To associate a domain with a tenant:
 
 2. [Retrieve](../api/domain-list-verificationdnsrecords.md) the domain verification records. Add the verification record details to the domain's zone file using the domain registrar or DNS server configuration.
 
-3. [Verify](../api/domain-verify.md) the ownership of the domain. This verifies the domain and sets the **isVerified** property to `true`.
+3. [Verify](../api/domain-verify.md) the ownership of the domain, including executing external admin takeover. This operation sets the **isVerified** property to `true`.
 
 4. [Indicate](../api/domain-update.md) the supported services you plan to use with the domain.
 
