@@ -3,7 +3,7 @@ title: "whatIfAnalysisResult resource type"
 toc.title: "What If evaluation"
 description: "Represents the result of a Conditional Access What If evaluation, which indicates the policies that would apply based on the sign-in details you provide."
 author: "kvenkit"
-ms.date: 03/21/2025
+ms.date: 07/08/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -12,8 +12,6 @@ doc_type: resourcePageType
 # whatIfAnalysisResult resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the result of a Conditional Access What If evaluation, which indicates the policies that would apply based on the sign-in details you provide. For more information, see the [Conditional Access Policy What If tool](/entra/identity/conditional-access/what-if-tool).
 
@@ -41,7 +39,7 @@ Inherits from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
 |policyApplies|Boolean|Specifies whether the policy applies to the sign-in properties provided in the request body. If `policyApplies` is `true`, the policy applies to the sign-in based on the sign-in properties provided. If `policyApplies` is `false`, the policy doesn't apply to the sign-in based on the sign-in properties provided and the `analysisReasons` property is populated to show the reason for the policy not applying. |
 |sessionControls|[conditionalAccessSessionControls](../resources/conditionalaccesssessioncontrols.md)|Specifies the session controls that are enforced after sign-in. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
 |state|conditionalAccessPolicyState|Specifies the state of the conditionalAccessPolicy object. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md). The possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`, `unknownFutureValue`.|
-|templateId|String|Specifies the unique identifier of a Conditional Access template. Inherited from [entity](../resources/entity.md).|
+|templateId|String|Specifies the unique identifier of a [Conditional Access template](../resources/conditionalaccesstemplate.md). Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
 
 ## Relationships
 None.
@@ -75,7 +73,8 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.conditionalAccessSessionControls"
   },
   "policyApplies": "Boolean",
-  "analysisReasons": "String"
+  "analysisReasons": "String",
+  "templateId": "String"
 }
 ```
 
