@@ -17,6 +17,8 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+Use the new [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudpccloudapp?view=graph-rest-beta&preserve-view=true) API to manage and publish app-only Cloud PC experiences for end users.
+
 ## May 2025: New and generally available
 
 ### Teamwork and communications | Calls and online meetings
