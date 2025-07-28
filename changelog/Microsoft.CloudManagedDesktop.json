@@ -1,7 +1,15 @@
 {
   "changelog": [
         {
-          "ChangeList": [
+          "ChangeList": [ 
+            {
+              "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+              "ApiChange": "Enumeration",
+              "ChangedApiName": "cloudPcUserExperienceType",
+              "ChangeType": "Addition",
+              "Description": "Added the **cloudPcUserExperienceType** enumeration type.",
+              "Target": "cloudPcUserExperienceType"
+            },
             {
               "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
               "ApiChange": "Enumeration",
