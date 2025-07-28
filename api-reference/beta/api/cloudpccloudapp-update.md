@@ -50,7 +50,7 @@ The following table shows the properties that you can use when you updated a **c
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appDetail|[cloudPcCloudAppDetail](../resources/cloudpccloudapp.md#cloudpccloudappdetail-values)|The details about the cloud app. These values come initially from the **appDetail** property of the associated discovered app. The **iconPath**, **iconIndex**, and **commandLineArguments** properties can be changed as needed when you update the cloud app. Supports `$select`.|
+|appDetail|[cloudPcCloudAppDetail](../resources/cloudpccloudappdetail.md)|The details about the cloud app. These values come initially from the **appDetail** property of the associated discovered app. The **iconPath**, **iconIndex**, and **commandLineArguments** properties can be changed as needed when you update the cloud app. Supports `$select`.|
 |description|String|The description associated with the cloud app. The maximum allowed length for this property is 512 characters. Supports `$filter`, `$select`, and `$orderBy`.|
 |displayName|String|The display name for the cloud app that appears on the end-user portal and must be unique within a single provisioning policy. It uses the discovered app name as the default value. The maximum allowed length for this property is 64 characters. For example, `Paint`. Supports `$filter`, `$select`, and `$orderBy`.|
 

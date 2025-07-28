@@ -20,6 +20,14 @@
             },
             {
               "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcCloudAppDetail",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcCloudAppDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudAppDetail?view=graph-rest-beta) resource type.",
+              "Target": "cloudPcCloudAppDetail"
+            },
+            {
+              "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
               "ApiChange": "Method",
               "ChangedApiName": "publish",
               "ChangeType": "Addition",
@@ -49,6 +57,30 @@
               "ChangeType": "Addition",
               "Description": "Added the [retrieveDiscoveredApps](https://learn.microsoft.com/en-us/graph/api/cloudPcCloudApp-retrieveDiscoveredApps?view=graph-rest-beta) method to the [cloudPcCloudApp](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCloudApp?view=graph-rest-beta) resource.",
               "Target": "cloudPcCloudApp"
+            },
+            {
+              "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+              "ApiChange": "Property",
+              "ChangedApiName": "userExperienceType",
+              "ChangeType": "Addition",
+              "Description": "Added the **userExperienceType** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+              "Target": "cloudPcProvisioningPolicy"
+            },
+            {
+              "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+              "ApiChange": "Method",
+              "ChangedApiName": "list cloudApps",
+              "ChangeType": "Addition",
+              "Description": "Added the [list cloudApps](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-cloudapps?view=graph-rest-beta) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+              "Target": "virtualEndpoint"
+            },
+            {
+              "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+              "ApiChange": "Relationship",
+              "ChangedApiName": "cloudApps",
+              "ChangeType": "Addition",
+              "Description": "Added the **cloudApps** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+              "Target": "virtualEndpoint"
             }
           ],
           "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",

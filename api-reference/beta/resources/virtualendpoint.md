@@ -60,7 +60,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |auditEvents|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|Cloud PC audit event.|
 |bulkActions|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Bulk actions applied to a Cloud PC.|
-|cloudApps|[cloudPcCloudApp](../resources/cloudpccloudapp.md) collection|TODO|
+|cloudApps|[cloudPcCloudApp](../resources/cloudpccloudapp.md) collection|Cloud apps are built on frontline shared options and provide Windows 365 end users with an experience to access app-only sessions rather than a full desktop experience.|
 |cloudPCs|[cloudPC](../resources/cloudpc.md) collection|Cloud managed virtual desktops.|
 |crossCloudGovernmentOrganizationMapping|[cloudPcCrossCloudGovernmentOrganizationMapping](../resources/cloudpccrosscloudgovernmentorganizationmapping.md)|Cloud PC organization mapping between public and US Government Community Cloud (GCC) organizations.|
 |deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|The image resource on Cloud PC.|

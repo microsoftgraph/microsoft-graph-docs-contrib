@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [cloudPcDiscoveredApp](../resources/cloudpcdiscoveredapp.md) objects whose app details can be used to map to a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.
+Get a list of [cloudPcDiscoveredApp](../resources/cloudpcdiscoveredapp.md) objects whose [appdetails](../resources/cloudpccloudappdetail.md) can be used to map to a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
