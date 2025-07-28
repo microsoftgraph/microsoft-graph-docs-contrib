@@ -18,12 +18,10 @@ import (
 requestBody := graphmodels.NewEducationModule()
 displayName := "Module 2"
 requestBody.SetDisplayName(&displayName) 
+languageTag := "en-GB"
+requestBody.SetLanguageTag(&languageTag) 
 description := "Description for Module 2"
 requestBody.SetDescription(&description) 
-additionalData := map[string]interface{}{
-	"languageTag" : "en-GB", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 modules, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Modules().Post(context.Background(), requestBody, nil)

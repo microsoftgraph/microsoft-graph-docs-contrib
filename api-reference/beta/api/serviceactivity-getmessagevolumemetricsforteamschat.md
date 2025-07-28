@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/reports/serviceActivity/getMessageVolumeMet
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceactivitythisgetmessagevolumemetricsforteamschat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceactivitythisgetmessagevolumemetricsforteamschat-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceactivitythisgetmessagevolumemetricsforteamschat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

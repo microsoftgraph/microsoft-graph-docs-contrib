@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "profilepropertysetting_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/profilepropertysetting-delete-permissions.md)]
 
->**Note:** To use delegated permissions for this operation, the signed-in user must have either the [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role or the [People Administrator](/entra/identity/role-based-access-control/permissions-reference#people-administrator) role.
+[!INCLUDE [rbac-peopleadmin-apis-write](../includes/rbac-for-apis/rbac-peopleadmin-apis-write.md)]
 
 ## HTTP request
 
@@ -70,10 +70,6 @@ DELETE https://graph.microsoft.com/beta/admin/people/profilePropertySettings/000
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-profilepropertysetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-profilepropertysetting-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-profilepropertysetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/admin/people/profilePropertySettings/000
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-profilepropertysetting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-profilepropertysetting-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

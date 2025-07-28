@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/agreements/94410bbf-3d3e-4683-8149-f034e55c
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-agreementfile-localization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-agreementfile-localization-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-agreementfile-localization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

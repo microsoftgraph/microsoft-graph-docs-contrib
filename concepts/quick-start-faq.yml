@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Microsoft Graph quick start FAQ"
-  description: "This FAQ answers questions related to the Microsoft Graph quick start."
+  title: Microsoft Graph quick start FAQ
+  description: This FAQ answers questions related to the Microsoft Graph quick start.
   author: jasonjoh
   ms.date: 02/12/2024
   ms.localizationpriority: medium
@@ -27,55 +27,53 @@ summary: |
   All quick start samples require access to either a personal Microsoft account with a mailbox on Outlook.com, or a Microsoft work or school account with an Exchange Online mailbox. If you don't have a Microsoft account, there are a few options to get a free account:
 
   - You can [sign up for a new personal Microsoft account](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1).
-  - You might qualify for a Microsoft 365 developer subscription through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). 
-  - Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
-
+  - You might qualify for a Microsoft 365 developer subscription through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-).
+  - Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/microsoft-365/try).
 
 sections:
-  - name: Frequently asked questions
-    questions:
-      - question: |
-          Can I get the quick start code without downloading through the quick start page?
-        answer: |
-          Absolutely! Each quick start sample download is based on a Microsoft Graph tutorial, so you have two other options to get the same source code:
+- name: Frequently asked questions
+  questions:
+  - question: |
+      Can I get the quick start code without downloading through the quick start page?
+    answer: |
+      Absolutely! Each quick start sample download is based on a Microsoft Graph tutorial, so you have two other options to get the same source code:
 
-          - Build the code yourself by following the step-by-step tutorial.
-          - Download the completed project from the corresponding GitHub repository and follow the instructions in the README to configure and run the sample.
+      - Build the code yourself by following the step-by-step tutorial.
+      - Download the completed project from the corresponding GitHub repository and follow the instructions in the README to configure and run the sample.
 
-          To view a table of the tutorials and corresponding GitHub repositories, see [Microsoft Graph tutorials](tutorials.md).
+      To view a table of the tutorials and corresponding GitHub repositories, see [Microsoft Graph tutorials](tutorials/index.md).
 
-      - question: |
-          Why don't any of the quick start samples show advanced authentication use cases?
-        answer: |
-          The quick start samples give you an introduction to authentication and Microsoft Graph API calls. You can learn more about other [authentication flows](/azure/active-directory/develop/authentication-flows-app-scenarios) in the Microsoft Entra documentation.
+  - question: |
+      Why don't any of the quick start samples show advanced authentication use cases?
+    answer: |
+      The quick start samples give you an introduction to authentication and Microsoft Graph API calls. You can learn more about other [authentication flows](/azure/active-directory/develop/authentication-flows-app-scenarios) in the Microsoft Entra documentation.
 
-      - question: |
-          What if I run into an unexpected error or problem with a quick start?
-        answer: |
-          If you have trouble getting the quick start to work properly, open an issue on the corresponding GitHub repository. To view a table of the tutorials and corresponding GitHub repositories, see [Microsoft Graph tutorials](tutorials.md).
+  - question: |
+      What if I run into an unexpected error or problem with a quick start?
+    answer: |
+      If you have trouble getting the quick start to work properly, open an issue on the corresponding GitHub repository. To view a table of the tutorials and corresponding GitHub repositories, see [Microsoft Graph tutorials](tutorials/index.md).
 
-  - name: Known issues
-    questions:
-      - question: |
-           When running a quick start, I get error message AADSTS50011.
-        answer: |
-          The error message _"**AADSTS50011:** The reply url specified in the request does not match the reply urls configured for the application"_ indicates a problem with the application registration for the quick start. 
-          
-          When you download a quick start sample from the [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start) page, we create the application registration and configure a reply URL (also known as a redirect URL) that matches the default URL used by the sample project. If you change the URL, the app registration no longer matches and could cause this error.
-          
-          To resolve this error, consult the README.md file included with the quick start project for instructions about how to create an app registration and configure it in the sample code.
+- name: Known issues
+  questions:
+  - question: |
+      When running a quick start, I get error message AADSTS50011.
+    answer: |
+      The error message _"**AADSTS50011:** The reply url specified in the request does not match the reply urls configured for the application"_ indicates a problem with the application registration for the quick start.
 
-      - question: |
-          After signing in, I'm told I need admin approval.
-        answer: |
-          After signing into one of the quick start samples, you might see the following message: _"**Need admin approval:** XXX Tutorial needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it."_
-          
-          This isn't a bug with the sample. None of the quick start samples request any Microsoft Graph permission scopes that *by default* require admin consent. Tenant administrators can disable your ability to consent to Microsoft Graph permission scopes for any apps that they have not approved. In that case, you see this error.
+      When you download a quick start sample from the [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start) page, we create the application registration and configure a reply URL (also known as a redirect URL) that matches the default URL used by the sample project. If you change the URL, the app registration no longer matches and could cause this error.
 
-          To resolve this error, work with your administrators to get approval, use a personal Microsoft account (Outlook.com), or use a test Microsoft 365 tenant with Exchange Online.
+      To resolve this error, consult the README.md file included with the quick start project for instructions about how to create an app registration and configure it in the sample code.
+
+  - question: |
+      After signing in, I'm told I need admin approval.
+    answer: |
+      After signing into one of the quick start samples, you might see the following message: _"**Need admin approval:** XXX Tutorial needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it."_
+
+      This isn't a bug with the sample. None of the quick start samples request any Microsoft Graph permission scopes that *by default* require admin consent. Tenant administrators can disable your ability to consent to Microsoft Graph permission scopes for any apps that they have not approved. In that case, you see this error.
+
+      To resolve this error, work with your administrators to get approval, use a personal Microsoft account (Outlook.com), or use a test Microsoft 365 tenant with Exchange Online.
 
 additionalContent: |
-
   ## Didn't find what you need?
 
   If this FAQ didn't address a question or problem that you encountered with one or more of the quick start samples, let us know by using the following **Feedback** section.

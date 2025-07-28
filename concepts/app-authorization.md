@@ -3,7 +3,7 @@ title: "Microsoft Graph Data Connect app authorization"
 description: "Learn how global administrators can authorize Microsoft Graph Data Connect apps in the Microsoft 365 admin center."
 author: "michaelvenables"
 ms.localizationpriority: high
-ms.custom: scenarios:getting-started
+ms.custom: scenarios:getting-started, sfi-image-nochange, sfi-ga-nochange
 ms.date: 11/07/2024
 ---
 

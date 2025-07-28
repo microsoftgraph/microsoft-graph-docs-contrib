@@ -1,5 +1,5 @@
 ---
-title: "classifcationErrorBase resource type (preview)"
+title: "classifcationErrorBase resource type"
 description: "Abstract base type for representing errors that occur during data classification, label evaluation, or policy processing."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type for representing errors that occur during data classification, label evaluation, or policy processing.
+Abstract base type for representing errors that occur during data classification, label evaluation, or policy processing. 
+
+Use [classificationError](../resources/classificationerror.md) for specific error details.
 
 ## Properties
 

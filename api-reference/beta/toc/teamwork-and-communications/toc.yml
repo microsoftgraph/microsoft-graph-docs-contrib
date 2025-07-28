@@ -208,6 +208,10 @@ items:
       href: ../../api/team-list-permissiongrants.md
     - name: List permission grants of a user
       href: ../../api/user-list-permissiongrants.md
+  - name: Complex types
+    items:
+    - name: Custom app settings
+      href: ../../resources/customappsettings.md
 - name: Calls and online meetings
   items:
   - name: Overview
@@ -504,6 +508,14 @@ items:
         href: ../../api/onlinemeeting-list-recordings.md
       - name: List transcripts
         href: ../../api/onlinemeeting-list-transcripts.md
+    - name: Online meeting engagement conversation
+      items:
+      - name: Online meeting engagement conversation
+        href: ../../resources/onlinemeetingengagementconversation.md
+      - name: Get all online meeting messages
+        href: ../../api/cloudcommunications-getallonlinemeetingmessages.md
+      - name: List reactions
+        href: ../../api/engagementconversationdiscussionmessage-list-reactions.md
     - name: External meeting registration (deprecated)
       items:
       - name: External meeting registration (deprecated)

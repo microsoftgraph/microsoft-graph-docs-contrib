@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of built-in tasks in Lifecycle Workflows. A task is represented by the [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/taskD
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-taskdefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-taskdefinition-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-taskdefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -122,7 +118,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions",
-    "@odata.count": 24,
+    "@odata.count": 25,
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/lifecycleWorkflows/taskDefinitions?$select=category,continueOnError",
     "value": [
         {
@@ -233,7 +229,11 @@ Content-Type: application/json
                         "User",
                         "Manager",
                         "Sponsors",
-                        "{UserId}"
+                        "{UserId}",
+                        "User/otherMails",
+                        "User/customSecurityAttributes/{attributeSet}/{attributeName}",
+                        "User/{directoryExtensionAttribute}",
+                        "User/onPremisesExtensionAttributes/{extensionAttribute[1-15]}"
                     ],
                     "valueType": "string"
                 }
@@ -559,7 +559,7 @@ Content-Type: application/json
             "parameters": []
         },
         {
-            "category": "leaver",
+            "category": "leaver,mover",
             "description": "Cancel all pending access packages assignment requests for the user",
             "displayName": "Cancel pending access package assignment requests for user",
             "id": "498770d9-bab7-4e4c-b73d-5ded82a1d0b3",
@@ -632,6 +632,14 @@ Content-Type: application/json
                     "valueType": "string"
                 }
             ]
+        },
+        {
+            "category": "leaver,mover",
+            "description": "Revoke all refresh tokens for user",
+            "displayName": "Revoke all refresh tokens for user",
+            "id": "509589a4-0466-4471-829e-49c5e502bdee",
+            "version": 1,
+            "parameters": []
         }
     ]
 }
@@ -655,10 +663,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/taskD
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-taskdefinition-filter-category-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-taskdefinition-filter-category-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -28,8 +28,9 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|conditionalAccess|[microsoft.graph.networkaccess.conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md)| Defines whether conditional access settings are enabled for traffic profiles. Each tenant has only one conditional access settings object. |
-|crossTenantAccess|[microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md)| Defines whether the tenant restrictions cross-tenant access settings are enabled for traffic profiles. Each tenant has only one cross-tenant access settings object.|
+|conditionalAccess|[microsoft.graph.networkaccess.conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md)| Defines whether conditional access settings are enabled for traffic profiles in Global Secure Access. Each tenant has only one conditional access settings object. |
+|crossTenantAccess|[microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md)| Defines whether the tenant restrictions cross-tenant access settings are enabled for traffic profiles in Global Secure Access. Each tenant has only one cross-tenant access settings object.|
+|forwardingOptions|[microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingOptions.md)| Determines how Microsoft 365 traffic through Global Secure Access is forwarded to Azure Front Door.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
