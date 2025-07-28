@@ -85,10 +85,6 @@ Content-length: 287
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-manageddevicemobileappconfiguration-assign-assign-action-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-manageddevicemobileappconfiguration-assign-assign-action-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-manageddevicemobileappconfiguration-assign-assign-action-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

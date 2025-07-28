@@ -133,10 +133,6 @@ Content-length: 1170
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-managedandroidstoreapp-update-update-managedandroidstoreapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-managedandroidstoreapp-update-update-managedandroidstoreapp-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-managedandroidstoreapp-update-update-managedandroidstoreapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

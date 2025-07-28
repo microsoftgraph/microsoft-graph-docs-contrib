@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "photoupdatesettings_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/photoupdatesettings-update-permissions.md)]
 
+[!INCLUDE [rbac-peopleadmin-apis-write](../includes/rbac-for-apis/rbac-peopleadmin-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
