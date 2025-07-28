@@ -30,15 +30,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{userId}/presence
-GET /communications/presences/{userId}
+GET /users/{id}/presence
+GET /communications/presences/{id}
 GET /me/presence
 ```
 
 > [!NOTE]
 > - To retrieve presence information for a specific user you **must** pass that user’s **`id`**.
-> - If you call **`GET /users/{userId}/presence`**, replace **`{userId}`** with the user’s GUID.
-> - If you call **`GET /communications/presences/{userId}`**, replace **`{userId}`** with the user’s GUID.
+> - If you call **`GET /users/{id}/presence`**, replace **`{id}`** with the user’s GUID.
+> - If you call **`GET /communications/presences/{id}`**, replace **`{id}`** with the user’s GUID.
 >  See the **[Get user](../api/user-get.md)** endpoint for examples on how to retrieve it.
 
 ## Request Headers
