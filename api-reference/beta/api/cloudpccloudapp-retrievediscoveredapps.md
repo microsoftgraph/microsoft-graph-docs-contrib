@@ -32,8 +32,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-POST /deviceManagement/virtualEndpoint/cloudApps/reset
+POST /deviceManagement/virtualEndpoint/cloudApps/retrieveDiscoveredApps(sourceId={value},provisioningPolicyId={value})
 ```
+
+## Query parameters
+
+In the request URL, provide the following required query parameters with values.
+
+| Parameter     | Type   | Description                                                                                                            |
+|:--------------|:-------|:-----------------------------------------------------------------------------------------------------------------------|
+| sourceId | String | The guid of source id, where it represents image id. |
+| provisioningPolicyId   | String | The guid if of provisioning policy Id.   |
+
+This method also supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 

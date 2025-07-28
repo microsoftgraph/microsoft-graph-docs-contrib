@@ -20,19 +20,10 @@ Represents a defined collection of discovered apps whose details can be used to 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appDetail |[cloudPcCloudAppDetail](../resources/cloudpccloudapp.md#cloudpccloudappdetail-values) | Specifies the details of the discovered app. Read-only.| 
+|appDetail |[cloudPcCloudAppDetail](../resources/cloudpccloudappdetail.md) | Specifies the details of the discovered app. Read-only.| 
 |appName |String| The name of the discovered app; for example, `Paint`. Read-only.| 
 |discoveredAppId |String| The unique identifier of the discovered app. Read-only.|
 |sourceId |String | The ID of the source of the discovered app. For example, if the source is a custom device image, the **sourceId** value is the ID of that image. For example, `3035e17f-c0f7-49c1-9502-5990afcaf86f`. Read-only. |
-
-### cloudPcCloudAppDetail values
-
-|Member|Type|Description|
-|:---|:---|:---|
-|filePath|String| Specifies the path to the executable file for the application within the OS of the hosting Cloud PC. The value should be an absolute path to a Windows or universal app, for example: "C:\app.exe" or "shell:AppsFolder\appname!App".  Read-only. |
-|iconPath|String| Specifies a path to the icon file for the application within the OS of the hosting Cloud PC.  When an admin updates the path of one cloud app, the value should be a rooted absolute path, for example: "C:\Windows\system32\WindowsPowerShell\v1.0\powershell_ise.exe". When the property value isn't defined, this property is set with default icon.  |
-|iconIndex|Int32| Specifies the index of the icon within the file specified by the iconPath property. For example, if the iconPath is set to "C:\\Program Files\\MyApp\\myapp.ico", and the iconIndex is set to 0, the system uses the first icon in the myapp.ico file.  The default value is 0.  |
-|commandLineArguments|String| Specifies the command-line arguments for the Cloud App. These parameters are passed to the Cloud App when it's launched. The maximum allowed length for this property is 2048. For example, "-fullscreen -loop".  |
 
 ## Relationships
 
