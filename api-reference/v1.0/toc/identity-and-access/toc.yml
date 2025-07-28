@@ -1766,6 +1766,12 @@ items:
         href: ../../api/conditionalaccesspolicy-update.md
       - name: Delete
         href: ../../api/conditionalaccesspolicy-delete.md
+    - name: What If evaluation
+      items:
+      - name: What If evaluation
+        href: ../../resources/whatifanalysisresult.md
+      - name: Evaluate
+        href: ../../api/conditionalaccessroot-evaluate.md
     - name: Named location
       items:
       - name: Named location
