@@ -40,12 +40,12 @@ POST /deviceManagement/virtualEndpoint/cloudApps/retrieveDiscoveredApps(sourceId
 
 In the request URL, provide the following required query parameters with values.
 
-| Parameter     | Type   | Description                                                                                                            |
-|:--------------|:-------|:-----------------------------------------------------------------------------------------------------------------------|
-| sourceId | String | The guid of source id, where it represents image id. |
-| provisioningPolicyId   | String | The guid if of provisioning policy Id.   |
+| Parameter | Type | Description |
+|:---|:---|:---|
+| provisioningPolicyId | String |The GUID of the provisioning policy ID.   |
+| sourceId | String | The GUID of the source ID that represents the image ID. |
 
-This method also supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method also supports some of the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
