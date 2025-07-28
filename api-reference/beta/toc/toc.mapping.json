@@ -489,6 +489,10 @@
           ],
           "complexTypes": [
             "appScope",
+            "cloudPcAgentHealthCheckDetail",
+            "cloudPcAgentHealthCheckStatusDetail",
+            "cloudPcAgentHealthCheckSummary",
+            "cloudPcAgentStatusDetail",
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
@@ -498,6 +502,7 @@
             "cloudPcBulkMove",
             "cloudPcBulkPowerOff",
             "cloudPcBulkPowerOn",
+            "cloudPcBulkReinstallAgent",
             "cloudPcBulkReprovision",
             "cloudPcBulkResize",
             "cloudPcBulkRestart",
@@ -506,6 +511,7 @@
             "cloudPcBulkRemoteActionResult",
             "cloudPcBulkCreateSnapshot",
             "cloudPcBulkSetReviewStatus",
+            "CloudPcConnectionSetting",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
             "cloudPcCrossRegionDisasterRecoverySetting",
@@ -532,7 +538,7 @@
             "cloudPcSourceDeviceImage",
             "cloudPcStatusDetails",
             "cloudPcStatusDetail",
-            "CloudPcConnectionSetting",
+            "cloudPcStatusSummary",
             "cloudPcSupportedRegionRestrictionDetail",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
@@ -830,6 +836,7 @@
         "educationSubmission",
         "educationSubmissionResource",
         "readingAssignmentSubmission",
+        "readingCoachPassage",
         "reflectCheckInResponse",
         "relatedContact",
         "speakerAssignmentSubmission"
@@ -889,6 +896,11 @@
             "engagementRole",
             "engagementRoleMember",
             "employeeExperienceUser"
+          ],
+          "complexTypes": [
+            "engagementConversationMessageAttachment",
+            "engagementConversationMessageMention",
+            "engagementIdentitySet"
           ]
         },
         {
@@ -1714,14 +1726,6 @@
               ]
             },
             {
-              "name": "Microsoft Entra lifecycle announcements (deprecated)",
-              "resources": [
-                "changeItemBase",
-                "announcement",
-                "roadmap"
-              ]
-            },
-            {
               "name": "User flows in external tenants",
               "resources": [
                 "authenticationEventsFlow",
@@ -1970,7 +1974,11 @@
                 "microsoft.graph.networkaccess.filteringPolicyLink",
                 "microsoft.graph.networkaccess.filteringRule",
                 "microsoft.graph.networkaccess.fqdnFilteringRule",
-                "microsoft.graph.networkaccess.webCategoryFilteringRule"
+                "microsoft.graph.networkaccess.webCategoryFilteringRule",
+                "microsoft.graph.networkAccess.threatIntelligencePolicy",
+                "microsoft.graph.networkAccess.threatIntelligencePolicyLink",
+                "microsoft.graph.networkAccess.threatIntelligenceRule"
+
               ]
             },
             {
@@ -1985,6 +1993,15 @@
               "resources": [
                 "microsoft.graph.networkaccess.networkAccessTraffic",
                 "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
+              ]
+            },
+            {
+              "name": "TLS inspection",
+              "resources": [
+                "microsoft.graph.networkaccess.externalCertificateAuthorityCertificate",
+                "microsoft.graph.networkaccess.tlsInspectionPolicy",
+                "microsoft.graph.networkaccess.tlsInspectionPolicyLink",
+                "microsoft.graph.networkaccess.tlsInspectionRule"
               ]
             }
           ]
@@ -2555,10 +2572,11 @@
         },
         {
           "name": "Alerts and incidents",
-          "resources": [
+      "resources": [
             "microsoft.graph.security.alert",
             "microsoft.graph.security.alertEvidence",
-            "microsoft.graph.security.incident"
+            "microsoft.graph.security.incident",
+            "microsoft.graph.security.incidentTask"
           ],
           "complexTypes": [
             "microsoft.graph.security.teamsMessageEvidence"
@@ -3119,6 +3137,7 @@
                 "meetingAttendanceReport",
                 "attendanceRecord",
                 "onlineMeeting",
+                "onlineMeetingEngagementConversation",
                 "externalMeetingRegistration",
                 "meetingRegistration",
                 "callAiInsight",
@@ -3275,8 +3294,7 @@
             "timeOffReason",
             "timeOffRequest",
             "workforceIntegration",
-            "workingTimeSchedule",
-            ""
+            "workingTimeSchedule"
           ],
           "complexTypes": [
             "geoCoordinates",
@@ -3422,6 +3440,10 @@
     {
       "resource": "partnerSecurityAlert",
       "overview": "../../resources/partner-security-partnersecurityalert-api-overview.md"
+    },
+    {
+      "resource": "incidentTask",
+      "overview": "../../resources/security-incidenttask.md"
     }
   ]
 }

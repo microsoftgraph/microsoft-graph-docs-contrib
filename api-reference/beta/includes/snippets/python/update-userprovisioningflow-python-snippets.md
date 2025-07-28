@@ -23,8 +23,10 @@ request_body = UserProvisioningFlow(
 			AdditionalUserAttributes.UserGradeLevel,
 		],
 		additional_options = AdditionalUserOptions(
-			mark_all_students_as_minors = True,
 			allow_student_contact_association = True,
+			additional_data = {
+					"student_age_group" : "minor",
+			}
 		),
 	),
 	creation_options = UserCreationOptions(

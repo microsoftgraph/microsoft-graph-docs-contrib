@@ -518,9 +518,12 @@
         "educationRubric",
         "educationRubricOutcome",
         "educationSubmission",
-        "educationSubmissionResource"
+        "educationSubmissionResource",
+        "readingAssignmentSubmission",
+        "reflectCheckInResponse"
       ],
       "complexTypes": [
+        "challengingWord",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -1041,6 +1044,7 @@
               "name": "Conditional access",
               "resources": [
                 "conditionalAccessPolicy",
+                "whatIfAnalysisResult",
                 "namedLocation",
                 "authenticationContextClassReference",
                 "conditionalAccessTemplate"
@@ -1416,6 +1420,7 @@
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",
             "microsoft.graph.partners.billing.operation",
+            "microsoft.graph.partners.billing.unbilledReconciliation",
             "microsoft.graph.partners.billing.unbilledUsage"
           ]
     },
