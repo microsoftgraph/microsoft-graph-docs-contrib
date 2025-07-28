@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cloud app. Cloud apps are built on frontline shared options and provide Windows 365 end users with an experience to access app-only sessions rather than a full desktop experience. The following table describes the Cloud App configurations.
+Represents a cloud app. Cloud apps are built on frontline shared options and provide Windows 365 end users with an experience to access app-only sessions rather than a full desktop experience.
 
 ## Methods
 
