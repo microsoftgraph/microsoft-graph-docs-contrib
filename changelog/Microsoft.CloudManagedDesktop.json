@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "a5a09939-6b5a-4bca-93b9-9a769425adea",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcAgentDiagnosticResultType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcAgentDiagnosticResultType** enumeration type.",
+          "Target": "cloudPcAgentDiagnosticResultType"
+        },
+        {
+          "Id": "a5a09939-6b5a-4bca-93b9-9a769425adea",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcAgentHealthCheckErrorType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcAgentHealthCheckErrorType** enumeration type.",
+          "Target": "cloudPcAgentHealthCheckErrorType"
+        },
+        {
+          "Id": "a5a09939-6b5a-4bca-93b9-9a769425adea",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcAgentHealthCheckResultType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcAgentHealthCheckResultType** enumeration type.",
+          "Target": "cloudPcAgentHealthCheckResultType"
+        },
+        {
+          "Id": "a5a09939-6b5a-4bca-93b9-9a769425adea",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcAgentHealthCheckState",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcAgentHealthCheckState** enumeration type.",
+          "Target": "cloudPcAgentHealthCheckState"
+        },
+        {
+          "Id": "a5a09939-6b5a-4bca-93b9-9a769425adea",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcAgentHealthStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcAgentHealthStatus** enumeration type.",
+          "Target": "cloudPcAgentHealthStatus"
+        },
+        {
+          "Id": "a5a09939-6b5a-4bca-93b9-9a769425adea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcAgentHealthCheckDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcAgentHealthCheckDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAgentHealthCheckDetail?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcAgentHealthCheckDetail"
+        },
+        {
+          "Id": "a5a09939-6b5a-4bca-93b9-9a769425adea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcAgentHealthCheckStatusDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcAgentHealthCheckStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAgentHealthCheckStatusDetail?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcAgentHealthCheckStatusDetail"
+        },
+        {
+          "Id": "a5a09939-6b5a-4bca-93b9-9a769425adea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcAgentHealthCheckSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcAgentHealthCheckSummary](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAgentHealthCheckSummary?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcAgentHealthCheckSummary"
+        },
+        {
+          "Id": "a5a09939-6b5a-4bca-93b9-9a769425adea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcAgentStatusDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcAgentStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAgentStatusDetail?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcAgentStatusDetail"
+        },
+        {
+          "Id": "a5a09939-6b5a-4bca-93b9-9a769425adea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcBulkReinstallAgent",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcBulkReinstallAgent](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkReinstallAgent?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcBulkReinstallAgent"
+        }
+      ],
+      "Id": "a5a09939-6b5a-4bca-93b9-9a769425adea",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-28T01:55:27.6887803Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b0ae270d-f392-4950-b2fb-571bf51b1fc6",
           "ApiChange": "Method",
           "ChangedApiName": "bulkRestoreCloudPc",
@@ -2741,7 +2831,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-06-12T05:55:14.173894Z",
-      "WorkloadArea": "Devices and app management",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {
@@ -2777,7 +2867,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-07-31T10:21:43.9533784Z",
-      "WorkloadArea": "Devices and app management",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {
@@ -2795,7 +2885,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-05-25T03:34:35.6186992Z",
-      "WorkloadArea": "Devices and app management",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {
@@ -7011,7 +7101,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-05-16T03:20:14.2449804Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {
@@ -7047,7 +7137,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-06-17T06:24:53.3809776Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     }
   ]
