@@ -468,6 +468,14 @@ items:
       href: ../../api/onpremisesdirectorysynchronization-get.md
     - name: Update
       href: ../../api/onpremisesdirectorysynchronization-update.md
+  - name: On-premises sync behavior
+    items:
+    - name: On-premises sync behavior
+      href: ../../resources/onpremisessyncbehavior.md
+    - name: Get
+      href: ../../api/onpremisessyncbehavior-get.md
+    - name: Update
+      href: ../../api/onpremisessyncbehavior-update.md
   - name: Org contact
     items:
     - name: Org contact

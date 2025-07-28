@@ -238,3 +238,11 @@ items:
     href: ../../api/grouplifecyclepolicy-removegroup.md
   - name: Renew group
     href: ../../api/grouplifecyclepolicy-renewgroup.md
+- name: On-premises sync behavior
+  items:
+  - name: On-premises sync behavior
+    href: ../../resources/onpremisessyncbehavior.md
+  - name: Get
+    href: ../../api/onpremisessyncbehavior-get.md
+  - name: Update
+    href: ../../api/onpremisessyncbehavior-update.md
