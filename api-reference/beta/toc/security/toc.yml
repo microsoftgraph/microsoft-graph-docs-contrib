@@ -52,6 +52,18 @@ items:
     items:
     - name: Teams message evidence
       href: ../../resources/security-teamsmessageevidence.md
+  - name: Incident task
+    items:
+    - name: Incident task
+      href: ../../resources/security-incidenttask.md
+    - name: List
+      href: ../../api/security-list-incidenttasks.md
+    - name: Get
+      href: ../../api/security-incidenttask-get.md
+    - name: Update
+      href: ../../api/security-incidenttask-update.md
+    - name: Execute response action
+      href: ../../api/security-incidenttask-executeresponseaction.md
 - name: Attack simulation and training
   items:
   - name: Simulation
