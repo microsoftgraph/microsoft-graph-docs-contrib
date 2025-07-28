@@ -1,23 +1,5 @@
 ﻿{
   "changelog": [
-        {
-      "ChangeList": [
-        {
-          "Id": "de2c21d6-9418-43ae-ba22-a15a7e9528b7",
-          "ApiChange": "Property",
-          "ChangedApiName": "behaviorOnError",
-          "ChangeType": "Addition",
-          "Description": "Added the **behaviorOnError** property to the [customExtensionOverwriteConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionOverwriteConfiguration?view=graph-rest-beta) resource.",
-          "Target": "customExtensionOverwriteConfiguration"
-        }
-      ],
-      "Id": "de2c21d6-9418-43ae-ba22-a15a7e9528b7",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-07-15T05:28:42.0030674Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
-    },
     {
       "ChangeList": [
         {
@@ -27,14 +9,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [customExtensionBehaviorOnError](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionBehaviorOnError?view=graph-rest-1.0) resource.",
           "Target": "customExtensionBehaviorOnError"
-        },
-        {
-          "Id": "69d90e89-482e-4f11-89be-1f2aef8b293d",
-          "ApiChange": "Property",
-          "ChangedApiName": "behaviorOnError",
-          "ChangeType": "Addition",
-          "Description": "Added the **behaviorOnError** property to the [customExtensionOverwriteConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionOverwriteConfiguration?view=graph-rest-1.0) resource.",
-          "Target": "customExtensionOverwriteConfiguration"
         },
         {
           "Id": "69d90e89-482e-4f11-89be-1f2aef8b293d",

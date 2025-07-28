@@ -52,6 +52,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.onOtpSendCustomExtension",
+  "id": "String (identifier)",
   "authenticationConfiguration": {
     "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
   },

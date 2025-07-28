@@ -5,7 +5,7 @@ author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/23/2025
+ms.date: 07/28/2025
 toc.title: On OTP send custom extension
 ---
 
@@ -54,6 +54,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.onOtpSendCustomExtension",
+  "id": "String (identifier)",
   "authenticationConfiguration": {
     "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
   },
