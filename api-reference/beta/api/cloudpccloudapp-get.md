@@ -1,6 +1,6 @@
 ---
 title: "Get cloudPcCloudApp"
-description: "Read the properties of a cloudPcCloudApp object."
+description: "Read the properties of a specific cloudPcCloudApp object."
 author: "niniliu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
