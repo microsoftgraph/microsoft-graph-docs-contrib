@@ -31,6 +31,7 @@ The following table lists the latency to expect between an event happening in th
 | [driveItem][]           | Less than 1 minute   | 5 minutes       |
 | [event][]               | Unknown              | Unknown         |
 | [group][]               | Unknown              | Unknown         |
+| [health monitoring alert][] | Unknown           | Unknown         |
 | [list][]                | Less than 1 minute   | 5 minutes       |
 | [message][]             | Less than 1 minute   | 3 minutes       |
 | [offerShiftRequest][]   | Less than 1 minute   | 60 minutes      |
@@ -81,3 +82,4 @@ The following table lists the latency to expect between an event happening in th
 [calendar]: /graph/api/resources/calendar
 [teamsAppInstallation]: /graph/api/resources/teamsappinstallation
 [approvals]: /graph/api/resources/approvalItem
+[health monitoring alert]: /graph/api/resources/healthmonitoring-alert

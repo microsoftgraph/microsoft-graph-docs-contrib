@@ -31,6 +31,8 @@ previewText := graphmodels.NewItemBody()
 content := "new announcemnet posted"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
+iconId := "announcementCreated"
+requestBody.SetIconId(&iconId) 
 
 
 keyValuePair := graphmodels.NewKeyValuePair()
@@ -43,10 +45,6 @@ templateParameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
 }
 requestBody.SetTemplateParameters(templateParameters)
-additionalData := map[string]interface{}{
-	"iconId" : "announcementCreated", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Users().ByUserId("user-id").Teamwork().SendActivityNotification().Post(context.Background(), requestBody, nil)

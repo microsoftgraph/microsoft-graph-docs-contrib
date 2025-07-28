@@ -125,10 +125,6 @@ Content-length: 1150
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-windows10teamgeneralconfiguration-create-create-windows10teamgeneralconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-windows10teamgeneralconfiguration-create-create-windows10teamgeneralconfiguration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-windows10teamgeneralconfiguration-create-create-windows10teamgeneralconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
