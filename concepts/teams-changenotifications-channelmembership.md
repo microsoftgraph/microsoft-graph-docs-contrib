@@ -111,7 +111,7 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-The payload for channel membership events in which the **resource** property refers to a channel member.
+The payload for channel membership events where the **resource** property points to a member of a channel.
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
@@ -202,7 +202,7 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-The payload for the channel indirect membership that the **resource** property points to a channel allMembers instead members api.
+In the channel indirect membership notification payload, the **resource** property points to the [allMembers](/api-reference/v1.0/api/channel-list-allmembers.md) endpoint instead of the [members](/api-reference/v1.0/api/channel-list-members.md) endpoint.
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
@@ -222,12 +222,12 @@ The decrypted notification payload looks like the following. The payload conform
 }
 ```
 
-The **@microsoft.graph.originalSourceMembershipUrl** annotation shows the original source of the added member and can be used to make calls to Microsoft Graph to get the payload of the member in a team. The property in the example shows that a member is added to a team with which a channel is shared.
+The **@microsoft.graph.originalSourceMembershipUrl** annotation shows the original source of the added member and can be used to make calls to Microsoft Graph to get the payload of the member in a team. The property in the example shows that a member is added to a team with which a channel is shared. This property is only available for indirect membership notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the direct channel member.  
 
 > **Note:** 
-> 1. Indirect membership notifications are only available when you subscribe to the team that owns the shared channel.
-> 1. When you subscribe to changes to receive both direct and indirect notifications for shared channels, we recommend that you choose to receive notifications with the resource. This approach allows you to use the **@microsoft.graph.originalSourceMembershipUrl** annotation to identify direct or indirect membership changes.
-> 1. When as a subscriber, you receive a notification that a member was removed, use the [channel: doesUserHaveAccess](/graph/api/channel-doesuserhaveaccess) API to verify that the user's access was actually revoked.
+> 1. Indirect membership notifications are only available when subscribed to the team that owns the shared channel.
+> 1. When subscribed to changes to receive both direct and indirect notifications for shared channels, we recommend that you choose to receive notifications with the resource. This approach allows you to use the **@microsoft.graph.originalSourceMembershipUrl** annotation to identify direct or indirect membership changes.
+> 1. When a subscriber receive a notification that a member was removed, use the [channel: doesUserHaveAccess](/graph/api/channel-doesuserhaveaccess) API to verify that the user's access was actually revoked.
 
 ## Subscribe to changes when a specific channel is shared with or unshared from a team (preview)
 
@@ -290,7 +290,7 @@ For notifications with resource data, the payload looks like the following. This
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [aaduserconversationmember](/graph/api/resources/aaduserconversationmember?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The payload conforms to the [sharedWithChannelTeamInfo ](/graph/api/resources/sharedwithchannelteaminfo?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
@@ -321,10 +321,9 @@ For notifications without resource data, the payload looks like the following. T
   }
 }
 ```
+The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get information about when a channel is shared with or unshared from a team.
 
-The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the shared and unshared with team info. 
-
-After you receive a notification event that indicates a shared channel was shared with or unshared from a team, call the [List allMembers](/graph/api/channel-list-allmembers) API to refresh the shared channel membership.
+After receiving a notification event that indicates a shared channel was shared with or unshared from a team, call the [List allMembers](/graph/api/channel-list-allmembers) API to refresh the shared channel membership.
 
 ## Related content
 - [Microsoft Graph change notifications](change-notifications-overview.md)
