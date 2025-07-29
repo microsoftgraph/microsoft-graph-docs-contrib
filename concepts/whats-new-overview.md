@@ -42,7 +42,7 @@ Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, *
 
 ### Security
 
-Added [ResourceAccessEvent](/graph/api/security-resourceaccessevent) resource as a property in [UserAccount](/graph/api/security-useraccount)
+Added [ResourceAccessEvent](/graph/api/resources.security-resourceaccessevent) resource as a property in [userAccount](/graph/api/resources/security-useraccount)
 
 ## July 2025: New in preview only
 
