@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Get all the descendants of a specific type under a [place](../resources/place.md).
 
 > **Note:**
-> This method cannot return more than 2500 places.
+> This method can't return more than 2,500 places.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /places/{id}/descendants/{placeType}
 ```
 
 > **Note:**
-> `{placeType}` can be any supported place type such as `microsoft.graph.building`, `microsoft.graph.floor`, `microsoft.graph.section`, `microsoft.graph.room`, `microsoft.graph.workspace` and `microsoft.graph.desk`.
+> `{placeType}` can be any supported place type such as `microsoft.graph.building`, `microsoft.graph.floor`, `microsoft.graph.section`, `microsoft.graph.room`, `microsoft.graph.workspace`, and `microsoft.graph.desk`.
 
 ## Request headers
 
@@ -86,33 +86,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-	"value": [
-		{
-			"id": "530f7900-8063-4daf-9cc1-168cb3ac26e9",
-			"placeId": "530f7900-8063-4daf-9cc1-168cb3ac26e9",
-			"displayName": "desk 5",
-			"parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
-			"isWheelChairAccessible": false,
-			"mode": {
-				"@odata.type": "#microsoft.graph.offlinePlaceMode",
-				"reason": "New"
-			}
-		},
-		{
-			"id": "57289959-4add-4270-872b-cc93ca099ce5",
-			"placeId": "57289959-4add-4270-872b-cc93ca099ce5",
-			"displayName": "desk 6",
-			"parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
-			"isWheelChairAccessible": true,
-			"mailboxDetails": {
-				"externalDirectoryObjectId": "6abaaee5-b796-48d0-be3d-0aa980258321",
-				"emailAddress": "desk54a4fce541749088182888@contoso.com"
-			},
-			"mode": {
-				"@odata.type": "#microsoft.graph.reservablePlaceMode"
-			}
-		}
-	]
+  "value": [
+    {
+      "id": "530f7900-8063-4daf-9cc1-168cb3ac26e9",
+      "placeId": "530f7900-8063-4daf-9cc1-168cb3ac26e9",
+      "displayName": "desk 5",
+      "parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
+      "isWheelChairAccessible": false,
+      "mode": {
+        "@odata.type": "#microsoft.graph.offlinePlaceMode",
+        "reason": "New"
+      }
+    },
+    {
+      "id": "57289959-4add-4270-872b-cc93ca099ce5",
+      "placeId": "57289959-4add-4270-872b-cc93ca099ce5",
+      "displayName": "desk 6",
+      "parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
+      "isWheelChairAccessible": true,
+      "mailboxDetails": {
+        "externalDirectoryObjectId": "6abaaee5-b796-48d0-be3d-0aa980258321",
+        "emailAddress": "desk54a4fce541749088182888@contoso.com"
+      },
+      "mode": {
+        "@odata.type": "#microsoft.graph.reservablePlaceMode"
+      }
+    }
+  ]
 }
 ```
 
