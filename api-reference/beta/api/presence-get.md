@@ -37,8 +37,7 @@ GET /me/presence
 
 > [!NOTE]
 > - You must pass the user's ID to get their presence information.
-> - If you call `GET /users/{id}/presence`, replace `{id}` with the user’s GUID.
-> - If you call `GET /communications/presences/{id}`, replace `{id}` with the user’s GUID.
+> - When you call `GET /users/{id}/presence` or `GET /communications/presences/{id}`, replace `{id}` with the user’s GUID.
 > - For examples on how to get the unique identifier for a user, see [Get user](../api/user-get.md).
 
 ## Request Headers
