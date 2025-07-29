@@ -62,6 +62,7 @@ If successful, this method returns a `200 OK` response code and an [onPremisesSy
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_onpremisessyncbehavior"
@@ -70,6 +71,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/groups/673f83c9-7e84-4db8-9a63-b8a8c309fdad/onPremisesSyncBehavior
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-onpremisessyncbehavior-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
