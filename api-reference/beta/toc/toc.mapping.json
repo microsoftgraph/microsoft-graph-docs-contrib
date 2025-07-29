@@ -2689,6 +2689,11 @@
                 "microsoft.graph.security.ediscoveryReviewSetQuery"
               ]
             }
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.ediscoveryAddToReviewSetOperation",
+            "microsoft.graph.security.ediscoveryEstimateOperation",
+            "microsoft.graph.security.reportFileMetadata"
           ]
         },
         {
