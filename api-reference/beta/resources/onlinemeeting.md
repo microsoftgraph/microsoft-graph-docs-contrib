@@ -171,7 +171,7 @@ The following JSON representation shows the resource type.
   "allowedLobbyAdmitters": "String",
   "allowedPresenters": "String",
   "allowLiveShare": "String",
-  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
+  "allowMeetingChat": "String",
   "allowParticipantsToChangeName": "Boolean",
   "allowPowerPointSharing": "Boolean",
   "allowRecording": "Boolean",
