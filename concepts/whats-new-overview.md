@@ -19,6 +19,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## July 2025: New and generally available
 
+### Bicep Templates for Microsoft Graph resources
+
+[Bicep templates for Microsoft Graph resources](https://aka.ms/graphbicep) is now generally available and supported in production environments, following the Microsoft APIs terms of use. Using Bicep templates, you can deploy the following Microsoft Graph resources for your infrastructure as code (IaC) projects:
+
+- Applications
+- App role assignments
+- Federated identity credentials
+- Groups
+- OAuth2 permissions grants (delegated permissions grants)
+- Service principals
+- Users
+
 ### Education
 
 [Get](/graph/api/reportsroot-list-readingassignmentsubmissions?view=graph-rest-1.0&preserve-view=true) a list of reading assignments that were submitted by a student.
