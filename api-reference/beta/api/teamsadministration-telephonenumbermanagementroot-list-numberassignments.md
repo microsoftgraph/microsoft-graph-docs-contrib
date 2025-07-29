@@ -39,11 +39,11 @@ GET /admin/teams/telephoneNumberManagement/numberAssignments
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). Below is the list of supported optional parameters:
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). The following optional parameters are supported:
 
-- `$filter`: Use the `$filter` query parameter to retrieve just a subset of a collection. For example, you can use the `$filter` parameter to retrieve those telephone numbers with numberType equals ‘directRouting’. This can be done by appending the following expression to the query `$filter=numberType eq ‘directRouting’`. All fields from the number assignments can be filtered except `id` and `city`.
+- `$filter`: Use the `$filter` query parameter to retrieve just a subset of a collection. For example, you can use the `$filter` parameter to retrieve those telephone numbers with numberType equals `DirectRouting`. Filter can be applied by appending the following expression to the query `$filter=numberType eq ‘DirectRouting’`. All fields from the number assignments can be filtered except `id` and `city`.
 
-- `$Top`: Use the `$Top` parameter top return first “X” number of results. Default number of results is 500 entries and maximum 1000 entries allowed per query.
+- `$Top`: Use the `$Top` parameter top return first “X” number of results. Default number of results is 500 entries and maximum 1,000 entries allowed per query.
 
 - `$Skip`: Use the `$Skip` query parameter to skip first “X” number of results. Default value is 0
 
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1 Request
 
-The following example shows a request *get a list of all telephone numbers including assignment details.*
+The following example shows a request to *get a list of all telephone numbers including assignment details.*
 <!-- {
   "blockType": "request",
   "name": "get_numberassignment"
@@ -207,7 +207,7 @@ Content-Type: application/json
 
 ### Example 3 Request
 
- The following example shows a request to *get a list of telephone numbers using $top and $skip for pagination.*
+ The following example shows a request to *get a list of telephone numbers using `$top` and `$skip` for pagination.*
 <!-- {
   "blockType": "request",
   "name": "get_numberAssignments",

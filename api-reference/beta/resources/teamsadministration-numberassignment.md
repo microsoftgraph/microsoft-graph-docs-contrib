@@ -26,7 +26,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Get](../api/teamsadministration-numberassignment-get.md)|[microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md)|Get details for a list of telephone numbers.|
 |[assignNumber](../api/teamsadministration-numberassignment-assignnumber.md)|None|Assign a telephone number to a user account|
 |[unassignNumber](../api/teamsadministration-numberassignment-unassignnumber.md)|None|Unassign a telephone number from a user or resource account|
-|[updateNumber](../api/teamsadministration-numberassignment-updatenumber.md)|None|Update an existing telephone number with additional details|
+|[updateNumber](../api/teamsadministration-numberassignment-updatenumber.md)|None|Update an existing telephone number with optional details|
 
 ## Properties
 
@@ -43,11 +43,11 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |isoCountryCode|String|The ISO country code assigned to the phone number|
 |locationId|String|The ID of the Location assigned to the phone number|
 |networkSiteId|String|This parameter is reserved for internal Microsoft use |
-|numberSource|microsoft.graph.teamsAdministration.numberSource|The source of the phone number. Online for phone numbers assigned in Microsoft 365 and OnPremises for phone numbers assigned in AD on-premises and synchronized into Microsoft 365. The possible values are: `online`, `onPremises`, `unknownFutureValue`.|
+|numberSource|microsoft.graph.teamsAdministration.numberSource|The source of the phone number. `online` is used for phone numbers assigned in Microsoft 365 and `onPremises` is used for phone numbers assigned in AD on-premises which are synchronized into Microsoft 365. The possible values are: `online`, `onPremises`, `unknownFutureValue`.|
 |numberType|microsoft.graph.teamsAdministration.numberType|The type of the phone number such as Direct Routing, Operator Connect or Calling Plan. The possible values are: `internalError`, `directRouting`, `callingPlan`, `operatorConnect`, `unknownFutureValue`.|
 |operatorId|String|The ID of the operator|
 |portInStatus|microsoft.graph.teamsAdministration.portInStatus|The status of any port in order covering the phone number. The possible values are: `completed`, `firmOrderCommitmentAccepted`, `unknownFutureValue`.|
-|reverseNumberLookupOptions|microsoft.graph.teamsAdministration.reverseNumberLookupOption collection|Status of Reverse Number Lookup (RNL). When it is set to SkipInternalVoip, the calls are handled through external PSTN connection instead of internal VoIP lookup|
+|reverseNumberLookupOptions|microsoft.graph.teamsAdministration.reverseNumberLookupOption collection|Status of Reverse Number Lookup (RNL). When it's set to SkipInternalVoip, the calls are handled through external Public Switched Telephone Network (PSTN) connection instead of internal VoIP lookup|
 |supportedCustomerActions|microsoft.graph.teamsAdministration.customerAction collection|Indicates what customer actions are available to modify the number|
 |telephoneNumber|String|The telephone number in record. The number is always displayed with prefixed "+", even if it was not assigned using prefixed "+" |
 

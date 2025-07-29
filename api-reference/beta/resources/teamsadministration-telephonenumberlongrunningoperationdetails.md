@@ -20,7 +20,7 @@ Namespace: microsoft.graph.teamsAdministration
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|resourceLocation|String|Location of the asynchronous operation. It includes the operation id.|
+|resourceLocation|String|Location of the asynchronous operation. It includes the operation identifier.|
 |status|longRunningOperationStatus|status of the asynchronous operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
 |statusDetail|String|Indicates the asynchronous operation details.|
 
