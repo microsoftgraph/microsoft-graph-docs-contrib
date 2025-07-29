@@ -37,7 +37,6 @@ The following JSON representation shows the resource type.
   "openType": false
 }
 -->
-
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.reportFileMetadata",
