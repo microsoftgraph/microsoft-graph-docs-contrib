@@ -51,7 +51,7 @@ Added [resourceAccessEvent](/graph/api/security-resourceaccessevent) resource as
 ### Security | eDiscovery
 
 - Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, **additionalDataOptions**, and **statisticsOptions** as supported properties and parameters across various resources and actions of the eDiscovery API.
-- Use the **reportFileMetadata** property on [ediscoveryAddToReviewSetOperation](/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-beta) and [ediscoveryEstimateOperation](/graph/api/resources/security-ediscoveryEstimateOperation?view=graph-rest-beta) to get the properties for report file metadata.
+- Use the **reportFileMetadata** property on [ediscoveryAddToReviewSetOperation](/graph/api/resources/security-ediscoveryaddtoreviewsetoperation) and [ediscoveryEstimateOperation](/graph/api/resources/security-ediscoveryestimateoperation) to get the properties for report file metadata.
 
 ### Teamwork and communications | Messaging
 
