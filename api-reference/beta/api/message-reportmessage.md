@@ -1,6 +1,6 @@
 ---
-title: "message: reportMessage"
-description: "Report a message as junk, phishing, or not junk, which improves mail filtering."
+title: "Report Message"
+description: "Report the message as junk or phish or not junk"
 author: "ka-gunase"
 ms.date: 07/09/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# message: reportMessage
+# Report Message
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Report a [message](../resources/message.md) as junk, phishing, or not junk, which improves mail filtering.
+**Report a message as junk, phish, or not junk to help improve mail filtering.**
 
 ## Permissions
 
@@ -52,8 +52,10 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ReportAction|reportAction|Indicates the type of action to be reported on the message that can be junk, not junk, or phishing. The possible values are: `unknown`, `junk`, `notJunk`, `phish`, `unknownFutureValue`. |
-|IsMessageMoveRequested|Boolean|Indicates whether the message should be moved out of current folder.|
+|ReportAction|ReportAction|Indicates the type of action to be reported on the message, which can be junk, notJunk, or phish. For more information, see [ReportAction](../resources/enums.md#reportaction-values)|
+|IsMessageMoveRequested|Boolean|Indicates if the message should be moved out of current folder.|
+
+
 
 ## Response
 
@@ -70,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/messages/{messageId}/reportMessage
+POST https://graph.microsoft.com/beta/me/messages/AAMkADhAAATs28OAAA=/reportMessage
 Content-Type: application/json
 
 {
@@ -95,78 +97,64 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.message",
-    "id": "String (identifier)",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "changeKey": "String",
-    "categories": [
-      "String"
-    ],
-    "receivedDateTime": "String (timestamp)",
-    "sentDateTime": "String (timestamp)",
-    "hasAttachments": "Boolean",
-    "internetMessageId": "String",
-    "internetMessageHeaders": [
-      {
-        "@odata.type": "microsoft.graph.internetMessageHeader"
-      }
-    ],
-    "subject": "String",
-    "body": {
-      "@odata.type": "microsoft.graph.itemBody"
-    },
-    "bodyPreview": "String",
-    "importance": "String",
-    "parentFolderId": "String",
-    "sender": {
-      "@odata.type": "microsoft.graph.recipient"
-    },
-    "from": {
-      "@odata.type": "microsoft.graph.recipient"
-    },
-    "toRecipients": [
-      {
-        "@odata.type": "microsoft.graph.recipient"
-      }
-    ],
-    "ccRecipients": [
-      {
-        "@odata.type": "microsoft.graph.recipient"
-      }
-    ],
-    "bccRecipients": [
-      {
-        "@odata.type": "microsoft.graph.recipient"
-      }
-    ],
-    "replyTo": [
-      {
-        "@odata.type": "microsoft.graph.recipient"
-      }
-    ],
-    "conversationId": "String",
-    "conversationIndex": "Binary",
-    "uniqueBody": {
-      "@odata.type": "microsoft.graph.itemBody"
-    },
-    "isDeliveryReceiptRequested": "Boolean",
-    "isReadReceiptRequested": "Boolean",
-    "isRead": "Boolean",
-    "isDraft": "Boolean",
-    "webLink": "String",
-    "mentionsPreview": {
-      "@odata.type": "microsoft.graph.mentionsPreview"
-    },
-    "inferenceClassification": "String",
-    "unsubscribeData": [
-      "String"
-    ],
-    "unsubscribeEnabled": "Boolean",
-    "flag": {
-      "@odata.type": "microsoft.graph.followupFlag"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#message",
+  "@odata.type": "#microsoft.graph.message",
+  "@odata.etag": "W/\"FwAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAW/0tB\"",
+  "id": "AAMkADhAAAW-VPeAAA=",
+  "createdDateTime": "2018-08-12T08:43:22Z",
+  "lastModifiedDateTime": "2018-08-15T19:47:54Z",
+  "changeKey": "FwAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAW/0tB",
+  "categories": [],
+  "receivedDateTime": "2018-08-12T08:43:22Z",
+  "sentDateTime": "2018-08-12T08:43:20Z",
+  "hasAttachments": false,
+  "internetMessageId": "<00535324-5988-4b6a-b9af-d44cf2d0b691@MWHPR2201MB1022.namprd22.prod.outlook.com>",
+  "subject": "Undeliverable: Meet for lunch?",
+  "bodyPreview": "Delivery has failed to these recipients or groups:\r\n\r\nfannyd@contoso.com (fannyd@contoso.com)\r\nYour message couldn't be delivered. Despite repeated attempts to deliver your message, querying the Domain Name System (DNS) for the rec",
+  "importance": "normal",
+  "parentFolderId": "AAMkADhAAAAAAEKAAA=",
+  "conversationId": "AAQkADhJzfbkARFhe5kKhjihSA=",
+  "isDeliveryReceiptRequested": null,
+  "isReadReceiptRequested": false,
+  "isRead": false,
+  "isDraft": false,
+  "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkADhAAAW%2FVPeAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+  "inferenceClassification": "focused",
+  "body": {
+    "contentType": "html",
+    "content": "<html></html>"
+  },
+  "sender": {
+    "emailAddress": {
+      "name": "Microsoft Outlook",
+      "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@contoso.com"
     }
+  },
+  "from": {
+    "emailAddress": {
+      "name": "Microsoft Outlook",
+      "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@contoso.com"
+    }
+  },
+  "toRecipients": [
+    {
+      "emailAddress": {
+        "name": "fannyd@contoso.com",
+        "address": "fannyd@contoso.com"
+      }
+    },
+    {
+      "emailAddress": {
+        "name": "danas@contoso.com",
+        "address": "danas@contoso.com"
+      }
+    }
+  ],
+  "ccRecipients": [],
+  "bccRecipients": [],
+  "replyTo": [],
+  "flag": {
+    "flagStatus": "notFlagged"
   }
 }
 ```

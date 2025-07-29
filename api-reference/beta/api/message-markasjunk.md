@@ -1,5 +1,5 @@
 ---
-title: "message: markAsJunk"
+title: "message: markAsJunk(deprecated)"
 description: "Mark a message as junk."
 author: "kagunase"
 ms.localizationpriority: medium
@@ -8,7 +8,8 @@ doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# message: markAsJunk
+# message: markAsJunk(deprecated)
+The **markAsJunk** API is deprecated and will stop working data on December 30, 2025. Going forward use the [reportMessage](https://learn.microsoft.com/en-us/graph/api/message-reportmessage?view=graph-rest-beta) API.
 
 Namespace: microsoft.graph
 
@@ -79,6 +80,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-markasjunk-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/message-markasjunk-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
