@@ -12,8 +12,6 @@ ms.date: 07/25/2025
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the file metadata of a job report in eDiscovery.
 
 ## Properties
@@ -37,7 +35,6 @@ The following JSON representation shows the resource type.
   "openType": false
 }
 -->
-
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.reportFileMetadata",
