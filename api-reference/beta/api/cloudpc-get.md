@@ -170,6 +170,7 @@ Content-Type: application/json
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_cloudpc_selected_properties"
@@ -207,6 +208,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-cloudpc-selected-properties-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
