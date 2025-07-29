@@ -65,10 +65,10 @@ If successful, this method returns a `200 OK` response code.
 
 ### Example 1: Update Location Id
 
-#### Example 1 Request
+Request
 <!-- {
   "blockType": "request",
-  "name": "post_updateNumber",
+  "name": "post_updateNumber1",
 }
 -->
 ``` http
@@ -81,7 +81,7 @@ Content-Type: application/json
 }
 ```
 
-#### Example 1 Response
+Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 ### Example 2: Update Network Site Id
 
-#### Example 2 Request
+Request
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber",
@@ -111,7 +111,7 @@ Content-Type: application/json
 }
 ```
 
-#### Example 2 Response
+Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -126,7 +126,7 @@ Content-Type: application/json
 
 ### Example 3: Update Reverse Number Lookup Options
 
-#### Example 3 Request
+Request
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber",
@@ -141,7 +141,7 @@ Content-Type: application/json
 }
 ```
 
-#### Example 3 Response
+Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
