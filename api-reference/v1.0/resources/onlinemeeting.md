@@ -137,7 +137,6 @@ The following JSON representation shows the resource type.
   "allowedLobbyAdmitters": "String",
   "allowedPresenters": "String",
   "allowLiveShare": "String",
-  "allowMeetingChat": "String",
   "allowParticipantsToChangeName": "Boolean",
   "allowPowerPointSharing": "Boolean",
   "allowRecording": "Boolean",
