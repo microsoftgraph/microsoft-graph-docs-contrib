@@ -21,14 +21,14 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/onpremisessyncbehavior-get.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Read the properties and relationships of an onPremisesSyncBehavior object.|
+|[Get](../api/onpremisessyncbehavior-get.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Read the properties of an onPremisesSyncBehavior object.|
 |[Update](../api/onpremisessyncbehavior-update.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Update the properties of an onPremisesSyncBehavior object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The object ID of the parent object. Read-only. Inherits from [entity](../resources/entity.md)|
-|isCloudManaged|Boolean|Indicates the state of synchronization for an object between the cloud and on-premises Active Directory. This object defines whether the source of authority for a directory object and its settings is on-premises Active Directory or Microsoft Entra ID.|
+|isCloudManaged|Boolean|Indicates the state of synchronization for an object between the cloud and on-premises Active Directory. If `true`, updates from on-premises Active Directory are blocked in the cloud; if `false`, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.|
 
 ## Relationships
 None.

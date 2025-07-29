@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 07/21/2025
+ms.date: 07/28/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -2286,6 +2286,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 0e9eea12-4f01-45f6-9b8d-3ea4c8144158 | f37235e8-90a0-4189-93e2-e55b53867ccd |
 | DisplayText | Read and update all Azure AD recommendations | Read and update Azure AD recommendations |
 | Description | Allows the app to read and update all Azure AD recommendations, without a signed-in user. | Allows the app to read and update Azure AD recommendations, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### Domain-InternalFederation.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | c0e5a7b0-e8b7-40a7-b8e0-8249e6ea81d5 | 33203a2a-a761-40f0-8a7c-a7e74a9f8ac6 |
+| DisplayText | Read internal federation configuration for a domain. | Read internal federation configuration for a domain. |
+| Description | Allows the app to read internal federation configuration for a domain. | Allows the app to read internal federation configuration for a domain. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### Domain-InternalFederation.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 64d40371-8d58-4270-bc8a-b4a66de36b9a | 857bd3ea-490e-4284-88a7-a7de1893b6ee |
+| DisplayText | Create, read, update and delete internal federation configuration for a domain. | Create, read, update and delete internal federation configuration for a domain. |
+| Description | Allows the app to create, read, update and delete internal federation configuration for a domain. | Allows the app to create, read, update and delete internal federation configuration for a domain. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
