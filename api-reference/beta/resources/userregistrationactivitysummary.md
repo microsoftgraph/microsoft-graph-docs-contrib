@@ -23,13 +23,13 @@ Represents the summary of the number of successful/unsuccessful registration and
 |[List](../api/authenticationmethodsroot-userregistrationactivity.md)|[userRegistrationActivitySummary](../resources/userregistrationactivitysummary.md) collection|Get the summary of the number of successful/unsuccessful registration and reset events for each authentication method.|
 
 ## Properties
-|Property|Type|Description| Filterable |
-|:---|:---|:---|:---|
-|authMethod|usageAuthMethod|The authentication method for the given summary. The possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion`, `appNotification`, `appCode`, `alternateMobileCall`, `fido`, `appPassword`, `unknownFutureValue`, `externalAuthMethod`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `externalAuthMethod`. | Yes |
-|failureActivityCount|Int64|The total number of failed activities for the corresponding authMethod and feature. | Yes |
-|feature|featureType|The type of activity. The possible values are: `registration`, `reset`, `unknownFutureValue`. | Yes |
-|id|String|The unique id for the given summary. | Yes |
-|successfulActivityCount|Int64|The total number of successful activities for the corresponding authMethod and feature. | Yes |
+|Property|Type|Description| 
+|:---|:---|:---|
+|authMethod|usageAuthMethod|The authentication method for the given summary. The possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion`, `appNotification`, `appCode`, `alternateMobileCall`, `fido`, `appPassword`, `unknownFutureValue`, `externalAuthMethod`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `externalAuthMethod`. Supports `$filter` (`eq`).|
+|failureActivityCount|Int64|The total number of failed activities for the corresponding authMethod and feature. Supports `$filter` (`eq`).|
+|feature|featureType|The type of activity. The possible values are: `registration`, `reset`, `unknownFutureValue`. Supports `$filter` (`eq`).|
+|id|String|The unique id for the given summary. Supports `$filter` (`eq`).|
+|successfulActivityCount|Int64|The total number of successful activities for the corresponding authMethod and feature. Supports `$filter` (`gt`, `lt`).|
 
 ## Relationships
 None.
