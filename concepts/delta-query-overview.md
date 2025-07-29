@@ -206,7 +206,7 @@ When a change is made to a directory extension property, all directory extension
 
 ## Combine delta query and change notifications
 
-An app can use Microsoft Graph [change notifications](./change-notifications-api-overview.md) to subscribe to be notified when a specific resource changes. The application can then use delta query to request all changes since the last time it made the request.
+An app can use Microsoft Graph [change notifications](change-notifications-overview.md) to subscribe to be notified when a specific resource changes. The application can then use delta query to request all changes since the last time it made the request.
 
 Applications can use this strategy to nearly eliminate (only for supported resources) the need to frequently poll Microsoft Graph and process those changes to keep a local data store in sync, greatly reducing the chances for their requests to be throttled.
 
