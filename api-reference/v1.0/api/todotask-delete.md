@@ -1,6 +1,6 @@
 ---
 title: "Delete todoTask"
-description: "Deletes a todoTask object."
+description: "Delete a todoTask object."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 # Delete todoTask
 Namespace: microsoft.graph
 
-Deletes a [todoTask](../resources/todotask.md) object.
+Delete a [todoTask](../resources/todotask.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
