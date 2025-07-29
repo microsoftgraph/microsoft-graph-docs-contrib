@@ -195,19 +195,19 @@ The following JSON representation shows the resource type.
   "managedDeviceId": "String",
   "managedDeviceName": "String",
   "onPremisesConnectionName": "String",
-  "powerState": "String",
   "osVersion": "String",
   "partnerAgentInstallResults": "String",
+  "powerState": "String",
+  "provisionedDateTime": "String (timestamp)",
   "provisioningPolicyId": "String",
   "provisioningPolicyName": "String",
   "provisioningType": "String",
   "servicePlanId": "String",
   "servicePlanName": "String",
   "servicePlanType": "String",
+  "sharedDeviceDetail": {"@odata.type": "microsoft.graph.cloudPcFrontlineSharedDeviceDetail"},
   "status": "String",
   "userAccountType": "String",
-  "userPrincipalName": "String",
-  "provisionedDateTime": "String (timestamp)",
-  "sharedDeviceDetail": {"@odata.type": "microsoft.graph.cloudPcFrontlineSharedDeviceDetail"}
+  "userPrincipalName": "String"
 }
 ```
