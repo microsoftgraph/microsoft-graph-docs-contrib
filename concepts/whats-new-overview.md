@@ -48,6 +48,8 @@ Added [ResourceAccessEvent](/graph/api/security-resourceaccessevent) resource as
 
 ### Device and app management | Cloud PC
 
+- Use the **provisionedDateTime** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the latest provisioned date time of a Cloud PC or to filter Cloud PCs by the latest provisioned date time.
+- Use the **sharedDeviceDetail** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the Cloud PC device details (for example, **assignedToUserPrincipalName**) associated with the frontline shared service plan.
 - [Retrieve the Cloud PC count grouped by status](/graph/api/cloudpc-retrievecloudpccountbystatus?view=graph-rest-beta&preserve-view=true).
 - Enabled `retention` as a supported snapshot type for a [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true).
 - Use the **sizeInGB** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) to get the size of the image in GB.
