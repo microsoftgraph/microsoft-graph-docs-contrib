@@ -1,7 +1,7 @@
 ---
 title: "reportFileMetadata resource type"
 description: "Represents the file metadata of a job report in eDiscovery."
-author: "v-kafeng"
+author: "Kylefk"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: resourcePageType
