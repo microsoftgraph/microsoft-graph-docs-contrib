@@ -165,6 +165,6 @@ The following JSON representation shows the resource type.
   "startDateTime": "String (timestamp)",
   "subject": "String",
   "videoTeleconferenceId": "String",
-  "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}
+  "watermarkProtection": "String"
 }
 ```
