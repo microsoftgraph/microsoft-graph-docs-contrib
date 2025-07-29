@@ -1,6 +1,6 @@
 ---
 title: "numberAssignment: updateNumber"
-description: "Update an existing telephone number with additional details"
+description: "Update an existing telephone number with optional details"
 author: "pavellatif"
 ms.date: 07/23/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This method is used to update an existing number with additional attributes. Currently supported attributes are `locationId`, `networkSiteId`, and `reverseNumberLookupOptions`.
+This method is used to update an existing number with optional attributes. Currently supported attributes are `locationId`, `networkSiteId`, and `reverseNumberLookupOptions`.
 
 ## Permissions
 
@@ -52,10 +52,10 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|telephoneNumber|String|This is the telephone number intended to be assigned. (Mandatory parameter)|
-|locationId|String|Indicates the emergency address identifier set on the phone number. Passing an empty string will clear the locationId, while passing `null` or not including the field will not update the value.|
-|networkSiteId|String|Indicates the updated NetworkSiteId. Passing an empty string will clear the networkSiteId, while passing `null` or not including the field will not update the value.|
-|reverseNumberLookupOptions|String collection|This parameter is used to control the behavior of reverse number lookup (RNL) for a phone number. When RNL contains `skipInternalVoip`, an internal call to this phone number will not attempt to pass through internal VoIP via reverse number lookup in Microsoft Teams. Instead, the call will be established through external PSTN connectivity directly.|
+|telephoneNumber|String|The telephone number intended to be assigned. (Mandatory parameter)|
+|locationId|String|Indicates the emergency address identifier set on the phone number. Passing an empty string clears the locationId, while passing `null` or not including the field won't update the value.|
+|networkSiteId|String|Indicates the updated NetworkSiteId. Use an empty string to clear the existing networkSiteId, or use `null`/omit the field to preserve the existing value.|
+|reverseNumberLookupOptions|String collection|This parameter is used to control the behavior of reverse number lookup (RNL) for a phone number. When RNL contains `skipInternalVoip`, an internal call to this phone number does not attempt to pass through internal VoIP via reverse number lookup in Microsoft Teams. Instead, the call establishes through external PSTN connectivity directly.|
 
 ## Response
 

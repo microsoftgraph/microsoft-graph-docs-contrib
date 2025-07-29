@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md) object. This allows to read all Microsoft Teams telephone numbers currently assigned within Tenants. The operation is equivalent to [Get-CsPhoneNumberAssignment (MicrosoftTeamsPowerShell)](https://learn.microsoft.com/powershell/module/teams/get-csphonenumberassignment).
+Read the properties and relationships of [microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md) object. This retrieves all Microsoft Teams phone numbers currently assigned within your tenant. It is functionally equivalent to the [Get-CsPhoneNumberAssignment (MicrosoftTeamsPowerShell)](https://learn.microsoft.com/powershell/module/teams/get-csphonenumberassignment).
 
 ## Permissions
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md) object in the response body. The response body will contain the similar attributes found in Get-CsPhoneNumberAssignment Teams PowerShell cmdlet.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md) object in the response body. The response body contains similar attributes found in Get-CsPhoneNumberAssignment Teams PowerShell cmdlet.
 
 ## Examples
 

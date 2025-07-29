@@ -52,7 +52,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|telephoneNumber|String|This is the telephone number intended to be unassigned|
+|telephoneNumber|String|The telephone number intended to be unassigned|
 |numberType|microsoft.graph.teamsAdministration.numberType|Number type for the telephone number to be unassigned. It can be Direct Routing, Calling Plan or Operator Connect|
 
 ## Response
