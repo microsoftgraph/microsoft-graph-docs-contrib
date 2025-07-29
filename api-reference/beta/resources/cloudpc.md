@@ -205,6 +205,8 @@ The following JSON representation shows the resource type.
   "servicePlanType": "String",
   "status": "String",
   "userAccountType": "String",
-  "userPrincipalName": "String"
+  "userPrincipalName": "String",
+  "provisionedDateTime": "String (timestamp)",
+  "sharedDeviceDetail": {"@odata.type": "microsoft.graph.cloudPcFrontlineSharedDeviceDetail"}
 }
 ```
