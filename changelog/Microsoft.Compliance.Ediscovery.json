@@ -1638,7 +1638,7 @@
       "Version": "beta",
       "CreatedDateTime": "2025-07-23T22:41:55.458412Z",
       "WorkloadArea": "Compliance",
-      "SubArea": ""
+      "SubArea": "eDiscovery"
     },
     {
       "ChangeList": [
@@ -1672,7 +1672,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2025-07-23T22:41:55.4587083Z",
       "WorkloadArea": "Compliance",
-      "SubArea": ""
+      "SubArea": "eDiscovery"
     }
   ]
 }
