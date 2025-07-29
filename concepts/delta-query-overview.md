@@ -194,7 +194,7 @@ Delta query can return a response code of `410 Gone` and a **Location** header c
 
 Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again.
 
-- For [directory objects](/graph/api/resources/directoryobject), the limit is seven days. 
+- For [directory objects](/graph/api/resources/directoryobject), the limit is seven days.
 - For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is seven days.
 - For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), the upper limit isn't fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
 
@@ -206,7 +206,7 @@ When a change is made to a directory extension property, all directory extension
 
 ## Combine delta query and change notifications
 
-An app can use Microsoft Graph [change notifications](./webhooks.md) to subscribe to be notified when a specific resource changes. The application can then use delta query to request all changes since the last time it made the request.
+An app can use Microsoft Graph [change notifications](change-notifications-overview.md) to subscribe to be notified when a specific resource changes. The application can then use delta query to request all changes since the last time it made the request.
 
 Applications can use this strategy to nearly eliminate (only for supported resources) the need to frequently poll Microsoft Graph and process those changes to keep a local data store in sync, greatly reducing the chances for their requests to be throttled.
 

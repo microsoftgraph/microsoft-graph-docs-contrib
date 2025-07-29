@@ -14,11 +14,13 @@ Namespace: microsoft.graph
 
 Custom authentication extensions define interactions with external systems during a user authentication session. This is an abstract type from which the following types are derived.
 
+- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
+- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 - [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
-Learn how to use this API when [Configuring a custom claim provider token issuance event](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context).
+[Learn more about custom authentication extensions](/entra/identity-platform/custom-extension-overview) and how to use this API when [Configuring a custom claim provider token issuance event (preview)](/entra/identity-platform/custom-extension-tokenissuancestart-configuration?toc=/graph/toc.json&context=graph/context).
 
 ## Methods
 |Method|Return type|Description|
