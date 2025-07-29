@@ -45,8 +45,6 @@ In the request URL, provide the following required query parameters with values.
 | provisioningPolicyId | String |The GUID of the provisioning policy ID.   |
 | sourceId | String | The GUID of the source ID that represents the image ID. |
 
-This method also supports some of the [OData query parameters](/graph/query-parameters) to help customize the response.
-
 ## Request headers
 
 | Name          | Description               |
@@ -64,6 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 The following example shows the request.
 <!-- {
   "blockType": "request",
@@ -75,6 +74,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudApps/
 ```
 
 ### Response
+
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
