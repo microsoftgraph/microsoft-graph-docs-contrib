@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md) object. This action retrieves all Microsoft Teams telephone numbers currently available within your tenant. It's functionally equivalent to the [Get-CsPhoneNumberAssignment (MicrosoftTeamsPowerShell)](https://learn.microsoft.com/powershell/module/teams/get-csphonenumberassignment).
+Read the properties and relationships of [microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md) object. This action retrieves all Microsoft Teams telephone numbers currently available within your tenant.
 
 ## Permissions
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates an asynchronous order to assign a telephone number to a user or resource account. This operation is similar to the [Remove-CsPhoneNumberAssignment (MicrosoftTeamsPowerShell)](https://learn.microsoft.com/powershell/module/teams/remove-csphonenumberassignment) cmdlet.
+Creates an asynchronous order to assign a telephone number to a user or resource account.
 
 ## Permissions
 
