@@ -198,7 +198,6 @@ Content-Type: application/json
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_customauthenticationextension_onAttributeCollectionStartCustomExtension"
@@ -271,7 +270,6 @@ Content-Type: application/json
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_customauthenticationextension_onAttributeCollectionSubmitCustomExtension"
@@ -342,7 +340,6 @@ Content-Type: application/json
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_customauthenticationextension_onOtpSendCustomExtension"
