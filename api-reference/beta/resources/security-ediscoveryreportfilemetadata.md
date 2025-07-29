@@ -1,6 +1,6 @@
 ---
 title: "reportFileMetadata resource type"
-description: "Represents the file metadata for an report in eDiscovery."
+description: "Represents the file metadata of a job report in eDiscovery."
 author: "v-kafeng"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the file metadata for an report in eDiscovery.
+Represents the file metadata of a job report in eDiscovery.
 
 ## Properties
 
