@@ -99,7 +99,7 @@ Response
 Request
 <!-- {
   "blockType": "request",
-  "name": "post_updateNumber",
+  "name": "post_updateNumber2",
 }
 -->
 ``` http
@@ -126,10 +126,10 @@ Response
 
 ### Example 3: Update reverse number lookup options
 
-Request
+#### Request
 <!-- {
   "blockType": "request",
-  "name": "post_updateNumber",
+  "name": "post_updateNumber3",
 }
 -->
 ``` http
@@ -141,7 +141,7 @@ Content-Type: application/json
 }
 ```
 
-Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -156,10 +156,10 @@ Response
 
 ### Example 4: Clear location ID
 
-Request
+#### Request
 <!-- {
   "blockType": "request",
-  "name": "post_updateNumber",
+  "name": "post_updateNumber4",
 }
 -->
 ``` http
@@ -171,7 +171,7 @@ Content-Type: application/json
 }
 ```
 
-Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
