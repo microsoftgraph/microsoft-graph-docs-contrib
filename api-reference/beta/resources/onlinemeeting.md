@@ -169,7 +169,7 @@ The following JSON representation shows the resource type.
   "allowBreakoutRooms": "Boolean",
   "allowCopyingAndSharingMeetingContent": "Boolean",
   "allowedLobbyAdmitters": "String",
-  "allowedPresenters": "String",
+  "allowedPresenters": {"@odata.type": "microsoft.graph.onlineMeetingPresenters"},
   "allowLiveShare": "String",
   "allowMeetingChat": "String",
   "allowParticipantsToChangeName": "Boolean",
