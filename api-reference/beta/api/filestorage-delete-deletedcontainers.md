@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Permanently remove a [fileStorageContainer](../resources/filestoragecontainer.md) from the deleted container collection. Removing a file storage container with this API permanently removes it from the deleted container collection. Therefore, it can't be restored later. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -70,10 +70,6 @@ DELETE https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers/b!
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/remove-deleted-filestoragecontainer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/remove-deleted-filestoragecontainer-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

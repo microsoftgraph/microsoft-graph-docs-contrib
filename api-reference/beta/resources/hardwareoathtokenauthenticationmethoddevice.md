@@ -29,7 +29,6 @@ Inherits from [authenticationMethodDevice](../resources/authenticationmethoddevi
 |[Get](../api/hardwareoathtokenauthenticationmethoddevice-get.md)|[hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md)|Read the properties and relationships of a [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) object.|
 |[Update](../api/hardwareoathtokenauthenticationmethoddevice-update.md)|[hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md)|Update the properties of a [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) object.|
 |[Delete](../api/authenticationmethoddevice-delete-hardwareoathdevices.md)|None|Delete an [authenticationMethodDevice](../resources/authenticationmethoddevice.md) object. Token needs to be unassigned first.|
-|[Assign user](../api/hardwareoathtokenauthenticationmethoddevice-put-assignto.md)|[user](../resources/user.md)|Add assignTo by posting to the assignTo collection.|
 
 ## Properties
 |Property|Type|Description|

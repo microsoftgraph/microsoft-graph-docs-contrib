@@ -89,10 +89,6 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f8ce2a5f-0
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-virtualeventsession-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-virtualeventsession-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-virtualeventsession-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -139,6 +135,7 @@ Content-Type: application/json
     "startDateTime": "2023-08-08T12:30:00Z",
     "endDateTime": "2023-08-09T22:00:00Z",
     "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%221cd068e4-5b08-4e75-a7f9-7b4e067a0820%22%7d",
+    "videoOnDemandWebUrl": "https://df.events.teams.microsoft.com/webinars/webinarId/sessions/session1",
     "subject": "Session one",
     "participants": {
       "@odata.type": "microsoft.graph.meetingParticipants"

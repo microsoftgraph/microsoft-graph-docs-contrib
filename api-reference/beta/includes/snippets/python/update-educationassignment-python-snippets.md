@@ -20,6 +20,7 @@ request_body = EducationAssignment(
 	),
 	due_date_time = "2021-09-10T00:00:00Z",
 	added_student_action = EducationAddedStudentAction.None,
+	language_tag = "pt-BR",
 	add_to_calendar_action = EducationAddToCalendarOptions.StudentsAndPublisher,
 )
 

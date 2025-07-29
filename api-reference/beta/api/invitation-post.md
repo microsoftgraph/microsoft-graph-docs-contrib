@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 >   - Both nonadmin member users and guest users can invite guests if the tenant admin hasn't restricted the [default user permissions](/entra/fundamentals/users-default-permissions?toc=%2Fgraph%2Ftoc.json).
 >   - Guest Inviter, Directory Writers, or User Administrator.
 > - To reset the redemption status: Helpdesk Administrator or User Administrator.
-> - Application permissions (app-only) don't work if B2B invitations are disabled on the tenant or if B2B invitations are restricted to administrators.
+> - Application permissions (app-only) don't work if B2B invitations are disabled on the tenant.
 > - When resetting the redemption status for a guest user, the *User.ReadWrite.All* permission is the least privileged permission for the operation.
 
 ## HTTP request
@@ -93,10 +93,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-invitation-post-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-invitation-post-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -162,7 +158,8 @@ Content-type: application/json
         ]
     },
     "invitedUser": {
-        "id": "cbb896f9-8306-49d0-b56b-b8e39cd28825"
+        "id": "cbb896f9-8306-49d0-b56b-b8e39cd28825",
+        "userPrincipalName": "admin_fabrikam.com#EXT#@doc.onmicrosoft.com"
     }
 }
 ```
@@ -194,10 +191,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-invitation-resetredemption-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-invitation-resetredemption-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -262,7 +255,8 @@ Content-type: application/json
         ]
     },
     "invitedUser": {
-        "id": "264e6d50-eaec-461e-b187-873b1bcf855f"
+        "id": "264e6d50-eaec-461e-b187-873b1bcf855f",
+        "userPrincipalName": "AdeleV_fabrikam.com#EXT#@doc.onmicrosoft.com"
     }
 }
 ```

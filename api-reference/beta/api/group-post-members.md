@@ -81,7 +81,7 @@ When using the `PATCH /groups/{group-id}/members` syntax, supply a JSON object t
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It returns a `400 Bad Request` response code when the object is already a member of the group or is unsupported as a group member. It returns a `404 Not Found` response code when the object being added doesn't exist. It returns `403 Unauthorized` in one of the following scenarios:
-- You're attempting to add a member to a [group that can't be managed through Microsoft Graph](../resources/groups-overview.md#group-types-in-microsoft-entra-id-and-microsoft-graph). This API supports only security and Microsoft 365 groups.
+- You're attempting to add a member to a [group that can't be managed through Microsoft Graph](../resources/groups-overview.md#types-of-groups-supported-in-microsoft-graph). This API supports only security and Microsoft 365 groups.
 - You're attempting to add a member you don't have permissions to add. Refer to the preceding [Permissions](#permissions) section for the permissions required to add different member types.
 - You're attempting to add a member to a role-assignable group and you don't have the required permissions.
 
@@ -111,10 +111,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-group-member-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/add-group-member-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -183,10 +179,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-multiple-members-to-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/add-multiple-members-to-group-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

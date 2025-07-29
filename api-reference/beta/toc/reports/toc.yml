@@ -44,6 +44,14 @@ items:
         href: ../../api/impactedresource-complete.md
       - name: Reactivate
         href: ../../api/impactedresource-reactivate.md
+    - name: Recommendation configuration
+      items:
+      - name: Recommendation configuration
+        href: ../../resources/recommendationconfiguration.md
+      - name: Get
+        href: ../../api/recommendationconfiguration-get.md
+      - name: Update
+        href: ../../api/recommendationconfiguration-update.md
   - name: Microsoft Entra activity reports
     items:
     - name: AD FS application activity
@@ -254,6 +262,8 @@ items:
               href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
             - name: Get managed devices Conditional Access sign-in metrics
               href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
+            - name: Get Conditional Access blocked sign-in metrics
+              href: ../../api/serviceactivity-getmetricsforconditionalaccessblockedsignin.md
             - name: Get compliant devices Conditional Access sign-in metrics
               href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
             - name: Get SAML sign-in metrics
@@ -310,6 +320,20 @@ items:
         href: ../../api/directoryaudit-list.md
       - name: Get
         href: ../../api/directoryaudit-get.md
+    - name: Provisioning object summary
+      items:
+      - name: Provisioning object summary
+        href: ../../resources/provisioningobjectsummary.md
+      - name: List
+        href: ../../api/provisioningobjectsummary-list.md
+    - name: Self-service sign-up
+      items:
+      - name: Self-service sign-up
+        href: ../../resources/selfservicesignup.md
+      - name: List
+        href: ../../api/auditlogroot-list-signups.md
+      - name: Get
+        href: ../../api/selfservicesignup-get.md
     - name: Sign in
       items:
       - name: Sign in
@@ -322,12 +346,8 @@ items:
         href: ../../api/signin-confirmcompromised.md
       - name: Confirm safe
         href: ../../api/signin-confirmsafe.md
-    - name: Provisioning object summary
-      items:
-      - name: Provisioning object summary
-        href: ../../resources/provisioningobjectsummary.md
-      - name: List
-        href: ../../api/provisioningobjectsummary-list.md
+      - name: Dismiss
+        href: ../../api/signin-dismiss.md
 - name: Microsoft 365 monitoring reports (preview)
   items:
   - name: Overview
@@ -388,6 +408,8 @@ items:
         href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
       - name: Get managed devices Conditional Access sign-in metrics
         href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
+      - name: Get Conditional Access blocked sign-in metrics
+        href: ../../api/serviceactivity-getmetricsforconditionalaccessblockedsignin.md
       - name: Get compliant devices Conditional Access sign-in metrics
         href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
       - name: Get SAML sign-in metrics
@@ -536,6 +558,10 @@ items:
         href: ../../api/reportroot-getoffice365groupsactivitystorage.md
       - name: Get file counts
         href: ../../api/reportroot-getoffice365groupsactivityfilecounts.md
+    - name: Microsoft Graph API usage (preview)
+      items:
+      - name: Get API usage
+        href: ../../api/reportroot-getapiusage.md
     - name: OneDrive activity
       items:
       - name: Get user detail
@@ -710,6 +736,12 @@ items:
       href: ../../resources/partners-billing-operation.md
     - name: Get
       href: ../../api/partners-billing-operation-get.md
+  - name: Unbilled reconciliation
+    items:
+    - name: Unbilled reconciliation
+      href: ../../resources/partners-billing-unbilledreconciliation.md
+    - name: Export
+      href: ../../api/partners-billing-unbilledreconciliation-export.md
   - name: Unbilled usage
     items:
     - name: Unbilled usage

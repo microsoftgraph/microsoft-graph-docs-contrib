@@ -3,6 +3,628 @@
     {
       "ChangeList": [
         {
+          "Id": "48edf21a-eed2-4a6b-85a9-db4f61a994ce",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveZebraFotaDeviceModels",
+          "ChangeType": "Addition",
+          "Description": "Added the retrieveZebraFotaDeviceModels method to the zebraFotaConnector resource.",
+          "Target": "zebraFotaConnector"
+        },
+        {
+          "Id": "63598d92-d4f2-47a7-a344-9a1814582a5b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "iosDdmLobAppAssignmentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the iosDdmLobAppAssignmentSettings resource.",
+          "Target": "iosDdmLobAppAssignmentSettings"
+        },
+        {
+          "Id": "1039bbb4-64bc-471c-a3dc-d15ea7336399",
+          "ApiChange": "Property",
+          "ChangedApiName": "associatedDomains",
+          "ChangeType": "Addition",
+          "Description": "Added the **associatedDomains** property to the iosDdmLobAppAssignmentSettings resource.",
+          "Target": "iosDdmLobAppAssignmentSettings"
+        },
+        {
+          "Id": "1039bbb4-64bc-471c-a3dc-d15ea7336399",
+          "ApiChange": "Property",
+          "ChangedApiName": "associatedDomainsDirectDownloadAllowed",
+          "ChangeType": "Addition",
+          "Description": "Added the **associatedDomainsDirectDownloadAllowed** property to the iosDdmLobAppAssignmentSettings resource.",
+          "Target": "iosDdmLobAppAssignmentSettings"
+        },
+        {
+          "Id": "1039bbb4-64bc-471c-a3dc-d15ea7336399",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the **preventManagedAppBackup** property to the iosDdmLobAppAssignmentSettings resource.",
+          "Target": "iosDdmLobAppAssignmentSettings"
+        },
+        {
+          "Id": "1039bbb4-64bc-471c-a3dc-d15ea7336399",
+          "ApiChange": "Property",
+          "ChangedApiName": "tapToPayScreenLockEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **tapToPayScreenLockEnabled** property to the iosDdmLobAppAssignmentSettings resource.",
+          "Target": "iosDdmLobAppAssignmentSettings"
+        },
+        {
+          "Id": "1039bbb4-64bc-471c-a3dc-d15ea7336399",
+          "ApiChange": "Property",
+          "ChangedApiName": "vpnConfigurationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **vpnConfigurationId** property to the iosDdmLobAppAssignmentSettings resource.",
+          "Target": "iosDdmLobAppAssignmentSettings"
+        },
+        {
+          "Id": "477b2865-a961-4a93-9e05-8b43de9fbc27",
+          "ApiChange": "Resource",
+          "ChangedApiName": "iosDdmLobAppAssignmentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the iosDdmLobAppAssignmentSettings resource.",
+          "Target": "iosDdmLobAppAssignmentSettings"
+        },
+        {
+          "Id": "84d6e852-645a-4300-9b03-54643b110aeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the deviceManagement resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "5f6c609d-e263-4311-9772-bc6ff4be7056",
+          "ApiChange": "Member",
+          "ChangedApiName": "visionOS",
+          "ChangeType": "Addition",
+          "Description": "Added the `visionOS` member to the **deviceType** enumeration.",
+          "Target": "deviceType"
+        },
+        {
+          "Id": "5f6c609d-e263-4311-9772-bc6ff4be7056",
+          "ApiChange": "Member",
+          "ChangedApiName": "tvOS",
+          "ChangeType": "Addition",
+          "Description": "Added the `tvOS` member to the **deviceType** enumeration.",
+          "Target": "deviceType"
+        },
+        {
+          "Id": "4605b6f0-f07a-4850-9c49-b7471fb9e338",
+          "ApiChange": "Member",
+          "ChangedApiName": "visionOS",
+          "ChangeType": "Addition",
+          "Description": "Added the `visionOS` member to the **deviceManagementConfigurationPlatforms** enumeration.",
+          "Target": "deviceManagementConfigurationPlatforms"
+        },
+        {
+          "Id": "4605b6f0-f07a-4850-9c49-b7471fb9e338",
+          "ApiChange": "Member",
+          "ChangedApiName": "tvOS",
+          "ChangeType": "Addition",
+          "Description": "Added the `tvOS` member to the **deviceManagementConfigurationPlatforms** enumeration.",
+          "Target": "deviceManagementConfigurationPlatforms"
+        },
+        {
+          "Id": "4605b6f0-f07a-4850-9c49-b7471fb9e338",
+          "ApiChange": "Member",
+          "ChangedApiName": "reusableSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the `reusableSetting` member to the **deviceManagementConfigurationSettingUsage** enumeration.",
+          "Target": "deviceManagementConfigurationSettingUsage"
+        },
+        {
+          "Id": "0dd320f8-7b78-45ce-87a7-28ec7ec9340d",
+          "ApiChange": "Member",
+          "ChangedApiName": "windowsRestore",
+          "ChangeType": "Addition",
+          "Description": "Added the `windowsRestore` member to the **deviceEnrollmentConfigurationType** enumeration.",
+          "Target": "deviceEnrollmentConfigurationType"
+        },
+        {
+          "Id": "97b88727-f021-4c00-b05e-4dc391eb0285",
+          "ApiChange": "Member",
+          "ChangedApiName": "visionOS",
+          "ChangeType": "Addition",
+          "Description": "Added the `visionOS` member to the **deviceType** enumeration.",
+          "Target": "deviceType"
+        },
+        {
+          "Id": "97b88727-f021-4c00-b05e-4dc391eb0285",
+          "ApiChange": "Member",
+          "ChangedApiName": "tvOS",
+          "ChangeType": "Addition",
+          "Description": "Added the `tvOS` member to the **deviceType** enumeration.",
+          "Target": "deviceType"
+        },
+        {
+          "Id": "48e6bf8b-1635-4ad1-a05f-a3f073cc5021",
+          "ApiChange": "Member",
+          "ChangedApiName": "visionOS",
+          "ChangeType": "Addition",
+          "Description": "Added the `visionOS` member to the **deviceCleanupRulePlatformType** enumeration.",
+          "Target": "deviceCleanupRulePlatformType"
+        },
+        {
+          "Id": "48e6bf8b-1635-4ad1-a05f-a3f073cc5021",
+          "ApiChange": "Member",
+          "ChangedApiName": "tvOS",
+          "ChangeType": "Addition",
+          "Description": "Added the `tvOS` member to the **deviceCleanupRulePlatformType** enumeration.",
+          "Target": "deviceCleanupRulePlatformType"
+        },
+        {
+          "Id": "48e6bf8b-1635-4ad1-a05f-a3f073cc5021",
+          "ApiChange": "Resource",
+          "ChangedApiName": "macOSManagedDeviceLocalAdminAccountDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the macOSManagedDeviceLocalAdminAccountDetail resource.",
+          "Target": "macOSManagedDeviceLocalAdminAccountDetail"
+        },
+        {
+          "Id": "48e6bf8b-1635-4ad1-a05f-a3f073cc5021",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveMacOSManagedDeviceLocalAdminAccountDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the retrieveMacOSManagedDeviceLocalAdminAccountDetail method to the managedDevice resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "1ed63f3b-7c47-4d9c-94ca-0437daa9f6b1",
+          "ApiChange": "Member",
+          "ChangedApiName": "visionOS",
+          "ChangeType": "Addition",
+          "Description": "Added the `visionOS` member to the **deviceManagementConfigurationPlatforms** enumeration.",
+          "Target": "deviceManagementConfigurationPlatforms"
+        },
+        {
+          "Id": "1ed63f3b-7c47-4d9c-94ca-0437daa9f6b1",
+          "ApiChange": "Member",
+          "ChangedApiName": "tvOS",
+          "ChangeType": "Addition",
+          "Description": "Added the `tvOS` member to the **deviceManagementConfigurationPlatforms** enumeration.",
+          "Target": "deviceManagementConfigurationPlatforms"
+        },
+        {
+          "Id": "1ed63f3b-7c47-4d9c-94ca-0437daa9f6b1",
+          "ApiChange": "Member",
+          "ChangedApiName": "reusableSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the `reusableSetting` member to the **deviceManagementConfigurationSettingUsage** enumeration.",
+          "Target": "deviceManagementConfigurationSettingUsage"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationAppleApplicabilityConstraint",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationAppleApplicabilityConstraint** enumeration type.",
+          "Target": "deviceManagementConfigurationAppleApplicabilityConstraint"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationAppleApplicabilityDeviceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationAppleApplicabilityDeviceType** enumeration type.",
+          "Target": "deviceManagementConfigurationAppleApplicabilityDeviceType"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "genmojiIosManagedAppConfigurationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **genmojiIosManagedAppConfigurationState** enumeration type.",
+          "Target": "genmojiIosManagedAppConfigurationState"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "screenCaptureIosManagedAppConfigurationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **screenCaptureIosManagedAppConfigurationState** enumeration type.",
+          "Target": "screenCaptureIosManagedAppConfigurationState"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "writingToolsIosManagedAppConfigurationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **writingToolsIosManagedAppConfigurationState** enumeration type.",
+          "Target": "writingToolsIosManagedAppConfigurationState"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationAndroidSettingApplicability",
+          "ChangeType": "Addition",
+          "Description": "Added the deviceManagementConfigurationAndroidSettingApplicability resource.",
+          "Target": "deviceManagementConfigurationAndroidSettingApplicability"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationAppleOSSupportedVersions",
+          "ChangeType": "Addition",
+          "Description": "Added the deviceManagementConfigurationAppleOSSupportedVersions resource.",
+          "Target": "deviceManagementConfigurationAppleOSSupportedVersions"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationAppleSettingVersionApplicability",
+          "ChangeType": "Addition",
+          "Description": "Added the deviceManagementConfigurationAppleSettingVersionApplicability resource.",
+          "Target": "deviceManagementConfigurationAppleSettingVersionApplicability"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationEdgeSettingApplicability",
+          "ChangeType": "Addition",
+          "Description": "Added the deviceManagementConfigurationEdgeSettingApplicability resource.",
+          "Target": "deviceManagementConfigurationEdgeSettingApplicability"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationFloatSettingValueDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the deviceManagementConfigurationFloatSettingValueDefinition resource.",
+          "Target": "deviceManagementConfigurationFloatSettingValueDefinition"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationIosSettingApplicability",
+          "ChangeType": "Addition",
+          "Description": "Added the deviceManagementConfigurationIosSettingApplicability resource.",
+          "Target": "deviceManagementConfigurationIosSettingApplicability"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationLinuxSettingApplicability",
+          "ChangeType": "Addition",
+          "Description": "Added the deviceManagementConfigurationLinuxSettingApplicability resource.",
+          "Target": "deviceManagementConfigurationLinuxSettingApplicability"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationReferredSettingInformation",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deviceManagementConfigurationReferredSettingInformation** resource.",
+          "Target": "deviceManagementConfigurationReferredSettingInformation"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSimpleSettingCollectionDefinition",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deviceManagementConfigurationSimpleSettingCollectionDefinition** resource.",
+          "Target": "deviceManagementConfigurationSimpleSettingCollectionDefinition"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Property",
+          "ChangedApiName": "genmojiConfigurationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **genmojiConfigurationState** property to the iosManagedAppProtection resource.",
+          "Target": "iosManagedAppProtection"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Property",
+          "ChangedApiName": "screenCaptureConfigurationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **screenCaptureConfigurationState** property to the iosManagedAppProtection resource.",
+          "Target": "iosManagedAppProtection"
+        },
+        {
+          "Id": "c74ab98a-2147-4464-9b66-e6125fdfcad8",
+          "ApiChange": "Property",
+          "ChangedApiName": "writingToolsConfigurationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **writingToolsConfigurationState** property to the iosManagedAppProtection resource.",
+          "Target": "iosManagedAppProtection"
+        },
+        {
+          "Id": "93ab5420-f5e7-4776-a477-1bcd979845f3",
+          "ApiChange": "Property",
+          "ChangedApiName": "roleScopeTagIds",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleScopeTagIds** property to the deviceAndAppManagementRoleAssignment resource.",
+          "Target": "deviceAndAppManagementRoleAssignment"
+        },
+        {
+          "Id": "0a6f4158-c72a-430a-bbbf-b8f0952fc754",
+          "ApiChange": "Member",
+          "ChangedApiName": "visionOS",
+          "ChangeType": "Addition",
+          "Description": "Added the `visionOS` member to the **deviceType** enumeration.",
+          "Target": "deviceType"
+        },
+        {
+          "Id": "0a6f4158-c72a-430a-bbbf-b8f0952fc754",
+          "ApiChange": "Member",
+          "ChangedApiName": "tvOS",
+          "ChangeType": "Addition",
+          "Description": "Added the `tvOS` member to the **deviceType** enumeration.",
+          "Target": "deviceType"
+        }
+      ],
+      "Id": "48edf21a-eed2-4a6b-85a9-db4f61a994ce",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-30T15:58:46.2577191Z",
+      "WorkloadArea": "Microsoft.Intune.AndroidFOTA",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9ffc12f8-361e-4353-bd10-8b796a7b30b7",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearEnrollmentTimeDeviceMembershipTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the clearEnrollmentTimeDeviceMembershipTarget method to the androidDeviceOwnerEnrollmentProfile resource.",
+          "Target": "androidDeviceOwnerEnrollmentProfile"
+        },
+        {
+          "Id": "9ffc12f8-361e-4353-bd10-8b796a7b30b7",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveEnrollmentTimeDeviceMembershipTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the retrieveEnrollmentTimeDeviceMembershipTarget method to the androidDeviceOwnerEnrollmentProfile resource.",
+          "Target": "androidDeviceOwnerEnrollmentProfile"
+        },
+        {
+          "Id": "9ffc12f8-361e-4353-bd10-8b796a7b30b7",
+          "ApiChange": "Method",
+          "ChangedApiName": "setEnrollmentTimeDeviceMembershipTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the setEnrollmentTimeDeviceMembershipTarget method to the androidDeviceOwnerEnrollmentProfile resource.",
+          "Target": "androidDeviceOwnerEnrollmentProfile"
+        },
+        {
+          "Id": "a70eee0e-2e7a-4870-be12-63eff251e83f",
+          "ApiChange": "Property",
+          "ChangedApiName": "v18_0",
+          "ChangeType": "Addition",
+          "Description": "Added the **v18_0** property to the iosMinimumOperatingSystem resource.",
+          "Target": "iosMinimumOperatingSystem"
+        },
+        {
+          "Id": "a70eee0e-2e7a-4870-be12-63eff251e83f",
+          "ApiChange": "Property",
+          "ChangedApiName": "v15_0",
+          "ChangeType": "Addition",
+          "Description": "Added the **v15_0** property to the macOSMinimumOperatingSystem resource.",
+          "Target": "macOSMinimumOperatingSystem"
+        },
+        {
+          "Id": "a70eee0e-2e7a-4870-be12-63eff251e83f",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedArchitectures",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedArchitectures** property to the win32LobApp resource.",
+          "Target": "win32LobApp"
+        },
+        {
+          "Id": "a70eee0e-2e7a-4870-be12-63eff251e83f",
+          "ApiChange": "Method",
+          "ChangedApiName": "enableApplicableArchitectures",
+          "ChangeType": "Addition",
+          "Description": "Added the enableApplicableArchitectures method to the win32LobApp resource.",
+          "Target": "win32LobApp"
+        },
+        {
+          "Id": "f98109d5-0b09-4e4f-92a6-4655a95a1563",
+          "ApiChange": "Property",
+          "ChangedApiName": "securityBlockJailbrokenDevices",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityBlockJailbrokenDevices** property to the androidDeviceOwnerCompliancePolicy resource.",
+          "Target": "androidDeviceOwnerCompliancePolicy"
+        },
+        {
+          "Id": "38db07a4-c02c-43f6-9fda-3f8e9d77c30c",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPartnerToCollectIosCertificateMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowPartnerToCollectIosCertificateMetadata** property to the mobileThreatDefenseConnector resource.",
+          "Target": "mobileThreatDefenseConnector"
+        },
+        {
+          "Id": "38db07a4-c02c-43f6-9fda-3f8e9d77c30c",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPartnerToCollectIosPersonalCertificateMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowPartnerToCollectIosPersonalCertificateMetadata** property to the mobileThreatDefenseConnector resource.",
+          "Target": "mobileThreatDefenseConnector"
+        },
+        {
+          "Id": "38db07a4-c02c-43f6-9fda-3f8e9d77c30c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsRestoreDeviceEnrollmentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsRestoreDeviceEnrollmentConfiguration resource.",
+          "Target": "windowsRestoreDeviceEnrollmentConfiguration"
+        },
+        {
+          "Id": "139c0358-1eac-4274-acf6-27897ec071f0",
+          "ApiChange": "Member",
+          "ChangedApiName": "role",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `role` member from the **operationApprovalPolicyType** enumeration.",
+          "Target": "operationApprovalPolicyType"
+        },
+        {
+          "Id": "bfa5d533-7721-4db0-a2b3-8faa8f6392db",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveAndroidWorkProfileDeviceMigrationStatuses",
+          "ChangeType": "Addition",
+          "Description": "Added the retrieveAndroidWorkProfileDeviceMigrationStatuses method to the deviceManagementReports resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "2c224641-bd85-41ba-b852-23319cf23ebf",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "windowsQualityUpdateApprovalStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsQualityUpdateApprovalStatus** enumeration type.",
+          "Target": "windowsQualityUpdateApprovalStatus"
+        },
+        {
+          "Id": "2c224641-bd85-41ba-b852-23319cf23ebf",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "windowsQualityUpdatePolicyActionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsQualityUpdatePolicyActionType** enumeration type.",
+          "Target": "windowsQualityUpdatePolicyActionType"
+        },
+        {
+          "Id": "2c224641-bd85-41ba-b852-23319cf23ebf",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "windowsQualityUpdatePolicyApprovalMethodType",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsQualityUpdatePolicyApprovalMethodType** enumeration type.",
+          "Target": "windowsQualityUpdatePolicyApprovalMethodType"
+        },
+        {
+          "Id": "2c224641-bd85-41ba-b852-23319cf23ebf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bulkCatalogItemActionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the bulkCatalogItemActionResult resource.",
+          "Target": "bulkCatalogItemActionResult"
+        },
+        {
+          "Id": "2c224641-bd85-41ba-b852-23319cf23ebf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsQualityUpdateApprovalSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsQualityUpdateApprovalSetting resource.",
+          "Target": "windowsQualityUpdateApprovalSetting"
+        },
+        {
+          "Id": "2c224641-bd85-41ba-b852-23319cf23ebf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsQualityUpdateCatalogItemPolicyDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsQualityUpdateCatalogItemPolicyDetail resource.",
+          "Target": "windowsQualityUpdateCatalogItemPolicyDetail"
+        },
+        {
+          "Id": "2c224641-bd85-41ba-b852-23319cf23ebf",
+          "ApiChange": "Property",
+          "ChangedApiName": "approvalSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvalSettings** property to the windowsQualityUpdatePolicy resource.",
+          "Target": "windowsQualityUpdatePolicy"
+        },
+        {
+          "Id": "2c224641-bd85-41ba-b852-23319cf23ebf",
+          "ApiChange": "Method",
+          "ChangedApiName": "bulkAction",
+          "ChangeType": "Addition",
+          "Description": "Added the bulkAction method to the windowsQualityUpdatePolicy resource.",
+          "Target": "windowsQualityUpdatePolicy"
+        },
+        {
+          "Id": "2c224641-bd85-41ba-b852-23319cf23ebf",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveWindowsQualityUpdateCatalogItemDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the retrieveWindowsQualityUpdateCatalogItemDetails method to the windowsQualityUpdateCatalogItem resource.",
+          "Target": "windowsQualityUpdateCatalogItem"
+        },
+        {
+          "Id": "2c224641-bd85-41ba-b852-23319cf23ebf",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveWindowsQualityUpdateCatalogItemDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the retrieveWindowsQualityUpdateCatalogItemDetails method to the windowsQualityUpdatePolicy resource.",
+          "Target": "windowsQualityUpdatePolicy"
+        }
+      ],
+      "Id": "9ffc12f8-361e-4353-bd10-8b796a7b30b7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-25T18:10:12.0775836Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "48bbdba8-5331-48ba-89fc-b33950c44382",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceNameTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceNameTemplate** property to the androidDeviceOwnerEnrollmentProfile resource.",
+          "Target": "androidDeviceOwnerEnrollmentProfile"
+        },
+        {
+          "Id": "29adf73d-5e2a-4180-8f7c-847e298f78e4",
+          "ApiChange": "Property",
+          "ChangedApiName": "sizeEncryptedInBytes",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sizeEncryptedInBytes** property from the mobileAppContentFile resource.",
+          "Target": "mobileAppContentFile"
+        },
+        {
+          "Id": "29adf73d-5e2a-4180-8f7c-847e298f78e4",
+          "ApiChange": "Property",
+          "ChangedApiName": "sizeInBytes",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sizeInBytes** property from the mobileAppContentFile resource.",
+          "Target": "mobileAppContentFile"
+        },
+        {
+          "Id": "29adf73d-5e2a-4180-8f7c-847e298f78e4",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeviceInstallStatusReport",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **getDeviceInstallStatusReport** method from the deviceManagementReports resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "2e21e889-d6fb-40fa-a59e-d5bbccd98188",
+          "ApiChange": "Member",
+          "ChangedApiName": "iManage",
+          "ChangeType": "Addition",
+          "Description": "Added the `iManage` member to the **managedAppDataStorageLocation** enumeration.",
+          "Target": "managedAppDataStorageLocation"
+        },
+        {
+          "Id": "2e21e889-d6fb-40fa-a59e-d5bbccd98188",
+          "ApiChange": "Member",
+          "ChangedApiName": "egnyte",
+          "ChangeType": "Addition",
+          "Description": "Added the `egnyte` member to the **managedAppDataStorageLocation** enumeration.",
+          "Target": "managedAppDataStorageLocation"
+        },
+        {
+          "Id": "dccdb86c-3d7b-482e-8669-2c5c7a6c20d4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "managedDeviceResourceQuery",
+          "ChangeType": "Addition",
+          "Description": "Added the **managedDeviceResourceQuery** relationship to the deviceManagement resource.",
+          "Target": "deviceManagement"
+        }
+      ],
+      "Id": "48bbdba8-5331-48ba-89fc-b33950c44382",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-24T12:31:16.5554747Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "abb45158-180d-447e-93b8-cea4d18c90f7",
           "ApiChange": "Property",
           "ChangedApiName": "linuxEnrollmentAssignments",

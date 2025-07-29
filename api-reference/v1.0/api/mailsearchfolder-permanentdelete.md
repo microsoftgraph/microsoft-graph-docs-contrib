@@ -71,10 +71,6 @@ POST https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM/permanentDele
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailsearchfolderthispermanentdelete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/mailsearchfolderthispermanentdelete-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/mailsearchfolderthispermanentdelete-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,6 +85,10 @@ POST https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM/permanentDele
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/mailsearchfolderthispermanentdelete-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/mailsearchfolderthispermanentdelete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

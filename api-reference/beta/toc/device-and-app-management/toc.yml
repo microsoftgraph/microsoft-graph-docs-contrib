@@ -128,6 +128,8 @@ items:
       href: ../../api/cloudpc-setreviewstatus.md
     - name: Retrieve review status
       href: ../../api/cloudpc-retrievereviewstatus.md
+    - name: Retrieve Cloud PC count by status
+      href: ../../api/cloudpc-retrievecloudpccountbystatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
@@ -148,20 +150,6 @@ items:
       href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
-    - name: Bulk reprovision remote action (deprecated)
-      href: ../../api/manageddevice-bulkreprovisioncloudpc.md
-    - name: Bulk resize (deprecated)
-      href: ../../api/cloudpc-bulkresize.md
-    - name: Bulk restore remote action (deprecated)
-      href: ../../api/manageddevice-bulkrestorecloudpc.md
-    - name: Get remote action results (deprecated)
-      href: ../../api/manageddevice-getcloudpcremoteactionresults.md
-    - name: Get review status (deprecated)
-      href: ../../api/manageddevice-getcloudpcreviewstatus.md
-    - name: Set review status (deprecated)
-      href: ../../api/manageddevice-setcloudpcreviewstatus.md
-    - name: Bulk set review status (deprecated)
-      href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -194,7 +182,7 @@ items:
       href: ../../api/cloudpcdeviceimage-delete.md
     - name: Get source images
       href: ../../api/cloudpcdeviceimage-getsourceimages.md
-    - name: Re-upload
+    - name: Reupload
       href: ../../api/cloudpcdeviceimage-reupload.md
   - name: Cloud PC external partner setting
     items:
@@ -278,8 +266,6 @@ items:
       href: ../../api/cloudpcreports-getactionstatusreports.md
     - name: Get bulk action status reports
       href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
-    - name: Get Cloud PC recommendation reports
-      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: Get Cloud PC troubleshooting reports
       href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
     - name: Get frontline report
@@ -296,6 +282,8 @@ items:
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Retrieve Cloud PC recommendation reports
+      href: ../../api/cloudpcreports-retrievecloudpcrecommendationreports.md
     - name: Retrieve Cloud PC tenant metrics report
       href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
     - name: Retrieve cross-region disaster recovery report
@@ -306,6 +294,8 @@ items:
       href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
     - name: Get Cloud PC performance report (deprecated)
       href: ../../api/cloudpcreports-getcloudpcperformancereport.md
+    - name: Get Cloud PC recommendation reports (deprecated)
+      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: Get connection quality reports (deprecated)
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: Get shared use license usage report (deprecated)
@@ -328,8 +318,8 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
-    - name: List (deprecated)
-      href: ../../api/virtualendpoint-list-snapshots.md
+    - name: Retrieve snapshots
+      href: ../../api/cloudpc-retrievesnapshots.md
   - name: Cloud PC supported region
     items:
     - name: Cloud PC supported region
@@ -384,8 +374,6 @@ items:
       href: ../../api/virtualendpoint-list-supportedregions.md
     - name: List service plans
       href: ../../api/virtualendpoint-list-serviceplans.md
-    - name: List snapshots
-      href: ../../api/virtualendpoint-list-snapshots.md
     - name: List external partner settings
       href: ../../api/virtualendpoint-list-externalpartnersettings.md
     - name: Create external partner setting
@@ -433,6 +421,14 @@ items:
     items:
     - name: App scope
       href: ../../resources/appscope.md
+    - name: Cloud PC agent health check detail
+      href: ../../resources/cloudpcagenthealthcheckdetail.md
+    - name: Cloud PC agent health check status detail
+      href: ../../resources/cloudpcagenthealthcheckstatusdetail.md
+    - name: Cloud PC agent health check summary
+      href: ../../resources/cloudpcagenthealthchecksummary.md
+    - name: Cloud PC agent status detail
+      href: ../../resources/cloudpcagentstatusdetail.md
     - name: Cloud PC audit actor
       href: ../../resources/cloudpcauditactor.md
     - name: Cloud PC audit property
@@ -441,6 +437,8 @@ items:
       href: ../../resources/cloudpcauditresource.md
     - name: Cloud PC bulk create snapshot
       href: ../../resources/cloudpcbulkcreatesnapshot.md
+    - name: Cloud PC bulk disaster recovery
+      href: ../../resources/cloudpcbulkdisasterrecovery.md
     - name: Cloud PC bulk disaster recovery failback
       href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
     - name: Cloud PC bulk disaster recovery failover
@@ -451,6 +449,8 @@ items:
       href: ../../resources/cloudpcbulkpoweroff.md
     - name: Cloud PC bulk power on
       href: ../../resources/cloudpcbulkpoweron.md
+    - name: Cloud PC bulk reinstall agent
+      href: ../../resources/cloudpcbulkreinstallagent.md
     - name: Cloud PC bulk remote action result
       href: ../../resources/cloudpcbulkremoteactionresult.md
     - name: Cloud PC bulk reprovision
@@ -483,6 +483,8 @@ items:
       href: ../../resources/cloudpcdomainjoinconfiguration.md
     - name: Cloud PC forensic storage account
       href: ../../resources/cloudpcforensicstorageaccount.md
+    - name: Cloud PC frontline shared device detail
+      href: ../../resources/cloudpcfrontlineshareddevicedetail.md
     - name: Cloud PC health check item
       href: ../../resources/cloudpchealthcheckitem.md
     - name: Cloud PC launch info
@@ -521,8 +523,12 @@ items:
       href: ../../resources/cloudpcstatusdetail.md
     - name: Cloud PC status details
       href: ../../resources/cloudpcstatusdetails.md
+    - name: Cloud PC status summary
+      href: ../../resources/cloudpcstatussummary.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
+    - name: Cloud PC supported region restriction detail
+      href: ../../resources/cloudpcsupportedregionrestrictiondetail.md
     - name: Cloud PC user role scope tag info
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment
@@ -837,6 +843,12 @@ items:
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
       - name: createToken action
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
+      - name: setEnrollmentTimeDeviceMembershipTarget action
+        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-setenrollmenttimedevicemembershiptarget.md
+      - name: retrieveEnrollmentTimeDeviceMembershipTarget action
+        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-retrieveenrollmenttimedevicemembershiptarget.md
+      - name: clearEnrollmentTimeDeviceMembershipTarget action
+        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-clearenrollmenttimedevicemembershiptarget.md
     - name: Android for Work app
       items:
       - name: Android for Work app
@@ -4703,8 +4715,6 @@ items:
         href: ../../api/intune-raimportcerts-userpfxcertificate-create.md
       - name: Delete userPFXCertificate
         href: ../../api/intune-raimportcerts-userpfxcertificate-delete.md
-      - name: Update userPFXCertificate
-        href: ../../api/intune-raimportcerts-userpfxcertificate-update.md
     - name: VPN configuration
       items:
       - name: VPN configuration
@@ -6857,10 +6867,6 @@ items:
       items:
       - name: User experience analytics device timeline event
         href: ../../resources/intune-devices-userexperienceanalyticsdevicetimelineevent.md
-      - name: List userExperienceAnalyticsDeviceTimelineEvents
-        href: ../../api/intune-devices-userexperienceanalyticsdevicetimelineevent-list.md
-      - name: Get userExperienceAnalyticsDeviceTimelineEvent
-        href: ../../api/intune-devices-userexperienceanalyticsdevicetimelineevent-get.md
     - name: User experience analytics device without cloud identity
       items:
       - name: User experience analytics device without cloud identity
@@ -8285,6 +8291,8 @@ items:
         href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-delete.md
       - name: Update windowsQualityUpdateCatalogItem
         href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-update.md
+      - name: retrieveWindowsQualityUpdateCatalogItemDetails function
+        href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-retrievewindowsqualityupdatecatalogitemdetails.md
     - name: Complex types
       items:
       - name: All devices assignment target
@@ -8580,6 +8588,8 @@ items:
       href: ../../resources/windowsupdates-qualityupdatefilter.md
     - name: Rate driven rollout settings
       href: ../../resources/windowsupdates-ratedrivenrolloutsettings.md
+    - name: Remediation update filter
+      href: ../../resources/windowsupdates-remediationupdatefilter.md
     - name: Safeguard profile
       href: ../../resources/windowsupdates-safeguardprofile.md
     - name: Safeguard settings

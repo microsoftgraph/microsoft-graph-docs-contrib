@@ -41,7 +41,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |expiredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String|Read-only.|
 |isExtended|Boolean|Indicates whether the access package assignment is extended. Read-only.|
-|targetId|String|The ID of the subject with the assignment. Read-only.|
+|targetId|String|This property should not be used as a dependency, as it may change without notice. Instead, expand the **target** relationship and use the **objectId** property. Read-only.|
 |schedule|[requestSchedule](requestschedule.md)|When the access assignment is to be in place. Read-only.|
 
 ## Relationships

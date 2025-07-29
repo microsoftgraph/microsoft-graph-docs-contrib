@@ -37,6 +37,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Restore](../api/cloudpc-restore.md)|None|Restore a Cloud PC object to a previous state from a snapshot.|
 |[Set review status](../api/cloudpc-setreviewstatus.md)|None|Set the review status of a specific Cloud PC device using the Cloud PC ID.|
 |[Retrieve review status](../api/cloudpc-retrievereviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the [review status](../resources/cloudpcreviewstatus.md) of a Cloud PC.|
+|[Retrieve Cloud PC count by status](../api/cloudpc-retrievecloudpccountbystatus.md)|[cloudPcStatusSummary](../resources/cloudpcstatussummary.md) collection|Retrieve the [Cloud PC](../resources/cloudpc.md) count grouped by status.|
 |[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the Cloud PC devices that are attributed to the signed-in user.|
 |[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific Cloud PC.|
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
@@ -47,13 +48,6 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Create snapshot](../api/cloudpc-createsnapshot.md)|None|Create a snapshot for a specific Cloud PC device.|
 |[Retrieve snapshots](../api/cloudpc-retrievesnapshots.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Get a list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) resources for a Cloud PC.|
 |[Get frontline access state](../api/cloudpc-getfrontlinecloudpcaccessstate.md)|[frontlineCloudPcAccessState](#frontlinecloudpcaccessstate-values)|Get the access state of the frontline Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `standbyMode`, `unknownFutureValue`. The `noLicensesAvailable` member is deprecated and will stop returning on September 30, 2024.|
-|[Bulk reprovision remote action (deprecated)](../api/manageddevice-bulkreprovisioncloudpc.md) |None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs. This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [cloudPcBulkReprovision](../resources/cloudpcbulkreprovision.md) resource. |
-|[Bulk resize (deprecated)](../api/cloudpc-bulkresize.md) |[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform a bulk resize action to resize a group of Cloud PCs that have successfully passed validation (cloudPC: validateBulkResize). If any devices can't be resized, they're labeled as "resize failed", while the remaining devices are `provisioned` for the resize process. This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [cloudPcBulkResize](../resources/cloudpcbulkresize.md) resource.|
-|[Bulk restore remote action (deprecated)](../api/manageddevice-bulkrestorecloudpc.md) |[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time. This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [cloudPcBulkRestore](../resources/cloudpcbulkrestore.md) resource.|
-|[Get remote action results (deprecated)](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device. This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [retrieveCloudPcRemoteActionResults](../api/cloudpc-retrievecloudpcremoteactionresults.md) API.|
-|[Get review status (deprecated)](../api/manageddevice-getcloudpcreviewstatus.md) |[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the review status of a specific Cloud PC device by managedDeviceId. This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [cloudPC: retrieveReviewStatus](../api/cloudpc-retrievereviewstatus.md) API.|
-|[Set review status (deprecated)](../api/manageddevice-setcloudpcreviewstatus.md) |None|Set the review status of a specific Cloud PC device using the managed device ID. This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [cloudPC: setReviewStatus](../api/cloudpc-setreviewstatus.md) API.|
-|[Bulk set review status (deprecated)](../api/manageddevice-bulksetcloudpcreviewstatus.md)|None|Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices. This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [cloudPcBulkSetReviewStatus](../resources/cloudpcbulksetreviewstatus.md) resource.|
 
 ## Properties
 
@@ -80,13 +74,15 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
 |powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The power state of a Cloud PC. The possible values are: `running`, `poweredOff`, `unknown`. This property only supports shift work Cloud PCs.|
 |productType|[cloudPcProductType](#cloudpcproducttype-values)|The product type of the Cloud PC. The possible values are: `enterprise`, `frontline`, `devBox`, `powerAutomate`, `business`, `unknownFutureValue`. For the available service plans and pricing for `enterprise`, `frontline`, and `business`, see [Windows 365 for business](https://www.microsoft.com/windows-365). For pricing information for `devBox`, see [Microsoft Dev Box pricing](https://azure.microsoft.com/pricing/details/dev-box#pricing). For the available plans and pricing for `powerAutomate`, see [Power Automate pricing](https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing#compare-plans). The default value is `enterprise`. Supports `$filter` and `$select`. For more information, see [Example 4: List Cloud PCs filtered by product type](../api/virtualendpoint-list-cloudpcs.md#example-4-list-cloud-pcs-filtered-by-product-type). Read-only. |
+|provisionedDateTime|DateTimeOffset|The latest provisioned date and time, automatically generated and assigned during the initial provisioning or any subsequent reprovisioning of the Cloud PC. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`,`sharedByUser`, `sharedByEntraGroup`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `sharedByUser`, `sharedByEntraGroup`. The default value is `dedicated`. CAUTION: The `shared` member is deprecated and will stop returning on April 30, 2027； in the future, use the `sharedByUser` member. |
 |servicePlanId|String|The service plan ID of the Cloud PC.|
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
-|status|[cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `inGracePeriod`, `deprovisioning`, `failed`, `provisionedWithWarnings`, `resizing`, `restoring`, `pendingProvision`, `unknownFutureValue`, `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `preparing`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `preparing`.|
+|sharedDeviceDetail|[cloudPcFrontlineSharedDeviceDetail](../resources/cloudpcfrontlineshareddevicedetail.md)|Indicates the Cloud PC device details (for example, **assignedToUserPrincipalName**) associated with the frontline shared service plan.|
+|status|[cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `inGracePeriod`, `deprovisioning`, `failed`, `provisionedWithWarnings`, `resizing`, `restoring`, `pendingProvision`, `unknownFutureValue`, `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `preparing`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `preparing`.|
 |statusDetail|[cloudPcStatusDetail](../resources/cloudpcstatusdetail.md)|Indicates the detailed status associated with Cloud PC, including error/warning code, error/warning message, additionalInformation. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. |
 |connectionSetting|[cloudPcConnectionSetting](../resources/cloudpcconnectionsetting.md)|The connection setting of the Cloud PC. Possible values: `enableSingleSignOn`. Read Only.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
@@ -199,15 +195,17 @@ The following JSON representation shows the resource type.
   "managedDeviceId": "String",
   "managedDeviceName": "String",
   "onPremisesConnectionName": "String",
-  "powerState": "String",
   "osVersion": "String",
   "partnerAgentInstallResults": "String",
+  "powerState": "String",
+  "provisionedDateTime": "String (timestamp)",
   "provisioningPolicyId": "String",
   "provisioningPolicyName": "String",
   "provisioningType": "String",
   "servicePlanId": "String",
   "servicePlanName": "String",
   "servicePlanType": "String",
+  "sharedDeviceDetail": {"@odata.type": "microsoft.graph.cloudPcFrontlineSharedDeviceDetail"},
   "status": "String",
   "userAccountType": "String",
   "userPrincipalName": "String"

@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcprovisioningpolicy-retrievepolicyapplyschedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcprovisioningpolicy-retrievepolicyapplyschedule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpcprovisioningpolicy-retrievepolicyapplyschedule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -115,6 +111,10 @@ HTTP/1.1 200 OK
 {
     "@odata.type": "https://graph.microsoft.com/beta/$metadata#cloudPcPolicyScheduledApplyActionDetail",
     "reservePercentage": 50,
-    "cronScheduleExpression": "0 0 0 20 * *"
+    "cronScheduleExpression": "0 0 0 20 * *",
+    "nextRunDateTime": "2025-03-20 08:00:00",
+    "startDateTime": "2025-03-12 00:00:00",
+    "endDateTime": null,
+    "timezone": "cst"
 }
 ```

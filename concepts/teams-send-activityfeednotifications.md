@@ -4,7 +4,7 @@ description: "Use the Microsoft Teams activity feed notification APIs in Microso
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
-ms.date: 11/07/2024
+ms.date: 05/15/2025
 ---
 
 # Send activity feed notifications to users in Microsoft Teams
@@ -46,7 +46,7 @@ The following table describes the components.
 |Component|Description|
 |----------|-----------|
 |**Avatar**|Shows who initiated the activity.|
-|**Activity type or app icon**|The type of activity. For app notifications, the line icon is replaced with an app icon. |
+|**App icon or custom icon**|The type of activity. For app notifications, shows the source (app icon) or type of the notification (custom icon). |
 |**Title: Actor + reason**|*Actor* is the name of the user or app that initiated the activity. *Reason* describes the activity.|
 |**Timestamp**|Shows when the activity happened.|
 |**Text preview**|Shows a truncated line from the start of the notification.|
@@ -90,7 +90,7 @@ The following tabs show the types of activity feed notification cards that you c
 
 Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). The following are the requirements for sending activity feed notifications:
 
-- The Teams app manifest must have the Microsoft Entra app ID added to the `webApplicationInfo` section. For more information, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+- The Teams app manifest must have the Microsoft Entra app ID added to the `webApplicationInfo` section. For more information, see the [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - Activity notifications can be sent with or without activity types declared in the app manifest.
   - By default, you can use the activity notification APIs without declaring the `activities` section in the manifest. The `systemDefault` activity type is reserved, allowing you to provide free-form text in the `Actor+Reason` line of the activity feed notification.  For more information, see [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
   - If you want to send a templated notification in the traditional mode, activity types must be declared in the [Activities](#activities-update) section. For more information, see [Manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
@@ -218,6 +218,94 @@ For details about what topics are supported for each scenario, see the specific 
 > [!NOTE]
 > The activity icon is based on the context in which the request is made. If the request is made with delegated permissions, the user's photo appears as the avatar, while the Teams app icon appears as the activity icon. In an application-only context, the Teams app icon is used as the avatar, and the activity icon is omitted.
 
+## Custom activity icons in activity feed notifications
+
+You can use custom activity icons in activity feed notifications to help users easily identify the source and intent of the notification. A notification with a custom activity icon adds a unique and Teams-native feel, enhancing user engagement with your app. The following screenshot shows an activity feed notification with a custom activity icon.
+
+:::image type="content" source="images/custom-icon-notification-activity-feed.png" alt-text="The screenshot shows activity feed notifications with custom activity icons." lightbox="images/custom-icon-notification-activity-feed.png":::
+
+### Add custom activity icons in activity feed notifications
+
+The following steps show how to add custom activity icons in activity feed notifications sent to a user:
+
+1. Add the custom activity icons in the Teams app package. The following screenshot shows an example.
+
+    :::image type="content" source="images/teams-app-package-custom-icon.png" alt-text="The screenshot shows a Teams app package with custom activity icons for activity feed notifications." lightbox="images/teams-app-package-custom-icon.png":::
+
+1. Under *manifest.json*, set **manifestVersion** to `devPreview`.
+
+1. Under **activityTypes**, declare a list of **allowedIconIds** for the activity type you want to use custom icons.
+
+1. Declare a list of icons under **activityIcons**. Each icon must be defined with an **id** and **iconFile**. The following example shows a code snippet.
+  
+   ```json
+   "activities": {
+     "activityTypes": [
+       {
+         "type": "announcementPosted",
+         "description": "Announcement Created Activity",
+         "templateText": "Alex Wilbur posted an announcement",
+         "allowedIconIds": [
+           "announcementCreated"
+         ]
+       },
+       {
+        "type": "reaction",
+        "description": "reaction Activity",
+        "templateText": "Adele Vance reacted to your post in channel",
+        "allowedIconIds" : [
+           "likeReaction",
+           "smileReaction"
+         ]
+       }
+     ],
+     "activityIcons": [
+       {
+         "id": "announcementCreated",
+         "iconFile": "announcement.png"
+       },
+       {
+         "id": "likeReaction",
+         "iconFile": "likeReaction.png"
+       },
+       {
+         "id": "smileReaction",
+         "iconFile": "smileReaction.png"
+       }
+     ]
+   }
+   ```
+    
+   > [!NOTE]
+   > You can't declare more than 50 icons under each activity type.
+    
+   For more information about **allowedIconIds** and **activityIcons**, see [Teams public developer preview app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview#activitiesactivitytypes).
+
+1. Call the notifications API beta endpoint and include the **iconId** attribute in the payload. The value of the **iconId** must match one of the icon IDs in the **allowedIconIds** for the specified activity type.
+  
+   ```http
+   POST https://graph.microsoft.com/beta/users/0000000-0000-0000-0000-000000000000/teamwork/sendactivitynotification
+   
+   {
+     "topic": {
+       "source": "text",
+       "value": "Loop thread",
+       "webUrl": "https://teams.microsoft.com/l/loopthread/00:000000000000000000000000000.v2"
+     },
+     "activityType": "announcementPosted",
+     "previewText": {
+       "content": "new announcement posted"
+     },
+     "iconId" : "announcementCreated"
+   }
+   ```
+
+For custom activity icon design guidelines, see [Teams Store validation guidelines for custom icons](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines#custom-activity-icons). 
+
+To try out custom activity icons in activity feed notifications in Teams, see [Microsoft Graph activity feed sample app for JavaScript](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/nodejs) or [Microsoft Graph activity feed sample app for C#](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp).
+
+## Examples
+
 ### Example 1: Notify a user about a task created in a chat
 
 The following example shows how you can send an activity feed notification for a new task created in a chat. In this case, the Teams app must be installed in a chat with Id `chatId` and user `569363e2-4e49-4661-87f2-16f245c5d66a` must also be part of the chat.
@@ -258,10 +346,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/chat-sendactivitynotification-for-task-created-in-chat-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/chat-sendactivitynotification-for-task-created-in-chat-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -340,10 +424,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-task-created-in-teams-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-task-created-in-teams-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -430,10 +510,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-customer-task-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-customer-task-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/team-sendactivitynotification-customer-task-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -505,10 +581,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-about-event-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-about-event-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -585,10 +657,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-channelmember-about-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-channelmember-about-event-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/team-sendactivitynotification-channelmember-about-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -663,10 +731,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/chat-sendactivitynotification-chatmember-about-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/chat-sendactivitynotification-chatmember-about-event-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/chat-sendactivitynotification-chatmember-about-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -708,7 +772,6 @@ HTTP/1.1 204 No Content
 The following example shows how to send an activity feed notification to multiple users in bulk. This example notifies multiple stakeholders about pending finance approval requests.
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -755,10 +818,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/teamwork-sendactivitynotificationtorecipients-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/teamwork-sendactivitynotificationtorecipients-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -843,10 +902,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-take-a-break-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-take-a-break-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/team-sendactivitynotification-take-a-break-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -870,8 +925,6 @@ Content-Type: application/json
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/v1/team-sendactivitynotification-take-a-break-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
@@ -940,5 +993,3 @@ The settings appear after the Teams app sends the first notification. This reduc
 - [Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)
 - [Send activity feed notifications .NET sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)
 - [Send activity feed notifications Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/nodejs)
-
-

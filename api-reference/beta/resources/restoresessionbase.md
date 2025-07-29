@@ -8,6 +8,7 @@ ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Restore session
 ms.date: 11/25/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # restoreSessionBase resource type
@@ -19,6 +20,9 @@ Namespace: microsoft.graph
 Represents a restore session for a [protection unit](protectionunitbase.md) that's protected by a [protection policy](protectionpolicybase.md). Restore session APIs are used by global admins, SharePoint Online admins, and Exchange Online admins to perform restore-related tasks on artifacts that are protected as part of protection policy.
 
 Restoring to both a new location and the same URL in a single restore session isn't supported.
+
+> [!NOTE]
+> Restore sessions that are older than one year and in a terminal state are removed.
 
 ## Methods
 

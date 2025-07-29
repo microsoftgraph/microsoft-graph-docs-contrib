@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.topic: concept-article
 ms.subservice: non-product-specific
-ms.date: 02/21/2025
+ms.date: 04/02/2025
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 #Customer intent: As a developer, I want to learn how to effeciently apply both server-side and client-side paging to my Microsoft Graph queries.
@@ -35,7 +35,7 @@ When there's at least one more page of data available, Microsoft Graph returns a
 
 ### Client-side paging
 
-In client-side paging, a client app specifies the number of results it wants Microsoft Graph to return in a single page by using the [$top](query-parameters.md#top-parameter), [$skip](query-parameters.md#skip-parameter), or [$skipToken](query-parameters.md#skiptoken-parameter) query parameters. Support for client-side paging, including the number of results that the client can request for in a single page depends on the API and the query being performed. For example, the `/users` endpoint supports `$top` but not `$skip`.
+In client-side paging, a client app specifies the number of results it wants Microsoft Graph to return in a single page by using the [$top](query-parameters.md#top), [$skip](query-parameters.md#skip), or [$skipToken](query-parameters.md#skiptoken) query parameters. Support for client-side paging, including the number of results that the client can request for in a single page depends on the API and the query being performed. For example, the `/users` endpoint supports `$top` but not `$skip`.
 
 The rest of this article describes how to implement client-side paging.
 
@@ -54,10 +54,6 @@ GET https://graph.microsoft.com/v1.0/users?$top=5
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/paging-top-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/paging-top-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -102,6 +98,10 @@ Paging behavior varies across different Microsoft Graph APIs. Consider the follo
 - Not all resources or relationships support paging. For example, queries against [directoryRole](/graph/api/resources/directoryrole) don't support paging. This includes reading role objects themselves and role members.
 - When paging against [directory resources](/graph/api/resources/directoryObject), any custom request headers (headers that aren't Authorization or Content-Type headers) such as the **ConsistencyLevel** header aren't included by default in subsequent page requests. If those headers need to be sent on subsequent requests, you must set them explicitly.
 - When using the `$count=true` query string when querying against [directory resources](/graph/api/resources/directoryObject), the `@odata.count` property is returned only in the first page of the paged result set.
+
+## Error handling
+
+[!INCLUDE [paging-error-handling](includes/paging-error-handling.md)]
 
 ## Related content
 

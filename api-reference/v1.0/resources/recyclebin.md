@@ -12,7 +12,7 @@ ms.date: 12/10/2024
 
 Namespace: microsoft.graph
 
-Represents a container for a collection of [recycleBinItem](recyclebinitem.md) resources in a SharePoint [site](site.md) or a SharePoint Embedded [fileStorageContainer](filestoragecontainer.md).
+Represents a container for a collection of [recycleBinItem](recyclebinitem.md) resources in a SharePoint Embedded [fileStorageContainer](filestoragecontainer.md).
 
 Inherits from [baseItem](baseitem.md).
 
@@ -20,7 +20,7 @@ Inherits from [baseItem](baseitem.md).
 
 | Method                                                  | Return Type                                                 | Description                                                                              |
 |:-----------------------------------|:------------------------------------|:--------------------------------------------------------|
-| [List items](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md). |
+| [List items](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint Embedded [fileStorageContainer](filestoragecontainer.md). |
 
 ## Properties
 

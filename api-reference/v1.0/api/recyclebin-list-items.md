@@ -1,7 +1,7 @@
 ---
 author: "vanshisingh"
 title: "List items"
-description: "Get a collection of recycleBinItem resources in the recycleBin of the specified SharePoint site."
+description: "Get a collection of recycleBinItem resources in the recycleBin of the specified SharePoint Embedded fileStorageContainer."
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: apiPageType
@@ -12,9 +12,9 @@ ms.date: 12/10/2024
 
 Namespace: microsoft.graph
 
-Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md).
+Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint Embedded [fileStorageContainer](../resources/filestoragecontainer.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /sites/{siteId}/recycleBin/items
+GET /storage/fileStorage/containers/{containerId}/recycleBin/items
 ```
 
 ## Optional query parameters
@@ -52,24 +52,20 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request to list all **recycleBinItem** resources under a specific site.
+The following example shows a request to list all **recycleBinItem** resources under a specific SharePoint Embedded fileStorageContainer.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_recycleBinItem",
-  "sampleKeys": ["contoso.sharepoint.com,48f1898f-77d9-4a1b-bddc-1f49bb6dc134,7206fc09-e4af-48b3-8730-ed7321396d7a"]
+  "sampleKeys": ["b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z"]
 }-->
 ``` http
-GET https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com,48f1898f-77d9-4a1b-bddc-1f49bb6dc134,7206fc09-e4af-48b3-8730-ed7321396d7a/recycleBin/items
+GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/recycleBin/items
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-recyclebinitem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-recyclebinitem-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

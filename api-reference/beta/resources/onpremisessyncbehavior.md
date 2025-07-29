@@ -1,0 +1,53 @@
+---
+title: "onPremisesSyncBehavior resource type"
+description: "Indicates the state of synchronization for a directory object between the cloud and on-premises Active Directory."
+author: "rubytek-git"
+ms.date: 06/30/2025
+ms.localizationpriority: medium
+ms.subservice: "entra-directory-management"
+doc_type: resourcePageType
+---
+
+# onPremisesSyncBehavior resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Indicates the state of synchronization for a directory object and its settings between the cloud and on-premises Active Directory. Only the [group](../resources/group.md) resource is supported.
+
+Inherits from [entity](../resources/entity.md).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get](../api/onpremisessyncbehavior-get.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Read the properties and relationships of an onPremisesSyncBehavior object.|
+|[Update](../api/onpremisessyncbehavior-update.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Update the properties of an onPremisesSyncBehavior object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|The object ID of the parent object. Read-only. Inherits from [entity](../resources/entity.md)|
+|isCloudManaged|Boolean|Indicates the state of synchronization for an object between the cloud and on-premises Active Directory. This object defines whether the source of authority for a directory object and its settings is on-premises Active Directory or Microsoft Entra ID.|
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.onPremisesSyncBehavior",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.onPremisesSyncBehavior",
+  "id": "String (identifier)",
+  "isCloudManaged": "Boolean"
+}
+```
+

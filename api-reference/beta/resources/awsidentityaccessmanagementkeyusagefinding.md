@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 The IAM access key age represents the number of keys that haven't been used in the over 90 days.
 
 
@@ -67,4 +69,5 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
 

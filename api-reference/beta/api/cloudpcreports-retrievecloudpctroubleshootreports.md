@@ -51,6 +51,7 @@ The following table lists the parameters that you can use with this action.
 |Parameter|Type|Description|
 |:--------|:---|:----------|
 |filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `gt` ,`ge`, and `eq`. Optional.|
+|groupBy|String collection|A list of columns that describe how to group the data in the report. Optional.|
 |orderBy|String collection|Specifies the order by column name. Optional.|
 |reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `unknownFutureValue`, `troubleshootIssueCountReport`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `troubleshootIssueCountReport`. The default value is `troubleshootDetailsReport`.|
 |search|String|The search string. Optional.|
@@ -176,10 +177,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsretrievecloudpctroubleshootreports-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsretrievecloudpctroubleshootreports-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

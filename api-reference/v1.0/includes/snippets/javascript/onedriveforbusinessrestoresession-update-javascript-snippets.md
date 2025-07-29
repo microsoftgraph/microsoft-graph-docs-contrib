@@ -13,19 +13,19 @@ const client = Client.init(options);
 const oneDriveForBusinessRestoreSession = {
   'driveRestoreArtifacts@delta': [
     {
-      restorePoint: { '@odata.id': '1b014d8c-71fe-4d00-a01a-31850bc5b32c' }, //Create a new drive restore artifact and add it under the Restore Session.
+      restorePoint: { id: '1b014d8c-71fe-4d00-a01a-31850bc5b32c' }, //Create a new drive restore artifact and add it under the Restore Session.
       destinationType: 'new'
     },
     {
-      restorePoint: { '@odata.id': '2b014d8c-71fe-4d00-a01a-31850bc5b32' },
+      restorePoint: { id: '2b014d8c-71fe-4d00-a01a-31850bc5b32' },
       destinationType: 'new'
     },
     {
-      restorePoint: { '@odata.id': '3b014d8c-71fe-4d00-a01a-31850bc5b32c' },
+      restorePoint: { id: '3b014d8c-71fe-4d00-a01a-31850bc5b32c' },
       destinationType: 'new'
     },
     {
-      restorePoint: { '@odata.id': '4b014d8c-71fe-4d00-a01a-31850bc5b32c' },
+      restorePoint: { id: '4b014d8c-71fe-4d00-a01a-31850bc5b32c' },
       destinationType: 'new'
     },
     {

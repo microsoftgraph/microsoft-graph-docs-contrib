@@ -14,6 +14,9 @@ Namespace: microsoft.graph.callRecords
 
 Get the list of [participant](../resources/callrecords-participant.md) objects associated with a [callRecord](../resources/callrecords-callrecord.md).
 
+> [!NOTE]
+> A known issue related to missing participants is associated with this API. For details, see [Known issues](https://developer.microsoft.com/graph/known-issues?search=31852).
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -76,10 +79,6 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/614e3ff0-4728-43
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-callrecord-participants-v2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-callrecord-participants-v2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

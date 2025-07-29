@@ -5,7 +5,7 @@ author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 04/07/2024
 ---
 
 # Update x509CertificateAuthenticationMethodConfiguration
@@ -47,6 +47,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Defines strong authentication configurations. This configuration includes the default authentication mode and the different rules for strong authentication bindings. |
+|certificateAuthorityScopes|[x509CertificateAuthorityScope](../resources/x509certificateauthorityscope.md) collection|Defines configuration to allow a group of users to use certificates from specific issuing certificate authorities to successfully authenticate. |
 |certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Microsoft Entra user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
 |crlValidationConfiguration|[x509CertificateCRLValidationConfiguration](../resources/x509certificatecrlvalidationconfiguration.md)|Determines whether certificate based authentication should fail if the issuing CA doesn't have a valid certificate revocation list configured. |
 |issuerHintsConfiguration|[x509CertificateIssuerHintsConfiguration](../resources/x509certificateissuerhintsconfiguration.md)|Determines whether issuer(CA) hints are sent back to the client side to filter the certificates shown in certificate picker. |
@@ -113,6 +114,18 @@ Content-Type: application/json
         "state": "disabled",
         "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": []
     },
+    "certificateAuthorityScopes": [
+        {
+            "subjectKeyIdentifier": "aaaaaaaabbbbcccc111122222222222222333333",
+            "publicKeyInfrastructureIdentifier": "Contoso PKI",
+            "includeTargets": [
+            {
+                "id": "aaaaaaaa-bbbb-cccc-1111-222222222222",
+                "targetType": "group"
+            }
+            ]
+        }    
+    ],
     "includeTargets": [
         {
             "targetType": "group",
@@ -125,10 +138,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-x509certificateauthenticationmethodconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-x509certificateauthenticationmethodconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

@@ -71,6 +71,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Not supported.  | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported.  | Not supported.  |
+|[Microsoft Entra Health monitoring alert](../resources/healthmonitoring-alert.md) <br />`/reports/healthmonitoring/alerts`| HealthMonitoringAlertConfig.ReadWrite.All | Not supported. | HealthMonitoringAlertConfig.ReadWrite.All |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported.  | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
 |[offerShiftRequest](../resources/offershiftrequest.md) <br />`/teams/{id}/schedule/offerShiftRequests` <br />Changes to any offer shift request in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported. | Schedule.Read.All, Schedule.ReadWrite.All |
@@ -88,6 +89,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported.  |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 |[virtualEventWebinar](../resources/virtualeventwebinar.md) | VirtualEvent.Read | Not supported. | VirtualEvent.Read.All |
+|[virtualEventTownhall](../resources/virtualeventtownhall.md) | VirtualEvent.Read | Not supported. | VirtualEvent.Read.All |
 |[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported.  |
 
 > [!NOTE]
@@ -125,7 +127,7 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 Subscriptions on **onlineMeetings** and **presence** require the **encryptionCertificate** and **encryptionCertificateId** property when [creating a subscription](/graph/webhooks-with-resource-data#creating-a-subscription) for notifications with encrypted resource data. For more information, see [setting up change notifications to include resource data](/graph/webhooks-with-resource-data).
 For details about online meeting subscriptions, see [Get change notifications for online meetings](/graph/changenotifications-for-onlinemeeting).
 
-### virtualEventWebinar
+### virtualEventWebinar and virtualEventTownhall
 
 Subscriptions on virtual events support only basic notifications and are limited to a few entities of a virtual event. For more information about the supported subscription types, see [Get change notifications for Microsoft Teams virtual event updates](/graph/changenotifications-for-virtualevent).
 
@@ -186,10 +188,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-subscription-from-subscriptions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-subscription-from-subscriptions-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -242,6 +240,7 @@ The following are valid values for the resource property.
 |[event](../resources/event.md)|`me/events`|
 |[group](../resources/group.md)|`groups`|
 |[group conversation](../resources/conversation.md)|`groups('{id}')/conversations`|
+|[health monitoring alert](../resources/healthmonitoring-alert.md)|`reports/healthmonitoring/alerts`|
 |[list](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[message](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[onlineMeeting](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`|

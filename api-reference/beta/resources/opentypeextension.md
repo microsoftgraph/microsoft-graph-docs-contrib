@@ -29,10 +29,12 @@ The following resource support open extensions:
 <!--+ [administrativeUnit](/graph/api/resources/administrativeunit)-->
 + [contact](/graph/api/resources/contact)
 + [device](/graph/api/resources/device)
++ [driveItem](driveitem.md)
 + [event](/graph/api/resources/event) for both user and group calendars
 + [message](/graph/api/resources/message)
 + [organization](/graph/api/resources/organization)
 + [post](/graph/api/resources/post)
++ [site](site.md)
 + [todoTask](todotask.md) 
 + [todoTaskList](todotasklist.md)
 + [baseTaskList](basetasklist.md) (deprecated)
@@ -42,6 +44,14 @@ The following resource support open extensions:
 
 For more information about Microsoft Graph extensibility including limits for open extensions, see [Add custom properties to resources using extensions](/graph/extensibility-overview) and [Add custom data to users using open extensions](/graph/extensibility-open-users).
 
+### Drive item-specific considerations
+
+Apply the following limits when you create extension resources on **driveItem** objects:
+- A maximum of 100 custom extensions per item totaled across all apps.
+- A maximum of five custom extensions per app ID.
+- A maximum size of 50 KB per extension.
+- A maximum total size of 50 MB for all extensions across all items.
+
 ### Outlook-specific considerations
 
 Each open extension on an Outlook resource (event, message, or personal contact) is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties). When you create open extensions for Outlook, consider that MAPI named properties are a finite resource in a user's mailbox. When a user's named property quota is exhausted, you can't create anymore named properties for that user. This can result in unexpected behavior from clients that rely on named properties to function.
@@ -49,7 +59,15 @@ Each open extension on an Outlook resource (event, message, or personal contact)
 Apply the following guidelines when you create open extensions on Outlook resources:
 
 - Create the minimum number of extensions required. Most applications should require no more than one extension. Extensions have no defined properties or structure, so you can store multiple values in a single extension.
-- Avoid naming extensions in a variable manner (such as based on user input, etc.). Each time an open extension is created with a new name that hasn't been used in a user's mailbox before, a new MAPI named property is created. Removing the extension doesn't remove the named property.
+- Avoid naming extensions in a variable manner, such as based on user input. Each time an open extension is created with a new name that hasn't been used in a user's mailbox before, a new MAPI named property is created. Removing the extension doesn't remove the named property.
+
+### Site-specific considerations
+
+Apply the following limits when you create extension resources on **site** objects:
+- A maximum character length of 4,000 characters for the extension value.
+- A maximum character length of 36 characters for the extension key.
+- A maximum of 100 custom extensions per site object.
+- A maximum of five custom extensions per app ID.
 
 ### Use open extensions (for Outlook resources) or extended properties
 
@@ -60,10 +78,10 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [baseTask](basetask.md), [baseTaskList](basetasklist.md)[contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
-|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
-|[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
-|[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [baseTask](basetask.md), [baseTaskList](basetasklist.md)[contact](contact.md), [driveItem](driveitem.md), [event](event.md), [message](message.md), [post](post.md), [site](site.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an **openTypeExtension** object. | Create an **openTypeExtension** object in an existing or new resource instance.|
+|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read the properties and relationships of an **openTypeExtension** object.|
+|[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update an **openTypeExtension** object. |
+|[Delete](../api/opentypeextension-delete.md) | None |Delete an **openTypeExtension** object. |
 
 ## Properties
 

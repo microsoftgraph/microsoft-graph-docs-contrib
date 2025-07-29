@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Restore a deleted [fileStorageContainer](../resources/filestoragecontainer.md) from the deleted container collection.  
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -73,10 +73,6 @@ POST https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers/b!IS
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/filestoragecontainerthisrestore-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/filestoragecontainerthisrestore-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

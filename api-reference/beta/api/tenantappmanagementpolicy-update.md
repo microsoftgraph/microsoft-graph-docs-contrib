@@ -131,7 +131,17 @@ Content-Type: application/json
             "nonDefaultUriAddition": {
                 "restrictForAppsCreatedAfterDateTime": "2024-01-01T10:37:00Z",
                 "excludeAppsReceivingV2Tokens": true,
-                "excludeSaml": true
+                "excludeSaml": true,
+                "excludeActors": {
+                    "customSecurityAttributes": [
+                        {
+                            "@odata.type": "microsoft.graph.customSecurityAttributeStringValueExemption",
+                            "id": "PolicyExemptions_AppManagementExemption",
+                            "operator": "equals",
+                            "value": "ExemptFromIdentifierUriAdditionRestriction"
+                        }
+                    ]
+                }
             }
         }
     }
@@ -140,10 +150,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-tenantappmanagementpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-tenantappmanagementpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

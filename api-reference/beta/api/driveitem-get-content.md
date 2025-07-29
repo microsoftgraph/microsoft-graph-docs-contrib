@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_get_content" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-get-content-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -40,11 +42,13 @@ GET /sites/{siteId}/drive/items/{item-id}/content
 GET /users/{userId}/drive/items/{item-id}/content
 ```
 
-## Optional request headers
+## Request headers
 
-| Name          | Value  | Description                                                                                                                                              |
-|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
+| Name                          | Description                                                                                                                                                                                                                                                                                                                  |
+|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Authorization                 | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).                                                                                                                                                                                                                    |
+| If-None-Match                 | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. Optional.                                                                                                                                                           |
+| Prefer: forceInfectedDownload | If provided, the request can download an infected file. For delegated requests, if the tenant setting **DisallowInfectedFileDownload** is enabled, only tenant administrators or global administrators might download the file. Application-only requests download an infected file regardless of tenant settings. Optional. |
 
 ## Example
 
@@ -61,10 +65,6 @@ GET /me/drive/items/{item-id}/content
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/download-item-content-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/download-item-content-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

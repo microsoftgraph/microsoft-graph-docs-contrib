@@ -22,7 +22,7 @@ Update an open extension ([openTypeExtension](../resources/opentypeextension.md)
 
 The data in an extension can be primitive types or arrays of primitive types. The operation behaves differently for resources that are directory objects vs other resources.
 
-See the table in the [Permissions](#permissions) section for the list of resources that support open extensions.
+For the list of resources that support open extensions, see the table in the [Permissions](#permissions) section.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -32,19 +32,21 @@ Depending on the resource that the extension was created in and the permission t
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [baseTasklist](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported | Device.ReadWrite.All |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported. | Device.ReadWrite.All |
+| [driveItem](../resources/driveitem.md) | Files.ReadWrite | Files.ReadWrite | Not supported. |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [group](../resources/group.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
-| [group event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
-| [group post](../resources/post.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
+| [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
+| [group event](../resources/event.md) | Group.ReadWrite.All | Not supported. | Not supported. |
+| [group post](../resources/post.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
+| [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported. | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [user](../resources/user.md) | User.ReadWrite | Not supported | User.ReadWrite.All |
+| [site](../resources/site.md) | Sites.ReadWrite.All | Not supported. | Not supported. |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [user](../resources/user.md) | User.ReadWrite | Not supported. | User.ReadWrite.All |
+| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [baseTasklist](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 
 ## HTTP request
 
@@ -67,6 +69,8 @@ PATCH /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 PATCH /users/me/todo/lists/{listId}/extensions/{extensionId}
 PATCH /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 PATCH /users/me/tasks/lists/{listId}/extensions/{extensionId}
+PATCH /drive/items/{itemId}/extensions/{extensionId}
+PATCH /sites/{siteId}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to update an extension in it. 
@@ -239,10 +243,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-opentypeextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-opentypeextension-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-opentypeextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -299,6 +299,121 @@ Content-Type: application/json
 }
 ```
 
+****
+
+#### Request 3
+The following example shows how to update an open extension on a **driveItem**.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_opentypeextension_3",
+  "sampleKeys": ["01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ", "Com.Contoso.Estimate"]
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/drive/items/01FWCEC553UUOHTOAGBVE2IXBQTIZY3JZQ/extensions/Com.Contoso.Estimate
+Content-type: application/json
+
+{
+  "extensionName": "newExtensionName",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-opentypeextension-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-opentypeextension-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-opentypeextension-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-opentypeextension-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-opentypeextension-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-opentypeextension-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-opentypeextension-3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response 3
+
+The following example shows the response that includes the updated **extensionName** in the extension.
+
+<!-- {  
+  "blockType": "response",  
+  "truncated": true,  
+  "@odata.type": "microsoft.graph.openTypeExtension"  
+} --> 
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "extensionId",
+  "extensionName": "newExtensionName",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
+}
+```
+
+
+#### Request 4
+
+The following example shows how to update an open extension on a **site**.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_opentypeextension_4",
+  "sampleKeys": ["8f52f9ad-4f4f-4739-b682-7c0283207937", "Com.Contoso.Estimate"]
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/sites/8f52f9ad-4f4f-4739-b682-7c0283207937/extensions/Com.Contoso.Estimate
+Content-type: application/json
+
+{
+  "extensionName": "newExtensionName",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
+}
+```
+
+#### Response 4
+
+The following example shows the response that includes the updated **extensionName** in the extension.
+
+<!-- {  
+  "blockType": "response",  
+  "truncated": true,  
+  "@odata.type": "microsoft.graph.openTypeExtension"  
+} --> 
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "extensionId",
+  "extensionName": "newExtensionName",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
+}
+```
+
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -313,5 +428,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

@@ -5,12 +5,22 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 12/31/2024
+ms.date: 07/03/2025
+ms.custom: sfi-ropc-nochange
 ---
 
 # Enum values
 
 Namespace: microsoft.graph
+
+### readingCoachStoryType values
+
+|Member|
+|:---|
+|aiGenerated|
+|readWorks|
+|userProvided|
+|unknownFutureValue|
 
 ### changeAnnouncementChangeType values
 
@@ -361,6 +371,7 @@ Namespace: microsoft.graph
 | microsoftEntraIdGovernance |
 | microsoftEntraWorkloadId |
 | unknownFutureValue |
+| aatp |
 
 ### recommendationCategory values
 
@@ -369,6 +380,7 @@ Namespace: microsoft.graph
 | identityBestPractice |
 | identitySecureScore |
 | unknownFutureValue |
+| mdiSecureScore |
 
 ### recommendationFeatureAreas values
 
@@ -401,6 +413,10 @@ Namespace: microsoft.graph
 | dismissed |
 | postponed |
 | unknownFutureValue |
+| riskAccepted |
+| thirdParty |
+| planned |
+| alternateMitigation |
 
 ### recommendationType values
 
@@ -3424,6 +3440,7 @@ Possible values for user account types (group membership), per Windows definitio
 | driveItem |
 | user |
 | teamsChannel|
+| plannerTask|
 
 ### plannerPlanContextType values
 
@@ -4242,6 +4259,7 @@ Possible values for user account types (group membership), per Windows definitio
 | federatedSingleFactor |
 | federatedMultiFactor |
 | unknownFutureValue |
+| qrCodePin |
 
 ### baseAuthenticationMethod values
 
@@ -4983,6 +5001,26 @@ Possible values for user account types (group membership), per Windows definitio
 | logoutUrl |
 | unknownFutureValue |
 
+### signUpIdentifierType values 
+
+|Member|
+|:---|
+|emailAddress|
+|unknownFutureValue|
+
+### signUpStage values 
+
+|Member|
+|:---|
+|credentialCollection|
+|credentialValidation|
+|credentialFederation|
+|consent|
+|attributeCollectionAndValidation|
+|userCreation|
+|tenantConsent|
+|unknownFutureValue|
+
 ### nativeAuthenticationApisEnabled values
 
 | Member |
@@ -4990,6 +5028,52 @@ Possible values for user account types (group membership), per Windows definitio
 | none |
 | all |
 | unknownFutureValue |
+
+### whatIfAnalysisReasons values 
+
+|Member|
+|:---|
+|notSet|
+|notEnoughInformation|
+|invalidCondition|
+|users|
+|workloadIdentities|
+|application|
+|userActions|
+|authenticationContext|
+|devicePlatform|
+|devices|
+|clientApps|
+|location|
+|signInRisk|
+|emptyPolicy|
+|invalidPolicy|
+|policyNotEnabled|
+|userRisk|
+|time|
+|insiderRisk|
+|authenticationFlow|
+|unknownFutureValue|
+
+### insiderRiskLevel values 
+
+
+|Member|
+|:---|
+|none|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+
+### userAction values 
+
+
+|Member|
+|:---|
+|registerSecurityInformation|
+|registerOrJoinDevices|
+|unknownFutureValue|
 
 ### callEventType values
 
@@ -5026,84 +5110,6 @@ Possible values for user account types (group membership), per Windows definitio
 |false|
 |true|
 |unknownFutureValue|
-
-### changeItemService values
-
-|Member|
-|:---|
-|accessReviews|
-|appProxy|
-|audit|
-|authenticationsLogins|
-|azureADDomainServices|
-|b2B|
-|b2CConsumerIdentityManagement|
-|conditionalAccess|
-|deviceAccessManagement|
-|deviceRegistrationandManagement|
-|directoryManagement|
-|enterpriseApps|
-|entitlementManagement|
-|groupManagement|
-|identityProtection|
-|internetAccess|
-|lifecycleWorkflows|
-|linkedIn|
-|managedidentitiesforAzureresources|
-|mfA|
-|microsoftAuthenticatorApp|
-|microsoftIdentityManager|
-|msGraph|
-|myApps|
-|myProfileAccount|
-|na|
-|o365Groups|
-|other|
-|privateAccess|
-|privilegedIdentityManagement|
-|provisioning|
-|rbac|
-|reporting|
-|roles|
-|selfServicePasswordReset|
-|sovereignClouds|
-|termsofUse|
-|userAccessManagement|
-|userExperienceandManagement|
-|userManagement|
-|microsoftEntraDomainServices|
-|verifiedId|
-|unknownFutureValue|
-
-### changeItemState values
-
-|Member|
-|:---|
-|available|
-|comingSoon|
-|unknownFutureValue|
-
-### roadmapItemDeliveryStage values
-
-|Member|
-|:---|
-|privatePreview|
-|publicPreview|
-|ga|
-|unknownFutureValue|
-
-### changeAnnouncementChangeType values 
-
-|Member|
-|:---|
-|breakingChange|
-|deprecation|
-|endOfSupport|
-|featureChange|
-|other|
-|retirement|
-|securityIncident|
-|uxChange|
 
 ### restoreJobType values 
 
@@ -5142,6 +5148,26 @@ Possible values for user account types (group membership), per Windows definitio
 |tls_client_auth_san_email|
 |unknownFutureValue|
 
+### mailFolderOperationStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### errorCorrectionLevel values 
+
+|Member|
+|:---|
+|l|
+|m|
+|q|
+|h|
+|unknownFutureValue|
+
 ### protectionSource values 
 
 |Member|
@@ -5150,3 +5176,114 @@ Possible values for user account types (group membership), per Windows definitio
 |manual|
 |dynamicRule|
 |unknownFutureValue|
+
+### organizationAllowedAudiences values 
+
+|Member|
+|:---|
+|me|
+|organization|
+|federatedOrganizations|
+|everyone|
+|unknownFutureValue|
+
+### educationSpeechType values 
+
+|Member|
+|:---|
+|informative|
+|personal|
+|persuasive|
+|unknownFutureValue|
+
+### engagementConversationMessageReactionType values
+
+| Member           |
+|:-----------------|
+| like             |
+| love             |
+| celebrate        |
+| thank            |
+| laugh            |
+| sad              |
+| happy            |
+| excited          |
+| smile            |
+| silly            |
+| intenseLaugh     |
+| starStruck       |
+| goofy            |
+| thinking         |
+| surprised        |
+| mindBlown        |
+| scared           |
+| crying           |
+| shocked          |
+| angry            |
+| agree            |
+| praise           |
+| takingNotes      |
+| heartBroken      |
+| support          |
+| confirmed        |
+| watching         |
+| brain            |
+| medal            |
+| bullseye         |
+| unknownFutureValue |
+
+### notificationEventsType values 
+
+|Member|
+|:---|
+|none|
+|restoreAndPolicyUpdates|
+|unknownFutureValue|
+
+### notificationRecipientsType values 
+
+|Member|
+|:---|
+|none|
+|globalAdmins|
+|backupAdmins|
+|custom|
+|allAdmins|
+|unknownFutureValue|
+
+### cloudPcPolicyTimezone values 
+
+| Member             | Value | Description                                                                                                   |
+| ------------------ | ----- | ------------------------------------------------------------------------------------------------------------- |
+| gmt                | 0     | Default. Indicates the time zone is associated with Greenwich Mean Time(UTC+00:00).                           |
+| bit                | 1     | Indicates the time zone is associated with Baker Island Time(UTC-12:00).                                      |
+| nut                | 2     | Indicates the time zone is associated with Niue Time(UTC-11:00).                                              |
+| hst                | 3     | Indicates the time zone is associated with Hawaii–Aleutian Standard Time(UTC-10:00).                          |
+| mit                | 4     | Indicates the time zone is associated with Marquesas Islands Time(UTC-09:30).                                 |
+| akst               | 5     | Indicates the time zone is associated with Alaska Standard Time(UTC-09:00).                                   |
+| pst                | 6     | Indicates the time zone is associated with Pacific Standard Time(UTC-08:00).                                  |
+| mst                | 7     | Indicates the time zone is associated with Mountain Standard Time(UTC-07:00).                                 |
+| east               | 8     | Indicates the time zone is associated with Easter Island Standard Time(UTC-06:00).                            |
+| est                | 9     | Indicates the time zone is associated with Eastern Standard Time(UTC-05:00).                                  |
+| ast                | 10    | Indicates the time zone is associated with Atlantic Standard Time(UTC-04:00).                                 |
+| nst                | 11    | Indicates the time zone is associated with Newfoundland Standard Time(UTC-03:30).                             |
+| art                | 12    | Indicates the time zone is associated with Argentina Time(UTC-03:00).                                         |
+| gst                | 13    | Indicates the time zone is associated with South Georgia and the South Sandwich Islands Time(UTC-02:00).      |
+| azot               | 14    | Indicates the time zone is associated with Azores Standard Time(UTC-01:00).                                   |
+| cet                | 15    | Indicates the time zone is associated with Central European Time(UTC+01:00).                                  |
+| cat                | 16    | Indicates the time zone is associated with Central Africa Time(UTC+02:00).                                    |
+| eat                | 17    | Indicates the time zone is associated with East Africa Time(UTC+03:00).                                       |
+| get                | 18    | Indicates the time zone is associated with Georgia Standard Time(UTC+04:00).                                  |
+| pkt                | 19    | Indicates the time zone is associated with Pakistan Standard Time(UTC+05:00).                                 |
+| ist                | 20    | Indicates the time zone is associated with India Standard Time(UTC+05:30).                                    |
+| bst                | 21    | Indicates the time zone is associated with Bangladesh Standard Time(UTC+06:00).                               |
+| tha                | 22    | Indicates the time zone is associated with Thailand Standard Time(UTC+07:00).                                 |
+| cst                | 23    | Indicates the time zone is associated with China Standard Time(UTC+08:00).                                    |
+| jst                | 24    | Indicates the time zone is associated with Japan Standard Time(UTC+09:00).                                    |
+| acst               | 25    | Indicates the time zone is associated with Australian Central Standard Time(UTC+09:30).                       |
+| pgt                | 26    | Indicates the time zone is associated with Papua New Guinea Time(UTC+10:00).                                  |
+| sbt                | 27    | Indicates the time zone is associated with Solomon Islands Time(UTC+11:00).                                   |
+| fjt                | 28    | Indicates the time zone is associated with Fiji Time(UTC+12:00).                                              |
+| tot                | 29    | Indicates the time zone is associated with Tonga Time(UTC+13:00).                                             |
+| lint               | 30    | Indicates the time zone is associated with Line Islands Time(UTC+14:00).                                      |
+| unknownFutureValue | 31    | Evolvable enumeration sentinel value. Do not use.                                                             |

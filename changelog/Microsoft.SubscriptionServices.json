@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {          
+          "Id": "328d2cc7-658f-45c8-98ab-d4907eb21c89",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alert",
+          "ChangeType": "Addition",
+          "Description": "Enabled [change notifications](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) for the Microsoft Entra Health monitoring [alert](https://learn.microsoft.com/en-us/graph/api/resources/healthmonitoring-alert?view=graph-rest-beta) resource.",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "328d2cc7-658f-45c8-98ab-d4907eb21c89",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-15T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {          
           "Id": "d626e42d-c075-44ae-82f3-cbf957370223",
           "ApiChange": "Parameter",
           "ChangedApiName": "subscription",

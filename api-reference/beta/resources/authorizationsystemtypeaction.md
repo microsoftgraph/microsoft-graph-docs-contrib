@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents an action in an authorization system onboarded to Permissions Management. The following resource types are derived from this base type: 
 - [awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) resource type
 - [azureAuthorizationSystemTypeAction](../resources/azureauthorizationsystemtypeaction.md) resource type
@@ -59,4 +61,5 @@ The following JSON representation shows the resource type.
   "actionType": "String"
 }
 ```
+
 

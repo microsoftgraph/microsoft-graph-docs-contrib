@@ -79,10 +79,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-presence-multiple-users-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-presence-multiple-users-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-presence-multiple-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,10 +93,6 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-presence-multiple-users-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-presence-multiple-users-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -135,7 +127,8 @@ Content-Length: 1574
          "outOfOfficeSettings":{
             "message":null,
             "isOutOfOffice":false
-         }
+         },
+         "sequenceNumber": "A0129311063"
       },
       {
          "id":"66825e03-7ef5-42da-9069-724602c31f6b",
@@ -144,7 +137,8 @@ Content-Length: 1574
          "outOfOfficeSettings":{
             "message":null,
             "isOutOfOffice":true
-         }
+         },
+         "sequenceNumber": "C0129312363"
       }
    ]
 }
@@ -163,5 +157,3 @@ Content-Length: 1574
   ]
 }
 -->
-
-
