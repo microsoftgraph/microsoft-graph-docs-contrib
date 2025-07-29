@@ -111,7 +111,7 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-The payload for channel membership events where the **resource** property points to a member of a channel.
+The above payload for channel membership events where the **resource** property refers to a channel member.
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
@@ -202,7 +202,7 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-In the channel indirect membership notification payload, the **resource** property points to the [allMembers](/api-reference/v1.0/api/channel-list-allmembers.md) endpoint instead of the [members](/api-reference/v1.0/api/channel-list-members.md) endpoint.
+In the above channel indirect membership notification payload, the **resource** property points to the [allMembers](/api-reference/v1.0/api/channel-list-allmembers.md) endpoint instead of the [members](/api-reference/v1.0/api/channel-list-members.md) endpoint.
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
