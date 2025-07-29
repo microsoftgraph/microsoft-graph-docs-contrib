@@ -94,7 +94,6 @@ DELETE https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteri
 
 ---
 
-
 ### Response
 
 The following example shows the response.

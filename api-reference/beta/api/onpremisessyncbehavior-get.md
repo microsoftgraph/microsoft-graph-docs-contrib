@@ -1,6 +1,6 @@
 ---
 title: "Get onPremisesSyncBehavior"
-description: "Read the properties and relationships of an onPremisesSyncBehavior object."
+description: "Read the properties of an onPremisesSyncBehavior object."
 author: "rubytek-git"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md) object. The **isCloudManaged** property indicates whether the object’s source of authority is set to the cloud. If `true`, updates from on-premises Active Directory are blocked in the cloud; if `false`, updates from on-premises Active Directory are allowed in the cloud and object can be taken over by the on-premises Active Directory.
+Read the properties of an [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md) object. The **isCloudManaged** property indicates whether the object's source of authority is set to the cloud. If `true`, updates from on-premises Active Directory are blocked in the cloud; if `false`, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/onpremisessyncbehavior-get-permissions.md)]
 
 > [!IMPORTANT]
-> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation: *Groups Administrator* (least privilege), *Hybrid Administrator*.
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *Hybrid Administrator* is the least privileged role supported for this operation.
 
 ## HTTP request
 
@@ -62,6 +62,7 @@ If successful, this method returns a `200 OK` response code and an [onPremisesSy
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_onpremisessyncbehavior"
@@ -70,6 +71,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/groups/673f83c9-7e84-4db8-9a63-b8a8c309fdad/onPremisesSyncBehavior
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-onpremisessyncbehavior-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

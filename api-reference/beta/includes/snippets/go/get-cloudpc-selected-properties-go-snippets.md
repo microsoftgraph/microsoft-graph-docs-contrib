@@ -16,7 +16,7 @@ import (
 )
 
 requestParameters := &graphdevicemanagement.VirtualEndpointCloudPCsItemRequestBuilderGetQueryParameters{
-	Select: [] string {"id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult","allotmentDisplayName","deviceRegionName","productType"},
+	Select: [] string {"id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult","allotmentDisplayName","deviceRegionName","productType","provisionedDateTime","sharedDeviceDetail"},
 }
 configuration := &graphdevicemanagement.VirtualEndpointCloudPCsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

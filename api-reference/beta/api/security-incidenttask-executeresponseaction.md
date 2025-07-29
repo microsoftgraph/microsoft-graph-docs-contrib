@@ -56,6 +56,7 @@ If successful, this method returns a `204 No Content` response code. If a status
 ## Examples
 
 ### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "postincidenttaskexecuteresponseaction"
@@ -64,6 +65,32 @@ If successful, this method returns a `204 No Content` response code. If a status
 ``` http
 POST https://graph.microsoft.com/beta/security/incidentTasks/213213/executeResponseAction
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/postincidenttaskexecuteresponseaction-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/postincidenttaskexecuteresponseaction-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/postincidenttaskexecuteresponseaction-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/postincidenttaskexecuteresponseaction-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/postincidenttaskexecuteresponseaction-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/postincidenttaskexecuteresponseaction-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 <!-- {
