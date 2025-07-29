@@ -5,6 +5,7 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.subservice: teams
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # teamworkActivityTopic resource type

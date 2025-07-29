@@ -19,10 +19,10 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-requestParameters := &graphusers.ItemEventItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.EventsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"subject","body","bodyPreview","organizer","attendees","start","end","location","hideAttendees"},
 }
-configuration := &graphusers.ItemEventItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.EventsItemRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

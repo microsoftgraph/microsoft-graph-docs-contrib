@@ -5,6 +5,7 @@ author: "Veena11"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete platformCredentialAuthenticationMethod
@@ -23,7 +24,7 @@ The following tables show the least privileged permission or permissions require
 
 ### Permissions acting on self
 
-<!-- { "blockType": "permissions", "name": "platformcredentialauthenticationmethod_delete" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/platformcredentialauthenticationmethod-delete-permissions.md)]
 
 ### Permissions acting on other users
@@ -40,6 +41,8 @@ To delete your own Platform Credential authentication method:
 ``` http
 DELETE /me/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 To delete your own or another user's Platform Credential authentication method:
 <!-- { "blockType": "ignored" } -->
@@ -78,10 +81,6 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/pla
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-platformcredentialauthenticationmethod-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-platformcredentialauthenticationmethod-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

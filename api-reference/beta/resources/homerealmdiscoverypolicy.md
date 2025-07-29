@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "nickludwig"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 07/05/2024
 ---
 
 # homeRealmDiscoveryPolicy resource type

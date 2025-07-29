@@ -5,6 +5,7 @@ author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 06/27/2024
 ---
 
 # cloudPcBulkDisasterRecoveryFailover resource type

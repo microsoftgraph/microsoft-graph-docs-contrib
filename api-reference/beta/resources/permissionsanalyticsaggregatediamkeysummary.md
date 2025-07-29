@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # permissionsAnalyticsAggregatedIamKeySummary resource type
@@ -13,6 +14,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 Represents the total number of IAM keys and the number of a specific finding for that IAM Key in an authorization system.
 
@@ -39,4 +42,5 @@ The following JSON representation shows the resource type.
   "findingsCountOverLimit": "Integer"
 }
 ```
+
 

@@ -3,8 +3,9 @@ title: "contentApprovalRule resource type"
 description: "Represents a rule for governing the automatic creation of content approvals."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 08/31/2024
 ---
 
 # contentApprovalRule resource type
@@ -20,7 +21,7 @@ Inherits from [complianceChangeRule](../resources/windowsupdates-compliancechang
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|contentFilter|[microsoft.graph.windowsUpdates.contentFilter](../resources/windowsupdates-contentfilter.md)|A filter to determine which content matches the rule on an ongoing basis.|
+|contentFilter|[microsoft.graph.windowsUpdates.contentFilter](../resources/windowsupdates-contentfilter.md)|A filter to determine which content matches the rule on an ongoing basis. |
 |createdDateTime|DateTimeOffset|The date and time when the rule was created. Inherited from [microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md).|
 |durationBeforeDeploymentStart|Duration|The time before the deployment starts represented in ISO 8601 format for durations.|
 |lastEvaluatedDateTime|DateTimeOffset|The date and time when the rule was last evaluated. Inherited from [microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md).|

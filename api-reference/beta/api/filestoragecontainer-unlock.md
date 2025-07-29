@@ -1,10 +1,11 @@
 ---
 title: "fileStorageContainer: unlock"
-description: "Unlock a fileStorageContainer."
+description: "Unlock a fileStorageContainer for users and application-only identities to allow the addition, updating, and deletion of content."
 author: "javieralvarezchiang"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 10/04/2024
 ---
 
 # fileStorageContainer: unlock
@@ -13,9 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) to allow users to add, update, or delete content.
+Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) for users and application-only identities to allow the addition, updating, and deletion of content.
 
 This action updates the value of the **lockState** property.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -26,10 +29,12 @@ When delegated permissions are used, only members in the `owner` role can call t
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_unlock" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-unlock-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
+
 ## HTTP request
 
 ``` http
-POST /storageContainers/{containerId}/unlock
+POST /storage/fileStorage/containers/{containerId}/unlock
 ```
 
 ## Request headers
@@ -51,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows how to unlock a **fileStorageContainer**.
 
 ``` http
-POST https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/unlock
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/unlock
 ```
 
 ### Response

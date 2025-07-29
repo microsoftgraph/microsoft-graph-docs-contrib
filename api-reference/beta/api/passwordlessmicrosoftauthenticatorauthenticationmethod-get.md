@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Get passwordlessMicrosoftAuthenticatorAuthenticationMethod (deprecated)
@@ -44,6 +45,8 @@ Get details of your own Microsoft Authenticator Passwordless Phone Sign-in authe
 GET /me/authentication/passwordlessMicrosoftAuthenticatorMethods/{id}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Get details of your own or another user's Microsoft Authenticator Passwordless Phone Sign-in authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http
@@ -79,10 +82,6 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordlessMicrosoftAuth
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-passwordlessmicrosoftauthenticatorauthenticationmethod-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-passwordlessmicrosoftauthenticatorauthenticationmethod-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Get certificateBasedAuthConfiguration
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "certificatebasedauthconfiguration_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedauthconfiguration-get-permissions.md)]
+
+[!INCLUDE [rbac-cert-based-auth-config-apis](../includes/rbac-for-apis/rbac-cert-based-auth-config-apis.md)]
 
 ## HTTP request
 
@@ -62,10 +65,6 @@ GET https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfi
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-certificatebasedauthconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-certificatebasedauthconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

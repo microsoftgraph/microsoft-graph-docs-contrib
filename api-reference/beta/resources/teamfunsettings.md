@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "MSFTRickyCastaneda"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/16/2024
 ---
 
 # teamFunSettings resource type
@@ -22,6 +23,9 @@ Settings to configure use of Giphy, memes, and stickers in the [team](team.md).
 |giphyContentRating|String (enum)|Giphy content rating. Possible values are: `moderate`, `strict`.|
 |allowStickersAndMemes|Boolean|If set to true, enables users to include stickers and memes.|
 |allowCustomMemes|Boolean|If set to true, enables users to include custom memes.|
+
+## Relationships
+None.
 
 ## JSON representation
 

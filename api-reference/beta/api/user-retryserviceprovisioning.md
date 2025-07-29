@@ -1,10 +1,11 @@
 ---
 title: "user: retryServiceProvisioning"
-description: "Retries user service provisioning."
+description: "Retry the provisioning of a user object in Microsoft Entra ID."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
 ms.subservice: entra-users
 doc_type: "apiPageType"
+ms.date: 04/18/2024
 ---
 
 # user: retryServiceProvisioning
@@ -13,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retry the [user](../resources/user.md) service provisioning.
+Retry the provisioning of a [user](../resources/user.md) object in Microsoft Entra ID.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -62,10 +63,6 @@ POST https://graph.microsoft.com/beta/users/{id}/retryServiceProvisioning
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-retryserviceprovisioning-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-retryserviceprovisioning-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

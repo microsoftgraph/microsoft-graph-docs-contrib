@@ -5,6 +5,7 @@ author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "security"
+ms.date: 06/11/2024
 ---
 
 # Update healthIssue
@@ -77,10 +78,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-healthissue-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-healthissue-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

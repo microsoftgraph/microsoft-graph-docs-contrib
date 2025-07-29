@@ -5,6 +5,7 @@ author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 07/22/2024
 ---
 
 # List permissionGrantPreApprovalPolicies for a servicePrincipal
@@ -65,10 +66,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/permissionGrantPreAp
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-permissiongrantpreapprovalpolicies-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-get-permissiongrantpreapprovalpolicies-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

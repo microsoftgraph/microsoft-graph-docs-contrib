@@ -5,6 +5,7 @@ author: "sureshja"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
 # Remove tokenLifetimePolicies

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # emailAddress resource type
@@ -20,6 +21,9 @@ Represents the name and SMTP address of an entity instance, for example, a messa
 |:---------------|:--------|:----------|
 |address|String|The email address of an entity instance.|
 |name|String|The display name of an entity instance.|
+
+## Relationships
+None.
 
 ## JSON representation
 

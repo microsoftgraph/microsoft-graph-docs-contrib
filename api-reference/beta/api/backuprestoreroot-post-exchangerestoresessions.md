@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 11/10/2024
 ---
 
 # Create exchangeRestoreSession
@@ -82,11 +83,11 @@ Content-Type: application/json
 {
   "mailboxRestoreArtifacts": [
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "destinationType": "inPlace"
     },
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
       "destinationType": "inPlace"
     }
   ]
@@ -95,10 +96,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/exchangerestoresession-create-mailboxrestoreartifacts-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/exchangerestoresession-create-mailboxrestoreartifacts-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -145,6 +142,13 @@ Content-Type: application/json
   "@odata.context": "/solutions/backupRestore/$metadata#exchangeRestoreSessions/$entity",
   "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
   "status": "draft",
+  "restoreJobType": "standard",
+  "restoreSessionArtifactCount": {
+    "total": 2,
+    "completed": 0,
+    "inProgress": 0,
+    "failed": 0
+  },
   "createdBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -191,7 +195,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.exchangeRestoreSession",
   "granularMailboxRestoreArtifacts": [
     {
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "destinationType": "inPlace",
       "searchResponseId" : "M2UyZDAwMDAwMDMxMzkzYTMyNj"
     }
@@ -201,10 +205,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/exchangerestoresession-create-granularmailboxrestoreartifacts-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/exchangerestoresession-create-granularmailboxrestoreartifacts-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -251,6 +251,13 @@ Content-Type: application/json
   "@odata.context": "/solutions/backupRestore/$metadata#exchangeRestoreSessions/$entity",
   "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
   "status": "draft",
+  "restoreJobType": "standard",
+  "restoreSessionArtifactCount": {
+    "total": 2,
+    "completed": 0,
+    "inProgress": 0,
+    "failed": 0
+  },
   "createdBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -277,7 +284,7 @@ Content-Type: application/json
   "granularMailboxRestoreArtifact": [
     {
       "id": "959ba739-70b5-43c4-8c90-b2c22014f18a",
-      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
       "restoredFolderId": null,
       "status": "added",
       "startDateTime": null,

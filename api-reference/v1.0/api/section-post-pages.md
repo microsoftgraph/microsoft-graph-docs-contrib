@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.subservice: "onenote"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Create page
@@ -92,10 +93,6 @@ Content-Type:application/pdf
 
 --MyPartBoundary198374--
 ```
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/section-post-pages-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/section-post-pages-javascript-snippets.md)]

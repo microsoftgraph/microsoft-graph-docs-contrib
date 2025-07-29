@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # deviceEnrollmentConfigurationType enum type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -33,3 +34,4 @@ Describes the TemplateFamily for the Template entity
 |singlePlatformRestriction|10|Indicates that configuration is of type single platform restriction which refers to types of devices a user is allowed to enroll.|
 |unknownFutureValue|11|Unknown future value|
 |enrollmentNotificationsConfiguration|12|Indicates that configuration is of type Enrollment Notification which refers to types of notification a user receives during enrollment.|
+|windowsRestore|13|Indicates the configuration is of type Windows Restore which refers to the tenant level Windows Backup and Restore settings a user receives during out-of-box experience (OOBE) Windows enrollment|

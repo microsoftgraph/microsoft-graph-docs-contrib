@@ -1,16 +1,17 @@
 ---
-title: "Microsoft Graph connectors SDK best practices"
+title: "Microsoft 365 Copilot connectors SDK best practices"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Apply best practices when you use the Microsoft Graph connectors SDK."
+description: "Apply best practices when you use the Copilot connectors SDK."
+ms.date: 11/07/2024
 ---
 
-# Microsoft Graph connectors SDK best practices
+# Copilot connectors SDK best practices
 
-This article provides best practices to follow when you use the Microsoft Graph connectors SDK to implement a custom connector.
+This article provides best practices to follow when you use the Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) SDK to implement a custom connector.
 
 ## Using the crawl progress marker
 
@@ -24,7 +25,7 @@ Both periodic full and incremental crawls have their crawl progress markers.
 
 ### Usage of the crawl progress marker during periodic full crawls
 
-The SDK sends the crawl progress marker if the previous crawl crashed or a scheduled crawl was missed due to the Microsoft Graph connector agent being offline during periodic full crawls.
+The SDK sends the crawl progress marker if the previous crawl crashed or a scheduled crawl was missed due to the Copilot connector agent being offline during periodic full crawls.
 
 If the previous crawl did not crash, you have to crawl the data source from the beginning.
 

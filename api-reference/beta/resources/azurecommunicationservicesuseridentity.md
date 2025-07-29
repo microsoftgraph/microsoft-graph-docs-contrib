@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # azureCommunicationServicesUserIdentity resource type
@@ -24,6 +25,9 @@ Inherits from [identity](identity.md).
 | azureCommunicationServicesResourceId | String |  The Azure Communication Services resource ID associated with the user. |
 | displayName | String | The display name associated with the user. Inherited from **identity**. |
 | id | String | The unique identifier for the user. Inherited from **identity**. |
+
+## Relationships
+None.
 
 ## JSON representation
 

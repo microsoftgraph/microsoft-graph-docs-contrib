@@ -5,6 +5,7 @@ author: "sacsai"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 07/08/2024
 ---
 
 # recommendation: tenantSecureScores
@@ -60,10 +61,6 @@ GET https://graph.microsoft.com/beta/directory/recommendations/tenantSecureScore
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/recommendationthistenantsecurescores-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/recommendationthistenantsecurescores-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

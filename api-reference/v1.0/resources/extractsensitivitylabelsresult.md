@@ -5,6 +5,7 @@ author: "abhishek-microsoft-2021"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # extractSensitivityLabelsResult resource type

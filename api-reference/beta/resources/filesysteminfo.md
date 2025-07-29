@@ -5,6 +5,7 @@ title: fileSystemInfo resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: onedrive
+ms.date: 03/06/2024
 ---
 
 # fileSystemInfo resource type
@@ -43,6 +44,9 @@ If the file's content is updated and these properties are not provided, **lastMo
 **lastAccessedDateTime** is not available for items in SharePoint online or OneDrive for Business.
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
+
+## Relationships
+None.
 
 ## JSON representation
 

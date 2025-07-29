@@ -18,7 +18,7 @@ var requestBody = new GetRemoteConnectionHistoricalReportsPostRequestBody
 		"SignOutDateTime",
 		"UsageInHour",
 		"RoundTripTimeInMsP50",
-		"AvailableBandwidthInMBpsP50",
+		"AvailableBandwidthInMbpsP50",
 		"RemoteSignInTimeInSec",
 	},
 	Top = 25,

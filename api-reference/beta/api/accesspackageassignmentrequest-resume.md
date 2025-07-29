@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vikama-microsoft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/05/2024
 ---
 
 # accessPackageAssignmentRequest: resume
@@ -16,7 +17,7 @@ Resume a user's access package request after waiting for a callback from a custo
 
 In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action. It's performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** is in a `WaitingForCallback` state.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -24,8 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_resume" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-resume-permissions.md)]
 
-> [!IMPORTANT]
-> App-only access can be authorized *without* granting the `EntitlementManagement.ReadWrite.All` application permission to the caller. Instead, assign the caller an [Entitlement Management role](/entra/id-governance/entitlement-management-delegate), where `Access package assignment manager` is the least privileged role supported for this operation. For more information on how to assign an Entitlement Management role, see [Create unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md#example-4-create-a-role-assignment-with-access-package-catalog-scope) or [Delegate access governance to access package managers in entitlement management](/entra/id-governance/entitlement-management-delegate-managers#as-a-catalog-owner-delegate-to-an-access-package-manager).
+[!INCLUDE [rbac-entitlement-access-package-assignment-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-assignment-manager-apis-write.md)]
 
 ## HTTP request
 
@@ -97,10 +97,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/accesspackageassignmentrequestthisresume-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/accesspackageassignmentrequestthisresume-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignmentrequestthisresume-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -165,6 +161,76 @@ Content-Type: application/json
 }
 ```
 
+
+### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Resume an access package assignment request
+
+#### Request
+
+The following example shows a request of a call to resume an access package assignment request that's waiting for a callback.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "accesspackageassignmentrequestthis.resume_custom_extension"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/0e60f18c-b2a0-4887-9da8-da2e30a39d99/resume
+Content-Type: application/json
+
+{
+  "source": "Contoso.AADProcess",
+  "type": "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated",
+  "data": {
+    "@odata.type": "microsoft.graph.accessPackageRequestApprovalStageCallbackConfiguration",
+    "stage": "assignmentRequestCreated",
+    "customExtensionStageInstanceId": "7bf58d34-b3f9-4bae-8deb-abcd25cddea1",
+    "customExtensionStageInstanceDetail": "Completed."
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accesspackageassignmentrequestthisresume-custom-extension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignmentrequestthisresume-custom-extension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignmentrequestthisresume-custom-extension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accesspackageassignmentrequestthisresume-custom-extension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/accesspackageassignmentrequestthisresume-custom-extension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackageassignmentrequestthisresume-custom-extension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/accesspackageassignmentrequestthisresume-custom-extension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

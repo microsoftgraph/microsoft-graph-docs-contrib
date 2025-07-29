@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphsecurity.SecurityCasesEdiscoveryCaseItemNoncustodialDataSourceItemRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.CasesEdiscoveryCasesItemNoncustodialDataSourcesItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"dataSource"},
 }
-configuration := &graphsecurity.SecurityCasesEdiscoveryCaseItemNoncustodialDataSourceItemRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.CasesEdiscoveryCasesItemNoncustodialDataSourcesItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

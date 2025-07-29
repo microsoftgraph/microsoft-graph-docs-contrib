@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/06/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Create certificateBasedAuthConfiguration
@@ -16,7 +18,7 @@ Namespace: microsoft.graph
 Create a new [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.
 
 > [!NOTE]
-> Only a single instance of a **certificateBasedAuthConfiguration** can be created (the collection can only have one member). It always has a fixed ID with a value of '29728ade-6ae4-4ee9-9103-412912537da5'.
+> Only a single instance of a **certificateBasedAuthConfiguration** can be created (the collection can only have one member). It always has a fixed ID with a value of `29728ade-6ae4-4ee9-9103-412912537da5`.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -27,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "certificatebasedauthconfiguration_post_certificatebasedauthconfiguration" } -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration-permissions.md)]
 
-For delegated scenarios, the calling user must have the *Global Administrator* [Microsoft Entra role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+[!INCLUDE [rbac-cert-based-auth-config-apis](../includes/rbac-for-apis/rbac-cert-based-auth-config-apis.md)]
 
 ## HTTP request
 
@@ -84,10 +86,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

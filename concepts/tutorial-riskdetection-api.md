@@ -1,38 +1,38 @@
 ---
-title: "Identify and remediate risk by using identity protection APIs"
-description: "Learn how to generate a risky sign-in and remediate the risk status of the user with a conditional access policy that requires multifactor authentication (MFA)."
+title: Identify and remediate risk by using ID Protection APIs
+description: Learn how to use Microsoft Entra ID Protection APIs to identify and remediate identity-based risks, ensuring the security of user accounts.
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Etan.Basseri
 ms.localizationpriority: medium
 ms.subservice: entra-sign-in
-ms.date:  03/26/2024
-#Customer intent: As a developer integrating with Microsoft Graph, I want to use Microsoft Entra ID Protection to identify and remediate identity-based risks, so that I can ensure the security of user accounts and protect against unauthorized access.
+ms.date: 03/17/2025
+
+#customer intent: As a developer, I want to identify and remediate identity-based risks using ID Protection APIs so that I can ensure the security of user accounts.
 ---
 
 # Identify and remediate risks by using identity protection APIs
 
-Microsoft Entra ID Protection provides organizations insight into identity-based risk and different ways to investigate and automatically remediate risk. The Identity Protection APIs used in this tutorial can help you identify risk and configure a workflow to confirm compromise or enable remediation.
+Microsoft Entra ID Protection offers organizations insights into identity-based risks and methods to investigate and automatically remediate these risks. This tutorial guides you through using ID Protection APIs to identify risks and set up workflows for confirming compromises or enabling remediation.
 
-In this tutorial, you learn how to use identity protection APIs to:
+In this tutorial, you learn how to use ID Protection APIs to:
 > [!div class="checklist"]
 > * Generate a risky sign-in.
-> * Allow users with risky sign-ins to remediate the risk status with a conditional access policy that requires multi-factor authentication (MFA).
-> * Block a user from signing in using a conditional access policy.
+> * Allow users with risky sign-ins to remediate the risk status with a Conditional Access policy that requires multi-factor authentication (MFA).
+> * Block a user from signing in using a Conditional Access policy.
 > * Dismiss a user risk.
 
 ## Prerequisites
 
-To complete this tutorial, you need the following resources and privileges:
-
-- A working Microsoft Entra tenant with a Microsoft Entra ID P1 or P2 license.
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has at least the *Conditional Access Administrator* role.
-- Grant yourself the following delegated permissions: `IdentityRiskEvent.Read.All`, `IdentityRiskyUser.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ConditionalAccess`, and `User.ReadWrite.All`.
-- A test user account that you use to sign in later to an anonymous session to trigger a risk detection. You can use a private browsing session or the Tor browser. In this tutorial, the test user mail nickname is `MyTestUser1`.
+To complete this tutorial, ensure you have:
+- A Microsoft Entra tenant with a Microsoft Entra ID P1 or P2 license.
+- Access to an API client like [Graph Explorer](https://aka.ms/ge), signed in with an account that has the *Conditional Access Administrator* role.
+- The following delegated permissions: *IdentityRiskEvent.Read.All*, *IdentityRiskyUser.ReadWrite.All*, *Policy.Read.All*, *Policy.ReadWrite.ConditionalAccess*, and *User.ReadWrite.All*.
+- A test user account to sign in to an anonymous session to trigger a risk detection. Use a private browsing session or the Tor browser. In this tutorial, the test user mail nickname is `MyTestUser1`.
 
 ## Step 1: Trigger a risk detection
 
-In the anonymous browser session, sign in as **MyTestUser1** to **entra.microsoft.com**.
+In the anonymous browser session, sign in to the [Microsoft Entra admin centre](https://entra.microsoft.com) as `MyTestUser1`.
 
 ## Step 2: List risk detections
 
@@ -51,10 +51,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-riskdetection-get-riskdetections-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-riskdetection-get-riskdetections-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -90,6 +86,9 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
   "@odata.type": "microsoft.graph.riskDetection"
 } -->
 ```http
+HTTP/1.1 20O OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#riskDetections",
   "value": [
@@ -128,20 +127,20 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 }
 ```
 
-## Step 3: Create a conditional access policy
+## Step 3: Create a Conditional Access policy
 
-You can use conditional access policies in your organization to allow users to self-remediate when risk is detected. Self-remediation enables your users to unblock themselves to access their resources securely after completing the policy prompt. In this step, you create a conditional access policy that requires the user to sign in using MFA if a medium or high risk detection occurs.
+Conditional Access policies allow users to self-remediate when a risk is detected, enabling them to securely access resources after completing the policy prompt. In this step, you'll create a Conditional Access policy that requires users to sign in using MFA if a medium or high-risk detection occurs.
 
 ### Set up multifactor authentication
 
-When setting up an account for MFA, you can choose from several methods for authenticating the user. Choose the best method for your situation to complete this tutorial. 
+When setting up an account for MFA, choose the best authentication method for your situation.
 
 1. Sign in to the [keep your account secure](https://aka.ms/MFASetup) site using the **MyTestUser1** account.
 2. Complete the MFA setup procedure using the appropriate method for your situation, such as using the Microsoft Authenticator app.
 
-### Create the conditional access policy
+### Create the Conditional Access policy
 
-The conditional access policy allows you to set the conditions of the policy to identify sign-in risk levels. Risk levels can be `low`, `medium`, `high`, `none`. The following example shows how to require MFA for sign ins with medium and high risk levels.
+The Conditional Access policy lets you set conditions to identify sign-in risk levels. Risk levels can be `low`, `medium`, `high`, or `none`. The following example shows how to require MFA for sign-ins with medium and high risk levels.
 
 #### Request 
 
@@ -184,10 +183,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-riskdetection-create-conditionalaccesspolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-riskdetection-create-conditionalaccesspolicy-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-riskdetection-create-conditionalaccesspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -221,6 +216,9 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.conditionalAccessPolicy"
 } -->
 ```
+HTTP/1.1 201 Created
+Content-type: application/json
+
 { 
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity", 
   "id": "9ad78153-b1f8-4714-adc1-1445727678a8", 
@@ -270,7 +268,7 @@ Content-type: application/json
 
 ## Step 4: Trigger another risky sign in but complete multifactor authentication 
 
-By signing in to the anonymous browser, a risk was detected, but you remediated it by completing MFA. 
+By signing in to the anonymous browser, a risk is detected, but you remediate it by completing MFA. 
 
 Sign in to **entra.microsoft.com** using the **MyTestUser1** account and complete the MFA process. 
 
@@ -280,7 +278,7 @@ Rerun the request in Step 2 to get the latest risk detection for the **MyTestUse
 
 ## [Optional] Block the user from signing in
 
-Instead of providing the opportunity for the user to self-remediate, you can block the user who is associated with a risky sign in from signing in. In this step, you create a new conditional access policy that blocks the user from signing in if a medium or high risk detection occurs. The difference in between this policy and the preview policy in Step 3 is that the **builtInControls** is now set to `block`.
+If you prefer to block users associated with risky sign-ins instead of allowing self-remediation, create a new Conditional Access policy. This policy will block users from signing in if a medium or high-risk detection occurs. The key difference from the policy in Step 3 is that the **builtInControls** is now set to `block`.
 
 ### Request
 
@@ -323,10 +321,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-riskdetection-block-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-riskdetection-block-user-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-riskdetection-block-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -360,6 +354,9 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.conditionalAccessPolicy"
 } -->
 ```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity",
   "id": "9ad78153-b1f8-4714-adc1-1445727678a8",
@@ -407,13 +404,13 @@ Content-type: application/json
 }
 ```
 
-With this conditional access policy in place, **MyTestUser1** account is now blocked from signing in because the sign-in risk level is `medium` or `high`.
+With this Conditional Access policy in place, **MyTestUser1** account is now blocked from signing in due to a medium or high sign-in risk level.
 
 ![Blocked sign-in](./images/tutorials-identity/tutorial-risk-detection.conditionalaccess-policy.png)
 
 ## Step 6: Dismiss risky users
 
-If you believe the user isn't at risk, and you don't want to enforce a conditional access policy, you can manually dismiss the risky user. The request returns a `204 No Content` response.
+If you believe the user isn't at risk and don't want to enforce a Conditional Access policy, manually dismiss the risky user as shown in the following request. The request returns a `204 No Content` response.
 
 ### Request
 
@@ -435,10 +432,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-riskdetection-riskyusersdismiss-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-riskdetection-riskyusersdismiss-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -471,7 +464,7 @@ After dismissing the risk user, you can rerun the request in Step 2 and will not
 
 ## Step 7: Clean up resources
 
-In this step, you delete the two conditional access policies that you created. The request returns a `204 No Content` response.
+In this step, delete the two Conditional Access policies you created. The request returns a `204 No Content` response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -484,10 +477,6 @@ DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/9ad7
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-riskdetection-delete-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-riskdetection-delete-group-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

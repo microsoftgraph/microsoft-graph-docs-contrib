@@ -5,6 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete accessPackageAssignmentRequestWorkflowExtension
@@ -25,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequestworkflowextension_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequestworkflowextension-delete-permissions.md)]
+
+[!INCLUDE [rbac-for-logic-apps-write](../includes/rbac-for-apis/rbac-entitlement-management-logic-apps-apis-write.md)]
 
 ## HTTP request
 
@@ -68,10 +71,6 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-accesspackageassignmentrequestworkflowextension-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-accesspackageassignmentrequestworkflowextension-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

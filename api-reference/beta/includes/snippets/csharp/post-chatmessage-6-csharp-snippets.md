@@ -14,7 +14,7 @@ var requestBody = new ChatMessage
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "<div><div>\n<div><span><img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span>\n\n</div>\n\n\n</div>\n</div>",
+		Content = "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">",
 	},
 	HostedContents = new List<ChatMessageHostedContent>
 	{

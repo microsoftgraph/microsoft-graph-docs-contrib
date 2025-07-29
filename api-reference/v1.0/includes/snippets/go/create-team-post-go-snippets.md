@@ -18,8 +18,10 @@ import (
 requestBody := graphmodels.NewTeam()
 displayName := "My Sample Team"
 requestBody.SetDisplayName(&displayName) 
-description := "My Sample Team’s Description"
+description := "My sample team’s description"
 requestBody.SetDescription(&description) 
+firstChannelName := "My first channel of the sample team"
+requestBody.SetFirstChannelName(&firstChannelName) 
 additionalData := map[string]interface{}{
 	"template@odata.bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')", 
 }

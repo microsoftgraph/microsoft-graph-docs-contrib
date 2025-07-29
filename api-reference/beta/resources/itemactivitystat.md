@@ -16,30 +16,6 @@ Namespace: microsoft.graph
 
 The **itemActivityStat** resource provides information about activities that took place within an interval of time.
 
-## JSON representation
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "baseType": "microsoft.graph.entity",
-  "@type": "microsoft.graph.itemActivityStat",
-}-->
-
-```json
-{
-  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
-  "incompleteData": {"@odata.type": "microsoft.graph.incompleteData"},
-  "isTrending": true,
-  "startDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)",
-  "create": {"@odata.type": "microsoft.graph.itemActionStat"},
-  "delete": {"@odata.type": "microsoft.graph.itemActionStat"},
-  "edit": {"@odata.type": "microsoft.graph.itemActionStat"},
-  "move": {"@odata.type": "microsoft.graph.itemActionStat"},
-  "access": {"@odata.type": "microsoft.graph.itemActionStat"}
-}
-```
-
 ## Properties
 
 | Property       | Type               | Description                                                                             |
@@ -64,6 +40,30 @@ The **itemActivityStat** resource provides information about activities that too
 | activities   | [itemActivity][] collection | Exposes the **itemActivities** represented in this **itemActivityStat** resource. |
 
 [itemActivity]: itemactivity.md
+
+## JSON representation
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "baseType": "microsoft.graph.entity",
+  "@type": "microsoft.graph.itemActivityStat",
+}-->
+
+```json
+{
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "incompleteData": {"@odata.type": "microsoft.graph.incompleteData"},
+  "isTrending": true,
+  "startDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
+  "create": {"@odata.type": "microsoft.graph.itemActionStat"},
+  "delete": {"@odata.type": "microsoft.graph.itemActionStat"},
+  "edit": {"@odata.type": "microsoft.graph.itemActionStat"},
+  "move": {"@odata.type": "microsoft.graph.itemActionStat"},
+  "access": {"@odata.type": "microsoft.graph.itemActionStat"}
+}
+```
 
 ## Remarks
 

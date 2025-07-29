@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # assign action
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -65,7 +66,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 
 Content-type: application/json
-Content-length: 597
+Content-length: 800
 
 {
   "assignments": [
@@ -73,11 +74,15 @@ Content-length: 597
       "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
       "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
       "target": {
-        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "@odata.type": "microsoft.graph.organizationalUnitAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "targetType": "user",
-        "entraObjectId": "Entra Object Id value"
+        "organizationalUnitId": "Organizational Unit Id value",
+        "assignmentConflictSetting": {
+          "@odata.type": "microsoft.graph.organizationalUnitAssignmentConflictSetting",
+          "assignmentOverride": "denied",
+          "versionNumber": 13
+        }
       },
       "source": "policySets",
       "sourceId": "Source Id value"
@@ -91,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 591
+Content-Length: 794
 
 {
   "value": [
@@ -99,11 +104,15 @@ Content-Length: 591
       "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
       "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
       "target": {
-        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "@odata.type": "microsoft.graph.organizationalUnitAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "targetType": "user",
-        "entraObjectId": "Entra Object Id value"
+        "organizationalUnitId": "Organizational Unit Id value",
+        "assignmentConflictSetting": {
+          "@odata.type": "microsoft.graph.organizationalUnitAssignmentConflictSetting",
+          "assignmentOverride": "denied",
+          "versionNumber": 13
+        }
       },
       "source": "policySets",
       "sourceId": "Source Id value"

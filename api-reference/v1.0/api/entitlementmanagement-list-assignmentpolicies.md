@@ -1,15 +1,16 @@
 ---
 title: "List assignmentPolicies"
-description: "List the accessPackageAssignmentPolicy objects."
+description: "Retrieve a list of accessPackageAssignmentPolicy objects in Microsoft Entra entitlement management."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # List assignmentPolicies
 Namespace: microsoft.graph
 
-In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects. If the delegated user is in a directory role, the resulting list includes all the assignment policies that the caller has access to read, across all catalogs and access packages. If the delegated user is an access package manager or catalog owner, they should instead retrieve the policies for the access packages they can read with [list accessPackages](entitlementmanagement-list-accesspackages.md) by including `$expand=assignmentPolicies` as a query parameter.
+Retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects in [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md). If the delegated user is in a directory role, the resulting list includes all the assignment policies that the caller has access to read, across all catalogs and access packages. If the delegated user is an access package manager or catalog owner, they should instead retrieve the policies for the access packages they can read with [list accessPackages](entitlementmanagement-list-accesspackages.md) by including `$expand=assignmentPolicies` as a query parameter.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -19,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_list_assignmentpolicies" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-list-assignmentpolicies-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 
 ## HTTP request
@@ -32,7 +35,7 @@ GET /identityGovernance/entitlementManagement/assignmentPolicies
 ```
 
 ## Optional query parameters
-This method supports some of the `$filter`, `$select`, and `$expand` OData query parameters to help customize the response. For example, to retrieve an access package assignment policy with a specified display name, include `$filter=displayName eq 'Employee sales support'` in the query. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the `$filter`, `$select`, and `$expand` OData query parameters to help customize the response. For example, to retrieve an access package assignment policy with a specified display name, include `$filter=displayName eq 'Employee sales support'` in the query. To retrieve the access package assignment policies for an access package `136f166c-b85a-4403-85b1-656aa80d167a`, include `$filter=accesspackage/id eq '136f166c-b85a-4403-85b1-656aa80d167a'`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -62,10 +65,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accesspackageassignmentpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-accesspackageassignmentpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

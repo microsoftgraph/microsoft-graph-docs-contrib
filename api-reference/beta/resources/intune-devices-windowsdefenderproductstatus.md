@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # windowsDefenderProductStatus enum type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -25,9 +26,9 @@ Product Status of Windows Defender
 |serviceStartedWithoutMalwareProtection|2|Service started without any malware protection engine|
 |pendingFullScanDueToThreatAction|4|Pending full scan due to threat action|
 |pendingRebootDueToThreatAction|8|Pending reboot due to threat action|
-|pendingManualStepsDueToThreatAction|16|Pending manual steps due to threat action |
-|avSignaturesOutOfDate|32|AV signatures out of date|
-|asSignaturesOutOfDate|64|AS signatures out of date|
+|pendingManualStepsDueToThreatAction|16|Pending manual steps due to threat action|
+|avSignaturesOutOfDate|32|Antivirus (AV) signatures out of date|
+|asSignaturesOutOfDate|64|Antisypware (AS) signatures out of date|
 |noQuickScanHappenedForSpecifiedPeriod|128|No quick scan has happened for a specified period|
 |noFullScanHappenedForSpecifiedPeriod|256|No full scan has happened for a specified period|
 |systemInitiatedScanInProgress|512|System initiated scan in progress|

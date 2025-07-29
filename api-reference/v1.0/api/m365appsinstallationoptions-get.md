@@ -5,6 +5,7 @@ author: "yan-git"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # Get m365AppsInstallationOptions
@@ -22,8 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 When calling on behalf of a user, the user needs to belong to the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 + Office apps administrator (recommended)
-+ Global reader
-+ Global administrator
++ Global Reader
 
 ## HTTP request
 
@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/admin/microsoft365Apps/installationOptions
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-m365appsinstallationoptions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-m365appsinstallationoptions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

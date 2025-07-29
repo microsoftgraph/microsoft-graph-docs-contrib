@@ -5,6 +5,7 @@ author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 10/24/2024
 ---
 
 # reportRoot resource type
@@ -17,15 +18,15 @@ Represents a container for Microsoft Entra ID and Microsoft 365 reporting resour
 
 ## Methods
 
-### Copilot for Microsoft 365 usage
+### Microsoft 365 Copilot usage
 
-For details about report views and names, see [Microsoft 365 reports - Copilot for Microsoft 365 usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
+For details about report views and names, see [Microsoft 365 reports - Microsoft 365 Copilot usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
 
 | Method                                                                                 | Return type | Description                                                                                                    |
 | :------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------------- |
-| [Get user detail](../api/reportroot-getmicrosoft365copilotusageuserdetail.md)          | Stream      | Get the most recent activity data for enabled users of Copilot for Microsoft 365 apps.                             |
-| [Get user counts summary](../api/reportroot-getmicrosoft365copilotusercountsummary.md) | Stream      | Get the aggregated number of active and enabled users of Copilot for Microsoft 365 for a specified time period.  |
-| [Get user counts trend](../api/reportroot-getmicrosoft365copilotusercounttrend.md)     | Stream      | Get the trend in the daily number of active and enabled users of Copilot for Microsoft 365 for a specified time period. |
+| [Get user detail](../api/reportroot-getmicrosoft365copilotusageuserdetail.md)          | Stream      | Get the most recent activity data for enabled users of Microsoft 365 Copilot apps.                            |
+| [Get user counts summary](../api/reportroot-getmicrosoft365copilotusercountsummary.md) | Stream      | Get the aggregated number of active and enabled users of Microsoft 365 Copilot for a specified time period.  |
+| [Get user counts trend](../api/reportroot-getmicrosoft365copilotusercounttrend.md)     | Stream      | Get the trend in the daily number of active and enabled users of Microsoft 365 Copilot for a specified time period. |
 
 ### Forms activity
 
@@ -159,6 +160,12 @@ For details about report views and names, see [Microsoft 365 reports - Microsoft
 | [Get storage](../api/reportroot-getoffice365groupsactivitystorage.md)          | Stream      | Get the total storage used across all group mailboxes and group sites.                                                                                 |
 | [Get file counts](../api/reportroot-getoffice365groupsactivityfilecounts.md)   | Stream      | Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group.                           |
 
+### Microsoft Graph API usage (preview)
+
+| Method                                            | Return type | Description                                                                    |
+|:--------------------------------------------------|:------------|:-------------------------------------------------------------------------------|
+| [Get API usage](../api/reportroot-getapiusage.md) | Stream      | Get a report that provides information about active Microsoft Graph API usage. |
+
 ### OneDrive activity
 
 For details about report views and names, see [Microsoft 365 reports - OneDrive for Business activity](/microsoft-365/admin/activity-reports/onedrive-for-business-activity-ww).
@@ -220,7 +227,7 @@ For details about report views and names, see [Skype for Business clients used](
 | Method                                                                                                    | Return type | Description                                                                                                                                                                                                                                                                                                     |
 | :-------------------------------------------------------------------------------------------------------- | :---------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Get user detail](../api/reportroot-getskypeforbusinessdeviceusageuserdetail.md)                          | Stream      | Get details about Skype for Business device usage by user.                                                                                                                                                                                                                                                      |
-| [Get distribution user counts](../api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md) | Stream      | Get the number of users using unique devices in your organization. The report shows you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad.                                                                                                                       |
+| [Get distribution user counts](../api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md) | Stream      | Get the number of users using unique devices in your organization. The report shows you the number of users per device, including Windows, Windows phone, Android phone, iPhone, and iPad.                                                                                                                       |
 | [Get user counts](../api/reportroot-getskypeforbusinessdeviceusageusercounts.md)                          | Stream      | Get the usage trends on how many users in your organization have connected using the Skype for Business app. You also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization. |
 
 ### Skype for Business organizer activity
@@ -297,15 +304,14 @@ None.
 | credentialUserRegistrationDetails | [credentialUserRegistrationDetails](credentialuserregistrationdetails.md) collection  | Details of the usage of self-service password reset and multifactor authentication (MFA) for all registered users.                       |
 | dailyPrintUsageByPrinter          | [printUsageByPrinter](printusagebyprinter.md) collection                              | Retrieve a list of daily print usage summaries, grouped by printer.                                                                      |
 | dailyPrintUsageByUser             | [printUsageByUser](printusagebyuser.md) collection                                    | Retrieve a list of daily print usage summaries, grouped by user.                                                                         |
+| healthMonitoring             | [microsoft.graph.healthMonitoring.healthMonitoringRoot](healthmonitoring-healthmonitoringroot.md) collection                                    | Reports for Microsoft Entra Health Monitoring.                                                                         |
 | monthlyPrintUsageByPrinter        | [printUsageByPrinter](printusagebyprinter.md) collection                              | Retrieve a list of monthly print usage summaries, grouped by printer.                                                                    |
 | monthlyPrintUsageByUser           | [printUsageByUser](printusagebyuser.md) collection                                    | Retrieve a list of monthly print usage summaries, grouped by user.                                                                       |
 | partners                          | [partners](partners.md)                                                               | Represents billing details for a Microsoft direct partner.                                                                               |
-| readingAssignmentSubmission       | [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection | Represents the submission details of the reading assignment associated with this data.                                                   |
-| reflectCheckInResponse            | [reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection           | Represents the response to the Microsoft Reflect check-in associated with this data.                                                     |
 | security                          | [securityReportsRoot](securityreportsroot.md)                                         | Provides the ability to launch a simulated phishing attack that organizations can learn from.                                            |
 | servicePrincipalSignInActivities  | [servicePrincipalSignInActivity](serviceprincipalsigninactivity.md) collection        | Represents a collection of sign-in activities of service principals.                                                                     |
 | serviceActivity                   | [serviceActivity](serviceactivity.md)                                                 | Reports that relate to tenant-level authentication activities in Microsoft Entra.                                                        |
-| sla                               | [serviceLevelAgreementRoot](servicelevelagreementroot.md)                             | Reports that relate to tenant-level Microsoft Entra SLA attainment.                                                                      |
+| sla                               | [serviceLevelAgreementRoot](servicelevelagreementroot.md)                             | Reports that relate to tenant-level Microsoft Entra Health SLA attainment.                                                                      |
 | userCredentialUsageDetails        | [userCredentialUsageDetails](usercredentialusagedetails.md) collection                | Represents the self-service password reset (SSPR) usage for a given tenant.                                                              |
 | userInsights                      | [userInsightsRoot](userinsightsroot.md)                                               | Represents a collection of user activities on applications in a tenant that is configured for Microsoft Entra External ID for customers. |
 

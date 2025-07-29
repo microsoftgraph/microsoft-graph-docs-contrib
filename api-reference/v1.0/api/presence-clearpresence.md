@@ -5,6 +5,7 @@ author: "jsandoval-msft"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "cloud-communications"
+ms.date: 04/04/2024
 ---
 
 # presence: clearPresence
@@ -76,10 +77,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/clear--presence-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/clear--presence-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

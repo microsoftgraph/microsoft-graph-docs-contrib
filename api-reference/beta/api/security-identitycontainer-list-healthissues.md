@@ -5,6 +5,7 @@ author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "security"
+ms.date: 09/12/2024
 ---
 
 # List healthIssues
@@ -122,10 +123,6 @@ GET https://graph.microsoft.com/beta/security/identities/healthIssues
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-healthissues-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-healthissues-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

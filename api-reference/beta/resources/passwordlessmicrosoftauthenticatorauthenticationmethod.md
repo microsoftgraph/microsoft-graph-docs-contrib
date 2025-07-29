@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Microsoft Authenticator Passwordless Phone sign-in (deprecated)
+ms.date: 07/22/2024
 ---
 
 # passwordlessMicrosoftAuthenticatorAuthenticationMethod resource type (deprecated)
@@ -40,7 +41,6 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 
 
 The following JSON representation shows the resource type.
-The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

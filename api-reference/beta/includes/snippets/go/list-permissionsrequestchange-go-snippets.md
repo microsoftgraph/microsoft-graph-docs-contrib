@@ -18,10 +18,10 @@ import (
 
 requestFilter := "modificationDateTime gt {t}"
 
-requestParameters := &graphidentitygovernance.IdentityGovernancePermissionsManagementPermissionsRequestChangesRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.PermissionsManagementPermissionsRequestChangesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentitygovernance.IdentityGovernancePermissionsManagementPermissionsRequestChangesRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.PermissionsManagementPermissionsRequestChangesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

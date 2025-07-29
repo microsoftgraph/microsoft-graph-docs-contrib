@@ -5,6 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List class assignments
@@ -64,22 +65,17 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_assignments_for_classID"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments
+GET https://graph.microsoft.com/beta/education/classes/ce2cd7da-e41b-4e66-8390-c9251e4c3a40/assignments
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-for-classid-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-assignments-for-classid-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -126,28 +122,34 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('ce2cd7da-e41b-4e66-8390-c9251e4c3a40')/assignments",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/ce2cd7da-e41b-4e66-8390-c9251e4c3a40/assignments?$skiptoken=MyZRVkZCUVVGQlFVRlNRVUZCUVVGQlFVRkJRWGxCUVVGQlNDczVLMmRqVWpsWWEyVlhWV3BwVkVrd09EUk1aejA5",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignments?$select=addedStudentAction,addToCalendarAction",
     "value": [
         {
-            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
-            "displayName": "Looper app task",
+            "classId": "ce2cd7da-e41b-4e66-8390-c9251e4c3a40",
+            "displayName": "New assignment",
             "closeDateTime": null,
-            "dueDateTime": "2021-11-12T07:59:00Z",
+            "dueDateTime": "2025-05-09T00:00:00Z",
             "assignDateTime": null,
             "assignedDateTime": null,
             "allowLateSubmissions": true,
             "resourcesFolderUrl": null,
-            "createdDateTime": "2021-11-10T20:37:59.6432527Z",
-            "lastModifiedDateTime": "2021-11-10T20:38:10.395034Z",
-            "allowStudentsToAddResourcesToSubmission": true,
+            "feedbackResourcesFolderUrl": null,
+            "createdDateTime": "2025-05-07T18:17:06.2831309Z",
+            "lastModifiedDateTime": "2025-05-07T18:17:06.4526679Z",
+            "allowStudentsToAddResourcesToSubmission": false,
             "status": "draft",
             "notificationChannelUrl": null,
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2272a7baec-c3e9-4213-a850-f62de0adad5f%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22be973b06-0cdf-42d5-b8c2-fece599f50c0%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22ce2cd7da-e41b-4e66-8390-c9251e4c3a40%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22f5e60dc1-d084-4ca4-a3b4-025f11023059%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addToCalendarAction": "none",
             "addedStudentAction": "none",
-            "id": "be973b06-0cdf-42d5-b8c2-fece599f50c0",
+            "languageTag": "en-US",
+            "moduleUrl": null,
+            "id": "f5e60dc1-d084-4ca4-a3b4-025f11023059",
             "grading": null,
             "instructions": {
-                "content": "",
+                "content": null,
                 "contentType": "text"
             },
             "assignTo": {
@@ -157,7 +159,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                     "displayName": null
                 }
             },
@@ -165,7 +167,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                     "displayName": null
                 }
             }
@@ -181,22 +183,17 @@ Content-type: application/json
 The following example shows a request.
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_assignments_resources"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments?$expand=resources
+GET https://graph.microsoft.com/beta/education/classes/ce2cd7da-e41b-4e66-8390-c9251e4c3a40/assignments?$expand=resources
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-resources-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-assignments-resources-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -244,29 +241,34 @@ Content-type: application/json
 Content-length: 344
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments(resources())",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('ce2cd7da-e41b-4e66-8390-c9251e4c3a40')/assignments(resources())",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/ce2cd7da-e41b-4e66-8390-c9251e4c3a40/assignments?$expand=resources&$skiptoken=MyZRVkZCUVVGQlFVRlNRVUZCUVVGQlFVRkJRWGxCUVVGQmRFY3lhVXgwV20xWVZYbDZOMHhqY1ZKckswMXBkejA5",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignments?$select=addedStudentAction,addToCalendarAction",
     "value": [
         {
-            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
-            "displayName": "Scheduled homework",
+            "classId": "ce2cd7da-e41b-4e66-8390-c9251e4c3a40",
+            "displayName": "New assignment",
             "closeDateTime": null,
-            "dueDateTime": "2021-10-30T06:59:00Z",
-            "assignDateTime": "2021-10-13T14:00:00Z",
+            "dueDateTime": "2025-05-09T00:00:00Z",
+            "assignDateTime": null,
             "assignedDateTime": null,
             "allowLateSubmissions": true,
             "resourcesFolderUrl": null,
-            "createdDateTime": "2021-10-12T19:38:34.0470442Z",
-            "lastModifiedDateTime": "2021-10-12T23:12:02.2249311Z",
-            "allowStudentsToAddResourcesToSubmission": true,
-            "status": "scheduled",
+            "feedbackResourcesFolderUrl": null,
+            "createdDateTime": "2025-05-07T18:17:06.2831309Z",
+            "lastModifiedDateTime": "2025-05-07T18:17:06.4526679Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "draft",
             "notificationChannelUrl": null,
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2272a7baec-c3e9-4213-a850-f62de0adad5f%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22efcdf80b-a5de-42ac-8579-e40b0223d48b%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22ce2cd7da-e41b-4e66-8390-c9251e4c3a40%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22f5e60dc1-d084-4ca4-a3b4-025f11023059%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
             "addToCalendarAction": "none",
             "addedStudentAction": "none",
-            "id": "efcdf80b-a5de-42ac-8579-e40b0223d48b",
+            "languageTag": "en-US",
+            "moduleUrl": null,
+            "id": "f5e60dc1-d084-4ca4-a3b4-025f11023059",
             "grading": null,
             "instructions": {
-                "content": "",
+                "content": null,
                 "contentType": "text"
             },
             "assignTo": {
@@ -276,7 +278,7 @@ Content-length: 344
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                     "displayName": null
                 }
             },
@@ -284,14 +286,15 @@ Content-length: 344
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                     "displayName": null
                 }
             },
+            "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('ce2cd7da-e41b-4e66-8390-c9251e4c3a40')/assignments('f5e60dc1-d084-4ca4-a3b4-025f11023059')/resources",
             "resources": []
-            }
-        ]
-    }
+        }
+    ]
+}
 ```
 
 ### Example 3: Using `$filter` to get assignments
@@ -307,15 +310,11 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments?$filter=status eq 'assigned'
+GET https://graph.microsoft.com/beta/education/classes/ce2cd7da-e41b-4e66-8390-c9251e4c3a40/assignments?$filter=status eq 'assigned'
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-filter-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-assignments-filter-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -362,34 +361,35 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('ce2cd7da-e41b-4e66-8390-c9251e4c3a40')/assignments(resources())",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/ce2cd7da-e41b-4e66-8390-c9251e4c3a40/assignments?$expand=resources&$skiptoken=MyZRVkZCUVVGQlFVRlNRVUZCUVVGQlFVRkJRWGxCUVVGQlozTk9VVEZCWmpCS01IRm5ZMHBzTVhGT0szY3JkejA5",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignments?$select=addedStudentAction,addToCalendarAction",
     "value": [
         {
-            "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
-            "displayName": "Reading test#1",
+            "classId": "ce2cd7da-e41b-4e66-8390-c9251e4c3a40",
+            "displayName": "New assignment",
             "closeDateTime": null,
-            "dueDateTime": "2022-09-01T00:00:00Z",
+            "dueDateTime": "2025-05-09T00:00:00Z",
             "assignDateTime": null,
-            "assignedDateTime": "2022-05-16T16:12:53.9584196Z",
+            "assignedDateTime": null,
             "allowLateSubmissions": true,
             "resourcesFolderUrl": null,
-            "feedbackResourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ7ONF5UOYTXZVEKCZE43FTQRH2S",
-            "createdDateTime": "2022-05-13T23:50:12.7506402Z",
-            "lastModifiedDateTime": "2022-05-16T16:12:57.1762926Z",
-            "allowStudentsToAddResourcesToSubmission": true,
+            "feedbackResourcesFolderUrl": null,
+            "createdDateTime": "2025-05-07T18:17:06.2831309Z",
+            "lastModifiedDateTime": "2025-05-07T18:17:06.4526679Z",
+            "allowStudentsToAddResourcesToSubmission": false,
             "status": "assigned",
             "notificationChannelUrl": null,
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22846d04c6-6e23-4b69-a4a7-bb0189f06488%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22ce2cd7da-e41b-4e66-8390-c9251e4c3a40%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22f5e60dc1-d084-4ca4-a3b4-025f11023059%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
             "addToCalendarAction": "none",
             "addedStudentAction": "none",
-            "id": "846d04c6-6e23-4b69-a4a7-bb0189f06488",
+            "languageTag": "en-US",
+            "moduleUrl": null,
+            "id": "f5e60dc1-d084-4ca4-a3b4-025f11023059",
+            "grading": null,
             "instructions": {
-                "content": "Read chapter 1",
+                "content": null,
                 "contentType": "text"
-            },
-            "grading": {
-                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-                "maxPoints": 50
             },
             "assignTo": {
                 "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
@@ -398,7 +398,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                     "displayName": null
                 }
             },
@@ -406,10 +406,12 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                     "displayName": null
                 }
-            }
+            },
+            "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('ce2cd7da-e41b-4e66-8390-c9251e4c3a40')/assignments('f5e60dc1-d084-4ca4-a3b4-025f11023059')/resources",
+            "resources": []
         }
     ]
 }
@@ -428,15 +430,11 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments?$ordeby= id
+GET https://graph.microsoft.com/beta/education/classes/ce2cd7da-e41b-4e66-8390-c9251e4c3a40/assignments?$ordeby= id
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-orderby-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-assignments-orderby-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -483,31 +481,38 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('ce2cd7da-e41b-4e66-8390-c9251e4c3a40')/assignments",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/ce2cd7da-e41b-4e66-8390-c9251e4c3a40/assignments?$filter=status+eq+%27assigned%27&$skiptoken=MyZRVkZCUVVGQlFVRlJkMEZCUVVGQlFVRkJRWGxCUVVGQllWbFdhVlF5UVdWcVZYbEZNRXB0TUhWVFRYUXpkejA5",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignments?$select=addedStudentAction,addToCalendarAction",
     "value": [
         {
-            "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
-            "displayName": "Search progress resource #1",
+            "classId": "ce2cd7da-e41b-4e66-8390-c9251e4c3a40",
+            "displayName": "Physics",
             "closeDateTime": null,
-            "dueDateTime": "2022-10-12T06:59:00Z",
+            "dueDateTime": "2024-07-05T18:29:00Z",
             "assignDateTime": null,
-            "assignedDateTime": null,
+            "assignedDateTime": "2024-07-04T10:13:55.7459728Z",
             "allowLateSubmissions": true,
             "resourcesFolderUrl": null,
-            "feedbackResourcesFolderUrl": null,
-            "createdDateTime": "2022-10-10T17:07:41.9772556Z",
-            "lastModifiedDateTime": "2022-10-10T17:08:02.7357199Z",
+            "feedbackResourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!uf0jSRLkbEOG04PymQ5PtqVEDwHjP_xMlkkpCG-1CkLPLpFkTfqZR5sy80gMS-VY/items/01VPGD5VLEUC5G56NOFVDKD6POMN4LGKVD",
+            "createdDateTime": "2024-07-04T08:46:19.8896923Z",
+            "lastModifiedDateTime": "2024-07-04T10:13:59.8878321Z",
             "allowStudentsToAddResourcesToSubmission": true,
-            "status": "draft",
+            "status": "assigned",
             "notificationChannelUrl": null,
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22ba0ff1ed-79c6-4611-9638-356754b05555%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
-            "addToCalendarAction": "none",
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22ce2cd7da-e41b-4e66-8390-c9251e4c3a40%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22cb190e9f-650d-4798-b8d0-6d00079a4c4b%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addToCalendarAction": "studentsAndPublisher",
             "addedStudentAction": "none",
-            "id": "ba0ff1ed-79c6-4611-9638-356754b05555",
-            "grading": null,
+            "languageTag": "en-US",
+            "moduleUrl": null,
+            "id": "cb190e9f-650d-4798-b8d0-6d00079a4c4b",
             "instructions": {
-                "content": "",
-                "contentType": "text"
+                "content": "<div>Screw guage</div>",
+                "contentType": "html"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 100
             },
             "assignTo": {
                 "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
@@ -516,7 +521,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "id": "0dcb98c3-8c7c-4f7a-a10d-7ed76e03e38f",
                     "displayName": null
                 }
             },
@@ -524,7 +529,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "id": "5e3ce6c0-2b1f-4285-8d4b-75ee78787346",
                     "displayName": null
                 }
             }
@@ -551,10 +556,6 @@ GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 # [C#](#tab/csharp)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-assignments-top-expand-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -602,36 +603,37 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments(gradingScheme())",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments?expand=gradingScheme&$skiptoken=MyZRVkZCUVVGQlFVRkpkMFZCUVVGQlFVRkJRWGxCUVVGQkwzbEVTMVV2UkhWVE1EWllOa3R4ZW1NMmVtSndaejA5",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments?expand=gradingScheme&$skiptoken=MyZRVkZCUVVGQlFVRmtRVVZCUVVGQlFVRkJRWGxCUVVGQmNubDJiblZOYzBnNVJWTndkbEJHVTNKVlVuVmlRVDA5",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignments?$select=addedStudentAction,addToCalendarAction",
     "value": [
         {
             "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
-            "displayName": "Reading test 09.14",
+            "displayName": "new submission",
             "closeDateTime": null,
-            "dueDateTime": "2024-09-16T00:00:00Z",
+            "dueDateTime": "2025-04-29T18:29:00Z",
             "assignDateTime": null,
-            "assignedDateTime": null,
+            "assignedDateTime": "2025-04-29T14:53:05.2974529Z",
             "allowLateSubmissions": true,
             "resourcesFolderUrl": null,
-            "feedbackResourcesFolderUrl": null,
-            "createdDateTime": "2023-11-07T15:33:41.7275583Z",
-            "lastModifiedDateTime": "2024-01-23T13:45:12.7951103Z",
+            "feedbackResourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ7ONF5UOYTXZVEKCZE43FTQRH2S",
+            "createdDateTime": "2025-04-29T14:52:15.4472281Z",
+            "lastModifiedDateTime": "2025-05-07T21:28:57.6756103Z",
             "allowStudentsToAddResourcesToSubmission": true,
-            "status": "draft",
-            "notificationChannelUrl": null,
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22e98aaae1-7c98-4e65-bb62-1994fe410552%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
-            "addToCalendarAction": "none",
-            "addedStudentAction": "none",
-            "moduleUrl": null,
-            "id": "e98aaae1-7c98-4e65-bb62-1994fe410552",
+            "status": "assigned",
+            "notificationChannelUrl": "https://graph.microsoft.com/v1.0/teams/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/channels/37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22ed33a213-f67f-4eb8-bfea-f45e6cba041f%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addToCalendarAction": "studentsAndTeamOwners",
+            "addedStudentAction": "assignIfOpen",
+            "languageTag": "en-US",
+            "moduleUrl": "https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/1b9a03b6-dcc5-4ff1-8226-b92e25072f43/",
+            "id": "ed33a213-f67f-4eb8-bfea-f45e6cba041f",
             "instructions": {
-                "content": "Read chapter 4",
-                "contentType": "text"
+                "content": "new submission",
+                "contentType": "html"
             },
             "grading": {
                 "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-                "maxPoints": 50
+                "maxPoints": 100
             },
             "assignTo": {
                 "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
@@ -648,83 +650,24 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                     "displayName": null
                 }
             },
             "gradingScheme": {
-                "id": "69911dea-bc5c-406a-8743-81d06225a3a1",
-                "displayName": "New GradingScheme name 01",
-                "hidePointsDuringGrading": false,
-                "grades": []
-            }
-        },
-        {
-            "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
-            "displayName": "2021-03-04T21_28_06_105Z",
-            "closeDateTime": "2024-02-28T20:56:00Z",
-            "dueDateTime": "2024-02-28T20:56:00Z",
-            "assignDateTime": null,
-            "assignedDateTime": null,
-            "allowLateSubmissions": true,
-            "resourcesFolderUrl": null,
-            "feedbackResourcesFolderUrl": null,
-            "createdDateTime": "2024-01-23T15:26:34.2014918Z",
-            "lastModifiedDateTime": "2024-01-23T15:26:34.2131218Z",
-            "allowStudentsToAddResourcesToSubmission": false,
-            "status": "draft",
-            "notificationChannelUrl": null,
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22efd1d933-d440-4169-9c12-6ef39b654d3b%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
-            "addToCalendarAction": "none",
-            "addedStudentAction": "none",
-            "moduleUrl": null,
-            "id": "efd1d933-d440-4169-9c12-6ef39b654d3b",
-            "instructions": {
-                "content": "2021-03-04T21_28_06_105Z",
-                "contentType": "text"
-            },
-            "grading": {
-                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-                "maxPoints": 100
-            },
-            "assignTo": {
-                "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
-            },
-            "createdBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
-                    "displayName": null
-                }
-            },
-            "lastModifiedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
-                    "displayName": null
-                }
-            },
-            "gradingScheme": {
-                "id": "d0c2769f-cd0f-4e30-8d1d-9312270de5c4",
-                "displayName": "New GradingScheme name",
+                "id": "696290ba-1925-490e-a5d2-026bad0dbdc1",
+                "displayName": "New name for Pass/Fail Scheme",
                 "hidePointsDuringGrading": false,
                 "grades": [
                     {
-                        "displayName": "Great",
-                        "minPercentage": 82,
-                        "defaultPercentage": null
+                        "displayName": "Pass",
+                        "minPercentage": 60,
+                        "defaultPercentage": 100
                     },
                     {
-                        "displayName": "Good",
-                        "minPercentage": 70,
-                        "defaultPercentage": null
-                    },
-                    {
-                        "displayName": "Okay",
+                        "displayName": "Fail",
                         "minPercentage": 0,
-                        "defaultPercentage": null
+                        "defaultPercentage": 0
                     }
                 ]
             }

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "luleonpla"
+ms.date: 07/22/2024
 ---
 
 # selfSignedCertificate resource type

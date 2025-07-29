@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: FIDO2
+ms.date: 07/24/2024
 ---
 
 # fido2AuthenticationMethod resource type
@@ -39,7 +40,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 None.
 
 The following JSON representation shows the resource type.
-The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

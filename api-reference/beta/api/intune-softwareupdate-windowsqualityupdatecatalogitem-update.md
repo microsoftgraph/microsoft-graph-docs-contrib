@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update windowsQualityUpdateCatalogItem
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -54,9 +55,12 @@ The following table shows the properties that are required when you create the [
 |displayName|String|The display name for the catalog item. Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|The date the catalog item was released Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |endOfSupportDate|DateTimeOffset|The last supported date for a catalog item Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
-|kbArticleId|String|Knowledge base article id|
-|classification|[windowsQualityUpdateClassification](../resources/intune-softwareupdate-windowsqualityupdateclassification.md)|Classification of the quality update. Possible values are: `all`, `security`, `nonSecurity`.|
-|isExpeditable|Boolean|Flag indicating if update qualifies for expedite|
+|kbArticleId|String|Identifies the knowledge base article associated with the Windows quality update catalog item. Read-only|
+|classification|[windowsQualityUpdateCategory](../resources/intune-softwareupdate-windowsqualityupdatecategory.md)|The category of the Windows quality update. Possible values are: all, security, nonSecurity. Read-only. Possible values are: `all`, `security`, `nonSecurity`.|
+|qualityUpdateCadence|[windowsQualityUpdateCadence](../resources/intune-softwareupdate-windowsqualityupdatecadence.md)|The publishing cadence of the quality update. Possible values are: monthly, outOfBand. This property cannot be modified and is automatically populated when the catalog is created. Read-only. Possible values are: `monthly`, `outOfBand`, `unknownFutureValue`.|
+|isExpeditable|Boolean|When TRUE, indicates that the quality updates qualify for expedition. When FALSE, indicates the quality updates do not quality for expedition. Default value is FALSE. Read-only|
+|productRevisions|[windowsQualityUpdateCatalogProductRevision](../resources/intune-softwareupdate-windowsqualityupdatecatalogproductrevision.md) collection|The operating system product revisions that are released as part of this quality update. Read-only.|
+|qualityUpdateSeverityInformation|[windowsQualityUpdateCatalogItemSeverityInformation](../resources/intune-softwareupdate-windowsqualityupdatecatalogitemseverityinformation.md)|CVE information for catalog items|
 
 
 
@@ -70,7 +74,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 Content-type: application/json
-Content-length: 332
+Content-length: 1572
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItem",
@@ -79,7 +83,41 @@ Content-length: 332
   "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "kbArticleId": "Kb Article Id value",
   "classification": "security",
-  "isExpeditable": true
+  "qualityUpdateCadence": "outOfBand",
+  "isExpeditable": true,
+  "productRevisions": [
+    {
+      "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogProductRevision",
+      "displayName": "Display Name value",
+      "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+      "versionName": "Version Name value",
+      "productName": "Product Name value",
+      "osBuild": {
+        "@odata.type": "microsoft.graph.windowsQualityUpdateProductBuildVersionDetail",
+        "majorVersionNumber": 2,
+        "minorVersionNumber": 2,
+        "buildNumber": 11,
+        "updateBuildRevision": 3
+      },
+      "knowledgeBaseArticle": {
+        "@odata.type": "microsoft.graph.windowsQualityUpdateProductKnowledgeBaseArticle",
+        "articleId": "Article Id value",
+        "articleUrl": "https://example.com/articleUrl/"
+      }
+    }
+  ],
+  "qualityUpdateSeverityInformation": {
+    "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemSeverityInformation",
+    "maxSeverity": "important",
+    "maxBaseScore": 4.0,
+    "exploitedCves": [
+      {
+        "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemExploitedCve",
+        "number": "Number value",
+        "url": "Url value"
+      }
+    ]
+  }
 }
 ```
 
@@ -88,7 +126,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 381
+Content-Length: 1621
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItem",
@@ -98,6 +136,40 @@ Content-Length: 381
   "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "kbArticleId": "Kb Article Id value",
   "classification": "security",
-  "isExpeditable": true
+  "qualityUpdateCadence": "outOfBand",
+  "isExpeditable": true,
+  "productRevisions": [
+    {
+      "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogProductRevision",
+      "displayName": "Display Name value",
+      "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+      "versionName": "Version Name value",
+      "productName": "Product Name value",
+      "osBuild": {
+        "@odata.type": "microsoft.graph.windowsQualityUpdateProductBuildVersionDetail",
+        "majorVersionNumber": 2,
+        "minorVersionNumber": 2,
+        "buildNumber": 11,
+        "updateBuildRevision": 3
+      },
+      "knowledgeBaseArticle": {
+        "@odata.type": "microsoft.graph.windowsQualityUpdateProductKnowledgeBaseArticle",
+        "articleId": "Article Id value",
+        "articleUrl": "https://example.com/articleUrl/"
+      }
+    }
+  ],
+  "qualityUpdateSeverityInformation": {
+    "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemSeverityInformation",
+    "maxSeverity": "important",
+    "maxBaseScore": 4.0,
+    "exploitedCves": [
+      {
+        "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemExploitedCve",
+        "number": "Number value",
+        "url": "Url value"
+      }
+    ]
+  }
 }
 ```

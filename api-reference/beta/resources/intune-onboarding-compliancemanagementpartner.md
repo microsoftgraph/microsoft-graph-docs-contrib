@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # complianceManagementPartner resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -34,11 +35,13 @@ Compliance management partner for all platforms
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Partner display name|
 |macOsOnboarded|Boolean|Partner onboarded for Mac devices.|
+|linuxOnboarded|Boolean|Partner onboarded for Linux devices.|
 |androidOnboarded|Boolean|Partner onboarded for Android devices.|
 |iosOnboarded|Boolean|Partner onboarded for ios devices.|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection|User groups which enroll Mac devices through partner.|
 |androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection|User groups which enroll Android devices through partner.|
 |iosEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection|User groups which enroll ios devices through partner.|
+|linuxEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection|User groups which enroll Linux devices through partner.|
 
 ## Relationships
 None
@@ -59,6 +62,7 @@ Here is a JSON representation of the resource.
   "partnerState": "String",
   "displayName": "String",
   "macOsOnboarded": true,
+  "linuxOnboarded": true,
   "androidOnboarded": true,
   "iosOnboarded": true,
   "macOsEnrollmentAssignments": [
@@ -86,6 +90,18 @@ Here is a JSON representation of the resource.
     }
   ],
   "iosEnrollmentAssignments": [
+    {
+      "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String",
+        "targetType": "String",
+        "entraObjectId": "String"
+      }
+    }
+  ],
+  "linuxEnrollmentAssignments": [
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {

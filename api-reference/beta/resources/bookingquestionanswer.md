@@ -5,6 +5,7 @@ author: "razortbone"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # bookingQuestionAnswer resource type

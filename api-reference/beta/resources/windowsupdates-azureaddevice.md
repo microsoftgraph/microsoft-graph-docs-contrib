@@ -3,8 +3,9 @@ title: "azureADDevice resource type"
 description: "Represents a device in Microsoft Entra ID that is registered with Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # azureADDevice resource type

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "haoyli"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getTeamsTeamActivityCounts
@@ -88,10 +89,6 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsTeamActivityCounts(period='
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getteamsteamactivitycounts-csv-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/reportroot-getteamsteamactivitycounts-csv-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

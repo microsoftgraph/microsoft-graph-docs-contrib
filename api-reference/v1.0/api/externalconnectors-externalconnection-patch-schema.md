@@ -5,6 +5,7 @@ author: "mecampos"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: apiPageType
+ms.date: 05/31/2024
 ---
 
 # Create or update schema
@@ -96,10 +97,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-schema-from-connection-async-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-schema-from-connection-async-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

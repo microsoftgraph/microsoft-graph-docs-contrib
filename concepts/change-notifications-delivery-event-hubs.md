@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.subservice: change-notifications
 ms.topic: tutorial
 ms.localizationpriority: high
-ms.custom: graphiamtop20, devx-track-azurecli
+ms.custom: graphiamtop20, devx-track-azurecli, sfi-ropc-nochange
 ms.date: 08/19/2024
 #customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources through Azure Event Hubs so I can build apps that process the changes according to the business requirements.
 ---
@@ -24,7 +24,7 @@ The article guides you through the process of managing your Microsoft Graph subs
 
 ## Using Azure Event Hubs to receive change notification
 
-[Azure Event Hubs](https://azure.microsoft.com/services/event-hubs) is a popular real-time events ingestion and distribution service built for scale. Using Azure Event Hubs to receive change notifications differs from webhooks in a few ways, including:
+[Azure Event Hubs](https://azure.microsoft.com/products/event-hubs/) is a popular real-time events ingestion and distribution service built for scale. Using Azure Event Hubs to receive change notifications differs from webhooks in a few ways, including:
 
 - You don't rely on publicly exposed notification URLs. The Event Hubs SDK relays the notifications to your application.
 - You don't need to reply to the [notification URL validation](change-notifications-delivery-webhooks.md#notificationurl-validation). You can ignore the validation message that you receive.
@@ -181,9 +181,9 @@ If you're using role-based access control, the **notificationUrl** property look
 
 `EventHub:https://<eventhubnamespace>.servicebus.windows.net/eventhubname/<eventhubname>?tenantId=<domainname>`
 
-- `eventhubnamespace` is the name you give to the Event Hubs namespace. It can be found in the Event Hubs Overview page under Host name.
-- `eventhubname` is the name you give to the event hub. It can be found in the Event Hubs -> Overview -> Event Hubs.
-- `domainname` is the name of your tenant; for example, `contoso.com`. Because this domain is used to access the Azure Event Hubs, it's important that it matches the domain used by the Azure subscription that holds the Azure Event Hubs. To get this information, select the Microsoft Entra ID menu on the Azure portal and check the Overview page. The domain name is displayed under the **Primary domain**.
+- `<eventhubnamespace>` is the name you give to the Event Hubs namespace. It can be found on the Event Hubs Overview page under Host name.
+- `<eventhubname>` is the name you give to the event hub. It can be found in the Event Hubs -> Overview -> Event Hubs.
+- `<domainname>` is the name of your tenant; for example, `contoso.com`. Because this domain is used to access the Azure Event Hubs, it's important that it matches the domain used by the Azure subscription that holds the Azure Event Hubs. To get this information, select the Microsoft Entra ID menu on the Azure portal and check the Overview page. The domain name is displayed under the **Primary domain**.
 
 <!-- End of "Using RBAC tab-->
 
@@ -192,9 +192,9 @@ If you're using role-based access control, the **notificationUrl** property look
 
 If you're using Key Vault, the **notificationUrl** property looks like this: `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
 
-- `azurekeyvaultname` - The name you gave to the key vault during creation. It can be found in the DNS name.
-- `secretname` - The name you gave to the secret during creation. It can be found on the Azure Key Vault **Secrets** page.
-- `domainname` - The name of your tenant; for example, `contoso.com`. Because this domain is used to access the Azure Key Vault, it's important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and select the subscription. The domain name is displayed under the **Directory** field.
+- `<azurekeyvaultname>` - The name you gave to the key vault during creation. It can be found in the DNS name.
+- `<secretname>` - The name you gave to the secret during creation. It can be found on the Azure Key Vault **Secrets** page.
+- `<domainname>` - The name of your tenant; for example, `contoso.com`. Because this domain is used to access the Azure Key Vault, it's important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and select the subscription. The domain name is displayed under the **Directory** field.
 
 <!-- End of "Using Key Vault tab-->
 
@@ -281,10 +281,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='0bf30f3b-4a52-48df
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-eventhubs-get-changetrackingapp-sp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-eventhubs-get-changetrackingapp-sp-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/change-notifications-eventhubs-get-changetrackingapp-sp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -331,10 +327,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-eventhubs-create-changetrackingapp-sp-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-eventhubs-create-changetrackingapp-sp-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

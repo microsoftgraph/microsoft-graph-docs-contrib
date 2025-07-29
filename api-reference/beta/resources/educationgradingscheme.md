@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Grading schema
+ms.date: 06/14/2024
 ---
 
 # educationGradingScheme resource type

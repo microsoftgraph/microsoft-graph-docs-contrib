@@ -5,6 +5,7 @@ author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # Get approvalSolution
@@ -69,10 +70,6 @@ GET https://graph.microsoft.com/beta/solutions/approval
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-approvalsolution-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-approvalsolution-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

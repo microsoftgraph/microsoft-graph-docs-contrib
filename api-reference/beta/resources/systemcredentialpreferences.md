@@ -5,6 +5,7 @@ author: "msft-poulomi"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # systemCredentialPreferences resource type

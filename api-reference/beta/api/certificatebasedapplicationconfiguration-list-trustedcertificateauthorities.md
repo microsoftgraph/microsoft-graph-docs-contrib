@@ -5,6 +5,7 @@ author: "madansr7"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 05/22/2024
 ---
 
 # List trustedCertificateAuthorities
@@ -22,7 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "certificatebasedapplicationconfiguration_list_trustedcertificateauthorities" } -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities-permissions.md)]
 
-[!INCLUDE [app-cert-config-apis](../includes/rbac-for-apis/app-cert-config-apis.md)]
+[!INCLUDE [rbac-trusted-app-cert-config-apis](../includes/rbac-for-apis/rbac-trusted-app-cert-config-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -68,10 +70,6 @@ GET https://graph.microsoft.com/beta/directory/certificateAuthorities/certificat
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-certificateauthorityasentity-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-certificateauthorityasentity-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

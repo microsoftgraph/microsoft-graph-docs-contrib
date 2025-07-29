@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.subservice: "search"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Get connectionQuota
@@ -70,10 +71,6 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/quota
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-connection-forid-quota-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-connection-forid-quota-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

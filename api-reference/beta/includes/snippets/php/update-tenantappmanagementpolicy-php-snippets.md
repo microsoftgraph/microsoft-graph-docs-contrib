@@ -12,6 +12,12 @@ use Microsoft\Graph\Beta\Generated\Models\PasswordCredentialConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AppCredentialRestrictionType;
 use Microsoft\Graph\Beta\Generated\Models\KeyCredentialConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AppKeyCredentialRestrictionType;
+use Microsoft\Graph\Beta\Generated\Models\IdentifierUriConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\IdentifierUriRestriction;
+use Microsoft\Graph\Beta\Generated\Models\AppManagementPolicyActorExemptions;
+use Microsoft\Graph\Beta\Generated\Models\CustomSecurityAttributeExemption;
+use Microsoft\Graph\Beta\Generated\Models\CustomSecurityAttributeStringValueExemption;
+use Microsoft\Graph\Beta\Generated\Models\CustomSecurityAttributeComparisonOperator;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -59,6 +65,23 @@ $keyCredentialsKeyCredentialConfiguration2->setMaxLifetime(null);
 $keyCredentialsArray []= $keyCredentialsKeyCredentialConfiguration2;
 $applicationRestrictions->setKeyCredentials($keyCredentialsArray);
 
+$applicationRestrictionsIdentifierUris = new IdentifierUriConfiguration();
+$applicationRestrictionsIdentifierUrisNonDefaultUriAddition = new IdentifierUriRestriction();
+$applicationRestrictionsIdentifierUrisNonDefaultUriAddition->setRestrictForAppsCreatedAfterDateTime(new \DateTime('2024-01-01T10:37:00Z'));
+$applicationRestrictionsIdentifierUrisNonDefaultUriAddition->setExcludeAppsReceivingV2Tokens(true);
+$applicationRestrictionsIdentifierUrisNonDefaultUriAddition->setExcludeSaml(true);
+$applicationRestrictionsIdentifierUrisNonDefaultUriAdditionExcludeActors = new AppManagementPolicyActorExemptions();
+$customSecurityAttributesCustomSecurityAttributeExemption1 = new CustomSecurityAttributeStringValueExemption();
+$customSecurityAttributesCustomSecurityAttributeExemption1->setOdataType('microsoft.graph.customSecurityAttributeStringValueExemption');
+$customSecurityAttributesCustomSecurityAttributeExemption1->setId('PolicyExemptions_AppManagementExemption');
+$customSecurityAttributesCustomSecurityAttributeExemption1->setOperator(new CustomSecurityAttributeComparisonOperator('equals'));
+$customSecurityAttributesCustomSecurityAttributeExemption1->setValue('ExemptFromIdentifierUriAdditionRestriction');
+$customSecurityAttributesArray []= $customSecurityAttributesCustomSecurityAttributeExemption1;
+$applicationRestrictionsIdentifierUrisNonDefaultUriAdditionExcludeActors->setCustomSecurityAttributes($customSecurityAttributesArray);
+
+$applicationRestrictionsIdentifierUrisNonDefaultUriAddition->setExcludeActors($applicationRestrictionsIdentifierUrisNonDefaultUriAdditionExcludeActors);
+$applicationRestrictionsIdentifierUris->setNonDefaultUriAddition($applicationRestrictionsIdentifierUrisNonDefaultUriAddition);
+$applicationRestrictions->setIdentifierUris($applicationRestrictionsIdentifierUris);
 $requestBody->setApplicationRestrictions($applicationRestrictions);
 
 $result = $graphServiceClient->policies()->defaultAppManagementPolicy()->patch($requestBody)->wait();

@@ -5,6 +5,7 @@ author: "davisjms"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # bookingCustomerInformationBase resource type

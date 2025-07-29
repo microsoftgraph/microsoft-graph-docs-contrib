@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "luleonpla"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Delete tokenIssuancePolicy
@@ -65,10 +66,6 @@ DELETE https://graph.microsoft.com/v1.0/policies/tokenIssuancePolicies/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-tokenissuancepolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-tokenissuancepolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

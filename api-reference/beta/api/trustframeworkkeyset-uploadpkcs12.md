@@ -2,9 +2,10 @@
 title: "trustFrameworkKeySet: uploadPkcs12"
 description: "Upload a PKCS 12 format key (PFX) to a keyset."
 ms.localizationpriority: medium
-author: "Nickgmicrosoft"
+author: "gysingh"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 10/17/2024
 ---
 
 # trustFrameworkKeySet: uploadPkcs12
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "trustframeworkkeyset_uploadpkcs12" } -->
 [!INCLUDE [permissions-table](../includes/permissions/trustframeworkkeyset-uploadpkcs12-permissions.md)]
+
+[!INCLUDE [rbac-b2c-trustframework-keyset-apis](../includes/rbac-for-apis/rbac-b2c-trustframework-keyset-apis.md)]
 
 ## HTTP request
 
@@ -78,10 +81,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-uploadpkcs12-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/trustframeworkkeyset-uploadpkcs12-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-uploadpkcs12-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -125,11 +124,11 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-	"kid": "kid-value",
-	"use": "sig",
-	"kty": "OCT",
-	"nbf": 1508969811,
-	"exp": 1508973711
+    "kid": "kid-value",
+    "use": "sig",
+    "kty": "OCT",
+    "nbf": 1508969811,
+    "exp": 1508973711
 }
 ```
 

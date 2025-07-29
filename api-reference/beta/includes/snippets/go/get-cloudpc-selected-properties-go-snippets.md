@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphdevicemanagement.DeviceManagementVirtualEndpointCloudPCItemRequestBuilderGetQueryParameters{
-	Select: [] string {"id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult","allotmentDisplayName","deviceRegionName"},
+requestParameters := &graphdevicemanagement.VirtualEndpointCloudPCsItemRequestBuilderGetQueryParameters{
+	Select: [] string {"id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult","allotmentDisplayName","deviceRegionName","productType"},
 }
-configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointCloudPCItemRequestBuilderGetRequestConfiguration{
+configuration := &graphdevicemanagement.VirtualEndpointCloudPCsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

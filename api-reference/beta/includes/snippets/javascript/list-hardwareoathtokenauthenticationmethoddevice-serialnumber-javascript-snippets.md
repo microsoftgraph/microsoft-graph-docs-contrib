@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+let hardwareOathDevices = await client.api('/directory/authenticationMethodDevices/hardwareOathDevices')
+	.version('beta')
+	.filter('serialNumber eq \'TOTP123456\'')
+	.get();
+
+```

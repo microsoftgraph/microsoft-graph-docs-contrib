@@ -5,6 +5,7 @@ author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # callRecord: getPstnOnlineMeetingDialoutReport
@@ -90,10 +91,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnOnlineMee
 [!INCLUDE [sample-code](../includes/snippets/csharp/callrecordthisgetpstnonlinemeetingdialoutreport-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/callrecordthisgetpstnonlinemeetingdialoutreport-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/callrecordthisgetpstnonlinemeetingdialoutreport-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -108,10 +105,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnOnlineMee
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/callrecordthisgetpstnonlinemeetingdialoutreport-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/callrecordthisgetpstnonlinemeetingdialoutreport-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

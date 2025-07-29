@@ -6,6 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # List scopedAdministratorOf
@@ -32,6 +33,8 @@ GET /me/scopedRoleMemberOf
 GET /users/{id}/scopedRoleMemberOf
 
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
@@ -61,10 +64,6 @@ GET https://graph.microsoft.com/beta/me/scopedRoleMemberOf
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedadministratorof-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-scopedadministratorof-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

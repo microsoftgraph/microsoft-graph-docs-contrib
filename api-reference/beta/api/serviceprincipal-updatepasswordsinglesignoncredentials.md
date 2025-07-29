@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 10/15/2024
 ---
 
 # servicePrincipal: updatePasswordSingleSignOnCredentials
@@ -24,8 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_updatepasswordsinglesignoncredentials" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-updatepasswordsinglesignoncredentials-permissions.md)]
 
-> [!NOTE]
-> Users can create credentials for themselves. Service principal owners and admins with the following roles can create credentials for any user or group: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. To learn more, see [Directory roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+[!INCLUDE [rbac-passwordsinglesignoncredentials-apis](../includes/rbac-for-apis/rbac-passwordsinglesignoncredentials-apis.md)]
 
 ## HTTP request
 
@@ -92,10 +92,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-updatepasswordsinglesignoncredentials-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-updatepasswordsinglesignoncredentials-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

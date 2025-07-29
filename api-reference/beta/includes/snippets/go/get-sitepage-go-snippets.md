@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphsites.SiteItemPageItemGraph.sitePageRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.ItemPagesItemGraph.sitePageRequestBuilderGetQueryParameters{
 	Select: [] string {"id","name"},
 }
-configuration := &graphsites.SiteItemPageItemGraph.sitePageRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.ItemPagesItemGraph.sitePageRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

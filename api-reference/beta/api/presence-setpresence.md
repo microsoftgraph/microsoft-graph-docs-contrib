@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "cloud-communications"
+ms.date: 04/05/2024
 ---
 
 # presence: setPresence
@@ -22,7 +23,7 @@ A user can have multiple presence sessions because the user can be on multiple T
 
 Similarly, an application can have its own presence session for a user and be able to update the state.
 
-The following is the precedence for how session states are aggregated, with "A > B" representing A having precedence over B:
+The following precedence is used for how session states are aggregated, with "A > B" representing that A has precedence over B:
 * User-preferred state > session-level states (user-preferred state overrides session-level states)
 * Among session-level states: DoNotDisturb > Busy > Available > Away
 
@@ -33,7 +34,7 @@ A presence session may **time out** and **expire**, so the application needs to 
 
 A presence session can time out if the availability is `Available` and the timeout is 5 minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in 5 minutes with the first timeout, then `Away/Away` in another 5 minutes with the second timeout.
 
-The expiration of a presence session is configurable with the `expirationDuration` parameter. When a session expires it becomes `Offline`.
+Use `expirationDuration` to configure the expiration of a presence session; otherwise, the default expiration is 5 minutes. Valid values range from 5 minutes to 4 hours, after which the session becomes `Offline`.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -61,7 +62,7 @@ In the request body, provide a JSON object with the following parameters.
 | sessionId          | string   | The ID of the application's presence session.                                                          |
 | availability       | string   | The base presence information.                                                                         |
 | activity           | string   | The supplemental information to availability.                                                          |
-| expirationDuration | duration | The expiration of the app presence session. The value is represented in [ISO 8601 format for durations](http://en.wikipedia.org/wiki/ISO_8601#Durations).</p>If not provided, a default expiration of 5 minutes will be applied. |
+| expirationDuration | duration | The expiration of the app presence session. The value is represented in [ISO 8601 format for durations](http://en.wikipedia.org/wiki/ISO_8601#Durations).</p> If not provided, a default expiration of 5 minutes is applied. The valid duration range is from 5 to 240 minutes (PT5M to PT4H). |
 
 > [!IMPORTANT]
 >
@@ -108,10 +109,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/set-presence-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/set-presence-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/set-presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -126,10 +123,6 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/set-presence-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/set-presence-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

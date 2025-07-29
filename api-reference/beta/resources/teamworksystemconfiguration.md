@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkSystemConfiguration resource type
@@ -31,6 +32,9 @@ Represents the details about the system configuration for a Microsoft Teams-enab
 |loggingLevel|String|The logging level for the device.|
 |networkConfiguration|[teamworkNetworkConfiguration](../resources/teamworknetworkconfiguration.md)|The network configuration for the device.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

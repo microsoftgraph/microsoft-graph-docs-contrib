@@ -5,6 +5,7 @@ author: "yan-git"
 ms.localizationpriority: medium
 ms.subservice: "edge-browser-management"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # adminMicrosoft365Apps resource type

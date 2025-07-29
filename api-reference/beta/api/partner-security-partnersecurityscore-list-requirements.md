@@ -5,6 +5,7 @@ author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # List requirements 
@@ -75,10 +76,6 @@ GET https://graph.microsoft.com/beta/security/partner/securityScore/requirements
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-securityrequirement-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-securityrequirement-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-securityrequirement-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,7 +101,6 @@ GET https://graph.microsoft.com/beta/security/partner/securityScore/requirements
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

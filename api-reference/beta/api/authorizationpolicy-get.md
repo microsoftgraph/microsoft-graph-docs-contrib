@@ -6,6 +6,7 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/15/2024
 ---
 
 # Get authorizationPolicy
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "authorizationpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authorizationpolicy-get-permissions.md)]
+
+[!INCLUDE [rbac-authorization-policy-apis-read](../includes/rbac-for-apis/rbac-authorization-policy-apis-read.md)]
 
 ## HTTP request
 
@@ -65,10 +68,6 @@ GET https://graph.microsoft.com/beta/policies/authorizationPolicy
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-authorizationpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-authorizationpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

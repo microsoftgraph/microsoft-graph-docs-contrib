@@ -4,6 +4,7 @@ description: "Use OneDrive, the files hub in Microsoft 365, to access files no m
 ms.localizationpriority: high
 ms.subservice: "onedrive"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # OneDrive file storage API overview

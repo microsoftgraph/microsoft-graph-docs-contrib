@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # mobileAppContentFile resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -36,10 +37,8 @@ Contains properties for a single installer file that is associated with a given 
 |id|String|The unique identifier for this mobileAppContentFile. This id is assigned during creation of the mobileAppContentFile. Read-only. This property is read-only.|
 |createdDateTime|DateTimeOffset|Indicates created date and time associated with app content file, in ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only. This property is read-only.|
 |name|String|Indicates the name of the file.|
-|size|Int64|The size of the file prior to encryption. To be deprecated, please use sizeInBytes property instead.|
-|sizeEncrypted|Int64|The size of the file after encryption. To be deprecated, please use sizeEncryptedInBytes property instead.|
-|sizeInBytes|Int64|Indicates the original size of the file, in bytes. Valid values 0 to 9.22337203685478E+18|
-|sizeEncryptedInBytes|Int64|Indicates the size of the file after encryption, in bytes. Valid values 0 to 9.22337203685478E+18|
+|size|Int64|Indicates the original size of the file, in bytes.|
+|sizeEncrypted|Int64|Indicates the size of the file after encryption, in bytes.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Indicates the date and time when the Azure storage URI expires, in ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only. This property is read-only.|
 |manifest|Binary|Indicates the manifest information, containing file metadata.|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Indicates the state of the current upload request. Possible values are: success, transientError, error, unknown, azureStorageUriRequestSuccess, azureStorageUriRequestPending, azureStorageUriRequestFailed, azureStorageUriRequestTimedOut, azureStorageUriRenewalSuccess, azureStorageUriRenewalPending, azureStorageUriRenewalFailed, azureStorageUriRenewalTimedOut, commitFileSuccess, commitFilePending, commitFileFailed, commitFileTimedOut. Default value is success. This property is read-only. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
@@ -67,8 +66,6 @@ Here is a JSON representation of the resource.
   "name": "String",
   "size": 1024,
   "sizeEncrypted": 1024,
-  "sizeInBytes": 1024,
-  "sizeEncryptedInBytes": 1024,
   "azureStorageUriExpirationDateTime": "String (timestamp)",
   "manifest": "binary",
   "uploadState": "String",

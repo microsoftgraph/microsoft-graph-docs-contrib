@@ -5,6 +5,7 @@ author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # Get partnerSecurityScore
@@ -71,10 +72,6 @@ GET https://graph.microsoft.com/beta/security/partner/securityScore
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-partnersecurityscore-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-partnersecurityscore-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-partnersecurityscore-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -100,7 +97,6 @@ GET https://graph.microsoft.com/beta/security/partner/securityScore
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

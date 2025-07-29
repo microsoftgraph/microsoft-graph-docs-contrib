@@ -6,6 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # groupLifecyclePolicy: renewGroup
@@ -49,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter | Type | Description                   |
 | :-------- | :--- | :---------------------------- |
-| groupId   | Guid | The id of the group to renew. |
+| groupId   | Guid | The object ID of the group to renew. |
 
 ## Response
 
@@ -77,10 +78,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/grouplifecyclepolicy-renewgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/grouplifecyclepolicy-renewgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

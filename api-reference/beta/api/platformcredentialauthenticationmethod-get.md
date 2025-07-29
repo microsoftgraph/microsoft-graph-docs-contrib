@@ -5,6 +5,7 @@ author: "Veena11"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get platformCredentialAuthenticationMethod
@@ -23,7 +24,7 @@ The following tables show the least privileged permission or permissions require
 
 ### Permissions acting on self
 
-<!-- { "blockType": "permissions", "name": "platformcredentialauthenticationmethod_get" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/platformcredentialauthenticationmethod-get-permissions.md)]
 
 ### Permissions acting on other users
@@ -40,6 +41,8 @@ To read details of your own Platform Credential authentication method:
 ``` http
 GET /me/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 To read details of your own or another user's Platform Credential authentication method:
 <!-- { "blockType": "ignored" } -->
@@ -84,10 +87,6 @@ GET https://graph.microsoft.com/beta/me/authentication/platformCredentialMethods
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-platformcredentialauthenticationmethod-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-platformcredentialauthenticationmethod-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

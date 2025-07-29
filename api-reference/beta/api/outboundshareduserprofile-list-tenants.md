@@ -6,6 +6,7 @@ ms.reviewer: mapamu, iamut
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 05/16/2024
 ---
 
 # Get tenantReferences
@@ -71,10 +72,6 @@ GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-outboundshareduserprofile-tenants-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-outboundshareduserprofile-tenants-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

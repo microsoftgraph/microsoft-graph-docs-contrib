@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
+ms.date: 04/04/2024
 ---
 
 # List agreements
@@ -20,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "termsofusecontainer_list_agreements" } -->
 [!INCLUDE [permissions-table](../includes/permissions/termsofusecontainer-list-agreements-permissions.md)]
+
+[!INCLUDE [rbac-tou-security-reader-apis](../includes/rbac-for-apis/rbac-tou-security-reader-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -54,10 +57,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreements-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-agreements-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

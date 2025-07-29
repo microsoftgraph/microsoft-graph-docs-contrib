@@ -5,6 +5,7 @@ author: "madansr7"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # appManagementPolicy resource type
@@ -26,7 +27,8 @@ To learn more about how to use app management policy, see [Microsoft Entra appli
 | [Update](../api/appmanagementpolicy-update.md) | None                                                                       | Update an app management policy.                                                                                      |
 | [Delete](../api/appmanagementpolicy-delete.md) | None                                                                       | Delete an app management policy from the collection of policies in appManagementPolicies.                             |
 | [List applies to](../api/appmanagementpolicy-list-appliesto.md)| [appManagementPolicy](../resources/appmanagementpolicy.md)|Return a list of applications and service principals to which the policy is applied. |
-| [Create applies to](../api/appmanagementpolicy-post-appliesto.md)| None |Return a list of applications and service principals to which the policy is applied. |
+| [Create applies to](../api/appmanagementpolicy-post-appliesto.md)| None |Assign an appManagementPolicy policy object to an application or service principal object. |
+| [Delete applies to](../api/appmanagementpolicy-delete-appliesto.md)| None |Remove an appManagementPolicy policy object from an application or service principal object. |
 
 ## Properties
 

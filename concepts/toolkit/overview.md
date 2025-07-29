@@ -3,6 +3,7 @@ title: "Microsoft Graph Toolkit overview"
 description: "Use Microsoft Graph Toolkit to find authentication providers and reusable, framework-agnostic web components for accessing and working with Microsoft Graph."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph Toolkit overview

@@ -19,6 +19,8 @@ import (
 requestBody := graphdevicemanagement.NewApplyPostRequestBody()
 policySettings := graphmodels.REGION_CLOUDPCPOLICYSETTINGTYPE 
 requestBody.SetPolicySettings(&policySettings) 
+reservePercentage := int32(80)
+requestBody.SetReservePercentage(&reservePercentage) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().ByCloudPcProvisioningPolicyId("cloudPcProvisioningPolicy-id").Apply().Post(context.Background(), requestBody, nil)

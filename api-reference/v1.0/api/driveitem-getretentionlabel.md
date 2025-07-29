@@ -5,6 +5,7 @@ author: "kyracatwork"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 08/14/2024
 ---
 
 # driveItem: getRetentionLabel
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "driveitem_getretentionlabel" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-getretentionlabel-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 

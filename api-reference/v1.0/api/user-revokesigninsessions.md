@@ -1,23 +1,24 @@
 ---
 title: "user: revokeSignInSessions"
-description: "Invalidates all the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time."
+description: "Invalidates all the user's refresh tokens issued to applications (and session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time."
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # user: revokeSignInSessions
 
 Namespace: microsoft.graph
 
-Invalidates all the refresh tokens issued to applications for a user (as well as session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device. This operation prevents access to the organization's data through applications on the device by requiring the user to sign in again to all applications that they have previously consented to, independent of device.
+Invalidates all the refresh tokens issued to applications for a user (and session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device. This operation prevents access to the organization's data through applications on the device by requiring the user to sign in again to all applications that they consented to previously, independent of device.
 
 >If the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error. If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
 >[!NOTE]
->After calling **revokeSignInSessions**, there might be a small delay of a few minutes before tokens are revoked.
+>After you call **revokeSignInSessions**, there might be a small delay of a few minutes before tokens are revoked.
 >
 >This API doesn't revoke sign-in sessions for external users, because external users sign in through their home tenant.
 
@@ -36,6 +37,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /me/revokeSignInSessions
 POST /users/{id | userPrincipalName}/revokeSignInSessions
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Request headers
 | Header       | Value |
@@ -67,10 +70,6 @@ POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-revokesigninsessionss-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-revokesigninsessionss-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

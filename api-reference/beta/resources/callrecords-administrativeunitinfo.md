@@ -5,6 +5,7 @@ author: "Datar89"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # administrativeUnitInfo resource type
@@ -20,6 +21,9 @@ Represents an object that exposes information about the administrative units ass
 | Property | Type   | Description                                    |
 |:---------|:-------|------------------------------------------------|
 | id       | String | Unique identifier for the administrative unit. |
+
+## Relationships
+None.
 
 ## JSON representation
 

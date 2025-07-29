@@ -5,6 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 05/22/2024
 ---
 
 # Add identityProvider (to a user flow)
@@ -38,7 +39,7 @@ POST /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, provide a JSON representation of the ID of the [identityProvider](../resources/identityproviderbase.md) you want to add. For self-service user flows, the values can be `EmailPassword-OAUTH`, `EmailOtpSignup-OAUTH`, `Google-OAUTH`, or `Facebook-OAUTH`.
+In the request body, provide a JSON representation of the ID of the [identityProvider](../resources/identityproviderbase.md) you want to add. For self-service sign up user flows, the values can be `EmailPassword-OAUTH`, `EmailOtpSignup-OAUTH`, `Google-OAUTH` or `Facebook-OAUTH`.
 
 ## Response
 
@@ -64,10 +65,6 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc3
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authenticationeventsflow-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authenticationeventsflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

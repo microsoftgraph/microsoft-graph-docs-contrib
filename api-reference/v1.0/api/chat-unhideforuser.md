@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
+ms.date: 04/04/2024
 ---
 
 # chat: unhideForUser
@@ -75,10 +76,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chat-unhideforuser-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/chat-unhideforuser-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

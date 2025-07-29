@@ -24,6 +24,7 @@ var requestBody = new InternalDomainFederation
 	IsSignedAuthenticationRequestRequired = true,
 	NextSigningCertificate = "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
 	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.RejectMfaByFederatedIdp,
+	PasswordResetUri = "https://sts.contoso.com/adfs/passwordReset",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

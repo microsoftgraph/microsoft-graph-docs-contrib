@@ -18,10 +18,10 @@ import (
 
 requestFilter := "MeetingOrganizer/User/Id eq '8b081ef6-4792-4def-b2c9-c363a1bf41d5'"
 
-requestParameters := &graphusers.UserItemOnlineMeetingItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemOnlineMeetingsItemRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphusers.UserItemOnlineMeetingItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemOnlineMeetingsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

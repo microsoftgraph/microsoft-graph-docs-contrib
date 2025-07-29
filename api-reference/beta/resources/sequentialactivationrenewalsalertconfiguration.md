@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Sequential activation
+ms.date: 09/19/2024
 ---
 
 # sequentialActivationRenewalsAlertConfiguration resource type
@@ -17,6 +18,11 @@ Namespace: microsoft.graph
 Represents an alert configuration that is triggered if a user activates the same privileged role multiple times within the last 30 days.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) resource type.
 
 ## Properties
 |Property|Type|Description|

@@ -5,6 +5,7 @@ description: "List content types in a site"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.date: 04/05/2024
 ---
 
 # List contentTypes in a site
@@ -61,10 +62,6 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-enum-contenttypes-in-site-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-enum-contenttypes-in-site-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -7,13 +7,13 @@ ms.reviewer: Alexander.Filipin
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
-ms.date: 03/12/2024
+ms.date: 03/07/2025
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use Lifecycle Workflows APIs to automate employee onboarding tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
 
 # Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs
 
-This tutorial provides step-by-step guidance for automating prehire tasks with Lifecycle Workflows APIs.
+This tutorial explains how to automate prehire tasks with Lifecycle Workflows APIs.
 
 :::image type="content" source="images/tutorial-lifecycle-workflows/arch-2.png" alt-text="Screenshot of the Lifecycle Workflows scenario." lightbox="images/tutorial-lifecycle-workflows/arch-2.png":::
 
@@ -26,12 +26,12 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-To complete this tutorial, you need the following resources and privileges:
+To complete this tutorial, you need these resources and privileges:
 
-+ This feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with account that has at least the *Lifecycle Administrator* Microsoft Entra role.
++ This feature requires Microsoft Entra ID Governance licenses. See [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals) to find the right license for your requirements.
++ Sign in to an API client like [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with an account that has at least the *Lifecycle Administrator* Microsoft Entra role.
 + Grant yourself the *LifecycleWorkflows.ReadWrite.All* Microsoft Graph delegated permission.
-+ Create two user accounts to use in this tutorial: one for the new hire and another for their manager and have the following settings configured as applicable.
++ Create two user accounts for this tutorial: one for the new hire and another for their manager. Configure the following settings as applicable.
 
     | User property | Description |Set on|
     |:--- |:---|:-----|
@@ -40,13 +40,13 @@ To complete this tutorial, you need the following resources and privileges:
     |employeeHireDate|Used to trigger the workflow. Set to today's date.|Employee|
     |department|Used to provide the scope for the workflow. Set to `Sales`.|Employee, Manager|
 
-+ Enable the [Temporary Access Pass (TAP) policy](/entra/identity/authentication/howto-authentication-temporary-access-pass#enable-the-temporary-access-pass-policy) in your tenant and the new user enabled to use the authentication method.
++ Enable the [Temporary Access Pass (TAP) policy](/entra/identity/authentication/howto-authentication-temporary-access-pass#enable-the-temporary-access-pass-policy) in your tenant and ensure the new user is enabled to use the authentication method.
 
 ## Create a "joiner" workflow
 
 ### Request
 
-The following request creates a prehire workflow with the following settings:
+This request creates a prehire workflow with these settings:
 
 + It can be run on-demand but not on schedule.
 + The workflow runs two days before the employee's hire date, and if they are in the "Sales" department.
@@ -103,10 +103,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-joineronboarding-create-workflow-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-joineronboarding-create-workflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -176,7 +172,7 @@ Content-Type: application/json
 
 ## Run the workflow
 
-Because the workflow isn't scheduled to run, it must be run manually. In the following request, the user that's the target of the workflow is identified by ID `8930f0c7-cdd7-4885-9260-3b4a8111de5c`. The request returns a `204 No Content` response.
+Because the workflow isn't scheduled, you must run it manually. In the following request, the user that's the target of the workflow is identified by ID `8930f0c7-cdd7-4885-9260-3b4a8111de5c`. The request returns a `204 No Content` response.
 
 
 # [HTTP](#tab/http)
@@ -198,10 +194,6 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/work
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-joineronboarding-run-workflow-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-joineronboarding-run-workflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -232,10 +224,10 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/work
 
 ## Check tasks and workflow status
 
-At any time, you can monitor the status of the workflows and their associated tasks at three levels.
+You can monitor the status of workflows and their associated tasks at three levels.
 - Monitor tasks at the user level.
-- Monitor the aggregate high-level summary of the user-level results for a workflow, within a specified period.
-- Retrieve the detailed log of all tasks that were executed for a specific user in the workflow.
+- Monitor the high-level summary of user-level results for a workflow within a specified period.
+- Retrieve the detailed log of all tasks executed for a specific user in the workflow.
 
 ### Option 1: Monitor tasks for a workflow at the user level
 
@@ -252,10 +244,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -334,10 +322,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -400,10 +384,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -483,9 +463,9 @@ Content-Type: application/json
 
 ## [Optional] Schedule the workflow to run automatically
 
-After running your workflow on-demand and checking that everything is working fine, you might want to enable the workflow so that it can run automatically on a tenant-defined schedule. Run the following request.
+After running your workflow on-demand and confirming it works, enable the workflow to run automatically on a tenant-defined schedule. Run the following request.
 
-The request returns a `204 No Content` response. When a workflow is scheduled, the Lifecycle Workflows engine checks every three hours for user objects that match the associated execution condition and executes the configured tasks for those users. You can customize this recurrence from between one hour to 24 hours.
+The request returns a `204 No Content` response. When a workflow is scheduled, the Lifecycle Workflows engine checks every three hours for user objects that match the execution condition and executes the configured tasks. You can customize this recurrence from one to 24 hours.
 
 
 # [HTTP](#tab/http)
@@ -505,10 +485,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-joineronboarding-update-workflow-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-joineronboarding-update-workflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

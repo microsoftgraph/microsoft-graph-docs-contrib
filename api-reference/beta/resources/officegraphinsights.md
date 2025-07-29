@@ -5,6 +5,7 @@ author: "simonhult"
 ms.localizationpriority: high
 ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 05/18/2024
 ---
 
 # officeGraphInsights resource type

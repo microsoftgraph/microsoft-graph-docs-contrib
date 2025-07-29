@@ -5,6 +5,7 @@ author: "yuechen7"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # cloudClipboardItemPayload resource type

@@ -5,6 +5,7 @@ author: "patrick-rodgers"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 07/02/2024
 ---
 
 # Delete permission on a list

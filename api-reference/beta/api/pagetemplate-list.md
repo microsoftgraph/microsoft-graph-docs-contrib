@@ -5,6 +5,7 @@ title: List pageTemplate
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # List pageTemplate
@@ -54,6 +55,7 @@ If successful, this method returns a `200` and a list of [pageTemplate](../resou
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!--{
 	"blockType": "request",
 	"name": "get-pageTemplates",
@@ -65,6 +67,32 @@ The following example shows a request.
 ```msgraph-interactive
 GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.pageTemplate
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-pagetemplates-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-pagetemplates-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-pagetemplates-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-pagetemplates-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-pagetemplates-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-pagetemplates-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -88,7 +116,7 @@ Content-type: application/json
         {
             "id": "08f48aa6-02e3-407c-bbcb-ff61cec653fa",
             "name": "sample.aspx",
-            "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Templates/sample.aspx",
+            "webUrl": "https://contoso.sharepoint.com/SitePages/Templates/sample.aspx",
             "title": "sample",
             "pageLayout": "article",
             "showComments": true,
@@ -121,7 +149,7 @@ Content-type: application/json
             },
             "titleArea": {
                 "enableGradientEffect": true,
-                "imageWebUrl": "/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG",
+                "imageWebUrl": "https://cdn.contoso.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
                 "layout": "imageAndTitle",
                 "showAuthor": false,
                 "showPublishedDate": false,
@@ -135,7 +163,7 @@ Content-type: application/json
         {
             "id": "7d87eee1-7c77-46b5-b2c4-ad6e4e432a8e",
             "name": "Home.aspx",
-            "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Templates/Home.aspx",
+            "webUrl": "https://contoso.sharepoint.com/SitePages/Templates/Home.aspx",
             "title": "Home",
             "pageLayout": "home",
             "showComments": true,
@@ -167,7 +195,7 @@ Content-type: application/json
             },
             "titleArea": {
                 "enableGradientEffect": true,
-                "imageWebUrl": "/siteAssets/titleBackground.jpg",
+                "imageWebUrl": "https://cdn.contoso.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
                 "layout": "imageAndTitle",
                 "showAuthor": true,
                 "showPublishedDate": false,

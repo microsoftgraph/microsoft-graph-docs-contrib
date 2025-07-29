@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "nickludwig"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 07/30/2024
 ---
 
 # List assigned homeRealmDiscoveryPolicy
@@ -68,10 +69,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-5
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-homerealmdiscoverypolicies-on-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-homerealmdiscoverypolicies-on-application-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

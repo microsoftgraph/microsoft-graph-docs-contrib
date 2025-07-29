@@ -1,10 +1,11 @@
 ---
 title: "Delete organizationalBranding"
 description: "Deletes an organizationalBranding object."
-author: "quievey"
+author: nanguil
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete organizationalBranding
@@ -65,10 +66,6 @@ DELETE https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-organizationalbranding-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-organizationalbranding-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

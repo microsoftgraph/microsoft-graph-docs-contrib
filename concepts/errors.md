@@ -2,6 +2,7 @@
 title: "Microsoft Graph error responses and resource types"
 description: "Learn about errors that can be returned in Microsoft Graph responses. Errors are returned using standard HTTP status codes and a JSON error response object."
 ms.localizationpriority: high
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph error responses and resource types
@@ -23,7 +24,7 @@ The following table lists and describes the HTTP status codes that can be return
 | 404         | Not Found                       | The requested resource doesn’t exist.                                                                                                  |
 | 405         | Method Not Allowed              | The HTTP method in the request isn't allowed on the resource.                                                                         |
 | 406         | Not Acceptable                  | This service doesn’t support the format requested in the Accept header.                                                                |
-| 409         | Conflict                        | The current state conflicts with what the request expects. For example, the specified parent folder might not exist.                   |
+| 409         | Conflict                        | The request can't be processed due to a conflict with the current state. For example, the specified parent folder might not exist. For a Directory_ConcurrencyViolation exception, you can repeat the request after some delay. The exponential backoff retry mechanism can be used. If a Retry-After header is present, that value can be used for the delay between retries.                   |
 | 410         | Gone                            | The requested resource is no longer available at the server.                                               |
 | 411         | Length Required                 | A Content-Length header is required on the request.                                                                                    |
 | 412         | Precondition Failed             | A precondition provided in the request (such as an if-match header) doesn't match the resource's current state.                       |
@@ -67,7 +68,7 @@ named **error**. This object includes all the details of the error. You can use 
 The error resource is returned whenever an error occurs in the processing of a request.
 
 Error responses follow the definition in the 
-[Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#7102-error-condition-responses).
+[Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/graph/articles/errorResponses.md).
 
 ### JSON representation
 
@@ -92,7 +93,7 @@ The error resource is composed of a single resource:
 | **code**       | string                 | An error code string for the error that occurred                                                            |
 | **message**    | string                 | A developer ready message about the error that occurred. This shouldn't be displayed to the user directly. |
 | **innererror** | error object           | Optional. An additional error object that might be more specific than the top-level error.                     |
-| **details**    | error object           | Optional. A list of additional error objects that might provide a breakdown of multiple errors encountered while processing the request. |
+| **details**    | error object           | Optional. A list of more error objects that might provide a breakdown of multiple errors encountered while processing the request. |
 
 <!--<a name="msg_properties"> </a> -->
 
@@ -101,7 +102,7 @@ The error resource is composed of a single resource:
 The **code** property contains a machine-readable value that you can take a dependency on in your code.  
 
 The **innererror** object might recursively contain more **innererror** objects
-with additional, more specific error **codes** properties. When handling an error, apps
+with more specific error **codes** properties. When handling an error, apps
 should loop through all the nested error codes that are available and use the most detailed
 one that they understand.
 
@@ -114,7 +115,7 @@ dynamic information specific to the failed request. You should only code
 against error codes returned in **code** properties.
 
 The **details** property is an optional array of error objects that have the same JSON format as the top-level error object.
-In the case of a request that is composed of multiple operations, such as a bulk or batch operation, it might be necessary to return an independent error for each operation. In this case, the **details** list is populated with these individual errors.
+If a request is composed of multiple operations, such as a bulk or batch operation, it might be necessary to return an independent error for each operation. In this case, the **details** list is populated with these individual errors.
 
 <!-- {
   "type": "#page.annotation",

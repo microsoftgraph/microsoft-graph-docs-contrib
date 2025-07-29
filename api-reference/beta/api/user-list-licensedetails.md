@@ -5,6 +5,7 @@ author: "frank-masuelli"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/16/2024
 ---
 
 # List licenseDetails
@@ -23,12 +24,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "user_list_licensedetails" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-licensedetails-permissions.md)]
 
+> [!IMPORTANT]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/users/licenseDetails/read` role permission. The following least privileged roles are supported for this operation:
+> - Guest Inviter
+> - Directory Readers
+> - Directory Writers
+> - License Administrator
+> - User Administrator
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Optional query parameters
 This method supports the `$select` query parameter. For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -58,10 +70,6 @@ GET https://graph.microsoft.com/beta/me/licenseDetails
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-licensedetails-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-licensedetails-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # customer resource type

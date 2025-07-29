@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # educationModule: publish
@@ -63,10 +64,6 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationmodule-publish-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/educationmodule-publish-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationmodule-publish-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -115,6 +112,7 @@ HTTP/1.1 200 Ok
     "status": "published",
     "createdDateTime": "2023-06-21T17:25:44.1277744Z",
     "lastModifiedDateTime": "2023-06-21T17:43:14.7269771Z",
+    "languageTag": null,
     "id": "ba8e4215-4fb2-4dba-abe7-a8f2585177d3",
     "createdBy": {
         "application": null,

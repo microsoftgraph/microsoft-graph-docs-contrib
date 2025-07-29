@@ -3,8 +3,9 @@ title: "deployableContent resource type"
 description: "An abstract type that represents content that is deployable by Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # deployableContent resource type

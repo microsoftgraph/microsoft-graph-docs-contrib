@@ -5,6 +5,7 @@ author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.subservice: "edge-browser-management"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update browserSharedCookie
@@ -86,10 +87,6 @@ Content-length: 349
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-browsersharedcookie-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-browsersharedcookie-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

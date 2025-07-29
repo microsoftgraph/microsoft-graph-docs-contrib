@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # prompt resource type
@@ -18,6 +19,9 @@ Prompt action base type.
 ## Properties
 
 None
+
+## Relationships
+None.
 
 ## JSON representation
 

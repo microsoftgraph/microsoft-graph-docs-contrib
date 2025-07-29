@@ -3,8 +3,9 @@ title: "product: getKnownIssuesByTimeRange"
 description: "Get known issues related to a particular product based on a specified timeframe in the past."
 author: "skandula"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # product: getKnownIssuesByTimeRange
@@ -76,10 +77,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/products/1/GetKnownIs
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/windowsupdatesgetknownissuesbytimerange-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/windowsupdatesgetknownissuesbytimerange-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

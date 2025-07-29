@@ -6,6 +6,7 @@ doc_type: apiPageType
 ms.subservice: "entra-groups"
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.date: 04/04/2024
 ---
 
 # Get endpoint
@@ -68,10 +69,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoint-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-endpoint-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

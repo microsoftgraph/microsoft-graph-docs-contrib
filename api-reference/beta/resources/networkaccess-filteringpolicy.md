@@ -5,6 +5,7 @@ author: "Moti-ba"
 ms.localizationpriority: medium
 ms.subservice: entra-id
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # filteringPolicy resource type

@@ -1,14 +1,15 @@
 ---
-title: "Review guest access to groups using access reviews APIs"
-description: "Learn how to use the access reviews API to review guest access to your organization's resources through Microsoft 365 groups in your Microsoft Entra tenant."
+title: Review guest access to groups using access reviews APIs
+description: Learn how to create and manage access reviews for guest access to Microsoft 365 groups using the access reviews API.
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
-ms.date: 03/25/2024
-#Customer intent: As a developer integrating I want to use the access reviews APIs to review and attest to the access that principals have to resources in my organization, so that I can ensure proper security and compliance in my organization.
+ms.date: 03/07/2025
+
+#customer intent: As a developer, I want to use the access reviews API to automate the auditing of guest access to Microsoft 365 groups so that I can streamline compliance processes.
 ---
 
 # Review guest access to groups using access reviews APIs
@@ -32,7 +33,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 ## Step 1: Create an access review for all Microsoft 365 groups with guests
 
-The following access review series uses following settings:
+The following access review series uses these settings:
 + It's a recurring access review and reviewed quarterly.
 + The group owners are the decision makers.
 + The review scope is limited to only Microsoft 365 groups with guests.
@@ -42,7 +43,7 @@ The following access review series uses following settings:
 
 ### Request
 
-In this call, replace the following values:
+In this call, replace these values:
 
 + `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the ID of the fallback reviewer.
 + Value of **startDate** with today's date and value of **endDate** with a date one year from the start date. 
@@ -123,10 +124,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-accessreviews-m365group-create-accessreviewscheduledefinition-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-accessreviews-m365group-create-accessreviewscheduledefinition-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -245,7 +242,7 @@ Content-type: application/json
 
 ## Step 2: List instances of the access review
 
-The following query lists all instances of the access review definition. If there are more than one Microsoft 365 groups with guests in your tenant, this request returns *one instance for every Microsoft 365 group with guests*.
+The following query lists all instances of the access review definition. If there is more than one Microsoft 365 group with guests in your tenant, this request returns *one instance for each group*.
 
 ### Request
 
@@ -260,10 +257,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-accessreviews-m365group-list-accessreviewinstance-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-accessreviews-m365group-list-accessreviewinstance-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -294,7 +287,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### Response
 
-In this response, the scope includes the test group because it has a guest. In this response, the access review instance is currently `InProgress`. Because it's a quarterly review, a new review instance is created automatically every three months and the reviewers can apply new decisions.
+In this response, the scope includes the test group because it has a guest. The access review instance is currently `InProgress`. Because it's a quarterly review, a new review instance is created automatically every three months, and the reviewers can apply new decisions.
 
 <!-- {
   "blockType": "response",
@@ -327,9 +320,9 @@ Content-type: application/json
 
 ## Step 3: Get decisions
 
-Get the decisions taken for the instance of an access review. In a quarterly review like this one, and as long as the access review is still active:
-+ Every three months a new review instance is created.
-+ Reviewers are required to apply new decisions for new instances.
+Get the decisions for the instance of an access review. In a quarterly review like this one, and as long as the access review is active:
++ A new review instance is created every three months.
++ Reviewers must apply new decisions for new instances.
 
 ### Request
 
@@ -344,10 +337,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-accessreviews-m365group-list-accessreviewinstancedecisionitem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-accessreviews-m365group-list-accessreviewinstancedecisionitem-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -378,7 +367,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### Response
 
-The following response shows the decision taken for the instance of the review.
+The following response shows the decision for the instance of the review.
 
 <!-- {
   "blockType": "response",
@@ -434,7 +423,7 @@ Content-type: application/json
 
 ## Step 4: Clean up resources
 
-In this step, you delete the access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition removes the related settings, instances, and decisions. The request returns a `204 No Content` response.
+In this step, delete the access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition removes the related settings, instances, and decisions. The request returns a `204 No Content` response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -447,10 +436,6 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definit
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-accessreviews-m365group-delete-accessreviewscheduledefinition-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-accessreviews-m365group-delete-accessreviewscheduledefinition-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

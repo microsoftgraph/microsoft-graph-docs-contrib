@@ -5,6 +5,7 @@ author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/13/2024
 ---
 
 # cloudPcReports: getConnectionQualityReports (deprecated)
@@ -89,7 +90,7 @@ Content-length: 200
     "ManagedDeviceName",
     "AvgRoundTripTimeInMsP50",
     "LastConnectionRoundTripTimeInMs",
-    "AvgAvailableBandwidthInMBpsP50",
+    "AvgAvailableBandwidthInMbpsP50",
     "LastConnectionAvailableBandWidthInMSps",
     "AvgRemoteSignInTimeInSecP50",
     "UDPConnectionPercentage",
@@ -107,10 +108,6 @@ Content-length: 200
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsthisgetconnectionqualityreports-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsthisgetconnectionqualityreports-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsthisgetconnectionqualityreports-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -125,10 +122,6 @@ Content-length: 200
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetconnectionqualityreports-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetconnectionqualityreports-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -172,7 +165,7 @@ Content-Type: application/octet-stream
       "PropertyType": "Double"
     },
     {
-      "Column": "AvgAvailableBandwidthInMBpsP50",
+      "Column": "AvgAvailableBandwidthInMbpsP50",
       "PropertyType": "Double"
     },
     {

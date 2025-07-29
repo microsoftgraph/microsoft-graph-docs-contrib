@@ -5,6 +5,7 @@ author: "BarryShehadeh"
 ms.localizationpriority: medium
 ms.subservice: onedrive
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # Get serviceStorageQuotaBreakdown
@@ -64,10 +65,6 @@ GET https://graph.microsoft.com/beta/me/settings/storage/quota/services/OneDrive
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-servicestoragequotabreakdown-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-servicestoragequotabreakdown-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

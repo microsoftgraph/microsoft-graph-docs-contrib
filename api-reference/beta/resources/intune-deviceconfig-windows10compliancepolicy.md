@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # windows10CompliancePolicy resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -75,6 +76,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune-shared-devicecomplian
 |configurationManagerComplianceRequired|Boolean|Require to consider SCCM Compliance state into consideration for Intune Compliance State.|
 |tpmRequired|Boolean|Require Trusted Platform Module(TPM) to be present.|
 |deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)||
+|wslDistributions|[wslDistributionConfiguration](../resources/intune-deviceconfig-wsldistributionconfiguration.md) collection||
 
 ## Relationships
 |Relationship|Type|Description|
@@ -153,6 +155,14 @@ Here is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
     "deviceComplianceScriptId": "String",
     "rulesContent": "binary"
-  }
+  },
+  "wslDistributions": [
+    {
+      "@odata.type": "microsoft.graph.wslDistributionConfiguration",
+      "distribution": "String",
+      "minimumOSVersion": "String",
+      "maximumOSVersion": "String"
+    }
+  ]
 }
 ```

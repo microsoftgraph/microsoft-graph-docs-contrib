@@ -5,6 +5,7 @@ author: "aditijha4"
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: apiPageType
+ms.date: 08/21/2024
 ---
 
 # Delete community
@@ -65,10 +66,6 @@ DELETE https://graph.microsoft.com/v1.0/employeeExperience/communities/eyJfdHlwZ
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-community-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-community-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

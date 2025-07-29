@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # objectMappingMetadataEntry resource type
@@ -31,6 +32,9 @@ Metadata for the given object.
 |IsCustomerDefined |Indicates whether the customer defined this objectMapping.  |
 |ExcludeFromReporting  |When counting synchronized objects for statistics purposes, exclude this mapping. |
 |Unsynchronized |This flag indicates whether a type or attribute is excluded from synchronization but is still necessary for some synchronization logic to work. For example, the type "AppRoleAssignment" is unsynchronized for the Box enterprise application but is still required for the app role assignments logic.  |
+
+## Relationships
+None.
 
 ## JSON representation
 

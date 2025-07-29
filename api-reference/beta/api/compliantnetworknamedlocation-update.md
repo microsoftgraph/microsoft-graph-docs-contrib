@@ -5,6 +5,7 @@ author: "ckeatss"
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Update compliantNetworkNamedLocation
@@ -27,6 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
+
+[!INCLUDE [rbac-conditionalaccess-apis-write](../includes/rbac-for-apis/rbac-conditionalaccess-apis-write.md)]
 
 ## HTTP request
 

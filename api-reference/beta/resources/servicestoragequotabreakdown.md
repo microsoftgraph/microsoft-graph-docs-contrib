@@ -5,6 +5,7 @@ author: "BarryShehadeh"
 ms.localizationpriority: medium
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # serviceStorageQuotaBreakdown resource type

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "frank-masuelli"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # servicePlanInfo resource type

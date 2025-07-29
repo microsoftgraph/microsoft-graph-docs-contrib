@@ -12,8 +12,8 @@ request_body = SocialIdentityProvider(
 	odata_type = "microsoft.graph.socialIdentityProvider",
 	display_name = "Login with Amazon",
 	identity_provider_type = "Amazon",
-	client_id = "56433757-cadd-4135-8431-2c9e3fd68ae8",
-	client_secret = "000000000000",
+	client_id = "00001111-aaaa-2222-bbbb-3333cccc4444",
+	client_secret = "42*****96",
 )
 
 result = await graph_client.identity.identity_providers.post(request_body)

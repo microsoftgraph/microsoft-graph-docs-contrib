@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "aditijha4"
 ms.subservice: "viva-engage"
 doc_type: conceptualPageType
+ms.date: 08/19/2024
 ---
 
 # Use the Microsoft Graph API to work with Viva Engage

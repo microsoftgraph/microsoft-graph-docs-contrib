@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphteams.TeamItemInstalledAppItemRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.ItemInstalledAppsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"consentedPermissionSet","id"},
 }
-configuration := &graphteams.TeamItemInstalledAppItemRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.ItemInstalledAppsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

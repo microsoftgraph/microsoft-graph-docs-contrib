@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 12/04/2024
 ---
 
 # Get cloudPcUserSetting
@@ -73,10 +74,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettin
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcusersetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpcusersetting-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcusersetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -128,6 +125,16 @@ Content-Type: application/json
       "frequencyType": "sixteenHours",
       "userRestoreEnabled": true
     },
+    "crossRegionDisasterRecoverySetting": {
+      "crossRegionDisasterRecoveryEnabled": false,
+      "maintainCrossRegionRestorePointEnabled": true,
+      "disasterRecoveryNetworkSetting": {
+        "regionName": "westus",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
+    },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z"
   }
@@ -151,10 +158,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/usersettin
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcusersetting-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpcusersetting-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -208,6 +211,16 @@ Content-Type: application/json
       "frequencyInHours": 16,
       "frequencyType": "sixteenHours",
       "userRestoreEnabled": true
+    },
+    "crossRegionDisasterRecoverySetting": {
+      "crossRegionDisasterRecoveryEnabled": false,
+      "maintainCrossRegionRestorePointEnabled": true,
+      "disasterRecoveryNetworkSetting": {
+        "regionName": "westus",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
     },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z",

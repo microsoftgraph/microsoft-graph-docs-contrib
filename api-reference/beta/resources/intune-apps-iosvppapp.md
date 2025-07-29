@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # iosVppApp resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -64,6 +65,7 @@ Inherits from [mobileApp](../resources/intune-shared-mobileapp.md)
 |vppTokenOrganizationName|String|The organization associated with the Apple Volume Purchase Program Token|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
 |vppTokenAppleId|String|The Apple Id associated with the given Apple Volume Purchase Program Token.|
+|vppTokenDisplayName|String|Display name of the VPP token associated with this app.|
 |bundleId|String|The Identity Name.|
 |vppTokenId|String|Identifier of the VPP token associated with this app.|
 |revokeLicenseActionResults|[iosVppAppRevokeLicensesActionResult](../resources/intune-apps-iosvppapprevokelicensesactionresult.md) collection|Results of revoke license actions on this app.|
@@ -132,6 +134,7 @@ Here is a JSON representation of the resource.
   "vppTokenOrganizationName": "String",
   "vppTokenAccountType": "String",
   "vppTokenAppleId": "String",
+  "vppTokenDisplayName": "String",
   "bundleId": "String",
   "vppTokenId": "String",
   "revokeLicenseActionResults": [

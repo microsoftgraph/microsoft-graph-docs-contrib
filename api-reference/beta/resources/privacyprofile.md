@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "suawat"
+ms.date: 04/25/2024
 ---
 
 # privacyProfile resource type
@@ -20,6 +21,9 @@ Represents a [company's](organization.md) privacy profile, which includes a priv
 |:---------------|:--------|:----------|
 |contactEmail|String| A valid smtp email address for the privacy statement contact. Not required.|
 |statementUrl|String| A valid URL format that begins with http:// or https://. Maximum length is 255 characters. The URL that directs to the company's privacy statement. Not required.|
+
+## Relationships
+None.
 
 ## JSON representation
 

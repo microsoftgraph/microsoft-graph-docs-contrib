@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kristinmcleod"
 ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 08/05/2024
 ---
 
 # Delete profilePhoto
@@ -42,7 +43,7 @@ The following tables show the least privileged permission or permissions require
 |Application      |    ProfilePhoto.ReadWrite.All           | Group.ReadWrite.All |
 
 > [!NOTE]
-> - Global and user admins can delete the photo of any user in the organization using delegated permissions. This operation also supports application permissions. Deleting the photo of any user in the organization requires *ProfilePhoto.ReadWrite.All* or *User.ReadWrite.All* permissions. Deleting the photo of the signed-in user only requires *User.ReadWrite* permissions.
+> - Global admins, User admins, and People admins can delete the photo of any user in the organization using delegated permissions. This operation also supports application permissions. Deleting the photo of any user in the organization requires *ProfilePhoto.ReadWrite.All* or *User.ReadWrite.All* permissions. Deleting the photo of the signed-in user only requires *User.ReadWrite* permissions.
 
 ## HTTP request
 
@@ -90,10 +91,6 @@ DELETE https://graph.microsoft.com/beta/me/photo/$value
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-profilephoto-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-profilephoto-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

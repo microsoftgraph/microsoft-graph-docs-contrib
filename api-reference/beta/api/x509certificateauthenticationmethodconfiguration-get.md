@@ -5,6 +5,7 @@ author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/07/2024
 ---
 
 # Get x509CertificateAuthenticationMethodConfiguration
@@ -65,10 +66,6 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-x509certificateauthenticationmethodconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-x509certificateauthenticationmethodconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -135,6 +132,22 @@ Content-Type: application/json
     "issuerHintsConfiguration": {
         "state": "disabled"
     },
+    "crlValidationConfiguration": {
+        "state": "disabled",
+        "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": []
+    },
+    "certificateAuthorityScopes": [
+        {
+            "subjectKeyIdentifier": "aaaaaaaabbbbcccc111122222222222222333333",
+            "publicKeyInfrastructureIdentifier": "Contoso PKI",
+            "includeTargets": [
+            {
+                "id": "aaaaaaaa-bbbb-cccc-1111-222222222222",
+                "targetType": "group"
+            }
+            ]
+        } 
+    ],    
     "includeTargets": [
         {
             "targetType": "group",

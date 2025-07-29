@@ -1,45 +1,45 @@
 ---
 title: "Delete microsoftAuthenticatorAuthenticationMethod"
-description: "Deletes a microsoftAuthenticatorAuthenticationMethod object."
+description: "Delete a microsoftAuthenticatorAuthenticationMethod object."
 author: "mjsantani"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 07/28/2025
 ---
 
 # Delete microsoftAuthenticatorAuthenticationMethod
 Namespace: microsoft.graph
 
-Deletes a [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) object.
+Delete a [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-
-<!-- { "blockType": "permissions", "name": "microsoftauthenticatorauthenticationmethod_delete" } -->
+<!-- { "blockType": "permissions", "name": "microsoftauthenticatorauthenticationmethod-delete-permissions", "requestUrls": ["DELETE /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}"] } -->
 [!INCLUDE [permissions-table](../includes/permissions/microsoftauthenticatorauthenticationmethod-delete-permissions.md)]
-
-### Permissions acting on other users
-
-<!-- { "blockType": "permissions", "name": "microsoftauthenticatorauthenticationmethod_delete_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/microsoftauthenticatorauthenticationmethod-delete-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
 Delete your own Microsoft Authenticator authentication method.
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 DELETE /me/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
 
 Delete your own or another user's Microsoft Authenticator authentication method.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 DELETE /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
@@ -74,10 +74,6 @@ DELETE https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/mic
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-microsoftauthenticatorauthenticationmethod-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-microsoftauthenticatorauthenticationmethod-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 description: "Allows you to receive near-real-time change notifications for a drive using socket.io."
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get websocket endpoint
@@ -59,10 +60,6 @@ GET /me/drive/root/subscriptions/socketIo
 [!INCLUDE [sample-code](../includes/snippets/csharp/drive-root-subscriptions-socketio-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/drive-root-subscriptions-socketio-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/drive-root-subscriptions-socketio-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -112,17 +109,30 @@ The `notificationUrl` returned is a socket.io endpoint URL.
 
 The following example shows how to use the `notificationUrl` with socket.io in JavaScript.
 
-```javascript
-// this is the notificationUrl returned from this API
-var notificationUrl = "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523";
-
-// 'io' comes from the socket.io client library
-var socket = io(notificationUrl);
-
-// these examples log to the console.
-// your app would provide its own callbacks
-socket.on("connect", ()=>console.log("Connected!"));
-socket.on("notification", (data)=>console.log("Notification!", data));
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"></script>
+<script>
+  // This is the notificationUrl returned from this API
+  var notificationUrl = "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523";
+  
+  // 'io' comes from the socket.io client library
+  var socket = io(notificationUrl, {
+    transports: ['websocket'] // Make sure to use "websocket" instead of the default value of "polling" which isn't supported
+  });
+  
+  socket.on("connect", () => {
+    console.log(`connect`, socket.id);
+  });
+  
+  socket.on("disconnect", () => {
+    // Returns "undefined" on disconnect
+    console.log(`disconnect`, socket.id);
+  });
+  
+  socket.on("notification", (data) => {
+    console.log(`Notification received:`, data);
+  });
+</script>
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 

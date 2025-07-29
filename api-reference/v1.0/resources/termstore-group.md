@@ -5,6 +5,7 @@ doc_type: "resourcePageType"
 description: "Represents a group used in a term store."
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
+ms.date: 05/23/2024
 ---
 
 # Group resource type

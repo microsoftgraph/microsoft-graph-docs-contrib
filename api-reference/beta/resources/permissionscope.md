@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "psignoret"
+ms.date: 03/21/2024
 ---
 
 # permissionScope resource type
@@ -29,6 +30,9 @@ Delegated permissions can be requested by client applications needing an access 
 |userConsentDescription|String|A description of the delegated permissions, intended to be read by a user granting the permission on their own behalf. This text appears in consent experiences where the user is consenting only on behalf of themselves.|
 |userConsentDisplayName|String|A title for the permission, intended to be read by a user granting the permission on their own behalf. This text appears in consent experiences where the user is consenting only on behalf of themselves.|
 |value|String|Specifies the value to include in the `scp` (scope) claim in access tokens. Must not exceed 120 characters in length. Allowed characters are `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~`, and characters in the ranges `0-9`, `A-Z` and `a-z`. Any other character, including the space character, aren't allowed. May not begin with `.`.|
+
+## Relationships
+None.
 
 ## JSON representation
 

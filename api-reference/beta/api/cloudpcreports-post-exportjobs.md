@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/13/2024
 ---
 
 # Create cloudPcExportJob
@@ -48,7 +49,8 @@ You can specify the following properties when you create a **cloudPcExportJob**.
 |Property|Type|Description|
 |:---|:---|:---|
 |filter|String|The filter applied on the report. Optional.|
-|reportName|cloudPcReportName|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`,  `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`,  `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`.|
+|format|String|The format of the exported report. Optional.|
+|reportName|[cloudPcReportName](../resources/cloudpcexportjob.md#cloudpcreportname-values)|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`, `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`, `cloudPcInsightReport`, `regionalInaccessibleCloudPcTrendReport`, `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport` . Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`, `cloudPcInsightReport`, `regionalInaccessibleCloudPcTrendReport`, `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`.|
 |select|String collection|The selected columns of the report. Optional.|
 
 ## Response
@@ -90,10 +92,6 @@ Content-length: 315
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpcexportjob-from-example1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-cloudpcexportjob-from-example1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -182,7 +180,7 @@ Content-length: 315
     "ManagedDeviceName",
     "AvgRoundTripTimeInMsP50",
     "LastConnectionRoundTripTimeInMs",
-    "AvgAvailableBandwidthInMBpsP50",
+    "AvgAvailableBandwidthInMbpsP50",
     "LastConnectionAvailableBandWidthInMSps",
     "AvgRemoteSignInTimeInSecP50",
     "UDPConnectionPercentage",
@@ -196,10 +194,6 @@ Content-length: 315
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpcexportjob-from-example2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-cloudpcexportjob-from-example2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -252,7 +246,7 @@ Content-Type: application/json
     "ManagedDeviceName",
     "AvgRoundTripTimeInMsP50",
     "LastConnectionRoundTripTimeInMs",
-    "AvgAvailableBandwidthInMBpsP50",
+    "AvgAvailableBandwidthInMbpsP50",
     "LastConnectionAvailableBandWidthInMSps",
     "AvgRemoteSignInTimeInSecP50",
     "UDPConnectionPercentage",

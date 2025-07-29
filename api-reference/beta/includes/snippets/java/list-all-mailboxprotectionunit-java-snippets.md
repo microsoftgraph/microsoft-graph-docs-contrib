@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-MailboxProtectionUnitCollectionResponse result = graphClient.solutions().backupRestore().mailboxProtectionUnits().get();
+MailboxProtectionUnitCollectionResponse result = graphClient.solutions().backupRestore().protectionUnits().graphMailboxProtectionUnit().get();
 
 
 ```

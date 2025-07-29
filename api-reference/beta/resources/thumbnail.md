@@ -25,6 +25,9 @@ The **thumbnail** resource type represents a thumbnail for an image, video, docu
 | width        | Int32  | The width of the thumbnail, in pixels.                                                                                      |
 | content | Stream | The content stream for the thumbnail. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 Here is a JSON representation of the **thumbnail** resource.

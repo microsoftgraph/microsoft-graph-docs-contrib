@@ -5,6 +5,7 @@ author: "srutto"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List daily mfaCompletions
@@ -65,10 +66,6 @@ GET https://graph.microsoft.com/beta/reports/userInsights/daily/mfaCompletions
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-dailymfacompletionmetric-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-dailymfacompletionmetric-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -3,8 +3,9 @@ title: "knowledgeBaseArticle resource type"
 description: "Represents a knowledge base article."
 author: "angiechen22"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # knowledgeBaseArticle resource type

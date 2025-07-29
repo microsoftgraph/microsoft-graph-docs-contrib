@@ -5,6 +5,7 @@ author: "ningjingbogithub"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 08/16/2024
 ---
 
 # cloudPC: getFrontlineCloudPcAccessState
@@ -81,10 +82,6 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d332
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-cloudpcgetfrontlinecloudpcaccessstate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-cloudpcgetfrontlinecloudpcaccessstate-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-cloudpcgetfrontlinecloudpcaccessstate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -99,10 +96,6 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d332
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/user-cloudpcgetfrontlinecloudpcaccessstate-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/user-cloudpcgetfrontlinecloudpcaccessstate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -151,10 +144,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/b
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcgetfrontlinecloudpcaccessstate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcgetfrontlinecloudpcaccessstate-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpcgetfrontlinecloudpcaccessstate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -169,10 +158,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/b
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcgetfrontlinecloudpcaccessstate-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcgetfrontlinecloudpcaccessstate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

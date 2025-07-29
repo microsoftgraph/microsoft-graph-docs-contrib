@@ -18,10 +18,10 @@ import (
 
 requestFilter := "(displayName eq 'General')"
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceEntitlementManagementCatalogsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.EntitlementManagementCatalogsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentitygovernance.IdentityGovernanceEntitlementManagementCatalogsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.EntitlementManagementCatalogsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

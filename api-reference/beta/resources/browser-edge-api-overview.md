@@ -5,6 +5,7 @@ author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.subservice: "edge-browser-management"
 doc_type: conceptualPageType
+ms.date: 03/12/2024
 ---
 
 # Use the Edge API in Microsoft Graph (preview)

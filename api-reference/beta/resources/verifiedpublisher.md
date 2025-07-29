@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "xurobertMSFT"
+ms.date: 03/21/2024
 ---
 
 # verifiedPublisher resource type
@@ -23,6 +24,9 @@ Represents a verified publisher of an [application](application.md). For more in
 |displayName|String|The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.|
 |verifiedPublisherId|String| The ID of the verified publisher from the app publisher's Partner Center account. |
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

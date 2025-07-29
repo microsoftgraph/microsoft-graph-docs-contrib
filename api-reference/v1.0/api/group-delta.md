@@ -6,13 +6,14 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # group: delta
 
 Namespace: microsoft.graph
 
-Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection. See [Using Delta Query](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted [groups](../resources/group.md), including group membership changes, without having to perform a full read of the entire group collection. For more information, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -50,8 +51,10 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 
 This method supports optional OData query parameters to help customize the response.
 
-- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.
-- You can use `$select=members` to get membership changes. You can additionally track other changes like ownership and more by selecting any [group relationship](../resources/group.md#relationships) of type **directoryObject collection**.
+- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The **id** property is always returned.
+- You can use `$select=members` to get membership changes.
+   - You can additionally track other changes like ownership and more by selecting any [group relationship](../resources/group.md#relationships) of type **directoryObject collection**.
+   - Only the **id** property of the related resource is returned.
 - There's limited support for `$filter`:
   - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
 
@@ -118,10 +121,6 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/group-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -214,10 +213,6 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-with-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/group-delta-with-select-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-delta-with-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -290,10 +285,6 @@ Prefer: return=minimal
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-minimal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/group-delta-minimal-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

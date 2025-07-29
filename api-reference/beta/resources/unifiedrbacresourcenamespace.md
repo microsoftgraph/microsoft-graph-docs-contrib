@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 toc.title: Resource namespace
+ms.date: 06/12/2024
 ---
 
 # unifiedRbacResourceNamespace resource type

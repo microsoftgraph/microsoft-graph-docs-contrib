@@ -7,6 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Bookings
 
 $params = @{
+	externalRegistrationInformation = @{
+		referrer = "Fabrikam"
+		registrationId = "myExternalRegistrationId"
+	}
 	preferredTimezone = "Pacific Standard Time"
 	preferredLanguage = "en-us"
 	registrationQuestionAnswers = @(

@@ -6,6 +6,7 @@ author: "mmast-msft"
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: School
+ms.date: 06/14/2024
 ---
 
 # educationSchool resource type

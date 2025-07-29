@@ -5,13 +5,14 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-groups"
 author: "psignoret"
+ms.date: 10/15/2024
 ---
 
 # List appRoleAssignments granted to a group
 
 Namespace: microsoft.graph
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a group.
+Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a [group](../resources/group.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "group_list_approleassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-list-approleassignments-permissions.md)]
+
+[!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
 
 ## HTTP request
 
@@ -66,10 +69,6 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-approleassignments-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/group-get-approleassignments-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

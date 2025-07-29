@@ -18,10 +18,10 @@ import (
 
 requestFilter := "settingType eq 'backup'"
 
-requestParameters := &graphusers.ItemSettingsWindowsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.SettingsWindowsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphusers.ItemSettingsWindowsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.SettingsWindowsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

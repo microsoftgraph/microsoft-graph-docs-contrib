@@ -15,7 +15,8 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Team();
 $requestBody->setDisplayName('My Sample Team');
-$requestBody->setDescription('My Sample Team’s Description');
+$requestBody->setDescription('My sample team’s description');
+$requestBody->setFirstChannelName('My first channel of the sample team');
 $membersConversationMember1 = new AadUserConversationMember();
 $membersConversationMember1->setOdataType('#microsoft.graph.aadUserConversationMember');
 $membersConversationMember1->setRoles(['owner', 	]);

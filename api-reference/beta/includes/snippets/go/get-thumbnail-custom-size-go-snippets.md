@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphdrives.DriveItemItemItemThumbnailsRequestBuilderGetQueryParameters{
+requestParameters := &graphdrives.ItemItemsItemThumbnailsRequestBuilderGetQueryParameters{
 	Select: [] string {"c300x400_crop"},
 }
-configuration := &graphdrives.DriveItemItemItemThumbnailsRequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.ItemItemsItemThumbnailsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -3,8 +3,9 @@ title: "deployment resource type"
 description: "Represents the deployment of content to a set of devices."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # deployment resource type

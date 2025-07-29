@@ -5,6 +5,7 @@ author: "mashriv"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/22/2024
 ---
 
 # Delete outlookTaskGroup (deprecated)
@@ -60,10 +61,6 @@ DELETE https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AA
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-outlooktaskgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-outlooktaskgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

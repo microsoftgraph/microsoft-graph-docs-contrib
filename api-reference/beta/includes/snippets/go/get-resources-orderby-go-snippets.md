@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &grapheducation.EducationClasseItemAssignmentItemSubmissionItemResourcesRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ClassesItemAssignmentsItemSubmissionsItemResourcesRequestBuilderGetQueryParameters{
 	Orderby: [] string {"resource/createdDateTime"},
 }
-configuration := &grapheducation.EducationClasseItemAssignmentItemSubmissionItemResourcesRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ClassesItemAssignmentsItemSubmissionsItemResourcesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

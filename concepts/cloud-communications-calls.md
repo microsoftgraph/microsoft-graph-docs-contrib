@@ -4,6 +4,7 @@ description: "Learn about the supported call types in the cloud communications A
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
+ms.date: 11/07/2024
 ---
 
 # Supported call types

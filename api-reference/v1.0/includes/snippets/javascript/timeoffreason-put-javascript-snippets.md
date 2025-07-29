@@ -13,7 +13,8 @@ const client = Client.init(options);
 const timeOffReason = {
   displayName: 'Vacation',
   iconType: 'plane',
-  isActive: true
+  isActive: true,
+  code: 'VacationCode'
 };
 
 await client.api('/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}')

@@ -3,8 +3,9 @@ title: "Software updates with Windows Autopatch"
 description: "Software updates are the primary type of content Windows Autopatch deploys. You can look in a catalog to find specific updates that are available to deploy."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Software updates with Windows Autopatch

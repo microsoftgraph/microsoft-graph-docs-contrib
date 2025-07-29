@@ -5,6 +5,7 @@ author: "nickgmicrosoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # pkcs12CertificateInformation resource type
@@ -23,6 +24,9 @@ Represents the public information of a Pkcs12 certificate.
 |thumbprint|String| The certificate thumbprint. |
 |notAfter|Integer| The certificate's expiry. This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)|
 |notBefore|Integer| The certificate's issue time (not before). This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)|
+
+## Relationships
+None.
 
 ## JSON representation
 

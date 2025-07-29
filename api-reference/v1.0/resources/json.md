@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ruoyingl"
 ms.subservice: excel
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # json resource type 

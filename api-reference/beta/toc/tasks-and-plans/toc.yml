@@ -110,6 +110,12 @@ items:
     href: ../../api/plannertaskdetails-get.md
   - name: Update task details
     href: ../../api/plannertaskdetails-update.md
+- name: Teams channel planner
+  items:
+  - name: Teams channel planner
+    href: ../../resources/teamschannelplanner.md
+  - name: List plans
+    href: ../../api/teamschannelplanner-list-plans.md
 - name: Business scenarios (preview)
   items:
   - name: Overview

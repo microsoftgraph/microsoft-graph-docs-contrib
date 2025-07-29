@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: No MFA on activation
+ms.date: 09/19/2024
 ---
 
 # noMfaOnRoleActivationAlertIncident resource type
@@ -17,6 +18,11 @@ Namespace: microsoft.graph
 Represents the details of an alert incident that is triggered if roles don't require multi-factor authentication for activation.
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) resource type.
 
 ## Properties
 |Property|Type|Description|

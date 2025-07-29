@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # plannerFavoritePlanReferenceCollection resource type

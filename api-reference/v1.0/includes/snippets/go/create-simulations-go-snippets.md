@@ -48,10 +48,12 @@ endUserNotificationSetting.SetSettingType(&settingType)
 positiveReinforcement := graphmodels.NewPositiveReinforcementNotification()
 deliveryPreference := graphmodels.DELIVERAFTERCAMPAIGNEND_NOTIFICATIONDELIVERYPREFERENCE 
 positiveReinforcement.SetDeliveryPreference(&deliveryPreference) 
-endUserNotification := "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a"
-positiveReinforcement.SetEndUserNotification(&endUserNotification) 
 defaultLanguage := "en"
 positiveReinforcement.SetDefaultLanguage(&defaultLanguage) 
+additionalData := map[string]interface{}{
+	"endUserNotification@odata.bind" : "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a", 
+}
+positiveReinforcement.SetAdditionalData(additionalData)
 endUserNotificationSetting.SetPositiveReinforcement(positiveReinforcement)
 additionalData := map[string]interface{}{
 simulationNotification := graph.New()

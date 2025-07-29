@@ -1,16 +1,17 @@
 ---
-title: "Microsoft Graph connectors SDK contracts connector OAuth API"
+title: "Microsoft 365 Copilot connectors SDK contracts connector OAuth API"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Learn about the Microsoft Graph connectors SDK contracts connector OAuth API."
+description: "Learn about the Copilot connectors SDK contracts connector OAuth API."
+ms.date: 11/07/2024
 ---
 
-# Microsoft Graph connectors SDK connector OAuth API
+# Copilot connectors SDK connector OAuth API
 
-The Microsoft Graph connectors SDK contracts connector OAuth API is used for OAuth flows such as refreshing access tokens during crawls.
+The Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) SDK contracts connector OAuth API is used for OAuth flows such as refreshing access tokens during crawls.
 
 ## Connector OAuth APIs
 

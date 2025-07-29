@@ -22,10 +22,10 @@ headers.Add("ConsistencyLevel", "eventual")
 
 requestCount := true
 
-requestParameters := &graphgroups.GroupItemTransitiveMembersGraph.groupRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.ItemTransitiveMembersGraph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 }
-configuration := &graphgroups.GroupItemTransitiveMembersGraph.groupRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.ItemTransitiveMembersGraph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

@@ -5,6 +5,7 @@ author: "benlee-msft"
 ms.localizationpriority: high
 ms.subservice: "cloud-communications"
 ms.custom: scenarios:getting-started
+ms.date: 07/12/2024
 ---
 
 # Get change notifications for Microsoft Teams meeting call event updates

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "Sammak"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # identitySecurityDefaultsEnforcementPolicy resource type

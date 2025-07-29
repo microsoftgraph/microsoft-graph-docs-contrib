@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # objectDefinition resource type
@@ -408,6 +409,9 @@ Describes an object and its attributes. Object definitions are part of [director
     "name": "User"
 }
 ```
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -6,6 +6,8 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Too many Global Administrators
+ms.date: 09/19/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # tooManyGlobalAdminsAssignedToTenantAlertIncident resource type
@@ -19,6 +21,11 @@ Represents the details of an alert incident that is triggered if there are too m
 The threshold that triggers this incident when its reached is defined in the [tooManyGlobalAdminsAssignedToTenantAlertConfiguration resource type](toomanyglobaladminsassignedtotenantalertconfiguration.md).
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) resource type.
 
 ## Properties
 |Property|Type|Description|

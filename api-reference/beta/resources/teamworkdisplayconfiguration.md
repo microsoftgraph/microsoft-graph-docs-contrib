@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkDisplayConfiguration resource type
@@ -24,6 +25,9 @@ Represents the details about the display configuration for a Microsoft Teams-ena
 |isContentDuplicationAllowed|Boolean|`True` if content duplication is allowed. Applicable only for Teams Rooms devices.|
 |isDualDisplayModeEnabled|Boolean|`True` if dual display mode is enabled. If **isDualDisplayModeEnabled** is `true`, then the content will be displayed on both front of room screens instead of just the one screen, when it is shared via the HDMI ingest module on the Microsoft Teams Rooms device. Applicable only for Teams Rooms devices.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

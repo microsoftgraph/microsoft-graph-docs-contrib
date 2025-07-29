@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/06/2024
 ---
 
 # Get orgContact
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "orgcontact_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/orgcontact-get-permissions.md)]
+
+[!INCLUDE [rbac-org-contacts-apis-read-all](../includes/rbac-for-apis/rbac-org-contacts-apis-read-all.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -57,10 +60,6 @@ GET https://graph.microsoft.com/beta/contacts/25caf6a2-d5cb-470d-8940-20ba795ef6
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-orgcontact-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-orgcontact-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

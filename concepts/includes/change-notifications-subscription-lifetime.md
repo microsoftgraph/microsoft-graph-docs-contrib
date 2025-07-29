@@ -5,6 +5,7 @@ ms.reviewer: ric.lewis
 ms.subservice: change-notifications
 ms.topic: include
 ms.localizationpriority: high
+ms.date: 11/07/2024
 ---
 
 <!-- markdownlint-disable MD041-->
@@ -13,6 +14,7 @@ ms.localizationpriority: high
 
 | Resource                                       | Maximum expiration time           |
 |:-----------------------------------------------|:----------------------------------|
+| Copilot [aiInteraction][]                      | 4,320 minutes (three days)     |
 | Security [alert][]                             | 43,200 minutes (under 30 days)    |
 | Teams [approvals][]                            | 43,200 minutes (under 30 days)    |
 | Teams [callRecord][]                           | 4,230 minutes (under three days)  |
@@ -24,6 +26,7 @@ ms.localizationpriority: high
 | Teams [conversationMember][]                   | 4,320 minutes (three days)        |
 | Teams [onlineMeeting][]                        | 4,320 minutes (three days)        |
 | Teams [team][]                                 | 4,320 minutes (three days)        |
+| Teams [teamsAppInstallation][]                 | 4,320 minutes (3 days)        |
 | Teams Shifts [offerShiftRequest][]             | 360 minutes (6 hours)             |
 | Teams Shifts [openShiftChangeRequest][]        | 360 minutes (6 hours)             |
 | Teams Shifts [shift][]                         | 360 minutes (6 hours)             |
@@ -32,18 +35,19 @@ ms.localizationpriority: high
 | Group [conversation][]                         | 4,230 minutes (under three days)  |
 | OneDrive [driveItem][]                         | 42,300 minutes (under 30 days)    |
 | SharePoint [list][]                            | 42,300 minutes (under 30 days)    |
-| Outlook [message][], [event][], [contact][]    | 4,230 minutes (under three days)  |
+| Outlook [message][], [event][], [contact][]    | 10,080 minutes (under seven days)  |
 | [user][], [group][], other directory resources | 41,760 minutes (under 29 days)    |
 | [onlineMeeting][]                              | 4,230 minutes (under three days)  |
 | [presence][]                                   | 60 minutes (1 hour)               |
 | Print [printer][]                              | 4,230 minutes (under three days)  |
 | Print [printTaskDefinition][]                  | 4,230 minutes (under three days)  |
 | [todoTask][]                                   | 4,230 minutes (under three days) <br/><br/>Webhooks for this resource are only available in the global endpoint and not in the national clouds.  |
+| Microsoft Entra Health Monitoring [alert][health monitoring alert] | 42,300 minutes (under 30 days)    |
 | **baseTask** (deprecated)                      | 4,230 minutes (under three days)  |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
 
-
+[aiInteraction]: /graph/api/resources/aiinteraction
 [contact]: /graph/api/resources/contact
 [conversation]: /graph/api/resources/conversation
 [driveItem]: /graph/api/resources/driveitem
@@ -71,4 +75,6 @@ ms.localizationpriority: high
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
+[teamsAppInstallation]: /graph/api/resources/teamsappinstallation
 [approvals]: /graph/api/resources/approvalItem
+[health monitoring alert]: /graph/api/resources/healthmonitoring-alert

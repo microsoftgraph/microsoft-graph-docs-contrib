@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getSharePointSiteUsageFileCounts
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
+> **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint site usage](https://learn.microsoft.com/microsoft-365/admin/activity-reports/sharepoint-site-usage-ww?view=o365-worldwide).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -84,10 +85,6 @@ GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsageFileCounts(pe
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getsharepointsiteusagefilecounts-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/reportroot-getsharepointsiteusagefilecounts-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -7,7 +7,7 @@ ms.reviewer: jackson.woods
 ms.topic: how-to
 ms.localizationpriority: high
 ms.subservice: entra-applications
-ms.custom: graphiamtop20
+ms.custom: graphiamtop20, sfi-image-nochange
 ms.date: 08/26/2024
 #customer intent: As a developer, I want to understand how my app can call Microsoft Graph on behalf of a signed-in user to access resources in a tenant.
 ---
@@ -265,4 +265,5 @@ Access the [Microsoft identity platform code samples](/entra/identity-platform/s
 
 ## Related content
 
-Explore [Microsoft Graph tutorials](/graph/tutorials) to create basic applications that access data in app-only scenarios.
+- Explore [Microsoft Graph tutorials](/graph/tutorials) for code samples that are built using different SDKs to create basic applications that authenticate using certificate-based credentials to access data in app-only scenarios.
+- [Add a certificate to an app using Microsoft Graph](/graph/applications-how-to-add-certificate) shows a step-by-step process to add a certificate to an app for certificate-based authentication and app-only access to data.

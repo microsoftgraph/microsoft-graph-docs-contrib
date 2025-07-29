@@ -4,6 +4,7 @@ description: "Learn how to configure Connected Services in Visual Studio to use 
 ms.localizationpriority: high
 ms.subservice: "reports"
 author: "sarahwxy"
+ms.date: 11/07/2024
 ---
 
 # Configure Microsoft 365 services with the Microsoft Graph API in Visual Studio

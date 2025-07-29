@@ -5,6 +5,7 @@ author: "linkhp"
 ms.localizationpriority: high
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get authenticationFlowsPolicy
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "authenticationflowspolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authenticationflowspolicy-get-permissions.md)]
+
+[!INCLUDE [rbac-authentication-flow-policy-read](../includes/rbac-for-apis/rbac-authentication-flow-policy-read.md)]
 
 ## HTTP request
 
@@ -65,10 +68,6 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationFlowsPolicy
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-authenticationflowspolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-authenticationflowspolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

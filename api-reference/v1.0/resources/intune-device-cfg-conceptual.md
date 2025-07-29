@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: conceptualPageType
+ms.date: 04/18/2024
 ---
 
 # Device configuration in Microsoft Intune

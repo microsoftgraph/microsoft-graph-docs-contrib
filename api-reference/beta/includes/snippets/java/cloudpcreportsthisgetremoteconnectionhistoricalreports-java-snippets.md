@@ -15,7 +15,7 @@ select.add("SignInDateTime");
 select.add("SignOutDateTime");
 select.add("UsageInHour");
 select.add("RoundTripTimeInMsP50");
-select.add("AvailableBandwidthInMBpsP50");
+select.add("AvailableBandwidthInMbpsP50");
 select.add("RemoteSignInTimeInSec");
 getRemoteConnectionHistoricalReportsPostRequestBody.setSelect(select);
 getRemoteConnectionHistoricalReportsPostRequestBody.setTop(25);

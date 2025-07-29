@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 08/26/2024
 ---
 
 # Update exchangeRestoreSession
@@ -76,19 +77,19 @@ Content-Type: application/json
 {
   "mailboxRestoreArtifacts@delta": [
     {
-      "restorePoint": { "@odata.id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" }, //Create a new mailbox restore artifact and add it under the Restore Session.
+      "restorePoint": { "id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" }, //Create a new mailbox restore artifact and add it under the Restore Session.
       "destinationType": "inPlace"
     },
     {
-      "restorePoint": { "@odata.id": "2b014d8c-71fe-4d00-a01a-31850bc5b32" },
+      "restorePoint": { "id": "2b014d8c-71fe-4d00-a01a-31850bc5b32" },
       "destinationType": "inPlace"
     },
     {
-      "restorePoint": { "@odata.id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace"
     },
     {
-      "restorePoint": { "@odata.id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace"
     },
     {
@@ -115,10 +116,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/exchangerestoresession-update-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/exchangerestoresession-update-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -161,28 +158,28 @@ Content-Type: application/json
   "mailboxRestoreArtifacts@delta": [
     {
       "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "restorePoint": { "@odata.id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
       "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "67014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "restorePoint": { "@odata.id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
       "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "56014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "restorePoint": { "@odata.id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
       "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "32014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "restorePoint": { "@odata.id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
+      "restorePoint": { "id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
       "createdDateTime": "2015-06-19T12:01:03.45Z"

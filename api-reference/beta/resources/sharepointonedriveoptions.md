@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: "yiwenwang"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+toc.title: "SharePoint OneDrive options"
+ms.date: 09/19/2024
 ---
 
 # sharePointOneDriveOptions resource type

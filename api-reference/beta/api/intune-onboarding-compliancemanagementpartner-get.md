@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get complianceManagementPartner
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -65,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1918
+Content-Length: 2462
 
 {
   "value": {
@@ -75,6 +76,7 @@ Content-Length: 1918
     "partnerState": "unavailable",
     "displayName": "Display Name value",
     "macOsOnboarded": true,
+    "linuxOnboarded": true,
     "androidOnboarded": true,
     "iosOnboarded": true,
     "macOsEnrollmentAssignments": [
@@ -102,6 +104,18 @@ Content-Length: 1918
       }
     ],
     "iosEnrollmentAssignments": [
+      {
+        "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
+        "target": {
+          "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+          "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+          "deviceAndAppManagementAssignmentFilterType": "include",
+          "targetType": "user",
+          "entraObjectId": "Entra Object Id value"
+        }
+      }
+    ],
+    "linuxEnrollmentAssignments": [
       {
         "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
         "target": {

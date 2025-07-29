@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: enumPageType
 ms.subservice: security
 author: "preetikr"
+ms.date: 03/06/2024
 ---
 
 # fileHashType enum type

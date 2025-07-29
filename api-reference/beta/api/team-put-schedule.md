@@ -2,6 +2,7 @@
 title: "Create or replace schedule"
 description: "Create or replace a **schedule** object."
 author: "shanemalone"
+ms.date: 12/04/2024
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
@@ -46,7 +47,7 @@ PUT /teams/{teamId}/schedule
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
-| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. The `MS-APP-ACTS-AS` header is deprecated and no longer required with application tokens.|
 
 ## Request body
 
@@ -81,10 +82,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-put-schedule-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/team-put-schedule-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -141,6 +138,7 @@ Content-type: application/json
   "timeOffRequestsEnabled": true,
   "startDayOfWeek": "Sunday",
   "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isActivitiesIncludedWhenCopyingShiftsEnabled": true,
   "isCrossLocationShiftsEnabled": true,
   "isCrossLocationShiftRequestApprovalRequired": true
 }
@@ -170,26 +168,15 @@ PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/
   "offerShiftRequestsEnabled": true,
   "timeOffRequestsEnabled": true,
   "startDayOfWeek": "Tuesday",
-  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isActivitiesIncludedWhenCopyingShiftsEnabled": true,
   "isCrossLocationShiftsEnabled": true,
   "isCrossLocationShiftRequestApprovalRequired": true,
-  "timeClockEnabled": true,
-  "timeClockSettings": {
-    "approvedLocation": {
-      "altitude": 1024.13,
-      "latitude": 26.13246,
-      "longitude": 24.34616
-    }
-  }
+  "timeClockEnabled": true
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-put-schedule-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/team-put-schedule-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -209,7 +196,7 @@ PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-put-schedule-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -244,16 +231,10 @@ Content-type: application/json
   "timeOffRequestsEnabled": true,
   "startDayOfWeek": "Tuesday",
   "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isActivitiesIncludedWhenCopyingShiftsEnabled": true,
   "isCrossLocationShiftsEnabled": true,
   "isCrossLocationShiftRequestApprovalRequired": true,
-  "timeClockEnabled": true,
-  "timeClockSettings": {
-    "approvedLocation": {
-      "altitude": 1024.13,
-      "latitude": 26.13246,
-      "longitude": 24.34616
-    }
-  }
+  "timeClockEnabled": true
 }
 ```
 

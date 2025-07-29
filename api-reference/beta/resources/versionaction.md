@@ -18,6 +18,15 @@ The presence of the **VersionAction** resource on an [**itemActivity**][activity
 
 [activity]: itemactivity.md
 
+## Properties
+
+| Property   | Type   | Description                                                  |
+| :--------- | :----- | :----------------------------------------------------------- |
+| newVersion | string | The name of the new version that was created by this action. |
+
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {
@@ -31,12 +40,6 @@ The presence of the **VersionAction** resource on an [**itemActivity**][activity
   "newVersion": "string"
 }
 ```
-
-## Properties
-
-| Property   | Type   | Description                                                  |
-| :--------- | :----- | :----------------------------------------------------------- |
-| newVersion | string | The name of the new version that was created by this action. |
 
 ## Remarks
 

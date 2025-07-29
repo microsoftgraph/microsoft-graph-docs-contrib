@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "The calculated column on a columnDefinition resource indicates that the column's data is calculated based on other columns in the site."
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 # calculatedColumn resource type
 

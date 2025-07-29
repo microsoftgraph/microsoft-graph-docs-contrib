@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "PaulEkirapa"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/06/2024
 ---
 
 # orgContact: retryServiceProvisioning
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Retry the [orgContact](../resources/orgContact.md) service provisioning.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -23,6 +24,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "orgcontact_retryserviceprovisioning" } -->
 [!INCLUDE [permissions-table](../includes/permissions/orgcontact-retryserviceprovisioning-permissions.md)]
+
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Directory Writers
+> - Intune Administrator
+> - User Administrator
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -61,10 +68,6 @@ POST https://graph.microsoft.com/beta/contacts/{id}/retryServiceProvisioning
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-retryserviceprovisioning-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/orgcontact-retryserviceprovisioning-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

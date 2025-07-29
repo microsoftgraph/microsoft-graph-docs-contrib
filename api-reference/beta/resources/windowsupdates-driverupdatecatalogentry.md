@@ -3,8 +3,9 @@ title: "driverUpdateCatalogEntry resource type"
 description: "Represents the metadata for driver update content that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 08/31/2024
 ---
 
 # driverUpdateCatalogEntry resource type

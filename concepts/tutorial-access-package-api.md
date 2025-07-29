@@ -1,5 +1,5 @@
 ---
-title: "Manage access to resources using the entitlement management APIs"
+title: "Manage access to resources using entitlement management APIs"
 description: "Learn how to use Microsoft Graph APIs to create a package of resources that internal users can request themselves."
 author: FaithOmbongi
 ms.author: ombongifaith
@@ -7,45 +7,48 @@ ms.reviewer: Mark.Wahl
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
-ms.date: 03/26/2024
-#Customer intent: As a developer integrating with Microsoft Graph, I want to understand how to use entitlement management APIs to manage access to resources.
+ms.date: 03/21/2025
+#Customer intent: As a developer integrating with Microsoft Graph, I want to automate access management tasks using entitlement management APIs in Microsoft Graph.
 ---
 
 # Manage access to resources using the entitlement management APIs
 
-Microsoft Entra entitlement management allows you to manage access to resources that employees need to be productive. In this tutorial, you use the entitlement management APIs to create a package of resources that internal users request themselves. The APIs are the programmatic alternative for creating custom apps instead of using the Microsoft Entra admin center.
+Microsoft Entra entitlement management lets you manage resource access at scale for employees and guests in your organization. This tutorial shows how to use entitlement management APIs to create a resource package that internal users can request. The APIs offer a programmatic alternative to creating custom apps in the Microsoft Entra admin center.
 
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Create an access package that users can self-service request.
+> * Create an access package that users can request themselves.
 > * Assign a group resource to the access package.
-> * Request an access package
+> * Request an access package.
 
 ## Prerequisites
 
-To complete this tutorial, you need the following resources and privileges:
+To complete this tutorial, you need:
 
-- A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled. Either of these licenses are sufficient for the capabilities in this tutorial.
-- A test guest account and a test security group in your tenant. The security group is the resource in this tutorial. Be sure to be either the owner of the group or assigned the *Groups Administrator* role. In this tutorial:
+- A Microsoft Entra tenant with either a Microsoft Entra ID P2 or Microsoft Entra ID Governance license.
+- A test guest account and a test security group in your tenant. The security group is the resource in this tutorial. Ensure you're either the owner of the group or assigned the Groups Administrator role. In this tutorial:
   - The user has the ID `007d1c7e-7fa8-4e33-b678-5e437acdcddc` and is named `Requestor1`.
-    - [Optional] Open a new anonymous browser window. You sign in later in this tutorial.
   - The group has the ID `f4892fac-e81c-4712-bdf2-a4450008a4b0` with the "Marketing group" description and "Marketing resources" display name.
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has at least the *Identity Governance Administrator* role.
-- Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All`.
+- An API client such as [Graph Explorer](https://aka.ms/ge) signed in with an account that has at least the Identity Governance Administrator role
+- Delegated permissions:
+  - `User.ReadWrite.All`
+  - `Group.ReadWrite.All`
+   - `EntitlementManagement.ReadWrite.All`
+- [Optional] An anonymous browser window. Sign in later in this tutorial.
 
 > [!NOTE]
 > Some steps in this tutorial use the `beta` endpoint.
 
 ## Step 1: Add resources to a catalog and create an access package
 
-An *access package* is a bundle of resources that a team or project needs and is governed with policies. Access packages are defined in containers called catalogs. Catalogs can reference resources, such as groups, apps, and sites, that are used in the access package. Entitlement management includes a default `General` catalog.
+An access package is a bundle of resources that a team or project needs and is governed with policies. Access packages are defined in containers called catalogs. Catalogs can reference resources, such as groups, apps, and sites, that are used in the access package. Entitlement management includes a default `General` catalog.
 
 In this step, you create a **Marketing Campaign** access package in the General catalog.
 
 ### Step 1.1: Get the identifier for the General catalog
 
-First, get the ID of the catalog to which you want to add resources.
+Get the ID of the **General** catalog.
 
 #### Request
 
@@ -60,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -120,13 +119,9 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 
 ### Step 1.2: Add the group to the catalog
 
-In this tutorial, the resource is a security group has the ID `e93e24d1-2b65-4a6c-a1dd-654a12225487`.
+In this step, you add the "Marketing resources" group to the **General** catalog as a resource.
 
-To add the group that you created to the catalog, provide the following property values:
-- **catalogId** - the **id** of the catalog that you're using
-- **originId** - the **id** of the group that you created
-
-If you're not the owner of the group that you reference in **originId** or aren't assigned the *Groups Administrator* role, then this request fails with a `403 Forbidden` error code.
+If you're not the owner of the group that you reference in **originId** or aren't assigned the Groups Administrator role, then this request fails with a `403 Forbidden` error code.
 
 #### Request
 
@@ -153,10 +148,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -228,10 +219,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-accesspackageresources-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-accesspackageresources-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-entitlementmanagement-get-accesspackageresources-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -284,7 +271,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 }
 ```
 
-### Step 1.4: Get resources roles
+### Step 1.4: Get resource roles
 
 The access package assigns users to the roles of a resource. The typical role of a group is the `Member` role. Other resources, such as SharePoint Online sites and applications, might have many roles. The typical role of a group used in an access package is the `Member` role. You need the member role to add a resource role to the access package later in this tutorial.
 
@@ -303,10 +290,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-accesspackageresourceroles-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-accesspackageresourceroles-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -395,10 +378,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-create-accesspackage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-create-accesspackage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -547,10 +526,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-get-accesspackageassignmentpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-get-accesspackageassignmentpolicy-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-get-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -622,16 +597,16 @@ Content-type: application/json
 
 ## Step 2: Request access
 
-In this step, the **Requestor1** user account requests access to the resources in the access package.
+In this step, the **Requestor1** user account requests access to resources in the access package.
 
-To request access to resources in the access package, you need to provide these values:
+To request access to the access package, you need to provide these values:
 - **id** of the **Requestor1** user account that you created for the value of the **targetId** property
 - **id** of the assignment policy for the value of the **assignmentPolicyId** property
 - **id** of the access package for the value of **accessPackageId** property
 
-In the response, the status is `Accepted` and a state is `Submitted`. Record the value of the **id** property that is returned to get the status of the request later.
+In the response, the status is `Accepted` and the state is `Submitted`. Record the value of the **id** property that is returned to check the status of the request later.
 
-Start a new anonymous browser session, and sign in **Requestor1**. By doing so, you don't interrupt your current administrator session. Alternatively, you can interrupt your current administrator session by logging out of Graph Explorer and logging back in as **Requestor1**
+Open a new anonymous browser session and sign in as **Requestor1** so you don't interrupt your current administrator session. Alternatively, log out of Graph Explorer and sign in as **Requestor1**.
 
 #### Request
 
@@ -656,10 +631,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-create-accesspackageassignmentrequest-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-create-accesspackageassignmentrequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -709,15 +680,15 @@ Content-type: application/json
 }
 ```
 
-You can now sign out and exit the anonymous session.
+Sign out and close the anonymous session.
 
-## Step 3: Validate that access has been assigned
+## Step 3: Validate that access is assigned
 
-In this step, you confirm that the **Requestor1** user account was assigned the access package and that they're now a member of the **Marketing resources** group. Return to the administrator session in Graph Explorer.
+In this step, confirm that the **Requestor1** user account is assigned the access package and is a member of the **Marketing resources** group. Return to the administrator session in Graph Explorer.
 
 ### Step 3.1: Get the status of the request
 
-Use the value of the **id** property of the request to get the current status of it. In the response, you can see the status changed to **Fulfilled** and the state changed to **Delivered**.
+Use the value of the **id** property of the request to get its current status. In the response, you see the status changed to **Fulfilled** and the state changed to **Delivered**.
 
 #### Request
 
@@ -732,10 +703,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-get-accesspackageassignmentrequest-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-get-accesspackageassignmentrequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -787,7 +754,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### Step 3.2: Get access package assignments
 
-You can also use the **id** of the access package policy that you created to see that resources have been assigned to the **Requestor1** user account.
+Use the **id** of the access package policy you created to see that resources are assigned to the **Requestor1** user account.
 
 #### Request
 
@@ -802,10 +769,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-get-accesspackageassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-get-accesspackageassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -872,7 +835,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### Step 3.3: Get the members of the group
 
-After the request has been granted, you can use the **id** that you recorded for the **Marketing resources** group to see that the **Requestor1** user account has been added to it.
+After the request is granted, use the **id** you recorded for the **Marketing resources** group to see that the **Requestor1** user account is added to it.
 
 #### Request
 
@@ -887,10 +850,6 @@ GET https://graph.microsoft.com/v1.0/groups/f4892fac-e81c-4712-bdf2-a4450008a4b0
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-group-members-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-group-members-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -961,13 +920,11 @@ GET https://graph.microsoft.com/v1.0/groups/f4892fac-e81c-4712-bdf2-a4450008a4b0
 
 ## Step 4: Clean up resources
 
-In this step, you remove the changes you made and delete the **Marketing Campaign** access package.
-
 ### Remove an access package assignment
 
 You must remove any assignments to the access package before you can delete it. Use the **id** of the assignment request that you previously recorded to delete it.
 
-#### Request
+Remove any assignments to the access package before deleting it. Use the **id** of the assignment request that you previously recorded to delete it.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -988,10 +945,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-remove-accesspackageassignmentrequest-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-remove-accesspackageassignmentrequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -1058,10 +1011,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-delete-accesspackageassignmentpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-delete-accesspackageassignmentpolicy-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-delete-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1107,10 +1056,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-delete-accesspackage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-delete-accesspackage-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-delete-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1139,9 +1084,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 ## Conclusion
 
-In this tutorial, the marketing campaign resources were membership in a single group, which could have access to other resources. The resources can also be a collection of groups, applications, or SharePoint Online sites.
-
-The capabilities in this tutorial are supported in Microsoft Entra ID P2 or Microsoft Entra ID Governance licenses. However, other advanced entitlement management capabilities require additional licensing. For more information, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
+In this tutorial, a marketing campaign resource is defined as membership in a single group that can access other resources. It can also be a collection of groups, applications, or SharePoint Online sites.
 
 ## Related content
 

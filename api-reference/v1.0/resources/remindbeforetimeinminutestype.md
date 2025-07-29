@@ -5,6 +5,7 @@ author: "benmicrosoft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: enumPageType
+ms.date: 03/06/2024
 ---
 
 # remindBeforeTimeInMinutesType enum type

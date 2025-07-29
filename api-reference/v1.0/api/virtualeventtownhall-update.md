@@ -5,12 +5,15 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 11/22/2024
 ---
 
 # Update virtualEventTownhall
 Namespace: microsoft.graph
 
 Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+
+Only the **Organizer** and **Co-organizer** can make changes to a townhall event.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -89,10 +92,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-virtualeventtownhall-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-virtualeventtownhall-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -183,6 +182,12 @@ Content-Type: application/json
   ],
   "settings": {
     "isAttendeeEmailNotificationEnabled": false
-  }
+  },
+  "externalEventInformation": [
+    {
+      "applicationId" : "1b7ba4d1-c377-4b2f-ad0e-a3fc50bc987b",
+      "externalEventId": "myExternalEventId"
+    }
+  ]
 }
 ```

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akjo"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamClassSettings resource type
@@ -19,6 +20,9 @@ Represents class-specific properties of a [team](team.md). Available only when t
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |notifyGuardiansAboutAssignments|Boolean|If set to `true`, enables sending of weekly assignments digest emails to parents/guardians, provided the tenant admin has enabled the setting globally.|
+
+## Relationships
+None.
 
 ## JSON representation
 

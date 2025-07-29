@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/27/2024
 ---
 
 # Create cloudPcProvisioningPolicy
@@ -111,10 +112,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpcprovisioningpolicy-from-cloudpcprovisioningpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-cloudpcprovisioningpolicy-from-cloudpcprovisioningpolicy-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-cloudpcprovisioningpolicy-from-cloudpcprovisioningpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -171,6 +168,13 @@ Content-Type: application/json
       "domainJoinType": "hybridAzureADJoin"
     }
   ],
+   "microsoftManagedDesktop": {
+      "managedType": "notManaged",
+      "profile": null
+  },
+  "autopatch": {
+      "autopatchGroupId": null
+  },
   "enableSingleSignOn": true,
   "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
   "imageDisplayName": "Windows-10 19h1-evd",

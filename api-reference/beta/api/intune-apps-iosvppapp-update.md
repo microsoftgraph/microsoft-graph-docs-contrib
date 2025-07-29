@@ -5,13 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update iosVppApp
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -79,6 +80,7 @@ The following table shows the properties that are required when you create the [
 |vppTokenOrganizationName|String|The organization associated with the Apple Volume Purchase Program Token|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
 |vppTokenAppleId|String|The Apple Id associated with the given Apple Volume Purchase Program Token.|
+|vppTokenDisplayName|String|Display name of the VPP token associated with this app.|
 |bundleId|String|The Identity Name.|
 |vppTokenId|String|Identifier of the VPP token associated with this app.|
 |revokeLicenseActionResults|[iosVppAppRevokeLicensesActionResult](../resources/intune-apps-iosvppapprevokelicensesactionresult.md) collection|Results of revoke license actions on this app.|
@@ -95,7 +97,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 2056
+Content-length: 2114
 
 {
   "@odata.type": "#microsoft.graph.iosVppApp",
@@ -141,6 +143,7 @@ Content-length: 2056
   "vppTokenOrganizationName": "Vpp Token Organization Name value",
   "vppTokenAccountType": "education",
   "vppTokenAppleId": "Vpp Token Apple Id value",
+  "vppTokenDisplayName": "Vpp Token Display Name value",
   "bundleId": "Bundle Id value",
   "vppTokenId": "Vpp Token Id value",
   "revokeLicenseActionResults": [
@@ -165,7 +168,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2228
+Content-Length: 2286
 
 {
   "@odata.type": "#microsoft.graph.iosVppApp",
@@ -214,6 +217,7 @@ Content-Length: 2228
   "vppTokenOrganizationName": "Vpp Token Organization Name value",
   "vppTokenAccountType": "education",
   "vppTokenAppleId": "Vpp Token Apple Id value",
+  "vppTokenDisplayName": "Vpp Token Display Name value",
   "bundleId": "Bundle Id value",
   "vppTokenId": "Vpp Token Id value",
   "revokeLicenseActionResults": [

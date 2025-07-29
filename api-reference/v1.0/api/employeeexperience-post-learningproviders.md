@@ -5,6 +5,7 @@ author: "malabikaroy"
 ms.localizationpriority: medium
 ms.subservice: "viva-learning"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create learningProvider
@@ -23,8 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/employeeexperience-post-learningproviders-permissions.md)]
 
 > **Note:** The following are required for the user:
-> - Viva Suite or Viva Learning license
-> - Global admin, knowledge admin role
+> - Viva Suite or Viva Learning license.
+> - A supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json), where Knowledge Administrator is the least privileged supported role.
 
 ## HTTP request
 
@@ -92,10 +93,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-learningprovider-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-learningprovider-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

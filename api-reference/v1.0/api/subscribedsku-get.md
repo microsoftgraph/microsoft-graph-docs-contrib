@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "frank-masuelli"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # Get subscribedSku
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "subscribedsku_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/subscribedsku-get-permissions.md)]
+
+[!INCLUDE [rbac-company-subscriptions-subscribedskus-apis](../includes/rbac-for-apis/rbac-company-subscriptions-subscribedskus-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -58,10 +61,6 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus/dcd219dd-bc68-4b9b-bf0b-4a33
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscribedsku-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-subscribedsku-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

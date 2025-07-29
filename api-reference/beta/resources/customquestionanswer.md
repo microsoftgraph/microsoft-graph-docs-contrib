@@ -24,6 +24,9 @@ Represents a registrant's answer to the [custom registration question](meetingre
 | questionId | String | ID the custom registration question. Read-only.|
 | value | String | Answer to the custom registration question. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {

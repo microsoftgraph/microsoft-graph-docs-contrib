@@ -13,12 +13,12 @@ from msgraph_beta.generated.models.networkaccess.web_category import WebCategory
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = WebCategoryFilteringRule(
 	odata_type = "#microsoft.graph.networkaccess.webCategoryFilteringRule",
-	name = "Block Alcohol",
+	name = "Block Gambling Sites",
 	rule_type = NetworkDestinationType.WebCategory,
 	destinations = [
 		WebCategory(
 			odata_type = "#microsoft.graph.networkaccess.webCategory",
-			name = "AlcoholAndTobacco",
+			name = "Gambling",
 		),
 	],
 )

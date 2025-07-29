@@ -5,6 +5,7 @@ author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # approvalSolution: provision
@@ -67,10 +68,6 @@ POST https://graph.microsoft.com/beta/solutions/approval/provision
 [!INCLUDE [sample-code](../includes/snippets/csharp/approvalsolutionthisprovision-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/approvalsolutionthisprovision-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/approvalsolutionthisprovision-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -85,10 +82,6 @@ POST https://graph.microsoft.com/beta/solutions/approval/provision
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/approvalsolutionthisprovision-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/approvalsolutionthisprovision-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

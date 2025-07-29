@@ -5,6 +5,7 @@ author: "Zacharypeng"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # serviceActivity: getMetricsForConditionalAccessCompliantDevicesSignInSuccess
@@ -20,13 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceactivity_getmetricsforconditionalaccesscompliantdevicessigninsuccess" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess-permissions.md)]
 
-In addition to the delegated permissions, the signed-in user who is accessing the data needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json), which allow them to read sign-in reports:
-
-+ Global Reader
-+ Reports Reader
-+ Security Administrator
-+ Security Operator
-+ Security Reader
+[!INCLUDE [rbac-entra-health-service-activity-apis](../includes/rbac-for-apis/rbac-entra-health-service-activity-apis.md)]
 
 ## HTTP request
 
@@ -75,10 +70,6 @@ GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForCondit
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceactivitythisgetmetricsforconditionalaccesscompliantdevicessigninsuccess-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceactivitythisgetmetricsforconditionalaccesscompliantdevicessigninsuccess-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -1,16 +1,17 @@
 ---
-title: "Publish custom connectors to the Microsoft 365 admin center"
+title: "Publish custom Microsoft 365 Copilot connectors to the Microsoft 365 admin center"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Learn how to publish the connectors you build using the Microsoft Graph connectors SDK to the Microsoft 365 admin center."
+description: "Learn how to publish the connectors you build using the Copilot connectors SDK to the Microsoft 365 admin center."
+ms.date: 11/07/2024
 ---
 
-# Publish custom connectors to the Microsoft 365 admin center
+# Publish custom Copilot connectors to the Microsoft 365 admin center
 
-When you use the Microsoft Graph connectors SDK, you can publish your custom connectors through the Microsoft 365 admin center, the same way that Microsoft built-in connectors are published.
+When you use the Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) SDK, you can publish your custom connectors through the Microsoft 365 admin center, the same way that Microsoft built-in connectors are published.
 
 >[!Note]
 > Read the [Setup for your Graph connector](/microsoftsearch/configure-connector) article to understand the general Graph connectors setup instructions.
@@ -25,7 +26,7 @@ Use the following steps to publish a connection for your custom connector:
       > - You can add multiple connector IDs and their corresponding port information to this file using the \<Connector Id>:\<Port> format. Each unique connector should be running on a different port.
       > - If you have upgraded from a GCA version lower than 1.8.0.0, please follow the [troubleshooting steps](/graph/custom-connector-sdk-troubleshooting#connection-failure-after-gca-upgrade) to fix connection failures.
 
-2. Add a Microsoft Graph connector in the Microsoft 365 admin center from the [Data Sources tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the Search & Intelligence section. For details, see [Add a Microsoft Graph connector in the Microsoft 365 admin center](/microsoftsearch/configure-connector#step-1-add-a-microsoft-graph-connector-in-the-microsoft-365-admin-center).
+2. Add a Copilot connector in the Microsoft 365 admin center from the [Data Sources tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the Search & Intelligence section. For details, see [Add a Copilot connector in the Microsoft 365 admin center](/microsoftsearch/configure-connector#step-1-add-a-microsoft-graph-connector-in-the-microsoft-365-admin-center).
 
 3. Choose **Custom Connector** and provide the manifest validated by the test application.
 

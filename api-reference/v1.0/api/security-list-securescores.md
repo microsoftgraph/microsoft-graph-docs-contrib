@@ -5,6 +5,7 @@ author: "preetikr"
 ms.localizationpriority: medium
 ms.subservice: security
 doc_type: apiPageType
+ms.date: 07/11/2024
 ---
 
 # List secureScores
@@ -73,10 +74,6 @@ GET https://graph.microsoft.com/v1.0/security/secureScores?$top=1
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securescores-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-securescores-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

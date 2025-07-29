@@ -3,6 +3,7 @@ title: "SharePoint provider"
 description: "Use the SharePoint provider inside your SharePoint web parts to power the components with Microsoft Graph access."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date: 11/07/2024
 ---
 
 # SharePoint provider

@@ -1,21 +1,21 @@
 ---
-title: "Review access to administrative roles using the access reviews APIs"
-description: "Learn how to use the access reviews API to periodically review users and groups with both active and eligible privileged roles."
+title: "Review admin role assignments using access reviews APIs"
+description: "Learn how to use the access reviews APIs to periodically review users and groups with both active and eligible privileged roles."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.topic: tutorial
 ms.reviewer: jgangadhar, rianakarim
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
-ms.date: 03/26/2024
+ms.date: 03/07/2025
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use the access reviews APIs to review and attest to the privileged admin roles that principals in my organization, so that I can ensure proper security and compliance in my organization.
 ---
 
-# Review access to administrative roles using the access reviews APIs
+# Review access to administrative roles using access reviews APIs
 
-The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. One of the most sensitive resources in an organization is administrative roles. Using the access reviews API, organizations can periodically attest to principals that have access to administrative roles as per the organization policy.
+The access reviews APIs in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. One of the most sensitive resources in an organization is administrative roles. Using the access reviews API, organizations can periodically attest to principals that have access to administrative roles as per the organization policy.
 
-Contoso needs to ensure only the right assignees are assigned th administrative roles. The system auditors should also audit the access review history to report on the effectiveness of Contoso's internal controls.
+Contoso needs to ensure only the right assignees are assigned the administrative roles. System auditors should also audit the access review history to report on the effectiveness of Contoso's internal controls.
 
 In this tutorial, you learn how to:
 
@@ -26,7 +26,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-To complete this tutorial, you need the following resources and privileges:
+To complete this tutorial, you need these resources and privileges:
 
 + A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled. 
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with an account that has at least the *Identity Governance Administrator* role.
@@ -35,9 +35,9 @@ To complete this tutorial, you need the following resources and privileges:
 
 ## Step 1: Create an access review of role assignments
 
-The following access review schedule definition has the following settings:
+The following access review schedule definition has theese settings:
 
-+ The scope of the review is groups and users (**principalScopes** property) with access to the User Administrator role.
++ The review scope is groups and users (**principalScopes** property) with access to the User Administrator role.
   + An access review can be scoped to multiple principal types (users and groups, or service principals) and *only one* resource. To review access to multiple Microsoft Entra roles, create separate access reviews.
   + roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the Microsoft Entra *User Administrator* role.
 + Both active and eligible assignments to the User Administrator role are in review.
@@ -45,7 +45,7 @@ The following access review schedule definition has the following settings:
 + The approver must provide justification before they approve access to the Microsoft Entra role.
 + The default decision is `None` when the reviewers don't respond to the access review request before the instance expires.
 + **autoApplyDecisionsEnabled** isn't set and defaults to `false`. In this case, after the review completes, the decisions aren't automatically applied so you must manually apply them.
-+ The review recurs every three months over a period of three days and doesn't end.
++ The review recurs every three months over three days and doesn't end.
 
 ### Request
 
@@ -113,10 +113,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-accessreviews-priviledroles-create-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-accessreviews-priviledroles-create-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -249,10 +245,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-accessreviews-priviegedroles-getinstances-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-accessreviews-priviegedroles-getinstances-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-accessreviews-priviegedroles-getinstances-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -281,7 +273,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### Response
 
-The status of this access review instance is `InProgress`, meaning that the review instance is open for reviewers to submit decisions, and the period for this access review instance hasn't expired. You also received an email notification from Microsoft Azure requesting you to perform the access review.
+The status of this access review instance is `InProgress`, meaning the review instance is open for reviewers to submit decisions, and the period for this access review instance hasn't expired. You also received an email notification from Microsoft Azure requesting you to perform the access review.
 
 <!-- {
   "blockType": "response",
@@ -340,7 +332,7 @@ Content-type: application/json
 
 ## Step 3: Retrieve access review decisions before recording any decisions
 
-Before you can post decisions, let us first inspect the items waiting for your decision.
+Before you can post decisions, let's first inspect the items waiting for your decision.
 
 ### Request
 
@@ -355,10 +347,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-accessreviews-priviegedroles-getnodecisions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-accessreviews-priviegedroles-getnodecisions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -480,7 +468,7 @@ Assume that the company policy requires that access to administrative roles be g
 
 ### Approve the security group's role assignment
 
-In the following request, you approve access for the IT Helpdesk group. The request returns a `204 No Content` response code.
+In the following request, you approve access for the IT Helpdesk group. The request returns a `204 No Content` response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -498,10 +486,6 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -533,7 +517,7 @@ Content-type: application/json
 
 ### Deny the individual user their role assignment
 
-In the following request, you deny access for Adele Vance. The request returns a `204 No Content` response code.
+In the following request, you deny access for Adele Vance. The request returns a `204 No Content` response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -551,10 +535,6 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -615,10 +595,6 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-accessreviews-priviegedroles-applydecisions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-accessreviews-priviegedroles-applydecisions-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-accessreviews-priviegedroles-applydecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -651,7 +627,7 @@ The **status** of the access review instance is now `Applied`. Also, because the
 
 ## Step 6: Retrieve access review history definitions
 
-Contoso's auditors also want to review the access review history for the last quarter. In this example, you generate an access review history report for all **accessReviewScheduleDefinition** objects scoped to directory role assignments (roleAssignmentScheduleInstances). In this query, access reviews with all decisions are included in the history report.
+Contoso's auditors also want to review the access review history for the last quarter. In this example, you generate an access review history report for all **accessReviewScheduleDefinition** objects scoped to directory role assignments (roleAssignmentScheduleInstances). This query includes access reviews with all decisions in the history report.
 
 First, you define the scope of the history report. Then, you generate a download URI that the auditors use to download the report. The download URI is active for only 24 hours. So, after expiry, you can regenerate another download URI from the previously defined history report.
 
@@ -789,10 +765,6 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definit
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-accessreviews-priviegedroles-deleteaccessreview-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-accessreviews-priviegedroles-deleteaccessreview-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "luleonpla"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 08/02/2024
 ---
 
 # List applicationTemplates
@@ -79,10 +80,6 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-applicationtemplates-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

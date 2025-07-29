@@ -39,6 +39,7 @@
         "/troubleshoot",
         "/viva",
         "/windows",
-        "/windows-hardware"
+        "/windows-hardware",
+        "/universal-print"
     ]
 }

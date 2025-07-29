@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # windowsDefenderUpdateSignatures action
@@ -64,10 +65,6 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDe
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,10 +79,6 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDe
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

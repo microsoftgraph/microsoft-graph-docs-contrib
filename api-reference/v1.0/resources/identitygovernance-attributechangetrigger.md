@@ -1,17 +1,18 @@
 ---
 title: "attributeChangeTrigger resource type"
-description: "An abstract type representing changes in user attributes that trigger the execution of workload conditions for a user."
+description: "Represents changes in user attributes that trigger the execution of workload conditions for a user."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/22/2024
 ---
 
 # attributeChangeTrigger resource type
 
 Namespace: microsoft.graph.identityGovernance
 
-An abstract type representing changes in user attributes that trigger the execution of workload conditions for a user.
+Represents changes in user attributes that trigger the execution of workload conditions for a user.
 
 Inherits from [microsoft.graph.identityGovernance.workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md).
 

@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "preetikr"
 doc_type: conceptualPageType
 ms.subservice: "security"
+ms.date: 05/13/2024
 ---
 
 # Use the Microsoft Graph threat assessment API

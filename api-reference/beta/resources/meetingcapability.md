@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # meetingCapability resource type
@@ -22,6 +23,9 @@ Contains the capabilities of a meeting
 | allowAnonymousUsersToDialOut      | Boolean | Indicates whether anonymous users dialout is allowed in a meeting. |
 | allowAnonymousUsersToStartMeeting | Boolean | Indicates whether anonymous users are allowed to start a meeting.  |
 | autoAdmittedUsers                 | autoAdmittedUsersType  | Possible values are: `everyoneInCompany`, `everyone`.              |
+
+## Relationships
+None.
 
 ## JSON representation
 

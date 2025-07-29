@@ -10,9 +10,9 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OpenIdConnectIdentityProvider identityProviderBase = new OpenIdConnectIdentityProvider();
 identityProviderBase.setOdataType("microsoft.graph.openIdConnectIdentityProvider");
-identityProviderBase.setDisplayName("Login with the Contoso identity provider");
-identityProviderBase.setClientId("56433757-cadd-4135-8431-2c9e3fd68ae8");
-identityProviderBase.setClientSecret("12345");
+identityProviderBase.setDisplayName("Contoso");
+identityProviderBase.setClientId("00001111-aaaa-2222-bbbb-3333cccc4444");
+identityProviderBase.setClientSecret("4294967296");
 ClaimsMapping claimsMapping = new ClaimsMapping();
 claimsMapping.setUserId("myUserId");
 claimsMapping.setGivenName("myGivenName");
