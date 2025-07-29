@@ -483,6 +483,8 @@ items:
       href: ../../resources/cloudpcdomainjoinconfiguration.md
     - name: Cloud PC forensic storage account
       href: ../../resources/cloudpcforensicstorageaccount.md
+    - name: Cloud PC frontline shared device detail
+      href: ../../resources/cloudpcfrontlineshareddevicedetail.md
     - name: Cloud PC health check item
       href: ../../resources/cloudpchealthcheckitem.md
     - name: Cloud PC launch info

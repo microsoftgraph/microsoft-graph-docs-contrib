@@ -48,12 +48,10 @@ items:
       href: ../../api/security-incident-update.md
     - name: Create comment for incident
       href: ../../api/security-incident-post-comments.md
-  - name: Complex types
-    items:
-    - name: Teams message evidence
-      href: ../../resources/security-teamsmessageevidence.md
   - name: Incident task
     items:
+    - name: Overview
+      href: ../../resources/security-incidenttask.md
     - name: Incident task
       href: ../../resources/security-incidenttask.md
     - name: List
@@ -64,6 +62,10 @@ items:
       href: ../../api/security-incidenttask-update.md
     - name: Execute response action
       href: ../../api/security-incidenttask-executeresponseaction.md
+  - name: Complex types
+    items:
+    - name: Teams message evidence
+      href: ../../resources/security-teamsmessageevidence.md
 - name: Attack simulation and training
   items:
   - name: Simulation
