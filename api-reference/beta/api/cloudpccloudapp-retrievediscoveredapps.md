@@ -45,6 +45,8 @@ In the request URL, provide the following required query parameters with values.
 | provisioningPolicyId | String |The GUID of the provisioning policy ID.   |
 | sourceId | String | The GUID of the source ID that represents the image ID. |
 
+This operation doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
+
 ## Request headers
 
 | Name          | Description               |
