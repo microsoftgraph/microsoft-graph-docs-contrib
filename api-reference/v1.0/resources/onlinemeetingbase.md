@@ -123,6 +123,7 @@ The following JSON representation shows the resource type.
   "allowedLobbyAdmitters": "String",
   "allowedPresenters": {"@odata.type": "microsoft.graph.onlineMeetingPresenters"},
   "allowLiveShare": "String",
+  "allowMeetingChat": "String",
   "allowPowerPointSharing": "Boolean",
   "allowRecording": "Boolean",
   "allowTeamworkReactions": "Boolean",
