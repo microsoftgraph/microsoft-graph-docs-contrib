@@ -32,6 +32,7 @@ In general, subscription operations require read permission to the resource. For
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [list][], [message][], [todoTask][], [baseTask][] (deprecated) |
 | Application                            | [aiInteraction][], [alert][], [callRecord][], [approvals][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][], [contact][],  [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [onlineMeeting][], [openShiftChangeRequest][], [printer][], [printTaskDefinition][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [user][] |
 
+
 ## Related content
 
 - [subscription resource type](subscription.md)

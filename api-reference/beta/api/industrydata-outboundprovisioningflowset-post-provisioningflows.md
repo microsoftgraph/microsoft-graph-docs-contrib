@@ -1,11 +1,11 @@
 ---
 title: "Create provisioningFlow"
 description: "Create a new provisioningFlow object."
-author: "cristobal-buenrostro"
+author: "mohanrajc"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
-ms.date: 06/22/2024
+ms.date: 06/30/2025
 ---
 
 # Create provisioningFlow
@@ -54,10 +54,13 @@ In the request body, supply a JSON representation of the [provisioningFlow](../r
 
 Any of the following provisioning flows are valid:
 
-- [administrativeUnitProvisioningFlow](../resources/industrydata-administrativeUnitProvisioningFlow.md)
-- [classGroupProvisioningFlow](../resources/industrydata-classGroupProvisioningFlow.md)
-- [securityGroupProvisioningFlow](../resources/industrydata-securityGroupProvisioningFlow.md)
-- [userProvisioningFlow](../resources/industrydata-userProvisioningFlow.md)
+- [administrativeUnitProvisioningFlow](../resources/industrydata-administrativeunitprovisioningflow.md)
+- [classGroupProvisioningFlow](../resources/industrydata-classgroupprovisioningflow.md)
+- [securityGroupProvisioningFlow](../resources/industrydata-securitygroupprovisioningflow.md)
+- [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md)
+
+> [!CAUTION]
+> The **markAllStudentsAsMinors** property of **additionalUserOptions** under **managementOptions** in **userProvisioningFlow** is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property.
 
 ## Response
 
@@ -93,10 +96,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-adminunit-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-adminunit-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -284,10 +283,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-classgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-classgroup-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-classgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -451,10 +446,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-securitygroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-securitygroup-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-securitygroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -535,7 +526,7 @@ Content-type: application/json
         "additionalAttributes": ["userGradeLevel"],
         "additionalOptions":
         {
-            "markAllStudentsAsMinors": true,
+            "studentAgeGroup": "minor",
             "allowStudentContactAssociation"  : false
         }
     },
@@ -567,10 +558,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -629,7 +616,8 @@ Content-type: application/json
         ],
         "additionalOptions": {
             "markAllStudentsAsMinors": true,
-            "allowStudentContactAssociation": false
+            "allowStudentContactAssociation": false,
+            "studentAgeGroup": "minor"
         }
     },
     "creationOptions": {

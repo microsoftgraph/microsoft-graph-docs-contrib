@@ -2,7 +2,7 @@
 title: "servicePrincipal: List createdObjects"
 description: "Retrieve a list of directoryobject objects."
 ms.localizationpriority: high
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "sureshja"
 ms.date: 04/18/2024
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-5
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-get-createdobjects-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipals-get-createdobjects-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -90,10 +90,6 @@ GET https://graph.microsoft.com/v1.0/me/authentication/platformCredentialMethods
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-platformcredentialauthenticationmethod-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-platformcredentialauthenticationmethod-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-platformcredentialauthenticationmethod-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -108,6 +104,10 @@ GET https://graph.microsoft.com/v1.0/me/authentication/platformCredentialMethods
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-platformcredentialauthenticationmethod-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-platformcredentialauthenticationmethod-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

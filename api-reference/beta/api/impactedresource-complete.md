@@ -65,10 +65,6 @@ POST https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-47
 [!INCLUDE [sample-code](../includes/snippets/csharp/impactedresourcethiscomplete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/impactedresourcethiscomplete-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/impactedresourcethiscomplete-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
