@@ -94,7 +94,7 @@ Response
 200 OK
 ```
 
-### Example 2: Update Network Site Id
+### Example 2: Update network site Id
 
 Request
 <!-- {
@@ -124,7 +124,7 @@ Response
 200 OK
 ```
 
-### Example 3: Update Reverse Number Lookup Options
+### Example 3: Update reverse number lookup options
 
 Request
 <!-- {
@@ -154,9 +154,9 @@ Response
 200 OK
 ```
 
-### Example 4: Clear Location Id
+### Example 4: Clear location ID
 
-#### Example 4 Request
+Request
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber",
@@ -171,7 +171,7 @@ Content-Type: application/json
 }
 ```
 
-#### Example 4 Response
+Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
