@@ -118,7 +118,6 @@ The following JSON representation shows the resource type.
   "allowAttendeeToEnableCamera": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
   "allowBreakoutRooms": "Boolean",
-  "allowTeamworkReactions": "Boolean",
   "allowedLobbyAdmitters": "String",
   "allowedPresenters": "String",
   "allowLiveShare": "String",
