@@ -4,7 +4,7 @@ description: "Append additional instances of externalActivity on an externalitem
 author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
