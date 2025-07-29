@@ -4,7 +4,7 @@ description: "Get the language details about an attack simulation training for a
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 

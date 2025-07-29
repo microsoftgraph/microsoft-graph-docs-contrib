@@ -4,7 +4,7 @@ description: "Get an attack simulation training for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Get an attack simulation [training](../resources/training.md) for a tenant. 
+Get an attack simulation [training](../resources/training.md) for a tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
