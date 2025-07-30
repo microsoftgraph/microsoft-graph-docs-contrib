@@ -63,19 +63,23 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1 Request
+### Example 1
+#### Request 
 
 The following example shows a request to *get a list of all telephone numbers including assignment details.*
 <!-- {
   "blockType": "request",
-  "name": "get_numberassignment"
+  "name": "get_numberassignment1"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments
 ```
 
-### Example 1 Response
+### Example 1 
+
+#### Response
+
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -147,7 +151,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2 Request
+### Example 2 
+
+#### Request
 
 The following example shows a request to *get a list of telephone numbers based on a filter.*
 
@@ -160,7 +166,10 @@ The following example shows a request to *get a list of telephone numbers based 
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$filter=assignmentStatus eq 'unassigned' and capabilities/any(c:c eq 'userAssignment')
 ```
 
-### Example 2 Response
+### Example 2 
+
+#### Response
+
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
