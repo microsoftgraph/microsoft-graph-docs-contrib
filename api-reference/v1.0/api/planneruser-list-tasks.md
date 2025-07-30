@@ -27,7 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /me/planner/tasks
 GET /users/{id}/planner/tasks
-GET /drive/root/createdByUser/planner/tasks
 ```
 
 ## Request headers
