@@ -20,14 +20,7 @@ Inherits from [place](./place.md).
 
 ## Methods
 
-|Method |Return type |Description |
-|:--|:--|:--|
-|[List](../api/place-list.md) |[building](./building.md) collection |Get a collection of the specified type of [place](../resources/place.md) objects defined in a tenant. |
-|[Create](../api/place-post-places.md) |[building](./building.md) |Create a new [place](../resources/place.md) object.| 
-|[Get](../api/place-get.md) |[building](./building.md) |Read the properties of a [place](../resources/place.md) object. Returns the requested, derived type of **place**.|
-|[Update](../api/place-update.md) |[building](./building.md) |Update the properties of [place](../resources/place.md) object that can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [desk](../resources/desk.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). |
-|[Delete](../api/place-delete.md) |None |Delete a [place](../resources/place.md) object. |
-|[descendants](../api/place-descendants.md) |[building](./building.md) collection|Get all the descendants of a specific type under a [place](../resources/place.md). | 
+For the list of supported methods, see [place](./place.md).
 
 ## Properties
 |Property|Type|Description|
