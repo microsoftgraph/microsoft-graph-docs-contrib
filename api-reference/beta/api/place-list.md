@@ -8,7 +8,7 @@ ms.subservice: outlook
 doc_type: apiPageType
 ---
 
-# List places
+# List place objects
 
 Namespace: microsoft.graph
 
