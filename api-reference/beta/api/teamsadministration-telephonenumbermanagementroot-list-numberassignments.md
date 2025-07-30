@@ -64,6 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Example 1
+
 #### Request 
 
 The following example shows a request to *get a list of all telephone numbers including assignment details.*
@@ -76,7 +77,6 @@ The following example shows a request to *get a list of all telephone numbers in
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments
 ```
 
-### Example 1 
 
 #### Response
 
