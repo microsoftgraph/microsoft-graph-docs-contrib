@@ -1,6 +1,7 @@
 ---
 author: rahul-nagraj
 ms.topic: include
+ms.custom: sfi-ga-blocked
 ---
 
 > [!IMPORTANT]

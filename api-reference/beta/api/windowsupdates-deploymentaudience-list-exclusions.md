@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/b
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-updatableasset-audience-exclusions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-updatableasset-audience-exclusions-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-audience-exclusions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

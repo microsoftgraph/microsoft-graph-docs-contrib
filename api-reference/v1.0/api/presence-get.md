@@ -24,15 +24,20 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!NOTE]
 > - You can't use application permissions to access APIs under the `/me` path.
-> - The maximum request rate for this API is 1500 API requests in a 30 second period, per application per tenant.
+> - The maximum request rate for this API is 1,500 requests within a 30-second period, per application per tenant.
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/presence
-GET /communications/presences
+GET /communications/presences/{id}
 GET /me/presence
 ```
+
+> [!NOTE]
+> - You must pass the user's ID to get their presence information.
+> - When you call `GET /users/{id}/presence` or `GET /communications/presences/{id}`, replace `{id}` with the user’s GUID.
+> - For examples on how to get the unique identifier for a user, see [Get user](../api/user-get.md).
 
 ## Request Headers
 | Name          | Description               |
@@ -69,10 +74,6 @@ GET https://graph.microsoft.com/v1.0/me/presence
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-your-presence-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-your-presence-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -141,10 +142,6 @@ GET https://graph.microsoft.com/v1.0/users/66825e03-7ef5-42da-9069-724602c31f6b/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presence-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-user-presence-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -211,10 +208,6 @@ GET https://graph.microsoft.com/v1.0/communications/presences/dc74d9bb-6afe-433d
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presences-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-user-presences-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

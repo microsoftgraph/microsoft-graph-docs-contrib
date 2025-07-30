@@ -1,5 +1,5 @@
 ---
-title: "activityMetadata resource type (preview)"
+title: "activityMetadata resource type"
 description: "Represents metadata about a specific user activity being evaluated, including the activity type and location."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -20,7 +20,7 @@ Represents metadata about a specific user activity being evaluated, including th
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activity|microsoft.graph.security.userActivityType|The type of user activity. Possible values are `uploadText`, `uploadFile`, `downloadText`, `downloadFile`. Required.|
+|activity|microsoft.graph.security.userActivityType|The type of user activity. Possible values are `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Required.|
 
 ## Relationships
 

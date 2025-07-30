@@ -1,5 +1,5 @@
 ---
-title: "processConversationMetadata resource type (preview)"
+title: "processConversationMetadata resource type"
 description: "Represents metadata for a content entry that is part of a conversation."
 author: "ArunGedela"
 ms.date: 04/08/2025

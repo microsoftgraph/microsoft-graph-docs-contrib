@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "application_post_extensionproperty" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-post-extensionproperty-permissions.md)]
 
+[!INCLUDE [rbac-apps-applications-directoryextensions-apis](../includes/rbac-for-apis/rbac-apps-applications-directoryextensions-apis.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -83,10 +85,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-extensionproperty-from-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-extensionproperty-from-application-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

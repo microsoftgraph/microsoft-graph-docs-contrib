@@ -18,7 +18,7 @@ Retrieve a list of recently deleted directory objects from [deleted items](../re
 - [administrativeUnit](../resources/administrativeunit.md)
 - [application](../resources/application.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
-- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md
+- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
 - [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
 - [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
@@ -46,6 +46,8 @@ The following table shows the least privileged permission or permissions require
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+[!INCLUDE [rbac-directory-deleted-items-apis](../includes/rbac-for-apis/rbac-directory-deleted-items-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -116,10 +118,6 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.grou
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-directory-deleteditems-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-directory-deleteditems-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -194,10 +192,6 @@ ConsistencyLevel: eventual
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-directory-deleteditems-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-directory-deleteditems-count-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
