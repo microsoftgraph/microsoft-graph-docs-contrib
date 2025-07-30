@@ -49,7 +49,7 @@ Microsoft Graph can deliver change notifications to clients via the following ch
 
 - **Webhooks**. For more information, see [Receive change notifications through webhooks](./change-notifications-delivery-webhooks.md).
 - **Azure Event Hubs**. For more information, see [Receive change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md).
-- **Azure Event Grid** (preview). For more information, see [Receive change notifications through Azure Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext).
+- **Azure Event Grid**. For more information, see [Receive change notifications through Azure Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext).
 
 ## Managing subscriptions
 
