@@ -33,8 +33,8 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Education
 
-[Get](/graph/api/reportsroot-list-readingassignmentsubmissions?view=graph-rest-1.0&preserve-view=true) a list of reading assignments that were submitted by a student.
-[Get](/graph/api/reportsroot-list-reflectcheckinresponses?view=graph-rest-1.0&preserve-view=true) a list of Reflect check-ins that were submitted by a student.
+- [Get](/graph/api/reportsroot-list-readingassignmentsubmissions) a list of reading assignments that were submitted by a student.
+- [Get](/graph/api/reportsroot-list-reflectcheckinresponses) a list of Reflect check-ins that were submitted by a student.
 
 ### Files
 
@@ -44,6 +44,10 @@ Each fragment uploaded during an [upload session](/graph/api/resources/uploadses
 
 [Export](/graph/api/partners-billing-unbilledreconciliation-export) unbilled invoice reconciliation data.
 
+### Security
+
+Added [resourceAccessEvent](/graph/api/resources/security-resourceaccessevent) resource as a property in [userAccount](/graph/api/resources/security-useraccount).
+
 ### Security | eDiscovery
 
 Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, **additionalDataOptions**, and **statisticsOptions** as supported properties and parameters across various resources and actions of the eDiscovery API.
@@ -52,15 +56,11 @@ Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, *
 
 [Send a message with a Loop component](/graph/api/chatmessage-post).
 
-### Security
-
-Added [ResourceAccessEvent](/graph/api/resources/security-resourceaccessevent) resource as a property in [userAccount](/graph/api/resources/security-useraccount)
-
 ## July 2025: New in preview only
 
 ### Calendars | Places
 
-[Create](/graph/api/place-post-places?view=graph-rest-beta&preserve-view=true), [get descendants](/graph/api/place-descendants?view=graph-rest-beta&preserve-view=true), [update](/graph/api/place-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/place-delete?view=graph-rest-beta&preserve-view=true) a [place](/graph/api/resources/place) and its derived objects. These APIs enable scalable onboarding and management of the Places directory.
+[Create](/graph/api/place-post-places?view=graph-rest-beta&preserve-view=true), [get descendants](/graph/api/place-descendants?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/place-delete?view=graph-rest-beta&preserve-view=true) a [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) and its derived objects (for example, [building](/graph/api/resources/building?view=graph-rest-beta&preserve-view=true), [desk](/graph/api/resources/desk?view=graph-rest-beta&preserve-view=true), [floor](/graph/api/resources/floor?view=graph-rest-beta&preserve-view=true), or [section](/graph/api/resources/section?view=graph-rest-beta&preserve-view=true). These APIs enable scalable onboarding and management of the Places directory.
 
 ### Device and app management | Cloud PC
 
