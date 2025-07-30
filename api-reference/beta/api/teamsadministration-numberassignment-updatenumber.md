@@ -128,6 +128,7 @@ Content-Type: application/json
 ### Example 3: Update reverse number lookup options
 
 #### Request
+
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber3",
@@ -159,6 +160,7 @@ Content-Type: application/json
 
 #### Request
 <!-- {
+
   "blockType": "request",
   "name": "post_updateNumber4",
 }

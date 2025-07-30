@@ -159,7 +159,7 @@ The following example shows a request to *get a list of telephone numbers based 
 
 <!-- {
   "blockType": "request",
-  "name": "get_numberAssignments",
+  "name": "get_numberAssignments2",
 }
 -->
 ``` https
@@ -221,7 +221,7 @@ Content-Type: application/json
  The following example shows a request to *get a list of telephone numbers using `$top` and `$skip` for pagination.*
 <!-- {
   "blockType": "request",
-  "name": "get_numberAssignments",
+  "name": "get_numberAssignments3",
 }
 -->
 ``` http
@@ -240,14 +240,14 @@ Same style response as Example 1 with telephone numbers showing between 100 and 
  The following example shows a request to *get assignment details for a single telephone number using a filter.*
 <!-- {
   "blockType": "request",
-  "name": "get_numberAssignments",
+  "name": "get_numberAssignments4",
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$filter=telephoneNumber eq '+12052582895'
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
