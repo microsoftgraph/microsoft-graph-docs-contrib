@@ -67,12 +67,12 @@ If successful, this method returns a `200 OK` response code.
 
 #### Request
 
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber1",
 }
 -->
-
 ``` http
 POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json
@@ -84,6 +84,8 @@ Content-Type: application/json
 ```
 
 #### Response
+
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -97,9 +99,11 @@ Content-Type: application/json
 200 OK
 ```
 
-### Example 2: Update network site Id
+### Example 2: Update network site ID
 
 #### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -117,8 +121,9 @@ Content-Type: application/json
 
 #### Response
 
->**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -132,6 +137,8 @@ Content-Type: application/json
 ### Example 3: Update reverse number lookup options
 
 #### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -149,6 +156,8 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -165,8 +174,9 @@ Content-Type: application/json
 
 #### Request
 
-<!-- {
+The following example shows a request.
 
+<!-- {
   "blockType": "request",
   "name": "post_updateNumber4",
 }
@@ -182,8 +192,9 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
-
+>
 <!-- {
   "blockType": "response",
   "truncated": true,
