@@ -24,10 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "place-post-places-permissions"
+  "name": "place-post-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/place-post-places-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/place-post-permissions.md)]
 
 ## HTTP request
 
