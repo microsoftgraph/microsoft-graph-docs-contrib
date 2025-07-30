@@ -271,14 +271,6 @@
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
           "ApiChange": "Resource",
-          "ChangedApiName": "bookablePlaceMode",
-          "ChangeType": "Addition",
-          "Description": "Added the [bookablePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/bookablePlaceMode?view=graph-rest-beta) resource type.",
-          "Target": "bookablePlaceMode"
-        },
-        {
-          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
-          "ApiChange": "Resource",
           "ChangedApiName": "offlinePlaceMode",
           "ChangeType": "Addition",
           "Description": "Added the [offlinePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/offlinePlaceMode?view=graph-rest-beta) resource type.",
