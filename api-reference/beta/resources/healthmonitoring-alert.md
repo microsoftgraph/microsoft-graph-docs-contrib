@@ -16,7 +16,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 Represents a system-detected health monitoring alert associated with common Microsoft Entra authentication and access management scenarios. Anomaly detection catches unusual patterns in health metrics data streams, for example, unusually high MFA sign-in failures, and surfaces these patterns in the form of alerts in Microsoft Entra Health monitoring.
 
-This resource supports subscribing to [change notifications](/graph/webhooks).
+This resource supports subscribing to [change notifications](/graph/change-notifications-overview).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
