@@ -19,6 +19,7 @@ Represents individual desks.
 Inherits from [place](./place.md).
 
 ## Methods
+
 For the list of supported methods, see [place](./place.md).
 
 ## Properties
