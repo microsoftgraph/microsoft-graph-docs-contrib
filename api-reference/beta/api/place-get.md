@@ -165,7 +165,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_section"
+  "name": "place_get_section"
 }
 -->
 ``` http
