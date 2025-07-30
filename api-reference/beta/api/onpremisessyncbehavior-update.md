@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/onpremisessyncbehavior-update-permissions.md)]
 
 > [!IMPORTANT]
-> I> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation: *Groups Administrator* (least privilege), *Hybrid Administrator*.
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *Hybrid Administrator* is the least privileged role supported for this operation.
 
 
 ## HTTP request
@@ -61,13 +61,14 @@ PATCH /groups/{groupsId}/onPremisesSyncBehavior
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_onpremisessyncbehavior"
@@ -83,6 +84,12 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisessyncbehavior-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -90,18 +97,10 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesSyncBehavior"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.onPremisesSyncBehavior",
-  "id": "e7c2f02a-7a59-40de-8d6e-1e0197b8cfba",
-  "isCloudManaged": true
-}
+HTTP/1.1 204 No Content
 ```
 
