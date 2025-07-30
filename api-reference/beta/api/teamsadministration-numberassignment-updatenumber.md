@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code.
 
 ### Example 1: Update Location Id
 
-Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber1",
@@ -81,7 +81,7 @@ Content-Type: application/json
 }
 ```
 
-Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -96,7 +96,7 @@ Response
 
 ### Example 2: Update network site Id
 
-Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber2",
@@ -111,7 +111,7 @@ Content-Type: application/json
 }
 ```
 
-Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
