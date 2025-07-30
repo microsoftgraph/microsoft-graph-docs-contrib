@@ -94,7 +94,7 @@
             "publishedResource",
             "ipApplicationSegment",
             "webApplicationSegment",
-            "corsConfiguration_v2"           
+            "corsConfiguration_v2"
           ],
           "complexTypes": [
             "applicationSegment",
@@ -1049,8 +1049,8 @@
             "featureRolloutPolicy",
             "mobilityManagementPolicy",
             "organizationSettings",
-            "uxSetting", 
-            "deviceTemplate", 
+            "uxSetting",
+            "deviceTemplate",
             "mutualTlsOauthConfiguration"
           ],
           "complexTypes": [
@@ -1573,7 +1573,7 @@
                 "whatIfAnalysisResult",
                 "namedLocation",
                 "authenticationContextClassReference",
-                "conditionalAccessTemplate",                
+                "conditionalAccessTemplate",
                 "continuousAccessEvaluationPolicy"
               ],
               "childNodes": [
@@ -1635,7 +1635,7 @@
               "childNodes": [
                 {
                   "name": "External identities",
-                  "resources": [                    
+                  "resources": [
                     "identityProviderBase",
                     "builtInIdentityProvider",
                     "socialIdentityProvider",
@@ -2674,7 +2674,7 @@
               "scopeBase",
               "tenantScope",
               "textContent",
-              "userScope" 
+              "userScope"
             ]
           },
         {
@@ -3032,21 +3032,6 @@
             "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
             "microsoft.graph.teamsAdministration.policyAssignment"
           ]
-        },
-        {
-          "name": "AI interactions",
-          "resources": [
-            "aiInteractionHistory"
-          ],
-         "complexTypes": [
-           "aiInteraction",
-           "aiInteractionAttachment",
-           "aiInteractionContext",
-           "aiInteractionLink",
-           "aiInteractionMention",
-           "aiInteractionMentionedIdentitySet",
-           "aiUser"
-         ]
         },
         {
           "name": "Approvals",

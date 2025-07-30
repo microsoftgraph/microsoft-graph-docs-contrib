@@ -36,8 +36,6 @@ This resource supports:
 | [Retry service provisioning](../api/user-retryserviceprovisioning.md) | None | Retry the user service provisioning. |
 | [Revoke sign-in sessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. It forces the user to sign in to those applications again. |
 | [Export personal data](../api/user-exportpersonaldata.md) | None | Submits a data policy operation request, made by a company administrator to export an organizational user's data. |
-| **AI interaction**|||
-| [Get all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) |[aiInteraction](../resources/aiinteraction.md) collection|Get all Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. |
 | **App role assignments** |  |  |
 | [List](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles assigned to this user. |
 | [Add](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to this user. |
