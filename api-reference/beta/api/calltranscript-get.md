@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [callTranscript](../resources/calltranscript.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Retrieve a [callTranscript](../resources/calltranscript.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](https://review.learn.microsoft.com/en-us/graph/api/resources/adhoccall?view=graph-rest-beta&branch=pr-en-us-26954). These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
 
-Retrieving the transcript returns the metadata of the single transcript associated with the online meeting. Retrieving the content of the transcript returns the stream of text associated with the transcript.
+Retrieving the transcript returns the metadata of the single transcript associated with the online meeting or an ad hoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
 > [!NOTE]
 >
@@ -35,9 +35,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "calltranscript_get" } -->
 | Permission type| Least privileged permissions|Higher privileged permissions|
 | :---| :---| :--- |
-|Delegated (work or school account)| OnlineMeetingTranscript.Read.All| Not available.|
+|Delegated (work or school account)| OnlineMeetingTranscript.Read.All CallTranscripts.Read.All| Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat|Not available.|
+|Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat CallTranscripts.Read.All|Not available.|
 
 > **Note:** The application permission `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to scheduled private chat meetings, not to channel meetings.
 
@@ -51,21 +51,36 @@ To use application permissions for this API, tenant administrators must create a
 
 <!-- { "blockType": "ignored" } -->
 
-Get a single transcript of an online meeting.
+**For an online meeting** <br>
+Get a single transcript:
 
 ```http
 GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 ```
 
-Get the content of a single transcript of an online meeting.
+Get the content of a single transcript:
 
 ```http
 GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 ```
+**For an ad hoc call** <br>
+Get a single transcript:
 
+```http
+GET /me/adhoccalls/{meetingId}/transcripts/{transcriptId}
+GET /beta/users({userId})/adhocCalls({callId})/transcripts({transcriptId}) 
+```
+
+Get the content of a single transcript:
+
+```http
+GET me/adhoccalls/{meetingId}/transcripts/{transcriptId}/content
+GET /beta/users({userId})/adhocCalls({callId})/transcripts({transcriptId})/content?$format=text/vtt 
+```
 ## Optional query parameters
+```
 
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
 
@@ -178,6 +193,9 @@ Content-type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
 ```
+``` http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhoccalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
+```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calltranscript-content-csharp-snippets.md)]
@@ -238,6 +256,10 @@ WEBVTT
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content?$format=text/vtt
+
+``` http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhoccalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content?$format=text/vtt
+```
 ```
 
 # [C#](#tab/csharp)
@@ -297,6 +319,9 @@ WEBVTT
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
+ 
+    http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhoccalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
 ```
 
 # [C#](#tab/csharp)
