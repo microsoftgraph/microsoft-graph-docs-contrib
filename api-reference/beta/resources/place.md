@@ -23,7 +23,7 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |Method |Return type |Description |
 |:--|:--|:--|
 |[List](../api/place-list.md) |[place](./place.md) collection |Get a collection of the specified type of [place](../resources/place.md) objects defined in a tenant. |
-|[Create](../api/place-post-places.md) |[place](./place.md) |Create a new [place](../resources/place.md) object.| 
+|[Create](../api/place-post.md) |[place](./place.md) |Create a new [place](../resources/place.md) object.| 
 |[Get](../api/place-get.md) |[place](./place.md) |Read the properties of a [place](../resources/place.md) object. Returns the requested, derived type of **place**.|
 |[Update](../api/place-update.md) |[place](./place.md) |Update the properties of [place](../resources/place.md) object that can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [desk](../resources/desk.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). |
 |[Delete](../api/place-delete.md) |None |Delete a [place](../resources/place.md) object. |
