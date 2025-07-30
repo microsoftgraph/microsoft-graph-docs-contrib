@@ -66,6 +66,7 @@ If successful, this method returns a `200 OK` response code.
 ### Example 1: Update Location Id
 
 #### Request
+
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber1",
@@ -98,6 +99,7 @@ Content-Type: application/json
 ### Example 2: Update network site Id
 
 #### Request
+
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber2",
@@ -159,6 +161,7 @@ Content-Type: application/json
 ### Example 4: Clear location ID
 
 #### Request
+
 <!-- {
 
   "blockType": "request",
