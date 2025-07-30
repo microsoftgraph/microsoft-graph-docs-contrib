@@ -9,7 +9,7 @@ ms.date: 04/04/2024
 ---
 
 # message: markAsNotJunk (deprecated)
-The **markAsNotJunk** API is deprecated and will stop working data on December 30, 2025. Going forward use the [reportMessage](https://learn.microsoft.com/en-us/graph/api/message-reportmessage?view=graph-rest-beta) API.
+The **markAsNotJunk** API is deprecated and will stop working data on December 30, 2025. Going forward use the [reportMessage](message-reportmessage.md)) API.
 
 Namespace: microsoft.graph
 
