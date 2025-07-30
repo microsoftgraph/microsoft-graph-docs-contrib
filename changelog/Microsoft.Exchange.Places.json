@@ -313,7 +313,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "building",
           "ChangeType": "Addition",
-          "Description": "Added the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-beta) resource and associated methods.",
+          "Description": "Added the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-beta) resource.",
           "Target": "building"
         },
         {
@@ -321,7 +321,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "desk",
           "ChangeType": "Addition",
-          "Description": "Added the [desk](https://learn.microsoft.com/en-us/graph/api/resources/desk?view=graph-rest-beta) resource and associated methods.",
+          "Description": "Added the [desk](https://learn.microsoft.com/en-us/graph/api/resources/desk?view=graph-rest-beta) resource.",
           "Target": "desk"
         },
         {
@@ -329,7 +329,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "floor",
           "ChangeType": "Addition",
-          "Description": "Added the [floor](https://learn.microsoft.com/en-us/graph/api/resources/floor?view=graph-rest-beta) resource and associated methods.",
+          "Description": "Added the [floor](https://learn.microsoft.com/en-us/graph/api/resources/floor?view=graph-rest-beta) resource.",
           "Target": "floor"
         },
         {
@@ -337,8 +337,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "section",
           "ChangeType": "Addition",
-          "Description": "Added the [section](https://learn.microsoft.com/en-us/graph/api/resources/section?view=graph-rest-beta) resource and associated methods.",
+          "Description": "Added the [section](https://learn.microsoft.com/en-us/graph/api/resources/section?view=graph-rest-beta) resource.",
           "Target": "section"
+        },
+        {
+          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceLinks",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceLinks** property to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
         },
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
@@ -450,6 +458,22 @@
           "ChangedApiName": "descendants",
           "ChangeType": "Addition",
           "Description": "Added the [descendants](https://learn.microsoft.com/en-us/graph/api/place-descendants?view=graph-rest-beta) method to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "place",
+          "ChangeType": "Addition",
+          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/place-create?view=graph-rest-beta) operation to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "place",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/place-delete?view=graph-rest-beta) operation to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
           "Target": "place"
         }
       ],
