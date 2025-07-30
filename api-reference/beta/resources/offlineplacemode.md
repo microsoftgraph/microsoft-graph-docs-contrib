@@ -1,6 +1,6 @@
 ---
 title: "offlinePlaceMode resource type"
-description: "Describes why a desk has been marked as offline and unavailable for booking."
+description: "Describes why a desk or a workspace has been marked as offline and unavailable for booking."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes why a desk has been marked as offline and unavailable for booking.
+Describes why a desk or a workspace has been marked as offline and unavailable for booking.
 
-This mode is only supported for [desk](./desk.md) objects.
+This mode is supported for [desk](./desk.md), [workspace](./workspace.md) objects.
 
 Inherits from [placeMode](../resources/placemode.md).
 
