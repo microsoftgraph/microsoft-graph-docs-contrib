@@ -1553,9 +1553,9 @@ items:
         href: ../../api/phoneauthenticationmethod-disablesmssignin.md
       - name: Enable SMS sign-in
         href: ../../api/phoneauthenticationmethod-enablesmssignin.md
-    - name: Platform credential authentication method
+    - name: Platform credential
       items:
-      - name: Platform credential authentication method
+      - name: Platform credential
         href: ../../resources/platformcredentialauthenticationmethod.md
       - name: List
         href: ../../api/platformcredentialauthenticationmethod-list.md
@@ -1766,6 +1766,12 @@ items:
         href: ../../api/conditionalaccesspolicy-update.md
       - name: Delete
         href: ../../api/conditionalaccesspolicy-delete.md
+    - name: What If evaluation
+      items:
+      - name: What If evaluation
+        href: ../../resources/whatifanalysisresult.md
+      - name: Evaluate
+        href: ../../api/conditionalaccessroot-evaluate.md
     - name: Named location
       items:
       - name: Named location
