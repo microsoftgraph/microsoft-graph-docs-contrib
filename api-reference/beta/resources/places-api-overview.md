@@ -51,7 +51,7 @@ The following table lists some of the common uses for the Places API.
 | Use case | REST resource | See also |
 | :--- | :--- | :--- |
 | Create and manage a place  | [place](../resources/place.md) | [place methods](../resources/place.md#methods) |
-| Manage a building, floor, section, room, room list, workspace, or desk | [place](../resources/place.md) |[place methods](../resources/place.md#methods) |
+| Interact with place spaces such as building, floor, section, room, room list, workspace, or desk | [place](../resources/place.md) |[place methods](../resources/place.md#methods) |
 
 ## Next steps
 
