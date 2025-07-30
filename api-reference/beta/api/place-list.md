@@ -240,7 +240,7 @@ The following example shows the response.
 >**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "name": "get_all_section",
+  "name": "get_all_sections",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.section)"
 } -->
@@ -282,7 +282,7 @@ The following example shows the response.
 >**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "name": "get_all_desk",
+  "name": "get_all_desks",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.desk)"
 } -->
