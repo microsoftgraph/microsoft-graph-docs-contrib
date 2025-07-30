@@ -166,7 +166,6 @@ The following example shows a request to *get a list of telephone numbers based 
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$filter=assignmentStatus eq 'unassigned' and capabilities/any(c:c eq 'userAssignment')
 ```
 
-### Example 2 
 
 #### Response
 
@@ -214,7 +213,10 @@ Content-Type: application/json
 }
 ```
 
-### Example 3 Request
+### Example 3 
+
+#### Request
+
 
  The following example shows a request to *get a list of telephone numbers using `$top` and `$skip` for pagination.*
 <!-- {
@@ -226,11 +228,14 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$top=100&$skip=200
 ```
 
-### Example 3 Response
+Response
 
 Same style response as Example 1 with telephone numbers showing between 100 and 200 sequence in the list.
 
-### Example 4 Request
+### Example 4 
+
+#### Request
+
 
  The following example shows a request to *get assignment details for a single telephone number using a filter.*
 <!-- {
@@ -242,7 +247,7 @@ Same style response as Example 1 with telephone numbers showing between 100 and 
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$filter=telephoneNumber eq '+12052582895'
 ```
 
-### Example 4 Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

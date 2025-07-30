@@ -71,6 +71,7 @@ If successful, this method returns a `200 OK` response code.
   "name": "post_updateNumber1",
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json

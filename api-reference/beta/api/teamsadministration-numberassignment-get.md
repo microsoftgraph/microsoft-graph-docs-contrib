@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 Get assignment details for a single telephone number using the id
 
-### Example Request
+### Request
 <!-- {
   "blockType": "request",
   "name": "get_numberAssignments",
@@ -69,7 +69,7 @@ Get assignment details for a single telephone number using the id
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/YmMyNjMyZTMtNzUwYy00N2Q3LWFlYWUtOWZlZTAzNWJjMGM3fCsxMjAyMzQ1Njc4OQ
 ```
 
-### Example Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
