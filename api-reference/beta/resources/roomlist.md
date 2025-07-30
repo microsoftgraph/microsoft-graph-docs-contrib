@@ -18,7 +18,7 @@ Represents a group of [room](room.md) or [workspace](workspace.md) resources def
 
 In Exchange Online, each **roomList** is associated with a mailbox.
 
-Derived from [place](place.md).
+Inherits from [place](place.md).
 
 ## Methods
 
