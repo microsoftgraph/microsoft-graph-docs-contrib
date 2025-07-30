@@ -1,6 +1,6 @@
 ---
 title: "room resource type"
-description: "Represents a room within the tenant."
+description: "Represents a room within a tenant."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a room within the tenant. A room can be added to a [floor](./floor.md) or to a [section](./section.md).
+Represents a room within a tenant. A room can be added to a [floor](./floor.md) or to a [section](./section.md).
 
 Inherits from [place](./place.md).
 
