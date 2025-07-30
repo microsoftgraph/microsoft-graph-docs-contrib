@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
-### Example 1: Update Location Id
+### Example 1: Update Location ID
 
 #### Request
 
@@ -86,6 +86,7 @@ Content-Type: application/json
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,6 +118,7 @@ Content-Type: application/json
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -148,6 +150,7 @@ Content-Type: application/json
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -180,6 +183,7 @@ Content-Type: application/json
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
