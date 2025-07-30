@@ -161,7 +161,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_section
+  "name": "create_section"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/places
