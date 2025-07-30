@@ -266,7 +266,13 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/beta/places
 Content-type: application/json
-
+{
+  "@odata.type": "microsoft.graph.room",
+  "displayName": "Conf Room 4/3.3G11",
+  "parentId": "46ef7aed-5d94-4fd4-ae03-b333bc7a6955",
+  "emailAddress": "confroom433G11@contoso.com",
+  "bookingType": "standard",
+}
 
 ```
 
@@ -283,7 +289,16 @@ The following example shows the response.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-
+{
+  "@odata.type": "#microsoft.graph.room",
+  "id": "0be387a4-d53b-410f-9daf-f4fa07e5b05a",
+  "placeId": "4923e5a8-453e-4edf-b272-9c33757d4fb3",
+  "displayName": "Conf Room 4/3.3G11",
+  "parentId": "46ef7aed-5d94-4fd4-ae03-b333bc7a6955",
+  "isWheelChairAccessible": false,
+  "emailAddress": "confroom433G11@contoso.com",
+  "bookingType": "standard"
+}
 
 ```
 
