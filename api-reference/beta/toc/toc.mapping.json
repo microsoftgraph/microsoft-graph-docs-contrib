@@ -3128,7 +3128,6 @@
                 "onlineMeetingEngagementConversation",
                 "externalMeetingRegistration",
                 "meetingRegistration",
-                "callAiInsight",
                 "callRecording",
                 "callTranscript"
               ],
@@ -3154,7 +3153,6 @@
               "complexTypes": [
                 "actionItem",
                 "aiOnlineMeeting",
-                "callAiInsightViewPoint",
                 "meetingNote",
                 "meetingNoteSubpoint",
                 "mentionEvent",

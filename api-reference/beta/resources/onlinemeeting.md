@@ -33,7 +33,6 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | [Update](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
 | [Delete](../api/onlinemeeting-delete.md) | None | Delete an **onlineMeeting** object. |
 | [Create or get](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties. |
-| [List AI insights](../api/onlinemeeting-list-aiinsights.md) | [callAiInsight](callaiinsight.md) collection | Retrieve the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md). |
 | [List recordings](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Retrieve the list of [callRecording](../resources/callrecording.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md). |
 | [List transcripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Retrieve the list of transcripts of an **onlineMeeting**. |
 
@@ -125,7 +124,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | Value              | Description                                                   |
 | ------------------ | ------------------------------------------------------------- |
 | everyone           | Everyone is a presenter. Default.                             |
-| organization       | Everyone in organizer’s organization is a presenter.          |
+| organization       | Everyone in organizer's organization is a presenter.          |
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
 | organizer          | Only the organizer  is a presenter.                           |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.              |
@@ -158,7 +157,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "optionalProperties": [
-	"externalId"
+    "externalId"
   ],
   "@odata.type": "microsoft.graph.onlineMeeting"
 }-->
