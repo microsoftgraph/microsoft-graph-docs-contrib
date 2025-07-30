@@ -113,6 +113,7 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json
+
 {
   "telephoneNumber": "+12061234567",
   "networkSiteId": "fff21455-0f84-4a6b-babd-0a9b46971a62",
@@ -148,6 +149,7 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json
+
 {
   "telephoneNumber": "+12061234567",
   "reverseNumberLookupOptions": [ “skipInternalVoip” ],
@@ -184,6 +186,7 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json
+
 {
   "telephoneNumber": "+12061234567",
   "locationId": "",
