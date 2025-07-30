@@ -94,8 +94,9 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.teamsAdministration.telephoneNumberManagement)"
 }
 -->
-``` http
-200 OK
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 ### Example 2: Update network site ID
@@ -130,8 +131,9 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.teamsAdministration.telephoneNumberManagement)"
 }
 -->
-``` http
-200 OK
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 ### Example 3: Update reverse number lookup options
@@ -166,8 +168,9 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.teamsAdministration.telephoneNumberManagement)"
 }
 -->
-``` http
-200 OK
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 ### Example 4: Clear location ID
@@ -201,6 +204,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.teamsAdministration.telephoneNumberManagement)"
 }
 -->
-``` http
-200 OK
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
