@@ -31,7 +31,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |userConfigurations|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Represents the configuration information of users who have accounts hosted on Microsoft Teams.|
-|telephoneNumberManagement|[telephoneNumberManagementRoot](../resources/teamsadministration-telephonenumbermanagementroot.md)|Represents telephone number management operations for users accounts hosted on Microsoft Teams.|
+|telephoneNumberManagement|[microsoft.graph.teamsAdministration.telephoneNumberManagementRoot](../resources/teamsadministration-telephonenumbermanagementroot.md)|Represents telephone number management operations for users' accounts hosted on Microsoft Teams.|
 
 ## JSON representation
 
