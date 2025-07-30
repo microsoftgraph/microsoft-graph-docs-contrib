@@ -173,8 +173,8 @@ Content-Type: application/json
   "isWheelChairAccessible": true,
   "sortOrder": 2,
   "geoCoordinates": {
-    "latitude": 0,
-    "longitude": 0,
+    "latitude": 0.0,
+    "longitude": 0.0,
     "accuracy": null,
     "altitude": null,
     "altitudeAccuracy": null
@@ -339,8 +339,8 @@ Content-Type: application/json
     "countryOrRegion": "USA"
   },
   "geoCoordinates": {
-    "latitude": 47,
-    "longitude": -122
+    "latitude": 47.0,
+    "longitude": -122.0
   },
   "phone": "555-555-0100",
   "nickname": "Conf Room",
@@ -417,8 +417,8 @@ Content-Type: application/json
     "countryOrRegion": "USA"
   },
   "geoCoordinates": {
-    "latitude": 47,
-    "longitude": -122
+    "latitude": 47.0,
+    "longitude": -122.0
   },
   "phone": "555-555-0100",
   "nickname": "Workspace",
@@ -465,8 +465,8 @@ Content-Type: application/json
   },
   "geoCoordinates": {
     "altitude": null,
-    "latitude": 47,
-    "longitude": -122,
+    "latitude": 47.0,
+    "longitude": -122.0,
     "accuracy": null,
     "altitudeAccuracy": null
   }
@@ -503,8 +503,8 @@ Content-Type: application/json
   },
   "geoCoordinates": {
     "altitude": null,
-    "latitude": 47,
-    "longitude": -122,
+    "latitude": 47.0,
+    "longitude": -122.0,
     "accuracy": null,
     "altitudeAccuracy": null
   },
