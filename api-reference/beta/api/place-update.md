@@ -1,6 +1,6 @@
 ---
 title: "Update place"
-description: "Update the properties of a place object."
+description: "Update the properties of place object that can be a building, floor, section, desk, room, workspace, or roomList."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [place](../resources/place.md) object, which can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [desk](../resources/desk.md), [room](../resources/room.md), [workspace](../resources/workspace.md) or [roomList](../resources/roomlist.md). You can identify the place by specifying the **id** property.
+Update the properties of [place](../resources/place.md) object that can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [desk](../resources/desk.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). You can identify the place by specifying the **id** property.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ PATCH /places/{id}
 ```
 
 >**Note:**
-> * **id** is the unique identifier of the [place](../resources/place.md) to update.
+> `{id}` is the unique identifier of the [place](../resources/place.md) to update.
 
 ## Request headers
 
@@ -47,16 +47,16 @@ PATCH /places/{id}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-Only one instance of a [place](../resources/place.md) resource can be updated at a time. In the request body, use `@odata.type` to specify the type of place and include the properties to update.
+Only one instance of a [place](../resources/place.md) resource can be updated at a time. In the request body, use **@odata.type** to specify the type of place and include the properties to update.
 
-> [!Note]
+> [!NOTE]
 > You can't use this API to update the **id**, **placeId**, **emailAddress**, **displayName**, or **bookingType** of a [place](../resources/place.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [place](../resources/place.md), including the street, city, state, country or region, and postal code. Optional.|
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [place](../resources/place.md) location in latitude, longitude, and (optionally) altitude coordinates. Optional.|
-|isWheelChairAccessible|Boolean|Whether or not the [place](../resources/place.md) is wheelchair accessible. Required.|
+|isWheelChairAccessible|Boolean|Indicates whether the [place](../resources/place.md) is wheelchair accessible. Required.|
 |label |String|User-defined description of the [place](../resources/place.md). Optional.|
 |parentId|String|**id** of a parent [place](../resources/place.md). Optional.|
 |phone|String|The phone number of the [place](../resources/place.md). Optional.|
@@ -70,18 +70,19 @@ If successful, this method returns a `200 OK` response code and an updated [plac
 
 ### Example 1: Update a building
 
-### Request
+The following example shows how to update a **building** object.
+
+#### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_building"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/places/e18a8e21-0494-4296-a5bc-f848dba2740d
-Content-type: application/json
+Content-Type: application/json
 
 {
   "@odata.type": "microsoft.graph.building",
@@ -89,7 +90,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -99,48 +100,48 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.building"
 } -->
-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-	"@odata.type": "#microsoft.graph.building",
-	"id": "e18a8e21-0494-4296-a5bc-f848dba2740d",
-	"placeId": "e18a8e21-0494-4296-a5bc-f848dba2740d",
-	"displayName": "MRS",
-	"phone": "8801733457",
-	"tags": [
-		"most popular building"
-	],
-	"isWheelChairAccessible": true,
-	"label": "this is a building not open to all",
-	"hasWiFi": false,
-	"geoCoordinates": {
-		"latitude": 31.2513263,
-		"longitude": 121.3912291,
-		"accuracy": null,
-		"altitude": null,
-		"altitudeAccuracy": null
-	},
-	"resourceLinks": []
+  "@odata.type": "#microsoft.graph.building",
+  "id": "e18a8e21-0494-4296-a5bc-f848dba2740d",
+  "placeId": "e18a8e21-0494-4296-a5bc-f848dba2740d",
+  "displayName": "MRS",
+  "phone": "8801733457",
+  "tags": [
+    "most popular building"
+  ],
+  "isWheelChairAccessible": true,
+  "label": "this is a building not open to all",
+  "hasWiFi": false,
+  "geoCoordinates": {
+    "latitude": 31.2513263,
+    "longitude": 121.3912291,
+    "accuracy": null,
+    "altitude": null,
+    "altitudeAccuracy": null
+  },
+  "resourceLinks": []
 }
 ```
 
 ### Example 2: Update a floor
 
-### Request
+The following example shows how to update a **floor** object.
+
+#### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_floor"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/places/c64205d0-1a2d-4cfe-9012-3f5d668d28ea
-Content-type: application/json
+Content-Type: application/json
 
 {
   "@odata.type": "microsoft.graph.floor",
@@ -149,7 +150,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -159,43 +160,43 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.floor"
 } -->
-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-	"@odata.type": "#microsoft.graph.floor",
-	"id": "c64205d0-1a2d-4cfe-9012-3f5d668d28ea",
-	"placeId": "c64205d0-1a2d-4cfe-9012-3f5d668d28ea",
-	"displayName": "Floor X",
-	"parentId": "be7b53f1-7c63-4533-91d4-52c3ca856afb",
-	"isWheelChairAccessible": true,
-	"sortOrder": 2,
-	"geoCoordinates": {
-		"latitude": 0.0,
-		"longitude": 0.0,
-		"accuracy": null,
-		"altitude": null,
-		"altitudeAccuracy": null
-	}
+  "@odata.type": "#microsoft.graph.floor",
+  "id": "c64205d0-1a2d-4cfe-9012-3f5d668d28ea",
+  "placeId": "c64205d0-1a2d-4cfe-9012-3f5d668d28ea",
+  "displayName": "Floor X",
+  "parentId": "be7b53f1-7c63-4533-91d4-52c3ca856afb",
+  "isWheelChairAccessible": true,
+  "sortOrder": 2,
+  "geoCoordinates": {
+    "latitude": 0,
+    "longitude": 0,
+    "accuracy": null,
+    "altitude": null,
+    "altitudeAccuracy": null
+  }
 }
 ```
 
 ### Example 3: Update a section
 
-### Request
+The following example shows how to update a **section** object.
+
+#### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_section
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/places/3e7160bb-75da-4456-ab3c-5ee061f4611a
-Content-type: application/json
+Content-Type: application/json
 
 {
   "@odata.type": "microsoft.graph.section",
@@ -203,7 +204,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -213,46 +214,46 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.section"
 } -->
-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-	"@odata.type": "#microsoft.graph.section",
-	"id": "3e7160bb-75da-4456-ab3c-5ee061f4611a",
-	"placeId": "3e7160bb-75da-4456-ab3c-5ee061f4611a",
-	"displayName": "section_1",
-	"parentId": "e30d4c71-95bf-4576-be4f-b6b7a8d2eeb7",
-	"isWheelChairAccessible": false,
-	"label": "discuss area"
+  "@odata.type": "#microsoft.graph.section",
+  "id": "3e7160bb-75da-4456-ab3c-5ee061f4611a",
+  "placeId": "3e7160bb-75da-4456-ab3c-5ee061f4611a",
+  "displayName": "section_1",
+  "parentId": "e30d4c71-95bf-4576-be4f-b6b7a8d2eeb7",
+  "isWheelChairAccessible": false,
+  "label": "discuss area"
 }
 ```
 
 ### Example 4: Update a desk
 
-### Request
+The following example shows how to update a **desk** object.
+
+#### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_desk"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/places/530f7900-8063-4daf-9cc1-168cb3ac26e9
-Content-type: application/json
+Content-Type: application/json
 
 {
   "@odata.type": "microsoft.graph.desk",
   "mode": {
-		 "@odata.type": "microsoft.graph.dropInPlaceMode"
-	}
+    "@odata.type": "microsoft.graph.dropInPlaceMode"
+  }
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -262,35 +263,35 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.desk"
 } -->
-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-	"@odata.type": "#microsoft.graph.desk",
-	"id": "530f7900-8063-4daf-9cc1-168cb3ac26e9",
-	"placeId": "530f7900-8063-4daf-9cc1-168cb3ac26e9",
-	"displayName": "desk 5",
-	"parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
-	"isWheelChairAccessible": true,
-	"mailboxDetails": {
-		"externalDirectoryObjectId": "04c6ff74-9268-41aa-96b5-5637d9f039bf",
-		"emailAddress": "desk5ca86f9b61753443541750@contoso.com"
-	},
-	"mode": {
-		"@odata.type": "#microsoft.graph.dropInPlaceMode"
-	}
+  "@odata.type": "#microsoft.graph.desk",
+  "id": "530f7900-8063-4daf-9cc1-168cb3ac26e9",
+  "placeId": "530f7900-8063-4daf-9cc1-168cb3ac26e9",
+  "displayName": "desk 5",
+  "parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
+  "isWheelChairAccessible": true,
+  "mailboxDetails": {
+    "externalDirectoryObjectId": "04c6ff74-9268-41aa-96b5-5637d9f039bf",
+    "emailAddress": "desk5ca86f9b61753443541750@contoso.com"
+  },
+  "mode": {
+    "@odata.type": "#microsoft.graph.dropInPlaceMode"
+  }
 }
 ```
 
 ### Example 5: Update a room
 
-### Request
+The following example shows how to update a **room** object.
+
+#### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["cf100@contoso.com"],
@@ -298,7 +299,7 @@ The following example shows a request.
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/places/cf100@contoso.com
-Content-type: application/json
+Content-Type: application/json
 
 {
   "@odata.type": "microsoft.graph.room",
@@ -310,7 +311,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -320,53 +321,54 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.room"
 } -->
-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
-    "@odata.type": "#microsoft.graph.room",
-    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
-    "emailAddress": "cf100@contoso.com",
-    "displayName": "Conf Room 100",
-    "address": {
-      "street": "4567 Main Street",
-      "city": "Buffalo",
-      "state": "NY",
-      "postalCode": "98052",
-      "countryOrRegion": "USA"
-    },
-    "geoCoordinates": {
-      "latitude": 47.0,
-      "longitude": -122.0
-    },
-    "phone": "555-555-0100",
-    "nickname": "Conf Room",
-    "label": "100",
-    "capacity": 50,
-    "building": "1",
-    "floorLabel": "1P",
-    "floorNumber": 1,
-    "isWheelChairAccessible": false,
-    "bookingType": "standard",
-    "tags": [
-      "bean bags"
-    ],
-    "audioDeviceName": null,
-    "videoDeviceName": null,
-    "displayDeviceName": "surface hub",
-    "placeId": "080ed1a0-7b54-4995-85a5-eeec751786f5"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+  "@odata.type": "#microsoft.graph.room",
+  "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+  "emailAddress": "cf100@contoso.com",
+  "displayName": "Conf Room 100",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "latitude": 47,
+    "longitude": -122
+  },
+  "phone": "555-555-0100",
+  "nickname": "Conf Room",
+  "label": "100",
+  "capacity": 50,
+  "building": "1",
+  "floorLabel": "1P",
+  "floorNumber": 1,
+  "isWheelChairAccessible": false,
+  "bookingType": "standard",
+  "tags": [
+    "bean bags"
+  ],
+  "audioDeviceName": null,
+  "videoDeviceName": null,
+  "displayDeviceName": "surface hub",
+  "placeId": "080ed1a0-7b54-4995-85a5-eeec751786f5"
+}
 ```
 
 ### Example 6: Update a workspace
 
-### Request
+The following example shows how to update a **workspace** object.
+
+#### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["ws100@contoso.com"],
@@ -374,7 +376,7 @@ The following example shows a request.
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/places/ws100@contoso.com
-Content-type: application/json
+Content-Type: application/json
 
 {
   "@odata.type": "microsoft.graph.workspace",
@@ -386,7 +388,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -397,50 +399,50 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.workspace"
 } -->
-
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
-    "@odata.type": "#microsoft.graph.workspace",
-    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
-    "emailAddress": "ws100@contoso.com",
-    "displayName": "Workspace 100",
-    "address": {
-      "street": "4567 Main Street",
-      "city": "Buffalo",
-      "state": "NY",
-      "postalCode": "98052",
-      "countryOrRegion": "USA"
-    },
-    "geoCoordinates": {
-      "latitude": 47.0,
-      "longitude": -122.0
-    },
-    "phone": "555-555-0100",
-    "nickname": "Workspace",
-    "label": "100",
-    "capacity": 50,
-    "building": "1",
-    "floorLabel": "1P",
-    "floorNumber": 1,
-    "isWheelChairAccessible": false,
-    "tags": [
-      "bean bags"
-    ],
-    "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+  "@odata.type": "#microsoft.graph.workspace",
+  "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+  "emailAddress": "ws100@contoso.com",
+  "displayName": "Workspace 100",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "latitude": 47,
+    "longitude": -122
+  },
+  "phone": "555-555-0100",
+  "nickname": "Workspace",
+  "label": "100",
+  "capacity": 50,
+  "building": "1",
+  "floorLabel": "1P",
+  "floorNumber": 1,
+  "isWheelChairAccessible": false,
+  "tags": [
+    "bean bags"
+  ],
+  "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
 }
 ```
 
-### Example 7: Update a roomlist
+### Example 7: Update a room list
 
-### Request
+The following example shows how to update a **roomList** object.
+
+#### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Building1RroomList@contoso.com"],
@@ -448,12 +450,12 @@ The following example shows a request.
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/places/Building1RroomList@contoso.com
-Content-type: application/json
+Content-Type: application/json
 
 {
   "@odata.type": "microsoft.graph.roomList",
   "displayName": "Building 1",
-  "phone":"555-555-0100",
+  "phone": "555-555-0100",
   "address": {
     "street": "4567 Main Street",
     "city": "Buffalo",
@@ -463,15 +465,15 @@ Content-type: application/json
   },
   "geoCoordinates": {
     "altitude": null,
-    "latitude": 47.0,
-    "longitude": -122.0,
+    "latitude": 47,
+    "longitude": -122,
     "accuracy": null,
     "altitudeAccuracy": null
- }
+  }
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -485,7 +487,7 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
@@ -501,11 +503,11 @@ Content-type: application/json
   },
   "geoCoordinates": {
     "altitude": null,
-    "latitude": 47.0,
-    "longitude": -122.0,
+    "latitude": 47,
+    "longitude": -122,
     "accuracy": null,
     "altitudeAccuracy": null
- },
+  },
   "phone": "555-555-0100",
   "emailAddress": "bldg1@contoso.com",
   "placeId": "406bd1b2-237c-4710-bda2-8b7900d61b27"
