@@ -192,7 +192,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_section
+  "name": "update_section"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/places/3e7160bb-75da-4456-ab3c-5ee061f4611a
