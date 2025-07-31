@@ -44,6 +44,6 @@ The following JSON representation shows the resource type.
   "commandLineArguments": "String",
   "filePath": "String",
   "iconIndex": "Int32",
-  "iconPath": "String",
+  "iconPath": "String"
 }
 ```
