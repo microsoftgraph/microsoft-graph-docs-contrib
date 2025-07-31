@@ -322,7 +322,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.workspace",
   "parentId": "f7de7265-e420-47b4-9d49-28d728716241",
   "displayName": "testSpace001",
-  "emailAddress": "wendyTestSpace@M365x42405544.onmicrosoft.com",
+  "emailAddress": "frank@contoso.com",
   "description": "test for workspace",
   "tags": ["test"]
 }
@@ -350,11 +350,10 @@ Content-Type: application/json
   "parentId": "f7de7265-e420-47b4-9d49-28d728716241",
   "displayName": "testSpace001",
   "phone": null,
-  "emailAddress": "wendyTestSpace@M365x42405544.onmicrosoft.com",
+  "emailAddress": "frank@contoso.com",
   "description": "test for workspace",
   "isWheelChairAccessible": false,
   "tags": []
 }
-
 ```
 
