@@ -202,11 +202,11 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-In the previous channel indirect membership notification payload, the **resource** property points to the [allMembers](/graph/api/channel-list-allmembers) endpoint instead of the [members](/graph/api/channel-list-members) endpoint.
+In the previous channel indirect membership notification payload, the **resource** property points to the [List allMembers](/graph/api/channel-list-allmembers) endpoint instead of the [members](/graph/api/channel-list-members) endpoint.
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true) schema. The payload is similar to that returned by GET operations. The payload is similar to that returned by GET [allMembers](/api-reference/v1.0/api/channel-list-allmembers.md).
+The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true) schema. The payload is similar to that returned by GET operations. The payload is similar to that returned by the [List allMembers](/graph/api/channel-list-allmembers) endpoint.
 
 ```json
 {
