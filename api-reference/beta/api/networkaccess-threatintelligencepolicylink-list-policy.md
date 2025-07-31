@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringP
 
 ---
 
-
 ### Response
 
 The following example shows the response.

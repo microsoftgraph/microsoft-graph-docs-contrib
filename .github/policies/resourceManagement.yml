@@ -210,6 +210,8 @@ configuration:
         - labelAdded:
             label: 'area: identity protection'
         - labelAdded:
+            label: 'area: intune'
+        - labelAdded:
             label: 'area: app model'
         - labelAdded:
             label: 'area: multicloud permissions management'

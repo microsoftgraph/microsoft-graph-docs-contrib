@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/networkAccess/threatIntelligencePolicies/{t
 
 ---
 
-
 ### Response
 
 The following example shows the response.
