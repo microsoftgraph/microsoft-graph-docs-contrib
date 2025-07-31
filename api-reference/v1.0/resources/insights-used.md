@@ -1,6 +1,6 @@
 ---
 title: "usedInsight resource type"
-description: "An insight representing documents used by a specific user. The insights return the most relevant documents that a user viewed or modified."
+description: "Represents insights from documents used by a specific user."
 author: "simonhult"
 ms.localizationpriority: medium
 ms.subservice: "insights"
@@ -12,9 +12,9 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
-An insight representing documents used by a specific user. The insights return the most relevant documents that a user viewed or modified. This includes documents in:
+Represents insights from documents used by a specific user. The insights return the most relevant documents that a user viewed or modified. This includes documents in:
 
-- OneDrive for school or work
+- OneDrive for work or school
 - SharePoint
 
 ## Methods
