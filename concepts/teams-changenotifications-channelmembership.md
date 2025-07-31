@@ -111,11 +111,11 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-The above payload for channel membership events where the **resource** property refers to a channel member.
+The previous payload shows the channel membership events where the **resource** property refers to a channel member.
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
@@ -202,11 +202,11 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-In the above channel indirect membership notification payload, the **resource** property points to the [allMembers](/api-reference/v1.0/api/channel-list-allmembers.md) endpoint instead of the [members](/api-reference/v1.0/api/channel-list-members.md) endpoint.
+In the previous channel indirect membership notification payload, the **resource** property points to the [allMembers](/graph/api/channel-list-allmembers) endpoint instead of the [members](/graph/api/channel-list-members) endpoint.
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
@@ -290,7 +290,7 @@ For notifications with resource data, the payload looks like the following. This
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [sharedWithChannelTeamInfo ](/graph/api/resources/sharedwithchannelteaminfo?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The payload conforms to the [sharedWithChannelTeamInfo](/graph/api/resources/sharedwithchannelteaminfo?view=graph-rest-beta&preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
@@ -321,11 +321,13 @@ For notifications without resource data, the payload looks like the following. T
   }
 }
 ```
+
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get information about when a channel is shared with or unshared from a team.
 
-After receiving a notification event that indicates a shared channel was shared with or unshared from a team, call the [List allMembers](/graph/api/channel-list-allmembers) API to refresh the shared channel membership.
+After you receive a notification event that indicates a shared channel was shared with or unshared from a team, call the [List allMembers](/graph/api/channel-list-allmembers) API to refresh the shared channel membership.
 
 ## Related content
+
 - [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
 - [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
