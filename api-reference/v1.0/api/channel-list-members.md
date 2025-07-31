@@ -1,6 +1,6 @@
 ---
 title: "List members of a channel"
-description: "List members of a channel."
+description: "Get a list of members in a channel, including direct members of standard, private, and shared channels."
 author: "akjo"
 ms.localizationpriority: high
 ms.subservice: "teams"
@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Retrieve a list of [conversationMembers](../resources/conversationmember.md) from a [channel](../resources/channel.md).
+Get a list of [members](../resources/conversationmember.md) in a [channel](../resources/channel.md), including direct members of standard, private, and shared channels. Use the [List allMembers](../api/channel-list-allmembers.md) API to retrieve both direct and indirect members of a shared channel.
 
 This method supports federation. Only a user who is a member of the shared channel can retrieve the channel member list.
 

@@ -429,7 +429,8 @@ The **resource** and **@odata.id** properties can be used to make calls to Micro
 ## Related content
 - [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
-- [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
+- [Get change notifications for membership changes in channels using Microsoft Graph](teams-changenotifications-channelmembership.md)
+- [Get change notifications for membership changes in teams using Microsoft Graph](teams-changenotifications-teammembership.md)
 - [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
 - [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)

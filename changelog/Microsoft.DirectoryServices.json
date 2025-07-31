@@ -1,5 +1,31 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "4f2f1a3f-688d-4c65-8210-6879922e1c86",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "onPremisesSyncBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesSyncBehavior** relationship to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "4f2f1a3f-688d-4c65-8210-6879922e1c86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesSyncBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesSyncBehavior](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesSyncBehavior?view=graph-rest-beta) resource.",
+          "Target": "onPremisesSyncBehavior"
+        }
+      ],
+      "Id": "4f2f1a3f-688d-4c65-8210-6879922e1c86",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-28T18:49:58.4872737Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
      {
       "ChangeList": [
         {

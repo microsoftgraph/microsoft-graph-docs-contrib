@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Code snippets are only available for the latest version. Current version is 5.x
 
 // Dependencies
-using Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.Searches.Item.MicrosoftGraphSecurityExportResult;
-using Microsoft.Graph.Beta.Models.Security;
+using Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Searches.Item.MicrosoftGraphSecurityExportResult;
+using Microsoft.Graph.Models.Security;
 
 var requestBody = new ExportResultPostRequestBody
 {
 	DisplayName = "Export 1 - simple PST",
 	ExportCriteria = ExportCriteria.SearchHits,
-	AdditionalOptions = AdditionalOptions.None,
+	AdditionalOptions = AdditionalOptions.HtmlTranscripts | AdditionalOptions.SplitSource | AdditionalOptions.IncludeFolderAndPath | AdditionalOptions.CondensePaths | AdditionalOptions.FriendlyName,
 	ExportFormat = ExportFormat.Pst,
 };
 
