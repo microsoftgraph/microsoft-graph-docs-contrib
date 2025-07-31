@@ -1,6 +1,6 @@
 ---
 title: "itemPatent resource type"
-description: "itemPatent resource type"
+description: "Represents a granted or filed patent which has been added to a user's profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
@@ -23,7 +23,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 |[Create](../api/profile-post-patents.md)|[itemPatent](../resources/itempatent.md)|Create a new itemPatent object.|
 |[Get](../api/itempatent-get.md)|[itemPatent](../resources/itempatent.md)|Read the properties and relationships of an [itemPatent](../resources/itempatent.md) object.|
 |[Update](../api/itempatent-update.md)|[itemPatent](../resources/itempatent.md)|Update the properties of an [itemPatent](../resources/itempatent.md) object.|
-|[Delete](../api/itempatent-delete.md)|None|Deletes an [itemPatent](../resources/itempatent.md) object.|
+|[Delete](../api/itempatent-delete.md)|None|Delete an [itemPatent](../resources/itempatent.md) object.|
 
 ## Properties
 |Property|Type|Description|

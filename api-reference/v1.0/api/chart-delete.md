@@ -1,6 +1,6 @@
 ---
-title: "Chart: delete"
-description: "Deletes the chart object."
+title: "chart: delete"
+description: "Delete a chart object."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
@@ -8,11 +8,11 @@ doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# Chart: delete
+# chart: delete
 
 Namespace: microsoft.graph
 
-Deletes the chart object.
+Delete a chart object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
