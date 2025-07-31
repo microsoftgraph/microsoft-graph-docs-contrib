@@ -27,7 +27,7 @@ For the list of supported methods, see [place](./place.md).
 |address|[physicalAddress](./physicaladdress.md)|The physical address of the **floor**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md). |
 |displayName|String|The name that is associated with the floor. Inherited from [place](./place.md).|
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **floor** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
-|id|String|The unique identifier for the floor. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md).|
+|id|String|The unique identifier for the **floor**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md).|
 |isWheelChairAccessible|Boolean|Indicates whether **floor** is wheelchair accessible. Inherited from [place](./place.md).|
 |label |String |User-defined description of the **floor**. Inherited from [place](./place.md).|
 |parentId|String|The ID of a parent [building](./building.md). Inherited from [place](./place.md).|
