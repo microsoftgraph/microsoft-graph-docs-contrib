@@ -44,13 +44,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-For a list of places:
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-
 To get all the places of a specific type in a tenant:
 
 <!-- {
