@@ -13,7 +13,8 @@
       "overview": "../../resources/groups-overview.md",
       "resources": [
         "group",
-        "groupLifecyclePolicy"
+        "groupLifecyclePolicy",
+        "onPremisesSyncBehavior"
       ]
     },
     {
@@ -489,6 +490,10 @@
           ],
           "complexTypes": [
             "appScope",
+            "cloudPcAgentHealthCheckDetail",
+            "cloudPcAgentHealthCheckStatusDetail",
+            "cloudPcAgentHealthCheckSummary",
+            "cloudPcAgentStatusDetail",
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
@@ -498,6 +503,7 @@
             "cloudPcBulkMove",
             "cloudPcBulkPowerOff",
             "cloudPcBulkPowerOn",
+            "cloudPcBulkReinstallAgent",
             "cloudPcBulkReprovision",
             "cloudPcBulkResize",
             "cloudPcBulkRestart",
@@ -506,6 +512,7 @@
             "cloudPcBulkRemoteActionResult",
             "cloudPcBulkCreateSnapshot",
             "cloudPcBulkSetReviewStatus",
+            "CloudPcConnectionSetting",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
             "cloudPcCrossRegionDisasterRecoverySetting",
@@ -514,6 +521,7 @@
             "cloudPcDisasterRecoveryNetworkSetting",
             "cloudPcDomainJoinConfiguration",
             "cloudPcForensicStorageAccount",
+            "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
@@ -532,7 +540,7 @@
             "cloudPcSourceDeviceImage",
             "cloudPcStatusDetails",
             "cloudPcStatusDetail",
-            "CloudPcConnectionSetting",
+            "cloudPcStatusSummary",
             "cloudPcSupportedRegionRestrictionDetail",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
@@ -1032,6 +1040,7 @@
             "directorySettingTemplate",
             "domain",
             "onPremisesDirectorySynchronization",
+            "onPremisesSyncBehavior",
             "organization",
             "orgContact",
             "tenantInformation",
@@ -1496,6 +1505,7 @@
                 "authentication",
                 "authenticationMethod",
                 "emailAuthenticationMethod",
+                "externalAuthenticationMethod"
                 "fido2AuthenticationMethod",
                 "hardwareOathAuthenticationMethod",
                 "microsoftAuthenticatorAuthenticationMethod",
@@ -2566,10 +2576,11 @@
         },
         {
           "name": "Alerts and incidents",
-          "resources": [
+      "resources": [
             "microsoft.graph.security.alert",
             "microsoft.graph.security.alertEvidence",
-            "microsoft.graph.security.incident"
+            "microsoft.graph.security.incident",
+            "microsoft.graph.security.incidentTask"
           ],
           "complexTypes": [
             "microsoft.graph.security.teamsMessageEvidence"
@@ -2689,6 +2700,11 @@
                 "microsoft.graph.security.ediscoveryReviewSetQuery"
               ]
             }
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.ediscoveryAddToReviewSetOperation",
+            "microsoft.graph.security.ediscoveryEstimateOperation",
+            "microsoft.graph.security.reportFileMetadata"
           ]
         },
         {
@@ -3287,8 +3303,7 @@
             "timeOffReason",
             "timeOffRequest",
             "workforceIntegration",
-            "workingTimeSchedule",
-            ""
+            "workingTimeSchedule"
           ],
           "complexTypes": [
             "geoCoordinates",
@@ -3434,6 +3449,10 @@
     {
       "resource": "partnerSecurityAlert",
       "overview": "../../resources/partner-security-partnersecurityalert-api-overview.md"
+    },
+    {
+      "resource": "incidentTask",
+      "overview": "../../resources/security-incidenttask.md"
     }
   ]
 }
