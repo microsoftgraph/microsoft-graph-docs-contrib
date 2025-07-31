@@ -28,6 +28,15 @@ Place represents different space types within a tenant. A **place** object can b
 
 The Places API enables applications with appropriate read or write permissions to interact with **place** objects. Every **place** object includes fundamental properties such as **id**, **placeId**, and **displayName**. More advanced types—like rooms, workspaces, and desks—offer additional properties including **mode**, **emailAddress**, and **deviceInformation**. Detailed descriptions of each type are available in their respective documentation sections. 
 
+## Common use cases
+
+The following table lists some of the common uses for the Places API.
+
+| Use case | REST resource | See also |
+| :--- | :--- | :--- |
+| Create and manage a place  | [place](../resources/place.md) | [place methods](../resources/place.md#methods) |
+| Interact with place spaces such as building, floor, section, room, room list, workspace, or desk | [place](../resources/place.md) |[place methods](../resources/place.md#methods) |
+
 ## Comparing Places APIs with findRooms and findRoomLists 
 
 The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions support similar lookups for rooms and room lists in a tenant. The following table compares the places API and these functions.
@@ -43,15 +52,6 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |Defines the specific entities of [room](/graph/api/resources/room) and [roomList](/graph/api/resources/roomlist) that specify a richer property set, in addition to the display name and SMTP address.	|Each room and room list is of a lighter-weight [emailAddress](/graph/api/resources/emailaddress) type that specifies only the display name and SMTP address. |
 |Supports only organizational scenarios with delegated (only for work or school accounts) or application permissions. |Supports only organizational scenarios with delegated or application permissions.
 |Supports [updating an individual room or room list](../api/place-update.md) in a tenant. |Doesn't support updating an individual room or room list in a tenant. |
-
-## Common use cases
-
-The following table lists some of the common uses for the Places API.
-
-| Use case | REST resource | See also |
-| :--- | :--- | :--- |
-| Create and manage a place  | [place](../resources/place.md) | [place methods](../resources/place.md#methods) |
-| Interact with place spaces such as building, floor, section, room, room list, workspace, or desk | [place](../resources/place.md) |[place methods](../resources/place.md#methods) |
 
 ## Next steps
 
