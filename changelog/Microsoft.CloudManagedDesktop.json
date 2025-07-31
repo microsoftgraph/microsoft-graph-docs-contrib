@@ -210,6 +210,14 @@
             },
             {
               "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
+              "ApiChange": "Member",
+              "ChangedApiName": "appDiscoveryFailed",
+              "ChangeType": "Addition",
+              "Description": "Added the `appDiscoveryFailed` member to the **cloudPcCloudAppStatus** enumeration in cloudpccloudapp.md.",
+              "Target": "cloudPcCloudAppStatus"
+            },
+            {
+              "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
               "ApiChange": "Resource",
               "ChangedApiName": "cloudPcCloudApp",
               "ChangeType": "Addition",
