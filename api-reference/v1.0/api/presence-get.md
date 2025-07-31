@@ -24,15 +24,20 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!NOTE]
 > - You can't use application permissions to access APIs under the `/me` path.
-> - The maximum request rate for this API is 1500 API requests in a 30 second period, per application per tenant.
+> - The maximum request rate for this API is 1,500 requests within a 30-second period, per application per tenant.
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/presence
-GET /communications/presences
+GET /communications/presences/{id}
 GET /me/presence
 ```
+
+> [!NOTE]
+> - You must pass the user's ID to get their presence information.
+> - When you call `GET /users/{id}/presence` or `GET /communications/presences/{id}`, replace `{id}` with the user’s GUID.
+> - For examples on how to get the unique identifier for a user, see [Get user](../api/user-get.md).
 
 ## Request Headers
 | Name          | Description               |
