@@ -12,7 +12,7 @@ ms.date: 09/16/2024
 
 Namespace: microsoft.graph
 
-Create a new [team](../resources/team.md) under a [group](../resources/group.md). In order to create a team, the group must have a least one owner.
+Create a new [team](../resources/team.md) under a [group](../resources/group.md). In order to create a team, the group must have at least one owner.
 
 If the group was created less than 15 minutes ago, calls to create a team might fail with a `404 Not Found` error code because the group information didn't fully replicate.
 
