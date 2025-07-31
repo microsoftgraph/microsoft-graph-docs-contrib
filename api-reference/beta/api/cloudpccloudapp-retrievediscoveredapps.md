@@ -94,9 +94,9 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPcDiscoveredApp)",
   "value": [
     {
-      "id": "9a383274-a9b3-4c5f-ac95-0ea5d54fb365",
+      "discoveredAppId": "9a383274-a9b3-4c5f-ac95-0ea5d54fb365",
       "appName": "Character Map",
-      "properties": {
+      "appDetail": {
         "filePath": "C:\\Windows\\system32\\charmap.exe",
         "commandLineArguments": "",
         "iconPath": "C:\\Windows\\system32\\charmap.exe",
@@ -104,9 +104,9 @@ Content-Type: application/json
       }
     },
     {
-      "id": "ja383274-a9b3-4c5f-ac95-0ea5d54fb365",
+      "discoveredAppId": "ja383274-a9b3-4c5f-ac95-0ea5d54fb365",
       "appName": "Paint",
-      "properties": {
+      "appDetail": {
         "filePath": "C:\\Windows\\system32\\mspaint.exe",
         "commandLineArguments": "",
         "iconPath": "C:\\Windows\\system32\\mspaint.exe",
