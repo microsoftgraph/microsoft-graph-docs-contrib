@@ -9,6 +9,7 @@ ms.date: 04/05/2024
 ---
 
 # appConsentRequest: filterByCurrentUser
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
