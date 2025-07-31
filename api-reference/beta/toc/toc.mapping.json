@@ -3269,6 +3269,15 @@
                   "href": "../../api/teamwork-sendactivitynotificationtorecipients.md"
                 }
               ]
+            },
+            {
+              "name": "Channel",
+              "additionalLinks": [
+                {
+                  "name": "Start migration for channel",
+                  "href": "../../api/channel-startmigration.md"
+                }
+              ]
             }
           ],
           "complexTypes": [

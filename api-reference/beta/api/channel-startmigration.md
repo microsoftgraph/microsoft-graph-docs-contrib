@@ -54,7 +54,7 @@ You can optionally provide a request body to specify the minimum timestamp for t
 
 ```json
 {
-  "conversationCreatedDateTime": "2024-01-01T00:00:00Z"
+  "conversationCreationDateTime": "2024-01-01T00:00:00Z"
 }
 ```
 
