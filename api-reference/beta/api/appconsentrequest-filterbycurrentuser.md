@@ -8,8 +8,6 @@ doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# appConsentRequest: filterByCurrentUser
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -77,7 +75,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='reviewer')?$filter=userConsentRequests/any(u:u/status eq 'InProgress')
 ```
 
-### Response
+### Example response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
