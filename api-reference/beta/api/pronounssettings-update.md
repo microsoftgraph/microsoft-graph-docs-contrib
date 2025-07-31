@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.subservice: "people"
 doc_type: apiPageType
 ms.date: 06/11/2024
-ms.custom: sfi-ga-nochange
 ---
 
 # Update pronounsSettings
@@ -27,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "pronounssettings_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/pronounssettings-update-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a Global Administrator role.
+[!INCLUDE [rbac-peopleadmin-apis-write](../includes/rbac-for-apis/rbac-peopleadmin-apis-write.md)]
 
 ## HTTP request
 

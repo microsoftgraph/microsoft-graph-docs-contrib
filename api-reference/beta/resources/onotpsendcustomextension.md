@@ -20,7 +20,7 @@ Used for creating a new custom extension based on the **onEmailOtpSend** event.
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
-For more information, see [Configure a custom email provider for one time passcode send events (preview)](/entra/identity-platform/custom-extension-email-otp-get-started).
+For more information, see [Configure a custom email provider for one time passcode send events (preview)](/entra/identity-platform/custom-extension-email-otp-get-started) or [Try out this event in the Woodgrove demo tenant](/entra/identity-platform/custom-extension-overview#one-time-passcode-send).
 
 ## Methods
 None.
