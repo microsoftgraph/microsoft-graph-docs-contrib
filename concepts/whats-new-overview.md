@@ -46,7 +46,7 @@ Each fragment uploaded during an [upload session](/graph/api/resources/uploadses
 
 ### Security
 
-Added [resourceAccessEvent](/graph/api/security-resourceaccessevent) resource as a property in [userAccount](/graph/api/security-useraccount).
+Added the [resourceAccessEvent](/graph/api/resources/security-resourceaccessevent) resource as a property in [userAccount](/graph/api/resources/security-useraccount).
 
 ### Security | eDiscovery
 
