@@ -92,7 +92,7 @@ Content-Type: application/json
     "iconPath": "C:\\Windows\\system32\\mspaint.exe",
     "iconIndex": 0
   },
-  "provisionPolicyId": "jw3de35f-3385-46c8-a6f5-6c3dfad7708b",
+  "provisioningPolicyId": "jw3de35f-3385-46c8-a6f5-6c3dfad7708b",
   "appStatus": "published",
   "lastPublishedDateTime": "2022-07-15T12:19:27.7211305Z",
   "availableToUser": true,
