@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [team](../resources/team.md) from a [group](../resources/group.md). In order to create a team, the group must have a least one owner.
+Create a new [team](../resources/team.md) from a [group](../resources/group.md). In order to create a team, the group must have at least one owner.
 
 If the group was created less than 15 minutes ago, calls to create a team might fail with a `404 Not Found` error because the group information didn't fully replicate.
 

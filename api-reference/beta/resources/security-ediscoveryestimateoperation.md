@@ -33,6 +33,7 @@ None.
 |indexedItemsSize|Int64|The estimated size of items for the **search** that matched the content query.|
 |mailboxCount|Int32|The number of mailboxes that had search hits.|
 |percentProgress|Int32|The progress of the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|reportFileMetadata|[microsoft.graph.security.reportFileMetadata](../resources/security-ediscoveryreportfilemetadata.md) collection|Contains the properties for report file metadata, including **downloadUrl**, **fileName**, and **size**.|
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |siteCount|Int32|The number of mailboxes that had search hits.|
 |statisticsOptions|[microsoft.graph.security.statisticsOptions](#statisticsoptions-values)|The options to generate statistics. Possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`.|
@@ -78,6 +79,7 @@ The following JSON representation shows the resource type.
   "indexedItemsSize": "Int64",
   "mailboxCount": "Int32",
   "percentProgress": "Int32",
+  "reportFileMetadata": [{"@odata.type": "microsoft.graph.reportFileMetadata"}],
   "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
   "siteCount": "Int32",
   "statisticsOptions": "String",

@@ -20,7 +20,7 @@ Create a new [channel](../resources/channel.md) in a team, as specified in the r
 You can add a maximum of 200 members when you create a private channel.
 
 > [!NOTE]
-> - Some special characters in the channel name cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](/graph/known-issues#create-channel).
+> - Some special characters in the channel name cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](https://developer.microsoft.com/graph/known-issues?search=16692).
 > - When you create a private or shared channel, the SharePoint site might fail to provision. If the site fails to provision after five minutes, use the [Get filesFolder](/graph/api/channel-get-filesfolder) API to trigger provisioning.
 > - You can create shared channels with only one owner initially. Adding multiple owners results in a `400 Bad Request` error code. After the initial request, you can add more owners using the [Add member to channel](/graph/api/channel-post-members) API.
 > - Shared channel creation **isn't supported** in Microsoft Graph China (21Vianet).
