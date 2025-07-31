@@ -227,7 +227,7 @@ The **@microsoft.graph.originalSourceMembershipUrl** annotation shows the origin
 > **Note:** 
 > 1. Indirect membership notifications are only available when subscribed to the team that owns the shared channel.
 > 1. When subscribed to changes to receive both direct and indirect notifications for shared channels, we recommend that you choose to receive notifications with the resource. This approach allows you to use the **@microsoft.graph.originalSourceMembershipUrl** annotation to identify direct or indirect membership changes.
-> 1. When a subscriber receive a notification that a member was removed, use the [channel: doesUserHaveAccess](/graph/api/channel-doesuserhaveaccess) API to verify that the user's access was actually revoked.
+> 1. When a subscriber receives a notification that a member was removed, use the [channel: doesUserHaveAccess](/graph/api/channel-doesuserhaveaccess) API to verify that the user's access was actually revoked.
 
 ## Subscribe to changes when a specific channel is shared with or unshared from a team (preview)
 
