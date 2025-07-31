@@ -318,7 +318,14 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/places
 Content-Type: application/json
 
-
+{
+  "@odata.type": "microsoft.graph.workspace",
+  "parentId": "f7de7265-e420-47b4-9d49-28d728716241",
+  "displayName": "testSpace001",
+  "emailAddress": "wendyTestSpace@M365x42405544.onmicrosoft.com",
+  "description": "test for workspace",
+  "tags": ["test"]
+}
 ```
 
 #### Response
@@ -336,6 +343,18 @@ The following example shows the response.
 HTTP/1.1 201 Created
 Content-Type: application/json
 
+{
+  "@odata.type": "microsoft.graph.workspace",
+  "id": "316ae189-e420-47b4-9d49-65c3cal16241",
+  "placeId": "316ae189-e420-47b4-9d49-65c3cal16241",
+  "parentId": "f7de7265-e420-47b4-9d49-28d728716241",
+  "displayName": "testSpace001",
+  "phone": null,
+  "emailAddress": "wendyTestSpace@M365x42405544.onmicrosoft.com",
+  "description": "test for workspace",
+  "isWheelChairAccessible": false,
+  "tags": []
+}
 
 ```
 
