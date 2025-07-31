@@ -137,7 +137,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| aiInsights | [callAiInsight](callaiinsight.md) collection | The AI insights generated for an online meeting. Read-only. |
+| aiInsights | [callAiInsight](/microsoft-365-copilot/extensibility/api-reference/resources/callaiinsight) collection | The AI insights generated for an online meeting. Read-only. |
 | attendanceReports | [meetingAttendanceReport](meetingattendancereport.md) collection | The attendance reports of an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | recordings | [callRecording](callrecording.md) collection | The recordings of an online meeting. Read-only. |
 | transcripts | [callTranscript](calltranscript.md) collection | The transcripts of an online meeting. Read-only. |

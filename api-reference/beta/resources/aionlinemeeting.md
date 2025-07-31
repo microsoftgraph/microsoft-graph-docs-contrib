@@ -28,7 +28,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|aiInsights|[callAiInsight](../resources/callaiinsight.md) collection| A set of AI insights associated with an [AI online meeting](aionlinemeeting.md). |
+|aiInsights|[callAiInsight](/microsoft-365-copilot/extensibility/api-reference/resources/callaiinsight) collection| A set of AI insights associated with an [AI online meeting](aionlinemeeting.md). |
 
 ## JSON representation
 The following JSON representation shows the resource type.

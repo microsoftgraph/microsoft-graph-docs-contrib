@@ -91,7 +91,7 @@ The following code samples are available on GitHub.
     - [Change notifications for cloud printing](./universal-print-webhook-notifications.md)
     - [Change notifications for Outlook resources](./outlook-change-notifications-overview.md)
     - [Change notifications for Microsoft Teams resources](./teams-change-notification-in-microsoft-teams-overview.md)
-    - [Change notifications for Copilot AI interactions](./aiinteraction-changenotifications-overview.md)
+    - [Change notifications for Copilot AI interactions](/microsoft-365-copilot/extensibility/api-reference/aiinteraction-changenotifications-overview)
 
 
 [contact]: /graph/api/resources/contact

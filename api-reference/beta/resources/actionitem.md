@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an action item associated with a [call AI insight](callaiinsight.md).
+Represents an action item associated with a [call AI insight](/microsoft-365-copilot/extensibility/api-reference/resources/callaiinsight).
 
 ## Properties
 |Property|Type|Description|

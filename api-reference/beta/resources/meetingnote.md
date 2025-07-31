@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a meeting note associated with a [call AI insight](callaiinsight.md).
+Represents a meeting note associated with a [call AI insight](/microsoft-365-copilot/extensibility/api-reference/resources/callaiinsight).
 
 ## Properties
 |Property|Type|Description|
