@@ -370,7 +370,7 @@ A few things to note about this call:
 
 * To create a team, the group you create it from must have at least one owner.
 * The team that's created always inherits properties such as display name, visibility, specialization, and members from the group. Therefore, when you make this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties return an error.
-* If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
+* If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10-second delay between calls.
 * Specifying a first channel name with the **firstChannelName** property isn't supported when you create a team from a group.
 
 #### Request
