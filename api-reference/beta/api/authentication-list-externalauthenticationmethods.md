@@ -31,10 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### Permissions acting on other users
 
-<!-- {
-  "blockType": "permissions",
-  "name": "authentication-list-externalauthenticationmethods-2-permissions"
-} -->
+<!-- { "blockType": "permissions", "name": "authentication_list_externalauthenticationmethods_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-list-externalauthenticationmethods-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
