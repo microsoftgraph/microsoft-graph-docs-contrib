@@ -12,7 +12,7 @@ ms.date: 07/09/2024
 
 Namespace: microsoft.graph
 
-Delete the values in an [userFlowLanguagePage](../resources/userflowlanguagepage.md) object. You migh only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
+Delete the values in an [userFlowLanguagePage](../resources/userflowlanguagepage.md) object. You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
 
 ## Permissions
 
