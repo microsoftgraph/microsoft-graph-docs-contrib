@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a set of AI insights associated with:<br> - an [online meeting](onlinemeeting.md) <br> - an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&branch=pr-en-us-26954)
+Represents a set of AI insights associated with:<br> - an [online meeting](onlinemeeting.md) <br> - an [ad hoc call](/graph/api/resources/adhoccall)
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/onlinemeeting-list-aiinsights.md)|[callAiInsight](../resources/callaiinsight.md) collection| - Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).<br> - Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&branch=pr-en-us-26954)|
-|[Get](../api/callaiinsight-get.md)|[callAiInsight](../resources/callaiinsight.md)|- Get a [callAiInsight](../resources/callaiinsight.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md). <br> - Get a [callAiInsight](../resources/callaiinsight.md) object associated with an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&branch=pr-en-us-26954)|
+|[List](../api/onlinemeeting-list-aiinsights.md)|[callAiInsight](../resources/callaiinsight.md) collection| - Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).<br> - Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [ad hoc call](/graph/api/resources/adhoccall)|
+|[Get](../api/callaiinsight-get.md)|[callAiInsight](../resources/callaiinsight.md)|- Get a [callAiInsight](../resources/callaiinsight.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md). <br> - Get a [callAiInsight](../resources/callaiinsight.md) object associated with an [ad hoc call](/graph/api/resources/adhoccall)|
 |
 
 ## Properties
@@ -64,4 +64,3 @@ The following JSON representation shows the resource type.
   "viewpoint": {"@odata.type": "microsoft.graph.callAiInsightViewPoint"}
 }
 ```
-
