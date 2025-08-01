@@ -59,7 +59,7 @@ Content-Type: application/json
 **For ad hoc calls**
 
 To obtain change notifications for any transcript available for any ad hoc call in a tenant, subscribe to `/communications/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. 
-The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports [ad hoc calls](https://review.learn.microsoft.com/en-us/graph/api/resources/adhoccall?view=graph-rest-beta&branch=pr-en-us-26954).
+The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports [ad hoc calls](graph/api/resources/adhoccall).
 
 > **Note:** This subscription only pertains to impromptu calls where a meeting ID is not created; not on shared or private channels.
 
@@ -136,7 +136,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 ## Subscribe to transcripts available for a particular ad hoc call
 
-To get change notifications for any transcript available for a particular online meeting, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [ad hoc calls](https://review.learn.microsoft.com/en-us/graph/api/resources/adhoccall?view=graph-rest-beta&branch=pr-en-us-26954)..
+To get change notifications for any transcript available for a particular online meeting, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [ad hoc calls](graph/api/resources/adhoccall).
 
 > **Note:** <br> Enumeration is not available on AdhocCalls. <br> Subscribe to the appropriately scoped 2 separate resources (one for OnlineMeetings and other for AdhocCalls). These will supply the URLs to use for fetching the data.
 

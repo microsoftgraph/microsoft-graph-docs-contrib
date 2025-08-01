@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with:
+### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with
 
 <details>
   <summary>📁 Online meetings</summary>
- 
-  ### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an online meeting: 
+
+### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an online meeting 
 
 > [!NOTE]
 > * This API has license requirements. For more information, see [License requirements for Teams meeting AI insights APIs](/graph/teams-licenses#license-requirements-for-teams-meeting-ai-insights-apis).
@@ -142,9 +142,9 @@ Content-Type: application/json
 ```
 </details>
 <details>
-  <summary>📁 Ad hoc calls</summary> 
+  <summary>📁 Ad hoc calls</summary>
 
-  ### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [ad hoc call](graph/api/resources/adhoccall): 
+### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [ad hoc call](/graph/api/resources/adhoccall) 
 
 > [!NOTE]
 > * This API has license requirements. For more information, see [License requirements for Teams meeting AI insights APIs](/graph/teams-licenses#license-requirements-for-teams-meeting-ai-insights-apis).
@@ -170,7 +170,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-GET `copilot/users/{userId}/adhocCalls/{callId}/aiInsights`
+GET /copilot/users/{userId}/adhocCalls/{callId}/aiInsights
 ```
 
 ## Optional query parameters for ad hoc calls
@@ -200,12 +200,12 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_callaiinsight",
-  "sampleKeys": ["b935e675-5e67-48b9-8d45-249d5f88e964", "YTc3OTFhNWQtNTgwZC00OGZjLWJhYjQtOTFmNTUzMmU4MzEyqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy"]
+  "name": "list_callaiinsight_adhoccalls",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "6e91b13b-5171-477f-8dc6-0fd43867f1de"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/6e91b13b-5171-477f-8dc6-0fd43867f1de/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4
+GET https://graph.microsoft.com/beta/copilot/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/6e91b13b-5171-477f-8dc6-0fd43867f1de/aiInsights
 ```
 
 # [C#](#tab/csharp)
@@ -252,11 +252,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/adhocCalls('6e91b13b-5171-477f-8dc6-0fd43867f1de')/transcripts/$entity",
-    "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
-    "createdDateTime": "2021-09-17T06:09:24.8968037Z",
-    "endDateTime": "2021-09-17T06:27:25.2346000Z",
-    "contentCorrelationId": "bc8...",
-    "transcriptContentUrl": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/adhocCalls('6e91b13b-5171-477f-8dc6-0fd43867f1de')/transcripts/('MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4')/content"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#copilot/users('ba321e0d-79ee-478d-8e28-85a19507f456')/adhocCalls('6e91b13b-5171-477f-8dc6-0fd43867f1de')/aiInsights",
+  "@odata.count": 1,
+  "value": [
+    {
+      "id": "VjEj...",
+      "callId": "6e91b13b-5171-477f-8dc6-0fd43867f1de",
+      "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
+      "createdDateTime": "2024-05-27T08:17:10.7261294Z",
+      "endDateTime": "2024-05-27T08:17:10.7261294Z"
+    }
+  ]
 }
 ```
+
+</details>
