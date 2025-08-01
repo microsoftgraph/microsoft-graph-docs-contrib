@@ -15,7 +15,7 @@ var requestBody = new GetRawRemoteConnectionReportsPostRequestBody
 	Select = new List<string>
 	{
 		"RoundTripTimeInMs",
-		"AvailableBandwidthInMBps",
+		"AvailableBandwidthInMbps",
 		"SignInDateTime",
 	},
 	Skip = 0,

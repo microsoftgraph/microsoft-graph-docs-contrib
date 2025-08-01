@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.users.item.onlinemeetings.item.send_virtual_appointment_reminder_sms.send_virtual_appointment_reminder_sms_post_request_body import SendVirtualAppointmentReminderSmsPostRequestBody
 from msgraph.generated.models.attendee_notification_info import AttendeeNotificationInfo
 from msgraph.generated.models.remind_before_time_in_minutes_type import RemindBeforeTimeInMinutesType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = SendVirtualAppointmentReminderSmsPostRequestBody(
 	attendees = [
 		AttendeeNotificationInfo(

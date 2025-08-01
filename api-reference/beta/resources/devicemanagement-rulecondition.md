@@ -5,6 +5,7 @@ author: "zhishending"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 11/13/2024
 ---
 
 # ruleCondition resource type
@@ -46,7 +47,9 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 |cloudPcConnectionErrors| The rule condition targets Cloud PC connection errors.|
 |cloudPcHostHealthCheckFailures| The rule condition targets Cloud PC host health check failures.|
 |cloudPcZoneOutage| The rule condition targets Cloud PC zone outage.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use.|
+|frontlineBufferUsageDuration| The alert rule condition targets Frontline buffer usage exceeds time duration.|
+|frontlineBufferUsageThreshold| The alert rule condition targets Frontline buffer usage exceeds limiting frequency.|
 
 ### aggregationType values
 
@@ -56,7 +59,8 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 |percentage|The percentage of the items that match the rule conditions.|
 |affectedCloudPcCount|The total number of Cloud PCs that meet the rule conditions.|
 |affectedCloudPcPercentage|The percentage of Cloud PCs that meet the rule conditions.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|durationInMinutes| The time range during which Cloud PCs that meet the alert rule conditions are affected.|
 
 ### operatorType values
 
@@ -68,7 +72,7 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 |less|The operator is less than the threshold target.|
 |lessOrEqual|The operator is less than or equal to the threshold target.|
 |notEqual|The operator isn't equal to the threshold target.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 

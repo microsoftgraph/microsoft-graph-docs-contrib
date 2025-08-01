@@ -31,22 +31,24 @@ endUserNotificationSetting.setNotificationPreference(EndUserNotificationPreferen
 endUserNotificationSetting.setSettingType(EndUserNotificationSettingType.NoTraining);
 PositiveReinforcementNotification positiveReinforcement = new PositiveReinforcementNotification();
 positiveReinforcement.setDeliveryPreference(NotificationDeliveryPreference.DeliverAfterCampaignEnd);
-positiveReinforcement.setEndUserNotification("https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a");
 positiveReinforcement.setDefaultLanguage("en");
-endUserNotificationSetting.setPositiveReinforcement(positiveReinforcement);
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("endUserNotification@odata.bind", "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a");
+positiveReinforcement.setAdditionalData(additionalData);
+endUserNotificationSetting.setPositiveReinforcement(positiveReinforcement);
+HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
  simulationNotification = new ();
 simulationNotification.setTargettedUserType("compromised");
 simulationNotification.setEndUserNotificationOdataBind("https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a");
 simulationNotification.setDefaultLanguage("en");
-additionalData.put("simulationNotification", simulationNotification);
-endUserNotificationSetting.setAdditionalData(additionalData);
+additionalData1.put("simulationNotification", simulationNotification);
+endUserNotificationSetting.setAdditionalData(additionalData1);
 simulation.setEndUserNotificationSetting(endUserNotificationSetting);
-HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
-additionalData1.put("payload@odata.bind", "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a");
-additionalData1.put("loginPage@odata.bind", "https://graph.microsoft.com/beta/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a");
-additionalData1.put("landingPage@odata.bind", "https://graph.microsoft.com/beta/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a");
-simulation.setAdditionalData(additionalData1);
+HashMap<String, Object> additionalData2 = new HashMap<String, Object>();
+additionalData2.put("payload@odata.bind", "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a");
+additionalData2.put("loginPage@odata.bind", "https://graph.microsoft.com/beta/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a");
+additionalData2.put("landingPage@odata.bind", "https://graph.microsoft.com/beta/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a");
+simulation.setAdditionalData(additionalData2);
 Simulation result = graphClient.security().attackSimulation().simulations().post(simulation);
 
 

@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 toc.title: GCP resources
+ms.date: 07/25/2024
 ---
 
 # gcpAuthorizationSystemResource resource type
@@ -14,6 +15,8 @@ toc.title: GCP resources
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 Represents a GCP resource in a GCP authorization system.
 
@@ -58,4 +61,5 @@ The following JSON representation shows the resource type.
   "resourceType": "String"
 }
 ```
+
 

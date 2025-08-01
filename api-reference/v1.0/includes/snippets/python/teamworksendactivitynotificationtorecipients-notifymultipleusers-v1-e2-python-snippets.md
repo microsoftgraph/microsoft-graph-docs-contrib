@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.teamwork.send_activity_notification_to_recipients.send_activity_notification_to_recipients_post_request_body import SendActivityNotificationToRecipientsPostRequestBody
 from msgraph.generated.models.teamwork_activity_topic import TeamworkActivityTopic
@@ -12,9 +13,7 @@ from msgraph.generated.models.item_body import ItemBody
 from msgraph.generated.models.key_value_pair import KeyValuePair
 from msgraph.generated.models.teamwork_notification_recipient import TeamworkNotificationRecipient
 from msgraph.generated.models.aad_user_notification_recipient import AadUserNotificationRecipient
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = SendActivityNotificationToRecipientsPostRequestBody(
 	topic = TeamworkActivityTopic(
 		source = TeamworkActivityTopicSource.Text,

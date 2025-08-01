@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.education_rubric import EducationRubric
 from msgraph_beta.generated.models.education_item_body import EducationItemBody
@@ -12,9 +13,7 @@ from msgraph_beta.generated.models.rubric_level import RubricLevel
 from msgraph_beta.generated.models.education_assignment_points_grade_type import EducationAssignmentPointsGradeType
 from msgraph_beta.generated.models.rubric_quality import RubricQuality
 from msgraph_beta.generated.models.rubric_criterion import RubricCriterion
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = EducationRubric(
 	display_name = "Example Points Rubric",
 	description = EducationItemBody(

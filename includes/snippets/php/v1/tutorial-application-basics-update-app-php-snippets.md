@@ -16,7 +16,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new Application();
 $requestBody->setTags(['HR', 'Payroll', 'HideApp', 	]);
 $info = new InformationalUrl();
-$info->setLogoUrl('https://cdn.pixabay.com/photo/2016/03/21/23/25/link-1271843_1280.png');
+$info->setLogoUrl('https://cdn.contoso.com/photo/2016/03/21/23/25/link-1271843_1280.png');
 $info->setMarketingUrl('https://www.contoso.com/app/marketing');
 $info->setPrivacyStatementUrl('https://www.contoso.com/app/privacy');
 $info->setSupportUrl('https://www.contoso.com/app/support');

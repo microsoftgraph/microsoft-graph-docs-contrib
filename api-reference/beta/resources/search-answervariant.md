@@ -5,6 +5,7 @@ author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # answerVariant resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an answer variant that can be used to change certain properties of a search answer based on country or platform.
+Represents an answer variant that can be used to change certain properties of a search answer based on country/region or platform.
 
 ## Properties
 

@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # Get protectionRuleBase
@@ -76,10 +77,6 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointProtectio
 [!INCLUDE [sample-code](../includes/snippets/csharp/sharepointprotectionpolicy-get-siteinclusionrules-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/sharepointprotectionpolicy-get-siteinclusionrules-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sharepointprotectionpolicy-get-siteinclusionrules-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointProtectio
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/sharepointprotectionpolicy-get-siteinclusionrules-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sharepointprotectionpolicy-get-siteinclusionrules-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -166,10 +167,6 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusiness
 [!INCLUDE [sample-code](../includes/snippets/csharp/onedriveforbusinessprotectionpolicy-get-driveinclusionrule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/onedriveforbusinessprotectionpolicy-get-driveinclusionrule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/onedriveforbusinessprotectionpolicy-get-driveinclusionrule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -184,6 +181,10 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusiness
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/onedriveforbusinessprotectionpolicy-get-driveinclusionrule-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/onedriveforbusinessprotectionpolicy-get-driveinclusionrule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -256,10 +257,6 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionP
 [!INCLUDE [sample-code](../includes/snippets/csharp/exchangeprotectionpolicy-get-mailboxinclusionrule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/exchangeprotectionpolicy-get-mailboxinclusionrule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/exchangeprotectionpolicy-get-mailboxinclusionrule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -274,6 +271,10 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionP
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/exchangeprotectionpolicy-get-mailboxinclusionrule-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/exchangeprotectionpolicy-get-mailboxinclusionrule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

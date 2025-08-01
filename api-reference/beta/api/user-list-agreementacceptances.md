@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "AlexFilipin"
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # List agreementAcceptances
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a user's [agreementAcceptance](../resources/agreementacceptance.md) objects.
+Allows the signed-in user to retrieve their [agreementAcceptance](../resources/agreementacceptance.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -23,6 +24,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "user_list_agreementacceptances" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-agreementacceptances-permissions.md)]
 
+> [!IMPORTANT]
+> This API allows the signed-in user to retrieve their [agreementAcceptance](../resources/agreementacceptance.md) objects. It doesn't require them to have any additional [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) as the [Default user role](/entra/fundamentals/users-default-permissions?toc=%2Fgraph%2Ftoc.json) authorizes them to retrieve their agreement acceptances.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -30,6 +34,8 @@ GET /me/agreementAcceptances
 
 GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Optional query parameters
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
@@ -58,10 +64,6 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreementacceptances-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-agreementacceptances-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

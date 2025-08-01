@@ -5,6 +5,8 @@ author: tomsato-ms
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: enumPageType
+ms.date: 03/06/2024
+ms.custom: sfi-ropc-nochange
 ---
 
 # printerProcessingStateDetail enum type

@@ -5,6 +5,7 @@ author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-id
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # remoteNetworkHealthEvent resource type
@@ -17,7 +18,9 @@ Contains information about network health, status, metrics, and operations.
 This is an abstract type.
 
 ## Methods
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/networkaccess-logs-list-remotenetworks.md)|[microsoft.graph.networkaccess.remotenetworkhealthevent](../resources/networkaccess-remotenetworkhealthevent.md) collection|Get a list of the [microsoft.graph.networkaccess.remotenetworkhealthevent](../resources/networkaccess-remotenetworkhealthevent.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|

@@ -5,6 +5,7 @@ author: "jasonbro"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # Get regionalAndLanguageSettings
@@ -29,6 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/settings/regionalAndLanguageSettings
 GET /users/{user-id | userPrincipalName}/settings/regionalAndLanguageSettings
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Optional query parameters
 You can use `$select` to get specific regionalAndLanguageSettings properties, including properties that aren't returned by default.
 
@@ -65,10 +68,6 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-regionalandlanguagesettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-regionalandlanguagesettings-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

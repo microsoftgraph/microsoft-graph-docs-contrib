@@ -9,13 +9,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.teams.item.schedule.timecards.item.endbreak.EndBreakPostRequestBody endBreakPostRequestBody = new com.microsoft.graph.beta.teams.item.schedule.timecards.item.endbreak.EndBreakPostRequestBody();
+endBreakPostRequestBody.setIsAtApprovedLocation(true);
 ItemBody notes = new ItemBody();
 notes.setContentType(BodyType.Text);
-notes.setContent("end break smaple notes");
+notes.setContent("ending break");
 endBreakPostRequestBody.setNotes(notes);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("atAprovedLocation", true);
-endBreakPostRequestBody.setAdditionalData(additionalData);
 var result = graphClient.teams().byTeamId("{team-id}").schedule().timeCards().byTimeCardId("{timeCard-id}").endBreak().post(endBreakPostRequestBody);
 
 

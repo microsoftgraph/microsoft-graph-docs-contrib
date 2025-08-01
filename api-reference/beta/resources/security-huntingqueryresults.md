@@ -5,6 +5,7 @@ author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # huntingQueryResults resource type
@@ -20,6 +21,9 @@ The results of running a [query for advanced hunting](../api/security-security-r
 |:---|:---|:---|
 |schema|[microsoft.graph.security.singlePropertySchema](../resources/security-singlepropertyschema.md) collection|The schema for the response.|
 |results|[microsoft.graph.security.huntingRowResult](../resources/security-huntingrowresult.md) collection|The results of the hunting query.|
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

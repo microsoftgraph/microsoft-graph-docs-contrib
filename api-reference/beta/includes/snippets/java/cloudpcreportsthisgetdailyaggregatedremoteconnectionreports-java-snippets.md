@@ -17,7 +17,7 @@ select.add("CloudPcId");
 select.add("ManagedDeviceName");
 select.add("UsageInHour");
 select.add("RoundTripTimeInMsP50");
-select.add("AvailableBandwidthInMBpsP50");
+select.add("AvailableBandwidthInMbpsP50");
 select.add("RemoteSignInTimeInSecP50");
 select.add("UserPrincipalName");
 getDailyAggregatedRemoteConnectionReportsPostRequestBody.setSelect(select);

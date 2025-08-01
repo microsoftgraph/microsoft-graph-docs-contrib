@@ -5,6 +5,7 @@ description: "Get a servicePrincipalSignInActivity object that contains sign-in 
 ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
+ms.date: 04/04/2024
 ---
 
 # Get servicePrincipalSignInActivity
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "serviceprincipalsigninactivity_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipalsigninactivity-get-permissions.md)]
+
+[!INCLUDE [rbac-usage-insights-apis](../includes/rbac-for-apis/rbac-usage-insights-apis.md)]
 
 
 ## HTTP request
@@ -68,10 +71,6 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities/OD
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-serviceprincipal-last-signin-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-serviceprincipal-last-signin-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

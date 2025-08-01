@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get windowsInformationProtectionAppLearningSummary
@@ -63,10 +64,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtecti
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-wip-windowsinformationprotectionapplearningsummary-get-get-windowsinformationprotectionapplearningsummary-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-wip-windowsinformationprotectionapplearningsummary-get-get-windowsinformationprotectionapplearningsummary-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

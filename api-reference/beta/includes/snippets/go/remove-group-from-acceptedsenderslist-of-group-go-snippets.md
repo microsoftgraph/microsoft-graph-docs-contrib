@@ -18,10 +18,10 @@ import (
 
 requestId := "https://graph.microsoft.com/beta/groups/{other-group-id}"
 
-requestParameters := &graphgroups.GroupItemAcceptedSenders$refRequestBuilderDeleteQueryParameters{
+requestParameters := &graphgroups.ItemAcceptedSenders$refRequestBuilderDeleteQueryParameters{
 	Id: &requestId,
 }
-configuration := &graphgroups.GroupItemAcceptedSenders$refRequestBuilderDeleteRequestConfiguration{
+configuration := &graphgroups.ItemAcceptedSenders$refRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

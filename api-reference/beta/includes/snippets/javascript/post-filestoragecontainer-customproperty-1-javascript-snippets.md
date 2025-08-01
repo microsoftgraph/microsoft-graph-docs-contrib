@@ -16,7 +16,7 @@ const fileStorageContainerCustomPropertyDictionary = {
   }
 };
 
-await client.api('/storage/fileStorage/containers/{containerId}/customProperties')
+await client.api('/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties')
 	.version('beta')
 	.update(fileStorageContainerCustomPropertyDictionary);
 

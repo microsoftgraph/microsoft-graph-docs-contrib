@@ -6,6 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 11/30/2024
 ---
 
 # Add members
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a member to a security or Microsoft 365 group. When using the API to add multiple members in one request, you can add up to only 20 members. 
+Add a member to a security or Microsoft 365 [group](../resources/group.md). When using the API to add multiple members in one request, you can add up to only 20 members. 
 
 [!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
 
@@ -32,20 +33,21 @@ The following table shows the least privileged permission that's required by eac
 | [servicePrincipal](../resources/group.md) | GroupMember.ReadWrite.All and Application.ReadWrite.All | Not supported.                         | GroupMember.ReadWrite.All and Application.ReadWrite.All |
 | [user](../resources/user.md)              | GroupMember.ReadWrite.All                               | Not supported.                         | GroupMember.ReadWrite.All                               |
 
-In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/members/update` role permission. The following roles are the least privileged roles that are supported for this operation, except for role-assignable groups:
-
-- Group owners
-- Directory Writers
-- Groups Administrator
-- Identity Governance Administrator
-- User Administrator
-- Exchange Administrator - only for Microsoft 365 groups
-- SharePoint Administrator - only for Microsoft 365 groups
-- Teams Administrator - only for Microsoft 365 groups
-- Yammer Administrator - only for Microsoft 365 groups
-- Intune Administrator - only for security groups
-
-To add members to a role-assignable group, the app must also be assigned the *RoleManagement.ReadWrite.Directory* permission and the calling user must be assigned a supported Microsoft Entra role. *Privileged Role Administrator* is the least privileged role that is supported for this operation.
+> [!IMPORTANT]
+> In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/members/update` role permission. The following roles are the least privileged roles that are supported for this operation, except for role-assignable groups:
+> 
+> - Group owners
+> - Directory Writers
+> - Groups Administrator
+> - Identity Governance Administrator
+> - User Administrator
+> - Exchange Administrator - only for Microsoft 365 groups
+> - SharePoint Administrator - only for Microsoft 365 groups
+> - Teams Administrator - only for Microsoft 365 groups
+> - Yammer Administrator - only for Microsoft 365 groups
+> - Intune Administrator - only for security groups
+> 
+> To add members to a role-assignable group, the app must also be assigned the *RoleManagement.ReadWrite.Directory* permission and the calling user must be assigned a supported Microsoft Entra role. *Privileged Role Administrator* is the least privileged role that is supported for this operation.
 
 ## HTTP request
 
@@ -53,7 +55,7 @@ To add members to a role-assignable group, the app must also be assigned the *Ro
 
 ```http
 POST /groups/{group-id}/members/$ref
-POST /groups/{group-id}/members/
+PATCH /groups/{group-id}/members
 ```
 
 ## Request headers
@@ -65,21 +67,31 @@ POST /groups/{group-id}/members/
 
 ## Request body
 
-When using the `/groups/{group-id}/members/$ref` syntax, supply a JSON object that contains an **@odata.id** property with a reference by ID to a supported group member object type.
+When using the `POST /groups/{group-id}/members/$ref` syntax, supply a JSON object that contains an **@odata.id** property with a reference by ID to a supported group member object type.
 
-When using the `/groups/{group-id}/members` syntax, supply a JSON object that contains a **members@odata.bind** property with one or more references by IDs to a supported group member object type.
-
-If using the **directoryObjects** reference, that is, `https://graph.microsoft.com/v1.0/directoryObjects/{id}`, the object type must still be a supported group member object type.
+When using the `PATCH /groups/{group-id}/members` syntax, supply a JSON object that contains a **members@odata.bind** property with one or more references by IDs to a supported group member object type. That is:
+- For Microsoft 365 groups, only `https://graph.microsoft.com/v1.0/directoryObjects/{id}` and `https://graph.microsoft.com/v1.0/groups/{id}` is allowed where `{id}` must be a user because only users can members of Microsoft 365 groups.
+- For security groups, the following ID references are allowed:
+  - `https://graph.microsoft.com/v1.0/directoryObjects/{id}` where `{id}` must belong to a user, security group, device, service principal, or organizational contact.
+  - `https://graph.microsoft.com/v1.0/groups/{id}` where `{id}` must belong to another security group. Microsoft 365 groups can't be members of security groups.
+  - `https://graph.microsoft.com/v1.0/devices/{id}` where `{id}` belongs to a device.
+  - `https://graph.microsoft.com/v1.0/servicePrincipal/{id}` where `{id}` belongs to a service principal.
+  - `https://graph.microsoft.com/v1.0/orgContact/{id}` where `{id}` belongs to an organizational contact.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It returns a `400 Bad Request` response code when the object is already a member of the group or is unsupported as a group member. It returns a `404 Not Found` response code when the object being added doesn't exist.
+If successful, this method returns a `204 No Content` response code. It returns a `400 Bad Request` response code when the object is already a member of the group or is unsupported as a group member. It returns a `404 Not Found` response code when the object being added doesn't exist. It returns `403 Unauthorized` in one of the following scenarios:
+- You're attempting to add a member to a [group that can't be managed through Microsoft Graph](../resources/groups-overview.md#types-of-groups-supported-in-microsoft-graph). This API supports only security and Microsoft 365 groups.
+- You're attempting to add a member you don't have permissions to add. Refer to the preceding [Permissions](#permissions) section for the permissions required to add different member types.
+- You're attempting to add a member to a role-assignable group and you don't have the required permissions.
 
 ## Example
 
-### Request
+### Example 1: Add a member to a group
 
-The following example shows a request.
+#### Request
+
+The following example shows a request that uses the **directoryObjects** reference to add a member to a group.
 
 # [HTTP](#tab/http)
 
@@ -99,10 +111,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-group-member-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/add-group-member-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -131,9 +139,75 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of the `id` of the [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), or [group](../resources/group.md) object you want to add.
+#### Response
 
-### Response
+The following example shows the response.
+
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Add multiple members to a group in a single request
+
+This example shows how to add multiple members to a group with OData bind support in a PATCH operation. Up to 20 members can be added in a single request. If an error condition exists in the request body, no members are added and the appropriate response code is returned.
+
+#### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "add_multiple_members_to_group"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/groups/{group-id}
+Content-type: application/json
+
+{
+  "members@odata.bind": [
+    "https://graph.microsoft.com/beta/directoryObjects/{id}",
+    "https://graph.microsoft.com/beta/directoryObjects/{id}",
+    "https://graph.microsoft.com/beta/directoryObjects/{id}"
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-multiple-members-to-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-multiple-members-to-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-multiple-members-to-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-multiple-members-to-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/add-multiple-members-to-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-multiple-members-to-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/add-multiple-members-to-group-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 
 The following example shows the response.
 

@@ -5,6 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "search"
 author: "jakeost-msft"
+ms.date: 03/06/2024
 ---
 
 # Search enum values

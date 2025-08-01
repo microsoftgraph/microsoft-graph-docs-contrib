@@ -5,6 +5,7 @@ author: "RamjotSingh"
 doc_type: resourcePageType
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 07/22/2024
 ---
 # chatMessagePolicyTip resource type
 

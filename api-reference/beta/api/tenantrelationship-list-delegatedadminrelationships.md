@@ -5,6 +5,7 @@ author: "adtangir"
 ms.localizationpriority: medium
 ms.subservice: partner-customer-administration
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List delegatedAdminRelationships
@@ -67,10 +68,6 @@ GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelations
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-delegatedadminrelationship-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-delegatedadminrelationship-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

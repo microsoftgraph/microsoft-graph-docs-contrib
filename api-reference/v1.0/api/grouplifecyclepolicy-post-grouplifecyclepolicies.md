@@ -6,13 +6,14 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create groupLifecyclePolicy
 
 Namespace: microsoft.graph
 
-Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
+Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md). Only one policy exists in the tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -72,10 +73,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-grouplifecyclepolicy-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-grouplifecyclepolicy-from-group-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-grouplifecyclepolicy-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,7 +101,7 @@ Content-type: application/json
 
 ### Response
 
-Note: The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

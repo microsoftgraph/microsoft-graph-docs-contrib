@@ -18,11 +18,11 @@ import (
 
 requestSearch := "\"admin/address/state:WA"
 
-requestParameters := &graphsecurity.SecurityThreatIntelligenceWhoisRecordsRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.ThreatIntelligenceWhoisRecordsRequestBuilderGetQueryParameters{
 	Search: &requestSearch,
 	Orderby: [] string {"registrationDateTime desc""},
 }
-configuration := &graphsecurity.SecurityThreatIntelligenceWhoisRecordsRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.ThreatIntelligenceWhoisRecordsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

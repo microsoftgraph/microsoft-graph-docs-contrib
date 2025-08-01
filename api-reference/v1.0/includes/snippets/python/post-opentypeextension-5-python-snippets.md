@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.conversation import Conversation
 from msgraph.generated.models.conversation_thread import ConversationThread
@@ -12,9 +13,7 @@ from msgraph.generated.models.item_body import ItemBody
 from msgraph.generated.models.body_type import BodyType
 from msgraph.generated.models.extension import Extension
 from msgraph.generated.models.open_type_extension import OpenTypeExtension
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Conversation(
 	topic = "Does anyone have a second?",
 	threads = [

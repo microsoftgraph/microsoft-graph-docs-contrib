@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "Sureshpadimi88"
 ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 07/24/2024
 ---
 
 # List rubrics
@@ -68,10 +69,6 @@ GET https://graph.microsoft.com/beta/education/me/rubrics
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rubrics-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-rubrics-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

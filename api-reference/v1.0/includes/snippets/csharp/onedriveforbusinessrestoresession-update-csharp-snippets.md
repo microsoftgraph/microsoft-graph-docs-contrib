@@ -23,7 +23,7 @@ var requestBody = new OneDriveForBusinessRestoreSession
 						"restorePoint", new UntypedObject(new Dictionary<string, UntypedNode>
 						{
 							{
-								"@odata.id", new UntypedString("1b014d8c-71fe-4d00-a01a-31850bc5b32c")
+								"id", new UntypedString("1b014d8c-71fe-4d00-a01a-31850bc5b32c")
 							},
 						})
 					},
@@ -37,7 +37,7 @@ var requestBody = new OneDriveForBusinessRestoreSession
 						"restorePoint", new UntypedObject(new Dictionary<string, UntypedNode>
 						{
 							{
-								"@odata.id", new UntypedString("2b014d8c-71fe-4d00-a01a-31850bc5b32")
+								"id", new UntypedString("2b014d8c-71fe-4d00-a01a-31850bc5b32")
 							},
 						})
 					},
@@ -51,7 +51,7 @@ var requestBody = new OneDriveForBusinessRestoreSession
 						"restorePoint", new UntypedObject(new Dictionary<string, UntypedNode>
 						{
 							{
-								"@odata.id", new UntypedString("3b014d8c-71fe-4d00-a01a-31850bc5b32c")
+								"id", new UntypedString("3b014d8c-71fe-4d00-a01a-31850bc5b32c")
 							},
 						})
 					},
@@ -65,7 +65,7 @@ var requestBody = new OneDriveForBusinessRestoreSession
 						"restorePoint", new UntypedObject(new Dictionary<string, UntypedNode>
 						{
 							{
-								"@odata.id", new UntypedString("4b014d8c-71fe-4d00-a01a-31850bc5b32c")
+								"id", new UntypedString("4b014d8c-71fe-4d00-a01a-31850bc5b32c")
 							},
 						})
 					},

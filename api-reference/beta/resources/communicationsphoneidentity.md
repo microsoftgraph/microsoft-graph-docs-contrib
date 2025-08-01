@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # communicationsPhoneIdentity resource type
@@ -23,6 +24,9 @@ Inherits from [identity](identity.md).
 | :----------------------------- | :---------------------------| :--------------|
 | displayName | String | The display name associated with the phone number. Inherited from **identity**. |
 | id | String | The user's E.164 telephone number. Inherited from **identity**. |
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -12,7 +12,6 @@ ms.subservice: "sharepoint"
 Namespace: microsoft.graph
 
 
-
 The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.
 
 >**Note:** Access activity records are currently only available on SharePoint and OneDrive for Business.
@@ -21,7 +20,10 @@ The presence of the **accessAction** resource on an [**itemActivity**][activity]
 
 ## Properties
 
-This resource type has no properties.
+None.
+
+## Relationships
+None.
 
 ## JSON representation
 

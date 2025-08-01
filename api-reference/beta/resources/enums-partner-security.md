@@ -5,6 +5,7 @@ author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: enumPageType
+ms.date: 06/27/2024
 ---
 
 # Partner security enum values

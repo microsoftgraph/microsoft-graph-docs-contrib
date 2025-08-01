@@ -18,10 +18,10 @@ import (
 
 requestFormat := "text/vtt"
 
-requestParameters := &graphusers.UserItemOnlineMeetingItemTranscriptItemContentRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemOnlineMeetingsItemTranscriptsItemContentRequestBuilderGetQueryParameters{
 	Format: &requestFormat,
 }
-configuration := &graphusers.UserItemOnlineMeetingItemTranscriptItemContentRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemOnlineMeetingsItemTranscriptsItemContentRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

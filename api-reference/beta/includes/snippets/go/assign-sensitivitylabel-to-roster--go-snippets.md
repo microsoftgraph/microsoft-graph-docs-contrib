@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("If-Match", "\"W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"\"")
 
-configuration := &graphplanner.PlannerRosterItemAssignSensitivityLabelRequestBuilderPostRequestConfiguration{
+configuration := &graphplanner.RostersItemAssignSensitivityLabelRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphplanner.NewAssignSensitivityLabelPostRequestBody()

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # stringKeyObjectValuePair resource type
@@ -19,6 +20,9 @@ Represents a key. This resource is an open type that allows other properties to 
 | Property | Type   | Description |
 |:---------|:-------|:------------|
 | key      | String | Key.        |
+
+## Relationships
+None.
 
 ## JSON representation
 

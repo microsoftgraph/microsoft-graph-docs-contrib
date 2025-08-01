@@ -5,6 +5,7 @@ author: "dhruvinrshah"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 12/19/2024
 ---
 
 # connector resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Application Proxy connector. Connectors are lightweight agents that sit on-premises and facilitate the outbound connection to the [Microsoft Entra application proxy](/azure/active-directory/app-proxy/what-is-application-proxy) service. Each connector is part of a [connectorGroup](connectorgroup.md).
+Represents an Application Proxy connector. Connectors are lightweight agents that sit on-premises and facilitate the outbound connection to the [Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) service. Each connector is part of a [connectorGroup](../resources/connectorgroup.md).
 
 ## Methods
 
@@ -32,10 +33,10 @@ Represents an Application Proxy connector. Connectors are lightweight agents tha
 |id|String| The unique identifier of the connector. Read-only. |
 |machineName|String| The name of the computer on which the connector is installed and runs on. |
 |status|connectorStatus| Indicates the status of the connector. The possible values are: `active`, `inactive`. Read-only. |
-|version|String|The version of the connector.|
+|version|String|The version of the connector. Read-only.|
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |memberOf|[connectorGroup](connectorgroup.md) collection| The **connectorGroup** that the connector is a member of. Read-only. |
 

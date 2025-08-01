@@ -3,8 +3,9 @@ title: "product: getKnownIssuesByTimeRange"
 description: "Get known issues related to a particular product based on a specified timeframe in the past."
 author: "skandula"
 ms.localizationpriority: medium
-ms.subservice: "windows-update-business"
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # product: getKnownIssuesByTimeRange
@@ -41,7 +42,7 @@ The following table shows the parameters that must be used with this function.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |daysInPast|Int32|The number of days to look up in the past. This filter is applied on all known issues that are in final status and have a resolved date time.|
-|includeAllActive|Boolean|If set to `true`, the response includes all active known issues. If set to `false`, the response doesn't include any active known issues.| 
+|includeAllActive|Boolean|If set to `true`, the response includes all active known issues. If set to `false`, the response doesn't include any active known issues.|
 
 ## Request headers
 
@@ -76,10 +77,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/products/1/GetKnownIs
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/windowsupdatesgetknownissuesbytimerange-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/windowsupdatesgetknownissuesbytimerange-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

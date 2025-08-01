@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-configuration := &graphplanner.PlannerBucketItemRequestBuilderDeleteRequestConfiguration{
+configuration := &graphplanner.BucketsItemRequestBuilderDeleteRequestConfiguration{
 	Headers: headers,
 }
 

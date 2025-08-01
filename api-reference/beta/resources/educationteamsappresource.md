@@ -5,6 +5,7 @@ author: "adarshgh"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # educationTeamsAppResource resource type

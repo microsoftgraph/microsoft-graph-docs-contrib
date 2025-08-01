@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: The sharedDriveItem resource is returned when using the Shares API to access a shared driveItem.
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 08/26/2024
 ---
 
 # sharedDriveItem resource type

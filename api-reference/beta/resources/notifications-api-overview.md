@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "notifications"
 doc_type: conceptualPageType
 author: "merzink"
+ms.date: 03/12/2024
 ---
 
 # Use the notifications REST API in Microsoft Graph (deprecated)

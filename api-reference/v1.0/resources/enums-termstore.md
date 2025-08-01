@@ -5,6 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 author: vishriv
+ms.date: 03/12/2024
 ---
 
 # termStore enumeration values

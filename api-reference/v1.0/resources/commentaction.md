@@ -5,6 +5,7 @@ description: The commentAction object provides information about a comment that 
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 # commentAction resource type
 

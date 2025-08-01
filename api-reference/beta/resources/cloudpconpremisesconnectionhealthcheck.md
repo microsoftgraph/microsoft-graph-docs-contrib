@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 11/26/2024
 ---
 
 # cloudPcOnPremisesConnectionHealthCheck resource type
@@ -33,7 +34,7 @@ Represents the result of a Cloud PC Azure network connection health check.
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `warning`, `informational`, `unknownFutureValue`. Read-only.|
 |startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
 |endDateTime|DateTimeOffset|The end time of the health check item. Read-only.|
-|errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|The type of error that occurred during this health check.|
+|errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|The type of error that occurred during this health check. For the list of possible values, see [cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values).|
 |recommendedAction|String|The recommended action to fix the corresponding error.|
 |startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Read-only.|
@@ -62,6 +63,7 @@ Represents the result of a Cloud PC Azure network connection health check.
 |endpointConnectivityCheckIntuneUrlNotAllowListed|During provisioning, one or more required Intune URLs couldn't be contacted. Make sure that all of the required URLs are allowed through the firewalls and proxies.|
 |endpointConnectivityCheckAzureADUrlNotAllowListed|During provisioning, one or more required Microsoft Entra URLs couldn't be contacted. Make sure that all of the required URLs are allowed through the firewalls and proxies.|
 |endpointConnectivityCheckLocaleUrlNotAllowListed|During provisioning, one or more language pack URLs couldn't be contacted. If you choose a non-English (United States) **Language & Region** setting in a provisioning policy, the language pack might not be successfully installed. Make sure that all of the required URLs are allowed through your firewalls and proxies. For a list or required URLs, see [Azure network connections health checks](https://go.microsoft.com/fwlink/?linkid=2156206).|
+|endpointConnectivityCheckVMAgentEndPointCommunicationError|The VM extension provisioning failed because the VM-agent-related endpoints were unreachable. Review the onboarding policy settings to ensure the endpoints are reachable for joining the domain.|
 |endpointConnectivityCheckUnknownError|During provisioning, one or more required URLs couldn't be contacted. Make sure that all of the required URLs are allowed through the firewalls and proxies.|
 |azureAdDeviceSyncCheckDeviceNotFound|The Cloud PC object can't be found in Microsoft Entra ID. Make sure that Microsoft Entra Connect works and syncs frequently so that the Cloud PC objects are synced to Microsoft Entra ID. Microsoft Entra device sync must be enabled and synced within the last 60 minutes.|
 |azureAdDeviceSyncCheckLongSyncCircle|The check whether the Cloud PC object has been synced to Microsoft Entra ID has timed out. Make sure that Microsoft Entra Connect works and syncs frequently so that the Cloud PC objects are synced to Microsoft Entra ID. Microsoft Entra device sync must be enabled and synced within the last 60 minutes.|
@@ -87,6 +89,7 @@ Represents the result of a Cloud PC Azure network connection health check.
 |resourceAvailabilityCheckResourceGroupLockedForReadonly|The selected resource group is locked and can't be modified for provisioning. Remove this lock to allow provisioning to succeed.|
 |resourceAvailabilityCheckResourceGroupLockedForDelete|The selected resource group or its parent scope has been locked for delete actions. It might be because the IP addresses are used up. Remove the lock and try again.|
 |resourceAvailabilityCheckDeploymentQuotaLimitReached|The resource group used by the Azure network connection has been locked for delete actions and has hit the deployment history quota limit. Remove this lock to allow Windows 365 service to delete obsolete virtual network adapters.|
+|resourceAvailabilityCheckMissingRegistrationForLocation|Missing registration for location. To fix this issue, register the Azure Network resource provider for your account. |
 |resourceAvailabilityCheckTransientServiceError|The resource availability check failed due to a transient error. Try it again. If the issue persists, contact customer support.|
 |resourceAvailabilityCheckNoIntuneReaderRoleError|The Cloud PC service principal has insufficient permissions to check the Intune platform restriction settings. Make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
 |resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation| Intune has a default Windows platform restriction policy, which can block you from provisioning.|

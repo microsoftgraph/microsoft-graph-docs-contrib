@@ -5,6 +5,7 @@ author: "Sangle7"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # baseSitePage resource type

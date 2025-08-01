@@ -3,8 +3,9 @@ title: "dateDrivenRolloutSettings resource type"
 description: "Represents settings for controlling how to roll out by a specific end date."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 08/31/2024
 ---
 
 # dateDrivenRolloutSettings resource type

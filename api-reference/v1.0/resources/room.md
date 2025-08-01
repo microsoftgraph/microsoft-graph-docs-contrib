@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vrod9429"
 ms.subservice: "outlook"
 doc_type: "resourcePageType"
+ms.date: 03/22/2024
 ---
 
 # room resource type

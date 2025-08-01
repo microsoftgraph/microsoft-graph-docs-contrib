@@ -18,6 +18,8 @@ import (
 requestBody := graphmodelssecurity.NewEdiscoveryHoldPolicy()
 description := "updated description"
 requestBody.SetDescription(&description) 
+contentQuery := "updated kql query"
+requestBody.SetContentQuery(&contentQuery) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 legalHolds, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").LegalHolds().ByEdiscoveryHoldPolicyId("ediscoveryHoldPolicy-id").Patch(context.Background(), requestBody, nil)

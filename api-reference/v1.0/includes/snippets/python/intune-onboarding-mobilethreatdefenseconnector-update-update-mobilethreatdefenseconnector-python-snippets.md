@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.mobile_threat_defense_connector import MobileThreatDefenseConnector
 from msgraph.generated.models.mobile_threat_partner_tenant_state import MobileThreatPartnerTenantState
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = MobileThreatDefenseConnector(
 	odata_type = "#microsoft.graph.mobileThreatDefenseConnector",
 	last_heartbeat_date_time = "2016-12-31T23:59:37.9174975-08:00",

@@ -13,6 +13,11 @@ alert.setAssignedTo("secAdmin@contoso.com");
 alert.setClassification(com.microsoft.graph.beta.models.security.AlertClassification.TruePositive);
 alert.setDetermination(com.microsoft.graph.beta.models.security.AlertDetermination.Malware);
 alert.setStatus(com.microsoft.graph.beta.models.security.AlertStatus.InProgress);
+com.microsoft.graph.beta.models.security.Dictionary customDetails = new com.microsoft.graph.beta.models.security.Dictionary();
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("newKey", "newValue");
+customDetails.setAdditionalData(additionalData);
+alert.setCustomDetails(customDetails);
 com.microsoft.graph.models.security.Alert result = graphClient.security().alertsV2().byAlertId("{alert-id}").patch(alert);
 
 

@@ -5,6 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 author: "gageames"
+ms.date: 03/06/2024
 ---
 
 # Call records enum values

@@ -36,7 +36,6 @@ $setting->setIsApprovalRequiredForExtension(false);
 $setting->setIsRequestorJustificationRequired(true);
 $setting->setApprovalMode('SingleStage');
 $approvalStagesUnifiedApprovalStage1 = new UnifiedApprovalStage();
-$approvalStagesUnifiedApprovalStage1->setOdataType('microsoft.graph.unifiedApprovalStage');
 $approvalStagesUnifiedApprovalStage1->setApprovalStageTimeOutInDays(1);
 $approvalStagesUnifiedApprovalStage1->setIsApproverJustificationRequired(true);
 $approvalStagesUnifiedApprovalStage1->setEscalationTimeInMinutes(0);

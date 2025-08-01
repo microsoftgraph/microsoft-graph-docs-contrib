@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "Indicates that a drive item has been shared with others."
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 07/30/2024
 ---
 
 # shared resource type

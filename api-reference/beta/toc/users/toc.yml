@@ -34,6 +34,10 @@ items:
     href: ../../api/user-revokesigninsessions.md
   - name: Export personal data
     href: ../../api/user-exportpersonaldata.md
+  - name: AI interaction
+    items:
+    - name: Get all enterprise interactions
+      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
   - name: App role assignments
     items:
     - name: List
@@ -70,12 +74,34 @@ items:
       href: ../../api/user-list-calendarview.md
     - name: Reminder view
       href: ../../api/user-reminderview.md
+  - name: Call delegation
+    items:
+    - name: Get delegation settings
+      href: ../../api/delegationsettings-get.md
+    - name: List delegates
+      href: ../../api/callsettings-list-delegates.md
+    - name: List delegators
+      href: ../../api/callsettings-list-delegators.md
+  - name: Cloud licensing
+    items:
+    - name: List usage rights
+      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+    - name: Get usage right
+      href: ../../api/cloudlicensing-usageright-get.md
   - name: Cloud PC
     items:
     - name: List cloud PCs
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
+  - name: Data security and governance
+    items:
+    - name: Compute protection scopes
+      href: ../../api/userprotectionscopecontainer-compute.md
+    - name: Create content activity
+      href: ../../api/activitiescontainer-post-contentactivities.md
+    - name: Process content
+      href: ../../api/userdatasecurityandgovernance-processcontent.md
   - name: Delegated permission grants
     items:
     - name: List delegated permission grants
@@ -272,6 +298,10 @@ items:
       href: ../../api/userscopeteamsappinstallation-get-chat.md
     - name: List permission grants
       href: ../../api/user-list-permissiongrants.md
+  - name: Terms of use agreements
+    items:
+    - name: Agreement acceptances for a user
+      href: ../../api/user-list-agreementacceptances.md
   - name: To-do tasks
     items:
     - name: List tasks
@@ -288,3 +318,9 @@ items:
       href: ../../api/usersettings-get.md
     - name: Update
       href: ../../api/usersettings-update.md
+- name: Invitation
+  items:
+  - name: Invitation
+    href: ../../resources/invitation.md
+  - name: Create
+    href: ../../api/invitation-post.md

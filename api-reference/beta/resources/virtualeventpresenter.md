@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 05/11/2024
 ---
 
 # virtualEventPresenter resource type
@@ -33,6 +34,9 @@ Represents information about a presenter of a virtual event.
 |id|String|Unique identifier of the presenter. Inherited from [entity](../resources/entity.md).|
 |identity|[identity](../resources/identity.md)|Identity information of the presenter. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 |presenterDetails|[virtualEventPresenterDetails](../resources/virtualeventpresenterdetails.md)|Other detail information of the presenter. This property returns `null` when the virtual event type is [virtualEventTownhall](../resources/virtualeventtownhall.md). |
+
+## Relationships
+None.
 
 ## JSON representation
 

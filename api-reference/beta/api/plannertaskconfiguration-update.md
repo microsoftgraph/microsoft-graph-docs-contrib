@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.subservice: "business-scenarios"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update plannerTaskConfiguration
@@ -40,6 +41,7 @@ PATCH /solutions/businessScenarios/{businessScenarioId}/planner/taskConfiguratio
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
+|If-Match| Last known `@odata-etag` value for the **plannerTaskConfiguration** to be updated. Required. Learn more about [etags](https://learn.microsoft.com/en-us/graph/api/resources/planner-overview?view=graph-rest-1.0#planner-resource-versioning).|
 
 ## Request body
 
@@ -69,98 +71,54 @@ The following example shows a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/taskConfiguration
 Content-Type: application/json
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
-  "@odata.type": "#microsoft.graph.plannerTaskConfiguration",
-  "editPolicy": {
-    "rules": [
-      {
-        "defaultRule": "block",
-        "role": {
-          "@odata.type": "#microsoft.graph.plannerRelationshipBasedUserType",
-          "roleKind": "relationship",
-          "role": "defaultRules"
-        },
-        "propertyRule": {
-          "percentComplete": ["allow"],
-          "ruleKind": "taskRule",
-          "assignments": {
-            "defaultRules": ["addSelf"],
-            "overrides": []
-          }
-        }
-      },
-      {
-        "defaultRule": "block",
-        "role": {
-          "@odata.type": "#microsoft.graph.plannerRelationshipBasedUserType",
-          "roleKind": "relationship",
-          "role": "taskAssignees"
-        },
-        "propertyRule": {
-          "startDate": ["allow"],
-          "dueDate": ["allow"],
-          "percentComplete": ["allow"],
-          "order": ["allow"],
-          "ruleKind": "taskRule",
-          "references": {
-            "defaultRules": ["allow"],
-            "overrides": [
-              {
-                "name": "userCreated",
-                "rules": ["allow"]
-              },
-              {
-                "name": "applicationCreated",
-                "rules": ["block"]
-              }
-            ]
-          },
-          "checkLists": {
-            "defaultRules": ["allow"],
-            "overrides": [
-              {
-                "name": "userCreated",
-                "rules": ["allow"]
-              },
-              {
-                "name": "applicationCreated",
-                "rules": ["check"]
-              }
-            ]
-          },
-          "assignments": {
-            "defaultRules": ["block"],
-            "overrides": [
-              {
-                "name": "userCreated",
-                "rules": ["removeSelf"]
-              },
-              {
-                "name": "applicationCreated",
-                "rules": ["check"]
-              }
-            ]
-          },
-          "appliedCategories": {
-            "defaultRules": [
-              "allow"
-            ],
-            "overrides": []
-          }
-        }
-      }
-    ]
-  }
+    "editPolicy": {
+        "rules": [
+            {
+                "userType": {
+                    "@odata.type": "#microsoft.graph.plannerRelationshipBasedUserType",
+                    "selectionKind": "relationship",
+                    "role": "defaultRules"
+                },
+                "defaultRule": "block",
+                "propertyRule": {
+                    "ruleKind": "taskRule",
+                    "references": {
+                        "defaultRules": [ "allow" ],
+                        "overrides": []
+                    },
+                    "checkLists": {
+                        "defaultRules": [ "allow" ],
+                        "overrides": []
+                    },
+                    "assignments": {
+                        "defaultRules": [ "allow" ],
+                        "overrides": [
+                            {
+                                "name": "userCreated",
+                                "rules": [ "allow" ]
+                            },
+                            {
+                                "name": "applicationCreated",
+                                "rules": [ "allow" ]
+                            }
+                        ]
+                    },
+                    "appliedCategories": {
+                        "defaultRules": [ "allow" ],
+                        "overrides": []
+                    }
+                }
+            }
+        ]
+    }
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannertaskconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-plannertaskconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -192,117 +150,10 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.plannerTaskConfiguration"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.plannerTaskConfiguration",
-  "id": "52be01e6291f403aa49f2b9f5288ab48",
-  "editPolicy": {
-    "rules": [
-      {
-        "defaultRule": "block",
-        "role": {
-          "@odata.type": "#microsoft.graph.plannerRelationshipBasedUserType",
-          "roleKind": "relationship",
-          "role": "defaultRules"
-        },
-        "propertyRule": {
-          "move": [],
-          "delete": [],
-          "title": [],
-          "notes": [],
-          "priority": [],
-          "startDate": [],
-          "dueDate": [],
-          "percentComplete": ["allow"],
-          "order": [],
-          "previewType": [],
-          "ruleKind": "taskRule",
-          "references": null,
-          "checkLists": null,
-          "assignments": {
-            "defaultRules": ["addSelf"],
-            "overrides": []
-          },
-          "appliedCategories": null
-        }
-      },
-      {
-        "defaultRule": "block",
-        "role": {
-          "@odata.type": "#microsoft.graph.plannerRelationshipBasedUserType",
-          "roleKind": "relationship",
-          "role": "taskAssignees"
-        },
-        "propertyRule": {
-          "move": [],
-          "delete": [],
-          "title": [],
-          "notes": [],
-          "priority": [],
-          "startDate": ["allow"],
-          "dueDate": ["allow"],
-          "percentComplete": ["allow"],
-          "order": ["allow"],
-          "previewType": [],
-          "ruleKind": "taskRule",
-          "references": {
-            "defaultRules": ["allow"],
-            "overrides": [
-              {
-                "name": "userCreated",
-                "rules": ["allow"]
-              },
-              {
-                "name": "applicationCreated",
-                "rules": ["block"]
-              }
-            ]
-          },
-          "checkLists": {
-            "defaultRules": ["allow"],
-            "overrides": [
-              {
-                "name": "userCreated",
-                "rules": ["allow"]
-              },
-              {
-                "name": "applicationCreated",
-                "rules": ["check"]
-              }
-            ]
-          },
-          "assignments": {
-            "defaultRules": ["block"],
-            "overrides": [
-              {
-                "name": "userCreated",
-                "rules": ["removeSelf"]
-              },
-              {
-                "name": "applicationCreated",
-                "rules": ["check"]
-              }
-            ]
-          },
-          "appliedCategories": {
-            "defaultRules": [
-              "allow"
-            ],
-            "overrides": []
-          }
-        }
-      }
-    ]
-  }
-}
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
 ```

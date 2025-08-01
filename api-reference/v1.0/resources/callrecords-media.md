@@ -1,17 +1,18 @@
 ---
 title: "media resource type"
-description: "The media type"
+description: "Represents the media (for example, audio, video, and video-based screen-sharing) used in a call."
 ms.localizationpriority: medium
 author: "mcm223"
 ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # media resource type
 
 Namespace: microsoft.graph.callRecords
 
-Represents the media (audio, video, video-based screen-sharing, etc.) used in a call.
+Represents the media (for example, audio, video, and video-based screen-sharing) used in a call.
 
 ## Properties
 

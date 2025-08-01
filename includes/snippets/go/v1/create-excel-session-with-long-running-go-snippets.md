@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "respond-async")
 
-configuration := &graphdrives.DriveItemItemItemWorkbookCreateSessionRequestBuilderPostRequestConfiguration{
+configuration := &graphdrives.ItemItemsItemWorkbookCreateSessionRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphdrives.NewCreateSessionPostRequestBody()

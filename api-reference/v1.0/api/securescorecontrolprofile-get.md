@@ -5,6 +5,7 @@ author: "preetikr"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
 # Get secureScoreControlProfile
@@ -62,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securescorecontrolprofile-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-securescorecontrolprofile-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -128,17 +125,7 @@ Content-type: application/json
   ],
   "tier": "Advanced",
   "userImpact": "Moderate",
-  "complianceInformation": [
-    {
-      "certificationName": "ISO 27001:2013",
-      "certificationControls": [
-        {
-          "name": "A.8.2.1",
-          "url": "",
-        }
-      ]
-    }         
-  ],
+  "complianceInformation": null,
   "controlStateUpdates": [
     {
       "assignedTo": null,

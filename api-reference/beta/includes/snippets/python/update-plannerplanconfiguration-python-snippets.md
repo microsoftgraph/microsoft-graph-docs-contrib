@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.planner_plan_configuration import PlannerPlanConfiguration
 from msgraph_beta.generated.models.planner_plan_configuration_bucket_definition import PlannerPlanConfigurationBucketDefinition
 from msgraph_beta.generated.models.planner_plan_configuration_localization import PlannerPlanConfigurationLocalization
 from msgraph_beta.generated.models.planner_plan_configuration_bucket_localization import PlannerPlanConfigurationBucketLocalization
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = PlannerPlanConfiguration(
 	default_language = "en-us",
 	buckets = [

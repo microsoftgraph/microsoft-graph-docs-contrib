@@ -16,6 +16,8 @@ items:
     href: ../../api/site-getallsites.md
   - name: List subsites for a site
     href: ../../api/site-list-subsites.md
+  - name: List root sites
+    href: ../../api/site-list.md
   - name: Get site by path
     href: ../../api/site-getbypath.md
   - name: Get site for a group
@@ -130,6 +132,8 @@ items:
   items:
   - name: List item
     href: ../../resources/listitem.md
+  - name: List
+    href: ../../api/listitem-list.md
   - name: Get
     href: ../../api/listitem-get.md
   - name: Get column values
@@ -146,7 +150,7 @@ items:
     href: ../../api/listitem-update.md
   - name: Update column values
     href: ../../api/listitem-update.md
-  - name: List
+  - name: List document set version
     href: ../../api/listitem-list-documentsetversions.md
   - name: Create
     href: ../../api/listitem-post-documentsetversions.md

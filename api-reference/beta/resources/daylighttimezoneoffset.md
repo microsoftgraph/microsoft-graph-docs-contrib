@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: calendar
 author: "SuryaLashmiS"
+ms.date: 03/21/2024
 ---
 
 # daylightTimeZoneOffset resource type
@@ -38,6 +39,9 @@ daylight saving time to standard occurs at 2 AM on the fourth Sunday of May, eve
 | time | Edm.TimeOfDay | Represents the time of day when the transition from standard time to daylight saving time occurs. |
 | year | Edm.Int32 | Represents how frequently in terms of years the change from standard time to daylight saving time occurs. For example, a value of 0 means every year.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 

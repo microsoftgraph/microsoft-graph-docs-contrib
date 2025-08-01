@@ -62,6 +62,8 @@ items:
         href: ../../api/usersettings-list-windows.md
       - name: Get
         href: ../../api/windowssetting-get.md
+      - name: Delete
+        href: ../../api/windowssetting-delete.md
       - name: List instances
         href: ../../api/windowssetting-list-instances.md
     - name: Windows setting instance

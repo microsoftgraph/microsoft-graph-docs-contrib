@@ -4,6 +4,7 @@ description: "Use the Excel REST API in Microsoft Graph to write simple data set
 ms.localizationpriority: high
 author: "lumine2008"
 ms.subservice: "excel"
+ms.date: 11/07/2024
 ---
 
 # Write data to an Excel workbook

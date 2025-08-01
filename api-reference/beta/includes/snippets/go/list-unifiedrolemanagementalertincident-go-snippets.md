@@ -18,10 +18,10 @@ import (
 
 requestTop := int32(5)
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceRoleManagementAlertsAlertItemAlertIncidentsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.RoleManagementAlertsAlertsItemAlertIncidentsRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphidentitygovernance.IdentityGovernanceRoleManagementAlertsAlertItemAlertIncidentsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.RoleManagementAlertsAlertsItemAlertIncidentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

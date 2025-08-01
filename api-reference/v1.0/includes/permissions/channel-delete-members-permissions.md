@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|ChannelMember.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|ChannelMember.ReadWrite.All|Not available.|
+|Application|ChannelMember.ReadWrite.Group|ChannelMember.ReadWrite.All|
 

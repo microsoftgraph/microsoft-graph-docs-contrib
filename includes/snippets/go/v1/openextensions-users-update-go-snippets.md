@@ -18,7 +18,7 @@ import (
 requestBody := graphmodels.NewExtension()
 additionalData := map[string]interface{}{
 	"theme" : "light", 
-	"color" : "yellow", 
+	"color" : "purple", 
 	"lang" : "Swahili", 
 }
 requestBody.SetAdditionalData(additionalData)

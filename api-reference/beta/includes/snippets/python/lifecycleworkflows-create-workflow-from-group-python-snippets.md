@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.identity_governance.workflow import Workflow
 from msgraph_beta.generated.models.lifecycle_workflow_category import LifecycleWorkflowCategory
@@ -15,9 +16,7 @@ from msgraph_beta.generated.models.membership_change_type import MembershipChang
 from msgraph_beta.generated.models.identity_governance.task import Task
 from msgraph_beta.generated.models.lifecycle_task_category import LifecycleTaskCategory
 from msgraph_beta.generated.models.key_value_pair import KeyValuePair
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Workflow(
 	category = LifecycleWorkflowCategory.Leaver,
 	description = "Configure offboarding tasks for employees on their last day of work",

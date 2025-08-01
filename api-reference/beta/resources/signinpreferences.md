@@ -5,6 +5,7 @@ author: "msft-poulomi"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/17/2024
 ---
 
 # signInPreferences resource type

@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # broadcastMeetingCaptionSettings resource type
@@ -25,7 +26,7 @@ Represents caption settings of a Microsoft Teams [live event](/microsoftteams/te
 
 > [!TIP]
 >
-> Translation languages cannot contain the same language code as the spoken language.
+> Translation languages can't contain the same language code as the spoken language.
 
 ### spokenLanguage values
 
@@ -107,12 +108,15 @@ The following table shows the supported language codes for translation languages
 | Tahitian                                 | ty      |
 | Thai (Thailand)                          | th      |
 | Tongan                                   | to      |
-| Turkish (Turkey)                         | tr      |
+| Turkish (Türkiye)                         | tr      |
 | Ukrainian (Ukraine)                      | uk      |
 | Urdu (Islamic Republic of Pakistan)      | ur      |
 | Vietnamese (Vietnam)                     | vi      |
 | Welsh (United Kingdom)                   | cy      |
 | Yucatec Maya                             | yua     |
+
+## Relationships
+None.
 
 ## JSON representation
 

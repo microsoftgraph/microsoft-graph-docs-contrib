@@ -7,8 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
-	dueDateTime = [System.DateTime]::Parse("2022-09-16T00:00:00Z")
-	displayName = "Reading test 09.14 Beta"
+	dueDateTime = [System.DateTime]::Parse("2025-09-16T00:00:00Z")
+	displayName = "Reading test 09.14"
+	languageTag = "es-MX"
 	instructions = @{
 		contentType = "text"
 		content = "Read chapter 4"

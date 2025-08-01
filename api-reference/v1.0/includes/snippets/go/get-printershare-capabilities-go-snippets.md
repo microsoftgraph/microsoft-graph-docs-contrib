@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphprint.PrintShareItemRequestBuilderGetQueryParameters{
+requestParameters := &graphprint.SharesItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","displayName","capabilities"},
 }
-configuration := &graphprint.PrintShareItemRequestBuilderGetRequestConfiguration{
+configuration := &graphprint.SharesItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

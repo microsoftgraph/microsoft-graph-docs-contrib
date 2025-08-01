@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Delete passwordlessMicrosoftAuthenticatorAuthenticationMethod (deprecated)
@@ -44,6 +45,8 @@ Remove a Microsoft Authenticator Passwordless Phone Sign-in authentication metho
 DELETE /me/authentication/passwordlessMicrosoftAuthenticatorMethods/{id}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Remove a Microsoft Authenticator Passwordless Phone Sign-in authentication method from another user's account.
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -79,10 +82,6 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/pas
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-passwordlessmicrosoftauthenticatorauthenticationmethod-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-passwordlessmicrosoftauthenticatorauthenticationmethod-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

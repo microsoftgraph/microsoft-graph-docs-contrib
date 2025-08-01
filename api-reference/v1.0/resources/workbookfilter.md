@@ -6,6 +6,7 @@ author: "ruoyingl"
 ms.subservice: excel
 doc_type: resourcePageType
 toc.title: Filter
+ms.date: 06/12/2024
 ---
 
 # workbookFilter resource type

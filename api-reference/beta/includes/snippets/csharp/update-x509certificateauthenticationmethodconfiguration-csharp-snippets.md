@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new X509CertificateAuthenticationMethodConfiguration
 {
@@ -46,6 +47,22 @@ var requestBody = new X509CertificateAuthenticationMethodConfiguration
 	{
 		State = X509CertificateIssuerHintsState.Disabled,
 	},
+	CertificateAuthorityScopes = new List<X509CertificateAuthorityScope>
+	{
+		new X509CertificateAuthorityScope
+		{
+			SubjectKeyIdentifier = "aaaaaaaabbbbcccc111122222222222222333333",
+			PublicKeyInfrastructureIdentifier = "Contoso PKI",
+			IncludeTargets = new List<IncludeTarget>
+			{
+				new IncludeTarget
+				{
+					Id = "aaaaaaaa-bbbb-cccc-1111-222222222222",
+					TargetType = AuthenticationMethodTargetType.Group,
+				},
+			},
+		},
+	},
 	IncludeTargets = new List<AuthenticationMethodTarget>
 	{
 		new AuthenticationMethodTarget
@@ -53,6 +70,22 @@ var requestBody = new X509CertificateAuthenticationMethodConfiguration
 			TargetType = AuthenticationMethodTargetType.Group,
 			Id = "all_users",
 			IsRegistrationRequired = false,
+		},
+	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"crlValidationConfiguration" , new UntypedObject(new Dictionary<string, UntypedNode>
+			{
+				{
+					"state", new UntypedString("disabled")
+				},
+				{
+					"exemptedCertificateAuthoritiesSubjectKeyIdentifiers", new UntypedArray(new List<UntypedNode>
+					{
+					})
+				},
+			})
 		},
 	},
 };

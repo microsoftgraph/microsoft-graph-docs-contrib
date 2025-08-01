@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "The searchResult resource indicates than an item is the response to a search query."
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 03/11/2024
 ---
 
 # searchResult resource type

@@ -5,6 +5,7 @@ author: "DougKirschner"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/29/2024
 ---
 
 # List administrativeUnits
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "directory_list_administrativeunits" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directory-list-administrativeunits-permissions.md)]
+
+[!INCLUDE [rbac-admin-units-apis-write](../includes/rbac-for-apis/rbac-admin-units-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -62,10 +65,6 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunits-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-administrativeunits-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -115,9 +114,10 @@ Content-type: application/json
             "deletedDateTime": null,
             "displayName": "Seattle District Technical Schools",
             "description": "Seattle district technical schools administration",
-            "membershipRule": null,
-            "membershipType": null,
-            "membershipRuleProcessingState": null,
+            "isMemberManagementRestricted": false,
+            "membershipRule": "(user.country -eq \"United States\")",
+            "membershipType": "Dynamic",
+            "membershipRuleProcessingState": "On",
             "visibility": "HiddenMembership"
         }
     ]

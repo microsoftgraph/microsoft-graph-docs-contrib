@@ -6,12 +6,15 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 06/26/2024
 ---
 
 # awsIdentityAccessManagementKeyAgeFinding: aggregatedSummary
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 Get a raw count of AWS IAM Access Keys and their ages in an AWS environment.
 
@@ -91,3 +94,4 @@ Content-Type: application/json
     "findingsCountOverLimit": 15
 }
 ```
+

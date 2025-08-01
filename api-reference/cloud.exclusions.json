@@ -95,26 +95,6 @@
     "cloud": "China"
   },
   {
-    "apiPath": "/chats/{chat-id}/sendActivityNotification",
-    "operation": "POST",
-    "cloud": "China"
-  },
-  {
-    "apiPath": "/teams/{team-id}/sendActivityNotification",
-    "operation": "POST",
-    "cloud": "China"
-  },
-  {
-    "apiPath": "/users/{user-id}/teamwork/sendActivityNotification",
-    "operation": "POST",
-    "cloud": "China"
-  },
-  {
-    "apiPath": "/teamwork/sendActivityNotificationToRecipients",
-    "operation": "POST",
-    "cloud": "China"
-  },
-  {
     "apiPath": "/teams/{team-id}/channels/{channel-id}/tabs",
     "operation": "GET",
     "cloud": "China"

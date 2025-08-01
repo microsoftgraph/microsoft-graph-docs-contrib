@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # tokenMeetingInfo resource type
@@ -22,6 +23,9 @@ In the event that a call is disconnected, this information can help you rejoin t
 | Property                     | Type    | Description                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
 | token                        | String  | The token used to join the call.                                                 |
+
+## Relationships
+None.
 
 ## JSON representation
 

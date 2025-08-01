@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 11/22/2024
 ---
 
 # Get virtualEventTownhall
@@ -13,14 +14,16 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
+All roles can get the details of a townhall event.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "virtualeventwebinar_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualevent-get-permissions.md)]
+<!-- { "blockType": "permissions", "name": "virtualeventtownhall_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventtownhall-get-permissions.md)]
 
 > [!NOTE]
 >
@@ -72,10 +75,6 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/fc6e8c15-
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-virtualeventtownhall-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-virtualeventtownhall-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -167,6 +166,12 @@ Content-Type: application/json
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
   ],
-  "isInviteOnly": false
+  "isInviteOnly": false,
+  "externalEventInformation": [
+    {
+      "applicationId" : "1b7ba4d1-c377-4b2f-ad0e-a3fc50bc987b",
+      "externalEventId": "myExternalEventId"
+    }
+  ]
 }
 ```

@@ -5,6 +5,7 @@ author: "FarzadDaei"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # plannerSharedWithContainer resource type
@@ -23,7 +24,7 @@ Inherits from [plannerPlanContainer](plannerplancontainer.md).
 |:-------|:---|:----------|
 | accessLevel| plannerPlanAccessLevel | The maximum access level the shared container can provide to the plan. The possible values are: `readAccess`, `readWriteAccess`, `fullAccess`, `unknownFutureValue`. |
 | containerId | String | The identifier of the resource that contains the plan. Optional. Inherited from [plannerPlanContainer](plannerplancontainer.md). |
-| type | plannerContainerType | The type of the resource that contains the plan. Possible values are: `group`, `unknownFutureValue`, `roster`, `project`, and `driveItem`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`, `project`, `driveItem`. Optional. Inherited from [plannerPlanContainer](plannerplancontainer.md). |
+| type | plannerContainerType | The type of the resource that contains the plan. Possible values are: `group`, `unknownFutureValue`, `roster`, `project`, and `driveItem`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`, `project`, `driveItem`. Optional. Inherited from [plannerPlanContainer](plannerplancontainer.md). |
 | url | String | The full canonical URL of the container. Optional. Inherited from [plannerPlanContainer](plannerplancontainer.md). |
 
 ### plannerPlanAccessLevel values

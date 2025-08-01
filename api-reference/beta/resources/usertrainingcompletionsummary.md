@@ -5,6 +5,7 @@ author: "akgraph"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # userTrainingCompletionSummary resource type

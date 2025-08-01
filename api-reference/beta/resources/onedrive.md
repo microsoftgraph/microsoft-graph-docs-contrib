@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "sharepoint"
 doc_type: conceptualPageType
 author: "spgraph-docs-team"
+ms.date: 03/06/2024
 ---
 
 # Working with files in Microsoft Graph

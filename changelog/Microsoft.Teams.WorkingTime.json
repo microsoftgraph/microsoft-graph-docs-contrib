@@ -59,6 +59,66 @@
       "CreatedDateTime": "2024-08-13T15:53:45.1496195Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fe8cbb45-4575-4378-a47a-b334d54446e3",
+          "ApiChange": "Property",
+          "ChangedApiName": "solutions",
+          "ChangeType": "Addition",
+          "Description": "Added the **solutions** relationship to the [user] (https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "fe8cbb45-4575-4378-a47a-b334d54446e3",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-09-13T18:46:16.8675677Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b3e632c8-fa93-4611-8a31-cf8eadffce69",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSolutionRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSolutionRoot](https://learn.microsoft.com/en-us/graph/api/resources/userSolutionRoot?view=graph-rest-1.0) resource.",
+          "Target": "userSolutionRoot"
+        },
+        {
+          "Id": "b3e632c8-fa93-4611-8a31-cf8eadffce69",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workingTimeSchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [workingTimeSchedule](https://learn.microsoft.com/en-us/graph/api/resources/workingTimeSchedule?view=graph-rest-1.0) resource.",
+          "Target": "workingTimeSchedule"
+        },
+        {
+          "Id": "b3e632c8-fa93-4611-8a31-cf8eadffce69",
+          "ApiChange": "Method",
+          "ChangedApiName": "endWorkingTime",
+          "ChangeType": "Addition",
+          "Description": "Added the [endWorkingTime](https://learn.microsoft.com/en-us/graph/api/workingTimeSchedule-endWorkingTime?view=graph-rest-1.0) method to the [workingTimeSchedule](https://learn.microsoft.com/en-us/graph/api/resources/workingTimeSchedule?view=graph-rest-1.0) resource.",
+          "Target": "workingTimeSchedule"
+        },
+        {
+          "Id": "b3e632c8-fa93-4611-8a31-cf8eadffce69",
+          "ApiChange": "Method",
+          "ChangedApiName": "startWorkingTime",
+          "ChangeType": "Addition",
+          "Description": "Added the [startWorkingTime](https://learn.microsoft.com/en-us/graph/api/workingTimeSchedule-startWorkingTime?view=graph-rest-1.0) method to the [workingTimeSchedule](https://learn.microsoft.com/en-us/graph/api/resources/workingTimeSchedule?view=graph-rest-1.0) resource.",
+          "Target": "workingTimeSchedule"
+        }
+      ],
+      "Id": "b3e632c8-fa93-4611-8a31-cf8eadffce69",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-09-13T18:46:16.867802Z",
+      "WorkloadArea": "Schedule WorkingTime",
+      "SubArea": ""
     }
   ]
 }

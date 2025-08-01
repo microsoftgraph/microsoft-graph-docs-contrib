@@ -1,0 +1,19 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/concepts/permissions-management-how-to-authorization-system-aws.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/permissions-management-howto",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/concepts/permissions-management-how-to-authorization-system-azure.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/permissions-management-howto",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/concepts/permissions-management-how-to-authorization-system-gcp.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/permissions-management-howto",
+      "redirect_document_id": false
+    }
+  ]
+}

@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.industry_data.one_roster_api_data_connector import OneRosterApiDataConnector
 from msgraph_beta.generated.models.api_format import ApiFormat
 from msgraph_beta.generated.models.industry_data.o_auth2_client_credential import OAuth2ClientCredential
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = OneRosterApiDataConnector(
 	odata_type = "#microsoft.graph.industryData.oneRosterApiDataConnector",
 	display_name = "Generic OAuth2 Connector",

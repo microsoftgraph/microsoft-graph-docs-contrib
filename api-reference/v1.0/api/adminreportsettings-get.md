@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ganggao"
 ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # Get adminReportSettings
@@ -72,10 +73,6 @@ GET https://graph.microsoft.com/v1.0/admin/reportSettings
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-adminreportsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-adminreportsettings-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-adminreportsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -90,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/admin/reportSettings
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-adminreportsettings-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-adminreportsettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.teams.item.clone.clone_post_request_body import ClonePostRequestBody
 from msgraph.generated.models.clonable_team_parts import ClonableTeamParts
 from msgraph.generated.models.team_visibility_type import TeamVisibilityType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ClonePostRequestBody(
 	display_name = "Library Assist",
 	description = "Self help community for library",

@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/24/2024
 ---
 
 # virtualEndpoint: retrieveScopedPermissions
@@ -77,10 +78,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 [!INCLUDE [sample-code](../includes/snippets/csharp/virtualendpoint-retrievescopedpermissions1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/virtualendpoint-retrievescopedpermissions1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/virtualendpoint-retrievescopedpermissions1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -95,10 +92,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/virtualendpoint-retrievescopedpermissions1-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/virtualendpoint-retrievescopedpermissions1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -169,10 +162,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 [!INCLUDE [sample-code](../includes/snippets/csharp/virtualendpoint-retrievescopedpermissions2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/virtualendpoint-retrievescopedpermissions2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/virtualendpoint-retrievescopedpermissions2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -187,10 +176,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/virtualendpoint-retrievescopedpermissions2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/virtualendpoint-retrievescopedpermissions2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -235,7 +220,7 @@ Content-Type: application/json
 
 #### Request
 
-When the signed-in user has the Microsoft Entra Global admin role, the Windows 365 admin role, or the Intune admin role assigned by Microsoft Entra ID, the returned permission is *\**, and no scope IDs are returned. In these cases, queries aren't supported.
+When the signed-in user has an admin role such as the Intune admin or the Windows 365 admin role assigned by Microsoft Entra ID, the returned permission is *\**, and no scope IDs are returned. In these cases, queries aren't supported.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -252,10 +237,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 [!INCLUDE [sample-code](../includes/snippets/csharp/virtualendpoint-retrievescopedpermissions3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/virtualendpoint-retrievescopedpermissions3-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/virtualendpoint-retrievescopedpermissions3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -270,10 +251,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/virtualendpoint-retrievescopedpermissions3-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/virtualendpoint-retrievescopedpermissions3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

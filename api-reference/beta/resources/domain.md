@@ -5,6 +5,7 @@ author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 11/01/2024
 ---
 
 # domain resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents a domain associated with the tenant.
 
-Use domain operations to associate domains to a tenant, verify domain ownership, and configure supported services. Domain operations enable registrars to automate domain association for services such as Microsoft 365. For example, as part of domain sign-up, a registrar can enable a vanity domain for email, websites, authentication, etc.
+Use domain operations to associate domains to a tenant, verify domain ownership, and configure supported services. Use domain operations to associate domains to a tenant, verify domain ownership, and configure supported services. Verifying a domain through Microsoft Graph doesn't configure the domain for use with Office 365 services like Exchange. Fully configuring the domain to work with Microsoft 365 products might require extra steps. For more information, see [Microsoft 365 admin setup](/microsoft-365/admin/setup/add-domain).
 
 To associate a domain with a tenant:
 
@@ -23,7 +24,7 @@ To associate a domain with a tenant:
 
 2. [Retrieve](../api/domain-list-verificationdnsrecords.md) the domain verification records. Add the verification record details to the domain's zone file using the domain registrar or Domain Name System (DNS) server configuration.
 
-3. [Verify](../api/domain-verify.md) the ownership of the domain and set the **isVerified** property to `true`.
+3. [Verify](../api/domain-verify.md) the ownership of the domain, including executing external admin takeover. This operation sets the **isVerified** property to `true`.
 
 4. [Indicate](../api/domain-update.md) the supported services you plan to use with the domain.
 
@@ -69,10 +70,10 @@ Relationships between a domain and other objects in the directory such as its ve
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|domainNameReferences|[directoryObject](directoryobject.md) collection| The objects such as users and groups that reference the domain ID. Read-only, Nullable. Supports `$expand` and `$filter` by the OData type of objects returned. For example, `/domains/{domainId}/domainNameReferences/microsoft.graph.user` and `/domains/{domainId}/domainNameReferences/microsoft.graph.group`.|
-|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports `$expand`. |
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID. Read-only, Nullable. Supports `$expand`.|
-|federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| Domain settings configured by customer when federated with Microsoft Entra ID. Supports `$expand`.|
+|domainNameReferences|[directoryObject](directoryobject.md) collection| The objects such as users and groups that reference the domain ID. Read-only, Nullable. Does not support `$expand`. Supports `$filter` by the OData type of objects returned. For example, `/domains/{domainId}/domainNameReferences/microsoft.graph.user` and `/domains/{domainId}/domainNameReferences/microsoft.graph.group`.|
+|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Does not support `$expand`. |
+|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID. Read-only, Nullable. Does not support `$expand`.|
+|federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| Domain settings configured by customer when federated with Microsoft Entra ID. Does not support `$expand`.|
 |rootDomain|[domain](domain.md)| Root domain of a subdomain. Read-only, Nullable. Supports `$expand`.|
 
 ## JSON representation

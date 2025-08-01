@@ -5,6 +5,7 @@ title: GeolocationColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "onedrive"
+ms.date: 03/06/2024
 ---
 # geolocationColumn resource type
 

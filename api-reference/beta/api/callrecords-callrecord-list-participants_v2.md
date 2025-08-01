@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mcm223"
 ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
+ms.date: 11/04/2024
 ---
 
 # List participants_v2
@@ -15,7 +16,10 @@ Namespace: microsoft.graph.callRecords
 
 Get the list of [participant](../resources/callrecords-participant.md) objects associated with a [callRecord](../resources/callrecords-callrecord.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+> [!NOTE]
+> A known issue related to missing participants is associated with this API. For details, see [Known issues](https://developer.microsoft.com/graph/known-issues?search=31852).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -79,10 +83,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/614e3ff0-4728-43
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-callrecord-participants-v2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-callrecord-participants-v2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-callrecord-participants-v2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,10 +97,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/614e3ff0-4728-43
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-callrecord-participants-v2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-callrecord-participants-v2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

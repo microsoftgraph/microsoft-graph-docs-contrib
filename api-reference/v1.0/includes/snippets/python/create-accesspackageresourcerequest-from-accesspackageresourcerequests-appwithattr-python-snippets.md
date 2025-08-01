@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_package_resource_request import AccessPackageResourceRequest
 from msgraph.generated.models.access_package_request_type import AccessPackageRequestType
@@ -13,9 +14,7 @@ from msgraph.generated.models.access_package_user_directory_attribute_store impo
 from msgraph.generated.models.access_package_resource_attribute_question import AccessPackageResourceAttributeQuestion
 from msgraph.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
 from msgraph.generated.models.access_package_catalog import AccessPackageCatalog
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageResourceRequest(
 	request_type = AccessPackageRequestType.AdminUpdate,
 	resource = AccessPackageResource(

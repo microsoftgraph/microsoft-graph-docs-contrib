@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: security
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 # process resource type
@@ -31,6 +32,9 @@ Contains stateful information about the process related to the alert.
 |parentProcessName|String|The name of the image file of the parent process.|
 |path|String|Full path, including filename.|
 |processId|Int32|The Process ID (PID) of the process.|
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "billbliss"
 ms.subservice: teams
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # operationError resource type

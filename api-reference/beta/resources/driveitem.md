@@ -5,6 +5,7 @@ title: driveItem
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 06/29/2024
 ---
 
 # driveItem resource type
@@ -77,8 +78,11 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Set retention label](../api/driveitem-setretentionlabel.md)                 | [itemRetentionLabel](../resources/itemretentionlabel.md) | Apply (set) a retention label on a **driveItem** (files and folders). |
 | [Remove retention label](../api/driveitem-removeretentionlabel.md)           | None | Remove a retention label from a **driveItem**. |
 | [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | [itemRetentionLabel](../resources/itemretentionlabel.md) | Lock or unlock a retention label on a **driveItem** that classifies content as records. |
+|[Create upload session](../api/driveitem-createuploadsession.md)              |[uploadSession](../resources/uploadsession.md)|Create an upload session to allow your app to upload files up to the maximum file size.|
 | [Download file (deprecated)](../api/driveitem-get-content.md)                          | download URL | Download content of a **driveItem**.|
-
+|**Open extensions**|||
+| [Create open extension](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Create an open extension and add custom properties to a new or existing **driveItem**.|
+| [Get open extension](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) collection | Get an open extension identified by the extension name.|
 
 ## Properties
 
@@ -135,6 +139,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | analytics          | [itemAnalytics][] resource  | Analytics about the view activities that took place on this item.
 | children           | driveItem collection        | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
 | createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.
+| extensions         | [extension](extension.md) collection | The collection of open extensions defined for this item. Nullable.|
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
 | listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
 | permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
@@ -174,7 +179,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video", "bundle",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content","contentStream", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds", "source", "media"],
+       "sharepointIds", "source", "media", "extensions"],
        "keyProperty": "id", "openType": true } -->
 
 ```json

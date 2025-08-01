@@ -12,10 +12,13 @@ import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphdevicemanagement "github.com/microsoftgraph/msgraph-beta-sdk-go/devicemanagement"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 requestBody := graphdevicemanagement.NewRetrieveCrossRegionDisasterRecoveryReportPostRequestBody()
+reportName := graphmodels.CROSSREGIONDISASTERRECOVERYREPORT_CLOUDPCDISASTERRECOVERYREPORTNAME 
+requestBody.SetReportName(&reportName) 
 filter := "DisasterRecoveryStatus eq 'Active outage'"
 requestBody.SetFilter(&filter) 
 select := []string {
@@ -26,11 +29,12 @@ select := []string {
 	"DeviceId",
 	"CloudPCDeviceDisplayName",
 	"UserPrincipalName",
-	"IsCrossRegionEnabled",
-	"CrossRegionHealthStatus",
+	"EnabledDRType",
+	"DRHealthStatus",
 	"LicenseType",
 	"DisasterRecoveryStatus",
 	"CurrentRestorePointDateTime",
+	"BackupCloudPcStatus",
 	"ActivationExpirationDateTime",
 }
 requestBody.SetSelect(select)

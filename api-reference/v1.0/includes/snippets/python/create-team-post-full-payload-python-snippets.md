@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.team import Team
 from msgraph.generated.models.team_visibility_type import TeamVisibilityType
@@ -16,13 +17,12 @@ from msgraph.generated.models.team_fun_settings import TeamFunSettings
 from msgraph.generated.models.giphy_rating_type import GiphyRatingType
 from msgraph.generated.models.team_messaging_settings import TeamMessagingSettings
 from msgraph.generated.models.teams_app_installation import TeamsAppInstallation
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Team(
 	visibility = TeamVisibilityType.Private,
 	display_name = "Sample Engineering Team",
 	description = "This is a sample engineering team, used to showcase the range of properties supported by this API",
+	first_channel_name = "My First Channel of the team",
 	channels = [
 		Channel(
 			display_name = "Announcements 📢",

@@ -18,10 +18,10 @@ import (
 
 requestTop := int32(3)
 
-requestParameters := &graphsecurity.SecurityRulesDetectionRulesRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.RulesDetectionRulesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphsecurity.SecurityRulesDetectionRulesRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.RulesDetectionRulesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "security"
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 # certificationControl resource type
@@ -19,6 +20,9 @@ Contains compliance certification data associated with secure score control.
 |:--|:--|:--|
 |name | string | Certification control name. |
 |url | string | URL for the Microsoft Service Trust Portal. |
+
+## Relationships
+None.
 
 ## JSON representation
 

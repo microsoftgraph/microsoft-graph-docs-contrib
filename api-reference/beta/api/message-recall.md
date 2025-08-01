@@ -5,6 +5,7 @@ author: "kahua"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/24/2024
 ---
 
 # message: recall

@@ -1,10 +1,11 @@
 ---
 author: swapnil1993
 title:  "termColumn resource type"
-description: "The termColumn resource indicates that the column's values contains taxonomy data."
+description: "Represents a managed metadata column in SharePoint."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 03/12/2024
 ---
 # termColumn resource type
 
@@ -28,7 +29,7 @@ Represents a managed metadata column in SharePoint.
 
 ## JSON representation
 
-Here's a JSON representation of a **termColumn** resource.
+The following JSON representation shows the resource type.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.termColumn" } -->
 
 ```json

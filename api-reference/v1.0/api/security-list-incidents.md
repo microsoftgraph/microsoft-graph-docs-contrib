@@ -1,11 +1,11 @@
 ---
 title: "List incidents"
 description: "Get a list of the incident objects and their properties."
-ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 09/23/2024
 ---
 
 # List incidents
@@ -89,10 +89,6 @@ GET https://graph.microsoft.com/v1.0/security/incidents
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-incident-for-defender-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-incident-for-defender-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-incident-for-defender-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -128,8 +124,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.incident",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.security.incident)"
 }
 -->
 
@@ -191,10 +186,6 @@ GET https://graph.microsoft.com/v1.0/security/incidents?$expand=alerts
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-incident-with-their-alerts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-incident-with-their-alerts-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-incident-with-their-alerts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -226,8 +217,7 @@ GET https://graph.microsoft.com/v1.0/security/incidents?$expand=alerts
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.incident",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.security.incident)"
 }
 -->
 ``` http
@@ -307,7 +297,10 @@ Content-Type: application/json
                             "firstSeenDateTime": "2020-09-12T07:28:32.4321753Z",
                             "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
                             "azureAdDeviceId": null,
-                            "deviceDnsName": "tempDns",
+                            "deviceDnsName": "yonif-lap3.middleeast.corp.microsoft.com",
+                            "hostName": "yonif-lap3",
+                            "ntDomain": null,
+                            "dnsDomain": "middleeast.corp.microsoft.com",
                             "osPlatform": "Windows10",
                             "osBuild": 22424,
                             "version": "Other",

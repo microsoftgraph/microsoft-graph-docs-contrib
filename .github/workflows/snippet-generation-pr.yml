@@ -40,8 +40,8 @@ jobs:
         GITHUB_TOKEN: ${{ steps.get_token.outputs.app-token }}
         MESSAGE_TITLE: "Snippets Update"
         MESSAGE_BODY: "Scheduled snippets update"
-        REVIEWERS: andrueastman
-        ASSIGNEDTO: andrueastman
+        REVIEWERS: millicentachieng
+        ASSIGNEDTO: millicentachieng
         BASE: main
       run: |
         git fetch origin main

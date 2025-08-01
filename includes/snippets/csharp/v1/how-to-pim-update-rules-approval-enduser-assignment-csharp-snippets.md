@@ -40,7 +40,6 @@ var requestBody = new UnifiedRoleManagementPolicyApprovalRule
 		{
 			new UnifiedApprovalStage
 			{
-				OdataType = "microsoft.graph.unifiedApprovalStage",
 				ApprovalStageTimeOutInDays = 1,
 				IsApproverJustificationRequired = true,
 				EscalationTimeInMinutes = 0,

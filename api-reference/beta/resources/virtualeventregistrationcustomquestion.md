@@ -5,6 +5,7 @@ author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 ---
 
@@ -40,6 +41,9 @@ The following shows the supported types of answer input for a custom registratio
 | multiChoice | The registration question accepts more than one answer from a list of options. |
 | Boolean | The registration question accepts a yes, or no answer. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+## Relationships
+None.
 
 ## JSON representation
 

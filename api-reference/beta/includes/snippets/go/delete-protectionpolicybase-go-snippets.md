@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer <Access-Token>")
 
-configuration := &graphsolutions.SolutionsBackupRestoreProtectionPolicieItemRequestBuilderDeleteRequestConfiguration{
+configuration := &graphsolutions.BackupRestoreProtectionPoliciesItemRequestBuilderDeleteRequestConfiguration{
 	Headers: headers,
 }
 

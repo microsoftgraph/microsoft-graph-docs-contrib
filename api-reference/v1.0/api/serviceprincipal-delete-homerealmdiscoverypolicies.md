@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "nickludwig"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 07/30/2024
 ---
 
 # Remove homeRealmDiscoveryPolicy
@@ -66,10 +67,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/homeRealmDiscover
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-homerealmdiscoverypolicy-from-serviceprincipal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-homerealmdiscoverypolicy-from-serviceprincipal-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -6,6 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 
 # group resource type
@@ -133,7 +134,7 @@ This resource supports:
 |:-|:-|:-|
 | allowExternalSenders | Boolean | Indicates if people external to the organization can send messages to the group. The default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | assignedLabels | [assignedLabel](assignedlabel.md) collection | The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. <br><br>Returned only on `$select`. This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and [a supported administrator role](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels).|
-| assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the group. <br><br>Returned only on `$select`. Supports `$filter` (`eq`).Read-only. |
+| assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the group. <br><br>Returned only on `$select`. Supports `$filter` (`eq`). Read-only. |
 | autoSubscribeNewMembers | Boolean | Indicates if new members added to the group are autosubscribed to receive email notifications. You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | classification | String | Describes a classification for the group (such as low, medium, or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](groupsetting.md) value, based on the [template definition](groupsettingtemplate.md).<br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
 | createdDateTime | DateTimeOffset | Timestamp of when the group was created. The value can't be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on January 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only. |
@@ -148,6 +149,7 @@ This resource supports:
 | id | String | The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.<br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | isArchived | Boolean | When a group is associated with a team, this property determines whether the team is in read-only mode.<br/>To read this property, use the `/group/{groupId}/team` endpoint or the [Get team](../api/team-get.md) API. To update this property, use the [archiveTeam](../api/team-archive.md) and [unarchiveTeam](../api/team-unarchive.md) APIs. |
 | isAssignableToRole | Boolean | Indicates whether this group can be assigned to a Microsoft Entra role. Optional. <br><br>This property can only be set while creating the group and is immutable. If set to `true`, the **securityEnabled** property must also be set to `true`, **visibility** must be `Hidden`, and the group can't be a dynamic group (that is, **groupTypes** can't contain `DynamicMembership`). <br/><br/>Only callers with at least the Privileged Role Administrator role can set this property. The caller must also be assigned the _RoleManagement.ReadWrite.Directory_ permission to set this property or update the membership of such groups. For more, see [Using a group to manage Microsoft Entra role assignments](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Using this feature requires a Microsoft Entra ID P1 license. Returned by default. Supports `$filter` (`eq`, `ne`, `not`). |
+| isManagementRestricted | Boolean | Indicates whether the group is a member of a restricted management administrative unit. If not set, the default value is `null` and the default behavior is false. Read-only. <br/><br/> To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit. <br><br>Returned only on `$select`. |
 | isSubscribedByMail | Boolean | Indicates whether the signed-in user is subscribed to receive email conversations. The default value is `true`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | licenseProcessingState | String | Indicates the status of the group license assignment to all group members. The default value is `false`. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.<br><br>Returned only on `$select`. Read-only. |
 | mail | String | The SMTP address for the group, for example, "serviceadmins@contoso.com". <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
@@ -201,7 +203,7 @@ This resource supports:
 | members | [directoryObject](directoryobject.md) collection | The members of this group, who can be users, devices, other groups, or service principals. Supports the [List members](../api/group-list-members.md), [Add member](../api/group-post-members.md), and [Remove member](../api/group-delete-members.md) operations. Nullable. <br/>Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`. |
 | membersWithLicenseErrors | [User](user.md) collection | A list of group members with license errors from this group-based license assignment. Read-only. |
 | onenote | [Onenote](onenote.md) | Read-only. |
-| owners | [directoryObject](directoryobject.md) collection | The owners of the group. Limited to 100 owners. Nullable. If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. <br/> Supports `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`). Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`. |
+| owners | [directoryObject](directoryobject.md) collection | The owners of the group who can be users or service principals. Limited to 100 owners. Nullable. <li>If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner. <li>A non-admin user can't explicitly add themselves to this collection when they're creating the group. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419). <li>For security groups, the admin user isn't automatically added to this collection. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419).<br/><br/> Supports `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`); Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`. |
 | photo | [profilePhoto](profilephoto.md) | The group's profile photo |
 | photos | [profilePhoto](profilephoto.md) collection | The profile photos owned by the group. Read-only. Nullable. |
 | planner | [plannerGroup](plannergroup.md) | Entry-point to Planner resource that might exist for a Unified Group. |
@@ -353,30 +355,32 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "allowExternalSenders": false,
+  "allowExternalSenders": "Boolean",
   "acceptedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "assignedLicenses": [{ "@odata.type": "microsoft.graph.assignedLicense" }],
-  "autoSubscribeNewMembers": true,
+  "autoSubscribeNewMembers": "Boolean",
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
   "classification": "String",
   "conversations": [{ "@odata.type": "microsoft.graph.conversation" }],
   "createdDateTime": "String (timestamp)",
   "createdOnBehalfOf": { "@odata.type": "microsoft.graph.directoryObject" },
+  "deletedDateTime":  "String (timestamp)",
   "description": "String",
   "displayName": "String",
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "events": [{ "@odata.type": "microsoft.graph.event" }],
   "groupTypes": ["String"],
   "hasMembersWithLicenseErrors": "Boolean",
-  "hideFromAddressLists": false,
-  "hideFromOutlookClients": false,
+  "hideFromAddressLists": "Boolean",
+  "hideFromOutlookClients": "Boolean",
   "id": "String (identifier)",
-  "isAssignableToRole": false,
-  "isSubscribedByMail": true,
+  "isAssignableToRole": "Boolean",
+  "isManagementRestricted": "Boolean",
+  "isSubscribedByMail": "Boolean",
   "licenseProcessingState": "String",
   "mail": "String",
-  "mailEnabled": true,
+  "mailEnabled": "Boolean",
   "mailNickname": "String",
   "memberOf": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "members": [{ "@odata.type": "microsoft.graph.directoryObject" }],
@@ -388,7 +392,7 @@ The following JSON representation shows the resource type.
     { "@odata.type": "microsoft.graph.onPremisesProvisioningError" }
   ],
   "onPremisesSecurityIdentifier": "String",
-  "onPremisesSyncEnabled": true,
+  "onPremisesSyncEnabled": "Boolean",
   "owners": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "preferredDataLocation": "String",
   "proxyAddresses": ["String"],
@@ -396,7 +400,7 @@ The following JSON representation shows the resource type.
   "photos": [{ "@odata.type": "microsoft.graph.profilePhoto" }],
   "rejectedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "renewedDateTime": "String (timestamp)",
-  "securityEnabled": true,
+  "securityEnabled": "Boolean",
   "securityIdentifier": "String",
   "serviceProvisioningErrors": [
     { "@odata.type": "microsoft.graph.serviceProvisioningXmlError" }
@@ -404,7 +408,7 @@ The following JSON representation shows the resource type.
   "sites": [{ "@odata.type": "microsoft.graph.site" }],
   "threads": [{ "@odata.type": "microsoft.graph.conversationThread" }],
   "uniqueName": "String",
-  "unseenCount": 1024,
+  "unseenCount": "Int32",
   "visibility": "String"
 }
 ```

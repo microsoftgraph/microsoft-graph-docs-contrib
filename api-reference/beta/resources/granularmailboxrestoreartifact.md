@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Granular mailbox restore artifact
+ms.date: 12/02/2024
 ---
 
 # granularMailboxRestoreArtifact resource type
@@ -33,9 +34,10 @@ Inherits from [mailboxRestoreArtifact](../resources/mailboxRestoreArtifact.md).
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restoration of the artifact fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 |restoredFolderId|String|The new restored folder identifier for the user.|
 |restoredFolderName|String|The new restored folder name.|
+|restoredItemCount|Int32|The number of items that are being restored in the folder.|
 |searchResponseId|String|.|
 |startDateTime|DateTimeOffset|The time when the restoration of the artifact started. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
-|status|[artifactRestoreStatus](../resources/mailboxrestoreartifact.md#artifactrestorestatus-values)|The restoration status of the artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).T he possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|[artifactRestoreStatus](../resources/mailboxrestoreartifact.md#artifactrestorestatus-values)|The restoration status of the artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -66,6 +68,7 @@ The following JSON representation shows the resource type.
   },
   "restoredFolderId": "String",
   "restoredFolderName": "String",
+  "restoredItemCount": "Int32",
   "searchResponseId": "String"
 }
 ```

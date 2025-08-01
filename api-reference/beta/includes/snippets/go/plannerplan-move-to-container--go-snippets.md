@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("If-Match", "\"string\"")
 
-configuration := &graphplanner.PlannerPlanItemMoveToContainerRequestBuilderPostRequestConfiguration{
+configuration := &graphplanner.PlansItemMoveToContainerRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphplanner.NewMoveToContainerPostRequestBody()

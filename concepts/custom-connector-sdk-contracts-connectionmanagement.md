@@ -1,16 +1,17 @@
 ---
-title: "Microsoft Graph connectors SDK connection management API and models"
+title: "Microsoft 365 Copilot connectors SDK connection management API and models"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Learn about the connection management API and models in the Microsoft Graph connectors SDK."
+description: "Learn about the connection management API and models in the Copilot connectors SDK."
+ms.date: 11/07/2024
 ---
 
-# Microsoft Graph connectors SDK connection management API and models
+# Copilot connectors SDK connection management API and models
 
-The Microsoft Graph connectors SDK contracts connection management API and models are called during the process of **custom connector connection creation** on the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add).
+The Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) SDK contracts connection management API and models are called during the process of **custom connector connection creation** on the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add).
 
 ## Connection management APIs
 
@@ -78,4 +79,4 @@ Request model to get the schema response of the data source.
 
 ## Related content
 
-* [Microsoft Graph connectors API schema resource type](/graph/api/resources/externalconnectors-schema)
+* [Copilot connectors API schema resource type](/graph/api/resources/externalconnectors-schema)

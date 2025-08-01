@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "NupurGarg"
 ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List myDayTasks
@@ -59,10 +60,6 @@ GET https://graph.microsoft.com/beta/me/planner/myDayTasks
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/planneruser-get-mydaytasks-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/planneruser-get-mydaytasks-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

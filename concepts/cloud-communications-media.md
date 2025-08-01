@@ -4,6 +4,7 @@ description: "Use the cloud communications API in Microsoft Graph to choose a me
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
+ms.date: 11/07/2024
 ---
 
 # Choose a media hosting option
@@ -14,7 +15,7 @@ This article helps you determine which media hosting option is right for you bas
 
 ## Service-hosted media (remote hosting)
 
-If you want your bot to play a custom prompt when a customer dials your business's number, or to detect phone tones, record short voice clips, or perform any of the various Interactive Voice Response ([IVR](/graph/api/resources/calls-api-ivr-overview)) scenarios, consider using the [service-hosted media APIs](/graph/api/resources/communications-api-overview).
+If you want your bot to play a custom prompt when a customer dials your business's number, or to detect phone tones, record short voice clips, or perform any of the various Interactive Voice Response ([IVR](/graph/api/resources/communications-api-overview)) scenarios, consider using the [service-hosted media APIs](/graph/api/resources/communications-api-overview).
 
 **If your media needs are simpler, explore this option first**. Because the heavy media processing is offloaded remotely, this is a lighter weight solution that allows you to build your bot in a more flexible way.
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Create openShiftChangeRequest
@@ -24,9 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "openshiftchangerequest_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/openshiftchangerequest-post-permissions.md)]
 
-> [!NOTE]
-> The Schedule.ReadWrite.All application permission is currently in private preview only and ins't available for public use.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +43,7 @@ This method supports some of the OData query parameters to help customize the re
 |:----------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
-| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. The `MS-APP-ACTS-AS` header is deprecated and no longer required with application tokens.|
 
 ## Request body
 In the request body, provide a JSON representation of a new [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.
@@ -69,6 +67,7 @@ Authorization: Bearer {token}
 Content-type: application/json
 
 {
+  "senderUserId": "3fe0bc21-1398-4fd9-9713-52511b434c1e",
   "senderMessage": "Can I take this shift?",
   "openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8"
 }

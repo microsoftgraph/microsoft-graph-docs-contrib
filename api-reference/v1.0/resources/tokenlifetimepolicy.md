@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "lujiangfeng666"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # tokenLifetimePolicy resource type

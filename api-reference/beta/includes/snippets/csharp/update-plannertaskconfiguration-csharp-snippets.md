@@ -11,7 +11,6 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new PlannerTaskConfiguration
 {
-	OdataType = "#microsoft.graph.plannerTaskConfiguration",
 	EditPolicy = new PlannerTaskPolicy
 	{
 		Rules = new List<PlannerTaskRoleBasedRule>
@@ -19,58 +18,8 @@ var requestBody = new PlannerTaskConfiguration
 			new PlannerTaskRoleBasedRule
 			{
 				DefaultRule = "block",
-				Role = new PlannerRelationshipBasedUserType
-				{
-					OdataType = "#microsoft.graph.plannerRelationshipBasedUserType",
-					RoleKind = PlannerUserRoleKind.Relationship,
-					Role = PlannerRelationshipUserRoles.DefaultRules,
-				},
 				PropertyRule = new PlannerTaskPropertyRule
 				{
-					PercentComplete = new List<string>
-					{
-						"allow",
-					},
-					RuleKind = PlannerRuleKind.TaskRule,
-					Assignments = new PlannerFieldRules
-					{
-						DefaultRules = new List<string>
-						{
-							"addSelf",
-						},
-						Overrides = new List<PlannerRuleOverride>
-						{
-						},
-					},
-				},
-			},
-			new PlannerTaskRoleBasedRule
-			{
-				DefaultRule = "block",
-				Role = new PlannerRelationshipBasedUserType
-				{
-					OdataType = "#microsoft.graph.plannerRelationshipBasedUserType",
-					RoleKind = PlannerUserRoleKind.Relationship,
-					Role = PlannerRelationshipUserRoles.TaskAssignees,
-				},
-				PropertyRule = new PlannerTaskPropertyRule
-				{
-					StartDate = new List<string>
-					{
-						"allow",
-					},
-					DueDate = new List<string>
-					{
-						"allow",
-					},
-					PercentComplete = new List<string>
-					{
-						"allow",
-					},
-					Order = new List<string>
-					{
-						"allow",
-					},
 					RuleKind = PlannerRuleKind.TaskRule,
 					References = new PlannerFieldRules
 					{
@@ -80,22 +29,6 @@ var requestBody = new PlannerTaskConfiguration
 						},
 						Overrides = new List<PlannerRuleOverride>
 						{
-							new PlannerRuleOverride
-							{
-								Name = "userCreated",
-								Rules = new List<string>
-								{
-									"allow",
-								},
-							},
-							new PlannerRuleOverride
-							{
-								Name = "applicationCreated",
-								Rules = new List<string>
-								{
-									"block",
-								},
-							},
 						},
 					},
 					CheckLists = new PlannerFieldRules
@@ -106,6 +39,16 @@ var requestBody = new PlannerTaskConfiguration
 						},
 						Overrides = new List<PlannerRuleOverride>
 						{
+						},
+					},
+					Assignments = new PlannerFieldRules
+					{
+						DefaultRules = new List<string>
+						{
+							"allow",
+						},
+						Overrides = new List<PlannerRuleOverride>
+						{
 							new PlannerRuleOverride
 							{
 								Name = "userCreated",
@@ -119,33 +62,7 @@ var requestBody = new PlannerTaskConfiguration
 								Name = "applicationCreated",
 								Rules = new List<string>
 								{
-									"check",
-								},
-							},
-						},
-					},
-					Assignments = new PlannerFieldRules
-					{
-						DefaultRules = new List<string>
-						{
-							"block",
-						},
-						Overrides = new List<PlannerRuleOverride>
-						{
-							new PlannerRuleOverride
-							{
-								Name = "userCreated",
-								Rules = new List<string>
-								{
-									"removeSelf",
-								},
-							},
-							new PlannerRuleOverride
-							{
-								Name = "applicationCreated",
-								Rules = new List<string>
-								{
-									"check",
+									"allow",
 								},
 							},
 						},
@@ -161,13 +78,32 @@ var requestBody = new PlannerTaskConfiguration
 						},
 					},
 				},
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"userType" , new PlannerRelationshipBasedUserType
+						{
+							OdataType = "#microsoft.graph.plannerRelationshipBasedUserType",
+							Role = PlannerRelationshipUserRoles.DefaultRules,
+							AdditionalData = new Dictionary<string, object>
+							{
+								{
+									"selectionKind" , "relationship"
+								},
+							},
+						}
+					},
+				},
 			},
 		},
 	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.TaskConfiguration.PatchAsync(requestBody);
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.TaskConfiguration.PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");
+});
 
 
 ```

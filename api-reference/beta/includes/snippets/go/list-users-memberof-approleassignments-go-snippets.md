@@ -18,11 +18,11 @@ import (
 
 requestFilter := "appRoleAssignments/$count gt 0"
 
-requestParameters := &graphusers.UserItemMemberOfGraph.groupRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemMemberOfGraph.groupRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"id","displayName"},
 }
-configuration := &graphusers.UserItemMemberOfGraph.groupRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMemberOfGraph.groupRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "WiRawlinWork"
 ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 07/11/2024
 ---
 
 # plannerRoster: assignSensitivityLabel
@@ -85,10 +86,6 @@ If-Match: "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\""
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/assign-sensitivitylabel-to-roster--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/assign-sensitivitylabel-to-roster--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

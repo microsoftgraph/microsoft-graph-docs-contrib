@@ -1,28 +1,28 @@
 ---
 title: "Differences between resources in Azure AD Graph and Microsoft Graph"
-description: "Describes differences between resources in Azure Active Directory (Azure AD) Graph and resources in Microsoft Graph in order to help migrate apps."
+description: "Learn the differences between resources in Azure Active Directory (Azure AD) Graph and resources in Microsoft Graph before you migrate your app."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: krbash
 ms.topic: concept-article
 ms.localizationpriority: medium
 ms.subservice: entra-applications
-ms.date: 02/14/2024
+ms.date: 02/14/2025
 #Customer intent: As a developer, I want to understand how resources differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Differences between resources in Azure AD Graph and Microsoft Graph
 
-This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+> This article is part of *Step 1: review API differences* in the [Azure AD Graph app migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) series.
 
-When migrating apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph, some resources have different names and different types.  For example, if your Azure AD Graph app uses the **TenantDetail** resource, you need to update your code to refer to [organization](/graph/api/resources/organization) instead.
+When migrating apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph, some resources have different names and different types. For example, if your Azure AD Graph app uses the **TenantDetail** resource, you need to update your code to refer to [organization](/graph/api/resources/organization) instead.
 
-The following table highlights differences between Azure AD Graph and Microsoft Graph resources. It shows resources that have different names or aren't available; it also highlights resources available in the `beta` version of Microsoft Graph but not in the `v1.0` version.
+This article highlights differences between Azure AD Graph and Microsoft Graph resources. It shows resources that have different names or aren't available; it also highlights resources available in the `beta` version of Microsoft Graph but not in the `v1.0` version.
 
 If a resource is **not** shown in this list, it's already available in the [v1.0 version](/graph/api/overview) of Microsoft Graph, with the same name as in Azure AD Graph.
 
 > [!NOTE]
-> Resource type names in Azure AD Graph are Pascal-cased, whereas in Microsoft Graph they are camel-cased.
+> Resource type names in Azure AD Graph are Pascal-cased, whereas in Microsoft Graph they're camel-cased.
 
 |Azure AD Graph <br>(v1.6) resource |Microsoft Graph<br>resource|Comments|
 |---|---|---|
@@ -36,7 +36,7 @@ If a resource is **not** shown in this list, it's already available in the [v1.0
 | [SignInName](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;_New approach_ <br> v1.0&nbsp;-&nbsp;_New approach_ | New modeling for the identifiers used to sign into a user account. For more information, see [objectIdentity](/graph/api/resources/objectIdentity) resource type. Supports Azure AD B2C scenarios. |
 | [TenantDetail](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) <br> v1.0&nbsp;-&nbsp;[organization](/graph/api/resources/organization) | |
 | [TrustedCasForPasswordAuth](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration) <br> v1.0&nbsp;-&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration) | |
-| [UserIdentity](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[objectIdentity](/graph/api/resources/objectidentity?view=graph-rest-beta&preserve-view=true) <br> v1.0&nbsp;-&nbsp;[objectIdentity](/graph/api/resources/objectidentity) |  New modeling for the identifiers used to sign into a user account, called **objectIdentity**. Supports Azure AD B2C scenarios. |
+| [UserIdentity](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[objectIdentity](/graph/api/resources/objectidentity?view=graph-rest-beta&preserve-view=true) <br> v1.0&nbsp;-&nbsp;[objectIdentity](/graph/api/resources/objectidentity) | New modeling for the identifiers used to sign into a user account, called **objectIdentity**. Supports Azure AD B2C scenarios. |
 
 ## Next step
 

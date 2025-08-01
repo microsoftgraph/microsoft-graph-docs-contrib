@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.localizationpriority: high
 ms.subservice: entra-applications
 ms.custom: graphiamtop20
-ms.date: 01/11/2024
+ms.date: 01/27/2025
 #customer intent: As a developer, I want to register an application with the Microsoft identity platform, so that I can use it to access data in the Microsoft cloud.
 ---
 

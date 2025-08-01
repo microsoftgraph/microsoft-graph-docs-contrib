@@ -12,6 +12,7 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new EducationModule
 {
 	DisplayName = "Module 2",
+	LanguageTag = "en-GB",
 	Description = "Description for Module 2",
 };
 

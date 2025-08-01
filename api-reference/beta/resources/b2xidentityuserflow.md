@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "nanguil"
+ms.date: 06/06/2024
 ---
 
 # b2xIdentityUserFlow resource type

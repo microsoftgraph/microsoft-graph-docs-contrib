@@ -5,12 +5,15 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 11/22/2024
 ---
 
 # Update virtualEventWebinar
 Namespace: microsoft.graph
 
 Update the properties of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
+
+Only the **Organizer** and **Co-organizer** can make changes to a webinar event.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -88,10 +91,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-virtualeventwebinar-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-virtualeventwebinar-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -173,6 +172,12 @@ Content-Type: application/json
   ],
   "settings": {
     "isAttendeeEmailNotificationEnabled": false
-  }
+  },
+  "externalEventInformation": [
+    {
+      "applicationId" : "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
+      "externalEventId": "myExternalEventId"
+    }
+  ]
 }
 ```

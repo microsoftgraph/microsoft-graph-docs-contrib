@@ -5,6 +5,7 @@ author: "nblankenau"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 06/25/2024
 ---
 
 # sslCertificate resource type

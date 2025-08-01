@@ -17,7 +17,7 @@ var requestBody = new Extension
 			"theme" , "light"
 		},
 		{
-			"color" , "yellow"
+			"color" , "purple"
 		},
 		{
 			"lang" , "Swahili"

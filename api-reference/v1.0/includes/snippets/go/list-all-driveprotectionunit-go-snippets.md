@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-driveProtectionUnits, err := graphClient.Solutions().BackupRestore().DriveProtectionUnits().Get(context.Background(), nil)
+graphDriveProtectionUnit, err := graphClient.Solutions().BackupRestore().ProtectionUnits().GraphDriveProtectionUnit().Get(context.Background(), nil)
 
 
 ```

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "excel"
 author: "ruoyingl"
+ms.date: 08/01/2024
 ---
 
 # workbookSortField resource type
@@ -24,6 +25,9 @@ Represents a condition in a sorting operation.
 |icon|[workbookIcon](workbookicon.md)|Represents the icon that is the target of the condition if the sorting is on the cell's icon.|
 |key|int|Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).|
 |sortOn|string|Represents the type of sorting of this condition. Possible values are: `Value`, `CellColor`, `FontColor`, `Icon`.|
+
+## Relationships
+None.
 
 ## JSON representation
 

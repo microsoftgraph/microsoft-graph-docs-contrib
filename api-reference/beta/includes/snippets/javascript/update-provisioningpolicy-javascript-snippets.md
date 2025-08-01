@@ -30,10 +30,15 @@ const cloudPcProvisioningPolicy = {
   },
   autopatch: {
     autopatchGroupId: '91197a0b-3a74-408d-ba88-bce3fdc4e5eb'
+  },
+  autopilotConfiguration: {
+    devicePreparationProfileId: '59e5d3d2-ec68-4bfe-9693-27975b318990',
+    applicationTimeoutInMinutes: 30,
+    onFailureDeviceAccessDenied: false
   }
 };
 
-await client.api('/deviceManagement/virtualEndpoint/provisioningPolicies/{id}')
+await client.api('/deviceManagement/virtualEndpoint/provisioningPolicies/1d164206-bf41-4fd2-8424-a3192d39ffff')
 	.version('beta')
 	.update(cloudPcProvisioningPolicy);
 

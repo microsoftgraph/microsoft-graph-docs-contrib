@@ -5,6 +5,7 @@ author: "simonhult"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # resourceVisualization resource type
@@ -59,7 +60,7 @@ Example query:
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ### containerType property values
-The supported types can differ based on containers from which [itemInsights](iteminsights.md) returns files. For example, only the [sharedInsight](insights-shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
+The supported types can differ based on containers from which [itemInsights](iteminsights.md) returns files. For example, only the [sharedInsight](insights-shared.md) insight returns files from `DropBox`, `Box`, and `GDrive`.
 
 -    OneDriveBusiness
 -    Site
@@ -70,6 +71,9 @@ The supported types can differ based on containers from which [itemInsights](ite
 
 Example query:
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+
+## Relationships
+None.
 
 ## JSON representation
 

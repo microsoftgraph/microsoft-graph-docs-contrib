@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 toc.title: Cloud PC Windows settings
+ms.date: 08/30/2024
 ---
 
 # cloudPcWindowsSettings resource type

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "myra-ramdenbourg"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 08/09/2024
 ---
 
 # deviceDetail resource type
@@ -23,6 +24,9 @@ Indicates details of the device used in a sign-in activity. Includes information
 |isManaged|Boolean|Indicates if the device is managed or not.|
 |operatingSystem|String|Indicates the OS name and version used in the sign-in.|
 |trustType|String|Indicates information on whether the device used in the sign-in is workplace-joined, Microsoft Entra-joined, domain-joined.|
+
+## Relationships
+None.
 
 ## JSON representation
 

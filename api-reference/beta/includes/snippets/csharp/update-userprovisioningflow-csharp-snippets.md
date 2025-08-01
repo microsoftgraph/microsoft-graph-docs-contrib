@@ -21,8 +21,13 @@ var requestBody = new UserProvisioningFlow
 		},
 		AdditionalOptions = new AdditionalUserOptions
 		{
-			MarkAllStudentsAsMinors = true,
 			AllowStudentContactAssociation = true,
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"studentAgeGroup" , "minor"
+				},
+			},
 		},
 	},
 	CreationOptions = new UserCreationOptions

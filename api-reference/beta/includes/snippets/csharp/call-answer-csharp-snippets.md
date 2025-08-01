@@ -26,6 +26,8 @@ var requestBody = new AnswerPostRequestBody
 	{
 		OdataType = "#microsoft.graph.incomingCallOptions",
 		IsContentSharingNotificationEnabled = true,
+		IsDeltaRosterEnabled = true,
+		IsInteractiveRosterEnabled = true,
 	},
 	ParticipantCapacity = 200,
 };

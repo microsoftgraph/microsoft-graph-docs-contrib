@@ -5,6 +5,7 @@ author: "abhishek-microsoft-2021"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # sensitivityLabelAssignment resource type

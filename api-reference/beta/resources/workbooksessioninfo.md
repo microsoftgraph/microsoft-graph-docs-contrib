@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # workbookSessionInfo resource type
@@ -15,6 +16,16 @@ Namespace: microsoft.graph
 
 Provides information about workbook session.
 
+## Properties
+
+| Property | Type  | Description                               |
+|:---------|:------|:------------------------------------------|
+| id  | string | ID of the workbook session. |
+| persistChanges | string |Set to `true` for persistent session. Set to `false` for non-persistent session (view mode). |
+
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -32,13 +43,6 @@ The following JSON representation shows the resource type.
   "persistChanges": true
 }
 ```
-
-## Properties
-
-| Property | Type  | Description                               |
-|:---------|:------|:------------------------------------------|
-| id  | string | ID of the workbook session. |
-| persistChanges | string |  `true` for persistent session. `false` for non-persistent session (view mode) |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

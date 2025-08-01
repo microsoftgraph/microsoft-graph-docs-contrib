@@ -1,12 +1,13 @@
 ---
-title: "accessPackageAssignmentReviewSettings complex type"
-description: "Used for the access reviews of an access package's assignments."
+title: "accessPackageAssignmentReviewSettings resource type"
+description: "Settings configured in an access package assignment policy for the access reviews of assignments to an access package that were made through that policy."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
-# accessPackageAssignmentReviewSettings complex type
+# accessPackageAssignmentReviewSettings resource type
 
 Namespace: microsoft.graph
 

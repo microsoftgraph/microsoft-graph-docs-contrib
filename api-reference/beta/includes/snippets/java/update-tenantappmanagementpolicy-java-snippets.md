@@ -64,6 +64,24 @@ keyCredentialConfiguration1.setCertificateBasedApplicationConfigurationIds(certi
 keyCredentialConfiguration1.setMaxLifetime(null);
 keyCredentials.add(keyCredentialConfiguration1);
 applicationRestrictions.setKeyCredentials(keyCredentials);
+IdentifierUriConfiguration identifierUris = new IdentifierUriConfiguration();
+IdentifierUriRestriction nonDefaultUriAddition = new IdentifierUriRestriction();
+OffsetDateTime restrictForAppsCreatedAfterDateTime7 = OffsetDateTime.parse("2024-01-01T10:37:00Z");
+nonDefaultUriAddition.setRestrictForAppsCreatedAfterDateTime(restrictForAppsCreatedAfterDateTime7);
+nonDefaultUriAddition.setExcludeAppsReceivingV2Tokens(true);
+nonDefaultUriAddition.setExcludeSaml(true);
+AppManagementPolicyActorExemptions excludeActors = new AppManagementPolicyActorExemptions();
+LinkedList<CustomSecurityAttributeExemption> customSecurityAttributes = new LinkedList<CustomSecurityAttributeExemption>();
+CustomSecurityAttributeStringValueExemption customSecurityAttributeExemption = new CustomSecurityAttributeStringValueExemption();
+customSecurityAttributeExemption.setOdataType("microsoft.graph.customSecurityAttributeStringValueExemption");
+customSecurityAttributeExemption.setId("PolicyExemptions_AppManagementExemption");
+customSecurityAttributeExemption.setOperator(CustomSecurityAttributeComparisonOperator.Equals);
+customSecurityAttributeExemption.setValue("ExemptFromIdentifierUriAdditionRestriction");
+customSecurityAttributes.add(customSecurityAttributeExemption);
+excludeActors.setCustomSecurityAttributes(customSecurityAttributes);
+nonDefaultUriAddition.setExcludeActors(excludeActors);
+identifierUris.setNonDefaultUriAddition(nonDefaultUriAddition);
+applicationRestrictions.setIdentifierUris(identifierUris);
 tenantAppManagementPolicy.setApplicationRestrictions(applicationRestrictions);
 TenantAppManagementPolicy result = graphClient.policies().defaultAppManagementPolicy().patch(tenantAppManagementPolicy);
 

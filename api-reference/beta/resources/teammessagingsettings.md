@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/16/2024
 ---
 
 # teamMessagingSettings resource type
@@ -23,6 +24,9 @@ Settings to configure messaging and mentions in the [team](team.md).
 |allowOwnerDeleteMessages|Boolean|If set to true, owners can delete any message.|
 |allowTeamMentions|Boolean|If set to true, @team mentions are allowed.|
 |allowChannelMentions|Boolean|If set to true, @channel mentions are allowed.|
+
+## Relationships
+None.
 
 ## JSON representation
 

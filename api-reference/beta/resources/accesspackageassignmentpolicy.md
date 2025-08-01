@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # accessPackageAssignmentPolicy resource type
@@ -44,6 +45,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |id|String| Read-only.|
 |modifiedBy|String|Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|accessPackageNotificationSettings|[accessPackageNotificationSettings](../resources/accesspackagenotificationsettings.md)|Represents the settings for email notifications for requests to an access package.|
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|Who must approve requests for access package in this policy.|
 |requestorSettings|[requestorSettings](requestorsettings.md)|Who can request this access package from this policy.|
 |questions|[accessPackageQuestion](accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
@@ -103,7 +105,10 @@ The following JSON representation shows the resource type.
    },
    "verifiableCredentialSettings": {
       "@odata.type": "microsoft.graph.verifiableCredentialSettings"
-   }
+   },
+    "accessPackageNotificationSettings": {
+    "@odata.type": "microsoft.graph.accessPackageNotificationSettings"
+  }
 }
 ```
 

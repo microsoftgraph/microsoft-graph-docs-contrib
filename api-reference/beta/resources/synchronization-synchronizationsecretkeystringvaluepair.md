@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 03/21/2024
+ms.custom: sfi-ropc-nochange
 ---
 
 # synchronizationSecretKeyStringValuePair resource type
@@ -30,6 +32,9 @@ Represents a single secret value.
 |SyncNotificationSettings    |This property is used to determine if quarantine emails are sent.|
 |SyncAll    |Determines scope of sync between all users and groups or only ones that are assigned. When provisioning users into applications, the value is generally "True".|
 |SkipOutOfScopeDeletions |Determines if accounts that go out of scope are/aren't disabled in the target.|
+
+## Relationships
+None.
 
 ## JSON representation
 

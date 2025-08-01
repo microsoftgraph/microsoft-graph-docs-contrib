@@ -23,13 +23,13 @@ headers.Add("ConsistencyLevel", "eventual")
 requestCount := true
 requestSearch := "\"displayName:Pr\""
 
-requestParameters := &graphgroups.GroupItemMembersGraph.userRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.ItemMembersGraph.userRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"displayName"},
 	Search: &requestSearch,
 	Select: [] string {"displayName","id"},
 }
-configuration := &graphgroups.GroupItemMembersGraph.userRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.ItemMembersGraph.userRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

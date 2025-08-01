@@ -17,7 +17,7 @@ import (
 
 requestBody := graphmodels.NewEducationOutcome()
 points := graphmodels.NewEducationAssignmentPointsGrade()
-points := float32(85.0)
+points := float32(85.5)
 points.SetPoints(&points) 
 requestBody.SetPoints(points)
 

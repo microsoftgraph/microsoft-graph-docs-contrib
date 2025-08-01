@@ -6,6 +6,7 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: resourcePageType
+ms.date: 07/08/2024
 ---
 
 # groupSetting resource type

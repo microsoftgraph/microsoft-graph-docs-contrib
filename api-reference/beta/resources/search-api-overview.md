@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "njerigrevious"
 doc_type: conceptualPageType
 ms.subservice: "search"
+ms.date: 03/19/2024
 ---
 
 # Use the Microsoft Search API to query data
@@ -55,7 +56,7 @@ The following table describes the types available to query and the supported per
 |[driveItem](driveitem.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Files, folders, pages, and news. |
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Document libraries are also returned as lists. |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
-|[externalItem](externalconnectors-externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
+|[externalItem](externalconnectors-externalitem.md)|ExternalItem.Read.All| Microsoft 365 Copilot connectors| All content ingested with the Copilot connectors API.|
 |[person](person.md)|People.Read|Exchange Online|Personal contacts and contacts or addressable objects in your organization.|
 |[qna](search-qna.md)|QnA.Read.All|Microsoft Search|Questions and answers in Microsoft Search in your organization.|
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
@@ -105,7 +106,7 @@ If you don't specify any **fields** in the request,  you'll get the default set 
 
 - **listItem** won't return any custom field.
 - **driveItem** will return an internal listItem with an empty field.
-- **externalItem** will return all the fields marked with the **retrievable** attribute in the Microsoft Graph connector schema for that particular connection.
+- **externalItem** will return all the fields marked with the **retrievable** attribute in the Copilot connector schema for that particular connection.
 
 ## Keyword Query Language (KQL) support
 
@@ -155,7 +156,7 @@ The properties on which the aggregation is requested need to be refinable in the
 
 Once the response is returned containing the collection of [searchBucket](searchBucket.md) objects, it's possible to refine the search request to only the matching elements contained in one [searchBucket](searchBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the **aggregationFilters** property of the subsequent [searchRequest](./searchrequest.md).
 
-Aggregations are currently supported for any refinable property on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md), and on Microsoft Graph connectors [externalItem](externalconnectors-externalitem.md).
+Aggregations are currently supported for any refinable property on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md), and on Copilot connectors [externalItem](externalconnectors-externalitem.md).
 
 See [refine search results](/graph/search-concept-aggregation) for examples that show using aggregation to enhance and narrow down search results.
 

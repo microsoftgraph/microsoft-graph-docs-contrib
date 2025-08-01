@@ -5,6 +5,7 @@ author: "sasthana"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # removedState resource type
@@ -20,6 +21,9 @@ Represents the reason why a [participant](participant.md) resource was removed f
 | Property | Type   | Description                          |
 |:---------|:-------|:-------------------------------------|
 | reason   | String | The removal reason for the **participant** resource. |
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # List domains
@@ -22,48 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-list-permissions.md)]
 
-The work or school account needs to belong to one of the following Microsoft Entra roles:
-
-* User Administrator
-* Helpdesk Administrator
-* Service Support Administrator
-* Billing Administrator
-* Mailbox Administrator
-* Directory Readers
-* Directory Writers
-* AdHoc License Administrator
-* Application Administrator
-* Security Reader
-* Security Administrator
-* Privileged Role Administrator
-* Cloud Application Administrator
-* Customer LockBox Access Approver
-* Dynamics 365 Administrator
-* Power BI Administrator
-* Azure Information Protection Administrator
-* Desktop Analytics Administrator
-* License Administrator
-* Microsoft Managed Desktop Administrator
-* Privileged Authentication Administrator
-* Teams Communications Administrator
-* Teams Communications Support Engineer
-* Authentication Administrator
-* Teams Communications Support Specialist
-* Teams Administrator
-* Insights Administrator
-* Compliance Data Administrator
-* Security Operator
-* Kaizala Administrator
-* Global Reader
-* Volume Licensing Business Center User
-* Volume Licensing Service Center User
-* Modern Commerce Administrator
-* Microsoft Store for Business User
-* Directory Reviewer
-* Domain Name Administrator
-* Users
-* Guest User
-* Restricted Guest User
+[!INCLUDE [rbac-domain-apis-read](../includes/rbac-for-apis/rbac-domain-apis-read.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -75,7 +35,7 @@ GET /domains
 
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 > [!NOTE]
-> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search` parameter.
+> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search`, `$top`, and `$filter` query parameters.
 
 ## Request headers
 
@@ -109,10 +69,6 @@ GET https://graph.microsoft.com/v1.0/domains
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-domains-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-domains-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-domains-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -141,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/domains
 
 ### Response
 
->**Note:** The response object shown here might be shortened for readability.
+>**Note:*> - The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

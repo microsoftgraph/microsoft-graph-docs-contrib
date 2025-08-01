@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "merzink"
 ms.subservice: "notifications"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # payloadTypes resource type

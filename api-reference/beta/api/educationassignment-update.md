@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 05/21/2024
 ---
 
 # Update educationassignment
@@ -52,6 +53,7 @@ In the request body, supply the values for relevant fields that should be update
 |dueDateTime|DateTimeOffset| Date assignment is due. |
 |grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| How the assignment is graded.|
 |instructions|itemBody| Instructions to be given to the students along with the assignment. |
+|languageTag|String| Specifies the language in which UI notifications for the assignment are displayed. If **languageTag** isn't provided, the default language is `en-US`. Optional. |
 |notificationChannelUrl|String| Channel to post assignment publish notification. Updating the channel URL isn't allowed after the assignment has been published and is only allowed when the **assignTo** value is [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
 ## Response
@@ -78,16 +80,13 @@ Content-type: application/json
     },
     "dueDateTime": "2021-09-10T00:00:00Z",
     "addedStudentAction": "none",
+    "languageTag": "pt-BR",
     "addToCalendarAction": "studentsAndPublisher"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-educationassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -148,6 +147,7 @@ Content-type: application/json
     "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2272a7baec-c3e9-4213-a850-f62de0adad5f%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%224679bc1b-90c5-45af-ae1a-d5357672ed39%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
     "addToCalendarAction": "studentsAndPublisher",
     "addedStudentAction": "none",
+    "languageTag": "pt-BR",
     "id": "4679bc1b-90c5-45af-ae1a-d5357672ed39",
     "instructions": {
         "content": "Read chapter 5 and write your review",

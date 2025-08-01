@@ -18,10 +18,10 @@ import (
 
 requestFilter := "isEnabled eq true"
 
-requestParameters := &graphidentity.IdentityB2cUserFlowItemLanguagesRequestBuilderGetQueryParameters{
+requestParameters := &graphidentity.B2cUserFlowsItemLanguagesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentity.IdentityB2cUserFlowItemLanguagesRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.B2cUserFlowsItemLanguagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

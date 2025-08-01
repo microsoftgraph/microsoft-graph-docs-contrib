@@ -2,6 +2,7 @@
 title: "Generate Microsoft Graph client libraries with Kiota"
 description: "Learn how to use Kiota to generate custom client libraries for Microsoft Graph."
 author: jasonjoh
+ms.date: 11/07/2024
 ---
 
 # Generate Microsoft Graph client libraries with Kiota

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Policy rule
+ms.date: 06/12/2024
 ---
 
 # unifiedRoleManagementPolicyRule resource type

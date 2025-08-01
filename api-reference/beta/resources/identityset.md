@@ -5,6 +5,7 @@ title: "identitySet resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: entra-users
+ms.date: 07/23/2024
 ---
 # identitySet resource type
 

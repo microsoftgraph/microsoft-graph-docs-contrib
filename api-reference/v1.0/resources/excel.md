@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "AmandaHan123"
 ms.subservice: "excel"
 doc_type: conceptualPageType
+ms.date: 03/20/2024
 ---
 
 # Working with Excel in Microsoft Graph

@@ -11,8 +11,9 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new EducationAssignment
 {
-	DueDateTime = DateTimeOffset.Parse("2022-09-16T00:00:00Z"),
-	DisplayName = "Reading test 09.14 Beta",
+	DueDateTime = DateTimeOffset.Parse("2025-09-16T00:00:00Z"),
+	DisplayName = "Reading test 09.14",
+	LanguageTag = "es-MX",
 	Instructions = new EducationItemBody
 	{
 		ContentType = BodyType.Text,

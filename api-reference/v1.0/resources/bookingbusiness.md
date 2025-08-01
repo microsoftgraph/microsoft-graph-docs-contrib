@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 10/09/2024
 ---
 
 # bookingBusiness resource type
@@ -35,6 +36,7 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 |[List calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md) collection|Get the collection of **bookingAppointment** objects that occurs in the specified date range.|
 |[Publish](../api/bookingbusiness-publish.md)|None|Make the scheduling page of this business available to external customers. Set the **isPublished** property to `true`, and **publicUrl** property to the URL of the scheduling page.|
 |[Unpublish](../api/bookingbusiness-unpublish.md)|None| Make the scheduling page of this business not available to external customers. Set the **isPublished** property to `false`, and the **publicUrl** property to `null`.|
+|[Get staff availability](../api/bookingbusiness-getstaffavailability.md) |[staffAvailabilityItem](staffavailabilityitem.md) collection| Get the availability information of staff members of a Microsoft Bookings calendar.|
 
 ## Properties
 

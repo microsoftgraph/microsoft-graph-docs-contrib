@@ -44,6 +44,14 @@ autopatch := graphmodels.NewCloudPcProvisioningPolicyAutopatch()
 autopatchGroupId := "91197a0b-3a74-408d-ba88-bce3fdc4e5eb"
 autopatch.SetAutopatchGroupId(&autopatchGroupId) 
 requestBody.SetAutopatch(autopatch)
+autopilotConfiguration := graphmodels.NewCloudPcAutopilotConfiguration()
+devicePreparationProfileId := "59e5d3d2-ec68-4bfe-9693-27975b318990"
+autopilotConfiguration.SetDevicePreparationProfileId(&devicePreparationProfileId) 
+applicationTimeoutInMinutes := int32(30)
+autopilotConfiguration.SetApplicationTimeoutInMinutes(&applicationTimeoutInMinutes) 
+onFailureDeviceAccessDenied := false
+autopilotConfiguration.SetOnFailureDeviceAccessDenied(&onFailureDeviceAccessDenied) 
+requestBody.SetAutopilotConfiguration(autopilotConfiguration)
 additionalData := map[string]interface{}{
 	"onPremisesConnectionId" : "4e47d0f6-6f77-44f0-8893-c0fe1701ffff", 
 }

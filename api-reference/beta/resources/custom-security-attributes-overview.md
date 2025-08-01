@@ -5,6 +5,8 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: conceptualPageType
+ms.date: 03/06/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Overview of custom security attributes using the Microsoft Graph API

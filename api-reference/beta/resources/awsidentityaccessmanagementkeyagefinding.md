@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 toc.title: AWS IAM access key age finding
+ms.date: 07/25/2024
 ---
 
 # awsIdentityAccessManagementKeyAgeFinding resource type
@@ -14,6 +15,8 @@ toc.title: AWS IAM access key age finding
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 View the age of AWS IAM access keys.
 
@@ -64,4 +67,5 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
 

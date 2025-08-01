@@ -8,13 +8,13 @@ ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: entra-applications
 ms.custom: scenarios:getting-started
-ms.date: 01/23/2024
+ms.date: 01/13/2025
 #customer intent: As a developer, I want to understand the capabilities available to manage a Microsoft Entra application programmatically using Microsoft Graph.
 ---
 
 # Applications API overview
 
-Microsoft Entra ID is an Identity and Access Management (IAM) system. A core part of its functionality is the [Microsoft identity platform](/entra/identity-platform/v2-overview), which provides authentication and authorization services for *registered applications*. Microsoft Graph APIs allow you to register and manage your application programmatically, enabling you to use Microsoft's IAM capabilities.
+Microsoft Entra ID is a cloud-based Identity and Access Management (IAM) platform. A core part of its functionality is the [Microsoft identity platform](/entra/identity-platform/v2-overview), which provides authentication and authorization services for *registered applications*. Microsoft Graph APIs allow you to register and manage your application programmatically, enabling you to use Microsoft's IAM capabilities.
 
 ## Building blocks of an application in Microsoft Entra ID
 
@@ -22,13 +22,13 @@ A Microsoft Entra application is defined by an **application** object and a **se
 
 ## Application registration
 
-The first step for the Microsoft identity platform to trust your application is to create an **app registration** in your tenant. When you create an app registration, you tell Microsoft Entra ID the following information about your application:
+The first step for the Microsoft identity platform to know about your application is to create an **app registration** in your tenant. When you create an app registration, you tell Microsoft Entra ID the following information about your application:
 
 - The type of app you're building - web app, native app, web API, or a daemon app
 - Whether the app is multitenant or single-tenant
 - Where the app is located
 - Where to send replies after authentication
-- Basic identification information for the app, and more
+- Basic identification and configuration information for the app, and more
 
 Use the [application resource type](/graph/api/resources/application) and its associated methods in Microsoft Graph to manage application registration objects programmatically.
 
@@ -60,8 +60,8 @@ You can use Microsoft Graph APIs for application management to perform the follo
   - Configure single-sign on (SSO) options.
   - Configure claims to add to access tokens.
   - Manage the permissions that have been granted to the service principal.
-- Connect **on-premises applications** to Microsoft Entra ID, secure remote access to on-premises applications, and publish on-premises applications to remote users.
-- **Provision and synchronize** identities from an on-premises directory, or a SaaS application to Microsoft Entra ID.
+- Connect **on-premises applications** to Microsoft Entra ID, secure remote access to on-premises applications, and publish on-premises applications to remote users. These capabilities also power Microsoft Entra Private Access.
+- **Provision and synchronize** identities from an on-premises directory or SaaS application to Microsoft Entra ID.
 
 To discover all the API operations for managing applications and service principals, see [Manage Microsoft Entra applications and service principals using Microsoft Graph](/graph/api/resources/applications-api-overview).
 

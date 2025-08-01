@@ -31,7 +31,6 @@ setting.setIsRequestorJustificationRequired(true);
 setting.setApprovalMode("SingleStage");
 LinkedList<UnifiedApprovalStage> approvalStages = new LinkedList<UnifiedApprovalStage>();
 UnifiedApprovalStage unifiedApprovalStage = new UnifiedApprovalStage();
-unifiedApprovalStage.setOdataType("microsoft.graph.unifiedApprovalStage");
 unifiedApprovalStage.setApprovalStageTimeOutInDays(1);
 unifiedApprovalStage.setIsApproverJustificationRequired(true);
 unifiedApprovalStage.setEscalationTimeInMinutes(0);

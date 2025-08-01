@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphsites.SiteItemTermStoreGroupItemRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.ItemTermStoreGroupsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"*","parentSiteId"},
 }
-configuration := &graphsites.SiteItemTermStoreGroupItemRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.ItemTermStoreGroupsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

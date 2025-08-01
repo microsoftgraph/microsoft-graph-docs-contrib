@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # cloudPcScopedPermission resource type
@@ -20,7 +21,7 @@ Represents a scoped permission and related scope IDs.
 |Property|Type|Description|
 |:---|:---|:---|
 |permission|String|	The operations allowed on scoped resources for the authenticated user. Example permission is `Microsoft.CloudPC/ProvisioningPolicies/Create`. |
-|scopeIds|Collection(String)|The scope IDs of corresponding permission. Currently, it's Intune scope tag ID.|
+|scopeIds|String collection|The scope IDs of corresponding permission. Currently, it's Intune scope tag ID.|
 
 ## Relationships
 
@@ -39,6 +40,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.cloudPcScopedPermission",
   "permission": "String",
-  "scopeIds": "Collection(String)"
+  "scopeIds": ["String"]
 }
 ```

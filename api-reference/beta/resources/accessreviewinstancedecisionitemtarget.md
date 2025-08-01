@@ -5,6 +5,7 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # accessReviewInstanceDecisionItemTarget resource type
@@ -18,6 +19,9 @@ Namespace: microsoft.graph
 Represents a base class for different types of review targets, each one with its own specific properties. The supported target types are: [accessReviewInstanceDecisionItemUserTarget](accessreviewinstancedecisionitemusertarget.md) and [accessReviewInstanceDecisionItemServicePrincipalTarget](accessreviewinstancedecisionitemserviceprincipaltarget.md).
 
 ## Properties
+None.
+
+## Relationships
 None.
 
 ## JSON representation

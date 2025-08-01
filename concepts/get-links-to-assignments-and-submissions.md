@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "AshwaniBansal1"
 ms.subservice: "education"
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Get links to assignments and submissions

@@ -12,7 +12,8 @@ using Microsoft.Graph.Models;
 var requestBody = new Team
 {
 	DisplayName = "My Sample Team",
-	Description = "My Sample Team’s Description",
+	Description = "My sample team’s description",
+	FirstChannelName = "My first channel of the sample team",
 	Members = new List<ConversationMember>
 	{
 		new AadUserConversationMember

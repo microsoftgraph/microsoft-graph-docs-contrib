@@ -20,12 +20,12 @@ requestCount := true
 requestTop := int32(1)
 requestSkip := int32(5)
 
-requestParameters := &graphsecurity.SecurityThreatIntelligenceHostItemSslCertificatesRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.ThreatIntelligenceHostsItemSslCertificatesRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Top: &requestTop,
 	Skip: &requestSkip,
 }
-configuration := &graphsecurity.SecurityThreatIntelligenceHostItemSslCertificatesRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.ThreatIntelligenceHostsItemSslCertificatesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

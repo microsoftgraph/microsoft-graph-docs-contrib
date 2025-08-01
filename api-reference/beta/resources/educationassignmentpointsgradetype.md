@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dipakboyed"
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # educationAssignmentPointsGradeType resource type
@@ -21,7 +22,7 @@ an [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) property 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|maxPoints|Single| Max points possible for this assignment.  |
+|maxPoints|Single| Max points possible for this assignment.|
 
 ## Relationships
 

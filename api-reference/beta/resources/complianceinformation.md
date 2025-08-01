@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "security"
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 # complianceInformation resource type
@@ -19,6 +20,9 @@ Contains compliance data associated with secure score control.
 |:--|:--|:--|
 |certificationControls | [certificationControl](certificationcontrol.md) collection | Collection of the certification controls associated with the certification. |
 |certificationName | String | The name of the compliance certification, for example, `ISO 27018:2014`, `GDPR`, `FedRAMP`, and `NIST 800-171`. |
+
+## Relationships
+None.
 
 ## JSON representation
 

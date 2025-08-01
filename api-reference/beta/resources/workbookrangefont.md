@@ -6,6 +6,7 @@ author: "lumine2008"
 ms.subservice: "excel"
 doc_type: resourcePageType
 toc.title: Range font
+ms.date: 08/01/2024
 ---
 
 # workbookRangeFont resource type

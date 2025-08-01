@@ -16,7 +16,7 @@ select.add("CloudPcId");
 select.add("ManagedDeviceName");
 select.add("AvgRoundTripTimeInMsP50");
 select.add("LastConnectionRoundTripTimeInMs");
-select.add("AvgAvailableBandwidthInMBpsP50");
+select.add("AvgAvailableBandwidthInMbpsP50");
 select.add("LastConnectionAvailableBandWidthInMSps");
 select.add("AvgRemoteSignInTimeInSecP50");
 select.add("UDPConnectionPercentage");

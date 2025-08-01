@@ -25,6 +25,9 @@ A **columnLink** on a [contentType][] attaches a site **columnDefinition** to th
 | id   | String | The unique identifier for the column.         |
 | name | String | The name of the column  in this content type. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

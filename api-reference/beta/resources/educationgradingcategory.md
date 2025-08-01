@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Grading category
+ms.date: 07/22/2024
 ---
 
 # educationGradingCategory resource type
@@ -33,6 +34,9 @@ Represents the weighted contribution of an assignment to a class average grade.
 |id|String|The grading category's ID. This separate ID allows teachers to rename a grading category without losing the link to each assignment. Inherited from [entity](../resources/entity.md). Read-only.|
 |displayName|String|The name of the grading category.|
 |percentageWeight|Int32|The weight of the category; an integer between 0 and 100.|
+
+## Relationships
+None.
 
 ## JSON representation
 

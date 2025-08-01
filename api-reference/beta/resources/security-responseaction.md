@@ -5,6 +5,7 @@ author: "mmekler"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # responseAction resource type
@@ -33,6 +34,7 @@ This type is abstract and has multiple response action types that are derived fr
 * [Move to inbox](../resources/security-movetoinboxresponseaction.md)
 * [Move to deleted items](../resources/security-movetodeleteditemsresponseaction.md)
 * [Move to junk](../resources/security-movetojunkresponseaction.md)
+* [Incident task](../resources/security-incidentTaskResponseAction.md)
 
 
 ## Properties

@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "njerigrevious"
 doc_type: conceptualPageType
 ms.subservice: "search"
+ms.date: 05/13/2024
 ---
 
 # Use the Microsoft Search API to query data
@@ -98,7 +99,7 @@ If the **fields** specified in the request are either not present in the schema,
 If you do not specify any **fields** in the request,  you will get the default set of properties for all types. For extended properties, **listItem** and **externalItem** behave differently when no **fields** are passed in the request:
 
 - **listItem** will not return any custom field.
-- **externalItem** will return all the fields marked with the **retrievable** attribute in the Microsoft Graph connector schema for that particular connection.
+- **externalItem** will return all the fields marked with the **retrievable** attribute in the Microsoft 365 Copilot connector (formerly Microsoft Graph connectors) schema for that particular connection.
 
 ## Keyword Query Language (KQL) support
 
@@ -149,7 +150,7 @@ The properties on which the aggregation is requested need to be refinable in the
 
 Once the response is returned containing the collection of [searchBucket](searchBucket.md) objects, it is possible to refine the search request to only the matching elements contained in one [searchBucket](searchBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the **aggregationFilters** property of the subsequent [searchRequest](./searchrequest.md).
 
-Aggregations are currently supported for any refinable property on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md), and on Microsoft Graph connectors [externalItem](externalconnectors-externalitem.md).
+Aggregations are currently supported for any refinable property on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md), and on Copilot connectors [externalItem](externalconnectors-externalitem.md).
 
 For examples that show how to use aggregation to enhance and narrow down search results, see [Refine search results](/graph/search-concept-aggregation).
 

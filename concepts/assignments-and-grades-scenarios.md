@@ -5,11 +5,12 @@ ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Connect to assignments and grades
 
-In recent years, Microsoft Teams for education has become an essential solution that supports educators and students. Assignments and grades are a core part of Teams for education, and provide the central workflow that educators use to assign, assess, grade, and provide feedback to students around the world.
+Microsoft Teams for education is an essential solution that supports educators and students. Assignments and grades are a core part of Teams for education, and provide the central workflow that educators use to assign, assess, grade, and provide feedback to students around the world.
 
 Microsoft Graph provides a set of integration points that enable you to customize and extend the experience for educators, admins, and students when they work with assignments and grades.
 
@@ -28,3 +29,5 @@ You can read and update data and integrate your app with assignments and grades 
 - [Embed a Teams app in an assignment](/graph/embed-teams-app-in-assignment)
 - [Download all resources from a set of assignments](/graph/download-resources-from-assignment)
 - [I have a web app that needs to create assignments with links back to my website](/microsoftteams/platform/concepts/build-and-test/share-to-teams-from-web-apps)
+- [Get recently modified submissions](/graph/api/educationclass-getrecentlymodifiedsubmissions)
+- [Create an assignment with a Speaker Progress resource (preview)](/graph/create-assignment-with-speaker-progress-resource)

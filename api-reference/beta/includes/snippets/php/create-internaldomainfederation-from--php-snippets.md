@@ -28,6 +28,7 @@ $requestBody->setPromptLoginBehavior(new PromptLoginBehavior('nativeSupport'));
 $requestBody->setIsSignedAuthenticationRequestRequired(true);
 $requestBody->setNextSigningCertificate('MIIE3jCCAsagAwIBAgIQQcyDaZz3MI');
 $requestBody->setFederatedIdpMfaBehavior(new FederatedIdpMfaBehavior('rejectMfaByFederatedIdp'));
+$requestBody->setPasswordResetUri('https://sts.contoso.com/adfs/passwordReset');
 
 $result = $graphServiceClient->domains()->byDomainId('domain-id')->federationConfiguration()->post($requestBody)->wait();
 

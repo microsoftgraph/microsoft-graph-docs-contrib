@@ -5,6 +5,7 @@ description: The accessAction object provides information about accesses of an i
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # accessAction resource type
 

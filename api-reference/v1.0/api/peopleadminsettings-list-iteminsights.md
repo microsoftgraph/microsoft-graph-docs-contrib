@@ -5,6 +5,7 @@ author: "larsb"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: apiPageType
+ms.date: 07/31/2024
 ---
 
 # List itemInsights
@@ -69,10 +70,6 @@ GET https://graph.microsoft.com/v1.0/admin/people/itemInsights
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-iteminsights-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-iteminsights-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

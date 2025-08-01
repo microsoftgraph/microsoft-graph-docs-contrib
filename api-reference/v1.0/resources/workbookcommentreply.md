@@ -6,6 +6,7 @@ author: "grangeryy"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
 toc.title: Chart comment reply
+ms.date: 07/30/2024
 ---
 
 # workbookCommentReply resource type

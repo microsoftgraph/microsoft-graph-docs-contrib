@@ -4,35 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.one_drive_for_business_restore_session import OneDriveForBusinessRestoreSession
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = OneDriveForBusinessRestoreSession(
 	additional_data = {
 			"drive_restore_artifacts@delta" : [
 				{
 						"restore_point" : {
-								"@odata_id" : "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
+								"id" : "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
 						},
 						"destination_type" : "new",
 				},
 				{
 						"restore_point" : {
-								"@odata_id" : "2b014d8c-71fe-4d00-a01a-31850bc5b32",
+								"id" : "2b014d8c-71fe-4d00-a01a-31850bc5b32",
 						},
 						"destination_type" : "new",
 				},
 				{
 						"restore_point" : {
-								"@odata_id" : "3b014d8c-71fe-4d00-a01a-31850bc5b32c",
+								"id" : "3b014d8c-71fe-4d00-a01a-31850bc5b32c",
 						},
 						"destination_type" : "new",
 				},
 				{
 						"restore_point" : {
-								"@odata_id" : "4b014d8c-71fe-4d00-a01a-31850bc5b32c",
+								"id" : "4b014d8c-71fe-4d00-a01a-31850bc5b32c",
 						},
 						"destination_type" : "new",
 				},

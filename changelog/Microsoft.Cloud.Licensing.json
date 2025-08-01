@@ -1,0 +1,106 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "43254185-2ed0-4551-bc14-c150e59aaecd",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudLicensing",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudLicensing** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "43254185-2ed0-4551-bc14-c150e59aaecd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-04T15:55:45.1517232Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a0293b53-6378-418b-93fb-b1914a16fd0a",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudLicensing",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudLicensing** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "a0293b53-6378-418b-93fb-b1914a16fd0a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-17T15:55:45.1517232Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "75cb998b-1ded-4275-abb6-15a38283274c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "assigneeTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **assigneeTypes** enumeration type.",
+          "Target": "assigneeTypes"
+        },
+        {
+          "Id": "75cb998b-1ded-4275-abb6-15a38283274c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupCloudLicensing",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-groupCloudLicensing?view=graph-rest-beta) resource type.",
+          "Target": "groupCloudLicensing"
+        },
+        {
+          "Id": "75cb998b-1ded-4275-abb6-15a38283274c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "usageRights",
+          "ChangeType": "Addition",
+          "Description": "Added the **usageRights** relationship to the [groupCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-groupCloudLicensing?view=graph-rest-beta) resource.",
+          "Target": "groupCloudLicensing"
+        },
+        {
+          "Id": "75cb998b-1ded-4275-abb6-15a38283274c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "service",
+          "ChangeType": "Addition",
+          "Description": "Added the [service](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-service?view=graph-rest-beta) resource type.",
+          "Target": "service"
+        },
+        {
+          "Id": "75cb998b-1ded-4275-abb6-15a38283274c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userCloudLicensing",
+          "ChangeType": "Addition",
+          "Description": "Added the [userCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-userCloudLicensing?view=graph-rest-beta) resource type.",
+          "Target": "userCloudLicensing"
+        },
+        {
+          "Id": "75cb998b-1ded-4275-abb6-15a38283274c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "usageRights",
+          "ChangeType": "Addition",
+          "Description": "Added the **usageRights** relationship to the [userCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-userCloudLicensing?view=graph-rest-beta) resource.",
+          "Target": "userCloudLicensing"
+        },
+        {
+          "Id": "75cb998b-1ded-4275-abb6-15a38283274c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "usageRight",
+          "ChangeType": "Addition",
+          "Description": "Added the [usageRight](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-usageRight?view=graph-rest-beta) resource and supported methods.",
+          "Target": "usageRight"
+        }
+      ],
+      "Id": "75cb998b-1ded-4275-abb6-15a38283274c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-17T15:55:45.1519734Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud licensing"
+    }
+  ]
+}

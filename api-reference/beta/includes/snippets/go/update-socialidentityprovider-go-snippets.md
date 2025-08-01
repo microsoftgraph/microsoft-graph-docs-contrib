@@ -16,7 +16,7 @@ import (
 )
 
 requestBody := graphmodels.NewIdentityProviderBase()
-clientSecret := "1111111111111"
+clientSecret := "4294967296"
 requestBody.SetClientSecret(&clientSecret) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

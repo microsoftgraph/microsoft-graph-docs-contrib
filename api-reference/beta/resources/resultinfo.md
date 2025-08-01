@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # resultInfo resource type
@@ -27,6 +28,9 @@ The subcodes provide supplementary information related to the type of success or
 | code     | Int32 | The result code.     |
 | message  | String | The message.         |
 | subcode  | Int32 | The result sub-code. |
+
+## Relationships
+None.
 
 ## JSON representation
 

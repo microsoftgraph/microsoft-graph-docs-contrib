@@ -12,7 +12,10 @@ const client = Client.init(options);
 
 const fileStorageContainer = {
   displayName: 'Updated Name',
-  description: 'Updated Description'
+  description: 'Updated Description',
+  settings: {
+    isOcrEnabled: false
+  }
 };
 
 await client.api('/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z')

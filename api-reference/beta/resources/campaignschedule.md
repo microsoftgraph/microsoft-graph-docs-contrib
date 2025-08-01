@@ -5,6 +5,7 @@ author: "akgraph"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # campaignSchedule resource type

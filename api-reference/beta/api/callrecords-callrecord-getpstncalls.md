@@ -5,6 +5,7 @@ author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
+ms.date: 10/10/2024
 ---
 
 # callRecord: getPstnCalls
@@ -13,7 +14,10 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
+Get a log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
+
+> [!NOTE]
+> This API doesn't return information for **Telstra** or **Softbank** calling plans.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -62,7 +66,7 @@ If there are more than 1,000 entries in the date range, the body also includes a
 
 ## Example
 
-The following example shows how to get a collection of records for PSTN calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.nextLink` to get records beyond the first 1,000. For readability, the response shows only a collection of 1 record. Please assume there are more than 1,000 calls in that date range.
+The following example shows how to get a collection of records for PSTN calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.nextLink` to get records beyond the first 1,000. For readability, the response shows only a collection of one record. Assume there are more than 1,000 calls in that date range.
 
 ### Request
 The following example shows a request.
@@ -79,10 +83,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/callrecord-getpstncalls-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/callrecord-getpstncalls-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -172,7 +172,7 @@ HTTP/1.1 200 OK
 - [Get aggregated report of the audio conferencing dial-out](callrecords-callrecord-getpstnonlinemeetingdialoutreport.md)
 - [Get log of users who are blocked from making PSTN calls](callrecords-callrecord-getpstnblockeduserslog.md)
 - [Get log of sent/received SMS](callrecords-callrecord-getsmslog.md)
-- [Get log of direct routing calls](callrecords-callrecord-getdirectroutingcalls.md)
+- [Get log of Direct Routing calls](callrecords-callrecord-getdirectroutingcalls.md)
 - [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
 
 <!-- {

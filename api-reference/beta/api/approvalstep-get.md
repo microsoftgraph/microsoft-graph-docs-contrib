@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Get approvalStep
@@ -26,6 +27,8 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "approvalstep_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
+
 <a name='for-pim-for-azure-ad-roles'></a>
 
 ### For PIM for Microsoft Entra roles
@@ -33,7 +36,7 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "approvalstep_get_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-2-permissions.md)]
 
-### Permissions required for calling this API for PIM for groups
+### Permissions required for calling this API for PIM for Groups
 
 <!-- { "blockType": "permissions", "name": "approvalstep_get_3" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-3-permissions.md)]
@@ -54,7 +57,7 @@ To get an approval step in PIM for Microsoft Entra roles:
 GET /roleManagement/directory/roleAssignmentApprovals/{id}/steps/{id}
 ```
 
-To get an approval step in PIM for groups:
+To get an approval step in PIM for Groups:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -93,10 +96,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-approvalstep-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-approvalstep-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

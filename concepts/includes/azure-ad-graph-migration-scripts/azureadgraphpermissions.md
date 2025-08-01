@@ -1,5 +1,6 @@
 ---
 description: "updatePermissions.ps1 script - add only Azure AD Graph permissions"
+ms.date: 11/07/2024
 ---
 
 ```powershell

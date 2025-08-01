@@ -6,12 +6,15 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # unenforcedMfaAwsUserFinding: aggregatedSummary
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 View the count of AWS users with unenforced MFA for the specified authorization systems in your AWS environment.
 
@@ -90,3 +93,4 @@ Content-Type: application/json
     "findingsCount": 49
 }
 ```
+

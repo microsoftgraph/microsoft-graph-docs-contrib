@@ -5,6 +5,7 @@ title: "siteArchivalDetails resource type"
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 07/31/2024
 ---
 
 # siteArchivalDetails resource type

@@ -5,6 +5,7 @@ author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 09/23/2024
 ---
 
 # Get alert
@@ -61,10 +62,6 @@ GET https://graph.microsoft.com/v1.0/security/alerts_v2/da637578995287051192_756
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-security-alert-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-security-alert-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -152,7 +149,10 @@ Content-type: application/json
       "firstSeenDateTime": "2020-09-12T07:28:32.4321753Z",
       "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
       "azureAdDeviceId": null,
-      "deviceDnsName": "tempDns",
+      "deviceDnsName": "yonif-lap3.middleeast.corp.microsoft.com",
+      "hostName": "yonif-lap3",
+      "ntDomain": null,
+      "dnsDomain": "middleeast.corp.microsoft.com",
       "osPlatform": "Windows10",
       "osBuild": 22424,
       "version": "Other",

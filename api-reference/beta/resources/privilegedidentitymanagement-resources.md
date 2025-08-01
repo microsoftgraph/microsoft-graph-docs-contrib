@@ -6,6 +6,7 @@ author: "rkarim-ms"
 ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ROBOTS: NOINDEX
+ms.date: 03/08/2024
 ---
 
 # Privileged Identity Management - Azure resources

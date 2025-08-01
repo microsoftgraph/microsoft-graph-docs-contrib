@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: high
 ms.subservice: "planner"
 doc_type: conceptualPageType
+ms.date: 03/06/2024
 ---
 
 # Use the Planner REST API
@@ -16,7 +17,7 @@ You can use the Planner API in Microsoft Graph to create tasks and assign them t
 Before you get started with the Planner API, it's helpful to understand how the main objects relate to each other and to Microsoft 365 groups.
 
 ## Plan containers
-In Microsoft Planner, plans are always contained in another resource. The containing resource, [plannerPlanContainer](plannerplancontainer.md), determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. You can create a plan in a container of one of the following types: [driveItem](driveitem.md), Microsoft 365 [group](group.md), Planner project, [roster](plannerroster.md), or [user](user.md).
+In Microsoft Planner, plans are always contained in another resource. The containing resource, [plannerPlanContainer](plannerplancontainer.md), determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. You can create a plan in a container of one of the following types: [driveItem](driveitem.md), Microsoft 365 [group](group.md), [plannerTask](plannertask.md), Planner project, [roster](plannerroster.md), [teamsChannel](channel.md), or [user](user.md).
 
 The most common type of container is a group.
 
@@ -34,8 +35,57 @@ GET /groups/{group-id}/planner/plans
 
 When you [create a new plan](../api/planner-post-plans.md), set the **container** property on a plan object to make a group its container. Plans must be contained by a supported resource.
 
->**Note:** The user who is creating the plan must be a member of the group that will contain the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
+>**Note:** The user who creates the plan must be a member of the group that contains the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you aren't added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
+### Container type: Planner task
+
+The `plannerTask` container type supports plans to be contained by a Planner task. Plans contained by a Planner task are deleted when the task is deleted.
+
+To [create a new plan](../api/planner-post-plans.md) in the container of a Planner task, set the **container** property on a [plan](plannerplan.md) object with **type** set to `plannerTask`, and set **id** to the ID of the Planner task.
+
+```json
+{
+    "container": {
+        "id": "{task-id}",
+        "type": "plannerTask"
+    }
+}
+```
+
+Alternatively, you can specify the URL for a Planner task.
+
+```json
+{
+    "container": {
+        "url": "https://graph.microsoft.com/beta/planner/tasks/{task-id}"
+    }
+}
+```
+
+### Container type: Teams channel
+
+The `teamsChannel` container type supports plans created in shared channels in Teams, where the channel is the container for the plan. Plans that are pinned in shared channels are deleted when the channel is deleted.
+
+To [create a new plan](../api/planner-post-plans.md) in the container of a Teams channel, set the **container** property on a [plan](plannerplan.md) object with **type** as `teamsChannel`, and the **id** should be formatted as "{team-id}/channels/{channel-id}".
+
+```json
+{
+    "container": {
+        "id": "{team-id}/channels/{channel-id}",
+        "type": "teamsChannel"
+    }
+}
+```
+
+Alternatively, you can specify the URL for a shared channel in Teams.
+
+```json
+{
+    "container": {
+        "url": "https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}"
+    }
+}
+```
 
 ### Container type: User
 

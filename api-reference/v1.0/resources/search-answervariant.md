@@ -1,17 +1,18 @@
 ---
 title: "answerVariant resource type"
-description: "Represents an answer variant that can be used to change certain properties of a search answer based on country or platform."
+description: "Represents an answer variant that can be used to change certain properties of a search answer based on country/region or platform."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # answerVariant resource type
 
 Namespace: microsoft.graph.search
 
-Represents an answer variant that can be used to change certain properties of a search answer based on country or platform.
+Represents an answer variant that can be used to change certain properties of a search answer based on country/region or platform.
 
 ## Properties
 

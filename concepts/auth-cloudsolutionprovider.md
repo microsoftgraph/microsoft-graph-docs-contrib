@@ -4,7 +4,8 @@ description: "This article describes how to enable application access to partner
 author: koravvams
 ms.localizationpriority: high
 ms.subservice: "partner-customer-administration"
-ms.custom: graphiamtop20, has-azure-ad-ps-ref
+ms.custom: graphiamtop20, no-azure-ad-ps-ref
+ms.date: 02/19/2025
 ---
 
 # Call Microsoft Graph from a Cloud Solution Provider application
@@ -15,7 +16,6 @@ This article describes how to enable application access to partner-managed custo
 
 > [!IMPORTANT]
 > Calling Microsoft Graph from a CSP application is only supported for directory resources (such as **user**, **group**,**device**, **organization**) and [Intune](/graph/api/resources/intune-graph-overview) resources.
-> 
 
 ## What is a partner-managed application
 
@@ -23,9 +23,9 @@ The CSP program enables Microsoft's partners to resell and manage Microsoft Onli
 
 Additionally, as a partner developer, you can build a **partner-managed app** to manage your customers' Microsoft services. Partner-managed apps are often called *preconsented* apps because all your customers are automatically preconsented for your partner-managed apps. This means when a user from one of your customer tenants uses one of your partner-managed apps, the user can use it without being prompted to give consent. Partner-managed apps also inherit Delegated Admin Privileges, so your partner agents can also get privileged access to your customers through your partner-managed application.
 
-## How to set-up a partner-managed application
+## How to set up a partner-managed application
 
-An application is viewed as *partner-managed* when it is granted elevated permissions to access your customers' data.
+An application is *partner-managed* when it has elevated permissions to access customer data.
 
 > **Note:** Partner-managed apps can *only* be configured on Partner tenants, and in order to manage customer tenant resources, partner-managed apps **must** be configured as **multi-tenant applications**.
 
@@ -38,34 +38,32 @@ The initial steps required here follow most of the same steps used to register a
 
 ### Preconsent your app for all your customers
 
-Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the *Adminagents* group in your Partner tenant, using [Azure AD PowerShell V2](https://www.powershellgallery.com/packages/AzureAD) or [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation). Follow these steps to find the *Adminagents* group, the **servicePrincipal** and add it to the group.
+Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the *Adminagents* group in your Partner tenant, using [Microsoft Entra PowerShell](/powershell/entra-powershell/installation) or [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation). Follow these steps to find the *Adminagents* group, the **servicePrincipal** and add it to the group.
 
-[!INCLUDE [Azure AD PowerShell deprecation note](~/../api-reference/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
-
-# [Azure AD PowerShell](#tab/azuread)
+# [Microsoft Entra PowerShell](#tab/entraps)
 
 1. Open a PowerShell session and connect to your partner tenant by entering your admin credentials into the sign-in window.
 
     ```PowerShell
-    Connect-AzureAd
+    Connect-Entra
     ```
 
 2. Find the group that represents the *Adminagents*.
 
     ```PowerShell
-    $group = Get-AzureADGroup -Filter "displayName eq 'Adminagents'"
+    $group = Get-EntraGroup -Filter "displayName eq 'Adminagents'"
     ```
 
 3. Find the service principal that has the same *appId* as your app.
 
     ```PowerShell
-    $sp = Get-AzureADServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
+    $sp = Get-EntraServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
     ```
 
 4. Finally, add the service principal to the *Adminagents* group.
 
     ```PowerShell
-    Add-AzureADGroupMember -ObjectId $group.ObjectId -RefObjectId $sp.ObjectId
+    Add-EntraGroupMember -GroupId $group.Id -MemberId $sp.Id
     ```
 
 # [Microsoft Graph PowerShell](#tab/graphpowershell)
@@ -93,6 +91,7 @@ Finally grant your partner-managed app those configured permissions for all your
     ```PowerShell
     New-MgGroupMember -GroupId $group.Id -DirectoryObjectId $sp.Id
     ```
+
 ----
 
 ## Token acquisition flows
@@ -127,15 +126,16 @@ This is a standard [authorization code grant flow](/azure/active-directory/devel
     ```
 
 ## Register your app in the regions you support
+
 <a name="region"></a>
 
-CSP customer engagement is currently limited to a single region. Partner-managed applications carry the same limitation. This means you must have a separate tenant for each region you sell in. For example, if your partner-managed app is registered in a tenant in the US but your customer is in the EU – the partner-managed app will not work.  Each of your regional partner tenants must maintain their own set of partner-managed apps to manage customers within the same region. This might require additional logic in your app (prior to sign-in) to get your customers' sign-in username to decide which region-specific partner-managed app identity to use, to serve the user.
+CSP customer engagement is currently limited to a single region. Partner-managed applications carry the same limitation. This means you must have a separate tenant for each region you sell in. For example, if your partner-managed app is registered in a tenant in the US but your customer is in the EU, the partner-managed app doesn't work. Each of your regional partner tenants must maintain their own set of partner-managed apps to manage customers within the same region. This might require additional logic in your app (prior to sign-in) to get your customers' sign-in username to decide which region-specific partner-managed app identity to use, to serve the user.
 
 ## Calling Microsoft Graph immediately after customer creation
 
-When you create a new customer using the [Partner Center API](https://partnercenter.microsoft.com/partner/developer), a new customer tenant gets created. Additionally, a partner relationship also gets created, which makes you the partner of record for this new customer tenant. This partner relationship can take up to 3 minutes to propagate to the new customer tenant. If your app calls Microsoft Graph straight after creation, your app will likely receive an access denied error. A similar delay may be experienced when an existing customer accepts your invitation. This is because preconsent relies on the partner relationship being present in the customer tenant.
+When you create a new customer using the [Partner Center API](/partner-center/developer/create-a-customer), a new customer tenant gets created. Additionally, a partner relationship also gets created, which makes you the partner of record for this new customer tenant. This partner relationship can take up to three minutes to propagate to the new customer tenant. If your app calls Microsoft Graph straight after creation, your app will likely receive an access denied error. A similar delay might be experienced when an existing customer accepts your invitation. This is because preconsent relies on the partner relationship being present in the customer tenant.
 
-To avoid this problem, we recommend that your partner app should wait **three minutes** after customer creation before calling Microsoft Entra ID to acquire a token (to call Microsoft Graph). This should cover most cases. 
+To avoid this problem, we recommend that your partner app should wait **three minutes** after customer creation before calling Microsoft Entra ID to acquire a token (to call Microsoft Graph). This should cover most cases.
 However, if after waiting three minutes you still receive an authorization error, please wait an extra 60 seconds and try again.
 
-> **Note:** On the retry, you must acquire a new access token from Microsoft Entra ID, before calling Microsoft Graph.  Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an hour and won't contain the pre-consented permission claims.
+> **Note:** On the retry, you must acquire a new access token from Microsoft Entra ID, before calling Microsoft Graph. Calling Microsoft Graph with the access token you already have doesn't work, because the access token is good for an hour and doesn't contain the pre-consented permission claims.

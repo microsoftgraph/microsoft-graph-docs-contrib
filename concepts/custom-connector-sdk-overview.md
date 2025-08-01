@@ -1,20 +1,21 @@
 ---
-title: "Microsoft Graph connectors SDK overview"
+title: "Microsoft 365 Copilot  connectors SDK overview"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Use the Microsoft Graph connectors SDK to create custom Microsoft Graph connectors."
+description: "Use the Microsoft 365 Copilot connectors SDK to create custom Copilot connectors."
+ms.date: 11/07/2024
 ---
 
-# Microsoft Graph connectors SDK overview
+# Copilot connectors SDK overview
 
-The Microsoft Graph connectors SDK simplifies the process of building high-quality, efficient, and resilient connectors for data source that don't have a prebuilt connector, but that you want to index into Microsoft Graph.
+The Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) SDK simplifies the process of building high-quality, efficient, and resilient connectors for data source that don't have a prebuilt connector, but that you want to index into Microsoft Graph.
 
 The SDK includes the framework and contract components to help you write the code and the tools to test your code.
 
-The connectors SDK enables you to create custom Microsoft Graph connectors directly within the Visual Studio integrated development environment (IDE). It provides everything you need to build, debug, and deploy your custom connector.
+The connectors SDK enables you to create custom Copilot connectors directly within the Visual Studio integrated development environment (IDE). It provides everything you need to build, debug, and deploy your custom connector.
 
 Items ingested through connections built with the SDK consume your item quota. To learn more about how to determine how much item quota you have and how to purchase more quota, see [licensing requirements and pricing](/microsoftsearch/licensing). 
 
@@ -59,7 +60,7 @@ It includes the following capabilities:
 > - Graph-based data source traversal during crawls; for example, traversing through folder structures.
 > - The ability to manage search permissions based on access control from your data source.
 
-You can get started in C# with our [sample connectors](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/C%23%20samples) or in other supported languages using the contracts from the [Microsoft Graph connectors SDK page in GitHub](https://github.com/microsoftgraph/msgraph-connectors-sdk).
+You can get started in C# with our [sample connectors](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/C%23%20samples) or in other supported languages using the contracts from the [Copilot connectors SDK page in GitHub](https://github.com/microsoftgraph/msgraph-connectors-sdk).
 
 ## Next steps
 

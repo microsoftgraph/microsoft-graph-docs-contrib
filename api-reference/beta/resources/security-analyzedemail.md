@@ -5,6 +5,7 @@ author: "ajaj-shaikh"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # analyzedEmail resource type
@@ -27,16 +28,19 @@ Contains metadata for email messages that are analyzed for security threats.
 |:---|:---|:---|
 |alertIds|String collection| A collection of values that contain the IDs of any alerts associated with the email. |
 |attachments|[microsoft.graph.security.analyzedEmailAttachment](../resources/security-analyzedemailattachment.md) collection|A collection of the attachments in the email.|
-|attachmentsCount|Int32|The number of attachments in the email.|
 |authenticationDetails|[microsoft.graph.security.analyzedEmailAuthenticationDetail](../resources/security-analyzedemailauthenticationdetail.md)| The authentication details associated with the email.|
 |bulkComplaintLevel|String|The bulk complaint level of the email. A higher level is more likely to be spam.|
+|clientType|String|Shows the type of client that sent the message (for example, REST).|
 |contexts|String collection|Provides context of the email.  |
 |detectionMethods|String collection|The methods of detection used.|
 |directionality|[microsoft.graph.security.antispamDirectionality](#antispamdirectionality-values)|The direction of the emails. The possible values are: `unknown`, `inbound`, `outbound`, `intraOrg`, `unknownFutureValue`.|
 |distributionList|String|The distribution list details to which the email was sent.|
+|dlpRules|[microsoft.graph.security.analyzedEmailDlpRuleInfo](../resources/security-analyzedemaildlpruleinfo.md) collection|Data loss prevention rules configured in purview.|
 |emailClusterId|String|The identifier for the group of similar emails clustered based on heuristic analysis of their content.|
 |exchangeTransportRules|[microsoft.graph.security.analyzedEmailExchangeTransportRuleInfo](../resources/security-analyzedemailexchangetransportruleinfo.md) collection|The name of the Exchange transport rules (ETRs) associated with the email.|
+|forwardingDetail|String|Email smtp forwarding details.|
 |id|String|The ID of an analyzed email.|
+|inboundConnectorFormattedName|String|Custom instructions name that defines organizational mail flow and how the email was routed.|
 |internetMessageId|String|A public-facing identifier for the email that is sent. The message ID is in the format specified by [RFC2822](https://www.rfc-editor.org/rfc/rfc2822).|
 |language|String|The detected language of the email content.|
 |latestDelivery|[microsoft.graph.security.analyzedEmailDeliveryDetail](../resources/security-analyzedemaildeliverydetail.md)|The latest delivery details of the email.|
@@ -47,6 +51,9 @@ Contains metadata for email messages that are analyzed for security threats.
 |phishConfidenceLevel|String|The phish confidence level associated with the email|
 |policy|String|The action policy that took effect.|
 |policyAction|String|The action taken on the email based on the configured policy.|
+|policyType|String|Type of policy configured that defines the delivery action on email.|
+|primaryOverrideSource|String|Shows the organization or user setting that altered the intended delivery location of the message (allowed instead of blocked, or blocked instead of allowed).|
+|recipientDetail|[microsoft.graph.security.analyzedEmailRecipientDetail](../resources/security-analyzedemailrecipientdetail.md)|Details of the recipients.|
 |recipientEmailAddress|String|Contains the email address of the recipient.|
 |returnPath|String|A field that indicates where and how bounced emails are processed.|
 |senderDetail|[microsoft.graph.security.analyzedEmailSenderDetail](../resources/security-analyzedemailsenderdetail.md)|Sender details of the email.|
@@ -54,8 +61,9 @@ Contains metadata for email messages that are analyzed for security threats.
 |spamConfidenceLevel|String|Spam confidence of the email.|
 |subject|String|Subject of the email.|
 |threatTypes|[microsoft.graph.security.threatType](#threattype-values) collection|Indicates the threat types. The possible values are: `unknown`, `spam`, `malware`, `phish`, `none`, `unknownFutureValue`.|
+|timelineEvents|[microsoft.graph.security.timelineEvent](../resources/security-timelineevent.md) collection|Delivery and post-delivery events that happened to the email.|
+|threatDetectionDetails|[microsoft.graph.security.threatDetectionDetail](../resources/security-threatdetectiondetail.md) collection|Information about threats detected in the email.|
 |urls|[microsoft.graph.security.analyzedEmailUrl](../resources/security-analyzedemailurl.md) collection|A collection of the URLs in the email.|
-|urlsCount|Int32|The number of URLs in the email.|
 
 ### antispamDirectionality values
 
@@ -131,13 +139,11 @@ The following JSON representation shows the resource type.
   "latestDelivery": {
     "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
   },
-  "attachmentsCount": "Integer",
   "attachments": [
     {
       "@odata.type": "microsoft.graph.security.analyzedEmailAttachment"
     }
   ],
-  "urlsCount": "Integer",
   "urls": [
     {
       "@odata.type": "microsoft.graph.security.analyzedEmailUrl"
@@ -173,6 +179,29 @@ The following JSON representation shows the resource type.
   "bulkComplaintLevel": "String",
   "emailClusterId": "String",
   "policyAction": "String",
-  "policy": "String"
+  "policy": "String",
+  "timelineEvents": [
+    {
+      "@odata.type": "microsoft.graph.security.timelineEvent"
+    }
+  ],
+  "threatDetectionDetails": [
+    {
+      "@odata.type": "microsoft.graph.security.threatDetectionDetail"
+    }
+  ],
+  "primaryOverrideSource": "String",
+  "inboundConnectorFormattedName": "String",
+  "policyType": "String",
+  "clientType": "String",
+  "dlpRules": [
+    {
+      "@odata.type": "microsoft.graph.security.analyzedEmailDlpRuleInfo"
+    }
+  ],
+  "forwardingDetail": "String",
+  "recipientDetail": {
+    "@odata.type": "microsoft.graph.security.analyzedEmailRecipientDetail"
+  }
 }
 ```

@@ -1,10 +1,11 @@
 ---
 title: "Delete profile"
-description: "Delete profile."
+description: "Delete a profile object from a user's account."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # Delete profile
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [profile](../resources/profile.md) object from a user's account.
+Delete a [profile](../resources/profile.md) object from a user's account.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -66,10 +67,6 @@ DELETE https://graph.microsoft.com/beta/me/profile
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-profile-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-profile-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

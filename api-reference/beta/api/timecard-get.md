@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get timeCard
@@ -24,9 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timecard_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timecard-get-permissions.md)]
 
-> [!IMPORTANT]
-> When you use the Schedule.Read.All and Schedule.ReadWrite.All application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +41,7 @@ This method doesn't support [OData query parameters](/graph/query-parameters) to
 | Header       | Value |
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| MS-APP-ACTS-AS | The ID of the user on behalf of whom the app is acting. Required when you use the application permission scope. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. The `MS-APP-ACTS-AS` header is deprecated and no longer required with application tokens.|
 
 ## Request body
 Don't supply a request body for this method.
@@ -70,10 +68,6 @@ GET https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/timecard-get-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/timecard-get-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -137,6 +131,7 @@ Content-type: application/json
     "clockInEvent": {
         "dateTime": "2021-05-27T22:58:41.327Z",
         "atApprovedLocation": null,
+        "isAtApprovedLocation": null,
         "notes": {
             "contentType": "text",
             "content": "clock in notes"
@@ -145,6 +140,7 @@ Content-type: application/json
     "clockOutEvent": {
         "dateTime": "2021-05-27T23:01:46.205Z",
         "atApprovedLocation": null,
+        "isAtApprovedLocation": null,
         "notes": {
             "contentType": "text",
             "content": "clock out smaple notes"
@@ -157,6 +153,7 @@ Content-type: application/json
             "start": {
                 "dateTime": "2021-05-27T22:59:59.328Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "start break smaple notes"
@@ -165,6 +162,7 @@ Content-type: application/json
             "end": {
                 "dateTime": "2021-05-27T23:01:10.205Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "end break smaple notes"
@@ -176,6 +174,7 @@ Content-type: application/json
         "clockInEvent": {
             "dateTime": "2021-05-27T22:58:41.327Z",
             "atApprovedLocation": null,
+            "isAtApprovedLocation": null,
             "notes": {
                 "contentType": "text",
                 "content": "clock in notes"
@@ -184,6 +183,7 @@ Content-type: application/json
         "clockOutEvent": {
             "dateTime": "2021-05-27T23:01:46.205Z",
             "atApprovedLocation": null,
+            "isAtApprovedLocation": null,
             "notes": {
                 "contentType": "text",
                 "content": "clock out smaple notes"
@@ -196,6 +196,7 @@ Content-type: application/json
                 "start": {
                     "dateTime": "2021-05-27T22:59:59.328Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "start break smaple notes"
@@ -204,6 +205,7 @@ Content-type: application/json
                 "end": {
                     "dateTime": "2021-05-27T23:01:10.205Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "end break smaple notes"

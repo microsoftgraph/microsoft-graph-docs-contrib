@@ -67,6 +67,28 @@ var requestBody = new TenantAppManagementPolicy
 				MaxLifetime = null,
 			},
 		},
+		IdentifierUris = new IdentifierUriConfiguration
+		{
+			NonDefaultUriAddition = new IdentifierUriRestriction
+			{
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2024-01-01T10:37:00Z"),
+				ExcludeAppsReceivingV2Tokens = true,
+				ExcludeSaml = true,
+				ExcludeActors = new AppManagementPolicyActorExemptions
+				{
+					CustomSecurityAttributes = new List<CustomSecurityAttributeExemption>
+					{
+						new CustomSecurityAttributeStringValueExemption
+						{
+							OdataType = "microsoft.graph.customSecurityAttributeStringValueExemption",
+							Id = "PolicyExemptions_AppManagementExemption",
+							Operator = CustomSecurityAttributeComparisonOperator.Equals,
+							Value = "ExemptFromIdentifierUriAdditionRestriction",
+						},
+					},
+				},
+			},
+		},
 	},
 };
 

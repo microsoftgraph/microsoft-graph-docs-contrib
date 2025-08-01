@@ -74,14 +74,5 @@ Microsoft Entra ID Governance capabilities are available as part of different su
 
 ## Related content
 
-+ [What is Microsoft Entra ID Governance?](/azure/active-directory/governance/identity-governance-overview)
-+ [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json)
-
-
-<!-- {
-  "type": "#page.annotation",
-  "description": "",
-  "keywords": "",
-  "section": "documentation",
-  "suppressions": []
-} -->
+- [What is Microsoft Entra ID Governance?](/azure/active-directory/governance/identity-governance-overview)
+- [Plan new governance scenarios for business partners and external users](/entra/id-governance/scenarios/govern-guest-lifecycle-new-project)

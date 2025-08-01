@@ -5,6 +5,7 @@ description: "Contains data that validates column values."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 03/12/2024
 ---
 
 # columnValidation resource type

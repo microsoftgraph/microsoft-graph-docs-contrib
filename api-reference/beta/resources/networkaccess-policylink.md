@@ -5,6 +5,7 @@ author: "Moti-ba"
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # policyLink resource type
@@ -13,7 +14,11 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type from which the [forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) and [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) resource types are derived.
+This is an abstract type from which the following resource types are derived:
+- [forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md)
+- [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md)
+- [threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md)
+- [tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md)
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "psignoret"
+ms.date: 04/03/2024
 ---
 
 # permissionScope resource type

@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "odata.maxpagesize=2")
 
-configuration := &graphusers.ItemContactFoldersDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ContactFoldersDeltaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 

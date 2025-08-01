@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new GetRawRemoteConnectionReportsPostRequestBody();
 $requestBody->setFilter('ActivityId eq \'cb6ad4c4-8a17-4245-a644-e4436b1ee204\'');
-$requestBody->setSelect(['RoundTripTimeInMs', 'AvailableBandwidthInMBps', 'SignInDateTime', 	]);
+$requestBody->setSelect(['RoundTripTimeInMs', 'AvailableBandwidthInMbps', 'SignInDateTime', 	]);
 $requestBody->setSkip(0);
 $requestBody->setTop(50);
 

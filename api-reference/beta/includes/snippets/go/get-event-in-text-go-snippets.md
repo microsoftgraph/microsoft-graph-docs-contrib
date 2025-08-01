@@ -19,10 +19,10 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.body-content-type=\"text\"")
 
-requestParameters := &graphusers.ItemEventItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.EventsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"subject","body","bodyPreview"},
 }
-configuration := &graphusers.ItemEventItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.EventsItemRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

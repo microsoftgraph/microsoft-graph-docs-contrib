@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # callTranscriptEventMessageDetail resource type
@@ -25,6 +26,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |callId|String|Unique identifier of the call.|
 |callTranscriptICalUid|String|Unique identifier for a call transcript.|
 |meetingOrganizer|[identitySet](../resources/identityset.md)|The organizer of the meeting.|
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

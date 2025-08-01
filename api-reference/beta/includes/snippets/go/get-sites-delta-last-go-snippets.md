@@ -18,10 +18,10 @@ import (
 
 requestToken := "1230919asd190410jlka"
 
-requestParameters := &graphsites.SitesDeltaWithRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.SitesDeltaRequestBuilderGetQueryParameters{
 	Token: &requestToken,
 }
-configuration := &graphsites.SitesDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SitesDeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -6,9 +6,12 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: conceptualPageType
+ms.date: 05/13/2024
 ---
 
 # Discover, remediate, and monitor permissions in multicloud infrastructures using permissions management APIs (preview)
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 [Microsoft Entra Permissions Management](https://www.microsoft.com/en/security/business/identity-access/microsoft-entra-permissions-management) provides comprehensive visibility into permissions assigned to all identities across multiple cloud infrastructures such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). The permissions management APIs in Microsoft Graph provide the programmatic way to discover, manage, and monitor these permissions in your multicloud infrastructure.
 
@@ -107,10 +110,7 @@ For more information, see [Permissions Management roles and permissions levels](
 - [What's Microsoft Entra Permissions Management](/entra/permissions-management/overview)
 - [Quickstart guide to Microsoft Entra Permissions Management](/entra/permissions-management/permissions-management-quickstart-guide)
 - [Microsoft Entra Permissions Management operations reference](/entra/architecture/permissions-manage-ops-guide-intro)
-- Microsoft Entra permissions management API operations quick references:
-  - [For AWS authorization systems](/graph/permissions-management-how-to-authorization-system-aws)
-  - [For Azure authorization systems](/graph/permissions-management-how-to-authorization-system-azure)
-  - [For GCP authorization systems](/graph/permissions-management-how-to-authorization-system-gcp)
+- [Quick reference: Permissions Management API operations for Azure, AWS, and GCP authorization systems](/graph/permissions-management-howto)
 
 <!-- {
   "type": "#page.annotation",

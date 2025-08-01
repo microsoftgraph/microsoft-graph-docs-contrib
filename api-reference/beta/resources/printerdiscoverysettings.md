@@ -1,10 +1,11 @@
 ---
-title: printerDiscoverySettings resource type
-description: Represents tenant-wide printer discovery settings for the Universal Print service.
-author: JuliusShanMS
+title: "printerDiscoverySettings resource type"
+description: "Represents tenant-wide printer discovery settings for the Universal Print service."
+author: "JuliusShanMS"
 ms.localizationpriority: medium
-ms.subservice: universal-print
+ms.subservice: "universal-print"
 doc_type: resourcePageType
+ms.date: "03/06/2024"
 ---
 
 # printerDiscoverySettings resource type
@@ -14,6 +15,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents tenant-wide printer discovery settings for the Universal Print service.
+
+> [!NOTE]
+> **AirPrint**, **Mac**, and **macOS** are trademarks of Apple, Inc., registered in the US and other countries/regions.
 
 ## Properties
 |Property|Type|Description|
@@ -33,12 +37,6 @@ The following JSON shows a representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.printerDiscoverySettings",
-  "airPrint": {
-    "@odata.type": "microsoft.graph.airPrintSettings"
-  }
+  "airPrint": {"@odata.type": "microsoft.graph.airPrintSettings"}
 }
 ```
-
-### Credit notice
-
-**AirPrint**, **Mac**, and **macOS** are trademarks of Apple, Inc., registered in the US and other countries/regions.

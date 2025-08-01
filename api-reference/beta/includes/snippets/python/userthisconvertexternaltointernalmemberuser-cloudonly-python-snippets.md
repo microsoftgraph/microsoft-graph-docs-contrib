@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.users.item.convert_external_to_internal_member_user.convert_external_to_internal_member_user_post_request_body import ConvertExternalToInternalMemberUserPostRequestBody
 from msgraph_beta.generated.models.password_profile import PasswordProfile
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ConvertExternalToInternalMemberUserPostRequestBody(
 	user_principal_name = "AdeleVance@contoso.com",
 	password_profile = PasswordProfile(

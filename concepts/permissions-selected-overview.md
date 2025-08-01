@@ -7,6 +7,7 @@ ms.subservice: sharepoint
 ms.topic: concept-article
 scenarios: getting-started
 #Customer intent: As a developer integrating with Microsoft Graph, I want to learn about using Selected permissions to access SharePoint and OneDrive resources in the least privileged way.
+ms.date: 11/07/2024
 ---
 
 # Overview of Selected permissions in OneDrive and SharePoint
@@ -88,10 +89,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/create-permission-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/create-permission-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

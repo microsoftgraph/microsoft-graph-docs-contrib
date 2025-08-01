@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphdevicemanagement.DeviceManagementVirtualEndpointOnPremisesConnectionItemRequestBuilderGetQueryParameters{
+requestParameters := &graphdevicemanagement.VirtualEndpointOnPremisesConnectionsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","displayName","healthCheckStatus","healthCheckStatusDetail","inUse"},
 }
-configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointOnPremisesConnectionItemRequestBuilderGetRequestConfiguration{
+configuration := &graphdevicemanagement.VirtualEndpointOnPremisesConnectionsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

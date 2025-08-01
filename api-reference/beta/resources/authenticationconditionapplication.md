@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: "Linked applications"
+ms.date: 08/05/2024
 ---
 
 # authenticationConditionApplication resource type

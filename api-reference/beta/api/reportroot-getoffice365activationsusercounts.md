@@ -1,10 +1,11 @@
 ---
 title: "reportRoot: getOffice365ActivationsUserCounts"
-description: "Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers."
+description: "Get the count of users that are enabled and the ones that activated the Office subscription on desktop or devices or shared computers."
 ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # reportRoot: getOffice365ActivationsUserCounts
@@ -13,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.
+Get the count of users that are enabled and the ones that activated the Office subscription on desktop or devices or shared computers.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
+> **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft Office activations](https://support.office.com/office/activate-office-5bd38f38-db92-448b-a982-ad170b1e187e).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -26,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_getoffice365activationsusercounts" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getoffice365activationsusercounts-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must assign the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -52,7 +53,7 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
 The CSV file has the following headers for columns.
 
@@ -70,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a JSON object in
 
 ### CSV
 
-The following is an example that outputs CSV.
+The following example outputs CSV.
 
 #### Request
 
@@ -99,7 +100,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that downloads will have the following schema.
+Follow the 302 redirection and the CSV file that downloads contains the following schema.
 
 <!-- {
   "blockType": "response",

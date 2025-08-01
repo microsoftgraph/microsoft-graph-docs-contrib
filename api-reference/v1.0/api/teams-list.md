@@ -5,6 +5,7 @@ author: "pruthvi0105"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List teams
@@ -54,7 +55,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,10 +68,6 @@ GET https://graph.microsoft.com/v1.0/teams
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teams-in-org-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-teams-in-org-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,11 +96,8 @@ GET https://graph.microsoft.com/v1.0/teams
 
 ---
 
----
-
 #### Response
-Here's an example  of a response.
-
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -140,7 +134,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -154,10 +148,6 @@ GET https://graph.microsoft.com/v1.0/teams?$filter=startswith(displayName, 'A')&
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teams-filter-top-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-teams-filter-top-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -186,11 +176,9 @@ GET https://graph.microsoft.com/v1.0/teams?$filter=startswith(displayName, 'A')&
 
 ---
 
----
-
 #### Response
 
-Here's an example  of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -223,7 +211,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -236,10 +224,6 @@ GET https://graph.microsoft.com/v1.0/teams?$filter=displayName eq 'A Contoso Tea
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teams-filter-select-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-teams-filter-select-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -271,7 +255,7 @@ GET https://graph.microsoft.com/v1.0/teams?$filter=displayName eq 'A Contoso Tea
 ---
 
 #### Response
-Here's an example  of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

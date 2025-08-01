@@ -5,6 +5,7 @@ author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: resourcePageType
+ms.date: 05/21/2024
 ---
 
 # partnerSecurityAlert resource type

@@ -5,6 +5,7 @@ author: "ishatyagiit"
 ms.localizationpriority: medium
 ms.subservice: "viva-goals"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List exportJobs
@@ -66,10 +67,6 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-goalsexportjob1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-goalsexportjob1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -140,10 +137,6 @@ GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-goalsexportjob2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-goalsexportjob2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-goalsexportjob2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -210,10 +203,6 @@ GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-goalsexportjob3-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-goalsexportjob3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

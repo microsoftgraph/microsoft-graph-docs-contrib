@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.users.item.planner.planner_request_builder import PlannerRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
@@ -12,9 +13,7 @@ from msgraph_beta.generated.models.planner_favorite_plan_reference_collection im
 from msgraph_beta.generated.models.planner_favorite_plan_reference import PlannerFavoritePlanReference
 from msgraph_beta.generated.models.planner_recent_plan_reference_collection import PlannerRecentPlanReferenceCollection
 from msgraph_beta.generated.models.planner_recent_plan_reference import PlannerRecentPlanReference
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = PlannerUser(
 	favorite_plan_references = PlannerFavoritePlanReferenceCollection(
 		additional_data = {

@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.ItemMessageItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.MessagesItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"extensions($filter=id eq 'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')"},
 }
-configuration := &graphusers.ItemMessageItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.MessagesItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

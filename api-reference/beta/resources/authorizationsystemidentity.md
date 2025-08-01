@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 04/17/2024
 ---
 
 # authorizationSystemIdentity resource type
@@ -13,6 +14,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 A container representing an identity in an authorization system.
 
@@ -61,3 +64,4 @@ The following JSON representation shows the resource type.
   "externalId": "String"
 }
 ```
+

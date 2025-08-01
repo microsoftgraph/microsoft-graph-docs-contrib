@@ -1,13 +1,14 @@
 ---
 title: Set employeeLeaveDateTime
-description: Configure the employeeLeaveDateTime property for a user using Microsoft Graph. 
+description: Configure the employeeLeaveDateTime property for a user using Microsoft Graph.
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
 ms.topic: how-to
-ms.date: 01/03/2024
+ms.date: 01/13/2025
+ms.custom: sfi-ga-blocked
 #Customer intent: As a developer integrating with Microsoft Graph, I want programmatically configure the employeeLeaveDateTime property for a user, so that I can trigger scheduled "leaver" workflows using Lifecycle Workflows.
 ---
 
@@ -25,19 +26,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|User.Read.All and User-LifeCycleInfo.ReadWrite.All|Not available.|
 
-For delegated scenarios, the admin must also have the Global Administrator [Microsoft Entra role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+For delegated scenarios, the admin must also have the Global Administrator [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 > [!NOTE]
 > This information is best updated via automation by using either an HR provisioning, Microsoft Entra Connect, or custom sync solution. For more information about this process, see [How to synchronize attributes for lifecycle workflows](/entra/id-governance/how-to-lifecycle-workflow-sync-attributes).
 
-## Request
+## Set the employeeLeaveDateTime property
 
-The following example configures September 30, 2022 at 23:59 as the date and time when the user will leave the organization.
+The following example configures September 30, 2022 at 23:59 as the date and time when the user will leave the organization. The request returns  `204 No Content` response code.
 
 # [HTTP](#tab/http)
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/df744d9e-2148-4922-88a8-633896c1e929
+PATCH https://graph.microsoft.com/v1.0/users/aaaaaaaa-bbbb-cccc-1111-222222222222
 
 {
     "employeeLeaveDateTime": "2022-09-30T23:59:59Z"
@@ -61,7 +62,19 @@ PATCH https://graph.microsoft.com/v1.0/users/df744d9e-2148-4922-88a8-633896c1e92
 
 ---
 
+## Reset the employeeLeaveDateTime property back to null
+
+The request returns a `204 No Content` response code.
+
+```http
+PATCH https://graph.microsoft.com/v1.0/users/aaaaaaaa-bbbb-cccc-1111-222222222222
+
+{
+    "employeeLeaveDateTime": null
+}
+```
+
 ## Related content
 
 - [Lifecycle Workflows API overview](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
-- [How to synchronize attributes for Lifecycle workflows](/azure/active-directory/governance/how-to-lifecycle-workflow-sync-attributes)
+- [Tutorial: How to synchronize attributes for Lifecycle workflows](/entra/id-governance/how-to-lifecycle-workflow-sync-attributes)

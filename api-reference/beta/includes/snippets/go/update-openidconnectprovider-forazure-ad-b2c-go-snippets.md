@@ -16,10 +16,8 @@ import (
 )
 
 requestBody := graphmodels.NewIdentityProviderBase()
-additionalData := map[string]interface{}{
-	"responseType" : "id_token", 
-}
-requestBody.SetAdditionalData(additionalData)
+responseType := graphmodels.ID_TOKEN_OPENIDCONNECTRESPONSETYPES 
+requestBody.SetResponseType(&responseType) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 identityProviders, err := graphClient.Identity().IdentityProviders().ByIdentityProviderBaseId("identityProviderBase-id").Patch(context.Background(), requestBody, nil)

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # synchronizationError resource type
@@ -23,6 +24,9 @@ Represents an error that occurred during the synchronization process.
 |code|String| The error code. For example, `AzureDirectoryB2BManagementPolicyCheckFailure`. |
 |message|String| The error message. For example, `Policy permitting auto-redemption of invitations not configured`.  |
 |tenantActionable|Boolean| The action to take to resolve the error. For example, `false`.|
+
+## Relationships
+None.
 
 ## JSON representation
 

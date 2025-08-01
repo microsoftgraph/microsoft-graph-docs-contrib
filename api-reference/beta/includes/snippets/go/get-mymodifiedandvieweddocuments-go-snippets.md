@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.ItemInsightsUsedRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.InsightsUsedRequestBuilderGetQueryParameters{
 	Orderby: [] string {"LastUsed/LastAccessedDateTime desc"},
 }
-configuration := &graphusers.ItemInsightsUsedRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.InsightsUsedRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

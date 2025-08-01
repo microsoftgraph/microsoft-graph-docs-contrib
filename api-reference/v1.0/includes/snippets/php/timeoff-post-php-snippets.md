@@ -14,19 +14,15 @@ use Microsoft\Graph\Generated\Models\ScheduleEntityTheme;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TimeOff();
-$requestBody->setUserId('c5d0c76b-80c4-481c-be50-923cd8d680a1');
+$requestBody->setUserId('aa162a04-bec6-4b81-ba99-96caa7b2b24d');
 $sharedTimeOff = new TimeOffItem();
-$sharedTimeOff->setTimeOffReasonId('TOR_891045ca-b5d2-406b-aa06-a3c8921245d7');
-$sharedTimeOff->setStartDateTime(new \DateTime('2019-03-11T07:00:00Z'));
-$sharedTimeOff->setEndDateTime(new \DateTime('2019-03-12T07:00:00Z'));
-$sharedTimeOff->setTheme(new ScheduleEntityTheme('white'));
+$sharedTimeOff->setTimeOffReasonId('TOR_29a5ba96-c7ef-4e76-bec6-055323746314');
+$sharedTimeOff->setStartDateTime(new \DateTime('2024-10-10T19:00:00Z'));
+$sharedTimeOff->setEndDateTime(new \DateTime('2024-10-10T20:00:00Z'));
+$sharedTimeOff->setTheme(new ScheduleEntityTheme('blue'));
 $requestBody->setSharedTimeOff($sharedTimeOff);
-$draftTimeOff = new TimeOffItem();
-$draftTimeOff->setTimeOffReasonId('TOR_891045ca-b5d2-406b-aa06-a3c8921245d7');
-$draftTimeOff->setStartDateTime(new \DateTime('2019-03-11T07:00:00Z'));
-$draftTimeOff->setEndDateTime(new \DateTime('2019-03-12T07:00:00Z'));
-$draftTimeOff->setTheme(new ScheduleEntityTheme('pink'));
-$requestBody->setDraftTimeOff($draftTimeOff);
+$requestBody->setDraftTimeOff(null);
+$requestBody->setIsStagedForDeletion(false);
 
 $result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timesOff()->post($requestBody)->wait();
 

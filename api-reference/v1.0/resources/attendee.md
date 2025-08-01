@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "iamgirishck"
 ms.subservice: calendar
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # attendee resource type

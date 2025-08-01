@@ -30,6 +30,8 @@ call.setRequestedModalities(requestedModalities);
 OutgoingCallOptions callOptions = new OutgoingCallOptions();
 callOptions.setOdataType("#microsoft.graph.outgoingCallOptions");
 callOptions.setIsContentSharingNotificationEnabled(true);
+callOptions.setIsDeltaRosterEnabled(true);
+callOptions.setIsInteractiveRosterEnabled(true);
 call.setCallOptions(callOptions);
 ServiceHostedMediaConfig mediaConfig = new ServiceHostedMediaConfig();
 mediaConfig.setOdataType("#microsoft.graph.serviceHostedMediaConfig");

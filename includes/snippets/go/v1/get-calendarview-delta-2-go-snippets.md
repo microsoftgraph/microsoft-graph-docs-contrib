@@ -22,10 +22,10 @@ headers.Add("Prefer", "odata.maxpagesize=2")
 
 requestSkiptoken := "R0usmcCM996atia_s"
 
-requestParameters := &graphusers.ItemCalendarViewDeltaWithRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.CalendarViewDeltaRequestBuilderGetQueryParameters{
 	Skiptoken: &requestSkiptoken,
 }
-configuration := &graphusers.ItemCalendarViewDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.CalendarViewDeltaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

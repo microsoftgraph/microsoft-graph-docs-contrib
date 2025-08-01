@@ -20,12 +20,12 @@ requestSearch := "\"subject/commonName:microsoft.com\""
 requestCount := true
 requestTop := int32(1)
 
-requestParameters := &graphsecurity.SecurityThreatIntelligenceSslCertificatesRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.ThreatIntelligenceSslCertificatesRequestBuilderGetQueryParameters{
 	Search: &requestSearch,
 	Count: &requestCount,
 	Top: &requestTop,
 }
-configuration := &graphsecurity.SecurityThreatIntelligenceSslCertificatesRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.ThreatIntelligenceSslCertificatesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

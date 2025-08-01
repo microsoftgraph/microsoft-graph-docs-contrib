@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jasonbro"
 ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 04/17/2024
 ---
 # regionalFormatOverrides resource type
 
@@ -18,13 +19,16 @@ A collection of strings representing formatting overrides for calendars, dates, 
 
 |Property             |Type                 	|Description                                                    |
 |---------------------|-------------------------|---------------------------------------------------------------|
-|calendar             |String               	|The calendar to use, e.g., Gregorian Calendar.<br><br>Returned by default.|                   
-|firstDayOfWeek       |microsoft.graph.dayOfWeek|The first day of the week to use, e.g., Sunday.<br><br>Returned by default.|
+|calendar             |String               	|The calendar to use; for example, Gregorian Calendar.<br><br>Returned by default.|                   
+|firstDayOfWeek       |microsoft.graph.dayOfWeek|The first day of the week to use; for example, Sunday.<br><br>Returned by default.|
 |shortDateFormat      |String               	|The short date time format to be used for displaying dates.<br><br>Returned by default.|
 |longDateFormat       |String               	|The long date time format to be used for displaying dates.<br><br>Returned by default.|
 |shortTimeFormat      |String               	|The short time format to be used for displaying time.<br><br>Returned by default.|
 |longTimeFormat       |String               	|The long time format to be used for displaying time.<br><br>Returned by default.|
 |timeZone             |String               	|The timezone to be used for displaying time.<br><br>Returned by default.|
+
+## Relationships
+None.
 
 ## JSON representation
 

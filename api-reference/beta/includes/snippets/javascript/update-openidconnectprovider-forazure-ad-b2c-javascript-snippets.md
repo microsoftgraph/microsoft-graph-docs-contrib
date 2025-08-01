@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const identityProviderBase = {
-  '@odata.type': '#microsoft.graph.socialIdentityProvider',
+  '@odata.type': '#microsoft.graph.openIdConnectIdentityProvider',
   responseType: 'id_token'
 };
 
-await client.api('/identity/identityProviders/OIDC-V1-Nam_AD_Test-3e393390-ed2d-4794-97f6-5c999ccc61f7')
+await client.api('/identity/identityProviders/Contoso-OIDC-00001111-aaaa-2222-bbbb-3333cccc4444')
 	.version('beta')
 	.update(identityProviderBase);
 

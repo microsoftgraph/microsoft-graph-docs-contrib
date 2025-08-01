@@ -18,10 +18,10 @@ import (
 
 requestForcedelete := "true"
 
-requestParameters := &graphcompliance.ComplianceEdiscoveryCaseItemTagItemRequestBuilderDeleteQueryParameters{
+requestParameters := &graphcompliance.EdiscoveryCasesItemTagsItemRequestBuilderDeleteQueryParameters{
 	Forcedelete: &requestForcedelete,
 }
-configuration := &graphcompliance.ComplianceEdiscoveryCaseItemTagItemRequestBuilderDeleteRequestConfiguration{
+configuration := &graphcompliance.EdiscoveryCasesItemTagsItemRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

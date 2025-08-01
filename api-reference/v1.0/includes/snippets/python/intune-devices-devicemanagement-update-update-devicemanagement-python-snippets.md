@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.device_management import DeviceManagement
 from msgraph.generated.models.device_management_subscription_state import DeviceManagementSubscriptionState
@@ -19,9 +20,7 @@ from msgraph.generated.models.windows_malware_category_count import WindowsMalwa
 from msgraph.generated.models.windows_malware_category import WindowsMalwareCategory
 from msgraph.generated.models.windows_malware_name_count import WindowsMalwareNameCount
 from msgraph.generated.models.os_version_count import OsVersionCount
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = DeviceManagement(
 	odata_type = "#microsoft.graph.deviceManagement",
 	subscription_state = DeviceManagementSubscriptionState.Active,

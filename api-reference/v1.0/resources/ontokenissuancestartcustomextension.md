@@ -5,6 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # onTokenIssuanceStartCustomExtension resource type
@@ -14,6 +15,8 @@ Namespace: microsoft.graph
 Custom extension to invoke when handling the event when a token is about to be issued to your application.
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
+
+[Try out this event in the Woodgrove demo tenant](/entra/identity-platform/custom-extension-overview#token-issuance-start).
 
 ## Methods
 None.

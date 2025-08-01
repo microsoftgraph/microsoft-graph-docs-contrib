@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.subservice: "onenote"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # oneNoteIdentity resource type
@@ -19,6 +20,15 @@ The OneNoteIdentity type represents an identity of a _user_.
 
 In future, this type is merged with [identity](identity.md)
 
+## Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|displayName|string|The identity's display name.|
+|id|string|Unique identifier for the identity.|
+
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -39,11 +49,6 @@ The following JSON representation shows the resource type.
 }
 
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|displayName|string|The identity's display name.|
-|id|string|Unique identifier for the identity.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

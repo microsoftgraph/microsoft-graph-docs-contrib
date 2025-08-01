@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|Chat.ManageDeletion.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Chat.ManageDeletion.All|Chat.ManageDeletion.Chat|
+|Application|Chat.ManageDeletion.Chat|Chat.ManageDeletion.All|
 

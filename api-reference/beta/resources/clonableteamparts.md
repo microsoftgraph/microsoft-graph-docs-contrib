@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: enumPageType
 ms.subservice: teams
 author: "MSFTRickyCastaneda"
+ms.date: 08/16/2024
 ---
 
 # clonableTeamParts enum type

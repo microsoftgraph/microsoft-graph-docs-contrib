@@ -5,6 +5,7 @@ author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 04/25/2024
 ---
 
 # domainState resource type
@@ -22,6 +23,9 @@ Represents the status of asynchronous operations scheduled on a domain.
 | lastActionDateTime | DateTimeOffset | Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes. |
 | operation | String | Type of asynchronous operation. The values can be `ForceDelete` or `Verification`. |
 | status | String | Current status of the operation. <br> `Scheduled` - Operation is scheduled but hasn't started. <br> `InProgress` - Task is in progress. <br> `Failed` - The operation failed. |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

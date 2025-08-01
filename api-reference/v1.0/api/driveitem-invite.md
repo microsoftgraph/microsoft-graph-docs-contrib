@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_invite" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-invite-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -63,11 +65,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter        | Type                           | Description
 |:-----------------|:-------------------------------|:-------------------------
-| recipients       | Collection([DriveRecipient][]) | A collection of recipients who will receive access and the sharing invitation.
-| message          | String                         | A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.
+| recipients       | [driveRecipient][] collection | A collection of recipients who receive access and the sharing invitation.
+| message          | String                         | A plain text formatted message that is included in the sharing invitation. Maximum length 2,000 characters.
 | requireSignIn    | Boolean                        | Specifies whether the recipient of the invitation is required to sign-in to view the shared item.
 | sendInvitation   | Boolean                        | If true, a [sharing link][] is sent to the recipient. Otherwise, a permission is granted directly without sending a notification.
-| roles            | Collection(String)             | Specifies the roles that are to be granted to the recipients of the sharing invitation.
+| roles            | String collection             | Specifies the roles that are to be granted to the recipients of the sharing invitation.
 | expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for Business and SharePoint, **xpirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
 | password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only.
 | retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.
@@ -106,10 +108,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/send-sharing-invite-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

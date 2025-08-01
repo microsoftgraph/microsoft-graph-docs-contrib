@@ -5,6 +5,7 @@ author: "gysingh"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 05/06/2024
 ---
 
 # trustFrameworkKey resource type

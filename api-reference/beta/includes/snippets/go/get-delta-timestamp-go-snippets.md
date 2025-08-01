@@ -18,10 +18,10 @@ import (
 
 requestToken := "2021-09-29T20:00:00Z"
 
-requestParameters := &graphdrives.DriveItemItemItemDeltaWithRequestBuilderGetQueryParameters{
+requestParameters := &graphdrives.ItemItemsItemDeltaRequestBuilderGetQueryParameters{
 	Token: &requestToken,
 }
-configuration := &graphdrives.DriveItemItemItemDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.ItemItemsItemDeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

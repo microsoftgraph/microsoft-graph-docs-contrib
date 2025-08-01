@@ -1,17 +1,19 @@
 ---
 title: "onPremisesDirectorySynchronization resource type"
 description: "A container for on-premises directory synchronization functionalities that are available for the organization."
-author: "dkershaw10"
+author: dhanyahk
+ms.reviewer: sgupta, abhishek.badjatya, dhanyahk
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 10/03/2024
 ---
 
 # onPremisesDirectorySynchronization resource type
 
 Namespace: microsoft.graph
 
-A container for on-premises directory synchronization functionalities that are available for the organization. Only the read and update operations are supported on this resource; create and delete aren't supported.
+A container for [on-premises directory synchronization](../resources/onpremisesdirectorysynchronization.md) functionalities that are available for the organization. Only the read and update operations are supported on this resource; create and delete aren't supported.
 
 ## Methods
 

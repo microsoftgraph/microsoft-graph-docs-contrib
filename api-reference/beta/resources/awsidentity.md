@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 toc.title: All AWS identities
+ms.date: 07/25/2024
 ---
 
 # awsIdentity resource type
@@ -14,6 +15,8 @@ toc.title: All AWS identities
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 Represents identities in AWS including access keys, EC2 instances, groups, lambda functions, roles, and users.
 
@@ -68,4 +71,5 @@ The following JSON representation shows the resource type.
   "externalId": "String"
 }
 ```
+
 

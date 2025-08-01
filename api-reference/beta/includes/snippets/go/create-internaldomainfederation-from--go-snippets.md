@@ -40,6 +40,8 @@ nextSigningCertificate := "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI"
 requestBody.SetNextSigningCertificate(&nextSigningCertificate) 
 federatedIdpMfaBehavior := graphmodels.REJECTMFABYFEDERATEDIDP_FEDERATEDIDPMFABEHAVIOR 
 requestBody.SetFederatedIdpMfaBehavior(&federatedIdpMfaBehavior) 
+passwordResetUri := "https://sts.contoso.com/adfs/passwordReset"
+requestBody.SetPasswordResetUri(&passwordResetUri) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 federationConfiguration, err := graphClient.Domains().ByDomainId("domain-id").FederationConfiguration().Post(context.Background(), requestBody, nil)

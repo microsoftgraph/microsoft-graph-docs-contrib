@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-mailboxProtectionUnits, err := graphClient.Solutions().BackupRestore().MailboxProtectionUnits().Get(context.Background(), nil)
+graphMailboxProtectionUnit, err := graphClient.Solutions().BackupRestore().ProtectionUnits().GraphMailboxProtectionUnit().Get(context.Background(), nil)
 
 
 ```

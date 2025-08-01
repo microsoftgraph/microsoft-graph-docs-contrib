@@ -5,6 +5,7 @@ author: isvargasmsft
 ms.localizationpriority: medium
 ms.subservice: excel
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete namedItem
@@ -63,10 +64,6 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{itemID}/workbook/names/{
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-nameditem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-nameditem-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

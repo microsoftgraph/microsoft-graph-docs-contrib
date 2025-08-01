@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.socialIdentityProvider"
-	clientSecret = "1111111111111"
+	clientSecret = "4294967296"
 }
 
 Update-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params

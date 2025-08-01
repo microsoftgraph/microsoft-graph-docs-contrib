@@ -19,7 +19,7 @@ ChatMessageAttachment chatMessageAttachment = new ChatMessageAttachment();
 chatMessageAttachment.setId("d7ddbf876ae340c3a03bada395ec7da7");
 chatMessageAttachment.setContentType("application/vnd.microsoft.teams.messaging-announcementBanner");
 chatMessageAttachment.setContentUrl(null);
-chatMessageAttachment.setContent("{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/1/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"../hostedContents/2/$value\"}}}}");
+chatMessageAttachment.setContent("{\"title\":\"\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/2/$value\",\"imageContentType\":\"image/jpg\"},\"croppedImage\":{\"source\":\"../hostedContents/1/$value\"}}}}");
 chatMessageAttachment.setName(null);
 chatMessageAttachment.setThumbnailUrl(null);
 attachments.add(chatMessageAttachment);

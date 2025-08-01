@@ -5,6 +5,7 @@ author: "abbyzhccc"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/27/2024
 ---
 
 # alertRecord: changeAlertRecordsPortalNotificationAsSent
@@ -78,10 +79,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/c
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/alertrecordthischangealertrecordsportalnotificationassent-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/alertrecordthischangealertrecordsportalnotificationassent-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

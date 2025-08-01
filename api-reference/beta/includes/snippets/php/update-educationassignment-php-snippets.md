@@ -23,6 +23,7 @@ $instructions->setContent('Read chapter 5 and write your review');
 $requestBody->setInstructions($instructions);
 $requestBody->setDueDateTime(new \DateTime('2021-09-10T00:00:00Z'));
 $requestBody->setAddedStudentAction(new EducationAddedStudentAction('none'));
+$requestBody->setLanguageTag('pt-BR');
 $requestBody->setAddToCalendarAction(new EducationAddToCalendarOptions('studentsAndPublisher'));
 
 $result = $graphServiceClient->education()->classes()->byEducationClassId('educationClass-id')->assignments()->byEducationAssignmentId('educationAssignment-id')->patch($requestBody)->wait();

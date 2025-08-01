@@ -5,6 +5,7 @@ author: "frank-masuelli"
 ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: resourcePageType
+ms.date: 04/17/2024
 ---
 
 # licenseAssignmentState resource type

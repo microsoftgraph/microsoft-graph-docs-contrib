@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 ms.subservice: extensions
 doc_type: resourcePageType
+ms.date: 04/17/2024
 ---
 
 # extensionSchemaProperty resource type

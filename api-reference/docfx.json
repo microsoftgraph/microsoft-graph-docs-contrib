@@ -218,6 +218,28 @@
         "moniker_range": "graph-rest-beta"
       }
     },
+    "rules": {
+      "filename-incomplete": {
+        "exclude": [
+          "**/*"
+        ]
+      },
+      "include-structure-incorrect": {
+        "exclude": [
+          "**/*"
+        ]
+      },
+      "filename-exceeds-max-length": {
+        "exclude": [
+          "**/*"
+        ]
+      },
+      "filename-contains-gerund": {
+        "exclude": [
+          "**/*"
+        ]
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -235,8 +257,8 @@
     },
     "fileMetadata": {
       "breadcrumb_path": {
-        "v1.0/**": "/graph/breadcrumb/toc.json",
-        "beta/**": "/graph/breadcrumb/toc.json"
+        "v1.0/**": "/graph/ref-breadcrumb/toc.json",
+        "beta/**": "/graph/ref-breadcrumb/toc.json"
       },
       "monikerRange": {
         "v1.0/**": "graph-rest-1.0",

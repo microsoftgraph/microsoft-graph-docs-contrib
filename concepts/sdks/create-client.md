@@ -3,6 +3,7 @@ title: "Create a Microsoft Graph client"
 description: "Describes how to create a client to use to make calls to Microsoft Graph. Includes how to set up authentication and select a sovereign cloud."
 ms.localizationpriority: medium
 author: MichaelMainer
+ms.date: 11/07/2024
 ---
 
 # Create a Microsoft Graph client
@@ -21,24 +22,36 @@ The client ID is the app registration ID that is generated when you [register yo
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="DeviceCodeSnippet":::
 
+> Include `using` statements for `Azure.Identity` and `Microsoft.Graph` to run this code.
+
 # [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
+
+> Include `"github.com/Azure/azure-sdk-for-go/sdk/azidentity"` and `graph "github.com/microsoftgraph/msgraph-sdk-go"` in your import block to run this code.
 
 # [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
 
+> Include `import` statements for `com.azure.identity.DeviceCodeCredential`, `com.azure.identity.DeviceCodeCredentialBuilder`, and `com.microsoft.graph.serviceclient.GraphServiceClient` to run this code.
+
 # [PHP](#tab/php)
 
 :::code language="php" source="./snippets/php/snippets/CreateClients.php" id="AuthorizationCodeSnippet":::
+
+> Include `use` statements for `Microsoft\Graph\GraphRequestAdapter`, `Microsoft\Graph\GraphServiceClient`, and `Microsoft\Kiota\Abstractions\Authentication\BaseBearerTokenAuthenticationProvider` to run this code.
 
 # [Python](#tab/python)
 
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="DeviceCodeSnippet":::
 
+> Include `import` statements for `DeviceCodeCredential` from `azure.identity` and  `GraphServiceClient` from `msgraph.graph_service_client` to run this code.
+
 # [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
+
+> Include `import` statements for `DeviceCodeCredential` from `@azure/identity`, `Client` from `@microsoft/microsoft-graph-client`, and `TokenCredentialAuthenticationProvider` from `@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials` to run this code.
 
 ---

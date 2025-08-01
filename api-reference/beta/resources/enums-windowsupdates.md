@@ -3,8 +3,9 @@ title: "Microsoft Graph Windows Updates enumeration values"
 description: "Microsoft Graph Windows Updates enumeration values"
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: "windows-update-business"
+ms.subservice: windows-autopatch
 doc_type: enumTypes
+ms.date: 08/31/2024
 ---
 
 # Microsoft Graph Windows Updates enumeration values
@@ -126,6 +127,12 @@ Namespace: microsoft.graph.windowsUpdates
 |:-------|
 | text   |
 | html   |
+| unknownFutureValue |
+
+### remediationType values
+| Member |
+|:-------|
+| inPlaceUpgrade   |
 | unknownFutureValue |
 
 <!--

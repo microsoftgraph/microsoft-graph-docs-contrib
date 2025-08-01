@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.training_campaign import TrainingCampaign
 from msgraph_beta.generated.models.email_identity import EmailIdentity
@@ -16,9 +17,7 @@ from msgraph_beta.generated.models.training_setting import TrainingSetting
 from msgraph_beta.generated.models.training_setting_type import TrainingSettingType
 from msgraph_beta.generated.models.campaign_schedule import CampaignSchedule
 from msgraph_beta.generated.models.campaign_status import CampaignStatus
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = TrainingCampaign(
 	display_name = "Graph Training Campaign",
 	description = "Graph Training Campaign Description",

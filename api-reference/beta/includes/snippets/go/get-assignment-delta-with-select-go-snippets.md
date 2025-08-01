@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &grapheducation.EducationClasseItemAssignmentsDeltaWithRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ClassesItemAssignmentsDeltaRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","id"},
 }
-configuration := &grapheducation.EducationClasseItemAssignmentsDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ClassesItemAssignmentsDeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

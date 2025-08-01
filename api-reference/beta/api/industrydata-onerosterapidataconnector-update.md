@@ -5,6 +5,7 @@ author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 06/18/2024
 ---
 
 # Update oneRosterApiDataConnector
@@ -49,7 +50,7 @@ PATCH /external/industryData/dataConnectors/{industryDataConnectorId}
 |:---|:---|:---|
 | displayName           | String                                                                             | The name of the data connector. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md). Required.                                                                                                   |
 | apiFormat             | microsoft.graph.industryData.apiFormat                                             | The API format of the external system being connected to. Inherited from [apiDataConnector](../resources/industrydata-apidataconnector.md). The possible values are: `oneRoster`, `unknownFutureValue`. Required.             |
-| baseUrl               | String                                                                             | The base URI including the scheme, host, and path for the API (with or without a trailing '/'). Example: https://example.com/ims/oneRoster/v1p1. Inherited from [apiDataConnector](../resources/industrydata-apidataconnector.md). Required.|
+| baseUrl               | String                                                                             | The base URI including the scheme, host, and path for the API (with or without a trailing '/'). Example: `https://example.com/ims/oneRoster/v1p1`. Inherited from [apiDataConnector](../resources/industrydata-apidataconnector.md). Required.|
 | credential            | [microsoft.graph.industryData.credential](../resources/industrydata-credential.md) | The base type for all supported credentials. Inherited from [apiDataConnector](../resources/industrydata-apidataconnector.md). Required.                                                                   |
 | apiVersion            | String                                                                             | The API version of the OneRoster source. Required.                                                                                                                                                                                                        |
 | isDemographicsEnabled | Boolean                                                                            | Indicates whether the user specified to import optional demographics data. Required.                                                                                                                                                                                           |
@@ -84,10 +85,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-onerosterapidataconnector-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-onerosterapidataconnector-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

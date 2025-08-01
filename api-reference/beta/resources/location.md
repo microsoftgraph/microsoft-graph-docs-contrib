@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "iamgirishck"
 ms.subservice: "outlook"
+ms.date: 07/23/2024
 ---
 
 # Location resource type

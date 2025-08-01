@@ -4,6 +4,8 @@ description: "Get troubleshooting information related to using Microsoft Graph D
 author: "David1997sb"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
+ms.date: 11/07/2024
+ms.custom: sfi-image-nochange, sfi-ga-nochange
 ---
 
 # Troubleshoot Microsoft Graph Data Connect
@@ -151,6 +153,10 @@ az resource create --resource-group <resource_group_name> --name mgdc-<app_id> -
 The following error message indicates that a **Microsoft.GraphServices** type resource was already manually created for the app with a different name. This resource is used for billing purposes, and no further action is required.
 
 ![Screenshot that shows an error for the already existent billing resource.](images/app-registration-already-premium-usage.png)
+
+### Developer email missing
+
+When creating a new registration, it may appear successful, but you receive a "Developer email not found" error. This happens when the registration is created with a guest user; use a non-guest user to successfully complete the registration.
 
 ## Related content
 

@@ -1,10 +1,11 @@
 ---
 title: "cloudPC: stop"
-description: "Stop a specific Cloud PC for a user."
+description: "Stop a specific Cloud PC."
 author: "rbayetov"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # cloudPC: stop
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stop a specific Cloud PC for a user. Currently, only [Windows 365 Frontline](https://www.microsoft.com/en/windows-365/frontline) Cloud PCs are supported.
+Stop a specific Cloud PC. Currently, only [Windows 365 Frontline](https://www.microsoft.com/en/windows-365/frontline) Cloud PCs are supported.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -31,8 +32,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-```http
+To stop the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
+
+``` http
 POST /me/cloudPCs/{cloudPCId}/stop
+POST /users/{userId}/cloudPCs/{id}/stop
+```
+
+To stop the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
+
+``` http
+POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/stop
 ```
 
 ## Request headers
@@ -68,10 +78,6 @@ POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-stop-cloudpc-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-stop-cloudpc-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

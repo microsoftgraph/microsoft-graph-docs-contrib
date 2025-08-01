@@ -7,6 +7,7 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # journal resource type
@@ -16,6 +17,14 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a journal in Dynamics 365 Business Central.
+
+> [!NOTE]
+> The journal resource type offers a bound action called `post` that posts the corresponding general journal batch.
+
+> Posting the general journal batch is illustrated in the following example:  
+> `POST https://graph.microsoft.com/beta/financials/companies{id}/journals{id}/post`.
+>
+>The response has no content; the response code is 204.
 
 ## Methods
 
@@ -34,13 +43,8 @@ Represents a journal in Dynamics 365 Business Central.
 |displayName         |string, maximum size 50| The display name of the journal.                     |
 |lastModifiedDateTime|datetime               |The last datetime the journal was modified. Read-Only.|
 
-## Bound actions
-The journal resource type offers a bound action called `post` that posts the corresponding general journal batch.
-
-Posting the general journal batch is illustrated in the following example:  
-`POST https://graph.microsoft.com/beta/financials/companies{id}/journals{id}/post`.
-
-The response has no content; the response code is 204.
+## Relationships
+None.
 
 ## JSON representation
 

@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 08/06/2024
 ---
 
 # privilegeEscalationUserFinding resource type
@@ -13,6 +14,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
 
 Represents findings for a list of users who can potentially exploit of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources in AWS and GCP.
 
@@ -64,3 +67,4 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+

@@ -8,9 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Searches.Item.MicrosoftGraphSecurityPurgeData;
+using Microsoft.Graph.Models.Security;
 
 var requestBody = new PurgeDataPostRequestBody
 {
+	PurgeType = PurgeType.Recoverable,
+	PurgeAreas = PurgeAreas.TeamsMessages,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

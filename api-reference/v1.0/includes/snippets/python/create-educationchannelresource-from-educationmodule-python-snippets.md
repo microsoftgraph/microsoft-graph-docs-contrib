@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.education_module_resource import EducationModuleResource
 from msgraph.generated.models.education_channel_resource import EducationChannelResource
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = EducationModuleResource(
 	resource = EducationChannelResource(
 		odata_type = "#microsoft.graph.educationChannelResource",

@@ -5,6 +5,7 @@ author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/29/2024
 ---
 
 # challengingWord resource type
@@ -38,4 +39,3 @@ The following JSON representation shows the resource type.
   "word": "String" 
 }
 ```
-

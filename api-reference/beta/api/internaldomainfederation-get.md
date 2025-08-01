@@ -5,6 +5,7 @@ author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 08/21/2024
 ---
 
 # Get internalDomainFederation
@@ -68,10 +69,6 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/federationConfiguration
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-internaldomainfederation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-internaldomainfederation-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-internaldomainfederation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -129,7 +126,8 @@ Content-Type: application/json
         "certificateUpdateResult": "Success",
         "lastRunDateTime": "2021-08-25T07:44:46.2616778Z"
     },
-    "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"
+    "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp",
+    "passwordResetUri": "https://sts.contoso.com/adfs/passwordReset"
   }
 }
 ```

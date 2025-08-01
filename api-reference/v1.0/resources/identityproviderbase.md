@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "namkedia"
 toc.title: "External Identities identity provider"
+ms.date: 07/22/2024
 ---
 
 # identityProviderBase resource type

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
 from msgraph.generated.models.allowed_target_scope import AllowedTargetScope
@@ -20,9 +21,7 @@ from msgraph.generated.models.access_package_answer_choice import AccessPackageA
 from msgraph.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
 from msgraph.generated.models.access_package_localized_text import AccessPackageLocalizedText
 from msgraph.generated.models.access_package import AccessPackage
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageAssignmentPolicy(
 	display_name = "A Policy With Questions",
 	description = "",
