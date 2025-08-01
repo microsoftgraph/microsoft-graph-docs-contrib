@@ -1,6 +1,6 @@
 ---
 title: "List transcripts"
-description: "Retrieve the list of transcripts associated with a Microsoft Teams online meeting and ad hoc calls."
+description: "Retrieve the list of transcripts associated with a Microsoft Teams online meeting."
 author: "mankadnandan"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) or unscheduled [ad hoc calls](/graph/api/resources/adhoccall). This API supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
 
 > [!NOTE]
 >
@@ -31,11 +31,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "onlinemeeting_list_transcripts" } -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|OnlineMeetingTranscript.Read.All, CallTranscripts.Read.All|Not available.|
+|Delegated (work or school account)|OnlineMeetingTranscript.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat, CallTranscripts.Read.All, CallTranscripts.Read.Chat|Not available.|
+|Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat|Not available.|
 
-> **Note:** The application permissions `OnlineMeetingTranscript.Read.Chat` and `CallTranscripts.Read.Chat` use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). The `OnlineMeetingTranscript.Read.Chat` permission applies only to scheduled private chat meetings, not to channel meetings.
+> **Note:** The application permissions `OnlineMeetingTranscript.Read.Chat` uses[resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). The `OnlineMeetingTranscript.Read.Chat` permission applies only to scheduled private chat meetings, not to channel meetings.
 
 To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
@@ -50,8 +50,6 @@ To use application permissions for this API, tenant administrators must create a
 ```http
 GET /me/onlineMeetings/{online-meeting-id}/transcripts
 GET /users/{user-id}/onlineMeetings/{online-meeting-id}/transcripts
-GET /me/adhocCalls/{call-id}/transcripts
-GET /users/{user-id}/adhocCalls/{call-id}/transcripts
 ```
 
 ## Optional query parameters
@@ -194,54 +192,3 @@ Content-Type: application/json
     ]
 }
 ```
-
-<details>
-<summary>Example 2: List transcripts for an ad hoc call</summary>
-
-#### Request
-
-The following example shows a request.
-
-<!-- {
-  "blockType": "request",
-  "name": "list_adhoccall_transcripts",
-  "sampleKeys": ["af630fe0-04d3-4559-8cf9-91fe45e36296"]
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/adhocCalls/af630fe0-04d3-4559-8cf9-91fe45e36296/transcripts
-```
-
-#### Response
-
-The following example shows the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.callTranscript)"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#me/adhocCalls('af630fe0-04d3-4559-8cf9-91fe45e36296')/transcripts",
-    "@odata.count": 1,
-    "value": [
-        {
-            "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
-            "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
-            "createdDateTime": "2023-10-10T08:00:00.9038309Z",
-            "endDateTime": "2023-10-10T08:15:25.2346000Z",
-            "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
-            "transcriptContentUrl": "https://graph.microsoft.com/beta/$metadata#me/adhocCalls('af630fe0-04d3-4559-8cf9-91fe45e36296')/transcripts('MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4')/content"
-        }
-    ]
-}
-```
-
-</details>
