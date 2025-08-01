@@ -1,5 +1,5 @@
 ---
-title: "List tasks"
+title: "List plannerTask objects for a plannerBucket"
 description: "Retrieve a list of plannerTask objects associated to a plannerBucket object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# List tasks
+# List plannerTask objects for a plannerBucket
 
 Namespace: microsoft.graph
 
@@ -138,7 +138,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "List tasks",
+  "description": "List plannerTask objects for a plannerBucket",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
