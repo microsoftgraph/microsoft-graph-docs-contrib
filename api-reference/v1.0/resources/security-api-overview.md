@@ -176,7 +176,7 @@ The following are some of the most popular requests for working with the Microso
 |Get secure score control profile|[Get secureScoreControlProfile](../api/securescorecontrolprofile-get.md) |[https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 
 
-You can use Microsoft Graph [webhooks](/graph/change-notifications-overview) to subscribe to and receive notifications about updates to Microsoft Graph security entities.
+You can use Microsoft Graph [change notifications](/graph/change-notifications-overview) to subscribe to and receive notifications about updates to Microsoft Graph security entities.
 
 ## Resources
 
