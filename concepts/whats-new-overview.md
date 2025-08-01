@@ -46,7 +46,7 @@ Each fragment uploaded during an [upload session](/graph/api/resources/uploadses
 
 ### Security
 
-Added [resourceAccessEvent](/graph/api/security-resourceaccessevent) resource as a property in [userAccount](/graph/api/security-useraccount).
+Added the [resourceAccessEvent](/graph/api/resources/security-resourceaccessevent) resource as a property in [userAccount](/graph/api/resources/security-useraccount).
 
 ### Security | eDiscovery
 
@@ -91,6 +91,12 @@ Deprecated the **markAllStudentsAsMinors** property on [additionalUserOptions](/
 ### Security | eDiscovery
 
 Use the **reportFileMetadata** property on [ediscoveryAddToReviewSetOperation](/graph/api/resources/security-ediscoveryaddtoreviewsetoperation?view=graph-rest-beta&preserve-view=true) and [ediscoveryEstimateOperation](/graph/api/resources/security-ediscoveryestimateoperation?view=graph-rest-beta&preserve-view=true) to get the properties for report file metadata.
+
+### Teamwork and communications | Messaging
+
+- Added support for channel membership subscriptions to receive [indirect membership change notifications](../concepts/teams-changenotifications-teammembership.md) for shared channels. 
+- Introduced a new change notification for shared channel membership when a channel is [shared with or unshared from a team](../concepts/teams-changenotifications-teammembership.md).
+- Use the **originalSourceMembershipUrl** annotation with the [List allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API to identify the source of a member's membership and distinguish between direct and indirect members.
 
 ## June 2025: New and generally available
 

@@ -1044,11 +1044,12 @@ The **resource** and **@odata.id** properties can be used to call Microsoft Grap
 
 ## Related content
 
-- [Microsoft Graph change notifications](change-notifications-overview.md)
-- [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
-- [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
-- [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
-- [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
-- [Microsoft Teams API overview](teams-concept-overview.md)
-- [Change notifications team or channel C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification-team-channel/csharp)
-- [Change notifications team or channel Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-change-notification-team-channel/nodejs)
+* [Microsoft Graph change notifications](change-notifications-overview.md)
+* [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
+* [Get change notifications for membership changes in channels using Microsoft Graph](teams-changenotifications-channelmembership.md)
+* [Get change notifications for membership changes in teams using Microsoft Graph](teams-changenotifications-teammembership.md)
+* [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
+* [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
+* [Microsoft Teams API overview](teams-concept-overview.md)
+* [Change notifications team or channel C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification-team-channel/csharp)
+* [Change notifications team or channel Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-change-notification-team-channel/nodejs)
