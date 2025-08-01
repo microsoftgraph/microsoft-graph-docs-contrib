@@ -287,7 +287,7 @@ The following are some of the most popular requests for working with the Microso
 | Create content activity|[Create content activity](../api/activitiescontainer-post-contentactivities.md)||
 
 
-You can use Microsoft Graph [webhooks](/graph/change-notifications-overview) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
+You can use Microsoft Graph [change notifications](/graph/change-notifications-overview) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
 
 ## Next steps
 
