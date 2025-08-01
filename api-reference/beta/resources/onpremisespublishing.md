@@ -77,7 +77,7 @@ The following JSON representation shows the resource type.
   "internalUrl": "String",
   "isAccessibleViaZTNAClient": "Boolean",
   "isBackendCertificateValidationEnabled": true,
-  "isContinuousAccessEvaluationEnabled":"Boolean",
+  "isContinuousAccessEvaluationEnabled": "Boolean",
   "isDnsResolutionEnabled": "Boolean",
   "isHttpOnlyCookieEnabled": true,
   "isOnPremPublishingEnabled": true,
