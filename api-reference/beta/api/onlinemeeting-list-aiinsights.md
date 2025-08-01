@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 ### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with the following:
 
 <details>
-  <summary>📁 Online meetings</summary>
+  <summary>Online meetings</summary>
 
 ### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an online meeting
 
@@ -143,7 +143,7 @@ Content-Type: application/json
 ```
 </details>
 <details>
-  <summary>📁 Ad hoc calls</summary>
+  <summary>Ad hoc calls</summary>
 
 ### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [ad hoc call](/graph/api/resources/adhoccall)
 
