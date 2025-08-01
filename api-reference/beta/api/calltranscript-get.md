@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [callTranscript](../resources/calltranscript.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](/graph/api/resources/adhoccall). These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Retrieve a [callTranscript](../resources/calltranscript.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an ad hoc call. These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
 
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting or an ad hoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
@@ -187,7 +187,7 @@ Content-type: application/json
 ### Example 2: Get a callTranscript content
 #### Request
 
-# [HTTP](#tab/http3)
+# [HTTP](#tab/http-content)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_content",
@@ -251,7 +251,7 @@ WEBVTT
 ### Example 3: Get a callTranscript content specifying $format query param
 #### Request
 
-# [HTTP](#tab/http4)
+# [HTTP](#tab/http-format)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_content_format",
@@ -381,11 +381,11 @@ The following example shows how to get a single transcript of an online meeting 
 
 The following example shows a request.
 
-# [HTTP](#tab/http1)
+# [HTTP](#tab/http-correlation)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_using_contentCorrelationId",
-  "sampleKeys": ["MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy"]
+  "sampleKeys": ["MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzZNMk0yTm1Nd1pERTNAdGhyZWFkLnYy"]
 }
 -->
 ``` http
