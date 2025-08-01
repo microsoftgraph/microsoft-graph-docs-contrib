@@ -12,14 +12,14 @@ ms.date: 08/21/2024
 
 Namespace: microsoft.graph
 
-Represents a transcript associated with an [online meeting](onlinemeeting.md) and [ad hoc call](https://review.learn.microsoft.com/en-us/graph/api/resources/adhoccall?view=graph-rest-beta&branch=pr-en-us-26954).
+Represents a transcript associated with an [online meeting](onlinemeeting.md).
 
 ## Methods
 
 |  Method       |  Return Type  | Description|
 |:---------------|:--------|:----------|
-|[List transcripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](https://review.learn.microsoft.com/en-us/graph/api/resources/adhoccall?view=graph-rest-beta&branch=pr-en-us-26954).|
-|[Get transcript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Get a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](https://review.learn.microsoft.com/en-us/graph/api/resources/adhoccall?view=graph-rest-beta&branch=pr-en-us-26954).|
+|[List transcripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).|
+|[Get transcript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Get a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).|
 |[Get delta by organizer](../api/calltranscript-delta.md) | [callTranscript](calltranscript.md) collection | Get a set of [callTranscript](../resources/calltranscript.md) resources that were added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
 |[List transcripts by organizer](../api/onlinemeeting-getalltranscripts.md) | [callTranscript](calltranscript.md) collection | Get the [callTranscript](../resources/calltranscript.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
 
