@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 A conversation is a collection of [threads](conversationthread.md), and a thread contains posts to that thread. All threads and posts in a conversation share the same subject.
 
-This resource supports subscribing to [change notifications](/graph/webhooks).
+This resource supports subscribing to [change notifications](/graph/change-notifications-overview).
 
 ## Methods
 
