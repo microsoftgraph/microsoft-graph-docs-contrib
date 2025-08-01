@@ -24,7 +24,7 @@ For performance reasons, the [create](../api/group-post-groups.md), [get](../api
 This resource supports:
 
 - Adding your data to custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/group-delta.md) function.
 
 > **Microsoft Teams and Microsoft 365 groups support group collaboration**. You can use most of the Microsoft 365 groups API with Microsoft Teams. To create a [team](team.md), first [create group](../api/group-post-groups.md) and then [add a team to it](../api/team-put-teams.md). For details, see the [Microsoft Teams overview](teams-api-overview.md).
@@ -230,6 +230,7 @@ name. |
 | members | [directoryObject](directoryobject.md) collection | Direct group members, who can be users, devices, other groups, or service principals. Supports the [List members](../api/group-list-members.md), [Add member](../api/group-post-members.md), and [Remove member](../api/group-delete-members.md) operations. Nullable. <br/>Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`. |
 | membersWithLicenseErrors | [user](user.md) collection | A list of group members with license errors from this group-based license assignment. Read-only. |
 | onenote | [onenote](onenote.md) | Read-only. |
+| onPremisesSyncBehavior  | [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)  | Indicates the state of synchronization for a group between the cloud and on-premises Active Directory. Supports `$filter` only with advanced query capabilities. For example, `$filter=onPremisesSyncBehavior/isCloudManaged eq true&$count=true`.|
 | owners | [directoryObject](directoryobject.md) collection | The owners of the group who can be users or service principals. Limited to 100 owners. Nullable. <li>If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner. <li>A non-admin user can't explicitly add themselves to this collection when they're creating the group. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419). <li>For security groups, the admin user isn't automatically added to this collection. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419).<br/><br/> Supports `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`); Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`. |
 | permissionGrants | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | The permissions granted for a group to a specific application. Supports `$expand`. |
 | photo | [profilePhoto](profilephoto.md) | The group's profile photo. |

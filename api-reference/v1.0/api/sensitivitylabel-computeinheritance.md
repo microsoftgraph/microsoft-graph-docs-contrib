@@ -59,6 +59,7 @@ If no applicable label is found based on the input and filters, or if an error o
 
 The following example shows a request to compute the inherited label from input label, considering only labels applicable to the `File` content format.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "compute_inheritance_from_labels"
@@ -71,6 +72,12 @@ Client-Request-Id: c5e4d3b2-a1f0-e9d8-c7b6-a5e4d3b2a1f0
 
 "4e4234dd-377b-42a3-935b-0e42f138fa23"  // General (Sensitivity 10, File/Email)
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/compute-inheritance-from-labels-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

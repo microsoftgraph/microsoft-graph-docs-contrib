@@ -3575,3 +3575,55 @@ Possible values for user account types (group membership), per Windows definitio
 | android |
 | linux   |
 | unknownFutureValue |
+
+### whatIfAnalysisReasons values 
+
+|Member|
+|:---|
+|notSet|
+|notEnoughInformation|
+|invalidCondition|
+|users|
+|workloadIdentities|
+|application|
+|userActions|
+|authenticationContext|
+|devicePlatform|
+|devices|
+|clientApps|
+|location|
+|signInRisk|
+|emptyPolicy|
+|invalidPolicy|
+|policyNotEnabled|
+|userRisk|
+|time|
+|insiderRisk|
+|authenticationFlow|
+|unknownFutureValue|
+
+### insiderRiskLevel values 
+
+|Member|
+|:---|
+|none|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+
+### userAction values 
+
+|Member|
+|:---|
+|registerSecurityInformation|
+|registerOrJoinDevices|
+|unknownFutureValue|
+
+### restoreJobType values 
+
+|Member|
+|:---|
+|standard|
+|bulk|
+|unknownFutureValue|

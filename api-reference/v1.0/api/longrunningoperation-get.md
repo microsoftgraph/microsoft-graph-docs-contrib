@@ -27,8 +27,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### For authentication methods (password reset)
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-[!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-2-permissions.md)]
+<!-- { 
+  "blockType": "permissions", 
+  "name": "longrunningoperation_get", 
+  "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/operations/{id}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
@@ -80,10 +84,6 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/authenticati
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-passwordreset-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-passwordreset-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
