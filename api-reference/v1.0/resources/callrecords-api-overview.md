@@ -43,5 +43,5 @@ The [pstnCallLogRow](callrecords-pstncalllogrow.md) and [directRoutingLogRow](ca
 
 ## Related content
 
-[Webhook subscriptions](/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0)
+- [Set up change notifications that include resource data](/graph/api/resources/change-notifications-api-overview)
 
