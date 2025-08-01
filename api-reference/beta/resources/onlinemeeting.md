@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Contains information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
-This resource supports subscribing to [change notifications](/graph/webhooks). For more information, see [subscribe to online meetings](/graph/changenotifications-for-onlinemeeting).
+This resource supports subscribing to [change notifications](/graph/change-notifications-overview). For more information, see [subscribe to online meetings](/graph/changenotifications-for-onlinemeeting).
 
 Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 
@@ -39,7 +39,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 > [!NOTE]
 >
 > - A bearer token is required for the `Authorization` header for all the methods listed in the previous table. For details about how to get the `token` for the `Authorization` header, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
-> - The expiry time for online meetings is set to 60 days after the meeting's start or end time. If the meeting is updated or activated before it expires, the expiry time will be extended by another 60 days.
+> - The expiry time for online meetings is set to 60 days after the meeting's start or end time. If the meeting is updated or activated before it expires, the expiry time is extended by another 60 days.
 
 ## Properties
 
@@ -65,7 +65,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | chatRestrictions      | [chatRestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | creationDateTime      | DateTime | The meeting creation time in UTC. Read-only.     |
 | endDateTime           | DateTime | The meeting end time in UTC. Required when you create an online meeting. |
-| externalId            | String | The external ID. A custom ID. Optional.      |
+| externalId            | String | The external ID that is a custom identifier. Optional. |
 | id | String | The default ID associated with the online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).    |
 | isEndToEndEncryptionEnabled | Boolean | Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -183,6 +183,7 @@ The following JSON representation shows the resource type.
   "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
+  "externalId": "String",
   "id": "String (identifier)",
   "isEndToEndEncryptionEnabled": "Boolean",
   "isEntryExitAnnounced": "Boolean",

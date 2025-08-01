@@ -24,7 +24,7 @@ For performance reasons, the [create](../api/group-post-groups.md), [get](../api
 This resource supports:
 
 - Adding your data to custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/group-delta.md) function.
 
 > **Microsoft Teams and Microsoft 365 groups support group collaboration**. You can use most of the Microsoft 365 groups API with Microsoft Teams. To create a [team](team.md), first [create group](../api/group-post-groups.md) and then [add a team to it](../api/team-put-teams.md). For details, see the [Microsoft Teams overview](teams-api-overview.md).

@@ -12,7 +12,10 @@ ms.date: 01/29/2025
 
 Namespace: microsoft.graph
 
-Get a list of all [members](../resources/conversationmember.md) in a [channel](../resources/channel.md). It supports all types of channels. In the case of shared channels, it includes all cross-tenant and cross-team members in a channel.
+Get a list of all [members](../resources/conversationmember.md) in a [channel](../resources/channel.md). This API supports all channel types, including shared channels. For shared channels, the response includes:
+
+- **Direct members**: Users who are added directly to the channel, including users from other tenants (cross-tenant).
+- **Indirect members**: Users who are members of a team with which the channel is shared, including teams in the same tenant or in a different tenant (cross-tenant).
 
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. Users shouldn't try to parse or make any assumptions about these resource IDs.
