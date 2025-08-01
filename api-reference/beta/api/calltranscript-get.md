@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [callTranscript](../resources/calltranscript.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](https://review.learn.microsoft.com/en-us/graph/api/resources/adhoccall?view=graph-rest-beta&branch=pr-en-us-26954). These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Retrieve a [callTranscript](../resources/calltranscript.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](/graph/api/resources/adhoccall). These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
 
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting or an ad hoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
@@ -80,7 +80,6 @@ GET me/adhoccalls/{meetingId}/transcripts/{transcriptId}/content
 GET /beta/users({userId})/adhocCalls({callId})/transcripts({transcriptId})/content?$format=text/vtt 
 ```
 ## Optional query parameters
-```
 
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
 
@@ -103,10 +102,10 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 > [!NOTE]
 > The docx format for transcripts is deprecated as of May 31, 2023.
 
-### Example 1: Get a callTranscript
+### Example 1: Get a call transcript
 #### Request
 
-# [HTTP](#tab/http)
+# [HTTP](#tab/http2)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript",
@@ -183,7 +182,7 @@ Content-type: application/json
 ### Example 2: Get a callTranscript content
 #### Request
 
-# [HTTP](#tab/http)
+# [HTTP](#tab/http3)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_content",
@@ -247,7 +246,7 @@ WEBVTT
 ### Example 3: Get a callTranscript content specifying $format query param
 #### Request
 
-# [HTTP](#tab/http)
+# [HTTP](#tab/http4)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_content_format",
@@ -310,7 +309,7 @@ WEBVTT
 
 ### Example 4: Get a callTranscript metadataContent
 #### Request
-# [HTTP](#tab/http)
+# [HTTP](#tab/http5)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_metadatacontent",
@@ -376,7 +375,7 @@ The following example shows how to get a single transcript of an online meeting 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
+# [HTTP](#tab/http1)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_using_contentCorrelationId",
