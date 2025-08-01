@@ -27,7 +27,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-## Permissions
+## Permissions for online meetings
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -35,9 +35,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-list-aiinsights-permissions.md)]
 
 > [!NOTE]
-> This API works only for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
+> This API works only for a meeting that has not expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 
-## HTTP request
+## HTTP request for online meetings
 
 <!-- {
   "blockType": "ignored"
@@ -48,25 +48,25 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /copilot/users/{userId}/onlineMeetings/{onlineMeetingId}/aiInsights
 ```
 
-## Optional query parameters
+## Optional query parameters for online meetings
 
 This method supports the `$select` and `$filter` [OData query parameters](/graph/query-parameters) to customize the response.
 
-## Request headers
+## Request headers for online meetings
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Request body
+## Request body for online meetings
 
 Don't supply a request body for this method.
 
-## Response
+## Response for online meetings
 
 If successful, this method returns a `200 OK` response code and a collection of [callAiInsight](../resources/callaiinsight.md) objects in the response body.
 
-## Examples
+## Examples for online meetings
 
 ### Request
 
@@ -144,7 +144,7 @@ Content-Type: application/json
 <details>
   <summary>📁 Ad hoc calls</summary> 
 
-  ### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [ad hoc call](https://review.learn.microsoft.com/en-us/graph/api/resources/adhoccall?view=graph-rest-beta&branch=pr-en-us-26954): 
+  ### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [ad hoc call](graph/api/resources/adhoccall): 
 
 > [!NOTE]
 > * This API has license requirements. For more information, see [License requirements for Teams meeting AI insights APIs](/graph/teams-licenses#license-requirements-for-teams-meeting-ai-insights-apis).
@@ -152,7 +152,7 @@ Content-Type: application/json
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-## Permissions
+## Permissions for ad hoc calls
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -162,7 +162,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > [!NOTE]
 > This API works only for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 
-## HTTP request
+## HTTP request for ad hoc calls
 
 <!-- {
   "blockType": "ignored"
@@ -173,25 +173,25 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET `copilot/users/{userId}/adhocCalls/{callId}/aiInsights`
 ```
 
-## Optional query parameters
+## Optional query parameters for ad hoc calls
 
 This method supports the `$select` and `$filter` [OData query parameters](/graph/query-parameters) to customize the response.
 
-## Request headers
+## Request headers for ad hoc calls
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Request body
+## Request body for ad hoc calls
 
 Don't supply a request body for this method.
 
-## Response
+## Response for ad hoc calls
 
 If successful, this method returns a `200 OK` response code and a collection of [callAiInsight](../resources/callaiinsight.md) objects in the response body.
 
-## Examples
+## Examples for ad hoc calls
 
 ### Request
 
