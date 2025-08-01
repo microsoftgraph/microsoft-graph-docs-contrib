@@ -1,6 +1,6 @@
 ---
 title: "itemPatent resource type"
-description: "Represents a granted or filed patent which has been added to a user's profile."
+description: "Represents a granted or filed patent that has been added to a user's profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
@@ -12,7 +12,7 @@ ms.date: 07/22/2024
  
 Namespace: microsoft.graph
 
-Represents a granted or filed patent which has been added to a user's [profile](../resources/profile.md).
+Represents a granted or filed patent that has been added to a user's [profile](../resources/profile.md).
 
 Inherits from [itemFacet](../resources/itemfacet.md).
 
@@ -37,7 +37,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |isPending        |Boolean     |Indicates the patent is pending.        |
 |issuedDate       |Date        |The date that the patent was granted.   |
-|issuingAuthority |String      |Authority which granted the patent.     |
+|issuingAuthority |String      |Authority that granted the patent.     |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
 |lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
 |number           |String      |The patent number.                      |
