@@ -23,9 +23,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "platformcredentialauthenticationmethod_delete", 
   "requestUrls": ["DELETE /users/{id | userPrincipalName}/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}"]
  } -->
-[!INCLUDE [permissions-table](../includes/permissions/platformcredentialauthenticationmethod-delete-2-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/platformcredentialauthenticationmethod-delete-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
