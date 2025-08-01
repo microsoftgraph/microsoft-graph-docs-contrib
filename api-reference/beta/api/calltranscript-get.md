@@ -1,6 +1,6 @@
 ---
 title: "Get callTranscript"
-description: "Retrieve a single callTranscript associated with a Microsoft Teams online meeting."
+description: "Retrieve a single callTranscript associated with a Microsoft Teams online meeting and ad hoc call."
 author: "mankadnandan"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -35,15 +35,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "calltranscript_get" } -->
 | Permission type| Least privileged permissions|Higher privileged permissions|
 | :---| :---| :--- |
-|Delegated (work or school account)| OnlineMeetingTranscript.Read.All CallTranscripts.Read.All| Not available.|
+|Delegated (work or school account)| OnlineMeetingTranscript.Read.All, CallTranscripts.Read.All| Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat CallTranscripts.Read.All|Not available.|
+|Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat, CallTranscripts.Read.All, CallTranscripts.Read.Chat|Not available.|
 
-> **Note:** The application permission `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to scheduled private chat meetings, not to channel meetings.
+> **Note:** The application permissions `OnlineMeetingTranscript.Read.Chat` and `CallTranscripts.Read.Chat` use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). The `OnlineMeetingTranscript.Read.Chat` permission applies only to scheduled private chat meetings, not to channel meetings.
 
 To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 > [!NOTE]
+>
 > * This API is available for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 > * This API is also available to users who are part of the meeting calendar invite, which applies to both private chat meetings and channel meetings.
 
@@ -51,7 +52,8 @@ To use application permissions for this API, tenant administrators must create a
 
 <!-- { "blockType": "ignored" } -->
 
-**For an online meeting** <br>
+**For an online meeting**
+
 Get a single transcript:
 
 ```http
@@ -65,20 +67,23 @@ Get the content of a single transcript:
 GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 ```
-**For an ad hoc call** <br>
+
+**For an ad hoc call**
+
 Get a single transcript:
 
 ```http
-GET /me/adhoccalls/{meetingId}/transcripts/{transcriptId}
-GET /beta/users({userId})/adhocCalls({callId})/transcripts({transcriptId}) 
+GET /me/adhocCalls/{callId}/transcripts/{transcriptId}
+GET /users/{userId}/adhocCalls/{callId}/transcripts/{transcriptId}
 ```
 
 Get the content of a single transcript:
 
 ```http
-GET me/adhoccalls/{meetingId}/transcripts/{transcriptId}/content
-GET /beta/users({userId})/adhocCalls({callId})/transcripts({transcriptId})/content?$format=text/vtt 
+GET me/adhocCalls/{callId}/transcripts/{transcriptId}/content
+GET /users/{userId}/adhocCalls/{callId}/transcripts/{transcriptId}/content
 ```
+
 ## Optional query parameters
 
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
@@ -193,7 +198,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
 ```
 ``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhoccalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
 ```
 
 # [C#](#tab/csharp)
@@ -257,7 +262,7 @@ WEBVTT
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content?$format=text/vtt
 
 ``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhoccalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content?$format=text/vtt
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content?$format=text/vtt
 ```
 ```
 
@@ -318,9 +323,10 @@ WEBVTT
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
- 
-    http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhoccalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
+```
+
+``` http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
 ```
 
 # [C#](#tab/csharp)
