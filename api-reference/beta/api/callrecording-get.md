@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call recordings from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an ad hoc call. This API supports the retrieval of call recordings from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
 
 For a recording, this API returns the metadata of the single recording associated with the online meeting. For the content of a recording, this API returns the stream of bytes associated with the recording.
 
@@ -51,7 +51,9 @@ To use application permissions for this API, tenant administrators must create a
 
 ## HTTP request
 
-Get a single recording of an online meeting.
+**For an online meeting**
+
+Get a single recording:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -59,12 +61,30 @@ GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}
 ```
 
-Get the content of a single recording of an online meeting.
+Get the content of a single recording:
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
+```
+
+**For an ad hoc call**
+
+Get a single recording:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/adhocCalls/{callId}/recordings/{recordingId}
+GET /users/{userId}/adhocCalls/{callId}/recordings/{recordingId}
+```
+
+Get the content of a single recording:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/adhocCalls/{callId}/recordings/{recordingId}/content
+GET /users/{userId}/adhocCalls/{callId}/recordings/{recordingId}/content
 ```
 
 ## Optional query parameters
