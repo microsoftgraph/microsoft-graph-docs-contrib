@@ -18,10 +18,10 @@ Use the `Prefer: include-unknown-enum-members` request header to get the followi
 > are metered APIs; [payment models and licensing requirements](/graph/teams-licenses) may apply.
 > `/teams/getAllMessages` and `/chats/getAllMessages` support both `model=A` and `model=B` payment models,
 > `/me/chats/getAllMessages`, `/users/{id}/chats/getAllMessages`, and `/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages` support only `model=B`.
-> If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+> If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used.
 
 > [!NOTE]
-> To add or change a payment model for a subscribed resource of a change notification, you must create a new change notification subscription with the new payment model; updating an existing change notification does not work.
+> To add or change a payment model for a subscribed resource of a change notification, you must create a new change notification subscription with the new payment model; updating an existing change notification doesn't work.
 
 ### conversationMember
 **conversationMember** subscriptions can be specified to include resource data (**includeResourceData** set to `true`). In that case, encryption is required and the subscription creation fails if an **encryptionCertificate** isn't specified for such subscriptions.
@@ -29,10 +29,10 @@ Use the `Prefer: include-unknown-enum-members` request header to get the followi
 > [!NOTE]
 >`/teams/getAllMembers`, `/chats/getAllMembers`, and `/appCatalogs/teamsApps/{id}/installedToChats/getAllMembers` are metered APIs; [payment models and licensing requirements](/graph/teams-licenses) may apply.
 > `/teams/getAllMembers` and `/chats/getAllMembers` support both `model=A` and `model=B` payment models. `/appCatalogs/teamsApps/{id}/installedToChats/getAllMembers` supports only `model=B`.
-> If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+> If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used.
 
 > [!NOTE]
-> To add or change a payment model for a subscribed resource of a change notification, you must create a new change notification subscription with the new payment model; updating an existing change notification does not work.
+> To add or change a payment model for a subscribed resource of a change notification, you must create a new change notification subscription with the new payment model; updating an existing change notification doesn't work.
 
 ### team, channel, and chat
 **team**, **channel**, and **chat** subscriptions can be specified to include resource data (**includeResourceData** set to `true`). In that case, encryption is required and the subscription creation fails if an **encryptionCertificate** isn't specified for such subscriptions.
@@ -41,10 +41,10 @@ You can use the **notifyOnUserSpecificProperties** query string parameter when y
 
 > [!NOTE]
 >`/appCatalogs/teamsApps/{id}/installedToChats` has [licensing and payment requirements](/graph/teams-licenses), specifically supporting only `model=B`.
-> If no model is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+> If no model is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used.
 
 > [!NOTE]
-> To add or change a payment model for a subscribed resource of a change notification, you must create a new change notification subscription with the new payment model; updating an existing change notification does not work.
+> To add or change a payment model for a subscribed resource of a change notification, you must create a new change notification subscription with the new payment model; updating an existing change notification doesn't work.
 
 #### Request example
 
