@@ -186,7 +186,7 @@ Content-type: application/json
   "truncated": true
 } -->
 ```http
-HTTP/1.1 422
+HTTP/1.1 422 Unprocessable Entity
 Content-Type: application/json
 
 {

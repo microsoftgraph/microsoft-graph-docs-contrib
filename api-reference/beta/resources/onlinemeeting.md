@@ -215,7 +215,9 @@ The following JSON representation shows the resource type.
       Uri path requires navigating into unknown object hierarchy: missing property 'registration' on 'onlineMeeting'. Possible issues:
      1) Doc bug where 'registration' isn't defined on the resource.
      2) Doc bug where 'registration' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
-     3) Doc bug where 'onlineMeeting' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+     3) Doc bug where 'onlineMeeting' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation.",
+    "Error: microsoft.graph.onlineMeeting/aiInsights:
+      Referenced type microsoft.graph.callAiInsight is not defined in the doc set! Potential suggestion: microsoft.graph.call"
   ]
 }
 -->
