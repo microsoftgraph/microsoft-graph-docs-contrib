@@ -23,9 +23,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "authentication_list_phonemethods", 
   "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/phoneMethods"]
  } -->
-[!INCLUDE [permissions-table](../includes/permissions/authentication-list-phonemethods-2-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/authentication-list-phonemethods-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 

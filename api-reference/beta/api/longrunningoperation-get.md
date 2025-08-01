@@ -29,6 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "longrunningoperation_get", 
   "requestUrls": ["GET /identityGovernance/roleManagementAlerts/operations/{longRunningOperationId}"]
  } -->
 [!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-permissions.md)]
@@ -39,6 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "longrunningoperation_get_2", 
   "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/operations/{id}"]
  } -->
 [!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-2-permissions.md)]
