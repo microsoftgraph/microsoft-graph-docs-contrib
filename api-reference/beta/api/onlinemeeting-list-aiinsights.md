@@ -14,14 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with
+### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with the following:
 
 <details>
   <summary>📁 Online meetings</summary>
 
-### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an online meeting 
+### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an online meeting
 
 > [!NOTE]
+>
 > * This API has license requirements. For more information, see [License requirements for Teams meeting AI insights APIs](/graph/teams-licenses#license-requirements-for-teams-meeting-ai-insights-apis).
 > * This API works differently in one or more national clouds. For more information, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
@@ -144,9 +145,10 @@ Content-Type: application/json
 <details>
   <summary>📁 Ad hoc calls</summary>
 
-### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [ad hoc call](/graph/api/resources/adhoccall) 
+### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [ad hoc call](/graph/api/resources/adhoccall)
 
 > [!NOTE]
+>
 > * This API has license requirements. For more information, see [License requirements for Teams meeting AI insights APIs](/graph/teams-licenses#license-requirements-for-teams-meeting-ai-insights-apis).
 > * This API works differently in one or more national clouds. For more information, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
