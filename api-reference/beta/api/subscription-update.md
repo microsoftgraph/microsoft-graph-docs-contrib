@@ -118,8 +118,10 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 
 ### onlineMeetings, presence
 
-**onlineMeetings** and **presence** subscriptions require [encryption](/graph/change-notifications-with-resource-data) for notifications with resource data. Subscription creation fails if [encryptionCertificate](../resources/subscription.md) and [encryptionCertificateId](../resources/subscription.md) aren't specified if resource data is desired in notifications.
-For details about presence and online meeting subscriptions, see [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence) and [Get change notifications for online meetings](/graph/changenotifications-for-onlinemeeting).
+**onlineMeetings** and **presence** subscriptions require encryption for notifications with resource data. Subscription creation fails if **encryptionCertificate** and **encryptionCertificateId** aren't specified if resource data is desired in notifications. For more information, see:
+- [Set up Microsoft Graph change notifications with resource data (rich notifications)](/graph/change-notifications-with-resource-data).
+- [Get change notifications for online meetings](/graph/changenotifications-for-onlinemeeting).
+- [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence)
 
 ### virtualEventWebinar
 
