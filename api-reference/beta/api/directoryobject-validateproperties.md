@@ -225,10 +225,7 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-      "Error: directoryobjectvalidatepropertiesinvalidrequest:
-      Resource type was null or missing in response metadata, so we assume there is no response to validate."
-  ]
+  "suppressions": []
 }-->
 
 

@@ -175,10 +175,10 @@ The following example shows how to create a [news link page](../resources/newsli
 The following example shows a request.
 
 # [HTTP](#tab/http)
-<!-- { 
-  "blockType": "request", 
-  "name": "create-newslinkpage-multipart", 
-  "scopes": "sites.readwrite.all" 
+<!-- {
+  "blockType": "request",
+  "name": "create-newslinkpage-multipart",
+  "scopes": "sites.readwrite.all"
 } -->
 ```http
 POST https://graph.microsoft.com/beta/sites/c1370818-f5e0-4a40-a99b-be4520640642/pages
@@ -298,14 +298,8 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-  "Error: /api/newslinkpage-create.md/create-newslinkpage:
-      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2.",
   "Error: /api/newslinkpage-create.md/create-newslinkpage-multipart:
-      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2.",
-  "Error: /api/newslinkpage-create.md/create-newslinkpage:
-      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2.",
-  "Error: /api/newslinkpage-create.md/create-newslinkpage:
-        Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2."
+      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2."
   ]
 }
 -->
