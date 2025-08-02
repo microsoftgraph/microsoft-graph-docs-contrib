@@ -27,6 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "authentication_post_phonemethods", 
   "requestUrls": ["POST /users/{id | userPrincipalName}/authentication/phoneMethods"]
  } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-post-phonemethods-permissions.md)]
