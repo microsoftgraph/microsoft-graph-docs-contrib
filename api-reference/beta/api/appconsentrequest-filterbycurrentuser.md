@@ -8,6 +8,8 @@ doc_type: apiPageType
 ms.date: 08/01/2025
 ---
 
+# appConsentRequest: filterByCurrentUser
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
