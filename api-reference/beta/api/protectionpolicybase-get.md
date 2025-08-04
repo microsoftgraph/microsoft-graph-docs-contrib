@@ -53,6 +53,8 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
+### Example 1 : Standard GET Protection Policy request
+
 ### Request
 
 The following example shows a request.
@@ -150,6 +152,78 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "interval": "R/P1W",
           "period": "P1Y"
       }
-   ]
+   ],
+   "isEnabled" : true
+}
+```
+
+### Example 2: Use $select to retrieve specific properties of a Protection Policy
+
+To retrieve specific properties, use the OData `$select` query parameter. For example, to return id,displayName,status and protectionPolicyArtifactCount, add the following query expression to your query
+`$select=id,displayName,status,protectionPolicyArtifactCount`
+
+### Request
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "protectionpolicybase_get"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e?$select=id,displayName,status,protectionPolicyArtifactCount
+Authorization: Bearer <Access-Token>
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/protectionpolicybase-get-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/protectionpolicybase-get-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/protectionpolicybase-get-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/protectionpolicybase-get-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/protectionpolicybase-get-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/protectionpolicybase-get-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/protectionpolicybase-get-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+``` http
+HTTP/1.1 200 OK
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
+
+{
+   "@odata.context":"/solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
+   "@odata.id":"/solutions/backupRestore/ProtectionPolicies(845457dc-4bb2-4815-bef3-8628ebd1952e)",
+   "@odata.type": "#microsoft.graph.exchangeProtectionPolicy",
+   "id":"845457dc-4bb2-4815-bef3-8628ebd1952e",
+   "displayName":"Exchange Protection",
+   "status":"updating",
+   "protectionPolicyArtifactCount":
+   {
+    "total": 3,
+    "completed":1,
+    "inProgress":1,
+    "failed":1,
+   }
 }
 ```

@@ -42,7 +42,9 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification of the policy.|
 |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Contains the retention setting details for the policy.|
+|protectionPolicyArtifactCount|[protectionPolicyArtifactCount](../resources/protectionpolicyartifactcount.md)|The count of artifacts in the protection policy by status. Returned only on `$select`.|
 |status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The aggregated status of the protection units associated with the policy. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
+|isEnabled|Boolean|Determines if the policy is enabled or not.|
 
 ### protectionPolicyStatus values
 
