@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "69d90e89-482e-4f11-89be-1f2aef8b293d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionBehaviorOnError",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionBehaviorOnError](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionBehaviorOnError?view=graph-rest-1.0) resource.",
+          "Target": "customExtensionBehaviorOnError"
+        },
+        {
+          "Id": "69d90e89-482e-4f11-89be-1f2aef8b293d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fallbackToMicrosoftProviderOnError",
+          "ChangeType": "Addition",
+          "Description": "Added the [fallbackToMicrosoftProviderOnError](https://learn.microsoft.com/en-us/graph/api/resources/fallbackToMicrosoftProviderOnError?view=graph-rest-1.0) resource.",
+          "Target": "fallbackToMicrosoftProviderOnError"
+        },
+        {
+          "Id": "69d90e89-482e-4f11-89be-1f2aef8b293d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onOtpSendCustomExtensionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onOtpSendCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onOtpSendCustomExtensionHandler?view=graph-rest-1.0) resource.",
+          "Target": "onOtpSendCustomExtensionHandler"
+        },
+        {
+          "Id": "69d90e89-482e-4f11-89be-1f2aef8b293d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onOtpSendHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onOtpSendHandler](https://learn.microsoft.com/en-us/graph/api/resources/onOtpSendHandler?view=graph-rest-1.0) resource.",
+          "Target": "onOtpSendHandler"
+        },
+        {
+          "Id": "69d90e89-482e-4f11-89be-1f2aef8b293d",
+          "ApiChange": "Property",
+          "ChangedApiName": "behaviorOnError",
+          "ChangeType": "Addition",
+          "Description": "Added the **behaviorOnError** property to the [customAuthenticationExtension](https://learn.microsoft.com/en-us/graph/api/resources/customAuthenticationExtension?view=graph-rest-1.0) resource.",
+          "Target": "customAuthenticationExtension"
+        },
+        {
+          "Id": "69d90e89-482e-4f11-89be-1f2aef8b293d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onEmailOtpSendListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onEmailOtpSendListener](https://learn.microsoft.com/en-us/graph/api/resources/onEmailOtpSendListener?view=graph-rest-1.0) resource.",
+          "Target": "onEmailOtpSendListener"
+        },
+        {
+          "Id": "69d90e89-482e-4f11-89be-1f2aef8b293d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onOtpSendCustomExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [onOtpSendCustomExtension](https://learn.microsoft.com/en-us/graph/api/resources/onOtpSendCustomExtension?view=graph-rest-1.0) resource.",
+          "Target": "onOtpSendCustomExtension"
+        }
+      ],
+      "Id": "69d90e89-482e-4f11-89be-1f2aef8b293d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-08-04T05:28:42.0033342Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "852b5456-83eb-4c88-804b-d6ee5d720fe5",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
