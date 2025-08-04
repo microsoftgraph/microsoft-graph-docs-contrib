@@ -39,7 +39,7 @@ GET /users/{userId}/cloudPCs/{id}/getCloudPcLaunchInfo
 
 To get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission.
 
-Starting from Oct 30, 2025, this API will be deprecated and not supported any more.
+Starting from October 30, 2025, this API will be deprecated and not supported anymore.
 
 ``` http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
