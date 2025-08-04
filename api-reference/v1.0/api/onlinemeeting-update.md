@@ -198,7 +198,6 @@ Content-Type: application/json
    "subject":"Patch Meeting Subject",
    "isBroadcast":false,
    "autoAdmittedUsers":"EveryoneInCompany",
-   "outerMeetingAutoAdmittedUsers":null,
    "participants":{
       "organizer":{
          "upn":"upn",

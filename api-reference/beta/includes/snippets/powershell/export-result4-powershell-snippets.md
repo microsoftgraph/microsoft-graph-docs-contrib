@@ -10,7 +10,7 @@ $params = @{
 	displayName = "Export 4"
 	exportCriteria = "partiallyIndexed"
 	exportLocation = "responsiveLocations, nonresponsiveLocations"
-	additionalOptions = "advancedIndexing, subfolderContents, allItemsInFolder, listAttachments, teamsAndYammerConversations, htmlTranscripts, cloudAttachments, includeFolderAndPath, splitSource, condensePaths, friendlyName, optimizedPartitionSize, includeReport"
+	additionalOptions = "advancedIndexing, subfolderContents, allItemsInFolder, listAttachments, teamsAndYammerConversations, htmlTranscripts, cloudAttachments, includeFolderAndPath, splitSource, condensePaths, friendlyName, includeReport"
 	exportFormat = "eml"
 }
 

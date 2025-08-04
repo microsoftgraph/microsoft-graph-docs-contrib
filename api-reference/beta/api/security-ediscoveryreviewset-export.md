@@ -48,8 +48,8 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |description|String| Description of the export. |
-|exportOptions|[microsoft.graph.security.exportOptions](../resources/security-ediscoveryexportoperation.md#exportoptions-values)|Bitwise options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`, `unknownFutureValue`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizePartitionSize`. The `fileInfo` member is deprecated and stopped returning data. The summary and load files are always included. If `originalFiles` isn't selected, only the `tags` member is considered. |
-|exportStructure|[microsoft.graph.security.exportFileStructure](../resources/security-ediscoveryexportoperation.md#exportfilestructure-values)| Bitwise options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`, `unknownFutureValue`, `msg`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `msg`. If `directory` is selected, the format is `msg`, and the export options `splitSource`, `includeFolderAndPath`, and `friendlyName` are disregarded.|
+|exportOptions|[microsoft.graph.security.exportOptions](../resources/security-ediscoveryexportoperation.md#exportoptions-values)|Bitwise options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`, `unknownFutureValue`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`. The `fileInfo` member is deprecated and stopped returning data. The summary and load files are always included. If `originalFiles` isn't selected, only the `tags` member is considered. |
+|exportStructure|[microsoft.graph.security.exportFileStructure](../resources/security-ediscoveryexportoperation.md#exportfilestructure-values)| Bitwise options that control file structure and packaging of the export. Possible values are: `none`, `directory` (deprecated), `pst`, `unknownFutureValue`, `msg`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `msg`. The `directory` member is deprecated. It remains in beta for backward compatibility. Going forward, use either `pst` or `msg`. |
 |outputName|String| Name of the export. Required. |
 |azureBlobContainer (deprecated)|String| When you export to your own Azure storage account, the value is the container URL. The **azureBlobContainer** property is deprecated and stopped returning data. |
 |azureBlobToken (deprecated)|String| When you export to your own Azure storage account, SAS token for the container URL. The **azureBlobToken** property is deprecated and stopped returning data. |
@@ -76,7 +76,7 @@ Content-Type: application/json
 {
     "outputName": "Export via API",
     "description": "Export for the Contoso investigation",
-    "exportOptions": "originalFiles, tags, splitSource, includeFolderAndPath, friendlyName, condensePaths, optimizedPartitionSize",
+    "exportOptions": "originalFiles, tags, splitSource, includeFolderAndPath, friendlyName, condensePaths",
     "exportStructure": "msg"
 }
 ```
@@ -122,4 +122,3 @@ The following example shows a response.
 ``` http
 HTTP/1.1 202 Accepted
 ```
-
