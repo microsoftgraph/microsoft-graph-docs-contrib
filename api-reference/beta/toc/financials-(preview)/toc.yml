@@ -130,13 +130,13 @@ items:
   items:
   - name: Item
     href: ../../resources/dynamics-item.md
-  - name: Get item
-    href: ../../api/dynamics-item-get.md
-  - name: Create item
+  - name: Create
     href: ../../api/dynamics-create-item.md
-  - name: Update item
+  - name: Get
+    href: ../../api/dynamics-item-get.md
+  - name: Update
     href: ../../api/dynamics-item-update.md
-  - name: Delete item
+  - name: Delete
     href: ../../api/dynamics-item-delete.md
 - name: Item category
   items:
