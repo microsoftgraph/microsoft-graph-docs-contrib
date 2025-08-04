@@ -264,7 +264,7 @@ Use the **iconId** property on the [teamwork: sendActivityNotificationToRecipien
 
 ### Security
 
-Added the **customDetails** property to the security alert resource, a dictionary with user-defined key-value pairs. It can be used with the [Get](/graph/api/resources/security-alert) and [Update](/graph/api/resources/security-alert-update) methods.
+Added the **customDetails** property to the security alert resource, a dictionary with user-defined key-value pairs. It can be used with the [Get](/graph/api/resources/security-alert) method.
 
 ## March 2025: New and generally available
 
@@ -283,9 +283,9 @@ Use the **autopatch** property on [cloudPcProvisioningPolicy](/graph/api/resourc
 ### Identity and access | Identity and sign-in
 
 - Deprecated the following resources and their associated APIs that support the Microsoft Entra lifecycle announcements APIs. The APIs will stop returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
-  - [announcement](/graph/api/resources/announcement)
-  - [changeItemBase](/graph/api/resources/changeitembase)
-  - [roadmap](/graph/api/resources/roadmap)
+  - **announcement**
+  - **changeItemBase**
+  - **roadmap**
 - Use the **applicationFilter** property on [conditionalAccessApplications](/graph/api/resources/conditionalaccessapplications) to define the dynamic-application-syntax rule to include or exclude cloud applications.
 
 ### Microsoft Graph connector
@@ -601,7 +601,7 @@ While [restoring soft-deleted users](/graph/api/directory-deleteditems-restore?v
 
 ### Identity and access | Identity and sign-in
 
-- Use Microsoft Graph APIs to stay informed about the latest [product updates](/graph/api/resources/changeitembase?view=graph-rest-beta&preserve-view=true), including the [product roadmap](/graph/api/resources/roadmap?view=graph-rest-beta&preserve-view=true) and [change announcements](/graph/api/resources/announcement?view=graph-rest-beta&preserve-view=true), the programmatic alternative to the *What's new* tab on the Microsoft Entra admin center.
+- Use Microsoft Graph APIs to stay informed about the latest Microsoft Entra product updates, including the product roadmap and change announcements, the programmatic alternative to the *What's new* tab on the [Microsoft Entra admin center](https://entra.microsoft.com).
 - You can now manage hardware OATH tokens for your organization and users programmatically via the following Microsoft Graph APIs:
   - [hardwareOathTokenAuthenticationMethodDevice resource type and its associated methods](/graph/api/resources/hardwareoathtokenauthenticationmethoddevice?view=graph-rest-beta&preserve-view=true) to manage the hardware tokens in your tenant, including assigning to users
   - [hardwareOathAuthenticationMethod resource type and its associated methods](/graph/api/resources/hardwareoathauthenticationmethod?view=graph-rest-beta&preserve-view=true) to manage tokens that are already assigned to users by activating or deactivating them
@@ -1887,7 +1887,7 @@ Manage additional resources, such as a Kubernetes account or service, or a stora
 Set as part of [authentication behaviors](/graph/api/resources/authenticationBehaviors?view=graph-rest-beta&preserve-view=true) a requirement that a multitenant resource [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) should have a service principal in the resource tenant before the application is granted access tokens.
 
 ### Change notifications
-Subscribe to changes when any [recording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) becomes available for a specific meeting, or when any meeting recording becomes available in a tenant. For more information, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true).
+Subscribe to changes when any [recording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) becomes available for a specific meeting, or when any meeting recording becomes available in a tenant. For more information, see [Use the Microsoft Graph API to get change notifications](/graph/change-notifications-overview).
 
 ### Device and app management | Cloud PC
 - Set up an [alert rule](/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta&preserve-view=true) by using a rule template for a grace period scenario. This type of an alert rule triggers an alert on the Microsoft Endpoint Manager admin center when a license or assignment change happens to the user and the Cloud PC enters a grace period. For more information about Cloud PC grace periods, see [Device management overview for Cloud PCs](/windows-365/enterprise/device-management-overview). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=429c062a-4b3f-4ea1-ab45-d399ff6818cc)_.
@@ -2014,7 +2014,7 @@ Use the APIs for Microsoft Entra Internet Access and Microsoft Entra Private Acc
 - In addition to [getting](/graph/api/webpart-get?view=graph-rest-beta&preserve-view=true) or [listing](/graph/api/webpart-list?view=graph-rest-beta&preserve-view=true) one or more [web part](/graph/api/resources/webpart?view=graph-rest-beta&preserve-view=true) resources on a [page](/graph/api/resources/sitepage?view=graph-rest-beta&preserve-view=true), you can now [create](/graph/api/sitepage-create-webpart?view=graph-rest-beta&preserve-view=true), [update](/graph/api/webpart-update?view=graph-rest-beta&preserve-view=true), or [delete](/graph/api/webpart-delete?view=graph-rest-beta&preserve-view=true) a web part.
 
 ### Teamwork and communications | Calls and online meetings
-Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true) [for transcripts of a specific online meeting](/graph/teams-changenotifications-callrecording-and-calltranscript?view=graph-rest-beta&preserve-view=true#subscribe-to-transcripts-available-for-a-particular-online-meeting), or [for transcripts of any online meeting in a tenant](/graph/teams-changenotifications-callrecording-and-calltranscript?view=graph-rest-beta&preserve-view=true#subscribe-to-transcripts-available-at-the-tenant-level).
+Subscribe to [change notifications](/graph/change-notifications-overview) [for transcripts of a specific online meeting](/graph/teams-changenotifications-callrecording-and-calltranscript?view=graph-rest-beta&preserve-view=true#subscribe-to-transcripts-available-for-a-particular-online-meeting), or [for transcripts of any online meeting in a tenant](/graph/teams-changenotifications-callrecording-and-calltranscript?view=graph-rest-beta&preserve-view=true#subscribe-to-transcripts-available-at-the-tenant-level).
 
 ### Teamwork and communications | Devices
 [Listing](/graph/api/teamworkdevice-list?view=graph-rest-beta&preserve-view=true) teamwork devices now includes SIP analog devices provisioned for the tenant. These SIP analog devices are legacy endpoints such as elevator phones, parking lot phones, or factory floor devices, registered with Microsoft Teams through the SIP Gateway.
