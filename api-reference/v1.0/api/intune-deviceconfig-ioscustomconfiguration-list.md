@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-ioscustomconfiguration-list-list-ioscustomconfigurations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-ioscustomconfiguration-list-list-ioscustomconfigurations-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-ioscustomconfiguration-list-list-ioscustomconfigurations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

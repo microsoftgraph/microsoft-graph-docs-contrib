@@ -5,10 +5,11 @@ author: "eringreenlee"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 08/01/2025
 ---
 
 # appConsentRequest: filterByCurrentUser
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -18,6 +19,7 @@ Retrieve a collection of [appConsentRequest](../resources/appconsentrequest.md) 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "appconsentrequest_filterbycurrentuser" } -->
@@ -34,6 +36,7 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 ```
 
 ## Function parameters
+
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
@@ -42,14 +45,17 @@ The following table shows the parameters that can be used with this function.
 |on|consentRequestFilterByCurrentUserOptions|Filter to query **appConsentRequest** objects for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
 
 ## Query parameters
+
 This function *requires* the `$filter` (`eq`) OData query parameter to return a collection of [userConsentRequest](../resources/userconsentrequest.md) objects for which the status is `InProgress`. The function also supports the `$select` query parameter. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
@@ -59,7 +65,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -69,14 +77,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='reviewer')?$filter=userConsentRequests/any(u:u/status eq 'InProgress')
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/appconsentrequest-filterbycurrentuser-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/appconsentrequest-filterbycurrentuser-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/appconsentrequest-filterbycurrentuser-go-snippets.md)]
@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 ---
 
 ### Response
-The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -146,4 +145,3 @@ Content-Type: application/json
     ]
 }
 ```
-

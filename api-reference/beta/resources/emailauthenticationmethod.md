@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Email
-ms.date: 07/19/2024
+ms.date: 07/24/2025
 ---
 
 # emailAuthenticationMethod resource type
