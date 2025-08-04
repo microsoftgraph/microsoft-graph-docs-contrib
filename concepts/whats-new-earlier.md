@@ -264,7 +264,7 @@ Use the **iconId** property on the [teamwork: sendActivityNotificationToRecipien
 
 ### Security
 
-Added the **customDetails** property to the security alert resource, a dictionary with user-defined key-value pairs. It can be used with the [Get](/graph/api/resources/security-alert) and **Update** methods.
+Added the **customDetails** property to the security alert resource, a dictionary with user-defined key-value pairs. It can be used with the [Get](/graph/api/resources/security-alert) method.
 
 ## March 2025: New and generally available
 
