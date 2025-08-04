@@ -601,7 +601,7 @@ While [restoring soft-deleted users](/graph/api/directory-deleteditems-restore?v
 
 ### Identity and access | Identity and sign-in
 
-- Use Microsoft Graph APIs to stay informed about the latest **product updates**, including the **product roadmap** and **change announcements**, the programmatic alternative to the *What's new* tab on the Microsoft Entra admin center.
+- Use Microsoft Graph APIs to stay informed about the latest Microsoft Entra product updates, including the product roadmap and change announcements, the programmatic alternative to the *What's new* tab on the [Microsoft Entra admin center](https://entra.microsoft.com).
 - You can now manage hardware OATH tokens for your organization and users programmatically via the following Microsoft Graph APIs:
   - [hardwareOathTokenAuthenticationMethodDevice resource type and its associated methods](/graph/api/resources/hardwareoathtokenauthenticationmethoddevice?view=graph-rest-beta&preserve-view=true) to manage the hardware tokens in your tenant, including assigning to users
   - [hardwareOathAuthenticationMethod resource type and its associated methods](/graph/api/resources/hardwareoathauthenticationmethod?view=graph-rest-beta&preserve-view=true) to manage tokens that are already assigned to users by activating or deactivating them
