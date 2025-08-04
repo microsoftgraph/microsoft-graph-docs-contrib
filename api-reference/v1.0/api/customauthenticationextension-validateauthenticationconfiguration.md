@@ -55,11 +55,11 @@ POST /identity/customAuthenticationExtensions/validateAuthenticationConfiguratio
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, provide a JSON object with the following parameters.
 
-The following table shows the parameters that can be used with this action. Supply a endpointConfiguration and authenticationConfiguration if querying at the root level. Otherwise, for a specific custom extension, Do not supply a request body for this method.
+Supply a **endpointConfiguration** and **authenticationConfiguration** if querying at the root level. Otherwise, for a specific custom extension, don't supply a request body for this method.
 
-|Parameter|Type|Description|
+|Property|Type|Description|
 |:---|:---|:---|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The HTTP endpoint for the custom authentication extension to be validated.|
 |authenticationConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The authentication configuration for the custom authenticaion extension to validate.|
