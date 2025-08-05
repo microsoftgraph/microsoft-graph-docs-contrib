@@ -5,7 +5,7 @@ author: "v-sdhakshina"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
-ms.date: 11/07/2024
+ms.date: 08/05/2025
 ---
 
 # Get change notifications for meeting transcripts and recordings using Microsoft Graph
@@ -59,7 +59,7 @@ Content-Type: application/json
 **For ad hoc calls**
 
 To obtain change notifications for any transcript available for any ad hoc call in a tenant, subscribe to `/communications/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
-The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports [ad hoc calls](graph/api/resources/adhoccall).
+The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta).
 
 > **Note:** This resource type is available only on the `/beta` endpoint.
 
@@ -138,7 +138,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 ## Subscribe to transcripts available for a particular ad hoc call
 
-To get change notifications for any transcript available for a particular ad hoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [ad hoc calls](graph/api/resources/adhoccall).
+To get change notifications for any transcript available for a particular ad hoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta).
 
 > **Note:** This resource type is available only on the `/beta` endpoint.
 
