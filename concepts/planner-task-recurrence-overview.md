@@ -34,7 +34,7 @@ This section describes a real-life scenario for recurring tasks, to illustrate t
 
 The following example involves a report that must be completed regularly and utilizes a recurring task to track completion of the report.
 
-The report and its associated task are due every 2 weeks on Friday; the series started on May 14, 2021. The first report is due on that date, Friday, May 14. Fast forward to January 7, 2022, 34 weeks later. The person who did the reports took some time off in December, and nobody completed the reports. The current recurring task (and corresponding report) is due on December 10. The report and its associated task are now 4 weeks overdue.
+The report and its associated task are due every 2 weeks on Friday; the series started on Might 14, 2021. The first report is due on that date, Friday, Might 14. Fast forward to January 7, 2022, 34 weeks later. The person who did the reports took some time off in December, and nobody completed the reports. The current recurring task (and corresponding report) is due on December 10. The report and its associated task are now 4 weeks overdue.
 
 >**Note:** At this point, the contrast between recurring meetings and events becomes apparent. Meetings don't need to be _marked complete_ in order for an automated system to schedule the next meeting on the calendar. Completing an overdue task can generate another task that is due in the past, but there is no concept of _completing a meeting in the past_. The next instance of a meeting is always in the future, based on _today's date_. The _today's date_ isn't used to calculate due dates of recurring tasks, in order to avoid losing track of late work.
 
@@ -145,7 +145,7 @@ Note the difference of Thursday 2/10 vs. Thursday 2/3. When **firstDayOfWeek** =
 
 ### Notes about the schedule and due date
 
-The **dueDateTime** may be edited by clients to have a different value (including `null`), without affecting the schedule and the **nextOccurrenceDateTime**. For example, if a task is late and the due date is changed to accommodate that lateness, the next task in the series appears as originally scheduled, unless the **pattern** and/or the **patternStartDateTime** are explicitly updated. Hence, postponing the due date doesn't result in _skipping dates_ according to the defined schedule. This differs from a _meeting_ model, where _today's date_ plays a role in determining when the next meeting occurs. Knowing _today's date_ is relevant for calculating the next meeting or event date, but it isn't relevant for calculating the next task due date.
+The **dueDateTime** might be edited by clients to have a different value (including `null`), without affecting the schedule and the **nextOccurrenceDateTime**. For example, if a task is late and the due date is changed to accommodate that lateness, the next task in the series appears as originally scheduled, unless the **pattern** and/or the **patternStartDateTime** are explicitly updated. Hence, postponing the due date doesn't result in _skipping dates_ according to the defined schedule. This differs from a _meeting_ model, where _today's date_ plays a role in determining when the next meeting occurs. Knowing _today's date_ is relevant for calculating the next meeting or event date, but it isn't relevant for calculating the next task due date.
 
 #### Example 1: Changing the pattern with and without changes to patternStartDateTime
 
@@ -292,7 +292,7 @@ The **recurrence.seriesId** property on each **plannerTask** is an identifier th
 > **Note:**
 >
 > - If some tasks in the series have been deleted, the indices might contain gaps.
-> - If users have moved the recurring series to a different plan, then you need to look in other plans to see other tasks in the series; however, users are typically primarily interested in the recurring series within one plan. Tasks may not be moved across group boundaries; if all the plans in a group are queried, you can find all the tasks that could have been moved out of the original plan.
+> - If users have moved the recurring series to a different plan, then you need to look in other plans to see other tasks in the series; however, users are typically primarily interested in the recurring series within one plan. Tasks might not be moved across group boundaries; if all the plans in a group are queried, you can find all the tasks that could have been moved out of the original plan.
 
 ## REST operation examples
 
