@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "universal-print"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Subscribe to change notifications from cloud printing APIs using Microsoft Graph

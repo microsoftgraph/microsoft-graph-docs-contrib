@@ -4,6 +4,7 @@ description: "Get started using the Microsoft Graph Toolkit to build a SharePoin
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Build a SharePoint web part with the Microsoft Graph Toolkit

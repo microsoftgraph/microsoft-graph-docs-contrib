@@ -4,6 +4,7 @@ description: "In addition to using the Microsoft Graph API to read and write dat
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Access data and methods by navigating Microsoft Graph

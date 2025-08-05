@@ -9,6 +9,7 @@ ms.subservice: entra-sign-in
 ms.date: 03/17/2025
 
 #customer intent: As a developer, I want to identify and remediate identity-based risks using ID Protection APIs so that I can ensure the security of user accounts.
+ms.topic: how-to
 ---
 
 # Identify and remediate risks by using identity protection APIs

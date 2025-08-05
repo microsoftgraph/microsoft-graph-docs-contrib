@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "teams"
 ms.date: 11/07/2024
 ms.custom: sfi-image-nochange
+ms.topic: article
 ---
 
 # Payment models and licensing requirements for Microsoft Teams APIs
