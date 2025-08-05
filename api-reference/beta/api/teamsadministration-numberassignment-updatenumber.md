@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code.
 
 #### Request
 
-The following example shows a request.
+The following example shows a request to update `locationId` of a telephone number.
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber1",
@@ -86,7 +86,6 @@ Content-Type: application/json
 #### Response
 
 The following example shows the response.
-
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -94,7 +93,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.teamsAdministration.telephoneNumberManagement)"
 }
 -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 ```
@@ -103,8 +102,7 @@ Content-Type: application/json
 
 #### Request
 
-The following example shows a request.
-
+The following example shows a request to update `networkSiteId` of a telephone number.
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber2",
@@ -131,7 +129,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.teamsAdministration.telephoneNumberManagement)"
 }
 -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 ```
@@ -140,8 +138,7 @@ Content-Type: application/json
 
 #### Request
 
-The following example shows a request.
-
+The following example shows a request to update `reverseNumberLookupOptions` for telephone number associated with resource account.
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber3",
@@ -153,7 +150,7 @@ Content-Type: application/json
 
 {
   "telephoneNumber": "+12061234567",
-  "reverseNumberLookupOptions": [ “skipInternalVoip” ],
+  "reverseNumberLookupOptions": ["skipInternalVoip"],
 }
 ```
 
@@ -168,7 +165,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.teamsAdministration.telephoneNumberManagement)"
 }
 -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 ```
@@ -177,7 +174,7 @@ Content-Type: application/json
 
 #### Request
 
-The following example shows a request.
+The following example shows a request to update `locationId` of a telephone number.
 
 <!-- {
   "blockType": "request",
@@ -204,7 +201,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.teamsAdministration.telephoneNumberManagement)"
 }
 -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 ```

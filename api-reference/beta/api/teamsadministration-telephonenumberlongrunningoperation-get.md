@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/operations('QXNzaWdubWVudHw2Y2E4Yjc0Ni00YzgxLTRhY2EtOTUyNi1jZmNjNGRiYWYyMmI')
+GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/operations{'QXNzaWdubWVudHw2Y2E4Yjc0Ni00YzgxLTRhY2EtOTUyNi1jZmNjNGRiYWYyMmI'}
 ```
 
 ### Response

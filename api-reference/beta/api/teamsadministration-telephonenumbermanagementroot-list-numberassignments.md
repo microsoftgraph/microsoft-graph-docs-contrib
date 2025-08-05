@@ -228,9 +228,78 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$top=100&$skip=200
 ```
 
-Response
+#### Response
 
-Same style response as Example 1 with telephone numbers showing between 100 and 200 sequence in the list.
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAdministration.numberAssignment"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.teamsAdministration.numberAssignment",
+    "id": "YmMyNjMyZTMtNzUwYy00N2Q3LWFlYWUtOWZlZTAzNWJjMGM3fCsxMjAyMzQ1Njc4OA",
+    "telephoneNumber": "+112345",
+    "operatorId": "7a205197-8e59-487d-b9fa-3fc1b108f1e5",
+    "numberType": "directRouting",
+    "activationState": "activated",
+    "capabilities": [
+      "conferenceAssignment",
+        "voiceApplicationAssignment",
+        "userAssignment"
+    ],
+    "locationId": null,
+    "civicAddressId": null,
+    "networkSiteId": null,
+    "assignmentTargetId": "22ed44ab-7759-4649-818e-6af3242dbc5d",
+    "assignmentCategory": "primary",
+    "portInStatus": null,
+    "assignmentStatus": "userAssigned",
+    "isoCountryCode": null,
+    "city": null,
+    "numberSource": "online",
+    "supportedCustomerActions": [
+      "locationUpdate"
+    ],
+    "reverseNumberLookupOptions": []
+  },
+    "value": {
+    "@odata.type": "#microsoft.graph.teamsAdministration.numberAssignment",
+    "id": "YmMyNjMyZTMtNzUwYy00N2Q3LWFlYWUtOWZlZTAzNWJjMGM3fCsxMjAyMzQ1Njc4OQ",
+    "telephoneNumber": "+12052582895",
+    "operatorId": "0019adbc-b82a-47b4-a799-4e993a9982f1",
+    "numberType": "callingPlan",
+    "activationState": "activated",
+    "capabilities": [
+      "conferenceAssignment"
+    ],
+    "locationId": null,
+    "civicAddressId": null,
+    "networkSiteId": null,
+    "assignmentTargetId": "207a6836-d031-4764-a9d8-c1193f455f21",
+    "assignmentCategory": "primary",
+    "portInStatus": null,
+    "assignmentStatus": "conferenceAssigned",
+    "isoCountryCode": "US",
+    "city": "Clanton",
+    "numberSource": "online",
+    "supportedCustomerActions": [
+      "locationUpdate",
+       "release"
+    ],
+    "reverseNumberLookupOptions": []
+  }
+  
+}
+```
 
 ### Example 4 
 
