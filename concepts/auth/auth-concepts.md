@@ -87,7 +87,7 @@ As a developer, you decide which Microsoft Graph permissions to request for your
 
 - May be preauthorized for the application by an administrator.
 - May be consented by the user directly.
-- If not preauthorized, may require administrator privileges to grant consent. For example, for permissions with a greater potential security impact.
+- If not preauthorized, might require administrator privileges to grant consent. For example, for permissions with a greater potential security impact.
 
 For more information about permissions and consent, see [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview#consent).
 

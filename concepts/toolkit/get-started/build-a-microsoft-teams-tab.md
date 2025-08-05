@@ -145,7 +145,7 @@ Add your component between the `<></>` at the bottom of the file:
 1. Select a target Microsoft 365 application where the personal tabs can run: **Debug in Teams**, **Debug in Outlook**, or **Debug in the Microsoft 365 app**, and choose **Run and Debug**.
 
 > **Note**
-> If you receive the HTTPS error when running your tab `It looks like the webpage at **https://localhost:53000/index.html#/tab** might be having issues, or it may have moved permanently to a new web address`, see the following articles:
+> If you receive the HTTPS error when running your tab `It looks like the webpage at **https://localhost:53000/index.html#/tab** might be having issues, or it might have moved permanently to a new web address`, see the following articles:
 >
 > - [What to do if I do not want to install the development certificate?](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#what-to-do-if-i-do-not-want-to-install-the-development-certificate) (Windows)
 > - [What to do if I do not want to install the development certificate?](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#what-to-do-if-i-do-not-want-to-install-the-development-certificate) (WSL)

@@ -20,7 +20,7 @@ Metering some APIs helps to ensure the health of the current and future Microsof
 For the list of metered APIs and services, see [Metered APIs and services](/graph/metered-api-list).
 
 ## API categories and metering
-Microsoft Graph APIs fall into three categories, and metering may apply based on the category of the API.
+Microsoft Graph APIs fall into three categories, and metering might apply based on the category of the API.
 
 ### Standard APIs
 Most Microsoft Graph APIs are standard APIs. These APIs perform standard operations (create, read, update, delete) on customer content and administrative endpoints. Reasonable access limits for these APIs are defined based on documented [usage thresholds](throttling-limits.md). This helps to ensure a positive customer experience and encourages efficient API usage patterns. Access to standard APIs within the defined usage thresholds is available as part of the user license without additional costs.

@@ -127,7 +127,7 @@ Let customers create new [teams](/graph/api/resources/team) and [channels](/grap
 
 ### Handle incoming calls
 
-It can be overwhelming at times when an organization receives a high volume of business calls and it isn't possible, or productive, to answer all of them. A bot can serve as a front-desk assistant, handling calls by rejecting what may seem like spam calls or redirecting (forwarding) specific calls to a different number. You can use the cloud communications API to:
+It can be overwhelming at times when an organization receives a high volume of business calls and it isn't possible, or productive, to answer all of them. A bot can serve as a front-desk assistant, handling calls by rejecting what might seem like spam calls or redirecting (forwarding) specific calls to a different number. You can use the cloud communications API to:
 
 - [Call a bot](/graph/api/application-post-calls) through VoIP.
 - [Redirect an incoming call](/graph/api/call-redirect) to the appropriate agent if necessary.

@@ -31,7 +31,7 @@ The icon symbol is locked with the name. This is the preferred graphic represent
 
 ### Icon symbol 
 
-Certain environments, such as on small devices, don't provide enough room for the entire logo lockup. In those cases, the icon symbol alone may be used in an app or in digital marketing. When used in an app, use the icon symbol alone only when you need an icon or favicon to represent OneNote.
+Certain environments, such as on small devices, don't provide enough room for the entire logo lockup. In those cases, the icon symbol alone might be used in an app or in digital marketing. When used in an app, use the icon symbol alone only when you need an icon or favicon to represent OneNote.
 
 ![Logo that includes only the icon.  Versions with purple on white and reversed.](images/onenotelogoicon.png)
 

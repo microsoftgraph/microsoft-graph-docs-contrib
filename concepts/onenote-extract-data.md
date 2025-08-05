@@ -132,7 +132,7 @@ The API is optimized for recipes from many popular sites such as *Allrecipes.com
 
 Specify the `extract.recipe` method and the `none` fallback. Also send an `img` element with the `data-render-src` attribute set to the recipe URL. If the API is unable to extract any content, it renders a snapshot of the recipe webpage only.
 
-This scenario potentially provides the most information because the webpage may include additional information, such as customer reviews and suggestions.
+This scenario potentially provides the most information because the webpage might include additional information, such as customer reviews and suggestions.
 
 ```html 
 <div

@@ -149,7 +149,7 @@ The following steps represent the flow of an authorization challenge for an acti
 
 1. Microsoft Graph requires a subscription to be reauthorized.
 
-    The reasons may vary from resource to resource and may change over time. To maintain the subscription, you must respond to a reauthorization event no matter what caused it.
+    The reasons might vary from resource to resource and may change over time. To maintain the subscription, you must respond to a reauthorization event no matter what caused it.
 
 2. Microsoft Graph sends an authorization challenge notification to the **lifecycleNotificationUrl**.
 

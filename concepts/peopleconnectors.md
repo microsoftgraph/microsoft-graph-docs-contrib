@@ -49,7 +49,7 @@ Microsoft 365 Copilot connectors for people data comply with information barrier
 
 ### Data usage 
 
-People data imported via Copilot connectors is considered customer content and is used by Microsoft 365 services as mentioned previously. Within your organization, this data is treated as publicly accessible. In cross-tenant collaboration scenarios and Copilot experiences, connector data may also be used to enhance context and productivity. 
+People data imported via Copilot connectors is considered customer content and is used by Microsoft 365 services as mentioned previously. Within your organization, this data is treated as publicly accessible. In cross-tenant collaboration scenarios and Copilot experiences, connector data might also be used to enhance context and productivity. 
 
 ## Profile information
 

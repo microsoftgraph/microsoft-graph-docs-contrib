@@ -34,7 +34,7 @@ To support these access scenarios, Microsoft Graph exposes *delegated permission
 
 *Delegated permissions*, also called *scopes*, are used in the delegated access scenario. They're permissions that allow the application to act on behalf of a signed-in user. However, the application can't access anything the signed-in user couldn't access.
 
-For example, an application has been granted the *Files.Read.All* delegated permission on behalf of Tom, a user. The application can only read all files in the organization that Tom can already access. Tom may be able to access the files because he has permissions through one of the following ways:
+For example, an application has been granted the *Files.Read.All* delegated permission on behalf of Tom, a user. The application can only read all files in the organization that Tom can already access. Tom might be able to access the files because he has permissions through one of the following ways:
 
 - Tom created or owns the files.
 - The files were shared directly with Tom, or indirectly shared through a team or group membership.

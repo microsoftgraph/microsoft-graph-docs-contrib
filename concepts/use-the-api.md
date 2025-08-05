@@ -47,7 +47,7 @@ After you make a request, a response is returned that includes:
 
 ## HTTP methods
 
-Microsoft Graph uses the HTTP method on your request to determine what your request is doing. Depending on the resource, the API may support operations including actions, functions, or CRUD operations described below.
+Microsoft Graph uses the HTTP method on your request to determine what your request is doing. Depending on the resource, the API might support operations including actions, functions, or CRUD operations described below.
 
 |**Method** |**Description**                             |
 | :----- | :------------------------------------------- |

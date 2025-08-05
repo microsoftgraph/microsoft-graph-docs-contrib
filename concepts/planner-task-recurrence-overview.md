@@ -145,7 +145,7 @@ Note the difference of Thursday 2/10 vs. Thursday 2/3. When **firstDayOfWeek** =
 
 ### Notes about the schedule and due date
 
-The **dueDateTime** may be edited by clients to have a different value (including `null`), without affecting the schedule and the **nextOccurrenceDateTime**. For example, if a task is late and the due date is changed to accommodate that lateness, the next task in the series appears as originally scheduled, unless the **pattern** and/or the **patternStartDateTime** are explicitly updated. Hence, postponing the due date doesn't result in _skipping dates_ according to the defined schedule. This differs from a _meeting_ model, where _today's date_ plays a role in determining when the next meeting occurs. Knowing _today's date_ is relevant for calculating the next meeting or event date, but it isn't relevant for calculating the next task due date.
+The **dueDateTime** might be edited by clients to have a different value (including `null`), without affecting the schedule and the **nextOccurrenceDateTime**. For example, if a task is late and the due date is changed to accommodate that lateness, the next task in the series appears as originally scheduled, unless the **pattern** and/or the **patternStartDateTime** are explicitly updated. Hence, postponing the due date doesn't result in _skipping dates_ according to the defined schedule. This differs from a _meeting_ model, where _today's date_ plays a role in determining when the next meeting occurs. Knowing _today's date_ is relevant for calculating the next meeting or event date, but it isn't relevant for calculating the next task due date.
 
 #### Example 1: Changing the pattern with and without changes to patternStartDateTime
 

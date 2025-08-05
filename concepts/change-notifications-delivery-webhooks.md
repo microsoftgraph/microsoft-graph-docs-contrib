@@ -26,7 +26,7 @@ For details about how to create change notifications, see [Microsoft Graph API c
 
 Before you can receive a notification via webhooks, you must create a publicly accessible, HTTPS-secured endpoint that is addressable via URL. If your endpoint isn't publicly accessible, Microsoft Graph doesn't send notifications to your endpoint.
 
-Your endpoint must provide correct, consistent, and timely HTTP responses in order to reliably receive notifications. If an endpoint doesn't respond in a timely manner, the change notification service may begin to drop notifications. Dropped notifications can't be recovered.
+Your endpoint must provide correct, consistent, and timely HTTP responses in order to reliably receive notifications. If an endpoint doesn't respond in a timely manner, the change notification service might begin to drop notifications. Dropped notifications can't be recovered.
 
 Your endpoint must also continue to remain authenticated to Microsoft Graph, either by continually renewing your subscription or by responding to lifecycle notifications.
 

@@ -32,7 +32,7 @@ If step 3 fails, the transport process constructs a non-delivery report message 
 
 ## 4. Move original message to the Sent Items folder
 After all of this succeeds, transport calls back to the store to assume responsibility for the message. In response, the Exchange store updates the message and
-moves it from the Drafts folder to the Sent Items folder. (Depending on optional message properties, it may move to a different folder or delete the message instead.)
+moves it from the Drafts folder to the Sent Items folder. (Depending on optional message properties, it might move to a different folder or delete the message instead.)
 
 ## 5. Perform policy evaluation and routing
 The next steps taken by transport include policy enforcement, routing, and next-hop delivery. Transport examines recipient email addresses and buckets them according

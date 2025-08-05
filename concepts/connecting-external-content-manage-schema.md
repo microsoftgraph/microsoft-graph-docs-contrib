@@ -182,7 +182,7 @@ A **semantic label** is a well-known tag published by Microsoft that you can ass
 
 You can assign semantic labels using the Graph API or from the **Assign property labels** page when using the SDK. Labels provide semantic meaning and allow your connector data to integrate seamlessly into Microsoft 365 experiences.
 
-For example, different project management tools (like JIRA, Azure DevOps, Asana) may use different terms for the user who created a work item—such as `owner`, `ownedBy`, or `assignedTo`. If your property serves a similar purpose, you can assign the `createdBy` semantic label. 
+For example, different project management tools (like JIRA, Azure DevOps, Asana) might use different terms for the user who created a work item—such as `owner`, `ownedBy`, or `assignedTo`. If your property serves a similar purpose, you can assign the `createdBy` semantic label. 
 
 You can assign semantic labels to your source properties using the graph API or from the **Assign property labels** page while using sdk. Labels provide semantic meaning and let you integrate your connector data into Microsoft 365 experiences.  
 

@@ -6474,7 +6474,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 79c261e0-fe76-4144-aad5-bdc68fbe4037 | 55896846-df78-47a7-aa94-8d3d4442ca7f |
 | DisplayText | Read service health | Read service health |
-| Description | Allows the app to read your tenant's service health information, without a signed-in user. Health information may include service issues or service health overviews. | Allows the app to read your tenant's service health information on behalf of the signed-in user. Health information may include service issues or service health overviews. |
+| Description | Allows the app to read your tenant's service health information, without a signed-in user. Health information might include service issues or service health overviews. | Allows the app to read your tenant's service health information on behalf of the signed-in user. Health information may include service issues or service health overviews. |
 | AdminConsentRequired | Yes | Yes |
 
 ![personal Microsoft accounts][MSA] The *ServiceHealth.Read.All* delegated permission is available for consent in personal Microsoft accounts.
