@@ -4,6 +4,7 @@ description: "Many Microsoft Graph Toolkit components emit custom events. Attach
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Handle events exposed by Microsoft Graph Toolkit components

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: conceptualPageType
 ms.date: 11/05/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Deploy a hotpatch quality update using Windows Autopatch

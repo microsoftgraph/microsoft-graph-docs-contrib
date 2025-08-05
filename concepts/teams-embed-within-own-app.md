@@ -5,6 +5,7 @@ author: "erichui-ms"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Embed Microsoft Teams in your app

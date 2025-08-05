@@ -5,6 +5,7 @@ author: "lauragra"
 ms.localizationpriority: medium
 ms.date: 01/01/2025
 ms.custom: sfi-ga-nochange
+ms.topic: whats-new
 ---
 
 # Microsoft Graph what's new history

@@ -4,6 +4,7 @@ description: "Learn about the disambiguation feature of Microsoft Graph Toolkit 
 ms.localizationpriority: medium
 author: gavinbarron
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Microsoft Graph Toolkit component disambiguation

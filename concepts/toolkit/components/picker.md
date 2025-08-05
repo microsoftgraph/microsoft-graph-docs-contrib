@@ -4,6 +4,7 @@ description: "The Picker component enables generic selection of Microsoft Graph 
 ms.localizationpriority: medium
 author: Mnickii
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Picker component in the Microsoft Graph Toolkit

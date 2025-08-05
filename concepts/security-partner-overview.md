@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Partnering opportunities with the Microsoft Graph Security API

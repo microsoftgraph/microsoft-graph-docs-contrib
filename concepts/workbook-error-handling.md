@@ -5,6 +5,7 @@ author: "grangeryy"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Error handling for Excel APIs
