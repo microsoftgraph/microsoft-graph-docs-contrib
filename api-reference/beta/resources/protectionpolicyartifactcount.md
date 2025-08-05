@@ -34,6 +34,13 @@ None.
 
 The following JSON representation shows the resource type.
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.protectionPolicyArtifactCount",
+  "openType": false
+}
+-->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.protectionPolicyArtifactCount",
