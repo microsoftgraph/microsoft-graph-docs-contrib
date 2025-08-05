@@ -32,8 +32,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |accounts|[microsoft.graph.security.account](../resources/security-account.md) collection| Collection of accounts of the identity in different identity providers.                                                                                              |
 |cloudSecurityIdentifier|String| The cloud security identifier of the identityAccount.                                                                                                                |
-|displayName|String| The display name of the identityAccount.                                                                                                                             |
-|domain|String| The domain name of the identityAccount.                                                                                                                              |
+|displayName|String| The  Active Directory display name of the identityAccount.                                                                                                                             |
+|domain|String| The Active Directory domain name of the identityAccount.                                                                                                                              |
 |id|String| Unique identifier to represent the identity account. Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md) |
 |isEnabled|Boolean| Boolean indicating if the identityAccounts is enabled.                                                                                                               |
 |onPremisesSecurityIdentifier|String| The on-premises security identifier of the identityAccount.                                                                                                          |
