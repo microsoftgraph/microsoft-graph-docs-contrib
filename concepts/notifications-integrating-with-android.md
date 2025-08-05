@@ -298,7 +298,7 @@ public void onMessageReceived(RemoteMessage message) {
         try {
             ConnectedDevicesPlatform platform = ConnectedDevicesManager.getConnectedDevicesManager(getApplicationContext()).getPlatform();
 
-            // NOTE: it may be useful to attach completion to this async in order to know when the notification is done being processed.
+            // NOTE: it might be useful to attach completion to this async in order to know when the notification is done being processed.
             // This would be a good time to stop a background service or otherwise cleanup.
             platform.processNotificationAsync(notification);
         } catch (Exception e) {

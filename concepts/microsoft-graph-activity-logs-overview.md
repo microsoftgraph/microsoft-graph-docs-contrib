@@ -113,7 +113,7 @@ MicrosoftGraphActivityLogs
 | summarize RequestCount=dcount(RequestId) by UserId, RiskState, resourcePath, RequestMethod, ResponseStatusCode
 ```
 
-The following Kusto query allows you to correlate the Microsoft Graph activity logs and sign-in logs. Activity logs from Microsoft applications may not all have matching sign-in log entries. For more information, see [Sign-in logs known limitations](/azure/active-directory/reports-monitoring/concept-sign-ins#known-limitations).
+The following Kusto query allows you to correlate the Microsoft Graph activity logs and sign-in logs. Activity logs from Microsoft applications might not all have matching sign-in log entries. For more information, see [Sign-in logs known limitations](/azure/active-directory/reports-monitoring/concept-sign-ins#known-limitations).
 
 ```kusto
 MicrosoftGraphActivityLogs

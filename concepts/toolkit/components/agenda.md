@@ -46,7 +46,7 @@ By default, the `mgt-agenda` component fetches events from the `/me/calendarview
 The following example changes the behavior of the component to fetch data for a specific date and up to three days.
 
 ```html
-<mgt-agenda group-by-day date="May 7, 2019" days="3"></mgt-agenda>
+<mgt-agenda group-by-day date="Might 7, 2019" days="3"></mgt-agenda>
 ```
 
 The following example changes the behavior of the component to fetch data from a specific query.

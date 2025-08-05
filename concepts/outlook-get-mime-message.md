@@ -246,7 +246,7 @@ MIME-Version: 1.0
 Content-Type: text/plain; charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
 
-The press conference will be on May 15. We arranged to have the press gathe=
+The press conference will be on Might 15. We arranged to have the press gathe=
 r at 2pm outside the main entrance.
 
 --_000_MWHPR22MB100769D1513B3DC0F007B2ECD4220MWHPR22MB1007namp_
