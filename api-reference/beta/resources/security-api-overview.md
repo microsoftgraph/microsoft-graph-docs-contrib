@@ -293,7 +293,7 @@ The following are some of the most popular requests for working with the Microso
 | Create content activity|[Create content activity](../api/activitiescontainer-post-contentactivities.md)||
 
 
-You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
+You can use Microsoft Graph [change notifications](/graph/change-notifications-overview) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
 
 ## Next steps
 
@@ -301,7 +301,7 @@ The Microsoft Graph security API can open up new ways for you to engage with dif
 
 - Drill down into [alerts](alert.md), [tiIndicator](tiindicator.md) (preview), [securityAction](securityaction.md) (preview), [secureScore](securescore.md), and [secureScoreControlProfiles](securescorecontrolprofiles.md).
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample queries**, choose **Show more samples** and set the Security category to **On**.
-- Try [subscribing to and receiving notifications](/graph/webhooks) on entity changes.
+- Try [subscribing to and receiving notifications](/graph/change-notifications-overview) on entity changes.
 
 ## Related content
 

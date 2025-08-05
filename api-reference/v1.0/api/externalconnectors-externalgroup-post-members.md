@@ -88,10 +88,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-aad-user-identity-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-aad-user-identity-from-group-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-aad-user-identity-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -167,10 +163,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-aad-group-identity-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-aad-group-identity-from-group-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-aad-group-identity-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -241,10 +233,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-external-group-identity-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-external-group-identity-from-group-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

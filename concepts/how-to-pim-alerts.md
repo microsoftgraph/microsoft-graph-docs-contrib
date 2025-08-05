@@ -48,10 +48,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/how-to-pim-alerts-list-alerts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/how-to-pim-alerts-list-alerts-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/how-to-pim-alerts-list-alerts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -186,10 +182,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/how-to-pim-alerts-get-alert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/how-to-pim-alerts-get-alert-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/how-to-pim-alerts-get-alert-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -261,10 +253,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/how-to-pim-alerts-get-alert-expand-relationships-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/how-to-pim-alerts-get-alert-expand-relationships-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -413,10 +401,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/how-to-pim-alert-get-incidents-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/how-to-pim-alert-get-incidents-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/how-to-pim-alert-get-incidents-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -539,10 +523,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/how-to-pim-alerts-dismiss-alert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/how-to-pim-alerts-dismiss-alert-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/how-to-pim-alerts-dismiss-alert-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -588,10 +568,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/al
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/how-to-pim-alerts-refresh-alert-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/how-to-pim-alerts-refresh-alert-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -650,10 +626,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/how-to-pim-alerts-refresh-all-alerts-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/how-to-pim-alerts-refresh-all-alerts-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -715,10 +687,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/how-to-pim-alerts-update-configuration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/how-to-pim-alerts-update-configuration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/how-to-pim-alerts-update-configuration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -764,10 +732,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/al
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/how-to-pim-alerts-remediate-incident-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/how-to-pim-alerts-remediate-incident-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

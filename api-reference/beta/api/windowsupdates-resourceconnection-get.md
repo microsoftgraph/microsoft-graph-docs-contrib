@@ -69,10 +69,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/resourceConnections/8
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-resourceconnection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-resourceconnection-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-resourceconnection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

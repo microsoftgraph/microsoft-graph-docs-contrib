@@ -93,10 +93,6 @@ DELETE https://graph.microsoft.com/v1.0/me/photo/$value
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-profilephoto-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-profilephoto-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-profilephoto-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

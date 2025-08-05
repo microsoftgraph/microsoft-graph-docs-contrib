@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/beta/me/todo/lists/AAMkADliMmU5YjJlLTVmMmQtNGQzN
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-checklistitem-for-nav-property-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-checklistitem-for-nav-property-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-checklistitem-for-nav-property-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

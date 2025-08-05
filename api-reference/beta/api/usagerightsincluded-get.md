@@ -74,10 +74,6 @@ Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rights-for-sensitivitylabel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-rights-for-sensitivitylabel-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-rights-for-sensitivitylabel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -92,6 +88,10 @@ Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-rights-for-sensitivitylabel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-rights-for-sensitivitylabel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

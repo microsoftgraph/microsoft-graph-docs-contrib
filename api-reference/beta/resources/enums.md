@@ -1606,6 +1606,7 @@ Namespace: microsoft.graph
 | fido |
 | appPassword |
 | unknownFutureValue |
+| externalAuthMethod |
 
 ### authenticationAppAdminConfiguration values
 
@@ -5287,3 +5288,12 @@ Possible values for user account types (group membership), per Windows definitio
 | tot                | 29    | Indicates the time zone is associated with Tonga Time(UTC+13:00).                                             |
 | lint               | 30    | Indicates the time zone is associated with Line Islands Time(UTC+14:00).                                      |
 | unknownFutureValue | 31    | Evolvable enumeration sentinel value. Do not use.                                                             |
+
+### aggregationPeriod values 
+
+|Member|
+|:---|
+|d1|
+|d7|
+|d30|
+|unknownFutureValue|

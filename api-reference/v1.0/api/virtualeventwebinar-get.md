@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/88b245ac-b
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-virtualeventwebinar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-virtualeventwebinar-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-virtualeventwebinar-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

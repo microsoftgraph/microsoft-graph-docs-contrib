@@ -90,10 +90,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-newslinkpage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-newslinkpage-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-newslinkpage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -214,10 +210,6 @@ Content-Type: image/jpeg
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-newslinkpage-multipart-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -311,7 +303,9 @@ Content-Type: application/json
   "Error: /api/newslinkpage-create.md/create-newslinkpage-multipart:
       Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2.",
   "Error: /api/newslinkpage-create.md/create-newslinkpage:
-      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2."
+      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2.",
+  "Error: /api/newslinkpage-create.md/create-newslinkpage:
+        Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2."
   ]
 }
 -->

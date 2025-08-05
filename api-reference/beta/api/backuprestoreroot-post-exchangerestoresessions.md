@@ -98,10 +98,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/exchangerestoresession-create-mailboxrestoreartifacts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/exchangerestoresession-create-mailboxrestoreartifacts-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/exchangerestoresession-create-mailboxrestoreartifacts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -209,10 +205,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/exchangerestoresession-create-granularmailboxrestoreartifacts-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/exchangerestoresession-create-granularmailboxrestoreartifacts-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

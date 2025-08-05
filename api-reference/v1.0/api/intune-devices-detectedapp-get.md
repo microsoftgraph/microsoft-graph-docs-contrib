@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppI
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-devices-detectedapp-get-get-detectedapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-devices-detectedapp-get-get-detectedapp-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-devices-detectedapp-get-get-detectedapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
