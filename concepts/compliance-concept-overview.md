@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Overview of compliance and privacy APIs in Microsoft Graph

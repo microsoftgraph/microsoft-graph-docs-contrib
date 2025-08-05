@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "insights"
 ms.custom: scenarios:getting-started, sfi-ga-nochange
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Customize item insights privacy in Microsoft Graph

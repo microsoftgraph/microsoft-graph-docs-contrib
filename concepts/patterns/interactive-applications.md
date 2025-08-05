@@ -4,6 +4,7 @@ description: "Learn about the integration pattern that uses Microsoft Graph APIs
 author: "OlgaPodo"
 ms.localizationpriority: medium
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Build interactive apps by using Microsoft Graph APIs

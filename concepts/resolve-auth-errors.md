@@ -4,6 +4,7 @@ description: "Find out how to resolve Microsoft Graph 401 and 403 authorization 
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Resolve Microsoft Graph authorization errors

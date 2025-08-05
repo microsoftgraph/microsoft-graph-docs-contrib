@@ -5,6 +5,7 @@ author: "juforan"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Create Outlook events in a shared or delegated calendar

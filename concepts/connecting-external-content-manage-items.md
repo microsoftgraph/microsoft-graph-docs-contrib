@@ -6,6 +6,7 @@ author: mecampos
 doc_type: conceptualPageType
 ms.subservice: search
 ms.date: 11/07/2024
+ms.topic: article
 ---
 <!---<author of this doc: rsamai>--->
 

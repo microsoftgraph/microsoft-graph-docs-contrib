@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.subservice: "onenote"
 ms.date: 06/30/2025
+ms.topic: how-to
 ---
 
 # Get OneNote content and structure

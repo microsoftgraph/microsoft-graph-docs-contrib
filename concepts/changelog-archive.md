@@ -5,6 +5,7 @@ author: "MSGraphDocsVteam"
 ms.localizationpriority: high
 ms.date: 07/08/2024
 ms.custom: sfi-ga-nochange
+ms.topic: article
 ---
 
 # Changelog for Microsoft Graph (Archive)
