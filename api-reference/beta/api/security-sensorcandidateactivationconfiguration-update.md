@@ -1,6 +1,6 @@
 ---
 title: "Update sensorCandidateActivationConfiguration"
-description: "Update a new sensorCandidateActivationConfiguration object."
+description: "Update a sensorCandidateActivationConfiguration object."
 author: "SamuelBenichou"
 ms.date: 07/13/2025
 ms.localizationpriority: medium

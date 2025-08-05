@@ -26,12 +26,12 @@ None.
 
 ## Relationships
 
-|Relationship|Type|Description|
-|:---|:---|:---|
-|healthIssues|[microsoft.graph.security.healthIssue](security-healthissue.md) collection| Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified.|
-|sensors|[microsoft.graph.security.sensor](security-sensor.md) collection| Represents a customer's Microsoft Defender for Identity sensors.|
-|sensorCandidate|[microsoft.graph.security.sensorCandidate](security-sensorcandidate.md) collection| Represents sensors who are ready to be activated.|
-|sensorCandidateActivationConfiguration|[microsoft.graph.security.sensorCandidateActivationConfiguration](security-sensorcandidateactivationconfiguration.md) collection| Represents the activation mode of a sensor.|
+|Relationship|Type| Description                                                                                                                                    |
+|:---|:---|:-----------------------------------------------------------------------------------------------------------------------------------------------|
+|healthIssues|[microsoft.graph.security.healthIssue](security-healthissue.md) collection| Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified. |
+|sensors|[microsoft.graph.security.sensor](security-sensor.md) collection| Represents a customer's Microsoft Defender for Identity sensors.                                                                               |
+|sensorCandidate|[microsoft.graph.security.sensorCandidate](security-sensorcandidate.md) collection| Represents Microsoft Defender for Identity sensors that are ready to be activated.                                                             |
+|sensorCandidateActivationConfiguration|[microsoft.graph.security.sensorCandidateActivationConfiguration](security-sensorcandidateactivationconfiguration.md) collection| Represents the activation mode of a Microsoft Defender for Identity sensor.                                                                    |
 
 ## JSON representation
 

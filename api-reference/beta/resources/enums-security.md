@@ -1069,7 +1069,7 @@ Namespace: microsoft.graph.security
 |:---|
 |manual|
 |automated|
-
+|unknownFutureValue|
 
 <!--
 {

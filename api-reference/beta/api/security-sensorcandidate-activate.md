@@ -1,6 +1,6 @@
 ---
 title: "sensorCandidate: activate"
-description: "Activate sensor candidates for Microsoft Defender for Identity."
+description: "Activate Microsoft Defender for Identity sensors."
 author: "SamuelBenichou"
 ms.date: 07/13/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activate sensor candidates for Microsoft Defender for Identity.
+Activate Microsoft Defender for Identity sensors.
 
 ## Permissions
 
@@ -50,9 +50,9 @@ In the request body, supply a JSON representation of the parameters.
 
 The following table lists the parameters that are required when you call this action.
 
-|Parameter|Type|Description|
-|:---|:---|:---|
-|serverIds|String collection|A collection of server identifiers for the sensor candidates to activate.|
+|Parameter|Type| Description                                                     |
+|:---|:---|:----------------------------------------------------------------|
+|serverIds|String collection| A collection of server identifiers for the sensors to activate. |
 
 ## Response
 
