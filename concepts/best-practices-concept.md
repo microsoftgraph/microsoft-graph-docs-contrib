@@ -127,7 +127,7 @@ When you make a GET request without using `$select` to limit the amount of prope
 For some operations, such as PUT and PATCH (and in some cases POST), if your application doesn't need to make use of a response payload, you can ask the API to return minimal data. Some services already return a `204 No Content` response for PUT and PATCH operations.
 
 > [!NOTE]
-> Request minimal representation responses using the **Prefer** header set to `return=minimal`, where supported. For creation operations, use of this header might not be appropriate because your application might expect to get the service generated `id` for the newly created object in the response.
+> Request minimal representation responses using the **Prefer** header set to `return=minimal`, where supported. For creation operations, use of this header is not appropriate because your application expects to get the service generated `id` for the newly created object in the response.
 
 ### Track changes: delta query and webhook notifications
 
@@ -141,7 +141,7 @@ Use [delta query](delta-query-overview.md) to efficiently keep data up to date.
 
 ### Using webhooks and delta query together
 
-Webhooks and delta query are often used better together, because if you use delta query alone, you need to figure out the right polling interval - too short and this might lead to empty responses, which waste resources, too long and you might end up with stale data. If you use webhook notifications as the trigger to make delta query calls, you get the best of both worlds.
+Webhooks and delta query are often used better together, because if you use delta query alone, you need to figure out the right polling interval - too short and this leads to empty responses, which waste resources, too long and you end up with stale data. If you use webhook notifications as the trigger to make delta query calls, you get the best of both worlds.
 
 Use [webhook notifications](/graph/api/resources/webhooks) as the trigger to make delta query calls. You should also ensure that your application has a backstop polling threshold, in case no notifications are triggered.
 
