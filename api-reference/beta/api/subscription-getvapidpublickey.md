@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Get the public key information required to validate push notifications according to [RFC 8292](https://www.rfc-editor.org/rfc/rfc8292.html) specifications.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).

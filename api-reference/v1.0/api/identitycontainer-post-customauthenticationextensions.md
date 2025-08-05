@@ -23,7 +23,7 @@ Create a new [customAuthenticationExtension](../resources/customauthenticationex
 >
 > You can have a maximum of 100 custom extension policies.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

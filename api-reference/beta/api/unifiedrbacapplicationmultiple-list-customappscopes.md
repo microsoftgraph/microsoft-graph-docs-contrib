@@ -18,7 +18,7 @@ Get a list of [customAppScope](../resources/customappscope.md) objects for an RB
 
 Only the Microsoft Defender XDR Unified RBAC provider is supported.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
