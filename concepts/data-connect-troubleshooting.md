@@ -156,7 +156,7 @@ The following error message indicates that a **Microsoft.GraphServices** type re
 
 ### Developer email missing
 
-When creating a new registration, it may appear successful, but you receive a "Developer email not found" error. This happens when the registration is created with a guest user; use a non-guest user to successfully complete the registration.
+When creating a new registration, it might appear successful, but you receive a "Developer email not found" error. This happens when the registration is created with a guest user; use a non-guest user to successfully complete the registration.
 
 ## Related content
 

@@ -64,7 +64,7 @@ To update incorrect information on a profile card, you need to submit a request.
 
 ### Deleting profile information
 
-Only tenant admins can delete people's data that originates from a source owned by your employer and is exposed in Microsoft 365 experiences via the user profile. Depending on your employer's policies, you may or may not be able to delete the data. Alternatively, your administrator may update a Copilot people data connector configuration to reflect this. 
+Only tenant admins can delete people's data that originates from a source owned by your employer and is exposed in Microsoft 365 experiences via the user profile. Depending on your employer's policies, you might or might not be able to delete the data. Alternatively, your administrator might update a Copilot people data connector configuration to reflect this. 
 
 For more on DSRs, see Microsoft’s guidance on [GDPR and CCPA compliance](https://myaccount.microsoft.com/settingsandprivacy/privacy).  
 

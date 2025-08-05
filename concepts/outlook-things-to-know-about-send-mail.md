@@ -49,7 +49,7 @@ A few services are involved in generating delivery reports and sending them to t
 - When a responsible transport component, which can be a Exchange Online or non-Exchange Online component, determines that one or more recipient email
 addresses are non-deliverable, the component generates non-delivery reports.
 - At the same time, the transport component generates delivery reports if the sender explicitly requested them.
-- The recipient's email service or email client may generate read and non-read notifications, or not at all.
+- The recipient's email service or email client might generate read and non-read notifications, or not at all.
 
 For more information about report messages, see [DSNs and NDRs in Exchange Server](/exchange/mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages).
 

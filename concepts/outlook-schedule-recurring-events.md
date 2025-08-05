@@ -260,9 +260,9 @@ The end date range causes an event to occur on all days that fit the applicable 
 
 | Property | Relevance | Description |
 |----------|-----------|-------------|
-| **endDate** | Required | Specifies the date to stop applying the pattern. Note that the last occurrence of the meeting may not occur on this date if it does not fit the pattern. |
+| **endDate** | Required | Specifies the date to stop applying the pattern. Note that the last occurrence of the meeting might not occur on this date if it does not fit the pattern. |
 | **recurrenceTimeZone** | Optional | Specifies the time zone for the **startDate** and **endDate** properties. If not specified, the time zone of the event is used. |
-| **startDate** | Required | Specifies the date to start applying the pattern. The value of **startDate** MUST correspond to the date value of the **start** property on the [event resource](/graph/api/resources/event). Note that the first occurrence of the meeting may not occur on this date if it does not fit the pattern. |
+| **startDate** | Required | Specifies the date to start applying the pattern. The value of **startDate** MUST correspond to the date value of the **start** property on the [event resource](/graph/api/resources/event). Note that the first occurrence of the meeting might not occur on this date if it does not fit the pattern. |
 | **type** | Required | Must be set to **endDate**. |
 
 #### Examples
@@ -286,7 +286,7 @@ The no end range causes an event to occur on all days that fit the applicable pa
 | Property | Relevance | Description |
 |----------|-----------|-------------|
 | **recurrenceTimeZone** | Optional | Specifies the time zone for the **startDate** property. If not specified, the time zone of the event is used. |
-| **startDate** | Required | Specifies the date to start applying the pattern. The value of **startDate** MUST correspond to the date value of the **start** property on the [event resource](/graph/api/resources/event). Note that the first occurrence of the meeting may not occur on this date if it does not fit the pattern. |
+| **startDate** | Required | Specifies the date to start applying the pattern. The value of **startDate** MUST correspond to the date value of the **start** property on the [event resource](/graph/api/resources/event). Note that the first occurrence of the meeting might not occur on this date if it does not fit the pattern. |
 | **type** | Required | Must be set to `noEnd`. |
 
 #### Examples

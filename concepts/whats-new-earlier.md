@@ -2755,7 +2755,7 @@ Manage the [version history of a document set](/graph/api/resources/documentsetv
 
 ### Teamwork and communications | Messaging
 - Limit a [chat](/graph/api/resources/chat) title to a maximum of 255 characters and characters that are _not_ the colon.
-- [List](/graph/api/chat-list) the chats of a specific user who may not be signed in or is different from the signed-in user, using application permissions.
+- [List](/graph/api/chat-list) the chats of a specific user who might not be signed in or is different from the signed-in user, using application permissions.
 - [List](/graph/api/chat-list) and sort chats starting with the most recent ones.
 
 
@@ -3240,7 +3240,7 @@ Get the URL of a custodian's OneDrive for Business site (**siteWebUrl** property
 - Reviewers of an access review can [record](/graph/api/accessreviewinstancedecisionitem-recordalldecisions?view=graph-rest-beta&preserve-view=true) decisions for which the current user is the reviewer.
 - Configure [the last sign-in date and time of a user as an insight](/graph/api/resources/userLastSignInRecommendationInsightSetting?view=graph-rest-beta&preserve-view=true) to aid reviewers in making decisions for an [access review schedule definition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
 - Configure [the last sign-in date and time of a user as an insight](/graph/api/resources/userSignInInsight?view=graph-rest-beta&preserve-view=true) for a [decision on a user or principal's access in an instance of an access review](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true).
-- The requestor of an access package can provide custom information as part of an [access package resource](/graph/api/resources/accesspackageresource?view=graph-rest-beta&preserve-view=true) that may be used to make approval decisions for the access package.
+- The requestor of an access package can provide custom information as part of an [access package resource](/graph/api/resources/accesspackageresource?view=graph-rest-beta&preserve-view=true) that might be used to make approval decisions for the access package.
 - A requestor can edit the answer to a [question](/graph/api/resources/accessPackageQuestion?view=graph-rest-beta&preserve-view=true) in an [access package assignment policy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true).
 
 ### Reports | Identity and access reports
@@ -4137,7 +4137,7 @@ Production apps can now subscribe to lifecycle notifications of Outlook [message
 - See the Identity and access section of the [October](https://developer.microsoft.com/graph/changelog#october-2020) updates in the changelog for the lists of enhanced APIs.
 
 ### Teamwork
-- GA of the full set of CRUD operations for [conversationMember](/graph/api/resources/conversationmember) and [aadUserConversationMember](/graph/api/resources/aaduserconversationmember). These resources represent a member in a chat or channel conversation, who may or may not be a user in Azure AD.
+- GA of the full set of CRUD operations for [conversationMember](/graph/api/resources/conversationmember) and [aadUserConversationMember](/graph/api/resources/aaduserconversationmember). These resources represent a member in a chat or channel conversation, who might or might not be a user in Azure AD.
 - GA of lifecycle notifications for Teams [chatMessage](/graph/api/resources/chatmessage) resources, to [reduce missing subscriptions and change notifications](change-notifications-lifecycle-events.md).
 
 ### To-do tasks
@@ -4575,7 +4575,7 @@ GA of the [shifts API](/graph/api/resources/shift?view=graph-rest-1.0&preserve-v
 - The [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) and [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) resources are now in parity and have the same properties as each other.
 - Some property and type name clean-up around printer shares:
   - Use the **shared** navigation property of [print](/graph/api/resources/print?view=graph-rest-beta&preserve-view=true) to get the list of printer shares registered in the tenant.
-  - See details in the [May](https://developer.microsoft.com/graph/changelog#may-2020) changelog.
+  - See details in the [May](https://developer.microsoft.com/graph/changelog#might-2020) changelog.
 
 ### Devices and apps | Corporate management
 Intune [May](https://developer.microsoft.com/graph/changelog#may-2020) updates in beta.
@@ -4618,7 +4618,7 @@ of these entities, and use OData cast to trim **directoryObject** results to cer
 - Apply optional password and expiration date/time as parameters of the [invite](/graph/api/driveitem-invite?view=graph-rest-1.0&preserve-view=true) and [create sharing link](/graph/api/driveitem-createlink?view=graph-rest-1.0&preserve-view=true) actions to share a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0&preserve-view=true).
 - Get or set password and expiration date/time of a [permission](/graph/api/resources/permission?view=graph-rest-1.0&preserve-view=true), and track the [identitySet](/graph/api/resources/identityset?view=graph-rest-1.0&preserve-view=true) of users granted the permission to share a **driveItem**.
 - Get the [permission](/graph/api/resources/permission?view=graph-rest-1.0&preserve-view=true) of a [shared drive item](/graph/api/resources/shareddriveitem?view=graph-rest-1.0&preserve-view=true) by using the **permission** navigation property.
-- Limit users with a [sharing link](/graph/api/resources/sharinglink?view=graph-rest-1.0&preserve-view=true) to only view and may not download the contents of a shared**driveItem** on OneDrive for Business or SharePoint.
+- Limit users with a [sharing link](/graph/api/resources/sharinglink?view=graph-rest-1.0&preserve-view=true) to only view and might not download the contents of a shared**driveItem** on OneDrive for Business or SharePoint.
 
 ### Identity and access
 - To manage roles and assign access to resources in role-based access control (RBAC) providers such as Microsoft Intune, use [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-1.0&preserve-view=true). The **unifiedRoleAssignmentMultiple** resource supports defining a single role over an array of scopes, and assigning the role to multiple principals (such as users).
@@ -4982,7 +4982,7 @@ Use the [Microsoft Graph Toolkit](toolkit/overview.md) to develop production app
 ## September 2019: New in preview
 
 > [!IMPORTANT]
-> Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
+> Features, including APIs and tools, in _preview_ status might change without notice, and some might never be promoted to GA status. Do not use them in production apps.
 
 ### Devices and apps
 Intune [September](https://developer.microsoft.com/graph/changelog#september-2019) updates
@@ -4990,7 +4990,7 @@ Intune [September](https://developer.microsoft.com/graph/changelog#september-201
 ### Files
 - Enhanced synchronization support:
 
-  - Use the new **pendingOperations** property to identify operations that may affect the binary content of a [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true).
+  - Use the new **pendingOperations** property to identify operations that might affect the binary content of a [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true).
   - [Restore](/graph/api/driveitem-restore?view=graph-rest-beta&preserve-view=true) a deleted **driveItem**.
 - Use Secure Hash Algorithm (SHA-256) to enhance [file](/graph/api/resources/file?view=graph-rest-beta&preserve-view=true) data security and integrity.
 - Get or set the orientation of a [photo](/graph/api/resources/photo?view=graph-rest-beta&preserve-view=true). Setting is supported on OneDrive Personal.
@@ -5026,7 +5026,7 @@ Use the **General** channel of a [team](/graph/api/resources/team?view=graph-res
 ## August 2019: New in preview
 
 > [!IMPORTANT]
-> Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
+> Features, including APIs and tools, in _preview_ status might change without notice, and some might never be promoted to GA status. Do not use them in production apps.
 
 ### Devices and apps
 Intune [August](https://developer.microsoft.com/graph/changelog#august-2019) updates
@@ -5067,7 +5067,7 @@ There are now Objective-C code snippets in all API topics in the v1.0 and beta r
 ## July 2019: New in preview
 
 > [!IMPORTANT]
-> Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
+> Features, including APIs and tools, in _preview_ status might change without notice, and some might never be promoted to GA status. Do not use them in production apps.
 
 ### Calendar
 Use the new [places API](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) to make use of rich location types such as [room](/graph/api/resources/room?view=graph-rest-beta&preserve-view=true) and [room list](/graph/api/resources/roomlist?view=graph-rest-beta&preserve-view=true), as set up by Exchange Online administrators.
@@ -5116,7 +5116,7 @@ Administrators or users can [revoke](/graph/api/user-revokesigninsessions?view=g
 ## May - June, 2019: New in preview
 
 > [!IMPORTANT]
-> Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
+> Features, including APIs and tools, in _preview_ status might change without notice, and some might never be promoted to GA status. Do not use them in production apps.
 
 ### Devices and apps
 - Intune [May](https://developer.microsoft.com/graph/changelog#may-2019) updates

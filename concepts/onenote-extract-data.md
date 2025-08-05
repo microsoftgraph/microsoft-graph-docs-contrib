@@ -193,7 +193,7 @@ The API is optimized for products from many popular sites such as *Amazon.com* a
 
 Specify the `extract.product` method and the `none` fallback. Also send an `img` element with the `data-render-src` attribute set to the product URL. If the API is unable to extract any content, it renders a snapshot of the product webpage only.
 
-This scenario potentially provides the most information because the webpage may include additional information, such as customer reviews and suggestions.
+This scenario potentially provides the most information because the webpage might include additional information, such as customer reviews and suggestions.
 
 ```html 
 <div

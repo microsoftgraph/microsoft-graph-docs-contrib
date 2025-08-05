@@ -6474,7 +6474,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 79c261e0-fe76-4144-aad5-bdc68fbe4037 | 55896846-df78-47a7-aa94-8d3d4442ca7f |
 | DisplayText | Read service health | Read service health |
-| Description | Allows the app to read your tenant's service health information, without a signed-in user. Health information might include service issues or service health overviews. | Allows the app to read your tenant's service health information on behalf of the signed-in user. Health information may include service issues or service health overviews. |
+| Description | Allows the app to read your tenant's service health information, without a signed-in user. Health information might include service issues or service health overviews. | Allows the app to read your tenant's service health information on behalf of the signed-in user. Health information might include service issues or service health overviews. |
 | AdminConsentRequired | Yes | Yes |
 
 ![personal Microsoft accounts][MSA] The *ServiceHealth.Read.All* delegated permission is available for consent in personal Microsoft accounts.
@@ -6487,7 +6487,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 1b620472-6534-4fe6-9df2-4680e8aa28ec | eda39fa6-f8cf-4c3c-a909-432c683e4c9b |
 | DisplayText | Read service messages | Read service announcement messages |
-| Description | Allows the app to read your tenant's service announcement messages, without a signed-in user. Messages may include information about new or changed features. | Allows the app to read your tenant's service announcement messages on behalf of the signed-in user. Messages may include information about new or changed features. |
+| Description | Allows the app to read your tenant's service announcement messages, without a signed-in user. Messages might include information about new or changed features. | Allows the app to read your tenant's service announcement messages on behalf of the signed-in user. Messages might include information about new or changed features. |
 | AdminConsentRequired | Yes | Yes |
 
 ![personal Microsoft accounts][MSA] The *ServiceMessage.Read.All* delegated permission is available for consent in personal Microsoft accounts.
@@ -6969,7 +6969,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | a267235f-af13-44dc-8385-c1dc93023186 | 7ab1d787-bae7-4d5d-8db6-37ea32df9186 |
 | DisplayText | Send a teamwork activity to any user | Send a teamwork activity as the user |
-| Description | Allows the app to create new notifications in users' teamwork activity feeds without a signed in user. These notifications may not be discoverable or be held or governed by compliance policies. | Allows the app to create new notifications in users' teamwork activity feeds on behalf of the signed in user. These notifications may not be discoverable or be held or governed by compliance policies. |
+| Description | Allows the app to create new notifications in users' teamwork activity feeds without a signed in user. These notifications might not be discoverable or be held or governed by compliance policies. | Allows the app to create new notifications in users' teamwork activity feeds on behalf of the signed in user. These notifications might not be discoverable or be held or governed by compliance policies. |
 | AdminConsentRequired | Yes | No |
 
 ---
@@ -7728,7 +7728,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 39b17d18-680c-41f4-b9c2-5f30629e7cb6 | 1bc6eab1-058d-4557-b011-d4c41cec88b7 |
 | DisplayText | Read Tenant-Acquired Telephone Number Details | Read Tenant-Acquired Telephone Number Details |
-| Description | Allows the app to read your tenant's acquired telephone number details, without a signed-in user. Acquired telephone numbers may include attributes related to assigned object, emergency location, network site, etc. | Allows the app to read your tenant's acquired telephone number details on behalf of the signed-in admin user. Acquired telephone numbers may include attributes related to assigned object, emergency location, network site, etc. |
+| Description | Allows the app to read your tenant's acquired telephone number details, without a signed-in user. Acquired telephone numbers might include attributes related to assigned object, emergency location, network site, etc. | Allows the app to read your tenant's acquired telephone number details on behalf of the signed-in admin user. Acquired telephone numbers might include attributes related to assigned object, emergency location, network site, etc. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -7739,7 +7739,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 0a42382f-155c-4eb1-9bdc-21548ccaa387 | 424b07a8-1209-4d17-9fe4-9018a93a1024 |
 | DisplayText | Read and Modify Tenant-Acquired Telephone Number Details | Read and Modify Tenant-Acquired Telephone Number Details |
-| Description | Allows the app to read your tenant's acquired telephone number details, without a signed-in user. Acquired telephone numbers may include attributes related to assigned object, emergency location, network site, etc. | Allows the app to read and modify your tenant's acquired telephone number details on behalf of the signed-in admin user. Acquired telephone numbers may include attributes related to assigned object, emergency location, network site, etc. |
+| Description | Allows the app to read your tenant's acquired telephone number details, without a signed-in user. Acquired telephone numbers might include attributes related to assigned object, emergency location, network site, etc. | Allows the app to read and modify your tenant's acquired telephone number details on behalf of the signed-in admin user. Acquired telephone numbers might include attributes related to assigned object, emergency location, network site, etc. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -7750,7 +7750,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | a91eadaf-2c3c-4362-908b-fb172d208fc6 | 5c469ce4-dab5-4afd-b9de-14f1ba4004a7 |
 | DisplayText | Read Teams user configurations | Read Teams user configurations |
-| Description | Allows the app to read your tenant's user configurations, without a signed-in user. User configuration may include attributes related to user, such as telephone number, assigned policies, etc. | Allows the app to read your tenant's user configurations on behalf of the signed-in admin user. User configuration may include attributes related to user, such as telephone number, assigned policies, etc. |
+| Description | Allows the app to read your tenant's user configurations, without a signed-in user. User configuration might include attributes related to user, such as telephone number, assigned policies, etc. | Allows the app to read your tenant's user configurations on behalf of the signed-in admin user. User configuration might include attributes related to user, such as telephone number, assigned policies, etc. |
 | AdminConsentRequired | Yes | Yes |
 
 ---

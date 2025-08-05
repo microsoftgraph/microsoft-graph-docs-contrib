@@ -292,7 +292,7 @@ The **recurrence.seriesId** property on each **plannerTask** is an identifier th
 > **Note:**
 >
 > - If some tasks in the series have been deleted, the indices might contain gaps.
-> - If users have moved the recurring series to a different plan, then you need to look in other plans to see other tasks in the series; however, users are typically primarily interested in the recurring series within one plan. Tasks may not be moved across group boundaries; if all the plans in a group are queried, you can find all the tasks that could have been moved out of the original plan.
+> - If users have moved the recurring series to a different plan, then you need to look in other plans to see other tasks in the series; however, users are typically primarily interested in the recurring series within one plan. Tasks might not be moved across group boundaries; if all the plans in a group are queried, you can find all the tasks that could have been moved out of the original plan.
 
 ## REST operation examples
 

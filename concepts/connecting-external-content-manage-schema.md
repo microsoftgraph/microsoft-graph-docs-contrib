@@ -216,7 +216,7 @@ The `title` label is the most important. Assigning a property to this label enab
 Applying accurately mapped semantic labels improves the discoverability of your content through search. Microsoft recommends defining as many of the following labels as possible, listed in descending order of their impact on discovery:  
 **title**, **lastModifiedDateTime**, **lastModifiedBy**, **url**, **fileName**, and **fileExtension**.
 
-Ensure that your label mappings are accurate. Assigning a label to a property that contains large content may increase search latency and delay results.
+Ensure that your label mappings are accurate. Assigning a label to a property that contains large content might increase search latency and delay results.
 
 ### Rank hints 
 
@@ -343,7 +343,7 @@ Define clear, well-formed descriptions for all properties. A good description sh
 This section outlines the update capabilities of the [schema](/graph/api/resources/externalconnectors-schema) API.
 
 > [!NOTE]  
-> After updating your schema, we recommend reindexing items to align them with the latest schema. Without reingestion, item behavior may be inconsistent.
+> After updating your schema, we recommend reindexing items to align them with the latest schema. Without reingestion, item behavior might be inconsistent.
 
 ### Add a property
 

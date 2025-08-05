@@ -90,7 +90,7 @@ The following execution modes and their behaviors are expected:
 | Execution Mode    | Action        | Description                                                                 |
 | ----------------- | ------------ | --------------------------------------------------------------------------- |
 | `evaluateInline`  | None         | The caller should invoke the Process content API and wait for results before allowing user activity to proceed. |
-| `evaluateInline`  | restrictAccess | Not expected. Future actions that do not interfere with user activities may be present (for example, notify user). |
+| `evaluateInline`  | restrictAccess | Not expected. Future actions that do not interfere with user activities might be present (for example, notify user). |
 | `evaluateOffline` | restrictAccess | The caller should restrict user activity and call the process content API independently of taking action. |
 | `evaluateOffline` | None         | The caller should not restrict user activity and should call the process content API independently. |
 

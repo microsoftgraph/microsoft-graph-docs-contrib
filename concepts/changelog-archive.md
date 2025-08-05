@@ -4817,7 +4817,7 @@ Debut of the places API, which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Introduced the new preview API for Microsoft 365 reports. You can use it to get usage reports of how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. For more information, see [report](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true). |
+| Addition        | Beta        | Introduced the new preview API for Microsoft 365 reports. You can use it to get usage reports of how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who might not need a Microsoft 365 license at all. For more information, see [report](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true). |
 
 
 ## February 2017
