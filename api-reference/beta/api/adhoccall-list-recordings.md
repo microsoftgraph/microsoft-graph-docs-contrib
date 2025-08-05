@@ -1,7 +1,7 @@
 ---
 title: "List recordings-adhoc calls"
 description: "Get the list of callRecording objects associated with an adhoc call."
-author: "SukanyaDas"
+author: "SukanyaDas-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > **Note:** The application permission `CallRecordings.Read.Chat` will use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to unscheduled unscheduled PSTN, VoIP and group calls . However, private channel meetings supported, but with limitations.
 
-To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch the ad hoc calls online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access ad hoc calls on behalf of a user](/graph/cloud-communication-adhoc-call-application-access-policy).
+To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch the ad hoc calls online meeting artifacts on behalf of that user (with the user ID specified in the request path). 
 
 ## HTTP request
 

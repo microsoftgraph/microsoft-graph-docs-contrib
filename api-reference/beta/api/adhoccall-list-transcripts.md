@@ -1,7 +1,7 @@
 ---
 title: "List transcripts-adhoc calls"
 description: "Retrieve the list of transcripts associated with a Microsoft Teams adhoc call."
-author: "SukanyaDas"
+author: "SukanyaDas-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType

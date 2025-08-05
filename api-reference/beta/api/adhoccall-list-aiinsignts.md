@@ -1,7 +1,7 @@
 ---
 title: "List aiInsights- adhoc calls"
 description: "Get the list of callAiInsight objects associated with adhoc calls."
-author: "SukanyaDas"
+author: "SukanyaDas-MSFT"
 ms.date: 08/01/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
