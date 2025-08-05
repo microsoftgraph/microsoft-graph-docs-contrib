@@ -1,14 +1,14 @@
 ---
-title: "List transcripts"
+title: "List transcripts-online meetings"
 description: "Retrieve the list of transcripts associated with a Microsoft Teams online meeting."
 author: "mankadnandan"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 07/25/2024
+ms.date: 08/05/2025
 ---
 
-# List transcripts
+# List transcripts for Online Meetings
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "List aiInsights-onlinemeeting"
+title: "List aiInsights-online meetings"
 description: "Get the list of callAiInsight objects associated with an onlineMeeting"
 author: "Anjali-Patle"
 ms.date: 08/05/2025
