@@ -620,7 +620,7 @@ Adding PSTN and Direct Routing call reports to Microsoft Graph (beta).
 | Addition | beta | Added new delegated permissions: <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> |
 | Addition | beta | Added new app only permissions: <br/><ul><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrintJob.Manage.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintTaskDefinition.ReadWrite.All</li></ul> |
 
-## Might 2020
+## May 2020
 
 ### Calendar
 
@@ -2044,7 +2044,7 @@ Debut of the places API, which provides rich details for locations in apps.
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | Added the **lastPasswordChangeDateTime** property to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) entity. |
 
-## Might 2019
+## May 2019
 
 ### Calendar, mail, personal contacts
 
@@ -2958,7 +2958,7 @@ Debut of the places API, which provides rich details for locations in apps.
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the **isMultipleDataLocationsForServicesEnabled** property to the [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) resource, which allows apps to verify that a tenant is enabled for multi-geo capabilities. Added the **preferredDataLocation** property to the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource, which allows for setting a preferred data location for a group.|
 | Addition | v1.0 | Added  [onPremisesProvisioningErrors](/graph/api/resources/onpremisesprovisioningerror?view=graph-rest-1.0&preserve-view=true) property to the [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) and [Group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) entities that represents directory synchronization errors when synchronizing on-premises directories to Azure Active Directory when using Microsoft synchronization product (including Azure AD Connect, DirSync and MIM + Connector).|
-| Addition | v1.0 | Added  [onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0&preserve-view=true) property to the [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) entity that contains 15 custom extension attribute properties. For an onPremisesSyncEnabled user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties might be set during creation or update.|
+| Addition | v1.0 | Added  [onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0&preserve-view=true) property to the [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) entity that contains 15 custom extension attribute properties. For an onPremisesSyncEnabled user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties may be set during creation or update.|
 |Addition|v1.0|Added the **onPremisesDomainName**, **onPremisesSamAccountName**, and **onPremisesUserPrincipalName** properties to the [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) entity|
 
 ### Mail
@@ -3158,7 +3158,7 @@ Debut of the places API, which provides rich details for locations in apps.
 |Change|Beta|Updated the path to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) entity.|
 
 
-## Might 2018
+## May 2018
 
 ### Customer booking
 
@@ -4363,7 +4363,7 @@ Debut of the places API, which provides rich details for locations in apps.
 | Change      | Beta    | Added the **address** property to the [vpnServer](/graph/api/resources/intune-deviceconfig-vpnserver?view=graph-rest-beta&preserve-view=true) complex type |
 
 
-## Might 2017
+## May 2017
 
 ### Application
 
@@ -4607,13 +4607,13 @@ Debut of the places API, which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Change          | Beta        | Administrative unit APIs are updated in preview (beta). The first set of changes will be applied on Might 3, 2017. The changes include the following property renaming:<br />- **roleMemberInfo** complex type to **identity** complex type for the scopedRoleMembership entity<br />- **scopedAdministratorOf** navigation property to **scopedRoleMemberOf** for the user entity<br />- **scopedAdministrators** navigation property to **scopedRoleMembers** for the administrativeUnit entity<br />- **scopedAdministrators** navigation property to **scopedMembers** for the directoryRole entity |
+| Change          | Beta        | Administrative unit APIs are updated in preview (beta). The first set of changes will be applied on May 3, 2017. The changes include the following property renaming:<br />- **roleMemberInfo** complex type to **identity** complex type for the scopedRoleMembership entity<br />- **scopedAdministratorOf** navigation property to **scopedRoleMemberOf** for the user entity<br />- **scopedAdministrators** navigation property to **scopedRoleMembers** for the administrativeUnit entity<br />- **scopedAdministrators** navigation property to **scopedMembers** for the directoryRole entity |
 
 ### Identity and access
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Change          | Beta        | The [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) APIs are updated in preview (beta). The first set of changes will be applied on Might 15, 2017. The changes include property renaming and restructuring. Some properties (such as appRoles and addIns) will not be available until the changes are completed. The changes are released in preview (beta) prior to releasing to v1.0. |
+| Change          | Beta        | The [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) APIs are updated in preview (beta). The first set of changes will be applied on May 15, 2017. The changes include property renaming and restructuring. Some properties (such as appRoles and addIns) will not be available until the changes are completed. The changes are released in preview (beta) prior to releasing to v1.0. |
 
 ### Cloud Solution Provider
 
@@ -4817,7 +4817,7 @@ Debut of the places API, which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Introduced the new preview API for Microsoft 365 reports. You can use it to get usage reports of how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who might not need a Microsoft 365 license at all. For more information, see [report](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true). |
+| Addition        | Beta        | Introduced the new preview API for Microsoft 365 reports. You can use it to get usage reports of how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. For more information, see [report](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true). |
 
 
 ## February 2017
@@ -5096,13 +5096,13 @@ Added support for dynamic group membership through the public preview API, inclu
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | App-only scopes are now supported for _mail_ and _contacts_ subscriptions. |
 
-## Might 2016
+## May 2016
 
 ### Calendar
 
 |**Change type**|**Version**|**Description**|
 |:--------------|:-----------|:--------------|
-|Breaking change|Beta|Changes to the findMeetingTimes API. For more information, see the [Microsoft Graph findMeetingTimes API update](https://developer.microsoft.com/graph/blogs/microsoft-graph-findmeetingtimes-api-update/) blog post and the change took effect Might 19, 2016.
+|Breaking change|Beta|Changes to the findMeetingTimes API. For more information, see the [Microsoft Graph findMeetingTimes API update](https://developer.microsoft.com/graph/blogs/microsoft-graph-findmeetingtimes-api-update/) blog post and the change took effect May 19, 2016.
 
 ### Personal contact
 
@@ -5114,7 +5114,7 @@ Added support for dynamic group membership through the public preview API, inclu
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Breaking change | Beta        | _settingTemplateId_ is renamed to _templateId_ and the change will take effect Might 19, 2016. |
+| Breaking change | Beta        | _settingTemplateId_ is renamed to _templateId_ and the change will take effect May 19, 2016. |
 
 ### Calendar
 
