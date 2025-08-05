@@ -124,4 +124,4 @@ After this transition period, Delve settings controlled only the Delve experienc
 
 
 > [!NOTE]
-> During the transition period, due to technical reasons, the SharePoint start page may provide stale suggestions if an organization disables item insights for all users. This issue will be addressed in upcoming server-side changes. 
+> During the transition period, due to technical reasons, the SharePoint start page might provide stale suggestions if an organization disables item insights for all users. This issue will be addressed in upcoming server-side changes. 

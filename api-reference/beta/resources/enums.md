@@ -1606,6 +1606,7 @@ Namespace: microsoft.graph
 | fido |
 | appPassword |
 | unknownFutureValue |
+| externalAuthMethod |
 
 ### authenticationAppAdminConfiguration values
 
@@ -5338,3 +5339,11 @@ Possible values for user account types (group membership), per Windows definitio
 |maxStoragePerContainerInBytes|
 |unknownFutureValue|
 
+### aggregationPeriod values 
+
+|Member|
+|:---|
+|d1|
+|d7|
+|d30|
+|unknownFutureValue|

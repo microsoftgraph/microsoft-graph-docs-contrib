@@ -178,7 +178,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,productType
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,productType,provisionedDateTime,sharedDeviceDetail
 ```
 
 # [C#](#tab/csharp)
@@ -259,7 +259,11 @@ Content-Type: application/json
     },
     "allotmentDisplayName": null,
     "deviceRegionName": "eastus2",
-    "productType": null
+    "productType": null,
+    "provisionedDateTime": "2025-04-23T10:29:57Z",
+    "sharedDeviceDetail": {
+      "assignedToUserPrincipalName": "john.doe@contoso.onmicrosoft.com"
+    }
 }
 ```
 

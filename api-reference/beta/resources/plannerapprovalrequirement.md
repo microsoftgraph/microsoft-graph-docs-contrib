@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents whether a [plannerTask](plannertask.md) must have an approval completion requirement created for it.
+Represents whether a [plannerTask](plannertask.md) must have an approval completion requirement created for it; however, we don't recommend that you set this property directly because you can't programmatically add an approval requirement to a task. An approval requirement can only be added via the task publishing feature. You can use this resource to query published tasks to determine if the task has an approval requirement.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isApprovalRequired|Boolean|Specifies whether [approval](plannerbaseapprovalattachment.md) is required to complete the [plannerTask](plannertask.md). When this property is set to true, the task can only be marked complete if an approval is created for the task and approved.|
+|isApprovalRequired|Boolean|Specifies whether [approval](plannerbaseapprovalattachment.md) is required to complete the [plannerTask](plannertask.md). If set to `true`, the task can only be marked as complete if an approval is created for the task and approved.|
 
 ## Relationships
 None.
