@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [identity security account](../resources/security-identityaccounts.md) object. This allows retrieving information about available identity accounts.
+Read the properties and relationships of a single [identity security account](../resources/security-identityaccounts.md) object. This allows retrieving information about available identity accounts.
 
 ## Permissions
 
