@@ -1,11 +1,11 @@
 ---
 title: "Get callTranscript"
-description: "Retrieve a single callTranscript associated with a Microsoft Teams online meeting and ad hoc call."
+description: "Retrieve a single callTranscript associated with a Microsoft Teams online meeting and adhoc call."
 author: "mankadnandan"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 08/13/2024
+ms.date: 08/05/2024
 ---
 
 # Get callTranscript
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [callTranscript](../resources/calltranscript.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an ad hoc call. These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Retrieve a [callTranscript](../resources/calltranscript.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an adhoc call. These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
 
-Retrieving the transcript returns the metadata of the single transcript associated with the online meeting or an ad hoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
+Retrieving the transcript returns the metadata of the single transcript associated with the online meeting or an adhoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
 > [!NOTE]
 >
@@ -35,9 +35,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "calltranscript_get" } -->
 | Permission type| Least privileged permissions|Higher privileged permissions|
 | :---| :---| :--- |
-|Delegated (work or school account)| OnlineMeetingTranscript.Read.All, CallTranscripts.Read.All| Not available.|
+|Delegated (work or school account)| For online meetings: OnlineMeetingTranscript.Read.All <br> <br> For adhoc calls: CallTranscripts.Read.All| Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat, CallTranscripts.Read.All, CallTranscripts.Read.Chat|Not available.|
+|Application|For online meetings: OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat <br> <br> For adhoc calls: CallTranscripts.Read.All, CallTranscripts.Read.Chat|Not available.|
 
 > **Note:** The application permissions `OnlineMeetingTranscript.Read.Chat` and `CallTranscripts.Read.Chat` use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). The `OnlineMeetingTranscript.Read.Chat` permission applies only to scheduled private chat meetings, not to channel meetings.
 
@@ -68,7 +68,7 @@ GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 ```
 
-**For an ad hoc call**
+**For an adhoc call**
 
 Get a single transcript:
 
@@ -107,7 +107,7 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 > [!NOTE]
 > The docx format for transcripts is deprecated as of May 31, 2023.
 
-### Example 1: Get a call transcript
+### Example 1: Get a call transcript for online meetings
 #### Request
 
 # [HTTP](#tab/http2)
@@ -183,8 +183,57 @@ Content-type: application/json
     }
 }
 ```
+### Example 2: Get a call transcript for adhoc call
+#### Request
 
-### Example 2: Get a callTranscript content
+# [HTTP](#tab/http2)
+<!-- {
+  "blockType": "request",
+  "name": "get_callTranscript",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4
+```
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.callTranscript"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/adhoccalls('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/$entity",
+    "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
+    "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
+    "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
+    "createdDateTime": "2021-09-17T06:09:24.8968037Z",
+    "endDateTime": "2021-09-17T06:27:25.2346000Z",
+    "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
+    "transcriptContentUrl": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/('MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4')/content",
+    "meetingOrganizer": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+            "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
+        }
+    }
+}
+```
+
+### Example 3: Get a callTranscript content for an online meeting
 #### Request
 
 # [HTTP](#tab/http-content)
@@ -196,9 +245,6 @@ Content-type: application/json
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
-```
-``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
 ```
 
 # [C#](#tab/csharp)
@@ -247,8 +293,40 @@ WEBVTT
 0:0:0.0 --> 0:0:5.320
 <v User Name>This is a transcript test.</v>
 ```
+### Example 4: Get a callTranscript content for an adhoc call
+#### Request
 
-### Example 3: Get a callTranscript content specifying $format query param
+# [HTTP](#tab/http-content)
+<!-- {
+  "blockType": "request",
+  "name": "get_callTranscript_content",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
+```
+#### Response
+
+Response contains bytes for the transcript in the body. `content-type` header specifies type of the transcript content. Negative offsets indicate that the transcription began while the conversation was ongoing.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: text/vtt
+
+WEBVTT
+
+0:0:0.0 --> 0:0:5.320
+<v User Name>This is a transcript test.</v>
+```
+### Example 5: Get a callTranscript content specifying $format query param
 #### Request
 
 # [HTTP](#tab/http-format)
@@ -260,10 +338,6 @@ WEBVTT
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content?$format=text/vtt
-
-``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content?$format=text/vtt
-```
 ```
 
 # [C#](#tab/csharp)
@@ -312,7 +386,7 @@ WEBVTT
 <v User Name>This is a transcript test.</v>
 ```
 
-### Example 4: Get a callTranscript metadataContent
+### Example 6: Get a callTranscript metadataContent for online meetings
 #### Request
 # [HTTP](#tab/http5)
 <!-- {
@@ -323,10 +397,6 @@ WEBVTT
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
-```
-
-``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
 ```
 
 # [C#](#tab/csharp)
@@ -372,8 +442,37 @@ WEBVTT
 00:00:16.246 --> 00:00:17.726
 {"startDateTime":"2023-03-08T08:22:30.0461639+00:00","endDateTime":"2023-03-08T08:22:31.5261639+00:00","speakerName":"User Name","spokenText":"This is a transcription test.","spokenLanguage":"en-us"}
 ```
+### Example 6: Get a callTranscript metadataContent for adhoc calls
+#### Request
+# [HTTP](#tab/http5)
+<!-- {
+  "blockType": "request",
+  "name": "get_callTranscript_metadatacontent",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhoccalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
+```
+#### Response
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: text/vtt
 
-### Example 5: Get a callTranscript from a corresponding recording using contentCorrelationId
+WEBVTT
+
+00:00:16.246 --> 00:00:17.726
+{"startDateTime":"2023-03-08T08:22:30.0461639+00:00","endDateTime":"2023-03-08T08:22:31.5261639+00:00","speakerName":"User Name","spokenText":"This is a transcription test.","spokenLanguage":"en-us"}
+```
+
+### Example 7: Get a callTranscript from a corresponding recording using contentCorrelationId
 
 The following example shows how to get a single transcript of an online meeting corresponding to a recording using the **contentCorrelationId** property.
 

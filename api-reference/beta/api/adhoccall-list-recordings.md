@@ -1,6 +1,6 @@
 ---
 title: "List recordings"
-description: "Get the list of callRecording objects associated with an ah hoc call."
+description: "Get the list of callRecording objects associated with an adhoc call."
 author: "v-sukanyadas-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "teams"
