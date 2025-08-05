@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Indicates the state of synchronization for a directory object and its settings between the cloud and on-premises Active Directory. Only the [group](../resources/group.md) resource is supported.
 
+For more information, see [Convert Group Source of Authority to the cloud](/entra/identity/hybrid/concept-source-of-authority-overview).
+
 Inherits from [entity](../resources/entity.md).
 
 ## Methods

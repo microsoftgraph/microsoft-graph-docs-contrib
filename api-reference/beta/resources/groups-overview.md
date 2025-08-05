@@ -214,6 +214,7 @@ You can configure other settings for groups, such as:
 | [Group expiration](../resources/grouplifecyclepolicy.md) | Microsoft 365 Groups |
 | [Group settings](/graph/group-directory-settings) | Microsoft 365 Groups |
 | [On-premises synchronization settings](../resources/onpremisesdirectorysynchronization.md) | Security and Microsoft 365 Groups |
+| [Source of Authority conversion](../resources/onpremisessyncbehavior.md) | Security and Microsoft 365 Groups |
 
 ## Group search limitations for guests in organizations
 
