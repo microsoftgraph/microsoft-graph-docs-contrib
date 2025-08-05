@@ -1,14 +1,14 @@
 ---
-title: "List aiInsights"
+title: "List aiInsights-onlinemeeting"
 description: "Get the list of callAiInsight objects associated with an onlineMeeting"
 author: "Anjali-Patle"
-ms.date: 04/29/2025
+ms.date: 08/05/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
-# List aiInsights
+# List aiInsights for Online Meetings
 
 Namespace: microsoft.graph
 
