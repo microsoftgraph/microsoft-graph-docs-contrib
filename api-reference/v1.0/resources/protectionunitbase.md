@@ -22,6 +22,8 @@ This resource is an abstract type.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/protectionunitbase-get.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Read the properties and relationships of a [protectionUnitBase](../resources/protectionunitbase.md) object.|
+|[offboard](../api/protectionunitbase-offboard.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Offboard a [protectionUnitBase](../resources/protectionunitbase.md) |
+|[cancelOffboard](../api/protectionunitbase-cancelOffboard.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Cancel offboard for a [protectionUnitBase](../resources/protectionunitbase.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -33,7 +35,8 @@ This resource is an abstract type.
 |error|[publicError](../resources/publicerror.md)|Contains error details if an error occurred while creating a protection unit.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of this protection unit.|
-|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The status of the protection unit. The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
+|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The status of the protection unit. The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `offboardRequested`, `offboarded`, `cancelOffboardRequested`, `unknownFutureValue`.
+|offboardRequestedDateTime|DateTimeOffset|The time when protection unit offboard was requested.|
 
 ### protectionUnitStatus values
 |Member | Description |
@@ -44,6 +47,9 @@ This resource is an abstract type.
 |unprotected | The protection unit is successfully disabled.|
 |removeRequested |A request to remove the protected unit from the policy was made. |
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+|offboardRequested |A request to offboard the protection unit. |
+|offboarded |The protection unit is successfully offboarded. |
+|cancelOffboardRequested |A request to cancel protection unit offboarding. |
 
 ## Relationships
 None.
@@ -74,7 +80,8 @@ The following JSON representation shows the resource type.
   },
   "error": {
     "@odata.type": "microsoft.graph.publicError"
-  }
+  },
+  "offboardRequestedDateTime": "String (timestamp)"
 }
 ```
 

@@ -150,7 +150,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
@@ -184,7 +185,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
@@ -218,7 +220,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
@@ -252,7 +255,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
@@ -285,7 +289,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     }
   ]
 }
@@ -386,7 +391,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
@@ -420,7 +426,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
@@ -454,7 +461,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
@@ -488,7 +496,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
@@ -522,7 +531,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     }
   ]
 }
