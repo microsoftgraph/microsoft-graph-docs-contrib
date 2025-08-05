@@ -4575,7 +4575,6 @@ GA of the [shifts API](/graph/api/resources/shift?view=graph-rest-1.0&preserve-v
 - The [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) and [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) resources are now in parity and have the same properties as each other.
 - Some property and type name clean-up around printer shares:
   - Use the **shared** navigation property of [print](/graph/api/resources/print?view=graph-rest-beta&preserve-view=true) to get the list of printer shares registered in the tenant.
-
 ### Devices and apps | Corporate management
 Intune [May](https://developer.microsoft.com/graph/changelog#may-2020) updates in beta.
 
