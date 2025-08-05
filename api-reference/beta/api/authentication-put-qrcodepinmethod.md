@@ -20,29 +20,30 @@ Create a new [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticatio
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "authentication_put_qrcodepinmethod", 
+  "requestUrls": ["PUT /users/{id}/authentication/qrCodePinMethod"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-put-qrcodepinmethod-permissions.md)]
-
-### Permissions acting on other users
-
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-[!INCLUDE [permissions-table](../includes/permissions/authentication-put-qrcodepinmethod-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
 Create your own QR Code + PIN authentication method.
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 PUT /me/authentication/qrCodePinMethod
 ```
 
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
-
 Create another user's QR Code + PIN authentication method.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 PUT /users/{id}/authentication/qrCodePinMethod

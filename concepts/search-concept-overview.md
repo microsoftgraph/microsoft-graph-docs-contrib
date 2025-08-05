@@ -6,6 +6,7 @@ ms.subservice: "search"
 author: "snlraju-msft"
 scenarios: "getting-started"
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Overview of the Microsoft Search API in Microsoft Graph

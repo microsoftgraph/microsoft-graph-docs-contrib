@@ -96,7 +96,7 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 
 ### presence
 
-**presence** subscriptions require [encryption](/graph/webhooks-with-resource-data) for notifications that include resource data. Subscription creation fails if [encryptionCertificate](../resources/subscription.md) and [encryptionCertificateId](../resources/subscription.md) aren't specified when notifications need to include resource data. For details about presence subscriptions, see [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence).
+**presence** Subscriptions on **presence** **chatMessage** subscriptions can be specified to include resource data (**includeResourceData** set to `true`). In that case, encryption is required and the subscription creation fails if an **encryptionCertificate** and **encryptionCertificateId** aren't specified. For details about presence subscriptions, see [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence).
 
 ### virtualEventWebinar
 
