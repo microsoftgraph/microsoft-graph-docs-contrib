@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform actions such as revoking accounts and forcing password reset for [identity accounts](../resources/security-identityaccounts.md) that are flagged in Microsoft Defender for Identity [alerts](../resources/security-alert.md). This action allows reading and performing identity security actions on behalf of the signed-in identity.
+Perform actions such as revoking accounts and forcing password reset for [identity accounts](../resources/security-identityaccounts.md) that are observed in Microsoft Defender for Identity. This action allows reading and performing identity security actions on behalf of the signed-in identity.
 
 ## Permissions
 
