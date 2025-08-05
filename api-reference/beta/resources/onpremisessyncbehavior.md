@@ -2,6 +2,7 @@
 title: "onPremisesSyncBehavior resource type"
 description: "Indicates the state of synchronization for a directory object between the cloud and on-premises Active Directory."
 author: "rubytek-git"
+ms.reviewer: "Darshan.Maiya,rteklemariam"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
