@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [callTranscript](../resources/calltranscript.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an adhoc call. These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [adhoc call](/graph/api/resources/adhoccall?view=graph-rest-beta). These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
 
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting or an adhoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
@@ -186,10 +186,10 @@ Content-type: application/json
 ### Example 2: Get a call transcript for adhoc call
 #### Request
 
-# [HTTP](#tab/http2)
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript",
+  "name": "get_callTranscript_adhoc",
   "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
@@ -218,7 +218,7 @@ Content-type: application/json
     "createdDateTime": "2021-09-17T06:09:24.8968037Z",
     "endDateTime": "2021-09-17T06:27:25.2346000Z",
     "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
-    "transcriptContentUrl": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/('MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4')/content",
+    "transcriptContentUrl": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/adhocCalls('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/('MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4')/content",
     "meetingOrganizer": {
         "application": null,
         "device": null,
@@ -296,10 +296,10 @@ WEBVTT
 ### Example 4: Get a callTranscript content for an adhoc call
 #### Request
 
-# [HTTP](#tab/http-content)
+# [HTTP](#tab/http-content1)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript_content",
+  "name": "get_callTranscript_content_adhoc",
   "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
@@ -442,9 +442,9 @@ WEBVTT
 00:00:16.246 --> 00:00:17.726
 {"startDateTime":"2023-03-08T08:22:30.0461639+00:00","endDateTime":"2023-03-08T08:22:31.5261639+00:00","speakerName":"User Name","spokenText":"This is a transcription test.","spokenLanguage":"en-us"}
 ```
-### Example 6: Get a callTranscript metadataContent for adhoc calls
+### Example 7: Get a callTranscript metadataContent for adhoc calls
 #### Request
-# [HTTP](#tab/http5)
+# [HTTP](#tab/http6)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_metadatacontent",
@@ -472,7 +472,7 @@ WEBVTT
 {"startDateTime":"2023-03-08T08:22:30.0461639+00:00","endDateTime":"2023-03-08T08:22:31.5261639+00:00","speakerName":"User Name","spokenText":"This is a transcription test.","spokenLanguage":"en-us"}
 ```
 
-### Example 7: Get a callTranscript from a corresponding recording using contentCorrelationId
+### Example 8: Get a callTranscript from a corresponding recording using contentCorrelationId
 
 The following example shows how to get a single transcript of an online meeting corresponding to a recording using the **contentCorrelationId** property.
 
