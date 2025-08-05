@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Update the properties of the default branding object specified by the [organizationalBranding](../resources/organizationalbranding.md) resource.
 
 > [!TIP]
-> [![Try it now](./media/common/try-it-now.png)](https://woodgrovedemo.com/#usecase=TokenAugmentation)
+> [![Try it now](./media/common/try-it-now.png)](https://woodgrovedemo.com/#usecase=CompanyBranding)
 > 
 > To try out this feature, go to the Woodgrove Groceries demo and explore the "User experience" user case.
 
