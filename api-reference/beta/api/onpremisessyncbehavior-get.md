@@ -2,7 +2,7 @@
 title: "Get onPremisesSyncBehavior"
 description: "Read the properties of an onPremisesSyncBehavior object."
 author: "rubytek-git"
-ms.reviewer: "dhanyahk,Darshan.Maiya,rteklemariam"
+ms.reviewer: "Darshan.Maiya,rteklemariam"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
