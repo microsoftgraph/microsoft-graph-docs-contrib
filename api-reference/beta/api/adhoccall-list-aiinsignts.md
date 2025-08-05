@@ -1,19 +1,19 @@
 ---
-title: "List aiInsights"
+title: "List aiInsights- adhoc calls"
 description: "Get the list of callAiInsight objects associated with adhoc calls."
-author: "v-sukanyadas"
+author: "SukanyaDas"
 ms.date: 08/01/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
 ---
-# List aiInsights
+# List aiInsights for adhoc calls
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [ad hoc call](adhoccall.md)
+### Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta)
 
 > [!NOTE]
 >

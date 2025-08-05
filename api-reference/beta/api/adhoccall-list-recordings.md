@@ -1,20 +1,20 @@
 ---
-title: "List recordings"
+title: "List recordings-adhoc calls"
 description: "Get the list of callRecording objects associated with an adhoc call."
-author: "v-sukanyadas-MSFT"
+author: "SukanyaDas"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
 ms.date: 08/01/2025
 ---
 
-# List recordings
+# List recordings for adhoc calls
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [callRecording](../resources/callrecording.md) objects associated with an [adhocCall](api-reference/beta/resources/adhoccall.md). This API supports the retrieval of call recordings from unscheduled PSTN, VoIP and group calls . However, private channel meetings are supported, but with limitations.
+Get the list of [callRecording](../resources/callrecording.md) objects associated with an [adhocCall](/graph/api/resources/adhoccall?view=graph-rest-beta). This API supports the retrieval of call recordings from unscheduled PSTN, VoIP and group calls . However, private channel meetings are supported, but with limitations.
 
 > [!NOTE]
 > * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
