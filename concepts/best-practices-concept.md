@@ -4,6 +4,7 @@ description: "Apply these best practices to improve your Microsoft Graph applica
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 11/07/2024
+ms.topic: best-practice
 ---
 
 # Best practices for working with Microsoft Graph

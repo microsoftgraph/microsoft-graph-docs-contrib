@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Configure application access to online meetings or virtual events

@@ -5,6 +5,7 @@ author: "JeremyKelley"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: faq
 ---
 
 # Metered APIs and services in Microsoft Graph FAQ

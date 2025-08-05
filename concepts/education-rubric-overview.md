@@ -5,6 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: high
 ms.subservice: "education"
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Education rubric overview

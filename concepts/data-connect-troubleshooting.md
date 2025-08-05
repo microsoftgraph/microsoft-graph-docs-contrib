@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "data-connect"
 ms.date: 11/07/2024
 ms.custom: sfi-image-nochange, sfi-ga-nochange
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshoot Microsoft Graph Data Connect

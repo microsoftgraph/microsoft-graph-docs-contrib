@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Use OneNote API div tags to extract data from captures 
