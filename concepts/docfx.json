@@ -56,7 +56,7 @@
           "_themes.pdf/**"
         ]
       }
-    ],,
+    ],
     "rules": {
       "learn-site-link-broken": {
         "exclude": [
