@@ -39,14 +39,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 To read details of your own external authentication method:
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}
 ```
 
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
-
 To read details of your own or another user's external authentication method:
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /users/{usersId}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}
