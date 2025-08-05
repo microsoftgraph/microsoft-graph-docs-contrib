@@ -47,7 +47,7 @@ After you make a request, a response is returned that includes:
 
 ## HTTP methods
 
-Microsoft Graph uses the HTTP method on your request to determine what your request is doing. Depending on the resource, the API might support operations including actions, functions, or CRUD operations described below.
+Microsoft Graph uses the HTTP method on your request to determine what your request is doing. Depending on the resource, the API may support operations including actions, functions, or CRUD operations described below.
 
 |**Method** |**Description**                             |
 | :----- | :------------------------------------------- |
@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:0
 
 Microsoft Graph supports both HTTP standard headers and custom headers.
 
-Specific APIs might require additional headers to be included in the request. On the other hand, Microsoft Graph will always return mandatory headers, such as the `request-id` header in the response, or some headers might be specific to some APIs or functionality, for example, the `Retry-After` header is included when your app hits throttling limits; or the `Location` header that's included for long-running operations.
+Specific APIs may require additional headers to be included in the request. On the other hand, Microsoft Graph will always return mandatory headers, such as the `request-id` header in the response, or some headers may be specific to some APIs or functionality, for example, the `Retry-After` header is included when your app hits throttling limits; or the `Location` header that's included for long-running operations.
 
 Headers are case-insensitive as defined in [rfc 9110](https://www.rfc-editor.org/rfc/rfc9110.html) unless explicitly specified otherwise.
 

@@ -53,16 +53,16 @@ The following is an example of MIME content with Internet message headers (befor
 
 ```http
 Received: from contoso.com (10.194.241.197) by 
-contoso.com (10.194.241.197) with with HTTPS; Thu, 6 Might 2021
+contoso.com (10.194.241.197) with with HTTPS; Thu, 6 May 2021
  22:47:18 +0000
 Received: from contoso.com (10.194.241.197)
  by contoso.com (10.194.241.197) with
  SMTP Server (version=TLS1_2, 
-cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0 via Mailbox; Thu, 6 Might
+cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0 via Mailbox; Thu, 6 May
  2021 22:47:15 +0000
 Received: from contoso.com 
 (fe80::5bf:5059:4ca0:5017) by contoso.com 
-(fe80::5bf:5059:4ca0:5017%12) with mapi id 15.01.1374.000; Thu, 6 Might 2021
+(fe80::5bf:5059:4ca0:5017%12) with mapi id 15.01.1374.000; Thu, 6 May 2021
  22:47:14 +0000
 From: Adele Vance <AdeleV@contoso.com>
 To: Alex Wilber <AlexW@contoso.com>
@@ -70,7 +70,7 @@ CC: Christie Cline <ChristieC@contoso.com>
 Subject: Testing the MIME feature in Graph
 Thread-Topic: Testing the MIME feature in Graph
 Thread-Index: AQHTJWSHSywMzSz8o0OJud48nG50GQ==
-Date: Thu, 6 Might 2021 22:47:14 +0000
+Date: Thu, 6 May 2021 22:47:14 +0000
 Message-ID:
 	<4aade2547798441eab5188a7a2436bc1@contoso.com>
 Accept-Language: en-US
@@ -170,8 +170,8 @@ Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.doc
 	name="Proposed_agenda_topics.docx"
 Content-Description: Proposed_agenda_topics.docx
 Content-Disposition: attachment; filename="Proposed_agenda_topics.docx";
-	size=707560; creation-date="Fri, 07 Might 2021 14:06:45 GMT";
-	modification-date="Fri, 07 Might 2021 14:07:28 GMT"
+	size=707560; creation-date="Fri, 07 May 2021 14:06:45 GMT";
+	modification-date="Fri, 07 May 2021 14:07:28 GMT"
 Content-Transfer-Encoding: base64
 
 UEsDBBQABgAIAAAAIQA9xUZS1AEAALMLAAATAAgCW0NvbnRlbnRfVHlwZXNdLnhtbCCiBAIooAAC

@@ -85,9 +85,9 @@ As mentioned earlier, an app must have permissions to access the data that it wa
 
 As a developer, you decide which Microsoft Graph permissions to request for your app based on the access scenario and the operations you want to perform. When a user signs in to an app, the app must specify the permissions that it needs to be included in the access token. These permissions:
 
-- Might be preauthorized for the application by an administrator.
-- Might be consented by the user directly.
-- If not preauthorized, might require administrator privileges to grant consent. For example, for permissions with a greater potential security impact.
+- May be preauthorized for the application by an administrator.
+- May be consented by the user directly.
+- If not preauthorized, may require administrator privileges to grant consent. For example, for permissions with a greater potential security impact.
 
 For more information about permissions and consent, see [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview#consent).
 

@@ -191,7 +191,7 @@ MCDConnectedDevicesNotification* notification = [MCDConnectedDevicesNotification
 if (notification != nil) {
     [_platformManager.platform processNotificationAsync:notification
             completion:^(NSError* error __unused) {
-        // NOTE: it might be useful to attach completion to this async in order to know when the
+        // NOTE: it may be useful to attach completion to this async in order to know when the
         // notification is done being processed.
         // This would be a good time to stop a background service or otherwise cleanup.
     }];
