@@ -3,6 +3,7 @@ title: "Versioning, support, and breaking change policies for Microsoft Graph"
 description: "Learn about the support and breaking change policies for Microsoft Graph and the versions of the Microsoft Graph API that are currently available."
 ms.localizationpriority: high
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Versioning, support, and breaking change policies for Microsoft Graph

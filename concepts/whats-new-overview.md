@@ -4,6 +4,7 @@ description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, 
 author: "lauragra"
 ms.localizationpriority: high
 ms.date: 07/03/2025
+ms.topic: whats-new
 ---
 
 # What's new in Microsoft Graph

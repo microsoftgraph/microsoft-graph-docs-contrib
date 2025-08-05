@@ -4,6 +4,7 @@ description: "Learn how to register your app and get authentication tokens for a
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Use the Microsoft Graph API

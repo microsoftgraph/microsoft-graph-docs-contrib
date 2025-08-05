@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Set up administrative search answers for users in an organization

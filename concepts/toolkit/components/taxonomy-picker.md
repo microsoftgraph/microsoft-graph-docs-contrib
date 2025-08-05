@@ -4,6 +4,7 @@ description: "Use the taxonomy picker component to query the Microsoft Graph API
 ms.localizationpriority: medium
 author: anoopt
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Taxonomy picker component in the Microsoft Graph Toolkit

@@ -5,6 +5,7 @@ author: "kylemar"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
+ms.topic: article
 ---
 
 # Microsoft Purview data security and governance APIs
