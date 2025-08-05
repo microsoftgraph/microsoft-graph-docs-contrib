@@ -34,7 +34,7 @@ Your endpoint must also continue to remain authenticated to Microsoft Graph, eit
 Once the Microsoft Graph change notifications service receives a 2xx class code from your endpoint, the notification is considered sent. As long as the change notifications service receives any other HTML response (even an error code) within 10 seconds, the service continues to try to deliver the notification for up to 4 hours.
 
  - If you're able to process the notification within a 3-second window, you should return a `200 - OK` status code to Microsoft Graph
- - If your service might take more than 10 seconds to process the notification, then you might choose to persist the notification in a queue on your endpoint and return `202 - Accepted` status code to Microsoft Graph.
+ - If your service takes more than 10 seconds to process the notification, then you should persist the notification in a queue on your endpoint and return `202 - Accepted` status code to Microsoft Graph.
  - If the notification isn't processed or queued, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
 
 Notifications that fail to deliver are retried at exponential backoff intervals. Missed notifications might take up to 4 hours to resend once your endpoint comes online.
