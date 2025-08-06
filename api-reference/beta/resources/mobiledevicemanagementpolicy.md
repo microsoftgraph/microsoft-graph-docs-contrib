@@ -14,7 +14,7 @@
 |Property|Type|Description|
 |:---|:---|:---|
 |appliesTo|policyScope|Indicates the user scope of the mobility management policy. Possible values are: `none`, `all`, `selected`.|
-|isMdmEnrollmentDuringRegistrationDisabled|Boolean|Determines whether to disable MDM enrollment prompts during device registration for users in scope of the policy|
+|isMdmEnrollmentDuringRegistrationDisabled|Boolean|Determines whether user will be asked to enroll the device to the MDM provider when they register their new device. Applies to users adding a work or school account to Windows through an application or Edge during the Entra account registration flow.|
 |complianceUrl|String|Compliance URL of the mobility management application.|
 |description|String|Description of the mobility management application.|
 |discoveryUrl|String|Discovery URL of the mobility management application.|
