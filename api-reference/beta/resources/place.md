@@ -39,11 +39,8 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/place-list.md)|[place](../resources/place.md) collection|Get a list of the place objects and their properties.|
-|[Create](../api/place-post-places.md)|[place](../resources/place.md)|Create a new place object.|
 |[Get](../api/place-get.md)|[place](../resources/place.md)|Read the properties and relationships of [place](../resources/place.md) object.|
 |[Update](../api/place-update.md)|[place](../resources/place.md)|Update the properties of a place object.|
-|[Delete](../api/place-delete.md)|None|Delete a place object.|
-|[descendants](../api/place-descendants.md)|[place](../resources/place.md) collection|**TODO: Add Description**|
 |[Get checkInClaim](../api/checkinclaim-get.md)|[checkInClaim](../resources/checkinclaim.md)|**TODO: Add a useful description.**|
 |[Create checkInClaim](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new checkInClaim object.|
 
