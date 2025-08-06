@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ms.date: 08/05/2025
+ms.topic: how-to
 ---
 
 # Get change notifications for meeting transcripts and recordings using Microsoft Graph

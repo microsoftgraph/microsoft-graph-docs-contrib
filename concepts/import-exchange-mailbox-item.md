@@ -5,6 +5,7 @@ author: "cparker-msft"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 ms.date: 12/06/2024
+ms.topic: how-to
 ---
 
 # Import an Exchange mailbox item using the mailbox import and export APIs

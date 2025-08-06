@@ -51,7 +51,7 @@ Register an application that supports app-only authentication using [client cred
 
 ### [PowerShell](#tab/powershell)
 
-To use PowerShell, you need the Microsoft Graph PowerShell SDK. If you don't have it, see [Install the Microsoft Graph PowerShell SDK](/graph/powershell/installation) for installation instructions.
+To use PowerShell, you need the Microsoft Graph PowerShell SDK. If you don't have it, see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) for installation instructions.
 
 1. Create a new file named **RegisterAppForAppOnlyAuth.ps1** and add the following code.
 

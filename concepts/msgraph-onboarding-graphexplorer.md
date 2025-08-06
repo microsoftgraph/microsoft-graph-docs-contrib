@@ -7,6 +7,7 @@ ms.subservice: "education"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
 ms.custom: sfi-image-nochange
+ms.topic: how-to
 ---
 
 # Use Graph Explorer to work with the education API in Microsoft Graph

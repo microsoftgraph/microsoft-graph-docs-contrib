@@ -150,9 +150,9 @@ items:
       items:
       - name: Overview
         href: ../../resources/authenticationmethods-usage-insights-overview.md
-      - name: Credential usage summary
+      - name: Credential usage summary (deprecated)
         items:
-        - name: Credential usage summary
+        - name: Credential usage summary (deprecated)
           href: ../../resources/credentialusagesummary.md
         - name: List
           href: ../../api/reportroot-getcredentialusagesummary.md
@@ -168,9 +168,9 @@ items:
           href: ../../resources/credentialuserregistrationdetails.md
         - name: List
           href: ../../api/reportroot-list-credentialuserregistrationdetails.md
-      - name: User credential usage details
+      - name: User credential usage details (deprecated)
         items:
-        - name: User credential usage details
+        - name: User credential usage details (deprecated)
           href: ../../resources/usercredentialusagedetails.md
         - name: List
           href: ../../api/reportroot-list-usercredentialusagedetails.md
@@ -194,6 +194,36 @@ items:
           href: ../../resources/userregistrationmethodsummary.md
         - name: List
           href: ../../api/authenticationmethodsroot-usersregisteredbymethod.md
+      - name: User events summary
+        items:
+        - name: User events summary
+          href: ../../resources/usereventssummary.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-list-usereventssummary.md
+      - name: User MFA sign in summary
+        items:
+        - name: User MFA sign in summary
+          href: ../../resources/usermfasigninsummary.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-list-usermfasigninsummary.md
+      - name: User password resets and changes summary
+        items:
+        - name: User password resets and changes summary
+          href: ../../resources/userpasswordresetsandchangessummary.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-list-userpasswordresetsandchangessummary.md
+      - name: User registration activity summary
+        items:
+        - name: User registration activity summary
+          href: ../../resources/userregistrationactivitysummary.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-userregistrationactivity.md
+      - name: User sign in usage by auth method activity
+        items:
+        - name: User sign in usage by auth method activity
+          href: ../../resources/usersigninusagebyauthmethodactivity.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-usersigninsbyauthmethodsummary.md
     - name: Microsoft Entra Health (preview)
       items:
       - name: SLA attainment

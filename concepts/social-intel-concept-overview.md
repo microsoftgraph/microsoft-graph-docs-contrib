@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "insights"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # People and workplace intelligence in Microsoft Graph
@@ -127,7 +128,7 @@ Looking for the API reference for these services?
 - See how to [manage pronouns settings for an organization](pronouns-configure-pronouns-availability.md).
 - See how to [manage profile source settings for an organization (preview)](profilesource-configure-settings.md).
 - See how to [manage profile source precedence settings for an organization (preview)](/graph/profilepriority-configure-profilepropertysetting).
-- Find out more about [item insights](item-insights-overview.md), [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
+- Find out more about [item insights](item-insights-overview.md), [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/insightssettings) that supports the customization.
 - Find more about the [analytics API](/graph/api/resources/social-overview#help-users-balance-work-and-life).
 - Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).
   

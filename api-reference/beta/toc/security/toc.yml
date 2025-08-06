@@ -696,6 +696,14 @@ items:
       href: ../../api/security-ediscoverycasemember-post.md
     - name: Remove
       href: ../../api/security-ediscoverycasemember-delete.md
+  - name: Complex types
+    items:
+    - name: eDiscovery add to review set operation
+      href: ../../resources/security-ediscoveryaddtoreviewsetoperation.md
+    - name: eDiscovery estimate operation
+      href: ../../resources/security-ediscoveryestimateoperation.md
+    - name: Report file metadata
+      href: ../../resources/security-ediscoveryreportfilemetadata.md
 - name: Email and collaboration protection
   items:
   - name: Analyzed email
