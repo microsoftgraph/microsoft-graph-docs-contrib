@@ -1,6 +1,6 @@
 ---
 title: "callRecording: delta"
-description: "Get a set of callRecording resources added for onlineMeeting instances and ad hoc calls organized by the specified user."
+description: "Get a set of callRecording resources added for onlineMeeting instancesorganized by the specified user."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "JacobSatora"
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a set of [callRecording](../resources/callrecording.md) resources added for [onlineMeeting](../resources/onlinemeeting.md) instances and ad hoc calls organized by the specified user.
+Get a set of [callRecording](../resources/callrecording.md) resources added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.
 
-Delta query supports both full synchronization that gets all the recordings for online meetings and ad hoc calls organized by the user, and incremental synchronization that gets recordings added since the last synchronization. Typically, you do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Delta query supports both full synchronization that gets all the recordings for online meetings organized by the user, and incremental synchronization that gets recordings added since the last synchronization. Typically, you do an initial full synchronization, and then get incremental changes to that recording view periodically.
 
 A GET request with the delta function returns one of the following:
 
@@ -51,15 +51,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /users/{usersId}/onlineMeetings/getAllRecordings(meetingOrganizerUserId='{userId}',startDateTime={startDateTime})/delta
 ```
-
-**For ad hoc calls:**
-
-<!-- { "blockType": "ignored" } -->
-``` http
-GET /users/{usersId}/adhocCalls/getAllRecordings(callOrganizerUserId='{userId}',startDateTime={startDateTime})/delta
-```
-
->**Note:** The request fails if you don't pass the function parameter **meetingOrganizerUserId** for online meetings or **callOrganizerUserId** for ad hoc calls.
+>**Note:** The request fails if you don't pass the function parameter **meetingOrganizerUserId** for online meetings
 
 ## Query parameters
 
@@ -87,7 +79,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Initial round of synchronization
 
-The following example shows a series of three requests to synchronize the call recordings available for all the online meetings and ad hoc calls organized by the user.
+The following example shows a series of three requests to synchronize the call recordings available for all the online meetings organized by the user.
 
 - Step 1: [initial request](#initial-request) and [response](#initial-response).
 - Step 2: [second request](#second-request) and [response](#second-response).
@@ -245,7 +237,7 @@ Content-type: application/json
 
 ### Example 2: Next round to get more recordings
 
-Using the **@odata.deltaLink** from the last request in the last round, you can get only those recordings added since the **@odata.deltaLink** was acquired for both online meetings and ad hoc calls.
+Using the **@odata.deltaLink** from the last request in the last round, you can get only those recordings added since the **@odata.deltaLink** was acquired for online meetings.
 
 #### Request
 The following example shows a request.
