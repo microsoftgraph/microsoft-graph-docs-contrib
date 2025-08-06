@@ -225,12 +225,36 @@
           "ChangeType": "Addition",
           "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource.",
           "Target": "identity"
+        },
+        {
+          "Id": "6dc9f725-b820-4f19-a177-a01ff1a48090",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "checkInMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **checkInMethod** enumeration type.",
+          "Target": "checkInMethod"
+        },
+        {
+          "Id": "6dc9f725-b820-4f19-a177-a01ff1a48090",
+          "ApiChange": "Resource",
+          "ChangedApiName": "checkInClaim",
+          "ChangeType": "Addition",
+          "Description": "Added the [checkInClaim](https://learn.microsoft.com/en-us/graph/api/resources/checkInClaim?view=graph-rest-beta) resource.",
+          "Target": "checkInClaim"
+        },
+        {
+          "Id": "6dc9f725-b820-4f19-a177-a01ff1a48090",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "checkIns",
+          "ChangeType": "Addition",
+          "Description": "Added the **checkIns** relationship to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
         }
       ],
-      "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
+      "Id": "6dc9f725-b820-4f19-a177-a01ff1a48090",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-08-12T10:16:22.3182957Z",
+      "CreatedDateTime": "2025-08-06T01:41:37.6480761Z",
       "WorkloadArea": "Calendar",
       "SubArea": "Places"
     }

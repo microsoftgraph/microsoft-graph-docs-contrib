@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "vrod9429"
 ms.subservice: "outlook"
 doc_type: "resourcePageType"
-ms.date: 03/23/2024
+ms.date: 08/06/2025
 ---
 
 # place resource type
@@ -36,60 +36,67 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 
 ## Methods
 
-| Method                              | Return Type                  | Description |
-|:------------------------------------|:-----------------------------|:--------|
-| [List places](../api/place-list.md) | A collection of the requested, derived type of [place](place.md) | Get a collection of the specified type of **place** objects defined in the tenant. |
-| [Get place](../api/place-get.md)    | The requested, derived type of [place](place.md)            | Get the properties and relationships of a specified **place** object. |
-| [Update place](../api/place-update.md)    | The requested, derived type of [place](place.md)            | Update the properties and relationships of a specified **place** object. |
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/place-list.md)|[place](../resources/place.md) collection|Get a list of the place objects and their properties.|
+|[Create](../api/place-post-places.md)|[place](../resources/place.md)|Create a new place object.|
+|[Get](../api/place-get.md)|[place](../resources/place.md)|Read the properties and relationships of [place](../resources/place.md) object.|
+|[Update](../api/place-update.md)|[place](../resources/place.md)|Update the properties of a place object.|
+|[Delete](../api/place-delete.md)|None|Delete a place object.|
+|[descendants](../api/place-descendants.md)|[place](../resources/place.md) collection|**TODO: Add Description**|
+|[Get checkInClaim](../api/checkinclaim-get.md)|[checkInClaim](../resources/checkinclaim.md)|**TODO: Add a useful description.**|
+|[Create checkInClaim](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new checkInClaim object.|
 
 ## Properties
 
-| Property       | Type                                              | Description |
-|:---------------|:--------------------------------------------------|:--------|
-| address        | [physicalAddress](physicaladdress.md)             | The street address of the place. |
-| displayName    | String                                            | The name associated with the place. |
-| geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the place location in latitude, longitude, and (optionally) altitude coordinates. |
-| id             | String                                            | A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or to the tenant configuration. |
-| phone          | String                                            | The phone number of the place. |
-| placeId        | String                                            | A unique, immutable identifier for the place. Read-only. The value of this identifier is equal to the **ExternalDirectoryObjectId** returned from the `Get-Mailbox` cmdlet. |
+|Property|Type|Description|
+|:---|:---|:---|
+|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description**|
+|displayName|String|**TODO: Add Description**|
+|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description**|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|isWheelChairAccessible|Boolean|**TODO: Add Description**|
+|label|String|**TODO: Add Description**|
+|parentId|String|**TODO: Add Description**|
+|phone|String|**TODO: Add Description**|
+|placeId|String|**TODO: Add Description**|
+|tags|String collection|**TODO: Add Description**|
 
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|checkIns|[checkInClaim](../resources/checkinclaim.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.place"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.place",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
 {
-  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "displayName": "String",
+  "@odata.type": "#microsoft.graph.place",
   "id": "String (identifier)",
-  "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "displayName": "String",
+  "geoCoordinates": {
+    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
+  },
   "phone": "String",
-  "placeId": "String (alternate identifier)"
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
+  "placeId": "String",
+  "parentId": "String",
+  "tags": [
+    "String"
+  ],
+  "isWheelChairAccessible": "Boolean",
+  "label": "String"
 }
 ```
-
-## Related content
-- For administrators to create a room list, use the Exchange PowerShell cmdlet [New-DistributionGroup](/powershell/module/exchange/users-and-groups/new-distributiongroup).
-- For administrators to add a room to a room list, use the Exchange Powershell cmdlet [Add-DistributionGroupMember](/powershell/module/exchange/users-and-groups/add-distributiongroupmember).
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "place resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

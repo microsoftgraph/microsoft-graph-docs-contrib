@@ -261,7 +261,9 @@
           "resources": [
             "place",
             "room",
-            "roomList"
+            "roomList",
+            "checkInClaim",
+            "checkInMethod"
           ],
            "childNodes": [
             {
