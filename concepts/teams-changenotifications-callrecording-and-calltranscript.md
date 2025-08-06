@@ -18,6 +18,7 @@ This article describes scenarios for the **transcript** and **recording** resour
 > If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request will fail with the following error message: *lifecycleNotificationUrl is required for subscription creation on this resource when the expirationDateTime value exceeds 1 hour*.
 
 ## Subscribe to transcripts available at the tenant-level
+This sections describes the methods to subscribe to transcripts available at the tenant level for both online meetings and adhoc calls.
 
 ### **For online meetings**
 
@@ -97,6 +98,7 @@ Content-Type: application/json
 ```
 
 ## Subscribe to transcripts available for a particular meeting or call instance
+This sections describes the methods to subscribe to transcripts available for a particular meeting or call instance, for both online meetings and adhoc calls.
 
 ### **For online meetings**
 
@@ -192,6 +194,7 @@ Content-Type: application/json
 }
 ```
 ## Subscribe to transcripts available at the user level
+This sections describes the methods to subscribe to transcripts available at the user level for both online meetings and adhoc calls.
 
 ### **For online meetings**
 
@@ -268,6 +271,7 @@ Content-Type: application/json
 ```
 
 ## Subscribe to transcripts available for any online meeting where a specific Teams app is installed
+This section describes the methods to subscribe to transcripts available for any online meeting where a specific Teams app is installed.
 
 ### **For online meetings**
 
@@ -362,6 +366,7 @@ Content-Type: application/json
 }
 ```
 ## Subscribe to recordings available at the tenant level
+This section describes the methods to subscribe to recordings available at the tenant level for both online meetings and adhoc calls.
 
 ### **For online meetings**
 
@@ -440,6 +445,7 @@ Content-Type: application/json
 ```
 
 ## Subscribe to recordings available for a all online meeting and adhoc call instances
+This section describes the methods to subscribe to recordings available for a particular online meeting or adhoc call instance.
 
 ### **For online meetings**
 
@@ -498,8 +504,9 @@ Content-Type: application/json
 }
 ```
 ## Subscribe to recordings available at the user level
+This section describes the methods to subscribe to recordings available at the user level for both online meetings and adhoc calls.
 
-### For online meetings**
+### **For online meetings**
 
 To get change notifications for any recording available for any online meeting organized by a specific user, subscribe to `users/{userId}/onlineMeetings/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
@@ -516,7 +523,7 @@ One of the following permissions is required to subscribe to `users/{userId}/onl
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | OnlineMeetingRecording.Read.All             |
 
-#### **For ad hoc calls**
+#### **For adhoc calls**
 
 To get change notifications for any recording available for a particular ad hoc call, subscribe to `users/{userId}/adhocCalls/{callId}/recordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
@@ -575,6 +582,7 @@ Content-Type: application/json
 ```
 
 ## Subscribe to recordings available for any online meeting where a specific Teams app is installed
+This section describes the methods to subscribe to recordings available for any online meeting or adhoc call where a specific Teams app is installed.
 
 ### For online meetings
 To get change notifications for any recording available for any online meeting where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
