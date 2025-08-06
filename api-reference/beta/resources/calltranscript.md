@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a transcript associated with an [online meeting](onlinemeeting.md) and [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta).
+Represents a transcript associated with an [online meeting](onlinemeeting.md) and [adhoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta).
 
 ## Methods
 |  Method       |  Return Type  | Description|
@@ -23,7 +23,6 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md) an
 |[Get transcript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Get a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md) and [adhoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta).|
 |[Get delta by organizer](../api/calltranscript-delta.md) | [callTranscript](calltranscript.md) collection | Get a set of [callTranscript](../resources/calltranscript.md) resources that were added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
 |[List transcripts by organizer](../api/onlinemeeting-getalltranscripts.md) | [callTranscript](calltranscript.md) collection | Get the [callTranscript](../resources/calltranscript.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
-
 
 ## Properties
 

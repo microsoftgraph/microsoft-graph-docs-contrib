@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [adhoc call](/graph/api/resources/adhoccall?view=graph-rest-beta). These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [adhoc call](/graph/api/resources/adhoccall?view=graph-rest-beta). These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. Private channel meetings are not supported for online calls at this time, but for adhoc calls they are supported with limited permissions.
 
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting or an adhoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
@@ -35,11 +35,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "calltranscript_get" } -->
 | Permission type| Least privileged permissions|Higher privileged permissions|
 | :---| :---| :--- |
-|Delegated (work or school account)| For online meetings: OnlineMeetingTranscript.Read.All <br> <br> For adhoc calls: CallTranscripts.Read.All| Not available.|
+|Delegated (work or school account)| **For online meetings**: OnlineMeetingTranscript.Read.All <br> <br> **For adhoc calls**: CallTranscripts.Read.All| Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|For online meetings: OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat <br> <br> For adhoc calls: CallTranscripts.Read.All, CallTranscripts.Read.Chat|Not available.|
+|Application|**For online meetings**:<br> <ul><li>OnlineMeetingTranscript.Read.All</li> <li> OnlineMeetingTranscript.Read.Chat</li></ul> <br>**For adhoc calls**: <br> <ul><li>CallTranscripts.Read.All</li> <li>CallTranscripts.Read.Chat</li></ul>| Not available.|
 
-> **Note:** The application permissions `OnlineMeetingTranscript.Read.Chat` and `CallTranscripts.Read.Chat` use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). The `OnlineMeetingTranscript.Read.Chat` permission applies only to scheduled private chat meetings, not to channel meetings.
+> [!NOTE]
+> * The application permissions `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). The `OnlineMeetingTranscript.Read.Chat` permission applies only to scheduled private chat meetings, not to channel meetings. 
+> * Resource-specific consent is not applicable for `CallTranscripts.Read.Chat` yet, but will be enabled soon.  
 
 To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
