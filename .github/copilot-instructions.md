@@ -27,7 +27,7 @@ This repository contains several types of files with different review requiremen
 
 ## API Reference Topics Review Guidelines
 
-### ✅ Required Elements
+### ✅ Required elements
 
 **Titles:**
 - Begin with imperative verbs (e.g., "Get", "Create", "Update")
