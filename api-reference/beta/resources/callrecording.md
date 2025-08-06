@@ -1,11 +1,11 @@
 ---
 title: "callRecording resource type"
-description: "Represents a recording associated with an online meeting."
+description: "Represents a recording associated with an online meeting or an adhoc call."
 author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
-ms.date: 08/02/2024
+ms.date: 08/06/2025
 ---
 
 # callRecording resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a recording associated with an [online meeting](onlinemeeting.md).
+Represents a recording associated with an [online meeting](onlinemeeting.md) or an adhoc call.
 
 ## Methods
 

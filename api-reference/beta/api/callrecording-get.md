@@ -1,11 +1,11 @@
 ---
 title: "Get callRecording"
-description: "Get a callRecording object associated with a scheduled onlineMeeting."
+description: "Get a callRecording object associated with a scheduled online meeting and adhoc calls."
 author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 07/25/2024
+ms.date: 08/06/2025
 ---
 
 # Get callRecording
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an ad hoc call. This API supports the retrieval of call recordings from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [online meeting](../resources/onlinemeeting.md) and an adhoc call. This API supports the retrieval of call recordings from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
 
-For a recording, this API returns the metadata of the single recording associated with the online meeting. For the content of a recording, this API returns the stream of bytes associated with the recording.
+For a recording, this API returns the metadata of the single recording associated with the online meeting or an adhoc call. For the content of a recording, this API returns the stream of bytes associated with the recording.
 
 > [!NOTE]
 >
@@ -34,24 +34,24 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "callrecording_get" } -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|OnlineMeetingRecording.Read.All|Not available.|
+|Delegated (work or school account)|**For online meetings**: <br> OnlineMeetingRecording.Read.All <br> **For adhoc calls**: <br> CallRecording.Read.All |Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat|Not available|
+|Application|**For online meetings**: <ul/><li>OnlineMeetingRecording.Read.All <li> OnlineMeetingRecording.Read.Chat </ul> **For adhoc calls**: <ul><li>CallRecordings.Read.All <li> CallRecordings.Read.Chat</ul>|Not available.|
 
-> **Notes:**
->
-> * In delegated permission scenarios, [getting callRecording content](#example-2-get-callrecording-content)  is supported only for the meeting organizer. Meeting participants don't have permission to download meeting recordings. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change). Tenant admins can unblock meeting participants to download meeting recordings. For more information, see [block the download of Teams meeting recording files](/MicrosoftTeams/block-download-meeting-recording).
+> [!NOTE]
+> * In delegated permission scenarios, [getting callRecording content](#example-2-get-callrecording-content)  is supported only for the meeting organizer. Meeting participants don't have permission to download meeting recordings. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change). 
+> * For online meetings, tenant admins can unblock meeting participants to download meeting recordings. For adhoc calls, tenant admins can grant on behalf of permissions for user making the call. For more information, see [block the download of Teams meeting recording files](/MicrosoftTeams/block-download-meeting-recording).
 > * The application permission `OnlineMeetingRecording.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to scheduled private chat meetings, not to channel meetings.
 
 To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 > [!NOTE]
-> * This API is available for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
-> * This API is also available to users who are part of the meeting calendar invite, which applies to both private chat meetings and channel meetings.
+> * The online meeting API is available for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
+> * For an online meeting, the respective API is also available to users who are part of the meeting calendar invite, which applies to both private chat meetings and channel meetings.
 
 ## HTTP request
 
-**For an online meeting**
+### For an online meeting**
 
 Get a single recording:
 
@@ -69,7 +69,7 @@ GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 ```
 
-**For an ad hoc call**
+### For an adhoc call**
 
 Get a single recording:
 
@@ -105,7 +105,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [callRecording](../resources/callrecording.md) object in the response body.
 
-## Examples
+## Examples for online meetings
 
 ### Example 1: Get a callRecording
 
