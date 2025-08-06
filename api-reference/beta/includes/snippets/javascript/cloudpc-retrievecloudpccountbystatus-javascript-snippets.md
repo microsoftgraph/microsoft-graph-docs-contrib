@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let cloudPC = await client.api('/deviceManagement/virtualEndpoint/cloudPCs/retrieveCloudPcCountByStatus?customFilter=contains(tolower(managedDeviceName), \'a\') or contains(tolower(imageDisplayName), \'a\') or contains(tolower(userPrincipalName), \'a\')')
+let retrieveCloudPcCountByStatus = await client.api('/deviceManagement/virtualEndpoint/cloudPCs/retrieveCloudPcCountByStatus?customFilter=contains(tolower(managedDeviceName), \'a\') or contains(tolower(imageDisplayName), \'a\') or contains(tolower(userPrincipalName), \'a\')')
 	.version('beta')
 	.filter('contains(tolower(managedDeviceName), \'a\') or contains(tolower(imageDisplayName), \'a\') or contains(tolower(userPrincipalName), \'a\')')
 	.get();
