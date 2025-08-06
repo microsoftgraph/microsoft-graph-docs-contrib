@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-applications
 ms.topic: faq
 ms.date: 08/16/2024
+ms.custom: sfi-image-nochange
 #Customer intent: As a developer, I want to understand more about why and how I should migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 

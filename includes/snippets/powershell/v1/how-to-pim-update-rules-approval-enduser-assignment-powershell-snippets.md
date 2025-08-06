@@ -29,7 +29,6 @@ setting = @{
 	approvalMode = "SingleStage"
 	approvalStages = @(
 		@{
-			"@odata.type" = "microsoft.graph.unifiedApprovalStage"
 			approvalStageTimeOutInDays = 
 			isApproverJustificationRequired = $true
 			escalationTimeInMinutes = 

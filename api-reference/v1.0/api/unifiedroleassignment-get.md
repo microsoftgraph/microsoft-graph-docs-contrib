@@ -7,6 +7,7 @@ ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ms.date: 07/26/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Get unifiedRoleAssignment
@@ -100,10 +101,6 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lA
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-givenanid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignment-givenanid-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignment-givenanid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -176,10 +173,6 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lA
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-expand-relationships-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignment-expand-relationships-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

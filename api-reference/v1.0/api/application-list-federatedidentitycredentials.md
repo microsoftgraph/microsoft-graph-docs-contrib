@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "application_list_federatedidentitycredentials" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-list-federatedidentitycredentials-permissions.md)]
 
+[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ## HTTP request
 
@@ -65,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/applications/bcd7c908-1c4d-4d48-93ee-ff3834
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-federatedidentitycredential-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-federatedidentitycredential-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

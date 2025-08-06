@@ -1,6 +1,6 @@
 ---
 title: "Create permission"
-description: "Add a permission to a fileStorageContainer."
+description: "Add a permission to an existing fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -15,8 +15,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a [permission](../resources/permission.md) to an existing [fileStorageContainer](../resources/filestoragecontainer.md). 
+Add a [permission](../resources/permission.md) to an existing [fileStorageContainer](../resources/filestoragecontainer.md).
 
+> [!IMPORTANT]
+> Permissions added to a [fileStorageContainer](../resources/filestoragecontainer.md) apply to all its [driveItem](../resources/driveitem.md) objects, regardless of any unique or restrictive permissions applied to those items.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -84,10 +86,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-permission-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-permission-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

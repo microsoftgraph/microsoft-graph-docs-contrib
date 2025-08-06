@@ -18,10 +18,7 @@ Calculate the sensitivity label that should be inherited by an output artifact, 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sensitivitylabel-computeinheritance-permissions"
-} -->
+<!-- { "blockType": "permissions", "name": "sensitivitylabel_computeinheritance" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sensitivitylabel-computeinheritance-permissions.md)]
 
 ## HTTP request
@@ -62,6 +59,7 @@ If no applicable label is found based on the input and filters, or if an error o
 
 The following example shows a request to compute the inherited label from input label, considering only labels applicable to the `File` content format.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "compute_inheritance_from_labels"
@@ -74,6 +72,12 @@ Client-Request-Id: c5e4d3b2-a1f0-e9d8-c7b6-a5e4d3b2a1f0
 
 "4e4234dd-377b-42a3-935b-0e42f138fa23"  // General (Sensitivity 10, File/Email)
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/compute-inheritance-from-labels-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -104,3 +108,5 @@ Content-Type: application/json
   "sublabels": []
 }
 ```
+
+
