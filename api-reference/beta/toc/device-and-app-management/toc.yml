@@ -258,6 +258,8 @@ items:
       href: ../../api/cloudpcprovisioningpolicy-apply.md
     - name: Apply configuration
       href: ../../api/cloudpcprovisioningpolicy-applyconfig.md
+    - name: Retry
+      href: ../../api/cloudpcprovisioningpolicy-retry.md
   - name: Cloud PC reports
     items:
     - name: Cloud PC reports
