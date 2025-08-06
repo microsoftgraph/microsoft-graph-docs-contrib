@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a sensorCandidateActivationConfiguration object.
+Update a [sensorCandidateActivationConfiguration](../resources/security-sensorcandidateactivationconfiguration.md) object.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "security-identitycontainer-post-sensorcandidateactivationconfiguration-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/security-sensorcandidateactivationconfiguration-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/security-identitycontainer-post-sensorcandidateactivationconfiguration-permissions.md)]
 
 [!INCLUDE [rbac-mdi-apis](../includes/rbac-for-apis/rbac-mdi-apis.md)]
 
