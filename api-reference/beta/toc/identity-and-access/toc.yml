@@ -420,6 +420,8 @@ items:
       href: ../../resources/mobilitymanagementpolicy.md
     - name: Mobile device management policy
       items:
+      - name: Mobile device management policy
+        href: ../../resources/mobiledevicemanagementpolicy.md
       - name: List
         href: ../../api/mobiledevicemanagementpolicies-list.md
       - name: Get
@@ -434,6 +436,8 @@ items:
         href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
     - name: Mobile app management policy
       items:
+      - name: Mobile app management policy
+        href: ../../resources/mobileappmanagementpolicy.md
       - name: List
         href: ../../api/mobileappmanagementpolicies-list.md
       - name: Get
