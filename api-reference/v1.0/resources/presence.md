@@ -62,7 +62,7 @@ The following JSON representation shows the resource type.
    "activity": "String",
    "availability":"String",
    "id": "String (identifier)",
-   "outOfOfficeSettings": {"@odata.type": "#microsoft.graph.outOfOfficeSettings"}
+   "outOfOfficeSettings": {"@odata.type": "#microsoft.graph.outOfOfficeSettings"},
    "sequenceNumber": "String",
    "statusMessage": {"@odata.type": "#microsoft.graph.presenceStatusMessage"}
 }
