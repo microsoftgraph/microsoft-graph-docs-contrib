@@ -87,7 +87,8 @@ The following example shows the response.
 }
 -->
 ```json
-  HTTP/1.1 200 OK 
+  HTTP/1.1 200 OK
+  
 {
   "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantPartners/$entity",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
@@ -142,6 +143,7 @@ The following example shows the response.
 -->
 ```json
   HTTP/1.1 200 OK 
+
 {
   "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantSyncPolicyPartners/$entity",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",

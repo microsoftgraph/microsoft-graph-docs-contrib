@@ -72,7 +72,7 @@ The following example shows a request for crossTenantAccessPolicyConfigurationPa
 }
 -->
 ```HTTP
-GET https://graph.microsoft-ppe.com/testppebetadeleteApis/policies/deletedItems/crossTenantPartners/
+GET https://graph.microsoft,com/beta/policies/deletedItems/crossTenantPartners/
 ```
 
 
@@ -88,6 +88,7 @@ The following example shows the response.
 -->
 ``` json
   HTTP/1.1 200 OK 
+
 {
   "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantPartners",
   "value": [
@@ -174,6 +175,7 @@ The following example shows the response.
 -->
 ```json
   HTTP/1.1 200 OK 
+
 {
   "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantSyncPolicyPartners",
   "value": [
