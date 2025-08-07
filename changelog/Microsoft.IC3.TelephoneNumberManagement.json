@@ -95,7 +95,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "telephoneNumberLongRunningOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [telephoneNumberLongRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberLongRunningOperation?view=graph-rest-beta) resource.",
+          "Description": "Added the [telephoneNumberLongRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberLongRunningOperation?view=graph-rest-beta) resource and its methods.",
           "Target": "telephoneNumberLongRunningOperation"
         },
         {
