@@ -18,9 +18,9 @@ Complete migration on existing channels or new channels. Previously, users were 
 
 **Points to note:**
 
-1) When channel is created in migration mode for initial import flow, then with this new API `Migration mode` from a [channel](../resources/channel.md) in a team will be updated to **Completed** instead of being dropped and the state will be marked to chat/channels permanently.`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+1) When a channel is created in migration mode for the initial import flow, the new API `Migration mode` from a [channel](../resources/channel.md) in a team is updated to **Completed** instead of being dropped, and the state is marked to chat/channels permanently. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 
-2) For **existing** channels which are already in migration mode, this API will complete the message migration process by populating `migration mode` to `Completed` for a [channel](../resources/channel.md) in a team.
+2) For **existing** channels which are already in migration mode, the API completes the message migration process by populating `migration mode` to `Completed` for a [channel](../resources/channel.md) in a team.
 
 After a **completeMigration** request is made for existing or new channels, you can still import more messages into the team by calling [start migration on channel](channel-startmigration.md). 
 
@@ -28,8 +28,8 @@ After a **completeMigration** request is made for existing or new channels, you 
 
 **Supported types of channels**
 
-1) New channels (Standard, Private, and Shared) created in migration mode for initial import flow.
-2) Existing channels (Standard, Private, and Shared) which are already in migration mode.
+1) New channels (standard, private, and shared) created in migration mode for the initial import flow.
+2) Existing channels (standard, private, and shared) that are already in migration mode.
 
 ## Permissions
 
