@@ -37,15 +37,15 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |assignmentStatus|microsoft.graph.teamsAdministration.assignmentStatus|The assignment status of the phone number. The possible values are: `unassigned`, `internalError`, `userAssigned`, `conferenceAssigned`, `voiceApplicationAssigned`, `thirdPartyAppAssigned`, `policyAssigned`, `unknownFutureValue`.|
 |assignmentTargetId|String|The ID of the object the phone number is assigned to, either the ObjectId of a user or resource account, or the policy instance ID of a Teams shared calling routing policy instance.|
 |capabilities|microsoft.graph.teamsAdministration.numberCapability collection|The list of capabilities assigned to the phone number.|
-|city|String|The city where the phone number is located or associated with|
-|civicAddressId|String|The ID of the CivicAddress assigned to the phone number|
-|id|String|The ID of the operation Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|city|String|The city where the phone number is located or associated with.|
+|civicAddressId|String|The ID of the civic address assigned to the phone number.|
+|id|String|The ID of the operation. Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md).|
 |isoCountryCode|String|The ISO country code assigned to the phone number|
 |locationId|String|The ID of the Location assigned to the phone number|
-|networkSiteId|String|This parameter is reserved for internal Microsoft use |
-|numberSource|microsoft.graph.teamsAdministration.numberSource|The source of the phone number. `online` is used for phone numbers assigned in Microsoft 365 and `onPremises` is used for phone numbers assigned in AD on-premises, which are synchronized into Microsoft 365. The possible values are: `online`, `onPremises`, `unknownFutureValue`.|
-|numberType|microsoft.graph.teamsAdministration.numberType|The type of the phone number such as Direct Routing, Operator Connect or Calling Plan. The possible values are: `internalError`, `directRouting`, `callingPlan`, `operatorConnect`, `unknownFutureValue`.|
-|operatorId|String|The ID of the operator|
+|networkSiteId|String|This property is reserved for internal Microsoft use.|
+|numberSource|microsoft.graph.teamsAdministration.numberSource|The source of the phone number. `online` is used for phone numbers assigned in Microsoft 365, and `onPremises` is used for phone numbers assigned in AD on-premises, which are synchronized into Microsoft 365. The possible values are: `online`, `onPremises`, `unknownFutureValue`.|
+|numberType|microsoft.graph.teamsAdministration.numberType|The type of the phone number. The possible values are: `internalError`, `directRouting`, `callingPlan`, `operatorConnect`, `unknownFutureValue`.|
+|operatorId|String|The ID of the operator.|
 |portInStatus|microsoft.graph.teamsAdministration.portInStatus|The status of any port in order covering the phone number. The possible values are: `completed`, `firmOrderCommitmentAccepted`, `unknownFutureValue`.|
 |reverseNumberLookupOptions|microsoft.graph.teamsAdministration.reverseNumberLookupOption collection|Status of Reverse Number Lookup (RNL). If set to SkipInternalVoip, calls are routed through the external Public Switched Telephone Network (PSTN) instead of using internal VoIP resolution.|
 |supportedCustomerActions|microsoft.graph.teamsAdministration.customerAction collection|Indicates what customer actions are available to modify the number|
