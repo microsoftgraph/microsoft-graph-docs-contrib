@@ -69,7 +69,7 @@ The following example shows a request for crossTenantAccessPolicyConfigurationPa
 }
 -->
 ```HTTP
-DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/809cbbd2-2325-4c17-bd51-f8f098db19c8
+DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/{809cbbd2-2325-4c17-bd51-f8f098db19c8}
 ```
 
 
@@ -94,7 +94,7 @@ The following example shows a request for crossTenantIdentitySyncPolicyPartner.
 }
 -->
 ```HTTP
-DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/809cbbd2-2325-4c17-bd51-f8f098db19c8
+DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/{809cbbd2-2325-4c17-bd51-f8f098db19c8}
 ```
 
 
