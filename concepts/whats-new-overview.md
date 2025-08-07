@@ -20,6 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## August 2025: New and generally available
 
+### Azure AD Graph migration
+
+Updated the end of extended access to Azure AD Graph from June 30, 2025 to August 31, 2025, as announced in the [Important: Update on Azure AD Graph API retirement](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/important-update-azure-ad-graph-retirement/4364990) blog post.
+
 ### Device and app management | Cloud PC
 
 Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/resources/cloudpc) to upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
