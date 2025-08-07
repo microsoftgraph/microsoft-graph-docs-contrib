@@ -36,8 +36,8 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | :----------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | activity     | String collection | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`, `InAMeeting`, `Offline`, `OffWork`, `OutOfOffice`, `PresenceUnknown`, `Presenting`, `UrgentInterruptionsOnly`. |
 | availability | String collection | The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`|
-| outOfOfficeSettings | [outOfOfficeSettings](outofofficesettings.md) | The out of office settings for a user. |
 | id           | String            | The unique identifier for the user. |
+| outOfOfficeSettings | [outOfOfficeSettings](outofofficesettings.md) | The out of office settings for a user. |
 | sequenceNumber | String | The lexicographically sortable String stamp that represents the version of a **presence** object. |
 | statusMessage | [presenceStatusMessage](presencestatusmessage.md) | The presence status message of a user. |
 
@@ -62,7 +62,8 @@ The following JSON representation shows the resource type.
    "activity": "String",
    "availability":"String",
    "id": "String (identifier)",
+   "outOfOfficeSettings": {"@odata.type": "#microsoft.graph.outOfOfficeSettings"}
    "sequenceNumber": "String",
-   "statusMessage":{"@odata.type": "#microsoft.graph.presenceStatusMessage"}
+   "statusMessage": {"@odata.type": "#microsoft.graph.presenceStatusMessage"}
 }
 ```
