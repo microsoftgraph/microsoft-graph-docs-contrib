@@ -1,10 +1,10 @@
 ---
 title: "checkInClaim resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "shijieyao"
 ms.date: 08/06/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice:
 doc_type: resourcePageType
 ---
 
@@ -26,9 +26,9 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|calendarEventId|String|**TODO: Add Description**|
-|checkInMethod|checkInMethod|**TODO: Add Description**. The possible values are: `unspecified`, `manual`, `inferred`, `verified`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
+|calendarEventId|String| A unique identifier for a Calendar event to which the **checkInClaim** object is tied. For more find iCalUId in [event](../resources/event.md). |
+|checkInMethod|checkInMethod| The method of check-in. The possible values are: `unspecified`, `manual`, `inferred`, `verified`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset| The date and time the **checkInClaim** object was created. In UTC timezone. |
 
 ## Relationships
 None.

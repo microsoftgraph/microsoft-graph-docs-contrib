@@ -1,10 +1,10 @@
 ---
 title: "Create checkInClaim"
 description: "Create a new checkInClaim object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "shijieyao"
 ms.date: 08/06/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice:
 doc_type: apiPageType
 ---
 
@@ -50,11 +50,10 @@ In the request body, supply a JSON representation of the [checkInClaim](../resou
 
 You can specify the following properties when creating a **checkInClaim**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|calendarEventId|String|**TODO: Add Description** Required.|
-|checkInMethod|checkInMethod|**TODO: Add Description**. The possible values are: `unspecified`, `manual`, `inferred`, `verified`, `unknownFutureValue`. Required.|
+|calendarEventId|String| A unique identifier for a Calendar event. For more find iCalUId in [event](../resources/event.md). Read-only. Required. |
+|checkInMethod|checkInMethod| Indicates the method of check-in. The possible values are: `unspecified`, `manual`, `inferred`, `verified`, `unknownFutureValue`. Required.|
 
 
 

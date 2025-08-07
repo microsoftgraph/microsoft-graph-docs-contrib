@@ -41,29 +41,28 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |[List](../api/place-list.md)|[place](../resources/place.md) collection|Get a list of the place objects and their properties.|
 |[Get](../api/place-get.md)|[place](../resources/place.md)|Read the properties and relationships of [place](../resources/place.md) object.|
 |[Update](../api/place-update.md)|[place](../resources/place.md)|Update the properties of a place object.|
-|[Get checkInClaim](../api/checkinclaim-get.md)|[checkInClaim](../resources/checkinclaim.md)|**TODO: Add a useful description.**|
-|[Create checkInClaim](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new checkInClaim object.|
+|[Get checkInClaim](../api/checkinclaim-get.md)|[checkInClaim](../resources/checkinclaim.md)|Get the check-in object of a Calendar Event booked at a place object.|
+|[Create checkInClaim](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new checkInClaim object for a Calendar Event booked at a place object.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|address|[physicalAddress](../resources/physicaladdress.md)|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isWheelChairAccessible|Boolean|**TODO: Add Description**|
-|label|String|**TODO: Add Description**|
-|parentId|String|**TODO: Add Description**|
-|phone|String|**TODO: Add Description**|
-|placeId|String|**TODO: Add Description**|
-|tags|String collection|**TODO: Add Description**|
+|address|[physicalAddress](../resources/physicaladdress.md)| The street address of the place. |
+|displayName|String| The name associated with the place. |
+|geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)| Specifies the place location in latitude, longitude, and (optionally) altitude coordinates. |
+|id|String| A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or to the tenant configuration. |
+|isWheelChairAccessible|Boolean| Whether or not the **place** is wheelchair accessible. |
+|parentId|String| **id** of a parent **place**. |
+|phone|String| The phone number of the place. |
+|placeId|String| A unique, immutable identifier for the place. Read-only. The value of this identifier is equal to the **ExternalDirectoryObjectId** returned from the `Get-Mailbox` cmdlet. |
+|tags|String collection| Custom tags that are associated with the **place** for categorization or filtering. |
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|checkIns|[checkInClaim](../resources/checkinclaim.md) collection|**TODO: Add Description**|
+|checkIns| quasi-collection of [checkInClaim](../resources/checkinclaim.md) | A sub-resource of a place object indicating the check-in status of a Calendar Event booked at the place |
 
 ## JSON representation
 

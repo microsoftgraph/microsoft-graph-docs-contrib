@@ -60,9 +60,9 @@ Added the [resourceAccessEvent](/graph/api/resources/security-resourceaccesseven
 
 ### Calendars | Place
 
-- Added the [checkInClaim](graph/api/resources/checkInClaim?view=graph-rest-beta&preserve-view=true) entity type to represent the check-in status of a Calendar Event booked at a place.
-- Added the **checkInMethod** as a property of a [checkInClaim](graph/api/resources/checkInClaim?view=graph-rest-beta&preserve-view=true) object, indicating the way of checking in.
-- Supported [create](/graph/api/place-post-checkins?view=graph-rest-beta&preserve-view=true) and [get] a [checkInClaim](graph/api/resources/checkinclaim-get?view=graph-rest-beta&preserve-view=true) object.
+- Added the [checkInClaim](/graph/api/resources/checkInClaim?view=graph-rest-beta&preserve-view=true) entity type to represent the check-in status of a Calendar [event](/graph/api/resources/event) booked at a place.
+- Added the **checkInMethod** as a property of a [checkInClaim](/graph/api/resources/checkInClaim?view=graph-rest-beta&preserve-view=true) object, indicating the method of checking in.
+- Supported [create](/graph/api/place-post-checkins?view=graph-rest-beta&preserve-view=true) and [get] a [checkInClaim](/graph/api/resources/checkinclaim-get?view=graph-rest-beta&preserve-view=true) object.
 
 ## July 2025: New in preview only
 
