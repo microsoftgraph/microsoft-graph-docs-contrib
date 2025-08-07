@@ -1,10 +1,10 @@
 ---
 title: "mobileAppManagementPolicy resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "A mobile device management policy represents an device autoenrollment policy for mobility management application configured in Azure AD."
+author: "garg-shubham"
 ms.date: 08/06/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -13,10 +13,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-**TODO: Add Description**
-
-
+In Microsoft Entra ID, a Mobile Application Management (MAM) policy defines how corporate data is protected within mobile apps, regardless of device enrollment status. These policies are enforced through Intune app protection policies, which apply to both managed (MDM-enrolled) and unmanaged (personal) devices.
 Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).
 
 
@@ -35,19 +32,19 @@ Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesTo|policyScope|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md). The possible values are: `none`, `all`, `selected`, `unknownFutureValue`.|
-|complianceUrl|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
-|description|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
-|discoveryUrl|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
-|displayName|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isValid|Boolean|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
-|termsOfUseUrl|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|appliesTo|policyScope|Indicates the user scope of the MAM policy. Possible values are: `none`, `all`, `selected`. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md). The possible values are: `none`, `all`, `selected`, `unknownFutureValue`.|
+|complianceUrl|String| Compliance URL of the mobility management application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|description|String|Description of the MAM application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|discoveryUrl|String|Discovery URL of the MAM application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|displayName|String|Display name of the MAM application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|id|String|Object Id of the MAM application. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|isValid|Boolean|Whether policy is valid. Invalid policies may not be updated and should be deleted. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|termsOfUseUrl|String|Terms of Use URL of the MAM application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includedGroups|[group](../resources/group.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md)|
+|includedGroups|[group](../resources/group.md) collection|Microsoft Entra groups under the scope of the MAM policy if appliesTo is `selected`. Inherited from [microsoft.graph.mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.
