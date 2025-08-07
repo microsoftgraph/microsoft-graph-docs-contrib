@@ -71,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "telephoneNumberLongRunningOperationDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [telephoneNumberLongRunningOperationDetails](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberLongRunningOperationDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the [telephoneNumberLongRunningOperationDetails](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberLongRunningOperationDetails?view=graph-rest-beta) resource and its methods.",
           "Target": "telephoneNumberLongRunningOperationDetails"
         },
         {
@@ -134,7 +134,7 @@
       "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-07-23T18:27:31.5363831Z",
+      "CreatedDateTime": "2025-08-06T18:27:31.5363831Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Teams administration"
     }
