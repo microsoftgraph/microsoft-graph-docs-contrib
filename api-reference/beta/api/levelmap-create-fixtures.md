@@ -4,7 +4,7 @@ description: "Create a new fixtureMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [fixtureMap](../resources/fixturemap.md) object in IMDF format.
+Create a new [fixture](../resources/fixturemap.md) within a given floor.
 
 ## Permissions
 
@@ -34,10 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixture/{fixtureImdfID}
+PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixture/{fixtureImdfID}
 ```
 
-{buildingPlaceId} – **id** of a building with which this [levelmap](../resources/levelmap.md) is associated.
+{buildingPlaceId} – **id** of a building with which this [fixturemap](../resources/fixturemap.md) is associated.
 
 {levelImdfId}- **id** of the level in the IMDF file.
 
@@ -58,8 +58,8 @@ You can specify the following properties when creating a **fixtureMap**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|Concatenated key-value pair of all properties of a geojson file for this **levelMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|Identifier for the [floor](../resources/floor.md) to which this **levelMap** belongs. Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **fixtureMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|Identifier for the [floor](../resources/floor.md) to which this **fixtureMap** belongs. Optional.|
 
 
 
