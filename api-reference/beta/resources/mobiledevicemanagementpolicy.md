@@ -27,7 +27,7 @@ Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.m
 |[Update](../api/mobiledevicemanagementpolicies-update.md)|None|Update the properties of a [mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md) object for a mobile device management application.|
 |[List included groups](../api/mobiledevicemanagementpolicies-list-includedgroups.md)|[group](../resources/group.md) collection|List included groups for a [mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md) object for a mobile device management application.|
 |[Add group to policy](../api/mobiledevicemanagementpolicies-post-includedgroups.md)|None|Add a group to the [mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md) object for a mobile device management application.|
-|[Delete group from policy](../api/mobiledevicemanagementpolicies-delete-includedgroups.md)|None|Delete a group from the [mobileDeviceManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
+|[Delete group from policy](../api/mobiledevicemanagementpolicies-delete-includedgroups.md)|None|Delete a group from the [mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md) object for a mobile device management application.|
 
 ## Properties
 |Property|Type|Description|
