@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the signed-in [user's](../resources/user.md) password. Any user can update their password without belonging to any administrator role.
+To update another user's password in either delegated or app-only scenarios, update the **passwordProfile** property of the user instead. See [Example 3: Update the passwordProfile of a user and reset their password](user-update.md#example-3-update-the-passwordprofile-of-a-user-and-reset-their-password).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -74,10 +75,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-changepassword-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-changepassword-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

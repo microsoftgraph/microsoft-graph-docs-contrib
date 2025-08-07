@@ -63,10 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/androidManagedAppPro
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-mam-androidmanagedappprotection-delete-delete-androidmanagedappprotection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-mam-androidmanagedappprotection-delete-delete-androidmanagedappprotection-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-mam-androidmanagedappprotection-delete-delete-androidmanagedappprotection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

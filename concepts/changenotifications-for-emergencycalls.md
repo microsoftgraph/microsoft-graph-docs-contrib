@@ -7,6 +7,7 @@ ms.subservice: "cloud-communications"
 ms.custom: "scenarios:getting-started"
 ms.date: 12/03/2024
 ms.doc_type: "conceptual"
+ms.topic: how-to
 ---
 
 # Get change notifications for Microsoft Teams emergency call event updates

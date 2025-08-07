@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "lumine2008"
 ms.subservice: "excel"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Write data to an Excel workbook

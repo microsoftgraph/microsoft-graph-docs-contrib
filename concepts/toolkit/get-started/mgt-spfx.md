@@ -4,6 +4,7 @@ description: "Use Microsoft Graph Toolkit to develop SharePoint Framework soluti
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Microsoft Graph Toolkit in SharePoint Framework solutions

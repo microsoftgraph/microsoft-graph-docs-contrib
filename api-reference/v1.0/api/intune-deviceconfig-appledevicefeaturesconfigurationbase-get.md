@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{devi
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
