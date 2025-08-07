@@ -15,17 +15,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a set of AI insights associated with:
-- an [online meeting](onlinemeeting.md)
-- an [adhoc call](/graph/api/resources/adhoccall?view=graph-rest-beta)
+Represents a set of AI insights associated with an [online meeting](onlinemeeting.md)
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/onlinemeeting-list-aiinsights.md)|[callAiInsight](../resources/callaiinsight.md) collection| <ul/><li> Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md) </li><li> Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [adhoc call](/graph/api/resources/adhoccall?view=graph-rest-beta)</li></ul>|
-|[Get](../api/callaiinsight-get.md)|[callAiInsight](../resources/callaiinsight.md)|<ul/><li> Get a [callAiInsight](../resources/callaiinsight.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).</li><li> Get a [callAiInsight](../resources/callaiinsight.md) object associated with an [adhoc call](/graph/api/resources/adhoccall?view=graph-rest-beta).</li></ul>|
+|[List](../api/onlinemeeting-list-aiinsights.md)|[callAiInsight](../resources/callaiinsight.md) collection| Get the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md)|
+|[Get](../api/callaiinsight-get.md)|[callAiInsight](../resources/callaiinsight.md)| Get a [callAiInsight](../resources/callaiinsight.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).|
 
 ## Properties
 |Property|Type|Description|

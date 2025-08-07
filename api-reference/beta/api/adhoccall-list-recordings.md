@@ -36,9 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|CallRecordings.Read.All, CallRecordings.Read.Chat|Not available.|
 
-> **Note:** The application permission `CallRecordings.Read.Chat` will use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to unscheduled unscheduled PSTN, VoIP and group calls . However, private channel meetings supported, but with limitations.
+> [!NOTE]
+> The application permission `CallRecordings.Read.Chat` will use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to unscheduled unscheduled PSTN, VoIP and group calls . However, private channel meetings supported, but with limitations.
 
-To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch the ad hoc calls online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access ad hoc calls on behalf of a user](/graph/cloud-communication-adhoc-call-application-access-policy).
+To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch the adhoc calls online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access adhoc calls on behalf of a user](/graph/cloud-communication-adhoc-call-application-access-policy).
 
 ## HTTP request
 

@@ -5,7 +5,7 @@ author: "mankadnandan"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 08/05/2024
+ms.date: 08/07/2025
 ---
 
 # Get callTranscript
@@ -457,7 +457,9 @@ WEBVTT
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhoccalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
 ```
 #### Response
-> **Note:** The response object shown here might be shortened for readability.
+> [!NOTE] 
+>The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
