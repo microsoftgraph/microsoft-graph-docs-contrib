@@ -34,6 +34,8 @@ Get a deleted **crossTenantAccessPolicyConfigurationPartner** object:
 GET /policies/deletedItems/crossTenantPartners/{id}
 ```
 
+## HTTP request
+
 Get a deleted **crossTenantIdentitySyncPolicyPartner** object:
 <!-- {
   "blockType": "ignored"
@@ -88,7 +90,7 @@ The following example shows the response.
 -->
 ```json
   HTTP/1.1 200 OK
-  
+
 {
   "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantPartners/$entity",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",

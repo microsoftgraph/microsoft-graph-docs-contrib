@@ -33,6 +33,7 @@ Permanently delete a **crossTenantAccessPolicyConfigurationPartner** object:
 ``` http
 DELETE /policies/deletedItems/crossTenantPartners/{id}
 ```
+## HTTP request
 
 Permanently delete a **crossTenantIdentitySyncPolicyPartner** object:
 <!-- {

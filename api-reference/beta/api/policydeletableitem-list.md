@@ -34,6 +34,8 @@ List deleted **crossTenantAccessPolicyConfigurationPartner** objects:
 GET /policies/deletedItems/crossTenantPartners/
 ```
 
+## HTTP request
+
 List deleted **crossTenantIdentitySyncPolicyPartner** objects:
 <!-- {
   "blockType": "ignored"
