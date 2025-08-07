@@ -4,7 +4,7 @@ description: "Represents a fixture.geojson file in IMDF format showing movable o
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
