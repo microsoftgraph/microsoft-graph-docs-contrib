@@ -7,6 +7,7 @@ ms.subservice: "education"
 ms.collection: "education"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Specify the default channel for education assignment notifications using the Microsoft Graph API

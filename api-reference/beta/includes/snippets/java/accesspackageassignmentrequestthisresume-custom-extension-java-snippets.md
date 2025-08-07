@@ -11,7 +11,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 com.microsoft.graph.beta.identitygovernance.entitlementmanagement.accesspackageassignmentrequests.item.resume.ResumePostRequestBody resumePostRequestBody = new com.microsoft.graph.beta.identitygovernance.entitlementmanagement.accesspackageassignmentrequests.item.resume.ResumePostRequestBody();
 resumePostRequestBody.setSource("Contoso.AADProcess");
 resumePostRequestBody.setType("microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated");
-CustomExtensionData data = new CustomExtensionData();
+AccessPackageRequestApprovalStageCallbackConfiguration data = new AccessPackageRequestApprovalStageCallbackConfiguration();
 data.setOdataType("microsoft.graph.accessPackageRequestApprovalStageCallbackConfiguration");
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
 additionalData.put("stage", "assignmentRequestCreated");

@@ -449,7 +449,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 ---
 
 > [!NOTE]
-> The `$format` query parameter supports many formats (for example, `atom`, `xml`, and `json`) but results may not be returned in all formats.
+> The `$format` query parameter supports many formats (for example, `atom`, `xml`, and `json`) but results might not be returned in all formats.
 
 ## OrderBy
 

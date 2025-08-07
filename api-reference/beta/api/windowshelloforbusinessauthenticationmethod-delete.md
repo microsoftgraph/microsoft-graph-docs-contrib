@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Deletes a [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
