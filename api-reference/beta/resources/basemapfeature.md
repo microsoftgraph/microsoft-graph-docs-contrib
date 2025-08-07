@@ -4,7 +4,7 @@ description: "Represents different map types within a tenant."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type.
-
+This is an abstract type that all other map types inherit. 
 Inherits from [entity](./entity.md).
 
 
