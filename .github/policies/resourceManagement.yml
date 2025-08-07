@@ -102,7 +102,7 @@ configuration:
       then:
       - addReply:
           reply: >-
-            Thank you for indicating that your pull request is ready for content review, @${issueAuthor}. It has been added to the **Content Review** project and an available reviewer will be assigned in the next 15 business days, depending on demand.
+            Thank you for indicating that your pull request is ready for content review, @${issueAuthor}. It has been added to the **Content Review** project and an available reviewer will be assigned in the next one (1) business day, depending on demand. If this PR relates to any schema changes, refer to the pull request description box for quick instructions to move this PR forward.
 
 
             Check the content review workflow [here](https://eng.ms/cid/27dee76c-3a60-4e65-8fdf-08ea849b3498/fid/3a993b6c9d547e46f59d8d7851f191c38bbbea6ead01253dc62fcdd8101a1ff9).
@@ -209,6 +209,8 @@ configuration:
             label: 'area: GSA'
         - labelAdded:
             label: 'area: identity protection'
+        - labelAdded:
+            label: 'area: intune'
         - labelAdded:
             label: 'area: app model'
         - labelAdded:
@@ -1057,6 +1059,8 @@ configuration:
 
 
             After the content review is complete and the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
+
+            Refer to the pull request description for quick instructions to move this PR forward.
 
 
             > [!NOTE]

@@ -5,6 +5,7 @@ author: "ZChristine"
 ms.localizationpriority: medium
 ms.subservice: "search"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Use the Microsoft Graph Search API to pass multiple search requests

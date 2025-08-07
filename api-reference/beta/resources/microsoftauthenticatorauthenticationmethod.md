@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Microsoft Authenticator
-ms.date: 07/19/2024
+ms.date: 07/28/2025
 ---
 
 # microsoftAuthenticatorAuthenticationMethod resource type
