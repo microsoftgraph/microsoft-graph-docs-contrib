@@ -1,6 +1,6 @@
 ---
 title: "chat: completeMigration"
-description: "Complete the migration of external messages by removing migration mode from a chat."
+description: "Completes the migration of external messages by removing migration mode from a chat."
 ms.localizationpriority: medium
 author: "MehakAgarwal"
 ms.subservice: "teams"
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The API will allow users to complete migration on existing chats or new chats. Previously, users were only allowed to initiate complete migration operations on newly created Standard Channels, which were created for initial migration flow. ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+Completes the migration of external messages by removing migration mode from a chat. Previously, users were only allowed to initiate complete migration operations on newly created standard channels, which were created for the initial migration flow. ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
-For chat which is already in migration mode, this API will complete the message migration process by populating `migration mode` to `Completed` for a [chat](../resources/chat.md).
+For chat, which is already in migration mode, the API completes the message migration process by populating `migration mode` to `completed` for a [chat](../resources/chat.md).
 
 After a **completeMigration** request is made for existing or new chat, you can still import more messages into the team by calling [start migration on chat](chat-startmigration.md).
 
