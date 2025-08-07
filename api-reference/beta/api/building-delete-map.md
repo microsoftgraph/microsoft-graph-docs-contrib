@@ -4,7 +4,7 @@ description: "Delete a buildingMap object."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [buildingMap](../resources/buildingmap.md) object.
+Delete the [map](../resources/buildingmap.md) of a specific building.
 
 ## Permissions
 
@@ -34,10 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE places/{buildingPlaceId}/microsoft.graph.building/map
+DELETE /places/{buildingPlaceId}/microsoft.graph.building/map
 ```
 
-{buildingPlaceId} - **id** of the building with which this map is associated
+{buildingPlaceId} - **id** of the building in Places with which this map is associated
 
 ## Request headers
 
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map
+DELETE https://graph.microsoft.com/beta/places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map
 ```
 
 ### Response
