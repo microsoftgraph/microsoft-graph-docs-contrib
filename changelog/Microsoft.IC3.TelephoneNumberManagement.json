@@ -79,7 +79,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "numberAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [numberAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-numberAssignment?view=graph-rest-beta) resource.",
+          "Description": "Added the [numberAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-numberAssignment?view=graph-rest-beta) resource and its methods.",
           "Target": "numberAssignment"
         },
         {
